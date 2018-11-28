@@ -1,4 +1,12 @@
-.Title{
+@font-face{
+  font-family: 'MyricaM';
+  src: url(../Fonts/MyricaM.TTC);
 }
 
+body{
+  font-family: MyricaM;
+}
 
+footer{
+  text-align: center;
+}
