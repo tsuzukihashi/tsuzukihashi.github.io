@@ -10,3 +10,8 @@ body{
 footer{
   text-align: center;
 }
+
+.Article{
+  padding: 10px;
+  margin: 10px;
+}
