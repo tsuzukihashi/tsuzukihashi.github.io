@@ -5,6 +5,7 @@ body{
   
 }
 
+
 :visited{
   color: lightcoral;
 }
@@ -15,7 +16,14 @@ a:hover{
 h1{
   color: #383838;
 }
-
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+img:hover{
+  opacity: 0.5;
+}
 em{
   background-color: lightcoral;
   color: whitesmoke;
@@ -24,7 +32,25 @@ footer{
   text-align: center;
 }
 
+.Title{
+  text-align: center;
+}
+
+.Title:hover{
+  opacity: 0.5;
+}
+
+.Index{
+  padding: 10px;
+  margin: 10px;
+}
+
 .Article{
+  padding: 10px;
+  margin: 10px;
+}
+
+.SNS{
   padding: 10px;
   margin: 10px;
 }
