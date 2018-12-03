@@ -2,7 +2,5 @@
 ポートフォリオやらブログやらごちゃ混ぜです．
 https://tsudukihashi.github.io
 
-# フォント
-MyricaMを使わせていただいております．
-https://myrica.estable.jp/myricamhistry/
+HTML5 CSS JavaScriptの勉強の目的もあり，素の状態から作成しています．  
 
