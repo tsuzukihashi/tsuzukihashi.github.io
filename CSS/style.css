@@ -1,12 +1,25 @@
-@font-face{
-  font-family: 'MyricaM';
-  src: url(../Fonts/MyricaM.TTC);
-}
-
 body{
-  font-family: MyricaM;
+  font-family: メイリオ;
+  background-color: whitesmoke;
+  color: #737373;
+  
 }
 
+:visited{
+  color: lightcoral;
+}
+
+a:hover{
+  opacity: 0.5;
+}
+h1{
+  color: #383838;
+}
+
+em{
+  background-color: lightcoral;
+  color: whitesmoke;
+}
 footer{
   text-align: center;
 }
