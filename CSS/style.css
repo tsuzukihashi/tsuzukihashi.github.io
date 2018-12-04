@@ -11,6 +11,7 @@ body{
 }
 
 a:hover{
+  transform: all 0.3s ease 0.5s;
   opacity: 0.5;
 }
 h1{
@@ -49,6 +50,10 @@ footer{
   padding: 10px;
   margin: 10px;
 }
+.Article > li > a{
+  opacity: 0.5f;
+  transition: opacity 0.3s ease 0.5s;
+}
 
 .Article > li > a > img{
   display: block;
@@ -59,7 +64,7 @@ footer{
 }
 
 .Article > li > a > img:hover{
-  opacity: 1.0f;
+  
 }
 
 
