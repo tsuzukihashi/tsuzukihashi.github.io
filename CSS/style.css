@@ -110,6 +110,7 @@ footer{
   padding: 0;
   overflow: hidden;
   margin: 0;
+  height: 100%;
 }
 
 #Header  > li{
@@ -117,7 +118,7 @@ footer{
   display: inline-block;
   margin: 0;
   width: 100px;
-  height: 120px;
+  height: 140px;
   position: relative;
 }
 
@@ -126,7 +127,7 @@ footer{
   color: #FFF;
   display: block;
   font-size: 14px;
-  font-family: "Arial Black";
+  font-family: "Tahoma";
   border: 5px solid #0B9;
   border-radius: 500px;
   text-decoration: none;
