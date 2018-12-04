@@ -22,7 +22,6 @@ img{
   margin-right: auto;
 }
 img:hover{
-  opacity: 0.5;
 }
 em{
   background-color: lightcoral;
@@ -50,6 +49,20 @@ footer{
   padding: 10px;
   margin: 10px;
 }
+
+.Article > li > a > img{
+  display: block;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  opacity: 1.0f;
+
+}
+
+.Article > li > a > img:hover{
+  opacity: 1.0f;
+}
+
+
 
 .SNS{
   padding: 10px;
