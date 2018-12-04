@@ -111,8 +111,8 @@ footer{
 
   display: inline-block;
   margin: 0;
-  width: 128px;
-  height: 128px;
+  width: 100px;
+  height: 100px;
   position: relative;
 }
 
@@ -120,15 +120,15 @@ footer{
   background-color: #0B9;
   color: #FFF;
   display: block;
-  font-size: 17px;
+  font-size: 14px;
   font-family: "Arial Black";
   border: 5px solid #0B9;
   border-radius: 500px;
   text-decoration: none;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   text-align: center;
-  line-height: 100px;
+  line-height: 80px;
   position: absolute;
   transition: all ease 0.2s;
   top: 0px;
@@ -139,9 +139,9 @@ footer{
 #Header > li > a:hover{
   background-color: #FFF;
   color: #0B9;
-  width: 120px;
-  height: 120px;
-  line-height: 120px;
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
   top: 0;
   left: 0;
 }
