@@ -133,6 +133,8 @@ footer{
 
 #Header > li > a:hover{
   font-weight: bold;
+  opacity: 1.0;
+
   background-color: #FFF;
   color: #0B9;
   width: 60px;

@@ -21,6 +21,15 @@ img{
   display: block;
   margin-left: auto;
   margin-right: auto;
+
+}
+
+.CircleImage{
+  border-radius:500px;
+}
+
+.Illust{
+  
 }
 img:hover{
 }
@@ -62,11 +71,6 @@ footer{
   opacity: 1.0f;
 
 }
-
-.Article > li > a > img:hover{
-  
-}
-
 
 
 .SNS{
@@ -139,6 +143,7 @@ footer{
 
 #Header > li > a:hover{
   background-color: #FFF;
+  opacity: 1.0;
   color: #0B9;
   width: 90px;
   height: 90px;
