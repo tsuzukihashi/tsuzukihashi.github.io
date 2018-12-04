@@ -116,6 +116,7 @@ footer{
   display: block;
   font-size: 8px;
   font-family: "Arial Black";
+  font-weight: bold;
   border: 5px solid #0B9;
   border-radius: 500px;
   text-decoration: none;
@@ -130,6 +131,7 @@ footer{
 }
 
 #Header > li > a:hover{
+  font-weight: bold;
   background-color: #FFF;
   color: #0B9;
   width: 60px;
