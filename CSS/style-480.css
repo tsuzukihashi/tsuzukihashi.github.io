@@ -111,6 +111,7 @@ footer{
 }
 
 #Header > li > a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
   background-color: #0B9;
   color: #FFF;
   display: block;
