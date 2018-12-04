@@ -129,8 +129,7 @@ footer{
   left: 0px;
 }
 
-
-#Header > li > a:active{
+#Header > li > a:hover{
   background-color: #FFF;
   color: #0B9;
   width: 60px;
@@ -139,4 +138,5 @@ footer{
   top: 0;
   left: 0;
 }
+
 
