@@ -88,10 +88,9 @@ footer{
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
   padding-top: 0px;
-  padding-left: auto;
-  margin: 0px;
+
+  
 }
 
 .Nav > iframe{
@@ -101,25 +100,28 @@ footer{
   left: 0;
   width: 100%;
 
-  height: 110px;
   overflow: hidden;
 }
 
 #Header{
+  display: flex;
+  justify-content: center;
   list-style-type: none;
-  padding: 0;
-  overflow: hidden;
   margin: 0;
+  padding: 0;
   height: 100%;
+  flex-wrap: wrap;
+  
 }
 
 #Header  > li{
 
   display: inline-block;
-  margin: 0;
+  margin-left: 0;
   width: 100px;
   height: 140px;
   position: relative;
+  text-align: center;
 }
 
 #Header > li > a {
