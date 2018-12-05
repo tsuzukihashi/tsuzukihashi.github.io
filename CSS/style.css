@@ -1,8 +1,8 @@
 body{
   font-family: メイリオ;
-  background-color: whitesmoke;
   color: #737373;
-  font-size: 22px;
+  background-color: rgb(255, 239, 209);
+  font-size: 18px;
 }@media screen and (max-width:480px){
   font-size: 12px;
 }
@@ -10,9 +10,10 @@ body{
 
 .Panel{
   margin: 100px;
-  background-color: azure;
+  margin-top: 0;
+  background-color: rgba(243, 243, 243,0.5);
   border-radius: 1%;
-  box-shadow: 2px 2px 4px  gray;
+  box-shadow: 2px 2px 4px gray;
 }
 @media screen and (max-width:480px){
   .Panel{
@@ -57,7 +58,8 @@ img{
   display: block;
   margin-left: auto;
   margin-right: auto;
-}@media screen and (max-width:480px){
+}
+@media screen and (max-width:480px){
   .CircleImage{
     width: 128px;
     height: 128px;
@@ -65,10 +67,17 @@ img{
 
 }
 
+
 .appIcon{
   border-radius: 30px;
   width: 120px;
   height: 120px;
+}
+@media screen and (max-width:480px){
+  .appIcon{
+    width: 90px;
+    height: 90px;
+  }
 }
 
 .appList{
@@ -84,12 +93,20 @@ img{
   width: 220px;
   margin-bottom: 5px;
 }
-@media screen and (max-width:480px){
+
+@media screen and (min-width:320px) and (max-width:480px){
   .appList > li{
-    width: 140px;
+    width: 160px;
+  }
+}
+
+@media screen and (max-width:320px){
+  .appList > li{
+    width: 120px;
+  }
   }
 
-}
+
 .appList > li > a{
   color: aliceblue;
   position: relative;
@@ -101,19 +118,30 @@ img{
   left: 0px;
   padding: 5px 20px;
   text-align: center;
-  height: 40px;
-  line-height: 40px;
+  height: 30px;
+  line-height: 30px;
   text-decoration: none;
+}@media screen and (max-width:320px){
+  .appList > li > a{
+    font-size: 14px;
+  }
 }
+
 
 .appList > li > em {
   font-size: 24px;
 }
+
 @media screen and (max-width:480px){
   .appList > li > em {
-    font-size: 17px;
+    font-size: 16px;
   }
+}
 
+@media screen and (max-width:320px){
+  .appList > li > em{
+    font-size: 14px;
+  }
 }
 
 em{
@@ -129,23 +157,37 @@ footer{
 .Title{
   text-align: center;
   padding: 0px;
-}
-
-.Title > h1{
   font-size: 24px;
 }@media screen and (max-width:480px){
-  .Title > h1{
+  .Title{
+    font-size: 16px;
+  }
+
+}
+
+.Title > h1 > em{
+  background-color: lightsalmon;
+  color: whitesmoke;
+  padding: 15px 50px;
+  font-size: 36px;
+  box-shadow: 2px 2px 4px  gray;
+
+
+
+}@media screen and (max-width:480px){
+  .Title > h1 > em{
+    padding: 10px 20px;
     font-size: 26px;
   }
 }
 
-
 .Article{
-
+  padding: 5px;
 }
 
 .Article > h2{
   text-align: center;
+  font-size: 24px;
 }
 .Article > li > a{
   opacity: 0.5f;
@@ -172,24 +214,28 @@ footer{
   color: #383838;
 }
 .Nav{
+
   position: relative;
   top: 0;
   left: 0;
   width: 100%;
   padding-top: 0px;
 
+
   
 }
 
 .Nav > iframe{
+  padding-top: 0;
   border: 0;
   position: relative;
   top: 0;
   left: 0;
   width: 100%;
-
   overflow: hidden;
 }
+
+
 
 #Header{
   display: flex;
@@ -198,6 +244,7 @@ footer{
   margin: 0;
   padding: 0;
   height: 100%;
+  border-bottom: 3px solid gray;
   flex-wrap: wrap;
   
 }
@@ -206,22 +253,29 @@ footer{
 
   display: inline-block;
   margin-left: 0;
-  width: 100px;
+  width: 110px;
   height: 140px;
   position: relative;
   text-align: center;
+  padding: 0px;
+  margin: 0px;
+}@media screen and (max-width:480px){
+  width: 100px;
 }
 
 #Header > li > a {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 
-  background-color: #0B9;
+  background-color: lightcoral;
   color: #FFF;
   display: block;
   font-size: 16px;
   font-family: "Tahoma";
-  border: 5px solid #0B9;
+  font-weight: bold;
+  border: 5px solid lightcoral;
   border-radius: 500px;
+  box-shadow: 2px 2px 4px gray;
+
   text-decoration: none;
   width: 80px;
   height: 80px;
@@ -237,12 +291,29 @@ footer{
 #Header > li > a:hover{
   background-color: #FFF;
   opacity: 1.0;
-  color: #0B9;
+  color: lightcoral;
   width: 90px;
   height: 90px;
   line-height: 90px;
   top: 0;
   left: 0;
+}
+
+@media screen and (max-width:480px){
+  #Header > li > a {
+    font-size: 16px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+  }
+  
+  #Header > li > a:hover{
+  
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+  
+  }
 }
 .Index{
   padding: 10px;
@@ -250,7 +321,8 @@ footer{
   text-align: center;
 }
 .Index > li{
-
+  display: flex;
+  font-size: 20px;
   text-align: center;
   list-style-type: none;
   list-style: none;
@@ -262,7 +334,7 @@ footer{
   position: relative;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   border-radius: 500px;
-  width: 80%;
+  width: 100%;
   background-color: #0B9;
   top:0px;
   left: 0px;
@@ -275,6 +347,8 @@ footer{
   .Index > li > a{
     font-size: 16px;
   }
+
+
 }
 
 .Index > li > a:hover{
