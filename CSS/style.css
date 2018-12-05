@@ -162,7 +162,6 @@ footer{
   .Title{
     font-size: 16px;
   }
-
 }
 
 .Title > h1 > em{
@@ -189,10 +188,18 @@ footer{
   text-align: center;
   font-size: 24px;
 }
+.Article > li {
+  list-style: none;
+}
 .Article > li > a{
-  opacity: 0.5f;
   transition: opacity 0.3s ease 0.5s;
   margin-left: 25px;
+
+}
+@media screen and (max-width:480px){
+  .Article > li > a{
+    margin-left: 10px;
+  }
 }
 
 .Article > li > a > img{
@@ -364,10 +371,46 @@ footer{
   border-radius: 5%;
   width: 320px;
   height: 240px;
+  margin-top: 20px;
 
 }@media screen and (max-width:480px){
   .Software > img{
     width: 240px;
     height: 180px;;
   }
+}
+
+.Software > a {
+  background: #0B9;
+  color: whitesmoke;
+  text-decoration: none;
+  padding: 5px 30px;
+  border-radius: 500px;
+  margin: 500px 20px;
+  margin-bottom: 100px;
+  margin-top: 100px;
+
+}
+@media screen and (max-width:480px){
+  .Software > a{
+    padding: 5px 10px;
+  }
+}
+
+.Tag > li {
+  display: inline;
+  list-style: none;
+
+}
+
+.Tag > li > a {
+  display: inline-block;
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: bold;
+  background-color: #0B9;
+  border-radius: 500px;
+  padding: 5px 10px;
+  margin-top: 10px;
+  margin-left: 5px;
 }
