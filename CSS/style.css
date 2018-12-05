@@ -3,8 +3,35 @@ body{
   background-color: whitesmoke;
   color: #737373;
   font-size: 22px;
+}@media screen and (max-width:480px){
+  font-size: 12px;
 }
 
+
+.Panel{
+  margin: 100px;
+  background-color: azure;
+  border-radius: 1%;
+  box-shadow: 2px 2px 4px  gray;
+}
+@media screen and (max-width:480px){
+  .Panel{
+    margin: 10px;
+    border-radius: 0.1%;
+  }
+}
+
+.return{
+  text-align: center;
+}
+.return > a{
+  background-color: darkorange;
+  border-radius: 5%;
+
+  color: whitesmoke;
+  text-decoration: none;
+  padding: 10px;
+}
 
 :visited{
   color: lightcoral;
@@ -25,9 +52,17 @@ img{
 
 .CircleImage{
   border-radius:500px;
+  width: 256px;
+  height: 256px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}@media screen and (max-width:480px){
+  .CircleImage{
+    width: 128px;
+    height: 128px;
+  }
+
 }
 
 .appIcon{
@@ -76,7 +111,7 @@ img{
 }
 @media screen and (max-width:480px){
   .appList > li > em {
-    font-size: 16px;
+    font-size: 17px;
   }
 
 }
@@ -103,14 +138,10 @@ footer{
     font-size: 26px;
   }
 }
-.Title:hover{
-  opacity: 0.5;
-}
 
 
 .Article{
-  padding: 0px 10px;
-  margin: 10px;
+
 }
 
 .Article > h2{
@@ -240,6 +271,10 @@ footer{
   height: 40px;
   line-height: 40px;
   text-decoration: none;
+}@media screen and (max-width:480px){
+  .Index > li > a{
+    font-size: 16px;
+  }
 }
 
 .Index > li > a:hover{
