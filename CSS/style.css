@@ -30,6 +30,37 @@ img{
   margin-right: auto;
 }
 
+.appIcon{
+  border-radius: 30px;
+  width: 150px;
+  height: 150px;
+}
+
+.appList > li{
+  display: inline-block;
+  text-align: center;
+  list-style-type: none;
+  list-style: none;
+  line-height: 50px;
+  
+  margin-bottom: 5px;
+}
+
+.appList > li > a{
+  color: aliceblue;
+  position: relative;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  border-radius: 500px;
+  width: 80%;
+  background-color: #0B9;
+  top:0px;
+  left: 0px;
+  padding: 5px 20px;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  text-decoration: none;
+}
 
 em{
   background-color: lightcoral;
@@ -49,14 +80,18 @@ footer{
 }
 
 
-
 .Article{
   padding: 10px;
   margin: 10px;
 }
+
+.Article > h2{
+  text-align: center;
+}
 .Article > li > a{
   opacity: 0.5f;
   transition: opacity 0.3s ease 0.5s;
+  margin-left: 25px;
 }
 
 .Article > li > a > img{
@@ -177,6 +212,6 @@ footer{
   text-decoration: none;
 }
 
-.Index > li > a :hover{
-  background-color: #FFF;
+.Index > li > a:hover{
+  background-color: lightcoral;
 }
