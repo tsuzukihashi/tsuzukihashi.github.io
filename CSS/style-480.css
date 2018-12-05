@@ -1,103 +1,10 @@
 body{
-  font-family: メイリオ;
-  background-color: whitesmoke;
-  color: #737373;
+
   font-size: 16px;
 }
 
 
-:visited{
-  color: lightcoral;
-}
 
-a:hover{
-  transform: all 0.3s ease 0.5s;
-  opacity: 0.5;
-}
-h1{
-  color: #383838;
-}
-img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-img:hover{
-}
-em{
-  background-color: lightcoral;
-  color: whitesmoke;
-  padding: 2px;
-}
-footer{
-  text-align: center;
-}
-
-.Title{
-  text-align: center;
-}
-
-.Title:hover{
-  opacity: 0.5;
-}
-
-.Index{
-  padding: 10px;
-  margin: 10px;
-}
-
-.Article{
-  padding: 10px;
-  margin: 10px;
-}
-.Article > li > a{
-  opacity: 0.5f;
-  transition: opacity 0.3s ease 0.5s;
-}
-
-.Article > li > a > img{
-  display: block;
-  margin-left: 10px;
-  margin-bottom: 10px;
-  opacity: 1.0f;
-
-}
-
-.SNS{
-  padding: 10px;
-  margin: 10px;
-}
-
-.Fig{
-  margin-top: -20px;
-  text-align: center;
-  color: #383838;
-}
-.Nav{
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100px;
-  padding-top: 0px;
-  padding-left: auto;
-  margin: 0px;
-}
-
-.Nav > iframe{
-  border: 0;
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100px;
-}
-@media screen and (max-width:400px){
-  .Nav > iframe{
-      
-  }
-
-}
 #Header{
   list-style-type: none;
   padding: 0;
@@ -116,37 +23,22 @@ footer{
 }
 
 #Header > li > a {
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-  background-color: #0B9;
-  color: #FFF;
-  display: block;
+
   font-size: 16px;
-  font-family: "Tahoma";
-  font-weight: bold;
-  border: 5px solid #0B9;
-  border-radius: 500px;
-  text-decoration: none;
+
   width: 70px;
   height: 70px;
-  text-align: center;
+
   line-height: 70px;
-  position: absolute;
-  transition: all ease 0.2s;
-  top: 0px;
-  left: 0px;
+
 }
 
 #Header > li > a:hover{
-  font-weight: bold;
-  opacity: 1.0;
 
-  background-color: #FFF;
-  color: #0B9;
   width: 80px;
   height: 80px;
   line-height: 80px;
-  top: 0;
-  left: 0;
+
 }
 
 
