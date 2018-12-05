@@ -18,21 +18,19 @@ h1{
   color: #383838;
 }
 img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0px;
 
+  
 }
 
 .CircleImage{
   border-radius:500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.Illust{
-  
-}
-img:hover{
-}
+
 em{
   background-color: lightcoral;
   color: whitesmoke;
@@ -50,10 +48,7 @@ footer{
   opacity: 0.5;
 }
 
-.Index{
-  padding: 10px;
-  margin: 10px;
-}
+
 
 .Article{
   padding: 10px;
@@ -65,9 +60,8 @@ footer{
 }
 
 .Article > li > a > img{
-  display: block;
-  margin-left: 10px;
-  margin-bottom: 10px;
+  margin: 10px;
+  padding: 0px;
   opacity: 1.0f;
 
 }
@@ -128,7 +122,7 @@ footer{
   background-color: #0B9;
   color: #FFF;
   display: block;
-  font-size: 14px;
+  font-size: 16px;
   font-family: "Tahoma";
   border: 5px solid #0B9;
   border-radius: 500px;
@@ -154,4 +148,35 @@ footer{
   top: 0;
   left: 0;
 }
+.Index{
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+.Index > li{
 
+  text-align: center;
+  list-style-type: none;
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+.Index > li > a {
+  color: aliceblue;
+  position: relative;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  border-radius: 500px;
+  width: 80%;
+  background-color: #0B9;
+  top:0px;
+  left: 0px;
+  padding: 5px 20px;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  text-decoration: none;
+}
+
+.Index > li > a :hover{
+  background-color: #FFF;
+}
