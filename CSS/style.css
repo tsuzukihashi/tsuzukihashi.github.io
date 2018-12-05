@@ -28,10 +28,11 @@ body{
 .return > a{
   background-color: darkorange;
   border-radius: 5%;
+  padding: 5px 40px;
 
   color: whitesmoke;
   text-decoration: none;
-  padding: 10px;
+
 }
 
 :visited{
@@ -170,6 +171,7 @@ footer{
   padding: 15px 50px;
   font-size: 36px;
   box-shadow: 2px 2px 4px  gray;
+  margin-top: 0px;
 
 
 
@@ -182,6 +184,7 @@ footer{
 
 .Article{
   padding: 5px;
+  word-wrap: break-word;
 }
 
 .Article > h2{
@@ -260,7 +263,7 @@ footer{
 
   display: inline-block;
   margin-left: 0;
-  width: 110px;
+  width: 140px;
   height: 140px;
   position: relative;
   text-align: center;
@@ -276,7 +279,7 @@ footer{
   background-color: lightcoral;
   color: #FFF;
   display: block;
-  font-size: 16px;
+  font-size: 18px;
   font-family: "Tahoma";
   font-weight: bold;
   border: 5px solid lightcoral;
@@ -284,14 +287,21 @@ footer{
   box-shadow: 2px 2px 4px gray;
 
   text-decoration: none;
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   text-align: center;
-  line-height: 80px;
+  line-height: 100px;
   position: absolute;
   transition: all ease 0.2s;
   top: 0px;
   left: 0px;
+}@media screen and (max-width:480px){
+  #Header > li > a{
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 16px;
+  }
 }
 
 
@@ -299,9 +309,9 @@ footer{
   background-color: #FFF;
   opacity: 1.0;
   color: lightcoral;
-  width: 90px;
-  height: 90px;
-  line-height: 90px;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
   top: 0;
   left: 0;
 }
