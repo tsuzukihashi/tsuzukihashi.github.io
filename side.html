@@ -24,8 +24,8 @@
 
         <i class="fab fa-twitter fa-lg fa-fw blue"></i>
 
-        <a href="https://twitter.com/tsudukihashi?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">
-            Follow @tsudukihashi
+        <a href="https://twitter.com/RyoTsuzukihashi?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">
+            Follow @RyoTsuzukihashi
         </a>
             <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
@@ -73,111 +73,149 @@
     </div>
 
 
-    <div id="srchBox">
-        <style type="text/css">
-        #srchBox
-        {
-        width:298px;
-        _width:296px;
-        margin-bottom:10px;
-        background-color:#FFFFFF;
-        border-style:solid;
-        border-width:1px;
-        border-color:#EEEEEE;
-        color:#000000;
-        text-align:left;
+    <div id="srchBox" class="watermark">
+      <style type="text/css">
+      #srchBox
+      {
+      width:298px;
+      _width:296px;
+      margin-bottom:10px;
+      background-color:#FFFFFF;
+      border-style:solid;
+      border-width:1px;
+      border-color:#000000;
+      color:#000000;
+      text-align:left;
+      }
+      #srchBox *
+      {
+      margin:0;
+      padding:0;
+      font-size:13px;
+      *font-size:small;
+      *font:x-small;
+      }
+      #srchBox a img
+      {
+      border:none;
+      }
+      #srchBox #srch
+      {
+      padding:10px 10px 0 10px;
+      }
+      #srchBox #srch #srchForm
+      {
+      white-space:nowrap;
+      }
+      #srchBox #srchInput
+      {
+      width:188px;
+      margin-right:6px;
+      vertical-align:bottom;
+      }
+      #srchBox #srchBtn
+      {
+      width:80px;
+      }
+      *html #srchBox #srchBtn
+      {
+      padding-top:2px;
+      }
+      *:first-child+html #srchBox #srchBtn
+      {
+      padding-top:2px;
+      }
+      #srchBox ul
+      {
+      margin-top:6px;
+      text-align:left;
+      }
+      #srchBox li
+      {
+      list-style-type:none;
+      display:inline;
+      zoom:1;
+      padding-right:10px;
+      }
+      #srchBox li input
+      {
+      zoom:1;
+      margin-right:2px;
+      _margin:-4px 0 -4px -4px;
+      vertical-align:middle;
+      border:0;
+      }
+      *:+html #srchBox li input
+      {
+      margin:-4px 0 -4px -4px;
+      }
+      #srchBox #srchLogo
+      {
+      margin:6px 6px 6px 0;
+      text-align:right;
+      }
+      #srchBox #srchLogo a
+      {
+      color:#666666;
+      text-decoration:none;
+      font-size:85%;
+      }
+      #srchBox #srchLogo a:hover
+      {
+      text-decoration:underline;
+      }
+      #srchBox.watermark
+      {
+      padding-bottom: 6px;
+      }
+      #srchBox.watermark #srchInput
+      {
+      padding:1px 1px 2px 1px;
+      border:1px solid #a5acb2;
+      background: #fff url(https://s.yimg.jp/images/search/customsearch/yjlogo/yjlogo_type4.gif) center center no-repeat;
+      }
+      #srchBox.watermark #srchInput.nomark
+      {
+      background: #fff;
+      }
+      #srchBox.watermark #srchLogo
+      {
+      display: none;
+      }
+      
+      </style>
+      <form action="https://custom.search.yahoo.co.jp/search" method="get" id="srch">
+      <p id="srchForm">
+      <input type="search" results="5" name="p" id="srchInput"><input type="submit" value="検索" id="srchBtn" onclick="document.getElementById('srchInput').focus();">
+      <input type="hidden" id="fr" name="fr" value="cse">
+      <input type="hidden" id="ei" name="ei" value="UTF-8">
+      <input type="hidden" id="csid" name="csid" value="h9gC_1oMHYWtmTtl3p10nD7CMpxgpjX7USPbidGTqA--">
+      </p>
+      <input type="hidden" name="vs" value="tsuzukihashi.github.io" id="yjInsite">
+      </form>
+      <img src="https://custom.search.yahoo.co.jp/images/window/h9gC_1oMHYWtmTtl3p10nD7CMpxgpjX7USPbidGTqA--.gif">
+      </div>
+      <script type="text/javascript">
+      (function() {
+      var sb = document.getElementById('srchBox');
+      if (sb && sb.className == 'watermark') {
+        var si = document.getElementById('srchInput');
+        var f = function() { si.className = 'nomark'; };
+        var b = function() {
+          if (si.value == '') {
+            si.className = '';
+          }
+        };
+        si.onfocus = f;
+        si.onblur = b;
+        if (!/[&?]p=[^&]/.test(location.search)) {
+          b();
+        } else {
+          f();
         }
-        #srchBox *
-        {
-        margin:0;
-        padding:0;
-        font-size:13px;
-        *font-size:small;
-        *font:x-small;
-        }
-        #srchBox a img
-        {
-        border:none;
-        }
-        #srchBox #srch
-        {
-        padding:10px 10px 0 10px;
-        }
-        #srchBox #srch #srchForm
-        {
-        white-space:nowrap;
-        }
-        #srchBox #srchInput
-        {
-        width:188px;
-        margin-right:6px;
-        vertical-align:bottom;
-        }
-        #srchBox #srchBtn
-        {
-        width:80px;
-        }
-        *html #srchBox #srchBtn
-        {
-        padding-top:2px;
-        }
-        *:first-child+html #srchBox #srchBtn
-        {
-        padding-top:2px;
-        }
-        #srchBox ul
-        {
-        margin-top:6px;
-        text-align:left;
-        }
-        #srchBox li
-        {
-        list-style-type:none;
-        display:inline;
-        zoom:1;
-        padding-right:10px;
-        }
-        #srchBox li input
-        {
-        zoom:1;
-        margin-right:2px;
-        _margin:-4px 0 -4px -4px;
-        vertical-align:middle;
-        border:0;
-        }
-        *:html #srchBox li input
-        {
-        margin:-4px 0 -4px -4px;
-        }
-        #srchBox #srchLogo
-        {
-        margin:6px 6px 6px 0;
-        text-align:right;
-        }
-        #srchBox #srchLogo a
-        {
-        color:#666666;
-        text-decoration:none;
-        font-size:85%;
-        }
-        #srchBox #srchLogo a:hover
-        {
-        text-decoration:underline;
-        }
-        
-        </style>
-        <form action="https://custom.search.yahoo.co.jp/search" method="get" id="srch" target="yjserp">
-        <p id="srchForm">
-        <input type="search" results="5" name="p" id="srchInput"><input type="submit" value="検索" id="srchBtn">
-        <input type="hidden" id="fr" name="fr" value="cse">
-        <input type="hidden" id="ei" name="ei" value="UTF-8">
-        <input type="hidden" id="csid" name="csid" value="h9gC_1oMHYWtmTtl3p10nD7CMpxgpjX7USPbidGTqA--">
-        </p>
-        <input type="hidden" name="vs" value="tsudukihashi.github.io" id="yjInsite">
-        </form>
-        <p id="srchLogo"><a href="https://www.yahoo.co.jp"><img src="https://s.yimg.jp/images/search/customsearch/yjlogo/yjlogo_type1_ffffff.gif" width="124" height="20" alt="powered by Yahoo! JAPAN"></a></p>
-        <img src="https://custom.search.yahoo.co.jp/images/window/h9gC_1oMHYWtmTtl3p10nD7CMpxgpjX7USPbidGTqA--.gif">
-        </div>
-        <!-- /#srchBox -->
+      }
+      })();
+      </script>
+      <!-- /#srchBox -->
 </body>
 </html>
