@@ -10,6 +10,12 @@ body{
 .blue{
   color: skyblue;
 }
+.darkblue{
+  color: #3B5998;
+}
+.black{
+  color: black;
+}
 
 .Panel{
   margin: 100px;
@@ -245,6 +251,11 @@ footer{
 .SNS{
   padding: 10px;
   margin: 10px;
+}
+
+.SNS > li{
+  display: inline;
+  list-style: none;
 }
 
 .Fig{
