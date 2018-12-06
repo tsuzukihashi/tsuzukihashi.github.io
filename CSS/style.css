@@ -308,6 +308,7 @@ footer{
 #Header > li > a:hover{
   background-color: #FFF;
   opacity: 1.0;
+  font-size: 28px;
   color: lightcoral;
   width: 120px;
   height: 120px;
@@ -325,7 +326,8 @@ footer{
   }
   
   #Header > li > a:hover{
-  
+    font-size: 18px;
+
     width: 80px;
     height: 80px;
     line-height: 80px;
@@ -447,4 +449,18 @@ footer{
   border: 2px lightcoral solid;
   color: white;
   opacity: 1;
+}
+
+@media screen and (max-width:1000px){
+  .Blog > li{
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .Blog > li > a{
+    padding: 0px;
+    margin: 0px;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid whitesmoke;
+  }
 }
