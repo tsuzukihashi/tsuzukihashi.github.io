@@ -261,21 +261,41 @@ footer{
 }
 
 
-.search , .profile, .share{
+.search , .profile , .category{
   padding: 0;
   margin: 0;
   width: 100%;
-  background-color: whitesmoke;
+
   
 }
 
-.search > h3, .profile > h3, .share > h3{
+.profile > .back, .category > .back ,.search > .back{
+  background-color: whitesmoke;
+  box-shadow: 2px 2px 4px gray;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.profile > .back > em{
+  background-color: whitesmoke;
+  color: #383838;
+  font-size: 16px;
+
+}
+.search > h3, .profile > h3, .category > h3{
+  box-shadow: 2px 2px 4px gray;
   text-align: center;
+  padding: 5px;
+  border-top-left-radius: 500px;
+  border-top-right-radius: 500px;
   background-color: lightsalmon;
   color: whitesmoke;
   margin-bottom: 0;
 }
 
+.share{
+  text-align: center;
+}
 
 .Nav{
 
