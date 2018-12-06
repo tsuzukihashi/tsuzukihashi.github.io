@@ -7,20 +7,29 @@ body{
   font-size: 12px;
 }
 
+.blue{
+  color: skyblue;
+}
 
 .Panel{
   margin: 100px;
   margin-top: 0;
+  margin-left: 0;
+  width: 70%;
   background-color: rgba(243, 243, 243,0.5);
   border-radius: 1%;
   box-shadow: 2px 2px 4px gray;
+
 }
-@media screen and (max-width:480px){
+@media screen and (max-width:767px){
   .Panel{
-    margin: 10px;
+
+    margin: 2px;
+    width: 98%;
     border-radius: 0.1%;
   }
 }
+
 
 .return{
   text-align: center;
@@ -170,6 +179,7 @@ footer{
   color: whitesmoke;
   padding: 15px 50px;
   font-size: 36px;
+  font-weight: bold;
   box-shadow: 2px 2px 4px  gray;
   margin-top: 0px;
 
@@ -177,16 +187,25 @@ footer{
 
 }@media screen and (max-width:480px){
   .Title > h1 > em{
-    padding: 10px 20px;
-    font-size: 26px;
+    padding: 10px 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 18px;
   }
 }
 
 .Article{
   padding: 5px;
+
   word-wrap: break-word;
 }
 
+.Article > img{
+  display: block;
+  max-width: 100%;
+  margin: 10px auto;
+
+}
 .Article > h2{
   text-align: center;
   font-size: 24px;
@@ -223,6 +242,41 @@ footer{
   text-align: center;
   color: #383838;
 }
+.Side{
+  position: absolute;
+  width: 28%;
+  right: 0;
+
+}@media screen and (max-width:767px){
+  .Side{
+    display: none;
+  }
+}
+
+.Side > iframe{
+  position: absolute;
+  right: 0;
+  width: 100%;
+  height: 1200px;
+}
+
+
+.search , .profile, .share{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background-color: whitesmoke;
+  
+}
+
+.search > h3, .profile > h3, .share > h3{
+  text-align: center;
+  background-color: lightsalmon;
+  color: whitesmoke;
+  margin-bottom: 0;
+}
+
+
 .Nav{
 
   position: relative;
@@ -356,7 +410,7 @@ footer{
   width: 100%;
   background-color: #0B9;
   box-shadow: 2px 2px 4px  gray;
-
+  font-weight: bold;
   top:0px;
   left: 0px;
   padding: 5px 20px;
