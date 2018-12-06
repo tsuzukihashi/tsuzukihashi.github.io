@@ -9,6 +9,7 @@
 
 </head>
 <body>
+  
     <div class="profile">
 
         <h3>プロフィール</h3>
@@ -18,7 +19,7 @@
             スマホアプリ、デスクトップアプリ、ウェブアプリ、サイト作成などしています。<br>
 
             </em>
-            <a href="profile.html">詳しく</a>
+            <a href="profile.html" target="_top">詳しく</a>
             <br>
 
         <i class="fab fa-twitter fa-lg fa-fw blue"></i>
@@ -70,26 +71,112 @@
                       </div>
         </div>
     </div>
-    <div class="search">
 
-        <h3>サイト内検索</h3>
-        <div class="back">
-                    <script>
-                (function() {
-                  var cx = '001328935319291935426:vsfviecegrm';
-                  var gcse = document.createElement('script');
-                  gcse.type = 'text/javascript';
-                  gcse.async = true;
-                  gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-                  var s = document.getElementsByTagName('script')[0];
-                  s.parentNode.insertBefore(gcse, s);
-                })();
-              </script>
-              <gcse:search></gcse:search>
-              <br><br>
+    <div id="srchBox">
+        <style type="text/css">
+        #srchBox
+        {
+        width:298px;
+        _width:296px;
+        margin-bottom:10px;
+        background-color:#FFFFFF;
+        border-style:solid;
+        border-width:1px;
+        border-color:#EEEEEE;
+        color:#000000;
+        text-align:left;
+        }
+        #srchBox *
+        {
+        margin:0;
+        padding:0;
+        font-size:13px;
+        *font-size:small;
+        *font:x-small;
+        }
+        #srchBox a img
+        {
+        border:none;
+        }
+        #srchBox #srch
+        {
+        padding:10px 10px 0 10px;
+        }
+        #srchBox #srch #srchForm
+        {
+        white-space:nowrap;
+        }
+        #srchBox #srchInput
+        {
+        width:188px;
+        margin-right:6px;
+        vertical-align:bottom;
+        }
+        #srchBox #srchBtn
+        {
+        width:80px;
+        }
+        *html #srchBox #srchBtn
+        {
+        padding-top:2px;
+        }
+        *:first-child+html #srchBox #srchBtn
+        {
+        padding-top:2px;
+        }
+        #srchBox ul
+        {
+        margin-top:6px;
+        text-align:left;
+        }
+        #srchBox li
+        {
+        list-style-type:none;
+        display:inline;
+        zoom:1;
+        padding-right:10px;
+        }
+        #srchBox li input
+        {
+        zoom:1;
+        margin-right:2px;
+        _margin:-4px 0 -4px -4px;
+        vertical-align:middle;
+        border:0;
+        }
+        *:+html #srchBox li input
+        {
+        margin:-4px 0 -4px -4px;
+        }
+        #srchBox #srchLogo
+        {
+        margin:6px 6px 6px 0;
+        text-align:right;
+        }
+        #srchBox #srchLogo a
+        {
+        color:#666666;
+        text-decoration:none;
+        font-size:85%;
+        }
+        #srchBox #srchLogo a:hover
+        {
+        text-decoration:underline;
+        }
+        
+        </style>
+        <form action="https://custom.search.yahoo.co.jp/search" method="get" id="srch" target="yjserp">
+        <p id="srchForm">
+        <input type="search" results="5" name="p" id="srchInput"><input type="submit" value="検索" id="srchBtn">
+        <input type="hidden" id="fr" name="fr" value="cse">
+        <input type="hidden" id="ei" name="ei" value="UTF-8">
+        <input type="hidden" id="csid" name="csid" value="h9gC_1oMHYWtmTtl3p10nD7CMpxgpjX7USPbidGTqA--">
+        </p>
+        <input type="hidden" name="vs" value="tsudukihashi.github.io" id="yjInsite">
+        </form>
+        <p id="srchLogo"><a href="https://www.yahoo.co.jp"><img src="https://s.yimg.jp/images/search/customsearch/yjlogo/yjlogo_type1_ffffff.gif" width="124" height="20" alt="powered by Yahoo! JAPAN"></a></p>
+        <img src="https://custom.search.yahoo.co.jp/images/window/h9gC_1oMHYWtmTtl3p10nD7CMpxgpjX7USPbidGTqA--.gif">
         </div>
-
-
-    </div>
+        <!-- /#srchBox -->
 </body>
 </html>
