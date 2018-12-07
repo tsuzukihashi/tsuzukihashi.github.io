@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-130046973-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-130046973-1');
+</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="stylesheet" href="../CSS/style.css">
+  <title>Unity エラー解決の方法　AnimationEvent has no function name specifiedの直し方</title>
+  <meta name="description=" content="Unity error AnimationEvent has no function name specified エラー">
+</head>
+<body>
+    <div class="Nav">
+        <iframe src="../header.html" frameborder="0" scrolling="no">IFRAMEを有効にしてください。</iframe>
+    </div>
+    <div class="Side">
+        <iframe src="../side.html" frameborder="0" scrolling="no">IFRAMEを有効にしてください。</iframe>
+      </div>
+    <div class="Panel">
+        <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Ftsuzukihashi.github.io%2FUnity%2FUnity-Drag-Item.html&width=72&layout=box_count&action=like&size=small&show_faces=true&share=true&height=65&appId" width="72" height="65" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+  <div class="Title">
+    <h1><em>【Unity/エラー解決】<br>AnimationEvent has no function name specified</em></h1>
+  </div>
+
+  <div class="Tag">
+    <li><a href="../Unity.html">Unity</a></li>
+  </div>
+
+  <div class="Article">
+    <h2>はじめに</h2>
+    <p>Unityのお勉強を青和尚本でしていたら，自分のしょうもないミスでAnimationEventでエラーが出たので，忘れないようにメモがわりに解決方法を残しておきます．</p>
+
+    <p>error : AnimationEvent has no function name specified</p>
+    <h2>症状</h2>
+    <img src="https://lh3.googleusercontent.com/L7VLgveDNi76tHmOZWed7PO2OxKpPFaRXYpsmtZ3YYPirbuCwIP7oSlrsa0sPKh-WJCPo-hT27Z7X-IaZrj7XUK0TfaFM3iI2TyUZvFW8vBxR2eQ89Jvv7Bsjy6Zr2t_h-hI6immg_9RcU9a6AqLQZbhrgwZHYn_DyaERZuCi4KhbUfaiZuki1ZPXXfPsTtGurOPwvEi38WCEuxNRNUWUvB7-c3gvbL89_icgZi24dSc_GCGbgd6d1Ckup0mZT_mRKsILWWKFH_iUTuPfJHuMgRFI8KPvUgiFc7pYrWmLoF0a4aZqVe1x5ghoDCSz1A4gBJ4W-nhugjoCyQTT0Peai1YGJQnbYiZGzZmGuetaH9obORMrn4amBycnBf3c48t4pdAS4t2tM4hvbAJxce3h5josnBHZPKhTxELLrupsMELc49FxWbI5Mfv8VAiMUiWyLjaRLeOjBjxlEm4yRrBC0pHS4be5LZM1Hx_ASEmvlNWe-n_372Lg-Cog_fvX-PzzLRpPKwveejMkLXiZwzLse4YTxwBUkzrsO7s2WkKmI7aksM4IhXiXM1jjUyVX0DyQ7UigaW0aJlloxPBzVIJc2ovubK--reLXyc8CDxgG4BDqwRIrf06ZEa7VCDuGAJbntOhNIP52M9w7kSPs4cBH0wAiFapXmYbtsSYOwKoTLDqY358dJZ-eLvkGX4XU8O-XXdHzrbbrRugRgYAkFY=w649-h71-no" alt="error">
+
+    <h2>解決方法</h2>
+    <p>まずはじめに，エラーがおきているアニメーションがつけられているゲームオブジェクトに移動し，Animationウィンドウを開きます．</p>
+    <img src="https://lh3.googleusercontent.com/X_PuI0RsNR08JVlPdBKqHpo3moUMwGfSqdxYglfauc6xbtNHBmvKZTvRkO-yE0nCS9J7i-1XNJQHEY5G2oziydklBrSqiQ3rkahzh1E2SaJ4W4mUUHcAuGA8shAN_V8hZuMS5lpmuSo7doAXfefxvyv3Z3M1Mk_J-aDKG1ftomImjsBTA_HBRjbbpLS9n0MSD3vbl5F6rekmfZC1Y3P55wRtP5UPlOXB6NrmY08sEZmKcdUEYXyDcfUD5g1sOl8WtNnnwwFOk2UOkCGM7Fx-MDBgyhBIHfYoPd0oQwJBSe2ZKjDHynM5O24jp6S3Hu8Jd0pAkIpNf-LZA_l_nDXLsU5-cfP_tEMKL4lhJ61dO06tMqa8vfffJys7mn4fGffOzwDoxwhfYdfLYFZt5493fFyl4atPA08oBhlUCSff3R-N75XlkOtdarQchDyuVZLBKUvQqHEVbm3j-0xPCSmVyvFnnj5of3TAhLYrJRxY0SUJ5tKbYgncqt2NvxnVUR5SyPLbP2FrkVR-63uRT7QFCSX0Ku2i_igRutz6Zaytbb5YtPwl9WtH7SENsfZ1b6qmn4kjeWEliAuWCN4tez1C6SF_To1vLtqRLhmY03KoB80dOdgW-V6XYAaQZyJYVAuJ6RfiPWIo9q-yrDmhrhMOL2_LtQMP1e2xSE8zlLV6DB6DbdVfY7zNA9DzDlMUchLekEudb86bfg-V3QmXf50=w649-h227-no" alt="error">
+    <p>下図の赤い丸の中にある白い四角のところを右クリックします．</p>
+    <img src="https://lh3.googleusercontent.com/PfAG03HcT9onvJ10qn2hofn3aHf8eR29hwwAHUa0mbcGB4mk82sazWh0r60oDiYUFtdg1_iZquRb0jGUsXDo2fztnmK-7s3UofmSwC1-qwNStTgAQm9gpZQ7ZhIrhMKV9AEUfv_EEhiaz7F0lsGDBCIaLaD789HKBZsE5tYL1rp_UppU_PcLQVK4PEE2Ug8GO4w5w2kLqJjis_98BTBh2isemHgom9bNQTd8_Jws_WiAj9OTW8argRQJZJD_neQF69n4xSvMkAkeDltkFWQKx8ZZT0HdAi18yUTxAJyMHjDNbWdP4J2qE-Erf-GSqf8nOIcJbBdsFXLOy3ajONVku-hQlOAtwoe4nP1MXNrp5FlmLkW-kUCYDCP6hHHVmnTXw09biNSzI6qXa0J1ZskCV4BUXEAygF6gCriRmRALVPsFYvkv9_TxqUdD0SSzKEo6laiax1m7WiCWk2ShTJiQ7LD5vAvIEzPBg7P5CJuISsLd4ud3rOYE1e2rEtvJvVVdaDsHr2xxnEtK6eIEygbXNAU7UzDFP9b43Rkx_iBU7ljMcrv58rjZ_9OZ1zza6mrut4x75CoBVgUt6GGw1OtE8vtiLZIm751wkzLXUZV3OGIWRgnbSj5gRpJ3MZKKMdNuY5v8Rzka8iAMz4B-blW83q0ObomufcJJvz6tYLtq-p7kEd4lB3PTnOLnQE_blg3pGuw0KEh_DeHhiLaVDKU=w649-h227-no" alt="right click">
+    <p>Delete Animation EventをクリックしてEventを削除します．</p>
+    <img src="https://lh3.googleusercontent.com/I-l7wW0ZgleIjZ95j67a6LdH1nHl4i1B8CvFO19UaGnA3sJBP34pIy3wvDiCL9jdqtaWf0-mwq3cxA6zn_6I3QnEp3gOrhM3YYAqtO9EhF1dYWOtHGVmFui1m8ouXPk0WV3h7K741t_p4FIOb5Xde7c1TALPXprBS0DC54MZ-qOkLsncqCVt1Eh39CEglpWKxgEMP38Q_yRGfJ-iB6b_JNpRE_T_vLAQPghBvbGcdQN9jWIjkxwiW-tXbGqEXzkqrHwgcDnLc0_BoMnf1_rBeIzyCvshZNIoo6UhRQorZLxkFFWZg21AK4RReD9NbI7aza6aRyJVCS99TEGJura5zuGNReP1ZdzioTZG6HQDbBBW9TYptf98dKIEg7JSTpeTWH5VDXaYQXYmAkymuu2asMj-bNr1YdW6vanhHOvlCmPSffDxQmcoXYMIMtDvW6EeoK_TP7ZfUrfC1NYsRuosF1LxmYA3uA0VoZFvVRV_43e1zwKxciopI-IopbnTSCup-jW_jjeJ_ScwvKvy5QDBm7poBLusDRwL8Nfg2njHefqYN2JKnaFzEx6KU1uCDgqyEOt7fYxQ1A8M127dHD4bdBWNIvRcKtWG4TCbAvtQusI3V3DU8xUlK6pwleIsC9Epql0daSH365xqs0QiWC6E1wKmJoqbtJAPsAFgvc8JpwBySaALSROzCXHCDGLZ12X3-f41PCZhsYG_CACCpuo=w649-h227-no" alt="explain">
+
+    <p>以下のようになれば完了です．</p>
+    <img src="https://lh3.googleusercontent.com/cx-48NQIeYBfJh4qAjU7RQrosdGYu6_b76WD_9niDacux7ZNQipBQavCOO9WaqEGUeGW0tf9DYGrXgmq7XQYXb__pM7HV8d5MA7RXVjCmMP54kQjgrFY8kNxTvIfSf084m7tClwSGAD1MqcWHLaJL6HxylQSGoQn16vQiEhZ91r5MXHjByo9wcBgnyEfOtmIX0jSd-VFK-GjyYxcw0aDCe1aIzJ4JA-1nG4C__SDECa82fhGhw2NZLkIQwdkKx1ZLWLPzHFYIbOx5NxkrfsF3W22RuwhnAYLKtdFVu9V8Mx4f-m1WMQJjQ3y6ot9eWeuDuCpmUUeOYDGQw-FCS-bEegy20oICzVaWTAVrl1ciBSFoOlxlHcdDRd0I73E5cVVW-NzGhmHL6LIW9bqcK70iOSlxRbq1Mjza-mgoyhlJXXBNxJJx7XGapYv46n9nWRY6o50mAoMJTjAnPyMJWC6KFMz8wsSgSbu3gaKQJJ78BsvXnEi9anS9bu_wXhOLUHesOcBQiomabEvSEEXP953xb-mJo-PD_chAP_YssuneFB2v7kTgriPmQ2wSh2DoGQ6cVSw7GCfaIEuF8sj9yiExIO5NwFh2w4oW9QdrFxy7naNXvmgGxj9boXFGkOKclCsCDu1o3LhYpoty6CBCsYqr5y93zurNdPZbmcLMbvP3DDF-lPzy4Rzv3-yLHcIUUIhShc2l6sVFIYT6zP73pY=w649-h227-no" alt="result">
+
+    <h2>原因</h2>
+    <p>Animationでキーフレームをいじっている時に，Add Event をクリックしてたみたいですね．．．</p>
+    <img src="https://lh3.googleusercontent.com/-Vr0wcVPoXBbj8_kLAVLFS_kSV7YboBoUohqJgWa2YgQUmBulC8WuTMXCgDHmtJsCaLlv38u7Gwx7pf8unzqhW9roajC34V1wSK9qYLXgDo2C96WQ7nzqOtb8RKMRQme9aiCNrUKFpdrtqA_Ctv30DtKDG3ZeeKZd0BfSatHT3pGYEUwilwJhO5z6x59zZNLmYBl7Ev0ACxN6njntb7JNTnkClK9iqyK3uHjJLLDhWs7ektPqiZHS72zCZd5BPBPvSyTF1LMPqRKnseLOE85JDwI5BxOSPbRzEPD6wCf3K1fYUFmfa_R0HdX5gvrqbY0AAJekY3pWeey-I9xyOQpyPKPHd2nM68ocAzoJv-_qLvxRdB-OBe6rfVlZjR9lVWGyXg7BzIaJMpfstBsHwcVlhFUPbKAuwDhf6agjnr2Ks5ClNbgZwO1zOuzKGmXSFz-gLM_bhUzdOyjnVlTNEUEylbUZW8_81MZwriVDybPjrE7FKmuXltMKxyB3StYyzZB2CN93Cl05cvNypdQy9rtCUZIZAjxoi2QSZr-Sjn9BtKdeDetW8VUyTZsVXaJy9lVzNaxOc0wBcuu407BO_xnBn-IwStGF2f77ylsZcDrJGau-Rul-fH9vIzEtSdzCFQFSx19xLExaIyMjUPGonXy8mfarW3B_R0Ad1pbEQlKYDUKuVE9zZpmtwUy-mlRidpoieLzChjCKufBpMiYqQg=w649-h227-no" alt="cause">
+
+    <p>まだ自分はAnimation Eventを扱った事がないのですが，なにやら面白そうな機能です．</p>
+    <p>Animation Eventを利用すると，アニメーションに合わせてメソッドを使用することができ，アニメーションに合わせて音を出したり，エフェクトを出したり，当たり判定を変えたりすることができるみたいです．</p>
+
+    <a href="https://qiita.com/yun_T/items/58e77d3396ded286affc" target="_blank">[Unity] Animation Eventを使いこなそう！</a><br>
+    この記事が面白そうなので，あとで見てみようかと思います．
+  </div>
+  <div class="return">
+    <a href="../blog.html">戻る</a>
+  </div>
+  <br>
+  <br>
+  <div class="share">
+      <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <div class="line-it-button" data-lang="ja" data-type="share-a" data-url="https://tsudukihashi.github.io/" style="display: none;"></div>
+      <script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
+  
+  </div>
+</div>
+  <div id="disqus_thread"></div>
+<script>
+
+(function() {
+var d = document, s = d.createElement('script');
+s.src = 'https://tsudukihashi-github-io.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+<footer>
+  <p>
+      COPYRIGHT &#169;Ryo Tsuzukihashi ALL RIGHT RESERVED.
+
+  </p>
+</footer>
+</body>
+</html>

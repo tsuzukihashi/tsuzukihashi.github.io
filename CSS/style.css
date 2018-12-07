@@ -562,6 +562,34 @@ footer{
   opacity: 1;
 }
 
+.Unity > li{
+  padding: 5px;
+  margin: 15px 20px;
+}
+
+.Unity > li > a{
+  background-color: whitesmoke;
+  border: 5px solid black;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 5px;
+  margin: 5px;
+}
+
+.Unity > li > a:hover{
+  background-color: black;
+  color: whitesmoke;
+  opacity: 1;
+
+}
+.Blog > li > a:hover{
+  background-color: lightcoral;
+  border: 2px lightcoral solid;
+  color: white;
+  opacity: 1;
+}
+
 @media screen and (max-width:1000px){
   .Blog > li{
     padding: 10px;
