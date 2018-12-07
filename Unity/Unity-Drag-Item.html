@@ -15,7 +15,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
   <link rel="stylesheet" href="../CSS/style.css">
   <title>Unityでオブジェクトをドラッグして動かす方法</title>
-  <meta name="description=" content="Engineer Blog ツヅキラボ">
+  <meta name="description=" content="UnityのOnMouseDragメソッドを使ってゲームオブジェクトをドラッグして動かせるようにする方法です．">
 </head>
 <body>
     <div class="Nav">
@@ -25,8 +25,13 @@
         <iframe src="../side.html" frameborder="0" scrolling="no">IFRAMEを有効にしてください。</iframe>
       </div>
     <div class="Panel">
+        <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Ftsuzukihashi.github.io%2FUnity%2FUnity-Drag-Item.html&width=72&layout=box_count&action=like&size=small&show_faces=true&share=true&height=65&appId" width="72" height="65" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
   <div class="Title">
     <h1><em>Unityでオブジェクトをドラッグして動かす方法</em></h1>
+  </div>
+
+  <div class="Tag">
+    <li><a href="../Unity.html">Unity</a></li>
   </div>
 
   <div class="Article">
@@ -34,9 +39,60 @@
     <p>
       Unityでゲームオブジェクトをマウスを使ってドラッグ操作した時に，オブジェクトをマウスの動きに合わせて動かす方法についてまとめます．
     </p>
+    <h2>イメージ</h2>
+    <img src="https://lh3.googleusercontent.com/swajAxK5tChJr_nnuMv2RhPCpccQJJrNROcXu2xuWcGNECNdG4uT7mc63oc1cJ-8K6PmUef0JdO0NQRV1jIi-z2qYaD_tYMct5-iFTh-SkRCKk2n7irchPc1MqlK2Ji6aoeB2B-fKT7aPR_l-RnK3I1Zwk1CSjoagn_ePMdXI4yfRA5co-K2oCSnrjdN7PlW6Ujcu0Fi6LT4jIkEi5rLmD8wHZy8CMwTn_jTcwb_S5RfONUEVB0qfGVjb5pQqOfxOvjfG1MvJYeAw-AtG_5UEsOFzTaUhHJKK_X7AQuECskM00CEtMaw4ogWq7tbDkS1XC4Oa3VALYscVi7OEocjf_fnt7A2MbmcvWkms2Dz3E6NkkTf242qgupDeS2R9Ju9fVeiz7DuYExWDb6Tm3Km8dAuaZ8QpBO-mD2EStjXOrqXvyIo2nZSM-rtuU72jw4v14YsR7wljXqeXRGo1gMUwHV0aqY3JNMirWPXl39MMwan1_tid8208O7UkxLQf_D65UNT8bg-WaU6XpM68OqPT5K95S8KwYFebpo8ED6cKqoTCjQB0r4DhXHHVCg9TOfYm5BNUFH-0A4GMUAD79lJYndfOsuxJVhQW1VNrovj1ljvdVrvLWVQFM_cYUoXUBEOr0lMtz3JbmkHEx1oqZzQAOYSI1IYAutDAyn9FpgxPr36LZFzMKcbpaJQVpYl_z4J6gF8mt7H7nEtuxn4cDQ=w526-h239-no" alt="images">
+
+    <h2>方法</h2>
+    <li>
+      動かしたいゲームオブジェクトに以下のスクリプトを追加します．<br>
+      <h3>Movable.cs</h3>
+      <div class="code">
+      <pre>
+      using System.Collections;
+      using System.Collections.Generic;
+      using UnityEngine;
+
+      public class Movable : MonoBehaviour {
+
+        private void OnMouseDrag()
+        {
+          float x = Input.mousePosition.x;
+          float y = Input.mousePosition.y;
+          float z = 100.0f;
+
+          transform.position = Camera.main.ScreenToWorldPoint(new Vector3(x, y, z));
+        }
+      }
+      </pre>
+      </div>
+
+    </li>
+    <li>
+    <pre>
+ドラッグを使用するために，まずOnMouseDragメソッドを利用しましょう！
+
+これはゲームオブジェクト(GUIElement または Collider)がドラッグされている間，定期的に呼び出されるメソッドです！
+
+この関数はレイヤーが「 Ignore Raycast 」のゲームオブジェクトでは呼び出されないため注意しましょう．
+        
+またInputクラスを利用してドラッグしている間のマウスの状態を得ます．
+
+Inputクラスはマウスやジョイスティック，スマートフォンのタップ操作やセンサーからの情報を得る機能を所持しています．
+
+メンバー変数であるmousePositionを利用して，マウスポインタの位置やタッチしている座標を一箇所取得することができます．
+
+しかし，この座標の値は，画面の左下を(0,0)とするピクセル単位のスクリーン座標であり，カメラがもつScreenToWorldPointメソッドを利用してゲームオブジェクトが使用するワールド座標に変換します．
+
+OnMouseDragはメソッド名を書くだけで，自動的に呼び出されますのでイベントに割り当てる必要がありません．
+
+しかし，メソッド名を間違えて書いていたり，型が違っていたりすると呼び出されません！
+
+なおかつエラーも発生しないので注意して利用する必要があります．
+</pre>
+  </li>
   </div>
   <div class="return">
-    <a href="index.html">戻る</a>
+    <a href="../blog.html">戻る</a>
   </div>
   <br>
   <br>
