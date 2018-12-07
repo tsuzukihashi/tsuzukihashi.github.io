@@ -591,12 +591,12 @@ footer{
 }
 
 @media screen and (max-width:1000px){
-  .Blog > li{
+  .Blog > li, .Unity > li{
     padding: 10px;
     margin: 10px;
   }
 
-  .Blog > li > a{
+  .Blog > li > a, .Unity > li > a{
     padding: 0px;
     margin: 0px;
     background-color: rgba(0,0,0,0);
