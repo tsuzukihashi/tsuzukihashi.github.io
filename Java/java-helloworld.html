@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-130046973-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-130046973-1');
+</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="stylesheet" href="../CSS/style.css">
+  <title>【Java】Hello, Worldから始めよう</title>
+  <meta name="description=" content="【Java】Hello, Worldから始めよう">
+</head>
+<body>
+    <div class="Nav">
+        <iframe src="../header.html" frameborder="0" scrolling="no">IFRAMEを有効にしてください。</iframe>
+    </div>
+    <div class="Side">
+        <iframe src="../side.html" frameborder="0" scrolling="no">IFRAMEを有効にしてください。</iframe>
+      </div>
+    <div class="Panel">
+        <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Ftsuzukihashi.github.io%2FUnity%2FUnity-Drag-Item.html&width=72&layout=box_count&action=like&size=small&show_faces=true&share=true&height=65&appId" width="72" height="65" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+  <div class="Title">
+    <h1><em>【Java】Hello, Worldから始めよう #001</em></h1>
+  </div>
+
+  <div class="Tag">
+    <li><a href="../Java.html">Java</a></li>
+  </div>
+
+  <div class="Article">
+    <h2 id="01">はじめに</h2>
+    <p>今回から，Java言語入門シリーズを始めていこうと思います．自分自身，Javaを触っていたのが，大学の授業で半年間
+      と，その後1年間Androidアプリを作っていただけだったので忘れているところも多いと思いますので，気持ちを新たにして
+      始めから学んでいくつもりで，このJava言語入門シリーズを作ってきたいと思います．
+    </p>
+    <h2>目次</h2>
+
+    <div class="mokuji">
+        <ul>
+            <li><a href="#01">はじめに</a></li>
+            <li><a href="#02">実行環境を整えよう</a></li>
+            <li><a href="#03">コードを書く</a></li>
+            <li><a href="#04">コンパイルをしよう</a></li>
+            <li><a href="#05">実行しよう!</a></li>
+            <li><a href="#06">次回予告</a></li>
+        </ul>
+    </div>
+
+    <h2 id="02">実行環境を整えよう</h2>
+    <p>
+      使用しているOSにあったJDKをインストールしパスを通しましょう．詳しくはGoogleで検索してみてください．<br>
+      参考URL : <a href="https://techacademy.jp/magazine/8998">初心者でも簡単にできる！Javaをインストールする方法(Windows編)</a>
+    </p>
+    <p>ちなみにmacならインストールが終わればそのまま使える！macサイコーーーーーーーーーーーーーーー</p>
+    <p>さあさ，インストールが終わったら，次はコードをどうやって書くかです！</p>
+    <p>すでにお気に入りのエディタがあるひとはそれを使ってください．ない人はvimでもemacsでもいいですが，最初はvisual studio codeをお勧めします．</p>
+    <p><a href="https://code.visualstudio.com/">ダウンロード</a></p>
+    <p>理由は軽くて，情報が豊富で，カスタマイズしやすいからです．まあぶっちゃけ生産性が上がればなんでも良いです．</p>
+    <p>もちろん自分でエディタを作ってもいいですよ！</p>
+    <h2 id="03">コードを書く</h2>
+    <p>やっと，コードが書けます！嬉しいですね！！！</p>
+    HelloWorld.java
+    <div class="code">
+      <pre>
+class HelloWorld{
+  public static void main(String[] args){
+    System.out.println("Hello, World.");
+  }
+}
+      </pre>
+    </div>
+
+    <p>このコードをHelloWorld.javaという名前で作成して保存してください．Visual Studio Codeでの画面が下図のようになります．</p>
+    <img src="https://lh3.googleusercontent.com/dQEnfPdBsttOm8P5k2qMWPLu8rGXD82ul3B1OTo6XCPfFpF0Od7F-hU1XD4199I-yxO-EoPjEoNsGCbc0Vneit9PDfYWlZe7FFvkhSsRgykiN598pQ7MIbH1fHaPj7kYkbq40e2H2iAO6TDLWNEmW9BHbs1t7-N0GHNZgRLw6wi7dVTucrbmSHdbL_A3gsvZk6TCYqq1MbLfqxzrR66VWWJHtRk4XmNp0LlTakqEA45EXYOpKj92iyoR10Qs189D1VL8ZZq4ucHH6yYVOBtaOnsIGZXmiEoQGHWNYf9MMRyFi3x77yCI6iACzSamgfiZ9qqOy6Rh9ekv2HRITPjkT_LdCKEVenl9_MnLXp1iKGM4CYpf8dTYqHeSPfiNOWqGutfzLZuqSsQ6Pi9mnynvCaFbjHv-nSYY6Z2WEPuSJcxIsHdW6k3soQpe8-P4Cr1YNAUmj-rPDmMXLLSz8ax8eo1tlqFFzwgzzfgkMZV8KlEN9t2mqP6JdgTStDEPS172RwHtqxNcUuK5y0s9jInT0O9-cwwfTUSMJ-1ujBQWhQjAwM7LcNF33uBceXuOovfQuamTqf8y2tWpKyCDWP0QlUYTYFAROdYx3gu5EnDlnK8xUdI4CNJF5_cjEbgsTZKKHWQnKQjSzdaGQS-yjLb32vIhZSPwyiMr1mHPR333_byMa2aJFnJcHPEnPFiJMmPCQADT-vN1YS3aI8LD-js=w875-h579-no" alt="visual studio code">
+
+
+    <p>Visual Studio Codeなら下画面にコマンドプロンプト，ターミナルを表示させることができ，なおかつ開いたときのカレントディレクトリを表示しているため，そこに直接コマンドを打てるので便利です．</p>
+    <p>コードの説明は後回しにしてとりあえず実行してみましょう！</p>
+    <h2 id="04">コンパイルをしよう！</h2>
+    <p>実行するにはjavaは一度コンパイルする必要があります．ターミナルに</p>
+    <div class="code">
+      <p>javac HelloWorld.java</p>
+    </div>
+    <p>と入力します．すると</p>
+
+    <img src="https://lh3.googleusercontent.com/LekTVtvds2M9CXtEmRaBvrBYU_V9f86CRXmP91f1C8JGCdEMnghwJCUKgdxJRsm3CS5lcj7zYFi7snEKxhKC1euwrovbVz3LhhHM3znkBnHB3jDKIokRIPPV68kt-TuwmfbEZamhfG2bUl-gfCV5ey8jAB3FL3dMO_5WEk8vJTSajy5RNOswCgQ1RF_AreNHULX1NQebil1Pgpa6xWM2gdR9IaqrqhHngVzDkgM6wOfoCjw2hxQ3DO2pmzA5zUxeL5huYLe-I2aFB2KgtHy-8JHviBwju5V-rzvDUrduWzLYplxNVAwQNo30hzDgNTXl4svMKx9wljqmHqpULfNh3YALm_icjOczj5jWEfyOzyht4xFfXBChkzlBrmpL2-OSlDrxGd2U9ziWy_XbTRzxgme2MgVYg1y3me-beD3cUUq-6XfgP8TqwaLZTAGfKY25oC542fJkKMSksoGvII0mJsSGg8tUYg1U3mE8ZosVOfClJkDh3f9_v0DkxaBi6P15TnT7pD7NlST2_Sxap81MoXC3udiiyObbVZMDIs3uoUVQxVeA6a9m48tRwLl1VVHsXnDQPfer8P5kW-fjn14rrL_PBOViKMFPaJZRmxDWQ33IQwWwj-Oz9riYZ_zYjaX2GQRJnMf70OussGeO-h2r2O7QtpEIDuBp8sL-Qn0gSgxmWxK8B5bCC0PUwqVsQPNoK6UTZQlwOL_Sv-Ltadw=w708-h410-no" alt="java">
+
+    <p>HelloWorld.classというバイナリ形式のファイルが作成されます．</p>
+
+    <h2 id="05">実行しよう！</h2>
+    <p>ようやく実行できます．ターミナルに</p>
+    <div class="code">
+      <p>java HelloWorld</p>
+    </div>
+    <p>と入力してエンターキーを押してください.
+      今度は拡張子まで打つ必要はありません．
+    </p>
+
+    <img src="https://lh3.googleusercontent.com/JaFcCM_cBVQm3FzeIlPH4kfScqJTBmur5-nM-Ox8gtR6_p9WiNtGxPYZ3MzQt2BZ9TXAStDsluc4NlSxdxnfRBb3WK80I-dHTukIwUqXtOAjzDW-gJQVjWoyRQxl5NkXKVHHFf674RKi4LGz63BJn-oCOIjvKo4mduGzeq3nT1pjOJNN3GH58oTmnRMDD5qoRt91FRd4P5PWq9fAI4Ih8IvmoR29jgn90Gru-uQ8MmSmLd_k-srMm-XEE9lu-BL9hoYEi21nUG1DXEZ57YXT5tcDabq1pCzIW55mLbtT9Wq1hyECFP5_JaLcWWnpVkkFnyD_eERq0rzhEHGPwwCYrGHKRfyCkxLmDbFQFFtp7Fre-YRuV3TBhvwotO293bUdXWbg9HWQdHBQb1jFOHPEDeCVvHTewNPDKO5IhqxCBPsDA0A9Yct8XD0phufi4uEPsX9KNECEAo60ANPVaj1i1IELWlaSoIUglsnzTQFGbNjRyk9mPuLYlqffH9TFJY1O5U-YQu3yjVC34hXHv4YVrLXp41myHC0P5_Z9iXDKM3NmGB-NwpZj2iyX6MJACoLgWzSeEenwuePD48Cn5Zw0RB676uH_Xhi1coe7FweZ9a5jf7qASQOzgQH6k_snO0TLbWDkC0lPKNe9zg5LFIgJLee9ipBXUurZbd3D2aZjl4HEr58xXmfNni2EKJAi0RKKulemjJ_evx7ayr5UucA=w708-h148-no" alt="image">
+
+    <p>
+      無事Hello,Worldが表示されました！
+      表示された方おめでとうございます．されなかった方は半角で入力しているか，全角スペースを使っていないか，そもそもパスは通っているかどうかなど確認してみてください．
+    </p>
+    <p>
+      間違いの中でこそ成長できると思うので，間違えられた方はラッキーですよ！
+    </p>
+    <h2 id="06">次回予告</h2>
+    <p>
+      次回は今回書いたコードの詳しく見ていきたいと思っています．
+    </p>
+
+    <h2 id="07">宿題</h2>
+    <p>ファイル名とクラス名が異なるコードを書いて，コンパイルして実行してみよう！どうなるかな？</p>
+
+
+  </div>
+  <div class="return">
+    <a href="../blog.html">戻る</a>
+  </div>
+  <br>
+  <br>
+  <div class="share">
+      <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <div class="line-it-button" data-lang="ja" data-type="share-a" data-url="https://tsudukihashi.github.io/" style="display: none;"></div>
+      <script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
+  
+  </div>
+</div>
+  <div id="disqus_thread"></div>
+<script>
+
+(function() {
+var d = document, s = d.createElement('script');
+s.src = 'https://tsudukihashi-github-io.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+<footer>
+  <p>
+      COPYRIGHT &#169;Ryo Tsuzukihashi ALL RIGHT RESERVED.
+
+  </p>
+</footer>
+</body>
+</html>
