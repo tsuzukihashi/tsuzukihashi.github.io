@@ -642,5 +642,6 @@ footer{
 
 .Photoes > li {
   text-align: center;
+  list-style: none;
 }
 
