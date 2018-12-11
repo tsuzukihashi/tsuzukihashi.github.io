@@ -611,6 +611,7 @@ footer{
 
 .mokuji {
   background-color: whitesmoke;
+  border-radius: 10px;
 
 }
 
@@ -622,4 +623,5 @@ footer{
 .mokuji > ul > li > a{
   text-decoration: none;
   color: #3B5998;
+  font-weight: bold;
 }
