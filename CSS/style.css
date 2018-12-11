@@ -625,3 +625,22 @@ footer{
   color: #3B5998;
   font-weight: bold;
 }
+
+.Photoes{
+
+}
+
+.Photoes > p{
+  font-weight: bold;
+  text-align: center;
+}
+.Photoes > img{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.Photoes > li {
+  text-align: center;
+}
+
