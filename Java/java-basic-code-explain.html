@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-130046973-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-130046973-1');
+</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="stylesheet" href="../CSS/style.css">
+  <title>【Java】基本のコードの解説 #002</title>
+  <meta name="description=" content="Java 基本のコードの解説 #002">
+</head>
+<body>
+    <div class="Nav">
+        <iframe src="../header.html" frameborder="0" scrolling="no">IFRAMEを有効にしてください。</iframe>
+    </div>
+    <div class="Side">
+        <iframe src="../side.html" frameborder="0" scrolling="no">IFRAMEを有効にしてください。</iframe>
+      </div>
+    <div class="Panel">
+        <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Ftsuzukihashi.github.io%2FUnity%2FUnity-Drag-Item.html&width=72&layout=box_count&action=like&size=small&show_faces=true&share=true&height=65&appId" width="72" height="65" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+  <div class="Title">
+    <h1><em>【Java】基本のコードの解説 #002</em></h1>
+  </div>
+
+  <div class="Tag">
+    <li><a href="../Java.html">Java</a></li>
+  </div>
+
+  <div class="Article">
+    <h2 id="01">はじめに</h2>
+    <p>
+      前回作成したJavaのコードを詳しく見ていきます．
+    </p>
+    <h2>目次</h2>
+
+    <div class="mokuji">
+        <ul>
+            <li><a href="#01">はじめに</a></li>
+            <li><a href="#02">コードの内容</a></li>
+            <li><a href="#03">クラス</a></li>
+            <li><a href="#04">mainメソッド</a></li>
+            <li><a href="#05">実行しよう!</a></li>
+            <li><a href="#06">次回予告</a></li>
+        </ul>
+    </div>
+
+    <h2 id="02">コードの内容</h2>
+    <p>
+      前回書いたコードは以下の通りです．
+    </p>
+
+    HelloWorld.java
+    <div class="code">
+<pre>class HelloWorld
+{
+    public static void main(String[] args)
+    {
+      System.out.println("Hello, World.");
+    }
+}</pre>
+    </div>
+
+    <h2 id="03">クラス</h2>
+    <p>一行目は
+      class HelloWorldで始まっています．
+    </p>
+    <p>Javaのプログラムのコードは"class"とついたブロックから成り立っています．このブロックのことをクラスと呼び，
+      "class"の次に続く単語がクラス名と呼ばれています．
+    </p>
+    <p>Javaのプログラムにはクラスが最低でも一つ必要で，クラス名は自由につけることができます．</p>
+
+    <h2 id="04">mainメソッド</h2>
+    <p>次は public static void main(String[] args)となっています．</p>
+    <p>Javaのプログラムは原則このmain()と書かれた場所から処理が行われます．</p>
+    <p>publicはアクセス修飾子と呼ばれるもので詳しくは今後説明してきますが，これがないと</p>
+    <p>エラー: メイン・メソッドがクラスHelloJavaで見つかりません。次のようにメイン・メソッドを定義してください。
+        public static void main(String[] args)
+     またはJavaFXアプリケーション・クラスはjavafx.application.Applicationを拡張する必要があります</p>
+    <p>main()の中にあるものを引数（ひきすう）と呼びます．</p>
+    <p>引数にString[] args</p>
+
+
+  <div class="return">
+    <a href="../blog.html">戻る</a>
+  </div>
+  <br>
+  <br>
+  <div class="share">
+      <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <div class="line-it-button" data-lang="ja" data-type="share-a" data-url="https://tsudukihashi.github.io/" style="display: none;"></div>
+      <script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
+  
+  </div>
+</div>
+  <div id="disqus_thread"></div>
+<script>
+
+(function() {
+var d = document, s = d.createElement('script');
+s.src = 'https://tsudukihashi-github-io.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+<footer>
+  <p>
+      COPYRIGHT &#169;Ryo Tsuzukihashi ALL RIGHT RESERVED.
+
+  </p>
+</footer>
+</body>
+</html>
