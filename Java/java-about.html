@@ -73,11 +73,24 @@
       それまでの言語は，Windowsで作ったアプリはWindowsでしか動かなく，UNIXという別のOSで動かそうとするには
       異なるOSでプログラムが動けるようにする<ruby><rb>移植</rb><rt>いしょく</rt></ruby>といった大変な作業が必要でした．
     </p>
-    <img src="https://lh3.googleusercontent.com/bA_Jr_DCkLlHdtYMl_cWEEgeN2dWsizcHM5lv_7BnMjtvu6IiGPaCvg5nahHanrBPhzkcrYSKtoqG3odDWuEDvOh8k0e2LAOn_RdrOhYud8a4RNgDrKxMFBJqfEJwcRCfd4h5P83lq8fOymicFhuJ1iVP6zDx4gvmYuPq93lAZC5UclN4NLFimEADvWoqjzkWAYSH8Fbk-dIaQ-eNYY-6WI6kWJ2Fo9XixLmHuimkbYWn4ISa3Q98sKFK-_I9Aq6Fdvv-fn0FOjSrUmgTX8fwaDs2TYu2feyT0qNRjSTCtE8DR2u2TWnwfDl5RzDdWmoxwQdITNzgPiMFSkVrCJSTyXPJTylWDNhgxbNrWO-4Q6ljtOwjat4fXcYBFtvyr-8hL3ljECUcW-IAcIoBBUFHpo3h-CaIOjjMhLJnumVBxkl8il6FWFi5DGsf0f-hvJiNhik8-sAn3OrOWFUvywMIjvyZAB78018VlJhXrBhux-KpyKr-xWnZgjfCJ42KulnRqnHawVomzz0sols6HtyZVBpXI9o5JPtpyzzJ55A5T8kXdg_aMe4pRnA39ZYjBKPtOjGEau4Fxejn1f9AX9KuLbxHVGMbWK2m3zEjKXE3-RK5Nzf0fUJ28RM66cqGWGm8U3oZ40l_Apj93P3Q3nzhrw9bRcmxhsciI2LHtAACyz0OTGhAbro-ch-xFtx2Oyu7GmO_tlE6G-_QomdzfM=w1109-h579-no" alt="java-001">
+    <p>
+      しかしJava言語を利用することで，移植作業の必要がなくなりました．
+      Javaで作成されたアプリケーションはコンピューターの種類が異なっていても，
+      そのままアプリケーションが実行することができるのです．
+    </p>
+    <p>このようなプログラムのことをクロスプラットフォームやマルチプラットフォームと呼びます．</p>
+    <img src="https://lh3.googleusercontent.com/bA_Jr_DCkLlHdtYMl_cWEEgeN2dWsizcHM5lv_7BnMjtvu6IiGPaCvg5nahHanrBPhzkcrYSKtoqG3odDWuEDvOh8k0e2LAOn_RdrOhYud8a4RNgDrKxMFBJqfEJwcRCfd4h5P83lq8fOymicFhuJ1iVP6zDx4gvmYuPq93lAZC5UclN4NLFimEADvWoqjzkWAYSH8Fbk-dIaQ-eNYY-6WI6kWJ2Fo9XixLmHuimkbYWn4ISa3Q98sKFK-_I9Aq6Fdvv-fn0FOjSrUmgTX8fwaDs2TYu2feyT0qNRjSTCtE8DR2u2TWnwfDl5RzDdWmoxwQdITNzgPiMFSkVrCJSTyXPJTylWDNhgxbNrWO-4Q6ljtOwjat4fXcYBFtvyr-8hL3ljECUcW-IAcIoBBUFHpo3h-CaIOjjMhLJnumVBxkl8il6FWFi5DGsf0f-hvJiNhik8-sAn3OrOWFUvywMIjvyZAB78018VlJhXrBhux-KpyKr-xWnZgjfCJ42KulnRqnHawVomzz0sols6HtyZVBpXI9o5JPtpyzzJ55A5T8kXdg_aMe4pRnA39ZYjBKPtOjGEau4Fxejn1f9AX9KuLbxHVGMbWK2m3zEjKXE3-RK5Nzf0fUJ28RM66cqGWGm8U3oZ40l_Apj93P3Q3nzhrw9bRcmxhsciI2LHtAACyz0OTGhAbro-ch-xFtx2Oyu7GmO_tlE6G-_QomdzfM=w550-h280-no" alt="java-001">
 
-    <p>このようなプログラムのことをクロスプラットフォームやマルチプラットフォームと呼んだりする．</p>
 
     <h2 id="03">JVMとは</h2>
+    <p>JVMとはJava <ruby><rb>Virtual</rb><rt>ばーちゃる</rt></ruby> <ruby><rb>Machine</rb><rt>ましーん</rt></ruby>
+    の略で，Javaの仮想マシンと呼ばれるソフトウェアの働きによってJavaはマシン依存のないプログラムを実現しているのです． </p>
+    <img src="https://lh3.googleusercontent.com/2QBpYKwbsc4n7gqUEkI3tBEzPqsb2OTfFgDBGovpCmQOR7xOHKOrO1kjPT4Ss9niD6mWGUKD2Zo7oPHKE53FmFeUkQBlQ8ShU6EoIDeweb05aewMivHcol8ql8aPRbxYJAo0BlQVRiEsK5dBov6AC6J-O34GevXW23a2wXMHbyvWuTTvJsQ2jlH-B7y88QfLdPlZhAAtyUKLpATCwVPD-qGNj69c_QunWsq-H1FCiD1Lury2Vuru0B5TOczmGNTukqSsjXEj2Ec4JfQD-oAv8ZxQUgbcu2uUkjjfTvEBKLqDqJoEmB2lgZdJDgPMwhZrTd8rzppx0F5qlDSxGMH-iRt95VjO0MQjhQ7HUtPxObrepJ-IXvZVVj9jAVbh6adZ2GjbJ3azn6aC-I36zqbwR62dvsw_KhP1xkrkiFFFvQBaKjU49tXNjQsiVthVxpI-E6IpM9LWGHa5h3y7ZJGKY5tzg2c89YH70C_43SlCQpkWl1eIfmXiLwnIrrIb0ZCHIvxE-DHEG-PjIrPaHp5Ewg7SjZc7dFim7fguq2lUCF0eusdCxrtPGHuY2D5VCozF5-EH5_gRK1eJEjZjqqFTb9NFQwaVsm_q68lhiGOp9OgRiiqLF9BgvxIx_7XybDp0bd0IW1jlGqHxDMpT3QxdhA3DL1_8UMdx3J1t7ZTBlI9V6LnduN7X3Xou6v0rNQiv2ZoFxJsvIPHm3m9Ly1c=w504-h289-no" alt="JVM">
+    <p>
+      Javaはソースプログラム（コード）をコンパイルと呼ばれる処理を行うと，<em>バイトコード</em>と呼ばれる特殊な形式のファイルを生成します．
+      バイトコードは機種依存する機械語ではないので，直接実行することはできませんが，バイトコードをJVMで実行させることによって，アプリケーションが
+      実行されるのです．今は懐かしい，ガラケーでJavaのプログラムが動いていたのも，携帯電話用のJVMが開発し利用されていたからなのです．
+    </p>
 
 
 
