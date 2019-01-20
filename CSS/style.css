@@ -1,7 +1,7 @@
 body{
   font-family: メイリオ;
   color: #737373;
-  background-color: rgb(255, 239, 209);
+  background-color: rgb(255, 250, 241);
   font-size: 18px;
 }@media screen and (max-width:480px){
   font-size: 12px;
@@ -87,7 +87,6 @@ img{
 }
 
 .CircleImage{
-  animation:  bound .3s ease infinite alternate;
   border-radius:500px;
   width: 256px;
   height: 256px;
