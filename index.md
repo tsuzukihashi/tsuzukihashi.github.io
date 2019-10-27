@@ -1,11 +1,3 @@
-# tsuzuki817
-
-iOS Engineer
-
-## Language
-
-Swift
-
 ## Twitter
 
 [@tsuzuki817](https://twitter.com/tsuzuki817)
@@ -13,3 +5,8 @@ Swift
 ## Blog
 
 [hatena](http://pasokatu.hateblo.jp)
+
+## Language
+
+Swift
+
