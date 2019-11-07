@@ -8,5 +8,9 @@
 
 ## Language
 
-Swift
+Swift, Kotlin, Java, C#, Python
+
+
+iOS, BFF, BE　やってます。
+
 
