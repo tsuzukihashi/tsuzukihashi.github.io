@@ -16,3 +16,7 @@ iOS, BFF, BE　やってます。
 
 ## 個人開発アプリ
 [App Store](https://apps.apple.com/jp/developer/ryo-tsudukihashi/id1320583602?l)
+
+
+
+[Privacy Policy](https://tsuzukihashi.github.io/privacy-policy.md)
