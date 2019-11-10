@@ -19,4 +19,4 @@ iOS, BFF, BE　やってます。
 
 
 
-[Privacy Policy](https://tsuzukihashi.github.io/privacy-policy.md)
+[Privacy Policy](https://tsuzukihashi.github.io/privacy-policy)
