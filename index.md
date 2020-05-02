@@ -8,7 +8,7 @@
 
 ## Language
 
-Swift, Kotlin, Java, C#, Python
+Swift, Kotlin
 
 iOSアプリ開発しています。
 
@@ -16,12 +16,15 @@ SwiftUIが好物です。
 
 ## 趣味  
 
-個人アプリ制作
++ 個人アプリ制作
++ 写真撮影
++ ドット絵
 
-ドット絵をぽちぽち作る
 [作品集建設予定地](https://tsuzukihashi.github.io/pixel-art)
 
 ## 個人開発アプリ
 [App Store](https://apps.apple.com/jp/developer/ryo-tsudukihashi/id1320583602?l)
 
 [Privacy Policy](https://tsuzukihashi.github.io/privacy-policy)
+
+iOS, Firebase
