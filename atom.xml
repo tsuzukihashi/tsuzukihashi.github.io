@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja-jp">
     <title type="text">Ryo Tsuzukihashi</title>
     <subtitle type="html">MemE is a powerful and highly customizable GoHugo theme for personal blogs.</subtitle>
-    <updated>2020-05-17T03:32:02&#43;09:00</updated>
+    <updated>2020-05-17T03:47:12&#43;09:00</updated>
     <id>https://tsuzukihashi.github.io/</id>
     <link rel="alternate" type="text/html" href="https://tsuzukihashi.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://tsuzukihashi.github.io/atom.xml" />
@@ -57,16 +57,33 @@
             <title type="text">Hello World</title>
             <link rel="alternate" type="text/html" href="https://tsuzukihashi.github.io/posts/hello-world/" />
             <id>https://tsuzukihashi.github.io/posts/hello-world/</id>
-            <updated>2020-05-17T02:58:25&#43;09:00</updated>
+            <updated>2020-05-17T03:47:01&#43;09:00</updated>
             <published>2020-05-17T02:54:57&#43;09:00</published>
             <author>
                     <name>Ryo Tsuzukihashi</name>
                     <uri>https://tsuzukihashi.github.io</uri>
                     <email>tsudukihashi0817あっとgmail.com</email>
                     </author>
-            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html"></summary>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html">何度目かの挑戦かわからないのですが、ちゃんとしたサイトを作ろうかと思っています。
+このサイトの前身はHTML + CSSでゴリゴリ書いていました。
+最初は楽しくて良かったのですが、だんだんめんどくさくなって更新しなくなりました。
+今回は、Hugoと言うものを使い始めましたのでマークダウンで投稿するだけで記事が作られるようになりました。
+ですので、もしかしたら続くかもしれませんし、続かないかもしれません。
+これから、頑張っていこうと思います。
+今日の一言
+ 出前館の人いつもありがとうございますmm  </summary>
             
-                <content type="html"></content>
+                <content type="html">&lt;p&gt;何度目かの挑戦かわからないのですが、ちゃんとしたサイトを作ろうかと思っています。&lt;/p&gt;
+&lt;p&gt;このサイトの前身はHTML + CSSでゴリゴリ書いていました。&lt;/p&gt;
+&lt;p&gt;最初は楽しくて良かったのですが、だんだんめんどくさくなって更新しなくなりました。&lt;/p&gt;
+&lt;p&gt;今回は、Hugoと言うものを使い始めましたのでマークダウンで投稿するだけで記事が作られるようになりました。&lt;/p&gt;
+&lt;p&gt;ですので、もしかしたら続くかもしれませんし、続かないかもしれません。&lt;/p&gt;
+&lt;p&gt;これから、頑張っていこうと思います。&lt;/p&gt;
+&lt;p&gt;今日の一言&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;出前館の人いつもありがとうございますmm&lt;/li&gt;
+&lt;/ul&gt;
+</content>
             
             
             
