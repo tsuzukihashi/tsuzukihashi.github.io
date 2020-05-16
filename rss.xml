@@ -23,10 +23,59 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
         
-        <lastBuildDate>Sun, 17 May 2020 04:09:53 &#43;0900</lastBuildDate>
+        <lastBuildDate>Sun, 17 May 2020 04:28:03 &#43;0900</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://tsuzukihashi.github.io/rss.xml" />
         
+        
+            <item>
+                <title>Hugo Favicon</title>
+                <link>https://tsuzukihashi.github.io/posts/hugo-favicon/</link>
+                <guid isPermaLink="true">https://tsuzukihashi.github.io/posts/hugo-favicon/</guid>
+                <pubDate>Sun, 17 May 2020 04:27:08 &#43;0900</pubDate>
+                
+                    <author>tsudukihashi0817あっとgmail.com (Ryo Tsuzukihashi)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
+                
+                    <description>&lt;h1 id=&#34;hugoにfaviconを設置する方法&#34;&gt;Hugoにfaviconを設置する方法&lt;/h1&gt;
+&lt;p&gt;publicやthemesと同じ階層に&lt;code&gt;static&lt;/code&gt;と言うディレクトリがあるのでそこにfavicon.icoを置いてあげる。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;hugo	
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;を叩くと、publicディレクトリの中に新たに設置したfaviconに置き換わっています。&lt;/p&gt;
+&lt;p&gt;staticディレクトリにおいたファイルは、その階層構造を保ったままpublicディレクトリにコピーされるようです。&lt;/p&gt;
+&lt;p&gt;自分は最初やった時に、publicにあるファビコンを普通に置き換えてしまったので、&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;hugo
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;コマンドを打った時に、初期のファビコンに戻ってしまいました。&lt;/p&gt;
+&lt;p&gt;また、themeにある内容を書き換えるのもあまり良く無いようです。（テーマがアップデートされた時に変えた内容も消されてしまうため）&lt;/p&gt;
+&lt;p&gt;ファビコンは以下のサイトより作らせていただきました。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://favicon-generator.mintsu-dev.com/&#34;&gt;https://favicon-generator.mintsu-dev.com/&lt;/a&gt;&lt;/p&gt;
+</description>
+                
+                
+                
+                
+                
+                    
+                        
+                    
+                        
+                    
+                
+            </item>
         
             <item>
                 <title>Skycode</title>

@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja-jp">
     <title type="text">Ryo Tsuzukihashi</title>
     <subtitle type="html">MemE is a powerful and highly customizable GoHugo theme for personal blogs.</subtitle>
-    <updated>2020-05-17T04:09:53&#43;09:00</updated>
+    <updated>2020-05-17T04:28:03&#43;09:00</updated>
     <id>https://tsuzukihashi.github.io/</id>
     <link rel="alternate" type="text/html" href="https://tsuzukihashi.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://tsuzukihashi.github.io/atom.xml" />
@@ -16,6 +16,65 @@
             </author>
     <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights>
     <generator uri="https://gohugo.io/" version="0.70.0">Hugo</generator>
+        <entry>
+            <title type="text">Hugo Favicon</title>
+            <link rel="alternate" type="text/html" href="https://tsuzukihashi.github.io/posts/hugo-favicon/" />
+            <id>https://tsuzukihashi.github.io/posts/hugo-favicon/</id>
+            <updated>2020-05-17T04:27:15&#43;09:00</updated>
+            <published>2020-05-17T04:27:08&#43;09:00</published>
+            <author>
+                    <name>Ryo Tsuzukihashi</name>
+                    <uri>https://tsuzukihashi.github.io</uri>
+                    <email>tsudukihashi0817あっとgmail.com</email>
+                    </author>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html">Hugoにfaviconを設置する方法 publicやthemesと同じ階層にstaticと言うディレクトリがあるのでそこにfavicon.icoを置いてあげる。
+1  hugo	  を叩くと、publicディレクトリの中に新たに設置したfaviconに置き換わっています。
+staticディレクトリにおいたファイルは、その階層構造を保ったままpublicディレクトリにコピーされるようです。
+自分は最初やった時に、publicにあるファビコンを普通に置き換えてしまったので、
+1  hugo   コマンドを打った時に、初期のファビコンに戻ってしまいました。
+また、themeにある内容を書き換えるのもあまり良く無いようです。（テーマがアップデートされた時に変えた内容も消されてしまうため）
+ファビコンは以下のサイトより作らせていただきました。
+https://favicon-generator.mintsu-dev.com/</summary>
+            
+                <content type="html">&lt;h1 id=&#34;hugoにfaviconを設置する方法&#34;&gt;Hugoにfaviconを設置する方法&lt;/h1&gt;
+&lt;p&gt;publicやthemesと同じ階層に&lt;code&gt;static&lt;/code&gt;と言うディレクトリがあるのでそこにfavicon.icoを置いてあげる。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;hugo	
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;を叩くと、publicディレクトリの中に新たに設置したfaviconに置き換わっています。&lt;/p&gt;
+&lt;p&gt;staticディレクトリにおいたファイルは、その階層構造を保ったままpublicディレクトリにコピーされるようです。&lt;/p&gt;
+&lt;p&gt;自分は最初やった時に、publicにあるファビコンを普通に置き換えてしまったので、&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;hugo
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;コマンドを打った時に、初期のファビコンに戻ってしまいました。&lt;/p&gt;
+&lt;p&gt;また、themeにある内容を書き換えるのもあまり良く無いようです。（テーマがアップデートされた時に変えた内容も消されてしまうため）&lt;/p&gt;
+&lt;p&gt;ファビコンは以下のサイトより作らせていただきました。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://favicon-generator.mintsu-dev.com/&#34;&gt;https://favicon-generator.mintsu-dev.com/&lt;/a&gt;&lt;/p&gt;
+</content>
+            
+            
+            
+            
+            
+                
+                    
+                
+                    
+                
+            
+        </entry>
+    
         <entry>
             <title type="text">Skycode</title>
             <link rel="alternate" type="text/html" href="https://tsuzukihashi.github.io/posts/skycode/" />
