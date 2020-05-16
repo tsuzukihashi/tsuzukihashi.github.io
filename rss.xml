@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+
+
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Ryo Tsuzukihashi</title>
+        <link>https://tsuzukihashi.github.io/</link>
+        <description>MemE is a powerful and highly customizable GoHugo theme for personal blogs.</description>
+        <generator>Hugo 0.70.0 https://gohugo.io/</generator>
+        
+            <language>ja-jp</language>
+        
+        
+            <managingEditor>reuixiy@gmail.com (reuixiy)</managingEditor>
+        
+        
+            <webMaster>reuixiy@gmail.com (reuixiy)</webMaster>
+        
+        
+            <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
+        
+        <lastBuildDate>Sun, 17 May 2020 03:10:11 &#43;0900</lastBuildDate>
+        
+            <atom:link rel="self" type="application/rss&#43;xml" href="https://tsuzukihashi.github.io/rss.xml" />
+        
+        
+            <item>
+                <title>Hello World</title>
+                <link>https://tsuzukihashi.github.io/posts/hello-world/</link>
+                <guid isPermaLink="true">https://tsuzukihashi.github.io/posts/hello-world/</guid>
+                <pubDate>Sun, 17 May 2020 02:54:57 &#43;0900</pubDate>
+                
+                    <author>reuixiy@gmail.com (reuixiy)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
+                
+                    <description></description>
+                
+                
+                
+                
+                
+                    
+                        
+                    
+                        
+                    
+                
+            </item>
+        
+    </channel>
+</rss>
