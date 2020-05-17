@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja-jp">
     <title type="text">tsuzuki817 room</title>
     <subtitle type="html">MemE is a powerful and highly customizable GoHugo theme for personal blogs.</subtitle>
-    <updated>2020-05-17T22:18:38&#43;09:00</updated>
+    <updated>2020-05-18T00:59:50&#43;09:00</updated>
     <id>https://tsuzukihashi.github.io/</id>
     <link rel="alternate" type="text/html" href="https://tsuzukihashi.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://tsuzukihashi.github.io/atom.xml" />
@@ -16,6 +16,112 @@
             </author>
     <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights>
     <generator uri="https://gohugo.io/" version="0.70.0">Hugo</generator>
+        <entry>
+            <title type="text">Bookbank</title>
+            <link rel="alternate" type="text/html" href="https://tsuzukihashi.github.io/posts/bookbank/" />
+            <id>https://tsuzukihashi.github.io/posts/bookbank/</id>
+            <updated>2020-05-18T00:59:46&#43;09:00</updated>
+            <published>2020-05-18T00:58:44&#43;09:00</published>
+            <author>
+                    <name>Ryo Tsuzukihashi</name>
+                    <uri>https://tsuzukihashi.github.io</uri>
+                    <email>tsudukihashi0817あっとgmail.com</email>
+                    </author>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html">どうも新卒新米エンジニアの@tsuzuki817です👨‍💻
+読書した本の金額を管理できるアプリをSwiftUIを使って作りました📚 BookBank　〜読書銀行〜  自分は技術書などを主に読むのですが、技術書というものは値段が高いのが常です。 そこで自分が今までにどれくらい本を購入しているのか気になって作ろうと思いました。
+ pic.twitter.com/hqpgWXgR94
+&amp;mdash; つっきー@SwiftUI (@tsuzuki817) December 2, 2019  作るにあたって調べてみたら、すでにそのようなサービスが図書館などであるようです。 [「読書通帳」女の子の通帳には合計５０万円](https://headlines.yahoo.co.jp/videonews/nnn?a=20190305-00000099-nnn-soci) 高校生の頃に欲しかった... お品書き  開発したアプリについて SwiftUIの学習方法 SwiftUIで実際にアプリを作ってみて感じたこと  開発したアプリについて いきなり宣伝！ BookBank　〜読書銀行〜  AVFoundationやActivityViewControllerなどUIKitも使っていますが、ほとんどSwiftUIです。
+BookBankの実績がクリアした状態のアニメーション pic.twitter.com/Fdie5fS70I
+&amp;mdash; つっきー@SwiftUI (@tsuzuki817) December 2, 2019  このアニメーションに出てくるチェックマークはこつこつPathをいじって作りました。 SwiftUIのViewをShareしたりする機能も最近実装して今バージョン2.2.0申請中です！ やり方などは以下の記事にまとめました。 [SwiftUIでViewを画像としてUIActivityを利用してSNSに共有する](https://qiita.</summary>
+            
+                <content type="html">&lt;p&gt;どうも新卒新米エンジニアの&lt;a href=&#34;https://twitter.com/tsuzuki817&#34;&gt;@tsuzuki817&lt;/a&gt;です👨‍💻&lt;/p&gt;
+&lt;p&gt;読書した本の金額を管理できるアプリをSwiftUIを使って作りました📚
+&lt;a href=&#34;https://apps.apple.com/jp/app/bookbank-%E8%AA%AD%E6%9B%B8%E9%8A%80%E8%A1%8C/id1487377681&#34;&gt;BookBank　〜読書銀行〜 &lt;/a&gt;
+&lt;img src=&#34;https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/171702/00ceef29-8d84-6e46-e50f-304a7f69ccc4.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;自分は技術書などを主に読むのですが、技術書というものは値段が高いのが常です。
+そこで自分が今までにどれくらい本を購入しているのか気になって作ろうと思いました。&lt;/p&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/Uv_v60k_VQQ?controls=0&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;und&#34; dir=&#34;ltr&#34;&gt;&lt;a href=&#34;https://t.co/hqpgWXgR94&#34;&gt;pic.twitter.com/hqpgWXgR94&lt;/a&gt;&lt;/p&gt;&amp;mdash; つっきー@SwiftUI (@tsuzuki817) &lt;a href=&#34;https://twitter.com/tsuzuki817/status/1201501128417894406?ref_src=twsrc%5Etfw&#34;&gt;December 2, 2019&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+作るにあたって調べてみたら、すでにそのようなサービスが図書館などであるようです。
+[「読書通帳」女の子の通帳には合計５０万円](https://headlines.yahoo.co.jp/videonews/nnn?a=20190305-00000099-nnn-soci)
+高校生の頃に欲しかった...
+&lt;h2 id=&#34;お品書き&#34;&gt;お品書き&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;開発したアプリについて&lt;/li&gt;
+&lt;li&gt;SwiftUIの学習方法&lt;/li&gt;
+&lt;li&gt;SwiftUIで実際にアプリを作ってみて感じたこと&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;開発したアプリについて&#34;&gt;開発したアプリについて&lt;/h2&gt;
+&lt;p&gt;いきなり宣伝！
+&lt;a href=&#34;https://apps.apple.com/jp/app/bookbank-%E8%AA%AD%E6%9B%B8%E9%8A%80%E8%A1%8C/id1487377681&#34;&gt;BookBank　〜読書銀行〜 &lt;/a&gt;
+AVFoundationやActivityViewControllerなどUIKitも使っていますが、ほとんどSwiftUIです。&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;BookBankの実績がクリアした状態のアニメーション &lt;a href=&#34;https://t.co/Fdie5fS70I&#34;&gt;pic.twitter.com/Fdie5fS70I&lt;/a&gt;&lt;/p&gt;&amp;mdash; つっきー@SwiftUI (@tsuzuki817) &lt;a href=&#34;https://twitter.com/tsuzuki817/status/1201362440392327168?ref_src=twsrc%5Etfw&#34;&gt;December 2, 2019&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+このアニメーションに出てくるチェックマークはこつこつPathをいじって作りました。
+SwiftUIのViewをShareしたりする機能も最近実装して今バージョン2.2.0申請中です！
+やり方などは以下の記事にまとめました。
+[SwiftUIでViewを画像としてUIActivityを利用してSNSに共有する](https://qiita.com/tsuzuki817/items/604d059aac3e14f65942)
+## SwiftUIの学習方法
+最初は王道を行く[公式チュートリアル](https://developer.apple.com/tutorials/swiftui/tutorials)を進めました。
+そのあとは、海外のサイトを色々と巡りつつ自分で色々作り始めました。
+おすすめのサイトは次に続きます！
+&lt;h2 id=&#34;swiftuiが学べるおすすめサイト&#34;&gt;SwiftUIが学べるおすすめサイト&lt;/h2&gt;
+&lt;img width=&#34;627&#34; alt=&#34;スクリーンショット 2019-12-02 13.18.35.png&#34; src=&#34;https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/171702/122810e0-767a-8d93-35f3-05bc27540e9e.png&#34;&gt;
+https://fuckingswiftui.com/
+なかなか素晴らしいドメイン名のサイト
+綺麗にまとまっていて、何かあったらすぐ見にきます。
+&lt;img width=&#34;413&#34; alt=&#34;スクリーンショット 2019-12-02 13.19.48.png&#34; src=&#34;https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/171702/c47815cf-1cc8-1593-cd8c-bcc7abec04f8.png&#34;&gt;
+https://swiftui-lab.com/
+かなり詳細に開設されているサイトで、がっつりお勉強したい時に読みます。
+休日推奨
+&lt;img width=&#34;193&#34; alt=&#34;スクリーンショット 2019-12-02 13.20.28.png&#34; src=&#34;https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/171702/844a1376-b79a-7865-e5a2-70635c3a9b85.png&#34;&gt;
+https://liquidcoder.com/
+おしゃれなアニメーションとデザインが特徴的なサイトで、見た目も勉強したい時はここ一択！
+&lt;p&gt;他にもStackOver flowなどちょくちょく見ていますが、ルーティンとしているのはこの三つです。
+なにかおすすめのサイトがあればコメントしていただければ、爆裂的にうれしいです！&lt;/p&gt;
+&lt;h2 id=&#34;swiftuiで実際にアプリを作ってみて感じたこと&#34;&gt;SwiftUIで実際にアプリを作ってみて感じたこと&lt;/h2&gt;
+&lt;p&gt;まず一つ言えることは、SwiftUIは楽しくて良いものということです。
+見た目を爆速で開発できるので、モックを作る際にも良いと思います。&lt;/p&gt;
+&lt;p&gt;個人アプリでは、SwiftUIのフレームワークに合わせて作ることで従来の開発より圧倒的に早く開発することができます。
+逆に、業務などで決まったデザインや変えることのできない仕様がある場合SwiftUIだけで開発するのは簡単ではなくなります。
+どうしてもUIKitが必要になってきてしまうからです。&lt;/p&gt;
+&lt;p&gt;SwiftUIに合わせて仕様を変えるぐらいの気持ちでやっていくのが良いかもしれません☺️&lt;/p&gt;
+&lt;p&gt;以上新卒新米へっぽこエンジニアのポエムにお付き合いいただき有り難うございましたmm&lt;/p&gt;
+</content>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://tsuzukihashi.github.io/categories/%E3%83%9D%E3%82%A8%E3%83%A0/" term="ポエム" label="ポエム" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://tsuzukihashi.github.io/tags/bookbank/" term="BookBank" label="BookBank" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://tsuzukihashi.github.io/tags/swiftui/" term="SwiftUI" label="SwiftUI" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
         <entry>
             <title type="text">Hugo Favicon</title>
             <link rel="alternate" type="text/html" href="https://tsuzukihashi.github.io/posts/hugo-favicon/" />
