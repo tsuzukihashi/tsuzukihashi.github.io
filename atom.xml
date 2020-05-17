@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja-jp">
     <title type="text">tsuzuki817 room</title>
     <subtitle type="html">MemE is a powerful and highly customizable GoHugo theme for personal blogs.</subtitle>
-    <updated>2020-05-17T20:10:53&#43;09:00</updated>
+    <updated>2020-05-17T22:18:38&#43;09:00</updated>
     <id>https://tsuzukihashi.github.io/</id>
     <link rel="alternate" type="text/html" href="https://tsuzukihashi.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://tsuzukihashi.github.io/atom.xml" />
@@ -69,7 +69,23 @@ https://favicon-generator.mintsu-dev.com/</summary>
             
                 
                     
+                        
+                            
+                            
+                            
+                                <category scheme="https://tsuzukihashi.github.io/categories/hugo/" term="hugo" label="hugo" />
+                            
+                        
+                    
                 
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://tsuzukihashi.github.io/tags/favicon/" term="favicon" label="favicon" />
+                            
+                        
                     
                 
             
