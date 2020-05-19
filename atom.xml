@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja-jp">
     <title type="text">tsuzuki817 room</title>
     <subtitle type="html">MemE is a powerful and highly customizable GoHugo theme for personal blogs.</subtitle>
-    <updated>2020-05-19T21:56:27&#43;09:00</updated>
+    <updated>2020-05-19T23:20:23&#43;09:00</updated>
     <id>https://tsuzukihashi.github.io/</id>
     <link rel="alternate" type="text/html" href="https://tsuzukihashi.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://tsuzukihashi.github.io/atom.xml" />
@@ -16,6 +16,57 @@
             </author>
     <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights>
     <generator uri="https://gohugo.io/" version="0.70.0">Hugo</generator>
+        <entry>
+            <title type="text">Swiftui Top</title>
+            <link rel="alternate" type="text/html" href="https://tsuzukihashi.github.io/posts/swiftui-top/" />
+            <id>https://tsuzukihashi.github.io/posts/swiftui-top/</id>
+            <updated>2020-05-19T21:59:56&#43;09:00</updated>
+            <published>2020-05-19T20:59:36&#43;09:00</published>
+            <author>
+                    <name>Ryo Tsuzukihashi</name>
+                    <uri>https://tsuzukihashi.github.io</uri>
+                    <email>tsudukihashi0817あっとgmail.com</email>
+                    </author>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html">SwiftUI記事リスト  Xcode Hello, World 図形を表示させる 画像を表示させる アニメーション  </summary>
+            
+                <content type="html">&lt;h1 id=&#34;swiftui記事リスト&#34;&gt;SwiftUI記事リスト&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;Xcode&lt;/li&gt;
+&lt;li&gt;Hello, World&lt;/li&gt;
+&lt;li&gt;図形を表示させる&lt;/li&gt;
+&lt;li&gt;画像を表示させる&lt;/li&gt;
+&lt;li&gt;アニメーション&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://tsuzukihashi.github.io/categories/swiftui/" term="SwiftUI" label="SwiftUI" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://tsuzukihashi.github.io/tags/swiftui/" term="SwiftUI" label="SwiftUI" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
         <entry>
             <title type="text">Bookbank</title>
             <link rel="alternate" type="text/html" href="https://tsuzukihashi.github.io/posts/bookbank/" />
