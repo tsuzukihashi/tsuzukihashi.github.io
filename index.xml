@@ -6,7 +6,41 @@
     <description>Recent content on 愚直プログラマ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 29 Jan 2021 04:14:42 +0900</lastBuildDate><atom:link href="https://tsuzukihashi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 30 Jan 2021 04:08:10 +0900</lastBuildDate><atom:link href="https://tsuzukihashi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Flutter入門！</title>
+      <link>https://tsuzukihashi.github.io/posts/entry-flutter/</link>
+      <pubDate>Sat, 30 Jan 2021 04:08:10 +0900</pubDate>
+      
+      <guid>https://tsuzukihashi.github.io/posts/entry-flutter/</guid>
+      <description>はじめに 兼ねてより気になっていたFlutterというものを始めようかと思います。
+2019年にヤフーに新卒入社した右も左もわからなかった自分が、運良くPayPayフリマのiOSチームに配属されて技術的にも人間的にも優れた先輩方に教わりながらiOSアプリ開発も少しずつできるようになってきました。
+Swiftでの個人アプリ開発もつづけ、そろそろAndroidも対応した物を作りたいという気持ちが僅かながら芽生えてきました。
+しかし、ネイティブで両方作るのは結構しんどいのでは？という気持ちもありまして、一粒で二度美味しいと評判のFlutterに手を出すことにしました。
+Flutter FlutterはGoogleによって開発されているマルチプラットフォームで動作するモバイルアプリケーションUIフレームワークです。
+開発言語はDartと呼ばれるもので、こちらもGoogleによって開発されています。
+プラットフォームも言語もGoogleによって統率されており、なかなかGoogleが気合を入れていることが感じざるを得ないものとなっています。
+Firebase周りとの連携もしやすいとも聞いているので、やるしかないです。
+開発環境 開発環境はAndroid StudioとVSCodeが主流らしいです。
+自分はVSCodeが見た目的に好きなのでそちらでやることにします。
+インストールしてみる ※ Android Studio, Xcode, Homebrew, Cocoapodsがインストールされてる前提
+Flutter自体はは公式サイトからzipファイルをダウンロードして任意の場所においてパスを指定する。
+公式サイト
+パスは任意の場所でよく、以下のようにbinまでしてあげれば良いです。
+export PATH=&amp;#34;$PATH:$HOME/dev/flutter/bin&amp;#34; ここで
+flutter doctor というコマンドを利用します。これでflutterが使えるのかどうか見てくれます。
+さらに、修正方法も示してくれます。
+続いて、VSCodeにFlutterのExtensionをインストールする。
+コマンドパレットを開いて(⌘ + shift+ P)、flutterで検索するとNew Application Projectと出てくるのでそこからプロジェクトを作れます。
+プロジェクトの名前を決定してあげると、プロジェクトが表示されます。
+次にデバイスの選択方法です。
+画面右下のデバイス領域をクリックすると、画面上部に選べるシミュレータが表示されます。
+なかったら、Create Android emulatorしたり、iOSの場合、terminalで
+open -a simulator と入力しても起動できるようです。（シラナカッタ）
+アプリを実行してみる 右上の再生マークをクリックして実行できます。
+以下のようにでもアプリが表示されればOK！ </description>
+    </item>
+    
     <item>
       <title>Privacy Policy</title>
       <link>https://tsuzukihashi.github.io/posts/privacy-policy/</link>
