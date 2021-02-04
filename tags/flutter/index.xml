@@ -6,7 +6,33 @@
     <description>Recent content in Flutter on 愚直プログラマ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 30 Jan 2021 04:08:10 +0900</lastBuildDate><atom:link href="https://tsuzukihashi.github.io/tags/flutter/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 03 Feb 2021 00:17:05 +0900</lastBuildDate><atom:link href="https://tsuzukihashi.github.io/tags/flutter/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Flutterで作ったプロジェクトのBundleID・PckageNameを変更する方法と対策</title>
+      <link>https://tsuzukihashi.github.io/posts/flutter-package-bundle/</link>
+      <pubDate>Wed, 03 Feb 2021 00:17:05 +0900</pubDate>
+      
+      <guid>https://tsuzukihashi.github.io/posts/flutter-package-bundle/</guid>
+      <description>普通にVSCodeやコマンドからFlutterプロジェクトを作るとBundleID・PackageNameはcom.example.hogehoge のように指定されてしまいます。
+これを修正する方法を示すとともに、そうならないようにするVSCodeで開発している方向けの設定をご紹介します。
+すでに作ってしまった場合の修正方法   iOS iOSの場合は一つだけ変更すれば良いので楽です。 FlutterプロジェクトのiOSディレクトリに移動します。
+例
+/my_app/ios ここで
+xed . でXcodeでプロジェクトを開きます。
+以下の画像のようにTARGETSのBundle Identifierを修正します。 以上で終わりです。
+    Android Androidの場合は名前の修正とディレクトリの修正の二つがあります。
+  ネーム変更 VSCodeでプロジェクトを開きます。 ⌘ + shift + fでプロジェクト全体の検索画面を開きます。 以下のように検索窓にcom.example.{プロジェクト名前}を入れて検索します。
+検索窓の左側に下向きの矢印ボタンがあるのでそれをクリックします。 その後置換するための窓が出てきますので、そこに変更したいPackage Nameを入れて、右側にある一斉置換のボタンをクリックすると名前を変更することができます。
+  ディレクトリ変更 Androidのデフォルトの言語がjavaかkotlinによって変わりますが、大体kotlinですので、以下のようなディレクトリ構成になっていると思います。
+my_app/android/app/src/main/kotlin/com/example/my_app ですので、この/com/exampleの名前を設定したいPackage Nameに変更しておきます。
+  以上で終わりです。
+  VSCodeの場合のより良い方法 上記のようなことを毎回やるのはよろしくないので、次からは自動的にやってもらいたいと思います。
+ Settings.jsonを開く ショートカットキーcommand + ,  organizationで検索し、DartのExtensionsのFlutter Create OrganizationからEdit in settings.jsonをクリックします。
+開くと以下のようなjsonがあるはずです。
+これのart.flutterCreateOrganizationがnullになっているため、ここを自身のorganizationを設定してあげます。
+{ &amp;#34;[dart]&amp;#34;: { &amp;#34;editor.formatOnSave&amp;#34;: true, &amp;#34;editor.formatOnType&amp;#34;: true, &amp;#34;editor.</description>
+    </item>
+    
     <item>
       <title>Flutter入門！</title>
       <link>https://tsuzukihashi.github.io/posts/entry-flutter/</link>
