@@ -6,7 +6,25 @@
     <description>Recent content in iOSDC on 愚直プログラマ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 17 Feb 2021 01:51:27 +0900</lastBuildDate><atom:link href="https://tsuzukihashi.github.io/tags/iosdc/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 19 Feb 2021 00:40:05 +0900</lastBuildDate><atom:link href="https://tsuzukihashi.github.io/tags/iosdc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>iOSDC全動画制覇シリーズ 001</title>
+      <link>https://tsuzukihashi.github.io/posts/iosdc/001/</link>
+      <pubDate>Fri, 19 Feb 2021 00:40:05 +0900</pubDate>
+      
+      <guid>https://tsuzukihashi.github.io/posts/iosdc/001/</guid>
+      <description>iOSDC Japan 2016 08/19 Track A / フルSwiftでバイクフリマアプリRIDEを作って得た学び / huin 記念すべき一本目! huinさんでフルSwiftでバイクフリマアプリRIDEを作って得た学びです。
+{スライド} {動画} {togetter}
+RIDE フルSwift　+ Redux の構成
+開発期間3ヶ月
+ API部分だけをモジュール化をしている   アプリからは認証情報（APIキー）を渡して必要なメソッドを呼ぶだけのシンプル構成だそうです。
+APIモジュールはレスポンス（JSON）をモデルにして変換してくれている。
+なぜこのような構成にしているのか？
+ アプリの都合をモデルに入れたくないとのこと！  Clean Architectureで言うところのEntityをフレームワークとして切り分けることで強制的に分離することにしている見たいです。
+データはimmutableで定義している
+データを加工して保持しておきたい場合などは、アプリ層でExtensionして実装している。</description>
+    </item>
+    
     <item>
       <title>iOSエンジニアとして知見を広めたい件</title>
       <link>https://tsuzukihashi.github.io/posts/iosdc-all-first/</link>

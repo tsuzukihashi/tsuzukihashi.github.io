@@ -6,7 +6,25 @@
     <description>Recent content on 愚直プログラマ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 17 Feb 2021 01:51:27 +0900</lastBuildDate><atom:link href="https://tsuzukihashi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 19 Feb 2021 00:40:05 +0900</lastBuildDate><atom:link href="https://tsuzukihashi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>iOSDC全動画制覇シリーズ 001</title>
+      <link>https://tsuzukihashi.github.io/posts/iosdc/001/</link>
+      <pubDate>Fri, 19 Feb 2021 00:40:05 +0900</pubDate>
+      
+      <guid>https://tsuzukihashi.github.io/posts/iosdc/001/</guid>
+      <description>iOSDC Japan 2016 08/19 Track A / フルSwiftでバイクフリマアプリRIDEを作って得た学び / huin 記念すべき一本目! huinさんでフルSwiftでバイクフリマアプリRIDEを作って得た学びです。
+{スライド} {動画} {togetter}
+RIDE フルSwift　+ Redux の構成
+開発期間3ヶ月
+ API部分だけをモジュール化をしている   アプリからは認証情報（APIキー）を渡して必要なメソッドを呼ぶだけのシンプル構成だそうです。
+APIモジュールはレスポンス（JSON）をモデルにして変換してくれている。
+なぜこのような構成にしているのか？
+ アプリの都合をモデルに入れたくないとのこと！  Clean Architectureで言うところのEntityをフレームワークとして切り分けることで強制的に分離することにしている見たいです。
+データはimmutableで定義している
+データを加工して保持しておきたい場合などは、アプリ層でExtensionして実装している。</description>
+    </item>
+    
     <item>
       <title>iOSエンジニアとして知見を広めたい件</title>
       <link>https://tsuzukihashi.github.io/posts/iosdc-all-first/</link>
@@ -24,10 +42,10 @@ https://www.youtube.com/c/iOSDCJapan/videos?view=0&amp;amp;sort=da&amp;amp;flow=
     
     <item>
       <title>Flutterで作ったプロジェクトのBundleID・PckageNameを変更する方法と対策</title>
-      <link>https://tsuzukihashi.github.io/posts/flutter-package-bundle/</link>
+      <link>https://tsuzukihashi.github.io/posts/flutter/flutter-package-bundle/</link>
       <pubDate>Wed, 03 Feb 2021 00:17:05 +0900</pubDate>
       
-      <guid>https://tsuzukihashi.github.io/posts/flutter-package-bundle/</guid>
+      <guid>https://tsuzukihashi.github.io/posts/flutter/flutter-package-bundle/</guid>
       <description>普通にVSCodeやコマンドからFlutterプロジェクトを作るとBundleID・PackageNameはcom.example.hogehoge のように指定されてしまいます。
 これを修正する方法を示すとともに、そうならないようにするVSCodeで開発している方向けの設定をご紹介します。
 すでに作ってしまった場合の修正方法   iOS iOSの場合は一つだけ変更すれば良いので楽です。 FlutterプロジェクトのiOSディレクトリに移動します。
@@ -50,10 +68,10 @@ my_app/android/app/src/main/kotlin/com/example/my_app ですので、この/com/
     
     <item>
       <title>Flutter入門！</title>
-      <link>https://tsuzukihashi.github.io/posts/entry-flutter/</link>
+      <link>https://tsuzukihashi.github.io/posts/flutter/entry-flutter/</link>
       <pubDate>Sat, 30 Jan 2021 04:08:10 +0900</pubDate>
       
-      <guid>https://tsuzukihashi.github.io/posts/entry-flutter/</guid>
+      <guid>https://tsuzukihashi.github.io/posts/flutter/entry-flutter/</guid>
       <description>はじめに 兼ねてより気になっていたFlutterというものを始めようかと思います。
 2019年にヤフーに新卒入社した右も左もわからなかった自分が、運良くPayPayフリマのiOSチームに配属されて技術的にも人間的にも優れた先輩方に教わりながらiOSアプリ開発も少しずつできるようになってきました。
 Swiftでの個人アプリ開発もつづけ、そろそろAndroidも対応した物を作りたいという気持ちが僅かながら芽生えてきました。
