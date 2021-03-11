@@ -6,7 +6,20 @@
     <description>Recent content on 愚直プログラマ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 19 Feb 2021 00:40:05 +0900</lastBuildDate><atom:link href="https://tsuzukihashi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 04 Mar 2021 04:08:10 +0900</lastBuildDate><atom:link href="https://tsuzukihashi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Flutterチュートリアルやってみた part1</title>
+      <link>https://tsuzukihashi.github.io/posts/flutter/flutter-tutorial-part1/</link>
+      <pubDate>Thu, 04 Mar 2021 04:08:10 +0900</pubDate>
+      
+      <guid>https://tsuzukihashi.github.io/posts/flutter/flutter-tutorial-part1/</guid>
+      <description>参考 作業リポジトリ =&amp;gt; https://github.com/tsuzukihashi/flutter-tutorial-part01  環境  作業日: 2020/03/07 OS: macOS Big Sur 11.2.1 PC: MacBook Pro (13-inch, M1, 2020)  初めに Flutterの勉強をするには公式のチュートリアルをやるのが一番だという情報を得たのでやっていき！
+このチュートリアルでは、リストの無限スクロールをやりました。
+Step1 アプリを作る Flutterのプロジェクトを新規に作ります。
+lib/main.dartの中身を一度全て削除し、以下のように画面中央に&amp;quot;Hello World&amp;quot;と表示するように書き換えます。
+import &amp;#39;package:flutter/material.dart&amp;#39;; void main() =&amp;gt; runApp(MyApp()); class MyApp extends StatelessWidget { @override Widget build(BuildContext context) { return MaterialApp( title: &amp;#39;Welcom to Flutter&amp;#39;, home: Scaffold( appBar: AppBar( title: Text(&amp;#39;Welcome to Flutter&amp;#39;), ), body: Center( child: Text(&amp;#39;Hello World&amp;#39;), ), ), ); } } コードをコピペした際に、インデントがズレた時の対処法がありましたが、 VSCodeのプラグインが入っていればコードを保存する(⌘ + S)をするたびにフォーマットが走っていました。</description>
+    </item>
+    
     <item>
       <title>iOSDC全動画制覇シリーズ 001</title>
       <link>https://tsuzukihashi.github.io/posts/iosdc/001/</link>
