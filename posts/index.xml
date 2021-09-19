@@ -6,7 +6,26 @@
     <description>Recent content in Posts on 愚直プログラマ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 12 Mar 2021 04:08:10 +0900</lastBuildDate><atom:link href="https://www.tsuzuki817.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Sep 2021 20:55:48 +0900</lastBuildDate><atom:link href="https://www.tsuzuki817.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【3年連続】iOSDC2021に参加してきました！【キリ番賞】</title>
+      <link>https://www.tsuzuki817.com/posts/iosdc/iosdc2021-entry/</link>
+      <pubDate>Sun, 19 Sep 2021 20:55:48 +0900</pubDate>
+      
+      <guid>https://www.tsuzuki817.com/posts/iosdc/iosdc2021-entry/</guid>
+      <description>iOSDCトークン探しから解放されました @tsuzuki817です！
+今年もiOSDC2021に参加してきました！
+今年もノベルティがとても豪華で、始まる前からテンションが上がりました！ 個人的ベストノベルティはheyのツバメようかんです。ありがとうございました。
+個人的によかったトーク これから全部見る予定なので一旦今のところの個人的によかったトークです！
+  Network ExtensionでiOSデバイス上で動くパケットキャプチャを作る いつもも思うのですが、岸川さんの発表を聞くとiOSに限らずプログラミングの可能性の幅を広げてもらっているような気がします。 デモも面白くてiOSアプリのゲームとかののサポートツールを自分でも作れるかもって思いました！
+  SwiftUI+GraphQLで新規プロダクトの継続的破壊(Continuous Destruction)に立ち向かう SwiftUI + GraphQLというモダンな開発環境で実際のプロダクトで運用している数少ない例を紹介していただいてとても勉強になりました！ 個人アプリで作る際にSwiftUI + Firestoreでも同じような感じでできたらいいなとか思ってみたりしましたが、どうなんでしょう？
+  async/awaitやactorでiOSアプリ開発がどう変わるか Before&amp;amp;Afterの具体例で学ぶ ベストトークにも選ばれていましたkoherさんのトーク。 SwiftのConcurrencyについて具体例を用いてテンポよく発表してくださり40分が秒でおわりました！ （40分あったのが信じられない）
+  iOSチャレンジ 去年はiOSDCチャレンジはなかったのですが、今年から再開されDAY1まで必死にiOSDCトークンを探していましたが、パンフレットを3周以上ガッツリ隅々まで探したのですが、パンフレットが100%になれなくて挫折しました&amp;hellip; orz ところが、挫折した甲斐もあって55位になってキリ番賞をいただくことができました🎉
+ちなみに景品はiOSDCのスタッフTシャツがどれかもらえるみたいです！
+黄色のTシャツだとグリーンバックで透過できる特殊能力付きみたいですw
+まとめ 今年もiOSDCとても楽しかったです！ これから全部のセッションをニコ生のタイムシフトで見返すのでまだ終わっていませんが、本当にお疲れ様でした！ 毎年このクオリティで開催してくださっているiOSDC実行委員会本当にすごすぎます！ 来年もまってます！！！！</description>
+    </item>
+    
     <item>
       <title>Flutterチュートリアルやってみた part2</title>
       <link>https://www.tsuzuki817.com/posts/flutter/flutter-tutorial-part2/</link>
