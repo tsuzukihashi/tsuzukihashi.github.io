@@ -4,7 +4,7 @@
     <title>Flutterで作ったプロジェクトのBundleID・PckageNameを変更する方法と対策 // 愚直プログラマ</title>
     <link rel="shortcut icon" href="/favicon.ico" />
     <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.80.0" />
+    <meta name="generator" content="Hugo 0.110.0">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Ryo Tsuzukihashi" />
     <meta name="description" content="" />
@@ -23,49 +23,48 @@ if (!doNotTrack) {
 	ga('send', 'pageview');
 }
 </script>
-
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Flutterで作ったプロジェクトのBundleID・PckageNameを変更する方法と対策"/>
 <meta name="twitter:description" content="普通にVSCodeやコマンドからFlutterプロジェクトを作るとBundleID・PackageNameはcom.example.hogehoge のように指定されてしまいます。
 これを修正する方法を示すとともに、そうならないようにするVSCodeで開発している方向けの設定をご紹介します。
-すでに作ってしまった場合の修正方法   iOS iOSの場合は一つだけ変更すれば良いので楽です。 FlutterプロジェクトのiOSディレクトリに移動します。
+すでに作ってしまった場合の修正方法 iOS iOSの場合は一つだけ変更すれば良いので楽です。 FlutterプロジェクトのiOSディレクトリに移動します。
 例
 /my_app/ios ここで
 xed . でXcodeでプロジェクトを開きます。
 以下の画像のようにTARGETSのBundle Identifierを修正します。 以上で終わりです。
-    Android Androidの場合は名前の修正とディレクトリの修正の二つがあります。
-  ネーム変更 VSCodeでプロジェクトを開きます。 ⌘ &#43; shift &#43; fでプロジェクト全体の検索画面を開きます。 以下のように検索窓にcom.example.{プロジェクト名前}を入れて検索します。
+Android Androidの場合は名前の修正とディレクトリの修正の二つがあります。
+ネーム変更 VSCodeでプロジェクトを開きます。 ⌘ &#43; shift &#43; fでプロジェクト全体の検索画面を開きます。 以下のように検索窓にcom.example.{プロジェクト名前}を入れて検索します。
 検索窓の左側に下向きの矢印ボタンがあるのでそれをクリックします。 その後置換するための窓が出てきますので、そこに変更したいPackage Nameを入れて、右側にある一斉置換のボタンをクリックすると名前を変更することができます。
-  ディレクトリ変更 Androidのデフォルトの言語がjavaかkotlinによって変わりますが、大体kotlinですので、以下のようなディレクトリ構成になっていると思います。
+ディレクトリ変更 Androidのデフォルトの言語がjavaかkotlinによって変わりますが、大体kotlinですので、以下のようなディレクトリ構成になっていると思います。
 my_app/android/app/src/main/kotlin/com/example/my_app ですので、この/com/exampleの名前を設定したいPackage Nameに変更しておきます。
-  以上で終わりです。
-  VSCodeの場合のより良い方法 上記のようなことを毎回やるのはよろしくないので、次からは自動的にやってもらいたいと思います。
- Settings.jsonを開く ショートカットキーcommand &#43; ,  organizationで検索し、DartのExtensionsのFlutter Create OrganizationからEdit in settings.jsonをクリックします。
+以上で終わりです。
+VSCodeの場合のより良い方法 上記のようなことを毎回やるのはよろしくないので、次からは自動的にやってもらいたいと思います。
+Settings.jsonを開く ショートカットキーcommand &#43; , organizationで検索し、DartのExtensionsのFlutter Create OrganizationからEdit in settings.jsonをクリックします。
 開くと以下のようなjsonがあるはずです。
 これのart.flutterCreateOrganizationがnullになっているため、ここを自身のorganizationを設定してあげます。
-{ &#34;[dart]&#34;: { &#34;editor.formatOnSave&#34;: true, &#34;editor.formatOnType&#34;: true, &#34;editor."/>
+{ &#34;[dart]&#34;: { &#34;editor.formatOnSave&#34;: true, &#34;editor.formatOnType&#34;: true, &#34;editor.rulers&#34;: [ 80 ], &#34;editor.selectionHighlight&#34;: false, &#34;editor.suggest.snippetsPreventQuickSuggestions&#34;: false, &#34;editor.suggestSelection&#34;: &#34;first&#34;, &#34;editor.tabCompletion&#34;: &#34;onlySnippets&#34;, &#34;editor.wordBasedSuggestions&#34;: false }, &#34;dart."/>
 
     <meta property="og:title" content="Flutterで作ったプロジェクトのBundleID・PckageNameを変更する方法と対策" />
 <meta property="og:description" content="普通にVSCodeやコマンドからFlutterプロジェクトを作るとBundleID・PackageNameはcom.example.hogehoge のように指定されてしまいます。
 これを修正する方法を示すとともに、そうならないようにするVSCodeで開発している方向けの設定をご紹介します。
-すでに作ってしまった場合の修正方法   iOS iOSの場合は一つだけ変更すれば良いので楽です。 FlutterプロジェクトのiOSディレクトリに移動します。
+すでに作ってしまった場合の修正方法 iOS iOSの場合は一つだけ変更すれば良いので楽です。 FlutterプロジェクトのiOSディレクトリに移動します。
 例
 /my_app/ios ここで
 xed . でXcodeでプロジェクトを開きます。
 以下の画像のようにTARGETSのBundle Identifierを修正します。 以上で終わりです。
-    Android Androidの場合は名前の修正とディレクトリの修正の二つがあります。
-  ネーム変更 VSCodeでプロジェクトを開きます。 ⌘ &#43; shift &#43; fでプロジェクト全体の検索画面を開きます。 以下のように検索窓にcom.example.{プロジェクト名前}を入れて検索します。
+Android Androidの場合は名前の修正とディレクトリの修正の二つがあります。
+ネーム変更 VSCodeでプロジェクトを開きます。 ⌘ &#43; shift &#43; fでプロジェクト全体の検索画面を開きます。 以下のように検索窓にcom.example.{プロジェクト名前}を入れて検索します。
 検索窓の左側に下向きの矢印ボタンがあるのでそれをクリックします。 その後置換するための窓が出てきますので、そこに変更したいPackage Nameを入れて、右側にある一斉置換のボタンをクリックすると名前を変更することができます。
-  ディレクトリ変更 Androidのデフォルトの言語がjavaかkotlinによって変わりますが、大体kotlinですので、以下のようなディレクトリ構成になっていると思います。
+ディレクトリ変更 Androidのデフォルトの言語がjavaかkotlinによって変わりますが、大体kotlinですので、以下のようなディレクトリ構成になっていると思います。
 my_app/android/app/src/main/kotlin/com/example/my_app ですので、この/com/exampleの名前を設定したいPackage Nameに変更しておきます。
-  以上で終わりです。
-  VSCodeの場合のより良い方法 上記のようなことを毎回やるのはよろしくないので、次からは自動的にやってもらいたいと思います。
- Settings.jsonを開く ショートカットキーcommand &#43; ,  organizationで検索し、DartのExtensionsのFlutter Create OrganizationからEdit in settings.jsonをクリックします。
+以上で終わりです。
+VSCodeの場合のより良い方法 上記のようなことを毎回やるのはよろしくないので、次からは自動的にやってもらいたいと思います。
+Settings.jsonを開く ショートカットキーcommand &#43; , organizationで検索し、DartのExtensionsのFlutter Create OrganizationからEdit in settings.jsonをクリックします。
 開くと以下のようなjsonがあるはずです。
 これのart.flutterCreateOrganizationがnullになっているため、ここを自身のorganizationを設定してあげます。
-{ &#34;[dart]&#34;: { &#34;editor.formatOnSave&#34;: true, &#34;editor.formatOnType&#34;: true, &#34;editor." />
+{ &#34;[dart]&#34;: { &#34;editor.formatOnSave&#34;: true, &#34;editor.formatOnType&#34;: true, &#34;editor.rulers&#34;: [ 80 ], &#34;editor.selectionHighlight&#34;: false, &#34;editor.suggest.snippetsPreventQuickSuggestions&#34;: false, &#34;editor.suggestSelection&#34;: &#34;first&#34;, &#34;editor.tabCompletion&#34;: &#34;onlySnippets&#34;, &#34;editor.wordBasedSuggestions&#34;: false }, &#34;dart." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.tsuzuki817.com/posts/flutter/flutter-package-bundle/" />
+<meta property="og:url" content="https://www.tsuzuki817.com/posts/flutter/flutter-package-bundle/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-02-03T00:17:05+09:00" />
 <meta property="article:modified_time" content="2021-02-03T00:17:05+09:00" />
 
@@ -93,7 +92,7 @@ my_app/android/app/src/main/kotlin/com/example/my_app ですので、この/com/
           
           <a class="app-header-menu-item" href="https://play.google.com/store/apps/developer?id=KamitsureLab">Androidアプリ一覧</a>
       </nav>
-      <p>Yahoo! JAPAN iOS Engineer.</p>
+      <p>DeNA iOS Engineer.</p>
       <div class="app-header-social">
         
           <a target="_blank" href="https://github.com/tsuzukihashi" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
@@ -162,10 +161,10 @@ my_app/android/app/src/main/kotlin/com/example/my_app ですので、この/com/
 iOSの場合は一つだけ変更すれば良いので楽です。
 FlutterプロジェクトのiOSディレクトリに移動します。</p>
 <p>例</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">/my_app/ios
-</code></pre></div><p>ここで</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">xed .
-</code></pre></div><p>でXcodeでプロジェクトを開きます。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>/my_app/ios
+</span></span></code></pre></div><p>ここで</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>xed .
+</span></span></code></pre></div><p>でXcodeでプロジェクトを開きます。</p>
 <p>以下の画像のように<code>TARGETS</code>の<code>Bundle Identifier</code>を修正します。
 以上で終わりです。</p>
 </li>
@@ -189,7 +188,7 @@ VSCodeでプロジェクトを開きます。
 <li>
 <p>ディレクトリ変更
 Androidのデフォルトの言語が<code>java</code>か<code>kotlin</code>によって変わりますが、大体<code>kotlin</code>ですので、以下のようなディレクトリ構成になっていると思います。</p>
-<pre><code>my_app/android/app/src/main/kotlin/com/example/my_app
+<pre tabindex="0"><code>my_app/android/app/src/main/kotlin/com/example/my_app
 </code></pre><p>ですので、この/com/exampleの名前を設定したいPackage Nameに変更しておきます。</p>
 </li>
 </ul>
@@ -208,27 +207,27 @@ Androidのデフォルトの言語が<code>java</code>か<code>kotlin</code>に�
 <p>開くと以下のようなjsonがあるはずです。</p>
 <p><img src="https://lh3.googleusercontent.com/pw/ACtC-3chYVZmiwvAjvuM2c9eovnOL15hYCfk3FWgkNv7GmAQ325bXwVAgph0GV74tF2uHyAWkim25JvTMonpTWQeHAKws16AFK3IZ0dPdoMj4LPEmwUwdz3ornuRgU4yCoUko5SBMxB3uUHTd5ISHySdecObsA=w2272-h1760-no?authuser=0" alt="jsonfile"></p>
 <p>これの<code>art.flutterCreateOrganization</code>が<code>null</code>になっているため、ここを自身の<code>organization</code>を設定してあげます。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-settings.json" data-lang="settings.json">{
-    <span style="color:#f92672">&#34;[dart]&#34;</span>: {
-        <span style="color:#f92672">&#34;editor.formatOnSave&#34;</span>: <span style="color:#66d9ef">true</span>,
-        <span style="color:#f92672">&#34;editor.formatOnType&#34;</span>: <span style="color:#66d9ef">true</span>,
-        <span style="color:#f92672">&#34;editor.rulers&#34;</span>: [
-            <span style="color:#ae81ff">80</span>
-        ],
-        <span style="color:#f92672">&#34;editor.selectionHighlight&#34;</span>: <span style="color:#66d9ef">false</span>,
-        <span style="color:#f92672">&#34;editor.suggest.snippetsPreventQuickSuggestions&#34;</span>: <span style="color:#66d9ef">false</span>,
-        <span style="color:#f92672">&#34;editor.suggestSelection&#34;</span>: <span style="color:#e6db74">&#34;first&#34;</span>,
-        <span style="color:#f92672">&#34;editor.tabCompletion&#34;</span>: <span style="color:#e6db74">&#34;onlySnippets&#34;</span>,
-        <span style="color:#f92672">&#34;editor.wordBasedSuggestions&#34;</span>: <span style="color:#66d9ef">false</span>
-    },
-    <span style="color:#f92672">&#34;dart.flutterCreateOrganization&#34;</span>: <span style="color:#e6db74">&#34;com.tsuzuki817&#34;</span>
-}
-</code></pre></div><p>そうすると次回からVSCodeでflutterプロジェクトを作成した時には自動的に設定した文字列からorganizationが設定されるようになります。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-settings.json" data-lang="settings.json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;[dart]&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;editor.formatOnSave&#34;</span>: <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;editor.formatOnType&#34;</span>: <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;editor.rulers&#34;</span>: [
+</span></span><span style="display:flex;"><span>            <span style="color:#ae81ff">80</span>
+</span></span><span style="display:flex;"><span>        ],
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;editor.selectionHighlight&#34;</span>: <span style="color:#66d9ef">false</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;editor.suggest.snippetsPreventQuickSuggestions&#34;</span>: <span style="color:#66d9ef">false</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;editor.suggestSelection&#34;</span>: <span style="color:#e6db74">&#34;first&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;editor.tabCompletion&#34;</span>: <span style="color:#e6db74">&#34;onlySnippets&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;editor.wordBasedSuggestions&#34;</span>: <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;dart.flutterCreateOrganization&#34;</span>: <span style="color:#e6db74">&#34;com.tsuzuki817&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>そうすると次回からVSCodeでflutterプロジェクトを作成した時には自動的に設定した文字列からorganizationが設定されるようになります。</p>
 <p><img src="https://lh3.googleusercontent.com/pw/ACtC-3eOCpXDYCfTmUpLG-H_oXC7aPa5vt8mCmsSVi_Vjh1u_CtB03DBYhGowdU_uD8X7QeXZEQRJoZqQFcbpvSsFEiaW_avZlm26Z5cj4BBIwXgqhb696Tp40HikRf-1Y7NVf36h7rQwi6KFWAu-B6LCFhvmQ=w2054-h1590-no?authuser=0" alt="result"></p>
 <h1 id="コマンドでやりたい人向け">コマンドでやりたい人向け</h1>
 <p>プロジェクトを作るときに以下のコマンドを打つと、指定されたorganizationが反映されるそうです。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">flutter create --org com.your.orgname my_app_name
-</code></pre></div><h1 id="参考url">参考URL</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>flutter create --org com.your.orgname my_app_name
+</span></span></code></pre></div><h1 id="参考url">参考URL</h1>
 <ul>
 <li><a href="https://qiita.com/y-w/items/614843b259c04bb91495">VS Codeのsettings.jsonの開き方</a></li>
 <li><a href="https://qiita.com/hayatokunn/items/76b41e00f114cf9a9f140">Visual Studio Codeの一括置換</a></li>

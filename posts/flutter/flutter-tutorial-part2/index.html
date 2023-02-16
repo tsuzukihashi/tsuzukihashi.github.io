@@ -4,7 +4,7 @@
     <title>Flutterチュートリアルやってみた part2 // 愚直プログラマ</title>
     <link rel="shortcut icon" href="/favicon.ico" />
     <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.80.0" />
+    <meta name="generator" content="Hugo 0.110.0">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Ryo Tsuzukihashi" />
     <meta name="description" content="" />
@@ -23,10 +23,9 @@ if (!doNotTrack) {
 	ga('send', 'pageview');
 }
 </script>
-
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Flutterチュートリアルやってみた part2"/>
-<meta name="twitter:description" content="参考 作業リポジトリ =&gt; https://github.com/tsuzukihashi/flutter-tutorial-part01  環境  作業日: 2020/03/12 OS: macOS Big Sur 11.2.1 PC: MacBook Pro (13-inch, M1, 2020)  はじめに 前回に引き続きpart2をやっていきたいと思います。
+<meta name="twitter:description" content="参考 作業リポジトリ =&gt; https://github.com/tsuzukihashi/flutter-tutorial-part01 環境 作業日: 2020/03/12 OS: macOS Big Sur 11.2.1 PC: MacBook Pro (13-inch, M1, 2020) はじめに 前回に引き続きpart2をやっていきたいと思います。
 part2では画面の遷移とテーマカラーの変更がテーマのようです！
 前回までのコードは、こちらで！
 https://github.com/tsuzukihashi/flutter-tutorial-part01
@@ -35,7 +34,7 @@ https://github.com/tsuzukihashi/fulutter-tutorial-part02
 step 0 migrate 最近Flutter2が発表されたので、チュートリアルでもmigrateについて記述がありました。
 part01で行ったpubspec.yamlを修正します。
 null safetyに対応するためenglish_wordsのバージョンをあげます。
-english_words: ^4.0.0-0  pub getした後に以下のコマンドを入力し、マイグレートします。
+english_words: ^4.0.0-0 pub getした後に以下のコマンドを入力し、マイグレートします。
 dart migrate --apply-changes ここまでで一旦アプリを起動してListViewが表示されていることを確認します。
 step 1　リストにアイコンを追加する _RandomWordsStateに_savedというSetを追加します。
 このSetにはユーザーがお気に入りした単語のペアが入ります。
@@ -43,10 +42,10 @@ SetはListと異なり、重複を許さず順番を保持し続けるという�
 次に、_buildRowメソッドないにalreadySavedチェックを追加して単語のペアがお気に入りに追加されているかしていないかを確認します。
 次に_buildRowにハートアイコンを追加します。
 ListTileのtrailingにアイコンを追加します。
-Widget _buildRow(WordPair pair) { final alreadySaved = _saved.contains(pair); return ListTile( title: Text( pair.asPascalCase, style: _biggerFont, ), trailing: Icon( alreadySaved ?"/>
+Widget _buildRow(WordPair pair) { final alreadySaved = _saved.contains(pair); return ListTile( title: Text( pair.asPascalCase, style: _biggerFont, ), trailing: Icon( alreadySaved ? Icons."/>
 
     <meta property="og:title" content="Flutterチュートリアルやってみた part2" />
-<meta property="og:description" content="参考 作業リポジトリ =&gt; https://github.com/tsuzukihashi/flutter-tutorial-part01  環境  作業日: 2020/03/12 OS: macOS Big Sur 11.2.1 PC: MacBook Pro (13-inch, M1, 2020)  はじめに 前回に引き続きpart2をやっていきたいと思います。
+<meta property="og:description" content="参考 作業リポジトリ =&gt; https://github.com/tsuzukihashi/flutter-tutorial-part01 環境 作業日: 2020/03/12 OS: macOS Big Sur 11.2.1 PC: MacBook Pro (13-inch, M1, 2020) はじめに 前回に引き続きpart2をやっていきたいと思います。
 part2では画面の遷移とテーマカラーの変更がテーマのようです！
 前回までのコードは、こちらで！
 https://github.com/tsuzukihashi/flutter-tutorial-part01
@@ -55,7 +54,7 @@ https://github.com/tsuzukihashi/fulutter-tutorial-part02
 step 0 migrate 最近Flutter2が発表されたので、チュートリアルでもmigrateについて記述がありました。
 part01で行ったpubspec.yamlを修正します。
 null safetyに対応するためenglish_wordsのバージョンをあげます。
-english_words: ^4.0.0-0  pub getした後に以下のコマンドを入力し、マイグレートします。
+english_words: ^4.0.0-0 pub getした後に以下のコマンドを入力し、マイグレートします。
 dart migrate --apply-changes ここまでで一旦アプリを起動してListViewが表示されていることを確認します。
 step 1　リストにアイコンを追加する _RandomWordsStateに_savedというSetを追加します。
 このSetにはユーザーがお気に入りした単語のペアが入ります。
@@ -63,9 +62,9 @@ SetはListと異なり、重複を許さず順番を保持し続けるという�
 次に、_buildRowメソッドないにalreadySavedチェックを追加して単語のペアがお気に入りに追加されているかしていないかを確認します。
 次に_buildRowにハートアイコンを追加します。
 ListTileのtrailingにアイコンを追加します。
-Widget _buildRow(WordPair pair) { final alreadySaved = _saved.contains(pair); return ListTile( title: Text( pair.asPascalCase, style: _biggerFont, ), trailing: Icon( alreadySaved ?" />
+Widget _buildRow(WordPair pair) { final alreadySaved = _saved.contains(pair); return ListTile( title: Text( pair.asPascalCase, style: _biggerFont, ), trailing: Icon( alreadySaved ? Icons." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.tsuzuki817.com/posts/flutter/flutter-tutorial-part2/" />
+<meta property="og:url" content="https://www.tsuzuki817.com/posts/flutter/flutter-tutorial-part2/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-03-12T04:08:10+09:00" />
 <meta property="article:modified_time" content="2021-03-12T04:08:10+09:00" />
 
@@ -93,7 +92,7 @@ Widget _buildRow(WordPair pair) { final alreadySaved = _saved.contains(pair); re
           
           <a class="app-header-menu-item" href="https://play.google.com/store/apps/developer?id=KamitsureLab">Androidアプリ一覧</a>
       </nav>
-      <p>Yahoo! JAPAN iOS Engineer.</p>
+      <p>DeNA iOS Engineer.</p>
       <div class="app-header-social">
         
           <a target="_blank" href="https://github.com/tsuzukihashi" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
@@ -174,9 +173,9 @@ Widget _buildRow(WordPair pair) { final alreadySaved = _saved.contains(pair); re
 <p>最近Flutter2が発表されたので、チュートリアルでもmigrateについて記述がありました。</p>
 <p>part01で行った<code>pubspec.yaml</code>を修正します。</p>
 <p><code>null safety</code>に対応するため<code>english_words</code>のバージョンをあげます。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">  <span style="color:#f92672">english_words</span>: <span style="color:#ae81ff">^4.0.0-0 </span>
-</code></pre></div><p><code>pub get</code>した後に以下のコマンドを入力し、マイグレートします。</p>
-<pre><code>dart migrate --apply-changes
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>  <span style="color:#f92672">english_words</span>: <span style="color:#ae81ff">^4.0.0-0 </span>
+</span></span></code></pre></div><p><code>pub get</code>した後に以下のコマンドを入力し、マイグレートします。</p>
+<pre tabindex="0"><code>dart migrate --apply-changes
 </code></pre><p>ここまでで一旦アプリを起動してListViewが表示されていることを確認します。</p>
 <p><img src="https://lh3.googleusercontent.com/pw/ACtC-3dcDVq94drOSZq8H_ErU6Ij2chHcgwgaPCULOzdAcm8YH6xCjCKNdkBl7010pgWkpcsNcNoks_Ls6_7TMiDLFpOAvxBhMOWg3wpyIzvFJ1lzJORYJTj4OxBpSezunxk2bYG9TK7MAyJY4B-kbLjoRgYbw=w736-h1590-no?authuser=0" alt="star"></p>
 <h1 id="step-1リストにアイコンを追加する">step 1　リストにアイコンを追加する</h1>
@@ -186,46 +185,46 @@ Widget _buildRow(WordPair pair) { final alreadySaved = _saved.contains(pair); re
 <p>次に、_buildRowメソッドないに<code>alreadySaved</code>チェックを追加して単語のペアがお気に入りに追加されているかしていないかを確認します。</p>
 <p>次に<code>_buildRow</code>にハートアイコンを追加します。</p>
 <p><code>ListTile</code>の<code>trailing</code>にアイコンを追加します。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart">  Widget _buildRow(WordPair pair) {
-    <span style="color:#66d9ef">final</span> alreadySaved <span style="color:#f92672">=</span> _saved.contains(pair);
-    <span style="color:#66d9ef">return</span> ListTile(
-      title: Text(
-        pair.asPascalCase,
-        style: _biggerFont,
-      ),
-      trailing: Icon(
-        alreadySaved <span style="color:#f92672">?</span> Icons.favorite <span style="color:#f92672">:</span> Icons.favorite_border,
-        color: alreadySaved <span style="color:#f92672">?</span> Colors.red <span style="color:#f92672">:</span> <span style="color:#66d9ef">null</span>,
-      ),
-    );
-  }
-</code></pre></div><p><img src="https://lh3.googleusercontent.com/pw/ACtC-3cVDpwz4s-sOUm9C8jTlmjwt1rKecKrQ_NVs8nJHe2xXIdWscicO1wXus2Zz1YeHHQSwT91D39O3HCbQTn81uuIhEoh8mF56dh-jK6Q-VPEC-sV-iTZzoZECOs8b1v6bg0yUIEBGx535iIh1b96U5qNWA=w736-h1590-no?authuser=0" alt="heart"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dart" data-lang="dart"><span style="display:flex;"><span>  Widget _buildRow(WordPair pair) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">final</span> alreadySaved <span style="color:#f92672">=</span> _saved.contains(pair);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> ListTile(
+</span></span><span style="display:flex;"><span>      title: Text(
+</span></span><span style="display:flex;"><span>        pair.asPascalCase,
+</span></span><span style="display:flex;"><span>        style: _biggerFont,
+</span></span><span style="display:flex;"><span>      ),
+</span></span><span style="display:flex;"><span>      trailing: Icon(
+</span></span><span style="display:flex;"><span>        alreadySaved <span style="color:#f92672">?</span> Icons.favorite <span style="color:#f92672">:</span> Icons.favorite_border,
+</span></span><span style="display:flex;"><span>        color: alreadySaved <span style="color:#f92672">?</span> Colors.red <span style="color:#f92672">:</span> <span style="color:#66d9ef">null</span>,
+</span></span><span style="display:flex;"><span>      ),
+</span></span><span style="display:flex;"><span>    );
+</span></span><span style="display:flex;"><span>  }
+</span></span></code></pre></div><p><img src="https://lh3.googleusercontent.com/pw/ACtC-3cVDpwz4s-sOUm9C8jTlmjwt1rKecKrQ_NVs8nJHe2xXIdWscicO1wXus2Zz1YeHHQSwT91D39O3HCbQTn81uuIhEoh8mF56dh-jK6Q-VPEC-sV-iTZzoZECOs8b1v6bg0yUIEBGx535iIh1b96U5qNWA=w736-h1590-no?authuser=0" alt="heart"></p>
 <h1 id="step-2-ハートアイコンをタップ可能にする">step 2 ハートアイコンをタップ可能にする</h1>
 <p>これを行うためには<code>_buildRow</code>メソッドを更新します！</p>
 <p><code>ListItem</code>の<code>onTap</code>を実装します。</p>
 <p>タイルがタップされたら<code>setState()</code>を呼び出し状態が通知されたことをフレームワークに伝える働きがあるそうです。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart">    Widget _buildRow(WordPair pair) {
-    <span style="color:#66d9ef">final</span> alreadySaved <span style="color:#f92672">=</span> _saved.contains(pair);
-    <span style="color:#66d9ef">return</span> ListTile(
-      title: Text(
-        pair.asPascalCase,
-        style: _biggerFont,
-      ),
-      trailing: Icon(
-        alreadySaved <span style="color:#f92672">?</span> Icons.favorite <span style="color:#f92672">:</span> Icons.favorite_border,
-        color: alreadySaved <span style="color:#f92672">?</span> Colors.red <span style="color:#f92672">:</span> <span style="color:#66d9ef">null</span>,
-      ),
-      onTap: () {
-        setState(() {
-          <span style="color:#66d9ef">if</span> (alreadySaved) {
-            _saved.remove(pair);
-          } <span style="color:#66d9ef">else</span> {
-            _saved.add(pair);
-          }
-        });
-      },
-    );
-</code></pre></div><p>![image]](<a href="https://lh3.googleusercontent.com/pw/ACtC-3fEe__50G17SdWjHd3UYIMj4YXfr3jnJUEYBf6HE2f-a5CGXh6FFHA4vgeTCUd-29_9HlTcXimG8lyj7lzODg7PkxtM8bLZZ1dlpvV6ABPiFmzfBP1pxXAp8PHiO0uNLZqhIQp4DcQcHQsVLDFfqqA5zw=w736-h1590-no?authuser=0">https://lh3.googleusercontent.com/pw/ACtC-3fEe__50G17SdWjHd3UYIMj4YXfr3jnJUEYBf6HE2f-a5CGXh6FFHA4vgeTCUd-29_9HlTcXimG8lyj7lzODg7PkxtM8bLZZ1dlpvV6ABPiFmzfBP1pxXAp8PHiO0uNLZqhIQp4DcQcHQsVLDFfqqA5zw=w736-h1590-no?authuser=0</a>)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dart" data-lang="dart"><span style="display:flex;"><span>    Widget _buildRow(WordPair pair) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">final</span> alreadySaved <span style="color:#f92672">=</span> _saved.contains(pair);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> ListTile(
+</span></span><span style="display:flex;"><span>      title: Text(
+</span></span><span style="display:flex;"><span>        pair.asPascalCase,
+</span></span><span style="display:flex;"><span>        style: _biggerFont,
+</span></span><span style="display:flex;"><span>      ),
+</span></span><span style="display:flex;"><span>      trailing: Icon(
+</span></span><span style="display:flex;"><span>        alreadySaved <span style="color:#f92672">?</span> Icons.favorite <span style="color:#f92672">:</span> Icons.favorite_border,
+</span></span><span style="display:flex;"><span>        color: alreadySaved <span style="color:#f92672">?</span> Colors.red <span style="color:#f92672">:</span> <span style="color:#66d9ef">null</span>,
+</span></span><span style="display:flex;"><span>      ),
+</span></span><span style="display:flex;"><span>      onTap: () {
+</span></span><span style="display:flex;"><span>        setState(() {
+</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">if</span> (alreadySaved) {
+</span></span><span style="display:flex;"><span>            _saved.remove(pair);
+</span></span><span style="display:flex;"><span>          } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>            _saved.add(pair);
+</span></span><span style="display:flex;"><span>          }
+</span></span><span style="display:flex;"><span>        });
+</span></span><span style="display:flex;"><span>      },
+</span></span><span style="display:flex;"><span>    );
+</span></span></code></pre></div><p>![image]](<a href="https://lh3.googleusercontent.com/pw/ACtC-3fEe__50G17SdWjHd3UYIMj4YXfr3jnJUEYBf6HE2f-a5CGXh6FFHA4vgeTCUd-29_9HlTcXimG8lyj7lzODg7PkxtM8bLZZ1dlpvV6ABPiFmzfBP1pxXAp8PHiO0uNLZqhIQp4DcQcHQsVLDFfqqA5zw=w736-h1590-no?authuser=0">https://lh3.googleusercontent.com/pw/ACtC-3fEe__50G17SdWjHd3UYIMj4YXfr3jnJUEYBf6HE2f-a5CGXh6FFHA4vgeTCUd-29_9HlTcXimG8lyj7lzODg7PkxtM8bLZZ1dlpvV6ABPiFmzfBP1pxXAp8PHiO0uNLZqhIQp4DcQcHQsVLDFfqqA5zw=w736-h1590-no?authuser=0</a>)</p>
 <h1 id="step-3-新しい画面に遷移する">step 3 新しい画面に遷移する</h1>
 <p>このステップではお気に入りを表示するためのページ（Flutterではページのことをルートと呼びます）を作ります。</p>
 <p>ホームルートと新しいルートの間を移動する方法を学びます。</p>
@@ -233,45 +232,45 @@ Widget _buildRow(WordPair pair) { final alreadySaved = _saved.contains(pair); re
 <p>ルートをNavigatorのスタックにプッシュすると、そのルートが表示され、ルートをポップすると表示が前のルートの戻ります。</p>
 <p>まず、遷移させるための要素として、AppBarにリストボタンを配置します。</p>
 <p><code>_RandomWordsState</code>の<code>build</code>メソッドの<code>AppBar</code>に<code>actions</code>を追加します。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart">  <span style="color:#960050;background-color:#1e0010">@</span>override
-  Widget build(BuildContext context) {
-    <span style="color:#66d9ef">return</span> Scaffold(
-      appBar: AppBar(
-        title: Text(<span style="color:#e6db74">&#39;Startup Name Generator&#39;</span>),
-        actions: [IconButton(icon: Icon(Icons.list), onPressed: _onPressed)],
-      ),
-      body: _buildSuggestions(),
-    );
-  }
-}
-</code></pre></div><p>また、<code>IconButton</code>にはタップした際のメソッドが必要なため<code>_onPressed</code>メソッドをState内に作っておきます。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart">  <span style="color:#66d9ef">void</span> _onPressed() {}
-</code></pre></div><p>この時点でボタンをタップしても何も起こりません。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dart" data-lang="dart"><span style="display:flex;"><span>  <span style="color:#960050;background-color:#1e0010">@</span>override
+</span></span><span style="display:flex;"><span>  Widget build(BuildContext context) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> Scaffold(
+</span></span><span style="display:flex;"><span>      appBar: AppBar(
+</span></span><span style="display:flex;"><span>        title: Text(<span style="color:#e6db74">&#39;Startup Name Generator&#39;</span>),
+</span></span><span style="display:flex;"><span>        actions: [IconButton(icon: Icon(Icons.list), onPressed: _onPressed)],
+</span></span><span style="display:flex;"><span>      ),
+</span></span><span style="display:flex;"><span>      body: _buildSuggestions(),
+</span></span><span style="display:flex;"><span>    );
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>また、<code>IconButton</code>にはタップした際のメソッドが必要なため<code>_onPressed</code>メソッドをState内に作っておきます。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dart" data-lang="dart"><span style="display:flex;"><span>  <span style="color:#66d9ef">void</span> _onPressed() {}
+</span></span></code></pre></div><p>この時点でボタンをタップしても何も起こりません。</p>
 <p>ルートを作成し、Navigatorのスタックにプッシュする処理をかきます。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart">  <span style="color:#66d9ef">void</span> _onPressed() {
-    Navigator.of(context)
-        .push(MaterialPageRoute<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">void</span><span style="color:#f92672">&gt;</span>(builder: (BuildContext context) {
-      <span style="color:#66d9ef">final</span> tiles <span style="color:#f92672">=</span> _saved.map((WordPair pair) {
-        <span style="color:#66d9ef">return</span> ListTile(
-          title: Text(
-            pair.asPascalCase,
-            style: _biggerFont,
-          ),
-        );
-      });
-      <span style="color:#66d9ef">final</span> divied <span style="color:#f92672">=</span>
-          ListTile.divideTiles(tiles: tiles, context: context).toList();
-      <span style="color:#66d9ef">return</span> Scaffold(
-        appBar: AppBar(
-          title: Text(<span style="color:#e6db74">&#39;Saved Suggestions&#39;</span>),
-        ),
-        body: ListView(
-          children: divied,
-        ),
-      );
-    }));
-  }
-</code></pre></div><p><code>Navigator.of(context).push</code>でルートがスタックにプッシュされます。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dart" data-lang="dart"><span style="display:flex;"><span>  <span style="color:#66d9ef">void</span> _onPressed() {
+</span></span><span style="display:flex;"><span>    Navigator.of(context)
+</span></span><span style="display:flex;"><span>        .push(MaterialPageRoute<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">void</span><span style="color:#f92672">&gt;</span>(builder: (BuildContext context) {
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">final</span> tiles <span style="color:#f92672">=</span> _saved.map((WordPair pair) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> ListTile(
+</span></span><span style="display:flex;"><span>          title: Text(
+</span></span><span style="display:flex;"><span>            pair.asPascalCase,
+</span></span><span style="display:flex;"><span>            style: _biggerFont,
+</span></span><span style="display:flex;"><span>          ),
+</span></span><span style="display:flex;"><span>        );
+</span></span><span style="display:flex;"><span>      });
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">final</span> divied <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>          ListTile.divideTiles(tiles: tiles, context: context).toList();
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">return</span> Scaffold(
+</span></span><span style="display:flex;"><span>        appBar: AppBar(
+</span></span><span style="display:flex;"><span>          title: Text(<span style="color:#e6db74">&#39;Saved Suggestions&#39;</span>),
+</span></span><span style="display:flex;"><span>        ),
+</span></span><span style="display:flex;"><span>        body: ListView(
+</span></span><span style="display:flex;"><span>          children: divied,
+</span></span><span style="display:flex;"><span>        ),
+</span></span><span style="display:flex;"><span>      );
+</span></span><span style="display:flex;"><span>    }));
+</span></span><span style="display:flex;"><span>  }
+</span></span></code></pre></div><p><code>Navigator.of(context).push</code>でルートがスタックにプッシュされます。</p>
 <p>次に、<code>MaterialPageRoute</code>とそのビルダーを追加します。</p>
 <p>ListViewを作るためにListTileを作成し、さらに仕切り線を追加し<code>toList()</code>でリストに変換しそれを<code>ListView</code>に食わせます。</p>
 <p>アプリを再起動し、セルをタップしAppBarのリストアイコンをタップするとタップした単語のペアのリストを確認することができます。</p>
@@ -281,17 +280,17 @@ Widget _buildRow(WordPair pair) { final alreadySaved = _saved.contains(pair); re
 <p>このステップではアプリのテーマを変更します。テーマを変更すると、外観と雰囲気を帰ることができます。</p>
 <p><code>ThemeData</code>クラスを変更することで簡単にテーマを変更することができます。</p>
 <p>以下のように<code>MyApp</code>クラスのthemeを変更してprimaryColorを白色に変更します。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MyApp</span> <span style="color:#66d9ef">extends</span> StatelessWidget {
-  <span style="color:#960050;background-color:#1e0010">@</span>override
-  Widget build(BuildContext context) {
-    <span style="color:#66d9ef">return</span> MaterialApp(
-      title: <span style="color:#e6db74">&#39;Startup Name Generator&#39;</span>,
-      theme: ThemeData(primaryColor: Colors.white),
-      home: RandomWords(),
-    );
-  }
-}
-</code></pre></div><p><img src="https://lh3.googleusercontent.com/pw/ACtC-3ea0-RD3wWE43CDqTWVbeDDhjWYp_vQTd-pYBqksf3GPaBQBqxt3Yl4YCzfaKNT_Fk1_OD9qJtdCtsHCsMKAOLv7dKLkqPtakCYSQul4JqI4wiMBlwaVVLzEdHisRsw1-PLNn9Zy3B2t_Dys_NMCW69xQ=w736-h1590-no?authuser=0" alt="white"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dart" data-lang="dart"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MyApp</span> <span style="color:#66d9ef">extends</span> StatelessWidget {
+</span></span><span style="display:flex;"><span>  <span style="color:#960050;background-color:#1e0010">@</span>override
+</span></span><span style="display:flex;"><span>  Widget build(BuildContext context) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> MaterialApp(
+</span></span><span style="display:flex;"><span>      title: <span style="color:#e6db74">&#39;Startup Name Generator&#39;</span>,
+</span></span><span style="display:flex;"><span>      theme: ThemeData(primaryColor: Colors.white),
+</span></span><span style="display:flex;"><span>      home: RandomWords(),
+</span></span><span style="display:flex;"><span>    );
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p><img src="https://lh3.googleusercontent.com/pw/ACtC-3ea0-RD3wWE43CDqTWVbeDDhjWYp_vQTd-pYBqksf3GPaBQBqxt3Yl4YCzfaKNT_Fk1_OD9qJtdCtsHCsMKAOLv7dKLkqPtakCYSQul4JqI4wiMBlwaVVLzEdHisRsw1-PLNn9Zy3B2t_Dys_NMCW69xQ=w736-h1590-no?authuser=0" alt="white"></p>
 <p>いろんな色を試してみたいときに、いちいちビルドし直さず、ホットリロードで反映されるためUIの変更を迅速に確認することができます。</p>
 <p>以上で終わりです！</p>
 

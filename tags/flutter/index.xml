@@ -13,7 +13,7 @@
       <pubDate>Fri, 12 Mar 2021 04:08:10 +0900</pubDate>
       
       <guid>https://www.tsuzuki817.com/posts/flutter/flutter-tutorial-part2/</guid>
-      <description>参考 作業リポジトリ =&amp;gt; https://github.com/tsuzukihashi/flutter-tutorial-part01  環境  作業日: 2020/03/12 OS: macOS Big Sur 11.2.1 PC: MacBook Pro (13-inch, M1, 2020)  はじめに 前回に引き続きpart2をやっていきたいと思います。
+      <description>参考 作業リポジトリ =&amp;gt; https://github.com/tsuzukihashi/flutter-tutorial-part01 環境 作業日: 2020/03/12 OS: macOS Big Sur 11.2.1 PC: MacBook Pro (13-inch, M1, 2020) はじめに 前回に引き続きpart2をやっていきたいと思います。
 part2では画面の遷移とテーマカラーの変更がテーマのようです！
 前回までのコードは、こちらで！
 https://github.com/tsuzukihashi/flutter-tutorial-part01
@@ -22,7 +22,7 @@ https://github.com/tsuzukihashi/fulutter-tutorial-part02
 step 0 migrate 最近Flutter2が発表されたので、チュートリアルでもmigrateについて記述がありました。
 part01で行ったpubspec.yamlを修正します。
 null safetyに対応するためenglish_wordsのバージョンをあげます。
-english_words: ^4.0.0-0  pub getした後に以下のコマンドを入力し、マイグレートします。
+english_words: ^4.0.0-0 pub getした後に以下のコマンドを入力し、マイグレートします。
 dart migrate --apply-changes ここまでで一旦アプリを起動してListViewが表示されていることを確認します。
 step 1　リストにアイコンを追加する _RandomWordsStateに_savedというSetを追加します。
 このSetにはユーザーがお気に入りした単語のペアが入ります。
@@ -30,7 +30,7 @@ SetはListと異なり、重複を許さず順番を保持し続けるという�
 次に、_buildRowメソッドないにalreadySavedチェックを追加して単語のペアがお気に入りに追加されているかしていないかを確認します。
 次に_buildRowにハートアイコンを追加します。
 ListTileのtrailingにアイコンを追加します。
-Widget _buildRow(WordPair pair) { final alreadySaved = _saved.contains(pair); return ListTile( title: Text( pair.asPascalCase, style: _biggerFont, ), trailing: Icon( alreadySaved ?</description>
+Widget _buildRow(WordPair pair) { final alreadySaved = _saved.contains(pair); return ListTile( title: Text( pair.asPascalCase, style: _biggerFont, ), trailing: Icon( alreadySaved ? Icons.</description>
     </item>
     
     <item>
@@ -39,7 +39,7 @@ Widget _buildRow(WordPair pair) { final alreadySaved = _saved.contains(pair); re
       <pubDate>Thu, 04 Mar 2021 04:08:10 +0900</pubDate>
       
       <guid>https://www.tsuzuki817.com/posts/flutter/flutter-tutorial-part1/</guid>
-      <description>参考 作業リポジトリ =&amp;gt; https://github.com/tsuzukihashi/flutter-tutorial-part01  環境  作業日: 2020/03/07 OS: macOS Big Sur 11.2.1 PC: MacBook Pro (13-inch, M1, 2020)  初めに Flutterの勉強をするには公式のチュートリアルをやるのが一番だという情報を得たのでやっていき！
+      <description>参考 作業リポジトリ =&amp;gt; https://github.com/tsuzukihashi/flutter-tutorial-part01 環境 作業日: 2020/03/07 OS: macOS Big Sur 11.2.1 PC: MacBook Pro (13-inch, M1, 2020) 初めに Flutterの勉強をするには公式のチュートリアルをやるのが一番だという情報を得たのでやっていき！
 このチュートリアルでは、リストの無限スクロールをやりました。
 Step1 アプリを作る Flutterのプロジェクトを新規に作ります。
 lib/main.dartの中身を一度全て削除し、以下のように画面中央に&amp;quot;Hello World&amp;quot;と表示するように書き換えます。
@@ -54,22 +54,22 @@ import &amp;#39;package:flutter/material.dart&amp;#39;; void main() =&amp;gt; ru
       <guid>https://www.tsuzuki817.com/posts/flutter/flutter-package-bundle/</guid>
       <description>普通にVSCodeやコマンドからFlutterプロジェクトを作るとBundleID・PackageNameはcom.example.hogehoge のように指定されてしまいます。
 これを修正する方法を示すとともに、そうならないようにするVSCodeで開発している方向けの設定をご紹介します。
-すでに作ってしまった場合の修正方法   iOS iOSの場合は一つだけ変更すれば良いので楽です。 FlutterプロジェクトのiOSディレクトリに移動します。
+すでに作ってしまった場合の修正方法 iOS iOSの場合は一つだけ変更すれば良いので楽です。 FlutterプロジェクトのiOSディレクトリに移動します。
 例
 /my_app/ios ここで
 xed . でXcodeでプロジェクトを開きます。
 以下の画像のようにTARGETSのBundle Identifierを修正します。 以上で終わりです。
-    Android Androidの場合は名前の修正とディレクトリの修正の二つがあります。
-  ネーム変更 VSCodeでプロジェクトを開きます。 ⌘ + shift + fでプロジェクト全体の検索画面を開きます。 以下のように検索窓にcom.example.{プロジェクト名前}を入れて検索します。
+Android Androidの場合は名前の修正とディレクトリの修正の二つがあります。
+ネーム変更 VSCodeでプロジェクトを開きます。 ⌘ + shift + fでプロジェクト全体の検索画面を開きます。 以下のように検索窓にcom.example.{プロジェクト名前}を入れて検索します。
 検索窓の左側に下向きの矢印ボタンがあるのでそれをクリックします。 その後置換するための窓が出てきますので、そこに変更したいPackage Nameを入れて、右側にある一斉置換のボタンをクリックすると名前を変更することができます。
-  ディレクトリ変更 Androidのデフォルトの言語がjavaかkotlinによって変わりますが、大体kotlinですので、以下のようなディレクトリ構成になっていると思います。
+ディレクトリ変更 Androidのデフォルトの言語がjavaかkotlinによって変わりますが、大体kotlinですので、以下のようなディレクトリ構成になっていると思います。
 my_app/android/app/src/main/kotlin/com/example/my_app ですので、この/com/exampleの名前を設定したいPackage Nameに変更しておきます。
-  以上で終わりです。
-  VSCodeの場合のより良い方法 上記のようなことを毎回やるのはよろしくないので、次からは自動的にやってもらいたいと思います。
- Settings.jsonを開く ショートカットキーcommand + ,  organizationで検索し、DartのExtensionsのFlutter Create OrganizationからEdit in settings.jsonをクリックします。
+以上で終わりです。
+VSCodeの場合のより良い方法 上記のようなことを毎回やるのはよろしくないので、次からは自動的にやってもらいたいと思います。
+Settings.jsonを開く ショートカットキーcommand + , organizationで検索し、DartのExtensionsのFlutter Create OrganizationからEdit in settings.jsonをクリックします。
 開くと以下のようなjsonがあるはずです。
 これのart.flutterCreateOrganizationがnullになっているため、ここを自身のorganizationを設定してあげます。
-{ &amp;#34;[dart]&amp;#34;: { &amp;#34;editor.formatOnSave&amp;#34;: true, &amp;#34;editor.formatOnType&amp;#34;: true, &amp;#34;editor.</description>
+{ &amp;#34;[dart]&amp;#34;: { &amp;#34;editor.formatOnSave&amp;#34;: true, &amp;#34;editor.formatOnType&amp;#34;: true, &amp;#34;editor.rulers&amp;#34;: [ 80 ], &amp;#34;editor.selectionHighlight&amp;#34;: false, &amp;#34;editor.suggest.snippetsPreventQuickSuggestions&amp;#34;: false, &amp;#34;editor.suggestSelection&amp;#34;: &amp;#34;first&amp;#34;, &amp;#34;editor.tabCompletion&amp;#34;: &amp;#34;onlySnippets&amp;#34;, &amp;#34;editor.wordBasedSuggestions&amp;#34;: false }, &amp;#34;dart.</description>
     </item>
     
     <item>

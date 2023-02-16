@@ -4,7 +4,7 @@
     <title>Flutterチュートリアルやってみた part1 // 愚直プログラマ</title>
     <link rel="shortcut icon" href="/favicon.ico" />
     <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.80.0" />
+    <meta name="generator" content="Hugo 0.110.0">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Ryo Tsuzukihashi" />
     <meta name="description" content="" />
@@ -23,23 +23,22 @@ if (!doNotTrack) {
 	ga('send', 'pageview');
 }
 </script>
-
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Flutterチュートリアルやってみた part1"/>
-<meta name="twitter:description" content="参考 作業リポジトリ =&gt; https://github.com/tsuzukihashi/flutter-tutorial-part01  環境  作業日: 2020/03/07 OS: macOS Big Sur 11.2.1 PC: MacBook Pro (13-inch, M1, 2020)  初めに Flutterの勉強をするには公式のチュートリアルをやるのが一番だという情報を得たのでやっていき！
+<meta name="twitter:description" content="参考 作業リポジトリ =&gt; https://github.com/tsuzukihashi/flutter-tutorial-part01 環境 作業日: 2020/03/07 OS: macOS Big Sur 11.2.1 PC: MacBook Pro (13-inch, M1, 2020) 初めに Flutterの勉強をするには公式のチュートリアルをやるのが一番だという情報を得たのでやっていき！
 このチュートリアルでは、リストの無限スクロールをやりました。
 Step1 アプリを作る Flutterのプロジェクトを新規に作ります。
 lib/main.dartの中身を一度全て削除し、以下のように画面中央に&quot;Hello World&quot;と表示するように書き換えます。
 import &#39;package:flutter/material.dart&#39;; void main() =&gt; runApp(MyApp()); class MyApp extends StatelessWidget { @override Widget build(BuildContext context) { return MaterialApp( title: &#39;Welcom to Flutter&#39;, home: Scaffold( appBar: AppBar( title: Text(&#39;Welcome to Flutter&#39;), ), body: Center( child: Text(&#39;Hello World&#39;), ), ), ); } } コードをコピペした際に、インデントがズレた時の対処法がありましたが、 VSCodeのプラグインが入っていればコードを保存する(⌘ &#43; S)をするたびにフォーマットが走っていました。"/>
 
     <meta property="og:title" content="Flutterチュートリアルやってみた part1" />
-<meta property="og:description" content="参考 作業リポジトリ =&gt; https://github.com/tsuzukihashi/flutter-tutorial-part01  環境  作業日: 2020/03/07 OS: macOS Big Sur 11.2.1 PC: MacBook Pro (13-inch, M1, 2020)  初めに Flutterの勉強をするには公式のチュートリアルをやるのが一番だという情報を得たのでやっていき！
+<meta property="og:description" content="参考 作業リポジトリ =&gt; https://github.com/tsuzukihashi/flutter-tutorial-part01 環境 作業日: 2020/03/07 OS: macOS Big Sur 11.2.1 PC: MacBook Pro (13-inch, M1, 2020) 初めに Flutterの勉強をするには公式のチュートリアルをやるのが一番だという情報を得たのでやっていき！
 このチュートリアルでは、リストの無限スクロールをやりました。
 Step1 アプリを作る Flutterのプロジェクトを新規に作ります。
 lib/main.dartの中身を一度全て削除し、以下のように画面中央に&quot;Hello World&quot;と表示するように書き換えます。
 import &#39;package:flutter/material.dart&#39;; void main() =&gt; runApp(MyApp()); class MyApp extends StatelessWidget { @override Widget build(BuildContext context) { return MaterialApp( title: &#39;Welcom to Flutter&#39;, home: Scaffold( appBar: AppBar( title: Text(&#39;Welcome to Flutter&#39;), ), body: Center( child: Text(&#39;Hello World&#39;), ), ), ); } } コードをコピペした際に、インデントがズレた時の対処法がありましたが、 VSCodeのプラグインが入っていればコードを保存する(⌘ &#43; S)をするたびにフォーマットが走っていました。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.tsuzuki817.com/posts/flutter/flutter-tutorial-part1/" />
+<meta property="og:url" content="https://www.tsuzuki817.com/posts/flutter/flutter-tutorial-part1/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-03-04T04:08:10+09:00" />
 <meta property="article:modified_time" content="2021-03-04T04:08:10+09:00" />
 
@@ -67,7 +66,7 @@ import &#39;package:flutter/material.dart&#39;; void main() =&gt; runApp(MyApp()
           
           <a class="app-header-menu-item" href="https://play.google.com/store/apps/developer?id=KamitsureLab">Androidアプリ一覧</a>
       </nav>
-      <p>Yahoo! JAPAN iOS Engineer.</p>
+      <p>DeNA iOS Engineer.</p>
       <div class="app-header-social">
         
           <a target="_blank" href="https://github.com/tsuzukihashi" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
@@ -143,29 +142,28 @@ import &#39;package:flutter/material.dart&#39;; void main() =&gt; runApp(MyApp()
 <h1 id="step1-アプリを作る">Step1 アプリを作る</h1>
 <p>Flutterのプロジェクトを新規に作ります。</p>
 <p><code>lib/main.dart</code>の中身を一度全て削除し、以下のように画面中央に&quot;Hello World&quot;と表示するように書き換えます。</p>
-<p><img src="https://lh3.googleusercontent.com/pw/ACtC-3fDMeNtFSaVU3mOiyu-Mmqi_QriPegmSPFx_tuhiAiMLYx4lrZxDLmkp-IgIj1reQ-IOUB8CwTviYVIRxbAtDfj8bxh2FB3TgeNSh91tb3nggQa1Y_KT7azj5VlNyN1AtCssQvBY8ZbYhMzSJzmSkmp-w=w174-h372-no?authuser=0" alt="&lsquo;helloworld&rsquo;"></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#39;package:flutter/material.dart&#39;</span>;
-
-<span style="color:#66d9ef">void</span> main() <span style="color:#f92672">=&gt;</span> runApp(MyApp());
-
-<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MyApp</span> <span style="color:#66d9ef">extends</span> StatelessWidget {
-  <span style="color:#960050;background-color:#1e0010">@</span>override
-  Widget build(BuildContext context) {
-    <span style="color:#66d9ef">return</span> MaterialApp(
-      title: <span style="color:#e6db74">&#39;Welcom to Flutter&#39;</span>,
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text(<span style="color:#e6db74">&#39;Welcome to Flutter&#39;</span>),
-        ),
-        body: Center(
-          child: Text(<span style="color:#e6db74">&#39;Hello World&#39;</span>),
-        ),
-      ),
-    );
-  }
-}
-
-</code></pre></div><p>コードをコピペした際に、インデントがズレた時の対処法がありましたが、
+<p><img src="https://lh3.googleusercontent.com/pw/ACtC-3fDMeNtFSaVU3mOiyu-Mmqi_QriPegmSPFx_tuhiAiMLYx4lrZxDLmkp-IgIj1reQ-IOUB8CwTviYVIRxbAtDfj8bxh2FB3TgeNSh91tb3nggQa1Y_KT7azj5VlNyN1AtCssQvBY8ZbYhMzSJzmSkmp-w=w174-h372-no?authuser=0" alt="&amp;lsquo;helloworld&amp;rsquo;"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dart" data-lang="dart"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#39;package:flutter/material.dart&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> main() <span style="color:#f92672">=&gt;</span> runApp(MyApp());
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MyApp</span> <span style="color:#66d9ef">extends</span> StatelessWidget {
+</span></span><span style="display:flex;"><span>  <span style="color:#960050;background-color:#1e0010">@</span>override
+</span></span><span style="display:flex;"><span>  Widget build(BuildContext context) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> MaterialApp(
+</span></span><span style="display:flex;"><span>      title: <span style="color:#e6db74">&#39;Welcom to Flutter&#39;</span>,
+</span></span><span style="display:flex;"><span>      home: Scaffold(
+</span></span><span style="display:flex;"><span>        appBar: AppBar(
+</span></span><span style="display:flex;"><span>          title: Text(<span style="color:#e6db74">&#39;Welcome to Flutter&#39;</span>),
+</span></span><span style="display:flex;"><span>        ),
+</span></span><span style="display:flex;"><span>        body: Center(
+</span></span><span style="display:flex;"><span>          child: Text(<span style="color:#e6db74">&#39;Hello World&#39;</span>),
+</span></span><span style="display:flex;"><span>        ),
+</span></span><span style="display:flex;"><span>      ),
+</span></span><span style="display:flex;"><span>    );
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>コードをコピペした際に、インデントがズレた時の対処法がありましたが、
 VSCodeのプラグインが入っていればコードを保存する(⌘ + S)をするたびにフォーマットが走っていました。</p>
 <table>
 <thead>
@@ -200,56 +198,56 @@ VSCodeのプラグインが入っていればコードを保存する(⌘ + S)�
 <p>パッケージを利用するのに<code>pabspec.yaml</code>というファイルをいじる必要があり、</p>
 <p><code>pubspec.yaml</code>はFlutterアプリのアセットと依存関係を管理してくれます。</p>
 <p>以下のように<code>dependencies</code>に使いたいパッケージを記入します。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-pubspec.yaml" data-lang="pubspec.yaml"><span style="color:#f92672">name</span>: <span style="color:#ae81ff">flutter_tutorial_part01</span>
-<span style="color:#f92672">description</span>: <span style="color:#ae81ff">A new Flutter project.</span>
-<span style="color:#f92672">publish_to</span>: <span style="color:#e6db74">&#39;none&#39;</span> 
-<span style="color:#f92672">version</span>: <span style="color:#ae81ff">1.0.0+1</span>
-
-<span style="color:#f92672">environment</span>:
-  <span style="color:#f92672">sdk</span>: <span style="color:#e6db74">&#34;&gt;=2.7.0 &lt;3.0.0&#34;</span>
-
-<span style="color:#f92672">dependencies</span>:
-  <span style="color:#f92672">flutter</span>:
-    <span style="color:#f92672">sdk</span>: <span style="color:#ae81ff">flutter</span>
-  <span style="color:#f92672">cupertino_icons</span>: <span style="color:#ae81ff">^1.0.2</span>
-  <span style="color:#f92672">english_words</span>: <span style="color:#ae81ff">^3.1.5</span>
-
-<span style="color:#f92672">dev_dependencies</span>:
-  <span style="color:#f92672">flutter_test</span>:
-    <span style="color:#f92672">sdk</span>: <span style="color:#ae81ff">flutter</span>
-  <span style="color:#f92672">integration_test</span>:
-    <span style="color:#f92672">sdk</span>: <span style="color:#ae81ff">flutter</span>
-
-<span style="color:#f92672">flutter</span>:
-  <span style="color:#f92672">uses-material-design</span>: <span style="color:#66d9ef">true</span>
-</code></pre></div><p><code>english_words: ^3.1.5</code>これはenglish_wordsのバージョン3.1.5以上を利用すること示しています。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-pubspec.yaml" data-lang="pubspec.yaml"><span style="display:flex;"><span><span style="color:#f92672">name</span>: <span style="color:#ae81ff">flutter_tutorial_part01</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">description</span>: <span style="color:#ae81ff">A new Flutter project.</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">publish_to</span>: <span style="color:#e6db74">&#39;none&#39;</span> 
+</span></span><span style="display:flex;"><span><span style="color:#f92672">version</span>: <span style="color:#ae81ff">1.0.0+1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">environment</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">sdk</span>: <span style="color:#e6db74">&#34;&gt;=2.7.0 &lt;3.0.0&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">dependencies</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">flutter</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">sdk</span>: <span style="color:#ae81ff">flutter</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">cupertino_icons</span>: <span style="color:#ae81ff">^1.0.2</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">english_words</span>: <span style="color:#ae81ff">^3.1.5</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">dev_dependencies</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">flutter_test</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">sdk</span>: <span style="color:#ae81ff">flutter</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">integration_test</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">sdk</span>: <span style="color:#ae81ff">flutter</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">flutter</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">uses-material-design</span>: <span style="color:#66d9ef">true</span>
+</span></span></code></pre></div><p><code>english_words: ^3.1.5</code>これはenglish_wordsのバージョン3.1.5以上を利用すること示しています。</p>
 <p>記入したら、以下のコマンドを打つか、VSCodeならプラグインが入っていればyamlファイルを保存した時点でpub getが走るのでパッケージがプロジェクトに取り込まれます。</p>
-<pre><code>flutter pub get
+<pre tabindex="0"><code>flutter pub get
 </code></pre><p><code>pub get</code> を実行すると、プロジェクトに取り込まれたすべてのパッケージとそのバージョン番号のリストを含む <code>pubspec.lock</code>ファイルも自動生成されます。</p>
 <p>パッケージを利用していくには、<code>main.dart</code>の先頭に以下を追記します。</p>
-<pre><code>import 'package:english_words/english_words.dart';
+<pre tabindex="0"><code>import &#39;package:english_words/english_words.dart&#39;;
 </code></pre><p>そうすると、今はまだ使っていないので当たり前なのですが、利用されていませんという表示になっています。</p>
 <p>先ほど記述した<code>Hello World</code>の代わりに、<code>english_words</code>を使ってランダムな英単語を表示させていきます。</p>
 <p><img src="https://lh3.googleusercontent.com/pw/ACtC-3e70ptDSMg1H5TTvyV-vvPQcrwXHQeA7X93_B58xl-VG2g1Lf2N6pHNQ66HxQrpBIv_-QgBbmAC93YiHuGpwFyGUdojfkIztI8Snp_s7zVVQpkPr5rDTnEMFJ1acbK54yEaiM8dilXfdZ7ijcARKD8NUQ=w174-h372-no?authuser=0" alt="english_words"></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MyApp</span> <span style="color:#66d9ef">extends</span> StatelessWidget {
-  <span style="color:#960050;background-color:#1e0010">@</span>override
-  Widget build(BuildContext context) {
-    <span style="color:#66d9ef">final</span> wordPair <span style="color:#f92672">=</span> WordPair.random();
-
-    <span style="color:#66d9ef">return</span> MaterialApp(
-      title: <span style="color:#e6db74">&#39;Welcom to Flutter&#39;</span>,
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text(<span style="color:#e6db74">&#39;Welcome to Flutter&#39;</span>),
-        ),
-        body: Center(
-          child: Text(wordPair.asPascalCase),
-        ),
-      ),
-    );
-  }
-}
-</code></pre></div><p><code>final wordPair = WordPair.random();</code>でランダムな単語のペアを生成し、その単語のペアを<code>wordPair.asPascalCase</code>でパスカルケース（キャメルケース）で表示しています。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dart" data-lang="dart"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MyApp</span> <span style="color:#66d9ef">extends</span> StatelessWidget {
+</span></span><span style="display:flex;"><span>  <span style="color:#960050;background-color:#1e0010">@</span>override
+</span></span><span style="display:flex;"><span>  Widget build(BuildContext context) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">final</span> wordPair <span style="color:#f92672">=</span> WordPair.random();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> MaterialApp(
+</span></span><span style="display:flex;"><span>      title: <span style="color:#e6db74">&#39;Welcom to Flutter&#39;</span>,
+</span></span><span style="display:flex;"><span>      home: Scaffold(
+</span></span><span style="display:flex;"><span>        appBar: AppBar(
+</span></span><span style="display:flex;"><span>          title: Text(<span style="color:#e6db74">&#39;Welcome to Flutter&#39;</span>),
+</span></span><span style="display:flex;"><span>        ),
+</span></span><span style="display:flex;"><span>        body: Center(
+</span></span><span style="display:flex;"><span>          child: Text(wordPair.asPascalCase),
+</span></span><span style="display:flex;"><span>        ),
+</span></span><span style="display:flex;"><span>      ),
+</span></span><span style="display:flex;"><span>    );
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p><code>final wordPair = WordPair.random();</code>でランダムな単語のペアを生成し、その単語のペアを<code>wordPair.asPascalCase</code>でパスカルケース（キャメルケース）で表示しています。</p>
 <p>ホットリロードが走るたびに、ランダムな文字列が表示されることが確認できると思います。</p>
 <h1 id="step3-stateful-widgetの追加">Step3 Stateful widgetの追加</h1>
 <p>今まで使っていたのはステートレスウィジェットと呼ばれるもので、プロパティは変更できず、不変のものとのこと！</p>
@@ -270,82 +268,82 @@ VSCodeのプラグインが入っていればコードを保存する(⌘ + S)�
 </ul>
 <p>このステップでは、<code>RandomWords</code>を作り、そのステートクラスである<code>_RandomWordsState</code>を作成、それを既存の<code>MyApp</code>（ステートレスウィジェット）の子として<code>WordsRandom</code>を利用します！</p>
 <p>main.dartの最後尾にカーソルを移動し、</p>
-<pre><code>stful
+<pre tabindex="0"><code>stful
 </code></pre><p>と入力すると、以下のようにStateful Widgetを作るために必要なボイラープレートコードを自動生成してくれます！（便利！）</p>
 <p><img src="https://lh3.googleusercontent.com/pw/ACtC-3cN-d4Rc7TX0mV6EWDdB3RQp004f-PMp3QyGl9o0vJ9X13EFBPg8DslFBWMnlZ8jVgmOKUPR5i7fi5rvZl5Y6AmIA7GSIkX7Op-VVN15SIKrjsaxwaTeJdLp_TcQPh2039ErkYLS_jSiw4q1dqfUHIkFQ=w704-h540-no?authuser=0" alt="stful"></p>
 <p>このカーソルの状態のまま、ウィジェット名<code>RandomWords</code>を入力します。</p>
 <p>すると以下のような形になると思います。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">RandomWords</span> <span style="color:#66d9ef">extends</span> StatefulWidget {
-  <span style="color:#960050;background-color:#1e0010">@</span>override
-  _RandomWordsState createState() <span style="color:#f92672">=&gt;</span> _RandomWordsState();
-}
-
-<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">_RandomWordsState</span> <span style="color:#66d9ef">extends</span> State<span style="color:#f92672">&lt;</span>RandomWords<span style="color:#f92672">&gt;</span> {
-  <span style="color:#960050;background-color:#1e0010">@</span>override
-  Widget build(BuildContext context) {
-    <span style="color:#66d9ef">return</span> Container(
-      
-    );
-  }
-}
-</code></pre></div><p><code>State</code>クラスの前に<code>_(アンダースコア)</code>がついていますが、これはDart言語でプライバシー強化するためのもので、</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dart" data-lang="dart"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">RandomWords</span> <span style="color:#66d9ef">extends</span> StatefulWidget {
+</span></span><span style="display:flex;"><span>  <span style="color:#960050;background-color:#1e0010">@</span>override
+</span></span><span style="display:flex;"><span>  _RandomWordsState createState() <span style="color:#f92672">=&gt;</span> _RandomWordsState();
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">_RandomWordsState</span> <span style="color:#66d9ef">extends</span> State<span style="color:#f92672">&lt;</span>RandomWords<span style="color:#f92672">&gt;</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#960050;background-color:#1e0010">@</span>override
+</span></span><span style="display:flex;"><span>  Widget build(BuildContext context) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> Container(
+</span></span><span style="display:flex;"><span>      
+</span></span><span style="display:flex;"><span>    );
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p><code>State</code>クラスの前に<code>_(アンダースコア)</code>がついていますが、これはDart言語でプライバシー強化するためのもので、</p>
 <p>これはStateオブジェクトのベストプラクティスとして推奨されているようです。</p>
 <p>アプリのロジックのほとんどは<code>_RandomWordsState</code>にあり、<code>RandomWords</code>の状態を保持し続け、生成された単語ペアのリストを保存し、ユーザーがスクロールすると無限に増えていきます。</p>
 <p><code>_RandomWordsState</code>の<code>build</code>メソッドを以下のように更新します。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">_RandomWordsState</span> <span style="color:#66d9ef">extends</span> State<span style="color:#f92672">&lt;</span>RandomWords<span style="color:#f92672">&gt;</span> {
-  <span style="color:#960050;background-color:#1e0010">@</span>override
-  Widget build(BuildContext context) {
-    <span style="color:#66d9ef">final</span> wordPair <span style="color:#f92672">=</span> WordPair.random();
-    <span style="color:#66d9ef">return</span> Text(wordPair.asPascalCase);
-  }
-}
-</code></pre></div><p>そして、今回作った<code>RandomWords</code>を<code>MyApp</code>で使うように修正します。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MyApp</span> <span style="color:#66d9ef">extends</span> StatelessWidget {
-  <span style="color:#960050;background-color:#1e0010">@</span>override
-  Widget build(BuildContext context) {
-    <span style="color:#66d9ef">return</span> MaterialApp(
-      title: <span style="color:#e6db74">&#39;Welcom to Flutter&#39;</span>,
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text(<span style="color:#e6db74">&#39;Welcome to Flutter&#39;</span>),
-        ),
-        body: Center(
-          child: RandomWords(),
-        ),
-      ),
-    );
-  }
-}
-</code></pre></div><h1 id="step4-無限スクロールするlistviewを作る">Step4 無限スクロールするListViewを作る</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dart" data-lang="dart"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">_RandomWordsState</span> <span style="color:#66d9ef">extends</span> State<span style="color:#f92672">&lt;</span>RandomWords<span style="color:#f92672">&gt;</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#960050;background-color:#1e0010">@</span>override
+</span></span><span style="display:flex;"><span>  Widget build(BuildContext context) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">final</span> wordPair <span style="color:#f92672">=</span> WordPair.random();
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> Text(wordPair.asPascalCase);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>そして、今回作った<code>RandomWords</code>を<code>MyApp</code>で使うように修正します。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dart" data-lang="dart"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MyApp</span> <span style="color:#66d9ef">extends</span> StatelessWidget {
+</span></span><span style="display:flex;"><span>  <span style="color:#960050;background-color:#1e0010">@</span>override
+</span></span><span style="display:flex;"><span>  Widget build(BuildContext context) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> MaterialApp(
+</span></span><span style="display:flex;"><span>      title: <span style="color:#e6db74">&#39;Welcom to Flutter&#39;</span>,
+</span></span><span style="display:flex;"><span>      home: Scaffold(
+</span></span><span style="display:flex;"><span>        appBar: AppBar(
+</span></span><span style="display:flex;"><span>          title: Text(<span style="color:#e6db74">&#39;Welcome to Flutter&#39;</span>),
+</span></span><span style="display:flex;"><span>        ),
+</span></span><span style="display:flex;"><span>        body: Center(
+</span></span><span style="display:flex;"><span>          child: RandomWords(),
+</span></span><span style="display:flex;"><span>        ),
+</span></span><span style="display:flex;"><span>      ),
+</span></span><span style="display:flex;"><span>    );
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h1 id="step4-無限スクロールするlistviewを作る">Step4 無限スクロールするListViewを作る</h1>
 <p><code>_RandomWordsState</code>を変更し、ユーザーがスクロールするたびに無限に単語のペアを生成し表示させていきます。</p>
 <p><code>ListView</code>の<code>builder factory constror</code>を利用すると、必要に応じてリストのビューを構築することができます。</p>
 <p><code>english_words</code>のランダムで作られた単語のペアを保存するために、<code>_RandomWordsState</code>クラスに<code>_suggestions</code>というリストと、フォントサイズを大きくするために<code>_biggerFont</code>を用意します。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">_RandomWordsState</span> <span style="color:#66d9ef">extends</span> State<span style="color:#f92672">&lt;</span>RandomWords<span style="color:#f92672">&gt;</span> {
-  <span style="color:#66d9ef">final</span> _suggestions <span style="color:#f92672">=</span> <span style="color:#f92672">&lt;</span>WordPair<span style="color:#f92672">&gt;</span>[];
-  <span style="color:#66d9ef">final</span> _biggerFont <span style="color:#f92672">=</span> TextStyle(fontSize: <span style="color:#ae81ff">18</span>);
-...
-</code></pre></div><p>次に、<code>_suggestions</code>をListViewとして表示するために<code>_buildSuggestions()</code>というメソッドを追加していきます。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dart" data-lang="dart"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">_RandomWordsState</span> <span style="color:#66d9ef">extends</span> State<span style="color:#f92672">&lt;</span>RandomWords<span style="color:#f92672">&gt;</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">final</span> _suggestions <span style="color:#f92672">=</span> <span style="color:#f92672">&lt;</span>WordPair<span style="color:#f92672">&gt;</span>[];
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">final</span> _biggerFont <span style="color:#f92672">=</span> TextStyle(fontSize: <span style="color:#ae81ff">18</span>);
+</span></span><span style="display:flex;"><span>...
+</span></span></code></pre></div><p>次に、<code>_suggestions</code>をListViewとして表示するために<code>_buildSuggestions()</code>というメソッドを追加していきます。</p>
 <p>ListViewにはitemBuilderというものがあり、これを実装するとリストを作ることができるそう！</p>
 <p>itemBuilderには2つのパラメータ(BuildContextと行イテレータ)が渡されます。</p>
 <p>イテレータは0から始まり、関数が呼び出されるたびにインクリメントします。</p>
 <p><code>_RandomWordsState</code>クラスに<code>_buildSuggestions() </code>を実装していきましょう！</p>
 <p>※ここではまだ<code>_buildRow</code>を実装していないのでエラーが表示されますが気にせず進みます。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart">  Widget _buildSuggestions() {
-    <span style="color:#66d9ef">return</span> ListView.builder(
-      padding: EdgeInsets.all(<span style="color:#ae81ff">16.0</span>),
-      itemBuilder: <span style="color:#75715e">/*1*/</span>　(BuildContext context, <span style="color:#66d9ef">int</span> i) {
-        <span style="color:#66d9ef">if</span> (i.isOdd) <span style="color:#66d9ef">return</span> Divider();　<span style="color:#75715e">/*2*/</span>
-
-        <span style="color:#66d9ef">final</span> index <span style="color:#f92672">=</span> i <span style="color:#f92672">~/</span> <span style="color:#ae81ff">2</span>;　<span style="color:#75715e">/*3*/</span>
-
-        <span style="color:#66d9ef">if</span> (index <span style="color:#f92672">&gt;=</span> _suggestions.length) {
-          _suggestions.addAll(generateWordPairs().take(<span style="color:#ae81ff">10</span>));　<span style="color:#75715e">/*4*/</span>
-        }
-        <span style="color:#66d9ef">return</span> _buildRow(_suggestions[index]);
-      },
-    );
-  }
-</code></pre></div><p>/<em>1</em>/　itemBuilderのコールバックは生成された単語のペアごとに1回呼び出される。
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dart" data-lang="dart"><span style="display:flex;"><span>  Widget _buildSuggestions() {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> ListView.builder(
+</span></span><span style="display:flex;"><span>      padding: EdgeInsets.all(<span style="color:#ae81ff">16.0</span>),
+</span></span><span style="display:flex;"><span>      itemBuilder: <span style="color:#75715e">/*1*/</span><span style="color:#960050;background-color:#1e0010">　</span>(BuildContext context, <span style="color:#66d9ef">int</span> i) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (i.isOdd) <span style="color:#66d9ef">return</span> Divider();<span style="color:#960050;background-color:#1e0010">　</span><span style="color:#75715e">/*2*/</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">final</span> index <span style="color:#f92672">=</span> i <span style="color:#f92672">~/</span> <span style="color:#ae81ff">2</span>;<span style="color:#960050;background-color:#1e0010">　</span><span style="color:#75715e">/*3*/</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (index <span style="color:#f92672">&gt;=</span> _suggestions.length) {
+</span></span><span style="display:flex;"><span>          _suggestions.addAll(generateWordPairs().take(<span style="color:#ae81ff">10</span>));<span style="color:#960050;background-color:#1e0010">　</span><span style="color:#75715e">/*4*/</span>
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> _buildRow(_suggestions[index]);
+</span></span><span style="display:flex;"><span>      },
+</span></span><span style="display:flex;"><span>    );
+</span></span><span style="display:flex;"><span>  }
+</span></span></code></pre></div><p>/<em>1</em>/　itemBuilderのコールバックは生成された単語のペアごとに1回呼び出される。
 偶数行の時は、単語のペアを表示する<code>ListTitle</code>行を追加
 機数行の時は、仕切りの線である<code>Divider</code>Widgetを追加</p>
 <p>/<em>2</em>/ ListViewの各行の前に高さ1pxの仕切り線を追加</p>
@@ -355,34 +353,34 @@ VSCodeのプラグインが入っていればコードを保存する(⌘ + S)�
 <p>/<em>4</em>/　使用可能な単語のペアの最後に達したら、さらに10個追加して<code>_suggestions</code>に追加する</p>
 <p>次に、<code>_buildRow</code> 関数を作成していきます。</p>
 <p><code>_RandomWordsState</code>に追加します。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart">  Widget _buildRow(WordPair pair) {
-    <span style="color:#66d9ef">return</span> ListTile(
-      title: Text(
-        pair.asPascalCase,
-        style: _biggerFont,
-      ),
-    );
-  }
-</code></pre></div><p>これは単語のペアから<code>ListTitle</code>を作り、先ほど作った<code>_biggerFont</code>を<code>style</code>として当てています。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dart" data-lang="dart"><span style="display:flex;"><span>  Widget _buildRow(WordPair pair) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> ListTile(
+</span></span><span style="display:flex;"><span>      title: Text(
+</span></span><span style="display:flex;"><span>        pair.asPascalCase,
+</span></span><span style="display:flex;"><span>        style: _biggerFont,
+</span></span><span style="display:flex;"><span>      ),
+</span></span><span style="display:flex;"><span>    );
+</span></span><span style="display:flex;"><span>  }
+</span></span></code></pre></div><p>これは単語のペアから<code>ListTitle</code>を作り、先ほど作った<code>_biggerFont</code>を<code>style</code>として当てています。</p>
 <p>次に、<code>_RandomWordsState</code>クラスで単語生成クラスを直接呼び出すのではなく、<code>_buildSuggestions()</code>を使用するように<code>build()</code>を更新します。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart">  <span style="color:#960050;background-color:#1e0010">@</span>override
-  Widget build(BuildContext context) {
-    <span style="color:#66d9ef">return</span> Scaffold(
-      appBar: AppBar(title: Text(<span style="color:#e6db74">&#39;Startup Name Generator&#39;</span>)),
-      body: _buildSuggestions(),
-    );
-  }
-</code></pre></div><p>最後に<code>MyApp</code>クラスを修正します。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MyApp</span> <span style="color:#66d9ef">extends</span> StatelessWidget {
-  <span style="color:#960050;background-color:#1e0010">@</span>override
-  Widget build(BuildContext context) {
-    <span style="color:#66d9ef">return</span> MaterialApp(
-      title: <span style="color:#e6db74">&#39;Startup Name Generator&#39;</span>,
-      home: RandomWords(),
-    );
-  }
-}
-</code></pre></div><p>タイトルを変更し、homeを<code>RandomWords()</code>に変更しました。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dart" data-lang="dart"><span style="display:flex;"><span>  <span style="color:#960050;background-color:#1e0010">@</span>override
+</span></span><span style="display:flex;"><span>  Widget build(BuildContext context) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> Scaffold(
+</span></span><span style="display:flex;"><span>      appBar: AppBar(title: Text(<span style="color:#e6db74">&#39;Startup Name Generator&#39;</span>)),
+</span></span><span style="display:flex;"><span>      body: _buildSuggestions(),
+</span></span><span style="display:flex;"><span>    );
+</span></span><span style="display:flex;"><span>  }
+</span></span></code></pre></div><p>最後に<code>MyApp</code>クラスを修正します。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dart" data-lang="dart"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MyApp</span> <span style="color:#66d9ef">extends</span> StatelessWidget {
+</span></span><span style="display:flex;"><span>  <span style="color:#960050;background-color:#1e0010">@</span>override
+</span></span><span style="display:flex;"><span>  Widget build(BuildContext context) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> MaterialApp(
+</span></span><span style="display:flex;"><span>      title: <span style="color:#e6db74">&#39;Startup Name Generator&#39;</span>,
+</span></span><span style="display:flex;"><span>      home: RandomWords(),
+</span></span><span style="display:flex;"><span>    );
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>タイトルを変更し、homeを<code>RandomWords()</code>に変更しました。</p>
 <p>アプリを再起動してみてください！</p>
 <p>動作しているツイートをぶら下げておきます！</p>
 <p><a href="https://twitter.com/tsuzuki817/status/1370050258391105538?ref_src=twsrc%5Etfw">https://twitter.com/tsuzuki817/status/1370050258391105538?ref_src=twsrc%5Etfw</a></p>
