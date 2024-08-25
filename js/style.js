@@ -1,8 +1,8 @@
-fetch("header.html")
+fetch("https://tsuzukihashi.github.io/header.html")
   .then((response) => response.text())
   .then((data) => (document.querySelector("#header").innerHTML = data));
 
-fetch("footer.html")
+fetch("https://tsuzukihashi.github.io/footer.html")
   .then((response) => response.text())
   .then((data) => (document.querySelector("#footer").innerHTML = data));
 
