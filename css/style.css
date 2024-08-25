@@ -28,6 +28,10 @@ a img:hover {
     opacity: 0.8;
 }
 
+a img {
+    border-radius: 4px
+}
+
 .underline {
     border-bottom: 3px solid var(--base-color);
     padding-bottom: 0.5rem;
