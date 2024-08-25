@@ -4,43 +4,43 @@
     <title>Flutterチュートリアルやってみた part1 // 愚直プログラマ</title>
     <link rel="shortcut icon" href="/favicon.ico" />
     <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.110.0">
+    <meta name="generator" content="Hugo 0.133.0">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Ryo Tsuzukihashi" />
     <meta name="description" content="" />
-    <link rel="stylesheet" href="https://www.tsuzuki817.com/css/main.min.4ecfaf0fad326fd2372656e8f93c8e08fdf9cc68303b415113906ec014c50acd.css" />
+    <link rel="stylesheet" href="https://www.tsuzuki817.com/css/main.min.037211e1acabe99604b0f199831be7bf9fa133c6f2efc8f507c04e6cddf9feb1.css" />
 
     
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-130046973-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-    <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Flutterチュートリアルやってみた part1"/>
-<meta name="twitter:description" content="参考 作業リポジトリ =&gt; https://github.com/tsuzukihashi/flutter-tutorial-part01 環境 作業日: 2020/03/07 OS: macOS Big Sur 11.2.1 PC: MacBook Pro (13-inch, M1, 2020) 初めに Flutterの勉強をするには公式のチュートリアルをやるのが一番だという情報を得たのでやっていき！
-このチュートリアルでは、リストの無限スクロールをやりました。
-Step1 アプリを作る Flutterのプロジェクトを新規に作ります。
-lib/main.dartの中身を一度全て削除し、以下のように画面中央に&quot;Hello World&quot;と表示するように書き換えます。
-import &#39;package:flutter/material.dart&#39;; void main() =&gt; runApp(MyApp()); class MyApp extends StatelessWidget { @override Widget build(BuildContext context) { return MaterialApp( title: &#39;Welcom to Flutter&#39;, home: Scaffold( appBar: AppBar( title: Text(&#39;Welcome to Flutter&#39;), ), body: Center( child: Text(&#39;Hello World&#39;), ), ), ); } } コードをコピペした際に、インデントがズレた時の対処法がありましたが、 VSCodeのプラグインが入っていればコードを保存する(⌘ &#43; S)をするたびにフォーマットが走っていました。"/>
+  
+    
+      
+    
+  
 
-    <meta property="og:title" content="Flutterチュートリアルやってみた part1" />
-<meta property="og:description" content="参考 作業リポジトリ =&gt; https://github.com/tsuzukihashi/flutter-tutorial-part01 環境 作業日: 2020/03/07 OS: macOS Big Sur 11.2.1 PC: MacBook Pro (13-inch, M1, 2020) 初めに Flutterの勉強をするには公式のチュートリアルをやるのが一番だという情報を得たのでやっていき！
+
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Flutterチュートリアルやってみた part1">
+  <meta name="twitter:description" content="参考 作業リポジトリ =&gt; https://github.com/tsuzukihashi/flutter-tutorial-part01 環境 作業日: 2020/03/07 OS: macOS Big Sur 11.2.1 PC: MacBook Pro (13-inch, M1, 2020) 初めに Flutterの勉強をするには公式のチュートリアルをやるのが一番だという情報を得たのでやっていき！
 このチュートリアルでは、リストの無限スクロールをやりました。
 Step1 アプリを作る Flutterのプロジェクトを新規に作ります。
-lib/main.dartの中身を一度全て削除し、以下のように画面中央に&quot;Hello World&quot;と表示するように書き換えます。
-import &#39;package:flutter/material.dart&#39;; void main() =&gt; runApp(MyApp()); class MyApp extends StatelessWidget { @override Widget build(BuildContext context) { return MaterialApp( title: &#39;Welcom to Flutter&#39;, home: Scaffold( appBar: AppBar( title: Text(&#39;Welcome to Flutter&#39;), ), body: Center( child: Text(&#39;Hello World&#39;), ), ), ); } } コードをコピペした際に、インデントがズレた時の対処法がありましたが、 VSCodeのプラグインが入っていればコードを保存する(⌘ &#43; S)をするたびにフォーマットが走っていました。" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.tsuzuki817.com/posts/flutter/flutter-tutorial-part1/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-03-04T04:08:10+09:00" />
-<meta property="article:modified_time" content="2021-03-04T04:08:10+09:00" />
+lib/main.dartの中身を一度全て削除し、以下のように画面中央に&#34;Hello World&#34;と表示するように書き換えます。
+import &#39;package:flutter/material.dart&#39;; void main() =&gt; runApp(MyApp()); class MyApp extends StatelessWidget { @override Widget build(BuildContext context) { return MaterialApp( title: &#39;Welcom to Flutter&#39;, home: Scaffold( appBar: AppBar( title: Text(&#39;Welcome to Flutter&#39;), ), body: Center( child: Text(&#39;Hello World&#39;), ), ), ); } } コードをコピペした際に、インデントがズレた時の対処法がありましたが、 VSCodeのプラグインが入っていればコードを保存する(⌘ &#43; S)をするたびにフォーマットが走っていました。">
+
+    <meta property="og:url" content="https://www.tsuzuki817.com/posts/flutter/flutter-tutorial-part1/">
+  <meta property="og:site_name" content="愚直プログラマ">
+  <meta property="og:title" content="Flutterチュートリアルやってみた part1">
+  <meta property="og:description" content="参考 作業リポジトリ =&gt; https://github.com/tsuzukihashi/flutter-tutorial-part01 環境 作業日: 2020/03/07 OS: macOS Big Sur 11.2.1 PC: MacBook Pro (13-inch, M1, 2020) 初めに Flutterの勉強をするには公式のチュートリアルをやるのが一番だという情報を得たのでやっていき！
+このチュートリアルでは、リストの無限スクロールをやりました。
+Step1 アプリを作る Flutterのプロジェクトを新規に作ります。
+lib/main.dartの中身を一度全て削除し、以下のように画面中央に&#34;Hello World&#34;と表示するように書き換えます。
+import &#39;package:flutter/material.dart&#39;; void main() =&gt; runApp(MyApp()); class MyApp extends StatelessWidget { @override Widget build(BuildContext context) { return MaterialApp( title: &#39;Welcom to Flutter&#39;, home: Scaffold( appBar: AppBar( title: Text(&#39;Welcome to Flutter&#39;), ), body: Center( child: Text(&#39;Hello World&#39;), ), ), ); } } コードをコピペした際に、インデントがズレた時の対処法がありましたが、 VSCodeのプラグインが入っていればコードを保存する(⌘ &#43; S)をするたびにフォーマットが走っていました。">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2021-03-04T04:08:10+09:00">
+    <meta property="article:modified_time" content="2021-03-04T04:08:10+09:00">
+    <meta property="article:tag" content="Flutter">
 
 
   </head>
@@ -49,24 +49,18 @@ import &#39;package:flutter/material.dart&#39;; void main() =&gt; runApp(MyApp()
       <a href="https://www.tsuzuki817.com/"><img class="app-header-avatar" src="/images/profile.jpg" alt="Ryo Tsuzukihashi" /></a>
       <h1>愚直プログラマ</h1>
       <nav class="app-header-menu">
-          <a class="app-header-menu-item" href="/">Home</a>
+          <a class="app-header-menu-item" href="/">ホーム🏠</a>
             /
           
-          <a class="app-header-menu-item" href="/tags/">Tags</a>
+          <a class="app-header-menu-item" href="https://qiita.com/tsuzuki817">Qiita🏢</a>
             /
           
-          <a class="app-header-menu-item" href="https://zenn.dev/tsuzuki817">Zenn</a>
+          <a class="app-header-menu-item" href="https://zenn.dev/tsuzuki817">Zenn📖</a>
             /
           
-          <a class="app-header-menu-item" href="https://qiita.com/tsuzuki817">Qiita</a>
-            /
-          
-          <a class="app-header-menu-item" href="https://apps.apple.com/jp/developer/ryo-tsudukihashi/id1320583602?l">iOSアプリ一覧</a>
-            /
-          
-          <a class="app-header-menu-item" href="https://play.google.com/store/apps/developer?id=KamitsureLab">Androidアプリ一覧</a>
+          <a class="app-header-menu-item" href="https://apps.apple.com/jp/developer/ryo-tsudukihashi/id1320583602?l">リリース中のアプリ📱</a>
       </nav>
-      <p>DeNA iOS Engineer.</p>
+      <p>ZOZOTOWN iOS Engineer / Indie App Developer</p>
       <div class="app-header-social">
         
           <a target="_blank" href="https://github.com/tsuzukihashi" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
@@ -142,7 +136,7 @@ import &#39;package:flutter/material.dart&#39;; void main() =&gt; runApp(MyApp()
 <h1 id="step1-アプリを作る">Step1 アプリを作る</h1>
 <p>Flutterのプロジェクトを新規に作ります。</p>
 <p><code>lib/main.dart</code>の中身を一度全て削除し、以下のように画面中央に&quot;Hello World&quot;と表示するように書き換えます。</p>
-<p><img src="https://lh3.googleusercontent.com/pw/ACtC-3fDMeNtFSaVU3mOiyu-Mmqi_QriPegmSPFx_tuhiAiMLYx4lrZxDLmkp-IgIj1reQ-IOUB8CwTviYVIRxbAtDfj8bxh2FB3TgeNSh91tb3nggQa1Y_KT7azj5VlNyN1AtCssQvBY8ZbYhMzSJzmSkmp-w=w174-h372-no?authuser=0" alt="&amp;lsquo;helloworld&amp;rsquo;"></p>
+<p><img src="https://lh3.googleusercontent.com/pw/ACtC-3fDMeNtFSaVU3mOiyu-Mmqi_QriPegmSPFx_tuhiAiMLYx4lrZxDLmkp-IgIj1reQ-IOUB8CwTviYVIRxbAtDfj8bxh2FB3TgeNSh91tb3nggQa1Y_KT7azj5VlNyN1AtCssQvBY8ZbYhMzSJzmSkmp-w=w174-h372-no?authuser=0" alt="&lsquo;helloworld&rsquo;"></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dart" data-lang="dart"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#39;package:flutter/material.dart&#39;</span>;
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> main() <span style="color:#f92672">=&gt;</span> runApp(MyApp());
@@ -331,13 +325,13 @@ VSCodeのプラグインが入っていればコードを保存する(⌘ + S)�
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dart" data-lang="dart"><span style="display:flex;"><span>  Widget _buildSuggestions() {
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> ListView.builder(
 </span></span><span style="display:flex;"><span>      padding: EdgeInsets.all(<span style="color:#ae81ff">16.0</span>),
-</span></span><span style="display:flex;"><span>      itemBuilder: <span style="color:#75715e">/*1*/</span><span style="color:#960050;background-color:#1e0010">　</span>(BuildContext context, <span style="color:#66d9ef">int</span> i) {
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (i.isOdd) <span style="color:#66d9ef">return</span> Divider();<span style="color:#960050;background-color:#1e0010">　</span><span style="color:#75715e">/*2*/</span>
+</span></span><span style="display:flex;"><span>      itemBuilder: <span style="color:#75715e">/*1*/</span>　(BuildContext context, <span style="color:#66d9ef">int</span> i) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (i.isOdd) <span style="color:#66d9ef">return</span> Divider();　<span style="color:#75715e">/*2*/</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">final</span> index <span style="color:#f92672">=</span> i <span style="color:#f92672">~/</span> <span style="color:#ae81ff">2</span>;<span style="color:#960050;background-color:#1e0010">　</span><span style="color:#75715e">/*3*/</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">final</span> index <span style="color:#f92672">=</span> i <span style="color:#f92672">~/</span> <span style="color:#ae81ff">2</span>;　<span style="color:#75715e">/*3*/</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (index <span style="color:#f92672">&gt;=</span> _suggestions.length) {
-</span></span><span style="display:flex;"><span>          _suggestions.addAll(generateWordPairs().take(<span style="color:#ae81ff">10</span>));<span style="color:#960050;background-color:#1e0010">　</span><span style="color:#75715e">/*4*/</span>
+</span></span><span style="display:flex;"><span>          _suggestions.addAll(generateWordPairs().take(<span style="color:#ae81ff">10</span>));　<span style="color:#75715e">/*4*/</span>
 </span></span><span style="display:flex;"><span>        }
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> _buildRow(_suggestions[index]);
 </span></span><span style="display:flex;"><span>      },
