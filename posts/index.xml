@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on 愚直プログラマ</title>
-    <link>https://www.tsuzuki817.com/posts/</link>
+    <link>https://tsuzukihashi.github.io/posts/</link>
     <description>Recent content in Posts on 愚直プログラマ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 Sep 2021 20:55:48 +0900</lastBuildDate><atom:link href="https://www.tsuzuki817.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Sep 2021 20:55:48 +0900</lastBuildDate><atom:link href="https://tsuzukihashi.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>【3年連続】iOSDC2021に参加してきました！【キリ番賞】</title>
-      <link>https://www.tsuzuki817.com/posts/iosdc/iosdc2021-entry/</link>
+      <link>https://tsuzukihashi.github.io/posts/iosdc/iosdc2021-entry/</link>
       <pubDate>Sun, 19 Sep 2021 20:55:48 +0900</pubDate>
       
-      <guid>https://www.tsuzuki817.com/posts/iosdc/iosdc2021-entry/</guid>
+      <guid>https://tsuzukihashi.github.io/posts/iosdc/iosdc2021-entry/</guid>
       <description>iOSDCトークン探しから解放されました @tsuzuki817です！
 今年もiOSDC2021に参加してきました！
 今年もノベルティがとても豪華で、始まる前からテンションが上がりました！ 個人的ベストノベルティはheyのツバメようかんです。ありがとうございました。
@@ -28,10 +28,10 @@ iOSチャレンジ 去年はiOSDCチャレンジはなかったのですが、�
     
     <item>
       <title>Flutterチュートリアルやってみた part2</title>
-      <link>https://www.tsuzuki817.com/posts/flutter/flutter-tutorial-part2/</link>
+      <link>https://tsuzukihashi.github.io/posts/flutter/flutter-tutorial-part2/</link>
       <pubDate>Fri, 12 Mar 2021 04:08:10 +0900</pubDate>
       
-      <guid>https://www.tsuzuki817.com/posts/flutter/flutter-tutorial-part2/</guid>
+      <guid>https://tsuzukihashi.github.io/posts/flutter/flutter-tutorial-part2/</guid>
       <description>参考 作業リポジトリ =&amp;gt; https://github.com/tsuzukihashi/flutter-tutorial-part01 環境 作業日: 2020/03/12 OS: macOS Big Sur 11.2.1 PC: MacBook Pro (13-inch, M1, 2020) はじめに 前回に引き続きpart2をやっていきたいと思います。
 part2では画面の遷移とテーマカラーの変更がテーマのようです！
 前回までのコードは、こちらで！
@@ -54,10 +54,10 @@ Widget _buildRow(WordPair pair) { final alreadySaved = _saved.contains(pair); re
     
     <item>
       <title>Flutterチュートリアルやってみた part1</title>
-      <link>https://www.tsuzuki817.com/posts/flutter/flutter-tutorial-part1/</link>
+      <link>https://tsuzukihashi.github.io/posts/flutter/flutter-tutorial-part1/</link>
       <pubDate>Thu, 04 Mar 2021 04:08:10 +0900</pubDate>
       
-      <guid>https://www.tsuzuki817.com/posts/flutter/flutter-tutorial-part1/</guid>
+      <guid>https://tsuzukihashi.github.io/posts/flutter/flutter-tutorial-part1/</guid>
       <description>参考 作業リポジトリ =&amp;gt; https://github.com/tsuzukihashi/flutter-tutorial-part01 環境 作業日: 2020/03/07 OS: macOS Big Sur 11.2.1 PC: MacBook Pro (13-inch, M1, 2020) 初めに Flutterの勉強をするには公式のチュートリアルをやるのが一番だという情報を得たのでやっていき！
 このチュートリアルでは、リストの無限スクロールをやりました。
 Step1 アプリを作る Flutterのプロジェクトを新規に作ります。
@@ -67,10 +67,10 @@ import &amp;#39;package:flutter/material.dart&amp;#39;; void main() =&amp;gt; ru
     
     <item>
       <title>iOSDC全動画制覇シリーズ 001</title>
-      <link>https://www.tsuzuki817.com/posts/iosdc/001/</link>
+      <link>https://tsuzukihashi.github.io/posts/iosdc/001/</link>
       <pubDate>Fri, 19 Feb 2021 00:40:05 +0900</pubDate>
       
-      <guid>https://www.tsuzuki817.com/posts/iosdc/001/</guid>
+      <guid>https://tsuzukihashi.github.io/posts/iosdc/001/</guid>
       <description>iOSDC Japan 2016 08/19 Track A / フルSwiftでバイクフリマアプリRIDEを作って得た学び / huin 記念すべき一本目! huinさんでフルSwiftでバイクフリマアプリRIDEを作って得た学びです。
 {スライド} {動画} {togetter}
 RIDE フルSwift　+ Redux の構成
@@ -85,10 +85,10 @@ APIモジュールはレスポンス（JSON）をモデルにして変換して�
     
     <item>
       <title>iOSエンジニアとして知見を広めたい件</title>
-      <link>https://www.tsuzuki817.com/posts/iosdc-all-first/</link>
+      <link>https://tsuzukihashi.github.io/posts/iosdc-all-first/</link>
       <pubDate>Wed, 17 Feb 2021 01:51:27 +0900</pubDate>
       
-      <guid>https://www.tsuzuki817.com/posts/iosdc-all-first/</guid>
+      <guid>https://tsuzukihashi.github.io/posts/iosdc-all-first/</guid>
       <description>こんにちは！
 最近はもっぱらflutterの勉強ばかりしています。
 flutterだけ勉強するのも良いのですが、iOSエンジニアとして世界を広げたいのでまず手始めにiOSDCの全動画を見てブログを書いていこうかと思っています。
@@ -100,10 +100,10 @@ https://www.youtube.com/c/iOSDCJapan/videos?view=0&amp;amp;sort=da&amp;amp;flow=
     
     <item>
       <title>Flutterで作ったプロジェクトのBundleID・PckageNameを変更する方法と対策</title>
-      <link>https://www.tsuzuki817.com/posts/flutter/flutter-package-bundle/</link>
+      <link>https://tsuzukihashi.github.io/posts/flutter/flutter-package-bundle/</link>
       <pubDate>Wed, 03 Feb 2021 00:17:05 +0900</pubDate>
       
-      <guid>https://www.tsuzuki817.com/posts/flutter/flutter-package-bundle/</guid>
+      <guid>https://tsuzukihashi.github.io/posts/flutter/flutter-package-bundle/</guid>
       <description>普通にVSCodeやコマンドからFlutterプロジェクトを作るとBundleID・PackageNameはcom.example.hogehoge のように指定されてしまいます。
 これを修正する方法を示すとともに、そうならないようにするVSCodeで開発している方向けの設定をご紹介します。
 すでに作ってしまった場合の修正方法 iOS iOSの場合は一つだけ変更すれば良いので楽です。 FlutterプロジェクトのiOSディレクトリに移動します。
@@ -126,10 +126,10 @@ Settings.jsonを開く ショートカットキーcommand + , organizationで検
     
     <item>
       <title>Flutter入門！</title>
-      <link>https://www.tsuzuki817.com/posts/flutter/entry-flutter/</link>
+      <link>https://tsuzukihashi.github.io/posts/flutter/entry-flutter/</link>
       <pubDate>Sat, 30 Jan 2021 04:08:10 +0900</pubDate>
       
-      <guid>https://www.tsuzuki817.com/posts/flutter/entry-flutter/</guid>
+      <guid>https://tsuzukihashi.github.io/posts/flutter/entry-flutter/</guid>
       <description>はじめに 兼ねてより気になっていたFlutterというものを始めようかと思います。
 2019年にヤフーに新卒入社した右も左もわからなかった自分が、運良くPayPayフリマのiOSチームに配属されて技術的にも人間的にも優れた先輩方に教わりながらiOSアプリ開発も少しずつできるようになってきました。
 Swiftでの個人アプリ開発もつづけ、そろそろAndroidも対応した物を作りたいという気持ちが僅かながら芽生えてきました。
@@ -160,10 +160,10 @@ open -a simulator と入力しても起動できるようです。（シラナ�
     
     <item>
       <title>Privacy Policy</title>
-      <link>https://www.tsuzuki817.com/posts/privacy-policy/</link>
+      <link>https://tsuzukihashi.github.io/posts/privacy-policy/</link>
       <pubDate>Fri, 29 Jan 2021 04:14:42 +0900</pubDate>
       
-      <guid>https://www.tsuzuki817.com/posts/privacy-policy/</guid>
+      <guid>https://tsuzukihashi.github.io/posts/privacy-policy/</guid>
       <description>プライバシーポリシー Ryo Tsuzukihashi は、以下のとおり個人情報保護方針を定め、個人情報保護の仕組みを構築し、個人情報保護の重要性の認識と取組みを徹底することにより、個人情報の保護を推進致します。
 個人情報の管理 Ryo Tsuzukihashi は、お客さまの個人情報を正確かつ最新の状態に保ち、個人情報への不正アクセス・紛失・破損・改ざん・漏洩などを防止するため、セキュリティシステムの維持・管理体制の整備徹底等の必要な措置を講じ、安全対策を実施し個人情報の厳重な管理を行ないます。
 個人情報の利用目的 お客さまからお預かりした個人情報は、各アプリ内でのデータ保存、ランキングのみに利用します。
@@ -177,10 +177,10 @@ open -a simulator と入力しても起動できるようです。（シラナ�
     
     <item>
       <title>リンク集</title>
-      <link>https://www.tsuzuki817.com/posts/test/</link>
+      <link>https://tsuzukihashi.github.io/posts/test/</link>
       <pubDate>Fri, 29 Jan 2021 04:08:10 +0900</pubDate>
       
-      <guid>https://www.tsuzuki817.com/posts/test/</guid>
+      <guid>https://tsuzukihashi.github.io/posts/test/</guid>
       <description>iOSアプリ開発しています。仕事でも個人でも
 SwiftUIが好物です。:dog:
 趣味 個人アプリ制作 写真撮影 ドット絵 SNSや作ったアプリのリンク集 twitter qiita github facebook hatena App Store Privacy Policy SkyCode </description>
