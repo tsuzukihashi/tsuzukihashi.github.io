@@ -1,19 +1,29 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>IOSDC2016 on 愚直プログラマ</title>
+    <title>iOSDC2016 on 愚直プログラマ</title>
     <link>https://www.tsuzuki817.com/tags/iosdc2016/</link>
-    <description>Recent content in IOSDC2016 on 愚直プログラマ</description>
-    <generator>Hugo</generator>
+    <description>Recent content in iOSDC2016 on 愚直プログラマ</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 19 Feb 2021 00:40:05 +0900</lastBuildDate>
-    <atom:link href="https://www.tsuzuki817.com/tags/iosdc2016/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 19 Feb 2021 00:40:05 +0900</lastBuildDate><atom:link href="https://www.tsuzuki817.com/tags/iosdc2016/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>iOSDC全動画制覇シリーズ 001</title>
       <link>https://www.tsuzuki817.com/posts/iosdc/001/</link>
       <pubDate>Fri, 19 Feb 2021 00:40:05 +0900</pubDate>
+      
       <guid>https://www.tsuzuki817.com/posts/iosdc/001/</guid>
-      <description>iOSDC Japan 2016 08/19 Track A / フルSwiftでバイクフリマアプリRIDEを作って得た学び / huin 記念すべき一本目! huinさんでフルSwiftでバイクフリマアプリRIDEを作って得た学びです。&#xA;{スライド} {動画} {togetter}&#xA;RIDE フルSwift　+ Redux の構成&#xA;開発期間3ヶ月&#xA;API部分だけをモジュール化をしている アプリからは認証情報（APIキー）を渡して必要なメソッドを呼ぶだけのシンプル構成だそうです。&#xA;APIモジュールはレスポンス（JSON）をモデルにして変換してくれている。&#xA;なぜこのような構成にしているのか？&#xA;アプリの都合をモデルに入れたくないとのこと！ Clean Architectureで言うところのEntityをフレームワークとして切り分けることで強制的に分離することにしている見たいです。&#xA;データはimmutableで定義している&#xA;データを加工して保持しておきたい場合などは、アプリ層でExtensionして実装している。</description>
+      <description>iOSDC Japan 2016 08/19 Track A / フルSwiftでバイクフリマアプリRIDEを作って得た学び / huin 記念すべき一本目! huinさんでフルSwiftでバイクフリマアプリRIDEを作って得た学びです。
+{スライド} {動画} {togetter}
+RIDE フルSwift　+ Redux の構成
+開発期間3ヶ月
+API部分だけをモジュール化をしている アプリからは認証情報（APIキー）を渡して必要なメソッドを呼ぶだけのシンプル構成だそうです。
+APIモジュールはレスポンス（JSON）をモデルにして変換してくれている。
+なぜこのような構成にしているのか？
+アプリの都合をモデルに入れたくないとのこと！ Clean Architectureで言うところのEntityをフレームワークとして切り分けることで強制的に分離することにしている見たいです。
+データはimmutableで定義している
+データを加工して保持しておきたい場合などは、アプリ層でExtensionして実装している。</description>
     </item>
+    
   </channel>
 </rss>

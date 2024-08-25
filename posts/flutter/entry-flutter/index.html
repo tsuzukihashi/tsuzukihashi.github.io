@@ -4,24 +4,28 @@
     <title>Flutter入門！ // 愚直プログラマ</title>
     <link rel="shortcut icon" href="/favicon.ico" />
     <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.133.0">
+    <meta name="generator" content="Hugo 0.110.0">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Ryo Tsuzukihashi" />
     <meta name="description" content="" />
-    <link rel="stylesheet" href="https://www.tsuzuki817.com/css/main.min.037211e1acabe99604b0f199831be7bf9fa133c6f2efc8f507c04e6cddf9feb1.css" />
+    <link rel="stylesheet" href="https://www.tsuzuki817.com/css/main.min.4ecfaf0fad326fd2372656e8f93c8e08fdf9cc68303b415113906ec014c50acd.css" />
 
     
-  
-    
-      
-    
-  
-
-
-    
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Flutter入門！">
-  <meta name="twitter:description" content="はじめに 兼ねてより気になっていたFlutterというものを始めようかと思います。
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-130046973-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Flutter入門！"/>
+<meta name="twitter:description" content="はじめに 兼ねてより気になっていたFlutterというものを始めようかと思います。
 2019年にヤフーに新卒入社した右も左もわからなかった自分が、運良くPayPayフリマのiOSチームに配属されて技術的にも人間的にも優れた先輩方に教わりながらiOSアプリ開発も少しずつできるようになってきました。
 Swiftでの個人アプリ開発もつづけ、そろそろAndroidも対応した物を作りたいという気持ちが僅かながら芽生えてきました。
 しかし、ネイティブで両方作るのは結構しんどいのでは？という気持ちもありまして、一粒で二度美味しいと評判のFlutterに手を出すことにしました。
@@ -46,12 +50,10 @@ flutter doctor というコマンドを利用します。これでflutterが使�
 なかったら、Create Android emulatorしたり、iOSの場合、terminalで
 open -a simulator と入力しても起動できるようです。（シラナカッタ）
 アプリを実行してみる 右上の再生マークをクリックして実行できます。
-以下のようにでもアプリが表示されればOK！ ">
+以下のようにでもアプリが表示されればOK！ "/>
 
-    <meta property="og:url" content="https://www.tsuzuki817.com/posts/flutter/entry-flutter/">
-  <meta property="og:site_name" content="愚直プログラマ">
-  <meta property="og:title" content="Flutter入門！">
-  <meta property="og:description" content="はじめに 兼ねてより気になっていたFlutterというものを始めようかと思います。
+    <meta property="og:title" content="Flutter入門！" />
+<meta property="og:description" content="はじめに 兼ねてより気になっていたFlutterというものを始めようかと思います。
 2019年にヤフーに新卒入社した右も左もわからなかった自分が、運良くPayPayフリマのiOSチームに配属されて技術的にも人間的にも優れた先輩方に教わりながらiOSアプリ開発も少しずつできるようになってきました。
 Swiftでの個人アプリ開発もつづけ、そろそろAndroidも対応した物を作りたいという気持ちが僅かながら芽生えてきました。
 しかし、ネイティブで両方作るのは結構しんどいのでは？という気持ちもありまして、一粒で二度美味しいと評判のFlutterに手を出すことにしました。
@@ -76,13 +78,11 @@ flutter doctor というコマンドを利用します。これでflutterが使�
 なかったら、Create Android emulatorしたり、iOSの場合、terminalで
 open -a simulator と入力しても起動できるようです。（シラナカッタ）
 アプリを実行してみる 右上の再生マークをクリックして実行できます。
-以下のようにでもアプリが表示されればOK！ ">
-  <meta property="og:locale" content="en_us">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2021-01-30T04:08:10+09:00">
-    <meta property="article:modified_time" content="2021-01-30T04:08:10+09:00">
-    <meta property="article:tag" content="Flutter">
+以下のようにでもアプリが表示されればOK！ " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.tsuzuki817.com/posts/flutter/entry-flutter/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-01-30T04:08:10+09:00" />
+<meta property="article:modified_time" content="2021-01-30T04:08:10+09:00" />
 
 
   </head>
@@ -91,18 +91,24 @@ open -a simulator と入力しても起動できるようです。（シラナ�
       <a href="https://www.tsuzuki817.com/"><img class="app-header-avatar" src="/images/profile.jpg" alt="Ryo Tsuzukihashi" /></a>
       <h1>愚直プログラマ</h1>
       <nav class="app-header-menu">
-          <a class="app-header-menu-item" href="/">ホーム🏠</a>
+          <a class="app-header-menu-item" href="/">Home</a>
             /
           
-          <a class="app-header-menu-item" href="https://qiita.com/tsuzuki817">Qiita🏢</a>
+          <a class="app-header-menu-item" href="/tags/">Tags</a>
             /
           
-          <a class="app-header-menu-item" href="https://zenn.dev/tsuzuki817">Zenn📖</a>
+          <a class="app-header-menu-item" href="https://zenn.dev/tsuzuki817">Zenn</a>
             /
           
-          <a class="app-header-menu-item" href="https://apps.apple.com/jp/developer/ryo-tsudukihashi/id1320583602?l">リリース中のアプリ📱</a>
+          <a class="app-header-menu-item" href="https://qiita.com/tsuzuki817">Qiita</a>
+            /
+          
+          <a class="app-header-menu-item" href="https://apps.apple.com/jp/developer/ryo-tsudukihashi/id1320583602?l">iOSアプリ一覧</a>
+            /
+          
+          <a class="app-header-menu-item" href="https://play.google.com/store/apps/developer?id=KamitsureLab">Androidアプリ一覧</a>
       </nav>
-      <p>ZOZOTOWN iOS Engineer / Indie App Developer</p>
+      <p>DeNA iOS Engineer.</p>
       <div class="app-header-social">
         
           <a target="_blank" href="https://github.com/tsuzukihashi" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
