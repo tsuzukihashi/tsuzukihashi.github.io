@@ -225,3 +225,143 @@ footer h5 {
     display: inline-block;
     color: var(--link-color);
 }
+
+/* ヘッダーのスタイル */
+#header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+#header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header h1 a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+#header .snsbox img {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#header nav {
+    display: flex;
+    align-items: center;
+}
+
+#header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+#header nav ul li {
+    margin-left: 20px;
+}
+
+#header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* メイン画像のスタイル */
+.mainimg {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.mainimg img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* コンテナのスタイル */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* その他のスタイル */
+.catch {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex: 1;
+    padding: 10px;
+}
+
+.col.span-4 {
+    flex: 0 0 33.3333%;
+}
+
+.col.span-12 {
+    flex: 0 0 100%;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* フッターのスタイル */
+#footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#footer p {
+    margin: 0;
+}
+
+/* ページトップボタンのスタイル */
+#pagetop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#pagetop a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+#pagetop a:hover {
+    background-color: #555;
+}
