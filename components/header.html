@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>tsuzuki817</title>
+        <link rel="stylesheet" media="all" href="../assets/css/ress.min.css" />
+        <link rel="stylesheet" media="all" href="../assets/css/style.css" />
+        <script src="../assets/js/jquery-3.6.0.min.js"></script>
+        <script src="../assets/js/style.js"></script>
+        <link rel="icon" href="../favicon.ico">
+        <style>
+            /* ヘッダーのスタイル */
+            #header {
+                background-color: #333;
+                color: #fff;
+                padding: 10px 0;
+            }
+
+            #header .container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #header .row {
+                width: 100%;
+            }
+
+            #header .head {
+                display: flex;
+                align-items: center;
+            }
+
+            #header h1 a {
+                color: #fff;
+                text-decoration: none;
+                font-size: 24px;
+                font-weight: bold;
+            }
+
+            #header .snsbox {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            }
+
+            #header .snsbox img {
+                width: 24px;
+                height: 24px;
+                margin-left: 10px;
+                cursor: pointer;
+            }
+
+            #header nav {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 10px;
+            }
+
+            #header nav ul {
+                list-style: none;
+                display: flex;
+                margin: 0;
+                padding: 0;
+            }
+
+            #header nav ul li {
+                margin-left: 20px;
+                white-space: nowrap; /* 改行を防ぐために追加 */
+            }
+
+            #header nav ul li a {
+                color: #fff;
+                text-decoration: none;
+                font-size: 18px;
+                padding: 5px 10px;
+                transition: background-color 0.3s, color 0.3s;
+            }
+
+            #header nav ul li a:hover {
+                background-color: #555;
+                color: #fff;
+                border-radius: 5px;
+            }
+
+            /* その他のスタイル */
+            .align-center {
+                display: flex;
+                align-items: center;
+            }
+
+            .text-right {
+                text-align: right;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- ヘッダーのインクルード -->
+        <div id="header"></div>
+        <script>
+        $(function() {
+            $("#header").load("../components/header.html");
+        });
+    </script>
+
+        <div class="mainimg">
+            <img src="../assets/img/base.jpg" alt="メイン画像">
+        </div>
+        <main>
+            <section>
+                <div class="container">
+                    <h2 class="catch">Works</h2>
+                    <div class="row">
+                        <div class="col span-4">
+                            <a href="../pages/works/travel_memory_map.html">
+                                <figure>
+                                    <img
+                                        src="../assets/img/travel_memory_map.jpeg"
+                                        alt="旅行思い出マップのイメージ">
+                                    <figcaption>旅行思い出マップ</figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- フッターのインクルード -->
+        <div id="footer"></div>
+        <script>
+        $(function() {
+            $("#footer").load("../components/footer.html");
+        });
+    </script>
+
+        <p id="pagetop"><a href="#">TOP</a></p>
+    </body>
+</html>
