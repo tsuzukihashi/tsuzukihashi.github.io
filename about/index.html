@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - tsuzuki817</title>
+    <meta name="description" content="tsuzuki817について。iOS開発者としての経歴、スキル、開発への想いをご紹介します。">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/animations.css">
+    
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="../favicon.ico">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <div class="loader-text">Loading About...</div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <a href="../" class="brand-link">
+                        <span class="brand-text">tsuzuki817</span>
+                    </a>
+                </div>
+                
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="../" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../portfolio/" class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../blog/" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./" class="nav-link active">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../contact/" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main about-main">
+        <!-- Hero Section -->
+        <section class="about-hero">
+            <div class="section-container">
+                <div class="hero-content">
+                    <div class="profile-section scroll-reveal">
+                        <div class="profile-avatar">
+                            <div class="avatar-placeholder">
+                                <div class="avatar-icon animate-float">👨‍💻</div>
+                            </div>
+                        </div>
+                        <div class="profile-info">
+                            <h1 class="profile-name">tsuzuki817</h1>
+                            <p class="profile-title">iOS Developer & Creator</p>
+                            <div class="profile-status">
+                                <span class="status-indicator"></span>
+                                <span class="status-text">Available for new projects</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-description scroll-reveal">
+                        <p class="description-text">
+                            個人開発者として30個以上のiOSアプリを開発・公開しています。<br>
+                            ユーザーの生活を豊かにするアプリケーションの開発に情熱を注いでいます。
+                        </p>
+                    </div>
+                    
+                    <div class="hero-stats scroll-reveal">
+                        <div class="stat-item" data-aos="zoom-in">
+                            <div class="stat-number" data-count="30">0</div>
+                            <div class="stat-label">Apps Published</div>
+                        </div>
+                        <div class="stat-item" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="stat-number" data-count="5">0</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-item" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="stat-number" data-count="1000">0</div>
+                            <div class="stat-label">Downloads</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title scroll-reveal">Skills & Technologies</h2>
+                    <p class="section-subtitle scroll-reveal">使用している技術とツール</p>
+                </div>
+                
+                <div class="skills-grid">
+                    <!-- Programming Languages -->
+                    <div class="skill-category scroll-reveal" data-aos="fade-up">
+                        <div class="category-icon">💻</div>
+                        <h3 class="category-title">Programming Languages</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Swift</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Objective-C</span>
+                                    <span class="skill-level">Intermediate</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="70"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">JavaScript</span>
+                                    <span class="skill-level">Intermediate</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="75"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Frameworks -->
+                    <div class="skill-category scroll-reveal" data-aos="fade-up" data-aos-delay="100">
+                        <div class="category-icon">🛠️</div>
+                        <h3 class="category-title">Frameworks & SDKs</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">SwiftUI</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">UIKit</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Core Data</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="80"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Design Tools -->
+                    <div class="skill-category scroll-reveal" data-aos="fade-up" data-aos-delay="200">
+                        <div class="category-icon">🎨</div>
+                        <h3 class="category-title">Design & Tools</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Figma</span>
+                                    <span class="skill-level">Intermediate</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="75"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Sketch</span>
+                                    <span class="skill-level">Intermediate</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="70"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Xcode</span>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="95"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="experience-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title scroll-reveal">Experience & Journey</h2>
+                    <p class="section-subtitle scroll-reveal">開発者としての歩み</p>
+                </div>
+                
+                <div class="timeline">
+                    <div class="timeline-item scroll-reveal-left">
+                        <div class="timeline-date">2020</div>
+                        <div class="timeline-content">
+                            <div class="timeline-icon">🚀</div>
+                            <h3>個人開発を開始</h3>
+                            <p>iOSアプリ開発に興味を持ち、独学でSwiftを学び始める。最初のアプリをApp Storeに公開し、個人開発者としてのキャリアをスタート。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item scroll-reveal-right">
+                        <div class="timeline-date">2021</div>
+                        <div class="timeline-content">
+                            <div class="timeline-icon">📱</div>
+                            <h3>初期のアプリ群を公開</h3>
+                            <p>ユーティリティ系のアプリを中心に、10個以上のアプリを開発・公開。ユーザーフィードバックを通じて開発スキルとUX設計能力を向上。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item scroll-reveal-left">
+                        <div class="timeline-date">2022</div>
+                        <div class="timeline-content">
+                            <div class="timeline-icon">🎯</div>
+                            <h3>専門性の向上</h3>
+                            <p>SwiftUIをマスターし、より洗練されたユーザーインターフェースを持つアプリを開発。Core DataやCloudKitを活用したデータ管理機能を実装。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item scroll-reveal-right">
+                        <div class="timeline-date">2023</div>
+                        <div class="timeline-content">
+                            <div class="timeline-icon">🌟</div>
+                            <h3>品質向上とユーザー拡大</h3>
+                            <p>アプリの品質向上に注力し、複数のアプリで高評価を獲得。ユーザー数の拡大とともに、より複雑な機能を持つアプリの開発に挑戦。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item scroll-reveal-left">
+                        <div class="timeline-date">2024</div>
+                        <div class="timeline-content">
+                            <div class="timeline-icon">📈</div>
+                            <h3>事業の発展</h3>
+                            <p>30個以上のアプリを公開し、累計ダウンロード数が1000回を突破。新しい技術の習得とより野心的なプロジェクトの立ち上げを開始。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item scroll-reveal-right">
+                        <div class="timeline-date">2025</div>
+                        <div class="timeline-content">
+                            <div class="timeline-icon">🚀</div>
+                            <h3>現在進行中</h3>
+                            <p>AI技術を活用した新しいアプリの開発と、既存アプリの機能拡張に取り組んでいます。また、開発ノウハウの共有にも力を入れています。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Philosophy Section -->
+        <section class="philosophy-section">
+            <div class="section-container">
+                <div class="philosophy-content">
+                    <div class="philosophy-text scroll-reveal">
+                        <h2 class="philosophy-title">Development Philosophy</h2>
+                        <div class="philosophy-description">
+                            <p>
+                                私の開発哲学は「使いやすさ」と「美しさ」の両立にあります。
+                                ユーザーにとって本当に価値のある機能を見極め、
+                                シンプルで直感的なユーザーインターフェースを提供することを大切にしています。
+                            </p>
+                            <p>
+                                また、個人開発の利点を活かし、小回りの利く開発とユーザーフィードバックへの
+                                迅速な対応を心がけています。技術的な挑戦と実用性のバランスを保ちながら、
+                                長く愛されるアプリケーションの開発を目指しています。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="philosophy-values scroll-reveal">
+                        <h3 class="values-title">Core Values</h3>
+                        <div class="values-grid">
+                            <div class="value-item" data-aos="fade-up">
+                                <div class="value-icon">🎯</div>
+                                <h4>User-Centric</h4>
+                                <p>ユーザーのニーズを最優先に考え、使いやすさを追求します</p>
+                            </div>
+                            <div class="value-item" data-aos="fade-up" data-aos-delay="100">
+                                <div class="value-icon">✨</div>
+                                <h4>Quality First</h4>
+                                <p>高品質なコードと洗練されたデザインにこだわります</p>
+                            </div>
+                            <div class="value-item" data-aos="fade-up" data-aos-delay="200">
+                                <div class="value-icon">🚀</div>
+                                <h4>Innovation</h4>
+                                <p>新しい技術と創造的なアプローチで課題解決に取り組みます</p>
+                            </div>
+                            <div class="value-item" data-aos="fade-up" data-aos-delay="300">
+                                <div class="value-icon">🤝</div>
+                                <h4>Community</h4>
+                                <p>開発コミュニティとの交流を通じて学び、貢献します</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section class="achievements-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title scroll-reveal">Achievements & Highlights</h2>
+                    <p class="section-subtitle scroll-reveal">主な成果と実績</p>
+                </div>
+                
+                <div class="achievements-grid">
+                    <div class="achievement-item scroll-reveal" data-aos="fade-up">
+                        <div class="achievement-icon">🏆</div>
+                        <div class="achievement-content">
+                            <h3>30+ Apps Published</h3>
+                            <p>5年間で30個以上のiOSアプリをApp Storeに公開し、幅広いジャンルでユーザーにサービスを提供</p>
+                        </div>
+                    </div>
+                    
+                    <div class="achievement-item scroll-reveal" data-aos="fade-up" data-aos-delay="100">
+                        <div class="achievement-icon">⭐</div>
+                        <div class="achievement-content">
+                            <h3>High User Ratings</h3>
+                            <p>複数のアプリで4.5星以上の高評価を獲得し、ユーザーから高い満足度を得ている</p>
+                        </div>
+                    </div>
+                    
+                    <div class="achievement-item scroll-reveal" data-aos="fade-up" data-aos-delay="200">
+                        <div class="achievement-icon">📈</div>
+                        <div class="achievement-content">
+                            <h3>Continuous Growth</h3>
+                            <p>ダウンロード数と収益が継続的に成長し、安定した個人事業として確立</p>
+                        </div>
+                    </div>
+                    
+                    <div class="achievement-item scroll-reveal" data-aos="fade-up" data-aos-delay="300">
+                        <div class="achievement-icon">🛠️</div>
+                        <div class="achievement-content">
+                            <h3>Technical Excellence</h3>
+                            <p>最新のiOS技術を積極的に採用し、パフォーマンスと保守性に優れたアプリを開発</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interests Section -->
+        <section class="interests-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title scroll-reveal">Interests & Hobbies</h2>
+                    <p class="section-subtitle scroll-reveal">開発以外の興味・関心</p>
+                </div>
+                
+                <div class="interests-grid">
+                    <div class="interest-item hover-lift scroll-reveal" data-aos="zoom-in">
+                        <div class="interest-icon animate-float">📚</div>
+                        <h3>Reading</h3>
+                        <p>技術書やビジネス書を読み、新しい知識とインスピレーションを得ています</p>
+                    </div>
+                    
+                    <div class="interest-item hover-lift scroll-reveal" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="interest-icon animate-bounce">🌄</div>
+                        <h3>Travel</h3>
+                        <p>様々な場所を訪れ、新しい文化や体験からアプリのアイデアを見つけています</p>
+                    </div>
+                    
+                    <div class="interest-item hover-lift scroll-reveal" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="interest-icon animate-pulse">🎵</div>
+                        <h3>Music</h3>
+                        <p>集中して開発する際のBGMとして、様々なジャンルの音楽を聴いています</p>
+                    </div>
+                    
+                    <div class="interest-item hover-lift scroll-reveal" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="interest-icon animate-float">🏃‍♂️</div>
+                        <h3>Running</h3>
+                        <p>健康維持とストレス解消のため、定期的にランニングを楽しんでいます</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="section-container">
+                <div class="cta-content scroll-reveal">
+                    <div class="cta-icon animate-float">💬</div>
+                    <h2 class="cta-title">Let's Connect</h2>
+                    <p class="cta-description">
+                        プロジェクトのご相談、技術的な質問、<br>
+                        または単純に挨拶でも、お気軽にお声かけください。
+                    </p>
+                    <div class="cta-actions">
+                        <a href="../contact/" class="btn btn-primary">
+                            <span>Get in Touch</span>
+                            <i class="btn-icon">→</i>
+                        </a>
+                        <a href="../portfolio/" class="btn btn-outline">
+                            <span>View Portfolio</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="brand-text">tsuzuki817</div>
+                    <p class="footer-description">iOS Developer & Creator</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4 class="footer-title">Pages</h4>
+                        <ul class="footer-list">
+                            <li><a href="../portfolio/">Portfolio</a></li>
+                            <li><a href="../blog/">Blog</a></li>
+                            <li><a href="./">About</a></li>
+                            <li><a href="../contact/">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4 class="footer-title">Legal</h4>
+                        <ul class="footer-list">
+                            <li><a href="../legal/privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="../legal/terms-of-service.html">Terms of Service</a></li>
+                            <li><a href="../legal/commercial-law.html">Commercial Law</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4 class="footer-title">Connect</h4>
+                        <div class="social-links">
+                            <a href="https://twitter.com/tsuzuki817" class="social-link" target="_blank" rel="noopener">
+                                <span class="social-icon">𝕏</span>
+                                <span class="social-text">Twitter</span>
+                            </a>
+                            <a href="https://github.com/tsuzuki817" class="social-link" target="_blank" rel="noopener">
+                                <span class="social-icon">⚡</span>
+                                <span class="social-text">GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 tsuzuki817. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <span class="back-to-top-icon">↑</span>
+    </button>
+
+    <!-- Scripts -->
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/about.js"></script>
+</body>
+</html>

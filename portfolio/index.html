@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - tsuzuki817</title>
+    <meta name="description" content="tsuzuki817のポートフォリオ。30個以上のiOSアプリの詳細をご覧いただけます。">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/animations.css">
+    
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="../favicon.ico">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <div class="loader-text">Loading Portfolio...</div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <a href="../" class="brand-link">
+                        <span class="brand-text">tsuzuki817</span>
+                    </a>
+                </div>
+                
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="../" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./" class="nav-link active">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../blog/" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../about/" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../contact/" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main portfolio-main">
+        <!-- Hero Section -->
+        <section class="portfolio-hero">
+            <div class="section-container">
+                <div class="hero-content">
+                    <h1 class="hero-title scroll-reveal">
+                        <span class="title-line">Portfolio</span>
+                    </h1>
+                    <p class="hero-subtitle scroll-reveal">
+                        30個以上のiOSアプリを開発・公開しています。<br>
+                        ユーザーの生活を豊かにするアプリケーションをご紹介します。
+                    </p>
+                    
+                    <!-- Filter Buttons -->
+                    <div class="filter-buttons scroll-reveal">
+                        <button class="filter-btn active" data-filter="all">All Apps</button>
+                        <button class="filter-btn" data-filter="travel">Travel</button>
+                        <button class="filter-btn" data-filter="lifestyle">Lifestyle</button>
+                        <button class="filter-btn" data-filter="utility">Utility</button>
+                        <button class="filter-btn" data-filter="coming-soon">Coming Soon</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Apps Grid Section -->
+        <section class="apps-showcase">
+            <div class="section-container">
+                <div class="apps-grid portfolio-grid" id="apps-grid">
+                    <!-- Travel Memory Map -->
+                    <div class="app-card hover-lift" data-category="travel" data-aos="fade-up">
+                        <div class="app-image">
+                            <img src="../assets/images/travel-memory-map-portfolio.jpg" alt="Travel Memory Map" loading="lazy">
+                            <div class="app-overlay">
+                                <div class="app-tags">
+                                    <span class="tag tag-travel">Travel</span>
+                                    <span class="tag tag-map">Map</span>
+                                </div>
+                                <div class="app-actions-overlay">
+                                    <a href="apps/travel-memory-map.html" class="btn-icon-round">
+                                        <span>👁️</span>
+                                    </a>
+                                    <a href="#" class="btn-icon-round" target="_blank">
+                                        <span>📱</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app-content">
+                            <h3 class="app-title">Travel Memory Map</h3>
+                            <p class="app-description">旅行の思い出を地図上に記録し、美しく整理できるアプリです。写真と位置情報を組み合わせて旅の軌跡を残せます。</p>
+                            <div class="app-meta">
+                                <div class="app-stats">
+                                    <span class="stat-item">
+                                        <i class="stat-icon">⭐</i>
+                                        <span class="stat-value">4.8</span>
+                                    </span>
+                                    <span class="stat-item">
+                                        <i class="stat-icon">📥</i>
+                                        <span class="stat-value">10K+</span>
+                                    </span>
+                                </div>
+                                <div class="app-tech">
+                                    <span class="tech-tag">Swift</span>
+                                    <span class="tech-tag">MapKit</span>
+                                    <span class="tech-tag">Core Data</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Coming Soon App 1 -->
+                    <div class="app-card hover-lift" data-category="lifestyle coming-soon" data-aos="fade-up" data-aos-delay="100">
+                        <div class="app-image">
+                            <div class="placeholder-image gradient-bg">
+                                <div class="placeholder-content">
+                                    <div class="placeholder-icon animate-float">🏠</div>
+                                    <div class="placeholder-text">Coming Soon</div>
+                                    <div class="placeholder-subtitle">Home Organizer</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app-content">
+                            <h3 class="app-title">Home Organizer</h3>
+                            <p class="app-description">家庭内のタスクや物の管理を効率化するライフスタイルアプリ。家族で共有できる機能も搭載予定です。</p>
+                            <div class="app-meta">
+                                <div class="app-stats">
+                                    <span class="stat-item">
+                                        <i class="stat-icon">🚀</i>
+                                        <span class="stat-value">開発中</span>
+                                    </span>
+                                </div>
+                                <div class="app-tech">
+                                    <span class="tech-tag">SwiftUI</span>
+                                    <span class="tech-tag">CloudKit</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Coming Soon App 2 -->
+                    <div class="app-card hover-lift" data-category="utility coming-soon" data-aos="fade-up" data-aos-delay="200">
+                        <div class="app-image">
+                            <div class="placeholder-image gradient-bg-2">
+                                <div class="placeholder-content">
+                                    <div class="placeholder-icon animate-pulse">⚡</div>
+                                    <div class="placeholder-text">Coming Soon</div>
+                                    <div class="placeholder-subtitle">Quick Tools</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app-content">
+                            <h3 class="app-title">Quick Tools</h3>
+                            <p class="app-description">日常で使える便利なツールを集約したユーティリティアプリ。シンプルで使いやすいインターフェースが特徴です。</p>
+                            <div class="app-meta">
+                                <div class="app-stats">
+                                    <span class="stat-item">
+                                        <i class="stat-icon">🛠️</i>
+                                        <span class="stat-value">企画中</span>
+                                    </span>
+                                </div>
+                                <div class="app-tech">
+                                    <span class="tech-tag">Swift</span>
+                                    <span class="tech-tag">UIKit</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Coming Soon App 3 -->
+                    <div class="app-card hover-lift" data-category="lifestyle coming-soon" data-aos="fade-up" data-aos-delay="300">
+                        <div class="app-image">
+                            <div class="placeholder-image gradient-bg-3">
+                                <div class="placeholder-content">
+                                    <div class="placeholder-icon animate-bounce">📚</div>
+                                    <div class="placeholder-text">Coming Soon</div>
+                                    <div class="placeholder-subtitle">Study Tracker</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app-content">
+                            <h3 class="app-title">Study Tracker</h3>
+                            <p class="app-description">学習進捗を管理し、目標達成をサポートする学習管理アプリ。統計機能とモチベーション維持機能を搭載予定。</p>
+                            <div class="app-meta">
+                                <div class="app-stats">
+                                    <span class="stat-item">
+                                        <i class="stat-icon">📈</i>
+                                        <span class="stat-value">設計中</span>
+                                    </span>
+                                </div>
+                                <div class="app-tech">
+                                    <span class="tech-tag">SwiftUI</span>
+                                    <span class="tech-tag">Charts</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Coming Soon App 4 -->
+                    <div class="app-card hover-lift" data-category="utility coming-soon" data-aos="fade-up" data-aos-delay="400">
+                        <div class="app-image">
+                            <div class="placeholder-image gradient-bg-4">
+                                <div class="placeholder-content">
+                                    <div class="placeholder-icon animate-spin">🎨</div>
+                                    <div class="placeholder-text">Coming Soon</div>
+                                    <div class="placeholder-subtitle">Color Palette</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app-content">
+                            <h3 class="app-title">Color Palette</h3>
+                            <p class="app-description">デザイナーや開発者向けのカラーパレット管理ツール。美しいグラデーションの生成機能も含まれています。</p>
+                            <div class="app-meta">
+                                <div class="app-stats">
+                                    <span class="stat-item">
+                                        <i class="stat-icon">🎨</i>
+                                        <span class="stat-value">プロトタイプ</span>
+                                    </span>
+                                </div>
+                                <div class="app-tech">
+                                    <span class="tech-tag">Swift</span>
+                                    <span class="tech-tag">Metal</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Coming Soon App 5 -->
+                    <div class="app-card hover-lift" data-category="travel coming-soon" data-aos="fade-up" data-aos-delay="500">
+                        <div class="app-image">
+                            <div class="placeholder-image gradient-bg-5">
+                                <div class="placeholder-content">
+                                    <div class="placeholder-icon animate-float">✈️</div>
+                                    <div class="placeholder-text">Coming Soon</div>
+                                    <div class="placeholder-subtitle">Flight Tracker</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app-content">
+                            <h3 class="app-title">Flight Tracker</h3>
+                            <p class="app-description">フライト情報をリアルタイムで追跡し、旅行計画をサポートするアプリ。遅延情報やゲート変更も通知します。</p>
+                            <div class="app-meta">
+                                <div class="app-stats">
+                                    <span class="stat-item">
+                                        <i class="stat-icon">✈️</i>
+                                        <span class="stat-value">調査中</span>
+                                    </span>
+                                </div>
+                                <div class="app-tech">
+                                    <span class="tech-tag">SwiftUI</span>
+                                    <span class="tech-tag">API</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Coming Soon App 6 -->
+                    <div class="app-card hover-lift" data-category="lifestyle coming-soon" data-aos="fade-up" data-aos-delay="600">
+                        <div class="app-image">
+                            <div class="placeholder-image gradient-bg-6">
+                                <div class="placeholder-content">
+                                    <div class="placeholder-icon animate-pulse">🌱</div>
+                                    <div class="placeholder-text">Coming Soon</div>
+                                    <div class="placeholder-subtitle">Plant Care</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app-content">
+                            <h3 class="app-title">Plant Care</h3>
+                            <p class="app-description">植物の世話を管理し、最適な育成環境を提案するガーデニングアプリ。水やりリマインダー機能付き。</p>
+                            <div class="app-meta">
+                                <div class="app-stats">
+                                    <span class="stat-item">
+                                        <i class="stat-icon">🌿</i>
+                                        <span class="stat-value">アイデア段階</span>
+                                    </span>
+                                </div>
+                                <div class="app-tech">
+                                    <span class="tech-tag">SwiftUI</span>
+                                    <span class="tech-tag">Core ML</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- No Results Message -->
+                <div class="no-results" id="no-results" style="display: none;">
+                    <div class="no-results-content">
+                        <div class="no-results-icon">🔍</div>
+                        <h3>該当するアプリが見つかりませんでした</h3>
+                        <p>別のカテゴリーをお試しください</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Development Process Section -->
+        <section class="development-process">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title scroll-reveal">Development Process</h2>
+                    <p class="section-subtitle scroll-reveal">アプリ開発の流れをご紹介します</p>
+                </div>
+                
+                <div class="process-timeline">
+                    <div class="timeline-item scroll-reveal-left">
+                        <div class="timeline-icon">💡</div>
+                        <div class="timeline-content">
+                            <h3>アイデア・企画</h3>
+                            <p>ユーザーのニーズを調査し、解決すべき課題を特定します。市場調査と競合分析を行い、アプリの方向性を決定します。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item scroll-reveal-right">
+                        <div class="timeline-icon">🎨</div>
+                        <div class="timeline-content">
+                            <h3>デザイン・設計</h3>
+                            <p>ユーザーエクスペリエンスを重視したUI/UXデザインを作成。ワイヤーフレームからプロトタイプまで丁寧に設計します。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item scroll-reveal-left">
+                        <div class="timeline-icon">⚙️</div>
+                        <div class="timeline-content">
+                            <h3>開発・実装</h3>
+                            <p>SwiftやSwiftUIを使用してネイティブアプリを開発。パフォーマンスと使いやすさを両立させたコードを心がけています。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item scroll-reveal-right">
+                        <div class="timeline-icon">🧪</div>
+                        <div class="timeline-content">
+                            <h3>テスト・改善</h3>
+                            <p>徹底的なテストを実施し、バグの修正と機能の改善を行います。ユーザビリティテストも重視しています。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item scroll-reveal-left">
+                        <div class="timeline-icon">🚀</div>
+                        <div class="timeline-content">
+                            <h3>リリース・運用</h3>
+                            <p>App Storeでの審査を経てリリース。リリース後もユーザーフィードバックに基づいて継続的に改善を行います。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="brand-text">tsuzuki817</div>
+                    <p class="footer-description">iOS Developer & Creator</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4 class="footer-title">Pages</h4>
+                        <ul class="footer-list">
+                            <li><a href="./">Portfolio</a></li>
+                            <li><a href="../blog/">Blog</a></li>
+                            <li><a href="../about/">About</a></li>
+                            <li><a href="../contact/">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4 class="footer-title">Legal</h4>
+                        <ul class="footer-list">
+                            <li><a href="../legal/privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="../legal/terms-of-service.html">Terms of Service</a></li>
+                            <li><a href="../legal/commercial-law.html">Commercial Law</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4 class="footer-title">Connect</h4>
+                        <div class="social-links">
+                            <a href="https://twitter.com/tsuzuki817" class="social-link" target="_blank" rel="noopener">
+                                <span class="social-icon">𝕏</span>
+                                <span class="social-text">Twitter</span>
+                            </a>
+                            <a href="https://github.com/tsuzuki817" class="social-link" target="_blank" rel="noopener">
+                                <span class="social-icon">⚡</span>
+                                <span class="social-text">GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 tsuzuki817. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <span class="back-to-top-icon">↑</span>
+    </button>
+
+    <!-- Scripts -->
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/portfolio.js"></script>
+</body>
+</html>

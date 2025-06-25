@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tsuzuki817 - iOS Developer & Creator</title>
+    <meta name="description" content="個人開発者tsuzuki817のポートフォリオサイト。30個以上のiOSアプリを開発・公開しています。">
+    <meta name="keywords" content="iOS, Swift, アプリ開発, 個人開発, tsuzuki817">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <a href="#" class="brand-link">
+                        <span class="brand-text">tsuzuki817</span>
+                    </a>
+                </div>
+                
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="portfolio/" class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog/" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about/" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact/" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            <span class="title-line">iOS Developer</span>
+                            <span class="title-line">&amp; Creator</span>
+                        </h1>
+                        <p class="hero-subtitle">
+                            30個以上のiOSアプリを開発・公開している個人開発者です。<br>
+                            ユーザーの生活を豊かにするアプリケーションを作り続けています。
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="portfolio/" class="btn btn-primary">
+                                <span>View Portfolio</span>
+                                <i class="btn-icon">→</i>
+                            </a>
+                            <a href="contact/" class="btn btn-secondary">
+                                <span>Get in Touch</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <div class="floating-elements">
+                            <div class="floating-card">
+                                <div class="card-icon">📱</div>
+                                <div class="card-text">iOS Apps</div>
+                            </div>
+                            <div class="floating-card">
+                                <div class="card-icon">💡</div>
+                                <div class="card-text">Creative</div>
+                            </div>
+                            <div class="floating-card">
+                                <div class="card-icon">🚀</div>
+                                <div class="card-text">Innovative</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Scroll Indicator -->
+                <div class="scroll-indicator">
+                    <div class="scroll-mouse">
+                        <div class="scroll-wheel"></div>
+                    </div>
+                    <span class="scroll-text">Scroll Down</span>
+                </div>
+            </div>
+            
+            <!-- Background Elements -->
+            <div class="hero-bg">
+                <div class="bg-grid"></div>
+                <div class="bg-gradient"></div>
+            </div>
+        </section>
+
+        <!-- Featured Apps Section -->
+        <section class="featured-apps" id="apps">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">Featured Apps</h2>
+                    <p class="section-subtitle">代表的なアプリケーションをご紹介します</p>
+                </div>
+                
+                <div class="apps-grid">
+                    <div class="app-card" data-aos="fade-up">
+                        <div class="app-image">
+                            <img src="assets/images/travel-memory-map.jpg" alt="Travel Memory Map" loading="lazy">
+                            <div class="app-overlay">
+                                <div class="app-tags">
+                                    <span class="tag">Travel</span>
+                                    <span class="tag">Map</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app-content">
+                            <h3 class="app-title">Travel Memory Map</h3>
+                            <p class="app-description">旅行の思い出を地図上に記録し、美しく整理できるアプリです。</p>
+                            <div class="app-actions">
+                                <a href="portfolio/apps/travel-memory-map.html" class="app-link">詳細を見る</a>
+                                <a href="#" class="app-store-link">App Store</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="app-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="app-image">
+                            <div class="placeholder-image">
+                                <div class="placeholder-icon">📱</div>
+                                <div class="placeholder-text">Coming Soon</div>
+                            </div>
+                        </div>
+                        <div class="app-content">
+                            <h3 class="app-title">新しいアプリ</h3>
+                            <p class="app-description">現在開発中の新しいアプリケーションです。近日公開予定です。</p>
+                            <div class="app-actions">
+                                <span class="app-link disabled">準備中</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="app-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="app-image">
+                            <div class="placeholder-image">
+                                <div class="placeholder-icon">🎨</div>
+                                <div class="placeholder-text">Coming Soon</div>
+                            </div>
+                        </div>
+                        <div class="app-content">
+                            <h3 class="app-title">デザインツール</h3>
+                            <p class="app-description">クリエイティブな作業を支援するツールアプリを開発中です。</p>
+                            <div class="app-actions">
+                                <span class="app-link disabled">準備中</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section-footer">
+                    <a href="portfolio/" class="btn btn-outline">
+                        <span>View All Apps</span>
+                        <i class="btn-icon">→</i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats">
+            <div class="section-container">
+                <div class="stats-grid">
+                    <div class="stat-item" data-aos="zoom-in">
+                        <div class="stat-number" data-count="30">0</div>
+                        <div class="stat-label">Apps Published</div>
+                    </div>
+                    <div class="stat-item" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="stat-number" data-count="5">0</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-item" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="stat-number" data-count="1000">0</div>
+                        <div class="stat-label">Downloads</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="brand-text">tsuzuki817</div>
+                    <p class="footer-description">iOS Developer & Creator</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4 class="footer-title">Pages</h4>
+                        <ul class="footer-list">
+                            <li><a href="portfolio/">Portfolio</a></li>
+                            <li><a href="blog/">Blog</a></li>
+                            <li><a href="about/">About</a></li>
+                            <li><a href="contact/">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4 class="footer-title">Legal</h4>
+                        <ul class="footer-list">
+                            <li><a href="legal/privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="legal/terms-of-service.html">Terms of Service</a></li>
+                            <li><a href="legal/commercial-law.html">Commercial Law</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4 class="footer-title">Connect</h4>
+                        <div class="social-links">
+                            <a href="https://twitter.com/tsuzuki817" class="social-link" target="_blank" rel="noopener">
+                                <span class="social-icon">𝕏</span>
+                                <span class="social-text">Twitter</span>
+                            </a>
+                            <a href="https://github.com/tsuzuki817" class="social-link" target="_blank" rel="noopener">
+                                <span class="social-icon">⚡</span>
+                                <span class="social-text">GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 tsuzuki817. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <span class="back-to-top-icon">↑</span>
+    </button>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
