@@ -5,7 +5,8 @@ class TsuzukiSite {
         this.init();
     }
 
-    init() {
+    async init() {
+        await this.loadHTML();
         this.setupEventListeners();
         this.initializeAnimations();
         this.setupScrollEffects();
@@ -13,6 +14,52 @@ class TsuzukiSite {
         this.setupNavigation();
         this.hideLoadingScreen();
     }
+
+    async loadHTML() {
+        const headerPlaceholder = document.getElementById('header-placeholder');
+        const footerPlaceholder = document.getElementById('footer-placeholder');
+        const path = window.location.pathname;
+
+        let headerPath = '/_includes/_header.html';
+        let footerPath = '/_includes/_footer.html';
+
+        if (path.includes('/about/')) {
+            headerPath = '/_includes/_header_about.html';
+            footerPath = '/_includes/_footer_about.html';
+        } else if (path.includes('/portfolio/')) {
+            headerPath = '/_includes/_header_portfolio.html';
+            footerPath = '/_includes/_footer_portfolio.html';
+        }
+
+        if (headerPlaceholder) {
+            try {
+                const response = await fetch(headerPath);
+                if (response.ok) {
+                    const headerHTML = await response.text();
+                    headerPlaceholder.innerHTML = headerHTML;
+                } else {
+                    console.error('Failed to load header:', response.statusText);
+                }
+            } catch (error) {
+                console.error('Error loading header:', error);
+            }
+        }
+
+        if (footerPlaceholder) {
+            try {
+                const response = await fetch(footerPath);
+                if (response.ok) {
+                    const footerHTML = await response.text();
+                    footerPlaceholder.innerHTML = footerHTML;
+                } else {
+                    console.error('Failed to load footer:', response.statusText);
+                }
+            } catch (error) {
+                console.error('Error loading footer:', error);
+            }
+        }
+    }
+
 
     setupEventListeners() {
         // Mobile navigation toggle
