@@ -4,17 +4,24 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>旅行思い出マップ</title>
-        <link rel="stylesheet" media="all" href="../css/ress.min.css" />
-        <link rel="stylesheet" media="all" href="../css/style.css" />
-        <script src="../js/jquery-3.6.0.min.js"></script>
-        <script src="../js/style.js"></script>
+        <link rel="stylesheet" media="all" href="../../assets/css/ress.min.css" />
+        <link rel="stylesheet" media="all" href="../../assets/css/style.css" />
+        <link rel="stylesheet" media="all" href="../../assets/css/responsive.css" />
+        <link rel="stylesheet" media="all" href="../../assets/css/components.css" />
+        <script src="../../assets/js/jquery-3.6.0.min.js"></script>
+        <script src="../../assets/js/main.js"></script>
 
         <link rel=”icon” href="../favicon.ico">
     </head>
     <body>
         <div id="header"></div>
+        <script>
+            $(function() {
+                $("#header").load("../../header.html");
+            });
+        </script>
         <div class="mainimg">
-            <img src="../img/travel_memory_map.jpeg" alt="旅行思い出マップのサービスイメージ">
+            <img src="../../assets/images/travel_memory_map.jpeg" alt="旅行思い出マップのサービスイメージ">
             <a
                 href="https://apps.apple.com/us/app/travel-memory-map/id6478291625?itsct=apps_box_badge&amp;itscg=30200"
                 style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px; height: 83px;"><img
@@ -23,5 +30,10 @@
                     style="border-radius: 13px; width: 250px; height: 83px;"></a>
         </div>
         <div id="footer"></div>
+        <script>
+            $(function() {
+                $("#footer").load("../../footer.html");
+            });
+        </script>
     </body>
 </html>

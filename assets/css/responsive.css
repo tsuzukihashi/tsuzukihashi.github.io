@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+/* タブレット・デスクトップ向けスタイル */
+@media screen and (min-width: 768px) {
+    #open,
+    #close {
+        display: none !important;
+    }
+
+    #navi {
+        display: block !important;
+    }
+}
+
+/* スマートフォン向けスタイル */
+@media screen and (max-width: 768px) {
+    .head {
+        flex-direction: column;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    .telbox {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .head #open,
+    #close {
+        position: absolute;
+        top: 28px;
+        right: 12px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        padding-top: 0;
+        border-bottom: 1px solid var(--border-color);
+        margin-bottom: 0;
+    }
+
+    #open {
+        display: block;
+        background: url(../images/button.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 50px;
+        height: 50px;
+        border: none;
+        position: absolute;
+        top: 20px;
+        right: 12px;
+    }
+
+    #close {
+        display: block;
+        background: url(../images/button2.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 50px;
+        height: 50px;
+        border: none;
+        position: absolute;
+        top: 20px;
+        right: 12px;
+    }
+
+    #navi {
+        display: none;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .col.span-4 {
+        flex: 0 0 100%;
+        margin-bottom: 20px;
+    }
+}
