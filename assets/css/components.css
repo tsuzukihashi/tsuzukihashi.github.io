@@ -634,7 +634,7 @@
 .stats-overview .stat-label {
     font-size: var(--font-size-sm);
     color: var(--text-primary);
-    font-weight: 600;
+    font-weight: 700;
 }
 
 /* Portfolio App Meta Information */
@@ -662,7 +662,7 @@
 }
 
 .stat-value {
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .app-tech {
@@ -677,7 +677,7 @@
     padding: var(--space-1) var(--space-2);
     border-radius: var(--radius-md);
     font-size: var(--font-size-xs);
-    font-weight: 600;
+    font-weight: 700;
     border: 1px solid #e2e8f0;
 }
 
@@ -1007,7 +1007,7 @@
     padding: var(--space-2) var(--space-4);
     border-radius: var(--radius-lg);
     font-size: var(--font-size-sm);
-    font-weight: 600;
+    font-weight: 700;
     cursor: pointer;
     transition: all var(--transition-base);
     backdrop-filter: blur(10px);
@@ -1255,6 +1255,140 @@
     /* Stats section */
     .stats {
         background: var(--background-dark) !important;
+    }
+    
+    /* Enhanced visibility for all important text elements */
+    .app-title,
+    .blog-title,
+    .card-title,
+    .section-title,
+    .hero-title,
+    .stat-label,
+    .stat-value {
+        color: var(--text-primary) !important;
+        font-weight: 700 !important;
+    }
+    
+    /* Special handling for featured blog content - darker text for better readability */
+    .featured-title {
+        color: #1f2937 !important;
+        font-weight: 800 !important;
+        text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+    }
+    
+    .featured-excerpt {
+        color: #374151 !important;
+        font-weight: 500 !important;
+        text-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
+    }
+    
+    .post-meta .post-category,
+    .post-meta .post-date {
+        color: #4b5563 !important;
+        font-weight: 600 !important;
+        text-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+    }
+    
+    /* About page category titles - darker text for better readability */
+    .category-title {
+        color: #1f2937 !important;
+        font-weight: 800 !important;
+        text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+    }
+    
+    .skill-name {
+        color: #374151 !important;
+        font-weight: 600 !important;
+        text-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
+    }
+    
+    .skill-level {
+        color: #4b5563 !important;
+        font-weight: 500 !important;
+        text-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+    }
+    
+    /* Contact page method titles - darker text for better readability */
+    .method-content h3 {
+        color: #1f2937 !important;
+        font-weight: 800 !important;
+        text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+    }
+    
+    .method-content p {
+        color: #374151 !important;
+        font-weight: 500 !important;
+        text-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
+    }
+    
+    .detail-label,
+    .detail-value {
+        color: #4b5563 !important;
+        font-weight: 600 !important;
+        text-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+    }
+    
+    .form-title {
+        color: #1f2937 !important;
+        font-weight: 800 !important;
+        text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+    }
+    
+    .form-subtitle {
+        color: #374151 !important;
+        font-weight: 500 !important;
+        text-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
+    }
+    
+    .app-description,
+    .blog-excerpt,
+    .card-description {
+        color: var(--text-secondary) !important;
+    }
+    
+    /* Tech tags with better contrast */
+    .tech-tag {
+        background: var(--background-dark) !important;
+        color: var(--text-primary) !important;
+        border-color: var(--border-color) !important;
+        font-weight: 700 !important;
+    }
+    
+    /* Filter buttons */
+    .filter-btn {
+        color: var(--text-primary) !important;
+        font-weight: 700 !important;
+    }
+    
+    /* Navigation links */
+    .nav-link {
+        color: var(--text-secondary) !important;
+        font-weight: 600 !important;
+    }
+    
+    .nav-link:hover,
+    .nav-link.active {
+        color: var(--text-primary) !important;
+        font-weight: 700 !important;
+    }
+    
+    /* Badge text */
+    .featured-badge,
+    .award-badge,
+    .rapid-badge,
+    .perseverance-badge,
+    .debut-badge,
+    .community-badge,
+    .firebase-badge,
+    .ai-badge,
+    .platform-badge {
+        color: var(--text-primary) !important;
+        font-weight: 700 !important;
+    }
+    
+    /* All tag text */
+    .tag {
+        font-weight: 700 !important;
     }
 }
 
