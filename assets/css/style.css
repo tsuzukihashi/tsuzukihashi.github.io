@@ -274,9 +274,9 @@ p {
 /* Dark Mode Support */
 @media (prefers-color-scheme: dark) {
     :root {
-        --text-primary: #f9fafb;
-        --text-secondary: #d1d5db;
-        --text-light: #9ca3af;
+        --text-primary: #ffffff;
+        --text-secondary: #e5e7eb;
+        --text-light: #d1d5db;
         --background: #0f172a;
         --background-secondary: #1e293b;
         --background-dark: #020617;
@@ -391,6 +391,32 @@ p {
     /* Footer */
     .footer {
         background: var(--background-dark) !important;
+    }
+    
+    /* Ensure all headings and important text are highly visible */
+    h1, h2, h3, h4, h5, h6 {
+        color: var(--text-primary) !important;
+        font-weight: 700;
+    }
+    
+    .section-title,
+    .hero-title,
+    .app-title,
+    .blog-title,
+    .card-title {
+        color: var(--text-primary) !important;
+    }
+    
+    /* Strong and bold text */
+    strong, b {
+        color: var(--text-primary);
+        font-weight: 700;
+    }
+    
+    /* Brand text */
+    .brand-text,
+    .nav-brand .brand-text {
+        color: var(--text-primary) !important;
     }
 }
 
