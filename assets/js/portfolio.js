@@ -9,6 +9,7 @@ class PortfolioManager {
 
     init() {
         this.setupFilterButtons();
+        this.setupShowMoreButton();
         this.collectApps();
         this.addPortfolioStyles();
         this.setupAppCardInteractions();
@@ -34,11 +35,57 @@ class PortfolioManager {
         });
     }
 
+    setupShowMoreButton() {
+        const showMoreBtn = document.getElementById('show-more-apps');
+        const additionalApps = document.getElementById('additional-apps');
+        
+        if (!showMoreBtn || !additionalApps) return;
+
+        showMoreBtn.addEventListener('click', () => {
+            const isExpanded = additionalApps.classList.contains('show');
+            const showMoreText = showMoreBtn.querySelector('.show-more-text');
+            const showMoreIcon = showMoreBtn.querySelector('.show-more-icon');
+            
+            if (isExpanded) {
+                // Hide additional apps
+                additionalApps.classList.remove('show');
+                showMoreText.textContent = 'さらに表示 (22個のアプリ)';
+                showMoreIcon.textContent = '↓';
+                showMoreBtn.classList.remove('expanded');
+            } else {
+                // Show additional apps
+                additionalApps.classList.add('show');
+                showMoreText.textContent = '表示を減らす';
+                showMoreIcon.textContent = '↑';
+                showMoreBtn.classList.add('expanded');
+                
+                // Smooth scroll to first additional app
+                setTimeout(() => {
+                    const firstAdditionalApp = additionalApps.querySelector('.app-card');
+                    if (firstAdditionalApp) {
+                        firstAdditionalApp.scrollIntoView({ 
+                            behavior: 'smooth', 
+                            block: 'center' 
+                        });
+                    }
+                }, 100);
+            }
+        });
+    }
+
     filterApps(filter, appsGrid, noResults) {
         const appCards = appsGrid.querySelectorAll('.app-card');
+        const additionalApps = document.getElementById('additional-apps');
+        const showMoreContainer = document.querySelector('.show-more-container');
         let visibleCount = 0;
 
         appCards.forEach((card, index) => {
+            // Skip cards that are inside additional-apps container when it's hidden
+            const isInAdditionalApps = card.closest('#additional-apps');
+            if (isInAdditionalApps && !additionalApps.classList.contains('show')) {
+                return;
+            }
+
             const categories = card.getAttribute('data-category').split(' ');
             const shouldShow = filter === 'all' || categories.includes(filter);
 
@@ -50,6 +97,25 @@ class PortfolioManager {
                 card.style.display = 'none';
             }
         });
+
+        // Show/hide show more button based on filter
+        if (showMoreContainer) {
+            if (filter === 'all') {
+                showMoreContainer.style.display = 'flex';
+            } else {
+                showMoreContainer.style.display = 'none';
+                // Reset additional apps when filtering
+                additionalApps.classList.remove('show');
+                const showMoreBtn = document.getElementById('show-more-apps');
+                if (showMoreBtn) {
+                    const showMoreText = showMoreBtn.querySelector('.show-more-text');
+                    const showMoreIcon = showMoreBtn.querySelector('.show-more-icon');
+                    showMoreText.textContent = 'さらに表示 (22個のアプリ)';
+                    showMoreIcon.textContent = '↓';
+                    showMoreBtn.classList.remove('expanded');
+                }
+            }
+        }
 
         // Show/hide no results message
         if (visibleCount === 0) {
