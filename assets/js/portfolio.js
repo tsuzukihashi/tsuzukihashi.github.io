@@ -271,8 +271,11 @@ class PortfolioManager {
             }
             
             @media (prefers-color-scheme: dark) {
-                .portfolio-hero {
-                    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+                .portfolio-hero,
+                .blog-hero,
+                .about-hero,
+                .contact-hero {
+                    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%) !important;
                 }
                 
                 .filter-btn {
@@ -302,8 +305,20 @@ class PortfolioManager {
                     color: var(--text-light);
                 }
                 
-                .development-process {
-                    background: var(--background-secondary);
+                .development-process,
+                .blog-section,
+                .about-section,
+                .contact-section {
+                    background: var(--background-secondary) !important;
+                }
+                
+                .btn-icon-round {
+                    background: rgba(2, 6, 23, 0.9) !important;
+                    border: 1px solid var(--border-color);
+                }
+                
+                .btn-icon-round:hover {
+                    background: var(--background-secondary) !important;
                 }
             }
 

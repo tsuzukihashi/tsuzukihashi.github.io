@@ -281,6 +281,10 @@ p {
         --background-secondary: #1e293b;
         --background-dark: #020617;
         --border-color: #334155;
+        --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+        --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+        --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+        --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 10px 10px -5px rgba(0, 0, 0, 0.3);
     }
     
     body {
@@ -288,11 +292,19 @@ p {
         color: var(--text-primary);
     }
     
-    .card {
-        background: var(--background-secondary);
+    /* All cards and white backgrounds become dark */
+    .card,
+    .app-card,
+    .floating-card,
+    .blog-card,
+    .skill-card,
+    .experience-card {
+        background: var(--background-secondary) !important;
         border: 1px solid var(--border-color);
+        color: var(--text-primary);
     }
     
+    /* Buttons */
     .btn-secondary {
         background: var(--background-secondary);
         border-color: var(--border-color);
@@ -304,14 +316,81 @@ p {
         background: var(--background-dark);
     }
     
+    .btn-outline {
+        background: transparent;
+        border-color: var(--border-color);
+        color: var(--text-primary);
+    }
+    
+    .btn-outline:hover {
+        background: var(--primary-color);
+        color: white;
+    }
+    
     /* Header in dark mode */
     .header {
-        background: rgba(15, 23, 42, 0.95);
+        background: rgba(15, 23, 42, 0.95) !important;
         border-bottom-color: var(--border-color);
     }
     
     .header.scrolled {
-        background: rgba(15, 23, 42, 0.98);
+        background: rgba(15, 23, 42, 0.98) !important;
+    }
+    
+    /* Navigation */
+    .nav-link {
+        color: var(--text-secondary);
+    }
+    
+    .nav-link:hover,
+    .nav-link.active {
+        color: var(--text-primary);
+    }
+    
+    /* Sections with light backgrounds */
+    .featured-apps,
+    .stats,
+    .development-process,
+    .blog-section,
+    .about-section,
+    .contact-section {
+        background: var(--background-secondary) !important;
+    }
+    
+    /* Hero sections */
+    .hero,
+    .portfolio-hero,
+    .blog-hero,
+    .about-hero,
+    .contact-hero {
+        background: linear-gradient(135deg, var(--background-secondary) 0%, var(--background) 100%) !important;
+    }
+    
+    /* Forms */
+    input,
+    textarea,
+    select {
+        background: var(--background-secondary);
+        border-color: var(--border-color);
+        color: var(--text-primary);
+    }
+    
+    input:focus,
+    textarea:focus,
+    select:focus {
+        border-color: var(--primary-color);
+        background: var(--background-dark);
+    }
+    
+    /* Placeholders */
+    ::placeholder {
+        color: var(--text-light);
+        opacity: 1;
+    }
+    
+    /* Footer */
+    .footer {
+        background: var(--background-dark) !important;
     }
 }
 
