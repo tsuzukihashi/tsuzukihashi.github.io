@@ -271,6 +271,40 @@ p {
 .mt-8 { margin-top: var(--space-8); }
 .mt-16 { margin-top: var(--space-16); }
 
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-primary: #f9fafb;
+        --text-secondary: #d1d5db;
+        --text-light: #9ca3af;
+        --background: #111827;
+        --background-secondary: #1f2937;
+        --background-dark: #030712;
+        --border-color: #374151;
+    }
+    
+    body {
+        background-color: var(--background);
+        color: var(--text-primary);
+    }
+    
+    .card {
+        background: var(--background-secondary);
+        border: 1px solid var(--border-color);
+    }
+    
+    .btn-secondary {
+        background: var(--background-secondary);
+        border-color: var(--border-color);
+        color: var(--text-primary);
+    }
+    
+    .btn-secondary:hover {
+        border-color: var(--primary-color);
+        background: rgba(37, 99, 235, 0.1);
+    }
+}
+
 /* Smooth Scroll */
 @media (prefers-reduced-motion: no-preference) {
     html {

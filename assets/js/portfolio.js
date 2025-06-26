@@ -269,6 +269,35 @@ class PortfolioManager {
                 padding: var(--space-20) 0;
                 background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
             }
+            
+            @media (prefers-color-scheme: dark) {
+                .portfolio-hero {
+                    background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+                }
+                
+                .filter-btn {
+                    background: var(--background-secondary);
+                    border-color: var(--border-color);
+                    color: var(--text-primary);
+                }
+                
+                .filter-btn:hover,
+                .filter-btn.active {
+                    background: var(--gradient-primary);
+                    color: white;
+                    border-color: var(--primary-color);
+                }
+                
+                .stat-item {
+                    color: var(--text-primary);
+                }
+                
+                .tech-tag {
+                    background: var(--background-dark);
+                    color: var(--text-secondary);
+                    border-color: var(--border-color);
+                }
+            }
 
             .portfolio-hero .hero-title {
                 font-size: var(--font-size-5xl);

@@ -1057,6 +1057,119 @@
     box-shadow: var(--shadow-md);
 }
 
+/* Dark Mode Support for Portfolio Components */
+@media (prefers-color-scheme: dark) {
+    .app-card {
+        background: var(--background-secondary);
+        border: 1px solid var(--border-color);
+    }
+    
+    .stats-overview {
+        background: rgba(31, 41, 55, 0.8);
+        border: 1px solid var(--border-color);
+    }
+    
+    .filter-btn {
+        background: var(--background-secondary);
+        border-color: var(--border-color);
+        color: var(--text-primary);
+    }
+    
+    .filter-btn:hover,
+    .filter-btn.active {
+        background: var(--gradient-primary);
+        color: white;
+        border-color: var(--primary-color);
+    }
+    
+    .tech-tag {
+        background: var(--background-dark);
+        border-color: var(--border-color);
+        color: var(--text-secondary);
+    }
+    
+    .placeholder-image {
+        background: var(--background-dark);
+    }
+    
+    .show-more-btn {
+        background: var(--gradient-primary);
+        color: white;
+    }
+    
+    .btn-icon-round {
+        background: rgba(31, 41, 55, 0.9);
+        color: var(--text-primary);
+        border: 1px solid var(--border-color);
+    }
+    
+    .btn-icon-round:hover {
+        background: var(--background-secondary);
+    }
+    
+    .timeline-content {
+        background: var(--background-secondary);
+        border: 1px solid var(--border-color);
+    }
+    
+    .timeline-content h3 {
+        color: var(--text-primary);
+    }
+    
+    .timeline-content p {
+        color: var(--text-secondary);
+    }
+    
+    /* Tag colors for dark mode */
+    .tag-travel {
+        background: rgba(59, 130, 246, 0.2);
+        color: #93c5fd;
+    }
+    
+    .tag-productivity {
+        background: rgba(16, 185, 129, 0.2);
+        color: #6ee7b7;
+    }
+    
+    .tag-utility {
+        background: rgba(139, 92, 246, 0.2);
+        color: #c4b5fd;
+    }
+    
+    .tag-music {
+        background: rgba(245, 158, 11, 0.2);
+        color: #fcd34d;
+    }
+    
+    .tag-photo {
+        background: rgba(132, 204, 22, 0.2);
+        color: #bef264;
+    }
+    
+    .tag-lifestyle {
+        background: rgba(6, 182, 212, 0.2);
+        color: #67e8f9;
+    }
+    
+    .tag-social {
+        background: rgba(236, 72, 153, 0.2);
+        color: #f9a8d4;
+    }
+    
+    .tag-featured,
+    .tag-award,
+    .tag-rapid,
+    .tag-widget,
+    .tag-debut,
+    .tag-community,
+    .tag-cloud,
+    .tag-ai,
+    .tag-multi {
+        background: rgba(99, 102, 241, 0.2);
+        color: #a5b4fc;
+    }
+}
+
 /* Back to Top Button */
 .back-to-top {
     position: fixed;
