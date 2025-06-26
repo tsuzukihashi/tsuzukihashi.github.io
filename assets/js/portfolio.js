@@ -297,8 +297,8 @@ class PortfolioManager {
                 border: 2px solid var(--border-color);
                 border-radius: var(--radius-lg);
                 background: white;
-                color: var(--text-secondary);
-                font-weight: 500;
+                color: var(--text-primary);
+                font-weight: 600;
                 cursor: pointer;
                 transition: all var(--transition-base);
             }
@@ -379,7 +379,7 @@ class PortfolioManager {
                 align-items: center;
                 gap: var(--space-1);
                 font-size: var(--font-size-sm);
-                color: var(--text-light);
+                color: var(--text-primary);
             }
 
             .stat-icon {
@@ -395,10 +395,11 @@ class PortfolioManager {
             .tech-tag {
                 padding: var(--space-1) var(--space-2);
                 background: var(--background-secondary);
-                color: var(--text-secondary);
+                color: var(--text-primary);
                 border-radius: var(--radius-sm);
                 font-size: var(--font-size-xs);
-                font-weight: 500;
+                font-weight: 600;
+                border: 1px solid #e2e8f0;
             }
 
             .tag {

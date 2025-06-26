@@ -633,8 +633,8 @@
 
 .stats-overview .stat-label {
     font-size: var(--font-size-sm);
-    color: var(--text-secondary);
-    font-weight: 500;
+    color: var(--text-primary);
+    font-weight: 600;
 }
 
 /* Portfolio App Meta Information */
@@ -654,7 +654,7 @@
     align-items: center;
     gap: var(--space-1);
     font-size: var(--font-size-sm);
-    color: var(--text-secondary);
+    color: var(--text-primary);
 }
 
 .stat-icon {
@@ -673,11 +673,12 @@
 
 .tech-tag {
     background: var(--background-secondary);
-    color: var(--text-secondary);
+    color: var(--text-primary);
     padding: var(--space-1) var(--space-2);
     border-radius: var(--radius-md);
     font-size: var(--font-size-xs);
-    font-weight: 500;
+    font-weight: 600;
+    border: 1px solid #e2e8f0;
 }
 
 /* Special App Card Types */
@@ -1000,13 +1001,13 @@
 }
 
 .filter-btn {
-    background: rgba(255, 255, 255, 0.1);
-    color: var(--text-secondary);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.9);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
     padding: var(--space-2) var(--space-4);
     border-radius: var(--radius-lg);
     font-size: var(--font-size-sm);
-    font-weight: 500;
+    font-weight: 600;
     cursor: pointer;
     transition: all var(--transition-base);
     backdrop-filter: blur(10px);
