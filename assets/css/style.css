@@ -277,10 +277,10 @@ p {
         --text-primary: #f9fafb;
         --text-secondary: #d1d5db;
         --text-light: #9ca3af;
-        --background: #111827;
-        --background-secondary: #1f2937;
-        --background-dark: #030712;
-        --border-color: #374151;
+        --background: #0f172a;
+        --background-secondary: #1e293b;
+        --background-dark: #020617;
+        --border-color: #334155;
     }
     
     body {
@@ -301,7 +301,17 @@ p {
     
     .btn-secondary:hover {
         border-color: var(--primary-color);
-        background: rgba(37, 99, 235, 0.1);
+        background: var(--background-dark);
+    }
+    
+    /* Header in dark mode */
+    .header {
+        background: rgba(15, 23, 42, 0.95);
+        border-bottom-color: var(--border-color);
+    }
+    
+    .header.scrolled {
+        background: rgba(15, 23, 42, 0.98);
     }
 }
 

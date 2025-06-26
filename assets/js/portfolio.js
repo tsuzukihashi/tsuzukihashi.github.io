@@ -272,7 +272,7 @@ class PortfolioManager {
             
             @media (prefers-color-scheme: dark) {
                 .portfolio-hero {
-                    background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+                    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
                 }
                 
                 .filter-btn {
@@ -296,6 +296,14 @@ class PortfolioManager {
                     background: var(--background-dark);
                     color: var(--text-secondary);
                     border-color: var(--border-color);
+                }
+                
+                .no-results-content {
+                    color: var(--text-light);
+                }
+                
+                .development-process {
+                    background: var(--background-secondary);
                 }
             }
 
