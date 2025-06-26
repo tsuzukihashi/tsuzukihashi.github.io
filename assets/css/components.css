@@ -1129,11 +1129,15 @@
     }
     
     .timeline-content h3 {
-        color: var(--text-primary);
+        color: #1f2937 !important;
+        font-weight: 800 !important;
+        text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
     }
     
     .timeline-content p {
-        color: var(--text-secondary);
+        color: #374151 !important;
+        font-weight: 500 !important;
+        text-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
     }
     
     /* Special badges for dark mode */
@@ -1389,6 +1393,45 @@
     /* All tag text */
     .tag {
         font-weight: 700 !important;
+    }
+    
+    /* Achievements & Highlights section - darker text for better readability */
+    .achievement-content h3 {
+        color: #1f2937 !important;
+        font-weight: 800 !important;
+        text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+    }
+    
+    .achievement-content p {
+        color: #374151 !important;
+        font-weight: 500 !important;
+        text-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
+    }
+    
+    /* Interests & Hobbies section - darker text for better readability */
+    .interest-item h3 {
+        color: #1f2937 !important;
+        font-weight: 800 !important;
+        text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+    }
+    
+    .interest-item p {
+        color: #374151 !important;
+        font-weight: 500 !important;
+        text-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
+    }
+    
+    /* Philosophy section values - darker text for better readability */
+    .value-item h4 {
+        color: #1f2937 !important;
+        font-weight: 800 !important;
+        text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+    }
+    
+    .value-item p {
+        color: #374151 !important;
+        font-weight: 500 !important;
+        text-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
     }
 }
 
