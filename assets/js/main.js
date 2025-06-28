@@ -16,6 +16,9 @@ class TsuzukiSite {
     }
 
     setupEventListeners() {
+        // Setup theme toggle observer first (for dynamically loaded elements)
+        this.setupThemeToggleObserver();
+        
         // Mobile navigation toggle
         const navToggle = document.getElementById('nav-toggle');
         const navMenu = document.getElementById('nav-menu');
@@ -66,6 +69,8 @@ class TsuzukiSite {
 
         // Close mobile menu when clicking outside
         document.addEventListener('click', (e) => {
+            const navMenu = document.getElementById('nav-menu');
+            const navToggle = document.getElementById('nav-toggle');
             if (navMenu?.classList.contains('active') && 
                 !navMenu.contains(e.target) && 
                 !navToggle?.contains(e.target)) {
@@ -77,20 +82,66 @@ class TsuzukiSite {
 
         // Keyboard navigation
         document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape' && navMenu?.classList.contains('active')) {
-                navToggle?.classList.remove('active');
-                navMenu?.classList.remove('active');
-                document.body.classList.remove('nav-open');
+            if (e.key === 'Escape') {
+                const navMenu = document.getElementById('nav-menu');
+                const navToggle = document.getElementById('nav-toggle');
+                if (navMenu?.classList.contains('active')) {
+                    navToggle?.classList.remove('active');
+                    navMenu?.classList.remove('active');
+                    document.body.classList.remove('nav-open');
+                }
             }
         });
 
-        // Theme toggle functionality
-        const themeToggle = document.getElementById('theme-toggle');
-        if (themeToggle) {
-            themeToggle.addEventListener('click', () => {
-                this.toggleTheme();
+        // Theme toggle functionality - check if already exists
+        this.setupThemeToggle();
+    }
+
+    setupThemeToggleObserver() {
+        // Watch for the theme toggle button to be added to the DOM
+        const observer = new MutationObserver((mutations) => {
+            mutations.forEach((mutation) => {
+                mutation.addedNodes.forEach((node) => {
+                    if (node.nodeType === Node.ELEMENT_NODE) {
+                        // Check if the theme toggle button was added
+                        const themeToggle = node.querySelector?.('#theme-toggle') || 
+                                          (node.id === 'theme-toggle' ? node : null);
+                        
+                        if (themeToggle && !themeToggle.hasAttribute('data-theme-listener')) {
+                            this.attachThemeToggleListener(themeToggle);
+                        }
+                        
+                        // Also check for header component
+                        if (node.querySelector?.('.header') || node.classList?.contains('header')) {
+                            const headerThemeToggle = document.getElementById('theme-toggle');
+                            if (headerThemeToggle && !headerThemeToggle.hasAttribute('data-theme-listener')) {
+                                this.attachThemeToggleListener(headerThemeToggle);
+                            }
+                        }
+                    }
+                });
             });
+        });
+        
+        observer.observe(document.body, {
+            childList: true,
+            subtree: true
+        });
+    }
+
+    setupThemeToggle() {
+        const themeToggle = document.getElementById('theme-toggle');
+        if (themeToggle && !themeToggle.hasAttribute('data-theme-listener')) {
+            this.attachThemeToggleListener(themeToggle);
         }
+    }
+
+    attachThemeToggleListener(themeToggle) {
+        themeToggle.setAttribute('data-theme-listener', 'true');
+        themeToggle.addEventListener('click', () => {
+            this.toggleTheme();
+        });
+        console.log('Theme toggle listener attached successfully');
     }
 
     setupScrollEffects() {
