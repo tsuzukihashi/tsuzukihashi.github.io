@@ -195,3 +195,48 @@ tsuzuki817.github.io/
 **更新日**: 2025年6月26日  
 **作成者**: Claude (Anthropic)  
 **対象**: tsuzuki817 個人開発者サイト
+
+
+## Google Analytics
+
+以下は、このアカウントの Google タグです。このタグをコピーして、ウェブサイトのすべてのページのコード（<head> 要素の直後）に貼り付けます。各ページに複数の Google タグを実装することはできません。
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QERPQ1EGLH');
+</script>
+
+### 重要：新規ページ作成時の必須要件
+
+**すべての新規HTMLページ（ブログ投稿、アプリ詳細ページ等）には、以下のGoogle Analyticsタグを必ず含める必要があります：**
+
+1. **Faviconセクションの直後**に以下のGoogle Analyticsコードを挿入：
+
+```html
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QERPQ1EGLH');
+</script>
+```
+
+2. **対象となるページ：**
+   - 新規ブログ記事（blog/posts/）
+   - 新規アプリ詳細ページ（portfolio/apps/）
+   - その他すべての新規HTMLページ
+
+3. **配置場所：**
+   - `<head>`セクション内
+   - Faviconリンクの直後
+   - `</head>`タグの前
+
+**このタグの追加を忘れると、アクセス解析ができなくなるため、新規ページ作成時は必ず確認してください。**
