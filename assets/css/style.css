@@ -274,17 +274,30 @@ p {
 /* Dark Mode Support */
 @media (prefers-color-scheme: dark) {
     :root {
-        --text-primary: #ffffff;
-        --text-secondary: #e5e7eb;
-        --text-light: #d1d5db;
+        --text-primary: #f8fafc;
+        --text-secondary: #e2e8f0;
+        --text-light: #cbd5e1;
         --background: #0f172a;
         --background-secondary: #1e293b;
+        --background-tertiary: #334155;
         --background-dark: #020617;
-        --border-color: #334155;
-        --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
-        --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
-        --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
-        --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+        --border-color: #475569;
+        --surface: #1e293b;
+        --surface-hover: #334155;
+        --card-background: var(--background-secondary);
+        --form-background: var(--background-secondary);
+        --button-background: var(--background-tertiary);
+        
+        /* Enhanced gradients for dark mode */
+        --gradient-primary: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
+        --gradient-secondary: linear-gradient(135deg, #059669 0%, #047857 100%);
+        --gradient-accent: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+        
+        /* Improved shadows for dark mode */
+        --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+        --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
+        --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -2px rgba(0, 0, 0, 0.4);
+        --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.6), 0 10px 10px -5px rgba(0, 0, 0, 0.4);
     }
     
     body {
@@ -292,7 +305,22 @@ p {
         color: var(--text-primary);
     }
     
-    /* All cards and white backgrounds become dark */
+    /* Enhanced text contrast for accessibility */
+    h1, h2, h3, h4, h5, h6 {
+        color: var(--text-primary);
+    }
+    
+    p, span, div {
+        color: var(--text-secondary);
+    }
+    
+    .text-light,
+    .subtitle,
+    .description {
+        color: var(--text-light);
+    }
+    
+    /* All cards and components use CSS variables */
     .card,
     .app-card,
     .floating-card,

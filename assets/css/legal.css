@@ -582,16 +582,16 @@
 /* Print Styles */
 @media print {
     .legal-main {
-        background: white;
-        color: black;
+        background: var(--background);
+        color: var(--text-primary);
     }
     
     .policy-section,
     .toc-card,
     .contact-card,
     .updates-card {
-        background: white;
-        border: 1px solid #ccc;
+        background: var(--background);
+        border: 1px solid var(--border-color);
         box-shadow: none;
         break-inside: avoid;
     }

@@ -140,8 +140,9 @@ select:focus-visible,
     
     .btn:hover,
     .btn:focus {
-        background: #ffffff;
-        color: #000000;
+        background: var(--background-secondary);
+        color: var(--text-primary);
+        border: 2px solid var(--primary-color);
     }
 }
 
@@ -512,16 +513,16 @@ select:focus-visible,
     }
     
     body {
-        background: white !important;
-        color: black !important;
+        background: var(--background) !important;
+        color: var(--text-primary) !important;
     }
     
     .card,
     .btn,
     .form-input {
-        border: 1px solid #ccc !important;
-        background: white !important;
-        color: black !important;
+        border: 2px solid var(--border-color) !important;
+        background: var(--background) !important;
+        color: var(--text-primary) !important;
         box-shadow: none !important;
     }
     

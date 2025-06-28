@@ -377,8 +377,8 @@
     body {
         font-size: 12pt;
         line-height: 1.4;
-        color: black;
-        background: white;
+        color: var(--text-primary);
+        background: var(--background);
     }
     
     .section-container {
@@ -387,9 +387,9 @@
     }
     
     .btn {
-        border: 1px solid black;
-        background: white;
-        color: black;
+        border: 1px solid var(--border-color);
+        background: var(--background);
+        color: var(--text-primary);
     }
 }
 

@@ -235,7 +235,8 @@
 
 .floating-card {
     position: absolute;
-    background: white;
+    background: var(--background);
+    border: 1px solid var(--border-color);
     border-radius: var(--radius-xl);
     padding: var(--space-6);
     box-shadow: var(--shadow-xl);
@@ -361,7 +362,8 @@
 }
 
 .app-card {
-    background: white;
+    background: var(--background);
+    border: 1px solid var(--border-color);
     border-radius: var(--radius-2xl);
     overflow: hidden;
     box-shadow: var(--shadow-md);
@@ -503,7 +505,7 @@
     font-size: var(--font-size-5xl);
     font-weight: 800;
     margin-bottom: var(--space-2);
-    background: linear-gradient(45deg, #ffffff, #e0e7ff);
+    background: var(--gradient-primary);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -1060,26 +1062,90 @@
 
 /* Dark Mode Support for All Components */
 @media (prefers-color-scheme: dark) {
+    /* Enhanced card styling for dark mode */
+    .card,
+    .app-card,
+    .floating-card,
+    .post-card,
+    .skill-card,
+    .method-card,
+    .faq-item,
+    .achievement-item,
+    .newsletter-card,
+    .availability-card {
+        background: var(--card-background) !important;
+        border: 1px solid var(--border-color) !important;
+        color: var(--text-primary) !important;
+    }
+    
+    /* Form elements */
+    .form-input,
+    .form-textarea,
+    .form-select {
+        background: var(--form-background) !important;
+        border: 1px solid var(--border-color) !important;
+        color: var(--text-primary) !important;
+    }
+    
+    /* Button improvements */
+    .btn-primary {
+        background: var(--primary-color) !important;
+        border-color: var(--primary-color) !important;
+        color: white !important;
+    }
+    
+    .btn-secondary {
+        background: var(--background-tertiary) !important;
+        border-color: var(--border-color) !important;
+        color: var(--text-primary) !important;
+    }
+    
+    .btn-outline {
+        background: transparent !important;
+        border-color: var(--border-color) !important;
+        color: var(--text-primary) !important;
+    }
+    
+    .btn-outline:hover {
+        background: var(--surface-hover) !important;
+    }
     /* Loading screen */
     .loading-screen {
         background: var(--background-dark);
     }
     
-    .loader-text {
-        color: var(--text-primary);
+    /* Enhanced gradients for dark mode */
+    .bg-grid {
+        background-image: 
+            linear-gradient(rgba(59, 130, 246, 0.1) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(59, 130, 246, 0.1) 1px, transparent 1px);
     }
     
-    /* All card types */
-    .app-card,
-    .blog-card,
-    .skill-card,
-    .experience-card,
-    .service-card,
-    .testimonial-card {
-        background: var(--background-secondary) !important;
-        border: 1px solid var(--border-color);
-        color: var(--text-primary);
+    .bg-gradient {
+        background: radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
+                    radial-gradient(circle at 80% 20%, rgba(245, 158, 11, 0.1) 0%, transparent 50%),
+                    radial-gradient(circle at 40% 80%, rgba(6, 214, 160, 0.1) 0%, transparent 50%);
     }
+    
+    /* Placeholder improvements */
+    .placeholder-image {
+        background: var(--background-tertiary) !important;
+        border: 1px solid var(--border-color) !important;
+    }
+    
+    /* Enhanced text visibility */
+    .hero-title,
+    .section-title,
+    .app-title {
+        color: var(--text-primary) !important;
+    }
+    
+    .hero-subtitle,
+    .section-subtitle,
+    .app-description {
+        color: var(--text-secondary) !important;
+    }
+}
     
     .stats-overview {
         background: rgba(2, 6, 23, 0.9);
@@ -1422,17 +1488,15 @@
         text-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
     }
     
-    /* Philosophy section values - darker text for better readability */
+    /* Philosophy section values - better readability for dark mode */
     .value-item h4 {
-        color: #1f2937 !important;
-        font-weight: 800 !important;
-        text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+        color: var(--text-primary) !important;
+        font-weight: 700 !important;
     }
     
     .value-item p {
-        color: #374151 !important;
-        font-weight: 500 !important;
-        text-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
+        color: var(--text-secondary) !important;
+        font-weight: 400 !important;
     }
 }
 
