@@ -69,8 +69,26 @@
         z-index: var(--z-dropdown);
     }
     
+    [data-theme="dark"] .nav-menu {
+        background: rgba(15, 23, 42, 0.98);
+    }
+    
     .nav-menu.active {
         transform: translateX(0);
+    }
+    
+    .nav-actions {
+        flex-direction: row-reverse;
+        gap: var(--space-3);
+    }
+    
+    .theme-toggle {
+        width: 36px;
+        height: 36px;
+    }
+    
+    .theme-icon {
+        font-size: 1rem;
     }
     
     .nav-toggle {

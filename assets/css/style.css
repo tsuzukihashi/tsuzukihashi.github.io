@@ -274,7 +274,7 @@ p {
 .mt-16 { margin-top: var(--space-16); }
 
 /* Dark Mode Support */
-@media (prefers-color-scheme: dark) {
+[data-theme="dark"] {
     :root {
         --text-primary: #f8fafc;
         --text-secondary: #e2e8f0;

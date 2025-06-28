@@ -11,6 +11,7 @@ class TsuzukiSite {
         this.setupScrollEffects();
         this.initializeCounters();
         this.setupNavigation();
+        this.initializeTheme();
         this.hideLoadingScreen();
     }
 
@@ -82,6 +83,14 @@ class TsuzukiSite {
                 document.body.classList.remove('nav-open');
             }
         });
+
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        if (themeToggle) {
+            themeToggle.addEventListener('click', () => {
+                this.toggleTheme();
+            });
+        }
     }
 
     setupScrollEffects() {
@@ -261,6 +270,51 @@ class TsuzukiSite {
         });
     }
 
+    initializeTheme() {
+        // Check for saved theme or default to light mode
+        const savedTheme = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const defaultTheme = savedTheme || (prefersDark ? 'dark' : 'light');
+        
+        this.setTheme(defaultTheme);
+        
+        // Listen for system theme changes
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+            if (!localStorage.getItem('theme')) {
+                this.setTheme(e.matches ? 'dark' : 'light');
+            }
+        });
+    }
+
+    toggleTheme() {
+        const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+        this.setTheme(newTheme);
+        localStorage.setItem('theme', newTheme);
+    }
+
+    setTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        
+        // Update theme toggle button icon
+        const themeToggle = document.getElementById('theme-toggle');
+        if (themeToggle) {
+            const sunIcon = themeToggle.querySelector('.sun-icon');
+            const moonIcon = themeToggle.querySelector('.moon-icon');
+            
+            if (theme === 'dark') {
+                themeToggle.setAttribute('aria-label', 'ライトモードに切り替え');
+                themeToggle.setAttribute('title', 'ライトモードに切り替え');
+            } else {
+                themeToggle.setAttribute('aria-label', 'ダークモードに切り替え');
+                themeToggle.setAttribute('title', 'ダークモードに切り替え');
+            }
+        }
+        
+        // Dispatch custom event for theme change
+        window.dispatchEvent(new CustomEvent('themeChanged', { detail: { theme } }));
+    }
+
     hideLoadingScreen() {
         const loadingScreen = document.getElementById('loading-screen');
         
@@ -435,6 +489,14 @@ function setupKeyboardShortcuts() {
         if (e.altKey && e.key === 't') {
             e.preventDefault();
             window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        
+        // Alt + D: Toggle theme
+        if (e.altKey && e.key === 'd') {
+            e.preventDefault();
+            if (window.tsuzukiSite) {
+                window.tsuzukiSite.toggleTheme();
+            }
         }
     });
 }

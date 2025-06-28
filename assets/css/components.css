@@ -322,7 +322,7 @@
 }
 
 /* Dark Mode Specific Improvements */
-@media (prefers-color-scheme: dark) {
+[data-theme="dark"] {
     .achievement-metric {
         color: #ffffff; /* Pure white for maximum contrast */
         text-shadow: none; /* Remove any text effects that cause blur */
@@ -562,6 +562,69 @@
 .nav-link:hover::before,
 .nav-link.active::before {
     width: 100%;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+}
+
+.theme-toggle {
+    position: relative;
+    background: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--transition-base);
+    background: var(--background-secondary);
+    border: 1px solid var(--border-color);
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+    box-shadow: var(--shadow-md);
+}
+
+.theme-toggle:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+    transform: scale(1.1);
+}
+
+.theme-toggle:focus:not(:focus-visible) {
+    outline: none;
+}
+
+.theme-icon {
+    position: absolute;
+    font-size: 1.2rem;
+    transition: all var(--transition-base);
+}
+
+.sun-icon {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+}
+
+.moon-icon {
+    opacity: 0;
+    transform: rotate(180deg) scale(0.5);
+}
+
+[data-theme="dark"] .sun-icon {
+    opacity: 0;
+    transform: rotate(-180deg) scale(0.5);
+}
+
+[data-theme="dark"] .moon-icon {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
 }
 
 .nav-toggle {
@@ -1497,7 +1560,7 @@
 }
 
 /* Dark Mode Support for All Components */
-@media (prefers-color-scheme: dark) {
+[data-theme="dark"] {
     /* Enhanced card styling for dark mode */
     .card,
     .app-card,
