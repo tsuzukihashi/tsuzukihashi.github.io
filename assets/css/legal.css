@@ -160,7 +160,7 @@
 
 .toc-link:hover,
 .toc-link:focus {
-    background: var(--legal-bg);
+    background: var(--background-tertiary);
     color: var(--legal-accent);
     border-color: var(--legal-border);
     outline: none;

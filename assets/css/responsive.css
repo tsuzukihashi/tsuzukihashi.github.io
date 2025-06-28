@@ -58,7 +58,6 @@
         width: 100%;
         height: calc(100vh - var(--header-height));
         background: rgba(18, 18, 18, 0.98);
-        backdrop-filter: blur(10px);
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;

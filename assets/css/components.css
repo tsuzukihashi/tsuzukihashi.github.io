@@ -30,15 +30,14 @@
     right: 0;
     width: 100px;
     height: 100px;
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--background-secondary);
     border-radius: 50%;
     transform: translate(30%, -30%);
 }
 
 .status-badge {
     display: inline-block;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
+    background: var(--background-secondary);
     padding: var(--space-2) var(--space-4);
     border-radius: var(--radius-full);
     font-size: var(--font-size-sm);
@@ -71,8 +70,7 @@
     align-items: center;
     gap: var(--space-3);
     padding: var(--space-3);
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
+    background: var(--background-secondary);
     border-radius: var(--radius-md);
     transition: transform var(--transition-fast);
 }
@@ -399,14 +397,13 @@
     height: var(--header-height);
     background: var(--background);
     border-bottom: 1px solid var(--border-color);
-    backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border-color);
     z-index: var(--z-fixed);
     transition: all var(--transition-base);
 }
 
 .header.scrolled {
-    background: rgba(255, 255, 255, 0.98);
+    background: var(--background);
     box-shadow: var(--shadow-md);
 }
 
@@ -783,13 +780,12 @@
 }
 
 .tag {
-    background: rgba(255, 255, 255, 0.9);
+    background: var(--background-secondary);
     color: var(--text-primary);
     padding: var(--space-1) var(--space-3);
     border-radius: var(--radius-md);
     font-size: var(--font-size-sm);
     font-weight: 500;
-    backdrop-filter: blur(10px);
 }
 
 .app-content {
@@ -974,10 +970,9 @@
     gap: var(--space-6);
     margin: var(--space-8) 0;
     padding: var(--space-6);
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--background-secondary);
     border-radius: var(--radius-xl);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid var(--border-color);
 }
 
 .stats-overview .stat-item {
@@ -1091,13 +1086,12 @@
     position: absolute;
     top: var(--space-2);
     right: var(--space-2);
-    background: rgba(255, 255, 255, 0.95);
+    background: var(--background-secondary);
     color: var(--text-primary);
     padding: var(--space-1) var(--space-2);
     border-radius: var(--radius-md);
     font-size: var(--font-size-xs);
     font-weight: 600;
-    backdrop-filter: blur(10px);
 }
 
 .featured-badge {
@@ -1361,7 +1355,7 @@
 }
 
 .filter-btn {
-    background: rgba(255, 255, 255, 0.9);
+    background: var(--background-secondary);
     color: var(--text-primary);
     border: 1px solid var(--border-color);
     padding: var(--space-2) var(--space-4);
@@ -1370,7 +1364,6 @@
     font-weight: 700;
     cursor: pointer;
     transition: all var(--transition-base);
-    backdrop-filter: blur(10px);
 }
 
 .filter-btn:hover,
@@ -1400,7 +1393,7 @@
 .btn-icon-round {
     width: 40px;
     height: 40px;
-    background: rgba(255, 255, 255, 0.95);
+    background: var(--background-secondary);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -1408,7 +1401,6 @@
     color: var(--text-primary);
     text-decoration: none;
     transition: all var(--transition-base);
-    backdrop-filter: blur(10px);
     box-shadow: var(--shadow-sm);
 }
 
@@ -1503,72 +1495,61 @@
     .featured-title {
         color: #1f2937 !important;
         font-weight: 800 !important;
-        text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
-    }
+            }
     
     .featured-excerpt {
         color: #374151 !important;
         font-weight: 500 !important;
-        text-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
-    }
+            }
     
     .post-meta .post-category,
     .post-meta .post-date {
         color: #4b5563 !important;
         font-weight: 600 !important;
-        text-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
-    }
+            }
     
     /* About page category titles - darker text for better readability */
     .category-title {
         color: #1f2937 !important;
         font-weight: 800 !important;
-        text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
-    }
+            }
     
     .skill-name {
         color: #374151 !important;
         font-weight: 600 !important;
-        text-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
-    }
+            }
     
     .skill-level {
         color: #4b5563 !important;
         font-weight: 500 !important;
-        text-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
-    }
+            }
     
     /* Contact page method titles - darker text for better readability */
     .method-content h3 {
         color: #1f2937 !important;
         font-weight: 800 !important;
-        text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
-    }
+            }
     
     .method-content p {
         color: #374151 !important;
         font-weight: 500 !important;
-        text-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
-    }
+            }
     
     .detail-label,
     .detail-value {
         color: #4b5563 !important;
         font-weight: 600 !important;
-        text-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
-    }
+            }
     
     .form-title {
         color: #1f2937 !important;
         font-weight: 800 !important;
-        text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
-    }
+            }
     
     .form-subtitle {
         color: #374151 !important;
         font-weight: 500 !important;
-        text-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
-    }
+            }
     
     .app-description,
     .blog-excerpt,
@@ -1625,27 +1606,23 @@
     .achievement-content h3 {
         color: #1f2937 !important;
         font-weight: 800 !important;
-        text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
-    }
+            }
     
     .achievement-content p {
         color: #374151 !important;
         font-weight: 500 !important;
-        text-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
-    }
+            }
     
     /* Interests & Hobbies section - darker text for better readability */
     .interest-item h3 {
         color: #1f2937 !important;
         font-weight: 800 !important;
-        text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
-    }
+            }
     
     .interest-item p {
         color: #374151 !important;
         font-weight: 500 !important;
-        text-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
-    }
+            }
     
     /* Philosophy section values - better readability for dark mode */
     .value-item h4 {

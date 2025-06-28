@@ -109,7 +109,7 @@ select:focus-visible,
     
     .btn:hover,
     .btn:focus {
-        background: var(--background-secondary);
+        background: var(--background-tertiary);
         color: var(--text-primary);
         border: 2px solid var(--primary-color);
     }
@@ -278,12 +278,12 @@ select:focus-visible,
 .nav-link:hover,
 .nav-link:focus {
     color: var(--primary-color);
-    background: var(--background-secondary);
+    background: var(--background-tertiary);
 }
 
 .nav-link.active {
     color: var(--primary-color);
-    background: var(--background-secondary);
+    background: var(--background-tertiary);
     font-weight: 600;
 }
 
@@ -427,7 +427,7 @@ select:focus-visible,
 
 .breadcrumb-link:hover,
 .breadcrumb-link:focus {
-    background: var(--background-secondary);
+    background: var(--background-tertiary);
     text-decoration: underline;
 }
 
