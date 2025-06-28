@@ -1,8 +1,8 @@
-/* Legal Pages Styles - Dark Mode Optimized & Accessible */
+/* Legal Pages Styles - Accessible */
 
 /* Legal Page Variables */
 :root {
-    /* Legal-specific colors for light mode */
+    /* Legal-specific colors */
     --legal-bg: var(--background-secondary);
     --legal-card-bg: var(--background);
     --legal-text: var(--text-primary);
@@ -15,20 +15,6 @@
     --legal-shadow: var(--shadow-sm);
 }
 
-/* Dark mode overrides for legal pages */
-@media (prefers-color-scheme: dark) {
-    :root {
-        --legal-bg: var(--background);
-        --legal-card-bg: var(--background-secondary);
-        --legal-text: var(--text-primary);
-        --legal-text-secondary: var(--text-secondary);
-        --legal-border: var(--border-color);
-        --legal-success: #10b981;
-        --legal-warning: #f59e0b;
-        --legal-danger: #ef4444;
-        --legal-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
-    }
-}
 
 /* Legal Main Layout */
 .legal-main {

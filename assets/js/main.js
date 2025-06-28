@@ -11,13 +11,10 @@ class TsuzukiSite {
         this.setupScrollEffects();
         this.initializeCounters();
         this.setupNavigation();
-        this.initializeTheme();
         this.hideLoadingScreen();
     }
 
     setupEventListeners() {
-        // Setup theme toggle observer first (for dynamically loaded elements)
-        this.setupThemeToggleObserver();
         
         // Mobile navigation toggle
         const navToggle = document.getElementById('nav-toggle');
@@ -93,56 +90,8 @@ class TsuzukiSite {
             }
         });
 
-        // Theme toggle functionality - check if already exists
-        this.setupThemeToggle();
     }
 
-    setupThemeToggleObserver() {
-        // Watch for the theme toggle button to be added to the DOM
-        const observer = new MutationObserver((mutations) => {
-            mutations.forEach((mutation) => {
-                mutation.addedNodes.forEach((node) => {
-                    if (node.nodeType === Node.ELEMENT_NODE) {
-                        // Check if the theme toggle button was added
-                        const themeToggle = node.querySelector?.('#theme-toggle') || 
-                                          (node.id === 'theme-toggle' ? node : null);
-                        
-                        if (themeToggle && !themeToggle.hasAttribute('data-theme-listener')) {
-                            this.attachThemeToggleListener(themeToggle);
-                        }
-                        
-                        // Also check for header component
-                        if (node.querySelector?.('.header') || node.classList?.contains('header')) {
-                            const headerThemeToggle = document.getElementById('theme-toggle');
-                            if (headerThemeToggle && !headerThemeToggle.hasAttribute('data-theme-listener')) {
-                                this.attachThemeToggleListener(headerThemeToggle);
-                            }
-                        }
-                    }
-                });
-            });
-        });
-        
-        observer.observe(document.body, {
-            childList: true,
-            subtree: true
-        });
-    }
-
-    setupThemeToggle() {
-        const themeToggle = document.getElementById('theme-toggle');
-        if (themeToggle && !themeToggle.hasAttribute('data-theme-listener')) {
-            this.attachThemeToggleListener(themeToggle);
-        }
-    }
-
-    attachThemeToggleListener(themeToggle) {
-        themeToggle.setAttribute('data-theme-listener', 'true');
-        themeToggle.addEventListener('click', () => {
-            this.toggleTheme();
-        });
-        console.log('Theme toggle listener attached successfully');
-    }
 
     setupScrollEffects() {
         let ticking = false;
@@ -321,50 +270,6 @@ class TsuzukiSite {
         });
     }
 
-    initializeTheme() {
-        // Check for saved theme or default to light mode
-        const savedTheme = localStorage.getItem('theme');
-        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        const defaultTheme = savedTheme || (prefersDark ? 'dark' : 'light');
-        
-        this.setTheme(defaultTheme);
-        
-        // Listen for system theme changes
-        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-            if (!localStorage.getItem('theme')) {
-                this.setTheme(e.matches ? 'dark' : 'light');
-            }
-        });
-    }
-
-    toggleTheme() {
-        const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
-        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-        this.setTheme(newTheme);
-        localStorage.setItem('theme', newTheme);
-    }
-
-    setTheme(theme) {
-        document.documentElement.setAttribute('data-theme', theme);
-        
-        // Update theme toggle button icon
-        const themeToggle = document.getElementById('theme-toggle');
-        if (themeToggle) {
-            const sunIcon = themeToggle.querySelector('.sun-icon');
-            const moonIcon = themeToggle.querySelector('.moon-icon');
-            
-            if (theme === 'dark') {
-                themeToggle.setAttribute('aria-label', 'ライトモードに切り替え');
-                themeToggle.setAttribute('title', 'ライトモードに切り替え');
-            } else {
-                themeToggle.setAttribute('aria-label', 'ダークモードに切り替え');
-                themeToggle.setAttribute('title', 'ダークモードに切り替え');
-            }
-        }
-        
-        // Dispatch custom event for theme change
-        window.dispatchEvent(new CustomEvent('themeChanged', { detail: { theme } }));
-    }
 
     hideLoadingScreen() {
         const loadingScreen = document.getElementById('loading-screen');
@@ -542,13 +447,6 @@ function setupKeyboardShortcuts() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
         
-        // Alt + D: Toggle theme
-        if (e.altKey && e.key === 'd') {
-            e.preventDefault();
-            if (window.tsuzukiSite) {
-                window.tsuzukiSite.toggleTheme();
-            }
-        }
     });
 }
 

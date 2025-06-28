@@ -69,9 +69,6 @@
         z-index: var(--z-dropdown);
     }
     
-    [data-theme="dark"] .nav-menu {
-        background: rgba(15, 23, 42, 0.98);
-    }
     
     .nav-menu.active {
         transform: translateX(0);
@@ -82,14 +79,6 @@
         gap: var(--space-3);
     }
     
-    .theme-toggle {
-        width: 36px;
-        height: 36px;
-    }
-    
-    .theme-icon {
-        font-size: 1rem;
-    }
     
     .nav-toggle {
         display: flex;
@@ -329,40 +318,6 @@
     }
 }
 
-/* Dark Mode Support */
-@media (prefers-color-scheme: dark) {
-    :root {
-        --text-primary: #f9fafb;
-        --text-secondary: #d1d5db;
-        --text-light: #9ca3af;
-        --background: #111827;
-        --background-secondary: #1f2937;
-        --border-color: #374151;
-    }
-    
-    .header {
-        background: rgba(17, 24, 39, 0.95);
-        border-bottom-color: var(--border-color);
-    }
-    
-    .featured-apps {
-        background: var(--background-secondary);
-    }
-    
-    .app-card,
-    .floating-card {
-        background: var(--background-secondary);
-        border: 1px solid var(--border-color);
-    }
-    
-    .placeholder-image {
-        background: var(--background);
-    }
-    
-    .nav-menu {
-        background: rgba(17, 24, 39, 0.98);
-    }
-}
 
 /* Print Styles */
 @media print {

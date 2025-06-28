@@ -1,6 +1,6 @@
-/* Accessibility & Dark Mode Global Enhancements */
+/* Accessibility Global Enhancements */
 
-/* Enhanced Dark Mode Variables */
+/* Enhanced Color Variables */
 :root {
     /* Enhanced color system for better accessibility */
     --color-primary-50: #eff6ff;
@@ -29,37 +29,6 @@
     --interactive-spacing: var(--space-3);
 }
 
-/* Dark mode color overrides with better contrast */
-@media (prefers-color-scheme: dark) {
-    :root {
-        /* Enhanced dark mode colors */
-        --color-success: #34d399;
-        --color-warning: #fbbf24;
-        --color-error: #f87171;
-        --color-info: #22d3ee;
-        
-        /* Better contrast for text */
-        --text-primary: #f8fafc;
-        --text-secondary: #e2e8f0;
-        --text-light: #cbd5e1;
-        
-        /* Enhanced backgrounds */
-        --background: #0f172a;
-        --background-secondary: #1e293b;
-        --background-tertiary: #334155;
-        --background-elevated: #475569;
-        
-        /* Better borders */
-        --border-color: #334155;
-        --border-color-light: #475569;
-        
-        /* Enhanced shadows for dark mode */
-        --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.8);
-        --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.6), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
-        --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.6), 0 4px 6px -2px rgba(0, 0, 0, 0.4);
-        --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.7), 0 10px 10px -5px rgba(0, 0, 0, 0.4);
-    }
-}
 
 /* Focus Management */
 *:focus {
