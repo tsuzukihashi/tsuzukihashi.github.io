@@ -1,5 +1,441 @@
 /* Component Styles - Dark Mode Optimized & Accessible */
 
+/* Career Section */
+.career {
+    padding: var(--space-section) 0;
+    background: var(--surface);
+    border-top: 1px solid var(--border-color);
+}
+
+.career-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-12);
+}
+
+/* Current Status */
+.current-status {
+    position: relative;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: var(--radius-lg);
+    padding: var(--space-8);
+    color: white;
+    overflow: hidden;
+}
+
+.current-status::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transform: translate(30%, -30%);
+}
+
+.status-badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: var(--space-2) var(--space-4);
+    border-radius: var(--radius-full);
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: var(--space-4);
+}
+
+.status-title {
+    font-size: var(--font-size-2xl);
+    font-weight: 700;
+    margin-bottom: var(--space-2);
+}
+
+.status-location {
+    font-size: var(--font-size-lg);
+    opacity: 0.9;
+    margin-bottom: var(--space-6);
+}
+
+.status-highlights {
+    display: grid;
+    gap: var(--space-3);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.highlight-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-3);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: var(--radius-md);
+    transition: transform var(--transition-fast);
+}
+
+.highlight-item:hover {
+    transform: translateY(-2px);
+}
+
+.highlight-icon {
+    font-size: var(--font-size-xl);
+    flex-shrink: 0;
+}
+
+/* Achievements Grid */
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-6);
+}
+
+.achievement-card {
+    background: var(--background);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: var(--space-6);
+    text-align: center;
+    transition: all var(--transition-fast);
+    position: relative;
+    overflow: hidden;
+}
+
+.achievement-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(var(--primary-color-rgb), 0.1), transparent);
+    transition: left var(--transition-fast);
+}
+
+.achievement-card:hover::before {
+    left: 100%;
+}
+
+.achievement-card:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(var(--primary-color-rgb), 0.15);
+}
+
+.achievement-icon {
+    font-size: 3rem;
+    margin-bottom: var(--space-4);
+    display: block;
+}
+
+.achievement-title {
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    margin-bottom: var(--space-2);
+    color: var(--text-primary);
+}
+
+.achievement-metric {
+    font-size: var(--font-size-2xl);
+    font-weight: 800;
+    color: var(--primary-color);
+    margin-bottom: var(--space-2);
+}
+
+.achievement-desc {
+    color: var(--text-secondary);
+    font-size: var(--font-size-md);
+    line-height: 1.6;
+}
+
+/* Skills & Experience */
+.skills-experience {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-8);
+}
+
+.subsection-title {
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    margin-bottom: var(--space-6);
+    color: var(--text-primary);
+    position: relative;
+    padding-bottom: var(--space-3);
+}
+
+.subsection-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background: var(--primary-color);
+    border-radius: var(--radius-full);
+}
+
+/* Skills */
+.skills-grid {
+    display: grid;
+    gap: var(--space-4);
+}
+
+.skill-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-4);
+    background: var(--surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    transition: all var(--transition-fast);
+}
+
+.skill-item:hover {
+    border-color: var(--primary-color);
+    transform: translateX(4px);
+}
+
+.skill-name {
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.skill-score {
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: var(--font-size-lg);
+}
+
+.skill-badge {
+    background: var(--primary-color);
+    color: white;
+    padding: var(--space-1) var(--space-3);
+    border-radius: var(--radius-full);
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+}
+
+.skills-note {
+    margin-top: var(--space-4);
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    padding-left: var(--space-8);
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: var(--space-4);
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--border-color);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: var(--space-6);
+    padding-bottom: var(--space-6);
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: calc(-1 * var(--space-8) + var(--space-3));
+    top: var(--space-2);
+    width: 12px;
+    height: 12px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    border: 2px solid var(--background);
+}
+
+.timeline-year {
+    font-size: var(--font-size-sm);
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: var(--space-2);
+}
+
+.timeline-content h5 {
+    font-size: var(--font-size-lg);
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: var(--space-1);
+}
+
+.timeline-content p {
+    color: var(--text-secondary);
+    font-size: var(--font-size-md);
+}
+
+/* Strengths */
+.strengths-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-6);
+}
+
+.strength-item {
+    text-align: center;
+    padding: var(--space-6);
+    background: var(--surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    transition: all var(--transition-fast);
+}
+
+.strength-item:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(var(--primary-color-rgb), 0.15);
+}
+
+.strength-icon {
+    font-size: 2.5rem;
+    margin-bottom: var(--space-4);
+    display: block;
+}
+
+.strength-item h5 {
+    font-size: var(--font-size-lg);
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: var(--space-3);
+}
+
+.strength-item p {
+    color: var(--text-secondary);
+    font-size: var(--font-size-md);
+    line-height: 1.6;
+}
+
+/* Dark Mode Specific Improvements */
+@media (prefers-color-scheme: dark) {
+    .achievement-metric {
+        color: #ffffff; /* Pure white for maximum contrast */
+        text-shadow: none; /* Remove any text effects that cause blur */
+        font-weight: 900; /* Increase weight for better readability */
+    }
+    
+    .achievement-title {
+        color: #ffffff; /* Pure white for titles */
+        text-shadow: none; /* Remove any blur-causing effects */
+        font-weight: 700; /* Ensure strong font weight */
+    }
+    
+    .achievement-desc {
+        color: #f1f5f9; /* Very light gray, almost white */
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    
+    .status-title {
+        text-shadow: none; /* Remove text shadow that can cause blur */
+        font-weight: 800; /* Increase weight for better visibility */
+    }
+    
+    .status-location {
+        opacity: 1; /* Full opacity instead of 0.9 for better readability */
+        color: rgba(255, 255, 255, 0.95);
+    }
+    
+    .highlight-item {
+        background: rgba(255, 255, 255, 0.15); /* Increase opacity for better contrast */
+        border: 1px solid rgba(255, 255, 255, 0.1); /* Add subtle border */
+        color: #ffffff; /* White text for highlight items */
+    }
+    
+    .subsection-title {
+        color: #ffffff; /* Pure white for section titles */
+        text-shadow: none; /* Remove any blur-causing effects */
+        font-weight: 700; /* Ensure strong font weight */
+    }
+    
+    .strength-item h5 {
+        color: #ffffff; /* Pure white for strength titles */
+        text-shadow: none; /* Remove any blur-causing effects */
+        font-weight: 700; /* Ensure strong font weight */
+    }
+    
+    .strength-item p {
+        color: #f1f5f9; /* Very light gray for descriptions */
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    
+    /* Timeline improvements */
+    .timeline-content h5 {
+        color: #ffffff; /* Pure white for company names */
+        font-weight: 700;
+    }
+    
+    .timeline-content p {
+        color: #f1f5f9; /* Very light gray for job descriptions */
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    
+    /* Skills improvements */
+    .skill-name {
+        color: #ffffff; /* Pure white for skill names */
+        font-weight: 600;
+    }
+    
+    /* Fix backdrop-filter blur issues */
+    .status-badge {
+        background: rgba(255, 255, 255, 0.25);
+        backdrop-filter: blur(8px); /* Reduce blur intensity */
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    .highlight-item {
+        backdrop-filter: blur(6px); /* Reduce blur for better text clarity */
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skills-experience {
+        grid-template-columns: 1fr;
+        gap: var(--space-6);
+    }
+    
+    .achievements-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .strengths-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .status-highlights {
+        grid-template-columns: 1fr;
+    }
+    
+    .current-status {
+        padding: var(--space-6);
+    }
+    
+    .status-title {
+        font-size: var(--font-size-xl);
+    }
+}
+
 /* Loading Screen */
 .loading-screen {
     position: fixed;

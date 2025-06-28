@@ -6,6 +6,8 @@
     --primary-dark: #1d4ed8;
     --secondary-color: #06d6a0;
     --accent-color: #f59e0b;
+    --primary-color-rgb: 37, 99, 235;
+    --secondary-color-rgb: 6, 214, 160;
     --text-primary: #111827;
     --text-secondary: #374151;
     --text-light: #6b7280;
@@ -287,6 +289,8 @@ p {
         --card-background: var(--background-secondary);
         --form-background: var(--background-secondary);
         --button-background: var(--background-tertiary);
+        --primary-color-rgb: 59, 130, 246;
+        --secondary-color-rgb: 5, 150, 105;
         
         /* Enhanced gradients for dark mode */
         --gradient-primary: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
