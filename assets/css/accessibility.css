@@ -64,7 +64,7 @@ select:focus-visible,
     top: -100px;
     left: var(--space-4);
     background: var(--primary-color);
-    color: white;
+    color: var(--background);
     padding: var(--space-3) var(--space-4);
     text-decoration: none;
     border-radius: 4px;
@@ -94,11 +94,11 @@ select:focus-visible,
 /* High Contrast Mode Support */
 @media (prefers-contrast: high) {
     :root {
-        --border-color: #000000;
-        --text-primary: #ffffff;
-        --text-secondary: #ffffff;
-        --background: #000000;
-        --background-secondary: #1a1a1a;
+        --border-color: var(--gray-600);
+        --text-primary: var(--gray-100);
+        --text-secondary: var(--gray-300);
+        --background: var(--gray-900);
+        --background-secondary: var(--gray-800);
     }
     
     .card,
@@ -159,7 +159,7 @@ select:focus-visible,
 
 .btn-primary {
     background: var(--primary-color);
-    color: white;
+    color: var(--background);
     border-color: var(--primary-color);
 }
 
@@ -188,7 +188,7 @@ select:focus-visible,
 
 .btn-outline:hover:not(:disabled) {
     background: var(--primary-color);
-    color: white;
+    color: var(--background);
 }
 
 /* Enhanced Form Controls */
@@ -375,7 +375,7 @@ select:focus-visible,
     width: 50px;
     height: 50px;
     background: var(--primary-color);
-    color: white;
+    color: var(--background);
     border: none;
     border-radius: 50%;
     cursor: pointer;
@@ -496,7 +496,7 @@ select:focus-visible,
     }
     
     a {
-        color: black !important;
+        color: var(--text-primary) !important;
         text-decoration: underline !important;
     }
     

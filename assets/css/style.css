@@ -1,26 +1,30 @@
 /* Main Styles */
 
 :root {
-    /* Colors */
-    --primary-color: #2563eb;
-    --primary-dark: #1d4ed8;
-    --secondary-color: #06d6a0;
-    --accent-color: #f59e0b;
-    --primary-color-rgb: 37, 99, 235;
-    --secondary-color-rgb: 6, 214, 160;
-    --text-primary: #111827;
-    --text-secondary: #374151;
-    --text-light: #6b7280;
-    --background: #ffffff;
-    --background-secondary: #f9fafb;
-    --background-dark: #111827;
-    --border-color: #e5e7eb;
-    --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    --gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-    --gradient-accent: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    /* Colors - Programmer-friendly dark theme */
+    --primary-color: #00d9ff;
+    --primary-dark: #00b8d4;
+    --secondary-color: #00e676;
+    --accent-color: #ff6b35;
+    --primary-color-rgb: 0, 217, 255;
+    --secondary-color-rgb: 0, 230, 118;
+    --text-primary: #e8f4f8;
+    --text-secondary: #b0bec5;
+    --text-light: #78909c;
+    --background: #0d1117;
+    --background-secondary: #161b22;
+    --background-tertiary: #21262d;
+    --background-dark: #010409;
+    --border-color: #30363d;
+    --surface: #161b22;
+    --surface-hover: #21262d;
+    --gradient-primary: linear-gradient(135deg, #00d9ff 0%, #0091ea 100%);
+    --gradient-secondary: linear-gradient(135deg, #00e676 0%, #00c853 100%);
+    --gradient-accent: linear-gradient(135deg, #ff6b35 0%, #ff5722 100%);
     
-    /* Typography */
-    --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    /* Typography - Programmer-friendly fonts */
+    --font-family: 'SF Mono', 'Monaco', 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+    --font-family-ui: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     --font-size-xs: 0.75rem;
     --font-size-sm: 0.875rem;
     --font-size-base: 1rem;
@@ -58,11 +62,13 @@
     --radius-xl: 1rem;
     --radius-2xl: 1.5rem;
     
-    /* Shadows */
-    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    /* Shadows - Enhanced for dark theme */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.6), 0 10px 10px -5px rgba(0, 0, 0, 0.4);
+    --shadow-glow: 0 0 20px rgba(0, 217, 255, 0.2);
+    --shadow-glow-secondary: 0 0 20px rgba(0, 230, 118, 0.2);
     
     /* Transitions */
     --transition-fast: 0.15s ease-out;
@@ -85,12 +91,14 @@ html {
 }
 
 body {
-    font-family: var(--font-family);
+    font-family: var(--font-family-ui);
     font-size: var(--font-size-base);
     line-height: 1.6;
     color: var(--text-primary);
     background-color: var(--background);
     overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 /* Typography */
@@ -98,6 +106,50 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
     line-height: 1.2;
     margin-bottom: var(--space-4);
+    color: var(--text-primary);
+}
+
+/* Code and monospace elements */
+code, pre, .code {
+    font-family: var(--font-family);
+    background: var(--background-tertiary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    color: var(--primary-color);
+}
+
+code {
+    padding: 0.125rem 0.25rem;
+    font-size: 0.9em;
+}
+
+pre {
+    padding: var(--space-4);
+    overflow-x: auto;
+    margin: var(--space-4) 0;
+}
+
+pre code {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+/* Terminal-style elements */
+.terminal {
+    background: var(--background-dark);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: var(--space-4);
+    font-family: var(--font-family);
+    color: var(--secondary-color);
+    position: relative;
+}
+
+.terminal::before {
+    content: '$ ';
+    color: var(--primary-color);
+    font-weight: bold;
 }
 
 h1 { font-size: var(--font-size-5xl); }
@@ -203,11 +255,11 @@ p {
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: var(--shadow-xl);
+    box-shadow: var(--shadow-xl), var(--shadow-glow);
 }
 
 .btn-secondary {
-    background: var(--background);
+    background: var(--background-secondary);
     color: var(--text-primary);
     border: 2px solid var(--border-color);
 }
@@ -216,7 +268,8 @@ p {
     border-color: var(--primary-color);
     color: var(--primary-color);
     transform: translateY(-2px);
-    box-shadow: var(--shadow-lg);
+    box-shadow: var(--shadow-lg), var(--shadow-glow);
+    background: var(--background-tertiary);
 }
 
 .btn-outline {
@@ -227,9 +280,9 @@ p {
 
 .btn-outline:hover {
     background: var(--primary-color);
-    color: white;
+    color: var(--background);
     transform: translateY(-2px);
-    box-shadow: var(--shadow-lg);
+    box-shadow: var(--shadow-lg), var(--shadow-glow);
 }
 
 .btn-icon {

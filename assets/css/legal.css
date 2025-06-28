@@ -315,7 +315,7 @@
     width: 40px;
     height: 40px;
     background: var(--legal-accent);
-    color: white;
+    color: var(--background);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -530,7 +530,7 @@
 /* High Contrast Mode Support */
 @media (prefers-contrast: high) {
     :root {
-        --legal-border: #000000;
+        --legal-border: var(--border-color);
         --legal-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
     }
     
@@ -576,7 +576,7 @@
     .toc-card,
     .contact-card,
     .updates-card {
-        background: var(--background);
+        background: var(--background-secondary);
         border: 1px solid var(--border-color);
         box-shadow: none;
         break-inside: avoid;
