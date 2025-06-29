@@ -249,7 +249,7 @@ p {
 
 .btn-primary {
     background: var(--gradient-primary);
-    color: white;
+    color: var(--background-dark);
     box-shadow: var(--shadow-md);
 }
 

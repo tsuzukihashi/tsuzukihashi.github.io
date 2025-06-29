@@ -19,7 +19,7 @@
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     border-radius: var(--radius-lg);
     padding: var(--space-8);
-    color: white;
+    color: var(--background-dark);
     overflow: hidden;
 }
 
@@ -211,7 +211,7 @@
 
 .skill-badge {
     background: var(--primary-color);
-    color: white;
+    color: var(--background-dark);
     padding: var(--space-1) var(--space-3);
     border-radius: var(--radius-full);
     font-size: var(--font-size-sm);
@@ -841,7 +841,7 @@
 .stats {
     padding: var(--space-20) 0;
     background: var(--gradient-primary);
-    color: white;
+    color: var(--background-dark);
 }
 
 .stats-grid {
@@ -873,7 +873,7 @@
 /* Footer */
 .footer {
     background: var(--background-dark);
-    color: white;
+    color: var(--background-dark);
     padding: var(--space-20) 0 var(--space-8);
 }
 
@@ -914,7 +914,7 @@
     font-size: var(--font-size-lg);
     font-weight: 600;
     margin-bottom: var(--space-4);
-    color: white;
+    color: var(--background-dark);
 }
 
 .footer-list {
@@ -929,7 +929,7 @@
 }
 
 .footer-list a:hover {
-    color: white;
+    color: var(--background-dark);
     transform: translateX(4px);
 }
 
@@ -948,7 +948,7 @@
 }
 
 .social-link:hover {
-    color: white;
+    color: var(--background-dark);
     transform: translateX(4px);
 }
 
@@ -1096,47 +1096,47 @@
 
 .featured-badge {
     background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-    color: white;
+    color: var(--background-dark);
 }
 
 .award-badge {
     background: linear-gradient(135deg, #f59e0b, #d97706);
-    color: white;
+    color: var(--background-dark);
 }
 
 .rapid-badge {
     background: linear-gradient(135deg, #10b981, #047857);
-    color: white;
+    color: var(--background-dark);
 }
 
 .perseverance-badge {
     background: linear-gradient(135deg, #8b5cf6, #7c3aed);
-    color: white;
+    color: var(--background-dark);
 }
 
 .debut-badge {
     background: linear-gradient(135deg, #ec4899, #db2777);
-    color: white;
+    color: var(--background-dark);
 }
 
 .community-badge {
     background: linear-gradient(135deg, #f97316, #ea580c);
-    color: white;
+    color: var(--background-dark);
 }
 
 .firebase-badge {
     background: linear-gradient(135deg, #ff5722, #e53e3e);
-    color: white;
+    color: var(--background-dark);
 }
 
 .ai-badge {
     background: linear-gradient(135deg, #06b6d4, #0891b2);
-    color: white;
+    color: var(--background-dark);
 }
 
 .platform-badge {
     background: linear-gradient(135deg, #6366f1, #4f46e5);
-    color: white;
+    color: var(--background-dark);
 }
 
 /* Gradient Backgrounds for Categories */
@@ -1308,7 +1308,7 @@
 
 .show-more-btn {
     background: var(--gradient-primary);
-    color: white;
+    color: var(--background-dark);
     border: none;
     padding: var(--space-4) var(--space-8);
     border-radius: var(--radius-xl);
@@ -1369,7 +1369,7 @@
 .filter-btn:hover,
 .filter-btn.active {
     background: var(--gradient-primary);
-    color: white;
+    color: var(--background-dark);
     border-color: transparent;
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
@@ -1646,7 +1646,7 @@
     background: var(--gradient-primary);
     border: none;
     border-radius: 50%;
-    color: white;
+    color: var(--background-dark);
     cursor: pointer;
     display: flex;
     align-items: center;
