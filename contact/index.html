@@ -48,273 +48,366 @@
     <!-- Main Content -->
     <main class="main contact-main">
         <!-- Hero Section -->
-        <section class="contact-hero">
+        <section class="portfolio-hero">
             <div class="section-container">
                 <div class="hero-content">
-                    <div class="contact-icon scroll-reveal animate-float"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
-                    <h1 class="hero-title scroll-reveal">Get in Touch</h1>
+                    <h1 class="hero-title scroll-reveal">
+                        <span class="title-line">Contact</span>
+                    </h1>
                     <p class="hero-subtitle scroll-reveal">
                         プロジェクトのご相談、技術的な質問、コラボレーションなど<br>
                         お気軽にお声かけください。
                     </p>
-                    <div class="response-time scroll-reveal">
-                        <span class="time-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg></span>
-                        <span class="time-text">個人開発のため返信にお時間をいただく場合があります</span>
+                    
+                    <!-- Stats Overview -->
+                    <div class="stats-overview scroll-reveal">
+                        <div class="stat-item">
+                            <div class="stat-number">24-48h</div>
+                            <div class="stat-label">レスポンス時間</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">3</div>
+                            <div class="stat-label">連絡手段</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">可能</div>
+                            <div class="stat-label">プロジェクト相談</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Filter Buttons -->
+                    <div class="filter-buttons scroll-reveal">
+                        <button class="filter-btn active" data-filter="all">All Options</button>
+                        <button class="filter-btn" data-filter="social">ソーシャル</button>
+                        <button class="filter-btn" data-filter="technical">技術相談</button>
+                        <button class="filter-btn" data-filter="business">ビジネス</button>
+                        <button class="filter-btn" data-filter="form">フォーム</button>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Contact Methods -->
-        <section class="contact-methods">
+        <!-- Contact Methods Grid -->
+        <section class="apps-showcase">
             <div class="section-container">
-                <div class="section-header">
-                    <h2 class="section-title scroll-reveal">Contact Methods</h2>
-                    <p class="section-subtitle scroll-reveal">お好みの方法でお気軽にお問い合わせください</p>
-                </div>
-                
-                <div class="methods-grid">
-                    <!-- Twitter -->
-                    <div class="method-card hover-lift scroll-reveal" data-aos="fade-up">
-                        <div class="method-icon">
-                            <span class="icon-bg twitter-bg"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></span>
-                        </div>
-                        <div class="method-content">
-                            <h3>Twitter / X</h3>
-                            <p>最も迅速にご対応できる連絡手段です。DM または メンションでお気軽にどうぞ。</p>
-                            <div class="method-details">
-                                <span class="detail-label">Response Time:</span>
-                                <span class="detail-value">数時間以内</span>
+                <div class="apps-grid portfolio-grid" id="contact-grid">
+                    <!-- Twitter / X -->
+                    <div class="app-card hover-lift featured" data-category="social" data-aos="fade-up">
+                        <div class="app-image">
+                            <div class="placeholder-image gradient-bg-social">
+                                <div class="placeholder-content">
+                                    <div class="placeholder-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></div>
+                                    <div class="featured-badge">Fastest</div>
+                                </div>
                             </div>
-                            <div class="method-action">
-                                <a href="https://twitter.com/tsuzuki817" target="_blank" rel="noopener" class="btn btn-primary">
-                                    <span>@tsuzuki817</span>
-                                    <i class="btn-icon">↗</i>
-                                </a>
+                            <div class="app-overlay">
+                                <div class="app-tags">
+                                    <span class="tag tag-social">ソーシャル</span>
+                                    <span class="tag tag-featured">推奨</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app-content">
+                            <h3 class="app-title">Twitter / X</h3>
+                            <p class="app-description">最も迅速にご対応できる連絡手段です。DM または メンションでお気軽にどうぞ。個人開発者として日々活動している様子もご覧いただけます。</p>
+                            <div class="app-meta">
+                                <div class="app-stats">
+                                    <span class="stat-item">
+                                        <i class="stat-icon">⚡</i>
+                                        <span class="stat-value">数時間以内</span>
+                                    </span>
+                                    <span class="stat-item">
+                                        <i class="stat-icon">🎯</i>
+                                        <span class="stat-value">最速対応</span>
+                                    </span>
+                                </div>
+                                <div class="app-tech">
+                                    <span class="tech-tag">@tsuzuki817</span>
+                                    <span class="tech-tag">DM対応</span>
+                                    <span class="tech-tag">即レス</span>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- GitHub -->
-                    <div class="method-card hover-lift scroll-reveal" data-aos="fade-up" data-aos-delay="100">
-                        <div class="method-icon">
-                            <span class="icon-bg github-bg"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></span>
-                        </div>
-                        <div class="method-content">
-                            <h3>GitHub</h3>
-                            <p>技術的な質問やコードに関するディスカッションはGitHubでも承ります。</p>
-                            <div class="method-details">
-                                <span class="detail-label">Best For:</span>
-                                <span class="detail-value">技術的な質問</span>
+                    <div class="app-card hover-lift award-winner" data-category="technical" data-aos="fade-up" data-aos-delay="100">
+                        <div class="app-image">
+                            <div class="placeholder-image gradient-bg-utility">
+                                <div class="placeholder-content">
+                                    <div class="placeholder-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></div>
+                                    <div class="award-badge">Tech Expert</div>
+                                </div>
                             </div>
-                            <div class="method-action">
-                                <a href="https://github.com/tsuzuki817" target="_blank" rel="noopener" class="btn btn-secondary">
-                                    <span>GitHub Profile</span>
-                                    <i class="btn-icon">↗</i>
-                                </a>
+                            <div class="app-overlay">
+                                <div class="app-tags">
+                                    <span class="tag tag-technical">技術相談</span>
+                                    <span class="tag tag-award">Expert</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app-content">
+                            <h3 class="app-title">GitHub</h3>
+                            <p class="app-description">技術的な質問やコードに関するディスカッションはGitHubでも承ります。Issue作成やPR、コードレビューのご相談もお気軽にどうぞ。</p>
+                            <div class="app-meta">
+                                <div class="app-stats">
+                                    <span class="stat-item">
+                                        <i class="stat-icon">💻</i>
+                                        <span class="stat-value">技術特化</span>
+                                    </span>
+                                    <span class="stat-item">
+                                        <i class="stat-icon">🔧</i>
+                                        <span class="stat-value">コード相談</span>
+                                    </span>
+                                </div>
+                                <div class="app-tech">
+                                    <span class="tech-tag">GitHub</span>
+                                    <span class="tech-tag">Code Review</span>
+                                    <span class="tech-tag">Open Source</span>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Email -->
-                    <div class="method-card hover-lift scroll-reveal" data-aos="fade-up" data-aos-delay="200">
-                        <div class="method-icon">
-                            <span class="icon-bg email-bg"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span>
-                        </div>
-                        <div class="method-content">
-                            <h3>Email</h3>
-                            <p>詳細な内容やビジネス関連のお問い合わせは、下記のフォームからお送りください。</p>
-                            <div class="method-details">
-                                <span class="detail-label">Response Time:</span>
-                                <span class="detail-value">24-48時間</span>
+                    <!-- Email Form -->
+                    <div class="app-card hover-lift" data-category="business form" data-aos="fade-up" data-aos-delay="200">
+                        <div class="app-image">
+                            <div class="placeholder-image gradient-bg-productivity">
+                                <div class="placeholder-content">
+                                    <div class="placeholder-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+                                    <div class="status-badge">Formal</div>
+                                </div>
                             </div>
-                            <div class="method-action">
-                                <a href="#contact-form" class="btn btn-outline">
-                                    <span>Contact Form</span>
-                                    <i class="btn-icon">↓</i>
-                                </a>
+                            <div class="app-overlay">
+                                <div class="app-tags">
+                                    <span class="tag tag-business">ビジネス</span>
+                                    <span class="tag tag-form">フォーム</span>
+                                </div>
                             </div>
                         </div>
+                        <div class="app-content">
+                            <h3 class="app-title">Contact Form</h3>
+                            <p class="app-description">詳細な内容やビジネス関連のお問い合わせは、下記のフォームからお送りください。プロジェクトの詳細やご予算などもこちらからどうぞ。</p>
+                            <div class="app-meta">
+                                <div class="app-stats">
+                                    <span class="stat-item">
+                                        <i class="stat-icon">📧</i>
+                                        <span class="stat-value">24-48時間</span>
+                                    </span>
+                                    <span class="stat-item">
+                                        <i class="stat-icon">📋</i>
+                                        <span class="stat-value">詳細対応</span>
+                                    </span>
+                                </div>
+                                <div class="app-tech">
+                                    <span class="tech-tag">Contact Form</span>
+                                    <span class="tech-tag">Business</span>
+                                    <span class="tech-tag">Project</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Consultation -->
+                    <div class="app-card hover-lift ai-powered" data-category="business technical" data-aos="fade-up" data-aos-delay="300">
+                        <div class="app-image">
+                            <div class="placeholder-image gradient-bg-photo">
+                                <div class="placeholder-content">
+                                    <div class="placeholder-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11 12 8 22 8 13 19 11 13 5 11 9 11z"/><path d="M7 21h6"/><path d="M12 12v3"/></svg></div>
+                                    <div class="ai-badge">Consultation</div>
+                                </div>
+                            </div>
+                            <div class="app-overlay">
+                                <div class="app-tags">
+                                    <span class="tag tag-business">ビジネス</span>
+                                    <span class="tag tag-technical">技術相談</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app-content">
+                            <h3 class="app-title">Project Consultation</h3>
+                            <p class="app-description">アプリ開発の企画段階からリリースまで、技術選定、設計、ユーザビリティなど様々な観点でのコンサルティングを承っています。</p>
+                            <div class="app-meta">
+                                <div class="app-stats">
+                                    <span class="stat-item">
+                                        <i class="stat-icon">🚀</i>
+                                        <span class="stat-value">企画〜リリース</span>
+                                    </span>
+                                    <span class="stat-item">
+                                        <i class="stat-icon">💡</i>
+                                        <span class="stat-value">アイデア相談</span>
+                                    </span>
+                                </div>
+                                <div class="app-tech">
+                                    <span class="tech-tag">Consulting</span>
+                                    <span class="tech-tag">Planning</span>
+                                    <span class="tech-tag">UX/UI</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Reference -->
+                    <div class="app-card hover-lift multi-platform" data-category="all" data-aos="fade-up" data-aos-delay="400">
+                        <div class="app-image">
+                            <div class="placeholder-image gradient-bg-lifestyle">
+                                <div class="placeholder-content">
+                                    <div class="placeholder-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg></div>
+                                    <div class="platform-badge">FAQ</div>
+                                </div>
+                            </div>
+                            <div class="app-overlay">
+                                <div class="app-tags">
+                                    <span class="tag tag-reference">FAQ</span>
+                                    <span class="tag tag-help">ヘルプ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app-content">
+                            <h3 class="app-title">よくあるご質問</h3>
+                            <p class="app-description">返信時間、技術スタック、プロジェクト対応可能範囲など、よくお聞きいただく質問をまとめています。まずはこちらをご確認ください。</p>
+                            <div class="app-meta">
+                                <div class="app-stats">
+                                    <span class="stat-item">
+                                        <i class="stat-icon">❓</i>
+                                        <span class="stat-value">5個のFAQ</span>
+                                    </span>
+                                    <span class="stat-item">
+                                        <i class="stat-icon">📖</i>
+                                        <span class="stat-value">すぐ確認</span>
+                                    </span>
+                                </div>
+                                <div class="app-tech">
+                                    <span class="tech-tag">FAQ</span>
+                                    <span class="tech-tag">Self Service</span>
+                                    <span class="tech-tag">Quick Answer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Current Status -->
+                    <div class="app-card hover-lift" data-category="business" data-aos="fade-up" data-aos-delay="500">
+                        <div class="app-image">
+                            <div class="placeholder-image gradient-bg-travel">
+                                <div class="placeholder-content">
+                                    <div class="placeholder-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg></div>
+                                    <div class="status-badge">Available</div>
+                                </div>
+                            </div>
+                            <div class="app-overlay">
+                                <div class="app-tags">
+                                    <span class="tag tag-business">ビジネス</span>
+                                    <span class="tag tag-status">ステータス</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app-content">
+                            <h3 class="app-title">Current Availability</h3>
+                            <p class="app-description">現在新しいプロジェクトのご相談をお受けしています。場所：日本（JST）、対応言語：日本語・English。お気軽にお声かけください。</p>
+                            <div class="app-meta">
+                                <div class="app-stats">
+                                    <span class="stat-item">
+                                        <i class="stat-icon">🟢</i>
+                                        <span class="stat-value">受付中</span>
+                                    </span>
+                                    <span class="stat-item">
+                                        <i class="stat-icon">🌏</i>
+                                        <span class="stat-value">Japan (JST)</span>
+                                    </span>
+                                </div>
+                                <div class="app-tech">
+                                    <span class="tech-tag">Available</span>
+                                    <span class="tech-tag">日本語</span>
+                                    <span class="tech-tag">English</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- No Results -->
+                <div class="no-results" id="contact-no-results" style="display: none;">
+                    <div class="no-results-content">
+                        <div class="no-results-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+                        <h3>該当する連絡方法が見つかりませんでした</h3>
+                        <p>別のカテゴリーをお試しください</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Contact Form Section -->
-        <section class="contact-form-section" id="contact-form">
-            <div class="section-container">
-                <div class="form-wrapper">
-                    <div class="form-header scroll-reveal">
-                        <h2 class="form-title">Send a Message</h2>
-                        <p class="form-subtitle">
-                            下記のフォームからお気軽にお問い合わせください。<br>
-                            内容を確認次第、迅速にご返信いたします。
-                        </p>
-                    </div>
-                    
-                    <div class="contact-form-container scroll-reveal">
-                        <form class="contact-form" id="contact-form-element">
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="name" class="form-label">お名前 *</label>
-                                    <input type="text" id="name" name="name" class="form-input" required>
-                                    <div class="form-error" id="name-error"></div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="email" class="form-label">メールアドレス *</label>
-                                    <input type="email" id="email" name="email" class="form-input" required>
-                                    <div class="form-error" id="email-error"></div>
-                                </div>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="subject" class="form-label">件名 *</label>
-                                <select id="subject" name="subject" class="form-select" required>
-                                    <option value="">選択してください</option>
-                                    <option value="project">プロジェクトのご相談</option>
-                                    <option value="collaboration">コラボレーション</option>
-                                    <option value="technical">技術的な質問</option>
-                                    <option value="business">ビジネス関連</option>
-                                    <option value="feedback">フィードバック</option>
-                                    <option value="other">その他</option>
-                                </select>
-                                <div class="form-error" id="subject-error"></div>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="message" class="form-label">メッセージ *</label>
-                                <textarea id="message" name="message" class="form-textarea" rows="6" placeholder="詳細な内容をお書きください..." required></textarea>
-                                <div class="form-error" id="message-error"></div>
-                            </div>
-                            
-                            <div class="form-group">
-                                <div class="checkbox-group">
-                                    <input type="checkbox" id="privacy" name="privacy" required>
-                                    <label for="privacy" class="checkbox-label">
-                                        <a href="../legal/privacy-policy.html" target="_blank">プライバシーポリシー</a>に同意します *
-                                    </label>
-                                </div>
-                                <div class="form-error" id="privacy-error"></div>
-                            </div>
-                            
-                            <div class="form-submit">
-                                <button type="submit" class="btn btn-primary btn-large" id="submit-btn">
-                                    <span class="btn-text">Send Message</span>
-                                    <span class="btn-loader" style="display: none;">
-                                        <span class="loader-dot"></span>
-                                        <span class="loader-dot"></span>
-                                        <span class="loader-dot"></span>
-                                    </span>
-                                    <i class="btn-icon">→</i>
-                                </button>
-                            </div>
-                        </form>
-                        
-                        <!-- Success Message -->
-                        <div class="form-success" id="form-success" style="display: none;">
-                            <div class="success-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
-                            <h3>メッセージを送信しました！</h3>
-                            <p>お問い合わせありがとうございます。個人開発のため返信に時間がかかる場合がありますが、確認次第ご返信いたします。</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- FAQ Section -->
-        <section class="faq-section">
+        <section id="contact-form" class="development-process">
             <div class="section-container">
                 <div class="section-header">
-                    <h2 class="section-title scroll-reveal">Frequently Asked Questions</h2>
-                    <p class="section-subtitle scroll-reveal">よくあるご質問</p>
+                    <h2 class="section-title scroll-reveal">Send a Message</h2>
+                    <p class="section-subtitle scroll-reveal">下記のフォームからお気軽にお問い合わせください</p>
                 </div>
                 
-                <div class="faq-container">
-                    <div class="faq-item scroll-reveal" data-aos="fade-up">
-                        <div class="faq-question">
-                            <span class="faq-text">アプリ開発の依頼は可能ですか？</span>
-                            <span class="faq-icon">+</span>
+                <div class="contact-form-container scroll-reveal">
+                    <form class="contact-form" id="contact-form-element">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name" class="form-label">お名前 *</label>
+                                <input type="text" id="name" name="name" class="form-input" required>
+                                <div class="form-error" id="name-error"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">メールアドレス *</label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                                <div class="form-error" id="email-error"></div>
+                            </div>
                         </div>
-                        <div class="faq-answer">
-                            <p>はい、可能です。ただし、現在は既存プロジェクトに集中しているため、新規の大規模プロジェクトは限定的にお受けしております。まずはお気軽にご相談ください。</p>
+                        
+                        <div class="form-group">
+                            <label for="subject" class="form-label">件名 *</label>
+                            <select id="subject" name="subject" class="form-select" required>
+                                <option value="">選択してください</option>
+                                <option value="project">プロジェクトのご相談</option>
+                                <option value="collaboration">コラボレーション</option>
+                                <option value="technical">技術的な質問</option>
+                                <option value="business">ビジネス関連</option>
+                                <option value="feedback">フィードバック</option>
+                                <option value="other">その他</option>
+                            </select>
+                            <div class="form-error" id="subject-error"></div>
                         </div>
-                    </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">メッセージ *</label>
+                            <textarea id="message" name="message" class="form-textarea" rows="6" placeholder="詳細な内容をお書きください..." required></textarea>
+                            <div class="form-error" id="message-error"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="privacy" name="privacy" required>
+                                <label for="privacy" class="checkbox-label">
+                                    <a href="../legal/privacy-policy.html" target="_blank">プライバシーポリシー</a>に同意します *
+                                </label>
+                            </div>
+                            <div class="form-error" id="privacy-error"></div>
+                        </div>
+                        
+                        <div class="form-submit">
+                            <button type="submit" class="btn btn-primary btn-large" id="submit-btn">
+                                <span class="btn-text">Send Message</span>
+                                <span class="btn-loader" style="display: none;">
+                                    <span class="loader-dot"></span>
+                                    <span class="loader-dot"></span>
+                                    <span class="loader-dot"></span>
+                                </span>
+                                <i class="btn-icon">→</i>
+                            </button>
+                        </div>
+                    </form>
                     
-                    <div class="faq-item scroll-reveal" data-aos="fade-up" data-aos-delay="100">
-                        <div class="faq-question">
-                            <span class="faq-text">技術的な質問や相談は無料ですか？</span>
-                            <span class="faq-icon">+</span>
-                        </div>
-                        <div class="faq-answer">
-                            <p>簡単な技術相談や質問については無料でお答えしています。ただし、詳細な設計相談や長時間のコンサルティングについては有料とさせていただく場合があります。</p>
-                        </div>
-                    </div>
-                    
-                    <div class="faq-item scroll-reveal" data-aos="fade-up" data-aos-delay="200">
-                        <div class="faq-question">
-                            <span class="faq-text">返信までどのくらい時間がかかりますか？</span>
-                            <span class="faq-icon">+</span>
-                        </div>
-                        <div class="faq-answer">
-                            <p>個人開発のため、返信にお時間をいただく場合があります。急ぎの場合はTwitter (@tsuzuki817) での連絡をおすすめします。</p>
-                        </div>
-                    </div>
-                    
-                    <div class="faq-item scroll-reveal" data-aos="fade-up" data-aos-delay="300">
-                        <div class="faq-question">
-                            <span class="faq-text">どのような技術スタックで開発していますか？</span>
-                            <span class="faq-icon">+</span>
-                        </div>
-                        <div class="faq-answer">
-                            <p>主にSwiftとSwiftUIを使用したネイティブiOSアプリの開発を行っています。データベースにはCore DataやCloudKit、デザインツールにはFigmaを使用しています。</p>
-                        </div>
-                    </div>
-                    
-                    <div class="faq-item scroll-reveal" data-aos="fade-up" data-aos-delay="400">
-                        <div class="faq-question">
-                            <span class="faq-text">アプリのアイデア相談はできますか？</span>
-                            <span class="faq-icon">+</span>
-                        </div>
-                        <div class="faq-answer">
-                            <p>もちろんです！アプリのアイデア相談、機能検討、ユーザビリティの改善提案など、開発に関する様々なご相談をお受けしています。お気軽にお問い合わせください。</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Availability Section -->
-        <section class="availability-section">
-            <div class="section-container">
-                <div class="availability-card scroll-reveal">
-                    <div class="availability-status">
-                        <div class="status-indicator available"></div>
-                        <div class="status-text">
-                            <h3>Current Availability</h3>
-                            <p>新しいプロジェクトのご相談をお受けしています</p>
-                        </div>
-                    </div>
-                    
-                    <div class="availability-details">
-                        <div class="detail-item">
-                            <span class="detail-label">Response Time:</span>
-                            <span class="detail-value">お時間をいただく場合があります</span>
-                        </div>
-                        <div class="detail-item">
-                            <span class="detail-label">Location:</span>
-                            <span class="detail-value">Japan (JST)</span>
-                        </div>
-                        <div class="detail-item">
-                            <span class="detail-label">Languages:</span>
-                            <span class="detail-value">日本語・English</span>
-                        </div>
-                    </div>
-                    
-                    <div class="availability-action">
-                        <a href="https://twitter.com/tsuzuki817" target="_blank" rel="noopener" class="btn btn-primary">
-                            <span>Start Conversation</span>
-                            <i class="btn-icon">→</i>
-                        </a>
+                    <!-- Success Message -->
+                    <div class="form-success" id="form-success" style="display: none;">
+                        <div class="success-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+                        <h3>メッセージを送信しました！</h3>
+                        <p>お問い合わせありがとうございます。個人開発のため返信に時間がかかる場合がありますが、確認次第ご返信いたします。</p>
                     </div>
                 </div>
             </div>

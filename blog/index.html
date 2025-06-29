@@ -48,7 +48,7 @@
     <!-- Main Content -->
     <main class="main blog-main">
         <!-- Hero Section -->
-        <section class="blog-hero">
+        <section class="portfolio-hero">
             <div class="section-container">
                 <div class="hero-content">
                     <h1 class="hero-title scroll-reveal">
@@ -59,238 +59,311 @@
                         そして学んだことを定期的に発信しています。
                     </p>
                     
-                    <!-- Search and Filter -->
-                    <div class="blog-controls scroll-reveal">
-                        <div class="search-box">
-                            <input type="text" id="blog-search" placeholder="記事を検索..." class="search-input">
-                            <div class="search-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></div>
+                    <!-- Stats Overview -->
+                    <div class="stats-overview scroll-reveal">
+                        <div class="stat-item">
+                            <div class="stat-number">6+</div>
+                            <div class="stat-label">公開予定記事</div>
                         </div>
-                        <div class="blog-filter">
-                            <select id="category-filter" class="filter-select">
-                                <option value="all">全てのカテゴリ</option>
-                                <option value="ios">iOS開発</option>
-                                <option value="swift">Swift</option>
-                                <option value="tips">開発Tips</option>
-                                <option value="design">デザイン</option>
-                                <option value="personal">個人開発</option>
-                            </select>
+                        <div class="stat-item">
+                            <div class="stat-number">5</div>
+                            <div class="stat-label">カテゴリ</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">準備中</div>
+                            <div class="stat-label">最新情報</div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Featured Post -->
-        <section class="featured-post">
-            <div class="section-container">
-                <div class="featured-card scroll-reveal" data-aos="fade-up">
-                    <div class="featured-image">
-                        <div class="placeholder-image blog-featured-bg">
-                            <div class="featured-content">
-                                <div class="featured-icon animate-float"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.375 2.625a2.121 2.121 0 1 1 3 3l-9.708 9.708a2.121 2.121 0 0 1-.896.553L8.5 16.5l.264-2.271a2.121 2.121 0 0 1 .553-.896L18.375 2.625Z"/></svg></div>
-                                <div class="featured-badge">Featured</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="featured-text">
-                        <div class="post-meta">
-                            <span class="post-category">個人開発</span>
-                            <span class="post-date">2025年6月予定</span>
-                        </div>
-                        <h2 class="featured-title">個人開発で学んだiOSアプリ開発のベストプラクティス</h2>
-                        <p class="featured-excerpt">
-                            30個以上のアプリを開発する中で学んだ、効率的な開発手法、ユーザビリティの向上方法、
-                            App Store審査を通すためのポイントなど、実践的な知見をまとめた記事です。
-                        </p>
-                        <div class="featured-tags">
-                            <span class="tag">iOS</span>
-                            <span class="tag">Swift</span>
-                            <span class="tag">個人開発</span>
-                            <span class="tag">ベストプラクティス</span>
-                        </div>
-                        <div class="featured-action">
-                            <span class="btn btn-outline disabled">近日公開予定</span>
-                        </div>
+                    
+                    <!-- Filter Buttons -->
+                    <div class="filter-buttons scroll-reveal">
+                        <button class="filter-btn active" data-filter="all">All Posts</button>
+                        <button class="filter-btn" data-filter="ios">iOS開発</button>
+                        <button class="filter-btn" data-filter="swift">Swift</button>
+                        <button class="filter-btn" data-filter="tips">開発Tips</button>
+                        <button class="filter-btn" data-filter="design">デザイン</button>
+                        <button class="filter-btn" data-filter="personal">個人開発</button>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Blog Posts Grid -->
-        <section class="blog-posts">
+        <section class="apps-showcase">
             <div class="section-container">
-                <div class="section-header">
-                    <h2 class="section-title scroll-reveal">Latest Posts</h2>
-                </div>
-                
-                <div class="posts-grid" id="posts-grid">
-                    <!-- Upcoming Post 1 -->
-                    <article class="post-card hover-lift" data-category="swift tips" data-aos="fade-up">
-                        <div class="post-image">
-                            <div class="placeholder-image post-bg-1">
-                                <div class="post-placeholder">
-                                    <div class="post-icon animate-pulse"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+                <div class="apps-grid portfolio-grid" id="posts-grid">
+                    <!-- Featured Post -->
+                    <div class="app-card hover-lift featured" data-category="personal" data-aos="fade-up">
+                        <div class="app-image">
+                            <div class="placeholder-image gradient-bg-productivity">
+                                <div class="placeholder-content">
+                                    <div class="placeholder-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.375 2.625a2.121 2.121 0 1 1 3 3l-9.708 9.708a2.121 2.121 0 0 1-.896.553L8.5 16.5l.264-2.271a2.121 2.121 0 0 1 .553-.896L18.375 2.625Z"/></svg></div>
+                                    <div class="featured-badge">Featured</div>
+                                </div>
+                            </div>
+                            <div class="app-overlay">
+                                <div class="app-tags">
+                                    <span class="tag tag-personal">個人開発</span>
+                                    <span class="tag tag-featured">Featured</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app-content">
+                            <h3 class="app-title">個人開発で学んだiOSアプリ開発のベストプラクティス</h3>
+                            <p class="app-description">30個以上のアプリを開発する中で学んだ、効率的な開発手法、ユーザビリティの向上方法、App Store審査を通すためのポイントなど、実践的な知見をまとめた記事です。</p>
+                            <div class="app-meta">
+                                <div class="app-stats">
+                                    <span class="stat-item">
+                                        <i class="stat-icon">📅</i>
+                                        <span class="stat-value">2025年6月予定</span>
+                                    </span>
+                                    <span class="stat-item">
+                                        <i class="stat-icon">⏱️</i>
+                                        <span class="stat-value">15分で読める</span>
+                                    </span>
+                                </div>
+                                <div class="app-tech">
+                                    <span class="tech-tag">iOS</span>
+                                    <span class="tech-tag">Swift</span>
+                                    <span class="tech-tag">ベストプラクティス</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Post 1 -->
+                    <div class="app-card hover-lift" data-category="swift tips" data-aos="fade-up" data-aos-delay="100">
+                        <div class="app-image">
+                            <div class="placeholder-image gradient-bg-utility">
+                                <div class="placeholder-content">
+                                    <div class="placeholder-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
                                     <div class="status-badge">準備中</div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="post-content">
-                            <div class="post-meta">
-                                <span class="post-category">Swift</span>
-                                <span class="post-date">2025年7月予定</span>
-                                <span class="read-time">5分で読める</span>
-                            </div>
-                            <h3 class="post-title">SwiftUIで美しいアニメーションを作る方法</h3>
-                            <p class="post-excerpt">
-                                SwiftUIの強力なアニメーション機能を使って、ユーザーを魅了するインタラクションを実装する方法を詳しく解説します。
-                            </p>
-                            <div class="post-tags">
-                                <span class="tag">SwiftUI</span>
-                                <span class="tag">アニメーション</span>
-                                <span class="tag">UI/UX</span>
+                            <div class="app-overlay">
+                                <div class="app-tags">
+                                    <span class="tag tag-swift">Swift</span>
+                                    <span class="tag tag-tips">Tips</span>
+                                </div>
                             </div>
                         </div>
-                    </article>
+                        <div class="app-content">
+                            <h3 class="app-title">SwiftUIで美しいアニメーションを作る方法</h3>
+                            <p class="app-description">SwiftUIの強力なアニメーション機能を使って、ユーザーを魅了するインタラクションを実装する方法を詳しく解説します。</p>
+                            <div class="app-meta">
+                                <div class="app-stats">
+                                    <span class="stat-item">
+                                        <i class="stat-icon">📅</i>
+                                        <span class="stat-value">2025年7月予定</span>
+                                    </span>
+                                    <span class="stat-item">
+                                        <i class="stat-icon">⏱️</i>
+                                        <span class="stat-value">5分で読める</span>
+                                    </span>
+                                </div>
+                                <div class="app-tech">
+                                    <span class="tech-tag">SwiftUI</span>
+                                    <span class="tech-tag">アニメーション</span>
+                                    <span class="tech-tag">UI/UX</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                    <!-- Upcoming Post 2 -->
-                    <article class="post-card hover-lift" data-category="ios tips" data-aos="fade-up" data-aos-delay="100">
-                        <div class="post-image">
-                            <div class="placeholder-image post-bg-2">
-                                <div class="post-placeholder">
-                                    <div class="post-icon animate-bounce"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11 12 8 22 8 13 19 11 13 5 11 9 11z"/><path d="M7 21h6"/><path d="M12 12v3"/></svg></div>
+                    <!-- Post 2 -->
+                    <div class="app-card hover-lift" data-category="ios tips" data-aos="fade-up" data-aos-delay="200">
+                        <div class="app-image">
+                            <div class="placeholder-image gradient-bg-utility-2">
+                                <div class="placeholder-content">
+                                    <div class="placeholder-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11 12 8 22 8 13 19 11 13 5 11 9 11z"/><path d="M7 21h6"/><path d="M12 12v3"/></svg></div>
                                     <div class="status-badge">執筆中</div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="post-content">
-                            <div class="post-meta">
-                                <span class="post-category">iOS開発</span>
-                                <span class="post-date">2025年7月予定</span>
-                                <span class="read-time">8分で読める</span>
-                            </div>
-                            <h3 class="post-title">Core Dataでのパフォーマンス最適化テクニック</h3>
-                            <p class="post-excerpt">
-                                大量のデータを扱うアプリで必須のCore Data最適化手法。メモリ使用量の削減とクエリ速度の向上方法を解説します。
-                            </p>
-                            <div class="post-tags">
-                                <span class="tag">Core Data</span>
-                                <span class="tag">パフォーマンス</span>
-                                <span class="tag">最適化</span>
+                            <div class="app-overlay">
+                                <div class="app-tags">
+                                    <span class="tag tag-ios">iOS開発</span>
+                                    <span class="tag tag-tips">Tips</span>
+                                </div>
                             </div>
                         </div>
-                    </article>
+                        <div class="app-content">
+                            <h3 class="app-title">Core Dataでのパフォーマンス最適化テクニック</h3>
+                            <p class="app-description">大量のデータを扱うアプリで必須のCore Data最適化手法。メモリ使用量の削減とクエリ速度の向上方法を解説します。</p>
+                            <div class="app-meta">
+                                <div class="app-stats">
+                                    <span class="stat-item">
+                                        <i class="stat-icon">📅</i>
+                                        <span class="stat-value">2025年7月予定</span>
+                                    </span>
+                                    <span class="stat-item">
+                                        <i class="stat-icon">⏱️</i>
+                                        <span class="stat-value">8分で読める</span>
+                                    </span>
+                                </div>
+                                <div class="app-tech">
+                                    <span class="tech-tag">Core Data</span>
+                                    <span class="tech-tag">パフォーマンス</span>
+                                    <span class="tech-tag">最適化</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                    <!-- Upcoming Post 3 -->
-                    <article class="post-card hover-lift" data-category="design personal" data-aos="fade-up" data-aos-delay="200">
-                        <div class="post-image">
-                            <div class="placeholder-image post-bg-3">
-                                <div class="post-placeholder">
-                                    <div class="post-icon animate-float"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3H6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg></div>
+                    <!-- Post 3 -->
+                    <div class="app-card hover-lift" data-category="design personal" data-aos="fade-up" data-aos-delay="300">
+                        <div class="app-image">
+                            <div class="placeholder-image gradient-bg-photo">
+                                <div class="placeholder-content">
+                                    <div class="placeholder-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3H6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg></div>
                                     <div class="status-badge">企画中</div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="post-content">
-                            <div class="post-meta">
-                                <span class="post-category">デザイン</span>
-                                <span class="post-date">2025年8月予定</span>
-                                <span class="read-time">6分で読める</span>
-                            </div>
-                            <h3 class="post-title">個人開発者のためのアプリアイコンデザイン入門</h3>
-                            <p class="post-excerpt">
-                                App Storeで目を引くアプリアイコンの作り方。デザインの基本原則から具体的な制作プロセスまで詳しく紹介します。
-                            </p>
-                            <div class="post-tags">
-                                <span class="tag">アイコンデザイン</span>
-                                <span class="tag">App Store</span>
-                                <span class="tag">個人開発</span>
+                            <div class="app-overlay">
+                                <div class="app-tags">
+                                    <span class="tag tag-design">デザイン</span>
+                                    <span class="tag tag-personal">個人開発</span>
+                                </div>
                             </div>
                         </div>
-                    </article>
+                        <div class="app-content">
+                            <h3 class="app-title">個人開発者のためのアプリアイコンデザイン入門</h3>
+                            <p class="app-description">App Storeで目を引くアプリアイコンの作り方。デザインの基本原則から具体的な制作プロセスまで詳しく紹介します。</p>
+                            <div class="app-meta">
+                                <div class="app-stats">
+                                    <span class="stat-item">
+                                        <i class="stat-icon">📅</i>
+                                        <span class="stat-value">2025年8月予定</span>
+                                    </span>
+                                    <span class="stat-item">
+                                        <i class="stat-icon">⏱️</i>
+                                        <span class="stat-value">6分で読める</span>
+                                    </span>
+                                </div>
+                                <div class="app-tech">
+                                    <span class="tech-tag">アイコンデザイン</span>
+                                    <span class="tech-tag">App Store</span>
+                                    <span class="tech-tag">個人開発</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                    <!-- Upcoming Post 4 -->
-                    <article class="post-card hover-lift" data-category="ios personal" data-aos="fade-up" data-aos-delay="300">
-                        <div class="post-image">
-                            <div class="placeholder-image post-bg-4">
-                                <div class="post-placeholder">
-                                    <div class="post-icon animate-spin"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 6v6m11-7h-6m-6 0H1m15.5-6.5l-4.24 4.24m-6.36 0L1.5 5.5m15.5 13l-4.24-4.24m-6.36 0L1.5 18.5"/></svg></div>
+                    <!-- Post 4 -->
+                    <div class="app-card hover-lift" data-category="ios personal" data-aos="fade-up" data-aos-delay="400">
+                        <div class="app-image">
+                            <div class="placeholder-image gradient-bg-travel">
+                                <div class="placeholder-content">
+                                    <div class="placeholder-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 6v6m11-7h-6m-6 0H1m15.5-6.5l-4.24 4.24m-6.36 0L1.5 5.5m15.5 13l-4.24-4.24m-6.36 0L1.5 18.5"/></svg></div>
                                     <div class="status-badge">アイデア段階</div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="post-content">
-                            <div class="post-meta">
-                                <span class="post-category">個人開発</span>
-                                <span class="post-date">2025年8月予定</span>
-                                <span class="read-time">10分で読める</span>
-                            </div>
-                            <h3 class="post-title">App Store審査を一発で通すためのチェックリスト</h3>
-                            <p class="post-excerpt">
-                                30個以上のアプリリリース経験から学んだ、App Store審査で引っかかりやすいポイントと対策方法をまとめました。
-                            </p>
-                            <div class="post-tags">
-                                <span class="tag">App Store</span>
-                                <span class="tag">審査</span>
-                                <span class="tag">リリース</span>
+                            <div class="app-overlay">
+                                <div class="app-tags">
+                                    <span class="tag tag-ios">iOS開発</span>
+                                    <span class="tag tag-personal">個人開発</span>
+                                </div>
                             </div>
                         </div>
-                    </article>
+                        <div class="app-content">
+                            <h3 class="app-title">App Store審査を一発で通すためのチェックリスト</h3>
+                            <p class="app-description">30個以上のアプリリリース経験から学んだ、App Store審査で引っかかりやすいポイントと対策方法をまとめました。</p>
+                            <div class="app-meta">
+                                <div class="app-stats">
+                                    <span class="stat-item">
+                                        <i class="stat-icon">📅</i>
+                                        <span class="stat-value">2025年8月予定</span>
+                                    </span>
+                                    <span class="stat-item">
+                                        <i class="stat-icon">⏱️</i>
+                                        <span class="stat-value">10分で読める</span>
+                                    </span>
+                                </div>
+                                <div class="app-tech">
+                                    <span class="tech-tag">App Store</span>
+                                    <span class="tech-tag">審査</span>
+                                    <span class="tech-tag">リリース</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                    <!-- Upcoming Post 5 -->
-                    <article class="post-card hover-lift" data-category="swift tips" data-aos="fade-up" data-aos-delay="400">
-                        <div class="post-image">
-                            <div class="placeholder-image post-bg-5">
-                                <div class="post-placeholder">
-                                    <div class="post-icon animate-pulse"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg></div>
+                    <!-- Post 5 -->
+                    <div class="app-card hover-lift" data-category="swift tips" data-aos="fade-up" data-aos-delay="500">
+                        <div class="app-image">
+                            <div class="placeholder-image gradient-bg-music">
+                                <div class="placeholder-content">
+                                    <div class="placeholder-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg></div>
                                     <div class="status-badge">調査中</div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="post-content">
-                            <div class="post-meta">
-                                <span class="post-category">Swift</span>
-                                <span class="post-date">2025年9月予定</span>
-                                <span class="read-time">7分で読める</span>
-                            </div>
-                            <h3 class="post-title">Swift Chartsで美しいグラフを作る実践ガイド</h3>
-                            <p class="post-excerpt">
-                                iOS 16で登場したSwift Chartsフレームワークを使って、インタラクティブで美しいグラフを実装する方法を解説します。
-                            </p>
-                            <div class="post-tags">
-                                <span class="tag">Swift Charts</span>
-                                <span class="tag">データ可視化</span>
-                                <span class="tag">iOS 16+</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Upcoming Post 6 -->
-                    <article class="post-card hover-lift" data-category="personal tips" data-aos="fade-up" data-aos-delay="500">
-                        <div class="post-image">
-                            <div class="placeholder-image post-bg-6">
-                                <div class="post-placeholder">
-                                    <div class="post-icon animate-float"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21h6"/><path d="M12 17h0"/><path d="M15 7a3 3 0 1 1-6 0c0-2 2-3 3-3s3 1 3 3z"/></svg></div>
-                                    <div class="status-badge">構想中</div>
+                            <div class="app-overlay">
+                                <div class="app-tags">
+                                    <span class="tag tag-swift">Swift</span>
+                                    <span class="tag tag-tips">Tips</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="post-content">
-                            <div class="post-meta">
-                                <span class="post-category">個人開発</span>
-                                <span class="post-date">2025年9月予定</span>
-                                <span class="read-time">12分で読める</span>
-                            </div>
-                            <h3 class="post-title">個人開発者が知っておくべきマーケティング基礎</h3>
-                            <p class="post-excerpt">
-                                良いアプリを作るだけでは不十分。ユーザーに見つけてもらい、ダウンロードしてもらうためのマーケティング戦略を紹介します。
-                            </p>
-                            <div class="post-tags">
-                                <span class="tag">マーケティング</span>
-                                <span class="tag">ASO</span>
-                                <span class="tag">ユーザー獲得</span>
+                        <div class="app-content">
+                            <h3 class="app-title">Swift Chartsで美しいグラフを作る実践ガイド</h3>
+                            <p class="app-description">iOS 16で登場したSwift Chartsフレームワークを使って、インタラクティブで美しいグラフを実装する方法を解説します。</p>
+                            <div class="app-meta">
+                                <div class="app-stats">
+                                    <span class="stat-item">
+                                        <i class="stat-icon">📅</i>
+                                        <span class="stat-value">2025年9月予定</span>
+                                    </span>
+                                    <span class="stat-item">
+                                        <i class="stat-icon">⏱️</i>
+                                        <span class="stat-value">7分で読める</span>
+                                    </span>
+                                </div>
+                                <div class="app-tech">
+                                    <span class="tech-tag">Swift Charts</span>
+                                    <span class="tech-tag">データ可視化</span>
+                                    <span class="tech-tag">iOS 16+</span>
+                                </div>
                             </div>
                         </div>
-                    </article>
+                    </div>
+
+                    <!-- Post 6 -->
+                    <div class="app-card hover-lift" data-category="personal tips" data-aos="fade-up" data-aos-delay="600">
+                        <div class="app-image">
+                            <div class="placeholder-image gradient-bg-lifestyle">
+                                <div class="placeholder-content">
+                                    <div class="placeholder-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21h6"/><path d="M12 17h0"/><path d="M15 7a3 3 0 1 1-6 0c0-2 2-3 3-3s3 1 3 3z"/></svg></div>
+                                    <div class="status-badge">構想中</div>
+                                </div>
+                            </div>
+                            <div class="app-overlay">
+                                <div class="app-tags">
+                                    <span class="tag tag-personal">個人開発</span>
+                                    <span class="tag tag-tips">Tips</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app-content">
+                            <h3 class="app-title">個人開発者が知っておくべきマーケティング基礎</h3>
+                            <p class="app-description">良いアプリを作るだけでは不十分。ユーザーに見つけてもらい、ダウンロードしてもらうためのマーケティング戦略を紹介します。</p>
+                            <div class="app-meta">
+                                <div class="app-stats">
+                                    <span class="stat-item">
+                                        <i class="stat-icon">📅</i>
+                                        <span class="stat-value">2025年9月予定</span>
+                                    </span>
+                                    <span class="stat-item">
+                                        <i class="stat-icon">⏱️</i>
+                                        <span class="stat-value">12分で読める</span>
+                                    </span>
+                                </div>
+                                <div class="app-tech">
+                                    <span class="tech-tag">マーケティング</span>
+                                    <span class="tech-tag">ASO</span>
+                                    <span class="tech-tag">ユーザー獲得</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- No Results -->
@@ -299,36 +372,6 @@
                         <div class="no-results-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.375 2.625a2.121 2.121 0 1 1 3 3l-9.708 9.708a2.121 2.121 0 0 1-.896.553L8.5 16.5l.264-2.271a2.121 2.121 0 0 1 .553-.896L18.375 2.625Z"/></svg></div>
                         <h3>該当する記事が見つかりませんでした</h3>
                         <p>別のキーワードや条件をお試しください</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Newsletter Section -->
-        <section class="newsletter">
-            <div class="section-container">
-                <div class="newsletter-card scroll-reveal">
-                    <div class="newsletter-content">
-                        <div class="newsletter-icon animate-float"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
-                        <h3 class="newsletter-title">新着記事の通知を受け取る</h3>
-                        <p class="newsletter-description">
-                            新しい記事が公開されたときにお知らせします。<br>
-                            現在は準備中です。公開開始時はTwitterでお知らせいたします。
-                        </p>
-                        <div class="newsletter-action">
-                            <a href="https://twitter.com/tsuzuki817" target="_blank" class="btn btn-primary">
-                                <span>Twitterをフォロー</span>
-                                <i class="btn-icon">→</i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="newsletter-visual">
-                        <div class="floating-elements">
-                            <div class="floating-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></div>
-                            <div class="floating-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
-                            <div class="floating-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11 12 8 22 8 13 19 11 13 5 11 9 11z"/></svg></div>
-                            <div class="floating-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
-                        </div>
                     </div>
                 </div>
             </div>
