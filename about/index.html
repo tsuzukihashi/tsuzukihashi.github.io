@@ -48,491 +48,380 @@
     <!-- Main Content -->
     <main class="main about-main">
         <!-- Hero Section -->
-        <section class="portfolio-hero">
+        <section class="about-hero">
             <div class="section-container">
                 <div class="hero-content">
-                    <h1 class="hero-title scroll-reveal">
-                        <span class="title-line">About</span>
-                    </h1>
-                    <p class="hero-subtitle scroll-reveal">
-                        個人開発者として30個以上のiOSアプリを開発・公開しています。<br>
-                        ユーザーの生活を豊かにするアプリケーションの開発に情熱を注いでいます。
-                    </p>
+                    <div class="profile-section scroll-reveal">
+                        <div class="profile-avatar">
+                            <div class="avatar-placeholder">
+                                <div class="avatar-icon animate-float"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+                            </div>
+                        </div>
+                        <div class="profile-info">
+                            <h1 class="profile-name">tsuzuki817</h1>
+                            <p class="profile-title">iOS Developer & Creator</p>
+                            <div class="profile-status">
+                                <span class="status-indicator"></span>
+                                <span class="status-text">Available for new projects</span>
+                            </div>
+                        </div>
+                    </div>
                     
-                    <!-- Stats Overview -->
-                    <div class="stats-overview scroll-reveal">
-                        <div class="stat-item">
-                            <div class="stat-number">30+</div>
+                    <div class="hero-description scroll-reveal">
+                        <p class="description-text">
+                            個人開発者として30個以上のiOSアプリを開発・公開しています。<br>
+                            ユーザーの生活を豊かにするアプリケーションの開発に情熱を注いでいます。
+                        </p>
+                    </div>
+                    
+                    <div class="hero-stats scroll-reveal">
+                        <div class="stat-item" data-aos="zoom-in">
+                            <div class="stat-number" data-count="30">0</div>
                             <div class="stat-label">Apps Published</div>
                         </div>
-                        <div class="stat-item">
-                            <div class="stat-number">5</div>
+                        <div class="stat-item" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="stat-number" data-count="5">0</div>
                             <div class="stat-label">Years Experience</div>
                         </div>
-                        <div class="stat-item">
-                            <div class="stat-number">80K+</div>
+                        <div class="stat-item" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="stat-number" data-count="1000">0</div>
                             <div class="stat-label">Downloads</div>
                         </div>
                     </div>
-                    
-                    <!-- Filter Buttons -->
-                    <div class="filter-buttons scroll-reveal">
-                        <button class="filter-btn active" data-filter="all">All Skills</button>
-                        <button class="filter-btn" data-filter="programming">プログラミング</button>
-                        <button class="filter-btn" data-filter="frameworks">フレームワーク</button>
-                        <button class="filter-btn" data-filter="tools">ツール・デザイン</button>
-                        <button class="filter-btn" data-filter="achievements">実績</button>
-                        <button class="filter-btn" data-filter="interests">趣味</button>
-                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Skills & Experience Grid -->
-        <section class="apps-showcase">
-            <div class="section-container">
-                <div class="apps-grid portfolio-grid" id="skills-grid">
-                    <!-- Swift -->
-                    <div class="app-card hover-lift featured" data-category="programming" data-aos="fade-up">
-                        <div class="app-image">
-                            <div class="placeholder-image gradient-bg-utility">
-                                <div class="placeholder-content">
-                                    <div class="placeholder-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16,18 22,12 16,6"/><polyline points="8,6 2,12 8,18"/></svg></div>
-                                    <div class="featured-badge">Expert</div>
-                                </div>
-                            </div>
-                            <div class="app-overlay">
-                                <div class="app-tags">
-                                    <span class="tag tag-programming">プログラミング</span>
-                                    <span class="tag tag-featured">Expert</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="app-content">
-                            <h3 class="app-title">Swift</h3>
-                            <p class="app-description">メインのプログラミング言語として5年以上の経験。30個以上のアプリをSwiftで開発し、最新の言語機能を活用したコードを書くことができます。</p>
-                            <div class="app-meta">
-                                <div class="app-stats">
-                                    <span class="stat-item">
-                                        <i class="stat-icon">📊</i>
-                                        <span class="stat-value">90% 熟練度</span>
-                                    </span>
-                                    <span class="stat-item">
-                                        <i class="stat-icon">📅</i>
-                                        <span class="stat-value">5年の経験</span>
-                                    </span>
-                                </div>
-                                <div class="app-tech">
-                                    <span class="tech-tag">Swift 5.0+</span>
-                                    <span class="tech-tag">iOS Development</span>
-                                    <span class="tech-tag">Expert</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- SwiftUI -->
-                    <div class="app-card hover-lift award-winner" data-category="frameworks" data-aos="fade-up" data-aos-delay="100">
-                        <div class="app-image">
-                            <div class="placeholder-image gradient-bg-productivity">
-                                <div class="placeholder-content">
-                                    <div class="placeholder-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
-                                    <div class="award-badge">Advanced</div>
-                                </div>
-                            </div>
-                            <div class="app-overlay">
-                                <div class="app-tags">
-                                    <span class="tag tag-frameworks">フレームワーク</span>
-                                    <span class="tag tag-award">Advanced</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="app-content">
-                            <h3 class="app-title">SwiftUI</h3>
-                            <p class="app-description">モダンなUIフレームワークとして積極的に採用。宣言的UIの開発パターンを熟知し、複雑なアニメーションやカスタムコンポーネントの実装が可能です。</p>
-                            <div class="app-meta">
-                                <div class="app-stats">
-                                    <span class="stat-item">
-                                        <i class="stat-icon">📊</i>
-                                        <span class="stat-value">85% 熟練度</span>
-                                    </span>
-                                    <span class="stat-item">
-                                        <i class="stat-icon">🎯</i>
-                                        <span class="stat-value">主要技術</span>
-                                    </span>
-                                </div>
-                                <div class="app-tech">
-                                    <span class="tech-tag">SwiftUI</span>
-                                    <span class="tech-tag">Combine</span>
-                                    <span class="tech-tag">Animation</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- UIKit -->
-                    <div class="app-card hover-lift" data-category="frameworks" data-aos="fade-up" data-aos-delay="200">
-                        <div class="app-image">
-                            <div class="placeholder-image gradient-bg-utility-2">
-                                <div class="placeholder-content">
-                                    <div class="placeholder-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
-                                    <div class="status-badge">Legacy Expert</div>
-                                </div>
-                            </div>
-                            <div class="app-overlay">
-                                <div class="app-tags">
-                                    <span class="tag tag-frameworks">フレームワーク</span>
-                                    <span class="tag tag-legacy">Legacy</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="app-content">
-                            <h3 class="app-title">UIKit</h3>
-                            <p class="app-description">従来のUIフレームワークとして豊富な経験。AutoLayoutやアニメーション、カスタムビューの実装に精通しており、既存プロジェクトの保守も可能です。</p>
-                            <div class="app-meta">
-                                <div class="app-stats">
-                                    <span class="stat-item">
-                                        <i class="stat-icon">📊</i>
-                                        <span class="stat-value">90% 熟練度</span>
-                                    </span>
-                                    <span class="stat-item">
-                                        <i class="stat-icon">⚡</i>
-                                        <span class="stat-value">レガシー対応</span>
-                                    </span>
-                                </div>
-                                <div class="app-tech">
-                                    <span class="tech-tag">UIKit</span>
-                                    <span class="tech-tag">Auto Layout</span>
-                                    <span class="tech-tag">Core Animation</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Core Data -->
-                    <div class="app-card hover-lift" data-category="frameworks" data-aos="fade-up" data-aos-delay="300">
-                        <div class="app-image">
-                            <div class="placeholder-image gradient-bg-music">
-                                <div class="placeholder-content">
-                                    <div class="placeholder-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="8"/></svg></div>
-                                    <div class="status-badge">Advanced</div>
-                                </div>
-                            </div>
-                            <div class="app-overlay">
-                                <div class="app-tags">
-                                    <span class="tag tag-frameworks">フレームワーク</span>
-                                    <span class="tag tag-data">データ管理</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="app-content">
-                            <h3 class="app-title">Core Data</h3>
-                            <p class="app-description">複雑なデータモデルの設計と実装に精通。パフォーマンス最適化、マイグレーション、CloudKitとの連携など、高度なデータ管理が可能です。</p>
-                            <div class="app-meta">
-                                <div class="app-stats">
-                                    <span class="stat-item">
-                                        <i class="stat-icon">📊</i>
-                                        <span class="stat-value">80% 熟練度</span>
-                                    </span>
-                                    <span class="stat-item">
-                                        <i class="stat-icon">☁️</i>
-                                        <span class="stat-value">CloudKit連携</span>
-                                    </span>
-                                </div>
-                                <div class="app-tech">
-                                    <span class="tech-tag">Core Data</span>
-                                    <span class="tech-tag">CloudKit</span>
-                                    <span class="tech-tag">Migration</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Xcode -->
-                    <div class="app-card hover-lift" data-category="tools" data-aos="fade-up" data-aos-delay="400">
-                        <div class="app-image">
-                            <div class="placeholder-image gradient-bg-photo">
-                                <div class="placeholder-content">
-                                    <div class="placeholder-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/></svg></div>
-                                    <div class="status-badge">Expert</div>
-                                </div>
-                            </div>
-                            <div class="app-overlay">
-                                <div class="app-tags">
-                                    <span class="tag tag-tools">ツール</span>
-                                    <span class="tag tag-expert">Expert</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="app-content">
-                            <h3 class="app-title">Xcode</h3>
-                            <p class="app-description">5年以上の使用経験。デバッギング、プロファイリング、ビルド設定、CI/CD連携など、開発効率を最大化する活用方法を熟知しています。</p>
-                            <div class="app-meta">
-                                <div class="app-stats">
-                                    <span class="stat-item">
-                                        <i class="stat-icon">📊</i>
-                                        <span class="stat-value">95% 熟練度</span>
-                                    </span>
-                                    <span class="stat-item">
-                                        <i class="stat-icon">🔧</i>
-                                        <span class="stat-value">メインツール</span>
-                                    </span>
-                                </div>
-                                <div class="app-tech">
-                                    <span class="tech-tag">Xcode</span>
-                                    <span class="tech-tag">Instruments</span>
-                                    <span class="tech-tag">TestFlight</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Figma -->
-                    <div class="app-card hover-lift" data-category="tools" data-aos="fade-up" data-aos-delay="500">
-                        <div class="app-image">
-                            <div class="placeholder-image gradient-bg-lifestyle">
-                                <div class="placeholder-content">
-                                    <div class="placeholder-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3H6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg></div>
-                                    <div class="status-badge">Intermediate</div>
-                                </div>
-                            </div>
-                            <div class="app-overlay">
-                                <div class="app-tags">
-                                    <span class="tag tag-tools">ツール</span>
-                                    <span class="tag tag-design">デザイン</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="app-content">
-                            <h3 class="app-title">Figma</h3>
-                            <p class="app-description">UIデザインツールとして活用。ワイヤーフレームからプロトタイプまで、アプリの設計段階で重要な役割を果たしています。</p>
-                            <div class="app-meta">
-                                <div class="app-stats">
-                                    <span class="stat-item">
-                                        <i class="stat-icon">📊</i>
-                                        <span class="stat-value">75% 熟練度</span>
-                                    </span>
-                                    <span class="stat-item">
-                                        <i class="stat-icon">🎨</i>
-                                        <span class="stat-value">UI設計</span>
-                                    </span>
-                                </div>
-                                <div class="app-tech">
-                                    <span class="tech-tag">Figma</span>
-                                    <span class="tech-tag">Prototyping</span>
-                                    <span class="tech-tag">UI Design</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 30+ Apps Achievement -->
-                    <div class="app-card hover-lift ai-powered" data-category="achievements" data-aos="fade-up" data-aos-delay="600">
-                        <div class="app-image">
-                            <div class="placeholder-image gradient-bg-travel">
-                                <div class="placeholder-content">
-                                    <div class="placeholder-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2z"/></svg></div>
-                                    <div class="ai-badge">主要実績</div>
-                                </div>
-                            </div>
-                            <div class="app-overlay">
-                                <div class="app-tags">
-                                    <span class="tag tag-achievements">実績</span>
-                                    <span class="tag tag-apps">Apps</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="app-content">
-                            <h3 class="app-title">30+ Apps Published</h3>
-                            <p class="app-description">5年間で30個以上のiOSアプリをApp Storeに公開。様々なジャンルでユーザーのニーズに応える多様なアプリケーションを開発しました。</p>
-                            <div class="app-meta">
-                                <div class="app-stats">
-                                    <span class="stat-item">
-                                        <i class="stat-icon">📱</i>
-                                        <span class="stat-value">30+ アプリ</span>
-                                    </span>
-                                    <span class="stat-item">
-                                        <i class="stat-icon">📥</i>
-                                        <span class="stat-value">80K+ DL</span>
-                                    </span>
-                                </div>
-                                <div class="app-tech">
-                                    <span class="tech-tag">App Store</span>
-                                    <span class="tech-tag">iOS Apps</span>
-                                    <span class="tech-tag">Published</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Award Achievement -->
-                    <div class="app-card hover-lift multi-platform" data-category="achievements" data-aos="fade-up" data-aos-delay="700">
-                        <div class="app-image">
-                            <div class="placeholder-image gradient-bg-social">
-                                <div class="placeholder-content">
-                                    <div class="placeholder-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/></svg></div>
-                                    <div class="platform-badge">受賞歴</div>
-                                </div>
-                            </div>
-                            <div class="app-overlay">
-                                <div class="app-tags">
-                                    <span class="tag tag-achievements">実績</span>
-                                    <span class="tag tag-award">受賞</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="app-content">
-                            <h3 class="app-title">神アプリグランプリ受賞</h3>
-                            <p class="app-description">「いつでもタイマー」でグランプリを受賞。Live Activity機能を活用した革新的なタイマーアプリが高く評価されました。</p>
-                            <div class="app-meta">
-                                <div class="app-stats">
-                                    <span class="stat-item">
-                                        <i class="stat-icon">🏆</i>
-                                        <span class="stat-value">グランプリ</span>
-                                    </span>
-                                    <span class="stat-item">
-                                        <i class="stat-icon">⭐</i>
-                                        <span class="stat-value">4.7評価</span>
-                                    </span>
-                                </div>
-                                <div class="app-tech">
-                                    <span class="tech-tag">Award Winner</span>
-                                    <span class="tech-tag">Live Activity</span>
-                                    <span class="tech-tag">Timer App</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Reading Interest -->
-                    <div class="app-card hover-lift" data-category="interests" data-aos="fade-up" data-aos-delay="800">
-                        <div class="app-image">
-                            <div class="placeholder-image gradient-bg-photo-2">
-                                <div class="placeholder-content">
-                                    <div class="placeholder-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
-                                    <div class="status-badge">趣味</div>
-                                </div>
-                            </div>
-                            <div class="app-overlay">
-                                <div class="app-tags">
-                                    <span class="tag tag-interests">趣味</span>
-                                    <span class="tag tag-learning">学習</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="app-content">
-                            <h3 class="app-title">Reading</h3>
-                            <p class="app-description">技術書やビジネス書を読み、新しい知識とインスピレーションを得ています。学んだ内容をアプリ開発に活かしています。</p>
-                            <div class="app-meta">
-                                <div class="app-stats">
-                                    <span class="stat-item">
-                                        <i class="stat-icon">📚</i>
-                                        <span class="stat-value">技術書中心</span>
-                                    </span>
-                                    <span class="stat-item">
-                                        <i class="stat-icon">💡</i>
-                                        <span class="stat-value">インスピレーション</span>
-                                    </span>
-                                </div>
-                                <div class="app-tech">
-                                    <span class="tech-tag">技術書</span>
-                                    <span class="tech-tag">ビジネス書</span>
-                                    <span class="tech-tag">学習</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Travel Interest -->
-                    <div class="app-card hover-lift" data-category="interests" data-aos="fade-up" data-aos-delay="900">
-                        <div class="app-image">
-                            <div class="placeholder-image gradient-bg-music-2">
-                                <div class="placeholder-content">
-                                    <div class="placeholder-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-7 14-7 14s-7-7-7-14a7 7 0 0 1 14 0z"/><circle cx="14" cy="10" r="3"/></svg></div>
-                                    <div class="status-badge">趣味</div>
-                                </div>
-                            </div>
-                            <div class="app-overlay">
-                                <div class="app-tags">
-                                    <span class="tag tag-interests">趣味</span>
-                                    <span class="tag tag-inspiration">アイデア源</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="app-content">
-                            <h3 class="app-title">Travel</h3>
-                            <p class="app-description">様々な場所を訪れ、新しい文化や体験からアプリのアイデアを見つけています。旅行思い出マップアプリの開発にもつながりました。</p>
-                            <div class="app-meta">
-                                <div class="app-stats">
-                                    <span class="stat-item">
-                                        <i class="stat-icon">🗾</i>
-                                        <span class="stat-value">47都道府県</span>
-                                    </span>
-                                    <span class="stat-item">
-                                        <i class="stat-icon">💡</i>
-                                        <span class="stat-value">アプリアイデア</span>
-                                    </span>
-                                </div>
-                                <div class="app-tech">
-                                    <span class="tech-tag">旅行</span>
-                                    <span class="tech-tag">文化体験</span>
-                                    <span class="tech-tag">アイデア創出</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- No Results -->
-                <div class="no-results" id="skills-no-results" style="display: none;">
-                    <div class="no-results-content">
-                        <div class="no-results-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
-                        <h3>該当するスキルが見つかりませんでした</h3>
-                        <p>別のカテゴリーをお試しください</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Development Philosophy Section -->
-        <section class="development-process">
+        <!-- Skills Section -->
+        <section class="skills-section">
             <div class="section-container">
                 <div class="section-header">
-                    <h2 class="section-title scroll-reveal">Development Philosophy</h2>
-                    <p class="section-subtitle scroll-reveal">開発に対する想いと価値観</p>
+                    <h2 class="section-title scroll-reveal">Skills & Technologies</h2>
+                    <p class="section-subtitle scroll-reveal">使用している技術とツール</p>
                 </div>
                 
-                <div class="process-timeline">
+                <div class="skills-grid">
+                    <!-- Programming Languages -->
+                    <div class="skill-category scroll-reveal" data-aos="fade-up">
+                        <div class="category-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16,18 22,12 16,6"/><polyline points="8,6 2,12 8,18"/></svg></div>
+                        <h3 class="category-title">Programming Languages</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Swift</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Objective-C</span>
+                                    <span class="skill-level">Intermediate</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="70"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">JavaScript</span>
+                                    <span class="skill-level">Intermediate</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="75"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Frameworks -->
+                    <div class="skill-category scroll-reveal" data-aos="fade-up" data-aos-delay="100">
+                        <div class="category-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+                        <h3 class="category-title">Frameworks & SDKs</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">SwiftUI</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">UIKit</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Core Data</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="80"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Design Tools -->
+                    <div class="skill-category scroll-reveal" data-aos="fade-up" data-aos-delay="200">
+                        <div class="category-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3H6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg></div>
+                        <h3 class="category-title">Design & Tools</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Figma</span>
+                                    <span class="skill-level">Intermediate</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="75"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Sketch</span>
+                                    <span class="skill-level">Intermediate</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="70"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Xcode</span>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="95"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="experience-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title scroll-reveal">Experience & Journey</h2>
+                    <p class="section-subtitle scroll-reveal">開発者としての歩み</p>
+                </div>
+                
+                <div class="timeline">
                     <div class="timeline-item scroll-reveal-left">
-                        <div class="timeline-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
+                        <div class="timeline-date">2020</div>
                         <div class="timeline-content">
-                            <h3>User-Centric</h3>
-                            <p>ユーザーのニーズを最優先に考え、使いやすさを追求します。技術的な挑戦よりも、実際にユーザーの生活を豊かにすることを重視しています。</p>
+                            <div class="timeline-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11 12 8 22 8 13 19 11 13 5 11 9 11z"/><path d="M7 21h6"/><path d="M12 12v3"/></svg></div>
+                            <h3>個人開発を開始</h3>
+                            <p>iOSアプリ開発に興味を持ち、独学でSwiftを学び始める。最初のアプリをApp Storeに公開し、個人開発者としてのキャリアをスタート。</p>
                         </div>
                     </div>
                     
                     <div class="timeline-item scroll-reveal-right">
-                        <div class="timeline-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/></svg></div>
+                        <div class="timeline-date">2021</div>
                         <div class="timeline-content">
-                            <h3>Quality First</h3>
-                            <p>高品質なコードと洗練されたデザインにこだわります。長期的な保守性とパフォーマンスを重視した開発を心がけています。</p>
+                            <div class="timeline-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></div>
+                            <h3>初期のアプリ群を公開</h3>
+                            <p>ユーティリティ系のアプリを中心に、10個以上のアプリを開発・公開。ユーザーフィードバックを通じて開発スキルとUX設計能力を向上。</p>
                         </div>
                     </div>
                     
                     <div class="timeline-item scroll-reveal-left">
-                        <div class="timeline-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11 12 8 22 8 13 19 11 13 5 11 9 11z"/><path d="M7 21h6"/><path d="M12 12v3"/></svg></div>
+                        <div class="timeline-date">2022</div>
                         <div class="timeline-content">
-                            <h3>Innovation</h3>
-                            <p>新しい技術と創造的なアプローチで課題解決に取り組みます。AppleのLatest技術を積極的に採用し、革新的なアプリを創造します。</p>
+                            <div class="timeline-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
+                            <h3>専門性の向上</h3>
+                            <p>SwiftUIをマスターし、より洗練されたユーザーインターフェースを持つアプリを開発。Core DataやCloudKitを活用したデータ管理機能を実装。</p>
                         </div>
                     </div>
                     
                     <div class="timeline-item scroll-reveal-right">
-                        <div class="timeline-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 18a5 5 0 0 0-10 0"/><line x1="12" y1="2" x2="12" y2="9"/><line x1="4.22" y1="10.22" x2="5.64" y2="11.64"/><line x1="1" y1="18" x2="3" y2="18"/><line x1="21" y1="18" x2="23" y2="18"/><line x1="18.36" y1="11.64" x2="19.78" y2="10.22"/><line x1="23" y1="22" x2="1" y2="22"/><polyline points="8,6 10.5,10.5 16,5"/></svg></div>
+                        <div class="timeline-date">2023</div>
                         <div class="timeline-content">
-                            <h3>Community</h3>
-                            <p>開発コミュニティとの交流を通じて学び、貢献します。ユーザーフィードバックを大切にし、継続的な改善を行います。</p>
+                            <div class="timeline-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/></svg></div>
+                            <h3>品質向上とユーザー拡大</h3>
+                            <p>アプリの品質向上に注力し、複数のアプリで高評価を獲得。ユーザー数の拡大とともに、より複雑な機能を持つアプリの開発に挑戦。</p>
                         </div>
+                    </div>
+                    
+                    <div class="timeline-item scroll-reveal-left">
+                        <div class="timeline-date">2024</div>
+                        <div class="timeline-content">
+                            <div class="timeline-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22,6 12,16 2,12"/></svg></div>
+                            <h3>事業の発展</h3>
+                            <p>30個以上のアプリを公開し、累計ダウンロード数が1000回を突破。新しい技術の習得とより野心的なプロジェクトの立ち上げを開始。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item scroll-reveal-right">
+                        <div class="timeline-date">2025</div>
+                        <div class="timeline-content">
+                            <div class="timeline-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11 12 8 22 8 13 19 11 13 5 11 9 11z"/><path d="M7 21h6"/><path d="M12 12v3"/></svg></div>
+                            <h3>現在進行中</h3>
+                            <p>AI技術を活用した新しいアプリの開発と、既存アプリの機能拡張に取り組んでいます。また、開発ノウハウの共有にも力を入れています。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Philosophy Section -->
+        <section class="philosophy-section">
+            <div class="section-container">
+                <div class="philosophy-content">
+                    <div class="philosophy-text scroll-reveal">
+                        <h2 class="philosophy-title">Development Philosophy</h2>
+                        <div class="philosophy-description">
+                            <p>
+                                私の開発哲学は「使いやすさ」と「美しさ」の両立にあります。
+                                ユーザーにとって本当に価値のある機能を見極め、
+                                シンプルで直感的なユーザーインターフェースを提供することを大切にしています。
+                            </p>
+                            <p>
+                                また、個人開発の利点を活かし、小回りの利く開発とユーザーフィードバックへの
+                                迅速な対応を心がけています。技術的な挑戦と実用性のバランスを保ちながら、
+                                長く愛されるアプリケーションの開発を目指しています。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="philosophy-values scroll-reveal">
+                        <h3 class="values-title">Core Values</h3>
+                        <div class="values-grid">
+                            <div class="value-item" data-aos="fade-up">
+                                <div class="value-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
+                                <h4>User-Centric</h4>
+                                <p>ユーザーのニーズを最優先に考え、使いやすさを追求します</p>
+                            </div>
+                            <div class="value-item" data-aos="fade-up" data-aos-delay="100">
+                                <div class="value-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/></svg></div>
+                                <h4>Quality First</h4>
+                                <p>高品質なコードと洗練されたデザインにこだわります</p>
+                            </div>
+                            <div class="value-item" data-aos="fade-up" data-aos-delay="200">
+                                <div class="value-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11 12 8 22 8 13 19 11 13 5 11 9 11z"/><path d="M7 21h6"/><path d="M12 12v3"/></svg></div>
+                                <h4>Innovation</h4>
+                                <p>新しい技術と創造的なアプローチで課題解決に取り組みます</p>
+                            </div>
+                            <div class="value-item" data-aos="fade-up" data-aos-delay="300">
+                                <div class="value-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 18a5 5 0 0 0-10 0"/><line x1="12" y1="2" x2="12" y2="9"/><line x1="4.22" y1="10.22" x2="5.64" y2="11.64"/><line x1="1" y1="18" x2="3" y2="18"/><line x1="21" y1="18" x2="23" y2="18"/><line x1="18.36" y1="11.64" x2="19.78" y2="10.22"/><line x1="23" y1="22" x2="1" y2="22"/><polyline points="8,6 10.5,10.5 16,5"/></svg></div>
+                                <h4>Community</h4>
+                                <p>開発コミュニティとの交流を通じて学び、貢献します</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section class="achievements-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title scroll-reveal">Achievements & Highlights</h2>
+                    <p class="section-subtitle scroll-reveal">主な成果と実績</p>
+                </div>
+                
+                <div class="achievements-grid">
+                    <div class="achievement-item scroll-reveal" data-aos="fade-up">
+                        <div class="achievement-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2z"/></svg></div>
+                        <div class="achievement-content">
+                            <h3>30+ Apps Published</h3>
+                            <p>5年間で30個以上のiOSアプリをApp Storeに公開し、幅広いジャンルでユーザーにサービスを提供</p>
+                        </div>
+                    </div>
+                    
+                    <div class="achievement-item scroll-reveal" data-aos="fade-up" data-aos-delay="100">
+                        <div class="achievement-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/></svg></div>
+                        <div class="achievement-content">
+                            <h3>High User Ratings</h3>
+                            <p>複数のアプリで4.5星以上の高評価を獲得し、ユーザーから高い満足度を得ている</p>
+                        </div>
+                    </div>
+                    
+                    <div class="achievement-item scroll-reveal" data-aos="fade-up" data-aos-delay="200">
+                        <div class="achievement-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22,6 12,16 2,12"/></svg></div>
+                        <div class="achievement-content">
+                            <h3>Continuous Growth</h3>
+                            <p>ダウンロード数と収益が継続的に成長し、安定した個人事業として確立</p>
+                        </div>
+                    </div>
+                    
+                    <div class="achievement-item scroll-reveal" data-aos="fade-up" data-aos-delay="300">
+                        <div class="achievement-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+                        <div class="achievement-content">
+                            <h3>Technical Excellence</h3>
+                            <p>最新のiOS技術を積極的に採用し、パフォーマンスと保守性に優れたアプリを開発</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interests Section -->
+        <section class="interests-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title scroll-reveal">Interests & Hobbies</h2>
+                    <p class="section-subtitle scroll-reveal">開発以外の興味・関心</p>
+                </div>
+                
+                <div class="interests-grid">
+                    <div class="interest-item hover-lift scroll-reveal" data-aos="zoom-in">
+                        <div class="interest-icon animate-float"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
+                        <h3>Reading</h3>
+                        <p>技術書やビジネス書を読み、新しい知識とインスピレーションを得ています</p>
+                    </div>
+                    
+                    <div class="interest-item hover-lift scroll-reveal" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="interest-icon animate-bounce"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-7 14-7 14s-7-7-7-14a7 7 0 0 1 14 0z"/><circle cx="14" cy="10" r="3"/></svg></div>
+                        <h3>Travel</h3>
+                        <p>様々な場所を訪れ、新しい文化や体験からアプリのアイデアを見つけています</p>
+                    </div>
+                    
+                    <div class="interest-item hover-lift scroll-reveal" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="interest-icon animate-pulse"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></div>
+                        <h3>Music</h3>
+                        <p>集中して開発する際のBGMとして、様々なジャンルの音楽を聴いています</p>
+                    </div>
+                    
+                    <div class="interest-item hover-lift scroll-reveal" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="interest-icon animate-float"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 15.5 7 12.5l3-3 5.5 5.5 11-11"/></svg></div>
+                        <h3>Running</h3>
+                        <p>健康維持とストレス解消のため、定期的にランニングを楽しんでいます</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="section-container">
+                <div class="cta-content scroll-reveal">
+                    <div class="cta-icon animate-float"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+                    <h2 class="cta-title">Let's Connect</h2>
+                    <p class="cta-description">
+                        プロジェクトのご相談、技術的な質問、<br>
+                        または単純に挨拶でも、お気軽にお声かけください。
+                    </p>
+                    <div class="cta-actions">
+                        <a href="../contact/" class="btn btn-primary">
+                            <span>Get in Touch</span>
+                            <i class="btn-icon">→</i>
+                        </a>
+                        <a href="../portfolio/" class="btn btn-outline">
+                            <span>View Portfolio</span>
+                        </a>
                     </div>
                 </div>
             </div>
