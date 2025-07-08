@@ -585,9 +585,10 @@
 }
 
 .philosophy-description {
-    color: var(--text-secondary);
+    color: var(--text-primary);
     line-height: 1.7;
     font-size: var(--font-size-lg);
+    opacity: 0.95;
 }
 
 .philosophy-description p {
@@ -608,11 +609,18 @@
 }
 
 .value-item {
-    background: var(--background);
-    border: 1px solid var(--border-color);
+    background: var(--background-secondary);
+    border: 2px solid var(--border-color);
     border-radius: var(--radius-lg);
     padding: var(--space-6);
     text-align: center;
+    transition: all var(--transition-base);
+}
+
+.value-item:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-color);
 }
 
 .value-icon {
@@ -629,9 +637,10 @@
 }
 
 .value-item p {
-    color: var(--text-secondary);
+    color: var(--text-primary);
     font-size: var(--font-size-sm);
     line-height: 1.6;
+    opacity: 0.9;
 }
 
 .achievements-section {
