@@ -943,9 +943,29 @@ body {
     font-weight: 500;
 }
 
-.transferred-status {
+.transferred-card-footer {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: var(--spacing-md);
+}
+
+.app-store-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 14px;
+    background: var(--color-primary);
+    color: var(--color-background);
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.app-store-link:hover {
+    background: var(--color-text);
+    transform: translateY(-1px);
 }
 
 .status-badge {
