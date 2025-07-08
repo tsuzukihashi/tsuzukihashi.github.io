@@ -68,6 +68,13 @@ const translations = {
                 description: "水分摂取を管理するライフスタイルアプリ"
             }
         },
+        // Featured Apps
+        featuredApps: {
+            travelMemoryMap: {
+                title: "旅行思い出マップ",
+                description: "写真をパズルのように切り取って地図に記録する旅行思い出アプリ。47都道府県・北海道179市町村・東京都62市区町村のマップで思い出を残そう。"
+            }
+        },
         // Categories
         categories: {
             sns: "SNS",
@@ -153,6 +160,13 @@ const translations = {
             waterLife: {
                 title: "WaterLife",
                 description: "Lifestyle app for managing water intake"
+            }
+        },
+        // Featured Apps
+        featuredApps: {
+            travelMemoryMap: {
+                title: "Travel Memory Map",
+                description: "A travel memory app that cuts photos like puzzle pieces and records them on a map. Create memories on maps of 47 prefectures, 179 municipalities in Hokkaido, and 62 cities/wards in Tokyo."
             }
         },
         // Categories
@@ -254,6 +268,13 @@ const translations = {
             waterLife: {
                 title: "WaterLife",
                 description: "수분 섭취를 관리하는 라이프스타일 앱"
+            }
+        },
+        // Featured Apps
+        featuredApps: {
+            travelMemoryMap: {
+                title: "여행 추억 지도",
+                description: "사진을 퍼즐처럼 잘라서 지도에 기록하는 여행 추억 앱. 47개 도도부현, 홋카이도 179개 시정촌, 도쿄도 62개 시구정촌의 지도에서 추억을 남기세요."
             }
         },
         // Categories
