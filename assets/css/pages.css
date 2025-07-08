@@ -1237,18 +1237,42 @@
 }
 
 .process-timeline .timeline-content h3 {
-    font-size: var(--font-size-xl);
-    font-weight: 700;
-    color: var(--text-primary);
+    font-size: var(--font-size-xl) !important;
+    font-weight: 700 !important;
+    color: var(--text-primary) !important;
     margin-bottom: var(--space-3);
 }
 
+.development-process .timeline-content h3 {
+    color: var(--text-primary) !important;
+    font-weight: 700 !important;
+}
+
 .process-timeline .timeline-content p {
-    color: var(--text-primary);
-    font-size: var(--font-size-base);
+    color: var(--text-primary) !important;
+    font-size: var(--font-size-base) !important;
     line-height: 1.6;
     margin: 0;
-    opacity: 0.9;
+    opacity: 1 !important;
+    font-weight: 500 !important;
+}
+
+.development-process .timeline-content p {
+    color: var(--text-primary) !important;
+    font-weight: 500 !important;
+    opacity: 1 !important;
+}
+
+/* Extra strong selector for Development Process text */
+section.development-process .timeline-content p {
+    color: #ffffff !important;
+    font-weight: 600 !important;
+    opacity: 1 !important;
+}
+
+section.development-process .timeline-content h3 {
+    color: #ffffff !important;
+    font-weight: 700 !important;
 }
 
 /* Mobile version of process timeline */

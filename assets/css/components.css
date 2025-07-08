@@ -642,6 +642,18 @@
     font-size: var(--font-size-md);
 }
 
+/* Override for Development Process timeline */
+.development-process .timeline-content p {
+    color: var(--text-primary) !important;
+    font-weight: 500 !important;
+    opacity: 1 !important;
+}
+
+.development-process .timeline-content h3 {
+    color: var(--text-primary) !important;
+    font-weight: 700 !important;
+}
+
 /* Strengths */
 .strengths-grid {
     display: grid;
