@@ -649,6 +649,59 @@
     color: var(--secondary-color);
 }
 
+/* Related Documents Styles */
+.related-documents {
+    margin-top: var(--space-6);
+    padding: var(--space-4);
+    background: var(--background-light);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+}
+
+.related-documents h4 {
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    color: var(--legal-text);
+    margin-bottom: var(--space-3);
+}
+
+.document-links {
+    display: flex;
+    gap: var(--space-3);
+    flex-wrap: wrap;
+}
+
+.document-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-2) var(--space-4);
+    background: var(--background);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.document-link:hover {
+    background: var(--primary-color);
+    color: var(--background-dark);
+    border-color: var(--primary-color);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-sm);
+}
+
+.link-icon {
+    font-size: var(--font-size-base);
+}
+
+.link-text {
+    white-space: nowrap;
+}
+
 /* Responsive Design for Disclaimer */
 @media (max-width: 768px) {
     .disclaimer-highlight {
