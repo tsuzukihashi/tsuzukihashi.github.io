@@ -64,14 +64,14 @@ function loadSharedComponents() {
 // Setup language switcher for legal pages
 function setupLanguageSwitcher() {
     const currentPath = window.location.pathname;
-    const langLinks = document.querySelectorAll('.lang-link[data-lang]');
+    const langOptions = document.querySelectorAll('.lang-option[data-lang]');
     
-    if (langLinks.length > 0 && currentPath.includes('/legal/')) {
+    if (langOptions.length > 0 && currentPath.includes('/legal/')) {
         // Get current page name (e.g., 'privacy-policy.html')
         const currentPage = currentPath.split('/').pop();
         
-        langLinks.forEach(link => {
-            const lang = link.getAttribute('data-lang');
+        langOptions.forEach(option => {
+            const lang = option.getAttribute('data-lang');
             let targetPath;
             
             if (lang === 'ja') {
@@ -110,7 +110,7 @@ function setupLanguageSwitcher() {
                 }
             }
             
-            link.href = targetPath;
+            option.href = targetPath;
         });
     }
 }

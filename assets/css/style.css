@@ -116,28 +116,105 @@ body {
 }
 
 .language-switcher {
-    display: flex;
-    gap: var(--spacing-sm);
     margin-left: var(--spacing-lg);
+    position: relative;
 }
 
-.lang-link {
+.lang-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.lang-current {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    background: var(--color-background);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: var(--font-size-sm);
+    color: var(--color-text);
+    transition: var(--transition);
+    min-width: 120px;
+}
+
+.lang-current:hover {
+    background: var(--color-accent);
+    border-color: var(--color-primary);
+}
+
+.lang-icon {
+    font-size: 14px;
+}
+
+.lang-text {
+    flex: 1;
+    text-align: left;
+}
+
+.lang-arrow {
+    font-size: 10px;
+    transition: transform 0.2s ease;
+}
+
+.lang-dropdown:hover .lang-arrow {
+    transform: rotate(180deg);
+}
+
+.lang-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--color-background);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.2s ease;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.lang-dropdown:hover .lang-options {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.lang-option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--spacing-xs) var(--spacing-sm);
     color: var(--color-text);
     text-decoration: none;
     font-size: var(--font-size-sm);
-    padding: var(--spacing-xs) var(--spacing-sm);
-    border-radius: var(--border-radius);
     transition: var(--transition);
+    border-bottom: 1px solid var(--color-border);
 }
 
-.lang-link:hover {
+.lang-option:last-child {
+    border-bottom: none;
+}
+
+.lang-option:hover {
     background: var(--color-accent);
     color: var(--color-primary);
 }
 
-.lang-link.active {
+.lang-option.active {
     background: var(--color-primary);
     color: var(--color-background);
+}
+
+.lang-check {
+    font-size: 12px;
+    opacity: 0.8;
 }
 
 .nav-toggle {
@@ -1771,6 +1848,11 @@ body {
     .language-switcher {
         margin-left: 0;
         margin-top: var(--spacing-md);
+        display: flex;
         justify-content: center;
+    }
+    
+    .lang-current {
+        min-width: 140px;
     }
 }

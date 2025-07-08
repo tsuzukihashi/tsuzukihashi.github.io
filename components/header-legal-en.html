@@ -7,9 +7,25 @@
             <a href="../#about" class="nav-link">About</a>
             <a href="../#contact" class="nav-link">Contact</a>
             <div class="language-switcher">
-                <a href="#" class="lang-link" data-lang="ja">日本語</a>
-                <a href="#" class="lang-link active" data-lang="en">English</a>
-                <a href="#" class="lang-link" data-lang="ko">한국어</a>
+                <div class="lang-dropdown">
+                    <button class="lang-current">
+                        <span class="lang-icon">🌐</span>
+                        <span class="lang-text">English</span>
+                        <span class="lang-arrow">▼</span>
+                    </button>
+                    <div class="lang-options">
+                        <a href="#" class="lang-option" data-lang="ja">
+                            <span class="lang-text">日本語</span>
+                        </a>
+                        <a href="#" class="lang-option active" data-lang="en">
+                            <span class="lang-text">English</span>
+                            <span class="lang-check">✓</span>
+                        </a>
+                        <a href="#" class="lang-option" data-lang="ko">
+                            <span class="lang-text">한국어</span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="nav-toggle">
