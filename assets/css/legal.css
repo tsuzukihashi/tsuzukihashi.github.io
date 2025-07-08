@@ -3,6 +3,10 @@
 /* Language Switch Styles */
 .language-switch {
     margin-top: var(--space-6);
+    display: flex;
+    gap: var(--space-3);
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .language-link {
