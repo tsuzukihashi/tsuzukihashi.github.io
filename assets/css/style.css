@@ -2015,3 +2015,72 @@ body {
         justify-content: center;
     }
 }
+
+/* Social Media Icons */
+.social-links {
+    display: flex;
+    gap: var(--spacing-md);
+    align-items: center;
+    margin-top: var(--spacing-sm);
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--color-accent);
+    color: var(--color-text);
+    text-decoration: none;
+    transition: var(--transition);
+    font-size: 18px;
+}
+
+.social-link:hover {
+    background: var(--color-primary);
+    color: var(--color-background);
+    transform: translateY(-2px);
+}
+
+.social-link svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+/* X (Twitter) Icon */
+.social-link.x-icon::before {
+    content: "𝕏";
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* TikTok Icon */
+.social-link.tiktok-icon::before {
+    content: "♪";
+    font-size: 18px;
+}
+
+/* GitHub Icon */
+.social-link.github-icon::before {
+    content: "⚡";
+    font-size: 16px;
+}
+
+/* Footer social links specific styling */
+.footer .social-links {
+    justify-content: flex-start;
+}
+
+@media (max-width: 768px) {
+    .social-links {
+        justify-content: center;
+        margin-top: var(--spacing-md);
+    }
+    
+    .footer .social-links {
+        justify-content: center;
+    }
+}
