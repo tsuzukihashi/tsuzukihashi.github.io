@@ -372,11 +372,14 @@
 /* Current Status */
 .current-status {
     position: relative;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    background: var(--background-secondary);
+    border: 2px solid transparent;
+    border-image: linear-gradient(135deg, var(--primary-color), var(--secondary-color)) 1;
     border-radius: var(--radius-lg);
     padding: var(--space-8);
-    color: var(--background-dark);
+    color: var(--text-primary);
     overflow: hidden;
+    box-shadow: 0 0 30px rgba(0, 217, 255, 0.1);
 }
 
 .current-status::before {
@@ -386,14 +389,15 @@
     right: 0;
     width: 100px;
     height: 100px;
-    background: var(--background-secondary);
+    background: linear-gradient(135deg, rgba(0, 217, 255, 0.1), rgba(0, 230, 118, 0.1));
     border-radius: 50%;
     transform: translate(30%, -30%);
 }
 
 .status-badge {
     display: inline-block;
-    background: var(--background-secondary);
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--background-dark);
     padding: var(--space-2) var(--space-4);
     border-radius: var(--radius-full);
     font-size: var(--font-size-sm);
@@ -426,7 +430,8 @@
     align-items: center;
     gap: var(--space-3);
     padding: var(--space-3);
-    background: var(--background-secondary);
+    background: var(--background-dark);
+    border: 1px solid var(--border-color);
     border-radius: var(--radius-md);
     transition: transform var(--transition-fast);
 }
@@ -448,8 +453,8 @@
 }
 
 .achievement-card {
-    background: var(--background);
-    border: 1px solid var(--border-color);
+    background: var(--background-secondary);
+    border: 2px solid var(--border-color);
     border-radius: var(--radius-lg);
     padding: var(--space-6);
     text-align: center;
@@ -495,7 +500,10 @@
 .achievement-metric {
     font-size: var(--font-size-2xl);
     font-weight: 800;
-    color: var(--primary-color);
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     margin-bottom: var(--space-2);
 }
 
