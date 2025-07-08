@@ -1,5 +1,33 @@
 /* Legal Pages Styles - Accessible */
 
+/* Language Switch Styles */
+.language-switch {
+    margin-top: var(--space-6);
+}
+
+.language-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-3) var(--space-6);
+    background: var(--background-light);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.language-link:hover {
+    background: var(--primary-color);
+    color: var(--background-dark);
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
 /* Legal Page Variables */
 :root {
     /* Legal-specific colors */
