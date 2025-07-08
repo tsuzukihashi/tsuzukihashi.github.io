@@ -34,14 +34,20 @@
     </script>
 </head>
 <body>
+    <!-- Skip Links for Accessibility -->
+    <div class="skip-links">
+        <a href="#main-content" class="skip-link">メインコンテンツにスキップ</a>
+        <a href="#apps" class="skip-link">アプリ一覧にスキップ</a>
+        <a href="#career" class="skip-link">キャリア情報にスキップ</a>
+    </div>
 
     <!-- Header Component -->
     <div data-component="header"></div>
 
     <!-- Main Content -->
-    <main class="main">
+    <main class="main" id="main-content">
         <!-- Hero Section -->
-        <section class="hero" id="home">
+        <section class="hero" id="home" aria-label="メインのヒーロー紹介セクション">
             <div class="hero-container">
                 <div class="hero-content">
                     <div class="hero-text">
@@ -66,15 +72,15 @@
                     <div class="hero-visual">
                         <div class="floating-elements">
                             <div class="floating-card">
-                                <div class="card-icon">📱</div>
+                                <div class="card-icon" aria-hidden="true">📱</div>
                                 <div class="card-text">iOS Apps</div>
                             </div>
                             <div class="floating-card">
-                                <div class="card-icon">💡</div>
+                                <div class="card-icon" aria-hidden="true">💡</div>
                                 <div class="card-text">Creative</div>
                             </div>
                             <div class="floating-card">
-                                <div class="card-icon">🚀</div>
+                                <div class="card-icon" aria-hidden="true">🚀</div>
                                 <div class="card-text">Innovative</div>
                             </div>
                         </div>
@@ -98,7 +104,7 @@
         </section>
 
         <!-- Featured Apps Section -->
-        <section class="featured-apps" id="apps">
+        <section class="featured-apps" id="apps" aria-label="主要なアプリケーション紹介">
             <div class="section-container">
                 <div class="section-header">
                     <h2 class="section-title">Featured Apps</h2>
@@ -108,7 +114,7 @@
                 <div class="apps-grid">
                     <div class="app-card" data-aos="fade-up">
                         <div class="app-image">
-                            <img src="assets/images/travel-memory-map.jpg" alt="Travel Memory Map" loading="lazy">
+                            <img src="assets/images/travel-memory-map.jpg" alt="Travel Memory Map - 旅行思い出マップアプリのスクリーンショット。地図上に写真を配置している画面" loading="lazy">
                             <div class="app-overlay">
                                 <div class="app-tags">
                                     <span class="tag">Travel</span>
@@ -169,7 +175,7 @@
         </section>
 
         <!-- Career Section -->
-        <section class="career" id="career">
+        <section class="career" id="career" aria-label="キャリア情報と経歴">
             <div class="section-container">
                 <div class="section-header">
                     <h2 class="section-title">Career Journey</h2>
@@ -203,7 +209,7 @@
                     <!-- Key Achievements -->
                     <div class="achievements-grid">
                         <div class="achievement-card" data-aos="fade-up" data-aos-delay="100">
-                            <div class="achievement-icon">🎯</div>
+                            <div class="achievement-icon" aria-hidden="true">🎯</div>
                             <div class="achievement-content">
                                 <h4 class="achievement-title">流れるメモ帳</h4>
                                 <p class="achievement-metric">12万ダウンロード</p>
@@ -212,7 +218,7 @@
                         </div>
                         
                         <div class="achievement-card" data-aos="fade-up" data-aos-delay="200">
-                            <div class="achievement-icon">🗺️</div>
+                            <div class="achievement-icon" aria-hidden="true">🗺️</div>
                             <div class="achievement-content">
                                 <h4 class="achievement-title">旅行思い出マップ</h4>
                                 <p class="achievement-metric">8万ダウンロード</p>
@@ -221,7 +227,7 @@
                         </div>
 
                         <div class="achievement-card" data-aos="fade-up" data-aos-delay="300">
-                            <div class="achievement-icon">🏆</div>
+                            <div class="achievement-icon" aria-hidden="true">🏆</div>
                             <div class="achievement-content">
                                 <h4 class="achievement-title">技術発信</h4>
                                 <p class="achievement-metric">iOSDC登壇</p>
@@ -310,7 +316,7 @@
         </section>
 
         <!-- Stats Section -->
-        <section class="stats">
+        <section class="stats" aria-label="統計情報">
             <div class="section-container">
                 <div class="stats-grid">
                     <div class="stat-item" data-aos="zoom-in">

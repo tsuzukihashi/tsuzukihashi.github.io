@@ -48,6 +48,8 @@
         --space-16: var(--space-12);
         --space-20: var(--space-16);
         --space-24: var(--space-20);
+        /* Enhanced touch targets for mobile */
+        --touch-target-min: 48px;
     }
     
     /* Header Mobile */

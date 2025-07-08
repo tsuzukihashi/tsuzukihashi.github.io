@@ -157,19 +157,19 @@
                             <div class="form-row">
                                 <div class="form-group">
                                     <label for="name" class="form-label">お名前 *</label>
-                                    <input type="text" id="name" name="name" class="form-input" required>
-                                    <div class="form-error" id="name-error"></div>
+                                    <input type="text" id="name" name="name" class="form-input" required aria-describedby="name-error" aria-invalid="false">
+                                    <div class="form-error" id="name-error" role="alert" aria-live="polite"></div>
                                 </div>
                                 <div class="form-group">
                                     <label for="email" class="form-label">メールアドレス *</label>
-                                    <input type="email" id="email" name="email" class="form-input" required>
-                                    <div class="form-error" id="email-error"></div>
+                                    <input type="email" id="email" name="email" class="form-input" required aria-describedby="email-error" aria-invalid="false">
+                                    <div class="form-error" id="email-error" role="alert" aria-live="polite"></div>
                                 </div>
                             </div>
                             
                             <div class="form-group">
                                 <label for="subject" class="form-label">件名 *</label>
-                                <select id="subject" name="subject" class="form-select" required>
+                                <select id="subject" name="subject" class="form-select" required aria-describedby="subject-error" aria-invalid="false">
                                     <option value="">選択してください</option>
                                     <option value="project">プロジェクトのご相談</option>
                                     <option value="collaboration">コラボレーション</option>
@@ -178,23 +178,23 @@
                                     <option value="feedback">フィードバック</option>
                                     <option value="other">その他</option>
                                 </select>
-                                <div class="form-error" id="subject-error"></div>
+                                <div class="form-error" id="subject-error" role="alert" aria-live="polite"></div>
                             </div>
                             
                             <div class="form-group">
                                 <label for="message" class="form-label">メッセージ *</label>
-                                <textarea id="message" name="message" class="form-textarea" rows="6" placeholder="詳細な内容をお書きください..." required></textarea>
-                                <div class="form-error" id="message-error"></div>
+                                <textarea id="message" name="message" class="form-textarea" rows="6" placeholder="詳細な内容をお書きください..." required aria-describedby="message-error" aria-invalid="false"></textarea>
+                                <div class="form-error" id="message-error" role="alert" aria-live="polite"></div>
                             </div>
                             
                             <div class="form-group">
                                 <div class="checkbox-group">
-                                    <input type="checkbox" id="privacy" name="privacy" required>
+                                    <input type="checkbox" id="privacy" name="privacy" required aria-describedby="privacy-error" aria-invalid="false">
                                     <label for="privacy" class="checkbox-label">
                                         <a href="../legal/privacy-policy.html" target="_blank">プライバシーポリシー</a>に同意します *
                                     </label>
                                 </div>
-                                <div class="form-error" id="privacy-error"></div>
+                                <div class="form-error" id="privacy-error" role="alert" aria-live="polite"></div>
                             </div>
                             
                             <div class="form-submit">
