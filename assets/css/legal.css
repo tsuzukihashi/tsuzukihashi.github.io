@@ -32,6 +32,139 @@
     box-shadow: var(--shadow-md);
 }
 
+/* Disclaimer Specific Styles */
+.disclaimer-highlight {
+    background: var(--background-light);
+    border: 1px solid var(--border-color);
+    border-left: 4px solid var(--legal-warning);
+    border-radius: var(--radius-md);
+    padding: var(--space-6);
+    margin-top: var(--space-6);
+    display: flex;
+    gap: var(--space-4);
+    align-items: flex-start;
+}
+
+.highlight-icon {
+    font-size: var(--font-size-xl);
+    flex-shrink: 0;
+}
+
+.highlight-content h4 {
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    color: var(--legal-text);
+    margin-bottom: var(--space-2);
+}
+
+.highlight-content p {
+    margin: 0;
+    color: var(--legal-text-secondary);
+}
+
+.accuracy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-6);
+    margin-top: var(--space-6);
+}
+
+.accuracy-item {
+    background: var(--background-light);
+    padding: var(--space-4);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+    text-align: center;
+}
+
+.accuracy-icon {
+    font-size: var(--font-size-2xl);
+    margin-bottom: var(--space-3);
+    display: block;
+}
+
+.accuracy-item h4 {
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    color: var(--legal-text);
+    margin-bottom: var(--space-2);
+}
+
+.accuracy-item p {
+    margin: 0;
+    color: var(--legal-text-secondary);
+    font-size: var(--font-size-sm);
+}
+
+.liability-list {
+    display: grid;
+    gap: var(--space-4);
+    margin-top: var(--space-6);
+}
+
+.liability-item {
+    display: flex;
+    gap: var(--space-4);
+    padding: var(--space-4);
+    background: var(--background-light);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+}
+
+.liability-number {
+    width: 40px;
+    height: 40px;
+    background: var(--legal-danger);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.liability-content h4 {
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    color: var(--legal-text);
+    margin-bottom: var(--space-2);
+}
+
+.liability-content p {
+    margin: 0;
+    color: var(--legal-text-secondary);
+    font-size: var(--font-size-sm);
+}
+
+.updates-action {
+    display: flex;
+    gap: var(--space-4);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Responsive Design for Disclaimer */
+@media (max-width: 768px) {
+    .disclaimer-highlight {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .accuracy-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .liability-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .updates-action {
+        flex-direction: column;
+    }
+}
+
 /* Legal Page Variables */
 :root {
     /* Legal-specific colors */
