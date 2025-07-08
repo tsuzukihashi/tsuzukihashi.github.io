@@ -23,6 +23,9 @@ function loadSharedComponents() {
         if (currentPath.includes('/legal/')) {
             headerPath = '../../components/header-legal-en.html';
             footerPath = '../../components/footer-legal-en.html';
+        } else if (currentPath.includes('/about/') || currentPath.includes('/contact/') || currentPath.includes('/portfolio/')) {
+            headerPath = '../components/header-page-en.html';
+            footerPath = '../components/footer-page-en.html';
         } else {
             headerPath = '../components/header-en.html';
             footerPath = '../components/footer-en.html';
@@ -32,6 +35,9 @@ function loadSharedComponents() {
         if (currentPath.includes('/legal/')) {
             headerPath = '../../components/header-legal-ko.html';
             footerPath = '../../components/footer-legal-ko.html';
+        } else if (currentPath.includes('/about/') || currentPath.includes('/contact/') || currentPath.includes('/portfolio/')) {
+            headerPath = '../components/header-page-ko.html';
+            footerPath = '../components/footer-page-ko.html';
         } else {
             headerPath = '../components/header-ko.html';
             footerPath = '../components/footer-ko.html';
@@ -41,6 +47,9 @@ function loadSharedComponents() {
         if (currentPath.includes('/legal/')) {
             headerPath = '../components/header-legal.html';
             footerPath = '../components/footer-legal.html';
+        } else if (currentPath.includes('/about/') || currentPath.includes('/contact/') || currentPath.includes('/portfolio/')) {
+            headerPath = '../components/header-page.html';
+            footerPath = '../components/footer-page.html';
         } else {
             headerPath = 'components/header.html';
             footerPath = 'components/footer.html';
