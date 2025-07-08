@@ -4,20 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - tsuzuki817</title>
-    <meta name="description" content="tsuzuki817のポートフォリオ。30個以上のiOSアプリの詳細をご覧いただけます。">
+    <meta name="description" content="tsuzuki817が開発・公開した30個以上のiOSアプリケーション一覧">
+    <meta name="keywords" content="iOS, Swift, アプリ開発, ポートフォリオ, tsuzuki817">
     
     <!-- CSS Files -->
-    <link rel="stylesheet" href="../assets/css/reset.css">
     <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/components.css">
-    <link rel="stylesheet" href="../assets/css/responsive.css">
-    <link rel="stylesheet" href="../assets/css/animations.css">
-    <link rel="stylesheet" href="../assets/css/accessibility.css">
-    
-    <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Favicon -->
     <link rel="icon" href="../favicon.ico">
@@ -33,726 +24,234 @@
     </script>
 </head>
 <body>
-    <!-- Loading Screen -->
-    <div id="loading-screen" class="loading-screen">
-        <div class="loader">
-            <div class="loader-circle"></div>
-            <div class="loader-text">Loading Portfolio...</div>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="../" class="nav-logo">tsuzuki817</a>
+            <div class="nav-menu">
+                <a href="#work" class="nav-link">Portfolio</a>
+                <a href="../#about" class="nav-link">About</a>
+                <a href="../#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+            </div>
         </div>
-    </div>
+    </nav>
 
-    <!-- Header Component -->
-    <div data-component="header"></div>
-
-    <!-- Main Content -->
-    <main class="main portfolio-main">
-        <!-- Hero Section -->
-        <section class="portfolio-hero">
-            <div class="section-container">
-                <div class="hero-content">
-                    <h1 class="hero-title scroll-reveal">
-                        <span class="title-line">Portfolio</span>
-                    </h1>
-                    <p class="hero-subtitle scroll-reveal">
-                        30個以上のiOSアプリを開発・公開しています。<br>
-                        ZOZO、Yahoo!、DeNAでの経験を活かした高品質なアプリケーションをご紹介します。
-                    </p>
-                    
-                    <!-- Stats Overview -->
-                    <div class="stats-overview scroll-reveal">
-                        <div class="stat-item">
-                            <div class="stat-number">30+</div>
-                            <div class="stat-label">リリース済みアプリ</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">80K+</div>
-                            <div class="stat-label">総ダウンロード数</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">グランプリ</div>
-                            <div class="stat-label">神アプリグランプリ受賞</div>
-                        </div>
+    <!-- Portfolio Hero -->
+    <section class="portfolio-hero">
+        <div class="container">
+            <div class="portfolio-hero-content">
+                <h1 class="portfolio-title">Portfolio</h1>
+                <p class="portfolio-description">
+                    App Storeに公開した30個以上のiOSアプリケーション<br>
+                    ユーザーの生活を豊かにするアプリを作り続けています
+                </p>
+                <div class="portfolio-stats">
+                    <div class="portfolio-stat">
+                        <div class="stat-number">25</div>
+                        <div class="stat-label">Published Apps</div>
                     </div>
-                    
-                    <!-- Filter Buttons -->
-                    <div class="filter-buttons scroll-reveal">
-                        <button class="filter-btn active" data-filter="all">All Apps</button>
-                        <button class="filter-btn" data-filter="productivity">生産性</button>
-                        <button class="filter-btn" data-filter="utility">ユーティリティ</button>
-                        <button class="filter-btn" data-filter="photo">写真・ビデオ</button>
-                        <button class="filter-btn" data-filter="music">音楽</button>
-                        <button class="filter-btn" data-filter="travel">旅行</button>
-                        <button class="filter-btn" data-filter="lifestyle">ライフスタイル</button>
-                        <button class="filter-btn" data-filter="social">ソーシャル</button>
+                    <div class="portfolio-stat">
+                        <div class="stat-number">16万</div>
+                        <div class="stat-label">Total Downloads</div>
+                    </div>
+                    <div class="portfolio-stat">
+                        <div class="stat-number">4.6</div>
+                        <div class="stat-label">Average Rating</div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Apps Grid Section -->
-        <section class="apps-showcase">
-            <div class="section-container">
-                <div class="apps-grid portfolio-grid" id="apps-grid">
-                    <!-- Memory Map ~Travel~ -->
-                    <div class="app-card hover-lift featured" data-category="travel" data-aos="fade-up" onclick="window.location.href='apps/memory-map.html'">
-                        <div class="app-image">
-                            <div class="placeholder-image gradient-bg-travel">
-                                <div class="placeholder-content">
-                                    <div class="placeholder-icon">🗺️</div>
-                                    <div class="featured-badge">80K+ Downloads</div>
-                                </div>
-                            </div>
-                            <div class="app-overlay">
-                                <div class="app-tags">
-                                    <span class="tag tag-travel">Travel</span>
-                                    <span class="tag tag-featured">Featured</span>
-                                </div>
-                                <div class="app-actions-overlay">
-                                    <a href="apps/memory-map.html" class="btn-icon-round" onclick="event.stopPropagation();">
-                                        <span>👁️</span>
-                                    </a>
-                                    <a href="https://apps.apple.com/jp/app/%E6%97%85%E8%A1%8C%E6%80%9D%E3%81%84%E5%87%BA%E3%83%9E%E3%83%83%E3%83%97-%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AE%E5%86%99%E7%9C%9F%E3%81%8C%E5%9C%B0%E5%9B%B3%E3%81%AB%E3%81%AA%E3%82%8B/id6478291625?platform=iphone" class="btn-icon-round" target="_blank" onclick="event.stopPropagation();">
-                                        <span>📱</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="app-content">
-                            <h3 class="app-title">Memory Map ~Travel~</h3>
-                            <p class="app-description">写真をパズルのように切り取って地図に記録する旅行思い出アプリ。47都道府県、北海道179市町村、東京都62市区町村のマップで思い出を残そう。iOS/iPadOS/macOS/visionOS対応。★4.7評価。</p>
-                            <div class="app-meta">
-                                <div class="app-stats">
-                                    <span class="stat-item">
-                                        <i class="stat-icon">📥</i>
-                                        <span class="stat-value">80K+</span>
-                                    </span>
-                                    <span class="stat-item">
-                                        <i class="stat-icon">📱</i>
-                                        <span class="stat-value">全プラットフォーム</span>
-                                    </span>
-                                </div>
-                                <div class="app-tech">
-                                    <span class="tech-tag">SwiftUI</span>
-                                    <span class="tech-tag">MapKit</span>
-                                    <span class="tech-tag">visionOS</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- いつでもタイマー -->
-                    <div class="app-card hover-lift award-winner" data-category="productivity" data-aos="fade-up" data-aos-delay="100" onclick="window.location.href='apps/always-on-timer.html'">
-                        <div class="app-image">
-                            <div class="placeholder-image gradient-bg-productivity">
-                                <div class="placeholder-content">
-                                    <div class="placeholder-icon">⏰</div>
-                                    <div class="award-badge">グランプリ受賞</div>
-                                </div>
-                            </div>
-                            <div class="app-overlay">
-                                <div class="app-tags">
-                                    <span class="tag tag-productivity">生産性</span>
-                                    <span class="tag tag-award">受賞</span>
-                                </div>
-                                <div class="app-actions-overlay">
-                                    <a href="apps/always-on-timer.html" class="btn-icon-round" onclick="event.stopPropagation();">
-                                        <span>👁️</span>
-                                    </a>
-                                    <a href="#" class="btn-icon-round" target="_blank" onclick="event.stopPropagation();">
-                                        <span>📱</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="app-content">
-                            <h3 class="app-title">いつでもタイマー</h3>
-                            <p class="app-description">Live Activity対応のタイマーアプリ。神アプリグランプリでグランプリを受賞した実績のあるアプリです。</p>
-                            <div class="app-meta">
-                                <div class="app-stats">
-                                    <span class="stat-item">
-                                        <i class="stat-icon">🏆</i>
-                                        <span class="stat-value">グランプリ</span>
-                                    </span>
-                                    <span class="stat-item">
-                                        <i class="stat-icon">⚡</i>
-                                        <span class="stat-value">Live Activity</span>
-                                    </span>
-                                </div>
-                                <div class="app-tech">
-                                    <span class="tech-tag">SwiftUI</span>
-                                    <span class="tech-tag">Live Activity</span>
-                                    <span class="tech-tag">WidgetKit</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- :igyo: -->
-                    <div class="app-card hover-lift rapid-dev" data-category="social" data-aos="fade-up" data-aos-delay="200" onclick="window.location.href='apps/igyo.html'">
-                        <div class="app-image">
-                            <div class="placeholder-image gradient-bg-social">
-                                <div class="placeholder-content">
-                                    <div class="placeholder-icon">💬</div>
-                                    <div class="rapid-badge">10日間開発</div>
-                                </div>
-                            </div>
-                            <div class="app-overlay">
-                                <div class="app-tags">
-                                    <span class="tag tag-social">ソーシャル</span>
-                                    <span class="tag tag-rapid">迅速開発</span>
-                                </div>
-                                <div class="app-actions-overlay">
-                                    <a href="apps/igyo.html" class="btn-icon-round" onclick="event.stopPropagation();">
-                                        <span>👁️</span>
-                                    </a>
-                                    <a href="#" class="btn-icon-round" target="_blank" onclick="event.stopPropagation();">
-                                        <span>📱</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="app-content">
-                            <h3 class="app-title">:igyo:</h3>
-                            <p class="app-description">スタンプコミュニケーションベースのゆるいSNSアプリ。多忙な中わずか10日間で開発・リリースを実現。</p>
-                            <div class="app-meta">
-                                <div class="app-stats">
-                                    <span class="stat-item">
-                                        <i class="stat-icon">⚡</i>
-                                        <span class="stat-value">10日開発</span>
-                                    </span>
-                                    <span class="stat-item">
-                                        <i class="stat-icon">🔒</i>
-                                        <span class="stat-value">iOS 17+</span>
-                                    </span>
-                                </div>
-                                <div class="app-tech">
-                                    <span class="tech-tag">SwiftUI</span>
-                                    <span class="tech-tag">Firebase</span>
-                                    <span class="tech-tag">Sign in with Apple</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Qiitable -->
-                    <div class="app-card hover-lift perseverance" data-category="utility" data-aos="fade-up" data-aos-delay="300" onclick="window.location.href='apps/qiitable.html'">
-                        <div class="app-image">
-                            <div class="placeholder-image gradient-bg-utility">
-                                <div class="placeholder-content">
-                                    <div class="placeholder-icon">📰</div>
-                                    <div class="perseverance-badge">2年間開発</div>
-                                </div>
-                            </div>
-                            <div class="app-overlay">
-                                <div class="app-tags">
-                                    <span class="tag tag-utility">ユーティリティ</span>
-                                    <span class="tag tag-widget">ウィジェット</span>
-                                </div>
-                                <div class="app-actions-overlay">
-                                    <a href="apps/qiitable.html" class="btn-icon-round" onclick="event.stopPropagation();">
-                                        <span>👁️</span>
-                                    </a>
-                                    <a href="#" class="btn-icon-round" target="_blank" onclick="event.stopPropagation();">
-                                        <span>📱</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="app-content">
-                            <h3 class="app-title">Qiitable (WidgetQiita)</h3>
-                            <p class="app-description">Qiitaの人気記事をウィジェットで表示。6回のリジェクトを乗り越え2年間の開発期間を経てリリース。</p>
-                            <div class="app-meta">
-                                <div class="app-stats">
-                                    <span class="stat-item">
-                                        <i class="stat-icon">💪</i>
-                                        <span class="stat-value">6回リジェクト</span>
-                                    </span>
-                                    <span class="stat-item">
-                                        <i class="stat-icon">📱</i>
-                                        <span class="stat-value">ウィジェット</span>
-                                    </span>
-                                </div>
-                                <div class="app-tech">
-                                    <span class="tech-tag">SwiftUI</span>
-                                    <span class="tech-tag">WidgetKit</span>
-                                    <span class="tech-tag">API</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- BookBank -->
-                    <div class="app-card hover-lift debut" data-category="productivity" data-aos="fade-up" data-aos-delay="400" onclick="window.location.href='apps/bookbank.html'">
-                        <div class="app-image">
-                            <div class="placeholder-image gradient-bg-productivity-2">
-                                <div class="placeholder-content">
-                                    <div class="placeholder-icon">📚</div>
-                                    <div class="debut-badge">初個人アプリ</div>
-                                </div>
-                            </div>
-                            <div class="app-overlay">
-                                <div class="app-tags">
-                                    <span class="tag tag-productivity">生産性</span>
-                                    <span class="tag tag-debut">デビュー作</span>
-                                </div>
-                                <div class="app-actions-overlay">
-                                    <a href="apps/bookbank.html" class="btn-icon-round" onclick="event.stopPropagation();">
-                                        <span>👁️</span>
-                                    </a>
-                                    <a href="#" class="btn-icon-round" target="_blank" onclick="event.stopPropagation();">
-                                        <span>📱</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="app-content">
-                            <h3 class="app-title">BookBank 〜読書銀行〜</h3>
-                            <p class="app-description">読書に費やした金額を管理するアプリ。新卒エンジニア時代の初個人アプリとしてSwiftUIで開発。</p>
-                            <div class="app-meta">
-                                <div class="app-stats">
-                                    <span class="stat-item">
-                                        <i class="stat-icon">🎯</i>
-                                        <span class="stat-value">初作品</span>
-                                    </span>
-                                    <span class="stat-item">
-                                        <i class="stat-icon">📅</i>
-                                        <span class="stat-value">2019年</span>
-                                    </span>
-                                </div>
-                                <div class="app-tech">
-                                    <span class="tech-tag">SwiftUI</span>
-                                    <span class="tech-tag">AVFoundation</span>
-                                    <span class="tech-tag">Share</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- PIPMP -->
-                    <div class="app-card hover-lift community-driven" data-category="music" data-aos="fade-up" data-aos-delay="500" onclick="window.location.href='apps/pipmp.html'">
-                        <div class="app-image">
-                            <div class="placeholder-image gradient-bg-music">
-                                <div class="placeholder-content">
-                                    <div class="placeholder-icon">🎵</div>
-                                    <div class="community-badge">コミュニティ提案</div>
-                                </div>
-                            </div>
-                            <div class="app-overlay">
-                                <div class="app-tags">
-                                    <span class="tag tag-music">音楽</span>
-                                    <span class="tag tag-community">コミュニティ</span>
-                                </div>
-                                <div class="app-actions-overlay">
-                                    <a href="apps/pipmp.html" class="btn-icon-round" onclick="event.stopPropagation();">
-                                        <span>👁️</span>
-                                    </a>
-                                    <a href="#" class="btn-icon-round" target="_blank" onclick="event.stopPropagation();">
-                                        <span>📱</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="app-content">
-                            <h3 class="app-title">PIPMP</h3>
-                            <p class="app-description">YouTuberマメさんの提案で制作された音楽アプリ。現在でも多くのユーザーに愛用されています。</p>
-                            <div class="app-meta">
-                                <div class="app-stats">
-                                    <span class="stat-item">
-                                        <i class="stat-icon">👥</i>
-                                        <span class="stat-value">コミュニティ</span>
-                                    </span>
-                                    <span class="stat-item">
-                                        <i class="stat-icon">🎬</i>
-                                        <span class="stat-value">YouTuber提案</span>
-                                    </span>
-                                </div>
-                                <div class="app-tech">
-                                    <span class="tech-tag">Swift</span>
-                                    <span class="tech-tag">AVKit</span>
-                                    <span class="tech-tag">PiP</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- TicketMania -->
-                    <div class="app-card hover-lift firebase-debut" data-category="lifestyle" data-aos="fade-up" data-aos-delay="600" onclick="window.location.href='apps/ticketmania.html'">
-                        <div class="app-image">
-                            <div class="placeholder-image gradient-bg-lifestyle">
-                                <div class="placeholder-content">
-                                    <div class="placeholder-icon">🎫</div>
-                                    <div class="firebase-badge">初Firebase</div>
-                                </div>
-                            </div>
-                            <div class="app-overlay">
-                                <div class="app-tags">
-                                    <span class="tag tag-lifestyle">ライフスタイル</span>
-                                    <span class="tag tag-cloud">クラウド</span>
-                                </div>
-                                <div class="app-actions-overlay">
-                                    <a href="apps/ticketmania.html" class="btn-icon-round" onclick="event.stopPropagation();">
-                                        <span>👁️</span>
-                                    </a>
-                                    <a href="#" class="btn-icon-round" target="_blank" onclick="event.stopPropagation();">
-                                        <span>📱</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="app-content">
-                            <h3 class="app-title">TicketMania</h3>
-                            <p class="app-description">チケットやパンフレットを思い出として保存・共有できるアプリ。個人開発で初のFirestore導入作品。</p>
-                            <div class="app-meta">
-                                <div class="app-stats">
-                                    <span class="stat-item">
-                                        <i class="stat-icon">☁️</i>
-                                        <span class="stat-value">初Firebase</span>
-                                    </span>
-                                    <span class="stat-item">
-                                        <i class="stat-icon">🤝</i>
-                                        <span class="stat-value">共有機能</span>
-                                    </span>
-                                </div>
-                                <div class="app-tech">
-                                    <span class="tech-tag">SwiftUI</span>
-                                    <span class="tech-tag">Firebase</span>
-                                    <span class="tech-tag">Firestore</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 画質を良くするアプリ -->
-                    <div class="app-card hover-lift ai-powered" data-category="photo" data-aos="fade-up" data-aos-delay="700" onclick="window.location.href='apps/image-enhancer.html'">
-                        <div class="app-image">
-                            <div class="placeholder-image gradient-bg-photo">
-                                <div class="placeholder-content">
-                                    <div class="placeholder-icon">🖼️</div>
-                                    <div class="ai-badge">AI画質向上</div>
-                                </div>
-                            </div>
-                            <div class="app-overlay">
-                                <div class="app-tags">
-                                    <span class="tag tag-photo">写真・ビデオ</span>
-                                    <span class="tag tag-ai">AI</span>
-                                </div>
-                                <div class="app-actions-overlay">
-                                    <a href="apps/image-enhancer.html" class="btn-icon-round" onclick="event.stopPropagation();">
-                                        <span>👁️</span>
-                                    </a>
-                                    <a href="#" class="btn-icon-round" target="_blank" onclick="event.stopPropagation();">
-                                        <span>📱</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="app-content">
-                            <h3 class="app-title">画質を良くするアプリ</h3>
-                            <p class="app-description">Real-ESRGANを使用した画像品質向上アプリ。CoreMLへの変換により迅速に開発されました。</p>
-                            <div class="app-meta">
-                                <div class="app-stats">
-                                    <span class="stat-item">
-                                        <i class="stat-icon">🤖</i>
-                                        <span class="stat-value">Real-ESRGAN</span>
-                                    </span>
-                                    <span class="stat-item">
-                                        <i class="stat-icon">⚡</i>
-                                        <span class="stat-value">迅速開発</span>
-                                    </span>
-                                </div>
-                                <div class="app-tech">
-                                    <span class="tech-tag">CoreML</span>
-                                    <span class="tech-tag">Real-ESRGAN</span>
-                                    <span class="tech-tag">Vision</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Music Snapshot -->
-                    <div class="app-card hover-lift multi-platform" data-category="music" data-aos="fade-up" data-aos-delay="800" onclick="window.location.href='apps/music-snapshot.html'">
-                        <div class="app-image">
-                            <div class="placeholder-image gradient-bg-music-2">
-                                <div class="placeholder-content">
-                                    <div class="placeholder-icon">🎨</div>
-                                    <div class="platform-badge">全プラットフォーム</div>
-                                </div>
-                            </div>
-                            <div class="app-overlay">
-                                <div class="app-tags">
-                                    <span class="tag tag-music">音楽</span>
-                                    <span class="tag tag-multi">マルチプラットフォーム</span>
-                                </div>
-                                <div class="app-actions-overlay">
-                                    <a href="apps/music-snapshot.html" class="btn-icon-round" onclick="event.stopPropagation();">
-                                        <span>👁️</span>
-                                    </a>
-                                    <a href="#" class="btn-icon-round" target="_blank" onclick="event.stopPropagation();">
-                                        <span>📱</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="app-content">
-                            <h3 class="app-title">Music Snapshot: Art Wallpapers</h3>
-                            <p class="app-description">Apple Musicの曲を壁紙として共有できるアプリ。iOS/iPadOS/macOS/visionOSで利用可能。</p>
-                            <div class="app-meta">
-                                <div class="app-stats">
-                                    <span class="stat-item">
-                                        <i class="stat-icon">🎵</i>
-                                        <span class="stat-value">Apple Music</span>
-                                    </span>
-                                    <span class="stat-item">
-                                        <i class="stat-icon">📱</i>
-                                        <span class="stat-value">全デバイス</span>
-                                    </span>
-                                </div>
-                                <div class="app-tech">
-                                    <span class="tech-tag">SwiftUI</span>
-                                    <span class="tech-tag">MusicKit</span>
-                                    <span class="tech-tag">visionOS</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Show More Button -->
-                    <div class="show-more-container" data-aos="fade-up">
-                        <button class="show-more-btn" id="show-more-apps">
-                            <span class="show-more-text">さらに表示 (22個のアプリ)</span>
-                            <span class="show-more-icon">↓</span>
-                        </button>
-                    </div>
-
-                    <!-- Additional Apps (Initially Hidden) -->
-                    <div class="additional-apps" id="additional-apps" style="display: none;">
-                        <!-- PictIn -->
-                        <div class="app-card hover-lift" data-category="photo" data-aos="fade-up">
-                            <div class="app-image">
-                                <div class="placeholder-image gradient-bg-photo-2">
-                                    <div class="placeholder-content">
-                                        <div class="placeholder-icon">📷</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="app-content">
-                                <h3 class="app-title">PictIn</h3>
-                                <p class="app-description">Picture-in-Picture機能と写真を組み合わせたアプリ。開発者自身が個人的に愛用。</p>
-                                <div class="app-tech">
-                                    <span class="tech-tag">AVKit</span>
-                                    <span class="tech-tag">PiP</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- その他のアプリもここに追加 -->
-                        <div class="app-card hover-lift" data-category="utility" data-aos="fade-up">
-                            <div class="app-image">
-                                <div class="placeholder-image gradient-bg-utility-2">
-                                    <div class="placeholder-content">
-                                        <div class="placeholder-icon">🔢</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="app-content">
-                                <h3 class="app-title">ながらカウンター</h3>
-                                <p class="app-description">シンプルで使いやすいカウンターアプリ。日常の様々な場面で活用できます。</p>
-                                <div class="app-tech">
-                                    <span class="tech-tag">SwiftUI</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- 今日は何の日ウィジェット -->
-                        <div class="app-card hover-lift" data-category="utility" data-aos="fade-up">
-                            <div class="app-image">
-                                <div class="placeholder-image gradient-bg-utility-3">
-                                    <div class="placeholder-content">
-                                        <div class="placeholder-icon">📅</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="app-content">
-                                <h3 class="app-title">今日は何の日ウィジェット</h3>
-                                <p class="app-description">「今日は何の日」を表示するウィジェット。開発者の個人的なニーズから生まれたアプリ。</p>
-                                <div class="app-tech">
-                                    <span class="tech-tag">WidgetKit</span>
-                                    <span class="tech-tag">SwiftUI</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- PhotoGuards -->
-                        <div class="app-card hover-lift" data-category="photo" data-aos="fade-up">
-                            <div class="app-image">
-                                <div class="placeholder-image gradient-bg-photo-3">
-                                    <div class="placeholder-content">
-                                        <div class="placeholder-icon">🛡️</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="app-content">
-                                <h3 class="app-title">PhotoGuards</h3>
-                                <p class="app-description">写真に著作権情報を簡単に追加して保護。全Apple プラットフォーム対応。</p>
-                                <div class="app-tech">
-                                    <span class="tech-tag">SwiftUI</span>
-                                    <span class="tech-tag">visionOS</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- SkyCode -->
-                        <div class="app-card hover-lift" data-category="photo" data-aos="fade-up">
-                            <div class="app-image">
-                                <div class="placeholder-image gradient-bg-photo-4">
-                                    <div class="placeholder-content">
-                                        <div class="placeholder-icon">🎨</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="app-content">
-                                <h3 class="app-title">SkyCode</h3>
-                                <p class="app-description">写真の平均色をカラーコードで表示するユニークなアプリ。SNS共有機能付き。</p>
-                                <div class="app-tech">
-                                    <span class="tech-tag">Vision</span>
-                                    <span class="tech-tag">Core Graphics</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- ClockWidget -->
-                        <div class="app-card hover-lift" data-category="utility" data-aos="fade-up">
-                            <div class="app-image">
-                                <div class="placeholder-image gradient-bg-utility-4">
-                                    <div class="placeholder-content">
-                                        <div class="placeholder-icon">🕐</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="app-content">
-                                <h3 class="app-title">ClockWidget</h3>
-                                <p class="app-description">個性豊かな時計ウィジェットアプリ。様々なデザインの時計を選択可能。</p>
-                                <div class="app-tech">
-                                    <span class="tech-tag">WidgetKit</span>
-                                    <span class="tech-tag">SwiftUI</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Floating Notepad -->
-                        <div class="app-card hover-lift" data-category="productivity" data-aos="fade-up">
-                            <div class="app-image">
-                                <div class="placeholder-image gradient-bg-productivity-3">
-                                    <div class="placeholder-content">
-                                        <div class="placeholder-icon">📝</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="app-content">
-                                <h3 class="app-title">Floating Notepad</h3>
-                                <p class="app-description">フローティング表示が可能なメモ帳アプリ。PictIn開発の着想源となった作品。</p>
-                                <div class="app-tech">
-                                    <span class="tech-tag">UIKit</span>
-                                    <span class="tech-tag">PiP</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- バースデームーン -->
-                        <div class="app-card hover-lift" data-category="lifestyle" data-aos="fade-up">
-                            <div class="app-image">
-                                <div class="placeholder-image gradient-bg-lifestyle-2">
-                                    <div class="placeholder-content">
-                                        <div class="placeholder-icon">🌙</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="app-content">
-                                <h3 class="app-title">バースデームーン</h3>
-                                <p class="app-description">誕生日月をテーマにした画像作成アプリ。特別な日を美しく演出します。</p>
-                                <div class="app-tech">
-                                    <span class="tech-tag">Core Graphics</span>
-                                    <span class="tech-tag">SwiftUI</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- No Results Message -->
-                <div class="no-results" id="no-results" style="display: none;">
-                    <div class="no-results-content">
-                        <div class="no-results-icon">🔍</div>
-                        <h3>該当するアプリが見つかりませんでした</h3>
-                        <p>別のカテゴリーをお試しください</p>
-                    </div>
-                </div>
+    <!-- Featured Apps -->
+    <section class="featured-apps">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Apps</h2>
+                <p class="section-subtitle">代表的なアプリケーション</p>
             </div>
-        </section>
-
-        <!-- Development Process Section -->
-        <section class="development-process">
-            <div class="section-container">
-                <div class="section-header">
-                    <h2 class="section-title scroll-reveal">Development Process</h2>
-                    <p class="section-subtitle scroll-reveal">アプリ開発の流れをご紹介します</p>
+            
+            <div class="apps-showcase">
+                <div class="app-featured">
+                    <div class="app-featured-image">
+                        <img src="../assets/images/travel-memory-map.jpg" alt="Travel Memory Map" loading="lazy">
+                    </div>
+                    <div class="app-featured-content">
+                        <h3 class="app-featured-title">Travel Memory Map</h3>
+                        <p class="app-featured-description">
+                            写真をパズルのように切り取って地図に記録する旅行思い出アプリ。
+                            47都道府県・北海道179市町村・東京都62市区町村のマップで思い出を残そう。
+                        </p>
+                        <div class="app-featured-meta">
+                            <div class="app-meta-item">
+                                <span class="meta-label">ダウンロード</span>
+                                <span class="meta-value">8万</span>
+                            </div>
+                            <div class="app-meta-item">
+                                <span class="meta-label">評価</span>
+                                <span class="meta-value">★4.7 (269)</span>
+                            </div>
+                            <div class="app-meta-item">
+                                <span class="meta-label">カテゴリ</span>
+                                <span class="meta-value">Travel</span>
+                            </div>
+                        </div>
+                        <div class="app-featured-actions">
+                            <a href="apps/travel-memory-map.html" class="btn-primary">詳細を見る</a>
+                            <a href="#" class="btn-secondary">App Store</a>
+                        </div>
+                    </div>
                 </div>
                 
-                <div class="process-timeline">
-                    <div class="timeline-item scroll-reveal-left">
-                        <div class="timeline-icon">💡</div>
-                        <div class="timeline-content">
-                            <h3>アイデア・企画</h3>
-                            <p>ユーザーのニーズを調査し、解決すべき課題を特定します。市場調査と競合分析を行い、アプリの方向性を決定します。</p>
+                <div class="app-featured">
+                    <div class="app-featured-image">
+                        <div class="app-placeholder">
+                            <div class="placeholder-text">流れるメモ帳</div>
                         </div>
                     </div>
-                    
-                    <div class="timeline-item scroll-reveal-right">
-                        <div class="timeline-icon">🎨</div>
-                        <div class="timeline-content">
-                            <h3>デザイン・設計</h3>
-                            <p>ユーザーエクスペリエンスを重視したUI/UXデザインを作成。ワイヤーフレームからプロトタイプまで丁寧に設計します。</p>
+                    <div class="app-featured-content">
+                        <h3 class="app-featured-title">流れるメモ帳</h3>
+                        <p class="app-featured-description">
+                            PiP（Picture in Picture）機能を活用した革新的なメモアプリ。
+                            画面上に常に表示されるメモで、作業効率を大幅に向上させます。
+                        </p>
+                        <div class="app-featured-meta">
+                            <div class="app-meta-item">
+                                <span class="meta-label">ダウンロード</span>
+                                <span class="meta-value">12万</span>
+                            </div>
+                            <div class="app-meta-item">
+                                <span class="meta-label">評価</span>
+                                <span class="meta-value">★4.6 (180)</span>
+                            </div>
+                            <div class="app-meta-item">
+                                <span class="meta-label">カテゴリ</span>
+                                <span class="meta-value">Productivity</span>
+                            </div>
                         </div>
-                    </div>
-                    
-                    <div class="timeline-item scroll-reveal-left">
-                        <div class="timeline-icon">⚙️</div>
-                        <div class="timeline-content">
-                            <h3>開発・実装</h3>
-                            <p>SwiftやSwiftUIを使用してネイティブアプリを開発。パフォーマンスと使いやすさを両立させたコードを心がけています。</p>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-item scroll-reveal-right">
-                        <div class="timeline-icon">🧪</div>
-                        <div class="timeline-content">
-                            <h3>テスト・改善</h3>
-                            <p>徹底的なテストを実施し、バグの修正と機能の改善を行います。ユーザビリティテストも重視しています。</p>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-item scroll-reveal-left">
-                        <div class="timeline-icon">🚀</div>
-                        <div class="timeline-content">
-                            <h3>リリース・運用</h3>
-                            <p>App Storeでの審査を経てリリース。リリース後もユーザーフィードバックに基づいて継続的に改善を行います。</p>
+                        <div class="app-featured-actions">
+                            <a href="#" class="btn-primary">詳細を見る</a>
+                            <a href="#" class="btn-secondary">App Store</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <!-- Footer Component -->
-    <div data-component="footer"></div>
+    <!-- All Apps -->
+    <section class="all-apps">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">All Apps</h2>
+                <p class="section-subtitle">開発・公開したすべてのアプリケーション</p>
+            </div>
+            
+            <div class="apps-grid">
+                <div class="app-card">
+                    <div class="app-card-image">
+                        <div class="app-placeholder">
+                            <div class="placeholder-text">RakuDrop</div>
+                        </div>
+                    </div>
+                    <div class="app-card-content">
+                        <h3 class="app-card-title">RakuDrop</h3>
+                        <p class="app-card-description">スマホからパソコンに簡単に画像転送できるサービス</p>
+                        <div class="app-card-meta">
+                            <span class="app-tag">Side Project</span>
+                            <span class="app-tag">Web Service</span>
+                        </div>
+                        <div class="app-card-actions">
+                            <a href="#" class="app-card-link">詳細を見る</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="app-card">
+                    <div class="app-card-image">
+                        <div class="app-placeholder">
+                            <div class="placeholder-text">Coming Soon</div>
+                        </div>
+                    </div>
+                    <div class="app-card-content">
+                        <h3 class="app-card-title">新しいアプリ</h3>
+                        <p class="app-card-description">現在開発中の新しいアプリケーション</p>
+                        <div class="app-card-meta">
+                            <span class="app-tag">In Development</span>
+                        </div>
+                        <div class="app-card-actions">
+                            <span class="app-card-link disabled">準備中</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="app-card">
+                    <div class="app-card-image">
+                        <div class="app-placeholder">
+                            <div class="placeholder-text">デザインツール</div>
+                        </div>
+                    </div>
+                    <div class="app-card-content">
+                        <h3 class="app-card-title">デザインツール</h3>
+                        <p class="app-card-description">クリエイティブな作業を支援するツールアプリ</p>
+                        <div class="app-card-meta">
+                            <span class="app-tag">Design</span>
+                            <span class="app-tag">Tools</span>
+                        </div>
+                        <div class="app-card-actions">
+                            <span class="app-card-link disabled">準備中</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="app-card">
+                    <div class="app-card-image">
+                        <div class="app-placeholder">
+                            <div class="placeholder-text">その他のアプリ</div>
+                        </div>
+                    </div>
+                    <div class="app-card-content">
+                        <h3 class="app-card-title">その他のアプリ</h3>
+                        <p class="app-card-description">過去に開発したアプリケーション群</p>
+                        <div class="app-card-meta">
+                            <span class="app-tag">Legacy</span>
+                        </div>
+                        <div class="app-card-actions">
+                            <a href="#" class="app-card-link">一覧を見る</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Back to Top Component -->
-    <div data-component="back-to-top"></div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">tsuzuki817</div>
+                    <p class="footer-description">iOS Developer & Creator</p>
+                </div>
+                <div class="footer-right">
+                    <nav class="footer-nav">
+                        <a href="../legal/privacy-policy.html">Privacy Policy</a>
+                        <a href="../legal/terms-of-service.html">Terms of Service</a>
+                        <a href="../legal/commercial-law.html">Commercial Law</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 tsuzuki817. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
     <!-- Scripts -->
-    <script src="../assets/js/components.js"></script>
-    <script src="../assets/js/accessibility.js"></script>
     <script src="../assets/js/main.js"></script>
-    <script src="../assets/js/portfolio.js"></script>
 </body>
 </html>

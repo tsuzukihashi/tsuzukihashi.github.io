@@ -4,21 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tsuzuki817 - iOS Developer & Creator</title>
-    <meta name="description" content="個人開発者tsuzuki817のポートフォリオサイト。30個以上のiOSアプリを開発・公開しています。">
-    <meta name="keywords" content="iOS, Swift, アプリ開発, 個人開発, tsuzuki817">
+    <meta name="description" content="��ztsuzuki817n���թꪵ��30�
+niOS��ꒋz�l�WfD~Y">
+    <meta name="keywords" content="iOS, Swift, ���z, ��z, tsuzuki817">
     
     <!-- CSS Files -->
-    <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/components.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <link rel="stylesheet" href="assets/css/animations.css">
-    <link rel="stylesheet" href="assets/css/accessibility.css">
-    
-    <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico">
@@ -34,317 +25,221 @@
     </script>
 </head>
 <body>
-    <!-- Skip Links for Accessibility -->
-    <div class="skip-links">
-        <a href="#main-content" class="skip-link">メインコンテンツにスキップ</a>
-        <a href="#apps" class="skip-link">アプリ一覧にスキップ</a>
-        <a href="#career" class="skip-link">キャリア情報にスキップ</a>
-    </div>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">tsuzuki817</a>
+            <div class="nav-menu">
+                <a href="#work" class="nav-link">Portfolio</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-    <!-- Header Component -->
-    <div data-component="header"></div>
-
-    <!-- Main Content -->
-    <main class="main" id="main-content">
-        <!-- Hero Section -->
-        <section class="hero" id="home" aria-label="メインのヒーロー紹介セクション">
-            <div class="hero-container">
-                <div class="hero-content">
-                    <div class="hero-text">
-                        <h1 class="hero-title">
-                            <span class="title-line">iOS Developer</span>
-                            <span class="title-line">&amp; Creator</span>
-                        </h1>
-                        <p class="hero-subtitle">
-                            30個以上のiOSアプリを開発・公開している個人開発者です。<br>
-                            ユーザーの生活を豊かにするアプリケーションを作り続けています。
-                        </p>
-                        <div class="hero-buttons">
-                            <a href="portfolio/" class="btn btn-primary">
-                                <span>View Portfolio</span>
-                                <i class="btn-icon">→</i>
-                            </a>
-                            <a href="contact/" class="btn btn-secondary">
-                                <span>Get in Touch</span>
-                            </a>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="hero-title-main">iOS Developer</span>
+                <span class="hero-title-sub">& Creator</span>
+            </h1>
+            <p class="hero-description">
+                30�
+niOS��ꒋz�l�WfD���zgY<br>
+                ����n;�JKkY��������\��QfD~Y
+            </p>
+            <div class="hero-scroll">
+                <div class="scroll-indicator">
+                    <div class="scroll-line"></div>
+                    <span class="scroll-text">Scroll</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="hero-visual">
+                <div class="visual-grid">
+                    <div class="visual-item">
+                        <div class="visual-card">
+                            <div class="card-number">30+</div>
+                            <div class="card-text">Apps</div>
                         </div>
                     </div>
-                    <div class="hero-visual">
-                        <div class="floating-elements">
-                            <div class="floating-card">
-                                <div class="card-icon" aria-hidden="true">📱</div>
-                                <div class="card-text">iOS Apps</div>
-                            </div>
-                            <div class="floating-card">
-                                <div class="card-icon" aria-hidden="true">💡</div>
-                                <div class="card-text">Creative</div>
-                            </div>
-                            <div class="floating-card">
-                                <div class="card-icon" aria-hidden="true">🚀</div>
-                                <div class="card-text">Innovative</div>
-                            </div>
+                    <div class="visual-item">
+                        <div class="visual-card">
+                            <div class="card-number">5</div>
+                            <div class="card-text">Years</div>
+                        </div>
+                    </div>
+                    <div class="visual-item">
+                        <div class="visual-card">
+                            <div class="card-number">16</div>
+                            <div class="card-text">Downloads</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section class="work" id="work">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Work</h2>
+                <p class="section-subtitle">�h�j�������</p>
+            </div>
+            
+            <div class="work-grid">
+                <div class="work-item">
+                    <div class="work-image">
+                        <img src="assets/images/travel-memory-map.jpg" alt="Travel Memory Map" loading="lazy">
+                    </div>
+                    <div class="work-content">
+                        <h3 class="work-title">Travel Memory Map</h3>
+                        <p class="work-description">��Ѻ�n�Fk��cf0�k2Y��LD����</p>
+                        <div class="work-meta">
+                            <span class="work-downloads">8������</span>
+                            <span class="work-rating">4.7</span>
+                        </div>
+                        <div class="work-actions">
+                            <a href="#" class="work-link">View Details</a>
+                            <a href="#" class="work-store">App Store</a>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Scroll Indicator -->
-                <div class="scroll-indicator">
-                    <div class="scroll-mouse">
-                        <div class="scroll-wheel"></div>
+                <div class="work-item">
+                    <div class="work-image">
+                        <div class="work-placeholder">
+                            <div class="placeholder-text">A����3</div>
+                        </div>
                     </div>
-                    <span class="scroll-text">Scroll Down</span>
+                    <div class="work-content">
+                        <h3 class="work-title">A����3</h3>
+                        <p class="work-description">PiP_��;(W_i��j����</p>
+                        <div class="work-meta">
+                            <span class="work-downloads">12������</span>
+                            <span class="work-rating">4.6</span>
+                        </div>
+                        <div class="work-actions">
+                            <a href="#" class="work-link">View Details</a>
+                            <a href="#" class="work-store">App Store</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="work-item">
+                    <div class="work-image">
+                        <div class="work-placeholder">
+                            <div class="placeholder-text">Coming Soon</div>
+                        </div>
+                    </div>
+                    <div class="work-content">
+                        <h3 class="work-title">�WD���</h3>
+                        <p class="work-description">�(�z-n�WD�������gY</p>
+                        <div class="work-meta">
+                            <span class="work-status">�z-</span>
+                        </div>
+                        <div class="work-actions">
+                            <span class="work-link disabled">��-</span>
+                        </div>
+                    </div>
                 </div>
             </div>
             
-            <!-- Background Elements -->
-            <div class="hero-bg">
-                <div class="bg-grid"></div>
-                <div class="bg-gradient"></div>
+            <div class="section-footer">
+                <a href="portfolio/" class="btn-primary">Yyfn��ꒋ�</a>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Featured Apps Section -->
-        <section class="featured-apps" id="apps" aria-label="主要なアプリケーション紹介">
-            <div class="section-container">
-                <div class="section-header">
-                    <h2 class="section-title">Featured Apps</h2>
-                    <p class="section-subtitle">代表的なアプリケーションをご紹介します</p>
-                </div>
-                
-                <div class="apps-grid">
-                    <div class="app-card" data-aos="fade-up">
-                        <div class="app-image">
-                            <img src="assets/images/travel-memory-map.jpg" alt="Travel Memory Map - 旅行思い出マップアプリのスクリーンショット。地図上に写真を配置している画面" loading="lazy">
-                            <div class="app-overlay">
-                                <div class="app-tags">
-                                    <span class="tag">Travel</span>
-                                    <span class="tag">Map</span>
-                                </div>
-                            </div>
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="about-title">About Me</h2>
+                    <p class="about-description">
+                        *>ZOZOgiOS��ˢhWf�MjL���zhWf;�WfD~Y
+                        ��(Ogƹ�L�M�YD��h�Sz�kS`���cfD~Y
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight">
+                            <h4>Current Role</h4>
+                            <p>*>ZOZO - iOS Engineer</p>
                         </div>
-                        <div class="app-content">
-                            <h3 class="app-title">Travel Memory Map</h3>
-                            <p class="app-description">写真をパズルのように切り取って地図に記録する旅行思い出アプリ。47都道府県・北海道179市町村・東京都62市区町村のマップで思い出を残そう。</p>
-                            <div class="app-actions">
-                                <a href="portfolio/apps/travel-memory-map.html" class="app-link">詳細を見る</a>
-                                <a href="https://apps.apple.com/jp/app/%E6%97%85%E8%A1%8C%E6%80%9D%E3%81%84%E5%87%BA%E3%83%9E%E3%83%83%E3%83%97-%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AE%E5%86%99%E7%9C%9F%E3%81%8C%E5%9C%B0%E5%9B%B3%E3%81%AB%E3%81%AA%E3%82%8B/id6478291625?platform=iphone" class="app-store-link" target="_blank">App Store</a>
-                            </div>
+                        <div class="highlight">
+                            <h4>Skills</h4>
+                            <p>Swift, SwiftUI, Firebase</p>
                         </div>
-                    </div>
-                    
-                    <div class="app-card" data-aos="fade-up" data-aos-delay="100">
-                        <div class="app-image">
-                            <div class="placeholder-image">
-                                <div class="placeholder-icon">📱</div>
-                                <div class="placeholder-text">Coming Soon</div>
-                            </div>
-                        </div>
-                        <div class="app-content">
-                            <h3 class="app-title">新しいアプリ</h3>
-                            <p class="app-description">現在開発中の新しいアプリケーションです。近日公開予定です。</p>
-                            <div class="app-actions">
-                                <span class="app-link disabled">準備中</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="app-card" data-aos="fade-up" data-aos-delay="200">
-                        <div class="app-image">
-                            <div class="placeholder-image">
-                                <div class="placeholder-icon">🎨</div>
-                                <div class="placeholder-text">Coming Soon</div>
-                            </div>
-                        </div>
-                        <div class="app-content">
-                            <h3 class="app-title">デザインツール</h3>
-                            <p class="app-description">クリエイティブな作業を支援するツールアプリを開発中です。</p>
-                            <div class="app-actions">
-                                <span class="app-link disabled">準備中</span>
-                            </div>
+                        <div class="highlight">
+                            <h4>Experience</h4>
+                            <p>ZOZO, DeNA, Yahoo (PayPay)</p>
                         </div>
                     </div>
                 </div>
-                
-                <div class="section-footer">
-                    <a href="portfolio/" class="btn btn-outline">
-                        <span>View All Apps</span>
-                        <i class="btn-icon">→</i>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Career Section -->
-        <section class="career" id="career" aria-label="キャリア情報と経歴">
-            <div class="section-container">
-                <div class="section-header">
-                    <h2 class="section-title">Career Journey</h2>
-                    <p class="section-subtitle">本業から個人開発まで、様々なフィールドで挑戦を続けています</p>
-                </div>
-
-                <div class="career-content">
-                    <!-- Current Status -->
-                    <div class="current-status" data-aos="fade-up">
-                        <div class="status-badge">Current</div>
-                        <div class="status-info">
-                            <h3 class="status-title">株式会社ZOZO - iOS Engineer</h3>
-                            <p class="status-location">📍 群馬県在住</p>
-                            <div class="status-highlights">
-                                <div class="highlight-item">
-                                    <span class="highlight-icon">🏢</span>
-                                    <span>ZOZOTOWN iOS開発チーム</span>
-                                </div>
-                                <div class="highlight-item">
-                                    <span class="highlight-icon">🚀</span>
-                                    <span>副業: RakuDrop スマホからパソコンに簡単に画像転送できる新しいサービス</span>
-                                </div>
-                                <div class="highlight-item">
-                                    <span class="highlight-icon">📱</span>
-                                    <span>個人開発: 25個のアプリリリース中</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Key Achievements -->
-                    <div class="achievements-grid">
-                        <div class="achievement-card" data-aos="fade-up" data-aos-delay="100">
-                            <div class="achievement-icon" aria-hidden="true">🎯</div>
-                            <div class="achievement-content">
-                                <h4 class="achievement-title">流れるメモ帳</h4>
-                                <p class="achievement-metric">12万ダウンロード</p>
-                                <p class="achievement-desc">PiP機能を活用した革新的なメモアプリ</p>
-                            </div>
-                        </div>
-                        
-                        <div class="achievement-card" data-aos="fade-up" data-aos-delay="200">
-                            <div class="achievement-icon" aria-hidden="true">🗺️</div>
-                            <div class="achievement-content">
-                                <h4 class="achievement-title">旅行思い出マップ</h4>
-                                <p class="achievement-metric">8万ダウンロード</p>
-                                <p class="achievement-desc">★4.7 (269レビュー) 旅行の思い出を地図に貼り付ける新体験</p>
-                            </div>
-                        </div>
-
-                        <div class="achievement-card" data-aos="fade-up" data-aos-delay="300">
-                            <div class="achievement-icon" aria-hidden="true">🏆</div>
-                            <div class="achievement-content">
-                                <h4 class="achievement-title">技術発信</h4>
-                                <p class="achievement-metric">iOSDC登壇</p>
-                                <p class="achievement-desc">LT会での技術共有・アウトプット</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Skills & Experience -->
-                    <div class="skills-experience">
-                        <div class="skills-section" data-aos="fade-right">
-                            <h4 class="subsection-title">Core Skills</h4>
-                            <div class="skills-grid">
-                                <div class="skill-item">
-                                    <span class="skill-name">Swift</span>
-                                    <span class="skill-score">68.0</span>
-                                </div>
-                                <div class="skill-item">
-                                    <span class="skill-name">SwiftUI</span>
-                                    <span class="skill-badge">専門</span>
-                                </div>
-                                <div class="skill-item">
-                                    <span class="skill-name">Firebase</span>
-                                    <span class="skill-badge">実務</span>
-                                </div>
-                            </div>
-                            <p class="skills-note">※数値はFindy社のGitHubスキル偏差値</p>
-                        </div>
-
-                        <div class="experience-section" data-aos="fade-left">
-                            <h4 class="subsection-title">Experience Timeline</h4>
-                            <div class="timeline">
-                                <div class="timeline-item">
-                                    <div class="timeline-year">2024</div>
-                                    <div class="timeline-content">
-                                        <h5>株式会社ZOZO</h5>
-                                        <p>ZOZOTOWN iOS開発</p>
-                                    </div>
-                                </div>
-                                <div class="timeline-item">
-                                    <div class="timeline-year">2023</div>
-                                    <div class="timeline-content">
-                                        <h5>DeNA</h5>
-                                        <p>Pococha iOS / TDD・ペアプロ実践</p>
-                                    </div>
-                                </div>
-                                <div class="timeline-item">
-                                    <div class="timeline-year">2019</div>
-                                    <div class="timeline-content">
-                                        <h5>ヤフー（PayPay）</h5>
-                                        <p>PayPayフリマ立ち上げ・テックリード</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Strengths -->
-                    <div class="strengths" data-aos="fade-up">
-                        <h4 class="subsection-title">What Drives Me</h4>
-                        <div class="strengths-grid">
-                            <div class="strength-item">
-                                <div class="strength-icon">🎯</div>
-                                <h5>アウトプットへのこだわり</h5>
-                                <p>テストが書きやすい実装と技術発信</p>
-                            </div>
-                            <div class="strength-item">
-                                <div class="strength-icon">🚀</div>
-                                <h5>前向きな向上心</h5>
-                                <p>新しい技術への挑戦と継続的な学習</p>
-                            </div>
-                            <div class="strength-item">
-                                <div class="strength-icon">🤝</div>
-                                <h5>チームコミュニケーション</h5>
-                                <p>ペアプログラミングとアジャイル開発</p>
-                            </div>
-                            <div class="strength-item">
-                                <div class="strength-icon">💡</div>
-                                <h5>柔軟な思考</h5>
-                                <p>ユーザー体験を重視したソリューション</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Stats Section -->
-        <section class="stats" aria-label="統計情報">
-            <div class="section-container">
-                <div class="stats-grid">
-                    <div class="stat-item" data-aos="zoom-in">
-                        <div class="stat-number" data-count="25">0</div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <div class="stat-number">25</div>
                         <div class="stat-label">Apps Published</div>
                     </div>
-                    <div class="stat-item" data-aos="zoom-in" data-aos-delay="100">
-                        <div class="stat-number" data-count="5">0</div>
+                    <div class="stat">
+                        <div class="stat-number">5</div>
                         <div class="stat-label">Years Experience</div>
                     </div>
-                    <div class="stat-item" data-aos="zoom-in" data-aos-delay="200">
-                        <div class="stat-number" data-count="16">0</div>
-                        <div class="stat-label">万ダウンロード</div>
+                    <div class="stat">
+                        <div class="stat-number">16</div>
+                        <div class="stat-label">������</div>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <!-- Footer Component -->
-    <div data-component="footer"></div>
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2 class="contact-title">Get in Touch</h2>
+                <p class="contact-description">
+                    ������nT�ǄJՋnT�<LTVD~W_�J�kJ�LQO`UD
+                </p>
+                <div class="contact-actions">
+                    <a href="contact/" class="btn-primary">Contact Me</a>
+                    <a href="https://github.com/tsuzuki817" class="btn-secondary">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Back to Top Component -->
-    <div data-component="back-to-top"></div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">tsuzuki817</div>
+                    <p class="footer-description">iOS Developer & Creator</p>
+                </div>
+                <div class="footer-right">
+                    <nav class="footer-nav">
+                        <a href="legal/privacy-policy.html">Privacy Policy</a>
+                        <a href="legal/terms-of-service.html">Terms of Service</a>
+                        <a href="legal/commercial-law.html">Commercial Law</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 tsuzuki817. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
     <!-- Scripts -->
-    <script src="assets/js/components.js"></script>
-    <script src="assets/js/accessibility.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>

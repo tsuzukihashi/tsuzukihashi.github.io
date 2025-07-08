@@ -4,21 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - tsuzuki817</title>
-    <meta name="description" content="tsuzuki817へのお問い合わせ。プロジェクトのご相談、技術的な質問などお気軽にご連絡ください。">
+    <meta name="description" content="tsuzuki817へのお問い合わせ">
+    <meta name="keywords" content="お問い合わせ, 連絡先, tsuzuki817">
     
     <!-- CSS Files -->
-    <link rel="stylesheet" href="../assets/css/reset.css">
     <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/components.css">
-    <link rel="stylesheet" href="../assets/css/responsive.css">
-    <link rel="stylesheet" href="../assets/css/animations.css">
-    <link rel="stylesheet" href="../assets/css/accessibility.css">
-    <link rel="stylesheet" href="../assets/css/pages.css">
-    
-    <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Favicon -->
     <link rel="icon" href="../favicon.ico">
@@ -34,303 +24,173 @@
     </script>
 </head>
 <body>
-    <!-- Loading Screen -->
-    <div id="loading-screen" class="loading-screen">
-        <div class="loader">
-            <div class="loader-circle"></div>
-            <div class="loader-text">Loading Contact...</div>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="../" class="nav-logo">tsuzuki817</a>
+            <div class="nav-menu">
+                <a href="../#work" class="nav-link">Portfolio</a>
+                <a href="../#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+            </div>
         </div>
-    </div>
+    </nav>
 
-    <!-- Header Component -->
-    <div data-component="header"></div>
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="container">
+            <div class="contact-hero-content">
+                <h1 class="contact-title">Get in Touch</h1>
+                <p class="contact-subtitle">
+                    プロジェクトのご相談やお仕事のご依頼など<br>
+                    お気軽にお声がけください
+                </p>
+            </div>
+        </div>
+    </section>
 
-    <!-- Main Content -->
-    <main class="main contact-main">
-        <!-- Hero Section -->
-        <section class="contact-hero">
-            <div class="section-container">
-                <div class="hero-content">
-                    <div class="contact-icon scroll-reveal animate-float"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
-                    <h1 class="hero-title scroll-reveal">Get in Touch</h1>
-                    <p class="hero-subtitle scroll-reveal">
-                        プロジェクトのご相談、技術的な質問、コラボレーションなど<br>
-                        お気軽にお声かけください。
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2 class="contact-info-title">お問い合わせについて</h2>
+                    <p class="contact-info-description">
+                        以下のような内容についてお気軽にご連絡ください。
+                        お返事は通常1-2営業日以内にお送りいたします。
                     </p>
-                    <div class="response-time scroll-reveal">
-                        <span class="time-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg></span>
-                        <span class="time-text">個人開発のため返信にお時間をいただく場合があります</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Methods -->
-        <section class="contact-methods">
-            <div class="section-container">
-                <div class="section-header">
-                    <h2 class="section-title scroll-reveal">Contact Methods</h2>
-                    <p class="section-subtitle scroll-reveal">お好みの方法でお気軽にお問い合わせください</p>
-                </div>
-                
-                <div class="methods-grid">
-                    <!-- Twitter -->
-                    <div class="method-card hover-lift scroll-reveal" data-aos="fade-up">
-                        <div class="method-icon">
-                            <span class="icon-bg twitter-bg"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></span>
-                        </div>
-                        <div class="method-content">
-                            <h3>Twitter / X</h3>
-                            <p>最も迅速にご対応できる連絡手段です。DM または メンションでお気軽にどうぞ。</p>
-                            <div class="method-details">
-                                <span class="detail-label">Response Time:</span>
-                                <span class="detail-value">数時間以内</span>
-                            </div>
-                            <div class="method-action">
-                                <a href="https://twitter.com/tsuzuki817" target="_blank" rel="noopener" class="btn btn-primary">
-                                    <span>@tsuzuki817</span>
-                                    <i class="btn-icon">↗</i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- GitHub -->
-                    <div class="method-card hover-lift scroll-reveal" data-aos="fade-up" data-aos-delay="100">
-                        <div class="method-icon">
-                            <span class="icon-bg github-bg"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></span>
-                        </div>
-                        <div class="method-content">
-                            <h3>GitHub</h3>
-                            <p>技術的な質問やコードに関するディスカッションはGitHubでも承ります。</p>
-                            <div class="method-details">
-                                <span class="detail-label">Best For:</span>
-                                <span class="detail-value">技術的な質問</span>
-                            </div>
-                            <div class="method-action">
-                                <a href="https://github.com/tsuzuki817" target="_blank" rel="noopener" class="btn btn-secondary">
-                                    <span>GitHub Profile</span>
-                                    <i class="btn-icon">↗</i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Email -->
-                    <div class="method-card hover-lift scroll-reveal" data-aos="fade-up" data-aos-delay="200">
-                        <div class="method-icon">
-                            <span class="icon-bg email-bg"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span>
-                        </div>
-                        <div class="method-content">
-                            <h3>Email</h3>
-                            <p>詳細な内容やビジネス関連のお問い合わせは、下記のフォームからお送りください。</p>
-                            <div class="method-details">
-                                <span class="detail-label">Response Time:</span>
-                                <span class="detail-value">24-48時間</span>
-                            </div>
-                            <div class="method-action">
-                                <a href="#contact-form" class="btn btn-outline">
-                                    <span>Contact Form</span>
-                                    <i class="btn-icon">↓</i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Form Section -->
-        <section class="contact-form-section" id="contact-form">
-            <div class="section-container">
-                <div class="form-wrapper">
-                    <div class="form-header scroll-reveal">
-                        <h2 class="form-title">Send a Message</h2>
-                        <p class="form-subtitle">
-                            下記のフォームからお気軽にお問い合わせください。<br>
-                            内容を確認次第、迅速にご返信いたします。
-                        </p>
-                    </div>
                     
-                    <div class="contact-form-container scroll-reveal">
-                        <form class="contact-form" id="contact-form-element">
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="name" class="form-label">お名前 *</label>
-                                    <input type="text" id="name" name="name" class="form-input" required aria-describedby="name-error" aria-invalid="false">
-                                    <div class="form-error" id="name-error" role="alert" aria-live="polite"></div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="email" class="form-label">メールアドレス *</label>
-                                    <input type="email" id="email" name="email" class="form-input" required aria-describedby="email-error" aria-invalid="false">
-                                    <div class="form-error" id="email-error" role="alert" aria-live="polite"></div>
-                                </div>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="subject" class="form-label">件名 *</label>
-                                <select id="subject" name="subject" class="form-select" required aria-describedby="subject-error" aria-invalid="false">
-                                    <option value="">選択してください</option>
-                                    <option value="project">プロジェクトのご相談</option>
-                                    <option value="collaboration">コラボレーション</option>
-                                    <option value="technical">技術的な質問</option>
-                                    <option value="business">ビジネス関連</option>
-                                    <option value="feedback">フィードバック</option>
-                                    <option value="other">その他</option>
-                                </select>
-                                <div class="form-error" id="subject-error" role="alert" aria-live="polite"></div>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="message" class="form-label">メッセージ *</label>
-                                <textarea id="message" name="message" class="form-textarea" rows="6" placeholder="詳細な内容をお書きください..." required aria-describedby="message-error" aria-invalid="false"></textarea>
-                                <div class="form-error" id="message-error" role="alert" aria-live="polite"></div>
-                            </div>
-                            
-                            <div class="form-group">
-                                <div class="checkbox-group">
-                                    <input type="checkbox" id="privacy" name="privacy" required aria-describedby="privacy-error" aria-invalid="false">
-                                    <label for="privacy" class="checkbox-label">
-                                        <a href="../legal/privacy-policy.html" target="_blank">プライバシーポリシー</a>に同意します *
-                                    </label>
-                                </div>
-                                <div class="form-error" id="privacy-error" role="alert" aria-live="polite"></div>
-                            </div>
-                            
-                            <div class="form-submit">
-                                <button type="submit" class="btn btn-primary btn-large" id="submit-btn">
-                                    <span class="btn-text">Send Message</span>
-                                    <span class="btn-loader" style="display: none;">
-                                        <span class="loader-dot"></span>
-                                        <span class="loader-dot"></span>
-                                        <span class="loader-dot"></span>
-                                    </span>
-                                    <i class="btn-icon">→</i>
-                                </button>
-                            </div>
-                        </form>
+                    <div class="contact-types">
+                        <div class="contact-type">
+                            <div class="contact-type-icon">💼</div>
+                            <h3 class="contact-type-title">お仕事のご依頼</h3>
+                            <p class="contact-type-description">iOSアプリ開発のご相談やプロジェクトへの参画など</p>
+                        </div>
                         
-                        <!-- Success Message -->
-                        <div class="form-success" id="form-success" style="display: none;">
-                            <div class="success-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
-                            <h3>メッセージを送信しました！</h3>
-                            <p>お問い合わせありがとうございます。個人開発のため返信に時間がかかる場合がありますが、確認次第ご返信いたします。</p>
+                        <div class="contact-type">
+                            <div class="contact-type-icon">🤝</div>
+                            <h3 class="contact-type-title">技術相談</h3>
+                            <p class="contact-type-description">iOS開発や個人開発に関する技術的なご相談</p>
+                        </div>
+                        
+                        <div class="contact-type">
+                            <div class="contact-type-icon">📱</div>
+                            <h3 class="contact-type-title">アプリについて</h3>
+                            <p class="contact-type-description">公開中のアプリに関するお問い合わせやフィードバック</p>
+                        </div>
+                        
+                        <div class="contact-type">
+                            <div class="contact-type-icon">💬</div>
+                            <h3 class="contact-type-title">その他</h3>
+                            <p class="contact-type-description">技術発信やイベント登壇、取材などのご依頼</p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- FAQ Section -->
-        <section class="faq-section">
-            <div class="section-container">
-                <div class="section-header">
-                    <h2 class="section-title scroll-reveal">Frequently Asked Questions</h2>
-                    <p class="section-subtitle scroll-reveal">よくあるご質問</p>
                 </div>
                 
-                <div class="faq-container">
-                    <div class="faq-item scroll-reveal" data-aos="fade-up">
-                        <div class="faq-question">
-                            <span class="faq-text">アプリ開発の依頼は可能ですか？</span>
-                            <span class="faq-icon">+</span>
-                        </div>
-                        <div class="faq-answer">
-                            <p>はい、可能です。ただし、現在は既存プロジェクトに集中しているため、新規の大規模プロジェクトは限定的にお受けしております。まずはお気軽にご相談ください。</p>
-                        </div>
-                    </div>
+                <div class="contact-form-container">
+                    <h2 class="contact-form-title">お問い合わせフォーム</h2>
+                    <p class="contact-form-note">
+                        現在、お問い合わせフォームの準備中です。<br>
+                        お急ぎの場合は、以下の方法でご連絡ください。
+                    </p>
                     
-                    <div class="faq-item scroll-reveal" data-aos="fade-up" data-aos-delay="100">
-                        <div class="faq-question">
-                            <span class="faq-text">技術的な質問や相談は無料ですか？</span>
-                            <span class="faq-icon">+</span>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <h3 class="contact-method-title">GitHub</h3>
+                            <p class="contact-method-description">技術的な内容やオープンソースプロジェクトについて</p>
+                            <a href="https://github.com/tsuzuki817" class="contact-method-link" target="_blank" rel="noopener">github.com/tsuzuki817</a>
                         </div>
-                        <div class="faq-answer">
-                            <p>簡単な技術相談や質問については無料でお答えしています。ただし、詳細な設計相談や長時間のコンサルティングについては有料とさせていただく場合があります。</p>
+                        
+                        <div class="contact-method">
+                            <h3 class="contact-method-title">X (Twitter)</h3>
+                            <p class="contact-method-description">日常的な技術発信や開発状況について</p>
+                            <a href="https://x.com/tsuzuki817" class="contact-method-link" target="_blank" rel="noopener">@tsuzuki817</a>
                         </div>
-                    </div>
-                    
-                    <div class="faq-item scroll-reveal" data-aos="fade-up" data-aos-delay="200">
-                        <div class="faq-question">
-                            <span class="faq-text">返信までどのくらい時間がかかりますか？</span>
-                            <span class="faq-icon">+</span>
-                        </div>
-                        <div class="faq-answer">
-                            <p>個人開発のため、返信にお時間をいただく場合があります。急ぎの場合はTwitter (@tsuzuki817) での連絡をおすすめします。</p>
-                        </div>
-                    </div>
-                    
-                    <div class="faq-item scroll-reveal" data-aos="fade-up" data-aos-delay="300">
-                        <div class="faq-question">
-                            <span class="faq-text">どのような技術スタックで開発していますか？</span>
-                            <span class="faq-icon">+</span>
-                        </div>
-                        <div class="faq-answer">
-                            <p>主にSwiftとSwiftUIを使用したネイティブiOSアプリの開発を行っています。データベースにはCore DataやCloudKit、デザインツールにはFigmaを使用しています。</p>
-                        </div>
-                    </div>
-                    
-                    <div class="faq-item scroll-reveal" data-aos="fade-up" data-aos-delay="400">
-                        <div class="faq-question">
-                            <span class="faq-text">アプリのアイデア相談はできますか？</span>
-                            <span class="faq-icon">+</span>
-                        </div>
-                        <div class="faq-answer">
-                            <p>もちろんです！アプリのアイデア相談、機能検討、ユーザビリティの改善提案など、開発に関する様々なご相談をお受けしています。お気軽にお問い合わせください。</p>
+                        
+                        <div class="contact-method">
+                            <h3 class="contact-method-title">App Store</h3>
+                            <p class="contact-method-description">公開中のアプリに関するレビューやフィードバック</p>
+                            <a href="https://apps.apple.com/jp/developer/tsuzuki817/id1234567890" class="contact-method-link" target="_blank" rel="noopener">App Store Developer Page</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Availability Section -->
-        <section class="availability-section">
-            <div class="section-container">
-                <div class="availability-card scroll-reveal">
-                    <div class="availability-status">
-                        <div class="status-indicator available"></div>
-                        <div class="status-text">
-                            <h3>Current Availability</h3>
-                            <p>新しいプロジェクトのご相談をお受けしています</p>
-                        </div>
-                    </div>
-                    
-                    <div class="availability-details">
-                        <div class="detail-item">
-                            <span class="detail-label">Response Time:</span>
-                            <span class="detail-value">お時間をいただく場合があります</span>
-                        </div>
-                        <div class="detail-item">
-                            <span class="detail-label">Location:</span>
-                            <span class="detail-value">Japan (JST)</span>
-                        </div>
-                        <div class="detail-item">
-                            <span class="detail-label">Languages:</span>
-                            <span class="detail-value">日本語・English</span>
-                        </div>
-                    </div>
-                    
-                    <div class="availability-action">
-                        <a href="https://twitter.com/tsuzuki817" target="_blank" rel="noopener" class="btn btn-primary">
-                            <span>Start Conversation</span>
-                            <i class="btn-icon">→</i>
-                        </a>
-                    </div>
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">よくあるご質問</h2>
+                <p class="section-subtitle">FAQ</p>
+            </div>
+            
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h3 class="faq-question">お仕事のご依頼について相談したいのですが</h3>
+                    <p class="faq-answer">
+                        iOSアプリ開発のご相談はお気軽にお声がけください。
+                        プロジェクトの規模や期間、技術要件などをお聞かせいただければ、
+                        適切なご提案をさせていただきます。
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">アプリの不具合やリクエストを報告したい</h3>
+                    <p class="faq-answer">
+                        公開中のアプリに関するご報告やご要望は、App Storeのレビュー機能や
+                        各種SNSからお寄せください。可能な限り迅速に対応いたします。
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">技術的な質問や相談はできますか</h3>
+                    <p class="faq-answer">
+                        iOS開発や個人開発に関する技術的なご相談も承っています。
+                        GitHubやX (Twitter)でのやり取りも可能です。
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">お返事までの期間はどれくらいですか</h3>
+                    <p class="faq-answer">
+                        通常1-2営業日以内にお返事いたします。
+                        内容によっては少しお時間をいただく場合がございますが、
+                        まずは受領確認のご連絡をお送りします。
+                    </p>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <!-- Footer Component -->
-    <div data-component="footer"></div>
-
-    <!-- Back to Top Component -->
-    <div data-component="back-to-top"></div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">tsuzuki817</div>
+                    <p class="footer-description">iOS Developer & Creator</p>
+                </div>
+                <div class="footer-right">
+                    <nav class="footer-nav">
+                        <a href="../legal/privacy-policy.html">Privacy Policy</a>
+                        <a href="../legal/terms-of-service.html">Terms of Service</a>
+                        <a href="../legal/commercial-law.html">Commercial Law</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 tsuzuki817. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
     <!-- Scripts -->
-    <script src="../assets/js/components.js"></script>
-    <script src="../assets/js/accessibility.js"></script>
     <script src="../assets/js/main.js"></script>
-    <script src="../assets/js/contact.js"></script>
 </body>
 </html>
