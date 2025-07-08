@@ -186,6 +186,107 @@ const translations = {
         category: "Category",
         developmentLanguage: "Development Language",
         back: "Back"
+    },
+    ko: {
+        // Portfolio page
+        portfolio: {
+            title: "포트폴리오",
+            description: "App Store에 출시한 30개 이상의 iOS 애플리케이션",
+            subtitle: "사용자의 삶을 풍요롭게 하는 앱을 만들어가고 있습니다",
+            publishedApps: "출시된 앱",
+            totalDownloads: "총 다운로드",
+            averageRating: "평균 평점",
+            featuredApps: "주요 앱",
+            featuredAppsSubtitle: "대표적인 애플리케이션",
+            transferredApps: "양도된 앱",
+            transferredAppsSubtitle: "2024년에 양도된 애플리케이션",
+            allApps: "모든 앱",
+            allAppsSubtitle: "개발·출시한 모든 애플리케이션",
+            downloads: "다운로드",
+            rating: "평점",
+            category: "카테고리",
+            viewDetails: "자세히 보기",
+            appStore: "App Store",
+            transferred: "양도완료",
+            inDevelopment: "개발중"
+        },
+        // Transferred apps
+        apps: {
+            utano: {
+                title: "Utano",
+                description: "갈등 없이 서로를 칭찬하는 SNS (채팅)",
+                overview: "Utano는 갈등 없이 서로를 칭찬하는 SNS 앱입니다. 기존 SNS와 달리 긍정적인 소통을 중시하며, 사용자들이 서로를 칭찬할 수 있는 공간을 제공합니다. 따뜻한 소통을 통해 더 나은 커뮤니티를 만드는 것을 목표로 합니다.",
+                feature1: "칭찬 채팅 기능",
+                feature2: "긍정적인 커뮤니케이션",
+                feature3: "안전하고 안심할 수 있는 환경",
+                feature4: "커뮤니티 기능",
+                transferNotice: "이 앱은 2024년에 양도되었습니다.",
+                transferNote: "현재의 운영·개발은 새로운 개발자가 담당하고 있습니다."
+            },
+            special366: {
+                title: "매일이 특별한 1/366일",
+                description: "생일에 맞는 꽃과 돌을 위젯으로 매일 전달"
+            },
+            encyclopedia: {
+                title: "무엇이든 도감",
+                description: "Gemini AI가 사진을 분석하여 도감에 등록"
+            },
+            suzume: {
+                title: "참새",
+                description: "PiP 기능으로 어떤 앱에서든 Twitter 이용"
+            },
+            marshmallow: {
+                title: "마시멜로 음악 플레이어",
+                description: "Apple Music과 iTunes에 대응하는 심플 플레이어"
+            },
+            enlarger: {
+                title: "화질 개선 앱 Enlarger",
+                description: "최신 알고리즘으로 화질을 향상시키는 앱"
+            },
+            hotdog: {
+                title: "Hotdog",
+                description: "사진이 핫도그인지 판정 + 근처 매장 검색"
+            },
+            todayWidget: {
+                title: "오늘은 무슨 날 위젯",
+                description: "오늘이 무슨 날인지 위젯으로 확인할 수 있는 앱"
+            },
+            waterLife: {
+                title: "WaterLife",
+                description: "수분 섭취를 관리하는 라이프스타일 앱"
+            }
+        },
+        // Categories
+        categories: {
+            sns: "SNS",
+            communication: "커뮤니케이션",
+            widget: "위젯",
+            lifestyle: "라이프스타일",
+            ai: "AI",
+            education: "교육",
+            social: "소셜",
+            pip: "PiP",
+            music: "음악",
+            media: "미디어",
+            photo: "사진",
+            fun: "재미",
+            information: "정보",
+            health: "건강"
+        },
+        // Common UI elements
+        overview: "개요",
+        features: "주요 기능",
+        transferInfo: "양도에 대해",
+        transferDetails: "양도 세부사항",
+        transferYear: "양도 연도",
+        originalDeveloper: "원 개발자",
+        currentStatus: "현재 상태",
+        continuousOperation: "지속 운영중",
+        technicalInfo: "기술 정보",
+        platform: "플랫폼",
+        category: "카테고리",
+        developmentLanguage: "개발 언어",
+        back: "뒤로"
     }
 };
 
@@ -216,6 +317,14 @@ function t(key, lang = getCurrentLanguage()) {
 
 // 現在の言語を取得
 function getCurrentLanguage() {
+    // URLパスから言語を判定
+    const path = window.location.pathname;
+    if (path.includes('/en/')) {
+        return 'en';
+    } else if (path.includes('/ko/')) {
+        return 'ko';
+    }
+    // ローカルストレージまたはデフォルト日本語
     return localStorage.getItem('language') || 'ja';
 }
 
