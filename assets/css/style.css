@@ -129,24 +129,21 @@ body {
     display: flex;
     align-items: center;
     gap: var(--spacing-xs);
-    padding: var(--spacing-xs) var(--spacing-sm);
-    background: var(--color-background);
-    border: 1px solid var(--color-border);
-    border-radius: var(--border-radius);
+    padding: 8px 12px;
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 24px;
     cursor: pointer;
-    font-size: var(--font-size-sm);
+    font-size: 14px;
     color: var(--color-text);
-    transition: var(--transition);
-    min-width: 120px;
+    transition: all 0.2s ease;
+    min-width: 100px;
+    font-weight: 400;
 }
 
 .lang-current:hover {
-    background: var(--color-accent);
-    border-color: var(--color-primary);
-}
-
-.lang-icon {
-    font-size: 14px;
+    border-color: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.02);
 }
 
 .lang-text {
@@ -157,6 +154,7 @@ body {
 .lang-arrow {
     font-size: 10px;
     transition: transform 0.2s ease;
+    opacity: 0.6;
 }
 
 .lang-dropdown:hover .lang-arrow {
@@ -165,19 +163,19 @@ body {
 
 .lang-options {
     position: absolute;
-    top: 100%;
+    top: calc(100% + 8px);
     left: 0;
     right: 0;
-    background: var(--color-background);
-    border: 1px solid var(--color-border);
-    border-radius: var(--border-radius);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
     opacity: 0;
     visibility: hidden;
-    transform: translateY(-10px);
-    transition: all 0.2s ease;
+    transform: translateY(-8px);
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 1000;
     overflow: hidden;
+    min-width: 120px;
 }
 
 .lang-dropdown:hover .lang-options {
@@ -190,31 +188,27 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: var(--spacing-xs) var(--spacing-sm);
+    padding: 12px 16px;
     color: var(--color-text);
     text-decoration: none;
-    font-size: var(--font-size-sm);
-    transition: var(--transition);
-    border-bottom: 1px solid var(--color-border);
-}
-
-.lang-option:last-child {
-    border-bottom: none;
+    font-size: 14px;
+    transition: background-color 0.15s ease;
+    background: white;
 }
 
 .lang-option:hover {
-    background: var(--color-accent);
-    color: var(--color-primary);
+    background: rgba(0, 0, 0, 0.04);
 }
 
 .lang-option.active {
-    background: var(--color-primary);
-    color: var(--color-background);
+    color: var(--color-text);
+    background: white;
 }
 
 .lang-check {
-    font-size: 12px;
-    opacity: 0.8;
+    font-size: 14px;
+    color: #1976d2;
+    font-weight: bold;
 }
 
 .nav-toggle {
