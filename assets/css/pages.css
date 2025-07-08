@@ -1205,7 +1205,7 @@
     display: inline-block;
     width: 60px;
     height: 60px;
-    background: var(--background-secondary);
+    background: #21262d;
     border: 3px solid var(--primary-color);
     border-radius: 50%;
     font-size: var(--font-size-2xl);
@@ -1222,7 +1222,7 @@
 }
 
 .process-timeline .timeline-content {
-    background: var(--background-secondary);
+    background: #21262d;
     border: 2px solid var(--border-color);
     border-radius: var(--radius-lg);
     padding: var(--space-6);
@@ -1265,13 +1265,13 @@
 
 /* Extra strong selector for Development Process text */
 section.development-process .timeline-content p {
-    color: var(--text-primary) !important;
+    color: #ffffff !important;
     font-weight: 500 !important;
     opacity: 1 !important;
 }
 
 section.development-process .timeline-content h3 {
-    color: var(--text-primary) !important;
+    color: #ffffff !important;
     font-weight: 700 !important;
 }
 
