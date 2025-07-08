@@ -1,5 +1,61 @@
+// Component loader function
+async function loadComponent(componentPath, containerId) {
+    try {
+        const response = await fetch(componentPath);
+        const html = await response.text();
+        const container = document.getElementById(containerId);
+        if (container) {
+            container.innerHTML = html;
+        }
+    } catch (error) {
+        console.error('Error loading component:', error);
+    }
+}
+
+// Load shared components based on current page
+function loadSharedComponents() {
+    const currentPath = window.location.pathname;
+    let headerPath, footerPath;
+    
+    // Determine which header/footer to load based on current path
+    if (currentPath.includes('/en/')) {
+        // For English pages
+        if (currentPath.includes('/legal/')) {
+            headerPath = '../../components/header-legal-en.html';
+            footerPath = '../../components/footer-legal-en.html';
+        } else {
+            headerPath = '../components/header-en.html';
+            footerPath = '../components/footer-en.html';
+        }
+    } else if (currentPath.includes('/ko/')) {
+        // For Korean pages
+        if (currentPath.includes('/legal/')) {
+            headerPath = '../../components/header-legal-ko.html';
+            footerPath = '../../components/footer-legal-ko.html';
+        } else {
+            headerPath = '../components/header-ko.html';
+            footerPath = '../components/footer-ko.html';
+        }
+    } else {
+        // Default to Japanese
+        if (currentPath.includes('/legal/')) {
+            headerPath = '../components/header-legal.html';
+            footerPath = '../components/footer-legal.html';
+        } else {
+            headerPath = 'components/header.html';
+            footerPath = 'components/footer.html';
+        }
+    }
+    
+    // Load header and footer
+    loadComponent(headerPath, 'header-container');
+    loadComponent(footerPath, 'footer-container');
+}
+
 // NOT A HOTEL inspired minimalist interactions
 document.addEventListener('DOMContentLoaded', function() {
+    // Load shared components first
+    loadSharedComponents();
     // Smooth scrolling for navigation links
     const navLinks = document.querySelectorAll('.nav-link');
     navLinks.forEach(link => {
