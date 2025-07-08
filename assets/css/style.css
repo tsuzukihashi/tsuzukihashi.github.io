@@ -115,6 +115,31 @@ body {
     width: 100%;
 }
 
+.language-switcher {
+    display: flex;
+    gap: var(--spacing-sm);
+    margin-left: var(--spacing-lg);
+}
+
+.lang-link {
+    color: var(--color-text);
+    text-decoration: none;
+    font-size: var(--font-size-sm);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+.lang-link:hover {
+    background: var(--color-accent);
+    color: var(--color-primary);
+}
+
+.lang-link.active {
+    background: var(--color-primary);
+    color: var(--color-background);
+}
+
 .nav-toggle {
     display: none;
     flex-direction: column;
@@ -1741,5 +1766,11 @@ body {
     
     .achievements-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .language-switcher {
+        margin-left: 0;
+        margin-top: var(--spacing-md);
+        justify-content: center;
     }
 }
