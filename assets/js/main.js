@@ -61,10 +61,69 @@ function loadSharedComponents() {
     loadComponent(footerPath, 'footer-container');
 }
 
+// Setup language switcher for legal pages
+function setupLanguageSwitcher() {
+    const currentPath = window.location.pathname;
+    const langLinks = document.querySelectorAll('.lang-link[data-lang]');
+    
+    if (langLinks.length > 0 && currentPath.includes('/legal/')) {
+        // Get current page name (e.g., 'privacy-policy.html')
+        const currentPage = currentPath.split('/').pop();
+        
+        langLinks.forEach(link => {
+            const lang = link.getAttribute('data-lang');
+            let targetPath;
+            
+            if (lang === 'ja') {
+                targetPath = `../../legal/${currentPage}`;
+            } else if (lang === 'en') {
+                targetPath = `../../en/legal/${currentPage}`;
+            } else if (lang === 'ko') {
+                targetPath = `../../ko/legal/${currentPage}`;
+            }
+            
+            // Adjust path based on current location
+            if (currentPath.includes('/en/legal/')) {
+                if (lang === 'ja') {
+                    targetPath = `../../legal/${currentPage}`;
+                } else if (lang === 'en') {
+                    targetPath = currentPage;
+                } else if (lang === 'ko') {
+                    targetPath = `../../ko/legal/${currentPage}`;
+                }
+            } else if (currentPath.includes('/ko/legal/')) {
+                if (lang === 'ja') {
+                    targetPath = `../../legal/${currentPage}`;
+                } else if (lang === 'en') {
+                    targetPath = `../../en/legal/${currentPage}`;
+                } else if (lang === 'ko') {
+                    targetPath = currentPage;
+                }
+            } else {
+                // Japanese legal page
+                if (lang === 'ja') {
+                    targetPath = currentPage;
+                } else if (lang === 'en') {
+                    targetPath = `../en/legal/${currentPage}`;
+                } else if (lang === 'ko') {
+                    targetPath = `../ko/legal/${currentPage}`;
+                }
+            }
+            
+            link.href = targetPath;
+        });
+    }
+}
+
 // NOT A HOTEL inspired minimalist interactions
 document.addEventListener('DOMContentLoaded', function() {
     // Load shared components first
     loadSharedComponents();
+    
+    // Setup language switcher for legal pages after components are loaded
+    setTimeout(() => {
+        setupLanguageSwitcher();
+    }, 100);
     // Smooth scrolling for navigation links
     const navLinks = document.querySelectorAll('.nav-link');
     navLinks.forEach(link => {
