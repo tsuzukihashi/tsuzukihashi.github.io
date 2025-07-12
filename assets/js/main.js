@@ -166,51 +166,43 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Parallax effect for hero section
-    window.addEventListener('scroll', function() {
-        const scrollY = window.scrollY;
-        const heroVisual = document.querySelector('.hero-visual');
-        
-        if (heroVisual) {
-            const translateY = scrollY * 0.5;
-            heroVisual.style.transform = `translateY(${translateY}px)`;
-        }
-    });
+    // Parallax effect for hero section - DISABLED
+    // window.addEventListener('scroll', function() {
+    //     const scrollY = window.scrollY;
+    //     const heroVisual = document.querySelector('.hero-visual');
+    //     
+    //     if (heroVisual) {
+    //         const translateY = scrollY * 0.5;
+    //         heroVisual.style.transform = `translateY(${translateY}px)`;
+    //     }
+    // });
     
-    // Intersection Observer for animations
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
+    // Intersection Observer for animations - DISABLED
+    // const observerOptions = {
+    //     threshold: 0.1,
+    //     rootMargin: '0px 0px -50px 0px'
+    // };
+    // 
+    // const observer = new IntersectionObserver(function(entries) {
+    //     entries.forEach(entry => {
+    //         if (entry.isIntersecting) {
+    //             entry.target.classList.add('animate-in');
+    //         }
+    //     });
+    // }, observerOptions);
+    // 
+    // // Observe elements for animation
+    // const animateElements = document.querySelectorAll('.work-item, .stat, .visual-card');
+    // animateElements.forEach(element => {
+    //     observer.observe(element);
+    // });
     
-    const observer = new IntersectionObserver(function(entries) {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('animate-in');
-            }
-        });
-    }, observerOptions);
-    
-    // Observe elements for animation
-    const animateElements = document.querySelectorAll('.work-item, .stat, .visual-card');
-    animateElements.forEach(element => {
-        observer.observe(element);
-    });
-    
-    // Add CSS for animations
+    // Add CSS for static appearance (no scroll animations)
     const style = document.createElement('style');
     style.textContent = `
         .work-item,
         .stat,
         .visual-card {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s ease, transform 0.6s ease;
-        }
-        
-        .work-item.animate-in,
-        .stat.animate-in,
-        .visual-card.animate-in {
             opacity: 1;
             transform: translateY(0);
         }
@@ -262,14 +254,14 @@ document.addEventListener('mousemove', function(e) {
     }
 });
 
-// Add subtle hover effects to interactive elements
-const interactiveElements = document.querySelectorAll('a, button, .work-item, .visual-card');
-interactiveElements.forEach(element => {
-    element.addEventListener('mouseenter', function() {
-        this.style.transform = 'translateY(-2px)';
-    });
-    
-    element.addEventListener('mouseleave', function() {
-        this.style.transform = 'translateY(0)';
-    });
-});
+// Add subtle hover effects to interactive elements - DISABLED for scroll elements
+// const interactiveElements = document.querySelectorAll('a, button, .work-item, .visual-card');
+// interactiveElements.forEach(element => {
+//     element.addEventListener('mouseenter', function() {
+//         this.style.transform = 'translateY(-2px)';
+//     });
+//     
+//     element.addEventListener('mouseleave', function() {
+//         this.style.transform = 'translateY(0)';
+//     });
+// });
