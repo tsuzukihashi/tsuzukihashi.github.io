@@ -75,6 +75,39 @@ const translations = {
                 description: "写真をパズルのように切り取って地図に記録する旅行思い出アプリ。47都道府県・北海道179市町村・東京都62市区町村のマップで思い出を残そう。"
             }
         },
+        // App Detail Pages
+        apps: {
+            travelMemoryMap: {
+                title: "旅行思い出マップ",
+                description: "写真をパズルのように切り取って地図に記録する旅行思い出アプリ",
+                overview: "旅行思い出マップは、あなたの旅行体験を視覚的に記録し、思い出を美しく整理できるアプリです。写真をパズルピースのように切り取って日本地図上に配置することで、旅行の軌跡を一目で確認できます。8年間のアプリ開発経験を持つ個人開発者が、SNSで見た都道府県の写真パズルポスターにインスピレーションを受けて開発しました。",
+                feature1: "写真をパズルピースとして日本地図に配置",
+                feature2: "都道府県別の旅行記録と思い出の整理",
+                feature3: "視覚的で美しい旅行履歴の表示",
+                feature4: "直感的な操作で簡単に思い出を記録",
+                feature5: "旅行の進捗を地図で確認",
+                developmentStory: "このアプリは、SNSで都道府県の形にした写真パズルポスターを見たことがきっかけで誕生しました。「これをアプリでできたら、もっと多くの人が気軽に楽しめるのでは」という想いから開発をスタート。2024年2月にリリースし、多くのユーザーに愛用されています。"
+            }
+        },
+        // App Detail Sections
+        appDetail: {
+            overview: "概要",
+            keyFeatures: "主な機能",
+            developmentStory: "開発ストーリー",
+            appInfo: "アプリ情報",
+            category: "カテゴリー",
+            platform: "プラットフォーム",
+            price: "価格",
+            free: "無料",
+            releaseDate: "リリース日",
+            developer: "開発者",
+            achievements: "実績",
+            popularCategory: "人気カテゴリー",
+            technicalDetails: "技術詳細",
+            technologies: "使用技術",
+            requirements: "動作要件",
+            relatedApps: "関連アプリ"
+        },
         // Categories
         categories: {
             sns: "SNS",
@@ -90,7 +123,10 @@ const translations = {
             photo: "Photo",
             fun: "Fun",
             information: "Information",
-            health: "Health"
+            health: "Health",
+            travel: "Travel",
+            photography: "Photography",
+            travelAndPhoto: "旅行 & 写真"
         }
     },
     en: {
@@ -169,6 +205,39 @@ const translations = {
                 description: "A travel memory app that cuts photos like puzzle pieces and records them on a map. Create memories on maps of 47 prefectures, 179 municipalities in Hokkaido, and 62 cities/wards in Tokyo."
             }
         },
+        // App Detail Pages
+        apps: {
+            travelMemoryMap: {
+                title: "Travel Memory Map",
+                description: "A travel memory app that cuts photos like puzzle pieces and records them on a map",
+                overview: "Travel Memory Map allows you to visually record your travel experiences and beautifully organize your memories. By cutting photos like puzzle pieces and placing them on a map of Japan, you can see your travel journey at a glance. Developed by an individual developer with 8 years of app development experience, inspired by a photo puzzle poster of prefectures seen on social media.",
+                feature1: "Place photos as puzzle pieces on a map of Japan",
+                feature2: "Record and organize travel memories by prefecture",
+                feature3: "Visual and beautiful display of travel history",
+                feature4: "Intuitive operation for easy memory recording",
+                feature5: "Track travel progress on the map",
+                developmentStory: "This app was born from seeing a photo puzzle poster shaped like prefectures on social media. Development started with the thought \"If this could be done in an app, more people could enjoy it easily.\" Released in February 2024, it has been loved by many users."
+            }
+        },
+        // App Detail Sections
+        appDetail: {
+            overview: "Overview",
+            keyFeatures: "Key Features",
+            developmentStory: "Development Story",
+            appInfo: "App Information",
+            category: "Category",
+            platform: "Platform",
+            price: "Price",
+            free: "Free",
+            releaseDate: "Release Date",
+            developer: "Developer",
+            achievements: "Achievements",
+            popularCategory: "Popular Category",
+            technicalDetails: "Technical Details",
+            technologies: "Technologies Used",
+            requirements: "Requirements",
+            relatedApps: "Related Apps"
+        },
         // Categories
         categories: {
             sns: "SNS",
@@ -184,7 +253,10 @@ const translations = {
             photo: "Photo",
             fun: "Fun",
             information: "Information",
-            health: "Health"
+            health: "Health",
+            travel: "Travel",
+            photography: "Photography",
+            travelAndPhoto: "Travel & Photography"
         },
         // Common UI elements
         overview: "Overview",
@@ -277,6 +349,39 @@ const translations = {
                 description: "사진을 퍼즐처럼 잘라서 지도에 기록하는 여행 추억 앱. 47개 도도부현, 홋카이도 179개 시정촌, 도쿄도 62개 시구정촌의 지도에서 추억을 남기세요."
             }
         },
+        // App Detail Pages
+        apps: {
+            travelMemoryMap: {
+                title: "Travel Memory Map",
+                description: "사진을 퍼즐처럼 잘라서 지도에 기록하는 여행 추억 앱",
+                overview: "Travel Memory Map은 여행 경험을 시각적으로 기록하고 추억을 아름답게 정리할 수 있는 앱입니다. 사진을 퍼즐 조각처럼 잘라서 일본 지도 위에 배치함으로써 여행의 궤적을 한눈에 확인할 수 있습니다. 8년간의 앱 개발 경험을 가진 개인 개발자가 SNS에서 본 도도부현 사진 퍼즐 포스터에서 영감을 받아 개발했습니다.",
+                feature1: "사진을 퍼즐 조각으로 일본 지도에 배치",
+                feature2: "도도부현별 여행 기록과 추억 정리",
+                feature3: "시각적이고 아름다운 여행 이력 표시",
+                feature4: "직관적인 조작으로 쉬운 추억 기록",
+                feature5: "지도에서 여행 진행 상황 확인",
+                developmentStory: "이 앱은 SNS에서 도도부현 모양으로 만든 사진 퍼즐 포스터를 본 것이 계기가 되어 탄생했습니다. \"이것을 앱으로 할 수 있다면 더 많은 사람들이 쉽게 즐길 수 있지 않을까\"라는 생각에서 개발을 시작했습니다. 2024년 2월에 출시되어 많은 사용자들에게 사랑받고 있습니다."
+            }
+        },
+        // App Detail Sections
+        appDetail: {
+            overview: "개요",
+            keyFeatures: "주요 기능",
+            developmentStory: "개발 스토리",
+            appInfo: "앱 정보",
+            category: "카테고리",
+            platform: "플랫폼",
+            price: "가격",
+            free: "무료",
+            releaseDate: "출시일",
+            developer: "개발자",
+            achievements: "성과",
+            popularCategory: "인기 카테고리",
+            technicalDetails: "기술 세부사항",
+            technologies: "사용 기술",
+            requirements: "동작 요구사항",
+            relatedApps: "관련 앱"
+        },
         // Categories
         categories: {
             sns: "SNS",
@@ -292,7 +397,10 @@ const translations = {
             photo: "사진",
             fun: "재미",
             information: "정보",
-            health: "건강"
+            health: "건강",
+            travel: "여행",
+            photography: "사진",
+            travelAndPhoto: "여행 & 사진"
         },
         // Common UI elements
         overview: "개요",
