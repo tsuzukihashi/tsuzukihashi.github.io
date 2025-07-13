@@ -20,7 +20,10 @@ const translations = {
             viewDetails: "詳細を見る",
             appStore: "App Store",
             transferred: "譲渡済み",
-            inDevelopment: "開発中"
+            inDevelopment: "開発中",
+            active: "公開中",
+            newRelease: "新リリース",
+            freeApp: "フリーアプリ"
         },
         // Transferred apps
         apps: {
@@ -87,6 +90,17 @@ const translations = {
                 feature4: "直感的な操作で簡単に思い出を記録",
                 feature5: "旅行の進捗を地図で確認",
                 developmentStory: "このアプリは、SNSで都道府県の形にした写真パズルポスターを見たことがきっかけで誕生しました。「これをアプリでできたら、もっと多くの人が気軽に楽しめるのでは」という想いから開発をスタート。2024年2月にリリースし、多くのユーザーに愛用されています。"
+            },
+            fuchidori: {
+                title: "フチドリ！",
+                description: "写真の人やモノを指一本で簡単に切り抜き、好きな色や太さのフチをつけてステッカー風の画像が作れるアプリ",
+                overview: "フチドリ！は、写真に写っている人やモノを指一本で簡単に切り抜き、好きな色や太さの「フチ」をつけて、あっという間におしゃれなステッカー風の画像が作れるシンプルで楽しいアプリです。このアプリは、もともと構想していたSNS「mono」の機能の一部として開発されていましたが、「その機能だけでもヒットしそう」というTwitterでのコメントをきっかけに、単体アプリとして生まれ変わりました。",
+                feature1: "指一本で簡単な写真切り抜き機能",
+                feature2: "自由な色と太さでフチ取り加工",
+                feature3: "ステッカー風のおしゃれな仕上がり",
+                feature4: "完全オフライン動作でプライバシー保護",
+                feature5: "フリマアプリや推し活に最適",
+                developmentStory: "このアプリは、SNS「mono」の機能として開発していた背景切り抜き&縁取り機能から誕生しました。デモ動画をTwitterで紹介したところ、hirothingsさんから「その機能だけでもヒットしそう」というコメントをいただき、一つの機能に特化した使いやすいアプリとして独立させることを決意。2025年にリリースしました。"
             }
         },
         // App Detail Sections
@@ -106,7 +120,8 @@ const translations = {
             technicalDetails: "技術詳細",
             technologies: "使用技術",
             requirements: "動作要件",
-            relatedApps: "関連アプリ"
+            relatedApps: "関連アプリ",
+            useCases: "活用シーン"
         },
         // Categories
         categories: {
@@ -126,7 +141,9 @@ const translations = {
             health: "Health",
             travel: "Travel",
             photography: "Photography",
-            travelAndPhoto: "旅行 & 写真"
+            travelAndPhoto: "旅行 & 写真",
+            editor: "Editor",
+            photoEditor: "写真・画像編集"
         }
     },
     en: {
@@ -150,7 +167,10 @@ const translations = {
             viewDetails: "View Details",
             appStore: "App Store",
             transferred: "Transferred",
-            inDevelopment: "In Development"
+            inDevelopment: "In Development",
+            active: "Published",
+            newRelease: "New Release",
+            freeApp: "Free App"
         },
         // Transferred apps
         apps: {
@@ -217,6 +237,17 @@ const translations = {
                 feature4: "Intuitive operation for easy memory recording",
                 feature5: "Track travel progress on the map",
                 developmentStory: "This app was born from seeing a photo puzzle poster shaped like prefectures on social media. Development started with the thought \"If this could be done in an app, more people could enjoy it easily.\" Released in February 2024, it has been loved by many users."
+            },
+            fuchidori: {
+                title: "Fuchidori!",
+                description: "Easily cut out people and objects from photos with just one finger, add colorful borders, and create stylish sticker-like images",
+                overview: "Fuchidori! is a simple and fun app that allows you to easily cut out people and objects from photos with just one finger, add colorful borders of your choice, and create stylish sticker-like images in no time. This app was originally developed as part of the \"mono\" SNS concept, but after receiving a comment on Twitter saying \"That feature alone could be a hit,\" it was transformed into a standalone app.",
+                feature1: "Simple photo cutout with just one finger",
+                feature2: "Customizable border colors and thickness",
+                feature3: "Stylish sticker-like finish",
+                feature4: "Complete offline operation for privacy protection",
+                feature5: "Perfect for marketplace apps and fan activities",
+                developmentStory: "This app was born from the background removal and border feature originally developed for the \"mono\" SNS. When I shared a demo video on Twitter, hirothings commented \"That feature alone could be a hit,\" which inspired me to create a focused, user-friendly app specialized in this single function. Released in 2025."
             }
         },
         // App Detail Sections
@@ -236,7 +267,8 @@ const translations = {
             technicalDetails: "Technical Details",
             technologies: "Technologies Used",
             requirements: "Requirements",
-            relatedApps: "Related Apps"
+            relatedApps: "Related Apps",
+            useCases: "Use Cases"
         },
         // Categories
         categories: {
@@ -256,7 +288,9 @@ const translations = {
             health: "Health",
             travel: "Travel",
             photography: "Photography",
-            travelAndPhoto: "Travel & Photography"
+            travelAndPhoto: "Travel & Photography",
+            editor: "Editor",
+            photoEditor: "Photo & Video"
         },
         // Common UI elements
         overview: "Overview",
@@ -294,7 +328,10 @@ const translations = {
             viewDetails: "자세히 보기",
             appStore: "App Store",
             transferred: "양도완료",
-            inDevelopment: "개발중"
+            inDevelopment: "개발중",
+            active: "출시됨",
+            newRelease: "신규 출시",
+            freeApp: "무료 앱"
         },
         // Transferred apps
         apps: {
@@ -361,6 +398,17 @@ const translations = {
                 feature4: "직관적인 조작으로 쉬운 추억 기록",
                 feature5: "지도에서 여행 진행 상황 확인",
                 developmentStory: "이 앱은 SNS에서 도도부현 모양으로 만든 사진 퍼즐 포스터를 본 것이 계기가 되어 탄생했습니다. \"이것을 앱으로 할 수 있다면 더 많은 사람들이 쉽게 즐길 수 있지 않을까\"라는 생각에서 개발을 시작했습니다. 2024년 2월에 출시되어 많은 사용자들에게 사랑받고 있습니다."
+            },
+            fuchidori: {
+                title: "후치도리!",
+                description: "한 손가락으로 간편하게 사진 속 사람이나 사물을 잘라내고 원하는 색상과 두께의 테두리를 추가해 스티커풍 이미지를 만드는 앱",
+                overview: "후치도리!는 사진 속 사람이나 사물을 한 손가락으로 간편하게 잘라내고, 원하는 색상과 두께의 '테두리'를 추가해 순식간에 세련된 스티커풍 이미지를 만들 수 있는 간단하고 재미있는 앱입니다. 이 앱은 원래 구상하고 있던 SNS \"mono\"의 기능 일부로 개발되었지만, 트위터에서 \"그 기능만으로도 히트할 것 같다\"는 댓글을 계기로 단독 앱으로 탄생했습니다.",
+                feature1: "한 손가락으로 간편한 사진 컷아웃 기능",
+                feature2: "자유로운 색상과 두께로 테두리 가공",
+                feature3: "스티커풍의 세련된 마무리",
+                feature4: "완전 오프라인 동작으로 프라이버시 보호",
+                feature5: "중고거래 앱이나 덕질에 최적",
+                developmentStory: "이 앱은 SNS \"mono\"의 기능으로 개발하던 배경 제거 및 테두리 기능에서 탄생했습니다. 데모 영상을 트위터에 소개했을 때, hirothings님으로부터 \"그 기능만으로도 히트할 것 같다\"는 댓글을 받고, 하나의 기능에 특화된 사용하기 쉬운 앱으로 독립시키기로 결심했습니다. 2025년에 출시되었습니다."
             }
         },
         // App Detail Sections
@@ -380,7 +428,8 @@ const translations = {
             technicalDetails: "기술 세부사항",
             technologies: "사용 기술",
             requirements: "동작 요구사항",
-            relatedApps: "관련 앱"
+            relatedApps: "관련 앱",
+            useCases: "활용 시나리오"
         },
         // Categories
         categories: {
@@ -400,7 +449,9 @@ const translations = {
             health: "건강",
             travel: "여행",
             photography: "사진",
-            travelAndPhoto: "여행 & 사진"
+            travelAndPhoto: "여행 & 사진",
+            editor: "편집기",
+            photoEditor: "사진 및 비디오"
         },
         // Common UI elements
         overview: "개요",

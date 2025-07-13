@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>「その機能だけでもヒットしそう」ーTwitterの一言から生まれた、写真加工アプリ「フチドリ！」開発秘話 - tsuzuki817</title>
+    <meta name="description" content="SNS「mono」の機能から独立して生まれた写真加工アプリ「フチドリ！」の開発ストーリー。Twitterでの一言がきっかけとなった開発秘話を紹介。">
+    <meta name="keywords" content="フチドリ, 開発秘話, iOS, アプリ開発, mono, Twitter, tsuzuki817">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="../../favicon.ico">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-QERPQ1EGLH');
+    </script>
+    
+    <!-- Translation system -->
+    <script src="../../assets/js/translations.js"></script>
+</head>
+<body>
+    <!-- Header Container -->
+    <div id="header-container"></div>
+
+    <!-- Article Hero -->
+    <article class="blog-article">
+        <div class="container">
+            <header class="article-header">
+                <div class="article-meta">
+                    <span class="article-category" data-i18n="categories.appDevelopment">アプリ開発</span>
+                    <time class="article-date" datetime="2025-01-13">2025年1月13日</time>
+                    <span class="article-read-time">8分で読める</span>
+                </div>
+                <h1 class="article-title">「その機能だけでもヒットしそう」ーTwitterの一言から生まれた、写真加工アプリ「フチドリ！」開発秘話</h1>
+                <p class="article-subtitle">SNS「mono」構想から独立したアプリが誕生するまでの物語</p>
+            </header>
+
+            <div class="article-content">
+                <section class="article-intro">
+                    <p>本日、新しいiOSアプリ「フチドリ！」をリリースしました！</p>
+                    
+                    <p>このアプリは、写真に写っている人やモノを指一本で簡単に切り抜き、好きな色や太さの「フチ」をつけて、あっという間におしゃれなステッカー風の画像が作れる、シンプルで楽しいアプリです。</p>
+
+                    <p>しかし、このアプリが生まれた背景には、僕が構想していた別のSNSと、ある方からいただいた"運命の一言"がありました。今日は、その開発の裏側をお話しさせてください。</p>
+                </section>
+
+                <section class="article-section">
+                    <h2>すべての始まりはSNS「mono」の構想から</h2>
+                    
+                    <p>もともと僕は、「mono」という、自分の愛する「モノ」たちを記録し、その価値を共有しあうSNSを構想していました。</p>
+
+                    <p>フリマアプリが「モノを売る」場所なら、「mono」は「モノを大切にする」場所。そんな世界観を目指していました。そして、そのSNSの重要な機能の一部として、投稿するモノの写真をより魅力的に見せるための<strong>「背景切り抜き＆縁取り機能」</strong>を開発していました。</p>
+
+                    <p>自分の好きなモノだからこそ、最高の見せ方で投稿してほしい。そんな思いを込めて作った機能でした。</p>
+                </section>
+
+                <section class="article-section">
+                    <h2>運命を変えた、一本のツイート</h2>
+                    
+                    <p>ある日、僕はこの「縁取り機能」のデモ動画を、何気なくTwitter（X）で紹介しました。</p>
+
+                    <p>すると、そのツイートに対して、hirothingsさん (@hirothings) から、こんなコメントをいただいたのです。</p>
+
+                    <blockquote class="twitter-quote">
+                        <p>「すごいその機能だけ切り出してもヒットしそう」</p>
+                    </blockquote>
+
+                    <p>この一言が、まさに青天の霹靂でした。</p>
+
+                    <p>僕は「mono」という大きなSNSを作ることばかりに目を向けるあまり、一番価値があるかもしれない「たった一つの機能」の輝きに、自分自身が気づけていなかったのです。</p>
+
+                    <p>ユーザーが本当に求めているのは、たくさんの機能が詰まった複雑なアプリではなく、一つの課題を最高にうまく解決してくれる、シンプルで強力なツールなのかもしれない。</p>
+
+                    <p>hirothingsさんの言葉に背中を押され、僕は決意しました。<br>
+                    <strong>「よし、この機能だけに特化した、世界で一番使いやすいアプリを作ろう！」</strong>と。</p>
+                </section>
+
+                <section class="article-section">
+                    <h2>そうして生まれたのが「フチドリ！」です</h2>
+                    
+                    <p>「フチドリ！」は、そんな経緯で生まれたアプリです。こだわったのは、とにかくシンプルで、楽しく、そして安全なこと。</p>
+
+                    <ul class="feature-highlights">
+                        <li><strong>驚くほどシンプルな操作</strong>で、誰でも直感的に使えます。</li>
+                        <li><strong>自由な色と太さ</strong>で、あなただけのオリジナル作品が作れます。</li>
+                        <li>そして一番のこだわりは、<strong>完全オフラインで動作</strong>し、あなたのプライバシーを絶対に守ること。あなたの思い出の写真が、どこかのサーバーに送信されることは一切ありません。</li>
+                    </ul>
+
+                    <p>フリマアプリの商品写真を目立たせるもよし、SNSのプロフィール画像で個性を出すもよし、好きなアイドルの写真で「推し活」を楽しむもよし。使い方はあなた次第です。</p>
+                </section>
+
+                <section class="article-section">
+                    <h2>最後に</h2>
+                    
+                    <p>この場を借りて、開発の大きなきっかけを与えてくださったhirothingsさんに、心から感謝を申し上げます。本当にありがとうございました。</p>
+
+                    <p>小さな機能が、一つの温かい言葉をきっかけに、一つのアプリとして羽ばたいていきます。<br>
+                    もしよろしければ、ぜひダウンロードして、あなたの「フチドリ」作品をSNSでシェアしてみてください！皆さんの毎日を、このアプリがほんの少しでも彩ることができれば、これ以上に嬉しいことはありません。</p>
+
+                    <div class="app-download-section">
+                        <h3>▼「フチドリ！」のダウンロードはこちら</h3>
+                        <a href="/portfolio/apps/fuchidori.html" class="btn-primary">アプリ詳細ページ</a>
+                        <a href="#" class="btn-secondary" target="_blank">App Store</a>
+                    </div>
+                </section>
+            </div>
+
+            <footer class="article-footer">
+                <div class="article-tags">
+                    <span class="tag">フチドリ</span>
+                    <span class="tag">iOS開発</span>
+                    <span class="tag">個人開発</span>
+                    <span class="tag">アプリリリース</span>
+                    <span class="tag">開発秘話</span>
+                </div>
+                
+                <div class="article-share">
+                    <p>この記事をシェア:</p>
+                    <div class="share-buttons">
+                        <a href="https://twitter.com/intent/tweet?text=「その機能だけでもヒットしそう」ーTwitterの一言から生まれた、写真加工アプリ「フチドリ！」開発秘話&url=" target="_blank" class="share-twitter">Twitter</a>
+                    </div>
+                </div>
+
+                <div class="article-author">
+                    <div class="author-info">
+                        <h4>tsuzuki817</h4>
+                        <p>iOS Developer & Creator<br>30個以上のアプリをApp Storeに公開している個人開発者</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </article>
+
+    <!-- Footer Container -->
+    <div id="footer-container"></div>
+
+    <!-- Scripts -->
+    <script src="../../assets/js/main.js"></script>
+</body>
+</html>
