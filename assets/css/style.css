@@ -977,6 +977,22 @@ body {
     cursor: not-allowed;
 }
 
+/* Clickable Cards */
+.clickable-card {
+    cursor: pointer;
+    user-select: none;
+}
+
+.clickable-card[data-href="#"] {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.clickable-card .btn-primary,
+.clickable-card .app-card-link {
+    pointer-events: none;
+}
+
 /* Transferred Apps */
 .transferred-apps {
     padding: var(--spacing-3xl) 0;

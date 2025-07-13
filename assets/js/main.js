@@ -124,6 +124,27 @@ function setupLanguageSwitcher() {
     }
 }
 
+// Setup clickable cards functionality
+function setupClickableCards() {
+    const clickableCards = document.querySelectorAll('.clickable-card');
+    
+    clickableCards.forEach(card => {
+        card.addEventListener('click', function(e) {
+            // Don't navigate if the target element has onclick with stopPropagation
+            if (e.target.closest('a[onclick*="stopPropagation"]')) {
+                return;
+            }
+            
+            const href = this.getAttribute('data-href');
+            
+            // Only navigate if href exists and is not '#'
+            if (href && href !== '#') {
+                window.location.href = href;
+            }
+        });
+    });
+}
+
 // NOT A HOTEL inspired minimalist interactions
 document.addEventListener('DOMContentLoaded', function() {
     // Load shared components first
@@ -132,6 +153,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Setup language switcher for legal pages after components are loaded
     setTimeout(() => {
         setupLanguageSwitcher();
+        setupClickableCards();
     }, 100);
     // Smooth scrolling for navigation links
     const navLinks = document.querySelectorAll('.nav-link');
