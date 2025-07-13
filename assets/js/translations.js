@@ -210,7 +210,7 @@ const translations = {
             travelMemoryMap: {
                 title: "Travel Memory Map",
                 description: "A travel memory app that cuts photos like puzzle pieces and records them on a map",
-                overview: "Travel Memory Map allows you to visually record your travel experiences and beautifully organize your memories. By cutting photos like puzzle pieces and placing them on a map of Japan, you can see your travel journey at a glance. Developed by an individual developer with 8 years of app development experience, inspired by a photo puzzle poster of prefectures seen on social media.",
+                overview: "Travel Memory Map allows you to visually record your travel experiences and beautifully organize your memories. By cutting photos like puzzle pieces and placing them on a map of Japan, you can see your travel journey at a glance. Developed by an individual developer with 9 years of app development experience, inspired by a photo puzzle poster of prefectures seen on social media.",
                 feature1: "Place photos as puzzle pieces on a map of Japan",
                 feature2: "Record and organize travel memories by prefecture",
                 feature3: "Visual and beautiful display of travel history",
