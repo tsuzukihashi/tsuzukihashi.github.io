@@ -249,31 +249,27 @@ body {
 .row-1 {
     top: 15%;
     animation: scrollRight 45s linear infinite;
-    transform: translateX(-25%);
 }
 
 .row-2 {
     top: 35%;
     animation: scrollLeft 50s linear infinite;
-    transform: translateX(25%);
 }
 
 .row-3 {
     top: 55%;
     animation: scrollRight 55s linear infinite;
-    transform: translateX(-10%);
 }
 
 .row-4 {
     top: 75%;
     animation: scrollLeft 60s linear infinite;
-    transform: translateX(10%);
 }
 
 .bg-icon {
-    width: 48px;
-    height: 48px;
-    border-radius: 12px;
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
     opacity: 0.15;
     flex-shrink: 0;
     transition: opacity 0.3s ease;
@@ -281,19 +277,19 @@ body {
 
 @keyframes scrollRight {
     0% {
-        transform: translateX(-50%);
+        transform: translateX(0);
     }
     100% {
-        transform: translateX(150vw);
+        transform: translateX(100vw);
     }
 }
 
 @keyframes scrollLeft {
     0% {
-        transform: translateX(150vw);
+        transform: translateX(100vw);
     }
     100% {
-        transform: translateX(-50%);
+        transform: translateX(0);
     }
 }
 
