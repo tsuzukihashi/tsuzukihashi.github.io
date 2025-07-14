@@ -23,6 +23,9 @@ function loadSharedComponents() {
         if (currentPath.includes('/legal/')) {
             headerPath = '../../components/header-legal-en.html';
             footerPath = '../../components/footer-legal-en.html';
+        } else if (currentPath.includes('/blog/posts/')) {
+            headerPath = '../../../components/header-blog-posts-en.html';
+            footerPath = '../../../components/footer-blog-posts-en.html';
         } else if (currentPath.includes('/portfolio/apps/')) {
             headerPath = '../../../components/header-page-en.html';
             footerPath = '../../../components/footer-page-en.html';
@@ -38,6 +41,9 @@ function loadSharedComponents() {
         if (currentPath.includes('/legal/')) {
             headerPath = '../../components/header-legal-ko.html';
             footerPath = '../../components/footer-legal-ko.html';
+        } else if (currentPath.includes('/blog/posts/')) {
+            headerPath = '../../../components/header-blog-posts-ko.html';
+            footerPath = '../../../components/footer-blog-posts-ko.html';
         } else if (currentPath.includes('/portfolio/apps/')) {
             headerPath = '../../../components/header-page-ko.html';
             footerPath = '../../../components/footer-page-ko.html';
@@ -53,6 +59,9 @@ function loadSharedComponents() {
         if (currentPath.includes('/legal/')) {
             headerPath = '../components/header-legal.html';
             footerPath = '../components/footer-legal.html';
+        } else if (currentPath.includes('/blog/posts/')) {
+            headerPath = '../../components/header-blog-posts.html';
+            footerPath = '../../components/footer-blog-posts.html';
         } else if (currentPath.includes('/portfolio/apps/')) {
             headerPath = '../../components/header-page.html';
             footerPath = '../../components/footer-page.html';
