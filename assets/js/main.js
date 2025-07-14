@@ -13,7 +13,7 @@ async function loadComponent(componentPath, containerId) {
 }
 
 // Load shared components based on current page
-function loadSharedComponents() {
+async function loadSharedComponents() {
     const currentPath = window.location.pathname;
     let headerPath, footerPath;
     
@@ -75,8 +75,8 @@ function loadSharedComponents() {
     }
     
     // Load header and footer
-    loadComponent(headerPath, 'header-container');
-    loadComponent(footerPath, 'footer-container');
+    await loadComponent(headerPath, 'header-container');
+    await loadComponent(footerPath, 'footer-container');
 }
 
 // Setup language switcher for legal pages
@@ -154,16 +154,28 @@ function setupClickableCards() {
     });
 }
 
-// NOT A HOTEL inspired minimalist interactions
-document.addEventListener('DOMContentLoaded', function() {
-    // Load shared components first
-    loadSharedComponents();
+// Setup mobile navigation toggle
+function setupMobileNavigation() {
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('.nav-menu');
     
-    // Setup language switcher for legal pages after components are loaded
-    setTimeout(() => {
-        setupLanguageSwitcher();
-        setupClickableCards();
-    }, 100);
+    if (navToggle && navMenu) {
+        navToggle.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+            navToggle.classList.toggle('active');
+        });
+    }
+}
+
+// NOT A HOTEL inspired minimalist interactions
+document.addEventListener('DOMContentLoaded', async function() {
+    // Load shared components first
+    await loadSharedComponents();
+    
+    // Setup everything after components are loaded
+    setupLanguageSwitcher();
+    setupClickableCards();
+    setupMobileNavigation();
     // Smooth scrolling for navigation links
     const navLinks = document.querySelectorAll('.nav-link');
     navLinks.forEach(link => {
@@ -181,16 +193,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Mobile navigation toggle
-    const navToggle = document.querySelector('.nav-toggle');
-    const navMenu = document.querySelector('.nav-menu');
-    
-    if (navToggle && navMenu) {
-        navToggle.addEventListener('click', function() {
-            navMenu.classList.toggle('active');
-            navToggle.classList.toggle('active');
-        });
-    }
     
     // Scroll indicator behavior
     const scrollIndicator = document.querySelector('.scroll-indicator');
