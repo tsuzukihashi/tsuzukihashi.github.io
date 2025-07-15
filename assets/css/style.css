@@ -399,6 +399,9 @@ body {
     padding: var(--spacing-lg);
     text-align: center;
     transition: var(--transition);
+    text-decoration: none;
+    color: inherit;
+    display: block;
 }
 
 .visual-card:hover {
