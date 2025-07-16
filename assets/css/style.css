@@ -1539,7 +1539,7 @@ body {
 
 .contact-info {
     background: var(--color-accent);
-    padding: var(--spacing-lg);
+    padding: var(--spacing-2xl);
     border-radius: var(--border-radius);
     border: 1px solid var(--color-border);
 }
@@ -2285,8 +2285,17 @@ body {
 
 .contact-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.2fr 1fr;
     gap: var(--spacing-3xl);
+    align-items: start;
+}
+
+.contact-info {
+    width: 100%;
+}
+
+.contact-form-container {
+    width: 100%;
 }
 
 .contact-info-title {
@@ -2519,6 +2528,11 @@ body {
     
     .contact-content {
         grid-template-columns: 1fr;
+        gap: var(--spacing-2xl);
+    }
+    
+    .contact-info {
+        padding: var(--spacing-xl);
     }
     
     .achievements-grid {
