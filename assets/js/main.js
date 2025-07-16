@@ -29,7 +29,10 @@ function loadSharedComponents() {
         } else if (currentPath.includes('/portfolio/apps/')) {
             headerPath = '../../../components/header-page-en.html';
             footerPath = '../../../components/footer-page-en.html';
-        } else if (currentPath.includes('/about/') || currentPath.includes('/contact/') || currentPath.includes('/portfolio/')) {
+        } else if (currentPath.includes('/about/') || currentPath.includes('/contact/')) {
+            headerPath = '../../components/header-subpage-en.html';
+            footerPath = '../../components/footer-subpage-en.html';
+        } else if (currentPath.includes('/portfolio/')) {
             headerPath = '../components/header-page-en.html';
             footerPath = '../components/footer-page-en.html';
         } else {
@@ -47,7 +50,10 @@ function loadSharedComponents() {
         } else if (currentPath.includes('/portfolio/apps/')) {
             headerPath = '../../../components/header-page-ko.html';
             footerPath = '../../../components/footer-page-ko.html';
-        } else if (currentPath.includes('/about/') || currentPath.includes('/contact/') || currentPath.includes('/portfolio/')) {
+        } else if (currentPath.includes('/about/') || currentPath.includes('/contact/')) {
+            headerPath = '../../components/header-subpage-ko.html';
+            footerPath = '../../components/footer-subpage-ko.html';
+        } else if (currentPath.includes('/portfolio/')) {
             headerPath = '../components/header-page-ko.html';
             footerPath = '../components/footer-page-ko.html';
         } else {
