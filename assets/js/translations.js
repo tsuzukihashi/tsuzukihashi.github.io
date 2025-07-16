@@ -144,6 +144,10 @@ const translations = {
             travelAndPhoto: "旅行 & 写真",
             editor: "Editor",
             photoEditor: "写真・画像編集"
+        },
+        // Contact page
+        contact: {
+            googleFormButton: "お問い合わせフォームを開く"
         }
     },
     en: {
@@ -305,7 +309,11 @@ const translations = {
         platform: "Platform",
         category: "Category",
         developmentLanguage: "Development Language",
-        back: "Back"
+        back: "Back",
+        // Contact page
+        contact: {
+            googleFormButton: "Open Contact Form"
+        }
     },
     ko: {
         // Portfolio page
@@ -466,7 +474,11 @@ const translations = {
         platform: "플랫폼",
         category: "카테고리",
         developmentLanguage: "개발 언어",
-        back: "뒤로"
+        back: "뒤로",
+        // Contact page
+        contact: {
+            googleFormButton: "문의 양식 열기"
+        }
     }
 };
 

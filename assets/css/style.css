@@ -2346,6 +2346,28 @@ body {
     margin-bottom: var(--spacing-xl);
 }
 
+.contact-form-button {
+    margin-bottom: var(--spacing-xl);
+}
+
+.google-form-link {
+    display: inline-block;
+    background: var(--color-primary);
+    color: white;
+    padding: var(--spacing-md) var(--spacing-xl);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.google-form-link:hover {
+    background: var(--color-secondary);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
 .contact-methods {
     display: grid;
     gap: var(--spacing-lg);
