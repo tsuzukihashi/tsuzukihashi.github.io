@@ -2285,8 +2285,8 @@ body {
 
 .contact-content {
     display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    gap: var(--spacing-3xl);
+    grid-template-columns: 1.5fr 1fr;
+    gap: var(--spacing-2xl);
     align-items: start;
 }
 
@@ -2315,7 +2315,8 @@ body {
 
 .contact-types {
     display: grid;
-    gap: var(--spacing-lg);
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
 }
 
 .contact-type {
@@ -2533,6 +2534,11 @@ body {
     
     .contact-info {
         padding: var(--spacing-xl);
+    }
+    
+    .contact-types {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
     }
     
     .achievements-grid {
