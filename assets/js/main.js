@@ -46,8 +46,14 @@ async function loadSharedComponents() {
         basePath = '../'.repeat(depth);
     }
     
-    // Use unified header for all pages
-    headerPath = basePath + 'components/header.html';
+    // Use language-specific header
+    if (currentPath.includes('/en/')) {
+        headerPath = basePath + 'components/header-en.html';
+    } else if (currentPath.includes('/ko/')) {
+        headerPath = basePath + 'components/header-ko.html';
+    } else {
+        headerPath = basePath + 'components/header.html';
+    }
     
     // Determine which footer to load based on current path
     if (currentPath.includes('/en/')) {
