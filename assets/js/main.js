@@ -197,20 +197,25 @@ document.addEventListener('DOMContentLoaded', async function() {
     setupLanguageSwitcher();
     setupClickableCards();
     setupMobileNavigation();
-    // Smooth scrolling for navigation links
+    // Smooth scrolling for anchor links only
     const navLinks = document.querySelectorAll('.nav-link');
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href');
-            const targetSection = document.querySelector(targetId);
+            const href = this.getAttribute('href');
             
-            if (targetSection) {
-                targetSection.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
+            // Only handle anchor links (starting with #)
+            if (href && href.startsWith('#')) {
+                e.preventDefault();
+                const targetSection = document.querySelector(href);
+                
+                if (targetSection) {
+                    targetSection.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
             }
+            // Let normal links work as usual (no preventDefault for external links)
         });
     });
     
