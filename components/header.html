@@ -30,56 +30,68 @@
 <script>
 (function() {
     // Get current page info
-    const path = window.location.pathname;
-    const pathParts = path.split('/').filter(Boolean);
+    const fullPath = window.location.pathname;
+    const pathParts = fullPath.split('/').filter(Boolean);
     
-    // Detect language
+    // Detect language and get page path
     let currentLang = 'ja';
-    let langPrefix = '';
-    let basePath = '/';
+    let pagePath = [...pathParts]; // Copy array
     
     if (pathParts[0] === 'en') {
         currentLang = 'en';
-        langPrefix = '/en';
-        pathParts.shift();
+        pagePath.shift(); // Remove language prefix
     } else if (pathParts[0] === 'ko') {
         currentLang = 'ko';
-        langPrefix = '/ko';
-        pathParts.shift();
+        pagePath.shift(); // Remove language prefix
     }
     
-    // Calculate base path based on directory depth
-    const depth = pathParts.length;
-    if (depth > 0) {
-        basePath = '../'.repeat(depth);
-        if (basePath === '') basePath = './';
+    // Calculate base path to root
+    let basePath = '';
+    const totalDepth = pathParts.length;
+    
+    if (totalDepth === 0) {
+        // We're at root
+        basePath = '';
+    } else {
+        // Calculate '../' based on depth
+        basePath = '../'.repeat(totalDepth);
     }
     
-    // Adjust base path for language subdirectories
-    if (langPrefix) {
-        if (depth === 0) {
-            basePath = '../';
+    // Helper function to build correct path
+    function buildPath(targetLang, pagePathArray) {
+        let result = basePath;
+        
+        // Add language prefix if not Japanese
+        if (targetLang !== 'ja') {
+            result += targetLang + '/';
         }
+        
+        // Add page path
+        if (pagePathArray.length > 0) {
+            result += pagePathArray.join('/') + '/';
+        }
+        
+        return result;
     }
     
     // Set logo link
     const logoLink = document.querySelector('[data-base-path]');
     if (logoLink) {
-        logoLink.href = basePath + (langPrefix ? langPrefix.slice(1) + '/' : '');
+        logoLink.href = buildPath(currentLang, []);
     }
     
     // Set navigation links
     const navLinks = {
-        'data-nav-portfolio': 'portfolio/',
-        'data-nav-blog': 'blog/posts/',
-        'data-nav-about': 'about/',
-        'data-nav-contact': 'contact/'
+        'data-nav-portfolio': ['portfolio'],
+        'data-nav-blog': ['blog', 'posts'],
+        'data-nav-about': ['about'],
+        'data-nav-contact': ['contact']
     };
     
     Object.keys(navLinks).forEach(selector => {
         const link = document.querySelector(`[${selector}]`);
         if (link) {
-            link.href = basePath + (langPrefix ? langPrefix.slice(1) + '/' : '') + navLinks[selector];
+            link.href = buildPath(currentLang, navLinks[selector]);
         }
     });
     
@@ -112,23 +124,8 @@
                 option.href = '#';
                 option.innerHTML = `${lang.name} <span class="lang-check">✓</span>`;
             } else {
-                // Calculate the path for language switch
-                let targetPath = basePath;
-                
-                if (lang.code === 'ja') {
-                    // Japanese is at root
-                    targetPath = basePath;
-                } else {
-                    // Other languages are in subdirectories
-                    targetPath = basePath + lang.code + '/';
-                }
-                
-                // Add the current page path
-                if (pathParts.length > 0) {
-                    targetPath += pathParts.join('/') + '/';
-                }
-                
-                option.href = targetPath;
+                // Build path for language switch
+                option.href = buildPath(lang.code, pagePath);
                 option.textContent = lang.name;
             }
             
