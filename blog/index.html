@@ -3,37 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - tsuzuki817</title>
-    <meta name="description" content="tsuzuki817の開発に関する記事とテクニカルブログ">
-    <meta name="keywords" content="iOS, Swift, 開発, ブログ, 技術記事, tsuzuki817">
+    <title>Blog - Ryo Tsuzukihashi | 開発の裏側と思い出の物語</title>
+    <meta name="description" content="續橋涼のブログ。個人開発の経験、技術的な知見、アプリ開発の裏話など、思い出とテクノロジーにまつわる物語を綴ります。">
+    <meta name="keywords" content="續橋涼, Ryo Tsuzukihashi, ブログ, iOS開発, 個人開発, 技術記事">
     
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- OGP -->
+    <meta property="og:title" content="Blog - Ryo Tsuzukihashi">
+    <meta property="og:description" content="個人開発の経験と技術的な知見を共有するブログ">
+    <meta property="og:image" content="/assets/images/og-blog.jpg">
+    <meta property="og:url" content="https://tsuzuki817.com/blog/">
+    <meta property="og:type" content="blog">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/memories-tech.css">
+    <link rel="stylesheet" href="../assets/css/blog.css">
     
     <!-- Favicon -->
     <link rel="icon" href="../favicon.ico">
     
-    <!-- Google tag (gtag.js) -->
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-QERPQ1EGLH');
     </script>
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="nav">
+    <nav class="nav" id="nav">
         <div class="nav-container">
-            <a href="../" class="nav-logo">tsuzuki817</a>
-            <div class="nav-menu">
-                <a href="../#work" class="nav-link">Portfolio</a>
-                <a href="../#about" class="nav-link">About</a>
-                <a href="../#contact" class="nav-link">Contact</a>
+            <a href="/" class="nav-logo">Ryo Tsuzukihashi</a>
+            <div class="nav-menu" id="navMenu">
+                <a href="/portfolio/" class="nav-link">Portfolio</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/blog/" class="nav-link active">Blog</a>
+                <a href="/contact/" class="nav-link">Contact</a>
             </div>
-            <div class="nav-toggle">
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
                 <span></span>
                 <span></span>
             </div>
@@ -42,238 +56,381 @@
 
     <!-- Blog Hero -->
     <section class="blog-hero">
+        <div class="memory-shapes">
+            <div class="memory-shape"></div>
+            <div class="memory-shape"></div>
+            <div class="memory-shape"></div>
+        </div>
+        
         <div class="container">
             <div class="blog-hero-content">
-                <h1 class="blog-title">Blog</h1>
-                <p class="blog-description">
-                    開発に関する記事とテクニカルな知見をシェアします<br>
-                    iOSアプリ開発の過程や技術的なTipsをお届けします
+                <h1 class="blog-title">
+                    開発の<span class="text-gradient">裏側</span>と<br>
+                    思い出の<span class="text-gradient">物語</span>
+                </h1>
+                <p class="blog-subtitle">
+                    9年間の個人開発で得た知見、技術的な挑戦、<br>
+                    そしてユーザーとの思い出を綴ります
                 </p>
+                
+                <!-- Blog Categories -->
+                <div class="blog-categories">
+                    <button class="category-btn active" data-category="all">すべて</button>
+                    <button class="category-btn" data-category="development">アプリ開発</button>
+                    <button class="category-btn" data-category="technical">技術記事</button>
+                    <button class="category-btn" data-category="story">開発秘話</button>
+                    <button class="category-btn" data-category="tips">Tips</button>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Featured Posts -->
-    <section class="featured-posts">
+    <!-- Featured Post -->
+    <section class="section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Featured Posts</h2>
-                <p class="section-subtitle">おすすめの記事</p>
+                <span class="section-badge">Featured</span>
+                <h2 class="section-title">注目の記事</h2>
             </div>
             
-            <div class="posts-featured">
-                <article class="post-featured">
-                    <div class="post-featured-image">
-                        <img src="../assets/images/icon/fuchidori.webp" alt="フチドリ！開発秘話" loading="lazy">
+            <article class="featured-post">
+                <div class="featured-post-image">
+                    <img src="../assets/images/icon/fuchidori.webp" alt="フチドリ！開発秘話">
+                    <span class="post-badge new">NEW</span>
+                </div>
+                <div class="featured-post-content">
+                    <div class="post-meta">
+                        <span class="post-date">2025.01.13</span>
+                        <span class="post-category">開発秘話</span>
+                        <span class="post-reading-time">5分で読む</span>
                     </div>
-                    <div class="post-featured-content">
-                        <div class="post-meta">
-                            <span class="post-category">アプリ開発</span>
-                            <time class="post-date">2025年1月13日</time>
-                        </div>
-                        <h3 class="post-featured-title">「その機能だけでもヒットしそう」ーTwitterの一言から生まれた、写真加工アプリ「フチドリ！」開発秘話</h3>
-                        <p class="post-featured-excerpt">
-                            SNS「mono」の機能として開発していた縁取り機能が、Twitterでの一言をきっかけに単体アプリとして独立。
-                            hirothingsさんのコメントがアプリ開発の方向性を変えた、開発の裏側をお話しします。
-                        </p>
-                        <div class="post-featured-actions">
-                            <a href="posts/fuchidori-development-story.html" class="btn-primary">記事を読む</a>
-                            <div class="post-stats">
-                                <span class="post-read-time">8分で読める</span>
-                            </div>
-                        </div>
+                    <h2 class="featured-post-title">
+                        <a href="/blog/posts/fuchidori-development-story.html">
+                            フチドリ！開発秘話 - SNSの一言から生まれた革新的アプリ
+                        </a>
+                    </h2>
+                    <p class="featured-post-excerpt">
+                        「写真の切り抜きアプリって需要ありますか？」というTwitterでの問いかけから始まった、フチドリ！の開発ストーリー。
+                        ユーザーの声を形にする過程で学んだこと、技術的な挑戦、そして思い出を切り取るという新しい価値の創造について。
+                    </p>
+                    <div class="featured-post-tags">
+                        <span class="tag">#SwiftUI</span>
+                        <span class="tag">#VisionFramework</span>
+                        <span class="tag">#個人開発</span>
+                        <span class="tag">#新作アプリ</span>
                     </div>
-                </article>
-                
-                <article class="post-featured">
-                    <div class="post-featured-image">
-                        <div class="post-placeholder">
-                            <div class="placeholder-text">App Store</div>
-                        </div>
-                    </div>
-                    <div class="post-featured-content">
-                        <div class="post-meta">
-                            <span class="post-category">App Store</span>
-                            <time class="post-date">2024年5月</time>
-                        </div>
-                        <h3 class="post-featured-title">App Storeでのアプリ申請と審査のコツ</h3>
-                        <p class="post-featured-excerpt">
-                            30個以上のアプリを公開してきた経験から、App Storeの申請プロセスや
-                            審査で注意すべきポイントをまとめました。
-                        </p>
-                        <div class="post-featured-actions">
-                            <a href="#" class="btn-primary">記事を読む</a>
-                            <div class="post-stats">
-                                <span class="post-read-time">8分で読める</span>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-            </div>
+                    <a href="/blog/posts/fuchidori-development-story.html" class="btn btn-primary">記事を読む</a>
+                </div>
+            </article>
         </div>
     </section>
 
     <!-- Recent Posts -->
-    <section class="recent-posts">
+    <section class="section section-alt">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Recent Posts</h2>
-                <p class="section-subtitle">最新の記事</p>
+                <span class="section-badge">Recent</span>
+                <h2 class="section-title">最新記事</h2>
             </div>
             
             <div class="posts-grid">
-                <article class="post-card">
+                <!-- Post 1 -->
+                <article class="post-card" data-category="technical">
                     <div class="post-card-image">
-                        <img src="../assets/images/icon/fuchidori.webp" alt="フチドリ！開発秘話" loading="lazy">
+                        <div class="post-image-placeholder">
+                            <span>📱</span>
+                        </div>
                     </div>
                     <div class="post-card-content">
                         <div class="post-meta">
+                            <span class="post-date">2025.01.10</span>
+                            <span class="post-category">技術記事</span>
+                        </div>
+                        <h3 class="post-card-title">
+                            <a href="#">SwiftUIで作る美しいメモリーカードUI</a>
+                        </h3>
+                        <p class="post-card-excerpt">
+                            旅行思い出マップで実装した、写真をカード形式で表示するUIの作り方を解説。アニメーションとジェスチャーの実装方法も。
+                        </p>
+                        <div class="post-card-footer">
+                            <span class="reading-time">8分で読む</span>
+                            <a href="#" class="read-more">続きを読む →</a>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Post 2 -->
+                <article class="post-card" data-category="development">
+                    <div class="post-card-image">
+                        <div class="post-image-placeholder">
+                            <span>🚀</span>
+                        </div>
+                    </div>
+                    <div class="post-card-content">
+                        <div class="post-meta">
+                            <span class="post-date">2025.01.05</span>
                             <span class="post-category">アプリ開発</span>
-                            <time class="post-date">2025年1月13日</time>
                         </div>
-                        <h3 class="post-card-title">「その機能だけでもヒットしそう」ーTwitterの一言から生まれた、写真加工アプリ「フチドリ！」開発秘話</h3>
+                        <h3 class="post-card-title">
+                            <a href="#">個人開発で16万ダウンロードを達成するまで</a>
+                        </h3>
                         <p class="post-card-excerpt">
-                            SNS「mono」の機能から独立して生まれた写真加工アプリの開発ストーリー
+                            9年間の個人開発で学んだ、ユーザーに愛されるアプリを作るための考え方とマーケティング戦略について。
                         </p>
-                        <div class="post-card-actions">
-                            <a href="posts/fuchidori-development-story.html" class="post-card-link">記事を読む</a>
-                            <span class="post-read-time">8分</span>
+                        <div class="post-card-footer">
+                            <span class="reading-time">12分で読む</span>
+                            <a href="#" class="read-more">続きを読む →</a>
                         </div>
                     </div>
                 </article>
                 
-                <article class="post-card">
+                <!-- Post 3 -->
+                <article class="post-card" data-category="tips">
                     <div class="post-card-image">
-                        <div class="post-placeholder">
-                            <div class="placeholder-text">Firebase</div>
+                        <div class="post-image-placeholder">
+                            <span>💡</span>
                         </div>
                     </div>
                     <div class="post-card-content">
                         <div class="post-meta">
-                            <span class="post-category">Backend</span>
-                            <time class="post-date">2024年4月</time>
+                            <span class="post-date">2024.12.28</span>
+                            <span class="post-category">Tips</span>
                         </div>
-                        <h3 class="post-card-title">Firebaseを使ったiOSアプリのバックエンド構築</h3>
+                        <h3 class="post-card-title">
+                            <a href="#">App Store審査を一発で通すための5つのポイント</a>
+                        </h3>
                         <p class="post-card-excerpt">
-                            個人開発でのFirebaseの活用方法と実装のポイントについて解説します。
+                            25個以上のアプリをリリースして分かった、App Store審査をスムーズに通過するためのチェックリスト。
                         </p>
-                        <div class="post-card-actions">
-                            <a href="#" class="post-card-link">記事を読む</a>
-                            <span class="post-read-time">6分</span>
+                        <div class="post-card-footer">
+                            <span class="reading-time">6分で読む</span>
+                            <a href="#" class="read-more">続きを読む →</a>
                         </div>
                     </div>
                 </article>
                 
-                <article class="post-card">
+                <!-- Post 4 -->
+                <article class="post-card" data-category="story">
                     <div class="post-card-image">
-                        <div class="post-placeholder">
-                            <div class="placeholder-text">TDD</div>
+                        <div class="post-image-placeholder">
+                            <span>🗺️</span>
                         </div>
                     </div>
                     <div class="post-card-content">
                         <div class="post-meta">
-                            <span class="post-category">Testing</span>
-                            <time class="post-date">2024年3月</time>
+                            <span class="post-date">2024.12.20</span>
+                            <span class="post-category">開発秘話</span>
                         </div>
-                        <h3 class="post-card-title">iOSアプリでのTDD実践方法</h3>
+                        <h3 class="post-card-title">
+                            <a href="#">旅行思い出マップが8万DLを超えるまでの道のり</a>
+                        </h3>
                         <p class="post-card-excerpt">
-                            テスト駆動開発を実際のiOSアプリ開発に適用する方法を具体例とともに紹介します。
+                            パズルのように写真を切り取るアイデアの誕生から、ユーザーフィードバックを元にした改善の過程まで。
                         </p>
-                        <div class="post-card-actions">
-                            <a href="#" class="post-card-link">記事を読む</a>
-                            <span class="post-read-time">10分</span>
+                        <div class="post-card-footer">
+                            <span class="reading-time">10分で読む</span>
+                            <a href="#" class="read-more">続きを読む →</a>
                         </div>
                     </div>
                 </article>
                 
-                <article class="post-card">
+                <!-- Post 5 -->
+                <article class="post-card" data-category="technical">
                     <div class="post-card-image">
-                        <div class="post-placeholder">
-                            <div class="placeholder-text">iOSDC</div>
+                        <div class="post-image-placeholder">
+                            <span>🔥</span>
                         </div>
                     </div>
                     <div class="post-card-content">
                         <div class="post-meta">
-                            <span class="post-category">Event</span>
-                            <time class="post-date">2024年2月</time>
+                            <span class="post-date">2024.12.15</span>
+                            <span class="post-category">技術記事</span>
                         </div>
-                        <h3 class="post-card-title">iOSDCでのLT発表を振り返って</h3>
+                        <h3 class="post-card-title">
+                            <a href="#">FirebaseとSwiftUIで作るリアルタイム同期アプリ</a>
+                        </h3>
                         <p class="post-card-excerpt">
-                            iOSDCでのライトニングトーク発表の経験と得られた学びについてまとめました。
+                            複数デバイス間でデータをリアルタイム同期する仕組みの実装方法と、パフォーマンス最適化のテクニック。
                         </p>
-                        <div class="post-card-actions">
-                            <a href="#" class="post-card-link">記事を読む</a>
-                            <span class="post-read-time">4分</span>
+                        <div class="post-card-footer">
+                            <span class="reading-time">15分で読む</span>
+                            <a href="#" class="read-more">続きを読む →</a>
                         </div>
                     </div>
                 </article>
                 
-                <article class="post-card">
+                <!-- Post 6 -->
+                <article class="post-card" data-category="tips">
                     <div class="post-card-image">
-                        <div class="post-placeholder">
-                            <div class="placeholder-text">個人開発</div>
+                        <div class="post-image-placeholder">
+                            <span>🎨</span>
                         </div>
                     </div>
                     <div class="post-card-content">
                         <div class="post-meta">
-                            <span class="post-category">Indie Dev</span>
-                            <time class="post-date">2024年1月</time>
+                            <span class="post-date">2024.12.10</span>
+                            <span class="post-category">Tips</span>
                         </div>
-                        <h3 class="post-card-title">個人開発でのモチベーション維持方法</h3>
+                        <h3 class="post-card-title">
+                            <a href="#">個人開発者のためのアプリアイコンデザイン講座</a>
+                        </h3>
                         <p class="post-card-excerpt">
-                            長期間の個人開発プロジェクトでモチベーションを保つためのマインドセットと実践方法。
+                            デザイナーでなくても魅力的なアプリアイコンを作る方法。色選びから形状デザインまでのステップバイステップガイド。
                         </p>
-                        <div class="post-card-actions">
-                            <a href="#" class="post-card-link">記事を読む</a>
-                            <span class="post-read-time">7分</span>
+                        <div class="post-card-footer">
+                            <span class="reading-time">7分で読む</span>
+                            <a href="#" class="read-more">続きを読む →</a>
                         </div>
                     </div>
                 </article>
+            </div>
+            
+            <!-- Load More -->
+            <div class="load-more-section">
+                <button class="btn btn-secondary">もっと読む</button>
             </div>
         </div>
     </section>
 
-    <!-- Newsletter -->
-    <section class="newsletter">
+    <!-- Newsletter Section -->
+    <section class="section">
         <div class="container">
-            <div class="newsletter-content">
-                <h2 class="newsletter-title">Stay Updated</h2>
-                <p class="newsletter-description">
-                    新しい記事や開発情報をお届けします
-                </p>
-                <div class="newsletter-form">
-                    <p class="newsletter-note">
-                        現在、ニュースレターの準備中です。<br>
-                        最新情報は<a href="../#contact">お問い合わせ</a>からご連絡ください。
+            <div class="newsletter-box">
+                <div class="newsletter-content">
+                    <h2 class="newsletter-title">
+                        <span class="text-gradient">最新情報</span>をお届け
+                    </h2>
+                    <p class="newsletter-description">
+                        新しい記事の公開やアプリのアップデート情報を<br>
+                        いち早くお知らせします
                     </p>
+                    <div class="newsletter-form">
+                        <p class="newsletter-note">
+                            最新情報はTwitterでも発信しています
+                        </p>
+                        <a href="https://twitter.com/tsuzuki817" target="_blank" class="btn btn-primary">
+                            Twitterをフォロー
+                        </a>
+                    </div>
+                </div>
+                <div class="newsletter-decoration">
+                    <div class="decoration-circle"></div>
+                    <div class="decoration-circle"></div>
+                    <div class="decoration-circle"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Archive Link -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="archive-section">
+                <h2 class="archive-title">過去の記事を探す</h2>
+                <div class="archive-links">
+                    <a href="/blog/archive/" class="archive-link">
+                        <span class="archive-icon">📚</span>
+                        <span>アーカイブ</span>
+                    </a>
+                    <a href="/blog/categories/" class="archive-link">
+                        <span class="archive-icon">🏷️</span>
+                        <span>カテゴリー別</span>
+                    </a>
+                    <a href="/blog/tags/" class="archive-link">
+                        <span class="archive-icon">🔖</span>
+                        <span>タグ別</span>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer style="background: var(--color-charcoal); color: var(--color-white); padding: 3rem 0; text-align: center;">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-left">
-                    <div class="footer-logo">tsuzuki817</div>
-                    <p class="footer-description">iOS Developer & Creator</p>
-                </div>
-                <div class="footer-right">
-                    <nav class="footer-nav">
-                        <a href="../legal/privacy-policy.html">Privacy Policy</a>
-                        <a href="../legal/terms-of-service.html">Terms of Service</a>
-                        <a href="../legal/commercial-law.html">Commercial Law</a>
-                    </nav>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 tsuzuki817. All rights reserved.</p>
+            <p style="color: var(--color-white); opacity: 0.8; margin-bottom: 1rem;">
+                © 2025 Ryo Tsuzukihashi. All rights reserved.
+            </p>
+            <p style="color: var(--color-white); opacity: 0.6; font-size: 0.875rem;">
+                Crafting memories with technology since 2016.
+            </p>
+            <div style="margin-top: 2rem;">
+                <a href="/legal/privacy-policy.html" style="color: var(--color-white); opacity: 0.6; margin: 0 1rem; text-decoration: none;">プライバシーポリシー</a>
+                <a href="/legal/terms-of-service.html" style="color: var(--color-white); opacity: 0.6; margin: 0 1rem; text-decoration: none;">利用規約</a>
             </div>
         </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="../assets/js/main.js"></script>
+    <!-- JavaScript -->
+    <script>
+        // Navigation scroll effect
+        window.addEventListener('scroll', function() {
+            const nav = document.getElementById('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile menu toggle
+        const navToggle = document.getElementById('navToggle');
+        const navMenu = document.getElementById('navMenu');
+        
+        navToggle.addEventListener('click', function() {
+            navToggle.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Category filter
+        const categoryBtns = document.querySelectorAll('.category-btn');
+        const postCards = document.querySelectorAll('.post-card');
+        
+        categoryBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Update active button
+                categoryBtns.forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Filter posts
+                const category = this.dataset.category;
+                postCards.forEach(card => {
+                    if (category === 'all' || card.dataset.category === category) {
+                        card.style.display = 'block';
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        }, 10);
+                    } else {
+                        card.style.opacity = '0';
+                        card.style.transform = 'translateY(20px)';
+                        setTimeout(() => {
+                            card.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+
+        // Animate on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animated');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Observe post cards
+        document.querySelectorAll('.post-card').forEach(card => {
+            observer.observe(card);
+        });
+    </script>
 </body>
 </html>

@@ -3,115 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - tsuzuki817</title>
-    <meta name="description" content="tsuzuki817へのお問い合わせ">
-    <meta name="keywords" content="お問い合わせ, 連絡先, tsuzuki817">
+    <title>Contact - Ryo Tsuzukihashi | お問い合わせ・ご相談</title>
+    <meta name="description" content="續橋涼へのお問い合わせ。アプリ開発のご相談、コラボレーション、取材依頼など、お気軽にご連絡ください。">
+    <meta name="keywords" content="續橋涼, Ryo Tsuzukihashi, お問い合わせ, コンタクト, 連絡先">
     
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- OGP -->
+    <meta property="og:title" content="Contact - Ryo Tsuzukihashi">
+    <meta property="og:description" content="アプリ開発のご相談、コラボレーションのご提案をお待ちしています">
+    <meta property="og:image" content="/assets/images/og-contact.jpg">
+    <meta property="og:url" content="https://tsuzuki817.com/contact/">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/memories-tech.css">
+    <link rel="stylesheet" href="../assets/css/contact.css">
     
     <!-- Favicon -->
     <link rel="icon" href="../favicon.ico">
     
-    <!-- Google tag (gtag.js) -->
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-QERPQ1EGLH');
     </script>
 </head>
 <body>
-    <!-- Header Container -->
-    <div id="header-container"></div>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">Ryo Tsuzukihashi</a>
+            <div class="nav-menu" id="navMenu">
+                <a href="/portfolio/" class="nav-link">Portfolio</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/blog/" class="nav-link">Blog</a>
+                <a href="/contact/" class="nav-link active">Contact</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
     <!-- Contact Hero -->
     <section class="contact-hero">
+        <div class="memory-shapes">
+            <div class="memory-shape"></div>
+            <div class="memory-shape"></div>
+            <div class="memory-shape"></div>
+        </div>
+        
         <div class="container">
             <div class="contact-hero-content">
-                <h1 class="contact-title">Get in Touch</h1>
+                <h1 class="contact-title">
+                    <span class="text-gradient">つながる</span>ことから<br>
+                    新しい<span class="text-gradient">物語</span>が始まる
+                </h1>
                 <p class="contact-subtitle">
-                    プロジェクトのご相談やお仕事のご依頼など<br>
-                    お気軽にお声がけください
+                    アプリ開発のご相談、コラボレーションのご提案、<br>
+                    その他どんなことでも、お気軽にご連絡ください
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- Contact Form Section -->
-    <section class="contact-form-section">
+    <!-- Contact Options -->
+    <section class="section">
         <div class="container">
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h2 class="contact-info-title">お問い合わせについて</h2>
-                    <p class="contact-info-description">
-                        以下のような内容についてお気軽にご連絡ください。
-                        お返事は通常1-2営業日以内にお送りいたします。
-                    </p>
-                    
-                    <div class="contact-types">
-                        <div class="contact-type">
-                            <div class="contact-type-icon">💼</div>
-                            <h3 class="contact-type-title">お仕事のご依頼</h3>
-                            <p class="contact-type-description">iOSアプリ開発のご相談やプロジェクトへの参画など</p>
-                        </div>
-                        
-                        <div class="contact-type">
-                            <div class="contact-type-icon">🤝</div>
-                            <h3 class="contact-type-title">技術相談</h3>
-                            <p class="contact-type-description">iOS開発や個人開発に関する技術的なご相談</p>
-                        </div>
-                        
-                        <div class="contact-type">
-                            <div class="contact-type-icon">📱</div>
-                            <h3 class="contact-type-title">アプリについて</h3>
-                            <p class="contact-type-description">公開中のアプリに関するお問い合わせやフィードバック</p>
-                        </div>
-                        
-                        <div class="contact-type">
-                            <div class="contact-type-icon">💬</div>
-                            <h3 class="contact-type-title">その他</h3>
-                            <p class="contact-type-description">技術発信やイベント登壇、取材などのご依頼</p>
-                        </div>
+            <div class="section-header">
+                <span class="section-badge">Get in Touch</span>
+                <h2 class="section-title">お問い合わせ方法</h2>
+                <p class="section-description">
+                    ご用件に応じて、最適な連絡方法をお選びください
+                </p>
+            </div>
+            
+            <div class="contact-options">
+                <!-- Email -->
+                <div class="contact-card primary">
+                    <div class="contact-card-icon">
+                        <span>✉️</span>
                     </div>
+                    <h3 class="contact-card-title">メール</h3>
+                    <p class="contact-card-description">
+                        お仕事のご依頼、詳細なご相談はメールでお願いします
+                    </p>
+                    <a href="mailto:tsuzuki817@gmail.com" class="contact-card-link">
+                        tsuzuki817@gmail.com
+                    </a>
+                    <p class="contact-card-note">
+                        通常2-3営業日以内にご返信いたします
+                    </p>
                 </div>
                 
-                <div class="contact-form-container">
-                    <h2 class="contact-form-title">お問い合わせフォーム</h2>
-                    <p class="contact-form-note">
-                        下記のフォームからお問い合わせください。<br>
-                        また、その他の方法でもご連絡いただけます。
-                    </p>
-                    
-                    <div class="contact-form-button">
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScEd6on0V2qh6fx_o1cZVNUhalks7r0pppXNob8XRYQanZvfA/viewform?usp=sf_link" 
-                           class="google-form-link" 
-                           target="_blank" 
-                           rel="noopener">
-                            お問い合わせフォームを開く
-                        </a>
+                <!-- Twitter -->
+                <div class="contact-card">
+                    <div class="contact-card-icon">
+                        <span>🐦</span>
                     </div>
-                    
-                    <div class="contact-methods">
-                        <div class="contact-method">
-                            <h3 class="contact-method-title">GitHub</h3>
-                            <p class="contact-method-description">技術的な内容やオープンソースプロジェクトについて</p>
-                            <a href="https://github.com/tsuzukihashi" class="contact-method-link" target="_blank" rel="noopener">github.com/tsuzukihashi</a>
-                        </div>
-                        
-                        <div class="contact-method">
-                            <h3 class="contact-method-title">X (Twitter)</h3>
-                            <p class="contact-method-description">日常的な技術発信や開発状況について</p>
-                            <a href="https://x.com/tsuzuki817" class="contact-method-link" target="_blank" rel="noopener">@tsuzuki817</a>
-                        </div>
-                        
-                        <div class="contact-method">
-                            <h3 class="contact-method-title">App Store</h3>
-                            <p class="contact-method-description">公開中のアプリに関するレビューやフィードバック</p>
-                            <a href="https://apps.apple.com/jp/developer/ryo-tsudukihashi/id1320583602?see-all=i-phonei-pad-apps" class="contact-method-link" target="_blank" rel="noopener">App Store Developer Page</a>
-                        </div>
+                    <h3 class="contact-card-title">Twitter</h3>
+                    <p class="contact-card-description">
+                        開発の日常や最新情報を発信しています
+                    </p>
+                    <a href="https://twitter.com/tsuzuki817" target="_blank" class="contact-card-link">
+                        @tsuzuki817
+                    </a>
+                    <p class="contact-card-note">
+                        DMでもお気軽にご連絡ください
+                    </p>
+                </div>
+                
+                <!-- GitHub -->
+                <div class="contact-card">
+                    <div class="contact-card-icon">
+                        <span>🐙</span>
+                    </div>
+                    <h3 class="contact-card-title">GitHub</h3>
+                    <p class="contact-card-description">
+                        オープンソースプロジェクトや技術的な議論
+                    </p>
+                    <a href="https://github.com/tsuzuki817" target="_blank" class="contact-card-link">
+                        github.com/tsuzuki817
+                    </a>
+                    <p class="contact-card-note">
+                        Issueやプルリクエストも歓迎です
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Contact Form</span>
+                <h2 class="section-title">お問い合わせフォーム</h2>
+                <p class="section-description">
+                    下記フォームからもお問い合わせいただけます
+                </p>
+            </div>
+            
+            <div class="contact-form-wrapper">
+                <div class="contact-form-note">
+                    <div class="note-icon">💡</div>
+                    <h3>フォームについて</h3>
+                    <p>
+                        現在、お問い合わせフォームは準備中です。<br>
+                        お手数ですが、上記のメールアドレスまたはSNSよりご連絡ください。
+                    </p>
+                    <p class="note-highlight">
+                        メールでのお問い合わせが最も確実です
+                    </p>
+                </div>
+                
+                <!-- Future Form Implementation -->
+                <div class="form-placeholder">
+                    <div class="placeholder-content">
+                        <span class="placeholder-icon">🚧</span>
+                        <p>フォーム実装予定</p>
+                        <p class="placeholder-note">
+                            Google FormsまたはFormspreeでの実装を検討中
+                        </p>
                     </div>
                 </div>
             </div>
@@ -119,55 +181,231 @@
     </section>
 
     <!-- FAQ Section -->
-    <section class="faq">
+    <section class="section">
         <div class="container">
             <div class="section-header">
+                <span class="section-badge">FAQ</span>
                 <h2 class="section-title">よくあるご質問</h2>
-                <p class="section-subtitle">FAQ</p>
             </div>
             
             <div class="faq-list">
                 <div class="faq-item">
-                    <h3 class="faq-question">お仕事のご依頼について相談したいのですが</h3>
-                    <p class="faq-answer">
-                        iOSアプリ開発のご相談はお気軽にお声がけください。
-                        プロジェクトの規模や期間、技術要件などをお聞かせいただければ、
-                        適切なご提案をさせていただきます。
-                    </p>
+                    <button class="faq-question">
+                        <span>アプリ開発の依頼は受けていますか？</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            はい、受け付けています。個人開発で培った経験を活かし、
+                            アイデアの段階からリリースまでサポートいたします。
+                            まずはお気軽にご相談ください。
+                        </p>
+                    </div>
                 </div>
                 
                 <div class="faq-item">
-                    <h3 class="faq-question">アプリの不具合やリクエストを報告したい</h3>
-                    <p class="faq-answer">
-                        公開中のアプリに関するご報告やご要望は、App Storeのレビュー機能や
-                        各種SNSからお寄せください。可能な限り迅速に対応いたします。
-                    </p>
+                    <button class="faq-question">
+                        <span>既存アプリの改修や機能追加は可能ですか？</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            技術スタックや規模によりますが、基本的に対応可能です。
+                            SwiftUIやUIKitを使用したiOSアプリであれば、
+                            効率的に改修・機能追加を行えます。
+                        </p>
+                    </div>
                 </div>
                 
                 <div class="faq-item">
-                    <h3 class="faq-question">技術的な質問や相談はできますか</h3>
-                    <p class="faq-answer">
-                        iOS開発や個人開発に関する技術的なご相談も承っています。
-                        GitHubやX (Twitter)でのやり取りも可能です。
-                    </p>
+                    <button class="faq-question">
+                        <span>コンサルティングやアドバイザリーは可能ですか？</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            アプリ企画、UI/UXデザイン、技術選定、App Store最適化など、
+                            幅広い分野でコンサルティングを提供しています。
+                            オンラインミーティングでの対応も可能です。
+                        </p>
+                    </div>
                 </div>
                 
                 <div class="faq-item">
-                    <h3 class="faq-question">お返事までの期間はどれくらいですか</h3>
-                    <p class="faq-answer">
-                        通常1-2営業日以内にお返事いたします。
-                        内容によっては少しお時間をいただく場合がございますが、
-                        まずは受領確認のご連絡をお送りします。
+                    <button class="faq-question">
+                        <span>講演や執筆の依頼は受けていますか？</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            はい、受け付けています。個人開発、iOS開発、
+                            思い出×テクノロジーなどのテーマで講演・執筆が可能です。
+                            過去にiOSDCでの登壇経験もあります。
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>返信までどのくらいかかりますか？</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            通常2-3営業日以内にご返信いたします。
+                            土日祝日を挟む場合は、少しお時間をいただくことがあります。
+                            お急ぎの場合は、その旨をお知らせください。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Together Section -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="work-together">
+                <div class="work-together-content">
+                    <h2 class="work-together-title">
+                        一緒に、素晴らしいものを創りましょう
+                    </h2>
+                    <p class="work-together-description">
+                        あなたのアイデアを、思い出に残るアプリに。<br>
+                        テクノロジーで新しい価値を生み出すお手伝いをします。
+                    </p>
+                    
+                    <div class="work-together-items">
+                        <div class="work-item">
+                            <div class="work-item-icon">💡</div>
+                            <h3>アイデア相談</h3>
+                            <p>構想段階からご相談ください</p>
+                        </div>
+                        <div class="work-item">
+                            <div class="work-item-icon">🎨</div>
+                            <h3>UI/UXデザイン</h3>
+                            <p>使いやすく美しいデザイン</p>
+                        </div>
+                        <div class="work-item">
+                            <div class="work-item-icon">⚡</div>
+                            <h3>開発・実装</h3>
+                            <p>高品質なコードで実現</p>
+                        </div>
+                        <div class="work-item">
+                            <div class="work-item-icon">🚀</div>
+                            <h3>リリース支援</h3>
+                            <p>App Storeへの公開まで</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="work-together-decoration">
+                    <div class="decoration-shape"></div>
+                    <div class="decoration-shape"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Response Time Notice -->
+    <section class="section">
+        <div class="container">
+            <div class="response-notice">
+                <div class="notice-icon">⏰</div>
+                <div class="notice-content">
+                    <h3>返信について</h3>
+                    <p>
+                        いただいたお問い合わせには、2-3営業日以内に返信いたします。<br>
+                        万が一返信がない場合は、お手数ですが再度ご連絡ください。
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer Container -->
-    <div id="footer-container"></div>
+    <!-- Footer -->
+    <footer style="background: var(--color-charcoal); color: var(--color-white); padding: 3rem 0; text-align: center;">
+        <div class="container">
+            <p style="color: var(--color-white); opacity: 0.8; margin-bottom: 1rem;">
+                © 2025 Ryo Tsuzukihashi. All rights reserved.
+            </p>
+            <p style="color: var(--color-white); opacity: 0.6; font-size: 0.875rem;">
+                Crafting memories with technology since 2016.
+            </p>
+            <div style="margin-top: 2rem;">
+                <a href="/legal/privacy-policy.html" style="color: var(--color-white); opacity: 0.6; margin: 0 1rem; text-decoration: none;">プライバシーポリシー</a>
+                <a href="/legal/terms-of-service.html" style="color: var(--color-white); opacity: 0.6; margin: 0 1rem; text-decoration: none;">利用規約</a>
+            </div>
+        </div>
+    </footer>
 
-    <!-- Scripts -->
-    <script src="../assets/js/main.js"></script>
+    <!-- JavaScript -->
+    <script>
+        // Navigation scroll effect
+        window.addEventListener('scroll', function() {
+            const nav = document.getElementById('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile menu toggle
+        const navToggle = document.getElementById('navToggle');
+        const navMenu = document.getElementById('navMenu');
+        
+        navToggle.addEventListener('click', function() {
+            navToggle.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // FAQ Accordion
+        const faqItems = document.querySelectorAll('.faq-item');
+        
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            const answer = item.querySelector('.faq-answer');
+            const icon = item.querySelector('.faq-icon');
+            
+            question.addEventListener('click', () => {
+                const isOpen = item.classList.contains('active');
+                
+                // Close all items
+                faqItems.forEach(otherItem => {
+                    otherItem.classList.remove('active');
+                    otherItem.querySelector('.faq-answer').style.maxHeight = null;
+                    otherItem.querySelector('.faq-icon').textContent = '+';
+                });
+                
+                // Open clicked item if it was closed
+                if (!isOpen) {
+                    item.classList.add('active');
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                    icon.textContent = '−';
+                }
+            });
+        });
+
+        // Animate elements on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animated');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements
+        document.querySelectorAll('.contact-card, .work-item, .faq-item').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
 </body>
 </html>

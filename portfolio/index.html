@@ -3,447 +3,568 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - tsuzuki817</title>
-    <meta name="description" content="tsuzuki817が開発・公開した30個以上のiOSアプリケーション一覧">
-    <meta name="keywords" content="iOS, Swift, アプリ開発, ポートフォリオ, tsuzuki817">
+    <title>Portfolio - Ryo Tsuzukihashi | 25+ Apps, 160,000+ Downloads</title>
+    <meta name="description" content="續橋涼が9年間で開発した25以上のiOSアプリ。16万ダウンロード突破、思い出とテクノロジーを融合した革新的なアプリケーションのポートフォリオ。">
+    <meta name="keywords" content="續橋涼, Ryo Tsuzukihashi, iOSアプリ, ポートフォリオ, App Store, 個人開発">
     
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- OGP -->
+    <meta property="og:title" content="Portfolio - Ryo Tsuzukihashi">
+    <meta property="og:description" content="25以上のiOSアプリ、16万ダウンロード達成。思い出×テクノロジーの作品集。">
+    <meta property="og:image" content="/assets/images/og-portfolio.jpg">
+    <meta property="og:url" content="https://tsuzuki817.com/portfolio/">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/memories-tech.css">
+    <link rel="stylesheet" href="../assets/css/portfolio.css">
     
     <!-- Favicon -->
     <link rel="icon" href="../favicon.ico">
     
-    <!-- Google tag (gtag.js) -->
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-QERPQ1EGLH');
     </script>
-    
-    <!-- Translation system -->
-    <script src="../assets/js/translations.js"></script>
 </head>
 <body>
-    <!-- Header Container -->
-    <div id="header-container"></div>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">Ryo Tsuzukihashi</a>
+            <div class="nav-menu" id="navMenu">
+                <a href="/portfolio/" class="nav-link active">Portfolio</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/blog/" class="nav-link">Blog</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
     <!-- Portfolio Hero -->
     <section class="portfolio-hero">
+        <div class="memory-shapes">
+            <div class="memory-shape"></div>
+            <div class="memory-shape"></div>
+            <div class="memory-shape"></div>
+        </div>
+        
         <div class="container">
             <div class="portfolio-hero-content">
-                <h1 class="portfolio-title" data-i18n="portfolio.title">Portfolio</h1>
-                <p class="portfolio-description">
-                    <span data-i18n="portfolio.description">App Storeに公開した30個以上のiOSアプリケーション</span><br>
-                    <span data-i18n="portfolio.subtitle">ユーザーの生活を豊かにするアプリを作り続けています</span>
+                <h1 class="portfolio-title">
+                    <span class="text-gradient">25+</span>のアプリで<br>
+                    <span class="text-gradient">160,000+</span>の思い出を創造
+                </h1>
+                <p class="portfolio-subtitle">
+                    9年間の個人開発で生み出した、思い出とテクノロジーの結晶たち
                 </p>
+                
+                <!-- Stats Bar -->
                 <div class="portfolio-stats">
                     <div class="portfolio-stat">
-                        <div class="stat-number">25</div>
-                        <div class="stat-label" data-i18n="portfolio.publishedApps">Published Apps</div>
+                        <div class="portfolio-stat-number">25+</div>
+                        <div class="portfolio-stat-label">Published Apps</div>
                     </div>
                     <div class="portfolio-stat">
-                        <div class="stat-number">16万</div>
-                        <div class="stat-label" data-i18n="portfolio.totalDownloads">Total Downloads</div>
+                        <div class="portfolio-stat-number">160,000+</div>
+                        <div class="portfolio-stat-label">Total Downloads</div>
                     </div>
                     <div class="portfolio-stat">
-                        <div class="stat-number">4.6</div>
-                        <div class="stat-label" data-i18n="portfolio.averageRating">Average Rating</div>
+                        <div class="portfolio-stat-number">★4.6</div>
+                        <div class="portfolio-stat-label">Average Rating</div>
+                    </div>
+                    <div class="portfolio-stat">
+                        <div class="portfolio-stat-number">9年</div>
+                        <div class="portfolio-stat-label">Development Years</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Featured Apps -->
-    <section class="featured-apps">
+    <!-- Featured Apps Section -->
+    <section class="section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title" data-i18n="portfolio.featuredApps">Featured Apps</h2>
-                <p class="section-subtitle" data-i18n="portfolio.featuredAppsSubtitle">代表的なアプリケーション</p>
+                <span class="section-badge">Featured Apps</span>
+                <h2 class="section-title">代表作品</h2>
+                <p class="section-description">
+                    最も多くのユーザーに愛され、思い出作りに貢献しているアプリたち
+                </p>
             </div>
             
-            <div class="apps-showcase">
-                <div class="app-featured clickable-card" data-href="apps/travel-memory-map.html">
-                    <div class="app-featured-image">
-                        <img src="../assets/images/icon/travel_memory_map.webp" alt="Travel Memory Map" loading="lazy">
+            <div class="app-grid featured-grid">
+                <!-- 旅行思い出マップ -->
+                <article class="app-card featured">
+                    <div class="app-card-image">
+                        <img src="../assets/images/icon/travel_memory_map.webp" alt="旅行思い出マップ">
+                        <span class="app-card-badge best">BEST APP</span>
                     </div>
-                    <div class="app-featured-content">
-                        <h3 class="app-featured-title">旅行思い出マップ</h3>
-                        <p class="app-featured-description">
-                            写真をパズルのように切り取って地図に記録する旅行思い出アプリ。
-                            47都道府県・北海道179市町村・東京都62市区町村のマップで思い出を残そう。
+                    <div class="app-card-content">
+                        <h3 class="app-card-title">旅行思い出マップ</h3>
+                        <p class="app-card-description">
+                            写真をパズルのように切り取って地図に記録。あなたの旅の軌跡が、美しい思い出の地図になる革新的な旅行記録アプリ。
                         </p>
-                        <div class="app-featured-meta">
-                            <div class="app-meta-item">
-                                <span class="meta-label" data-i18n="portfolio.downloads">ダウンロード</span>
-                                <span class="meta-value">8万</span>
-                            </div>
-                            <div class="app-meta-item">
-                                <span class="meta-label" data-i18n="portfolio.rating">評価</span>
-                                <span class="meta-value">★4.7 (269)</span>
-                            </div>
-                            <div class="app-meta-item">
-                                <span class="meta-label" data-i18n="portfolio.category">カテゴリ</span>
-                                <span class="meta-value">Travel</span>
-                            </div>
+                        <div class="app-card-meta">
+                            <span class="app-meta-item">📱 80,000+ DL</span>
+                            <span class="app-meta-item">⭐ 4.7</span>
+                            <span class="app-meta-item">🏆 Featured by Apple</span>
                         </div>
-                        <div class="app-featured-actions">
-                            <span class="btn-primary" data-i18n="portfolio.viewDetails">詳細を見る</span>
-                            <a href="https://apps.apple.com/jp/app/id6478090657" target="_blank" class="btn-secondary" data-i18n="portfolio.appStore" onclick="event.stopPropagation()">App Store</a>
+                        <div class="app-card-actions">
+                            <a href="/portfolio/apps/travel-memory-map.html" class="btn btn-primary btn-small">詳細を見る</a>
+                            <a href="https://apps.apple.com/app/id1537919438" target="_blank" class="btn btn-secondary btn-small">App Store</a>
                         </div>
                     </div>
-                </div>
+                </article>
                 
-                <div class="app-featured clickable-card" data-href="apps/fuchidori.html">
-                    <div class="app-featured-image">
-                        <img src="../assets/images/icon/fuchidori.webp" alt="フチドリ！" loading="lazy">
+                <!-- フチドリ！ -->
+                <article class="app-card featured">
+                    <div class="app-card-image">
+                        <img src="../assets/images/icon/fuchidori.webp" alt="フチドリ！">
+                        <span class="app-card-badge new">NEW 2025</span>
                     </div>
-                    <div class="app-featured-content">
-                        <h3 class="app-featured-title" data-i18n="apps.fuchidori.title">フチドリ！</h3>
-                        <p class="app-featured-description" data-i18n="apps.fuchidori.description">
-                            写真の人やモノを指一本で簡単に切り抜き、好きな色や太さのフチをつけてステッカー風の画像が作れるアプリ
+                    <div class="app-card-content">
+                        <h3 class="app-card-title">フチドリ！</h3>
+                        <p class="app-card-description">
+                            写真の人やモノを指一本で切り抜き、思い出をステッカーに。SNSの一言から生まれた革新的な写真加工アプリ。
                         </p>
-                        <div class="app-featured-meta">
-                            <div class="app-meta-item">
-                                <span class="meta-label" data-i18n="portfolio.newRelease">新リリース</span>
-                                <span class="meta-value">2025年1月</span>
-                            </div>
-                            <div class="app-meta-item">
-                                <span class="meta-label" data-i18n="portfolio.freeApp">無料</span>
-                                <span class="meta-value">完全オフライン</span>
-                            </div>
-                            <div class="app-meta-item">
-                                <span class="meta-label" data-i18n="portfolio.category">カテゴリ</span>
-                                <span class="meta-value">Photo</span>
-                            </div>
+                        <div class="app-card-meta">
+                            <span class="app-meta-item">🆕 2025.1 Release</span>
+                            <span class="app-meta-item">💰 無料</span>
+                            <span class="app-meta-item">🎨 革新的UI</span>
                         </div>
-                        <div class="app-featured-actions">
-                            <span class="btn-primary" data-i18n="portfolio.viewDetails">詳細を見る</span>
-                            <a href="#" class="btn-secondary" data-i18n="portfolio.appStore" onclick="event.stopPropagation()">App Store</a>
+                        <div class="app-card-actions">
+                            <a href="/portfolio/apps/fuchidori.html" class="btn btn-primary btn-small">詳細を見る</a>
+                            <a href="https://apps.apple.com/app/id6740167927" target="_blank" class="btn btn-secondary btn-small">App Store</a>
                         </div>
                     </div>
-                </div>
+                </article>
             </div>
         </div>
     </section>
 
-    <!-- Transferred Apps -->
-    <section class="transferred-apps">
+    <!-- Active Apps Section -->
+    <section class="section section-alt">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title" data-i18n="portfolio.transferredApps">Transferred Apps</h2>
-                <p class="section-subtitle" data-i18n="portfolio.transferredAppsSubtitle">2024年に譲渡したアプリケーション</p>
+                <span class="section-badge">Active Apps</span>
+                <h2 class="section-title">公開中のアプリ</h2>
+                <p class="section-description">
+                    App Storeで今すぐダウンロードできる、思い出を彩るアプリたち
+                </p>
             </div>
             
-            <div class="transferred-grid">
-                <div class="transferred-card">
-                    <div class="transferred-card-content">
-                        <h3 class="transferred-card-title" data-i18n="apps.utano.title">Utano</h3>
-                        <p class="transferred-card-description" data-i18n="apps.utano.description">争いの無いみんなで褒め合うSNS（チャット）</p>
-                        <div class="transferred-card-meta">
-                            <span class="transferred-tag" data-i18n="categories.sns">SNS</span>
-                            <span class="transferred-tag" data-i18n="categories.communication">Communication</span>
-                        </div>
-                        <div class="transferred-card-footer">
-                            <a href="https://apps.apple.com/jp/app/id6473527357" target="_blank" class="app-store-link">App Store</a>
-                            <span class="status-badge transferred" data-i18n="portfolio.transferred">譲渡済み</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="transferred-card">
-                    <div class="transferred-card-content">
-                        <h3 class="transferred-card-title" data-i18n="apps.special366.title">毎日が特別な1 / 366 日</h3>
-                        <p class="transferred-card-description" data-i18n="apps.special366.description">誕生日にちなんだ花や石をWidget対応で毎日お届け</p>
-                        <div class="transferred-card-meta">
-                            <span class="transferred-tag" data-i18n="categories.widget">Widget</span>
-                            <span class="transferred-tag" data-i18n="categories.lifestyle">Lifestyle</span>
-                        </div>
-                        <div class="transferred-card-footer">
-                            <span class="status-badge transferred" data-i18n="portfolio.transferred">譲渡済み</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="transferred-card">
-                    <div class="transferred-card-content">
-                        <h3 class="transferred-card-title" data-i18n="apps.encyclopedia.title">なんでも図鑑</h3>
-                        <p class="transferred-card-description" data-i18n="apps.encyclopedia.description">Gemini AIが写真を分析してなんでも図鑑に登録</p>
-                        <div class="transferred-card-meta">
-                            <span class="transferred-tag" data-i18n="categories.ai">AI</span>
-                            <span class="transferred-tag" data-i18n="categories.education">Education</span>
-                        </div>
-                        <div class="transferred-card-footer">
-                            <a href="https://apps.apple.com/jp/app/id6738431606" target="_blank" class="app-store-link">App Store</a>
-                            <span class="status-badge transferred" data-i18n="portfolio.transferred">譲渡済み</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="transferred-card">
-                    <div class="transferred-card-content">
-                        <h3 class="transferred-card-title" data-i18n="apps.suzume.title">すずめ</h3>
-                        <p class="transferred-card-description" data-i18n="apps.suzume.description">PiP機能でTwitterをどのアプリからでも閲覧</p>
-                        <div class="transferred-card-meta">
-                            <span class="transferred-tag" data-i18n="categories.social">Social</span>
-                            <span class="transferred-tag" data-i18n="categories.pip">PiP</span>
-                        </div>
-                        <div class="transferred-card-footer">
-                            <a href="https://apps.apple.com/jp/app/id1474298504" target="_blank" class="app-store-link">App Store</a>
-                            <span class="status-badge transferred" data-i18n="portfolio.transferred">譲渡済み</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="transferred-card">
-                    <div class="transferred-card-content">
-                        <h3 class="transferred-card-title" data-i18n="apps.marshmallow.title">マシュマロ音楽プレイヤー</h3>
-                        <p class="transferred-card-description" data-i18n="apps.marshmallow.description">Apple MusicやiTunesに対応したシンプルプレイヤー</p>
-                        <div class="transferred-card-meta">
-                            <span class="transferred-tag" data-i18n="categories.music">Music</span>
-                            <span class="transferred-tag" data-i18n="categories.media">Media</span>
-                        </div>
-                        <div class="transferred-card-footer">
-                            <a href="https://apps.apple.com/jp/app/id1511019522" target="_blank" class="app-store-link">App Store</a>
-                            <span class="status-badge transferred" data-i18n="portfolio.transferred">譲渡済み</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="transferred-card">
-                    <div class="transferred-card-content">
-                        <h3 class="transferred-card-title" data-i18n="apps.enlarger.title">画質を良くするアプリ Enlarger</h3>
-                        <p class="transferred-card-description" data-i18n="apps.enlarger.description">最新アルゴリズムで画質を向上させるアプリ</p>
-                        <div class="transferred-card-meta">
-                            <span class="transferred-tag" data-i18n="categories.photo">Photo</span>
-                            <span class="transferred-tag" data-i18n="categories.ai">AI</span>
-                        </div>
-                        <div class="transferred-card-footer">
-                            <a href="https://apps.apple.com/jp/app/id1487300354" target="_blank" class="app-store-link">App Store</a>
-                            <span class="status-badge transferred" data-i18n="portfolio.transferred">譲渡済み</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="transferred-card">
-                    <div class="transferred-card-content">
-                        <h3 class="transferred-card-title" data-i18n="apps.hotdog.title">Hotdog</h3>
-                        <p class="transferred-card-description" data-i18n="apps.hotdog.description">写真がホットドッグかどうか判定＋近くの店舗検索</p>
-                        <div class="transferred-card-meta">
-                            <span class="transferred-tag" data-i18n="categories.fun">Fun</span>
-                            <span class="transferred-tag" data-i18n="categories.ai">AI</span>
-                        </div>
-                        <div class="transferred-card-footer">
-                            <a href="https://apps.apple.com/jp/app/id547508614" target="_blank" class="app-store-link">App Store</a>
-                            <span class="status-badge transferred" data-i18n="portfolio.transferred">譲渡済み</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="transferred-card">
-                    <div class="transferred-card-content">
-                        <h3 class="transferred-card-title" data-i18n="apps.todayWidget.title">今日は何の日ウィジェット</h3>
-                        <p class="transferred-card-description" data-i18n="apps.todayWidget.description">今日は何の日かをウィジェットで確認できるアプリ</p>
-                        <div class="transferred-card-meta">
-                            <span class="transferred-tag" data-i18n="categories.widget">Widget</span>
-                            <span class="transferred-tag" data-i18n="categories.information">Information</span>
-                        </div>
-                        <div class="transferred-card-footer">
-                            <a href="https://apps.apple.com/jp/app/id847081017" target="_blank" class="app-store-link">App Store</a>
-                            <span class="status-badge transferred" data-i18n="portfolio.transferred">譲渡済み</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="transferred-card">
-                    <div class="transferred-card-content">
-                        <h3 class="transferred-card-title" data-i18n="apps.waterLife.title">WaterLife</h3>
-                        <p class="transferred-card-description" data-i18n="apps.waterLife.description">水分摂取を管理するライフスタイルアプリ</p>
-                        <div class="transferred-card-meta">
-                            <span class="transferred-tag" data-i18n="categories.health">Health</span>
-                            <span class="transferred-tag" data-i18n="categories.lifestyle">Lifestyle</span>
-                        </div>
-                        <div class="transferred-card-footer">
-                            <span class="status-badge transferred" data-i18n="portfolio.transferred">譲渡済み</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- All Apps -->
-    <section class="all-apps">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title" data-i18n="portfolio.allApps">All Apps</h2>
-                <p class="section-subtitle" data-i18n="portfolio.allAppsSubtitle">開発・公開したすべてのアプリケーション</p>
+            <!-- Category Filter -->
+            <div class="category-filter">
+                <button class="filter-btn active" data-category="all">すべて</button>
+                <button class="filter-btn" data-category="memory">思い出系</button>
+                <button class="filter-btn" data-category="utility">ユーティリティ</button>
+                <button class="filter-btn" data-category="game">ゲーム</button>
+                <button class="filter-btn" data-category="social">ソーシャル</button>
             </div>
             
-            <div class="apps-grid">
-                <div class="app-card clickable-card" data-href="apps/fuchidori.html">
+            <div class="app-grid">
+                <!-- Birthday Moon -->
+                <article class="app-card" data-category="memory">
                     <div class="app-card-image">
-                        <img src="../assets/images/icon/fuchidori.webp" alt="フチドリ！" loading="lazy">
+                        <img src="../assets/images/icon/birthday_moon.webp" alt="Birthday Moon">
                     </div>
                     <div class="app-card-content">
-                        <h3 class="app-card-title" data-i18n="apps.fuchidori.title">フチドリ！</h3>
-                        <p class="app-card-description" data-i18n="apps.fuchidori.description">写真の人やモノを指一本で簡単に切り抜き、好きな色や太さのフチをつけてステッカー風の画像が作れるアプリ</p>
+                        <h3 class="app-card-title">Birthday Moon</h3>
+                        <p class="app-card-description">
+                            生まれた日の月の形を永遠に。特別な日の夜空をいつでも手のひらに。
+                        </p>
                         <div class="app-card-meta">
-                            <span class="app-tag">Photo</span>
-                            <span class="app-tag">Editor</span>
+                            <span class="app-meta-item">50,000+ DL</span>
+                            <span class="app-meta-item">★4.6</span>
                         </div>
-                        <div class="app-card-actions">
-                            <span class="app-card-link" data-i18n="portfolio.viewDetails">詳細を見る</span>
-                        </div>
+                        <a href="/portfolio/apps/birthday-moon.html" class="app-card-link">詳細を見る →</a>
                     </div>
-                </div>
+                </article>
                 
-                <div class="app-card clickable-card" data-href="#">
+                <!-- Clock Widget -->
+                <article class="app-card" data-category="utility">
                     <div class="app-card-image">
-                        <img src="../assets/images/icon/pictin.webp" alt="Pictin" loading="lazy">
-                    </div>
-                    <div class="app-card-content">
-                        <h3 class="app-card-title">Pictin</h3>
-                        <p class="app-card-description">写真にオシャレな額縁をつけるフォトエディターアプリ</p>
-                        <div class="app-card-meta">
-                            <span class="app-tag">Photo</span>
-                            <span class="app-tag">Editor</span>
-                        </div>
-                        <div class="app-card-actions">
-                            <span class="app-card-link">詳細を見る</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="app-card clickable-card" data-href="#">
-                    <div class="app-card-image">
-                        <img src="../assets/images/icon/bookbank.webp" alt="BookBank" loading="lazy">
-                    </div>
-                    <div class="app-card-content">
-                        <h3 class="app-card-title">BookBank</h3>
-                        <p class="app-card-description">読書記録を管理する本の貯金箱アプリ</p>
-                        <div class="app-card-meta">
-                            <span class="app-tag">Reading</span>
-                            <span class="app-tag">Productivity</span>
-                        </div>
-                        <div class="app-card-actions">
-                            <span class="app-card-link">詳細を見る</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="app-card clickable-card" data-href="#">
-                    <div class="app-card-image">
-                        <img src="../assets/images/icon/clock_widget.webp" alt="Clock Widget" loading="lazy">
+                        <img src="../assets/images/icon/clock_widget.webp" alt="Clock Widget">
                     </div>
                     <div class="app-card-content">
                         <h3 class="app-card-title">Clock Widget</h3>
-                        <p class="app-card-description">ホーム画面を彩るオシャレな時計ウィジェット</p>
+                        <p class="app-card-description">
+                            ホーム画面を美しく飾る、カスタマイズ可能な時計ウィジェット。
+                        </p>
                         <div class="app-card-meta">
-                            <span class="app-tag">Widget</span>
-                            <span class="app-tag">Utility</span>
+                            <span class="app-meta-item">30,000+ DL</span>
+                            <span class="app-meta-item">★4.5</span>
                         </div>
-                        <div class="app-card-actions">
-                            <span class="app-card-link">詳細を見る</span>
-                        </div>
+                        <a href="/portfolio/apps/clock-widget.html" class="app-card-link">詳細を見る →</a>
                     </div>
-                </div>
+                </article>
                 
-                <div class="app-card clickable-card" data-href="#">
+                <!-- Fish Calendar -->
+                <article class="app-card" data-category="utility">
                     <div class="app-card-image">
-                        <img src="../assets/images/icon/music_snapshot.webp" alt="Music Snapshot" loading="lazy">
-                    </div>
-                    <div class="app-card-content">
-                        <h3 class="app-card-title">Music Snapshot</h3>
-                        <p class="app-card-description">今聞いている音楽をオシャレに記録・共有</p>
-                        <div class="app-card-meta">
-                            <span class="app-tag">Music</span>
-                            <span class="app-tag">Social</span>
-                        </div>
-                        <div class="app-card-actions">
-                            <span class="app-card-link">詳細を見る</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="app-card clickable-card" data-href="#">
-                    <div class="app-card-image">
-                        <img src="../assets/images/icon/ticket_mania.webp" alt="Ticket Mania" loading="lazy">
-                    </div>
-                    <div class="app-card-content">
-                        <h3 class="app-card-title">Ticket Mania</h3>
-                        <p class="app-card-description">チケットやレシートをデジタル管理</p>
-                        <div class="app-card-meta">
-                            <span class="app-tag">Productivity</span>
-                            <span class="app-tag">Organization</span>
-                        </div>
-                        <div class="app-card-actions">
-                            <span class="app-card-link">詳細を見る</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="app-card clickable-card" data-href="#">
-                    <div class="app-card-image">
-                        <img src="../assets/images/icon/ikaQR.webp" alt="IkaQR" loading="lazy">
-                    </div>
-                    <div class="app-card-content">
-                        <h3 class="app-card-title">IkaQR</h3>
-                        <p class="app-card-description">スタイリッシュなQRコードリーダー</p>
-                        <div class="app-card-meta">
-                            <span class="app-tag">Utility</span>
-                            <span class="app-tag">Scanner</span>
-                        </div>
-                        <div class="app-card-actions">
-                            <span class="app-card-link">詳細を見る</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="app-card clickable-card" data-href="#">
-                    <div class="app-card-image">
-                        <img src="../assets/images/icon/fish_calendar.webp" alt="Fish Calendar" loading="lazy">
+                        <img src="../assets/images/icon/fish_calendar.webp" alt="Fish Calendar">
                     </div>
                     <div class="app-card-content">
                         <h3 class="app-card-title">Fish Calendar</h3>
-                        <p class="app-card-description">魚をテーマにしたユニークなカレンダーアプリ</p>
+                        <p class="app-card-description">
+                            釣り人のための潮汐・天気・釣果を記録できる専用カレンダー。
+                        </p>
                         <div class="app-card-meta">
-                            <span class="app-tag">Calendar</span>
-                            <span class="app-tag">Fun</span>
+                            <span class="app-meta-item">5,000+ DL</span>
+                            <span class="app-meta-item">★4.3</span>
                         </div>
-                        <div class="app-card-actions">
-                            <span class="app-card-link">詳細を見る</span>
-                        </div>
+                        <a href="/portfolio/apps/fish-calendar.html" class="app-card-link">詳細を見る →</a>
                     </div>
-                </div>
+                </article>
                 
-                <div class="app-card clickable-card" data-href="#">
+                <!-- IkaQR -->
+                <article class="app-card" data-category="utility">
                     <div class="app-card-image">
-                        <img src="../assets/images/icon/photo_guard.webp" alt="Photo Guard" loading="lazy">
+                        <img src="../assets/images/icon/ika_qr.webp" alt="IkaQR">
+                    </div>
+                    <div class="app-card-content">
+                        <h3 class="app-card-title">IkaQR</h3>
+                        <p class="app-card-description">
+                            シンプルで高速なQRコード生成・読み取りアプリ。
+                        </p>
+                        <div class="app-card-meta">
+                            <span class="app-meta-item">8,000+ DL</span>
+                            <span class="app-meta-item">★4.4</span>
+                        </div>
+                        <a href="/portfolio/apps/ika-qr.html" class="app-card-link">詳細を見る →</a>
+                    </div>
+                </article>
+                
+                <!-- Music Snapshot -->
+                <article class="app-card" data-category="memory">
+                    <div class="app-card-image">
+                        <img src="../assets/images/icon/music_snapshot.webp" alt="Music Snapshot">
+                    </div>
+                    <div class="app-card-content">
+                        <h3 class="app-card-title">Music Snapshot</h3>
+                        <p class="app-card-description">
+                            音楽の瞬間を記録。聴いていた曲と思い出を一緒に保存。
+                        </p>
+                        <div class="app-card-meta">
+                            <span class="app-meta-item">3,000+ DL</span>
+                            <span class="app-meta-item">★4.2</span>
+                        </div>
+                        <a href="/portfolio/apps/music-snapshot.html" class="app-card-link">詳細を見る →</a>
+                    </div>
+                </article>
+                
+                <!-- Photo Guard -->
+                <article class="app-card" data-category="utility">
+                    <div class="app-card-image">
+                        <img src="../assets/images/icon/photo_guard.webp" alt="Photo Guard">
                     </div>
                     <div class="app-card-content">
                         <h3 class="app-card-title">Photo Guard</h3>
-                        <p class="app-card-description">写真の安全な保管とプライバシー保護</p>
+                        <p class="app-card-description">
+                            大切な写真を安全に保管。プライバシーを守る写真管理アプリ。
+                        </p>
                         <div class="app-card-meta">
-                            <span class="app-tag">Security</span>
-                            <span class="app-tag">Photo</span>
+                            <span class="app-meta-item">10,000+ DL</span>
+                            <span class="app-meta-item">★4.5</span>
                         </div>
-                        <div class="app-card-actions">
-                            <span class="app-card-link">詳細を見る</span>
+                        <a href="/portfolio/apps/photo-guard.html" class="app-card-link">詳細を見る →</a>
+                    </div>
+                </article>
+                
+                <!-- Pi App -->
+                <article class="app-card" data-category="utility">
+                    <div class="app-card-image">
+                        <img src="../assets/images/icon/pi_app.webp" alt="Pi App">
+                    </div>
+                    <div class="app-card-content">
+                        <h3 class="app-card-title">Pi App</h3>
+                        <p class="app-card-description">
+                            円周率の計算と学習。数学の美しさを体験できるアプリ。
+                        </p>
+                        <div class="app-card-meta">
+                            <span class="app-meta-item">2,000+ DL</span>
+                            <span class="app-meta-item">★4.1</span>
                         </div>
+                        <a href="/portfolio/apps/pi-app.html" class="app-card-link">詳細を見る →</a>
+                    </div>
+                </article>
+                
+                <!-- RakuTag -->
+                <article class="app-card" data-category="utility">
+                    <div class="app-card-image">
+                        <img src="../assets/images/icon/raku_tag.webp" alt="RakuTag">
+                    </div>
+                    <div class="app-card-content">
+                        <h3 class="app-card-title">RakuTag</h3>
+                        <p class="app-card-description">
+                            タグで整理整頓。メモや写真を効率的に管理できるアプリ。
+                        </p>
+                        <div class="app-card-meta">
+                            <span class="app-meta-item">4,000+ DL</span>
+                            <span class="app-meta-item">★4.3</span>
+                        </div>
+                        <a href="/portfolio/apps/raku-tag.html" class="app-card-link">詳細を見る →</a>
+                    </div>
+                </article>
+                
+                <!-- Touch the Numbers -->
+                <article class="app-card" data-category="game">
+                    <div class="app-card-image">
+                        <img src="../assets/images/icon/touch_the_numbers.webp" alt="Touch the Numbers">
+                    </div>
+                    <div class="app-card-content">
+                        <h3 class="app-card-title">Touch the Numbers</h3>
+                        <p class="app-card-description">
+                            数字を順番にタッチ！反射神経と集中力を鍛えるゲーム。
+                        </p>
+                        <div class="app-card-meta">
+                            <span class="app-meta-item">15,000+ DL</span>
+                            <span class="app-meta-item">★4.4</span>
+                        </div>
+                        <a href="/portfolio/apps/touch-the-numbers.html" class="app-card-link">詳細を見る →</a>
+                    </div>
+                </article>
+            </div>
+            
+            <!-- More Apps (Collapsed) -->
+            <div class="more-apps-section">
+                <button id="showMoreBtn" class="btn btn-secondary">
+                    さらに表示する (他15個のアプリ)
+                </button>
+                
+                <div id="moreApps" class="app-grid" style="display: none; margin-top: 2rem;">
+                    <!-- Additional apps would go here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transferred Apps Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Transferred</span>
+                <h2 class="section-title">譲渡済みアプリ</h2>
+                <p class="section-description">
+                    新しい開発者の元で進化を続ける、かつての作品たち
+                </p>
+            </div>
+            
+            <div class="app-grid">
+                <!-- Utano -->
+                <article class="app-card transferred">
+                    <div class="app-card-image">
+                        <img src="../assets/images/icon/utano.webp" alt="Utano">
+                        <span class="app-card-badge transferred">譲渡済み</span>
+                    </div>
+                    <div class="app-card-content">
+                        <h3 class="app-card-title">Utano</h3>
+                        <p class="app-card-description">
+                            褒め合いSNS。ポジティブなコミュニケーションを促進する革新的なソーシャルアプリ。
+                        </p>
+                        <div class="app-card-meta">
+                            <span class="app-meta-item">2024年譲渡</span>
+                            <span class="app-meta-item">累計10,000+ DL</span>
+                        </div>
+                        <a href="/portfolio/apps/utano.html" class="app-card-link">詳細を見る →</a>
+                    </div>
+                </article>
+                
+                <!-- mono -->
+                <article class="app-card transferred">
+                    <div class="app-card-image">
+                        <img src="../assets/images/icon/mono.webp" alt="mono">
+                        <span class="app-card-badge transferred">譲渡済み</span>
+                    </div>
+                    <div class="app-card-content">
+                        <h3 class="app-card-title">mono</h3>
+                        <p class="app-card-description">
+                            ミニマルSNS。シンプルな投稿と交流に特化したソーシャルプラットフォーム。
+                        </p>
+                        <div class="app-card-meta">
+                            <span class="app-meta-item">2023年譲渡</span>
+                            <span class="app-meta-item">累計5,000+ DL</span>
+                        </div>
+                        <a href="/portfolio/apps/mono.html" class="app-card-link">詳細を見る →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Development Philosophy -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Philosophy</span>
+                <h2 class="section-title">開発哲学</h2>
+            </div>
+            
+            <div class="philosophy-content">
+                <blockquote class="philosophy-quote">
+                    "すべてのアプリには物語がある。<br>
+                    ユーザーの日常に寄り添い、<br>
+                    思い出を形にする手助けをしたい。"
+                </blockquote>
+                <p class="philosophy-author">- 續橋涼</p>
+                
+                <div class="philosophy-points">
+                    <div class="philosophy-point">
+                        <div class="philosophy-icon">💭</div>
+                        <h3>思い出を大切に</h3>
+                        <p>人々の大切な瞬間を記録し、いつでも振り返れるように</p>
+                    </div>
+                    <div class="philosophy-point">
+                        <div class="philosophy-icon">🎨</div>
+                        <h3>美しいデザイン</h3>
+                        <p>使いやすさと美しさを両立した、心地よいUI/UX</p>
+                    </div>
+                    <div class="philosophy-point">
+                        <div class="philosophy-icon">🚀</div>
+                        <h3>革新的な機能</h3>
+                        <p>既存の枠にとらわれない、新しい価値の創造</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer Container -->
-    <div id="footer-container"></div>
+    <!-- Call to Action -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">次は、どんな思い出を創りますか？</h2>
+                <p class="section-description">
+                    新しいアプリのアイデアや、コラボレーションのご提案があれば<br>
+                    お気軽にお問い合わせください。
+                </p>
+            </div>
+            
+            <div class="text-center">
+                <div class="hero-cta">
+                    <a href="/contact/" class="btn btn-primary">お問い合わせ</a>
+                    <a href="https://github.com/tsuzuki817" target="_blank" class="btn btn-secondary">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Scripts -->
-    <script src="../assets/js/main.js"></script>
+    <!-- Footer -->
+    <footer style="background: var(--color-charcoal); color: var(--color-white); padding: 3rem 0; text-align: center;">
+        <div class="container">
+            <p style="color: var(--color-white); opacity: 0.8; margin-bottom: 1rem;">
+                © 2025 Ryo Tsuzukihashi. All rights reserved.
+            </p>
+            <p style="color: var(--color-white); opacity: 0.6; font-size: 0.875rem;">
+                Crafting memories with technology since 2016.
+            </p>
+            <div style="margin-top: 2rem;">
+                <a href="/legal/privacy-policy.html" style="color: var(--color-white); opacity: 0.6; margin: 0 1rem; text-decoration: none;">プライバシーポリシー</a>
+                <a href="/legal/terms-of-service.html" style="color: var(--color-white); opacity: 0.6; margin: 0 1rem; text-decoration: none;">利用規約</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Navigation scroll effect
+        window.addEventListener('scroll', function() {
+            const nav = document.getElementById('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile menu toggle
+        const navToggle = document.getElementById('navToggle');
+        const navMenu = document.getElementById('navMenu');
+        
+        navToggle.addEventListener('click', function() {
+            navToggle.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Category filter
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const appCards = document.querySelectorAll('.app-card[data-category]');
+        
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Update active button
+                filterBtns.forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Filter cards
+                const category = this.dataset.category;
+                appCards.forEach(card => {
+                    if (category === 'all' || card.dataset.category === category) {
+                        card.style.display = 'block';
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        }, 10);
+                    } else {
+                        card.style.opacity = '0';
+                        card.style.transform = 'translateY(20px)';
+                        setTimeout(() => {
+                            card.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+
+        // Show more apps
+        const showMoreBtn = document.getElementById('showMoreBtn');
+        const moreApps = document.getElementById('moreApps');
+        
+        if (showMoreBtn) {
+            showMoreBtn.addEventListener('click', function() {
+                if (moreApps.style.display === 'none') {
+                    moreApps.style.display = 'grid';
+                    this.textContent = '閉じる';
+                } else {
+                    moreApps.style.display = 'none';
+                    this.textContent = 'さらに表示する (他15個のアプリ)';
+                }
+            });
+        }
+
+        // Animate stats on scroll
+        const observerOptions = {
+            threshold: 0.5,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animated');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Observe portfolio stats
+        document.querySelectorAll('.portfolio-stat').forEach(stat => {
+            observer.observe(stat);
+        });
+    </script>
 </body>
 </html>

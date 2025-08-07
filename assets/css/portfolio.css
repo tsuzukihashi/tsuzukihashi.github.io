@@ -1,0 +1,441 @@
+/* ================================
+   Portfolio Page Specific Styles
+   Extends memories-tech.css
+   ================================ */
+
+/* ========== Portfolio Hero ========== */
+.portfolio-hero {
+  min-height: 60vh;
+  padding-top: calc(var(--space-2xl) + 80px);
+  padding-bottom: var(--space-xl);
+  position: relative;
+  background: var(--gradient-memories);
+}
+
+.portfolio-hero-content {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.portfolio-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 800;
+  line-height: 1.3;
+  margin-bottom: 1.5rem;
+  animation: slideUp 0.8s ease;
+}
+
+.portfolio-subtitle {
+  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+  color: var(--color-gray);
+  margin-bottom: 3rem;
+  font-weight: 400;
+  animation: slideUp 0.8s ease 0.2s both;
+}
+
+/* ========== Portfolio Stats Bar ========== */
+.portfolio-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: var(--color-white);
+  border-radius: 30px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+  animation: slideUp 0.8s ease 0.4s both;
+}
+
+.portfolio-stat {
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+
+.portfolio-stat.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.portfolio-stat:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 40px;
+  background: var(--color-light-gray);
+}
+
+.portfolio-stat-number {
+  font-size: 2rem;
+  font-weight: 800;
+  background: var(--gradient-sunset);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.25rem;
+}
+
+.portfolio-stat-label {
+  font-size: 0.875rem;
+  color: var(--color-gray);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+}
+
+/* ========== Category Filter ========== */
+.category-filter {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 0.75rem 1.5rem;
+  background: var(--color-white);
+  border: 2px solid var(--color-light-gray);
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-gray);
+  cursor: pointer;
+  transition: var(--transition-normal);
+}
+
+.filter-btn:hover {
+  border-color: var(--color-sunset);
+  color: var(--color-sunset);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 107, 107, 0.2);
+}
+
+.filter-btn.active {
+  background: var(--gradient-sunset);
+  color: var(--color-white);
+  border-color: transparent;
+  box-shadow: 0 10px 30px rgba(255, 107, 107, 0.3);
+}
+
+/* ========== App Grid ========== */
+.app-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.featured-grid {
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 3rem;
+}
+
+/* ========== App Card Styles ========== */
+.app-card {
+  background: var(--color-white);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  transition: var(--transition-normal);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+}
+
+.app-card.featured {
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+}
+
+.app-card.featured:hover {
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.15);
+}
+
+.app-card.transferred {
+  opacity: 0.85;
+}
+
+.app-card-image {
+  position: relative;
+  height: 200px;
+  background: var(--gradient-ocean);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.featured .app-card-image {
+  height: 250px;
+}
+
+.app-card-image img {
+  width: 120px;
+  height: 120px;
+  border-radius: 25%;
+  object-fit: cover;
+  transition: var(--transition-slow);
+}
+
+.featured .app-card-image img {
+  width: 150px;
+  height: 150px;
+}
+
+.app-card:hover .app-card-image img {
+  transform: scale(1.1);
+}
+
+.app-card-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.app-card-badge.best {
+  background: var(--gradient-sunset);
+  color: var(--color-white);
+}
+
+.app-card-badge.new {
+  background: var(--gradient-ocean);
+  color: var(--color-white);
+}
+
+.app-card-badge.transferred {
+  background: rgba(99, 110, 114, 0.9);
+  color: var(--color-white);
+}
+
+.app-card-content {
+  padding: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: var(--color-charcoal);
+}
+
+.app-card-description {
+  font-size: 1rem;
+  color: var(--color-gray);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.app-card-meta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.app-meta-item {
+  font-size: 0.875rem;
+  color: var(--color-gray);
+  padding: 0.25rem 0.75rem;
+  background: var(--color-cream);
+  border-radius: 15px;
+  white-space: nowrap;
+}
+
+.app-card-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: auto;
+}
+
+.btn-small {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+}
+
+.app-card-link {
+  display: inline-block;
+  color: var(--color-sunset);
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--transition-normal);
+  margin-top: auto;
+}
+
+.app-card-link:hover {
+  transform: translateX(5px);
+}
+
+/* ========== Philosophy Section ========== */
+.philosophy-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.philosophy-quote {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  line-height: 1.8;
+  color: var(--color-charcoal);
+  font-weight: 500;
+  font-style: italic;
+  margin-bottom: 2rem;
+  position: relative;
+  padding: 2rem;
+}
+
+.philosophy-quote::before,
+.philosophy-quote::after {
+  content: '"';
+  position: absolute;
+  font-size: 4rem;
+  color: var(--color-sunset);
+  opacity: 0.2;
+  font-family: Georgia, serif;
+}
+
+.philosophy-quote::before {
+  top: -10px;
+  left: 0;
+}
+
+.philosophy-quote::after {
+  bottom: -30px;
+  right: 0;
+}
+
+.philosophy-author {
+  font-size: 1.125rem;
+  color: var(--color-gray);
+  margin-bottom: 4rem;
+}
+
+.philosophy-points {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+.philosophy-point {
+  text-align: center;
+}
+
+.philosophy-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.philosophy-point h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-charcoal);
+  margin-bottom: 0.75rem;
+}
+
+.philosophy-point p {
+  color: var(--color-gray);
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+/* ========== More Apps Section ========== */
+.more-apps-section {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+#moreApps {
+  animation: slideUp 0.5s ease;
+}
+
+/* ========== Active Nav Link ========== */
+.nav-link.active {
+  color: var(--color-sunset);
+}
+
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 768px) {
+  .portfolio-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+  
+  .portfolio-stat:not(:last-child)::after {
+    display: none;
+  }
+  
+  .portfolio-stat:nth-child(2)::after {
+    display: block;
+  }
+  
+  .featured-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .app-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .category-filter {
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding-bottom: 0.5rem;
+  }
+  
+  .philosophy-points {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio-stats {
+    grid-template-columns: 1fr;
+  }
+  
+  .portfolio-stat:not(:last-child)::after {
+    display: none;
+  }
+}
+
+/* ========== Animations ========== */
+@keyframes countUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

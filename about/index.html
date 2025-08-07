@@ -3,153 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - tsuzuki817</title>
-    <meta name="description" content="tsuzuki817のプロフィールとキャリア情報">
-    <meta name="keywords" content="tsuzuki817, プロフィール, iOSエンジニア, 個人開発">
+    <title>About - Ryo Tsuzukihashi | 思い出×テクノロジーを創る個人開発者</title>
+    <meta name="description" content="續橋涼（Ryo Tsuzukihashi）- 9年間の個人開発で25以上のiOSアプリを公開。ZOZO、DeNA、Yahoo出身。思い出とテクノロジーを融合した革新的なアプリを創造し続ける開発者。">
+    <meta name="keywords" content="續橋涼, Ryo Tsuzukihashi, プロフィール, iOS開発者, 個人開発, エンジニア">
     
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- OGP -->
+    <meta property="og:title" content="About - Ryo Tsuzukihashi">
+    <meta property="og:description" content="9年間の個人開発で思い出×テクノロジーを創造。續橋涼のプロフィール。">
+    <meta property="og:image" content="/assets/images/profile.jpg">
+    <meta property="og:url" content="https://tsuzuki817.com/about/">
+    <meta property="og:type" content="profile">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/memories-tech.css">
+    <link rel="stylesheet" href="../assets/css/about.css">
     
     <!-- Favicon -->
     <link rel="icon" href="../favicon.ico">
     
-    <!-- Google tag (gtag.js) -->
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-QERPQ1EGLH');
     </script>
 </head>
 <body>
-    <!-- Header Container -->
-    <div id="header-container"></div>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">Ryo Tsuzukihashi</a>
+            <div class="nav-menu" id="navMenu">
+                <a href="/portfolio/" class="nav-link">Portfolio</a>
+                <a href="/about/" class="nav-link active">About</a>
+                <a href="/blog/" class="nav-link">Blog</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
     <!-- About Hero -->
     <section class="about-hero">
+        <div class="memory-shapes">
+            <div class="memory-shape"></div>
+            <div class="memory-shape"></div>
+            <div class="memory-shape"></div>
+        </div>
+        
         <div class="container">
             <div class="about-hero-content">
-                <h1 class="about-title">About Me</h1>
-                <p class="about-subtitle">
-                    iOSエンジニア・個人開発者として<br>
-                    ユーザーの生活を豊かにするアプリを作り続けています
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Profile Section -->
-    <section class="profile">
-        <div class="container">
-            <div class="profile-content">
-                <div class="profile-text">
-                    <div class="profile-intro">
-                        <h2 class="profile-title">Profile</h2>
-                        <p class="profile-description">
-                            株式会社ZOZOでiOSエンジニアとして働きながら、個人開発者として活動しています。
-                            群馬県在住で、テストが書きやすい実装と技術発信にこだわりを持っています。
-                        </p>
-                        <p class="profile-description">
-                            これまでに30個以上のiOSアプリをApp Storeに公開し、総ダウンロード数は16万を超えています。
-                            特に「流れるメモ帳」や「旅行思い出マップ」などのアプリが多くのユーザーに愛用されています。
-                        </p>
-                    </div>
-                    
-                    <div class="profile-details">
-                        <div class="detail-item">
-                            <h3 class="detail-title">Current Role</h3>
-                            <p class="detail-content">株式会社ZOZO - iOS Engineer</p>
-                            <p class="detail-sub">ZOZOTOWN iOS開発チーム</p>
-                        </div>
-                        
-                        <div class="detail-item">
-                            <h3 class="detail-title">Location</h3>
-                            <p class="detail-content">群馬県</p>
-                            <p class="detail-sub">リモートワーク中心</p>
-                        </div>
-                        
-                        <div class="detail-item">
-                            <h3 class="detail-title">Side Projects</h3>
-                            <p class="detail-content">RakuDrop</p>
-                            <p class="detail-sub">スマホからパソコンに簡単に画像転送できるサービス</p>
+                <div class="profile-image-wrapper">
+                    <div class="profile-image">
+                        <div class="profile-placeholder">
+                            <span>涼</span>
                         </div>
                     </div>
+                    <div class="profile-status">個人開発9年目</div>
                 </div>
                 
-                <div class="profile-stats">
-                    <div class="stats-grid">
-                        <div class="stat-card">
-                            <div class="stat-number">25</div>
-                            <div class="stat-label">Apps Published</div>
-                            <div class="stat-desc">App Storeに公開したアプリ数</div>
-                        </div>
-                        
-                        <div class="stat-card">
-                            <div class="stat-number">9</div>
-                            <div class="stat-label">Years Experience</div>
-                            <div class="stat-desc">iOSエンジニアとしての経験年数</div>
-                        </div>
-                        
-                        <div class="stat-card">
-                            <div class="stat-number">16万</div>
-                            <div class="stat-label">Total Downloads</div>
-                            <div class="stat-desc">全アプリの累計ダウンロード数</div>
-                        </div>
-                        
-                        <div class="stat-card">
-                            <div class="stat-number">4.6</div>
-                            <div class="stat-label">Average Rating</div>
-                            <div class="stat-desc">アプリの平均評価</div>
-                        </div>
+                <h1 class="about-title">
+                    續橋 涼<br>
+                    <span class="about-subtitle">Ryo Tsuzukihashi</span>
+                </h1>
+                
+                <p class="about-tagline">
+                    思い出とテクノロジーで、人々の日常に新しい価値を
+                </p>
+                
+                <div class="about-badges">
+                    <span class="badge">iOS Developer</span>
+                    <span class="badge">UI/UX Designer</span>
+                    <span class="badge">個人開発者</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="section">
+        <div class="container">
+            <div class="intro-content">
+                <div class="intro-text">
+                    <h2 class="section-title">はじめまして</h2>
+                    <p class="intro-paragraph">
+                        續橋涼（つづきはし りょう）と申します。<br>
+                        2016年から個人開発を始め、これまでに<strong>25以上のiOSアプリ</strong>をApp Storeで公開してきました。
+                    </p>
+                    <p class="intro-paragraph">
+                        私のアプリは、<strong>「思い出×テクノロジー」</strong>をテーマに、人々の大切な瞬間を記録し、
+                        新しい形で楽しめるような体験を提供することを目指しています。
+                    </p>
+                    <p class="intro-paragraph">
+                        代表作の「旅行思い出マップ」は<strong>8万ダウンロード</strong>を超え、
+                        全アプリ合計で<strong>16万人以上</strong>のユーザーに使っていただいています。
+                    </p>
+                </div>
+                
+                <div class="intro-stats">
+                    <div class="intro-stat">
+                        <div class="intro-stat-icon">🎯</div>
+                        <div class="intro-stat-number">9年</div>
+                        <div class="intro-stat-label">個人開発歴</div>
+                    </div>
+                    <div class="intro-stat">
+                        <div class="intro-stat-icon">📱</div>
+                        <div class="intro-stat-number">25+</div>
+                        <div class="intro-stat-label">公開アプリ</div>
+                    </div>
+                    <div class="intro-stat">
+                        <div class="intro-stat-icon">🌟</div>
+                        <div class="intro-stat-number">160,000+</div>
+                        <div class="intro-stat-label">総ダウンロード</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <section class="experience">
+    <!-- Career Timeline -->
+    <section class="section section-alt">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Experience</h2>
-                <p class="section-subtitle">キャリアの歩み</p>
+                <span class="section-badge">Career</span>
+                <h2 class="section-title">経歴</h2>
+                <p class="section-description">
+                    大企業での経験を経て、個人開発者として独自の道を歩む
+                </p>
             </div>
             
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-date">2024 - 現在</div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">株式会社ZOZO</h3>
-                        <p class="timeline-role">iOS Engineer</p>
-                        <p class="timeline-description">
-                            ZOZOTOWN iOS開発チームにてアプリの機能開発・改善を担当。
-                            Swift、SwiftUIを使用した開発を行っています。
+            <div class="career-timeline">
+                <div class="career-item">
+                    <div class="career-year">2016</div>
+                    <div class="career-content">
+                        <h3>個人開発スタート</h3>
+                        <p class="career-company">Independent Developer</p>
+                        <p class="career-description">
+                            仕事の傍ら、初めてのiOSアプリを開発・リリース。
+                            アプリ開発の楽しさに目覚める。
                         </p>
                     </div>
                 </div>
                 
-                <div class="timeline-item">
-                    <div class="timeline-date">2023</div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">DeNA</h3>
-                        <p class="timeline-role">iOS Engineer</p>
-                        <p class="timeline-description">
-                            Pococha iOS開発にてTDD・ペアプログラミングを実践。
-                            品質の高いコード作成と開発プロセスの改善に取り組みました。
+                <div class="career-item">
+                    <div class="career-year">2018</div>
+                    <div class="career-content">
+                        <h3>ZOZOテクノロジーズ</h3>
+                        <p class="career-company">iOSエンジニア</p>
+                        <p class="career-description">
+                            ZOZOTOWNアプリの開発に携わり、大規模サービスの開発経験を積む。
                         </p>
                     </div>
                 </div>
                 
-                <div class="timeline-item">
-                    <div class="timeline-date">2019 - 2023</div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">ヤフー（PayPay）</h3>
-                        <p class="timeline-role">iOS Engineer / Tech Lead</p>
-                        <p class="timeline-description">
-                            PayPayフリマの立ち上げからテックリードとして参画。
-                            アーキテクチャ設計から実装まで幅広く担当しました。
+                <div class="career-item">
+                    <div class="career-year">2020</div>
+                    <div class="career-content">
+                        <h3>DeNA (Pococha)</h3>
+                        <p class="career-company">iOSエンジニア</p>
+                        <p class="career-description">
+                            ライブ配信アプリPocochaの新機能開発とパフォーマンス改善を担当。
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="career-item">
+                    <div class="career-year">2022</div>
+                    <div class="career-content">
+                        <h3>Yahoo (PayPayフリマ)</h3>
+                        <p class="career-company">iOSエンジニア</p>
+                        <p class="career-description">
+                            PayPayフリマアプリの開発に従事。決済システムとの連携機能を実装。
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="career-item current">
+                    <div class="career-year">現在</div>
+                    <div class="career-content">
+                        <h3>フルタイム個人開発者</h3>
+                        <p class="career-company">Independent</p>
+                        <p class="career-description">
+                            企業での経験を活かし、個人開発に専念。
+                            思い出×テクノロジーをテーマに新しいアプリを創造中。
                         </p>
                     </div>
                 </div>
@@ -158,147 +205,317 @@
     </section>
 
     <!-- Skills Section -->
-    <section class="skills">
+    <section class="section">
         <div class="container">
-            <div class="skills-content">
-                <div class="skills-technical">
-                    <h2 class="skills-title">Technical Skills</h2>
-                    <div class="skills-grid">
-                        <div class="skill-item">
-                            <div class="skill-name">Swift</div>
-                            <div class="skill-level">
-                                <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 90%"></div>
-                                </div>
-                                <span class="skill-score">68.0 (Findy)</span>
-                            </div>
-                        </div>
-                        
-                        <div class="skill-item">
-                            <div class="skill-name">SwiftUI</div>
-                            <div class="skill-level">
-                                <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 85%"></div>
-                                </div>
-                                <span class="skill-badge">専門</span>
-                            </div>
-                        </div>
-                        
-                        <div class="skill-item">
-                            <div class="skill-name">Firebase</div>
-                            <div class="skill-level">
-                                <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 80%"></div>
-                                </div>
-                                <span class="skill-badge">実務</span>
-                            </div>
-                        </div>
-                        
-                        <div class="skill-item">
-                            <div class="skill-name">TDD</div>
-                            <div class="skill-level">
-                                <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 75%"></div>
-                                </div>
-                                <span class="skill-badge">実践</span>
-                            </div>
-                        </div>
+            <div class="section-header">
+                <span class="section-badge">Skills</span>
+                <h2 class="section-title">技術スタック</h2>
+                <p class="section-description">
+                    9年間の開発で培った技術とツール
+                </p>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <span class="skill-icon">📱</span>
+                        iOS Development
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Swift</span>
+                        <span class="skill-tag">SwiftUI</span>
+                        <span class="skill-tag">UIKit</span>
+                        <span class="skill-tag">Combine</span>
+                        <span class="skill-tag">Core Data</span>
+                        <span class="skill-tag">Core Location</span>
+                        <span class="skill-tag">MapKit</span>
+                        <span class="skill-tag">ARKit</span>
                     </div>
-                    <p class="skills-note">※数値はFindy社のGitHubスキル偏差値</p>
                 </div>
                 
-                <div class="skills-strengths">
-                    <h2 class="skills-title">Strengths</h2>
-                    <div class="strengths-grid">
-                        <div class="strength-item">
-                            <div class="strength-icon">🎯</div>
-                            <h3 class="strength-title">アウトプットへのこだわり</h3>
-                            <p class="strength-description">テストが書きやすい実装と技術発信を重視</p>
-                        </div>
-                        
-                        <div class="strength-item">
-                            <div class="strength-icon">🚀</div>
-                            <h3 class="strength-title">前向きな向上心</h3>
-                            <p class="strength-description">新しい技術への挑戦と継続的な学習</p>
-                        </div>
-                        
-                        <div class="strength-item">
-                            <div class="strength-icon">🤝</div>
-                            <h3 class="strength-title">チームコミュニケーション</h3>
-                            <p class="strength-description">ペアプログラミングとアジャイル開発</p>
-                        </div>
-                        
-                        <div class="strength-item">
-                            <div class="strength-icon">💡</div>
-                            <h3 class="strength-title">柔軟な思考</h3>
-                            <p class="strength-description">ユーザー体験を重視したソリューション</p>
-                        </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <span class="skill-icon">🎨</span>
+                        Design & UI/UX
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">Sketch</span>
+                        <span class="skill-tag">Adobe XD</span>
+                        <span class="skill-tag">Photoshop</span>
+                        <span class="skill-tag">Illustrator</span>
+                        <span class="skill-tag">Human Interface Guidelines</span>
                     </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <span class="skill-icon">☁️</span>
+                        Backend & Cloud
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Firebase</span>
+                        <span class="skill-tag">Firestore</span>
+                        <span class="skill-tag">Cloud Functions</span>
+                        <span class="skill-tag">Google Cloud</span>
+                        <span class="skill-tag">RevenueCat</span>
+                        <span class="skill-tag">App Store Connect API</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <span class="skill-icon">🔧</span>
+                        Tools & Others
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Xcode</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">Fastlane</span>
+                        <span class="skill-tag">TestFlight</span>
+                        <span class="skill-tag">CI/CD</span>
+                        <span class="skill-tag">Analytics</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Values</span>
+                <h2 class="section-title">大切にしていること</h2>
+            </div>
+            
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">💭</div>
+                    <h3 class="value-title">ユーザーファースト</h3>
+                    <p class="value-description">
+                        技術は手段。大切なのは、ユーザーの生活をより豊かにすること。
+                        常にユーザーの視点で考え、本当に必要とされるものを作る。
+                    </p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">✨</div>
+                    <h3 class="value-title">美しさと使いやすさ</h3>
+                    <p class="value-description">
+                        見た目の美しさと使いやすさは両立できる。
+                        細部にこだわり、触れて嬉しくなるようなアプリを目指す。
+                    </p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">🚀</div>
+                    <h3 class="value-title">継続的な改善</h3>
+                    <p class="value-description">
+                        リリースはゴールではなくスタート。
+                        ユーザーフィードバックを大切に、常により良いものへ進化させる。
+                    </p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">🌱</div>
+                    <h3 class="value-title">学び続ける姿勢</h3>
+                    <p class="value-description">
+                        技術は日々進化する。新しい技術や手法を学び、
+                        より良い体験を提供できるよう成長し続ける。
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Achievements Section -->
-    <section class="achievements">
+    <section class="section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Key Achievements</h2>
-                <p class="section-subtitle">主な実績</p>
+                <span class="section-badge">Achievements</span>
+                <h2 class="section-title">実績・受賞歴</h2>
             </div>
             
-            <div class="achievements-grid">
+            <div class="achievements-list">
                 <div class="achievement-item">
-                    <div class="achievement-header">
-                        <div class="achievement-icon">📱</div>
-                        <h3 class="achievement-title">流れるメモ帳</h3>
+                    <div class="achievement-icon">🏆</div>
+                    <div class="achievement-content">
+                        <h3>App Store Featured</h3>
+                        <p>「旅行思い出マップ」がApp Store日本版でフィーチャー</p>
                     </div>
-                    <div class="achievement-stats">
-                        <span class="achievement-downloads">12万ダウンロード</span>
-                        <span class="achievement-rating">★4.6</span>
-                    </div>
-                    <p class="achievement-description">
-                        PiP機能を活用した革新的なメモアプリ。
-                        画面上に常に表示されるメモで作業効率を向上。
-                    </p>
                 </div>
                 
                 <div class="achievement-item">
-                    <div class="achievement-header">
-                        <div class="achievement-icon">🗺️</div>
-                        <h3 class="achievement-title">旅行思い出マップ</h3>
+                    <div class="achievement-icon">🎤</div>
+                    <div class="achievement-content">
+                        <h3>iOSDC Japan 2023 登壇</h3>
+                        <p>個人開発の知見についてLT発表</p>
                     </div>
-                    <div class="achievement-stats">
-                        <span class="achievement-downloads">8万ダウンロード</span>
-                        <span class="achievement-rating">★4.7 (269)</span>
-                    </div>
-                    <p class="achievement-description">
-                        写真をパズルのように切り取って地図に記録する旅行思い出アプリ。
-                        新しい体験を提供し多くのユーザーに愛用されています。
-                    </p>
                 </div>
                 
                 <div class="achievement-item">
-                    <div class="achievement-header">
-                        <div class="achievement-icon">🎤</div>
-                        <h3 class="achievement-title">技術発信</h3>
+                    <div class="achievement-icon">📝</div>
+                    <div class="achievement-content">
+                        <h3>技術記事執筆</h3>
+                        <p>Qiita、Zenn等で50以上の技術記事を公開</p>
                     </div>
-                    <div class="achievement-stats">
-                        <span class="achievement-event">iOSDC登壇</span>
+                </div>
+                
+                <div class="achievement-item">
+                    <div class="achievement-icon">🌟</div>
+                    <div class="achievement-content">
+                        <h3>ユーザー評価 ★4.6</h3>
+                        <p>全アプリ平均で高評価を維持</p>
                     </div>
-                    <p class="achievement-description">
-                        iOSDCでのライトニングトーク発表など、
-                        技術コミュニティでの積極的な知見共有を実践。
-                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer Container -->
-    <div id="footer-container"></div>
+    <!-- Message Section -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="message-section">
+                <h2 class="section-title">メッセージ</h2>
+                
+                <div class="message-content">
+                    <p class="message-text">
+                        アプリ開発を始めて9年。<br>
+                        最初は「自分のアイデアを形にしたい」という単純な思いから始まりました。
+                    </p>
+                    
+                    <p class="message-text">
+                        しかし、ユーザーからの「思い出を残せて嬉しい」「毎日使っています」という声を聞くうちに、
+                        私の使命が明確になりました。
+                    </p>
+                    
+                    <p class="message-text emphasis">
+                        それは、<strong>テクノロジーで人々の思い出を守り、新しい価値を創造すること</strong>。
+                    </p>
+                    
+                    <p class="message-text">
+                        写真、場所、感情。すべての思い出には物語があります。<br>
+                        私はその物語を、最高の形で残すお手伝いをしたい。
+                    </p>
+                    
+                    <p class="message-text">
+                        これからも、思い出とテクノロジーを融合させた<br>
+                        新しい体験を創り続けていきます。
+                    </p>
+                    
+                    <div class="message-signature">
+                        <p>2025年1月</p>
+                        <p class="signature-name">續橋 涼</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Scripts -->
-    <script src="../assets/js/main.js"></script>
+    <!-- Connect Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">つながる</h2>
+                <p class="section-description">
+                    開発の裏話やアップデート情報をシェアしています
+                </p>
+            </div>
+            
+            <div class="connect-links">
+                <a href="https://github.com/tsuzuki817" target="_blank" class="connect-link">
+                    <div class="connect-icon">🐙</div>
+                    <div class="connect-info">
+                        <h3>GitHub</h3>
+                        <p>オープンソースプロジェクト</p>
+                    </div>
+                </a>
+                
+                <a href="https://twitter.com/tsuzuki817" target="_blank" class="connect-link">
+                    <div class="connect-icon">🐦</div>
+                    <div class="connect-info">
+                        <h3>Twitter</h3>
+                        <p>開発の日常をつぶやき</p>
+                    </div>
+                </a>
+                
+                <a href="https://qiita.com/tsuzuki817" target="_blank" class="connect-link">
+                    <div class="connect-icon">📚</div>
+                    <div class="connect-info">
+                        <h3>Qiita</h3>
+                        <p>技術記事を投稿</p>
+                    </div>
+                </a>
+                
+                <a href="/contact/" class="connect-link">
+                    <div class="connect-icon">✉️</div>
+                    <div class="connect-info">
+                        <h3>Contact</h3>
+                        <p>お仕事のご相談はこちら</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: var(--color-charcoal); color: var(--color-white); padding: 3rem 0; text-align: center;">
+        <div class="container">
+            <p style="color: var(--color-white); opacity: 0.8; margin-bottom: 1rem;">
+                © 2025 Ryo Tsuzukihashi. All rights reserved.
+            </p>
+            <p style="color: var(--color-white); opacity: 0.6; font-size: 0.875rem;">
+                Crafting memories with technology since 2016.
+            </p>
+            <div style="margin-top: 2rem;">
+                <a href="/legal/privacy-policy.html" style="color: var(--color-white); opacity: 0.6; margin: 0 1rem; text-decoration: none;">プライバシーポリシー</a>
+                <a href="/legal/terms-of-service.html" style="color: var(--color-white); opacity: 0.6; margin: 0 1rem; text-decoration: none;">利用規約</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Navigation scroll effect
+        window.addEventListener('scroll', function() {
+            const nav = document.getElementById('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile menu toggle
+        const navToggle = document.getElementById('navToggle');
+        const navMenu = document.getElementById('navMenu');
+        
+        navToggle.addEventListener('click', function() {
+            navToggle.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Animate elements on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animated');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements
+        document.querySelectorAll('.career-item, .value-card, .achievement-item').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
 </body>
 </html>

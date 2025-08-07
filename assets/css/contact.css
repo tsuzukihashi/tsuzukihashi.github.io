@@ -1,0 +1,463 @@
+/* ================================
+   Contact Page Specific Styles
+   Extends memories-tech.css
+   ================================ */
+
+/* ========== Contact Hero ========== */
+.contact-hero {
+  min-height: 60vh;
+  padding-top: calc(var(--space-2xl) + 80px);
+  padding-bottom: var(--space-xl);
+  position: relative;
+  background: var(--gradient-memories);
+  display: flex;
+  align-items: center;
+}
+
+.contact-hero-content {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.contact-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 800;
+  line-height: 1.3;
+  margin-bottom: 1.5rem;
+  animation: slideUp 0.8s ease;
+}
+
+.contact-subtitle {
+  font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+  color: var(--color-gray);
+  margin-bottom: 3rem;
+  font-weight: 400;
+  animation: slideUp 0.8s ease 0.2s both;
+}
+
+/* ========== Contact Options ========== */
+.contact-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-card {
+  background: var(--color-white);
+  border-radius: 20px;
+  padding: 2.5rem;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  transition: var(--transition-normal);
+  position: relative;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.contact-card.animated {
+  opacity: 1;
+  transform: translateY(0);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.contact-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+}
+
+.contact-card.primary {
+  background: var(--gradient-sunset);
+  color: var(--color-white);
+  box-shadow: 0 15px 50px rgba(255, 107, 107, 0.3);
+}
+
+.contact-card.primary:hover {
+  box-shadow: 0 25px 70px rgba(255, 107, 107, 0.4);
+}
+
+.contact-card-icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-card.primary .contact-card-icon {
+  filter: brightness(1.2);
+}
+
+.contact-card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--color-charcoal);
+}
+
+.contact-card.primary .contact-card-title {
+  color: var(--color-white);
+}
+
+.contact-card-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: var(--color-gray);
+}
+
+.contact-card.primary .contact-card-description {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.contact-card-link {
+  display: inline-block;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-sunset);
+  text-decoration: none;
+  margin-bottom: 1rem;
+  transition: var(--transition-normal);
+}
+
+.contact-card.primary .contact-card-link {
+  color: var(--color-white);
+  text-decoration: underline;
+}
+
+.contact-card-link:hover {
+  transform: scale(1.05);
+}
+
+.contact-card-note {
+  font-size: 0.875rem;
+  color: var(--color-gray);
+  margin: 0;
+}
+
+.contact-card.primary .contact-card-note {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* ========== Contact Form Section ========== */
+.contact-form-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-form-note {
+  background: var(--color-white);
+  border-radius: 20px;
+  padding: 2.5rem;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+.note-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.contact-form-note h3 {
+  font-size: 1.5rem;
+  color: var(--color-charcoal);
+  margin-bottom: 1rem;
+}
+
+.contact-form-note p {
+  color: var(--color-gray);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.note-highlight {
+  font-weight: 600;
+  color: var(--color-sunset);
+  font-size: 1.125rem;
+  margin-top: 1.5rem;
+}
+
+/* ========== Form Placeholder ========== */
+.form-placeholder {
+  background: var(--color-cream);
+  border: 2px dashed var(--color-light-gray);
+  border-radius: 20px;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.placeholder-content {
+  opacity: 0.6;
+}
+
+.placeholder-icon {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.placeholder-content p {
+  color: var(--color-gray);
+  margin-bottom: 0.5rem;
+}
+
+.placeholder-note {
+  font-size: 0.875rem;
+}
+
+/* ========== FAQ Section ========== */
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background: var(--color-white);
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  transition: var(--transition-normal);
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.faq-item.animated {
+  opacity: 1;
+  transform: translateY(0);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.faq-item:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.faq-item.active {
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+  width: 100%;
+  padding: 1.5rem 2rem;
+  background: none;
+  border: none;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-charcoal);
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: var(--transition-normal);
+  font-family: var(--font-main);
+}
+
+.faq-question:hover {
+  color: var(--color-sunset);
+}
+
+.faq-icon {
+  font-size: 1.5rem;
+  color: var(--color-sunset);
+  transition: var(--transition-normal);
+  flex-shrink: 0;
+  margin-left: 1rem;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.faq-answer p {
+  padding: 0 2rem 1.5rem;
+  color: var(--color-gray);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ========== Work Together Section ========== */
+.work-together {
+  position: relative;
+  background: var(--gradient-sunset);
+  border-radius: 30px;
+  padding: 4rem;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(255, 107, 107, 0.3);
+}
+
+.work-together-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.work-together-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-white);
+  margin-bottom: 1rem;
+}
+
+.work-together-description {
+  font-size: 1.25rem;
+  color: var(--color-white);
+  opacity: 0.9;
+  margin-bottom: 3rem;
+}
+
+.work-together-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.work-item {
+  text-align: center;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  transition: var(--transition-normal);
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.work-item.animated {
+  opacity: 1;
+  transform: translateY(0);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.work-item:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-5px);
+}
+
+.work-item-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.work-item h3 {
+  font-size: 1.125rem;
+  color: var(--color-white);
+  margin-bottom: 0.5rem;
+}
+
+.work-item p {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+}
+
+.work-together-decoration {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.decoration-shape {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.decoration-shape:nth-child(1) {
+  width: 300px;
+  height: 300px;
+  top: -150px;
+  right: -150px;
+}
+
+.decoration-shape:nth-child(2) {
+  width: 200px;
+  height: 200px;
+  bottom: -100px;
+  left: -100px;
+}
+
+/* ========== Response Notice ========== */
+.response-notice {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: var(--color-white);
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+.notice-icon {
+  font-size: 3rem;
+  flex-shrink: 0;
+}
+
+.notice-content h3 {
+  font-size: 1.25rem;
+  color: var(--color-charcoal);
+  margin-bottom: 0.5rem;
+}
+
+.notice-content p {
+  color: var(--color-gray);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 768px) {
+  .contact-options {
+    grid-template-columns: 1fr;
+  }
+  
+  .work-together {
+    padding: 3rem 2rem;
+  }
+  
+  .work-together-title {
+    font-size: 2rem;
+  }
+  
+  .work-together-description {
+    font-size: 1rem;
+  }
+  
+  .work-together-items {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .response-notice {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .faq-question {
+    padding: 1.25rem 1.5rem;
+    font-size: 1rem;
+  }
+  
+  .faq-answer p {
+    padding: 0 1.5rem 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .work-together-items {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact-card {
+    padding: 2rem 1.5rem;
+  }
+}
