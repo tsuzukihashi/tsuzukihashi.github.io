@@ -34,11 +34,6 @@ async function loadSharedComponents() {
     let depth = pathParts.length;
     let basePath = '';
     
-    // Adjust for language subdirectories
-    if (pathParts[0] === 'en' || pathParts[0] === 'ko') {
-        depth = pathParts.length - 1;
-    }
-    
     // Generate the correct relative path
     if (depth === 0) {
         basePath = '';
