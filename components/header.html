@@ -1,20 +1,25 @@
 <!-- Navigation -->
 <nav class="nav">
     <div class="nav-container">
-        <a href="#" class="nav-logo" data-base-path>tsuzuki817</a>
+        <a href="/" class="nav-logo">tsuzuki817</a>
         <div class="nav-menu">
-            <a href="#" class="nav-link" data-nav-portfolio>Portfolio</a>
-            <a href="#" class="nav-link" data-nav-blog>Blog</a>
-            <a href="#" class="nav-link" data-nav-about>About</a>
-            <a href="#" class="nav-link" data-nav-contact>Contact</a>
+            <a href="/portfolio/" class="nav-link">Portfolio</a>
+            <a href="/blog/posts/" class="nav-link">Blog</a>
+            <a href="/about/" class="nav-link">About</a>
+            <a href="/contact/" class="nav-link">Contact</a>
             <div class="language-switcher">
                 <div class="lang-dropdown">
                     <button class="lang-current">
-                        <span class="lang-text" data-current-lang>日本語</span>
+                        <span class="lang-text">日本語</span>
                         <span class="lang-arrow">▼</span>
                     </button>
-                    <div class="lang-options" data-lang-options>
-                        <!-- Language options will be injected by JavaScript -->
+                    <div class="lang-options">
+                        <a href="/en/" class="lang-option">English</a>
+                        <a href="#" class="lang-option active">
+                            日本語
+                            <span class="lang-check">✓</span>
+                        </a>
+                        <a href="/ko/" class="lang-option">한국어</a>
                     </div>
                 </div>
             </div>
@@ -28,147 +33,30 @@
 </nav>
 
 <script>
-(function() {
-    // Get current page info
-    const fullPath = window.location.pathname;
-    const pathParts = fullPath.split('/').filter(Boolean);
-    
-    // Remove trailing 'index.html' if present
-    if (pathParts[pathParts.length - 1] === 'index.html') {
-        pathParts.pop();
-    }
-    
-    // Detect language
-    let currentLang = 'ja';
-    let isLangSubdir = false;
-    
-    if (pathParts[0] === 'en') {
-        currentLang = 'en';
-        isLangSubdir = true;
-    } else if (pathParts[0] === 'ko') {
-        currentLang = 'ko';
-        isLangSubdir = true;
-    }
-    
-    // Get page path without language prefix
-    let pagePath = [...pathParts];
-    if (isLangSubdir) {
-        pagePath.shift(); // Remove language prefix
-    }
-    
-    // Calculate base path to root
-    let basePath = '';
-    const depth = pathParts.length;
-    
-    if (depth === 0) {
-        basePath = './';
-    } else {
-        basePath = '../'.repeat(depth);
-    }
-    
-    // Helper function to build correct path
-    function buildPath(targetLang, pageSegments) {
-        let result = basePath;
-        
-        // Add language directory if not Japanese
-        if (targetLang !== 'ja') {
-            result += targetLang + '/';
-        }
-        
-        // Add page segments
-        if (pageSegments && pageSegments.length > 0) {
-            result += pageSegments.join('/') + '/';
-        }
-        
-        return result;
-    }
-    
-    // Set logo link (always goes to language root)
-    const logoLink = document.querySelector('[data-base-path]');
-    if (logoLink) {
-        logoLink.href = buildPath(currentLang, []);
-    }
-    
-    // Set navigation links
-    const navLinks = {
-        'data-nav-portfolio': ['portfolio'],
-        'data-nav-blog': ['blog', 'posts'],
-        'data-nav-about': ['about'],
-        'data-nav-contact': ['contact']
-    };
-    
-    Object.keys(navLinks).forEach(selector => {
-        const link = document.querySelector(`[${selector}]`);
-        if (link) {
-            link.href = buildPath(currentLang, navLinks[selector]);
-        }
+// Mobile menu toggle
+const navToggle = document.querySelector('.nav-toggle');
+const navMenu = document.querySelector('.nav-menu');
+
+if (navToggle && navMenu) {
+    navToggle.addEventListener('click', function() {
+        navMenu.classList.toggle('active');
+        navToggle.classList.toggle('active');
+    });
+}
+
+// Language dropdown toggle
+const langDropdown = document.querySelector('.lang-dropdown');
+const langCurrent = document.querySelector('.lang-current');
+
+if (langDropdown && langCurrent) {
+    langCurrent.addEventListener('click', function(e) {
+        e.stopPropagation();
+        langDropdown.classList.toggle('active');
     });
     
-    // Set current language text
-    const langText = document.querySelector('[data-current-lang]');
-    if (langText) {
-        const langNames = {
-            'ja': '日本語',
-            'en': 'English',
-            'ko': '한국어'
-        };
-        langText.textContent = langNames[currentLang];
-    }
-    
-    // Generate language options
-    const langOptions = document.querySelector('[data-lang-options]');
-    if (langOptions) {
-        const languages = [
-            { code: 'en', name: 'English' },
-            { code: 'ja', name: '日本語' },
-            { code: 'ko', name: '한국어' }
-        ];
-        
-        languages.forEach(lang => {
-            const option = document.createElement('a');
-            option.className = 'lang-option';
-            
-            if (lang.code === currentLang) {
-                // Current language - not clickable
-                option.className += ' active';
-                option.href = '#';
-                option.innerHTML = `${lang.name} <span class="lang-check">✓</span>`;
-            } else {
-                // Build path for language switch (maintain current page)
-                option.href = buildPath(lang.code, pagePath);
-                option.textContent = lang.name;
-            }
-            
-            langOptions.appendChild(option);
-        });
-    }
-    
-    // Mobile menu toggle
-    const navToggle = document.querySelector('.nav-toggle');
-    const navMenu = document.querySelector('.nav-menu');
-    
-    if (navToggle && navMenu) {
-        navToggle.addEventListener('click', function() {
-            navMenu.classList.toggle('active');
-            navToggle.classList.toggle('active');
-        });
-    }
-    
-    // Language dropdown toggle
-    const langDropdown = document.querySelector('.lang-dropdown');
-    const langCurrent = document.querySelector('.lang-current');
-    
-    if (langDropdown && langCurrent) {
-        langCurrent.addEventListener('click', function(e) {
-            e.stopPropagation();
-            langDropdown.classList.toggle('active');
-        });
-        
-        // Close dropdown when clicking outside
-        document.addEventListener('click', function() {
-            langDropdown.classList.remove('active');
-        });
-    }
-    
-})();
+    // Close dropdown when clicking outside
+    document.addEventListener('click', function() {
+        langDropdown.classList.remove('active');
+    });
+}
 </script>
