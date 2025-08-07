@@ -31,20 +31,30 @@
 (function() {
     // Language configuration
     const LANGUAGES = {
-        ja: { name: '日本語', path: '' },
-        en: { name: 'English', path: 'en' },
-        ko: { name: '한국어', path: 'ko' }
+        ja: { name: '日本語', code: 'ja' },
+        en: { name: 'English', code: 'en' },
+        ko: { name: '한국어', code: 'ko' }
     };
     
-    // Get current language from URL or localStorage
+    // Get current language from URL params or localStorage
     function getCurrentLanguage() {
-        const path = window.location.pathname;
+        // Check URL parameter first
+        const urlParams = new URLSearchParams(window.location.search);
+        const urlLang = urlParams.get('lang');
         
-        // Check URL for language
-        if (path.startsWith('/en/')) return 'en';
-        if (path.startsWith('/ko/')) return 'ko';
+        if (urlLang && LANGUAGES[urlLang]) {
+            // Save to localStorage if from URL
+            localStorage.setItem('preferredLanguage', urlLang);
+            return urlLang;
+        }
         
-        // Default to Japanese for root paths
+        // Check localStorage
+        const savedLang = localStorage.getItem('preferredLanguage');
+        if (savedLang && LANGUAGES[savedLang]) {
+            return savedLang;
+        }
+        
+        // Default to Japanese
         return 'ja';
     }
     
@@ -53,69 +63,24 @@
         localStorage.setItem('preferredLanguage', lang);
     }
     
-    // Get saved language preference
-    function getSavedLanguage() {
-        return localStorage.getItem('preferredLanguage') || 'ja';
-    }
-    
-    // Get current page path without language prefix
-    function getPagePath() {
-        const path = window.location.pathname;
-        const currentLang = getCurrentLanguage();
-        
-        if (currentLang === 'en') {
-            return path.replace(/^\/en/, '');
-        } else if (currentLang === 'ko') {
-            return path.replace(/^\/ko/, '');
-        }
-        
-        return path;
-    }
-    
-    // Build URL for language switch
+    // Build URL with language parameter
     function buildLanguageUrl(targetLang) {
-        const pagePath = getPagePath();
+        const url = new URL(window.location.href);
         
         if (targetLang === 'ja') {
-            // Japanese is at root
-            return pagePath || '/';
+            // Japanese doesn't need lang parameter
+            url.searchParams.delete('lang');
         } else {
-            // Other languages have prefix
-            return '/' + targetLang + pagePath;
-        }
-    }
-    
-    // Update navigation links based on current language
-    function updateNavigationLinks() {
-        const currentLang = getCurrentLanguage();
-        const prefix = currentLang === 'ja' ? '' : '/' + currentLang;
-        
-        // Update logo link
-        const logoLink = document.querySelector('[data-nav-logo]');
-        if (logoLink) {
-            logoLink.href = prefix + '/';
+            // Other languages need lang parameter
+            url.searchParams.set('lang', targetLang);
         }
         
-        // Update navigation links
-        const navLinks = {
-            '[data-nav-portfolio]': '/portfolio/',
-            '[data-nav-blog]': '/blog/posts/',
-            '[data-nav-about]': '/about/',
-            '[data-nav-contact]': '/contact/'
-        };
-        
-        Object.entries(navLinks).forEach(([selector, path]) => {
-            const link = document.querySelector(selector);
-            if (link) {
-                link.href = prefix + path;
-            }
-        });
+        return url.toString();
     }
     
     // Initialize language display
     function initializeLanguage() {
         const currentLang = getCurrentLanguage();
-        const savedLang = getSavedLanguage();
         
         // Save current language
         saveLanguagePreference(currentLang);
@@ -144,7 +109,9 @@
                     
                     // Add click handler to save preference
                     option.addEventListener('click', function(e) {
+                        e.preventDefault();
                         saveLanguagePreference(code);
+                        window.location.href = buildLanguageUrl(code);
                     });
                 }
                 
@@ -152,29 +119,10 @@
             });
         }
         
-        // Update navigation links
-        updateNavigationLinks();
-    }
-    
-    // Check if user should be redirected based on saved preference
-    function checkLanguageRedirect() {
-        const currentLang = getCurrentLanguage();
-        const savedLang = getSavedLanguage();
-        
-        // Only redirect on homepage visits
-        if (window.location.pathname === '/' || 
-            window.location.pathname === '/en/' || 
-            window.location.pathname === '/ko/') {
-            
-            if (savedLang !== currentLang) {
-                // User has a different language preference
-                const redirectUrl = buildLanguageUrl(savedLang);
-                if (redirectUrl !== window.location.pathname) {
-                    // Optional: Uncomment to enable auto-redirect
-                    // window.location.href = redirectUrl;
-                }
-            }
-        }
+        // Dispatch language event for other components
+        window.dispatchEvent(new CustomEvent('languageDetected', {
+            detail: { language: currentLang }
+        }));
     }
     
     // Mobile menu toggle
@@ -206,12 +154,11 @@
     
     // Initialize everything
     initializeLanguage();
-    checkLanguageRedirect();
     
     // Expose language info globally
     window.siteLanguage = {
         current: getCurrentLanguage(),
-        saved: getSavedLanguage(),
+        saved: localStorage.getItem('preferredLanguage') || 'ja',
         available: LANGUAGES
     };
 })();

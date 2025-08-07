@@ -11,18 +11,27 @@ class LanguageManager {
     }
     
     /**
-     * Detect current language from URL
+     * Detect current language from URL parameter or localStorage
      */
     detectCurrentLanguage() {
+        // Check URL parameter first
+        const urlParams = new URLSearchParams(window.location.search);
+        const urlLang = urlParams.get('lang');
+        
+        if (urlLang && ['ja', 'en', 'ko'].includes(urlLang)) {
+            // Save to localStorage if from URL
+            localStorage.setItem('preferredLanguage', urlLang);
+            return urlLang;
+        }
+        
+        // Check localStorage
         const savedLang = localStorage.getItem('preferredLanguage');
+        if (savedLang && ['ja', 'en', 'ko'].includes(savedLang)) {
+            return savedLang;
+        }
         
-        // Check URL for language (for initial page load)
-        const path = window.location.pathname;
-        if (path.startsWith('/en/')) return 'en';
-        if (path.startsWith('/ko/')) return 'ko';
-        
-        // Use saved preference or default to Japanese
-        return savedLang || 'ja';
+        // Default to Japanese
+        return 'ja';
     }
     
     /**
@@ -111,7 +120,7 @@ class LanguageManager {
     }
     
     /**
-     * Change language and redirect if necessary
+     * Change language using URL parameters
      * @param {string} lang - Language code (ja, en, ko)
      */
     changeLanguage(lang) {
@@ -123,33 +132,19 @@ class LanguageManager {
         // Save preference
         localStorage.setItem('preferredLanguage', lang);
         
-        // Get current page path without language prefix
-        let path = window.location.pathname;
-        if (path.startsWith('/en/')) {
-            path = path.replace(/^\/en/, '');
-        } else if (path.startsWith('/ko/')) {
-            path = path.replace(/^\/ko/, '');
-        }
+        // Build new URL with language parameter
+        const url = new URL(window.location.href);
         
-        // Build new URL
-        let newPath = path;
-        if (lang !== 'ja') {
-            newPath = '/' + lang + path;
-        }
-        
-        // Redirect if path changed
-        if (newPath !== window.location.pathname) {
-            window.location.href = newPath;
+        if (lang === 'ja') {
+            // Japanese doesn't need lang parameter
+            url.searchParams.delete('lang');
         } else {
-            // Same page, just update translations
-            this.currentLang = lang;
-            this.applyTranslations();
-            
-            // Dispatch event for other components
-            window.dispatchEvent(new CustomEvent('languageChanged', {
-                detail: { language: lang }
-            }));
+            // Other languages need lang parameter
+            url.searchParams.set('lang', lang);
         }
+        
+        // Redirect to update URL
+        window.location.href = url.toString();
     }
     
     /**
