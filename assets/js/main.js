@@ -15,67 +15,70 @@ async function loadComponent(componentPath, containerId) {
 // Load shared components based on current page
 async function loadSharedComponents() {
     const currentPath = window.location.pathname;
+    const pathParts = currentPath.split('/').filter(Boolean);
     let headerPath, footerPath;
     
-    // Determine which header/footer to load based on current path
+    // Calculate base path based on directory depth
+    let depth = pathParts.length;
+    let basePath = '';
+    
+    // Adjust for language subdirectories
+    if (pathParts[0] === 'en' || pathParts[0] === 'ko') {
+        depth = pathParts.length - 1;
+    }
+    
+    // Generate the correct relative path
+    if (depth === 0) {
+        basePath = '';
+    } else {
+        basePath = '../'.repeat(depth);
+    }
+    
+    // Use unified header for all pages
+    headerPath = basePath + 'components/header.html';
+    
+    // Determine which footer to load based on current path
     if (currentPath.includes('/en/')) {
         // For English pages
         if (currentPath.includes('/legal/')) {
-            headerPath = '../../components/header-legal-en.html';
             footerPath = '../../components/footer-legal-en.html';
         } else if (currentPath.includes('/blog/posts/')) {
-            headerPath = '../../../components/header-blog-posts-en.html';
             footerPath = '../../../components/footer-blog-posts-en.html';
         } else if (currentPath.includes('/portfolio/apps/')) {
-            headerPath = '../../../components/header-page-en.html';
             footerPath = '../../../components/footer-page-en.html';
         } else if (currentPath.includes('/about/') || currentPath.includes('/contact/')) {
-            headerPath = '../../components/header-subpage-en.html';
             footerPath = '../../components/footer-subpage-en.html';
         } else if (currentPath.includes('/portfolio/')) {
-            headerPath = '../components/header-page-en.html';
             footerPath = '../components/footer-page-en.html';
         } else {
-            headerPath = '../components/header-en.html';
             footerPath = '../components/footer-en.html';
         }
     } else if (currentPath.includes('/ko/')) {
         // For Korean pages
         if (currentPath.includes('/legal/')) {
-            headerPath = '../../components/header-legal-ko.html';
             footerPath = '../../components/footer-legal-ko.html';
         } else if (currentPath.includes('/blog/posts/')) {
-            headerPath = '../../../components/header-blog-posts-ko.html';
             footerPath = '../../../components/footer-blog-posts-ko.html';
         } else if (currentPath.includes('/portfolio/apps/')) {
-            headerPath = '../../../components/header-page-ko.html';
             footerPath = '../../../components/footer-page-ko.html';
         } else if (currentPath.includes('/about/') || currentPath.includes('/contact/')) {
-            headerPath = '../../components/header-subpage-ko.html';
             footerPath = '../../components/footer-subpage-ko.html';
         } else if (currentPath.includes('/portfolio/')) {
-            headerPath = '../components/header-page-ko.html';
             footerPath = '../components/footer-page-ko.html';
         } else {
-            headerPath = '../components/header-ko.html';
             footerPath = '../components/footer-ko.html';
         }
     } else {
         // Default to Japanese
         if (currentPath.includes('/legal/')) {
-            headerPath = '../components/header-legal.html';
             footerPath = '../components/footer-legal.html';
         } else if (currentPath.includes('/blog/posts/')) {
-            headerPath = '../../components/header-blog-posts.html';
             footerPath = '../../components/footer-blog-posts.html';
         } else if (currentPath.includes('/portfolio/apps/')) {
-            headerPath = '../../components/header-page.html';
             footerPath = '../../components/footer-page.html';
         } else if (currentPath.includes('/about/') || currentPath.includes('/contact/') || currentPath.includes('/portfolio/')) {
-            headerPath = '../components/header-page.html';
             footerPath = '../components/footer-page.html';
         } else {
-            headerPath = 'components/header.html';
             footerPath = 'components/footer.html';
         }
     }
