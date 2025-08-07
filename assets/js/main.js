@@ -6,6 +6,18 @@ async function loadComponent(componentPath, containerId) {
         const container = document.getElementById(containerId);
         if (container) {
             container.innerHTML = html;
+            
+            // Execute scripts in the loaded content
+            const scripts = container.querySelectorAll('script');
+            scripts.forEach(oldScript => {
+                const newScript = document.createElement('script');
+                if (oldScript.src) {
+                    newScript.src = oldScript.src;
+                } else {
+                    newScript.textContent = oldScript.textContent;
+                }
+                oldScript.parentNode.replaceChild(newScript, oldScript);
+            });
         }
     } catch (error) {
         console.error('Error loading component:', error);
