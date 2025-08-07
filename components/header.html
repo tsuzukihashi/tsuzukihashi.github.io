@@ -33,48 +33,57 @@
     const fullPath = window.location.pathname;
     const pathParts = fullPath.split('/').filter(Boolean);
     
-    // Detect language and get page path
+    // Remove trailing 'index.html' if present
+    if (pathParts[pathParts.length - 1] === 'index.html') {
+        pathParts.pop();
+    }
+    
+    // Detect language
     let currentLang = 'ja';
-    let pagePath = [...pathParts]; // Copy array
+    let isLangSubdir = false;
     
     if (pathParts[0] === 'en') {
         currentLang = 'en';
-        pagePath.shift(); // Remove language prefix
+        isLangSubdir = true;
     } else if (pathParts[0] === 'ko') {
         currentLang = 'ko';
+        isLangSubdir = true;
+    }
+    
+    // Get page path without language prefix
+    let pagePath = [...pathParts];
+    if (isLangSubdir) {
         pagePath.shift(); // Remove language prefix
     }
     
     // Calculate base path to root
     let basePath = '';
-    const totalDepth = pathParts.length;
+    const depth = pathParts.length;
     
-    if (totalDepth === 0) {
-        // We're at root
-        basePath = '';
+    if (depth === 0) {
+        basePath = './';
     } else {
-        // Calculate '../' based on depth
-        basePath = '../'.repeat(totalDepth);
+        basePath = '../'.repeat(depth);
     }
     
     // Helper function to build correct path
-    function buildPath(targetLang, pagePathArray) {
+    function buildPath(targetLang, pageSegments) {
         let result = basePath;
         
-        // Add language prefix if not Japanese
+        // Add language directory if not Japanese
         if (targetLang !== 'ja') {
             result += targetLang + '/';
         }
         
-        // Add page path
-        if (pagePathArray.length > 0) {
-            result += pagePathArray.join('/') + '/';
+        // Add page segments
+        if (pageSegments && pageSegments.length > 0) {
+            result += pageSegments.join('/') + '/';
         }
         
         return result;
     }
     
-    // Set logo link
+    // Set logo link (always goes to language root)
     const logoLink = document.querySelector('[data-base-path]');
     if (logoLink) {
         logoLink.href = buildPath(currentLang, []);
@@ -120,11 +129,12 @@
             option.className = 'lang-option';
             
             if (lang.code === currentLang) {
+                // Current language - not clickable
                 option.className += ' active';
                 option.href = '#';
                 option.innerHTML = `${lang.name} <span class="lang-check">✓</span>`;
             } else {
-                // Build path for language switch
+                // Build path for language switch (maintain current page)
                 option.href = buildPath(lang.code, pagePath);
                 option.textContent = lang.name;
             }
@@ -159,5 +169,6 @@
             langDropdown.classList.remove('active');
         });
     }
+    
 })();
 </script>
