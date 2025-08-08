@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プライバシーポリシー - Ryo Tsuzukihashi</title>
+    <meta name="description" content="續橋涼が提供するアプリケーション及びサービスのプライバシーポリシー">
+    <meta name="robots" content="noindex, follow">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/memories-tech.css">
+    <link rel="stylesheet" href="../assets/css/legal.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="../favicon.ico">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERPQ1EGLH');
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">Ryo Tsuzukihashi</a>
+            <div class="nav-menu" id="navMenu">
+                <a href="/portfolio/" class="nav-link">Portfolio</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/blog/" class="nav-link">Blog</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Legal Content -->
+    <section class="legal-hero">
+        <div class="container">
+            <h1 class="legal-title">プライバシーポリシー</h1>
+            <p class="legal-subtitle">Privacy Policy</p>
+            <p class="legal-update">最終更新日: 2025年1月14日</p>
+        </div>
+    </section>
+
+    <section class="legal-content">
+        <div class="container">
+            <div class="legal-wrapper">
+                <!-- プレースホルダー -->
+                <article class="legal-section">
+                    <h2>プライバシーポリシー</h2>
+                    <p>
+                        續橋涼（以下「当方」といいます。）は、本アプリケーションにおいて提供するサービス（以下「本サービス」といいます。）における、ユーザーの個人情報の取扱いについて、以下のとおりプライバシーポリシー（以下「本ポリシー」といいます。）を定めます。
+                    </p>
+                </article>
+
+                <article class="legal-section">
+                    <div class="notice-box">
+                        <p style="text-align: center; font-size: 1.125rem; color: var(--color-gray);">
+                            詳細なプライバシーポリシーの内容については現在準備中です。<br>
+                            お問い合わせは下記メールアドレスまでお願いいたします。
+                        </p>
+                    </div>
+                </article>
+
+                <!-- お問い合わせ -->
+                <article class="legal-section">
+                    <h2>お問い合わせ</h2>
+                    <p>本ポリシーに関するお問い合わせは、下記の窓口までお願いいたします。</p>
+                    <div class="contact-info">
+                        <p>續橋涼</p>
+                        <p>メールアドレス: tsuzuki817@gmail.com</p>
+                    </div>
+                </article>
+
+                <!-- Navigation -->
+                <div class="legal-nav">
+                    <a href="/legal/terms-of-service.html" class="legal-nav-link">← 利用規約</a>
+                    <a href="/legal/commercial-law.html" class="legal-nav-link">特定商取引法に基づく表記 →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: var(--color-charcoal); color: var(--color-white); padding: 3rem 0; text-align: center;">
+        <div class="container">
+            <p style="color: var(--color-white); opacity: 0.8; margin-bottom: 1rem;">
+                © 2025 Ryo Tsuzukihashi. All rights reserved.
+            </p>
+            <div style="margin-top: 2rem;">
+                <a href="/legal/privacy-policy.html" style="color: var(--color-white); opacity: 0.6; margin: 0 1rem; text-decoration: none; font-weight: 600;">プライバシーポリシー</a>
+                <a href="/legal/terms-of-service.html" style="color: var(--color-white); opacity: 0.6; margin: 0 1rem; text-decoration: none;">利用規約</a>
+                <a href="/legal/commercial-law.html" style="color: var(--color-white); opacity: 0.6; margin: 0 1rem; text-decoration: none;">特定商取引法</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Navigation scroll effect
+        window.addEventListener('scroll', function() {
+            const nav = document.getElementById('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile menu toggle
+        const navToggle = document.getElementById('navToggle');
+        const navMenu = document.getElementById('navMenu');
+        
+        navToggle.addEventListener('click', function() {
+            navToggle.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
