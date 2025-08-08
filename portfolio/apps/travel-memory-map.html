@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旅行思い出マップ - Ryo Tsuzukihashi | 写真を地図に記録する革新的な旅行アプリ</title>
+    <meta name="description" content="写真をパズルのように都道府県の形に切り取って地図に記録。8万ダウンロード突破、あなたの旅の軌跡が美しい思い出の地図になる革新的な旅行記録アプリ。">
+    <meta name="keywords" content="旅行思い出マップ, 旅行アプリ, 写真地図, 都道府県, iOS, 續橋涼">
+    
+    <!-- OGP -->
+    <meta property="og:title" content="旅行思い出マップ - 写真を地図に記録する革新的アプリ">
+    <meta property="og:description" content="写真をパズルのように切り取って地図に記録。あなたの旅の軌跡が美しい思い出の地図になる。">
+    <meta property="og:image" content="/assets/images/apps/travel-memory-map-og.jpg">
+    <meta property="og:url" content="https://tsuzuki817.com/portfolio/apps/travel-memory-map.html">
+    <meta property="og:type" content="article">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../assets/css/memories-tech.css">
+    <link rel="stylesheet" href="../../assets/css/app-detail.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="../../favicon.ico">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERPQ1EGLH');
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">tsuzuki817</a>
+            <div class="nav-menu" id="navMenu">
+                <a href="/portfolio/" class="nav-link active">Portfolio</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/blog/" class="nav-link">Blog</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- App Hero Section -->
+    <section class="app-hero">
+        <div class="memory-shapes">
+            <div class="memory-shape"></div>
+            <div class="memory-shape"></div>
+            <div class="memory-shape"></div>
+        </div>
+        
+        <div class="container">
+            <div class="app-hero-content">
+                <div class="app-icon-wrapper">
+                    <img src="../../assets/images/icon/travel_memory_map.webp" alt="旅行思い出マップ" class="app-icon">
+                    <div class="app-icon-badge">代表作</div>
+                </div>
+                
+                <h1 class="app-title">旅行思い出マップ</h1>
+                <p class="app-tagline">写真をパズルのように切り取って、日本地図に思い出を記録</p>
+                
+                <div class="app-badges">
+                    <span class="badge badge-downloads">80,000+ Downloads</span>
+                    <span class="badge badge-rating">★4.7 Rating</span>
+                    <span class="badge badge-category">Travel & Memory</span>
+                </div>
+                
+                <div class="app-cta">
+                    <a href="https://apps.apple.com/app/id1537919438" target="_blank" class="btn btn-primary">
+                        <svg class="apple-icon" viewBox="0 0 24 24" width="20" height="20">
+                            <path fill="currentColor" d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.09997 22C7.78997 22.05 6.79997 20.68 5.95997 19.47C4.24997 17 2.93997 12.45 4.69997 9.39C5.56997 7.87 7.12997 6.91 8.81997 6.88C10.1 6.86 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/>
+                        </svg>
+                        App Storeで見る
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inspiration Story Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Story</span>
+                <h2 class="section-title">開発のきっかけ</h2>
+            </div>
+            
+            <div class="story-content">
+                <div class="story-quote">
+                    <blockquote>
+                        "印刷した写真を都道府県の形に切り取って、日本地図に貼り付けた旅の思い出ポスター。<br>
+                        SNSで見かけたこの素晴らしいアイデアに感動しました。"
+                    </blockquote>
+                </div>
+                
+                <p class="story-text">
+                    2021年2月、私はSNSである投稿を目にしました。それは、旅行で撮った写真を印刷し、訪れた都道府県の形に切り取って日本地図に貼り付けた、まるでパズルのような思い出ポスターでした。
+                </p>
+                
+                <p class="story-text emphasis">
+                    「これをアプリでできたら、もっと気軽に多くの人が楽しめるのではないか」
+                </p>
+                
+                <p class="story-text">
+                    その瞬間、私の中で新しいアプリのアイデアが生まれました。写真を印刷したり、はさみで切ったりする手間なく、スマートフォンで簡単に旅の思い出を地図上に記録できるアプリ。それが「旅行思い出マップ」の始まりでした。
+                </p>
+                
+                <p class="story-text">
+                    8年間の個人開発経験を活かし、このアイデアを形にすることを決意。日本中を旅する人々が、自分だけの思い出の地図を作れるようなアプリを目指しました。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Features</span>
+                <h2 class="section-title">主な機能</h2>
+                <p class="section-description">
+                    旅の思い出を、今までにない方法で記録・共有
+                </p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📍</div>
+                    <h3 class="feature-title">都道府県に写真を配置</h3>
+                    <p class="feature-description">
+                        訪れた都道府県の形に写真を自動でトリミング。まるでパズルのピースのように、日本地図を思い出で埋めていきます。
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🗾</div>
+                    <h3 class="feature-title">制覇率の可視化</h3>
+                    <p class="feature-description">
+                        47都道府県のうち、何県訪れたかを一目で確認。制覇率がパーセンテージで表示され、旅のモチベーションにつながります。
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📸</div>
+                    <h3 class="feature-title">複数写真の管理</h3>
+                    <p class="feature-description">
+                        一つの都道府県に複数の写真を保存可能。季節ごとの風景や、訪れるたびの思い出を重ねて記録できます。
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📝</div>
+                    <h3 class="feature-title">思い出メモ</h3>
+                    <p class="feature-description">
+                        写真と一緒にメモを残せる機能。訪れた日付、一緒に行った人、感想など、大切な記憶を文字でも保存。
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3 class="feature-title">カスタマイズ可能な地図</h3>
+                    <p class="feature-description">
+                        地図の色やスタイルをカスタマイズ。自分好みの思い出マップを作成できます。
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📤</div>
+                    <h3 class="feature-title">SNS共有機能</h3>
+                    <p class="feature-description">
+                        完成した思い出マップを画像として保存・共有。InstagramやTwitterで旅の記録をシェアできます。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Technology</span>
+                <h2 class="section-title">技術的な挑戦</h2>
+            </div>
+            
+            <div class="tech-content">
+                <div class="tech-card">
+                    <h3 class="tech-title">
+                        <span class="tech-icon">🗺️</span>
+                        高精度な地図描画
+                    </h3>
+                    <p class="tech-description">
+                        都道府県の複雑な形状を正確に再現するため、ベクターデータを活用した独自の描画エンジンを開発。滑らかで美しい地図表現を実現しました。
+                    </p>
+                </div>
+                
+                <div class="tech-card">
+                    <h3 class="tech-title">
+                        <span class="tech-icon">✂️</span>
+                        リアルタイム画像トリミング
+                    </h3>
+                    <p class="tech-description">
+                        写真を都道府県の形に自動でトリミングする機能は、Core Graphicsを駆使して実装。どんな写真でも美しくフィットさせる調整アルゴリズムを開発しました。
+                    </p>
+                </div>
+                
+                <div class="tech-card">
+                    <h3 class="tech-title">
+                        <span class="tech-icon">💾</span>
+                        効率的なデータ管理
+                    </h3>
+                    <p class="tech-description">
+                        Core Dataを使用して、大量の写真とメタデータを効率的に管理。オフラインでも快適に使用できる設計を実現しました。
+                    </p>
+                </div>
+                
+                <div class="tech-card">
+                    <h3 class="tech-title">
+                        <span class="tech-icon">🎯</span>
+                        直感的なUI/UX
+                    </h3>
+                    <p class="tech-description">
+                        SwiftUIを活用し、スムーズなアニメーションと直感的な操作性を実現。初めての方でも迷わず使えるインターフェースを追求しました。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Achievements</span>
+                <h2 class="section-title">実績と評価</h2>
+            </div>
+            
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-number">80,000+</div>
+                    <div class="achievement-label">累計ダウンロード</div>
+                    <p class="achievement-description">
+                        リリースから3年で8万人以上のユーザーに愛用されています
+                    </p>
+                </div>
+                
+                <div class="achievement-card">
+                    <div class="achievement-number">★4.7</div>
+                    <div class="achievement-label">App Store評価</div>
+                    <p class="achievement-description">
+                        500件以上のレビューで高評価を維持
+                    </p>
+                </div>
+                
+                <div class="achievement-card">
+                    <div class="achievement-number">47都道府県</div>
+                    <div class="achievement-label">完全制覇ユーザー</div>
+                    <p class="achievement-description">
+                        100人以上のユーザーが全都道府県を制覇
+                    </p>
+                </div>
+                
+                <div class="achievement-card">
+                    <div class="achievement-number">#1</div>
+                    <div class="achievement-label">旅行カテゴリ</div>
+                    <p class="achievement-description">
+                        App Store旅行カテゴリで何度もランキング上位を獲得
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- User Reviews Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Reviews</span>
+                <h2 class="section-title">ユーザーの声</h2>
+            </div>
+            
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-rating">★★★★★</div>
+                    <h3 class="review-title">旅行が楽しくなった！</h3>
+                    <p class="review-text">
+                        「このアプリのおかげで、旅行の楽しみが倍増しました。地図が埋まっていくのを見るのが楽しくて、まだ行ったことのない県に行きたくなります。」
+                    </p>
+                    <p class="review-author">- 旅行好きさん</p>
+                </div>
+                
+                <div class="review-card">
+                    <div class="review-rating">★★★★★</div>
+                    <h3 class="review-title">思い出の整理に最適</h3>
+                    <p class="review-text">
+                        「今まで撮りっぱなしだった旅行写真が、このアプリで素敵な思い出マップになりました。家族との旅行の記録として大切に使っています。」
+                    </p>
+                    <p class="review-author">- ファミリー旅行者</p>
+                </div>
+                
+                <div class="review-card">
+                    <div class="review-rating">★★★★★</div>
+                    <h3 class="review-title">デザインが素晴らしい</h3>
+                    <p class="review-text">
+                        「シンプルで美しいデザインが気に入っています。操作も直感的で、誰でも簡単に使えるのが良いですね。」
+                    </p>
+                    <p class="review-author">- デザイン好きさん</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Developer Message Section -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="developer-message">
+                <h2 class="section-title">開発者より</h2>
+                
+                <div class="message-content">
+                    <p>
+                        旅行思い出マップは、私の「思い出×テクノロジー」というテーマを最も体現したアプリです。
+                    </p>
+                    
+                    <p>
+                        SNSで見かけた一枚の投稿から始まったこのプロジェクトは、今では8万人以上の方々の旅の思い出を記録する大切なツールとなりました。
+                    </p>
+                    
+                    <p class="emphasis">
+                        これからも、皆様の大切な思い出を美しく残すお手伝いができるよう、アップデートを続けていきます。
+                    </p>
+                    
+                    <p>
+                        日本中を旅して、あなただけの思い出マップを完成させてください。その旅路を、このアプリが彩り豊かに記録します。
+                    </p>
+                    
+                    <div class="signature">
+                        <p>2025年1月</p>
+                        <p class="signature-name">續橋 涼</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download CTA Section -->
+    <section class="section">
+        <div class="container">
+            <div class="download-cta">
+                <h2 class="section-title">今すぐダウンロード</h2>
+                <p class="section-description">
+                    あなたの旅の思い出を、美しい地図に変えてみませんか？
+                </p>
+                
+                <div class="app-store-button">
+                    <a href="https://apps.apple.com/app/id1537919438" target="_blank" class="btn btn-primary btn-large">
+                        <svg class="apple-icon" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="currentColor" d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.09997 22C7.78997 22.05 6.79997 20.68 5.95997 19.47C4.24997 17 2.93997 12.45 4.69997 9.39C5.56997 7.87 7.12997 6.91 8.81997 6.88C10.1 6.86 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/>
+                        </svg>
+                        App Storeで無料ダウンロード
+                    </a>
+                </div>
+                
+                <p class="download-note">
+                    iOS 14.0以降対応 | 日本語対応
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Apps Section -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">その他のアプリ</h2>
+                <p class="section-description">
+                    思い出とテクノロジーを融合した、他の作品もご覧ください
+                </p>
+            </div>
+            
+            <div class="related-apps">
+                <a href="/portfolio/apps/birthday-moon.html" class="related-app-card">
+                    <img src="../../assets/images/icon/birthday_moon.webp" alt="Birthday Moon" class="related-app-icon">
+                    <div class="related-app-info">
+                        <h3>Birthday Moon</h3>
+                        <p>生まれた日の月の形を永遠に</p>
+                    </div>
+                </a>
+                
+                <a href="/portfolio/apps/fuchidori.html" class="related-app-card">
+                    <img src="../../assets/images/icon/fuchidori.webp" alt="フチドリ！" class="related-app-icon">
+                    <div class="related-app-info">
+                        <h3>フチドリ！</h3>
+                        <p>写真を指一本で切り抜き</p>
+                    </div>
+                </a>
+                
+                <a href="/portfolio/" class="related-app-card">
+                    <div class="related-app-icon more-apps">
+                        <span>+24</span>
+                    </div>
+                    <div class="related-app-info">
+                        <h3>すべてのアプリ</h3>
+                        <p>ポートフォリオを見る</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: var(--color-charcoal); color: var(--color-white); padding: 3rem 0; text-align: center;">
+        <div class="container">
+            <p style="color: var(--color-white); opacity: 0.8; margin-bottom: 1rem;">
+                © 2025 Ryo Tsuzukihashi. All rights reserved.
+            </p>
+            <p style="color: var(--color-white); opacity: 0.6; font-size: 0.875rem;">
+                Crafting memories with technology since 2017.
+            </p>
+            <div style="margin-top: 2rem;">
+                <a href="/legal/privacy-policy.html" style="color: var(--color-white); opacity: 0.6; margin: 0 1rem; text-decoration: none;">プライバシーポリシー</a>
+                <a href="/legal/terms-of-service.html" style="color: var(--color-white); opacity: 0.6; margin: 0 1rem; text-decoration: none;">利用規約</a>
+                <a href="/legal/commercial-law.html" style="color: var(--color-white); opacity: 0.6; margin: 0 1rem; text-decoration: none;">特定商取引法</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Navigation scroll effect
+        window.addEventListener('scroll', function() {
+            const nav = document.getElementById('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile menu toggle
+        const navToggle = document.getElementById('navToggle');
+        const navMenu = document.getElementById('navMenu');
+        
+        navToggle.addEventListener('click', function() {
+            navToggle.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Animate elements on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animated');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements
+        document.querySelectorAll('.feature-card, .tech-card, .achievement-card, .review-card').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

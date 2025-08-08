@@ -1,0 +1,547 @@
+/* ================================
+   App Detail Page Styles
+   Extends memories-tech.css
+   ================================ */
+
+/* ========== App Hero Section ========== */
+.app-hero {
+  min-height: 80vh;
+  padding-top: calc(var(--space-2xl) + 80px);
+  padding-bottom: var(--space-xl);
+  position: relative;
+  background: var(--gradient-memories);
+  display: flex;
+  align-items: center;
+}
+
+.app-hero-content {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* App Icon */
+.app-icon-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 2rem;
+  animation: slideDown 0.8s ease;
+}
+
+.app-icon {
+  width: 150px;
+  height: 150px;
+  border-radius: 30px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  border: 3px solid var(--color-white);
+}
+
+.app-icon-badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: var(--gradient-sunset);
+  color: var(--color-white);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+  animation: pulse 2s ease infinite;
+}
+
+.app-title {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 800;
+  color: var(--color-charcoal);
+  margin-bottom: 1rem;
+  animation: slideUp 0.8s ease 0.2s both;
+}
+
+.app-tagline {
+  font-size: 1.25rem;
+  color: var(--color-gray);
+  margin-bottom: 2rem;
+  animation: slideUp 0.8s ease 0.3s both;
+}
+
+.app-badges {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  animation: slideUp 0.8s ease 0.4s both;
+}
+
+.badge {
+  padding: 0.5rem 1.5rem;
+  background: var(--color-white);
+  border-radius: 50px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.badge-downloads {
+  color: var(--color-sunset);
+}
+
+.badge-rating {
+  color: var(--color-golden);
+}
+
+.badge-category {
+  color: var(--color-ocean);
+}
+
+.app-cta {
+  animation: slideUp 0.8s ease 0.5s both;
+}
+
+.apple-icon {
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+/* ========== Story Section ========== */
+.story-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.story-quote {
+  background: var(--color-white);
+  padding: 2rem;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+.story-quote blockquote {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: var(--color-charcoal);
+  font-style: italic;
+  margin: 0;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.story-quote blockquote::before {
+  content: '"';
+  position: absolute;
+  left: 0;
+  top: -10px;
+  font-size: 3rem;
+  color: var(--color-sunset);
+  font-weight: 700;
+}
+
+.story-text {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: var(--color-gray);
+  margin-bottom: 1.5rem;
+}
+
+.story-text.emphasis {
+  font-size: 1.25rem;
+  color: var(--color-charcoal);
+  font-weight: 600;
+  padding: 1.5rem;
+  background: var(--gradient-memories);
+  border-radius: 20px;
+  text-align: center;
+}
+
+/* ========== Features Grid ========== */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  background: var(--color-white);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  transition: var(--transition-normal);
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.feature-card.animated {
+  opacity: 1;
+  transform: translateY(0);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.feature-title {
+  font-size: 1.25rem;
+  color: var(--color-charcoal);
+  margin-bottom: 0.75rem;
+}
+
+.feature-description {
+  color: var(--color-gray);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ========== Technology Section ========== */
+.tech-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.tech-card {
+  background: var(--color-white);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  transition: var(--transition-normal);
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+.tech-card.animated {
+  opacity: 1;
+  transform: translateX(0);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.tech-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
+}
+
+.tech-title {
+  font-size: 1.25rem;
+  color: var(--color-charcoal);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.tech-icon {
+  font-size: 1.5rem;
+}
+
+.tech-description {
+  color: var(--color-gray);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ========== Achievements Grid ========== */
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.achievement-card {
+  text-align: center;
+  padding: 2rem;
+  background: var(--color-white);
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  transition: var(--transition-normal);
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.achievement-card.animated {
+  opacity: 1;
+  transform: scale(1);
+  animation: zoomIn 0.6s ease forwards;
+}
+
+.achievement-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+}
+
+.achievement-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+  background: var(--gradient-sunset);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.5rem;
+}
+
+.achievement-label {
+  font-size: 1.125rem;
+  color: var(--color-charcoal);
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.achievement-description {
+  color: var(--color-gray);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ========== Reviews Section ========== */
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.review-card {
+  background: var(--color-white);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  transition: var(--transition-normal);
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
+}
+
+.review-rating {
+  color: var(--color-golden);
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.review-title {
+  font-size: 1.125rem;
+  color: var(--color-charcoal);
+  margin-bottom: 0.75rem;
+}
+
+.review-text {
+  color: var(--color-gray);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.review-author {
+  color: var(--color-ocean);
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* ========== Developer Message ========== */
+.developer-message {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.developer-message .message-content {
+  background: var(--color-white);
+  padding: 3rem;
+  border-radius: 30px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+}
+
+.developer-message p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: var(--color-gray);
+  margin-bottom: 1.5rem;
+}
+
+.developer-message p.emphasis {
+  font-size: 1.25rem;
+  color: var(--color-charcoal);
+  font-weight: 600;
+  padding: 1.5rem;
+  background: var(--gradient-memories);
+  border-radius: 20px;
+  margin: 2rem 0;
+}
+
+.signature {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--color-light-gray);
+}
+
+.signature-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-charcoal);
+  margin-top: 0.5rem;
+}
+
+/* ========== Download CTA ========== */
+.download-cta {
+  text-align: center;
+  padding: 3rem;
+  background: var(--color-white);
+  border-radius: 30px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.app-store-button {
+  margin: 2rem 0;
+}
+
+.btn-large {
+  padding: 1rem 2.5rem;
+  font-size: 1.125rem;
+}
+
+.download-note {
+  color: var(--color-gray);
+  font-size: 0.875rem;
+  margin-top: 1rem;
+}
+
+/* ========== Related Apps ========== */
+.related-apps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.related-app-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: var(--color-white);
+  border-radius: 20px;
+  text-decoration: none;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  transition: var(--transition-normal);
+}
+
+.related-app-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
+}
+
+.related-app-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  flex-shrink: 0;
+}
+
+.related-app-icon.more-apps {
+  background: var(--gradient-sunset);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.related-app-info h3 {
+  font-size: 1.125rem;
+  color: var(--color-charcoal);
+  margin-bottom: 0.25rem;
+}
+
+.related-app-info p {
+  color: var(--color-gray);
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+/* ========== Animations ========== */
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 768px) {
+  .app-icon {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .tech-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .achievements-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .related-apps {
+    grid-template-columns: 1fr;
+  }
+  
+  .developer-message .message-content {
+    padding: 2rem 1.5rem;
+  }
+  
+  .download-cta {
+    padding: 2rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .achievements-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .app-badges {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .badge {
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+  }
+}
