@@ -457,6 +457,120 @@
   margin-top: 0.5rem;
 }
 
+/* ========== History Section ========== */
+.app-history-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.history-card {
+  background: var(--color-white);
+  padding: 2.5rem;
+  border-radius: 25px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.08);
+  position: relative;
+  overflow: hidden;
+  transition: var(--transition-normal);
+  text-align: center;
+}
+
+.history-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 200%;
+  height: 200%;
+  background: var(--gradient-memories);
+  opacity: 0.03;
+  transform: rotate(45deg);
+  transition: var(--transition-normal);
+}
+
+.history-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+}
+
+.history-card:hover::before {
+  opacity: 0.06;
+}
+
+.history-card-icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+  animation: float 3s ease-in-out infinite;
+}
+
+.history-card:nth-child(2) .history-card-icon {
+  animation-delay: 0.5s;
+}
+
+.history-card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-charcoal);
+  margin-bottom: 1rem;
+}
+
+.history-card-description {
+  color: var(--color-gray);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.history-card-count {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: var(--gradient-sunset);
+  color: var(--color-white);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 1.125rem;
+  box-shadow: 0 5px 15px rgba(255, 107, 107, 0.3);
+}
+
+.history-card-apps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.history-app-tag {
+  padding: 0.4rem 0.8rem;
+  background: var(--gradient-ocean);
+  color: var(--color-white);
+  border-radius: 15px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  box-shadow: 0 3px 10px rgba(78, 205, 196, 0.2);
+  transition: var(--transition-normal);
+}
+
+.history-app-tag:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(78, 205, 196, 0.3);
+}
+
+/* Animation for floating effect */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
 /* ========== Connect Section ========== */
 .connect-links {
   display: grid;
@@ -545,6 +659,20 @@
   
   .achievements-list {
     grid-template-columns: 1fr;
+  }
+  
+  .app-history-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .history-card {
+    padding: 2rem 1.5rem;
+  }
+  
+  .history-card-count {
+    position: static;
+    display: inline-block;
+    margin-top: 1rem;
   }
   
   .connect-links {
