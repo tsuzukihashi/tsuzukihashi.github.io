@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【開発秘話】圏外を、安心に。僕がオフラインSNS「RelayChat」をたった一人で作り上げた物語 - Blog | Ryo Tsuzukihashi</title>
+    <meta name="description" content="個人開発でインターネットも携帯電波も一切不要なオフラインメッセージアプリ「RelayChat」を開発した物語。技術的な挑戦とApple審査との闘いの全記録。">
+    <meta name="keywords" content="RelayChat, オフライン通信, 個人開発, P2P, メッシュネットワーク, Bluetooth, iOS開発">
+    
+    <!-- OGP -->
+    <meta property="og:title" content="【開発秘話】圏外を、安心に。僕がオフラインSNS「RelayChat」をたった一人で作り上げた物語">
+    <meta property="og:description" content="個人開発でインターネットも携帯電波も一切不要なオフラインメッセージアプリ「RelayChat」を開発した物語">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://tsuzuki817.com/blog/posts/relaychat-development-story.html">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERPQ1EGLH');
+    </script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <style>
+        /* Blog Post Specific Styles */
+        .blog-post {
+            padding: 120px 0 var(--spacing-3xl);
+        }
+        
+        .post-header {
+            max-width: 800px;
+            margin: 0 auto var(--spacing-3xl);
+            text-align: center;
+            padding: 0 var(--spacing-lg);
+        }
+        
+        .post-meta {
+            display: flex;
+            justify-content: center;
+            gap: var(--spacing-lg);
+            margin-bottom: var(--spacing-lg);
+            color: var(--color-text-light);
+            font-size: var(--font-size-sm);
+        }
+        
+        .post-title {
+            font-size: var(--font-size-4xl);
+            font-weight: 300;
+            color: var(--color-primary);
+            margin-bottom: var(--spacing-lg);
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+        }
+        
+        .post-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-lg);
+            line-height: 1.8;
+            color: var(--color-text);
+        }
+        
+        .post-content h1 {
+            font-size: var(--font-size-3xl);
+            font-weight: 500;
+            margin: var(--spacing-3xl) 0 var(--spacing-lg);
+            color: var(--color-primary);
+            padding-bottom: var(--spacing-sm);
+            border-bottom: 1px solid var(--color-border);
+        }
+        
+        .post-content h2 {
+            font-size: var(--font-size-2xl);
+            font-weight: 500;
+            margin: var(--spacing-2xl) 0 var(--spacing-md);
+            color: var(--color-primary);
+        }
+        
+        .post-content h3 {
+            font-size: var(--font-size-xl);
+            font-weight: 500;
+            margin: var(--spacing-xl) 0 var(--spacing-md);
+            color: var(--color-primary);
+        }
+        
+        .post-content p {
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .post-content ul,
+        .post-content ol {
+            margin: var(--spacing-md) 0 var(--spacing-lg) var(--spacing-lg);
+        }
+        
+        .post-content li {
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .post-content a {
+            color: var(--color-primary);
+            text-decoration: underline;
+            transition: var(--transition);
+        }
+        
+        .post-content a:hover {
+            color: var(--color-secondary);
+        }
+        
+        .post-content blockquote {
+            border-left: 4px solid var(--color-primary);
+            padding-left: var(--spacing-lg);
+            margin: var(--spacing-lg) 0;
+            color: var(--color-secondary);
+            font-style: italic;
+        }
+        
+        .post-content code {
+            background: var(--color-accent);
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'SF Mono', Monaco, 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        
+        .post-content pre {
+            background: var(--color-accent);
+            padding: var(--spacing-md);
+            border-radius: var(--border-radius);
+            overflow-x: auto;
+            margin: var(--spacing-lg) 0;
+        }
+        
+        .post-content pre code {
+            background: transparent;
+            padding: 0;
+        }
+        
+        .explanation-box {
+            background: var(--color-accent);
+            border-left: 4px solid var(--color-primary);
+            padding: var(--spacing-md);
+            margin: var(--spacing-lg) 0;
+            border-radius: var(--border-radius);
+        }
+        
+        .explanation-box strong {
+            display: block;
+            margin-bottom: var(--spacing-xs);
+            color: var(--color-primary);
+        }
+        
+        .post-navigation {
+            max-width: 800px;
+            margin: var(--spacing-3xl) auto 0;
+            padding: var(--spacing-xl) var(--spacing-lg) 0;
+            border-top: 1px solid var(--color-border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-link-wrapper {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            text-decoration: none;
+            color: var(--color-text);
+            transition: var(--transition);
+        }
+        
+        .nav-link-wrapper:hover {
+            color: var(--color-primary);
+        }
+        
+        @media (max-width: 768px) {
+            .post-title {
+                font-size: var(--font-size-3xl);
+            }
+            
+            .post-content h1 {
+                font-size: var(--font-size-2xl);
+            }
+            
+            .post-content h2 {
+                font-size: var(--font-size-xl);
+            }
+            
+            .post-navigation {
+                flex-direction: column;
+                gap: var(--spacing-lg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">Ryo Tsuzukihashi</a>
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/portfolio/" class="nav-link">Portfolio</a>
+                <a href="/blog/" class="nav-link">Blog</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post -->
+    <article class="blog-post">
+        <header class="post-header">
+            <div class="post-meta">
+                <span class="post-date">2025年1月10日</span>
+                <span class="post-category">開発記録</span>
+                <span class="post-reading-time">15分で読める</span>
+            </div>
+            <h1 class="post-title">【開発秘話】圏外を、安心に。<br>僕がオフラインSNS「RelayChat」を<br>たった一人で作り上げた物語</h1>
+        </header>
+
+        <div class="post-content">
+            <p>
+                この度、個人開発でインターネットも携帯電波も一切不要なオフラインメッセージアプリ「RelayChat」をApp Storeにリリースしました。
+            </p>
+            
+            <p>
+                このアプリは、スマホに必ず入っているBluetoothという無線技術を使い、近くにいる人々と直接つながるP2P（ピアツーピア）方式で動作します。
+            </p>
+            
+            <div class="explanation-box">
+                <strong>【ひとこと解説】P2Pとは？</strong>
+                サーバーを介さず、スマホ同士が直接おしゃべりする方式のこと。LINEのように一度企業のサーバーを経由しないのが特徴です。
+            </div>
+            
+            <p>
+                さらに、ユーザーのスマホが自動的に中継局となり、メッセージをバケツリレーのように遠くまで届ける<strong>「メッシュネットワーク」</strong>という仕組みを形成します。
+            </p>
+            
+            <blockquote>
+                「圏外を、安心に。いつもの会話を、もしもの備えに。」
+            </blockquote>
+            
+            <p>
+                このサブタイトルに込めた想いと、一つのアイデアが形になるまでの技術的な挑戦、そしてAppleとの闘い（笑）の全記録を、ここに書き残したいと思います。
+            </p>
+            
+            <h2>すべての始まりは、夏フェスの「圏外」だった</h2>
+            
+            <p>
+                オンラインであることは、もはや呼吸をするのと同じくらい当たり前の世界です。
+            </p>
+            
+            <p>
+                そんな僕がなぜ「オフライン」なのか。その原体験は、数年前の夏フェスに遡ります。
+            </p>
+            
+            <p>
+                大好きなアーティストのステージ。鳴り響く轟音と、熱狂する数万人のオーディエンス。最高潮の盛り上がりの中、ふと仲間とはぐれてしまったことに気づきました。「あとで合流しよう」とスマホを取り出すも、メッセージが送れません。アンテナは立っているのに、人が多すぎて電波が詰まっているのです。
+            </p>
+            
+            <p>
+                キャンプ場でも同じでした。美しい自然の中で、仲間とリアルタイムに感動を共有したいのに、電波が届かない。スマホはただの重たい板と化していました。
+            </p>
+            
+            <p>
+                「どうして、こんなに近くにいるのに、繋がれないんだろう？」<br>
+                「スマホ同士が、直接話せればいいのに…」
+            </p>
+            
+            <p>
+                この悔しさと純粋な技術的興味から、「Bluetoothを使えば、サーバーなしで会話できるアプリが作れるんじゃないか」というアイデアが、僕の中にぼんやりと芽生えました。それはまだ、具体的な形を持たない、夢物語のようなものでした。
+            </p>
+            
+            <h2>相棒「Claude Code」との出会い、そしてアイデアの進化</h2>
+            
+            <p>
+                その夢物語を現実へと動かす、大きな転機が訪れます。AIアシスタント「Claude Code」の登場です。
+            </p>
+            
+            <p>
+                僕の頭の中にあった漠然としたアイデアをClaude Codeに投げかけると、驚くほど的確な設計案やコードスニペットが返ってくる。まるで、優秀なエンジニアとペアプログラミングをしているような感覚でした。一人では越えられなかったであろう技術的な壁を、次々と乗り越えることができたのです。
+            </p>
+            
+            <p>
+                Claude Codeと壁打ちを繰り返す中で、僕のアイデアはさらに磨かれていきました。
+            </p>
+            
+            <p>
+                そして、決定打となったのが、2024年の能登半島地震のニュースでした。通信網の途絶という現実を目の当たりにし、僕のアプリが持つべき本当の使命に気づかされたのです。
+            </p>
+            
+            <blockquote>
+                「これは、ただの便利ツールじゃない。人の命を救うライフラインになり得るかもしれない」
+            </blockquote>
+            
+            <p>
+                こうして、僕の個人的な原体験から生まれた「圏外問題解決アプリ」のアイデアは、Claude Codeという相棒を得て、<strong>「日常の"楽しい"と、非常時の"安心"を両立させる」</strong>という、RelayChatの確固たるコンセプトへと進化したのでした。
+            </p>
+            
+            <h2>技術選定の分かれ道：「Multipeer」か「Core Bluetooth」か</h2>
+            
+            <p>
+                iOSでP2P通信を実現しようと思った時、多くの開発者が最初に思い浮かべるのは<strong>Multipeer Connectivity Framework</strong>でしょう。
+            </p>
+            
+            <div class="explanation-box">
+                <strong>【ひとこと解説】Multipeer Connectivityとは？</strong>
+                Appleが用意してくれた、いわば「至れり尽くせりの高級リムジン」。デバイスの発見から接続、データ送受信まで、驚くほど簡単に実装できる便利な道具です。
+            </div>
+            
+            <p>
+                しかし、僕が選んだのは、より低レベルで、より気難しい<strong>Core Bluetooth</strong>でした。
+            </p>
+            
+            <div class="explanation-box">
+                <strong>【ひとこと解説】Core Bluetoothとは？</strong>
+                「リムジンを降りて、エンジンから自分で組み立てる」ような、自由度が高い代わりに手のかかる道具。通信のルールをゼロから自分で作れます。
+            </div>
+            
+            <p>
+                なぜ、わざわざ茨の道を選んだのか。理由は、「完全なメッシュネットワーク」と「プライバシー」へのこだわりです。
+            </p>
+            
+            <p>
+                Multipeer Connectivityはあくまで「近くの数台」と繋がるためのもので、デバイスがデバイスを中継して輪を広げていくような、複雑なネットワークを自前で組むには自由度が足りませんでした。
+            </p>
+            
+            <p>
+                また、匿名性とセキュリティの重要性を痛感しました。通信のすべてを自分でコントロールし、将来的に暗号化を実装するなら、GATTのキャラクタリスティック一つひとつを自分で設計できるCore Bluetoothしかない。
+            </p>
+            
+            <div class="explanation-box">
+                <strong>【ひとこと解説】GATTとキャラクタリスティックとは？</strong>
+                GATTは「Bluetooth通信の設計図」のようなもの。キャラクタリスティックは、その設計図の中に書かれる、メッセージやプロフィールといった具体的な「情報の入れ物」のことです。
+            </div>
+            
+            <h2>設計と実装：サーバーレスの壁を越える</h2>
+            
+            <p>
+                RelayChatの心臓部は、すべてのデバイスが<strong>「セントラル（探す側）」と「ペリフェラル（見つけてもらう側）」</strong>の役割を同時に担う、という設計です。
+            </p>
+            
+            <ol>
+                <li>アプリを開くと、自分の存在を知らせるアドバタイズパケットを常に発信し（ペリフェラル）、</li>
+            </ol>
+            
+            <div class="explanation-box">
+                <strong>【ひとこと解説】アドバタイズパケットとは？</strong>
+                「ここにRelayChatユーザーがいるよ！」と叫びながら、自分の存在を知らせるための小さな電波のことです。
+            </div>
+            
+            <ol start="2">
+                <li>同時に、周囲のRelayChatユーザーを探し始めます（セントラル）。</li>
+                <li>ユーザーを見つけると、即座に接続。</li>
+                <li>メッセージを送信すると、接続している全員にブロードキャスト。</li>
+                <li>メッセージを受信すると、自分宛でなくても、接続している他の仲間（送信元を除く）に自動で転送（リレー）する。</li>
+            </ol>
+            
+            <p>
+                このシンプルなフラッディング（Flooding）アルゴリズムにより、ユーザーが多ければ多いほど、通信網がネズミ算式に広がっていく仕組みです。
+            </p>
+            
+            <div class="explanation-box">
+                <strong>【ひとこと解説】フラッディングとは？</strong>
+                受信したメッセージを、自分以外の接続相手全員にコピーして転送する、というシンプルな仕組み。「洪水」のように情報を一気に広げるイメージです。
+            </div>
+            
+            <p>
+                そして、プライバシーを守るため、CryptoKitを使ってエンドツーエンド暗号化を実装しました。
+            </p>
+            
+            <div class="explanation-box">
+                <strong>【ひとこと解説】CryptoKitとエンドツーエンド暗号化とは？</strong>
+                CryptoKitはAppleが提供する「暗号化の道具箱」。エンドツーエンド暗号化は、LINEなどでも使われる「送った人と受け取った人しか中身を読めない」強力な暗号化技術です。
+            </div>
+            
+            <p>
+                近くにいるユーザーグループで一時的な共通鍵を生成・共有し、通信はすべて暗号化。中継するだけのデバイス（人）には、メッセージの中身は一切見えないようにしました。
+            </p>
+            
+            <h2>App Storeの赤い壁：Guideline 1.2との闘い</h2>
+            
+            <p>
+                順調に開発が進み、満を持してAppleにアプリを申請。しかし、数日後に届いたのは、非情なリジェクト通知でした。
+            </p>
+            
+            <blockquote>
+                Guideline 1.2 - Safety - User Generated Content<br>
+                あなたのアプリはユーザーが匿名でコンテンツを投稿できますが、適切な予防措置が講じられていません。
+            </blockquote>
+            
+            <p>
+                サーバーレスの匿名アプリにとって、最も恐れていた指摘です。Appleが要求してきたのは、不適切コンテンツのフィルタリング、報告機能、ブロック機能、そして「24時間以内の開発者による対処」といった、通常はサーバー側で実装する機能のすべてでした。
+            </p>
+            
+            <p>
+                頭を抱えました。サーバーがないのに、どうやってユーザーを追放し、投稿を削除するんだ？
+            </p>
+            
+            <p>
+                しかし、ここで諦めるわけにはいきません。Pocochaでのアジャイル開発の経験が、僕に「やり方を変えて試せばいい」と教えてくれました。
+            </p>
+            
+            <p>
+                僕の出した答えは、「ユーザー自身に管理権限を委譲する」ことでした。
+            </p>
+            
+            <h3>クライアントサイド・フィルター</h3>
+            <p>
+                まず、不適切な単語のリストをアプリ内に持ち、送受信時に自動で伏せ字にする機能を実装しました。
+            </p>
+            
+            <div class="explanation-box">
+                <strong>【ひとこと解説】クライアントサイドとは？</strong>
+                サーバー側ではなく、皆さんのスマホアプリの中で処理を行うことです。
+            </div>
+            
+            <h3>即時報告＆ブロック機能</h3>
+            <p>
+                各メッセージを長押しすると「通報」できるようにしました。通報されたメッセージは、そのユーザーの画面から即座に消えます。同時に、その送信者の匿名IDをデバイス内のブロックリストに記録。以降、その人からのメッセージは二度と表示されません。
+            </p>
+            
+            <h3>Appleへの説明</h3>
+            <p>
+                そして、審査への返信でこう伝えました。<br>
+                「本アプリはP2Pの特性上、中央サーバーでユーザーを追放することはできません。しかし、その代わりに強力なクライアントサイドフィルターと、ユーザー自身が即時に不快な体験を排除できる通報・ブロック機能を設けており、不適切コンテンツの拡散を効果的に防いでいます」と。
+            </p>
+            
+            <p>
+                利用規約への同意を必須にし、年齢制限を「17+」に引き上げ、祈るような気持ちで再申請。<br>
+                そして数日後、ついに届いた「Ready for Sale」の通知。思わず声が出ました。
+            </p>
+            
+            <h2>RelayChatが目指す未来</h2>
+            
+            <p>
+                こうして、RelayChatは世に出ました。<br>
+                これは、巨大な資本や組織がなくても、個人のエンジニアが持つ技術と情熱で、社会課題にアプローチできるという証明かもしれません。PayPayフリマで学んだリーンな開発、Pocochaで叩き込まれたアジャイルな思考、そしてZOZOTOWNで日々向き合っている多くのユーザーへの想い。僕がこれまで得てきた経験の、すべてを注ぎ込みました。
+            </p>
+            
+            <p>
+                このアプリが、いつかどこかで、誰かの「安心」に繋がってくれたら。<br>
+                そして、この開発秘話が、同じように何かを作りたいと思っている、誰かの背中をそっと押すことができたなら。<br>
+                開発者として、これ以上の幸せはありません。
+            </p>
+            
+            <p>
+                最後まで読んでいただき、ありがとうございました。<br>
+                もしよろしければ、App Storeで「RelayChat」をダウンロードして、あなたのスマホに「もしもの備え」を入れてみてください。
+            </p>
+            
+            <p style="text-align: center; margin-top: var(--spacing-2xl);">
+                <a href="https://apps.apple.com/jp/app/relaychat-%E3%83%AA%E3%83%AC%E3%83%BC%E3%83%81%E3%83%A3%E3%83%83%E3%83%88-%E3%82%AA%E3%83%95%E3%83%A9%E3%82%A4%E3%83%B3%E4%BC%9A%E8%A9%B1/id6749299283" target="_blank" class="btn btn-primary">
+                    App StoreでRelayChatをダウンロード
+                </a>
+            </p>
+        </div>
+
+        <nav class="post-navigation">
+            <a href="/blog/" class="nav-link-wrapper">
+                <span>← ブログ一覧に戻る</span>
+            </a>
+        </nav>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
+                    <p class="footer-description">思い出×テクノロジーで新しい価値を創造</p>
+                </div>
+                <div class="footer-nav">
+                    <a href="/legal/privacy-policy.html">プライバシーポリシー</a>
+                    <a href="/legal/terms-of-service.html">利用規約</a>
+                    <a href="/legal/commercial-law.html">特定商取引法</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ryo Tsuzukihashi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
