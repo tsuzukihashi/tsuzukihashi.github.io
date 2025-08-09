@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iOSDC2019初参加! - Blog | Ryo Tsuzukihashi</title>
+    <meta name="description" content="iOSDC Japan 2019に初めて参加した際の体験記。様々なセッションから得た学びと刺激について。">
+    <meta name="keywords" content="iOSDC, iOS開発, カンファレンス, Swift, 体験記">
+    
+    <!-- OGP -->
+    <meta property="og:title" content="iOSDC2019初参加!">
+    <meta property="og:description" content="iOSDC Japan 2019に初めて参加した際の体験記">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://tsuzuki817.com/blog/posts/iosdc2019-first-participation.html">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERPQ1EGLH');
+    </script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <style>
+        /* Blog Post Specific Styles */
+        .blog-post {
+            padding: 120px 0 var(--spacing-3xl);
+        }
+        
+        .post-header {
+            max-width: 800px;
+            margin: 0 auto var(--spacing-3xl);
+            text-align: center;
+            padding: 0 var(--spacing-lg);
+        }
+        
+        .post-meta {
+            display: flex;
+            justify-content: center;
+            gap: var(--spacing-lg);
+            margin-bottom: var(--spacing-lg);
+            color: var(--color-text-light);
+            font-size: var(--font-size-sm);
+        }
+        
+        .post-title {
+            font-size: var(--font-size-4xl);
+            font-weight: 300;
+            color: var(--color-primary);
+            margin-bottom: var(--spacing-lg);
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+        }
+        
+        .post-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-lg);
+            line-height: 1.8;
+            color: var(--color-text);
+        }
+        
+        .post-content h1 {
+            font-size: var(--font-size-3xl);
+            font-weight: 500;
+            margin: var(--spacing-3xl) 0 var(--spacing-lg);
+            color: var(--color-primary);
+            padding-bottom: var(--spacing-sm);
+            border-bottom: 1px solid var(--color-border);
+        }
+        
+        .post-content h2 {
+            font-size: var(--font-size-2xl);
+            font-weight: 500;
+            margin: var(--spacing-2xl) 0 var(--spacing-md);
+            color: var(--color-primary);
+        }
+        
+        .post-content p {
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .post-content ul,
+        .post-content ol {
+            margin: var(--spacing-md) 0 var(--spacing-lg) var(--spacing-lg);
+        }
+        
+        .post-content li {
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .post-content a {
+            color: var(--color-primary);
+            text-decoration: underline;
+            transition: var(--transition);
+        }
+        
+        .post-content a:hover {
+            color: var(--color-secondary);
+        }
+        
+        .post-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: var(--border-radius);
+            margin: var(--spacing-lg) 0;
+        }
+        
+        .post-content blockquote {
+            border-left: 4px solid var(--color-primary);
+            padding-left: var(--spacing-lg);
+            margin: var(--spacing-lg) 0;
+            color: var(--color-secondary);
+            font-style: italic;
+        }
+        
+        .post-content code {
+            background: var(--color-accent);
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'SF Mono', Monaco, 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        
+        .post-content pre {
+            background: var(--color-accent);
+            padding: var(--spacing-md);
+            border-radius: var(--border-radius);
+            overflow-x: auto;
+            margin: var(--spacing-lg) 0;
+        }
+        
+        .post-content pre code {
+            background: transparent;
+            padding: 0;
+        }
+        
+        .embed-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            margin: var(--spacing-lg) 0;
+        }
+        
+        .embed-container iframe,
+        .embed-container object,
+        .embed-container embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .twitter-embed {
+            margin: var(--spacing-lg) 0;
+            border: 1px solid var(--color-border);
+            border-radius: var(--border-radius);
+            padding: var(--spacing-md);
+            background: var(--color-accent);
+        }
+        
+        .post-navigation {
+            max-width: 800px;
+            margin: var(--spacing-3xl) auto 0;
+            padding: var(--spacing-xl) var(--spacing-lg) 0;
+            border-top: 1px solid var(--color-border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-link-wrapper {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            text-decoration: none;
+            color: var(--color-text);
+            transition: var(--transition);
+        }
+        
+        .nav-link-wrapper:hover {
+            color: var(--color-primary);
+        }
+        
+        @media (max-width: 768px) {
+            .post-title {
+                font-size: var(--font-size-3xl);
+            }
+            
+            .post-content h1 {
+                font-size: var(--font-size-2xl);
+            }
+            
+            .post-content h2 {
+                font-size: var(--font-size-xl);
+            }
+            
+            .post-navigation {
+                flex-direction: column;
+                gap: var(--spacing-lg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">Ryo Tsuzukihashi</a>
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/portfolio/" class="nav-link">Portfolio</a>
+                <a href="/blog/" class="nav-link">Blog</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post -->
+    <article class="blog-post">
+        <header class="post-header">
+            <div class="post-meta">
+                <span class="post-date">2019年9月10日</span>
+                <span class="post-category">イベント</span>
+                <span class="post-reading-time">5分で読める</span>
+            </div>
+            <h1 class="post-title">iOSDC2019初参加!</h1>
+        </header>
+
+        <div class="post-content">
+            <h1>iOSDC2019に初参加しました！</h1>
+            
+            <p>
+                2019.9.6(金) 9.7(土)の二日間、一般参加させていただきました。
+            </p>
+            
+            <p>
+                <img src="/assets/images/blog/iosdc2019-badge.jpg" alt="iOSDC2019バッジ" style="max-width: 600px;">
+            </p>
+            
+            <p>
+                <a href="https://iosdc.jp/2019/" target="_blank">iOSDC Japan 2019 公式サイト</a>
+            </p>
+            
+            <h1>1日目</h1>
+            
+            <div class="twitter-embed">
+                <p>早く来てしまった #iosdc</p>
+                <small>- 2019年9月6日 午前</small>
+            </div>
+            
+            <div class="twitter-embed">
+                <p>#iosdc</p>
+                <small>- 2019年9月6日</small>
+            </div>
+            
+            <p>
+                オープニングから勢いがすごくて、圧倒されてしましました...
+            </p>
+            
+            <p>
+                エヴァ風でテンション上がりましたね！
+            </p>
+            
+            <h2>ライブラリのインポートとリンクの仕組み完全解説</h2>
+            
+            <p>
+                <a href="https://fortee.jp/iosdc-japan-2019/proposal/28d1013f-a57b-4d42-b486-a3372c459459" target="_blank">
+                    セッション詳細（fortee.jp）
+                </a>
+            </p>
+            
+            <p>
+                内容が結構難しくて、ちゃんと理解できていなかったので、自分でも
+                ライブラリを作ったりしてみようと思いました。
+            </p>
+            
+            <h2>Swiftクリーンコードアドベンチャー</h2>
+            
+            <p>
+                <a href="https://fortee.jp/iosdc-japan-2019/proposal/0c06aeca-5b6a-4bbe-aeeb-7531740975c5" target="_blank">
+                    セッション詳細（fortee.jp）
+                </a>
+            </p>
+            
+            <p>
+                発表がすごく丁寧で、発表の仕方の参考になりました><br>
+                普段からClean Architectureを利用しているため、アーキテクチャの適用の仕方なども参考になりました。
+            </p>
+            
+            <h2>FatViewControllerを安全に書き換える方法が見つからなかったので、どういう痛みを許容するか考えた</h2>
+            
+            <p>
+                <a href="https://fortee.jp/iosdc-japan-2019/proposal/123b9027-1aea-4557-997e-fd2c5275974b" target="_blank">
+                    セッション詳細（fortee.jp）
+                </a>
+            </p>
+            
+            <p>
+                ダンボー田中さんの発表はとても場慣れしている感があって、自然体ですごいなぁって思いました(コナミ感)<br>
+                テストのデッドロック問題など、実際に自分も遭遇したらどうしようと思える問題を取り上げていました。<br>
+                問題に対するアプローチを、適切に言語化していて自分も言語化する能力を鍛えないといけないと、改めて思いました。
+            </p>
+            
+            <p>
+                また、髪の毛が金色でかっこよかったです。
+            </p>
+            
+            <h1>2日目</h1>
+            
+            <h2>iOSアプリに「意識」は宿るのか？ディープラーニングの先にある人工知能（AI)</h2>
+            
+            <p>
+                <a href="https://fortee.jp/iosdc-japan-2019/proposal/820ac4b7-ebd1-44f9-b351-b223066a3838" target="_blank">
+                    セッション詳細（fortee.jp）
+                </a>
+            </p>
+            
+            <p>
+                <img src="/assets/images/blog/iosdc2019-session.jpg" alt="セッション風景" style="max-width: 600px;">
+            </p>
+            
+            <p>
+                <a href="https://fortee.jp/iosdc-japan-2019/proposal/aed43999-373f-40fc-9cf9-c15cc32bc670" target="_blank">
+                    関連セッション（fortee.jp）
+                </a>
+            </p>
+            
+            <p>
+                脳科学からディープラーニングに到るまでの流れはとても興味深かったです。<br>
+                アプリに意識が宿るまでの課題を具体的にあげていて、wktkしました！
+            </p>
+            
+            <div class="twitter-embed">
+                <p>美味 #iosdc</p>
+                <small>- 2019年9月7日</small>
+            </div>
+            
+            <div class="twitter-embed">
+                <p>貰った！#iosdc</p>
+                <small>- 2019年9月7日</small>
+            </div>
+            
+            <h2>今こそwatchOS</h2>
+            
+            <p>
+                <img src="/assets/images/blog/iosdc2019-watchos.jpg" alt="watchOSセッション" style="max-width: 600px;">
+            </p>
+            
+            <p>
+                部屋が満員で立ち見も限界まで人がいて、すごい人気でした！<br>
+                watchOSが出てから最新のwatchOSまでを事細かく解説して、勉強になりました。<br>
+                絶対にapple watch買って開発します！
+            </p>
+            
+            <h2>まとめ</h2>
+            
+            <p>
+                いろいろと難しいし、自分の勉強不足を痛感しましたが、いつもお世話になってるiOSエンジニアの方々に出会えて最高でした！<br>
+                来年も、参加しようと思います！<br>
+                また、自分もいつかスピーカーとして参加できるように、活動をしていきたいです。
+            </p>
+            
+            <blockquote>
+                <p>3年後の2022年、実際にiOSDC Japanでスピーカーとして登壇することができました！夢が叶いました。</p>
+            </blockquote>
+        </div>
+
+        <nav class="post-navigation">
+            <a href="/blog/" class="nav-link-wrapper">
+                <span>← ブログ一覧に戻る</span>
+            </a>
+        </nav>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
+                    <p class="footer-description">思い出×テクノロジーで新しい価値を創造</p>
+                </div>
+                <div class="footer-nav">
+                    <a href="/legal/privacy-policy.html">プライバシーポリシー</a>
+                    <a href="/legal/terms-of-service.html">利用規約</a>
+                    <a href="/legal/commercial-law.html">特定商取引法</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ryo Tsuzukihashi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
