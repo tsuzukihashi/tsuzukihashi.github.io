@@ -91,7 +91,7 @@
 
 .featured-post-image {
   position: relative;
-  height: 400px;
+  min-height: 400px;
   background: var(--gradient-ocean);
   display: flex;
   align-items: center;
@@ -438,7 +438,7 @@
   }
   
   .featured-post-image {
-    height: 300px;
+    min-height: 300px;
   }
   
   .featured-post-content {
