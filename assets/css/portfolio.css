@@ -373,6 +373,35 @@
   animation: slideUp 0.5s ease;
 }
 
+/* ========== Transferred Badge ========== */
+.transferred-badge {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: var(--color-white) !important;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.app-card.transferred {
+  position: relative;
+}
+
+.app-card.transferred .app-card-image {
+  position: relative;
+}
+
+.app-placeholder-icon {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* ========== Active Nav Link ========== */
 .nav-link.active {
   color: var(--color-sunset);
