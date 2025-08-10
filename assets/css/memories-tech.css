@@ -734,13 +734,7 @@ p {
   width: 24px;
   height: 24px;
   object-fit: contain;
-  filter: brightness(0) invert(1);
-  opacity: 0.8;
   transition: var(--transition-normal);
-}
-
-.sns-link:hover .sns-icon {
-  opacity: 1;
 }
 
 @media (max-width: 768px) {
