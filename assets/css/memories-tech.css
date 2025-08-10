@@ -703,3 +703,58 @@ p {
   opacity: 0;
   animation: fadeInUp 0.8s ease forwards;
 }
+
+/* ========== Footer SNS Icons ========== */
+.footer-sns {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.sns-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  transition: var(--transition-normal);
+  text-decoration: none;
+}
+
+.sns-link:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-3px);
+}
+
+.sns-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  opacity: 0.8;
+  transition: var(--transition-normal);
+}
+
+.sns-link:hover .sns-icon {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .footer-sns {
+    gap: 1rem;
+  }
+  
+  .sns-link {
+    width: 36px;
+    height: 36px;
+  }
+  
+  .sns-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
