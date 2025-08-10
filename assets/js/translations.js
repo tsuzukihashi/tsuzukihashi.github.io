@@ -148,6 +148,43 @@ const translations = {
         // Contact page
         contact: {
             googleFormButton: "お問い合わせフォームを開く"
+        },
+        // Disclaimer page
+        disclaimer: {
+            title: "免責事項",
+            section1: {
+                title: "1. 当サイトの情報について",
+                content: "当サイトに掲載されている情報については、可能な限り正確な情報を掲載するよう努めておりますが、誤情報が入り込んだり、情報が古くなっていることもございます。当サイトに掲載された内容によって生じた損害等の一切の責任を負いかねますのでご了承ください。"
+            },
+            section2: {
+                title: "2. アプリケーションの利用について",
+                content: "当方が開発・提供するアプリケーションの利用により生じた、いかなる損害についても、当方は一切の責任を負いません。アプリケーションのダウンロード、インストール、および利用は、利用者自身の責任において行ってください。"
+            },
+            section3: {
+                title: "3. リンクについて",
+                content: "当サイトからリンクやバナーなどによって他のサイトに移動された場合、移動先サイトで提供される情報、サービス等について一切の責任を負いません。"
+            },
+            section4: {
+                title: "4. 技術的不具合について",
+                content: "当サイトおよびアプリケーションは、システムメンテナンスやサーバーの不具合、その他の理由により、予告なくサービスを停止する場合があります。これらのサービス停止により生じた損害について、当方は一切の責任を負いません。"
+            },
+            section5: {
+                title: "5. 第三者サービスについて",
+                content: "当サイトおよびアプリケーションは、第三者が提供するサービス（広告、アナリティクス等）を利用する場合があります。これらの第三者サービスの利用により生じた損害について、当方は一切の責任を負いません。"
+            },
+            section6: {
+                title: "6. 著作権・知的財産権について",
+                content: "当サイトで提供するコンテンツ（文章、画像、動画、音声、プログラム等）の著作権その他の知的財産権は、当方または正当な権利を有する第三者に帰属します。これらを無断で複製、改変、配布等することを禁じます。"
+            },
+            section7: {
+                title: "7. 損害賠償の制限",
+                content: "当サイトおよびアプリケーションの利用に関連して利用者に生じた損害について、当方の故意または重大な過失による場合を除き、当方は一切の責任を負いません。"
+            },
+            section8: {
+                title: "8. 免責事項の変更",
+                content: "当方は、利用者に事前の通知なく、本免責事項を変更することがあります。変更後の免責事項は、当サイトに掲載した時点から効力を生じるものとします。"
+            },
+            lastUpdated: "最終更新日: 2025年1月10日"
         }
     },
     en: {
@@ -313,6 +350,43 @@ const translations = {
         // Contact page
         contact: {
             googleFormButton: "Open Contact Form"
+        },
+        // Disclaimer page
+        disclaimer: {
+            title: "Disclaimer",
+            section1: {
+                title: "1. About Website Information",
+                content: "While we strive to provide accurate information on this website, there may be instances where incorrect or outdated information is present. We cannot be held responsible for any damages resulting from the content posted on this website."
+            },
+            section2: {
+                title: "2. About Application Usage",
+                content: "We assume no responsibility for any damages arising from the use of applications we develop and provide. Downloading, installing, and using applications is at the user's own risk."
+            },
+            section3: {
+                title: "3. About Links",
+                content: "We assume no responsibility for information or services provided on external sites accessed through links or banners from this website."
+            },
+            section4: {
+                title: "4. About Technical Issues",
+                content: "This website and applications may be suspended without notice due to system maintenance, server issues, or other reasons. We assume no responsibility for any damages resulting from such service interruptions."
+            },
+            section5: {
+                title: "5. About Third-Party Services",
+                content: "This website and applications may use third-party services (advertising, analytics, etc.). We assume no responsibility for any damages arising from the use of these third-party services."
+            },
+            section6: {
+                title: "6. About Copyrights and Intellectual Property",
+                content: "Copyrights and other intellectual property rights for content provided on this website (text, images, videos, audio, programs, etc.) belong to us or legitimate third parties. Unauthorized reproduction, modification, or distribution is prohibited."
+            },
+            section7: {
+                title: "7. Limitation of Liability",
+                content: "Except in cases of our intentional misconduct or gross negligence, we assume no responsibility for any damages incurred by users in connection with the use of this website and applications."
+            },
+            section8: {
+                title: "8. Changes to Disclaimer",
+                content: "We may change this disclaimer without prior notice to users. The revised disclaimer becomes effective upon posting on this website."
+            },
+            lastUpdated: "Last Updated: January 10, 2025"
         }
     },
     ko: {
@@ -478,6 +552,43 @@ const translations = {
         // Contact page
         contact: {
             googleFormButton: "문의 양식 열기"
+        },
+        // Disclaimer page
+        disclaimer: {
+            title: "면책조항",
+            section1: {
+                title: "1. 웹사이트 정보에 관하여",
+                content: "본 웹사이트에 게재된 정보는 가능한 한 정확한 정보를 제공하도록 노력하고 있으나, 잘못된 정보가 포함되거나 정보가 오래된 경우가 있을 수 있습니다. 본 웹사이트에 게재된 내용으로 인해 발생한 손해에 대해서는 일체 책임을 지지 않습니다."
+            },
+            section2: {
+                title: "2. 애플리케이션 이용에 관하여",
+                content: "당사가 개발·제공하는 애플리케이션 이용으로 인해 발생한 어떠한 손해에 대해서도 당사는 일체 책임을 지지 않습니다. 애플리케이션의 다운로드, 설치 및 이용은 이용자 본인의 책임 하에 진행해주시기 바랍니다."
+            },
+            section3: {
+                title: "3. 링크에 관하여",
+                content: "본 웹사이트에서 링크나 배너 등을 통해 다른 사이트로 이동한 경우, 이동한 사이트에서 제공되는 정보, 서비스 등에 대해서는 일체 책임을 지지 않습니다."
+            },
+            section4: {
+                title: "4. 기술적 문제에 관하여",
+                content: "본 웹사이트 및 애플리케이션은 시스템 유지보수, 서버 문제, 기타 이유로 인해 예고 없이 서비스가 중단될 수 있습니다. 이러한 서비스 중단으로 인해 발생한 손해에 대해서는 당사는 일체 책임을 지지 않습니다."
+            },
+            section5: {
+                title: "5. 제3자 서비스에 관하여",
+                content: "본 웹사이트 및 애플리케이션은 제3자가 제공하는 서비스(광고, 분석 등)를 이용할 수 있습니다. 이러한 제3자 서비스 이용으로 인해 발생한 손해에 대해서는 당사는 일체 책임을 지지 않습니다."
+            },
+            section6: {
+                title: "6. 저작권 및 지적재산권에 관하여",
+                content: "본 웹사이트에서 제공하는 콘텐츠(텍스트, 이미지, 동영상, 오디오, 프로그램 등)의 저작권 및 기타 지적재산권은 당사 또는 정당한 권리를 가진 제3자에게 귀속됩니다. 무단 복제, 수정, 배포는 금지되어 있습니다."
+            },
+            section7: {
+                title: "7. 손해배상 제한",
+                content: "본 웹사이트 및 애플리케이션 이용과 관련하여 이용자에게 발생한 손해에 대해서는 당사의 고의 또는 중대한 과실이 있는 경우를 제외하고는 당사는 일체 책임을 지지 않습니다."
+            },
+            section8: {
+                title: "8. 면책조항 변경",
+                content: "당사는 이용자에게 사전 통지 없이 본 면책조항을 변경할 수 있습니다. 변경된 면책조항은 본 웹사이트에 게재된 시점부터 효력이 발생합니다."
+            },
+            lastUpdated: "최종 업데이트: 2025년 1월 10일"
         }
     }
 };
