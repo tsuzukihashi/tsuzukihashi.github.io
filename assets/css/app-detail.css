@@ -9,7 +9,7 @@
   padding-top: calc(var(--space-2xl) + 80px);
   padding-bottom: var(--space-xl);
   position: relative;
-  background: var(--gradient-memories);
+  background: var(--color-cream);
   display: flex;
   align-items: center;
 }
@@ -42,7 +42,7 @@
   position: absolute;
   top: -10px;
   right: -10px;
-  background: var(--gradient-sunset);
+  background: var(--color-sunset);
   color: var(--color-white);
   padding: 0.5rem 1rem;
   border-radius: 20px;
@@ -152,7 +152,7 @@
   color: var(--color-charcoal);
   font-weight: 600;
   padding: 1.5rem;
-  background: var(--gradient-memories);
+  background: var(--color-cream);
   border-radius: 20px;
   text-align: center;
 }
@@ -287,7 +287,7 @@
 .achievement-number {
   font-size: 2.5rem;
   font-weight: 800;
-  background: var(--gradient-sunset);
+  background: var(--color-sunset);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -382,7 +382,7 @@
   color: var(--color-charcoal);
   font-weight: 600;
   padding: 1.5rem;
-  background: var(--gradient-memories);
+  background: var(--color-cream);
   border-radius: 20px;
   margin: 2rem 0;
 }
@@ -460,7 +460,7 @@
 }
 
 .related-app-icon.more-apps {
-  background: var(--gradient-sunset);
+  background: var(--color-sunset);
   display: flex;
   align-items: center;
   justify-content: center;

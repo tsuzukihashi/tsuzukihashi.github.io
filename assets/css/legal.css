@@ -7,7 +7,7 @@
 .legal-hero {
   padding-top: calc(var(--space-2xl) + 80px);
   padding-bottom: var(--space-lg);
-  background: var(--gradient-memories);
+  background: var(--color-cream);
   text-align: center;
 }
 
@@ -70,7 +70,7 @@
   left: 0;
   width: 60px;
   height: 3px;
-  background: var(--gradient-sunset);
+  background: var(--color-sunset);
 }
 
 .legal-section p {
@@ -188,7 +188,7 @@
 }
 
 .legal-nav-link:hover {
-  background: var(--gradient-sunset);
+  background: var(--color-sunset);
   color: var(--color-white);
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(255, 107, 107, 0.3);

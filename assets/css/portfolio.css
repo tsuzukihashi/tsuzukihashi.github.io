@@ -9,7 +9,7 @@
   padding-top: calc(var(--space-2xl) + 80px);
   padding-bottom: var(--space-xl);
   position: relative;
-  background: var(--gradient-memories);
+  background: var(--color-cream);
 }
 
 .portfolio-hero-content {
@@ -76,10 +76,7 @@
 .portfolio-stat-number {
   font-size: 2rem;
   font-weight: 800;
-  background: var(--gradient-sunset);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--color-sunset);
   margin-bottom: 0.25rem;
 }
 
@@ -120,7 +117,7 @@
 }
 
 .filter-btn.active {
-  background: var(--gradient-sunset);
+  background: var(--color-sunset);
   color: var(--color-white);
   border-color: transparent;
   box-shadow: 0 10px 30px rgba(255, 107, 107, 0.3);
@@ -171,7 +168,7 @@
 .app-card-image {
   position: relative;
   height: 200px;
-  background: var(--gradient-ocean);
+  background: var(--color-ocean);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -214,12 +211,12 @@
 }
 
 .app-card-badge.best {
-  background: var(--gradient-sunset);
+  background: var(--color-sunset);
   color: var(--color-white);
 }
 
 .app-card-badge.new {
-  background: var(--gradient-ocean);
+  background: var(--color-ocean);
   color: var(--color-white);
 }
 
@@ -375,7 +372,7 @@
 
 /* ========== Transferred Badge ========== */
 .transferred-badge {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: var(--color-gray);
   color: var(--color-white) !important;
   padding: 0.25rem 0.75rem;
   border-radius: 12px;

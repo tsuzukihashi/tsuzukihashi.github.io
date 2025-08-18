@@ -9,7 +9,7 @@
   padding-top: calc(var(--space-2xl) + 80px);
   padding-bottom: var(--space-xl);
   position: relative;
-  background: var(--gradient-memories);
+  background: var(--color-cream);
   display: flex;
   align-items: center;
 }
@@ -66,7 +66,7 @@
 }
 
 .category-btn.active {
-  background: var(--gradient-sunset);
+  background: var(--color-sunset);
   color: var(--color-white);
   border-color: transparent;
   box-shadow: 0 10px 30px rgba(255, 107, 107, 0.3);
@@ -92,7 +92,7 @@
 .featured-post-image {
   position: relative;
   min-height: 400px;
-  background: var(--gradient-ocean);
+  background: var(--color-ocean);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -110,7 +110,7 @@
   top: 2rem;
   left: 2rem;
   padding: 0.5rem 1rem;
-  background: var(--gradient-sunset);
+  background: var(--color-sunset);
   color: var(--color-white);
   border-radius: 20px;
   font-size: 0.75rem;
@@ -120,7 +120,7 @@
 }
 
 .post-badge.new {
-  background: var(--gradient-ocean);
+  background: var(--color-ocean);
 }
 
 .featured-post-content {
@@ -219,7 +219,7 @@
 
 .post-card-image {
   height: 200px;
-  background: var(--gradient-ocean);
+  background: var(--color-ocean);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -302,7 +302,7 @@
 /* ========== Newsletter Section ========== */
 .newsletter-box {
   position: relative;
-  background: var(--gradient-sunset);
+  background: var(--color-sunset);
   border-radius: 30px;
   padding: 4rem;
   text-align: center;
@@ -323,10 +323,7 @@
 }
 
 .newsletter-title .text-gradient {
-  background: linear-gradient(135deg, #FFFFFF 0%, #FFD93D 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--color-golden);
 }
 
 .newsletter-description {
@@ -421,7 +418,7 @@
 }
 
 .archive-link:hover {
-  background: var(--gradient-sunset);
+  background: var(--color-sunset);
   color: var(--color-white);
   transform: translateY(-3px);
   box-shadow: 0 10px 30px rgba(255, 107, 107, 0.3);

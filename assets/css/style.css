@@ -494,7 +494,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, var(--color-accent), #f0f0f0);
+    background: var(--color-accent);
 }
 
 .placeholder-text {
@@ -853,7 +853,7 @@ body {
 .app-placeholder {
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, var(--color-accent), #f0f0f0);
+    background: var(--color-accent);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1283,7 +1283,7 @@ body {
 .post-placeholder {
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, var(--color-accent), #f0f0f0);
+    background: var(--color-accent);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1915,7 +1915,7 @@ body {
     width: 120px;
     height: 120px;
     border-radius: 20px;
-    background: linear-gradient(135deg, var(--color-accent), #f0f0f0);
+    background: var(--color-accent);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2219,7 +2219,7 @@ body {
 
 .related-app-placeholder {
     aspect-ratio: 16/9;
-    background: linear-gradient(135deg, var(--color-accent), #f0f0f0);
+    background: var(--color-accent);
     display: flex;
     align-items: center;
     justify-content: center;

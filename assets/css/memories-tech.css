@@ -15,10 +15,7 @@
   --color-light-gray: #DFE6E9;    /* ボーダー */
   --color-white: #FFFFFF;
   
-  /* Gradients */
-  --gradient-sunset: linear-gradient(135deg, #FF6B6B 0%, #FFD93D 100%);
-  --gradient-ocean: linear-gradient(135deg, #4ECDC4 0%, #44A3AA 100%);
-  --gradient-memories: linear-gradient(180deg, rgba(255,107,107,0.1) 0%, rgba(255,249,245,0) 100%);
+  /* Gradients removed for cleaner design */
   
   /* Typography */
   --font-main: 'Noto Sans JP', 'Hiragino Sans', sans-serif;
@@ -86,10 +83,7 @@ p {
 }
 
 .text-gradient {
-  background: var(--gradient-sunset);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--color-sunset);
 }
 
 /* ========== Navigation ========== */
@@ -154,7 +148,7 @@ p {
   left: 0;
   width: 0;
   height: 2px;
-  background: var(--gradient-sunset);
+  background: var(--color-sunset);
   transition: var(--transition-normal);
 }
 
@@ -170,7 +164,7 @@ p {
   justify-content: center;
   position: relative;
   padding: var(--space-2xl) var(--space-md);
-  background: var(--gradient-memories);
+  background: var(--color-cream);
 }
 
 .hero-content {
@@ -228,7 +222,7 @@ p {
 }
 
 .btn-primary {
-  background: var(--gradient-sunset);
+  background: var(--color-sunset);
   color: var(--color-white);
   box-shadow: 0 10px 30px rgba(255, 107, 107, 0.3);
 }
@@ -276,7 +270,7 @@ p {
   position: relative;
   height: 250px;
   overflow: hidden;
-  background: var(--gradient-ocean);
+  background: var(--color-ocean);
 }
 
 .memory-card-image img {
@@ -357,7 +351,7 @@ p {
   top: 0;
   bottom: 0;
   width: 2px;
-  background: var(--gradient-ocean);
+  background: var(--color-ocean);
   transform: translateX(-50%);
 }
 
@@ -388,7 +382,7 @@ p {
   transform: translateY(-50%);
   width: 60px;
   height: 60px;
-  background: var(--gradient-sunset);
+  background: var(--color-sunset);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -432,7 +426,7 @@ p {
   display: inline-block;
   padding: 0.5rem 1.5rem;
   margin-bottom: 1rem;
-  background: var(--gradient-sunset);
+  background: var(--color-sunset);
   color: var(--color-white);
   border-radius: 50px;
   font-size: 0.875rem;
@@ -476,7 +470,7 @@ p {
   left: 10%;
   width: 100px;
   height: 100px;
-  background: var(--gradient-sunset);
+  background: var(--color-sunset);
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
   animation-delay: 0s;
 }
@@ -486,7 +480,7 @@ p {
   right: 10%;
   width: 150px;
   height: 150px;
-  background: var(--gradient-ocean);
+  background: var(--color-ocean);
   border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   animation-delay: 2s;
 }
@@ -526,10 +520,7 @@ p {
 .stat-number {
   font-size: 3rem;
   font-weight: 800;
-  background: var(--gradient-sunset);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--color-sunset);
   margin-bottom: 0.5rem;
 }
 
