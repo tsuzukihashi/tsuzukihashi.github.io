@@ -101,6 +101,17 @@ const translations = {
                 feature4: "完全オフライン動作でプライバシー保護",
                 feature5: "フリマアプリや推し活に最適",
                 developmentStory: "このアプリは、SNS「mono」の機能として開発していた背景切り抜き&縁取り機能から誕生しました。デモ動画をTwitterで紹介したところ、hirothingsさんから「その機能だけでもヒットしそう」というコメントをいただき、一つの機能に特化した使いやすいアプリとして独立させることを決意。2025年にリリースしました。"
+            },
+            kotonohabako: {
+                title: "言の葉箱",
+                description: "手紙やハガキを写真に撮るだけでAIが文字認識。大切な思い出を検索可能なデジタル宝物に変える",
+                overview: "言の葉箱は、引き出しの奥に眠る手紙やハガキを、写真に撮るだけでAIの力で検索できるデジタルな宝物に変えるアプリです。Google Geminiの最先端AI技術により、手書き文字を高精度で認識し、検索可能なテキストデータに変換します。物理的な劣化から大切な思い出を守りながら、いつでも手元で読み返せる、あなただけの静かな書斎を提供します。",
+                feature1: "AI文字認識で手書き文字を自動テキスト化",
+                feature2: "全文検索で思い出の言葉をすぐに発見",
+                feature3: "言葉のお守り機能で特別な一文を保存",
+                feature4: "Cloud Firestoreによる安全なデータ保管",
+                feature5: "広告なしの美しいインターフェース",
+                developmentStory: "手紙やハガキには、デジタルメッセージとは違う特別な重みがあります。その手書きの温もりを残しながら、現代のテクノロジーで新しい価値を生み出したい。そんな想いから、このアプリは生まれました。最新のAI技術と、思い出を大切にする心を融合させた、新しい形の思い出保存アプリです。"
             }
         },
         // App Detail Sections
@@ -289,6 +300,17 @@ const translations = {
                 feature4: "Complete offline operation for privacy protection",
                 feature5: "Perfect for marketplace apps and fan activities",
                 developmentStory: "This app was born from the background removal and border feature originally developed for the \"mono\" SNS. When I shared a demo video on Twitter, hirothings commented \"That feature alone could be a hit,\" which inspired me to create a focused, user-friendly app specialized in this single function. Released in 2025."
+            },
+            kotonohabako: {
+                title: "Kotonohabako",
+                description: "AI recognizes handwriting from photos of letters and postcards, transforming precious memories into searchable digital treasures",
+                overview: "Kotonohabako is an app that transforms letters and postcards sleeping in your drawers into searchable digital treasures using AI technology. With Google Gemini's cutting-edge AI, it accurately recognizes handwritten text and converts it into searchable data. While protecting precious memories from physical deterioration, it provides your personal quiet library accessible anytime.",
+                feature1: "AI character recognition for automatic text conversion",
+                feature2: "Full-text search to instantly find memorable words",
+                feature3: "Word charm feature to save special sentences",
+                feature4: "Secure data storage with Cloud Firestore",
+                feature5: "Beautiful ad-free interface",
+                developmentStory: "Letters and postcards carry a special weight different from digital messages. This app was born from the desire to preserve the warmth of handwriting while creating new value with modern technology. It's a new form of memory preservation app that combines cutting-edge AI technology with a heart that cherishes memories."
             }
         },
         // App Detail Sections
@@ -491,6 +513,17 @@ const translations = {
                 feature4: "완전 오프라인 동작으로 프라이버시 보호",
                 feature5: "중고거래 앱이나 덕질에 최적",
                 developmentStory: "이 앱은 SNS \"mono\"의 기능으로 개발하던 배경 제거 및 테두리 기능에서 탄생했습니다. 데모 영상을 트위터에 소개했을 때, hirothings님으로부터 \"그 기능만으로도 히트할 것 같다\"는 댓글을 받고, 하나의 기능에 특화된 사용하기 쉬운 앱으로 독립시키기로 결심했습니다. 2025년에 출시되었습니다."
+            },
+            kotonohabako: {
+                title: "코토노하바코",
+                description: "편지나 엽서를 사진으로 찍으면 AI가 문자를 인식. 소중한 추억을 검색 가능한 디지털 보물로 변환",
+                overview: "코토노하바코는 서랍 속에 잠들어 있는 편지나 엽서를 AI 기술로 검색 가능한 디지털 보물로 변환하는 앱입니다. Google Gemini의 최첨단 AI가 손글씨를 높은 정확도로 인식하여 검색 가능한 텍스트 데이터로 변환합니다. 물리적 열화로부터 소중한 추억을 보호하면서, 언제든지 손끝에서 읽을 수 있는 당신만의 조용한 서재를 제공합니다.",
+                feature1: "AI 문자 인식으로 손글씨 자동 텍스트화",
+                feature2: "전문 검색으로 추억의 단어를 즉시 발견",
+                feature3: "단어 부적 기능으로 특별한 문장 저장",
+                feature4: "Cloud Firestore로 안전한 데이터 보관",
+                feature5: "광고 없는 아름다운 인터페이스",
+                developmentStory: "편지와 엽서에는 디지털 메시지와는 다른 특별한 무게가 있습니다. 손글씨의 온기를 보존하면서 현대 기술로 새로운 가치를 창출하고 싶다는 마음에서 이 앱이 탄생했습니다. 최첨단 AI 기술과 추억을 소중히 여기는 마음을 융합한 새로운 형태의 추억 보존 앱입니다."
             }
         },
         // App Detail Sections
