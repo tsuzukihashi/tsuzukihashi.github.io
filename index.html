@@ -1,314 +1,337 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ryo Tsuzukihashi tsuzuki817 - 思い出×テクノロジー | iOS Developer & Creator</title>
-    <meta name="description" content="續橋涼 - 8年間の個人開発で思い出とテクノロジーを融合。旅行思い出マップをはじめ、人々の大切な瞬間を記録し、新しい体験を創造するアプリを開発しています。">
-    <meta name="keywords" content="續橋涼, Ryo Tsuzukihashi, tsuzuki817, iOS開発, 個人開発, 思い出, テクノロジー, 旅行思い出マップ, フチドリ">
-    
-    <!-- OGP -->
-    <meta property="og:title" content="tsuzuki817 - 思い出×テクノロジー">
-    <meta property="og:description" content="8年間の個人開発で思い出とテクノロジーを融合。人々の大切な瞬間を記録する革新的なアプリを創造。">
-    <meta property="og:image" content="https://tsuzuki817.com/assets/images/ogp/og-image.webp">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:url" content="https://tsuzuki817.com">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="tsuzuki817">
-    <meta property="og:locale" content="ja_JP">
-    
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@tsuzuki817">
-    <meta name="twitter:creator" content="@tsuzuki817">
-    <meta name="twitter:title" content="tsuzuki817 - 思い出×テクノロジー">
-    <meta name="twitter:description" content="8年間の個人開発で思い出とテクノロジーを融合。人々の大切な瞬間を記録する革新的なアプリを創造。">
-    <meta name="twitter:image" content="https://tsuzuki817.com/assets/images/ogp/og-image.webp">
-    
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/memories-tech.css">
-    
-    <!-- Favicon -->
-    <link rel="icon" href="favicon.ico">
-    
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
-    <script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ryo Tsuzukihashi tsuzuki817 - 思い出×テクノロジー | iOS Developer &
+            Creator</title>
+        <meta name="description"
+            content="續橋涼 - 8年間の個人開発で思い出とテクノロジーを融合。旅行思い出マップをはじめ、人々の大切な瞬間を記録し、新しい体験を創造するアプリを開発しています。">
+        <meta name="keywords"
+            content="續橋涼, Ryo Tsuzukihashi, tsuzuki817, iOS開発, 個人開発, 思い出, テクノロジー, 旅行思い出マップ, フチドリ">
+
+        <!-- OGP -->
+        <meta property="og:title" content="tsuzuki817 - 思い出×テクノロジー">
+        <meta property="og:description"
+            content="8年間の個人開発で思い出とテクノロジーを融合。人々の大切な瞬間を記録する革新的なアプリを創造。">
+        <meta property="og:image"
+            content="https://tsuzuki817.com/assets/images/ogp/og-image.webp">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+        <meta property="og:url" content="https://tsuzuki817.com">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="tsuzuki817">
+        <meta property="og:locale" content="ja_JP">
+
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@tsuzuki817">
+        <meta name="twitter:creator" content="@tsuzuki817">
+        <meta name="twitter:title" content="tsuzuki817 - 思い出×テクノロジー">
+        <meta name="twitter:description"
+            content="8年間の個人開発で思い出とテクノロジーを融合。人々の大切な瞬間を記録する革新的なアプリを創造。">
+        <meta name="twitter:image"
+            content="https://tsuzuki817.com/assets/images/ogp/og-image.webp">
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap"
+            rel="stylesheet">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="assets/css/memories-tech.css">
+
+        <!-- Favicon -->
+        <link rel="icon" href="favicon.ico">
+
+        <!-- Google Analytics -->
+        <script async
+            src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+        <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-QERPQ1EGLH');
     </script>
-</head>
-<body>
-    <!-- Navigation -->
-    <nav class="nav" id="nav">
-        <div class="nav-container">
-            <a href="/" class="nav-logo">tsuzuki817</a>
-            <div class="nav-menu" id="navMenu">
-                <a href="/portfolio/" class="nav-link">Portfolio</a>
-                <a href="/about/" class="nav-link">About</a>
-                <a href="/blog/" class="nav-link">Blog</a>
-                <a href="/contact/" class="nav-link">Contact</a>
+    </head>
+    <body>
+        <!-- Navigation -->
+        <nav class="nav" id="nav">
+            <div class="nav-container">
+                <a href="/" class="nav-logo">tsuzuki817</a>
+                <div class="nav-menu" id="navMenu">
+                    <a href="/portfolio/" class="nav-link">Portfolio</a>
+                    <a href="/about/" class="nav-link">About</a>
+                    <a href="/blog/" class="nav-link">Blog</a>
+                    <a href="/contact/" class="nav-link">Contact</a>
+                </div>
+                <div class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
-            <div class="nav-toggle" id="navToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
+        </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="memory-shapes">
-            <div class="memory-shape"></div>
-            <div class="memory-shape"></div>
-            <div class="memory-shape"></div>
-        </div>
-        
-        <div class="hero-content">
-            <div class="hero-badge">🎯 8年間の個人開発の軌跡</div>
-            <h1 class="hero-title">
-                <span class="text-gradient">思い出</span>と<span class="text-gradient">テクノロジー</span>で<br>
-                新しい体験を創造する
-            </h1>
-            <p class="hero-subtitle">
-                續橋涼 - iOS Developer & Creator<br>
-                人々の大切な瞬間を、革新的な技術で永遠に
-            </p>
-            <div class="hero-cta">
-                <a href="/portfolio/" class="btn btn-primary">作品を見る</a>
-                <a href="/about/" class="btn btn-secondary">私について</a>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="memory-shapes">
+                <div class="memory-shape"></div>
+                <div class="memory-shape"></div>
+                <div class="memory-shape"></div>
             </div>
-        </div>
-    </section>
 
-    <!-- Featured Work Section -->
-    <section class="section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Featured Works</span>
-                <h2 class="section-title">思い出を形にする、代表作品</h2>
-                <p class="section-description">
-                    多くのユーザーに愛される、思い出とテクノロジーを融合したアプリたち
+            <div class="hero-content">
+                <div class="hero-badge">🎯 8年間の個人開発の軌跡</div>
+                <h1 class="hero-title">
+                    <span class="text-gradient">思い出</span>と<span
+                        class="text-gradient">テクノロジー</span>で<br>
+                    新しい体験を創造する
+                </h1>
+                <p class="hero-subtitle">
+                    續橋涼 - iOS Developer & Creator<br>
+                    人々の大切な瞬間を、革新的な技術で永遠に
                 </p>
-            </div>
-            
-            <div class="memory-grid">
-                <!-- 旅行思い出マップ -->
-                <article class="memory-card">
-                    <div class="memory-card-image">
-                        <img src="assets/images/icon/travel_memory_map.webp" alt="旅行思い出マップ">
-                        <span class="memory-card-badge">代表作</span>
-                    </div>
-                    <div class="memory-card-content">
-                        <h3 class="memory-card-title">旅行思い出マップ</h3>
-                        <p class="memory-card-description">
-                            写真をパズルのように切り取って地図に記録。あなたの旅の軌跡が、美しい思い出の地図になる。
-                        </p>
-                        <div class="memory-card-stats">
-                            <div class="memory-stat">
-                                <span class="memory-stat-value">80,000+</span>
-                                <span class="memory-stat-label">ダウンロード</span>
-                            </div>
-                            <div class="memory-stat">
-                                <span class="memory-stat-value">★4.7</span>
-                                <span class="memory-stat-label">評価</span>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                
-                <!-- 流れるメモ帳 -->
-                <article class="memory-card">
-                    <div class="memory-card-image">
-                        <img src="assets/images/icon/floating_notepad.webp" alt="流れるメモ帳">
-                        <span class="memory-card-badge">大ヒット</span>
-                    </div>
-                    <div class="memory-card-content">
-                        <h3 class="memory-card-title">流れるメモ帳</h3>
-                        <p class="memory-card-description">
-                            YouTuberマメさんに紹介され、一気に大ヒット。メモが流れていく新感覚メモアプリ。
-                        </p>
-                        <div class="memory-card-stats">
-                            <div class="memory-stat">
-                                <span class="memory-stat-value">150,000+</span>
-                                <span class="memory-stat-label">ダウンロード</span>
-                            </div>
-                            <div class="memory-stat">
-                                <span class="memory-stat-value">★便利アプリ</span>
-                                <span class="memory-stat-label">紹介</span>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                
-                <!-- いつでもタイマー -->
-                <article class="memory-card">
-                    <div class="memory-card-image">
-                        <img src="assets/images/icon/always_on_timer.webp" alt="いつでもタイマー">
-                        <span class="memory-card-badge">受賞</span>
-                    </div>
-                    <div class="memory-card-content">
-                        <h3 class="memory-card-title">いつでもタイマー</h3>
-                        <p class="memory-card-description">
-                            神アプリグランプリ受賞作品。Live Activity対応でいつでもタイマーを確認。
-                        </p>
-                        <div class="memory-card-stats">
-                            <div class="memory-stat">
-                                <span class="memory-stat-value">🏆グランプリ</span>
-                                <span class="memory-stat-label">受賞</span>
-                            </div>
-                            <div class="memory-stat">
-                                <span class="memory-stat-value">★4.8</span>
-                                <span class="memory-stat-label">評価</span>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-            </div>
-            
-            <div class="text-center mt-5">
-                <a href="/portfolio/" class="btn btn-primary">すべての作品を見る →</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Journey Section -->
-    <section class="section section-alt">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">My Journey</span>
-                <h2 class="section-title">8年間、諦めなかった理由</h2>
-                <p class="section-description">
-                    企業で働きながら、個人開発者として成功を目指し続ける。<br>
-                    それは、テクノロジーで人々の思い出を守りたいから。
-                </p>
-            </div>
-            
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>個人開発をスタート</h3>
-                        <p>「自分のアイデアを形にしたい」その一心で、大学生時代に最初のアプリを開発。</p>
-                    </div>
-                    <div class="timeline-year">2017</div>
-                </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>思い出×テクノロジーの発見</h3>
-                        <p>ユーザーからの「思い出を残せて嬉しい」という声に、自分の使命を見つける。</p>
-                    </div>
-                    <div class="timeline-year">2019</div>
-                </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>旅行思い出マップが大ヒット</h3>
-                        <p>8万ダウンロード突破。思い出を地図に残すという新しい体験が多くの人に愛される。</p>
-                    </div>
-                    <div class="timeline-year">2023</div>
-                </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>39個以上のアプリを開発</h3>
-                        <p>累計20万ダウンロード達成。神アプリグランプリ受賞。これからも挑戦は続く。</p>
-                    </div>
-                    <div class="timeline-year">2025</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Stats Section -->
-    <section class="section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Impact</span>
-                <h2 class="section-title">数字で見る、創造の軌跡</h2>
-            </div>
-            
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-number">39+</div>
-                    <div class="stat-label">開発アプリ総数</div>
-                    <div class="stat-description">8年間の成果</div>
-                </div>
-                
-                <div class="stat-card">
-                    <div class="stat-number">24</div>
-                    <div class="stat-label">公開中アプリ</div>
-                    <div class="stat-description">App Storeで配信中</div>
-                </div>
-                
-                <div class="stat-card">
-                    <div class="stat-number">200,000+</div>
-                    <div class="stat-label">総ダウンロード</div>
-                    <div class="stat-description">世界中のユーザーに</div>
-                </div>
-                
-                <div class="stat-card">
-                    <div class="stat-number">9</div>
-                    <div class="stat-label">譲渡アプリ</div>
-                    <div class="stat-description">企業への事業譲渡</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Philosophy Section -->
-    <section class="section section-alt">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Philosophy</span>
-                <h2 class="section-title">思い出は、人生の宝物</h2>
-                <p class="section-description">
-                    写真、場所、感情。すべての思い出には物語がある。<br>
-                    私の使命は、その物語を最高の形で残すこと。
-                </p>
-            </div>
-            
-            <div style="max-width: 800px; margin: 3rem auto; text-align: center;">
-                <blockquote style="font-size: 1.5rem; line-height: 1.8; color: var(--color-charcoal); font-weight: 500;">
-                    "テクノロジーは冷たいものじゃない。<br>
-                    使い方次第で、人の心を温かくできる。<br>
-                    それが、私が8年間個人開発を続ける理由です。"
-                </blockquote>
-            </div>
-        </div>
-    </section>
-
-    <!-- Call to Action -->
-    <section class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">一緒に、思い出を創りませんか？</h2>
-                <p class="section-description">
-                    あなたの大切な瞬間を、テクノロジーで永遠に。<br>
-                    新しいアプリも続々開発中です。
-                </p>
-            </div>
-            
-            <div class="text-center">
                 <div class="hero-cta">
-                    <a href="/portfolio/" class="btn btn-primary">アプリを見る</a>
-                    <a href="/contact/" class="btn btn-secondary">お問い合わせ</a>
+                    <a href="/portfolio/" class="btn btn-primary">作品を見る</a>
+                    <a href="/about/" class="btn btn-secondary">私について</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- JavaScript -->
-    <script>
+        <!-- Featured Work Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Featured Works</span>
+                    <h2 class="section-title">思い出を形にする、代表作品</h2>
+                    <p class="section-description">
+                        多くのユーザーに愛される、思い出とテクノロジーを融合したアプリたち
+                    </p>
+                </div>
+
+                <div class="memory-grid">
+                    <!-- 旅行思い出マップ -->
+                    <article class="memory-card">
+                        <div class="memory-card-image">
+                            <img src="assets/images/icon/travel_memory_map.webp"
+                                alt="旅行思い出マップ">
+                            <span class="memory-card-badge">代表作</span>
+                        </div>
+                        <div class="memory-card-content">
+                            <h3 class="memory-card-title">旅行思い出マップ</h3>
+                            <p class="memory-card-description">
+                                写真をパズルのように切り取って地図に記録。あなたの旅の軌跡が、美しい思い出の地図になる。
+                            </p>
+                            <div class="memory-card-stats">
+                                <div class="memory-stat">
+                                    <span
+                                        class="memory-stat-value">80,000+</span>
+                                    <span
+                                        class="memory-stat-label">ダウンロード</span>
+                                </div>
+                                <div class="memory-stat">
+                                    <span class="memory-stat-value">★4.7</span>
+                                    <span class="memory-stat-label">評価</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 流れるメモ帳 -->
+                    <article class="memory-card">
+                        <div class="memory-card-image">
+                            <img src="assets/images/icon/floating_notepad.webp"
+                                alt="流れるメモ帳">
+                            <span class="memory-card-badge">大ヒット</span>
+                        </div>
+                        <div class="memory-card-content">
+                            <h3 class="memory-card-title">流れるメモ帳</h3>
+                            <p class="memory-card-description">
+                                YouTuberマメさんに紹介され、一気に大ヒット。メモが流れていく新感覚メモアプリ。
+                            </p>
+                            <div class="memory-card-stats">
+                                <div class="memory-stat">
+                                    <span
+                                        class="memory-stat-value">150,000+</span>
+                                    <span
+                                        class="memory-stat-label">ダウンロード</span>
+                                </div>
+                                <div class="memory-stat">
+                                    <span
+                                        class="memory-stat-value">★便利アプリ</span>
+                                    <span class="memory-stat-label">紹介</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- いつでもタイマー -->
+                    <article class="memory-card">
+                        <div class="memory-card-image">
+                            <img src="assets/images/icon/always_on_timer.webp"
+                                alt="いつでもタイマー">
+                            <span class="memory-card-badge">受賞</span>
+                        </div>
+                        <div class="memory-card-content">
+                            <h3 class="memory-card-title">いつでもタイマー</h3>
+                            <p class="memory-card-description">
+                                神アプリグランプリ受賞作品。Live Activity対応でいつでもタイマーを確認。
+                            </p>
+                            <div class="memory-card-stats">
+                                <div class="memory-stat">
+                                    <span
+                                        class="memory-stat-value">🏆グランプリ</span>
+                                    <span class="memory-stat-label">受賞</span>
+                                </div>
+                                <div class="memory-stat">
+                                    <span class="memory-stat-value">★4.8</span>
+                                    <span class="memory-stat-label">評価</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="text-center mt-5">
+                    <a href="/portfolio/" class="btn btn-primary">すべての作品を見る
+                        →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Journey Section -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">My Journey</span>
+                    <h2 class="section-title">8年間、諦めなかった理由</h2>
+                    <p class="section-description">
+                        企業で働きながら、個人開発者として成功を目指し続ける。<br>
+                        それは、テクノロジーで人々の思い出を守りたいから。
+                    </p>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>個人開発をスタート</h3>
+                            <p>「自分のアイデアを形にしたい」その一心で、大学生時代に最初のアプリを開発。</p>
+                        </div>
+                        <div class="timeline-year">2017</div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>思い出×テクノロジーの発見</h3>
+                            <p>ユーザーからの「思い出を残せて嬉しい」という声に、自分の使命を見つける。</p>
+                        </div>
+                        <div class="timeline-year">2019</div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>旅行思い出マップが大ヒット</h3>
+                            <p>8万ダウンロード突破。思い出を地図に残すという新しい体験が多くの人に愛される。</p>
+                        </div>
+                        <div class="timeline-year">2023</div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>40個以上のアプリを開発</h3>
+                            <p>累計20万ダウンロード達成。神アプリグランプリ受賞。これからも挑戦は続く。</p>
+                        </div>
+                        <div class="timeline-year">2025</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Impact</span>
+                    <h2 class="section-title">数字で見る、創造の軌跡</h2>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">40+</div>
+                        <div class="stat-label">開発アプリ総数</div>
+                        <div class="stat-description">8年間の成果</div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-number">25</div>
+                        <div class="stat-label">公開中アプリ</div>
+                        <div class="stat-description">App Storeで配信中</div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-number">200,000+</div>
+                        <div class="stat-label">総ダウンロード</div>
+                        <div class="stat-description">世界中のユーザーに</div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-number">9</div>
+                        <div class="stat-label">譲渡アプリ</div>
+                        <div class="stat-description">企業への事業譲渡</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Philosophy Section -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Philosophy</span>
+                    <h2 class="section-title">思い出は、人生の宝物</h2>
+                    <p class="section-description">
+                        写真、場所、感情。すべての思い出には物語がある。<br>
+                        私の使命は、その物語を最高の形で残すこと。
+                    </p>
+                </div>
+
+                <div
+                    style="max-width: 800px; margin: 3rem auto; text-align: center;">
+                    <blockquote
+                        style="font-size: 1.5rem; line-height: 1.8; color: var(--color-charcoal); font-weight: 500;">
+                        "テクノロジーは冷たいものじゃない。<br>
+                        使い方次第で、人の心を温かくできる。<br>
+                        それが、私が8年間個人開発を続ける理由です。"
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">一緒に、思い出を創りませんか？</h2>
+                    <p class="section-description">
+                        あなたの大切な瞬間を、テクノロジーで永遠に。<br>
+                        新しいアプリも続々開発中です。
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <div class="hero-cta">
+                        <a href="/portfolio/" class="btn btn-primary">アプリを見る</a>
+                        <a href="/contact/" class="btn btn-secondary">お問い合わせ</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- JavaScript -->
+        <script>
         // Navigation scroll effect
         window.addEventListener('scroll', function() {
             const nav = document.getElementById('nav');
@@ -402,42 +425,64 @@
             statObserver.observe(card);
         });
     </script>
-    
-    <!-- Footer -->
-    <footer style="background: var(--color-charcoal); color: var(--color-white); padding: 3rem 0; text-align: center;">
-        <div class="container">
-            <!-- SNS Links -->
-            <div class="footer-sns">
-                <a href="https://x.com/tsuzuki817" target="_blank" rel="noopener noreferrer" class="sns-link" aria-label="X (Twitter)">
-                    <img src="/assets/images/sns/x.png" alt="X" class="sns-icon">
-                </a>
-                <a href="https://www.instagram.com/tsuzuki817/" target="_blank" rel="noopener noreferrer" class="sns-link" aria-label="Instagram">
-                    <img src="/assets/images/sns/instagram.png" alt="Instagram" class="sns-icon">
-                </a>
-                <a href="https://www.tiktok.com/@tsuzuki817" target="_blank" rel="noopener noreferrer" class="sns-link" aria-label="TikTok">
-                    <img src="/assets/images/sns/tiktok.png" alt="TikTok" class="sns-icon">
-                </a>
-                <a href="https://www.youtube.com/@tsuzuki817" target="_blank" rel="noopener noreferrer" class="sns-link" aria-label="YouTube">
-                    <img src="/assets/images/sns/youtube.png" alt="YouTube" class="sns-icon">
-                </a>
-                <a href="https://github.com/tsuzukihashi" target="_blank" rel="noopener noreferrer" class="sns-link" aria-label="GitHub">
-                    <img src="/assets/images/sns/github.png" alt="GitHub" class="sns-icon">
-                </a>
+
+        <!-- Footer -->
+        <footer
+            style="background: var(--color-charcoal); color: var(--color-white); padding: 3rem 0; text-align: center;">
+            <div class="container">
+                <!-- SNS Links -->
+                <div class="footer-sns">
+                    <a href="https://x.com/tsuzuki817" target="_blank"
+                        rel="noopener noreferrer" class="sns-link"
+                        aria-label="X (Twitter)">
+                        <img src="/assets/images/sns/x.png" alt="X"
+                            class="sns-icon">
+                    </a>
+                    <a href="https://www.instagram.com/tsuzuki817/"
+                        target="_blank" rel="noopener noreferrer"
+                        class="sns-link" aria-label="Instagram">
+                        <img src="/assets/images/sns/instagram.png"
+                            alt="Instagram" class="sns-icon">
+                    </a>
+                    <a href="https://www.tiktok.com/@tsuzuki817" target="_blank"
+                        rel="noopener noreferrer" class="sns-link"
+                        aria-label="TikTok">
+                        <img src="/assets/images/sns/tiktok.png" alt="TikTok"
+                            class="sns-icon">
+                    </a>
+                    <a href="https://www.youtube.com/@tsuzuki817"
+                        target="_blank" rel="noopener noreferrer"
+                        class="sns-link" aria-label="YouTube">
+                        <img src="/assets/images/sns/youtube.png" alt="YouTube"
+                            class="sns-icon">
+                    </a>
+                    <a href="https://github.com/tsuzukihashi" target="_blank"
+                        rel="noopener noreferrer" class="sns-link"
+                        aria-label="GitHub">
+                        <img src="/assets/images/sns/github.png" alt="GitHub"
+                            class="sns-icon">
+                    </a>
+                </div>
+
+                <p
+                    style="color: var(--color-white); opacity: 0.8; margin-bottom: 1rem; margin-top: 2rem;">
+                    © 2025 Ryo Tsuzukihashi. All rights reserved.
+                </p>
+                <p
+                    style="color: var(--color-white); opacity: 0.6; font-size: 0.875rem;">
+                    Crafting memories with technology since 2017.
+                </p>
+                <div style="margin-top: 2rem;">
+                    <a href="/legal/privacy-policy.html"
+                        style="color: var(--color-white); opacity: 0.6; margin: 0 1rem; text-decoration: none;">プライバシーポリシー</a>
+                    <a href="/legal/terms-of-service.html"
+                        style="color: var(--color-white); opacity: 0.6; margin: 0 1rem; text-decoration: none;">利用規約</a>
+                    <a href="/legal/commercial-law.html"
+                        style="color: var(--color-white); opacity: 0.6; margin: 0 1rem; text-decoration: none;">特定商取引法</a>
+                    <a href="/legal/disclaimer.html"
+                        style="color: var(--color-white); opacity: 0.6; margin: 0 1rem; text-decoration: none;">免責事項</a>
+                </div>
             </div>
-            
-            <p style="color: var(--color-white); opacity: 0.8; margin-bottom: 1rem; margin-top: 2rem;">
-                © 2025 Ryo Tsuzukihashi. All rights reserved.
-            </p>
-            <p style="color: var(--color-white); opacity: 0.6; font-size: 0.875rem;">
-                Crafting memories with technology since 2017.
-            </p>
-            <div style="margin-top: 2rem;">
-                <a href="/legal/privacy-policy.html" style="color: var(--color-white); opacity: 0.6; margin: 0 1rem; text-decoration: none;">プライバシーポリシー</a>
-                <a href="/legal/terms-of-service.html" style="color: var(--color-white); opacity: 0.6; margin: 0 1rem; text-decoration: none;">利用規約</a>
-                <a href="/legal/commercial-law.html" style="color: var(--color-white); opacity: 0.6; margin: 0 1rem; text-decoration: none;">特定商取引法</a>
-                <a href="/legal/disclaimer.html" style="color: var(--color-white); opacity: 0.6; margin: 0 1rem; text-decoration: none;">免責事項</a>
-            </div>
-        </div>
-    </footer>
-</body>
+        </footer>
+    </body>
 </html>

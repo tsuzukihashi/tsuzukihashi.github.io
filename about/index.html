@@ -1,543 +1,585 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Ryo Tsuzukihashi | 思い出×テクノロジーを創る個人開発者</title>
-    <meta name="description" content="續橋涼（Ryo Tsuzukihashi）- 8年間の個人開発で25以上のiOSアプリを公開。Yahoo、DeNA、ZOZO勤務。思い出とテクノロジーを融合した革新的なアプリを創造し続ける開発者。">
-    <meta name="keywords" content="續橋涼, Ryo Tsuzukihashi, プロフィール, iOS開発者, 個人開発, エンジニア">
-    
-    <!-- OGP -->
-    <meta property="og:title" content="About - Ryo Tsuzukihashi">
-    <meta property="og:description" content="8年間の個人開発で思い出×テクノロジーを創造。續橋涼のプロフィール。">
-    <meta property="og:image" content="/assets/images/profile.jpg">
-    <meta property="og:url" content="https://tsuzuki817.com/about/">
-    <meta property="og:type" content="profile">
-    
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="../assets/css/memories-tech.css">
-    <link rel="stylesheet" href="../assets/css/about.css">
-    
-    <!-- Favicon -->
-    <link rel="icon" href="../favicon.ico">
-    
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
-    <script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About - Ryo Tsuzukihashi | 思い出×テクノロジーを創る個人開発者</title>
+        <meta name="description"
+            content="續橋涼（Ryo Tsuzukihashi）- 8年間の個人開発で25以上のiOSアプリを公開。Yahoo、DeNA、ZOZO勤務。思い出とテクノロジーを融合した革新的なアプリを創造し続ける開発者。">
+        <meta name="keywords"
+            content="續橋涼, Ryo Tsuzukihashi, プロフィール, iOS開発者, 個人開発, エンジニア">
+
+        <!-- OGP -->
+        <meta property="og:title" content="About - Ryo Tsuzukihashi">
+        <meta property="og:description"
+            content="8年間の個人開発で思い出×テクノロジーを創造。續橋涼のプロフィール。">
+        <meta property="og:image" content="/assets/images/profile.jpg">
+        <meta property="og:url" content="https://tsuzuki817.com/about/">
+        <meta property="og:type" content="profile">
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap"
+            rel="stylesheet">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="../assets/css/memories-tech.css">
+        <link rel="stylesheet" href="../assets/css/about.css">
+
+        <!-- Favicon -->
+        <link rel="icon" href="../favicon.ico">
+
+        <!-- Google Analytics -->
+        <script async
+            src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+        <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-QERPQ1EGLH');
     </script>
-</head>
-<body>
-    <!-- Navigation -->
-    <nav class="nav" id="nav">
-        <div class="nav-container">
-            <a href="/" class="nav-logo">tsuzuki817</a>
-            <div class="nav-menu" id="navMenu">
-                <a href="/portfolio/" class="nav-link">Portfolio</a>
-                <a href="/about/" class="nav-link active">About</a>
-                <a href="/blog/" class="nav-link">Blog</a>
-                <a href="/contact/" class="nav-link">Contact</a>
+    </head>
+    <body>
+        <!-- Navigation -->
+        <nav class="nav" id="nav">
+            <div class="nav-container">
+                <a href="/" class="nav-logo">tsuzuki817</a>
+                <div class="nav-menu" id="navMenu">
+                    <a href="/portfolio/" class="nav-link">Portfolio</a>
+                    <a href="/about/" class="nav-link active">About</a>
+                    <a href="/blog/" class="nav-link">Blog</a>
+                    <a href="/contact/" class="nav-link">Contact</a>
+                </div>
+                <div class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
-            <div class="nav-toggle" id="navToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
+        </nav>
 
-    <!-- About Hero -->
-    <section class="about-hero">
-        <div class="memory-shapes">
-            <div class="memory-shape"></div>
-            <div class="memory-shape"></div>
-            <div class="memory-shape"></div>
-        </div>
-        
-        <div class="container">
-            <div class="about-hero-content">
-                <div class="profile-image-wrapper">
-                    <div class="profile-image">
-                        <img src="/assets/images/user_profile.jpeg" alt="續橋涼" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
-                    </div>
-                    <div class="profile-status">個人開発8年目</div>
-                </div>
-                
-                <h1 class="about-title">
-                    續橋 涼<br>
-                    <span class="about-subtitle">tsuzuki817 / Ryo Tsuzukihashi</span>
-                </h1>
-                
-                <p class="about-tagline">
-                    思い出とテクノロジーで、人々の日常に新しい価値を
-                </p>
-                
-                <div class="about-badges">
-                    <span class="badge">iOS Developer</span>
-                    <span class="badge">UI/UX Designer</span>
-                    <span class="badge">個人開発者</span>
-                </div>
+        <!-- About Hero -->
+        <section class="about-hero">
+            <div class="memory-shapes">
+                <div class="memory-shape"></div>
+                <div class="memory-shape"></div>
+                <div class="memory-shape"></div>
             </div>
-        </div>
-    </section>
 
-    <!-- Introduction Section -->
-    <section class="section">
-        <div class="container">
-            <div class="intro-content">
-                <div class="intro-text">
-                    <h2 class="section-title">はじめまして</h2>
-                    <p class="intro-paragraph">
-                        續橋涼（つづきはし りょう）と申します。<br>
-                        2017年、大学生の頃から個人開発を始め、これまでに<strong>39個以上のiOSアプリ</strong>を開発。
-                        現在<strong>24個</strong>がApp Storeで公開中、<strong>9個</strong>は企業に譲渡、<strong>6個</strong>は現在ストアから配信停止中。
-                    </p>
-                    <p class="intro-paragraph">
-                        私のアプリは、<strong>「思い出×テクノロジー」</strong>をテーマに、人々の大切な瞬間を記録し、
-                        新しい形で楽しめるような体験を提供することを目指しています。
-                    </p>
-                    <p class="intro-paragraph">
-                        「流れるメモ帳」は<strong>15万ダウンロード</strong>を超え、
-                        全アプリ合計で<strong>30万ダウンロード</strong>を超え多くのユーザーに使っていただいています。
-                    </p>
-                </div>
-                
-                <div class="intro-stats">
-                    <div class="intro-stat">
-                        <div class="intro-stat-icon">🎯</div>
-                        <div class="intro-stat-number">8年</div>
-                        <div class="intro-stat-label">個人開発歴</div>
+            <div class="container">
+                <div class="about-hero-content">
+                    <div class="profile-image-wrapper">
+                        <div class="profile-image">
+                            <img src="/assets/images/user_profile.jpeg"
+                                alt="續橋涼"
+                                style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                        </div>
+                        <div class="profile-status">個人開発8年目</div>
                     </div>
-                    <div class="intro-stat">
-                        <div class="intro-stat-icon">📱</div>
-                        <div class="intro-stat-number">24</div>
-                        <div class="intro-stat-label">公開アプリ</div>
-                    </div>
-                    <div class="intro-stat">
-                        <div class="intro-stat-icon">🌟</div>
-                        <div class="intro-stat-number">200,000+</div>
-                        <div class="intro-stat-label">総ダウンロード</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Career Timeline -->
-    <section class="section section-alt">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Career</span>
-                <h2 class="section-title">経歴</h2>
-                <p class="section-description">
-                    大企業での経験を経て、個人開発者として独自の道を歩む
-                </p>
+                    <h1 class="about-title">
+                        續橋 涼<br>
+                        <span class="about-subtitle">tsuzuki817 / Ryo
+                            Tsuzukihashi</span>
+                    </h1>
+
+                    <p class="about-tagline">
+                        思い出とテクノロジーで、人々の日常に新しい価値を
+                    </p>
+
+                    <div class="about-badges">
+                        <span class="badge">iOS Developer</span>
+                        <span class="badge">UI/UX Designer</span>
+                        <span class="badge">個人開発者</span>
+                    </div>
+                </div>
             </div>
-            
-            <div class="career-timeline">
-                <div class="career-item">
-                    <div class="career-year">2017</div>
-                    <div class="career-content">
-                        <h3>個人開発スタート</h3>
-                        <p class="career-company">大学生・Independent Developer</p>
-                        <p class="career-description">
-                            大学生として勉強しながら、初めてのiOSアプリを開発・リリース。
-                            アプリ開発の楽しさに目覚める。
+        </section>
+
+        <!-- Introduction Section -->
+        <section class="section">
+            <div class="container">
+                <div class="intro-content">
+                    <div class="intro-text">
+                        <h2 class="section-title">はじめまして</h2>
+                        <p class="intro-paragraph">
+                            續橋涼（つづきはし りょう）と申します。<br>
+                            2017年、大学生の頃から個人開発を始め、これまでに<strong>39個以上のiOSアプリ</strong>を開発。
+                            現在<strong>24個</strong>がApp
+                            Storeで公開中、<strong>9個</strong>は企業に譲渡、<strong>6個</strong>は現在ストアから配信停止中。
+                        </p>
+                        <p class="intro-paragraph">
+                            私のアプリは、<strong>「思い出×テクノロジー」</strong>をテーマに、人々の大切な瞬間を記録し、
+                            新しい形で楽しめるような体験を提供することを目指しています。
+                        </p>
+                        <p class="intro-paragraph">
+                            「流れるメモ帳」は<strong>15万ダウンロード</strong>を超え、
+                            全アプリ合計で<strong>30万ダウンロード</strong>を超え多くのユーザーに使っていただいています。
+                        </p>
+                    </div>
+
+                    <div class="intro-stats">
+                        <div class="intro-stat">
+                            <div class="intro-stat-icon">🎯</div>
+                            <div class="intro-stat-number">8年</div>
+                            <div class="intro-stat-label">個人開発歴</div>
+                        </div>
+                        <div class="intro-stat">
+                            <div class="intro-stat-icon">📱</div>
+                            <div class="intro-stat-number">24</div>
+                            <div class="intro-stat-label">公開アプリ</div>
+                        </div>
+                        <div class="intro-stat">
+                            <div class="intro-stat-icon">🌟</div>
+                            <div class="intro-stat-number">200,000+</div>
+                            <div class="intro-stat-label">総ダウンロード</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Career Timeline -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Career</span>
+                    <h2 class="section-title">経歴</h2>
+                    <p class="section-description">
+                        大企業での経験を経て、個人開発者として独自の道を歩む
+                    </p>
+                </div>
+
+                <div class="career-timeline">
+                    <div class="career-item">
+                        <div class="career-year">2017</div>
+                        <div class="career-content">
+                            <h3>個人開発スタート</h3>
+                            <p class="career-company">大学生・Independent
+                                Developer</p>
+                            <p class="career-description">
+                                大学生として勉強しながら、初めてのiOSアプリを開発・リリース。
+                                アプリ開発の楽しさに目覚める。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="career-item">
+                        <div class="career-year">2019</div>
+                        <div class="career-content">
+                            <h3>Yahoo Japan</h3>
+                            <p class="career-company">iOSエンジニア</p>
+                            <p class="career-description">
+                                PayPayフリマアプリの開発に従事。フリマアプリの立ち上げをLeanXPというアジャイル開発手法で経験。
+                                ペアプログラミングを通じて、チーム開発の重要性を学ぶ。
+                                またテスト駆動開発（TDD）を実践し、品質の高いコードを書くことの大切さを実感。
+                                個人開発をしている先輩方に囲まれて刺激を受ける。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="career-item">
+                        <div class="career-year">2023</div>
+                        <div class="career-content">
+                            <h3>DeNA</h3>
+                            <p class="career-company">iOSエンジニア</p>
+                            <p class="career-description">
+                                ライブ配信アプリPocochaの開発に携わる。
+                                初心者の体験周りの改善や、ペアプログラミングやテスト駆動開発（TDD）を通じて、より良いコード品質を追求。
+                                ショート動画機能の開発を担当し、ユーザーの新しい体験を提供。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="career-item current">
+                        <div class="career-year">2024-現在</div>
+                        <div class="career-content">
+                            <h3>ZOZO</h3>
+                            <p class="career-company">iOSエンジニア</p>
+                            <p class="career-description">
+                                ZOZOTOWNアプリの開発に携わり、大規模サービスの開発経験を積む。
+                                ユーザーのショッピング体験を向上させるための機能開発や、パフォーマンス最適化に取り組む。
+                                歴史のあるアプリの中で、最新技術を活用しながら、ユーザーに愛されるアプリ作りを目指す。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Skills</span>
+                    <h2 class="section-title">技術スタック</h2>
+                    <p class="section-description">
+                        8年間の開発で培った技術とツール
+                    </p>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">
+                            <span class="skill-icon">📱</span>
+                            iOS Development
+                        </h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Swift</span>
+                            <span class="skill-tag">SwiftUI</span>
+                            <span class="skill-tag">UIKit</span>
+                            <span class="skill-tag">Combine</span>
+                            <span class="skill-tag">Core Data</span>
+                            <span class="skill-tag">Core Location</span>
+                            <span class="skill-tag">MapKit</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">
+                            <span class="skill-icon">🎨</span>
+                            Design & UI/UX
+                        </h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Human Interface
+                                Guidelines</span>
+                            <span class="skill-tag">紙と鉛筆</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">
+                            <span class="skill-icon">☁️</span>
+                            Backend & Cloud
+                        </h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Firebase</span>
+                            <span class="skill-tag">Firestore</span>
+                            <span class="skill-tag">Cloud Functions</span>
+                            <span class="skill-tag">Google Cloud</span>
+                            <span class="skill-tag">App Store Connect API</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">
+                            <span class="skill-icon">🔧</span>
+                            Tools & Others
+                        </h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Xcode Cloud</span>
+                            <span class="skill-tag">GitHub</span>
+                            <span class="skill-tag">Fastlane</span>
+                            <span class="skill-tag">TestFlight</span>
+                            <span class="skill-tag">Analytics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Values Section -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Values</span>
+                    <h2 class="section-title">大切にしていること</h2>
+                </div>
+
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-icon">💭</div>
+                        <h3 class="value-title">ユーザーファースト</h3>
+                        <p class="value-description">
+                            技術は手段。大切なのは、ユーザーの生活をより豊かにすること。
+                            常にユーザーの視点で考え、本当に必要とされるものを作る。
+                        </p>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="value-icon">✨</div>
+                        <h3 class="value-title">美しさと使いやすさ</h3>
+                        <p class="value-description">
+                            見た目の美しさと使いやすさは両立できる。
+                            細部にこだわり、触れて嬉しくなるようなアプリを目指す。
+                        </p>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="value-icon">🚀</div>
+                        <h3 class="value-title">継続的な改善</h3>
+                        <p class="value-description">
+                            リリースはゴールではなくスタート。
+                            ユーザーフィードバックを大切に、常により良いものへ進化させる。
+                        </p>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="value-icon">🌱</div>
+                        <h3 class="value-title">学び続ける姿勢</h3>
+                        <p class="value-description">
+                            技術は日々進化する。新しい技術や手法を学び、
+                            より良い体験を提供できるよう成長し続ける。
                         </p>
                     </div>
                 </div>
-                
-                <div class="career-item">
-                    <div class="career-year">2019</div>
-                    <div class="career-content">
-                        <h3>Yahoo Japan</h3>
-                        <p class="career-company">iOSエンジニア</p>
-                        <p class="career-description">
-                            PayPayフリマアプリの開発に従事。フリマアプリの立ち上げをLeanXPというアジャイル開発手法で経験。
-                            ペアプログラミングを通じて、チーム開発の重要性を学ぶ。
-                            またテスト駆動開発（TDD）を実践し、品質の高いコードを書くことの大切さを実感。
-                            個人開発をしている先輩方に囲まれて刺激を受ける。
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Achievements</span>
+                    <h2 class="section-title">実績・受賞歴</h2>
+                </div>
+
+                <div class="achievements-list">
+                    <div class="achievement-item">
+                        <div class="achievement-icon">🎤</div>
+                        <div class="achievement-content">
+                            <h3>iOSDC Japan 2022 登壇</h3>
+                            <p>「動画だけじゃない！iOS
+                                15のピクチャ・イン・ピクチャを使って好きなUIを表示させよう！」プロポーザル採択・登壇<br>
+                                <a
+                                    href="https://fortee.jp/iosdc-japan-2022/proposal/7646ca37-310b-42d1-8764-d80dd12714fd"
+                                    target="_blank"
+                                    style="color: #007AFF; text-decoration: none;">発表詳細
+                                    →</a></p>
+                        </div>
+                    </div>
+
+                    <div class="achievement-item">
+                        <div class="achievement-icon">🏆</div>
+                        <div class="achievement-content">
+                            <h3>神アプリグランプリ 受賞</h3>
+                            <p>「いつでもタイマー」がYouTuberマメさん主催の神アプリグランプリでグランプリ受賞</p>
+                        </div>
+                    </div>
+
+                    <div class="achievement-item">
+                        <div class="achievement-icon">📱</div>
+                        <div class="achievement-content">
+                            <h3>流れるメモ帳 12万DL突破</h3>
+                            <p>YouTuberマメさんに紹介され、ダウンロード数が急増</p>
+                        </div>
+                    </div>
+
+                    <div class="achievement-item">
+                        <div class="achievement-icon">💰</div>
+                        <div class="achievement-content">
+                            <h3>広告収益100万円達成</h3>
+                            <p>2022年の個人開発アプリの広告収益が年間100万円を突破</p>
+                        </div>
+                    </div>
+
+                    <div class="achievement-item">
+                        <div class="achievement-icon">🌟</div>
+                        <div class="achievement-content">
+                            <h3>ユーザー評価 ★4.6</h3>
+                            <p>全アプリ平均で高評価を維持</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Retired Apps Section -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">History</span>
+                    <h2 class="section-title">開発の軌跡</h2>
+                    <p class="section-description">
+                        40個以上のアプリを開発し、多くの挑戦と学びがありました
+                    </p>
+                </div>
+
+                <div class="app-history-grid">
+                    <!-- 譲渡したアプリ -->
+                    <div class="history-card">
+                        <div class="history-card-icon">🤝</div>
+                        <h3 class="history-card-title">企業への譲渡</h3>
+                        <p class="history-card-description">
+                            9個のアプリを企業に事業譲渡。<br>
+                            新しい環境で成長し続けています。
                         </p>
+                        <div class="history-card-count">9個</div>
                     </div>
-                </div>
-                
-                <div class="career-item">
-                    <div class="career-year">2023</div>
-                    <div class="career-content">
-                        <h3>DeNA</h3>
-                        <p class="career-company">iOSエンジニア</p>
-                        <p class="career-description">
-                            ライブ配信アプリPocochaの開発に携わる。
-                            初心者の体験周りの改善や、ペアプログラミングやテスト駆動開発（TDD）を通じて、より良いコード品質を追求。
-                            ショート動画機能の開発を担当し、ユーザーの新しい体験を提供。
+
+                    <!-- 削除されたアプリ -->
+                    <div class="history-card">
+                        <div class="history-card-icon">📦</div>
+                        <h3 class="history-card-title">サービス終了</h3>
+                        <p class="history-card-description">
+                            6個のアプリがストアから削除。<br>
+                            貴重な経験と学びを残してくれました。
                         </p>
+                        <div class="history-card-apps">
+                            <span class="history-app-tag">星防衛</span>
+                            <span class="history-app-tag">Fight Action</span>
+                            <span class="history-app-tag">SameColor</span>
+                            <span class="history-app-tag">MacAddressQuiz</span>
+                            <span class="history-app-tag">パンケーキ屋さん</span>
+                            <span class="history-app-tag">足利工業大学スクールバス</span>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="career-item current">
-                    <div class="career-year">2024-現在</div>
-                    <div class="career-content">
-                        <h3>ZOZO</h3>
-                        <p class="career-company">iOSエンジニア</p>
-                        <p class="career-description">
-                            ZOZOTOWNアプリの開発に携わり、大規模サービスの開発経験を積む。
-                            ユーザーのショッピング体験を向上させるための機能開発や、パフォーマンス最適化に取り組む。
-                            歴史のあるアプリの中で、最新技術を活用しながら、ユーザーに愛されるアプリ作りを目指す。
+            </div>
+        </section>
+
+        <!-- Message Section -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="message-section">
+                    <h2 class="section-title">メッセージ</h2>
+
+                    <div class="message-content">
+                        <p class="message-text">
+                            アプリ開発を始めて9年。<br>
+                            最初は「自分のアイデアを形にしたい」という単純な思いから始まりました。
                         </p>
+
+                        <p class="message-text">
+                            しかし、ユーザーからの「思い出を残せて嬉しい」「毎日使っています」という声を聞くうちに、
+                            私の使命が明確になりました。
+                        </p>
+
+                        <p class="message-text emphasis">
+                            それは、<strong>テクノロジーで人々の思い出を守り、新しい価値を創造すること</strong>。
+                        </p>
+
+                        <p class="message-text">
+                            写真、場所、感情。すべての思い出には物語があります。<br>
+                            私はその物語を、最高の形で残すお手伝いをしたい。
+                        </p>
+
+                        <p class="message-text">
+                            これからも、思い出とテクノロジーを融合させた<br>
+                            新しい体験を創り続けていきます。
+                        </p>
+
+                        <div class="message-signature">
+                            <p>2025年1月</p>
+                            <p class="signature-name">續橋 涼</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Skills Section -->
-    <section class="section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Skills</span>
-                <h2 class="section-title">技術スタック</h2>
-                <p class="section-description">
-                    8年間の開発で培った技術とツール
+        <!-- Connect Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">つながる</h2>
+                    <p class="section-description">
+                        開発の裏話やアップデート情報をシェアしています
+                    </p>
+                </div>
+
+                <div class="connect-links">
+                    <a href="https://github.com/tsuzukihashi" target="_blank"
+                        class="connect-link">
+                        <div class="connect-icon">🐙</div>
+                        <div class="connect-info">
+                            <h3>GitHub</h3>
+                            <p>オープンソースプロジェクト</p>
+                        </div>
+                    </a>
+
+                    <a href="https://twitter.com/tsuzuki817" target="_blank"
+                        class="connect-link">
+                        <div class="connect-icon">🐦</div>
+                        <div class="connect-info">
+                            <h3>Twitter</h3>
+                            <p>開発の日常をつぶやき</p>
+                        </div>
+                    </a>
+
+                    <a href="https://qiita.com/tsuzuki817" target="_blank"
+                        class="connect-link">
+                        <div class="connect-icon">📚</div>
+                        <div class="connect-info">
+                            <h3>Qiita</h3>
+                            <p>技術記事を投稿</p>
+                        </div>
+                    </a>
+
+                    <a href="/contact/" class="connect-link">
+                        <div class="connect-icon">✉️</div>
+                        <div class="connect-info">
+                            <h3>Contact</h3>
+                            <p>お仕事のご相談はこちら</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer
+            style="background: var(--color-charcoal); color: var(--color-white); padding: 3rem 0; text-align: center;">
+            <div class="container">
+                <!-- SNS Links -->
+                <div class="footer-sns">
+                    <a href="https://x.com/tsuzuki817" target="_blank"
+                        rel="noopener noreferrer" class="sns-link"
+                        aria-label="X (Twitter)">
+                        <img src="/assets/images/sns/x.png" alt="X"
+                            class="sns-icon">
+                    </a>
+                    <a href="https://www.instagram.com/tsuzuki817/"
+                        target="_blank" rel="noopener noreferrer"
+                        class="sns-link" aria-label="Instagram">
+                        <img src="/assets/images/sns/instagram.png"
+                            alt="Instagram" class="sns-icon">
+                    </a>
+                    <a href="https://www.tiktok.com/@tsuzuki817" target="_blank"
+                        rel="noopener noreferrer" class="sns-link"
+                        aria-label="TikTok">
+                        <img src="/assets/images/sns/tiktok.png" alt="TikTok"
+                            class="sns-icon">
+                    </a>
+                    <a href="https://www.youtube.com/@tsuzuki817"
+                        target="_blank" rel="noopener noreferrer"
+                        class="sns-link" aria-label="YouTube">
+                        <img src="/assets/images/sns/youtube.png" alt="YouTube"
+                            class="sns-icon">
+                    </a>
+                    <a href="https://github.com/tsuzukihashi" target="_blank"
+                        rel="noopener noreferrer" class="sns-link"
+                        aria-label="GitHub">
+                        <img src="/assets/images/sns/github.png" alt="GitHub"
+                            class="sns-icon">
+                    </a>
+                </div>
+
+                <p
+                    style="color: var(--color-white); opacity: 0.8; margin-bottom: 1rem; margin-top: 2rem;">
+                    © 2025 Ryo Tsuzukihashi. All rights reserved.
                 </p>
-            </div>
-            
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3 class="skill-category-title">
-                        <span class="skill-icon">📱</span>
-                        iOS Development
-                    </h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Swift</span>
-                        <span class="skill-tag">SwiftUI</span>
-                        <span class="skill-tag">UIKit</span>
-                        <span class="skill-tag">Combine</span>
-                        <span class="skill-tag">Core Data</span>
-                        <span class="skill-tag">Core Location</span>
-                        <span class="skill-tag">MapKit</span>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3 class="skill-category-title">
-                        <span class="skill-icon">🎨</span>
-                        Design & UI/UX
-                    </h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Human Interface Guidelines</span>
-                        <span class="skill-tag">紙と鉛筆</span>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3 class="skill-category-title">
-                        <span class="skill-icon">☁️</span>
-                        Backend & Cloud
-                    </h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Firebase</span>
-                        <span class="skill-tag">Firestore</span>
-                        <span class="skill-tag">Cloud Functions</span>
-                        <span class="skill-tag">Google Cloud</span>
-                        <span class="skill-tag">App Store Connect API</span>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3 class="skill-category-title">
-                        <span class="skill-icon">🔧</span>
-                        Tools & Others
-                    </h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Xcode Cloud</span>
-                        <span class="skill-tag">GitHub</span>
-                        <span class="skill-tag">Fastlane</span>
-                        <span class="skill-tag">TestFlight</span>
-                        <span class="skill-tag">Analytics</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Values Section -->
-    <section class="section section-alt">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Values</span>
-                <h2 class="section-title">大切にしていること</h2>
-            </div>
-            
-            <div class="values-grid">
-                <div class="value-card">
-                    <div class="value-icon">💭</div>
-                    <h3 class="value-title">ユーザーファースト</h3>
-                    <p class="value-description">
-                        技術は手段。大切なのは、ユーザーの生活をより豊かにすること。
-                        常にユーザーの視点で考え、本当に必要とされるものを作る。
-                    </p>
-                </div>
-                
-                <div class="value-card">
-                    <div class="value-icon">✨</div>
-                    <h3 class="value-title">美しさと使いやすさ</h3>
-                    <p class="value-description">
-                        見た目の美しさと使いやすさは両立できる。
-                        細部にこだわり、触れて嬉しくなるようなアプリを目指す。
-                    </p>
-                </div>
-                
-                <div class="value-card">
-                    <div class="value-icon">🚀</div>
-                    <h3 class="value-title">継続的な改善</h3>
-                    <p class="value-description">
-                        リリースはゴールではなくスタート。
-                        ユーザーフィードバックを大切に、常により良いものへ進化させる。
-                    </p>
-                </div>
-                
-                <div class="value-card">
-                    <div class="value-icon">🌱</div>
-                    <h3 class="value-title">学び続ける姿勢</h3>
-                    <p class="value-description">
-                        技術は日々進化する。新しい技術や手法を学び、
-                        より良い体験を提供できるよう成長し続ける。
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Achievements Section -->
-    <section class="section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Achievements</span>
-                <h2 class="section-title">実績・受賞歴</h2>
-            </div>
-            
-            <div class="achievements-list">
-                <div class="achievement-item">
-                    <div class="achievement-icon">🎤</div>
-                    <div class="achievement-content">
-                        <h3>iOSDC Japan 2022 登壇</h3>
-                        <p>「動画だけじゃない！iOS 15のピクチャ・イン・ピクチャを使って好きなUIを表示させよう！」プロポーザル採択・登壇<br>
-                        <a href="https://fortee.jp/iosdc-japan-2022/proposal/7646ca37-310b-42d1-8764-d80dd12714fd" target="_blank" style="color: #007AFF; text-decoration: none;">発表詳細 →</a></p>
-                    </div>
-                </div>
-                
-                <div class="achievement-item">
-                    <div class="achievement-icon">🏆</div>
-                    <div class="achievement-content">
-                        <h3>神アプリグランプリ 受賞</h3>
-                        <p>「いつでもタイマー」がYouTuberマメさん主催の神アプリグランプリでグランプリ受賞</p>
-                    </div>
-                </div>
-                
-                <div class="achievement-item">
-                    <div class="achievement-icon">📱</div>
-                    <div class="achievement-content">
-                        <h3>流れるメモ帳 12万DL突破</h3>
-                        <p>YouTuberマメさんに紹介され、ダウンロード数が急増</p>
-                    </div>
-                </div>
-                
-                <div class="achievement-item">
-                    <div class="achievement-icon">💰</div>
-                    <div class="achievement-content">
-                        <h3>広告収益100万円達成</h3>
-                        <p>2022年の個人開発アプリの広告収益が年間100万円を突破</p>
-                    </div>
-                </div>
-                
-                <div class="achievement-item">
-                    <div class="achievement-icon">🌟</div>
-                    <div class="achievement-content">
-                        <h3>ユーザー評価 ★4.6</h3>
-                        <p>全アプリ平均で高評価を維持</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Retired Apps Section -->
-    <section class="section section-alt">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">History</span>
-                <h2 class="section-title">開発の軌跡</h2>
-                <p class="section-description">
-                    39個以上のアプリを開発し、多くの挑戦と学びがありました
+                <p
+                    style="color: var(--color-white); opacity: 0.6; font-size: 0.875rem;">
+                    Crafting memories with technology since 2017.
                 </p>
-            </div>
-            
-            <div class="app-history-grid">
-                <!-- 譲渡したアプリ -->
-                <div class="history-card">
-                    <div class="history-card-icon">🤝</div>
-                    <h3 class="history-card-title">企業への譲渡</h3>
-                    <p class="history-card-description">
-                        9個のアプリを企業に事業譲渡。<br>
-                        新しい環境で成長し続けています。
-                    </p>
-                    <div class="history-card-count">9個</div>
-                </div>
-                
-                <!-- 削除されたアプリ -->
-                <div class="history-card">
-                    <div class="history-card-icon">📦</div>
-                    <h3 class="history-card-title">サービス終了</h3>
-                    <p class="history-card-description">
-                        6個のアプリがストアから削除。<br>
-                        貴重な経験と学びを残してくれました。
-                    </p>
-                    <div class="history-card-apps">
-                        <span class="history-app-tag">星防衛</span>
-                        <span class="history-app-tag">Fight Action</span>
-                        <span class="history-app-tag">SameColor</span>
-                        <span class="history-app-tag">MacAddressQuiz</span>
-                        <span class="history-app-tag">パンケーキ屋さん</span>
-                        <span class="history-app-tag">足利工業大学スクールバス</span>
-                    </div>
+                <div style="margin-top: 2rem;">
+                    <a href="/legal/privacy-policy.html"
+                        style="color: var(--color-white); opacity: 0.6; margin: 0 1rem; text-decoration: none;">プライバシーポリシー</a>
+                    <a href="/legal/terms-of-service.html"
+                        style="color: var(--color-white); opacity: 0.6; margin: 0 1rem; text-decoration: none;">利用規約</a>
+                    <a href="/legal/commercial-law.html"
+                        style="color: var(--color-white); opacity: 0.6; margin: 0 1rem; text-decoration: none;">特定商取引法</a>
+                    <a href="/legal/disclaimer.html"
+                        style="color: var(--color-white); opacity: 0.6; margin: 0 1rem; text-decoration: none;">免責事項</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </footer>
 
-    <!-- Message Section -->
-    <section class="section section-alt">
-        <div class="container">
-            <div class="message-section">
-                <h2 class="section-title">メッセージ</h2>
-                
-                <div class="message-content">
-                    <p class="message-text">
-                        アプリ開発を始めて9年。<br>
-                        最初は「自分のアイデアを形にしたい」という単純な思いから始まりました。
-                    </p>
-                    
-                    <p class="message-text">
-                        しかし、ユーザーからの「思い出を残せて嬉しい」「毎日使っています」という声を聞くうちに、
-                        私の使命が明確になりました。
-                    </p>
-                    
-                    <p class="message-text emphasis">
-                        それは、<strong>テクノロジーで人々の思い出を守り、新しい価値を創造すること</strong>。
-                    </p>
-                    
-                    <p class="message-text">
-                        写真、場所、感情。すべての思い出には物語があります。<br>
-                        私はその物語を、最高の形で残すお手伝いをしたい。
-                    </p>
-                    
-                    <p class="message-text">
-                        これからも、思い出とテクノロジーを融合させた<br>
-                        新しい体験を創り続けていきます。
-                    </p>
-                    
-                    <div class="message-signature">
-                        <p>2025年1月</p>
-                        <p class="signature-name">續橋 涼</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Connect Section -->
-    <section class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">つながる</h2>
-                <p class="section-description">
-                    開発の裏話やアップデート情報をシェアしています
-                </p>
-            </div>
-            
-            <div class="connect-links">
-                <a href="https://github.com/tsuzukihashi" target="_blank" class="connect-link">
-                    <div class="connect-icon">🐙</div>
-                    <div class="connect-info">
-                        <h3>GitHub</h3>
-                        <p>オープンソースプロジェクト</p>
-                    </div>
-                </a>
-                
-                <a href="https://twitter.com/tsuzuki817" target="_blank" class="connect-link">
-                    <div class="connect-icon">🐦</div>
-                    <div class="connect-info">
-                        <h3>Twitter</h3>
-                        <p>開発の日常をつぶやき</p>
-                    </div>
-                </a>
-                
-                <a href="https://qiita.com/tsuzuki817" target="_blank" class="connect-link">
-                    <div class="connect-icon">📚</div>
-                    <div class="connect-info">
-                        <h3>Qiita</h3>
-                        <p>技術記事を投稿</p>
-                    </div>
-                </a>
-                
-                <a href="/contact/" class="connect-link">
-                    <div class="connect-icon">✉️</div>
-                    <div class="connect-info">
-                        <h3>Contact</h3>
-                        <p>お仕事のご相談はこちら</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer style="background: var(--color-charcoal); color: var(--color-white); padding: 3rem 0; text-align: center;">
-        <div class="container">
-            <!-- SNS Links -->
-            <div class="footer-sns">
-                <a href="https://x.com/tsuzuki817" target="_blank" rel="noopener noreferrer" class="sns-link" aria-label="X (Twitter)">
-                    <img src="/assets/images/sns/x.png" alt="X" class="sns-icon">
-                </a>
-                <a href="https://www.instagram.com/tsuzuki817/" target="_blank" rel="noopener noreferrer" class="sns-link" aria-label="Instagram">
-                    <img src="/assets/images/sns/instagram.png" alt="Instagram" class="sns-icon">
-                </a>
-                <a href="https://www.tiktok.com/@tsuzuki817" target="_blank" rel="noopener noreferrer" class="sns-link" aria-label="TikTok">
-                    <img src="/assets/images/sns/tiktok.png" alt="TikTok" class="sns-icon">
-                </a>
-                <a href="https://www.youtube.com/@tsuzuki817" target="_blank" rel="noopener noreferrer" class="sns-link" aria-label="YouTube">
-                    <img src="/assets/images/sns/youtube.png" alt="YouTube" class="sns-icon">
-                </a>
-                <a href="https://github.com/tsuzukihashi" target="_blank" rel="noopener noreferrer" class="sns-link" aria-label="GitHub">
-                    <img src="/assets/images/sns/github.png" alt="GitHub" class="sns-icon">
-                </a>
-            </div>
-            
-            <p style="color: var(--color-white); opacity: 0.8; margin-bottom: 1rem; margin-top: 2rem;">
-                © 2025 Ryo Tsuzukihashi. All rights reserved.
-            </p>
-            <p style="color: var(--color-white); opacity: 0.6; font-size: 0.875rem;">
-                Crafting memories with technology since 2017.
-            </p>
-            <div style="margin-top: 2rem;">
-                <a href="/legal/privacy-policy.html" style="color: var(--color-white); opacity: 0.6; margin: 0 1rem; text-decoration: none;">プライバシーポリシー</a>
-                <a href="/legal/terms-of-service.html" style="color: var(--color-white); opacity: 0.6; margin: 0 1rem; text-decoration: none;">利用規約</a>
-                <a href="/legal/commercial-law.html" style="color: var(--color-white); opacity: 0.6; margin: 0 1rem; text-decoration: none;">特定商取引法</a>
-                <a href="/legal/disclaimer.html" style="color: var(--color-white); opacity: 0.6; margin: 0 1rem; text-decoration: none;">免責事項</a>
-            </div>
-        </div>
-    </footer>
-
-    <!-- JavaScript -->
-    <script>
+        <!-- JavaScript -->
+        <script>
         // Navigation scroll effect
         window.addEventListener('scroll', function() {
             const nav = document.getElementById('nav');
@@ -577,5 +619,5 @@
             observer.observe(el);
         });
     </script>
-</body>
+    </body>
 </html>
