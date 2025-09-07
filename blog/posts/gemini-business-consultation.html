@@ -287,8 +287,8 @@
     <script src="/assets/js/translations.js"></script>
     <script src="/assets/js/language-manager.js"></script>
     <script>
-        // Load header and footer
-        fetch('/components/header.html')
+        // Load header and footer with correct paths
+        fetch('../../components/header.html')
             .then(response => response.text())
             .then(data => document.getElementById('header-container').innerHTML = data)
             .then(() => {
@@ -298,7 +298,7 @@
                 }
             });
             
-        fetch('/components/footer.html')
+        fetch('../../components/footer.html')
             .then(response => response.text())
             .then(data => document.getElementById('footer-container').innerHTML = data);
     </script>
