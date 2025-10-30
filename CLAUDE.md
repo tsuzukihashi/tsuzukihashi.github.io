@@ -1,7 +1,7 @@
-# CLAUDE.md - tsuzuki817 Webサイト要件書
+# CLAUDE.md - tsuzukit Webサイト要件書
 
 ## プロジェクト概要
-個人開発者「tsuzuki817」のWebサイト構築プロジェクト
+個人開発者「tsuzukit」のWebサイト構築プロジェクト
 
 ## 基本情報
 - **活動者名**: tsuzuki817
