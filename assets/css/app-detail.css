@@ -1,17 +1,18 @@
 /* ================================
-   App Detail Page Styles
-   Extends memories-tech.css
+   App Detail Page - Monochrome Minimal Design
+   Inspired by NOT A HOTEL & Kyu Camera
    ================================ */
 
 /* ========== App Hero Section ========== */
 .app-hero {
   min-height: 80vh;
   padding-top: calc(var(--space-2xl) + 80px);
-  padding-bottom: var(--space-xl);
+  padding-bottom: var(--space-2xl);
   position: relative;
-  background: var(--color-cream);
+  background: var(--color-background);
   display: flex;
   align-items: center;
+  border-bottom: 1px solid var(--color-border);
 }
 
 .app-hero-content {
@@ -26,75 +27,75 @@
 .app-icon-wrapper {
   position: relative;
   display: inline-block;
-  margin-bottom: 2rem;
+  margin-bottom: var(--space-xl);
   animation: slideDown 0.8s ease;
 }
 
 .app-icon {
   width: 150px;
   height: 150px;
-  border-radius: 30px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
-  border: 3px solid var(--color-white);
+  border-radius: 0;
+  border: 1px solid var(--color-border);
 }
 
 .app-icon-badge {
   position: absolute;
   top: -10px;
   right: -10px;
-  background: var(--color-sunset);
-  color: var(--color-white);
+  background: var(--color-primary);
+  color: var(--color-background);
   padding: 0.5rem 1rem;
-  border-radius: 20px;
-  font-size: 0.875rem;
-  font-weight: 700;
-  box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+  border-radius: 0;
+  font-size: 0.65rem;
+  font-weight: 300;
+  border: 1px solid var(--color-primary);
   animation: pulse 2s ease infinite;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
 }
 
 .app-title {
   font-size: clamp(2.5rem, 5vw, 3.5rem);
-  font-weight: 800;
-  color: var(--color-charcoal);
-  margin-bottom: 1rem;
+  font-weight: 200;
+  color: var(--color-primary);
+  margin-bottom: var(--space-md);
   animation: slideUp 0.8s ease 0.2s both;
+  letter-spacing: -0.03em;
 }
 
 .app-tagline {
-  font-size: 1.25rem;
-  color: var(--color-gray);
-  margin-bottom: 2rem;
+  font-size: 1.125rem;
+  color: var(--color-secondary);
+  margin-bottom: var(--space-lg);
   animation: slideUp 0.8s ease 0.3s both;
+  font-weight: 300;
+  line-height: 1.8;
 }
 
 .app-badges {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: var(--space-md);
   flex-wrap: wrap;
-  margin-bottom: 2rem;
+  margin-bottom: var(--space-lg);
   animation: slideUp 0.8s ease 0.4s both;
 }
 
 .badge {
   padding: 0.5rem 1.5rem;
-  background: var(--color-white);
-  border-radius: 50px;
-  font-size: 0.875rem;
-  font-weight: 600;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  background: var(--color-background);
+  border-radius: 0;
+  font-size: 0.75rem;
+  font-weight: 300;
+  border: 1px solid var(--color-border);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
-.badge-downloads {
-  color: var(--color-sunset);
-}
-
-.badge-rating {
-  color: var(--color-golden);
-}
-
+.badge-downloads,
+.badge-rating,
 .badge-category {
-  color: var(--color-ocean);
+  color: var(--color-primary);
 }
 
 .app-cta {
@@ -113,21 +114,22 @@
 }
 
 .story-quote {
-  background: var(--color-white);
-  padding: 2rem;
-  border-radius: 20px;
-  margin-bottom: 2rem;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  background: var(--color-background);
+  padding: var(--space-lg);
+  border-radius: 0;
+  margin-bottom: var(--space-lg);
+  border: 1px solid var(--color-border);
 }
 
 .story-quote blockquote {
-  font-size: 1.25rem;
-  line-height: 1.8;
-  color: var(--color-charcoal);
+  font-size: 1.125rem;
+  line-height: 1.9;
+  color: var(--color-primary);
   font-style: italic;
   margin: 0;
   position: relative;
-  padding-left: 2rem;
+  padding-left: var(--space-lg);
+  font-weight: 300;
 }
 
 .story-quote blockquote::before {
@@ -136,41 +138,43 @@
   left: 0;
   top: -10px;
   font-size: 3rem;
-  color: var(--color-sunset);
-  font-weight: 700;
+  color: var(--color-border);
+  font-weight: 200;
 }
 
 .story-text {
   font-size: 1.125rem;
-  line-height: 1.8;
-  color: var(--color-gray);
-  margin-bottom: 1.5rem;
+  line-height: 1.9;
+  color: var(--color-secondary);
+  margin-bottom: var(--space-md);
+  font-weight: 300;
 }
 
 .story-text.emphasis {
   font-size: 1.25rem;
-  color: var(--color-charcoal);
-  font-weight: 600;
-  padding: 1.5rem;
-  background: var(--color-cream);
-  border-radius: 20px;
+  color: var(--color-primary);
+  font-weight: 300;
+  padding: var(--space-lg);
+  background: var(--color-accent);
+  border-radius: 0;
   text-align: center;
+  border: 1px solid var(--color-border);
 }
 
 /* ========== Features Grid ========== */
 .features-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  gap: var(--space-2xl);
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .feature-card {
-  background: var(--color-white);
-  padding: 2rem;
-  border-radius: 20px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  background: var(--color-background);
+  padding: var(--space-xl);
+  border-radius: 0;
+  border: 1px solid var(--color-border);
   transition: var(--transition-normal);
   opacity: 0;
   transform: translateY(20px);
@@ -183,41 +187,45 @@
 }
 
 .feature-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
+  border-color: var(--color-primary);
 }
 
 .feature-icon {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  font-size: 2rem;
+  margin-bottom: var(--space-md);
+  color: var(--color-primary);
 }
 
 .feature-title {
-  font-size: 1.25rem;
-  color: var(--color-charcoal);
-  margin-bottom: 0.75rem;
+  font-size: 1.125rem;
+  font-weight: 300;
+  color: var(--color-primary);
+  margin-bottom: var(--space-sm);
+  letter-spacing: 0.05em;
 }
 
 .feature-description {
-  color: var(--color-gray);
-  line-height: 1.6;
+  color: var(--color-secondary);
+  line-height: 1.8;
   margin: 0;
+  font-weight: 300;
 }
 
 /* ========== Technology Section ========== */
 .tech-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 2rem;
+  gap: var(--space-2xl);
   max-width: 1000px;
   margin: 0 auto;
 }
 
 .tech-card {
-  background: var(--color-white);
-  padding: 2rem;
-  border-radius: 20px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  background: var(--color-background);
+  padding: var(--space-xl);
+  border-radius: 0;
+  border: 1px solid var(--color-border);
   transition: var(--transition-normal);
   opacity: 0;
   transform: translateX(-20px);
@@ -230,47 +238,50 @@
 }
 
 .tech-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
+  border-color: var(--color-primary);
 }
 
 .tech-title {
-  font-size: 1.25rem;
-  color: var(--color-charcoal);
-  margin-bottom: 1rem;
+  font-size: 1.125rem;
+  font-weight: 300;
+  color: var(--color-primary);
+  margin-bottom: var(--space-sm);
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: var(--space-sm);
+  letter-spacing: 0.05em;
 }
 
 .tech-icon {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .tech-description {
-  color: var(--color-gray);
-  line-height: 1.6;
+  color: var(--color-secondary);
+  line-height: 1.8;
   margin: 0;
+  font-weight: 300;
 }
 
 /* ========== Achievements Grid ========== */
 .achievements-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+  gap: var(--space-2xl);
   max-width: 1000px;
   margin: 0 auto;
 }
 
 .achievement-card {
   text-align: center;
-  padding: 2rem;
-  background: var(--color-white);
-  border-radius: 20px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  padding: var(--space-xl);
+  background: var(--color-background);
+  border-radius: 0;
+  border: 1px solid var(--color-border);
   transition: var(--transition-normal);
   opacity: 0;
-  transform: scale(0.9);
+  transform: scale(0.95);
 }
 
 .achievement-card.animated {
@@ -280,80 +291,85 @@
 }
 
 .achievement-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+  transform: translateY(-8px);
+  border-color: var(--color-primary);
 }
 
 .achievement-number {
-  font-size: 2.5rem;
-  font-weight: 800;
-  background: var(--color-sunset);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  font-size: 3rem;
+  font-weight: 200;
+  color: var(--color-primary);
   margin-bottom: 0.5rem;
+  letter-spacing: -0.03em;
 }
 
 .achievement-label {
-  font-size: 1.125rem;
-  color: var(--color-charcoal);
-  font-weight: 600;
-  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  color: var(--color-primary);
+  font-weight: 300;
+  margin-bottom: var(--space-sm);
+  letter-spacing: 0.05em;
 }
 
 .achievement-description {
-  color: var(--color-gray);
+  color: var(--color-secondary);
   font-size: 0.875rem;
-  line-height: 1.5;
+  line-height: 1.6;
   margin: 0;
+  font-weight: 300;
 }
 
 /* ========== Reviews Section ========== */
 .reviews-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 2rem;
+  gap: var(--space-2xl);
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .review-card {
-  background: var(--color-white);
-  padding: 2rem;
-  border-radius: 20px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  background: var(--color-background);
+  padding: var(--space-xl);
+  border-radius: 0;
+  border: 1px solid var(--color-border);
   transition: var(--transition-normal);
 }
 
 .review-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
+  border-color: var(--color-primary);
 }
 
 .review-rating {
-  color: var(--color-golden);
-  font-size: 1.25rem;
-  margin-bottom: 1rem;
+  color: var(--color-primary);
+  font-size: 1.125rem;
+  margin-bottom: var(--space-sm);
+  font-weight: 300;
 }
 
 .review-title {
-  font-size: 1.125rem;
-  color: var(--color-charcoal);
-  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--color-primary);
+  margin-bottom: var(--space-sm);
+  letter-spacing: 0.05em;
 }
 
 .review-text {
-  color: var(--color-gray);
-  line-height: 1.6;
-  margin-bottom: 1rem;
+  color: var(--color-secondary);
+  line-height: 1.8;
+  margin-bottom: var(--space-sm);
   font-style: italic;
+  font-weight: 300;
 }
 
 .review-author {
-  color: var(--color-ocean);
+  color: var(--color-primary);
   font-size: 0.875rem;
-  font-weight: 600;
+  font-weight: 300;
   margin: 0;
+  letter-spacing: 0.05em;
 }
 
 /* ========== Developer Message ========== */
@@ -364,73 +380,78 @@
 }
 
 .developer-message .message-content {
-  background: var(--color-white);
-  padding: 3rem;
-  border-radius: 30px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+  background: var(--color-background);
+  padding: var(--space-2xl);
+  border-radius: 0;
+  border: 1px solid var(--color-border);
 }
 
 .developer-message p {
   font-size: 1.125rem;
-  line-height: 1.8;
-  color: var(--color-gray);
-  margin-bottom: 1.5rem;
+  line-height: 1.9;
+  color: var(--color-secondary);
+  margin-bottom: var(--space-md);
+  font-weight: 300;
 }
 
 .developer-message p.emphasis {
   font-size: 1.25rem;
-  color: var(--color-charcoal);
-  font-weight: 600;
-  padding: 1.5rem;
-  background: var(--color-cream);
-  border-radius: 20px;
-  margin: 2rem 0;
+  color: var(--color-primary);
+  font-weight: 300;
+  padding: var(--space-lg);
+  background: var(--color-accent);
+  border-radius: 0;
+  margin: var(--space-lg) 0;
+  border: 1px solid var(--color-border);
 }
 
 .signature {
-  margin-top: 2rem;
-  padding-top: 2rem;
-  border-top: 1px solid var(--color-light-gray);
+  margin-top: var(--space-lg);
+  padding-top: var(--space-lg);
+  border-top: 1px solid var(--color-border);
 }
 
 .signature-name {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--color-charcoal);
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: var(--color-primary);
   margin-top: 0.5rem;
+  letter-spacing: 0.05em;
 }
 
 /* ========== Download CTA ========== */
 .download-cta {
   text-align: center;
-  padding: 3rem;
-  background: var(--color-white);
-  border-radius: 30px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+  padding: var(--space-2xl);
+  background: var(--color-background);
+  border-radius: 0;
+  border: 1px solid var(--color-border);
   max-width: 600px;
   margin: 0 auto;
 }
 
 .app-store-button {
-  margin: 2rem 0;
+  margin: var(--space-lg) 0;
 }
 
 .btn-large {
   padding: 1rem 2.5rem;
-  font-size: 1.125rem;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
 }
 
 .download-note {
-  color: var(--color-gray);
+  color: var(--color-secondary);
   font-size: 0.875rem;
-  margin-top: 1rem;
+  margin-top: var(--space-sm);
+  font-weight: 300;
 }
 
 /* ========== Related Apps ========== */
 .related-apps {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  gap: var(--space-2xl);
   max-width: 1000px;
   margin: 0 auto;
 }
@@ -438,54 +459,59 @@
 .related-app-card {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
-  padding: 1.5rem;
-  background: var(--color-white);
-  border-radius: 20px;
+  gap: var(--space-md);
+  padding: var(--space-lg);
+  background: var(--color-background);
+  border-radius: 0;
   text-decoration: none;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--color-border);
   transition: var(--transition-normal);
 }
 
 .related-app-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
+  border-color: var(--color-primary);
 }
 
 .related-app-icon {
   width: 60px;
   height: 60px;
-  border-radius: 15px;
+  border-radius: 0;
   flex-shrink: 0;
+  border: 1px solid var(--color-border);
 }
 
 .related-app-icon.more-apps {
-  background: var(--color-sunset);
+  background: var(--color-primary);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-white);
+  color: var(--color-background);
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 200;
+  border: 1px solid var(--color-primary);
 }
 
 .related-app-info h3 {
-  font-size: 1.125rem;
-  color: var(--color-charcoal);
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--color-primary);
   margin-bottom: 0.25rem;
+  letter-spacing: 0.05em;
 }
 
 .related-app-info p {
-  color: var(--color-gray);
+  color: var(--color-secondary);
   font-size: 0.875rem;
   margin: 0;
+  font-weight: 300;
 }
 
 /* ========== Animations ========== */
 @keyframes zoomIn {
   from {
     opacity: 0;
-    transform: scale(0.9);
+    transform: scale(0.95);
   }
   to {
     opacity: 1;
@@ -499,33 +525,33 @@
     width: 120px;
     height: 120px;
   }
-  
+
   .features-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .tech-content {
     grid-template-columns: 1fr;
   }
-  
+
   .achievements-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .reviews-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .related-apps {
     grid-template-columns: 1fr;
   }
-  
+
   .developer-message .message-content {
-    padding: 2rem 1.5rem;
+    padding: var(--space-lg);
   }
-  
+
   .download-cta {
-    padding: 2rem 1.5rem;
+    padding: var(--space-lg);
   }
 }
 
@@ -533,12 +559,12 @@
   .achievements-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .app-badges {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .badge {
     width: 100%;
     max-width: 250px;
