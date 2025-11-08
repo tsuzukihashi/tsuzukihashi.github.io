@@ -163,6 +163,7 @@ const translations = {
         // Location
         location: {
             title: "所在地",
+            businessName: "屋号 TsuzuKit",
             storeName: "京都店",
             postalCode: "〒600-8208",
             address: "京都府京都市下京区小稲荷町85-2 Grand-K 京都駅前ビル 201"
@@ -383,6 +384,7 @@ const translations = {
         // Location
         location: {
             title: "Location",
+            businessName: "Business Name: TsuzuKit",
             storeName: "Kyoto Store",
             postalCode: "〒600-8208",
             address: "201 Grand-K Kyoto Station Building, 85-2 Koinaricho, Shimogyo-ku, Kyoto City, Kyoto Prefecture"
@@ -603,6 +605,7 @@ const translations = {
         // Location
         location: {
             title: "위치",
+            businessName: "상호명 TsuzuKit",
             storeName: "교토점",
             postalCode: "〒600-8208",
             address: "교토부 교토시 시모교구 코이나리초 85-2 Grand-K 교토역 앞 빌딩 201"
