@@ -15,9 +15,19 @@
   --color-accent: #fafafa;
   --color-border: #e0e0e0;
 
+  /* Accent Colors - Memories & Technology */
+  --color-accent-warm: #000000;
+  --color-accent-cool: #000000;
+
   /* Typography */
   --font-main: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
   --font-accent: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+
+  /* Border Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
 
   /* Spacing - Generous whitespace */
   --space-xs: 0.5rem;
@@ -30,6 +40,7 @@
   /* Animation - Subtle and refined */
   --transition-normal: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-slow: 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-spring: 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
   --animation-float: float 12s ease-in-out infinite;
 }
 
@@ -89,7 +100,7 @@ p {
 
 .text-gradient {
   color: var(--color-primary);
-  font-weight: 300;
+  font-weight: 400;
 }
 
 /* ========== Navigation ========== */
@@ -158,13 +169,15 @@ p {
   bottom: -4px;
   left: 0;
   width: 0;
-  height: 1px;
+  height: 2px;
   background: var(--color-primary);
-  transition: var(--transition-normal);
+  transition: var(--transition-spring);
+  border-radius: 2px;
 }
 
 .nav-link:hover {
   color: var(--color-primary);
+  transform: translateY(-2px);
 }
 
 .nav-link:hover::after {
@@ -211,14 +224,15 @@ p {
   padding: 0.5rem 1.5rem;
   margin-bottom: 3rem;
   background: var(--color-primary);
-  border-radius: 0;
+  border-radius: var(--radius-xl);
   font-size: 0.75rem;
-  font-weight: 300;
+  font-weight: 500;
   color: var(--color-background);
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  border: 1px solid var(--color-primary);
+  border: none;
   animation: slideDown 0.8s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .hero-title {
@@ -246,39 +260,60 @@ p {
   display: inline-block;
   padding: 1rem 2.5rem;
   font-size: 0.875rem;
-  font-weight: 300;
+  font-weight: 500;
   text-decoration: none;
-  border-radius: 0;
-  transition: var(--transition-normal);
+  border-radius: var(--radius-lg);
+  transition: var(--transition-spring);
   cursor: pointer;
-  border: 1px solid var(--color-primary);
+  border: 2px solid var(--color-primary);
   font-family: var(--font-main);
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.btn:hover::before {
+  width: 300px;
+  height: 300px;
 }
 
 .btn-primary {
   background: var(--color-primary);
   color: var(--color-background);
+  border-color: var(--color-primary);
 }
 
 .btn-primary:hover {
-  transform: translateY(-2px);
-  background: var(--color-background);
-  color: var(--color-primary);
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
 .btn-secondary {
   background: transparent;
   color: var(--color-primary);
-  border: 1px solid var(--color-border);
+  border: 2px solid var(--color-border);
 }
 
 .btn-secondary:hover {
   border-color: var(--color-primary);
   background: var(--color-primary);
   color: var(--color-background);
-  transform: translateY(-2px);
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
 /* ========== Memory Cards (Portfolio) ========== */
@@ -291,16 +326,34 @@ p {
 
 .memory-card {
   background: var(--color-background);
-  border-radius: 0;
+  border-radius: var(--radius-lg);
   overflow: hidden;
   border: 1px solid var(--color-border);
-  transition: var(--transition-normal);
+  transition: var(--transition-spring);
   cursor: pointer;
+  position: relative;
+}
+
+.memory-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--color-primary);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.memory-card:hover::before {
+  transform: scaleX(1);
 }
 
 .memory-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.04);
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.08);
   border-color: var(--color-primary);
 }
 
@@ -332,13 +385,24 @@ p {
   right: var(--space-md);
   padding: 0.5rem 1rem;
   background: var(--color-primary);
-  backdrop-filter: none;
-  border-radius: 0;
+  backdrop-filter: blur(10px);
+  border-radius: var(--radius-md);
   font-size: 0.75rem;
-  font-weight: 300;
+  font-weight: 600;
   color: var(--color-background);
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
 }
 
 .memory-card-content {
@@ -421,15 +485,16 @@ p {
   width: 45%;
   padding: var(--space-lg);
   background: var(--color-background);
-  border-radius: 0;
+  border-radius: var(--radius-lg);
   border: 1px solid var(--color-border);
   position: relative;
-  transition: var(--transition-normal);
+  transition: var(--transition-spring);
 }
 
 .timeline-content:hover {
   border-color: var(--color-primary);
   transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
 }
 
 .timeline-year {
@@ -439,15 +504,16 @@ p {
   width: 80px;
   height: 80px;
   background: var(--color-primary);
-  border-radius: 0;
+  border-radius: var(--radius-md);
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--color-background);
-  font-weight: 200;
+  font-weight: 600;
   font-size: 1.25rem;
-  border: 1px solid var(--color-primary);
+  border: none;
   letter-spacing: -0.02em;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 .timeline-item:nth-child(odd) .timeline-year {
@@ -485,12 +551,13 @@ p {
   margin-bottom: var(--space-md);
   background: var(--color-primary);
   color: var(--color-background);
-  border-radius: 0;
+  border-radius: var(--radius-xl);
   font-size: 0.75rem;
-  font-weight: 300;
+  font-weight: 600;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  border: 1px solid var(--color-primary);
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .section-title {
@@ -532,22 +599,45 @@ p {
   text-align: center;
   padding: var(--space-xl);
   background: var(--color-background);
-  border-radius: 0;
+  border-radius: var(--radius-lg);
   border: 1px solid var(--color-border);
-  transition: var(--transition-normal);
+  transition: var(--transition-spring);
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.03), transparent);
+  transition: left 0.5s;
+}
+
+.stat-card:hover::before {
+  left: 100%;
 }
 
 .stat-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-8px) scale(1.02);
   border-color: var(--color-primary);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1);
 }
 
 .stat-number {
   font-size: 4rem;
-  font-weight: 200;
+  font-weight: 600;
   color: var(--color-primary);
   margin-bottom: var(--space-sm);
   letter-spacing: -0.03em;
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover .stat-number {
+  transform: scale(1.1);
 }
 
 .stat-label {
@@ -648,8 +738,8 @@ p {
     width: 100%;
     height: 3px;
     background: var(--color-primary);
-    border-radius: 0;
-    transition: var(--transition-normal);
+    border-radius: var(--radius-sm);
+    transition: var(--transition-spring);
   }
   
   .nav-toggle.active span:nth-child(1) {
@@ -725,6 +815,87 @@ p {
   animation: fadeInUp 0.8s ease forwards;
 }
 
+/* ========== Footer ========== */
+.footer {
+  background: var(--color-primary);
+  color: var(--color-background);
+  padding: var(--space-2xl) 0 var(--space-xl) 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--color-secondary);
+}
+
+.footer-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 var(--space-xl);
+}
+
+.footer-copyright {
+  color: var(--color-background);
+  opacity: 0.9;
+  margin-bottom: var(--space-sm);
+  margin-top: var(--space-lg);
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.footer-tagline {
+  color: var(--color-background);
+  opacity: 0.7;
+  font-size: 0.875rem;
+  margin-bottom: var(--space-lg);
+  font-weight: 300;
+}
+
+.footer-links {
+  margin-top: var(--space-lg);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+}
+
+.footer-link {
+  color: var(--color-background);
+  opacity: 0.7;
+  margin: 0 var(--space-sm);
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: var(--transition-normal);
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.footer-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--color-background);
+  transition: var(--transition-normal);
+}
+
+.footer-link:hover {
+  opacity: 1;
+}
+
+.footer-link:hover::after {
+  width: 100%;
+}
+
 /* ========== Footer SNS Icons ========== */
 .footer-sns {
   margin-top: var(--space-lg);
@@ -740,17 +911,37 @@ p {
   justify-content: center;
   width: 44px;
   height: 44px;
-  border-radius: 0;
+  border-radius: var(--radius-md);
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  transition: var(--transition-normal);
+  transition: var(--transition-spring);
   text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.sns-link::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.4s, height 0.4s;
+}
+
+.sns-link:hover::before {
+  width: 100px;
+  height: 100px;
 }
 
 .sns-link:hover {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.4);
-  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-4px) rotate(5deg) scale(1.1);
 }
 
 .sns-icon {

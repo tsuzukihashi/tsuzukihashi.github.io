@@ -160,6 +160,13 @@ const translations = {
         contact: {
             googleFormButton: "お問い合わせフォームを開く"
         },
+        // Location
+        location: {
+            title: "所在地",
+            storeName: "京都店",
+            postalCode: "〒600-8208",
+            address: "京都府京都市下京区小稲荷町85-2 Grand-K 京都駅前ビル 201"
+        },
         // Disclaimer page
         disclaimer: {
             title: "免責事項",
@@ -373,6 +380,13 @@ const translations = {
         contact: {
             googleFormButton: "Open Contact Form"
         },
+        // Location
+        location: {
+            title: "Location",
+            storeName: "Kyoto Store",
+            postalCode: "〒600-8208",
+            address: "201 Grand-K Kyoto Station Building, 85-2 Koinaricho, Shimogyo-ku, Kyoto City, Kyoto Prefecture"
+        },
         // Disclaimer page
         disclaimer: {
             title: "Disclaimer",
@@ -585,6 +599,13 @@ const translations = {
         // Contact page
         contact: {
             googleFormButton: "문의 양식 열기"
+        },
+        // Location
+        location: {
+            title: "위치",
+            storeName: "교토점",
+            postalCode: "〒600-8208",
+            address: "교토부 교토시 시모교구 코이나리초 85-2 Grand-K 교토역 앞 빌딩 201"
         },
         // Disclaimer page
         disclaimer: {
