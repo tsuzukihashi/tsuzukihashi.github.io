@@ -123,13 +123,13 @@
 /* ========== App Grid ========== */
 .app-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 350px), 1fr));
   gap: var(--space-2xl);
   margin-bottom: var(--space-2xl);
 }
 
 .featured-grid {
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 450px), 1fr));
   gap: var(--space-2xl);
 }
 
@@ -430,6 +430,22 @@
 
 /* ========== Responsive ========== */
 @media (max-width: 768px) {
+  .portfolio-hero {
+    min-height: auto;
+    padding-top: calc(var(--space-xl) + 70px);
+    padding-bottom: var(--space-xl);
+  }
+
+  .portfolio-title {
+    font-size: clamp(2rem, 6vw, 3rem);
+    margin-bottom: var(--space-sm);
+  }
+
+  .portfolio-subtitle {
+    font-size: 1rem;
+    margin-bottom: var(--space-xl);
+  }
+
   .portfolio-stats {
     grid-template-columns: repeat(2, 1fr);
     gap: 0;
@@ -438,7 +454,15 @@
   .portfolio-stat {
     border-right: 1px solid var(--color-border);
     border-bottom: 1px solid var(--color-border);
-    padding: var(--space-lg);
+    padding: var(--space-md);
+  }
+
+  .portfolio-stat-number {
+    font-size: 2rem;
+  }
+
+  .portfolio-stat-label {
+    font-size: 0.625rem;
   }
 
   .portfolio-stat:nth-child(2n) {
@@ -455,21 +479,79 @@
 
   .app-grid {
     grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+
+  .app-card-image {
+    height: 180px;
+  }
+
+  .app-card-image img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .app-card-content {
+    padding: var(--space-md);
+  }
+
+  .app-card-title {
+    font-size: 1.25rem;
+  }
+
+  .app-card-description {
+    font-size: 0.9375rem;
   }
 
   .category-filter {
     overflow-x: auto;
     justify-content: flex-start;
     padding-bottom: var(--space-sm);
+    gap: var(--space-sm);
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .filter-btn {
+    padding: 0.75rem 1.25rem;
+    font-size: 0.6875rem;
+    white-space: nowrap;
+    flex-shrink: 0;
   }
 
   .philosophy-points {
     grid-template-columns: 1fr;
     gap: var(--space-lg);
   }
+
+  .philosophy-point {
+    padding: var(--space-lg);
+  }
+
+  .philosophy-quote {
+    font-size: 1.25rem;
+    padding: var(--space-md);
+  }
+
+  .philosophy-quote::before,
+  .philosophy-quote::after {
+    font-size: 3rem;
+  }
 }
 
 @media (max-width: 480px) {
+  .portfolio-hero {
+    padding-top: calc(var(--space-lg) + 60px);
+    padding-bottom: var(--space-lg);
+  }
+
+  .portfolio-title {
+    font-size: clamp(1.75rem, 7vw, 2.5rem);
+  }
+
+  .portfolio-subtitle {
+    font-size: 0.9375rem;
+  }
+
   .portfolio-stats {
     grid-template-columns: 1fr;
   }
@@ -477,10 +559,68 @@
   .portfolio-stat {
     border-right: none;
     border-bottom: 1px solid var(--color-border);
+    padding: var(--space-md);
   }
 
   .portfolio-stat:last-child {
     border-bottom: none;
+  }
+
+  .portfolio-stat-number {
+    font-size: 1.75rem;
+  }
+
+  .app-card-image {
+    height: 160px;
+  }
+
+  .app-card-image img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .app-card-badge {
+    font-size: 0.5625rem;
+    padding: 0.375rem 0.75rem;
+    top: var(--space-sm);
+    right: var(--space-sm);
+  }
+
+  .app-card-content {
+    padding: var(--space-sm);
+  }
+
+  .app-card-title {
+    font-size: 1.125rem;
+  }
+
+  .app-card-description {
+    font-size: 0.875rem;
+    line-height: 1.7;
+  }
+
+  .app-meta-item {
+    font-size: 0.6875rem;
+    padding: 0.375rem 0.75rem;
+  }
+
+  .app-card-actions {
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+
+  .btn-small {
+    width: 100%;
+    text-align: center;
+  }
+
+  .philosophy-quote {
+    font-size: 1.125rem;
+  }
+
+  .philosophy-quote::before,
+  .philosophy-quote::after {
+    display: none;
   }
 }
 

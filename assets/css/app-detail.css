@@ -215,7 +215,7 @@
 /* ========== Technology Section ========== */
 .tech-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr));
   gap: var(--space-2xl);
   max-width: 1000px;
   margin: 0 auto;
@@ -322,7 +322,7 @@
 /* ========== Reviews Section ========== */
 .reviews-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
   gap: var(--space-2xl);
   max-width: 1200px;
   margin: 0 auto;
@@ -521,53 +521,313 @@
 
 /* ========== Responsive ========== */
 @media (max-width: 768px) {
+  .app-hero {
+    min-height: auto;
+    padding-top: calc(var(--space-xl) + 70px);
+    padding-bottom: var(--space-xl);
+  }
+
+  .app-icon-wrapper {
+    margin-bottom: var(--space-lg);
+  }
+
   .app-icon {
     width: 120px;
     height: 120px;
   }
 
+  .app-icon-badge {
+    font-size: 0.5625rem;
+    padding: 0.375rem 0.75rem;
+    top: -8px;
+    right: -8px;
+  }
+
+  .app-title {
+    font-size: clamp(2rem, 6vw, 2.5rem);
+  }
+
+  .app-tagline {
+    font-size: 1rem;
+    margin-bottom: var(--space-md);
+  }
+
+  .app-badges {
+    gap: var(--space-sm);
+    margin-bottom: var(--space-md);
+  }
+
+  .badge {
+    padding: 0.375rem 1rem;
+    font-size: 0.6875rem;
+  }
+
   .features-grid {
     grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+
+  .feature-card {
+    padding: var(--space-lg);
+  }
+
+  .feature-icon {
+    font-size: 1.75rem;
+  }
+
+  .feature-title {
+    font-size: 1rem;
   }
 
   .tech-content {
     grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+
+  .tech-card {
+    padding: var(--space-lg);
   }
 
   .achievements-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+  }
+
+  .achievement-card {
+    padding: var(--space-lg);
+  }
+
+  .achievement-number {
+    font-size: 2.5rem;
+  }
+
+  .achievement-label {
+    font-size: 0.9375rem;
   }
 
   .reviews-grid {
     grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+
+  .review-card {
+    padding: var(--space-lg);
   }
 
   .related-apps {
     grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+
+  .related-app-card {
+    padding: var(--space-md);
   }
 
   .developer-message .message-content {
     padding: var(--space-lg);
   }
 
+  .developer-message p {
+    font-size: 1rem;
+  }
+
+  .developer-message p.emphasis {
+    font-size: 1.125rem;
+    padding: var(--space-md);
+  }
+
   .download-cta {
     padding: var(--space-lg);
+  }
+
+  .story-content {
+    padding: 0;
+  }
+
+  .story-quote {
+    padding: var(--space-md);
+  }
+
+  .story-quote blockquote {
+    font-size: 1rem;
+    padding-left: var(--space-md);
+  }
+
+  .story-text {
+    font-size: 1rem;
+  }
+
+  .story-text.emphasis {
+    font-size: 1.125rem;
+    padding: var(--space-md);
   }
 }
 
 @media (max-width: 480px) {
-  .achievements-grid {
-    grid-template-columns: 1fr;
+  .app-hero {
+    padding-top: calc(var(--space-lg) + 60px);
+    padding-bottom: var(--space-lg);
+  }
+
+  .app-icon {
+    width: 100px;
+    height: 100px;
+  }
+
+  .app-icon-badge {
+    font-size: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    top: -5px;
+    right: -5px;
+  }
+
+  .app-title {
+    font-size: clamp(1.75rem, 7vw, 2rem);
+  }
+
+  .app-tagline {
+    font-size: 0.9375rem;
   }
 
   .app-badges {
     flex-direction: column;
     align-items: center;
+    gap: var(--space-xs);
   }
 
   .badge {
     width: 100%;
-    max-width: 250px;
+    max-width: 200px;
     text-align: center;
+    padding: 0.375rem 0.75rem;
+    font-size: 0.625rem;
+  }
+
+  .btn-large {
+    padding: 0.875rem 2rem;
+    font-size: 0.875rem;
+  }
+
+  .features-grid,
+  .tech-content {
+    gap: var(--space-md);
+  }
+
+  .feature-card,
+  .tech-card {
+    padding: var(--space-md);
+  }
+
+  .feature-icon {
+    font-size: 1.5rem;
+    margin-bottom: var(--space-sm);
+  }
+
+  .feature-title,
+  .tech-title {
+    font-size: 0.9375rem;
+  }
+
+  .feature-description,
+  .tech-description {
+    font-size: 0.875rem;
+  }
+
+  .achievements-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+
+  .achievement-card {
+    padding: var(--space-md);
+  }
+
+  .achievement-number {
+    font-size: 2rem;
+  }
+
+  .achievement-label {
+    font-size: 0.875rem;
+  }
+
+  .achievement-description {
+    font-size: 0.8125rem;
+  }
+
+  .review-card {
+    padding: var(--space-md);
+  }
+
+  .review-title {
+    font-size: 0.9375rem;
+  }
+
+  .review-text {
+    font-size: 0.875rem;
+  }
+
+  .review-author {
+    font-size: 0.8125rem;
+  }
+
+  .related-app-card {
+    padding: var(--space-sm);
+    gap: var(--space-sm);
+  }
+
+  .related-app-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .related-app-info h3 {
+    font-size: 0.9375rem;
+  }
+
+  .related-app-info p {
+    font-size: 0.8125rem;
+  }
+
+  .developer-message .message-content {
+    padding: var(--space-md);
+  }
+
+  .developer-message p {
+    font-size: 0.9375rem;
+  }
+
+  .developer-message p.emphasis {
+    font-size: 1rem;
+    padding: var(--space-sm);
+  }
+
+  .signature-name {
+    font-size: 1.125rem;
+  }
+
+  .download-cta {
+    padding: var(--space-md);
+  }
+
+  .download-note {
+    font-size: 0.8125rem;
+  }
+
+  .story-quote blockquote {
+    font-size: 0.9375rem;
+  }
+
+  .story-quote blockquote::before {
+    font-size: 2rem;
+    top: -5px;
+  }
+
+  .story-text {
+    font-size: 0.9375rem;
+  }
+
+  .story-text.emphasis {
+    font-size: 1rem;
+    padding: var(--space-sm);
   }
 }

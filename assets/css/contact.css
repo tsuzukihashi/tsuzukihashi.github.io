@@ -43,7 +43,7 @@
 /* ========== Contact Options ========== */
 .contact-options {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
   gap: var(--space-xl);
   max-width: 1400px;
   margin: 0 auto;
@@ -397,21 +397,50 @@
 
 /* ========== Responsive ========== */
 @media (max-width: 768px) {
+  .contact-hero {
+    min-height: auto;
+    padding-top: calc(var(--space-xl) + 70px);
+    padding-bottom: var(--space-xl);
+  }
+
+  .contact-title {
+    font-size: clamp(2rem, 6vw, 3rem);
+    margin-bottom: var(--space-lg);
+  }
+
+  .contact-subtitle {
+    font-size: 1rem;
+    margin-bottom: var(--space-xl);
+  }
+
   .contact-options {
     grid-template-columns: 1fr;
     gap: var(--space-lg);
   }
 
+  .contact-card {
+    padding: var(--space-lg);
+  }
+
+  .contact-card-title {
+    font-size: 1.25rem;
+  }
+
+  .contact-card-description {
+    font-size: 0.9375rem;
+  }
+
   .work-together {
-    padding: var(--space-xl) var(--space-lg);
+    padding: var(--space-xl) var(--space-md);
   }
 
   .work-together-title {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 
   .work-together-description {
     font-size: 1rem;
+    margin-bottom: var(--space-xl);
   }
 
   .work-together-items {
@@ -419,10 +448,31 @@
     gap: var(--space-md);
   }
 
+  .work-item {
+    padding: var(--space-md);
+  }
+
+  .work-item h3 {
+    font-size: 0.9375rem;
+  }
+
+  .work-item p {
+    font-size: 0.8125rem;
+  }
+
   .response-notice {
     flex-direction: column;
     text-align: center;
     gap: var(--space-md);
+    padding: var(--space-lg);
+  }
+
+  .notice-content h3 {
+    font-size: 1rem;
+  }
+
+  .notice-content p {
+    font-size: 0.9375rem;
   }
 
   .faq-question {
@@ -430,22 +480,149 @@
     font-size: 0.9375rem;
   }
 
-  .faq-answer p {
-    padding: 0 var(--space-lg) var(--space-md);
+  .faq-icon {
+    font-size: 1.25rem;
+    margin-left: var(--space-md);
   }
 
-  .contact-card {
-    padding: var(--space-xl);
+  .faq-answer p {
+    padding: 0 var(--space-lg) var(--space-md);
+    font-size: 0.9375rem;
+  }
+
+  .contact-form-note {
+    padding: var(--space-lg);
+  }
+
+  .contact-form-note h3 {
+    font-size: 1.125rem;
+  }
+
+  .contact-form-note p {
+    font-size: 0.9375rem;
   }
 }
 
 @media (max-width: 480px) {
-  .work-together-items {
-    grid-template-columns: 1fr;
+  .contact-hero {
+    padding-top: calc(var(--space-lg) + 60px);
+    padding-bottom: var(--space-lg);
+  }
+
+  .contact-title {
+    font-size: clamp(1.75rem, 7vw, 2.5rem);
+    margin-bottom: var(--space-md);
+  }
+
+  .contact-subtitle {
+    font-size: 0.9375rem;
+    margin-bottom: var(--space-lg);
   }
 
   .contact-card {
-    padding: var(--space-lg);
+    padding: var(--space-md);
+  }
+
+  .contact-card-icon {
+    font-size: 1.5rem;
+    margin-bottom: var(--space-md);
+  }
+
+  .contact-card-title {
+    font-size: 1.125rem;
+    margin-bottom: var(--space-sm);
+  }
+
+  .contact-card-description {
+    font-size: 0.875rem;
+    margin-bottom: var(--space-md);
+  }
+
+  .contact-card-link {
+    font-size: 0.8125rem;
+  }
+
+  .contact-card-note {
+    font-size: 0.6875rem;
+  }
+
+  .work-together {
+    padding: var(--space-lg) var(--space-sm);
+  }
+
+  .work-together-title {
+    font-size: 1.5rem;
+  }
+
+  .work-together-description {
+    font-size: 0.9375rem;
+  }
+
+  .work-together-items {
+    grid-template-columns: 1fr;
+    gap: var(--space-sm);
+  }
+
+  .work-item {
+    padding: var(--space-sm);
+  }
+
+  .work-item-icon {
+    font-size: 1.5rem;
+  }
+
+  .work-item h3 {
+    font-size: 0.875rem;
+  }
+
+  .work-item p {
+    font-size: 0.75rem;
+  }
+
+  .response-notice {
+    padding: var(--space-md);
+  }
+
+  .notice-icon {
+    font-size: 1.5rem;
+  }
+
+  .notice-content h3 {
+    font-size: 0.9375rem;
+  }
+
+  .notice-content p {
+    font-size: 0.875rem;
+  }
+
+  .faq-question {
+    padding: var(--space-sm) var(--space-md);
+    font-size: 0.875rem;
+  }
+
+  .faq-icon {
+    font-size: 1rem;
+  }
+
+  .faq-answer p {
+    padding: 0 var(--space-md) var(--space-sm);
+    font-size: 0.875rem;
+  }
+
+  .contact-form-note {
+    padding: var(--space-md);
+  }
+
+  .contact-form-note h3 {
+    font-size: 1rem;
+  }
+
+  .contact-form-note p {
+    font-size: 0.875rem;
+  }
+
+  .note-highlight {
+    font-size: 0.8125rem;
   }
 
   .google-form-container iframe {
