@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>現役iOSエンジニアが、スクショ地獄から解放されたくてAIと3日でSaaSを作った話【ScreenNative】 - Blog | Ryo Tsuzukihashi</title>
+    <meta name="description" content="多言語対応スクリーンショット作成の苦痛を解決するため、Gemini 3 ProとClaude Codeを活用してローカライゼーションSaaS「ScreenNative」を3日間で開発した記録。">
+    <meta name="keywords" content="ScreenNative, AI, SaaS, ローカライゼーション, スクリーンショット, iOS開発, 個人開発, Gemini, Claude Code">
+
+    <!-- OGP -->
+    <meta property="og:title" content="現役iOSエンジニアが、スクショ地獄から解放されたくてAIと3日でSaaSを作った話【ScreenNative】">
+    <meta property="og:description" content="多言語対応スクリーンショット作成の苦痛を解決するため、AIを活用してSaaSを3日で開発した物語">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://tsuzukit.com/blog/posts/screennative-development-story.html">
+    <meta property="og:image" content="https://tsuzukit.com/assets/images/blog/screennative-og.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERPQ1EGLH');
+    </script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <style>
+        /* Blog Post Specific Styles */
+        .blog-post {
+            padding: 120px 0 var(--spacing-3xl);
+        }
+
+        .post-header {
+            max-width: 800px;
+            margin: 0 auto var(--spacing-3xl);
+            text-align: center;
+            padding: 0 var(--spacing-lg);
+        }
+
+        .post-meta {
+            display: flex;
+            justify-content: center;
+            gap: var(--spacing-lg);
+            margin-bottom: var(--spacing-lg);
+            color: var(--color-text-light);
+            font-size: var(--font-size-sm);
+        }
+
+        .post-title {
+            font-size: var(--font-size-4xl);
+            font-weight: 300;
+            color: var(--color-primary);
+            margin-bottom: var(--spacing-lg);
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+        }
+
+        .post-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-lg);
+            line-height: 1.8;
+            color: var(--color-text);
+        }
+
+        .post-content h1 {
+            font-size: var(--font-size-3xl);
+            font-weight: 500;
+            margin: var(--spacing-3xl) 0 var(--spacing-lg);
+            color: var(--color-primary);
+            padding-bottom: var(--spacing-sm);
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .post-content h2 {
+            font-size: var(--font-size-2xl);
+            font-weight: 500;
+            margin: var(--spacing-2xl) 0 var(--spacing-md);
+            color: var(--color-primary);
+        }
+
+        .post-content h3 {
+            font-size: var(--font-size-xl);
+            font-weight: 500;
+            margin: var(--spacing-xl) 0 var(--spacing-md);
+            color: var(--color-primary);
+        }
+
+        .post-content p {
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .post-content ul,
+        .post-content ol {
+            margin: var(--spacing-md) 0 var(--spacing-lg) var(--spacing-lg);
+        }
+
+        .post-content li {
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .post-content a {
+            color: var(--color-primary);
+            text-decoration: underline;
+            transition: var(--transition);
+        }
+
+        .post-content a:hover {
+            color: var(--color-secondary);
+        }
+
+        .post-content blockquote {
+            border-left: 4px solid var(--color-primary);
+            padding-left: var(--spacing-lg);
+            margin: var(--spacing-lg) 0;
+            color: var(--color-secondary);
+            font-style: italic;
+        }
+
+        .post-content code {
+            background: var(--color-accent);
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'SF Mono', Monaco, 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+
+        .post-content pre {
+            background: var(--color-accent);
+            padding: var(--spacing-md);
+            border-radius: var(--border-radius);
+            overflow-x: auto;
+            margin: var(--spacing-lg) 0;
+        }
+
+        .post-content pre code {
+            background: transparent;
+            padding: 0;
+        }
+
+        .explanation-box {
+            background: var(--color-accent);
+            border-left: 4px solid var(--color-primary);
+            padding: var(--spacing-md);
+            margin: var(--spacing-lg) 0;
+            border-radius: var(--border-radius);
+        }
+
+        .explanation-box strong {
+            display: block;
+            margin-bottom: var(--spacing-xs);
+            color: var(--color-primary);
+        }
+
+        .tech-stack-box {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: var(--border-radius);
+            padding: var(--spacing-lg);
+            margin: var(--spacing-lg) 0;
+        }
+
+        .tech-stack-box h4 {
+            margin-bottom: var(--spacing-md);
+            color: var(--color-primary);
+        }
+
+        .tech-stack-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--spacing-sm);
+        }
+
+        .tech-item {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-xs);
+            padding: var(--spacing-xs) var(--spacing-sm);
+            background: white;
+            border-radius: 4px;
+            font-size: var(--font-size-sm);
+        }
+
+        .tech-item strong {
+            color: var(--color-secondary);
+        }
+
+        .pain-point {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: var(--spacing-md);
+            margin: var(--spacing-lg) 0;
+            border-radius: var(--border-radius);
+        }
+
+        .solution-box {
+            background: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: var(--spacing-md);
+            margin: var(--spacing-lg) 0;
+            border-radius: var(--border-radius);
+        }
+
+        .cta-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: var(--spacing-xl);
+            border-radius: var(--border-radius);
+            text-align: center;
+            margin: var(--spacing-2xl) 0;
+        }
+
+        .cta-box h3 {
+            color: white;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .cta-box p {
+            margin-bottom: var(--spacing-lg);
+            opacity: 0.9;
+        }
+
+        .cta-box .btn {
+            background: white;
+            color: #667eea;
+            padding: var(--spacing-sm) var(--spacing-xl);
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 500;
+            display: inline-block;
+            transition: transform 0.2s;
+        }
+
+        .cta-box .btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .post-navigation {
+            max-width: 800px;
+            margin: var(--spacing-3xl) auto 0;
+            padding: var(--spacing-xl) var(--spacing-lg) 0;
+            border-top: 1px solid var(--color-border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-link-wrapper {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            text-decoration: none;
+            color: var(--color-text);
+            transition: var(--transition);
+        }
+
+        .nav-link-wrapper:hover {
+            color: var(--color-primary);
+        }
+
+        .stats-box {
+            background: var(--color-accent);
+            border-radius: var(--border-radius);
+            padding: var(--spacing-md);
+            margin: var(--spacing-lg) 0;
+            text-align: center;
+        }
+
+        .stats-box strong {
+            font-size: var(--font-size-2xl);
+            color: var(--color-primary);
+        }
+
+        @media (max-width: 768px) {
+            .post-title {
+                font-size: var(--font-size-3xl);
+            }
+
+            .post-content h1 {
+                font-size: var(--font-size-2xl);
+            }
+
+            .post-content h2 {
+                font-size: var(--font-size-xl);
+            }
+
+            .post-navigation {
+                flex-direction: column;
+                gap: var(--spacing-lg);
+            }
+
+            .tech-stack-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">Ryo Tsuzukihashi</a>
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/portfolio/" class="nav-link">Portfolio</a>
+                <a href="/blog/" class="nav-link">Blog</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post -->
+    <article class="blog-post">
+        <header class="post-header">
+            <div class="post-meta">
+                <span class="post-date">2025年12月6日</span>
+                <span class="post-category">SaaS開発</span>
+                <span class="post-reading-time">10分で読める</span>
+            </div>
+            <h1 class="post-title">現役iOSエンジニアが、<br>スクショ地獄から解放されたくて<br>AIと3日でSaaSを作った話<br>【ScreenNative】</h1>
+        </header>
+
+        <div class="post-content">
+            <p>
+                こんにちは、ZOZOTOWNでiOSアプリエンジニアをしているtsuzuki817（<a href="https://twitter.com/tsuzuki817" target="_blank">@tsuzuki817</a>）です。
+            </p>
+
+            <p>
+                普段は大規模なアプリ開発に携わっていますが、個人開発でアプリを世界展開しようとした際、「ある作業」の絶望的な面倒くささに心が折れそうになりました。
+            </p>
+
+            <p>
+                そう、<strong>「多言語対応スクリーンショットの作成」</strong>です。
+            </p>
+
+            <blockquote>
+                「エンジニアなら、この単純作業は自動化すべきだ」
+            </blockquote>
+
+            <p>
+                その一心で、AI（Gemini 3 Pro）を活用したローカライゼーションSaaS <strong>ScreenNative</strong> を、AI（Claude Code）とのペアプログラミングで開発しました。
+            </p>
+
+            <p>
+                今回は、その開発手法や、技術的にこだわった「堅牢なアーキテクチャ」について裏側を公開します。
+            </p>
+
+            <figure style="margin: var(--spacing-2xl) 0; text-align: center;">
+                <img src="/assets/images/blog/screennative-og.png" alt="ScreenNative - App Store Screenshot Localization AI" style="width: 100%; max-width: 800px; border-radius: var(--border-radius); box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+                <figcaption style="margin-top: var(--spacing-sm); color: var(--color-text-light); font-size: var(--font-size-sm);">ScreenNative - AIによるApp Storeスクリーンショットのローカライゼーション</figcaption>
+            </figure>
+
+            <h1>なぜ作ったのか？：iOSエンジニアにしか分からない「痛み」</h1>
+
+            <p>
+                アプリをグローバル展開するには、App Store Connectに各言語ごとのスクリーンショットを入稿する必要があります。しかし、これを真面目にやろうとすると地獄を見ます。
+            </p>
+
+            <div class="pain-point">
+                <strong>地獄のスクショ作成フロー</strong>
+                <ol>
+                    <li><code>xcrun simctl</code> でシミュレータの言語をドイツ語に変える</li>
+                    <li>アプリをビルドして起動</li>
+                    <li>必要な画面まで遷移してスクショを撮る</li>
+                    <li>「文字が長すぎてボタンから溢れてる！」 → Auto Layoutの制約を調整し直し</li>
+                    <li>これを英語、フランス語、中国語...と10言語分繰り返す</li>
+                    <li>さらに端末サイズ（6.9インチ、6.5インチ...）ごとに繰り返す</li>
+                </ol>
+            </div>
+
+            <p>
+                <strong>「これ、人間がやる仕事じゃないな」</strong> と思いました。
+            </p>
+
+            <div class="solution-box">
+                <strong>ScreenNativeが解決すること</strong>
+                <p style="margin-bottom: 0;">
+                    既存のスクショを1枚アップロードするだけで、AIが<strong>「UIの文脈（ボタンや余白）」を理解</strong>し、レイアウトを崩さずにテキストだけをネイティブ品質で翻訳・置換します。
+                </p>
+            </div>
+
+            <h1>開発体制：私(CTO) × AI(リードエンジニア)</h1>
+
+            <p>
+                今回の開発は、<strong>「私がCTO兼PMとして仕様を決め、AI（Claude Code）がリードエンジニアとして実装する」</strong> という体制で行いました。
+            </p>
+
+            <p>
+                単にコードを書かせるだけでなく、アーキテクチャ設計からAIと壁打ちを行いました。
+            </p>
+
+            <div class="explanation-box">
+                <strong>実際のやり取り例</strong>
+                <p><strong>私:</strong> 「Stripeの決済とクレジット消費をAtomicにやりたい。Firestoreの設計はどうすべき？」</p>
+                <p style="margin-bottom: 0;"><strong>AI:</strong> 「<code>users</code> コレクションとは別に <code>creditTransactions</code> で監査ログを残し、<code>runTransaction</code> で整合性を保ちましょう」</p>
+            </div>
+
+            <p>
+                このように、「仕様 → 実装」のサイクルを極限まで高速化することで、<strong>実質3日間で決済機能付きのSaaSをデプロイまで持っていく</strong>ことができました。
+            </p>
+
+            <h1>技術スタックとアーキテクチャ</h1>
+
+            <p>
+                「個人開発だから」という妥協はせず、<strong>企業が導入できるレベルのセキュリティと拡張性</strong>を目指しました。
+            </p>
+
+            <div class="tech-stack-box">
+                <h4>技術スタック</h4>
+                <div class="tech-stack-grid">
+                    <div class="tech-item"><strong>Frontend:</strong> Next.js 15 (App Router), Tailwind CSS, shadcn/ui</div>
+                    <div class="tech-item"><strong>Backend:</strong> Firebase Cloud Functions Gen 2 (Node.js)</div>
+                    <div class="tech-item"><strong>Database:</strong> Cloud Firestore</div>
+                    <div class="tech-item"><strong>Storage:</strong> Cloud Storage for Firebase</div>
+                    <div class="tech-item"><strong>AI Model:</strong> Google Gemini 3 Pro (gemini-3-pro-image-preview)</div>
+                    <div class="tech-item"><strong>Payment:</strong> Stripe (Checkout & Webhooks)</div>
+                </div>
+            </div>
+
+            <h2>システム連携フロー</h2>
+
+            <p>
+                Next.jsのAPI Routesをゲートウェイとし、実際の処理はセキュアなバックエンド（Admin SDK）で行う構成です。
+            </p>
+
+            <pre><code>┌─────────────────┐    ID Token    ┌─────────────────┐
+│  Client/Next.js │ ─────────────▶ │   API Routes    │
+└─────────────────┘                └─────────────────┘
+                                          │
+                    ┌─────────────────────┼─────────────────────┐
+                    │                     │                     │
+                    ▼                     ▼                     ▼
+            ┌─────────────┐       ┌─────────────┐       ┌─────────────┐
+            │  Firestore  │       │ Gemini API  │       │   Stripe    │
+            │  (Admin SDK)│       │             │       │             │
+            └─────────────┘       └─────────────┘       └─────────────┘
+                    │                                          │
+                    │              Webhook                     │
+                    │ ◀────────────────────────────────────────┘
+                    ▼
+            ┌─────────────────────────────┐
+            │  Cloud Functions (Gen 2)   │
+            │  - Transaction処理         │
+            └─────────────────────────────┘</code></pre>
+
+            <h1>技術的なこだわりポイント</h1>
+
+            <h2>1. セキュリティ最優先のゼロトラスト設計</h2>
+
+            <p>
+                <strong>「クライアント（ブラウザ）は信用しない」</strong>を徹底しました。
+            </p>
+
+            <h3>Firestore Security Rules</h3>
+            <p>
+                ユーザーによる <code>users</code> コレクションへの書き込みは一切禁止（<code>allow write: if false</code>）。クレジットの消費やプラン変更は、必ずサーバーサイドの API Routes 経由で、Admin SDK を用いて行います。
+            </p>
+
+            <h3>マジックバイト検証</h3>
+            <p>
+                画像アップロード時、拡張子だけでなくバイナリの先頭（マジックナンバー）を検証し、偽装ファイルを弾く実装を導入しています。
+            </p>
+
+            <h2>2. 冪等性を担保した決済システム</h2>
+
+            <p>
+                StripeからのWebhookは、ネットワークエラーなどで複数回届く可能性があります。
+            </p>
+
+            <p>
+                そこで、<code>stripeWebhooks</code> コレクションでイベントIDを管理し、<strong>「一度処理した決済イベントは二度処理しない（冪等性）」</strong> ロジックを実装しました。
+            </p>
+
+            <p>
+                また、クレジット消費時も Firestore Transaction を使用し、「生成成功」と「クレジット減算」が完全に同期するようにしています。
+            </p>
+
+            <div class="explanation-box">
+                <strong>【ひとこと解説】冪等性とは？</strong>
+                同じ操作を何度実行しても、結果が変わらないこと。例えば「100円引く」を2回実行しても、実際には1回分しか引かれないようにする仕組みです。
+            </div>
+
+            <h2>3. 型安全性とDX (Developer Experience)</h2>
+
+            <p>
+                開発効率を高めるため、<strong>「Single Source of Truth（信頼できる唯一の情報源）」</strong> を徹底しました。
+            </p>
+
+            <h3>定数からの型導出</h3>
+            <p>
+                「対応言語リスト」や「プラン定義」を定数として定義し、そこから TypeScript の型 (<code>LanguageCode</code>, <code>PlanId</code>) を自動生成 (<code>typeof ...</code>)。これにより、プランを追加した際に修正が必要な箇所が型エラーとして即座に判明します。
+            </p>
+
+            <h3>Zodによる二重バリデーション</h3>
+            <p>
+                APIのリクエストボディ検証に Zod を採用。TypeScriptの型定義とランタイムのバリデーションを同期させています。
+            </p>
+
+            <h1>まとめ</h1>
+
+            <p>
+                ScreenNativeは、<strong>「iOSエンジニアが、自分の欲しいものをガチで作った」</strong> プロダクトです。
+            </p>
+
+            <ul>
+                <li>アラビア語などのRTL（右から左）レイアウト対応</li>
+                <li>ステータスバー（9:41 / 100%）のクリーンアップ推奨</li>
+                <li>デバイスフレームの自動合成</li>
+            </ul>
+
+            <p>
+                など、アプリ開発者ならではの「こだわり」を詰め込みました。
+            </p>
+
+            <div class="stats-box">
+                <p>Total Source Files</p>
+                <strong>83 files</strong>
+                <p style="margin-bottom: 0;">（約8,000行）</p>
+            </div>
+
+            <div class="cta-box">
+                <h3>ScreenNative - App Store Screenshot Localization AI</h3>
+                <p>
+                    初期2枚無料（Product Huntキャンペーン中は5枚！）で試せます。<br>
+                    面倒なスクショ作成業務から解放されたい開発者の皆さん、ぜひ使ってみてください！
+                </p>
+                <a href="https://screennative.com" target="_blank" class="btn">ScreenNativeを試す</a>
+            </div>
+
+            <p>
+                最後まで読んでいただき、ありがとうございました。<br>
+                「スクショ地獄」から解放される開発者が一人でも増えれば、これ以上の喜びはありません。
+            </p>
+        </div>
+
+        <nav class="post-navigation">
+            <a href="/blog/" class="nav-link-wrapper">
+                <span>← ブログ一覧に戻る</span>
+            </a>
+        </nav>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
+                    <p class="footer-description">思い出×テクノロジーで新しい価値を創造</p>
+                </div>
+                <div class="footer-nav">
+                    <a href="/legal/privacy-policy.html">プライバシーポリシー</a>
+                    <a href="/legal/terms-of-service.html">利用規約</a>
+                    <a href="/legal/commercial-law.html">特定商取引法</a>
+                    <a href="/legal/disclaimer.html">免責事項</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ryo Tsuzukihashi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
