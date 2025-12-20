@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unscroll | アルゴリズムの奴隷から、人生の支配者へ。</title>
+    <meta name="description" content="TikTok、Reels、Shorts。あなたの脳と時間は、アルゴリズムに食い尽くされている。Unscrollは、その「依存」を強制終了する唯一のツール。">
+    <meta name="keywords" content="Unscroll, TikTok, ドーパミンデトックス, スマホ依存, SNS依存, デジタルデトックス">
+
+    <!-- OGP -->
+    <meta property="og:title" content="Unscroll | アルゴリズムの奴隷から、人生の支配者へ。">
+    <meta property="og:description" content="TikTok、Reels、Shorts。あなたの脳と時間は、アルゴリズムに食い尽くされている。Unscrollは、その「依存」を強制終了する唯一のツール。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tsuzukit.com/unscroll/">
+    <meta property="og:site_name" content="Unscroll">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Unscroll | アルゴリズムの奴隷から、人生の支配者へ。">
+    <meta name="twitter:description" content="TikTok、Reels、Shorts。あなたの脳と時間は、アルゴリズムに食い尽くされている。Unscrollは、その「依存」を強制終了する唯一のツール。">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-QERPQ1EGLH');
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans JP', sans-serif;
+            background-color: #050505;
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+        .neon-text {
+            text-shadow: 0 0 10px rgba(132, 204, 22, 0.5);
+        }
+        .scroll-distance-counter {
+            font-variant-numeric: tabular-nums;
+        }
+        .gradient-bg {
+            background: radial-gradient(circle at center, #1a1a1a 0%, #000000 100%);
+        }
+        /* Noise texture overlay */
+        .noise {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 50;
+            opacity: 0.03;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-lime-500 selection:text-black">
+
+    <div class="noise"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-40 top-0 left-0 border-b border-white/10 backdrop-blur-md bg-black/70">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <i data-lucide="smartphone-off" class="text-lime-400 w-6 h-6"></i>
+                <span class="font-bold text-xl tracking-tighter">Unscroll</span>
+            </div>
+            <a href="https://forms.gle/c8mLoacJaZbsmZUY7" target="_blank" class="hidden md:block bg-white text-black px-6 py-2 rounded-full font-bold text-sm hover:bg-lime-400 transition-colors duration-300">
+                事前登録
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+        <!-- Background Glow -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-lime-500/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center w-full z-10">
+            <!-- Text Content -->
+            <div class="space-y-8 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-lime-500/30 bg-lime-500/10 text-lime-400 text-xs font-bold tracking-widest uppercase mb-4">
+                    <span class="w-2 h-2 rounded-full bg-lime-400 animate-pulse"></span>
+                    Dopamine Detox
+                </div>
+                <h1 class="text-5xl md:text-7xl font-black leading-tight tracking-tighter">
+                    親指を止めて、<br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-lime-400 to-emerald-500 neon-text">人生を動かせ。</span>
+                </h1>
+                <p class="text-gray-400 text-lg md:text-xl max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                    TikTok、Reels、Shorts。<br>
+                    あなたの脳と時間は、アルゴリズムに食い尽くされている。<br>
+                    <span class="text-white font-bold">Unscroll</span>は、その「依存」を強制終了する唯一のツール。
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
+                    <a href="https://forms.gle/c8mLoacJaZbsmZUY7" target="_blank" class="bg-lime-400 text-black px-8 py-4 rounded-xl font-bold text-lg hover:bg-lime-300 transition-transform active:scale-95 flex items-center justify-center gap-2">
+                        <i data-lucide="bell" class="w-5 h-5"></i>
+                        リリース通知を受け取る
+                    </a>
+                </div>
+                <p class="text-xs text-zinc-500 pt-2">※現在開発中です。登録いただいた方にはリリース時にお知らせします。</p>
+            </div>
+
+            <!-- App Mockup -->
+            <div class="relative flex justify-center lg:justify-end">
+                <!-- Phone Frame -->
+                <div class="relative w-[300px] h-[600px] bg-black border-[8px] border-zinc-800 rounded-[3rem] shadow-2xl overflow-hidden z-20 ring-1 ring-white/10">
+                    <!-- Notch -->
+                    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-1/3 h-6 bg-zinc-800 rounded-b-2xl z-30"></div>
+
+                    <!-- Screen Content -->
+                    <div class="w-full h-full bg-zinc-950 flex flex-col items-center justify-between py-12 px-6 relative">
+
+                        <!-- Top Stats -->
+                        <div class="w-full text-center space-y-1">
+                            <p class="text-zinc-500 text-xs font-mono uppercase tracking-widest">Today's Scroll</p>
+                            <h3 class="text-5xl font-black text-white scroll-distance-counter" id="mockDistance">245m</h3>
+                            <div class="flex items-center justify-center gap-2 text-xs text-red-400 mt-2">
+                                <i data-lucide="trending-up" class="w-3 h-3"></i>
+                                <span>+15m / hour</span>
+                            </div>
+                        </div>
+
+                        <!-- Visualization -->
+                        <div class="w-full flex-1 flex items-center justify-center py-8">
+                            <div class="relative w-full h-40 bg-zinc-900/50 rounded-xl border border-zinc-800 p-4 flex flex-col items-center justify-center text-center space-y-2">
+                                <i data-lucide="mountain-snow" class="w-10 h-10 text-zinc-600"></i>
+                                <p class="text-sm text-zinc-400">東京タワーの<br><span class="text-white font-bold">0.7倍</span> に到達</p>
+                                <div class="w-full bg-zinc-800 h-1 rounded-full mt-2 overflow-hidden">
+                                    <div class="bg-red-500 h-full w-[70%]"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Bottom Action -->
+                        <div class="w-full space-y-4">
+                            <div class="bg-red-500/10 border border-red-500/20 rounded-lg p-3 text-center">
+                                <p class="text-red-400 text-xs font-bold">警告: ドーパミン過剰分泌中</p>
+                            </div>
+                            <button class="w-full bg-lime-400 text-black font-bold py-3 rounded-xl hover:bg-lime-300 transition-colors uppercase tracking-widest">
+                                STOP SCROLLING
+                            </button>
+                        </div>
+
+                        <!-- Mock Overlay (Grayscale effect hint) -->
+                        <div class="absolute inset-0 bg-black/0 pointer-events-none mix-blend-saturation"></div>
+                    </div>
+                </div>
+
+                <!-- Background Elements behind phone -->
+                <div class="absolute top-20 right-10 w-64 h-64 bg-lime-500/20 rounded-full blur-3xl -z-10 animate-pulse"></div>
+                <div class="absolute bottom-10 left-0 w-40 h-40 bg-red-500/10 rounded-full blur-3xl -z-10"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Problem Section -->
+    <section class="py-24 bg-zinc-900/30 border-y border-white/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-black mb-6">なぜ、あなたは辞められないのか？</h2>
+                <p class="text-zinc-400 max-w-2xl mx-auto">
+                    それはあなたの意志が弱いからではありません。<br>
+                    <span class="text-white">世界最高の頭脳たち</span>が、あなたの時間を奪うために<br>設計したアルゴリズムと戦っているからです。
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-black border border-zinc-800 p-8 rounded-2xl hover:border-red-500/50 transition-colors group">
+                    <div class="w-12 h-12 bg-red-500/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-red-500/20 transition-colors">
+                        <i data-lucide="clock" class="text-red-500 w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-white">人生の「10%」が消滅</h3>
+                    <p class="text-zinc-500 text-sm leading-relaxed">
+                        1日2時間のSNS利用は、人生の約10%を画面に費やす計算になります。<br>
+                        その時間で、何ができましたか？
+                    </p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-black border border-zinc-800 p-8 rounded-2xl hover:border-red-500/50 transition-colors group">
+                    <div class="w-12 h-12 bg-red-500/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-red-500/20 transition-colors">
+                        <i data-lucide="brain-circuit" class="text-red-500 w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-white">ドーパミン中毒</h3>
+                    <p class="text-zinc-500 text-sm leading-relaxed">
+                        不確実な報酬（ショート動画）は、ギャンブルと同じ脳内物質を分泌させます。<br>
+                        脳がハッキングされている状態です。
+                    </p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-black border border-zinc-800 p-8 rounded-2xl hover:border-red-500/50 transition-colors group">
+                    <div class="w-12 h-12 bg-red-500/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-red-500/20 transition-colors">
+                        <i data-lucide="frown" class="text-red-500 w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-white">比較と自己嫌悪</h3>
+                    <p class="text-zinc-500 text-sm leading-relaxed">
+                        他人の「切り取られた最高の瞬間」と、あなたの「現実」を比較し続けることで、<br>
+                        無意識に自己肯定感が削られます。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution/Features Section -->
+    <section class="py-24 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="text-center mb-20">
+                <span class="text-lime-400 font-bold tracking-widest uppercase text-sm mb-2 block">The Solution</span>
+                <h2 class="text-4xl md:text-5xl font-black mb-6">毒を抜くための、<br>3つの解毒剤</h2>
+            </div>
+
+            <div class="space-y-24">
+                <!-- Feature 1 -->
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="w-full md:w-1/2 order-2 md:order-1">
+                        <div class="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 aspect-video flex items-center justify-center relative overflow-hidden group">
+                            <!-- Simple Graphic Representation -->
+                            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1454496522488-7a8e488e8606?q=80&w=2676&auto=format&fit=crop')] bg-cover bg-center opacity-20 grayscale group-hover:grayscale-0 transition-all duration-700"></div>
+                            <div class="z-10 bg-black/80 backdrop-blur border border-lime-500/30 p-6 rounded-xl text-center">
+                                <p class="text-zinc-400 text-xs uppercase mb-2">Today's Distance</p>
+                                <p class="text-4xl font-mono font-bold text-white">3,776<span class="text-lime-400 text-xl">m</span></p>
+                                <p class="text-xs text-lime-400 mt-2">富士山登頂おめでとうございます</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 order-1 md:order-2 space-y-6">
+                        <div class="w-12 h-12 bg-lime-500/10 rounded-full flex items-center justify-center">
+                            <i data-lucide="ruler" class="text-lime-400 w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-3xl font-bold">損失の可視化</h3>
+                        <p class="text-zinc-400 text-lg leading-relaxed">
+                            「なんとなく見ていた」時間を、「距離」と「失ったもの」に変換します。<br>
+                            「今日、あなたは親指で東京から横浜まで移動しました」<br>
+                            皮肉な通知が、あなたの理性を呼び覚まします。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="w-full md:w-1/2 space-y-6">
+                        <div class="w-12 h-12 bg-lime-500/10 rounded-full flex items-center justify-center">
+                            <i data-lucide="eye-off" class="text-lime-400 w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-3xl font-bold">Grayscale Trap</h3>
+                        <p class="text-zinc-400 text-lg leading-relaxed">
+                            TikTokを開いた瞬間、画面を強制的にモノクロ化。<br>
+                            ドーパミンの源泉である「色彩」を奪うことで、動画を驚くほど「退屈」なものに変えます。<br>
+                            面白くなければ、自然と閉じることになります。
+                        </p>
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <div class="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 aspect-video flex items-center justify-center relative overflow-hidden">
+                             <div class="absolute inset-0 bg-gradient-to-r from-pink-500 via-purple-500 to-yellow-500 opacity-50"></div>
+                             <div class="absolute inset-0 bg-black/90 transition-all duration-1000 animate-pulse flex items-center justify-center">
+                                <span class="text-2xl font-bold text-gray-500">COLOR REMOVED</span>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Feature 3 -->
+                 <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="w-full md:w-1/2 order-2 md:order-1">
+                        <div class="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 aspect-video flex items-center justify-center relative overflow-hidden">
+                            <div class="text-center space-y-4">
+                                <p class="text-xl font-bold">アプリを開きますか？</p>
+                                <div class="flex gap-2 justify-center">
+                                    <span class="w-3 h-3 rounded-full bg-lime-500 animate-bounce" style="animation-delay: 0s"></span>
+                                    <span class="w-3 h-3 rounded-full bg-lime-500 animate-bounce" style="animation-delay: 0.2s"></span>
+                                    <span class="w-3 h-3 rounded-full bg-lime-500 animate-bounce" style="animation-delay: 0.4s"></span>
+                                </div>
+                                <p class="text-sm text-zinc-400">深呼吸してください...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 order-1 md:order-2 space-y-6">
+                        <div class="w-12 h-12 bg-lime-500/10 rounded-full flex items-center justify-center">
+                            <i data-lucide="shield-alert" class="text-lime-400 w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-3xl font-bold">Conscious Breaker</h3>
+                        <p class="text-zinc-400 text-lg leading-relaxed">
+                            無意識にアイコンをタップする「手癖」を破壊します。<br>
+                            SNSを開く前に「本当に必要ですか？」という問いかけと、5秒間の深呼吸を強制。<br>
+                            この数秒の「間」が、あなたを中毒から救います。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof / CTA -->
+    <section class="py-24 bg-lime-400 text-black">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-6xl font-black mb-8 leading-tight">
+                奪われた脳を、<br>今すぐ取り戻せ。
+            </h2>
+            <p class="text-xl md:text-2xl font-bold mb-12 opacity-80">
+                アルゴリズムとの戦いに、<br>
+                <span class="text-black bg-white px-2 py-1 mx-1 rounded">先行者</span> として参加しませんか？
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center" id="download">
+                <a href="https://forms.gle/c8mLoacJaZbsmZUY7" target="_blank" class="bg-black text-white px-10 py-5 rounded-xl font-bold text-xl hover:bg-zinc-800 transition-transform active:scale-95 shadow-2xl flex items-center justify-center gap-3">
+                    <i data-lucide="bell" class="w-6 h-6"></i>
+                    <span>事前登録する（無料）</span>
+                </a>
+            </div>
+            <p class="mt-8 text-sm font-bold opacity-60">
+                ※ iOS / Android 対応予定。登録者には優先的にリリースをお知らせします。
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-black border-t border-zinc-900">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-2">
+                <i data-lucide="smartphone-off" class="text-zinc-500 w-5 h-5"></i>
+                <span class="font-bold text-zinc-500">Unscroll</span>
+            </div>
+            <div class="text-zinc-600 text-sm">
+                &copy; 2025 tsuzukit. All rights reserved.
+            </div>
+            <div class="flex gap-6">
+                <a href="/legal/privacy-policy.html" class="text-zinc-600 hover:text-white transition-colors">Privacy</a>
+                <a href="/legal/terms-of-service.html" class="text-zinc-600 hover:text-white transition-colors">Terms</a>
+                <a href="https://twitter.com/tsuzuki817" class="text-zinc-600 hover:text-white transition-colors">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Simple animation for the mock distance counter
+        const counter = document.getElementById('mockDistance');
+        let distance = 245;
+        setInterval(() => {
+            if(Math.random() > 0.5) {
+                distance += Math.floor(Math.random() * 3);
+                counter.textContent = distance + 'm';
+            }
+        }, 2000);
+    </script>
+</body>
+</html>
