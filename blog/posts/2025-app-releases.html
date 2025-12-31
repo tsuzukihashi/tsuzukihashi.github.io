@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025年にリリースしたアプリ13本を振り返る - Blog | Ryo Tsuzukihashi</title>
+    <meta name="description" content="2025年に新規リリースした13本のiOSアプリを月別で振り返ります。mono、旬のお魚カレンダー、ゼリーセイムパズル、Cook-it、Daydream Cameraなど、様々なジャンルのアプリを開発しました。">
+    <meta name="keywords" content="2025年, iOSアプリ, 個人開発, アプリ開発, 振り返り, tsuzuki817">
+
+    <!-- OGP -->
+    <meta property="og:title" content="2025年にリリースしたアプリ13本を振り返る">
+    <meta property="og:description" content="2025年に新規リリースした13本のiOSアプリを月別で振り返ります">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://tsuzukit.com/blog/posts/2025-app-releases.html">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERPQ1EGLH');
+    </script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <style>
+        /* Blog Post Specific Styles */
+        .blog-post {
+            padding: 120px 0 var(--spacing-3xl);
+        }
+
+        .post-header {
+            max-width: 800px;
+            margin: 0 auto var(--spacing-3xl);
+            text-align: center;
+            padding: 0 var(--spacing-lg);
+        }
+
+        .post-meta {
+            display: flex;
+            justify-content: center;
+            gap: var(--spacing-lg);
+            margin-bottom: var(--spacing-lg);
+            color: var(--color-text-light);
+            font-size: var(--font-size-sm);
+        }
+
+        .post-title {
+            font-size: var(--font-size-4xl);
+            font-weight: 300;
+            color: var(--color-primary);
+            margin-bottom: var(--spacing-lg);
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+        }
+
+        .post-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-lg);
+            line-height: 1.8;
+            color: var(--color-text);
+        }
+
+        .post-content h1 {
+            font-size: var(--font-size-3xl);
+            font-weight: 500;
+            margin: var(--spacing-3xl) 0 var(--spacing-lg);
+            color: var(--color-primary);
+            padding-bottom: var(--spacing-sm);
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .post-content h2 {
+            font-size: var(--font-size-2xl);
+            font-weight: 500;
+            margin: var(--spacing-2xl) 0 var(--spacing-md);
+            color: var(--color-primary);
+        }
+
+        .post-content h3 {
+            font-size: var(--font-size-xl);
+            font-weight: 500;
+            margin: var(--spacing-xl) 0 var(--spacing-md);
+            color: var(--color-primary);
+        }
+
+        .post-content p {
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .post-content ul,
+        .post-content ol {
+            margin: var(--spacing-md) 0 var(--spacing-lg) var(--spacing-lg);
+        }
+
+        .post-content li {
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .post-content a {
+            color: var(--color-primary);
+            text-decoration: underline;
+            transition: var(--transition);
+        }
+
+        .post-content a:hover {
+            color: var(--color-secondary);
+        }
+
+        .post-navigation {
+            max-width: 800px;
+            margin: var(--spacing-3xl) auto 0;
+            padding: var(--spacing-xl) var(--spacing-lg) 0;
+            border-top: 1px solid var(--color-border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-link-wrapper {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            text-decoration: none;
+            color: var(--color-text);
+            transition: var(--transition);
+        }
+
+        .nav-link-wrapper:hover {
+            color: var(--color-primary);
+        }
+
+        /* App Card Styles */
+        .app-grid {
+            display: grid;
+            gap: 16px;
+            margin: var(--spacing-lg) 0;
+        }
+
+        .app-card {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 16px;
+            padding: 20px 24px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .app-card:hover {
+            background: #fff;
+            transform: translateX(8px);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .app-icon {
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            flex-shrink: 0;
+        }
+
+        .app-info {
+            flex: 1;
+        }
+
+        .app-name {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 4px;
+            color: var(--color-primary);
+        }
+
+        .app-meta {
+            display: flex;
+            gap: 12px;
+            font-size: 13px;
+            color: var(--color-text-light);
+        }
+
+        .app-version {
+            background: rgba(102, 126, 234, 0.1);
+            padding: 2px 8px;
+            border-radius: 4px;
+            color: #667eea;
+            font-weight: 500;
+        }
+
+        .month-section {
+            margin: var(--spacing-2xl) 0;
+        }
+
+        .month-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .summary-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: var(--spacing-xl);
+            border-radius: 16px;
+            text-align: center;
+            margin: var(--spacing-2xl) 0;
+        }
+
+        .summary-box h3 {
+            color: white;
+            font-size: var(--font-size-2xl);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .summary-number {
+            font-size: 4rem;
+            font-weight: 900;
+            line-height: 1;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .summary-label {
+            font-size: var(--font-size-lg);
+            opacity: 0.9;
+        }
+
+        @media (max-width: 768px) {
+            .post-title {
+                font-size: var(--font-size-3xl);
+            }
+
+            .post-content h1 {
+                font-size: var(--font-size-2xl);
+            }
+
+            .post-navigation {
+                flex-direction: column;
+                gap: var(--spacing-lg);
+            }
+
+            .app-card {
+                padding: 16px;
+            }
+
+            .app-icon {
+                width: 48px;
+                height: 48px;
+                font-size: 20px;
+            }
+
+            .app-name {
+                font-size: 14px;
+            }
+
+            .summary-number {
+                font-size: 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">Ryo Tsuzukihashi</a>
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/portfolio/" class="nav-link">Portfolio</a>
+                <a href="/blog/" class="nav-link">Blog</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post -->
+    <article class="blog-post">
+        <header class="post-header">
+            <div class="post-meta">
+                <span class="post-date">2025年12月31日</span>
+                <span class="post-category">振り返り</span>
+                <span class="post-reading-time">5分で読める</span>
+            </div>
+            <h1 class="post-title">2025年にリリースした<br>アプリ13本を振り返る</h1>
+        </header>
+
+        <div class="post-content">
+            <p>
+                こんにちは、tsuzuki817（<a href="https://twitter.com/tsuzuki817" target="_blank">@tsuzuki817</a>）です。
+            </p>
+
+            <p>
+                2025年も残すところあとわずかとなりました。今年1年間で新規リリースした<strong>13本のiOSアプリ</strong>を月別で振り返ります。
+            </p>
+
+            <div class="summary-box">
+                <h3>2025年の成果</h3>
+                <div class="summary-number">13</div>
+                <div class="summary-label">apps released</div>
+            </div>
+
+            <h1>月別リリース一覧</h1>
+
+            <!-- March -->
+            <div class="month-section">
+                <span class="month-badge">3月</span>
+                <div class="app-grid">
+                    <div class="app-card">
+                        <div class="app-icon">🎁</div>
+                        <div class="app-info">
+                            <div class="app-name">mono ~お迎えした喜びを分かち合うアプリ~</div>
+                            <div class="app-meta">
+                                <span>2025/03/08</span>
+                                <span class="app-version">v1.0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- May -->
+            <div class="month-section">
+                <span class="month-badge">5月</span>
+                <div class="app-grid">
+                    <div class="app-card">
+                        <div class="app-icon">🐟</div>
+                        <div class="app-info">
+                            <div class="app-name">旬のお魚カレンダー</div>
+                            <div class="app-meta">
+                                <span>2025/05/19</span>
+                                <span class="app-version">v1.0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- June -->
+            <div class="month-section">
+                <span class="month-badge">6月</span>
+                <div class="app-grid">
+                    <div class="app-card">
+                        <div class="app-icon">🍬</div>
+                        <div class="app-info">
+                            <div class="app-name">ゼリーセイムパズル</div>
+                            <div class="app-meta">
+                                <span>2025/06/16</span>
+                                <span class="app-version">v1.5.4</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- July -->
+            <div class="month-section">
+                <span class="month-badge">7月</span>
+                <div class="app-grid">
+                    <div class="app-card">
+                        <div class="app-icon">✂️</div>
+                        <div class="app-info">
+                            <div class="app-name">フチドリ！ ~背景透過と縁取り~</div>
+                            <div class="app-meta">
+                                <span>2025/07/11</span>
+                                <span class="app-version">v1.1.0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-card">
+                        <div class="app-icon">💬</div>
+                        <div class="app-info">
+                            <div class="app-name">RelayChat (リレーチャット) ~オフライン会話~</div>
+                            <div class="app-meta">
+                                <span>2025/07/30</span>
+                                <span class="app-version">v1.1.0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- August -->
+            <div class="month-section">
+                <span class="month-badge">8月</span>
+                <div class="app-grid">
+                    <div class="app-card">
+                        <div class="app-icon">📮</div>
+                        <div class="app-info">
+                            <div class="app-name">言の葉箱 〜大切な手紙を簡単に記録〜</div>
+                            <div class="app-meta">
+                                <span>2025/08/04</span>
+                                <span class="app-version">v1.0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-card">
+                        <div class="app-icon">🍳</div>
+                        <div class="app-info">
+                            <div class="app-name">Cook-it -冷蔵庫の中を撮るだけでAIレシピ提案-</div>
+                            <div class="app-meta">
+                                <span>2025/08/21</span>
+                                <span class="app-version">v1.0.1</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- September -->
+            <div class="month-section">
+                <span class="month-badge">9月</span>
+                <div class="app-grid">
+                    <div class="app-card">
+                        <div class="app-icon">📅</div>
+                        <div class="app-info">
+                            <div class="app-name">Today -今日は令和何年で何の日？-</div>
+                            <div class="app-meta">
+                                <span>2025/09/20</span>
+                                <span class="app-version">v1.0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-card">
+                        <div class="app-icon">📸</div>
+                        <div class="app-info">
+                            <div class="app-name">スワイポン - スワイプで写真と動画を簡単整理</div>
+                            <div class="app-meta">
+                                <span>2025/09/21</span>
+                                <span class="app-version">v1.3.1</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- December -->
+            <div class="month-section">
+                <span class="month-badge">12月</span>
+                <div class="app-grid">
+                    <div class="app-card">
+                        <div class="app-icon">📷</div>
+                        <div class="app-info">
+                            <div class="app-name">Daydream Camera: AI Travel</div>
+                            <div class="app-meta">
+                                <span>2025/12/01</span>
+                                <span class="app-version">v1.1.0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-card">
+                        <div class="app-icon">⏱️</div>
+                        <div class="app-info">
+                            <div class="app-name">FocusDrive - Focus Timer</div>
+                            <div class="app-meta">
+                                <span>2025/12/08</span>
+                                <span class="app-version">v1.0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-card">
+                        <div class="app-icon">🔔</div>
+                        <div class="app-info">
+                            <div class="app-name">BaseReminder</div>
+                            <div class="app-meta">
+                                <span>2025/12/22</span>
+                                <span class="app-version">v1.0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-card">
+                        <div class="app-icon">💊</div>
+                        <div class="app-info">
+                            <div class="app-name">Medicine Reminder & Tracker</div>
+                            <div class="app-meta">
+                                <span>2025/12/23</span>
+                                <span class="app-version">v1.0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h1>振り返り</h1>
+
+            <p>
+                2025年は<strong>13本</strong>の新規アプリをリリースすることができました。特に12月は4本と最も多くのアプリをリリースした月となりました。
+            </p>
+
+            <h2>ジャンルの多様性</h2>
+
+            <p>
+                今年はゲーム（ゼリーセイムパズル）、AI活用アプリ（Cook-it、Daydream Camera）、ユーティリティ（スワイポン、フチドリ！）、コミュニケーション（RelayChat）など、様々なジャンルに挑戦しました。
+            </p>
+
+            <h2>AI活用の加速</h2>
+
+            <p>
+                Cook-itやDaydream Cameraなど、AIを活用したアプリの開発が加速した1年でした。GeminiやClaude Codeといったツールを活用することで、アイデアから実装までのスピードが大幅に向上しました。
+            </p>
+
+            <h2>2026年に向けて</h2>
+
+            <p>
+                来年もユーザーの課題を解決するアプリを作り続けていきます。現在開発中のアプリも含めて、さらに多くのアプリをお届けできるよう頑張ります。
+            </p>
+
+            <p>
+                最後まで読んでいただき、ありがとうございました。<br>
+                2026年もよろしくお願いします！
+            </p>
+        </div>
+
+        <nav class="post-navigation">
+            <a href="/blog/" class="nav-link-wrapper">
+                <span>&larr; ブログ一覧に戻る</span>
+            </a>
+        </nav>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
+                    <p class="footer-description">思い出&times;テクノロジーで新しい価値を創造</p>
+                </div>
+                <div class="footer-nav">
+                    <a href="/legal/privacy-policy.html">プライバシーポリシー</a>
+                    <a href="/legal/terms-of-service.html">利用規約</a>
+                    <a href="/legal/commercial-law.html">特定商取引法</a>
+                    <a href="/legal/disclaimer.html">免責事項</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ryo Tsuzukihashi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
