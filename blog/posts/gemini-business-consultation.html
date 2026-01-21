@@ -150,9 +150,20 @@
     </style>
 </head>
 <body>
-    <!-- Header -->
-    <div id="header-container"></div>
-    
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">Ryo Tsuzukihashi</a>
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/portfolio/" class="nav-link">Portfolio</a>
+                <a href="/blog/" class="nav-link">Blog</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
     <!-- Blog Post Content -->
     <article class="blog-post">
         <header class="post-header">
@@ -273,34 +284,32 @@
             <p>もちろん、実行するのは自分自身です。この記事を書き終えた今、僕の目の前には、やるべきことが明確に広がっています。</p>
         </div>
         
-        <footer class="post-footer">
-            <div class="back-to-blog">
-                <a href="/blog">← ブログ一覧に戻る</a>
-            </div>
-        </footer>
+        <nav class="post-navigation">
+            <a href="/blog/" class="nav-link-wrapper">
+                <span>&larr; ブログ一覧に戻る</span>
+            </a>
+        </nav>
     </article>
-    
+
     <!-- Footer -->
-    <div id="footer-container"></div>
-    
-    <!-- Scripts -->
-    <script src="/assets/js/translations.js"></script>
-    <script src="/assets/js/language-manager.js"></script>
-    <script>
-        // Load header and footer with correct paths
-        fetch('../../components/header.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('header-container').innerHTML = data)
-            .then(() => {
-                // Initialize language after header loads
-                if (typeof initializeLanguage !== 'undefined') {
-                    initializeLanguage();
-                }
-            });
-            
-        fetch('../../components/footer.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('footer-container').innerHTML = data);
-    </script>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
+                    <p class="footer-description">思い出&times;テクノロジーで新しい価値を創造</p>
+                </div>
+                <div class="footer-nav">
+                    <a href="/legal/privacy-policy.html">プライバシーポリシー</a>
+                    <a href="/legal/terms-of-service.html">利用規約</a>
+                    <a href="/legal/commercial-law.html">特定商取引法</a>
+                    <a href="/legal/disclaimer.html">免責事項</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ryo Tsuzukihashi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

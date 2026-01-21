@@ -8,6 +8,34 @@
     <priority>1.0</priority>
   </url>
 
+  <url>
+    <loc>https://tsuzukit.com/portfolio/</loc>
+    <lastmod>2025-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://tsuzukit.com/about/</loc>
+    <lastmod>2025-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://tsuzukit.com/blog/</loc>
+    <lastmod>2025-01-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://tsuzukit.com/contact/</loc>
+    <lastmod>2025-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
   <!-- Unscroll LP -->
   <url>
     <loc>https://tsuzukit.com/unscroll/</loc>
@@ -15,59 +43,96 @@
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
-  
+
+  <!-- Portfolio Detail pages -->
   <url>
-    <loc>https://tsuzukihashi.github.io/portfolio.html</loc>
+    <loc>https://tsuzukit.com/portfolio/apps/travel-memory-map.html</loc>
     <lastmod>2025-01-10</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  
-  <url>
-    <loc>https://tsuzukihashi.github.io/about.html</loc>
-    <lastmod>2025-01-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>https://tsuzukihashi.github.io/blog.html</loc>
-    <lastmod>2025-01-10</lastmod>
-    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  
+
   <url>
-    <loc>https://tsuzukihashi.github.io/contact.html</loc>
+    <loc>https://tsuzukit.com/portfolio/apps/kotonohabako.html</loc>
     <lastmod>2025-01-10</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
-  
+
+  <url>
+    <loc>https://tsuzukit.com/portfolio/apps/relaychat.html</loc>
+    <lastmod>2025-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog posts -->
+  <url>
+    <loc>https://tsuzukit.com/blog/posts/2025-app-releases.html</loc>
+    <lastmod>2025-12-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://tsuzukit.com/blog/posts/daydream-camera-development-story.html</loc>
+    <lastmod>2025-01-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://tsuzukit.com/blog/posts/screennative-development-story.html</loc>
+    <lastmod>2025-01-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://tsuzukit.com/blog/posts/relaychat-development-story.html</loc>
+    <lastmod>2025-01-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://tsuzukit.com/blog/posts/iosdc2019-first-participation.html</loc>
+    <lastmod>2025-01-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://tsuzukit.com/blog/posts/gemini-business-consultation.html</loc>
+    <lastmod>2025-09-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- Legal pages -->
   <url>
-    <loc>https://tsuzukihashi.github.io/legal/privacy-policy.html</loc>
+    <loc>https://tsuzukit.com/legal/privacy-policy.html</loc>
     <lastmod>2025-01-10</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
-  
+
   <url>
-    <loc>https://tsuzukihashi.github.io/legal/terms-of-service.html</loc>
+    <loc>https://tsuzukit.com/legal/terms-of-service.html</loc>
     <lastmod>2025-01-10</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
-  
+
   <url>
-    <loc>https://tsuzukihashi.github.io/legal/commercial-law.html</loc>
+    <loc>https://tsuzukit.com/legal/commercial-law.html</loc>
     <lastmod>2025-01-10</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
-  
+
   <url>
-    <loc>https://tsuzukihashi.github.io/legal/disclaimer.html</loc>
+    <loc>https://tsuzukit.com/legal/disclaimer.html</loc>
     <lastmod>2025-01-10</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
