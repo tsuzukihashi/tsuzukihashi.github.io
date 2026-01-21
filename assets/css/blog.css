@@ -677,3 +677,196 @@
     padding: 0.625rem 1.25rem;
   }
 }
+
+/* ================================
+   Blog Post Detail Styles
+   Common styles for all blog posts
+   ================================ */
+
+/* ========== Blog Post Layout ========== */
+.blog-post {
+  padding: 120px 0 var(--spacing-3xl, 4rem);
+}
+
+.post-header {
+  max-width: 800px;
+  margin: 0 auto var(--spacing-3xl, 4rem);
+  text-align: center;
+  padding: 0 var(--spacing-lg, 1.5rem);
+}
+
+.blog-post .post-meta {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-lg, 1.5rem);
+  margin-bottom: var(--spacing-lg, 1.5rem);
+  color: var(--color-text-light, #999);
+  font-size: var(--font-size-sm, 0.875rem);
+}
+
+.post-title {
+  font-size: var(--font-size-4xl, 2.5rem);
+  font-weight: 300;
+  color: var(--color-primary, #000);
+  margin-bottom: var(--spacing-lg, 1.5rem);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+/* ========== Blog Post Content ========== */
+.post-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg, 1.5rem);
+  line-height: 1.8;
+  color: var(--color-text, #1a1a1a);
+}
+
+.post-content h1 {
+  font-size: var(--font-size-3xl, 2rem);
+  font-weight: 500;
+  margin: var(--spacing-3xl, 4rem) 0 var(--spacing-lg, 1.5rem);
+  color: var(--color-primary, #000);
+  padding-bottom: var(--spacing-sm, 0.5rem);
+  border-bottom: 1px solid var(--color-border, #e0e0e0);
+}
+
+.post-content h2 {
+  font-size: var(--font-size-2xl, 1.5rem);
+  font-weight: 500;
+  margin: var(--spacing-2xl, 3rem) 0 var(--spacing-md, 1rem);
+  color: var(--color-primary, #000);
+}
+
+.post-content h3 {
+  font-size: var(--font-size-xl, 1.25rem);
+  font-weight: 500;
+  margin: var(--spacing-xl, 2rem) 0 var(--spacing-md, 1rem);
+  color: var(--color-primary, #000);
+}
+
+.post-content p {
+  margin-bottom: var(--spacing-lg, 1.5rem);
+}
+
+.post-content ul,
+.post-content ol {
+  margin: var(--spacing-md, 1rem) 0 var(--spacing-lg, 1.5rem) var(--spacing-lg, 1.5rem);
+}
+
+.post-content li {
+  margin-bottom: var(--spacing-sm, 0.5rem);
+}
+
+.post-content a {
+  color: var(--color-primary, #000);
+  text-decoration: underline;
+  transition: var(--transition, 0.3s ease);
+}
+
+.post-content a:hover {
+  color: var(--color-secondary, #666);
+}
+
+.post-content blockquote {
+  border-left: 3px solid var(--color-border, #e0e0e0);
+  margin: var(--spacing-lg, 1.5rem) 0;
+  padding: var(--spacing-md, 1rem) var(--spacing-lg, 1.5rem);
+  background: var(--color-accent, #fafafa);
+  font-style: italic;
+}
+
+.post-content blockquote p {
+  margin-bottom: 0;
+}
+
+.post-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-md, 12px);
+  margin: var(--spacing-lg, 1.5rem) 0;
+}
+
+/* ========== Blog Post Navigation ========== */
+.post-navigation {
+  max-width: 800px;
+  margin: var(--spacing-3xl, 4rem) auto 0;
+  padding: var(--spacing-xl, 2rem) var(--spacing-lg, 1.5rem) 0;
+  border-top: 1px solid var(--color-border, #e0e0e0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-link-wrapper {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm, 0.5rem);
+  text-decoration: none;
+  color: var(--color-text, #1a1a1a);
+  transition: var(--transition, 0.3s ease);
+}
+
+.nav-link-wrapper:hover {
+  color: var(--color-primary, #000);
+}
+
+/* ========== Blog Post Footer ========== */
+.post-footer {
+  max-width: 800px;
+  margin: var(--spacing-3xl, 4rem) auto 0;
+  padding: var(--spacing-xl, 2rem) var(--spacing-lg, 1.5rem) 0;
+  border-top: 1px solid var(--color-border, #e0e0e0);
+}
+
+.back-to-blog a {
+  color: var(--color-text, #1a1a1a);
+  text-decoration: none;
+  transition: var(--transition, 0.3s ease);
+}
+
+.back-to-blog a:hover {
+  color: var(--color-primary, #000);
+}
+
+/* ========== Blog Post Responsive ========== */
+@media (max-width: 768px) {
+  .blog-post {
+    padding: 100px 0 var(--spacing-2xl, 3rem);
+  }
+
+  .post-title {
+    font-size: var(--font-size-3xl, 2rem);
+  }
+
+  .post-content h1 {
+    font-size: var(--font-size-2xl, 1.5rem);
+  }
+
+  .post-content h2 {
+    font-size: var(--font-size-xl, 1.25rem);
+  }
+
+  .post-navigation {
+    flex-direction: column;
+    gap: var(--spacing-lg, 1.5rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-post {
+    padding: 80px 0 var(--spacing-xl, 2rem);
+  }
+
+  .post-title {
+    font-size: var(--font-size-2xl, 1.5rem);
+  }
+
+  .post-header {
+    padding: 0 var(--spacing-md, 1rem);
+  }
+
+  .post-content {
+    padding: 0 var(--spacing-md, 1rem);
+  }
+}

@@ -193,7 +193,7 @@ p {
   position: relative;
   padding: var(--space-2xl) var(--space-xl);
   background: var(--color-background);
-  background-image: url('../images/main_image.jpeg');
+  background-image: url('../images/main_image.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
