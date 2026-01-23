@@ -159,15 +159,24 @@
                         </div>
                         <div class="app-open-btn">開く</div>
                     </div>
-                    <div class="app-screenshots">
-                        <div class="app-screenshot">
-                            <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/7c/bd/46/7cbd469f-4cf5-e72c-1535-b0b225ec3183/pr_source.png/1242x0w.webp" alt="" loading="lazy">
+                    <div class="app-screenshots-carousel" data-current="0">
+                        <button class="carousel-btn carousel-prev" onclick="event.preventDefault(); carouselNav(this, -1);">‹</button>
+                        <div class="carousel-container">
+                            <div class="app-screenshot-landscape active">
+                                <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/7c/bd/46/7cbd469f-4cf5-e72c-1535-b0b225ec3183/pr_source.png/1286x0w.webp" alt="" loading="lazy">
+                            </div>
+                            <div class="app-screenshot-landscape">
+                                <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/a6/5c/60/a65c603e-b595-a643-65ed-b5d4579a5054/pr_source.png/1286x0w.webp" alt="" loading="lazy">
+                            </div>
+                            <div class="app-screenshot-landscape">
+                                <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/13/d8/5b/13d85b17-fcf0-5616-4c60-8475c98516eb/pr_source.png/1286x0w.webp" alt="" loading="lazy">
+                            </div>
                         </div>
-                        <div class="app-screenshot">
-                            <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/a6/5c/60/a65c603e-b595-a643-65ed-b5d4579a5054/pr_source.png/1242x0w.webp" alt="" loading="lazy">
-                        </div>
-                        <div class="app-screenshot">
-                            <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/13/d8/5b/13d85b17-fcf0-5616-4c60-8475c98516eb/pr_source.png/1242x0w.webp" alt="" loading="lazy">
+                        <button class="carousel-btn carousel-next" onclick="event.preventDefault(); carouselNav(this, 1);">›</button>
+                        <div class="carousel-dots">
+                            <span class="carousel-dot active"></span>
+                            <span class="carousel-dot"></span>
+                            <span class="carousel-dot"></span>
                         </div>
                     </div>
                 </a>
