@@ -35,8 +35,8 @@
       appsData = [];
     }
 
-    // Get all app cards
-    appCards = Array.from(document.querySelectorAll('.app-card-store'));
+    // Get all app cards (excluding archived apps)
+    appCards = Array.from(document.querySelectorAll('#appGrid .app-card-store:not(.app-card-archived)'));
 
     // Store original order
     originalOrder = appCards.map(card => card);
