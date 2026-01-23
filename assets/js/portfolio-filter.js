@@ -184,33 +184,11 @@
         });
         break;
 
-      case 'downloads-desc':
-        sortedCards = cards.sort((a, b) => {
-          const countA = parseInt(a.dataset.downloadCount) || 0;
-          const countB = parseInt(b.dataset.downloadCount) || 0;
-          return countB - countA;
-        });
-        break;
-
-      case 'reviews-desc':
+      case 'popular':
         sortedCards = cards.sort((a, b) => {
           const countA = parseInt(a.dataset.ratingCount) || 0;
           const countB = parseInt(b.dataset.ratingCount) || 0;
           return countB - countA;
-        });
-        break;
-
-      case 'rating-desc':
-        sortedCards = cards.sort((a, b) => {
-          const ratingA = parseFloat(a.dataset.rating) || 0;
-          const ratingB = parseFloat(b.dataset.rating) || 0;
-          // 評価が同じ場合はレビュー数で比較
-          if (ratingB === ratingA) {
-            const countA = parseInt(a.dataset.ratingCount) || 0;
-            const countB = parseInt(b.dataset.ratingCount) || 0;
-            return countB - countA;
-          }
-          return ratingB - ratingA;
         });
         break;
 
