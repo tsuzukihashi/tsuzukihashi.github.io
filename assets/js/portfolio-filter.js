@@ -90,6 +90,7 @@
         card.dataset.updateDate = appData.current_version_release_date || '';
         card.dataset.ratingCount = appData.rating_count || 0;
         card.dataset.rating = appData.rating || 0;
+        card.dataset.downloadCount = appData.download_count || 0;
       } else {
         // Fallback: extract data from card HTML
         const nameEl = card.querySelector('.app-name');
@@ -101,6 +102,7 @@
         card.dataset.updateDate = '';
         card.dataset.ratingCount = 0;
         card.dataset.rating = 0;
+        card.dataset.downloadCount = 0;
       }
     });
   }
@@ -179,6 +181,14 @@
           const dateA = new Date(a.dataset.updateDate || a.dataset.releaseDate || '1970-01-01');
           const dateB = new Date(b.dataset.updateDate || b.dataset.releaseDate || '1970-01-01');
           return dateA - dateB;
+        });
+        break;
+
+      case 'downloads-desc':
+        sortedCards = cards.sort((a, b) => {
+          const countA = parseInt(a.dataset.downloadCount) || 0;
+          const countB = parseInt(b.dataset.downloadCount) || 0;
+          return countB - countA;
         });
         break;
 
