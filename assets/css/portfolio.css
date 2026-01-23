@@ -451,6 +451,51 @@
   }
 }
 
+/* ========== Archived Apps Section ========== */
+.archived-section {
+  background: #f5f5f7;
+}
+
+.archived-description {
+  font-size: 0.875rem;
+  color: var(--app-text-secondary);
+  margin-bottom: 24px;
+  margin-top: -16px;
+}
+
+.app-card-archived {
+  height: 450px;
+  opacity: 0.85;
+  cursor: default;
+}
+
+.app-card-archived:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.app-card-archived .app-header {
+  margin-bottom: 12px;
+}
+
+.app-icon-archived {
+  background: linear-gradient(135deg, #e0e0e0 0%, #c0c0c0 100%);
+}
+
+.icon-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+
+.archived-badge {
+  color: #999 !important;
+  font-style: italic;
+}
+
 /* ========== Active Nav Link ========== */
 .nav-link.active {
   color: var(--app-accent);
