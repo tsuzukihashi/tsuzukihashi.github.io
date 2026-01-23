@@ -88,6 +88,8 @@
         card.dataset.category = appData.primary_genre || '';
         card.dataset.releaseDate = appData.release_date || '';
         card.dataset.updateDate = appData.current_version_release_date || '';
+        card.dataset.ratingCount = appData.rating_count || 0;
+        card.dataset.rating = appData.rating || 0;
       } else {
         // Fallback: extract data from card HTML
         const nameEl = card.querySelector('.app-name');
@@ -97,6 +99,8 @@
         card.dataset.category = categoryEl ? categoryEl.textContent.trim() : '';
         card.dataset.releaseDate = '';
         card.dataset.updateDate = '';
+        card.dataset.ratingCount = 0;
+        card.dataset.rating = 0;
       }
     });
   }
@@ -175,6 +179,28 @@
           const dateA = new Date(a.dataset.updateDate || a.dataset.releaseDate || '1970-01-01');
           const dateB = new Date(b.dataset.updateDate || b.dataset.releaseDate || '1970-01-01');
           return dateA - dateB;
+        });
+        break;
+
+      case 'reviews-desc':
+        sortedCards = cards.sort((a, b) => {
+          const countA = parseInt(a.dataset.ratingCount) || 0;
+          const countB = parseInt(b.dataset.ratingCount) || 0;
+          return countB - countA;
+        });
+        break;
+
+      case 'rating-desc':
+        sortedCards = cards.sort((a, b) => {
+          const ratingA = parseFloat(a.dataset.rating) || 0;
+          const ratingB = parseFloat(b.dataset.rating) || 0;
+          // 評価が同じ場合はレビュー数で比較
+          if (ratingB === ratingA) {
+            const countA = parseInt(a.dataset.ratingCount) || 0;
+            const countB = parseInt(b.dataset.ratingCount) || 0;
+            return countB - countA;
+          }
+          return ratingB - ratingA;
         });
         break;
 
