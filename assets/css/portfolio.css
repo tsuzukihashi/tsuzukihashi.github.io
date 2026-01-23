@@ -106,6 +106,160 @@
   margin-bottom: 24px;
 }
 
+/* ========== Filter Bar ========== */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 24px;
+  padding: 16px;
+  background: var(--app-card-bg);
+  border-radius: 12px;
+  border: 1px solid var(--app-border);
+}
+
+.filter-search {
+  flex: 1;
+  min-width: 200px;
+  position: relative;
+}
+
+.filter-search input {
+  width: 100%;
+  padding: 10px 16px 10px 40px;
+  font-size: 0.9375rem;
+  border: 1px solid var(--app-border);
+  border-radius: 10px;
+  background: var(--app-bg);
+  color: var(--app-text-primary);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.filter-search input:focus {
+  outline: none;
+  border-color: var(--app-accent);
+  box-shadow: 0 0 0 3px rgba(0, 113, 227, 0.15);
+}
+
+.filter-search input::placeholder {
+  color: var(--app-text-tertiary);
+}
+
+.filter-search::before {
+  content: "";
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23999999'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z'%3E%3C/path%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.filter-select-group {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.filter-select {
+  padding: 10px 32px 10px 12px;
+  font-size: 0.875rem;
+  border: 1px solid var(--app-border);
+  border-radius: 10px;
+  background: var(--app-bg);
+  color: var(--app-text-primary);
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23666666'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 14px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.filter-select:focus {
+  outline: none;
+  border-color: var(--app-accent);
+  box-shadow: 0 0 0 3px rgba(0, 113, 227, 0.15);
+}
+
+.filter-results {
+  font-size: 0.875rem;
+  color: var(--app-text-secondary);
+  padding: 4px 8px;
+  background: var(--app-bg);
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+.filter-clear {
+  padding: 10px 16px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  color: var(--app-accent);
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.filter-clear:hover {
+  background: rgba(0, 113, 227, 0.1);
+}
+
+/* App Card Hidden State */
+.app-card-store.hidden {
+  display: none;
+}
+
+/* No Results Message */
+.no-results {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--app-text-secondary);
+}
+
+.no-results h3 {
+  font-size: 1.25rem;
+  color: var(--app-text-primary);
+  margin-bottom: 8px;
+}
+
+.no-results p {
+  font-size: 0.9375rem;
+}
+
+/* Mobile Filter Bar */
+@media (max-width: 768px) {
+  .filter-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filter-search {
+    min-width: 100%;
+  }
+
+  .filter-select-group {
+    width: 100%;
+  }
+
+  .filter-select {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .filter-results {
+    text-align: center;
+    width: 100%;
+  }
+}
+
 /* ========== App Store Grid ========== */
 .app-grid-store {
   display: grid;

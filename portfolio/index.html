@@ -26,7 +26,7 @@
 
         <!-- CSS -->
         <link rel="stylesheet" href="../assets/css/memories-tech.css">
-        <link rel="stylesheet" href="../assets/css/portfolio.css?v=20260123h">
+        <link rel="stylesheet" href="../assets/css/portfolio.css?v=20260123i">
 
         <!-- Favicon -->
         <link rel="icon" href="../favicon.ico">
@@ -98,7 +98,47 @@
             <div class="container">
                 <h2 class="section-title-appstore">すべてのアプリ</h2>
 
-                <div class="app-grid-store">
+                <!-- Filter Bar -->
+                <div class="filter-bar">
+                    <div class="filter-search">
+                        <input type="text" id="searchInput" placeholder="アプリを検索...">
+                    </div>
+                    <div class="filter-select-group">
+                        <select id="categoryFilter" class="filter-select">
+                            <option value="">すべてのカテゴリ</option>
+                            <option value="Utilities">ユーティリティ</option>
+                            <option value="Productivity">仕事効率化</option>
+                            <option value="Reference">辞書/辞典/その他</option>
+                            <option value="Photo & Video">写真/ビデオ</option>
+                            <option value="Lifestyle">ライフスタイル</option>
+                            <option value="Graphics & Design">グラフィック/デザイン</option>
+                            <option value="Food & Drink">フード/ドリンク</option>
+                            <option value="Social Networking">ソーシャルネットワーキング</option>
+                            <option value="Games">ゲーム</option>
+                            <option value="Music">ミュージック</option>
+                            <option value="Book">ブック</option>
+                            <option value="News">ニュース</option>
+                            <option value="Travel">旅行</option>
+                            <option value="Education">教育</option>
+                            <option value="Medical">メディカル</option>
+                            <option value="Health & Fitness">ヘルスケア/フィットネス</option>
+                            <option value="Entertainment">エンターテインメント</option>
+                        </select>
+                        <select id="sortFilter" class="filter-select">
+                            <option value="default">並び順：デフォルト</option>
+                            <option value="release-desc">リリース日：新しい順</option>
+                            <option value="release-asc">リリース日：古い順</option>
+                            <option value="update-desc">更新日：新しい順</option>
+                            <option value="update-asc">更新日：古い順</option>
+                            <option value="name-asc">名前：A-Z</option>
+                            <option value="name-desc">名前：Z-A</option>
+                        </select>
+                    </div>
+                    <span class="filter-results" id="filterResults">40件表示中</span>
+                    <button class="filter-clear" id="filterClear">クリア</button>
+                </div>
+
+                <div class="app-grid-store" id="appGrid">
                 <a href="https://apps.apple.com/jp/app/%E6%97%85%E8%A1%8C%E6%80%9D%E3%81%84%E5%87%BA%E3%83%9E%E3%83%83%E3%83%97-%E6%97%85%E3%81%AE%E8%A8%98%E6%86%B6%E3%82%92-%E5%9C%B0%E5%9B%B3%E3%81%AB%E6%8F%8F%E3%81%8F/id6478291625?uo=4" target="_blank" class="app-card-store">
                     <div class="app-header">
                         <div class="app-icon-store">
@@ -1293,5 +1333,8 @@
             navMenu.classList.toggle('active');
         });
         </script>
+
+        <!-- Portfolio Filter Script -->
+        <script src="../assets/js/portfolio-filter.js"></script>
     </body>
 </html>

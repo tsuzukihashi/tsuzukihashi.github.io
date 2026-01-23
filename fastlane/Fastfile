@@ -1,0 +1,289 @@
+default_platform(:ios)
+
+require 'dotenv'
+require 'json'
+require 'date'
+require 'net/http'
+require 'uri'
+
+Dotenv.load('.env')
+
+platform :ios do
+  # ============================================
+  # API Key設定
+  # ============================================
+  def setup_spaceship
+    require 'spaceship'
+
+    Spaceship::ConnectAPI.token = Spaceship::ConnectAPI::Token.create(
+      key_id: ENV["ASC_KEY_ID"],
+      issuer_id: ENV["ASC_ISSUER_ID"],
+      filepath: ENV["ASC_KEY_FILEPATH"]
+    )
+  end
+
+  # ============================================
+  # ポートフォリオ用の全アプリデータ取得
+  # ============================================
+  desc "ポートフォリオ用の全アプリメタデータを取得（カテゴリ、リリース日、更新日を含む）"
+  lane :fetch_portfolio_data do
+    setup_spaceship
+
+    UI.message("Fetching all apps from App Store Connect for Portfolio...")
+
+    apps = Spaceship::ConnectAPI::App.all
+
+    UI.message("\n" + "=" * 60)
+    UI.message("Total apps found: #{apps.count}")
+    UI.message("=" * 60 + "\n")
+
+    portfolio_data = []
+
+    apps.each_with_index do |app, index|
+      UI.message("Processing #{index + 1}/#{apps.count}: #{app.name}")
+
+      app_info = {
+        id: app.id,
+        name: app.name,
+        bundle_id: app.bundle_id,
+        sku: app.sku
+      }
+
+      begin
+        # ライブバージョンを取得
+        live_version = app.get_live_app_store_version
+
+        if live_version
+          app_info[:current_version] = live_version.version_string
+          app_info[:version_state] = live_version.app_store_state
+
+          # バージョンのローカライゼーション情報を取得
+          begin
+            localizations = live_version.get_app_store_version_localizations
+            ja_loc = localizations.find { |l| l.locale == 'ja' }
+            en_loc = localizations.find { |l| l.locale.start_with?('en') }
+
+            loc = ja_loc || en_loc || localizations.first
+            if loc
+              app_info[:subtitle] = loc.subtitle
+              app_info[:description] = loc.description
+              app_info[:keywords] = loc.keywords
+              app_info[:promotional_text] = loc.promotional_text
+            end
+          rescue => e
+            UI.message("  Could not fetch localizations: #{e.message}")
+          end
+        end
+
+        # 全バージョン履歴を取得してリリース日を推測
+        begin
+          all_versions = app.get_app_store_versions
+
+          # 最も古いバージョン（初回リリース）
+          oldest_version = all_versions.min_by do |v|
+            begin
+              DateTime.parse(v.created_date.to_s)
+            rescue
+              DateTime.now
+            end
+          end
+
+          if oldest_version
+            begin
+              first_created = DateTime.parse(oldest_version.created_date.to_s)
+              app_info[:first_release_date] = first_created.strftime('%Y-%m-%d')
+            rescue
+              app_info[:first_release_date] = nil
+            end
+          end
+
+          # 最新バージョン（最終更新）
+          newest_version = all_versions.max_by do |v|
+            begin
+              DateTime.parse(v.created_date.to_s)
+            rescue
+              DateTime.new(1970, 1, 1)
+            end
+          end
+
+          if newest_version
+            begin
+              last_updated = DateTime.parse(newest_version.created_date.to_s)
+              app_info[:last_update_date] = last_updated.strftime('%Y-%m-%d')
+              app_info[:last_update_version] = newest_version.version_string
+            rescue
+              app_info[:last_update_date] = nil
+            end
+          end
+        rescue => e
+          UI.message("  Could not fetch version history: #{e.message}")
+        end
+
+        # App Infoからカテゴリを取得
+        begin
+          app_infos = app.get_app_infos
+          current_app_info = app_infos.first
+
+          if current_app_info
+            # プライマリカテゴリ
+            primary_cat = current_app_info.primary_category
+            if primary_cat
+              app_info[:primary_category] = primary_cat.id.gsub('APP_STORE_CATEGORY_', '').gsub('_', ' ').capitalize
+            end
+
+            # セカンダリカテゴリ
+            secondary_cat = current_app_info.secondary_category
+            if secondary_cat
+              app_info[:secondary_category] = secondary_cat.id.gsub('APP_STORE_CATEGORY_', '').gsub('_', ' ').capitalize
+            end
+          end
+        rescue => e
+          UI.message("  Could not fetch categories: #{e.message}")
+        end
+
+        # 価格情報（無料かどうか）
+        begin
+          # App Store Connect API v2での価格取得は複雑なので、基本的にはFreeと仮定
+          # 課金があるアプリはin_app_purchasesで確認
+          iaps = app.get_in_app_purchases rescue []
+          app_info[:has_in_app_purchases] = !iaps.empty?
+          app_info[:price_tier] = "Free" # デフォルト
+        rescue => e
+          UI.message("  Could not fetch pricing: #{e.message}")
+        end
+
+        UI.message("  Done: #{app.name}")
+        UI.message("-" * 40)
+
+      rescue => e
+        UI.message("  Error processing #{app.name}: #{e.message}")
+      end
+
+      portfolio_data << app_info
+    end
+
+    # リリース日でソート（新しいものが先）
+    portfolio_data.sort_by! do |app|
+      begin
+        Date.parse(app[:first_release_date] || '1970-01-01')
+      rescue
+        Date.new(1970, 1, 1)
+      end
+    end.reverse!
+
+    # JSONファイルに保存（Webサイト用）
+    output_path = "../assets/data/apps.json"
+    FileUtils.mkdir_p(File.dirname(output_path))
+
+    json_output = {
+      generated_at: DateTime.now.strftime('%Y-%m-%d %H:%M:%S'),
+      total_apps: portfolio_data.count,
+      apps: portfolio_data
+    }
+
+    File.write(output_path, JSON.pretty_generate(json_output))
+    UI.success("\nSaved to #{output_path}")
+
+    # カテゴリ別のサマリーも出力
+    categories = portfolio_data.group_by { |app| app[:primary_category] || 'Unknown' }
+    UI.message("\n" + "=" * 60)
+    UI.message("Category Summary:")
+    UI.message("=" * 60)
+    categories.each do |cat, apps|
+      UI.message("  #{cat}: #{apps.count} apps")
+    end
+  end
+
+  # ============================================
+  # App Storeのパブリック情報を取得（スクリーンショットURL等）
+  # ============================================
+  desc "App Store Lookup APIを使ってパブリック情報を取得"
+  lane :fetch_public_info do
+    setup_spaceship
+
+    UI.message("Fetching public App Store info...")
+
+    apps = Spaceship::ConnectAPI::App.all
+    public_data = []
+
+    apps.each_with_index do |app, index|
+      UI.message("Processing #{index + 1}/#{apps.count}: #{app.name}")
+
+      begin
+        # iTunes Search APIを使用
+        uri = URI("https://itunes.apple.com/lookup?bundleId=#{app.bundle_id}&country=jp")
+        response = Net::HTTP.get_response(uri)
+
+        if response.code.to_i == 200
+          result = JSON.parse(response.body)
+
+          if result['resultCount'] > 0
+            itunes_data = result['results'].first
+
+            public_data << {
+              bundle_id: app.bundle_id,
+              name: itunes_data['trackName'],
+              app_store_url: itunes_data['trackViewUrl'],
+              icon_url: itunes_data['artworkUrl512'] || itunes_data['artworkUrl100'],
+              screenshots: itunes_data['screenshotUrls'] || [],
+              ipad_screenshots: itunes_data['ipadScreenshotUrls'] || [],
+              price: itunes_data['formattedPrice'],
+              currency: itunes_data['currency'],
+              genres: itunes_data['genres'],
+              primary_genre: itunes_data['primaryGenreName'],
+              rating: itunes_data['averageUserRating'],
+              rating_count: itunes_data['userRatingCount'],
+              version: itunes_data['version'],
+              release_date: itunes_data['releaseDate'],
+              current_version_release_date: itunes_data['currentVersionReleaseDate'],
+              description: itunes_data['description'],
+              release_notes: itunes_data['releaseNotes'],
+              content_advisory_rating: itunes_data['contentAdvisoryRating'],
+              minimum_os_version: itunes_data['minimumOsVersion'],
+              developer_name: itunes_data['artistName'],
+              seller_name: itunes_data['sellerName']
+            }
+
+            UI.message("  Found: #{itunes_data['trackName']}")
+          else
+            UI.message("  Not found on App Store: #{app.bundle_id}")
+          end
+        end
+
+        # API制限を避けるため少し待機
+        sleep(0.5)
+
+      rescue => e
+        UI.message("  Error: #{e.message}")
+      end
+    end
+
+    # JSONファイルに保存
+    output_path = "../assets/data/apps_public.json"
+    FileUtils.mkdir_p(File.dirname(output_path))
+
+    json_output = {
+      generated_at: DateTime.now.strftime('%Y-%m-%d %H:%M:%S'),
+      total_apps: public_data.count,
+      apps: public_data
+    }
+
+    File.write(output_path, JSON.pretty_generate(json_output))
+    UI.success("\nSaved to #{output_path}")
+  end
+
+  # ============================================
+  # ポートフォリオ用の統合データを生成
+  # ============================================
+  desc "ポートフォリオ用の完全なデータセットを生成"
+  lane :generate_portfolio do
+    fetch_public_info
+
+    UI.message("\n" + "=" * 60)
+    UI.message("Portfolio data generation complete!")
+    UI.message("=" * 60)
+    UI.message("\nGenerated files:")
+    UI.message("  - assets/data/apps_public.json")
+    UI.message("\nYou can now update the portfolio page to use this data.")
+  end
+end
