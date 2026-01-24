@@ -450,11 +450,9 @@
   justify-content: center;
 }
 
-/* ========== Landscape Screenshot Carousel ========== */
+/* ========== Landscape Screenshot Scroll ========== */
 .app-screenshots-carousel {
-  position: relative;
   width: 100%;
-  overflow: hidden;
   flex: 1;
   min-height: 0;
   display: flex;
@@ -463,30 +461,28 @@
 
 .carousel-inner {
   display: flex;
-  align-items: center;
   gap: 8px;
   flex: 1;
   min-height: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.carousel-inner::-webkit-scrollbar {
+  display: none;
 }
 
 .carousel-container {
-  position: relative;
-  flex: 1;
-  min-height: 0;
-  height: 100%;
-  border-radius: 8px;
-  overflow: hidden;
-  background: var(--app-card-bg);
+  display: contents;
 }
 
 .app-screenshot-landscape {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  opacity: 1;
 }
 
 .app-screenshot-landscape.active {
@@ -495,49 +491,18 @@
 
 .app-screenshot-landscape img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  display: block;
+  border-radius: 8px;
 }
 
+/* カルーセルボタンとドットを非表示 */
 .carousel-btn {
-  flex-shrink: 0;
-  width: 28px;
-  height: 28px;
-  border: none;
-  background: var(--app-card-bg);
-  border-radius: 50%;
-  font-size: 18px;
-  font-weight: 300;
-  color: #333;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transition: background 0.2s ease;
-}
-
-.carousel-btn:hover {
-  background: #e8e8e8;
+  display: none;
 }
 
 .carousel-dots {
-  display: flex;
-  justify-content: center;
-  gap: 6px;
-  margin-top: 8px;
-}
-
-.carousel-dot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: var(--app-border);
-  transition: background 0.2s ease;
-}
-
-.carousel-dot.active {
-  background: var(--app-accent);
+  display: none;
 }
 
 /* ========== Image Lightbox ========== */
