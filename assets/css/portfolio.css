@@ -234,6 +234,58 @@
   font-size: 0.9375rem;
 }
 
+/* ========== Multi-platform App Card ========== */
+.app-card-multiplatform {
+  cursor: default;
+}
+
+.app-card-multiplatform:hover {
+  transform: none;
+}
+
+.app-store-buttons {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--app-border);
+}
+
+.store-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.store-btn:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+}
+
+.store-btn svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.store-btn-ios {
+  background: #000;
+  color: #fff;
+}
+
+.store-btn-android {
+  background: #01875f;
+  color: #fff;
+}
+
 /* Mobile Filter Bar */
 @media (max-width: 768px) {
   .filter-bar {
