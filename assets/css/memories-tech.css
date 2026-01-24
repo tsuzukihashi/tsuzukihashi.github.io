@@ -184,6 +184,15 @@ p {
   width: 100%;
 }
 
+.nav-link.active {
+  color: #1a1a1a;
+}
+
+.nav-link.active::after {
+  width: 100%;
+  background: #1a1a1a;
+}
+
 /* ========== Hero Section ========== */
 .hero {
   min-height: 100vh;

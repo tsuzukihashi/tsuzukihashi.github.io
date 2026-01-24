@@ -673,10 +673,10 @@
 
 /* ========== Active Nav Link ========== */
 .nav-link.active {
-  color: var(--app-accent);
+  color: #1a1a1a;
 }
 
 .nav-link.active::after {
   width: 100%;
-  background: var(--app-accent);
+  background: #1a1a1a;
 }
