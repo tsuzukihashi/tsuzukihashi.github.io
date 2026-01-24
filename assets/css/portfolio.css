@@ -341,7 +341,6 @@
 
 .app-card-store:hover {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-  transform: translateY(-2px);
 }
 
 /* App Header (Icon + Info + Download) */
@@ -417,8 +416,6 @@
   gap: 4px;
   flex: 1;
   min-height: 0;
-  min-width: 0;
-  width: 100%;
   overflow-x: auto;
   overflow-y: hidden;
   scroll-snap-type: x mandatory;
@@ -433,9 +430,6 @@
 .app-screenshot {
   flex: 0 0 auto;
   height: 100%;
-  border-radius: 8px;
-  overflow: hidden;
-  background: var(--app-card-bg);
   scroll-snap-align: start;
 }
 
@@ -443,6 +437,7 @@
   height: 100%;
   width: auto;
   display: block;
+  border-radius: 8px;
 }
 
 /* Screenshot 2枚の場合 */
@@ -598,15 +593,6 @@
   cursor: zoom-in;
 }
 
-/* Hover effect */
-.app-card-store:hover .app-icon-store {
-  transform: scale(1.05);
-  transition: transform 0.2s ease;
-}
-
-.app-card-store .app-icon-store {
-  transition: transform 0.2s ease;
-}
 
 /* ========== Responsive Design ========== */
 
@@ -670,7 +656,7 @@
     padding-bottom: 4px;
   }
 
-  .app-screenshot {
+  .app-screenshot img {
     border-radius: 6px;
   }
 }
