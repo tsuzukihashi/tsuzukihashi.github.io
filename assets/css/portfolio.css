@@ -432,8 +432,7 @@
 
 .app-screenshot {
   flex: 0 0 auto;
-  width: calc((100% - 8px) / 3);
-  aspect-ratio: 9 / 19.5;
+  height: 100%;
   border-radius: 8px;
   overflow: hidden;
   background: var(--app-card-bg);
@@ -441,20 +440,19 @@
 }
 
 .app-screenshot img {
-  width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: top;
+  width: auto;
+  display: block;
 }
 
 /* Screenshot 2枚の場合 */
-.app-screenshots.two-screenshots .app-screenshot {
-  width: calc((100% - 4px) / 2);
+.app-screenshots.two-screenshots {
+  justify-content: center;
 }
 
 /* Screenshot 1枚の場合 */
-.app-screenshots.one-screenshot .app-screenshot {
-  width: 100px;
+.app-screenshots.one-screenshot {
+  justify-content: center;
 }
 
 /* ========== Landscape Screenshot Carousel ========== */
@@ -674,9 +672,6 @@
 
   .app-screenshot {
     border-radius: 6px;
-    width: 80px;
-    min-width: 80px;
-    aspect-ratio: 9 / 19.5;
   }
 }
 
