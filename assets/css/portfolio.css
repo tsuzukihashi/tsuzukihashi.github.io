@@ -245,8 +245,8 @@
 
 .app-store-buttons-header {
   display: flex;
-  flex-direction: column;
-  gap: 4px;
+  flex-direction: row;
+  gap: 6px;
   flex-shrink: 0;
 }
 
