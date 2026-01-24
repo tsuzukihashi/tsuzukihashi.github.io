@@ -110,7 +110,7 @@ p {
   left: 0;
   right: 0;
   z-index: 1000;
-  padding: var(--space-md) 0;
+  padding: var(--space-xs) 0;
   background: rgba(255, 255, 255, 0.98);
   backdrop-filter: blur(20px);
   transition: var(--transition-normal);
@@ -118,7 +118,7 @@ p {
 }
 
 .nav.scrolled {
-  padding: var(--space-sm) 0;
+  padding: var(--space-xs) 0;
   border-bottom-color: var(--color-border);
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03);
 }
