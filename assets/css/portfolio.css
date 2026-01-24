@@ -243,45 +243,43 @@
   transform: none;
 }
 
-.app-store-buttons {
+.app-store-buttons-header {
   display: flex;
-  gap: 8px;
-  margin-top: 12px;
-  padding-top: 12px;
-  border-top: 1px solid var(--app-border);
-}
-
-.store-btn {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  padding: 10px 12px;
-  border-radius: 8px;
-  font-size: 0.8125rem;
-  font-weight: 600;
-  text-decoration: none;
-  transition: opacity 0.2s ease, transform 0.2s ease;
-}
-
-.store-btn:hover {
-  opacity: 0.9;
-  transform: scale(1.02);
-}
-
-.store-btn svg {
-  width: 18px;
-  height: 18px;
+  flex-direction: column;
+  gap: 4px;
   flex-shrink: 0;
 }
 
-.store-btn-ios {
+.store-btn-small {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 6px 10px;
+  border-radius: 16px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+  white-space: nowrap;
+}
+
+.store-btn-small:hover {
+  opacity: 0.85;
+}
+
+.store-btn-small svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+.store-btn-small.store-btn-ios {
   background: #000;
   color: #fff;
 }
 
-.store-btn-android {
+.store-btn-small.store-btn-android {
   background: #01875f;
   color: #fff;
 }
