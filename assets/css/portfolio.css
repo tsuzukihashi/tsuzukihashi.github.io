@@ -413,22 +413,31 @@
 
 /* App Screenshots */
 .app-screenshots {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   gap: 4px;
   flex: 1;
   min-height: 0;
   min-width: 0;
   width: 100%;
-  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.app-screenshots::-webkit-scrollbar {
+  display: none;
 }
 
 .app-screenshot {
-  height: 100%;
+  flex: 0 0 auto;
+  width: calc((100% - 8px) / 3);
+  aspect-ratio: 9 / 19.5;
   border-radius: 8px;
   overflow: hidden;
   background: var(--app-card-bg);
-  min-width: 0;
+  scroll-snap-align: start;
 }
 
 .app-screenshot img {
@@ -439,14 +448,13 @@
 }
 
 /* Screenshot 2枚の場合 */
-.app-screenshots.two-screenshots {
-  grid-template-columns: repeat(2, 1fr);
+.app-screenshots.two-screenshots .app-screenshot {
+  width: calc((100% - 4px) / 2);
 }
 
 /* Screenshot 1枚の場合 */
-.app-screenshots.one-screenshot {
-  grid-template-columns: 1fr;
-  max-width: 100px;
+.app-screenshots.one-screenshot .app-screenshot {
+  width: 100px;
 }
 
 /* ========== Landscape Screenshot Carousel ========== */
@@ -660,11 +668,15 @@
 
   /* モバイルではスクショのギャップを小さく */
   .app-screenshots {
-    gap: 2px;
+    gap: 6px;
+    padding-bottom: 4px;
   }
 
   .app-screenshot {
-    border-radius: 4px;
+    border-radius: 6px;
+    width: 80px;
+    min-width: 80px;
+    aspect-ratio: 9 / 19.5;
   }
 }
 
