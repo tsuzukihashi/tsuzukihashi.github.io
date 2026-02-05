@@ -222,6 +222,32 @@ tsuzuki817.github.io/
 
 **このタグの追加を忘れると、アクセス解析ができなくなるため、新規ページ作成時は必ず確認してください。**
 
+## Google AdSense
+
+以下のGoogle AdSenseコードをすべてのページの`<head>`セクションに含めてください。
+
+```html
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8240751277462688"
+    crossorigin="anonymous"></script>
+```
+
+### 重要：新規ページ作成時の必須要件
+
+**すべての新規HTMLページには、Google Analyticsタグの直後にGoogle AdSenseコードを追加してください：**
+
+1. **配置場所：**
+   - `<head>`セクション内
+   - Google Analyticsタグの直後
+   - `</head>`タグの前
+
+2. **対象となるページ：**
+   - 新規ブログ記事（blog/posts/）
+   - 新規アプリ詳細ページ（portfolio/apps/）
+   - その他すべての新規HTMLページ
+
+**このタグの追加を忘れると、広告が表示されなくなるため、新規ページ作成時は必ず確認してください。**
+
 ## 多言語対応要件
 
 ### サポート言語
