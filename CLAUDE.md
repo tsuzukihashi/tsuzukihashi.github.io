@@ -355,3 +355,81 @@ tsuzuki817.github.io/
 - 一貫性の保持
 - バグの削減
 - 開発効率の向上
+
+## ポートフォリオ更新手順
+
+新しいアプリをリリースした後、ポートフォリオを更新する際は以下の手順に従うこと。
+
+### 1. fastlaneでデータ取得
+
+```bash
+cd fastlane
+bundle exec fastlane fetch_public_info
+```
+
+これにより `assets/data/apps_public.json` が生成される。
+
+### 2. スクリーンショット取得に関する重要な注意
+
+**iTunes Search API（`itunes.apple.com/lookup`）は新しいアプリのスクリーンショットを返さない。**
+
+- 2024年以降にリリースされたアプリでは `screenshotUrls` が空配列になる
+- スクリーンショットは **App Store Connect API**（Spaceship）から取得する必要がある
+- デバイスサイズは **`APP_IPHONE_65`**（6.5インチ）を使用する
+
+```ruby
+# App Store Connect APIからスクリーンショットを取得する方法
+live_version = app.get_live_app_store_version
+localizations = live_version.get_app_store_version_localizations
+ja_loc = localizations.find { |l| l.locale == 'ja' }
+screenshot_sets = ja_loc.get_app_screenshot_sets
+iphone_set = screenshot_sets.find { |s| s.screenshot_display_type == 'APP_IPHONE_65' }
+screenshots = iphone_set.app_screenshots
+# templateUrlの {w}, {h}, {f} を 1242, 0, webp に置換してURLを生成
+```
+
+Fastfileの `fetch_public_info` レーンにはこのフォールバック処理が組み込み済み。
+
+### 3. 更新が必要なファイル一覧
+
+| ファイル | 更新内容 |
+|---|---|
+| `assets/data/apps.json` | 新アプリのデータ追加（マージスクリプトで更新） |
+| `portfolio/index.html` | アプリカードHTML追加、統計数値（アプリ数・レビュー数）更新 |
+| `index.html` | トップページの統計数値更新 |
+| `about/index.html` | プロフィールのアプリ数更新 |
+| `sitemap.xml` | ポートフォリオページの `lastmod` 更新 |
+
+### 4. HTMLアプリカードのテンプレート
+
+```html
+<a href="{App Store URL}" target="_blank" class="app-card-store">
+    <div class="app-header">
+        <div class="app-icon-store">
+            <img src="{アイコンURL 256x256}" alt="{アプリ名}">
+        </div>
+        <div class="app-info">
+            <h3 class="app-name">{アプリ名}</h3>
+            <p class="app-subtitle">{カテゴリ（英語）}</p>
+            <p class="app-meta">Free</p>
+        </div>
+        <div class="app-open-btn">開く</div>
+    </div>
+    <div class="app-screenshots">
+        <div class="app-screenshot">
+            <img src="{スクリーンショットURL 1}" alt="" loading="lazy">
+        </div>
+        <div class="app-screenshot">
+            <img src="{スクリーンショットURL 2}" alt="" loading="lazy">
+        </div>
+        <div class="app-screenshot">
+            <img src="{スクリーンショットURL 3}" alt="" loading="lazy">
+        </div>
+    </div>
+</a>
+```
+
+### 5. 新アプリカードの挿入位置
+
+- リリース日が新しいものほど上に配置
+- 旅行思い出マップ（マルチプラットフォームのフィーチャーカード）の直後に挿入

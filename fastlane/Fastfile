@@ -220,12 +220,46 @@ platform :ios do
           if result['resultCount'] > 0
             itunes_data = result['results'].first
 
+            # App Store Connect APIからスクリーンショットを取得（iTunes APIでは新しいアプリのSSが取れないため）
+            asc_screenshots = []
+            begin
+              live_version = app.get_live_app_store_version
+              if live_version
+                localizations = live_version.get_app_store_version_localizations
+                ja_loc = localizations.find { |l| l.locale == 'ja' }
+                loc = ja_loc || localizations.first
+
+                if loc
+                  screenshot_sets = loc.get_app_screenshot_sets
+                  # 6.5インチiPhoneのスクリーンショットを優先
+                  iphone_set = screenshot_sets.find { |s| s.screenshot_display_type == 'APP_IPHONE_65' }
+                  iphone_set ||= screenshot_sets.find { |s| s.screenshot_display_type&.start_with?('APP_IPHONE') }
+
+                  if iphone_set
+                    screenshots = iphone_set.app_screenshots
+                    asc_screenshots = screenshots.map do |ss|
+                      if ss.image_asset && ss.image_asset['templateUrl']
+                        ss.image_asset['templateUrl'].gsub('{w}', '1242').gsub('{h}', '0').gsub('{f}', 'webp')
+                      end
+                    end.compact
+                    UI.message("  ASC Screenshots: #{asc_screenshots.count}")
+                  end
+                end
+              end
+            rescue => e
+              UI.message("  Could not fetch ASC screenshots: #{e.message}")
+            end
+
+            # iTunes APIのスクリーンショットがなければASCから取得したものを使用
+            itunes_screenshots = itunes_data['screenshotUrls'] || []
+            final_screenshots = itunes_screenshots.empty? ? asc_screenshots : itunes_screenshots
+
             public_data << {
               bundle_id: app.bundle_id,
               name: itunes_data['trackName'],
               app_store_url: itunes_data['trackViewUrl'],
               icon_url: itunes_data['artworkUrl512'] || itunes_data['artworkUrl100'],
-              screenshots: itunes_data['screenshotUrls'] || [],
+              screenshots: final_screenshots,
               ipad_screenshots: itunes_data['ipadScreenshotUrls'] || [],
               price: itunes_data['formattedPrice'],
               currency: itunes_data['currency'],
