@@ -74,7 +74,12 @@
       card.dataset.originalIndex = index;
 
       // Try to find matching app data
-      const appUrl = card.getAttribute('href') || '';
+      let appUrl = card.getAttribute('href') || '';
+      // マルチプラットフォームカードの場合、内部のApp Storeリンクからhrefを取得
+      if (!appUrl) {
+        const iosLink = card.querySelector('.store-btn-ios');
+        if (iosLink) appUrl = iosLink.getAttribute('href') || '';
+      }
       const appIdMatch = appUrl.match(/\/id(\d+)/);
       const appId = appIdMatch ? parseInt(appIdMatch[1]) : null;
 
@@ -91,6 +96,9 @@
         card.dataset.ratingCount = appData.rating_count || 0;
         card.dataset.rating = appData.rating || 0;
         card.dataset.downloadCount = appData.download_count || 0;
+
+        // リリース日を表示
+        injectReleaseDate(card, appData.release_date);
       } else {
         // Fallback: extract data from card HTML
         const nameEl = card.querySelector('.app-name');
@@ -105,6 +113,26 @@
         card.dataset.downloadCount = 0;
       }
     });
+  }
+
+  /**
+   * リリース日をカードに表示
+   */
+  function injectReleaseDate(card, releaseDate) {
+    if (!releaseDate) return;
+
+    const metaEl = card.querySelector('.app-meta');
+    if (!metaEl) return;
+
+    const date = new Date(releaseDate);
+    if (isNaN(date.getTime())) return;
+
+    const year = date.getFullYear();
+    const month = date.getMonth() + 1;
+    const day = date.getDate();
+    const formatted = `${year}.${month}.${day}`;
+
+    metaEl.textContent = `${metaEl.textContent} · ${formatted}`;
   }
 
   /**
