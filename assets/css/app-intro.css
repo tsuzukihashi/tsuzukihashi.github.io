@@ -1,0 +1,215 @@
+/* ================================
+   App Introduction Blog Post Styles
+   ================================ */
+
+/* ========== App Info Card ========== */
+.app-intro-card {
+    background: var(--color-accent, #fafafa);
+    border: 1px solid var(--color-border, #e0e0e0);
+    padding: var(--spacing-lg, 1.5rem);
+    margin-bottom: var(--spacing-lg, 1.5rem);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md, 1rem);
+}
+
+.app-intro-header {
+    display: flex;
+    gap: var(--spacing-md, 1rem);
+    align-items: flex-start;
+}
+
+.app-intro-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 22px;
+    flex-shrink: 0;
+    border: 1px solid var(--color-border, #e0e0e0);
+}
+
+.app-intro-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.app-intro-name {
+    font-size: var(--font-size-lg, 1.25rem);
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+    color: var(--color-primary, #000);
+    border: none;
+    padding: 0;
+}
+
+.app-intro-genre {
+    font-size: var(--font-size-sm, 0.875rem);
+    color: var(--color-secondary, #666);
+    margin-bottom: 0.25rem;
+}
+
+.app-intro-price {
+    font-size: var(--font-size-sm, 0.875rem);
+    color: var(--color-primary, #000);
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.app-intro-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.rating-stars {
+    color: #FFB800;
+    font-size: 0.875rem;
+    letter-spacing: 1px;
+}
+
+.rating-value {
+    font-size: var(--font-size-sm, 0.875rem);
+    font-weight: 500;
+    color: var(--color-primary, #000);
+}
+
+.rating-count {
+    font-size: var(--font-size-xs, 0.75rem);
+    color: var(--color-secondary, #666);
+}
+
+.app-intro-download {
+    display: inline-block;
+    align-self: flex-start;
+}
+
+.app-store-badge {
+    height: 44px;
+    width: auto;
+}
+
+/* ========== Screenshots ========== */
+.app-intro-screenshots {
+    display: flex;
+    gap: var(--spacing-sm, 0.5rem);
+    overflow-x: auto;
+    padding-bottom: var(--spacing-sm, 0.5rem);
+    margin-bottom: var(--spacing-lg, 1.5rem);
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+}
+
+.app-intro-screenshot {
+    flex-shrink: 0;
+    scroll-snap-align: start;
+}
+
+.app-intro-screenshot img {
+    height: 400px;
+    width: auto;
+    border-radius: 12px;
+    border: 1px solid var(--color-border, #e0e0e0);
+    margin: 0;
+}
+
+/* ========== App Details Table ========== */
+.app-intro-details {
+    margin-top: var(--spacing-lg, 1.5rem);
+}
+
+.app-intro-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: var(--spacing-sm, 0.5rem);
+}
+
+.app-intro-table th,
+.app-intro-table td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--color-border, #e0e0e0);
+    font-weight: 300;
+    font-size: var(--font-size-sm, 0.875rem);
+}
+
+.app-intro-table th {
+    width: 120px;
+    color: var(--color-secondary, #666);
+    font-weight: 400;
+}
+
+.app-intro-table td {
+    color: var(--color-primary, #000);
+}
+
+/* ========== Download CTA ========== */
+.app-intro-cta {
+    text-align: center;
+    margin-top: var(--spacing-lg, 1.5rem);
+    padding: var(--spacing-lg, 1.5rem);
+    background: var(--color-accent, #fafafa);
+    border: 1px solid var(--color-border, #e0e0e0);
+}
+
+.app-intro-cta p {
+    margin-bottom: var(--spacing-sm, 0.5rem);
+    color: var(--color-secondary, #666);
+}
+
+.app-intro-download-btn {
+    display: inline-block;
+    padding: 0.875rem 2rem;
+    background: var(--color-primary, #000);
+    color: var(--color-background, #fff);
+    text-decoration: none;
+    font-size: var(--font-size-sm, 0.875rem);
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    transition: var(--transition, all 0.3s ease);
+}
+
+.app-intro-download-btn:hover {
+    opacity: 0.8;
+    transform: translateY(-2px);
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 768px) {
+    .app-intro-icon {
+        width: 80px;
+        height: 80px;
+        border-radius: 18px;
+    }
+
+    .app-intro-screenshot img {
+        height: 300px;
+    }
+
+    .app-intro-table th {
+        width: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .app-intro-card {
+        padding: var(--spacing-sm, 0.5rem);
+    }
+
+    .app-intro-icon {
+        width: 64px;
+        height: 64px;
+        border-radius: 14px;
+    }
+
+    .app-intro-name {
+        font-size: 1rem;
+    }
+
+    .app-intro-screenshot img {
+        height: 250px;
+    }
+
+    .app-intro-cta {
+        padding: var(--spacing-sm, 0.5rem);
+    }
+}
