@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-02-21 14:20:00",
-  "total_apps": 43,
+  "generated_at": "2026-03-03 18:40:00",
+  "total_apps": 44,
   "categories": {
     "Utilities": 6,
     "Lifestyle": 5,
@@ -8,7 +8,7 @@
     "Reference": 4,
     "Photo & Video": 4,
     "Graphics & Design": 3,
-    "Health & Fitness": 2,
+    "Health & Fitness": 3,
     "Food & Drink": 2,
     "Social Networking": 2,
     "Games": 2,
@@ -21,6 +21,43 @@
     "Book": 1
   },
   "apps": [
+    {
+      "id": 6758856276,
+      "name": "うんちくん うんち記録&共有",
+      "bundle_id": "com.tsuzukit.PoopCounter",
+      "app_store_url": "https://apps.apple.com/jp/app/%E3%81%86%E3%82%93%E3%81%A1%E3%81%8F%E3%82%93-%E3%81%86%E3%82%93%E3%81%A1%E8%A8%98%E9%8C%B2-%E5%85%B1%E6%9C%89/id6758856276?uo=4",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a1/41/f8/a141f842-9877-25e4-872f-23763bc7aa87/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a1/41/f8/a141f842-9877-25e4-872f-23763bc7aa87/AppIcon-0-0-1x_U007epad-0-1-85-220.png/60x60bb.jpg",
+      "primary_genre": "Health & Fitness",
+      "genres": [
+        "ヘルスケア／フィットネス",
+        "エンターテインメント"
+      ],
+      "genre_ids": [],
+      "price": 0.0,
+      "formatted_price": "無料",
+      "currency": "JPY",
+      "rating": 3.08197,
+      "rating_count": 61,
+      "rating_count_current_version": 0,
+      "version": "1.1.3",
+      "release_notes": "うんちくんからのお知らせだよ！\n\n・一部のおともだちのうんちが見えなくなっちゃってたの、なおしたよ！ごめんね！\n・広告の表示をちょっとだけ改善したよ！",
+      "release_date": "2026-02-26T08:00:00Z",
+      "current_version_release_date": "2026-03-02T19:29:12Z",
+      "description": "うんちくんは、毎日のうんちを楽しく記録して友達や家族とシェアできるアプリです。\n\n【ワンタップで記録】\n「でた！」ボタンを押すだけで今日のうんちを記録。回数に応じて37種類以上のうんちキャラクターがリアクションしてくれます。\n\n【うんトモとシェア】\n友達コードやQRコードで「うんトモ」を追加。ストーリー形式でうんトモのうんち状況をチェックできます。まるでInstagramのストーリーのように、楽しくうんち報告！\n\n【ウィジェット対応】\nホーム画面にウィジェットを追加すれば、アプリを開かなくても今日の記録が一目でわかります。回数に応じてテーマカラーが変化！\n\n【うんカレ（カレンダー）】\n週間カレンダーで日ごとの記録を確認。平均回数や最高記録もチェックできます。\n\n【ストリーク機能】\n連続記録日数をカウント。毎日のうんち習慣をゲーム感覚で続けられます。\n\n【プッシュ通知】\nうんトモがうんちした時にお知らせが届きます。友達申請の通知も見逃しません。\n\n【アバターカスタマイズ】\n肌色・髪型・髪色・目の色・服装など自由にカスタマイズ。あなただけのアバターでうんトモと交流しよう。\n\n【無料版】\n・ワンタップ記録\n・うんトモ追加（無制限）\n・ストーリー共有\n・週間カレンダー\n・ウィジェット\n・アバターカスタマイズ\n・プッシュ通知\n\n【プレミアム版】\n・月間カレンダー＆サマリー\n・広告なし\n・すべての機能が使い放題\n\n毎日のうんちを、うんちくんと一緒に楽しく記録しよう！\n\n【リンク】\n・サポート: https://tsuzukit.com/contact/\n・利用規約: https://tsuzukit.com/legal/terms-of-service.html\n・プライバシーポリシー: https://tsuzukit.com/legal/privacy-policy.html\n・特定商取引法に基づく表記: https://tsuzukit.com/legal/commercial-law.html",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e4/b8/aa/e4b8aae5-6c79-7303-ace8-a2289b0e626f/_U3046_U3093_U3061_U304f_U30936.5inch.001.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f4/4f/e7/f44fe723-faaa-c00b-eece-38f20e63d5b0/_U3046_U3093_U3061_U304f_U30936.5inch.002.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/03/53/5d/03535dff-3aaa-5b6b-2567-f9db893b8794/_U3046_U3093_U3061_U304f_U30936.5inch.003.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/90/e4/ad/90e4adb5-ff66-a4ff-e1f5-112b3b1d2a11/_U3046_U3093_U3061_U304f_U30936.5inch.004.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/84/5c/99/845c998d-b4a4-ac7b-3c03-ee3a04334c62/_U3046_U3093_U3061_U304f_U30936.5inch.005.jpeg/626x0w.webp"
+      ],
+      "ipad_screenshots": [],
+      "content_advisory_rating": "4+",
+      "minimum_os_version": "17.0",
+      "supported_devices": [],
+      "download_count": 0
+    },
     {
       "id": 6758816691,
       "name": "見守りリマインダー - みまもり",
@@ -55,7 +92,8 @@
       "ipad_screenshots": [],
       "content_advisory_rating": "4+",
       "minimum_os_version": "17.0",
-      "supported_devices": []
+      "supported_devices": [],
+      "download_count": 0
     },
     {
       "id": 6758575269,
@@ -91,7 +129,8 @@
       "ipad_screenshots": [],
       "content_advisory_rating": "4+",
       "minimum_os_version": "17.0",
-      "supported_devices": []
+      "supported_devices": [],
+      "download_count": 0
     },
     {
       "id": 6758261496,
@@ -128,7 +167,8 @@
       "ipad_screenshots": [],
       "content_advisory_rating": "4+",
       "minimum_os_version": "17.0",
-      "supported_devices": []
+      "supported_devices": [],
+      "download_count": 0
     },
     {
       "id": 6751716346,
@@ -2277,7 +2317,7 @@
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
       "developer_url": "https://apps.apple.com/jp/developer/ryo-tsudukihashi/id1320583602?uo=4",
-      "download_count": 15
+      "download_count": 29
     },
     {
       "id": 6752814140,
@@ -2442,7 +2482,7 @@
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
       "developer_url": "https://apps.apple.com/jp/developer/ryo-tsudukihashi/id1320583602?uo=4",
-      "download_count": 36
+      "download_count": 53
     },
     {
       "id": 6751343632,
@@ -2607,7 +2647,7 @@
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
       "developer_url": "https://apps.apple.com/jp/developer/ryo-tsudukihashi/id1320583602?uo=4",
-      "download_count": 8
+      "download_count": 6
     },
     {
       "id": 6749537777,
@@ -2773,7 +2813,7 @@
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
       "developer_url": "https://apps.apple.com/jp/developer/ryo-tsudukihashi/id1320583602?uo=4",
-      "download_count": 10
+      "download_count": 20
     },
     {
       "id": 6749299283,
@@ -2938,7 +2978,7 @@
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
       "developer_url": "https://apps.apple.com/jp/developer/ryo-tsudukihashi/id1320583602?uo=4",
-      "download_count": 32
+      "download_count": 24
     },
     {
       "id": 6747354292,
@@ -3105,7 +3145,7 @@
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
       "developer_url": "https://apps.apple.com/jp/developer/ryo-tsudukihashi/id1320583602?uo=4",
-      "download_count": 49
+      "download_count": 41
     },
     {
       "id": 6748528617,
@@ -3270,7 +3310,7 @@
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
       "developer_url": "https://apps.apple.com/jp/developer/ryo-tsudukihashi/id1320583602?uo=4",
-      "download_count": 154
+      "download_count": 182
     },
     {
       "id": 6743043894,
@@ -3435,7 +3475,7 @@
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
       "developer_url": "https://apps.apple.com/jp/developer/ryo-tsudukihashi/id1320583602?uo=4",
-      "download_count": 2
+      "download_count": 1
     },
     {
       "id": 6746123337,
@@ -3600,7 +3640,7 @@
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
       "developer_url": "https://apps.apple.com/jp/developer/ryo-tsudukihashi/id1320583602?uo=4",
-      "download_count": 13
+      "download_count": 14
     },
     {
       "id": 6605937062,
@@ -3931,7 +3971,7 @@
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
       "developer_url": "https://apps.apple.com/jp/developer/ryo-tsudukihashi/id1320583602?uo=4",
-      "download_count": 479
+      "download_count": 337
     },
     {
       "id": 6566185298,
@@ -4608,7 +4648,7 @@
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
       "developer_url": "https://apps.apple.com/jp/developer/ryo-tsudukihashi/id1320583602?uo=4",
-      "download_count": 14
+      "download_count": 12
     },
     {
       "id": 6450852611,
@@ -4777,7 +4817,7 @@
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
       "developer_url": "https://apps.apple.com/jp/developer/ryo-tsudukihashi/id1320583602?uo=4",
-      "download_count": 3
+      "download_count": 1
     },
     {
       "id": 6450046891,
@@ -4947,7 +4987,7 @@
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
       "developer_url": "https://apps.apple.com/jp/developer/ryo-tsudukihashi/id1320583602?uo=4",
-      "download_count": 3
+      "download_count": 2
     },
     {
       "id": 1670158327,
@@ -5116,7 +5156,7 @@
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
       "developer_url": "https://apps.apple.com/jp/developer/ryo-tsudukihashi/id1320583602?uo=4",
-      "download_count": 4
+      "download_count": 3
     },
     {
       "id": 6444087177,
@@ -5285,7 +5325,7 @@
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
       "developer_url": "https://apps.apple.com/jp/developer/ryo-tsudukihashi/id1320583602?uo=4",
-      "download_count": 25
+      "download_count": 58
     },
     {
       "id": 6443471257,
@@ -5454,7 +5494,7 @@
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
       "developer_url": "https://apps.apple.com/jp/developer/ryo-tsudukihashi/id1320583602?uo=4",
-      "download_count": 101
+      "download_count": 0
     },
     {
       "id": 1644376109,
@@ -5623,7 +5663,7 @@
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
       "developer_url": "https://apps.apple.com/jp/developer/ryo-tsudukihashi/id1320583602?uo=4",
-      "download_count": 23
+      "download_count": 21
     },
     {
       "id": 1625004229,
@@ -5792,7 +5832,7 @@
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
       "developer_url": "https://apps.apple.com/jp/developer/ryo-tsudukihashi/id1320583602?uo=4",
-      "download_count": 466
+      "download_count": 385
     },
     {
       "id": 1612260255,
@@ -5961,7 +6001,7 @@
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
       "developer_url": "https://apps.apple.com/jp/developer/ryo-tsudukihashi/id1320583602?uo=4",
-      "download_count": 32
+      "download_count": 36
     },
     {
       "id": 1598380826,
@@ -6296,7 +6336,7 @@
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
       "developer_url": "https://apps.apple.com/jp/developer/ryo-tsudukihashi/id1320583602?uo=4",
-      "download_count": 16
+      "download_count": 17
     },
     {
       "id": 1585253685,
@@ -6469,7 +6509,7 @@
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
       "developer_url": "https://apps.apple.com/jp/developer/ryo-tsudukihashi/id1320583602?uo=4",
-      "download_count": 4
+      "download_count": 5
     },
     {
       "id": 1512663141,
@@ -6638,7 +6678,7 @@
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
       "developer_url": "https://apps.apple.com/jp/developer/ryo-tsudukihashi/id1320583602?uo=4",
-      "download_count": 66
+      "download_count": 70
     },
     {
       "id": 1487377681,
@@ -6803,8 +6843,8 @@
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
       "developer_url": "https://apps.apple.com/jp/developer/ryo-tsudukihashi/id1320583602?uo=4",
-      "download_count": 37
+      "download_count": 47
     }
   ],
-  "total_downloads": 1592
+  "total_downloads": 1364
 }

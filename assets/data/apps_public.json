@@ -1,7 +1,39 @@
 {
-  "generated_at": "2026-02-21 15:29:56",
-  "total_apps": 43,
+  "generated_at": "2026-03-03 18:40:09",
+  "total_apps": 44,
   "apps": [
+    {
+      "bundle_id": "com.tsuzukit.PoopCounter",
+      "name": "うんちくん うんち記録&共有",
+      "app_store_url": "https://apps.apple.com/jp/app/%E3%81%86%E3%82%93%E3%81%A1%E3%81%8F%E3%82%93-%E3%81%86%E3%82%93%E3%81%A1%E8%A8%98%E9%8C%B2-%E5%85%B1%E6%9C%89/id6758856276?uo=4",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a1/41/f8/a141f842-9877-25e4-872f-23763bc7aa87/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e4/b8/aa/e4b8aae5-6c79-7303-ace8-a2289b0e626f/_U3046_U3093_U3061_U304f_U30936.5inch.001.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f4/4f/e7/f44fe723-faaa-c00b-eece-38f20e63d5b0/_U3046_U3093_U3061_U304f_U30936.5inch.002.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/03/53/5d/03535dff-3aaa-5b6b-2567-f9db893b8794/_U3046_U3093_U3061_U304f_U30936.5inch.003.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/90/e4/ad/90e4adb5-ff66-a4ff-e1f5-112b3b1d2a11/_U3046_U3093_U3061_U304f_U30936.5inch.004.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/84/5c/99/845c998d-b4a4-ac7b-3c03-ee3a04334c62/_U3046_U3093_U3061_U304f_U30936.5inch.005.jpeg/1242x0bb.webp"
+      ],
+      "ipad_screenshots": [],
+      "price": "無料",
+      "currency": "JPY",
+      "genres": [
+        "ヘルスケア／フィットネス",
+        "エンターテインメント"
+      ],
+      "primary_genre": "Health & Fitness",
+      "rating": 3.08197,
+      "rating_count": 61,
+      "version": "1.1.3",
+      "release_date": "2026-02-26T08:00:00Z",
+      "current_version_release_date": "2026-03-02T19:29:12Z",
+      "description": "うんちくんは、毎日のうんちを楽しく記録して友達や家族とシェアできるアプリです。\n\n【ワンタップで記録】\n「でた！」ボタンを押すだけで今日のうんちを記録。回数に応じて37種類以上のうんちキャラクターがリアクションしてくれます。\n\n【うんトモとシェア】\n友達コードやQRコードで「うんトモ」を追加。ストーリー形式でうんトモのうんち状況をチェックできます。まるでInstagramのストーリーのように、楽しくうんち報告！\n\n【ウィジェット対応】\nホーム画面にウィジェットを追加すれば、アプリを開かなくても今日の記録が一目でわかります。回数に応じてテーマカラーが変化！\n\n【うんカレ（カレンダー）】\n週間カレンダーで日ごとの記録を確認。平均回数や最高記録もチェックできます。\n\n【ストリーク機能】\n連続記録日数をカウント。毎日のうんち習慣をゲーム感覚で続けられます。\n\n【プッシュ通知】\nうんトモがうんちした時にお知らせが届きます。友達申請の通知も見逃しません。\n\n【アバターカスタマイズ】\n肌色・髪型・髪色・目の色・服装など自由にカスタマイズ。あなただけのアバターでうんトモと交流しよう。\n\n【無料版】\n・ワンタップ記録\n・うんトモ追加（無制限）\n・ストーリー共有\n・週間カレンダー\n・ウィジェット\n・アバターカスタマイズ\n・プッシュ通知\n\n【プレミアム版】\n・月間カレンダー＆サマリー\n・広告なし\n・すべての機能が使い放題\n\n毎日のうんちを、うんちくんと一緒に楽しく記録しよう！\n\n【リンク】\n・サポート: https://tsuzukit.com/contact/\n・利用規約: https://tsuzukit.com/legal/terms-of-service.html\n・プライバシーポリシー: https://tsuzukit.com/legal/privacy-policy.html\n・特定商取引法に基づく表記: https://tsuzukit.com/legal/commercial-law.html",
+      "release_notes": "うんちくんからのお知らせだよ！\n\n・一部のおともだちのうんちが見えなくなっちゃってたの、なおしたよ！ごめんね！\n・広告の表示をちょっとだけ改善したよ！",
+      "content_advisory_rating": "4+",
+      "minimum_os_version": "17.0",
+      "developer_name": "Ryo Tsudukihashi",
+      "seller_name": "TsuzuKit"
+    },
     {
       "bundle_id": "com.tsuzuki817.OmoideMap",
       "name": "旅行思い出マップ - 旅の記憶を、地図に描く",
@@ -25,14 +57,45 @@
         "写真／ビデオ"
       ],
       "primary_genre": "Travel",
-      "rating": 4.62976,
-      "rating_count": 551,
+      "rating": 4.62744,
+      "rating_count": 561,
       "version": "1.41.2",
       "release_date": "2024-02-25T08:00:00Z",
       "current_version_release_date": "2026-02-10T22:08:16Z",
       "description": "12万ダウンロード突破！\n写真をパズルのように切り取って地図に記録することができるアプリ！\n\n47都道府県を埋めるだけでなく、北海道179市町村、東京都62市区町村のマップもあるからディープなマップを作れちゃう！\n\n主な機能\n□ 日本、アジア、北海道、東京から好きなマップを作ろう！\n□ 都道府県の形に写真を切り取って地図に貼り付けよう！\n□ 友達や家族と一緒に思い出マップを共同編集できるマップリンクでシェアしよう！\n□ 投稿した写真にコメントして振り返ろう！\n\nひとりでも複数人でも楽しめるよ！\n\n\n□ その他情報\n・利用規約\nhttps://tsuzukit.com/legal/terms-of-service.html\n\n・プライバシーポリシー\nhttps://tsuzukit.com/legal/privacy-policy.html\n\n・特定商取引法に基づく表示\nhttps://tsuzukit.com/legal/commercial-law.html",
       "release_notes": "不具合修正\niPad miniで設定シートの記録ボタンが表示されない問題を修正しました。\nVoiceOverアクセシビリティ対応を改善しました。\n\nいつもご利用いただきありがとうございます！",
       "content_advisory_rating": "17+",
+      "minimum_os_version": "17.0",
+      "developer_name": "Ryo Tsudukihashi",
+      "seller_name": "TsuzuKit"
+    },
+    {
+      "bundle_id": "com.tsuzukit.MedicineReminder",
+      "name": "お薬リマインダー 服用管理",
+      "app_store_url": "https://apps.apple.com/jp/app/%E3%81%8A%E8%96%AC%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%80%E3%83%BC-%E6%9C%8D%E7%94%A8%E7%AE%A1%E7%90%86/id6756915544?uo=4",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/36/20/93/362093f8-b3e0-17c2-15c7-f6af3af7a106/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ef/57/29/ef572990-f149-e97c-87db-646f55a01811/6.5inch.001.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/6d/35/f7/6d35f762-84f5-7c57-5634-21786a8078e1/6.5inch.002.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8a/b9/16/8ab91648-9ea7-96b3-e8d2-52dff6b68894/6.5inch.003.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ce/ed/bc/ceedbc62-76db-e53d-0df1-a9339c430dee/6.5inch.004.jpeg/1242x0bb.webp"
+      ],
+      "ipad_screenshots": [],
+      "price": "無料",
+      "currency": "JPY",
+      "genres": [
+        "メディカル",
+        "ユーティリティ"
+      ],
+      "primary_genre": "Medical",
+      "rating": 4.5,
+      "rating_count": 2,
+      "version": "1.2.0",
+      "release_date": "2025-12-28T08:00:00Z",
+      "current_version_release_date": "2026-02-24T01:46:51Z",
+      "description": "お薬リマインダーは、毎日のお薬の服用を忘れないためのシンプルで使いやすいアプリです。\n\n【主な機能】\n・服用タイミング通知 - 朝食前/後、昼食前/後、夕食前/後、就寝前など\n・残量管理 - お薬の残り数を管理し、少なくなったらお知らせ\n・服用履歴 - カレンダーで服用状況を一目で確認\n・写真登録 - お薬の写真を登録して識別しやすく\n・ホーム画面ウィジェット - 今日の服用状況をすぐ確認\n・通知時間カスタマイズ - ライフスタイルに合わせて設定\n\n【こんな方におすすめ】\n・毎日お薬を飲む必要がある方\n・お薬の飲み忘れが多い方\n・複数のお薬を管理したい方\n・家族のお薬管理をしたい方\n・サプリメントの服用管理をしたい方\n\n【無料版】\n・3種類までお薬を登録可能\n・基本的な通知機能\n・服用履歴の記録\n\n【プレミアム版】\n・無制限のお薬登録\n・繰り返し通知機能\n・広告なし\n\n飲み忘れゼロの毎日を、お薬リマインダーで。\n\n【リンク】\n・サポート: https://tsuzukit.com/contact/\n・利用規約: https://tsuzukit.com/legal/terms-of-service.html\n・プライバシーポリシー: https://tsuzukit.com/legal/privacy-policy.html\n・特定商取引法に基づく表記: https://tsuzukit.com/legal/commercial-law.html",
+      "release_notes": "細かな不具合の修正",
+      "content_advisory_rating": "4+",
       "minimum_os_version": "17.0",
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit"
@@ -414,37 +477,6 @@
       "description": "BeautyMedは、美容医療の施術履歴を記録し、次回施術のベストタイミングをお知らせするアプリです。\n\n【主な機能】\n■ 施術履歴の記録\nダーマペン、ボトックス、ヒアルロン酸、ハイフなど、あらゆる美容医療の施術を記録できます。前回の施術日、クリニック名、料金、メモなどを保存。\n\n■ 次回施術タイミングの通知\n施術ごとに推奨間隔を設定すると、次回施術のベストタイミングをプッシュ通知でお知らせ。効果を最大限に引き出すタイミングを逃しません。\n\n■ 経過日数の可視化\n前回施術からの経過日数をひと目で確認。進捗バーで推奨タイミングまでの残り日数がわかります。\n\n■ カレンダー表示\n施術履歴をカレンダーで確認。過去の施術を振り返ることができます。\n\n■ ウィジェット対応\nホーム画面に施術状況を表示。アプリを開かなくても次回施術タイミングを確認できます。\n\n■ 施術ログ（プレミアム機能）\n施術ごとに写真やメモを記録。ビフォーアフターを比較して経過を振り返ることができます。\n\n【プレミアム機能】\n・施術を無制限に登録\n・写真記録（ビフォーアフター）\n・施術ログの編集・削除\n・広告非表示\n\n美容医療を効果的に続けたい方におすすめのアプリです。\n\n\n【リンク】\n・サポート: https://tsuzukit.com/contact/\n・利用規約: https://tsuzukit.com/legal/terms-of-service.html\n・プライバシーポリシー: https://tsuzukit.com/legal/privacy-policy.html\n・特定商取引法に基づく表記: https://tsuzukit.com/legal/commercial-law.html",
       "release_notes": null,
       "content_advisory_rating": "17+",
-      "minimum_os_version": "17.0",
-      "developer_name": "Ryo Tsudukihashi",
-      "seller_name": "TsuzuKit"
-    },
-    {
-      "bundle_id": "com.tsuzukit.MedicineReminder",
-      "name": "お薬リマインダー 服用管理",
-      "app_store_url": "https://apps.apple.com/jp/app/%E3%81%8A%E8%96%AC%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%80%E3%83%BC-%E6%9C%8D%E7%94%A8%E7%AE%A1%E7%90%86/id6756915544?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/bd/52/07/bd5207ea-0cd0-38b6-d78a-0f4e64774fc9/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg",
-      "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ef/57/29/ef572990-f149-e97c-87db-646f55a01811/6.5inch.001.jpeg/1242x0bb.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/6d/35/f7/6d35f762-84f5-7c57-5634-21786a8078e1/6.5inch.002.jpeg/1242x0bb.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8a/b9/16/8ab91648-9ea7-96b3-e8d2-52dff6b68894/6.5inch.003.jpeg/1242x0bb.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ce/ed/bc/ceedbc62-76db-e53d-0df1-a9339c430dee/6.5inch.004.jpeg/1242x0bb.webp"
-      ],
-      "ipad_screenshots": [],
-      "price": "無料",
-      "currency": "JPY",
-      "genres": [
-        "メディカル",
-        "ユーティリティ"
-      ],
-      "primary_genre": "Medical",
-      "rating": 4.5,
-      "rating_count": 2,
-      "version": "1.1.0",
-      "release_date": "2025-12-28T08:00:00Z",
-      "current_version_release_date": "2026-01-05T09:55:17Z",
-      "description": "お薬リマインダーは、毎日のお薬の服用を忘れないためのシンプルで使いやすいアプリです。\n\n【主な機能】\n・服用タイミング通知 - 朝食前/後、昼食前/後、夕食前/後、就寝前など\n・残量管理 - お薬の残り数を管理し、少なくなったらお知らせ\n・服用履歴 - カレンダーで服用状況を一目で確認\n・写真登録 - お薬の写真を登録して識別しやすく\n・ホーム画面ウィジェット - 今日の服用状況をすぐ確認\n・通知時間カスタマイズ - ライフスタイルに合わせて設定\n\n【こんな方におすすめ】\n・毎日お薬を飲む必要がある方\n・お薬の飲み忘れが多い方\n・複数のお薬を管理したい方\n・家族のお薬管理をしたい方\n・サプリメントの服用管理をしたい方\n\n【無料版】\n・3種類までお薬を登録可能\n・基本的な通知機能\n・服用履歴の記録\n\n【プレミアム版】\n・無制限のお薬登録\n・繰り返し通知機能\n・広告なし\n\n飲み忘れゼロの毎日を、お薬リマインダーで。\n\n【リンク】\n・サポート: https://tsuzukit.com/contact/\n・利用規約: https://tsuzukit.com/legal/terms-of-service.html\n・プライバシーポリシー: https://tsuzukit.com/legal/privacy-policy.html\n・特定商取引法に基づく表記: https://tsuzukit.com/legal/commercial-law.html",
-      "release_notes": "バージョン1.1.0\n\n【バグ修正】\n・お薬を削除する際にアプリがクラッシュする問題を修正\n・リマインダーを削除する際にアプリがクラッシュする問題を修正\n・データベースの安定性を向上",
-      "content_advisory_rating": "4+",
       "minimum_os_version": "17.0",
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit"
