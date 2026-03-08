@@ -84,6 +84,41 @@
     return renderStandardCard(app);
   }
 
+  // 上位固定アプリ（この順番で先頭に表示）
+  var PINNED_IDS = [
+    6478291625, // 旅行思い出マップ
+    6758856276, // うんちくん
+    6751716346, // 推しアイランド
+    1598380826  // 流れるメモ帳
+  ];
+
+  /**
+   * デフォルト並び順: 固定アプリを先頭、残りはリリース日の新しい順
+   */
+  function sortDefault(apps) {
+    var pinned = [];
+    var rest = [];
+
+    apps.forEach(function (app) {
+      var pinIndex = PINNED_IDS.indexOf(app.id);
+      if (pinIndex !== -1) {
+        pinned[pinIndex] = app;
+      } else {
+        rest.push(app);
+      }
+    });
+
+    // 固定アプリの空スロットを除去
+    pinned = pinned.filter(Boolean);
+
+    // 残りはリリース日の新しい順
+    rest.sort(function (a, b) {
+      return new Date(b.release_date || '1970-01-01') - new Date(a.release_date || '1970-01-01');
+    });
+
+    return pinned.concat(rest);
+  }
+
   /**
    * 全アプリカードをレンダリング
    */
@@ -94,7 +129,7 @@
     try {
       var response = await fetch('/assets/data/apps.json');
       var data = await response.json();
-      var apps = data.apps || [];
+      var apps = sortDefault(data.apps || []);
 
       var html = apps.map(renderAppCard).join('');
       grid.innerHTML = html;
