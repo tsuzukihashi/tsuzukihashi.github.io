@@ -6,12 +6,10 @@
 (function() {
   'use strict';
 
-  // App data loaded from JSON
   let appsData = [];
   let appCards = [];
   let originalOrder = [];
 
-  // DOM Elements
   const searchInput = document.getElementById('searchInput');
   const categoryFilter = document.getElementById('categoryFilter');
   const sortFilter = document.getElementById('sortFilter');
@@ -22,46 +20,29 @@
   /**
    * Initialize the filter functionality
    */
-  async function init() {
+  function init(apps) {
     if (!appGrid) return;
 
-    // Load app data from JSON
-    try {
-      const response = await fetch('/assets/data/apps.json');
-      const data = await response.json();
-      appsData = data.apps || [];
-    } catch (error) {
-      console.warn('Could not load apps.json, using fallback data extraction');
-      appsData = [];
-    }
+    appsData = apps || [];
 
-    // Get all app cards (excluding archived apps)
     appCards = Array.from(document.querySelectorAll('#appGrid .app-card-store:not(.app-card-archived)'));
-
-    // Store original order
     originalOrder = appCards.map(card => card);
 
-    // Add data attributes to cards
     addDataAttributesToCards();
 
-    // Add event listeners
     if (searchInput) {
       searchInput.addEventListener('input', debounce(applyFilters, 200));
     }
-
     if (categoryFilter) {
       categoryFilter.addEventListener('change', applyFilters);
     }
-
     if (sortFilter) {
       sortFilter.addEventListener('change', applyFilters);
     }
-
     if (filterClear) {
       filterClear.addEventListener('click', clearFilters);
     }
 
-    // Initial update
     updateResultsCount();
   }
 
@@ -70,12 +51,9 @@
    */
   function addDataAttributesToCards() {
     appCards.forEach((card, index) => {
-      // Store original index
       card.dataset.originalIndex = index;
 
-      // Try to find matching app data
       let appUrl = card.getAttribute('href') || '';
-      // マルチプラットフォームカードの場合、内部のApp Storeリンクからhrefを取得
       if (!appUrl) {
         const iosLink = card.querySelector('.store-btn-ios');
         if (iosLink) appUrl = iosLink.getAttribute('href') || '';
@@ -83,11 +61,9 @@
       const appIdMatch = appUrl.match(/\/id(\d+)/);
       const appId = appIdMatch ? parseInt(appIdMatch[1]) : null;
 
-      // Find app in data
       const appData = appsData.find(app => app.id === appId);
 
       if (appData) {
-        // Add data attributes from JSON
         card.dataset.appId = appData.id;
         card.dataset.name = appData.name || '';
         card.dataset.category = appData.primary_genre || '';
@@ -97,10 +73,8 @@
         card.dataset.rating = appData.rating || 0;
         card.dataset.downloadCount = appData.download_count || 0;
 
-        // リリース日を表示
         injectReleaseDate(card, appData.release_date);
       } else {
-        // Fallback: extract data from card HTML
         const nameEl = card.querySelector('.app-name');
         const categoryEl = card.querySelector('.app-subtitle');
 
@@ -115,9 +89,6 @@
     });
   }
 
-  /**
-   * リリース日をカードに表示
-   */
   function injectReleaseDate(card, releaseDate) {
     if (!releaseDate) return;
 
@@ -135,9 +106,6 @@
     metaEl.textContent = `${metaEl.textContent} · ${formatted}`;
   }
 
-  /**
-   * Apply all filters and sorting
-   */
   function applyFilters() {
     const searchTerm = searchInput ? searchInput.value.toLowerCase().trim() : '';
     const category = categoryFilter ? categoryFilter.value : '';
@@ -149,13 +117,9 @@
       const name = (card.dataset.name || '').toLowerCase();
       const cardCategory = card.dataset.category || '';
 
-      // Check search match
       const matchesSearch = !searchTerm || name.includes(searchTerm);
-
-      // Check category match
       const matchesCategory = !category || cardCategory === category;
 
-      // Show/hide card
       if (matchesSearch && matchesCategory) {
         card.classList.remove('hidden');
         visibleCards.push(card);
@@ -164,16 +128,10 @@
       }
     });
 
-    // Sort visible cards
     sortCards(visibleCards, sortOption);
-
-    // Update results count
     updateResultsCount(visibleCards.length);
   }
 
-  /**
-   * Sort cards based on selected option
-   */
   function sortCards(cards, sortOption) {
     if (!appGrid) return;
 
@@ -182,75 +140,51 @@
     switch (sortOption) {
       case 'release-desc':
         sortedCards = cards.sort((a, b) => {
-          const dateA = new Date(a.dataset.releaseDate || '1970-01-01');
-          const dateB = new Date(b.dataset.releaseDate || '1970-01-01');
-          return dateB - dateA;
+          return new Date(b.dataset.releaseDate || '1970-01-01') - new Date(a.dataset.releaseDate || '1970-01-01');
         });
         break;
-
       case 'release-asc':
         sortedCards = cards.sort((a, b) => {
-          const dateA = new Date(a.dataset.releaseDate || '1970-01-01');
-          const dateB = new Date(b.dataset.releaseDate || '1970-01-01');
-          return dateA - dateB;
+          return new Date(a.dataset.releaseDate || '1970-01-01') - new Date(b.dataset.releaseDate || '1970-01-01');
         });
         break;
-
       case 'update-desc':
         sortedCards = cards.sort((a, b) => {
-          const dateA = new Date(a.dataset.updateDate || a.dataset.releaseDate || '1970-01-01');
-          const dateB = new Date(b.dataset.updateDate || b.dataset.releaseDate || '1970-01-01');
-          return dateB - dateA;
+          return new Date(b.dataset.updateDate || b.dataset.releaseDate || '1970-01-01') - new Date(a.dataset.updateDate || a.dataset.releaseDate || '1970-01-01');
         });
         break;
-
       case 'update-asc':
         sortedCards = cards.sort((a, b) => {
-          const dateA = new Date(a.dataset.updateDate || a.dataset.releaseDate || '1970-01-01');
-          const dateB = new Date(b.dataset.updateDate || b.dataset.releaseDate || '1970-01-01');
-          return dateA - dateB;
+          return new Date(a.dataset.updateDate || a.dataset.releaseDate || '1970-01-01') - new Date(b.dataset.updateDate || b.dataset.releaseDate || '1970-01-01');
         });
         break;
-
       case 'popular':
         sortedCards = cards.sort((a, b) => {
-          const countA = parseInt(a.dataset.ratingCount) || 0;
-          const countB = parseInt(b.dataset.ratingCount) || 0;
-          return countB - countA;
+          return (parseInt(b.dataset.ratingCount) || 0) - (parseInt(a.dataset.ratingCount) || 0);
         });
         break;
-
       case 'name-asc':
         sortedCards = cards.sort((a, b) => {
-          const nameA = (a.dataset.name || '').toLowerCase();
-          const nameB = (b.dataset.name || '').toLowerCase();
-          return nameA.localeCompare(nameB, 'ja');
+          return (a.dataset.name || '').toLowerCase().localeCompare((b.dataset.name || '').toLowerCase(), 'ja');
         });
         break;
-
       case 'name-desc':
         sortedCards = cards.sort((a, b) => {
-          const nameA = (a.dataset.name || '').toLowerCase();
-          const nameB = (b.dataset.name || '').toLowerCase();
-          return nameB.localeCompare(nameA, 'ja');
+          return (b.dataset.name || '').toLowerCase().localeCompare((a.dataset.name || '').toLowerCase(), 'ja');
         });
         break;
-
       case 'default':
       default:
-        // Restore original order for visible cards
         sortedCards = cards.sort((a, b) => {
           return parseInt(a.dataset.originalIndex) - parseInt(b.dataset.originalIndex);
         });
         break;
     }
 
-    // Re-append cards in sorted order
     sortedCards.forEach(card => {
       appGrid.appendChild(card);
     });
 
-    // Also append hidden cards at the end
     appCards.forEach(card => {
       if (card.classList.contains('hidden')) {
         appGrid.appendChild(card);
@@ -258,20 +192,15 @@
     });
   }
 
-  /**
-   * Clear all filters
-   */
   function clearFilters() {
     if (searchInput) searchInput.value = '';
     if (categoryFilter) categoryFilter.value = '';
     if (sortFilter) sortFilter.value = 'default';
 
-    // Show all cards
     appCards.forEach(card => {
       card.classList.remove('hidden');
     });
 
-    // Restore original order
     originalOrder.forEach(card => {
       appGrid.appendChild(card);
     });
@@ -279,9 +208,6 @@
     updateResultsCount();
   }
 
-  /**
-   * Update the results count display
-   */
   function updateResultsCount(count) {
     if (!filterResults) return;
 
@@ -294,13 +220,9 @@
       filterResults.textContent = `${visible}/${total}件表示中`;
     }
 
-    // Show/hide no results message
     showNoResultsMessage(visible === 0);
   }
 
-  /**
-   * Show/hide no results message
-   */
   function showNoResultsMessage(show) {
     let noResultsEl = document.querySelector('.no-results');
 
@@ -320,9 +242,6 @@
     }
   }
 
-  /**
-   * Debounce function for search input
-   */
   function debounce(func, wait) {
     let timeout;
     return function executedFunction(...args) {
@@ -335,10 +254,8 @@
     };
   }
 
-  // Initialize when DOM is ready
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
-  } else {
-    init();
-  }
+  // portfolio-renderer.js のレンダリング完了イベントを待つ
+  document.addEventListener('portfolio-rendered', function(e) {
+    init(e.detail.apps);
+  });
 })();
