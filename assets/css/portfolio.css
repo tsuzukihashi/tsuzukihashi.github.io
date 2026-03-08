@@ -507,21 +507,26 @@
 
 /* ========== Image Lightbox ========== */
 .lightbox {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0);
   z-index: 9999;
+  display: flex;
   justify-content: center;
   align-items: center;
   cursor: zoom-out;
+  pointer-events: none;
+  opacity: 0;
+  transition: background 0.25s ease, opacity 0.25s ease;
 }
 
 .lightbox.active {
-  display: flex;
+  pointer-events: auto;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.9);
 }
 
 .lightbox img {
@@ -530,6 +535,14 @@
   object-fit: contain;
   border-radius: 12px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  transform: scale(0.92);
+  opacity: 0;
+  transition: transform 0.25s ease, opacity 0.2s ease;
+}
+
+.lightbox.active img {
+  transform: scale(1);
+  opacity: 1;
 }
 
 .lightbox-close {
@@ -547,6 +560,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 0;
+  transition: opacity 0.2s ease 0.1s, background 0.15s ease;
+}
+
+.lightbox.active .lightbox-close {
+  opacity: 1;
 }
 
 .lightbox-close:hover {

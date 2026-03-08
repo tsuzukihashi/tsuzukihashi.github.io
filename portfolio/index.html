@@ -318,8 +318,12 @@
         function openLightbox(imgSrc) {
             event.preventDefault();
             event.stopPropagation();
+            var lightbox = document.getElementById('lightbox');
             document.getElementById('lightbox-img').src = imgSrc;
-            document.getElementById('lightbox').classList.add('active');
+            // 次フレームでactiveを付けてアニメーション発火
+            requestAnimationFrame(function() {
+                lightbox.classList.add('active');
+            });
             document.body.style.overflow = 'hidden';
         }
 
