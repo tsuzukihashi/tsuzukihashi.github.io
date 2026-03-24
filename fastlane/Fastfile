@@ -307,17 +307,123 @@ platform :ios do
   end
 
   # ============================================
+  # ダウンロード数を取得（Sales Reports API）
+  # ============================================
+  desc "App Store Connect Sales Reportsからダウンロード数を取得"
+  lane :fetch_downloads do
+    setup_spaceship
+
+    UI.message("Fetching download counts from App Store Connect Sales Reports...")
+
+    token = Spaceship::ConnectAPI.token
+
+    # 全期間のダウンロード数を集計するため、月次レポートを取得
+    # 最初のアプリリリース(2017年)から現在まで
+    download_counts = {}
+    current_date = Date.today
+    start_date = Date.new(2017, 1, 1)
+
+    date = start_date
+    while date <= current_date
+      report_date = date.strftime('%Y-%m')
+      UI.message("Fetching report for #{report_date}...")
+
+      begin
+        # Sales and Trends APIでMonthlyレポートを取得
+        uri = URI("https://api.appstoreconnect.apple.com/v1/salesReports")
+        uri.query = URI.encode_www_form(
+          'filter[frequency]' => 'MONTHLY',
+          'filter[reportDate]' => report_date,
+          'filter[reportSubType]' => 'SUMMARY',
+          'filter[reportType]' => 'SALES',
+          'filter[vendorNumber]' => ENV['VENDOR_NUMBER']
+        )
+
+        http = Net::HTTP.new(uri.host, uri.port)
+        http.use_ssl = true
+        request = Net::HTTP::Get.new(uri)
+        request['Authorization'] = "Bearer #{token.text}"
+        request['Accept'] = 'application/a-gzip'
+
+        response = http.request(request)
+
+        if response.code.to_i == 200
+          # レスポンスはgzip圧縮されたTSV
+          require 'zlib'
+          begin
+            tsv_data = Zlib::GzipReader.new(StringIO.new(response.body)).read
+          rescue Zlib::GzipFile::Error
+            tsv_data = response.body
+          end
+
+          tsv_data.each_line do |line|
+            next if line.start_with?('Provider')
+            cols = line.strip.split("\t")
+            next if cols.length < 15
+
+            apple_id = cols[14]  # Apple Identifier (column 15)
+            units = cols[7].to_i  # Units
+            product_type = cols[6]  # Product Type Identifier
+
+            # アプリ本体のダウンロードのみカウント（1=Free, 1F=Free, 1T=Free Trial, 7=Update等を含む）
+            # IAPやサブスクリプションは除外
+            next unless ['1', '1F', '1T', '3', '3F'].include?(product_type)
+
+            download_counts[apple_id] ||= 0
+            download_counts[apple_id] += units
+          end
+        elsif response.code.to_i == 404
+          UI.message("  No report available for #{report_date}")
+        else
+          UI.message("  Error #{response.code} for #{report_date}: #{response.body[0..200]}")
+        end
+      rescue => e
+        UI.message("  Error fetching #{report_date}: #{e.message}")
+      end
+
+      date = date >> 1  # 翌月
+    end
+
+    # apps.jsonを更新
+    apps_path = "../assets/data/apps.json"
+    if File.exist?(apps_path)
+      apps_data = JSON.parse(File.read(apps_path))
+
+      updated_count = 0
+      apps_data['apps'].each do |app|
+        apple_id = app['id'].to_s
+        if download_counts[apple_id]
+          app['download_count'] = download_counts[apple_id]
+          updated_count += 1
+          UI.message("  #{app['name']}: #{download_counts[apple_id]} downloads")
+        end
+      end
+
+      File.write(apps_path, JSON.pretty_generate(apps_data))
+      UI.success("\nUpdated #{updated_count} apps with download counts")
+    end
+
+    # サマリー出力
+    total = download_counts.values.sum
+    UI.message("\n" + "=" * 60)
+    UI.message("Total downloads across all apps: #{total}")
+    UI.message("=" * 60)
+  end
+
+  # ============================================
   # ポートフォリオ用の統合データを生成
   # ============================================
-  desc "ポートフォリオ用の完全なデータセットを生成"
+  desc "ポートフォリオ用の完全なデータセットを生成（公開情報 + ダウンロード数）"
   lane :generate_portfolio do
     fetch_public_info
+    fetch_downloads
 
     UI.message("\n" + "=" * 60)
     UI.message("Portfolio data generation complete!")
     UI.message("=" * 60)
     UI.message("\nGenerated files:")
     UI.message("  - assets/data/apps_public.json")
+    UI.message("  - assets/data/apps.json (updated with download counts)")
     UI.message("\nYou can now update the portfolio page to use this data.")
   end
 end
