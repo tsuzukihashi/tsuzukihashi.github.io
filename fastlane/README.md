@@ -31,13 +31,21 @@ For _fastlane_ installation instructions, see [Installing _fastlane_](https://do
 
 App Store Lookup APIを使ってパブリック情報を取得
 
+### ios fetch_downloads
+
+```sh
+[bundle exec] fastlane ios fetch_downloads
+```
+
+App Store Connect Sales Reportsからダウンロード数を取得
+
 ### ios generate_portfolio
 
 ```sh
 [bundle exec] fastlane ios generate_portfolio
 ```
 
-ポートフォリオ用の完全なデータセットを生成
+ポートフォリオ用の完全なデータセットを生成（公開情報 + ダウンロード数）
 
 ----
 
