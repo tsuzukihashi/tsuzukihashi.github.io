@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-11 15:53:03",
-  "total_apps": 48,
+  "generated_at": "2026-06-13 00:25:43",
+  "total_apps": 50,
   "categories": {
     "Health & Fitness": 5,
-    "Lifestyle": 6,
+    "Lifestyle": 8,
     "Entertainment": 1,
     "Reference": 4,
     "Graphics & Design": 3,
@@ -23,16 +23,16 @@
   "apps": [
     {
       "id": 6758856276,
-      "name": "うんちくん うんち記録&共有",
+      "name": "うんちくん AI健康記録&うんトモ",
       "bundle_id": "com.tsuzukit.PoopCounter",
-      "app_store_url": "https://apps.apple.com/jp/app/%E3%81%86%E3%82%93%E3%81%A1%E3%81%8F%E3%82%93-%E3%81%86%E3%82%93%E3%81%A1%E8%A8%98%E9%8C%B2-%E5%85%B1%E6%9C%89/id6758856276?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ff/b1/31/ffb131a6-8b89-5764-0dfa-69a2e7c32dbc/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "app_store_url": "https://apps.apple.com/jp/app/%E3%81%86%E3%82%93%E3%81%A1%E3%81%8F%E3%82%93-ai%E5%81%A5%E5%BA%B7%E8%A8%98%E9%8C%B2-%E3%81%86%E3%82%93%E3%83%88%E3%83%A2/id6758856276?uo=4",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/08/7a/a0/087aa0da-5765-a0d9-1143-4f074cba8c83/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e4/b8/aa/e4b8aae5-6c79-7303-ace8-a2289b0e626f/_U3046_U3093_U3061_U304f_U30936.5inch.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f4/4f/e7/f44fe723-faaa-c00b-eece-38f20e63d5b0/_U3046_U3093_U3061_U304f_U30936.5inch.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/03/53/5d/03535dff-3aaa-5b6b-2567-f9db893b8794/_U3046_U3093_U3061_U304f_U30936.5inch.003.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/90/e4/ad/90e4adb5-ff66-a4ff-e1f5-112b3b1d2a11/_U3046_U3093_U3061_U304f_U30936.5inch.004.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/84/5c/99/845c998d-b4a4-ac7b-3c03-ee3a04334c62/_U3046_U3093_U3061_U304f_U30936.5inch.005.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/16/ab/8e/16ab8ee0-24ca-8827-dda3-a620b66afe6e/001.png/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ed/0e/7a/ed0e7af8-9830-e502-03c7-8b2ee82c3c47/002.png/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a1/15/d8/a115d8bf-bd45-eac7-b8c1-41116da70572/003.png/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f5/b1/1a/f5b11a32-1fad-90ca-0240-2d54cb878b13/004.png/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3d/c4/2b/3dc42b66-6878-b340-4b55-3c997569d4b4/005.png/1242x0bb.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -42,13 +42,13 @@
         "エンターテインメント"
       ],
       "primary_genre": "Health & Fitness",
-      "rating": 4.08673,
-      "rating_count": 392,
-      "version": "1.8.0",
+      "rating": 4.10602,
+      "rating_count": 481,
+      "version": "2.7.0",
       "release_date": "2026-02-26T08:00:00Z",
-      "current_version_release_date": "2026-03-20T15:23:22Z",
-      "description": "うんちくんは、毎日のうんちを楽しく記録して友達や家族とシェアできるアプリです。\n\n【ワンタップで記録】\n「でた！」ボタンを押すだけで今日のうんちを記録。回数に応じて37種類以上のうんちキャラクターがリアクションしてくれます。\n\n【うんトモとシェア】\n友達コードやQRコードで「うんトモ」を追加。ストーリー形式でうんトモのうんち状況をチェックできます。まるでInstagramのストーリーのように、楽しくうんち報告！\n\n【ウィジェット対応】\nホーム画面にウィジェットを追加すれば、アプリを開かなくても今日の記録が一目でわかります。回数に応じてテーマカラーが変化！\n\n【うんカレ（カレンダー）】\n週間カレンダーで日ごとの記録を確認。平均回数や最高記録もチェックできます。\n\n【ストリーク機能】\n連続記録日数をカウント。毎日のうんち習慣をゲーム感覚で続けられます。\n\n【プッシュ通知】\nうんトモがうんちした時にお知らせが届きます。友達申請の通知も見逃しません。\n\n【アバターカスタマイズ】\n肌色・髪型・髪色・目の色・服装など自由にカスタマイズ。あなただけのアバターでうんトモと交流しよう。\n\n【無料版】\n・ワンタップ記録\n・うんトモ追加（無制限）\n・ストーリー共有\n・週間カレンダー\n・ウィジェット\n・アバターカスタマイズ\n・プッシュ通知\n\n【プレミアム版】\n・月間カレンダー＆サマリー\n・広告なし\n・すべての機能が使い放題\n\n毎日のうんちを、うんちくんと一緒に楽しく記録しよう！\n\n【リンク】\n・サポート: https://tsuzukit.com/contact/\n・利用規約: https://tsuzukit.com/legal/terms-of-service.html\n・プライバシーポリシー: https://tsuzukit.com/legal/privacy-policy.html\n・特定商取引法に基づく表記: https://tsuzukit.com/legal/commercial-law.html",
-      "release_notes": "うんちくんからのお知らせだよ！\n\n・ストーリーにコメントできるようになったよ！うんトモとおしゃべりしよう\n・うんトモ一覧にレベルと称号が表示されるようになったよ！レベル順で並ぶよ！\n・レベルアップ画面で称号カードをシェアできるようになったよ！\n・いろんなバグをなおしたよ！",
+      "current_version_release_date": "2026-06-03T14:05:56Z",
+      "description": "うんちくんは、毎日のうんちを楽しく記録して友達や家族とシェアできるアプリです。\n\n【ワンタップで記録】\n「でた！」ボタンを押すだけで今日のうんちを記録。回数に応じて37種類以上のうんちキャラクターがリアクションしてくれます。\n\n【うんトモとシェア】\n友達コードやQRコードで「うんトモ」を追加。ストーリー形式でうんトモのうんち状況をチェックできます。まるでInstagramのストーリーのように、楽しくうんち報告！\n\n【ウィジェット対応】\nホーム画面にウィジェットを追加すれば、アプリを開かなくても今日の記録が一目でわかります。回数に応じてテーマカラーが変化！\n\n【うんカレ（カレンダー）】\n週間カレンダーで日ごとの記録を確認。平均回数や最高記録もチェックできます。\n\n【ストリーク機能】\n連続記録日数をカウント。毎日のうんち習慣をゲーム感覚で続けられます。\n\n【プッシュ通知】\nうんトモがうんちした時にお知らせが届きます。友達申請の通知も見逃しません。\n\n【アバターカスタマイズ】\n肌色・髪型・髪色・目の色・服装など自由にカスタマイズ。あなただけのアバターでうんトモと交流しよう。\n\n【無料版】\n・ワンタップ記録\n・うんトモ追加（無制限）\n・ストーリー共有\n・週間カレンダー\n・ウィジェット\n・アバターカスタマイズ\n・プッシュ通知\n\n【プレミアム版】\n・月間カレンダー＆サマリー\n・広告なし\n・すべての機能が使い放題\n\n毎日のうんちを、うんちくんと一緒に楽しく記録しよう！\n\n【リンク】\n・サポート: https://tsuzukit.com/contact/\n・利用規約: https://unchikun.app/legal/terms-of-service\n・プライバシーポリシー: https://unchikun.app/legal/privacy-policy\n・特定商取引法に基づく表記: https://unchikun.app/legal/commercial-law",
+      "release_notes": "v2.7.0 の新機能\n\n・うんトモにサポーター体験をプレゼント\nうんトモに3日間のサポーター体験を、そっと贈れるようになったよ。\nもらいたい時は「おねだり」で。月に1回まで。\n\n・お知らせベル登場\nHomeの右上にベルができたよ。\n新しいお知らせがあると、赤いバッジで教えてくれるんだ。\n\n・うんカレがスワイプで動く\nカレンダーを左右にスワイプして、月をパッと切り替えられるようになったよ。",
       "content_advisory_rating": "4+",
       "minimum_os_version": "17.0",
       "developer_name": "Ryo Tsudukihashi",
@@ -64,11 +64,11 @@
       "app_store_url": "https://apps.apple.com/jp/app/%E8%A6%8B%E5%AE%88%E3%82%8A%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%80%E3%83%BC-%E3%81%BF%E3%81%BE%E3%82%82%E3%82%8A/id6758816691?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/81/c0/15/81c01572-c42c-1443-b735-8d6ee23c1014/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9f/f6/81/9ff681f3-92e6-7e54-ef26-75df536819f2/6.5inch.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ef/05/95/ef059533-7501-405c-a6a4-e448536a849b/6.5inch.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/16/a6/cb/16a6cb0c-3fb1-b67d-d1bd-012c3e42bdf9/6.5inch.003.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ce/e3/13/cee3131e-d740-b2c2-705c-98452238aa5c/6.5inch.004.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ab/4e/b7/ab4eb761-a143-53d0-4cf4-5b9e51fb87f1/6.5inch.005.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9f/f6/81/9ff681f3-92e6-7e54-ef26-75df536819f2/6.5inch.001.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ef/05/95/ef059533-7501-405c-a6a4-e448536a849b/6.5inch.002.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/16/a6/cb/16a6cb0c-3fb1-b67d-d1bd-012c3e42bdf9/6.5inch.003.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ce/e3/13/cee3131e-d740-b2c2-705c-98452238aa5c/6.5inch.004.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ab/4e/b7/ab4eb761-a143-53d0-4cf4-5b9e51fb87f1/6.5inch.005.jpeg/1242x0bb.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -99,11 +99,11 @@
       "app_store_url": "https://apps.apple.com/jp/app/%E8%A8%98%E5%BF%B5%E6%97%A5%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%80%E3%83%BC-%E3%83%A1%E3%83%A2%E3%83%AA%E3%82%A2/id6758575269?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/36/53/82/36538239-c1d1-31a2-c278-3bb4c008976e/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9a/a5/ac/9aa5ac4e-4af9-3c0e-edf8-99a70088b303/6.5inch.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3f/b0/57/3fb057fa-2741-e09f-2421-7ed78eaa08b1/6.5inch.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/56/e4/1f/56e41f02-35d8-0095-e208-5552a279b345/6.5inch.003.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a7/f4/a0/a7f4a0cf-3722-40ee-3c44-a1e1faee76ed/6.5inch.004.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/24/05/82/240582fa-9267-ef3a-d21f-e4c9eab2f868/6.5inch.005.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9a/a5/ac/9aa5ac4e-4af9-3c0e-edf8-99a70088b303/6.5inch.001.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3f/b0/57/3fb057fa-2741-e09f-2421-7ed78eaa08b1/6.5inch.002.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/56/e4/1f/56e41f02-35d8-0095-e208-5552a279b345/6.5inch.003.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a7/f4/a0/a7f4a0cf-3722-40ee-3c44-a1e1faee76ed/6.5inch.004.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/24/05/82/240582fa-9267-ef3a-d21f-e4c9eab2f868/6.5inch.005.jpeg/1242x0bb.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -132,14 +132,14 @@
       "name": "猫背改善と姿勢リマインダー：猫背は猫だけで充分にゃ。",
       "bundle_id": "com.tsuzukit.SeboneReminder",
       "app_store_url": "https://apps.apple.com/jp/app/%E7%8C%AB%E8%83%8C%E6%94%B9%E5%96%84%E3%81%A8%E5%A7%BF%E5%8B%A2%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%80%E3%83%BC-%E7%8C%AB%E8%83%8C%E3%81%AF%E7%8C%AB%E3%81%A0%E3%81%91%E3%81%A7%E5%85%85%E5%88%86%E3%81%AB%E3%82%83/id6758261496?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c7/43/f3/c743f3cc-0ca4-8060-c7f2-141f849e8f02/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f3/b7/77/f3b7773a-bd81-95e7-2fde-ff931ed92d45/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8d/83/4e/8d834e9f-6d32-b3a9-30f2-1aaf04543caa/IMG_2083.JPG/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/8a/24/ba/8a24ba0e-9892-cb84-1e7f-de3959b87f0a/IMG_2085.JPG/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/66/76/f4/6676f4d4-1778-b4f0-193a-9a1775ee45ed/IMG_2086.JPG/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/df/10/6b/df106b3c-6d5c-fe32-f8e2-87ab9c24163d/IMG_2087.JPG/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/9b/d0/98/9bd0987f-8545-d898-18f2-e366fcef96e3/IMG_2088.JPG/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/cc/d1/e6/ccd1e6b6-8c57-f85c-b069-7919bfbc5412/IMG_2092.JPG/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8d/83/4e/8d834e9f-6d32-b3a9-30f2-1aaf04543caa/IMG_2083.JPG/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/8a/24/ba/8a24ba0e-9892-cb84-1e7f-de3959b87f0a/IMG_2085.JPG/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/66/76/f4/6676f4d4-1778-b4f0-193a-9a1775ee45ed/IMG_2086.JPG/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/df/10/6b/df106b3c-6d5c-fe32-f8e2-87ab9c24163d/IMG_2087.JPG/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/9b/d0/98/9bd0987f-8545-d898-18f2-e366fcef96e3/IMG_2088.JPG/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/cc/d1/e6/ccd1e6b6-8c57-f85c-b069-7919bfbc5412/IMG_2092.JPG/1242x0bb.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -149,13 +149,13 @@
         "ライフスタイル"
       ],
       "primary_genre": "Health & Fitness",
-      "rating": 0,
-      "rating_count": 0,
-      "version": "1.1.0",
+      "rating": 2.625,
+      "rating_count": 8,
+      "version": "1.3.0",
       "release_date": "2026-01-29T08:00:00Z",
-      "current_version_release_date": "2026-02-04T08:04:10Z",
+      "current_version_release_date": "2026-04-01T08:07:14Z",
       "description": "「猫背は猫だけの専売特許。人間はピシッとしろにゃ」\n\n厳しくも愛のある監視猫が、あなたの姿勢を徹底指導。デスクワークでエビのように丸まっていたら、容赦なく通知が飛んでくるにゃ。\n\n■ 12匹の個性豊かな監視猫\n\n三毛猫、茶トラ、黒猫、マンチカン、スコティッシュフォールド、アメリカンショートヘア、シャム、ヒマラヤン、エキゾチックショートヘア、ペルシャ、スフィンクス、チャウシーの12匹から、お気に入りの監視猫を選べるにゃ。\n\nそれぞれ「〜だにゃ」「〜でしゅ」「〜ですわ」など個性的な口調で指導してくれるにゃ。\n\n■ 60種類の5秒エクササイズ\n\n【6カテゴリで全身ケア】\n・姿勢：顎を引く、背筋を伸ばすなど10種類\n・肩：肩甲骨を寄せる、肩回しなど10種類\n・腰：骨盤を立てる、腰ひねりなど10種類\n・全身：立つ、深呼吸、スクワットなど10種類\n・首：首回し、首のストレッチなど10種類\n・目：遠くを見る、まばたきなど10種類\n\nデスクワーク中でも座ったまま静かにできる、たった5秒のエクササイズにゃ。\n\n■ こんな方におすすめ\n・デスクワークで肩こりや腰痛に悩んでいる\n・気づくと猫背になっている\n・ストレートネック（スマホ首）を予防したい\n・在宅勤務で座りすぎが気になる\n・受験勉強で長時間座る機会が多い\n・眼精疲労が気になる\n\n■ 監視猫のスパルタ指導\n\n【具体的な指示でサポート】\n「顎を引くにゃ！エビになるにゃ！」「肩甲骨を寄せるにゃ！」など、すぐに実践できる具体的なアクションで指導。何をすればいいか明確にお伝えするにゃ。\n\n【追い打ち通知システム】\n無視すると「おい、聞こえてるにゃ？」「エビとしての人生を選ぶのかにゃ？」と追い打ちの通知が来るにゃ。\n\n【1000の名言で毎日モチベーション】\n毎日変わる格言で、姿勢改善のモチベーションをサポートするにゃ。\n\n■ カスタマイズ可能なリマインダー\n・インターバル：15分/30分/45分/60分/90分から選択\n・稼働時間：開始・終了時刻を自由に設定\n・繰り返し設定：毎日または平日のみ（プレミアム機能）\n\n■ 人間維持ポイント\n姿勢を正した回数をポイントとして記録。連続日数も表示されるにゃ。\n\n■ プレミアム機能\n・8匹の追加猫コレクション\n・繰り返し設定が解放\n・広告なしで快適に使用\n・アプリアイコン着せ替え\n\n猫背は猫だけで充分にゃ。12匹の監視猫と一緒に、人間らしい姿勢を取り戻すにゃ。\n\n【リンク】\n・サポート: https://tsuzukit.com/contact/\n・利用規約: https://tsuzukit.com/legal/terms-of-service.html\n・プライバシーポリシー: https://tsuzukit.com/legal/privacy-policy.html\n・特定商取引法に基づく表記: https://tsuzukit.com/legal/commercial-law.html",
-      "release_notes": "細かい不具合の修正",
+      "release_notes": "不具合修正\n  ・アプリを長期間開かないと通知が届かなくなる不具合を修正\n  ・アプリを開くだけで通知が自動的に再スケジュールされるようになりました",
       "content_advisory_rating": "4+",
       "minimum_os_version": "17.0",
       "developer_name": "Ryo Tsudukihashi",
@@ -170,10 +170,10 @@
       "app_store_url": "https://apps.apple.com/jp/app/%E6%8E%A8%E3%81%97%E3%82%A2%E3%82%A4%E3%83%A9%E3%83%B3%E3%83%89/id6751716346?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f7/49/d2/f749d23a-3689-a5dd-5d1d-a598950509ce/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0e/5f/09/0e5f09d3-6d63-03b7-25b5-4f7a4b6e0b09/6.5inch.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/84/bb/ec/84bbecf3-de84-b72c-a7ba-178018a42c6d/6.5inch.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2b/f6/6e/2bf66e6d-7e50-4747-fc37-d947888ce092/6.5inch.005.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b8/fc/e9/b8fce97a-1693-d7fe-d1dc-f32f84acbfde/6.5inch.004.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0e/5f/09/0e5f09d3-6d63-03b7-25b5-4f7a4b6e0b09/6.5inch.001.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/84/bb/ec/84bbecf3-de84-b72c-a7ba-178018a42c6d/6.5inch.002.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2b/f6/6e/2bf66e6d-7e50-4747-fc37-d947888ce092/6.5inch.005.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b8/fc/e9/b8fce97a-1693-d7fe-d1dc-f32f84acbfde/6.5inch.004.jpeg/1242x0bb.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -183,8 +183,8 @@
         "グラフィック／デザイン"
       ],
       "primary_genre": "Entertainment",
-      "rating": 3.2807,
-      "rating_count": 57,
+      "rating": 3.31148,
+      "rating_count": 61,
       "version": "1.4.0",
       "release_date": "2026-01-21T08:00:00Z",
       "current_version_release_date": "2026-03-11T23:54:48Z",
@@ -206,12 +206,12 @@
       "name": "目薬リマインダー ~ EyeDrop 点眼管理 ~",
       "bundle_id": "com.tsuzukit.EyeDrop",
       "app_store_url": "https://apps.apple.com/jp/app/%E7%9B%AE%E8%96%AC%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%80%E3%83%BC-eyedrop-%E7%82%B9%E7%9C%BC%E7%AE%A1%E7%90%86/id6757758987?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/63/ea/ed/63eaed22-de44-91e4-cb21-15c488e69f3b/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/99/ab/b3/99abb3ee-bc10-c51b-65e0-a96453b6ae53/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/95/0f/b7/950fb75e-c80a-a0f1-fac2-5dd69683ac52/6.5inch.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b1/ca/9e/b1ca9eb6-ec53-a04f-2f36-3e6723258708/6.5inch.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/42/ed/db/42eddb9a-6efe-11a1-2f78-929810a0e1b2/6.5inch.003.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c8/6a/4c/c86a4caa-5c3a-f23a-5fa0-1fa165db2f17/6.5inch.004.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/95/0f/b7/950fb75e-c80a-a0f1-fac2-5dd69683ac52/6.5inch.001.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b1/ca/9e/b1ca9eb6-ec53-a04f-2f36-3e6723258708/6.5inch.002.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/42/ed/db/42eddb9a-6efe-11a1-2f78-929810a0e1b2/6.5inch.003.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c8/6a/4c/c86a4caa-5c3a-f23a-5fa0-1fa165db2f17/6.5inch.004.jpeg/1242x0bb.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -221,13 +221,13 @@
         "ヘルスケア／フィットネス"
       ],
       "primary_genre": "Lifestyle",
-      "rating": 0,
-      "rating_count": 0,
-      "version": "1.0",
+      "rating": 4,
+      "rating_count": 1,
+      "version": "1.1.0",
       "release_date": "2026-01-14T08:00:00Z",
-      "current_version_release_date": "2026-01-14T18:17:59Z",
+      "current_version_release_date": "2026-05-02T06:50:40Z",
       "description": "目薬の点眼、つい忘れてしまいませんか？\nEyeDropは、点眼スケジュールを管理して通知でお知らせする無料アプリです。\n\n■ こんなお悩みを解決\n・眼科で処方された目薬を忘れずに使いたい\n・1日に何度も点眼するのを覚えていられない\n・複数の目薬を使い分けている\n・目薬の使用期限が切れていた経験がある\n\n■ 主な機能\n【複数の目薬を一括管理】\nドライアイ用、花粉症・アレルギー用、緑内障・白内障の処方薬など、複数の目薬を登録できます。それぞれの点眼スケジュールを個別に設定可能。\n\n【忘れない通知】\n設定した時間に通知でお知らせ。1日1回から数時間おきの点眼まで、柔軟に設定できます。\n\n【ワンタップで点眼記録】\n通知をタップするだけで点眼完了を記録。忙しい時でも手間なく続けられます。\n\n【ホーム画面ウィジェット】\n次の点眼時間をウィジェットで確認。アプリを開かなくてもスケジュールが分かります。\n\n【使用期限管理】\n目薬の開封日を記録して、使用期限をお知らせ。衛生的に目薬を使えます。\n\n【点眼履歴・統計】\nカレンダーで点眼履歴を確認。継続状況が一目で分かります。\n\n■ こんな方におすすめ\n・眼科で処方された目薬を使用中の方\n・ドライアイで定期的な点眼が必要な方\n・花粉症・アレルギーで目薬を使う方\n・緑内障・白内障で毎日の点眼が欠かせない方\n・コンタクトレンズで目の乾燥が気になる方\n・デスクワーク・在宅勤務で眼精疲労がある方\n\n■ 料金プラン\n【無料版】\n・目薬3件まで登録\n・点眼通知\n・ウィジェット\n\n【プレミアム版】\n・目薬の登録無制限\n・繰り返し通知（毎日・毎週・毎月）\n・詳細な統計\n・広告非表示\n\n目の健康は毎日の習慣から。EyeDropで点眼を習慣化しましょう。\n\n■ リンク\n・サポート: https://tsuzukit.com/contact/\n・利用規約: https://tsuzukit.com/legal/terms-of-service.html\n・プライバシーポリシー: https://tsuzukit.com/legal/privacy-policy.html",
-      "release_notes": null,
+      "release_notes": "今回のアップデート内容\n・点眼間隔に12時間を追加\n1日2回の処方や術後の服薬管理に対応しました。\n・点眼スケジュール機能\n点眼の開始日と期間を設定でき、終了日を過ぎると通知が自動で停止します。\n・段階的減薬（テーパリング）に対応\n週ごとに1回ずつ点眼回数を減らす処方を自動でスケジュール。ステロイド点眼などで活躍します。\n・Widgetを刷新\n今日の進捗、コース残日数、減薬週数をホーム画面で一目で確認できるようになりました。\n要望をくださったユーザーの皆さま、ありがとうございました。",
       "content_advisory_rating": "12+",
       "minimum_os_version": "17.0",
       "developer_name": "Ryo Tsudukihashi",
@@ -246,9 +246,9 @@
       "app_store_url": "https://apps.apple.com/jp/app/%E6%80%9D%E3%81%84%E5%87%BA%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%80%E3%83%BC-1%E6%97%A51%E6%9E%9A%E3%83%95%E3%82%A9%E3%83%88%E6%97%A5%E8%A8%98/id6757349187?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b0/28/73/b028733a-c2c8-43da-5215-fffa24738b59/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/3d/e2/8d/3de28da6-13c8-bb40-00df-92825286d936/6.5inch.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/4c/9c/45/4c9c459b-185f-e3e8-552d-a6ff2c8f75d3/6.5inch.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/6a/c6/19/6ac619dc-57a3-3593-5d93-15257df866d2/6.5inch.003.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/3d/e2/8d/3de28da6-13c8-bb40-00df-92825286d936/6.5inch.001.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/4c/9c/45/4c9c459b-185f-e3e8-552d-a6ff2c8f75d3/6.5inch.002.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/6a/c6/19/6ac619dc-57a3-3593-5d93-15257df866d2/6.5inch.003.jpeg/1242x0bb.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -281,11 +281,11 @@
       "name": "ShellLens - 貝殻AI図鑑",
       "bundle_id": "com.tsuzukit.shelllens",
       "app_store_url": "https://apps.apple.com/jp/app/shelllens-%E8%B2%9D%E6%AE%BBai%E5%9B%B3%E9%91%91/id6757253733?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/04/55/55/045555be-146e-5a25-a63a-a7787991baff/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/65/8d/19/658d1967-9e21-05c7-bc6a-c17898ce0215/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/6b/e8/9f/6be89fa5-0554-35db-b861-4a08551f4bde/ShellLens.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/55/07/83/55078366-a226-078a-9d99-96d78754552f/ShellLens.003.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/11/2e/17/112e17cf-c280-0778-2a80-ed9a5b9ea86c/ShellLens.002.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/6b/e8/9f/6be89fa5-0554-35db-b861-4a08551f4bde/ShellLens.001.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/55/07/83/55078366-a226-078a-9d99-96d78754552f/ShellLens.003.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/11/2e/17/112e17cf-c280-0778-2a80-ed9a5b9ea86c/ShellLens.002.jpeg/1242x0bb.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -297,11 +297,11 @@
       "primary_genre": "Reference",
       "rating": 0,
       "rating_count": 0,
-      "version": "1.0",
+      "version": "1.0.1",
       "release_date": "2026-01-07T08:00:00Z",
-      "current_version_release_date": "2026-01-07T10:36:29Z",
+      "current_version_release_date": "2026-04-10T22:43:46Z",
       "description": "ShellLensは、AIの力で貝殻を瞬時に識別できる革新的なアプリです。\n\n【主な機能】\n\n■ AI貝殻識別\nカメラで撮影するだけで、AIが貝殻の種類を高精度で識別。1,000種類以上の貝殻に対応しています。\n\n■ 詳細な貝殻情報\n- 貝殻名（日本語・英語）\n- 学名\n- サイズ\n- 生息地\n- 特徴\n\n■ 生態情報（プレミアム）\n- 生態の詳細\n- 食性\n- 行動パターン\n- 保全状況\n\n■ 価値評価（プレミアム）\n- 推定コレクター価値\n- レア度\n- コレクター人気度\n\n■ コレクション機能\n識別した貝殻を保存して、あなただけのコレクションを作成できます。\n\n【こんな方におすすめ】\n- 貝殻コレクター\n- ビーチコーミング愛好家\n- 海洋生物に興味がある方\n- 旅行・観光が好きな方\n- 理科教育に活用したい方\n\n【プレミアムプラン】\n- 無制限の識別機能\n- 詳細な生態分析\n- 生息地・分布情報\n- 推定価値・レア度表示\n- 広告非表示\n\n今すぐダウンロードして、浜辺で見つけた貝殻の秘密を解き明かしましょう！\n\n【ご利用にあたって】\nプライバシーポリシー: https://tsuzukit.com/legal/privacy-policy.html\n利用規約: https://tsuzukit.com/legal/terms-of-service.html\n特定商取引法に基づく表記: https://tsuzukit.com/legal/commercial-law.html\n免責事項: https://tsuzukit.com/legal/disclaimer.html",
-      "release_notes": null,
+      "release_notes": "不具合の修正とパフォーマンスの改善を行いました。\n\n・カメラでの撮影時にまれにアプリが終了してしまう問題を修正しました\n・動作の安定性を向上させました\n\n今後ともご愛用よろしくお願いいたします。",
       "content_advisory_rating": "4+",
       "minimum_os_version": "17.0",
       "developer_name": "Ryo Tsudukihashi",
@@ -320,10 +320,10 @@
       "app_store_url": "https://apps.apple.com/jp/app/beautymed-%E7%BE%8E%E5%AE%B9%E5%8C%BB%E7%99%82%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%80%E3%83%BC/id6757325065?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/58/b0/da/58b0da76-fa5a-e480-d7af-b898a6e41878/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/99/eb/28/99eb2867-9f1f-ed45-0bf4-e4024dacd879/6.5inch.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/49/10/26/4910264f-d603-a214-c20c-22ab11accc80/6.5inch.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/aa/7a/a4/aa7aa4a3-d4ba-6007-2978-0061cf4b298b/6.5inch.003.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/5e/0a/5b/5e0a5b49-209c-a634-aaab-053e21f11641/6.5inch.004.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/99/eb/28/99eb2867-9f1f-ed45-0bf4-e4024dacd879/6.5inch.001.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/49/10/26/4910264f-d603-a214-c20c-22ab11accc80/6.5inch.002.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/aa/7a/a4/aa7aa4a3-d4ba-6007-2978-0061cf4b298b/6.5inch.003.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/5e/0a/5b/5e0a5b49-209c-a634-aaab-053e21f11641/6.5inch.004.jpeg/1242x0bb.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -356,11 +356,11 @@
       "name": "BirdLens - 野鳥AI図鑑",
       "bundle_id": "com.tsuzukit.birdlens",
       "app_store_url": "https://apps.apple.com/jp/app/birdlens-%E9%87%8E%E9%B3%A5ai%E5%9B%B3%E9%91%91/id6757175763?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/53/4f/a4/534fa481-95f5-6319-9eda-e8f033d9c236/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4d/e5/7d/4de57d82-6e46-3246-a1d0-4f7a3e3eec46/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e4/65/12/e4651248-f18e-ea79-6864-209a68433690/BardLens.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/19/95/28/19952808-32e5-5300-dac2-94552508496a/BardLens.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8f/de/3b/8fde3b37-9e72-c23c-49ad-8175fae8fe93/BardLens.003.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e4/65/12/e4651248-f18e-ea79-6864-209a68433690/BardLens.001.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/19/95/28/19952808-32e5-5300-dac2-94552508496a/BardLens.002.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8f/de/3b/8fde3b37-9e72-c23c-49ad-8175fae8fe93/BardLens.003.jpeg/1242x0bb.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -372,11 +372,11 @@
       "primary_genre": "Reference",
       "rating": 0,
       "rating_count": 0,
-      "version": "1.0",
+      "version": "1.0.1",
       "release_date": "2026-01-05T08:00:00Z",
-      "current_version_release_date": "2026-01-05T09:23:57Z",
+      "current_version_release_date": "2026-04-10T22:48:15Z",
       "description": "この鳥、何だろう？そんな疑問をAIが瞬時に解決！\n\nBirdLensは、カメラで野鳥を撮影するだけでAIが種類を識別し、詳しい情報を教えてくれるアプリです。鳴き声からの識別にも対応しています。\n\n【主な機能】\n・AIによる野鳥識別 - カメラをかざすだけで数秒で識別\n・鳴き声識別 - 鳥の声を録音して種類を特定\n・詳細情報 - 体長、分類、生態、分布などを表示\n・コレクション図鑑 - 発見した野鳥を自動で記録\n・他の候補表示 - 類似した野鳥も確認可能\n\n【無料でできること】\n・2回までの野鳥識別\n・基本情報の閲覧（名前、体長、分類など）\n\n【プレミアム会員特典】\n・無制限の野鳥識別\n・鳴き声からの識別機能\n・詳細な生態情報\n・観察のコツ\n・似ている鳥との見分け方\n・広告非表示\n\n散歩中、公園で、山でのハイキング中に出会った鳥を、その場で識別できます。バードウォッチング初心者から野鳥愛好家まで、あなたの野鳥観察をサポートします。\n\n【ご利用にあたって】\nプライバシーポリシー: https://tsuzukit.com/legal/privacy-policy.html\n利用規約: https://tsuzukit.com/legal/terms-of-service.html\n特定商取引法に基づく表記: https://tsuzukit.com/legal/commercial-law.html\n免責事項: https://tsuzukit.com/legal/disclaimer.html",
-      "release_notes": null,
+      "release_notes": "不具合の修正とパフォーマンスの改善を行いました。\n\n・カメラでの撮影時にまれにアプリが終了してしまう問題を修正しました\n・動作の安定性を向上させました\n\n今後ともご愛用よろしくお願いいたします。",
       "content_advisory_rating": "4+",
       "minimum_os_version": "17.0",
       "developer_name": "Ryo Tsudukihashi",
@@ -393,11 +393,11 @@
       "name": "GeoLens - 岩石・鉱物AI図鑑",
       "bundle_id": "com.tsuzukit.RockIdentifier",
       "app_store_url": "https://apps.apple.com/jp/app/geolens-%E5%B2%A9%E7%9F%B3-%E9%89%B1%E7%89%A9ai%E5%9B%B3%E9%91%91/id6757151902?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ce/12/c2/ce12c2c5-d75f-e2aa-8731-642274202ca0/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/01/9f/56/019f5699-a216-3617-cb06-4c0ab581be0f/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/34/e3/e8/34e3e8f2-3dca-87a0-68e5-1100efd93b2e/6.5inch.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/46/e2/80/46e2806b-a12b-9e0f-42b8-42f3ea10bdda/6.5inch.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f0/c5/01/f0c50143-fd89-018b-e837-f8c23a73a9fe/6.5inch.003.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/34/e3/e8/34e3e8f2-3dca-87a0-68e5-1100efd93b2e/6.5inch.001.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/46/e2/80/46e2806b-a12b-9e0f-42b8-42f3ea10bdda/6.5inch.002.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f0/c5/01/f0c50143-fd89-018b-e837-f8c23a73a9fe/6.5inch.003.jpeg/1242x0bb.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -409,11 +409,11 @@
       "primary_genre": "Reference",
       "rating": 0,
       "rating_count": 0,
-      "version": "1.0",
+      "version": "1.0.1",
       "release_date": "2026-01-05T08:00:00Z",
-      "current_version_release_date": "2026-01-05T09:53:04Z",
+      "current_version_release_date": "2026-04-10T22:45:07Z",
       "description": "GeoLensは、AIの力で岩石や鉱物を瞬時に識別できる革新的なアプリです。\n\n【主な機能】\n\n■ AI岩石・鉱物識別\nカメラで撮影するだけで、AIが岩石や鉱物の種類を高精度で識別。1,000種類以上の岩石・鉱物に対応しています。\n\n■ 詳細な鉱物情報\n- 鉱物名（日本語・英語）\n- 化学式\n- モース硬度\n- 結晶系\n- 主な産地\n\n■ スピリチュアル情報（プレミアム）\n- 石の意味・エネルギー\n- チャクラとの関連\n- 誕生石・星座\n- ヒーリング効果\n\n■ 価値評価（プレミアム）\n- 推定市場価格\n- レア度\n- コレクター人気度\n\n■ コレクション機能\n識別した岩石・鉱物を保存して、あなただけのコレクションを作成できます。\n\n【こんな方におすすめ】\n- 鉱物・宝石コレクター\n- 地質学に興味がある方\n- パワーストーン愛好家\n- アウトドア・ハイキングが好きな方\n- 理科教育に活用したい方\n\n【プレミアムプラン】\n- 無制限の識別機能\n- 詳細な地質学分析\n- スピリチュアル情報\n- 推定価値・レア度表示\n- 広告非表示\n\n今すぐダウンロードして、身の回りの石の秘密を解き明かしましょう！\n\n【ご利用にあたって】\nプライバシーポリシー: https://tsuzukit.com/legal/privacy-policy.html\n利用規約: https://tsuzukit.com/legal/terms-of-service.html\n特定商取引法に基づく表記: https://tsuzukit.com/legal/commercial-law.html\n免責事項: https://tsuzukit.com/legal/disclaimer.html",
-      "release_notes": null,
+      "release_notes": "不具合の修正とパフォーマンスの改善を行いました。\n\n・カメラでの撮影時にまれにアプリが終了してしまう問題を修正しました\n・動作の安定性を向上させました\n\n今後ともご愛用よろしくお願いいたします。",
       "content_advisory_rating": "4+",
       "minimum_os_version": "17.0",
       "developer_name": "Ryo Tsudukihashi",
@@ -432,9 +432,9 @@
       "app_store_url": "https://apps.apple.com/jp/app/%E9%A6%AC%E5%88%B8%E3%82%B8%E3%82%A7%E3%83%8D%E3%83%AC%E3%83%BC%E3%82%BF%E3%83%BC/id6757259211?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/3f/69/67/3f696767-f83f-49f3-a22f-b8228cffeb02/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c7/66/1c/c7661cc7-e2ce-6467-981c-f4bf3c10f954/_U99ac_U5238_U30b7_U3099_U30a7_U30cd_U30ec_U30fc_U30bf.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/45/96/3f/45963fd5-67d6-33f7-f005-c5fa0dd7b68b/_U99ac_U5238_U30b7_U3099_U30a7_U30cd_U30ec_U30fc_U30bf.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/71/47/25/71472508-1ba3-bc9f-98ab-ba4cd22e9271/_U99ac_U5238_U30b7_U3099_U30a7_U30cd_U30ec_U30fc_U30bf.003.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c7/66/1c/c7661cc7-e2ce-6467-981c-f4bf3c10f954/_U99ac_U5238_U30b7_U3099_U30a7_U30cd_U30ec_U30fc_U30bf.001.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/45/96/3f/45963fd5-67d6-33f7-f005-c5fa0dd7b68b/_U99ac_U5238_U30b7_U3099_U30a7_U30cd_U30ec_U30fc_U30bf.002.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/71/47/25/71472508-1ba3-bc9f-98ab-ba4cd22e9271/_U99ac_U5238_U30b7_U3099_U30a7_U30cd_U30ec_U30fc_U30bf.003.jpeg/1242x0bb.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -467,10 +467,10 @@
       "app_store_url": "https://apps.apple.com/jp/app/%E3%81%8A%E8%96%AC%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%80%E3%83%BC-%E6%9C%8D%E7%94%A8%E7%AE%A1%E7%90%86/id6756915544?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/36/20/93/362093f8-b3e0-17c2-15c7-f6af3af7a106/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ef/57/29/ef572990-f149-e97c-87db-646f55a01811/6.5inch.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/6d/35/f7/6d35f762-84f5-7c57-5634-21786a8078e1/6.5inch.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8a/b9/16/8ab91648-9ea7-96b3-e8d2-52dff6b68894/6.5inch.003.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ce/ed/bc/ceedbc62-76db-e53d-0df1-a9339c430dee/6.5inch.004.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ef/57/29/ef572990-f149-e97c-87db-646f55a01811/6.5inch.001.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/6d/35/f7/6d35f762-84f5-7c57-5634-21786a8078e1/6.5inch.002.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8a/b9/16/8ab91648-9ea7-96b3-e8d2-52dff6b68894/6.5inch.003.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ce/ed/bc/ceedbc62-76db-e53d-0df1-a9339c430dee/6.5inch.004.jpeg/1242x0bb.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -480,8 +480,8 @@
         "ユーティリティ"
       ],
       "primary_genre": "Medical",
-      "rating": 4.5,
-      "rating_count": 2,
+      "rating": 3.33333,
+      "rating_count": 3,
       "version": "1.2.0",
       "release_date": "2025-12-28T08:00:00Z",
       "current_version_release_date": "2026-02-24T01:46:51Z",
@@ -505,9 +505,9 @@
       "app_store_url": "https://apps.apple.com/jp/app/%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%80%E3%83%BC-%E8%A8%98%E6%86%B6%E3%82%92%E5%91%BC%E3%81%B3%E8%B5%B7%E3%81%93%E3%81%99/id6756901694?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e0/5b/29/e05b2975-7c56-3f93-5902-f885c2e390ed/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/66/f7/57/66f75751-b8c1-ecfa-f932-41466c637708/6.5inch.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/22/7d/9c/227d9c27-8e1e-8df6-d32f-8ef3176f2acd/6.5inch.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/50/24/c4/5024c47f-851a-d819-6322-007c813c2327/6.5inch.003.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/66/f7/57/66f75751-b8c1-ecfa-f932-41466c637708/6.5inch.001.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/22/7d/9c/227d9c27-8e1e-8df6-d32f-8ef3176f2acd/6.5inch.002.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/50/24/c4/5024c47f-851a-d819-6322-007c813c2327/6.5inch.003.jpeg/1242x0bb.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -540,11 +540,11 @@
       "name": "FocusDrive - 集中タイマー",
       "bundle_id": "com.tsuzukit.FocusDrive",
       "app_store_url": "https://apps.apple.com/jp/app/focusdrive-%E9%9B%86%E4%B8%AD%E3%82%BF%E3%82%A4%E3%83%9E%E3%83%BC/id6756264384?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e5/01/f1/e501f113-8744-176e-5877-8a1084a9bf7b/FocusDrive-0-0-1x_U007epad-0-1-sRGB-85-220.png/512x512bb.jpg",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/cf/ee/3b/cfee3b95-3416-019a-209c-b5ebb7506be3/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/aa/a8/2f/aaa82fec-77d3-2149-677b-cb4a2ed96296/6.5inch.001.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/7a/17/7e/7a177e3d-3c6d-4e6b-9ce8-1b8e645337c3/6.5inch.002.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/37/b4/0a/37b40aea-37f8-7da8-49a8-99b2f8348939/6.5inch.003.png/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/aa/a8/2f/aaa82fec-77d3-2149-677b-cb4a2ed96296/6.5inch.001.png/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/7a/17/7e/7a177e3d-3c6d-4e6b-9ce8-1b8e645337c3/6.5inch.002.png/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/37/b4/0a/37b40aea-37f8-7da8-49a8-99b2f8348939/6.5inch.003.png/1242x0bb.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -556,11 +556,11 @@
       "primary_genre": "Productivity",
       "rating": 0,
       "rating_count": 0,
-      "version": "1.0",
+      "version": "1.0.1",
       "release_date": "2025-12-11T08:00:00Z",
-      "current_version_release_date": "2025-12-11T17:04:21Z",
+      "current_version_release_date": "2026-04-01T11:16:43Z",
       "description": "FocusDriveは、仮想ドライブ体験を通じて集中力を高める新感覚のタイマーアプリです。\n\n▸ 仮想ドライブで集中\n目的地を設定して仮想ドライブをスタート。到着までの時間を集中タイムとして活用できます。美しい地図上を進む車を眺めながら、自然と集中モードに入れます。\n\n▸ Screen Time連携\n集中中は気が散るアプリを自動でブロック。本当に大切なことに集中できる環境を作ります。\n\n▸ リアルタイム進捗表示\nダイナミックアイランドとライブアクティビティで、いつでも残り時間と進捗を確認。アプリを閉じていても集中を継続できます。\n\n▸ 達成感のある体験\n- 訪問地点のアンロック\n- 走行距離の記録\n- 連続集中日数（ストリーク）の追跡\n\n▸ カスタマイズ\n- 複数の地図スタイル（標準、衛星、リアル、モノクローム）\n- 天候設定（晴れ・雨）による環境音の変化\n- 車種の選択（プレミアム機能）\n\n▸ ウィジェット対応\nホーム画面から直接ドライブを開始。週間サマリーも一目で確認できます。\n\nFocusDriveで、楽しみながら集中する習慣を身につけましょう。\n\nInspired by FocusFlight.\n\n□ その他情報\n・利用規約\nhttps://tsuzukit.com/legal/terms-of-service.html\n\n・プライバシーポリシー\nhttps://tsuzukit.com/legal/privacy-policy.html\n\n・特定商取引法に基づく表示\nhttps://tsuzukit.com/legal/commercial-law.html",
-      "release_notes": null,
+      "release_notes": "細かな不具合の修正",
       "content_advisory_rating": "4+",
       "minimum_os_version": "18.0",
       "developer_name": "Ryo Tsudukihashi",
@@ -579,11 +579,11 @@
       "app_store_url": "https://apps.apple.com/jp/app/%E7%A9%BA%E6%83%B3%E6%97%85%E8%A1%8C%E3%82%AB%E3%83%A1%E3%83%A9-ai%E3%81%A7%E4%B8%96%E7%95%8C%E3%82%92%E3%82%B9%E3%83%8A%E3%83%83%E3%83%97/id6755984490?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d0/23/b5/d023b55f-db83-f180-d2f3-157f24a9b83f/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0e/e7/e4/0ee7e441-8e2b-a482-a293-7792dff83b2c/6.5inch.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e0/20/69/e02069dd-3cf2-8da9-a97c-465010cfb65b/6.5inch.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d7/35/9e/d7359e73-ef71-6e5b-a67f-06c4d401be42/6.5inch.003.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2f/45/34/2f4534a8-a3da-7ed9-6af7-6e245b14f0ec/6.5inch.004.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2f/d2/fd/2fd2fd31-fc75-8f31-d761-b0920f4b0c91/6.5inch.005.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0e/e7/e4/0ee7e441-8e2b-a482-a293-7792dff83b2c/6.5inch.001.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e0/20/69/e02069dd-3cf2-8da9-a97c-465010cfb65b/6.5inch.002.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d7/35/9e/d7359e73-ef71-6e5b-a67f-06c4d401be42/6.5inch.003.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2f/45/34/2f4534a8-a3da-7ed9-6af7-6e245b14f0ec/6.5inch.004.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2f/d2/fd/2fd2fd31-fc75-8f31-d761-b0920f4b0c91/6.5inch.005.jpeg/1242x0bb.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -618,9 +618,9 @@
       "app_store_url": "https://apps.apple.com/jp/app/%E3%82%B9%E3%83%AF%E3%82%A4%E3%83%9D%E3%83%B3-%E3%82%B9%E3%83%AF%E3%82%A4%E3%83%97%E3%81%A7%E5%86%99%E7%9C%9F%E3%81%A8%E5%8B%95%E7%94%BB%E3%82%92%E7%B0%A1%E5%8D%98%E6%95%B4%E7%90%86/id6752831862?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/11/e3/16/11e31605-1163-3718-1ffd-4aba66432224/swipeclean-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/85/20/6f/85206f11-ce42-acb8-294c-9aabac676a8e/6.5inch.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/fd/00/48/fd00480e-cc62-27ff-0c46-c367b09158cb/6.5inch.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/28/01/a3/2801a355-8efc-e9ae-d838-f0115a472d2c/6.5inch.003.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/85/20/6f/85206f11-ce42-acb8-294c-9aabac676a8e/6.5inch.001.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/fd/00/48/fd00480e-cc62-27ff-0c46-c367b09158cb/6.5inch.002.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/28/01/a3/2801a355-8efc-e9ae-d838-f0115a472d2c/6.5inch.003.jpeg/1242x0bb.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -630,8 +630,8 @@
         "仕事効率化"
       ],
       "primary_genre": "Utilities",
-      "rating": 4,
-      "rating_count": 4,
+      "rating": 5,
+      "rating_count": 3,
       "version": "1.3.1",
       "release_date": "2025-09-25T07:00:00Z",
       "current_version_release_date": "2025-10-07T02:29:24Z",
@@ -655,9 +655,9 @@
       "app_store_url": "https://apps.apple.com/jp/app/today-%E4%BB%8A%E6%97%A5%E3%81%AF%E4%BB%A4%E5%92%8C%E4%BD%95%E5%B9%B4%E3%81%A7%E4%BD%95%E3%81%AE%E6%97%A5/id6752814140?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ad/07/e5/ad07e5a2-f7ff-3f4b-c7e3-0563717c30e1/today-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1a/58/0b/1a580b25-0169-258f-3ae8-05d7ff253c33/6.5inch.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d7/d1/b9/d7d1b9c0-7e65-04c6-4ddb-2aeddceead51/6.5inch.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b4/5a/8f/b45a8fe4-75dd-5cf6-556e-42c9b9b0a215/6.5inch.003.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1a/58/0b/1a580b25-0169-258f-3ae8-05d7ff253c33/6.5inch.002.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d7/d1/b9/d7d1b9c0-7e65-04c6-4ddb-2aeddceead51/6.5inch.001.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b4/5a/8f/b45a8fe4-75dd-5cf6-556e-42c9b9b0a215/6.5inch.003.jpeg/1242x0bb.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -692,9 +692,9 @@
       "app_store_url": "https://apps.apple.com/jp/app/cook-it-%E5%86%B7%E8%94%B5%E5%BA%AB%E3%81%AE%E4%B8%AD%E3%82%92%E6%92%AE%E3%82%8B%E3%81%A0%E3%81%91%E3%81%A7ai%E3%83%AC%E3%82%B7%E3%83%94%E6%8F%90%E6%A1%88/id6751343632?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5b/cc/48/5bcc48a9-937f-9035-c7aa-66c1f127126c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/14/51/5f/14515f44-bf72-6d76-a836-b8a6726ec60c/6.9inch.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/32/48/83/32488394-c53b-d691-54e4-b2a183508995/6.9inch.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c3/de/d4/c3ded498-9fa6-c2cc-844d-43d3553c80af/6.9inch.003.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/14/51/5f/14515f44-bf72-6d76-a836-b8a6726ec60c/6.9inch.001.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/32/48/83/32488394-c53b-d691-54e4-b2a183508995/6.9inch.002.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c3/de/d4/c3ded498-9fa6-c2cc-844d-43d3553c80af/6.9inch.003.jpeg/1242x0bb.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -729,10 +729,10 @@
       "app_store_url": "https://apps.apple.com/jp/app/%E8%A8%80%E3%81%AE%E8%91%89%E7%AE%B1-%E5%A4%A7%E5%88%87%E3%81%AA%E6%89%8B%E7%B4%99%E3%82%92%E7%B0%A1%E5%8D%98%E3%81%AB%E8%A8%98%E9%8C%B2/id6749537777?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/82/95/f3/8295f3cc-d094-690c-e71c-0c6ec70c77a3/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/8f/82/9d/8f829d15-9c26-36b7-4b2a-6f4e110f2dce/6.9inch.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/30/36/ce/3036ceba-f1cc-2958-71f2-46117a6142f2/6.9inch.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0c/14/3a/0c143ad2-a290-145b-f464-b25e041d226d/6.9inch.003.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/43/84/da/4384da95-07cb-41ef-6c3e-ffd79eafd15d/6.9inch.004.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/8f/82/9d/8f829d15-9c26-36b7-4b2a-6f4e110f2dce/6.9inch.001.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/30/36/ce/3036ceba-f1cc-2958-71f2-46117a6142f2/6.9inch.002.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0c/14/3a/0c143ad2-a290-145b-f464-b25e041d226d/6.9inch.003.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/43/84/da/4384da95-07cb-41ef-6c3e-ffd79eafd15d/6.9inch.004.jpeg/1242x0bb.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -742,8 +742,8 @@
         "仕事効率化"
       ],
       "primary_genre": "Utilities",
-      "rating": 0,
-      "rating_count": 0,
+      "rating": 1,
+      "rating_count": 1,
       "version": "1.0",
       "release_date": "2025-08-28T07:00:00Z",
       "current_version_release_date": "2025-08-28T13:34:16Z",
@@ -767,9 +767,9 @@
       "app_store_url": "https://apps.apple.com/jp/app/relaychat-%E3%83%AA%E3%83%AC%E3%83%BC%E3%83%81%E3%83%A3%E3%83%83%E3%83%88-%E3%82%AA%E3%83%95%E3%83%A9%E3%82%A4%E3%83%B3%E4%BC%9A%E8%A9%B1/id6749299283?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/3a/63/2a/3a632a93-428b-f0d0-1c60-7161779d06d6/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/09/3f/1c/093f1c55-e637-2361-ef9c-c26bee077cf5/6.9inc.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/63/9f/59/639f59d2-f5b1-a96b-940d-718e55c7a0bb/6.9inc.003.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/22/57/ac/2257ac24-83f0-fc99-5bab-76a632df5564/6.9inc.002.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/09/3f/1c/093f1c55-e637-2361-ef9c-c26bee077cf5/6.9inc.001.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/63/9f/59/639f59d2-f5b1-a96b-940d-718e55c7a0bb/6.9inc.003.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/22/57/ac/2257ac24-83f0-fc99-5bab-76a632df5564/6.9inc.002.jpeg/1242x0bb.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -804,9 +804,9 @@
       "app_store_url": "https://apps.apple.com/jp/app/%E3%82%BC%E3%83%AA%E3%83%BC%E3%82%BB%E3%82%A4%E3%83%A0%E3%83%91%E3%82%BA%E3%83%AB/id6747354292?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/9a/a0/34/9aa034b0-e88f-cdcf-a05d-37ed7ec4f9ac/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/91/98/09/919809df-77ad-2296-eba7-bcd760816417/6.9inc.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/65/60/9a/65609a3b-efa7-51e6-1201-63fc1914f2c2/6.9inc.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/aa/fa/c8/aafac83d-ff84-89af-f2ec-b89e83a2c5ed/6.9inc.003.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/91/98/09/919809df-77ad-2296-eba7-bcd760816417/6.9inc.001.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/65/60/9a/65609a3b-efa7-51e6-1201-63fc1914f2c2/6.9inc.002.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/aa/fa/c8/aafac83d-ff84-89af-f2ec-b89e83a2c5ed/6.9inc.003.jpeg/1242x0bb.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -843,9 +843,9 @@
       "app_store_url": "https://apps.apple.com/jp/app/%E3%83%95%E3%83%81%E3%83%89%E3%83%AA-%E8%83%8C%E6%99%AF%E9%80%8F%E9%81%8E%E3%81%A8%E7%B8%81%E5%8F%96%E3%82%8A/id6748528617?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/34/e2/c0/34e2c037-6a37-88b8-c92f-8bcd23fa8ce1/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/1c/8a/b4/1c8ab470-560c-f320-f702-404454f49c6a/6.9inc.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4d/97/de/4d97de6b-3d0b-ebdf-237f-75af4078a33b/6.9inc.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/4f/b5/81/4fb581a6-ed4a-dd93-3539-aeb0b6921d3a/6.9inc.003.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/1c/8a/b4/1c8ab470-560c-f320-f702-404454f49c6a/6.9inc.001.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4d/97/de/4d97de6b-3d0b-ebdf-237f-75af4078a33b/6.9inc.002.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/4f/b5/81/4fb581a6-ed4a-dd93-3539-aeb0b6921d3a/6.9inc.003.jpeg/1242x0bb.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -880,9 +880,9 @@
       "app_store_url": "https://apps.apple.com/jp/app/mono-%E3%81%8A%E8%BF%8E%E3%81%88%E3%81%97%E3%81%9F%E5%96%9C%E3%81%B3%E3%82%92%E5%88%86%E3%81%8B%E3%81%A1%E5%90%88%E3%81%86%E3%82%A2%E3%83%97%E3%83%AA/id6743043894?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/bf/84/3a/bf843a84-e509-1227-cd86-18a411b9402e/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a7/60/9b/a7609b31-6ec7-69ec-e8ea-4a47e10901d6/6.9inc.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a6/7d/e7/a67de758-da5e-e7ba-03c3-2b4e5ab2a7de/6.9inc.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fa/f2/d0/faf2d0de-84c3-f691-0aaf-f98d2625376f/6.9inc.003.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a7/60/9b/a7609b31-6ec7-69ec-e8ea-4a47e10901d6/6.9inc.001.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a6/7d/e7/a67de758-da5e-e7ba-03c3-2b4e5ab2a7de/6.9inc.002.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fa/f2/d0/faf2d0de-84c3-f691-0aaf-f98d2625376f/6.9inc.003.jpeg/1242x0bb.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -917,9 +917,9 @@
       "app_store_url": "https://apps.apple.com/jp/app/%E6%97%AC%E3%81%AE%E3%81%8A%E9%AD%9A%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%80%E3%83%BC/id6746123337?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4d/2a/9b/4d2a9bc5-d47a-9f96-a0bd-14a843578175/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/79/8c/fa/798cfa21-5f83-758b-2ce1-ffc9d5610e84/Apple_iPhone_16_Pro_Max_Screenshot_1.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/86/9a/f5/869af5ac-81fb-7b03-8bcf-258d5befb6df/Apple_iPhone_16_Pro_Max_Screenshot_2.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/51/b3/9e/51b39ed0-fd09-6510-fbba-f53554492a28/Apple_iPhone_16_Pro_Max_Screenshot_3.png/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/79/8c/fa/798cfa21-5f83-758b-2ce1-ffc9d5610e84/Apple_iPhone_16_Pro_Max_Screenshot_1.png/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/86/9a/f5/869af5ac-81fb-7b03-8bcf-258d5befb6df/Apple_iPhone_16_Pro_Max_Screenshot_2.png/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/51/b3/9e/51b39ed0-fd09-6510-fbba-f53554492a28/Apple_iPhone_16_Pro_Max_Screenshot_3.png/1242x0bb.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -954,9 +954,9 @@
       "app_store_url": "https://apps.apple.com/jp/app/music-snapshot-%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AE%E9%9F%B3%E6%A5%BD%E3%82%92%E4%B8%80%E6%9E%9A%E3%81%AB/id6605937062?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/eb/e4/76/ebe476be-e8ba-e61a-6c37-0e385fe664e2/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/7a/59/31/7a593168-0151-db12-e8ac-f8723d8267c8/6.5inch.004.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/43/5d/dc/435ddcfa-cddb-e423-9aa6-82e038044a38/6.5inch.005.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/88/d7/c0/88d7c009-01c2-7d45-eee7-c29f5d7179bd/6.5inch.006.png/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/7a/59/31/7a593168-0151-db12-e8ac-f8723d8267c8/6.5inch.004.png/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/43/5d/dc/435ddcfa-cddb-e423-9aa6-82e038044a38/6.5inch.005.png/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/88/d7/c0/88d7c009-01c2-7d45-eee7-c29f5d7179bd/6.5inch.006.png/1242x0bb.webp"
       ],
       "ipad_screenshots": [],
       "price": "¥100",
@@ -991,10 +991,10 @@
       "app_store_url": "https://apps.apple.com/jp/app/%E3%83%90%E3%83%BC%E3%82%B9%E3%83%87%E3%83%BC%E3%83%A0%E3%83%BC%E3%83%B3/id6737449860?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/db/fd/fb/dbfdfb32-a4b2-8cad-b8d7-1131e4ea7d24/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/34/d9/22/34d922ba-84ec-f29b-4db3-80da05f06f5c/6.9inc.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/3e/7a/c7/3e7ac711-25c4-d9ab-3c49-94c825984083/6.9inc.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/79/e1/fc/79e1fc59-45c3-04bf-b4cc-e591762b9ee2/6.9inc.003.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/02/03/0e/02030ef2-8515-0a08-e100-cc91cf279510/6.9inc.004.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/34/d9/22/34d922ba-84ec-f29b-4db3-80da05f06f5c/6.9inc.001.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/3e/7a/c7/3e7ac711-25c4-d9ab-3c49-94c825984083/6.9inc.002.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/79/e1/fc/79e1fc59-45c3-04bf-b4cc-e591762b9ee2/6.9inc.003.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/02/03/0e/02030ef2-8515-0a08-e100-cc91cf279510/6.9inc.004.jpeg/1242x0bb.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -1068,16 +1068,16 @@
       "name": "旅行思い出マップ - 旅の記憶を、地図に描く",
       "bundle_id": "com.tsuzuki817.OmoideMap",
       "app_store_url": "https://apps.apple.com/jp/app/%E6%97%85%E8%A1%8C%E6%80%9D%E3%81%84%E5%87%BA%E3%83%9E%E3%83%83%E3%83%97-%E6%97%85%E3%81%AE%E8%A8%98%E6%86%B6%E3%82%92-%E5%9C%B0%E5%9B%B3%E3%81%AB%E6%8F%8F%E3%81%8F/id6478291625?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ec/57/f1/ec57f198-0363-bf4c-1d6f-7725bd89c3f9/AppIcon-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d1/f6/2b/d1f62b13-b919-10a7-7549-3401bc18e1e3/AppIcon-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/65/dd/95/65dd9551-c62f-7e8d-eb97-df73849c3e74/6.5inch.017.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/67/fd/77/67fd77b6-41a1-02d1-5e55-1fc2123811ea/6.5inch.018.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a5/d4/fe/a5d4fe9d-de68-c782-9a73-30f3a78feccb/6.5inch.019.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/53/9f/76/539f76a5-5c91-524f-1169-611e741c43d5/6.5inch.020.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/50/6e/fe/506efed2-8d44-e650-5486-3da1758d6b9c/6.5inch.021.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ea/d3/94/ead394a9-3b31-235b-eb4c-8acfca6a0aaf/6.5inch.022.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/69/2e/6d/692e6db9-92a6-ff56-138f-d7e8bdd91b79/6.5inch.023.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/28/ab/f6/28abf69f-7092-a76f-684a-e450978d079a/6.5inch.024.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/65/dd/95/65dd9551-c62f-7e8d-eb97-df73849c3e74/6.5inch.017.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/67/fd/77/67fd77b6-41a1-02d1-5e55-1fc2123811ea/6.5inch.018.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a5/d4/fe/a5d4fe9d-de68-c782-9a73-30f3a78feccb/6.5inch.019.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/53/9f/76/539f76a5-5c91-524f-1169-611e741c43d5/6.5inch.020.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/50/6e/fe/506efed2-8d44-e650-5486-3da1758d6b9c/6.5inch.021.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ea/d3/94/ead394a9-3b31-235b-eb4c-8acfca6a0aaf/6.5inch.022.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/69/2e/6d/692e6db9-92a6-ff56-138f-d7e8bdd91b79/6.5inch.023.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/28/ab/f6/28abf69f-7092-a76f-684a-e450978d079a/6.5inch.024.jpeg/1242x0bb.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -1087,13 +1087,13 @@
         "写真／ビデオ"
       ],
       "primary_genre": "Travel",
-      "rating": 4.63304,
-      "rating_count": 575,
-      "version": "1.42.0",
+      "rating": 4.61477,
+      "rating_count": 623,
+      "version": "1.46.0",
       "release_date": "2024-02-25T08:00:00Z",
-      "current_version_release_date": "2026-03-11T23:54:06Z",
+      "current_version_release_date": "2026-06-05T16:37:54Z",
       "description": "12万ダウンロード突破！\n写真をパズルのように切り取って地図に記録することができるアプリ！\n\n47都道府県を埋めるだけでなく、北海道179市町村、東京都62市区町村のマップもあるからディープなマップを作れちゃう！\n\n主な機能\n□ 日本、アジア、北海道、東京から好きなマップを作ろう！\n□ 都道府県の形に写真を切り取って地図に貼り付けよう！\n□ 友達や家族と一緒に思い出マップを共同編集できるマップリンクでシェアしよう！\n□ 投稿した写真にコメントして振り返ろう！\n\nひとりでも複数人でも楽しめるよ！\n\n\n□ その他情報\n・利用規約\nhttps://tsuzukit.com/legal/terms-of-service.html\n\n・プライバシーポリシー\nhttps://tsuzukit.com/legal/privacy-policy.html\n\n・特定商取引法に基づく表示\nhttps://tsuzukit.com/legal/commercial-law.html",
-      "release_notes": "茨城県追加！（44市町村）\n訪問機能が登場！（サポーター限定）\n  ・同じ場所への訪問を記録\n  ・訪問ごとに写真を整理\n  ・マップに表示する訪問を選択\n\nいつもご利用いただきありがとうございます！",
+      "release_notes": "【v1.46.0】\n\n■ 青森県マップを追加（40市町村）\n弘前城や奥入瀬渓流、ねぶた祭、白神山地など青森の思い出を地図に残せるようになりました。\n\nいつもご利用いただきありがとうございます！",
       "content_advisory_rating": "17+",
       "minimum_os_version": "17.0",
       "developer_name": "Ryo Tsudukihashi",
@@ -1376,8 +1376,8 @@
         "ユーティリティ"
       ],
       "primary_genre": "Productivity",
-      "rating": 3.85714,
-      "rating_count": 14,
+      "rating": 3.93333,
+      "rating_count": 15,
       "version": "1.3.1",
       "release_date": "2022-09-26T07:00:00Z",
       "current_version_release_date": "2026-01-30T16:58:44Z",
@@ -1458,8 +1458,8 @@
         "ライフスタイル"
       ],
       "primary_genre": "Photo & Video",
-      "rating": 4.54839,
-      "rating_count": 31,
+      "rating": 4.58824,
+      "rating_count": 34,
       "version": "1.0.2",
       "release_date": "2022-05-23T07:00:00Z",
       "current_version_release_date": "2025-07-16T09:47:40Z",
@@ -1499,8 +1499,8 @@
         "写真／ビデオ"
       ],
       "primary_genre": "Music",
-      "rating": 3.45833,
-      "rating_count": 24,
+      "rating": 3.42308,
+      "rating_count": 26,
       "version": "1.2.0",
       "release_date": "2022-03-04T08:00:00Z",
       "current_version_release_date": "2022-03-27T22:10:53Z",
@@ -1541,8 +1541,8 @@
         "ユーティリティ"
       ],
       "primary_genre": "Productivity",
-      "rating": 4.25702,
-      "rating_count": 463,
+      "rating": 4.26124,
+      "rating_count": 467,
       "version": "2.1.0",
       "release_date": "2021-12-05T08:00:00Z",
       "current_version_release_date": "2026-02-07T21:18:46Z",
@@ -1664,8 +1664,8 @@
         "グラフィック／デザイン"
       ],
       "primary_genre": "Photo & Video",
-      "rating": 4.48718,
-      "rating_count": 234,
+      "rating": 4.48935,
+      "rating_count": 235,
       "version": "1.18.0",
       "release_date": "2020-05-11T07:00:00Z",
       "current_version_release_date": "2023-07-11T13:22:53Z",
@@ -1726,11 +1726,11 @@
       "app_store_url": "https://apps.apple.com/jp/app/kimochi-%E6%B0%97%E5%88%86%E3%83%88%E3%83%A9%E3%83%83%E3%82%AB%E3%83%BC/id6762499180?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/5c/fc/2d/5cfc2d68-35eb-8586-04bd-57ff13b3884f/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/05/cd/ae/05cdae5b-9fe7-91ff-e532-65fb2ff4b5c6/01_Home_Top.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0f/8e/3c/0f8e3cbf-640c-833e-8ffa-fbcfbd43d305/03_MoodRecord_Initial.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/02/73/be/0273be3b-78ac-220c-ad41-d9a68eadbcec/03_MoodRecord_TagsStep.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ba/01/d1/ba01d121-cef7-d75f-b0bf-582ee6db614c/04_Calendar_Bottom.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d8/49/98/d8499808-c137-b602-9451-8cd87309f062/05_Insights_Bottom.png/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/05/cd/ae/05cdae5b-9fe7-91ff-e532-65fb2ff4b5c6/01_Home_Top.png/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0f/8e/3c/0f8e3cbf-640c-833e-8ffa-fbcfbd43d305/03_MoodRecord_Initial.png/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/02/73/be/0273be3b-78ac-220c-ad41-d9a68eadbcec/03_MoodRecord_TagsStep.png/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ba/01/d1/ba01d121-cef7-d75f-b0bf-582ee6db614c/04_Calendar_Bottom.png/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d8/49/98/d8499808-c137-b602-9451-8cd87309f062/05_Insights_Bottom.png/1242x0bb.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -1762,11 +1762,11 @@
       "app_store_url": "https://apps.apple.com/jp/app/flowerlens-%E8%8A%B1ai%E5%9B%B3%E9%91%91/id6762043194?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/39/b6/be/39b6be0b-2a25-8294-9b91-755df964fe9c/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/15/c8/bd/15c8bdd2-f2fd-bf38-84a8-f8e31c74da61/FlowerLens.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e4/2f/29/e42f29e6-b9b9-8f11-f6aa-b32ede0d1f89/FlowerLens.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/74/da/43/74da4362-ab9a-0aaf-29fe-5a6bdaa2dbcb/FlowerLens.003.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/be/24/47/be244786-10e1-d9c7-5df0-6d7c45ffb946/FlowerLens.004.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/2c/25/9f/2c259fa6-8419-91b5-59f4-bd09aa545a4a/FlowerLens.005.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/15/c8/bd/15c8bdd2-f2fd-bf38-84a8-f8e31c74da61/FlowerLens.001.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e4/2f/29/e42f29e6-b9b9-8f11-f6aa-b32ede0d1f89/FlowerLens.002.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/74/da/43/74da4362-ab9a-0aaf-29fe-5a6bdaa2dbcb/FlowerLens.003.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/be/24/47/be244786-10e1-d9c7-5df0-6d7c45ffb946/FlowerLens.004.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/2c/25/9f/2c259fa6-8419-91b5-59f4-bd09aa545a4a/FlowerLens.005.jpeg/1242x0bb.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -1798,11 +1798,11 @@
       "app_store_url": "https://apps.apple.com/jp/app/%E3%82%81%E3%81%8F%E3%82%8B%E3%82%93-%E6%97%A5%E3%82%81%E3%81%8F%E3%82%8A%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%80%E3%83%BC/id6761456691?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f6/06/60/f60660eb-3724-016f-d856-b278b709c8fd/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b7/20/ed/b720ed1c-7a28-7346-fe10-b68e1fd7e319/_U6372_U308b_U30936.5inch.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/58/e7/19/58e719c4-98ad-4c91-9bc0-e20f4bce7000/_U6372_U308b_U30936.5inch.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4d/5b/fa/4d5bfabc-d2fe-4f21-9d34-99e5f3dfe5ce/_U6372_U308b_U30936.5inch.004.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9c/58/81/9c5881be-4581-6b9e-8ff2-631a9e0110e4/_U6372_U308b_U30936.5inch.003.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a8/43/27/a843275a-833e-7d8b-0962-68feeb67825c/_U6372_U308b_U30936.5inch.005.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b7/20/ed/b720ed1c-7a28-7346-fe10-b68e1fd7e319/_U6372_U308b_U30936.5inch.001.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/58/e7/19/58e719c4-98ad-4c91-9bc0-e20f4bce7000/_U6372_U308b_U30936.5inch.002.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4d/5b/fa/4d5bfabc-d2fe-4f21-9d34-99e5f3dfe5ce/_U6372_U308b_U30936.5inch.004.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9c/58/81/9c5881be-4581-6b9e-8ff2-631a9e0110e4/_U6372_U308b_U30936.5inch.003.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a8/43/27/a843275a-833e-7d8b-0962-68feeb67825c/_U6372_U308b_U30936.5inch.005.jpeg/1242x0bb.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -1812,8 +1812,8 @@
         "ユーティリティ"
       ],
       "primary_genre": "Lifestyle",
-      "rating": 4.75,
-      "rating_count": 4,
+      "rating": 4.8,
+      "rating_count": 5,
       "version": "1.0.1",
       "release_date": "2026-04-11T07:00:00Z",
       "current_version_release_date": "2026-04-16T16:27:14Z",
@@ -1834,11 +1834,11 @@
       "app_store_url": "https://apps.apple.com/jp/app/%E3%81%9A%E3%82%93%E3%81%A0%E3%82%82%E3%82%93%E3%81%AE%E9%83%A8%E5%B1%8B-%E3%81%9A%E3%82%93%E3%81%A0%E3%82%82%E3%82%93%E3%81%AB%E8%A9%B1%E3%82%92%E8%81%B4%E3%81%84%E3%81%A6%E3%82%82%E3%82%89%E3%81%86/id6759167301?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4e/b9/61/4eb96123-6878-e8d9-fceb-437aa54074b9/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/89/d1/be/89d1bee4-d701-a97f-ccc9-f83932cab016/zun6.5inch.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a8/ae/cb/a8aecb06-3120-0931-c1fc-bd65da3a9a06/zun6.5inch.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/09/65/6c/09656c08-764d-9827-e395-87df5d753564/zun6.5inch.003.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/5f/8c/2d/5f8c2d4f-2dcb-9351-78e5-cf30a69d0696/zun6.5inch.004.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/73/0c/da/730cda0d-6d50-bbda-d62f-cad0f7fd543e/zun6.5inch.005.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/89/d1/be/89d1bee4-d701-a97f-ccc9-f83932cab016/zun6.5inch.001.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a8/ae/cb/a8aecb06-3120-0931-c1fc-bd65da3a9a06/zun6.5inch.002.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/09/65/6c/09656c08-764d-9827-e395-87df5d753564/zun6.5inch.003.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/5f/8c/2d/5f8c2d4f-2dcb-9351-78e5-cf30a69d0696/zun6.5inch.004.jpeg/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/73/0c/da/730cda0d-6d50-bbda-d62f-cad0f7fd543e/zun6.5inch.005.jpeg/1242x0bb.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -1849,7 +1849,7 @@
       ],
       "primary_genre": "Health & Fitness",
       "rating": 1,
-      "rating_count": 2,
+      "rating_count": 3,
       "version": "1.0",
       "release_date": "2026-04-09T07:00:00Z",
       "current_version_release_date": "2026-04-09T22:20:05Z",
@@ -1861,6 +1861,74 @@
       "seller_name": "TsuzuKit",
       "google_play_url": "",
       "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4e/b9/61/4eb96123-6878-e8d9-fceb-437aa54074b9/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/60x60bb.jpg",
+      "download_count": 0
+    },
+    {
+      "bundle_id": "com.tsuzukit.HomeKeep",
+      "name": "フィルター交換 HomeKeep",
+      "app_store_url": "https://apps.apple.com/jp/app/%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF%E3%83%BC%E4%BA%A4%E6%8F%9B-homekeep/id6778079517?uo=4",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/45/8b/66/458b66f1-26f2-c545-01a8-285876bfc790/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/84/b4/4d/84b44d88-35fb-ba6f-5536-d8d5e0cbf5fb/01.png/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/5c/32/fd/5c32fd09-af87-e442-5c28-b1ffb8494482/02.png/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/8c/c8/a7/8cc8a76f-88c6-5a4d-e08a-4399c6db5a8d/03.png/1242x0bb.webp"
+      ],
+      "ipad_screenshots": [],
+      "price": "無料",
+      "currency": "JPY",
+      "genres": [
+        "ライフスタイル",
+        "ユーティリティ"
+      ],
+      "primary_genre": "Lifestyle",
+      "rating": 0,
+      "rating_count": 0,
+      "version": "1.0",
+      "release_date": "2026-06-12T07:00:00Z",
+      "current_version_release_date": "2026-06-12T07:53:50Z",
+      "description": "エアコンや浄水器のフィルター、交換時期を忘れていませんか？\nHomeKeepは、家電フィルターの交換サイクルを管理して通知でお知らせする無料アプリです。\n\n■ こんなお悩みを解決\n・エアコンや空気清浄機のフィルター交換をつい忘れる\n・浄水器のカートリッジをいつ替えたか覚えていない\n・複数の家電のフィルターを管理しきれない\n・気づいたら何ヶ月も交換していなかった\n\n■ 主な機能\n【家電ごとにフィルターを管理】\nエアコン、空気清浄機、浄水器、加湿器、レンジフード、冷蔵庫、食洗機、掃除機など。カテゴリを選ぶだけで推奨の交換サイクルが自動でセットされます。\n\n【交換が近い順に一覧表示】\n登録したフィルターを交換日が近い順に表示。「あと何日」が一目で分かります。\n\n【交換時期を通知】\n交換日が近づくと通知でリマインド。7日前と当日にお知らせします。\n\n【ワンタップで交換記録】\n交換したらボタン一つで記録。次の交換日が自動で再設定されます。\n\n【写真・型番・購入リンクを保存】\n家電の写真や型番を登録。「同じものを買う」リンクから次回もすぐ購入できます。\n\n【ホーム画面ウィジェット】\n次に交換が近いフィルターをウィジェットで確認。アプリを開かなくても分かります。\n\n【季節のメンテナンス】\n雨樋掃除や煙感知器の電池交換など、季節ごとの住まいのお手入れもチェックリストで管理できます。\n\n■ こんな方におすすめ\n・エアコンや空気清浄機をよく使う方\n・浄水器・ウォーターサーバーをお使いの方\n・アレルギーや小さなお子さんがいて空気・水の質にこだわる方\n・家電を長く大切に使いたい方\n・フィルター交換をつい後回しにしてしまう方\n\n■ 料金プラン\n【無料版】\n・フィルター3件まで登録\n・交換通知\n・ウィジェット\n\n【プレミアム版】\n・フィルターの登録無制限\n・型番・購入リンクの保存\n・季節のメンテナンス\n・広告非表示\n\nきれいな空気と水は、フィルターから。HomeKeepで交換のタイミングを逃さない暮らしを。\n\n■ リンク\n・サポート: https://tsuzukit.com/contact/\n・利用規約: https://tsuzukit.com/legal/terms-of-service.html\n・プライバシーポリシー: https://tsuzukit.com/legal/privacy-policy.html",
+      "release_notes": null,
+      "content_advisory_rating": "12+",
+      "minimum_os_version": "17.0",
+      "developer_name": "Ryo Tsudukihashi",
+      "seller_name": "TsuzuKit",
+      "id": 6778079517,
+      "google_play_url": null,
+      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/45/8b/66/458b66f1-26f2-c545-01a8-285876bfc790/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "download_count": 0
+    },
+    {
+      "bundle_id": "com.tsuzukit.TankMinderApp",
+      "name": "水槽管理・水替え通知 TankMinder",
+      "app_store_url": "https://apps.apple.com/jp/app/%E6%B0%B4%E6%A7%BD%E7%AE%A1%E7%90%86-%E6%B0%B4%E6%9B%BF%E3%81%88%E9%80%9A%E7%9F%A5-tankminder/id6778477412?uo=4",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/bf/a9/53/bfa9531d-241e-2c42-3622-28b6029b76cd/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/68/ef/74/68ef74bb-4370-5848-bb19-7f35102b36a0/001.png/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/2b/2e/62/2b2e6271-92b6-10a0-e071-d77e6abfb1af/002.png/1242x0bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4c/b7/a3/4cb7a318-9842-b43e-8cc6-0fe2b1594064/003.png/1242x0bb.webp"
+      ],
+      "ipad_screenshots": [],
+      "price": "無料",
+      "currency": "JPY",
+      "genres": [
+        "ライフスタイル",
+        "ユーティリティ"
+      ],
+      "primary_genre": "Lifestyle",
+      "rating": 0,
+      "rating_count": 0,
+      "version": "1.0",
+      "release_date": "2026-06-11T07:00:00Z",
+      "current_version_release_date": "2026-06-11T23:49:57Z",
+      "description": "水槽のお世話、もう忘れない。\n\nTankMinderは、アクアリウムの定期的なお世話をやさしくお知らせするリマインダーアプリです。水替え・フィルター掃除・水質チェック・水草トリミングなど、忘れると水質悪化や魚の不調につながるお世話を、写真付きで登録して通知でリマインドします。\n\n■ こんな方に\n・水替えやフィルター掃除をつい忘れてしまう\n・複数の水槽を管理している\n・大切な魚たちを元気に育てたい\n・初心者で「いつ何をすればいいか」が知りたい\n\n■ 主な機能\n◎ お世話のリマインド\nタスクごとに最適な周期を自動セット。予定が近づくと通知でそっとお知らせします。見逃しても完了するまでリマインド。\n\n◎ 水質記録＆トレンド\npH・水温・アンモニア・亜硝酸・硝酸・GH・KHを記録。折れ線グラフで水質の変化を見守れます。測った項目だけ入力すればOK。\n\n◎ 写真付きで管理\n魚や水槽の写真を登録（背景は自動で切り抜き）。一目でどの水槽かわかります。\n\n◎ ホーム画面ウィジェット\n次にお世話する水槽をウィジェットで表示。\n\n◎ 今日の豆知識\nアクアリウムの実用＆おもしろ知識を毎日お届け。\n\n無料で使えます（登録3件まで）。プレミアムで無制限・広告非表示に。\n\n水槽のお世話を、もっと楽しく、もっとラクに。\n\n■ リンク\n・サポート: https://tsuzukit.com/contact/\n・利用規約: https://tsuzukit.com/legal/terms-of-service.html\n・プライバシーポリシー: https://tsuzukit.com/legal/privacy-policy.html",
+      "release_notes": null,
+      "content_advisory_rating": "12+",
+      "minimum_os_version": "17.0",
+      "developer_name": "Ryo Tsudukihashi",
+      "seller_name": "TsuzuKit",
+      "id": 6778477412,
+      "google_play_url": null,
+      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/bf/a9/53/bfa9531d-241e-2c42-3622-28b6029b76cd/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
       "download_count": 0
     }
   ]
