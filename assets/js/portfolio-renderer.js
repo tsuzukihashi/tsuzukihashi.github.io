@@ -57,7 +57,12 @@
    * 標準カード（iOS のみ）を生成
    */
   function renderStandardCard(app) {
-    var price = (app.price === 0 || app.formatted_price === '無料') ? 'Free' : app.formatted_price;
+    var price;
+    if (app.price === 0 || app.price === '0' || app.price === '無料' || app.formatted_price === '無料') {
+      price = 'Free';
+    } else {
+      price = app.formatted_price || app.price || 'Free';
+    }
     return '<a href="' + app.app_store_url + '" target="_blank" class="app-card-store">' +
       '<div class="app-header">' +
         '<div class="app-icon-store">' +

@@ -1,4 +1,6 @@
-/* Minimalist Black & White Design - Inspired by NOT A HOTEL & Kyu Camera */
+/* Warm Hand-drawn Design - inspired by the portrait illustration */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Saira+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700;800;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,15 +8,41 @@
 }
 
 :root {
-    --color-primary: #000;
-    --color-secondary: #666;
-    --color-text: #1a1a1a;
-    --color-text-light: #999;
-    --color-background: #fff;
-    --color-border: #e0e0e0;
-    --color-accent: #fafafa;
+    /* Dark palette (synced with memories-tech.css) */
+    --color-background: #050507;
+    --color-surface: #0f0f14;
+    --color-surface-2: #17171f;
+    --color-accent: #0b0b10;
+    --color-primary: #ffffff;
+    --color-text: rgba(255, 255, 255, 0.84);
+    --color-secondary: rgba(255, 255, 255, 0.60);
+    --color-text-light: rgba(255, 255, 255, 0.42);
+    --color-border: rgba(255, 255, 255, 0.12);
+    --color-border-strong: rgba(255, 255, 255, 0.28);
 
-    --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    /* Neon accents */
+    --neon-cyan: #1ee8da;
+    --neon-purple: #a855f7;
+    --neon-pink: #ff4d8d;
+    --neon-blue: #5b8cff;
+    --grad-neon: linear-gradient(120deg, #a855f7 0%, #1ee8da 100%);
+    --grad-neon-2: linear-gradient(120deg, #ff4d8d 0%, #a855f7 50%, #1ee8da 100%);
+
+    /* Legacy pastel aliases -> neon (kept for compatibility) */
+    --color-sun: #ffc107;
+    --color-sun-soft: rgba(255, 193, 7, 0.18);
+    --color-sky: #1ee8da;
+    --color-sky-soft: rgba(30, 232, 218, 0.16);
+    --color-pink: #ff4d8d;
+    --color-pink-soft: rgba(255, 77, 141, 0.16);
+
+    /* Typography */
+    --font-main: 'Inter', 'Noto Sans JP', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-display: 'Saira Condensed', 'Anton', 'Noto Sans JP', sans-serif;
+    --font-impact: 'Anton', 'Saira Condensed', 'Noto Sans JP', sans-serif;
+    --font-accent: 'Saira Condensed', 'Inter', sans-serif;
+    --font-family: 'Inter', 'Noto Sans JP', -apple-system, BlinkMacSystemFont, sans-serif;
+
     --font-size-xs: 0.75rem;
     --font-size-sm: 0.875rem;
     --font-size-base: 1.0625rem;
@@ -33,9 +61,23 @@
     --spacing-xl: 5rem;
     --spacing-2xl: 8rem;
     --spacing-3xl: 12rem;
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 2rem;
+    --space-lg: 3rem;
+    --space-xl: 5rem;
+    --space-2xl: 8rem;
 
-    --border-radius: 0;
+    --border-radius: 14px;
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 14px;
+    --radius-xl: 22px;
+
     --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-normal: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 body {
@@ -44,8 +86,10 @@ body {
     line-height: 1.8;
     color: var(--color-text);
     background-color: var(--color-background);
-    font-weight: 300;
-    letter-spacing: -0.01em;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+    background-size: 28px 28px;
+    font-weight: 400;
+    letter-spacing: 0.01em;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -2758,8 +2802,172 @@ img:not(.profile-image) {
         justify-content: center;
         margin-top: var(--spacing-md);
     }
-    
+
     .footer .social-links {
         justify-content: center;
     }
+}
+
+/* ============================================================
+   DARK EDITORIAL THEME — overrides for blog & app pages
+   (mirrors memories-tech.css so style.css pages match the site)
+   ============================================================ */
+
+body { font-family: var(--font-family); }
+
+/* Display headings → bold condensed italic */
+h1, h2, h3, h4,
+.nav-logo,
+.hero-title-main,
+.section-title,
+.portfolio-title,
+.blog-title,
+.legal-title,
+.app-detail-title,
+.work-title,
+.app-featured-title,
+.post-featured-title,
+.post-card-title,
+.feature-title,
+.contact-title {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+}
+
+/* Nav (dark translucent) */
+.nav { background: rgba(5, 5, 7, 0.6); -webkit-backdrop-filter: blur(18px); backdrop-filter: blur(18px); }
+.nav.scrolled { background: rgba(5, 5, 7, 0.9); border-bottom-color: var(--color-border); }
+.nav-link { color: var(--color-secondary); }
+.nav-link:hover, .nav-link.active { color: var(--color-primary); }
+.nav-link::after { background: var(--grad-neon); height: 2px; }
+
+/* Buttons → neon, pill-shaped */
+.btn-primary, .btn-secondary, .google-form-link, .app-store-link { border-radius: 999px; font-weight: 700; }
+.btn-primary, .google-form-link, .app-store-link {
+    background: var(--grad-neon);
+    color: #04040a;
+    border: none;
+}
+.btn-primary:hover, .google-form-link:hover, .app-store-link:hover {
+    color: #04040a;
+    box-shadow: 0 10px 30px rgba(30, 232, 218, 0.4);
+    transform: translateY(-2px);
+}
+.btn-secondary { background: transparent; border: 2px solid var(--color-border-strong); color: var(--color-primary); }
+.btn-secondary:hover { background: transparent; border-color: var(--neon-cyan); color: var(--neon-cyan); }
+
+/* Cards → dark panels, neon hover */
+.work-item, .app-card, .related-app-item, .post-card, .faq-item,
+.contact-method, .tech-item, .achievement-item, .detail-card, .stat, .visual-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+}
+.work-item:hover, .app-card:hover, .related-app-item:hover, .post-card:hover {
+    border-color: var(--neon-cyan);
+    box-shadow: 0 24px 50px rgba(0, 0, 0, 0.5);
+}
+
+/* Image wells inside cards */
+.work-image, .app-card-image, .post-card-image, .app-featured-image,
+.post-featured-image, .related-app-placeholder, .app-placeholder,
+.post-placeholder, .work-placeholder { background: var(--color-surface-2); }
+
+/* Sections with hardcoded light backgrounds */
+.transferred-apps { background: var(--color-accent); }
+
+/* Tags / categories → neon chips */
+.app-tag, .transferred-tag, .post-category, .skill-badge, .app-detail-category {
+    background: var(--color-sky-soft);
+    color: var(--neon-cyan);
+    border-radius: 999px;
+}
+.tech-tag {
+    background: var(--grad-neon);
+    color: #04040a;
+    border-radius: 999px;
+}
+
+/* Feature check marks → neon */
+.feature-list li::before { color: var(--neon-cyan); }
+
+/* Links inside articles / legal → neon */
+.legal-section a, .contact-method-link, .related-app-link,
+.post-card-link, .work-link, .work-store, .newsletter-note a { color: var(--neon-cyan); }
+
+/* Info tables (legal / commercial law) → dark */
+.info-table { background: var(--color-surface); border-color: var(--color-border); }
+.info-label { background: var(--color-surface-2); color: var(--color-primary); border-right-color: var(--color-border); }
+.info-row { border-bottom-color: var(--color-border); }
+.contact-info { background: var(--color-surface); border-color: var(--color-border); }
+
+/* Skill progress bar → neon gradient */
+.skill-bar { background: var(--color-border); }
+.skill-progress { background: var(--grad-neon); }
+
+/* Status badges keep meaning but soften corners */
+.status-badge, .app-detail-status { border-radius: 999px; }
+
+/* Newsletter / dark CTA → dark surface */
+.newsletter { background: var(--color-surface); border-top: 1px solid var(--color-border); }
+.newsletter-title, .newsletter-description, .newsletter-note { color: var(--color-text); }
+
+/* Footer → dark with neon ribbon */
+.footer { background: var(--color-surface); color: var(--color-primary); position: relative; }
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: var(--grad-neon);
+}
+.footer-nav a, .footer-bottom p { color: var(--color-secondary); }
+.footer-nav a:hover { color: var(--neon-cyan); }
+
+/* Social links */
+.social-link { background: rgba(255, 255, 255, 0.05); color: var(--color-text); border: 1px solid var(--color-border); }
+.social-link:hover { background: rgba(30, 232, 218, 0.12); color: var(--neon-cyan); }
+
+/* Language dropdown (dormant) → dark */
+.lang-options, .lang-option { background: var(--color-surface); color: var(--color-text); }
+.lang-option:hover { background: rgba(255, 255, 255, 0.06); }
+
+/* Profile image ring (app/blog author avatars) */
+.profile-image { border: 3px solid var(--color-border); }
+.profile-image:hover { border-color: var(--neon-cyan); }
+
+/* Misc text */
+.development-story { color: var(--color-text); }
+
+/* ========== Motion: scroll reveals (blog & app pages) ========== */
+@keyframes revealUp { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: none; } }
+
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    .section-header,
+    .post-card,
+    .app-card,
+    .work-item,
+    .feature-item,
+    .tech-item,
+    .related-app-item,
+    .achievement-item,
+    .app-featured {
+      animation: revealUp 1s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 50%;
+    }
+  }
+}
+
+/* ========== Brand mark (placeholder logo — swap for final art at /assets/images/logo.svg) ========== */
+.nav-logo::before {
+  content: "";
+  display: inline-block;
+  width: 1.05em;
+  height: 1.05em;
+  margin-right: 0.45em;
+  vertical-align: -0.16em;
+  background: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%3E%3Cdefs%3E%3ClinearGradient%20id='g'%20x1='0'%20y1='0'%20x2='1'%20y2='1'%3E%3Cstop%20offset='0'%20stop-color='%23a855f7'/%3E%3Cstop%20offset='1'%20stop-color='%231ee8da'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20x='1.5'%20y='1.5'%20width='21'%20height='21'%20rx='6'%20fill='url(%23g)'/%3E%3Cpath%20d='M13%203.5%20L6.2%2013%20H10.3%20L8.9%2020.5%20L17.8%2010%20H13.6%20Z'%20fill='%23050507'/%3E%3C/svg%3E") no-repeat center / contain;
 }

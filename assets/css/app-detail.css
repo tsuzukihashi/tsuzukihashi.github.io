@@ -1,6 +1,6 @@
 /* ================================
-   App Detail Page - Monochrome Minimal Design
-   Inspired by NOT A HOTEL & Kyu Camera
+   App Detail Page - Dark Editorial Theme
+   Inspired by zoccon.me (neon-on-black)
    ================================ */
 
 /* ========== App Hero Section ========== */
@@ -34,7 +34,7 @@
 .app-icon {
   width: 150px;
   height: 150px;
-  border-radius: 0;
+  border-radius: var(--radius-lg, 24px);
   border: 1px solid var(--color-border);
 }
 
@@ -42,21 +42,23 @@
   position: absolute;
   top: -10px;
   right: -10px;
-  background: var(--color-primary);
-  color: var(--color-background);
+  background: var(--grad-neon);
+  color: #04040a;
   padding: 0.5rem 1rem;
-  border-radius: 0;
+  border-radius: 999px;
   font-size: 0.65rem;
-  font-weight: 300;
-  border: 1px solid var(--color-primary);
+  font-weight: 700;
+  border: none;
   animation: pulse 2s ease infinite;
   letter-spacing: 0.15em;
   text-transform: uppercase;
 }
 
 .app-title {
+  font-family: var(--font-display);
+  font-style: italic;
   font-size: clamp(2.5rem, 5vw, 3.5rem);
-  font-weight: 200;
+  font-weight: 800;
   color: var(--color-primary);
   margin-bottom: var(--space-md);
   animation: slideUp 0.8s ease 0.2s both;
@@ -83,19 +85,22 @@
 
 .badge {
   padding: 0.5rem 1.5rem;
-  background: var(--color-background);
-  border-radius: 0;
+  background: var(--color-sky-soft);
+  border-radius: 999px;
   font-size: 0.75rem;
-  font-weight: 300;
+  font-weight: 500;
   border: 1px solid var(--color-border);
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 
 .badge-downloads,
-.badge-rating,
 .badge-category {
-  color: var(--color-primary);
+  color: var(--neon-cyan);
+}
+
+.badge-rating {
+  color: var(--color-sun);
 }
 
 .app-cta {
@@ -114,9 +119,9 @@
 }
 
 .story-quote {
-  background: var(--color-background);
+  background: var(--color-surface);
   padding: var(--space-lg);
-  border-radius: 0;
+  border-radius: var(--radius-lg, 24px);
   margin-bottom: var(--space-lg);
   border: 1px solid var(--color-border);
 }
@@ -138,7 +143,7 @@
   left: 0;
   top: -10px;
   font-size: 3rem;
-  color: var(--color-border);
+  color: var(--neon-cyan);
   font-weight: 200;
 }
 
@@ -153,10 +158,10 @@
 .story-text.emphasis {
   font-size: 1.25rem;
   color: var(--color-primary);
-  font-weight: 300;
+  font-weight: 400;
   padding: var(--space-lg);
-  background: var(--color-accent);
-  border-radius: 0;
+  background: var(--color-surface-2);
+  border-radius: var(--radius-lg, 24px);
   text-align: center;
   border: 1px solid var(--color-border);
 }
@@ -171,9 +176,9 @@
 }
 
 .feature-card {
-  background: var(--color-background);
+  background: var(--color-surface);
   padding: var(--space-xl);
-  border-radius: 0;
+  border-radius: var(--radius-lg, 24px);
   border: 1px solid var(--color-border);
   transition: var(--transition-normal);
   opacity: 0;
@@ -188,18 +193,18 @@
 
 .feature-card:hover {
   transform: translateY(-4px);
-  border-color: var(--color-primary);
+  border-color: var(--color-border-strong);
 }
 
 .feature-icon {
   font-size: 2rem;
   margin-bottom: var(--space-md);
-  color: var(--color-primary);
+  color: var(--neon-cyan);
 }
 
 .feature-title {
   font-size: 1.125rem;
-  font-weight: 300;
+  font-weight: 600;
   color: var(--color-primary);
   margin-bottom: var(--space-sm);
   letter-spacing: 0.05em;
@@ -222,9 +227,9 @@
 }
 
 .tech-card {
-  background: var(--color-background);
+  background: var(--color-surface);
   padding: var(--space-xl);
-  border-radius: 0;
+  border-radius: var(--radius-lg, 24px);
   border: 1px solid var(--color-border);
   transition: var(--transition-normal);
   opacity: 0;
@@ -239,12 +244,12 @@
 
 .tech-card:hover {
   transform: translateY(-4px);
-  border-color: var(--color-primary);
+  border-color: var(--color-border-strong);
 }
 
 .tech-title {
   font-size: 1.125rem;
-  font-weight: 300;
+  font-weight: 600;
   color: var(--color-primary);
   margin-bottom: var(--space-sm);
   display: flex;
@@ -276,8 +281,8 @@
 .achievement-card {
   text-align: center;
   padding: var(--space-xl);
-  background: var(--color-background);
-  border-radius: 0;
+  background: var(--color-surface);
+  border-radius: var(--radius-lg, 24px);
   border: 1px solid var(--color-border);
   transition: var(--transition-normal);
   opacity: 0;
@@ -292,13 +297,19 @@
 
 .achievement-card:hover {
   transform: translateY(-8px);
-  border-color: var(--color-primary);
+  border-color: var(--color-border-strong);
 }
 
 .achievement-number {
+  font-family: var(--font-display);
+  font-style: italic;
   font-size: 3rem;
-  font-weight: 200;
-  color: var(--color-primary);
+  font-weight: 800;
+  background: var(--grad-neon);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: var(--neon-cyan);
   margin-bottom: 0.5rem;
   letter-spacing: -0.03em;
 }
@@ -306,7 +317,7 @@
 .achievement-label {
   font-size: 1rem;
   color: var(--color-primary);
-  font-weight: 300;
+  font-weight: 600;
   margin-bottom: var(--space-sm);
   letter-spacing: 0.05em;
 }
@@ -329,28 +340,28 @@
 }
 
 .review-card {
-  background: var(--color-background);
+  background: var(--color-surface);
   padding: var(--space-xl);
-  border-radius: 0;
+  border-radius: var(--radius-lg, 24px);
   border: 1px solid var(--color-border);
   transition: var(--transition-normal);
 }
 
 .review-card:hover {
   transform: translateY(-4px);
-  border-color: var(--color-primary);
+  border-color: var(--color-border-strong);
 }
 
 .review-rating {
-  color: var(--color-primary);
+  color: var(--color-sun);
   font-size: 1.125rem;
   margin-bottom: var(--space-sm);
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .review-title {
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 600;
   color: var(--color-primary);
   margin-bottom: var(--space-sm);
   letter-spacing: 0.05em;
@@ -365,9 +376,9 @@
 }
 
 .review-author {
-  color: var(--color-primary);
+  color: var(--color-text-light);
   font-size: 0.875rem;
-  font-weight: 300;
+  font-weight: 400;
   margin: 0;
   letter-spacing: 0.05em;
 }
@@ -380,9 +391,9 @@
 }
 
 .developer-message .message-content {
-  background: var(--color-background);
+  background: var(--color-surface);
   padding: var(--space-2xl);
-  border-radius: 0;
+  border-radius: var(--radius-lg, 24px);
   border: 1px solid var(--color-border);
 }
 
@@ -397,10 +408,10 @@
 .developer-message p.emphasis {
   font-size: 1.25rem;
   color: var(--color-primary);
-  font-weight: 300;
+  font-weight: 400;
   padding: var(--space-lg);
-  background: var(--color-accent);
-  border-radius: 0;
+  background: var(--color-surface-2);
+  border-radius: var(--radius-lg, 24px);
   margin: var(--space-lg) 0;
   border: 1px solid var(--color-border);
 }
@@ -413,7 +424,7 @@
 
 .signature-name {
   font-size: 1.25rem;
-  font-weight: 300;
+  font-weight: 600;
   color: var(--color-primary);
   margin-top: 0.5rem;
   letter-spacing: 0.05em;
@@ -423,8 +434,8 @@
 .download-cta {
   text-align: center;
   padding: var(--space-2xl);
-  background: var(--color-background);
-  border-radius: 0;
+  background: var(--color-surface);
+  border-radius: var(--radius-lg, 24px);
   border: 1px solid var(--color-border);
   max-width: 600px;
   margin: 0 auto;
@@ -438,6 +449,39 @@
   padding: 1rem 2.5rem;
   font-size: 1rem;
   letter-spacing: 0.1em;
+  background: var(--grad-neon);
+  color: #04040a;
+  border: none;
+  border-radius: 999px;
+  font-weight: 700;
+  transition: var(--transition-normal);
+}
+
+.btn-large:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(30, 232, 218, 0.28);
+}
+
+.app-cta .btn,
+.app-store-button .btn {
+  background: var(--grad-neon);
+  color: #04040a;
+  border: none;
+  border-radius: 999px;
+  font-weight: 700;
+  transition: var(--transition-normal);
+}
+
+.app-cta .btn:hover,
+.app-store-button .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(30, 232, 218, 0.28);
+}
+
+.apple-icon path,
+.apple-icon {
+  fill: currentColor;
+  color: #04040a;
 }
 
 .download-note {
@@ -461,8 +505,8 @@
   align-items: center;
   gap: var(--space-md);
   padding: var(--space-lg);
-  background: var(--color-background);
-  border-radius: 0;
+  background: var(--color-surface);
+  border-radius: var(--radius-lg, 24px);
   text-decoration: none;
   border: 1px solid var(--color-border);
   transition: var(--transition-normal);
@@ -470,31 +514,31 @@
 
 .related-app-card:hover {
   transform: translateY(-4px);
-  border-color: var(--color-primary);
+  border-color: var(--color-border-strong);
 }
 
 .related-app-icon {
   width: 60px;
   height: 60px;
-  border-radius: 0;
+  border-radius: var(--radius-md, 16px);
   flex-shrink: 0;
   border: 1px solid var(--color-border);
 }
 
 .related-app-icon.more-apps {
-  background: var(--color-primary);
+  background: var(--grad-neon);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-background);
+  color: #04040a;
   font-size: 1.5rem;
-  font-weight: 200;
-  border: 1px solid var(--color-primary);
+  font-weight: 700;
+  border: none;
 }
 
 .related-app-info h3 {
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 600;
   color: var(--color-primary);
   margin-bottom: 0.25rem;
   letter-spacing: 0.05em;

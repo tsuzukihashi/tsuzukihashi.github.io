@@ -25,7 +25,9 @@
 
 .contact-title {
   font-size: clamp(3rem, 6vw, 5rem);
-  font-weight: 200;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 800;
   line-height: 1.2;
   margin-bottom: var(--space-xl);
   letter-spacing: -0.04em;
@@ -50,9 +52,9 @@
 }
 
 .contact-card {
-  background: var(--color-background);
+  background: var(--color-surface);
   border: 1px solid var(--color-border);
-  border-radius: 0;
+  border-radius: var(--radius-md);
   padding: var(--space-2xl);
   text-align: center;
   transition: var(--transition-normal);
@@ -61,19 +63,19 @@
 
 .contact-card:hover {
   transform: translateY(-8px);
-  border-color: var(--color-primary);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.03);
+  border-color: var(--color-border-strong);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
 }
 
 .contact-card.primary {
-  background: var(--color-primary);
-  color: var(--color-background);
-  border-color: var(--color-primary);
+  background: var(--grad-neon);
+  color: #04040a;
+  border-color: transparent;
 }
 
 .contact-card.primary:hover {
-  background: var(--color-background);
-  color: var(--color-primary);
+  background: var(--grad-neon);
+  color: #04040a;
 }
 
 .contact-card-icon {
@@ -91,11 +93,11 @@
 }
 
 .contact-card.primary .contact-card-title {
-  color: var(--color-background);
+  color: #04040a;
 }
 
 .contact-card.primary:hover .contact-card-title {
-  color: var(--color-primary);
+  color: #04040a;
 }
 
 .contact-card-description {
@@ -107,33 +109,33 @@
 }
 
 .contact-card.primary .contact-card-description {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(4, 4, 10, 0.78);
 }
 
 .contact-card.primary:hover .contact-card-description {
-  color: var(--color-secondary);
+  color: rgba(4, 4, 10, 0.78);
 }
 
 .contact-card-link {
   display: inline-block;
   font-size: 0.875rem;
   font-weight: 300;
-  color: var(--color-primary);
+  color: var(--neon-cyan);
   text-decoration: none;
   margin-bottom: var(--space-md);
   transition: var(--transition-normal);
-  border-bottom: 1px solid var(--color-primary);
+  border-bottom: 1px solid var(--neon-cyan);
   letter-spacing: 0.02em;
 }
 
 .contact-card.primary .contact-card-link {
-  color: var(--color-background);
-  border-bottom-color: var(--color-background);
+  color: #04040a;
+  border-bottom-color: #04040a;
 }
 
 .contact-card.primary:hover .contact-card-link {
-  color: var(--color-primary);
-  border-bottom-color: var(--color-primary);
+  color: #04040a;
+  border-bottom-color: #04040a;
 }
 
 .contact-card-link:hover {
@@ -150,37 +152,118 @@
 }
 
 .contact-card.primary .contact-card-note {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(4, 4, 10, 0.6);
 }
 
 .contact-card.primary:hover .contact-card-note {
-  color: var(--color-text-light);
+  color: rgba(4, 4, 10, 0.6);
 }
 
 /* ========== Contact Form Section ========== */
 .contact-form-wrapper {
-  max-width: 900px;
+  max-width: 760px;
   margin: 0 auto;
 }
 
+/* The Google Form is a cross-origin iframe (its inner UI can't be themed),
+   so we frame it as an intentional light card that sits cleanly on the dark page. */
 .google-form-container {
-  background: var(--color-background);
-  border: 1px solid var(--color-border);
-  border-radius: 0;
-  padding: 0;
+  position: relative;
+  background: #ffffff;
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-lg);
+  padding: 12px;
   margin-bottom: var(--space-xl);
   overflow: hidden;
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.5);
+}
+
+/* Neon accent stripe ties the light card back into the dark/neon theme */
+.google-form-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: var(--grad-neon);
+  z-index: 2;
 }
 
 .google-form-container iframe {
   border: none;
   width: 100%;
+  display: block;
+  border-radius: var(--radius-md);
+  /* paint the iframe element white so the form's transparent gaps don't reveal the dark page */
+  background: #ffffff;
+}
+
+/* ========== Form Fields ========== */
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+  width: 100%;
+  background: var(--color-surface-2);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  font-family: var(--font-main);
+  font-size: 1rem;
+  transition: var(--transition-normal);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+  outline: none;
+  border-color: var(--neon-cyan);
+  box-shadow: 0 0 0 3px rgba(30, 232, 218, 0.15);
+}
+
+.contact-form label {
+  display: block;
+  color: var(--color-secondary);
+  font-size: 0.875rem;
+  margin-bottom: var(--space-sm);
+  letter-spacing: 0.02em;
+}
+
+.contact-form button[type="submit"],
+.contact-form .submit-button,
+.google-form-link {
+  display: inline-block;
+  background: var(--grad-neon);
+  color: #04040a;
+  border: none;
+  border-radius: 999px;
+  padding: var(--space-md) var(--space-2xl);
+  font-family: var(--font-accent);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  cursor: pointer;
+  transition: var(--transition-normal);
+}
+
+.contact-form button[type="submit"]:hover,
+.contact-form .submit-button:hover,
+.google-form-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(168, 85, 247, 0.35);
 }
 
 .contact-form-note {
   background: var(--color-accent);
   border: 1px solid var(--color-border);
-  border-radius: 0;
+  border-radius: var(--radius-md);
   padding: var(--space-2xl);
   text-align: center;
   margin-top: var(--space-lg);
@@ -223,16 +306,16 @@
 }
 
 .faq-item {
-  background: var(--color-background);
+  background: var(--color-surface);
   border: 1px solid var(--color-border);
-  border-radius: 0;
+  border-radius: var(--radius-md);
   margin-bottom: var(--space-md);
   transition: var(--transition-normal);
 }
 
 .faq-item:hover,
 .faq-item.active {
-  border-color: var(--color-primary);
+  border-color: var(--color-border-strong);
 }
 
 .faq-question {
@@ -283,9 +366,9 @@
 /* ========== Work Together Section ========== */
 .work-together {
   position: relative;
-  background: var(--color-primary);
-  border: 1px solid var(--color-primary);
-  border-radius: 0;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
   padding: var(--space-2xl);
   overflow: hidden;
 }
@@ -298,16 +381,18 @@
 
 .work-together-title {
   font-size: clamp(2rem, 4vw, 3rem);
-  font-weight: 200;
-  color: var(--color-background);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 800;
+  color: var(--color-primary);
   margin-bottom: var(--space-lg);
   letter-spacing: -0.03em;
 }
 
 .work-together-description {
   font-size: 1.125rem;
-  color: var(--color-background);
-  opacity: 0.8;
+  color: var(--color-secondary);
+  opacity: 1;
   margin-bottom: var(--space-2xl);
   font-weight: 300;
   line-height: 1.8;
@@ -324,15 +409,15 @@
 .work-item {
   text-align: center;
   padding: var(--space-xl);
-  background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 0;
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
   transition: var(--transition-normal);
 }
 
 .work-item:hover {
-  background: rgba(255, 255, 255, 0.05);
-  border-color: rgba(255, 255, 255, 0.4);
+  background: var(--color-surface-2);
+  border-color: var(--neon-cyan);
   transform: translateY(-4px);
 }
 
@@ -344,7 +429,7 @@
 
 .work-item h3 {
   font-size: 1rem;
-  color: var(--color-background);
+  color: var(--color-primary);
   margin-bottom: var(--space-sm);
   font-weight: 300;
   letter-spacing: 0.02em;
@@ -352,7 +437,7 @@
 
 .work-item p {
   font-size: 0.875rem;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--color-secondary);
   margin: 0;
   font-weight: 300;
 }
@@ -371,7 +456,7 @@
   padding: var(--space-2xl);
   background: var(--color-accent);
   border: 1px solid var(--color-border);
-  border-radius: 0;
+  border-radius: var(--radius-md);
 }
 
 .notice-icon {
@@ -626,6 +711,30 @@
   }
 
   .google-form-container iframe {
-    height: 1200px !important;
+    height: 780px !important;
   }
+}
+
+/* ===== Neon accents ===== */
+.contact-card:hover {
+  border-color: var(--neon-cyan);
+  box-shadow: 0 20px 40px rgba(30, 232, 218, 0.18) !important;
+}
+.contact-card.primary {
+  background: var(--grad-neon);
+  color: #04040a;
+  border-color: transparent;
+}
+.contact-card.primary .contact-card-title,
+.contact-card.primary .contact-card-description,
+.contact-card.primary .contact-card-link,
+.contact-card.primary .contact-card-note {
+  color: #04040a;
+}
+.contact-card.primary .contact-card-link {
+  border-bottom-color: #04040a;
+}
+.faq-item:hover,
+.faq-item.active {
+  border-color: var(--neon-cyan);
 }

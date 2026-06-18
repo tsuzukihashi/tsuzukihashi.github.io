@@ -1,26 +1,26 @@
-/* ========== Portfolio Page - App Store Style (Light Theme) ========== */
+/* ========== Portfolio Page - App Store Style (Dark Editorial Theme) ========== */
 
 /* ========== Variables ========== */
 :root {
-  --app-bg: #FFFFFF;
-  --app-card-bg: #f8f8f8;
-  --app-text-primary: #1a1a1a;
-  --app-text-secondary: #666666;
-  --app-text-tertiary: #999999;
-  --app-accent: #0071e3;
-  --app-border: #e0e0e0;
+  --app-bg: var(--color-surface);          /* dark surface */
+  --app-card-bg: var(--color-surface-2);   /* darker surface */
+  --app-text-primary: var(--color-primary);
+  --app-text-secondary: var(--color-secondary);
+  --app-text-tertiary: var(--color-text-light);
+  --app-accent: var(--neon-cyan);          /* neon cyan accent */
+  --app-border: var(--color-border);       /* translucent border */
   --app-icon-radius: 22.37%;
 }
 
 /* ========== Page Background ========== */
 .portfolio-page {
-  background-color: var(--app-bg);
+  background-color: var(--color-background);
   min-height: 100vh;
 }
 
 /* ========== Portfolio Hero ========== */
 .portfolio-hero {
-  background: linear-gradient(180deg, #fafafa 0%, var(--app-bg) 100%);
+  background: linear-gradient(180deg, var(--color-surface) 0%, var(--color-background) 100%);
   padding: 120px 24px 60px;
   text-align: center;
 }
@@ -32,15 +32,17 @@
 }
 
 .portfolio-title {
+  font-family: var(--font-display);
+  font-style: italic;
   font-size: clamp(2.5rem, 6vw, 4rem);
-  font-weight: 700;
-  color: var(--app-text-primary);
+  font-weight: 800;
+  color: var(--color-primary);
   margin-bottom: 16px;
   letter-spacing: -0.02em;
 }
 
 .portfolio-title .text-gradient {
-  background: linear-gradient(135deg, #0071e3 0%, #00c7be 100%);
+  background: var(--grad-neon);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -57,16 +59,16 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1px;
-  background: var(--app-border);
+  background: var(--color-border);
   border-radius: 16px;
   overflow: hidden;
   max-width: 600px;
   margin: 0 auto;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.5);
 }
 
 .portfolio-stat {
-  background: var(--app-bg);
+  background: var(--color-surface);
   padding: 24px 16px;
   text-align: center;
 }
@@ -74,13 +76,13 @@
 .portfolio-stat-number {
   font-size: 1.75rem;
   font-weight: 700;
-  color: var(--app-text-primary);
+  color: var(--neon-cyan);
   margin-bottom: 4px;
 }
 
 .portfolio-stat-label {
   font-size: 0.75rem;
-  color: var(--app-text-secondary);
+  color: var(--color-secondary);
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
@@ -102,7 +104,7 @@
 .section-title-appstore {
   font-size: 1.75rem;
   font-weight: 700;
-  color: var(--app-text-primary);
+  color: var(--color-primary);
   margin-bottom: 24px;
 }
 
@@ -114,9 +116,9 @@
   align-items: center;
   margin-bottom: 24px;
   padding: 16px;
-  background: var(--app-card-bg);
+  background: var(--color-surface);
   border-radius: 12px;
-  border: 1px solid var(--app-border);
+  border: 1px solid var(--color-border);
 }
 
 .filter-search {
@@ -129,21 +131,21 @@
   width: 100%;
   padding: 10px 16px 10px 40px;
   font-size: 0.9375rem;
-  border: 1px solid var(--app-border);
+  border: 1px solid var(--color-border);
   border-radius: 10px;
-  background: var(--app-bg);
-  color: var(--app-text-primary);
+  background: var(--color-surface-2);
+  color: var(--color-text);
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .filter-search input:focus {
   outline: none;
-  border-color: var(--app-accent);
-  box-shadow: 0 0 0 3px rgba(0, 113, 227, 0.15);
+  border-color: var(--neon-cyan);
+  box-shadow: 0 0 0 3px rgba(30, 232, 218, 0.18);
 }
 
 .filter-search input::placeholder {
-  color: var(--app-text-tertiary);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .filter-search::before {
@@ -154,7 +156,7 @@
   transform: translateY(-50%);
   width: 16px;
   height: 16px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23999999'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z'%3E%3C/path%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%231ee8da'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z'%3E%3C/path%3E%3C/svg%3E");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -168,30 +170,35 @@
 .filter-select {
   padding: 10px 32px 10px 12px;
   font-size: 0.875rem;
-  border: 1px solid var(--app-border);
+  border: 1px solid var(--color-border);
   border-radius: 10px;
-  background: var(--app-bg);
-  color: var(--app-text-primary);
+  background: var(--color-surface-2);
+  color: var(--color-text);
   cursor: pointer;
   appearance: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23666666'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%231ee8da'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 10px center;
   background-size: 14px;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
+.filter-select option {
+  background: var(--color-surface-2);
+  color: var(--color-text);
+}
+
 .filter-select:focus {
   outline: none;
-  border-color: var(--app-accent);
-  box-shadow: 0 0 0 3px rgba(0, 113, 227, 0.15);
+  border-color: var(--neon-cyan);
+  box-shadow: 0 0 0 3px rgba(30, 232, 218, 0.18);
 }
 
 .filter-results {
   font-size: 0.875rem;
-  color: var(--app-text-secondary);
+  color: var(--color-secondary);
   padding: 4px 8px;
-  background: var(--app-bg);
+  background: var(--color-surface-2);
   border-radius: 6px;
   white-space: nowrap;
 }
@@ -203,13 +210,13 @@
   border: none;
   border-radius: 10px;
   background: transparent;
-  color: var(--app-accent);
+  color: var(--neon-cyan);
   cursor: pointer;
   transition: background 0.2s ease;
 }
 
 .filter-clear:hover {
-  background: rgba(0, 113, 227, 0.1);
+  background: rgba(30, 232, 218, 0.12);
 }
 
 /* App Card Hidden State */
@@ -221,12 +228,12 @@
 .no-results {
   text-align: center;
   padding: 60px 20px;
-  color: var(--app-text-secondary);
+  color: var(--color-secondary);
 }
 
 .no-results h3 {
   font-size: 1.25rem;
-  color: var(--app-text-primary);
+  color: var(--color-primary);
   margin-bottom: 8px;
 }
 
@@ -275,13 +282,14 @@
 }
 
 .store-btn-small.store-btn-ios {
-  background: #000;
-  color: #fff;
+  background: var(--grad-neon);
+  color: #04040a;
 }
 
 .store-btn-small.store-btn-android {
-  background: #01875f;
-  color: #fff;
+  background: var(--color-surface-2);
+  color: var(--color-text);
+  border: 1px solid var(--color-border-strong);
 }
 
 /* Mobile Filter Bar */
@@ -328,11 +336,11 @@
   flex-direction: column;
   text-decoration: none;
   color: inherit;
-  background: var(--app-bg);
+  background: var(--color-surface);
   border-radius: 16px;
   padding: 16px;
-  border: 1px solid var(--app-border);
-  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  border: 1px solid var(--color-border);
+  transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
   height: 450px;
   box-sizing: border-box;
   overflow: hidden;
@@ -340,7 +348,8 @@
 }
 
 .app-card-store:hover {
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border-color: var(--neon-cyan);
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.5);
 }
 
 /* App Header (Icon + Info + Download) */
@@ -359,7 +368,7 @@
   border-radius: var(--app-icon-radius);
   overflow: hidden;
   flex-shrink: 0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
 .app-icon-store img {
@@ -376,7 +385,7 @@
 .app-name {
   font-size: 0.9375rem;
   font-weight: 600;
-  color: var(--app-text-primary);
+  color: var(--color-primary);
   margin: 0 0 2px 0;
   white-space: nowrap;
   overflow: hidden;
@@ -385,22 +394,22 @@
 
 .app-subtitle {
   font-size: 0.75rem;
-  color: var(--app-text-secondary);
+  color: var(--color-secondary);
   margin: 0;
   line-height: 1.3;
 }
 
 .app-meta {
   font-size: 0.6875rem;
-  color: var(--app-text-tertiary);
+  color: var(--color-text-light);
   margin-top: 2px;
 }
 
 .app-open-btn {
   flex-shrink: 0;
   padding: 6px 18px;
-  background: var(--app-accent);
-  color: white;
+  background: var(--grad-neon);
+  color: #04040a;
   border-radius: 100px;
   font-size: 0.875rem;
   font-weight: 600;
@@ -437,7 +446,10 @@
   height: 100%;
   width: auto;
   display: block;
-  border-radius: 8px;
+  border-radius: 12px;
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
 }
 
 /* Screenshot 2枚の場合 */
@@ -494,6 +506,7 @@
   height: auto;
   display: block;
   border-radius: 8px;
+  background: var(--color-surface-2);
 }
 
 /* カルーセルボタンとドットを非表示 */
@@ -647,12 +660,12 @@
 
 /* ========== Archived Apps Section ========== */
 .archived-section {
-  background: #f5f5f7;
+  background: var(--color-accent);
 }
 
 .archived-description {
   font-size: 0.875rem;
-  color: var(--app-text-secondary);
+  color: var(--color-secondary);
   margin-bottom: 24px;
   margin-top: -16px;
 }
@@ -673,7 +686,7 @@
 }
 
 .app-icon-archived {
-  background: linear-gradient(135deg, #e0e0e0 0%, #c0c0c0 100%);
+  background: linear-gradient(135deg, var(--color-surface-2) 0%, var(--color-accent) 100%);
 }
 
 .icon-placeholder {
@@ -686,16 +699,16 @@
 }
 
 .archived-badge {
-  color: #999 !important;
+  color: var(--color-text-light) !important;
   font-style: italic;
 }
 
 /* ========== Active Nav Link ========== */
 .nav-link.active {
-  color: #1a1a1a;
+  color: var(--color-primary);
 }
 
 .nav-link.active::after {
   width: 100%;
-  background: #1a1a1a;
+  background: var(--neon-cyan);
 }
