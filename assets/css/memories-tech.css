@@ -543,6 +543,11 @@ strong { color: var(--color-primary); font-weight: 700; }
 }
 .work-item:hover .work-thumb img { transform: scale(1.06) rotate(-2deg); }
 
+/* Key-visual thumbnails (full-bleed banner images) */
+.work-thumb--kv { background: var(--color-surface-2); }
+.work-thumb--kv img { width: 100%; height: 100%; border-radius: 0; object-fit: cover; box-shadow: none; }
+.work-item:hover .work-thumb--kv img { transform: scale(1.04); }
+
 .work-no {
   position: absolute;
   top: 0.2rem;
