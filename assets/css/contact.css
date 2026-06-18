@@ -1,6 +1,6 @@
 /* ================================
-   Contact Page - Minimalist B&W
-   Inspired by NOT A HOTEL & Kyu Camera
+   Contact Page - Bright Pop / Neobrutalist
+   White cards on cream, ink borders, solid offset shadows
    ================================ */
 
 /* ========== Contact Hero ========== */
@@ -53,29 +53,30 @@
 
 .contact-card {
   background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
+  border: 2px solid var(--color-ink);
+  border-radius: var(--radius-lg);
   padding: var(--space-2xl);
   text-align: center;
   transition: var(--transition-normal);
   position: relative;
+  box-shadow: 6px 6px 0 var(--color-ink);
 }
 
 .contact-card:hover {
-  transform: translateY(-8px);
-  border-color: var(--color-border-strong);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  transform: translate(-3px, -3px);
+  border-color: var(--color-ink);
+  box-shadow: 9px 9px 0 var(--neon-purple);
 }
 
 .contact-card.primary {
   background: var(--grad-neon);
-  color: #04040a;
-  border-color: transparent;
+  color: var(--color-primary);
+  border-color: var(--color-ink);
 }
 
 .contact-card.primary:hover {
   background: var(--grad-neon);
-  color: #04040a;
+  color: var(--color-primary);
 }
 
 .contact-card-icon {
@@ -93,11 +94,11 @@
 }
 
 .contact-card.primary .contact-card-title {
-  color: #04040a;
+  color: var(--color-primary);
 }
 
 .contact-card.primary:hover .contact-card-title {
-  color: #04040a;
+  color: var(--color-primary);
 }
 
 .contact-card-description {
@@ -109,33 +110,33 @@
 }
 
 .contact-card.primary .contact-card-description {
-  color: rgba(4, 4, 10, 0.78);
+  color: var(--color-text);
 }
 
 .contact-card.primary:hover .contact-card-description {
-  color: rgba(4, 4, 10, 0.78);
+  color: var(--color-text);
 }
 
 .contact-card-link {
   display: inline-block;
   font-size: 0.875rem;
   font-weight: 300;
-  color: var(--neon-cyan);
+  color: var(--neon-purple);
   text-decoration: none;
   margin-bottom: var(--space-md);
   transition: var(--transition-normal);
-  border-bottom: 1px solid var(--neon-cyan);
+  border-bottom: 2px solid var(--neon-purple);
   letter-spacing: 0.02em;
 }
 
 .contact-card.primary .contact-card-link {
-  color: #04040a;
-  border-bottom-color: #04040a;
+  color: var(--color-primary);
+  border-bottom-color: var(--color-ink);
 }
 
 .contact-card.primary:hover .contact-card-link {
-  color: #04040a;
-  border-bottom-color: #04040a;
+  color: var(--color-primary);
+  border-bottom-color: var(--color-ink);
 }
 
 .contact-card-link:hover {
@@ -152,11 +153,11 @@
 }
 
 .contact-card.primary .contact-card-note {
-  color: rgba(4, 4, 10, 0.6);
+  color: var(--color-secondary);
 }
 
 .contact-card.primary:hover .contact-card-note {
-  color: rgba(4, 4, 10, 0.6);
+  color: var(--color-secondary);
 }
 
 /* ========== Contact Form Section ========== */
@@ -166,19 +167,19 @@
 }
 
 /* The Google Form is a cross-origin iframe (its inner UI can't be themed),
-   so we frame it as an intentional light card that sits cleanly on the dark page. */
+   so we frame it as an intentional light card with an ink border + offset shadow. */
 .google-form-container {
   position: relative;
   background: #ffffff;
-  border: 1px solid var(--color-border-strong);
+  border: 2px solid var(--color-ink);
   border-radius: var(--radius-lg);
   padding: 12px;
   margin-bottom: var(--space-xl);
   overflow: hidden;
-  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.5);
+  box-shadow: 10px 10px 0 rgba(20, 17, 8, 0.18);
 }
 
-/* Neon accent stripe ties the light card back into the dark/neon theme */
+/* Neon accent stripe ties the light card into the pop theme */
 .google-form-container::before {
   content: '';
   position: absolute;
@@ -204,9 +205,9 @@
 .contact-form textarea,
 .contact-form select {
   width: 100%;
-  background: var(--color-surface-2);
+  background: #ffffff;
   color: var(--color-text);
-  border: 1px solid var(--color-border);
+  border: 2px solid var(--color-ink);
   border-radius: var(--radius-md);
   padding: var(--space-md);
   font-family: var(--font-main);
@@ -216,15 +217,15 @@
 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
-  color: rgba(255, 255, 255, 0.4);
+  color: var(--color-text-light);
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus,
 .contact-form select:focus {
   outline: none;
-  border-color: var(--neon-cyan);
-  box-shadow: 0 0 0 3px rgba(30, 232, 218, 0.15);
+  border-color: var(--neon-purple);
+  box-shadow: 4px 4px 0 var(--neon-purple);
 }
 
 .contact-form label {
@@ -239,9 +240,9 @@
 .contact-form .submit-button,
 .google-form-link {
   display: inline-block;
-  background: var(--grad-neon);
-  color: #04040a;
-  border: none;
+  background: var(--color-ink);
+  color: #ffffff;
+  border: 2px solid var(--color-ink);
   border-radius: 999px;
   padding: var(--space-md) var(--space-2xl);
   font-family: var(--font-accent);
@@ -251,22 +252,24 @@
   text-decoration: none;
   cursor: pointer;
   transition: var(--transition-normal);
+  box-shadow: 4px 4px 0 var(--neon-purple);
 }
 
 .contact-form button[type="submit"]:hover,
 .contact-form .submit-button:hover,
 .google-form-link:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 30px rgba(168, 85, 247, 0.35);
+  transform: translate(-3px, -3px);
+  box-shadow: 7px 7px 0 var(--neon-purple);
 }
 
 .contact-form-note {
-  background: var(--color-accent);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  border: 2px solid var(--color-ink);
+  border-radius: var(--radius-lg);
   padding: var(--space-2xl);
   text-align: center;
   margin-top: var(--space-lg);
+  box-shadow: 6px 6px 0 var(--color-ink);
 }
 
 .note-icon {
@@ -307,15 +310,17 @@
 
 .faq-item {
   background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
+  border: 2px solid var(--color-ink);
+  border-radius: var(--radius-lg);
   margin-bottom: var(--space-md);
   transition: var(--transition-normal);
+  box-shadow: 4px 4px 0 var(--color-ink);
 }
 
 .faq-item:hover,
 .faq-item.active {
-  border-color: var(--color-border-strong);
+  border-color: var(--color-ink);
+  box-shadow: 6px 6px 0 var(--neon-purple);
 }
 
 .faq-question {
@@ -337,7 +342,7 @@
 }
 
 .faq-question:hover {
-  background: var(--color-accent);
+  background: var(--color-surface-2);
 }
 
 .faq-icon {
@@ -367,10 +372,11 @@
 .work-together {
   position: relative;
   background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
+  border: 2px solid var(--color-ink);
+  border-radius: var(--radius-lg);
   padding: var(--space-2xl);
   overflow: hidden;
+  box-shadow: 6px 6px 0 var(--color-ink);
 }
 
 .work-together-content {
@@ -409,16 +415,18 @@
 .work-item {
   text-align: center;
   padding: var(--space-xl);
-  background: var(--color-surface-2);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  border: 2px solid var(--color-ink);
+  border-radius: var(--radius-lg);
   transition: var(--transition-normal);
+  box-shadow: 4px 4px 0 var(--color-ink);
 }
 
 .work-item:hover {
-  background: var(--color-surface-2);
-  border-color: var(--neon-cyan);
-  transform: translateY(-4px);
+  background: var(--color-surface);
+  border-color: var(--color-ink);
+  transform: translate(-3px, -3px);
+  box-shadow: 7px 7px 0 var(--neon-cyan);
 }
 
 .work-item-icon {
@@ -454,9 +462,10 @@
   max-width: 900px;
   margin: 0 auto;
   padding: var(--space-2xl);
-  background: var(--color-accent);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  border: 2px solid var(--color-ink);
+  border-radius: var(--radius-lg);
+  box-shadow: 6px 6px 0 var(--color-ink);
 }
 
 .notice-icon {
@@ -715,26 +724,26 @@
   }
 }
 
-/* ===== Neon accents ===== */
+/* ===== Pop accents ===== */
 .contact-card:hover {
-  border-color: var(--neon-cyan);
-  box-shadow: 0 20px 40px rgba(30, 232, 218, 0.18) !important;
+  border-color: var(--color-ink);
+  box-shadow: 9px 9px 0 var(--neon-purple) !important;
 }
 .contact-card.primary {
   background: var(--grad-neon);
-  color: #04040a;
-  border-color: transparent;
+  color: var(--color-primary);
+  border-color: var(--color-ink);
 }
 .contact-card.primary .contact-card-title,
 .contact-card.primary .contact-card-description,
 .contact-card.primary .contact-card-link,
 .contact-card.primary .contact-card-note {
-  color: #04040a;
+  color: var(--color-primary);
 }
 .contact-card.primary .contact-card-link {
-  border-bottom-color: #04040a;
+  border-bottom-color: var(--color-ink);
 }
 .faq-item:hover,
 .faq-item.active {
-  border-color: var(--neon-cyan);
+  border-color: var(--color-ink);
 }

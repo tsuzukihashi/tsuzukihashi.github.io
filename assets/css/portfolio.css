@@ -1,14 +1,14 @@
-/* ========== Portfolio Page - App Store Style (Dark Editorial Theme) ========== */
+/* ========== Portfolio Page - App Store Style (Bright Pop Theme) ========== */
 
 /* ========== Variables ========== */
 :root {
-  --app-bg: var(--color-surface);          /* dark surface */
-  --app-card-bg: var(--color-surface-2);   /* darker surface */
+  --app-bg: var(--color-surface);          /* white card surface */
+  --app-card-bg: var(--color-surface-2);   /* cream well surface */
   --app-text-primary: var(--color-primary);
   --app-text-secondary: var(--color-secondary);
   --app-text-tertiary: var(--color-text-light);
-  --app-accent: var(--neon-cyan);          /* neon cyan accent */
-  --app-border: var(--color-border);       /* translucent border */
+  --app-accent: var(--neon-purple);        /* pop purple accent */
+  --app-border: var(--color-ink);          /* ink border */
   --app-icon-radius: 22.37%;
 }
 
@@ -20,7 +20,7 @@
 
 /* ========== Portfolio Hero ========== */
 .portfolio-hero {
-  background: linear-gradient(180deg, var(--color-surface) 0%, var(--color-background) 100%);
+  background: linear-gradient(180deg, var(--color-accent) 0%, var(--color-background) 100%);
   padding: 120px 24px 60px;
   text-align: center;
 }
@@ -58,13 +58,14 @@
 .portfolio-stats {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1px;
-  background: var(--color-border);
+  gap: 2px;
+  background: var(--color-ink);
+  border: 2px solid var(--color-ink);
   border-radius: 16px;
   overflow: hidden;
   max-width: 600px;
   margin: 0 auto;
-  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.5);
+  box-shadow: 6px 6px 0 var(--color-ink);
 }
 
 .portfolio-stat {
@@ -75,8 +76,11 @@
 
 .portfolio-stat-number {
   font-size: 1.75rem;
-  font-weight: 700;
-  color: var(--neon-cyan);
+  font-weight: 800;
+  background: var(--grad-neon);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   margin-bottom: 4px;
 }
 
@@ -118,7 +122,8 @@
   padding: 16px;
   background: var(--color-surface);
   border-radius: 12px;
-  border: 1px solid var(--color-border);
+  border: 2px solid var(--color-ink);
+  box-shadow: 4px 4px 0 var(--color-ink);
 }
 
 .filter-search {
@@ -131,21 +136,21 @@
   width: 100%;
   padding: 10px 16px 10px 40px;
   font-size: 0.9375rem;
-  border: 1px solid var(--color-border);
+  border: 2px solid var(--color-ink);
   border-radius: 10px;
-  background: var(--color-surface-2);
+  background: #fff;
   color: var(--color-text);
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .filter-search input:focus {
   outline: none;
-  border-color: var(--neon-cyan);
-  box-shadow: 0 0 0 3px rgba(30, 232, 218, 0.18);
+  border-color: var(--neon-purple);
+  box-shadow: 0 0 0 3px rgba(139, 61, 245, 0.18);
 }
 
 .filter-search input::placeholder {
-  color: rgba(255, 255, 255, 0.4);
+  color: var(--color-text-light);
 }
 
 .filter-search::before {
@@ -156,7 +161,7 @@
   transform: translateY(-50%);
   width: 16px;
   height: 16px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%231ee8da'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z'%3E%3C/path%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%2314110c'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z'%3E%3C/path%3E%3C/svg%3E");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -170,13 +175,13 @@
 .filter-select {
   padding: 10px 32px 10px 12px;
   font-size: 0.875rem;
-  border: 1px solid var(--color-border);
+  border: 2px solid var(--color-ink);
   border-radius: 10px;
-  background: var(--color-surface-2);
+  background: #fff;
   color: var(--color-text);
   cursor: pointer;
   appearance: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%231ee8da'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%238b3df5'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 10px center;
   background-size: 14px;
@@ -184,14 +189,14 @@
 }
 
 .filter-select option {
-  background: var(--color-surface-2);
+  background: #fff;
   color: var(--color-text);
 }
 
 .filter-select:focus {
   outline: none;
-  border-color: var(--neon-cyan);
-  box-shadow: 0 0 0 3px rgba(30, 232, 218, 0.18);
+  border-color: var(--neon-purple);
+  box-shadow: 0 0 0 3px rgba(139, 61, 245, 0.18);
 }
 
 .filter-results {
@@ -199,6 +204,7 @@
   color: var(--color-secondary);
   padding: 4px 8px;
   background: var(--color-surface-2);
+  border: 2px solid var(--color-ink);
   border-radius: 6px;
   white-space: nowrap;
 }
@@ -206,17 +212,18 @@
 .filter-clear {
   padding: 10px 16px;
   font-size: 0.875rem;
-  font-weight: 500;
-  border: none;
+  font-weight: 700;
+  border: 2px solid var(--color-ink);
   border-radius: 10px;
-  background: transparent;
-  color: var(--neon-cyan);
+  background: #fff;
+  color: var(--neon-purple);
   cursor: pointer;
-  transition: background 0.2s ease;
+  transition: background 0.2s ease, color 0.2s ease;
 }
 
 .filter-clear:hover {
-  background: rgba(30, 232, 218, 0.12);
+  background: var(--neon-purple);
+  color: #fff;
 }
 
 /* App Card Hidden State */
@@ -282,14 +289,15 @@
 }
 
 .store-btn-small.store-btn-ios {
-  background: var(--grad-neon);
-  color: #04040a;
+  background: var(--color-ink);
+  color: #fff;
+  border: 2px solid var(--color-ink);
 }
 
 .store-btn-small.store-btn-android {
-  background: var(--color-surface-2);
+  background: #fff;
   color: var(--color-text);
-  border: 1px solid var(--color-border-strong);
+  border: 2px solid var(--color-ink);
 }
 
 /* Mobile Filter Bar */
@@ -337,9 +345,10 @@
   text-decoration: none;
   color: inherit;
   background: var(--color-surface);
-  border-radius: 16px;
+  border-radius: var(--radius-lg);
   padding: 16px;
-  border: 1px solid var(--color-border);
+  border: 2px solid var(--color-ink);
+  box-shadow: 6px 6px 0 var(--color-ink);
   transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
   height: 450px;
   box-sizing: border-box;
@@ -348,8 +357,8 @@
 }
 
 .app-card-store:hover {
-  border-color: var(--neon-cyan);
-  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.5);
+  transform: translate(-3px, -3px);
+  box-shadow: 9px 9px 0 var(--neon-purple);
 }
 
 /* App Header (Icon + Info + Download) */
@@ -368,7 +377,7 @@
   border-radius: var(--app-icon-radius);
   overflow: hidden;
   flex-shrink: 0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  border: 2px solid var(--color-ink);
 }
 
 .app-icon-store img {
@@ -408,15 +417,23 @@
 .app-open-btn {
   flex-shrink: 0;
   padding: 6px 18px;
-  background: var(--grad-neon);
-  color: #04040a;
+  background: var(--color-ink);
+  color: #fff;
+  border: 2px solid var(--color-ink);
   border-radius: 100px;
   font-size: 0.875rem;
-  font-weight: 600;
+  font-weight: 700;
   text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 3px 3px 0 var(--neon-purple);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.app-card-store:hover .app-open-btn {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0 var(--neon-pink);
 }
 
 /* App Screenshots */
@@ -448,8 +465,7 @@
   display: block;
   border-radius: 12px;
   background: var(--color-surface-2);
-  border: 1px solid var(--color-border);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+  border: 2px solid var(--color-ink);
 }
 
 /* Screenshot 2枚の場合 */
@@ -507,6 +523,7 @@
   display: block;
   border-radius: 8px;
   background: var(--color-surface-2);
+  border: 2px solid var(--color-ink);
 }
 
 /* カルーセルボタンとドットを非表示 */
@@ -525,7 +542,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0);
+  background: rgba(20, 17, 12, 0);
   z-index: 9999;
   display: flex;
   justify-content: center;
@@ -539,7 +556,7 @@
 .lightbox.active {
   pointer-events: auto;
   opacity: 1;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(20, 17, 12, 0.85);
 }
 
 .lightbox img {
@@ -547,7 +564,8 @@
   max-height: 90%;
   object-fit: contain;
   border-radius: 12px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  border: 2px solid var(--color-ink);
+  box-shadow: 8px 8px 0 var(--neon-purple);
   transform: scale(0.92);
   opacity: 0;
   transition: transform 0.25s ease, opacity 0.2s ease;
@@ -564,17 +582,18 @@
   right: 20px;
   width: 40px;
   height: 40px;
-  background: rgba(255, 255, 255, 0.2);
-  border: none;
+  background: #fff;
+  border: 2px solid var(--color-ink);
   border-radius: 50%;
-  color: white;
+  color: var(--color-ink);
   font-size: 24px;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 3px 3px 0 var(--neon-purple);
   opacity: 0;
-  transition: opacity 0.2s ease 0.1s, background 0.15s ease;
+  transition: opacity 0.2s ease 0.1s, background 0.15s ease, color 0.15s ease;
 }
 
 .lightbox.active .lightbox-close {
@@ -582,7 +601,8 @@
 }
 
 .lightbox-close:hover {
-  background: rgba(255, 255, 255, 0.3);
+  background: var(--neon-purple);
+  color: #fff;
 }
 
 .app-screenshot,
@@ -710,5 +730,5 @@
 
 .nav-link.active::after {
   width: 100%;
-  background: var(--neon-cyan);
+  background: var(--neon-purple);
 }

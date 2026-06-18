@@ -1,6 +1,6 @@
 /* ================================
-   App Detail Page - Dark Editorial Theme
-   Inspired by zoccon.me (neon-on-black)
+   App Detail Page - Bright Pop Theme
+   Neobrutalist pop (white cards on cream, ink borders, offset shadows)
    ================================ */
 
 /* ========== App Hero Section ========== */
@@ -12,7 +12,7 @@
   background: var(--color-background);
   display: flex;
   align-items: center;
-  border-bottom: 1px solid var(--color-border);
+  border-bottom: 2px solid var(--color-ink);
 }
 
 .app-hero-content {
@@ -35,20 +35,21 @@
   width: 150px;
   height: 150px;
   border-radius: var(--radius-lg, 24px);
-  border: 1px solid var(--color-border);
+  border: 2px solid var(--color-ink);
+  box-shadow: 6px 6px 0 var(--color-ink);
 }
 
 .app-icon-badge {
   position: absolute;
   top: -10px;
   right: -10px;
-  background: var(--grad-neon);
-  color: #04040a;
+  background: var(--neon-pink);
+  color: #fff;
   padding: 0.5rem 1rem;
   border-radius: 999px;
   font-size: 0.65rem;
   font-weight: 700;
-  border: none;
+  border: 2px solid var(--color-ink);
   animation: pulse 2s ease infinite;
   letter-spacing: 0.15em;
   text-transform: uppercase;
@@ -85,11 +86,11 @@
 
 .badge {
   padding: 0.5rem 1.5rem;
-  background: var(--color-sky-soft);
+  background: var(--color-surface);
   border-radius: 999px;
   font-size: 0.75rem;
-  font-weight: 500;
-  border: 1px solid var(--color-border);
+  font-weight: 700;
+  border: 2px solid var(--color-ink);
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
@@ -100,7 +101,7 @@
 }
 
 .badge-rating {
-  color: var(--color-sun);
+  color: var(--pop-yellow);
 }
 
 .app-cta {
@@ -123,7 +124,8 @@
   padding: var(--space-lg);
   border-radius: var(--radius-lg, 24px);
   margin-bottom: var(--space-lg);
-  border: 1px solid var(--color-border);
+  border: 2px solid var(--color-ink);
+  box-shadow: 6px 6px 0 var(--color-ink);
 }
 
 .story-quote blockquote {
@@ -143,7 +145,7 @@
   left: 0;
   top: -10px;
   font-size: 3rem;
-  color: var(--neon-cyan);
+  color: var(--neon-purple);
   font-weight: 200;
 }
 
@@ -163,7 +165,7 @@
   background: var(--color-surface-2);
   border-radius: var(--radius-lg, 24px);
   text-align: center;
-  border: 1px solid var(--color-border);
+  border: 2px solid var(--color-ink);
 }
 
 /* ========== Features Grid ========== */
@@ -179,7 +181,8 @@
   background: var(--color-surface);
   padding: var(--space-xl);
   border-radius: var(--radius-lg, 24px);
-  border: 1px solid var(--color-border);
+  border: 2px solid var(--color-ink);
+  box-shadow: 6px 6px 0 var(--color-ink);
   transition: var(--transition-normal);
   opacity: 0;
   transform: translateY(20px);
@@ -192,14 +195,14 @@
 }
 
 .feature-card:hover {
-  transform: translateY(-4px);
-  border-color: var(--color-border-strong);
+  transform: translate(-3px, -3px);
+  box-shadow: 9px 9px 0 var(--neon-purple);
 }
 
 .feature-icon {
   font-size: 2rem;
   margin-bottom: var(--space-md);
-  color: var(--neon-cyan);
+  color: var(--neon-purple);
 }
 
 .feature-title {
@@ -230,7 +233,8 @@
   background: var(--color-surface);
   padding: var(--space-xl);
   border-radius: var(--radius-lg, 24px);
-  border: 1px solid var(--color-border);
+  border: 2px solid var(--color-ink);
+  box-shadow: 6px 6px 0 var(--color-ink);
   transition: var(--transition-normal);
   opacity: 0;
   transform: translateX(-20px);
@@ -243,8 +247,8 @@
 }
 
 .tech-card:hover {
-  transform: translateY(-4px);
-  border-color: var(--color-border-strong);
+  transform: translate(-3px, -3px);
+  box-shadow: 9px 9px 0 var(--neon-cyan);
 }
 
 .tech-title {
@@ -283,7 +287,8 @@
   padding: var(--space-xl);
   background: var(--color-surface);
   border-radius: var(--radius-lg, 24px);
-  border: 1px solid var(--color-border);
+  border: 2px solid var(--color-ink);
+  box-shadow: 6px 6px 0 var(--color-ink);
   transition: var(--transition-normal);
   opacity: 0;
   transform: scale(0.95);
@@ -296,8 +301,8 @@
 }
 
 .achievement-card:hover {
-  transform: translateY(-8px);
-  border-color: var(--color-border-strong);
+  transform: translate(-3px, -3px);
+  box-shadow: 9px 9px 0 var(--neon-pink);
 }
 
 .achievement-number {
@@ -309,7 +314,7 @@
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: var(--neon-cyan);
+  color: var(--neon-purple);
   margin-bottom: 0.5rem;
   letter-spacing: -0.03em;
 }
@@ -343,17 +348,18 @@
   background: var(--color-surface);
   padding: var(--space-xl);
   border-radius: var(--radius-lg, 24px);
-  border: 1px solid var(--color-border);
+  border: 2px solid var(--color-ink);
+  box-shadow: 6px 6px 0 var(--color-ink);
   transition: var(--transition-normal);
 }
 
 .review-card:hover {
-  transform: translateY(-4px);
-  border-color: var(--color-border-strong);
+  transform: translate(-3px, -3px);
+  box-shadow: 9px 9px 0 var(--neon-purple);
 }
 
 .review-rating {
-  color: var(--color-sun);
+  color: var(--pop-yellow);
   font-size: 1.125rem;
   margin-bottom: var(--space-sm);
   font-weight: 400;
@@ -394,7 +400,8 @@
   background: var(--color-surface);
   padding: var(--space-2xl);
   border-radius: var(--radius-lg, 24px);
-  border: 1px solid var(--color-border);
+  border: 2px solid var(--color-ink);
+  box-shadow: 6px 6px 0 var(--color-ink);
 }
 
 .developer-message p {
@@ -413,13 +420,13 @@
   background: var(--color-surface-2);
   border-radius: var(--radius-lg, 24px);
   margin: var(--space-lg) 0;
-  border: 1px solid var(--color-border);
+  border: 2px solid var(--color-ink);
 }
 
 .signature {
   margin-top: var(--space-lg);
   padding-top: var(--space-lg);
-  border-top: 1px solid var(--color-border);
+  border-top: 2px solid var(--color-border);
 }
 
 .signature-name {
@@ -436,7 +443,8 @@
   padding: var(--space-2xl);
   background: var(--color-surface);
   border-radius: var(--radius-lg, 24px);
-  border: 1px solid var(--color-border);
+  border: 2px solid var(--color-ink);
+  box-shadow: 6px 6px 0 var(--color-ink);
   max-width: 600px;
   margin: 0 auto;
 }
@@ -449,39 +457,41 @@
   padding: 1rem 2.5rem;
   font-size: 1rem;
   letter-spacing: 0.1em;
-  background: var(--grad-neon);
-  color: #04040a;
-  border: none;
+  background: var(--color-ink);
+  color: #fff;
+  border: 2px solid var(--color-ink);
   border-radius: 999px;
   font-weight: 700;
+  box-shadow: 4px 4px 0 var(--neon-purple);
   transition: var(--transition-normal);
 }
 
 .btn-large:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 32px rgba(30, 232, 218, 0.28);
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 var(--neon-purple);
 }
 
 .app-cta .btn,
 .app-store-button .btn {
-  background: var(--grad-neon);
-  color: #04040a;
-  border: none;
+  background: var(--color-ink);
+  color: #fff;
+  border: 2px solid var(--color-ink);
   border-radius: 999px;
   font-weight: 700;
+  box-shadow: 4px 4px 0 var(--neon-purple);
   transition: var(--transition-normal);
 }
 
 .app-cta .btn:hover,
 .app-store-button .btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 32px rgba(30, 232, 218, 0.28);
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 var(--neon-purple);
 }
 
 .apple-icon path,
 .apple-icon {
   fill: currentColor;
-  color: #04040a;
+  color: #fff;
 }
 
 .download-note {
@@ -508,13 +518,14 @@
   background: var(--color-surface);
   border-radius: var(--radius-lg, 24px);
   text-decoration: none;
-  border: 1px solid var(--color-border);
+  border: 2px solid var(--color-ink);
+  box-shadow: 6px 6px 0 var(--color-ink);
   transition: var(--transition-normal);
 }
 
 .related-app-card:hover {
-  transform: translateY(-4px);
-  border-color: var(--color-border-strong);
+  transform: translate(-3px, -3px);
+  box-shadow: 9px 9px 0 var(--neon-cyan);
 }
 
 .related-app-icon {
@@ -522,7 +533,7 @@
   height: 60px;
   border-radius: var(--radius-md, 16px);
   flex-shrink: 0;
-  border: 1px solid var(--color-border);
+  border: 2px solid var(--color-ink);
 }
 
 .related-app-icon.more-apps {
@@ -530,10 +541,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #04040a;
+  color: var(--color-primary);
   font-size: 1.5rem;
   font-weight: 700;
-  border: none;
+  border: 2px solid var(--color-ink);
 }
 
 .related-app-info h3 {

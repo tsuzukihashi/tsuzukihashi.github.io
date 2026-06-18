@@ -39,7 +39,8 @@
   background: var(--color-surface);
   display: inline-block;
   border-radius: var(--radius-md);
-  border: 1px solid var(--color-border);
+  border: 2px solid var(--color-ink);
+  box-shadow: 4px 4px 0 var(--color-ink);
   font-weight: 300;
   letter-spacing: 0.05em;
 }
@@ -79,7 +80,7 @@
   left: 0;
   width: 80px;
   height: 1px;
-  background: var(--color-primary);
+  background: var(--neon-purple);
 }
 
 .legal-section p {
@@ -110,7 +111,7 @@
 }
 
 .legal-section a {
-  color: var(--neon-cyan);
+  color: var(--neon-purple);
   text-decoration: underline;
 }
 
@@ -120,8 +121,9 @@
   border-collapse: collapse;
   margin: var(--space-md) 0;
   background: var(--color-surface);
-  border: 1px solid var(--color-border);
+  border: 2px solid var(--color-ink);
   border-radius: var(--radius-md);
+  box-shadow: 4px 4px 0 var(--color-ink);
   overflow: hidden;
 }
 
@@ -158,7 +160,8 @@
   padding: var(--space-lg);
   border-radius: var(--radius-md);
   margin-top: var(--space-md);
-  border: 1px solid var(--color-border);
+  border: 2px solid var(--color-ink);
+  box-shadow: 4px 4px 0 var(--color-ink);
 }
 
 .contact-info p {
@@ -175,13 +178,14 @@
 /* ========== Notice Box ========== */
 .notice-box {
   background: var(--color-surface);
-  border-left: 2px solid var(--color-primary);
+  border-left: 2px solid var(--neon-purple);
   padding: var(--space-lg);
   border-radius: var(--radius-md);
   margin: var(--space-lg) 0;
-  border: 1px solid var(--color-border);
-  border-left-width: 2px;
-  border-left-color: var(--color-primary);
+  border: 2px solid var(--color-ink);
+  box-shadow: 4px 4px 0 var(--color-ink);
+  border-left-width: 6px;
+  border-left-color: var(--neon-purple);
 }
 
 .notice-box p {
@@ -210,14 +214,15 @@
   font-weight: 300;
   transition: var(--transition-normal);
   font-size: 0.875rem;
-  border: 1px solid var(--color-border);
+  border: 2px solid var(--color-ink);
+  box-shadow: 4px 4px 0 var(--color-ink);
   letter-spacing: 0.05em;
 }
 
 .legal-nav-link:hover {
-  background: var(--color-primary);
+  background: var(--color-ink);
   color: var(--color-background);
-  border-color: var(--color-primary);
+  border-color: var(--color-ink);
   transform: translateY(-2px);
 }
 
@@ -272,18 +277,18 @@
   }
 }
 
-/* ===== Warm hand-drawn accents ===== */
+/* ===== Bright pop accents ===== */
 .legal-section h2::after {
   width: 56px;
   height: 4px;
   border-radius: 999px;
-  background: var(--color-sun);
+  background: var(--grad-neon);
 }
 .legal-nav-link:hover {
-  background: var(--color-sun);
+  background: var(--color-ink);
   color: var(--color-background);
-  border-color: var(--color-sun);
+  border-color: var(--color-ink);
 }
 .notice-box {
-  border-left-color: var(--color-sun) !important;
+  border-left-color: var(--neon-purple) !important;
 }
