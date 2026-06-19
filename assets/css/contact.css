@@ -5,9 +5,9 @@
 
 /* ========== Contact Hero ========== */
 .contact-hero {
-  min-height: 70vh;
-  padding-top: calc(var(--space-2xl) + 100px);
-  padding-bottom: var(--space-2xl);
+  min-height: 50vh;
+  padding-top: calc(var(--space-xl) + 90px);
+  padding-bottom: var(--space-xl);
   position: relative;
   background: var(--color-background);
   display: flex;
@@ -161,9 +161,64 @@
 }
 
 /* ========== Contact Form Section ========== */
-.contact-form-wrapper {
-  max-width: 760px;
+/* ========== Connect layout (methods + form, 2 columns) ========== */
+.contact-connect {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: var(--space-xl);
+  align-items: start;
+  max-width: 1200px;
   margin: 0 auto;
+}
+.connect-info .section-title { margin-bottom: var(--space-md); }
+.connect-lead { color: var(--color-secondary); line-height: 1.9; margin-bottom: var(--space-lg); }
+.method-list { display: grid; gap: var(--space-md); margin-bottom: var(--space-lg); }
+.method {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-md);
+  background: var(--color-surface);
+  border: 2px solid var(--color-ink);
+  border-radius: var(--radius-lg);
+  box-shadow: 5px 5px 0 var(--color-ink);
+  text-decoration: none;
+  transition: var(--transition-spring);
+}
+.method:hover { transform: translate(-3px, -3px); box-shadow: 8px 8px 0 var(--neon-purple); }
+.method--primary { box-shadow: 5px 5px 0 var(--neon-pink); }
+.method--primary:hover { box-shadow: 8px 8px 0 var(--neon-pink); }
+.method-icon {
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.55rem;
+  background: var(--color-surface-2);
+  border: 2px solid var(--color-ink);
+  border-radius: var(--radius-md);
+}
+.method-body { display: flex; flex-direction: column; min-width: 0; }
+.method-label {
+  font-family: var(--font-accent);
+  font-style: italic;
+  font-weight: 700;
+  font-size: 0.92rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+.method-value { font-size: 0.92rem; color: var(--neon-purple); word-break: break-all; }
+.connect-note { font-size: 0.85rem; color: var(--color-secondary); margin: 0; line-height: 1.7; }
+.connect-form .google-form-container { margin: 0; }
+
+@media (max-width: 900px) {
+  .contact-connect { grid-template-columns: 1fr; gap: var(--space-lg); }
+}
+@media (max-width: 768px) {
+  .method-icon { width: 44px; height: 44px; font-size: 1.3rem; }
 }
 
 /* The Google Form is a cross-origin iframe (its inner UI can't be themed),
@@ -406,21 +461,22 @@
 
 .work-together-items {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: var(--space-lg);
-  max-width: 1000px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-md);
+  max-width: 1100px;
   margin: 0 auto;
 }
 
 .work-item {
   text-align: center;
-  padding: var(--space-xl);
+  padding: var(--space-lg) var(--space-md);
   background: var(--color-surface);
   border: 2px solid var(--color-ink);
   border-radius: var(--radius-lg);
   transition: var(--transition-normal);
   box-shadow: 4px 4px 0 var(--color-ink);
 }
+.work-item h3 { font-weight: 700; }
 
 .work-item:hover {
   background: var(--color-surface);
