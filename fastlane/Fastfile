@@ -239,7 +239,14 @@ platform :ios do
                     screenshots = iphone_set.app_screenshots
                     asc_screenshots = screenshots.map do |ss|
                       if ss.image_asset && ss.image_asset['templateUrl']
-                        ss.image_asset['templateUrl'].gsub('{w}', '1242').gsub('{h}', '0').gsub('{f}', 'webp')
+                        # スクリーンショットはクロップ符号 'w' でないと 400 になる（'bb' はアイコン用でスクショでは無効）。
+                        # サイズはどの値でもOKだが、Webサイト表示用に 626 を使用。
+                        ss.image_asset['templateUrl']
+                          .gsub('{w}', '626')
+                          .gsub('{h}', '0')
+                          .gsub('{c}', 'w')
+                          .gsub('{f}', 'webp')
+                          .sub(/\d+x\d+bb\.webp\z/, '626x0w.webp')
                       end
                     end.compact
                     UI.message("  ASC Screenshots: #{asc_screenshots.count}")
