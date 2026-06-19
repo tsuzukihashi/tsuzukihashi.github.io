@@ -356,6 +356,11 @@
   min-width: 0;
 }
 
+/* New apps that have no screenshots yet: compact card instead of a 450px empty box */
+.app-card-store:not(:has(.app-screenshots)) {
+  height: auto;
+}
+
 .app-card-store:hover {
   transform: translate(-3px, -3px);
   box-shadow: 9px 9px 0 var(--neon-purple);
