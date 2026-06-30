@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-28 23:19:22",
-  "total_apps": 61,
+  "generated_at": "2026-06-29 23:39:34",
+  "total_apps": 62,
   "categories": {
     "Health & Fitness": 6,
     "Lifestyle": 15,
@@ -10,7 +10,7 @@
     "Medical": 1,
     "Productivity": 5,
     "Photo & Video": 4,
-    "Utilities": 7,
+    "Utilities": 8,
     "Food & Drink": 3,
     "Social Networking": 2,
     "Games": 2,
@@ -42,8 +42,8 @@
         "エンターテインメント"
       ],
       "primary_genre": "Health & Fitness",
-      "rating": 4.10656,
-      "rating_count": 488,
+      "rating": 4.10838,
+      "rating_count": 489,
       "version": "2.8.1",
       "release_date": "2026-02-26T08:00:00Z",
       "current_version_release_date": "2026-06-24T08:48:26Z",
@@ -1087,8 +1087,8 @@
         "写真／ビデオ"
       ],
       "primary_genre": "Travel",
-      "rating": 4.60972,
-      "rating_count": 638,
+      "rating": 4.61033,
+      "rating_count": 639,
       "version": "1.50.0",
       "release_date": "2024-02-25T08:00:00Z",
       "current_version_release_date": "2026-06-28T00:01:20Z",
@@ -1812,8 +1812,8 @@
         "ユーティリティ"
       ],
       "primary_genre": "Lifestyle",
-      "rating": 4.8,
-      "rating_count": 5,
+      "rating": 4.83333,
+      "rating_count": 6,
       "version": "1.0.1",
       "release_date": "2026-04-11T07:00:00Z",
       "current_version_release_date": "2026-04-16T16:27:14Z",
@@ -2126,7 +2126,8 @@
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
       "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b8/7d/f4/b87df4ae-15f3-e466-ffb8-7706cec3c7fb/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/60x60bb.jpg",
-      "download_count": 0
+      "download_count": 0,
+      "bundle_id": "com.tsuzukit.ReelKeep"
     },
     {
       "id": 6782400804,
@@ -2158,7 +2159,8 @@
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
       "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/70/6c/84/706c84e6-4a07-0eab-3532-7cbb0c6d439d/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/60x60bb.jpg",
-      "download_count": 0
+      "download_count": 0,
+      "bundle_id": "com.tsuzukit.PenKeep"
     },
     {
       "id": 6782555676,
@@ -2190,7 +2192,8 @@
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
       "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/89/fa/56/89fa56b4-f260-93f6-6d4c-079aeb6f4b31/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/60x60bb.jpg",
-      "download_count": 0
+      "download_count": 0,
+      "bundle_id": "com.tsuzukit.KnifeKeep"
     },
     {
       "id": 6782294746,
@@ -2222,7 +2225,8 @@
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
       "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/12/db/49/12db496b-2b95-78c0-e5c7-5d8f21df4c26/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/60x60bb.jpg",
-      "download_count": 0
+      "download_count": 0,
+      "bundle_id": "com.tsuzukit.PassportAlertApp"
     },
     {
       "id": 6781759617,
@@ -2254,7 +2258,8 @@
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
       "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/34/d4/a4/34d4a48d-df6d-9095-be98-02580720aead/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/60x60bb.jpg",
-      "download_count": 0
+      "download_count": 0,
+      "bundle_id": "com.tsuzukit.WatchKeep"
     },
     {
       "id": 6781119303,
@@ -2286,6 +2291,40 @@
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
       "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/07/a7/4a/07a74a07-a6b3-1ad1-0f06-d9e379b9e061/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/60x60bb.jpg",
+      "download_count": 0,
+      "bundle_id": "com.tsuzukit.ShoeKeep"
+    },
+    {
+      "id": 6785027821,
+      "name": "CarKeep 愛車メンテ管理",
+      "bundle_id": "com.tsuzukit.CarKeep",
+      "app_store_url": "https://apps.apple.com/jp/app/carkeep-%E6%84%9B%E8%BB%8A%E3%83%A1%E3%83%B3%E3%83%86%E7%AE%A1%E7%90%86/id6785027821?uo=4",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b9/32/f9/b932f95e-cf6c-741e-a715-7793d5367bbd/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/36/f7/27/36f727ac-5412-ee03-16df-7c6f10a5337e/001.png/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c5/00/c7/c500c7d3-0f13-2c88-a34d-f98ffb4bcf96/002.png/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/4e/ad/94/4ead94e6-1ec9-97d6-79e2-a5a905d67573/003.png/626x0w.webp"
+      ],
+      "ipad_screenshots": [],
+      "price": "無料",
+      "currency": "JPY",
+      "genres": [
+        "ユーティリティ",
+        "ライフスタイル"
+      ],
+      "primary_genre": "Utilities",
+      "rating": 0,
+      "rating_count": 0,
+      "version": "1.0",
+      "release_date": "2026-06-29T07:00:00Z",
+      "current_version_release_date": "2026-06-29T07:00:24Z",
+      "description": "愛車のオイル交換、いつだっけ？タイヤローテーションは？車検はあと何日？\nCarKeepは、走行距離と周期の二軸で愛車の整備時期を管理する、ドライバーのためのメンテ手帳です。\n\n■ 走行距離×周期の二軸管理\nオイル交換やタイヤローテーションは「走行距離」で、車検やバッテリーは「期間」で。それぞれに合った軸でケア時期を自動計算。「あと約500kmでオイル交換」のように、ひと目で分かります。\n\n■ 主要な整備項目を最初から\n愛車を登録するだけで、オイル交換・タイヤローテーション・車検の主要項目を自動セット。オイルエレメント、ブレーキ、冷却水、ワイパー、エアフィルター、洗車なども追加できます。\n\n■ しつこく、やさしくお知らせ\n整備の時期が近づいたら事前に通知。過ぎてしまっても、ケアするまで毎日やさしくリマインド。「うっかり忘れ」を防ぎます。\n\n■ 愛車を写真で管理\n愛車の写真を登録（被写体だけを自動で切り抜き）。複数台の登録にも対応し、上部のスイッチャーでサッと切り替えできます。\n\n■ 整備手帳＆走行距離ログ\nいつ・何kmで・いくらで整備したかを記録。売却時の価値判断や、次回時期の予測に役立ちます。\n\n■ 今日の整備メモ\n実用的な整備の豆知識を毎日お届け。愛車をもっと長く、もっと調子よく。\n\n■ ウィジェット\nホーム画面で、次に整備が必要な愛車と残り（あと◯km／◯日）をひと目で確認。\n\n【無料版】愛車1台・ケア項目3つまで\n【プレミアム】愛車もケア項目も無制限／フル履歴／保管場所グループ／広告なし\n・買い切り ¥3,000（一度の購入でずっと使えます）\n・週額 ¥200\n\n※サブスクリプションは自動更新です。期間終了の24時間以上前に解約しない限り更新されます。購入後はApp Storeアカウントの設定から管理・解約できます。\n\n■ リンク\n・サポート: https://tsuzukit.com/contact/\n・利用規約: https://tsuzukit.com/legal/terms-of-service.html\n・プライバシーポリシー: https://tsuzukit.com/legal/privacy-policy.html",
+      "release_notes": null,
+      "content_advisory_rating": "4+",
+      "minimum_os_version": "17.0",
+      "developer_name": "Ryo Tsudukihashi",
+      "seller_name": "TsuzuKit",
+      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b9/32/f9/b932f95e-cf6c-741e-a715-7793d5367bbd/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/60x60bb.jpg",
       "download_count": 0
     }
   ]

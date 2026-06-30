@@ -31,8 +31,10 @@ APPS = os.path.join(ROOT, "assets", "data", "apps.json")
 PUBLIC = os.path.join(ROOT, "assets", "data", "apps_public.json")
 
 # apps_public から取り込む公開フィールド（毎回上書きして最新化）
+# ※ bundle_id を含めることで build_new で追加した新規アプリにも bundle_id が入り、
+#   かつ既存アプリへ backfill される（過去 bundle_id 無しで追加された分の補完）。
 PUBLIC_FIELDS = [
-    "name", "app_store_url", "icon_url", "screenshots", "ipad_screenshots",
+    "name", "bundle_id", "app_store_url", "icon_url", "screenshots", "ipad_screenshots",
     "price", "currency", "genres", "primary_genre", "rating", "rating_count",
     "version", "release_date", "current_version_release_date",
     "description", "release_notes", "content_advisory_rating",
@@ -117,19 +119,26 @@ def update_html(published, developed, reviews, rating, changes):
 def main():
     pub = load(PUBLIC)
     app = load(APPS)
-    pub_by_bundle = {a["bundle_id"]: a for a in pub["apps"] if a.get("bundle_id")}
+    # 照合キーは App Store の数値 id（apps.json は全件 id を保持、apps_public は
+    # app_store_url から導出できる）。bundle_id は過去に build_new で追加した
+    # アプリで欠落しうるため、照合キーには使わない（重複追加の原因になる）。
+    pub_by_id = {}
+    for src in pub["apps"]:
+        aid = src.get("id") or id_from_url(src.get("app_store_url"))
+        if aid is not None:
+            pub_by_id[aid] = src
 
     refreshed, new_added, stale = [], [], []
     seen = set()
 
     # 既存アプリの公開フィールドを最新化（キュレーション項目は保持）
     for a in app["apps"]:
-        b = a.get("bundle_id")
-        src = pub_by_bundle.get(b)
+        aid = a.get("id") or id_from_url(a.get("app_store_url"))
+        src = pub_by_id.get(aid)
         if not src:
             stale.append(a.get("name"))
             continue
-        seen.add(b)
+        seen.add(aid)
         changed = False
         for k in PUBLIC_FIELDS:
             if k in src and a.get(k) != src.get(k):
@@ -142,9 +151,9 @@ def main():
         if changed:
             refreshed.append(a.get("name"))
 
-    # 新規アプリを追加
-    for b, src in pub_by_bundle.items():
-        if b in seen:
+    # 新規アプリを追加（id で照合済みなので既存とは重複しない）
+    for aid, src in pub_by_id.items():
+        if aid in seen:
             continue
         entry = build_new(src)
         app["apps"].append(entry)
