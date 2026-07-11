@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026-06-30 限界個人開発者の月収１０００万円計画 - Blog | Ryo Tsuzukihashi</title>
+    <meta name="description" content="2026年6月の収益は341,961円。うんちくんは月5万ダウンロード目前。上半期の合計240万円もあわせて振り返る。">
+    <meta name="keywords" content="個人開発, 収益公開, 月収1000万円, iOSアプリ, AdMob, App Store, Google Play, tsuzuki817">
+
+    <!-- OGP -->
+    <meta property="og:title" content="2026-06-30 限界個人開発者の月収１０００万円計画">
+    <meta property="og:description" content="2026年6月の収益は341,961円。うんちくんは月5万ダウンロード目前。上半期の合計240万円もあわせて振り返る。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://tsuzukit.com/blog/posts/income-report-2026-06.html">
+    <meta property="og:image" content="https://tsuzukit.com/assets/images/ogp/blog.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERPQ1EGLH');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8240751277462688"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
+    <style>
+        .revenue-summary {
+            background: var(--color-surface);
+            border: 2px solid var(--color-ink);
+            box-shadow: 8px 8px 0 var(--neon-purple);
+            padding: var(--spacing-xl);
+            border-radius: 20px;
+            text-align: center;
+            margin: var(--spacing-2xl) 0;
+        }
+        .revenue-summary h3 { font-family: var(--font-accent); font-style: italic; font-weight: 700; font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-secondary); margin-bottom: var(--spacing-sm); }
+        .revenue-number { font-family: var(--font-impact); font-style: italic; font-size: 3.6rem; color: var(--color-ink); line-height: 1.1; }
+        .revenue-mom { font-size: var(--font-size-md); margin-top: var(--spacing-sm); color: var(--color-secondary); }
+        .goal-progress { margin: var(--spacing-lg) auto 0; max-width: 480px; }
+        .goal-progress-label { display: flex; justify-content: space-between; font-family: var(--font-accent); font-style: italic; font-weight: 700; font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-secondary); margin-bottom: 6px; }
+        .goal-progress-bar { background: var(--color-surface); border: 2px solid var(--color-ink); border-radius: 999px; height: 16px; overflow: hidden; }
+        .goal-progress-fill { background: var(--neon-purple); height: 100%; border-radius: 999px; min-width: 4px; }
+        .platform-table { width: 100%; border-collapse: collapse; margin: var(--spacing-lg) 0; border: 2px solid var(--color-ink); }
+        .platform-table th, .platform-table td { padding: 12px 16px; text-align: right; border-bottom: 1px solid var(--color-border); }
+        .platform-table th:first-child, .platform-table td:first-child { text-align: left; }
+        .platform-table th { background: var(--color-surface-2); font-family: var(--font-accent); font-style: italic; font-weight: 700; letter-spacing: 0.05em; font-size: 13px; color: var(--color-secondary); border-bottom: 2px solid var(--color-ink); }
+        .platform-table .total-row td { font-weight: 700; background: var(--color-sun-soft); border-top: 2px solid var(--color-ink); }
+        .app-highlight { background: var(--color-surface); border: 2px solid var(--color-ink); box-shadow: 5px 5px 0 var(--color-ink); border-radius: 16px; padding: 20px 24px; margin: 24px 0; }
+        .app-highlight.shadow-purple { box-shadow: 5px 5px 0 var(--neon-purple); }
+        .app-highlight.shadow-cyan { box-shadow: 5px 5px 0 var(--neon-cyan); }
+        .app-highlight.shadow-pink { box-shadow: 5px 5px 0 var(--neon-pink); }
+        .app-highlight.shadow-yellow { box-shadow: 5px 5px 0 var(--pop-yellow); }
+        .app-highlight-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-bottom: 8px; }
+        .app-highlight-name { font-weight: 700; color: var(--color-primary); }
+        .app-highlight-amount { font-family: var(--font-impact); font-style: italic; font-size: 1.5rem; color: var(--color-ink); white-space: nowrap; }
+        .app-highlight p { margin: 0; font-size: 14px; color: var(--color-secondary); line-height: 1.7; }
+        .next-action-list { list-style: none; padding: 0; margin: var(--spacing-lg) 0; counter-reset: na; }
+        .next-action-list li { counter-increment: na; position: relative; background: var(--color-surface); border: 2px solid var(--color-ink); box-shadow: 4px 4px 0 var(--color-ink); border-radius: 12px; padding: 16px 20px 16px 60px; margin-bottom: 16px; font-weight: 500; }
+        .next-action-list li::before { content: counter(na); position: absolute; left: 18px; top: 50%; transform: translateY(-50%); width: 28px; height: 28px; border-radius: 50%; background: var(--color-ink); color: #fff; font-family: var(--font-accent); font-style: italic; font-weight: 700; display: flex; align-items: center; justify-content: center; font-size: 14px; }
+        .notice-box { background: var(--color-surface-2); border-left: 4px solid var(--color-ink); padding: 16px 20px; border-radius: 0 8px 8px 0; font-size: 13px; color: var(--color-secondary); line-height: 1.8; margin: var(--spacing-2xl) 0 0; }
+        .series-link { display: block; background: var(--color-surface); border: 2px solid var(--color-ink); box-shadow: 4px 4px 0 var(--neon-cyan); border-radius: 12px; padding: 14px 20px; margin: var(--spacing-lg) 0; text-decoration: none; color: var(--color-primary); font-weight: 700; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .series-link:hover { transform: translate(-3px, -3px); box-shadow: 7px 7px 0 var(--neon-pink); }
+        @media (max-width: 768px) {
+            .revenue-number { font-size: 2.6rem; }
+            .platform-table th, .platform-table td { padding: 10px 8px; font-size: 13px; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">Ryo Tsuzukihashi</a>
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/portfolio/" class="nav-link">Portfolio</a>
+                <a href="/blog/" class="nav-link">Blog</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post -->
+    <article class="blog-post">
+        <header class="post-header">
+            <div class="post-meta">
+                <span class="post-date">2026.06.30</span>
+                <span class="post-category">月収1000万円計画</span>
+                <span class="post-reading-time">5分で読める</span>
+            </div>
+            <h1 class="post-title">2026-06-30<br>限界個人開発者の月収１０００万円計画</h1>
+        </header>
+
+        <div class="post-content">
+
+            <p>
+                こんにちは、tsuzuki817（<a href="https://twitter.com/tsuzuki817" target="_blank">@tsuzuki817</a>）です。
+                収益をぜんぶ公開して次の一手を決める連載「限界個人開発者の月収１０００万円計画」、2026年6月号です。
+            </p>
+            <a href="/blog/income-report/" class="series-link">📈 シリーズの全記事と推移グラフは特設ページにあります</a>
+
+            <div class="revenue-summary">
+                <h3>2026年6月の総収益</h3>
+                <div class="revenue-number">¥341,961</div>
+                <div class="revenue-mom">前月比 <strong style="color:var(--neon-cyan);">+1.1%</strong>（前月 ¥338,294）</div>
+                <div class="goal-progress">
+                    <div class="goal-progress-label"><span>目標達成率</span><span>3.42% / ¥10,000,000</span></div>
+                    <div class="goal-progress-bar"><div class="goal-progress-fill" style="width: 3.42%;"></div></div>
+                </div>
+            </div>
+
+            <h1>プラットフォーム別内訳</h1>
+            <table class="platform-table">
+                <thead>
+                    <tr><th>プラットフォーム</th><th>収益</th><th>前月比</th></tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>AdMob（広告）</td>
+                    <td>¥141,580</td>
+                    <td>+1.4%</td>
+                </tr>
+                <tr>
+                    <td>App Store（課金）</td>
+                    <td>¥195,141</td>
+                    <td>+4.0%</td>
+                </tr>
+                <tr>
+                    <td>Google Play（課金）</td>
+                    <td>¥5,240</td>
+                    <td>-52.5%</td>
+                </tr>
+                <tr class="total-row">
+                    <td>合計</td>
+                    <td>¥341,961</td>
+                    <td>+1.1%</td>
+                </tr>
+                </tbody>
+            </table>
+            <p style="font-size: 13px; color: var(--color-text-light);"></p>
+
+            <h1>今月のアプリ別ハイライト</h1>
+            <div class="app-highlight shadow-purple">
+                <div class="app-highlight-head">
+                    <span class="app-highlight-name">うんちくん</span>
+                    <span class="app-highlight-amount">¥172,736</span>
+                </div>
+                <p>ダウンロードがついに月49,363件。App Storeで47,129円、iOS広告で105,988円、Android広告で15,909円、Playで3,710円。</p>
+            </div>
+            <div class="app-highlight shadow-cyan">
+                <div class="app-highlight-head">
+                    <span class="app-highlight-name">旅行思い出マップ</span>
+                    <span class="app-highlight-amount">¥82,348</span>
+                </div>
+                <p>サブスク73,086円と復調。サポータープランの安定感が光る。</p>
+            </div>
+            <div class="app-highlight shadow-pink">
+                <div class="app-highlight-head">
+                    <span class="app-highlight-name">ゼリーセイムパズル</span>
+                    <span class="app-highlight-amount">¥8,502</span>
+                </div>
+                <p>ハンマーチケットという消耗型アイテムが売れた。ゲーム内課金という新しいタイプの収益。</p>
+            </div>
+
+            <h1>分析</h1>
+
+<p>341,961円。3ヶ月続けて月30万円台に乗り、下限がほぼ固まりました。</p>
+<p>うんちくんのダウンロードは月49,363件。iOSとAndroidの広告、iOSとAndroidの課金という4つの財布から収益が入る、理想的なマルチプラットフォームアプリになっています。</p>
+<p>ここで2026年上半期のまとめを。1月から6月の合計は2,399,549円、月平均399,925円でした。去年11月の月3.8万円から、半年ちょっとで月平均40万円のラインまで来ています。目標の1000万円にはまだ3.4%ですが、成長率で見れば悪くないペースです。</p>
+<p>次の壁ははっきりしています。バズ抜きで月50万円。うんちくんの5万ダウンロードを収益に変える効率と、新しい柱の追加が鍵です。</p>
+
+
+            <h1>NextAction</h1>
+            <p>この数字を見て、来月やることを3つ決めました。</p>
+            <ol class="next-action-list">
+                <li>7月に新アプリを複数出す。CarKeepなどを準備中</li>
+                <li>ASOとローカライズで、うんちくんを月5万から10万ダウンロードへ</li>
+                <li>eCPM2,609円の実績があるリワードインタースティシャルの配置を広げる</li>
+            </ol>
+
+            <p>上半期240万円。下半期は月50万円の下限を作りに行きます。</p>
+            <p>それでは、また来月の報告で。</p>
+
+            <div class="notice-box">
+                数値について。AdMobは管理画面の推定収益額で、確定額とは数％ずれることがあります。App Storeは手数料を引いた開発者受取額で、外貨分は月末レートで円に換算した概算を含みます。Google Playはサービス手数料を引いた受取額です。締め日の関係で、実際の振込額とは一致しません。
+            </div>
+        </div>
+
+        <nav class="post-navigation">
+            <a href="/blog/posts/income-report-2026-05.html" class="nav-link-wrapper"><span>&larr; 2026年5月号</span></a>
+            <a href="/blog/income-report/" class="nav-link-wrapper"><span>シリーズ一覧</span></a>
+            
+        </nav>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
+                    <p class="footer-description">思い出&times;テクノロジーで新しい価値を創造</p>
+                </div>
+                <div class="footer-nav">
+                    <a href="/legal/privacy-policy.html">プライバシーポリシー</a>
+                    <a href="/legal/terms-of-service.html">利用規約</a>
+                    <a href="/legal/commercial-law.html">特定商取引法</a>
+                    <a href="/legal/disclaimer.html">免責事項</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ryo Tsuzukihashi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

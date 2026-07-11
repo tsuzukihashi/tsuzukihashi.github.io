@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>限界個人開発者の月収１０００万円計画 前史編（2016〜2025） - Blog | Ryo Tsuzukihashi</title>
+    <meta name="description" content="開発開始は2016年、初収益は3年後の2019年7月に21円。収益ゼロの時代から流れるメモ帳のバズ、旅行思い出マップの季節、課金元年前夜まで。月収1000万円計画が始まる前の約10年を全部記録した。">
+    <meta name="keywords" content="個人開発, 収益公開, 月収1000万円, iOSアプリ, AdMob, 流れるメモ帳, 旅行思い出マップ, tsuzuki817">
+
+    <!-- OGP -->
+    <meta property="og:title" content="限界個人開発者の月収１０００万円計画 前史編（2016〜2025）">
+    <meta property="og:description" content="開発開始は2016年、初収益は3年後の21円。計画が始まる前の約10年の全記録">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://tsuzukit.com/blog/posts/income-report-prehistory.html">
+    <meta property="og:image" content="https://tsuzukit.com/assets/images/ogp/blog.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERPQ1EGLH');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8240751277462688"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
+    <style>
+        .revenue-summary {
+            background: var(--color-surface);
+            border: 2px solid var(--color-ink);
+            box-shadow: 8px 8px 0 var(--neon-purple);
+            padding: var(--spacing-xl);
+            border-radius: 20px;
+            text-align: center;
+            margin: var(--spacing-2xl) 0;
+        }
+        .revenue-summary h3 { font-family: var(--font-accent); font-style: italic; font-weight: 700; font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-secondary); margin-bottom: var(--spacing-sm); }
+        .revenue-number { font-family: var(--font-impact); font-style: italic; font-size: 3.6rem; color: var(--color-ink); line-height: 1.1; }
+        .revenue-sub { font-size: var(--font-size-md); margin-top: var(--spacing-sm); color: var(--color-secondary); }
+        .platform-table { width: 100%; border-collapse: collapse; margin: var(--spacing-lg) 0; border: 2px solid var(--color-ink); }
+        .platform-table th, .platform-table td { padding: 12px 16px; text-align: right; border-bottom: 1px solid var(--color-border); }
+        .platform-table th:first-child, .platform-table td:first-child { text-align: left; }
+        .platform-table th:last-child, .platform-table td:last-child { text-align: left; }
+        .platform-table th { background: var(--color-surface-2); font-family: var(--font-accent); font-style: italic; font-weight: 700; letter-spacing: 0.05em; font-size: 13px; color: var(--color-secondary); border-bottom: 2px solid var(--color-ink); }
+        .platform-table .peak-row td { font-weight: 700; background: var(--color-sun-soft); }
+        .era-badge {
+            display: inline-block;
+            background: var(--color-ink);
+            color: #fff;
+            font-family: var(--font-accent);
+            font-style: italic;
+            padding: 6px 18px;
+            border-radius: 999px;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            rotate: -1deg;
+            margin: var(--spacing-xl) 0 var(--spacing-md);
+        }
+        .first-coin {
+            text-align: center;
+            background: var(--color-surface);
+            border: 2px solid var(--color-ink);
+            box-shadow: 5px 5px 0 var(--pop-yellow);
+            border-radius: 16px;
+            padding: 24px;
+            margin: var(--spacing-xl) 0;
+        }
+        .first-coin .coin { font-size: 3rem; }
+        .first-coin .amount { font-family: var(--font-impact); font-style: italic; font-size: 2.6rem; color: var(--color-ink); }
+        .first-coin p { margin: 8px 0 0; color: var(--color-secondary); font-size: 14px; }
+        .lesson-list { list-style: none; padding: 0; margin: var(--spacing-lg) 0; counter-reset: le; }
+        .lesson-list li { counter-increment: le; position: relative; background: var(--color-surface); border: 2px solid var(--color-ink); box-shadow: 4px 4px 0 var(--color-ink); border-radius: 12px; padding: 16px 20px 16px 60px; margin-bottom: 16px; font-weight: 500; }
+        .lesson-list li::before { content: counter(le); position: absolute; left: 18px; top: 50%; transform: translateY(-50%); width: 28px; height: 28px; border-radius: 50%; background: var(--color-ink); color: #fff; font-family: var(--font-accent); font-style: italic; font-weight: 700; display: flex; align-items: center; justify-content: center; font-size: 14px; }
+        .notice-box { background: var(--color-surface-2); border-left: 4px solid var(--color-ink); padding: 16px 20px; border-radius: 0 8px 8px 0; font-size: 13px; color: var(--color-secondary); line-height: 1.8; margin: var(--spacing-2xl) 0 0; }
+        .series-link { display: block; background: var(--color-surface); border: 2px solid var(--color-ink); box-shadow: 4px 4px 0 var(--neon-cyan); border-radius: 12px; padding: 14px 20px; margin: var(--spacing-lg) 0; text-decoration: none; color: var(--color-primary); font-weight: 700; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .series-link:hover { transform: translate(-3px, -3px); box-shadow: 7px 7px 0 var(--neon-pink); }
+        @media (max-width: 768px) {
+            .revenue-number { font-size: 2.6rem; }
+            .platform-table th, .platform-table td { padding: 10px 8px; font-size: 13px; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">Ryo Tsuzukihashi</a>
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/portfolio/" class="nav-link">Portfolio</a>
+                <a href="/blog/" class="nav-link">Blog</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post -->
+    <article class="blog-post">
+        <header class="post-header">
+            <div class="post-meta">
+                <span class="post-date">2016-2025</span>
+                <span class="post-category">月収1000万円計画</span>
+                <span class="post-reading-time">8分で読める</span>
+            </div>
+            <h1 class="post-title">限界個人開発者の<br>月収１０００万円計画 前史編</h1>
+        </header>
+
+        <div class="post-content">
+            <p>
+                こんにちは、tsuzuki817（<a href="https://twitter.com/tsuzuki817" target="_blank">@tsuzuki817</a>）です。
+                毎月の収益を公開して次の一手を決める連載「限界個人開発者の月収１０００万円計画」は2025年11月に始まりました。ただ、僕の個人開発はもっとずっと前から続いています。
+            </p>
+            <p>
+                この記事は前史編です。開発を始めた2016年から連載が始まるまで、約10年分の記録を掘り起こしました。先に白状すると、最初の3年間の収益はゼロです。
+            </p>
+            <a href="/blog/income-report/" class="series-link">📈 シリーズの全記事と推移グラフは特設ページにあります</a>
+
+            <div class="first-coin">
+                <div class="coin">🪙</div>
+                <div class="amount">¥21</div>
+                <p>2016年に開発を始めて3年。2019年7月、人生初のアプリ収益がAdMobから入った。<br>広告表示254回、クリック3回。すべてはここから始まった。</p>
+            </div>
+
+            <div class="revenue-summary">
+                <h3>前史 約10年間の累計収益（2016〜2025.10）</h3>
+                <div class="revenue-number">¥2,157,364</div>
+                <div class="revenue-sub">うち最初の3年間は¥0。収益が出た76ヶ月の月平均 約¥28,000</div>
+            </div>
+
+            <h1>年別収益の推移</h1>
+            <table class="platform-table">
+                <thead>
+                    <tr><th>年</th><th>広告収益（AdMob）</th><th>その年の主役</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>2016〜2018年</td><td>¥0</td><td>収益ゼロ。ひたすら作る</td></tr>
+                    <tr><td>2019年（7月〜）</td><td>¥493</td><td>初収益の¥21</td></tr>
+                    <tr><td>2020年</td><td>¥7,861</td><td>5月に¥3,128の小さな山</td></tr>
+                    <tr><td>2021年</td><td>¥7,310</td><td>月数百円の暗黒期</td></tr>
+                    <tr class="peak-row"><td>2022年</td><td>¥978,411</td><td>流れるメモ帳の大バズ</td></tr>
+                    <tr><td>2023年</td><td>¥293,513</td><td>バズの余熱と減衰</td></tr>
+                    <tr><td>2024年</td><td>¥577,308</td><td>旅行思い出マップ登場</td></tr>
+                    <tr><td>2025年（〜10月）</td><td>¥292,468</td><td>停滞、そして課金元年前夜</td></tr>
+                </tbody>
+            </table>
+            <p style="font-size: 13px; color: var(--color-text-light);">この期間のApp Store課金収益は実質ゼロでした。詳しくは記事末尾の注記に。</p>
+
+            <span class="era-badge">2016〜2019　収益ゼロで作り続けた3年間</span>
+            <p>
+                個人開発を始めたのは2016年。最初の3年間の収益は完全にゼロです。マネタイズはほぼ手つかずで、作りたいから作るをひたすら繰り返していました。
+            </p>
+            <p>
+                収益の記録としては何も残っていない3年間ですが、リリースの経験とアプリの資産はここで積み上がりました。個人開発は始めた瞬間にお金になるものじゃない。それをいちばん長く体験した時代です。
+            </p>
+
+            <span class="era-badge">2019〜2021　¥21から始まった暗黒期</span>
+            <p>
+                2019年7月、AdMobを入れて初めての収益が発生します。その額21円。開発を始めて3年目のことでした。そこから2年半、収益は月数百円から数千円をさまよい続けます。2021年末までの合計は15,664円。時給に換算してはいけない数字です。
+            </p>
+            <p>
+                それでもこの時期にWidgetQiitaやPIPMP、AlwaysOnTimerを出して、Picture in PictureやWidgetといったiOSの新機能に全乗っかりする作風が固まりました。この積み重ねが次の年に爆発します。
+            </p>
+
+            <span class="era-badge">2022年　流れるメモ帳、バズる</span>
+            <p>
+                2022年1月、それまで月1,000円だった収益がいきなり132,771円に跳ね上がります。主役は流れるメモ帳。メモを画面の上に流し続けるアプリがSNSでバズって、3月には単体で146,718円、4月も140,857円を稼ぎました。この年の収益は978,411円。それまでの3年分の60倍です。
+            </p>
+            <p>
+                流れるメモ帳の累計広告収益は約146万円。お小遣いにもならない趣味だった個人開発を、事業になり得るものに変えてくれた恩人みたいなアプリです。同じ時期にPIPMPも月2万円台を記録して、新機能系アプリがバズを呼ぶ再現性を初めて意識しました。
+            </p>
+
+            <span class="era-badge">2023年　余熱と現実</span>
+            <p>
+                バズは永遠には続きません。2023年の収益は293,513円と前年の3分の1以下になり、流れるメモ帳は月2万から3万円の余熱に落ち着いていきました。
+            </p>
+            <p>
+                この年に痛感したのが、後の連載でも何度も出てくる教訓です。バズは花火であって資産ではない。打ち上がっている間に、次の柱を作らないといけない。
+            </p>
+
+            <span class="era-badge">2024年　旅行思い出マップの年</span>
+            <p>
+                2024年の収益は577,308円と復調します。新しい主役は旅行思い出マップ。3月に40,521円、4月に60,801円、5月には134,085円と、旅行シーズンへ向けてきれいな右肩上がりを描きました。ゴールデンウィークの力、恐るべし。
+            </p>
+            <p>
+                旅行系アプリは春と夏と年末に伸びる。この強い季節性を学んだのがこの年です。流れるメモ帳も月1万円強を出し続けて、初めて複数の柱らしきものができました。
+            </p>
+
+            <span class="era-badge">2025年1〜10月　停滞、そして課金元年前夜</span>
+            <p>
+                2025年は10月までで292,468円。月2万から4万円を行き来する停滞期です。アプリは50本を超えたのに、収益がついてこない。限界個人開発者という自虐はこの頃に生まれました。
+            </p>
+            <p>
+                原因ははっきりしていました。収益源が広告しかないことです。広告は毎日使われるかどうかで決まるので、ツール系アプリを何十本並べても天井が低い。
+            </p>
+            <p>
+                だから2025年11月、サブスクリプションや買い切りといった課金の仕組みを本格導入すると決めました。App Store課金という2つ目のエンジンに火が入って、ここから本編が始まります。
+            </p>
+
+            <h1>前史 約10年間の教訓</h1>
+            <ol class="lesson-list">
+                <li>個人開発はすぐにはお金にならない。初収益の¥21まで3年かかった</li>
+                <li>バズは花火。2022年（流れるメモ帳）と2024年（旅行思い出マップ）の2回の山は、どちらも数ヶ月で減衰した</li>
+                <li>広告収益だけでは天井が低い。50本以上アプリを作っても月数万円が現実だった</li>
+                <li>それでも作り続けたアプリの資産が、後の課金導入（本編）で一気に効いてくる</li>
+            </ol>
+
+            <p>
+                2016年に始まった10年間の物語は、ここから月収1000万円を目指す物語に変わります。
+            </p>
+            <p>
+                続きは本編の創刊号からどうぞ。
+            </p>
+            <a href="/blog/posts/income-report-2025-11.html" class="series-link">📖 本編の創刊号、2025年11月号を読む</a>
+
+            <div class="notice-box">
+                数値について。この記事の収益はすべてAdMob管理画面の推定収益額です。App Storeの月次売上レポートはAppleが直近分しか保持しておらず、前史期間の課金売上は月次では検証できません。ただ2025年の年次レポートを見ると課金の受取額はほぼすべて11月以降に発生していて、前史のApp Store収益は実質ゼロと確認しています。Google Playの収益は2026年1月からです。
+            </div>
+        </div>
+
+        <nav class="post-navigation">
+            <a href="/blog/income-report/" class="nav-link-wrapper"><span>シリーズ一覧</span></a>
+            <a href="/blog/posts/income-report-2025-11.html" class="nav-link-wrapper"><span>本編 創刊号（2025年11月）&rarr;</span></a>
+        </nav>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
+                    <p class="footer-description">思い出&times;テクノロジーで新しい価値を創造</p>
+                </div>
+                <div class="footer-nav">
+                    <a href="/legal/privacy-policy.html">プライバシーポリシー</a>
+                    <a href="/legal/terms-of-service.html">利用規約</a>
+                    <a href="/legal/commercial-law.html">特定商取引法</a>
+                    <a href="/legal/disclaimer.html">免責事項</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ryo Tsuzukihashi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

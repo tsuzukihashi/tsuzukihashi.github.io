@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>限界個人開発者の月収１０００万円計画 - Blog | Ryo Tsuzukihashi</title>
+    <meta name="description" content="AdMobとApp StoreとGoogle Playの収益を毎月すべて公開して、数字から次の一手を決める連載。個人開発で月収1000万円を目指す記録です。">
+    <meta name="keywords" content="個人開発, 収益公開, 月収1000万円, iOSアプリ, AdMob, App Store, Google Play, tsuzuki817">
+
+    <!-- OGP -->
+    <meta property="og:title" content="限界個人開発者の月収１０００万円計画">
+    <meta property="og:description" content="AdMobとApp StoreとGoogle Playの収益を毎月すべて公開して、次の一手を決める連載">
+    <meta property="og:image" content="https://tsuzukit.com/assets/images/ogp/blog.png">
+    <meta property="og:url" content="https://tsuzukit.com/blog/income-report/">
+    <meta property="og:type" content="website">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../assets/css/memories-tech.css">
+    <link rel="stylesheet" href="../../assets/css/about.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="../../favicon.ico">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERPQ1EGLH');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8240751277462688"
+        crossorigin="anonymous"></script>
+
+    <style>
+        .money-emoji {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4.5rem;
+        }
+        .stats-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: var(--space-md);
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .goal-progress { max-width: 560px; margin: var(--space-md) auto 0; }
+        .goal-progress-label {
+            display: flex;
+            justify-content: space-between;
+            font-family: var(--font-accent);
+            font-style: italic;
+            font-weight: 700;
+            font-size: 0.8rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--ab-muted);
+            margin-bottom: 6px;
+        }
+        .goal-progress-bar { background: #fff; border: 2px solid var(--ab-ink); border-radius: 999px; height: 18px; overflow: hidden; box-shadow: 4px 4px 0 var(--ab-ink); }
+        .goal-progress-fill { background: var(--ab-purple); height: 100%; border-radius: 999px; min-width: 5px; }
+
+        .chart-section { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+        .revenue-chart {
+            display: flex;
+            align-items: flex-end;
+            gap: 10px;
+            height: 260px;
+            margin: var(--space-md) 0 0;
+            padding: 0 4px;
+            border-bottom: 3px solid var(--ab-ink);
+        }
+        .chart-bar-wrap { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; height: 100%; text-decoration: none; }
+        .chart-value { font-family: var(--font-accent); font-style: italic; font-weight: 700; font-size: 0.75rem; color: var(--ab-ink); margin-bottom: 4px; white-space: nowrap; }
+        .chart-bar { width: 100%; background: var(--ab-purple); border: 2px solid var(--ab-ink); border-bottom: none; border-radius: 8px 8px 0 0; min-height: 4px; transition: transform 0.3s ease; box-sizing: border-box; }
+        .chart-bar.peak { background: var(--ab-yellow); }
+        .chart-bar-wrap:hover .chart-bar { transform: translateY(-4px); }
+        .chart-label { font-family: var(--font-accent); font-style: italic; font-weight: 700; font-size: 0.72rem; letter-spacing: 0.04em; color: var(--ab-muted); margin-top: 8px; white-space: nowrap; }
+        .chart-note { font-size: 0.8rem; color: var(--ab-muted); text-align: center; margin-top: 12px; }
+
+        a.career-item { text-decoration: none; color: inherit; }
+        .career-content h3 .mom-up { font-family: var(--font-accent); font-style: italic; font-size: 0.85rem; color: var(--ab-cyan); margin-left: 8px; }
+        .career-content h3 .mom-down { font-family: var(--font-accent); font-style: italic; font-size: 0.85rem; color: var(--ab-pink); margin-left: 8px; }
+        .career-item.current .career-company { color: var(--ab-pink); }
+
+        .notes-text { max-width: 760px; margin: 0 auto; color: var(--ab-muted); font-size: 0.95rem; line-height: 2; text-align: center; }
+
+        @media (max-width: 640px) {
+            .chart-value { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">TsuzuKit</a>
+            <div class="nav-menu" id="navMenu">
+                <a href="/portfolio/" class="nav-link">Portfolio</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/blog/" class="nav-link active">Blog</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="about-hero">
+        <div class="memory-shapes">
+            <div class="memory-shape"></div>
+            <div class="memory-shape"></div>
+            <div class="memory-shape"></div>
+        </div>
+
+        <div class="about-hero-content">
+            <div class="profile-image-wrapper">
+                <div class="profile-image money-emoji">💰</div>
+                <div class="profile-status">達成率 3.42%</div>
+            </div>
+
+            <h1 class="about-title">
+                ROAD TO ¥10M
+                <span class="about-subtitle">限界個人開発者の月収１０００万円計画</span>
+            </h1>
+
+            <p class="about-tagline">
+                AdMobとApp StoreとGoogle Playの収益を毎月すべて公開して、数字から次の一手を決める。月収1000万円になるまで続ける連載です。
+            </p>
+
+            <div class="about-badges">
+                <span class="badge">AdMob</span>
+                <span class="badge">App Store</span>
+                <span class="badge">Google Play</span>
+            </div>
+
+            <div class="goal-progress">
+                <div class="goal-progress-label"><span>Goal Progress</span><span>3.42% / ¥10,000,000</span></div>
+                <div class="goal-progress-bar"><div class="goal-progress-fill" style="width: 3.42%;"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="about-marquee">
+        <div class="marquee-track">
+            <span class="marquee-item">MONTHLY ¥341,961</span>
+            <span class="marquee-sep">▶</span>
+            <span class="marquee-item outline">GOAL ¥10,000,000</span>
+            <span class="marquee-sep">▶</span>
+            <span class="marquee-item">SINCE ¥21</span>
+            <span class="marquee-sep">▶</span>
+            <span class="marquee-item outline">INDIE HACKER</span>
+            <span class="marquee-sep">▶</span>
+            <span class="marquee-item">MONTHLY ¥341,961</span>
+            <span class="marquee-sep">▶</span>
+            <span class="marquee-item outline">GOAL ¥10,000,000</span>
+            <span class="marquee-sep">▶</span>
+            <span class="marquee-item">SINCE ¥21</span>
+            <span class="marquee-sep">▶</span>
+            <span class="marquee-item outline">INDIE HACKER</span>
+            <span class="marquee-sep">▶</span>
+        </div>
+    </div>
+
+    <!-- Stats -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Now</span>
+                <h2 class="section-title">いまの数字</h2>
+            </div>
+            <div class="stats-row">
+                <div class="intro-stat">
+                    <div class="intro-stat-icon">🪙</div>
+                    <div class="intro-stat-number">¥21</div>
+                    <div class="intro-stat-label">初収益 2019.7</div>
+                </div>
+                <div class="intro-stat">
+                    <div class="intro-stat-icon">📈</div>
+                    <div class="intro-stat-number">¥341,961</div>
+                    <div class="intro-stat-label">最新月収 2026.6</div>
+                </div>
+                <div class="intro-stat">
+                    <div class="intro-stat-icon">🚀</div>
+                    <div class="intro-stat-number">¥1,050,092</div>
+                    <div class="intro-stat-label">最高月収 2026.3</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chart -->
+    <section class="section section-alt">
+        <div class="chart-section">
+            <div class="section-header">
+                <span class="section-label">Progress</span>
+                <h2 class="section-title">月次収益の推移</h2>
+            </div>
+            <div class="revenue-chart">
+                <a class="chart-bar-wrap" href="/blog/posts/income-report-2025-11.html">
+                    <span class="chart-value">3.8万</span>
+                    <div class="chart-bar" style="height: 3.6%;"></div>
+                    <span class="chart-label">25.11</span>
+                </a>
+                <a class="chart-bar-wrap" href="/blog/posts/income-report-2025-12.html">
+                    <span class="chart-value">8.2万</span>
+                    <div class="chart-bar" style="height: 7.8%;"></div>
+                    <span class="chart-label">25.12</span>
+                </a>
+                <a class="chart-bar-wrap" href="/blog/posts/income-report-2026-01.html">
+                    <span class="chart-value">9.4万</span>
+                    <div class="chart-bar" style="height: 9%;"></div>
+                    <span class="chart-label">26.01</span>
+                </a>
+                <a class="chart-bar-wrap" href="/blog/posts/income-report-2026-02.html">
+                    <span class="chart-value">21.5万</span>
+                    <div class="chart-bar" style="height: 20.5%;"></div>
+                    <span class="chart-label">26.02</span>
+                </a>
+                <a class="chart-bar-wrap" href="/blog/posts/income-report-2026-03.html">
+                    <span class="chart-value">105万</span>
+                    <div class="chart-bar peak" style="height: 100%;"></div>
+                    <span class="chart-label">26.03</span>
+                </a>
+                <a class="chart-bar-wrap" href="/blog/posts/income-report-2026-04.html">
+                    <span class="chart-value">36万</span>
+                    <div class="chart-bar" style="height: 34.3%;"></div>
+                    <span class="chart-label">26.04</span>
+                </a>
+                <a class="chart-bar-wrap" href="/blog/posts/income-report-2026-05.html">
+                    <span class="chart-value">33.8万</span>
+                    <div class="chart-bar" style="height: 32.2%;"></div>
+                    <span class="chart-label">26.05</span>
+                </a>
+                <a class="chart-bar-wrap" href="/blog/posts/income-report-2026-06.html">
+                    <span class="chart-value">34.2万</span>
+                    <div class="chart-bar" style="height: 32.6%;"></div>
+                    <span class="chart-label">26.06</span>
+                </a>
+            </div>
+            <p class="chart-note">AdMobとApp StoreとGoogle Playの合計。手数料控除後、外貨は概算で円換算</p>
+
+            <div class="section-header" style="margin-top: var(--space-xl);">
+                <span class="section-label">Prehistory</span>
+                <h2 class="section-title">前史：連載開始前の約10年</h2>
+                <p class="section-description">2016年の開発開始から課金元年前夜まで。最初の3年は収益ゼロ、初収益は2019年7月の¥21</p>
+            </div>
+            <div class="revenue-chart" style="height: 200px;">
+                <a class="chart-bar-wrap" href="/blog/posts/income-report-prehistory.html">
+                    <span class="chart-value">¥0</span>
+                    <div class="chart-bar" style="height: 0%; border: none;"></div>
+                    <span class="chart-label">2016</span>
+                </a>
+                <a class="chart-bar-wrap" href="/blog/posts/income-report-prehistory.html">
+                    <span class="chart-value">¥0</span>
+                    <div class="chart-bar" style="height: 0%; border: none;"></div>
+                    <span class="chart-label">2017</span>
+                </a>
+                <a class="chart-bar-wrap" href="/blog/posts/income-report-prehistory.html">
+                    <span class="chart-value">¥0</span>
+                    <div class="chart-bar" style="height: 0%; border: none;"></div>
+                    <span class="chart-label">2018</span>
+                </a>
+                <a class="chart-bar-wrap" href="/blog/posts/income-report-prehistory.html">
+                    <span class="chart-value">¥493</span>
+                    <div class="chart-bar" style="height: 2%;"></div>
+                    <span class="chart-label">2019</span>
+                </a>
+                <a class="chart-bar-wrap" href="/blog/posts/income-report-prehistory.html">
+                    <span class="chart-value">0.8万</span>
+                    <div class="chart-bar" style="height: 2.5%;"></div>
+                    <span class="chart-label">2020</span>
+                </a>
+                <a class="chart-bar-wrap" href="/blog/posts/income-report-prehistory.html">
+                    <span class="chart-value">0.7万</span>
+                    <div class="chart-bar" style="height: 2.4%;"></div>
+                    <span class="chart-label">2021</span>
+                </a>
+                <a class="chart-bar-wrap" href="/blog/posts/income-report-prehistory.html">
+                    <span class="chart-value">97.8万</span>
+                    <div class="chart-bar peak" style="height: 100%;"></div>
+                    <span class="chart-label">2022</span>
+                </a>
+                <a class="chart-bar-wrap" href="/blog/posts/income-report-prehistory.html">
+                    <span class="chart-value">29.4万</span>
+                    <div class="chart-bar" style="height: 30%;"></div>
+                    <span class="chart-label">2023</span>
+                </a>
+                <a class="chart-bar-wrap" href="/blog/posts/income-report-prehistory.html">
+                    <span class="chart-value">57.7万</span>
+                    <div class="chart-bar" style="height: 59%;"></div>
+                    <span class="chart-label">2024</span>
+                </a>
+                <a class="chart-bar-wrap" href="/blog/posts/income-report-prehistory.html">
+                    <span class="chart-value">29.2万</span>
+                    <div class="chart-bar" style="height: 29.9%;"></div>
+                    <span class="chart-label">2025.1-10</span>
+                </a>
+            </div>
+            <p class="chart-note">前史はAdMobの推定収益額のみで、この期間のストア課金はほぼゼロ。2022年の山は流れるメモ帳、2024年は旅行思い出マップ</p>
+        </div>
+    </section>
+
+    <!-- Reports -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Monthly Reports</span>
+                <h2 class="section-title">月次レポート一覧</h2>
+            </div>
+
+            <div class="career-timeline">
+                <a class="career-item" href="/blog/posts/income-report-2026-06.html">
+                    <div class="career-year">2026.06</div>
+                    <div class="career-content">
+                        <h3>¥341,961<span class="mom-up">+1.1%</span></h3>
+                        <p class="career-company">6月号</p>
+                        <p class="career-description">うんちくんが月5万DL目前。上半期合計240万円の振り返りも。</p>
+                    </div>
+                </a>
+
+                <a class="career-item" href="/blog/posts/income-report-2026-05.html">
+                    <div class="career-year">2026.05</div>
+                    <div class="career-content">
+                        <h3>¥338,294<span class="mom-down">-6.0%</span></h3>
+                        <p class="career-company">5月号</p>
+                        <p class="career-description">うんちくんがAI健康記録アプリに進化。Google Playが月1万円を突破。</p>
+                    </div>
+                </a>
+
+                <a class="career-item" href="/blog/posts/income-report-2026-04.html">
+                    <div class="career-year">2026.04</div>
+                    <div class="career-content">
+                        <h3>¥359,991<span class="mom-down">-65.7%</span></h3>
+                        <p class="career-company">4月号</p>
+                        <p class="career-description">バズの反動減。それでも花火の後に週間プランというストックが残った。</p>
+                    </div>
+                </a>
+
+                <a class="career-item current" href="/blog/posts/income-report-2026-03.html">
+                    <div class="career-year">2026.03</div>
+                    <div class="career-content">
+                        <h3>¥1,050,092<span class="mom-up">+388.4%</span></h3>
+                        <p class="career-company">3月号・月収100万円突破 🎉</p>
+                        <p class="career-description">推しアイランドの買い切りプランが217本売れた歴史的バズ月。</p>
+                    </div>
+                </a>
+
+                <a class="career-item" href="/blog/posts/income-report-2026-02.html">
+                    <div class="career-year">2026.02</div>
+                    <div class="career-content">
+                        <h3>¥215,002<span class="mom-up">+128.2%</span></h3>
+                        <p class="career-company">2月号</p>
+                        <p class="career-description">うんちくんが月2万DLで覚醒。ワンタイムオファー戦略が的中した月。</p>
+                    </div>
+                </a>
+
+                <a class="career-item" href="/blog/posts/income-report-2026-01.html">
+                    <div class="career-year">2026.01</div>
+                    <div class="career-content">
+                        <h3>¥94,209<span class="mom-up">+15.2%</span></h3>
+                        <p class="career-company">1月号</p>
+                        <p class="career-description">Google Play初売上の¥102。英語圏で買い切りプランが動き出す。</p>
+                    </div>
+                </a>
+
+                <a class="career-item" href="/blog/posts/income-report-2025-12.html">
+                    <div class="career-year">2025.12</div>
+                    <div class="career-content">
+                        <h3>¥81,754<span class="mom-up">+114.9%</span></h3>
+                        <p class="career-company">12月号</p>
+                        <p class="career-description">旅行思い出マップが年末需要で4倍DL。1年間サポータープランが32件。</p>
+                    </div>
+                </a>
+
+                <a class="career-item" href="/blog/posts/income-report-2025-11.html">
+                    <div class="career-year">2025.11</div>
+                    <div class="career-content">
+                        <h3>¥38,050</h3>
+                        <p class="career-company">創刊号</p>
+                        <p class="career-description">55本アプリを出して月3.8万円という現実からのスタート。</p>
+                    </div>
+                </a>
+
+                <a class="career-item" href="/blog/posts/income-report-prehistory.html">
+                    <div class="career-year">2016-25</div>
+                    <div class="career-content">
+                        <h3>¥2,157,364<span class="mom-up">約10年累計</span></h3>
+                        <p class="career-company">前史編</p>
+                        <p class="career-description">🪙 2016年の開発開始から収益ゼロの3年、初収益¥21、流れるメモ帳のバズ、そして課金元年前夜まで。</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notes -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Notes</span>
+                <h2 class="section-title">数値について</h2>
+            </div>
+            <p class="notes-text">
+                AdMobは管理画面の推定収益額を使っていて、確定額とは数％ずれることがあります。App Storeは手数料を引いた開発者受取額で、外貨分は月末レートで円に換算した概算を含みます。Google Playはサービス手数料を引いた受取額です。締め日の関係で、実際の振込額とは一致しません。
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-sns">
+                <a href="https://x.com/tsuzuki817" target="_blank" rel="noopener noreferrer" class="sns-link" aria-label="X (Twitter)">
+                    <img src="/assets/images/sns/x.png" alt="X" class="sns-icon">
+                </a>
+                <a href="https://www.instagram.com/tsuzuki817/" target="_blank" rel="noopener noreferrer" class="sns-link" aria-label="Instagram">
+                    <img src="/assets/images/sns/instagram.png" alt="Instagram" class="sns-icon">
+                </a>
+                <a href="https://www.tiktok.com/@tsuzuki817" target="_blank" rel="noopener noreferrer" class="sns-link" aria-label="TikTok">
+                    <img src="/assets/images/sns/tiktok.png" alt="TikTok" class="sns-icon">
+                </a>
+                <a href="https://www.youtube.com/@tsuzuki817" target="_blank" rel="noopener noreferrer" class="sns-link" aria-label="YouTube">
+                    <img src="/assets/images/sns/youtube.png" alt="YouTube" class="sns-icon">
+                </a>
+                <a href="https://github.com/tsuzukihashi" target="_blank" rel="noopener noreferrer" class="sns-link" aria-label="GitHub">
+                    <img src="/assets/images/sns/github.png" alt="GitHub" class="sns-icon">
+                </a>
+            </div>
+
+            <p class="footer-copyright">
+                © 2026 Ryo Tsuzukihashi. All rights reserved.
+            </p>
+            <p class="footer-tagline">
+                Crafting memories with technology since 2016.
+            </p>
+            <div class="footer-links">
+                <a href="/legal/privacy-policy.html" class="footer-link">プライバシーポリシー</a>
+                <a href="/legal/terms-of-service.html" class="footer-link">利用規約</a>
+                <a href="/legal/commercial-law.html" class="footer-link">特定商取引法</a>
+                <a href="/legal/disclaimer.html" class="footer-link">免責事項</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        window.addEventListener('scroll', function() {
+            const nav = document.getElementById('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+        const navToggle = document.getElementById('navToggle');
+        const navMenu = document.getElementById('navMenu');
+        navToggle.addEventListener('click', function() {
+            navToggle.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
