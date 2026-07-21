@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>マッチボックス - 擦って灯す集中タイマー＆習慣トラッカー | 事前登録受付中</title>
+    <meta name="description" content="マッチを擦って火を灯し、燃え尽きるまで集中する。レトロなマッチ箱をモチーフにした集中タイマー＆習慣トラッカー「マッチボックス」。生きた夜の風景と環境音とともに。iOS / Android で事前登録受付中。">
+    <meta name="keywords" content="マッチボックス,Matchbox,集中タイマー,ポモドーロ,習慣化,習慣トラッカー,勉強タイマー,作業用,焚き火,環境音,マインドフルネス,デジタルデトックス">
+
+    <link rel="canonical" href="https://tsuzukit.com/matchbox/">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="tsuzukit">
+    <meta name="theme-color" content="#111118">
+    <meta name="application-name" content="Matchbox">
+    <link rel="apple-touch-icon" href="/matchbox/apple-touch-icon.png">
+    <link rel="icon" href="/matchbox/apple-touch-icon.png" type="image/png">
+
+    <!-- OGP -->
+    <meta property="og:title" content="マッチボックス - 擦って灯す集中タイマー＆習慣">
+    <meta property="og:description" content="擦って、灯して、燃え尽きるまで集中する。レトロなマッチ箱をモチーフにした集中タイマー＆習慣トラッカー。iOS / Android で事前登録受付中。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tsuzukit.com/matchbox/">
+    <meta property="og:site_name" content="Matchbox">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:image" content="https://tsuzukit.com/matchbox/og.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@tsuzuki817">
+    <meta name="twitter:creator" content="@tsuzuki817">
+    <meta name="twitter:title" content="マッチボックス - 擦って灯す集中タイマー＆習慣">
+    <meta name="twitter:description" content="擦って、灯して、燃え尽きるまで集中する。事前登録受付中。">
+    <meta name="twitter:image" content="https://tsuzukit.com/matchbox/og.jpg">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Matchbox: Focus Timer & Habits",
+        "alternateName": "マッチボックス 集中タイマー＆習慣",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "iOS, Android",
+        "description": "マッチを擦って火を灯し、燃え尽きるまで集中する。レトロなマッチ箱をモチーフにした集中タイマー＆習慣トラッカー。",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "JPY",
+            "availability": "https://schema.org/PreOrder"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "tsuzukit",
+            "url": "https://tsuzukit.com"
+        }
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --night: #111118;
+            --night-deep: #0b0b10;
+            --night-blue: #171d2b;
+            --cream: #f3ead7;
+            --cream-dim: #cfc5ae;
+            --flame: #e8a33d;
+            --flame-hot: #ffd9a0;
+            --ember: #c9622a;
+            --box-red: #7a2e2e;
+            --line: rgba(243, 234, 215, 0.14);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            background: var(--night);
+            color: var(--cream);
+            font-family: "Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN", sans-serif;
+            line-height: 1.9;
+            overflow-x: hidden;
+        }
+        h1, h2, h3, .serif {
+            font-family: "Shippori Mincho", "Hiragino Mincho ProN", serif;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+        }
+        a { color: inherit; }
+        img { max-width: 100%; display: block; }
+
+        /* ---------- 夜空 ---------- */
+        .sky {
+            position: relative;
+            background:
+                radial-gradient(ellipse 90% 60% at 50% -10%, #232c42 0%, transparent 60%),
+                linear-gradient(180deg, var(--night-blue) 0%, var(--night) 55%, var(--night-deep) 100%);
+        }
+        .stars, .stars2 {
+            position: absolute; inset: 0;
+            pointer-events: none;
+            background-repeat: repeat;
+        }
+        .stars {
+            background-image:
+                radial-gradient(1px 1px at 22px 45px, rgba(243,234,215,.9), transparent),
+                radial-gradient(1px 1px at 120px 160px, rgba(243,234,215,.55), transparent),
+                radial-gradient(1.5px 1.5px at 250px 80px, rgba(243,234,215,.7), transparent),
+                radial-gradient(1px 1px at 330px 210px, rgba(243,234,215,.45), transparent),
+                radial-gradient(1px 1px at 60px 280px, rgba(243,234,215,.6), transparent);
+            background-size: 380px 320px;
+            animation: twinkle 5.2s ease-in-out infinite;
+        }
+        .stars2 {
+            background-image:
+                radial-gradient(1px 1px at 80px 30px, rgba(243,234,215,.5), transparent),
+                radial-gradient(1px 1px at 190px 240px, rgba(243,234,215,.65), transparent),
+                radial-gradient(1.5px 1.5px at 300px 140px, rgba(243,234,215,.4), transparent);
+            background-size: 420px 360px;
+            animation: twinkle 7.4s ease-in-out infinite reverse;
+        }
+        @keyframes twinkle { 0%, 100% { opacity: .9; } 50% { opacity: .45; } }
+
+        /* ---------- ヒーロー ---------- */
+        .hero {
+            min-height: 100svh;
+            display: flex; flex-direction: column;
+            align-items: center; justify-content: center;
+            text-align: center;
+            padding: 88px 24px 72px;
+            position: relative;
+        }
+        .badge {
+            display: inline-block;
+            border: 1px solid rgba(232, 163, 61, 0.55);
+            color: var(--flame);
+            font-size: 13px;
+            letter-spacing: 0.32em;
+            text-indent: 0.32em;
+            padding: 9px 20px 8px;
+            border-radius: 999px;
+            margin-bottom: 34px;
+            background: rgba(232, 163, 61, 0.07);
+        }
+        .hero h1 {
+            font-size: clamp(38px, 8vw, 68px);
+            font-weight: 700;
+            line-height: 1.35;
+            margin-bottom: 18px;
+            text-shadow: 0 0 60px rgba(232, 163, 61, 0.18);
+        }
+        .hero .tagline {
+            font-size: clamp(15px, 3.4vw, 19px);
+            color: var(--cream-dim);
+            letter-spacing: 0.14em;
+            margin-bottom: 54px;
+        }
+        .hero .en {
+            font-size: 12px;
+            letter-spacing: 0.5em;
+            text-indent: 0.5em;
+            color: rgba(243, 234, 215, 0.4);
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+        .nb { display: inline-block; }
+
+        /* ---------- マッチ(CSS描画) ---------- */
+        .match-scene {
+            position: relative;
+            height: 300px;
+            width: 140px;
+            margin: 0 auto 46px;
+        }
+        .glow {
+            position: absolute;
+            left: 50%; top: 34px;
+            width: 340px; height: 340px;
+            transform: translate(-50%, -40%);
+            background: radial-gradient(circle, rgba(232,163,61,.22) 0%, rgba(201,98,42,.08) 40%, transparent 68%);
+            border-radius: 50%;
+            animation: breathe 3.4s ease-in-out infinite;
+            pointer-events: none;
+        }
+        .stick {
+            position: absolute;
+            left: 50%; bottom: 0;
+            width: 13px; height: 205px;
+            transform: translateX(-50%);
+            background: linear-gradient(90deg, #b99767 0%, #e5cb9d 45%, #a3814f 100%);
+            border-radius: 3px;
+        }
+        .head {
+            position: absolute;
+            left: 50%; bottom: 196px;
+            width: 26px; height: 34px;
+            transform: translateX(-50%);
+            background: radial-gradient(circle at 42% 30%, #e06a35 0%, #93321d 70%, #6c2415 100%);
+            border-radius: 50% 50% 46% 46%;
+        }
+        .flame {
+            position: absolute;
+            left: 50%; bottom: 214px;
+            width: 46px; height: 92px;
+            transform-origin: 50% 100%;
+            transform: translateX(-50%);
+            background: radial-gradient(ellipse 50% 62% at 50% 78%, #fff3d6 0%, var(--flame-hot) 26%, var(--flame) 52%, rgba(201, 98, 42, 0.65) 74%, transparent 92%);
+            border-radius: 50% 50% 42% 42% / 68% 68% 34% 34%;
+            filter: blur(0.6px);
+            animation: sway 9.8s ease-in-out infinite, lick 1.35s ease-in-out infinite;
+        }
+        .flame::after {
+            content: "";
+            position: absolute;
+            left: 50%; bottom: 8px;
+            width: 18px; height: 40px;
+            transform: translateX(-50%);
+            background: radial-gradient(ellipse at 50% 80%, #ffffff 0%, #fff0c9 55%, transparent 85%);
+            border-radius: 50% 50% 40% 40% / 66% 66% 36% 36%;
+        }
+        @keyframes sway {
+            0%, 100% { transform: translateX(-50%) rotate(0deg); }
+            22% { transform: translateX(-50%) rotate(2.6deg); }
+            50% { transform: translateX(-50%) rotate(-1.8deg); }
+            76% { transform: translateX(-50%) rotate(1.4deg); }
+        }
+        @keyframes lick {
+            0%, 100% { scale: 1 1; }
+            50% { scale: 1.035 0.965; }
+        }
+        @keyframes breathe {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.72; }
+        }
+
+        /* ---------- ストアボタン ---------- */
+        .stores {
+            display: flex; flex-wrap: wrap;
+            gap: 16px;
+            justify-content: center;
+        }
+        .store-btn {
+            display: flex; align-items: center; gap: 13px;
+            padding: 14px 26px;
+            border: 1px solid var(--line);
+            border-radius: 14px;
+            background: rgba(243, 234, 215, 0.045);
+            text-decoration: none;
+            transition: border-color .25s, background .25s, transform .25s;
+        }
+        .store-btn:hover {
+            border-color: rgba(232, 163, 61, 0.6);
+            background: rgba(232, 163, 61, 0.08);
+            transform: translateY(-2px);
+        }
+        .store-btn svg { width: 26px; height: 26px; fill: var(--cream); flex-shrink: 0; }
+        .store-btn .lines { text-align: left; line-height: 1.35; }
+        .store-btn .small { font-size: 11px; color: var(--cream-dim); letter-spacing: 0.08em; }
+        .store-btn .big { font-size: 16px; font-weight: 700; letter-spacing: 0.04em; }
+        .store-note { margin-top: 20px; font-size: 12.5px; color: rgba(243,234,215,.45); letter-spacing: .12em; }
+
+        /* ---------- セクション共通 ---------- */
+        section { padding: 96px 24px; position: relative; }
+        .inner { max-width: 980px; margin: 0 auto; }
+        .sec-label {
+            text-align: center;
+            font-size: 11px;
+            letter-spacing: 0.5em;
+            text-indent: 0.5em;
+            color: var(--flame);
+            text-transform: uppercase;
+            margin-bottom: 14px;
+        }
+        h2 {
+            text-align: center;
+            font-size: clamp(24px, 5vw, 34px);
+            margin-bottom: 56px;
+            line-height: 1.6;
+        }
+
+        /* ---------- 特徴 ---------- */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 22px;
+        }
+        .card {
+            border: 1px solid var(--line);
+            border-radius: 18px;
+            padding: 34px 28px;
+            background: linear-gradient(180deg, rgba(243,234,215,.035) 0%, rgba(243,234,215,.012) 100%);
+        }
+        .card .emoji { font-size: 26px; margin-bottom: 16px; }
+        .card h3 { font-size: 18px; margin-bottom: 12px; letter-spacing: 0.08em; }
+        .card p { font-size: 14px; color: var(--cream-dim); }
+
+        /* ---------- スクショ ---------- */
+        .shots {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 26px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .shots img {
+            border-radius: 18px;
+            border: 1px solid var(--line);
+            box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+        }
+
+        /* ---------- 風景の帯 ---------- */
+        .scenes {
+            text-align: center;
+            color: var(--cream-dim);
+            font-size: clamp(13px, 2.6vw, 15px);
+            letter-spacing: 0.3em;
+            line-height: 2.6;
+        }
+        .scenes .serif { color: var(--cream); }
+
+        /* ---------- CTA ---------- */
+        .cta {
+            text-align: center;
+            border-top: 1px solid var(--line);
+            background:
+                radial-gradient(ellipse 70% 90% at 50% 115%, rgba(201, 98, 42, 0.16) 0%, transparent 60%),
+                var(--night-deep);
+        }
+        .cta h2 { margin-bottom: 16px; }
+        .cta .sub { color: var(--cream-dim); margin-bottom: 44px; font-size: 15px; letter-spacing: 0.1em; }
+
+        /* ---------- フッター ---------- */
+        footer {
+            border-top: 1px solid var(--line);
+            padding: 44px 24px 52px;
+            text-align: center;
+            font-size: 12.5px;
+            color: rgba(243, 234, 215, 0.45);
+            background: var(--night-deep);
+        }
+        footer nav { display: flex; flex-wrap: wrap; gap: 8px 26px; justify-content: center; margin-bottom: 18px; }
+        footer a { text-decoration: none; }
+        footer a:hover { color: var(--cream); }
+
+        @media (prefers-reduced-motion: reduce) {
+            .flame, .glow, .stars, .stars2 { animation: none !important; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ヒーロー -->
+    <header class="hero sky">
+        <div class="stars"></div>
+        <div class="stars2"></div>
+
+        <span class="badge">事前登録受付中</span>
+
+        <div class="match-scene" aria-hidden="true">
+            <div class="glow"></div>
+            <div class="flame"></div>
+            <div class="head"></div>
+            <div class="stick"></div>
+        </div>
+
+        <p class="en">Matchbox — Focus Timer &amp; Habits</p>
+        <h1>擦って、灯して、<br><span class="nb">燃え尽きるまで</span><span class="nb">集中する。</span></h1>
+        <p class="tagline"><span class="nb">レトロな「マッチ箱」をモチーフにした、</span><span class="nb">集中タイマー＆習慣トラッカー。</span></p>
+
+        <div class="stores">
+            <a class="store-btn" href="https://apps.apple.com/us/app/matchbox-focus-timer-habits/id6786488863" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.53 4.08zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+                <span class="lines">
+                    <span class="small">App Store</span><br>
+                    <span class="big">iPhoneで事前注文</span>
+                </span>
+            </a>
+            <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.tsuzukit.matchbox" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 1.8c-.34.36-.54.9-.54 1.6v17.2c0 .7.2 1.24.55 1.59l.08.08 9.64-9.64v-.23L3.68 1.72l-.08.08zm12.95 13.13-3.22-3.22v-.23l3.22-3.22.07.04 3.82 2.17c1.09.62 1.09 1.63 0 2.25l-3.82 2.17-.07.04zm-.79.72L12.43 12.3 3.6 21.13c.36.38.95.43 1.62.05l10.54-5.99zM12.43 11.7l3.33-3.35L5.22 2.36c-.67-.38-1.26-.33-1.62.05l8.83 9.29z"/></svg>
+                <span class="lines">
+                    <span class="small">Google Play</span><br>
+                    <span class="big">Androidで事前登録</span>
+                </span>
+            </a>
+        </div>
+        <p class="store-note">2026年8月、リリース予定。登録しておくと、リリース時にお知らせが届きます。</p>
+    </header>
+
+    <!-- 特徴 -->
+    <section>
+        <div class="inner">
+            <p class="sec-label">Ritual</p>
+            <h2>一本のマッチが、<br>あなたの時間を守る。</h2>
+            <div class="features">
+                <div class="card">
+                    <div class="emoji">🔥</div>
+                    <h3>擦って着火する集中タイマー</h3>
+                    <p>マッチを側薬にスッと擦ると、着火の手ごたえとともに炎が灯ります。あとはマッチが静かに燃え進む間、目の前のことに集中するだけ。やめたくなったら、マイクに「フッ」と息を吹きかけて。</p>
+                </div>
+                <div class="card">
+                    <div class="emoji">🌙</div>
+                    <h3>生きた夜の風景と、それぞれの音</h3>
+                    <p>雪は降り、花びらは舞い、蛍は明滅し、ときどき流れ星も走る。10の風景それぞれに、囲炉裏・夜風・雨・波・虫の音などの環境音が静かに寄り添います。</p>
+                </div>
+                <div class="card">
+                    <div class="emoji">🕯️</div>
+                    <h3>1本のマッチで続ける習慣</h3>
+                    <p>毎日の習慣は、達成するたびにマッチを1本擦って記録。箱のマッチが減り、あなたの努力が“物理的な量”として積み上がっていきます。ヴィンテージ版画風のマッチ箱を集める楽しみも。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 風景 -->
+    <section class="sky">
+        <div class="stars"></div>
+        <div class="inner" style="position: relative;">
+            <p class="sec-label">Scenes</p>
+            <h2>今夜は、どこで灯す？</h2>
+            <p class="scenes">
+                <span class="serif">月夜　雪原　夜の雨　蛍の湖　星月夜</span><br>
+                <span class="serif">竹林　夜桜　月の海　十五夜　水墨</span><br><br>
+                10の生きた夜が、あなたの集中を包みます。
+            </p>
+        </div>
+    </section>
+
+    <!-- スクショ -->
+    <section>
+        <div class="inner">
+            <p class="sec-label">Screens</p>
+            <h2>手のひらの中に、本物のマッチ箱を。</h2>
+            <div class="shots">
+                <img src="/matchbox/shot1.webp" alt="燃え尽きるまで、集中。雪の夜にマッチが燃える集中タイマー画面" loading="lazy" width="520" height="1125">
+                <img src="/matchbox/shot2.webp" alt="今日の一本を、灯そう。マッチ箱のホーム画面" loading="lazy" width="520" height="1125">
+                <img src="/matchbox/shot3.webp" alt="灯した日々を、集めよう。ヴィンテージ風マッチ箱のコレクション画面" loading="lazy" width="520" height="1125">
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="inner">
+            <p class="sec-label">Pre-register</p>
+            <h2>最初の一本を、あなたに。</h2>
+            <p class="sub">事前登録受付中。リリースの夜、いちばん最初にお知らせします。</p>
+            <div class="stores">
+                <a class="store-btn" href="https://apps.apple.com/us/app/matchbox-focus-timer-habits/id6786488863" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.53 4.08zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+                    <span class="lines">
+                        <span class="small">App Store</span><br>
+                        <span class="big">iPhoneで事前注文</span>
+                    </span>
+                </a>
+                <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.tsuzukit.matchbox" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 1.8c-.34.36-.54.9-.54 1.6v17.2c0 .7.2 1.24.55 1.59l.08.08 9.64-9.64v-.23L3.68 1.72l-.08.08zm12.95 13.13-3.22-3.22v-.23l3.22-3.22.07.04 3.82 2.17c1.09.62 1.09 1.63 0 2.25l-3.82 2.17-.07.04zm-.79.72L12.43 12.3 3.6 21.13c.36.38.95.43 1.62.05l10.54-5.99zM12.43 11.7l3.33-3.35L5.22 2.36c-.67-.38-1.26-.33-1.62.05l8.83 9.29z"/></svg>
+                    <span class="lines">
+                        <span class="small">Google Play</span><br>
+                        <span class="big">Androidで事前登録</span>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <a href="https://tsuzukit.com/">tsuzukit.com</a>
+            <a href="https://tsuzukit.com/contact/">お問い合わせ</a>
+            <a href="https://tsuzukit.com/legal/terms-of-service.html">利用規約</a>
+            <a href="https://tsuzukit.com/legal/privacy-policy.html">プライバシーポリシー</a>
+        </nav>
+        <p>© 2026 TsuzuKit</p>
+    </footer>
+
+</body>
+</html>
