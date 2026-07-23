@@ -250,7 +250,15 @@
             border-bottom: 1.5px dotted rgba(34, 31, 24, 0.3);
             transform: translateY(-5px);
         }
-        .r-item .cat { font-size: 11px; color: var(--ink-fade); letter-spacing: 0.12em; }
+        .r-item .cat { font-size: 11px; color: var(--ink-fade); letter-spacing: 0.1em; white-space: nowrap; }
+        .r-sec {
+            text-align: center;
+            font-size: 12.5px;
+            letter-spacing: 0.3em;
+            text-indent: 0.3em;
+            margin: 14px 0 6px;
+        }
+        .r-sec:first-of-type { margin-top: 2px; }
         .r-total {
             display: flex; justify-content: space-between;
             font-size: 17px; letter-spacing: 0.1em;
@@ -398,22 +406,26 @@
             <p class="sec-label">Lineup</p>
             <h2>今日のあなたを、印字します。</h2>
 
-            <div class="receipt" role="img" aria-label="発行できるレシートの一覧を印字したレシート">
+            <div class="receipt" role="img" aria-label="発行できる13種類のレシートを印字したレシート。カラダ・まいにち・じぶんの3カテゴリ">
                 <p class="r-head">ANATA RECEIPT</p>
-                <p class="r-meta">DATE: EVERY DAY&nbsp;&nbsp;NO.: #0001</p>
+                <p class="r-meta">レシートは ぜんぶで 13種類</p>
                 <hr class="r-rule">
-                <p class="r-item"><span>今日のあなた</span><span class="leader"></span><span class="cat">カラダ</span></p>
-                <p class="r-item"><span>アクティビティ</span><span class="leader"></span><span class="cat">カラダ</span></p>
-                <p class="r-item"><span>ワークアウト</span><span class="leader"></span><span class="cat">カラダ</span></p>
-                <p class="r-item"><span>睡眠</span><span class="leader"></span><span class="cat">カラダ</span></p>
-                <p class="r-item"><span>天気</span><span class="leader"></span><span class="cat">まいにち</span></p>
-                <p class="r-item"><span>移動</span><span class="leader"></span><span class="cat">まいにち</span></p>
-                <p class="r-item"><span>フォト</span><span class="leader"></span><span class="cat">まいにち</span></p>
-                <p class="r-item"><span>ミュージック</span><span class="leader"></span><span class="cat">まいにち</span></p>
-                <p class="r-item"><span>スクリーンタイム</span><span class="leader"></span><span class="cat">まいにち</span></p>
-                <p class="r-item"><span>この端末</span><span class="leader"></span><span class="cat">じぶん</span></p>
-                <p class="r-item"><span>存在のレシート</span><span class="leader"></span><span class="cat">じぶん</span></p>
-                <p class="r-item"><span>カスタムレシート</span><span class="leader"></span><span class="cat">じぶん</span></p>
+                <p class="r-sec">＊ カラダ ＊</p>
+                <p class="r-item"><span>今日のあなた</span><span class="leader"></span><span class="cat">歩数・運動・心拍</span></p>
+                <p class="r-item"><span>アクティビティ</span><span class="leader"></span><span class="cat">リングの達成</span></p>
+                <p class="r-item"><span>ワークアウト</span><span class="leader"></span><span class="cat">ペースと心拍</span></p>
+                <p class="r-item"><span>睡眠</span><span class="leader"></span><span class="cat">眠りのステージ</span></p>
+                <p class="r-sec">＊ まいにち ＊</p>
+                <p class="r-item"><span>天気</span><span class="leader"></span><span class="cat">今日の空もよう</span></p>
+                <p class="r-item"><span>移動</span><span class="leader"></span><span class="cat">移動の内訳</span></p>
+                <p class="r-item"><span>フォト</span><span class="leader"></span><span class="cat">撮った枚数</span></p>
+                <p class="r-item"><span>ミュージック</span><span class="leader"></span><span class="cat">よく聴いた曲</span></p>
+                <p class="r-item"><span>スクリーンタイム</span><span class="leader"></span><span class="cat">使った時間</span></p>
+                <p class="r-sec">＊ じぶん ＊</p>
+                <p class="r-item"><span>この端末</span><span class="leader"></span><span class="cat">バッテリー</span></p>
+                <p class="r-item"><span>存在のレシート</span><span class="leader"></span><span class="cat">生きてきた日数</span></p>
+                <p class="r-item"><span>あなた自身</span><span class="leader"></span><span class="cat">交換できる名刺</span></p>
+                <p class="r-item"><span>カスタムレシート</span><span class="leader"></span><span class="cat">推し活・ペット</span></p>
                 <hr class="r-rule">
                 <p class="r-total"><span>TOTAL</span><span>あなた</span></p>
                 <hr class="r-rule">
