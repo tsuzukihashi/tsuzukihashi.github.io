@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>あなたレシート - 毎日も推し活も、本物そっくりのレシートに印刷 | 事前登録受付中</title>
+    <meta name="description" content="歩数も、睡眠も、推し活も。あなたの一日を本物そっくりのレシートに印字して、集めて、交換するアプリ「あなたレシート」。プリンタからスルスル出てくる印刷演出と、QRコードのオフライン交換。iOS / Android で事前登録受付中。">
+    <meta name="keywords" content="あなたレシート,YOU Receipt,レシート,レシートメーカー,推し活,オタ活,ヘルスケア,歩数,睡眠,ライフログ,日記アプリ,交換,名刺">
+
+    <link rel="canonical" href="https://tsuzukit.com/anatareceipt/">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="tsuzukit">
+    <meta name="theme-color" content="#fbf6eb">
+    <meta name="application-name" content="YOU Receipt">
+    <link rel="apple-touch-icon" href="/anatareceipt/apple-touch-icon.png">
+    <link rel="icon" href="/anatareceipt/apple-touch-icon.png" type="image/png">
+
+    <!-- OGP -->
+    <meta property="og:title" content="あなたレシート - 毎日も推し活も、オリジナルを1枚に">
+    <meta property="og:description" content="あなたの一日を、一枚のレシートに。印字して、集めて、交換する。iOS / Android で事前登録受付中。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tsuzukit.com/anatareceipt/">
+    <meta property="og:site_name" content="あなたレシート">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:image" content="https://tsuzukit.com/anatareceipt/og.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@tsuzuki817">
+    <meta name="twitter:creator" content="@tsuzuki817">
+    <meta name="twitter:title" content="あなたレシート - 毎日も推し活も、オリジナルを1枚に">
+    <meta name="twitter:description" content="あなたの一日を、一枚のレシートに。事前登録受付中。">
+    <meta name="twitter:image" content="https://tsuzukit.com/anatareceipt/og.jpg">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "YOU Receipt: Receipt Maker",
+        "alternateName": "あなたレシート レシート作成＆記録",
+        "applicationCategory": "LifestyleApplication",
+        "operatingSystem": "iOS, Android",
+        "description": "あなたの一日を本物そっくりのレシートに印字して、集めて、交換するアプリ。歩数・睡眠・ワークアウトから推し活のカスタムレシートまで。",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "JPY",
+            "availability": "https://schema.org/PreOrder"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "tsuzukit",
+            "url": "https://tsuzukit.com"
+        }
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --paper: #fbf6eb;        /* 背景の紙 */
+            --paper-warm: #f4edda;   /* 少し焼けた紙 */
+            --card: #fffdf6;         /* レシート1枚の紙 */
+            --ink: #221f18;          /* 感熱インク */
+            --ink-fade: #8d8471;     /* 薄れたインク */
+            --stamp: #c2452d;        /* 受領スタンプの朱 */
+            --line: rgba(34, 31, 24, 0.14);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            background: var(--paper);
+            color: var(--ink);
+            font-family: "Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN", sans-serif;
+            line-height: 1.9;
+            overflow-x: hidden;
+        }
+        h1, h2, h3, .dot {
+            font-family: "DotGothic16", "Zen Kaku Gothic New", monospace;
+            font-weight: 400;
+            letter-spacing: 0.05em;
+        }
+        a { color: inherit; }
+        img { max-width: 100%; display: block; }
+
+        /* ---------- 紙の質感 ---------- */
+        .grain {
+            position: relative;
+            background:
+                repeating-linear-gradient(0deg, rgba(34,31,24,0.016) 0 1px, transparent 1px 3px),
+                radial-gradient(ellipse 120% 80% at 50% -20%, #fffdf4 0%, transparent 55%),
+                var(--paper);
+        }
+
+        /* ---------- ヒーロー ---------- */
+        .hero {
+            min-height: 100svh;
+            display: flex; flex-direction: column;
+            align-items: center; justify-content: center;
+            text-align: center;
+            padding: 88px 24px 72px;
+            position: relative;
+        }
+        .badge {
+            display: inline-block;
+            border: 1.5px solid var(--stamp);
+            color: var(--stamp);
+            font-size: 13px;
+            letter-spacing: 0.32em;
+            text-indent: 0.32em;
+            padding: 9px 20px 8px;
+            border-radius: 4px;
+            margin-bottom: 34px;
+            background: rgba(194, 69, 45, 0.05);
+            transform: rotate(-2deg);
+        }
+        .hero h1 {
+            font-size: clamp(34px, 7.6vw, 62px);
+            line-height: 1.45;
+            margin-bottom: 18px;
+        }
+        .hero .tagline {
+            font-size: clamp(14px, 3.4vw, 18px);
+            color: var(--ink-fade);
+            letter-spacing: 0.12em;
+            margin-bottom: 50px;
+        }
+        .hero .en {
+            font-size: 12px;
+            letter-spacing: 0.5em;
+            text-indent: 0.5em;
+            color: var(--ink-fade);
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+        .nb { display: inline-block; }
+
+        /* ---------- アプリアイコン ---------- */
+        .app-icon-wrap {
+            position: relative;
+            margin: 0 auto 42px;
+            width: 168px; height: 168px;
+        }
+        .app-icon {
+            width: 168px; height: 168px;
+            border-radius: 22.5%;
+            border: 1px solid var(--line);
+            box-shadow: 0 22px 44px rgba(34, 31, 24, 0.16), 0 3px 10px rgba(34, 31, 24, 0.10);
+            animation: floaty 4.2s ease-in-out infinite;
+        }
+        @keyframes floaty {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-7px); }
+        }
+
+        /* ---------- ストアボタン ---------- */
+        .stores {
+            display: flex; flex-wrap: wrap;
+            gap: 16px;
+            justify-content: center;
+        }
+        .store-btn {
+            display: flex; align-items: center; gap: 13px;
+            padding: 14px 26px;
+            border: 1.5px solid var(--ink);
+            border-radius: 14px;
+            background: var(--card);
+            text-decoration: none;
+            box-shadow: 0 3px 0 var(--ink);
+            transition: transform .2s, box-shadow .2s;
+        }
+        .store-btn:hover {
+            transform: translateY(2px);
+            box-shadow: 0 1px 0 var(--ink);
+        }
+        .store-btn svg { width: 26px; height: 26px; fill: var(--ink); flex-shrink: 0; }
+        .store-btn .lines { text-align: left; line-height: 1.35; }
+        .store-btn .small { font-size: 11px; color: var(--ink-fade); letter-spacing: 0.08em; }
+        .store-btn .big { font-size: 16px; font-weight: 700; letter-spacing: 0.04em; }
+        .store-note { margin-top: 20px; font-size: 12.5px; color: var(--ink-fade); letter-spacing: .12em; }
+
+        /* ---------- セクション共通 ---------- */
+        section { padding: 96px 24px; position: relative; }
+        .inner { max-width: 980px; margin: 0 auto; }
+        .sec-label {
+            text-align: center;
+            font-size: 11px;
+            letter-spacing: 0.5em;
+            text-indent: 0.5em;
+            color: var(--stamp);
+            text-transform: uppercase;
+            margin-bottom: 14px;
+        }
+        h2 {
+            text-align: center;
+            font-size: clamp(23px, 5vw, 33px);
+            margin-bottom: 56px;
+            line-height: 1.65;
+        }
+
+        /* ---------- 特徴 ---------- */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 22px;
+        }
+        .card {
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            padding: 34px 28px;
+            background: var(--card);
+            box-shadow: 0 10px 26px rgba(34, 31, 24, 0.07);
+        }
+        .card .emoji { font-size: 26px; margin-bottom: 16px; }
+        .card h3 { font-size: 18px; margin-bottom: 12px; letter-spacing: 0.06em; }
+        .card p { font-size: 14px; color: var(--ink-fade); }
+
+        /* ---------- レシート型ラインナップ ---------- */
+        .lineup-band { background: var(--paper-warm); }
+        .receipt {
+            position: relative;
+            max-width: 460px;
+            margin: 0 auto;
+            background: var(--card);
+            padding: 40px 34px 34px;
+            box-shadow: 0 22px 50px rgba(34, 31, 24, 0.14);
+            transform: rotate(-1deg);
+        }
+        .receipt::after {
+            content: "";
+            position: absolute; left: 0; right: 0; bottom: -9px; height: 10px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='10'%3E%3Cpath d='M0 0 L8 10 L16 0 Z' fill='%23fffdf6'/%3E%3C/svg%3E");
+            background-repeat: repeat-x;
+            background-size: 16px 10px;
+        }
+        .receipt, .receipt * { font-family: "DotGothic16", monospace; }
+        .r-head { text-align: center; letter-spacing: 0.28em; text-indent: 0.28em; margin-bottom: 4px; font-size: 15px; }
+        .r-meta { text-align: center; font-size: 11.5px; color: var(--ink-fade); letter-spacing: 0.14em; margin-bottom: 16px; }
+        .r-rule { border: none; border-top: 1.5px dashed var(--line); margin: 14px 0; }
+        .r-item {
+            display: flex; align-items: baseline; gap: 10px;
+            font-size: 14px; line-height: 2.15; letter-spacing: 0.05em;
+        }
+        .r-item .leader {
+            flex: 1;
+            border-bottom: 1.5px dotted rgba(34, 31, 24, 0.3);
+            transform: translateY(-5px);
+        }
+        .r-item .cat { font-size: 11px; color: var(--ink-fade); letter-spacing: 0.12em; }
+        .r-total {
+            display: flex; justify-content: space-between;
+            font-size: 17px; letter-spacing: 0.1em;
+            margin: 4px 0 2px;
+        }
+        .r-thanks { text-align: center; font-size: 12px; letter-spacing: 0.34em; text-indent: 0.34em; margin-top: 16px; }
+        .barcode {
+            margin: 12px auto 6px;
+            width: 210px; height: 44px;
+            background: repeating-linear-gradient(90deg,
+                var(--ink) 0 2px, transparent 2px 5px,
+                var(--ink) 5px 6px, transparent 6px 8px,
+                var(--ink) 8px 12px, transparent 12px 15px,
+                var(--ink) 15px 16px, transparent 16px 21px);
+        }
+        .r-serial { text-align: center; font-size: 12px; letter-spacing: 0.3em; text-indent: 0.3em; color: var(--ink); }
+        .lineup-note { text-align: center; margin-top: 44px; color: var(--ink-fade); font-size: 14px; letter-spacing: 0.18em; }
+
+        /* ---------- スクショ ---------- */
+        .shots {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 26px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .shots img {
+            width: 100%;
+            height: auto;
+            border-radius: 18px;
+            border: 1px solid var(--line);
+            box-shadow: 0 24px 60px rgba(34, 31, 24, 0.16);
+        }
+        @media (max-width: 760px) {
+            .shots {
+                grid-template-columns: 1fr;
+                max-width: 320px;
+            }
+        }
+
+        /* ---------- CTA ---------- */
+        .cta {
+            text-align: center;
+            border-top: 1.5px dashed var(--line);
+            background:
+                radial-gradient(ellipse 70% 90% at 50% 115%, rgba(194, 69, 45, 0.07) 0%, transparent 60%),
+                var(--paper-warm);
+        }
+        .cta h2 { margin-bottom: 16px; }
+        .cta .sub { color: var(--ink-fade); margin-bottom: 44px; font-size: 15px; letter-spacing: 0.1em; }
+        .cta .stamp-mark {
+            display: inline-block;
+            font-family: "DotGothic16", monospace;
+            border: 2px solid var(--stamp);
+            color: var(--stamp);
+            border-radius: 6px;
+            font-size: 13px;
+            letter-spacing: 0.24em;
+            text-indent: 0.24em;
+            padding: 8px 14px 7px;
+            transform: rotate(-6deg);
+            margin-bottom: 26px;
+            opacity: 0.9;
+        }
+
+        /* ---------- フッター ---------- */
+        footer {
+            border-top: 1px solid var(--line);
+            padding: 44px 24px 52px;
+            text-align: center;
+            font-size: 12.5px;
+            color: var(--ink-fade);
+            background: var(--paper);
+        }
+        footer nav { display: flex; flex-wrap: wrap; gap: 8px 26px; justify-content: center; margin-bottom: 18px; }
+        footer a { text-decoration: none; }
+        footer a:hover { color: var(--ink); }
+
+        @media (prefers-reduced-motion: reduce) {
+            .app-icon { animation: none !important; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ヒーロー -->
+    <header class="hero grain">
+        <span class="badge dot">事前登録受付中</span>
+
+        <div class="app-icon-wrap">
+            <img class="app-icon" src="/anatareceipt/icon-hero.webp" alt="あなたレシート アプリアイコン - ドット絵のレシート" width="168" height="168">
+        </div>
+
+        <p class="en">YOU Receipt — Print Yourself</p>
+        <h1><span class="nb">あなたの一日を、</span><br><span class="nb">一枚のレシートに。</span></h1>
+        <p class="tagline"><span class="nb">歩数も、睡眠も、推し活も。</span><span class="nb">本物そっくりのレシートに印字して、</span><span class="nb">集めて、交換する。</span></p>
+
+        <div class="stores">
+            <a class="store-btn" href="https://apps.apple.com/jp/app/id6784235708" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.53 4.08zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+                <span class="lines">
+                    <span class="small">App Store</span><br>
+                    <span class="big">iPhoneで事前注文</span>
+                </span>
+            </a>
+            <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.tsuzukit.anatareceipt" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 1.8c-.34.36-.54.9-.54 1.6v17.2c0 .7.2 1.24.55 1.59l.08.08 9.64-9.64v-.23L3.68 1.72l-.08.08zm12.95 13.13-3.22-3.22v-.23l3.22-3.22.07.04 3.82 2.17c1.09.62 1.09 1.63 0 2.25l-3.82 2.17-.07.04zm-.79.72L12.43 12.3 3.6 21.13c.36.38.95.43 1.62.05l10.54-5.99zM12.43 11.7l3.33-3.35L5.22 2.36c-.67-.38-1.26-.33-1.62.05l8.83 9.29z"/></svg>
+                <span class="lines">
+                    <span class="small">Google Play</span><br>
+                    <span class="big">Androidで事前登録</span>
+                </span>
+            </a>
+        </div>
+        <p class="store-note">2026年8月、リリース予定。登録しておくと、リリース時にお知らせが届きます。</p>
+    </header>
+
+    <!-- 特徴 -->
+    <section>
+        <div class="inner">
+            <p class="sec-label">Print</p>
+            <h2>プリンタから、<br>今日のあなたが出てくる。</h2>
+            <div class="features">
+                <div class="card">
+                    <div class="emoji">🖨️</div>
+                    <h3>印字されて、スルスル出てくる</h3>
+                    <p>発行ボタンを押すと、レシートがプリンタの口からスルスルと印字されて出てきます。紙送りの振動、ちぎる瞬間の手ごたえまで。バーコードもQRコードも、本物そっくり。</p>
+                </div>
+                <div class="card">
+                    <div class="emoji">🧾</div>
+                    <h3>推し活もペットも、自分だけの1枚</h3>
+                    <p>タイトルと項目を入れて、写真を1枚そえるだけ。推し活の費用も、ペットの出費も、TOTALが自動で集計された「あなただけのカスタムレシート」になります。</p>
+                </div>
+                <div class="card">
+                    <div class="emoji">🤝</div>
+                    <h3>集めて、しまって、交換する</h3>
+                    <p>ちぎったレシートは「紙の束」にしまって、いつでも見返せます。あなた自身の名刺レシートは、QRコードで近くの友だちとその場で交換。サーバーも登録も不要です。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ラインナップ(レシート型) -->
+    <section class="lineup-band">
+        <div class="inner">
+            <p class="sec-label">Lineup</p>
+            <h2>今日のあなたを、印字します。</h2>
+
+            <div class="receipt" role="img" aria-label="発行できるレシートの一覧を印字したレシート">
+                <p class="r-head">ANATA RECEIPT</p>
+                <p class="r-meta">DATE: EVERY DAY&nbsp;&nbsp;NO.: #0001</p>
+                <hr class="r-rule">
+                <p class="r-item"><span>今日のあなた</span><span class="leader"></span><span class="cat">カラダ</span></p>
+                <p class="r-item"><span>アクティビティ</span><span class="leader"></span><span class="cat">カラダ</span></p>
+                <p class="r-item"><span>ワークアウト</span><span class="leader"></span><span class="cat">カラダ</span></p>
+                <p class="r-item"><span>睡眠</span><span class="leader"></span><span class="cat">カラダ</span></p>
+                <p class="r-item"><span>天気</span><span class="leader"></span><span class="cat">まいにち</span></p>
+                <p class="r-item"><span>移動</span><span class="leader"></span><span class="cat">まいにち</span></p>
+                <p class="r-item"><span>フォト</span><span class="leader"></span><span class="cat">まいにち</span></p>
+                <p class="r-item"><span>ミュージック</span><span class="leader"></span><span class="cat">まいにち</span></p>
+                <p class="r-item"><span>スクリーンタイム</span><span class="leader"></span><span class="cat">まいにち</span></p>
+                <p class="r-item"><span>この端末</span><span class="leader"></span><span class="cat">じぶん</span></p>
+                <p class="r-item"><span>存在のレシート</span><span class="leader"></span><span class="cat">じぶん</span></p>
+                <p class="r-item"><span>カスタムレシート</span><span class="leader"></span><span class="cat">じぶん</span></p>
+                <hr class="r-rule">
+                <p class="r-total"><span>TOTAL</span><span>あなた</span></p>
+                <hr class="r-rule">
+                <p class="r-thanks">THANK YOU FOR COMING</p>
+                <div class="barcode" aria-hidden="true"></div>
+                <p class="r-serial">**** 0802 ****</p>
+            </div>
+
+            <p class="lineup-note">健康データは端末の中だけで使われ、外に送信されません。</p>
+        </div>
+    </section>
+
+    <!-- スクショ -->
+    <section>
+        <div class="inner">
+            <p class="sec-label">Screens</p>
+            <h2>手のひらに、<br>小さなサーマルプリンタを。</h2>
+            <div class="shots">
+                <img src="/anatareceipt/shot1.webp" alt="毎日を、本物そっくりのレシートに。今日のあなたのレシート画面" loading="lazy" width="520" height="1125">
+                <img src="/anatareceipt/shot2.webp" alt="推し活もペットも、自分だけの1枚。カスタムレシート作成画面" loading="lazy" width="520" height="1125">
+                <img src="/anatareceipt/shot3.webp" alt="近くの友だちと、その場で交換。QRコードのレシート交換画面" loading="lazy" width="520" height="1125">
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="inner">
+            <span class="stamp-mark">受領印</span>
+            <p class="sec-label">Pre-register</p>
+            <h2>最初の一枚を、あなたに。</h2>
+            <p class="sub">事前登録受付中。リリースの日、いちばん最初にお知らせします。</p>
+            <div class="stores">
+                <a class="store-btn" href="https://apps.apple.com/jp/app/id6784235708" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.53 4.08zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+                    <span class="lines">
+                        <span class="small">App Store</span><br>
+                        <span class="big">iPhoneで事前注文</span>
+                    </span>
+                </a>
+                <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.tsuzukit.anatareceipt" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 1.8c-.34.36-.54.9-.54 1.6v17.2c0 .7.2 1.24.55 1.59l.08.08 9.64-9.64v-.23L3.68 1.72l-.08.08zm12.95 13.13-3.22-3.22v-.23l3.22-3.22.07.04 3.82 2.17c1.09.62 1.09 1.63 0 2.25l-3.82 2.17-.07.04zm-.79.72L12.43 12.3 3.6 21.13c.36.38.95.43 1.62.05l10.54-5.99zM12.43 11.7l3.33-3.35L5.22 2.36c-.67-.38-1.26-.33-1.62.05l8.83 9.29z"/></svg>
+                    <span class="lines">
+                        <span class="small">Google Play</span><br>
+                        <span class="big">Androidで事前登録</span>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <a href="https://tsuzukit.com/">tsuzukit.com</a>
+            <a href="https://tsuzukit.com/contact/">お問い合わせ</a>
+            <a href="https://tsuzukit.com/legal/terms-of-service.html">利用規約</a>
+            <a href="https://tsuzukit.com/legal/privacy-policy.html">プライバシーポリシー</a>
+        </nav>
+        <p>© 2026 TsuzuKit</p>
+    </footer>
+
+</body>
+</html>
