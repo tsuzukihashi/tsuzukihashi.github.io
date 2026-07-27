@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>やったよボード - スライドで完了する3D付箋ToDo | 事前登録受付中</title>
+    <meta name="description" content="オレンジのスライダーボードにやることを並べて、終わったらつまみをスライド。「OK」の刻印が現れる。本物みたいな手ざわりの3D ToDoアプリ「やったよボード」。iOS / Android で事前登録受付中。">
+    <meta name="keywords" content="やったよボード,Yattayo,ToDo,タスク管理,todoリスト,チェックリスト,付箋,習慣,3D,スライダー,やること管理">
+
+    <link rel="canonical" href="https://tsuzukit.com/yattayo/">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="tsuzukit">
+    <meta name="theme-color" content="#F5F2EA">
+    <meta name="application-name" content="Yattayo">
+    <link rel="apple-touch-icon" href="/yattayo/apple-touch-icon.png">
+    <link rel="icon" href="/yattayo/apple-touch-icon.png" type="image/png">
+
+    <!-- OGP -->
+    <meta property="og:title" content="やったよボード - スライドしたら、やったよ。">
+    <meta property="og:description" content="オレンジのスライダーボードにやることを並べて、終わったらつまみをスライド。本物みたいな手ざわりの3D ToDoアプリ。iOS / Android で事前登録受付中。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tsuzukit.com/yattayo/">
+    <meta property="og:site_name" content="Yattayo">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:image" content="https://tsuzukit.com/yattayo/og.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@tsuzuki817">
+    <meta name="twitter:creator" content="@tsuzuki817">
+    <meta name="twitter:title" content="やったよボード - スライドしたら、やったよ。">
+    <meta name="twitter:description" content="スライドで完了する、本物みたいな3D付箋ボード。事前登録受付中。">
+    <meta name="twitter:image" content="https://tsuzukit.com/yattayo/og.jpg">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Yattayo: Slider To-Do Board",
+        "alternateName": "やったよボード",
+        "applicationCategory": "ProductivityApplication",
+        "operatingSystem": "iOS, Android",
+        "description": "オレンジのスライダーボードにやることを並べて、終わったらつまみをスライド。本物みたいな手ざわりの3D ToDoアプリ。",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "JPY",
+            "availability": "https://schema.org/PreOrder"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "tsuzukit",
+            "url": "https://tsuzukit.com"
+        }
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --paper: #F5F2EA;          /* アプリの背景色 */
+            --paper-warm: #FAE2C4;     /* 下に向かって淡いオレンジ */
+            --orange: #E8842F;         /* ボードのオレンジ */
+            --orange-deep: #C96A1E;
+            --ink: #3A2A18;            /* 文字 */
+            --ink-soft: #7A6650;
+            --note: #F6E78B;           /* 付箋の黄色 */
+            --note-edge: #E3D26F;
+            --line: rgba(58, 42, 24, 0.12);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            background: var(--paper);
+            color: var(--ink);
+            font-family: "Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN", sans-serif;
+            line-height: 1.9;
+            overflow-x: hidden;
+        }
+        h1, h2, h3, .hand {
+            font-family: "Yusei Magic", "Hiragino Maru Gothic ProN", sans-serif;
+            font-weight: 400;
+            letter-spacing: 0.04em;
+        }
+        a { color: inherit; }
+        img { max-width: 100%; display: block; }
+
+        /* ---------- 紙とボードの溝 ---------- */
+        .board-bg {
+            position: relative;
+            background:
+                radial-gradient(ellipse 80% 60% at 50% -10%, #FFF6E9 0%, transparent 60%),
+                linear-gradient(180deg, var(--paper) 0%, var(--paper) 55%, var(--paper-warm) 100%);
+        }
+        .grooves {
+            position: absolute; inset: 0;
+            pointer-events: none;
+            background-image: repeating-linear-gradient(
+                180deg,
+                rgba(58, 42, 24, 0.045) 0px,
+                rgba(58, 42, 24, 0.045) 1px,
+                transparent 1px,
+                transparent 78px
+            );
+            mask-image: linear-gradient(180deg, transparent 0%, #000 25%, #000 75%, transparent 100%);
+            -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 25%, #000 75%, transparent 100%);
+        }
+
+        /* ---------- ヒーロー ---------- */
+        .hero {
+            min-height: 100svh;
+            display: flex; flex-direction: column;
+            align-items: center; justify-content: center;
+            text-align: center;
+            padding: 88px 24px 72px;
+            position: relative;
+        }
+        .badge {
+            display: inline-block;
+            border: 1px solid rgba(232, 132, 47, 0.5);
+            color: var(--orange-deep);
+            font-size: 13px;
+            letter-spacing: 0.32em;
+            text-indent: 0.32em;
+            padding: 9px 20px 8px;
+            border-radius: 999px;
+            margin-bottom: 34px;
+            background: rgba(232, 132, 47, 0.08);
+        }
+        .hero h1 {
+            font-size: clamp(36px, 7.6vw, 62px);
+            line-height: 1.4;
+            margin-bottom: 18px;
+        }
+        .hero .tagline {
+            font-size: clamp(15px, 3.4vw, 19px);
+            color: var(--ink-soft);
+            letter-spacing: 0.1em;
+            margin-bottom: 46px;
+        }
+        .hero .en {
+            font-size: 12px;
+            letter-spacing: 0.5em;
+            text-indent: 0.5em;
+            color: rgba(58, 42, 24, 0.42);
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+        .nb { display: inline-block; }
+
+        /* ---------- アプリアイコン ---------- */
+        .app-icon-wrap {
+            position: relative;
+            margin: 0 auto 40px;
+            width: 176px; height: 176px;
+        }
+        .app-icon-wrap::before {
+            content: "";
+            position: absolute;
+            left: 50%; top: 50%;
+            width: 320px; height: 320px;
+            transform: translate(-50%, -50%);
+            background: radial-gradient(circle, rgba(232,132,47,.22) 0%, rgba(232,132,47,.07) 45%, transparent 68%);
+            border-radius: 50%;
+            animation: breathe 3.8s ease-in-out infinite;
+            pointer-events: none;
+        }
+        .app-icon {
+            position: relative;
+            width: 176px; height: 176px;
+            border-radius: 22.5%;
+            box-shadow: 0 18px 44px rgba(120, 78, 30, 0.28);
+        }
+        @keyframes breathe { 0%, 100% { opacity: 1; } 50% { opacity: 0.65; } }
+
+        /* ---------- スライダーのデモ(1行だけの本物っぽいボード) ---------- */
+        .demo {
+            width: min(420px, 100%);
+            margin: 0 auto 44px;
+            background: linear-gradient(180deg, #EE8E37 0%, var(--orange) 55%, #D4741F 100%);
+            border-radius: 22px;
+            padding: 16px;
+            display: flex; align-items: center; gap: 14px;
+            box-shadow: 0 14px 34px rgba(160, 92, 22, 0.3), inset 0 2px 0 rgba(255,255,255,.32);
+        }
+        .track {
+            position: relative;
+            width: 116px; height: 52px; flex-shrink: 0;
+            border-radius: 999px;
+            background: linear-gradient(180deg, #C96A1E 0%, #E07C26 100%);
+            box-shadow: inset 0 3px 7px rgba(90, 46, 6, 0.45);
+        }
+        .stamp {
+            position: absolute; left: 11px; top: 50%;
+            transform: translateY(-50%) rotate(-8deg);
+            font-family: "Yusei Magic", sans-serif;
+            font-size: 15px; letter-spacing: .06em;
+            color: #C3421F;
+            border: 2px solid #C3421F;
+            border-radius: 6px;
+            padding: 0 5px;
+            opacity: 0;
+            animation: stampIn 4.4s ease-in-out infinite;
+        }
+        .knob {
+            position: absolute; top: 4px; left: 4px;
+            width: 44px; height: 44px;
+            border-radius: 50%;
+            background: linear-gradient(180deg, #FFFDF6 0%, #EDE6D4 55%, #D8CFBA 100%);
+            box-shadow: 0 3px 6px rgba(80, 40, 8, 0.35);
+            animation: slide 4.4s ease-in-out infinite;
+        }
+        .knob::after {
+            content: "";
+            position: absolute; inset: 14px 18px;
+            border-left: 2px solid rgba(120, 96, 62, .35);
+            border-right: 2px solid rgba(120, 96, 62, .35);
+        }
+        .demo-note {
+            flex: 1;
+            background: linear-gradient(180deg, #FBF3A8 0%, var(--note) 100%);
+            border-radius: 6px;
+            padding: 12px 14px;
+            font-family: "Yusei Magic", sans-serif;
+            font-size: 17px;
+            color: var(--ink);
+            text-align: left;
+            transform: rotate(-0.8deg);
+            box-shadow: 0 3px 8px rgba(120, 90, 30, 0.22);
+        }
+        @keyframes slide {
+            0%, 26% { left: 4px; }
+            44%, 78% { left: 68px; }
+            96%, 100% { left: 4px; }
+        }
+        @keyframes stampIn {
+            0%, 43% { opacity: 0; transform: translateY(-50%) rotate(-8deg) scale(.65); }
+            50%, 78% { opacity: 1; transform: translateY(-50%) rotate(-8deg) scale(1); }
+            88%, 100% { opacity: 0; transform: translateY(-50%) rotate(-8deg) scale(.65); }
+        }
+
+        /* ---------- ストアボタン ---------- */
+        .stores {
+            display: flex; flex-wrap: wrap;
+            gap: 16px;
+            justify-content: center;
+        }
+        .store-btn {
+            display: flex; align-items: center; gap: 13px;
+            padding: 14px 26px;
+            border: 1px solid var(--line);
+            border-radius: 14px;
+            background: rgba(255, 255, 255, 0.62);
+            text-decoration: none;
+            transition: border-color .25s, background .25s, transform .25s, box-shadow .25s;
+        }
+        .store-btn:hover {
+            border-color: rgba(232, 132, 47, 0.65);
+            background: #fff;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 24px rgba(160, 92, 22, 0.16);
+        }
+        .store-btn svg { width: 26px; height: 26px; fill: var(--ink); flex-shrink: 0; }
+        .store-btn .lines { text-align: left; line-height: 1.35; }
+        .store-btn .small { font-size: 11px; color: var(--ink-soft); letter-spacing: 0.08em; }
+        .store-btn .big { font-size: 16px; font-weight: 700; letter-spacing: 0.04em; }
+        /* iOSは審査中のため準備中表示。ストアURLが決まったら <a href> に戻す */
+        .store-btn.soon {
+            opacity: .55;
+            cursor: default;
+            background: rgba(255,255,255,.35);
+        }
+        .store-btn.soon:hover { transform: none; box-shadow: none; border-color: var(--line); background: rgba(255,255,255,.35); }
+        .store-note { margin-top: 20px; font-size: 12.5px; color: rgba(58,42,24,.5); letter-spacing: .1em; }
+
+        /* ---------- セクション共通 ---------- */
+        section { padding: 96px 24px; position: relative; }
+        .inner { max-width: 980px; margin: 0 auto; }
+        .sec-label {
+            text-align: center;
+            font-size: 11px;
+            letter-spacing: 0.5em;
+            text-indent: 0.5em;
+            color: var(--orange-deep);
+            text-transform: uppercase;
+            margin-bottom: 14px;
+        }
+        h2 {
+            text-align: center;
+            font-size: clamp(23px, 4.8vw, 33px);
+            margin-bottom: 56px;
+            line-height: 1.6;
+        }
+
+        /* ---------- 特徴(付箋カード) ---------- */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            max-width: 760px;
+            margin: 0 auto;
+        }
+        @media (max-width: 680px) {
+            .features { grid-template-columns: 1fr; max-width: 420px; }
+        }
+        .card {
+            border-radius: 8px;
+            padding: 32px 28px;
+            background: linear-gradient(180deg, #FCF6B4 0%, var(--note) 100%);
+            box-shadow: 0 8px 20px rgba(140, 105, 40, 0.16);
+            position: relative;
+        }
+        .card:nth-child(1) { transform: rotate(-0.9deg); }
+        .card:nth-child(2) { transform: rotate(0.7deg); }
+        .card:nth-child(3) { transform: rotate(-0.5deg); }
+        .card:nth-child(4) { transform: rotate(0.9deg); }
+        .card::after {   /* 付箋の角のめくれ */
+            content: "";
+            position: absolute; right: 0; bottom: 0;
+            border-width: 0 0 20px 20px;
+            border-style: solid;
+            border-color: transparent transparent rgba(255,255,255,.55) transparent;
+            filter: drop-shadow(-2px -2px 2px rgba(140,105,40,.18));
+        }
+        .card .emoji { font-size: 34px; line-height: 1; margin-bottom: 16px; }
+        .card h3 { font-size: 18px; margin-bottom: 10px; letter-spacing: 0.04em; }
+        .card p { font-size: 14px; color: #6B5533; line-height: 1.85; }
+
+        /* ---------- 手ざわりの帯 ---------- */
+        .feel {
+            text-align: center;
+            color: var(--ink-soft);
+            font-size: clamp(13px, 2.6vw, 15px);
+            letter-spacing: 0.24em;
+            line-height: 2.6;
+        }
+        .feel .hand {
+            color: var(--ink);
+            font-size: clamp(19px, 4.4vw, 27px);
+            letter-spacing: 0.16em;
+        }
+
+        /* ---------- スクショ ---------- */
+        .shots {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 26px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .shots img {
+            width: 100%;
+            height: auto;
+            border-radius: 18px;
+            border: 1px solid var(--line);
+            box-shadow: 0 20px 44px rgba(120, 78, 30, 0.2);
+        }
+        @media (max-width: 760px) {
+            .shots { grid-template-columns: 1fr; max-width: 320px; }
+        }
+        .shots-note {
+            max-width: 900px;
+            margin: 26px auto 0;
+            text-align: center;
+            font-size: 12px;
+            line-height: 1.9;
+            color: rgba(58, 42, 24, 0.45);
+        }
+
+        /* ---------- CTA ---------- */
+        .cta {
+            text-align: center;
+            border-top: 1px solid var(--line);
+            background:
+                radial-gradient(ellipse 70% 90% at 50% 115%, rgba(232, 132, 47, 0.18) 0%, transparent 62%),
+                var(--paper-warm);
+        }
+        .cta h2 { margin-bottom: 16px; }
+        .cta .sub { color: var(--ink-soft); margin-bottom: 40px; font-size: 15px; letter-spacing: 0.08em; }
+        .ok-mark {
+            display: inline-block;
+            font-family: "Yusei Magic", sans-serif;
+            font-size: 22px;
+            color: #C3421F;
+            border: 3px solid #C3421F;
+            border-radius: 8px;
+            padding: 2px 12px 3px;
+            transform: rotate(-7deg);
+            margin-bottom: 22px;
+            animation: breathe 3.8s ease-in-out infinite;
+        }
+
+        /* ---------- フッター ---------- */
+        footer {
+            border-top: 1px solid var(--line);
+            padding: 44px 24px 52px;
+            text-align: center;
+            font-size: 12.5px;
+            color: rgba(58, 42, 24, 0.5);
+            background: var(--paper);
+        }
+        footer nav { display: flex; flex-wrap: wrap; gap: 8px 26px; justify-content: center; margin-bottom: 18px; }
+        footer a { text-decoration: none; }
+        footer a:hover { color: var(--ink); }
+
+        @media (prefers-reduced-motion: reduce) {
+            .app-icon-wrap::before, .knob, .stamp, .ok-mark { animation: none !important; }
+            .knob { left: 68px !important; }
+            .stamp { opacity: 1 !important; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ヒーロー -->
+    <header class="hero board-bg">
+        <div class="grooves"></div>
+
+        <span class="badge">事前登録受付中</span>
+
+        <div class="app-icon-wrap">
+            <img class="app-icon" src="/yattayo/icon-hero.webp" alt="やったよボード アプリアイコン - オレンジのスライダーボード" width="176" height="176">
+        </div>
+
+        <p class="en">Yattayo — Slider To-Do Board</p>
+        <h1><span class="nb">スライドしたら、</span><span class="nb">やったよ。</span></h1>
+        <p class="tagline"><span class="nb">やることを並べて、終わったらつまみをスライド。</span><span class="nb">本物みたいな手ざわりの ToDo アプリ。</span></p>
+
+        <div class="demo" aria-hidden="true">
+            <div class="track">
+                <span class="stamp">OK</span>
+                <span class="knob"></span>
+            </div>
+            <div class="demo-note">牛乳を買う</div>
+        </div>
+
+        <div class="stores">
+            <!-- iOSは審査提出済み。App StoreのURLが確定したら span.store-btn.soon を a.store-btn に差し替える -->
+            <span class="store-btn soon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.53 4.08zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+                <span class="lines">
+                    <span class="small">App Store</span><br>
+                    <span class="big">iPhone は準備中</span>
+                </span>
+            </span>
+            <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.tsuzukit.yattayo" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 1.8c-.34.36-.54.9-.54 1.6v17.2c0 .7.2 1.24.55 1.59l.08.08 9.64-9.64v-.23L3.68 1.72l-.08.08zm12.95 13.13-3.22-3.22v-.23l3.22-3.22.07.04 3.82 2.17c1.09.62 1.09 1.63 0 2.25l-3.82 2.17-.07.04zm-.79.72L12.43 12.3 3.6 21.13c.36.38.95.43 1.62.05l10.54-5.99zM12.43 11.7l3.33-3.35L5.22 2.36c-.67-.38-1.26-.33-1.62.05l8.83 9.29z"/></svg>
+                <span class="lines">
+                    <span class="small">Google Play</span><br>
+                    <span class="big">Androidで事前登録</span>
+                </span>
+            </a>
+        </div>
+        <p class="store-note">2026年8月、リリース予定。登録しておくと、リリース時にお知らせが届きます。</p>
+    </header>
+
+    <!-- 特徴 -->
+    <section>
+        <div class="inner">
+            <p class="sec-label">Feel</p>
+            <h2>チェックを付けるんじゃない。<br>スライドして、終わらせる。</h2>
+            <div class="features">
+                <div class="card">
+                    <div class="emoji">🎚️</div>
+                    <h3>指で押し切る、完了</h3>
+                    <p>つまみを右へ押し切ると、溝を刻むカチカチという摩擦のあと、端で「カチッ」と嵌まります。指を離すと現れるのは、赤い「OK」の刻印。タップより、ずっと終わった気がします。</p>
+                </div>
+                <div class="card">
+                    <div class="emoji">📝</div>
+                    <h3>付箋に、そのまま書く</h3>
+                    <p>タスクは1枚の付箋。タップするとその付箋がふわっと開いて、文字でも手書きでも書けます。書いた見た目のまま、ボードの上に貼り直されます。</p>
+                </div>
+                <div class="card">
+                    <div class="emoji">🍃</div>
+                    <h3>剥がして、片付ける</h3>
+                    <p>完了した付箋は、指でめくって剥がすだけ。手を離すと、くるくると回りながらボードの外へ落ちていきます。片付けまで、ちゃんと気持ちいい。</p>
+                </div>
+                <div class="card">
+                    <div class="emoji">🔔</div>
+                    <h3>忘れても、思い出させる</h3>
+                    <p>締切の2日前・前日・当日にお知らせ。過ぎてしまっても、終わるまで毎日そっと声をかけます。通知からそのまま「やったよ」もできます。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 手ざわり -->
+    <section class="board-bg">
+        <div class="grooves"></div>
+        <div class="inner" style="position: relative;">
+            <p class="sec-label">Texture</p>
+            <h2>音と、振動と、手ざわり。</h2>
+            <p class="feel">
+                <span class="hand">カチ、カチ、カチッ。</span><br>
+                つまみが溝を越えるたび、指先に返ってくる。<br><br>
+                <span class="hand">ペタッ。</span><br>
+                書き終えた付箋が、ボードに貼り直される。<br><br>
+                <span class="hand">ピリッ。</span><br>
+                終わった付箋を、剥がして落とす。
+            </p>
+        </div>
+    </section>
+
+    <!-- スクショ -->
+    <section>
+        <div class="inner">
+            <p class="sec-label">Screens</p>
+            <h2>手のひらの中に、<br>本物みたいなボードを。</h2>
+            <div class="shots">
+                <img src="/yattayo/shot1.webp" alt="やることを並べたオレンジのスライダーボードのホーム画面" loading="lazy" width="520" height="1125">
+                <img src="/yattayo/shot2.webp" alt="付箋を開いて「牛乳をかう」と書き込む編集画面" loading="lazy" width="520" height="1125">
+                <img src="/yattayo/shot3.webp" alt="ホーム画面ウィジェットのボードをタップして完了にする様子（iOS版）" loading="lazy" width="520" height="1125">
+            </div>
+            <p class="shots-note">※ 画面は iOS 版。ボードを写したウィジェットは iOS 版の機能です（Android 版はやること一覧のウィジェットを搭載）。</p>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="inner">
+            <span class="ok-mark">OK</span>
+            <p class="sec-label">Pre-register</p>
+            <h2>最初の「やったよ」を、あなたに。</h2>
+            <p class="sub">事前登録受付中。リリースの日、いちばん最初にお知らせします。</p>
+            <div class="stores">
+                <span class="store-btn soon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.53 4.08zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+                    <span class="lines">
+                        <span class="small">App Store</span><br>
+                        <span class="big">iPhone は準備中</span>
+                    </span>
+                </span>
+                <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.tsuzukit.yattayo" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 1.8c-.34.36-.54.9-.54 1.6v17.2c0 .7.2 1.24.55 1.59l.08.08 9.64-9.64v-.23L3.68 1.72l-.08.08zm12.95 13.13-3.22-3.22v-.23l3.22-3.22.07.04 3.82 2.17c1.09.62 1.09 1.63 0 2.25l-3.82 2.17-.07.04zm-.79.72L12.43 12.3 3.6 21.13c.36.38.95.43 1.62.05l10.54-5.99zM12.43 11.7l3.33-3.35L5.22 2.36c-.67-.38-1.26-.33-1.62.05l8.83 9.29z"/></svg>
+                    <span class="lines">
+                        <span class="small">Google Play</span><br>
+                        <span class="big">Androidで事前登録</span>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <a href="https://tsuzukit.com/">tsuzukit.com</a>
+            <a href="https://tsuzukit.com/contact/">お問い合わせ</a>
+            <a href="https://tsuzukit.com/legal/terms-of-service.html">利用規約</a>
+            <a href="https://tsuzukit.com/legal/privacy-policy.html">プライバシーポリシー</a>
+        </nav>
+        <p>© 2026 TsuzuKit</p>
+    </footer>
+
+</body>
+</html>
