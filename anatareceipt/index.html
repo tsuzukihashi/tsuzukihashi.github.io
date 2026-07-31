@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>あなたレシート - 毎日も推し活も、本物そっくりのレシートに印刷 | 事前登録受付中</title>
-    <meta name="description" content="歩数も、睡眠も、推し活も。あなたの一日を本物そっくりのレシートに印字して、集めて、交換するアプリ「あなたレシート」。プリンタからスルスル出てくる印刷演出と、QRコードのオフライン交換。iOS / Android で事前登録受付中。">
+    <title>あなたレシート - 毎日も推し活も、本物そっくりのレシートに印刷 | iOS / Android配信中</title>
+    <meta name="description" content="歩数も、睡眠も、推し活も。あなたの一日を本物そっくりのレシートに印字して、集めて、交換するアプリ「あなたレシート」。プリンタからスルスル出てくる印刷演出と、QRコードのオフライン交換。iOS / Android で配信中。">
     <meta name="keywords" content="あなたレシート,YOU Receipt,レシート,レシートメーカー,推し活,オタ活,ヘルスケア,歩数,睡眠,ライフログ,日記アプリ,交換,名刺">
 
     <link rel="canonical" href="https://tsuzukit.com/anatareceipt/">
@@ -17,11 +17,12 @@
 
     <!-- OGP -->
     <meta property="og:title" content="あなたレシート - 毎日も推し活も、オリジナルを1枚に">
-    <meta property="og:description" content="あなたの一日を、一枚のレシートに。印字して、集めて、交換する。iOS / Android で事前登録受付中。">
+    <meta property="og:description" content="あなたの一日を、一枚のレシートに。印字して、集めて、交換する。iOS / Android で配信中。">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://tsuzukit.com/anatareceipt/">
     <meta property="og:site_name" content="あなたレシート">
     <meta property="og:locale" content="ja_JP">
+    <meta property="og:locale:alternate" content="en_US">
     <meta property="og:image" content="https://tsuzukit.com/anatareceipt/og.jpg">
 
     <!-- Twitter Card -->
@@ -29,7 +30,7 @@
     <meta name="twitter:site" content="@tsuzuki817">
     <meta name="twitter:creator" content="@tsuzuki817">
     <meta name="twitter:title" content="あなたレシート - 毎日も推し活も、オリジナルを1枚に">
-    <meta name="twitter:description" content="あなたの一日を、一枚のレシートに。事前登録受付中。">
+    <meta name="twitter:description" content="あなたの一日を、一枚のレシートに。iOS / Androidで配信中。">
     <meta name="twitter:image" content="https://tsuzukit.com/anatareceipt/og.jpg">
 
     <!-- Structured Data -->
@@ -46,7 +47,7 @@
             "@type": "Offer",
             "price": "0",
             "priceCurrency": "JPY",
-            "availability": "https://schema.org/PreOrder"
+            "availability": "https://schema.org/InStock"
         },
         "author": {
             "@type": "Person",
@@ -54,6 +55,19 @@
             "url": "https://tsuzukit.com"
         }
     }
+    </script>
+
+    <!-- 言語の初期判定(描画前に適用してチラつき防止) -->
+    <script>
+    (function () {
+        var saved = null;
+        try { saved = localStorage.getItem('anatareceipt-lang'); } catch (e) {}
+        var lang = (saved === 'ja' || saved === 'en')
+            ? saved
+            : (((navigator.language || '').toLowerCase().indexOf('ja') === 0) ? 'ja' : 'en');
+        document.documentElement.setAttribute('data-lang', lang);
+        document.documentElement.lang = lang;
+    })();
     </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -86,6 +100,30 @@
         }
         a { color: inherit; }
         img { max-width: 100%; display: block; }
+
+        /* ---------- 言語切り替え ---------- */
+        html[data-lang="en"] .i18n-ja { display: none !important; }
+        html:not([data-lang="en"]) .i18n-en { display: none !important; }
+        .lang-toggle {
+            position: fixed;
+            top: 18px; right: 18px;
+            z-index: 50;
+            font-family: "DotGothic16", "Zen Kaku Gothic New", monospace;
+            font-size: 13px;
+            letter-spacing: 0.1em;
+            padding: 9px 16px 8px;
+            border: 1.5px solid var(--ink);
+            border-radius: 10px;
+            background: var(--card);
+            color: var(--ink);
+            box-shadow: 0 2px 0 var(--ink);
+            cursor: pointer;
+            transition: transform .15s, box-shadow .15s;
+        }
+        .lang-toggle:hover {
+            transform: translateY(1px);
+            box-shadow: 0 1px 0 var(--ink);
+        }
 
         /* ---------- 紙の質感 ---------- */
         .grain {
@@ -344,57 +382,91 @@
 </head>
 <body>
 
+    <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language / 言語を切り替え">
+        <span class="i18n-ja">English</span><span class="i18n-en">日本語</span>
+    </button>
+
     <!-- ヒーロー -->
     <header class="hero grain">
-        <span class="badge dot">事前登録受付中</span>
+        <span class="badge dot"><span class="i18n-ja">配信中</span><span class="i18n-en">NOW AVAILABLE</span></span>
 
         <div class="app-icon-wrap">
-            <img class="app-icon" src="/anatareceipt/icon-hero.webp" alt="あなたレシート アプリアイコン - ドット絵のレシート" width="168" height="168">
+            <img class="app-icon" src="/anatareceipt/icon-hero.webp" alt="YOU Receipt app icon" width="168" height="168">
         </div>
 
         <p class="en">YOU Receipt — Print Yourself</p>
-        <h1><span class="nb">あなたの一日を、</span><br><span class="nb">一枚のレシートに。</span></h1>
-        <p class="tagline"><span class="nb">歩数も、睡眠も、推し活も。</span><span class="nb">本物そっくりのレシートに印字して、</span><span class="nb">集めて、交換する。</span></p>
+        <h1>
+            <span class="i18n-ja"><span class="nb">あなたの一日を、</span><br><span class="nb">一枚のレシートに。</span></span>
+            <span class="i18n-en"><span class="nb">Your day,</span><br><span class="nb">printed on a receipt.</span></span>
+        </h1>
+        <p class="tagline">
+            <span class="i18n-ja"><span class="nb">歩数も、睡眠も、推し活も。</span><span class="nb">本物そっくりのレシートに印字して、</span><span class="nb">集めて、交換する。</span></span>
+            <span class="i18n-en"><span class="nb">Steps, sleep, even your fandom life.</span> <span class="nb">Print them on a realistic receipt —</span> <span class="nb">then collect and trade.</span></span>
+        </p>
 
         <div class="stores">
-            <a class="store-btn" href="https://apps.apple.com/jp/app/id6784235708" target="_blank" rel="noopener">
+            <a class="store-btn js-ios-link" href="https://apps.apple.com/jp/app/you-receipt-receipt-maker/id6784235708" target="_blank" rel="noopener">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.53 4.08zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
                 <span class="lines">
                     <span class="small">App Store</span><br>
-                    <span class="big">iPhoneで事前注文</span>
+                    <span class="big"><span class="i18n-ja">iPhoneでダウンロード</span><span class="i18n-en">Download for iPhone</span></span>
                 </span>
             </a>
-            <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.tsuzukit.anatareceipt" target="_blank" rel="noopener">
+            <a class="store-btn js-play-link" href="https://play.google.com/store/apps/details?id=com.tsuzukit.anatareceipt" target="_blank" rel="noopener">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 1.8c-.34.36-.54.9-.54 1.6v17.2c0 .7.2 1.24.55 1.59l.08.08 9.64-9.64v-.23L3.68 1.72l-.08.08zm12.95 13.13-3.22-3.22v-.23l3.22-3.22.07.04 3.82 2.17c1.09.62 1.09 1.63 0 2.25l-3.82 2.17-.07.04zm-.79.72L12.43 12.3 3.6 21.13c.36.38.95.43 1.62.05l10.54-5.99zM12.43 11.7l3.33-3.35L5.22 2.36c-.67-.38-1.26-.33-1.62.05l8.83 9.29z"/></svg>
                 <span class="lines">
                     <span class="small">Google Play</span><br>
-                    <span class="big">Androidで事前登録</span>
+                    <span class="big"><span class="i18n-ja">Androidでダウンロード</span><span class="i18n-en">Download for Android</span></span>
                 </span>
             </a>
         </div>
-        <p class="store-note">2026年8月、リリース予定。登録しておくと、リリース時にお知らせが届きます。</p>
+        <p class="store-note">
+            <span class="i18n-ja">iOS / Android で配信中。無料でダウンロードできます。</span>
+            <span class="i18n-en">Out now on iOS &amp; Android. Free to download.</span>
+        </p>
     </header>
 
     <!-- 特徴 -->
     <section>
         <div class="inner">
             <p class="sec-label">Print</p>
-            <h2>プリンタから、<br>今日のあなたが出てくる。</h2>
+            <h2>
+                <span class="i18n-ja">プリンタから、<br>今日のあなたが出てくる。</span>
+                <span class="i18n-en">Today's you comes out<br>of the printer.</span>
+            </h2>
             <div class="features">
                 <div class="card">
                     <div class="emoji">🖨️</div>
-                    <h3>印字されて、スルスル出てくる</h3>
-                    <p>発行ボタンを押すと、レシートがプリンタの口からスルスルと印字されて出てきます。紙送りの振動、ちぎる瞬間の手ごたえまで。バーコードもQRコードも、本物そっくり。</p>
+                    <h3>
+                        <span class="i18n-ja">印字されて、スルスル出てくる</span>
+                        <span class="i18n-en">It prints, and slides right out</span>
+                    </h3>
+                    <p>
+                        <span class="i18n-ja">発行ボタンを押すと、レシートがプリンタの口からスルスルと印字されて出てきます。紙送りの振動、ちぎる瞬間の手ごたえまで。バーコードもQRコードも、本物そっくり。</span>
+                        <span class="i18n-en">Tap the issue button and your receipt slides out of the printer, line by line — with the rumble of the paper feed and the satisfying feel of tearing it off. Barcodes and QR codes look just like the real thing.</span>
+                    </p>
                 </div>
                 <div class="card">
                     <div class="emoji">🧾</div>
-                    <h3>推し活もペットも、自分だけの1枚</h3>
-                    <p>タイトルと項目を入れて、写真を1枚そえるだけ。推し活の費用も、ペットの出費も、TOTALが自動で集計された「あなただけのカスタムレシート」になります。</p>
+                    <h3>
+                        <span class="i18n-ja">推し活もペットも、自分だけの1枚</span>
+                        <span class="i18n-en">Your very own custom receipt</span>
+                    </h3>
+                    <p>
+                        <span class="i18n-ja">タイトルと項目を入れて、写真を1枚そえるだけ。推し活の費用も、ペットの出費も、TOTALが自動で集計された「あなただけのカスタムレシート」になります。</span>
+                        <span class="i18n-en">Just add a title, a few items, and one photo. Fandom spending, pet expenses — anything becomes a one-of-a-kind custom receipt with the TOTAL tallied up automatically.</span>
+                    </p>
                 </div>
                 <div class="card">
                     <div class="emoji">🤝</div>
-                    <h3>集めて、しまって、交換する</h3>
-                    <p>ちぎったレシートは「紙の束」にしまって、いつでも見返せます。あなた自身の名刺レシートは、QRコードで近くの友だちとその場で交換。サーバーも登録も不要です。</p>
+                    <h3>
+                        <span class="i18n-ja">集めて、しまって、交換する</span>
+                        <span class="i18n-en">Collect, stash, and trade</span>
+                    </h3>
+                    <p>
+                        <span class="i18n-ja">ちぎったレシートは「紙の束」にしまって、いつでも見返せます。あなた自身の名刺レシートは、QRコードで近くの友だちとその場で交換。サーバーも登録も不要です。</span>
+                        <span class="i18n-en">Torn receipts go into your paper stack, ready to look back on anytime. Your personal business-card receipt can be traded with nearby friends on the spot via QR code — no servers, no sign-up.</span>
+                    </p>
                 </div>
             </div>
         </div>
@@ -404,9 +476,12 @@
     <section class="lineup-band">
         <div class="inner">
             <p class="sec-label">Lineup</p>
-            <h2>今日のあなたを、印字します。</h2>
+            <h2>
+                <span class="i18n-ja">今日のあなたを、印字します。</span>
+                <span class="i18n-en">Printing today's you.</span>
+            </h2>
 
-            <div class="receipt" role="img" aria-label="発行できる13種類のレシートを印字したレシート。カラダ・まいにち・じぶんの3カテゴリ">
+            <div class="receipt i18n-ja" role="img" aria-label="発行できる13種類のレシートを印字したレシート。カラダ・まいにち・じぶんの3カテゴリ">
                 <p class="r-head">ANATA RECEIPT</p>
                 <p class="r-meta">レシートは ぜんぶで 13種類</p>
                 <hr class="r-rule">
@@ -434,7 +509,38 @@
                 <p class="r-serial">**** 0802 ****</p>
             </div>
 
-            <p class="lineup-note">健康データは端末の中だけで使われ、外に送信されません。</p>
+            <div class="receipt i18n-en" role="img" aria-label="A receipt listing all 13 printable receipt types, in three categories: Body, Daily, and You">
+                <p class="r-head">ANATA RECEIPT</p>
+                <p class="r-meta">13 KINDS OF RECEIPTS IN ALL</p>
+                <hr class="r-rule">
+                <p class="r-sec">＊ BODY ＊</p>
+                <p class="r-item"><span>Today's You</span><span class="leader"></span><span class="cat">steps &amp; heart</span></p>
+                <p class="r-item"><span>Activity</span><span class="leader"></span><span class="cat">rings closed</span></p>
+                <p class="r-item"><span>Workout</span><span class="leader"></span><span class="cat">pace &amp; heart rate</span></p>
+                <p class="r-item"><span>Sleep</span><span class="leader"></span><span class="cat">sleep stages</span></p>
+                <p class="r-sec">＊ DAILY ＊</p>
+                <p class="r-item"><span>Weather</span><span class="leader"></span><span class="cat">today's sky</span></p>
+                <p class="r-item"><span>Moves</span><span class="leader"></span><span class="cat">how you got around</span></p>
+                <p class="r-item"><span>Photos</span><span class="leader"></span><span class="cat">shots taken</span></p>
+                <p class="r-item"><span>Music</span><span class="leader"></span><span class="cat">most played</span></p>
+                <p class="r-item"><span>Screen Time</span><span class="leader"></span><span class="cat">hours spent</span></p>
+                <p class="r-sec">＊ YOU ＊</p>
+                <p class="r-item"><span>This Device</span><span class="leader"></span><span class="cat">battery</span></p>
+                <p class="r-item"><span>Existence</span><span class="leader"></span><span class="cat">days you've lived</span></p>
+                <p class="r-item"><span>Yourself</span><span class="leader"></span><span class="cat">tradable card</span></p>
+                <p class="r-item"><span>Custom</span><span class="leader"></span><span class="cat">fandom &amp; pets</span></p>
+                <hr class="r-rule">
+                <p class="r-total"><span>TOTAL</span><span>YOU</span></p>
+                <hr class="r-rule">
+                <p class="r-thanks">THANK YOU FOR COMING</p>
+                <div class="barcode" aria-hidden="true"></div>
+                <p class="r-serial">**** 0802 ****</p>
+            </div>
+
+            <p class="lineup-note">
+                <span class="i18n-ja">健康データは端末の中だけで使われ、外に送信されません。</span>
+                <span class="i18n-en">Your health data stays on your device and is never sent anywhere.</span>
+            </p>
         </div>
     </section>
 
@@ -442,11 +548,14 @@
     <section>
         <div class="inner">
             <p class="sec-label">Screens</p>
-            <h2>手のひらに、<br>小さなサーマルプリンタを。</h2>
+            <h2>
+                <span class="i18n-ja">手のひらに、<br>小さなサーマルプリンタを。</span>
+                <span class="i18n-en">A tiny thermal printer,<br>right in your palm.</span>
+            </h2>
             <div class="shots">
-                <img src="/anatareceipt/shot1.webp" alt="毎日を、本物そっくりのレシートに。今日のあなたのレシート画面" loading="lazy" width="520" height="1125">
-                <img src="/anatareceipt/shot2.webp" alt="推し活もペットも、自分だけの1枚。カスタムレシート作成画面" loading="lazy" width="520" height="1125">
-                <img src="/anatareceipt/shot3.webp" alt="近くの友だちと、その場で交換。QRコードのレシート交換画面" loading="lazy" width="520" height="1125">
+                <img src="/anatareceipt/shot1.webp" alt="毎日を、本物そっくりのレシートに。今日のあなたのレシート画面 / Your daily receipt screen" loading="lazy" width="520" height="1125">
+                <img src="/anatareceipt/shot2.webp" alt="推し活もペットも、自分だけの1枚。カスタムレシート作成画面 / Custom receipt editor" loading="lazy" width="520" height="1125">
+                <img src="/anatareceipt/shot3.webp" alt="近くの友だちと、その場で交換。QRコードのレシート交換画面 / QR code receipt trading" loading="lazy" width="520" height="1125">
             </div>
         </div>
     </section>
@@ -454,23 +563,29 @@
     <!-- CTA -->
     <section class="cta">
         <div class="inner">
-            <span class="stamp-mark">受領印</span>
-            <p class="sec-label">Pre-register</p>
-            <h2>最初の一枚を、あなたに。</h2>
-            <p class="sub">事前登録受付中。リリースの日、いちばん最初にお知らせします。</p>
+            <span class="stamp-mark"><span class="i18n-ja">受領印</span><span class="i18n-en">RECEIVED</span></span>
+            <p class="sec-label">Download</p>
+            <h2>
+                <span class="i18n-ja">最初の一枚を、あなたに。</span>
+                <span class="i18n-en">Your first receipt is waiting.</span>
+            </h2>
+            <p class="sub">
+                <span class="i18n-ja">App Store / Google Play で配信中。今日のあなたを、一枚どうぞ。</span>
+                <span class="i18n-en">Available now on the App Store and Google Play. Print a copy of today.</span>
+            </p>
             <div class="stores">
-                <a class="store-btn" href="https://apps.apple.com/jp/app/id6784235708" target="_blank" rel="noopener">
+                <a class="store-btn js-ios-link" href="https://apps.apple.com/jp/app/you-receipt-receipt-maker/id6784235708" target="_blank" rel="noopener">
                     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.53 4.08zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
                     <span class="lines">
                         <span class="small">App Store</span><br>
-                        <span class="big">iPhoneで事前注文</span>
+                        <span class="big"><span class="i18n-ja">iPhoneでダウンロード</span><span class="i18n-en">Download for iPhone</span></span>
                     </span>
                 </a>
-                <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.tsuzukit.anatareceipt" target="_blank" rel="noopener">
+                <a class="store-btn js-play-link" href="https://play.google.com/store/apps/details?id=com.tsuzukit.anatareceipt" target="_blank" rel="noopener">
                     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 1.8c-.34.36-.54.9-.54 1.6v17.2c0 .7.2 1.24.55 1.59l.08.08 9.64-9.64v-.23L3.68 1.72l-.08.08zm12.95 13.13-3.22-3.22v-.23l3.22-3.22.07.04 3.82 2.17c1.09.62 1.09 1.63 0 2.25l-3.82 2.17-.07.04zm-.79.72L12.43 12.3 3.6 21.13c.36.38.95.43 1.62.05l10.54-5.99zM12.43 11.7l3.33-3.35L5.22 2.36c-.67-.38-1.26-.33-1.62.05l8.83 9.29z"/></svg>
                     <span class="lines">
                         <span class="small">Google Play</span><br>
-                        <span class="big">Androidで事前登録</span>
+                        <span class="big"><span class="i18n-ja">Androidでダウンロード</span><span class="i18n-en">Download for Android</span></span>
                     </span>
                 </a>
             </div>
@@ -480,12 +595,49 @@
     <footer>
         <nav>
             <a href="https://tsuzukit.com/">tsuzukit.com</a>
-            <a href="https://tsuzukit.com/contact/">お問い合わせ</a>
-            <a href="https://tsuzukit.com/legal/terms-of-service.html">利用規約</a>
-            <a href="https://tsuzukit.com/legal/privacy-policy.html">プライバシーポリシー</a>
+            <a href="https://tsuzukit.com/contact/"><span class="i18n-ja">お問い合わせ</span><span class="i18n-en">Contact</span></a>
+            <a href="https://tsuzukit.com/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
+            <a href="https://tsuzukit.com/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
         </nav>
         <p>© 2026 TsuzuKit</p>
     </footer>
+
+    <script>
+    (function () {
+        var LINKS = {
+            ja: {
+                ios: 'https://apps.apple.com/jp/app/you-receipt-receipt-maker/id6784235708',
+                play: 'https://play.google.com/store/apps/details?id=com.tsuzukit.anatareceipt'
+            },
+            en: {
+                ios: 'https://apps.apple.com/jp/app/you-receipt-receipt-maker/id6784235708?l=en-US',
+                play: 'https://play.google.com/store/apps/details?id=com.tsuzukit.anatareceipt&hl=en'
+            }
+        };
+        var TITLES = {
+            ja: 'あなたレシート - 毎日も推し活も、本物そっくりのレシートに印刷 | iOS / Android配信中',
+            en: "YOU Receipt — Print your day as a realistic receipt | Out now on iOS / Android"
+        };
+        var btn = document.getElementById('langToggle');
+
+        function apply(lang) {
+            document.documentElement.setAttribute('data-lang', lang);
+            document.documentElement.lang = lang;
+            document.title = TITLES[lang];
+            var links = LINKS[lang];
+            document.querySelectorAll('.js-ios-link').forEach(function (a) { a.href = links.ios; });
+            document.querySelectorAll('.js-play-link').forEach(function (a) { a.href = links.play; });
+        }
+
+        apply(document.documentElement.getAttribute('data-lang') === 'en' ? 'en' : 'ja');
+
+        btn.addEventListener('click', function () {
+            var next = document.documentElement.getAttribute('data-lang') === 'ja' ? 'en' : 'ja';
+            try { localStorage.setItem('anatareceipt-lang', next); } catch (e) {}
+            apply(next);
+        });
+    })();
+    </script>
 
 </body>
 </html>
