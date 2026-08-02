@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>あなたレシート - 毎日も推し活も、本物そっくりのレシートに印刷 | iOS / Android配信中</title>
-    <meta name="description" content="歩数も、睡眠も、推し活も。あなたの一日を本物そっくりのレシートに印字して、集めて、交換するアプリ「あなたレシート」。プリンタからスルスル出てくる印刷演出と、QRコードのオフライン交換。iOS / Android で配信中。">
-    <meta name="keywords" content="あなたレシート,YOU Receipt,レシート,レシートメーカー,推し活,オタ活,ヘルスケア,歩数,睡眠,ライフログ,日記アプリ,交換,名刺">
+    <title>あなたレシート - 毎日も写真も推し活も、本物そっくりのレシートに印刷 | iOS / Android配信中</title>
+    <meta name="description" content="歩数も、睡眠も、お気に入りの写真も。あなたの一日を本物そっくりのレシートに印字して、集めて、交換するアプリ「あなたレシート」。写真をレトロな2色刷りにする「スナップレシート」、プリンタからスルスル出てくる印刷演出、QRコードのオフライン交換。iOS / Android で配信中。">
+    <meta name="keywords" content="あなたレシート,YOU Receipt,レシート,レシートメーカー,写真加工,ハーフトーン,リソグラフ,レトロ印刷,推し活,オタ活,ヘルスケア,歩数,睡眠,ライフログ,日記アプリ,交換,名刺">
 
     <link rel="canonical" href="https://tsuzukit.com/anatareceipt/">
     <meta name="robots" content="index, follow">
@@ -17,7 +17,7 @@
 
     <!-- OGP -->
     <meta property="og:title" content="あなたレシート - 毎日も推し活も、オリジナルを1枚に">
-    <meta property="og:description" content="あなたの一日を、一枚のレシートに。印字して、集めて、交換する。iOS / Android で配信中。">
+    <meta property="og:description" content="あなたの一日も、好きな写真も、一枚のレシートに。印字して、集めて、交換する。iOS / Android で配信中。">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://tsuzukit.com/anatareceipt/">
     <meta property="og:site_name" content="あなたレシート">
@@ -30,7 +30,7 @@
     <meta name="twitter:site" content="@tsuzuki817">
     <meta name="twitter:creator" content="@tsuzuki817">
     <meta name="twitter:title" content="あなたレシート - 毎日も推し活も、オリジナルを1枚に">
-    <meta name="twitter:description" content="あなたの一日を、一枚のレシートに。iOS / Androidで配信中。">
+    <meta name="twitter:description" content="あなたの一日も、好きな写真も、一枚のレシートに。iOS / Androidで配信中。">
     <meta name="twitter:image" content="https://tsuzukit.com/anatareceipt/og.jpg">
 
     <!-- Structured Data -->
@@ -42,7 +42,7 @@
         "alternateName": "あなたレシート レシート作成＆記録",
         "applicationCategory": "LifestyleApplication",
         "operatingSystem": "iOS, Android",
-        "description": "あなたの一日を本物そっくりのレシートに印字して、集めて、交換するアプリ。歩数・睡眠・ワークアウトから推し活のカスタムレシートまで。",
+        "description": "あなたの一日を本物そっくりのレシートに印字して、集めて、交換するアプリ。歩数・睡眠・ワークアウトから、写真をレトロな2色刷りにするスナップレシート、推し活のカスタムレシートまで。",
         "offers": {
             "@type": "Offer",
             "price": "0",
@@ -243,8 +243,11 @@
         /* ---------- 特徴 ---------- */
         .features {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            grid-template-columns: repeat(2, 1fr);   /* 4枚を2×2でバランスよく */
             gap: 22px;
+        }
+        @media (max-width: 720px) {
+            .features { grid-template-columns: 1fr; }
         }
         .card {
             border: 1px solid var(--line);
@@ -318,17 +321,20 @@
         /* ---------- スクショ ---------- */
         .shots {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 26px;
-            max-width: 900px;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 22px;
+            max-width: 1120px;
             margin: 0 auto;
+        }
+        @media (max-width: 1000px) {
+            .shots { grid-template-columns: repeat(2, 1fr); max-width: 640px; }
         }
         .shots img {
             width: 100%;
             height: auto;
-            border-radius: 18px;
+            border-radius: 14px;
             border: 1px solid var(--line);
-            box-shadow: 0 24px 60px rgba(34, 31, 24, 0.16);
+            box-shadow: 0 18px 44px rgba(34, 31, 24, 0.12);
         }
         @media (max-width: 760px) {
             .shots {
@@ -400,7 +406,7 @@
             <span class="i18n-en"><span class="nb">Your day,</span><br><span class="nb">printed on a receipt.</span></span>
         </h1>
         <p class="tagline">
-            <span class="i18n-ja"><span class="nb">歩数も、睡眠も、推し活も。</span><span class="nb">本物そっくりのレシートに印字して、</span><span class="nb">集めて、交換する。</span></span>
+            <span class="i18n-ja"><span class="nb">歩数も、睡眠も、好きな写真も。</span><span class="nb">本物そっくりのレシートに印字して、</span><span class="nb">集めて、交換する。</span></span>
             <span class="i18n-en"><span class="nb">Steps, sleep, even your fandom life.</span> <span class="nb">Print them on a realistic receipt —</span> <span class="nb">then collect and trade.</span></span>
         </p>
 
@@ -447,6 +453,17 @@
                     </p>
                 </div>
                 <div class="card">
+                    <div class="emoji">🎞️</div>
+                    <h3>
+                        <span class="i18n-ja">写真が、レトロ印刷のレシートに</span>
+                        <span class="i18n-en">Your photo, printed retro</span>
+                    </h3>
+                    <p>
+                        <span class="i18n-ja">好きな写真を1枚えらぶだけで、蛍光ピンクと青の2色刷り＋網点の「スナップレシート」に。刷り上がった写真をタップするたび、カラー／白黒／正方形／背景ぬきの6スタイルに変わります。無料で使えます。</span>
+                        <span class="i18n-en">Pick one photo and it becomes a Snap Receipt — printed in fluorescent pink and blue halftone dots. Tap the printed photo to cycle through 6 styles: color, black &amp; white, square, and cut-out. Free to use.</span>
+                    </p>
+                </div>
+                <div class="card">
                     <div class="emoji">🧾</div>
                     <h3>
                         <span class="i18n-ja">推し活もペットも、自分だけの1枚</span>
@@ -481,9 +498,9 @@
                 <span class="i18n-en">Printing today's you.</span>
             </h2>
 
-            <div class="receipt i18n-ja" role="img" aria-label="発行できる13種類のレシートを印字したレシート。カラダ・まいにち・じぶんの3カテゴリ">
+            <div class="receipt i18n-ja" role="img" aria-label="発行できる14種類のレシートを印字したレシート。カラダ・まいにち・じぶんの3カテゴリ">
                 <p class="r-head">ANATA RECEIPT</p>
-                <p class="r-meta">レシートは ぜんぶで 13種類</p>
+                <p class="r-meta">レシートは ぜんぶで 14種類</p>
                 <hr class="r-rule">
                 <p class="r-sec">＊ カラダ ＊</p>
                 <p class="r-item"><span>今日のあなた</span><span class="leader"></span><span class="cat">歩数・運動・心拍</span></p>
@@ -493,13 +510,14 @@
                 <p class="r-sec">＊ まいにち ＊</p>
                 <p class="r-item"><span>天気</span><span class="leader"></span><span class="cat">今日の空もよう</span></p>
                 <p class="r-item"><span>移動</span><span class="leader"></span><span class="cat">移動の内訳</span></p>
-                <p class="r-item"><span>フォト</span><span class="leader"></span><span class="cat">撮った枚数</span></p>
-                <p class="r-item"><span>ミュージック</span><span class="leader"></span><span class="cat">よく聴いた曲</span></p>
-                <p class="r-item"><span>スクリーンタイム</span><span class="leader"></span><span class="cat">使った時間</span></p>
+                <p class="r-item"><span>フォト</span><span class="leader"></span><span class="cat">今日撮った枚数</span></p>
+                <p class="r-item"><span>スナップ ★NEW</span><span class="leader"></span><span class="cat">写真をレトロ印刷</span></p>
+                <p class="r-item"><span>ミュージック</span><span class="leader"></span><span class="cat">今日聴いた曲</span></p>
                 <p class="r-sec">＊ じぶん ＊</p>
-                <p class="r-item"><span>この端末</span><span class="leader"></span><span class="cat">バッテリー</span></p>
                 <p class="r-item"><span>存在のレシート</span><span class="leader"></span><span class="cat">生きてきた日数</span></p>
+                <p class="r-item"><span>ふたりのレシート</span><span class="leader"></span><span class="cat">ふたりの日数・記念日</span></p>
                 <p class="r-item"><span>あなた自身</span><span class="leader"></span><span class="cat">交換できる名刺</span></p>
+                <p class="r-item"><span>この端末</span><span class="leader"></span><span class="cat">バッテリー</span></p>
                 <p class="r-item"><span>カスタムレシート</span><span class="leader"></span><span class="cat">推し活・ペット</span></p>
                 <hr class="r-rule">
                 <p class="r-total"><span>TOTAL</span><span>あなた</span></p>
@@ -509,9 +527,9 @@
                 <p class="r-serial">**** 0802 ****</p>
             </div>
 
-            <div class="receipt i18n-en" role="img" aria-label="A receipt listing all 13 printable receipt types, in three categories: Body, Daily, and You">
+            <div class="receipt i18n-en" role="img" aria-label="A receipt listing all 14 printable receipt types, in three categories: Body, Daily, and You">
                 <p class="r-head">ANATA RECEIPT</p>
-                <p class="r-meta">13 KINDS OF RECEIPTS IN ALL</p>
+                <p class="r-meta">14 KINDS OF RECEIPTS IN ALL</p>
                 <hr class="r-rule">
                 <p class="r-sec">＊ BODY ＊</p>
                 <p class="r-item"><span>Today's You</span><span class="leader"></span><span class="cat">steps &amp; heart</span></p>
@@ -521,13 +539,14 @@
                 <p class="r-sec">＊ DAILY ＊</p>
                 <p class="r-item"><span>Weather</span><span class="leader"></span><span class="cat">today's sky</span></p>
                 <p class="r-item"><span>Moves</span><span class="leader"></span><span class="cat">how you got around</span></p>
-                <p class="r-item"><span>Photos</span><span class="leader"></span><span class="cat">shots taken</span></p>
-                <p class="r-item"><span>Music</span><span class="leader"></span><span class="cat">most played</span></p>
-                <p class="r-item"><span>Screen Time</span><span class="leader"></span><span class="cat">hours spent</span></p>
+                <p class="r-item"><span>Photos</span><span class="leader"></span><span class="cat">shots taken today</span></p>
+                <p class="r-item"><span>Snap ★NEW</span><span class="leader"></span><span class="cat">photo, printed retro</span></p>
+                <p class="r-item"><span>Music</span><span class="leader"></span><span class="cat">played today</span></p>
                 <p class="r-sec">＊ YOU ＊</p>
-                <p class="r-item"><span>This Device</span><span class="leader"></span><span class="cat">battery</span></p>
                 <p class="r-item"><span>Existence</span><span class="leader"></span><span class="cat">days you've lived</span></p>
+                <p class="r-item"><span>Couple</span><span class="leader"></span><span class="cat">days &amp; milestones</span></p>
                 <p class="r-item"><span>Yourself</span><span class="leader"></span><span class="cat">tradable card</span></p>
+                <p class="r-item"><span>This Device</span><span class="leader"></span><span class="cat">battery</span></p>
                 <p class="r-item"><span>Custom</span><span class="leader"></span><span class="cat">fandom &amp; pets</span></p>
                 <hr class="r-rule">
                 <p class="r-total"><span>TOTAL</span><span>YOU</span></p>
@@ -553,9 +572,14 @@
                 <span class="i18n-en">A tiny thermal printer,<br>right in your palm.</span>
             </h2>
             <div class="shots">
-                <img src="/anatareceipt/shot1.webp" alt="毎日を、本物そっくりのレシートに。今日のあなたのレシート画面 / Your daily receipt screen" loading="lazy" width="520" height="1125">
-                <img src="/anatareceipt/shot2.webp" alt="推し活もペットも、自分だけの1枚。カスタムレシート作成画面 / Custom receipt editor" loading="lazy" width="520" height="1125">
-                <img src="/anatareceipt/shot3.webp" alt="近くの友だちと、その場で交換。QRコードのレシート交換画面 / QR code receipt trading" loading="lazy" width="520" height="1125">
+                <img class="i18n-ja" src="/anatareceipt/store-ja-1.webp" alt="毎日を、本物そっくりのレシートに。今日のあなたのレシート画面" loading="lazy" width="620" height="1342">
+                <img class="i18n-ja" src="/anatareceipt/store-ja-2.webp" alt="写真1枚を、レトロ印刷で。スナップレシートの画面" loading="lazy" width="620" height="1342">
+                <img class="i18n-ja" src="/anatareceipt/store-ja-3.webp" alt="推し活もペットも、自分だけの1枚。カスタムレシート作成画面" loading="lazy" width="620" height="1342">
+                <img class="i18n-ja" src="/anatareceipt/store-ja-4.webp" alt="近くの友だちと、その場で交換。QRコードのレシート交換画面" loading="lazy" width="620" height="1342">
+                <img class="i18n-en" src="/anatareceipt/store-en-1.webp" alt="Turn every day into a receipt that looks real — your daily receipt screen" loading="lazy" width="620" height="1342">
+                <img class="i18n-en" src="/anatareceipt/store-en-2.webp" alt="One photo, printed retro — the Snap Receipt screen" loading="lazy" width="620" height="1342">
+                <img class="i18n-en" src="/anatareceipt/store-en-3.webp" alt="Fandom, pets and more on a receipt of your own — the custom receipt editor" loading="lazy" width="620" height="1342">
+                <img class="i18n-en" src="/anatareceipt/store-en-4.webp" alt="Trade on the spot with friends nearby — QR code receipt trading" loading="lazy" width="620" height="1342">
             </div>
         </div>
     </section>
