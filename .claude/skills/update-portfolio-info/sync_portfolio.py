@@ -8,7 +8,8 @@ sync_portfolio.py — tsuzukit.com ポートフォリオ同期スクリプト
 このスクリプトがやること:
   1) apps_public.json（App Storeの最新公開情報・全公開アプリ）を読む
   2) apps.json（サイト描画元）の既存アプリの公開フィールド（スクショ/評価/バージョン等）を最新化
-     ※ 手動キュレーション項目（id / google_play_url / download_count）は保持
+     ※ 手動キュレーション項目（id / google_play_url / lp_url / download_count）は保持
+        （PUBLIC_FIELDS のキーだけを上書きするので、それ以外のキーは触らない）
   3) apps_public にあって apps.json に無いアプリ＝新規 として追加（id は App Store URL から抽出）
   4) total_apps / categories / 評価 / レビュー数 を再計算
   5) 各HTMLの統計数値（アプリ数・公開中・開発総数・評価・レビュー数）を更新

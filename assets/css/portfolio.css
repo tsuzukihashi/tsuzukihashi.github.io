@@ -300,6 +300,37 @@
   border: 2px solid var(--color-ink);
 }
 
+/* ========== 紹介ページ（LP）への導線 ========== */
+.app-lp-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  flex-shrink: 0;
+  margin-top: 12px;
+  padding: 8px 14px;
+  border: 2px solid var(--color-ink);
+  border-radius: 100px;
+  background: var(--color-surface-2);
+  color: var(--color-primary);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 3px 3px 0 var(--color-ink);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.app-lp-link:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0 var(--neon-pink);
+}
+
+.app-lp-link svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
 /* Mobile Filter Bar */
 @media (max-width: 768px) {
   .filter-bar {
