@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-08-03 23:46:46",
-  "total_apps": 70,
+  "total_apps": 71,
   "apps": [
     {
       "bundle_id": "com.tsuzuki817.OmoideMap",
@@ -2195,6 +2195,35 @@
       "release_notes": "PIPMPをお使いいただきありがとうございます！\n要望の多かった、曲の検索機能を追加しました！",
       "content_advisory_rating": "4+",
       "minimum_os_version": "15.0",
+      "developer_name": "Ryo Tsudukihashi",
+      "seller_name": "TsuzuKit"
+    },
+    {
+      "bundle_id": "com.tsuzukit.Yattayo",
+      "name": "Yattayo やったよボード：ToDoリスト",
+      "app_store_url": "https://apps.apple.com/jp/app/yattayo-%E3%82%84%E3%81%A3%E3%81%9F%E3%82%88%E3%83%9C%E3%83%BC%E3%83%89-todo%E3%83%AA%E3%82%B9%E3%83%88/id6791000395?uo=4",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5f/4b/37/5f4b379e-eb4e-1f05-628c-b657f729d71a/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/64/75/f4/6475f486-a3e1-f548-0c4b-afca101eaee0/001.png/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9a/2c/80/9a2c80ca-f04d-36ab-5274-bf47d6df7bdb/002.png/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/29/9f/3f/299f3f32-3206-969b-c8ef-acb9ca971c32/003.png/626x0w.webp"
+      ],
+      "ipad_screenshots": [],
+      "price": "無料",
+      "currency": "JPY",
+      "genres": [
+        "仕事効率化",
+        "ユーティリティ"
+      ],
+      "primary_genre": "Productivity",
+      "rating": 0,
+      "rating_count": 0,
+      "version": "1.0",
+      "release_date": "2026-08-03T07:00:00Z",
+      "current_version_release_date": "2026-08-05T00:55:25Z",
+      "release_notes": null,
+      "content_advisory_rating": "4+",
+      "minimum_os_version": "17.0",
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit"
     }

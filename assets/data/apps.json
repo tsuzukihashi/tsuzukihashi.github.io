@@ -1,22 +1,22 @@
 {
   "generated_at": "2026-08-04 00:31:22",
-  "total_apps": 70,
+  "total_apps": 71,
   "categories": {
-    "Health & Fitness": 6,
     "Lifestyle": 18,
-    "Entertainment": 1,
-    "Reference": 4,
-    "Graphics & Design": 3,
-    "Medical": 1,
-    "Productivity": 6,
-    "Photo & Video": 4,
     "Utilities": 11,
+    "Productivity": 7,
+    "Health & Fitness": 6,
+    "Reference": 4,
+    "Photo & Video": 4,
+    "Graphics & Design": 3,
     "Food & Drink": 3,
-    "Social Networking": 2,
     "Games": 3,
+    "Social Networking": 2,
     "Music": 2,
     "Education": 2,
     "Travel": 2,
+    "Entertainment": 1,
+    "Medical": 1,
     "News": 1,
     "Book": 1
   },
@@ -2598,6 +2598,41 @@
       "seller_name": "TsuzuKit",
       "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/3d/13/32/3d133220-fda3-47b4-1fec-7a15047ec939/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/60x60bb.jpg",
       "download_count": 0
+    },
+    {
+      "id": 6791000395,
+      "name": "Yattayo やったよボード：ToDoリスト",
+      "bundle_id": "com.tsuzukit.Yattayo",
+      "app_store_url": "https://apps.apple.com/jp/app/yattayo-%E3%82%84%E3%81%A3%E3%81%9F%E3%82%88%E3%83%9C%E3%83%BC%E3%83%89-todo%E3%83%AA%E3%82%B9%E3%83%88/id6791000395?uo=4",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5f/4b/37/5f4b379e-eb4e-1f05-628c-b657f729d71a/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/64/75/f4/6475f486-a3e1-f548-0c4b-afca101eaee0/001.png/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9a/2c/80/9a2c80ca-f04d-36ab-5274-bf47d6df7bdb/002.png/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/29/9f/3f/299f3f32-3206-969b-c8ef-acb9ca971c32/003.png/626x0w.webp"
+      ],
+      "ipad_screenshots": [],
+      "price": "無料",
+      "currency": "JPY",
+      "genres": [
+        "仕事効率化",
+        "ユーティリティ"
+      ],
+      "primary_genre": "Productivity",
+      "rating": 0,
+      "rating_count": 0,
+      "version": "1.0",
+      "release_date": "2026-08-03T07:00:00Z",
+      "current_version_release_date": "2026-08-05T00:55:25Z",
+      "description": "オレンジのスライダーボードに「やること」を並べて、終わったらつまみをスライド。「OK」のスタンプが現れる——それだけの、気持ちいいToDoアプリです。\n\n■ さわって気持ちいい、本物の質感\n・実物のスライダー式チェックリストボードを3Dで忠実に再現\n・つまみを動かすとカチカチ刻む摩擦、端に当たるコツッという手応え（ハプティクス＋効果音）\n・土台は指でくるくる回して眺められます\n\n■ 付箋に手書きするだけ\n・タスクは1枚の付箋。タップして開いて、手書きでもキーボードでもOK\n・文字は付箋いっぱいに自動レイアウト。手書き風フォントで温かく\n・終わった付箋はスワイプでペリッと剥がして片付け\n\n■ ウィジェットも本物の3D\n・ホーム画面のウィジェットに、あなたのボードの実物写真を表示\n・ウィジェットのスイッチをタップするだけでタスク完了\n\n■ 締切をそっとお知らせ\n・締切の2日前・前日・当日に通知\n・過ぎてしまっても、終わらせるまで毎日やさしくリマインド\n・通知の「やったよ」ボタンでそのまま完了もできます\n\n■ iPhone・Apple Watch・Macで同期\n・iCloudで自動同期。手元のApple Watchで確認して、Macで片付ける\n\n■ 繰り返しタスク（プレミアム）\n・毎日/毎週の繰り返しで、習慣もボードに乗せられます\n\n【無料版】タスクを3件まで登録できます\n【プレミアム】タスク無制限・繰り返し・広告なし（買い切り または 週額）\n\n■ リンク\n・サポート: https://tsuzukit.com/contact/\n・利用規約: https://tsuzukit.com/legal/terms-of-service.html\n・プライバシーポリシー: https://tsuzukit.com/legal/privacy-policy.html",
+      "release_notes": null,
+      "content_advisory_rating": "4+",
+      "minimum_os_version": "17.0",
+      "developer_name": "Ryo Tsudukihashi",
+      "seller_name": "TsuzuKit",
+      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5f/4b/37/5f4b379e-eb4e-1f05-628c-b657f729d71a/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/60x60bb.jpg",
+      "download_count": 0,
+      "google_play_url": "https://play.google.com/store/apps/details?id=com.tsuzukit.yattayo",
+      "lp_url": "/yattayo/"
     }
   ]
 }
