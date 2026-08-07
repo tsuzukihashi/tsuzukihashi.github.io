@@ -32,7 +32,10 @@
    */
   function renderLpLink(app) {
     if (!app.lp_url) return '';
-    return '<a href="' + app.lp_url + '" class="app-lp-link">' +
+    // 外部ドメインのLPは別タブで開く
+    var external = /^https?:\/\//.test(app.lp_url);
+    var attrs = external ? ' target="_blank" rel="noopener"' : '';
+    return '<a href="' + app.lp_url + '" class="app-lp-link"' + attrs + '>' +
       '<span>紹介ページを見る</span>' + ARROW_SVG +
     '</a>';
   }

@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-08-04 00:31:22",
-  "total_apps": 71,
+  "generated_at": "2026-08-07 22:18:23",
+  "total_apps": 72,
   "categories": {
-    "Lifestyle": 18,
-    "Utilities": 11,
-    "Productivity": 7,
     "Health & Fitness": 6,
+    "Lifestyle": 18,
+    "Entertainment": 1,
     "Reference": 4,
-    "Photo & Video": 4,
     "Graphics & Design": 3,
+    "Medical": 1,
+    "Productivity": 7,
+    "Photo & Video": 4,
+    "Utilities": 11,
     "Food & Drink": 3,
-    "Games": 3,
     "Social Networking": 2,
-    "Music": 2,
+    "Games": 3,
+    "Music": 3,
     "Education": 2,
     "Travel": 2,
-    "Entertainment": 1,
-    "Medical": 1,
     "News": 1,
     "Book": 1
   },
@@ -26,7 +26,7 @@
       "name": "うんちくん AI健康記録&うんトモ",
       "bundle_id": "com.tsuzukit.PoopCounter",
       "app_store_url": "https://apps.apple.com/jp/app/%E3%81%86%E3%82%93%E3%81%A1%E3%81%8F%E3%82%93-ai%E5%81%A5%E5%BA%B7%E8%A8%98%E9%8C%B2-%E3%81%86%E3%82%93%E3%83%88%E3%83%A2/id6758856276?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/20/9c/b1/209cb149-73a3-eb37-9866-6df27db9beac/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/30/5c/3e/305c3ef9-11c8-405d-9b33-5cb271b3eb76/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
       "screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/16/ab/8e/16ab8ee0-24ca-8827-dda3-a620b66afe6e/001.png/626x0w.webp",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ed/0e/7a/ed0e7af8-9830-e502-03c7-8b2ee82c3c47/002.png/626x0w.webp",
@@ -34,7 +34,13 @@
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f5/b1/1a/f5b11a32-1fad-90ca-0240-2d54cb878b13/004.png/626x0w.webp",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3d/c4/2b/3dc42b66-6878-b340-4b55-3c997569d4b4/005.png/626x0w.webp"
       ],
-      "ipad_screenshots": [],
+      "ipad_screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/84/50/1c/84501c4c-7d49-4dac-d344-82dbfc372128/APP_IPAD_PRO_3GEN_129_01.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/46/9e/98/469e9898-a4b8-48e5-6368-e28a73728a29/APP_IPAD_PRO_3GEN_129_02.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/2e/86/d7/2e86d7df-43c8-937c-1590-a39411784dd7/APP_IPAD_PRO_3GEN_129_03.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c4/a8/e8/c4a8e8e0-74a2-a171-711d-22ed7dddd4da/APP_IPAD_PRO_3GEN_129_04.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4c/87/16/4c8716e0-076f-f934-ef84-c902ba539e63/APP_IPAD_PRO_3GEN_129_05.png/360x480bb.jpg"
+      ],
       "price": "無料",
       "currency": "JPY",
       "genres": [
@@ -42,19 +48,19 @@
         "エンターテインメント"
       ],
       "primary_genre": "Health & Fitness",
-      "rating": 4.11364,
-      "rating_count": 528,
-      "version": "2.13.0",
+      "rating": 4.11531,
+      "rating_count": 529,
+      "version": "2.14.0",
       "release_date": "2026-02-26T08:00:00Z",
-      "current_version_release_date": "2026-07-27T00:16:15Z",
+      "current_version_release_date": "2026-08-05T18:00:34Z",
       "description": "うんちくんは、毎日のうんちを楽しく記録して友達や家族とシェアできるアプリです。\n\n【ワンタップで記録】\n「でた！」ボタンを押すだけで今日のうんちを記録。回数に応じて37種類以上のうんちキャラクターがリアクションしてくれます。\n\n【うんトモとシェア】\n友達コードやQRコードで「うんトモ」を追加。ストーリー形式でうんトモのうんち状況をチェックできます。まるでInstagramのストーリーのように、楽しくうんち報告！\n\n【ウィジェット対応】\nホーム画面にウィジェットを追加すれば、アプリを開かなくても今日の記録が一目でわかります。回数に応じてテーマカラーが変化！\n\n【うんカレ（カレンダー）】\n週間カレンダーで日ごとの記録を確認。平均回数や最高記録もチェックできます。\n\n【ストリーク機能】\n連続記録日数をカウント。毎日のうんち習慣をゲーム感覚で続けられます。\n\n【プッシュ通知】\nうんトモがうんちした時にお知らせが届きます。友達申請の通知も見逃しません。\n\n【アバターカスタマイズ】\n肌色・髪型・髪色・目の色・服装など自由にカスタマイズ。あなただけのアバターでうんトモと交流しよう。\n\n【無料版】\n・ワンタップ記録\n・うんトモ追加（無制限）\n・ストーリー共有\n・週間カレンダー\n・ウィジェット\n・アバターカスタマイズ\n・プッシュ通知\n\n【プレミアム版】\n・うんトモの記録に、90種類を超える限定リアクションスタンプで気持ちを返せます\n・ホーム画面のアプリアイコンをお気に入りのデザインに変えられます\n・好きな写真をプロフィール画像に設定できます\n・サポーター限定の帽子・オーラ・表情で、うんちくんを自分だけの姿に着せ替えられます\n・月間カレンダー＆サマリー\n・広告なし\n・すべての機能が使い放題\n\n毎日のうんちを、うんちくんと一緒に楽しく記録しよう！\n\n【リンク】\n・サポート: https://tsuzukit.com/contact/\n・利用規約: https://unchikun.app/legal/terms-of-service\n・プライバシーポリシー: https://unchikun.app/legal/privacy-policy\n・特定商取引法に基づく表記: https://unchikun.app/legal/commercial-law",
-      "release_notes": "v2.13.0 の変更点\n\n・パートナーモードが登場\n大切なひとと2人だけで記録を共有。応援スタンプを送り合って、ふたりの絆を育てられます。\n\n・うんトモ広場がもっと便利に\n名前で検索、新着・古い・ランダムで並べ替え。スクロールで新しいうんトモにどんどん出会えます。\n\n・その他、細かな改善とバグ修正",
+      "release_notes": "v2.14.0 の変更点\n\n・サポーターカードができました\nサポーターになると、あなただけの会員番号が入ったカードがもらえます。傾けると光が動き、タップで裏返せます。\n\n・記録から発見が届きます\n曜日のクセ、時間帯の傾向、先週との違いを、うんちくんが教えてくれます。\n\n・画面まわりをすっきり刷新\nタブバーと画面上部を整理して、スクロールの見え方が気持ちよくなりました。\n\n・その他、細かな改善とバグ修正",
       "content_advisory_rating": "4+",
       "minimum_os_version": "17.0",
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
       "google_play_url": "https://play.google.com/store/apps/details?id=com.tsuzukit.poopcounter",
-      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/20/9c/b1/209cb149-73a3-eb37-9866-6df27db9beac/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/60x60bb.jpg",
+      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/30/5c/3e/305c3ef9-11c8-405d-9b33-5cb271b3eb76/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/60x60bb.jpg",
       "download_count": 37300
     },
     {
@@ -546,7 +552,11 @@
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/7a/17/7e/7a177e3d-3c6d-4e6b-9ce8-1b8e645337c3/6.5inch.002.png/626x0w.webp",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/37/b4/0a/37b40aea-37f8-7da8-49a8-99b2f8348939/6.5inch.003.png/626x0w.webp"
       ],
-      "ipad_screenshots": [],
+      "ipad_screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a6/38/45/a63845c3-8102-5313-f5f2-f9403c525c4c/13inch.001.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/07/16/5e/07165eab-b935-7443-d6ca-6582946d256f/13inch.002.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4b/fd/da/4bfddad3-f4e6-e304-eb37-2c794e229ae4/13inch.003.png/360x480bb.jpg"
+      ],
       "price": "無料",
       "currency": "JPY",
       "genres": [
@@ -585,7 +595,13 @@
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2f/45/34/2f4534a8-a3da-7ed9-6af7-6e245b14f0ec/6.5inch.004.jpeg/626x0w.webp",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2f/d2/fd/2fd2fd31-fc75-8f31-d761-b0920f4b0c91/6.5inch.005.jpeg/626x0w.webp"
       ],
-      "ipad_screenshots": [],
+      "ipad_screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d0/8d/ec/d08decc3-54d6-e802-9949-a930ac4a109a/13inch.001.jpeg/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/cf/fe/e5/cffee503-fd25-c0d0-1b02-4354d18b563e/13inch.002.jpeg/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a3/c9/8b/a3c98bf2-79f0-ba12-71e5-520e87108728/13inch.003.jpeg/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/7e/f8/07/7ef80704-83a3-8c43-9129-e5dfbae462d2/13inch.004.jpeg/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/9a/7b/e0/9a7be0ee-50d8-64eb-7f76-378e1b8d782b/13inch.005.jpeg/360x480bb.jpg"
+      ],
       "price": "無料",
       "currency": "JPY",
       "genres": [
@@ -622,7 +638,12 @@
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/fd/00/48/fd00480e-cc62-27ff-0c46-c367b09158cb/6.5inch.002.jpeg/626x0w.webp",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/28/01/a3/2801a355-8efc-e9ae-d838-f0115a472d2c/6.5inch.003.jpeg/626x0w.webp"
       ],
-      "ipad_screenshots": [],
+      "ipad_screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2b/8a/3d/2b8a3def-d3de-7a06-9f51-081df896984c/ja-1-pad1_2.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/32/8e/c2/328ec203-73b5-4d26-6a56-123bb37ea9bd/ja-2-pad2_2.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/eb/1b/bc/eb1bbc95-7b27-1954-3a52-46671c185a1e/ja-3-pad3_2.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2b/ca/6d/2bca6db8-b94f-ee19-6863-4cab34f5bf99/ja-4-pad4_2.png/360x480bb.jpg"
+      ],
       "price": "無料",
       "currency": "JPY",
       "genres": [
@@ -659,7 +680,11 @@
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d7/d1/b9/d7d1b9c0-7e65-04c6-4ddb-2aeddceead51/6.5inch.001.jpeg/626x0w.webp",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b4/5a/8f/b45a8fe4-75dd-5cf6-556e-42c9b9b0a215/6.5inch.003.jpeg/626x0w.webp"
       ],
-      "ipad_screenshots": [],
+      "ipad_screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/94/22/06/942206e3-8a48-56a5-e1bc-08f5ff43ca69/13inch.002.jpeg/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/82/4a/12/824a1262-8945-6217-551a-f1ba0690a7d9/13inch.001.jpeg/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d8/21/75/d82175e4-b105-ac54-6f48-db568b7e7ab7/13inch.003.jpeg/360x480bb.jpg"
+      ],
       "price": "無料",
       "currency": "JPY",
       "genres": [
@@ -696,7 +721,11 @@
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/32/48/83/32488394-c53b-d691-54e4-b2a183508995/6.9inch.002.jpeg/626x0w.webp",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c3/de/d4/c3ded498-9fa6-c2cc-844d-43d3553c80af/6.9inch.003.jpeg/626x0w.webp"
       ],
-      "ipad_screenshots": [],
+      "ipad_screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e0/ae/da/e0aeda46-14a3-e923-617f-c183150a17ac/13inch.001.jpeg/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/7a/8e/25/7a8e25d9-9832-5f2e-e402-2629e7f06247/13inch.002.jpeg/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/8f/93/15/8f931507-d0ee-ad7f-6059-182a225d046d/13inch.003.jpeg/360x480bb.jpg"
+      ],
       "price": "無料",
       "currency": "JPY",
       "genres": [
@@ -734,7 +763,12 @@
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0c/14/3a/0c143ad2-a290-145b-f464-b25e041d226d/6.9inch.003.jpeg/626x0w.webp",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/43/84/da/4384da95-07cb-41ef-6c3e-ffd79eafd15d/6.9inch.004.jpeg/626x0w.webp"
       ],
-      "ipad_screenshots": [],
+      "ipad_screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/75/42/aa/7542aa4b-c699-8a0b-fda1-56ca752ef82e/13inch.001.jpeg/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/df/2d/67/df2d67b2-8ed1-35ca-8357-1b32e3e31387/13inch.002.jpeg/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f1/b4/cb/f1b4cb53-2139-e25f-1e88-7bbdccfbca89/13inch.003.jpeg/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a4/cb/e8/a4cbe858-2003-40fa-8282-a96fc217823c/13inch.004.jpeg/360x480bb.jpg"
+      ],
       "price": "無料",
       "currency": "JPY",
       "genres": [
@@ -771,7 +805,11 @@
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f0/4a/d3/f04ad312-aea7-d1e2-4e5e-df5ac4e4ba7e/002.png/626x0w.webp",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/28/db/ea/28dbeaa2-4ca2-ac04-dc66-591ffd307867/003.png/626x0w.webp"
       ],
-      "ipad_screenshots": [],
+      "ipad_screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/80/5a/37/805a3743-7c5b-7b15-e42c-b3095bcaa06f/004.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f3/7a/18/f37a18e8-8ccd-e4b9-81cf-df6995e7c3c7/005.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/6c/48/ac/6c48ac8d-1f98-74e7-71f6-f707d7574735/006.png/360x480bb.jpg"
+      ],
       "price": "無料",
       "currency": "JPY",
       "genres": [
@@ -808,7 +846,11 @@
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/65/60/9a/65609a3b-efa7-51e6-1201-63fc1914f2c2/6.9inc.002.jpeg/626x0w.webp",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/aa/fa/c8/aafac83d-ff84-89af-f2ec-b89e83a2c5ed/6.9inc.003.jpeg/626x0w.webp"
       ],
-      "ipad_screenshots": [],
+      "ipad_screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ea/f5/97/eaf59710-b5fd-a5e6-4646-da9066291746/13inch.002.jpeg/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/df/ff/95/dfff95d1-0eb4-ba15-a6c8-5fb02ebfc312/13inch.001.jpeg/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a5/4c/ef/a54cef95-0918-5f61-ee8c-c1c724926e0a/13inch.003.jpeg/360x480bb.jpg"
+      ],
       "price": "無料",
       "currency": "JPY",
       "genres": [
@@ -847,7 +889,11 @@
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4d/97/de/4d97de6b-3d0b-ebdf-237f-75af4078a33b/6.9inc.002.jpeg/626x0w.webp",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/4f/b5/81/4fb581a6-ed4a-dd93-3539-aeb0b6921d3a/6.9inc.003.jpeg/626x0w.webp"
       ],
-      "ipad_screenshots": [],
+      "ipad_screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/3a/a6/de/3aa6deb2-ec07-af66-9b51-79b3bf4755a2/13inch.001.jpeg/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e7/98/87/e7988754-3b68-62a0-63de-145b43bc7c47/13inch.002.jpeg/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0d/ac/b5/0dacb5ba-27d2-fde0-de26-7ac09d92e9b1/13inch.003.jpeg/360x480bb.jpg"
+      ],
       "price": "無料",
       "currency": "JPY",
       "genres": [
@@ -884,7 +930,11 @@
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a6/7d/e7/a67de758-da5e-e7ba-03c3-2b4e5ab2a7de/6.9inc.002.jpeg/626x0w.webp",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fa/f2/d0/faf2d0de-84c3-f691-0aaf-f98d2625376f/6.9inc.003.jpeg/626x0w.webp"
       ],
-      "ipad_screenshots": [],
+      "ipad_screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/18/62/6e/18626e54-4cd6-4643-2a1c-b1666de8bb5c/mono-13inch.001.jpeg/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1f/39/b6/1f39b6e6-202e-8390-b992-d2d7e494989d/mono-13inch.002.jpeg/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8f/68/12/8f68122a-b2be-22f2-d451-0efd334a4bf1/mono-13inch.003.jpeg/360x480bb.jpg"
+      ],
       "price": "無料",
       "currency": "JPY",
       "genres": [
@@ -921,7 +971,11 @@
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/86/9a/f5/869af5ac-81fb-7b03-8bcf-258d5befb6df/Apple_iPhone_16_Pro_Max_Screenshot_2.png/626x0w.webp",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/51/b3/9e/51b39ed0-fd09-6510-fbba-f53554492a28/Apple_iPhone_16_Pro_Max_Screenshot_3.png/626x0w.webp"
       ],
-      "ipad_screenshots": [],
+      "ipad_screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/14/54/d0/1454d074-94ce-fcd1-6ca2-fd561471d092/Apple_iPad_Pro_12.9_Inch_Screenshot_1.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/43/60/89/436089bd-ff69-4d09-10dd-f85c6023c3f6/Apple_iPad_Pro_12.9_Inch_Screenshot_2.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/67/b5/79/67b5798b-8c00-8758-779c-ae6a86b3fdb7/Apple_iPad_Pro_12.9_Inch_Screenshot_3.png/360x480bb.jpg"
+      ],
       "price": "無料",
       "currency": "JPY",
       "genres": [
@@ -958,7 +1012,11 @@
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/43/5d/dc/435ddcfa-cddb-e423-9aa6-82e038044a38/6.5inch.005.png/626x0w.webp",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/88/d7/c0/88d7c009-01c2-7d45-eee7-c29f5d7179bd/6.5inch.006.png/626x0w.webp"
       ],
-      "ipad_screenshots": [],
+      "ipad_screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/7b/c4/a8/7bc4a85e-a87d-0bee-ab9e-78d3fbb360dc/13inch.004.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/86/3b/12/863b12e8-375e-0684-b71b-b9a6367c46e2/13inch.005.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/59/ea/bb/59eabbfb-9d4e-2107-17b8-a7cc8d5a36b2/13inch.006.png/360x480bb.jpg"
+      ],
       "price": "¥100",
       "currency": "JPY",
       "genres": [
@@ -996,7 +1054,12 @@
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/79/e1/fc/79e1fc59-45c3-04bf-b4cc-e591762b9ee2/6.9inc.003.jpeg/626x0w.webp",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/02/03/0e/02030ef2-8515-0a08-e100-cc91cf279510/6.9inc.004.jpeg/626x0w.webp"
       ],
-      "ipad_screenshots": [],
+      "ipad_screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d6/ca/a5/d6caa5ac-d717-0386-f0b4-9f94e968e504/13inch.004.jpeg/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ec/a4/0a/eca40a55-1d2d-be9b-1753-312e6b4a1799/13inch.001.jpeg/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/4a/25/1f/4a251f76-353d-fa10-76f3-b7d94f54ac52/13inch.002.jpeg/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f1/47/61/f14761c8-fe70-fb15-ff3f-9acdce475c75/13inch.003.jpeg/360x480bb.jpg"
+      ],
       "price": "無料",
       "currency": "JPY",
       "genres": [
@@ -1029,9 +1092,9 @@
       "app_store_url": "https://apps.apple.com/jp/app/%CF%80-pi-%E5%86%86%E5%91%A8%E7%8E%87%E3%82%92%E6%A5%BD%E3%81%97%E3%82%80%E3%82%A2%E3%83%97%E3%83%AA/id6566185298?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/1a/e4/b4/1ae4b436-b7c4-1ebb-6da8-5a92920289a6/AppIcon-0-0-1x_U007epad-0-P3-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e8/a5/66/e8a566c5-3ec2-05b9-5b69-6e9e22e03655/b540c4e8-ff70-491b-bab5-fd68ef43ae3a_5.5inch.001.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/89/c3/ca/89c3ca6c-01dc-a48b-36bf-9a1effdb88a4/edc0be67-184b-42a9-af4e-a8031fc4b221_5.5inch.002.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e9/d1/9a/e9d19af4-a5fc-e98c-af68-a4534c08a00f/38e77542-f0f0-4727-aea9-7b533883f122_5.5inch.003.png/392x696bb.png"
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/18/a3/9a/18a39adb-6f88-cb34-2289-d2ac40ee0015/1effe110-615e-46fb-95e4-1ff2c4d55669_6.5inch.001.png/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e5/ae/3b/e5ae3b09-c570-e2d7-d3ac-63e8b76e0008/fc0de15c-bcc6-4992-8cea-3aaa642c6830_6.5inch.002.png/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/6d/d0/4a/6dd04a7b-8ad9-2be9-6eea-eb7533ba5b4d/d333e218-22b8-4d62-8025-aac66aae9d10_6.5inch.003.png/626x0w.webp"
       ],
       "ipad_screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/5e/86/02/5e860264-87cd-e0a4-9f91-a0745594afc1/01c48c59-da75-4b4b-9124-ce955eca6083_12.9inch.001.png/576x768bb.png",
@@ -1079,7 +1142,12 @@
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/69/2e/6d/692e6db9-92a6-ff56-138f-d7e8bdd91b79/6.5inch.023.jpeg/626x0w.webp",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/28/ab/f6/28abf69f-7092-a76f-684a-e450978d079a/6.5inch.024.jpeg/626x0w.webp"
       ],
-      "ipad_screenshots": [],
+      "ipad_screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fa/e6/49/fae649dc-7957-9e5e-33bc-ffc1383d707e/13inch.001.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/db/a4/6a/dba46aab-dd30-19d7-a8e5-aaa6624fb80c/13inch.002.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/8d/01/7e/8d017ef6-54c2-d170-2f67-4799e7c8f84a/13inch.003.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e6/33/f2/e633f279-6e81-8b68-99c6-1fd5f8c4214d/13inch.004.png/360x480bb.jpg"
+      ],
       "price": "無料",
       "currency": "JPY",
       "genres": [
@@ -1087,8 +1155,8 @@
         "写真／ビデオ"
       ],
       "primary_genre": "Travel",
-      "rating": 4.58929,
-      "rating_count": 672,
+      "rating": 4.59145,
+      "rating_count": 678,
       "version": "1.53.0",
       "release_date": "2024-02-25T08:00:00Z",
       "current_version_release_date": "2026-07-26T22:31:13Z",
@@ -1113,9 +1181,9 @@
       "app_store_url": "https://apps.apple.com/jp/app/%E3%83%95%E3%82%A9%E3%83%88%E3%82%AC%E3%83%BC%E3%83%89/id6452754625?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/c7/3e/a3/c73ea30f-2661-1137-80ec-2158dddcaec1/AppIcon-1x_U007epad-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/9a/40/d4/9a40d42e-5bfb-ec5e-b27b-57e73f1caef7/766db011-ffce-4ed6-8308-378f240d1314__U200e5.5inch._U200e001.jpeg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/b6/b5/5c/b6b55c71-11f5-ffc7-8846-745faeb22fbc/e00a8276-2e96-45a4-98f9-1d38081ed32b__U200e5.5inch._U200e002.jpeg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/1c/8b/e2/1c8be242-f3fd-2cdf-e85f-fecaeeeb2c03/dba98eee-21d6-4958-89a4-0f2098cc1931__U200e5.5inch._U200e003.jpeg/392x696bb.jpg"
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/0f/98/89/0f98896a-1bdb-7914-44ae-e1605fead0e9/b62379d2-f312-440f-83e2-893d69f5286d__U200e6.5inch._U200e001.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/b7/fb/81/b7fb8185-e895-ade0-ff19-973a498f7140/2a8fbd65-84fb-43fa-b017-699b3406f353__U200e6.5inch._U200e002.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/4e/df/dc/4edfdcd5-178e-0631-62aa-2ce7be633c2e/d3cdde1c-3d78-47f3-b79c-408fd880ce1b__U200e6.5inch._U200e003.jpeg/626x0w.webp"
       ],
       "ipad_screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/9a/ea/b2/9aeab2cd-2579-6716-8b0d-35a0c9d93268/22de237f-4f81-46a6-982d-720df98d45ad__U200e12.9inch._U200e001.jpeg/576x768bb.jpg",
@@ -1154,9 +1222,9 @@
       "app_store_url": "https://apps.apple.com/jp/app/clockwidget-%E5%80%8B%E6%80%A7%E8%B1%8A%E3%81%8B%E3%81%AA%E6%99%82%E8%A8%88%E3%82%A6%E3%82%A3%E3%82%B8%E3%82%A7%E3%83%83%E3%83%88%E3%82%A2%E3%83%97%E3%83%AA/id6451070718?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1d/ac/17/1dac1756-9763-7273-8773-03d0a43e02b8/AppIcon-0-0-1x_U007epad-0-P3-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/5b/36/ea/5b36ea66-e101-fac2-6737-b322cea5f7c6/a2863710-79bd-4dec-89f8-90c6bf75e5bc__U200e5.5inch._U200e001.jpeg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/9e/95/f9/9e95f961-a814-1c5e-933c-0a25c7f46b28/b019fc4e-25c2-49a7-b979-29fbc0290bdd__U200e5.5inch._U200e002.jpeg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/9b/d5/c7/9bd5c78f-41c8-a692-b05f-934cb9f56580/7f1038d4-70ce-426d-8e5e-495bb4a149cc__U200e5.5inch._U200e003.jpeg/392x696bb.jpg"
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/5e/94/15/5e9415f6-cb64-4105-9630-5637661bb600/aba95cb5-4cdb-476c-852d-82168d382788__U200e6.5inch._U200e001.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/58/1c/0a/581c0a4b-12bd-f4f6-5268-e2d2eb3b3439/ad7b2644-fe35-4f43-8860-5ae6ac2d141b__U200e6.5inch._U200e002.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/a2/c6/a1/a2c6a1c6-268f-1ea8-041c-880d092df2bc/3ddb6017-5245-4ffb-85da-7f433c108275__U200e6.5inch._U200e003.jpeg/626x0w.webp"
       ],
       "ipad_screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/1e/15/5f/1e155f91-6249-983f-ba8c-b31bfdfe9201/ebc9583f-b837-47f3-be53-29f26c9bc485__U200e12.9inch._U200e001.jpeg/576x768bb.jpg",
@@ -1195,9 +1263,9 @@
       "app_store_url": "https://apps.apple.com/jp/app/simple-touch-the-numbers/id6450852611?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/f0/c9/eb/f0c9eb4b-ba2f-0333-f6a2-4d141f09229f/AppIcon-1x_U007epad-85-220.jpeg/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/d9/51/09/d95109c1-473c-a972-bd0e-034e43535ed0/0824b976-9624-40c0-a6de-6e8e21ae40ee__U200e5.5inch._U200e001.jpeg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/09/3f/be/093fbe20-1637-b678-3cdf-2c17ff5d540c/9c3208f3-fb06-479b-abd0-d9bfcd642988__U200e5.5inch._U200e002.jpeg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/3a/e9/1a/3ae91a3f-1efc-3dde-26ca-1afb84a6f446/1039970e-06e2-48f7-8d6c-c0396486f311__U200e5.5inch._U200e003.jpeg/392x696bb.jpg"
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/98/80/bc/9880bc7d-7067-c053-0eae-6e5ace907ec2/f9cab089-2b87-4f85-b254-5f452fe6e7d9__U200e6.5inch._U200e001.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/59/ef/a1/59efa1b3-abcd-23de-45b4-1c2ebab0e9a3/4c5c1e6a-1b89-4c46-90ec-affafa8b8d6d__U200e6.5inch._U200e002.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/b8/f4/3c/b8f43c7d-dd4b-39c5-402c-a5cc3f3c2030/95adc328-ae1c-416a-8321-3afcd2df87ce__U200e6.5inch._U200e003.jpeg/626x0w.webp"
       ],
       "ipad_screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/5d/de/23/5dde23dd-0f5f-fbed-0651-4851d829c524/74ca0d76-eb19-4e99-95d9-0f56d0ca9622__U200e12.9inch._U200e001.jpeg/576x768bb.jpg",
@@ -1236,10 +1304,10 @@
       "app_store_url": "https://apps.apple.com/jp/app/ikaqr-qr%E3%82%B3%E3%83%BC%E3%83%89%E3%82%92%E7%88%86%E9%80%9F%E3%81%A7%E8%AA%AD%E3%81%BF%E8%BE%BC%E3%82%82%E3%81%86/id6450046891?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/20/6c/b3/206cb337-5331-1193-1f4a-b265f42bb1dc/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/ab/ea/97/abea9736-99c0-06cb-25e3-9f3266985f21/b879e40d-08d7-4477-8514-4201ec4ebd33_5.5inch.001.jpeg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/d6/5d/3f/d65d3f8e-a4e0-4639-2db6-3070229e32eb/f0ac394e-7d4a-475e-ad0f-be59964bd7a8_5.5inch.002.jpeg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/b4/96/d6/b496d6f1-0735-bb6c-c63e-742149441254/571388f2-0b91-4855-90c3-af16b3ebc972_5.5inch.003.jpeg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/fe/1b/87/fe1b870c-0e13-00e4-544f-bc2b61b076a3/7b05aefc-fcec-4d08-8ea7-8ded8c95b0df_5.5inch.004.jpeg/392x696bb.jpg"
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/ef/92/f9/ef92f94b-250d-e1d3-1edb-7ad1bc6cb9d9/8294df35-6a8b-4780-a834-e994cfdf7d36_6.5inch.001.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/11/cf/af/11cfaf78-0e60-ab89-5564-19c4efe0a896/237a6b33-c559-4da7-8421-8758687e8c6d_6.5inch.002.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/13/61/f9/1361f989-1e60-a8ea-0036-9138355c2943/1c294726-3c93-47dc-bb27-a6dec147cf32_6.5inch.003.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/71/5d/9c/715d9c08-150d-4c14-dc5f-1532668a33b2/d96dc1e7-aff4-4770-9715-ce43df2bf61c_6.5inch.004.jpeg/626x0w.webp"
       ],
       "ipad_screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/e0/df/e5/e0dfe540-650c-c098-caea-e4255d17925e/4196b08f-cb56-4267-8093-9e0ca8054e1a_12.9inch.001.jpeg/576x768bb.jpg",
@@ -1278,9 +1346,9 @@
       "app_store_url": "https://apps.apple.com/jp/app/%E3%82%89%E3%81%8F%E3%82%BF%E3%82%B0/id1670158327?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/f3/48/0a/f3480aae-e643-8c64-884b-e825fbe57393/AppIcon-1x_U007emarketing-0-7-0-P3-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/74/74/4c/74744c0b-cc2d-312e-3555-17e5f1ce95ec/56977b8b-6860-4957-94d9-088a24f842ae_5.5inch.001.jpeg/406x228bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/bc/35/38/bc3538eb-b168-82f7-6644-29978ebdf30c/c1e5c06b-3408-4e8c-8eb0-26755d7d80eb_5.5inch.002.jpeg/406x228bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/9a/b9/5b/9ab95be3-eaef-0ca8-473a-6e25d38a4b8f/00ec4657-6cf5-46f8-b2b8-6c8a9772e752_5.5inch.003.jpeg/406x228bb.jpg"
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/1e/80/59/1e8059a7-147d-8c81-38f4-578fe64d2d9a/a16d2f60-f9a5-4ce2-97bf-963a922124a5_6.5inch.001.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/80/cc/ef/80ccef23-43fb-d654-3775-f5c394ded232/cfc32250-2099-4af5-8965-0df3fdc47543_6.5inch.002.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/31/b7/b9/31b7b90e-9b99-45b4-655d-d9358250f7ff/649433f7-b67e-404c-9afd-30597e919c35_6.5inch.003.jpeg/626x0w.webp"
       ],
       "ipad_screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/f5/d2/75/f5d2751f-3089-f3f8-79dc-f6c1ba1ed51d/4182aeb8-87f9-4f14-b457-354cd9aa36be_12.9inch-2.001.jpeg/552x414bb.jpg",
@@ -1319,9 +1387,9 @@
       "app_store_url": "https://apps.apple.com/jp/app/ticketmania/id6444087177?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/0c/69/43/0c694307-7285-ccdc-052b-3a3efc992557/AppIcon-0-1x_U007emarketing-0-7-0-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/ff/de/62/ffde620b-8a44-f88e-4a99-c9e0376fa9d1/43bb14a0-6caa-448b-a86e-c9e1f3d97e68_5.5inch.001.jpeg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/82/a8/b9/82a8b9f3-5a63-ac10-def2-65b0ef71f18d/62742688-5e20-4b93-a895-d005cb4054ff_5.5inch.002.jpeg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource122/v4/9a/4c/b0/9a4cb0c0-fbe3-13a7-2e5e-91ff824beec6/a2a2c0c0-94b9-4060-8a8e-d30b2f8670b7_5.5inch.003.jpeg/392x696bb.jpg"
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource122/v4/37/0b/da/370bda63-539e-9c16-9b8d-6340cb5342a9/bb8b5067-1757-422a-9aa1-840b88314011_6.5inch.001.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource122/v4/2b/1b/d4/2b1bd44c-0a43-799f-e98d-705762cb7c70/cfa9759d-f064-4df6-b2f9-5e6278206f40_6.5inch.002.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/a8/e5/ce/a8e5ced1-647a-3b51-2289-382943b4b320/334a8524-338b-4d28-9d65-028aa233168c_6.5inch.003.jpeg/626x0w.webp"
       ],
       "ipad_screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource122/v4/ad/cc/40/adcc40b7-494c-789e-65bf-61d0ae817e4c/ef331a28-c3dc-42a6-b0cf-92e128876dd6_12.9inch.001.jpeg/576x768bb.jpg",
@@ -1360,9 +1428,9 @@
       "app_store_url": "https://apps.apple.com/jp/app/alwaysontimer-%E3%81%84%E3%81%A4%E3%81%A7%E3%82%82%E3%82%BF%E3%82%A4%E3%83%9E%E3%83%BC/id6443471257?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/87/54/da/8754dae1-7d78-2334-5625-2b7a22dca50a/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/f4/25/ce/f425ce75-c268-ce77-f72e-9cf896d9b7a1/af21aaa6-3cf6-40a8-b5b3-046edb48305b_5.5inch.004.jpeg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/9b/20/b2/9b20b2f4-4f7d-78d1-95ac-39a3cdf09a1a/77f1ff8a-2a00-4226-8326-67356654100a_5.5inch.005.jpeg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/b6/db/30/b6db300d-49ad-e9a5-f01d-8391bdb459df/e8efb7f3-fce1-443e-bd6b-b2fd145720cc_5.5inch.006.jpeg/392x696bb.jpg"
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/42/72/ff/4272fff0-8e63-065b-153f-c224531d7a99/a6475055-4f21-411b-857e-5490429d7e63_6.5inch.004.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/b5/be/8f/b5be8fb5-dc5b-31c2-6300-3eec4d79e37b/f6be4836-5b6f-41e8-8b39-48465b8c83e3_6.5inch.005.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/66/fd/fd/66fdfdf8-7ff5-6644-68d8-9814ab79d03f/4059e44d-b748-49e7-bed0-9a26f6803943_6.5inch.006.jpeg/626x0w.webp"
       ],
       "ipad_screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/1d/e0/bf/1de0bfc2-dec1-13dd-936c-ea30c85ad653/30f75994-9250-4c3a-809f-6213244c283f_12.9inch.005.jpeg/576x768bb.jpg",
@@ -1401,9 +1469,9 @@
       "app_store_url": "https://apps.apple.com/jp/app/%E3%81%AA%E3%81%8C%E3%82%89%E3%82%AB%E3%82%A6%E3%83%B3%E3%82%BF%E3%83%BC-%E5%88%A5%E3%81%AE%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%84%E3%81%A6%E3%82%82%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%81%A7%E3%81%8D%E3%82%8B/id1644376109?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5d/bc/a8/5dbca80e-f98f-26df-09b2-505b298e1caf/AppIcon-0-0-1x_U007emarketing-0-10-0-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource122/v4/2a/7a/9d/2a7a9d87-f550-22fe-fb5e-3ceeaf93bf32/65662330-5204-4f17-9979-f3adca9ad4e8_5.5inch.001.jpeg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/e4/83/0c/e4830c8d-e003-4438-813a-8bd85553d5cb/2081542b-4323-4006-9d96-0fbe0ba7d5c7_5.5inch.002.jpeg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/7b/49/c4/7b49c473-9154-86ba-49ea-c65475ff1cc7/66861311-c8a3-42c5-8856-421769e88b62_5.5inch.003.jpeg/392x696bb.jpg"
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource122/v4/1f/e0/5a/1fe05af9-08c0-6eb7-a4db-7992f732df89/688994d4-7124-4ae8-917d-0577db0be0a4_6.5inch.001.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource122/v4/9f/24/6c/9f246c6b-7514-9e1b-e729-34f574809d37/afb44e25-e7a6-4530-ba6e-4feb3d164e38_6.5inch.002.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource122/v4/e8/01/07/e8010731-3c83-c1bd-e90a-97531e3aac55/04a83ec8-28b2-4658-8d57-de803dcdff81_6.5inch.003.jpeg/626x0w.webp"
       ],
       "ipad_screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/1a/de/f2/1adef2c8-6819-b633-d262-210d132bd313/6083b676-5715-410e-83ad-403cac827d1a_12.9inch.001.jpeg/576x768bb.jpg",
@@ -1442,9 +1510,9 @@
       "app_store_url": "https://apps.apple.com/jp/app/pictin/id1625004229?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/3e/26/4d/3e264d0b-f57c-30cf-69c8-2d33f90a765f/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/51/ec/a0/51eca0e4-c693-43b4-f12e-b923f7420876/0d68804b-5f67-4c88-abde-4787a1d1516f_5.5inch.001.jpeg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource122/v4/d4/ad/b6/d4adb6cd-6c1e-e954-2c79-c388f496776f/1ef9539f-d05b-4644-9393-21ae4a0c8bb8_5.5inch.002.jpeg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/06/45/29/06452988-9ec1-8716-03b8-6dad3ccf093b/2e12e307-ad8d-43ec-9097-7d053e8e1e46_5.5inch.003.jpeg/392x696bb.jpg"
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/a4/05/7d/a4057d9f-856b-f23b-a8f5-508beefbda48/734aeab3-7d9d-4ec9-81e7-dfcf6dd751f2_6.5inch.001.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/51/0e/b3/510eb32e-ab36-a77b-04fd-ba9b507c5957/e0a5f1a2-e435-4b55-ab34-186d329a885c_6.5inch.002.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/70/58/2c/70582c76-fac1-77d5-5ed6-e11f4253ffd4/5743f726-aae2-4fc8-9592-462841b409a8_6.5inch.003.jpeg/626x0w.webp"
       ],
       "ipad_screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/df/f2/b2/dff2b226-56db-ad2e-1a79-8783ce882ddc/a7c94d6e-b804-4999-a7cb-7e3dc9fb7d0d_12.9inch.001.jpeg/576x768bb.jpg",
@@ -1483,9 +1551,9 @@
       "app_store_url": "https://apps.apple.com/jp/app/pipmp/id1612260255?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/d2/9f/47/d29f4743-9e29-91cd-98fe-e651b0e8a903/AppIcon-0-1x_U007emarketing-0-10-0-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/9a/68/bf/9a68bf72-8fca-91d5-2442-963a7d309849/c00ac4e8-562d-4cc6-ba98-c6e937b0e03b_5.5inch.001.jpeg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/d0/43/48/d04348be-2656-59ac-8d6b-82b3188a991a/7cb36e9f-213b-47c0-bfcf-4c08d737bfbe_5.5inch.002.jpeg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/84/23/f6/8423f6a6-da22-60a4-d33b-8177c3f00baf/74dce6dc-c400-409f-8ab3-c690d1b62203_5.5inch.003.jpeg/392x696bb.jpg"
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/6a/8a/15/6a8a157c-ede4-d90b-bae2-e1a3a3ebdf29/cafa8ff2-ea77-4583-9215-5612369bd760_6.5inch.001.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/36/df/ab/36dfab75-5c7b-5f8d-425d-44fb5d6efb89/f6e22633-b4c6-4800-a2e1-0aa5be9dad00_6.5inch.002.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/55/02/34/55023475-3f1c-f64c-918c-770eb5197835/7ab4756d-406c-4f5a-acba-bb80d55e5118_6.5inch.003.jpeg/626x0w.webp"
       ],
       "ipad_screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/33/1e/01/331e01c7-07a0-1a08-6a50-0769dfd80c5a/f6fe723b-9ee2-498b-8a2d-d9c03dcb6bd3_12.9inch.001.jpeg/576x768bb.jpg",
@@ -1524,10 +1592,10 @@
       "app_store_url": "https://apps.apple.com/jp/app/%E6%B5%81%E3%82%8C%E3%82%8B%E3%83%A1%E3%83%A2%E5%B8%B3/id1598380826?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/00/f4/d3/00f4d38d-8825-1fda-0bdf-d3faf052a16f/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/93/7f/67/937f678b-4b69-7db6-34db-70e113c56267/5fd3335e-cf01-4d4a-8f08-03bbe27c9cb3_iPhoneSe2.001.jpeg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8c/51/c8/8c51c8a4-b884-fe66-bf69-6efe49fd43ad/c1adbb1a-3acc-4d72-87f2-03285cad564a_iPhoneSe2.002.jpeg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/fb/6d/bb/fb6dbb61-acfe-f07b-b6ee-b790f8d3128a/818874e2-0f92-4991-9f26-06094ffe9f0c_iPhoneSe2.003.jpeg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/55/6c/0f/556c0fa1-525d-4a5c-d2fc-85dc7b18bd55/e523347f-932e-46fe-ba01-a060a0c21a25_5.5inch.001.jpeg/392x696bb.jpg"
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/93/7f/67/937f678b-4b69-7db6-34db-70e113c56267/5fd3335e-cf01-4d4a-8f08-03bbe27c9cb3_iPhoneSe2.001.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8c/51/c8/8c51c8a4-b884-fe66-bf69-6efe49fd43ad/c1adbb1a-3acc-4d72-87f2-03285cad564a_iPhoneSe2.002.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/fb/6d/bb/fb6dbb61-acfe-f07b-b6ee-b790f8d3128a/818874e2-0f92-4991-9f26-06094ffe9f0c_iPhoneSe2.003.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/55/6c/0f/556c0fa1-525d-4a5c-d2fc-85dc7b18bd55/e523347f-932e-46fe-ba01-a060a0c21a25_5.5inch.001.jpeg/626x0w.webp"
       ],
       "ipad_screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1d/e7/cf/1de7cf6b-219e-47ef-3ff3-1ed0fe37b7a9/6d608b22-5a34-4e9e-9354-8e2ecc4468a1_iPad.001.jpeg/576x768bb.jpg",
@@ -1566,7 +1634,7 @@
       "app_store_url": "https://apps.apple.com/jp/app/widgetzenn/id1597103122?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2a/a2/3b/2aa23bb5-af8b-f657-b8a2-3a0da2f3ece5/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/69/49/c0/6949c077-3546-df85-5643-29d857cc6027/cf3c1d84-04e0-404d-b4ec-cf024b39d9a7_002.001.jpeg/406x228bb.jpg"
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/69/49/c0/6949c077-3546-df85-5643-29d857cc6027/cf3c1d84-04e0-404d-b4ec-cf024b39d9a7_002.001.jpeg/626x0w.webp"
       ],
       "ipad_screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/94/08/50/9408505a-ccb2-5260-8b9b-f6c07da8609c/fe210cb3-654b-4dd3-9e36-3efa26f4d1ad_003.001.jpeg/552x414bb.jpg"
@@ -1603,11 +1671,11 @@
       "app_store_url": "https://apps.apple.com/jp/app/widgetqiita/id1585253685?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple112/v4/77/b1/4c/77b14ce8-6a4e-975d-511a-52ba07838c05/AppIcon-0-1x_U007emarketing-0-10-0-sRGB-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple125/v4/4a/ec/0c/4aec0c86-60d7-ec5f-fbcb-32be70c23d6a/dc9f4411-ae87-41be-88f1-826b036b4901_5.5-inch_Screenshot_1.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource125/v4/14/bf/56/14bf56d3-e00e-6572-b410-38ece45b4983/ff3a296b-e0d9-4d29-b90f-47ec88770512_002.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource115/v4/14/ab/aa/14abaa9b-9535-384f-82f6-781dd2dca537/e0a06144-e9b0-466d-8776-ed4fd0dac8c4_003.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource125/v4/85/72/38/857238f5-76af-0a6d-3e00-7d69842b9c4a/14b09063-2106-47df-bcd9-a75ca6e21000_004.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple115/v4/c5/6a/21/c56a21f9-262c-c089-5a09-004662ee1b66/7bd201b7-882c-41d4-8d9a-2ceda0ab00cc_5.5-inch_Screenshot_5.png/392x696bb.png"
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple115/v4/0f/38/98/0f38988c-e3c8-fb7e-2201-082b26f4b8d9/1a497c5e-3478-4ed2-b302-acd8f98dc9ef_6.5-inch_Screenshot_1.png/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource125/v4/25/7b/e6/257be66b-e84f-251a-31e7-ba1cf79d28fd/f5c03c8e-cab3-4898-b621-907ae35d2bb4_002.png/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource125/v4/ff/1d/bb/ff1dbb6c-34c9-2b8c-e030-94491db05fe5/5f7a7af3-4d5a-40de-b7d1-feadc15a0b4e_003.png/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource125/v4/67/8f/cd/678fcdf5-4cba-f756-31fb-55975008a982/d60c4034-47b7-459e-8c4e-2e3240e022e4_004.png/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple125/v4/3e/6e/c4/3e6ec42d-f1af-5e45-d386-72e016b0a34a/bdc9e706-f04c-4fae-995a-408b5197dbb4_6.5-inch_Screenshot_5.png/626x0w.webp"
       ],
       "ipad_screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/Purple115/v4/43/4a/5b/434a5b4b-ccee-9d69-3501-105ac41ef159/306f1d00-e506-4f2e-b903-1b72b4421067_001.png/576x768bb.png",
@@ -1648,9 +1716,9 @@
       "app_store_url": "https://apps.apple.com/jp/app/skycode/id1512663141?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/a4/3c/bb/a43cbbb8-dd31-d427-6f7f-5b75b1b0f682/AppIcon-1x_U007emarketing-0-10-0-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/2d/88/0a/2d880a55-9234-8358-d6ff-a537ae07cc16/pr_source.png/406x228bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/04/2e/1f/042e1f79-96ef-be18-9f2b-593a41fed2dc/pr_source.png/406x228bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/cd/be/19/cdbe197d-7fea-1e1b-464c-3f8ce29abaed/pr_source.png/406x228bb.png"
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/7c/bd/46/7cbd469f-4cf5-e72c-1535-b0b225ec3183/pr_source.png/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/a6/5c/60/a65c603e-b595-a643-65ed-b5d4579a5054/pr_source.png/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/13/d8/5b/13d85b17-fcf0-5616-4c60-8475c98516eb/pr_source.png/626x0w.webp"
       ],
       "ipad_screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/bb/08/78/bb087892-c15a-20a4-7548-430513ec03b6/pr_source.png/552x414bb.png",
@@ -1694,7 +1762,12 @@
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ac/16/c0/ac16c03c-e4d3-0faa-59a4-e32e7675cb5c/APP_IPHONE_69_04.png/626x0w.webp",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ba/db/26/badb264a-54a5-fbf4-0a90-ecc93fd3250b/APP_IPHONE_69_02.png/626x0w.webp"
       ],
-      "ipad_screenshots": [],
+      "ipad_screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/cb/1d/0e/cb1d0e48-7a9a-6251-deb4-32548b11f28e/APP_IPAD_PRO_3GEN_129_01.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/64/2e/45/642e4593-e1af-2683-f657-d874c41a73ab/APP_IPAD_PRO_3GEN_129_03.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/83/f0/05/83f0051b-5945-1fcf-173a-a61c5ae79b5e/APP_IPAD_PRO_3GEN_129_04.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9c/d1/bd/9cd1bd62-0bd2-0fbc-6f5d-88e047068491/APP_IPAD_PRO_3GEN_129_02.png/360x480bb.jpg"
+      ],
       "price": "無料",
       "currency": "JPY",
       "genres": [
@@ -1803,7 +1876,13 @@
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9c/58/81/9c5881be-4581-6b9e-8ff2-631a9e0110e4/_U6372_U308b_U30936.5inch.003.jpeg/626x0w.webp",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a8/43/27/a843275a-833e-7d8b-0962-68feeb67825c/_U6372_U308b_U30936.5inch.005.jpeg/626x0w.webp"
       ],
-      "ipad_screenshots": [],
+      "ipad_screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c8/45/83/c8458382-bc79-ff5e-68c4-3bdaac95e387/_U3081_U304f_U308b_U309313inch.001.jpeg/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4b/b8/26/4bb8268f-587b-21e3-952f-4fc0954fe83a/_U3081_U304f_U308b_U309313inch.002.jpeg/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ea/b1/62/eab162b2-e771-f212-43b7-ee2480b462c0/_U3081_U304f_U308b_U309313inch.003.jpeg/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c1/e6/7a/c1e67a98-7888-b7cc-7f6b-98d4ba7a348b/_U3081_U304f_U308b_U309313inch.004.jpeg/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0e/b3/27/0eb327e1-e15d-4de6-6e5f-71337873bfc5/_U3081_U304f_U308b_U309313inch.005.jpeg/360x480bb.jpg"
+      ],
       "price": "無料",
       "currency": "JPY",
       "genres": [
@@ -2366,13 +2445,14 @@
       "name": "あなたレシート レシート作成＆記録",
       "bundle_id": "com.tsuzukit.AnataReceipt",
       "app_store_url": "https://apps.apple.com/jp/app/%E3%81%82%E3%81%AA%E3%81%9F%E3%83%AC%E3%82%B7%E3%83%BC%E3%83%88-%E3%83%AC%E3%82%B7%E3%83%BC%E3%83%88%E4%BD%9C%E6%88%90-%E8%A8%98%E9%8C%B2/id6784235708?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/cd/ec/2d/cdec2de1-3919-1af4-ccec-c4afa55e4624/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/85/2c/9d/852c9d7e-9a34-3893-e6ad-64124d6567dc/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c6/44/ee/c644eea8-2279-366d-5fd9-ecc5bf6df263/001.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/fb/42/ed/fb42edd9-052e-a921-28ab-cd22991af82e/002.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e6/d1/53/e6d15322-f9d7-7e2a-4812-0aa534a555b4/003.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/03/c1/32/03c132e7-54fc-4c7e-da16-f3b3d286fc19/004.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/eb/5c/d9/eb5cd991-f567-e61e-befa-f486370c7030/005.png/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/23/57/c4/2357c48b-13dd-3583-56a2-97b66ea93ad4/001.png/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/5e/b4/07/5eb407ac-5171-b815-2061-f3464abbfd70/002.png/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/20/5b/a9/205ba955-7a72-ffa3-50fc-ac838f3ea50b/003.png/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/97/e0/95/97e09597-8660-ee83-e6f4-1e3cc723b3b1/004.png/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f0/da/3a/f0da3abf-fa77-eac3-1a12-b315990c822c/005.png/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/74/6c/38/746c380d-eed9-0b58-5986-d37401d22825/006.png/626x0w.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -2384,16 +2464,16 @@
       "primary_genre": "Lifestyle",
       "rating": 5,
       "rating_count": 1,
-      "version": "1.0",
-      "release_date": "2026-08-02T07:00:00Z",
-      "current_version_release_date": "2026-08-02T07:00:00Z",
+      "version": "1.1.0",
+      "release_date": "2026-07-31T07:00:00Z",
+      "current_version_release_date": "2026-08-04T04:57:32Z",
       "description": "あなたの1日も、体も、そして「あなた自身」も——本物そっくりのレシートに印刷するアプリです。\n\n歩いた歩数も、眠った時間も、今日のあなたも。プリンタからスルスルと印字されて出てくる、ちょっと感動するレシート。集めて、眺めて、友だちと交換しよう。\n\nそして、自分でも作れます。推し活の費用も、ペットの出費も——タイトルと項目を入れて写真を1枚そえれば、あなただけのカスタムレシートに。\n\n■ こんなレシートが作れます\n・今日のあなた（歩数・距離・運動・心拍）\n・睡眠（時間・REM・深い睡眠・心拍）\n・ワークアウト（時間・ペース・心拍）\n・この端末（バッテリー・空き容量・稼働時間）\n・あなた自身（交換できる名刺レシート）\n\n■ 楽しいポイント\n・プリンタから印字されて出てくる、リッチな印刷演出\n・本物の紙のような質感、バーコードとQRコード\n・集めたレシートは「紙の束」にしまっておける\n・QRコードでオフライン交換（近くの友だちと、サーバー不要）\n\n■ プレミアム（買い切り／週額・無料トライアルなし）\n・すべての種類のレシートを印刷\n・アーカイブ無制限・共有画像の透かしなし・広告なし\n\n健康データはあなたの端末の中だけで使われ、勝手に送信されません。\n\n■ リンク\n・サポート: https://tsuzukit.com/contact/\n・利用規約: https://tsuzukit.com/legal/terms-of-service.html\n・プライバシーポリシー: https://tsuzukit.com/legal/privacy-policy.html",
-      "release_notes": null,
+      "release_notes": "スナップレシート登場！写真1枚をレトロ印刷のレシートに。写真をタップするとカラー/白黒/切り抜きの6スタイルに切り替わります。無料で使えます。",
       "content_advisory_rating": "4+",
       "minimum_os_version": "17.0",
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
-      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/cd/ec/2d/cdec2de1-3919-1af4-ccec-c4afa55e4624/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/60x60bb.jpg",
+      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/85/2c/9d/852c9d7e-9a34-3893-e6ad-64124d6567dc/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/60x60bb.jpg",
       "download_count": 0,
       "google_play_url": "https://play.google.com/store/apps/details?id=com.tsuzukit.anatareceipt",
       "lp_url": "/anatareceipt/"
@@ -2477,7 +2557,13 @@
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0a/17/e5/0a17e5fe-b178-46e7-f060-bcfd6cbb2e74/004.png/626x0w.webp",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a3/3e/8f/a33e8f04-e014-02f9-7251-0dc1056948ff/005.png/626x0w.webp"
       ],
-      "ipad_screenshots": [],
+      "ipad_screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f9/50/eb/f950eb27-7170-de21-dfd2-58f37068d80c/001.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/bd/86/20/bd862020-3741-2e73-29a7-afd18f90e65f/002.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/35/8f/a5/358fa5d0-0807-c0fb-00a8-41bd58347c95/003.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e1/aa/ca/e1aacad2-68de-91de-1cf3-7ac9e9fc3223/004.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ad/b1/93/adb193b7-31ed-c54b-1a7f-602a1e13dfe5/005.png/360x480bb.jpg"
+      ],
       "price": "¥300",
       "currency": "JPY",
       "genres": [
@@ -2633,6 +2719,43 @@
       "download_count": 0,
       "google_play_url": "https://play.google.com/store/apps/details?id=com.tsuzukit.yattayo",
       "lp_url": "/yattayo/"
+    },
+    {
+      "id": 6790164642,
+      "name": "nokki - 音楽ジャーナル",
+      "bundle_id": "com.tsuzukit.nokki",
+      "app_store_url": "https://apps.apple.com/jp/app/nokki-%E9%9F%B3%E6%A5%BD%E3%82%B8%E3%83%A3%E3%83%BC%E3%83%8A%E3%83%AB/id6790164642?uo=4",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d5/9d/93/d59d933a-0c29-d2aa-833a-d19ec7ee13f6/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e8/ef/18/e8ef1897-aab0-0eaf-61a7-b543b9257455/store-01.png/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a5/00/6d/a5006d4f-6713-d424-74ad-f7dd2e1a9370/store-02.png/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9e/18/66/9e18666d-c59f-b092-1999-ab3a3e6f14c2/store-03.png/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/56/fd/be/56fdbeac-2452-c6d0-226d-c5f0d80568bf/store-04.png/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/3d/cd/9b/3dcd9b08-a592-6a82-1a6a-1004774ee525/store-05.png/626x0w.webp"
+      ],
+      "ipad_screenshots": [],
+      "price": "無料",
+      "currency": "JPY",
+      "genres": [
+        "ミュージック",
+        "ライフスタイル"
+      ],
+      "primary_genre": "Music",
+      "rating": 0,
+      "rating_count": 0,
+      "version": "1.0",
+      "release_date": "2026-08-04T18:38:34Z",
+      "current_version_release_date": "2026-08-04T18:38:34Z",
+      "description": "きいた音楽が、日記になる。\n\nnokki(のっき)は、きょう聴いた曲とそのときの気分を、30秒で記録できる音楽ジャーナルです。\n\n■ つかいかたは3ステップ\n1. 曲をえらぶ(Apple Musicから検索、最近聴いた曲からワンタップでも)\n2. 気分をタップ(うれしい・おだやか・エモい…9種類のパステルから)\n3. ひとことメモ(書いても書かなくても。公開・じぶんだけも選べます)\n\n■ カレンダーに思い出がたまる\n記録は自動でカレンダーに。「この日なに聴いてたっけ?」がすぐ見つかります。\n月末には、あなたの記録からAIがひと月をやさしくふりかえってくれます。\n\n■ 友達とだけ、ゆるく共有\nつながるのは、QRコードで申請しておたがいに承認した友達だけ。フォロワーも足あともありません。\n投稿ごとに「友達まで」「じぶんだけ」を選べて、友達の記録にはいいねとコメントができます。\nだれにも見せない「よるのノート」もあるので、ひとりごとみたいな記録もここに。\n\n■ 曲はその場で試聴できる\n気になった曲は再生ボタンでプレビュー。Apple Music加入者ならフル再生も。\n\n■ アバターは着せかえ式\nかみがた・おようふく・こもの・いろを組み合わせて、じぶんだけの姿に。\n\n■ nokki+(サブスクリプション)\nテーマきせかえ(パープル・ナイト)が使い放題。月額300円/年額2,800円。\n\n毎日の音楽が、あなただけのアルバムになりますように。\n黒猫といっしょに、お待ちしています。\n\n・利用規約: https://nokki-ja.web.app/terms.html\n・プライバシーポリシー: https://nokki-ja.web.app/privacy.html",
+      "release_notes": null,
+      "content_advisory_rating": "4+",
+      "minimum_os_version": "17.0",
+      "developer_name": "Ryo Tsudukihashi",
+      "seller_name": "TsuzuKit",
+      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d5/9d/93/d59d933a-0c29-d2aa-833a-d19ec7ee13f6/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/60x60bb.jpg",
+      "download_count": 0,
+      "google_play_url": "https://play.google.com/store/apps/details?id=com.tsuzukit.nokki",
+      "lp_url": "https://nokki-ja.web.app/"
     }
   ]
 }

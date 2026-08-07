@@ -257,9 +257,10 @@ platform :ios do
               UI.message("  Could not fetch ASC screenshots: #{e.message}")
             end
 
-            # iTunes APIのスクリーンショットがなければASCから取得したものを使用
+            # ASCのスクショ(626x0w.webp)を優先。iTunesは 320x480bb.jpg の低解像度しか
+            # 返さないので、ASCが取れなかったアプリのフォールバックとしてだけ使う。
             itunes_screenshots = itunes_data['screenshotUrls'] || []
-            final_screenshots = itunes_screenshots.empty? ? asc_screenshots : itunes_screenshots
+            final_screenshots = asc_screenshots.empty? ? itunes_screenshots : asc_screenshots
 
             public_data << {
               bundle_id: app.bundle_id,
