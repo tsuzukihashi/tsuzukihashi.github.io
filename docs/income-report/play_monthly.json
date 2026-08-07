@@ -138,5 +138,47 @@
         "transactions": 17
       }
     }
+  },
+  "2026-07": {
+    "totals": {
+      "gross_jpy": 11057,
+      "fee_jpy": -1663,
+      "tax_jpy": -38,
+      "net_jpy": 9356
+    },
+    "apps": {
+      "com.tsuzuki817.omoidemap": {
+        "title": "  思い出マップサポーター（期間限定月額） (旅行思い出マップ - 旅の記憶を、地図に描く)",
+        "gross_jpy": 3160,
+        "fee_jpy": -474,
+        "tax_jpy": 0,
+        "net_jpy": 2686,
+        "transactions": 6
+      },
+      "com.tsuzukit.poopcounter": {
+        "title": "うんちくんプレミアム（月額） (UNCHIKUN Poop Tracker)",
+        "gross_jpy": 7497,
+        "fee_jpy": -1129,
+        "tax_jpy": 0,
+        "net_jpy": 6368,
+        "transactions": 29
+      },
+      "com.tsuzukit.sebonereminder": {
+        "title": "週額プラン (猫背改善と姿勢リマインダー：猫背は猫だけで充分にゃ)",
+        "gross_jpy": 400,
+        "fee_jpy": -60,
+        "tax_jpy": 0,
+        "net_jpy": 340,
+        "transactions": 2
+      },
+      "": {
+        "title": "",
+        "gross_jpy": 0,
+        "fee_jpy": 0,
+        "tax_jpy": -38,
+        "net_jpy": -38,
+        "transactions": 0
+      }
+    }
   }
 }

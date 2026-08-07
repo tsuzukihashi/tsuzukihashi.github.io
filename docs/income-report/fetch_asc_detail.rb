@@ -21,7 +21,7 @@ token = Spaceship::ConnectAPI::Token.create(
   filepath: File.expand_path(ENV['ASC_KEY_FILEPATH'])
 )
 
-months = %w[2025-11 2025-12 2026-01 2026-02 2026-03 2026-04 2026-05 2026-06]
+months = %w[2025-11 2025-12 2026-01 2026-02 2026-03 2026-04 2026-05 2026-06 2026-07]
 result = {}
 
 months.each do |report_month|
