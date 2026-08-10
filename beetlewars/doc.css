@@ -1,0 +1,83 @@
+/* 昆虫大戦の文書ページ（プライバシーポリシー・利用規約・サポート）共通 */
+:root{
+  --ink:#0a0a0a; --ink2:#141210;
+  --gold:#c9a227; --gold-l:#e8c86a;
+  --red:#c0392b; --green:#4caf50;
+  --cream:#f2ead6; --cream-dim:#b5ac97;
+  --line:rgba(233,200,106,.26);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--ink); color:var(--cream);
+  font-family:"Zen Kaku Gothic New",-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif;
+  line-height:1.95; letter-spacing:.02em; -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%;height:auto}
+a{color:var(--gold-l);text-decoration:underline;text-underline-offset:.2em}
+a:hover{color:#fff3cf}
+.wrap{width:min(760px,92vw);margin-inline:auto}
+
+header{position:sticky;top:0;z-index:20;backdrop-filter:blur(10px);
+  background:rgba(10,10,10,.78);border-bottom:1px solid var(--line)}
+.hbar{display:flex;align-items:center;gap:1rem;padding:.6rem 0;width:min(1080px,92vw);margin-inline:auto}
+.hbrand{display:flex;align-items:center;gap:.6rem;font-family:"Reggae One",serif;
+  font-size:1.05rem;color:var(--cream);text-decoration:none;letter-spacing:.06em;white-space:nowrap}
+.hbrand img{width:30px;height:30px;border-radius:7px;border:1px solid var(--line)}
+.hnav{margin-left:auto;min-width:0;display:flex;gap:1.1rem;overflow-x:auto;scrollbar-width:none}
+.hnav::-webkit-scrollbar{display:none}
+.hnav a{color:var(--cream-dim);text-decoration:none;font-size:.86rem;font-weight:500;white-space:nowrap}
+.hnav a:hover{color:var(--gold-l)}
+
+.doc{padding:3rem 0 4rem}
+.doc-head{border-bottom:1px solid var(--line);padding-bottom:1.4rem;margin-bottom:2.4rem}
+.doc-head .en{font-size:.7rem;letter-spacing:.32em;color:var(--gold);font-weight:700}
+.doc-head h1{font-family:"Reggae One",serif;font-weight:400;letter-spacing:.04em;
+  font-size:clamp(1.5rem,5vw,2.1rem);color:var(--cream);margin:.5rem 0 .8rem}
+.doc-head .meta{font-size:.82rem;color:var(--cream-dim)}
+
+.lede{background:linear-gradient(180deg,rgba(29,26,21,.9),rgba(10,10,10,.9));
+  border:1px solid var(--line);border-left:3px solid var(--gold);
+  border-radius:8px;padding:1.2rem 1.3rem;margin-bottom:2.4rem;font-size:.94rem;color:var(--cream)}
+
+h2{font-size:1.12rem;font-weight:900;color:#ffe9a8;margin:2.6rem 0 .9rem;
+  padding-left:.7rem;border-left:4px solid var(--gold);line-height:1.6}
+h3{font-size:.99rem;font-weight:700;color:var(--cream);margin:1.7rem 0 .6rem}
+p{font-size:.94rem;color:var(--cream-dim);margin-bottom:.9rem}
+p strong,li strong{color:#ffe9a8;font-weight:700}
+ul,ol{margin:.4rem 0 1.1rem 1.3rem;font-size:.94rem;color:var(--cream-dim)}
+li{margin-bottom:.45rem}
+
+table{width:100%;border-collapse:collapse;font-size:.9rem;margin:.6rem 0 1.4rem;table-layout:fixed}
+th,td{padding:.6rem .8rem;border:1px solid rgba(233,200,106,.16);text-align:left;vertical-align:top;
+  overflow-wrap:anywhere;line-height:1.7}
+th{background:rgba(201,162,39,.1);color:#ffe9a8;font-weight:700;width:34%}
+td{color:var(--cream-dim)}
+
+.callout{border:1px solid var(--line);border-radius:8px;padding:1.1rem 1.2rem;margin:1.2rem 0;
+  background:rgba(76,175,80,.07);font-size:.92rem;color:var(--cream)}
+.callout.warn{background:rgba(192,57,43,.1)}
+.callout b{color:#ffe9a8}
+
+.contact{border:1px solid var(--line);border-radius:10px;padding:1.4rem 1.3rem;margin-top:2.4rem;
+  background:linear-gradient(180deg,rgba(29,26,21,.9),rgba(10,10,10,.9))}
+.contact h2{margin-top:0}
+.mail{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:1rem;color:#ffe9a8;word-break:break-all}
+
+footer{border-top:1px solid var(--line);padding:2.2rem 0 3rem;text-align:center}
+footer nav{display:flex;flex-wrap:wrap;justify-content:center;gap:.4rem 1.3rem;margin-bottom:1rem}
+footer a{color:var(--cream-dim);text-decoration:none;font-size:.84rem}
+footer a:hover{color:var(--gold-l)}
+footer p{font-size:.78rem;color:#6f6a5f;margin:0}
+
+/* 狭い画面ではナビをロゴの下の行に落とす（重なりを防ぐ） */
+@media (max-width:760px){
+  .hbar{flex-wrap:wrap;gap:.2rem 1rem;padding:.5rem 0 .3rem}
+  .hbrand{font-size:.98rem}
+  .hnav{margin-left:0;width:100%;gap:1rem;padding:.15rem 0 .25rem;-webkit-overflow-scrolling:touch}
+  .doc{padding:2.2rem 0 3rem}
+  /* 表は折り返して収める（横スクロールを作らない） */
+  table{font-size:.84rem}
+  th,td{padding:.5rem .6rem}
+  th{width:38%}
+}

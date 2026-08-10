@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>昆虫大戦 - 3D甲虫バトル＆カード育成RPG | iOS / iPadOS 向けに開発中</title>
+<meta name="description" content="グー・チョキ・パーの読み合いで、3Dの甲虫がぶつかり合う。25種の甲虫と30種の技カードを集めて育てる、じゃんけん×属性相性のバトルRPG「昆虫大戦」。iOS / iPadOS 向けに開発中（Android 対応予定）。">
+<meta name="keywords" content="昆虫大戦,BEETLE WARS,昆虫,カブトムシ,クワガタ,じゃんけん,カードバトル,育成,RPG,ゲーム,iOS,Android,無料">
+
+<link rel="canonical" href="https://tsuzukit.com/beetlewars/">
+<meta name="robots" content="index, follow">
+<meta name="author" content="tsuzukit">
+<meta name="theme-color" content="#0a0a0a">
+<meta name="application-name" content="昆虫大戦">
+<link rel="apple-touch-icon" href="/beetlewars/apple-touch-icon.png">
+<link rel="icon" href="/beetlewars/apple-touch-icon.png" type="image/png">
+
+<!-- OGP -->
+<meta property="og:title" content="昆虫大戦 - 3D甲虫バトル＆カード育成RPG">
+<meta property="og:description" content="グー・チョキ・パーの読み合いで、3Dの甲虫がぶつかり合う。25種の甲虫と30種の技カードを集めて育てるバトルRPG。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tsuzukit.com/beetlewars/">
+<meta property="og:site_name" content="昆虫大戦">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://tsuzukit.com/beetlewars/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@tsuzuki817">
+<meta name="twitter:creator" content="@tsuzuki817">
+<meta name="twitter:title" content="昆虫大戦 - 3D甲虫バトル＆カード育成RPG">
+<meta name="twitter:description" content="グー・チョキ・パーの読み合いで、3Dの甲虫がぶつかり合う。25種の甲虫と30種の技カードを集めて育てるバトルRPG。">
+<meta name="twitter:image" content="https://tsuzukit.com/beetlewars/og.jpg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoGame",
+  "name": "昆虫大戦",
+  "alternateName": "BEETLE WARS",
+  "applicationCategory": "GameApplication",
+  "genre": ["ロールプレイング", "カードバトル"],
+  "operatingSystem": "iOS, iPadOS",
+  "inLanguage": "ja",
+  "description": "グー・チョキ・パーの読み合いで、3Dの甲虫がぶつかり合う。25種の甲虫と30種の技カードを集めて育てるバトルRPG。",
+  "image": "https://tsuzukit.com/beetlewars/og.jpg",
+  "author": { "@type": "Person", "name": "tsuzukit", "url": "https://tsuzukit.com" },
+  "publisher": { "@type": "Person", "name": "續橋涼" }
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Reggae+One&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --ink:#0a0a0a; --ink2:#141210; --ink3:#1d1a15;
+  --gold:#c9a227; --gold-l:#e8c86a; --gold-d:#8c6f18;
+  --red:#c0392b; --green:#4caf50; --blue:#2f7fd1;
+  --cream:#f2ead6; --cream-dim:#b5ac97;
+  --line:rgba(233,200,106,.26);
+  --shadow:0 10px 30px rgba(0,0,0,.55);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--ink); color:var(--cream);
+  font-family:"Zen Kaku Gothic New",-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif;
+  font-weight:400; line-height:1.85; letter-spacing:.02em;
+  -webkit-font-smoothing:antialiased; overflow-x:hidden;
+}
+img{display:block;max-width:100%;height:auto}
+a{color:var(--gold-l)}
+
+/* 背景の森 */
+/* 森はヒーローの後ろにだけ置き、下へ黒く落とす */
+.bgwrap{position:absolute;top:0;left:0;right:0;height:min(1180px,130vh);z-index:-2;overflow:hidden;background:#0a0a0a}
+.bgwrap img{width:100%;height:100%;object-fit:cover;object-position:50% 16%;opacity:.92}
+.bgwrap::after{content:"";position:absolute;inset:0;
+  background:
+    linear-gradient(180deg,rgba(10,10,10,.12) 0%,rgba(10,10,10,.34) 40%,rgba(10,10,10,.84) 76%,#0a0a0a 100%),
+    radial-gradient(95% 70% at 40% 32%,transparent,rgba(0,0,0,.42))}
+
+.wrap{width:min(1080px,92vw);margin-inline:auto}
+
+/* 金の板 */
+.plate{
+  background:linear-gradient(180deg,rgba(29,26,21,.92),rgba(10,10,10,.94));
+  border:1px solid var(--line); border-radius:14px; box-shadow:var(--shadow);
+  position:relative;
+}
+.plate::before,.plate::after{content:"";position:absolute;width:16px;height:16px;pointer-events:none}
+.plate::before{top:6px;left:6px;border-top:2px solid var(--gold);border-left:2px solid var(--gold)}
+.plate::after{bottom:6px;right:6px;border-bottom:2px solid var(--gold);border-right:2px solid var(--gold)}
+
+/* ヘッダー */
+header{position:sticky;top:0;z-index:20;backdrop-filter:blur(10px);
+  background:rgba(10,10,10,.72);border-bottom:1px solid var(--line)}
+.hbar{display:flex;align-items:center;gap:1rem;padding:.6rem 0}
+.hbrand{display:flex;align-items:center;gap:.6rem;font-family:"Reggae One",serif;
+  font-size:1.05rem;color:var(--cream);text-decoration:none;letter-spacing:.06em;white-space:nowrap}
+.hbrand img{width:30px;height:30px;border-radius:7px;border:1px solid var(--line)}
+.hnav{margin-left:auto;min-width:0;display:flex;gap:1.1rem;overflow-x:auto;scrollbar-width:none}
+.hnav::-webkit-scrollbar{display:none}
+.hnav a{color:var(--cream-dim);text-decoration:none;font-size:.86rem;font-weight:500;white-space:nowrap}
+.hnav a:hover{color:var(--gold-l)}
+
+/* ヒーロー */
+.hero{padding:4.2rem 0 3.4rem}
+.hero-grid>div:last-child{text-shadow:0 2px 10px rgba(0,0,0,.85)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1fr);gap:3rem;align-items:center}
+.kv{position:relative;border-radius:16px;overflow:hidden;border:2px solid var(--gold);
+  box-shadow:0 18px 50px rgba(0,0,0,.7),0 0 0 6px rgba(201,162,39,.1)}
+.badge-row{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.1rem}
+.badge{font-size:.74rem;font-weight:700;letter-spacing:.08em;padding:.3rem .7rem;border-radius:999px;
+  border:1px solid var(--line);color:var(--gold-l);background:rgba(201,162,39,.09)}
+.badge.dev{color:#ffd9a0;border-color:rgba(255,217,160,.35);background:rgba(192,57,43,.16)}
+h1{font-family:"Reggae One",serif;font-weight:400;font-size:clamp(2.6rem,7vw,4.2rem);
+  line-height:1.06;letter-spacing:.04em;
+  background:linear-gradient(180deg,#fff3cf,var(--gold-l) 45%,var(--gold) 78%,#a67f16);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  filter:drop-shadow(0 3px 0 rgba(0,0,0,.6))}
+h1 small{display:block;font-family:"Zen Kaku Gothic New",sans-serif;font-weight:700;
+  font-size:.9rem;letter-spacing:.34em;color:var(--cream-dim);
+  -webkit-text-fill-color:var(--cream-dim);margin-top:.9rem}
+.catch{font-family:"Reggae One",serif;font-size:clamp(1.05rem,2.9vw,1.4rem);color:#ffe9a8;
+  margin:1.2rem 0 .9rem;letter-spacing:.03em}
+.lead{color:var(--cream-dim);font-size:1rem;max-width:36em}
+.cta{margin-top:1.9rem}
+.storebtn{display:inline-flex;flex-direction:column;gap:.15rem;padding:.9rem 1.6rem;border-radius:12px;
+  background:linear-gradient(180deg,#2a2620,#151310);border:1px solid var(--line);
+  color:var(--cream-dim);font-size:.95rem;font-weight:700;cursor:default}
+.storebtn b{color:var(--gold-l);font-size:1.02rem}
+.storebtn span{font-size:.76rem;font-weight:400;letter-spacing:.02em}
+.cta-note{margin-top:.9rem;font-size:.84rem;color:var(--cream-dim)}
+.cta-note a{font-weight:700}
+
+/* セクション */
+section{padding:3.6rem 0;scroll-margin-top:96px}
+.shead{text-align:center;margin-bottom:2.4rem}
+.shead .en{font-size:.72rem;letter-spacing:.34em;color:var(--gold);font-weight:700}
+.shead h2{font-family:"Reggae One",serif;font-weight:400;font-size:clamp(1.5rem,4.4vw,2.1rem);
+  color:var(--cream);margin-top:.4rem;letter-spacing:.04em}
+.shead p{color:var(--cream-dim);font-size:.92rem;margin-top:.7rem}
+
+/* 特徴 */
+.feats{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+.feat{padding:1.5rem 1.3rem 1.7rem;text-align:center}
+.feat .num{font-family:"Reggae One",serif;font-size:.9rem;color:var(--gold);letter-spacing:.2em}
+.feat h3{font-size:1.12rem;font-weight:900;margin:.6rem 0 .8rem;color:#ffe9a8;line-height:1.5}
+.feat p{font-size:.9rem;color:var(--cream-dim);text-align:left}
+.feat .shot{margin:0 auto 1.1rem;width:58%;border-radius:10px;overflow:hidden;border:1px solid var(--line);
+  box-shadow:0 10px 26px rgba(0,0,0,.5)}
+
+/* 遊び方 */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+.step{padding:1.3rem 1.1rem}
+.step .n{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;
+  font-family:"Reggae One",serif;font-size:1rem;color:#100e0a;
+  background:linear-gradient(180deg,var(--gold-l),var(--gold));margin-bottom:.8rem}
+.step h4{font-size:1rem;font-weight:900;color:#ffe9a8;margin-bottom:.5rem}
+.step p{font-size:.86rem;color:var(--cream-dim)}
+.hands{display:flex;justify-content:center;gap:1.4rem;margin-top:2rem;flex-wrap:wrap}
+.hand{text-align:center;font-size:.82rem;color:var(--cream-dim)}
+.hand b{display:grid;place-items:center;width:64px;height:64px;border-radius:50%;margin:0 auto .5rem;
+  font-family:"Reggae One",serif;font-size:.95rem;color:#fff;border:2px solid rgba(255,255,255,.28)}
+.hand.g b{background:linear-gradient(180deg,#d9534f,#8e2b23)}
+.hand.c b{background:linear-gradient(180deg,#4a90d9,#1f4f86)}
+.hand.p b{background:linear-gradient(180deg,#63bf67,#2c7031)}
+
+/* 収録内容 */
+.specs{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1rem}
+.spec{padding:1.2rem .8rem;text-align:center}
+.spec .v{font-family:"Reggae One",serif;font-size:1.9rem;
+  background:linear-gradient(180deg,#fff3cf,var(--gold));-webkit-background-clip:text;
+  background-clip:text;color:transparent}
+.spec .k{font-size:.82rem;color:var(--cream-dim);margin-top:.3rem}
+
+/* ギャラリー */
+.gal{display:flex;gap:1rem;overflow-x:auto;padding:.4rem .2rem 1.4rem;scroll-snap-type:x mandatory}
+.gal figure{flex:0 0 auto;width:min(230px,64vw);scroll-snap-align:center}
+.gal img{border-radius:12px;border:1px solid var(--line);box-shadow:var(--shadow)}
+.gal figcaption{margin-top:.6rem;font-size:.8rem;color:var(--cream-dim);text-align:center}
+
+/* 課金・ガチャ */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem}
+.box{padding:1.6rem 1.4rem}
+.box h3{font-size:1.05rem;font-weight:900;color:#ffe9a8;margin-bottom:.9rem}
+.rates{width:100%;border-collapse:collapse;font-size:.88rem}
+.rates th,.rates td{padding:.44rem .3rem;border-bottom:1px solid rgba(233,200,106,.14);text-align:left}
+.rates th{color:var(--cream-dim);font-weight:500;font-size:.8rem}
+.rates td:last-child{text-align:right;font-weight:700;color:#ffe9a8}
+.rates .ur{color:#ff8f6b}.rates .ssr{color:#ffd166}.rates .sr{color:#c792ea}.rates .r{color:#7fb3e8}
+.notes{list-style:none;font-size:.88rem;color:var(--cream-dim)}
+.notes li{padding-left:1.1em;position:relative;margin-bottom:.55rem}
+.notes li::before{content:"▸";position:absolute;left:0;color:var(--gold)}
+
+/* 開発状況 */
+.wip{padding:1.7rem 1.5rem}
+.wip ul{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:.7rem 1.6rem;font-size:.88rem;color:var(--cream-dim)}
+.wip li{padding-left:2.5em;position:relative}
+.wip li::before{content:"未";position:absolute;left:0;top:.28em;font-size:.68rem;font-weight:700;color:#ff9d8f;
+  border:1px solid rgba(192,57,43,.8);background:rgba(192,57,43,.18);border-radius:3px;
+  padding:.05em .3em;line-height:1.4}
+
+/* FAQ */
+details{border:1px solid var(--line);border-radius:10px;margin-bottom:.7rem;
+  background:linear-gradient(180deg,rgba(29,26,21,.8),rgba(10,10,10,.85))}
+summary{cursor:pointer;padding:.95rem 1.1rem;font-weight:700;font-size:.95rem;color:#ffe9a8;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"Q";color:var(--gold);font-family:"Reggae One",serif;margin-right:.6rem}
+details[open] summary{border-bottom:1px solid var(--line)}
+details p{padding:.95rem 1.1rem;font-size:.9rem;color:var(--cream-dim)}
+
+/* CTA末尾 */
+.endcta{text-align:center;padding:3rem 1.4rem}
+.endcta h2{font-family:"Reggae One",serif;font-weight:400;font-size:clamp(1.3rem,4vw,1.9rem);color:#ffe9a8}
+.endcta p{color:var(--cream-dim);font-size:.92rem;margin:.9rem auto 1.6rem;max-width:34em}
+.btn{display:inline-block;padding:.85rem 1.8rem;border-radius:999px;font-weight:900;text-decoration:none;
+  background:linear-gradient(180deg,var(--gold-l),var(--gold));color:#100e0a;
+  box-shadow:0 6px 18px rgba(201,162,39,.25)}
+.btn.ghost{background:transparent;color:var(--gold-l);border:1px solid var(--line);box-shadow:none;margin-left:.6rem}
+
+footer{border-top:1px solid var(--line);margin-top:2rem;padding:2.4rem 0 3rem;text-align:center}
+footer nav{display:flex;flex-wrap:wrap;justify-content:center;gap:.4rem 1.3rem;margin-bottom:1.2rem}
+footer a{color:var(--cream-dim);text-decoration:none;font-size:.85rem}
+footer a:hover{color:var(--gold-l)}
+footer p{font-size:.78rem;color:#6f6a5f}
+.trademark{font-size:.74rem;color:#6f6a5f;margin-top:.7rem;line-height:1.7}
+
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr;gap:2rem}
+  .kv{max-width:400px;margin-inline:auto}
+  .feats{grid-template-columns:1fr}
+  .feat .shot{width:62%}
+  .steps{grid-template-columns:1fr 1fr}
+  .two{grid-template-columns:1fr}
+}
+/* 狭い画面ではナビをロゴの下の行に落とす（重なりを防ぐ） */
+@media (max-width:760px){
+  .hbar{flex-wrap:wrap;gap:.2rem 1rem;padding:.5rem 0 .3rem}
+  .hbrand{font-size:.98rem}
+  .hnav{margin-left:0;width:100%;gap:1rem;padding:.15rem 0 .25rem;-webkit-overflow-scrolling:touch}
+}
+@media (max-width:520px){
+  .steps{grid-template-columns:1fr}
+  .hero{padding:2.2rem 0 2.4rem}
+  .kv{max-width:min(320px,80vw)}
+  .feat .shot{width:70%}
+}
+</style>
+</head>
+<body>
+
+<div class="bgwrap"><img src="bg.webp" alt="" aria-hidden="true" fetchpriority="low"></div>
+
+<header>
+  <div class="wrap hbar">
+    <a class="hbrand" href="/beetlewars/">
+      <img src="icon.webp" alt="" width="30" height="30">昆虫大戦
+    </a>
+    <nav class="hnav">
+      <a href="#feature">特徴</a>
+      <a href="#howto">遊び方</a>
+      <a href="#volume">収録内容</a>
+      <a href="#billing">課金とガチャ</a>
+      <a href="#status">開発状況</a>
+      <a href="#faq">よくある質問</a>
+      <a href="support.html">サポート</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ヒーロー -->
+<div class="hero wrap">
+  <div class="hero-grid">
+    <div class="kv">
+      <img src="keyvisual.webp" width="760" height="1140"
+           alt="昆虫大戦 キービジュアル：森の中で、カブトムシとクワガタが角と大アゴをぶつけ合っている" fetchpriority="high">
+    </div>
+    <div>
+      <div class="badge-row">
+        <span class="badge">iOS / iPadOS（Android は対応予定）</span>
+        <span class="badge">基本プレイ無料</span>
+        <span class="badge dev">配信準備中</span>
+      </div>
+      <h1>昆虫大戦<small>BEETLE WARS</small></h1>
+      <p class="catch">最強の昆虫を仲間にして、頂点を目指せ！</p>
+      <p class="lead">
+        グー・チョキ・パーを「技カード」として選び、3Dの甲虫が角と大アゴをぶつけ合う。
+        単純な運まかせのじゃんけんではありません。相手の得意手、タイプ相性、あいこの削り合い。
+        読み合いに勝った側が、そのターンの主役になります。
+      </p>
+      <div class="cta">
+        <span class="storebtn">
+          <b>App Store / Google Play 配信準備中</b>
+          <span>いまはテスト配信のみ。公開したらこのページにリンクを出します。</span>
+        </span>
+        <p class="cta-note">
+          先に試したい方・不具合を見つけた方は<a href="support.html">サポートページ</a>からご連絡ください。
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 特徴 -->
+<section id="feature">
+  <div class="wrap">
+    <div class="shead">
+      <p class="en">FEATURES</p>
+      <h2>3つの特徴</h2>
+      <p>じゃんけんを「読み合い」に変える3つの仕掛け。</p>
+    </div>
+    <div class="feats">
+      <article class="feat plate">
+        <div class="shot"><img src="shot3.webp" width="603" height="1311" alt="バトル画面。制限時間のリングと、グー・チョキ・パーの3つの技カード" loading="lazy"></div>
+        <p class="num">01</p>
+        <h3>じゃんけんが<br>読み合いになる</h3>
+        <p>10秒以内に、3枚の技カードから1枚を選ぶ。勝てば技が発動、あいこなら互いに削り合い、連続であいこが続くほどダメージが膨らみます。相手の得意手は戦闘中に見えるので、それを踏まえて裏をかきます。</p>
+      </article>
+      <article class="feat plate">
+        <div class="shot"><img src="shot7.webp" width="603" height="1311" alt="強化画面。甲虫のステータスと、使用する素材の数を選ぶ画面" loading="lazy"></div>
+        <p class="num">02</p>
+        <h3>甲虫25種を<br>集めて、育てる</h3>
+        <p>カブトムシもクワガタも、実在の種をもとにした25種。N〜URのレアリティに加えて、攻撃型・均衡型・耐久型・技巧型の4タイプがあり、同じ種でも戦い方が変わります。素材を使って強化し、図鑑を埋めていきます。</p>
+      </article>
+      <article class="feat plate">
+        <div class="shot"><img src="shot5.webp" width="603" height="1311" alt="デッキ編成画面。グー・チョキ・パーの枠に技カードを1枚ずつ入れる" loading="lazy"></div>
+        <p class="num">03</p>
+        <h3>編成で<br>勝ち筋を作る</h3>
+        <p>技カードは30種。グー・チョキ・パーの枠それぞれに1枚ずつセットします。使用回数に制限のある強力なカードをどこで切るか、あいこ対策を積むか。編成そのものが作戦になります。</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 遊び方 -->
+<section id="howto">
+  <div class="wrap">
+    <div class="shead">
+      <p class="en">HOW TO PLAY</p>
+      <h2>遊び方</h2>
+      <p>覚えることは4つだけ。1章がそのまま手引きになっています。</p>
+    </div>
+    <div class="steps">
+      <div class="step plate">
+        <div class="n">1</div>
+        <h4>手を選ぶ</h4>
+        <p>制限時間10秒。グー・チョキ・パーに割り当てた技カードから1枚を選びます。</p>
+      </div>
+      <div class="step plate">
+        <div class="n">2</div>
+        <h4>勝てば技が出る</h4>
+        <p>じゃんけんに勝った側の技だけが発動。攻撃力・防御力・タイプ相性からダメージが決まります。</p>
+      </div>
+      <div class="step plate">
+        <div class="n">3</div>
+        <h4>あいこは削り合い</h4>
+        <p>あいこは技が出ず、互いに相殺ダメージ。連続すると倍率が上がるので、粘るほど危険です。</p>
+      </div>
+      <div class="step plate">
+        <div class="n">4</div>
+        <h4>体力を0にする</h4>
+        <p>相手の体力を先に0にすれば勝ち。30ターンを超えたときは、体力の残り割合が多い側の勝ちです。</p>
+      </div>
+    </div>
+    <div class="hands">
+      <div class="hand g"><b>グー</b>もちあげなげ</div>
+      <div class="hand c"><b>チョキ</b>はさみなげ</div>
+      <div class="hand p"><b>パー</b>たいあたり</div>
+    </div>
+  </div>
+</section>
+
+<!-- 収録内容 -->
+<section id="volume">
+  <div class="wrap">
+    <div class="shead">
+      <p class="en">CONTENTS</p>
+      <h2>収録内容</h2>
+      <p>2026年8月時点。今後のアップデートで増やしていきます。</p>
+    </div>
+    <div class="specs">
+      <div class="spec plate"><p class="v">25</p><p class="k">甲虫</p></div>
+      <div class="spec plate"><p class="v">30</p><p class="k">技カード</p></div>
+      <div class="spec plate"><p class="v">5</p><p class="k">章</p></div>
+      <div class="spec plate"><p class="v">20</p><p class="k">ストーリーステージ</p></div>
+      <div class="spec plate"><p class="v">9</p><p class="k">周回クエスト</p></div>
+      <div class="spec plate"><p class="v">17</p><p class="k">ミッション</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ギャラリー -->
+<section id="shots">
+  <div class="wrap">
+    <div class="shead">
+      <p class="en">SCREENSHOTS</p>
+      <h2>画面</h2>
+      <p>開発中のビルド（iPhone サイズ）から撮影したものです。仕様も見た目も変わることがあります。</p>
+    </div>
+    <div class="gal">
+      <figure><img src="shot2.webp" width="603" height="1311" alt="ホーム画面。手持ちの甲虫が3Dで立っている" loading="lazy"><figcaption>ホーム</figcaption></figure>
+      <figure><img src="shot3.webp" width="603" height="1311" alt="バトル画面。制限時間のリングとじゃんけんの3枚" loading="lazy"><figcaption>バトル</figcaption></figure>
+      <figure><img src="shot8.webp" width="603" height="1311" alt="ストーリー画面。第1章「雑木林」の章バナーとステージ一覧" loading="lazy"><figcaption>ストーリー</figcaption></figure>
+      <figure><img src="shot4.webp" width="603" height="1311" alt="図鑑画面。25種の甲虫の枠がレアリティごとに並んでいる" loading="lazy"><figcaption>図鑑</figcaption></figure>
+      <figure><img src="shot5.webp" width="603" height="1311" alt="デッキ編成画面" loading="lazy"><figcaption>デッキ編成</figcaption></figure>
+      <figure><img src="shot6.webp" width="603" height="1311" alt="ガチャの提供割合の画面" loading="lazy"><figcaption>提供割合</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- 課金とガチャ -->
+<section id="billing">
+  <div class="wrap">
+    <div class="shead">
+      <p class="en">IN-APP PURCHASE</p>
+      <h2>課金とガチャについて</h2>
+      <p>隠さずに書いておきます。買う前に必ず読めるようにしています。</p>
+    </div>
+    <div class="wip plate" style="margin-bottom:1.4rem">
+      <p style="font-size:.9rem;color:var(--cream-dim);margin:0">
+        <strong style="color:#ffe9a8">※ アプリ内課金は現在準備中で、まだ購入できません。</strong>
+        以下は公開時の内容を先に書いたものです。ジュエルは、いまはミッションやログインで受け取る無償分だけが使えます。
+      </p>
+    </div>
+    <div class="two">
+      <div class="box plate">
+        <h3>ガチャの提供割合</h3>
+        <table class="rates">
+          <thead><tr><th>レアリティ</th><th>常設ガチャ</th></tr></thead>
+          <tbody>
+            <tr><td class="ur">UR</td><td>1.5%</td></tr>
+            <tr><td class="ssr">SSR</td><td>5.0%</td></tr>
+            <tr><td class="sr">SR</td><td>15.0%</td></tr>
+            <tr><td class="r">R</td><td>38.5%</td></tr>
+            <tr><td>N</td><td>40.0%</td></tr>
+          </tbody>
+        </table>
+        <ul class="notes" style="margin-top:1rem">
+          <li>合計 100.0%。ピックアップ時の個別確率もアプリ内に出します。</li>
+          <li><strong>200連に到達すると UR が確定</strong>します（天井）。あと何回で到達するかは、ガチャ画面に常に表示します。</li>
+          <li><strong>10回引くと、そのうち1枚は SR 以上が確定</strong>します。</li>
+          <li>提供割合はアプリ内の「提供割合」からいつでも確認できます。</li>
+        </ul>
+      </div>
+      <div class="box plate">
+        <h3>お金のこと</h3>
+        <ul class="notes">
+          <li>基本プレイ無料です。課金しなくても、ストーリーと周回クエストは進められます。</li>
+          <li>ジュエル（ゲーム内通貨）には、購入した<strong>有償</strong>分と、配布された<strong>無償</strong>分があります。残高は別々に表示し、<strong>有償分から先に消費</strong>します。</li>
+          <li>デジタルコンテンツのため、原則として返金・交換はできません。詳しくは<a href="/legal/commercial-law.html">特定商取引法に基づく表記</a>をご覧ください。</li>
+          <li>お子さまがお使いの場合は、iOS の「スクリーンタイム」や Android の「Google Play のペアレンタルコントロール」で購入に制限をかけられます。</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 開発状況 -->
+<section id="status">
+  <div class="wrap">
+    <div class="shead">
+      <p class="en">DEVELOPMENT STATUS</p>
+      <h2>まだできていないこと</h2>
+      <p>期待して入れたのに無かった、をなくしたいので先に書きます。</p>
+    </div>
+    <div class="wip plate">
+      <ul>
+        <li>リアルタイム対戦（サーバーが必要なため）</li>
+        <li>フレンド機能・フレンド枠</li>
+        <li>闘技場のオンラインランキング</li>
+        <li>ハード難易度</li>
+        <li>機種変更時のデータ引き継ぎ</li>
+        <li>アプリ内課金の購入処理</li>
+      </ul>
+      <p style="font-size:.86rem;color:var(--cream-dim);margin-top:1.2rem">
+        闘技場は、いまは端末内のCPUが相手です。セーブデータは端末の中だけに保存しているため、
+        アプリを削除すると消えます。上のうちどれから欲しいか、
+        <a href="support.html">ご意見</a>をいただけると順番の参考にします。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="shead">
+      <p class="en">FAQ</p>
+      <h2>よくある質問</h2>
+    </div>
+    <details>
+      <summary>いつ遊べるようになりますか？</summary>
+      <p>いまはテスト配信の段階で、App Store / Google Play にはまだ出していません。公開日が決まったらこのページと配信ストアのリンクを更新します。時期をお約束できる段階ではないので、決まっていないことは決まっていないと書いておきます。</p>
+    </details>
+    <details>
+      <summary>オフラインでも遊べますか？</summary>
+      <p>遊べます。ストーリー・周回クエスト・闘技場・ガチャはすべて端末の中だけで動きます。通信を使うのは、今後リアルタイム対戦とデータ引き継ぎを実装したときだけになります。</p>
+    </details>
+    <details>
+      <summary>子どもに遊ばせても大丈夫ですか？</summary>
+      <p>暴力的な表現や出会い機能はありません。ただしアプリ内課金（ガチャ）を含む予定です。購入は端末側の機能で制限できます。iOS は「設定 → スクリーンタイム → コンテンツとプライバシーの制限 → アプリ内課金」、Android は Google Play の購入時に認証を求める設定をご利用ください。</p>
+    </details>
+    <details>
+      <summary>データはどこに保存されますか？サーバーに送られますか？</summary>
+      <p>端末の中だけに保存され、外部のサーバーには一切送信していません。会員登録もありません。アクセス解析も広告も入れていません。詳しくは<a href="privacy.html">プライバシーポリシー</a>をご覧ください。</p>
+    </details>
+    <details>
+      <summary>機種を変えるとデータは移せますか？</summary>
+      <p>いまは移せません。引き継ぎにはアカウントの仕組みが必要で、まだ実装していないためです。アプリを削除するとデータも消えます。この点は正直にお伝えしておきます。</p>
+    </details>
+    <details>
+      <summary>登場する昆虫は実在のものですか？</summary>
+      <p>実在の種をもとにしていますが、能力値やサイズは遊びやすさを優先して調整しています。図鑑の数値は図鑑としての正確さを保証するものではありません。</p>
+    </details>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="endcta plate">
+    <h2>公開したら、ここでお知らせします</h2>
+    <p>不具合の報告、遊んだ感想、こんな昆虫を出してほしいという要望。どれも歓迎です。</p>
+    <a class="btn" href="support.html">サポート・お問い合わせ</a>
+    <a class="btn ghost" href="https://tsuzukit.com/">ほかのアプリを見る</a>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <nav>
+      <a href="https://tsuzukit.com/">tsuzukit.com</a>
+      <a href="support.html">サポート</a>
+      <a href="privacy.html">プライバシーポリシー</a>
+      <a href="terms.html">利用規約</a>
+      <a href="/legal/commercial-law.html">特定商取引法に基づく表記</a>
+      <a href="https://tsuzukit.com/contact/">お問い合わせ</a>
+    </nav>
+    <p>© 2026 TsuzuKit</p>
+    <p class="trademark">
+      「昆虫大戦 / BEETLE WARS」は個人開発のオリジナル作品です。<br>
+      特定の既存作品・企業とは関係がありません。記載の会社名・製品名は各社の商標または登録商標です。
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
