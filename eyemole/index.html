@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EyeMole - 視線でモグラたたき | 手を使わない、目だけのモグラ叩き</title>
+<meta name="description" content="見つめたモグラにハンマーが落ちる。前面カメラが視線を追いかける、手を使わないモグラたたき EyeMole。ヒヨコを見つめると時間が減る60秒のスコアアタック。iPhone / iPad 向け、無料。">
+<meta name="keywords" content="EyeMole,アイモール,視線,アイトラッキング,モグラたたき,もぐらたたき,ハンズフリー,Face ID,TrueDepth,ゲーム,iOS,iPad,無料">
+
+<link rel="canonical" href="https://tsuzukit.com/eyemole/">
+<meta name="robots" content="index, follow">
+<meta name="author" content="tsuzukit">
+<meta name="theme-color" content="#8fcdf5">
+<meta name="application-name" content="EyeMole">
+<link rel="apple-touch-icon" href="/eyemole/apple-touch-icon.png">
+<link rel="icon" href="/eyemole/apple-touch-icon.png" type="image/png">
+
+<!-- OGP -->
+<meta property="og:title" content="EyeMole - 視線が、ハンマーになる。">
+<meta property="og:description" content="見つめたモグラにハンマーが落ちる、手を使わないモグラたたき。ヒヨコを見つめると時間が減る60秒のスコアアタック。iPhone / iPad 向け、無料。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tsuzukit.com/eyemole/">
+<meta property="og:site_name" content="EyeMole">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://tsuzukit.com/eyemole/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@tsuzuki817">
+<meta name="twitter:creator" content="@tsuzuki817">
+<meta name="twitter:title" content="EyeMole - 視線が、ハンマーになる。">
+<meta name="twitter:description" content="見つめたモグラにハンマーが落ちる、手を使わないモグラたたき。ヒヨコは見ちゃダメ。iPhone / iPad 向け、無料。">
+<meta name="twitter:image" content="https://tsuzukit.com/eyemole/og.jpg">
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoGame",
+  "name": "EyeMole 視線でモグラたたき",
+  "alternateName": "EyeMole",
+  "applicationCategory": "GameApplication",
+  "genre": ["アクション", "カジュアル"],
+  "operatingSystem": "iOS 17.0 以降, iPadOS 17.0 以降",
+  "inLanguage": "ja",
+  "description": "見つめたモグラにハンマーが落ちる、手を使わないモグラたたき。ヒヨコを見つめると時間が減る60秒のスコアアタック。",
+  "image": "https://tsuzukit.com/eyemole/og.jpg",
+  "contentRating": "4+",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "JPY",
+    "availability": "https://schema.org/InStock"
+  },
+  "downloadUrl": "https://apps.apple.com/jp/app/id6797057271",
+  "author": { "@type": "Person", "name": "tsuzukit", "url": "https://tsuzukit.com" },
+  "publisher": { "@type": "Person", "name": "續橋涼" }
+}
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QERPQ1EGLH');
+</script>
+
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8240751277462688"
+    crossorigin="anonymous"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --sky:#8fcdf5; --sky-d:#57a9ec; --sky-l:#c7e7fb;
+  --grass:#79c04a; --grass-d:#5da532;
+  --dirt:#8a5c34; --dirt-d:#3b2616;
+  --orange:#ff8f2a; --orange-d:#e2711a;
+  --ink:#37281c; --ink-soft:#7b6553;
+  --paper:#fffaf1; --card:#ffffff;
+  --line:rgba(55,40,28,.12);
+  --shadow:0 10px 26px rgba(40,60,80,.12);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--paper); color:var(--ink);
+  font-family:"M PLUS Rounded 1c","Hiragino Maru Gothic ProN","Hiragino Sans",sans-serif;
+  line-height:1.9; letter-spacing:.02em; -webkit-font-smoothing:antialiased; overflow-x:hidden;
+}
+img{display:block;max-width:100%;height:auto}
+a{color:var(--orange-d)}
+.wrap{width:min(1060px,92vw);margin-inline:auto}
+
+/* ヘッダー */
+header{position:sticky;top:0;z-index:30;background:rgba(255,250,241,.86);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.hbar{display:flex;align-items:center;gap:1rem;padding:.55rem 0}
+.hbrand{display:flex;align-items:center;gap:.55rem;font-weight:800;font-size:1.05rem;
+  color:var(--ink);text-decoration:none;white-space:nowrap}
+.hbrand img{width:32px;height:32px;border-radius:9px;box-shadow:0 2px 6px rgba(0,0,0,.14)}
+.hnav{margin-left:auto;min-width:0;display:flex;gap:1.1rem;overflow-x:auto;scrollbar-width:none}
+.hnav::-webkit-scrollbar{display:none}
+.hnav a{color:var(--ink-soft);text-decoration:none;font-size:.86rem;font-weight:700;white-space:nowrap}
+.hnav a:hover{color:var(--orange-d)}
+
+/* ヒーロー */
+.hero{position:relative;overflow:hidden;
+  background:linear-gradient(180deg,var(--sky-d) 0%,var(--sky) 58%,#a6d9f7 84%,var(--paper) 100%)}
+.cloud{position:absolute;background:rgba(255,255,255,.8);border-radius:999px;pointer-events:none}
+.cloud::before{content:"";position:absolute;background:inherit;border-radius:999px}
+.cl1{top:52px;left:6%;width:170px;height:48px}
+.cl1::before{top:-26px;left:40px;width:88px;height:64px}
+.cl2{top:150px;right:8%;width:130px;height:40px}
+.cl2::before{top:-22px;left:34px;width:66px;height:52px}
+.hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.72fr);
+  gap:3rem;align-items:center;padding:3.6rem 0 4.4rem}
+.badge-row{display:flex;flex-wrap:wrap;gap:.45rem;margin-bottom:1.1rem}
+.badge{font-size:.75rem;font-weight:800;padding:.3rem .8rem;border-radius:999px;
+  background:rgba(255,255,255,.86);color:#2f6ea4;box-shadow:0 2px 8px rgba(20,60,90,.12)}
+h1{font-size:clamp(3rem,9vw,5rem);font-weight:800;line-height:1;color:#fff;letter-spacing:.01em;
+  text-shadow:0 3px 0 rgba(18,60,88,.32),0 10px 24px rgba(10,40,70,.3)}
+h1 small{display:block;font-size:.24em;font-weight:800;letter-spacing:.22em;margin-top:.9rem;
+  color:#f4fbff;text-shadow:0 2px 6px rgba(10,40,70,.45)}
+.catch{margin:1.2rem 0 .9rem;font-size:clamp(1.25rem,3.6vw,1.75rem);font-weight:800;color:#c8590a;
+  text-shadow:0 2px 0 rgba(255,255,255,.4)}
+.lead{color:#123c58;font-size:1rem;max-width:32em}
+.cta{margin-top:1.8rem;display:flex;flex-wrap:wrap;gap:.7rem;align-items:center}
+.store-btn{display:inline-flex;align-items:center;gap:.7rem;padding:.85rem 1.5rem;border-radius:999px;
+  background:linear-gradient(180deg,#ffa347,var(--orange));color:#fff;text-decoration:none;
+  font-weight:800;box-shadow:0 8px 20px rgba(226,113,26,.38);border:none}
+.store-btn:hover{filter:brightness(1.05)}
+.store-btn svg{width:24px;height:24px;fill:#fff;flex-shrink:0}
+.store-btn .lines{line-height:1.3;text-align:left}
+.store-btn .small{display:block;font-size:.7rem;font-weight:700;opacity:.92}
+.store-btn .big{display:block;font-size:1rem}
+.cta-note{width:100%;font-size:.82rem;color:#25536e}
+.kv{position:relative}
+.kv img{border-radius:26px;box-shadow:0 24px 50px rgba(20,50,80,.34);margin-inline:auto;max-width:340px}
+
+/* セクション */
+section{padding:4rem 0;scroll-margin-top:80px}
+section.tint{background:linear-gradient(180deg,#fff 0%,#f6fbff 100%)}
+.shead{text-align:center;margin-bottom:2.6rem}
+.shead .en{font-size:.72rem;letter-spacing:.3em;color:var(--grass-d);font-weight:800}
+.shead h2{font-size:clamp(1.5rem,4.4vw,2.05rem);font-weight:800;margin-top:.4rem;line-height:1.4}
+.shead p{color:var(--ink-soft);font-size:.94rem;margin-top:.7rem}
+
+/* 特徴 */
+.feats{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem}
+.feat{background:var(--card);border-radius:22px;padding:1.6rem 1.3rem 1.8rem;text-align:center;
+  box-shadow:var(--shadow);border:1px solid var(--line)}
+.feat img{width:70%;margin:0 auto 1.2rem;border-radius:16px;box-shadow:0 10px 22px rgba(20,50,80,.18)}
+.feat .num{font-size:.78rem;font-weight:800;color:var(--grass-d);letter-spacing:.18em}
+.feat h3{font-size:1.15rem;font-weight:800;margin:.5rem 0 .8rem;line-height:1.5}
+.feat p{font-size:.92rem;color:var(--ink-soft);text-align:left}
+
+/* 遊び方 */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.1rem}
+.step{background:var(--card);border-radius:20px;padding:1.4rem 1.2rem;border:1px solid var(--line);
+  box-shadow:var(--shadow)}
+.step .n{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;font-weight:800;
+  color:#fff;background:linear-gradient(180deg,#ffa347,var(--orange));margin-bottom:.8rem}
+.step h4{font-size:1.02rem;font-weight:800;margin-bottom:.45rem}
+.step p{font-size:.88rem;color:var(--ink-soft)}
+
+/* 登場キャラクター */
+.chars{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:1.1rem}
+.char{background:var(--card);border-radius:20px;padding:1.3rem 1.2rem;border:1px solid var(--line);
+  box-shadow:var(--shadow);position:relative;overflow:hidden}
+.char::before{content:"";position:absolute;top:0;left:0;right:0;height:5px;background:var(--c,#8a5c34)}
+.char h4{font-size:1.05rem;font-weight:800;margin-bottom:.35rem}
+.char .tag{font-size:.74rem;font-weight:800;color:#fff;background:var(--c,#8a5c34);
+  border-radius:999px;padding:.12rem .7rem;display:inline-block;margin-bottom:.6rem}
+.char p{font-size:.87rem;color:var(--ink-soft)}
+
+/* 2カラム（きょうの挑戦・ランキング） */
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+.duo .panel{background:var(--card);border-radius:22px;border:1px solid var(--line);
+  box-shadow:var(--shadow);padding:1.8rem 1.6rem;display:flex;gap:1.4rem;align-items:center}
+.duo .panel img{width:132px;flex:0 0 auto;border-radius:14px;box-shadow:0 8px 18px rgba(20,50,80,.18)}
+.duo h3{font-size:1.1rem;font-weight:800;margin-bottom:.5rem}
+.duo p{font-size:.9rem;color:var(--ink-soft)}
+
+/* 仕様・お金・プライバシー */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:1.6rem}
+.box{background:var(--card);border-radius:22px;border:1px solid var(--line);box-shadow:var(--shadow);
+  padding:1.7rem 1.6rem}
+.box h3{font-size:1.08rem;font-weight:800;margin-bottom:.9rem}
+.notes{list-style:none;font-size:.9rem;color:var(--ink-soft)}
+.notes li{padding-left:1.2em;position:relative;margin-bottom:.55rem}
+.notes li::before{content:"●";position:absolute;left:0;font-size:.6em;top:.75em;color:var(--grass)}
+.notes li:last-child{margin-bottom:0}
+.spec-table{width:100%;border-collapse:collapse;font-size:.9rem}
+.spec-table th,.spec-table td{padding:.5rem .2rem;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.spec-table th{width:8.5em;color:var(--ink-soft);font-weight:700}
+.spec-table tr:last-child th,.spec-table tr:last-child td{border-bottom:none}
+
+/* ギャラリー */
+.gal{display:flex;gap:1rem;overflow-x:auto;padding:.4rem .2rem 1.4rem;scroll-snap-type:x mandatory}
+.gal figure{flex:0 0 auto;width:min(220px,62vw);scroll-snap-align:center}
+.gal img{border-radius:16px;box-shadow:0 10px 24px rgba(20,50,80,.2)}
+.gal figcaption{margin-top:.6rem;font-size:.8rem;color:var(--ink-soft);text-align:center}
+
+/* FAQ */
+details{background:var(--card);border:1px solid var(--line);border-radius:16px;margin-bottom:.7rem;
+  box-shadow:0 4px 12px rgba(40,60,80,.06)}
+summary{cursor:pointer;padding:1rem 1.2rem;font-weight:800;font-size:.96rem;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"Q";color:var(--orange);font-weight:800;margin-right:.6rem}
+details[open] summary{border-bottom:1px solid var(--line)}
+details p{padding:1rem 1.2rem;font-size:.9rem;color:var(--ink-soft)}
+
+/* 末尾CTA */
+.endcta{position:relative;overflow:hidden;text-align:center;padding:3.4rem 1.4rem 3.8rem;
+  border-radius:28px;background:linear-gradient(180deg,#3f92d8,#63b1ef 56%,var(--grass) 56%,var(--grass-d));
+  box-shadow:var(--shadow)}
+.endcta h2{font-size:clamp(1.35rem,4vw,1.9rem);font-weight:800;color:#fff;
+  text-shadow:0 3px 10px rgba(10,40,70,.35)}
+.endcta p{color:#fff;font-size:.94rem;margin:.9rem auto 1.6rem;max-width:32em;
+  text-shadow:0 2px 8px rgba(10,40,70,.4)}
+.endcta .store-btn{background:#fff;color:var(--orange-d);box-shadow:0 8px 20px rgba(0,0,0,.18)}
+.endcta .store-btn svg{fill:var(--orange-d)}
+.ghost{display:inline-block;margin-left:.6rem;padding:.85rem 1.5rem;border-radius:999px;
+  border:2px solid rgba(255,255,255,.7);color:#fff;text-decoration:none;font-weight:800}
+
+footer{margin-top:3rem;padding:2.4rem 0 3rem;border-top:1px solid var(--line);text-align:center}
+footer nav{display:flex;flex-wrap:wrap;justify-content:center;gap:.4rem 1.3rem;margin-bottom:1.1rem}
+footer a{color:var(--ink-soft);text-decoration:none;font-size:.85rem;font-weight:700}
+footer a:hover{color:var(--orange-d)}
+footer p{font-size:.78rem;color:#9c8b7c}
+.trademark{font-size:.74rem;color:#9c8b7c;margin-top:.7rem;line-height:1.7}
+
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr;gap:2.2rem;padding:2.6rem 0 3.2rem}
+  .kv{order:-1}
+  .kv img{max-width:min(280px,72vw)}
+  .feats{grid-template-columns:1fr}
+  .feat img{width:56%}
+  .steps{grid-template-columns:1fr 1fr}
+  .duo,.two{grid-template-columns:1fr}
+  h1{font-size:clamp(2.6rem,13vw,3.4rem)}
+}
+@media (max-width:760px){
+  .hbar{flex-wrap:wrap;gap:.2rem 1rem;padding:.5rem 0 .35rem}
+  .hnav{margin-left:0;width:100%;gap:1rem;padding:.1rem 0 .2rem}
+}
+@media (max-width:520px){
+  .steps{grid-template-columns:1fr}
+  .duo .panel{flex-direction:column;text-align:center}
+  .duo .panel img{width:150px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap hbar">
+    <a class="hbrand" href="/eyemole/">
+      <img src="icon.webp" alt="" width="32" height="32">EyeMole
+    </a>
+    <nav class="hnav">
+      <a href="#feature">特徴</a>
+      <a href="#howto">遊び方</a>
+      <a href="#chars">登場キャラ</a>
+      <a href="#daily">きょうの挑戦</a>
+      <a href="#spec">動作環境</a>
+      <a href="#faq">よくある質問</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ヒーロー -->
+<div class="hero">
+  <div class="cloud cl1"></div>
+  <div class="cloud cl2"></div>
+  <div class="wrap hero-grid">
+    <div>
+      <div class="badge-row">
+        <span class="badge">iPhone / iPad</span>
+        <span class="badge">無料</span>
+        <span class="badge">Face ID 世代の前面カメラが必要</span>
+      </div>
+      <h1>EyeMole<small>視線でモグラたたき</small></h1>
+      <p class="catch">視線が、ハンマーになる。</p>
+      <p class="lead">
+        指はいりません。前面カメラがあなたの目を追いかけて、見つめた穴にハンマーが落ちます。
+        でも穴から出てくるのはモグラだけじゃない。ヒヨコを見つめてしまうと、その分だけ時間が減ります。
+        確かめるのも叩くのも同じ視線という、ちょっと意地の悪い60秒。
+      </p>
+      <div class="cta">
+        <a class="store-btn" href="https://apps.apple.com/jp/app/id6797057271" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.05 12.53c-.02-2.2 1.8-3.26 1.88-3.31-1.03-1.5-2.62-1.71-3.19-1.73-1.36-.14-2.65.8-3.34.8-.69 0-1.75-.78-2.87-.76-1.48.02-2.84.86-3.6 2.18-1.53 2.66-.39 6.6 1.1 8.76.73 1.06 1.6 2.25 2.74 2.2 1.1-.04 1.52-.71 2.85-.71 1.33 0 1.7.71 2.86.69 1.18-.02 1.93-1.08 2.65-2.14.83-1.22 1.18-2.41 1.2-2.47-.03-.01-2.3-.88-2.32-3.51zM14.9 5.9c.6-.74 1.01-1.76.9-2.78-.87.04-1.93.58-2.56 1.31-.56.65-1.06 1.69-.93 2.69.97.07 1.97-.49 2.59-1.22z"/></svg>
+          <span class="lines"><span class="small">App Store で</span><span class="big">ダウンロード</span></span>
+        </a>
+        <p class="cta-note">
+          目の動きで操作するので、Face ID が使える iPhone か、A12 以降の iPad が必要です。指では遊べません。
+        </p>
+      </div>
+    </div>
+    <div class="kv">
+      <img src="shot1.webp" width="621" height="1350" fetchpriority="high"
+           alt="EyeMole のプレイ画面。草原に空いた6つの穴からモグラが顔を出し、見つめた穴にハンマーが落ちている">
+    </div>
+  </div>
+</div>
+
+<!-- 特徴 -->
+<section id="feature">
+  <div class="wrap">
+    <div class="shead">
+      <p class="en">FEATURES</p>
+      <h2>見ることが、武器であり罠</h2>
+      <p>視線だけで完結する遊びにしたら、こういうゲームになりました。</p>
+    </div>
+    <div class="feats">
+      <article class="feat">
+        <img src="shot1.webp" width="621" height="1350" loading="lazy"
+             alt="モグラを見つめるとハンマーが落ちて得点が入る画面">
+        <p class="num">01</p>
+        <h3>手を使わない。<br>目だけで、たたく。</h3>
+        <p>前面カメラが視線を追い、見つめた穴にハンマーが落ちます。タップもスワイプもありません。寝ころんだままでも、料理の途中で手がふさがっていても遊べます。</p>
+      </article>
+      <article class="feat">
+        <img src="shot2.webp" width="621" height="1350" loading="lazy"
+             alt="穴から出てきたヒヨコを見つめてしまい、時間が減っている画面">
+        <p class="num">02</p>
+        <h3>ヒヨコは<br>見ちゃダメ。</h3>
+        <p>穴の中身を確かめるには見るしかない。でも見続けたら叩いてしまって時間が減ります。ちらっと見て、見分けて、すぐ目を引き剥がす。注意の配り方そのものが腕前になります。</p>
+      </article>
+      <article class="feat">
+        <img src="shot3.webp" width="621" height="1350" loading="lazy"
+             alt="兜をかぶったモグラを長く見つめて叩こうとしている画面">
+        <p class="num">03</p>
+        <h3>兜モグラは<br>長く見つめろ。</h3>
+        <p>兜をかぶったモグラは一瞬では倒せません。張りついている間、ほかの穴は見られない。どこを捨てて、どこに目を置き続けるか。60秒のあいだ、その判断を何度も迫られます。</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 遊び方 -->
+<section id="howto" class="tint">
+  <div class="wrap">
+    <div class="shead">
+      <p class="en">HOW TO PLAY</p>
+      <h2>遊び方</h2>
+      <p>覚えることは4つ。はじめの調整が終われば、あとは見るだけです。</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="n">1</div>
+        <h4>視線を合わせる</h4>
+        <p>画面に現れる5つの光を、順番に見つめるだけ。これで狙いのずれが直ります。</p>
+      </div>
+      <div class="step">
+        <div class="n">2</div>
+        <h4>モグラを見つめる</h4>
+        <p>顔を出したモグラを見つめるとハンマーが落ちて100点。続けて当てるとコンボが伸びます。</p>
+      </div>
+      <div class="step">
+        <div class="n">3</div>
+        <h4>ヒヨコは見逃す</h4>
+        <p>叩くと時間が減ります。見分けて目を離せば、逃がしたぶんがボーナスになります。</p>
+      </div>
+      <div class="step">
+        <div class="n">4</div>
+        <h4>60秒で稼ぐ</h4>
+        <p>制限時間は60秒。自己ベストを更新して、Game Center のランキングに載せにいきます。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 登場キャラクター -->
+<section id="chars">
+  <div class="wrap">
+    <div class="shead">
+      <p class="en">CHARACTERS</p>
+      <h2>穴から出てくるもの</h2>
+      <p>5種類。それぞれ、目の使い方が変わります。</p>
+    </div>
+    <div class="chars">
+      <article class="char" style="--c:#8a5c34">
+        <span class="tag">+100点</span>
+        <h4>モグラ</h4>
+        <p>基本の相手。見つめれば落ちるハンマーで得点になり、続けて当てるとコンボが伸びます。</p>
+      </article>
+      <article class="char" style="--c:#f2b705">
+        <span class="tag">見ちゃダメ</span>
+        <h4>ヒヨコ</h4>
+        <p>叩くと時間が減ります。見分けて見逃せばボーナス。確かめる目と、叩く目が同じなのが厄介です。</p>
+      </article>
+      <article class="char" style="--c:#c99a1e">
+        <span class="tag">高得点</span>
+        <h4>金モグラ</h4>
+        <p>あなたの視線を読んで、いま見ていない側に湧きます。気づいたときには引っこんでいることも。</p>
+      </article>
+      <article class="char" style="--c:#7b9fd4">
+        <span class="tag">0点</span>
+        <h4>ピカモグラ</h4>
+        <p>反射で光って視線を吸い寄せる囮。叩いても点になりません。光ったほうを見ない訓練になります。</p>
+      </article>
+      <article class="char" style="--c:#5b6b7c">
+        <span class="tag">長押し</span>
+        <h4>兜モグラ</h4>
+        <p>兜のせいで一撃では倒れず、長く見つめる必要があります。その間、よその穴は見られません。</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- きょうの挑戦・ランキング -->
+<section id="daily" class="tint">
+  <div class="wrap">
+    <div class="shead">
+      <p class="en">DAILY &amp; RANKING</p>
+      <h2>毎日1回、世界と同じ盤面で</h2>
+      <p>運の差をなくしたら、目の差だけが残りました。</p>
+    </div>
+    <div class="duo">
+      <div class="panel">
+        <img src="shot4.webp" width="621" height="1350" loading="lazy"
+             alt="タイトル画面。はじめるボタンと、きょうの挑戦ボタンが並んでいる">
+        <div>
+          <h3>きょうの挑戦</h3>
+          <p>1日1回の一発勝負。その日は世界中の全員が同じ順番、同じ場所からモグラが出てきます。回数は Pro でも増やしません。課金で有利を買えたら、競う意味がなくなるので。</p>
+        </div>
+      </div>
+      <div class="panel">
+        <img src="shot5.webp" width="621" height="1350" loading="lazy"
+             alt="Game Center のランキング画面。世界の上位10人と自分の順位が並んでいる">
+        <div>
+          <h3>世界ランキング</h3>
+          <p>スコアは Game Center のランキングに載ります。順位の確認も、もちろん視線だけでできます。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 画面 -->
+<section id="shots">
+  <div class="wrap">
+    <div class="shead">
+      <p class="en">SCREENSHOTS</p>
+      <h2>画面</h2>
+    </div>
+    <div class="gal">
+      <figure><img src="shot1.webp" width="621" height="1350" loading="lazy" alt="プレイ画面。見つめたモグラにハンマーが落ちる"><figcaption>目だけで、たたく</figcaption></figure>
+      <figure><img src="shot2.webp" width="621" height="1350" loading="lazy" alt="ヒヨコを叩いてしまい時間が減った画面"><figcaption>ヒヨコは見ちゃダメ</figcaption></figure>
+      <figure><img src="shot3.webp" width="621" height="1350" loading="lazy" alt="兜モグラが出ている画面"><figcaption>兜モグラ</figcaption></figure>
+      <figure><img src="shot4.webp" width="621" height="1350" loading="lazy" alt="タイトル画面ときょうの挑戦"><figcaption>きょうの挑戦</figcaption></figure>
+      <figure><img src="shot5.webp" width="621" height="1350" loading="lazy" alt="ランキング画面"><figcaption>ランキング</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- 動作環境・お金のこと -->
+<section id="spec">
+  <div class="wrap">
+    <div class="shead">
+      <p class="en">REQUIREMENTS</p>
+      <h2>遊ぶ前に知っておいてほしいこと</h2>
+      <p>買ってから気づく、をなくしたいので先に書いておきます。</p>
+    </div>
+    <div class="two">
+      <div class="box">
+        <h3>動作環境と、うまく遊ぶコツ</h3>
+        <table class="spec-table">
+          <tr><th>対応端末</th><td>フェイストラッキングに対応した iPhone と iPad。Face ID 搭載の iPhone、または A12 以降の iPad が必要です</td></tr>
+          <tr><th>OS</th><td>iOS 17.0 以降 / iPadOS 17.0 以降</td></tr>
+          <tr><th>権限</th><td>カメラの許可</td></tr>
+          <tr><th>距離</th><td>画面から30〜40cmくらい</td></tr>
+          <tr><th>明るさ</th><td>顔に光が当たる明るさがあると安定します</td></tr>
+          <tr><th>年齢</th><td>4+</td></tr>
+        </table>
+        <ul class="notes" style="margin-top:1rem">
+          <li>狙いがずれてきたら、タイトルの視線を合わせ直すからいつでもやり直せます。</li>
+          <li>逆光や前髪、マスクで顔が隠れていると読みづらくなります。顔全体がカメラに映る状態がいちばん安定します。</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>お金のことと、ハート</h3>
+        <ul class="notes">
+          <li>アプリは無料です。広告で運営しています。</li>
+          <li>ハートは最大5つ。1回遊ぶと1つ減り、10分で1つ回復します。動画を見ればその場で1つ戻ります。</li>
+          <li>EyeMole Pro は一度きりの支払いで、広告のバナーが消えてハートを気にせず遊べるようになります。</li>
+          <li>購入は端末側でも制限できます。設定のスクリーンタイムから、コンテンツとプライバシーの制限を使ってください。</li>
+          <li>デジタルコンテンツのため、原則として返金や交換はできません。詳しくは<a href="/legal/commercial-law.html">特定商取引法に基づく表記</a>をご覧ください。</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- プライバシー -->
+<section class="tint">
+  <div class="wrap">
+    <div class="shead">
+      <p class="en">PRIVACY</p>
+      <h2>顔の情報は、端末から出ません</h2>
+    </div>
+    <div class="box">
+      <ul class="notes">
+        <li>視線の検出には前面カメラを使いますが、顔の情報はすべて端末の中だけで処理されます。</li>
+        <li>録画も保存も送信もしません。カメラの映像がどこかのサーバーに行くことはありません。</li>
+        <li>会員登録はありません。氏名やメールアドレスを尋ねることもありません。</li>
+        <li>くわしくは<a href="/legal/privacy-policy.html">プライバシーポリシー</a>に書いています。</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="shead">
+      <p class="en">FAQ</p>
+      <h2>よくある質問</h2>
+    </div>
+    <details>
+      <summary>指でも遊べますか。</summary>
+      <p>遊べません。操作は視線だけです。前面カメラで目の動きを読んでいるので、フェイストラッキングに対応していない端末では起動しても遊べません。手持ちの端末が対応しているかは、Face ID が使えるかどうかで見分けられます。</p>
+    </details>
+    <details>
+      <summary>狙ったところに当たりません。</summary>
+      <p>明るい場所で、顔全体がカメラに映る距離に置いてみてください。端末は目から30〜40cm、なるべく動かさずに。逆光や前髪、マスクで顔が隠れていると読みづらくなります。それでもずれるときは、タイトルの視線を合わせ直すからやり直せます。</p>
+    </details>
+    <details>
+      <summary>カメラの映像はどこかに送られますか。</summary>
+      <p>送りません。視線の検出は端末の中だけで完結していて、録画も保存もしていません。カメラの許可は視線を読むためだけに使います。</p>
+    </details>
+    <details>
+      <summary>目が疲れませんか。</summary>
+      <p>1回60秒で終わるようにしてあります。ハートも最大5つなので、続けて遊びすぎない作りです。疲れたと感じたらそこでやめてください。</p>
+    </details>
+    <details>
+      <summary>オフラインでも遊べますか。</summary>
+      <p>遊べます。きょうの挑戦も日付から盤面が決まる作りなので、通信がなくても世界と同じ内容で遊べます。通信を使うのはランキングの送信と広告の読み込みのときだけです。</p>
+    </details>
+    <details>
+      <summary>きょうの挑戦は何が違うのですか。</summary>
+      <p>1日1回だけ挑戦できて、その日は世界中の全員がまったく同じ盤面で遊びます。出てくる順番も場所も同じなので、運の差が出ません。</p>
+    </details>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="endcta">
+    <h2>あなたの目は、たぶんこの日のために鍛えられてきた</h2>
+    <p>まずは60秒。見つめるだけで、モグラが落ちます。</p>
+    <a class="store-btn" href="https://apps.apple.com/jp/app/id6797057271" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.05 12.53c-.02-2.2 1.8-3.26 1.88-3.31-1.03-1.5-2.62-1.71-3.19-1.73-1.36-.14-2.65.8-3.34.8-.69 0-1.75-.78-2.87-.76-1.48.02-2.84.86-3.6 2.18-1.53 2.66-.39 6.6 1.1 8.76.73 1.06 1.6 2.25 2.74 2.2 1.1-.04 1.52-.71 2.85-.71 1.33 0 1.7.71 2.86.69 1.18-.02 1.93-1.08 2.65-2.14.83-1.22 1.18-2.41 1.2-2.47-.03-.01-2.3-.88-2.32-3.51zM14.9 5.9c.6-.74 1.01-1.76.9-2.78-.87.04-1.93.58-2.56 1.31-.56.65-1.06 1.69-.93 2.69.97.07 1.97-.49 2.59-1.22z"/></svg>
+      <span class="lines"><span class="small">App Store で</span><span class="big">ダウンロード</span></span>
+    </a>
+    <a class="ghost" href="https://tsuzukit.com/portfolio/">ほかのアプリを見る</a>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <nav>
+      <a href="https://tsuzukit.com/">tsuzukit.com</a>
+      <a href="/legal/privacy-policy.html">プライバシーポリシー</a>
+      <a href="/legal/terms-of-service.html">利用規約</a>
+      <a href="/legal/commercial-law.html">特定商取引法に基づく表記</a>
+      <a href="https://tsuzukit.com/contact/">お問い合わせ</a>
+    </nav>
+    <p>© 2026 TsuzuKit</p>
+    <p class="trademark">
+      EyeMole は個人開発のオリジナル作品です。<br>
+      記載の会社名・製品名は各社の商標または登録商標です。
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
