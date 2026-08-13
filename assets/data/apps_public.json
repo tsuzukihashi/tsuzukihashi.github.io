@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-07 22:17:46",
-  "total_apps": 72,
+  "generated_at": "2026-08-13 22:36:39",
+  "total_apps": 74,
   "apps": [
     {
       "bundle_id": "com.tsuzuki817.OmoideMap",
@@ -30,14 +30,85 @@
         "写真／ビデオ"
       ],
       "primary_genre": "Travel",
-      "rating": 4.59145,
-      "rating_count": 678,
+      "rating": 4.58589,
+      "rating_count": 681,
       "version": "1.53.0",
       "release_date": "2024-02-25T08:00:00Z",
       "current_version_release_date": "2026-07-26T22:31:13Z",
       "description": "14万ダウンロード突破！\n写真をパズルのように切り取って地図に記録することができるアプリ！\n\n47都道府県を埋めるだけでなく、北海道179市町村、東京都62市区町村のマップもあるからディープなマップを作れちゃう！\n\n主な機能\n□ 日本、アジア、北海道、東京から好きなマップを作ろう！\n□ 都道府県の形に写真を切り取って地図に貼り付けよう！\n□ 友達や家族と一緒に思い出マップを共同編集できるマップリンクでシェアしよう！\n□ 投稿した写真にコメントして振り返ろう！\n\nひとりでも複数人でも楽しめるよ！\n\n\n□ その他情報\n・利用規約\nhttps://tsuzukit.com/legal/terms-of-service.html\n\n・プライバシーポリシー\nhttps://tsuzukit.com/legal/privacy-policy.html\n\n・特定商取引法に基づく表示\nhttps://tsuzukit.com/legal/commercial-law.html",
       "release_notes": "【v1.53.0】\n\n2つの県のマップを追加しました！\n\n■ 鳥取県（19市町村）\n鳥取砂丘や大山、水木しげるロードなど鳥取の思い出を地図に残せます。\n\n■ 島根県（19市町村）\n出雲大社や松江城、石見銀山など島根の思い出を地図に残せます。\n\nいつもご利用いただきありがとうございます！",
       "content_advisory_rating": "17+",
+      "minimum_os_version": "17.0",
+      "developer_name": "Ryo Tsudukihashi",
+      "seller_name": "TsuzuKit"
+    },
+    {
+      "bundle_id": "com.tsuzukit.Monivo",
+      "name": "Monivo 声で起こし合うアラーム",
+      "app_store_url": "https://apps.apple.com/jp/app/monivo-%E5%A3%B0%E3%81%A7%E8%B5%B7%E3%81%93%E3%81%97%E5%90%88%E3%81%86%E3%82%A2%E3%83%A9%E3%83%BC%E3%83%A0/id6793626358?uo=4",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/f2/24/a7/f224a7fb-0de5-ba14-d2bb-6c228c82600f/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/dc/39/30/dc393050-ff10-9c0f-806c-65ea2254b528/01_hero.png/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/bf/fd/fb/bffdfb78-8169-93cf-d0b6-0cdfe213a2a9/02_alarmedit.png/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/74/7f/87/747f878a-65f0-8bf6-2eed-076af992f0c1/03_record.png/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/6e/84/93/6e8493ff-d6f6-5302-658a-52d1bbe4b88a/04_global.png/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/db/b1/ba/dbb1ba85-3657-03a3-988e-56c4f8eb3f23/05_alarm.png/626x0w.webp"
+      ],
+      "ipad_screenshots": [],
+      "price": "無料",
+      "currency": "JPY",
+      "genres": [
+        "ユーティリティ",
+        "ソーシャルネットワーキング"
+      ],
+      "primary_genre": "Utilities",
+      "rating": 0,
+      "rating_count": 0,
+      "version": "1.0",
+      "release_date": "2026-08-13T07:00:00Z",
+      "current_version_release_date": "2026-08-13T07:00:09Z",
+      "description": "めざまし時計の音で起きるのは、もう終わり。\nMonivo（モニボ）は、だいすきな人の声で毎朝めざめられる、ボイスアラーム＆リマインダーです。\n\n恋人や友達が録音した15秒の声が、あなたの目覚ましやリマインダーになります。「おはよう」も「いってらっしゃい」も、大切な人の声で。\n\n■ 声で起こし合う\n15秒の声を録音して、フレンドに送るだけ。届いた声はそのままアラーム音にできます。誰の声で起きるかは、自分でえらべます。\n\n■ フレンドがいなくても大丈夫\n「世界の声」から、世界中のユーザーが録音したすてきな声がランダムで届きます。時間帯やタグにあわせてマッチングするので、毎朝ちがう声で目覚められます。\n\n■ おねだりできる\n「明日は絶対に遅刻できないから、激しめの声で起こして！」——シチュエーションにあわせて、ほしい声をフレンドにリクエストできます。\n\n■ バックグラウンドでも確実に鳴る\nAlarmKitを使っているので、アプリを閉じていてもマナーモードでも、指定した時刻にしっかり鳴ります。\n\n■ とっておきの声はコレクションに\nお気に入りの声は保存して、いつでもアラームに固定できます。\n\n【無料でできること】\n・声の録音と送受信\n・フレンド追加（ID検索・QRコード）\n・グローバルの声でアラーム\n・ボイスの保存 最大5件\n\n【プレミアム（月額／年額）】\n・ボイスの保存 最大300件\n・録音時間が30秒まで\n・広告の完全非表示\n・4種類のテーマ（ダーク・グリーン・パープル）\n\nだいすきな人の声で、朝がやさしくなる。\nMonivoで、声のあるくらしをはじめよう。\n\n―――\n・利用規約: https://monivo-pj.web.app/terms\n・プライバシーポリシー: https://monivo-pj.web.app/privacy",
+      "release_notes": null,
+      "content_advisory_rating": "4+",
+      "minimum_os_version": "26.0",
+      "developer_name": "Ryo Tsudukihashi",
+      "seller_name": "TsuzuKit"
+    },
+    {
+      "bundle_id": "com.tsuzukit.eyemole",
+      "name": "EyeMole 視線でモグラたたき",
+      "app_store_url": "https://apps.apple.com/jp/app/eyemole-%E8%A6%96%E7%B7%9A%E3%81%A7%E3%83%A2%E3%82%B0%E3%83%A9%E3%81%9F%E3%81%9F%E3%81%8D/id6797057271?uo=4",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/52/17/05/521705f4-cd4a-56a8-3865-ae597f904b49/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e0/d8/57/e0d85747-c898-d65b-e374-e274a6e6dfc7/01_hands_free.png/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/77/5c/09/775c099c-a9fe-a324-7978-11f0baf6618d/02_chick.png/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b7/c4/60/b7c4607d-5175-58bb-5e69-4cc5b4d4e1fa/03_boss.png/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/17/42/ab/1742ab5e-e320-ed7b-83e5-7a0226dcb61b/04_daily.png/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/73/df/f6/73dff627-6db9-f264-7054-cdbd68dc613d/05_ranking.png/626x0w.webp"
+      ],
+      "ipad_screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d9/89/94/d9899409-6a38-2b2d-b223-4b9d6f751042/ipad_01_hands_free.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/47/0b/87/470b8767-2d17-731d-2384-bcb8587d3f28/ipad_02_chick.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/06/2f/d0/062fd00e-e172-608b-7c99-dd84207602f7/ipad_03_boss.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a4/b6/0c/a4b60ce1-6f13-ad17-403e-b5374515e3c0/ipad_04_daily.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/6e/ef/50/6eef50cd-ae87-2526-383c-3f6417f10d09/ipad_05_ranking.png/360x480bb.jpg"
+      ],
+      "price": "無料",
+      "currency": "JPY",
+      "genres": [
+        "ゲーム",
+        "アクション",
+        "カジュアル"
+      ],
+      "primary_genre": "Games",
+      "rating": 0,
+      "rating_count": 0,
+      "version": "1.0.1",
+      "release_date": "2026-08-10T07:00:00Z",
+      "current_version_release_date": "2026-08-11T15:30:28Z",
+      "description": "手を使わない！目だけで遊ぶ。\n\n視線が、ハンマーになる。\n\nEyeMoleは、目だけであそぶモグラたたき。前面カメラ(Face ID / TrueDepth)があなたの視線を追いかけ、見つめたモグラにハンマーが落ちます。タップもスワイプも不要。ただ、見るだけ。\n\n■ 見ることが、武器であり罠\n確認するのも、攻撃するのも、同じ「見る」。穴からヒヨコが出てきたら——見つめすぎると叩いてしまい、時間を失います。ちらっと見て、見分けて、すぐ目を引き剥がす。あなたの「注意」そのものがゲームになります。\n\n■ 登場キャラクター\n・モグラ: 見つめてたたく。+100とコンボ\n・ヒヨコ: 見つめちゃダメ！叩くと時間が減る。見分けて見逃せばボーナス\n・金モグラ: あなたの視線を読んで死角に湧く高得点モグラ\n・ピカモグラ: 反射で視線を吸う光る囮。叩いても0点\n\n■ 60秒のスコアアタック\n連続正解でコンボを繋げ、自己ベストを更新。Game Centerの世界ランキングも——もちろん視線だけで操作できます。\n\n■ 必要なもの\n・フェイストラッキング対応のiPhoneまたはiPad(Face ID搭載機、またはA12以降のiPad)。指ではあそべません\n・カメラの許可。顔の情報はすべて端末の中だけで処理され、録画・保存・送信は一切しません\n・明るい部屋と、画面から30〜40cmの距離。5点キャリブレーションで狙いが合います\n\nハート制(最大5つ、10分で1回復)であそべます。動画を見るとすぐに1つ回復。アプリは無料、広告で運営されています。\n\nあなたの目は、生まれた時からこの日のために鍛えられてきた——たぶん。",
+      "release_notes": "・兜モグラを追加しました。倒すには長く見つめる必要があります。その間、よその穴は見られません。\n・きょうの挑戦を追加しました。毎日1回、世界中の全員が同じ盤面で競います。\n・EyeMole Pro(買い切り)を追加しました。広告が消えて、ハートを気にせず遊べます。\n・iPadで地面の端が見えていたのを直しました。",
+      "content_advisory_rating": "4+",
       "minimum_os_version": "17.0",
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit"
@@ -68,8 +139,8 @@
         "エンターテインメント"
       ],
       "primary_genre": "Health & Fitness",
-      "rating": 4.11531,
-      "rating_count": 529,
+      "rating": 4.11402,
+      "rating_count": 535,
       "version": "2.14.0",
       "release_date": "2026-02-26T08:00:00Z",
       "current_version_release_date": "2026-08-05T18:00:34Z",
@@ -81,16 +152,48 @@
       "seller_name": "TsuzuKit"
     },
     {
+      "bundle_id": "com.tsuzukit.Matchbox",
+      "name": "マッチボックス 集中タイマー＆習慣",
+      "app_store_url": "https://apps.apple.com/jp/app/%E3%83%9E%E3%83%83%E3%83%81%E3%83%9C%E3%83%83%E3%82%AF%E3%82%B9-%E9%9B%86%E4%B8%AD%E3%82%BF%E3%82%A4%E3%83%9E%E3%83%BC-%E7%BF%92%E6%85%A3/id6786488863?uo=4",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/3b/7b/05/3b7b05ce-6b2f-fa40-062a-7946dab11804/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/3c/b0/13/3cb013ac-d338-3669-07f2-14846a0166cd/001.png/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b3/54/1e/b3541e3a-4171-2c2c-c069-27bee385469c/002.png/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/68/eb/1c/68eb1cc6-ec9f-062b-9842-e1e187a175e3/003.png/626x0w.webp"
+      ],
+      "ipad_screenshots": [],
+      "price": "無料",
+      "currency": "JPY",
+      "genres": [
+        "仕事効率化",
+        "ヘルスケア／フィットネス"
+      ],
+      "primary_genre": "Productivity",
+      "rating": 0,
+      "rating_count": 0,
+      "version": "1.1.0",
+      "release_date": "2026-07-31T07:00:00Z",
+      "current_version_release_date": "2026-08-07T23:46:58Z",
+      "description": "擦って、灯して、燃え尽きるまで集中する。\n\nマッチボックスは、レトロな「マッチ箱」をモチーフにした集中タイマー＆習慣トラッカーです。マッチを「シュッ」と擦って火を灯し、その一本が燃え尽きるまで集中する——そんな原始的で美しい儀式を、iPhoneの中に再現しました。\n\n■ 擦って着火する集中タイマー\nマッチを側薬にスッと擦ると、着火の手ごたえ（触覚）とともに炎が灯ります。あとはマッチが静かに燃え進む間、目の前のことに集中するだけ。残り時間の数字は、しばらくすると夜に溶けて消えます（画面をタップすればいつでも確認できます）。やめたくなったら、マイクに「フッ」と息を吹きかけて炎を消せます。\n\n■ 気が散るアプリは、箱にしまう「マッチブロック」\n火が点いている間だけ、選んだアプリをブロックできます。スクリーンタイム（Family Controls）連携で、SNSもゲームも「マッチ箱の中」。燃え尽きるか吹き消せば、すぐ戻ります。どのアプリを選んだかが端末の外に送られることはありません。\n\n■ 生きた夜の背景と、それぞれの音\n月夜・雪原・夜の雨・蛍の湖・星月夜・竹林・夜桜・月の海・十五夜・水墨。10の風景はすべて3Dで生きていて——雪は降り、花びらは舞い、蛍は明滅し、ときどき流れ星も走ります。風景ごとに囲炉裏・夜風・雨・波・虫の音などの環境音が自動で寄り添います。\n\n■ 1本のマッチで続ける習慣\n毎日の習慣は、達成するたびにマッチを1本擦って記録。箱のマッチが減り、あなたの努力が“物理的な量”として積み上がっていきます。連続日数（ストリーク）も一目で確認できます。\n\n■ 集めるマッチ箱\n北欧、純喫茶、レトロ、夜桜……ヴィンテージ版画風のマッチ箱デザインを集める楽しさが、あなたの「続ける」を後押しします。\n\n■ 箱を振ると鳴る\nホームでiPhoneを振ると、残りの本数に応じてマッチ箱がカタカタと鳴ります。手のひらの中に、本物のマッチ箱を。\n\n無料で使えます。プレミアム（買い切り／週額・無料トライアルなし）にすると、全マッチ箱デザイン・背景・置き場所の解放、習慣の無制限追加、広告の非表示、詳しい記録が使えます。\n\n■ リンク\n・サポート: https://tsuzukit.com/contact/\n・利用規約: https://tsuzukit.com/legal/terms-of-service.html\n・プライバシーポリシー: https://tsuzukit.com/legal/privacy-policy.html",
+      "release_notes": "・マッチの置き場所（陶の皿／砂の鉢／庭石／真鍮の台）を、実物のような立体感のある3Dモデルに一新しました。\n・マッチを擦る向きを見直しました。頭を奥へ向けて構えるようになり、灯った炎が軸から離れて自然に立ちのぼります。",
+      "content_advisory_rating": "4+",
+      "minimum_os_version": "17.0",
+      "developer_name": "Ryo Tsudukihashi",
+      "seller_name": "TsuzuKit"
+    },
+    {
       "bundle_id": "com.tsuzukit.nokki",
       "name": "nokki - 音楽ジャーナル",
       "app_store_url": "https://apps.apple.com/jp/app/nokki-%E9%9F%B3%E6%A5%BD%E3%82%B8%E3%83%A3%E3%83%BC%E3%83%8A%E3%83%AB/id6790164642?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d5/9d/93/d59d933a-0c29-d2aa-833a-d19ec7ee13f6/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/f0/46/c5/f046c5b0-0eaf-f274-859e-e413a752bb4f/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e8/ef/18/e8ef1897-aab0-0eaf-61a7-b543b9257455/store-01.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a5/00/6d/a5006d4f-6713-d424-74ad-f7dd2e1a9370/store-02.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9e/18/66/9e18666d-c59f-b092-1999-ab3a3e6f14c2/store-03.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/56/fd/be/56fdbeac-2452-c6d0-226d-c5f0d80568bf/store-04.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/3d/cd/9b/3dcd9b08-a592-6a82-1a6a-1004774ee525/store-05.png/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a7/49/f3/a749f340-b22e-4e70-d803-71fd3a6ea9ec/store-01.png/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b9/44/31/b9443169-deb4-3d1b-0991-9add26941e2e/store-02.png/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/9c/c6/fc/9cc6fcbe-c766-1fc4-16b9-6bdc51b6adc2/store-03.png/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fc/de/5b/fcde5b4e-22bc-6c5f-6785-48cf05330187/store-04.png/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b7/8a/9a/b78a9a3f-0b0c-9b84-854c-64cbc270ba75/store-05.png/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/1e/5e/a4/1e5ea408-1190-d8ed-c2f8-38df54fdd138/store-06.png/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c9/cd/d6/c9cdd6d8-637e-abf1-af88-9616d02626a5/store-07.png/626x0w.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -102,11 +205,11 @@
       "primary_genre": "Music",
       "rating": 0,
       "rating_count": 0,
-      "version": "1.0",
-      "release_date": "2026-08-04T18:38:34Z",
-      "current_version_release_date": "2026-08-04T18:38:34Z",
+      "version": "1.0.1",
+      "release_date": "2026-08-04T07:00:00Z",
+      "current_version_release_date": "2026-08-07T22:56:17Z",
       "description": "きいた音楽が、日記になる。\n\nnokki(のっき)は、きょう聴いた曲とそのときの気分を、30秒で記録できる音楽ジャーナルです。\n\n■ つかいかたは3ステップ\n1. 曲をえらぶ(Apple Musicから検索、最近聴いた曲からワンタップでも)\n2. 気分をタップ(うれしい・おだやか・エモい…9種類のパステルから)\n3. ひとことメモ(書いても書かなくても。公開・じぶんだけも選べます)\n\n■ カレンダーに思い出がたまる\n記録は自動でカレンダーに。「この日なに聴いてたっけ?」がすぐ見つかります。\n月末には、あなたの記録からAIがひと月をやさしくふりかえってくれます。\n\n■ 友達とだけ、ゆるく共有\nつながるのは、QRコードで申請しておたがいに承認した友達だけ。フォロワーも足あともありません。\n投稿ごとに「友達まで」「じぶんだけ」を選べて、友達の記録にはいいねとコメントができます。\nだれにも見せない「よるのノート」もあるので、ひとりごとみたいな記録もここに。\n\n■ 曲はその場で試聴できる\n気になった曲は再生ボタンでプレビュー。Apple Music加入者ならフル再生も。\n\n■ アバターは着せかえ式\nかみがた・おようふく・こもの・いろを組み合わせて、じぶんだけの姿に。\n\n■ nokki+(サブスクリプション)\nテーマきせかえ(パープル・ナイト)が使い放題。月額300円/年額2,800円。\n\n毎日の音楽が、あなただけのアルバムになりますように。\n黒猫といっしょに、お待ちしています。\n\n・利用規約: https://nokki-ja.web.app/terms.html\n・プライバシーポリシー: https://nokki-ja.web.app/privacy.html",
-      "release_notes": null,
+      "release_notes": "・友達を招待するQRコードに、nokkiの黒猫が仲間入りしました\n・細かな表示の調整をしました",
       "content_advisory_rating": "4+",
       "minimum_os_version": "17.0",
       "developer_name": "Ryo Tsudukihashi",
@@ -130,8 +233,8 @@
         "ユーティリティ"
       ],
       "primary_genre": "Productivity",
-      "rating": 0,
-      "rating_count": 0,
+      "rating": 3,
+      "rating_count": 2,
       "version": "1.0",
       "release_date": "2026-08-03T07:00:00Z",
       "current_version_release_date": "2026-08-05T00:55:25Z",
@@ -170,36 +273,6 @@
       "current_version_release_date": "2026-08-04T04:57:32Z",
       "description": "あなたの1日も、体も、そして「あなた自身」も——本物そっくりのレシートに印刷するアプリです。\n\n歩いた歩数も、眠った時間も、今日のあなたも。プリンタからスルスルと印字されて出てくる、ちょっと感動するレシート。集めて、眺めて、友だちと交換しよう。\n\nそして、自分でも作れます。推し活の費用も、ペットの出費も——タイトルと項目を入れて写真を1枚そえれば、あなただけのカスタムレシートに。\n\n■ こんなレシートが作れます\n・今日のあなた（歩数・距離・運動・心拍）\n・睡眠（時間・REM・深い睡眠・心拍）\n・ワークアウト（時間・ペース・心拍）\n・この端末（バッテリー・空き容量・稼働時間）\n・あなた自身（交換できる名刺レシート）\n\n■ 楽しいポイント\n・プリンタから印字されて出てくる、リッチな印刷演出\n・本物の紙のような質感、バーコードとQRコード\n・集めたレシートは「紙の束」にしまっておける\n・QRコードでオフライン交換（近くの友だちと、サーバー不要）\n\n■ プレミアム（買い切り／週額・無料トライアルなし）\n・すべての種類のレシートを印刷\n・アーカイブ無制限・共有画像の透かしなし・広告なし\n\n健康データはあなたの端末の中だけで使われ、勝手に送信されません。\n\n■ リンク\n・サポート: https://tsuzukit.com/contact/\n・利用規約: https://tsuzukit.com/legal/terms-of-service.html\n・プライバシーポリシー: https://tsuzukit.com/legal/privacy-policy.html",
       "release_notes": "スナップレシート登場！写真1枚をレトロ印刷のレシートに。写真をタップするとカラー/白黒/切り抜きの6スタイルに切り替わります。無料で使えます。",
-      "content_advisory_rating": "4+",
-      "minimum_os_version": "17.0",
-      "developer_name": "Ryo Tsudukihashi",
-      "seller_name": "TsuzuKit"
-    },
-    {
-      "bundle_id": "com.tsuzukit.Matchbox",
-      "name": "マッチボックス 集中タイマー＆習慣",
-      "app_store_url": "https://apps.apple.com/jp/app/%E3%83%9E%E3%83%83%E3%83%81%E3%83%9C%E3%83%83%E3%82%AF%E3%82%B9-%E9%9B%86%E4%B8%AD%E3%82%BF%E3%82%A4%E3%83%9E%E3%83%BC-%E7%BF%92%E6%85%A3/id6786488863?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c7/2e/47/c72e4731-fe9e-c856-7bc5-46d98c1184e3/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg",
-      "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/3c/b0/13/3cb013ac-d338-3669-07f2-14846a0166cd/001.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b3/54/1e/b3541e3a-4171-2c2c-c069-27bee385469c/002.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/68/eb/1c/68eb1cc6-ec9f-062b-9842-e1e187a175e3/003.png/626x0w.webp"
-      ],
-      "ipad_screenshots": [],
-      "price": "無料",
-      "currency": "JPY",
-      "genres": [
-        "仕事効率化",
-        "ヘルスケア／フィットネス"
-      ],
-      "primary_genre": "Productivity",
-      "rating": 0,
-      "rating_count": 0,
-      "version": "1.0",
-      "release_date": "2026-08-02T07:00:00Z",
-      "current_version_release_date": "2026-08-02T07:00:00Z",
-      "description": "擦って、灯して、燃え尽きるまで集中する。\n\nマッチボックスは、レトロな「マッチ箱」をモチーフにした集中タイマー＆習慣トラッカーです。マッチを「シュッ」と擦って火を灯し、その一本が燃え尽きるまで集中する——そんな原始的で美しい儀式を、iPhoneの中に再現しました。\n\n■ 擦って着火する集中タイマー\nマッチを側薬にスッと擦ると、着火の手ごたえ（触覚）とともに炎が灯ります。あとはマッチが静かに燃え進む間、目の前のことに集中するだけ。残り時間の数字は、しばらくすると夜に溶けて消えます（画面をタップすればいつでも確認できます）。やめたくなったら、マイクに「フッ」と息を吹きかけて炎を消せます。\n\n■ 気が散るアプリは、箱にしまう「マッチブロック」\n火が点いている間だけ、選んだアプリをブロックできます。スクリーンタイム（Family Controls）連携で、SNSもゲームも「マッチ箱の中」。燃え尽きるか吹き消せば、すぐ戻ります。どのアプリを選んだかが端末の外に送られることはありません。\n\n■ 生きた夜の背景と、それぞれの音\n月夜・雪原・夜の雨・蛍の湖・星月夜・竹林・夜桜・月の海・十五夜・水墨。10の風景はすべて3Dで生きていて——雪は降り、花びらは舞い、蛍は明滅し、ときどき流れ星も走ります。風景ごとに囲炉裏・夜風・雨・波・虫の音などの環境音が自動で寄り添います。\n\n■ 1本のマッチで続ける習慣\n毎日の習慣は、達成するたびにマッチを1本擦って記録。箱のマッチが減り、あなたの努力が“物理的な量”として積み上がっていきます。連続日数（ストリーク）も一目で確認できます。\n\n■ 集めるマッチ箱\n北欧、純喫茶、レトロ、夜桜……ヴィンテージ版画風のマッチ箱デザインを集める楽しさが、あなたの「続ける」を後押しします。\n\n■ 箱を振ると鳴る\nホームでiPhoneを振ると、残りの本数に応じてマッチ箱がカタカタと鳴ります。手のひらの中に、本物のマッチ箱を。\n\n無料で使えます。プレミアム（買い切り／週額・無料トライアルなし）にすると、全マッチ箱デザイン・背景・置き場所の解放、習慣の無制限追加、広告の非表示、詳しい記録が使えます。\n\n■ リンク\n・サポート: https://tsuzukit.com/contact/\n・利用規約: https://tsuzukit.com/legal/terms-of-service.html\n・プライバシーポリシー: https://tsuzukit.com/legal/privacy-policy.html",
-      "release_notes": null,
       "content_advisory_rating": "4+",
       "minimum_os_version": "17.0",
       "developer_name": "Ryo Tsudukihashi",
@@ -268,6 +341,36 @@
       "release_notes": null,
       "content_advisory_rating": "4+",
       "minimum_os_version": "17.6",
+      "developer_name": "Ryo Tsudukihashi",
+      "seller_name": "TsuzuKit"
+    },
+    {
+      "bundle_id": "com.tsuzukit.DailySnap",
+      "name": "思い出カレンダー - 1日1枚フォト日記",
+      "app_store_url": "https://apps.apple.com/jp/app/%E6%80%9D%E3%81%84%E5%87%BA%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%80%E3%83%BC-1%E6%97%A51%E6%9E%9A%E3%83%95%E3%82%A9%E3%83%88%E6%97%A5%E8%A8%98/id6757349187?uo=4",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b0/28/73/b028733a-c2c8-43da-5215-fffa24738b59/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/3d/e2/8d/3de28da6-13c8-bb40-00df-92825286d936/6.5inch.001.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/4c/9c/45/4c9c459b-185f-e3e8-552d-a6ff2c8f75d3/6.5inch.002.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/6a/c6/19/6ac619dc-57a3-3593-5d93-15257df866d2/6.5inch.003.jpeg/626x0w.webp"
+      ],
+      "ipad_screenshots": [],
+      "price": "無料",
+      "currency": "JPY",
+      "genres": [
+        "ライフスタイル",
+        "ヘルスケア／フィットネス"
+      ],
+      "primary_genre": "Lifestyle",
+      "rating": 0,
+      "rating_count": 0,
+      "version": "1.1.0",
+      "release_date": "2026-01-07T08:00:00Z",
+      "current_version_release_date": "2026-01-30T16:30:34Z",
+      "description": "DailySnapは、毎日1枚の写真で思い出を残すシンプルなフォト日記アプリです。\n\n【主な機能】\n・1日1枚の写真記録 - 今日の特別な瞬間を1枚に\n・思い出カレンダー - カレンダー形式で写真を一覧表示\n・タイムライン表示 - 時系列で思い出を振り返り\n・1年前の今日通知 - 過去の自分からのプレゼント\n・連続記録カウント - モチベーションを維持\n・ホーム画面ウィジェット - 今日の記録状況を確認\n・スタンプ機能 - 写真がない日もスタンプで気持ちを記録\n・カレンダー連携 - iOSカレンダーの予定を表示\n・予定登録 - 未来の日付にメモと通知を設定\n\n【こんな方におすすめ】\n・日記を続けたいけど文章が苦手な方\n・子供やペットの成長記録をつけたい方\n・毎日の小さな幸せを残したい方\n・シンプルなフォト日記アプリを探している方\n・1年後の自分へプレゼントを残したい方\n\n【無料版】\n・30日間の写真保存\n・7日間のタイムライン表示\n・毎日のリマインダー通知\n\n【プレミアム版】\n・無制限の写真保存\n・1年前の今日通知\n・タイムライン無制限表示\n・スタンプ機能\n・過去日付への写真追加\n・広告なし\n\n1日1枚、思い出を残そう。DailySnapで。\n\n【リンク】\n・サポート: https://tsuzukit.com/contact/\n・利用規約: https://tsuzukit.com/legal/terms-of-service.html\n・プライバシーポリシー: https://tsuzukit.com/legal/privacy-policy.html\n・特定商取引法に基づく表記: https://tsuzukit.com/legal/commercial-law.html",
+      "release_notes": "バグ修正\n\n・初回起動時の起動時広告を非表示に変更\n\nご意見・ご要望はサポートまでお気軽にお問い合わせください。",
+      "content_advisory_rating": "4+",
+      "minimum_os_version": "17.0",
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit"
     },
@@ -439,6 +542,40 @@
       "seller_name": "TsuzuKit"
     },
     {
+      "bundle_id": "com.tsuzuki817.fuchidori",
+      "name": "フチドリ！ ~背景透過と縁取り~",
+      "app_store_url": "https://apps.apple.com/jp/app/%E3%83%95%E3%83%81%E3%83%89%E3%83%AA-%E8%83%8C%E6%99%AF%E9%80%8F%E9%81%8E%E3%81%A8%E7%B8%81%E5%8F%96%E3%82%8A/id6748528617?uo=4",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/34/e2/c0/34e2c037-6a37-88b8-c92f-8bcd23fa8ce1/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/1c/8a/b4/1c8ab470-560c-f320-f702-404454f49c6a/6.9inc.001.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4d/97/de/4d97de6b-3d0b-ebdf-237f-75af4078a33b/6.9inc.002.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/4f/b5/81/4fb581a6-ed4a-dd93-3539-aeb0b6921d3a/6.9inc.003.jpeg/626x0w.webp"
+      ],
+      "ipad_screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/3a/a6/de/3aa6deb2-ec07-af66-9b51-79b3bf4755a2/13inch.001.jpeg/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e7/98/87/e7988754-3b68-62a0-63de-145b43bc7c47/13inch.002.jpeg/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0d/ac/b5/0dacb5ba-27d2-fde0-de26-7ac09d92e9b1/13inch.003.jpeg/360x480bb.jpg"
+      ],
+      "price": "無料",
+      "currency": "JPY",
+      "genres": [
+        "グラフィック／デザイン",
+        "ユーティリティ"
+      ],
+      "primary_genre": "Graphics & Design",
+      "rating": 3.53333,
+      "rating_count": 15,
+      "version": "1.1.0",
+      "release_date": "2025-07-14T07:00:00Z",
+      "current_version_release_date": "2025-07-23T10:14:00Z",
+      "description": "いつもの写真に、魔法のフチドリを！（・θ・）\n『フチドリ！』は、写真を一瞬で切り抜き、好きな色や太さの線で彩れる、創造力を刺激するアプリです。\nさあ、あなただけのアートやステッカーを作りましょう！\n\n【フチドリで、写真はもっと楽しくなる！】:\n\n◆ カラーは無限大: シンプルな白黒から、推し色、ブランドカラーまで。あなたのセンスで自由に選べます。\n\n◆ 太さも自由自在: 細い線でスタイリッシュに、太い線でポップに。印象をガラリと変えられます。\n\n◆ 使い方はアイデア次第: 商品写真を目立たせたり、旅行の思い出をステッカー風にしたり、推しの画像をデコったり！\n\n【もちろん、プライバシーは鉄壁です】:\n\n○ 写真は外部に送信しません: 全ての処理はスマホ内で完結。あなたのプライバシーは完全に守られます。\n\n○ いつでもどこでもオフライン: 通信量を気にせず、飛行機の中でもサクサク軽快に動作します。\n\n【3ステップで完成！】:\n\n写真を選ぶと、賢いオンデバイス技術が瞬時に背景を切り抜き！\n\nカラーと太さを選んで、最高のフチドリをデザイン！\n\n保存ボタンをタップ！背景透過PNGですぐに使える（・θ・）",
+      "release_notes": "多言語対応と軽微な不具合の修正を行いました（・θ・）",
+      "content_advisory_rating": "4+",
+      "minimum_os_version": "17.0",
+      "developer_name": "Ryo Tsudukihashi",
+      "seller_name": "TsuzuKit"
+    },
+    {
       "bundle_id": "com.tsuzuki817.pipcounter",
       "name": "ながらカウンター ~別のアプリを使っていてもカウントできる~",
       "app_store_url": "https://apps.apple.com/jp/app/%E3%81%AA%E3%81%8C%E3%82%89%E3%82%AB%E3%82%A6%E3%83%B3%E3%82%BF%E3%83%BC-%E5%88%A5%E3%81%AE%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%84%E3%81%A6%E3%82%82%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%81%A7%E3%81%8D%E3%82%8B/id1644376109?uo=4",
@@ -469,6 +606,42 @@
       "release_notes": "誤って広告をタップしないように修正を行いました！\nまた、SDKの更新を行いました！\n\n引き続きよろしくお願いいたしますm(_ _)m",
       "content_advisory_rating": "4+",
       "minimum_os_version": "15.0",
+      "developer_name": "Ryo Tsudukihashi",
+      "seller_name": "TsuzuKit"
+    },
+    {
+      "bundle_id": "com.tsuzuki817.LetterBox",
+      "name": "言の葉箱 〜大切な手紙を簡単に記録〜",
+      "app_store_url": "https://apps.apple.com/jp/app/%E8%A8%80%E3%81%AE%E8%91%89%E7%AE%B1-%E5%A4%A7%E5%88%87%E3%81%AA%E6%89%8B%E7%B4%99%E3%82%92%E7%B0%A1%E5%8D%98%E3%81%AB%E8%A8%98%E9%8C%B2/id6749537777?uo=4",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/82/95/f3/8295f3cc-d094-690c-e71c-0c6ec70c77a3/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/8f/82/9d/8f829d15-9c26-36b7-4b2a-6f4e110f2dce/6.9inch.001.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/30/36/ce/3036ceba-f1cc-2958-71f2-46117a6142f2/6.9inch.002.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0c/14/3a/0c143ad2-a290-145b-f464-b25e041d226d/6.9inch.003.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/43/84/da/4384da95-07cb-41ef-6c3e-ffd79eafd15d/6.9inch.004.jpeg/626x0w.webp"
+      ],
+      "ipad_screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/75/42/aa/7542aa4b-c699-8a0b-fda1-56ca752ef82e/13inch.001.jpeg/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/df/2d/67/df2d67b2-8ed1-35ca-8357-1b32e3e31387/13inch.002.jpeg/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f1/b4/cb/f1b4cb53-2139-e25f-1e88-7bbdccfbca89/13inch.003.jpeg/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a4/cb/e8/a4cbe858-2003-40fa-8282-a96fc217823c/13inch.004.jpeg/360x480bb.jpg"
+      ],
+      "price": "無料",
+      "currency": "JPY",
+      "genres": [
+        "ユーティリティ",
+        "仕事効率化"
+      ],
+      "primary_genre": "Utilities",
+      "rating": 1,
+      "rating_count": 1,
+      "version": "1.0",
+      "release_date": "2025-08-28T07:00:00Z",
+      "current_version_release_date": "2025-08-28T13:34:16Z",
+      "description": "「あの時もらった手紙、どこにしまったかな…？」\n\n『手紙箱』は、そんなあなたの大切な思い出を、永遠に色褪せない宝物に変えるアプリです。\nかさばる手紙やハガキを写真に撮るだけで、いつでも、どこでも、あの日の言葉を読み返すことができます。\n\n■ 簡単スキャンで、すっきり整理\nたった数タップで、大切な手紙をデータとして保存。物理的な保管場所に悩むことなく、思い出をスマートに整理整頓できます。もう「捨てられない」と悩む必要はありません。\n\n■ 探したい言葉が、すぐに見つかる\n独自の文字認識（OCR）技術で、写真に写った手書きの文字もテキスト化。\n差出人はもちろん、「ありがとう」「おめでとう」といったキーワードで、思い出のメッセージを瞬時に検索できます。\n\n■ カレンダーで思い出を振り返る\n「いつ、誰から」もらったかを記録し、カレンダーで表示。記念日や誕生日にもらった手紙を辿るなど、あなただけのライフログとしても楽しめます。\n\nさあ、あなただけのかけがえのない宝箱を作りましょう。\n\n□ その他情報\n・利用規約\nhttps://tsuzuki817.com/legal/terms-of-service.html\n\n・プライバシーポリシー\nhttps://tsuzuki817.com/legal/privacy-policy.html\n\n・特定商取引法に基づく表示\nhttps://tsuzuki817.com/legal/commercial-law.html",
+      "release_notes": null,
+      "content_advisory_rating": "4+",
+      "minimum_os_version": "17.0",
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit"
     },
@@ -538,6 +711,72 @@
       "seller_name": "TsuzuKit"
     },
     {
+      "bundle_id": "com.tsuzuki817.pi",
+      "name": "π ~ Pi　円周率を楽しむアプリ",
+      "app_store_url": "https://apps.apple.com/jp/app/%CF%80-pi-%E5%86%86%E5%91%A8%E7%8E%87%E3%82%92%E6%A5%BD%E3%81%97%E3%82%80%E3%82%A2%E3%83%97%E3%83%AA/id6566185298?uo=4",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/1a/e4/b4/1ae4b436-b7c4-1ebb-6da8-5a92920289a6/AppIcon-0-0-1x_U007epad-0-P3-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/18/a3/9a/18a39adb-6f88-cb34-2289-d2ac40ee0015/1effe110-615e-46fb-95e4-1ff2c4d55669_6.5inch.001.png/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e5/ae/3b/e5ae3b09-c570-e2d7-d3ac-63e8b76e0008/fc0de15c-bcc6-4992-8cea-3aaa642c6830_6.5inch.002.png/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/6d/d0/4a/6dd04a7b-8ad9-2be9-6eea-eb7533ba5b4d/d333e218-22b8-4d62-8025-aac66aae9d10_6.5inch.003.png/626x0w.webp"
+      ],
+      "ipad_screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/5e/86/02/5e860264-87cd-e0a4-9f91-a0745594afc1/01c48c59-da75-4b4b-9124-ce955eca6083_12.9inch.001.png/576x768bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d4/07/13/d407137c-0b5a-0670-1998-d3d1ec8caa55/d3fe0da3-dcef-4950-a53d-fe36f17b5c35_12.9inch.002.png/576x768bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a1/66/13/a16613c5-aab6-e157-546e-fe79aa37470b/a13f9882-a173-485a-9829-fe6e5b84fc81_12.9inch.003.png/576x768bb.png"
+      ],
+      "price": "無料",
+      "currency": "JPY",
+      "genres": [
+        "教育",
+        "ユーティリティ"
+      ],
+      "primary_genre": "Education",
+      "rating": 5,
+      "rating_count": 1,
+      "version": "1.2.0",
+      "release_date": "2024-08-02T07:00:00Z",
+      "current_version_release_date": "2024-08-04T11:08:14Z",
+      "description": "このアプリは、数学を愛するユニークな人々のための究極のアプリです。\n\n起動画面では100万桁の円周率がエモい雰囲気で流れ、リラックスするのに最適です。\nさらに、10桁、100桁、1000桁〜100万桁ごとに円周率を素早く入力するゲームがあり、世界中のプレイヤーとタイムを競うことができます！\n\n数学とリラクゼーションが融合した、新しいエンターテインメント体験をお楽しみください！",
+      "release_notes": "細かな修正を行いました",
+      "content_advisory_rating": "4+",
+      "minimum_os_version": "17.0",
+      "developer_name": "Ryo Tsudukihashi",
+      "seller_name": "TsuzuKit"
+    },
+    {
+      "bundle_id": "com.tsuzukit.AnniversaryQuest",
+      "name": "記念日リマインダー - メモリア",
+      "app_store_url": "https://apps.apple.com/jp/app/%E8%A8%98%E5%BF%B5%E6%97%A5%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%80%E3%83%BC-%E3%83%A1%E3%83%A2%E3%83%AA%E3%82%A2/id6758575269?uo=4",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/36/53/82/36538239-c1d1-31a2-c278-3bb4c008976e/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9a/a5/ac/9aa5ac4e-4af9-3c0e-edf8-99a70088b303/6.5inch.001.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3f/b0/57/3fb057fa-2741-e09f-2421-7ed78eaa08b1/6.5inch.002.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/56/e4/1f/56e41f02-35d8-0095-e208-5552a279b345/6.5inch.003.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a7/f4/a0/a7f4a0cf-3722-40ee-3c44-a1e1faee76ed/6.5inch.004.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/24/05/82/240582fa-9267-ef3a-d21f-e4c9eab2f868/6.5inch.005.jpeg/626x0w.webp"
+      ],
+      "ipad_screenshots": [],
+      "price": "無料",
+      "currency": "JPY",
+      "genres": [
+        "ライフスタイル",
+        "ユーティリティ"
+      ],
+      "primary_genre": "Lifestyle",
+      "rating": 0,
+      "rating_count": 0,
+      "version": "1.0",
+      "release_date": "2026-02-08T08:00:00Z",
+      "current_version_release_date": "2026-02-09T00:30:03Z",
+      "description": "「あれ、結婚記念日いつだっけ…？」\nもう、大切な日を忘れません。\n\nメモリアは、結婚記念日・誕生日・命日など、あなたの大切な記念日を管理し、事前に通知するリマインダーアプリです。95種類以上のカテゴリから選ぶだけで、簡単に記念日を登録できます。\n\n--------------------\n▼ 95種類以上の記念日カテゴリ\n--------------------\n・恋愛・結婚 … 結婚記念日、入籍日、交際記念日、プロポーズ、初デート、出会った日\n・家族 … 誕生日、出産予定日、命日、七五三、成人式、還暦\n・友人 … 友人の誕生日、親友記念日、同窓会\n・ペット … ペットの誕生日、お迎え記念日、命日\n・仕事 … 入社日、昇進、起業、退職\n・学校 … 入学、卒業、資格取得\n・生活 … 新居、引っ越し、禁煙開始日\n・旅行 … 旅行記念日、コンサート、特別な思い出\n・趣味 … 趣味開始日、大会、目標達成\n・カスタム … 自分だけのオリジナルカテゴリ作成\n\n--------------------\n▼ 主な機能\n--------------------\n【カウントダウン】\n次の記念日まであと何日かを一目で確認。何周年かも自動計算します。\n\n【事前通知】\n1ヶ月前・1週間前・前日・当日など、忘れる前に通知でお知らせ。プレゼントの準備も余裕を持ってできます。\n\n【ホーム画面ウィジェット】\nアプリを開かなくても、ホーム画面で次の記念日をいつでも確認できます。\n\n【記念日ログ】\n過去の記念日の思い出をメモや写真で記録。「去年は何をしたっけ？」がすぐにわかります。\n\n【カスタムカテゴリ】\nアイコンと色を選んで、自分だけのオリジナルカテゴリを作成できます。\n\n--------------------\n▼ こんな方におすすめ\n--------------------\n・結婚記念日を忘れて怒られたことがある方\n・大切な人の誕生日をうっかり忘れがちな方\n・カップルで特別な日を大切にしたい方\n・ご家族の命日を忘れずに過ごしたい方\n・「今年で何周年だっけ？」と毎年悩む方\n\n--------------------\n▼ 料金プラン\n--------------------\n【無料】\n・記念日3件まで登録可能\n・基本通知機能\n・広告表示あり\n\n【プレミアム】\n・記念日を無制限に登録\n・通知時間のカスタマイズ\n・記念日ログ機能（写真・メモ）\n・広告なしで快適に利用\n\n--------------------\n\n大切な記念日、もう忘れない。\nメモリアで、あなたの特別な日を守ります。\n\n--------------------\n▼ リンク\n--------------------\nサポート・お問い合わせ:\nhttps://tsuzukit.com/contact/\n\n利用規約:\nhttps://tsuzukit.com/legal/terms-of-service.html\n\nプライバシーポリシー:\nhttps://tsuzukit.com/legal/privacy-policy.html\n\n特定商取引法に基づく表記:\nhttps://tsuzukit.com/legal/commercial-law.html",
+      "release_notes": null,
+      "content_advisory_rating": "4+",
+      "minimum_os_version": "17.0",
+      "developer_name": "Ryo Tsudukihashi",
+      "seller_name": "TsuzuKit"
+    },
+    {
       "bundle_id": "com.tsuzuki817.pip",
       "name": "流れるメモ帳",
       "app_store_url": "https://apps.apple.com/jp/app/%E6%B5%81%E3%82%8C%E3%82%8B%E3%83%A1%E3%83%A2%E5%B8%B3/id1598380826?uo=4",
@@ -560,8 +799,8 @@
         "ユーティリティ"
       ],
       "primary_genre": "Productivity",
-      "rating": 4.25427,
-      "rating_count": 468,
+      "rating": 4.24946,
+      "rating_count": 469,
       "version": "2.1.0",
       "release_date": "2021-12-05T08:00:00Z",
       "current_version_release_date": "2026-02-07T21:18:46Z",
@@ -603,6 +842,38 @@
       "release_notes": "細かな不具合の修正",
       "content_advisory_rating": "4+",
       "minimum_os_version": "16.0",
+      "developer_name": "Ryo Tsudukihashi",
+      "seller_name": "TsuzuKit"
+    },
+    {
+      "bundle_id": "com.tsuzukit.CheckInSenior",
+      "name": "見守りリマインダー - みまもり",
+      "app_store_url": "https://apps.apple.com/jp/app/%E8%A6%8B%E5%AE%88%E3%82%8A%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%80%E3%83%BC-%E3%81%BF%E3%81%BE%E3%82%82%E3%82%8A/id6758816691?uo=4",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/81/c0/15/81c01572-c42c-1443-b735-8d6ee23c1014/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9f/f6/81/9ff681f3-92e6-7e54-ef26-75df536819f2/6.5inch.001.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ef/05/95/ef059533-7501-405c-a6a4-e448536a849b/6.5inch.002.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/16/a6/cb/16a6cb0c-3fb1-b67d-d1bd-012c3e42bdf9/6.5inch.003.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ce/e3/13/cee3131e-d740-b2c2-705c-98452238aa5c/6.5inch.004.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ab/4e/b7/ab4eb761-a143-53d0-4cf4-5b9e51fb87f1/6.5inch.005.jpeg/626x0w.webp"
+      ],
+      "ipad_screenshots": [],
+      "price": "無料",
+      "currency": "JPY",
+      "genres": [
+        "ライフスタイル",
+        "ソーシャルネットワーキング"
+      ],
+      "primary_genre": "Lifestyle",
+      "rating": 0,
+      "rating_count": 0,
+      "version": "1.0",
+      "release_date": "2026-02-08T08:00:00Z",
+      "current_version_release_date": "2026-02-09T00:54:35Z",
+      "description": "「最後にいつ電話したっけ...」\n\n離れて暮らす両親や祖父母への連絡、つい忘れがちになっていませんか？\n見守りリマインダーは、大切な家族への定期的な連絡を忘れないためのシンプルなアプリです。\n\n【主な機能】\n- 見守り対象者の登録（父、母、祖父母など）\n- 連絡頻度の設定（毎日/週1回/月1回など）\n- 連絡方法の記録（電話/訪問/ビデオ通話）\n- 連絡が遅れたらお知らせ\n- 話題提案機能（季節の話題、健康の話題など）\n\n【こんな方におすすめ】\n- 実家が遠く、定期的な連絡を忘れがちな方\n- 一人暮らしの親が心配な方\n- 両親への電話を習慣化したい方\n- 介護中で連絡管理をしたい方\n- 離れた祖父母との関係を大切にしたい方\n\n【無料版】\n- 2人まで登録可能\n- 連絡記録・リマインダー通知\n\n【プレミアム版】\n- 無制限の対象者登録\n- 話題提案機能\n- 広告なし\n\n忙しい日々の中でも、大切な家族との絆を守りましょう。\n\n【リンク】\n・サポート: https://tsuzukit.com/contact/\n・利用規約: https://tsuzukit.com/legal/terms-of-service.html\n・プライバシーポリシー: https://tsuzukit.com/legal/privacy-policy.html\n・特定商取引法に基づく表記: https://tsuzukit.com/legal/commercial-law.html",
+      "release_notes": null,
+      "content_advisory_rating": "4+",
+      "minimum_os_version": "17.0",
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit"
     },
@@ -667,6 +938,40 @@
       "seller_name": "TsuzuKit"
     },
     {
+      "bundle_id": "com.tsuzuki817.today",
+      "name": "Today -今日は令和何年で何の日？-",
+      "app_store_url": "https://apps.apple.com/jp/app/today-%E4%BB%8A%E6%97%A5%E3%81%AF%E4%BB%A4%E5%92%8C%E4%BD%95%E5%B9%B4%E3%81%A7%E4%BD%95%E3%81%AE%E6%97%A5/id6752814140?uo=4",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ad/07/e5/ad07e5a2-f7ff-3f4b-c7e3-0563717c30e1/today-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1a/58/0b/1a580b25-0169-258f-3ae8-05d7ff253c33/6.5inch.002.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d7/d1/b9/d7d1b9c0-7e65-04c6-4ddb-2aeddceead51/6.5inch.001.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b4/5a/8f/b45a8fe4-75dd-5cf6-556e-42c9b9b0a215/6.5inch.003.jpeg/626x0w.webp"
+      ],
+      "ipad_screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/94/22/06/942206e3-8a48-56a5-e1bc-08f5ff43ca69/13inch.002.jpeg/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/82/4a/12/824a1262-8945-6217-551a-f1ba0690a7d9/13inch.001.jpeg/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d8/21/75/d82175e4-b105-ac54-6f48-db568b7e7ab7/13inch.003.jpeg/360x480bb.jpg"
+      ],
+      "price": "無料",
+      "currency": "JPY",
+      "genres": [
+        "辞書／辞典／その他",
+        "仕事効率化"
+      ],
+      "primary_genre": "Reference",
+      "rating": 5,
+      "rating_count": 3,
+      "version": "1.0",
+      "release_date": "2025-09-22T07:00:00Z",
+      "current_version_release_date": "2025-09-22T23:46:10Z",
+      "description": "「あれ、今日って令和何年だっけ？」\n「この書類、和暦で書かなきゃ…」\n「スピーチの冒頭で、なにか気の利いた『今日は何の日』ネタはないかな？」\n\nそんな日常の「ちょっと知りたい」に応える、あなたのためのアプリができました。\n\n『Today』は、西暦・和暦・六曜・祝日・記念日・花言葉・月の満ち欠けなど、「今日」に関するあらゆる情報を、美しく洗練された画面にギュッと凝縮したシンプルなユーティリティアプリです。\n\n毎日の生活や仕事の傍らに、ぜひ『Today』を置いてみてください。\n\n【主な機能】\n\n□ 簡単な日付確認\n西暦だけでなく、「令和◯年」といった和暦や干支、年号の由来まで瞬時に確認できます。\n\n□ 「今日は何の日？」が一目瞭然\n国民の祝日はもちろん、歴史的な出来事や面白い記念日まで、その日に関する情報が満載です。\n\n□ 六曜・暦情報\n大安や仏滅などの「六曜」を毎日表示。冠婚葬祭や大切なイベントの日取り決めに役立ちます。\n\n□ 今日の月\n美しいアイコンで現在の月相（月の満ち欠け）を表示。「次の満月まであと何日？」もすぐに分かります。\n\n□ 今日の花言葉\n毎日変わる花と、その花言葉をご紹介。日常に彩りを添える、ささやかな知識をお届けします。\n\n□ オフラインでも動作\nデータは全てアプリ内に収録。電波が届かない場所でもサクサク快適に動作します。\n\n【こんな方におすすめ】\n\n書類作成などで和暦を頻繁に使う方\n\n営業や接客業で、お客様との会話のきっかけを探している方\n\nスピーチや朝礼のネタに困っている方\n\n日本の暦や文化に興味がある方\n\n毎日のちょっとした雑学や知識を楽しみたいすべての方\n\nさあ、あなたも『Today』で、毎日をもっとスマートに、もっと豊かに過ごしませんか？",
+      "release_notes": null,
+      "content_advisory_rating": "4+",
+      "minimum_os_version": "17.0",
+      "developer_name": "Ryo Tsudukihashi",
+      "seller_name": "TsuzuKit"
+    },
+    {
       "bundle_id": "com.tsuzukit.BikeKeep",
       "name": "BikeKeep 自転車メンテ管理",
       "app_store_url": "https://apps.apple.com/jp/app/bikekeep-%E8%87%AA%E8%BB%A2%E8%BB%8A%E3%83%A1%E3%83%B3%E3%83%86%E7%AE%A1%E7%90%86/id6782966275?uo=4",
@@ -692,6 +997,168 @@
       "description": "愛車を、いつでもベストコンディションで。\n\n「そろそろチェーン注油…どのくらい走ったっけ？」——ロードバイクもクロスもMTBも、整備のタイミングを BikeKeep におまかせください。\n\n■ 走行距離 × 期間の二軸で管理\nチェーン注油は「あと20kmで」、タイヤ経年は「あと◯日で」。距離で決まる整備と、期間で決まる整備を、それぞれの軸で自動計算。ライドを記録すると総走行距離に反映され、距離ベースの整備時期がぴたりと分かります。\n\n■ パーツごとの整備項目をプリセット\nチェーン注油・交換、空気圧、タイヤ、ブレーキパッド、各種ワイヤー、バーテープ、ホイール振れ取り、BB、ドライブトレイン洗浄、全体洗車——ロードバイク文化の言葉そのままに、推奨周期で用意。もちろん自分好みに編集できます。\n\n■ 複数台のコレクション＆整備ログ\n愛車を写真付きで登録。整備するたびに履歴が積み上がり、費用も記録できます。「いつ・何を・いくらで整備したか」が一目瞭然。\n\n■ 整備どきを3段階で通知\n近づいたら事前に→当日に→過ぎても整備するまで毎日そっと。整備の放置は故障・事故のもと。見逃しません。\n\n■ サイクリストのための豆知識\nチェーンは注油より清掃／空気圧は週1チェック／出発前のABC点検まで、24本のTipsとマスコット「メカ猫レンチ」で整備がもっと楽しく。\n\n■ ウィジェット対応\nホーム画面で、次に整備が必要な愛車と残り（あと◯km／◯日）をひと目で確認できます。\n\n【無料版】\n・愛車を1台まで登録\n・整備項目3つまで\n・整備の通知\n\n【プレミアム】\n・愛車を無制限に登録\n・整備項目も無制限\n・フル履歴・走行ログ\n・保管場所でグループ分け\n・広告非表示\n買い切り ¥3,000 または 週額 ¥200（無料トライアルなし）。サブスクリプションは期間終了の24時間前までに解約しない限り自動更新され、Apple IDに請求されます。設定からいつでも解約できます。\n\n整備間隔は一般的な目安です。走行スタイルや好みに合わせて調整してください。\n\n■ リンク\n・サポート: https://tsuzukit.com/contact/\n・利用規約: https://tsuzukit.com/legal/terms-of-service.html\n・プライバシーポリシー: https://tsuzukit.com/legal/privacy-policy.html",
       "release_notes": null,
       "content_advisory_rating": "4+",
+      "minimum_os_version": "17.0",
+      "developer_name": "Ryo Tsudukihashi",
+      "seller_name": "TsuzuKit"
+    },
+    {
+      "bundle_id": "com.tsuzuki817.omukae",
+      "name": "mono ~お迎えした喜びを分かち合うアプリ~",
+      "app_store_url": "https://apps.apple.com/jp/app/mono-%E3%81%8A%E8%BF%8E%E3%81%88%E3%81%97%E3%81%9F%E5%96%9C%E3%81%B3%E3%82%92%E5%88%86%E3%81%8B%E3%81%A1%E5%90%88%E3%81%86%E3%82%A2%E3%83%97%E3%83%AA/id6743043894?uo=4",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/bf/84/3a/bf843a84-e509-1227-cd86-18a411b9402e/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a7/60/9b/a7609b31-6ec7-69ec-e8ea-4a47e10901d6/6.9inc.001.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a6/7d/e7/a67de758-da5e-e7ba-03c3-2b4e5ab2a7de/6.9inc.002.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fa/f2/d0/faf2d0de-84c3-f691-0aaf-f98d2625376f/6.9inc.003.jpeg/626x0w.webp"
+      ],
+      "ipad_screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/18/62/6e/18626e54-4cd6-4643-2a1c-b1666de8bb5c/mono-13inch.001.jpeg/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1f/39/b6/1f39b6e6-202e-8390-b992-d2d7e494989d/mono-13inch.002.jpeg/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8f/68/12/8f68122a-b2be-22f2-d451-0efd334a4bf1/mono-13inch.003.jpeg/360x480bb.jpg"
+      ],
+      "price": "無料",
+      "currency": "JPY",
+      "genres": [
+        "ソーシャルネットワーキング",
+        "ライフスタイル"
+      ],
+      "primary_genre": "Social Networking",
+      "rating": 1,
+      "rating_count": 1,
+      "version": "1.0",
+      "release_date": "2025-07-01T07:00:00Z",
+      "current_version_release_date": "2025-07-01T14:28:32Z",
+      "description": "mono - お迎えした喜びを分かち合うアプリ\nmonoは、物との出会いやお迎えを自分だけでなく、みんなでシェアできるアプリです。\n\n日々のお気に入りや自慢のコレクションを投稿することで、他のユーザーとその喜びを分かち合い、コミュニティを形成します。\nあなたが「お迎え」したアイテムを他のユーザーと共有することで、ただ物を所有するだけでなく、その背景やエピソードを大切にし、楽しむことができます。\n\nコンセプト\n私たちの生活は日々、物に囲まれています。洋服や化粧品、家具、ジュエリー、ぬいぐるみ、置物など、さまざまなアイテムが私たちの生活に彩りを与えます。これらのアイテムは、単なる物質的な存在ではなく、感情や思い出、さらにはストーリーを持っています。monoは、そんな「物のお迎え」を特別なものとして捉え、それを他の人とシェアできるプラットフォームを提供します。\n\n「お迎えした瞬間の喜びを、写真と想いで残そう」というテーマを掲げ、このアプリでは、モノとの出会いから得られる感動や喜びをユーザー同士で共有し、楽しむことができます。\nmonoは、ただ物を見せ合うだけでなく、その背景やストーリーを大切にし、モノと共に過ごす時間をより豊かにすることを目指しています。\n\n主な機能\nお迎え報告\n\n新しく迎え入れたアイテムを簡単に投稿できる機能です。写真と一緒にその物の名前、特徴、購入場所やエピソードなどをシェアできます。アイテムに込めた思いやこだわりをユーザーと共有することで、より深い交流が生まれます。\n写真とストーリーを残す\n\nアイテムを撮影して、その物にまつわるストーリーやエピソードを添えて投稿します。例えば、旅行先で買ったお土産や、友達からもらったプレゼントの思い出、特別な日に迎えたアイテムなど、ただの物ではなく、その背後にある感情を伝えることができます。\n推しモノコーナー\n\n特にお気に入りのアイテムを集めたコーナーを作成でき、他のユーザーに紹介することができます。このコーナーには、写真とともに、そのアイテムがあなたにとってどれだけ大切かを伝えるメッセージを添えることができます。\nフォロー＆コメント機能\n\n他のユーザーをフォローすることで、あなたが気になるアイテムや投稿をチェックできます。また、コメント機能を使って、お迎えしたアイテムに対する感想や共感を伝えることができ、より深い交流を楽しむことができます。\n「今日のお迎え」フィード\n\n今日、迎えたアイテムをタイムリーにシェアできるフィード機能です。他のユーザーの「今日のお迎え」を見ることで、トレンドや新しいアイテムを発見したり、同じ趣味を持つ人とつながることができます。\nハッシュタグによる検索機能\n\n#お迎えアイテム、#推しアイテム、#お気に入り、#おそろいなど、様々なハッシュタグで投稿をカテゴライズすることができます。これにより、特定のアイテムやテーマに関する投稿を簡単に検索でき、より多くの人と共通の興味を持つことができます。\nアイテムごとのエピソード集\n\n各アイテムに対して、その物との出会いや購入のきっかけ、実際に使った感想などをストーリーとして残すことができます。これにより、ユーザーはただ物を見せ合うだけでなく、物に込めた意味や感情をシェアし、共感を得ることができます。\nターゲット層\nmonoは、物との出会いを大切にし、その喜びや感動を共有したいと思うすべての人々に向けて開発されています。特に、女性ユーザーをターゲットにしており、日々の生活で大切にしている物やお気に入りのアイテムをシェアすることを楽しむ方々に最適です。\n\n・ファッションやインテリアに興味がある人\n・自分のコレクションを誇りに思っている人\n・思い出を大切にする人\n・新しいアイテムやトレンドに敏感な人\n・自分のライフスタイルを他の人とシェアしたい人\n\nこれらのユーザー層に、心温まる瞬間を提供するアプリとして、monoは非常に適しています。\n\nデザイン\nアプリのデザインは、シンプルで洗練された美しいデザインを採用しています。アイテムの写真が主役となり、その美しさを引き立てるため、背景は落ち着いたパステルカラーを基調としています。視覚的に心地よいデザインにより、ユーザーは快適にアプリを利用し、投稿されたアイテムに集中することができます。\n\nまた、ユーザーインターフェース（UI）は直感的で簡単に操作できるように設計されており、初心者でもスムーズに使い始めることができます。モノとの出会いを楽しみ、シェアすることができるような、心温まる空間を提供しています。\n\n結び\nmonoは、ただ物を所有するだけでなく、その物との出会いや成長、そして愛着を大切にするコミュニティアプリです。あなたが迎え入れたアイテムの思い出や、他のユーザーとのつながりを楽しみながら、新しい発見や共感を得ることができます。\n\n「お迎えした瞬間の喜びを、写真と想いで残そう」—それが、monoの本質です。あなたも、物と共に過ごす素敵な時間をシェアし、共感し合いませんか？\n\nプライバシーポリシー\nhttps://tsuzuki817.com/legal/privacy-policy.html\n\n利用規約\nhttps://tsuzuki817.com/legal/terms-of-service.html\n\n特定商取引法に基づく表記\nhttps://tsuzuki817.com/legal/commercial-law.html",
+      "release_notes": null,
+      "content_advisory_rating": "17+",
+      "minimum_os_version": "18.0",
+      "developer_name": "Ryo Tsudukihashi",
+      "seller_name": "TsuzuKit"
+    },
+    {
+      "bundle_id": "com.tsuzukit.BaseReminder",
+      "name": "リマインダー 記憶を呼び起こす",
+      "app_store_url": "https://apps.apple.com/jp/app/%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%80%E3%83%BC-%E8%A8%98%E6%86%B6%E3%82%92%E5%91%BC%E3%81%B3%E8%B5%B7%E3%81%93%E3%81%99/id6756901694?uo=4",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e0/5b/29/e05b2975-7c56-3f93-5902-f885c2e390ed/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/66/f7/57/66f75751-b8c1-ecfa-f932-41466c637708/6.5inch.001.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/22/7d/9c/227d9c27-8e1e-8df6-d32f-8ef3176f2acd/6.5inch.002.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/50/24/c4/5024c47f-851a-d819-6322-007c813c2327/6.5inch.003.jpeg/626x0w.webp"
+      ],
+      "ipad_screenshots": [],
+      "price": "無料",
+      "currency": "JPY",
+      "genres": [
+        "仕事効率化",
+        "ユーティリティ"
+      ],
+      "primary_genre": "Productivity",
+      "rating": 0,
+      "rating_count": 0,
+      "version": "1.0",
+      "release_date": "2025-12-23T08:00:00Z",
+      "current_version_release_date": "2025-12-24T06:24:34Z",
+      "description": "シンプルリマインダーは、大切な予定を忘れないためのシンプルなリマインダーアプリです。\n\n【主な機能】\n・リマインダーの作成・編集・削除\n・指定した日時に通知でお知らせ\n・繰り返し設定（毎日・毎週・毎月）※プレミアム機能\n・シンプルで使いやすいインターフェース\n\n【こんな方におすすめ】\n・予定を忘れがちな方\n・シンプルなリマインダーアプリを探している方\n・複雑な機能は不要で、通知だけほしい方\n\n【無料版】\n・3件までリマインダーを作成可能\n・基本的な通知機能\n\n【プレミアム版】\n・無制限のリマインダー作成\n・繰り返し機能（毎日・毎週・毎月）\n・広告なし\n\n大切な予定を、シンプルリマインダーで管理しましょう。\n\n【リンク】\n・サポート: https://tsuzukit.com/contact/\n・利用規約: https://tsuzukit.com/legal/terms-of-service.html\n・プライバシーポリシー: https://tsuzukit.com/legal/privacy-policy.html\n・特定商取引法に基づく表記: https://tsuzukit.com/legal/commercial-law.html",
+      "release_notes": null,
+      "content_advisory_rating": "4+",
+      "minimum_os_version": "17.0",
+      "developer_name": "Ryo Tsudukihashi",
+      "seller_name": "TsuzuKit"
+    },
+    {
+      "bundle_id": "com.tsuzukit.HorseTicketGenerator",
+      "name": "馬券ジェネレーター",
+      "app_store_url": "https://apps.apple.com/jp/app/%E9%A6%AC%E5%88%B8%E3%82%B8%E3%82%A7%E3%83%8D%E3%83%AC%E3%83%BC%E3%82%BF%E3%83%BC/id6757259211?uo=4",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/3f/69/67/3f696767-f83f-49f3-a22f-b8228cffeb02/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c7/66/1c/c7661cc7-e2ce-6467-981c-f4bf3c10f954/_U99ac_U5238_U30b7_U3099_U30a7_U30cd_U30ec_U30fc_U30bf.001.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/45/96/3f/45963fd5-67d6-33f7-f005-c5fa0dd7b68b/_U99ac_U5238_U30b7_U3099_U30a7_U30cd_U30ec_U30fc_U30bf.002.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/71/47/25/71472508-1ba3-bc9f-98ab-ba4cd22e9271/_U99ac_U5238_U30b7_U3099_U30a7_U30cd_U30ec_U30fc_U30bf.003.jpeg/626x0w.webp"
+      ],
+      "ipad_screenshots": [],
+      "price": "無料",
+      "currency": "JPY",
+      "genres": [
+        "グラフィック／デザイン"
+      ],
+      "primary_genre": "Graphics & Design",
+      "rating": 0,
+      "rating_count": 0,
+      "version": "1.0",
+      "release_date": "2026-01-04T08:00:00Z",
+      "current_version_release_date": "2026-01-05T02:35:27Z",
+      "description": "馬券ジェネレーターは、JRA風のリアルな馬券を簡単に作成できるエンターテイメントアプリです。\n\n【こんな時に使えます】\n- 推しの名前で馬券を作りたい！\n- 友達へのネタプレゼントに！\n- 競馬場での話題作りに！\n- SNS投稿用のネタ画像に！\n\n【主な機能】\n- JRAの馬券そっくりなデザイン\n- 複数の馬券種別に対応（単勝・複勝・馬連・ワイド・馬単・3連複・3連単）\n- 好きな馬名・金額を自由に設定\n- 高解像度での画像保存\n- 作成した馬券の履歴管理\n- シェア機能で簡単に共有\n\n【プレミアム機能】\n- 広告の完全削除\n- 高解像度出力\n- 印刷に最適な画質\n\n【注意事項】\nこのアプリで生成した画像は実際の馬券ではありません。ジョーク・エンターテイメント目的でのみご利用ください。\n\n推しの名前で勝馬投票券を作って、友達や仲間と楽しもう！",
+      "release_notes": null,
+      "content_advisory_rating": "4+",
+      "minimum_os_version": "17.0",
+      "developer_name": "Ryo Tsudukihashi",
+      "seller_name": "TsuzuKit"
+    },
+    {
+      "bundle_id": "com.tsuzuki817.jellysamepuzzle",
+      "name": "ゼリーセイムパズル",
+      "app_store_url": "https://apps.apple.com/jp/app/%E3%82%BC%E3%83%AA%E3%83%BC%E3%82%BB%E3%82%A4%E3%83%A0%E3%83%91%E3%82%BA%E3%83%AB/id6747354292?uo=4",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/9a/a0/34/9aa034b0-e88f-cdcf-a05d-37ed7ec4f9ac/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/91/98/09/919809df-77ad-2296-eba7-bcd760816417/6.9inc.001.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/65/60/9a/65609a3b-efa7-51e6-1201-63fc1914f2c2/6.9inc.002.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/aa/fa/c8/aafac83d-ff84-89af-f2ec-b89e83a2c5ed/6.9inc.003.jpeg/626x0w.webp"
+      ],
+      "ipad_screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ea/f5/97/eaf59710-b5fd-a5e6-4646-da9066291746/13inch.002.jpeg/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/df/ff/95/dfff95d1-0eb4-ba15-a6c8-5fb02ebfc312/13inch.001.jpeg/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a5/4c/ef/a54cef95-0918-5f61-ee8c-c1c724926e0a/13inch.003.jpeg/360x480bb.jpg"
+      ],
+      "price": "無料",
+      "currency": "JPY",
+      "genres": [
+        "ゲーム",
+        "エンターテインメント",
+        "パズル"
+      ],
+      "primary_genre": "Games",
+      "rating": 4.55556,
+      "rating_count": 9,
+      "version": "1.5.4",
+      "release_date": "2025-07-16T07:00:00Z",
+      "current_version_release_date": "2025-09-14T13:38:20Z",
+      "description": "【ゼリーセイムパズルとは？】\n某ゲームサイトで愛された「セイムパズル」の感動が、最新のiOS/iPadOSアプリで蘇ります！\nぷるぷる揺れるゼリーブロックをタップで消すだけの簡単操作で、いつでもどこでも気軽に楽しめるパズルゲームです。シンプルながら奥深いゲーム性で、あなたの思考力を試しましょう。\n\n【ゲームの特徴】\n◆ 簡単だけど奥深い！シンプル操作のパズルゲーム\n　- 2つ以上繋がった同じ色のゼリーブロックをタップして消すだけ！\n　- ブロックが消えると上から新しいゼリーが降ってきて、連鎖のチャンスも。\n　- どこを消すか戦略を立てて、高得点を狙いましょう！\n　- レインボーブロックやアイテム（Delete, Changeなど）の登場も！？\n　- ランキング機能で世界中のプレイヤーとスコアを競い合おう！\n\n◆ ぷるぷる可愛いゼリーブロック！\n　- 見ているだけでも楽しい、触りたくなるようなゼリーの質感を表現。\n　- 消した時の爽快感あふれるアニメーションとサウンドが病みつきに！\n\n◆ 懐かしさと新しい発見\n　- 「セイムパズル」のファンならきっと懐かしい、あの独特のパズル体験を再現。\n　- もちろん、初めてプレイする方でもすぐにハマれる中毒性があります。\n\n◆ いつでもどこでも気軽にプレイ\n　- 通勤・通学時間、ちょっとした休憩時間など、スキマ時間に最適。\n　- オフラインでもプレイ可能なので、電波の届かない場所でも楽しめます。\n\n◆ 【今後のアップデート予定】\n　- クラシックモード、カウントダウンモードなど、多彩なゲームモードを追加予定！\n\n\n【こんな方におすすめ！】\n\n某ゲームの「セイムパズル」が好きだった方\n\nシンプルだけど奥深いパズルゲームを探している方\n\n脳トレや思考力を鍛えたい方\n\n通勤・通学中に気軽に遊べるゲームが欲しい方\n\nぷるぷる可愛いデザインのゲームが好きな方\n\nさあ、あなたも「Jelly Same Puzzle」で、ゼリーを消す爽快感を体験しよう！\n今すぐダウンロードして、パズルの世界に飛び込もう！\n\n□ その他情報\n・利用規約\nhttps://tsuzuki817.com/legal/terms-of-service.html\n\n・プライバシーポリシー\nhttps://tsuzuki817.com/legal/privacy-policy.html\n\n・特定商取引法に基づく表示\nhttps://tsuzuki817.com/legal/commercial-law.html",
+      "release_notes": "ゲームが終了条件を満たしていないのにも関わらず次のステージ判定が発生してしまう不具合の修正",
+      "content_advisory_rating": "4+",
+      "minimum_os_version": "17.0",
+      "developer_name": "Ryo Tsudukihashi",
+      "seller_name": "TsuzuKit"
+    },
+    {
+      "bundle_id": "com.tsuzuki817.SakanaCalendar",
+      "name": "旬のお魚カレンダー",
+      "app_store_url": "https://apps.apple.com/jp/app/%E6%97%AC%E3%81%AE%E3%81%8A%E9%AD%9A%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%80%E3%83%BC/id6746123337?uo=4",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4d/2a/9b/4d2a9bc5-d47a-9f96-a0bd-14a843578175/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/79/8c/fa/798cfa21-5f83-758b-2ce1-ffc9d5610e84/Apple_iPhone_16_Pro_Max_Screenshot_1.png/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/86/9a/f5/869af5ac-81fb-7b03-8bcf-258d5befb6df/Apple_iPhone_16_Pro_Max_Screenshot_2.png/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/51/b3/9e/51b39ed0-fd09-6510-fbba-f53554492a28/Apple_iPhone_16_Pro_Max_Screenshot_3.png/626x0w.webp"
+      ],
+      "ipad_screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/14/54/d0/1454d074-94ce-fcd1-6ca2-fd561471d092/Apple_iPad_Pro_12.9_Inch_Screenshot_1.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/43/60/89/436089bd-ff69-4d09-10dd-f85c6023c3f6/Apple_iPad_Pro_12.9_Inch_Screenshot_2.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/67/b5/79/67b5798b-8c00-8758-779c-ae6a86b3fdb7/Apple_iPad_Pro_12.9_Inch_Screenshot_3.png/360x480bb.jpg"
+      ],
+      "price": "無料",
+      "currency": "JPY",
+      "genres": [
+        "フード／ドリンク",
+        "ユーティリティ"
+      ],
+      "primary_genre": "Food & Drink",
+      "rating": 5,
+      "rating_count": 1,
+      "version": "1.0",
+      "release_date": "2025-05-23T07:00:00Z",
+      "current_version_release_date": "2025-05-23T22:21:18Z",
+      "description": "「この魚、一番美味しいのはいつ？」その疑問、解決します！\n\n「旬のお魚カレンダー」は、魚介類の“最高の食べ頃”が一目でわかる、あなたの食卓の新しい味方です。\nもう「いつが旬なんだろう…」と悩む必要はありません！\n\n【このアプリでできること】\n\n旬が一目瞭然: 使いやすい月別カレンダーで、今が旬の魚を逃さずチェック！「今日は何のお魚が美味しいかな？」がすぐにわかります。\n豊富な魚種情報: お馴染みの魚から、ちょっと珍しい魚、お寿司屋さんで見るあのネタまで、旬の時期と主な産地を詳しく掲載。お魚の知識も深まります。\nシンプルで直感的: 誰でも簡単に操作できるインターフェース。目的の情報をサッと見つけられます。\n毎日の献立作りやお買い物がもっと楽しく、食卓がもっと豊かになること間違いなし！\n「旬のお魚カレンダー」をダウンロードして、四季折々の海の恵みを最大限に味わいましょう！",
+      "release_notes": null,
+      "content_advisory_rating": "17+",
       "minimum_os_version": "17.0",
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit"
@@ -757,6 +1224,78 @@
       "release_notes": "細かなバグの修正を行いました！",
       "content_advisory_rating": "4+",
       "minimum_os_version": "16.0",
+      "developer_name": "Ryo Tsudukihashi",
+      "seller_name": "TsuzuKit"
+    },
+    {
+      "bundle_id": "com.tsuzuki817.MusicSnapshot",
+      "name": "Music Snapshot 〜あなたの音楽を一枚に〜",
+      "app_store_url": "https://apps.apple.com/jp/app/music-snapshot-%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AE%E9%9F%B3%E6%A5%BD%E3%82%92%E4%B8%80%E6%9E%9A%E3%81%AB/id6605937062?uo=4",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/eb/e4/76/ebe476be-e8ba-e61a-6c37-0e385fe664e2/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/7a/59/31/7a593168-0151-db12-e8ac-f8723d8267c8/6.5inch.004.png/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/43/5d/dc/435ddcfa-cddb-e423-9aa6-82e038044a38/6.5inch.005.png/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/88/d7/c0/88d7c009-01c2-7d45-eee7-c29f5d7179bd/6.5inch.006.png/626x0w.webp"
+      ],
+      "ipad_screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/7b/c4/a8/7bc4a85e-a87d-0bee-ab9e-78d3fbb360dc/13inch.004.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/86/3b/12/863b12e8-375e-0684-b71b-b9a6367c46e2/13inch.005.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/59/ea/bb/59eabbfb-9d4e-2107-17b8-a7cc8d5a36b2/13inch.006.png/360x480bb.jpg"
+      ],
+      "price": "¥100",
+      "currency": "JPY",
+      "genres": [
+        "ミュージック",
+        "グラフィック／デザイン"
+      ],
+      "primary_genre": "Music",
+      "rating": 5,
+      "rating_count": 1,
+      "version": "1.0.1",
+      "release_date": "2025-03-05T08:00:00Z",
+      "current_version_release_date": "2025-03-06T21:14:44Z",
+      "description": "「Music Snapshot」は、Apple Musicの最近聴いた曲やお気に入りの曲を壁紙にしてシェアすることができます。\nあなたの音楽ライフをアートに変えましょう。\n\n主な機能:\n\n□最近のあなたを構成している音楽\n□人生で一番聴いている音楽\n□最近聞けていない音楽\n□最近追加した音楽\n\nあなたの音楽の瞬間をキャプチャし、シェアすることで、友達や家族と音楽の楽しさを共有しましょう！",
+      "release_notes": "音楽にArtwork情報がないときのデザインを変更しました！\nまた、壁紙を直接ダウンロードできるボタンを追加しました！",
+      "content_advisory_rating": "4+",
+      "minimum_os_version": "17.0",
+      "developer_name": "Ryo Tsudukihashi",
+      "seller_name": "TsuzuKit"
+    },
+    {
+      "bundle_id": "com.tsuzukit.DaydreamCamera",
+      "name": "空想旅行カメラ - AIで世界をスナップ",
+      "app_store_url": "https://apps.apple.com/jp/app/%E7%A9%BA%E6%83%B3%E6%97%85%E8%A1%8C%E3%82%AB%E3%83%A1%E3%83%A9-ai%E3%81%A7%E4%B8%96%E7%95%8C%E3%82%92%E3%82%B9%E3%83%8A%E3%83%83%E3%83%97/id6755984490?uo=4",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d0/23/b5/d023b55f-db83-f180-d2f3-157f24a9b83f/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0e/e7/e4/0ee7e441-8e2b-a482-a293-7792dff83b2c/6.5inch.001.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e0/20/69/e02069dd-3cf2-8da9-a97c-465010cfb65b/6.5inch.002.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d7/35/9e/d7359e73-ef71-6e5b-a67f-06c4d401be42/6.5inch.003.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2f/45/34/2f4534a8-a3da-7ed9-6af7-6e245b14f0ec/6.5inch.004.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2f/d2/fd/2fd2fd31-fc75-8f31-d761-b0920f4b0c91/6.5inch.005.jpeg/626x0w.webp"
+      ],
+      "ipad_screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d0/8d/ec/d08decc3-54d6-e802-9949-a930ac4a109a/13inch.001.jpeg/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/cf/fe/e5/cffee503-fd25-c0d0-1b02-4354d18b563e/13inch.002.jpeg/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a3/c9/8b/a3c98bf2-79f0-ba12-71e5-520e87108728/13inch.003.jpeg/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/7e/f8/07/7ef80704-83a3-8c43-9129-e5dfbae462d2/13inch.004.jpeg/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/9a/7b/e0/9a7be0ee-50d8-64eb-7f76-378e1b8d782b/13inch.005.jpeg/360x480bb.jpg"
+      ],
+      "price": "無料",
+      "currency": "JPY",
+      "genres": [
+        "写真／ビデオ",
+        "旅行"
+      ],
+      "primary_genre": "Photo & Video",
+      "rating": 0,
+      "rating_count": 0,
+      "version": "1.1.0",
+      "release_date": "2025-12-03T08:00:00Z",
+      "current_version_release_date": "2025-12-10T00:49:36Z",
+      "description": "パスポートのいらない、0秒の海外旅行へ。\n\n「空想旅行カメラ (Daydream Camera)」は、地図上のあらゆる場所を、AIの力でエモい写真として切り取る新しいカメラアプリです。\n\n実際に行く必要はありません。必要なのは、地図上の「ピン」と、あなたの「想像力」だけ。 フィルムカメラのような手触りで、あなただけの空想の景色をコレクションしましょう。\n\n◆ こんな使い方がおすすめ\n\n【0秒で世界一周】 パリのカフェ、ニューヨークの街角、ウユニ塩湖。 行ってみたかったあの場所にピンを刺してシャッターを切れば、現地の空気感をAIが「写真」として現像します。\n\n【いつもの場所を「エモく」変換】 見慣れた通学路や、地元の駅前。 座標を指定すれば、AIが「もしもそこが映画のワンシーンだったら？」という解釈で、ノスタルジックな風景を描き出します。\n\n【推しとの聖地巡礼】 好きなキャラクターやアイドルの出身地、アニメの聖地。 その場所にピンを刺して、想いを馳せる旅へ出かけましょう。\n\n◆ アプリの機能\n\nMap Finder: 地図を動かして、直感的に撮影場所を探せます。\n\nAI Developing: シャッターを切ると、数秒の現像時間を経て、世界に一枚だけの画像が生成されます。\n\nFilm Log: 撮った写真は、撮影地の住所や日付とともにアルバムに保存されます。\n\n◆ 注意事項\n\n生成される写真はAIによる空想の風景であり、実際の現地の風景とは異なる場合があります。その「ズレ」も含めてお楽しみください。\n\n画像生成には「フィルム（アプリ内アイテム）」が必要です。\n\n■ 公式情報・規約\n\nプライバシーポリシー： https://tsuzukit.com/legal/privacy-policy.html\n\n利用規約： https://tsuzukit.com/legal/terms-of-service.html\n\n特定商取引法に基づく表記： https://tsuzukit.com/legal/commercial-law.html\n\n免責事項： https://tsuzukit.com/legal/disclaimer.html",
+      "release_notes": "シミュレーションで説明できる文字数を1000文字に増やしました！",
+      "content_advisory_rating": "4+",
+      "minimum_os_version": "18.0",
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit"
     },
@@ -932,6 +1471,40 @@
       "seller_name": "TsuzuKit"
     },
     {
+      "bundle_id": "com.tsuzuki817.cook-it",
+      "name": "Cook-it -冷蔵庫の中を撮るだけでAIレシピ提案-",
+      "app_store_url": "https://apps.apple.com/jp/app/cook-it-%E5%86%B7%E8%94%B5%E5%BA%AB%E3%81%AE%E4%B8%AD%E3%82%92%E6%92%AE%E3%82%8B%E3%81%A0%E3%81%91%E3%81%A7ai%E3%83%AC%E3%82%B7%E3%83%94%E6%8F%90%E6%A1%88/id6751343632?uo=4",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5b/cc/48/5bcc48a9-937f-9035-c7aa-66c1f127126c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/14/51/5f/14515f44-bf72-6d76-a836-b8a6726ec60c/6.9inch.001.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/32/48/83/32488394-c53b-d691-54e4-b2a183508995/6.9inch.002.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c3/de/d4/c3ded498-9fa6-c2cc-844d-43d3553c80af/6.9inch.003.jpeg/626x0w.webp"
+      ],
+      "ipad_screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e0/ae/da/e0aeda46-14a3-e923-617f-c183150a17ac/13inch.001.jpeg/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/7a/8e/25/7a8e25d9-9832-5f2e-e402-2629e7f06247/13inch.002.jpeg/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/8f/93/15/8f931507-d0ee-ad7f-6059-182a225d046d/13inch.003.jpeg/360x480bb.jpg"
+      ],
+      "price": "無料",
+      "currency": "JPY",
+      "genres": [
+        "フード／ドリンク",
+        "ヘルスケア／フィットネス"
+      ],
+      "primary_genre": "Food & Drink",
+      "rating": 0,
+      "rating_count": 0,
+      "version": "1.0.1",
+      "release_date": "2025-09-03T07:00:00Z",
+      "current_version_release_date": "2025-09-16T18:09:18Z",
+      "description": "Cook-itは、毎日の料理をもっと楽しく、確実にするための革新的なレシピアプリです。\nAIによる賢いレシピ提案と、失敗しないタイマー管理で、あなたの料理体験を劇的に改善します。\n\n□ AIレシピ提案\n「豚肉と玉ねぎで何か作りたい」など、自然な言葉でレシピを検索。Gemini AIがあなたにぴったりのレシピを提案します。\n\n□ 食材認識機能\n冷蔵庫の中身を撮影するだけで、AIが食材を認識し、最適なレシピを自動提案。毎日の献立決めがゲーム感覚で楽しくなります。\n\n□ スマートタイマー\nレシピの全工程を一括でタイマー登録\n\n□ 料理記録・統計\n作った料理をカレンダーで管理し、得意料理や調理時間の傾向を分析。料理スキルの成長を可視化できます。\n\n□ レシピコミュニティ\n段取りを含めた詳細なレシピを投稿・共有。みんなの成功体験から学び、料理の腕を確実にレベルアップできます。\n\n□ 機能\n - カメラ具材認識: 冷蔵庫の中身を撮影するだけでレシピ提案\n - 料理カレンダー: 作った料理を記録して振り返り\n - 統計機能: 得意料理や調理時間の分析\n - タイマー機能: 確実なタイマー通知でミスを防止\n\n\n□ その他情報\n・利用規約\nhttps://tsuzuki817.com/legal/terms-of-service.html\n\n・プライバシーポリシー\nhttps://tsuzuki817.com/legal/privacy-policy.html\n\n・特定商取引法に基づく表示\nhttps://tsuzuki817.com/legal/commercial-law.html",
+      "release_notes": "クッキングタイマーの完了をアラームを使って通知することができるようになりました！",
+      "content_advisory_rating": "17+",
+      "minimum_os_version": "18.0",
+      "developer_name": "Ryo Tsudukihashi",
+      "seller_name": "TsuzuKit"
+    },
+    {
       "bundle_id": "com.tsuzuki817.pipImage",
       "name": "PictIn",
       "app_store_url": "https://apps.apple.com/jp/app/pictin/id1625004229?uo=4",
@@ -1060,6 +1633,41 @@
       "seller_name": "TsuzuKit"
     },
     {
+      "bundle_id": "com.tsuzuki817.SwipeClean",
+      "name": "スワイポン - スワイプで写真と動画を簡単整理",
+      "app_store_url": "https://apps.apple.com/jp/app/%E3%82%B9%E3%83%AF%E3%82%A4%E3%83%9D%E3%83%B3-%E3%82%B9%E3%83%AF%E3%82%A4%E3%83%97%E3%81%A7%E5%86%99%E7%9C%9F%E3%81%A8%E5%8B%95%E7%94%BB%E3%82%92%E7%B0%A1%E5%8D%98%E6%95%B4%E7%90%86/id6752831862?uo=4",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/11/e3/16/11e31605-1163-3718-1ffd-4aba66432224/swipeclean-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/85/20/6f/85206f11-ce42-acb8-294c-9aabac676a8e/6.5inch.001.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/fd/00/48/fd00480e-cc62-27ff-0c46-c367b09158cb/6.5inch.002.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/28/01/a3/2801a355-8efc-e9ae-d838-f0115a472d2c/6.5inch.003.jpeg/626x0w.webp"
+      ],
+      "ipad_screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2b/8a/3d/2b8a3def-d3de-7a06-9f51-081df896984c/ja-1-pad1_2.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/32/8e/c2/328ec203-73b5-4d26-6a56-123bb37ea9bd/ja-2-pad2_2.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/eb/1b/bc/eb1bbc95-7b27-1954-3a52-46671c185a1e/ja-3-pad3_2.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2b/ca/6d/2bca6db8-b94f-ee19-6863-4cab34f5bf99/ja-4-pad4_2.png/360x480bb.jpg"
+      ],
+      "price": "無料",
+      "currency": "JPY",
+      "genres": [
+        "ユーティリティ",
+        "仕事効率化"
+      ],
+      "primary_genre": "Utilities",
+      "rating": 4.75,
+      "rating_count": 4,
+      "version": "1.3.1",
+      "release_date": "2025-09-25T07:00:00Z",
+      "current_version_release_date": "2025-10-07T02:29:24Z",
+      "description": "「iPhoneのストレージがありません」\nその通知、もう見飽きていませんか！？\n\nスワイポンは、溜まりすぎた写真や動画を驚くほど簡単に整理できる、新しいストレージクリーナーアプリです！\n\n名前の由来は「スワイプでぽんっと簡単削除！」\nゲーム感覚で、不要なスクリーンショットや画像をサクサク仕分けできます。面倒なアルバムの掃除や写真管理は、もう必要ありません。\n\n【主な機能】\n□ 簡単スワイプ操作：残すか削除するかを直感的に選択。難しい操作は一切ありません。\n□ 写真・動画・スクショに対応：カメラロールにある不要なメディアをまとめて整理できます。\n□ 一括削除で一気にスッキリ：整理した画像や動画を一括で削除し、iPhoneの空き容量を確保します。\n□ 解放される容量を表示：削除前にどれだけストレージが軽くなるかを確認できるので、やる気が続きます。\n\n【こんな方におすすめ】\n□ スクリーンショットをメモ代わりにたくさん撮る方\n□ iPhoneが重い、動作が遅いと感じる方\n□ アルバムやカメラロールの掃除が面倒だと感じる方\n□ シンプルな無料アプリで手軽にストレージの軽量化や容量管理をしたい方\n\n面倒な写真管理はもう終わり。\nスワイポンで、あなたのiPhoneを今すぐ軽く、快適にしませんか？\nダウンロードして、その爽快感を体験してください。\n\n利用規約:\nhttps://www.apple.com/legal/internet-services/itunes/dev/stdeula/\nプライバシーポリシー:\nhttps://tsuzuki817.com/legal/privacy-policy.html",
+      "release_notes": "対応言語の追加を行いました！",
+      "content_advisory_rating": "12+",
+      "minimum_os_version": "17.0",
+      "developer_name": "Ryo Tsudukihashi",
+      "seller_name": "TsuzuKit"
+    },
+    {
       "bundle_id": "com.tsuzukit.PassportAlertApp",
       "name": "パスポート期限管理 PassportAlert",
       "app_store_url": "https://apps.apple.com/jp/app/%E3%83%91%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%88%E6%9C%9F%E9%99%90%E7%AE%A1%E7%90%86-passportalert/id6782294746?uo=4",
@@ -1174,6 +1782,73 @@
       "current_version_release_date": "2026-06-23T14:21:43Z",
       "description": "その革靴、最後に磨いたのはいつ？\n\nShoeKeepは、革靴の「お手入れ」と「ローテーション（休息）」を管理するリマインダーアプリです。愛靴を登録するだけで、履いた回数と前回ケアからの日数から「磨きどき」を自動で計算。お手入れが近づいたら事前にお知らせし、過ぎてしまっても磨くまでやさしくリマインドします。下駄箱で眠らせて「気づいたらひび割れ」を、このアプリがなくします。\n\n■ こんな方に\n・革靴を大切に、長く履きたい\n・気づくと同じ靴ばかり履いてしまう\n・お手入れのタイミングをいつも逃す\n・下駄箱の靴をすっきり把握したい\n\n■ 主な機能\n・素材×「履いた回数・経過日数」から磨きどきを自動計算（スムースレザー/コードバン/スエードなど素材別の目安を内蔵）\n・「今日履ける靴／休息中の靴」がひと目で分かるローテーション管理（連日同じ靴はNG）\n・3段階の通知（事前→当日→過ぎたら磨くまで毎日）\n・愛靴の写真登録（背景を自動で切り抜き）\n・素材別のお手入れのコツを表示\n・下駄箱・収納場所でグループ分け（プレミアム）\n・お手入れの記録と「そろそろ磨きたい靴」の見える化（プレミアム）\n・ホーム画面ウィジェットで次のお手入れどきをひと目で\n・毎日めくれる革靴の豆知識\n\n■ 無料版とプレミアム\n無料版でも靴を3足まで登録してお手入れ管理ができます。プレミアム（買い切り／週額）なら、登録数無制限、下駄箱別管理、お手入れ記録、広告非表示が使えます。\n\n■ ご注意\nお手入れの周期や休息日数は、素材からの一般的な目安です。実際の革の状態を見て調整してください。\n\n■ リンク\n・サポート / お問い合わせ: https://tsuzukit.com/contact/\n・利用規約: https://tsuzukit.com/legal/terms-of-service.html\n・プライバシーポリシー: https://tsuzukit.com/legal/privacy-policy.html",
       "release_notes": null,
+      "content_advisory_rating": "4+",
+      "minimum_os_version": "17.0",
+      "developer_name": "Ryo Tsudukihashi",
+      "seller_name": "TsuzuKit"
+    },
+    {
+      "bundle_id": "com.tsuzuki817.birthdaymoon",
+      "name": "バースデームーン",
+      "app_store_url": "https://apps.apple.com/jp/app/%E3%83%90%E3%83%BC%E3%82%B9%E3%83%87%E3%83%BC%E3%83%A0%E3%83%BC%E3%83%B3/id6737449860?uo=4",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/db/fd/fb/dbfdfb32-a4b2-8cad-b8d7-1131e4ea7d24/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/34/d9/22/34d922ba-84ec-f29b-4db3-80da05f06f5c/6.9inc.001.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/3e/7a/c7/3e7ac711-25c4-d9ab-3c49-94c825984083/6.9inc.002.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/79/e1/fc/79e1fc59-45c3-04bf-b4cc-e591762b9ee2/6.9inc.003.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/02/03/0e/02030ef2-8515-0a08-e100-cc91cf279510/6.9inc.004.jpeg/626x0w.webp"
+      ],
+      "ipad_screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d6/ca/a5/d6caa5ac-d717-0386-f0b4-9f94e968e504/13inch.004.jpeg/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ec/a4/0a/eca40a55-1d2d-be9b-1753-312e6b4a1799/13inch.001.jpeg/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/4a/25/1f/4a251f76-353d-fa10-76f3-b7d94f54ac52/13inch.002.jpeg/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f1/47/61/f14761c8-fe70-fb15-ff3f-9acdce475c75/13inch.003.jpeg/360x480bb.jpg"
+      ],
+      "price": "無料",
+      "currency": "JPY",
+      "genres": [
+        "グラフィック／デザイン",
+        "エンターテインメント"
+      ],
+      "primary_genre": "Graphics & Design",
+      "rating": 3.875,
+      "rating_count": 8,
+      "version": "1.1.1",
+      "release_date": "2024-10-29T07:00:00Z",
+      "current_version_release_date": "2026-01-29T01:46:02Z",
+      "description": "バースデームーン - 誕生日カラーで月をカスタマイズ\n\nあなたの誕生日カラーで美しい月を作成し、大切な人とのつながりを表現できるアプリです。\n\n主な機能\n• 366日それぞれの誕生日カラーで月を彩色\n• 2つの誕生日カラーを混合して特別な月を作成\n• 満月、三日月、土星、木星、雲など6種類の月タイプ\n• カスタム画像に誕生日カラーを適用する自由形機能\n• 高画質での画像保存とカメラロールへの自動保存\n• 日付ピンで誕生日を月上に表示\n\nこんな使い方ができます\n恋人や友人、推しとの誕生日カラーを組み合わせて、あなただけの特別な月を作成。完成した美しい月の画像は、スマホの壁紙やSNSでのシェアに最適です。\n\nプレミアム機能\n• 自由形機能でオリジナル画像をカスタマイズ\n• 広告なしの快適な利用環境\n\n誕生日という特別な日に込められた意味を、美しい月のアートで表現してみませんか。あなたの物語を月に託して、大切な人とのつながりを可視化する新し\nい体験をお楽しみください。",
+      "release_notes": "細かな不具合の修正",
+      "content_advisory_rating": "4+",
+      "minimum_os_version": "18.0",
+      "developer_name": "Ryo Tsudukihashi",
+      "seller_name": "TsuzuKit"
+    },
+    {
+      "bundle_id": "com.tsuzukit.MedicineReminder",
+      "name": "お薬リマインダー 服用管理",
+      "app_store_url": "https://apps.apple.com/jp/app/%E3%81%8A%E8%96%AC%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%80%E3%83%BC-%E6%9C%8D%E7%94%A8%E7%AE%A1%E7%90%86/id6756915544?uo=4",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/36/20/93/362093f8-b3e0-17c2-15c7-f6af3af7a106/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ef/57/29/ef572990-f149-e97c-87db-646f55a01811/6.5inch.001.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/6d/35/f7/6d35f762-84f5-7c57-5634-21786a8078e1/6.5inch.002.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8a/b9/16/8ab91648-9ea7-96b3-e8d2-52dff6b68894/6.5inch.003.jpeg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ce/ed/bc/ceedbc62-76db-e53d-0df1-a9339c430dee/6.5inch.004.jpeg/626x0w.webp"
+      ],
+      "ipad_screenshots": [],
+      "price": "無料",
+      "currency": "JPY",
+      "genres": [
+        "メディカル",
+        "ユーティリティ"
+      ],
+      "primary_genre": "Medical",
+      "rating": 3.33333,
+      "rating_count": 3,
+      "version": "1.2.0",
+      "release_date": "2025-12-28T08:00:00Z",
+      "current_version_release_date": "2026-02-24T01:46:51Z",
+      "description": "お薬リマインダーは、毎日のお薬の服用を忘れないためのシンプルで使いやすいアプリです。\n\n【主な機能】\n・服用タイミング通知 - 朝食前/後、昼食前/後、夕食前/後、就寝前など\n・残量管理 - お薬の残り数を管理し、少なくなったらお知らせ\n・服用履歴 - カレンダーで服用状況を一目で確認\n・写真登録 - お薬の写真を登録して識別しやすく\n・ホーム画面ウィジェット - 今日の服用状況をすぐ確認\n・通知時間カスタマイズ - ライフスタイルに合わせて設定\n\n【こんな方におすすめ】\n・毎日お薬を飲む必要がある方\n・お薬の飲み忘れが多い方\n・複数のお薬を管理したい方\n・家族のお薬管理をしたい方\n・サプリメントの服用管理をしたい方\n\n【無料版】\n・3種類までお薬を登録可能\n・基本的な通知機能\n・服用履歴の記録\n\n【プレミアム版】\n・無制限のお薬登録\n・繰り返し通知機能\n・広告なし\n\n飲み忘れゼロの毎日を、お薬リマインダーで。\n\n【リンク】\n・サポート: https://tsuzukit.com/contact/\n・利用規約: https://tsuzukit.com/legal/terms-of-service.html\n・プライバシーポリシー: https://tsuzukit.com/legal/privacy-policy.html\n・特定商取引法に基づく表記: https://tsuzukit.com/legal/commercial-law.html",
+      "release_notes": "細かな不具合の修正",
       "content_advisory_rating": "4+",
       "minimum_os_version": "17.0",
       "developer_name": "Ryo Tsudukihashi",
@@ -1424,105 +2099,6 @@
       "seller_name": "TsuzuKit"
     },
     {
-      "bundle_id": "com.tsuzuki817.birthdaymoon",
-      "name": "バースデームーン",
-      "app_store_url": "https://apps.apple.com/jp/app/%E3%83%90%E3%83%BC%E3%82%B9%E3%83%87%E3%83%BC%E3%83%A0%E3%83%BC%E3%83%B3/id6737449860?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/db/fd/fb/dbfdfb32-a4b2-8cad-b8d7-1131e4ea7d24/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.jpg",
-      "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/34/d9/22/34d922ba-84ec-f29b-4db3-80da05f06f5c/6.9inc.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/3e/7a/c7/3e7ac711-25c4-d9ab-3c49-94c825984083/6.9inc.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/79/e1/fc/79e1fc59-45c3-04bf-b4cc-e591762b9ee2/6.9inc.003.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/02/03/0e/02030ef2-8515-0a08-e100-cc91cf279510/6.9inc.004.jpeg/626x0w.webp"
-      ],
-      "ipad_screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d6/ca/a5/d6caa5ac-d717-0386-f0b4-9f94e968e504/13inch.004.jpeg/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ec/a4/0a/eca40a55-1d2d-be9b-1753-312e6b4a1799/13inch.001.jpeg/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/4a/25/1f/4a251f76-353d-fa10-76f3-b7d94f54ac52/13inch.002.jpeg/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f1/47/61/f14761c8-fe70-fb15-ff3f-9acdce475c75/13inch.003.jpeg/360x480bb.jpg"
-      ],
-      "price": "無料",
-      "currency": "JPY",
-      "genres": [
-        "グラフィック／デザイン",
-        "エンターテインメント"
-      ],
-      "primary_genre": "Graphics & Design",
-      "rating": 3.875,
-      "rating_count": 8,
-      "version": "1.1.1",
-      "release_date": "2024-10-29T07:00:00Z",
-      "current_version_release_date": "2026-01-29T01:46:02Z",
-      "description": "バースデームーン - 誕生日カラーで月をカスタマイズ\n\nあなたの誕生日カラーで美しい月を作成し、大切な人とのつながりを表現できるアプリです。\n\n主な機能\n• 366日それぞれの誕生日カラーで月を彩色\n• 2つの誕生日カラーを混合して特別な月を作成\n• 満月、三日月、土星、木星、雲など6種類の月タイプ\n• カスタム画像に誕生日カラーを適用する自由形機能\n• 高画質での画像保存とカメラロールへの自動保存\n• 日付ピンで誕生日を月上に表示\n\nこんな使い方ができます\n恋人や友人、推しとの誕生日カラーを組み合わせて、あなただけの特別な月を作成。完成した美しい月の画像は、スマホの壁紙やSNSでのシェアに最適です。\n\nプレミアム機能\n• 自由形機能でオリジナル画像をカスタマイズ\n• 広告なしの快適な利用環境\n\n誕生日という特別な日に込められた意味を、美しい月のアートで表現してみませんか。あなたの物語を月に託して、大切な人とのつながりを可視化する新し\nい体験をお楽しみください。",
-      "release_notes": "細かな不具合の修正",
-      "content_advisory_rating": "4+",
-      "minimum_os_version": "18.0",
-      "developer_name": "Ryo Tsudukihashi",
-      "seller_name": "TsuzuKit"
-    },
-    {
-      "bundle_id": "com.tsuzukit.MedicineReminder",
-      "name": "お薬リマインダー 服用管理",
-      "app_store_url": "https://apps.apple.com/jp/app/%E3%81%8A%E8%96%AC%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%80%E3%83%BC-%E6%9C%8D%E7%94%A8%E7%AE%A1%E7%90%86/id6756915544?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/36/20/93/362093f8-b3e0-17c2-15c7-f6af3af7a106/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg",
-      "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ef/57/29/ef572990-f149-e97c-87db-646f55a01811/6.5inch.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/6d/35/f7/6d35f762-84f5-7c57-5634-21786a8078e1/6.5inch.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8a/b9/16/8ab91648-9ea7-96b3-e8d2-52dff6b68894/6.5inch.003.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ce/ed/bc/ceedbc62-76db-e53d-0df1-a9339c430dee/6.5inch.004.jpeg/626x0w.webp"
-      ],
-      "ipad_screenshots": [],
-      "price": "無料",
-      "currency": "JPY",
-      "genres": [
-        "メディカル",
-        "ユーティリティ"
-      ],
-      "primary_genre": "Medical",
-      "rating": 3.33333,
-      "rating_count": 3,
-      "version": "1.2.0",
-      "release_date": "2025-12-28T08:00:00Z",
-      "current_version_release_date": "2026-02-24T01:46:51Z",
-      "description": "お薬リマインダーは、毎日のお薬の服用を忘れないためのシンプルで使いやすいアプリです。\n\n【主な機能】\n・服用タイミング通知 - 朝食前/後、昼食前/後、夕食前/後、就寝前など\n・残量管理 - お薬の残り数を管理し、少なくなったらお知らせ\n・服用履歴 - カレンダーで服用状況を一目で確認\n・写真登録 - お薬の写真を登録して識別しやすく\n・ホーム画面ウィジェット - 今日の服用状況をすぐ確認\n・通知時間カスタマイズ - ライフスタイルに合わせて設定\n\n【こんな方におすすめ】\n・毎日お薬を飲む必要がある方\n・お薬の飲み忘れが多い方\n・複数のお薬を管理したい方\n・家族のお薬管理をしたい方\n・サプリメントの服用管理をしたい方\n\n【無料版】\n・3種類までお薬を登録可能\n・基本的な通知機能\n・服用履歴の記録\n\n【プレミアム版】\n・無制限のお薬登録\n・繰り返し通知機能\n・広告なし\n\n飲み忘れゼロの毎日を、お薬リマインダーで。\n\n【リンク】\n・サポート: https://tsuzukit.com/contact/\n・利用規約: https://tsuzukit.com/legal/terms-of-service.html\n・プライバシーポリシー: https://tsuzukit.com/legal/privacy-policy.html\n・特定商取引法に基づく表記: https://tsuzukit.com/legal/commercial-law.html",
-      "release_notes": "細かな不具合の修正",
-      "content_advisory_rating": "4+",
-      "minimum_os_version": "17.0",
-      "developer_name": "Ryo Tsudukihashi",
-      "seller_name": "TsuzuKit"
-    },
-    {
-      "bundle_id": "com.tsuzukit.AnniversaryQuest",
-      "name": "記念日リマインダー - メモリア",
-      "app_store_url": "https://apps.apple.com/jp/app/%E8%A8%98%E5%BF%B5%E6%97%A5%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%80%E3%83%BC-%E3%83%A1%E3%83%A2%E3%83%AA%E3%82%A2/id6758575269?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/36/53/82/36538239-c1d1-31a2-c278-3bb4c008976e/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
-      "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9a/a5/ac/9aa5ac4e-4af9-3c0e-edf8-99a70088b303/6.5inch.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3f/b0/57/3fb057fa-2741-e09f-2421-7ed78eaa08b1/6.5inch.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/56/e4/1f/56e41f02-35d8-0095-e208-5552a279b345/6.5inch.003.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a7/f4/a0/a7f4a0cf-3722-40ee-3c44-a1e1faee76ed/6.5inch.004.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/24/05/82/240582fa-9267-ef3a-d21f-e4c9eab2f868/6.5inch.005.jpeg/626x0w.webp"
-      ],
-      "ipad_screenshots": [],
-      "price": "無料",
-      "currency": "JPY",
-      "genres": [
-        "ライフスタイル",
-        "ユーティリティ"
-      ],
-      "primary_genre": "Lifestyle",
-      "rating": 0,
-      "rating_count": 0,
-      "version": "1.0",
-      "release_date": "2026-02-08T08:00:00Z",
-      "current_version_release_date": "2026-02-09T00:30:03Z",
-      "description": "「あれ、結婚記念日いつだっけ…？」\nもう、大切な日を忘れません。\n\nメモリアは、結婚記念日・誕生日・命日など、あなたの大切な記念日を管理し、事前に通知するリマインダーアプリです。95種類以上のカテゴリから選ぶだけで、簡単に記念日を登録できます。\n\n--------------------\n▼ 95種類以上の記念日カテゴリ\n--------------------\n・恋愛・結婚 … 結婚記念日、入籍日、交際記念日、プロポーズ、初デート、出会った日\n・家族 … 誕生日、出産予定日、命日、七五三、成人式、還暦\n・友人 … 友人の誕生日、親友記念日、同窓会\n・ペット … ペットの誕生日、お迎え記念日、命日\n・仕事 … 入社日、昇進、起業、退職\n・学校 … 入学、卒業、資格取得\n・生活 … 新居、引っ越し、禁煙開始日\n・旅行 … 旅行記念日、コンサート、特別な思い出\n・趣味 … 趣味開始日、大会、目標達成\n・カスタム … 自分だけのオリジナルカテゴリ作成\n\n--------------------\n▼ 主な機能\n--------------------\n【カウントダウン】\n次の記念日まであと何日かを一目で確認。何周年かも自動計算します。\n\n【事前通知】\n1ヶ月前・1週間前・前日・当日など、忘れる前に通知でお知らせ。プレゼントの準備も余裕を持ってできます。\n\n【ホーム画面ウィジェット】\nアプリを開かなくても、ホーム画面で次の記念日をいつでも確認できます。\n\n【記念日ログ】\n過去の記念日の思い出をメモや写真で記録。「去年は何をしたっけ？」がすぐにわかります。\n\n【カスタムカテゴリ】\nアイコンと色を選んで、自分だけのオリジナルカテゴリを作成できます。\n\n--------------------\n▼ こんな方におすすめ\n--------------------\n・結婚記念日を忘れて怒られたことがある方\n・大切な人の誕生日をうっかり忘れがちな方\n・カップルで特別な日を大切にしたい方\n・ご家族の命日を忘れずに過ごしたい方\n・「今年で何周年だっけ？」と毎年悩む方\n\n--------------------\n▼ 料金プラン\n--------------------\n【無料】\n・記念日3件まで登録可能\n・基本通知機能\n・広告表示あり\n\n【プレミアム】\n・記念日を無制限に登録\n・通知時間のカスタマイズ\n・記念日ログ機能（写真・メモ）\n・広告なしで快適に利用\n\n--------------------\n\n大切な記念日、もう忘れない。\nメモリアで、あなたの特別な日を守ります。\n\n--------------------\n▼ リンク\n--------------------\nサポート・お問い合わせ:\nhttps://tsuzukit.com/contact/\n\n利用規約:\nhttps://tsuzukit.com/legal/terms-of-service.html\n\nプライバシーポリシー:\nhttps://tsuzukit.com/legal/privacy-policy.html\n\n特定商取引法に基づく表記:\nhttps://tsuzukit.com/legal/commercial-law.html",
-      "release_notes": null,
-      "content_advisory_rating": "4+",
-      "minimum_os_version": "17.0",
-      "developer_name": "Ryo Tsudukihashi",
-      "seller_name": "TsuzuKit"
-    },
-    {
       "bundle_id": "com.tsuzukit.EyeDrop",
       "name": "目薬リマインダー ~ EyeDrop 点眼管理 ~",
       "app_store_url": "https://apps.apple.com/jp/app/%E7%9B%AE%E8%96%AC%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%80%E3%83%BC-eyedrop-%E7%82%B9%E7%9C%BC%E7%AE%A1%E7%90%86/id6757758987?uo=4",
@@ -1548,71 +2124,6 @@
       "current_version_release_date": "2026-05-02T06:50:40Z",
       "description": "目薬の点眼、つい忘れてしまいませんか？\nEyeDropは、点眼スケジュールを管理して通知でお知らせする無料アプリです。\n\n■ こんなお悩みを解決\n・眼科で処方された目薬を忘れずに使いたい\n・1日に何度も点眼するのを覚えていられない\n・複数の目薬を使い分けている\n・目薬の使用期限が切れていた経験がある\n\n■ 主な機能\n【複数の目薬を一括管理】\nドライアイ用、花粉症・アレルギー用、緑内障・白内障の処方薬など、複数の目薬を登録できます。それぞれの点眼スケジュールを個別に設定可能。\n\n【忘れない通知】\n設定した時間に通知でお知らせ。1日1回から数時間おきの点眼まで、柔軟に設定できます。\n\n【ワンタップで点眼記録】\n通知をタップするだけで点眼完了を記録。忙しい時でも手間なく続けられます。\n\n【ホーム画面ウィジェット】\n次の点眼時間をウィジェットで確認。アプリを開かなくてもスケジュールが分かります。\n\n【使用期限管理】\n目薬の開封日を記録して、使用期限をお知らせ。衛生的に目薬を使えます。\n\n【点眼履歴・統計】\nカレンダーで点眼履歴を確認。継続状況が一目で分かります。\n\n■ こんな方におすすめ\n・眼科で処方された目薬を使用中の方\n・ドライアイで定期的な点眼が必要な方\n・花粉症・アレルギーで目薬を使う方\n・緑内障・白内障で毎日の点眼が欠かせない方\n・コンタクトレンズで目の乾燥が気になる方\n・デスクワーク・在宅勤務で眼精疲労がある方\n\n■ 料金プラン\n【無料版】\n・目薬3件まで登録\n・点眼通知\n・ウィジェット\n\n【プレミアム版】\n・目薬の登録無制限\n・繰り返し通知（毎日・毎週・毎月）\n・詳細な統計\n・広告非表示\n\n目の健康は毎日の習慣から。EyeDropで点眼を習慣化しましょう。\n\n■ リンク\n・サポート: https://tsuzukit.com/contact/\n・利用規約: https://tsuzukit.com/legal/terms-of-service.html\n・プライバシーポリシー: https://tsuzukit.com/legal/privacy-policy.html",
       "release_notes": "今回のアップデート内容\n・点眼間隔に12時間を追加\n1日2回の処方や術後の服薬管理に対応しました。\n・点眼スケジュール機能\n点眼の開始日と期間を設定でき、終了日を過ぎると通知が自動で停止します。\n・段階的減薬（テーパリング）に対応\n週ごとに1回ずつ点眼回数を減らす処方を自動でスケジュール。ステロイド点眼などで活躍します。\n・Widgetを刷新\n今日の進捗、コース残日数、減薬週数をホーム画面で一目で確認できるようになりました。\n要望をくださったユーザーの皆さま、ありがとうございました。",
-      "content_advisory_rating": "12+",
-      "minimum_os_version": "17.0",
-      "developer_name": "Ryo Tsudukihashi",
-      "seller_name": "TsuzuKit"
-    },
-    {
-      "bundle_id": "com.tsuzukit.DailySnap",
-      "name": "思い出カレンダー - 1日1枚フォト日記",
-      "app_store_url": "https://apps.apple.com/jp/app/%E6%80%9D%E3%81%84%E5%87%BA%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%80%E3%83%BC-1%E6%97%A51%E6%9E%9A%E3%83%95%E3%82%A9%E3%83%88%E6%97%A5%E8%A8%98/id6757349187?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b0/28/73/b028733a-c2c8-43da-5215-fffa24738b59/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
-      "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/3d/e2/8d/3de28da6-13c8-bb40-00df-92825286d936/6.5inch.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/4c/9c/45/4c9c459b-185f-e3e8-552d-a6ff2c8f75d3/6.5inch.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/6a/c6/19/6ac619dc-57a3-3593-5d93-15257df866d2/6.5inch.003.jpeg/626x0w.webp"
-      ],
-      "ipad_screenshots": [],
-      "price": "無料",
-      "currency": "JPY",
-      "genres": [
-        "ライフスタイル",
-        "ヘルスケア／フィットネス"
-      ],
-      "primary_genre": "Lifestyle",
-      "rating": 0,
-      "rating_count": 0,
-      "version": "1.1.0",
-      "release_date": "2026-01-07T08:00:00Z",
-      "current_version_release_date": "2026-01-30T16:30:34Z",
-      "description": "DailySnapは、毎日1枚の写真で思い出を残すシンプルなフォト日記アプリです。\n\n【主な機能】\n・1日1枚の写真記録 - 今日の特別な瞬間を1枚に\n・思い出カレンダー - カレンダー形式で写真を一覧表示\n・タイムライン表示 - 時系列で思い出を振り返り\n・1年前の今日通知 - 過去の自分からのプレゼント\n・連続記録カウント - モチベーションを維持\n・ホーム画面ウィジェット - 今日の記録状況を確認\n・スタンプ機能 - 写真がない日もスタンプで気持ちを記録\n・カレンダー連携 - iOSカレンダーの予定を表示\n・予定登録 - 未来の日付にメモと通知を設定\n\n【こんな方におすすめ】\n・日記を続けたいけど文章が苦手な方\n・子供やペットの成長記録をつけたい方\n・毎日の小さな幸せを残したい方\n・シンプルなフォト日記アプリを探している方\n・1年後の自分へプレゼントを残したい方\n\n【無料版】\n・30日間の写真保存\n・7日間のタイムライン表示\n・毎日のリマインダー通知\n\n【プレミアム版】\n・無制限の写真保存\n・1年前の今日通知\n・タイムライン無制限表示\n・スタンプ機能\n・過去日付への写真追加\n・広告なし\n\n1日1枚、思い出を残そう。DailySnapで。\n\n【リンク】\n・サポート: https://tsuzukit.com/contact/\n・利用規約: https://tsuzukit.com/legal/terms-of-service.html\n・プライバシーポリシー: https://tsuzukit.com/legal/privacy-policy.html\n・特定商取引法に基づく表記: https://tsuzukit.com/legal/commercial-law.html",
-      "release_notes": "バグ修正\n\n・初回起動時の起動時広告を非表示に変更\n\nご意見・ご要望はサポートまでお気軽にお問い合わせください。",
-      "content_advisory_rating": "4+",
-      "minimum_os_version": "17.0",
-      "developer_name": "Ryo Tsudukihashi",
-      "seller_name": "TsuzuKit"
-    },
-    {
-      "bundle_id": "com.tsuzuki817.SwipeClean",
-      "name": "スワイポン - スワイプで写真と動画を簡単整理",
-      "app_store_url": "https://apps.apple.com/jp/app/%E3%82%B9%E3%83%AF%E3%82%A4%E3%83%9D%E3%83%B3-%E3%82%B9%E3%83%AF%E3%82%A4%E3%83%97%E3%81%A7%E5%86%99%E7%9C%9F%E3%81%A8%E5%8B%95%E7%94%BB%E3%82%92%E7%B0%A1%E5%8D%98%E6%95%B4%E7%90%86/id6752831862?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/11/e3/16/11e31605-1163-3718-1ffd-4aba66432224/swipeclean-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
-      "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/85/20/6f/85206f11-ce42-acb8-294c-9aabac676a8e/6.5inch.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/fd/00/48/fd00480e-cc62-27ff-0c46-c367b09158cb/6.5inch.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/28/01/a3/2801a355-8efc-e9ae-d838-f0115a472d2c/6.5inch.003.jpeg/626x0w.webp"
-      ],
-      "ipad_screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2b/8a/3d/2b8a3def-d3de-7a06-9f51-081df896984c/ja-1-pad1_2.png/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/32/8e/c2/328ec203-73b5-4d26-6a56-123bb37ea9bd/ja-2-pad2_2.png/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/eb/1b/bc/eb1bbc95-7b27-1954-3a52-46671c185a1e/ja-3-pad3_2.png/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2b/ca/6d/2bca6db8-b94f-ee19-6863-4cab34f5bf99/ja-4-pad4_2.png/360x480bb.jpg"
-      ],
-      "price": "無料",
-      "currency": "JPY",
-      "genres": [
-        "ユーティリティ",
-        "仕事効率化"
-      ],
-      "primary_genre": "Utilities",
-      "rating": 4.75,
-      "rating_count": 4,
-      "version": "1.3.1",
-      "release_date": "2025-09-25T07:00:00Z",
-      "current_version_release_date": "2025-10-07T02:29:24Z",
-      "description": "「iPhoneのストレージがありません」\nその通知、もう見飽きていませんか！？\n\nスワイポンは、溜まりすぎた写真や動画を驚くほど簡単に整理できる、新しいストレージクリーナーアプリです！\n\n名前の由来は「スワイプでぽんっと簡単削除！」\nゲーム感覚で、不要なスクリーンショットや画像をサクサク仕分けできます。面倒なアルバムの掃除や写真管理は、もう必要ありません。\n\n【主な機能】\n□ 簡単スワイプ操作：残すか削除するかを直感的に選択。難しい操作は一切ありません。\n□ 写真・動画・スクショに対応：カメラロールにある不要なメディアをまとめて整理できます。\n□ 一括削除で一気にスッキリ：整理した画像や動画を一括で削除し、iPhoneの空き容量を確保します。\n□ 解放される容量を表示：削除前にどれだけストレージが軽くなるかを確認できるので、やる気が続きます。\n\n【こんな方におすすめ】\n□ スクリーンショットをメモ代わりにたくさん撮る方\n□ iPhoneが重い、動作が遅いと感じる方\n□ アルバムやカメラロールの掃除が面倒だと感じる方\n□ シンプルな無料アプリで手軽にストレージの軽量化や容量管理をしたい方\n\n面倒な写真管理はもう終わり。\nスワイポンで、あなたのiPhoneを今すぐ軽く、快適にしませんか？\nダウンロードして、その爽快感を体験してください。\n\n利用規約:\nhttps://www.apple.com/legal/internet-services/itunes/dev/stdeula/\nプライバシーポリシー:\nhttps://tsuzuki817.com/legal/privacy-policy.html",
-      "release_notes": "対応言語の追加を行いました！",
       "content_advisory_rating": "12+",
       "minimum_os_version": "17.0",
       "developer_name": "Ryo Tsudukihashi",
@@ -1683,40 +2194,6 @@
       "current_version_release_date": "2026-04-16T16:27:14Z",
       "description": "めくるんは、本物の日めくりカレンダーの体験をiPhoneで再現するアプリです。\n\n■ ビリッと破る快感\n画面を下に引っ張ると、紙がビリビリと破れてめくれます。破り方によって破け方が変わる、リアルな物理演出をお楽しみください。触覚フィードバックと破れ音で、まるで本物の紙を破っているような感覚。\n\n■ 毎日が特別な一日に\n・六曜（大安・仏滅など）を毎日表示\n・日替わりの名言で心に響く言葉をお届け\n・iPhoneカレンダーの予定も表示\n\n■ 美しいテーマ\n和風、レトロ、ポップ、ダークなど、お好みのテーマでカレンダーをカスタマイズ。Google Fontsの美しい日本語フォントを使用しています。\n\n■ めくった日々を振り返る\nめくった紙は積み重なっていきます。過去のページを振り返って、あの日の名言やメモを読み返しましょう。\n\n毎朝、めくるんでカレンダーをビリッとめくる。そんな小さな習慣が、一日の始まりを特別にします。\n\n利用規約: https://tsuzukit.com/legal/terms-of-service.html\nプライバシーポリシー: https://tsuzukit.com/legal/privacy-policy.html",
       "release_notes": "・名言のお気に入り機能を追加しました（プレミアム会員限定）\n・気に入った名言はハートボタンでいつでも見返せます\n・細かな不具合を修正しました",
-      "content_advisory_rating": "4+",
-      "minimum_os_version": "17.0",
-      "developer_name": "Ryo Tsudukihashi",
-      "seller_name": "TsuzuKit"
-    },
-    {
-      "bundle_id": "com.tsuzuki817.MusicSnapshot",
-      "name": "Music Snapshot 〜あなたの音楽を一枚に〜",
-      "app_store_url": "https://apps.apple.com/jp/app/music-snapshot-%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AE%E9%9F%B3%E6%A5%BD%E3%82%92%E4%B8%80%E6%9E%9A%E3%81%AB/id6605937062?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/eb/e4/76/ebe476be-e8ba-e61a-6c37-0e385fe664e2/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.jpg",
-      "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/7a/59/31/7a593168-0151-db12-e8ac-f8723d8267c8/6.5inch.004.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/43/5d/dc/435ddcfa-cddb-e423-9aa6-82e038044a38/6.5inch.005.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/88/d7/c0/88d7c009-01c2-7d45-eee7-c29f5d7179bd/6.5inch.006.png/626x0w.webp"
-      ],
-      "ipad_screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/7b/c4/a8/7bc4a85e-a87d-0bee-ab9e-78d3fbb360dc/13inch.004.png/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/86/3b/12/863b12e8-375e-0684-b71b-b9a6367c46e2/13inch.005.png/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/59/ea/bb/59eabbfb-9d4e-2107-17b8-a7cc8d5a36b2/13inch.006.png/360x480bb.jpg"
-      ],
-      "price": "¥100",
-      "currency": "JPY",
-      "genres": [
-        "ミュージック",
-        "グラフィック／デザイン"
-      ],
-      "primary_genre": "Music",
-      "rating": 5,
-      "rating_count": 1,
-      "version": "1.0.1",
-      "release_date": "2025-03-05T08:00:00Z",
-      "current_version_release_date": "2025-03-06T21:14:44Z",
-      "description": "「Music Snapshot」は、Apple Musicの最近聴いた曲やお気に入りの曲を壁紙にしてシェアすることができます。\nあなたの音楽ライフをアートに変えましょう。\n\n主な機能:\n\n□最近のあなたを構成している音楽\n□人生で一番聴いている音楽\n□最近聞けていない音楽\n□最近追加した音楽\n\nあなたの音楽の瞬間をキャプチャし、シェアすることで、友達や家族と音楽の楽しさを共有しましょう！",
-      "release_notes": "音楽にArtwork情報がないときのデザインを変更しました！\nまた、壁紙を直接ダウンロードできるボタンを追加しました！",
       "content_advisory_rating": "4+",
       "minimum_os_version": "17.0",
       "developer_name": "Ryo Tsudukihashi",
@@ -1939,410 +2416,6 @@
       "release_notes": "- 対応言語を大幅に拡充しました（100以上の言語を新たに追加）\n- バグ修正とパフォーマンスの改善",
       "content_advisory_rating": "4+",
       "minimum_os_version": "18.0",
-      "developer_name": "Ryo Tsudukihashi",
-      "seller_name": "TsuzuKit"
-    },
-    {
-      "bundle_id": "com.tsuzuki817.LetterBox",
-      "name": "言の葉箱 〜大切な手紙を簡単に記録〜",
-      "app_store_url": "https://apps.apple.com/jp/app/%E8%A8%80%E3%81%AE%E8%91%89%E7%AE%B1-%E5%A4%A7%E5%88%87%E3%81%AA%E6%89%8B%E7%B4%99%E3%82%92%E7%B0%A1%E5%8D%98%E3%81%AB%E8%A8%98%E9%8C%B2/id6749537777?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/82/95/f3/8295f3cc-d094-690c-e71c-0c6ec70c77a3/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
-      "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/8f/82/9d/8f829d15-9c26-36b7-4b2a-6f4e110f2dce/6.9inch.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/30/36/ce/3036ceba-f1cc-2958-71f2-46117a6142f2/6.9inch.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0c/14/3a/0c143ad2-a290-145b-f464-b25e041d226d/6.9inch.003.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/43/84/da/4384da95-07cb-41ef-6c3e-ffd79eafd15d/6.9inch.004.jpeg/626x0w.webp"
-      ],
-      "ipad_screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/75/42/aa/7542aa4b-c699-8a0b-fda1-56ca752ef82e/13inch.001.jpeg/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/df/2d/67/df2d67b2-8ed1-35ca-8357-1b32e3e31387/13inch.002.jpeg/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f1/b4/cb/f1b4cb53-2139-e25f-1e88-7bbdccfbca89/13inch.003.jpeg/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a4/cb/e8/a4cbe858-2003-40fa-8282-a96fc217823c/13inch.004.jpeg/360x480bb.jpg"
-      ],
-      "price": "無料",
-      "currency": "JPY",
-      "genres": [
-        "ユーティリティ",
-        "仕事効率化"
-      ],
-      "primary_genre": "Utilities",
-      "rating": 1,
-      "rating_count": 1,
-      "version": "1.0",
-      "release_date": "2025-08-28T07:00:00Z",
-      "current_version_release_date": "2025-08-28T13:34:16Z",
-      "description": "「あの時もらった手紙、どこにしまったかな…？」\n\n『手紙箱』は、そんなあなたの大切な思い出を、永遠に色褪せない宝物に変えるアプリです。\nかさばる手紙やハガキを写真に撮るだけで、いつでも、どこでも、あの日の言葉を読み返すことができます。\n\n■ 簡単スキャンで、すっきり整理\nたった数タップで、大切な手紙をデータとして保存。物理的な保管場所に悩むことなく、思い出をスマートに整理整頓できます。もう「捨てられない」と悩む必要はありません。\n\n■ 探したい言葉が、すぐに見つかる\n独自の文字認識（OCR）技術で、写真に写った手書きの文字もテキスト化。\n差出人はもちろん、「ありがとう」「おめでとう」といったキーワードで、思い出のメッセージを瞬時に検索できます。\n\n■ カレンダーで思い出を振り返る\n「いつ、誰から」もらったかを記録し、カレンダーで表示。記念日や誕生日にもらった手紙を辿るなど、あなただけのライフログとしても楽しめます。\n\nさあ、あなただけのかけがえのない宝箱を作りましょう。\n\n□ その他情報\n・利用規約\nhttps://tsuzuki817.com/legal/terms-of-service.html\n\n・プライバシーポリシー\nhttps://tsuzuki817.com/legal/privacy-policy.html\n\n・特定商取引法に基づく表示\nhttps://tsuzuki817.com/legal/commercial-law.html",
-      "release_notes": null,
-      "content_advisory_rating": "4+",
-      "minimum_os_version": "17.0",
-      "developer_name": "Ryo Tsudukihashi",
-      "seller_name": "TsuzuKit"
-    },
-    {
-      "bundle_id": "com.tsuzukit.CheckInSenior",
-      "name": "見守りリマインダー - みまもり",
-      "app_store_url": "https://apps.apple.com/jp/app/%E8%A6%8B%E5%AE%88%E3%82%8A%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%80%E3%83%BC-%E3%81%BF%E3%81%BE%E3%82%82%E3%82%8A/id6758816691?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/81/c0/15/81c01572-c42c-1443-b735-8d6ee23c1014/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
-      "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9f/f6/81/9ff681f3-92e6-7e54-ef26-75df536819f2/6.5inch.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ef/05/95/ef059533-7501-405c-a6a4-e448536a849b/6.5inch.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/16/a6/cb/16a6cb0c-3fb1-b67d-d1bd-012c3e42bdf9/6.5inch.003.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ce/e3/13/cee3131e-d740-b2c2-705c-98452238aa5c/6.5inch.004.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ab/4e/b7/ab4eb761-a143-53d0-4cf4-5b9e51fb87f1/6.5inch.005.jpeg/626x0w.webp"
-      ],
-      "ipad_screenshots": [],
-      "price": "無料",
-      "currency": "JPY",
-      "genres": [
-        "ライフスタイル",
-        "ソーシャルネットワーキング"
-      ],
-      "primary_genre": "Lifestyle",
-      "rating": 0,
-      "rating_count": 0,
-      "version": "1.0",
-      "release_date": "2026-02-08T08:00:00Z",
-      "current_version_release_date": "2026-02-09T00:54:35Z",
-      "description": "「最後にいつ電話したっけ...」\n\n離れて暮らす両親や祖父母への連絡、つい忘れがちになっていませんか？\n見守りリマインダーは、大切な家族への定期的な連絡を忘れないためのシンプルなアプリです。\n\n【主な機能】\n- 見守り対象者の登録（父、母、祖父母など）\n- 連絡頻度の設定（毎日/週1回/月1回など）\n- 連絡方法の記録（電話/訪問/ビデオ通話）\n- 連絡が遅れたらお知らせ\n- 話題提案機能（季節の話題、健康の話題など）\n\n【こんな方におすすめ】\n- 実家が遠く、定期的な連絡を忘れがちな方\n- 一人暮らしの親が心配な方\n- 両親への電話を習慣化したい方\n- 介護中で連絡管理をしたい方\n- 離れた祖父母との関係を大切にしたい方\n\n【無料版】\n- 2人まで登録可能\n- 連絡記録・リマインダー通知\n\n【プレミアム版】\n- 無制限の対象者登録\n- 話題提案機能\n- 広告なし\n\n忙しい日々の中でも、大切な家族との絆を守りましょう。\n\n【リンク】\n・サポート: https://tsuzukit.com/contact/\n・利用規約: https://tsuzukit.com/legal/terms-of-service.html\n・プライバシーポリシー: https://tsuzukit.com/legal/privacy-policy.html\n・特定商取引法に基づく表記: https://tsuzukit.com/legal/commercial-law.html",
-      "release_notes": null,
-      "content_advisory_rating": "4+",
-      "minimum_os_version": "17.0",
-      "developer_name": "Ryo Tsudukihashi",
-      "seller_name": "TsuzuKit"
-    },
-    {
-      "bundle_id": "com.tsuzukit.HorseTicketGenerator",
-      "name": "馬券ジェネレーター",
-      "app_store_url": "https://apps.apple.com/jp/app/%E9%A6%AC%E5%88%B8%E3%82%B8%E3%82%A7%E3%83%8D%E3%83%AC%E3%83%BC%E3%82%BF%E3%83%BC/id6757259211?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/3f/69/67/3f696767-f83f-49f3-a22f-b8228cffeb02/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg",
-      "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c7/66/1c/c7661cc7-e2ce-6467-981c-f4bf3c10f954/_U99ac_U5238_U30b7_U3099_U30a7_U30cd_U30ec_U30fc_U30bf.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/45/96/3f/45963fd5-67d6-33f7-f005-c5fa0dd7b68b/_U99ac_U5238_U30b7_U3099_U30a7_U30cd_U30ec_U30fc_U30bf.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/71/47/25/71472508-1ba3-bc9f-98ab-ba4cd22e9271/_U99ac_U5238_U30b7_U3099_U30a7_U30cd_U30ec_U30fc_U30bf.003.jpeg/626x0w.webp"
-      ],
-      "ipad_screenshots": [],
-      "price": "無料",
-      "currency": "JPY",
-      "genres": [
-        "グラフィック／デザイン"
-      ],
-      "primary_genre": "Graphics & Design",
-      "rating": 0,
-      "rating_count": 0,
-      "version": "1.0",
-      "release_date": "2026-01-04T08:00:00Z",
-      "current_version_release_date": "2026-01-05T02:35:27Z",
-      "description": "馬券ジェネレーターは、JRA風のリアルな馬券を簡単に作成できるエンターテイメントアプリです。\n\n【こんな時に使えます】\n- 推しの名前で馬券を作りたい！\n- 友達へのネタプレゼントに！\n- 競馬場での話題作りに！\n- SNS投稿用のネタ画像に！\n\n【主な機能】\n- JRAの馬券そっくりなデザイン\n- 複数の馬券種別に対応（単勝・複勝・馬連・ワイド・馬単・3連複・3連単）\n- 好きな馬名・金額を自由に設定\n- 高解像度での画像保存\n- 作成した馬券の履歴管理\n- シェア機能で簡単に共有\n\n【プレミアム機能】\n- 広告の完全削除\n- 高解像度出力\n- 印刷に最適な画質\n\n【注意事項】\nこのアプリで生成した画像は実際の馬券ではありません。ジョーク・エンターテイメント目的でのみご利用ください。\n\n推しの名前で勝馬投票券を作って、友達や仲間と楽しもう！",
-      "release_notes": null,
-      "content_advisory_rating": "4+",
-      "minimum_os_version": "17.0",
-      "developer_name": "Ryo Tsudukihashi",
-      "seller_name": "TsuzuKit"
-    },
-    {
-      "bundle_id": "com.tsuzukit.BaseReminder",
-      "name": "リマインダー 記憶を呼び起こす",
-      "app_store_url": "https://apps.apple.com/jp/app/%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%80%E3%83%BC-%E8%A8%98%E6%86%B6%E3%82%92%E5%91%BC%E3%81%B3%E8%B5%B7%E3%81%93%E3%81%99/id6756901694?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e0/5b/29/e05b2975-7c56-3f93-5902-f885c2e390ed/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg",
-      "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/66/f7/57/66f75751-b8c1-ecfa-f932-41466c637708/6.5inch.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/22/7d/9c/227d9c27-8e1e-8df6-d32f-8ef3176f2acd/6.5inch.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/50/24/c4/5024c47f-851a-d819-6322-007c813c2327/6.5inch.003.jpeg/626x0w.webp"
-      ],
-      "ipad_screenshots": [],
-      "price": "無料",
-      "currency": "JPY",
-      "genres": [
-        "仕事効率化",
-        "ユーティリティ"
-      ],
-      "primary_genre": "Productivity",
-      "rating": 0,
-      "rating_count": 0,
-      "version": "1.0",
-      "release_date": "2025-12-23T08:00:00Z",
-      "current_version_release_date": "2025-12-24T06:24:34Z",
-      "description": "シンプルリマインダーは、大切な予定を忘れないためのシンプルなリマインダーアプリです。\n\n【主な機能】\n・リマインダーの作成・編集・削除\n・指定した日時に通知でお知らせ\n・繰り返し設定（毎日・毎週・毎月）※プレミアム機能\n・シンプルで使いやすいインターフェース\n\n【こんな方におすすめ】\n・予定を忘れがちな方\n・シンプルなリマインダーアプリを探している方\n・複雑な機能は不要で、通知だけほしい方\n\n【無料版】\n・3件までリマインダーを作成可能\n・基本的な通知機能\n\n【プレミアム版】\n・無制限のリマインダー作成\n・繰り返し機能（毎日・毎週・毎月）\n・広告なし\n\n大切な予定を、シンプルリマインダーで管理しましょう。\n\n【リンク】\n・サポート: https://tsuzukit.com/contact/\n・利用規約: https://tsuzukit.com/legal/terms-of-service.html\n・プライバシーポリシー: https://tsuzukit.com/legal/privacy-policy.html\n・特定商取引法に基づく表記: https://tsuzukit.com/legal/commercial-law.html",
-      "release_notes": null,
-      "content_advisory_rating": "4+",
-      "minimum_os_version": "17.0",
-      "developer_name": "Ryo Tsudukihashi",
-      "seller_name": "TsuzuKit"
-    },
-    {
-      "bundle_id": "com.tsuzukit.DaydreamCamera",
-      "name": "空想旅行カメラ - AIで世界をスナップ",
-      "app_store_url": "https://apps.apple.com/jp/app/%E7%A9%BA%E6%83%B3%E6%97%85%E8%A1%8C%E3%82%AB%E3%83%A1%E3%83%A9-ai%E3%81%A7%E4%B8%96%E7%95%8C%E3%82%92%E3%82%B9%E3%83%8A%E3%83%83%E3%83%97/id6755984490?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d0/23/b5/d023b55f-db83-f180-d2f3-157f24a9b83f/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.jpg",
-      "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0e/e7/e4/0ee7e441-8e2b-a482-a293-7792dff83b2c/6.5inch.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e0/20/69/e02069dd-3cf2-8da9-a97c-465010cfb65b/6.5inch.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d7/35/9e/d7359e73-ef71-6e5b-a67f-06c4d401be42/6.5inch.003.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2f/45/34/2f4534a8-a3da-7ed9-6af7-6e245b14f0ec/6.5inch.004.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2f/d2/fd/2fd2fd31-fc75-8f31-d761-b0920f4b0c91/6.5inch.005.jpeg/626x0w.webp"
-      ],
-      "ipad_screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d0/8d/ec/d08decc3-54d6-e802-9949-a930ac4a109a/13inch.001.jpeg/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/cf/fe/e5/cffee503-fd25-c0d0-1b02-4354d18b563e/13inch.002.jpeg/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a3/c9/8b/a3c98bf2-79f0-ba12-71e5-520e87108728/13inch.003.jpeg/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/7e/f8/07/7ef80704-83a3-8c43-9129-e5dfbae462d2/13inch.004.jpeg/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/9a/7b/e0/9a7be0ee-50d8-64eb-7f76-378e1b8d782b/13inch.005.jpeg/360x480bb.jpg"
-      ],
-      "price": "無料",
-      "currency": "JPY",
-      "genres": [
-        "写真／ビデオ",
-        "旅行"
-      ],
-      "primary_genre": "Photo & Video",
-      "rating": 0,
-      "rating_count": 0,
-      "version": "1.1.0",
-      "release_date": "2025-12-03T08:00:00Z",
-      "current_version_release_date": "2025-12-10T00:49:36Z",
-      "description": "パスポートのいらない、0秒の海外旅行へ。\n\n「空想旅行カメラ (Daydream Camera)」は、地図上のあらゆる場所を、AIの力でエモい写真として切り取る新しいカメラアプリです。\n\n実際に行く必要はありません。必要なのは、地図上の「ピン」と、あなたの「想像力」だけ。 フィルムカメラのような手触りで、あなただけの空想の景色をコレクションしましょう。\n\n◆ こんな使い方がおすすめ\n\n【0秒で世界一周】 パリのカフェ、ニューヨークの街角、ウユニ塩湖。 行ってみたかったあの場所にピンを刺してシャッターを切れば、現地の空気感をAIが「写真」として現像します。\n\n【いつもの場所を「エモく」変換】 見慣れた通学路や、地元の駅前。 座標を指定すれば、AIが「もしもそこが映画のワンシーンだったら？」という解釈で、ノスタルジックな風景を描き出します。\n\n【推しとの聖地巡礼】 好きなキャラクターやアイドルの出身地、アニメの聖地。 その場所にピンを刺して、想いを馳せる旅へ出かけましょう。\n\n◆ アプリの機能\n\nMap Finder: 地図を動かして、直感的に撮影場所を探せます。\n\nAI Developing: シャッターを切ると、数秒の現像時間を経て、世界に一枚だけの画像が生成されます。\n\nFilm Log: 撮った写真は、撮影地の住所や日付とともにアルバムに保存されます。\n\n◆ 注意事項\n\n生成される写真はAIによる空想の風景であり、実際の現地の風景とは異なる場合があります。その「ズレ」も含めてお楽しみください。\n\n画像生成には「フィルム（アプリ内アイテム）」が必要です。\n\n■ 公式情報・規約\n\nプライバシーポリシー： https://tsuzukit.com/legal/privacy-policy.html\n\n利用規約： https://tsuzukit.com/legal/terms-of-service.html\n\n特定商取引法に基づく表記： https://tsuzukit.com/legal/commercial-law.html\n\n免責事項： https://tsuzukit.com/legal/disclaimer.html",
-      "release_notes": "シミュレーションで説明できる文字数を1000文字に増やしました！",
-      "content_advisory_rating": "4+",
-      "minimum_os_version": "18.0",
-      "developer_name": "Ryo Tsudukihashi",
-      "seller_name": "TsuzuKit"
-    },
-    {
-      "bundle_id": "com.tsuzuki817.today",
-      "name": "Today -今日は令和何年で何の日？-",
-      "app_store_url": "https://apps.apple.com/jp/app/today-%E4%BB%8A%E6%97%A5%E3%81%AF%E4%BB%A4%E5%92%8C%E4%BD%95%E5%B9%B4%E3%81%A7%E4%BD%95%E3%81%AE%E6%97%A5/id6752814140?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ad/07/e5/ad07e5a2-f7ff-3f4b-c7e3-0563717c30e1/today-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
-      "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1a/58/0b/1a580b25-0169-258f-3ae8-05d7ff253c33/6.5inch.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d7/d1/b9/d7d1b9c0-7e65-04c6-4ddb-2aeddceead51/6.5inch.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b4/5a/8f/b45a8fe4-75dd-5cf6-556e-42c9b9b0a215/6.5inch.003.jpeg/626x0w.webp"
-      ],
-      "ipad_screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/94/22/06/942206e3-8a48-56a5-e1bc-08f5ff43ca69/13inch.002.jpeg/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/82/4a/12/824a1262-8945-6217-551a-f1ba0690a7d9/13inch.001.jpeg/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d8/21/75/d82175e4-b105-ac54-6f48-db568b7e7ab7/13inch.003.jpeg/360x480bb.jpg"
-      ],
-      "price": "無料",
-      "currency": "JPY",
-      "genres": [
-        "辞書／辞典／その他",
-        "仕事効率化"
-      ],
-      "primary_genre": "Reference",
-      "rating": 5,
-      "rating_count": 3,
-      "version": "1.0",
-      "release_date": "2025-09-22T07:00:00Z",
-      "current_version_release_date": "2025-09-22T23:46:10Z",
-      "description": "「あれ、今日って令和何年だっけ？」\n「この書類、和暦で書かなきゃ…」\n「スピーチの冒頭で、なにか気の利いた『今日は何の日』ネタはないかな？」\n\nそんな日常の「ちょっと知りたい」に応える、あなたのためのアプリができました。\n\n『Today』は、西暦・和暦・六曜・祝日・記念日・花言葉・月の満ち欠けなど、「今日」に関するあらゆる情報を、美しく洗練された画面にギュッと凝縮したシンプルなユーティリティアプリです。\n\n毎日の生活や仕事の傍らに、ぜひ『Today』を置いてみてください。\n\n【主な機能】\n\n□ 簡単な日付確認\n西暦だけでなく、「令和◯年」といった和暦や干支、年号の由来まで瞬時に確認できます。\n\n□ 「今日は何の日？」が一目瞭然\n国民の祝日はもちろん、歴史的な出来事や面白い記念日まで、その日に関する情報が満載です。\n\n□ 六曜・暦情報\n大安や仏滅などの「六曜」を毎日表示。冠婚葬祭や大切なイベントの日取り決めに役立ちます。\n\n□ 今日の月\n美しいアイコンで現在の月相（月の満ち欠け）を表示。「次の満月まであと何日？」もすぐに分かります。\n\n□ 今日の花言葉\n毎日変わる花と、その花言葉をご紹介。日常に彩りを添える、ささやかな知識をお届けします。\n\n□ オフラインでも動作\nデータは全てアプリ内に収録。電波が届かない場所でもサクサク快適に動作します。\n\n【こんな方におすすめ】\n\n書類作成などで和暦を頻繁に使う方\n\n営業や接客業で、お客様との会話のきっかけを探している方\n\nスピーチや朝礼のネタに困っている方\n\n日本の暦や文化に興味がある方\n\n毎日のちょっとした雑学や知識を楽しみたいすべての方\n\nさあ、あなたも『Today』で、毎日をもっとスマートに、もっと豊かに過ごしませんか？",
-      "release_notes": null,
-      "content_advisory_rating": "4+",
-      "minimum_os_version": "17.0",
-      "developer_name": "Ryo Tsudukihashi",
-      "seller_name": "TsuzuKit"
-    },
-    {
-      "bundle_id": "com.tsuzuki817.cook-it",
-      "name": "Cook-it -冷蔵庫の中を撮るだけでAIレシピ提案-",
-      "app_store_url": "https://apps.apple.com/jp/app/cook-it-%E5%86%B7%E8%94%B5%E5%BA%AB%E3%81%AE%E4%B8%AD%E3%82%92%E6%92%AE%E3%82%8B%E3%81%A0%E3%81%91%E3%81%A7ai%E3%83%AC%E3%82%B7%E3%83%94%E6%8F%90%E6%A1%88/id6751343632?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5b/cc/48/5bcc48a9-937f-9035-c7aa-66c1f127126c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
-      "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/14/51/5f/14515f44-bf72-6d76-a836-b8a6726ec60c/6.9inch.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/32/48/83/32488394-c53b-d691-54e4-b2a183508995/6.9inch.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c3/de/d4/c3ded498-9fa6-c2cc-844d-43d3553c80af/6.9inch.003.jpeg/626x0w.webp"
-      ],
-      "ipad_screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e0/ae/da/e0aeda46-14a3-e923-617f-c183150a17ac/13inch.001.jpeg/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/7a/8e/25/7a8e25d9-9832-5f2e-e402-2629e7f06247/13inch.002.jpeg/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/8f/93/15/8f931507-d0ee-ad7f-6059-182a225d046d/13inch.003.jpeg/360x480bb.jpg"
-      ],
-      "price": "無料",
-      "currency": "JPY",
-      "genres": [
-        "フード／ドリンク",
-        "ヘルスケア／フィットネス"
-      ],
-      "primary_genre": "Food & Drink",
-      "rating": 0,
-      "rating_count": 0,
-      "version": "1.0.1",
-      "release_date": "2025-09-03T07:00:00Z",
-      "current_version_release_date": "2025-09-16T18:09:18Z",
-      "description": "Cook-itは、毎日の料理をもっと楽しく、確実にするための革新的なレシピアプリです。\nAIによる賢いレシピ提案と、失敗しないタイマー管理で、あなたの料理体験を劇的に改善します。\n\n□ AIレシピ提案\n「豚肉と玉ねぎで何か作りたい」など、自然な言葉でレシピを検索。Gemini AIがあなたにぴったりのレシピを提案します。\n\n□ 食材認識機能\n冷蔵庫の中身を撮影するだけで、AIが食材を認識し、最適なレシピを自動提案。毎日の献立決めがゲーム感覚で楽しくなります。\n\n□ スマートタイマー\nレシピの全工程を一括でタイマー登録\n\n□ 料理記録・統計\n作った料理をカレンダーで管理し、得意料理や調理時間の傾向を分析。料理スキルの成長を可視化できます。\n\n□ レシピコミュニティ\n段取りを含めた詳細なレシピを投稿・共有。みんなの成功体験から学び、料理の腕を確実にレベルアップできます。\n\n□ 機能\n - カメラ具材認識: 冷蔵庫の中身を撮影するだけでレシピ提案\n - 料理カレンダー: 作った料理を記録して振り返り\n - 統計機能: 得意料理や調理時間の分析\n - タイマー機能: 確実なタイマー通知でミスを防止\n\n\n□ その他情報\n・利用規約\nhttps://tsuzuki817.com/legal/terms-of-service.html\n\n・プライバシーポリシー\nhttps://tsuzuki817.com/legal/privacy-policy.html\n\n・特定商取引法に基づく表示\nhttps://tsuzuki817.com/legal/commercial-law.html",
-      "release_notes": "クッキングタイマーの完了をアラームを使って通知することができるようになりました！",
-      "content_advisory_rating": "17+",
-      "minimum_os_version": "18.0",
-      "developer_name": "Ryo Tsudukihashi",
-      "seller_name": "TsuzuKit"
-    },
-    {
-      "bundle_id": "com.tsuzuki817.jellysamepuzzle",
-      "name": "ゼリーセイムパズル",
-      "app_store_url": "https://apps.apple.com/jp/app/%E3%82%BC%E3%83%AA%E3%83%BC%E3%82%BB%E3%82%A4%E3%83%A0%E3%83%91%E3%82%BA%E3%83%AB/id6747354292?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/9a/a0/34/9aa034b0-e88f-cdcf-a05d-37ed7ec4f9ac/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
-      "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/91/98/09/919809df-77ad-2296-eba7-bcd760816417/6.9inc.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/65/60/9a/65609a3b-efa7-51e6-1201-63fc1914f2c2/6.9inc.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/aa/fa/c8/aafac83d-ff84-89af-f2ec-b89e83a2c5ed/6.9inc.003.jpeg/626x0w.webp"
-      ],
-      "ipad_screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ea/f5/97/eaf59710-b5fd-a5e6-4646-da9066291746/13inch.002.jpeg/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/df/ff/95/dfff95d1-0eb4-ba15-a6c8-5fb02ebfc312/13inch.001.jpeg/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a5/4c/ef/a54cef95-0918-5f61-ee8c-c1c724926e0a/13inch.003.jpeg/360x480bb.jpg"
-      ],
-      "price": "無料",
-      "currency": "JPY",
-      "genres": [
-        "ゲーム",
-        "エンターテインメント",
-        "パズル"
-      ],
-      "primary_genre": "Games",
-      "rating": 4.55556,
-      "rating_count": 9,
-      "version": "1.5.4",
-      "release_date": "2025-07-16T07:00:00Z",
-      "current_version_release_date": "2025-09-14T13:38:20Z",
-      "description": "【ゼリーセイムパズルとは？】\n某ゲームサイトで愛された「セイムパズル」の感動が、最新のiOS/iPadOSアプリで蘇ります！\nぷるぷる揺れるゼリーブロックをタップで消すだけの簡単操作で、いつでもどこでも気軽に楽しめるパズルゲームです。シンプルながら奥深いゲーム性で、あなたの思考力を試しましょう。\n\n【ゲームの特徴】\n◆ 簡単だけど奥深い！シンプル操作のパズルゲーム\n　- 2つ以上繋がった同じ色のゼリーブロックをタップして消すだけ！\n　- ブロックが消えると上から新しいゼリーが降ってきて、連鎖のチャンスも。\n　- どこを消すか戦略を立てて、高得点を狙いましょう！\n　- レインボーブロックやアイテム（Delete, Changeなど）の登場も！？\n　- ランキング機能で世界中のプレイヤーとスコアを競い合おう！\n\n◆ ぷるぷる可愛いゼリーブロック！\n　- 見ているだけでも楽しい、触りたくなるようなゼリーの質感を表現。\n　- 消した時の爽快感あふれるアニメーションとサウンドが病みつきに！\n\n◆ 懐かしさと新しい発見\n　- 「セイムパズル」のファンならきっと懐かしい、あの独特のパズル体験を再現。\n　- もちろん、初めてプレイする方でもすぐにハマれる中毒性があります。\n\n◆ いつでもどこでも気軽にプレイ\n　- 通勤・通学時間、ちょっとした休憩時間など、スキマ時間に最適。\n　- オフラインでもプレイ可能なので、電波の届かない場所でも楽しめます。\n\n◆ 【今後のアップデート予定】\n　- クラシックモード、カウントダウンモードなど、多彩なゲームモードを追加予定！\n\n\n【こんな方におすすめ！】\n\n某ゲームの「セイムパズル」が好きだった方\n\nシンプルだけど奥深いパズルゲームを探している方\n\n脳トレや思考力を鍛えたい方\n\n通勤・通学中に気軽に遊べるゲームが欲しい方\n\nぷるぷる可愛いデザインのゲームが好きな方\n\nさあ、あなたも「Jelly Same Puzzle」で、ゼリーを消す爽快感を体験しよう！\n今すぐダウンロードして、パズルの世界に飛び込もう！\n\n□ その他情報\n・利用規約\nhttps://tsuzuki817.com/legal/terms-of-service.html\n\n・プライバシーポリシー\nhttps://tsuzuki817.com/legal/privacy-policy.html\n\n・特定商取引法に基づく表示\nhttps://tsuzuki817.com/legal/commercial-law.html",
-      "release_notes": "ゲームが終了条件を満たしていないのにも関わらず次のステージ判定が発生してしまう不具合の修正",
-      "content_advisory_rating": "4+",
-      "minimum_os_version": "17.0",
-      "developer_name": "Ryo Tsudukihashi",
-      "seller_name": "TsuzuKit"
-    },
-    {
-      "bundle_id": "com.tsuzuki817.fuchidori",
-      "name": "フチドリ！ ~背景透過と縁取り~",
-      "app_store_url": "https://apps.apple.com/jp/app/%E3%83%95%E3%83%81%E3%83%89%E3%83%AA-%E8%83%8C%E6%99%AF%E9%80%8F%E9%81%8E%E3%81%A8%E7%B8%81%E5%8F%96%E3%82%8A/id6748528617?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/34/e2/c0/34e2c037-6a37-88b8-c92f-8bcd23fa8ce1/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.jpg",
-      "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/1c/8a/b4/1c8ab470-560c-f320-f702-404454f49c6a/6.9inc.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4d/97/de/4d97de6b-3d0b-ebdf-237f-75af4078a33b/6.9inc.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/4f/b5/81/4fb581a6-ed4a-dd93-3539-aeb0b6921d3a/6.9inc.003.jpeg/626x0w.webp"
-      ],
-      "ipad_screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/3a/a6/de/3aa6deb2-ec07-af66-9b51-79b3bf4755a2/13inch.001.jpeg/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e7/98/87/e7988754-3b68-62a0-63de-145b43bc7c47/13inch.002.jpeg/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0d/ac/b5/0dacb5ba-27d2-fde0-de26-7ac09d92e9b1/13inch.003.jpeg/360x480bb.jpg"
-      ],
-      "price": "無料",
-      "currency": "JPY",
-      "genres": [
-        "グラフィック／デザイン",
-        "ユーティリティ"
-      ],
-      "primary_genre": "Graphics & Design",
-      "rating": 3.53333,
-      "rating_count": 15,
-      "version": "1.1.0",
-      "release_date": "2025-07-14T07:00:00Z",
-      "current_version_release_date": "2025-07-23T10:14:00Z",
-      "description": "いつもの写真に、魔法のフチドリを！（・θ・）\n『フチドリ！』は、写真を一瞬で切り抜き、好きな色や太さの線で彩れる、創造力を刺激するアプリです。\nさあ、あなただけのアートやステッカーを作りましょう！\n\n【フチドリで、写真はもっと楽しくなる！】:\n\n◆ カラーは無限大: シンプルな白黒から、推し色、ブランドカラーまで。あなたのセンスで自由に選べます。\n\n◆ 太さも自由自在: 細い線でスタイリッシュに、太い線でポップに。印象をガラリと変えられます。\n\n◆ 使い方はアイデア次第: 商品写真を目立たせたり、旅行の思い出をステッカー風にしたり、推しの画像をデコったり！\n\n【もちろん、プライバシーは鉄壁です】:\n\n○ 写真は外部に送信しません: 全ての処理はスマホ内で完結。あなたのプライバシーは完全に守られます。\n\n○ いつでもどこでもオフライン: 通信量を気にせず、飛行機の中でもサクサク軽快に動作します。\n\n【3ステップで完成！】:\n\n写真を選ぶと、賢いオンデバイス技術が瞬時に背景を切り抜き！\n\nカラーと太さを選んで、最高のフチドリをデザイン！\n\n保存ボタンをタップ！背景透過PNGですぐに使える（・θ・）",
-      "release_notes": "多言語対応と軽微な不具合の修正を行いました（・θ・）",
-      "content_advisory_rating": "4+",
-      "minimum_os_version": "17.0",
-      "developer_name": "Ryo Tsudukihashi",
-      "seller_name": "TsuzuKit"
-    },
-    {
-      "bundle_id": "com.tsuzuki817.omukae",
-      "name": "mono ~お迎えした喜びを分かち合うアプリ~",
-      "app_store_url": "https://apps.apple.com/jp/app/mono-%E3%81%8A%E8%BF%8E%E3%81%88%E3%81%97%E3%81%9F%E5%96%9C%E3%81%B3%E3%82%92%E5%88%86%E3%81%8B%E3%81%A1%E5%90%88%E3%81%86%E3%82%A2%E3%83%97%E3%83%AA/id6743043894?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/bf/84/3a/bf843a84-e509-1227-cd86-18a411b9402e/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
-      "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a7/60/9b/a7609b31-6ec7-69ec-e8ea-4a47e10901d6/6.9inc.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a6/7d/e7/a67de758-da5e-e7ba-03c3-2b4e5ab2a7de/6.9inc.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fa/f2/d0/faf2d0de-84c3-f691-0aaf-f98d2625376f/6.9inc.003.jpeg/626x0w.webp"
-      ],
-      "ipad_screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/18/62/6e/18626e54-4cd6-4643-2a1c-b1666de8bb5c/mono-13inch.001.jpeg/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1f/39/b6/1f39b6e6-202e-8390-b992-d2d7e494989d/mono-13inch.002.jpeg/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8f/68/12/8f68122a-b2be-22f2-d451-0efd334a4bf1/mono-13inch.003.jpeg/360x480bb.jpg"
-      ],
-      "price": "無料",
-      "currency": "JPY",
-      "genres": [
-        "ソーシャルネットワーキング",
-        "ライフスタイル"
-      ],
-      "primary_genre": "Social Networking",
-      "rating": 1,
-      "rating_count": 1,
-      "version": "1.0",
-      "release_date": "2025-07-01T07:00:00Z",
-      "current_version_release_date": "2025-07-01T14:28:32Z",
-      "description": "mono - お迎えした喜びを分かち合うアプリ\nmonoは、物との出会いやお迎えを自分だけでなく、みんなでシェアできるアプリです。\n\n日々のお気に入りや自慢のコレクションを投稿することで、他のユーザーとその喜びを分かち合い、コミュニティを形成します。\nあなたが「お迎え」したアイテムを他のユーザーと共有することで、ただ物を所有するだけでなく、その背景やエピソードを大切にし、楽しむことができます。\n\nコンセプト\n私たちの生活は日々、物に囲まれています。洋服や化粧品、家具、ジュエリー、ぬいぐるみ、置物など、さまざまなアイテムが私たちの生活に彩りを与えます。これらのアイテムは、単なる物質的な存在ではなく、感情や思い出、さらにはストーリーを持っています。monoは、そんな「物のお迎え」を特別なものとして捉え、それを他の人とシェアできるプラットフォームを提供します。\n\n「お迎えした瞬間の喜びを、写真と想いで残そう」というテーマを掲げ、このアプリでは、モノとの出会いから得られる感動や喜びをユーザー同士で共有し、楽しむことができます。\nmonoは、ただ物を見せ合うだけでなく、その背景やストーリーを大切にし、モノと共に過ごす時間をより豊かにすることを目指しています。\n\n主な機能\nお迎え報告\n\n新しく迎え入れたアイテムを簡単に投稿できる機能です。写真と一緒にその物の名前、特徴、購入場所やエピソードなどをシェアできます。アイテムに込めた思いやこだわりをユーザーと共有することで、より深い交流が生まれます。\n写真とストーリーを残す\n\nアイテムを撮影して、その物にまつわるストーリーやエピソードを添えて投稿します。例えば、旅行先で買ったお土産や、友達からもらったプレゼントの思い出、特別な日に迎えたアイテムなど、ただの物ではなく、その背後にある感情を伝えることができます。\n推しモノコーナー\n\n特にお気に入りのアイテムを集めたコーナーを作成でき、他のユーザーに紹介することができます。このコーナーには、写真とともに、そのアイテムがあなたにとってどれだけ大切かを伝えるメッセージを添えることができます。\nフォロー＆コメント機能\n\n他のユーザーをフォローすることで、あなたが気になるアイテムや投稿をチェックできます。また、コメント機能を使って、お迎えしたアイテムに対する感想や共感を伝えることができ、より深い交流を楽しむことができます。\n「今日のお迎え」フィード\n\n今日、迎えたアイテムをタイムリーにシェアできるフィード機能です。他のユーザーの「今日のお迎え」を見ることで、トレンドや新しいアイテムを発見したり、同じ趣味を持つ人とつながることができます。\nハッシュタグによる検索機能\n\n#お迎えアイテム、#推しアイテム、#お気に入り、#おそろいなど、様々なハッシュタグで投稿をカテゴライズすることができます。これにより、特定のアイテムやテーマに関する投稿を簡単に検索でき、より多くの人と共通の興味を持つことができます。\nアイテムごとのエピソード集\n\n各アイテムに対して、その物との出会いや購入のきっかけ、実際に使った感想などをストーリーとして残すことができます。これにより、ユーザーはただ物を見せ合うだけでなく、物に込めた意味や感情をシェアし、共感を得ることができます。\nターゲット層\nmonoは、物との出会いを大切にし、その喜びや感動を共有したいと思うすべての人々に向けて開発されています。特に、女性ユーザーをターゲットにしており、日々の生活で大切にしている物やお気に入りのアイテムをシェアすることを楽しむ方々に最適です。\n\n・ファッションやインテリアに興味がある人\n・自分のコレクションを誇りに思っている人\n・思い出を大切にする人\n・新しいアイテムやトレンドに敏感な人\n・自分のライフスタイルを他の人とシェアしたい人\n\nこれらのユーザー層に、心温まる瞬間を提供するアプリとして、monoは非常に適しています。\n\nデザイン\nアプリのデザインは、シンプルで洗練された美しいデザインを採用しています。アイテムの写真が主役となり、その美しさを引き立てるため、背景は落ち着いたパステルカラーを基調としています。視覚的に心地よいデザインにより、ユーザーは快適にアプリを利用し、投稿されたアイテムに集中することができます。\n\nまた、ユーザーインターフェース（UI）は直感的で簡単に操作できるように設計されており、初心者でもスムーズに使い始めることができます。モノとの出会いを楽しみ、シェアすることができるような、心温まる空間を提供しています。\n\n結び\nmonoは、ただ物を所有するだけでなく、その物との出会いや成長、そして愛着を大切にするコミュニティアプリです。あなたが迎え入れたアイテムの思い出や、他のユーザーとのつながりを楽しみながら、新しい発見や共感を得ることができます。\n\n「お迎えした瞬間の喜びを、写真と想いで残そう」—それが、monoの本質です。あなたも、物と共に過ごす素敵な時間をシェアし、共感し合いませんか？\n\nプライバシーポリシー\nhttps://tsuzuki817.com/legal/privacy-policy.html\n\n利用規約\nhttps://tsuzuki817.com/legal/terms-of-service.html\n\n特定商取引法に基づく表記\nhttps://tsuzuki817.com/legal/commercial-law.html",
-      "release_notes": null,
-      "content_advisory_rating": "17+",
-      "minimum_os_version": "18.0",
-      "developer_name": "Ryo Tsudukihashi",
-      "seller_name": "TsuzuKit"
-    },
-    {
-      "bundle_id": "com.tsuzuki817.SakanaCalendar",
-      "name": "旬のお魚カレンダー",
-      "app_store_url": "https://apps.apple.com/jp/app/%E6%97%AC%E3%81%AE%E3%81%8A%E9%AD%9A%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%80%E3%83%BC/id6746123337?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4d/2a/9b/4d2a9bc5-d47a-9f96-a0bd-14a843578175/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
-      "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/79/8c/fa/798cfa21-5f83-758b-2ce1-ffc9d5610e84/Apple_iPhone_16_Pro_Max_Screenshot_1.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/86/9a/f5/869af5ac-81fb-7b03-8bcf-258d5befb6df/Apple_iPhone_16_Pro_Max_Screenshot_2.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/51/b3/9e/51b39ed0-fd09-6510-fbba-f53554492a28/Apple_iPhone_16_Pro_Max_Screenshot_3.png/626x0w.webp"
-      ],
-      "ipad_screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/14/54/d0/1454d074-94ce-fcd1-6ca2-fd561471d092/Apple_iPad_Pro_12.9_Inch_Screenshot_1.png/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/43/60/89/436089bd-ff69-4d09-10dd-f85c6023c3f6/Apple_iPad_Pro_12.9_Inch_Screenshot_2.png/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/67/b5/79/67b5798b-8c00-8758-779c-ae6a86b3fdb7/Apple_iPad_Pro_12.9_Inch_Screenshot_3.png/360x480bb.jpg"
-      ],
-      "price": "無料",
-      "currency": "JPY",
-      "genres": [
-        "フード／ドリンク",
-        "ユーティリティ"
-      ],
-      "primary_genre": "Food & Drink",
-      "rating": 5,
-      "rating_count": 1,
-      "version": "1.0",
-      "release_date": "2025-05-23T07:00:00Z",
-      "current_version_release_date": "2025-05-23T22:21:18Z",
-      "description": "「この魚、一番美味しいのはいつ？」その疑問、解決します！\n\n「旬のお魚カレンダー」は、魚介類の“最高の食べ頃”が一目でわかる、あなたの食卓の新しい味方です。\nもう「いつが旬なんだろう…」と悩む必要はありません！\n\n【このアプリでできること】\n\n旬が一目瞭然: 使いやすい月別カレンダーで、今が旬の魚を逃さずチェック！「今日は何のお魚が美味しいかな？」がすぐにわかります。\n豊富な魚種情報: お馴染みの魚から、ちょっと珍しい魚、お寿司屋さんで見るあのネタまで、旬の時期と主な産地を詳しく掲載。お魚の知識も深まります。\nシンプルで直感的: 誰でも簡単に操作できるインターフェース。目的の情報をサッと見つけられます。\n毎日の献立作りやお買い物がもっと楽しく、食卓がもっと豊かになること間違いなし！\n「旬のお魚カレンダー」をダウンロードして、四季折々の海の恵みを最大限に味わいましょう！",
-      "release_notes": null,
-      "content_advisory_rating": "17+",
-      "minimum_os_version": "17.0",
-      "developer_name": "Ryo Tsudukihashi",
-      "seller_name": "TsuzuKit"
-    },
-    {
-      "bundle_id": "com.tsuzuki817.pi",
-      "name": "π ~ Pi　円周率を楽しむアプリ",
-      "app_store_url": "https://apps.apple.com/jp/app/%CF%80-pi-%E5%86%86%E5%91%A8%E7%8E%87%E3%82%92%E6%A5%BD%E3%81%97%E3%82%80%E3%82%A2%E3%83%97%E3%83%AA/id6566185298?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/1a/e4/b4/1ae4b436-b7c4-1ebb-6da8-5a92920289a6/AppIcon-0-0-1x_U007epad-0-P3-85-220.png/512x512bb.jpg",
-      "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/18/a3/9a/18a39adb-6f88-cb34-2289-d2ac40ee0015/1effe110-615e-46fb-95e4-1ff2c4d55669_6.5inch.001.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e5/ae/3b/e5ae3b09-c570-e2d7-d3ac-63e8b76e0008/fc0de15c-bcc6-4992-8cea-3aaa642c6830_6.5inch.002.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/6d/d0/4a/6dd04a7b-8ad9-2be9-6eea-eb7533ba5b4d/d333e218-22b8-4d62-8025-aac66aae9d10_6.5inch.003.png/626x0w.webp"
-      ],
-      "ipad_screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/5e/86/02/5e860264-87cd-e0a4-9f91-a0745594afc1/01c48c59-da75-4b4b-9124-ce955eca6083_12.9inch.001.png/576x768bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d4/07/13/d407137c-0b5a-0670-1998-d3d1ec8caa55/d3fe0da3-dcef-4950-a53d-fe36f17b5c35_12.9inch.002.png/576x768bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a1/66/13/a16613c5-aab6-e157-546e-fe79aa37470b/a13f9882-a173-485a-9829-fe6e5b84fc81_12.9inch.003.png/576x768bb.png"
-      ],
-      "price": "無料",
-      "currency": "JPY",
-      "genres": [
-        "教育",
-        "ユーティリティ"
-      ],
-      "primary_genre": "Education",
-      "rating": 5,
-      "rating_count": 1,
-      "version": "1.2.0",
-      "release_date": "2024-08-02T07:00:00Z",
-      "current_version_release_date": "2024-08-04T11:08:14Z",
-      "description": "このアプリは、数学を愛するユニークな人々のための究極のアプリです。\n\n起動画面では100万桁の円周率がエモい雰囲気で流れ、リラックスするのに最適です。\nさらに、10桁、100桁、1000桁〜100万桁ごとに円周率を素早く入力するゲームがあり、世界中のプレイヤーとタイムを競うことができます！\n\n数学とリラクゼーションが融合した、新しいエンターテインメント体験をお楽しみください！",
-      "release_notes": "細かな修正を行いました",
-      "content_advisory_rating": "4+",
-      "minimum_os_version": "17.0",
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit"
     }
