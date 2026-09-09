@@ -1,0 +1,36 @@
+:root{
+  --bg:#0f1522; --panel:#161e2f; --line:#243049;
+  --text:#e8edf7; --muted:#9aa8c2; --accent:#5b8dd9; --accent-2:#7fb0ec;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--bg); color:var(--text);
+  font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif;
+  line-height:1.85; -webkit-text-size-adjust:100%;
+}
+a{color:var(--accent-2)}
+header{border-bottom:1px solid var(--line); background:rgba(15,21,34,.9); position:sticky; top:0; backdrop-filter:blur(10px)}
+.hbar{max-width:860px; margin:0 auto; padding:.85rem 1.1rem; display:flex; gap:1rem; align-items:center; flex-wrap:wrap}
+.hbrand{font-weight:800; text-decoration:none; color:var(--text); display:flex; align-items:center; gap:.5rem}
+.hnav{display:flex; gap:1rem; margin-left:auto; flex-wrap:wrap}
+.hnav a{color:var(--muted); text-decoration:none; font-size:.92rem}
+.hnav a:hover{color:var(--text)}
+.wrap{max-width:860px; margin:0 auto; padding:2.2rem 1.1rem 4rem}
+h1{font-size:1.9rem; line-height:1.4; margin:.2rem 0 1.4rem}
+h2{font-size:1.2rem; margin:2.4rem 0 .7rem; padding-left:.7rem; border-left:4px solid var(--accent)}
+h3{font-size:1.02rem; margin:1.6rem 0 .4rem; color:var(--accent-2)}
+p,li{color:#d5deee}
+.en{color:var(--muted); letter-spacing:.16em; font-size:.76rem; margin:0}
+.lead{font-size:1.05rem; color:var(--muted)}
+.card{background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:1.2rem 1.3rem; margin:1.1rem 0}
+.badge{display:inline-block; background:rgba(91,141,217,.16); border:1px solid rgba(91,141,217,.4);
+  color:var(--accent-2); border-radius:999px; padding:.16rem .7rem; font-size:.8rem; margin:.15rem .2rem .15rem 0}
+.mail{display:block; text-align:center; padding:1.1rem; border-radius:12px;
+  background:linear-gradient(180deg,var(--accent),#3f6fb5); color:#fff; text-decoration:none;
+  font-weight:800; margin:1.1rem 0; word-break:break-all}
+table{width:100%; border-collapse:collapse; margin:1rem 0; font-size:.94rem}
+th,td{border:1px solid var(--line); padding:.6rem .7rem; text-align:left}
+th{background:rgba(91,141,217,.12)}
+footer{border-top:1px solid var(--line); color:var(--muted); font-size:.85rem}
+.fwrap{max-width:860px; margin:0 auto; padding:1.6rem 1.1rem}
+.updated{color:var(--muted); font-size:.85rem}
