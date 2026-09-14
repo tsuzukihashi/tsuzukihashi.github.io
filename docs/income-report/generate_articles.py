@@ -403,6 +403,8 @@ HEAD_TEMPLATE = """<!DOCTYPE html>
             text-align: center;
             margin: var(--spacing-2xl) 0;
         }}
+        .post-title {{ word-break: keep-all; overflow-wrap: anywhere; }}
+        .nowrap-title {{ white-space: nowrap; }}
         .revenue-summary h3 {{ font-family: var(--font-accent); font-style: italic; font-weight: 700; font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-secondary); margin-bottom: var(--spacing-sm); }}
         .revenue-number {{ font-family: var(--font-impact); font-style: italic; font-size: 3.6rem; color: var(--color-ink); line-height: 1.1; }}
         .revenue-mom {{ font-size: var(--font-size-md); margin-top: var(--spacing-sm); color: var(--color-secondary); }}
@@ -503,7 +505,7 @@ def build_article(i, m):
                 こんにちは、tsuzuki817（<a href="https://twitter.com/tsuzuki817" target="_blank">@tsuzuki817</a>）です。
             </p>
             <p>
-                今月から新しいシリーズを始めます。名前は「限界個人開発者の月収１０００万円計画」。AdMobとApp StoreとGoogle Playの収益を毎月すべて公開して、数字を眺めて、次の一手を決める。月収1000万円に届くまで続けるつもりです。
+                今月から新しいシリーズを始めます。名前は「限界個人開発者の<span class="nowrap-title">月収１０００万円計画</span>」。AdMobとApp StoreとGoogle Playの収益を毎月すべて公開して、数字を眺めて、次の一手を決める。月収1000万円に届くまで続けるつもりです。
             </p>
             <p>
                 個人開発を始めたのは2016年。10年で50本以上のアプリを出してきて、初めての収益は3年目にあたる2019年7月の21円でした。そこまでの道のりは<a href="/blog/posts/income-report-prehistory.html">前史編</a>に書いています。
@@ -512,7 +514,7 @@ def build_article(i, m):
         intro = f"""
             <p>
                 こんにちは、tsuzuki817（<a href="https://twitter.com/tsuzuki817" target="_blank">@tsuzuki817</a>）です。
-                収益をぜんぶ公開して次の一手を決める連載「限界個人開発者の月収１０００万円計画」、{m['label']}号です。
+                収益をぜんぶ公開して次の一手を決める連載「限界個人開発者の<span class="nowrap-title">月収１０００万円計画</span>」、{m['label']}号です。
             </p>
             <a href="/blog/income-report/" class="series-link">📈 シリーズの全記事と推移グラフは特設ページにあります</a>"""
 
@@ -551,7 +553,7 @@ def build_article(i, m):
                 <span class="post-category">月収1000万円計画</span>
                 <span class="post-reading-time">5分で読める</span>
             </div>
-            <h1 class="post-title">{m['date']}<br>限界個人開発者の月収１０００万円計画</h1>
+            <h1 class="post-title">{m['date']}<br>限界個人開発者の<br>月収１０００万円計画</h1>
         </header>
 
         <div class="post-content">
