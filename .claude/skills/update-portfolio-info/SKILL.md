@@ -45,20 +45,80 @@ cd /Users/tsuzuki817/workspace/TsuzuKit/tsuzukit.com && python3 .claude/skills/u
 - 注意: `portfolio-renderer.js` は `apps.json` を fetch するためブラウザがキャッシュする。最新を見るには CSSと apps.json をキャッシュバスト（`fetch('/assets/data/apps.json?cb='+Date.now(), {cache:'no-store'})`）するか、ハードリロード。
 - 新規アプリがカードに出ているか、スクショが表示されるか（壊れ画像が無いか）を確認。
 
-### 4. 報告 → コミット＆プッシュ
+### 4. ダウンロードランキングの更新（/portfolio/ranking/）
+
+データは `assets/data/app-ranking.json`、ページは `python3 docs/build_ranking.py` で生成する。
+
+#### App Store（全期間のユニット数）
+
+App Store Connect → トレンド → 売上 → **ユニット数** → 期間「全期間（配信開始日から昨日まで）」→ **コンテンツ**タブ。
+一覧（名前・タイプ・Apple ID・ユニット数）をコピーして JSON に落とす。
+
+- 開発者名が **Ryo Tsudukihashi の App 行だけ**を採用する。他の開発者名義（預かりアプリ9本）と
+  `In App`（課金商品）は除く
+- 画面表示は3桁に丸められている（`211K` など）。JSONに入れる値も概数になる
+- **APIでは取れない。** 月次 salesReports は直近8ヶ月、YEARLY は2025年しか返らない
+
+#### Google Play（全期間の累計インストール）
+
+⚠️ **このマシンでは `gcloud storage` も `gsutil` も動かない**（Python 3.9 非対応で
+`module 'importlib.metadata' has no attribute 'packages_distributions'` になる）。
+**トークンだけ gcloud から借りて、curl で GCS の JSON API を叩く。**
+
+```bash
+# 認証が切れていたら「Reauthentication failed」になる。
+# その場合はユーザーに ! gcloud auth login を打ってもらう（対話が要るのでこちらからは実行できない）
+TOKEN=$(gcloud auth print-access-token)
+
+# ① インストールレポートの一覧（*_overview.csv がアプリ×月ぶん並ぶ）
+curl -s -H "Authorization: Bearer $TOKEN" \
+  "https://storage.googleapis.com/storage/v1/b/pubsite_prod_4900858120458572039/o?prefix=stats/installs/&fields=items(name)&maxResults=1000"
+
+# ② 個別ファイルの取得（オブジェクト名は / を %2F にエンコードして、alt=media を付ける）
+curl -s -H "Authorization: Bearer $TOKEN" \
+  "https://storage.googleapis.com/storage/v1/b/pubsite_prod_4900858120458572039/o/stats%2Finstalls%2Finstalls_com.tsuzukit.poopcounter_202609_overview.csv?alt=media"
+```
+
+CSVはUTF-16のことがあるので `utf-16 → utf-8-sig → utf-8` の順にデコードを試す。列の意味:
+
+| 列 | 意味 |
+|---|---|
+| `Daily User Installs` | その日の新規ユーザー。**全期間合算したものが累計インストール数**（App Storeのユニット数に相当） |
+| `Active Device Installs` | いま動いている端末数。**Play Console の一覧に出る「インストール済みユーザー数」はこれ**で、累計ではない |
+| `Total User Installs` | 値が入っていない（0）。使えない |
+
+- ユーザー数とデバイス数は単位が違うので、**累計 < 稼働台数**になるアプリもある（1人が複数端末に入れた場合）。矛盾ではない
+- Play Console の画面から手で落とす場合は「レポートのダウンロード → 統計情報」。
+  ダウンロードURLは `https://storage.cloud.google.com/pubsite_prod_4900858120458572039/stats/installs/installs_{パッケージ名}_{YYYYMM}_overview.csv?authuser=1`
+
+#### 生成
+
+```bash
+python3 docs/build_ranking.py
+```
+
+App Store の合計・Google Play の合計・両方の合算（`grand_total`）がページに出る。
+`index.html` の「総ダウンロード」と代表作のDL数も、この数字に合わせて直すこと。
+
+### 5. 報告 → コミット＆プッシュ
 - スクリプトの出力（新規アプリ名・総数の変化）をユーザーに報告。
 - コミット対象: `assets/data/apps.json`, `assets/data/apps_public.json`, 変更された各HTML（必要なら）。
 - 例:
 ```bash
 git add assets/data/apps.json assets/data/apps_public.json portfolio/index.html index.html about/index.html
+# ランキングも更新したなら
+git add assets/data/app-ranking.json portfolio/ranking/index.html docs/build_ranking.py
 git commit -m "feat(portfolio): アプリ情報を最新化（新規Nアプリ追加・統計更新）"
 git push origin master
 ```
-- コミットメッセージ末尾に `Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>` を付ける。
+- コミットメッセージ末尾に `Co-Authored-By: 実行したモデル名 <noreply@anthropic.com>` を付ける。
 
 ## 注意点（重要）
-- **ダウンロード数（総ダウンロード等）はこのスキルの対象外。** iTunes の売上CSV（App Store Connect からDL）＋ Android(Playの数値) を合算して別途更新する。`index.html` / `about/index.html` の「総ダウンロード」「◯万ダウンロード」「KV画像の◯万DL」がそれ。
-- **新規アプリが Android 版も持つ場合**、`google_play_url` は手動で apps.json に追加が必要（このスキルは iOS情報のみ）。Play Console の「インストール済みユーザー数」をDL合算にも反映する。
+- **ダウンロード数は手順4で別に更新する。** `index.html` / `about/index.html` の「総ダウンロード」「◯万ダウンロード」「KV画像の◯万DL」も、ランキングと同じ数字に合わせること。
+  KV画像（`assets/images/works/*.webp`）は**画像の中に数字が焼き込まれている**ので、数字を変えたら作り直しが要る。
+- **既存の「◯万DL」を推定で増やさない。** 2026-09-15、全期間の累計値に直近10ヶ月ぶんを足して水増しした
+  （流れるメモ帳を18万にしたが実測は16.7万）。既存値がいつ時点のものか分からないときは、実測が取れるまで触らない。
+- **新規アプリが Android 版も持つ場合**、`google_play_url` は手動で apps.json に追加が必要（このスキルは iOS情報のみ）。
 - 譲渡(9)/配信停止(6)の数は `sync_portfolio.py` 冒頭の定数 `TRANSFERRED` / `RETIRED`。変わったら更新する。
 - `apps.json` にあるが App Store に無いアプリは「要確認」として表示するだけで**自動削除しない**（譲渡/配信停止の扱いは手動判断）。
 - ポートフォリオのアーカイブ節（`portfolio/index.html` 内の「アーカイブしたアプリ」）は **手書きHTML**で、apps.json とは別管理。

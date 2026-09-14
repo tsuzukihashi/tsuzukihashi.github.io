@@ -35,7 +35,19 @@ bundle exec ruby ../docs/income-report/fetch_asc_detail.rb
 
 1. Playwright で `https://play.google.com/console/u/1/developers/4900858120458572039/download-reports/financial` を開く
 2. 収益レポート → 年 → 対象月の行を展開 → 「レポートをダウンロードしてください」リンクをクリック（zipが `.playwright-mcp/` に落ちる）
-   - gcloud 認証が生きていれば `gcloud storage cp gs://pubsite_prod_4900858120458572039/earnings/earnings_YYYYMM_*.zip .` でも可
+   - ⚠️ **`gcloud storage` / `gsutil` はこのマシンでは動かない**（Python 3.9 非対応で
+     `module 'importlib.metadata' has no attribute 'packages_distributions'`）。
+     トークンだけ gcloud から借りて curl で GCS の JSON API を叩く:
+     ```bash
+     TOKEN=$(gcloud auth print-access-token)   # 「Reauthentication failed」なら ! gcloud auth login をユーザーに頼む
+     curl -s -H "Authorization: Bearer $TOKEN" \
+       "https://storage.googleapis.com/storage/v1/b/pubsite_prod_4900858120458572039/o?prefix=earnings/&fields=items(name)&maxResults=1000"
+     # 取得はオブジェクト名を %2F エンコードして alt=media を付ける
+     curl -s -H "Authorization: Bearer $TOKEN" \
+       "https://storage.googleapis.com/storage/v1/b/pubsite_prod_4900858120458572039/o/earnings%2Fearnings_202608_12886509-8.zip?alt=media" -o out.zip
+     ```
+     同じ手で**インストール数のレポート**（`stats/installs/installs_{pkg}_{YYYYMM}_overview.csv`）も取れる。
+     DL数の数え方は update-portfolio-info スキルの手順4に書いてある
 3. zip を `docs/income-report/play/YYYYMM/` に展開して `python3 parse_play.py` → `play_monthly.json` 更新
 4. ⚠️ **展開した生CSV（play/ディレクトリ）はコミット禁止**。購入者の国・郵便番号を含む。コミットするのは集計済み `play_monthly.json` だけ
 
