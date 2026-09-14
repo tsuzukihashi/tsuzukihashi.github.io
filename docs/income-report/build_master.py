@@ -42,7 +42,10 @@ def to_jpy(amount, currency, ym):
     print(f"  WARN: unknown currency {currency}")
     return 0
 
-APP_TYPES = {"1", "1F", "1T", "3", "3F", "F1", "F1-B"}  # アプリ本体（新規DL）
+# Product Type Identifier の意味は Apple のリファレンスに従う
+# https://developer.apple.com/help/app-store-connect/reference/product-type-identifiers/
+APP_TYPES = {"1", "1F", "1T", "F1", "F1-B", "F3"}  # 新規ダウンロード
+REDOWNLOAD_TYPES = {"3", "3F", "3T"}  # 再ダウンロード。同じ人の入れ直しなのでDL数には数えない
 UPDATE_TYPES = {"7", "7F", "7T", "F7"}  # アップデート
 
 with open(os.path.join(SCRATCH, "asc_detail.json")) as f:
@@ -53,10 +56,10 @@ for ym, rows in detail.items():
     # アプリSKU→タイトルのマップ（アプリ本体行から構築）
     sku_to_title = {}
     for r in rows:
-        if r["product_type"] in APP_TYPES or r["product_type"] in UPDATE_TYPES:
+        if r["product_type"] in APP_TYPES or r["product_type"] in UPDATE_TYPES or r["product_type"] in REDOWNLOAD_TYPES:
             sku_to_title[r["sku"]] = r["title"]
 
-    apps = defaultdict(lambda: {"downloads": 0, "proceeds_jpy": 0.0, "iap_units": 0, "iap_names": defaultdict(float)})
+    apps = defaultdict(lambda: {"downloads": 0, "redownloads": 0, "proceeds_jpy": 0.0, "iap_units": 0, "iap_names": defaultdict(float)})
     unattributed = defaultdict(float)
 
     for r in rows:
@@ -65,6 +68,8 @@ for ym, rows in detail.items():
         if r["product_type"] in APP_TYPES:
             apps[r["title"]]["downloads"] += r["units"]
             apps[r["title"]]["proceeds_jpy"] += jpy  # 有料アプリの売上もここに乗る
+        elif r["product_type"] in REDOWNLOAD_TYPES:
+            apps[r["title"]]["redownloads"] += r["units"]
         elif r["product_type"] in UPDATE_TYPES:
             pass
         else:
@@ -86,6 +91,7 @@ for ym, rows in detail.items():
         result.append({
             "title": title,
             "downloads": a["downloads"],
+            "redownloads": a["redownloads"],
             "iap_units": a["iap_units"],
             "proceeds_jpy": round(a["proceeds_jpy"]),
             "top_products": sorted(
@@ -95,7 +101,9 @@ for ym, rows in detail.items():
     result.sort(key=lambda x: -x["proceeds_jpy"])
     total_jpy = round(sum(a["proceeds_jpy"] for a in apps.values()))
     total_dl = sum(a["downloads"] for a in apps.values())
-    master_as[ym] = {"proceeds_jpy": total_jpy, "total_downloads": total_dl, "apps": result}
+    total_redl = sum(a["redownloads"] for a in apps.values())
+    master_as[ym] = {"proceeds_jpy": total_jpy, "total_downloads": total_dl,
+                     "total_redownloads": total_redl, "apps": result}
     if unattributed:
         print(f"{ym} 未帰属IAP: " + ", ".join(f"{k}=¥{round(v):,}" for k, v in unattributed.items() if v > 100))
 

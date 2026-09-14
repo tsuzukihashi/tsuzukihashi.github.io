@@ -134,6 +134,13 @@ git push origin master
 
 ## 注意点（重要）
 
+- 🚨 **ダウンロード数は product_type を必ず確認する。`3`／`3F` は再ダウンロードで、新規DLではない。**
+  新規は `1`／`1F`／`1T`／`F1`、アップデートは `7`／`7F`。
+  [公式リファレンス](https://developer.apple.com/help/app-store-connect/reference/product-type-identifiers/)。
+  2026-09-15、ここを取り違えて全10号のDL数を最大2.4倍に水増しし、7月号は分析の結論まで逆に書いていた。
+  検算は **ASCの「販売とトレンド」→CSV書き出し**と突き合わせる。`1F + 1 + IAY + IA1` が
+  画面の「ユニット数」とほぼ一致する（残差は会計月と暦月のずれ）
+
 - AdMobは「推定収益額」、App Storeは Developer Proceeds（外貨は概算円換算）、Playは手数料控除後。この注記は記事テンプレートに組み込み済み
 - 記事タイトルは「YYYY-MM-DD（月末日） 限界個人開発者の月収１０００万円計画」形式で固定
 - `generate_articles.py` は全号を再生成する。過去号を手で直した場合は**必ずジェネレーター側にも反映**しておくこと（そうしないと再生成で消える）

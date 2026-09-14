@@ -6,11 +6,13 @@
     "total_jpy": 38050,
     "appstore_detail": {
       "proceeds_jpy": 16976,
-      "total_downloads": 2350,
+      "total_downloads": 1253,
+      "total_redownloads": 1097,
       "apps": [
         {
           "title": "TravelMemoryMap",
-          "downloads": 1584,
+          "downloads": 903,
+          "redownloads": 681,
           "iap_units": 18,
           "proceeds_jpy": 13332,
           "top_products": [
@@ -30,7 +32,8 @@
         },
         {
           "title": "Floating Notepad　-Overlay-",
-          "downloads": 415,
+          "downloads": 137,
+          "redownloads": 278,
           "iap_units": 5,
           "proceeds_jpy": 2295,
           "top_products": [
@@ -46,7 +49,8 @@
         },
         {
           "title": "フチドリ！ ~背景透過と縁取り~",
-          "downloads": 36,
+          "downloads": 31,
+          "redownloads": 5,
           "iap_units": 1,
           "proceeds_jpy": 833,
           "top_products": [
@@ -59,6 +63,7 @@
         {
           "title": "スワイポン - スワイプで写真と動画を簡単整理",
           "downloads": 6,
+          "redownloads": 0,
           "iap_units": 12,
           "proceeds_jpy": 516,
           "top_products": [
@@ -70,7 +75,8 @@
         },
         {
           "title": "AlwaysOnTimer",
-          "downloads": 22,
+          "downloads": 11,
+          "redownloads": 11,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -78,69 +84,79 @@
         {
           "title": "mono ~お迎えした喜びを分かち合うアプリ~",
           "downloads": 1,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "TicketMania",
-          "downloads": 20,
+          "downloads": 18,
+          "redownloads": 2,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "PictIn",
-          "downloads": 105,
+          "downloads": 31,
+          "redownloads": 74,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "ながらカウンター ~別のアプリを使っていてもカウントできる~",
-          "downloads": 8,
+          "downloads": 4,
+          "redownloads": 4,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "π ~ Pi Fun App.",
-          "downloads": 7,
+          "downloads": 3,
+          "redownloads": 4,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "Cook-it -冷蔵庫の中を撮るだけでAIレシピ提案-",
-          "downloads": 5,
+          "downloads": 2,
+          "redownloads": 3,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "PIPMP",
-          "downloads": 16,
+          "downloads": 11,
+          "redownloads": 5,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "ClockWidget ~個性豊かな時計ウィジェットアプリ~",
-          "downloads": 5,
+          "downloads": 4,
+          "redownloads": 1,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "SkyCode",
-          "downloads": 13,
+          "downloads": 5,
+          "redownloads": 8,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "らくタグ",
-          "downloads": 2,
+          "downloads": 1,
+          "redownloads": 1,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -148,6 +164,7 @@
         {
           "title": "ゼリーセイムパズル",
           "downloads": 8,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -155,20 +172,23 @@
         {
           "title": "RelayChat (リレーチャット) ~オフライン会話~",
           "downloads": 9,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "BookBank(読書銀行) あなたの知識を記帳しよう",
-          "downloads": 4,
+          "downloads": 3,
+          "redownloads": 1,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "バースデームーン",
-          "downloads": 58,
+          "downloads": 49,
+          "redownloads": 9,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -176,27 +196,31 @@
         {
           "title": "言の葉箱 〜大切な手紙を簡単に記録〜",
           "downloads": 1,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "WidgetQiita",
-          "downloads": 3,
+          "downloads": 1,
+          "redownloads": 2,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "WidgetZenn",
-          "downloads": 4,
+          "downloads": 3,
+          "redownloads": 1,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "PhotoGuards",
-          "downloads": 5,
+          "downloads": 2,
+          "redownloads": 3,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -204,13 +228,15 @@
         {
           "title": "Today -今日は令和何年で何の日？-",
           "downloads": 5,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "ikaQR ~QRコードを爆速で読み込もう~",
-          "downloads": 5,
+          "downloads": 1,
+          "redownloads": 4,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -218,6 +244,7 @@
         {
           "title": "旬のお魚カレンダー",
           "downloads": 3,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -267,11 +294,13 @@
     "total_jpy": 81754,
     "appstore_detail": {
       "proceeds_jpy": 60977,
-      "total_downloads": 10490,
+      "total_downloads": 5875,
+      "total_redownloads": 4615,
       "apps": [
         {
           "title": "TravelMemoryMap",
-          "downloads": 6657,
+          "downloads": 3826,
+          "redownloads": 2831,
           "iap_units": 109,
           "proceeds_jpy": 54532,
           "top_products": [
@@ -291,7 +320,8 @@
         },
         {
           "title": "Floating Notepad　-Overlay-",
-          "downloads": 1547,
+          "downloads": 499,
+          "redownloads": 1048,
           "iap_units": 11,
           "proceeds_jpy": 3003,
           "top_products": [
@@ -307,7 +337,8 @@
         },
         {
           "title": "スワイポン - スワイプで写真と動画を簡単整理",
-          "downloads": 29,
+          "downloads": 25,
+          "redownloads": 4,
           "iap_units": 35,
           "proceeds_jpy": 1623,
           "top_products": [
@@ -323,7 +354,8 @@
         },
         {
           "title": "フチドリ！ ~背景透過と縁取り~",
-          "downloads": 185,
+          "downloads": 128,
+          "redownloads": 57,
           "iap_units": 1,
           "proceeds_jpy": 833,
           "top_products": [
@@ -335,7 +367,8 @@
         },
         {
           "title": "ゼリーセイムパズル",
-          "downloads": 44,
+          "downloads": 34,
+          "redownloads": 10,
           "iap_units": 1,
           "proceeds_jpy": 425,
           "top_products": [
@@ -347,7 +380,8 @@
         },
         {
           "title": "SkyCode",
-          "downloads": 63,
+          "downloads": 12,
+          "redownloads": 51,
           "iap_units": 1,
           "proceeds_jpy": 255,
           "top_products": [
@@ -359,7 +393,8 @@
         },
         {
           "title": "AlwaysOnTimer",
-          "downloads": 76,
+          "downloads": 31,
+          "redownloads": 45,
           "iap_units": 2,
           "proceeds_jpy": 204,
           "top_products": [
@@ -371,7 +406,8 @@
         },
         {
           "title": "PIPMP",
-          "downloads": 64,
+          "downloads": 47,
+          "redownloads": 17,
           "iap_units": 1,
           "proceeds_jpy": 102,
           "top_products": [
@@ -384,6 +420,7 @@
         {
           "title": "Medicine Reminder & Tracker",
           "downloads": 101,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -391,6 +428,7 @@
         {
           "title": "BaseReminder",
           "downloads": 12,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -398,55 +436,63 @@
         {
           "title": "Cook-it -冷蔵庫の中を撮るだけでAIレシピ提案-",
           "downloads": 2,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "FocusDrive - Focus Timer",
-          "downloads": 35,
+          "downloads": 34,
+          "redownloads": 1,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "π ~ Pi Fun App.",
-          "downloads": 32,
+          "downloads": 24,
+          "redownloads": 8,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "PhotoGuards",
-          "downloads": 14,
+          "downloads": 8,
+          "redownloads": 6,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "PictIn",
-          "downloads": 463,
+          "downloads": 107,
+          "redownloads": 356,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "TicketMania",
-          "downloads": 57,
+          "downloads": 47,
+          "redownloads": 10,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "Daydream Camera: AI Travel",
-          "downloads": 49,
+          "downloads": 46,
+          "redownloads": 3,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "旬のお魚カレンダー",
-          "downloads": 12,
+          "downloads": 7,
+          "redownloads": 5,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -454,97 +500,111 @@
         {
           "title": "mono ~お迎えした喜びを分かち合うアプリ~",
           "downloads": 3,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "Simple Touch The Numbers",
-          "downloads": 7,
+          "downloads": 4,
+          "redownloads": 3,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "らくタグ",
-          "downloads": 10,
+          "downloads": 3,
+          "redownloads": 7,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "ClockWidget ~個性豊かな時計ウィジェットアプリ~",
-          "downloads": 18,
+          "downloads": 16,
+          "redownloads": 2,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "バースデームーン",
-          "downloads": 866,
+          "downloads": 769,
+          "redownloads": 97,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "BookBank(読書銀行) あなたの知識を記帳しよう",
-          "downloads": 14,
+          "downloads": 7,
+          "redownloads": 7,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "WidgetZenn",
-          "downloads": 16,
+          "downloads": 10,
+          "redownloads": 6,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "言の葉箱 〜大切な手紙を簡単に記録〜",
-          "downloads": 9,
+          "downloads": 7,
+          "redownloads": 2,
           "iap_units": 1,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "RelayChat (リレーチャット) ~オフライン会話~",
-          "downloads": 25,
+          "downloads": 21,
+          "redownloads": 4,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "WidgetQiita",
-          "downloads": 11,
+          "downloads": 4,
+          "redownloads": 7,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "ながらカウンター ~別のアプリを使っていてもカウントできる~",
-          "downloads": 27,
+          "downloads": 14,
+          "redownloads": 13,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "AI Gemini",
-          "downloads": 8,
+          "downloads": 0,
+          "redownloads": 8,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "Today -今日は令和何年で何の日？-",
-          "downloads": 28,
+          "downloads": 25,
+          "redownloads": 3,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "ikaQR ~QRコードを爆速で読み込もう~",
-          "downloads": 6,
+          "downloads": 2,
+          "redownloads": 4,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -594,11 +654,13 @@
     "total_jpy": 94107,
     "appstore_detail": {
       "proceeds_jpy": 72086,
-      "total_downloads": 12801,
+      "total_downloads": 7641,
+      "total_redownloads": 5160,
       "apps": [
         {
           "title": "TravelMemoryMap",
-          "downloads": 8493,
+          "downloads": 5228,
+          "redownloads": 3265,
           "iap_units": 120,
           "proceeds_jpy": 44488,
           "top_products": [
@@ -618,7 +680,8 @@
         },
         {
           "title": "Medicine Reminder & Tracker",
-          "downloads": 278,
+          "downloads": 273,
+          "redownloads": 5,
           "iap_units": 4,
           "proceeds_jpy": 13272,
           "top_products": [
@@ -631,6 +694,7 @@
         {
           "title": "ShellLens - Seashell AI Guide",
           "downloads": 34,
+          "redownloads": 0,
           "iap_units": 5,
           "proceeds_jpy": 4694,
           "top_products": [
@@ -646,7 +710,8 @@
         },
         {
           "title": "FocusDrive - Focus Timer",
-          "downloads": 144,
+          "downloads": 131,
+          "redownloads": 13,
           "iap_units": 4,
           "proceeds_jpy": 2749,
           "top_products": [
@@ -662,7 +727,8 @@
         },
         {
           "title": "Floating Notepad　-Overlay-",
-          "downloads": 1753,
+          "downloads": 615,
+          "redownloads": 1138,
           "iap_units": 23,
           "proceeds_jpy": 2332,
           "top_products": [
@@ -674,7 +740,8 @@
         },
         {
           "title": "スワイポン - スワイプで写真と動画を簡単整理",
-          "downloads": 19,
+          "downloads": 11,
+          "redownloads": 8,
           "iap_units": 44,
           "proceeds_jpy": 2010,
           "top_products": [
@@ -690,7 +757,8 @@
         },
         {
           "title": "フチドリ！ ~背景透過と縁取り~",
-          "downloads": 229,
+          "downloads": 187,
+          "redownloads": 42,
           "iap_units": 2,
           "proceeds_jpy": 1666,
           "top_products": [
@@ -703,6 +771,7 @@
         {
           "title": "言の葉箱 〜大切な手紙を簡単に記録〜",
           "downloads": 8,
+          "redownloads": 0,
           "iap_units": 1,
           "proceeds_jpy": 298,
           "top_products": [
@@ -715,6 +784,7 @@
         {
           "title": "馬券ジェネレーター",
           "downloads": 51,
+          "redownloads": 0,
           "iap_units": 1,
           "proceeds_jpy": 272,
           "top_products": [
@@ -726,7 +796,8 @@
         },
         {
           "title": "AlwaysOnTimer",
-          "downloads": 99,
+          "downloads": 47,
+          "redownloads": 52,
           "iap_units": 2,
           "proceeds_jpy": 204,
           "top_products": [
@@ -738,7 +809,8 @@
         },
         {
           "title": "PIPMP",
-          "downloads": 62,
+          "downloads": 35,
+          "redownloads": 27,
           "iap_units": 1,
           "proceeds_jpy": 102,
           "top_products": [
@@ -750,14 +822,16 @@
         },
         {
           "title": "ClockWidget ~個性豊かな時計ウィジェットアプリ~",
-          "downloads": 22,
+          "downloads": 12,
+          "redownloads": 10,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "PictIn",
-          "downloads": 461,
+          "downloads": 121,
+          "redownloads": 340,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -765,83 +839,95 @@
         {
           "title": "BeautyMed - Treatment Reminder",
           "downloads": 16,
+          "redownloads": 0,
           "iap_units": 1,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "RelayChat (リレーチャット) ~オフライン会話~",
-          "downloads": 34,
+          "downloads": 28,
+          "redownloads": 6,
           "iap_units": 1,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "DailySnap - Photo Calendar",
-          "downloads": 77,
+          "downloads": 66,
+          "redownloads": 11,
           "iap_units": 1,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "PhotoGuards",
-          "downloads": 18,
+          "downloads": 14,
+          "redownloads": 4,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "Cook-it -冷蔵庫の中を撮るだけでAIレシピ提案-",
-          "downloads": 11,
+          "downloads": 9,
+          "redownloads": 2,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "GeoLens - Rock & Mineral AI",
-          "downloads": 51,
+          "downloads": 50,
+          "redownloads": 1,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "バースデームーン",
-          "downloads": 434,
+          "downloads": 364,
+          "redownloads": 70,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "Daydream Camera: AI Travel",
-          "downloads": 8,
+          "downloads": 7,
+          "redownloads": 1,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "推しアイランド",
-          "downloads": 13,
+          "downloads": 12,
+          "redownloads": 1,
           "iap_units": 1,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "AI Gemini",
-          "downloads": 8,
+          "downloads": 0,
+          "redownloads": 8,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "SkyCode",
-          "downloads": 68,
+          "downloads": 12,
+          "redownloads": 56,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "BaseReminder",
-          "downloads": 18,
+          "downloads": 10,
+          "redownloads": 8,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -849,97 +935,111 @@
         {
           "title": "猫背改善と姿勢リマインダー：猫背は猫だけで充分にゃ。",
           "downloads": 8,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "π ~ Pi Fun App.",
-          "downloads": 21,
+          "downloads": 11,
+          "redownloads": 10,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "ゼリーセイムパズル",
-          "downloads": 50,
+          "downloads": 48,
+          "redownloads": 2,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "Eye Drop Reminder - EyeDrop",
-          "downloads": 57,
+          "downloads": 52,
+          "redownloads": 5,
           "iap_units": 2,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "らくタグ",
-          "downloads": 13,
+          "downloads": 3,
+          "redownloads": 10,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "BirdLens - Bird AI Guide",
-          "downloads": 27,
+          "downloads": 25,
+          "redownloads": 2,
           "iap_units": 2,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "Today -今日は令和何年で何の日？-",
-          "downloads": 48,
+          "downloads": 44,
+          "redownloads": 4,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "ながらカウンター ~別のアプリを使っていてもカウントできる~",
-          "downloads": 40,
+          "downloads": 24,
+          "redownloads": 16,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "旬のお魚カレンダー",
-          "downloads": 15,
+          "downloads": 11,
+          "redownloads": 4,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "WidgetZenn",
-          "downloads": 23,
+          "downloads": 18,
+          "redownloads": 5,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "TicketMania",
-          "downloads": 47,
+          "downloads": 37,
+          "redownloads": 10,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "WidgetQiita",
-          "downloads": 11,
+          "downloads": 5,
+          "redownloads": 6,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "BookBank(読書銀行) あなたの知識を記帳しよう",
-          "downloads": 19,
+          "downloads": 10,
+          "redownloads": 9,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "ikaQR ~QRコードを爆速で読み込もう~",
-          "downloads": 7,
+          "downloads": 2,
+          "redownloads": 5,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -947,20 +1047,23 @@
         {
           "title": "mono ~お迎えした喜びを分かち合うアプリ~",
           "downloads": 1,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "MacAddressQuiz",
-          "downloads": 1,
+          "downloads": 0,
+          "redownloads": 1,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "Simple Touch The Numbers",
-          "downloads": 4,
+          "downloads": 1,
+          "redownloads": 3,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -1010,11 +1113,13 @@
     "total_jpy": 214798,
     "appstore_detail": {
       "proceeds_jpy": 145619,
-      "total_downloads": 33864,
+      "total_downloads": 28104,
+      "total_redownloads": 5760,
       "apps": [
         {
           "title": "TravelMemoryMap",
-          "downloads": 7478,
+          "downloads": 4486,
+          "redownloads": 2992,
           "iap_units": 125,
           "proceeds_jpy": 68016,
           "top_products": [
@@ -1034,7 +1139,8 @@
         },
         {
           "title": "UNCHIKUN Poop Tracker",
-          "downloads": 20554,
+          "downloads": 19504,
+          "redownloads": 1050,
           "iap_units": 64,
           "proceeds_jpy": 44982,
           "top_products": [
@@ -1046,7 +1152,8 @@
         },
         {
           "title": "Floating Notepad　-Overlay-",
-          "downloads": 3677,
+          "downloads": 2636,
+          "redownloads": 1041,
           "iap_units": 24,
           "proceeds_jpy": 6929,
           "top_products": [
@@ -1062,7 +1169,8 @@
         },
         {
           "title": "Eye Drop Reminder - EyeDrop",
-          "downloads": 77,
+          "downloads": 70,
+          "redownloads": 7,
           "iap_units": 2,
           "proceeds_jpy": 5301,
           "top_products": [
@@ -1074,7 +1182,8 @@
         },
         {
           "title": "Medicine Reminder & Tracker",
-          "downloads": 93,
+          "downloads": 90,
+          "redownloads": 3,
           "iap_units": 2,
           "proceeds_jpy": 4084,
           "top_products": [
@@ -1086,7 +1195,8 @@
         },
         {
           "title": "Anniversary Reminder - Memoria",
-          "downloads": 68,
+          "downloads": 66,
+          "redownloads": 2,
           "iap_units": 3,
           "proceeds_jpy": 2910,
           "top_products": [
@@ -1103,6 +1213,7 @@
         {
           "title": "推しアイランド",
           "downloads": 14,
+          "redownloads": 0,
           "iap_units": 2,
           "proceeds_jpy": 2651,
           "top_products": [
@@ -1115,6 +1226,7 @@
         {
           "title": "BirdLens - Bird AI Guide",
           "downloads": 35,
+          "redownloads": 0,
           "iap_units": 6,
           "proceeds_jpy": 2550,
           "top_products": [
@@ -1126,7 +1238,8 @@
         },
         {
           "title": "フチドリ！ ~背景透過と縁取り~",
-          "downloads": 208,
+          "downloads": 166,
+          "redownloads": 42,
           "iap_units": 3,
           "proceeds_jpy": 2460,
           "top_products": [
@@ -1138,7 +1251,8 @@
         },
         {
           "title": "ShellLens - Seashell AI Guide",
-          "downloads": 25,
+          "downloads": 23,
+          "redownloads": 2,
           "iap_units": 4,
           "proceeds_jpy": 2115,
           "top_products": [
@@ -1150,7 +1264,8 @@
         },
         {
           "title": "スワイポン - スワイプで写真と動画を簡単整理",
-          "downloads": 32,
+          "downloads": 29,
+          "redownloads": 3,
           "iap_units": 27,
           "proceeds_jpy": 1338,
           "top_products": [
@@ -1166,7 +1281,8 @@
         },
         {
           "title": "FocusDrive - Focus Timer",
-          "downloads": 158,
+          "downloads": 141,
+          "redownloads": 17,
           "iap_units": 3,
           "proceeds_jpy": 802,
           "top_products": [
@@ -1178,7 +1294,8 @@
         },
         {
           "title": "GeoLens - Rock & Mineral AI",
-          "downloads": 31,
+          "downloads": 27,
+          "redownloads": 4,
           "iap_units": 6,
           "proceeds_jpy": 510,
           "top_products": [
@@ -1191,6 +1308,7 @@
         {
           "title": "BeautyMed - Treatment Reminder",
           "downloads": 18,
+          "redownloads": 0,
           "iap_units": 6,
           "proceeds_jpy": 392,
           "top_products": [
@@ -1206,7 +1324,8 @@
         },
         {
           "title": "馬券ジェネレーター",
-          "downloads": 41,
+          "downloads": 36,
+          "redownloads": 5,
           "iap_units": 1,
           "proceeds_jpy": 272,
           "top_products": [
@@ -1218,7 +1337,8 @@
         },
         {
           "title": "AlwaysOnTimer",
-          "downloads": 71,
+          "downloads": 39,
+          "redownloads": 32,
           "iap_units": 2,
           "proceeds_jpy": 204,
           "top_products": [
@@ -1230,7 +1350,8 @@
         },
         {
           "title": "PIPMP",
-          "downloads": 62,
+          "downloads": 35,
+          "redownloads": 27,
           "iap_units": 1,
           "proceeds_jpy": 102,
           "top_products": [
@@ -1242,56 +1363,64 @@
         },
         {
           "title": "バースデームーン",
-          "downloads": 260,
+          "downloads": 190,
+          "redownloads": 70,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "PictIn",
-          "downloads": 415,
+          "downloads": 97,
+          "redownloads": 318,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "RelayChat (リレーチャット) ~オフライン会話~",
-          "downloads": 33,
+          "downloads": 24,
+          "redownloads": 9,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "DailySnap - Photo Calendar",
-          "downloads": 29,
+          "downloads": 27,
+          "redownloads": 2,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "AI Gemini",
-          "downloads": 2,
+          "downloads": 0,
+          "redownloads": 2,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "ClockWidget ~個性豊かな時計ウィジェットアプリ~",
-          "downloads": 19,
+          "downloads": 12,
+          "redownloads": 7,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "ikaQR ~QRコードを爆速で読み込もう~",
-          "downloads": 6,
+          "downloads": 2,
+          "redownloads": 4,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "CheckInSenior - Family Check",
-          "downloads": 8,
+          "downloads": 7,
+          "redownloads": 1,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -1299,55 +1428,63 @@
         {
           "title": "猫背改善と姿勢リマインダー：猫背は猫だけで充分にゃ。",
           "downloads": 15,
+          "redownloads": 0,
           "iap_units": 1,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "ゼリーセイムパズル",
-          "downloads": 47,
+          "downloads": 39,
+          "redownloads": 8,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "WidgetZenn",
-          "downloads": 18,
+          "downloads": 16,
+          "redownloads": 2,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "らくタグ",
-          "downloads": 11,
+          "downloads": 3,
+          "redownloads": 8,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "PhotoGuards",
-          "downloads": 18,
+          "downloads": 9,
+          "redownloads": 9,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "SkyCode",
-          "downloads": 72,
+          "downloads": 28,
+          "redownloads": 44,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "旬のお魚カレンダー",
-          "downloads": 18,
+          "downloads": 14,
+          "redownloads": 4,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "BookBank(読書銀行) あなたの知識を記帳しよう",
-          "downloads": 24,
+          "downloads": 17,
+          "redownloads": 7,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -1355,41 +1492,47 @@
         {
           "title": "Daydream Camera: AI Travel",
           "downloads": 4,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "TicketMania",
-          "downloads": 60,
+          "downloads": 57,
+          "redownloads": 3,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "ながらカウンター ~別のアプリを使っていてもカウントできる~",
-          "downloads": 26,
+          "downloads": 20,
+          "redownloads": 6,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "Cook-it -冷蔵庫の中を撮るだけでAIレシピ提案-",
-          "downloads": 9,
+          "downloads": 6,
+          "redownloads": 3,
           "iap_units": 1,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "Today -今日は令和何年で何の日？-",
-          "downloads": 53,
+          "downloads": 49,
+          "redownloads": 4,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "BaseReminder",
-          "downloads": 8,
+          "downloads": 7,
+          "redownloads": 1,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -1397,20 +1540,23 @@
         {
           "title": "言の葉箱 〜大切な手紙を簡単に記録〜",
           "downloads": 20,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "π ~ Pi Fun App.",
-          "downloads": 36,
+          "downloads": 19,
+          "redownloads": 17,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "WidgetQiita",
-          "downloads": 9,
+          "downloads": 5,
+          "redownloads": 4,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -1418,6 +1564,7 @@
         {
           "title": "Simple Touch The Numbers",
           "downloads": 1,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -1425,6 +1572,7 @@
         {
           "title": "mono ~お迎えした喜びを分かち合うアプリ~",
           "downloads": 1,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -1482,11 +1630,13 @@
     "total_jpy": 1046556,
     "appstore_detail": {
       "proceeds_jpy": 841236,
-      "total_downloads": 82098,
+      "total_downloads": 71482,
+      "total_redownloads": 10616,
       "apps": [
         {
           "title": "推しアイランド",
-          "downloads": 38595,
+          "downloads": 36700,
+          "redownloads": 1895,
           "iap_units": 1498,
           "proceeds_jpy": 584083,
           "top_products": [
@@ -1502,7 +1652,8 @@
         },
         {
           "title": "猫背改善と姿勢リマインダー：猫背は猫だけで充分にゃ。",
-          "downloads": 2672,
+          "downloads": 2629,
+          "redownloads": 43,
           "iap_units": 91,
           "proceeds_jpy": 84422,
           "top_products": [
@@ -1518,7 +1669,8 @@
         },
         {
           "title": "TravelMemoryMap",
-          "downloads": 8014,
+          "downloads": 4400,
+          "redownloads": 3614,
           "iap_units": 145,
           "proceeds_jpy": 69786,
           "top_products": [
@@ -1538,7 +1690,8 @@
         },
         {
           "title": "UNCHIKUN Poop Tracker",
-          "downloads": 22878,
+          "downloads": 20145,
+          "redownloads": 2733,
           "iap_units": 126,
           "proceeds_jpy": 61633,
           "top_products": [
@@ -1558,7 +1711,8 @@
         },
         {
           "title": "Floating Notepad　-Overlay-",
-          "downloads": 7420,
+          "downloads": 5840,
+          "redownloads": 1580,
           "iap_units": 43,
           "proceeds_jpy": 8529,
           "top_products": [
@@ -1574,7 +1728,8 @@
         },
         {
           "title": "BirdLens - Bird AI Guide",
-          "downloads": 23,
+          "downloads": 22,
+          "redownloads": 1,
           "iap_units": 11,
           "proceeds_jpy": 8330,
           "top_products": [
@@ -1590,7 +1745,8 @@
         },
         {
           "title": "GeoLens - Rock & Mineral AI",
-          "downloads": 26,
+          "downloads": 22,
+          "redownloads": 4,
           "iap_units": 8,
           "proceeds_jpy": 6290,
           "top_products": [
@@ -1606,7 +1762,8 @@
         },
         {
           "title": "Anniversary Reminder - Memoria",
-          "downloads": 50,
+          "downloads": 47,
+          "redownloads": 3,
           "iap_units": 6,
           "proceeds_jpy": 5912,
           "top_products": [
@@ -1623,6 +1780,7 @@
         {
           "title": "BeautyMed - Treatment Reminder",
           "downloads": 22,
+          "redownloads": 0,
           "iap_units": 5,
           "proceeds_jpy": 4199,
           "top_products": [
@@ -1638,7 +1796,8 @@
         },
         {
           "title": "ShellLens - Seashell AI Guide",
-          "downloads": 23,
+          "downloads": 22,
+          "redownloads": 1,
           "iap_units": 4,
           "proceeds_jpy": 2163,
           "top_products": [
@@ -1650,7 +1809,8 @@
         },
         {
           "title": "フチドリ！ ~背景透過と縁取り~",
-          "downloads": 329,
+          "downloads": 264,
+          "redownloads": 65,
           "iap_units": 2,
           "proceeds_jpy": 1666,
           "top_products": [
@@ -1662,7 +1822,8 @@
         },
         {
           "title": "スワイポン - スワイプで写真と動画を簡単整理",
-          "downloads": 48,
+          "downloads": 41,
+          "redownloads": 7,
           "iap_units": 32,
           "proceeds_jpy": 1612,
           "top_products": [
@@ -1678,7 +1839,8 @@
         },
         {
           "title": "Medicine Reminder & Tracker",
-          "downloads": 70,
+          "downloads": 64,
+          "redownloads": 6,
           "iap_units": 7,
           "proceeds_jpy": 760,
           "top_products": [
@@ -1690,7 +1852,8 @@
         },
         {
           "title": "らくタグ",
-          "downloads": 11,
+          "downloads": 7,
+          "redownloads": 4,
           "iap_units": 1,
           "proceeds_jpy": 425,
           "top_products": [
@@ -1702,7 +1865,8 @@
         },
         {
           "title": "FocusDrive - Focus Timer",
-          "downloads": 192,
+          "downloads": 175,
+          "redownloads": 17,
           "iap_units": 3,
           "proceeds_jpy": 393,
           "top_products": [
@@ -1714,7 +1878,8 @@
         },
         {
           "title": "馬券ジェネレーター",
-          "downloads": 41,
+          "downloads": 40,
+          "redownloads": 1,
           "iap_units": 1,
           "proceeds_jpy": 272,
           "top_products": [
@@ -1726,7 +1891,8 @@
         },
         {
           "title": "AlwaysOnTimer",
-          "downloads": 60,
+          "downloads": 28,
+          "redownloads": 32,
           "iap_units": 2,
           "proceeds_jpy": 204,
           "top_products": [
@@ -1739,13 +1905,15 @@
         {
           "title": "Music Snapshot: Art Wallpapers",
           "downloads": 2,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 170,
           "top_products": []
         },
         {
           "title": "Eye Drop Reminder - EyeDrop",
-          "downloads": 88,
+          "downloads": 83,
+          "redownloads": 5,
           "iap_units": 6,
           "proceeds_jpy": 150,
           "top_products": [
@@ -1758,6 +1926,7 @@
         {
           "title": "CheckInSenior - Family Check",
           "downloads": 6,
+          "redownloads": 0,
           "iap_units": 1,
           "proceeds_jpy": 134,
           "top_products": [
@@ -1769,7 +1938,8 @@
         },
         {
           "title": "PIPMP",
-          "downloads": 72,
+          "downloads": 45,
+          "redownloads": 27,
           "iap_units": 1,
           "proceeds_jpy": 102,
           "top_products": [
@@ -1781,147 +1951,168 @@
         },
         {
           "title": "RelayChat (リレーチャット) ~オフライン会話~",
-          "downloads": 62,
+          "downloads": 48,
+          "redownloads": 14,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "ゼリーセイムパズル",
-          "downloads": 57,
+          "downloads": 45,
+          "redownloads": 12,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "π ~ Pi Fun App.",
-          "downloads": 57,
+          "downloads": 36,
+          "redownloads": 21,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "mono ~お迎えした喜びを分かち合うアプリ~",
-          "downloads": 4,
+          "downloads": 3,
+          "redownloads": 1,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "PictIn",
-          "downloads": 438,
+          "downloads": 114,
+          "redownloads": 324,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "ClockWidget ~個性豊かな時計ウィジェットアプリ~",
-          "downloads": 26,
+          "downloads": 16,
+          "redownloads": 10,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "PhotoGuards",
-          "downloads": 48,
+          "downloads": 42,
+          "redownloads": 6,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "ikaQR ~QRコードを爆速で読み込もう~",
-          "downloads": 8,
+          "downloads": 4,
+          "redownloads": 4,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "DailySnap - Photo Calendar",
-          "downloads": 49,
+          "downloads": 45,
+          "redownloads": 4,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "バースデームーン",
-          "downloads": 248,
+          "downloads": 168,
+          "redownloads": 80,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "TicketMania",
-          "downloads": 66,
+          "downloads": 58,
+          "redownloads": 8,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "BookBank(読書銀行) あなたの知識を記帳しよう",
-          "downloads": 84,
+          "downloads": 75,
+          "redownloads": 9,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "旬のお魚カレンダー",
-          "downloads": 18,
+          "downloads": 13,
+          "redownloads": 5,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "WidgetZenn",
-          "downloads": 20,
+          "downloads": 19,
+          "redownloads": 1,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "BaseReminder",
-          "downloads": 11,
+          "downloads": 10,
+          "redownloads": 1,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "AI Gemini",
-          "downloads": 2,
+          "downloads": 0,
+          "redownloads": 2,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "Today -今日は令和何年で何の日？-",
-          "downloads": 80,
+          "downloads": 71,
+          "redownloads": 9,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "SkyCode",
-          "downloads": 99,
+          "downloads": 48,
+          "redownloads": 51,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "WidgetQiita",
-          "downloads": 9,
+          "downloads": 6,
+          "redownloads": 3,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "ながらカウンター ~別のアプリを使っていてもカウントできる~",
-          "downloads": 46,
+          "downloads": 36,
+          "redownloads": 10,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "FightAction",
-          "downloads": 2,
+          "downloads": 0,
+          "redownloads": 2,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -1929,6 +2120,7 @@
         {
           "title": "言の葉箱 〜大切な手紙を簡単に記録〜",
           "downloads": 4,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -1936,6 +2128,7 @@
         {
           "title": "Cook-it -冷蔵庫の中を撮るだけでAIレシピ提案-",
           "downloads": 9,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -1943,13 +2136,15 @@
         {
           "title": "Daydream Camera: AI Travel",
           "downloads": 5,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "Simple Touch The Numbers",
-          "downloads": 4,
+          "downloads": 3,
+          "redownloads": 1,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -2031,11 +2226,13 @@
     "total_jpy": 357475,
     "appstore_detail": {
       "proceeds_jpy": 240396,
-      "total_downloads": 47245,
+      "total_downloads": 40304,
+      "total_redownloads": 6941,
       "apps": [
         {
           "title": "UNCHIKUN Poop Tracker",
-          "downloads": 33534,
+          "downloads": 31645,
+          "redownloads": 1889,
           "iap_units": 165,
           "proceeds_jpy": 86099,
           "top_products": [
@@ -2055,7 +2252,8 @@
         },
         {
           "title": "TravelMemoryMap",
-          "downloads": 5982,
+          "downloads": 3202,
+          "redownloads": 2780,
           "iap_units": 120,
           "proceeds_jpy": 63802,
           "top_products": [
@@ -2075,7 +2273,8 @@
         },
         {
           "title": "推しアイランド",
-          "downloads": 987,
+          "downloads": 680,
+          "redownloads": 307,
           "iap_units": 302,
           "proceeds_jpy": 35859,
           "top_products": [
@@ -2091,7 +2290,8 @@
         },
         {
           "title": "猫背改善と姿勢リマインダー：猫背は猫だけで充分にゃ。",
-          "downloads": 135,
+          "downloads": 101,
+          "redownloads": 34,
           "iap_units": 53,
           "proceeds_jpy": 13668,
           "top_products": [
@@ -2107,7 +2307,8 @@
         },
         {
           "title": "Floating Notepad　-Overlay-",
-          "downloads": 4317,
+          "downloads": 3011,
+          "redownloads": 1306,
           "iap_units": 42,
           "proceeds_jpy": 12505,
           "top_products": [
@@ -2123,7 +2324,8 @@
         },
         {
           "title": "Mekulun - Daily Calendar",
-          "downloads": 300,
+          "downloads": 290,
+          "redownloads": 10,
           "iap_units": 7,
           "proceeds_jpy": 7983,
           "top_products": [
@@ -2139,7 +2341,8 @@
         },
         {
           "title": "BeautyMed - Treatment Reminder",
-          "downloads": 14,
+          "downloads": 13,
+          "redownloads": 1,
           "iap_units": 1,
           "proceeds_jpy": 4250,
           "top_products": [
@@ -2151,7 +2354,8 @@
         },
         {
           "title": "フチドリ！ ~背景透過と縁取り~",
-          "downloads": 237,
+          "downloads": 191,
+          "redownloads": 46,
           "iap_units": 5,
           "proceeds_jpy": 4165,
           "top_products": [
@@ -2163,7 +2367,8 @@
         },
         {
           "title": "Anniversary Reminder - Memoria",
-          "downloads": 25,
+          "downloads": 23,
+          "redownloads": 2,
           "iap_units": 5,
           "proceeds_jpy": 3222,
           "top_products": [
@@ -2179,7 +2384,8 @@
         },
         {
           "title": "GeoLens - Rock & Mineral AI",
-          "downloads": 63,
+          "downloads": 61,
+          "redownloads": 2,
           "iap_units": 9,
           "proceeds_jpy": 2550,
           "top_products": [
@@ -2191,7 +2397,8 @@
         },
         {
           "title": "スワイポン - スワイプで写真と動画を簡単整理",
-          "downloads": 13,
+          "downloads": 9,
+          "redownloads": 4,
           "iap_units": 30,
           "proceeds_jpy": 1644,
           "top_products": [
@@ -2208,6 +2415,7 @@
         {
           "title": "ShellLens - Seashell AI Guide",
           "downloads": 19,
+          "redownloads": 0,
           "iap_units": 2,
           "proceeds_jpy": 1061,
           "top_products": [
@@ -2219,7 +2427,8 @@
         },
         {
           "title": "BirdLens - Bird AI Guide",
-          "downloads": 38,
+          "downloads": 37,
+          "redownloads": 1,
           "iap_units": 2,
           "proceeds_jpy": 1020,
           "top_products": [
@@ -2231,7 +2440,8 @@
         },
         {
           "title": "Medicine Reminder & Tracker",
-          "downloads": 63,
+          "downloads": 61,
+          "redownloads": 2,
           "iap_units": 4,
           "proceeds_jpy": 609,
           "top_products": [
@@ -2243,7 +2453,8 @@
         },
         {
           "title": "らくタグ",
-          "downloads": 13,
+          "downloads": 2,
+          "redownloads": 11,
           "iap_units": 1,
           "proceeds_jpy": 425,
           "top_products": [
@@ -2255,7 +2466,8 @@
         },
         {
           "title": "ずんだもんの部屋 - ずんだもんに話を聴いてもらう",
-          "downloads": 55,
+          "downloads": 54,
+          "redownloads": 1,
           "iap_units": 1,
           "proceeds_jpy": 408,
           "top_products": [
@@ -2267,7 +2479,8 @@
         },
         {
           "title": "FocusDrive - Focus Timer",
-          "downloads": 123,
+          "downloads": 107,
+          "redownloads": 16,
           "iap_units": 2,
           "proceeds_jpy": 397,
           "top_products": [
@@ -2280,6 +2493,7 @@
         {
           "title": "言の葉箱 〜大切な手紙を簡単に記録〜",
           "downloads": 1,
+          "redownloads": 0,
           "iap_units": 1,
           "proceeds_jpy": 298,
           "top_products": [
@@ -2291,7 +2505,8 @@
         },
         {
           "title": "AlwaysOnTimer",
-          "downloads": 61,
+          "downloads": 40,
+          "redownloads": 21,
           "iap_units": 2,
           "proceeds_jpy": 204,
           "top_products": [
@@ -2303,7 +2518,8 @@
         },
         {
           "title": "Eye Drop Reminder - EyeDrop",
-          "downloads": 86,
+          "downloads": 78,
+          "redownloads": 8,
           "iap_units": 5,
           "proceeds_jpy": 125,
           "top_products": [
@@ -2315,7 +2531,8 @@
         },
         {
           "title": "PIPMP",
-          "downloads": 61,
+          "downloads": 40,
+          "redownloads": 21,
           "iap_units": 1,
           "proceeds_jpy": 102,
           "top_products": [
@@ -2327,7 +2544,8 @@
         },
         {
           "title": "バースデームーン",
-          "downloads": 215,
+          "downloads": 155,
+          "redownloads": 60,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -2335,62 +2553,71 @@
         {
           "title": "Kimochi - 気分トラッカー",
           "downloads": 15,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "PictIn",
-          "downloads": 378,
+          "downloads": 102,
+          "redownloads": 276,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "馬券ジェネレーター",
-          "downloads": 39,
+          "downloads": 35,
+          "redownloads": 4,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "ClockWidget ~個性豊かな時計ウィジェットアプリ~",
-          "downloads": 17,
+          "downloads": 9,
+          "redownloads": 8,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "DailySnap - Photo Calendar",
-          "downloads": 41,
+          "downloads": 39,
+          "redownloads": 2,
           "iap_units": 1,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "Daydream Camera: AI Travel",
-          "downloads": 5,
+          "downloads": 4,
+          "redownloads": 1,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "WidgetZenn",
-          "downloads": 13,
+          "downloads": 11,
+          "redownloads": 2,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "ながらカウンター ~別のアプリを使っていてもカウントできる~",
-          "downloads": 34,
+          "downloads": 26,
+          "redownloads": 8,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "TicketMania",
-          "downloads": 80,
+          "downloads": 72,
+          "redownloads": 8,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -2398,48 +2625,55 @@
         {
           "title": "FlowerLens - Flower AI Guide",
           "downloads": 14,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "旬のお魚カレンダー",
-          "downloads": 13,
+          "downloads": 9,
+          "redownloads": 4,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "PhotoGuards",
-          "downloads": 26,
+          "downloads": 12,
+          "redownloads": 14,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "RelayChat (リレーチャット) ~オフライン会話~",
-          "downloads": 34,
+          "downloads": 29,
+          "redownloads": 5,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "ゼリーセイムパズル",
-          "downloads": 22,
+          "downloads": 15,
+          "redownloads": 7,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "WidgetQiita",
-          "downloads": 6,
+          "downloads": 2,
+          "redownloads": 4,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "SkyCode",
-          "downloads": 60,
+          "downloads": 19,
+          "redownloads": 41,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -2447,13 +2681,15 @@
         {
           "title": "Cook-it -冷蔵庫の中を撮るだけでAIレシピ提案-",
           "downloads": 5,
+          "redownloads": 0,
           "iap_units": 1,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "mono ~お迎えした喜びを分かち合うアプリ~",
-          "downloads": 2,
+          "downloads": 1,
+          "redownloads": 1,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -2461,41 +2697,47 @@
         {
           "title": "BaseReminder",
           "downloads": 6,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "BookBank(読書銀行) あなたの知識を記帳しよう",
-          "downloads": 20,
+          "downloads": 11,
+          "redownloads": 9,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "Simple Touch The Numbers",
-          "downloads": 4,
+          "downloads": 2,
+          "redownloads": 2,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "AI Gemini",
-          "downloads": 6,
+          "downloads": 0,
+          "redownloads": 6,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "π ~ Pi Fun App.",
-          "downloads": 22,
+          "downloads": 13,
+          "redownloads": 9,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "Today -今日は令和何年で何の日？-",
-          "downloads": 31,
+          "downloads": 26,
+          "redownloads": 5,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -2503,13 +2745,15 @@
         {
           "title": "CheckInSenior - Family Check",
           "downloads": 5,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "ikaQR ~QRコードを爆速で読み込もう~",
-          "downloads": 5,
+          "downloads": 2,
+          "redownloads": 3,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -2599,11 +2843,13 @@
     "total_jpy": 327271,
     "appstore_detail": {
       "proceeds_jpy": 187643,
-      "total_downloads": 61899,
+      "total_downloads": 52761,
+      "total_redownloads": 9138,
       "apps": [
         {
           "title": "TravelMemoryMap",
-          "downloads": 7677,
+          "downloads": 4219,
+          "redownloads": 3458,
           "iap_units": 133,
           "proceeds_jpy": 64841,
           "top_products": [
@@ -2623,7 +2869,8 @@
         },
         {
           "title": "UNCHIKUN: Poop Log & AI Health",
-          "downloads": 36438,
+          "downloads": 33652,
+          "redownloads": 2786,
           "iap_units": 195,
           "proceeds_jpy": 62131,
           "top_products": [
@@ -2651,7 +2898,8 @@
         },
         {
           "title": "推しアイランド",
-          "downloads": 509,
+          "downloads": 190,
+          "redownloads": 319,
           "iap_units": 204,
           "proceeds_jpy": 25071,
           "top_products": [
@@ -2667,7 +2915,8 @@
         },
         {
           "title": "Floating Notepad　-Overlay-",
-          "downloads": 3107,
+          "downloads": 1900,
+          "redownloads": 1207,
           "iap_units": 30,
           "proceeds_jpy": 8779,
           "top_products": [
@@ -2683,7 +2932,8 @@
         },
         {
           "title": "Mekulun - Daily Calendar",
-          "downloads": 73,
+          "downloads": 68,
+          "redownloads": 5,
           "iap_units": 3,
           "proceeds_jpy": 7599,
           "top_products": [
@@ -2695,7 +2945,8 @@
         },
         {
           "title": "猫背改善と姿勢リマインダー：猫背は猫だけで充分にゃ。",
-          "downloads": 62,
+          "downloads": 28,
+          "redownloads": 34,
           "iap_units": 39,
           "proceeds_jpy": 7106,
           "top_products": [
@@ -2707,7 +2958,8 @@
         },
         {
           "title": "GeoLens - Rock & Mineral AI",
-          "downloads": 67,
+          "downloads": 63,
+          "redownloads": 4,
           "iap_units": 13,
           "proceeds_jpy": 6290,
           "top_products": [
@@ -2723,7 +2975,8 @@
         },
         {
           "title": "スワイポン - スワイプで写真と動画を簡単整理",
-          "downloads": 22,
+          "downloads": 14,
+          "redownloads": 8,
           "iap_units": 24,
           "proceeds_jpy": 1268,
           "top_products": [
@@ -2739,7 +2992,8 @@
         },
         {
           "title": "FocusDrive - Focus Timer",
-          "downloads": 91,
+          "downloads": 65,
+          "redownloads": 26,
           "iap_units": 4,
           "proceeds_jpy": 1199,
           "top_products": [
@@ -2751,7 +3005,8 @@
         },
         {
           "title": "Anniversary Reminder - Memoria",
-          "downloads": 26,
+          "downloads": 25,
+          "redownloads": 1,
           "iap_units": 5,
           "proceeds_jpy": 879,
           "top_products": [
@@ -2763,7 +3018,8 @@
         },
         {
           "title": "フチドリ！ ~背景透過と縁取り~",
-          "downloads": 249,
+          "downloads": 192,
+          "redownloads": 57,
           "iap_units": 1,
           "proceeds_jpy": 833,
           "top_products": [
@@ -2775,7 +3031,8 @@
         },
         {
           "title": "Medicine Reminder & Tracker",
-          "downloads": 68,
+          "downloads": 62,
+          "redownloads": 6,
           "iap_units": 5,
           "proceeds_jpy": 620,
           "top_products": [
@@ -2787,7 +3044,8 @@
         },
         {
           "title": "Eye Drop Reminder - EyeDrop",
-          "downloads": 95,
+          "downloads": 71,
+          "redownloads": 24,
           "iap_units": 11,
           "proceeds_jpy": 466,
           "top_products": [
@@ -2799,7 +3057,8 @@
         },
         {
           "title": "SkyCode",
-          "downloads": 61,
+          "downloads": 11,
+          "redownloads": 50,
           "iap_units": 1,
           "proceeds_jpy": 255,
           "top_products": [
@@ -2811,7 +3070,8 @@
         },
         {
           "title": "AlwaysOnTimer",
-          "downloads": 60,
+          "downloads": 29,
+          "redownloads": 31,
           "iap_units": 2,
           "proceeds_jpy": 204,
           "top_products": [
@@ -2823,7 +3083,8 @@
         },
         {
           "title": "PIPMP",
-          "downloads": 43,
+          "downloads": 28,
+          "redownloads": 15,
           "iap_units": 1,
           "proceeds_jpy": 102,
           "top_products": [
@@ -2835,56 +3096,64 @@
         },
         {
           "title": "UNCHIKUN Poop Tracker",
-          "downloads": 11890,
+          "downloads": 11267,
+          "redownloads": 623,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "TicketMania",
-          "downloads": 122,
+          "downloads": 110,
+          "redownloads": 12,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "PhotoGuards",
-          "downloads": 49,
+          "downloads": 30,
+          "redownloads": 19,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "PictIn",
-          "downloads": 376,
+          "downloads": 84,
+          "redownloads": 292,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "ClockWidget ~個性豊かな時計ウィジェットアプリ~",
-          "downloads": 18,
+          "downloads": 12,
+          "redownloads": 6,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "BookBank(読書銀行) あなたの知識を記帳しよう",
-          "downloads": 21,
+          "downloads": 13,
+          "redownloads": 8,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "Today -今日は令和何年で何の日？-",
-          "downloads": 38,
+          "downloads": 35,
+          "redownloads": 3,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "ShellLens - Seashell AI Guide",
-          "downloads": 28,
+          "downloads": 27,
+          "redownloads": 1,
           "iap_units": 1,
           "proceeds_jpy": 0,
           "top_products": []
@@ -2892,20 +3161,23 @@
         {
           "title": "BirdLens - Bird AI Guide",
           "downloads": 46,
+          "redownloads": 0,
           "iap_units": 2,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "らくタグ",
-          "downloads": 10,
+          "downloads": 3,
+          "redownloads": 7,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "ゼリーセイムパズル",
-          "downloads": 40,
+          "downloads": 28,
+          "redownloads": 12,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -2913,20 +3185,23 @@
         {
           "title": "Kimochi - 気分トラッカー",
           "downloads": 15,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "馬券ジェネレーター",
-          "downloads": 60,
+          "downloads": 56,
+          "redownloads": 4,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "ずんだもんの部屋 - ずんだもんに話を聴いてもらう",
-          "downloads": 17,
+          "downloads": 16,
+          "redownloads": 1,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -2934,13 +3209,15 @@
         {
           "title": "BeautyMed - Treatment Reminder",
           "downloads": 16,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "mono ~お迎えした喜びを分かち合うアプリ~",
-          "downloads": 12,
+          "downloads": 11,
+          "redownloads": 1,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -2948,13 +3225,15 @@
         {
           "title": "FlowerLens - Flower AI Guide",
           "downloads": 19,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "DailySnap - Photo Calendar",
-          "downloads": 34,
+          "downloads": 31,
+          "redownloads": 3,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -2962,20 +3241,23 @@
         {
           "title": "Simple Touch The Numbers",
           "downloads": 2,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "バースデームーン",
-          "downloads": 211,
+          "downloads": 140,
+          "redownloads": 71,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "RelayChat (リレーチャット) ~オフライン会話~",
-          "downloads": 45,
+          "downloads": 38,
+          "redownloads": 7,
           "iap_units": 2,
           "proceeds_jpy": 0,
           "top_products": []
@@ -2983,41 +3265,47 @@
         {
           "title": "BaseReminder",
           "downloads": 8,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "WidgetQiita",
-          "downloads": 6,
+          "downloads": 4,
+          "redownloads": 2,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "Cook-it -冷蔵庫の中を撮るだけでAIレシピ提案-",
-          "downloads": 7,
+          "downloads": 6,
+          "redownloads": 1,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "π ~ Pi Fun App.",
-          "downloads": 50,
+          "downloads": 44,
+          "redownloads": 6,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "旬のお魚カレンダー",
-          "downloads": 23,
+          "downloads": 16,
+          "redownloads": 7,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "Daydream Camera: AI Travel",
-          "downloads": 7,
+          "downloads": 6,
+          "redownloads": 1,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -3025,41 +3313,47 @@
         {
           "title": "言の葉箱 〜大切な手紙を簡単に記録〜",
           "downloads": 5,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "ikaQR ~QRコードを爆速で読み込もう~",
-          "downloads": 9,
+          "downloads": 5,
+          "redownloads": 4,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "AI Gemini",
-          "downloads": 3,
+          "downloads": 0,
+          "redownloads": 3,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "ながらカウンター ~別のアプリを使っていてもカウントできる~",
-          "downloads": 46,
+          "downloads": 37,
+          "redownloads": 9,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "WidgetZenn",
-          "downloads": 13,
+          "downloads": 10,
+          "redownloads": 3,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "Music Snapshot: Art Wallpapers",
-          "downloads": 1,
+          "downloads": 0,
+          "redownloads": 1,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -3067,6 +3361,7 @@
         {
           "title": "CheckInSenior - Family Check",
           "downloads": 4,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -3140,11 +3435,13 @@
     "total_jpy": 336721,
     "appstore_detail": {
       "proceeds_jpy": 195141,
-      "total_downloads": 60921,
+      "total_downloads": 39240,
+      "total_redownloads": 21681,
       "apps": [
         {
           "title": "TravelMemoryMap",
-          "downloads": 6309,
+          "downloads": 3456,
+          "redownloads": 2853,
           "iap_units": 125,
           "proceeds_jpy": 73086,
           "top_products": [
@@ -3164,7 +3461,8 @@
         },
         {
           "title": "UNCHIKUN: Poop Log & AI Health",
-          "downloads": 49363,
+          "downloads": 32412,
+          "redownloads": 16951,
           "iap_units": 188,
           "proceeds_jpy": 47129,
           "top_products": [
@@ -3188,7 +3486,8 @@
         },
         {
           "title": "推しアイランド",
-          "downloads": 476,
+          "downloads": 208,
+          "redownloads": 268,
           "iap_units": 156,
           "proceeds_jpy": 22695,
           "top_products": [
@@ -3204,7 +3503,8 @@
         },
         {
           "title": "猫背改善と姿勢リマインダー：猫背は猫だけで充分にゃ。",
-          "downloads": 512,
+          "downloads": 477,
+          "redownloads": 35,
           "iap_units": 31,
           "proceeds_jpy": 12461,
           "top_products": [
@@ -3220,7 +3520,8 @@
         },
         {
           "title": "ゼリーセイムパズル",
-          "downloads": 43,
+          "downloads": 32,
+          "redownloads": 11,
           "iap_units": 14,
           "proceeds_jpy": 8502,
           "top_products": [
@@ -3240,7 +3541,8 @@
         },
         {
           "title": "Mekulun - Daily Calendar",
-          "downloads": 70,
+          "downloads": 67,
+          "redownloads": 3,
           "iap_units": 5,
           "proceeds_jpy": 7855,
           "top_products": [
@@ -3256,7 +3558,8 @@
         },
         {
           "title": "GeoLens - Rock & Mineral AI",
-          "downloads": 35,
+          "downloads": 32,
+          "redownloads": 3,
           "iap_units": 8,
           "proceeds_jpy": 6800,
           "top_products": [
@@ -3272,7 +3575,8 @@
         },
         {
           "title": "Floating Notepad　-Overlay-",
-          "downloads": 2449,
+          "downloads": 1420,
+          "redownloads": 1029,
           "iap_units": 21,
           "proceeds_jpy": 4409,
           "top_products": [
@@ -3288,7 +3592,8 @@
         },
         {
           "title": "Eye Drop Reminder - EyeDrop",
-          "downloads": 92,
+          "downloads": 87,
+          "redownloads": 5,
           "iap_units": 12,
           "proceeds_jpy": 3024,
           "top_products": [
@@ -3304,7 +3609,8 @@
         },
         {
           "title": "CosmeFresh: Makeup Expiry",
-          "downloads": 14,
+          "downloads": 12,
+          "redownloads": 2,
           "iap_units": 1,
           "proceeds_jpy": 2758,
           "top_products": [
@@ -3316,7 +3622,8 @@
         },
         {
           "title": "フチドリ！ ~背景透過と縁取り~",
-          "downloads": 254,
+          "downloads": 191,
+          "redownloads": 63,
           "iap_units": 3,
           "proceeds_jpy": 2492,
           "top_products": [
@@ -3328,7 +3635,8 @@
         },
         {
           "title": "スワイポン - スワイプで写真と動画を簡単整理",
-          "downloads": 14,
+          "downloads": 9,
+          "redownloads": 5,
           "iap_units": 19,
           "proceeds_jpy": 935,
           "top_products": [
@@ -3344,7 +3652,8 @@
         },
         {
           "title": "Medicine Reminder & Tracker",
-          "downloads": 67,
+          "downloads": 60,
+          "redownloads": 7,
           "iap_units": 5,
           "proceeds_jpy": 709,
           "top_products": [
@@ -3357,6 +3666,7 @@
         {
           "title": "ShellLens - Seashell AI Guide",
           "downloads": 12,
+          "redownloads": 0,
           "iap_units": 2,
           "proceeds_jpy": 550,
           "top_products": [
@@ -3368,7 +3678,8 @@
         },
         {
           "title": "FocusDrive - Focus Timer",
-          "downloads": 70,
+          "downloads": 52,
+          "redownloads": 18,
           "iap_units": 2,
           "proceeds_jpy": 412,
           "top_products": [
@@ -3380,7 +3691,8 @@
         },
         {
           "title": "Anniversary Reminder - Memoria",
-          "downloads": 12,
+          "downloads": 11,
+          "redownloads": 1,
           "iap_units": 2,
           "proceeds_jpy": 345,
           "top_products": [
@@ -3392,7 +3704,8 @@
         },
         {
           "title": "馬券ジェネレーター",
-          "downloads": 33,
+          "downloads": 32,
+          "redownloads": 1,
           "iap_units": 1,
           "proceeds_jpy": 272,
           "top_products": [
@@ -3404,7 +3717,8 @@
         },
         {
           "title": "AlwaysOnTimer",
-          "downloads": 52,
+          "downloads": 29,
+          "redownloads": 23,
           "iap_units": 2,
           "proceeds_jpy": 204,
           "top_products": [
@@ -3416,7 +3730,8 @@
         },
         {
           "title": "DailySnap - Photo Calendar",
-          "downloads": 36,
+          "downloads": 33,
+          "redownloads": 3,
           "iap_units": 3,
           "proceeds_jpy": 204,
           "top_products": [
@@ -3429,6 +3744,7 @@
         {
           "title": "BeautyMed - Treatment Reminder",
           "downloads": 15,
+          "redownloads": 0,
           "iap_units": 3,
           "proceeds_jpy": 197,
           "top_products": [
@@ -3440,7 +3756,8 @@
         },
         {
           "title": "PIPMP",
-          "downloads": 35,
+          "downloads": 16,
+          "redownloads": 19,
           "iap_units": 1,
           "proceeds_jpy": 102,
           "top_products": [
@@ -3452,7 +3769,8 @@
         },
         {
           "title": "バースデームーン",
-          "downloads": 174,
+          "downloads": 131,
+          "redownloads": 43,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -3460,20 +3778,23 @@
         {
           "title": "Kimochi - 気分トラッカー",
           "downloads": 4,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "PictIn",
-          "downloads": 283,
+          "downloads": 72,
+          "redownloads": 211,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "ClockWidget ~個性豊かな時計ウィジェットアプリ~",
-          "downloads": 20,
+          "downloads": 10,
+          "redownloads": 10,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -3481,6 +3802,7 @@
         {
           "title": "Aquarium Care - TankMinder",
           "downloads": 16,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -3488,27 +3810,31 @@
         {
           "title": "LensLog: Contact Lens Reminder",
           "downloads": 16,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "π ~ Pi Fun App.",
-          "downloads": 46,
+          "downloads": 36,
+          "redownloads": 10,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "TicketMania",
-          "downloads": 53,
+          "downloads": 50,
+          "redownloads": 3,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "SkyCode",
-          "downloads": 54,
+          "downloads": 12,
+          "redownloads": 42,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -3516,6 +3842,7 @@
         {
           "title": "PassportAlert: Visa Expiry",
           "downloads": 4,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -3523,13 +3850,15 @@
         {
           "title": "FreudDream: AI Dream Reading",
           "downloads": 12,
+          "redownloads": 0,
           "iap_units": 2,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "PhotoGuards",
-          "downloads": 27,
+          "downloads": 20,
+          "redownloads": 7,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -3537,13 +3866,15 @@
         {
           "title": "CarKeep: Car Maintenance",
           "downloads": 4,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "BeanFresh - Coffee Freshness",
-          "downloads": 4,
+          "downloads": 3,
+          "redownloads": 1,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -3551,20 +3882,23 @@
         {
           "title": "BirdLens - Bird AI Guide",
           "downloads": 13,
+          "redownloads": 0,
           "iap_units": 2,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "AI Gemini",
-          "downloads": 2,
+          "downloads": 0,
+          "redownloads": 2,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "ikaQR ~QRコードを爆速で読み込もう~",
-          "downloads": 5,
+          "downloads": 3,
+          "redownloads": 2,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -3572,20 +3906,23 @@
         {
           "title": "Daydream Camera: AI Travel",
           "downloads": 3,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "らくタグ",
-          "downloads": 4,
+          "downloads": 0,
+          "redownloads": 4,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "ShoeKeep: Care & Rotation",
-          "downloads": 4,
+          "downloads": 2,
+          "redownloads": 2,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -3593,6 +3930,7 @@
         {
           "title": "Simple Touch The Numbers",
           "downloads": 2,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -3600,6 +3938,7 @@
         {
           "title": "HomeKeep - Filter Reminder",
           "downloads": 5,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -3607,20 +3946,23 @@
         {
           "title": "PenKeep: Fountain Pen Care",
           "downloads": 1,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "Cook-it -冷蔵庫の中を撮るだけでAIレシピ提案-",
-          "downloads": 7,
+          "downloads": 6,
+          "redownloads": 1,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "旬のお魚カレンダー",
-          "downloads": 18,
+          "downloads": 14,
+          "redownloads": 4,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -3628,6 +3970,7 @@
         {
           "title": "ReelKeep: Fishing Reel Care",
           "downloads": 4,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -3635,41 +3978,47 @@
         {
           "title": "言の葉箱 〜大切な手紙を簡単に記録〜",
           "downloads": 4,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "ずんだもんの部屋 - ずんだもんに話を聴いてもらう",
-          "downloads": 12,
+          "downloads": 8,
+          "redownloads": 4,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "BaseReminder",
-          "downloads": 10,
+          "downloads": 9,
+          "redownloads": 1,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "WineReady: Drink Window",
-          "downloads": 4,
+          "downloads": 2,
+          "redownloads": 2,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "RelayChat (リレーチャット) ~オフライン会話~",
-          "downloads": 46,
+          "downloads": 40,
+          "redownloads": 6,
           "iap_units": 1,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "WidgetQiita",
-          "downloads": 7,
+          "downloads": 2,
+          "redownloads": 5,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -3677,34 +4026,39 @@
         {
           "title": "BikeKeep: Bike Maintenance",
           "downloads": 1,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "BookBank(読書銀行) あなたの知識を記帳しよう",
-          "downloads": 10,
+          "downloads": 6,
+          "redownloads": 4,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "WidgetZenn",
-          "downloads": 8,
+          "downloads": 7,
+          "redownloads": 1,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "Today -今日は令和何年で何の日？-",
-          "downloads": 35,
+          "downloads": 28,
+          "redownloads": 7,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "ながらカウンター ~別のアプリを使っていてもカウントできる~",
-          "downloads": 26,
+          "downloads": 17,
+          "redownloads": 9,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -3712,6 +4066,7 @@
         {
           "title": "mono ~お迎えした喜びを分かち合うアプリ~",
           "downloads": 4,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -3719,6 +4074,7 @@
         {
           "title": "FlowerLens - Flower AI Guide",
           "downloads": 3,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -3726,6 +4082,7 @@
         {
           "title": "WatchKeep: Watch Care",
           "downloads": 2,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -3733,6 +4090,7 @@
         {
           "title": "CheckInSenior - Family Check",
           "downloads": 1,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -3790,11 +4148,13 @@
     "total_jpy": 372319,
     "appstore_detail": {
       "proceeds_jpy": 195845,
-      "total_downloads": 93845,
+      "total_downloads": 38972,
+      "total_redownloads": 54873,
       "apps": [
         {
           "title": "UNCHIKUN: Poop Log & AI Health",
-          "downloads": 82207,
+          "downloads": 32579,
+          "redownloads": 49628,
           "iap_units": 244,
           "proceeds_jpy": 75211,
           "top_products": [
@@ -3822,7 +4182,8 @@
         },
         {
           "title": "TravelMemoryMap",
-          "downloads": 6242,
+          "downloads": 3139,
+          "redownloads": 3103,
           "iap_units": 119,
           "proceeds_jpy": 70425,
           "top_products": [
@@ -3842,7 +4203,8 @@
         },
         {
           "title": "推しアイランド",
-          "downloads": 386,
+          "downloads": 144,
+          "redownloads": 242,
           "iap_units": 153,
           "proceeds_jpy": 15201,
           "top_products": [
@@ -3854,7 +4216,8 @@
         },
         {
           "title": "FocusDrive - Focus Timer",
-          "downloads": 68,
+          "downloads": 53,
+          "redownloads": 15,
           "iap_units": 7,
           "proceeds_jpy": 5876,
           "top_products": [
@@ -3870,7 +4233,8 @@
         },
         {
           "title": "Medicine Reminder & Tracker",
-          "downloads": 55,
+          "downloads": 52,
+          "redownloads": 3,
           "iap_units": 12,
           "proceeds_jpy": 5007,
           "top_products": [
@@ -3886,7 +4250,8 @@
         },
         {
           "title": "猫背改善と姿勢リマインダー：猫背は猫だけで充分にゃ。",
-          "downloads": 361,
+          "downloads": 329,
+          "redownloads": 32,
           "iap_units": 25,
           "proceeds_jpy": 4675,
           "top_products": [
@@ -3898,7 +4263,8 @@
         },
         {
           "title": "GeoLens - Rock & Mineral AI",
-          "downloads": 40,
+          "downloads": 39,
+          "redownloads": 1,
           "iap_units": 10,
           "proceeds_jpy": 3060,
           "top_products": [
@@ -3910,7 +4276,8 @@
         },
         {
           "title": "Eye Drop Reminder - EyeDrop",
-          "downloads": 97,
+          "downloads": 84,
+          "redownloads": 13,
           "iap_units": 11,
           "proceeds_jpy": 2935,
           "top_products": [
@@ -3926,7 +4293,8 @@
         },
         {
           "title": "Mekulun - Daily Calendar",
-          "downloads": 102,
+          "downloads": 85,
+          "redownloads": 17,
           "iap_units": 3,
           "proceeds_jpy": 2789,
           "top_products": [
@@ -3942,7 +4310,8 @@
         },
         {
           "title": "ShellLens - Seashell AI Guide",
-          "downloads": 32,
+          "downloads": 28,
+          "redownloads": 4,
           "iap_units": 5,
           "proceeds_jpy": 2716,
           "top_products": [
@@ -3954,7 +4323,8 @@
         },
         {
           "title": "Floating Notepad　-Overlay-",
-          "downloads": 2299,
+          "downloads": 1201,
+          "redownloads": 1098,
           "iap_units": 20,
           "proceeds_jpy": 2692,
           "top_products": [
@@ -3966,7 +4336,8 @@
         },
         {
           "title": "フチドリ！ ~背景透過と縁取り~",
-          "downloads": 228,
+          "downloads": 174,
+          "redownloads": 54,
           "iap_units": 2,
           "proceeds_jpy": 1666,
           "top_products": [
@@ -3978,7 +4349,8 @@
         },
         {
           "title": "馬券ジェネレーター",
-          "downloads": 29,
+          "downloads": 24,
+          "redownloads": 5,
           "iap_units": 5,
           "proceeds_jpy": 1360,
           "top_products": [
@@ -3990,7 +4362,8 @@
         },
         {
           "title": "スワイポン - スワイプで写真と動画を簡単整理",
-          "downloads": 22,
+          "downloads": 17,
+          "redownloads": 5,
           "iap_units": 16,
           "proceeds_jpy": 806,
           "top_products": [
@@ -4006,7 +4379,8 @@
         },
         {
           "title": "RelayChat-オフライン匿名Bluetoothチャット",
-          "downloads": 31,
+          "downloads": 26,
+          "redownloads": 5,
           "iap_units": 1,
           "proceeds_jpy": 425,
           "top_products": [
@@ -4019,6 +4393,7 @@
         {
           "title": "BeautyMed - Treatment Reminder",
           "downloads": 8,
+          "redownloads": 0,
           "iap_units": 4,
           "proceeds_jpy": 393,
           "top_products": [
@@ -4030,7 +4405,8 @@
         },
         {
           "title": "PictIn",
-          "downloads": 600,
+          "downloads": 270,
+          "redownloads": 330,
           "iap_units": 1,
           "proceeds_jpy": 204,
           "top_products": [
@@ -4042,7 +4418,8 @@
         },
         {
           "title": "AlwaysOnTimer",
-          "downloads": 71,
+          "downloads": 42,
+          "redownloads": 29,
           "iap_units": 2,
           "proceeds_jpy": 204,
           "top_products": [
@@ -4054,7 +4431,8 @@
         },
         {
           "title": "PIPMP",
-          "downloads": 27,
+          "downloads": 11,
+          "redownloads": 16,
           "iap_units": 1,
           "proceeds_jpy": 102,
           "top_products": [
@@ -4067,6 +4445,7 @@
         {
           "title": "BeanFresh - Coffee Freshness",
           "downloads": 5,
+          "redownloads": 0,
           "iap_units": 1,
           "proceeds_jpy": 97,
           "top_products": [
@@ -4078,21 +4457,24 @@
         },
         {
           "title": "FlowerLens - Flower AI Guide",
-          "downloads": 9,
+          "downloads": 8,
+          "redownloads": 1,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "Aquarium Care - TankMinder",
-          "downloads": 27,
+          "downloads": 26,
+          "redownloads": 1,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "DailySnap - Photo Calendar",
-          "downloads": 51,
+          "downloads": 46,
+          "redownloads": 5,
           "iap_units": 1,
           "proceeds_jpy": 0,
           "top_products": []
@@ -4100,6 +4482,7 @@
         {
           "title": "CameraKeep: Camera Gear Care",
           "downloads": 19,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -4107,13 +4490,15 @@
         {
           "title": "WineReady: Drink Window",
           "downloads": 3,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "RelayChat (リレーチャット) ~オフライン会話~",
-          "downloads": 5,
+          "downloads": 3,
+          "redownloads": 2,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -4121,13 +4506,15 @@
         {
           "title": "WatchKeep: Watch Care",
           "downloads": 4,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "Anniversary Reminder - Memoria",
-          "downloads": 13,
+          "downloads": 12,
+          "redownloads": 1,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -4135,20 +4522,23 @@
         {
           "title": "Himekuri - Day Countdown",
           "downloads": 29,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "バースデームーン",
-          "downloads": 168,
+          "downloads": 104,
+          "redownloads": 64,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "Today -今日は令和何年で何の日？-",
-          "downloads": 48,
+          "downloads": 30,
+          "redownloads": 18,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -4156,6 +4546,7 @@
         {
           "title": "DiveKeep: Scuba Gear Care",
           "downloads": 7,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -4163,34 +4554,39 @@
         {
           "title": "CarKeep: Car Maintenance",
           "downloads": 12,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "ずんだもんの部屋 - ずんだもんに話を聴いてもらう",
-          "downloads": 12,
+          "downloads": 11,
+          "redownloads": 1,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "BookBank(読書銀行) 読書記録・蔵書管理",
-          "downloads": 25,
+          "downloads": 21,
+          "redownloads": 4,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "ClockWidget ~個性豊かな時計ウィジェットアプリ~",
-          "downloads": 40,
+          "downloads": 13,
+          "redownloads": 27,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "BirdLens - Bird AI Guide",
-          "downloads": 16,
+          "downloads": 14,
+          "redownloads": 2,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -4198,41 +4594,47 @@
         {
           "title": "Kimochi - 気分トラッカー",
           "downloads": 1,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "OshiLog - Fandom Tracker",
-          "downloads": 9,
+          "downloads": 8,
+          "redownloads": 1,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "PhotoGuards",
-          "downloads": 32,
+          "downloads": 23,
+          "redownloads": 9,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "SkyCode",
-          "downloads": 53,
+          "downloads": 11,
+          "redownloads": 42,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "LensLog: Contact Lens Reminder",
-          "downloads": 19,
+          "downloads": 16,
+          "redownloads": 3,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "旬のお魚カレンダー",
-          "downloads": 29,
+          "downloads": 13,
+          "redownloads": 16,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -4240,13 +4642,15 @@
         {
           "title": "PassportAlert: Visa Expiry",
           "downloads": 6,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "らくタグ",
-          "downloads": 9,
+          "downloads": 5,
+          "redownloads": 4,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -4254,13 +4658,15 @@
         {
           "title": "KnifeKeep: Blade Care",
           "downloads": 3,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "BikeKeep: Bike Maintenance",
-          "downloads": 15,
+          "downloads": 14,
+          "redownloads": 1,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -4268,6 +4674,7 @@
         {
           "title": "WidgetZenn",
           "downloads": 6,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -4275,20 +4682,23 @@
         {
           "title": "CheckInSenior - Family Check",
           "downloads": 2,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "BookBank(読書銀行) あなたの知識を記帳しよう",
-          "downloads": 23,
+          "downloads": 9,
+          "redownloads": 14,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "ゼリーセイムパズル",
-          "downloads": 47,
+          "downloads": 35,
+          "redownloads": 12,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -4296,6 +4706,7 @@
         {
           "title": "YOU Receipt: Receipt Maker",
           "downloads": 8,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -4303,6 +4714,7 @@
         {
           "title": "言の葉箱 〜大切な手紙を簡単に記録〜",
           "downloads": 3,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -4310,27 +4722,31 @@
         {
           "title": "Cook-it -冷蔵庫の中を撮るだけでAIレシピ提案-",
           "downloads": 10,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "ikaQR ~QRコードを爆速で読み込もう~",
-          "downloads": 4,
+          "downloads": 2,
+          "redownloads": 2,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "コインゲームコレクション：レトロゲーセン",
-          "downloads": 5,
+          "downloads": 4,
+          "redownloads": 1,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "π ~ Pi Fun App.",
-          "downloads": 33,
+          "downloads": 19,
+          "redownloads": 14,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -4338,20 +4754,23 @@
         {
           "title": "ShoeKeep: Care & Rotation",
           "downloads": 3,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "ながらカウンター ~別のアプリを使っていてもカウントできる~",
-          "downloads": 27,
+          "downloads": 15,
+          "redownloads": 12,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "BaseReminder",
-          "downloads": 2,
+          "downloads": 1,
+          "redownloads": 1,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -4359,6 +4778,7 @@
         {
           "title": "Daydream Camera: AI Travel",
           "downloads": 2,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -4366,13 +4786,15 @@
         {
           "title": "PenKeep: Fountain Pen Care",
           "downloads": 2,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "TicketMania",
-          "downloads": 43,
+          "downloads": 39,
+          "redownloads": 4,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -4380,6 +4802,7 @@
         {
           "title": "FreudDream: AI Dream Reading",
           "downloads": 5,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -4387,34 +4810,39 @@
         {
           "title": "ReelKeep: Fishing Reel Care",
           "downloads": 2,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "Simple Touch The Numbers",
-          "downloads": 2,
+          "downloads": 1,
+          "redownloads": 1,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "Kimochi かわいい気分日記",
-          "downloads": 6,
+          "downloads": 4,
+          "redownloads": 2,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "CosmeFresh: Makeup Expiry",
-          "downloads": 15,
+          "downloads": 14,
+          "redownloads": 1,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "WidgetQiita",
-          "downloads": 6,
+          "downloads": 2,
+          "redownloads": 4,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -4422,6 +4850,7 @@
         {
           "title": "HomeKeep - Filter Reminder",
           "downloads": 10,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -4429,13 +4858,15 @@
         {
           "title": "mono ~お迎えした喜びを分かち合うアプリ~",
           "downloads": 2,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "AI Gemini",
-          "downloads": 3,
+          "downloads": 0,
+          "redownloads": 3,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -4582,11 +5013,13 @@
     "total_jpy": 494888,
     "appstore_detail": {
       "proceeds_jpy": 316726,
-      "total_downloads": 61435,
+      "total_downloads": 32625,
+      "total_redownloads": 28821,
       "apps": [
         {
           "title": "TravelMemoryMap",
-          "downloads": 8265,
+          "downloads": 4707,
+          "redownloads": 3558,
           "iap_units": 121,
           "proceeds_jpy": 98475,
           "top_products": [
@@ -4606,7 +5039,8 @@
         },
         {
           "title": "UNCHIKUN: Poop Log & AI Health",
-          "downloads": 45702,
+          "downloads": 22445,
+          "redownloads": 23257,
           "iap_units": 237,
           "proceeds_jpy": 77664,
           "top_products": [
@@ -4634,7 +5068,8 @@
         },
         {
           "title": "YOU Receipt: Receipt Maker",
-          "downloads": 2055,
+          "downloads": 1985,
+          "redownloads": 70,
           "iap_units": 65,
           "proceeds_jpy": 77252,
           "top_products": [
@@ -4650,7 +5085,8 @@
         },
         {
           "title": "推しアイランド",
-          "downloads": 418,
+          "downloads": 180,
+          "redownloads": 238,
           "iap_units": 134,
           "proceeds_jpy": 22608,
           "top_products": [
@@ -4666,7 +5102,8 @@
         },
         {
           "title": "GeoLens - Rock & Mineral AI",
-          "downloads": 78,
+          "downloads": 74,
+          "redownloads": 4,
           "iap_units": 26,
           "proceeds_jpy": 7650,
           "top_products": [
@@ -4678,7 +5115,8 @@
         },
         {
           "title": "猫背改善と姿勢リマインダー：猫背は猫だけで充分にゃ。",
-          "downloads": 77,
+          "downloads": 41,
+          "redownloads": 36,
           "iap_units": 29,
           "proceeds_jpy": 7582,
           "top_products": [
@@ -4694,7 +5132,8 @@
         },
         {
           "title": "FocusDrive - Focus Timer",
-          "downloads": 81,
+          "downloads": 61,
+          "redownloads": 20,
           "iap_units": 7,
           "proceeds_jpy": 5748,
           "top_products": [
@@ -4710,7 +5149,8 @@
         },
         {
           "title": "Eye Drop Reminder - EyeDrop",
-          "downloads": 87,
+          "downloads": 76,
+          "redownloads": 11,
           "iap_units": 16,
           "proceeds_jpy": 3229,
           "top_products": [
@@ -4727,6 +5167,7 @@
         {
           "title": "CosmeFresh: Makeup Expiry",
           "downloads": 18,
+          "redownloads": 0,
           "iap_units": 2,
           "proceeds_jpy": 2884,
           "top_products": [
@@ -4742,7 +5183,8 @@
         },
         {
           "title": "Mekulun - Daily Calendar",
-          "downloads": 123,
+          "downloads": 107,
+          "redownloads": 16,
           "iap_units": 3,
           "proceeds_jpy": 2789,
           "top_products": [
@@ -4758,7 +5200,8 @@
         },
         {
           "title": "Floating Notepad　-Overlay-",
-          "downloads": 1956,
+          "downloads": 990,
+          "redownloads": 966,
           "iap_units": 19,
           "proceeds_jpy": 2700,
           "top_products": [
@@ -4770,7 +5213,8 @@
         },
         {
           "title": "ShellLens - Seashell AI Guide",
-          "downloads": 41,
+          "downloads": 38,
+          "redownloads": 3,
           "iap_units": 4,
           "proceeds_jpy": 2166,
           "top_products": [
@@ -4782,7 +5226,8 @@
         },
         {
           "title": "フチドリ！ ~背景透過と縁取り~",
-          "downloads": 253,
+          "downloads": 199,
+          "redownloads": 54,
           "iap_units": 2,
           "proceeds_jpy": 1666,
           "top_products": [
@@ -4795,6 +5240,7 @@
         {
           "title": "Medicine Reminder & Tracker",
           "downloads": 40,
+          "redownloads": 0,
           "iap_units": 8,
           "proceeds_jpy": 1317,
           "top_products": [
@@ -4806,7 +5252,8 @@
         },
         {
           "title": "スワイポン - スワイプで写真と動画を簡単整理",
-          "downloads": 16,
+          "downloads": 8,
+          "redownloads": 8,
           "iap_units": 13,
           "proceeds_jpy": 618,
           "top_products": [
@@ -4822,7 +5269,8 @@
         },
         {
           "title": "nokki - 音楽ジャーナル",
-          "downloads": 541,
+          "downloads": 521,
+          "redownloads": 20,
           "iap_units": 2,
           "proceeds_jpy": 510,
           "top_products": [
@@ -4835,13 +5283,15 @@
         {
           "title": "コインゲームコレクション：レトロゲーセン",
           "downloads": 2,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 510,
           "top_products": []
         },
         {
           "title": "RelayChat-オフライン匿名Bluetoothチャット",
-          "downloads": 45,
+          "downloads": 32,
+          "redownloads": 13,
           "iap_units": 1,
           "proceeds_jpy": 425,
           "top_products": [
@@ -4853,7 +5303,8 @@
         },
         {
           "title": "馬券ジェネレーター",
-          "downloads": 40,
+          "downloads": 34,
+          "redownloads": 6,
           "iap_units": 1,
           "proceeds_jpy": 272,
           "top_products": [
@@ -4866,6 +5317,7 @@
         {
           "title": "BeautyMed - Treatment Reminder",
           "downloads": 13,
+          "redownloads": 0,
           "iap_units": 3,
           "proceeds_jpy": 268,
           "top_products": [
@@ -4877,7 +5329,8 @@
         },
         {
           "title": "AlwaysOnTimer",
-          "downloads": 53,
+          "downloads": 30,
+          "redownloads": 23,
           "iap_units": 2,
           "proceeds_jpy": 204,
           "top_products": [
@@ -4889,7 +5342,8 @@
         },
         {
           "title": "PIPMP",
-          "downloads": 41,
+          "downloads": 20,
+          "redownloads": 21,
           "iap_units": 1,
           "proceeds_jpy": 102,
           "top_products": [
@@ -4901,7 +5355,8 @@
         },
         {
           "title": "ゼリーセイムパズル",
-          "downloads": 41,
+          "downloads": 27,
+          "redownloads": 14,
           "iap_units": 2,
           "proceeds_jpy": 86,
           "top_products": [
@@ -4914,34 +5369,39 @@
         {
           "title": "OshiLog - Fandom Tracker",
           "downloads": 26,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "SkyCode",
-          "downloads": 48,
+          "downloads": 18,
+          "redownloads": 30,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "CarKeep: Car Maintenance",
-          "downloads": 11,
+          "downloads": 10,
+          "redownloads": 1,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "らくタグ",
-          "downloads": 4,
+          "downloads": 0,
+          "redownloads": 4,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "PhotoGuards",
-          "downloads": 27,
+          "downloads": 12,
+          "redownloads": 15,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -4949,55 +5409,63 @@
         {
           "title": "HomeKeep - Filter Reminder",
           "downloads": 14,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "Anniversary Reminder - Memoria",
-          "downloads": 21,
+          "downloads": 20,
+          "redownloads": 1,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "BaseReminder",
-          "downloads": 5,
+          "downloads": 4,
+          "redownloads": 1,
           "iap_units": 1,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "バースデームーン",
-          "downloads": 185,
+          "downloads": 120,
+          "redownloads": 65,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "Monivo: Wake Up by Voice",
-          "downloads": 76,
+          "downloads": 71,
+          "redownloads": 5,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "π ~ Pi Fun App.",
-          "downloads": 22,
+          "downloads": 12,
+          "redownloads": 10,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "ShoeKeep: Care & Rotation",
-          "downloads": 5,
+          "downloads": 4,
+          "redownloads": 1,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "Matchbox: Focus Timer & Habits",
-          "downloads": 24,
+          "downloads": 23,
+          "redownloads": 1,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": [
@@ -5010,27 +5478,31 @@
         {
           "title": "DiveKeep: Scuba Gear Care",
           "downloads": 5,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "EyeMole - Eye Whack-a-Mole",
-          "downloads": 43,
+          "downloads": 39,
+          "redownloads": 4,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "BirdLens - Bird AI Guide",
-          "downloads": 10,
+          "downloads": 7,
+          "redownloads": 3,
           "iap_units": 1,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "DailySnap - Photo Calendar",
-          "downloads": 38,
+          "downloads": 37,
+          "redownloads": 1,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -5038,6 +5510,7 @@
         {
           "title": "WatchKeep: Watch Care",
           "downloads": 7,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -5045,62 +5518,71 @@
         {
           "title": "CheckInSenior - Family Check",
           "downloads": 3,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "Kimochi かわいい気分日記",
-          "downloads": 8,
+          "downloads": 7,
+          "redownloads": 1,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "ずんだもんの部屋 - ずんだもんに話を聴いてもらう",
-          "downloads": 18,
+          "downloads": 16,
+          "redownloads": 2,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "LensLog: Contact Lens Reminder",
-          "downloads": 19,
+          "downloads": 17,
+          "redownloads": 2,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "ClockWidget ~個性豊かな時計ウィジェットアプリ~",
-          "downloads": 17,
+          "downloads": 10,
+          "redownloads": 7,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "TicketMania",
-          "downloads": 75,
+          "downloads": 62,
+          "redownloads": 13,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "PictIn",
-          "downloads": 325,
+          "downloads": 74,
+          "redownloads": 251,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "KnifeKeep: Blade Care",
-          "downloads": 8,
+          "downloads": 7,
+          "redownloads": 1,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "旬のお魚カレンダー",
-          "downloads": 17,
+          "downloads": 14,
+          "redownloads": 3,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -5108,27 +5590,31 @@
         {
           "title": "言の葉箱 〜大切な手紙を簡単に記録〜",
           "downloads": 3,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "WidgetZenn",
-          "downloads": 3,
+          "downloads": 2,
+          "redownloads": 1,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
-          "title": "(不明: Yattayo: Slider To-Do Board)",
-          "downloads": 0,
-          "iap_units": 11,
+          "title": "Yattayo: Slider To-Do Board",
+          "downloads": 57,
+          "redownloads": 0,
+          "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "AI Gemini",
-          "downloads": 6,
+          "downloads": 0,
+          "redownloads": 6,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -5136,13 +5622,15 @@
         {
           "title": "FreudDream: AI Dream Reading",
           "downloads": 4,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "Today -今日は令和何年で何の日？-",
-          "downloads": 44,
+          "downloads": 34,
+          "redownloads": 10,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -5150,20 +5638,15 @@
         {
           "title": "PenKeep: Fountain Pen Care",
           "downloads": 6,
-          "iap_units": 0,
-          "proceeds_jpy": 0,
-          "top_products": []
-        },
-        {
-          "title": "Yattayo: Slider To-Do Board",
-          "downloads": 46,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "BookBank(読書銀行) 読書記録・蔵書管理",
-          "downloads": 43,
+          "downloads": 37,
+          "redownloads": 6,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -5171,20 +5654,23 @@
         {
           "title": "ReelKeep: Fishing Reel Care",
           "downloads": 4,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "Cook-it -冷蔵庫の中を撮るだけでAIレシピ提案-",
-          "downloads": 4,
+          "downloads": 3,
+          "redownloads": 1,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "Aquarium Care - TankMinder",
-          "downloads": 26,
+          "downloads": 25,
+          "redownloads": 1,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -5192,6 +5678,7 @@
         {
           "title": "PassportAlert: Visa Expiry",
           "downloads": 5,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -5199,27 +5686,31 @@
         {
           "title": "Daydream Camera: AI Travel",
           "downloads": 5,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "Simple Touch The Numbers",
-          "downloads": 2,
+          "downloads": 1,
+          "redownloads": 1,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "WidgetQiita",
-          "downloads": 12,
+          "downloads": 3,
+          "redownloads": 9,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "Himekuri - Day Countdown",
-          "downloads": 78,
+          "downloads": 76,
+          "redownloads": 2,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -5227,6 +5718,7 @@
         {
           "title": "BikeKeep: Bike Maintenance",
           "downloads": 5,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -5234,6 +5726,7 @@
         {
           "title": "CameraKeep: Camera Gear Care",
           "downloads": 16,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -5241,27 +5734,31 @@
         {
           "title": "WineReady: Drink Window",
           "downloads": 9,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "ながらカウンター ~別のアプリを使っていてもカウントできる~",
-          "downloads": 47,
+          "downloads": 33,
+          "redownloads": 14,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "Music Snapshot: Art Wallpapers",
-          "downloads": 1,
+          "downloads": 0,
+          "redownloads": 1,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "パンケーキ屋さん",
-          "downloads": 2,
+          "downloads": 0,
+          "redownloads": 2,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -5269,6 +5766,7 @@
         {
           "title": "BeanFresh - Coffee Freshness",
           "downloads": 3,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -5276,6 +5774,7 @@
         {
           "title": "FlowerLens - Flower AI Guide",
           "downloads": 4,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
@@ -5283,13 +5782,15 @@
         {
           "title": "mono ~お迎えした喜びを分かち合うアプリ~",
           "downloads": 2,
+          "redownloads": 0,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
         },
         {
           "title": "ikaQR ~QRコードを爆速で読み込もう~",
-          "downloads": 8,
+          "downloads": 1,
+          "redownloads": 7,
           "iap_units": 0,
           "proceeds_jpy": 0,
           "top_products": []
