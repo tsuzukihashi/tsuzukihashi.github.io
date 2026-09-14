@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>OGP generator - 月収1000万円計画</title>
+<!--
+  月次レポート記事のOGP画像を作るためのテンプレート。
+  Playwrightで 1200x630 のビューポートに合わせてスクリーンショットを撮る。
+
+  例: /docs/income-report/ogp.html?ym=2026%E5%B9%B48%E6%9C%88&total=494,888&mom=%2B32.9&rate=4.95&admob=155,880&appstore=316,726&play=22,282
+-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Saira+Condensed:wght@600;700;800&family=Noto+Sans+JP:wght@500;700;900&display=swap">
+<style>
+  :root {
+    --ab-bg: #f6f2ea;
+    --ab-ink: #14110c;
+    --ab-purple: #8b3df5;
+    --ab-cyan: #0bb4c4;
+    --ab-pink: #ff3d7f;
+    --ab-yellow: #ffc107;
+    --font-impact: 'Anton', 'Noto Sans JP', sans-serif;
+    --font-accent: 'Saira Condensed', 'Noto Sans JP', sans-serif;
+    --font-jp: 'Noto Sans JP', sans-serif;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1200px; height: 630px; }
+  body {
+    background-color: var(--ab-bg);
+    color: var(--ab-ink);
+    font-family: var(--font-jp);
+    position: relative;
+    overflow: hidden;
+  }
+  .bg-glow {
+    position: absolute; top: -220px; left: -180px;
+    width: 760px; height: 760px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(139,61,245,0.30) 0%, rgba(11,180,196,0.12) 45%, rgba(246,242,234,0) 70%);
+  }
+  .bg-dots {
+    position: absolute; inset: 0;
+    background-image: radial-gradient(rgba(20,17,12,0.16) 1.4px, transparent 1.4px);
+    background-size: 26px 26px;
+  }
+  .frame { position: relative; padding: 52px 64px; height: 100%; display: flex; flex-direction: column; }
+
+  .brand { display: flex; align-items: center; gap: 14px; }
+  .brand img { width: 52px; height: 52px; border-radius: 14px; display: block; }
+  .brand span {
+    font-family: var(--font-accent); font-style: italic; font-weight: 800;
+    font-size: 27px; letter-spacing: 0.10em;
+  }
+  .series {
+    margin-left: auto; font-family: var(--font-jp); font-weight: 700;
+    font-size: 19px; letter-spacing: 0.02em; color: #57514a;
+  }
+
+  .main { flex: 1; display: flex; align-items: center; gap: 48px; margin-top: 10px; }
+  .month {
+    font-family: var(--font-accent); font-style: italic; font-weight: 800;
+    font-size: 26px; letter-spacing: 0.10em; color: var(--ab-purple);
+    text-transform: uppercase; margin-bottom: 2px;
+  }
+  .amount {
+    font-family: var(--font-impact); font-style: italic;
+    font-size: 138px; line-height: 0.94; letter-spacing: -0.01em;
+  }
+  .mom {
+    display: inline-flex; align-items: baseline; gap: 10px; margin-top: 16px;
+    background: #fff; border: 2px solid var(--ab-ink); border-radius: 999px;
+    box-shadow: 5px 5px 0 var(--ab-yellow); padding: 7px 20px;
+  }
+  .mom b { font-family: var(--font-accent); font-style: italic; font-size: 25px; }
+  .mom small { font-family: var(--font-jp); font-weight: 700; font-size: 15px; color: #57514a; }
+
+  /* 金額の桁や前月比バッジの有無で位置が動かないよう、カードは右端に固定する */
+  .cards { display: flex; flex-direction: column; gap: 14px; width: 340px; margin-left: auto; }
+  .card {
+    background: #fff; border: 2px solid var(--ab-ink); border-radius: 16px;
+    padding: 13px 20px; display: flex; align-items: center; justify-content: space-between;
+  }
+  .card:nth-child(1) { box-shadow: 6px 6px 0 var(--ab-purple); }
+  .card:nth-child(2) { box-shadow: 6px 6px 0 var(--ab-cyan); }
+  .card:nth-child(3) { box-shadow: 6px 6px 0 var(--ab-pink); }
+  .card em {
+    font-family: var(--font-accent); font-style: italic; font-weight: 800;
+    font-size: 17px; letter-spacing: 0.06em; color: #57514a; text-transform: uppercase;
+  }
+  .card strong { font-family: var(--font-accent); font-style: italic; font-weight: 800; font-size: 26px; }
+
+  .foot { display: flex; align-items: center; gap: 22px; }
+  .bar { flex: 1; background: #fff; border: 2px solid var(--ab-ink); border-radius: 999px; height: 18px; overflow: hidden; }
+  .bar i { display: block; height: 100%; background: var(--ab-purple); border-radius: 999px; }
+  .goal { font-family: var(--font-accent); font-style: italic; font-weight: 800; font-size: 19px; letter-spacing: 0.06em; white-space: nowrap; }
+  .url { font-family: var(--font-accent); font-style: italic; font-weight: 700; font-size: 19px; color: #57514a; letter-spacing: 0.04em; white-space: nowrap; }
+</style>
+</head>
+<body>
+  <div class="bg-glow"></div>
+  <div class="bg-dots"></div>
+  <div class="frame">
+    <header class="brand">
+      <img src="/assets/icons/apple-touch-icon.png" alt="">
+      <span>TSUZUKIT</span>
+      <span class="series">限界個人開発者の月収１０００万円計画</span>
+    </header>
+
+    <div class="main">
+      <div>
+        <div class="month" id="month"></div>
+        <div class="amount" id="amount"></div>
+        <div class="mom"><b id="mom"></b><small id="momlabel">前月比</small></div>
+      </div>
+      <div class="cards">
+        <div class="card"><em>AdMob</em><strong id="admob"></strong></div>
+        <div class="card"><em>App Store</em><strong id="appstore"></strong></div>
+        <div class="card"><em>Google Play</em><strong id="play"></strong></div>
+      </div>
+    </div>
+
+    <footer class="foot">
+      <span class="goal" id="goal"></span>
+      <span class="bar"><i id="fill"></i></span>
+      <span class="url">tsuzukit.com/blog</span>
+    </footer>
+  </div>
+
+<script>
+  const p = new URLSearchParams(location.search);
+  const v = (k) => p.get(k) || "";
+  document.getElementById("month").textContent = v("ym");
+
+  // 桁が増えた月でもカードにぶつからないよう、文字数でサイズを決める
+  const amountText = "¥" + v("total");
+  const amountEl = document.getElementById("amount");
+  amountEl.textContent = amountText;
+  amountEl.style.fontSize = (amountText.length >= 10 ? 112 : amountText.length >= 9 ? 124 : 138) + "px";
+  // 創刊号には前月比が無い。Google Playの売上が立つ前の月もある
+  if (v("mom")) {
+    document.getElementById("mom").textContent = v("mom") + "%";
+  } else {
+    document.querySelector(".mom").style.display = "none";
+  }
+  document.getElementById("admob").textContent = "¥" + v("admob");
+  document.getElementById("appstore").textContent = "¥" + v("appstore");
+  document.getElementById("play").textContent = v("play") ? "¥" + v("play") : "—";
+  document.getElementById("goal").textContent = "達成率 " + v("rate") + "% / ¥10,000,000";
+  document.getElementById("fill").style.width = Math.max(parseFloat(v("rate")) || 0, 1.2) + "%";
+</script>
+</body>
+</html>

@@ -253,7 +253,14 @@ HEAD_TEMPLATE = """<!DOCTYPE html>
     <meta property="og:description" content="{desc}">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://tsuzukit.com{url}">
-    <meta property="og:image" content="https://tsuzukit.com/assets/images/ogp/blog.png">
+    <meta property="og:image" content="https://tsuzukit.com{ogp}">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@tsuzuki817">
+    <meta name="twitter:creator" content="@tsuzuki817">
+    <meta name="twitter:title" content="{title}">
+    <meta name="twitter:description" content="{desc}">
+    <meta name="twitter:image" content="https://tsuzukit.com{ogp}">
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -397,7 +404,11 @@ def build_article(i, m):
     if m["play"] is None:
         play_note = "Google Playの売上はまだありません。"
 
-    html = HEAD_TEMPLATE.format(title=title, desc=m["desc"], url=url)
+    # その月のOGP画像があれば使い、無ければブログ共通のものにフォールバックする
+    ogp = f"/assets/images/ogp/income-report-{m['ym']}.png"
+    if not os.path.exists(os.path.join(REPO, ogp.lstrip("/"))):
+        ogp = "/assets/images/ogp/blog.png"
+    html = HEAD_TEMPLATE.format(title=title, desc=m["desc"], url=url, ogp=ogp)
     html += f"""<body>
     <!-- Navigation -->
     <nav class="nav">
