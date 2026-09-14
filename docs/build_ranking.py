@@ -65,6 +65,35 @@ for a in apps[3:]:
     else:
         rows.append(f'                <div class="rk-row rk-row--ended">\n                    {inner}\n                </div>')
 
+AND = DATA.get("android") or {}
+android_rows = []
+if AND:
+    a_top = max(r["installs"] for r in AND["apps"])
+    for a in AND["apps"]:
+        pct = max(a["installs"] / a_top * 100, 0.6)
+        icon = (f'<img src="{esc(a["icon_url"])}" alt="" loading="lazy">'
+                if a["icon_url"] else '<span class="rk-noicon">—</span>')
+        android_rows.append(f'''                <a class="rk-row" href="{esc(a["play_url"])}" target="_blank" rel="noopener">
+                    <span class="rk-rank">{a["rank"]}</span>
+                    <span class="rk-icon">{icon}</span>
+                    <span class="rk-name">{esc(a["name"])}</span>
+                    <span class="rk-bar"><i class="rk-bar--and" style="width: {pct:.1f}%;"></i></span>
+                    <span class="rk-units">{jp_units(a["installs"])}</span>
+                </a>''')
+
+ANDROID_SECTION = ""
+if AND:
+    ANDROID_SECTION = f'''
+                <h2 class="rk-subtitle">Google Play</h2>
+                <p class="rk-subnote">
+                    Androidにも{AND["app_count"]}本出しています。こちらは<strong>いま端末に入っている数</strong>で、
+                    App Storeの累計ダウンロードとは数え方が違います。合計{AND["total_installs"]:,}台。
+                </p>
+                <div class="rk-list rk-list--android">
+{chr(10).join(android_rows)}
+                </div>
+'''
+
 HTML = f'''<!DOCTYPE html>
 <html lang="ja">
     <head>
@@ -206,6 +235,14 @@ HTML = f'''<!DOCTYPE html>
             .rk-bar i {{ display: block; height: 100%; background: var(--rk-purple); border-radius: 999px; }}
             .rk-units {{ font-family: 'Saira Condensed', sans-serif; font-style: italic; font-weight: 800; font-size: 1rem; text-align: right; white-space: nowrap; }}
 
+            .rk-subtitle {{
+                font-family: 'Anton', 'Noto Sans JP', sans-serif; font-style: italic;
+                font-size: clamp(1.6rem, 4vw, 2.2rem); margin: 56px 0 10px;
+            }}
+            .rk-subnote {{ color: var(--rk-muted); font-size: 0.9rem; line-height: 1.8; margin-bottom: 20px; }}
+            .rk-subnote strong {{ color: var(--rk-ink); }}
+            .rk-list--android {{ box-shadow: 8px 8px 0 var(--rk-cyan); }}
+            .rk-bar--and {{ background: var(--rk-cyan) !important; }}
             .rk-note {{ margin: 28px 0 90px; font-size: 0.8rem; line-height: 1.9; color: var(--rk-muted); }}
             .rk-back {{ display: inline-block; margin-top: 18px; font-weight: 700; color: var(--rk-purple); text-decoration: none; }}
             .rk-back:hover {{ text-decoration: underline; }}
@@ -265,11 +302,13 @@ HTML = f'''<!DOCTYPE html>
                 <div class="rk-list">
 {chr(10).join(rows)}
                 </div>
+{ANDROID_SECTION}
 
                 <p class="rk-note">
                     App Store Connectのトレンド（ユニット数・全期間）から取っています。Appleの表示が3桁に丸められているため、
                     1万を超えるものは概数です。アプリ内課金の販売数と、他の開発者名義で預かっているアプリは含めていません。
-                    アイコンのない行は配信を終了したアプリです。最終更新は{DATA['generated_at']}。
+                    アイコンのない行は配信を終了したアプリです。Google Playの数字はPlay Consoleのアプリ一覧から取っています。
+                    最終更新は{DATA['generated_at']}。
                     <br>
                     <a class="rk-back" href="/portfolio/">&larr; ポートフォリオに戻る</a>
                 </p>
