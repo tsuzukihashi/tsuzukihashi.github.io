@@ -65,6 +65,13 @@
         .platform-table th:first-child, .platform-table td:first-child { text-align: left; }
         .platform-table th { background: var(--color-surface-2); font-family: var(--font-accent); font-style: italic; font-weight: 700; letter-spacing: 0.05em; font-size: 13px; color: var(--color-secondary); border-bottom: 2px solid var(--color-ink); }
         .platform-table .total-row td { font-weight: 700; background: var(--color-sun-soft); border-top: 2px solid var(--color-ink); }
+        .platform-table.detail th, .platform-table.detail td { padding: 10px 12px; font-size: 13.5px; }
+        .platform-table.detail td:first-child { line-height: 1.45; }
+        .platform-table.detail .product-inline { display: none; }
+        @media (max-width: 640px) {
+            .platform-table.detail .product-col { display: none; }
+            .platform-table.detail .product-inline { display: block; margin-top: 4px; font-size: 11.5px; line-height: 1.5; color: var(--color-text-light); }
+        }
         .app-highlight { background: var(--color-surface); border: 2px solid var(--color-ink); box-shadow: 5px 5px 0 var(--color-ink); border-radius: 16px; padding: 20px 24px; margin: 24px 0; }
         .app-highlight.shadow-purple { box-shadow: 5px 5px 0 var(--neon-purple); }
         .app-highlight.shadow-cyan { box-shadow: 5px 5px 0 var(--neon-cyan); }
@@ -202,6 +209,90 @@
 
             <p>出した月の数字では、当たりかどうか分からない。9月も出しながら、先月の7本を触ります。</p>
             <p>それでは、また来月の報告で。</p>
+
+<h1>詳細データ</h1>
+
+            <p>アプリごとの内訳です。0円だったものは省いています。</p>
+
+            <h2>App Store（課金）</h2>
+            <div style="overflow-x: auto;">
+            <table class="platform-table detail">
+                <thead>
+                    <tr><th>アプリ</th><th>収益</th><th>DL</th><th class="product-col" style="text-align: left;">主な課金商品</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>TravelMemoryMap<span class="product-inline">1年間サポータープラン ¥44,879、サポータープラン ¥30,306</span></td><td>¥98,475</td><td>8,265</td><td class="product-col" style="text-align: left;">1年間サポータープラン ¥44,879、サポータープラン ¥30,306</td></tr>
+                    <tr><td>UNCHIKUN: Poop Log &amp; AI Health<span class="product-inline">Premium Yearly ¥21,542、Premium Monthly ¥21,488</span></td><td>¥77,664</td><td>45,702</td><td class="product-col" style="text-align: left;">Premium Yearly ¥21,542、Premium Monthly ¥21,488</td></tr>
+                    <tr><td>YOU Receipt: Receipt Maker<span class="product-inline">Premium Lifetime ¥72,327、Premium Weekly ¥4,925</span></td><td>¥77,252</td><td>2,055</td><td class="product-col" style="text-align: left;">Premium Lifetime ¥72,327、Premium Weekly ¥4,925</td></tr>
+                    <tr><td>推しアイランド<span class="product-inline">週間プラン ¥12,476、買い切りプラン ¥10,132</span></td><td>¥22,608</td><td>418</td><td class="product-col" style="text-align: left;">週間プラン ¥12,476、買い切りプラン ¥10,132</td></tr>
+                    <tr><td>GeoLens - Rock &amp; Mineral AI<span class="product-inline">週間プラン ¥7,650</span></td><td>¥7,650</td><td>78</td><td class="product-col" style="text-align: left;">週間プラン ¥7,650</td></tr>
+                    <tr><td>猫背改善と姿勢リマインダー：猫背は猫だけで充分にゃ。<span class="product-inline">週間プラン ¥5,049、買い切りプラン ¥2,533</span></td><td>¥7,582</td><td>77</td><td class="product-col" style="text-align: left;">週間プラン ¥5,049、買い切りプラン ¥2,533</td></tr>
+                    <tr><td>FocusDrive - Focus Timer<span class="product-inline">生涯アクセス ¥4,112、月額プラン ¥1,636</span></td><td>¥5,748</td><td>81</td><td class="product-col" style="text-align: left;">生涯アクセス ¥4,112、月額プラン ¥1,636</td></tr>
+                    <tr><td>Eye Drop Reminder - EyeDrop<span class="product-inline">買い切りプラン ¥2,444、週間プラン ¥785</span></td><td>¥3,229</td><td>87</td><td class="product-col" style="text-align: left;">買い切りプラン ¥2,444、週間プラン ¥785</td></tr>
+                    <tr><td>CosmeFresh: Makeup Expiry<span class="product-inline">CosmeFresh Premium Lifetime ¥2,714、CosmeFresh Premium Weekly ¥170</span></td><td>¥2,884</td><td>18</td><td class="product-col" style="text-align: left;">CosmeFresh Premium Lifetime ¥2,714、CosmeFresh Premium Weekly ¥170</td></tr>
+                    <tr><td>Mekulun - Daily Calendar<span class="product-inline">買い切りプラン ¥2,533、週間プラン ¥256</span></td><td>¥2,789</td><td>123</td><td class="product-col" style="text-align: left;">買い切りプラン ¥2,533、週間プラン ¥256</td></tr>
+                    <tr><td>Floating Notepad　-Overlay-<span class="product-inline">サポータープラン(1ヶ月) ¥2,700</span></td><td>¥2,700</td><td>1,956</td><td class="product-col" style="text-align: left;">サポータープラン(1ヶ月) ¥2,700</td></tr>
+                    <tr><td>ShellLens - Seashell AI Guide<span class="product-inline">週間プラン ¥2,166</span></td><td>¥2,166</td><td>41</td><td class="product-col" style="text-align: left;">週間プラン ¥2,166</td></tr>
+                    <tr><td>フチドリ！ ~背景透過と縁取り~<span class="product-inline">アプリ買い切り！ ¥1,666</span></td><td>¥1,666</td><td>253</td><td class="product-col" style="text-align: left;">アプリ買い切り！ ¥1,666</td></tr>
+                    <tr><td>Medicine Reminder &amp; Tracker<span class="product-inline">週間プラン ¥1,317</span></td><td>¥1,317</td><td>40</td><td class="product-col" style="text-align: left;">週間プラン ¥1,317</td></tr>
+                    <tr><td>スワイポン - スワイプで写真と動画を簡単整理<span class="product-inline">とりあえずの1週間だけプレミアムプラン ¥516、便利な1ヶ月プレミアムプラン ¥102</span></td><td>¥618</td><td>16</td><td class="product-col" style="text-align: left;">とりあえずの1週間だけプレミアムプラン ¥516、便利な1ヶ月プレミアムプラン ¥102</td></tr>
+                    <tr><td>nokki - 音楽ジャーナル<span class="product-inline">nokki+ 月額 ¥510</span></td><td>¥510</td><td>541</td><td class="product-col" style="text-align: left;">nokki+ 月額 ¥510</td></tr>
+                    <tr><td>コインゲームコレクション：レトロゲーセン<span class="product-inline"></span></td><td>¥510</td><td>2</td><td class="product-col" style="text-align: left;">—</td></tr>
+                    <tr><td>RelayChat-オフライン匿名Bluetoothチャット<span class="product-inline">1ヶ月プレミアムプラン ¥425</span></td><td>¥425</td><td>45</td><td class="product-col" style="text-align: left;">1ヶ月プレミアムプラン ¥425</td></tr>
+                    <tr><td>馬券ジェネレーター<span class="product-inline">プレミアムチケット ¥272</span></td><td>¥272</td><td>40</td><td class="product-col" style="text-align: left;">プレミアムチケット ¥272</td></tr>
+                    <tr><td>BeautyMed - Treatment Reminder<span class="product-inline">週間プラン ¥268</span></td><td>¥268</td><td>13</td><td class="product-col" style="text-align: left;">週間プラン ¥268</td></tr>
+                    <tr><td>AlwaysOnTimer<span class="product-inline">サポータープラン１ヶ月 ¥204</span></td><td>¥204</td><td>53</td><td class="product-col" style="text-align: left;">サポータープラン１ヶ月 ¥204</td></tr>
+                    <tr><td>PIPMP<span class="product-inline">自動更新型　サポータープラン(1ヶ月) ¥102</span></td><td>¥102</td><td>41</td><td class="product-col" style="text-align: left;">自動更新型　サポータープラン(1ヶ月) ¥102</td></tr>
+                    <tr><td>ゼリーセイムパズル<span class="product-inline">ハンマーチケット ¥86</span></td><td>¥86</td><td>41</td><td class="product-col" style="text-align: left;">ハンマーチケット ¥86</td></tr>
+                    <tr class="total-row"><td>合計</td><td>¥316,726</td><td>61,435</td><td class="product-col" style="text-align: left;"></td></tr>
+                </tbody>
+            </table>
+            </div>
+            <p style="font-size: 13px; color: var(--color-text-light);">ダウンロード数は無料のものも含みます。合計の行は課金のなかったアプリの分も足した全体の数です。</p>
+
+            <h2>AdMob（広告）</h2>
+            <div style="overflow-x: auto;">
+            <table class="platform-table detail">
+                <thead>
+                    <tr><th>アプリ</th><th>収益</th><th>eCPM</th><th>表示回数</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>うんちくん AI健康記録&amp;うんトモ（iOS）</td><td>¥116,051</td><td>¥154</td><td>752,203</td></tr>
+                    <tr><td>うんちくん うんち記録&amp;共有（Android）</td><td>¥16,096</td><td>¥162</td><td>99,472</td></tr>
+                    <tr><td>旅行思い出マップ（iOS）</td><td>¥13,524</td><td>¥1,293</td><td>10,459</td></tr>
+                    <tr><td>流れるメモ帳（iOS）</td><td>¥3,818</td><td>¥202</td><td>18,919</td></tr>
+                    <tr><td>フチドリ！（iOS）</td><td>¥1,365</td><td>¥2,437</td><td>560</td></tr>
+                    <tr><td>旅行思い出マップ（Android）</td><td>¥1,071</td><td>¥207</td><td>5,177</td></tr>
+                    <tr><td>ゼリーセイムパズル（iOS）</td><td>¥807</td><td>¥155</td><td>5,197</td></tr>
+                    <tr><td>あなたレシート（iOS）</td><td>¥679</td><td>¥193</td><td>3,519</td></tr>
+                    <tr><td>PictIn（iOS）</td><td>¥675</td><td>¥148</td><td>4,573</td></tr>
+                    <tr><td>めくるん - 日めくりカレンダー（iOS）</td><td>¥515</td><td>¥262</td><td>1,967</td></tr>
+                    <tr><td>推しアイランド（iOS）</td><td>¥371</td><td>¥71</td><td>5,238</td></tr>
+                    <tr><td>猫背改善と姿勢リマインダー（iOS）</td><td>¥108</td><td>¥193</td><td>562</td></tr>
+                    <tr><td>FocusDrive - 集中タイマー（iOS）</td><td>¥94</td><td>¥476</td><td>198</td></tr>
+                    <tr><td>Himekuri - 記念日カウントダウン（iOS）</td><td>¥91</td><td>¥93</td><td>980</td></tr>
+                    <tr><td>Monivo 声で起こし合うアラーム（iOS）</td><td>¥47</td><td>¥36</td><td>1,314</td></tr>
+                    <tr class="total-row"><td>合計</td><td>¥155,880</td><td></td><td></td></tr>
+                </tbody>
+            </table>
+            </div>
+            <p style="font-size: 13px; color: var(--color-text-light);">合計には、表に出ていない収益の小さいアプリの分も入っています。</p>
+
+            <h2>Google Play（課金）</h2>
+            <div style="overflow-x: auto;">
+            <table class="platform-table detail">
+                <thead>
+                    <tr><th>アプリ</th><th>収益</th><th>件数</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>YOU Receipt: Receipt Maker</td><td>¥16,709</td><td>14</td></tr>
+                    <tr><td>UNCHIKUN Poop Tracker</td><td>¥4,087</td><td>18</td></tr>
+                    <tr><td>旅行思い出マップ - 旅の記憶を、地図に描く</td><td>¥1,683</td><td>4</td></tr>
+                    <tr class="total-row"><td>合計</td><td>¥22,282</td><td></td></tr>
+                </tbody>
+            </table>
+            </div>
+            <p style="font-size: 13px; color: var(--color-text-light);">合計には返金と税の調整が入るので、各行を足した額とは一致しません。</p>
 
             <div class="notice-box">
                 数値について。AdMobは管理画面の推定収益額で、確定額とは数％ずれることがあります。App Storeは手数料を引いた開発者受取額で、外貨分は月末レートで円に換算した概算を含みます。Google Playはサービス手数料を引いた受取額です。3つとも暦月の1日から末日で区切っています。App Store Connectの財務報告はAppleの会計月で締めるので、同じ月でも対象期間がずれ、画面に出る金額とは一致しません。締め日の関係で、実際の振込額とも一致しません。

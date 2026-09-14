@@ -4,10 +4,119 @@
 文言はCLAUDE.md「文章スタイル【全文章共通・絶対遵守】」の編集ルール適用済み。
 新しい月を足すときも同ルールを通した文章にすること。
 """
+import html as html_lib
+import json
 import os
 
 REPO = "/Users/tsuzuki817/workspace/TsuzuKit/tsuzukit.com"
+DATA_DIR = os.path.dirname(os.path.abspath(__file__))
 GOAL = 10_000_000
+
+with open(os.path.join(DATA_DIR, "revenue_master.json")) as f:
+    MASTER = json.load(f)
+
+NL = "\n"
+
+
+def _cell(text):
+    return html_lib.escape(str(text))
+
+
+def _play_app_name(title):
+    """Playの明細は商品名で、末尾の丸括弧にアプリ名が入っている"""
+    t = title.strip()
+    head, sep, tail = t.rpartition(" (")
+    if sep and tail.endswith(")"):
+        return tail[:-1]
+    return t
+
+
+def detail_tables(ym):
+    """記事末尾に置くアプリ別の明細を revenue_master.json から組み立てる"""
+    d = MASTER.get(ym)
+    if not d:
+        return ""
+
+    out = ["<h1>詳細データ</h1>",
+           "<p>アプリごとの内訳です。0円だったものは省いています。</p>"]
+
+    apps = [a for a in d["appstore_detail"]["apps"] if a["proceeds_jpy"] > 0]
+    if apps:
+        rows = []
+        for a in apps:
+            products = "、".join(f"{_cell(p['name'])} ¥{p['jpy']:,}" for p in a["top_products"][:2])
+            rows.append(
+                f'                    <tr><td>{_cell(a["title"])}'
+                f'<span class="product-inline">{products}</span></td><td>¥{a["proceeds_jpy"]:,}</td>'
+                f'<td>{a["downloads"]:,}</td>'
+                f'<td class="product-col" style="text-align: left;">{products or "—"}</td></tr>')
+        subtotal = d["appstore_jpy"]  # 行ごとの端数処理で1円ずれるので本文と同じ値を使う
+        rows.append(
+            f'                    <tr class="total-row"><td>合計</td><td>¥{subtotal:,}</td>'
+            f'<td>{d["appstore_detail"]["total_downloads"]:,}</td>'
+            f'<td class="product-col" style="text-align: left;"></td></tr>')
+        out.append(
+            '<h2>App Store（課金）</h2>' + NL +
+            '            <div style="overflow-x: auto;">' + NL +
+            '            <table class="platform-table detail">' + NL +
+            '                <thead>' + NL +
+            '                    <tr><th>アプリ</th><th>収益</th><th>DL</th>'
+            '<th class="product-col" style="text-align: left;">主な課金商品</th></tr>' + NL +
+            '                </thead>' + NL +
+            '                <tbody>' + NL +
+            NL.join(rows) + NL +
+            '                </tbody>' + NL +
+            '            </table>' + NL +
+            '            </div>' + NL +
+            '            <p style="font-size: 13px; color: var(--color-text-light);">'
+            'ダウンロード数は無料のものも含みます。合計の行は課金のなかったアプリの分も足した全体の数です。</p>')
+
+    admob = [a for a in d.get("admob_apps", []) if a["jpy"] > 0]
+    if admob:
+        rows = [f'                    <tr><td>{_cell(a["app"])}（{a["platform"]}）</td>'
+                f'<td>¥{a["jpy"]:,}</td><td>¥{a["ecpm"]:,}</td><td>{a["impressions"]:,}</td></tr>'
+                for a in admob]
+        rows.append(f'                    <tr class="total-row"><td>合計</td>'
+                    f'<td>¥{d["admob_jpy"]:,}</td><td></td><td></td></tr>')
+        out.append(
+            '<h2>AdMob（広告）</h2>' + NL +
+            '            <div style="overflow-x: auto;">' + NL +
+            '            <table class="platform-table detail">' + NL +
+            '                <thead>' + NL +
+            '                    <tr><th>アプリ</th><th>収益</th><th>eCPM</th><th>表示回数</th></tr>' + NL +
+            '                </thead>' + NL +
+            '                <tbody>' + NL +
+            NL.join(rows) + NL +
+            '                </tbody>' + NL +
+            '            </table>' + NL +
+            '            </div>' + NL +
+            '            <p style="font-size: 13px; color: var(--color-text-light);">'
+            '合計には、表に出ていない収益の小さいアプリの分も入っています。</p>')
+
+    play = d.get("play_detail") or {}
+    play_apps = [v for v in (play.get("apps") or {}).values() if v["net_jpy"] > 0]
+    if play_apps:
+        rows = [f'                    <tr><td>{_cell(_play_app_name(v["title"]))}</td>'
+                f'<td>¥{v["net_jpy"]:,}</td><td>{v["transactions"]}</td></tr>'
+                for v in sorted(play_apps, key=lambda x: -x["net_jpy"])]
+        rows.append(f'                    <tr class="total-row"><td>合計</td>'
+                    f'<td>¥{play["totals"]["net_jpy"]:,}</td><td></td></tr>')
+        out.append(
+            '<h2>Google Play（課金）</h2>' + NL +
+            '            <div style="overflow-x: auto;">' + NL +
+            '            <table class="platform-table detail">' + NL +
+            '                <thead>' + NL +
+            '                    <tr><th>アプリ</th><th>収益</th><th>件数</th></tr>' + NL +
+            '                </thead>' + NL +
+            '                <tbody>' + NL +
+            NL.join(rows) + NL +
+            '                </tbody>' + NL +
+            '            </table>' + NL +
+            '            </div>' + NL +
+            '            <p style="font-size: 13px; color: var(--color-text-light);">'
+            '合計には返金と税の調整が入るので、各行を足した額とは一致しません。</p>')
+
+    return (NL + NL + "            ").join(out)
 
 MONTHS = [
     {
@@ -214,7 +323,7 @@ MONTHS = [
         "closing": "出した本数より、届いた一本。8月はそこを詰めます。",
     },
     {
-        "ym": "2026-08", "date": "2026-08-31", "label": "2026年8月",
+        "ym": "2026-08", "date": "2026-08-31", "label": "2026年8月", "details": True,
         "admob": 155880, "appstore": 316726, "play": 22282,
         "total": 494888, "mom": "+32.9", "rate": "4.95",
         "desc": "2026年8月の収益は494,888円。7月に売上ゼロだったあなたレシートが9万円を超え、うんちくんのダウンロードは半分になった。",
@@ -306,6 +415,13 @@ HEAD_TEMPLATE = """<!DOCTYPE html>
         .platform-table th:first-child, .platform-table td:first-child {{ text-align: left; }}
         .platform-table th {{ background: var(--color-surface-2); font-family: var(--font-accent); font-style: italic; font-weight: 700; letter-spacing: 0.05em; font-size: 13px; color: var(--color-secondary); border-bottom: 2px solid var(--color-ink); }}
         .platform-table .total-row td {{ font-weight: 700; background: var(--color-sun-soft); border-top: 2px solid var(--color-ink); }}
+        .platform-table.detail th, .platform-table.detail td {{ padding: 10px 12px; font-size: 13.5px; }}
+        .platform-table.detail td:first-child {{ line-height: 1.45; }}
+        .platform-table.detail .product-inline {{ display: none; }}
+        @media (max-width: 640px) {{
+            .platform-table.detail .product-col {{ display: none; }}
+            .platform-table.detail .product-inline {{ display: block; margin-top: 4px; font-size: 11.5px; line-height: 1.5; color: var(--color-text-light); }}
+        }}
         .app-highlight {{ background: var(--color-surface); border: 2px solid var(--color-ink); box-shadow: 5px 5px 0 var(--color-ink); border-radius: 16px; padding: 20px 24px; margin: 24px 0; }}
         .app-highlight.shadow-purple {{ box-shadow: 5px 5px 0 var(--neon-purple); }}
         .app-highlight.shadow-cyan {{ box-shadow: 5px 5px 0 var(--neon-cyan); }}
@@ -404,6 +520,9 @@ def build_article(i, m):
     if m["play"] is None:
         play_note = "Google Playの売上はまだありません。"
 
+    # 詳細データを出すのは details を立てた号だけ（2026年8月号から）
+    details_html = detail_tables(m["ym"]) if m.get("details") else ""
+
     # その月のOGP画像があれば使い、無ければブログ共通のものにフォールバックする
     ogp = f"/assets/images/ogp/income-report-{m['ym']}.png"
     if not os.path.exists(os.path.join(REPO, ogp.lstrip("/"))):
@@ -476,6 +595,8 @@ def build_article(i, m):
 
             <p>{m['closing']}</p>
             <p>それでは、また来月の報告で。</p>
+
+{details_html}
 
             <div class="notice-box">
                 数値について。AdMobは管理画面の推定収益額で、確定額とは数％ずれることがあります。App Storeは手数料を引いた開発者受取額で、外貨分は月末レートで円に換算した概算を含みます。Google Playはサービス手数料を引いた受取額です。3つとも暦月の1日から末日で区切っています。App Store Connectの財務報告はAppleの会計月で締めるので、同じ月でも対象期間がずれ、画面に出る金額とは一致しません。締め日の関係で、実際の振込額とも一致しません。

@@ -68,11 +68,34 @@ cd /Users/tsuzuki817/workspace/TsuzuKit/tsuzukit.com/docs/income-report && pytho
 python3 generate_articles.py
 ```
 
-エントリに書くもの: ym / date（月末日）/ label / admob / appstore / play / total / mom / rate / desc / highlights（アプリ別、revenue_master.json の appstore_detail・admob_apps・play_detail から合算）/ analysis / next_actions（3つ）/ closing。
+エントリに書くもの: ym / date（月末日）/ label / **details: True** / admob / appstore / play / total / mom / rate / desc / highlights（アプリ別、revenue_master.json の appstore_detail・admob_apps・play_detail から合算）/ analysis / next_actions（3つ）/ closing。
+
+- `"details": True` を付けると、記事末尾に**アプリ別の明細テーブル**（App Store / AdMob / Google Play）が
+  revenue_master.json から自動で入る。2026年8月号から付けている。**新しい号には必ず付ける**
+- 明細の合計行は master の値（本文のプラットフォーム別内訳と同じ数字）を使う。行を足した額とは
+  端数や表示外アプリの分でずれるが、本文と食い違わせないことを優先している
 
 - **文章は CLAUDE.md「文章スタイル【全文章共通・絶対遵守】」の編集ルールを通すこと**。前置き宣言・太字乱用・矢印・スラッシュ・（）多用の禁止、一人称は僕
 - 分析は「何が起きたか」をデータで語り、NextActionは前号との連続性を持たせる（前号のNextActionの結果に触れる）
 - 数字の捏造は絶対禁止。metaのdescも同ルール
+
+### 5-2. OGP画像
+
+記事1本につき1枚、月の数字を載せた画像を作る。テンプレートは `docs/income-report/ogp.html`。
+
+1. リポジトリ直下で `python3 -m http.server 8899` を起動
+2. Playwright で以下を開く（数値はカンマ区切りで渡す。`mom` と `play` は無ければ空でよい）
+
+```
+http://localhost:8899/docs/income-report/ogp.html?ym=2026年8月&total=494,888&mom=%2B32.9&rate=4.95&admob=155,880&appstore=316,726&play=22,282
+```
+
+3. ビューポートを **1200x630** にして、`assets/images/ogp/income-report-YYYY-MM.png` へスクリーンショット
+4. `generate_articles.py` を再実行すると、その画像が `og:image` と `twitter:image` に入る
+   （画像が無い号は `blog.png` に自動で戻る）
+
+- 金額の桁が増えてもフォントサイズが自動で縮む。前月比なし・Playなしの号にも対応済み
+- 撮る前にビューポートのリサイズを忘れない。号ごとに画像の位置がずれる
 
 ### 6. 手動更新ファイル
 
@@ -101,7 +124,8 @@ cd /Users/tsuzuki817/workspace/TsuzuKit/tsuzukit.com && python3 -m http.server 8
 
 ```bash
 git add blog/posts/income-report-*.html blog/income-report/index.html blog/index.html sitemap.xml \
-  docs/income-report/*.json docs/income-report/fetch_asc_detail.rb docs/income-report/generate_articles.py
+  docs/income-report/*.json docs/income-report/fetch_asc_detail.rb docs/income-report/generate_articles.py \
+  docs/income-report/ogp.html assets/images/ogp/income-report-*.png
 git commit -m "feat(blog): 月収1000万円計画 YYYY年M月号を追加"
 git push origin master
 ```

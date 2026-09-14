@@ -65,6 +65,13 @@
         .platform-table th:first-child, .platform-table td:first-child { text-align: left; }
         .platform-table th { background: var(--color-surface-2); font-family: var(--font-accent); font-style: italic; font-weight: 700; letter-spacing: 0.05em; font-size: 13px; color: var(--color-secondary); border-bottom: 2px solid var(--color-ink); }
         .platform-table .total-row td { font-weight: 700; background: var(--color-sun-soft); border-top: 2px solid var(--color-ink); }
+        .platform-table.detail th, .platform-table.detail td { padding: 10px 12px; font-size: 13.5px; }
+        .platform-table.detail td:first-child { line-height: 1.45; }
+        .platform-table.detail .product-inline { display: none; }
+        @media (max-width: 640px) {
+            .platform-table.detail .product-col { display: none; }
+            .platform-table.detail .product-inline { display: block; margin-top: 4px; font-size: 11.5px; line-height: 1.5; color: var(--color-text-light); }
+        }
         .app-highlight { background: var(--color-surface); border: 2px solid var(--color-ink); box-shadow: 5px 5px 0 var(--color-ink); border-radius: 16px; padding: 20px 24px; margin: 24px 0; }
         .app-highlight.shadow-purple { box-shadow: 5px 5px 0 var(--neon-purple); }
         .app-highlight.shadow-cyan { box-shadow: 5px 5px 0 var(--neon-cyan); }
@@ -201,6 +208,8 @@
 
             <p>出した本数より、届いた一本。8月はそこを詰めます。</p>
             <p>それでは、また来月の報告で。</p>
+
+
 
             <div class="notice-box">
                 数値について。AdMobは管理画面の推定収益額で、確定額とは数％ずれることがあります。App Storeは手数料を引いた開発者受取額で、外貨分は月末レートで円に換算した概算を含みます。Google Playはサービス手数料を引いた受取額です。3つとも暦月の1日から末日で区切っています。App Store Connectの財務報告はAppleの会計月で締めるので、同じ月でも対象期間がずれ、画面に出る金額とは一致しません。締め日の関係で、実際の振込額とも一致しません。
