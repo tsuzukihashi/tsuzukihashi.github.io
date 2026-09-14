@@ -1,5 +1,5 @@
 {
-  "note": "AdMob 推定収益額（JPY）。2026-06までは管理画面レポート（全期間・月別）を2026-07-11に読み取り。2026-07はAdMobのCSVエクスポート（アプリ別）から集計した月確定値。",
+  "note": "AdMob 推定収益額（JPY）。2026-06までは管理画面レポート（全期間・月別）を2026-07-11に読み取り。2026-07以降は管理画面の期間「先月」＋ディメンション「アプリ」から読み取った月確定値。",
   "monthly_total": {
     "2019-07": 21,
     "2019-08": 37,
@@ -85,7 +85,8 @@
     "2026-04": 117079,
     "2026-05": 139628,
     "2026-06": 141580,
-    "2026-07": 167118
+    "2026-07": 167118,
+    "2026-08": 155880
   },
   "by_month_app_top50_2025-11_to_2026-07": [
     {
@@ -543,6 +544,126 @@
       "jpy": 391,
       "ecpm": 62,
       "impressions": 6317
+    },
+    {
+      "month": "2026-08",
+      "app": "うんちくん AI健康記録&うんトモ",
+      "platform": "iOS",
+      "jpy": 116051,
+      "ecpm": 154,
+      "impressions": 752203
+    },
+    {
+      "month": "2026-08",
+      "app": "うんちくん うんち記録&共有",
+      "platform": "Android",
+      "jpy": 16096,
+      "ecpm": 162,
+      "impressions": 99472
+    },
+    {
+      "month": "2026-08",
+      "app": "旅行思い出マップ",
+      "platform": "iOS",
+      "jpy": 13524,
+      "ecpm": 1293,
+      "impressions": 10459
+    },
+    {
+      "month": "2026-08",
+      "app": "流れるメモ帳",
+      "platform": "iOS",
+      "jpy": 3818,
+      "ecpm": 202,
+      "impressions": 18919
+    },
+    {
+      "month": "2026-08",
+      "app": "フチドリ！",
+      "platform": "iOS",
+      "jpy": 1365,
+      "ecpm": 2437,
+      "impressions": 560
+    },
+    {
+      "month": "2026-08",
+      "app": "旅行思い出マップ",
+      "platform": "Android",
+      "jpy": 1071,
+      "ecpm": 207,
+      "impressions": 5177
+    },
+    {
+      "month": "2026-08",
+      "app": "ゼリーセイムパズル",
+      "platform": "iOS",
+      "jpy": 807,
+      "ecpm": 155,
+      "impressions": 5197
+    },
+    {
+      "month": "2026-08",
+      "app": "あなたレシート",
+      "platform": "iOS",
+      "jpy": 679,
+      "ecpm": 193,
+      "impressions": 3519
+    },
+    {
+      "month": "2026-08",
+      "app": "PictIn",
+      "platform": "iOS",
+      "jpy": 675,
+      "ecpm": 148,
+      "impressions": 4573
+    },
+    {
+      "month": "2026-08",
+      "app": "めくるん - 日めくりカレンダー",
+      "platform": "iOS",
+      "jpy": 515,
+      "ecpm": 262,
+      "impressions": 1967
+    },
+    {
+      "month": "2026-08",
+      "app": "推しアイランド",
+      "platform": "iOS",
+      "jpy": 371,
+      "ecpm": 71,
+      "impressions": 5238
+    },
+    {
+      "month": "2026-08",
+      "app": "猫背改善と姿勢リマインダー",
+      "platform": "iOS",
+      "jpy": 108,
+      "ecpm": 193,
+      "impressions": 562
+    },
+    {
+      "month": "2026-08",
+      "app": "FocusDrive - 集中タイマー",
+      "platform": "iOS",
+      "jpy": 94,
+      "ecpm": 476,
+      "impressions": 198
+    },
+    {
+      "month": "2026-08",
+      "app": "Himekuri - 記念日カウントダウン",
+      "platform": "iOS",
+      "jpy": 91,
+      "ecpm": 93,
+      "impressions": 980
+    },
+    {
+      "month": "2026-08",
+      "app": "Monivo 声で起こし合うアラーム",
+      "platform": "iOS",
+      "jpy": 47,
+      "ecpm": 36,
+      "impressions": 1314
     }
   ],
   "alltime_by_app_top15": [
