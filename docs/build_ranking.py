@@ -76,7 +76,7 @@ if AND:
         android_rows.append(f'''                <a class="rk-row" href="{esc(a["play_url"])}" target="_blank" rel="noopener">
                     <span class="rk-rank">{a["rank"]}</span>
                     <span class="rk-icon">{icon}</span>
-                    <span class="rk-name">{esc(a["name"])}</span>
+                    <span class="rk-name">{esc(a["name"])}<span class="rk-sub">いま{a["active_devices"]:,}台</span></span>
                     <span class="rk-bar"><i class="rk-bar--and" style="width: {pct:.1f}%;"></i></span>
                     <span class="rk-units">{jp_units(a["installs"])}</span>
                 </a>''')
@@ -86,8 +86,8 @@ if AND:
     ANDROID_SECTION = f'''
                 <h2 class="rk-subtitle">Google Play</h2>
                 <p class="rk-subnote">
-                    Androidにも{AND["app_count"]}本出しています。こちらは<strong>いま端末に入っている数</strong>で、
-                    App Storeの累計ダウンロードとは数え方が違います。合計{AND["total_installs"]:,}台。
+                    Androidにも{AND["app_count"]}本出しています。こちらも配信開始からの<strong>累計インストール数</strong>で、
+                    合計{AND["total_installs"]:,}。いま動いている端末は{AND["total_active"]:,}台です。
                 </p>
                 <div class="rk-list rk-list--android">
 {chr(10).join(android_rows)}
@@ -184,6 +184,8 @@ HTML = f'''<!DOCTYPE html>
                 letter-spacing: 0.1em; font-size: 0.8rem; color: var(--rk-muted); text-transform: uppercase;
             }}
 
+            .rk-total em {{ display: block; margin-top: 8px; font-style: normal; font-size: 0.78rem; color: var(--rk-muted); }}
+            .rk-sub {{ display: block; font-size: 0.72rem; color: var(--rk-muted); margin-top: 2px; }}
             .rk-podiums {{ display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin: 10px 0 50px; }}
             .rk-podium {{
                 background: #fff; border: 2px solid var(--rk-ink); border-radius: 20px;
@@ -285,11 +287,12 @@ HTML = f'''<!DOCTYPE html>
                     <h1 class="rk-title">どれが一番<br>使われているか</h1>
                     <p class="rk-lead">
                         App Storeに出した{DATA['app_count']}本を、配信開始から今日までの累計ダウンロード数で並べました。<br>
-                        上の3本で全体の8割を占めています。
+                        Google Playの分も下にまとめています。
                     </p>
                     <div class="rk-total">
-                        <b>{DATA['total_units']:,}</b>
+                        <b>{DATA['grand_total']:,}</b>
                         <span>Total Downloads</span>
+                        <em>App Store {DATA['total_units']:,} ＋ Google Play {DATA['android']['total_installs']:,}</em>
                     </div>
                 </div>
             </section>
@@ -307,7 +310,7 @@ HTML = f'''<!DOCTYPE html>
                 <p class="rk-note">
                     App Store Connectのトレンド（ユニット数・全期間）から取っています。Appleの表示が3桁に丸められているため、
                     1万を超えるものは概数です。アプリ内課金の販売数と、他の開発者名義で預かっているアプリは含めていません。
-                    アイコンのない行は配信を終了したアプリです。Google Playの数字はPlay Consoleのアプリ一覧から取っています。
+                    アイコンのない行は配信を終了したアプリです。Google Playの数字はPlay Consoleのインストールレポートを全期間ぶん合算したものです。
                     最終更新は{DATA['generated_at']}。
                     <br>
                     <a class="rk-back" href="/portfolio/">&larr; ポートフォリオに戻る</a>

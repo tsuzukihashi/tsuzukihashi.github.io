@@ -799,17 +799,19 @@
     }
   ],
   "android": {
-    "source": "Google Play Console のアプリ一覧「インストール済みユーザー数」",
-    "note": "いま端末に入っている数。App Storeの累計ダウンロードとは数え方が違う",
-    "total_installs": 20173,
+    "source": "Play Console のインストール レポート（installs_*_overview.csv の Daily User Installs を全期間合算）",
+    "note": "配信開始からの累計ユーザーインストール数。括弧内はいま動いている端末数",
+    "total_installs": 52284,
+    "total_active": 20588,
     "app_count": 8,
     "apps": [
       {
         "rank": 1,
         "name": "うんちくん",
         "package": "com.tsuzukit.poopcounter",
-        "installs": 18400,
-        "display": "1.84万",
+        "installs": 48968,
+        "active_devices": 18847,
+        "display": "48,968",
         "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/70/51/ba/7051bad5-148b-ce08-0aeb-66f24097d0e3/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
         "play_url": "https://play.google.com/store/apps/details?id=com.tsuzukit.poopcounter"
       },
@@ -817,8 +819,9 @@
         "rank": 2,
         "name": "あなたレシート",
         "package": "com.tsuzukit.anatareceipt",
-        "installs": 981,
-        "display": "981",
+        "installs": 1479,
+        "active_devices": 920,
+        "display": "1,479",
         "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/85/2c/9d/852c9d7e-9a34-3893-e6ad-64124d6567dc/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg",
         "play_url": "https://play.google.com/store/apps/details?id=com.tsuzukit.anatareceipt"
       },
@@ -826,8 +829,9 @@
         "rank": 3,
         "name": "旅行思い出マップ",
         "package": "com.tsuzuki817.omoidemap",
-        "installs": 532,
-        "display": "532",
+        "installs": 1461,
+        "active_devices": 559,
+        "display": "1,461",
         "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e8/5c/85/e85c8537-ded0-ef69-2f60-f2ff85a7538a/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
         "play_url": "https://play.google.com/store/apps/details?id=com.tsuzuki817.omoidemap"
       },
@@ -835,35 +839,39 @@
         "rank": 4,
         "name": "nokki - 音楽ジャーナル",
         "package": "com.tsuzukit.nokki",
-        "installs": 127,
-        "display": "127",
+        "installs": 203,
+        "active_devices": 141,
+        "display": "203",
         "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/91/21/35/91213567-b4b3-a301-bef8-a55986691765/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
         "play_url": "https://play.google.com/store/apps/details?id=com.tsuzukit.nokki"
       },
       {
         "rank": 5,
-        "name": "Yattayo やったよボード",
-        "package": "com.tsuzukit.yattayo",
-        "installs": 55,
-        "display": "55",
-        "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5f/4b/37/5f4b379e-eb4e-1f05-628c-b657f729d71a/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
-        "play_url": "https://play.google.com/store/apps/details?id=com.tsuzukit.yattayo"
+        "name": "猫背改善と姿勢リマインダー",
+        "package": "com.tsuzukit.sebonereminder",
+        "installs": 105,
+        "active_devices": 47,
+        "display": "105",
+        "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f3/b7/77/f3b7773a-bd81-95e7-2fde-ff931ed92d45/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+        "play_url": "https://play.google.com/store/apps/details?id=com.tsuzukit.sebonereminder"
       },
       {
         "rank": 6,
-        "name": "猫背改善と姿勢リマインダー",
-        "package": "com.tsuzukit.sebonereminder",
-        "installs": 48,
-        "display": "48",
-        "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f3/b7/77/f3b7773a-bd81-95e7-2fde-ff931ed92d45/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
-        "play_url": "https://play.google.com/store/apps/details?id=com.tsuzukit.sebonereminder"
+        "name": "Yattayo やったよボード",
+        "package": "com.tsuzukit.yattayo",
+        "installs": 38,
+        "active_devices": 51,
+        "display": "38",
+        "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5f/4b/37/5f4b379e-eb4e-1f05-628c-b657f729d71a/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+        "play_url": "https://play.google.com/store/apps/details?id=com.tsuzukit.yattayo"
       },
       {
         "rank": 7,
         "name": "Matchbox: Focus Timer & Habits",
         "package": "com.tsuzukit.matchbox",
-        "installs": 18,
-        "display": "18",
+        "installs": 22,
+        "active_devices": 14,
+        "display": "22",
         "icon_url": "",
         "play_url": "https://play.google.com/store/apps/details?id=com.tsuzukit.matchbox"
       },
@@ -871,11 +879,13 @@
         "rank": 8,
         "name": "Monivo 声で起こし合うアラーム",
         "package": "com.tsuzukit.monivo",
-        "installs": 12,
-        "display": "12",
+        "installs": 8,
+        "active_devices": 9,
+        "display": "8",
         "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4a/9e/b5/4a9eb5b2-7e9d-2268-3df5-dccd511322de/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg",
         "play_url": "https://play.google.com/store/apps/details?id=com.tsuzukit.monivo"
       }
     ]
-  }
+  },
+  "grand_total": 721075
 }
