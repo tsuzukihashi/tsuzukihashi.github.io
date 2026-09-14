@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ダウンロードランキング - Ryo Tsuzukihashi</title>
+        <meta name="description"
+            content="App Storeで配信した66本のアプリを、累計ダウンロード数の多い順に並べました。合計668,791ダウンロード。">
+        <meta name="keywords" content="Ryo Tsuzukihashi, iOSアプリ, ダウンロード数, ランキング, 個人開発">
+
+        <!-- OGP -->
+        <meta property="og:title" content="ダウンロードランキング - Ryo Tsuzukihashi">
+        <meta property="og:description"
+            content="66本のアプリを累計ダウンロード数の多い順に。合計668,791ダウンロード。">
+        <meta property="og:image" content="https://tsuzukit.com/assets/images/ogp/portfolio.png">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+        <meta property="og:url" content="https://tsuzukit.com/portfolio/ranking/">
+        <meta property="og:type" content="website">
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@tsuzuki817">
+        <meta name="twitter:title" content="ダウンロードランキング - Ryo Tsuzukihashi">
+        <meta name="twitter:description" content="66本のアプリを累計ダウンロード数の多い順に。">
+        <meta name="twitter:image" content="https://tsuzukit.com/assets/images/ogp/portfolio.png">
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Anton&family=Saira+Condensed:wght@600;700;800&family=Noto+Sans+JP:wght@400;500;700;900&display=swap"
+            rel="stylesheet">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="../../assets/css/memories-tech.css">
+
+        <!-- Favicon -->
+        <link rel="icon" href="../../favicon.ico">
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+        <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERPQ1EGLH');
+    </script>
+
+        <!-- Google AdSense -->
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8240751277462688"
+            crossorigin="anonymous"></script>
+
+        <style>
+            :root {
+                --rk-bg: #f6f2ea;
+                --rk-ink: #14110c;
+                --rk-muted: #57514a;
+                --rk-purple: #8b3df5;
+                --rk-cyan: #0bb4c4;
+                --rk-pink: #ff3d7f;
+                --rk-yellow: #ffc107;
+            }
+            .rk-page { background: var(--rk-bg); color: var(--rk-ink); }
+            .rk-wrap { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+
+            .rk-hero { padding: 120px 0 56px; text-align: center; }
+            .rk-badge {
+                display: inline-block; font-family: 'Saira Condensed', sans-serif; font-style: italic;
+                font-weight: 800; letter-spacing: 0.16em; font-size: 0.85rem; color: var(--rk-purple);
+                margin-bottom: 14px;
+            }
+            .rk-title {
+                font-family: 'Anton', 'Noto Sans JP', sans-serif; font-style: italic;
+                font-size: clamp(2.4rem, 6vw, 4rem); line-height: 1.05; margin-bottom: 18px;
+            }
+            .rk-lead { color: var(--rk-muted); font-size: 1rem; line-height: 1.8; }
+            .rk-total {
+                display: inline-block; margin-top: 26px; background: #fff;
+                border: 2px solid var(--rk-ink); border-radius: 18px; box-shadow: 8px 8px 0 var(--rk-yellow);
+                padding: 18px 30px;
+            }
+            .rk-total b {
+                display: block; font-family: 'Anton', sans-serif; font-style: italic;
+                font-size: 2.6rem; line-height: 1;
+            }
+            .rk-total span {
+                font-family: 'Saira Condensed', sans-serif; font-style: italic; font-weight: 700;
+                letter-spacing: 0.1em; font-size: 0.8rem; color: var(--rk-muted); text-transform: uppercase;
+            }
+
+            .rk-podiums { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin: 10px 0 50px; }
+            .rk-podium {
+                background: #fff; border: 2px solid var(--rk-ink); border-radius: 20px;
+                padding: 26px 18px 22px; text-align: center; text-decoration: none; color: inherit;
+                position: relative; display: block; transition: transform 0.2s ease;
+            }
+            .rk-podium:nth-child(1) { box-shadow: 9px 9px 0 var(--rk-purple); }
+            .rk-podium:nth-child(2) { box-shadow: 9px 9px 0 var(--rk-cyan); }
+            .rk-podium:nth-child(3) { box-shadow: 9px 9px 0 var(--rk-pink); }
+            .rk-podium:hover { transform: translateY(-4px); }
+            .rk-podium-rank {
+                font-family: 'Anton', sans-serif; font-style: italic; font-size: 2.2rem;
+                line-height: 1; color: var(--rk-ink); margin-bottom: 12px;
+            }
+            .rk-podium-icon img { width: 84px; height: 84px; border-radius: 20px; border: 2px solid var(--rk-ink); display: block; margin: 0 auto 14px; }
+            .rk-podium-name { font-size: 0.95rem; font-weight: 700; line-height: 1.5; margin-bottom: 10px; min-height: 2.9em; }
+            .rk-podium-units { font-family: 'Anton', sans-serif; font-style: italic; font-size: 1.9rem; line-height: 1; }
+            .rk-podium-label {
+                font-family: 'Saira Condensed', sans-serif; font-style: italic; font-weight: 700;
+                font-size: 0.72rem; letter-spacing: 0.1em; color: var(--rk-muted);
+                text-transform: uppercase; margin-top: 6px;
+            }
+
+            .rk-list {
+                background: #fff; border: 2px solid var(--rk-ink); border-radius: 20px;
+                box-shadow: 8px 8px 0 var(--rk-ink); overflow: hidden;
+            }
+            .rk-row {
+                display: grid; grid-template-columns: 44px 44px minmax(0, 1fr) 150px 84px;
+                align-items: center; gap: 14px; padding: 12px 20px;
+                border-bottom: 1px solid rgba(20, 17, 12, 0.1);
+                text-decoration: none; color: inherit;
+            }
+            .rk-row:last-child { border-bottom: none; }
+            .rk-row:hover { background: #faf7f1; }
+            .rk-row--ended { color: var(--rk-muted); }
+            .rk-rank { font-family: 'Anton', sans-serif; font-style: italic; font-size: 1.15rem; text-align: right; }
+            .rk-icon img { width: 40px; height: 40px; border-radius: 10px; border: 1px solid rgba(20,17,12,0.16); display: block; }
+            .rk-noicon {
+                display: flex; align-items: center; justify-content: center; width: 40px; height: 40px;
+                border-radius: 10px; border: 1px dashed rgba(20,17,12,0.3); font-size: 0.75rem; color: var(--rk-muted);
+            }
+            .rk-name { font-size: 0.92rem; font-weight: 500; line-height: 1.45; overflow-wrap: anywhere; }
+            .rk-ended {
+                display: inline-block; margin-left: 8px; font-size: 0.68rem; padding: 1px 7px;
+                border: 1px solid rgba(20,17,12,0.25); border-radius: 999px; color: var(--rk-muted); white-space: nowrap;
+            }
+            .rk-bar { display: block; height: 10px; background: rgba(20,17,12,0.08); border-radius: 999px; overflow: hidden; }
+            .rk-bar i { display: block; height: 100%; background: var(--rk-purple); border-radius: 999px; }
+            .rk-units { font-family: 'Saira Condensed', sans-serif; font-style: italic; font-weight: 800; font-size: 1rem; text-align: right; white-space: nowrap; }
+
+            .rk-note { margin: 28px 0 90px; font-size: 0.8rem; line-height: 1.9; color: var(--rk-muted); }
+            .rk-back { display: inline-block; margin-top: 18px; font-weight: 700; color: var(--rk-purple); text-decoration: none; }
+            .rk-back:hover { text-decoration: underline; }
+
+            @media (max-width: 720px) {
+                .rk-hero { padding: 100px 0 40px; }
+                .rk-podiums { grid-template-columns: 1fr; gap: 16px; margin-bottom: 36px; }
+                .rk-podium-name { min-height: 0; }
+                .rk-row { grid-template-columns: 34px 36px minmax(0, 1fr) 68px; gap: 10px; padding: 11px 14px; }
+                .rk-bar { display: none; }
+                .rk-icon img, .rk-noicon { width: 36px; height: 36px; }
+                .rk-name { font-size: 0.86rem; }
+                .rk-units { font-size: 0.9rem; }
+            }
+        </style>
+    </head>
+    <body class="rk-page">
+        <!-- Navigation -->
+        <nav class="nav" id="nav">
+            <div class="nav-container">
+                <a href="/" class="nav-logo">TsuzuKit</a>
+                <div class="nav-menu" id="navMenu">
+                    <a href="/portfolio/" class="nav-link active">Portfolio</a>
+                    <a href="/about/" class="nav-link">About</a>
+                    <a href="/blog/" class="nav-link">Blog</a>
+                    <a href="/contact/" class="nav-link">Contact</a>
+                </div>
+                <div class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <section class="rk-hero">
+                <div class="rk-wrap">
+                    <span class="rk-badge">Download Ranking</span>
+                    <h1 class="rk-title">どれが一番<br>使われているか</h1>
+                    <p class="rk-lead">
+                        App Storeに出した66本を、配信開始から今日までの累計ダウンロード数で並べました。<br>
+                        上の3本で全体の8割を占めています。
+                    </p>
+                    <div class="rk-total">
+                        <b>668,791</b>
+                        <span>Total Downloads</span>
+                    </div>
+                </div>
+            </section>
+
+            <div class="rk-wrap">
+                <div class="rk-podiums">
+                <a class="rk-podium" href="https://apps.apple.com/jp/app/%E3%81%86%E3%82%93%E3%81%A1%E3%81%8F%E3%82%93-ai%E5%81%A5%E5%BA%B7%E8%A8%98%E9%8C%B2-%E3%81%86%E3%82%93%E3%83%88%E3%83%A2/id6758856276?uo=4" target="_blank" rel="noopener">
+                    <div class="rk-podium-rank">1</div>
+                    <div class="rk-podium-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/70/51/ba/7051bad5-148b-ce08-0aeb-66f24097d0e3/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg" alt="" loading="lazy"></div>
+                    <h3 class="rk-podium-name">うんちくん AI健康記録&amp;うんトモ</h3>
+                    <div class="rk-podium-units">21.1万</div>
+                    <div class="rk-podium-label">ダウンロード</div>
+                </a>
+                <a class="rk-podium" href="https://apps.apple.com/jp/app/%E6%B5%81%E3%82%8C%E3%82%8B%E3%83%A1%E3%83%A2%E5%B8%B3/id1598380826?uo=4" target="_blank" rel="noopener">
+                    <div class="rk-podium-rank">2</div>
+                    <div class="rk-podium-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/00/f4/d3/00f4d38d-8825-1fda-0bdf-d3faf052a16f/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg" alt="" loading="lazy"></div>
+                    <h3 class="rk-podium-name">流れるメモ帳</h3>
+                    <div class="rk-podium-units">16.7万</div>
+                    <div class="rk-podium-label">ダウンロード</div>
+                </a>
+                <a class="rk-podium" href="https://apps.apple.com/jp/app/%E6%97%85%E8%A1%8C%E6%80%9D%E3%81%84%E5%87%BA%E3%83%9E%E3%83%83%E3%83%97-%E6%97%85%E3%81%AE%E8%A8%98%E6%86%B6%E3%82%92-%E5%9C%B0%E5%9B%B3%E3%81%AB%E6%8F%8F%E3%81%8F/id6478291625?uo=4" target="_blank" rel="noopener">
+                    <div class="rk-podium-rank">3</div>
+                    <div class="rk-podium-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e8/5c/85/e85c8537-ded0-ef69-2f60-f2ff85a7538a/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg" alt="" loading="lazy"></div>
+                    <h3 class="rk-podium-name">旅行思い出マップ - 旅の記憶を、地図に描く</h3>
+                    <div class="rk-podium-units">15.3万</div>
+                    <div class="rk-podium-label">ダウンロード</div>
+                </a>
+                </div>
+
+                <div class="rk-list">
+                <a class="rk-row" href="https://apps.apple.com/jp/app/%E6%8E%A8%E3%81%97%E3%82%A2%E3%82%A4%E3%83%A9%E3%83%B3%E3%83%89/id6751716346?uo=4" target="_blank" rel="noopener">
+                    <span class="rk-rank">4</span>
+                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f7/49/d2/f749d23a-3689-a5dd-5d1d-a598950509ce/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg" alt="" loading="lazy"></span>
+                    <span class="rk-name">推しアイランド</span>
+                    <span class="rk-bar"><i style="width: 18.1%;"></i></span>
+                    <span class="rk-units">3.8万</span>
+                </a>
+                <a class="rk-row" href="https://apps.apple.com/jp/app/skycode/id1512663141?uo=4" target="_blank" rel="noopener">
+                    <span class="rk-rank">5</span>
+                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/a4/3c/bb/a43cbbb8-dd31-d427-6f7f-5b75b1b0f682/AppIcon-1x_U007emarketing-0-10-0-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
+                    <span class="rk-name">SkyCode</span>
+                    <span class="rk-bar"><i style="width: 10.7%;"></i></span>
+                    <span class="rk-units">2.3万</span>
+                </a>
+                <a class="rk-row" href="https://apps.apple.com/jp/app/pictin/id1625004229?uo=4" target="_blank" rel="noopener">
+                    <span class="rk-rank">6</span>
+                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/3e/26/4d/3e264d0b-f57c-30cf-69c8-2d33f90a765f/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
+                    <span class="rk-name">PictIn</span>
+                    <span class="rk-bar"><i style="width: 8.5%;"></i></span>
+                    <span class="rk-units">1.8万</span>
+                </a>
+                <a class="rk-row" href="https://apps.apple.com/jp/app/pipmp/id1612260255?uo=4" target="_blank" rel="noopener">
+                    <span class="rk-rank">7</span>
+                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/d2/9f/47/d29f4743-9e29-91cd-98fe-e651b0e8a903/AppIcon-0-1x_U007emarketing-0-10-0-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
+                    <span class="rk-name">PIPMP</span>
+                    <span class="rk-bar"><i style="width: 8.1%;"></i></span>
+                    <span class="rk-units">1.7万</span>
+                </a>
+                <a class="rk-row" href="https://apps.apple.com/jp/app/%E3%83%90%E3%83%BC%E3%82%B9%E3%83%87%E3%83%BC%E3%83%A0%E3%83%BC%E3%83%B3/id6737449860?uo=4" target="_blank" rel="noopener">
+                    <span class="rk-rank">8</span>
+                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/db/fd/fb/dbfdfb32-a4b2-8cad-b8d7-1131e4ea7d24/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.jpg" alt="" loading="lazy"></span>
+                    <span class="rk-name">バースデームーン</span>
+                    <span class="rk-bar"><i style="width: 3.5%;"></i></span>
+                    <span class="rk-units">7,370</span>
+                </a>
+                <a class="rk-row" href="https://apps.apple.com/jp/app/alwaysontimer-%E3%81%84%E3%81%A4%E3%81%A7%E3%82%82%E3%82%BF%E3%82%A4%E3%83%9E%E3%83%BC/id6443471257?uo=4" target="_blank" rel="noopener">
+                    <span class="rk-rank">9</span>
+                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/87/54/da/8754dae1-7d78-2334-5625-2b7a22dca50a/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
+                    <span class="rk-name">AlwaysOnTimer　- いつでもタイマー</span>
+                    <span class="rk-bar"><i style="width: 2.4%;"></i></span>
+                    <span class="rk-units">5,070</span>
+                </a>
+                <a class="rk-row" href="https://apps.apple.com/jp/app/%E3%81%82%E3%81%AA%E3%81%9F%E3%83%AC%E3%82%B7%E3%83%BC%E3%83%88-%E3%83%AC%E3%82%B7%E3%83%BC%E3%83%88%E4%BD%9C%E6%88%90-%E8%A8%98%E9%8C%B2/id6784235708?uo=4" target="_blank" rel="noopener">
+                    <span class="rk-rank">10</span>
+                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/85/2c/9d/852c9d7e-9a34-3893-e6ad-64124d6567dc/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
+                    <span class="rk-name">あなたレシート レシート作成＆記録</span>
+                    <span class="rk-bar"><i style="width: 2.0%;"></i></span>
+                    <span class="rk-units">4,190</span>
+                </a>
+                <a class="rk-row" href="https://apps.apple.com/jp/app/%E7%8C%AB%E8%83%8C%E6%94%B9%E5%96%84%E3%81%A8%E5%A7%BF%E5%8B%A2%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%80%E3%83%BC-%E7%8C%AB%E8%83%8C%E3%81%AF%E7%8C%AB%E3%81%A0%E3%81%91%E3%81%A7%E5%85%85%E5%88%86%E3%81%AB%E3%82%83/id6758261496?uo=4" target="_blank" rel="noopener">
+                    <span class="rk-rank">11</span>
+                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f3/b7/77/f3b7773a-bd81-95e7-2fde-ff931ed92d45/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
+                    <span class="rk-name">猫背改善と姿勢リマインダー：猫背は猫だけで充分にゃ。</span>
+                    <span class="rk-bar"><i style="width: 1.7%;"></i></span>
+                    <span class="rk-units">3,640</span>
+                </a>
+                <a class="rk-row" href="https://apps.apple.com/jp/app/%E3%83%95%E3%83%81%E3%83%89%E3%83%AA-%E8%83%8C%E6%99%AF%E9%80%8F%E9%81%8E%E3%81%A8%E7%B8%81%E5%8F%96%E3%82%8A/id6748528617?uo=4" target="_blank" rel="noopener">
+                    <span class="rk-rank">12</span>
+                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/34/e2/c0/34e2c037-6a37-88b8-c92f-8bcd23fa8ce1/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.jpg" alt="" loading="lazy"></span>
+                    <span class="rk-name">フチドリ！ ~背景透過と縁取り~</span>
+                    <span class="rk-bar"><i style="width: 1.2%;"></i></span>
+                    <span class="rk-units">2,500</span>
+                </a>
+                <a class="rk-row" href="https://apps.apple.com/jp/app/ticketmania/id6444087177?uo=4" target="_blank" rel="noopener">
+                    <span class="rk-rank">13</span>
+                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/0c/69/43/0c694307-7285-ccdc-052b-3a3efc992557/AppIcon-0-1x_U007emarketing-0-7-0-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
+                    <span class="rk-name">TicketMania</span>
+                    <span class="rk-bar"><i style="width: 0.9%;"></i></span>
+                    <span class="rk-units">1,840</span>
+                </a>
+                <a class="rk-row" href="https://apps.apple.com/jp/app/bookbank-%E8%AA%AD%E6%9B%B8%E9%8A%80%E8%A1%8C-%E8%AA%AD%E6%9B%B8%E8%A8%98%E9%8C%B2-%E8%94%B5%E6%9B%B8%E7%AE%A1%E7%90%86/id1487377681?uo=4" target="_blank" rel="noopener">
+                    <span class="rk-rank">14</span>
+                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/1f/2c/e5/1f2ce5ec-2cf7-8358-bd1c-15e59910fd4d/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
+                    <span class="rk-name">BookBank(読書銀行) 読書記録・蔵書管理</span>
+                    <span class="rk-bar"><i style="width: 0.7%;"></i></span>
+                    <span class="rk-units">1,410</span>
+                </a>
+                <a class="rk-row" href="https://apps.apple.com/jp/app/%E3%81%AA%E3%81%8C%E3%82%89%E3%82%AB%E3%82%A6%E3%83%B3%E3%82%BF%E3%83%BC-%E5%88%A5%E3%81%AE%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%84%E3%81%A6%E3%82%82%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%81%A7%E3%81%8D%E3%82%8B/id1644376109?uo=4" target="_blank" rel="noopener">
+                    <span class="rk-rank">15</span>
+                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5d/bc/a8/5dbca80e-f98f-26df-09b2-505b298e1caf/AppIcon-0-0-1x_U007emarketing-0-10-0-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
+                    <span class="rk-name">ながらカウンター ~別のアプリを使っていてもカウントできる~</span>
+                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="rk-units">1,130</span>
+                </a>
+                <a class="rk-row" href="https://apps.apple.com/jp/app/focusdrive-%E9%9B%86%E4%B8%AD%E3%82%BF%E3%82%A4%E3%83%9E%E3%83%BC/id6756264384?uo=4" target="_blank" rel="noopener">
+                    <span class="rk-rank">16</span>
+                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/cf/ee/3b/cfee3b95-3416-019a-209c-b5ebb7506be3/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
+                    <span class="rk-name">FocusDrive - 集中タイマー</span>
+                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="rk-units">849</span>
+                </a>
+                <a class="rk-row" href="https://apps.apple.com/jp/app/%E3%81%8A%E8%96%AC%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%80%E3%83%BC-%E6%9C%8D%E7%94%A8%E7%AE%A1%E7%90%86/id6756915544?uo=4" target="_blank" rel="noopener">
+                    <span class="rk-rank">17</span>
+                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/36/20/93/362093f8-b3e0-17c2-15c7-f6af3af7a106/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg" alt="" loading="lazy"></span>
+                    <span class="rk-name">お薬リマインダー 服用管理</span>
+                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="rk-units">812</span>
+                </a>
+                <a class="rk-row" href="https://apps.apple.com/jp/app/%E3%82%89%E3%81%8F%E3%82%BF%E3%82%B0/id1670158327?uo=4" target="_blank" rel="noopener">
+                    <span class="rk-rank">18</span>
+                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/f3/48/0a/f3480aae-e643-8c64-884b-e825fbe57393/AppIcon-1x_U007emarketing-0-7-0-P3-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
+                    <span class="rk-name">らくタグ</span>
+                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="rk-units">809</span>
+                </a>
+                <a class="rk-row" href="https://apps.apple.com/jp/app/widgetqiita/id1585253685?uo=4" target="_blank" rel="noopener">
+                    <span class="rk-rank">19</span>
+                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple112/v4/77/b1/4c/77b14ce8-6a4e-975d-511a-52ba07838c05/AppIcon-0-1x_U007emarketing-0-10-0-sRGB-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
+                    <span class="rk-name">WidgetQiita</span>
+                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="rk-units">743</span>
+                </a>
+                <a class="rk-row" href="https://apps.apple.com/jp/app/clockwidget-%E5%80%8B%E6%80%A7%E8%B1%8A%E3%81%8B%E3%81%AA%E6%99%82%E8%A8%88%E3%82%A6%E3%82%A3%E3%82%B8%E3%82%A7%E3%83%83%E3%83%88%E3%82%A2%E3%83%97%E3%83%AA/id6451070718?uo=4" target="_blank" rel="noopener">
+                    <span class="rk-rank">20</span>
+                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1d/ac/17/1dac1756-9763-7273-8773-03d0a43e02b8/AppIcon-0-0-1x_U007epad-0-P3-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
+                    <span class="rk-name">ClockWidget ~個性豊かな時計ウィジェットアプリ~</span>
+                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="rk-units">653</span>
+                </a>
+                <a class="rk-row" href="https://apps.apple.com/jp/app/%CF%80-pi-%E5%86%86%E5%91%A8%E7%8E%87%E3%82%92%E6%A5%BD%E3%81%97%E3%82%80%E3%82%A2%E3%83%97%E3%83%AA/id6566185298?uo=4" target="_blank" rel="noopener">
+                    <span class="rk-rank">21</span>
+                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/1a/e4/b4/1ae4b436-b7c4-1ebb-6da8-5a92920289a6/AppIcon-0-0-1x_U007epad-0-P3-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
+                    <span class="rk-name">π ~ Pi　円周率を楽しむアプリ</span>
+                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="rk-units">648</span>
+                </a>
+                <a class="rk-row" href="https://apps.apple.com/jp/app/%E3%82%81%E3%81%8F%E3%82%8B%E3%82%93-%E6%97%A5%E3%82%81%E3%81%8F%E3%82%8A%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%80%E3%83%BC/id6761456691?uo=4" target="_blank" rel="noopener">
+                    <span class="rk-rank">22</span>
+                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f6/06/60/f60660eb-3724-016f-d856-b278b709c8fd/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.jpg" alt="" loading="lazy"></span>
+                    <span class="rk-name">めくるん - 日めくりカレンダー</span>
+                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="rk-units">645</span>
+                </a>
+                <a class="rk-row" href="https://apps.apple.com/jp/app/%E7%9B%AE%E8%96%AC%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%80%E3%83%BC-eyedrop-%E7%82%B9%E7%9C%BC%E7%AE%A1%E7%90%86/id6757758987?uo=4" target="_blank" rel="noopener">
+                    <span class="rk-rank">23</span>
+                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/99/ab/b3/99abb3ee-bc10-c51b-65e0-a96453b6ae53/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg" alt="" loading="lazy"></span>
+                    <span class="rk-name">目薬リマインダー ~ EyeDrop 点眼管理 ~</span>
+                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="rk-units">623</span>
+                </a>
+                <a class="rk-row" href="https://apps.apple.com/jp/app/%E3%83%95%E3%82%A9%E3%83%88%E3%82%AC%E3%83%BC%E3%83%89/id6452754625?uo=4" target="_blank" rel="noopener">
+                    <span class="rk-rank">24</span>
+                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/c7/3e/a3/c73ea30f-2661-1137-80ec-2158dddcaec1/AppIcon-1x_U007epad-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
+                    <span class="rk-name">フォトガード</span>
+                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="rk-units">623</span>
+                </a>
+                <a class="rk-row" href="https://apps.apple.com/jp/app/%E3%82%BC%E3%83%AA%E3%83%BC%E3%82%BB%E3%82%A4%E3%83%A0%E3%83%91%E3%82%BA%E3%83%AB/id6747354292?uo=4" target="_blank" rel="noopener">
+                    <span class="rk-rank">25</span>
+                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/9a/a0/34/9aa034b0-e88f-cdcf-a05d-37ed7ec4f9ac/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
+                    <span class="rk-name">ゼリーセイムパズル</span>
+                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="rk-units">582</span>
+                </a>
+                <a class="rk-row" href="https://apps.apple.com/jp/app/nokki-%E9%9F%B3%E6%A5%BD%E3%82%B8%E3%83%A3%E3%83%BC%E3%83%8A%E3%83%AB/id6790164642?uo=4" target="_blank" rel="noopener">
+                    <span class="rk-rank">26</span>
+                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/91/21/35/91213567-b4b3-a301-bef8-a55986691765/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
+                    <span class="rk-name">nokki - 音楽ジャーナル</span>
+                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="rk-units">552</span>
+                </a>
+                <a class="rk-row" href="https://apps.apple.com/jp/app/relaychat-%E3%82%AA%E3%83%95%E3%83%A9%E3%82%A4%E3%83%B3%E5%8C%BF%E5%90%8Dbluetooth%E3%83%81%E3%83%A3%E3%83%83%E3%83%88/id6749299283?uo=4" target="_blank" rel="noopener">
+                    <span class="rk-rank">27</span>
+                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/97/5c/8b/975c8baf-3abe-074d-bbc3-cd497a40f530/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
+                    <span class="rk-name">RelayChat-オフライン匿名Bluetoothチャット</span>
+                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="rk-units">504</span>
+                </a>
+                <a class="rk-row" href="https://apps.apple.com/jp/app/widgetzenn/id1597103122?uo=4" target="_blank" rel="noopener">
+                    <span class="rk-rank">28</span>
+                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2a/a2/3b/2aa23bb5-af8b-f657-b8a2-3a0da2f3ece5/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
+                    <span class="rk-name">WidgetZenn</span>
+                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="rk-units">479</span>
+                </a>
+                <a class="rk-row" href="https://apps.apple.com/jp/app/today-%E4%BB%8A%E6%97%A5%E3%81%AF%E4%BB%A4%E5%92%8C%E4%BD%95%E5%B9%B4%E3%81%A7%E4%BD%95%E3%81%AE%E6%97%A5/id6752814140?uo=4" target="_blank" rel="noopener">
+                    <span class="rk-rank">29</span>
+                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ad/07/e5/ad07e5a2-f7ff-3f4b-c7e3-0563717c30e1/today-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
+                    <span class="rk-name">Today -今日は令和何年で何の日？-</span>
+                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="rk-units">442</span>
+                </a>
+                <div class="rk-row rk-row--ended">
+                    <span class="rk-rank">30</span>
+                    <span class="rk-icon"><span class="rk-noicon">終</span></span>
+                    <span class="rk-name">AI Gemini<span class="rk-ended">配信終了</span></span>
+                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="rk-units">397</span>
+                </div>
+                <a class="rk-row" href="https://apps.apple.com/jp/app/geolens-%E5%B2%A9%E7%9F%B3-%E9%89%B1%E7%89%A9ai%E5%9B%B3%E9%91%91/id6757151902?uo=4" target="_blank" rel="noopener">
+                    <span class="rk-rank">31</span>
+                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/01/9f/56/019f5699-a216-3617-cb06-4c0ab581be0f/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg" alt="" loading="lazy"></span>
+                    <span class="rk-name">GeoLens - 岩石・鉱物AI図鑑</span>
+                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="rk-units">386</span>
+                </a>
+                <a class="rk-row" href="https://apps.apple.com/jp/app/ikaqr-qr%E3%82%B3%E3%83%BC%E3%83%89%E3%82%92%E7%88%86%E9%80%9F%E3%81%A7%E8%AA%AD%E3%81%BF%E8%BE%BC%E3%82%82%E3%81%86/id6450046891?uo=4" target="_blank" rel="noopener">
+                    <span class="rk-rank">32</span>
+                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/20/6c/b3/206cb337-5331-1193-1f4a-b265f42bb1dc/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.jpg" alt="" loading="lazy"></span>
+                    <span class="rk-name">ikaQR ~QRコードを爆速で読み込もう~</span>
+                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="rk-units">379</span>
+                </a>
+                <div class="rk-row rk-row--ended">
+                    <span class="rk-rank">33</span>
+                    <span class="rk-icon"><span class="rk-noicon">終</span></span>
+                    <span class="rk-name">MacAddressQuiz<span class="rk-ended">配信終了</span></span>
+                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="rk-units">356</span>
+                </div>
+                <a class="rk-row" href="https://apps.apple.com/jp/app/%E6%80%9D%E3%81%84%E5%87%BA%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%80%E3%83%BC-1%E6%97%A51%E6%9E%9A%E3%83%95%E3%82%A9%E3%83%88%E6%97%A5%E8%A8%98/id6757349187?uo=4" target="_blank" rel="noopener">
+                    <span class="rk-rank">34</span>
+                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b0/28/73/b028733a-c2c8-43da-5215-fffa24738b59/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
+                    <span class="rk-name">思い出カレンダー - 1日1枚フォト日記</span>
+                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="rk-units">345</span>
+                </a>
+                <a class="rk-row" href="https://apps.apple.com/jp/app/%E9%A6%AC%E5%88%B8%E3%82%B8%E3%82%A7%E3%83%8D%E3%83%AC%E3%83%BC%E3%82%BF%E3%83%BC/id6757259211?uo=4" target="_blank" rel="noopener">
+                    <span class="rk-rank">35</span>
+                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/3f/69/67/3f696767-f83f-49f3-a22f-b8228cffeb02/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg" alt="" loading="lazy"></span>
+                    <span class="rk-name">馬券ジェネレーター</span>
+                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="rk-units">331</span>
+                </a>
+                <div class="rk-row rk-row--ended">
+                    <span class="rk-rank">36</span>
+                    <span class="rk-icon"><span class="rk-noicon">終</span></span>
+                    <span class="rk-name">パンケーキ屋さん<span class="rk-ended">配信終了</span></span>
+                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="rk-units">329</span>
+                </div>
+                <a class="rk-row" href="https://apps.apple.com/jp/app/%E3%82%B9%E3%83%AF%E3%82%A4%E3%83%9D%E3%83%B3-%E3%82%B9%E3%83%AF%E3%82%A4%E3%83%97%E3%81%A7%E5%86%99%E7%9C%9F%E3%81%A8%E5%8B%95%E7%94%BB%E3%82%92%E7%B0%A1%E5%8D%98%E6%95%B4%E7%90%86/id6752831862?uo=4" target="_blank" rel="noopener">
+                    <span class="rk-rank">37</span>
+                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/11/e3/16/11e31605-1163-3718-1ffd-4aba66432224/swipeclean-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
+                    <span class="rk-name">スワイポン - スワイプで写真と動画を簡単整理</span>
+                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="rk-units">328</span>
+                </a>
+                <a class="rk-row" href="https://apps.apple.com/jp/app/%E6%97%AC%E3%81%AE%E3%81%8A%E9%AD%9A%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%80%E3%83%BC/id6746123337?uo=4" target="_blank" rel="noopener">
+                    <span class="rk-rank">38</span>
+                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4d/2a/9b/4d2a9bc5-d47a-9f96-a0bd-14a843578175/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
+                    <span class="rk-name">旬のお魚カレンダー</span>
+                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="rk-units">271</span>
+                </a>
+                <a class="rk-row" href="https://apps.apple.com/jp/app/%E8%A8%98%E5%BF%B5%E6%97%A5%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%80%E3%83%BC-%E3%83%A1%E3%83%A2%E3%83%AA%E3%82%A2/id6758575269?uo=4" target="_blank" rel="noopener">
+                    <span class="rk-rank">39</span>
+                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/36/53/82/36538239-c1d1-31a2-c278-3bb4c008976e/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
+                    <span class="rk-name">記念日リマインダー - メモリア</span>
+                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="rk-units">214</span>
+                </a>
+                <a class="rk-row" href="https://apps.apple.com/jp/app/birdlens-%E9%87%8E%E9%B3%A5ai%E5%9B%B3%E9%91%91/id6757175763?uo=4" target="_blank" rel="noopener">
+                    <span class="rk-rank">40</span>
+                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4d/e5/7d/4de57d82-6e46-3246-a1d0-4f7a3e3eec46/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg" alt="" loading="lazy"></span>
+                    <span class="rk-name">BirdLens - 野鳥AI図鑑</span>
+                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="rk-units">204</span>
+                </a>
+                <a class="rk-row" href="https://apps.apple.com/jp/app/shelllens-%E8%B2%9D%E6%AE%BBai%E5%9B%B3%E9%91%91/id6757253733?uo=4" target="_blank" rel="noopener">
+                    <span class="rk-rank">41</span>
+                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/65/8d/19/658d1967-9e21-05c7-bc6a-c17898ce0215/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg" alt="" loading="lazy"></span>
+                    <span class="rk-name">ShellLens - 貝殻AI図鑑</span>
+                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="rk-units">204</span>
+                </a>
+                <div class="rk-row rk-row--ended">
+                    <span class="rk-rank">42</span>
+                    <span class="rk-icon"><span class="rk-noicon">終</span></span>
+                    <span class="rk-name">SameColor<span class="rk-ended">配信終了</span></span>
+                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="rk-units">203</span>
+                </div>
+                <a class="rk-row" href="https://apps.apple.com/jp/app/simple-touch-the-numbers/id6450852611?uo=4" target="_blank" rel="noopener">
+                    <span class="rk-rank">43</span>
+                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/f0/c9/eb/f0c9eb4b-ba2f-0333-f6a2-4d141f09229f/AppIcon-1x_U007epad-85-220.jpeg/512x512bb.jpg" alt="" loading="lazy"></span>
+                    <span class="rk-name">Simple Touch The Numbers</span>
+                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="rk-units">193</span>
+                </a>
+                <a class="rk-row" href="https://apps.apple.com/jp/app/cook-it-%E5%86%B7%E8%94%B5%E5%BA%AB%E3%81%AE%E4%B8%AD%E3%82%92%E6%92%AE%E3%82%8B%E3%81%A0%E3%81%91%E3%81%A7ai%E3%83%AC%E3%82%B7%E3%83%94%E6%8F%90%E6%A1%88/id6751343632?uo=4" target="_blank" rel="noopener">
+                    <span class="rk-rank">44</span>
+                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5b/cc/48/5bcc48a9-937f-9035-c7aa-66c1f127126c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
+                    <span class="rk-name">Cook-it -冷蔵庫の中を撮るだけでAIレシピ提案-</span>
+                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="rk-units">140</span>
+                </a>
+                <div class="rk-row rk-row--ended">
+                    <span class="rk-rank">45</span>
+                    <span class="rk-icon"><span class="rk-noicon">終</span></span>
+                    <span class="rk-name">FightAction<span class="rk-ended">配信終了</span></span>
+                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="rk-units">130</span>
+                </div>
+                <a class="rk-row" href="https://apps.apple.com/jp/app/himekuri-%E8%A8%98%E5%BF%B5%E6%97%A5%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%83%80%E3%82%A6%E3%83%B3/id6787482576?uo=4" target="_blank" rel="noopener">
+                    <span class="rk-rank">46</span>
+                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/2b/a8/ba/2ba8baff-6c47-221a-bc89-b34c8b5d0ad5/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
+                    <span class="rk-name">Himekuri - 記念日カウントダウン</span>
+                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="rk-units">128</span>
+                </a>
+                <a class="rk-row" href="https://apps.apple.com/jp/app/beautymed-%E7%BE%8E%E5%AE%B9%E5%8C%BB%E7%99%82%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%80%E3%83%BC/id6757325065?uo=4" target="_blank" rel="noopener">
+                    <span class="rk-rank">47</span>
+                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/58/b0/da/58b0da76-fa5a-e480-d7af-b898a6e41878/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg" alt="" loading="lazy"></span>
+                    <span class="rk-name">BeautyMed - 美容医療リマインダー</span>
+                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="rk-units">124</span>
+                </a>
+                <a class="rk-row" href="https://apps.apple.com/jp/app/%E3%81%9A%E3%82%93%E3%81%A0%E3%82%82%E3%82%93%E3%81%AE%E9%83%A8%E5%B1%8B-%E3%81%9A%E3%82%93%E3%81%A0%E3%82%82%E3%82%93%E3%81%AB%E8%A9%B1%E3%82%92%E8%81%B4%E3%81%84%E3%81%A6%E3%82%82%E3%82%89%E3%81%86/id6759167301?uo=4" target="_blank" rel="noopener">
+                    <span class="rk-rank">48</span>
+                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4e/b9/61/4eb96123-6878-e8d9-fceb-437aa54074b9/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
+                    <span class="rk-name">ずんだもんの部屋 - ずんだもんに話を聴いてもらう</span>
+                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="rk-units">108</span>
+                </a>
+                <div class="rk-row rk-row--ended">
+                    <span class="rk-rank">49</span>
+                    <span class="rk-icon"><span class="rk-noicon">終</span></span>
+                    <span class="rk-name">Puzzle and Battle<span class="rk-ended">配信終了</span></span>
+                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="rk-units">106</span>
+                </div>
+                <a class="rk-row" href="https://apps.apple.com/jp/app/monivo-%E5%A3%B0%E3%81%A7%E8%B5%B7%E3%81%93%E3%81%97%E5%90%88%E3%81%86%E3%82%A2%E3%83%A9%E3%83%BC%E3%83%A0/id6793626358?uo=4" target="_blank" rel="noopener">
+                    <span class="rk-rank">50</span>
+                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4a/9e/b5/4a9eb5b2-7e9d-2268-3df5-dccd511322de/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
+                    <span class="rk-name">Monivo 声で起こし合うアラーム</span>
+                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="rk-units">92</span>
+                </a>
+                <a class="rk-row" href="https://apps.apple.com/jp/app/%E7%A9%BA%E6%83%B3%E6%97%85%E8%A1%8C%E3%82%AB%E3%83%A1%E3%83%A9-ai%E3%81%A7%E4%B8%96%E7%95%8C%E3%82%92%E3%82%B9%E3%83%8A%E3%83%83%E3%83%97/id6755984490?uo=4" target="_blank" rel="noopener">
+                    <span class="rk-rank">51</span>
+                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d0/23/b5/d023b55f-db83-f180-d2f3-157f24a9b83f/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.jpg" alt="" loading="lazy"></span>
+                    <span class="rk-name">空想旅行カメラ - AIで世界をスナップ</span>
+                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="rk-units">82</span>
+                </a>
+                <a class="rk-row" href="https://apps.apple.com/jp/app/%E8%A8%80%E3%81%AE%E8%91%89%E7%AE%B1-%E5%A4%A7%E5%88%87%E3%81%AA%E6%89%8B%E7%B4%99%E3%82%92%E7%B0%A1%E5%8D%98%E3%81%AB%E8%A8%98%E9%8C%B2/id6749537777?uo=4" target="_blank" rel="noopener">
+                    <span class="rk-rank">52</span>
+                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/82/95/f3/8295f3cc-d094-690c-e71c-0c6ec70c77a3/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
+                    <span class="rk-name">言の葉箱 〜大切な手紙を簡単に記録〜</span>
+                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="rk-units">77</span>
+                </a>
+                <div class="rk-row rk-row--ended">
+                    <span class="rk-rank">53</span>
+                    <span class="rk-icon"><span class="rk-noicon">終</span></span>
+                    <span class="rk-name">星防衛<span class="rk-ended">配信終了</span></span>
+                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="rk-units">74</span>
+                </div>
+                <a class="rk-row" href="https://apps.apple.com/jp/app/%E6%B0%B4%E6%A7%BD%E7%AE%A1%E7%90%86-%E6%B0%B4%E6%9B%BF%E3%81%88%E9%80%9A%E7%9F%A5-tankminder/id6778477412?uo=4" target="_blank" rel="noopener">
+                    <span class="rk-rank">54</span>
+                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/bf/a9/53/bfa9531d-241e-2c42-3622-28b6029b76cd/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
+                    <span class="rk-name">水槽管理・水替え通知 TankMinder</span>
+                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="rk-units">72</span>
+                </a>
+                <a class="rk-row" href="https://apps.apple.com/jp/app/mono-%E3%81%8A%E8%BF%8E%E3%81%88%E3%81%97%E3%81%9F%E5%96%9C%E3%81%B3%E3%82%92%E5%88%86%E3%81%8B%E3%81%A1%E5%90%88%E3%81%86%E3%82%A2%E3%83%97%E3%83%AA/id6743043894?uo=4" target="_blank" rel="noopener">
+                    <span class="rk-rank">55</span>
+                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/bf/84/3a/bf843a84-e509-1227-cd86-18a411b9402e/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
+                    <span class="rk-name">mono ~お迎えした喜びを分かち合うアプリ~</span>
+                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="rk-units">71</span>
+                </a>
+                <a class="rk-row" href="https://apps.apple.com/jp/app/%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%80%E3%83%BC-%E8%A8%98%E6%86%B6%E3%82%92%E5%91%BC%E3%81%B3%E8%B5%B7%E3%81%93%E3%81%99/id6756901694?uo=4" target="_blank" rel="noopener">
+                    <span class="rk-rank">56</span>
+                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e0/5b/29/e05b2975-7c56-3f93-5902-f885c2e390ed/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg" alt="" loading="lazy"></span>
+                    <span class="rk-name">リマインダー 記憶を呼び起こす</span>
+                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="rk-units">69</span>
+                </a>
+                <a class="rk-row" href="https://apps.apple.com/jp/app/%E3%82%B3%E3%83%B3%E3%82%BF%E3%82%AF%E3%83%88%E4%BA%A4%E6%8F%9B%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%80%E3%83%BC-lenslog/id6779314854?uo=4" target="_blank" rel="noopener">
+                    <span class="rk-rank">57</span>
+                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/db/ac/cf/dbaccf65-8ce5-b492-4648-3b08567e9bab/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
+                    <span class="rk-name">コンタクト交換リマインダー LensLog</span>
+                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="rk-units">61</span>
+                </a>
+                <a class="rk-row" href="https://apps.apple.com/jp/app/yattayo-%E3%82%84%E3%81%A3%E3%81%9F%E3%82%88%E3%83%9C%E3%83%BC%E3%83%89-todo%E3%83%AA%E3%82%B9%E3%83%88/id6791000395?uo=4" target="_blank" rel="noopener">
+                    <span class="rk-rank">58</span>
+                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5f/4b/37/5f4b379e-eb4e-1f05-628c-b657f729d71a/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
+                    <span class="rk-name">Yattayo やったよボード：ToDoリスト</span>
+                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="rk-units">58</span>
+                </a>
+                <a class="rk-row" href="https://apps.apple.com/jp/app/%E3%82%B3%E3%82%B9%E3%83%A1%E6%9C%9F%E9%99%90%E7%AE%A1%E7%90%86-cosmefresh/id6779972238?uo=4" target="_blank" rel="noopener">
+                    <span class="rk-rank">59</span>
+                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b1/0e/6c/b10e6cd7-bb90-822c-a06f-09ac3dc81d38/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
+                    <span class="rk-name">コスメ期限管理 CosmeFresh</span>
+                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="rk-units">52</span>
+                </a>
+                <a class="rk-row" href="https://apps.apple.com/jp/app/eyemole-%E8%A6%96%E7%B7%9A%E3%81%A7%E3%83%A2%E3%82%B0%E3%83%A9%E3%81%9F%E3%81%9F%E3%81%8D/id6797057271?uo=4" target="_blank" rel="noopener">
+                    <span class="rk-rank">60</span>
+                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/9f/00/f9/9f00f994-ea58-30a0-6c8c-2130a61d20bd/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
+                    <span class="rk-name">EyeMole 視線でモグラたたき</span>
+                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="rk-units">50</span>
+                </a>
+                <a class="rk-row" href="https://apps.apple.com/jp/app/flowerlens-%E8%8A%B1ai%E5%9B%B3%E9%91%91/id6762043194?uo=4" target="_blank" rel="noopener">
+                    <span class="rk-rank">61</span>
+                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/39/b6/be/39b6be0b-2a25-8294-9b91-755df964fe9c/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg" alt="" loading="lazy"></span>
+                    <span class="rk-name">FlowerLens - 花AI図鑑</span>
+                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="rk-units">50</span>
+                </a>
+                <a class="rk-row" href="https://apps.apple.com/jp/app/kimochi-%E3%81%8B%E3%82%8F%E3%81%84%E3%81%84%E6%B0%97%E5%88%86%E6%97%A5%E8%A8%98/id6762499180?uo=4" target="_blank" rel="noopener">
+                    <span class="rk-rank">62</span>
+                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/14/6e/a9/146ea943-4af9-17b1-d843-a6592d630c29/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
+                    <span class="rk-name">Kimochi かわいい気分日記</span>
+                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="rk-units">48</span>
+                </a>
+                <a class="rk-row" href="https://apps.apple.com/jp/app/oshilog-%E6%8E%A8%E3%81%97%E6%B4%BB%E3%83%8E%E3%83%BC%E3%83%88/id6788375876?uo=4" target="_blank" rel="noopener">
+                    <span class="rk-rank">63</span>
+                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/dd/1b/e8/dd1be871-e115-ee69-80e7-a43412912a10/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
+                    <span class="rk-name">OshiLog - 推し活ノート</span>
+                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="rk-units">45</span>
+                </a>
+                <a class="rk-row" href="https://apps.apple.com/jp/app/camerakeep-%E3%82%AB%E3%83%A1%E3%83%A9%E6%A9%9F%E6%9D%90%E7%AE%A1%E7%90%86/id6784186281?uo=4" target="_blank" rel="noopener">
+                    <span class="rk-rank">64</span>
+                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d3/98/ac/d398ac42-b3d0-094e-f8a1-fafaeb446366/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
+                    <span class="rk-name">CameraKeep カメラ機材管理</span>
+                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="rk-units">38</span>
+                </a>
+                <a class="rk-row" href="https://apps.apple.com/jp/app/%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF%E3%83%BC%E4%BA%A4%E6%8F%9B-homekeep/id6778079517?uo=4" target="_blank" rel="noopener">
+                    <span class="rk-rank">65</span>
+                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/45/8b/66/458b66f1-26f2-c545-01a8-285876bfc790/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
+                    <span class="rk-name">フィルター交換 HomeKeep</span>
+                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="rk-units">34</span>
+                </a>
+                <a class="rk-row" href="https://apps.apple.com/jp/app/%E8%A6%8B%E5%AE%88%E3%82%8A%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%80%E3%83%BC-%E3%81%BF%E3%81%BE%E3%82%82%E3%82%8A/id6758816691?uo=4" target="_blank" rel="noopener">
+                    <span class="rk-rank">66</span>
+                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/81/c0/15/81c01572-c42c-1443-b735-8d6ee23c1014/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
+                    <span class="rk-name">見守りリマインダー - みまもり</span>
+                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="rk-units">28</span>
+                </a>
+                </div>
+
+                <p class="rk-note">
+                    App Store Connectのトレンド（ユニット数・全期間）から取っています。Appleの表示が3桁に丸められているため、
+                    1万を超えるものは概数です。アプリ内課金の販売数と、他の開発者名義で預かっているアプリは含めていません。
+                    アイコンのない行は配信を終了したアプリです。最終更新は2026-09-15。
+                    <br>
+                    <a class="rk-back" href="/portfolio/">&larr; ポートフォリオに戻る</a>
+                </p>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-content">
+                    <div class="footer-brand">
+                        <a href="/" class="footer-logo">TsuzuKit</a>
+                        <p class="footer-tagline">Memories × Technology</p>
+                    </div>
+                    <div class="footer-links">
+                        <a href="/portfolio/">Portfolio</a>
+                        <a href="/about/">About</a>
+                        <a href="/blog/">Blog</a>
+                        <a href="/contact/">Contact</a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2026 Ryo Tsuzukihashi. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
