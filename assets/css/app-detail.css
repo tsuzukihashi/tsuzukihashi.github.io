@@ -196,7 +196,7 @@
 
 .feature-card:hover {
   transform: translate(-3px, -3px);
-  box-shadow: 9px 9px 0 var(--neon-purple);
+  box-shadow: 9px 9px 0 var(--color-ink);
 }
 
 .feature-icon {
@@ -355,7 +355,7 @@
 
 .review-card:hover {
   transform: translate(-3px, -3px);
-  box-shadow: 9px 9px 0 var(--neon-purple);
+  box-shadow: 9px 9px 0 var(--color-ink);
 }
 
 .review-rating {
@@ -462,13 +462,13 @@
   border: 2px solid var(--color-ink);
   border-radius: 999px;
   font-weight: 700;
-  box-shadow: 4px 4px 0 var(--neon-purple);
+  box-shadow: 4px 4px 0 var(--color-ink);
   transition: var(--transition-normal);
 }
 
 .btn-large:hover {
   transform: translate(-2px, -2px);
-  box-shadow: 6px 6px 0 var(--neon-purple);
+  box-shadow: 6px 6px 0 var(--color-ink);
 }
 
 .app-cta .btn,
@@ -478,14 +478,14 @@
   border: 2px solid var(--color-ink);
   border-radius: 999px;
   font-weight: 700;
-  box-shadow: 4px 4px 0 var(--neon-purple);
+  box-shadow: 4px 4px 0 var(--color-ink);
   transition: var(--transition-normal);
 }
 
 .app-cta .btn:hover,
 .app-store-button .btn:hover {
   transform: translate(-2px, -2px);
-  box-shadow: 6px 6px 0 var(--neon-purple);
+  box-shadow: 6px 6px 0 var(--color-ink);
 }
 
 .apple-icon path,

@@ -95,7 +95,7 @@
 .featured-post:hover {
   transform: translate(-3px, -3px);
   border-color: var(--color-ink);
-  box-shadow: 9px 9px 0 var(--neon-purple);
+  box-shadow: 9px 9px 0 var(--color-ink);
 }
 
 .featured-post-image {
@@ -236,7 +236,7 @@
 .post-card:hover {
   transform: translate(-3px, -3px);
   border-color: var(--color-ink);
-  box-shadow: 9px 9px 0 var(--neon-purple);
+  box-shadow: 9px 9px 0 var(--color-ink);
 }
 
 .post-card-image {
@@ -910,7 +910,7 @@
 .featured-post:hover,
 .post-card:hover {
   border-color: var(--color-ink);
-  box-shadow: 9px 9px 0 var(--neon-purple) !important;
+  box-shadow: 9px 9px 0 var(--color-ink) !important;
 }
 
 /* Post badge → pop gradient pill with ink border */

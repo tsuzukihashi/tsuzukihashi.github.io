@@ -196,7 +196,7 @@
     top: 0.75rem;
     width: 6px;
     height: 6px;
-    background: var(--neon-purple, #8b3df5);
+    background: var(--color-ink, #14110c);
     border-radius: 50%;
 }
 
@@ -219,7 +219,7 @@
 
 .feature-item:hover {
     transform: translate(-2px, -2px);
-    box-shadow: 6px 6px 0 var(--neon-purple, #8b3df5);
+    box-shadow: 6px 6px 0 var(--color-ink);
 }
 
 .feature-emoji {
@@ -344,7 +344,7 @@
     text-decoration: none;
     border: 2px solid var(--color-ink, #14110c);
     border-radius: 999px;
-    box-shadow: 4px 4px 0 var(--neon-purple, #8b3df5);
+    box-shadow: 4px 4px 0 var(--color-ink);
     font-size: 0.9375rem;
     font-weight: 700;
     letter-spacing: 0.02em;
@@ -353,7 +353,7 @@
 
 .app-cta-btn:hover {
     transform: translate(-2px, -2px);
-    box-shadow: 6px 6px 0 var(--neon-purple, #8b3df5);
+    box-shadow: 6px 6px 0 var(--color-ink);
 }
 
 /* ========== Post Footer ========== */

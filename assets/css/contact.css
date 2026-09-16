@@ -65,7 +65,7 @@
 .contact-card:hover {
   transform: translate(-3px, -3px);
   border-color: var(--color-ink);
-  box-shadow: 9px 9px 0 var(--neon-purple);
+  box-shadow: 9px 9px 0 var(--color-ink);
 }
 
 .contact-card.primary {
@@ -185,7 +185,7 @@
   text-decoration: none;
   transition: var(--transition-spring);
 }
-.method:hover { transform: translate(-3px, -3px); box-shadow: 8px 8px 0 var(--neon-purple); }
+.method:hover { transform: translate(-3px, -3px); box-shadow: 8px 8px 0 var(--color-ink); }
 .method--primary { box-shadow: 5px 5px 0 var(--neon-pink); }
 .method--primary:hover { box-shadow: 8px 8px 0 var(--neon-pink); }
 .method-icon {
@@ -280,7 +280,7 @@
 .contact-form select:focus {
   outline: none;
   border-color: var(--neon-purple);
-  box-shadow: 4px 4px 0 var(--neon-purple);
+  box-shadow: 4px 4px 0 var(--color-ink);
 }
 
 .contact-form label {
@@ -307,14 +307,14 @@
   text-decoration: none;
   cursor: pointer;
   transition: var(--transition-normal);
-  box-shadow: 4px 4px 0 var(--neon-purple);
+  box-shadow: 4px 4px 0 var(--color-ink);
 }
 
 .contact-form button[type="submit"]:hover,
 .contact-form .submit-button:hover,
 .google-form-link:hover {
   transform: translate(-3px, -3px);
-  box-shadow: 7px 7px 0 var(--neon-purple);
+  box-shadow: 7px 7px 0 var(--color-ink);
 }
 
 .contact-form-note {
@@ -375,7 +375,7 @@
 .faq-item:hover,
 .faq-item.active {
   border-color: var(--color-ink);
-  box-shadow: 6px 6px 0 var(--neon-purple);
+  box-shadow: 6px 6px 0 var(--color-ink);
 }
 
 .faq-question {
@@ -783,7 +783,7 @@
 /* ===== Pop accents ===== */
 .contact-card:hover {
   border-color: var(--color-ink);
-  box-shadow: 9px 9px 0 var(--neon-purple) !important;
+  box-shadow: 9px 9px 0 var(--color-ink) !important;
 }
 .contact-card.primary {
   background: var(--grad-neon);

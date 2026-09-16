@@ -80,7 +80,7 @@
   left: 0;
   width: 80px;
   height: 1px;
-  background: var(--neon-purple);
+  background: var(--color-ink);
 }
 
 .legal-section p {

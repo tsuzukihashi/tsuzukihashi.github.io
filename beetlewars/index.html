@@ -81,14 +81,14 @@ a{color:var(--gold-l)}
 .bgwrap img{width:100%;height:100%;object-fit:cover;object-position:50% 16%;opacity:.92}
 .bgwrap::after{content:"";position:absolute;inset:0;
   background:
-    linear-gradient(180deg,rgba(10,10,10,.12) 0%,rgba(10,10,10,.34) 40%,rgba(10,10,10,.84) 76%,#0a0a0a 100%),
+    linear-gradient(120deg, #14110c 0%, #14110c 100%) 0%,rgba(10,10,10,.34) 40%,rgba(10,10,10,.84) 76%,#0a0a0a 100%),
     radial-gradient(95% 70% at 40% 32%,transparent,rgba(0,0,0,.42))}
 
 .wrap{width:min(1080px,92vw);margin-inline:auto}
 
 /* 金の板 */
 .plate{
-  background:linear-gradient(180deg,rgba(29,26,21,.92),rgba(10,10,10,.94));
+  background:linear-gradient(120deg, #14110c 0%, #14110c 100%),rgba(10,10,10,.94));
   border:1px solid var(--line); border-radius:14px; box-shadow:var(--shadow);
   position:relative;
 }
@@ -120,7 +120,7 @@ header{position:sticky;top:0;z-index:20;backdrop-filter:blur(10px);
 .badge.dev{color:#ffd9a0;border-color:rgba(255,217,160,.35);background:rgba(192,57,43,.16)}
 h1{font-family:"Reggae One",serif;font-weight:400;font-size:clamp(2.6rem,7vw,4.2rem);
   line-height:1.06;letter-spacing:.04em;
-  background:linear-gradient(180deg,#fff3cf,var(--gold-l) 45%,var(--gold) 78%,#a67f16);
+  background:linear-gradient(120deg, #14110c 0%, #14110c 100%) 45%,var(--gold) 78%,#a67f16);
   -webkit-background-clip:text;background-clip:text;color:transparent;
   filter:drop-shadow(0 3px 0 rgba(0,0,0,.6))}
 h1 small{display:block;font-family:"Zen Kaku Gothic New",sans-serif;font-weight:700;
@@ -131,7 +131,7 @@ h1 small{display:block;font-family:"Zen Kaku Gothic New",sans-serif;font-weight:
 .lead{color:var(--cream-dim);font-size:1rem;max-width:36em}
 .cta{margin-top:1.9rem}
 .storebtn{display:inline-flex;flex-direction:column;gap:.15rem;padding:.9rem 1.6rem;border-radius:12px;
-  background:linear-gradient(180deg,#2a2620,#151310);border:1px solid var(--line);
+  background:linear-gradient(120deg, #14110c 0%, #14110c 100%);border:1px solid var(--line);
   color:var(--cream-dim);font-size:.95rem;font-weight:700;cursor:default}
 .storebtn b{color:var(--gold-l);font-size:1.02rem}
 .storebtn span{font-size:.76rem;font-weight:400;letter-spacing:.02em}
@@ -160,22 +160,22 @@ section{padding:3.6rem 0;scroll-margin-top:96px}
 .step{padding:1.3rem 1.1rem}
 .step .n{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;
   font-family:"Reggae One",serif;font-size:1rem;color:#100e0a;
-  background:linear-gradient(180deg,var(--gold-l),var(--gold));margin-bottom:.8rem}
+  background:linear-gradient(120deg, #14110c 0%, #14110c 100%),var(--gold));margin-bottom:.8rem}
 .step h4{font-size:1rem;font-weight:900;color:#ffe9a8;margin-bottom:.5rem}
 .step p{font-size:.86rem;color:var(--cream-dim)}
 .hands{display:flex;justify-content:center;gap:1.4rem;margin-top:2rem;flex-wrap:wrap}
 .hand{text-align:center;font-size:.82rem;color:var(--cream-dim)}
 .hand b{display:grid;place-items:center;width:64px;height:64px;border-radius:50%;margin:0 auto .5rem;
   font-family:"Reggae One",serif;font-size:.95rem;color:#fff;border:2px solid rgba(255,255,255,.28)}
-.hand.g b{background:linear-gradient(180deg,#d9534f,#8e2b23)}
-.hand.c b{background:linear-gradient(180deg,#4a90d9,#1f4f86)}
-.hand.p b{background:linear-gradient(180deg,#63bf67,#2c7031)}
+.hand.g b{background:linear-gradient(120deg, #14110c 0%, #14110c 100%)}
+.hand.c b{background:linear-gradient(120deg, #14110c 0%, #14110c 100%)}
+.hand.p b{background:linear-gradient(120deg, #14110c 0%, #14110c 100%)}
 
 /* 収録内容 */
 .specs{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1rem}
 .spec{padding:1.2rem .8rem;text-align:center}
 .spec .v{font-family:"Reggae One",serif;font-size:1.9rem;
-  background:linear-gradient(180deg,#fff3cf,var(--gold));-webkit-background-clip:text;
+  background:linear-gradient(120deg, #14110c 0%, #14110c 100%));-webkit-background-clip:text;
   background-clip:text;color:transparent}
 .spec .k{font-size:.82rem;color:var(--cream-dim);margin-top:.3rem}
 
@@ -208,7 +208,7 @@ section{padding:3.6rem 0;scroll-margin-top:96px}
 
 /* FAQ */
 details{border:1px solid var(--line);border-radius:10px;margin-bottom:.7rem;
-  background:linear-gradient(180deg,rgba(29,26,21,.8),rgba(10,10,10,.85))}
+  background:linear-gradient(120deg, #14110c 0%, #14110c 100%),rgba(10,10,10,.85))}
 summary{cursor:pointer;padding:.95rem 1.1rem;font-weight:700;font-size:.95rem;color:#ffe9a8;list-style:none}
 summary::-webkit-details-marker{display:none}
 summary::before{content:"Q";color:var(--gold);font-family:"Reggae One",serif;margin-right:.6rem}
@@ -220,7 +220,7 @@ details p{padding:.95rem 1.1rem;font-size:.9rem;color:var(--cream-dim)}
 .endcta h2{font-family:"Reggae One",serif;font-weight:400;font-size:clamp(1.3rem,4vw,1.9rem);color:#ffe9a8}
 .endcta p{color:var(--cream-dim);font-size:.92rem;margin:.9rem auto 1.6rem;max-width:34em}
 .btn{display:inline-block;padding:.85rem 1.8rem;border-radius:999px;font-weight:900;text-decoration:none;
-  background:linear-gradient(180deg,var(--gold-l),var(--gold));color:#100e0a;
+  background:linear-gradient(120deg, #14110c 0%, #14110c 100%),var(--gold));color:#100e0a;
   box-shadow:0 6px 18px rgba(201,162,39,.25)}
 .btn.ghost{background:transparent;color:var(--gold-l);border:1px solid var(--line);box-shadow:none;margin-left:.6rem}
 

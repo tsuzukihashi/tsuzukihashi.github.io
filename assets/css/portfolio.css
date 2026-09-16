@@ -20,7 +20,7 @@
 
 /* ========== Portfolio Hero ========== */
 .portfolio-hero {
-  background: linear-gradient(180deg, var(--color-accent) 0%, var(--color-background) 100%);
+  background: linear-gradient(120deg, #14110c 0%, #14110c 100%) 0%, var(--color-background) 100%);
   padding: 120px 24px 60px;
   text-align: center;
 }
@@ -222,7 +222,7 @@
 }
 
 .filter-clear:hover {
-  background: var(--neon-purple);
+  background: var(--color-ink);
   color: #fff;
 }
 
@@ -394,7 +394,7 @@
 
 .app-card-store:hover {
   transform: translate(-3px, -3px);
-  box-shadow: 9px 9px 0 var(--neon-purple);
+  box-shadow: 9px 9px 0 var(--color-ink);
 }
 
 /* App Header (Icon + Info + Download) */
@@ -463,7 +463,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 3px 3px 0 var(--neon-purple);
+  box-shadow: 3px 3px 0 var(--color-ink);
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
@@ -601,7 +601,7 @@
   object-fit: contain;
   border-radius: 12px;
   border: 2px solid var(--color-ink);
-  box-shadow: 8px 8px 0 var(--neon-purple);
+  box-shadow: 8px 8px 0 var(--color-ink);
   transform: scale(0.92);
   opacity: 0;
   transition: transform 0.25s ease, opacity 0.2s ease;
@@ -627,7 +627,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 3px 3px 0 var(--neon-purple);
+  box-shadow: 3px 3px 0 var(--color-ink);
   opacity: 0;
   transition: opacity 0.2s ease 0.1s, background 0.15s ease, color 0.15s ease;
 }
@@ -637,7 +637,7 @@
 }
 
 .lightbox-close:hover {
-  background: var(--neon-purple);
+  background: var(--color-ink);
   color: #fff;
 }
 
@@ -742,7 +742,7 @@
 }
 
 .app-icon-archived {
-  background: linear-gradient(135deg, var(--color-surface-2) 0%, var(--color-accent) 100%);
+  background: linear-gradient(120deg, #14110c 0%, #14110c 100%) 0%, var(--color-accent) 100%);
 }
 
 .icon-placeholder {
@@ -766,5 +766,5 @@
 
 .nav-link.active::after {
   width: 100%;
-  background: var(--neon-purple);
+  background: var(--color-ink);
 }

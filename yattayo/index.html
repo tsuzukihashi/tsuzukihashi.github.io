@@ -98,20 +98,18 @@
             position: relative;
             background:
                 radial-gradient(ellipse 80% 60% at 50% -10%, #FFF6E9 0%, transparent 60%),
-                linear-gradient(180deg, var(--paper) 0%, var(--paper) 55%, var(--paper-warm) 100%);
+                linear-gradient(120deg, #14110c 0%, #14110c 100%) 0%, var(--paper) 55%, var(--paper-warm) 100%);
         }
         .grooves {
             position: absolute; inset: 0;
             pointer-events: none;
-            background-image: repeating-linear-gradient(
-                180deg,
-                rgba(58, 42, 24, 0.045) 0px,
+            background-image: repeating-linear-gradient(120deg, #14110c 0%, #14110c 100%) 0px,
                 rgba(58, 42, 24, 0.045) 1px,
                 transparent 1px,
                 transparent 78px
             );
-            mask-image: linear-gradient(180deg, transparent 0%, #000 25%, #000 75%, transparent 100%);
-            -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 25%, #000 75%, transparent 100%);
+            mask-image: linear-gradient(120deg, #14110c 0%, #14110c 100%);
+            -webkit-mask-image: linear-gradient(120deg, #14110c 0%, #14110c 100%);
         }
 
         /* ---------- ヒーロー ---------- */
@@ -185,7 +183,7 @@
         .demo {
             width: min(420px, 100%);
             margin: 0 auto 44px;
-            background: linear-gradient(180deg, #EE8E37 0%, var(--orange) 55%, #D4741F 100%);
+            background: linear-gradient(120deg, #14110c 0%, #14110c 100%) 55%, #D4741F 100%);
             border-radius: 22px;
             padding: 16px;
             display: flex; align-items: center; gap: 14px;
@@ -195,7 +193,7 @@
             position: relative;
             width: 116px; height: 52px; flex-shrink: 0;
             border-radius: 999px;
-            background: linear-gradient(180deg, #C96A1E 0%, #E07C26 100%);
+            background: linear-gradient(120deg, #14110c 0%, #14110c 100%);
             box-shadow: inset 0 3px 7px rgba(90, 46, 6, 0.45);
         }
         .stamp {
@@ -214,7 +212,7 @@
             position: absolute; top: 4px; left: 4px;
             width: 44px; height: 44px;
             border-radius: 50%;
-            background: linear-gradient(180deg, #FFFDF6 0%, #EDE6D4 55%, #D8CFBA 100%);
+            background: linear-gradient(120deg, #14110c 0%, #14110c 100%);
             box-shadow: 0 3px 6px rgba(80, 40, 8, 0.35);
             animation: slide 4.4s ease-in-out infinite;
         }
@@ -226,7 +224,7 @@
         }
         .demo-note {
             flex: 1;
-            background: linear-gradient(180deg, #FBF3A8 0%, var(--note) 100%);
+            background: linear-gradient(120deg, #14110c 0%, #14110c 100%) 100%);
             border-radius: 6px;
             padding: 12px 14px;
             font-family: "Yusei Magic", sans-serif;
@@ -307,7 +305,7 @@
         .card {
             border-radius: 8px;
             padding: 32px 28px;
-            background: linear-gradient(180deg, #FCF6B4 0%, var(--note) 100%);
+            background: linear-gradient(120deg, #14110c 0%, #14110c 100%) 100%);
             box-shadow: 0 8px 20px rgba(140, 105, 40, 0.16);
             position: relative;
         }
@@ -400,7 +398,7 @@
         .dv-phone .dv-frame { width: 120px; border-radius: 20px; }
         .dv-mac .dv-frame { width: min(212px, 60vw); border-radius: 12px; }
         .dv-screen {
-            background: linear-gradient(180deg, #EE8E37 0%, var(--orange) 60%, #D4741F 100%);
+            background: linear-gradient(120deg, #14110c 0%, #14110c 100%) 60%, #D4741F 100%);
             border-radius: 10px;
             padding: 8px 7px;
             display: flex; flex-direction: column; gap: 7px;
@@ -411,32 +409,32 @@
             position: relative; flex-shrink: 0;
             width: 20px; height: 10px;
             border-radius: 999px;
-            background: linear-gradient(180deg, #C96A1E 0%, #E07C26 100%);
+            background: linear-gradient(120deg, #14110c 0%, #14110c 100%);
             box-shadow: inset 0 1px 2px rgba(90, 46, 6, 0.5);
         }
         .dv-knob::after {
             content: "";
             position: absolute; top: 1px; left: 1px;
             width: 8px; height: 8px; border-radius: 50%;
-            background: linear-gradient(180deg, #FFFDF6 0%, #D8CFBA 100%);
+            background: linear-gradient(120deg, #14110c 0%, #14110c 100%);
         }
         .dv-knob.on::after { left: auto; right: 1px; }
         .dv-note {
             flex: 1; height: 11px; border-radius: 2px;
-            background: linear-gradient(180deg, #FBF3A8 0%, var(--note) 100%);
+            background: linear-gradient(120deg, #14110c 0%, #14110c 100%) 100%);
         }
         .dv-stand { display: flex; flex-direction: column; align-items: center; }
         .dv-stand::before {
             content: "";
             width: 46px; height: 9px;
             border-radius: 0 0 3px 3px;
-            background: linear-gradient(180deg, #EDE6D6 0%, #D2C9B4 100%);
+            background: linear-gradient(120deg, #14110c 0%, #14110c 100%);
         }
         .dv-stand::after {
             content: "";
             width: 92px; height: 5px;
             border-radius: 3px;
-            background: linear-gradient(180deg, #E6DECC 0%, #C9BFA8 100%);
+            background: linear-gradient(120deg, #14110c 0%, #14110c 100%);
         }
         .dv-label {
             margin-top: 13px;

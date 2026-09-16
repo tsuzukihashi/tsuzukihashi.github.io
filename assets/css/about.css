@@ -10,10 +10,10 @@
   --ab-muted: #6c6356;
   --ab-border: #1411081a;
   --ab-purple: #8b3df5;
-  --ab-cyan: #0bb4c4;
-  --ab-pink: #ff3d7f;
-  --ab-yellow: #ffc107;
-  --ab-grad: linear-gradient(120deg, #8b3df5, #ff3d7f 55%, #ffc107);
+  --ab-cyan: #14110c;
+  --ab-pink: #14110c;
+  --ab-yellow: #14110c;
+  --ab-grad: linear-gradient(120deg, #14110c 0%, #14110c 100%);
 }
 
 /* Flip the base dark theme to a light pop theme for the About page */
@@ -39,9 +39,9 @@ body {
   overflow: hidden;
 }
 .about-hero .memory-shapes { opacity: 0.55; }
-.about-hero .memory-shape:nth-child(1) { background: radial-gradient(circle, rgba(139, 61, 245, 0.4), transparent 70%); }
-.about-hero .memory-shape:nth-child(2) { background: radial-gradient(circle, rgba(255, 61, 127, 0.34), transparent 70%); }
-.about-hero .memory-shape:nth-child(3) { background: radial-gradient(circle, rgba(255, 193, 7, 0.32), transparent 70%); }
+.about-hero .memory-shape:nth-child(1) { background: radial-gradient(circle, rgba(20,17,12,0.4), transparent 70%); }
+.about-hero .memory-shape:nth-child(2) { background: radial-gradient(circle, rgba(20,17,12,0.34), transparent 70%); }
+.about-hero .memory-shape:nth-child(3) { background: radial-gradient(circle, rgba(20,17,12,0.32), transparent 70%); }
 
 .about-hero-content {
   position: relative;
@@ -63,7 +63,7 @@ body {
   border-radius: 28px;
   overflow: hidden;
   border: 4px solid var(--ab-ink);
-  box-shadow: 10px 10px 0 var(--ab-purple);
+  box-shadow: 10px 10px 0 var(--ab-ink);
   background: #fff;
   rotate: -3deg;
 }
@@ -219,7 +219,7 @@ body {
   text-align: center;
   box-shadow: 6px 6px 0 var(--ab-ink);
 }
-.intro-stat:nth-child(1) { box-shadow: 6px 6px 0 var(--ab-purple); }
+.intro-stat:nth-child(1) { box-shadow: 6px 6px 0 var(--ab-ink); }
 .intro-stat:nth-child(2) { box-shadow: 6px 6px 0 var(--ab-cyan); }
 .intro-stat:nth-child(3) { box-shadow: 6px 6px 0 var(--ab-pink); }
 .intro-stat-icon { font-size: 2rem; margin-bottom: 0.4rem; }
@@ -244,7 +244,7 @@ body {
   padding: var(--space-md);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.career-item:hover { transform: translate(-3px, -3px); box-shadow: 8px 8px 0 var(--ab-purple); }
+.career-item:hover { transform: translate(-3px, -3px); box-shadow: 8px 8px 0 var(--ab-ink); }
 .career-item.current { border-color: var(--ab-purple); }
 .career-year {
   font-family: var(--font-impact);
@@ -279,7 +279,7 @@ body {
   background: var(--ab-ink);
   color: #fff;
 }
-.skill-category:nth-child(2) .skill-tag { background: var(--ab-purple); }
+.skill-category:nth-child(2) .skill-tag { background: var(--ab-ink); }
 .skill-category:nth-child(3) .skill-tag { background: var(--ab-cyan); }
 .skill-category:nth-child(4) .skill-tag { background: var(--ab-pink); }
 
@@ -294,7 +294,7 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .value-card:hover { transform: translateY(-6px); }
-.value-card:nth-child(1):hover { box-shadow: 0 12px 0 var(--ab-purple); }
+.value-card:nth-child(1):hover { box-shadow: 0 12px 0 var(--ab-ink); }
 .value-card:nth-child(2):hover { box-shadow: 0 12px 0 var(--ab-cyan); }
 .value-card:nth-child(3):hover { box-shadow: 0 12px 0 var(--ab-pink); }
 .value-card:nth-child(4):hover { box-shadow: 0 12px 0 var(--ab-yellow); }
