@@ -31,10 +31,8 @@ INK = (20, 17, 12)
 # 目以外の穴（足の隙間など）を目と取り違える絵がある。並べて見て決めた手当て。
 # 自動で出した倍率に、さらにこれを掛ける
 SCALE_FIX = {
-    "character-surprised.png": 2.00,   # 見開いた目が大きく、間隔を測り違える
-    "character-hang.png": 0.72,
-    "character-run.png": 0.80,
-    "character-tiny.png": 1.15,
+    # 横向きは目が近づくので、間隔から出した倍率が大きく出る。並べて見て合わせた
+    "character-run.png": 0.62,
 }
 
 

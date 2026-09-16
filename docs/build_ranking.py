@@ -304,7 +304,7 @@ HTML = f'''<!DOCTYPE html>
 
             <div class="rk-wrap">
                 <div class="rk-podiums">
-                <img class="rk-podium-char" src="/assets/images/character-cheer.png" alt="" width="329" height="323">
+                <img class="rk-podium-char" src="/assets/images/character-cheer.png" alt="" width="318" height="315">
 {chr(10).join(podium)}
                 </div>
 
@@ -326,7 +326,7 @@ HTML = f'''<!DOCTYPE html>
 
         <!-- Footer -->
         <footer class="footer">
-            <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="378" height="222">
+            <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
             <div class="footer-container">
                 <div class="footer-content">
                     <div class="footer-brand">

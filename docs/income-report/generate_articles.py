@@ -607,7 +607,7 @@ def build_article(i, m):
         </div>
 
         <nav class="post-navigation">
-            <img class="tk-char tk-char--post" src="/assets/images/character-hang.png" alt="" width="322" height="176">
+            <img class="tk-char tk-char--post" src="/assets/images/character-hang.png" alt="" width="381" height="208">
             {nav_prev}
             <a href="/blog/income-report/" class="nav-link-wrapper"><span>シリーズ一覧</span></a>
             {nav_next}
@@ -616,7 +616,7 @@ def build_article(i, m):
 
     <!-- Footer -->
     <footer class="footer">
-        <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="378" height="222">
+        <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">

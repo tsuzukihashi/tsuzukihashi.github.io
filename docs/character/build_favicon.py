@@ -78,15 +78,16 @@ def main():
     src = Image.open(SRC).convert("RGBA")
     os.makedirs(ICONS, exist_ok=True)
 
-    # 16pxは目を太らせた版から作る。広げすぎると2つの目がくっつくので5px
-    small = widen_eyes(src, grow=5)
+    # 走っている絵は目が頭の右端にあり、16pxでは何をしても背景の縁に溶けて消える。
+    # 穴を広げると縁が欠けて見えるだけなので、この大きさでは素のシルエットで出す。
+    small = src
     flatten(small, 16, 0).save(os.path.join(ICONS, "favicon-16x16.png"))
     flatten(src, 32, 1).save(os.path.join(ICONS, "favicon-32x32.png"))
     flatten(src, 180, 14).save(os.path.join(ICONS, "apple-touch-icon.png"))
 
     # .ico は16/32/48をまとめる。48も目を少し広げておく
     tmp = []
-    for size, img, pad in ((16, small, 0), (32, src, 1), (48, widen_eyes(src, 4), 2)):
+    for size, img, pad in ((16, small, 0), (32, src, 1), (48, src, 2)):
         p = os.path.join(ICONS, f"_ico{size}.png")
         flatten(img, size, pad).save(p)
         tmp.append(p)
