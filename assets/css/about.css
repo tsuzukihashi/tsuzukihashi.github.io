@@ -38,10 +38,10 @@ body {
   padding: 150px var(--space-xl) var(--space-xl);
   overflow: hidden;
 }
-.about-hero .memory-shapes { opacity: 0.55; }
-.about-hero .memory-shape:nth-child(1) { background: radial-gradient(circle, rgba(20,17,12,0.4), transparent 70%); }
-.about-hero .memory-shape:nth-child(2) { background: radial-gradient(circle, rgba(20,17,12,0.34), transparent 70%); }
-.about-hero .memory-shape:nth-child(3) { background: radial-gradient(circle, rgba(20,17,12,0.32), transparent 70%); }
+.about-hero .glow-shapes { opacity: 0.55; }
+.about-hero .glow-shape:nth-child(1) { background: radial-gradient(circle, rgba(20,17,12,0.4), transparent 70%); }
+.about-hero .glow-shape:nth-child(2) { background: radial-gradient(circle, rgba(20,17,12,0.34), transparent 70%); }
+.about-hero .glow-shape:nth-child(3) { background: radial-gradient(circle, rgba(20,17,12,0.32), transparent 70%); }
 
 .about-hero-content {
   position: relative;

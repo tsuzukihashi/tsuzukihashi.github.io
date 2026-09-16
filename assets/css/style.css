@@ -8,7 +8,7 @@
 }
 
 :root {
-    /* Light pop palette (synced with memories-tech.css) */
+    /* Light pop palette (synced with tsuzukit.css) */
     --color-background: #f6f2ea;
     --color-surface: #ffffff;
     --color-surface-2: #efe9dd;
@@ -2816,7 +2816,7 @@ img:not(.profile-image) {
 
 /* ============================================================
    BRIGHT POP THEME — overrides for blog & app pages
-   (mirrors memories-tech.css so style.css pages match the site)
+   (mirrors tsuzukit.css so style.css pages match the site)
    ============================================================ */
 
 body { font-family: var(--font-family); }

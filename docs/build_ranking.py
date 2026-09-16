@@ -128,7 +128,7 @@ HTML = f'''<!DOCTYPE html>
             rel="stylesheet">
 
         <!-- CSS -->
-        <link rel="stylesheet" href="../../assets/css/memories-tech.css">
+        <link rel="stylesheet" href="../../assets/css/tsuzukit.css">
 
         <!-- Favicon -->
         <link rel="icon" href="../../favicon.ico">

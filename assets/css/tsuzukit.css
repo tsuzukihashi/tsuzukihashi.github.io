@@ -744,11 +744,11 @@ strong { color: var(--color-primary); font-weight: 700; }
 }
 
 /* ========== Floating shapes container (pop glows) ========== */
-.memory-shapes { position: absolute; inset: 0; overflow: hidden; pointer-events: none; z-index: 0; }
-.memory-shape { position: absolute; border-radius: 50%; filter: blur(90px); opacity: 0.4; }
-.memory-shape:nth-child(1) { width: 380px; height: 380px; top: -80px; left: -60px; background: radial-gradient(circle, rgba(20,17,12,.4), transparent 70%); }
-.memory-shape:nth-child(2) { width: 320px; height: 320px; bottom: -60px; right: 10%; background: radial-gradient(circle, rgba(20,17,12,.36), transparent 70%); }
-.memory-shape:nth-child(3) { width: 280px; height: 280px; top: 40%; right: -80px; background: radial-gradient(circle, rgba(20,17,12,.32), transparent 70%); }
+.glow-shapes { position: absolute; inset: 0; overflow: hidden; pointer-events: none; z-index: 0; }
+.glow-shape { position: absolute; border-radius: 50%; filter: blur(90px); opacity: 0.4; }
+.glow-shape:nth-child(1) { width: 380px; height: 380px; top: -80px; left: -60px; background: radial-gradient(circle, rgba(20,17,12,.4), transparent 70%); }
+.glow-shape:nth-child(2) { width: 320px; height: 320px; bottom: -60px; right: 10%; background: radial-gradient(circle, rgba(20,17,12,.36), transparent 70%); }
+.glow-shape:nth-child(3) { width: 280px; height: 280px; top: 40%; right: -80px; background: radial-gradient(circle, rgba(20,17,12,.32), transparent 70%); }
 
 /* ========== Animations ========== */
 @keyframes scrollRight { 0% { transform: translateX(-50%); } 100% { transform: translateX(0); } }
