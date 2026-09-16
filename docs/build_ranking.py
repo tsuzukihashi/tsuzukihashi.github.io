@@ -304,7 +304,7 @@ HTML = f'''<!DOCTYPE html>
 
             <div class="rk-wrap">
                 <div class="rk-podiums">
-                <img class="rk-podium-char" src="/assets/images/character-peek.png" alt="" width="458" height="312">
+                <img class="rk-podium-char" src="/assets/images/character-wink.png" alt="" width="458" height="312">
 {chr(10).join(podium)}
                 </div>
 

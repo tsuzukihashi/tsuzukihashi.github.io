@@ -256,8 +256,8 @@
 .no-results-char {
   display: block;
   margin: 0 auto 14px;
-  width: 96px;
-  height: 96px;
+  width: 112px;
+  height: auto;
   opacity: 0.9;
 }
 
