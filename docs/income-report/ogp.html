@@ -14,10 +14,7 @@
   :root {
     --ab-bg: #f6f2ea;
     --ab-ink: #14110c;
-    --ab-purple: #8b3df5;
-    --ab-cyan: #0bb4c4;
-    --ab-pink: #ff3d7f;
-    --ab-yellow: #ffc107;
+    --ab-purple: #8b3df5;   /* サイトで唯一残しているアクセント */
     --font-impact: 'Anton', 'Noto Sans JP', sans-serif;
     --font-accent: 'Saira Condensed', 'Noto Sans JP', sans-serif;
     --font-jp: 'Noto Sans JP', sans-serif;
@@ -31,11 +28,6 @@
     position: relative;
     overflow: hidden;
   }
-  .bg-glow {
-    position: absolute; top: -220px; left: -180px;
-    width: 760px; height: 760px; border-radius: 50%;
-    background: radial-gradient(circle, rgba(139,61,245,0.30) 0%, rgba(11,180,196,0.12) 45%, rgba(246,242,234,0) 70%);
-  }
   .bg-dots {
     position: absolute; inset: 0;
     background-image: radial-gradient(rgba(20,17,12,0.16) 1.4px, transparent 1.4px);
@@ -44,7 +36,7 @@
   .frame { position: relative; padding: 52px 64px; height: 100%; display: flex; flex-direction: column; }
 
   .brand { display: flex; align-items: center; gap: 14px; }
-  .brand img { width: 52px; height: 52px; border-radius: 14px; display: block; }
+  .brand img { width: 54px; height: 54px; display: block; }
   .brand span {
     font-family: var(--font-accent); font-style: italic; font-weight: 800;
     font-size: 27px; letter-spacing: 0.10em;
@@ -67,7 +59,7 @@
   .mom {
     display: inline-flex; align-items: baseline; gap: 10px; margin-top: 16px;
     background: #fff; border: 2px solid var(--ab-ink); border-radius: 999px;
-    box-shadow: 5px 5px 0 var(--ab-yellow); padding: 7px 20px;
+    box-shadow: 5px 5px 0 var(--ab-ink); padding: 7px 20px;
   }
   .mom b { font-family: var(--font-accent); font-style: italic; font-size: 25px; }
   .mom small { font-family: var(--font-jp); font-weight: 700; font-size: 15px; color: #57514a; }
@@ -78,9 +70,7 @@
     background: #fff; border: 2px solid var(--ab-ink); border-radius: 16px;
     padding: 13px 20px; display: flex; align-items: center; justify-content: space-between;
   }
-  .card:nth-child(1) { box-shadow: 6px 6px 0 var(--ab-purple); }
-  .card:nth-child(2) { box-shadow: 6px 6px 0 var(--ab-cyan); }
-  .card:nth-child(3) { box-shadow: 6px 6px 0 var(--ab-pink); }
+  .card { box-shadow: 6px 6px 0 var(--ab-ink); }
   .card em {
     font-family: var(--font-accent); font-style: italic; font-weight: 800;
     font-size: 17px; letter-spacing: 0.06em; color: #57514a; text-transform: uppercase;
@@ -95,11 +85,10 @@
 </style>
 </head>
 <body>
-  <div class="bg-glow"></div>
   <div class="bg-dots"></div>
   <div class="frame">
     <header class="brand">
-      <img src="/assets/icons/apple-touch-icon.png" alt="">
+      <img src="/assets/images/logo-mark.png" alt="">
       <span>TSUZUKIT</span>
       <span class="series">限界個人開発者の月収１０００万円計画</span>
     </header>

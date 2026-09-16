@@ -108,6 +108,18 @@ http://localhost:8899/docs/income-report/ogp.html?ym=2026年8月&total=494,888&m
 
 - 金額の桁が増えてもフォントサイズが自動で縮む。前月比なし・Playなしの号にも対応済み
 - 撮る前にビューポートのリサイズを忘れない。号ごとに画像の位置がずれる
+- **渡す数値は `generate_articles.py` の MONTHS から取る。** 手打ちすると記事と画像がずれる:
+
+```python
+import ast, io
+s = io.open("generate_articles.py", encoding="utf-8").read()
+start = s.index("MONTHS = ["); end = s.index("\n]\n", start) + 2
+MONTHS = ast.literal_eval(s[start:end].split("=", 1)[1].strip())
+```
+
+- 全号まとめて撮り直したら、`magick montage ir-*.png -tile 2x5 -geometry 600x315+6+6` で一覧にして目視する
+- デザインはクリーム地に黒。**虹グラデも色違いのベタ影も使わない**（紫だけがサイト唯一のアクセント。月のラベルと達成率バーにだけ乗せる）
+- トップ・About・Blog・Contact・Portfolio のOGPは別テンプレート `docs/ogp-site.html`。各ページに渡す値は同ファイルのコメントにある
 
 ### 6. 手動更新ファイル
 

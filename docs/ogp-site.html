@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>OGP generator - サイト共通</title>
+<!--
+  トップ・About・Blog・Contact・Portfolio のOGP画像を作るテンプレート。
+  Playwrightで 1200x630 のビューポートに合わせてスクリーンショットを撮る。
+
+  パラメータ
+    t1   1行目の見出し
+    t2   2行目の見出し（省略可）
+    sub  見出しの下の一行
+    url  左下に出すURL
+    fs   見出しのフォントサイズ(px)。和文は詰まるので個別に渡す。既定 104
+
+  作り直しかた
+    1. リポジトリのルートで簡易サーバを立てる（python3 -m http.server 8898）
+    2. Playwrightのビューポートを 1200x630 にする
+    3. 下の5ページぶんを開いてスクリーンショットを撮り、assets/images/ogp/ に同名で置く
+
+  各ページに渡す値（2026-09-16時点）
+    home      t1=誰も作らないものを、  t2=まじめに。        sub=iOS Developer & Creator — 續橋 涼   url=tsuzukit.com            fs=92
+    about     t1=SERIOUSLY           t2=SILLY.           sub=About — 續橋 涼 / tsuzuki817       url=tsuzukit.com/about
+    blog      t1=開発の裏側と         t2=数字のぜんぶ       sub=Blog — 個人開発の記録と毎月の収益    url=tsuzukit.com/blog       fs=96
+    contact   t1=CONTACT.                                sub=お仕事の相談、受けつけています        url=tsuzukit.com/contact
+    portfolio t1=74 APPS             t2=ON THE APP STORE  sub=10年間の個人開発 — Portfolio        url=tsuzukit.com/portfolio  fs=88
+
+  アプリ本数が変わったら portfolio の t1 も直すこと。
+-->
+<!--
+  例: /docs/ogp-site.html?t1=%E8%AA%B0%E3%82%82%E4%BD%9C%E3%82%89%E3%81%AA%E3%81%84%E3%82%82%E3%81%AE%E3%82%92%E3%80%81&t2=%E3%81%BE%E3%81%98%E3%82%81%E3%81%AB%E3%80%82&sub=iOS%20Developer%20%26%20Creator%20%E2%80%94%20%E7%B6%9A%E6%A9%8B%20%E6%B6%BC&url=tsuzukit.com&fs=92
+-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Saira+Condensed:wght@600;700;800&family=Noto+Sans+JP:wght@500;700;900&display=swap">
+<style>
+  :root {
+    --bg: #f6f2ea;
+    --ink: #14110c;
+    --muted: #57514a;
+    --font-impact: 'Anton', 'Noto Sans JP', sans-serif;
+    --font-accent: 'Saira Condensed', 'Noto Sans JP', sans-serif;
+    --font-jp: 'Noto Sans JP', sans-serif;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1200px; height: 630px; }
+  body {
+    background-color: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-jp);
+    position: relative;
+    overflow: hidden;
+  }
+  .bg-dots {
+    position: absolute; inset: 0;
+    background-image: radial-gradient(rgba(20,17,12,0.16) 1.4px, transparent 1.4px);
+    background-size: 26px 26px;
+  }
+  .frame { position: relative; padding: 52px 64px; height: 100%; display: flex; flex-direction: column; }
+
+  .brand { display: flex; align-items: center; gap: 14px; }
+  .brand img { width: 54px; height: 54px; display: block; }
+  .brand span {
+    font-family: var(--font-accent); font-style: italic; font-weight: 800;
+    font-size: 27px; letter-spacing: 0.10em;
+  }
+
+  .main { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+  .title {
+    font-family: var(--font-impact); font-style: italic;
+    font-size: 104px; line-height: 1.02; letter-spacing: -0.005em;
+  }
+  .title.jp { font-family: var(--font-jp); font-weight: 900; font-style: normal; letter-spacing: -0.02em; }
+  .sub {
+    margin-top: 26px;
+    font-family: var(--font-accent); font-style: italic; font-weight: 800;
+    font-size: 30px; letter-spacing: 0.02em; color: var(--muted);
+  }
+
+  .foot { display: flex; align-items: flex-end; }
+  .site {
+    font-family: var(--font-accent); font-style: italic; font-weight: 700;
+    font-size: 22px; letter-spacing: 0.04em; color: var(--muted);
+  }
+
+  /* 右下から顔を出すやつ。サイト本体のフッターと同じ扱い */
+  .peek {
+    position: absolute; right: 62px; bottom: 0;
+    width: 250px; height: auto; display: block;
+  }
+</style>
+</head>
+<body>
+<div class="bg-dots"></div>
+<div class="frame">
+  <div class="brand">
+    <img src="/assets/images/logo-mark.png" alt="">
+    <span>TSUZUKIT</span>
+  </div>
+
+  <div class="main">
+    <div class="title" id="title"></div>
+    <div class="sub" id="sub"></div>
+  </div>
+
+  <div class="foot">
+    <div class="site" id="site"></div>
+  </div>
+</div>
+<img class="peek" src="/assets/images/character-peek.png" alt="">
+
+<script>
+  const q = new URLSearchParams(location.search);
+  const t1 = q.get('t1') || '';
+  const t2 = q.get('t2') || '';
+  const titleEl = document.getElementById('title');
+  titleEl.innerHTML = t2 ? (t1 + '<br>' + t2) : t1;
+  // 和文は Anton が効かないので、日本語が混じる見出しだけ和文ウェイトに切り替える
+  if (/[ぁ-んァ-ヶ一-龥]/.test(t1 + t2)) titleEl.classList.add('jp');
+  const fs = q.get('fs');
+  if (fs) titleEl.style.fontSize = fs + 'px';
+  document.getElementById('sub').textContent = q.get('sub') || '';
+  document.getElementById('site').textContent = q.get('url') || 'tsuzukit.com';
+</script>
+</body>
+</html>
