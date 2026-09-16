@@ -355,7 +355,19 @@ body {
 .message-text { font-size: 1.1rem; color: var(--ab-muted); line-height: 1.95; }
 .message-text.emphasis { font-family: var(--font-display); font-style: italic; font-size: 1.4rem; color: var(--ab-ink); text-transform: none; }
 .message-text.emphasis strong { background: linear-gradient(transparent 60%, rgba(255, 193, 7, 0.5) 60%); }
-.message-signature { margin-top: var(--space-lg); }
+.message-signature { margin-top: var(--space-lg); position: relative; }
+/* 署名の横で話を聞いているやつ */
+.tk-char--sign {
+  position: absolute;
+  right: 0;
+  bottom: -6px;
+  width: 78px;
+  height: auto;
+  display: block;
+  pointer-events: none;
+  user-select: none;
+}
+@media (max-width: 768px) { .tk-char--sign { width: 56px; right: 4px; } }
 .message-signature p { margin-bottom: 0.2rem; color: var(--ab-muted); }
 .signature-name { font-family: var(--font-display); font-style: italic; font-size: 1.6rem; color: var(--ab-ink); }
 

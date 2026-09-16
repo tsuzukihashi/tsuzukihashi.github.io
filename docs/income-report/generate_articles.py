@@ -607,6 +607,7 @@ def build_article(i, m):
         </div>
 
         <nav class="post-navigation">
+            <img class="tk-char tk-char--post" src="/assets/images/character-peek.png" alt="" width="458" height="312">
             {nav_prev}
             <a href="/blog/income-report/" class="nav-link-wrapper"><span>シリーズ一覧</span></a>
             {nav_next}

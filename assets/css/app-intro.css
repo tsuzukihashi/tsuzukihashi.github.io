@@ -358,11 +358,26 @@
 
 /* ========== Post Footer ========== */
 .app-post-footer {
+    position: relative;
     max-width: 800px;
     margin: 0 auto;
     padding: 2rem 1.5rem;
     border-top: 2px solid var(--color-border, rgba(20, 17, 8, 0.14));
 }
+
+/* 読み終わりの区切り線に腰かけるキャラ。フッターのやつと縦に並ばないよう左に置く */
+.tk-char--post {
+    position: absolute;
+    left: 28px;
+    bottom: 100%;
+    width: 74px;
+    height: auto;
+    display: block;
+    pointer-events: none;
+    user-select: none;
+}
+
+@media (max-width: 768px) { .tk-char--post { left: 16px; width: 56px; } }
 
 .app-post-footer a {
     color: var(--color-secondary, #6c6356);

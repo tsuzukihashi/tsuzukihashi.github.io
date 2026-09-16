@@ -766,6 +766,20 @@ strong { color: var(--color-primary); font-weight: 700; }
 .fade-in { opacity: 0; }
 .fade-in.animated { animation: fadeInUp 0.8s ease forwards; }
 
+/* ========== キャラ（あちこちの縁から顔を出す） ========== */
+.tk-char {
+  position: absolute;
+  display: block;
+  height: auto;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* トップのCTAブロックの上辺 */
+.cta-split { position: relative; }
+.tk-char--cta { right: 7%; bottom: 100%; width: 96px; }
+@media (max-width: 768px) { .tk-char--cta { right: 20px; width: 64px; } }
+
 /* ========== Footer (kept dark) ========== */
 .footer {
   background: var(--color-ink);

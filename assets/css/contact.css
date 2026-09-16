@@ -460,12 +460,27 @@
 }
 
 .work-together-items {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: var(--space-md);
   max-width: 1100px;
   margin: 0 auto;
 }
+
+/* 一緒に作るカードの裏から覗いているやつ */
+.tk-char--work {
+  position: absolute;
+  left: 22px;
+  bottom: 100%;
+  width: 78px;
+  height: auto;
+  display: block;
+  pointer-events: none;
+  user-select: none;
+}
+
+@media (max-width: 768px) { .tk-char--work { left: 14px; width: 58px; } }
 
 .work-item {
   text-align: center;

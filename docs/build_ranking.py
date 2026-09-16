@@ -186,7 +186,12 @@ HTML = f'''<!DOCTYPE html>
 
             .rk-total em {{ display: block; margin-top: 8px; font-style: normal; font-size: 0.78rem; color: var(--rk-muted); }}
             .rk-sub {{ display: block; font-size: 0.72rem; color: var(--rk-muted); margin-top: 2px; }}
-            .rk-podiums {{ display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin: 10px 0 50px; }}
+            .rk-podiums {{ display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin: 10px 0 50px; position: relative; }}
+            /* 1位の表彰台の裏から覗いているやつ */
+            .rk-podium-char {{
+                position: absolute; left: 6px; bottom: 100%; width: 74px; height: auto;
+                display: block; pointer-events: none;
+            }}
             .rk-podium {{
                 background: #fff; border: 2px solid var(--rk-ink); border-radius: 20px;
                 padding: 26px 18px 22px; text-align: center; text-decoration: none; color: inherit;
@@ -299,6 +304,7 @@ HTML = f'''<!DOCTYPE html>
 
             <div class="rk-wrap">
                 <div class="rk-podiums">
+                <img class="rk-podium-char" src="/assets/images/character-peek.png" alt="" width="458" height="312">
 {chr(10).join(podium)}
                 </div>
 
@@ -320,11 +326,12 @@ HTML = f'''<!DOCTYPE html>
 
         <!-- Footer -->
         <footer class="footer">
+            <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="458" height="312">
             <div class="footer-container">
                 <div class="footer-content">
                     <div class="footer-brand">
                         <a href="/" class="footer-logo">TsuzuKit</a>
-                        <p class="footer-tagline">Memories × Technology</p>
+                        <p class="footer-tagline">Seriously Silly</p>
                     </div>
                     <div class="footer-links">
                         <a href="/portfolio/">Portfolio</a>

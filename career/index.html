@@ -80,7 +80,9 @@
             }
             .cr-summary p + p { margin-top: 14px; }
 
-            .cr-facts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin: 26px 0 0; }
+            .cr-facts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin: 58px 0 0; position: relative; }
+            /* 数字のカードの裏から覗いているやつ */
+            .cr-facts-char { position: absolute; right: 18px; bottom: 100%; width: 72px; height: auto; display: block; pointer-events: none; }
             .cr-fact {
                 background: #fff; border: 2px solid var(--cr-ink); border-radius: 16px;
                 padding: 16px 12px; text-align: center;
@@ -220,6 +222,7 @@
                     </div>
 
                     <div class="cr-facts">
+                    <img class="cr-facts-char" src="/assets/images/character-peek.png" alt="" width="458" height="312">
                         <div class="cr-fact"><b>7年</b><span>iOSエンジニア</span></div>
                         <div class="cr-fact"><b>10年</b><span>個人開発</span></div>
                         <div class="cr-fact"><b>100+</b><span>リリースしたアプリ</span></div>

@@ -114,6 +114,7 @@
 
 /* ========== Filter Bar ========== */
 .filter-bar {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
@@ -125,6 +126,20 @@
   border: 2px solid var(--color-ink);
   box-shadow: 4px 4px 0 var(--color-ink);
 }
+
+/* 絞り込みバーの上から覗いているやつ */
+.tk-char--filter {
+  position: absolute;
+  right: 26px;
+  bottom: 100%;
+  width: 76px;
+  height: auto;
+  display: block;
+  pointer-events: none;
+  user-select: none;
+}
+
+@media (max-width: 768px) { .tk-char--filter { right: 12px; width: 56px; } }
 
 .filter-search {
   flex: 1;

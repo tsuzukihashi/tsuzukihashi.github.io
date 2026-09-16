@@ -807,7 +807,21 @@
 }
 
 /* ========== Blog Post Navigation ========== */
+/* 読み終わりの区切り線に腰かけるキャラ。フッターのやつと縦に並ばないよう左に置く */
+.tk-char--post {
+  position: absolute;
+  left: 28px;
+  bottom: 100%;
+  width: 74px;
+  height: auto;
+  display: block;
+  pointer-events: none;
+  user-select: none;
+}
+@media (max-width: 768px) { .tk-char--post { left: 16px; width: 56px; } }
+
 .post-navigation {
+  position: relative;
   max-width: 800px;
   margin: var(--spacing-3xl, 4rem) auto 0;
   padding: var(--spacing-xl, 2rem) var(--spacing-lg, 1.5rem) 0;
