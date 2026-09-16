@@ -154,16 +154,19 @@ strong { color: var(--color-primary); font-weight: 700; }
 .text-purple { color: var(--neon-purple); }
 
 /* ========== Lightning bolt motif ========== */
+/* ブランドマーク（積み重ね）。文字色に追従するので、明るい面でも暗い帯でも使える */
+.mark,
 .bolt {
   display: inline-block;
-  width: 0.62em;
+  width: 1em;
   height: 1em;
-  vertical-align: -0.08em;
-  background: var(--color-ink);
-  clip-path: polygon(58% 0, 12% 56%, 44% 56%, 30% 100%, 92% 38%, 52% 38%, 74% 0);
+  vertical-align: -0.16em;
+  background: currentColor;
+  -webkit-mask: url("/assets/images/mark-stack.svg") center / contain no-repeat;
+  mask: url("/assets/images/mark-stack.svg") center / contain no-repeat;
 }
-.bolt--purple { background: var(--color-ink); }
-.bolt--pink { background: var(--neon-pink); }
+.bolt--purple,
+.bolt--pink { background: currentColor; }
 
 /* Vertical rotated label (e.g. WORKS / SCROLL) */
 .label-vertical {
@@ -432,7 +435,16 @@ strong { color: var(--color-primary); font-weight: 700; }
   text-transform: uppercase;
   color: var(--neon-purple);
 }
-.section-badge::before { content: '⚡ '; }
+.section-badge::before {
+  content: '';
+  display: inline-block;
+  width: 0.85em; height: 0.85em;
+  margin-right: 0.4em;
+  vertical-align: -0.1em;
+  background: currentColor;
+  -webkit-mask: url("/assets/images/mark-stack.svg") center / contain no-repeat;
+  mask: url("/assets/images/mark-stack.svg") center / contain no-repeat;
+}
 
 .section-title { margin-bottom: var(--space-md); color: var(--color-primary); }
 

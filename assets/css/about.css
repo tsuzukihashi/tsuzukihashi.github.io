@@ -158,12 +158,13 @@ body {
   width: 62px;
   height: 62px;
   border-radius: 50%;
-  background: var(--ab-grad);
+  background: var(--ab-ink);
+  color: #fff;               /* 中のマークは黒地に白で置く */
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
-  box-shadow: 0 6px 18px rgba(139, 61, 245, 0.4);
+  box-shadow: 0 6px 18px rgba(20, 17, 12, 0.28);
 }
 
 /* ========== Section labels (English overline) ========== */

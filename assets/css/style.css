@@ -2790,8 +2790,12 @@ img:not(.profile-image) {
 
 /* GitHub Icon */
 .social-link.github-icon::before {
-    content: "⚡";
-    font-size: 16px;
+    content: "";
+    display: inline-block;
+    width: 16px; height: 16px;
+    background: currentColor;
+    -webkit-mask: url("/assets/images/mark-stack.svg") center / contain no-repeat;
+    mask: url("/assets/images/mark-stack.svg") center / contain no-repeat;
 }
 
 /* Footer social links specific styling */
