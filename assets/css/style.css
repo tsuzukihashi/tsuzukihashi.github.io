@@ -2933,6 +2933,18 @@ h1, h2, h3, h4,
     height: 4px;
     background: var(--grad-neon);
 }
+/* フッターの縁から顔を出すやつ */
+.footer-peek {
+    position: absolute;
+    bottom: 100%;
+    right: clamp(20px, 7vw, 132px);
+    width: 100px;
+    height: auto;
+    display: block;
+    pointer-events: none;
+    user-select: none;
+}
+@media (max-width: 768px) { .footer-peek { width: 62px; right: 20px; } }
 .footer p, .footer-copyright, .footer-tagline, .footer-bottom p { color: rgba(255, 255, 255, 0.7); }
 .footer a, .footer-nav a, .footer-link { color: rgba(255, 255, 255, 0.6); }
 .footer a:hover, .footer-nav a:hover, .footer-link:hover { color: var(--neon-pink); }

@@ -776,6 +776,18 @@ strong { color: var(--color-primary); font-weight: 700; }
   border-top: none;
 }
 .footer::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: var(--grad-neon); }
+
+/* フッターの縁から顔を出すやつ。全ページに出る */
+.footer-peek {
+  position: absolute;
+  bottom: 100%;
+  right: clamp(20px, 7vw, 132px);
+  width: 100px;
+  height: auto;
+  display: block;
+  pointer-events: none;
+  user-select: none;
+}
 .footer-content { max-width: 1440px; margin: 0 auto; padding: 0 var(--space-xl); }
 .footer-copyright { color: rgba(255, 255, 255, 0.85); margin: var(--space-md) 0 var(--space-sm); font-size: 0.85rem; }
 .footer-tagline { color: rgba(255, 255, 255, 0.55); font-size: 0.85rem; margin-bottom: var(--space-md); font-style: italic; }
@@ -847,6 +859,7 @@ strong { color: var(--color-primary); font-weight: 700; }
 
   .section { padding: var(--space-xl) 0; }
   .icon-row img { width: 60px; height: 60px; }
+  .footer-peek { width: 62px; right: 20px; }
 }
 
 @media (max-width: 480px) {

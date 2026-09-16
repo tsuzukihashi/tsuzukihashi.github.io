@@ -231,8 +231,9 @@
         noResultsEl = document.createElement('div');
         noResultsEl.className = 'no-results';
         noResultsEl.innerHTML = `
-          <h3>検索結果がありません</h3>
-          <p>別のキーワードやカテゴリで検索してみてください</p>
+          <img class="no-results-char" src="/assets/images/character.png" alt="" width="96" height="96">
+          <h3>見つかりませんでした</h3>
+          <p>別のことばか、ほかのカテゴリで探してみてください</p>
         `;
         appGrid.parentNode.insertBefore(noResultsEl, appGrid.nextSibling);
       }
