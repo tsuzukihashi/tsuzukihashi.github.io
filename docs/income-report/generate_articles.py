@@ -615,11 +615,12 @@ def build_article(i, m):
 
     <!-- Footer -->
     <footer class="footer">
+        <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="458" height="312">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
                     <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
-                    <p class="footer-description">思い出&times;テクノロジーで新しい価値を創造</p>
+                    <p class="footer-description">誰も作らないものを、まじめに作る</p>
                 </div>
                 <div class="footer-nav">
                     <a href="/legal/privacy-policy.html">プライバシーポリシー</a>
