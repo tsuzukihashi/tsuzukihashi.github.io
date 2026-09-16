@@ -231,7 +231,7 @@
         noResultsEl = document.createElement('div');
         noResultsEl.className = 'no-results';
         noResultsEl.innerHTML = `
-          <img class="no-results-char" src="/assets/images/character-surprised.png" alt="" width="458" height="312">
+          <img class="no-results-char" src="/assets/images/character-surprised.png" alt="" width="311" height="436">
           <h3>見つかりませんでした</h3>
           <p>別のことばか、ほかのカテゴリで探してみてください</p>
         `;

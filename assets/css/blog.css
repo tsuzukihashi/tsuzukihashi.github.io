@@ -812,13 +812,13 @@
   position: absolute;
   left: 28px;
   bottom: 100%;
-  width: 74px;
+  width: 108px;
   height: auto;
   display: block;
   pointer-events: none;
   user-select: none;
 }
-@media (max-width: 768px) { .tk-char--post { left: 16px; width: 56px; } }
+@media (max-width: 768px) { .tk-char--post { left: 16px; width: 78px; } }
 
 .post-navigation {
   position: relative;

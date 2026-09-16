@@ -2947,7 +2947,7 @@ h1, h2, h3, h4,
     position: absolute;
     bottom: 100%;
     right: clamp(20px, 7vw, 132px);
-    width: 100px;
+    width: 112px;
     height: auto;
     display: block;
     pointer-events: none;

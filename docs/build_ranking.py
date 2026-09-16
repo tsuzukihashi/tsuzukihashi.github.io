@@ -189,7 +189,7 @@ HTML = f'''<!DOCTYPE html>
             .rk-podiums {{ display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin: 10px 0 50px; position: relative; }}
             /* 1位の表彰台の裏から覗いているやつ */
             .rk-podium-char {{
-                position: absolute; left: 6px; bottom: 100%; width: 74px; height: auto;
+                position: absolute; left: 6px; bottom: 100%; width: 94px; height: auto;
                 display: block; pointer-events: none;
             }}
             .rk-podium {{
@@ -304,7 +304,7 @@ HTML = f'''<!DOCTYPE html>
 
             <div class="rk-wrap">
                 <div class="rk-podiums">
-                <img class="rk-podium-char" src="/assets/images/character-wink.png" alt="" width="458" height="312">
+                <img class="rk-podium-char" src="/assets/images/character-cheer.png" alt="" width="329" height="323">
 {chr(10).join(podium)}
                 </div>
 
@@ -326,7 +326,7 @@ HTML = f'''<!DOCTYPE html>
 
         <!-- Footer -->
         <footer class="footer">
-            <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="458" height="312">
+            <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="378" height="222">
             <div class="footer-container">
                 <div class="footer-content">
                     <div class="footer-brand">
