@@ -41,7 +41,7 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8240751277462688"
         crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="blog-index">
     <!-- Navigation -->
     <nav class="nav" id="nav">
         <div class="nav-container">
@@ -93,46 +93,6 @@
         </div>
     </section>
 
-    <!-- Featured Post -->
-    <section class="section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Featured</span>
-                <h2 class="section-title">注目の記事</h2>
-            </div>
-            
-            <article class="featured-post">
-                <div class="featured-post-image">
-                    <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: linear-gradient(120deg, #14110c 0%, #14110c 100%);">
-                        <span style="font-size: 4rem;">🎉</span>
-                    </div>
-                    <span class="post-badge new">NEW</span>
-                </div>
-                <div class="featured-post-content">
-                    <div class="post-meta">
-                        <span class="post-date">2025.12.31</span>
-                        <span class="post-category">振り返り</span>
-                        <span class="post-reading-time">5分で読む</span>
-                    </div>
-                    <h2 class="featured-post-title">
-                        <a href="/blog/posts/2025-app-releases.html">
-                            2025年にリリースしたアプリ13本を振り返る
-                        </a>
-                    </h2>
-                    <p class="featured-post-excerpt">
-                        2025年に新規リリースした13本のiOSアプリを月別で振り返ります。mono、旬のお魚カレンダー、ゼリーセイムパズル、Cook-it、Daydream Cameraと、ジャンルを絞らずに出しました。
-                    </p>
-                    <div class="featured-post-tags">
-                        <span class="tag">#2025</span>
-                        <span class="tag">#振り返り</span>
-                        <span class="tag">#iOS</span>
-                        <span class="tag">#個人開発</span>
-                    </div>
-                    <a href="/blog/posts/2025-app-releases.html" class="btn btn-primary">記事を読む</a>
-                </div>
-            </article>
-        </div>
-    </section>
 
     <!-- Income Report Series -->
     <section class="section">
@@ -407,6 +367,29 @@
             </div>
             
             <div class="posts-grid">
+                <!-- Post: 2025年の振り返り -->
+                <article class="post-card" data-category="development">
+                    <div class="post-card-image">
+                        <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: linear-gradient(120deg, #14110c 0%, #14110c 100%);">
+                            <span style="font-size: 3rem;">🎉</span>
+                        </div>
+                    </div>
+                    <div class="post-card-content">
+                        <div class="post-meta">
+                            <span class="post-date">2025.12.31</span>
+                            <span class="post-category">振り返り</span>
+                        </div>
+                        <h3 class="post-card-title">
+                            <a href="/blog/posts/2025-app-releases.html">2025年にリリースしたアプリ13本を振り返る</a>
+                        </h3>
+                        <p class="post-card-excerpt">2025年に新規リリースした13本のiOSアプリを月別で振り返ります。</p>
+                        <div class="post-card-footer">
+                            <span class="reading-time">5分で読む</span>
+                            <a href="/blog/posts/2025-app-releases.html" class="read-more">続きを読む →</a>
+                        </div>
+                    </div>
+                </article>
+
                 <!-- Post: Daydream Camera -->
                 <article class="post-card" data-category="development">
                     <div class="post-card-image">
@@ -1567,7 +1550,6 @@
         // Category filter
         const categoryBtns = document.querySelectorAll('.category-btn');
         const postCards = document.querySelectorAll('.post-card');
-        const featuredPost = document.querySelector('.featured-post');
 
         categoryBtns.forEach(btn => {
             btn.addEventListener('click', function() {
@@ -1577,16 +1559,6 @@
 
                 // Filter posts
                 const category = this.dataset.category;
-
-                // Show/hide featured post
-                if (featuredPost) {
-                    const featuredSection = featuredPost.closest('.section');
-                    if (category === 'all' || category === 'development') {
-                        featuredSection.style.display = '';
-                    } else {
-                        featuredSection.style.display = 'none';
-                    }
-                }
 
                 postCards.forEach(card => {
                     if (category === 'all' || card.dataset.category === category) {
