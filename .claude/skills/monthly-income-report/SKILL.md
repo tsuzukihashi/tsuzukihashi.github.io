@@ -101,6 +101,8 @@ python3 generate_articles.py
   （blog/index.html のバナーの英文、追加するカードの英語タイトル「September 2026 Revenue Report」形式と英語の抜粋、
   特設ページの career-timeline の英語の説明、statsのラベル）
 - アプリ名の英語は `assets/data/apps_en.json`（USストアの名前）に合わせる
+- **明細表のアプリ名・課金商品名の英語は `docs/income-report/names_en.json`。** generate_articles.py が `WARN: names_en.json の … に英語名がありません` を出したら、その名前の英語を足して再生成する。WARN を残したまま終えない
+- 生成したら英語表示で記事を開き、日本語が残っていないか（切り替えボタンの「日本語」以外）を確かめる
 - **英語版の金額は米ドル**（2026-10-17 ユーザー指定）。記事を生成する前に `python3 docs/income-report/fetch_fx_usd.py YYYY-MM` で
   その月の月末レートを `fx_usd.json` に入れる（入っていないと generate_articles.py が KeyError で止まる）。
   months_en.py の英文は円（¥）のまま書けば、生成時にその号のレートでドルに置き換わる。目標の「¥10M / ¥10 million」と「¥1 million」のような節目は円のまま残る

@@ -173,14 +173,14 @@
       var data = await response.json();
       var apps = sortDefault(data.apps || []);
 
-      // 英語表示のときは US ストアの英語名を name_en に入れる（訳しただけのものは元の名前のまま）
+      // 英語表示のときは US ストアの英語名を name_en に入れる（US ストアに無いものは訳した英語名）
       if (IS_EN) {
         try {
           var enResponse = await fetch('/assets/data/apps_en.json');
           var en = (await enResponse.json()).apps || {};
           apps.forEach(function (app) {
             var e = en[app.id];
-            if (e && e.name && e.source !== 'translated') app.name_en = e.name;
+            if (e && e.name) app.name_en = e.name;
             // スクショも US ストアの英語版があれば差し替える
             if (e && e.screenshots && e.screenshots.length) app.screenshots = e.screenshots;
           });

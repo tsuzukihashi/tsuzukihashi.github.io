@@ -17,6 +17,35 @@ with open(os.path.join(REPO, "assets", "data", "app-ranking.json"), encoding="ut
     DATA = json.load(f)
 
 
+# 英語表示のアプリ名。US ストアの英語名（assets/data/apps_en.json）を app_id で引き、
+# id の無い Android の行や配信終了のアプリは下の表から引く
+with open(os.path.join(REPO, "assets", "data", "apps_en.json"), encoding="utf-8") as f:
+    APPS_EN = json.load(f)["apps"]
+NAMES_EN = {
+    "パンケーキ屋さん": "Pancake Shop",
+    "星防衛": "Star Defense",
+    "うんちくん": "UNCHIKUN",
+    "あなたレシート": "YOU Receipt",
+    "旅行思い出マップ": "TravelMemoryMap",
+    "nokki - 音楽ジャーナル": "nokki - Music Journal",
+    "猫背改善と姿勢リマインダー": "Posture Reminder: Cat Coach",
+    "Yattayo やったよボード": "Yattayo: Slider To-Do Board",
+    "Monivo 声で起こし合うアラーム": "Monivo: Wake Up by Voice",
+}
+
+
+def app_name(a):
+    """日本語の名前は英語名と並べる。英語名が無いまま日本語を出すと WARN を出す"""
+    en = APPS_EN.get(str(a.get("app_id")), {}).get("name") or NAMES_EN.get(a["name"])
+    if not en:
+        if any("\u3040" <= ch <= "\u9fff" for ch in a["name"]):
+            print("WARN: 英語名がありません:", a["name"])
+        return esc(a["name"])
+    if en == a["name"]:
+        return esc(en)
+    return f'<span class="i18n-ja">{esc(a["name"])}</span><span class="i18n-en">{esc(en)}</span>'
+
+
 def esc(s):
     return html.escape(str(s or ""))
 
@@ -55,7 +84,7 @@ for i, a in enumerate(apps[:3]):
     podium.append(f'''                {link_open}
                     <div class="rk-podium-rank">{a["rank"]}</div>
                     <div class="rk-podium-icon">{icon}</div>
-                    <h3 class="rk-podium-name">{esc(a["name"])}</h3>
+                    <h3 class="rk-podium-name">{app_name(a)}</h3>
                     <div class="rk-podium-units">{units(a["units"])}</div>
                     <div class="rk-podium-label"><span class="i18n-ja">ダウンロード</span><span class="i18n-en">Downloads</span></div>
                 {link_close}''')
@@ -66,7 +95,7 @@ for a in apps[3:]:
     icon = (f'<img src="{esc(a["icon_url"])}" alt="" loading="lazy">'
             if a["icon_url"] else '<span class="rk-noicon"><span class="i18n-ja">終</span><span class="i18n-en">—</span></span>')
     ended = "" if a["icon_url"] else '<span class="rk-ended"><span class="i18n-ja">配信終了</span><span class="i18n-en">Discontinued</span></span>'
-    name = esc(a["name"])
+    name = app_name(a)
     inner = f'''<span class="rk-rank">{a["rank"]}</span>
                     <span class="rk-icon">{icon}</span>
                     <span class="rk-name">{name}{ended}</span>
@@ -88,7 +117,7 @@ if AND:
         android_rows.append(f'''                <a class="rk-row" href="{esc(a["play_url"])}" target="_blank" rel="noopener">
                     <span class="rk-rank">{a["rank"]}</span>
                     <span class="rk-icon">{icon}</span>
-                    <span class="rk-name">{esc(a["name"])}<span class="rk-sub"><span class="i18n-ja">いま{a["active_devices"]:,}台</span><span class="i18n-en">{a["active_devices"]:,} active devices</span></span></span>
+                    <span class="rk-name">{app_name(a)}<span class="rk-sub"><span class="i18n-ja">いま{a["active_devices"]:,}台</span><span class="i18n-en">{a["active_devices"]:,} active devices</span></span></span>
                     <span class="rk-bar"><i class="rk-bar--and" style="width: {pct:.1f}%;"></i></span>
                     <span class="rk-units">{units(a["installs"])}</span>
                 </a>''')

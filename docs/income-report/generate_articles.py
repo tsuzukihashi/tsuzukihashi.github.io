@@ -97,6 +97,26 @@ def _play_app_name(title):
     return t
 
 
+# 明細表の英語版に出すアプリ名・課金商品名。無い名前は WARN を出すので names_en.json に足す
+with open(os.path.join(DATA_DIR, "names_en.json"), encoding="utf-8") as f:
+    NAMES_EN = json.load(f)
+JA_CHARS = re.compile(r"[\u3040-\u30ff\u3400-\u9fff]")
+
+
+def name_en(kind, name):
+    en = NAMES_EN[kind].get(name)
+    if en is None and JA_CHARS.search(name):
+        print(f"WARN: names_en.json の {kind} に英語名がありません: {name}")
+        return name
+    return en or name
+
+
+def name_cell(kind, name):
+    """日本語の名前だけ英語と並べる。もともと英語の名前はそのまま"""
+    en = name_en(kind, name)
+    return _cell(name) if en == name else _t(_cell(name), _cell(en))
+
+
 def detail_tables(ym):
     """記事末尾に置くアプリ別の明細を revenue_master.json から組み立てる"""
     d = MASTER.get(ym)
@@ -112,10 +132,10 @@ def detail_tables(ym):
         rows = []
         for a in apps:
             products_ja = "、".join(f"{_cell(p['name'])} ¥{p['jpy']:,}" for p in a["top_products"][:2])
-            products_en = ", ".join(f"{_cell(p['name'])} {usd(p['jpy'], ym)}" for p in a["top_products"][:2])
+            products_en = ", ".join(f"{_cell(name_en('products', p['name']))} {usd(p['jpy'], ym)}" for p in a["top_products"][:2])
             products = _t(products_ja, products_en) if products_ja else ""
             rows.append(
-                f'                    <tr><td>{_cell(a["title"])}'
+                f'                    <tr><td>{name_cell("apps", a["title"])}'
                 f'<span class="product-inline">{products}</span></td><td>{money(a["proceeds_jpy"], ym)}</td>'
                 f'<td>{a["downloads"]:,}</td>'
                 f'<td class="product-col" style="text-align: left;">{products or "—"}</td></tr>')
@@ -143,7 +163,7 @@ def detail_tables(ym):
 
     admob = [a for a in d.get("admob_apps", []) if a["jpy"] > 0]
     if admob:
-        rows = [f'                    <tr><td>{_cell(a["app"])}{_t("（" + a["platform"] + "）", " (" + a["platform"] + ")")}</td>'
+        rows = [f'                    <tr><td>{name_cell("apps", a["app"])}{_t("（" + a["platform"] + "）", " (" + a["platform"] + ")")}</td>'
                 f'<td>{money(a["jpy"], ym)}</td><td>{money(a["ecpm"], ym)}</td><td>{a["impressions"]:,}</td></tr>'
                 for a in admob]
         rows.append(f'                    <tr class="total-row"><td>{_t("合計", "Total")}</td>'
@@ -167,7 +187,7 @@ def detail_tables(ym):
     play = d.get("play_detail") or {}
     play_apps = [v for v in (play.get("apps") or {}).values() if v["net_jpy"] > 0]
     if play_apps:
-        rows = [f'                    <tr><td>{_cell(_play_app_name(v["title"]))}</td>'
+        rows = [f'                    <tr><td>{name_cell("apps", _play_app_name(v["title"]))}</td>'
                 f'<td>{money(v["net_jpy"], ym)}</td><td>{v["transactions"]}</td></tr>'
                 for v in sorted(play_apps, key=lambda x: -x["net_jpy"])]
         rows.append(f'                    <tr class="total-row"><td>{_t("合計", "Total")}</td>'
