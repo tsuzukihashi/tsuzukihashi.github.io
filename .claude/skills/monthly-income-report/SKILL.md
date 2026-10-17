@@ -113,35 +113,26 @@ python3 generate_articles.py
 skill `blog-illustration` を読んで、その号のイラストを1枚作り（キーは `income-report-YYYY-MM`）、記事とブログ一覧のカードに出す。
 場面はその月の山場から選ぶ。文字は入れない。
 
-### 5-2. OGP画像
+### 5-2. OGP画像（イラスト＋英語の号名＋ドル。毎号ちがう絵になる）
 
-記事1本につき1枚、月の数字を載せた画像を作る。テンプレートは `docs/income-report/ogp.html`。
+5-1b でその号のイラストを作ったあとに作る。OGPは言語で出し分けられない（SNSのクローラーはJSを動かさない）ので、
+**載せる文字は英語の号名・TsuzuKit・ドルの合計の3つだけ**（2026-10-17 ユーザー指定）。背景はその号のイラスト。
 
-1. リポジトリ直下で `python3 -m http.server 8899` を起動
-2. Playwright で以下を開く（数値はカンマ区切りで渡す。`mom` と `play` は無ければ空でよい）
+1. リポジトリ直下で `python3 -m http.server 8899`
+2. ビューポートを **1200x630** にして、次を開いて `assets/images/ogp/income-report-YYYY-MM.png` にスクリーンショット
 
 ```
-http://localhost:8899/docs/income-report/ogp.html?ym=2026年8月&total=494,888&mom=%2B32.9&rate=4.95&admob=155,880&appstore=316,726&play=22,282
+http://localhost:8899/docs/income-report/ogp-illust.html?bg=/assets/images/posts/income-report-2026-10.webp&label=October%202026&title=Revenue%20Report&amount=%242%2C958&pos=br
 ```
 
-3. ビューポートを **1200x630** にして、`assets/images/ogp/income-report-YYYY-MM.png` へスクリーンショット
-4. `generate_articles.py` を再実行すると、その画像が `og:image` と `twitter:image` に入る
-   （画像が無い号は `blog.png` に自動で戻る）
+   - `amount` は記事の英語版と同じドル（`total / fx_usd.json の jpy_per_usd` を整数に丸めてカンマ区切り）
+   - `pos` は札を置く角（bl/br/tl/tr）。**キャラと主役の小物に重ならない角を目で見て選ぶ**。
+     迷ったら4つとも撮って並べる。決めた角は `docs/blog-illustrations.json` の `ogp_pos` に書く
+3. `pngquant --force --ext .png --quality 70-90 assets/images/ogp/income-report-YYYY-MM.png` で軽くする（1枚100〜500KB）
+4. `generate_articles.py` を再実行すると、画像のハッシュ付きURL（`?v=…`）が `og:image` と `twitter:image` に入る。
+   作り直したらハッシュが変わるので、Xのキャッシュに古い画像が残らない
 
-- 金額の桁が増えてもフォントサイズが自動で縮む。前月比なし・Playなしの号にも対応済み
-- 撮る前にビューポートのリサイズを忘れない。号ごとに画像の位置がずれる
-- **渡す数値は `generate_articles.py` の MONTHS から取る。** 手打ちすると記事と画像がずれる:
-
-```python
-import ast, io
-s = io.open("generate_articles.py", encoding="utf-8").read()
-start = s.index("MONTHS = ["); end = s.index("\n]\n", start) + 2
-MONTHS = ast.literal_eval(s[start:end].split("=", 1)[1].strip())
-```
-
-- 全号まとめて撮り直したら、`magick montage ir-*.png -tile 2x5 -geometry 600x315+6+6` で一覧にして目視する
-- デザインはクリーム地に黒。**虹グラデも色違いのベタ影も使わない**（紫だけがサイト唯一のアクセント。月のラベルと達成率バーにだけ乗せる）
-- トップ・About・Blog・Contact・Portfolio のOGPは別テンプレート `docs/ogp-site.html`。各ページに渡す値は同ファイルのコメントにある
+- 旧テンプレート `docs/income-report/ogp.html`（日本語と円の数字の画像）は使わない
 
 ### 6. 手動更新ファイル
 

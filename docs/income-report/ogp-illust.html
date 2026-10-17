@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>OGP generator - Revenue Report</title>
+<!--
+  収益公開の各号のOGP画像（1200x630）。背景はその号のイラスト、上に載せるのは英語の号名・TsuzuKit・ドルの合計だけ。
+  OGPは言語で出し分けられないので、日英どちらのタイムラインでも読める英語と$にしている（2026-10-17 ユーザー指定）。
+  作り方は .claude/skills/monthly-income-report/SKILL.md の「OGP画像」。
+
+  パラメータ
+    bg      背景のイラスト（例: /assets/images/posts/income-report-2026-09.webp）
+    label   上の小さい行（例: September 2026）
+    title   号名（例: Revenue Report）
+    amount  ドルの合計（例: $2,958）
+    pos     札を置く角。bl（左下・既定）/ br（右下）/ tl（左上）/ tr（右上）。キャラに重ならない角を選ぶ
+-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Saira+Condensed:wght@600;700;800&display=swap">
+<style>
+  :root { --ink: #14110c; --purple: #8b3df5; --cream: #f6f2ea; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1200px; height: 630px; overflow: hidden; background: var(--cream); }
+  .bg { position: absolute; inset: 0; width: 1200px; height: 630px; object-fit: cover; }
+  .card {
+    position: absolute; background: #fff; color: var(--ink);
+    border: 3px solid var(--ink); border-radius: 24px; box-shadow: 10px 10px 0 var(--purple);
+    padding: 26px 34px 24px;
+  }
+  .bl { left: 44px; bottom: 50px; } .br { right: 54px; bottom: 50px; }
+  .tl { left: 44px; top: 40px; } .tr { right: 54px; top: 40px; }
+  .brand { display: flex; align-items: center; gap: 10px; }
+  .brand img { width: 30px; height: 30px; }
+  .brand span { font-family: 'Saira Condensed', sans-serif; font-style: italic; font-weight: 800; font-size: 24px; letter-spacing: 0.08em; }
+  .label { margin-top: 14px; font-family: 'Saira Condensed', sans-serif; font-style: italic; font-weight: 800; font-size: 26px; letter-spacing: 0.06em; color: var(--purple); text-transform: uppercase; }
+  .title { font-family: 'Anton', sans-serif; font-style: italic; font-size: 46px; line-height: 1.05; text-transform: uppercase; }
+  .amount { margin-top: 6px; font-family: 'Anton', sans-serif; font-style: italic; font-size: 104px; line-height: 1; letter-spacing: 0.01em; }
+</style>
+</head>
+<body>
+<img class="bg" id="bg" alt="">
+<div class="card" id="card">
+  <div class="brand"><img src="/assets/images/logo.svg" alt=""><span>TSUZUKIT</span></div>
+  <div class="label" id="label"></div>
+  <div class="title" id="title"></div>
+  <div class="amount" id="amount"></div>
+</div>
+<script>
+  const q = new URLSearchParams(location.search);
+  document.getElementById('bg').src = q.get('bg') || '';
+  document.getElementById('label').textContent = q.get('label') || '';
+  document.getElementById('title').textContent = q.get('title') || 'Revenue Report';
+  document.getElementById('amount').textContent = q.get('amount') || '';
+  document.getElementById('card').classList.add(q.get('pos') || 'bl');
+</script>
+</body>
+</html>

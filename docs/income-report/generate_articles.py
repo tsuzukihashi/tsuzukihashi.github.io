@@ -4,6 +4,7 @@
 文言はCLAUDE.md「文章スタイル【全文章共通・絶対遵守】」の編集ルール適用済み。
 新しい月を足すときも同ルールを通した文章にすること。
 """
+import hashlib
 import html as html_lib
 import json
 import os
@@ -123,7 +124,7 @@ def detail_tables(ym):
     if not d:
         return ""
 
-    out = ["<h1>" + _t("詳細データ", "Detailed data") + "</h1>",
+    out = ['<h1 id="details">' + _t("詳細データ", "Detailed data") + "</h1>",
            "<p>" + _t("アプリごとの内訳です。0円だったものは省いています。",
                       "Here's the breakdown by app. Anything that made $0 is left out.") + "</p>"]
 
@@ -529,6 +530,7 @@ HEAD_TEMPLATE = """<!DOCTYPE html>
             margin: var(--spacing-2xl) 0;
         }}
         .post-title {{ word-break: keep-all; overflow-wrap: anywhere; }}
+        #details {{ scroll-margin-top: 90px; }}
         .post-illustration {{ max-width: 760px; margin: 0 auto var(--space-xl, 48px); padding: 0 16px; }}
         .post-illustration img {{ width: 100%; height: auto; display: block; border: 2px solid var(--color-ink, #14110c); border-radius: 20px; }}
         .nowrap-title {{ white-space: nowrap; }}
@@ -694,8 +696,13 @@ def build_article(i, m):
     details_html = detail_tables(m["ym"]) if m.get("details") else ""
 
     # その月のOGP画像があれば使い、無ければブログ共通のものにフォールバックする
+    # 画像を作り直したらXなどのキャッシュを避けるため、中身のハッシュを ?v= に付ける
     ogp = f"/assets/images/ogp/income-report-{m['ym']}.png"
-    if not os.path.exists(os.path.join(REPO, ogp.lstrip("/"))):
+    ogp_path = os.path.join(REPO, ogp.lstrip("/"))
+    if os.path.exists(ogp_path):
+        with open(ogp_path, "rb") as f:
+            ogp += "?v=" + hashlib.sha256(f.read()).hexdigest()[:8]
+    else:
         ogp = "/assets/images/ogp/blog.png"
     html = HEAD_TEMPLATE.format(title=title, desc=m["desc"], url=url, ogp=ogp,
                                 title_en=html_lib.escape(title_en), desc_en=html_lib.escape(en_usd(en["desc"], ym)))
