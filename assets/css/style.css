@@ -3004,3 +3004,7 @@ h1, h2, h3, h4,
   vertical-align: -0.16em;
   background: url("/assets/images/logo-mark-white.png") no-repeat center / contain;
 }
+/* ブログ記事のイラスト（docs/blog-illustrations.json、作り方は .claude/skills/blog-illustration/SKILL.md） */
+.post-illustration { max-width: 760px; margin: 0 auto 48px; padding: 0 16px; }
+.post-illustration img { width: 100%; height: auto; display: block; border: 2px solid var(--color-ink, #14110c); border-radius: 20px; }
+.app-hero-section + .post-illustration { margin-top: 48px; }

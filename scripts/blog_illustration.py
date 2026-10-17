@@ -1,26 +1,26 @@
 #!/usr/bin/env python3
-"""収益公開の各号のイラストを作るための補助スクリプト。
+"""ブログ記事のイラストを作るための補助スクリプト。キーは記事のファイル名（blog/posts/<key>.html）。
 
-  python3 docs/income-report/illustration.py script 2026-10
-      → .playwright-mcp/gen/gen-2026-10.js を書き出す。
+  python3 scripts/blog_illustration.py script income-report-2026-10
+      → .playwright-mcp/gen/gen-income-report-2026-10.js を書き出す。
         Playwright MCP の browser_run_code_unsafe に filename で渡すと、
-        ChatGPT の新しい会話で参照画像を添付し、絵を1枚作って .playwright-mcp/gen/2026-10.png に保存する
-  python3 docs/income-report/illustration.py webp 2026-10
-      → 1200x800 の WebP にして assets/images/income-report/2026-10.webp に置く
+        ChatGPT の新しい会話で参照画像を添付し、絵を1枚作って .playwright-mcp/gen/<key>.png に保存する
+  python3 scripts/blog_illustration.py webp income-report-2026-10
+      → 1200x800 の WebP にして assets/images/posts/<key>.webp に置く
 
-場面と代替テキストは docs/income-report/illustrations.json に号ごとに書く。
-手順の全体は .claude/skills/income-report-illustration/SKILL.md。
+場面と代替テキストは docs/blog-illustrations.json に記事ごとに書く。
+手順の全体は .claude/skills/blog-illustration/SKILL.md。
 """
 import json
 import os
 import subprocess
 import sys
 
-REPO = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-DATA = os.path.join(REPO, "docs/income-report/illustrations.json")
-REF = os.path.join(REPO, "docs/income-report/mascot-ref.png")
+REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DATA = os.path.join(REPO, "docs/blog-illustrations.json")
+REF = os.path.join(REPO, "docs/mascot-ref.png")
 GEN_DIR = os.path.join(REPO, ".playwright-mcp/gen")
-OUT_DIR = os.path.join(REPO, "assets/images/income-report")
+OUT_DIR = os.path.join(REPO, "assets/images/posts")
 
 TEMPLATE = r'''async (page) => {
   const KEY = __KEY__;
@@ -67,7 +67,7 @@ def write_script(key):
     with open(DATA, encoding="utf-8") as f:
         d = json.load(f)
     if key not in d["scenes"]:
-        sys.exit(f"illustrations.json の scenes に {key} がありません")
+        sys.exit(f"blog-illustrations.json の scenes に {key} がありません")
     os.makedirs(GEN_DIR, exist_ok=True)
     code = (TEMPLATE.replace("__KEY__", json.dumps(key))
             .replace("__PROMPT__", json.dumps(d["common"] + d["scenes"][key], ensure_ascii=False))

@@ -37,14 +37,14 @@ SERIES_EN = "The Struggling Indie Dev's Road to ¥10M a Month"
 with open(os.path.join(DATA_DIR, "fx_usd.json")) as f:
     FX_USD = json.load(f)
 
-# 各号のイラスト（文字なし）。作り方は .claude/skills/income-report-illustration/SKILL.md
-with open(os.path.join(DATA_DIR, "illustrations.json"), encoding="utf-8") as f:
+# 各号のイラスト（文字なし）。作り方は .claude/skills/blog-illustration/SKILL.md
+with open(os.path.join(REPO, "docs/blog-illustrations.json"), encoding="utf-8") as f:
     ILLUST_ALT = json.load(f)["alt"]
 
 
 def illustration_html(key):
     """記事の見出しの下に置くイラスト。画像が無い号は何も出さない"""
-    path = f"/assets/images/income-report/{key}.webp"
+    path = f"/assets/images/posts/{key}.webp"
     if not os.path.exists(os.path.join(REPO, path.lstrip("/"))) or key not in ILLUST_ALT:
         return ""
     alt_ja, alt_en = (html_lib.escape(t) for t in ILLUST_ALT[key])
@@ -704,7 +704,7 @@ def build_article(i, m):
             </div>
             <h1 class="post-title">{_t(m['label'] + "<br>収益公開", lab_en + "<br>Revenue Report")}</h1>
         </header>
-{illustration_html(m["ym"])}
+{illustration_html("income-report-" + m["ym"])}
 
         <div class="post-content">
 {intro}

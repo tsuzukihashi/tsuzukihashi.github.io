@@ -299,6 +299,21 @@ def screenshot_img(url, i, name, en_name, en_screenshots):
     return (f'            <img src="{url}"{en_attr} alt="{escape_html(name)} スクリーンショット {i+1}" '
             f'data-en-alt="{escape_html(en_name)} screenshot {i+1}" loading="lazy">')
 
+# 記事のイラスト（文字なし）。作り方は .claude/skills/blog-illustration/SKILL.md
+with open(os.path.join(BASE_DIR, 'docs/blog-illustrations.json'), encoding='utf-8') as f:
+    ILLUST_ALT = json.load(f)['alt']
+
+
+def illustration_html(slug):
+    """ヒーローの下に置くイラスト。画像が無い記事は何も出さない"""
+    key = f'app-{slug}'
+    if key not in ILLUST_ALT or not os.path.exists(os.path.join(BASE_DIR, f'assets/images/posts/{key}.webp')):
+        return ''
+    alt_ja, alt_en = (escape_html(t) for t in ILLUST_ALT[key])
+    return (f'        <figure class="post-illustration"><img src="/assets/images/posts/{key}.webp" width="1200" height="800" '
+            f'alt="{alt_ja}" data-en-alt="{alt_en}" fetchpriority="high"></figure>\n')
+
+
 def generate_page(app, slug):
     name = app['name']
     icon_url = app.get('icon_url', '')
@@ -441,7 +456,7 @@ def generate_page(app, slug):
             </div>
         </div>
     </section>
-{ss_html}
+{illustration_html(slug)}{ss_html}
 
     <!-- Article -->
     <article class="app-article">

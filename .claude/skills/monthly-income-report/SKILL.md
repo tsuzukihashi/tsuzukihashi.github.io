@@ -108,7 +108,7 @@ python3 generate_articles.py
 
 ### 5-1b. イラスト（必須・聞かずにやる）
 
-skill `income-report-illustration` を読んで、その号のイラストを1枚作り、記事とブログ一覧のカードに出す。
+skill `blog-illustration` を読んで、その号のイラストを1枚作り（キーは `income-report-YYYY-MM`）、記事とブログ一覧のカードに出す。
 場面はその月の山場から選ぶ。文字は入れない。
 
 ### 5-2. OGP画像
