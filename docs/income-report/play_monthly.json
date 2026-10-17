@@ -90,5 +90,47 @@
         "transactions": 0
       }
     }
+  },
+  "2026-09": {
+    "totals": {
+      "gross_jpy": 35460,
+      "fee_jpy": -5318,
+      "tax_jpy": -72,
+      "net_jpy": 30070
+    },
+    "apps": {
+      "com.tsuzuki817.omoidemap": {
+        "title": "  思い出マップサポーター（期間限定月額） (旅行思い出マップ - 旅の記憶を、地図に描く)",
+        "gross_jpy": 2720,
+        "fee_jpy": -408,
+        "tax_jpy": 0,
+        "net_jpy": 2312,
+        "transactions": 4
+      },
+      "com.tsuzukit.anatareceipt": {
+        "title": "Premium (Weekly) (YOU Receipt: Receipt Maker)",
+        "gross_jpy": 10986,
+        "fee_jpy": -1648,
+        "tax_jpy": 0,
+        "net_jpy": 9338,
+        "transactions": 15
+      },
+      "com.tsuzukit.poopcounter": {
+        "title": "うんちくんプレミアム（月額） (UNCHIKUN Poop Tracker)",
+        "gross_jpy": 21754,
+        "fee_jpy": -3262,
+        "tax_jpy": 0,
+        "net_jpy": 18492,
+        "transactions": 23
+      },
+      "": {
+        "title": "",
+        "gross_jpy": 0,
+        "fee_jpy": 0,
+        "tax_jpy": -72,
+        "net_jpy": -72,
+        "transactions": 0
+      }
+    }
   }
 }

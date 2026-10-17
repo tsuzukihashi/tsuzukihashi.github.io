@@ -80,7 +80,7 @@ cd /Users/tsuzuki817/workspace/TsuzuKit/tsuzukit.com/docs/income-report && pytho
 python3 generate_articles.py
 ```
 
-エントリに書くもの: ym / date（月末日）/ label / **details: True** / admob / appstore / play / total / mom / rate / desc / highlights（アプリ別、revenue_master.json の appstore_detail・admob_apps・play_detail から合算）/ analysis / next_actions（3つ）/ closing。
+エントリに書くもの: ym / date（月末日。対象月の識別用で、表示には使わない）/ **published（実際に書いた日＝作業した当日）** / label / **details: True** / admob / appstore / play / total / mom / rate / desc / highlights（アプリ別、revenue_master.json の appstore_detail・admob_apps・play_detail から合算）/ analysis / next_actions（3つ）/ closing。
 
 - `"details": True` を付けると、記事末尾に**アプリ別の明細テーブル**（App Store / AdMob / Google Play）が
   revenue_master.json から自動で入る。2026年8月号から付けている。**新しい号には必ず付ける**
@@ -166,6 +166,10 @@ git push origin master
   画面の「ユニット数」とほぼ一致する（残差は会計月と暦月のずれ）
 
 - AdMobは「推定収益額」、App Storeは Developer Proceeds（外貨は概算円換算）、Playは手数料控除後。この注記は記事テンプレートに組み込み済み
-- 記事タイトルは「YYYY-MM-DD（月末日） 限界個人開発者の月収１０００万円計画」形式で固定
+- 記事タイトルは「YYYY年M月 収益公開」（`label` を使う）。**タイトルに日付（日）も連載名（月収１０００万円計画）も入れない**。2026-10-17に「年度月を書くだけでいい」「計画っていれなくていい、普通に収益公開でいい」と言われて全号変更した。連載名は本文冒頭と特設ページに残っている
+- 🚨 **記事とブログトップに出す投稿日（post-date）は、実際に書いた日にする。月末日にしない。**
+  `date` はタイトル用の対象月の月末日で、投稿日ではない。エントリには必ず `"published": "<今日の日付>"` を入れる
+  （generate_articles.py の post-date は `published` を使う）。`blog/index.html` に足すカードの `post-date` も同じ日付にする。
+  2026-10-17、9月号を10/17に書いたのに投稿日を「2026.09.30」と出して「書いた日付嘘つかなくていい」と言われた
 - `generate_articles.py` は全号を再生成する。過去号を手で直した場合は**必ずジェネレーター側にも反映**しておくこと（そうしないと再生成で消える）
 - 収益の歴史・落とし穴の詳細は `docs/income-report/README.md` と `docs/income-report/prehistory.json` を参照
