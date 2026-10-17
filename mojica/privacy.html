@@ -3,8 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="/assets/js/lang.js"></script>
 <title>プライバシーポリシー - 文字起こしAI Mojica</title>
 <meta name="description" content="Mojica のプライバシーポリシー。録音した音声も文字起こしの内容も、端末の外に送信しません。氏名・メールアドレスも取得しません。">
+<meta name="title-en" content="Privacy Policy - Mojica: AI Transcription">
+<meta name="description-en" content="Privacy Policy for Mojica. Neither recorded audio nor transcripts are ever sent off your device, and your name and email address are not collected.">
 <link rel="canonical" href="https://tsuzukit.com/mojica/privacy.html">
 <meta name="theme-color" content="#0f1522">
 <link rel="stylesheet" href="style.css">
@@ -12,15 +15,15 @@
 <body>
 <header>
   <div class="hbar">
-    <a class="hbrand" href="/mojica/">文字起こしAI Mojica</a>
+    <a class="hbrand" href="/mojica/"><span class="i18n-ja">文字起こしAI Mojica</span><span class="i18n-en">Mojica: AI Transcription</span></a>
     <nav class="hnav">
-      <a href="/mojica/">アプリ紹介</a>
-      <a href="/mojica/support.html">サポート</a>
-      <a href="/mojica/privacy.html">プライバシー</a>
+      <a href="/mojica/"><span class="i18n-ja">アプリ紹介</span><span class="i18n-en">About</span></a>
+      <a href="/mojica/support.html"><span class="i18n-ja">サポート</span><span class="i18n-en">Support</span></a>
+      <a href="/mojica/privacy.html"><span class="i18n-ja">プライバシー</span><span class="i18n-en">Privacy</span></a>
     </nav>
   </div>
 </header>
-<main class="wrap">
+<main class="wrap i18n-ja">
   <p class="en">PRIVACY POLICY</p>
   <h1>プライバシーポリシー</h1>
   <p class="updated">最終更新日: 2026年9月9日</p>
@@ -83,6 +86,71 @@
   <h2>9. 本ポリシーの変更</h2>
   <p>内容を変更する場合は、本ページを更新します。重要な変更がある場合はアプリ内でお知らせします。</p>
 </main>
-<footer><div class="fwrap">© TsuzuKit / 續橋涼　<a href="/">tsuzukit.com</a></div></footer>
+<main class="wrap i18n-en" lang="en">
+  <p class="en">PRIVACY POLICY</p>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: September 9, 2026</p>
+
+  <p class="updated">This is an English translation for convenience. If there is any discrepancy, the Japanese version prevails.</p>
+
+  <div class="card">
+    <h3 style="margin-top:0">Key points</h3>
+    <p style="margin-bottom:0">
+      <strong>Neither your recorded audio nor your transcripts ever leave your device.</strong><br>
+      The developer does not receive them and cannot see them. Your name and email address are not collected either.<br>
+      The free plan communicates with Google to show ads, but <strong>your audio and transcripts are never used for ads</strong> (<a href="#ads-en">6. Advertising</a>).
+    </p>
+  </div>
+
+  <h2>1. Handling of audio and transcripts</h2>
+  <p>Mojica processes and stores recorded audio, its transcripts, and AI-generated meeting notes <strong>only on the user's device</strong>. They are never sent to the developer's servers or to any third party.</p>
+  <p>Transcription uses Apple's on-device speech recognition (the Speech framework), and summaries use on-device Apple Intelligence (Foundation Models). In both cases, processing is completed entirely on the device.</p>
+  <p>Speakers are identified by calculating voice features on the device. Voice data is never sent outside.</p>
+
+  <h2>2. Information we do not collect</h2>
+  <ul>
+    <li>Personal information such as name, email address, or phone number</li>
+    <li>Recorded audio data</li>
+    <li>The contents of transcripts and meeting notes</li>
+    <li>Location information</li>
+    <li>Contacts, photos, or calendars</li>
+  </ul>
+
+  <h2>3. When the network is used</h2>
+  <p>Mojica communicates over the network only in the following cases.</p>
+  <table>
+    <tr><th>Situation</th><th>Destination</th><th>What is sent</th></tr>
+    <tr><td>First download of the transcription model</td><td>Apple</td><td>Only the language selection. No audio is sent</td></tr>
+    <tr><td>When cloud storage is enabled</td><td>Apple iCloud (the user's own storage)</td><td>Meeting notes the user chooses. The developer cannot view them</td></tr>
+    <tr><td>In-app purchases</td><td>Apple / RevenueCat</td><td>Purchase processing information defined by Apple</td></tr>
+    <tr><td><strong>Showing ads (free plan only)</strong></td><td>Google (AdMob)</td><td>Identifiers such as the advertising ID, approximate region, and device type. <strong>No audio, transcripts, or meeting notes are ever sent</strong></td></tr>
+  </table>
+
+  <h2>4. Cloud storage</h2>
+  <p>On paid plans, meeting notes can be saved to iCloud. They are stored in <strong>the user's own iCloud account</strong>, not on the developer's servers. The developer cannot access their contents. This feature works only when the user explicitly enables it.</p>
+
+  <h2>5. Microphone access</h2>
+  <p>The app asks for microphone access in order to record. The captured audio is saved as a file on the device and is not sent outside. You can revoke permission at any time in your device's settings.</p>
+
+  <h2 id="ads-en">6. Advertising</h2>
+  <p><strong>On the free plan, ads are shown below the list of recordings.</strong> Ads are delivered using Google AdMob. Purchasing Mojica Pro (monthly, yearly, or one-time purchase) removes the ads.</p>
+  <p>To deliver ads, identifiers such as the advertising identifier (IDFA), approximate region, and device type may be sent to Google.
+  <strong>Recorded audio, transcripts, and meeting notes are never used for advertising.</strong> They never leave your device.</p>
+  <p>Ads are shown only on the recordings list screen. <strong>They are not shown on the recording screen, the transcript screen, or the meeting notes screen.</strong></p>
+  <p>You can choose whether to allow tracking through the prompt shown on first launch (App Tracking Transparency). Declining does not change any of the app's features.
+  For users in the EU, the UK, Switzerland, and similar regions, a consent prompt (Google UMP) is shown, and you can change your choice at any time from Settings &gt; Ads in the app.</p>
+  <p>Google Privacy Policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
+  <p>Analytics tools (access analytics or behavior tracking) are <strong>not used</strong>.</p>
+
+  <h2>7. Deleting data</h2>
+  <p>Deleting a recording in the app deletes its audio, transcript, and meeting notes. Deleting the app erases all data on the device.</p>
+
+  <h2>8. Contact</h2>
+  <p><a href="mailto:ryo.tsuzukihashi@tsuzukit.com">ryo.tsuzukihashi@tsuzukit.com</a></p>
+
+  <h2>9. Changes to this policy</h2>
+  <p>If the contents change, this page will be updated. Important changes will also be announced in the app.</p>
+</main>
+<footer><div class="fwrap"><span class="i18n-ja">© TsuzuKit / 續橋涼</span><span class="i18n-en">© TsuzuKit / Ryo Tsuzukihashi</span>　<a href="/">tsuzukit.com</a></div></footer>
 </body>
 </html>

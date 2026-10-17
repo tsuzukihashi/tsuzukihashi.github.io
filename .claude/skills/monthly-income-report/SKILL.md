@@ -91,6 +91,21 @@ python3 generate_articles.py
 - 分析は「何が起きたか」をデータで語り、NextActionは前号との連続性を持たせる（前号のNextActionの結果に触れる）
 - 数字の捏造は絶対禁止。metaのdescも同ルール
 
+### 5-1. 英語版（必須・2026-10-17〜）
+
+サイトは日本語ブラウザに日本語、それ以外に英語を出す（仕組みは `docs/i18n.md`）。記事も英語を必ず付ける。
+
+- `docs/income-report/months_en.py` に対象月の英語（desc / highlights / analysis / next_actions / closing）を追加する。
+  日本語と同じ事実・数字で、自然な英語に。highlights と next_actions の数が日本語とずれると generate_articles.py がエラーで止まる
+- 6章の手動更新ファイルも、日本語と並んでいる `.i18n-en` 側を同じ内容で更新する
+  （blog/index.html のバナーの英文、追加するカードの英語タイトル「September 2026 Revenue Report」形式と英語の抜粋、
+  特設ページの career-timeline の英語の説明、statsのラベル）
+- アプリ名の英語は `assets/data/apps_en.json`（USストアの名前）に合わせる
+- **英語版の金額は米ドル**（2026-10-17 ユーザー指定）。記事を生成する前に `python3 docs/income-report/fetch_fx_usd.py YYYY-MM` で
+  その月の月末レートを `fx_usd.json` に入れる（入っていないと generate_articles.py が KeyError で止まる）。
+  months_en.py の英文は円（¥）のまま書けば、生成時にその号のレートでドルに置き換わる。目標の「¥10M / ¥10 million」と「¥1 million」のような節目は円のまま残る
+- 手で直す英語（blog/index.html のカードとバナー、特設ページのグラフ・統計・年表）も、その月のレートでドルにする
+
 ### 5-2. OGP画像
 
 記事1本につき1枚、月の数字を載せた画像を作る。テンプレートは `docs/income-report/ogp.html`。

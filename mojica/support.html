@@ -3,8 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="/assets/js/lang.js"></script>
 <title>サポート・お問い合わせ - 文字起こしAI Mojica</title>
 <meta name="description" content="Mojica のサポートページ。文字起こしができない、話者がうまく分かれない、AI議事録が使えないなど、よくあるトラブルの対処方法とお問い合わせ窓口。">
+<meta name="title-en" content="Support &amp; Contact - Mojica: AI Transcription">
+<meta name="description-en" content="Support page for Mojica: fixes for common problems such as transcription not working, speakers not separating well, or AI meeting notes being unavailable, plus how to contact me.">
 <link rel="canonical" href="https://tsuzukit.com/mojica/support.html">
 <meta name="theme-color" content="#0f1522">
 <link rel="stylesheet" href="style.css">
@@ -12,15 +15,15 @@
 <body>
 <header>
   <div class="hbar">
-    <a class="hbrand" href="/mojica/">文字起こしAI Mojica</a>
+    <a class="hbrand" href="/mojica/"><span class="i18n-ja">文字起こしAI Mojica</span><span class="i18n-en">Mojica: AI Transcription</span></a>
     <nav class="hnav">
-      <a href="/mojica/">アプリ紹介</a>
-      <a href="/mojica/support.html">サポート</a>
-      <a href="/mojica/privacy.html">プライバシー</a>
+      <a href="/mojica/"><span class="i18n-ja">アプリ紹介</span><span class="i18n-en">About</span></a>
+      <a href="/mojica/support.html"><span class="i18n-ja">サポート</span><span class="i18n-en">Support</span></a>
+      <a href="/mojica/privacy.html"><span class="i18n-ja">プライバシー</span><span class="i18n-en">Privacy</span></a>
     </nav>
   </div>
 </header>
-<main class="wrap">
+<main class="wrap i18n-ja">
   <p class="en">SUPPORT</p>
   <h1>サポート・お問い合わせ</h1>
   <p class="lead">不具合の報告、ご要望、課金に関するお問い合わせはこちらへ。</p>
@@ -54,6 +57,40 @@
   <h3>データはどこに保存されますか</h3>
   <p>音声・文字起こし・議事録は、すべて端末内に保存されます。詳しくは<a href="/mojica/privacy.html">プライバシーポリシー</a>をご覧ください。</p>
 </main>
-<footer><div class="fwrap">© TsuzuKit / 續橋涼　<a href="/">tsuzukit.com</a></div></footer>
+<main class="wrap i18n-en" lang="en">
+  <p class="en">SUPPORT</p>
+  <h1>Support &amp; Contact</h1>
+  <p class="lead">For bug reports, requests, and questions about purchases, contact me here.</p>
+
+  <a class="mail" href="mailto:ryo.tsuzukihashi@tsuzukit.com?subject=About%20Mojica">ryo.tsuzukihashi@tsuzukit.com</a>
+  <p class="updated" style="text-align:center">Including your device model and iOS / macOS version helps me find the cause faster.</p>
+
+  <h2>FAQ</h2>
+
+  <h3>Transcription won't start</h3>
+  <p>The first time, the transcription model needs to be downloaded. Please try while connected to Wi-Fi. If progress looks stuck, reopening the app resumes it.</p>
+
+  <h3>It says "No audio detected"</h3>
+  <p>Your microphone may be muted, or another app may be using it. Close other apps (calls, recording, or streaming apps, for example) and try again. If you have earphones or a microphone connected, also check whether it's the one being used.</p>
+
+  <h3>Speakers aren't separated well</h3>
+  <p>Automatic detection isn't perfect. It's more likely to miss with speakers of the same gender who sound alike, when people talk over each other, or in noisy environments.</p>
+  <p>You can fix the results by hand. From the transcript screen, open "Edit Speakers" to name speakers or merge ones that turned out to be the same person. Long-press a line to change the speaker for just that line.</p>
+
+  <h3>AI meeting notes aren't available</h3>
+  <p>AI meeting notes are available only on devices that support Apple Intelligence (iPhone 15 Pro or later, Macs / iPads with M1 or later, and so on). Even on a supported device, Apple Intelligence must be turned on in Settings.</p>
+  <p>On unsupported devices, recording, transcription, speaker separation, and export all remain available.</p>
+
+  <h3>Recording stopped partway through</h3>
+  <p>The audio file is saved continuously while recording, so the audio up to that point is kept. When you reopen the app, it appears in the list as an "Interrupted recording", and you can transcribe it from there.</p>
+
+  <h3>Purchases and cancellation</h3>
+  <p>You can cancel your subscription from your device's Settings → your Apple Account → Subscriptions. Note that deleting the app does not cancel it automatically.</p>
+  <p>Refunds are handled by Apple. Please request one at <a href="https://reportaproblem.apple.com/">reportaproblem.apple.com</a>.</p>
+
+  <h3>Where is my data stored?</h3>
+  <p>Audio, transcripts, and meeting notes are all stored on your device. See the <a href="/mojica/privacy.html">Privacy Policy</a> for details.</p>
+</main>
+<footer><div class="fwrap"><span class="i18n-ja">© TsuzuKit / 續橋涼</span><span class="i18n-en">© TsuzuKit / Ryo Tsuzukihashi</span>　<a href="/">tsuzukit.com</a></div></footer>
 </body>
 </html>

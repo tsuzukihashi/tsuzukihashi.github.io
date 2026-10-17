@@ -29,6 +29,18 @@ def jp_units(n):
     return f"{n:,}"
 
 
+def en_units(n):
+    """英語表示用。1万以上は千の位で丸めて「◯K」（日本語の「◯.◯万」と同じ細かさ）、それ未満はカンマ区切り"""
+    if n >= 10000:
+        return f"{round(n / 1000):,}K"
+    return f"{n:,}"
+
+
+def units(n):
+    """日本語と英語の両方を並べる（lang.js が片方を隠す）"""
+    return f'<span class="i18n-ja">{jp_units(n)}</span><span class="i18n-en">{en_units(n)}</span>'
+
+
 apps = DATA["apps"]
 top = apps[0]["units"]
 
@@ -44,22 +56,22 @@ for i, a in enumerate(apps[:3]):
                     <div class="rk-podium-rank">{a["rank"]}</div>
                     <div class="rk-podium-icon">{icon}</div>
                     <h3 class="rk-podium-name">{esc(a["name"])}</h3>
-                    <div class="rk-podium-units">{jp_units(a["units"])}</div>
-                    <div class="rk-podium-label">ダウンロード</div>
+                    <div class="rk-podium-units">{units(a["units"])}</div>
+                    <div class="rk-podium-label"><span class="i18n-ja">ダウンロード</span><span class="i18n-en">Downloads</span></div>
                 {link_close}''')
 
 rows = []
 for a in apps[3:]:
     pct = max(a["units"] / top * 100, 0.6)
     icon = (f'<img src="{esc(a["icon_url"])}" alt="" loading="lazy">'
-            if a["icon_url"] else '<span class="rk-noicon">終</span>')
-    ended = "" if a["icon_url"] else '<span class="rk-ended">配信終了</span>'
+            if a["icon_url"] else '<span class="rk-noicon"><span class="i18n-ja">終</span><span class="i18n-en">—</span></span>')
+    ended = "" if a["icon_url"] else '<span class="rk-ended"><span class="i18n-ja">配信終了</span><span class="i18n-en">Discontinued</span></span>'
     name = esc(a["name"])
     inner = f'''<span class="rk-rank">{a["rank"]}</span>
                     <span class="rk-icon">{icon}</span>
                     <span class="rk-name">{name}{ended}</span>
                     <span class="rk-bar"><i style="width: {pct:.1f}%;"></i></span>
-                    <span class="rk-units">{jp_units(a["units"])}</span>'''
+                    <span class="rk-units">{units(a["units"])}</span>'''
     if a["app_store_url"]:
         rows.append(f'                <a class="rk-row" href="{esc(a["app_store_url"])}" target="_blank" rel="noopener">\n                    {inner}\n                </a>')
     else:
@@ -76,18 +88,22 @@ if AND:
         android_rows.append(f'''                <a class="rk-row" href="{esc(a["play_url"])}" target="_blank" rel="noopener">
                     <span class="rk-rank">{a["rank"]}</span>
                     <span class="rk-icon">{icon}</span>
-                    <span class="rk-name">{esc(a["name"])}<span class="rk-sub">いま{a["active_devices"]:,}台</span></span>
+                    <span class="rk-name">{esc(a["name"])}<span class="rk-sub"><span class="i18n-ja">いま{a["active_devices"]:,}台</span><span class="i18n-en">{a["active_devices"]:,} active devices</span></span></span>
                     <span class="rk-bar"><i class="rk-bar--and" style="width: {pct:.1f}%;"></i></span>
-                    <span class="rk-units">{jp_units(a["installs"])}</span>
+                    <span class="rk-units">{units(a["installs"])}</span>
                 </a>''')
 
 ANDROID_SECTION = ""
 if AND:
     ANDROID_SECTION = f'''
                 <h2 class="rk-subtitle">Google Play</h2>
-                <p class="rk-subnote">
+                <p class="rk-subnote i18n-ja">
                     Androidにも{AND["app_count"]}本出しています。こちらも配信開始からの<strong>累計インストール数</strong>で、
                     合計{AND["total_installs"]:,}。いま動いている端末は{AND["total_active"]:,}台です。
+                </p>
+                <p class="rk-subnote i18n-en">
+                    I've also released {AND["app_count"]} apps on Android. These are <strong>total installs</strong> since launch as well,
+                    {AND["total_installs"]:,} in all. {AND["total_active"]:,} devices are running them right now.
                 </p>
                 <div class="rk-list rk-list--android">
 {chr(10).join(android_rows)}
@@ -99,6 +115,9 @@ HTML = f'''<!DOCTYPE html>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="/assets/js/lang.js"></script>
+        <meta name="title-en" content="Download Ranking - Ryo Tsuzukihashi">
+        <meta name="description-en" content="The {DATA['app_count']} apps I've released on the App Store, ranked by total downloads. {DATA['total_units']:,} downloads in all.">
         <title>ダウンロードランキング - Ryo Tsuzukihashi</title>
         <meta name="description"
             content="App Storeで配信した{DATA['app_count']}本のアプリを、累計ダウンロード数の多い順に並べました。合計{DATA['total_units']:,}ダウンロード。">
@@ -131,7 +150,13 @@ HTML = f'''<!DOCTYPE html>
         <link rel="stylesheet" href="../../assets/css/tsuzukit.css">
 
         <!-- Favicon -->
-        <link rel="icon" href="../../favicon.ico">
+        <link rel="icon" type="image/x-icon" href="/favicon.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+        <!-- 背景を抜いているので、暗いタブバーでは黒が溶ける。そこだけ白抜きに差し替える -->
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-dark-32x32.png" media="(prefers-color-scheme: dark)">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-dark-16x16.png" media="(prefers-color-scheme: dark)">
 
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
@@ -289,10 +314,15 @@ HTML = f'''<!DOCTYPE html>
             <section class="rk-hero">
                 <div class="rk-wrap">
                     <span class="rk-badge">Download Ranking</span>
-                    <h1 class="rk-title">どれが一番<br>使われているか</h1>
-                    <p class="rk-lead">
+                    <h1 class="rk-title i18n-ja">どれが一番<br>使われているか</h1>
+                    <h1 class="rk-title i18n-en">Which ones<br>get used the most</h1>
+                    <p class="rk-lead i18n-ja">
                         App Storeに出した{DATA['app_count']}本を、配信開始から今日までの累計ダウンロード数で並べました。<br>
                         Google Playの分も下にまとめています。
+                    </p>
+                    <p class="rk-lead i18n-en">
+                        Here are the {DATA['app_count']} apps I've released on the App Store, ranked by total downloads from launch to today.<br>
+                        The Google Play numbers are further down.
                     </p>
                     <div class="rk-total">
                         <b>{DATA['grand_total']:,}</b>
@@ -313,13 +343,21 @@ HTML = f'''<!DOCTYPE html>
                 </div>
 {ANDROID_SECTION}
 
-                <p class="rk-note">
+                <p class="rk-note i18n-ja">
                     App Store Connectのトレンド（ユニット数・全期間）から取っています。Appleの表示が3桁に丸められているため、
                     1万を超えるものは概数です。アプリ内課金の販売数と、他の開発者名義で預かっているアプリは含めていません。
                     アイコンのない行は配信を終了したアプリです。Google Playの数字はPlay Consoleのインストールレポートを全期間ぶん合算したものです。
                     最終更新は{DATA['generated_at']}。
                     <br>
                     <a class="rk-back" href="/portfolio/">&larr; ポートフォリオに戻る</a>
+                </p>
+                <p class="rk-note i18n-en">
+                    These figures come from App Store Connect Trends (units, all time). Apple rounds what it shows to three digits,
+                    so anything over 10,000 is approximate. In-app purchase sales and apps I look after under other developers' names are not included.
+                    Rows without an icon are apps that are no longer available. The Google Play figures are the Play Console install reports added up over all time.
+                    Last updated {DATA['generated_at']}.
+                    <br>
+                    <a class="rk-back" href="/portfolio/">&larr; Back to the portfolio</a>
                 </p>
             </div>
         </main>

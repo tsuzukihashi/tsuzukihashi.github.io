@@ -17,6 +17,16 @@
   const filterClear = document.getElementById('filterClear');
   const appGrid = document.getElementById('appGrid');
 
+  // 言語（lang.js が決める。読み込まれていなければ日本語）
+  const IS_EN = window.tsuzukitLang === 'en';
+
+  // <option> は中に span を置けないので、英語表示のときは data-en の文言に差し替える
+  if (IS_EN) {
+    document.querySelectorAll('#categoryFilter option[data-en], #sortFilter option[data-en]').forEach(option => {
+      option.textContent = option.dataset.en;
+    });
+  }
+
   /**
    * Initialize the filter functionality
    */
@@ -66,6 +76,8 @@
       if (appData) {
         card.dataset.appId = appData.id;
         card.dataset.name = appData.name || '';
+        // 検索は日本語名でも英語名でも当たるようにする
+        card.dataset.searchName = [appData.name, appData.name_en].filter(Boolean).join(' ');
         card.dataset.category = appData.primary_genre || '';
         card.dataset.releaseDate = appData.release_date || '';
         card.dataset.updateDate = appData.current_version_release_date || '';
@@ -114,7 +126,7 @@
     let visibleCards = [];
 
     appCards.forEach(card => {
-      const name = (card.dataset.name || '').toLowerCase();
+      const name = (card.dataset.searchName || card.dataset.name || '').toLowerCase();
       const cardCategory = card.dataset.category || '';
 
       const matchesSearch = !searchTerm || name.includes(searchTerm);
@@ -214,7 +226,11 @@
     const total = appCards.length;
     const visible = count !== undefined ? count : total;
 
-    if (visible === total) {
+    if (IS_EN) {
+      filterResults.textContent = visible === total
+        ? `Showing ${total} apps`
+        : `Showing ${visible} of ${total} apps`;
+    } else if (visible === total) {
       filterResults.textContent = `${total}件表示中`;
     } else {
       filterResults.textContent = `${visible}/${total}件表示中`;
@@ -232,8 +248,8 @@
         noResultsEl.className = 'no-results';
         noResultsEl.innerHTML = `
           <img class="no-results-char" src="/assets/images/character-surprised.png" alt="" width="293" height="340">
-          <h3>見つかりませんでした</h3>
-          <p>別のことばか、ほかのカテゴリで探してみてください</p>
+          <h3>${IS_EN ? 'No apps found' : '見つかりませんでした'}</h3>
+          <p>${IS_EN ? 'Try a different word or another category' : '別のことばか、ほかのカテゴリで探してみてください'}</p>
         `;
         appGrid.parentNode.insertBefore(noResultsEl, appGrid.nextSibling);
       }

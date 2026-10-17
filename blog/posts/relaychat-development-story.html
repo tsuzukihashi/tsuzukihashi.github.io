@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/js/lang.js"></script>
+    <meta name="title-en" content="[Behind the Scenes] Turning &quot;No Signal&quot; into Peace of Mind: How I Built the Offline Social App RelayChat All by Myself - Blog | Ryo Tsuzukihashi">
+    <meta name="description-en" content="The story of building RelayChat on my own, an offline messaging app that needs no internet and no cell signal at all. The full record of the technical challenges and my battle with App Review.">
     <title>【開発秘話】圏外を、安心に。僕がオフラインSNS「RelayChat」をたった一人で作り上げた物語 - Blog | Ryo Tsuzukihashi</title>
     <meta name="description" content="個人開発でインターネットも携帯電波も一切不要なオフラインメッセージアプリ「RelayChat」を開発した物語。技術的な挑戦とApple審査との闘いの全記録。">
     <meta name="keywords" content="RelayChat, オフライン通信, 個人開発, P2P, メッシュネットワーク, Bluetooth, iOS開発">
@@ -74,14 +77,14 @@
     <article class="blog-post">
         <header class="post-header">
             <div class="post-meta">
-                <span class="post-date">2025年8月10日</span>
-                <span class="post-category">開発記録</span>
-                <span class="post-reading-time">15分で読める</span>
+                <span class="post-date"><span class="i18n-ja">2025年8月10日</span><span class="i18n-en">August 10, 2025</span></span>
+                <span class="post-category"><span class="i18n-ja">開発記録</span><span class="i18n-en">Dev Log</span></span>
+                <span class="post-reading-time"><span class="i18n-ja">15分で読める</span><span class="i18n-en">15 min read</span></span>
             </div>
-            <h1 class="post-title">【開発秘話】圏外を、安心に。<br>僕がオフラインSNS「RelayChat」を<br>たった一人で作り上げた物語</h1>
+            <h1 class="post-title"><span class="i18n-ja">【開発秘話】圏外を、安心に。<br>僕がオフラインSNS「RelayChat」を<br>たった一人で作り上げた物語</span><span class="i18n-en">[Behind the Scenes] Turning "No Signal" into Peace of Mind:<br>How I Built the Offline Social App RelayChat<br>All by Myself</span></h1>
         </header>
 
-        <div class="post-content">
+        <div class="post-content i18n-ja">
             <p>
                 この度、個人開発でインターネットも携帯電波も一切不要なオフラインメッセージアプリ「RelayChat」をApp Storeにリリースしました。
             </p>
@@ -344,10 +347,273 @@
             </p>
         </div>
 
+        <div class="post-content i18n-en">
+            <p>
+                I've just released RelayChat on the App Store, an offline messaging app I built on my own that needs no internet and no cell signal at all.
+            </p>
+
+            <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">新作アプリ「リレーチャット」をリリースしました🚀<br><br>オフラインでも近くのスマホ同士がつながり、メッセージをバケツリレーのように運びます📦<br><br>アウトドアのイベントでは仲間と楽しむためのツールに<br>災害などの非常時には家族や友人との命綱に<br><br>圏外でも、繋がれるコミュニケーションアプリ誕生🎈 <a href="https://t.co/MkpxduX3m1">pic.twitter.com/MkpxduX3m1</a></p>&mdash; ツヅキ＠限界個人開発 (@tsuzuki817) <a href="https://twitter.com/tsuzuki817/status/1953332019275944096?ref_src=twsrc%5Etfw">August 7, 2025</a></blockquote>
+            
+            <p>
+                The app uses Bluetooth, the wireless technology every smartphone has, and works peer-to-peer (P2P), connecting you directly with the people around you.
+            </p>
+            
+            <blockquote class="twitter-tweet" data-media-max-width="560"><p lang="ja" dir="ltr">インターネット接続をオフにした状態でチャットができる様子です🟦🦷 <a href="https://t.co/AdWBOXJnoK">https://t.co/AdWBOXJnoK</a> <a href="https://t.co/NYAC1jqa2W">pic.twitter.com/NYAC1jqa2W</a></p>&mdash; ツヅキ＠限界個人開発 (@tsuzuki817) <a href="https://twitter.com/tsuzuki817/status/1953373939704672356?ref_src=twsrc%5Etfw">August 7, 2025</a></blockquote>
+            
+            <div class="explanation-box">
+                <strong>Quick explainer: what is P2P?</strong>
+                A way for phones to talk to each other directly, with no server in between. Unlike LINE, messages never pass through a company server first.
+            </div>
+            
+            <p>
+                On top of that, users' phones automatically act as relay stations, forming what's called a <strong>"mesh network"</strong> that carries messages far away, hand to hand like a bucket brigade.
+            </p>
+            
+            <blockquote>
+                "Turning no signal into peace of mind. Your everyday chats, ready for when things go wrong."
+            </blockquote>
+            
+            <p>
+                Here I want to put down the full record: the feelings behind that subtitle, the technical challenges of turning one idea into something real, and my battle with Apple (lol).
+            </p>
+            
+            <h2>It all started with "no signal" at a summer festival</h2>
+            
+            <p>
+                We live in a world where being online is as natural as breathing.
+            </p>
+            
+            <p>
+                So why would someone like me go "offline"? It goes back to a summer music festival a few years ago.
+            </p>
+            
+            <p>
+                My favorite artist was on stage. The roaring sound, tens of thousands of fans going wild. Right at the peak of it all, I realized I'd lost my friends. I pulled out my phone to say "let's meet up later", but the message wouldn't send. I had bars, but there were so many people that the network was jammed.
+            </p>
+            
+            <p>
+                It was the same at campsites. Surrounded by beautiful nature, I wanted to share the moment with friends in real time, but there was no signal. My phone had turned into a heavy slab.
+            </p>
+            
+            <p>
+                "Why can't we connect when we're this close to each other?"<br>
+                "If only phones could just talk to each other directly…"
+            </p>
+            
+            <p>
+                Out of that frustration and pure technical curiosity, a vague idea took root in me: "With Bluetooth, couldn't I build an app that lets people talk without a server?" At that point it was still more of a pipe dream, with no concrete shape.
+            </p>
+            
+            <h2>Meeting my partner, Claude Code, and the idea evolving</h2>
+            
+            <p>
+                Then came the big turning point that moved that pipe dream toward reality: the arrival of the AI assistant Claude Code.
+            </p>
+            
+            <p>
+                When I threw the fuzzy idea in my head at Claude Code, I got back surprisingly precise design proposals and code snippets. It felt like pair programming with a great engineer. One after another, I got past technical walls I probably couldn't have climbed alone.
+            </p>
+            
+            <p>
+                As I kept bouncing ideas off Claude Code, my idea got sharper and sharper.
+            </p>
+            
+            <p>
+                What settled it was the news of the 2024 Noto Peninsula earthquake. Seeing communication networks cut off with my own eyes made me realize the real mission my app should have.
+            </p>
+            
+            <blockquote>
+                "This isn't just a handy tool. It might be a lifeline that saves people's lives."
+            </blockquote>
+            
+            <p>
+                And so the "no-signal problem app", born from my own experience, found a partner in Claude Code and evolved into RelayChat's firm concept: <strong>"everyday fun and peace of mind in an emergency, both at once"</strong>.
+            </p>
+            
+            <h2>A fork in the road: Multipeer or Core Bluetooth?</h2>
+            
+            <p>
+                When you want P2P communication on iOS, the first thing most developers think of is probably the <strong>Multipeer Connectivity Framework</strong>.
+            </p>
+            
+            <div class="explanation-box">
+                <strong>Quick explainer: what is Multipeer Connectivity?</strong>
+                Think of it as a luxury limo Apple provides, with everything taken care of. It's a handy tool that makes discovering devices, connecting, and sending and receiving data surprisingly easy to implement.
+            </div>
+            
+            <p>
+                But what I chose was the lower-level, much fussier <strong>Core Bluetooth</strong>.
+            </p>
+            
+            <div class="explanation-box">
+                <strong>Quick explainer: what is Core Bluetooth?</strong>
+                It’s like "getting out of the limo and building the engine yourself": a tool that gives you lots of freedom but takes lots of work. You can write the rules of communication yourself from scratch.
+            </div>
+            
+            <p>
+                Why take the thorny path on purpose? Because I cared about a "true mesh network" and "privacy".
+            </p>
+            
+            <p>
+                Multipeer Connectivity is really meant for connecting with "a few devices nearby". It didn't give me the freedom to build my own complex network where devices relay for other devices and keep widening the circle.
+            </p>
+            
+            <p>
+                I also felt strongly how important anonymity and security were. If I wanted to control every bit of the communication myself and add encryption down the road, the only option was Core Bluetooth, where I can design every single GATT characteristic myself.
+            </p>
+            
+            <div class="explanation-box">
+                <strong>Quick explainer: what are GATT and characteristics?</strong>
+                GATT is something like "the blueprint for Bluetooth communication". Characteristics are the concrete "containers for information" written into that blueprint, such as messages or profiles.
+            </div>
+            
+            <h2>Design and implementation: getting past the serverless wall</h2>
+            
+            <p>
+                The heart of RelayChat is a design where every device plays both roles at the same time: <strong>"central" (the one searching) and "peripheral" (the one being found)</strong>.
+            </p>
+            
+            <ol>
+                <li>When you open the app, it constantly sends out advertising packets announcing that you're there (peripheral),</li>
+            </ol>
+            
+            <div class="explanation-box">
+                <strong>Quick explainer: what is an advertising packet?</strong>
+                A small radio signal that announces your presence, shouting "There’s a RelayChat user over here!"
+            </div>
+            
+            <ol start="2">
+                <li>and at the same time starts looking for other RelayChat users nearby (central).</li>
+                <li>When it finds a user, it connects right away.</li>
+                <li>When you send a message, it's broadcast to everyone you're connected to.</li>
+                <li>When it receives a message, even one not meant for you, it automatically forwards (relays) it to the other people you're connected to, except the sender.</li>
+            </ol>
+            
+            <p>
+                With this simple flooding algorithm, the more users there are, the faster the network multiplies outward.
+            </p>
+            
+            <div class="explanation-box">
+                <strong>Quick explainer: what is flooding?</strong>
+                A simple mechanism where a received message is copied and forwarded to every connection except yourself. Picture information spreading all at once, like a "flood".
+            </div>
+            
+            <p>
+                Then, to protect privacy, I implemented end-to-end encryption with CryptoKit.
+            </p>
+            
+            <div class="explanation-box">
+                <strong>Quick explainer: what are CryptoKit and end-to-end encryption?</strong>
+                CryptoKit is Apple’s "toolbox for encryption". End-to-end encryption is a strong encryption technique, also used by apps like LINE, where "only the sender and the recipient can read the contents".
+            </div>
+            
+            <p>
+                The group of users nearby generates and shares a temporary common key, and all communication is encrypted. Devices (people) that only relay a message can't see any of its contents.
+            </p>
+            
+            <h2>The App Store's red wall: battling Guideline 1.2</h2>
+            
+            <p>
+                Development went smoothly, and I finally submitted the app to Apple, fully confident. But what arrived a few days later was a merciless rejection.
+            </p>
+            
+            <blockquote>
+                Guideline 1.2 - Safety - User Generated Content<br>
+                Your app lets users post content anonymously, but it doesn't have appropriate precautions in place.
+            </blockquote>
+            
+            <p>
+                For a serverless, anonymous app, this was the feedback I'd feared most. Apple was asking for everything you'd normally build on the server side: filtering of objectionable content, reporting, blocking, and "action by the developer within 24 hours".
+            </p>
+            
+            <p>
+                I was at a loss. Without a server, how was I supposed to kick users out or delete posts?
+            </p>
+            
+            <p>
+                But I couldn't give up there. My past development experience told me, "just change the approach and try again".
+            </p>
+            
+            <p>
+                The answer I came up with was to "hand moderation powers to the users themselves".
+            </p>
+            
+            <h3>Client-side filter</h3>
+            <p>
+                First, I built in a list of inappropriate words and added a feature that automatically masks them when messages are sent and received.
+            </p>
+            
+            <div class="explanation-box">
+                <strong>Quick explainer: what does client-side mean?</strong>
+                The processing happens inside the app on your phone, not on a server.
+            </div>
+            
+            <h3>Instant reporting and blocking</h3>
+            <p>
+                I made it so you can long-press any message to "report" it. A reported message disappears from that user's screen immediately. At the same time, the sender's anonymous ID goes into a block list on the device, and messages from that person never show up again.
+            </p>
+            
+            <h3>Explaining it to Apple</h3>
+            <p>
+                Then, in my reply to App Review, I wrote this:<br>
+                "Because this app is P2P by nature, it can't remove users through a central server. Instead, it has a strong client-side filter and reporting and blocking that let users instantly shut out unpleasant experiences themselves, so inappropriate posts can be stopped before they spread."
+            </p>
+            
+            <p>
+                I made agreeing to the terms of use mandatory, raised the age rating to "17+", and resubmitted, practically praying.<br>
+                A few days later the "Ready for Sale" notice finally came. I actually yelled out loud.
+            </p>
+            
+            <h2>Two futures RelayChat is aiming for</h2>
+            
+            <p>
+                That's how RelayChat made it into the world. The app is aiming for two futures.
+            </p>
+            
+            <p>
+                The first is "a future where it's a lifeline when things go wrong".<br>
+                If this app can someday, somewhere, give someone "peace of mind". If it can help someone get the words "I'm okay" to the people they love during a disaster. As a developer, there's no greater joy than that.
+            </p>
+            
+            <p>
+                But RelayChat isn't just a serious app. The other future is <strong>"one where ordinary days get a little more exciting"</strong>.
+            </p>
+            
+            <p>
+                The secret chat I dreamed of as a student, for sneakily talking with the class next door during lessons.<br>
+                A one-time social network on a long-haul flight, connecting only the people on the same plane.<br>
+                Riders who happen to meet at a highway rest area swapping info like "How's the weather up ahead?"
+            </p>
+            
+            <p>
+                "Peace of mind" in an emergency, "fun" in everyday life.<br>
+                They look completely different, but they share the same root: <strong>"using technology to shrink both the physical distance and the distance between hearts"</strong>.
+            </p>
+            
+            <p>
+                I think this challenge shows how far you can get with nothing but an individual engineer's skills and passion, no huge capital or organization required. The lean development I learned at PayPay Flea Market, the agile thinking drilled into me at Pococha, and the care for the many users I face every day at ZOZOTOWN. I poured all of the experience I've gained so far into this.
+            </p>
+            
+            <p>
+                If this behind-the-scenes story gives a gentle push to someone who also wants to build something, I'll be truly happy.
+            </p>
+            
+            <p>
+                Thanks for reading all the way to the end.<br>
+                If you'd like, download RelayChat from the App Store and put a "backup for emergencies" and a little "everyday excitement" on your phone.
+            </p>
+            
+            <p style="text-align: center; margin-top: var(--spacing-2xl);">
+                <a href="https://apps.apple.com/jp/app/relaychat-%E3%83%AA%E3%83%AC%E3%83%BC%E3%83%81%E3%83%A3%E3%83%83%E3%83%88-%E3%82%AA%E3%83%95%E3%83%A9%E3%82%A4%E3%83%B3%E4%BC%9A%E8%A9%B1/id6749299283" target="_blank">
+                    <img src="/assets/images/download-on-the-appstore.svg" alt="Download on the App Store" style="height: 60px;">
+                </a>
+            </p>
+        </div>
+
         <nav class="post-navigation">
             <img class="tk-char tk-char--post" src="/assets/images/character-hang.png" alt="" width="381" height="208">
             <a href="/blog/" class="nav-link-wrapper">
-                <span>← ブログ一覧に戻る</span>
+                <span>← <span class="i18n-ja">ブログ一覧に戻る</span><span class="i18n-en">Back to the blog</span></span>
             </a>
         </nav>
     </article>
@@ -359,13 +625,13 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
-                    <p class="footer-description">誰も作らないものを、まじめに作る</p>
+                    <p class="footer-description"><span class="i18n-ja">誰も作らないものを、まじめに作る</span><span class="i18n-en">I make things nobody else would, and I make them seriously</span></p>
                 </div>
                 <div class="footer-nav">
-                    <a href="/legal/privacy-policy.html">プライバシーポリシー</a>
-                    <a href="/legal/terms-of-service.html">利用規約</a>
-                    <a href="/legal/commercial-law.html">特定商取引法</a>
-                    <a href="/legal/disclaimer.html">免責事項</a>
+                    <a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
+                    <a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
+                    <a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
+                    <a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a>
                 </div>
             </div>
             <div class="footer-bottom">

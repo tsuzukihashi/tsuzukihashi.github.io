@@ -3,8 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="/assets/js/lang.js"></script>
 <title>プライバシーポリシー - 昆虫大戦</title>
 <meta name="description" content="昆虫大戦（BEETLE WARS）のプライバシーポリシー。氏名・メールアドレスは取得しません。セーブデータを守るための匿名IDと、任意のクラウドバックアップについて説明しています。">
+<meta name="title-en" content="Privacy Policy - Beetle Wars">
+<meta name="description-en" content="Privacy Policy for Beetle Wars (昆虫大戦). The app does not collect your name or email address. This page explains the anonymous ID used to protect save data and the optional cloud backup.">
 <link rel="canonical" href="https://tsuzukit.com/beetlewars/privacy.html">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#0a0a0a">
@@ -24,17 +27,17 @@
 
 <header>
   <div class="hbar">
-    <a class="hbrand" href="/beetlewars/"><img src="icon.webp" alt="" width="30" height="30">昆虫大戦</a>
+    <a class="hbrand" href="/beetlewars/"><img src="icon.webp" alt="" width="30" height="30"><span class="i18n-ja">昆虫大戦</span><span class="i18n-en">Beetle Wars</span></a>
     <nav class="hnav">
-      <a href="/beetlewars/">アプリ紹介</a>
-      <a href="support.html">サポート</a>
-      <a href="privacy.html">プライバシー</a>
-      <a href="terms.html">利用規約</a>
+      <a href="/beetlewars/"><span class="i18n-ja">アプリ紹介</span><span class="i18n-en">About the App</span></a>
+      <a href="support.html"><span class="i18n-ja">サポート</span><span class="i18n-en">Support</span></a>
+      <a href="privacy.html"><span class="i18n-ja">プライバシー</span><span class="i18n-en">Privacy</span></a>
+      <a href="terms.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms</span></a>
     </nav>
   </div>
 </header>
 
-<main class="doc wrap">
+<main class="doc wrap i18n-ja">
   <div class="doc-head">
     <p class="en">PRIVACY POLICY</p>
     <h1>プライバシーポリシー</h1>
@@ -171,13 +174,157 @@
   </div>
 </main>
 
+<main class="doc wrap i18n-en" lang="en">
+  <div class="doc-head">
+    <p class="en">PRIVACY POLICY</p>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Beetle Wars (昆虫大戦) / Last updated: August 11, 2026</p>
+  </div>
+
+  <div class="callout">
+    This is an English translation for convenience. If there is any discrepancy, the Japanese version prevails.
+  </div>
+
+  <div class="lede">
+    <strong>Summary of this policy</strong><br>
+    This app does not collect your name, email address, or phone number. It contains no ads and no analytics.
+    To protect your save data, it obtains a <strong>random anonymous ID</strong> from Google (Firebase) on first launch.
+    Save data is stored on your device, and a copy is also stored in the cloud <strong>only if you run "Back Up"</strong>.
+    You can <strong>delete the cloud copy and the anonymous ID from within the app at any time</strong>.
+  </div>
+
+  <h2>1. Provider</h2>
+  <table>
+    <tr><th>Provider</th><td>Ryo Tsuzukihashi (independent developer / TsuzuKit)</td></tr>
+    <tr><th>App name</th><td>Beetle Wars (昆虫大戦)</td></tr>
+    <tr><th>Platforms</th><td>iOS / iPadOS / Android</td></tr>
+    <tr><th>Contact</th><td>ryo.tsuzukihashi@tsuzukit.com</td></tr>
+  </table>
+  <p>This policy applies to the app above and to its introduction pages (under <code>https://tsuzukit.com/beetlewars/</code>).</p>
+
+  <h2>2. What we do not collect</h2>
+  <p>This app <strong>does not collect your name, email address, phone number, postal address, date of birth, location, contacts, photos, or device identifiers (including IDFA / advertising ID).</strong> It includes no advertising, no analytics (such as Google Analytics), and no crash report collection.</p>
+
+  <h2>3. What we collect</h2>
+  <p>To protect your save data, the app handles the following information. This is the complete list; nothing else is handled.</p>
+  <table class="cols3">
+    <tr><th>What</th><th>Details</th><th>When</th></tr>
+    <tr>
+      <td>Anonymous ID</td>
+      <td>A random string. It is not linked to your name, email address, or device identifiers, and it does not reveal who you are</td>
+      <td>Automatically on first launch</td>
+    </tr>
+    <tr>
+      <td>IP address</td>
+      <td>By the nature of network communication, it reaches the destination (Google). The developer does not store or view it</td>
+      <td>Each time the app communicates</td>
+    </tr>
+    <tr>
+      <td>Save data</td>
+      <td>The contents listed in the table below (player name, progress, and so on)</td>
+      <td><strong>Only when you run "Back Up"</strong></td>
+    </tr>
+  </table>
+  <p>This information is stored in Firebase Authentication and Cloud Firestore, provided by Google LLC. The storage location is the <strong>Tokyo region (asia-northeast1)</strong>.</p>
+
+  <div class="callout">
+    <b>About the anonymous ID.</b> This is not account registration. You do not enter an email address or password.
+    It is a meaningless random string used only to link "the data on this device" with "the copy in the cloud".
+  </div>
+  <div class="callout">
+    <b>No one but you can open your cloud copy.</b> The storage is configured so that only the owner of that ID can read or write it
+    (Firestore Security Rules), and other users cannot read it.
+    The developer is technically able to view the contents with administrator privileges, but <strong>does so only when necessary, such as when investigating a bug</strong>.
+  </div>
+  <div class="callout warn">
+    <b>You can delete it.</b> From Settings → Data Transfer → Delete Cloud Data in the app,
+    you can delete the cloud copy and the anonymous ID together. After deletion, a new anonymous ID is assigned on the next launch.
+    Requests by email are also accepted.
+  </div>
+
+  <h3>What the app stores on your device</h3>
+  <p>The following data is stored in the area the OS assigns to each app (a place other apps cannot read).</p>
+  <table>
+    <tr><th>What is stored</th><th>Details</th></tr>
+    <tr><td>Save data</td><td>Player name (default: "Player"), a user ID generated automatically in the game, level, beetles, move cards and materials you own, in-game currency (Coins and Jewels), progress, and mission completion status</td></tr>
+    <tr><td>Settings</td><td>Volume, effect skipping, and haptic feedback on/off</td></tr>
+    <tr><td>Captured images</td><td>PNG images saved with "Capture" on the home screen</td></tr>
+  </table>
+  <div class="callout">
+    <b>About the <code>BW-XXXXXXXX</code> shown in the app.</b> This is a display ID generated automatically on your device.
+    It is separate from the anonymous ID above and is not linked to your name, email address, or device identifiers.
+  </div>
+  <div class="callout">
+    <b>About the "Capture" feature.</b> Screen images are saved in the app's own storage area. Saving to the Camera Roll (photo library) is not supported, so
+    <strong>the app never asks for permission to access your photos</strong>. It does not use the camera either.
+  </div>
+  <div class="callout warn">
+    <b>About data loss.</b> Deleting the app erases the save data on your device.
+    If you have run "Back Up", you can restore from the cloud copy <strong>on the same device</strong>.
+    However, <strong>transferring data to a new device (linking an Apple / Google account) has not been implemented yet.</strong>
+    Please note that the copy cannot be retrieved on a different device. This page will be revised when that feature is implemented.
+  </div>
+
+  <h3>Permissions the app requests</h3>
+  <p>This app does not request permission for location, camera, microphone, photos, contacts, calendar, Health, or tracking (App Tracking Transparency).</p>
+  <p>It does use network communication (as described in "What we collect" above). Even without a connection, the story, repeatable quests, arena, and gacha remain fully playable.</p>
+
+  <h2>4. In-app purchases</h2>
+  <p>This app plans to offer in-app purchases (buying the in-game currency "Jewels") in the future. All payments for purchases are processed through Apple (App Store) or Google (Google Play).</p>
+  <ul>
+    <li><strong>The developer never obtains payment information</strong> such as credit card numbers. You enter it with Apple / Google, and the developer cannot see it.</li>
+    <li>If purchase validation (receipt verification) is performed on a server in the future, this policy will be revised first to state clearly what is sent. Sending will never begin without notice before implementation.</li>
+  </ul>
+  <p>For how Apple and Google handle personal information, please refer to each company's privacy policy.</p>
+
+  <h2>5. Disclosure to third parties and external transmission</h2>
+  <p>The items in "What we collect" above are entrusted to Google LLC (Firebase Authentication / Cloud Firestore) <strong>solely for storage</strong>. They are not provided to or shared with any other third party. No ad networks, analytics tools (such as Google Analytics), or crash report collection tools are used. For how Google handles this information, please refer to its privacy policy.</p>
+  <p>We may comply with a lawful request for disclosure from a court, investigative authority, or similar body based on applicable law.</p>
+
+  <h2>6. Use by children</h2>
+  <p>This app is a battle game themed around insects, and children may use it. It never asks for a name, email address, or date of birth, and it does not collect personally identifiable information from users of any age.</p>
+  <p>However, it is planned to include in-app purchases. To prevent unintended purchases, we recommend setting restrictions with your device's features.</p>
+  <ul>
+    <li><strong>iOS / iPadOS</strong>: Settings → Screen Time → Content &amp; Privacy Restrictions → set "In-app Purchases" to "Don't Allow"</li>
+    <li><strong>Android</strong>: Google Play → Settings → Authentication → "Require authentication for purchases"</li>
+  </ul>
+
+  <h2>7. About this introduction page (website)</h2>
+  <p>This page is hosted on GitHub Pages (GitHub, Inc.). The page itself does not use cookie-based tracking or analytics tags. Please note the following, however.</p>
+  <ul>
+    <li>As with any ordinary website, the hosting provider's servers may keep technical records such as access time, IP address, and browser type. The developer does not view or analyze them.</li>
+    <li>This page uses Google Fonts (Google LLC) for display. When the fonts load, your device's IP address is sent to Google.</li>
+    <li>If you move from this page to an external site (App Store, Google Play, etc.), information there is handled according to that site's policies.</li>
+  </ul>
+
+  <h2>8. Information received through inquiries</h2>
+  <p>If you contact us by email, we keep your email address and the contents of your message in order to reply. These are used <strong>only to respond to your inquiry and to fix bugs</strong>, and are not provided to third parties. They are deleted once the matter is resolved and there is no longer a need to keep them.</p>
+
+  <h2>9. Security</h2>
+  <p>Only the developer has access to the inquiries we receive. The app's save data is stored using the OS mechanism that isolates each app's storage, so other apps cannot read it.</p>
+
+  <h2>10. Requests for disclosure, correction, or deletion</h2>
+  <p>You can delete the cloud copy and anonymous ID yourself from Settings → Data Transfer → Delete Cloud Data in the app. Requests by email are also accepted.</p>
+  <p>Because the developer does not hold names, email addresses, or similar information, there is no such information subject to disclosure or correction. If you would like an inquiry email deleted, please let us know at the contact below.</p>
+
+  <h2>11. Changes to this policy</h2>
+  <p>This policy may be revised in response to changes in law or new features (such as real-time battles, data transfer, receipt verification, and other features involving network communication). <strong>If a revision increases the information collected, this page will be updated and its last-updated date changed before that feature is enabled.</strong> Important changes will also be announced in the app.</p>
+
+  <div class="contact">
+    <h2>Contact</h2>
+    <p>For questions about this policy or the handling of personal information, please contact:</p>
+    <p class="mail">ryo.tsuzukihashi@tsuzukit.com</p>
+    <p style="margin-bottom:0">Inquiries are accepted by email only. A reply may take a few days.</p>
+  </div>
+</main>
+
 <footer>
   <div class="wrap">
     <nav>
-      <a href="/beetlewars/">昆虫大戦</a>
-      <a href="support.html">サポート</a>
-      <a href="terms.html">利用規約</a>
-      <a href="/legal/commercial-law.html">特定商取引法に基づく表記</a>
+      <a href="/beetlewars/"><span class="i18n-ja">昆虫大戦</span><span class="i18n-en">Beetle Wars</span></a>
+      <a href="support.html"><span class="i18n-ja">サポート</span><span class="i18n-en">Support</span></a>
+      <a href="terms.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
+      <a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法に基づく表記</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
       <a href="https://tsuzukit.com/">tsuzukit.com</a>
     </nav>
     <p>© 2026 TsuzuKit</p>

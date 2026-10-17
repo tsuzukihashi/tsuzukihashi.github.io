@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/js/lang.js"></script>
+    <meta name="title-en" content="How a &quot;Team of Three&quot;, Me and Two AI Agents, Built a Daydream Travel Camera at Full Speed [Daydream Camera] - Blog | Ryo Tsuzukihashi">
+    <meta name="description-en" content="A record of building Daydream Camera at full speed with Gemini and Claude Code: a daydream travel camera where you drop a pin on a map and AI develops a landscape photo. I walk through the MVVM + protocol-oriented design, the security work and the monetization design.">
     <title>AIエージェントと「3人」で、空想旅行カメラを爆速開発した話【Daydream Camera】 - Blog | Ryo Tsuzukihashi</title>
     <meta name="description" content="地図上にピンを刺すだけでAIが風景写真を現像してくれる空想旅行カメラ「Daydream Camera」を、GeminiとClaude Codeと共に爆速開発した記録。MVVM + Protocol指向設計、セキュリティ実装、マネタイズ設計まで詳しく解説。">
     <meta name="keywords" content="Daydream Camera, AI, iOS開発, 個人開発, Gemini, Claude Code, SwiftUI, Firebase, MapKit">
@@ -231,14 +234,14 @@
     <article class="blog-post">
         <header class="post-header">
             <div class="post-meta">
-                <span class="post-date">2025年12月6日</span>
-                <span class="post-category">iOS開発</span>
-                <span class="post-reading-time">12分で読める</span>
+                <span class="post-date"><span class="i18n-ja">2025年12月6日</span><span class="i18n-en">December 6, 2025</span></span>
+                <span class="post-category"><span class="i18n-ja">iOS開発</span><span class="i18n-en">iOS Development</span></span>
+                <span class="post-reading-time"><span class="i18n-ja">12分で読める</span><span class="i18n-en">12 min read</span></span>
             </div>
-            <h1 class="post-title">AIエージェントと「3人」で、<br>空想旅行カメラを爆速開発した話<br>【Daydream Camera】</h1>
+            <h1 class="post-title"><span class="i18n-ja">AIエージェントと「3人」で、<br>空想旅行カメラを爆速開発した話<br>【Daydream Camera】</span><span class="i18n-en">How a "Team of Three", Me and Two AI Agents,<br>Built a Daydream Travel Camera at Full Speed<br>[Daydream Camera]</span></h1>
         </header>
 
-        <div class="post-content">
+        <div class="post-content i18n-ja">
             <div class="app-icon-container">
                 <img src="/assets/images/blog/daydream-camera-icon.jpeg" alt="Daydream Camera" class="app-icon">
                 <p class="app-icon-caption">Daydream Camera - 空想旅行カメラ</p>
@@ -432,10 +435,204 @@
             </p>
         </div>
 
+        <div class="post-content i18n-en">
+            <div class="app-icon-container">
+                <img src="/assets/images/blog/daydream-camera-icon.jpeg" alt="Daydream Camera" class="app-icon">
+                <p class="app-icon-caption">Daydream Camera - a camera for daydream travel</p>
+            </div>
+
+            <p>
+                Hi, I'm tsuzuki817 (<a href="https://twitter.com/tsuzuki817" target="_blank">@tsuzuki817</a>), an iOS engineer at ZOZOTOWN.
+            </p>
+
+            <p>
+                This post is about building <strong>Daydream Camera</strong> together with AI agents. It's a camera app where <strong>you just drop a pin on a map, and AI reads that spot's latitude and longitude, weather and time of day, then "develops" a landscape photo for you</strong>.
+            </p>
+
+            <blockquote>
+                "AI dreams up the scenery of the place you want to go."
+            </blockquote>
+
+            <p>
+                That's the concept. It's a daydream travel app designed to feel like using a film camera.
+            </p>
+
+            <h1>The product: what is a daydream travel camera?</h1>
+
+            <p>
+                <strong>Daydream Camera</strong> is an app where you drop a pin anywhere on the map and AI "develops" a landscape photo of that place.
+            </p>
+
+            <ul>
+                <li>Pick a place you want to go on the map</li>
+                <li>AI interprets the latitude, longitude, local weather and time of day</li>
+                <li>Wait for it to "develop", just like with a film camera</li>
+                <li>A dreamlike landscape photo arrives</li>
+            </ul>
+
+            <p>
+                It really is a camera app that lets you travel in your imagination. Even places you can't actually visit, you can enjoy through the AI's imagination.
+            </p>
+
+            <h1>The team: an AI-native approach</h1>
+
+            <p>
+                For this project I <strong>focused entirely on deciding the spec, as the "director"</strong>, and handed implementation to two AI agents.
+            </p>
+
+            <div class="role-box">
+                <strong>The development team</strong>
+                <ul style="margin-bottom: 0;">
+                    <li><strong>Me (director)</strong>: deciding the spec, final review, release decisions</li>
+                    <li><strong>Gemini (PM/designer)</strong>: fleshing out ideas, cost calculations, logo, ASO</li>
+                    <li><strong>Claude Code (implementation engineer)</strong>: generating Swift/SwiftUI code, setting up Firebase</li>
+                </ul>
+            </div>
+
+            <p>
+                Building as a "team of three" with AI agents was a new approach that broke through the limits of solo development.
+            </p>
+
+            <h1>Technical architecture</h1>
+
+            <h2>Pattern: MVVM + protocol-oriented design</h2>
+
+            <p>
+                Following SwiftUI's modern design philosophy, I went with MVVM and protocol-oriented design.
+            </p>
+
+            <div class="tech-stack-box">
+                <h4>Main tech stack</h4>
+                <div class="tech-stack-grid">
+                    <div class="tech-item"><strong>iOS:</strong> 17+</div>
+                    <div class="tech-item"><strong>UI:</strong> SwiftUI + @Observable macro</div>
+                    <div class="tech-item"><strong>Persistence:</strong> SwiftData</div>
+                    <div class="tech-item"><strong>Maps:</strong> MapKit (Look Around)</div>
+                    <div class="tech-item"><strong>AI:</strong> Firebase AI (Gemini 3 Pro Image)</div>
+                    <div class="tech-item"><strong>Ads:</strong> AdMob</div>
+                </div>
+            </div>
+
+            <h2>Keeping external dependencies to a minimum</h2>
+
+            <p>
+                The only external libraries are Firebase and AdMob. I work with the Keychain directly through the Security framework.
+            </p>
+
+            <div class="explanation-box">
+                <strong>Why minimize external dependencies?</strong>
+                <p style="margin-bottom: 0;">
+                    When you build alone, long-term maintenance matters. Depending on external libraries means you have to keep up with every update they ship. Keeping dependencies to the bare minimum cuts my maintenance cost.
+                </p>
+            </div>
+
+            <h1>Why MapKit: making use of Look Around</h1>
+
+            <p>
+                I chose MapKit for the map. There were reasons I went with Apple's Look Around instead of Google Maps Street View.
+            </p>
+
+            <div class="insight-box">
+                <strong>What decided it</strong>
+                <ul style="margin-bottom: 0;">
+                    <li><strong>Cost</strong>: Google Maps Street View is pay-as-you-go, so there's a "risk of going into the red if an indie app goes viral"</li>
+                    <li><strong>UX</strong>: the floating feel of the Look Around animation fits the app's "daydream" concept perfectly</li>
+                    <li><strong>Integration</strong>: it works well with SwiftUI, so the implementation stays simple</li>
+                </ul>
+            </div>
+
+            <p>
+                In the end I got both lower costs and a better UX.
+            </p>
+
+            <h1>Security: solid even without a server</h1>
+
+            <p>
+                To keep security solid with a serverless setup, I put several measures in place.
+            </p>
+
+            <div class="security-box">
+                <strong>Security measures</strong>
+                <ul style="margin-bottom: 0;">
+                    <li><strong>Encrypted storage in the Keychain</strong>: the UUID is restored even after the app is deleted, which stops people from dodging a ban</li>
+                    <li><strong>Firebase App Check</strong>: App Attest token verification blocks unauthorized access</li>
+                    <li><strong>Dynamic bans driven by Remote Config</strong>: I can instantly cut off features for a specific user without deploying a server</li>
+                    <li><strong>Client-side sanity checks</strong>: the remaining film count resets automatically if it ever goes over the limit</li>
+                </ul>
+            </div>
+
+            <h2>Encrypted storage in the Keychain</h2>
+
+            <p>
+                Because the UUID lives in the Keychain, the app can recognize the same user even after it's deleted and reinstalled. That keeps banned users from getting around the ban by reinstalling.
+            </p>
+
+            <h2>Dynamic bans with Remote Config</h2>
+
+            <p>
+                Using Firebase Remote Config, I built a way to instantly turn off features for a specific user from the console, with no server deploy. When I spot abuse, I can respond right away.
+            </p>
+
+            <h1>Monetization: giving the "wait" value</h1>
+
+            <p>
+                Daydream Camera's monetization is designed around <strong>giving the "wait while it develops" real value</strong>.
+            </p>
+
+            <div class="monetize-box">
+                <strong>Where the money comes from</strong>
+                <p style="margin-bottom: 0;">
+                    Because the experience is built around "waiting for your film to develop", an AdMob banner fits naturally into that wait. That's how I cover the API costs of generative AI. It's a sustainable business model that doesn't hurt the user experience.
+                </p>
+            </div>
+
+            <p>
+                By turning the act of waiting itself into something positive and showing ads during it, the monetization stays low-stress for users too.
+            </p>
+
+            <h1>What I learned</h1>
+
+            <p>
+                Building with AI agents taught me a few important things.
+            </p>
+
+            <h2>1. Writing the spec down matters most</h2>
+
+            <p>
+                To get the most out of AI code generation, <strong>writing the spec down (CLAUDE.md) and designing the protocols first</strong> are essential. With vague instructions, AI can't produce the code you expect.
+            </p>
+
+            <h2>2. A human handles the security review</h2>
+
+            <p>
+                AI-generated code is efficient, but <strong>the security review has to be done by a human</strong>. I was especially careful checking authentication and authorization, data persistence, and communication with external APIs.
+            </p>
+
+            <h2>3. Design the protocols first</h2>
+
+            <p>
+                Defining the protocols (interfaces) before starting implementation makes your instructions to AI agents clearer and improves the quality of the code they generate.
+            </p>
+
+            <div class="cta-box">
+                <h3>Daydream Camera - a camera for daydream travel</h3>
+                <p>
+                    AI dreams up the scenery of the place you want to go.<br>
+                    Enjoy a daydream trip that feels like shooting on film.
+                </p>
+                <a href="https://apps.apple.com/app/daydream-camera/id6745416215" target="_blank" class="btn">Download on the App Store</a>
+            </div>
+
+            <p>
+                Thanks for reading all the way to the end.<br>
+                Building with AI agents opens up new possibilities for indie development. Give it a try yourself.
+            </p>
+        </div>
+
         <nav class="post-navigation">
             <img class="tk-char tk-char--post" src="/assets/images/character-hang.png" alt="" width="381" height="208">
             <a href="/blog/" class="nav-link-wrapper">
-                <span>&larr; ブログ一覧に戻る</span>
+                <span>&larr; <span class="i18n-ja">ブログ一覧に戻る</span><span class="i18n-en">Back to the blog</span></span>
             </a>
         </nav>
     </article>
@@ -447,13 +644,13 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
-                    <p class="footer-description">誰も作らないものを、まじめに作る</p>
+                    <p class="footer-description"><span class="i18n-ja">誰も作らないものを、まじめに作る</span><span class="i18n-en">I make things nobody else would, and I make them seriously</span></p>
                 </div>
                 <div class="footer-nav">
-                    <a href="/legal/privacy-policy.html">プライバシーポリシー</a>
-                    <a href="/legal/terms-of-service.html">利用規約</a>
-                    <a href="/legal/commercial-law.html">特定商取引法</a>
-                    <a href="/legal/disclaimer.html">免責事項</a>
+                    <a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
+                    <a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
+                    <a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
+                    <a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a>
                 </div>
             </div>
             <div class="footer-bottom">

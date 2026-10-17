@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>KV generator - トップの代表作</title>
+<!--
+  トップページ「誰も作らなかった代表作」のカード画像（assets/images/works/）を作るテンプレート。
+  Playwrightで 1200x750 のビューポートに合わせてスクリーンショットを撮り、WebP にして置く。
+  日本語版は <名前>.webp、英語版は <名前>-en.webp（index.html は言語で出し分けている）。
+
+  パラメータ
+    tag   上の小さいタグ（例: #HEALTH · #SNS）
+    title アプリ名
+    desc  説明の一文
+    icon  アイコン画像のURL
+    fs    アプリ名のフォントサイズ(px)。既定 72
+
+  各カードに渡す値（2026-10-17時点）
+    unchikun           tag=#HEALTH · #SNS    title=うんちくん / UNCHIKUN
+                       desc=毎日のうんちを楽しく記録して、友達とシェア。 / Log your poop every day and share it with friends.
+    floating-notepad   tag=#MEMO · #VIRAL    title=流れるメモ帳 / Floating Notepad
+                       desc=メモが流れていく、新感覚。16万DLの大ヒット。 / Notes that drift across your screen. A hit with 160,000 downloads.
+    travel-memory-map  tag=#TRAVEL · #MAP    title=旅行思い出マップ / TravelMemoryMap
+                       desc=写真を地図に。旅の記憶が、ひとつの作品になる。 / Put your photos on a map, and your trips become one piece of art.
+    oshi-island        tag=#OSHI · #PIXEL    title=推しアイランド / Oshi Island
+                       desc=推しをドット絵にして、iPhoneの画面上部に住まわせる。 / Turn your favorite into pixel art that lives at the top of your iPhone screen.
+  アイコンは assets/data/apps.json の icon_url。
+-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Saira+Condensed:wght@600;700;800&family=Inter:wght@400;500&family=Noto+Sans+JP:wght@500;700;900&display=swap">
+<style>
+  :root {
+    --bg: #f5f1ea;
+    --ink: #14110c;
+    --muted: #6b645c;
+    --purple: #8b3df5;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1200px; height: 750px; }
+  body { background: var(--bg); color: var(--ink); position: relative; overflow: hidden; font-family: 'Noto Sans JP', sans-serif; }
+  .bg-dots {
+    position: absolute; inset: 0;
+    background-image: radial-gradient(rgba(20,17,12,0.10) 1.2px, transparent 1.2px);
+    background-size: 24px 24px;
+  }
+  .blob { position: absolute; border-radius: 50%; filter: blur(70px); }
+  .blob.purple { width: 420px; height: 300px; left: 0; top: -20px; background: rgba(168, 120, 235, 0.38); }
+  .blob.cyan { width: 420px; height: 300px; right: -40px; bottom: -40px; background: rgba(120, 210, 200, 0.30); }
+
+  .text { position: absolute; left: 92px; top: 0; bottom: 0; width: 580px; display: flex; flex-direction: column; justify-content: center; }
+  .tag {
+    font-family: 'Saira Condensed', sans-serif; font-style: italic; font-weight: 800;
+    font-size: 26px; letter-spacing: 0.08em; color: var(--purple);
+  }
+  .title { margin-top: 18px; font-size: 72px; line-height: 1.1; font-weight: 900; font-style: italic; letter-spacing: 0.02em; }
+  html[lang="en"] .title { font-family: 'Anton', sans-serif; font-weight: 400; letter-spacing: 0.01em; }
+  .desc { margin-top: 18px; font-size: 28px; line-height: 1.6; font-weight: 500; color: var(--muted); }
+  html[lang="en"] .desc { font-family: 'Inter', sans-serif; font-size: 27px; }
+
+  .icon-wrap { position: absolute; right: 92px; top: 215px; width: 318px; height: 318px; }
+  .icon-shadow { position: absolute; inset: 0; transform: translate(16px, 16px); border-radius: 64px; background: var(--purple); }
+  .icon { position: absolute; inset: 0; border-radius: 64px; border: 3px solid var(--ink); overflow: hidden; background: #fff; }
+  .icon img { width: 100%; height: 100%; display: block; }
+
+  .brand { position: absolute; left: 92px; bottom: 58px; display: flex; align-items: center; gap: 16px; }
+  .brand img { width: 30px; height: 30px; }
+  .brand span { font-family: 'Saira Condensed', sans-serif; font-style: italic; font-weight: 800; font-size: 26px; letter-spacing: 0.06em; }
+</style>
+</head>
+<body>
+<div class="bg-dots"></div>
+<div class="blob purple"></div>
+<div class="blob cyan"></div>
+<div class="text">
+  <div class="tag" id="tag"></div>
+  <div class="title" id="title"></div>
+  <div class="desc" id="desc"></div>
+</div>
+<div class="icon-wrap">
+  <div class="icon-shadow"></div>
+  <div class="icon"><img id="icon" alt=""></div>
+</div>
+<div class="brand"><img src="/assets/images/logo.svg" alt=""><span>TSUZUKIT</span></div>
+<script>
+  const q = new URLSearchParams(location.search);
+  const title = q.get('title') || '';
+  document.documentElement.lang = /[ぁ-んァ-ヶ一-龥]/.test(title + (q.get('desc') || '')) ? 'ja' : 'en';
+  document.getElementById('tag').textContent = q.get('tag') || '';
+  document.getElementById('title').textContent = title;
+  if (q.get('fs')) document.getElementById('title').style.fontSize = q.get('fs') + 'px';
+  document.getElementById('desc').textContent = q.get('desc') || '';
+  document.getElementById('icon').src = q.get('icon') || '';
+</script>
+</body>
+</html>

@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/js/lang.js"></script>
+    <meta name="title-en" content="A Working iOS Engineer Who Wanted Out of Screenshot Hell Built a SaaS with AI in 3 Days [ScreenNative] - Blog | Ryo Tsuzukihashi">
+    <meta name="description-en" content="To end the pain of making screenshots in many languages, I built ScreenNative, a localization SaaS, in three days with Gemini 3 Pro and Claude Code. This is the record.">
     <title>現役iOSエンジニアが、スクショ地獄から解放されたくてAIと3日でSaaSを作った話【ScreenNative】 - Blog | Ryo Tsuzukihashi</title>
     <meta name="description" content="多言語対応スクリーンショット作成の苦痛を解決するため、Gemini 3 ProとClaude Codeを活用してローカライゼーションSaaS「ScreenNative」を3日間で開発した記録。">
     <meta name="keywords" content="ScreenNative, AI, SaaS, ローカライゼーション, スクリーンショット, iOS開発, 個人開発, Gemini, Claude Code">
@@ -176,14 +179,14 @@
     <article class="blog-post">
         <header class="post-header">
             <div class="post-meta">
-                <span class="post-date">2025年12月6日</span>
-                <span class="post-category">SaaS開発</span>
-                <span class="post-reading-time">10分で読める</span>
+                <span class="post-date"><span class="i18n-ja">2025年12月6日</span><span class="i18n-en">December 6, 2025</span></span>
+                <span class="post-category"><span class="i18n-ja">SaaS開発</span><span class="i18n-en">SaaS Development</span></span>
+                <span class="post-reading-time"><span class="i18n-ja">10分で読める</span><span class="i18n-en">10 min read</span></span>
             </div>
-            <h1 class="post-title">現役iOSエンジニアが、<br>スクショ地獄から解放されたくて<br>AIと3日でSaaSを作った話<br>【ScreenNative】</h1>
+            <h1 class="post-title"><span class="i18n-ja">現役iOSエンジニアが、<br>スクショ地獄から解放されたくて<br>AIと3日でSaaSを作った話<br>【ScreenNative】</span><span class="i18n-en">A Working iOS Engineer<br>Who Wanted Out of Screenshot Hell<br>Built a SaaS with AI in 3 Days<br>[ScreenNative]</span></h1>
         </header>
 
-        <div class="post-content">
+        <div class="post-content i18n-ja">
             <p>
                 こんにちは、ZOZOTOWNでiOSアプリエンジニアをしているtsuzuki817（<a href="https://twitter.com/tsuzuki817" target="_blank">@tsuzuki817</a>）です。
             </p>
@@ -396,10 +399,223 @@
             </p>
         </div>
 
+        <div class="post-content i18n-en">
+            <p>
+                Hi, I'm tsuzuki817 (<a href="https://twitter.com/tsuzuki817" target="_blank">@tsuzuki817</a>), an iOS engineer at ZOZOTOWN.
+            </p>
+
+            <p>
+                My day job is working on a large-scale app, but when I tried to take my indie apps global, one particular task was so hopelessly tedious that it nearly broke me.
+            </p>
+
+            <p>
+                Yes: <strong>"making localized screenshots"</strong>.
+            </p>
+
+            <blockquote>
+                "If you're an engineer, you should automate this kind of grunt work."
+            </blockquote>
+
+            <p>
+                With that one thought in mind, I built <strong>ScreenNative</strong>, a localization SaaS powered by AI (Gemini 3 Pro), pair programming with AI (Claude Code).
+            </p>
+
+            <p>
+                In this post I'll share what went on behind the scenes: how I built it, and the "robust architecture" I was particular about on the technical side.
+            </p>
+
+            <figure style="margin: var(--spacing-2xl) 0; text-align: center;">
+                <img src="/assets/images/blog/screennative-og.png" alt="ScreenNative - App Store Screenshot Localization AI" style="width: 100%; max-width: 800px; border-radius: var(--border-radius); box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+                <figcaption style="margin-top: var(--spacing-sm); color: var(--color-text-light); font-size: var(--font-size-sm);">ScreenNative - App Store screenshot localization with AI</figcaption>
+            </figure>
+
+            <h1>Why I built it: a pain only iOS engineers understand</h1>
+
+            <p>
+                To take an app global, you have to upload screenshots for every language to App Store Connect. But if you try to do this properly, you're in for hell.
+            </p>
+
+            <div class="pain-point">
+                <strong>The screenshot workflow from hell</strong>
+                <ol>
+                    <li>Switch the simulator's language to German with <code>xcrun simctl</code></li>
+                    <li>Build and launch the app</li>
+                    <li>Navigate to the screen you need and take a screenshot</li>
+                    <li>"The text is too long and it's spilling out of the button!" → readjust the Auto Layout constraints</li>
+                    <li>Repeat this for 10 languages: English, French, Chinese...</li>
+                    <li>Then repeat it again for every device size (6.9-inch, 6.5-inch...)</li>
+                </ol>
+            </div>
+
+            <p>
+                I thought, <strong>"This isn't a job for a human."</strong>
+            </p>
+
+            <div class="solution-box">
+                <strong>What ScreenNative solves</strong>
+                <p style="margin-bottom: 0;">
+                    Upload just one existing screenshot, and the AI <strong>understands the UI context (buttons and spacing)</strong>, then translates and replaces only the text at native quality without breaking the layout.
+                </p>
+            </div>
+
+            <h1>The team: me (CTO) × AI (lead engineer)</h1>
+
+            <p>
+                For this project, <strong>I decided the spec as CTO and PM, and the AI (Claude Code) implemented it as lead engineer</strong>.
+            </p>
+
+            <p>
+                I didn't just have it write code. I bounced ideas off the AI starting from the architecture design.
+            </p>
+
+            <div class="explanation-box">
+                <strong>An actual exchange</strong>
+                <p><strong>Me:</strong> "I want Stripe payments and credit consumption to be atomic. How should I design Firestore?"</p>
+                <p style="margin-bottom: 0;"><strong>AI:</strong> "Keep an audit log in <code>creditTransactions</code>, separate from the <code>users</code> collection, and maintain consistency with <code>runTransaction</code>."</p>
+            </div>
+
+            <p>
+                By speeding up the spec → implementation cycle as far as it would go, I was able to <strong>take a SaaS with payments all the way to deployment in effectively three days</strong>.
+            </p>
+
+            <h1>Tech stack and architecture</h1>
+
+            <p>
+                I didn't cut corners just because it was an indie project. I aimed for <strong>security and scalability at a level a company could adopt</strong>.
+            </p>
+
+            <div class="tech-stack-box">
+                <h4>Tech stack</h4>
+                <div class="tech-stack-grid">
+                    <div class="tech-item"><strong>Frontend:</strong> Next.js 15 (App Router), Tailwind CSS, shadcn/ui</div>
+                    <div class="tech-item"><strong>Backend:</strong> Firebase Cloud Functions Gen 2 (Node.js)</div>
+                    <div class="tech-item"><strong>Database:</strong> Cloud Firestore</div>
+                    <div class="tech-item"><strong>Storage:</strong> Cloud Storage for Firebase</div>
+                    <div class="tech-item"><strong>AI Model:</strong> Google Gemini 3 Pro (gemini-3-pro-image-preview)</div>
+                    <div class="tech-item"><strong>Payment:</strong> Stripe (Checkout & Webhooks)</div>
+                </div>
+            </div>
+
+            <h2>How the systems connect</h2>
+
+            <p>
+                Next.js API Routes act as the gateway, and the actual processing happens in a secure backend (Admin SDK).
+            </p>
+
+            <pre><code>┌─────────────────┐    ID Token    ┌─────────────────┐
+│  Client/Next.js │ ─────────────▶ │   API Routes    │
+└─────────────────┘                └─────────────────┘
+                                          │
+                    ┌─────────────────────┼─────────────────────┐
+                    │                     │                     │
+                    ▼                     ▼                     ▼
+            ┌─────────────┐       ┌─────────────┐       ┌─────────────┐
+            │  Firestore  │       │ Gemini API  │       │   Stripe    │
+            │  (Admin SDK)│       │             │       │             │
+            └─────────────┘       └─────────────┘       └─────────────┘
+                    │                                          │
+                    │              Webhook                     │
+                    │ ◀────────────────────────────────────────┘
+                    ▼
+            ┌─────────────────────────────┐
+            │  Cloud Functions (Gen 2)   │
+            │  - Transaction handling    │
+            └─────────────────────────────┘</code></pre>
+
+            <h1>Where I got particular on the technical side</h1>
+
+            <h2>1. Zero-trust design with security first</h2>
+
+            <p>
+                I stuck rigorously to <strong>"never trust the client (the browser)"</strong>.
+            </p>
+
+            <h3>Firestore Security Rules</h3>
+            <p>
+                Users can't write to the <code>users</code> collection at all (<code>allow write: if false</code>). Credit consumption and plan changes always go through server-side API Routes, using the Admin SDK.
+            </p>
+
+            <h3>Magic byte verification</h3>
+            <p>
+                When an image is uploaded, I check not just the file extension but the start of the binary (the magic number), so disguised files get rejected.
+            </p>
+
+            <h2>2. A payment system with guaranteed idempotency</h2>
+
+            <p>
+                Webhooks from Stripe can arrive more than once because of things like network errors.
+            </p>
+
+            <p>
+                So I track event IDs in a <code>stripeWebhooks</code> collection and implemented logic that <strong>never processes a payment event twice once it's been handled (idempotency)</strong>.
+            </p>
+
+            <p>
+                Credit consumption also uses a Firestore Transaction, so "generation succeeded" and "credits deducted" stay perfectly in sync.
+            </p>
+
+            <div class="explanation-box">
+                <strong>Quick explainer: what is idempotency?</strong>
+                It means that running the same operation any number of times gives the same result. For example, even if "subtract ¥100" runs twice, only one deduction actually happens.
+            </div>
+
+            <h2>3. Type safety and DX (Developer Experience)</h2>
+
+            <p>
+                To keep development efficient, I was strict about having a <strong>"Single Source of Truth"</strong>.
+            </p>
+
+            <h3>Deriving types from constants</h3>
+            <p>
+                The "supported languages list" and "plan definitions" are defined as constants, and the TypeScript types (<code>LanguageCode</code>, <code>PlanId</code>) are generated from them automatically (<code>typeof ...</code>). That way, when I add a plan, every place that needs fixing shows up immediately as a type error.
+            </p>
+
+            <h3>Double validation with Zod</h3>
+            <p>
+                I use Zod to validate API request bodies, keeping the TypeScript type definitions and runtime validation in sync.
+            </p>
+
+            <h1>Wrapping up</h1>
+
+            <p>
+                ScreenNative is a product where <strong>an iOS engineer seriously built the thing he wanted for himself</strong>.
+            </p>
+
+            <ul>
+                <li>Support for RTL (right-to-left) layouts such as Arabic</li>
+                <li>Recommended status bar cleanup (9:41 / 100%)</li>
+                <li>Automatic device frame compositing</li>
+            </ul>
+
+            <p>
+                I packed it with the kind of attention to detail only an app developer would care about.
+            </p>
+
+            <div class="stats-box">
+                <p>Total Source Files</p>
+                <strong>83 files</strong>
+                <p style="margin-bottom: 0;">(about 8,000 lines)</p>
+            </div>
+
+            <div class="cta-box">
+                <h3>ScreenNative - App Store Screenshot Localization AI</h3>
+                <p>
+                    You can try your first 2 screenshots free (5 during the Product Hunt campaign!).<br>
+                    If you're a developer who wants out of tedious screenshot work, please give it a try!
+                </p>
+                <a href="https://screennative.app" target="_blank" class="btn">Try ScreenNative</a>
+            </div>
+
+            <p>
+                Thanks for reading all the way to the end.<br>
+                If even one more developer escapes "screenshot hell", nothing would make me happier.
+            </p>
+        </div>
+
         <nav class="post-navigation">
             <img class="tk-char tk-char--post" src="/assets/images/character-hang.png" alt="" width="381" height="208">
             <a href="/blog/" class="nav-link-wrapper">
-                <span>← ブログ一覧に戻る</span>
+                <span>← <span class="i18n-ja">ブログ一覧に戻る</span><span class="i18n-en">Back to the blog</span></span>
             </a>
         </nav>
     </article>
@@ -411,13 +627,13 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
-                    <p class="footer-description">誰も作らないものを、まじめに作る</p>
+                    <p class="footer-description"><span class="i18n-ja">誰も作らないものを、まじめに作る</span><span class="i18n-en">I make things nobody else would, and I make them seriously</span></p>
                 </div>
                 <div class="footer-nav">
-                    <a href="/legal/privacy-policy.html">プライバシーポリシー</a>
-                    <a href="/legal/terms-of-service.html">利用規約</a>
-                    <a href="/legal/commercial-law.html">特定商取引法</a>
-                    <a href="/legal/disclaimer.html">免責事項</a>
+                    <a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
+                    <a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
+                    <a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
+                    <a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a>
                 </div>
             </div>
             <div class="footer-bottom">

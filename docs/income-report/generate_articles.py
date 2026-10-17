@@ -7,6 +7,9 @@
 import html as html_lib
 import json
 import os
+import re
+
+from months_en import MONTHS_EN
 
 REPO = "/Users/tsuzuki817/workspace/TsuzuKit/tsuzukit.com"
 DATA_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -20,6 +23,55 @@ NL = "\n"
 
 def _cell(text):
     return html_lib.escape(str(text))
+
+
+def _t(ja, en):
+    """日本語と英語を並べる。表示はlang.jsが片方を隠して出し分ける"""
+    return f'<span class="i18n-ja">{ja}</span><span class="i18n-en">{en}</span>'
+
+
+SERIES_EN = "The Struggling Indie Dev's Road to ¥10M a Month"
+
+# 英語版の金額はドルで出す。レートはその号の月末のECBレート（fetch_fx_usd.py で取得）。
+# 前月の金額も含めて、1つの号の中は同じレートで換算する（前月比の％と数字が食い違わないように）
+with open(os.path.join(DATA_DIR, "fx_usd.json")) as f:
+    FX_USD = json.load(f)
+
+# 「¥10M」「¥10 million」のような連載名・目標の円はドルにしない
+YEN_RE = re.compile(r"¥(\d{1,3}(?:,\d{3})*(?:\.\d+)?)(?![\d.]*\s?(?:M\b|K\b|million))")
+
+
+def usd(jpy, ym):
+    v = jpy / FX_USD[ym]["jpy_per_usd"]
+    if v == 0:
+        return "$0"
+    return f"${v:,.0f}" if abs(v) >= 10 else f"${v:,.2f}"
+
+
+# 「¥1 million」のような円の節目はそのまま残し、ドルを添える。目標の「¥10 million」は連載名と同じ扱いで触らない
+YEN_MILLION_RE = re.compile(r"¥(\d+(?:\.\d+)?) million")
+
+
+def en_usd(text, ym):
+    """英文の中の ¥金額 をその号のレートでドルに置き換える"""
+    def million(mm):
+        if mm.group(1) == "10":
+            return mm.group(0)
+        return f"{mm.group(0)} (about {usd(float(mm.group(1)) * 1_000_000, ym)})"
+    text = YEN_MILLION_RE.sub(million, text)
+    return YEN_RE.sub(lambda mm: usd(float(mm.group(1).replace(",", "")), ym), text)
+
+
+def money(jpy, ym):
+    return _t(f"¥{jpy:,}", usd(jpy, ym))
+
+MONTH_NAMES_EN = ["January", "February", "March", "April", "May", "June", "July",
+                  "August", "September", "October", "November", "December"]
+
+
+def label_en(ym):
+    y, mo = ym.split("-")
+    return f"{MONTH_NAMES_EN[int(mo) - 1]} {y}"
 
 
 def _play_app_name(title):
@@ -37,31 +89,34 @@ def detail_tables(ym):
     if not d:
         return ""
 
-    out = ["<h1>詳細データ</h1>",
-           "<p>アプリごとの内訳です。0円だったものは省いています。</p>"]
+    out = ["<h1>" + _t("詳細データ", "Detailed data") + "</h1>",
+           "<p>" + _t("アプリごとの内訳です。0円だったものは省いています。",
+                      "Here's the breakdown by app. Anything that made $0 is left out.") + "</p>"]
 
     apps = [a for a in d["appstore_detail"]["apps"] if a["proceeds_jpy"] > 0]
     if apps:
         rows = []
         for a in apps:
-            products = "、".join(f"{_cell(p['name'])} ¥{p['jpy']:,}" for p in a["top_products"][:2])
+            products_ja = "、".join(f"{_cell(p['name'])} ¥{p['jpy']:,}" for p in a["top_products"][:2])
+            products_en = ", ".join(f"{_cell(p['name'])} {usd(p['jpy'], ym)}" for p in a["top_products"][:2])
+            products = _t(products_ja, products_en) if products_ja else ""
             rows.append(
                 f'                    <tr><td>{_cell(a["title"])}'
-                f'<span class="product-inline">{products}</span></td><td>¥{a["proceeds_jpy"]:,}</td>'
+                f'<span class="product-inline">{products}</span></td><td>{money(a["proceeds_jpy"], ym)}</td>'
                 f'<td>{a["downloads"]:,}</td>'
                 f'<td class="product-col" style="text-align: left;">{products or "—"}</td></tr>')
         subtotal = d["appstore_jpy"]  # 行ごとの端数処理で1円ずれるので本文と同じ値を使う
         rows.append(
-            f'                    <tr class="total-row"><td>合計</td><td>¥{subtotal:,}</td>'
+            f'                    <tr class="total-row"><td>{_t("合計", "Total")}</td><td>{money(subtotal, ym)}</td>'
             f'<td>{d["appstore_detail"]["total_downloads"]:,}</td>'
             f'<td class="product-col" style="text-align: left;"></td></tr>')
         out.append(
-            '<h2>App Store（課金）</h2>' + NL +
+            '<h2>' + _t('App Store（課金）', 'App Store (in-app purchases)') + '</h2>' + NL +
             '            <div style="overflow-x: auto;">' + NL +
             '            <table class="platform-table detail">' + NL +
             '                <thead>' + NL +
-            '                    <tr><th>アプリ</th><th>収益</th><th>DL</th>'
-            '<th class="product-col" style="text-align: left;">主な課金商品</th></tr>' + NL +
+            '                    <tr><th>' + _t('アプリ', 'App') + '</th><th>' + _t('収益', 'Revenue') + '</th><th>' + _t('DL', 'Downloads') + '</th>'
+            '<th class="product-col" style="text-align: left;">' + _t('主な課金商品', 'Top products') + '</th></tr>' + NL +
             '                </thead>' + NL +
             '                <tbody>' + NL +
             NL.join(rows) + NL +
@@ -69,21 +124,22 @@ def detail_tables(ym):
             '            </table>' + NL +
             '            </div>' + NL +
             '            <p style="font-size: 13px; color: var(--color-text-light);">'
-            'ダウンロード数は無料のものも含みます。合計の行は課金のなかったアプリの分も足した全体の数です。</p>')
+            + _t('ダウンロード数は無料のものも含みます。合計の行は課金のなかったアプリの分も足した全体の数です。',
+                   'Download counts include free downloads. The total row is the overall figure, including apps that had no purchases.') + '</p>')
 
     admob = [a for a in d.get("admob_apps", []) if a["jpy"] > 0]
     if admob:
-        rows = [f'                    <tr><td>{_cell(a["app"])}（{a["platform"]}）</td>'
-                f'<td>¥{a["jpy"]:,}</td><td>¥{a["ecpm"]:,}</td><td>{a["impressions"]:,}</td></tr>'
+        rows = [f'                    <tr><td>{_cell(a["app"])}{_t("（" + a["platform"] + "）", " (" + a["platform"] + ")")}</td>'
+                f'<td>{money(a["jpy"], ym)}</td><td>{money(a["ecpm"], ym)}</td><td>{a["impressions"]:,}</td></tr>'
                 for a in admob]
-        rows.append(f'                    <tr class="total-row"><td>合計</td>'
-                    f'<td>¥{d["admob_jpy"]:,}</td><td></td><td></td></tr>')
+        rows.append(f'                    <tr class="total-row"><td>{_t("合計", "Total")}</td>'
+                    f'<td>{money(d["admob_jpy"], ym)}</td><td></td><td></td></tr>')
         out.append(
-            '<h2>AdMob（広告）</h2>' + NL +
+            '<h2>' + _t('AdMob（広告）', 'AdMob (ads)') + '</h2>' + NL +
             '            <div style="overflow-x: auto;">' + NL +
             '            <table class="platform-table detail">' + NL +
             '                <thead>' + NL +
-            '                    <tr><th>アプリ</th><th>収益</th><th>eCPM</th><th>表示回数</th></tr>' + NL +
+            '                    <tr><th>' + _t('アプリ', 'App') + '</th><th>' + _t('収益', 'Revenue') + '</th><th>eCPM</th><th>' + _t('表示回数', 'Impressions') + '</th></tr>' + NL +
             '                </thead>' + NL +
             '                <tbody>' + NL +
             NL.join(rows) + NL +
@@ -91,22 +147,23 @@ def detail_tables(ym):
             '            </table>' + NL +
             '            </div>' + NL +
             '            <p style="font-size: 13px; color: var(--color-text-light);">'
-            '合計には、表に出ていない収益の小さいアプリの分も入っています。</p>')
+            + _t('合計には、表に出ていない収益の小さいアプリの分も入っています。',
+                   'The total also includes smaller-earning apps that aren\'t listed in the table.') + '</p>')
 
     play = d.get("play_detail") or {}
     play_apps = [v for v in (play.get("apps") or {}).values() if v["net_jpy"] > 0]
     if play_apps:
         rows = [f'                    <tr><td>{_cell(_play_app_name(v["title"]))}</td>'
-                f'<td>¥{v["net_jpy"]:,}</td><td>{v["transactions"]}</td></tr>'
+                f'<td>{money(v["net_jpy"], ym)}</td><td>{v["transactions"]}</td></tr>'
                 for v in sorted(play_apps, key=lambda x: -x["net_jpy"])]
-        rows.append(f'                    <tr class="total-row"><td>合計</td>'
-                    f'<td>¥{play["totals"]["net_jpy"]:,}</td><td></td></tr>')
+        rows.append(f'                    <tr class="total-row"><td>{_t("合計", "Total")}</td>'
+                    f'<td>{money(play["totals"]["net_jpy"], ym)}</td><td></td></tr>')
         out.append(
-            '<h2>Google Play（課金）</h2>' + NL +
+            '<h2>' + _t('Google Play（課金）', 'Google Play (in-app purchases)') + '</h2>' + NL +
             '            <div style="overflow-x: auto;">' + NL +
             '            <table class="platform-table detail">' + NL +
             '                <thead>' + NL +
-            '                    <tr><th>アプリ</th><th>収益</th><th>件数</th></tr>' + NL +
+            '                    <tr><th>' + _t('アプリ', 'App') + '</th><th>' + _t('収益', 'Revenue') + '</th><th>' + _t('件数', 'Transactions') + '</th></tr>' + NL +
             '                </thead>' + NL +
             '                <tbody>' + NL +
             NL.join(rows) + NL +
@@ -114,7 +171,8 @@ def detail_tables(ym):
             '            </table>' + NL +
             '            </div>' + NL +
             '            <p style="font-size: 13px; color: var(--color-text-light);">'
-            '合計には返金と税の調整が入るので、各行を足した額とは一致しません。</p>')
+            + _t('合計には返金と税の調整が入るので、各行を足した額とは一致しません。',
+                   'The total includes refunds and tax adjustments, so it won\'t match the sum of the rows.') + '</p>')
 
     return (NL + NL + "            ").join(out)
 
@@ -380,8 +438,11 @@ HEAD_TEMPLATE = """<!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/js/lang.js"></script>
     <title>{title} - Blog | Ryo Tsuzukihashi</title>
     <meta name="description" content="{desc}">
+    <meta name="title-en" content="{title_en} - Blog | Ryo Tsuzukihashi">
+    <meta name="description-en" content="{desc_en}">
     <meta name="keywords" content="個人開発, 収益公開, 月収1000万円, iOSアプリ, AdMob, App Store, Google Play, tsuzuki817">
 
     <!-- OGP -->
@@ -481,10 +542,18 @@ def build_article(i, m):
     prev_m = MONTHS[i - 1] if i > 0 else None
     next_m = MONTHS[i + 1] if i + 1 < len(MONTHS) else None
     title = f"{m['label']} 収益公開"
+    en = MONTHS_EN[m["ym"]]
+    lab_en = label_en(m["ym"])
+    title_en = f"{lab_en} Revenue Report"
     url = f"/blog/posts/income-report-{m['ym']}.html"
+
+    ym = m["ym"]
 
     def yen(v):
         return f"¥{v:,}" if v is not None else "—"
+
+    def yen_usd(v):
+        return money(v, ym) if v is not None else "—"
 
     def row(name, cur, prev, total=False):
         mom = ""
@@ -497,7 +566,7 @@ def build_article(i, m):
         cls = ' class="total-row"' if total else ""
         return f"""                <tr{cls}>
                     <td>{name}</td>
-                    <td>{yen(cur)}</td>
+                    <td>{yen_usd(cur)}</td>
                     <td>{mom}</td>
                 </tr>"""
 
@@ -509,28 +578,45 @@ def build_article(i, m):
     mom_html = ""
     if m["mom"]:
         color = "var(--neon-cyan)" if not m["mom"].startswith("-") else "var(--neon-pink)"
-        mom_html = f'<div class="revenue-mom">前月比 <strong style="color:{color};">{m["mom"]}%</strong>（前月 {yen(prev_total)}）</div>'
+        mom_html = (f'<div class="revenue-mom">{_t("前月比", "vs. last month")} <strong style="color:{color};">{m["mom"]}%</strong>'
+                    f'{_t(f"（前月 {yen(prev_total)}）", f" (last month: {usd(prev_total, ym)})")}</div>')
     else:
-        mom_html = '<div class="revenue-mom">シリーズ創刊号</div>'
+        mom_html = f'<div class="revenue-mom">{_t("シリーズ創刊号", "First issue of the series")}</div>'
 
     shadow_cycle = ["purple", "cyan", "pink", "yellow"]
-    highlights_html = "\n".join(
-        f"""            <div class="app-highlight shadow-{shadow_cycle[idx % 4]}">
+    assert len(en["highlights"]) == len(m["highlights"]), m["ym"]
+    assert len(en["next_actions"]) == len(m["next_actions"]), m["ym"]
+
+    def highlight(idx, ja, en_h):
+        name, amount, desc = ja
+        if len(en_h) == 3:
+            name_en, amount_en, desc_en = en_h
+        else:
+            (name_en, desc_en), amount_en = en_h, amount
+        amount_html = _t(amount, en_usd(amount_en, ym))
+        return f"""            <div class="app-highlight shadow-{shadow_cycle[idx % 4]}">
                 <div class="app-highlight-head">
-                    <span class="app-highlight-name">{name}</span>
-                    <span class="app-highlight-amount">{amount}</span>
+                    <span class="app-highlight-name">{_t(name, name_en)}</span>
+                    <span class="app-highlight-amount">{amount_html}</span>
                 </div>
-                <p>{desc}</p>
-            </div>""" for idx, (name, amount, desc) in enumerate(m["highlights"]))
+                <p>{_t(desc, en_usd(desc_en, ym))}</p>
+            </div>"""
 
-    actions_html = "\n".join(f"                <li>{a}</li>" for a in m["next_actions"])
+    highlights_html = "\n".join(
+        highlight(idx, ja, en_h) for idx, (ja, en_h) in enumerate(zip(m["highlights"], en["highlights"])))
 
-    nav_prev = f'<a href="/blog/posts/income-report-{prev_m["ym"]}.html" class="nav-link-wrapper"><span>&larr; {prev_m["label"]}号</span></a>' if prev_m else ""
-    nav_next = f'<a href="/blog/posts/income-report-{next_m["ym"]}.html" class="nav-link-wrapper"><span>{next_m["label"]}号 &rarr;</span></a>' if next_m else ""
+    actions_html = "\n".join(f"                <li>{_t(a, en_usd(a_en, ym))}</li>"
+                             for a, a_en in zip(m["next_actions"], en["next_actions"]))
+
+    nav_prev = (f'<a href="/blog/posts/income-report-{prev_m["ym"]}.html" class="nav-link-wrapper"><span>&larr; '
+                f'{_t(prev_m["label"] + "号", label_en(prev_m["ym"]) + " issue")}</span></a>') if prev_m else ""
+    nav_next = (f'<a href="/blog/posts/income-report-{next_m["ym"]}.html" class="nav-link-wrapper"><span>'
+                f'{_t(next_m["label"] + "号", label_en(next_m["ym"]) + " issue")} &rarr;</span></a>') if next_m else ""
 
     intro = ""
     if i == 0:
         intro = """
+            <div class="i18n-ja">
             <p>
                 こんにちは、tsuzuki817（<a href="https://twitter.com/tsuzuki817" target="_blank">@tsuzuki817</a>）です。
             </p>
@@ -539,18 +625,34 @@ def build_article(i, m):
             </p>
             <p>
                 個人開発を始めたのは2016年。10年で50本以上のアプリを出してきて、初めての収益は3年目にあたる2019年7月の21円でした。そこまでの道のりは<a href="/blog/posts/income-report-prehistory.html">前史編</a>に書いています。
-            </p>"""
+            </p>
+            </div>
+            <div class="i18n-en">
+            <p>
+                Hi, I'm tsuzuki817 (<a href="https://twitter.com/tsuzuki817" target="_blank">@tsuzuki817</a>).
+            </p>
+            <p>
+                This month I'm starting a new series called <span class="nowrap-title">{SERIES_EN}</span>. Every month I'll publish all of my revenue from AdMob, the App Store and Google Play, look at the numbers, and decide what to do next. I plan to keep going until I make ¥10 million a month.
+            </p>
+            <p>
+                I started indie development in 2016. In ten years I've shipped more than 50 apps, and my first revenue was 21 yen (about $0.19) in July 2019, my third year. I wrote about the road up to that point in the <a href="/blog/posts/income-report-prehistory.html">prehistory issue</a>.
+            </p>
+            </div>""".replace("{SERIES_EN}", SERIES_EN)
     else:
         intro = f"""
-            <p>
+            <p class="i18n-ja">
                 こんにちは、tsuzuki817（<a href="https://twitter.com/tsuzuki817" target="_blank">@tsuzuki817</a>）です。
                 収益をぜんぶ公開して次の一手を決める連載「限界個人開発者の<span class="nowrap-title">月収１０００万円計画</span>」、{m['label']}号です。
             </p>
-            <a href="/blog/income-report/" class="series-link">📈 シリーズの全記事と推移グラフは特設ページにあります</a>"""
+            <p class="i18n-en">
+                Hi, I'm tsuzuki817 (<a href="https://twitter.com/tsuzuki817" target="_blank">@tsuzuki817</a>).
+                This is the {lab_en} issue of <span class="nowrap-title">{SERIES_EN}</span>, the series where I publish all of my revenue and decide what to do next.
+            </p>
+            <a href="/blog/income-report/" class="series-link">{_t("📈 シリーズの全記事と推移グラフは特設ページにあります", "📈 Every issue and the revenue chart are on the series page")}</a>"""
 
     play_note = ""
     if m["play"] is None:
-        play_note = "Google Playの売上はまだありません。"
+        play_note = _t("Google Playの売上はまだありません。", "No Google Play revenue yet.")
 
     # 詳細データを出すのは details を立てた号だけ（2026年8月号から）
     details_html = detail_tables(m["ym"]) if m.get("details") else ""
@@ -559,7 +661,8 @@ def build_article(i, m):
     ogp = f"/assets/images/ogp/income-report-{m['ym']}.png"
     if not os.path.exists(os.path.join(REPO, ogp.lstrip("/"))):
         ogp = "/assets/images/ogp/blog.png"
-    html = HEAD_TEMPLATE.format(title=title, desc=m["desc"], url=url, ogp=ogp)
+    html = HEAD_TEMPLATE.format(title=title, desc=m["desc"], url=url, ogp=ogp,
+                                title_en=html_lib.escape(title_en), desc_en=html_lib.escape(en_usd(en["desc"], ym)))
     html += f"""<body>
     <!-- Navigation -->
     <nav class="nav">
@@ -580,65 +683,73 @@ def build_article(i, m):
         <header class="post-header">
             <div class="post-meta">
                 <span class="post-date">{m.get('published', m['date']).replace('-', '.')}</span>
-                <span class="post-category">月収1000万円計画</span>
-                <span class="post-reading-time">5分で読める</span>
+                <span class="post-category">{_t("月収1000万円計画", "Road to ¥10M/month")}</span>
+                <span class="post-reading-time">{_t("5分で読める", "5 min read")}</span>
             </div>
-            <h1 class="post-title">{m['label']}<br>収益公開</h1>
+            <h1 class="post-title">{_t(m['label'] + "<br>収益公開", lab_en + "<br>Revenue Report")}</h1>
         </header>
 
         <div class="post-content">
 {intro}
 
             <div class="revenue-summary">
-                <h3>{m['label']}の総収益</h3>
-                <div class="revenue-number">¥{m['total']:,}</div>
+                <h3>{_t(m['label'] + "の総収益", "Total revenue, " + lab_en)}</h3>
+                <div class="revenue-number">{money(m['total'], ym)}</div>
                 {mom_html}
                 <div class="goal-progress">
-                    <div class="goal-progress-label"><span>目標達成率</span><span>{m['rate']}% / ¥10,000,000</span></div>
+                    <div class="goal-progress-label"><span>{_t("目標達成率", "Goal progress")}</span><span>{m['rate']}% / ¥10,000,000</span></div>
                     <div class="goal-progress-bar"><div class="goal-progress-fill" style="width: {min(float(m['rate']), 100)}%;"></div></div>
                 </div>
             </div>
 
-            <h1>プラットフォーム別内訳</h1>
+            <h1>{_t("プラットフォーム別内訳", "Revenue by platform")}</h1>
             <table class="platform-table">
                 <thead>
-                    <tr><th>プラットフォーム</th><th>収益</th><th>前月比</th></tr>
+                    <tr><th>{_t("プラットフォーム", "Platform")}</th><th>{_t("収益", "Revenue")}</th><th>{_t("前月比", "MoM")}</th></tr>
                 </thead>
                 <tbody>
-{row('AdMob（広告）', m['admob'], prev_admob)}
-{row('App Store（課金）', m['appstore'], prev_as)}
-{row('Google Play（課金）', m['play'], prev_play)}
-{row('合計', m['total'], prev_total, total=True)}
+{row(_t('AdMob（広告）', 'AdMob (ads)'), m['admob'], prev_admob)}
+{row(_t('App Store（課金）', 'App Store (in-app purchases)'), m['appstore'], prev_as)}
+{row(_t('Google Play（課金）', 'Google Play (in-app purchases)'), m['play'], prev_play)}
+{row(_t('合計', 'Total'), m['total'], prev_total, total=True)}
                 </tbody>
             </table>
             <p style="font-size: 13px; color: var(--color-text-light);">{play_note}</p>
 
-            <h1>今月のアプリ別ハイライト</h1>
+            <h1>{_t("今月のアプリ別ハイライト", "This month's highlights by app")}</h1>
 {highlights_html}
 
-            <h1>分析</h1>
+            <h1>{_t("分析", "Analysis")}</h1>
+            <div class="i18n-ja">
 {m['analysis']}
+            </div>
+            <div class="i18n-en">
+{en_usd(en['analysis'], ym)}
+            </div>
 
             <h1>NextAction</h1>
-            <p>この数字を見て、来月やることを3つ決めました。</p>
+            <p>{_t("この数字を見て、来月やることを3つ決めました。", "Based on these numbers, I picked three things to do next month.")}</p>
             <ol class="next-action-list">
 {actions_html}
             </ol>
 
-            <p>{m['closing']}</p>
-            <p>それでは、また来月の報告で。</p>
+            <p>{_t(m['closing'], en_usd(en['closing'], ym))}</p>
+            <p>{_t("それでは、また来月の報告で。", "See you in next month's report.")}</p>
 
 {details_html}
 
-            <div class="notice-box">
+            <div class="notice-box i18n-ja">
                 数値について。AdMobは管理画面の推定収益額で、確定額とは数％ずれることがあります。App Storeは手数料を引いた開発者受取額で、外貨分は月末レートで円に換算した概算を含みます。Google Playはサービス手数料を引いた受取額です。3つとも暦月の1日から末日で区切っています。App Store Connectの財務報告はAppleの会計月で締めるので、同じ月でも対象期間がずれ、画面に出る金額とは一致しません。締め日の関係で、実際の振込額とも一致しません。
+            </div>
+            <div class="notice-box i18n-en">
+                About the numbers. AdMob figures are the estimated earnings shown in the dashboard and can differ from the finalized amount by a few percent. App Store figures are developer proceeds after Apple's commission, and include estimates where foreign-currency sales were converted to yen at the month-end rate. Google Play figures are proceeds after the service fee. All three are cut by calendar month, from the 1st to the last day. App Store Connect's financial reports close on Apple's fiscal months, so the period covered shifts even for the same month, and the amounts won't match what's shown there. Because of payment cutoff dates, they won't match the actual payouts either. Dollar amounts are converted from yen at the ECB month-end rate (¥{FX_USD[ym]["jpy_per_usd"]:.2f} per US dollar on {FX_USD[ym]["date"]}), and every figure in this issue, including last month's, uses that same rate.
             </div>
         </div>
 
         <nav class="post-navigation">
             <img class="tk-char tk-char--post" src="/assets/images/character-hang.png" alt="" width="381" height="208">
             {nav_prev}
-            <a href="/blog/income-report/" class="nav-link-wrapper"><span>シリーズ一覧</span></a>
+            <a href="/blog/income-report/" class="nav-link-wrapper"><span>{_t("シリーズ一覧", "All issues")}</span></a>
             {nav_next}
         </nav>
     </article>
@@ -650,13 +761,13 @@ def build_article(i, m):
             <div class="footer-content">
                 <div class="footer-section">
                     <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
-                    <p class="footer-description">誰も作らないものを、まじめに作る</p>
+                    <p class="footer-description">{_t("誰も作らないものを、まじめに作る", "I make things nobody else would, and I make them seriously")}</p>
                 </div>
                 <div class="footer-nav">
-                    <a href="/legal/privacy-policy.html">プライバシーポリシー</a>
-                    <a href="/legal/terms-of-service.html">利用規約</a>
-                    <a href="/legal/commercial-law.html">特定商取引法</a>
-                    <a href="/legal/disclaimer.html">免責事項</a>
+                    <a href="/legal/privacy-policy.html">{_t("プライバシーポリシー", "Privacy Policy")}</a>
+                    <a href="/legal/terms-of-service.html">{_t("利用規約", "Terms of Service")}</a>
+                    <a href="/legal/commercial-law.html">{_t("特定商取引法", "Specified Commercial Transactions Act")}</a>
+                    <a href="/legal/disclaimer.html">{_t("免責事項", "Disclaimer")}</a>
                 </div>
             </div>
             <div class="footer-bottom">

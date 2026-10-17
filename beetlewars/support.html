@@ -3,8 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="/assets/js/lang.js"></script>
 <title>サポート・お問い合わせ - 昆虫大戦</title>
 <meta name="description" content="昆虫大戦（BEETLE WARS）のサポートページ。不具合の報告、ご要望、課金に関するお問い合わせの窓口と、よくあるトラブルの対処方法をまとめています。">
+<meta name="title-en" content="Support &amp; Contact - Beetle Wars">
+<meta name="description-en" content="Support page for Beetle Wars (昆虫大戦): where to report bugs, send requests, or ask about purchases, plus fixes for common problems.">
 <link rel="canonical" href="https://tsuzukit.com/beetlewars/support.html">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#0a0a0a">
@@ -50,17 +53,17 @@ pre{background:#07070a;border:1px solid var(--line);border-radius:8px;padding:1r
 
 <header>
   <div class="hbar">
-    <a class="hbrand" href="/beetlewars/"><img src="icon.webp" alt="" width="30" height="30">昆虫大戦</a>
+    <a class="hbrand" href="/beetlewars/"><img src="icon.webp" alt="" width="30" height="30"><span class="i18n-ja">昆虫大戦</span><span class="i18n-en">Beetle Wars</span></a>
     <nav class="hnav">
-      <a href="/beetlewars/">アプリ紹介</a>
-      <a href="support.html">サポート</a>
-      <a href="privacy.html">プライバシー</a>
-      <a href="terms.html">利用規約</a>
+      <a href="/beetlewars/"><span class="i18n-ja">アプリ紹介</span><span class="i18n-en">About the App</span></a>
+      <a href="support.html"><span class="i18n-ja">サポート</span><span class="i18n-en">Support</span></a>
+      <a href="privacy.html"><span class="i18n-ja">プライバシー</span><span class="i18n-en">Privacy</span></a>
+      <a href="terms.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms</span></a>
     </nav>
   </div>
 </header>
 
-<main class="doc wrap">
+<main class="doc wrap i18n-ja">
   <div class="doc-head">
     <p class="en">SUPPORT</p>
     <h1>サポート・お問い合わせ</h1>
@@ -175,13 +178,128 @@ pre{background:#07070a;border:1px solid var(--line);border-radius:8px;padding:1r
   </div>
 </main>
 
+<main class="doc wrap i18n-en" lang="en">
+  <div class="doc-head">
+    <p class="en">SUPPORT</p>
+    <h1>Support &amp; Contact</h1>
+    <p class="meta">Beetle Wars (昆虫大戦) / Last updated: August 11, 2026</p>
+  </div>
+
+  <div class="lede">
+    This is a game I make on my own. There's only one way to reach me, by email, but I read every report I get.
+    Bugs, requests, or just "this part is confusing" are all welcome.
+  </div>
+
+  <h2>Contact</h2>
+  <a class="big-mail" href="mailto:ryo.tsuzukihashi@tsuzukit.com?subject=%5BBeetle%20Wars%5D%20Inquiry">
+    ryo.tsuzukihashi@tsuzukit.com
+    <span>Tap to open your mail app</span>
+  </a>
+  <p>A reply may take a few days, and longer on weekends, Japanese holidays, or when I'm swamped with work. Sorry, but I can't take inquiries by phone.</p>
+
+  <h2>When reporting a bug</h2>
+  <p>Including the items below makes it much more likely I can pin down the cause. Just fill in what you know, and feel free to copy this as is.</p>
+  <pre>■ Device (e.g. iPhone 15 / iPad Air 5th generation / Pixel 8)
+■ OS version (e.g. iOS 26.1)
+■ App version (shown below the title screen, like "Ver 0.1.0")
+■ User ID ("User ID" on the Settings screen, a string starting with BW-)
+■ Which screen it happened on
+■ What you did when it happened (steps, if possible)
+■ What happened / what you expected to happen
+■ Whether it happens every time or only sometimes</pre>
+  <div class="callout">
+    <b>Screenshots or screen recordings are the fastest way to get it fixed.</b>
+    Attaching them to your email helps a lot.
+  </div>
+
+  <h2>Common problems</h2>
+
+  <details class="trouble">
+    <summary>The app won't start, or crashes right after launching</summary>
+    <div class="body">
+      <p>First, try restarting your device. If that doesn't help, check that your OS is up to date.</p>
+      <p><strong>Please treat reinstalling the app as a last resort.</strong> Save data is stored only on your device, so deleting the app erases your progress and it can't be recovered.</p>
+      <p>If restarting doesn't fix it, contact me with the items above. If I can reproduce it, I'll fix it.</p>
+    </div>
+  </details>
+
+  <details class="trouble">
+    <summary>My save data disappeared / I want to move my data to a new phone</summary>
+    <div class="body">
+      <p>First, open <strong>Settings → Data Transfer</strong>. If you tap "Back Up Now" there,
+      you can bring your data back on the same device with "Restore from Cloud".</p>
+      <p>To be honest with you: <strong>moving data to a different device isn't possible right now.</strong>
+      Linking an Apple / Google account isn't implemented yet, so a backup can only be retrieved on the device that made it.
+      Data that disappeared before you ever backed it up can't be restored either.</p>
+      <p>Account linking is on my list of requests. When it's implemented, I'll announce it on this page and in the app.</p>
+    </div>
+  </details>
+
+  <details class="trouble">
+    <summary>I bought Jewels but they didn't show up</summary>
+    <div class="body">
+      <p>First, fully close the app and launch it again. If they still don't appear, check the receipt (purchase history) from Apple / Google and contact me with the purchase date and time and the product name.</p>
+      <p>If you'd like a refund, the platform that processed the payment handles it. Please request it through <a href="https://reportaproblem.apple.com/" target="_blank" rel="noopener">Apple's Report a Problem</a> or your Google Play purchase history.</p>
+    </div>
+  </details>
+
+  <details class="trouble">
+    <summary>There's no sound, or only the music is silent</summary>
+    <div class="body">
+      <p>Under "Sound" on the Settings screen, check that the BGM and SE volumes aren't set to 0. Your device's silent mode, or another app holding the audio, can also affect this.</p>
+    </div>
+  </details>
+
+  <details class="trouble">
+    <summary>The game is slow, or battle effects stutter</summary>
+    <div class="body">
+      <p>Under "Battle" on the Settings screen, turning <strong>"Skip Effects" ON</strong> skips the 3D effects and makes things lighter. Closing other apps can also help.</p>
+    </div>
+  </details>
+
+  <details class="trouble">
+    <summary>I can't tap Hard difficulty, real-time battles, or Friends</summary>
+    <div class="body">
+      <p>That's not a bug. These features aren't implemented yet and are marked "Not yet available". I didn't want to make unbuilt features look like they exist, so only the buttons are in place for now.</p>
+      <p>The list of features that aren't built yet is in <a href="/beetlewars/#status">"Not Done Yet" on the app page</a>.</p>
+    </div>
+  </details>
+
+  <h2>Known issues</h2>
+  <div class="empty">
+    <span class="mark">—</span>
+    <h3>There are no publicly announced issues right now</h3>
+    <p>If I find a bug that affects many people, I'll post the symptoms, a workaround, and the fix schedule here.<br>
+    If something is bothering you, it may be a bug nobody has reported yet. Please let me know.</p>
+    <a href="mailto:ryo.tsuzukihashi@tsuzukit.com?subject=%5BBeetle%20Wars%5D%20Bug%20report">Report a bug</a>
+  </div>
+
+  <h2>Requests and insects you'd like to see</h2>
+  <p>Requests like "please add this insect" or "I want this feature first" are welcome too. I can't promise to do everything, but they help me decide what to build first.</p>
+
+  <h2>Related pages</h2>
+  <ul>
+    <li><a href="/beetlewars/">Beetle Wars app page</a> (how to play, contents, development status)</li>
+    <li><a href="privacy.html">Privacy Policy</a> (what is not collected)</li>
+    <li><a href="terms.html">Terms of Service</a> (how Jewels, gacha, and data are handled)</li>
+    <li><a href="/legal/commercial-law.html">Specified Commercial Transactions Act disclosure</a> (terms of sale and returns)</li>
+  </ul>
+
+  <div class="contact">
+    <h2>Provider</h2>
+    <p>Ryo Tsuzukihashi (independent developer / TsuzuKit)</p>
+    <p class="mail">ryo.tsuzukihashi@tsuzukit.com</p>
+    <p style="margin-bottom:0">The address will be disclosed promptly upon request.</p>
+  </div>
+</main>
+
 <footer>
   <div class="wrap">
     <nav>
-      <a href="/beetlewars/">昆虫大戦</a>
-      <a href="privacy.html">プライバシーポリシー</a>
-      <a href="terms.html">利用規約</a>
-      <a href="/legal/commercial-law.html">特定商取引法に基づく表記</a>
+      <a href="/beetlewars/"><span class="i18n-ja">昆虫大戦</span><span class="i18n-en">Beetle Wars</span></a>
+      <a href="privacy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
+      <a href="terms.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
+      <a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法に基づく表記</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
       <a href="https://tsuzukit.com/">tsuzukit.com</a>
     </nav>
     <p>© 2026 TsuzuKit</p>

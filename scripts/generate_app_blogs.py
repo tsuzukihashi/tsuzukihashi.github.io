@@ -3,6 +3,10 @@
 43アプリのブログ紹介ページを生成する。
 App Storeの説明文(description)をそのまま忠実にHTMLに変換する。
 嘘や創作は一切含めない。
+
+日本語と英語を1ページに並べて出す（出し分けは assets/js/lang.js、決めごとは docs/i18n.md）。
+英語の名前と説明文は assets/data/apps_en.json（scripts/fetch_apps_en.py で US ストアから取得）を使う。
+US ストアに英語の説明文が無いアプリだけ、日本語を英訳したものが "source": "translated" で入っている。
 """
 
 import json
@@ -16,6 +20,9 @@ with open(os.path.join(BASE_DIR, 'assets/data/apps.json')) as f:
     data = json.load(f)
 
 APPS = data['apps']
+
+with open(os.path.join(BASE_DIR, 'assets/data/apps_en.json'), encoding='utf-8') as f:
+    APPS_EN = json.load(f)['apps']
 
 # ============================================================
 # スラッグ定義（ファイル名用）
@@ -76,6 +83,30 @@ def escape_html(text):
         return ""
     return text.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;').replace('"', '&quot;')
 
+def bi(ja, en):
+    """日本語と英語を並べる（docs/i18n.md）。同じ文字列なら1つだけ出す。"""
+    if ja == en:
+        return ja
+    return f'<span class="i18n-ja">{ja}</span><span class="i18n-en">{en}</span>'
+
+MONTHS_EN = ["January", "February", "March", "April", "May", "June", "July",
+             "August", "September", "October", "November", "December"]
+
+def format_date_en(date_str):
+    if not date_str:
+        return ""
+    try:
+        dt = datetime.fromisoformat(date_str.replace('Z', '+00:00'))
+        return f"{MONTHS_EN[dt.month - 1]} {dt.day}, {dt.year}"
+    except:
+        return ""
+
+def rating_count_en(count):
+    return "1 rating" if count == 1 else f"{count:,} ratings"
+
+def price_en(price):
+    return "Free" if price == "無料" else price
+
 def format_date_jp(date_str):
     if not date_str:
         return ""
@@ -110,7 +141,31 @@ GENRE_MAP = {
 # App Store説明文 → HTML変換
 # ============================================================
 
-def description_to_html(desc):
+EN_LINK_LABEL = re.compile(
+    r'^[-•・*]?\s*(terms|privacy|support|contact|eula|commercial|specified commercial|legal|disclaimer)[^.!?]{0,50}$',
+    re.IGNORECASE)
+
+def clean_english_description(desc):
+    """英語の説明文から、リンク・サポート・規約の行を除く（日本語側の除去と同じ目的）。"""
+    lines = desc.replace('**', '').split('\n')
+    url_line = [bool(re.search(r'https?://', l)) for l in lines]
+    kept = []
+    for i, line in enumerate(lines):
+        s = line.strip()
+        if url_line[i]:
+            continue
+        if s and EN_LINK_LABEL.match(s):
+            continue
+        kept.append(line)
+    return '\n'.join(kept)
+
+def drop_trailing_headings(html_lines):
+    """リンク行を除いたあとに中身が残らなかった見出し（「■ Legal」など）を末尾から外す。"""
+    while html_lines and html_lines[-1].strip().startswith('<h2>'):
+        html_lines.pop()
+    return html_lines
+
+def description_to_html(desc, lang):
     """App Storeの説明文をそのままHTMLに変換する。
     構造を忠実に保持し、創作は一切しない。
 
@@ -123,7 +178,12 @@ def description_to_html(desc):
     - URLやリンクセクション → 除去
     """
     if not desc:
+        if lang == 'en':
+            return '        <p>See the App Store for details about this app.</p>'
         return '        <p>アプリの詳細はApp Storeをご覧ください。</p>'
+
+    if lang == 'en':
+        desc = clean_english_description(desc)
 
     # リンク・URL・サポート情報セクションを除去
     desc = re.sub(r'\n*【リンク】.*$', '', desc, flags=re.DOTALL)
@@ -184,8 +244,9 @@ def description_to_html(desc):
             i += 1
             continue
 
-        # 箇条書き: - xxx / ・xxx / ● xxx
-        m = re.match(r'^[-・▪●]\s*(.+)', line)
+        # 箇条書き: - xxx / ・xxx / ● xxx（英語は • も）
+        bullet = r'^[-・▪●•]\s*(.+)' if lang == 'en' else r'^[-・▪●]\s*(.+)'
+        m = re.match(bullet, line)
         if m:
             if not in_list:
                 html_lines.append('        <ul>')
@@ -216,12 +277,27 @@ def description_to_html(desc):
     if in_list:
         html_lines.append('        </ul>')
 
+    if lang == 'en':
+        html_lines = drop_trailing_headings(html_lines)
+
     return '\n'.join(html_lines)
 
 
 # ============================================================
 # ページ生成
 # ============================================================
+
+
+def screenshot_img(url, i, name, en_name, en_screenshots):
+    """スクショ1枚分の <img>。英語のスクショがあれば data-en-src で差し替え、無い枠は英語表示で隠す。"""
+    if not en_screenshots:
+        en_attr = ''
+    elif i < len(en_screenshots):
+        en_attr = f' data-en-src="{en_screenshots[i]}"'
+    else:
+        en_attr = ' class="i18n-ja"'
+    return (f'            <img src="{url}"{en_attr} alt="{escape_html(name)} スクリーンショット {i+1}" '
+            f'data-en-alt="{escape_html(en_name)} screenshot {i+1}" loading="lazy">')
 
 def generate_page(app, slug):
     name = app['name']
@@ -237,6 +313,21 @@ def generate_page(app, slug):
     release_jp = format_date_jp(release_date)
     description = app.get('description', '')
 
+    # 英語（App Store US の公式情報。無いアプリは英訳。どちらも無ければ日本語名と「App Storeを見て」）
+    en = APPS_EN.get(str(app.get('id')))
+    if en is None:
+        print(f"WARN: no English data for {name} (id {app.get('id')}); run scripts/fetch_apps_en.py")
+    en_name = en['name'] if en and en.get('name') else name
+    en_description = en['description'] if en else ''
+    genre_en = app.get('primary_genre', '')
+    genre_html = bi(escape_html(genre_jp), escape_html(genre_en))
+    price_html = bi(escape_html(price), escape_html(price_en(price)))
+    release_html = bi(release_jp, format_date_en(release_date))
+    name_html = bi(escape_html(name), escape_html(en_name))
+
+    en_clean = re.sub(r'\s+', ' ', clean_english_description(en_description)).strip()
+    meta_desc_en = escape_html(en_clean[:160])
+
     # meta description用: 説明文の冒頭から
     desc_clean = re.sub(r'\n+', ' ', description).strip()
     desc_clean = re.sub(r'\s+', ' ', desc_clean)
@@ -250,14 +341,17 @@ def generate_page(app, slug):
                     <div class="app-hero-rating">
                         <span class="stars">{"★" * stars_count}{"☆" * (5 - stars_count)}</span>
                         <span>{round(rating, 1)}</span>
-                        <span class="count">({rating_count:,}件)</span>
+                        <span class="count">({bi(f"{rating_count:,}件", rating_count_en(rating_count))})</span>
                     </div>'''
+
+    # 英語表示では US ストアの英語スクショに差し替える。英語の枚数が足りない枠は英語表示で隠す
+    en_screenshots = (en or {}).get('screenshots', [])
 
     # Screenshots HTML
     ss_html = ""
     if screenshots:
         ss_items = "\n".join([
-            f'            <img src="{url}" alt="{escape_html(name)} スクリーンショット {i+1}" loading="lazy">'
+            screenshot_img(url, i, name, en_name, en_screenshots)
             for i, url in enumerate(screenshots[:6])
         ])
         ss_html = f'''
@@ -269,15 +363,19 @@ def generate_page(app, slug):
     </section>'''
 
     # 記事本文（App Storeの説明文をそのままHTML化）
-    article_body = description_to_html(description)
+    article_body = description_to_html(description, 'ja')
+    article_body_en = description_to_html(en_description, 'en')
 
     html = f'''<!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/js/lang.js"></script>
     <title>{escape_html(name)} - アプリ紹介 | Ryo Tsuzukihashi</title>
+    <meta name="title-en" content="{escape_html(en_name)} - App Spotlight | Ryo Tsuzukihashi">
     <meta name="description" content="{meta_desc}">
+    <meta name="description-en" content="{meta_desc_en}">
 
     <!-- OGP -->
     <meta property="og:title" content="{escape_html(name)} - アプリ紹介">
@@ -328,16 +426,16 @@ def generate_page(app, slug):
     <!-- Hero -->
     <section class="app-hero-section">
         <div class="app-hero-inner">
-            <img src="{icon_url}" alt="{escape_html(name)}" class="app-hero-icon">
+            <img src="{icon_url}" alt="{escape_html(name)}" data-en-alt="{escape_html(en_name)}" class="app-hero-icon">
             <div class="app-hero-text">
-                <h1 class="app-hero-title">{escape_html(name)}</h1>
+                <h1 class="app-hero-title">{name_html}</h1>
                 <div class="app-hero-meta">
-                    <span class="app-hero-badge">{escape_html(genre_jp)}</span>
-                    <span class="app-hero-badge">{escape_html(price)}</span>{rating_html}
+                    <span class="app-hero-badge">{genre_html}</span>
+                    <span class="app-hero-badge">{price_html}</span>{rating_html}
                 </div>
                 <div class="app-hero-download">
                     <a href="{app_store_url}" target="_blank" rel="noopener noreferrer">
-                        <img src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード">
+                        <img src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" data-en-alt="Download on the App Store">
                     </a>
                 </div>
             </div>
@@ -347,37 +445,42 @@ def generate_page(app, slug):
 
     <!-- Article -->
     <article class="app-article">
+        <div class="app-description i18n-ja">
 {article_body}
+        </div>
+        <div class="app-description i18n-en">
+{article_body_en}
+        </div>
 
         <!-- App Info -->
         <div class="app-info-section">
-            <h2>アプリ情報</h2>
+            <h2>{bi("アプリ情報", "App Info")}</h2>
             <div class="app-info-grid">
                 <div class="app-info-item">
-                    <div class="app-info-label">カテゴリ</div>
-                    <div class="app-info-value">{escape_html(genre_jp)}</div>
+                    <div class="app-info-label">{bi("カテゴリ", "Category")}</div>
+                    <div class="app-info-value">{genre_html}</div>
                 </div>
                 <div class="app-info-item">
-                    <div class="app-info-label">価格</div>
-                    <div class="app-info-value">{escape_html(price)}</div>
+                    <div class="app-info-label">{bi("価格", "Price")}</div>
+                    <div class="app-info-value">{price_html}</div>
                 </div>
                 <div class="app-info-item">
-                    <div class="app-info-label">バージョン</div>
+                    <div class="app-info-label">{bi("バージョン", "Version")}</div>
                     <div class="app-info-value">{escape_html(version)}</div>
                 </div>
                 <div class="app-info-item">
-                    <div class="app-info-label">リリース日</div>
-                    <div class="app-info-value">{release_jp}</div>
+                    <div class="app-info-label">{bi("リリース日", "Release Date")}</div>
+                    <div class="app-info-value">{release_html}</div>
                 </div>
             </div>
         </div>
 
         <!-- CTA -->
         <div class="app-cta-section">
-            <h2>ダウンロードはこちら</h2>
-            <p>気になった方はぜひお試しください</p>
+            <h2>{bi("ダウンロードはこちら", "Get the App")}</h2>
+            <p>{bi("気になった方はぜひお試しください", "If it caught your eye, give it a try.")}</p>
             <a href="{app_store_url}" target="_blank" rel="noopener noreferrer" class="app-cta-btn">
-                App Storeで見る
+                {bi("App Storeで見る", "View on the App Store")}
             </a>
         </div>
     </article>
@@ -385,7 +488,7 @@ def generate_page(app, slug):
     <!-- Footer -->
     <div class="app-post-footer">
         <img class="tk-char tk-char--post" src="/assets/images/character-hang.png" alt="" width="381" height="208">
-        <a href="/blog/">← ブログ一覧に戻る</a>
+        <a href="/blog/">{bi("← ブログ一覧に戻る", "← Back to Blog")}</a>
     </div>
 
     <footer style="background: var(--color-primary); color: var(--color-background); padding: 3rem 0; text-align: center;">
@@ -394,8 +497,8 @@ def generate_page(app, slug):
                 &copy; 2025 Ryo Tsuzukihashi. All rights reserved.
             </p>
             <div style="margin-top: 1rem;">
-                <a href="/legal/privacy-policy.html" style="color: var(--color-background); opacity: 0.6; margin: 0 1rem; text-decoration: none;">プライバシーポリシー</a>
-                <a href="/legal/terms-of-service.html" style="color: var(--color-background); opacity: 0.6; margin: 0 1rem; text-decoration: none;">利用規約</a>
+                <a href="/legal/privacy-policy.html" style="color: var(--color-background); opacity: 0.6; margin: 0 1rem; text-decoration: none;">{bi("プライバシーポリシー", "Privacy Policy")}</a>
+                <a href="/legal/terms-of-service.html" style="color: var(--color-background); opacity: 0.6; margin: 0 1rem; text-decoration: none;">{bi("利用規約", "Terms of Service")}</a>
             </div>
         </div>
     </footer>

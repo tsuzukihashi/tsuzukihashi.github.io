@@ -3,6 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="/assets/js/lang.js"></script>
+        <meta name="title-en" content="Portfolio - Ryo Tsuzukihashi | 74 Apps on App Store">
+        <meta name="description-en" content="74 iOS apps Ryo Tsuzukihashi has built over 10 years. An average rating of 4.3 across 2,270 reviews. A collection of small things nobody else would make, made in earnest.">
         <title>Portfolio - Ryo Tsuzukihashi | 74 Apps on App Store</title>
         <meta name="description"
             content="Ryo Tsuzukihashiが10年間で開発した74のiOSアプリ。平均評価4.3、2,270件のレビュー。誰も作らない小さなものを、まじめに作った作品集。">
@@ -90,7 +93,7 @@
                     on the App Store
                 </h1>
                 <p class="portfolio-subtitle">
-                    10年間、誰も作らないものを、まじめに作ってきた結果です
+                    <span class="i18n-ja">10年間、誰も作らないものを、まじめに作ってきた結果です</span><span class="i18n-en">What came of ten years spent seriously making the things nobody else makes</span>
                 </p>
 
                 <!-- Stats Bar -->
@@ -114,7 +117,7 @@
                 </div>
 
                 <a href="/portfolio/ranking/" class="portfolio-ranking-link">
-                    📊 ダウンロード数ランキングを見る
+                    📊 <span class="i18n-ja">ダウンロード数ランキングを見る</span><span class="i18n-en">See the download ranking</span>
                 </a>
             </div>
         </section>
@@ -122,48 +125,48 @@
         <!-- Apps Section -->
         <section class="apps-section">
             <div class="container">
-                <h2 class="section-title-appstore">すべてのアプリ</h2>
+                <h2 class="section-title-appstore"><span class="i18n-ja">すべてのアプリ</span><span class="i18n-en">All Apps</span></h2>
 
                 <!-- Filter Bar -->
                 <div class="filter-bar">
                     <img class="tk-char--filter" src="/assets/images/character-tiny.png" alt="" width="292" height="144">
                     <div class="filter-search">
-                        <input type="text" id="searchInput" placeholder="アプリを検索...">
+                        <input type="text" id="searchInput" placeholder="アプリを検索..." data-en-placeholder="Search apps...">
                     </div>
                     <div class="filter-select-group">
                         <select id="categoryFilter" class="filter-select">
-                            <option value="">すべてのカテゴリ</option>
-                            <option value="Utilities">ユーティリティ</option>
-                            <option value="Productivity">仕事効率化</option>
-                            <option value="Reference">辞書/辞典/その他</option>
-                            <option value="Photo & Video">写真/ビデオ</option>
-                            <option value="Lifestyle">ライフスタイル</option>
-                            <option value="Graphics & Design">グラフィック/デザイン</option>
-                            <option value="Food & Drink">フード/ドリンク</option>
-                            <option value="Social Networking">ソーシャルネットワーキング</option>
-                            <option value="Games">ゲーム</option>
-                            <option value="Music">ミュージック</option>
-                            <option value="Book">ブック</option>
-                            <option value="News">ニュース</option>
-                            <option value="Travel">旅行</option>
-                            <option value="Education">教育</option>
-                            <option value="Medical">メディカル</option>
-                            <option value="Health & Fitness">ヘルスケア/フィットネス</option>
-                            <option value="Entertainment">エンターテインメント</option>
+                            <option value="" data-en="All categories">すべてのカテゴリ</option>
+                            <option value="Utilities" data-en="Utilities">ユーティリティ</option>
+                            <option value="Productivity" data-en="Productivity">仕事効率化</option>
+                            <option value="Reference" data-en="Reference">辞書/辞典/その他</option>
+                            <option value="Photo & Video" data-en="Photo &amp; Video">写真/ビデオ</option>
+                            <option value="Lifestyle" data-en="Lifestyle">ライフスタイル</option>
+                            <option value="Graphics & Design" data-en="Graphics &amp; Design">グラフィック/デザイン</option>
+                            <option value="Food & Drink" data-en="Food &amp; Drink">フード/ドリンク</option>
+                            <option value="Social Networking" data-en="Social Networking">ソーシャルネットワーキング</option>
+                            <option value="Games" data-en="Games">ゲーム</option>
+                            <option value="Music" data-en="Music">ミュージック</option>
+                            <option value="Book" data-en="Books">ブック</option>
+                            <option value="News" data-en="News">ニュース</option>
+                            <option value="Travel" data-en="Travel">旅行</option>
+                            <option value="Education" data-en="Education">教育</option>
+                            <option value="Medical" data-en="Medical">メディカル</option>
+                            <option value="Health & Fitness" data-en="Health &amp; Fitness">ヘルスケア/フィットネス</option>
+                            <option value="Entertainment" data-en="Entertainment">エンターテインメント</option>
                         </select>
                         <select id="sortFilter" class="filter-select">
-                            <option value="default">並び順：デフォルト</option>
-                            <option value="release-desc">リリース日：新しい順</option>
-                            <option value="release-asc">リリース日：古い順</option>
-                            <option value="update-desc">更新日：新しい順</option>
-                            <option value="update-asc">更新日：古い順</option>
-                            <option value="popular">人気順</option>
-                            <option value="name-asc">名前：A-Z</option>
-                            <option value="name-desc">名前：Z-A</option>
+                            <option value="default" data-en="Sort: Default">並び順：デフォルト</option>
+                            <option value="release-desc" data-en="Release date: newest first">リリース日：新しい順</option>
+                            <option value="release-asc" data-en="Release date: oldest first">リリース日：古い順</option>
+                            <option value="update-desc" data-en="Last updated: newest first">更新日：新しい順</option>
+                            <option value="update-asc" data-en="Last updated: oldest first">更新日：古い順</option>
+                            <option value="popular" data-en="Most popular">人気順</option>
+                            <option value="name-asc" data-en="Name: A-Z">名前：A-Z</option>
+                            <option value="name-desc" data-en="Name: Z-A">名前：Z-A</option>
                         </select>
                     </div>
-                    <span class="filter-results" id="filterResults">74件表示中</span>
-                    <button class="filter-clear" id="filterClear">クリア</button>
+                    <span class="filter-results" id="filterResults"><span class="i18n-ja">74件表示中</span><span class="i18n-en">Showing 74 apps</span></span>
+                    <button class="filter-clear" id="filterClear"><span class="i18n-ja">クリア</span><span class="i18n-en">Clear</span></button>
                 </div>
 
                 <div class="app-grid-store" id="appGrid">
@@ -175,8 +178,8 @@
         <!-- Archived Apps Section -->
         <section class="apps-section archived-section">
             <div class="container">
-                <h2 class="section-title-appstore">アーカイブしたアプリ</h2>
-                <p class="archived-description">過去にリリースしたアプリ（現在は公開停止）</p>
+                <h2 class="section-title-appstore"><span class="i18n-ja">アーカイブしたアプリ</span><span class="i18n-en">Archived Apps</span></h2>
+                <p class="archived-description"><span class="i18n-ja">過去にリリースしたアプリ（現在は公開停止）</span><span class="i18n-en">Apps I released in the past (no longer available)</span></p>
 
                 <div class="app-grid-store">
                     <!-- パンケーキ屋さん -->
@@ -188,7 +191,7 @@
                             <div class="app-info">
                                 <h3 class="app-name">パンケーキ屋さん</h3>
                                 <p class="app-subtitle">Games</p>
-                                <p class="app-meta archived-badge">公開停止</p>
+                                <p class="app-meta archived-badge"><span class="i18n-ja">公開停止</span><span class="i18n-en">Discontinued</span></p>
                             </div>
                         </div>
                         <div class="app-screenshots">
@@ -213,7 +216,7 @@
                             <div class="app-info">
                                 <h3 class="app-name">FightAction</h3>
                                 <p class="app-subtitle">Games</p>
-                                <p class="app-meta archived-badge">公開停止</p>
+                                <p class="app-meta archived-badge"><span class="i18n-ja">公開停止</span><span class="i18n-en">Discontinued</span></p>
                             </div>
                         </div>
                         <div class="app-screenshots">
@@ -238,7 +241,7 @@
                             <div class="app-info">
                                 <h3 class="app-name">星防衛</h3>
                                 <p class="app-subtitle">Games</p>
-                                <p class="app-meta archived-badge">公開停止</p>
+                                <p class="app-meta archived-badge"><span class="i18n-ja">公開停止</span><span class="i18n-en">Discontinued</span></p>
                             </div>
                         </div>
                         <div class="app-screenshots">
@@ -263,7 +266,7 @@
                             <div class="app-info">
                                 <h3 class="app-name">SameColor</h3>
                                 <p class="app-subtitle">Games</p>
-                                <p class="app-meta archived-badge">公開停止</p>
+                                <p class="app-meta archived-badge"><span class="i18n-ja">公開停止</span><span class="i18n-en">Discontinued</span></p>
                             </div>
                         </div>
                         <div class="app-screenshots">
@@ -288,7 +291,7 @@
                             <div class="app-info">
                                 <h3 class="app-name">MacAddressQuiz</h3>
                                 <p class="app-subtitle">Education</p>
-                                <p class="app-meta archived-badge">公開停止</p>
+                                <p class="app-meta archived-badge"><span class="i18n-ja">公開停止</span><span class="i18n-en">Discontinued</span></p>
                             </div>
                         </div>
                         <div class="app-screenshots">
