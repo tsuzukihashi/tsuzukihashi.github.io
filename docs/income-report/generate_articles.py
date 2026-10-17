@@ -37,6 +37,20 @@ SERIES_EN = "The Struggling Indie Dev's Road to ¥10M a Month"
 with open(os.path.join(DATA_DIR, "fx_usd.json")) as f:
     FX_USD = json.load(f)
 
+# 各号のイラスト（文字なし）。作り方は .claude/skills/income-report-illustration/SKILL.md
+with open(os.path.join(DATA_DIR, "illustrations.json"), encoding="utf-8") as f:
+    ILLUST_ALT = json.load(f)["alt"]
+
+
+def illustration_html(key):
+    """記事の見出しの下に置くイラスト。画像が無い号は何も出さない"""
+    path = f"/assets/images/income-report/{key}.webp"
+    if not os.path.exists(os.path.join(REPO, path.lstrip("/"))) or key not in ILLUST_ALT:
+        return ""
+    alt_ja, alt_en = (html_lib.escape(t) for t in ILLUST_ALT[key])
+    return (f'        <figure class="post-illustration"><img src="{path}" width="1200" height="800" '
+            f'alt="{alt_ja}" data-en-alt="{alt_en}" fetchpriority="high"></figure>')
+
 # 「¥10M」「¥10 million」のような連載名・目標の円はドルにしない
 YEN_RE = re.compile(r"¥(\d{1,3}(?:,\d{3})*(?:\.\d+)?)(?![\d.]*\s?(?:M\b|K\b|million))")
 
@@ -495,6 +509,8 @@ HEAD_TEMPLATE = """<!DOCTYPE html>
             margin: var(--spacing-2xl) 0;
         }}
         .post-title {{ word-break: keep-all; overflow-wrap: anywhere; }}
+        .post-illustration {{ max-width: 760px; margin: 0 auto var(--space-xl, 48px); padding: 0 16px; }}
+        .post-illustration img {{ width: 100%; height: auto; display: block; border: 2px solid var(--color-ink, #14110c); border-radius: 20px; }}
         .nowrap-title {{ white-space: nowrap; }}
         .revenue-summary h3 {{ font-family: var(--font-accent); font-style: italic; font-weight: 700; font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-secondary); margin-bottom: var(--spacing-sm); }}
         .revenue-number {{ font-family: var(--font-impact); font-style: italic; font-size: 3.6rem; color: var(--color-ink); line-height: 1.1; }}
@@ -688,6 +704,7 @@ def build_article(i, m):
             </div>
             <h1 class="post-title">{_t(m['label'] + "<br>収益公開", lab_en + "<br>Revenue Report")}</h1>
         </header>
+{illustration_html(m["ym"])}
 
         <div class="post-content">
 {intro}

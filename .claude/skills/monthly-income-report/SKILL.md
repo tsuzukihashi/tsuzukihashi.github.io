@@ -106,6 +106,11 @@ python3 generate_articles.py
   months_en.py の英文は円（¥）のまま書けば、生成時にその号のレートでドルに置き換わる。目標の「¥10M / ¥10 million」と「¥1 million」のような節目は円のまま残る
 - 手で直す英語（blog/index.html のカードとバナー、特設ページのグラフ・統計・年表）も、その月のレートでドルにする
 
+### 5-1b. イラスト（必須・聞かずにやる）
+
+skill `income-report-illustration` を読んで、その号のイラストを1枚作り、記事とブログ一覧のカードに出す。
+場面はその月の山場から選ぶ。文字は入れない。
+
 ### 5-2. OGP画像
 
 記事1本につき1枚、月の数字を載せた画像を作る。テンプレートは `docs/income-report/ogp.html`。
