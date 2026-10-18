@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-12 23:57:49",
-  "total_apps": 74,
+  "generated_at": "2026-10-18 16:51:30",
+  "total_apps": 78,
   "categories": {
     "Health & Fitness": 6,
-    "Lifestyle": 18,
+    "Lifestyle": 19,
     "Entertainment": 1,
-    "Reference": 4,
+    "Reference": 5,
     "Graphics & Design": 3,
     "Medical": 1,
     "Productivity": 7,
@@ -14,8 +14,8 @@
     "Food & Drink": 3,
     "Social Networking": 2,
     "Games": 4,
-    "Music": 3,
-    "Education": 2,
+    "Music": 4,
+    "Education": 3,
     "Travel": 2,
     "News": 1,
     "Book": 1
@@ -26,20 +26,20 @@
       "name": "うんちくん AI健康記録&うんトモ",
       "bundle_id": "com.tsuzukit.PoopCounter",
       "app_store_url": "https://apps.apple.com/jp/app/%E3%81%86%E3%82%93%E3%81%A1%E3%81%8F%E3%82%93-ai%E5%81%A5%E5%BA%B7%E8%A8%98%E9%8C%B2-%E3%81%86%E3%82%93%E3%83%88%E3%83%A2/id6758856276?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/70/51/ba/7051bad5-148b-ce08-0aeb-66f24097d0e3/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/03/e1/5d/03e15da9-4b6e-1a61-0eb6-1e8bcaeb4657/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/16/ab/8e/16ab8ee0-24ca-8827-dda3-a620b66afe6e/001.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ed/0e/7a/ed0e7af8-9830-e502-03c7-8b2ee82c3c47/002.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a1/15/d8/a115d8bf-bd45-eac7-b8c1-41116da70572/003.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f5/b1/1a/f5b11a32-1fad-90ca-0240-2d54cb878b13/004.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3d/c4/2b/3dc42b66-6878-b340-4b55-3c997569d4b4/005.png/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/6GBJdW0LyKM3GEt6DzY7IA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/qgHwoEH12De8nx-UQQM6AA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/2he6AjxBMe2Ab9eeRc6H6Q/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PW4WYJ-mf1YvK05fHmFQHQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/TZyfkOQrsS9ploX6MPE1PA/626x0w.webp"
       ],
       "ipad_screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/84/50/1c/84501c4c-7d49-4dac-d344-82dbfc372128/APP_IPAD_PRO_3GEN_129_01.png/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/46/9e/98/469e9898-a4b8-48e5-6368-e28a73728a29/APP_IPAD_PRO_3GEN_129_02.png/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/2e/86/d7/2e86d7df-43c8-937c-1590-a39411784dd7/APP_IPAD_PRO_3GEN_129_03.png/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c4/a8/e8/c4a8e8e0-74a2-a171-711d-22ed7dddd4da/APP_IPAD_PRO_3GEN_129_04.png/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4c/87/16/4c8716e0-076f-f934-ef84-c902ba539e63/APP_IPAD_PRO_3GEN_129_05.png/360x480bb.jpg"
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/bc/ea/12/bcea124a-7c65-a397-059d-b7abe2518d2a/APP_IPAD_PRO_3GEN_129_01.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a9/c4/9f/a9c49f06-83dd-f59b-dfc4-a842147fbefb/APP_IPAD_PRO_3GEN_129_02.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3f/03/1c/3f031c93-eeae-797d-6f97-a6da4572e52f/APP_IPAD_PRO_3GEN_129_03.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/37/1e/47/371e478b-5f29-cc51-2cec-f7ab82949862/APP_IPAD_PRO_3GEN_129_04.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2a/cd/c0/2acdc03f-f287-88a9-f586-327976c3d348/APP_IPAD_PRO_3GEN_129_05.png/360x480bb.jpg"
       ],
       "price": "無料",
       "currency": "JPY",
@@ -48,19 +48,19 @@
         "エンターテインメント"
       ],
       "primary_genre": "Health & Fitness",
-      "rating": 4.11649,
-      "rating_count": 558,
-      "version": "2.14.8",
+      "rating": 4.12084,
+      "rating_count": 571,
+      "version": "3.1.1",
       "release_date": "2026-02-26T08:00:00Z",
-      "current_version_release_date": "2026-09-09T16:41:42Z",
+      "current_version_release_date": "2026-10-15T14:30:54Z",
       "description": "うんちくんは、毎日のうんちを楽しく記録して友達や家族とシェアできるアプリです。\n\n【ワンタップで記録】\n「でた！」ボタンを押すだけで今日のうんちを記録。回数に応じて37種類以上のうんちキャラクターがリアクションしてくれます。\n\n【うんトモとシェア】\n友達コードやQRコードで「うんトモ」を追加。ストーリー形式でうんトモのうんち状況をチェックできます。まるでInstagramのストーリーのように、楽しくうんち報告！\n\n【ウィジェット対応】\nホーム画面にウィジェットを追加すれば、アプリを開かなくても今日の記録が一目でわかります。回数に応じてテーマカラーが変化！\n\n【うんカレ（カレンダー）】\n週間カレンダーで日ごとの記録を確認。平均回数や最高記録もチェックできます。\n\n【ストリーク機能】\n連続記録日数をカウント。毎日のうんち習慣をゲーム感覚で続けられます。\n\n【プッシュ通知】\nうんトモがうんちした時にお知らせが届きます。友達申請の通知も見逃しません。\n\n【アバターカスタマイズ】\n肌色・髪型・髪色・目の色・服装など自由にカスタマイズ。あなただけのアバターでうんトモと交流しよう。\n\n【無料版】\n・ワンタップ記録\n・うんトモ追加（無制限）\n・ストーリー共有\n・週間カレンダー\n・ウィジェット\n・アバターカスタマイズ\n・プッシュ通知\n\n【プレミアム版】\n・うんトモの記録に、90種類を超える限定リアクションスタンプで気持ちを返せます\n・ホーム画面のアプリアイコンをお気に入りのデザインに変えられます\n・好きな写真をプロフィール画像に設定できます\n・サポーター限定の帽子・オーラ・表情で、うんちくんを自分だけの姿に着せ替えられます\n・月間カレンダー＆サマリー\n・広告なし\n・すべての機能が使い放題\n\n毎日のうんちを、うんちくんと一緒に楽しく記録しよう！\n\n【リンク】\n・サポート: https://tsuzukit.com/contact/\n・利用規約: https://unchikun.app/legal/terms-of-service\n・プライバシーポリシー: https://unchikun.app/legal/privacy-policy\n・特定商取引法に基づく表記: https://unchikun.app/legal/commercial-law",
-      "release_notes": "v2.14.8 の変更点\n\n・Google アカウントでログインできるようになりました\n\n・ギフトの価格が正しく表示されないことがある不具合を修正しました\n\n・うんカレで過去の月を開いたときの表示を速くしました\n\n・その他、細かな改善と不具合の修正",
+      "release_notes": "パートナーにしたのに、次に開くと戻ってた。あれ直したよ。\n招待のリンクも、ちゃんと自分のコードが入るようになった。\nタワーの今週のベストが遊ぶたびに書き換わってたのも直した。安心して積め。",
       "content_advisory_rating": "4+",
       "minimum_os_version": "17.0",
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
       "google_play_url": "https://play.google.com/store/apps/details?id=com.tsuzukit.poopcounter",
-      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/70/51/ba/7051bad5-148b-ce08-0aeb-66f24097d0e3/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/60x60bb.jpg",
+      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/03/e1/5d/03e15da9-4b6e-1a61-0eb6-1e8bcaeb4657/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/60x60bb.jpg",
       "download_count": 37300
     },
     {
@@ -70,11 +70,11 @@
       "app_store_url": "https://apps.apple.com/jp/app/%E8%A6%8B%E5%AE%88%E3%82%8A%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%80%E3%83%BC-%E3%81%BF%E3%81%BE%E3%82%82%E3%82%8A/id6758816691?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/81/c0/15/81c01572-c42c-1443-b735-8d6ee23c1014/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9f/f6/81/9ff681f3-92e6-7e54-ef26-75df536819f2/6.5inch.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ef/05/95/ef059533-7501-405c-a6a4-e448536a849b/6.5inch.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/16/a6/cb/16a6cb0c-3fb1-b67d-d1bd-012c3e42bdf9/6.5inch.003.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ce/e3/13/cee3131e-d740-b2c2-705c-98452238aa5c/6.5inch.004.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ab/4e/b7/ab4eb761-a143-53d0-4cf4-5b9e51fb87f1/6.5inch.005.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/AAdkr2RSuYp37jaatOO7ww/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/sJwx5TLYSuQCJw9tnpzubw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/N13nnsJX-4dH7UavrO2ibQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/ztwT4MMTu3na0f4SPJPmWw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/AoKgRdIdNRhNI-KMp6RV9A/626x0w.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -105,11 +105,11 @@
       "app_store_url": "https://apps.apple.com/jp/app/%E8%A8%98%E5%BF%B5%E6%97%A5%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%80%E3%83%BC-%E3%83%A1%E3%83%A2%E3%83%AA%E3%82%A2/id6758575269?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/36/53/82/36538239-c1d1-31a2-c278-3bb4c008976e/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9a/a5/ac/9aa5ac4e-4af9-3c0e-edf8-99a70088b303/6.5inch.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3f/b0/57/3fb057fa-2741-e09f-2421-7ed78eaa08b1/6.5inch.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/56/e4/1f/56e41f02-35d8-0095-e208-5552a279b345/6.5inch.003.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a7/f4/a0/a7f4a0cf-3722-40ee-3c44-a1e1faee76ed/6.5inch.004.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/24/05/82/240582fa-9267-ef3a-d21f-e4c9eab2f868/6.5inch.005.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/A3_57jjjgVs5e_21137pCA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/9jW6-bUVLCeTFDCosW3qKQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/mDwighR7ERJs8EbovyJeyA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/c187iQ8Ee3ObN-7z_uXiOQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/aMkVj8YIxaAe9MUBfIg_2A/626x0w.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -140,12 +140,12 @@
       "app_store_url": "https://apps.apple.com/jp/app/%E7%8C%AB%E8%83%8C%E6%94%B9%E5%96%84%E3%81%A8%E5%A7%BF%E5%8B%A2%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%80%E3%83%BC-%E7%8C%AB%E8%83%8C%E3%81%AF%E7%8C%AB%E3%81%A0%E3%81%91%E3%81%A7%E5%85%85%E5%88%86%E3%81%AB%E3%82%83/id6758261496?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f3/b7/77/f3b7773a-bd81-95e7-2fde-ff931ed92d45/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8d/83/4e/8d834e9f-6d32-b3a9-30f2-1aaf04543caa/IMG_2083.JPG/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/8a/24/ba/8a24ba0e-9892-cb84-1e7f-de3959b87f0a/IMG_2085.JPG/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/66/76/f4/6676f4d4-1778-b4f0-193a-9a1775ee45ed/IMG_2086.JPG/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/df/10/6b/df106b3c-6d5c-fe32-f8e2-87ab9c24163d/IMG_2087.JPG/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/9b/d0/98/9bd0987f-8545-d898-18f2-e366fcef96e3/IMG_2088.JPG/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/cc/d1/e6/ccd1e6b6-8c57-f85c-b069-7919bfbc5412/IMG_2092.JPG/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/nufzqCqMZb1lzXHUpAd8oQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/frmpuDdYnIyEYKbGewrFUQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/73ZAFFCYge5Yqhg3f1O1dg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Aw7SWOSX_vfT_tz4Af-1UQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/9U9TUNFkinJ3wpw090z51g/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Jy0fN6aVw4q-2X0kgT5oyQ/626x0w.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -176,10 +176,10 @@
       "app_store_url": "https://apps.apple.com/jp/app/%E6%8E%A8%E3%81%97%E3%82%A2%E3%82%A4%E3%83%A9%E3%83%B3%E3%83%89/id6751716346?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f7/49/d2/f749d23a-3689-a5dd-5d1d-a598950509ce/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0e/5f/09/0e5f09d3-6d63-03b7-25b5-4f7a4b6e0b09/6.5inch.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/84/bb/ec/84bbecf3-de84-b72c-a7ba-178018a42c6d/6.5inch.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2b/f6/6e/2bf66e6d-7e50-4747-fc37-d947888ce092/6.5inch.005.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b8/fc/e9/b8fce97a-1693-d7fe-d1dc-f32f84acbfde/6.5inch.004.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/v-Tlendm6pInm3Jfc5ucwA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/vwqeAMws3YAif9BlWEof1g/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Y6qGVf5mh-tFTVQm7D_cSQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/1OBjRMSoz_L2S_MYcKuKLg/626x0w.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -189,8 +189,8 @@
         "グラフィック／デザイン"
       ],
       "primary_genre": "Entertainment",
-      "rating": 3.27419,
-      "rating_count": 62,
+      "rating": 3.2381,
+      "rating_count": 63,
       "version": "1.4.0",
       "release_date": "2026-01-21T08:00:00Z",
       "current_version_release_date": "2026-03-11T23:54:48Z",
@@ -214,10 +214,10 @@
       "app_store_url": "https://apps.apple.com/jp/app/%E7%9B%AE%E8%96%AC%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%80%E3%83%BC-eyedrop-%E7%82%B9%E7%9C%BC%E7%AE%A1%E7%90%86/id6757758987?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/99/ab/b3/99abb3ee-bc10-c51b-65e0-a96453b6ae53/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/95/0f/b7/950fb75e-c80a-a0f1-fac2-5dd69683ac52/6.5inch.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b1/ca/9e/b1ca9eb6-ec53-a04f-2f36-3e6723258708/6.5inch.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/42/ed/db/42eddb9a-6efe-11a1-2f78-929810a0e1b2/6.5inch.003.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c8/6a/4c/c86a4caa-5c3a-f23a-5fa0-1fa165db2f17/6.5inch.004.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/gvg418r7b2m0-9naHncVkA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/be-ywnj4NWXtZFrYPdzOog/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PPi4cuTNMY1l1v0aSKKB6w/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/jNLSn6Nb2pMnYuEi5BxLqw/626x0w.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -252,9 +252,9 @@
       "app_store_url": "https://apps.apple.com/jp/app/%E6%80%9D%E3%81%84%E5%87%BA%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%80%E3%83%BC-1%E6%97%A51%E6%9E%9A%E3%83%95%E3%82%A9%E3%83%88%E6%97%A5%E8%A8%98/id6757349187?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b0/28/73/b028733a-c2c8-43da-5215-fffa24738b59/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/3d/e2/8d/3de28da6-13c8-bb40-00df-92825286d936/6.5inch.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/4c/9c/45/4c9c459b-185f-e3e8-552d-a6ff2c8f75d3/6.5inch.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/6a/c6/19/6ac619dc-57a3-3593-5d93-15257df866d2/6.5inch.003.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/5bPwRUQchkxgcv1y-0vV9g/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/1oaAdwZpv4mjQpNlv5GOxA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/cL_RW7K6fD-RKsVjt3D5qw/626x0w.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -289,9 +289,9 @@
       "app_store_url": "https://apps.apple.com/jp/app/shelllens-%E8%B2%9D%E6%AE%BBai%E5%9B%B3%E9%91%91/id6757253733?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/65/8d/19/658d1967-9e21-05c7-bc6a-c17898ce0215/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/6b/e8/9f/6be89fa5-0554-35db-b861-4a08551f4bde/ShellLens.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/55/07/83/55078366-a226-078a-9d99-96d78754552f/ShellLens.003.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/11/2e/17/112e17cf-c280-0778-2a80-ed9a5b9ea86c/ShellLens.002.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/iV-7kkg1QAX825-UrSldDQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/tBNl8NztyXnm6wVt_duv4g/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/NLF0-E5mmqSILLV6FE5kpw/626x0w.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -326,10 +326,10 @@
       "app_store_url": "https://apps.apple.com/jp/app/beautymed-%E7%BE%8E%E5%AE%B9%E5%8C%BB%E7%99%82%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%80%E3%83%BC/id6757325065?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/58/b0/da/58b0da76-fa5a-e480-d7af-b898a6e41878/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/99/eb/28/99eb2867-9f1f-ed45-0bf4-e4024dacd879/6.5inch.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/49/10/26/4910264f-d603-a214-c20c-22ab11accc80/6.5inch.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/aa/7a/a4/aa7aa4a3-d4ba-6007-2978-0061cf4b298b/6.5inch.003.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/5e/0a/5b/5e0a5b49-209c-a634-aaab-053e21f11641/6.5inch.004.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/3ttkQEYZCi_JhgkwapVMmg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/O1_oT0rH6JwLu8DjB-iGQA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/1es06szhpX0m7Qbkw8MqTQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/aqd4OdHwBEKUfQVp8K9c8A/626x0w.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -364,9 +364,9 @@
       "app_store_url": "https://apps.apple.com/jp/app/birdlens-%E9%87%8E%E9%B3%A5ai%E5%9B%B3%E9%91%91/id6757175763?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4d/e5/7d/4de57d82-6e46-3246-a1d0-4f7a3e3eec46/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e4/65/12/e4651248-f18e-ea79-6864-209a68433690/BardLens.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/19/95/28/19952808-32e5-5300-dac2-94552508496a/BardLens.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8f/de/3b/8fde3b37-9e72-c23c-49ad-8175fae8fe93/BardLens.003.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/6JS7yV6ULRHYUeZPkHZdjQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/N8BAkxTgwCgLB6YLnFwGFg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/eYER-Q3ljHnpM5BU_3q1Vg/626x0w.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -401,9 +401,9 @@
       "app_store_url": "https://apps.apple.com/jp/app/geolens-%E5%B2%A9%E7%9F%B3-%E9%89%B1%E7%89%A9ai%E5%9B%B3%E9%91%91/id6757151902?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/01/9f/56/019f5699-a216-3617-cb06-4c0ab581be0f/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/34/e3/e8/34e3e8f2-3dca-87a0-68e5-1100efd93b2e/6.5inch.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/46/e2/80/46e2806b-a12b-9e0f-42b8-42f3ea10bdda/6.5inch.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f0/c5/01/f0c50143-fd89-018b-e837-f8c23a73a9fe/6.5inch.003.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/SXoD3FNpmwRKXsuMyINT3g/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/eH-_wPu6O5tqwdBcH46jzg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/xp-7JPGcxq1VcT0lsqedlw/626x0w.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -436,11 +436,11 @@
       "name": "馬券ジェネレーター",
       "bundle_id": "com.tsuzukit.HorseTicketGenerator",
       "app_store_url": "https://apps.apple.com/jp/app/%E9%A6%AC%E5%88%B8%E3%82%B8%E3%82%A7%E3%83%8D%E3%83%AC%E3%83%BC%E3%82%BF%E3%83%BC/id6757259211?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/3f/69/67/3f696767-f83f-49f3-a22f-b8228cffeb02/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ce/90/71/ce90711a-ec88-3aa2-25b8-68c2481d2cce/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c7/66/1c/c7661cc7-e2ce-6467-981c-f4bf3c10f954/_U99ac_U5238_U30b7_U3099_U30a7_U30cd_U30ec_U30fc_U30bf.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/45/96/3f/45963fd5-67d6-33f7-f005-c5fa0dd7b68b/_U99ac_U5238_U30b7_U3099_U30a7_U30cd_U30ec_U30fc_U30bf.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/71/47/25/71472508-1ba3-bc9f-98ab-ba4cd22e9271/_U99ac_U5238_U30b7_U3099_U30a7_U30cd_U30ec_U30fc_U30bf.003.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/6NWokQgeo4Ca2n8H8qCMTw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/zUsbIN5sx4poy0VpCQKnmQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/JyHiU0yxc8BETsG98E2fYA/626x0w.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -451,16 +451,16 @@
       "primary_genre": "Graphics & Design",
       "rating": 0,
       "rating_count": 0,
-      "version": "1.0",
+      "version": "1.0.1",
       "release_date": "2026-01-04T08:00:00Z",
-      "current_version_release_date": "2026-01-05T02:35:27Z",
+      "current_version_release_date": "2026-10-11T20:28:56Z",
       "description": "馬券ジェネレーターは、JRA風のリアルな馬券を簡単に作成できるエンターテイメントアプリです。\n\n【こんな時に使えます】\n- 推しの名前で馬券を作りたい！\n- 友達へのネタプレゼントに！\n- 競馬場での話題作りに！\n- SNS投稿用のネタ画像に！\n\n【主な機能】\n- JRAの馬券そっくりなデザイン\n- 複数の馬券種別に対応（単勝・複勝・馬連・ワイド・馬単・3連複・3連単）\n- 好きな馬名・金額を自由に設定\n- 高解像度での画像保存\n- 作成した馬券の履歴管理\n- シェア機能で簡単に共有\n\n【プレミアム機能】\n- 広告の完全削除\n- 高解像度出力\n- 印刷に最適な画質\n\n【注意事項】\nこのアプリで生成した画像は実際の馬券ではありません。ジョーク・エンターテイメント目的でのみご利用ください。\n\n推しの名前で勝馬投票券を作って、友達や仲間と楽しもう！",
-      "release_notes": null,
+      "release_notes": "保存の前に広告の確認を出すようにしました。広告を見るかどうかを選べます。",
       "content_advisory_rating": "4+",
       "minimum_os_version": "17.0",
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
-      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/3f/69/67/3f696767-f83f-49f3-a22f-b8228cffeb02/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/60x60bb.jpg",
+      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ce/90/71/ce90711a-ec88-3aa2-25b8-68c2481d2cce/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/60x60bb.jpg",
       "genre_ids": [
         "6027"
       ],
@@ -473,10 +473,10 @@
       "app_store_url": "https://apps.apple.com/jp/app/%E3%81%8A%E8%96%AC%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%80%E3%83%BC-%E6%9C%8D%E7%94%A8%E7%AE%A1%E7%90%86/id6756915544?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/36/20/93/362093f8-b3e0-17c2-15c7-f6af3af7a106/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ef/57/29/ef572990-f149-e97c-87db-646f55a01811/6.5inch.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/6d/35/f7/6d35f762-84f5-7c57-5634-21786a8078e1/6.5inch.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8a/b9/16/8ab91648-9ea7-96b3-e8d2-52dff6b68894/6.5inch.003.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ce/ed/bc/ceedbc62-76db-e53d-0df1-a9339c430dee/6.5inch.004.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/BMoZJ_CNqFogVA74vgPa0g/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/u8UUFo9lpUN4MIqZ9bADwg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/IV7wy0LESWBPXp6jEe6c-w/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/8nV_JfB1T7Exye7CuTrMwg/626x0w.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -511,9 +511,9 @@
       "app_store_url": "https://apps.apple.com/jp/app/%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%80%E3%83%BC-%E8%A8%98%E6%86%B6%E3%82%92%E5%91%BC%E3%81%B3%E8%B5%B7%E3%81%93%E3%81%99/id6756901694?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e0/5b/29/e05b2975-7c56-3f93-5902-f885c2e390ed/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/66/f7/57/66f75751-b8c1-ecfa-f932-41466c637708/6.5inch.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/22/7d/9c/227d9c27-8e1e-8df6-d32f-8ef3176f2acd/6.5inch.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/50/24/c4/5024c47f-851a-d819-6322-007c813c2327/6.5inch.003.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/5cTO4bixIJY2xdtK5YNzfA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/tuxpkom2b8Bejfdv450FuQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Un6HOHATXR5yh2Gg-UWwJA/626x0w.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -548,9 +548,9 @@
       "app_store_url": "https://apps.apple.com/jp/app/focusdrive-%E9%9B%86%E4%B8%AD%E3%82%BF%E3%82%A4%E3%83%9E%E3%83%BC/id6756264384?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/cf/ee/3b/cfee3b95-3416-019a-209c-b5ebb7506be3/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/aa/a8/2f/aaa82fec-77d3-2149-677b-cb4a2ed96296/6.5inch.001.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/7a/17/7e/7a177e3d-3c6d-4e6b-9ce8-1b8e645337c3/6.5inch.002.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/37/b4/0a/37b40aea-37f8-7da8-49a8-99b2f8348939/6.5inch.003.png/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/ssb2jPBbd0IjV85MdtRNnA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/I52WaB8AYm2YBWvRkGncOg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/VLwggapD-ojdngZe_VACCw/626x0w.webp"
       ],
       "ipad_screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a6/38/45/a63845c3-8102-5313-f5f2-f9403c525c4c/13inch.001.png/360x480bb.jpg",
@@ -589,11 +589,11 @@
       "app_store_url": "https://apps.apple.com/jp/app/%E7%A9%BA%E6%83%B3%E6%97%85%E8%A1%8C%E3%82%AB%E3%83%A1%E3%83%A9-ai%E3%81%A7%E4%B8%96%E7%95%8C%E3%82%92%E3%82%B9%E3%83%8A%E3%83%83%E3%83%97/id6755984490?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d0/23/b5/d023b55f-db83-f180-d2f3-157f24a9b83f/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0e/e7/e4/0ee7e441-8e2b-a482-a293-7792dff83b2c/6.5inch.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e0/20/69/e02069dd-3cf2-8da9-a97c-465010cfb65b/6.5inch.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d7/35/9e/d7359e73-ef71-6e5b-a67f-06c4d401be42/6.5inch.003.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2f/45/34/2f4534a8-a3da-7ed9-6af7-6e245b14f0ec/6.5inch.004.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2f/d2/fd/2fd2fd31-fc75-8f31-d761-b0920f4b0c91/6.5inch.005.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/GQMhFwmkKCUOVaXT4LVbww/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/DNywz0fV6EWx_hwqzrO9Iw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Ml5TEmxTrjed-Mlo6HpZqA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/qqZB42CG4vwx8BoEmy-Y4A/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/eEVK4ZuSpe_uUM2EwIK9vA/626x0w.webp"
       ],
       "ipad_screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d0/8d/ec/d08decc3-54d6-e802-9949-a930ac4a109a/13inch.001.jpeg/360x480bb.jpg",
@@ -632,11 +632,11 @@
       "name": "スワイポン - スワイプで写真と動画を簡単整理",
       "bundle_id": "com.tsuzuki817.SwipeClean",
       "app_store_url": "https://apps.apple.com/jp/app/%E3%82%B9%E3%83%AF%E3%82%A4%E3%83%9D%E3%83%B3-%E3%82%B9%E3%83%AF%E3%82%A4%E3%83%97%E3%81%A7%E5%86%99%E7%9C%9F%E3%81%A8%E5%8B%95%E7%94%BB%E3%82%92%E7%B0%A1%E5%8D%98%E6%95%B4%E7%90%86/id6752831862?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/11/e3/16/11e31605-1163-3718-1ffd-4aba66432224/swipeclean-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/79/d0/f5/79d0f513-4e1d-6b13-8054-fb8513924d7b/swipeclean-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/85/20/6f/85206f11-ce42-acb8-294c-9aabac676a8e/6.5inch.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/fd/00/48/fd00480e-cc62-27ff-0c46-c367b09158cb/6.5inch.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/28/01/a3/2801a355-8efc-e9ae-d838-f0115a472d2c/6.5inch.003.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/YpeWpJNZlykCKVHBVPCksA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/5JubbtegPoBcjC7rrrqpuw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/iaXiv8L5i-hWmz_TCf7aeQ/626x0w.webp"
       ],
       "ipad_screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2b/8a/3d/2b8a3def-d3de-7a06-9f51-081df896984c/ja-1-pad1_2.png/360x480bb.jpg",
@@ -653,16 +653,16 @@
       "primary_genre": "Utilities",
       "rating": 4.75,
       "rating_count": 4,
-      "version": "1.3.1",
+      "version": "1.3.2",
       "release_date": "2025-09-25T07:00:00Z",
-      "current_version_release_date": "2025-10-07T02:29:24Z",
+      "current_version_release_date": "2026-10-09T15:20:57Z",
       "description": "「iPhoneのストレージがありません」\nその通知、もう見飽きていませんか！？\n\nスワイポンは、溜まりすぎた写真や動画を驚くほど簡単に整理できる、新しいストレージクリーナーアプリです！\n\n名前の由来は「スワイプでぽんっと簡単削除！」\nゲーム感覚で、不要なスクリーンショットや画像をサクサク仕分けできます。面倒なアルバムの掃除や写真管理は、もう必要ありません。\n\n【主な機能】\n□ 簡単スワイプ操作：残すか削除するかを直感的に選択。難しい操作は一切ありません。\n□ 写真・動画・スクショに対応：カメラロールにある不要なメディアをまとめて整理できます。\n□ 一括削除で一気にスッキリ：整理した画像や動画を一括で削除し、iPhoneの空き容量を確保します。\n□ 解放される容量を表示：削除前にどれだけストレージが軽くなるかを確認できるので、やる気が続きます。\n\n【こんな方におすすめ】\n□ スクリーンショットをメモ代わりにたくさん撮る方\n□ iPhoneが重い、動作が遅いと感じる方\n□ アルバムやカメラロールの掃除が面倒だと感じる方\n□ シンプルな無料アプリで手軽にストレージの軽量化や容量管理をしたい方\n\n面倒な写真管理はもう終わり。\nスワイポンで、あなたのiPhoneを今すぐ軽く、快適にしませんか？\nダウンロードして、その爽快感を体験してください。\n\n利用規約:\nhttps://www.apple.com/legal/internet-services/itunes/dev/stdeula/\nプライバシーポリシー:\nhttps://tsuzukit.com/legal/privacy-policy.html",
-      "release_notes": "対応言語の追加を行いました！",
+      "release_notes": "・利用規約とプライバシーポリシーのリンク先を新しいページに変更しました\n・細かな不具合を修正しました",
       "content_advisory_rating": "12+",
       "minimum_os_version": "17.0",
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
-      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/11/e3/16/11e31605-1163-3718-1ffd-4aba66432224/swipeclean-0-0-1x_U007epad-0-1-85-220.png/60x60bb.jpg",
+      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/79/d0/f5/79d0f513-4e1d-6b13-8054-fb8513924d7b/swipeclean-0-0-1x_U007epad-0-1-85-220.png/60x60bb.jpg",
       "genre_ids": [
         "6002",
         "6007"
@@ -674,11 +674,11 @@
       "name": "Today -今日は令和何年で何の日？-",
       "bundle_id": "com.tsuzuki817.today",
       "app_store_url": "https://apps.apple.com/jp/app/today-%E4%BB%8A%E6%97%A5%E3%81%AF%E4%BB%A4%E5%92%8C%E4%BD%95%E5%B9%B4%E3%81%A7%E4%BD%95%E3%81%AE%E6%97%A5/id6752814140?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ad/07/e5/ad07e5a2-f7ff-3f4b-c7e3-0563717c30e1/today-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ae/5f/80/ae5f8083-5eb4-3be3-a1b8-8aaf76adef29/today-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1a/58/0b/1a580b25-0169-258f-3ae8-05d7ff253c33/6.5inch.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d7/d1/b9/d7d1b9c0-7e65-04c6-4ddb-2aeddceead51/6.5inch.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b4/5a/8f/b45a8fe4-75dd-5cf6-556e-42c9b9b0a215/6.5inch.003.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/-mWlvS1LekrYLJUxxyjA5Q/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/mgma0dv_sYbhjqYLI9az_g/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/qq8qjDPL6iyuh_5Td1uoEA/626x0w.webp"
       ],
       "ipad_screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/94/22/06/942206e3-8a48-56a5-e1bc-08f5ff43ca69/13inch.002.jpeg/360x480bb.jpg",
@@ -694,16 +694,16 @@
       "primary_genre": "Reference",
       "rating": 5,
       "rating_count": 3,
-      "version": "1.0",
+      "version": "1.0.1",
       "release_date": "2025-09-22T07:00:00Z",
-      "current_version_release_date": "2025-09-22T23:46:10Z",
+      "current_version_release_date": "2026-10-09T19:44:01Z",
       "description": "「あれ、今日って令和何年だっけ？」\n「この書類、和暦で書かなきゃ…」\n「スピーチの冒頭で、なにか気の利いた『今日は何の日』ネタはないかな？」\n\nそんな日常の「ちょっと知りたい」に応える、あなたのためのアプリができました。\n\n『Today』は、西暦・和暦・六曜・祝日・記念日・花言葉・月の満ち欠けなど、「今日」に関するあらゆる情報を、美しく洗練された画面にギュッと凝縮したシンプルなユーティリティアプリです。\n\n毎日の生活や仕事の傍らに、ぜひ『Today』を置いてみてください。\n\n【主な機能】\n\n□ 簡単な日付確認\n西暦だけでなく、「令和◯年」といった和暦や干支、年号の由来まで瞬時に確認できます。\n\n□ 「今日は何の日？」が一目瞭然\n国民の祝日はもちろん、歴史的な出来事や面白い記念日まで、その日に関する情報が満載です。\n\n□ 六曜・暦情報\n大安や仏滅などの「六曜」を毎日表示。冠婚葬祭や大切なイベントの日取り決めに役立ちます。\n\n□ 今日の月\n美しいアイコンで現在の月相（月の満ち欠け）を表示。「次の満月まであと何日？」もすぐに分かります。\n\n□ 今日の花言葉\n毎日変わる花と、その花言葉をご紹介。日常に彩りを添える、ささやかな知識をお届けします。\n\n□ オフラインでも動作\nデータは全てアプリ内に収録。電波が届かない場所でもサクサク快適に動作します。\n\n【こんな方におすすめ】\n\n書類作成などで和暦を頻繁に使う方\n\n営業や接客業で、お客様との会話のきっかけを探している方\n\nスピーチや朝礼のネタに困っている方\n\n日本の暦や文化に興味がある方\n\n毎日のちょっとした雑学や知識を楽しみたいすべての方\n\nさあ、あなたも『Today』で、毎日をもっとスマートに、もっと豊かに過ごしませんか？",
-      "release_notes": null,
+      "release_notes": "・利用規約とプライバシーポリシーのリンク先を新しいページに変更しました\n・細かな不具合を修正しました",
       "content_advisory_rating": "4+",
       "minimum_os_version": "17.0",
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
-      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ad/07/e5/ad07e5a2-f7ff-3f4b-c7e3-0563717c30e1/today-0-0-1x_U007epad-0-1-85-220.png/60x60bb.jpg",
+      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ae/5f/80/ae5f8083-5eb4-3be3-a1b8-8aaf76adef29/today-0-0-1x_U007epad-0-1-85-220.png/60x60bb.jpg",
       "genre_ids": [
         "6006",
         "6007"
@@ -715,11 +715,11 @@
       "name": "Cook-it -冷蔵庫の中を撮るだけでAIレシピ提案-",
       "bundle_id": "com.tsuzuki817.cook-it",
       "app_store_url": "https://apps.apple.com/jp/app/cook-it-%E5%86%B7%E8%94%B5%E5%BA%AB%E3%81%AE%E4%B8%AD%E3%82%92%E6%92%AE%E3%82%8B%E3%81%A0%E3%81%91%E3%81%A7ai%E3%83%AC%E3%82%B7%E3%83%94%E6%8F%90%E6%A1%88/id6751343632?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5b/cc/48/5bcc48a9-937f-9035-c7aa-66c1f127126c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4d/89/0c/4d890c69-8fb6-4945-1fd5-823e7e97fc5e/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/14/51/5f/14515f44-bf72-6d76-a836-b8a6726ec60c/6.9inch.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/32/48/83/32488394-c53b-d691-54e4-b2a183508995/6.9inch.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c3/de/d4/c3ded498-9fa6-c2cc-844d-43d3553c80af/6.9inch.003.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/ff94fF-0sl_qC4OwkJc_iw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/etdkauRmT6-AFlwxSOG5SQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/pd_pqceI36qpNzEJQ5xcAw/626x0w.webp"
       ],
       "ipad_screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e0/ae/da/e0aeda46-14a3-e923-617f-c183150a17ac/13inch.001.jpeg/360x480bb.jpg",
@@ -735,16 +735,16 @@
       "primary_genre": "Food & Drink",
       "rating": 0,
       "rating_count": 0,
-      "version": "1.0.1",
+      "version": "1.0.2",
       "release_date": "2025-09-03T07:00:00Z",
-      "current_version_release_date": "2025-09-16T18:09:18Z",
+      "current_version_release_date": "2026-10-09T15:21:40Z",
       "description": "Cook-itは、毎日の料理をもっと楽しく、確実にするための革新的なレシピアプリです。\nAIによる賢いレシピ提案と、失敗しないタイマー管理で、あなたの料理体験を劇的に改善します。\n\n□ AIレシピ提案\n「豚肉と玉ねぎで何か作りたい」など、自然な言葉でレシピを検索。Gemini AIがあなたにぴったりのレシピを提案します。\n\n□ 食材認識機能\n冷蔵庫の中身を撮影するだけで、AIが食材を認識し、最適なレシピを自動提案。毎日の献立決めがゲーム感覚で楽しくなります。\n\n□ スマートタイマー\nレシピの全工程を一括でタイマー登録\n\n□ 料理記録・統計\n作った料理をカレンダーで管理し、得意料理や調理時間の傾向を分析。料理スキルの成長を可視化できます。\n\n□ レシピコミュニティ\n段取りを含めた詳細なレシピを投稿・共有。みんなの成功体験から学び、料理の腕を確実にレベルアップできます。\n\n□ 機能\n - カメラ具材認識: 冷蔵庫の中身を撮影するだけでレシピ提案\n - 料理カレンダー: 作った料理を記録して振り返り\n - 統計機能: 得意料理や調理時間の分析\n - タイマー機能: 確実なタイマー通知でミスを防止\n\n\n□ その他情報\n・利用規約\nhttps://tsuzukit.com/legal/terms-of-service.html\n\n・プライバシーポリシー\nhttps://tsuzukit.com/legal/privacy-policy.html\n\n・特定商取引法に基づく表示\nhttps://tsuzukit.com/legal/commercial-law.html",
-      "release_notes": "クッキングタイマーの完了をアラームを使って通知することができるようになりました！",
+      "release_notes": "・利用規約とプライバシーポリシーのリンク先を新しいページに変更しました\n・細かな不具合を修正しました",
       "content_advisory_rating": "17+",
       "minimum_os_version": "18.0",
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
-      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5b/cc/48/5bcc48a9-937f-9035-c7aa-66c1f127126c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/60x60bb.jpg",
+      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4d/89/0c/4d890c69-8fb6-4945-1fd5-823e7e97fc5e/AppIcon-0-0-1x_U007epad-0-1-85-220.png/60x60bb.jpg",
       "genre_ids": [
         "6023",
         "6013"
@@ -756,12 +756,12 @@
       "name": "言の葉箱 〜大切な手紙を簡単に記録〜",
       "bundle_id": "com.tsuzuki817.LetterBox",
       "app_store_url": "https://apps.apple.com/jp/app/%E8%A8%80%E3%81%AE%E8%91%89%E7%AE%B1-%E5%A4%A7%E5%88%87%E3%81%AA%E6%89%8B%E7%B4%99%E3%82%92%E7%B0%A1%E5%8D%98%E3%81%AB%E8%A8%98%E9%8C%B2/id6749537777?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/82/95/f3/8295f3cc-d094-690c-e71c-0c6ec70c77a3/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/39/9d/15/399d159d-d1b3-7547-f6f6-aa49dd81a7a5/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/8f/82/9d/8f829d15-9c26-36b7-4b2a-6f4e110f2dce/6.9inch.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/30/36/ce/3036ceba-f1cc-2958-71f2-46117a6142f2/6.9inch.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0c/14/3a/0c143ad2-a290-145b-f464-b25e041d226d/6.9inch.003.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/43/84/da/4384da95-07cb-41ef-6c3e-ffd79eafd15d/6.9inch.004.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/0yBgDs-Axu64grXrs17Chw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/5uKLkJ5eZrdLxwvlgPVOCw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/M8Ghd8Kcr6AQvDL7P8bfoA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/oXhMKZngjUsYFJWCAcIJHA/626x0w.webp"
       ],
       "ipad_screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/75/42/aa/7542aa4b-c699-8a0b-fda1-56ca752ef82e/13inch.001.jpeg/360x480bb.jpg",
@@ -778,16 +778,16 @@
       "primary_genre": "Utilities",
       "rating": 1,
       "rating_count": 1,
-      "version": "1.0",
+      "version": "1.0.1",
       "release_date": "2025-08-28T07:00:00Z",
-      "current_version_release_date": "2025-08-28T13:34:16Z",
+      "current_version_release_date": "2026-10-09T15:48:33Z",
       "description": "「あの時もらった手紙、どこにしまったかな…？」\n\n『手紙箱』は、そんなあなたの大切な思い出を、永遠に色褪せない宝物に変えるアプリです。\nかさばる手紙やハガキを写真に撮るだけで、いつでも、どこでも、あの日の言葉を読み返すことができます。\n\n■ 簡単スキャンで、すっきり整理\nたった数タップで、大切な手紙をデータとして保存。物理的な保管場所に悩むことなく、思い出をスマートに整理整頓できます。もう「捨てられない」と悩む必要はありません。\n\n■ 探したい言葉が、すぐに見つかる\n独自の文字認識（OCR）技術で、写真に写った手書きの文字もテキスト化。\n差出人はもちろん、「ありがとう」「おめでとう」といったキーワードで、思い出のメッセージを瞬時に検索できます。\n\n■ カレンダーで思い出を振り返る\n「いつ、誰から」もらったかを記録し、カレンダーで表示。記念日や誕生日にもらった手紙を辿るなど、あなただけのライフログとしても楽しめます。\n\nさあ、あなただけのかけがえのない宝箱を作りましょう。\n\n□ その他情報\n・利用規約\nhttps://tsuzukit.com/legal/terms-of-service.html\n\n・プライバシーポリシー\nhttps://tsuzukit.com/legal/privacy-policy.html\n\n・特定商取引法に基づく表示\nhttps://tsuzukit.com/legal/commercial-law.html",
-      "release_notes": null,
+      "release_notes": "・利用規約とプライバシーポリシーのリンク先を新しいページに変更しました\n・細かな不具合を修正しました",
       "content_advisory_rating": "4+",
       "minimum_os_version": "17.0",
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
-      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/82/95/f3/8295f3cc-d094-690c-e71c-0c6ec70c77a3/AppIcon-0-0-1x_U007epad-0-1-85-220.png/60x60bb.jpg",
+      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/39/9d/15/399d159d-d1b3-7547-f6f6-aa49dd81a7a5/AppIcon-0-0-1x_U007epad-0-1-85-220.png/60x60bb.jpg",
       "genre_ids": [
         "6002",
         "6007"
@@ -801,9 +801,9 @@
       "app_store_url": "https://apps.apple.com/jp/app/relaychat-%E3%82%AA%E3%83%95%E3%83%A9%E3%82%A4%E3%83%B3%E5%8C%BF%E5%90%8Dbluetooth%E3%83%81%E3%83%A3%E3%83%83%E3%83%88/id6749299283?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/97/5c/8b/975c8baf-3abe-074d-bbc3-cd497a40f530/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/36/4d/e1/364de1ba-e4f1-43c4-f397-6e89daf0f6c5/001.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f0/4a/d3/f04ad312-aea7-d1e2-4e5e-df5ac4e4ba7e/002.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/28/db/ea/28dbeaa2-4ca2-ac04-dc66-591ffd307867/003.png/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/DlZNZ3egDKhOpozuYeJpWQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/VXNfjo2dWA8ArV6B8oteLQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/gNSx-aps1_725QWe6chBjw/626x0w.webp"
       ],
       "ipad_screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/80/5a/37/805a3743-7c5b-7b15-e42c-b3095bcaa06f/004.png/360x480bb.jpg",
@@ -840,11 +840,11 @@
       "name": "ゼリーセイムパズル",
       "bundle_id": "com.tsuzuki817.jellysamepuzzle",
       "app_store_url": "https://apps.apple.com/jp/app/%E3%82%BC%E3%83%AA%E3%83%BC%E3%82%BB%E3%82%A4%E3%83%A0%E3%83%91%E3%82%BA%E3%83%AB/id6747354292?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/9a/a0/34/9aa034b0-e88f-cdcf-a05d-37ed7ec4f9ac/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/72/89/d0/7289d0bc-59f2-f3aa-61f9-bf2af067c88f/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/91/98/09/919809df-77ad-2296-eba7-bcd760816417/6.9inc.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/65/60/9a/65609a3b-efa7-51e6-1201-63fc1914f2c2/6.9inc.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/aa/fa/c8/aafac83d-ff84-89af-f2ec-b89e83a2c5ed/6.9inc.003.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/JA9YOhLNY7g-3vAtEwFVpw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/uoj7xs0cA6rFlWqPtzxKGw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/pEQ4pfH4Q6rFYjz0NDNJxA/626x0w.webp"
       ],
       "ipad_screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ea/f5/97/eaf59710-b5fd-a5e6-4646-da9066291746/13inch.002.jpeg/360x480bb.jpg",
@@ -859,18 +859,18 @@
         "パズル"
       ],
       "primary_genre": "Games",
-      "rating": 4.55556,
-      "rating_count": 9,
-      "version": "1.5.4",
+      "rating": 4.59999,
+      "rating_count": 10,
+      "version": "1.5.5",
       "release_date": "2025-07-16T07:00:00Z",
-      "current_version_release_date": "2025-09-14T13:38:20Z",
+      "current_version_release_date": "2026-10-09T15:23:32Z",
       "description": "【ゼリーセイムパズルとは？】\n某ゲームサイトで愛された「セイムパズル」の感動が、最新のiOS/iPadOSアプリで蘇ります！\nぷるぷる揺れるゼリーブロックをタップで消すだけの簡単操作で、いつでもどこでも気軽に楽しめるパズルゲームです。シンプルながら奥深いゲーム性で、あなたの思考力を試しましょう。\n\n【ゲームの特徴】\n◆ 簡単だけど奥深い！シンプル操作のパズルゲーム\n　- 2つ以上繋がった同じ色のゼリーブロックをタップして消すだけ！\n　- ブロックが消えると上から新しいゼリーが降ってきて、連鎖のチャンスも。\n　- どこを消すか戦略を立てて、高得点を狙いましょう！\n　- レインボーブロックやアイテム（Delete, Changeなど）の登場も！？\n　- ランキング機能で世界中のプレイヤーとスコアを競い合おう！\n\n◆ ぷるぷる可愛いゼリーブロック！\n　- 見ているだけでも楽しい、触りたくなるようなゼリーの質感を表現。\n　- 消した時の爽快感あふれるアニメーションとサウンドが病みつきに！\n\n◆ 懐かしさと新しい発見\n　- 「セイムパズル」のファンならきっと懐かしい、あの独特のパズル体験を再現。\n　- もちろん、初めてプレイする方でもすぐにハマれる中毒性があります。\n\n◆ いつでもどこでも気軽にプレイ\n　- 通勤・通学時間、ちょっとした休憩時間など、スキマ時間に最適。\n　- オフラインでもプレイ可能なので、電波の届かない場所でも楽しめます。\n\n◆ 【今後のアップデート予定】\n　- クラシックモード、カウントダウンモードなど、多彩なゲームモードを追加予定！\n\n\n【こんな方におすすめ！】\n\n某ゲームの「セイムパズル」が好きだった方\n\nシンプルだけど奥深いパズルゲームを探している方\n\n脳トレや思考力を鍛えたい方\n\n通勤・通学中に気軽に遊べるゲームが欲しい方\n\nぷるぷる可愛いデザインのゲームが好きな方\n\nさあ、あなたも「Jelly Same Puzzle」で、ゼリーを消す爽快感を体験しよう！\n今すぐダウンロードして、パズルの世界に飛び込もう！\n\n□ その他情報\n・利用規約\nhttps://tsuzukit.com/legal/terms-of-service.html\n\n・プライバシーポリシー\nhttps://tsuzukit.com/legal/privacy-policy.html\n\n・特定商取引法に基づく表示\nhttps://tsuzukit.com/legal/commercial-law.html",
-      "release_notes": "ゲームが終了条件を満たしていないのにも関わらず次のステージ判定が発生してしまう不具合の修正",
+      "release_notes": "・利用規約とプライバシーポリシーのリンク先を新しいページに変更しました\n・細かな不具合を修正しました",
       "content_advisory_rating": "4+",
       "minimum_os_version": "17.0",
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
-      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/9a/a0/34/9aa034b0-e88f-cdcf-a05d-37ed7ec4f9ac/AppIcon-0-0-1x_U007epad-0-1-85-220.png/60x60bb.jpg",
+      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/72/89/d0/7289d0bc-59f2-f3aa-61f9-bf2af067c88f/AppIcon-0-0-1x_U007epad-0-1-85-220.png/60x60bb.jpg",
       "genre_ids": [
         "6014",
         "6016",
@@ -883,11 +883,11 @@
       "name": "フチドリ！ ~背景透過と縁取り~",
       "bundle_id": "com.tsuzuki817.fuchidori",
       "app_store_url": "https://apps.apple.com/jp/app/%E3%83%95%E3%83%81%E3%83%89%E3%83%AA-%E8%83%8C%E6%99%AF%E9%80%8F%E9%81%8E%E3%81%A8%E7%B8%81%E5%8F%96%E3%82%8A/id6748528617?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/34/e2/c0/34e2c037-6a37-88b8-c92f-8bcd23fa8ce1/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.jpg",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e9/c8/e9/e9c8e9e7-4318-1e0d-d221-582004a023a2/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/1c/8a/b4/1c8ab470-560c-f320-f702-404454f49c6a/6.9inc.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4d/97/de/4d97de6b-3d0b-ebdf-237f-75af4078a33b/6.9inc.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/4f/b5/81/4fb581a6-ed4a-dd93-3539-aeb0b6921d3a/6.9inc.003.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/zIahiqLtUg3kjGllWgt9yw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/El38-J5ui5ZlBwVi2nSgAA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/v9bRXqDR_8wkzB9eek64fg/626x0w.webp"
       ],
       "ipad_screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/3a/a6/de/3aa6deb2-ec07-af66-9b51-79b3bf4755a2/13inch.001.jpeg/360x480bb.jpg",
@@ -901,18 +901,18 @@
         "ユーティリティ"
       ],
       "primary_genre": "Graphics & Design",
-      "rating": 3.53333,
-      "rating_count": 15,
-      "version": "1.1.0",
+      "rating": 3.375,
+      "rating_count": 16,
+      "version": "1.1.1",
       "release_date": "2025-07-14T07:00:00Z",
-      "current_version_release_date": "2025-07-23T10:14:00Z",
+      "current_version_release_date": "2026-10-09T15:22:32Z",
       "description": "いつもの写真に、魔法のフチドリを！（・θ・）\n『フチドリ！』は、写真を一瞬で切り抜き、好きな色や太さの線で彩れる、創造力を刺激するアプリです。\nさあ、あなただけのアートやステッカーを作りましょう！\n\n【フチドリで、写真はもっと楽しくなる！】:\n\n◆ カラーは無限大: シンプルな白黒から、推し色、ブランドカラーまで。あなたのセンスで自由に選べます。\n\n◆ 太さも自由自在: 細い線でスタイリッシュに、太い線でポップに。印象をガラリと変えられます。\n\n◆ 使い方はアイデア次第: 商品写真を目立たせたり、旅行の思い出をステッカー風にしたり、推しの画像をデコったり！\n\n【もちろん、プライバシーは鉄壁です】:\n\n○ 写真は外部に送信しません: 全ての処理はスマホ内で完結。あなたのプライバシーは完全に守られます。\n\n○ いつでもどこでもオフライン: 通信量を気にせず、飛行機の中でもサクサク軽快に動作します。\n\n【3ステップで完成！】:\n\n写真を選ぶと、賢いオンデバイス技術が瞬時に背景を切り抜き！\n\nカラーと太さを選んで、最高のフチドリをデザイン！\n\n保存ボタンをタップ！背景透過PNGですぐに使える（・θ・）",
-      "release_notes": "多言語対応と軽微な不具合の修正を行いました（・θ・）",
+      "release_notes": "・利用規約とプライバシーポリシーのリンク先を新しいページに変更しました\n・細かな不具合を修正しました",
       "content_advisory_rating": "4+",
       "minimum_os_version": "17.0",
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
-      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/34/e2/c0/34e2c037-6a37-88b8-c92f-8bcd23fa8ce1/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/60x60bb.jpg",
+      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e9/c8/e9/e9c8e9e7-4318-1e0d-d221-582004a023a2/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/60x60bb.jpg",
       "genre_ids": [
         "6027",
         "6002"
@@ -924,11 +924,11 @@
       "name": "mono ~お迎えした喜びを分かち合うアプリ~",
       "bundle_id": "com.tsuzuki817.omukae",
       "app_store_url": "https://apps.apple.com/jp/app/mono-%E3%81%8A%E8%BF%8E%E3%81%88%E3%81%97%E3%81%9F%E5%96%9C%E3%81%B3%E3%82%92%E5%88%86%E3%81%8B%E3%81%A1%E5%90%88%E3%81%86%E3%82%A2%E3%83%97%E3%83%AA/id6743043894?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/bf/84/3a/bf843a84-e509-1227-cd86-18a411b9402e/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/45/04/f7/4504f78c-6887-250e-6069-44754bec38f2/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a7/60/9b/a7609b31-6ec7-69ec-e8ea-4a47e10901d6/6.9inc.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a6/7d/e7/a67de758-da5e-e7ba-03c3-2b4e5ab2a7de/6.9inc.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fa/f2/d0/faf2d0de-84c3-f691-0aaf-f98d2625376f/6.9inc.003.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/F1XI1F3S__RlRxBdxeSZwQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/V9QPISUYV1g8kZPhBhoU4Q/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/pZ6tmtyOXdGPiqp__xUlfw/626x0w.webp"
       ],
       "ipad_screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/18/62/6e/18626e54-4cd6-4643-2a1c-b1666de8bb5c/mono-13inch.001.jpeg/360x480bb.jpg",
@@ -944,16 +944,16 @@
       "primary_genre": "Social Networking",
       "rating": 1,
       "rating_count": 1,
-      "version": "1.0",
+      "version": "1.0.1",
       "release_date": "2025-07-01T07:00:00Z",
-      "current_version_release_date": "2025-07-01T14:28:32Z",
+      "current_version_release_date": "2026-10-09T18:30:58Z",
       "description": "mono - お迎えした喜びを分かち合うアプリ\nmonoは、物との出会いやお迎えを自分だけでなく、みんなでシェアできるアプリです。\n\n日々のお気に入りや自慢のコレクションを投稿することで、他のユーザーとその喜びを分かち合い、コミュニティを形成します。\nあなたが「お迎え」したアイテムを他のユーザーと共有することで、ただ物を所有するだけでなく、その背景やエピソードを大切にし、楽しむことができます。\n\nコンセプト\n私たちの生活は日々、物に囲まれています。洋服や化粧品、家具、ジュエリー、ぬいぐるみ、置物など、さまざまなアイテムが私たちの生活に彩りを与えます。これらのアイテムは、単なる物質的な存在ではなく、感情や思い出、さらにはストーリーを持っています。monoは、そんな「物のお迎え」を特別なものとして捉え、それを他の人とシェアできるプラットフォームを提供します。\n\n「お迎えした瞬間の喜びを、写真と想いで残そう」というテーマを掲げ、このアプリでは、モノとの出会いから得られる感動や喜びをユーザー同士で共有し、楽しむことができます。\nmonoは、ただ物を見せ合うだけでなく、その背景やストーリーを大切にし、モノと共に過ごす時間をより豊かにすることを目指しています。\n\n主な機能\nお迎え報告\n\n新しく迎え入れたアイテムを簡単に投稿できる機能です。写真と一緒にその物の名前、特徴、購入場所やエピソードなどをシェアできます。アイテムに込めた思いやこだわりをユーザーと共有することで、より深い交流が生まれます。\n写真とストーリーを残す\n\nアイテムを撮影して、その物にまつわるストーリーやエピソードを添えて投稿します。例えば、旅行先で買ったお土産や、友達からもらったプレゼントの思い出、特別な日に迎えたアイテムなど、ただの物ではなく、その背後にある感情を伝えることができます。\n推しモノコーナー\n\n特にお気に入りのアイテムを集めたコーナーを作成でき、他のユーザーに紹介することができます。このコーナーには、写真とともに、そのアイテムがあなたにとってどれだけ大切かを伝えるメッセージを添えることができます。\nフォロー＆コメント機能\n\n他のユーザーをフォローすることで、あなたが気になるアイテムや投稿をチェックできます。また、コメント機能を使って、お迎えしたアイテムに対する感想や共感を伝えることができ、より深い交流を楽しむことができます。\n「今日のお迎え」フィード\n\n今日、迎えたアイテムをタイムリーにシェアできるフィード機能です。他のユーザーの「今日のお迎え」を見ることで、トレンドや新しいアイテムを発見したり、同じ趣味を持つ人とつながることができます。\nハッシュタグによる検索機能\n\n#お迎えアイテム、#推しアイテム、#お気に入り、#おそろいなど、様々なハッシュタグで投稿をカテゴライズすることができます。これにより、特定のアイテムやテーマに関する投稿を簡単に検索でき、より多くの人と共通の興味を持つことができます。\nアイテムごとのエピソード集\n\n各アイテムに対して、その物との出会いや購入のきっかけ、実際に使った感想などをストーリーとして残すことができます。これにより、ユーザーはただ物を見せ合うだけでなく、物に込めた意味や感情をシェアし、共感を得ることができます。\nターゲット層\nmonoは、物との出会いを大切にし、その喜びや感動を共有したいと思うすべての人々に向けて開発されています。特に、女性ユーザーをターゲットにしており、日々の生活で大切にしている物やお気に入りのアイテムをシェアすることを楽しむ方々に最適です。\n\n・ファッションやインテリアに興味がある人\n・自分のコレクションを誇りに思っている人\n・思い出を大切にする人\n・新しいアイテムやトレンドに敏感な人\n・自分のライフスタイルを他の人とシェアしたい人\n\nこれらのユーザー層に、心温まる瞬間を提供するアプリとして、monoは非常に適しています。\n\nデザイン\nアプリのデザインは、シンプルで洗練された美しいデザインを採用しています。アイテムの写真が主役となり、その美しさを引き立てるため、背景は落ち着いたパステルカラーを基調としています。視覚的に心地よいデザインにより、ユーザーは快適にアプリを利用し、投稿されたアイテムに集中することができます。\n\nまた、ユーザーインターフェース（UI）は直感的で簡単に操作できるように設計されており、初心者でもスムーズに使い始めることができます。モノとの出会いを楽しみ、シェアすることができるような、心温まる空間を提供しています。\n\n結び\nmonoは、ただ物を所有するだけでなく、その物との出会いや成長、そして愛着を大切にするコミュニティアプリです。あなたが迎え入れたアイテムの思い出や、他のユーザーとのつながりを楽しみながら、新しい発見や共感を得ることができます。\n\n「お迎えした瞬間の喜びを、写真と想いで残そう」—それが、monoの本質です。あなたも、物と共に過ごす素敵な時間をシェアし、共感し合いませんか？\n\nプライバシーポリシー\nhttps://tsuzukit.com/legal/privacy-policy.html\n\n利用規約\nhttps://tsuzukit.com/legal/terms-of-service.html\n\n特定商取引法に基づく表記\nhttps://tsuzukit.com/legal/commercial-law.html",
-      "release_notes": null,
+      "release_notes": "・利用規約とプライバシーポリシーのリンク先を新しいページに変更しました\n・細かな不具合を修正しました",
       "content_advisory_rating": "17+",
       "minimum_os_version": "18.0",
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
-      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/bf/84/3a/bf843a84-e509-1227-cd86-18a411b9402e/AppIcon-0-0-1x_U007epad-0-1-85-220.png/60x60bb.jpg",
+      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/45/04/f7/4504f78c-6887-250e-6069-44754bec38f2/AppIcon-0-0-1x_U007epad-0-1-85-220.png/60x60bb.jpg",
       "genre_ids": [
         "6005",
         "6012"
@@ -967,9 +967,9 @@
       "app_store_url": "https://apps.apple.com/jp/app/%E6%97%AC%E3%81%AE%E3%81%8A%E9%AD%9A%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%80%E3%83%BC/id6746123337?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4d/2a/9b/4d2a9bc5-d47a-9f96-a0bd-14a843578175/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/79/8c/fa/798cfa21-5f83-758b-2ce1-ffc9d5610e84/Apple_iPhone_16_Pro_Max_Screenshot_1.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/86/9a/f5/869af5ac-81fb-7b03-8bcf-258d5befb6df/Apple_iPhone_16_Pro_Max_Screenshot_2.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/51/b3/9e/51b39ed0-fd09-6510-fbba-f53554492a28/Apple_iPhone_16_Pro_Max_Screenshot_3.png/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/rGotOfVGd3DdTXtOTuyaaQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/jxd-Ek5a-7SwAbIFFrNZVA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/dIH6TrSIpLIPfvWBt7ULPA/626x0w.webp"
       ],
       "ipad_screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/14/54/d0/1454d074-94ce-fcd1-6ca2-fd561471d092/Apple_iPad_Pro_12.9_Inch_Screenshot_1.png/360x480bb.jpg",
@@ -984,7 +984,7 @@
       ],
       "primary_genre": "Food & Drink",
       "rating": 5,
-      "rating_count": 1,
+      "rating_count": 2,
       "version": "1.0",
       "release_date": "2025-05-23T07:00:00Z",
       "current_version_release_date": "2025-05-23T22:21:18Z",
@@ -1008,9 +1008,9 @@
       "app_store_url": "https://apps.apple.com/jp/app/music-snapshot-%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AE%E9%9F%B3%E6%A5%BD%E3%82%92%E4%B8%80%E6%9E%9A%E3%81%AB/id6605937062?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/eb/e4/76/ebe476be-e8ba-e61a-6c37-0e385fe664e2/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/7a/59/31/7a593168-0151-db12-e8ac-f8723d8267c8/6.5inch.004.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/43/5d/dc/435ddcfa-cddb-e423-9aa6-82e038044a38/6.5inch.005.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/88/d7/c0/88d7c009-01c2-7d45-eee7-c29f5d7179bd/6.5inch.006.png/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/7NyF2MBXOEvuNZDivjNmoA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/xQolbGXlLHJbv8CgFCRjaQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/nUrrM_9EF5v5XlMVSZdiwA/626x0w.webp"
       ],
       "ipad_screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/7b/c4/a8/7bc4a85e-a87d-0bee-ab9e-78d3fbb360dc/13inch.004.png/360x480bb.jpg",
@@ -1047,12 +1047,12 @@
       "name": "バースデームーン",
       "bundle_id": "com.tsuzuki817.birthdaymoon",
       "app_store_url": "https://apps.apple.com/jp/app/%E3%83%90%E3%83%BC%E3%82%B9%E3%83%87%E3%83%BC%E3%83%A0%E3%83%BC%E3%83%B3/id6737449860?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/db/fd/fb/dbfdfb32-a4b2-8cad-b8d7-1131e4ea7d24/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.jpg",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6a/a0/35/6aa035c4-70f6-bd63-9a2d-14a57bc90a09/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/34/d9/22/34d922ba-84ec-f29b-4db3-80da05f06f5c/6.9inc.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/3e/7a/c7/3e7ac711-25c4-d9ab-3c49-94c825984083/6.9inc.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/79/e1/fc/79e1fc59-45c3-04bf-b4cc-e591762b9ee2/6.9inc.003.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/02/03/0e/02030ef2-8515-0a08-e100-cc91cf279510/6.9inc.004.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/nPvhnu96SVRl0tvlGTf1qw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/IbVNsYWEmq7wxnvhQRPToA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/4DQYuFCR53D0Q9iiLwA36Q/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/nt6bjq_iTbKINxXfGks0yg/626x0w.webp"
       ],
       "ipad_screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d6/ca/a5/d6caa5ac-d717-0386-f0b4-9f94e968e504/13inch.004.jpeg/360x480bb.jpg",
@@ -1069,16 +1069,16 @@
       "primary_genre": "Graphics & Design",
       "rating": 3.77778,
       "rating_count": 9,
-      "version": "1.1.1",
+      "version": "1.1.2",
       "release_date": "2024-10-29T07:00:00Z",
-      "current_version_release_date": "2026-01-29T01:46:02Z",
+      "current_version_release_date": "2026-10-09T18:29:47Z",
       "description": "バースデームーン - 誕生日カラーで月をカスタマイズ\n\nあなたの誕生日カラーで美しい月を作成し、大切な人とのつながりを表現できるアプリです。\n\n主な機能\n• 366日それぞれの誕生日カラーで月を彩色\n• 2つの誕生日カラーを混合して特別な月を作成\n• 満月、三日月、土星、木星、雲など6種類の月タイプ\n• カスタム画像に誕生日カラーを適用する自由形機能\n• 高画質での画像保存とカメラロールへの自動保存\n• 日付ピンで誕生日を月上に表示\n\nこんな使い方ができます\n恋人や友人、推しとの誕生日カラーを組み合わせて、あなただけの特別な月を作成。完成した美しい月の画像は、スマホの壁紙やSNSでのシェアに最適です。\n\nプレミアム機能\n• 自由形機能でオリジナル画像をカスタマイズ\n• 広告なしの快適な利用環境\n\n誕生日という特別な日に込められた意味を、美しい月のアートで表現してみませんか。あなたの物語を月に託して、大切な人とのつながりを可視化する新し\nい体験をお楽しみください。",
-      "release_notes": "細かな不具合の修正",
+      "release_notes": "・利用規約とプライバシーポリシーのリンク先を新しいページに変更しました\n・細かな不具合を修正しました",
       "content_advisory_rating": "4+",
       "minimum_os_version": "18.0",
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
-      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/db/fd/fb/dbfdfb32-a4b2-8cad-b8d7-1131e4ea7d24/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/60x60bb.jpg",
+      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6a/a0/35/6aa035c4-70f6-bd63-9a2d-14a57bc90a09/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/60x60bb.jpg",
       "genre_ids": [
         "6027",
         "6016"
@@ -1090,11 +1090,11 @@
       "name": "π ~ Pi　円周率を楽しむアプリ",
       "bundle_id": "com.tsuzuki817.pi",
       "app_store_url": "https://apps.apple.com/jp/app/%CF%80-pi-%E5%86%86%E5%91%A8%E7%8E%87%E3%82%92%E6%A5%BD%E3%81%97%E3%82%80%E3%82%A2%E3%83%97%E3%83%AA/id6566185298?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/1a/e4/b4/1ae4b436-b7c4-1ebb-6da8-5a92920289a6/AppIcon-0-0-1x_U007epad-0-P3-85-220.png/512x512bb.jpg",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5e/d8/16/5ed81629-0818-edc7-e812-32bd2d4cbca7/AppIcon-0-0-1x_U007epad-0-1-P3-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/18/a3/9a/18a39adb-6f88-cb34-2289-d2ac40ee0015/1effe110-615e-46fb-95e4-1ff2c4d55669_6.5inch.001.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e5/ae/3b/e5ae3b09-c570-e2d7-d3ac-63e8b76e0008/fc0de15c-bcc6-4992-8cea-3aaa642c6830_6.5inch.002.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/6d/d0/4a/6dd04a7b-8ad9-2be9-6eea-eb7533ba5b4d/d333e218-22b8-4d62-8025-aac66aae9d10_6.5inch.003.png/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/5WN56Pf5Sj-955fNXeIXtg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/QI5fO0TNsjQic_klncqVOQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/IHDssIWf4u2y6ZXLMvhMoA/626x0w.webp"
       ],
       "ipad_screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/5e/86/02/5e860264-87cd-e0a4-9f91-a0745594afc1/01c48c59-da75-4b4b-9124-ce955eca6083_12.9inch.001.png/576x768bb.png",
@@ -1110,16 +1110,16 @@
       "primary_genre": "Education",
       "rating": 5,
       "rating_count": 1,
-      "version": "1.2.0",
+      "version": "1.2.1",
       "release_date": "2024-08-02T07:00:00Z",
-      "current_version_release_date": "2024-08-04T11:08:14Z",
+      "current_version_release_date": "2026-10-09T16:30:28Z",
       "description": "このアプリは、数学を愛するユニークな人々のための究極のアプリです。\n\n起動画面では100万桁の円周率がエモい雰囲気で流れ、リラックスするのに最適です。\nさらに、10桁、100桁、1000桁〜100万桁ごとに円周率を素早く入力するゲームがあり、世界中のプレイヤーとタイムを競うことができます！\n\n数学とリラクゼーションが融合した、新しいエンターテインメント体験をお楽しみください！",
-      "release_notes": "細かな修正を行いました",
+      "release_notes": "・利用規約とプライバシーポリシーのリンク先を新しいページに変更しました\n・細かな不具合を修正しました",
       "content_advisory_rating": "4+",
       "minimum_os_version": "17.0",
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
-      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/1a/e4/b4/1ae4b436-b7c4-1ebb-6da8-5a92920289a6/AppIcon-0-0-1x_U007epad-0-P3-85-220.png/60x60bb.jpg",
+      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5e/d8/16/5ed81629-0818-edc7-e812-32bd2d4cbca7/AppIcon-0-0-1x_U007epad-0-1-P3-85-220.png/60x60bb.jpg",
       "genre_ids": [
         "6017",
         "6002"
@@ -1131,23 +1131,18 @@
       "name": "旅行思い出マップ - 旅の記憶を、地図に描く",
       "bundle_id": "com.tsuzuki817.OmoideMap",
       "app_store_url": "https://apps.apple.com/jp/app/%E6%97%85%E8%A1%8C%E6%80%9D%E3%81%84%E5%87%BA%E3%83%9E%E3%83%83%E3%83%97-%E6%97%85%E3%81%AE%E8%A8%98%E6%86%B6%E3%82%92-%E5%9C%B0%E5%9B%B3%E3%81%AB%E6%8F%8F%E3%81%8F/id6478291625?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e8/5c/85/e85c8537-ded0-ef69-2f60-f2ff85a7538a/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c2/5a/b1/c25ab17f-302b-ccdb-b6f5-1c0bd754ce42/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/bd/51/61/bd51619f-2a4e-3fdc-f821-cdab841dae8a/0_APP_IPHONE_69_0.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/70/26/19/702619ab-b160-f0ae-d8c7-5dbf863bc603/1_APP_IPHONE_69_1.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a9/e5/6c/a9e56c49-6cc4-85f6-3ea1-b2d9ac43d99c/2_APP_IPHONE_69_2.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/70/07/92/700792b4-62c6-d45c-1d71-d52ebc78f920/3_APP_IPHONE_69_3.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/6a/3d/c2/6a3dc210-3dc4-70cd-2af8-b6b48467a1dc/4_APP_IPHONE_69_4.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/57/8b/b1/578bb1d2-f8d0-3b9d-c614-06eef2c6cebb/5_APP_IPHONE_69_5.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/6e/58/b3/6e58b381-2609-194f-1887-5b73a4352d4a/6_APP_IPHONE_69_6.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/36/cf/be/36cfbe57-6026-64d3-6ce7-a88c43e4c77f/7_APP_IPHONE_69_7.png/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/qAV5fEQvUdC2dAQBkuKBBA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/i6BaWvdvlERJNOi5VKmj0w/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/zjk1O67x2gZCAEMzYWZQzA/626x0w.webp"
       ],
       "ipad_screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/2c/2b/ea/2c2beacb-cef6-43b7-3704-a30493e24feb/APP_IPAD_PRO_3GEN_129_01.png/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/1f/2e/24/1f2e2400-1ec8-44cf-e934-114f1b58f961/APP_IPAD_PRO_3GEN_129_02.png/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/28/79/25/28792545-cf0a-4a5b-7c7c-e700679a510a/APP_IPAD_PRO_3GEN_129_03.png/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d6/b8/76/d6b8762b-d518-2b3e-a2a7-d0858d1f192d/APP_IPAD_PRO_3GEN_129_04.png/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/02/d9/e0/02d9e054-3c0e-88b4-a765-e56c35f2c25c/APP_IPAD_PRO_3GEN_129_05.png/360x480bb.jpg"
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c0/89/63/c0896379-4819-7fb5-1261-51a8ef2cb8a3/APP_IPAD_PRO_3GEN_129_01.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/6a/9f/97/6a9f9741-63bb-7274-4fe2-be5c7d2d82a5/APP_IPAD_PRO_3GEN_129_02.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/58/1a/a3/581aa325-3553-f221-f622-9b1faae38c45/APP_IPAD_PRO_3GEN_129_03.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/9c/66/e9/9c66e98f-fa80-786c-671b-51ab73119a4f/APP_IPAD_PRO_3GEN_129_04.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/50/2c/f8/502cf8f2-66f8-fdbf-df05-36fbd67f9641/APP_IPAD_PRO_3GEN_129_05.png/360x480bb.jpg"
       ],
       "price": "無料",
       "currency": "JPY",
@@ -1156,19 +1151,19 @@
         "写真／ビデオ"
       ],
       "primary_genre": "Travel",
-      "rating": 4.58678,
-      "rating_count": 726,
-      "version": "1.55.0",
+      "rating": 4.58277,
+      "rating_count": 755,
+      "version": "2.0.0",
       "release_date": "2024-02-25T08:00:00Z",
-      "current_version_release_date": "2026-09-09T04:29:32Z",
+      "current_version_release_date": "2026-10-17T21:48:01Z",
       "description": "14万ダウンロード突破！\n写真をパズルのように切り取って、地図に貼るアプリです。\n\n行った場所が少しずつ色づいて、旅の記憶がそのまま一枚の地図になっていきます。\n\n\n■ 47都道府県だけじゃない\n\n全国マップに加えて、42の都道府県マップで市区町村まで細かく記録できます。\n北海道179、長野77、埼玉63、東京62——ぜんぶで1,667エリア。\nあなたの地元も、きっとあります。\n\n\n■ 主な機能\n\n□ 写真が都道府県のかたちに切り取られて、地図にはまる\n□ ひとつの場所に、写真を好きなだけ追加できる\n□ MapLinkで友達・家族・恋人と同じ地図を共同編集\n□ 写真にコメントを添えて、その日の気持ちも残す\n□ ご当地ステッカーで地図を彩る（だるま、シーサー、こいのぼり…）\n□ 1年の思い出を、BGM付きの振り返り動画に\n□ 毎月届く「先月のおもいで」でふりかえり\n□ 完成した地図を高画質で保存・印刷\n□ ホーム画面のウィジェットに、過去の思い出をランダム表示\n□ 写真アプリの共有ボタンから直接投稿\n\n\n■ 日本を埋めたら、海外へ\n\nアジア24ヶ国、台湾22地域、アメリカ50州＋1準州のマップも用意しています。\n\nひとりでも、大切な人とでも。\n\n\n■ 思い出マップサポーター（有料）\n\n広告の非表示、マップ作り放題、高画質での保存・印刷、まとめて投稿などが使えるようになります。\n地図をつくって写真を貼る基本の機能は、ずっと無料のままお使いいただけます。\n\n\n■ その他情報\n・利用規約\nhttps://omoidemap-36d68.web.app/legal/terms.html\n\n・プライバシーポリシー\nhttps://omoidemap-36d68.web.app/legal/privacy.html\n\n・特定商取引法に基づく表示\nhttps://omoidemap-36d68.web.app/legal/commercial.html",
-      "release_notes": "【v1.55.0】\n\n47都道府県すべてが市区町村マップに対応しました！\n\n■ 福井県（17市町）\n東尋坊や恐竜博物館、永平寺など福井の思い出を地図に残せます。\n\n■ 佐賀県（20市町）\n吉野ヶ里遺跡や有田の窯元、呼子の朝市など佐賀の思い出を地図に残せます。\n\n■ 宮崎県（26市町村）\n高千穂峡や青島、日南海岸など宮崎の思い出を地図に残せます。\n\nこれで北海道から沖縄まで、どの県も市区町村ごとに思い出を残せるようになりました。\n\n■ 各国語の表示を改善\n一部の言語で意味の通らない表示になっていた箇所を、すべて見直しました。\n\nいつもご利用いただきありがとうございます！",
+      "release_notes": "【v2.0.0】\n\nヨーロッパの地図が増えました。アプリのアイコンも新しくなりました。\n\n■ ヨーロッパマップ\n29か国ぶんの地図です。写真を入れると、その国の形に切り抜かれて、地図が少しずつ埋まっていきます。\n\n■ アイコンが新しくなりました\nアプリのアイコンを世界地図にしました。前の日本のアイコンがよければ、ショップから選び直せます。\n\n■ 地図の境界線を見やすくしました\n国や市町村の境目の線を太くしました。隣どうしの写真が地続きに見えていたのを直しています。\n\n■ 直したところ\n共有カードで、文字がすき間なく詰まって出ていたのを直しました。\n\nいつもご利用いただきありがとうございます！",
       "content_advisory_rating": "17+",
       "minimum_os_version": "17.0",
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
       "google_play_url": "https://play.google.com/store/apps/details?id=com.tsuzuki817.omoidemap&pcampaignid=web_share",
-      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e8/5c/85/e85c8537-ded0-ef69-2f60-f2ff85a7538a/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/60x60bb.jpg",
+      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c2/5a/b1/c25ab17f-302b-ccdb-b6f5-1c0bd754ce42/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/60x60bb.jpg",
       "genre_ids": [
         "6003",
         "6008"
@@ -1182,9 +1177,9 @@
       "app_store_url": "https://apps.apple.com/jp/app/%E3%83%95%E3%82%A9%E3%83%88%E3%82%AC%E3%83%BC%E3%83%89/id6452754625?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/c7/3e/a3/c73ea30f-2661-1137-80ec-2158dddcaec1/AppIcon-1x_U007epad-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/0f/98/89/0f98896a-1bdb-7914-44ae-e1605fead0e9/b62379d2-f312-440f-83e2-893d69f5286d__U200e6.5inch._U200e001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/b7/fb/81/b7fb8185-e895-ade0-ff19-973a498f7140/2a8fbd65-84fb-43fa-b017-699b3406f353__U200e6.5inch._U200e002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/4e/df/dc/4edfdcd5-178e-0631-62aa-2ce7be633c2e/d3cdde1c-3d78-47f3-b79c-408fd880ce1b__U200e6.5inch._U200e003.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/ToN0as1tnvnvHgvkHN9U3A/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/7iI3wDU_KJHfiQOj22ALPQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/_cQ-afzqBKhdCgnyu7ArUg/626x0w.webp"
       ],
       "ipad_screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/9a/ea/b2/9aeab2cd-2579-6716-8b0d-35a0c9d93268/22de237f-4f81-46a6-982d-720df98d45ad__U200e12.9inch._U200e001.jpeg/576x768bb.jpg",
@@ -1221,11 +1216,11 @@
       "name": "ClockWidget ~個性豊かな時計ウィジェットアプリ~",
       "bundle_id": "com.tsuzuki817.NixieTubeClockWidget",
       "app_store_url": "https://apps.apple.com/jp/app/clockwidget-%E5%80%8B%E6%80%A7%E8%B1%8A%E3%81%8B%E3%81%AA%E6%99%82%E8%A8%88%E3%82%A6%E3%82%A3%E3%82%B8%E3%82%A7%E3%83%83%E3%83%88%E3%82%A2%E3%83%97%E3%83%AA/id6451070718?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1d/ac/17/1dac1756-9763-7273-8773-03d0a43e02b8/AppIcon-0-0-1x_U007epad-0-P3-85-220.png/512x512bb.jpg",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/68/6e/6e/686e6e40-174b-0ff6-e82e-6089fcc7e61f/AppIcon-0-0-1x_U007epad-0-1-P3-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/5e/94/15/5e9415f6-cb64-4105-9630-5637661bb600/aba95cb5-4cdb-476c-852d-82168d382788__U200e6.5inch._U200e001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/58/1c/0a/581c0a4b-12bd-f4f6-5268-e2d2eb3b3439/ad7b2644-fe35-4f43-8860-5ae6ac2d141b__U200e6.5inch._U200e002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/a2/c6/a1/a2c6a1c6-268f-1ea8-041c-880d092df2bc/3ddb6017-5245-4ffb-85da-7f433c108275__U200e6.5inch._U200e003.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/AXcVEoGmbKQ4ajHFtWQW1g/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/gHrgAKAkqJHWwhMireODTQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/NrjR5ps-_3QAh03c9tTyYg/626x0w.webp"
       ],
       "ipad_screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/1e/15/5f/1e155f91-6249-983f-ba8c-b31bfdfe9201/ebc9583f-b837-47f3-be53-29f26c9bc485__U200e12.9inch._U200e001.jpeg/576x768bb.jpg",
@@ -1241,16 +1236,16 @@
       "primary_genre": "Utilities",
       "rating": 3.5,
       "rating_count": 4,
-      "version": "1.1.0",
+      "version": "1.1.1",
       "release_date": "2023-07-10T07:00:00Z",
-      "current_version_release_date": "2024-03-13T15:17:33Z",
+      "current_version_release_date": "2026-10-09T18:31:28Z",
       "description": "さまざまな個性豊かな時計ウィジェットがキミを待ってる！\nダウンロードしてみんなにこっそり自慢しよう！\n\n□ ニキシー管時計\n□黒板風時計\n□8bit風時計\n□レトロゲーム風時計\n□ホルスタイン模様の時計\n□線形的なデザインの時計\n□図書館のバーコード風な時計\n□プログレス表示の時計\n\nさまざまなウィジェット時計を展開中！\nそして、この間にも絶賛開発中！続々と追加されるウィジェットを楽しんでください！",
-      "release_notes": "- iOS 17の不具合の対応をしました！\n- 起動時に広告の誤タップを招くUIを変更しました！\n\n引き続きよろしくお願いしますm(_ _ )m",
+      "release_notes": "・利用規約とプライバシーポリシーのリンク先を新しいページに変更しました\n・細かな不具合を修正しました",
       "content_advisory_rating": "4+",
       "minimum_os_version": "16.0",
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
-      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1d/ac/17/1dac1756-9763-7273-8773-03d0a43e02b8/AppIcon-0-0-1x_U007epad-0-P3-85-220.png/60x60bb.jpg",
+      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/68/6e/6e/686e6e40-174b-0ff6-e82e-6089fcc7e61f/AppIcon-0-0-1x_U007epad-0-1-P3-85-220.png/60x60bb.jpg",
       "genre_ids": [
         "6002",
         "6007"
@@ -1264,9 +1259,9 @@
       "app_store_url": "https://apps.apple.com/jp/app/simple-touch-the-numbers/id6450852611?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/f0/c9/eb/f0c9eb4b-ba2f-0333-f6a2-4d141f09229f/AppIcon-1x_U007epad-85-220.jpeg/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/98/80/bc/9880bc7d-7067-c053-0eae-6e5ace907ec2/f9cab089-2b87-4f85-b254-5f452fe6e7d9__U200e6.5inch._U200e001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/59/ef/a1/59efa1b3-abcd-23de-45b4-1c2ebab0e9a3/4c5c1e6a-1b89-4c46-90ec-affafa8b8d6d__U200e6.5inch._U200e002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/b8/f4/3c/b8f43c7d-dd4b-39c5-402c-a5cc3f3c2030/95adc328-ae1c-416a-8321-3afcd2df87ce__U200e6.5inch._U200e003.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/J1QAEdDXrsz6eU8rqbBbww/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/JNmRu_kwDHX-XnaZZ67DrQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/1l0-CJksMtpT4U36cIlllQ/626x0w.webp"
       ],
       "ipad_screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/5d/de/23/5dde23dd-0f5f-fbed-0651-4851d829c524/74ca0d76-eb19-4e99-95d9-0f56d0ca9622__U200e12.9inch._U200e001.jpeg/576x768bb.jpg",
@@ -1305,10 +1300,10 @@
       "app_store_url": "https://apps.apple.com/jp/app/ikaqr-qr%E3%82%B3%E3%83%BC%E3%83%89%E3%82%92%E7%88%86%E9%80%9F%E3%81%A7%E8%AA%AD%E3%81%BF%E8%BE%BC%E3%82%82%E3%81%86/id6450046891?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/20/6c/b3/206cb337-5331-1193-1f4a-b265f42bb1dc/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/ef/92/f9/ef92f94b-250d-e1d3-1edb-7ad1bc6cb9d9/8294df35-6a8b-4780-a834-e994cfdf7d36_6.5inch.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/11/cf/af/11cfaf78-0e60-ab89-5564-19c4efe0a896/237a6b33-c559-4da7-8421-8758687e8c6d_6.5inch.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/13/61/f9/1361f989-1e60-a8ea-0036-9138355c2943/1c294726-3c93-47dc-bb27-a6dec147cf32_6.5inch.003.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/71/5d/9c/715d9c08-150d-4c14-dc5f-1532668a33b2/d96dc1e7-aff4-4770-9715-ce43df2bf61c_6.5inch.004.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/o6mC2g3BLRd-VeDX37Fevg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/iFfkJabh31ayb0Njb379ug/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/0wqOggZG5feSrRZcSEYr7A/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/wtgD0Slo3L8ooAV9uHhR9Q/626x0w.webp"
       ],
       "ipad_screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/e0/df/e5/e0dfe540-650c-c098-caea-e4255d17925e/4196b08f-cb56-4267-8093-9e0ca8054e1a_12.9inch.001.jpeg/576x768bb.jpg",
@@ -1345,11 +1340,11 @@
       "name": "らくタグ",
       "bundle_id": "com.tsuzuki817.RakuTag",
       "app_store_url": "https://apps.apple.com/jp/app/%E3%82%89%E3%81%8F%E3%82%BF%E3%82%B0/id1670158327?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/f3/48/0a/f3480aae-e643-8c64-884b-e825fbe57393/AppIcon-1x_U007emarketing-0-7-0-P3-85-220.png/512x512bb.jpg",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e8/97/f8/e897f8f6-0545-6ffe-64ab-265df101da4c/AppIcon-0-0-1x_U007epad-0-1-P3-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/1e/80/59/1e8059a7-147d-8c81-38f4-578fe64d2d9a/a16d2f60-f9a5-4ce2-97bf-963a922124a5_6.5inch.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/80/cc/ef/80ccef23-43fb-d654-3775-f5c394ded232/cfc32250-2099-4af5-8965-0df3fdc47543_6.5inch.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/31/b7/b9/31b7b90e-9b99-45b4-655d-d9358250f7ff/649433f7-b67e-404c-9afd-30597e919c35_6.5inch.003.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/lb80I1_-x37u_b5k_U2XWg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/D0OvZ-NuwTVfIYtuBJ747g/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/wVKQgOIcPclYyep6uGjtCw/626x0w.webp"
       ],
       "ipad_screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/f5/d2/75/f5d2751f-3089-f3f8-79dc-f6c1ba1ed51d/4182aeb8-87f9-4f14-b457-354cd9aa36be_12.9inch-2.001.jpeg/552x414bb.jpg",
@@ -1365,16 +1360,16 @@
       "primary_genre": "Utilities",
       "rating": 5,
       "rating_count": 4,
-      "version": "1.2.2",
+      "version": "1.2.3",
       "release_date": "2023-02-08T08:00:00Z",
-      "current_version_release_date": "2023-02-21T13:19:27Z",
+      "current_version_release_date": "2026-10-09T15:43:49Z",
       "description": "SNSにハッシュタグを追加するのが大変になっていませんか？\n「らくタグ」を使うことでその悩み解決できるかもしれません！\n\nらくタグを使うとキーボードから直接大量のハッシュタグを即時に追加することができます。\n\nぜひインストールして使ってみて下さい！\n\nプレミアム機能を導入しました！\n　①: 広告非表示\n　②: 登録できるハッシュタググループの上限解放\n　③: その他特殊なキーボードの機能",
-      "release_notes": "細かいバグの修正を行いました",
+      "release_notes": "・利用規約とプライバシーポリシーのリンク先を新しいページに変更しました\n・細かな不具合を修正しました",
       "content_advisory_rating": "4+",
       "minimum_os_version": "16.0",
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
-      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/f3/48/0a/f3480aae-e643-8c64-884b-e825fbe57393/AppIcon-1x_U007emarketing-0-7-0-P3-85-220.png/60x60bb.jpg",
+      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e8/97/f8/e897f8f6-0545-6ffe-64ab-265df101da4c/AppIcon-0-0-1x_U007epad-0-1-P3-85-220.png/60x60bb.jpg",
       "genre_ids": [
         "6002",
         "6007"
@@ -1388,9 +1383,9 @@
       "app_store_url": "https://apps.apple.com/jp/app/ticketmania/id6444087177?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/0c/69/43/0c694307-7285-ccdc-052b-3a3efc992557/AppIcon-0-1x_U007emarketing-0-7-0-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource122/v4/37/0b/da/370bda63-539e-9c16-9b8d-6340cb5342a9/bb8b5067-1757-422a-9aa1-840b88314011_6.5inch.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource122/v4/2b/1b/d4/2b1bd44c-0a43-799f-e98d-705762cb7c70/cfa9759d-f064-4df6-b2f9-5e6278206f40_6.5inch.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/a8/e5/ce/a8e5ced1-647a-3b51-2289-382943b4b320/334a8524-338b-4d28-9d65-028aa233168c_6.5inch.003.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/AkLMUvsr-VBxddOs1lphjA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/XPpMAuiTgokUJOVFjNYjrA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/7eRDtztzsRk7VpufPbFHXg/626x0w.webp"
       ],
       "ipad_screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource122/v4/ad/cc/40/adcc40b7-494c-789e-65bf-61d0ae817e4c/ef331a28-c3dc-42a6-b0cf-92e128876dd6_12.9inch.001.jpeg/576x768bb.jpg",
@@ -1427,11 +1422,11 @@
       "name": "AlwaysOnTimer　- いつでもタイマー",
       "bundle_id": "com.tsuzuki817.timerpip",
       "app_store_url": "https://apps.apple.com/jp/app/alwaysontimer-%E3%81%84%E3%81%A4%E3%81%A7%E3%82%82%E3%82%BF%E3%82%A4%E3%83%9E%E3%83%BC/id6443471257?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/87/54/da/8754dae1-7d78-2334-5625-2b7a22dca50a/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/35/7e/4e/357e4ef2-fa68-a0aa-56a4-88535d6900fc/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/42/72/ff/4272fff0-8e63-065b-153f-c224531d7a99/a6475055-4f21-411b-857e-5490429d7e63_6.5inch.004.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/b5/be/8f/b5be8fb5-dc5b-31c2-6300-3eec4d79e37b/f6be4836-5b6f-41e8-8b39-48465b8c83e3_6.5inch.005.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/66/fd/fd/66fdfdf8-7ff5-6644-68d8-9814ab79d03f/4059e44d-b748-49e7-bed0-9a26f6803943_6.5inch.006.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/4lCpXXdQRY7HvVi1Tsv8sw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/iwsOs3fEweWpu9XaSSNSlw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/RGylMa3bgYICKdFQoWDVtw/626x0w.webp"
       ],
       "ipad_screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/1d/e0/bf/1de0bfc2-dec1-13dd-936c-ea30c85ad653/30f75994-9250-4c3a-809f-6213244c283f_12.9inch.005.jpeg/576x768bb.jpg",
@@ -1447,16 +1442,16 @@
       "primary_genre": "Productivity",
       "rating": 3.93333,
       "rating_count": 15,
-      "version": "1.3.1",
+      "version": "1.3.2",
       "release_date": "2022-09-26T07:00:00Z",
-      "current_version_release_date": "2026-01-30T16:58:44Z",
+      "current_version_release_date": "2026-10-09T19:48:00Z",
       "description": "いつでもタイマーはiOSのピクチャインピクチャ機能を使っていつでもどこでもタイマーを表示させておくことができるアプリです！\n\n□ 機能紹介\n指定した時間のタイマーの作成\nタイマーに紐づくカテゴリの作成\n達成したタイマーのレポートの閲覧\n\n\n□ その他情報\n・利用規約\nhttps://tsuzukit.com/legal/terms-of-service.html\n・プライバシーポリシー\nhttps://tsuzukit.com/legal/privacy-policy.html\n・特定商取引法に基づく表示\nhttps://tsuzukit.com/legal/commercial-law.html",
-      "release_notes": "細かな不具合の修正",
+      "release_notes": "・利用規約とプライバシーポリシーのリンク先を新しいページに変更しました\n・細かな不具合を修正しました",
       "content_advisory_rating": "4+",
       "minimum_os_version": "16.0",
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
-      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/87/54/da/8754dae1-7d78-2334-5625-2b7a22dca50a/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/60x60bb.jpg",
+      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/35/7e/4e/357e4ef2-fa68-a0aa-56a4-88535d6900fc/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/60x60bb.jpg",
       "genre_ids": [
         "6007",
         "6002"
@@ -1470,9 +1465,9 @@
       "app_store_url": "https://apps.apple.com/jp/app/%E3%81%AA%E3%81%8C%E3%82%89%E3%82%AB%E3%82%A6%E3%83%B3%E3%82%BF%E3%83%BC-%E5%88%A5%E3%81%AE%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%84%E3%81%A6%E3%82%82%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%81%A7%E3%81%8D%E3%82%8B/id1644376109?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5d/bc/a8/5dbca80e-f98f-26df-09b2-505b298e1caf/AppIcon-0-0-1x_U007emarketing-0-10-0-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource122/v4/1f/e0/5a/1fe05af9-08c0-6eb7-a4db-7992f732df89/688994d4-7124-4ae8-917d-0577db0be0a4_6.5inch.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource122/v4/9f/24/6c/9f246c6b-7514-9e1b-e729-34f574809d37/afb44e25-e7a6-4530-ba6e-4feb3d164e38_6.5inch.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource122/v4/e8/01/07/e8010731-3c83-c1bd-e90a-97531e3aac55/04a83ec8-28b2-4658-8d57-de803dcdff81_6.5inch.003.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/r0kjJp01FaM05015W9aNRw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/rsEttWYOw--wxsYuuSo87Q/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/_mg555gHKjlmhimOqMqMCQ/626x0w.webp"
       ],
       "ipad_screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/1a/de/f2/1adef2c8-6819-b633-d262-210d132bd313/6083b676-5715-410e-83ad-403cac827d1a_12.9inch.001.jpeg/576x768bb.jpg",
@@ -1509,11 +1504,11 @@
       "name": "PictIn",
       "bundle_id": "com.tsuzuki817.pipImage",
       "app_store_url": "https://apps.apple.com/jp/app/pictin/id1625004229?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/3e/26/4d/3e264d0b-f57c-30cf-69c8-2d33f90a765f/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/75/f9/b3/75f9b387-8ee8-8a09-18e9-ee955becbf5e/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/a4/05/7d/a4057d9f-856b-f23b-a8f5-508beefbda48/734aeab3-7d9d-4ec9-81e7-dfcf6dd751f2_6.5inch.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/51/0e/b3/510eb32e-ab36-a77b-04fd-ba9b507c5957/e0a5f1a2-e435-4b55-ab34-186d329a885c_6.5inch.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/70/58/2c/70582c76-fac1-77d5-5ed6-e11f4253ffd4/5743f726-aae2-4fc8-9592-462841b409a8_6.5inch.003.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/QOrDfbuHcDDy8mYk6SMBfg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Bhk_pz-8QJ4ypm3yjXkc4w/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/VQynsDQM4Weow3zin8FlAw/626x0w.webp"
       ],
       "ipad_screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/df/f2/b2/dff2b226-56db-ad2e-1a79-8783ce882ddc/a7c94d6e-b804-4999-a7cb-7e3dc9fb7d0d_12.9inch.001.jpeg/576x768bb.jpg",
@@ -1527,18 +1522,18 @@
         "ライフスタイル"
       ],
       "primary_genre": "Photo & Video",
-      "rating": 4.55263,
-      "rating_count": 38,
-      "version": "1.0.2",
+      "rating": 4.47499,
+      "rating_count": 40,
+      "version": "1.0.3",
       "release_date": "2022-05-23T07:00:00Z",
-      "current_version_release_date": "2025-07-16T09:47:40Z",
+      "current_version_release_date": "2026-10-09T18:30:39Z",
       "description": "□ 機能紹介\n流れるメモ帳の開発者が画像も流したくなって作ったアプリです！\nPicture In Pictureの機能を使い、画像を常に表示させることができます。\n用途\n・学習教材の画像を流すことで常に学習できる\n・推しの画像を設定することで、いつでも推し活ができる\n- レシートを画面に表示できる\n\n## その他情報\n- 利用規約\nhttps://tsuzukit.com/legal/terms-of-service.html\n- プライバシーポリシー\nhttps://tsuzukit.com/legal/privacy-policy.html\n- 特定商取引法に基づく表示\nhttps://tsuzukit.com/legal/commercial-law.html",
-      "release_notes": "細かな不具合修正と使用しているツールのアップデートを行いました！",
+      "release_notes": "・利用規約とプライバシーポリシーのリンク先を新しいページに変更しました\n・細かな不具合を修正しました",
       "content_advisory_rating": "4+",
       "minimum_os_version": "16.0",
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
-      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/3e/26/4d/3e264d0b-f57c-30cf-69c8-2d33f90a765f/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/60x60bb.jpg",
+      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/75/f9/b3/75f9b387-8ee8-8a09-18e9-ee955becbf5e/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/60x60bb.jpg",
       "genre_ids": [
         "6008",
         "6012"
@@ -1550,11 +1545,11 @@
       "name": "PIPMP",
       "bundle_id": "com.tsuzuki817.emp",
       "app_store_url": "https://apps.apple.com/jp/app/pipmp/id1612260255?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/d2/9f/47/d29f4743-9e29-91cd-98fe-e651b0e8a903/AppIcon-0-1x_U007emarketing-0-10-0-85-220.png/512x512bb.jpg",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/cf/53/cd/cf53cdb6-bee4-40d9-85bb-a26d43667437/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/6a/8a/15/6a8a157c-ede4-d90b-bae2-e1a3a3ebdf29/cafa8ff2-ea77-4583-9215-5612369bd760_6.5inch.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/36/df/ab/36dfab75-5c7b-5f8d-425d-44fb5d6efb89/f6e22633-b4c6-4800-a2e1-0aa5be9dad00_6.5inch.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/55/02/34/55023475-3f1c-f64c-918c-770eb5197835/7ab4756d-406c-4f5a-acba-bb80d55e5118_6.5inch.003.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/H6yGX_4MV4LxLXndmY8Nfg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/caF4enxgfhGtlQylG2IKHQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/ASSlywpkTzJZEDYWKWVxIA/626x0w.webp"
       ],
       "ipad_screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/33/1e/01/331e01c7-07a0-1a08-6a50-0769dfd80c5a/f6fe723b-9ee2-498b-8a2d-d9c03dcb6bd3_12.9inch.001.jpeg/576x768bb.jpg",
@@ -1570,16 +1565,16 @@
       "primary_genre": "Music",
       "rating": 3.42308,
       "rating_count": 26,
-      "version": "1.2.0",
+      "version": "1.2.1",
       "release_date": "2022-03-04T08:00:00Z",
-      "current_version_release_date": "2022-03-27T22:10:53Z",
-      "description": "PIPMPは、ピクチャー・イン・ピクチャーを使ってどんなアプリからでも使える、いつでもアクセス可能な音楽プレーヤーです！\n\nこのアプリを利用するためには、ミュージックライブラリへのアクセスが必要です。\n\n## その他情報\n- 利用規約\nhttps://panoramic-clematis-d8b.notion.site/03f270da8559467ab198aeffab14fe6e\n- プライバシーポリシー\nhttps://panoramic-clematis-d8b.notion.site/32affc6108c34ea29882242f406322e7\n- 特定商取引法に基づく表示\nhttps://panoramic-clematis-d8b.notion.site/a6724238cdc3499e92d7eff3a56f6f76",
-      "release_notes": "PIPMPをお使いいただきありがとうございます！\n要望の多かった、曲の検索機能を追加しました！",
+      "current_version_release_date": "2026-10-14T23:37:12Z",
+      "description": "PIPMPは、ピクチャー・イン・ピクチャーを使ってどんなアプリからでも使える、いつでもアクセス可能な音楽プレーヤーです！\n\nこのアプリを利用するためには、ミュージックライブラリへのアクセスが必要です。\n\n## その他情報\n- 利用規約（EULA）\nhttps://www.apple.com/legal/internet-services/itunes/dev/stdeula/\n- プライバシーポリシー\nhttps://tsuzukit.com/legal/privacy-policy.html\n- 特定商取引法に基づく表示\nhttps://tsuzukit.com/legal/commercial-law.html",
+      "release_notes": "・利用規約とプライバシーポリシーのリンク先を新しいページに変更しました\n・細かな不具合を修正しました",
       "content_advisory_rating": "4+",
       "minimum_os_version": "15.0",
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
-      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/d2/9f/47/d29f4743-9e29-91cd-98fe-e651b0e8a903/AppIcon-0-1x_U007emarketing-0-10-0-85-220.png/60x60bb.jpg",
+      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/cf/53/cd/cf53cdb6-bee4-40d9-85bb-a26d43667437/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/60x60bb.jpg",
       "genre_ids": [
         "6011",
         "6008"
@@ -1591,12 +1586,12 @@
       "name": "流れるメモ帳",
       "bundle_id": "com.tsuzuki817.pip",
       "app_store_url": "https://apps.apple.com/jp/app/%E6%B5%81%E3%82%8C%E3%82%8B%E3%83%A1%E3%83%A2%E5%B8%B3/id1598380826?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/00/f4/d3/00f4d38d-8825-1fda-0bdf-d3faf052a16f/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/11/be/c0/11bec0a0-27b4-31d9-f5bc-38161887744d/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/93/7f/67/937f678b-4b69-7db6-34db-70e113c56267/5fd3335e-cf01-4d4a-8f08-03bbe27c9cb3_iPhoneSe2.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8c/51/c8/8c51c8a4-b884-fe66-bf69-6efe49fd43ad/c1adbb1a-3acc-4d72-87f2-03285cad564a_iPhoneSe2.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/fb/6d/bb/fb6dbb61-acfe-f07b-b6ee-b790f8d3128a/818874e2-0f92-4991-9f26-06094ffe9f0c_iPhoneSe2.003.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/55/6c/0f/556c0fa1-525d-4a5c-d2fc-85dc7b18bd55/e523347f-932e-46fe-ba01-a060a0c21a25_5.5inch.001.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/aqfFKMZ3BX-4l9L2RwMFcQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/HLeaw-Op_1bE-BwykL1lVw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/7h1wOoNUX4NK3GgQAtYVKg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/m9Ex0iVisyMsOdFZ-V8fTw/626x0w.webp"
       ],
       "ipad_screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1d/e7/cf/1de7cf6b-219e-47ef-3ff3-1ed0fe37b7a9/6d608b22-5a34-4e9e-9354-8e2ecc4468a1_iPad.001.jpeg/576x768bb.jpg",
@@ -1610,18 +1605,18 @@
         "ユーティリティ"
       ],
       "primary_genre": "Productivity",
-      "rating": 4.24841,
+      "rating": 4.23991,
       "rating_count": 471,
-      "version": "2.1.0",
+      "version": "2.2.0",
       "release_date": "2021-12-05T08:00:00Z",
-      "current_version_release_date": "2026-02-07T21:18:46Z",
+      "current_version_release_date": "2026-10-09T15:25:03Z",
       "description": "「後でやろう」と思ったタスク、SNSを見ていたら忘れてしまった…\nそんな経験はありませんか？\n\nこのアプリは、動画のようにメモを画面に常時表示させられる、まったく新しいリマインダーです。\nあなたが他のアプリを使っている間も、大事なことを伝え続けます。\n\n【こんな使い方ができます】\n・学習や暗記に： 覚えたい英単語や資格の公式を流せば、SNS中もゲーム中も強制的に視界に入り、自然と記憶に定着します。\n・タスク管理に：「〇〇に連絡」「今日の買い物リスト」など、うっかり忘れがちなタスクを常に表示して、やり忘れを防ぎます。\n・大切な備忘録に： 目標や大事な言葉をいつでも確認。モチベーションを維持できます。\n\n【主な機能】\n・ピクチャ・イン・ピクチャ（PiP）機能で、あらゆるアプリの上にメモを表示\n・文字の色や背景、フォントサイズ、表示速度を自由にカスタマイズ\n・複数のメモを保存し、用途に応じてワンタップで切替\n・シンプルで直感的な操作性\n\nあなたの「忘れたくない」を、流れるメモ帳が強力にサポートします。\nぜひ、新しいメモ体験をお試しください。\n\n□ その他情報\n・利用規約\nhttps://tsuzukit.com/legal/terms-of-service.html\n\n・プライバシーポリシー\nhttps://tsuzukit.com/legal/privacy-policy.html\n\n・特定商取引法に基づく表示\nhttps://tsuzukit.com/legal/commercial-law.html",
-      "release_notes": "細かな不具合の修正を行いました！",
+      "release_notes": "・利用規約とプライバシーポリシーのリンク先を新しいページに変更しました\n・細かな不具合を修正しました",
       "content_advisory_rating": "4+",
       "minimum_os_version": "15.0",
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
-      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/00/f4/d3/00f4d38d-8825-1fda-0bdf-d3faf052a16f/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/60x60bb.jpg",
+      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/11/be/c0/11bec0a0-27b4-31d9-f5bc-38161887744d/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/60x60bb.jpg",
       "genre_ids": [
         "6007",
         "6002"
@@ -1633,9 +1628,9 @@
       "name": "WidgetZenn",
       "bundle_id": "com.tsuzuki817.zenn-widget",
       "app_store_url": "https://apps.apple.com/jp/app/widgetzenn/id1597103122?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2a/a2/3b/2aa23bb5-af8b-f657-b8a2-3a0da2f3ece5/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/9f/bb/8e/9fbb8e03-2106-0221-e017-5eef7173c2e7/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/69/49/c0/6949c077-3546-df85-5643-29d857cc6027/cf3c1d84-04e0-404d-b4ec-cf024b39d9a7_002.001.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/nLC_IJ1H0ThmmdMRNYcSaQ/626x0w.webp"
       ],
       "ipad_screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/94/08/50/9408505a-ccb2-5260-8b9b-f6c07da8609c/fe210cb3-654b-4dd3-9e36-3efa26f4d1ad_003.001.jpeg/552x414bb.jpg"
@@ -1649,16 +1644,16 @@
       "primary_genre": "News",
       "rating": 4,
       "rating_count": 1,
-      "version": "1.1.0",
+      "version": "1.1.1",
       "release_date": "2021-11-28T08:00:00Z",
-      "current_version_release_date": "2025-08-18T16:15:48Z",
+      "current_version_release_date": "2026-10-09T19:40:42Z",
       "description": "【Zennで話題の技術トレンドを、もう見逃さない】\n\n「WidgetZenn」は、エンジニアやデザイナーのための知識共有プラットフォーム「Zenn」の最新トレンドを、ホーム画面のウィジェットで手軽にチェックできるアプリです。\n\n毎日の情報収集をもっとスマートに、もっと効率的に。\nアプリを起動する手間なく、いつでも最新の技術動向をあなたのホーム画面にお届けします。\n\n◆ 主な機能\n・ホーム画面ウィジェット：アプリを開かずにZennのトレンドを一覧表示\n・シンプルなUI：記事を読むことに集中できる、無駄のないデザイン\n・簡単アクセス：ウィジェットをタップするだけで、すぐにZennの元記事を閲覧可能\n\n◆ こんな方におすすめ\n・最新の技術動向に常にキャッチアップしていたいエンジニアの方\n・スキマ時間を使って効率的に情報収集をしたい方\n・毎日Zennをチェックするのが日課の方\n\n開発者自身の「欲しかった」を形にしました。\nあなたの毎日の情報収集が、このアプリで少しでも快適になれば幸いです。",
-      "release_notes": "不具合修正を行いました！\nまた、トレンド記事をアプリ本体からもみれるようにしました！",
+      "release_notes": "・利用規約とプライバシーポリシーのリンク先を新しいページに変更しました\n・細かな不具合を修正しました",
       "content_advisory_rating": "4+",
       "minimum_os_version": "16.6",
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
-      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2a/a2/3b/2aa23bb5-af8b-f657-b8a2-3a0da2f3ece5/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/60x60bb.jpg",
+      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/9f/bb/8e/9fbb8e03-2106-0221-e017-5eef7173c2e7/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/60x60bb.jpg",
       "genre_ids": [
         "6009",
         "6007"
@@ -1670,13 +1665,13 @@
       "name": "WidgetQiita",
       "bundle_id": "com.tsuzuki817.qiita-widget",
       "app_store_url": "https://apps.apple.com/jp/app/widgetqiita/id1585253685?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple112/v4/77/b1/4c/77b14ce8-6a4e-975d-511a-52ba07838c05/AppIcon-0-1x_U007emarketing-0-10-0-sRGB-85-220.png/512x512bb.jpg",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6b/c4/a3/6bc4a39d-c570-15ac-aaae-cc5f3d4333e6/AppIcon-0-0-1x_U007emarketing-0-11-0-sRGB-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple115/v4/0f/38/98/0f38988c-e3c8-fb7e-2201-082b26f4b8d9/1a497c5e-3478-4ed2-b302-acd8f98dc9ef_6.5-inch_Screenshot_1.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource125/v4/25/7b/e6/257be66b-e84f-251a-31e7-ba1cf79d28fd/f5c03c8e-cab3-4898-b621-907ae35d2bb4_002.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource125/v4/ff/1d/bb/ff1dbb6c-34c9-2b8c-e030-94491db05fe5/5f7a7af3-4d5a-40de-b7d1-feadc15a0b4e_003.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource125/v4/67/8f/cd/678fcdf5-4cba-f756-31fb-55975008a982/d60c4034-47b7-459e-8c4e-2e3240e022e4_004.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple125/v4/3e/6e/c4/3e6ec42d-f1af-5e45-d386-72e016b0a34a/bdc9e706-f04c-4fae-995a-408b5197dbb4_6.5-inch_Screenshot_5.png/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/tALbcSThIHfN2Bfpi5WyoQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/9OB3gzfC9zqf_dIHb2vrtg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/w0rovMgrDQ7jixcE34_GQA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/jIDmC9ev7hUMFB7dchC9Jg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/WON27j7Zac6iQIwz42kGVg/626x0w.webp"
       ],
       "ipad_screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/Purple115/v4/43/4a/5b/434a5b4b-ccee-9d69-3501-105ac41ef159/306f1d00-e506-4f2e-b903-1b72b4421067_001.png/576x768bb.png",
@@ -1694,16 +1689,16 @@
       "primary_genre": "Productivity",
       "rating": 4.52941,
       "rating_count": 17,
-      "version": "1.4.0",
+      "version": "1.5.0",
       "release_date": "2021-09-18T07:00:00Z",
-      "current_version_release_date": "2022-09-12T18:37:39Z",
+      "current_version_release_date": "2026-10-09T14:46:58Z",
       "description": "WidgetQiitaはQiitaの記事をWidgetとして、ホームに置いてホットな記事をいつでも見ることができるようになるアプリです！\n\n# Qiitaとは？\n - Qiitaは、エンジニアに関する知識を記録・共有するためのサービスです。\n - https://qiita.com\n\n# WidgetQiitaのできること\n  - Qiitaのその日のホットな記事をWidgetとしてホーム画面に置くことができます。\n  - 表示できる期間は当日、一週間、一ヶ月単位で選べます。\n  -  Widgetから見た記事はあとから見返すことができます。\n  - 記事をお気に入りにしておくと、全件削除のときに削除されなくなります。\n  - 閲覧した記事をもとによく見るユーザーやタグのランキングを生成します。\n  - お気に入りのタグをしていしたWidgetを置くこともできるようになりました。\n\n本アプリはQiita API V2を使った非公式アプリです。\n\n## その他情報\n- 利用規約\nhttps://panoramic-clematis-d8b.notion.site/03f270da8559467ab198aeffab14fe6e\n- プライバシーポリシー\nhttps://panoramic-clematis-d8b.notion.site/32affc6108c34ea29882242f406322e7\n- 特定商取引法に基づく表示\nhttps://panoramic-clematis-d8b.notion.site/a6724238cdc3499e92d7eff3a56f6f76",
-      "release_notes": "iOS 16から使えるWidgetを追加しました！",
+      "release_notes": "・利用規約とプライバシーポリシーのリンク先を新しいページに変更しました\n・細かな不具合を修正しました",
       "content_advisory_rating": "4+",
       "minimum_os_version": "16.0",
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
-      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple112/v4/77/b1/4c/77b14ce8-6a4e-975d-511a-52ba07838c05/AppIcon-0-1x_U007emarketing-0-10-0-sRGB-85-220.png/60x60bb.jpg",
+      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6b/c4/a3/6bc4a39d-c570-15ac-aaae-cc5f3d4333e6/AppIcon-0-0-1x_U007emarketing-0-11-0-sRGB-85-220.png/60x60bb.jpg",
       "genre_ids": [
         "6007",
         "6002"
@@ -1717,9 +1712,9 @@
       "app_store_url": "https://apps.apple.com/jp/app/skycode/id1512663141?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/a4/3c/bb/a43cbbb8-dd31-d427-6f7f-5b75b1b0f682/AppIcon-1x_U007emarketing-0-10-0-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/7c/bd/46/7cbd469f-4cf5-e72c-1535-b0b225ec3183/pr_source.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/a6/5c/60/a65c603e-b595-a643-65ed-b5d4579a5054/pr_source.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/13/d8/5b/13d85b17-fcf0-5616-4c60-8475c98516eb/pr_source.png/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/-ZfXr5iPDLbCwOnloak0yA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/mKWaRE4-_nero8zZzjEuvw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/ldA4TgOVahI2Z86Xf_Iczg/626x0w.webp"
       ],
       "ipad_screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/bb/08/78/bb087892-c15a-20a4-7548-430513ec03b6/pr_source.png/552x414bb.png",
@@ -1733,8 +1728,8 @@
         "グラフィック／デザイン"
       ],
       "primary_genre": "Photo & Video",
-      "rating": 4.48935,
-      "rating_count": 235,
+      "rating": 4.48718,
+      "rating_count": 234,
       "version": "1.18.0",
       "release_date": "2020-05-11T07:00:00Z",
       "current_version_release_date": "2023-07-11T13:22:53Z",
@@ -1758,10 +1753,10 @@
       "app_store_url": "https://apps.apple.com/jp/app/bookbank-%E8%AA%AD%E6%9B%B8%E9%8A%80%E8%A1%8C-%E8%AA%AD%E6%9B%B8%E8%A8%98%E9%8C%B2-%E8%94%B5%E6%9B%B8%E7%AE%A1%E7%90%86/id1487377681?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/1f/2c/e5/1f2ce5ec-2cf7-8358-bd1c-15e59910fd4d/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/9a/fe/06/9afe0696-a6be-c915-a402-01299351d231/APP_IPHONE_69_01.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/8a/87/4b/8a874b15-73a9-3f90-522c-fa91191f7b7c/APP_IPHONE_69_03.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ac/16/c0/ac16c03c-e4d3-0faa-59a4-e32e7675cb5c/APP_IPHONE_69_04.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ba/db/26/badb264a-54a5-fbf4-0a90-ecc93fd3250b/APP_IPHONE_69_02.png/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/5dHsL9feyqz75frwPi8Ktw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/4f3zWj4uTsCHo8qGzb4r8w/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/z3enHtUHM68x1dOYPymVsw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/4iSC8jFtlILUCTwk6mEe2Q/626x0w.webp"
       ],
       "ipad_screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/cb/1d/0e/cb1d0e48-7a9a-6251-deb4-32548b11f28e/APP_IPAD_PRO_3GEN_129_01.png/360x480bb.jpg",
@@ -1801,9 +1796,9 @@
       "app_store_url": "https://apps.apple.com/jp/app/kimochi-%E3%81%8B%E3%82%8F%E3%81%84%E3%81%84%E6%B0%97%E5%88%86%E6%97%A5%E8%A8%98/id6762499180?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/14/6e/a9/146ea943-4af9-17b1-d843-a6592d630c29/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4d/1f/ba/4d1fba53-e910-44e0-d11d-01fb5120e587/001.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/bb/93/e5/bb93e5fc-7eb4-fdf2-9caa-b7b5a2b8f3bd/002.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/dc/5a/1e/dc5a1ecd-6345-fc69-fdeb-93cbadfadb43/003.png/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/r7NZanBtx7bqP5oosAeOJA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/XqaTGFzuSAZg-B-S351myg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/3by0qXjT2qNJOCv9UHDavA/626x0w.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -1835,11 +1830,11 @@
       "app_store_url": "https://apps.apple.com/jp/app/flowerlens-%E8%8A%B1ai%E5%9B%B3%E9%91%91/id6762043194?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/39/b6/be/39b6be0b-2a25-8294-9b91-755df964fe9c/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/15/c8/bd/15c8bdd2-f2fd-bf38-84a8-f8e31c74da61/FlowerLens.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e4/2f/29/e42f29e6-b9b9-8f11-f6aa-b32ede0d1f89/FlowerLens.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/74/da/43/74da4362-ab9a-0aaf-29fe-5a6bdaa2dbcb/FlowerLens.003.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/be/24/47/be244786-10e1-d9c7-5df0-6d7c45ffb946/FlowerLens.004.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/2c/25/9f/2c259fa6-8419-91b5-59f4-bd09aa545a4a/FlowerLens.005.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/3ZVqQT3tXdAsPoQL1u-Drg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/7FVoBKX5QBqQO4Yt1VJwmg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/OZTQ7k0CxLLh9TXDfRF4wg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/tQr6DS279zjtwUSJIHvEWQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/emxqWD0ECBnd1XYAqZCD3Q/626x0w.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -1871,11 +1866,11 @@
       "app_store_url": "https://apps.apple.com/jp/app/%E3%82%81%E3%81%8F%E3%82%8B%E3%82%93-%E6%97%A5%E3%82%81%E3%81%8F%E3%82%8A%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%80%E3%83%BC/id6761456691?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f6/06/60/f60660eb-3724-016f-d856-b278b709c8fd/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b7/20/ed/b720ed1c-7a28-7346-fe10-b68e1fd7e319/_U6372_U308b_U30936.5inch.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/58/e7/19/58e719c4-98ad-4c91-9bc0-e20f4bce7000/_U6372_U308b_U30936.5inch.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4d/5b/fa/4d5bfabc-d2fe-4f21-9d34-99e5f3dfe5ce/_U6372_U308b_U30936.5inch.004.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9c/58/81/9c5881be-4581-6b9e-8ff2-631a9e0110e4/_U6372_U308b_U30936.5inch.003.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a8/43/27/a843275a-833e-7d8b-0962-68feeb67825c/_U6372_U308b_U30936.5inch.005.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/7kEh-baD4n8lojIoQHBLgQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/n9VOvfirXauR_SuCGu8dJQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/5CferD2qVrAiyE8qPjvj7A/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/IDbZnwvu4Fii-xYa82f8NQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/_WnkUApDtL7-92ObLALFNQ/626x0w.webp"
       ],
       "ipad_screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c8/45/83/c8458382-bc79-ff5e-68c4-3bdaac95e387/_U3081_U304f_U308b_U309313inch.001.jpeg/360x480bb.jpg",
@@ -1913,11 +1908,11 @@
       "app_store_url": "https://apps.apple.com/jp/app/%E3%81%9A%E3%82%93%E3%81%A0%E3%82%82%E3%82%93%E3%81%AE%E9%83%A8%E5%B1%8B-%E3%81%9A%E3%82%93%E3%81%A0%E3%82%82%E3%82%93%E3%81%AB%E8%A9%B1%E3%82%92%E8%81%B4%E3%81%84%E3%81%A6%E3%82%82%E3%82%89%E3%81%86/id6759167301?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4e/b9/61/4eb96123-6878-e8d9-fceb-437aa54074b9/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/89/d1/be/89d1bee4-d701-a97f-ccc9-f83932cab016/zun6.5inch.001.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a8/ae/cb/a8aecb06-3120-0931-c1fc-bd65da3a9a06/zun6.5inch.002.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/09/65/6c/09656c08-764d-9827-e395-87df5d753564/zun6.5inch.003.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/5f/8c/2d/5f8c2d4f-2dcb-9351-78e5-cf30a69d0696/zun6.5inch.004.jpeg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/73/0c/da/730cda0d-6d50-bbda-d62f-cad0f7fd543e/zun6.5inch.005.jpeg/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/CwS6qY7cc6gRI8U7ugnjeA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/v9dzA8shA_oxLRKwvJiEHg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/lXI3JagxHHphyUsHHswaEg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/C1Xxizqe_T7yDUvqjrah6Q/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/hQ31gXCgSXFShCvMkAEcWg/626x0w.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -1946,11 +1941,11 @@
       "bundle_id": "com.tsuzukit.HomeKeep",
       "name": "フィルター交換 HomeKeep",
       "app_store_url": "https://apps.apple.com/jp/app/%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF%E3%83%BC%E4%BA%A4%E6%8F%9B-homekeep/id6778079517?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/45/8b/66/458b66f1-26f2-c545-01a8-285876bfc790/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/40/b0/d2/40b0d235-6885-103b-b8ca-43676335d0e3/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/84/b4/4d/84b44d88-35fb-ba6f-5536-d8d5e0cbf5fb/01.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/5c/32/fd/5c32fd09-af87-e442-5c28-b1ffb8494482/02.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/8c/c8/a7/8cc8a76f-88c6-5a4d-e08a-4399c6db5a8d/03.png/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/3zVougRlt2hfHSfPNtKiNg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/KoPfkBdaJMxGr8kXOLmWEA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Pyp4jjKPyelVM9YNCwpeoQ/626x0w.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -1962,18 +1957,18 @@
       "primary_genre": "Lifestyle",
       "rating": 0,
       "rating_count": 0,
-      "version": "1.0",
+      "version": "1.0.1",
       "release_date": "2026-06-12T07:00:00Z",
-      "current_version_release_date": "2026-06-12T07:53:50Z",
+      "current_version_release_date": "2026-09-20T16:37:02Z",
       "description": "エアコンや浄水器のフィルター、交換時期を忘れていませんか？\nHomeKeepは、家電フィルターの交換サイクルを管理して通知でお知らせする無料アプリです。\n\n■ こんなお悩みを解決\n・エアコンや空気清浄機のフィルター交換をつい忘れる\n・浄水器のカートリッジをいつ替えたか覚えていない\n・複数の家電のフィルターを管理しきれない\n・気づいたら何ヶ月も交換していなかった\n\n■ 主な機能\n【家電ごとにフィルターを管理】\nエアコン、空気清浄機、浄水器、加湿器、レンジフード、冷蔵庫、食洗機、掃除機など。カテゴリを選ぶだけで推奨の交換サイクルが自動でセットされます。\n\n【交換が近い順に一覧表示】\n登録したフィルターを交換日が近い順に表示。「あと何日」が一目で分かります。\n\n【交換時期を通知】\n交換日が近づくと通知でリマインド。7日前と当日にお知らせします。\n\n【ワンタップで交換記録】\n交換したらボタン一つで記録。次の交換日が自動で再設定されます。\n\n【写真・型番・購入リンクを保存】\n家電の写真や型番を登録。「同じものを買う」リンクから次回もすぐ購入できます。\n\n【ホーム画面ウィジェット】\n次に交換が近いフィルターをウィジェットで確認。アプリを開かなくても分かります。\n\n【季節のメンテナンス】\n雨樋掃除や煙感知器の電池交換など、季節ごとの住まいのお手入れもチェックリストで管理できます。\n\n■ こんな方におすすめ\n・エアコンや空気清浄機をよく使う方\n・浄水器・ウォーターサーバーをお使いの方\n・アレルギーや小さなお子さんがいて空気・水の質にこだわる方\n・家電を長く大切に使いたい方\n・フィルター交換をつい後回しにしてしまう方\n\n■ 料金プラン\n【無料版】\n・フィルター3件まで登録\n・交換通知\n・ウィジェット\n\n【プレミアム版】\n・フィルターの登録無制限\n・型番・購入リンクの保存\n・季節のメンテナンス\n・広告非表示\n\nきれいな空気と水は、フィルターから。HomeKeepで交換のタイミングを逃さない暮らしを。\n\n■ リンク\n・サポート: https://tsuzukit.com/contact/\n・利用規約: https://tsuzukit.com/legal/terms-of-service.html\n・プライバシーポリシー: https://tsuzukit.com/legal/privacy-policy.html",
-      "release_notes": null,
+      "release_notes": "はじめての方に向けた案内を、目詰まりしたフィルターが1枚ずつきれいになっていく形に作り直しました。プレミアムの画面も配管図の体裁にしています。あわせて、実装していない項目の記載を取り除きました。",
       "content_advisory_rating": "12+",
       "minimum_os_version": "17.0",
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
       "id": 6778079517,
       "google_play_url": null,
-      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/45/8b/66/458b66f1-26f2-c545-01a8-285876bfc790/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/60x60bb.jpg",
+      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/40/b0/d2/40b0d235-6885-103b-b8ca-43676335d0e3/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/60x60bb.jpg",
       "download_count": 0
     },
     {
@@ -1982,9 +1977,9 @@
       "app_store_url": "https://apps.apple.com/jp/app/%E6%B0%B4%E6%A7%BD%E7%AE%A1%E7%90%86-%E6%B0%B4%E6%9B%BF%E3%81%88%E9%80%9A%E7%9F%A5-tankminder/id6778477412?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/bf/a9/53/bfa9531d-241e-2c42-3622-28b6029b76cd/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/68/ef/74/68ef74bb-4370-5848-bb19-7f35102b36a0/001.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/2b/2e/62/2b2e6271-92b6-10a0-e071-d77e6abfb1af/002.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4c/b7/a3/4cb7a318-9842-b43e-8cc6-0fe2b1594064/003.png/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/WCkWXwFm5cb-NGjUlOSL8A/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/gUTVUUUx2yQ_jeaYr1RzaA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/0CiCaFlwKz1U7v-1mRgtKQ/626x0w.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -2017,9 +2012,9 @@
       "app_store_url": "https://apps.apple.com/jp/app/%E3%83%AF%E3%82%A4%E3%83%B3%E9%A3%B2%E3%81%BF%E9%A0%83%E7%AE%A1%E7%90%86-wineready/id6780249664?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/db/8c/fa/db8cfa20-40c2-4c55-4bca-cb62ba36455e/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c8/3f/81/c83f8131-6e86-74bb-a9d4-96627eb65702/001.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/87/38/fd/8738fd1f-1807-0319-79f2-01bb374b37f5/002.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/95/f4/23/95f423fd-61da-d706-4c32-735a278c3d85/003.png/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/ja00R-3kTUbB7P9EFb_ztw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/nad3735r7nsRUT9tDkiPZA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/xTlgYf6W-KQEg-29DZib9Q/626x0w.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -2050,9 +2045,9 @@
       "app_store_url": "https://apps.apple.com/jp/app/%E3%82%B3%E3%82%B9%E3%83%A1%E6%9C%9F%E9%99%90%E7%AE%A1%E7%90%86-cosmefresh/id6779972238?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b1/0e/6c/b10e6cd7-bb90-822c-a06f-09ac3dc81d38/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/11/04/6b/11046b31-aecc-7164-10cd-6459c0037ba6/001.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1a/e2/e9/1ae2e9fb-8d31-5a47-c52e-644f6e9f6dbe/002.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/5f/2e/d4/5f2ed478-6c55-7fcd-67e8-224fe69c8501/003.png/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/biGPIOd2hkbnP4Sdf64rVQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/w9eF9EyMSuG35D8nTmFxkQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/vUhLg7Mt3jnO-O127MFM9g/626x0w.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -2083,9 +2078,9 @@
       "app_store_url": "https://apps.apple.com/jp/app/%E3%82%B3%E3%83%B3%E3%82%BF%E3%82%AF%E3%83%88%E4%BA%A4%E6%8F%9B%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%80%E3%83%BC-lenslog/id6779314854?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/db/ac/cf/dbaccf65-8ce5-b492-4648-3b08567e9bab/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/57/b0/89/57b08944-2279-e53a-6c72-5487dedb6d41/001.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a5/4d/2c/a54d2cea-2bde-2fa6-a964-386fa526259f/002.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/84/cc/e3/84cce335-8304-4eb1-c880-268e7b7ee947/003.png/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/oVLFgfijAt3YKjVspNqvvg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/JxEYyQ0ZTzlk3K-4bgk6lw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/8LPwVF6WArLxUbv8rOK2kg/626x0w.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -2116,9 +2111,9 @@
       "app_store_url": "https://apps.apple.com/jp/app/%E7%8F%88%E7%90%B2%E9%AE%AE%E5%BA%A6-%E7%84%99%E7%85%8E%E6%97%A5%E7%AE%A1%E7%90%86-beanfresh/id6778683064?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ac/6d/7b/ac6d7bb6-3b51-5ed3-c595-4cc6ca8efd55/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ea/cf/c7/eacfc71e-dfca-da72-4e67-7d6b5d23ced6/001.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/34/1a/44/341a4457-c870-c9ce-cf5d-6d7b2371ed77/002.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/04/99/a9/0499a9a5-8bf4-cb6f-f618-5e3420b9dbbf/003.png/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/SqyQxqw6Pg4DkR0YR5Fmbw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/mJCMi2odA2Pp56YyJ01U4A/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/SQiRpLmjHVpJd5v_NxqjSg/626x0w.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -2149,9 +2144,9 @@
       "app_store_url": "https://apps.apple.com/jp/app/%E3%83%95%E3%83%AD%E3%82%A4%E3%83%88%E5%85%88%E7%94%9F%E3%81%AE%E5%A4%A2%E5%8D%A0%E3%81%84-ai%E5%A4%A2%E8%A8%BA%E6%96%AD/id6777151259?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/3b/e1/d6/3be1d6e4-6d7b-1d25-bcdb-ae0e6ee9a549/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/93/40/d6/9340d632-6e44-ae83-fa4b-45d7f9a4db4a/01.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2d/d5/30/2dd5303a-3b2a-5396-3845-58bab5edfe83/02.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b4/6a/a7/b46aa73f-2a39-8737-9760-3b77cb37f29c/03.png/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/YyHSPzWCK6xxpQaLd4VTHQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/bR5W7mapjNFdBm2W0AjCHA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/RlF1pWczdrertGG7fCtOyg/626x0w.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -2179,11 +2174,11 @@
       "id": 6784576527,
       "name": "ReelKeep 釣具ケア管理",
       "app_store_url": "https://apps.apple.com/jp/app/reelkeep-%E9%87%A3%E5%85%B7%E3%82%B1%E3%82%A2%E7%AE%A1%E7%90%86/id6784576527?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b8/7d/f4/b87df4ae-15f3-e466-ffb8-7706cec3c7fb/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/8b/15/14/8b151419-1146-4351-1718-fd079f6d15f1/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c3/cb/2f/c3cb2f0e-40d2-adc5-2244-70c256dd1e47/001.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ad/5a/ff/ad5affb9-39cd-ccea-e698-dbb7a2c20cd9/002.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b5/cd/3a/b5cd3ad1-7896-1997-99fd-3edb8f5eea45/003.png/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/mDT_M-Ljf6e79NNvEe3CmA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/6lH7xjwwhcsTOi0wLecxbQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/MaR6cJFn0bR6j53-iFQXwg/626x0w.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -2195,16 +2190,16 @@
       "primary_genre": "Utilities",
       "rating": 0,
       "rating_count": 0,
-      "version": "1.0",
+      "version": "1.0.1",
       "release_date": "2026-06-26T07:00:00Z",
-      "current_version_release_date": "2026-06-26T19:34:11Z",
-      "description": "愛用のリール・ロッドを、いつでもベストコンディションで。\n\n「オーバーホール、いつやったっけ…」「ラインがそろそろ寿命かも」——大切な相棒だからこそ、手入れのタイミングを ReelKeep におまかせください。\n\n■ 釣行回数 × 期間の二軸で管理\nオーバーホールは「あと◯釣行で」、ライン交換やドラグ点検は「あと◯日で」。釣行を記録すると総釣行回数に反映され、回数で決まる手入れがぴたりと分かります。\n\n■ 海（ソルト）対策に強い\n海水で使ったら水洗いは必須。釣具ごとに「海で使う」を設定すれば、釣行後の水洗いを忘れずにお知らせ。塩噛み・腐食から大切なリールを守ります。\n\n■ ケア項目をプリセット\n海水後の水洗い・ライン交換・オーバーホール・ベアリング注油・ギアのグリスアップ・ドラグ点検・ハンドルのガタ点検・ガイド点検・継ぎ目の点検・サビ点検・全体清掃——釣り文化の言葉そのままに、推奨周期で用意。もちろん自分好みに編集できます。\n\n■ 複数台のコレクション＆ケアログ\nリールもロッドも写真付きで登録。手入れするたびに履歴が積み上がり、費用も記録できます。\n\n■ ケアどきを3段階で通知\n近づいたら事前に→当日に→過ぎてもケアするまで毎日そっと。放置はサビ・故障のもと。見逃しません。\n\n■ 釣り人のための豆知識\n水洗いはドラグを締めてから／ラインローラーは塩噛みしやすい／PEはケバ立ったら寿命——24本のTipsと相棒フィッシュで手入れがもっと楽しく。\n\n■ ウィジェット対応\n次に手入れが必要な釣具と残り（あと◯釣行／◯日）を、ホーム画面でひと目で確認できます。\n\n【無料版】\n・釣具を1台まで登録\n・ケア項目3つまで\n・ケアの通知\n\n【プレミアム】\n・釣具を無制限に登録\n・ケア項目も無制限\n・フル履歴・釣行ログ\n・保管場所でグループ分け\n・広告非表示\n買い切り ¥3,000 または 週額 ¥200（無料トライアルなし）。サブスクリプションは期間終了の24時間前までに解約しない限り自動更新され、Apple IDに請求されます。設定からいつでも解約できます。\n\nケア間隔は一般的な目安です。釣りのスタイルや好みに合わせて調整してください。\n\n■ リンク\n・サポート: https://tsuzukit.com/contact/\n・利用規約: https://tsuzukit.com/legal/terms-of-service.html\n・プライバシーポリシー: https://tsuzukit.com/legal/privacy-policy.html",
-      "release_notes": null,
+      "current_version_release_date": "2026-09-20T16:37:00Z",
+      "description": "海から帰ったら、まず水洗い。分かっているのに、疲れた日ほど後回しになります。\n\n塩は、洗い忘れた一晩で仕事を始めます。ラインローラーが回らなくなり、ハンドルにガタが出て、気づいたときにはオーバーホール行きです。ReelKeepは、釣行のあとに水洗いを思い出させ、オーバーホールやライン交換の周期を預かるためのアプリです。\n\n＜ソルトに寄せた作り＞\n\n釣具ごとに「海で使う」を設定できます。釣行を記録すると、その日のうちに水洗いのお知らせが届きます。淡水中心の方は設定を外しておけば、余計な通知は出ません。\n\n＜釣行回数と日数、どちらでも＞\n\nオーバーホールは釣行の回数で近づきます。ラインの寿命やドラグの点検は日数で近づきます。ReelKeepは両方を別に数え、「あと何釣行」「あと何日」という形で残りを出します。釣行を記録すれば回数は自動で積み上がります。\n\n＜最初から入っている項目＞\n\n海水後の水洗い、ライン交換、オーバーホール、ベアリング注油、ギアのグリスアップ、ドラグ点検、ハンドルのガタ点検、ガイド点検、継ぎ目の点検、サビ点検、全体清掃。釣りの言葉そのままに、推奨周期つきで用意しています。周期も名前も編集できます。\n\n＜リールもロッドも＞\n\n写真付きで登録できます。手入れをするたびに履歴が積み上がり、費用も残せます。何年使っているどのリールに、いくらかけてきたかが分かります。\n\n＜三段階の通知＞\n\n近づいたら事前に。当日にもう一度。過ぎてからは、済ませるまで毎日そっと。サビは待ってくれないので、少ししつこくしてあります。\n\n＜釣り人の豆知識＞\n\n水洗いはドラグを締めてから。ラインローラーは塩噛みしやすい。PEはケバ立ったら寿命。24本のTipsを、相棒のフィッシュが運んできます。\n\n＜ウィジェット＞\n\n次に手入れが必要な釣具と、残りの釣行回数・日数をホーム画面で確認できます。\n\n◇\n\n無料で使える範囲\n釣具1台、ケア項目3つまでの登録と、手入れ時期の通知。\n\nプレミアム\n釣具もケア項目も無制限。全期間の履歴と釣行ログ。保管場所でのグループ分け。広告の非表示。\n\n¥3,000 の買い切りと、¥200 の週額をご用意しています。無料トライアルはありません。週額の場合、期間終了の24時間以上前に解約されなければ自動更新され、Apple ID への請求となります。設定画面からいつでも解約いただけます。\n\nケアの間隔は一般的な目安です。使用する水域や頻度に合わせて調整してください。\n\nサポート https://tsuzukit.com/contact/\n利用規約 https://tsuzukit.com/legal/terms-of-service.html\nプライバシーポリシー https://tsuzukit.com/legal/privacy-policy.html",
+      "release_notes": "はじめての方に向けた案内を、タックルボックスの段を引き出していく形に作り直しました。プレミアムの画面もスプールの巻き量で表すようにしています。",
       "content_advisory_rating": "4+",
       "minimum_os_version": "17.0",
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
-      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b8/7d/f4/b87df4ae-15f3-e466-ffb8-7706cec3c7fb/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/60x60bb.jpg",
+      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/8b/15/14/8b151419-1146-4351-1718-fd079f6d15f1/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/60x60bb.jpg",
       "download_count": 0,
       "bundle_id": "com.tsuzukit.ReelKeep"
     },
@@ -2212,11 +2207,11 @@
       "id": 6782400804,
       "name": "万年筆ケア PenKeep",
       "app_store_url": "https://apps.apple.com/jp/app/%E4%B8%87%E5%B9%B4%E7%AD%86%E3%82%B1%E3%82%A2-penkeep/id6782400804?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/70/6c/84/706c84e6-4a07-0eab-3532-7cbb0c6d439d/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5e/ce/de/5ecede23-6105-fdba-44cd-afdb8cc27f37/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/bc/5f/ab/bc5fab91-ee26-11af-8958-27543d0db452/001.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/58/f2/5a/58f25af2-4c1d-a819-5fa4-af87f36b7a5b/002.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9b/00/83/9b00832d-75a8-e665-a0a6-b473b1a79f9d/003.png/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/kuqrNEUGoFExz0YF1cWeyw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/t-kxTNjl7PHRM7oQaZ3D2Q/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/F4qOT6q0QAY0y_6Aw9rjRQ/626x0w.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -2228,16 +2223,16 @@
       "primary_genre": "Lifestyle",
       "rating": 0,
       "rating_count": 0,
-      "version": "1.0",
+      "version": "1.0.1",
       "release_date": "2026-06-24T07:00:00Z",
-      "current_version_release_date": "2026-06-25T01:59:00Z",
-      "description": "万年筆コレクションを、いつでも気持ちよく書ける状態に。\n\n「久しぶりに出したら書けなくなっていた」「洗浄をずっと忘れていた」——大切な一本だからこそ、洗浄とインク管理を PenKeep におまかせください。\n\n■ 吸入方式別に洗浄どきを自動計算\nカートリッジ／コンバーター・ピストン・アイドロッパーなど、方式ごとにインク量と乾きやすさは違います。PenKeep が洗浄の目安を自動で算出し、近づいたらそっとお知らせします。\n\n■ 「乾いてるかも」に気づける\nインクを入れたまま使わないと、固まって書けなくなります。最後に書いた日から「書ける／乾いてるかも」を表示。書くか、洗うきっかけに。\n\n■ 写真でコレクションを一覧\n愛筆を撮影すると背景を自動で切り抜いて登録。あなただけの万年筆が美しく並びます。\n\n■ 洗浄どきを3段階で通知\n事前（2週間前・数日前）→当日→過ぎても洗うまで毎日そっと。大切な一本のお手入れを見逃しません。\n\n■ 万年筆好きのための豆知識\n洗浄のコツ・インクの相性・ペン先の扱い・古典インクの注意点まで、24本のTipsとマスコット「万年筆くん」でコレクションがもっと楽しく。\n\n■ ウィジェット対応\nホーム画面で、洗浄どきの万年筆と状態をひと目で確認できます。\n\n【無料版】\n・万年筆を3本まで登録\n・洗浄どきの通知\n\n【プレミアム】\n・万年筆を無制限に登録\n・ペンケース・箱でグループ分け\n・お手入れ記録（種類・インク・所感）\n・広告非表示\n買い切り ¥3,000 または 週額 ¥200（無料トライアルなし）。サブスクリプションは期間終了の24時間前までに解約しない限り自動更新され、Apple IDに請求されます。設定からいつでも解約できます。\n\n洗浄周期は吸入方式からの一般的な目安です。インクや使用頻度に合わせて調整してください。\n\n■ リンク\n・サポート: https://tsuzukit.com/contact/\n・利用規約: https://tsuzukit.com/legal/terms-of-service.html\n・プライバシーポリシー: https://tsuzukit.com/legal/privacy-policy.html",
-      "release_notes": null,
+      "current_version_release_date": "2026-09-20T16:39:38Z",
+      "description": "久しぶりに手に取った一本が、書き出しでかすれる。\n\n万年筆を複数持っている人なら、たいてい経験があると思います。インクを入れたまま数週間置けば、ペン先で水分が飛んで固まります。使わないこと自体が、万年筆にとっては手入れの必要な状態です。PenKeepは、その「置きっぱなし」に気づくためのアプリです。\n\n洗浄どきを、吸入方式から計算する\n\nカートリッジ、コンバーター、ピストン、アイドロッパー。方式によって入るインクの量も乾きやすさも違います。PenKeepは登録した方式から洗浄の目安を割り出し、近づいたら知らせます。\n\n「書ける」か「乾いてるかも」か\n\n最後に書いた日からの日数で、一本ごとに状態を表示します。しばらく触っていない一本が目に入れば、書くか洗うかのきっかけになります。コレクションが増えるほど、この表示が効いてきます。\n\n写真で並べる\n\n愛筆を撮れば背景を自動で切り抜いて登録します。軸の色や模様がそのまま並ぶので、リストというより見せるための棚になります。\n\n通知は三段階\n\n洗浄の二週間前、数日前、当日。それでも過ぎたら、洗うまで毎日そっと出します。固まってからの復旧は手間なので、早めに声をかける設計です。\n\n万年筆の豆知識\n\n洗浄のコツ、インクの相性、ペン先の扱い、古典インクを使うときの注意。24本のTipsを、万年筆くんが日替わりで持ってきます。\n\nウィジェット\n\n洗浄どきが近い一本と、その状態をホーム画面で確認できます。\n\n＿＿＿＿＿\n\n無料でできること\n万年筆を3本まで登録して、洗浄どきの通知を受け取れます。\n\nプレミアムでできること\n登録は無制限。ペンケースや箱でグループ分け。お手入れの記録（種類・インク・所感）。広告の非表示。\n\n一度お支払いいただく ¥3,000 と、週額 ¥200 の2種類です（無料トライアルはございません）。週額は期間が終わる24時間前までに解約されない限り自動更新となり、Apple ID に請求されます。解約はいつでも設定から。\n\n洗浄の周期は吸入方式からの一般的な目安です。使うインクや書く頻度に合わせて調整してください。\n\nサポート https://tsuzukit.com/contact/\n利用規約 https://tsuzukit.com/legal/terms-of-service.html\nプライバシーポリシー https://tsuzukit.com/legal/privacy-policy.html",
+      "release_notes": "はじめての方に向けた案内を、罫線入りの便箋に一行ずつ書き足していく形に作り直しました。インクが滲むように現れます。プレミアムの画面もインク瓶のラベルの体裁にしています。",
       "content_advisory_rating": "4+",
       "minimum_os_version": "17.0",
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
-      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/70/6c/84/706c84e6-4a07-0eab-3532-7cbb0c6d439d/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/60x60bb.jpg",
+      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5e/ce/de/5ecede23-6105-fdba-44cd-afdb8cc27f37/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/60x60bb.jpg",
       "download_count": 0,
       "bundle_id": "com.tsuzukit.PenKeep"
     },
@@ -2245,11 +2240,11 @@
       "id": 6782555676,
       "name": "包丁ケア KnifeKeep",
       "app_store_url": "https://apps.apple.com/jp/app/%E5%8C%85%E4%B8%81%E3%82%B1%E3%82%A2-knifekeep/id6782555676?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/89/fa/56/89fa56b4-f260-93f6-6d4c-079aeb6f4b31/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/07/66/c3/0766c392-682d-43a9-62a4-ea0874a3b17a/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/31/2a/88/312a885d-2303-abdb-5be0-f54bf9e9a70f/001.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e1/55/7c/e1557c94-1697-5d6e-e1c6-20f40424c7c9/002.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f0/e6/cb/f0e6cb92-b91b-6f60-0a3d-c957a8d8aa7f/003.png/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/ps7CoqUvW_cxzpoKFz--Ew/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/6Bt5p1Qp6BsCdpirLzoYnQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/m_UGsn5wd_F9DZV5PVZ3jA/626x0w.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -2261,16 +2256,16 @@
       "primary_genre": "Lifestyle",
       "rating": 0,
       "rating_count": 0,
-      "version": "1.0",
+      "version": "1.0.1",
       "release_date": "2026-06-24T07:00:00Z",
-      "current_version_release_date": "2026-06-24T15:11:22Z",
-      "description": "愛刃を、いつでも最高の切れ味で。\n\n「いつ研いだか忘れた」「久しぶりに出したら錆びていた」——大切な一本だからこそ、研ぎと錆び対策を KnifeKeep におまかせください。\n\n■ 鋼材別に研ぎどきを自動計算\nステンレス・炭素鋼（ハガネ）・ダマスカス・セラミックなど、鋼材ごとに切れ味の持ちは違います。KnifeKeep が研ぎの目安を自動で算出し、近づいたらそっとお知らせします。\n\n■ 「錆びるかも」に気づける\nハガネやダマスカスは、使わない・濡れたまま放置で錆びます。最後に使った日から「手入れOK／錆びるかも」を表示。拭く・油を塗るきっかけに。\n\n■ 写真でコレクションを一覧\n愛刃を撮影すると背景を自動で切り抜いて登録。あなただけの包丁が美しく並びます。\n\n■ 研ぎどきを3段階で通知\n事前（2週間前・数日前）→当日→過ぎても研ぐまで毎日そっと。切れ味の低下は事故のもと。見逃しません。\n\n■ 料理好きのための豆知識\n研ぎの角度・砥石の番手・食洗機NG・まな板選びまで、24本のTipsとマスコット「包丁くん」でお手入れがもっと楽しく。\n\n■ ウィジェット対応\nホーム画面で、研ぎどきの包丁と状態をひと目で確認できます。\n\n【無料版】\n・包丁を3本まで登録\n・研ぎどきの通知\n\n【プレミアム】\n・包丁を無制限に登録\n・置き場所でグループ分け\n・お手入れ記録（種類・砥石・所感）\n・広告非表示\n買い切り ¥3,000 または 週額 ¥200（無料トライアルなし）。サブスクリプションは期間終了の24時間前までに解約しない限り自動更新され、Apple IDに請求されます。設定からいつでも解約できます。\n\n研ぎ周期は鋼材からの一般的な目安です。使用頻度や好みに合わせて調整してください。\n\n■ リンク\n・サポート: https://tsuzukit.com/contact/\n・利用規約: https://tsuzukit.com/legal/terms-of-service.html\n・プライバシーポリシー: https://tsuzukit.com/legal/privacy-policy.html",
-      "release_notes": null,
+      "current_version_release_date": "2026-09-24T17:52:51Z",
+      "description": "切れない包丁のほうが、指を切ります。\n\n力を入れないと食材に入らないので、刃が滑ったときに勢いがついてしまう。研ぎを先延ばしにすることは、台所では安全の問題です。KnifeKeepは、研ぎどきと錆び対策を鋼材ごとに管理するアプリです。\n\n● 鋼材から研ぎどきを割り出す\n\nステンレス、炭素鋼、ダマスカス、セラミック。鋼材が違えば切れ味の持ちも違います。登録した鋼材から研ぎの目安を計算し、近づいたら知らせます。\n\n● 錆びる前に気づく\n\nハガネやダマスカスは、濡れたまま置くだけで錆びます。最後に使った日からの日数で「手入れOK」か「錆びるかも」かを表示するので、拭くか油を塗るかの判断ができます。\n\n● 一本ずつ写真で\n\n包丁を撮れば背景を自動で切り抜いて登録します。和包丁も洋包丁も、刃文や柄の質感がそのまま並びます。\n\n● 知らせは三段階\n\n研ぎどきの二週間前、数日前、当日。過ぎてからは研ぐまで毎日。切れ味が落ちたまま使い続けることを避けるための設計です。\n\n● 料理好きの豆知識\n\n研ぎの角度、砥石の番手、食洗機に入れてはいけない理由、まな板の選び方。24本のTipsを、包丁くんが日替わりで持ってきます。\n\n● ウィジェット\n\n研ぎどきが近い包丁と、その状態をホーム画面で確認できます。\n\n▽ 料金\n\n無料版では、包丁を3本まで登録して研ぎどきの通知を受け取れます。\n\nプレミアムでは、登録が無制限になり、置き場所でのグループ分け、お手入れの記録（種類・砥石・所感）、広告の非表示が使えます。\n\n¥3,000 を一度お支払いいただくか、週額 ¥200 でお使いいただけます。無料トライアルはありません。週額をお使いの場合は、期間終了の24時間以上前に解約しない限り自動更新され、Apple ID に請求されます。設定からいつでも解約できます。\n\n▽ ご注意\n\n研ぎの周期は鋼材からの一般的な目安です。使用頻度や切れ味の好みに合わせて調整してください。\n\nサポート https://tsuzukit.com/contact/\n利用規約 https://tsuzukit.com/legal/terms-of-service.html\nプライバシーポリシー https://tsuzukit.com/legal/privacy-policy.html",
+      "release_notes": "はじめての方に向けた案内を、砥石の番手を上げていく形に作り直しました。粗砥から仕上げへ進みます。プレミアムの画面も刃の断面で表すようにしています。",
       "content_advisory_rating": "17+",
       "minimum_os_version": "17.0",
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
-      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/89/fa/56/89fa56b4-f260-93f6-6d4c-079aeb6f4b31/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/60x60bb.jpg",
+      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/07/66/c3/0766c392-682d-43a9-62a4-ea0874a3b17a/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/60x60bb.jpg",
       "download_count": 0,
       "bundle_id": "com.tsuzukit.KnifeKeep"
     },
@@ -2280,9 +2275,9 @@
       "app_store_url": "https://apps.apple.com/jp/app/%E3%83%91%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%88%E6%9C%9F%E9%99%90%E7%AE%A1%E7%90%86-passportalert/id6782294746?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/12/db/49/12db496b-2b95-78c0-e5c7-5d8f21df4c26/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/91/ec/22/91ec22d6-2e6e-40a3-11f7-0bc493b699a9/001.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ff/6e/31/ff6e3154-696d-df2c-bec4-243266c9cd97/002.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ed/71/01/ed710146-1ea0-ef2c-aff7-13800c4be78c/003.png/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/mkKggAPD9s240bbcTTm5Aw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/BgK7KrPUy4XwRlMgD0_YSQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/rxxmgHNSKA8H3kXp-RcluA/626x0w.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -2311,11 +2306,11 @@
       "id": 6781759617,
       "name": "腕時計コレクション WatchKeep",
       "app_store_url": "https://apps.apple.com/jp/app/%E8%85%95%E6%99%82%E8%A8%88%E3%82%B3%E3%83%AC%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3-watchkeep/id6781759617?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/34/d4/a4/34d4a48d-df6d-9095-be98-02580720aead/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/07/a8/28/07a82882-098b-c0d5-7065-abb7172970af/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/89/b7/76/89b776c0-08c9-b548-f7e1-06e50a37c586/001.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/75/d3/fa/75d3fa2e-bb8e-10a7-2d60-a15fb7dfb404/002.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/06/50/5e/06505ec1-8a70-57c0-8b1f-1a992514c8df/003.png/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/uIZTMCe-cXyjAo4v5JWMzg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/OKB9YauQkGY2lkJvnc_fxw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/SmJUB4yKS5K6RURWkn-ahg/626x0w.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -2327,16 +2322,16 @@
       "primary_genre": "Lifestyle",
       "rating": 0,
       "rating_count": 0,
-      "version": "1.0",
+      "version": "1.0.1",
       "release_date": "2026-06-24T07:00:00Z",
-      "current_version_release_date": "2026-06-24T08:22:12Z",
-      "description": "腕時計コレクションを、最高の状態で。\n\n「気づいたらオーバーホールを何年も忘れていた」「久しぶりに出したら止まっていた」——大切な時計だからこそ、メンテと稼働の管理を WatchKeep におまかせください。\n\n■ ムーブメント別にメンテ周期を自動計算\n自動巻き・手巻き・クォーツ・スプリングドライブを選ぶだけ。オーバーホールや電池交換の目安を自動で算出し、近づいたらそっとお知らせします。\n\n■ 「止まってるかも」に気づける\n自動巻きはしばらく着けないとパワーリザーブが切れて止まります。最後に着けた日から「稼働中／止まってるかも」を表示。巻いて時刻を合わせるきっかけになります。\n\n■ 写真でコレクションを一覧\n愛機を撮影すると背景を自動で切り抜いて登録。あなただけのコレクションが美しく並びます。\n\n■ メンテどきを3段階で通知\n事前（7日前・前日）→当日→過ぎても点検するまで毎日そっと。大切な一本のメンテを見逃しません。\n\n■ 時計好きのための豆知識\n磁気・防水・夜間の日付変更NG・ラグ幅まで、24本のTipsとマスコット「時計くん」でコレクションがもっと楽しく。\n\n■ ウィジェット対応\nホーム画面で、メンテどきの時計と状態をひと目で確認できます。\n\n【無料版】\n・時計を3本まで登録\n・メンテどきの通知\n\n【プレミアム】\n・時計を無制限に登録\n・ワインダー・金庫・ケースでグループ分け\n・メンテ記録（種類・依頼先・費用）\n・広告非表示\n買い切り ¥3,000 または 週額 ¥200（無料トライアルなし）。サブスクリプションは期間終了の24時間前までに解約しない限り自動更新され、Apple IDに請求されます。設定からいつでも解約できます。\n\nメンテ周期やパワーリザーブはムーブメントからの一般的な目安です。実機の状態に合わせて調整してください。\n\n■ リンク\n・サポート: https://tsuzukit.com/contact/\n・利用規約: https://tsuzukit.com/legal/terms-of-service.html\n・プライバシーポリシー: https://tsuzukit.com/legal/privacy-policy.html",
-      "release_notes": null,
+      "current_version_release_date": "2026-09-20T16:37:09Z",
+      "description": "機械式の時計は、動かさないと止まります。止まった時計は、油が一箇所に溜まっていきます。\n\n何本か持っていると、気に入った一本ばかり着けて、残りは引き出しで止まったままになりがちです。オーバーホールの周期は3年から5年と言われますが、前回いつ出したかを覚えている人はほとんどいません。WatchKeepは、その二つ——稼働とメンテの周期——を預かります。\n\nムーブメント別に周期を計算\n　自動巻き、手巻き、クォーツ。方式によってメンテの間隔も、止まるまでの時間も違います。登録したムーブメントから目安を割り出し、近づいたら知らせます。\n\n止まっているかもしれない一本\n　最後に着けた日からの日数で、一本ごとの状態を表示します。パワーリザーブを超えていれば「止まってるかも」と出るので、巻くか着けるかのきっかけになります。\n\nコレクションを写真で\n　時計を撮れば背景を自動で切り抜いて登録します。文字盤とブレスレットがそのまま並びます。\n\n三段階の通知\n　メンテどきの二週間前、数日前、当日。過ぎてからは済ませるまで毎日そっと。オーバーホールの遅れは修理代に跳ね返ります。\n\n時計好きの豆知識\n　24本のTipsを、時計くんが日替わりで持ってきます。\n\nウィジェット\n　メンテどきが近い一本と、その状態をホーム画面で確認できます。\n\n〔無料版〕\n　時計を3本まで登録／メンテどきの通知\n\n〔プレミアム〕\n　登録は無制限／ワインダー・金庫・ケースでグループ分け／お手入れの記録／広告非表示\n\n　買い切り ¥3,000、または週額 ¥200（無料トライアルはありません）。週額は期間終了の24時間以上前に解約されない限り自動更新され、Apple IDに請求されます。設定からいつでも解約できます。\n\n〔ご注意〕\n　メンテの周期はムーブメントからの一般的な目安です。実際の精度や状態を見て調整し、分解整備は時計店や正規サービスにご相談ください。\n\nサポート https://tsuzukit.com/contact/\n利用規約 https://tsuzukit.com/legal/terms-of-service.html\nプライバシーポリシー https://tsuzukit.com/legal/privacy-policy.html",
+      "release_notes": "はじめての方に向けた案内を、文字盤の針が回る形に作り直しました。プレミアムの画面も保証書の様式にして、所有の記録という文脈に合わせています。",
       "content_advisory_rating": "4+",
       "minimum_os_version": "17.0",
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
-      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/34/d4/a4/34d4a48d-df6d-9095-be98-02580720aead/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/60x60bb.jpg",
+      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/07/a8/28/07a82882-098b-c0d5-7065-abb7172970af/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/60x60bb.jpg",
       "download_count": 0,
       "bundle_id": "com.tsuzukit.WatchKeep"
     },
@@ -2344,11 +2339,11 @@
       "id": 6781119303,
       "name": "革靴ケア手帳 ShoeKeep",
       "app_store_url": "https://apps.apple.com/jp/app/%E9%9D%A9%E9%9D%B4%E3%82%B1%E3%82%A2%E6%89%8B%E5%B8%B3-shoekeep/id6781119303?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/07/a7/4a/07a74a07-a6b3-1ad1-0f06-d9e379b9e061/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/85/ca/2d/85ca2d85-cd14-9597-be2e-10835c5339c3/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/93/a1/4c/93a14c9d-a864-8ce3-cba2-8a35c147a967/001.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/46/2b/3d/462b3da7-c4c0-084e-24ed-89cb3d1d7f39/002.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f5/61/e0/f561e0ee-2c6f-3ce9-2398-2b1419694895/003.png/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/zji7GZ6WqnNniO5VDoSTAA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/NLppUHk4fNqJBdEBPGpNFQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/JKSbEy6gep3IKEOZEVSzXw/626x0w.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -2360,16 +2355,16 @@
       "primary_genre": "Lifestyle",
       "rating": 4,
       "rating_count": 1,
-      "version": "1.0",
+      "version": "1.0.1",
       "release_date": "2026-06-23T07:00:00Z",
-      "current_version_release_date": "2026-06-23T14:21:43Z",
+      "current_version_release_date": "2026-09-20T16:36:59Z",
       "description": "その革靴、最後に磨いたのはいつ？\n\nShoeKeepは、革靴の「お手入れ」と「ローテーション（休息）」を管理するリマインダーアプリです。愛靴を登録するだけで、履いた回数と前回ケアからの日数から「磨きどき」を自動で計算。お手入れが近づいたら事前にお知らせし、過ぎてしまっても磨くまでやさしくリマインドします。下駄箱で眠らせて「気づいたらひび割れ」を、このアプリがなくします。\n\n■ こんな方に\n・革靴を大切に、長く履きたい\n・気づくと同じ靴ばかり履いてしまう\n・お手入れのタイミングをいつも逃す\n・下駄箱の靴をすっきり把握したい\n\n■ 主な機能\n・素材×「履いた回数・経過日数」から磨きどきを自動計算（スムースレザー/コードバン/スエードなど素材別の目安を内蔵）\n・「今日履ける靴／休息中の靴」がひと目で分かるローテーション管理（連日同じ靴はNG）\n・3段階の通知（事前→当日→過ぎたら磨くまで毎日）\n・愛靴の写真登録（背景を自動で切り抜き）\n・素材別のお手入れのコツを表示\n・下駄箱・収納場所でグループ分け（プレミアム）\n・お手入れの記録と「そろそろ磨きたい靴」の見える化（プレミアム）\n・ホーム画面ウィジェットで次のお手入れどきをひと目で\n・毎日めくれる革靴の豆知識\n\n■ 無料版とプレミアム\n無料版でも靴を3足まで登録してお手入れ管理ができます。プレミアム（買い切り／週額）なら、登録数無制限、下駄箱別管理、お手入れ記録、広告非表示が使えます。\n\n■ ご注意\nお手入れの周期や休息日数は、素材からの一般的な目安です。実際の革の状態を見て調整してください。\n\n■ リンク\n・サポート / お問い合わせ: https://tsuzukit.com/contact/\n・利用規約: https://tsuzukit.com/legal/terms-of-service.html\n・プライバシーポリシー: https://tsuzukit.com/legal/privacy-policy.html",
-      "release_notes": null,
+      "release_notes": "はじめての方に向けた案内を、下駄箱の棚に一足ずつ置いていく形に作り直しました。プレミアムの画面も靴箱のラベルの体裁にしています。",
       "content_advisory_rating": "4+",
       "minimum_os_version": "17.0",
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
-      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/07/a7/4a/07a74a07-a6b3-1ad1-0f06-d9e379b9e061/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/60x60bb.jpg",
+      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/85/ca/2d/85ca2d85-cd14-9597-be2e-10835c5339c3/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/60x60bb.jpg",
       "download_count": 0,
       "bundle_id": "com.tsuzukit.ShoeKeep"
     },
@@ -2378,11 +2373,11 @@
       "name": "CarKeep 愛車メンテ管理",
       "bundle_id": "com.tsuzukit.CarKeep",
       "app_store_url": "https://apps.apple.com/jp/app/carkeep-%E6%84%9B%E8%BB%8A%E3%83%A1%E3%83%B3%E3%83%86%E7%AE%A1%E7%90%86/id6785027821?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b9/32/f9/b932f95e-cf6c-741e-a715-7793d5367bbd/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/17/64/a5/1764a5d0-5b28-9208-e0d7-1348e2ae50b1/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/36/f7/27/36f727ac-5412-ee03-16df-7c6f10a5337e/001.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c5/00/c7/c500c7d3-0f13-2c88-a34d-f98ffb4bcf96/002.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/4e/ad/94/4ead94e6-1ec9-97d6-79e2-a5a905d67573/003.png/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/Y2JwOI1BxbwNhMx83k78nQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/FaLMZg_ZI2lgUdhH6N_V5A/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/T0Vamailmd6dJ6VEDw69KA/626x0w.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -2394,16 +2389,16 @@
       "primary_genre": "Utilities",
       "rating": 0,
       "rating_count": 0,
-      "version": "1.0",
+      "version": "1.0.1",
       "release_date": "2026-06-29T07:00:00Z",
-      "current_version_release_date": "2026-06-29T07:00:24Z",
+      "current_version_release_date": "2026-09-20T16:37:12Z",
       "description": "愛車のオイル交換、いつだっけ？タイヤローテーションは？車検はあと何日？\nCarKeepは、走行距離と周期の二軸で愛車の整備時期を管理する、ドライバーのためのメンテ手帳です。\n\n■ 走行距離×周期の二軸管理\nオイル交換やタイヤローテーションは「走行距離」で、車検やバッテリーは「期間」で。それぞれに合った軸でケア時期を自動計算。「あと約500kmでオイル交換」のように、ひと目で分かります。\n\n■ 主要な整備項目を最初から\n愛車を登録するだけで、オイル交換・タイヤローテーション・車検の主要項目を自動セット。オイルエレメント、ブレーキ、冷却水、ワイパー、エアフィルター、洗車なども追加できます。\n\n■ しつこく、やさしくお知らせ\n整備の時期が近づいたら事前に通知。過ぎてしまっても、ケアするまで毎日やさしくリマインド。「うっかり忘れ」を防ぎます。\n\n■ 愛車を写真で管理\n愛車の写真を登録（被写体だけを自動で切り抜き）。複数台の登録にも対応し、上部のスイッチャーでサッと切り替えできます。\n\n■ 整備手帳＆走行距離ログ\nいつ・何kmで・いくらで整備したかを記録。売却時の価値判断や、次回時期の予測に役立ちます。\n\n■ 今日の整備メモ\n実用的な整備の豆知識を毎日お届け。愛車をもっと長く、もっと調子よく。\n\n■ ウィジェット\nホーム画面で、次に整備が必要な愛車と残り（あと◯km／◯日）をひと目で確認。\n\n【無料版】愛車1台・ケア項目3つまで\n【プレミアム】愛車もケア項目も無制限／フル履歴／保管場所グループ／広告なし\n・買い切り ¥3,000（一度の購入でずっと使えます）\n・週額 ¥200\n\n※サブスクリプションは自動更新です。期間終了の24時間以上前に解約しない限り更新されます。購入後はApp Storeアカウントの設定から管理・解約できます。\n\n■ リンク\n・サポート: https://tsuzukit.com/contact/\n・利用規約: https://tsuzukit.com/legal/terms-of-service.html\n・プライバシーポリシー: https://tsuzukit.com/legal/privacy-policy.html",
-      "release_notes": null,
+      "release_notes": "はじめての方に向けた案内を、整備手帳の記入欄に見立てて作り直しました。プレミアムの画面も見積書の様式にして、何にいくら払うのかを一覧で確かめられるようにしています。",
       "content_advisory_rating": "4+",
       "minimum_os_version": "17.0",
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
-      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b9/32/f9/b932f95e-cf6c-741e-a715-7793d5367bbd/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/60x60bb.jpg",
+      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/17/64/a5/1764a5d0-5b28-9208-e0d7-1348e2ae50b1/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/60x60bb.jpg",
       "download_count": 0
     },
     {
@@ -2413,9 +2408,9 @@
       "app_store_url": "https://apps.apple.com/jp/app/%E3%83%9E%E3%83%83%E3%83%81%E3%83%9C%E3%83%83%E3%82%AF%E3%82%B9-%E9%9B%86%E4%B8%AD%E3%82%BF%E3%82%A4%E3%83%9E%E3%83%BC-%E7%BF%92%E6%85%A3/id6786488863?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/3b/7b/05/3b7b05ce-6b2f-fa40-062a-7946dab11804/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/3c/b0/13/3cb013ac-d338-3669-07f2-14846a0166cd/001.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b3/54/1e/b3541e3a-4171-2c2c-c069-27bee385469c/002.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/68/eb/1c/68eb1cc6-ec9f-062b-9842-e1e187a175e3/003.png/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/DSexlCNRNNIXVzxVnZcAlA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/jIef3BwakFQWPWErVueUqg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/0wrHHneZu7lAEAb6Cl7Bmw/626x0w.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -2448,12 +2443,12 @@
       "app_store_url": "https://apps.apple.com/jp/app/%E3%81%82%E3%81%AA%E3%81%9F%E3%83%AC%E3%82%B7%E3%83%BC%E3%83%88-%E3%83%AC%E3%82%B7%E3%83%BC%E3%83%88%E4%BD%9C%E6%88%90-%E8%A8%98%E9%8C%B2/id6784235708?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/85/2c/9d/852c9d7e-9a34-3893-e6ad-64124d6567dc/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/23/57/c4/2357c48b-13dd-3583-56a2-97b66ea93ad4/001.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/5e/b4/07/5eb407ac-5171-b815-2061-f3464abbfd70/002.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/20/5b/a9/205ba955-7a72-ffa3-50fc-ac838f3ea50b/003.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/97/e0/95/97e09597-8660-ee83-e6f4-1e3cc723b3b1/004.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f0/da/3a/f0da3abf-fa77-eac3-1a12-b315990c822c/005.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/74/6c/38/746c380d-eed9-0b58-5986-d37401d22825/006.png/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/a0dq4af2IIPY9j0LvxBQZA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/X_BDweZZFN1KXIj-I5hfWQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/rjDjnJjXm9vnZQZZWpEdzQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/-4gz2YSw-Ntm5VEyeBN15Q/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/iW5jINktC5pUaOOaW9JFQA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/q9G6iW8Tz1zbUVIjEqTUfQ/626x0w.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -2463,8 +2458,8 @@
         "ヘルスケア／フィットネス"
       ],
       "primary_genre": "Lifestyle",
-      "rating": 5,
-      "rating_count": 1,
+      "rating": 3.5,
+      "rating_count": 2,
       "version": "1.1.0",
       "release_date": "2026-07-31T07:00:00Z",
       "current_version_release_date": "2026-08-04T04:57:32Z",
@@ -2486,9 +2481,9 @@
       "app_store_url": "https://apps.apple.com/jp/app/oshilog-%E6%8E%A8%E3%81%97%E6%B4%BB%E3%83%8E%E3%83%BC%E3%83%88/id6788375876?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/dd/1b/e8/dd1be871-e115-ee69-80e7-a43412912a10/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9b/9f/6d/9b9f6dd1-9aa8-458c-1d6c-03f3a8fa074b/001.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ab/90/3d/ab903d2e-a52b-ce64-d576-efe08c978a8a/002.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ec/30/e9/ec30e90a-bf3d-b30a-c205-e3fd381444d7/003.png/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/zlnXwD4RkQbFTbHkyrJ0Yw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/t0odH_04lTnqEOhGgMpsmQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/kxVUQjoco3OD5seWFvlwCw/626x0w.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -2519,9 +2514,9 @@
       "app_store_url": "https://apps.apple.com/jp/app/himekuri-%E8%A8%98%E5%BF%B5%E6%97%A5%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%83%80%E3%82%A6%E3%83%B3/id6787482576?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/2b/a8/ba/2ba8baff-6c47-221a-bc89-b34c8b5d0ad5/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/97/07/ad/9707ad6c-0a59-0093-8ffe-f4cc5be38c5e/001.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a3/8f/f6/a38ff652-31eb-0744-8d58-e2117cde6248/002.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/32/50/3a/32503a75-9c4a-760d-68de-ecad46ccc785/003.png/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/cKUvwT-Q5fvwsnsrPDf_Mw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/C3Z7pJQ1PJBRyyHjH_pwyg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/61D95QMXRSnb_aSfZZkb0A/626x0w.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -2552,11 +2547,11 @@
       "app_store_url": "https://apps.apple.com/jp/app/%E3%82%B3%E3%82%A4%E3%83%B3%E3%82%B2%E3%83%BC%E3%83%A0%E3%82%B3%E3%83%AC%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3-%E3%83%AC%E3%83%88%E3%83%AD%E3%82%B2%E3%83%BC%E3%82%BB%E3%83%B3/id6788194878?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/20/be/d4/20bed43c-c3b0-626e-ae95-4e0cd0d16f6c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d3/b6/f0/d3b6f079-c924-55a2-ecc3-0bd997fd9ef8/001.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e7/17/63/e717631b-3c16-a102-c87f-eaaf483a935f/002.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/50/ee/19/50ee190e-760d-7b97-3ecb-590dbffcac7f/003.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0a/17/e5/0a17e5fe-b178-46e7-f060-bcfd6cbb2e74/004.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a3/3e/8f/a33e8f04-e014-02f9-7251-0dc1056948ff/005.png/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/d1pq8Y5XuLYygSzt0r6bCQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/ueqsAbCTRSZHNhDbJqS97w/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/SJsOG5QGSZ49_3vFqStBCg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/cJN2-oCSYSUENZo5DV2wzg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/kSPEnvltgcwwhsFHrDW_qQ/626x0w.webp"
       ],
       "ipad_screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f9/50/eb/f950eb27-7170-de21-dfd2-58f37068d80c/001.png/360x480bb.jpg",
@@ -2592,11 +2587,11 @@
       "name": "DiveKeep 器材ケア管理",
       "bundle_id": "com.tsuzukit.DiveKeep",
       "app_store_url": "https://apps.apple.com/jp/app/divekeep-%E5%99%A8%E6%9D%90%E3%82%B1%E3%82%A2%E7%AE%A1%E7%90%86/id6784748590?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ad/a2/bd/ada2bd7f-9142-c359-0407-2fe0cc04d885/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/34/e0/1e/34e01ed4-ced4-2213-0766-61b2e83ab038/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c0/23/7c/c0237c59-d6b2-ad18-0126-11f690ca520e/001.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/30/eb/88/30eb8831-6cb0-08c7-e9d0-28ed25438293/002.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/35/fc/54/35fc542c-f4ae-ed1a-6748-34f54709cd54/003.png/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/c4l10_ijrdsA6-dPjzMVLg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/uMbm7sxfY212vYVP1mCidA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/uoh1BDpVi6Kc8DzFudpaYg/626x0w.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -2608,16 +2603,16 @@
       "primary_genre": "Utilities",
       "rating": 0,
       "rating_count": 0,
-      "version": "1.0",
+      "version": "1.0.1",
       "release_date": "2026-07-01T07:00:00Z",
-      "current_version_release_date": "2026-07-01T14:15:55Z",
-      "description": "大切な器材を、いつでも安全なコンディションで。\n\n「レギュレーターのオーバーホール、いつやったっけ…」——呼吸器は命を預ける道具。手入れのタイミングを DiveKeep におまかせください。\n\n■ ダイブ数 × 期間の二軸で管理\nオーバーホールは「あと◯ダイブで」、BCD点検やダイコンの電池交換は「あと◯日で」。ダイブを記録すると総ダイブ数に反映され、本数で決まる手入れがぴたりと分かります。\n\n■ ダイブ後の真水洗いを忘れない\n海で使った器材は真水洗いが必須。器材ごとに「海で使う」を設定すれば、ダイブ後の水洗いをお知らせ。塩噛み・腐食から大切な器材を守ります。\n\n■ タンクの点検も管理\n目視点検（VIP・年1）・耐圧検査（5年）など、安全に関わる点検の周期もお知らせします。\n\n■ ケア項目をプリセット\nダイブ後の真水洗い・レギュレーターのオーバーホール・Oリング点検・BCDの点検・ダイコンの電池交換・ホース点検・タンク目視点検・タンク耐圧検査・スーツのケア・フィン/マスクのケア・全体洗浄——ダイビングの言葉そのままに、推奨周期で用意。もちろん自分好みに編集できます。\n\n■ 複数台のコレクション＆ケアログ\nレギュレーターもBCDも写真付きで登録。手入れするたびに履歴が積み上がり、費用も記録できます。\n\n■ ケアどきを3段階で通知\n近づいたら事前に→当日に→過ぎてもケアするまで毎日そっと。器材の不調は事故のもと。見逃しません。\n\n■ ダイバーのための豆知識\n洗う時はダストキャップを／Oリングは消耗品／タンク点検は規定に従って——24本のTipsと相棒ウミガメで手入れがもっと楽しく。\n\n■ ウィジェット対応\n次に手入れが必要な器材と残り（あと◯ダイブ／◯日）を、ホーム画面でひと目で確認できます。\n\n【無料版】\n・器材を1台まで登録\n・ケア項目3つまで\n・ケアの通知\n\n【プレミアム】\n・器材を無制限に登録\n・ケア項目も無制限\n・フル履歴・ダイブログ\n・保管場所でグループ分け\n・広告非表示\n買い切り ¥3,000 または 週額 ¥200（無料トライアルなし）。サブスクリプションは期間終了の24時間前までに解約しない限り自動更新され、Apple IDに請求されます。設定からいつでも解約できます。\n\nケア間隔は一般的な目安です。器材やダイビングスタイルに合わせて調整し、点検・整備は必ず認定されたサービスや指導団体の指針に従ってください。\n\n■ リンク\n・サポート: https://tsuzukit.com/contact/\n・利用規約: https://tsuzukit.com/legal/terms-of-service.html\n・プライバシーポリシー: https://tsuzukit.com/legal/privacy-policy.html",
-      "release_notes": null,
+      "current_version_release_date": "2026-09-21T13:33:17Z",
+      "description": "レギュレーターのオーバーホール、前回はいつでしたか。\n\nダイビングの器材は、調子が悪くなってから気づいたのでは遅いものです。呼吸器は水中で命を預ける道具ですし、タンクの点検には法令や指導団体の定めた周期があります。DiveKeepは、その周期を器材ごとに預かって、忘れる前に声をかけるためのアプリです。\n\n▸ 本数で来るもの、日数で来るもの\n\nダイビングの整備には二つの時計があります。レギュレーターのオーバーホールは潜った本数で近づき、BCDの点検やダイブコンピュータの電池は日数で近づく。DiveKeepは両方を別々に数えて、「あと何ダイブ」「あと何日」という形で残りを出します。ダイブを記録すれば総本数に反映され、本数で決まる整備が自動で繰り上がります。\n\n▸ 上がったら、真水\n\n海で使った器材を真水で洗うのは、ダイバーなら身体で覚えていることです。それでも、疲れて帰った日に限って忘れます。器材ごとに「海で使う」を設定しておくと、ダイブを記録した日に水洗いのお知らせが届きます。塩噛みと腐食は、放置した一日から始まります。\n\n▸ タンクの点検周期\n\n目視点検（VIP・年1回）と耐圧検査（5年）も、他の整備と並べて管理できます。安全に関わる点検を、他の項目と同じ画面で見られるようにしてあります。\n\n▸ 最初から入っている整備項目\n\nダイブ後の真水洗い、レギュレーターのオーバーホール、Oリング点検、BCDの点検、ダイブコンピュータの電池交換、ホース点検、タンク目視点検、タンク耐圧検査、スーツのケア、フィンとマスクのケア、全体洗浄。ダイビングで使う言葉そのままに、推奨周期つきで用意しています。周期も名前も、あとから自由に変えられます。\n\n▸ 器材ごとの履歴\n\nレギュレーターもBCDも、写真付きで登録できます。整備するたびに履歴が積み上がり、かかった費用も残せます。手放すときや、次の整備時期を読むときの材料になります。\n\n▸ 知らせ方は三段階\n\n近づいたら事前に。当日にもう一度。過ぎてからは、整備を済ませるまで毎日そっと。器材の不調は事故につながるので、しつこいくらいでちょうどいいと考えています。\n\n▸ ダイバーの豆知識\n\n洗うときはダストキャップを忘れずに。Oリングは消耗品。タンク点検は規定に従って。24本のTipsを、相棒のウミガメがときどき教えてくれます。\n\n▸ ウィジェット\n\n次に整備が必要な器材と、残りの本数・日数をホーム画面に出せます。アプリを開かなくても分かります。\n\n＊\n\n無料でお使いいただける範囲\n器材1台、ケア項目3つまでの登録と、整備時期の通知。\n\nプレミアムでできること\n器材とケア項目を無制限に登録。全期間の履歴とダイブログ。保管場所でのグループ分け。広告の非表示。\n\n価格は買い切り ¥3,000、または週額 ¥200（無料トライアルはありません）。週額を選ばれた場合、期間終了の24時間以上前に解約されない限り自動更新され、Apple IDに請求されます。解約はいつでも設定から行えます。\n\nアプリが示すケア間隔は一般的な目安です。器材やダイビングのスタイルに合わせて調整してください。点検と整備は、必ず認定されたサービスや指導団体の指針に従ってください。\n\nサポート https://tsuzukit.com/contact/\n利用規約 https://tsuzukit.com/legal/terms-of-service.html\nプライバシーポリシー https://tsuzukit.com/legal/privacy-policy.html",
+      "release_notes": "はじめての方に向けた案内を、バディチェックのように上から順に確認していく形に作り直しました。プレミアムの画面も、残圧計に見立てて「いま何ができて、何ができないか」が一目で分かるようにしています。",
       "content_advisory_rating": "4+",
       "minimum_os_version": "17.0",
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
-      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ad/a2/bd/ada2bd7f-9142-c359-0407-2fe0cc04d885/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/60x60bb.jpg",
+      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/34/e0/1e/34e01ed4-ced4-2213-0766-61b2e83ab038/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/60x60bb.jpg",
       "download_count": 0
     },
     {
@@ -2625,11 +2620,11 @@
       "name": "CameraKeep カメラ機材管理",
       "bundle_id": "com.tsuzukit.CameraKeep",
       "app_store_url": "https://apps.apple.com/jp/app/camerakeep-%E3%82%AB%E3%83%A1%E3%83%A9%E6%A9%9F%E6%9D%90%E7%AE%A1%E7%90%86/id6784186281?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d3/98/ac/d398ac42-b3d0-094e-f8a1-fafaeb446366/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/27/8c/06/278c0652-d947-ac5c-c430-424eeb3b97b9/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/54/eb/32/54eb32fd-63aa-d40e-3d02-934b7dd0c009/001.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/91/59/d2/9159d285-ab75-62fc-5f1e-1e18ff655a2a/002.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e3/ad/b4/e3adb4c7-82be-16e1-876b-ee9d0b53c3d9/003.png/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/BTZ10NjBmMvQnbrC7ZThKQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/smNIRx8yVtR3QlZpbR9E_g/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/3TH4EkaEcgPh26qu68i_4g/626x0w.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -2641,16 +2636,16 @@
       "primary_genre": "Utilities",
       "rating": 0,
       "rating_count": 0,
-      "version": "1.0",
+      "version": "1.0.1",
       "release_date": "2026-06-30T07:00:00Z",
-      "current_version_release_date": "2026-07-01T00:50:14Z",
-      "description": "愛機を、いつでもベストコンディションで。\n\n「センサー清掃、いつやったっけ…」「レンズにカビが…」——大切な機材だからこそ、手入れのタイミングを CameraKeep におまかせください。\n\n■ ショット数 × 期間の二軸で管理\nセンサー清掃は「あと◯ショットで」、レンズ清掃や防湿庫の湿度は「あと◯日で」。撮影を記録すると総ショット数に反映され、シャッター回数で決まる手入れがぴたりと分かります。\n\n■ 防湿庫の湿度・カビ防止\nレンズのカビは写真家の天敵。防湿庫の湿度チェックや乾燥剤の交換を周期でお知らせ。適正40〜50%をキープして、大切なレンズを守ります。\n\n■ ケア項目をプリセット\nセンサー清掃・レンズ清掃・接点清掃・防湿庫の湿度・乾燥剤交換・ファームウェア更新・バッテリー点検・防塵防滴シール点検・AF微調整・全体クリーニング——写真文化の言葉そのままに、推奨周期で用意。もちろん自分好みに編集できます。\n\n■ 複数機材のコレクション＆ケアログ\nボディもレンズも写真付きで登録。手入れするたびに履歴が積み上がり、費用も記録できます。\n\n■ ケアどきを3段階で通知\n近づいたら事前に→当日に→過ぎてもケアするまで毎日そっと。放置はカビ・故障のもと。見逃しません。\n\n■ 写真家のための豆知識\nレンズ清掃はブロアーが先／防湿庫は40〜50%／カビは後玉が画質に響く——24本のTipsとマスコット「フィルム猫シャッター」で手入れがもっと楽しく。\n\n■ ウィジェット対応\n次に手入れが必要な機材と残り（あと◯ショット／◯日）を、ホーム画面でひと目で確認できます。\n\n【無料版】\n・機材を1台まで登録\n・ケア項目3つまで\n・ケアの通知\n\n【プレミアム】\n・機材を無制限に登録\n・ケア項目も無制限\n・フル履歴・ショットログ\n・保管場所でグループ分け\n・広告非表示\n買い切り ¥3,000 または 週額 ¥200（無料トライアルなし）。サブスクリプションは期間終了の24時間前までに解約しない限り自動更新され、Apple IDに請求されます。設定からいつでも解約できます。\n\nケア間隔は一般的な目安です。撮影スタイルや好みに合わせて調整してください。\n\n■ リンク\n・サポート: https://tsuzukit.com/contact/\n・利用規約: https://tsuzukit.com/legal/terms-of-service.html\n・プライバシーポリシー: https://tsuzukit.com/legal/privacy-policy.html",
-      "release_notes": null,
+      "current_version_release_date": "2026-09-21T16:43:19Z",
+      "description": "レンズのカビは、ある日いきなり生えるわけではありません。\n\n防湿庫の湿度が上がったまま数ヶ月が過ぎ、気づいたときには後玉に白い糸のようなものが見えている。そうなってからでは、清掃に出しても画質は元に戻らないことがあります。カメラの手入れは、悪くなる前の周期管理です。CameraKeepは、その周期をボディとレンズごとに預かります。\n\n▷ シャッター回数で来る手入れ、日数で来る手入れ\n\nセンサー清掃はシャッターを切った回数で汚れていきます。一方、防湿庫の湿度チェックや乾燥剤の交換は、撮っていなくても日数で来ます。CameraKeepは両方を別々に数え、「あと何ショット」「あと何日」という形で残りを出します。撮影を記録すれば総ショット数に反映されます。\n\n▷ 防湿庫を40〜50%に保つ\n\nカビの分かれ目は湿度です。防湿庫の湿度チェックと乾燥剤の交換を周期で知らせ、適正な40〜50%を保つ手助けをします。機材の価値を守る、いちばん安い保険だと思っています。\n\n▷ 用意してある手入れの項目\n\nセンサー清掃、レンズ清掃、接点清掃、防湿庫の湿度、乾燥剤交換、ファームウェア更新、バッテリー点検、防塵防滴シールの点検、AF微調整、全体クリーニング。写真の世界で使われている言葉のまま、推奨周期つきで入っています。周期も項目名も編集できます。\n\n▷ 機材ごとの記録\n\nボディもレンズも、写真付きで登録できます。清掃や点検をするたびに履歴が残り、かかった費用も記録できます。売却や下取りのときに、手入れの履歴は値段に効きます。\n\n▷ 知らせ方\n\n近づいたら事前に。当日にもう一度。期限を過ぎてからは、済ませるまで毎日。放置がカビと故障を呼ぶので、見逃さない作りにしています。\n\n▷ 写真家の豆知識\n\nレンズ清掃はブロアーが先。防湿庫は40〜50%。カビは後玉のほうが画質に響く。24本のTipsを、フィルム猫のシャッターが日替わりで持ってきます。\n\n▷ ウィジェット\n\n次に手入れが必要な機材と、残りのショット数・日数をホーム画面に置けます。\n\n- - - - -\n\n無料の範囲\n機材1台、ケア項目3つまでの登録と、手入れ時期の通知。\n\nプレミアム\n機材とケア項目を無制限に登録。全期間の履歴。保管場所でのグループ分け。広告の非表示。\n\n料金は一度きりの ¥3,000 か、週額 ¥200 のどちらかです。無料トライアルは設けていません。週額をお選びの場合、期間が終わる24時間前までに解約されなければ自動で更新され、Apple ID に請求が立ちます。解約は設定からいつでも可能です。\n\n表示されるケア間隔は一般的な目安です。使用環境や保管状況に合わせて調整してください。\n\nサポート https://tsuzukit.com/contact/\n利用規約 https://tsuzukit.com/legal/terms-of-service.html\nプライバシーポリシー https://tsuzukit.com/legal/privacy-policy.html",
+      "release_notes": "はじめての方に向けた案内を、コンタクトシートのように1コマずつ現像されていく形に作り直しました。プレミアムの画面も露出計の見た目にして、無料の範囲が直感的に分かるようにしています。",
       "content_advisory_rating": "4+",
       "minimum_os_version": "17.0",
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
-      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d3/98/ac/d398ac42-b3d0-094e-f8a1-fafaeb446366/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/60x60bb.jpg",
+      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/27/8c/06/278c0652-d947-ac5c-c430-424eeb3b97b9/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/60x60bb.jpg",
       "download_count": 0
     },
     {
@@ -2658,11 +2653,11 @@
       "name": "BikeKeep 自転車メンテ管理",
       "bundle_id": "com.tsuzukit.BikeKeep",
       "app_store_url": "https://apps.apple.com/jp/app/bikekeep-%E8%87%AA%E8%BB%A2%E8%BB%8A%E3%83%A1%E3%83%B3%E3%83%86%E7%AE%A1%E7%90%86/id6782966275?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/3d/13/32/3d133220-fda3-47b4-1fec-7a15047ec939/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a9/2e/20/a92e2007-e4fa-3de8-885e-8763c9147dc2/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f6/22/4d/f6224da0-00bf-e992-2b11-bbf1887da7a6/001.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/65/7a/a5/657aa59f-3fb7-c0d4-0800-626a87d791b5/002.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/4f/02/db/4f02db6a-9910-23a6-305f-ccda276ee50f/003.png/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/xoGQNPnnbVCmrDKAK2mcvw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/H0PwaxbsjkT5YJiE18gD6Q/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/vmXmf-2f3BDwJvwf73zsbg/626x0w.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -2674,16 +2669,16 @@
       "primary_genre": "Utilities",
       "rating": 0,
       "rating_count": 0,
-      "version": "1.0",
+      "version": "1.0.1",
       "release_date": "2026-06-30T07:00:00Z",
-      "current_version_release_date": "2026-06-30T10:09:23Z",
-      "description": "愛車を、いつでもベストコンディションで。\n\n「そろそろチェーン注油…どのくらい走ったっけ？」——ロードバイクもクロスもMTBも、整備のタイミングを BikeKeep におまかせください。\n\n■ 走行距離 × 期間の二軸で管理\nチェーン注油は「あと20kmで」、タイヤ経年は「あと◯日で」。距離で決まる整備と、期間で決まる整備を、それぞれの軸で自動計算。ライドを記録すると総走行距離に反映され、距離ベースの整備時期がぴたりと分かります。\n\n■ パーツごとの整備項目をプリセット\nチェーン注油・交換、空気圧、タイヤ、ブレーキパッド、各種ワイヤー、バーテープ、ホイール振れ取り、BB、ドライブトレイン洗浄、全体洗車——ロードバイク文化の言葉そのままに、推奨周期で用意。もちろん自分好みに編集できます。\n\n■ 複数台のコレクション＆整備ログ\n愛車を写真付きで登録。整備するたびに履歴が積み上がり、費用も記録できます。「いつ・何を・いくらで整備したか」が一目瞭然。\n\n■ 整備どきを3段階で通知\n近づいたら事前に→当日に→過ぎても整備するまで毎日そっと。整備の放置は故障・事故のもと。見逃しません。\n\n■ サイクリストのための豆知識\nチェーンは注油より清掃／空気圧は週1チェック／出発前のABC点検まで、24本のTipsとマスコット「メカ猫レンチ」で整備がもっと楽しく。\n\n■ ウィジェット対応\nホーム画面で、次に整備が必要な愛車と残り（あと◯km／◯日）をひと目で確認できます。\n\n【無料版】\n・愛車を1台まで登録\n・整備項目3つまで\n・整備の通知\n\n【プレミアム】\n・愛車を無制限に登録\n・整備項目も無制限\n・フル履歴・走行ログ\n・保管場所でグループ分け\n・広告非表示\n買い切り ¥3,000 または 週額 ¥200（無料トライアルなし）。サブスクリプションは期間終了の24時間前までに解約しない限り自動更新され、Apple IDに請求されます。設定からいつでも解約できます。\n\n整備間隔は一般的な目安です。走行スタイルや好みに合わせて調整してください。\n\n■ リンク\n・サポート: https://tsuzukit.com/contact/\n・利用規約: https://tsuzukit.com/legal/terms-of-service.html\n・プライバシーポリシー: https://tsuzukit.com/legal/privacy-policy.html",
-      "release_notes": null,
+      "current_version_release_date": "2026-09-20T16:37:56Z",
+      "description": "走行距離は、サイクルコンピュータが覚えてくれます。\nでも「そのチェーンを最後に注油したのが何キロ地点だったか」は、誰も覚えていません。\n\nBikeKeepは、そこを引き受けるアプリです。ライドを記録すると総走行距離が積み上がり、距離で決まる整備が自動で近づいてきます。チェーン注油まであと20km、といった形で。\n\n1. 二つの軸で数える\n\n自転車の整備には、距離で来るものと期間で来るものがあります。チェーンの注油や交換、ドライブトレインの洗浄は距離。タイヤの経年やバーテープの劣化は期間。BikeKeepはこれを別々に計算し、それぞれの軸で残りを出します。\n\n2. パーツ名で並んでいる\n\nチェーンの注油と交換、空気圧、タイヤ、ブレーキパッド、各種ワイヤー、バーテープ、ホイールの振れ取り、BB、ドライブトレイン洗浄、全体洗車。ロードバイクの現場で使われている言葉のまま、推奨周期つきで入っています。周期も名前も自分好みに変えられます。\n\n3. 複数台と整備ログ\n\nロードもクロスもMTBも、写真付きで登録できます。整備するたびに履歴が積み上がり、費用も残ります。いつ・何を・いくらで整備したかが一覧になるので、コンポーネントの交換時期を読むのにも使えます。\n\n4. 三段階で知らせる\n\n近づいたら事前に。当日にもう一度。過ぎてからは整備を済ませるまで毎日。ブレーキやワイヤーの放置は事故に直結するので、しつこく出します。\n\n5. サイクリストの豆知識\n\nチェーンは注油より清掃が先。空気圧は週に一度。出発前のABC点検。24本のTipsを、メカ猫のレンチが日替わりで持ってきます。\n\n6. ウィジェット\n\n次に整備が必要な車体と、残りの距離・日数をホーム画面に出せます。\n\n＊\n\n無料版\n愛車1台、ケア項目3つまでの登録と、整備時期の通知。\n\nプレミアム\n愛車もケア項目も無制限。全期間の整備ログ。保管場所でのグループ分け。広告の非表示。\n\n買い切り ¥3,000、または週額 ¥200（無料トライアルはありません）。週額は期間終了の24時間以上前に解約されない限り自動更新され、Apple IDに請求されます。解約は設定からいつでも行えます。\n\n整備の周期は一般的な目安です。走行環境や乗り方に合わせて調整し、ブレーキなど安全に関わる部分は必要に応じてショップにご相談ください。\n\nサポート https://tsuzukit.com/contact/\n利用規約 https://tsuzukit.com/legal/terms-of-service.html\nプライバシーポリシー https://tsuzukit.com/legal/privacy-policy.html",
+      "release_notes": "はじめての方に向けた案内を、サイクルコンピュータの表示に見立てて作り直しました。ODOが回り、区間ごとに説明が進みます。プレミアムの画面もスプロケットの段で表すようにしました。",
       "content_advisory_rating": "4+",
       "minimum_os_version": "17.0",
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
-      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/3d/13/32/3d133220-fda3-47b4-1fec-7a15047ec939/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/60x60bb.jpg",
+      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a9/2e/20/a92e2007-e4fa-3de8-885e-8763c9147dc2/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/60x60bb.jpg",
       "download_count": 0
     },
     {
@@ -2693,9 +2688,9 @@
       "app_store_url": "https://apps.apple.com/jp/app/yattayo-%E3%82%84%E3%81%A3%E3%81%9F%E3%82%88%E3%83%9C%E3%83%BC%E3%83%89-todo%E3%83%AA%E3%82%B9%E3%83%88/id6791000395?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5f/4b/37/5f4b379e-eb4e-1f05-628c-b657f729d71a/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/64/75/f4/6475f486-a3e1-f548-0c4b-afca101eaee0/001.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9a/2c/80/9a2c80ca-f04d-36ab-5274-bf47d6df7bdb/002.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/29/9f/3f/299f3f32-3206-969b-c8ef-acb9ca971c32/003.png/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/CFzp7-DW9kPVwtIcY27E9Q/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/dczEUAPzjIoJ39x8-1MQdQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/neM2T_HsSq5ZfUmT2RuYeg/626x0w.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -2726,15 +2721,15 @@
       "name": "nokki - 音楽ジャーナル",
       "bundle_id": "com.tsuzukit.nokki",
       "app_store_url": "https://apps.apple.com/jp/app/nokki-%E9%9F%B3%E6%A5%BD%E3%82%B8%E3%83%A3%E3%83%BC%E3%83%8A%E3%83%AB/id6790164642?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/91/21/35/91213567-b4b3-a301-bef8-a55986691765/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ee/4f/da/ee4fda7e-bd99-5fcc-0888-946a8bb46333/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a7/49/f3/a749f340-b22e-4e70-d803-71fd3a6ea9ec/store-01.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b9/44/31/b9443169-deb4-3d1b-0991-9add26941e2e/store-02.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/9c/c6/fc/9cc6fcbe-c766-1fc4-16b9-6bdc51b6adc2/store-03.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fc/de/5b/fcde5b4e-22bc-6c5f-6785-48cf05330187/store-04.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b7/8a/9a/b78a9a3f-0b0c-9b84-854c-64cbc270ba75/store-05.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/1e/5e/a4/1e5ea408-1190-d8ed-c2f8-38df54fdd138/store-06.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c9/cd/d6/c9cdd6d8-637e-abf1-af88-9616d02626a5/store-07.png/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/n9kISI044Uvzgnw5iNyUKA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/axbSvP047FGpzOpWiuCceg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/M-KPGtOXmCYjSqxYW2QWDw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/S-YdjrKM0h35IF9zNs4MXA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/CGK9cSIvgfEXavG00Gc4nw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/YE23zJvAZ3FFtAmUpp52Dg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/XR23F1anfWC_kOtLpsrMRA/626x0w.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -2746,16 +2741,16 @@
       "primary_genre": "Music",
       "rating": 5,
       "rating_count": 1,
-      "version": "1.0.2",
+      "version": "1.4.0",
       "release_date": "2026-08-04T07:00:00Z",
-      "current_version_release_date": "2026-08-15T18:27:16Z",
+      "current_version_release_date": "2026-10-13T17:00:50Z",
       "description": "きいた音楽が、日記になる。\n\nnokki(のっき)は、きょう聴いた曲とそのときの気分を、30秒で記録できる音楽ジャーナルです。\n\n■ つかいかたは3ステップ\n1. 曲をえらぶ(Apple Musicから検索、最近聴いた曲からワンタップでも)\n2. 気分をタップ(うれしい・おだやか・エモい…9種類のパステルから)\n3. ひとことメモ(書いても書かなくても。公開・じぶんだけも選べます)\n\n■ カレンダーに思い出がたまる\n記録は自動でカレンダーに。「この日なに聴いてたっけ?」がすぐ見つかります。\n月末には、あなたの記録からAIがひと月をやさしくふりかえってくれます。\n\n■ 友達とだけ、ゆるく共有\nつながるのは、QRコードで申請しておたがいに承認した友達だけ。フォロワーも足あともありません。\n投稿ごとに「友達まで」「じぶんだけ」を選べて、友達の記録にはいいねとコメントができます。\nだれにも見せない「よるのノート」もあるので、ひとりごとみたいな記録もここに。\n\n■ 曲はその場で試聴できる\n気になった曲は再生ボタンでプレビュー。Apple Music加入者ならフル再生も。\n\n■ アバターは着せかえ式\nかみがた・おようふく・こもの・いろを組み合わせて、じぶんだけの姿に。\n\n■ nokki+(サブスクリプション)\nテーマきせかえ(パープル・ナイト)が使い放題。月額300円/年額2,800円。\n\n毎日の音楽が、あなただけのアルバムになりますように。\n黒猫といっしょに、お待ちしています。\n\n・利用規約: https://nokki-ja.web.app/terms.html\n・プライバシーポリシー: https://nokki-ja.web.app/privacy.html",
-      "release_notes": "・お知らせの通知をタップするとアプリが終了してしまう不具合を修正しました。ご不便をおかけして申し訳ありませんでした。",
+      "release_notes": "韓国語と中国語(簡体字・繁体字)に対応しました。新機能:記録からわかる音楽タイプ(16タイプ)とタイプの相性占い、友達との音楽の相性、友達に曲を贈る、ホーム画面ウィジェット、毎日のお知らせ、いま流れてる曲をさがす、プレイリストをApple Musicに保存、1年のまとめ。nokki+ は設定のいちばん上から見られます。使い方は 設定 > nokkiの使い方 から。",
       "content_advisory_rating": "4+",
       "minimum_os_version": "17.0",
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit",
-      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/91/21/35/91213567-b4b3-a301-bef8-a55986691765/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/60x60bb.jpg",
+      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ee/4f/da/ee4fda7e-bd99-5fcc-0888-946a8bb46333/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/60x60bb.jpg",
       "download_count": 0,
       "google_play_url": "https://play.google.com/store/apps/details?id=com.tsuzukit.nokki",
       "lp_url": "https://nokki-ja.web.app/"
@@ -2767,11 +2762,11 @@
       "app_store_url": "https://apps.apple.com/jp/app/monivo-%E5%A3%B0%E3%81%A7%E8%B5%B7%E3%81%93%E3%81%97%E5%90%88%E3%81%86%E3%82%A2%E3%83%A9%E3%83%BC%E3%83%A0/id6793626358?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4a/9e/b5/4a9eb5b2-7e9d-2268-3df5-dccd511322de/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9f/23/c9/9f23c909-c093-5579-b156-349b9152df47/01_hero.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/96/52/06/96520646-6cb9-6567-ec81-6d72d57c3c25/02_alarmedit.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/26/0c/af/260caf89-8e7e-3fc3-b2ee-53cc6b4d37d2/03_record.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/55/c1/e0/55c1e01c-3495-1db0-cbed-2a9e412fa3f6/04_global.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b2/0e/ce/b20ece0b-ae8a-6aae-f2c5-ce5df4a255bf/05_alarm.png/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/Vg4cPechosvO16Mej3DzEw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/US2eNLtNzaDZJm5zzqM0pQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/4ZAE86ZciVpxv7fhKEnHQg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/9LR9jmyTU-31ccB91nR2lg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Sj2N2Xni6uGiv9ftRBLTcw/626x0w.webp"
       ],
       "ipad_screenshots": [],
       "price": "無料",
@@ -2804,11 +2799,11 @@
       "app_store_url": "https://apps.apple.com/jp/app/eyemole-%E8%A6%96%E7%B7%9A%E3%81%A7%E3%83%A2%E3%82%B0%E3%83%A9%E3%81%9F%E3%81%9F%E3%81%8D/id6797057271?uo=4",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/9f/00/f9/9f00f994-ea58-30a0-6c8c-2130a61d20bd/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b2/34/30/b23430d0-7477-d9e3-fd04-240ca3dae00c/01_hands_free.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/4e/f3/46/4ef346d2-f112-3fce-308b-efaf684ed4ab/02_chick.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/50/20/a5/5020a5b2-cb36-e8f6-4ab2-b2cd782dd664/03_boss.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/70/ae/17/70ae1768-e27e-75fd-9cd6-ad512878c8b1/04_expand.png/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/4b/46/3e/4b463e8c-3425-6e8c-fa67-f7f747da8ace/05_ranking.png/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/r7GoJ6LxtTuYB7DIcU60zA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/DAZxsLl25P6C1MVVex7KCQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/fKKxSzlJmwRcdJVzzhhl1w/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/A08sikvKTSb2FvAjg_aVSA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/iiDE5k-WVjTxNTXR0HX3IA/626x0w.webp"
       ],
       "ipad_screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a0/f9/54/a0f95483-341a-eee5-3d67-d9be7edf1f15/ipad_01_hands_free.png/360x480bb.jpg",
@@ -2840,6 +2835,181 @@
       "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/9f/00/f9/9f00f994-ea58-30a0-6c8c-2130a61d20bd/AppIcon-0-0-1x_U007epad-0-1-85-220.png/60x60bb.jpg",
       "download_count": 0,
       "lp_url": "/eyemole/"
+    },
+    {
+      "id": 6812746989,
+      "name": "うんぐりっしゅ",
+      "bundle_id": "com.tsuzukit.Unglish",
+      "app_store_url": "https://apps.apple.com/jp/app/%E3%81%86%E3%82%93%E3%81%90%E3%82%8A%E3%81%A3%E3%81%97%E3%82%85/id6812746989?uo=4",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/87/cb/f4/87cbf4b7-11d0-17c0-5773-b18037bdfeaa/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/8xFjghkxFmTtzwBokYLwfw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/wHtWLHvj4d9My-mdDs9pHw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/z94pfF1-OJ_YPLWR7Cg_IA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/SwD1oxsmN-g77_mP1GAncQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/7GHsaqvPYt04qYc0SjOjPA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Xb_58QG1Ke_dWUBuhsNGpA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/9nFa3GvcX1W8DayaTWBTqA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/zMA-4g4bOYP7IEORsCJ8pQ/626x0w.webp"
+      ],
+      "ipad_screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/16/52/7f/16527f4b-d970-3708-4b0a-551601764d70/0_hero.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e8/57/2f/e8572f7c-4ad1-f5d0-f99d-e6e8764481eb/1_map.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/27/f8/98/27f898ae-eac8-2ef5-cec0-a0d6ab449f22/2_phrase.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ff/a6/1a/ffa61af0-e8f9-733a-6b5d-e48c8076fb70/3_signs.png/360x480bb.jpg"
+      ],
+      "price": "無料",
+      "currency": "JPY",
+      "genres": [
+        "教育",
+        "旅行"
+      ],
+      "primary_genre": "Education",
+      "rating": 0,
+      "rating_count": 0,
+      "version": "1.2.0",
+      "release_date": "2026-09-25T07:00:00Z",
+      "current_version_release_date": "2026-10-13T00:20:35Z",
+      "description": "旅先で使う英語だけを集めました。\n\n「学校の英語をやり直す」アプリではありません。空港のカウンター、レストランの注文、ホテルのチェックイン、道をたずねる。財布をなくしたとき、お金をくずしたいとき、帰る日のチェックアウト——旅で実際に口に出す言い方だけを、403問に絞ってあります。\n\n■ 絵と声で、意味のまま覚える\nすべての問題に絵が付いています。日本語に置き換えてから英語にするのではなく、場面と音をそのまま結びつけて覚えます。声はすべて収録済みなので、通信が無くても鳴ります。\n\n■ 1ステージ5問\nひと息で終わる長さにしてあります。行き帰りの電車や、寝る前の数分で1ステージ。出発までの数日しかなくても間に合います。\n\n■ 旅でいちばん困る「数字」\nねだん・じかん・ばんごう・ひづけ・よやく番号。thirteen と thirty、fourth と fourteenth、\"double seven\" のような、聞き取れないと本当に困るところを、聞いて当てる練習にしました。\n\n■ にた音の聞き分け 60組\nright と light、sea と she。日本語話者がつまずく音を、2択で耳に入れます。\n\n■ 旅先のかんばん 96枚\nEXIT、NO ENTRY、KEEP LEFT、OUT OF ORDER。空港・駅・店・宿で実際に立っている掲示を、その場で引ける一覧にしました。\n\n■ たびのカンペ\n覚えたかどうかに関係なく、全部の言い方が出ます。困ったら開いて、そのまま相手に見せられます。押せば読み上げます。\n\n■ 相手の英語を文字にする\n聞き取れなかったとき、「聞かせて」を押しておくと、相手の英語が画面に文字で出ます。\n\n■ 集める\n称号64種・バッジ36種。週ごとのリーグで、ほかの人とゆるく競えます。\n\n■ 記録について\n解いた記録はこの端末の中に保存されます。機種を変えるときは、アプリ内の「記録の持ち出し」から書き出して、新しい端末で読み込んでください。名札（名前・すがた・順位）は Apple／Google のアカウントに結びつくので、そのまま引き継がれます。\n\nステージを終えたあとに、広告が出ることがあります。問題を解いている最中には出ません。たびのカンペ・旅先のかんばん・あいての英語——旅先で困って開く画面にも出しません。\n\n■ 広告を消す（買わなくても全部使えます）\n「うんぐりっしゅプレミアム」を買うと、ステージのあとに出る全画面の広告が出なくなります。\n・1ヶ月 600円（自動更新）\n・1年 4,800円（自動更新。月あたり400円）\n買わないままでも、403問もたびのカンペも旅先のかんばんも、ぜんぶそのまま使えます。\n\n購入を確定したときに Apple アカウントへ請求されます。期間が終わる24時間前までに解約しないと、同じ金額で自動更新されます。解約は端末の「設定 →（自分の名前）→ サブスクリプション」からいつでもできます。\n\n利用規約: https://unglish-jp.web.app/terms/\nプライバシーポリシー: https://unglish-jp.web.app/privacy/",
+      "release_notes": "地図が増えた。街へ出る。\n\n財布をなくした。電池が切れた。お金をくずしたい。\n旅の途中でいちばん困るやつを、まとめて入れた。\n\n帰る日のぶんもある。\nチェックアウトして、おみやげを買って、空港バスに乗る。\n最後に礼を言って帰れるところまでやる。\n\n章を押しても中身が出てこなかったやつ、直した。\n狭い画面でいちばん下の答えが隠れていたのも、もう見える。",
+      "content_advisory_rating": "4+",
+      "minimum_os_version": "18.0",
+      "developer_name": "Ryo Tsudukihashi",
+      "seller_name": "TsuzuKit",
+      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/87/cb/f4/87cbf4b7-11d0-17c0-5773-b18037bdfeaa/AppIcon-0-0-1x_U007epad-0-1-85-220.png/60x60bb.jpg",
+      "download_count": 0
+    },
+    {
+      "id": 6821502120,
+      "name": "パタパタ推し時計 - 推し活の置き時計ウィジェット",
+      "bundle_id": "com.tsuzukit.PataPataOshiDokei",
+      "app_store_url": "https://apps.apple.com/jp/app/%E3%83%91%E3%82%BF%E3%83%91%E3%82%BF%E6%8E%A8%E3%81%97%E6%99%82%E8%A8%88-%E6%8E%A8%E3%81%97%E6%B4%BB%E3%81%AE%E7%BD%AE%E3%81%8D%E6%99%82%E8%A8%88%E3%82%A6%E3%82%A3%E3%82%B8%E3%82%A7%E3%83%83%E3%83%88/id6821502120?uo=4",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/7e/af/2c/7eaf2cd2-9fc8-c8f1-af78-c1726aa7eb01/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/3poT1mkAil3cNHKsKkb35Q/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Fu9qudh9NfjJkQBPPfhcbA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/5GpCN3-Aa_HSU-M6aAP3xw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/RJAu3S_0z7WPCk4E-5r1XQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/a2nV7R8ai_J2lrF_8YDjdw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/8VFpNfYctnPkbOyLIOXCsw/626x0w.webp"
+      ],
+      "ipad_screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/93/ab/14/93ab1432-43f5-41e0-15c7-4db60a3afc3f/store-01.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/87/8a/ab/878aab93-3df8-34bb-de55-f3fad01c1bd9/store-02.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/28/46/7c/28467ccf-71d2-9335-a2ca-640f91d07ce4/store-03.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/41/5b/21/415b21ea-e3ae-3998-ad96-d8cabd1d70a2/store-04.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/52/47/eb/5247ebd5-5818-33cf-2c68-3f918a06cf3a/store-05.png/360x480bb.jpg"
+      ],
+      "price": "無料",
+      "currency": "JPY",
+      "genres": [
+        "ライフスタイル",
+        "ユーティリティ"
+      ],
+      "primary_genre": "Lifestyle",
+      "rating": 0,
+      "rating_count": 0,
+      "version": "1.0.1",
+      "release_date": "2026-10-13T07:00:00Z",
+      "current_version_release_date": "2026-10-16T14:51:35Z",
+      "description": "推しの写真が、毎日見る時計になる。\n\nパタパタ推し時計は、数字ごとに推しの写真を割り当てられるフリップ時計（パタパタ時計）です。分は00〜59、時は00〜23。時刻が変わるたびに、写真と数字がひとつになったカードがパタッとめくれます。駅や空港の発着板のような、あの動きをそのまま手のひらに。\n\n■ こんな人に\n・推しの写真をただ眺めるだけじゃなく、毎日の生活に置いておきたい\n・ベッドサイドやデスクで、充電中のiPhoneを置き時計にしたい\n・ライブ、誕生日、記念日まで「あと何日」かを、いつも目に入る場所に出したい\n・推しだけでなく、ペットや家族、旅の写真でも時計を作りたい\n\n■ できること\n【数字ごとに写真を割り当てる】\n・時のカードと分のカード、それぞれの数字に好きな写真を入れられます\n・「写真をまとめて入れる」で、選んだ写真を一度にたくさんの数字へ\n・写真の位置や大きさは数字ごとに調整できます\n\n【ボードを組み立てる】\n・時計のほかに、写真がめくれるスライドショー、文字がめくれるメッセージ、イベントまでのカウントダウンを並べられます\n・マンガのコマ、発着板メッセージ、ライブまであと、誕生日カウントダウン、ペット、家族など、すぐに使えるテンプレート\n・背景の色や写真、フラップの質感、めくれる音を選べます\n\n【置き時計として使う】\n・全画面の時計モード。画面をタップすると操作ボタンが出ます\n・夜は暗く落ち着いた表示に切り替える夜間モード\n・めくれる速さと、めくれ音の大きさを調整できます\n\n【ウィジェット・スタンバイ・ロック画面】\n・ホーム画面ウィジェット（小・中・大・特大）\n・充電中に横向きで置くと出るスタンバイにも対応\n・ロック画面ウィジェットと、ロック画面に出せるカウントダウン（ライブアクティビティ）\n\n【時報・動画】\n・毎時や決めた時刻に、時計にメッセージを出す時報\n・めくれる時計を動画に書き出して、写真アプリに保存\n\n■ 写真は端末の中だけ\n選んだ写真はアプリの中にコピーされ、端末の中だけに保存されます。外へ送られることはありません。アカウント登録も不要です。\n\n■ 無料で使えます\n無料のままで、すべての機能をお試しいただけます。\n・ボード 1つ\n・写真フラップに使う写真 合計5枚\n・メッセージ 3つ、カウントダウン 1つ\n・ホーム画面ウィジェット（小）、スタンバイ、ロック画面ウィジェット\n無料版では、アプリ内に広告が表示されます（時計モードとウィジェットには表示されません）。\n\n■ スーパー推し時計プラン（買い切り）\n一度の購入で、ずっと使えます。サブスクリプションではありません。\n・ボードと写真の数の制限がなくなります\n・メッセージとカウントダウンを好きなだけ\n・ホーム画面ウィジェット（中・大・特大）\n・フラップの質感 全7種、めくれ音 全4種＋自分の音\n・時報\n・書き出した動画の透かしを消せます\n・広告が表示されなくなります\n\n利用規約: https://tsuzukit.com/legal/terms-of-service.html\nプライバシーポリシー: https://tsuzukit.com/legal/privacy-policy.html",
+      "release_notes": "時計を主役にしました。時計はいつも画面の真ん中に置き、文字は時計に添える小さな文字にしました。空港の発着板のように1文字ずつめくれる見せ方も、文字の設定で選べます。ほかのアプリから共有した写真が無料の枚数を超えないようにするなど、細かな使い心地も直しました。",
+      "content_advisory_rating": "4+",
+      "minimum_os_version": "18.0",
+      "developer_name": "Ryo Tsudukihashi",
+      "seller_name": "TsuzuKit",
+      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/7e/af/2c/7eaf2cd2-9fc8-c8f1-af78-c1726aa7eb01/AppIcon-0-0-1x_U007epad-0-1-85-220.png/60x60bb.jpg",
+      "download_count": 0
+    },
+    {
+      "id": 6754220363,
+      "name": "ZennChat: 禅の日々",
+      "bundle_id": "com.tsuzuki817.ZennChat",
+      "app_store_url": "https://apps.apple.com/jp/app/zennchat-%E7%A6%85%E3%81%AE%E6%97%A5%E3%80%85/id6754220363?uo=4",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/41/f4/59/41f4599f-9fb4-6ca8-c9e6-98b319e4b7a6/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/R_4QoyUmlaRawfacasmP4g/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/5smckRWGwFbG1Fr6P1dFxA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/4v6sUZly0Vs8EEMVhzxLVg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/jJbl31ell3zaMwunb9UfnA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/xf8B0KEjlAzQ_EiAk0RBeA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/ccpUzlbDzzar3wrrH6fNnQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/tMo-85abF3Z5FLdW53zzSw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/8UfsB4MrJyLqJstasV-s3w/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/BTslXgBQqeSw84fSWlxfow/626x0w.webp"
+      ],
+      "ipad_screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/7d/7e/58/7d7e58b9-335e-4e9d-d43d-3ccf37e5d6e7/ipad_01_home.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/20/6f/5d/206f5d52-1c97-2a31-d5a8-884880311c55/ipad_02_chat.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/cc/cc/5d/cccc5d17-387c-607c-29cb-106b283eb6c3/ipad_03_meditation.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/84/38/45/8438459a-f24f-8b62-1c11-edb1e96e62c4/ipad_04_journal.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/44/bd/65/44bd6590-08a2-a739-84ee-5c13daedca34/ipad_05_weekly.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c9/b4/96/c9b4963d-1426-c5f7-5225-d558f3e00cb2/ipad_06_plandetail.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3d/7d/ca/3d7dcafe-dcd8-0256-2e13-59248e039a5d/ipad_07_quiz.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/92/f4/22/92f4221e-13cd-2f3c-feae-f824999b3543/ipad_08_masters.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/16/70/7a/16707adb-f6f9-de35-70da-43302807468e/ipad_09_widget.png/360x480bb.jpg"
+      ],
+      "price": "無料",
+      "currency": "JPY",
+      "genres": [
+        "辞書／辞典／その他",
+        "ヘルスケア／フィットネス"
+      ],
+      "primary_genre": "Reference",
+      "rating": 0,
+      "rating_count": 0,
+      "version": "1.0.1",
+      "release_date": "2026-10-13T07:00:00Z",
+      "current_version_release_date": "2026-10-14T23:12:52Z",
+      "description": "ZennChatは、仏教の教えと瞑想を日常に取り入れるためのアプリです。\n\n「The Teaching of Buddha（仏教聖典）」を基に、毎日ひとつの一節と、その日にできる小さな実践をお届けします。読んで、坐って、書きとめる。ホームの「今日の道のり」をたどるだけで、10分ほどの習慣になります。\n\n▸ 今日の教え\n日替わりの一節に、解説と今日の実践を添えてお届けします。読み上げとホーム画面ウィジェットに対応。ウィジェットは通信がなくても毎日切り替わります。\n\n▸ 今日の道のり\n読む・行う・坐る・書く・学ぶを一本の流れにまとめ、今日やることが一目で分かります。連続日数と週の記録も残ります。\n\n▸ 禅の師に相談する\n仏教の教えに根ざしたAIに、いまの悩みを相談できます。読んでいる一節から、そのまま質問を続けることもできます。\n\n▸ 坐禅タイマー\n5分から30分まで。音声ガイドは任意で、既定は静けさのまま。坐った記録は自動で残ります。\n\n▸ 修行プラン\n慈悲・智慧・マインドフルネスなど、テーマ別の複数日プログラム。日ごとに読誦・瞑想・実践・振り返りが用意され、書いたものは後から読み返せます。\n\n▸ 善念ジャーナル\n朝の意図、日中の善い行い、夜の振り返りを記録。週次レポートで徳の傾向を振り返れます。\n\n▸ 調べる\n教え365件と、禅語・用語・作法・経典・宗派370件から引けます。「別れがつらいとき」「眠れない夜に」など、心の状態から引ける言葉集も24種類。\n\n▸ ひと呼吸おく\n気持ちが乱れたときに、ひとつの言葉と呼吸のための静かな画面を開きます。\n\n▸ 仏教クイズ\n教え・歴史・用語を160問のクイズで学べます。\n\n▸ 祖師・高僧図鑑\n40人の祖師と高僧の生涯と教えを収録。\n\n▸ 言葉を贈る\n心に残った一節を、一枚のカードにして贈れます。\n\n日本語・英語に対応しています。\n\n□ Premium\n自動更新サブスクリプション（週額／月額／年額）で、次がご利用いただけます。\n- 禅の師への相談が無制限に（無料では通算3回まで）\n- Premium限定の修行プラン9本（全30本のうち）\n- 配色テーマ4種（墨・藍・苔・暁）。無料は「和紙」\n\n課金について\n\n- 購入確定時にApple IDアカウントに課金されます\n- 期間終了の24時間以上前に解約しない限り、自動更新されます\n- iOSの設定からいつでも管理・解約できます\n- 利用規約（EULA）: https://zennchat-da0ab.web.app/legal/terms.html\n- プライバシーポリシー: https://zennchat-da0ab.web.app/legal/privacy.html\n- 特定商取引法に基づく表記: https://zennchat-da0ab.web.app/legal/tokusho.html\n\n□ 経典の引用について\n経典の本文は公益財団法人 仏教伝道協会（BDK）発行『仏教聖典』および同協会の公式英訳を、クレジット表示を条件とする許諾に基づき使用しています。解説と実践は本アプリのオリジナルです。",
+      "release_notes": "禅の師への相談が、つながらずにエラーになる不具合を直しました。ご不便をおかけして申し訳ありません。",
+      "content_advisory_rating": "17+",
+      "minimum_os_version": "17.0",
+      "developer_name": "Ryo Tsudukihashi",
+      "seller_name": "TsuzuKit",
+      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/41/f4/59/41f4599f-9fb4-6ca8-c9e6-98b319e4b7a6/AppIcon-0-0-1x_U007epad-0-1-85-220.png/60x60bb.jpg",
+      "download_count": 0
+    },
+    {
+      "id": 6811730170,
+      "name": "Bytebeat 1行の数式が音になる",
+      "bundle_id": "com.tsuzukit.Bytebeat",
+      "app_store_url": "https://apps.apple.com/jp/app/bytebeat-1%E8%A1%8C%E3%81%AE%E6%95%B0%E5%BC%8F%E3%81%8C%E9%9F%B3%E3%81%AB%E3%81%AA%E3%82%8B/id6811730170?uo=4",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/2a/40/b2/2a40b256-955b-f718-4e4f-b958016997ec/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/EpP_M2iRV4A_Ejn9_VEwsw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Xpxr-PI3AST45CzgPURmAw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/C2PIWYZxnR99xPq2j_Pe-g/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/0nseboWq7LYaMHxBPDYjQA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/1AJdV83NGb5YJ-H37ahW_Q/626x0w.webp"
+      ],
+      "ipad_screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c7/e7/d8/c7e7d8d8-fd22-1a13-1606-f3bd47e254fe/01_studio.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/06/6c/d1/066cd162-0c51-21a6-1462-65aa1f7868b1/02_keypad.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d3/55/b4/d355b401-00e7-afb6-a607-cd55d6822e55/03_library.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/49/fd/ac/49fdacc2-d855-8ef8-0e8b-403398b920e6/04_controls.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b7/9b/43/b79b43b0-e626-d013-4d49-f59b167d7cd0/05_export.png/360x480bb.jpg"
+      ],
+      "price": "無料",
+      "currency": "JPY",
+      "genres": [
+        "ミュージック",
+        "開発ツール"
+      ],
+      "primary_genre": "Music",
+      "rating": 5,
+      "rating_count": 1,
+      "version": "1.0",
+      "release_date": "2026-09-29T07:00:00Z",
+      "current_version_release_date": "2026-09-29T11:14:28Z",
+      "description": "t*(42&t>>10)\n\nこの1行が、そのまま曲になります。\n\nBytebeat は、書いた数式をそのまま音として鳴らすアプリです。t を 0 から 1 ずつ増やしながら式を評価して、返ってきた値を波形にします。シンセサイザーも、音源ファイルも、サンプリングも使いません。式が、音そのものです。\n\n■ 鳴らしたまま書き換えられる\n・再生を止めずに式を編集できます。t は止まりません\n・1文字変えるだけで、曲がまったく別のものに変わります\n・Bytebeat の式に出てくる文字だけを並べた専用キーパッド。1タップで1文字打てます\n\n■ 波形が見える\n・オシロスコープで、いま鳴っている波形をそのまま表示します\n・立ち上がりに合わせて描くので、波形が横に流れません\n・命令数とスタックの深さも出ます\n\n■ 有名な式が29個\n・2011年に viznut が公開した実験に由来する式をはじめ、29個を収録\n・気に入った式は名前をつけてお気に入りに保存できます\n\n■ 3つのモード\n・Bytebeat：結果 & 255 を 0…255 のサンプルに。元祖と同じ鳴り方です\n・Signed：符号つき8bitとして扱います\n・Floatbeat：結果をそのまま -1…1 の波形に。sin や cos が活きます\n\n■ t のはやさを変えられる\n・500〜48000Hz。元祖の Bytebeat は 8000Hz で鳴っていました\n・遅くすると低く、速くすると高くなります\n\n■ WAV に書き出せる\n・8bit 8000Hz モノラル。Bytebeat そのものの形式です\n・10秒・30秒・1分・3分から選べます\n\n■ 書ける式\n・変数は t、定数は PI と E\n・算術、ビット演算、シフト、比較、論理、三項演算子\n・sin cos tan asin acos atan abs floor ceil round sqrt exp log sign int pow min max atan2 mod\n・計算はすべて Double、ビット演算とシフトのときだけ 32bit 整数に丸めます。JavaScript の ToInt32 と同じ挙動なので、web で見つけた式をそのまま貼っても鳴ります\n\n■ 通信しません\n・アカウント登録はありません\n・広告もトラッキングもありません\n・インターネットに接続しません。飛行機の中でも動きます\n\nプリセットの多くは viznut（Ville-Matias Heikkilä）が2011年に公開した実験に由来します。",
+      "release_notes": null,
+      "content_advisory_rating": "4+",
+      "minimum_os_version": "17.0",
+      "developer_name": "Ryo Tsudukihashi",
+      "seller_name": "TsuzuKit",
+      "icon_url_60": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/2a/40/b2/2a40b256-955b-f718-4e4f-b958016997ec/AppIcon-0-0-1x_U007epad-0-1-85-220.png/60x60bb.jpg",
+      "download_count": 0
     }
   ]
 }

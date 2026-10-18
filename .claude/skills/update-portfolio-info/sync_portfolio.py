@@ -92,7 +92,10 @@ def update_html(published, developed, reviews, rating, changes):
     t = sub_count(t, r'(<div class="portfolio-stat-number">)(\d+)(</div>\s*<div class="portfolio-stat-label">Published)', published, changes, "portfolio stat Published")
     t = sub_count(t, r'(<div class="portfolio-stat-number">)([\d.]+)(</div>\s*<div class="portfolio-stat-label">Rating)', rat, changes, "portfolio stat Rating")
     t = sub_count(t, r'(<div class="portfolio-stat-number">)([\d,]+)(</div>\s*<div class="portfolio-stat-label">Reviews)', rev, changes, "portfolio stat Reviews")
-    t = sub_count(t, r'(id="filterResults">)(\d+)(件表示中)', published, changes, "portfolio filterResults")
+    t = sub_count(t, r'(content=")(\d+)( iOS apps Ryo)', published, changes, "portfolio meta(en)")
+    t = sub_count(t, r"(across )([\d,]+)( reviews)", rev, changes, "portfolio meta(en レビュー)")
+    t = sub_count(t, r'(id="filterResults"><span class="i18n-ja">)(\d+)(件表示中)', published, changes, "portfolio filterResults")
+    t = sub_count(t, r"(Showing )(\d+)( apps)", published, changes, "portfolio filterResults(en)")
     if t != before:
         open(pf, "w", encoding="utf-8").write(t)
         changes.append("   ✏️  portfolio/index.html")
@@ -100,8 +103,8 @@ def update_html(published, developed, reviews, rating, changes):
     ix = os.path.join(ROOT, "index.html")
     t = open(ix, encoding="utf-8").read()
     before = t
-    t = sub_count(t, r'(<div class="stat-number">)(\d+)(</div>\s*<div class="stat-label">公開中アプリ)', published, changes, "index 公開中アプリ")
-    t = sub_count(t, r'(<div class="stat-number">)(\d+)(\+</div>\s*<div class="stat-label">開発アプリ総数)', developed, changes, "index 開発アプリ総数")
+    # 「開発アプリ総数 100+」は手書きの値（公開＋譲渡＋停止より多い）なので触らない
+    t = sub_count(t, r'(<div class="stat-number">)(\d+)(</div>\s*<div class="stat-label"><span class="i18n-ja">公開中アプリ)', published, changes, "index 公開中アプリ")
     if t != before:
         open(ix, "w", encoding="utf-8").write(t)
         changes.append("   ✏️  index.html")
@@ -109,9 +112,10 @@ def update_html(published, developed, reviews, rating, changes):
     ab = os.path.join(ROOT, "about", "index.html")
     t = open(ab, encoding="utf-8").read()
     before = t
-    t = sub_count(t, r"(これまでに<strong>)(\d+)(個以上のiOSアプリ</strong>)", developed, changes, "about 開発個数")
-    t = sub_count(t, r"(現在<strong>)(\d+)(個</strong>がApp)", published, changes, "about 公開中個数")
-    t = sub_count(t, r"()(\d+)(個以上のアプリを開発し、多くの挑戦)", developed, changes, "about History 個数")
+    # 「100本以上作った」は手書きの値（公開＋譲渡＋停止より多い）なので触らない
+    t = sub_count(t, r"(いま)(\d+)(本がApp Store)", published, changes, "about 公開中本数")
+    t = sub_count(t, r"(and )(\d+)( of them are on the App Store)", published, changes, "about 公開中本数(en)")
+    t = sub_count(t, r'(<div class="intro-stat-number">)(\d+)(</div>\s*<div class="intro-stat-label"><span class="i18n-ja">公開アプリ)', published, changes, "about 公開アプリ")
     if t != before:
         open(ab, "w", encoding="utf-8").write(t)
         changes.append("   ✏️  about/index.html")
