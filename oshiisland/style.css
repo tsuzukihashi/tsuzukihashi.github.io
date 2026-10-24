@@ -1,0 +1,166 @@
+/* 推しアイランドのページ（紹介・よくある質問・利用規約・プライバシー・免責事項）共通 */
+/* 色はアプリとストアのスクショに合わせる。黒紫の地に、メンカラが映えるピンクと、島の縁取りのシアン */
+:root{
+  --bg:#1c0d2e; --bg2:#28133f; --panel:#2f1a4a;
+  --pink:#ff7cc4; --pink-d:#e0559f; --cyan:#6ee7ff;
+  --text:#f6efff; --dim:#c4b4dc; --mute:#8f80a8;
+  --line:rgba(255,124,196,.24);
+  --shadow:0 14px 36px rgba(0,0,0,.45);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg); color:var(--text);
+  font-family:"M PLUS Rounded 1c",-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif;
+  line-height:1.9; letter-spacing:.02em; -webkit-font-smoothing:antialiased; overflow-x:hidden;
+}
+img{display:block;max-width:100%;height:auto}
+a{color:var(--pink);text-underline-offset:.2em}
+a:hover{color:#ffb3dd}
+.wrap{width:min(1080px,92vw);margin-inline:auto}
+.narrow{width:min(760px,92vw);margin-inline:auto}
+.dot{font-family:"DotGothic16","M PLUS Rounded 1c",sans-serif;font-weight:400;letter-spacing:.04em}
+
+/* ヘッダー */
+header{position:sticky;top:0;z-index:20;backdrop-filter:blur(10px);
+  background:rgba(28,13,46,.82);border-bottom:1px solid var(--line)}
+.hbar{display:flex;align-items:center;gap:1rem;padding:.6rem 0}
+.hbrand{display:flex;align-items:center;gap:.6rem;color:var(--text);text-decoration:none;white-space:nowrap;font-size:1.05rem}
+.hbrand img{width:32px;height:32px;border-radius:8px}
+.hnav{margin-inline-start:auto;min-width:0;display:flex;gap:1.1rem;overflow-x:auto;scrollbar-width:none}
+.hnav::-webkit-scrollbar{display:none}
+.hnav a{color:var(--dim);text-decoration:none;font-size:.86rem;font-weight:500;white-space:nowrap}
+.hnav a:hover,.hnav a[aria-current="page"]{color:var(--pink)}
+
+/* ストアへのボタン */
+.btn{display:inline-flex;align-items:center;gap:.6rem;padding:.85rem 1.6rem;border-radius:999px;
+  font-weight:800;text-decoration:none;color:#2a0f24;
+  background:linear-gradient(135deg,#ffa6d7,var(--pink) 55%,var(--pink-d));
+  box-shadow:0 8px 22px rgba(255,124,196,.3)}
+.btn:hover{color:#2a0f24;filter:brightness(1.06)}
+.btn svg{width:20px;height:20px;flex:none}
+.btn.ghost{background:transparent;color:var(--pink);border:1px solid var(--line);box-shadow:none}
+
+/* 紹介ページ */
+.hero{padding:3.6rem 0 3rem}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.8fr);gap:3rem;align-items:center}
+.appname{display:flex;align-items:center;gap:.8rem;margin-bottom:1.4rem}
+.appname img{width:64px;height:64px;border-radius:15px;box-shadow:var(--shadow)}
+.appname span{font-size:1.15rem;font-weight:800}
+.appname small{display:block;font-size:.78rem;color:var(--mute);font-weight:500}
+h1{font-size:clamp(2.2rem,6.4vw,3.6rem);line-height:1.25}
+h1 em{font-style:normal;color:var(--pink);display:block}
+.lead{color:var(--dim);font-size:1.02rem;margin:1.3rem 0 1.8rem;max-width:32em}
+.cta-note{margin-top:.9rem;font-size:.84rem;color:var(--mute)}
+.hero-shot{max-width:300px;margin-inline:auto}
+/* スクショは素の画面なので、端末の縁を CSS で付ける */
+.hero-shot img,.feat img{border-radius:30px;border:7px solid #0b0613;box-shadow:0 0 0 1px rgba(255,255,255,.12),var(--shadow)}
+
+section{padding:3.4rem 0;scroll-margin-top:80px}
+.shead{text-align:center;margin-bottom:2.2rem}
+.shead .en{font-size:.74rem;letter-spacing:.3em;color:var(--cyan)}
+.shead h2{font-size:clamp(1.45rem,4.2vw,2rem);margin-top:.4rem;line-height:1.5}
+.shead p{color:var(--dim);font-size:.94rem;margin-top:.6rem}
+
+.feats{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem}
+.feat{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:1.2rem 1rem 1.4rem}
+.feat img{max-width:220px;margin:0 auto 1.1rem;border-radius:24px;border-width:6px}
+.feat h3{font-size:1.02rem;line-height:1.55;margin-bottom:.5rem}
+.feat p{font-size:.88rem;color:var(--dim)}
+
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;counter-reset:step}
+.step{background:var(--bg2);border:1px solid var(--line);border-radius:16px;padding:1.3rem 1.2rem}
+.step::before{counter-increment:step;content:counter(step);display:grid;place-items:center;
+  width:34px;height:34px;border-radius:9px;margin-bottom:.8rem;
+  font-family:"DotGothic16",sans-serif;color:#2a0f24;background:var(--cyan)}
+.step h3{font-size:1rem;margin-bottom:.4rem}
+.step p{font-size:.88rem;color:var(--dim)}
+
+.two{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}
+.box{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:1.5rem 1.4rem}
+.box h3{font-size:1.05rem;margin-bottom:.8rem}
+.box p,.box li{font-size:.9rem;color:var(--dim)}
+.box ul{list-style:none}
+.box li{padding-inline-start:1.2em;position:relative;margin-bottom:.45rem}
+.box li::before{content:"■";position:absolute;inset-inline-start:0;top:.05em;font-size:.6rem;color:var(--pink)}
+.box.note{border-color:rgba(110,231,255,.35)}
+.box.note li::before{color:var(--cyan)}
+
+.endcta{text-align:center;background:var(--bg2);border:1px solid var(--line);border-radius:22px;padding:2.6rem 1.4rem}
+.endcta h2{font-size:clamp(1.3rem,4vw,1.8rem);line-height:1.5}
+.endcta p{color:var(--dim);font-size:.94rem;margin:.8rem auto 1.6rem;max-width:32em}
+.endcta .btn.ghost{margin-inline-start:.6rem}
+
+/* 文書ページ */
+.doc{padding:2.8rem 0 3.6rem}
+.doc-head{border-bottom:1px solid var(--line);padding-bottom:1.3rem;margin-bottom:2.2rem}
+.doc-head .en{font-size:.72rem;letter-spacing:.3em;color:var(--cyan)}
+.doc-head h1{font-size:clamp(1.5rem,5vw,2.1rem);margin:.4rem 0 .6rem}
+.doc-head .meta{font-size:.82rem;color:var(--mute)}
+.lede{background:var(--bg2);border:1px solid var(--line);border-inline-start:4px solid var(--pink);
+  border-radius:10px;padding:1.1rem 1.3rem;margin-bottom:2.2rem;font-size:.94rem}
+.doc h2{font-size:1.1rem;margin:2.4rem 0 .8rem;padding-inline-start:.7rem;border-inline-start:4px solid var(--pink);line-height:1.6}
+.doc h3{font-size:.98rem;margin:1.6rem 0 .5rem}
+.doc p{font-size:.94rem;color:var(--dim);margin-bottom:.9rem}
+.doc strong{color:var(--text)}
+.doc ul,.doc ol{margin-block:.3rem 1.1rem;margin-inline:1.3rem 0;font-size:.94rem;color:var(--dim)}
+.doc li{margin-bottom:.45rem}
+.doc table{width:100%;border-collapse:collapse;font-size:.9rem;margin:.6rem 0 1.4rem;table-layout:fixed}
+.doc th,.doc td{padding:.6rem .8rem;border:1px solid rgba(255,124,196,.16);text-align:start;vertical-align:top;
+  overflow-wrap:anywhere;line-height:1.7}
+.doc th{background:rgba(255,124,196,.08);color:var(--text);font-weight:700;width:32%}
+.doc td{color:var(--dim)}
+.callout{border:1px solid rgba(110,231,255,.3);border-radius:10px;padding:1rem 1.2rem;margin:1.1rem 0;
+  background:rgba(110,231,255,.06);font-size:.92rem}
+.callout b{color:var(--cyan)}
+.contact{background:var(--bg2);border:1px solid var(--line);border-radius:14px;padding:1.4rem 1.3rem;margin-top:2.4rem}
+.contact h2{margin-top:0}
+
+/* よくある質問 */
+.faq-group{margin-bottom:2.2rem}
+.faq-group>h2{font-size:1.05rem;margin:0 0 .9rem;color:var(--cyan)}
+details{background:var(--panel);border:1px solid var(--line);border-radius:12px;margin-bottom:.7rem}
+summary{cursor:pointer;padding-block:.95rem;padding-inline:2.8rem 1.1rem;font-weight:700;font-size:.95rem;list-style:none;position:relative;line-height:1.6}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"Q";position:absolute;inset-inline-start:1.1rem;top:.95rem;color:var(--pink);font-family:"DotGothic16",sans-serif}
+details[open] summary{border-bottom:1px solid var(--line)}
+details .a{padding:.95rem 1.1rem;font-size:.92rem;color:var(--dim)}
+details .a p{margin-bottom:.6rem}
+details .a p:last-child{margin-bottom:0}
+details .a strong{color:var(--text)}
+
+footer{border-top:1px solid var(--line);margin-top:2rem;padding:2.2rem 0 3rem;text-align:center}
+footer nav{display:flex;flex-wrap:wrap;justify-content:center;gap:.4rem 1.3rem;margin-bottom:1rem}
+footer a{color:var(--dim);text-decoration:none;font-size:.85rem}
+footer a:hover{color:var(--pink)}
+footer p{font-size:.78rem;color:var(--mute)}
+footer .tm{font-size:.74rem;margin-top:.6rem;line-height:1.7}
+.lang-picker{margin:0 0 1.1rem}
+.lang-picker select{font:inherit;font-size:.85rem;color:var(--text);background:var(--panel);
+  border:1px solid var(--line);border-radius:999px;padding:.45rem 1rem;cursor:pointer}
+
+/* 日本語の書体は漢字を日本の字形で出すので、中国語・韓国語ではその言語の書体を先に使う */
+html[lang="zh-Hans"] body{font-family:"PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif}
+html[lang="zh-Hant"] body{font-family:"PingFang TC","Microsoft JhengHei","Noto Sans TC",sans-serif}
+html[lang="ko"] body{font-family:"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif}
+html[lang="zh-Hans"] .dot,html[lang="zh-Hant"] .dot,html[lang="ko"] .dot{font-family:inherit}
+
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr;gap:2.2rem}
+  .hero-shot{max-width:250px}
+  .feats{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:1fr}
+  .two{grid-template-columns:1fr}
+}
+/* 狭い画面ではナビをロゴの下の行に落とす（重なりを防ぐ） */
+@media (max-width:760px){
+  .hbar{flex-wrap:wrap;gap:.2rem 1rem;padding:.5rem 0 .3rem}
+  .hnav{margin-inline-start:0;width:100%;gap:1rem;padding:.15rem 0 .25rem}
+  .hero{padding:2.2rem 0 2.4rem}
+  .doc th{width:38%}
+}
+@media (max-width:520px){
+  .feats{grid-template-columns:1fr}
+  .feat img{max-width:200px}
+  .endcta .btn.ghost{margin:.8rem 0 0}
+}
