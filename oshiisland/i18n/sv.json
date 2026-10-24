@@ -70,7 +70,7 @@
  "faq.069": "Jag svepte bort min favorit på låsskärmen och nu är den borta",
  "faq.070": "Om du sveper bort din favorit på låsskärmen avslutas även visningen i Dynamic Island. Öppna appen så kommer samma favorit tillbaka. Detsamma gäller efter att du har startat om din iPhone.",
  "faq.071": "Animationen stannar och blir en stillbild",
- "faq.072": "Till och med version 1.4.0 fanns en bugg som gjorde att animationen slutade spelas upp när man en gång hade gått tillbaka till appen. Den är åtgärdad i 1.4.1. Uppdatera appen i App Store och ställ sedan in din favorit på Dynamic Island igen.",
+ "faq.072": "När du har stängt appen spelas animationen bara upp under den korta tid som iOS tillåter, och sedan blir den stående på en stillbild. Enligt de nuvarande reglerna i iOS kan en app inte hålla en animation igång medan den är stängd. Öppna appen och stäng den igen, så spelas den upp en liten stund till.",
  "faq.073": "Jag vill avsluta visningen eller stänga av den ett tag",
  "faq.074": "Tryck på ”Avsluta” i fältet ”Dynamic Island körs” högst upp på appens startskärm. Du kan också trycka länge på Dynamic Island för att expandera den och trycka på × uppe till höger.",
  "faq.075": "En favorit som du själv har avslutat kommer inte tillbaka av sig själv när du öppnar appen. Om du vill visa den igen trycker du på din favorit och väljer ”Ställ in på Dynamic Island”.",
@@ -221,7 +221,7 @@
  "disclaimer.220": "Energisparinställningar eller iOS-uppdateringar kan ändra hur visningen eller animationen fungerar",
  "disclaimer.221": "Jag kan inte ta ansvar för den tid då din favorit inte visas av sådana skäl.",
  "disclaimer.222": "2. Animation",
- "disclaimer.223": "Medan Appen är stängd körs animationer inom de gränser som iOS tillåter. Eftersom iOS begränsar hur länge Appen kan fortsätta att köras kan bildrutorna växla långsammare eller stanna.",
+ "disclaimer.223": "Medan Appen är stängd körs animationer bara under den korta tid som iOS tillåter, och visas sedan som en stillbild. Enligt de nuvarande reglerna i iOS kan Appen inte hålla dem igång medan den är stängd.",
  "disclaimer.224": "3. Pixelkonst av foton",
  "disclaimer.225": "Bakgrunden tas bort automatiskt av en funktion i iPhone, så den kan ta bort delar du ville behålla eller lämna kvar delar du ville ta bort. Om resultatet inte blir som du vill kan du stänga av ”Ta bort bakgrund automatiskt”.",
  "disclaimer.226": "4. Rättigheter till favoriterna du skapar",
@@ -236,5 +236,6 @@
  "disclaimer.235": "Appen är utvecklad av en privatperson och har ingen koppling till Apple Inc. iPhone, Dynamic Island, App Store och AirDrop är varumärken som tillhör Apple Inc.",
  "disclaimer.236": "9. Den här webbplatsen",
  "disclaimer.237": "Innehållet på den här webbplatsen återspeglar Appen vid tidpunkten då det skrevs. Uppdateringar av Appen kan ändra skärmar eller steg så att de inte längre stämmer med beskrivningarna här.",
- "disclaimer.238": "Om du stöter på problem, titta först i <a href=\"faq.html\">Vanliga frågor</a>. Om det inte hjälper kan du använda <a href=\"https://tsuzukit.com/contact/\">kontaktsidan</a> eller mejla ryo.tsuzukihashi@tsuzukit.com."
+ "disclaimer.238": "Om du stöter på problem, titta först i <a href=\"faq.html\">Vanliga frågor</a>. Om det inte hjälper kan du använda <a href=\"https://tsuzukit.com/contact/\">kontaktsidan</a> eller mejla ryo.tsuzukihashi@tsuzukit.com.",
+ "index.239": "Animationer spelas bara upp en kort stund direkt efter att du har stängt appen. Sedan blir din favorit stående på en stillbild."
 }

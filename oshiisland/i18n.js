@@ -17,7 +17,7 @@
  */
 (function () {
     var KEY = 'oshiisland-lang';
-    var VERSION = '1';
+    var VERSION = '2';
     var LANGS = {
         'ja': '日本語', 'en': 'English', 'ar': 'العربية', 'ca': 'Català', 'cs': 'Čeština',
         'da': 'Dansk', 'de': 'Deutsch', 'el': 'Ελληνικά', 'es': 'Español (España)',

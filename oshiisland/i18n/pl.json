@@ -70,7 +70,7 @@
  "faq.069": "Ulubieniec zniknął po przesunięciu go na ekranie blokady",
  "faq.070": "Przesunięcie ulubieńca na ekranie blokady kończy też wyświetlanie w Dynamic Island. Otwórz aplikację, a ten sam ulubieniec wróci. Tak samo jest po ponownym uruchomieniu iPhone’a.",
  "faq.071": "Animacja się zatrzymuje i zmienia w nieruchomy obraz",
- "faq.072": "Do wersji 1.4.0 występował błąd, przez który po powrocie do aplikacji animacja przestawała się odtwarzać. Zostało to poprawione w 1.4.1. Zaktualizuj aplikację w App Store, a następnie ponownie umieść ulubieńca w Dynamic Island.",
+ "faq.072": "Po zamknięciu aplikacji animacja odtwarza się tylko przez krótki czas, na jaki pozwala iOS, a potem zostaje na nieruchomym obrazie. Zgodnie z obecnymi zasadami iOS aplikacja nie może utrzymywać animacji, gdy jest zamknięta. Otwórz aplikację i zamknij ją ponownie, a animacja znów będzie się przez chwilę poruszać.",
  "faq.073": "Chcę zakończyć wyświetlanie albo wyłączyć je na jakiś czas",
  "faq.074": "Na ekranie głównym aplikacji stuknij „Zakończ” na pasku „Dynamic Island aktywny” u góry. Możesz też przytrzymać Dynamic Island, aby ją rozwinąć, i stuknąć × w prawym górnym rogu.",
  "faq.075": "Ulubieniec, którego wyświetlanie zakończysz samodzielnie, nie wróci sam po otwarciu aplikacji. Aby znowu go wyświetlić, stuknij ulubieńca i wybierz „Ustaw jako Dynamic Island”.",
@@ -221,7 +221,7 @@
  "disclaimer.220": "Ustawienia oszczędzania energii lub aktualizacje iOS mogą zmienić sposób działania wyświetlania lub animacji",
  "disclaimer.221": "Nie mogę ponosić odpowiedzialności za czas, w którym ulubieniec nie jest wyświetlany z takich powodów.",
  "disclaimer.222": "2. Animacja",
- "disclaimer.223": "Gdy Aplikacja jest zamknięta, animacje działają w granicach dopuszczanych przez iOS. Ponieważ iOS ogranicza czas działania Aplikacji, klatki mogą zmieniać się wolniej lub się zatrzymać.",
+ "disclaimer.223": "Gdy Aplikacja jest zamknięta, animacje działają tylko przez krótki czas, na jaki pozwala iOS, a potem wyświetlają się jako nieruchomy obraz. Zgodnie z obecnymi zasadami iOS Aplikacja nie może utrzymywać ich działania, gdy jest zamknięta.",
  "disclaimer.224": "3. Tworzenie pixel artu ze zdjęć",
  "disclaimer.225": "Tło jest usuwane automatycznie przez funkcję iPhone’a, więc mogą zostać usunięte fragmenty, które chcesz zachować, lub pozostawione te, które chcesz usunąć. Jeśli wynik Ci nie odpowiada, wyłącz „Automatycznie usuń tło”.",
  "disclaimer.226": "4. Prawa do tworzonych ulubieńców",
@@ -236,5 +236,6 @@
  "disclaimer.235": "Aplikacja została stworzona przez osobę prywatną i nie jest powiązana z Apple Inc. iPhone, Dynamic Island, App Store i AirDrop są znakami towarowymi Apple Inc.",
  "disclaimer.236": "9. Ta witryna",
  "disclaimer.237": "Treść tej witryny odzwierciedla stan Aplikacji w chwili pisania. Aktualizacje Aplikacji mogą zmienić ekrany lub kroki tak, że przestaną odpowiadać opisom tutaj.",
- "disclaimer.238": "Jeśli napotkasz problem, najpierw zajrzyj do <a href=\"faq.html\">FAQ</a>. Jeśli to nie pomoże, skorzystaj ze <a href=\"https://tsuzukit.com/contact/\">strony kontaktowej</a> lub napisz na adres ryo.tsuzukihashi@tsuzukit.com."
+ "disclaimer.238": "Jeśli napotkasz problem, najpierw zajrzyj do <a href=\"faq.html\">FAQ</a>. Jeśli to nie pomoże, skorzystaj ze <a href=\"https://tsuzukit.com/contact/\">strony kontaktowej</a> lub napisz na adres ryo.tsuzukihashi@tsuzukit.com.",
+ "index.239": "Animacje poruszają się tylko przez chwilę zaraz po zamknięciu aplikacji. Potem ulubieniec zostaje na nieruchomym obrazie."
 }

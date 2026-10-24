@@ -70,7 +70,7 @@
  "faq.069": "Afastei o meu favorito no ecrã bloqueado e agora não aparece",
  "faq.070": "Se deslizar o seu favorito para o lado no ecrã bloqueado, a apresentação na Dynamic Island também termina. Abra a app e o mesmo favorito volta a aparecer. O mesmo acontece depois de reiniciar o iPhone.",
  "faq.071": "A animação para a meio e fica uma imagem fixa",
- "faq.072": "Até à versão 1.4.0, havia um erro que fazia com que, depois de voltar uma vez à app, a animação deixasse de funcionar. Foi corrigido na 1.4.1. Atualize a app na App Store e volte a pôr o seu favorito na Dynamic Island.",
+ "faq.072": "Depois de fechar a app, a animação só se mexe durante o pouco tempo que o iOS permite e depois fica numa imagem fixa. Com as regras atuais do iOS, uma app não consegue manter uma animação a funcionar enquanto está fechada. Se abrir a app e a voltar a fechar, a animação volta a mexer-se durante uns momentos.",
  "faq.073": "Quero terminar a apresentação ou desligá-la durante algum tempo",
  "faq.074": "No ecrã principal da app, toque em Terminar na barra Dynamic Island Ativo, no topo. Também pode manter premida a Dynamic Island para a expandir e tocar no × no canto superior direito.",
  "faq.075": "Um favorito que terminou por si não volta sozinho quando abrir a app. Para o mostrar de novo, toque no seu favorito e escolha Definir no Dynamic Island.",
@@ -221,7 +221,7 @@
  "disclaimer.220": "As definições de poupança de energia ou as atualizações do iOS podem alterar o comportamento da apresentação ou da animação",
  "disclaimer.221": "Não posso assumir responsabilidade pelo tempo em que o seu favorito não aparece por motivos como estes.",
  "disclaimer.222": "2. Animação",
- "disclaimer.223": "Com a App fechada, as animações funcionam dentro dos limites que o iOS permite. Como o iOS limita o tempo durante o qual a App pode continuar ativa, os fotogramas podem avançar mais devagar ou parar.",
+ "disclaimer.223": "Com a App fechada, as animações só funcionam durante o pouco tempo que o iOS permite e depois são apresentadas como uma imagem fixa. Com as regras atuais do iOS, a App não consegue mantê-las a funcionar enquanto está fechada.",
  "disclaimer.224": "3. Criação de pixel art a partir de fotografias",
  "disclaimer.225": "A remoção do fundo é feita automaticamente por uma funcionalidade do iPhone, pelo que pode remover partes que queria manter ou deixar partes que queria remover. Se o resultado não for o que pretende, desative Remover fundo automaticamente.",
  "disclaimer.226": "4. Direitos sobre os favoritos que cria",
@@ -236,5 +236,6 @@
  "disclaimer.235": "A App foi desenvolvida por um particular e não tem qualquer ligação à Apple Inc. iPhone, Dynamic Island, App Store e AirDrop são marcas comerciais da Apple Inc.",
  "disclaimer.236": "9. Este site",
  "disclaimer.237": "O conteúdo deste site reflete a App no momento em que foi escrito. As atualizações da App podem alterar ecrãs ou passos, que assim podem deixar de corresponder às descrições aqui apresentadas.",
- "disclaimer.238": "Se tiver algum problema, consulte primeiro as <a href=\"faq.html\">Perguntas frequentes</a>. Se não ajudar, use a <a href=\"https://tsuzukit.com/contact/\">página de contacto</a> ou envie um e-mail para ryo.tsuzukihashi@tsuzukit.com."
+ "disclaimer.238": "Se tiver algum problema, consulte primeiro as <a href=\"faq.html\">Perguntas frequentes</a>. Se não ajudar, use a <a href=\"https://tsuzukit.com/contact/\">página de contacto</a> ou envie um e-mail para ryo.tsuzukihashi@tsuzukit.com.",
+ "index.239": "As animações só se mexem durante pouco tempo, logo depois de fechar a app. Depois disso, o seu favorito fica numa imagem fixa."
 }

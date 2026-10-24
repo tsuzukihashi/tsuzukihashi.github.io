@@ -70,7 +70,7 @@
  "faq.069": "Aku menggeser idolaku di Layar Terkunci, dan sekarang dia tidak muncul lagi",
  "faq.070": "Menggeser idolamu ke samping di Layar Terkunci juga mengakhiri tampilan di Dynamic Island. Buka aplikasinya, dan idola yang sama muncul lagi. Begitu juga setelah iPhone dinyalakan ulang.",
  "faq.071": "Animasinya berhenti dan jadi gambar diam",
- "faq.072": "Hingga versi 1.4.0, ada bug yang membuat animasi berhenti diputar setelah kamu kembali ke aplikasi sekali. Bug ini sudah diperbaiki di 1.4.1. Perbarui aplikasi dari App Store, lalu pasang lagi idolamu di Dynamic Island.",
+ "faq.072": "Setelah aplikasi ditutup, animasi hanya bergerak selama waktu singkat yang diizinkan iOS, lalu tetap menjadi gambar diam. Dengan aturan iOS saat ini, aplikasi tidak bisa terus menjalankan animasi saat sedang ditutup. Buka aplikasinya lalu tutup lagi, dan animasinya akan bergerak lagi sebentar.",
  "faq.073": "Aku ingin menghentikan tampilan, atau mematikannya sementara",
  "faq.074": "Di layar beranda aplikasi, ketuk Selesai pada bilah Dynamic Island Aktif di bagian atas. Kamu juga bisa menekan lama Dynamic Island untuk meluaskannya, lalu ketuk × di kanan atas.",
  "faq.075": "Idola yang kamu hentikan sendiri tidak akan kembali dengan sendirinya saat kamu membuka aplikasi. Untuk menampilkannya lagi, ketuk idolamu dan pilih Atur ke Dynamic Island.",
@@ -221,7 +221,7 @@
  "disclaimer.220": "Pengaturan hemat daya atau pembaruan iOS dapat mengubah perilaku tampilan atau animasi",
  "disclaimer.221": "Saya tidak dapat bertanggung jawab atas waktu saat idola Anda tidak tampil karena alasan seperti ini.",
  "disclaimer.222": "2. Animasi",
- "disclaimer.223": "Saat Aplikasi ditutup, animasi berjalan dalam batas yang diizinkan iOS. Karena iOS membatasi berapa lama Aplikasi dapat terus berjalan, pergantian frame bisa melambat atau berhenti.",
+ "disclaimer.223": "Saat Aplikasi ditutup, animasi hanya berjalan selama waktu singkat yang diizinkan iOS, lalu ditampilkan sebagai gambar diam. Dengan aturan iOS saat ini, Aplikasi tidak dapat terus menjalankannya saat sedang ditutup.",
  "disclaimer.224": "3. Membuat pixel art dari foto",
  "disclaimer.225": "Penghapusan latar dilakukan secara otomatis oleh fitur iPhone, sehingga bagian yang ingin Anda pertahankan bisa ikut terhapus atau bagian yang ingin dihapus bisa tertinggal. Jika hasilnya tidak sesuai keinginan, matikan Hapus latar secara otomatis.",
  "disclaimer.226": "4. Hak atas idola yang Anda buat",
@@ -236,5 +236,6 @@
  "disclaimer.235": "Aplikasi ini dikembangkan oleh perorangan dan tidak berafiliasi dengan Apple Inc. iPhone, Dynamic Island, App Store, dan AirDrop adalah merek dagang Apple Inc.",
  "disclaimer.236": "9. Situs web ini",
  "disclaimer.237": "Isi situs ini mencerminkan Aplikasi pada saat ditulis. Pembaruan Aplikasi dapat mengubah layar atau langkah sehingga tidak lagi sesuai dengan penjelasan di sini.",
- "disclaimer.238": "Jika Anda mengalami masalah, silakan lihat <a href=\"faq.html\">FAQ</a> terlebih dahulu. Jika masih belum teratasi, gunakan <a href=\"https://tsuzukit.com/contact/\">halaman kontak</a> atau kirim email ke ryo.tsuzukihashi@tsuzukit.com."
+ "disclaimer.238": "Jika Anda mengalami masalah, silakan lihat <a href=\"faq.html\">FAQ</a> terlebih dahulu. Jika masih belum teratasi, gunakan <a href=\"https://tsuzukit.com/contact/\">halaman kontak</a> atau kirim email ke ryo.tsuzukihashi@tsuzukit.com.",
+ "index.239": "Animasi hanya bergerak sebentar tepat setelah kamu menutup aplikasi. Setelah itu, idolamu tetap menjadi gambar diam."
 }

@@ -70,7 +70,7 @@
  "faq.069": "Ho scorso via il mio preferito nella schermata di blocco ed è sparito",
  "faq.070": "Scorrere via il tuo preferito nella schermata di blocco interrompe anche la visualizzazione nella Dynamic Island. Apri l'app e torna lo stesso preferito. Lo stesso vale dopo aver riavviato l'iPhone.",
  "faq.071": "L'animazione si ferma e diventa un'immagine fissa",
- "faq.072": "Fino alla versione 1.4.0 c'era un bug per cui, dopo essere tornati nell'app, l'animazione smetteva di essere riprodotta. È stato corretto nella 1.4.1. Aggiorna l'app da App Store, poi imposta di nuovo il tuo preferito nella Dynamic Island.",
+ "faq.072": "Dopo aver chiuso l'app, l'animazione si muove solo per il breve tempo consentito da iOS, poi resta ferma su un'immagine fissa. Con le regole attuali di iOS, un'app non può tenere in movimento un'animazione mentre è chiusa. Se apri l'app e la richiudi, l'animazione si muove di nuovo per un po'.",
  "faq.073": "Voglio interrompere la visualizzazione o disattivarla per un po'",
  "faq.074": "Nella schermata principale dell'app, tocca “Fine” sulla barra “Dynamic Island attivo” in alto. Puoi anche tenere premuta la Dynamic Island per espanderla e toccare la × in alto a destra.",
  "faq.075": "Un preferito che hai interrotto tu non torna da solo quando apri l'app. Per mostrarlo di nuovo, tocca il tuo preferito e scegli “Imposta su Dynamic Island”.",
@@ -221,7 +221,7 @@
  "disclaimer.220": "Le impostazioni di risparmio energetico o gli aggiornamenti di iOS possono cambiare il comportamento della visualizzazione o dell'animazione",
  "disclaimer.221": "Non posso essere ritenuto responsabile per il tempo in cui il tuo preferito non viene mostrato per motivi come questi.",
  "disclaimer.222": "2. Animazione",
- "disclaimer.223": "Mentre l'App è chiusa, le animazioni vengono riprodotte entro i limiti consentiti da iOS. Poiché iOS limita per quanto tempo l'App può restare in esecuzione, i fotogrammi potrebbero avanzare più lentamente o fermarsi.",
+ "disclaimer.223": "Mentre l'App è chiusa, le animazioni vengono riprodotte solo per il breve tempo consentito da iOS, poi vengono mostrate come immagine fissa. Con le regole attuali di iOS, l'App non può continuare a riprodurle mentre è chiusa.",
  "disclaimer.224": "3. Creare pixel art dalle foto",
  "disclaimer.225": "La rimozione dello sfondo viene eseguita automaticamente da una funzione dell'iPhone, quindi potrebbe rimuovere parti che volevi tenere o lasciare parti che volevi eliminare. Se il risultato non è quello che volevi, disattiva “Rimuovi sfondo automaticamente”.",
  "disclaimer.226": "4. Diritti sui preferiti che crei",
@@ -236,5 +236,6 @@
  "disclaimer.235": "L'App è sviluppata da un privato e non è affiliata ad Apple Inc. iPhone, Dynamic Island, App Store e AirDrop sono marchi di Apple Inc.",
  "disclaimer.236": "9. Questo sito web",
  "disclaimer.237": "I contenuti di questo sito riflettono l'App al momento della stesura. Gli aggiornamenti dell'App potrebbero cambiare le schermate o i passaggi, che potrebbero quindi non corrispondere più alle descrizioni riportate qui.",
- "disclaimer.238": "In caso di problemi, consulta prima le <a href=\"faq.html\">FAQ</a>. Se non bastano, usa la <a href=\"https://tsuzukit.com/contact/\">pagina dei contatti</a> o scrivi a ryo.tsuzukihashi@tsuzukit.com."
+ "disclaimer.238": "In caso di problemi, consulta prima le <a href=\"faq.html\">FAQ</a>. Se non bastano, usa la <a href=\"https://tsuzukit.com/contact/\">pagina dei contatti</a> o scrivi a ryo.tsuzukihashi@tsuzukit.com.",
+ "index.239": "Le animazioni si muovono solo per poco, subito dopo la chiusura dell'app. Poi il tuo preferito resta fermo su un'immagine fissa."
 }

@@ -70,7 +70,7 @@
  "faq.069": "Deslizei meu oshi para fora na Tela Bloqueada e agora ele sumiu",
  "faq.070": "Deslizar seu oshi para o lado na Tela Bloqueada também encerra a exibição na Dynamic Island. Abra o app e o mesmo oshi volta. O mesmo vale depois de reiniciar o iPhone.",
  "faq.071": "A animação para e vira uma imagem parada",
- "faq.072": "Até a versão 1.4.0 havia um bug em que, depois de voltar ao app uma vez, a animação parava de rodar. Isso foi corrigido na 1.4.1. Atualize o app pela App Store e coloque seu oshi na Dynamic Island de novo.",
+ "faq.072": "Depois que você fecha o app, a animação só roda pelo pouco tempo que o iOS permite e depois fica numa imagem parada. Pelas regras atuais do iOS, um app não consegue manter uma animação rodando enquanto está fechado. Abra o app e feche de novo, e ela volta a rodar por um tempinho.",
  "faq.073": "Quero parar a exibição ou desligá-la por um tempo",
  "faq.074": "Na tela inicial do app, toque em Encerrar na barra Dynamic Island Ativo, no topo. Você também pode tocar e segurar a Dynamic Island para expandi-la e tocar no × no canto superior direito.",
  "faq.075": "Um oshi que você encerrou não volta sozinho quando você abre o app. Para mostrá-lo de novo, toque no seu oshi e escolha Definir no Dynamic Island.",
@@ -221,7 +221,7 @@
  "disclaimer.220": "Configurações de economia de energia ou atualizações do iOS podem mudar o comportamento da exibição ou da animação",
  "disclaimer.221": "Não posso me responsabilizar pelo tempo em que seu oshi não estiver aparecendo por motivos como esses.",
  "disclaimer.222": "2. Animação",
- "disclaimer.223": "Enquanto o App está fechado, as animações rodam dentro dos limites que o iOS permite. Como o iOS limita por quanto tempo o App pode continuar rodando, os quadros podem avançar mais devagar ou parar.",
+ "disclaimer.223": "Enquanto o App está fechado, as animações rodam só pelo pouco tempo que o iOS permite e depois são exibidas como uma imagem parada. Pelas regras atuais do iOS, o App não consegue mantê-las rodando enquanto está fechado.",
  "disclaimer.224": "3. Criação de pixel art a partir de fotos",
  "disclaimer.225": "A remoção do fundo é feita automaticamente por um recurso do iPhone, então ela pode remover partes que você queria manter ou deixar partes que você queria remover. Se o resultado não for o que você quer, desligue Remover fundo automaticamente.",
  "disclaimer.226": "4. Direitos sobre os oshis que você cria",
@@ -236,5 +236,6 @@
  "disclaimer.235": "O App é desenvolvido por uma pessoa independente e não tem vínculo com a Apple Inc. iPhone, Dynamic Island, App Store e AirDrop são marcas comerciais da Apple Inc.",
  "disclaimer.236": "9. Este site",
  "disclaimer.237": "O conteúdo deste site reflete o App no momento em que foi escrito. Atualizações do App podem mudar telas ou etapas, fazendo com que elas não correspondam mais às descrições aqui.",
- "disclaimer.238": "Se tiver algum problema, confira primeiro as <a href=\"faq.html\">Perguntas frequentes</a>. Se isso não resolver, use a <a href=\"https://tsuzukit.com/contact/\">página de contato</a> ou envie um e-mail para ryo.tsuzukihashi@tsuzukit.com."
+ "disclaimer.238": "Se tiver algum problema, confira primeiro as <a href=\"faq.html\">Perguntas frequentes</a>. Se isso não resolver, use a <a href=\"https://tsuzukit.com/contact/\">página de contato</a> ou envie um e-mail para ryo.tsuzukihashi@tsuzukit.com.",
+ "index.239": "As animações só rodam por pouco tempo, logo depois que você fecha o app. Depois disso, seu oshi fica numa imagem parada."
 }

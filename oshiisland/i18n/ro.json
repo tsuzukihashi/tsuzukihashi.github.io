@@ -70,7 +70,7 @@
  "faq.069": "Am glisat favoritul de pe ecranul de blocare și a dispărut",
  "faq.070": "Dacă glisezi favoritul de pe ecranul de blocare, se încheie și afișarea în Dynamic Island. Deschide aplicația și același favorit revine. La fel și după repornirea iPhone-ului.",
  "faq.071": "Animația se oprește și devine o imagine statică",
- "faq.072": "Până la versiunea 1.4.0 exista o eroare din cauza căreia, după ce reveneai în aplicație, animația nu mai rula. Este corectată în 1.4.1. Actualizează aplicația din App Store, apoi pune din nou favoritul în Dynamic Island.",
+ "faq.072": "După ce închizi aplicația, animația rulează doar scurtul timp permis de iOS, apoi rămâne pe o imagine statică. Conform regulilor actuale din iOS, o aplicație nu poate ține o animație în mișcare cât timp este închisă. Deschide aplicația și închide-o din nou, iar animația va rula din nou pentru scurt timp.",
  "faq.073": "Vreau să opresc afișarea sau să o dezactivez pentru o vreme",
  "faq.074": "Pe ecranul principal al aplicației, atinge „Închide” pe bara „Dynamic Island activ” din partea de sus. Poți și să ții apăsat pe Dynamic Island ca s-o extinzi, apoi să atingi × din dreapta sus.",
  "faq.075": "Un favorit pe care l-ai oprit tu nu revine singur când deschizi aplicația. Ca să-l afișezi din nou, atinge favoritul și alege „Setează pe Dynamic Island”.",
@@ -221,7 +221,7 @@
  "disclaimer.220": "Setările de economisire a energiei sau actualizările iOS pot schimba modul în care se comportă afișarea sau animația",
  "disclaimer.221": "Nu îmi pot asuma responsabilitatea pentru timpul în care favoritul tău nu este afișat din motive ca acestea.",
  "disclaimer.222": "2. Animația",
- "disclaimer.223": "Cât timp Aplicația este închisă, animațiile rulează în limitele permise de iOS. Deoarece iOS limitează cât timp poate rula Aplicația în continuare, cadrele pot avansa mai încet sau se pot opri.",
+ "disclaimer.223": "Cât timp Aplicația este închisă, animațiile rulează doar scurtul timp permis de iOS, apoi sunt afișate ca imagine statică. Conform regulilor actuale din iOS, Aplicația nu le poate menține în mișcare cât timp este închisă.",
  "disclaimer.224": "3. Crearea de pixel art din fotografii",
  "disclaimer.225": "Eliminarea fundalului este făcută automat de o funcție a iPhone-ului, așa că poate elimina părți pe care voiai să le păstrezi sau poate lăsa părți pe care voiai să le elimini. Dacă rezultatul nu este cel dorit, dezactivează „Elimină automat fundalul”.",
  "disclaimer.226": "4. Drepturile asupra favoriților pe care îi creezi",
@@ -236,5 +236,6 @@
  "disclaimer.235": "Aplicația este dezvoltată de o persoană fizică și nu este afiliată cu Apple Inc. iPhone, Dynamic Island, App Store și AirDrop sunt mărci comerciale ale Apple Inc.",
  "disclaimer.236": "9. Acest site",
  "disclaimer.237": "Conținutul acestui site reflectă Aplicația la momentul redactării. Actualizările Aplicației pot schimba ecrane sau pași, astfel încât aceștia să nu mai corespundă descrierilor de aici.",
- "disclaimer.238": "Dacă întâmpini probleme, consultă mai întâi <a href=\"faq.html\">Întrebările frecvente</a>. Dacă nu te ajută, folosește <a href=\"https://tsuzukit.com/contact/\">pagina de contact</a> sau scrie la ryo.tsuzukihashi@tsuzukit.com."
+ "disclaimer.238": "Dacă întâmpini probleme, consultă mai întâi <a href=\"faq.html\">Întrebările frecvente</a>. Dacă nu te ajută, folosește <a href=\"https://tsuzukit.com/contact/\">pagina de contact</a> sau scrie la ryo.tsuzukihashi@tsuzukit.com.",
+ "index.239": "Animațiile rulează doar pentru scurt timp, imediat după ce închizi aplicația. După aceea, favoritul tău rămâne pe o imagine statică."
 }

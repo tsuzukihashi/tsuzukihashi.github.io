@@ -70,7 +70,7 @@
  "faq.069": "Kilitli Ekran'da oshi'mi kaydırarak kapattım, şimdi görünmüyor",
  "faq.070": "Oshi'nizi Kilitli Ekran'da kaydırarak kapatırsanız Dynamic Island gösterimi de sona erer. Uygulamayı açtığınızda aynı oshi geri gelir. iPhone'unuzu yeniden başlattıktan sonra da durum aynıdır.",
  "faq.071": "Animasyon duruyor ve sabit bir görüntüye dönüşüyor",
- "faq.072": "Sürüm 1.4.0'a kadar, uygulamaya bir kez geri döndükten sonra animasyonun oynatılmasının durduğu bir hata vardı. Bu hata 1.4.1'de düzeltildi. Uygulamayı App Store'dan güncelleyin, ardından oshi'nizi Dynamic Island'a yeniden yerleştirin.",
+ "faq.072": "Uygulamayı kapattıktan sonra animasyon yalnızca iOS'un izin verdiği kısa süre boyunca oynar, ardından sabit bir görüntüde kalır. iOS'un mevcut kurallarına göre bir uygulama, kapalıyken animasyonu oynatmaya devam edemez. Uygulamayı açıp yeniden kapattığınızda animasyon yine kısa bir süre oynar.",
  "faq.073": "Gösterimi durdurmak ya da bir süreliğine kapatmak istiyorum",
  "faq.074": "Uygulamanın ana ekranında, üstteki “Dynamic Island Etkin” çubuğunda “Sonlandır”a dokunun. Ayrıca Dynamic Island'a basılı tutarak genişletip sağ üstteki ×'e de dokunabilirsiniz.",
  "faq.075": "Kendiniz sonlandırdığınız bir oshi, uygulamayı açtığınızda kendiliğinden geri gelmez. Yeniden göstermek için oshi'nize dokunup “Dynamic Island Olarak Ayarla”yı seçin.",
@@ -221,7 +221,7 @@
  "disclaimer.220": "Güç tasarrufu ayarları veya iOS güncellemeleri gösterimin ya da animasyonun davranışını değiştirebilir",
  "disclaimer.221": "Bu gibi nedenlerle oshi'nizin görünmediği süreden sorumluluk kabul edemem.",
  "disclaimer.222": "2. Animasyon",
- "disclaimer.223": "Uygulama kapalıyken animasyonlar iOS'un izin verdiği sınırlar içinde çalışır. iOS, Uygulamanın ne kadar süre çalışabileceğini sınırladığından kareler daha yavaş ilerleyebilir veya durabilir.",
+ "disclaimer.223": "Uygulama kapalıyken animasyonlar yalnızca iOS'un izin verdiği kısa süre boyunca çalışır, ardından sabit bir görüntü olarak gösterilir. iOS'un mevcut kurallarına göre Uygulama, kapalıyken animasyonları çalıştırmaya devam edemez.",
  "disclaimer.224": "3. Fotoğraflardan piksel sanatı oluşturma",
  "disclaimer.225": "Arka plan, bir iPhone özelliği tarafından otomatik olarak kaldırılır; bu nedenle korumak istediğiniz kısımları kaldırabilir veya kaldırılmasını istediğiniz kısımları bırakabilir. Sonuç istediğiniz gibi değilse “Arka planı otomatik olarak kaldır” seçeneğini kapatın.",
  "disclaimer.226": "4. Oluşturduğunuz oshi'ler üzerindeki haklar",
@@ -236,5 +236,6 @@
  "disclaimer.235": "Uygulama bir birey tarafından geliştirilmiştir ve Apple Inc. ile bağlantılı değildir. iPhone, Dynamic Island, App Store ve AirDrop, Apple Inc.'in ticari markalarıdır.",
  "disclaimer.236": "9. Bu web sitesi",
  "disclaimer.237": "Bu sitenin içeriği, Uygulamanın yazıldığı andaki hâlini yansıtır. Uygulama güncellemeleri ekranları veya adımları değiştirebilir ve bunlar buradaki açıklamalarla artık örtüşmeyebilir.",
- "disclaimer.238": "Bir sorunla karşılaşırsanız önce <a href=\"faq.html\">SSS</a> sayfasına bakın. Bu işe yaramazsa <a href=\"https://tsuzukit.com/contact/\">iletişim sayfasını</a> kullanın veya ryo.tsuzukihashi@tsuzukit.com adresine e-posta gönderin."
+ "disclaimer.238": "Bir sorunla karşılaşırsanız önce <a href=\"faq.html\">SSS</a> sayfasına bakın. Bu işe yaramazsa <a href=\"https://tsuzukit.com/contact/\">iletişim sayfasını</a> kullanın veya ryo.tsuzukihashi@tsuzukit.com adresine e-posta gönderin.",
+ "index.239": "Animasyonlar, uygulamayı kapattıktan hemen sonra yalnızca kısa bir süre oynar. Ardından oshi'niz sabit bir görüntüde kalır."
 }

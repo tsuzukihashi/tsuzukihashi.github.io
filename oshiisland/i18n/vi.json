@@ -70,7 +70,7 @@
  "faq.069": "Tôi đã vuốt bỏ oshi trên Màn hình khóa và giờ nó không hiện nữa",
  "faq.070": "Vuốt sang ngang để bỏ oshi trên Màn hình khóa cũng sẽ kết thúc hiển thị trên Dynamic Island. Mở ứng dụng là oshi đó sẽ xuất hiện lại. Sau khi khởi động lại iPhone cũng vậy.",
  "faq.071": "Hoạt ảnh dừng giữa chừng và thành ảnh tĩnh",
- "faq.072": "Đến phiên bản 1.4.0 có lỗi khiến hoạt ảnh không chạy nữa sau khi quay lại ứng dụng một lần. Lỗi đã được sửa ở 1.4.1. Hãy cập nhật ứng dụng lên bản mới nhất trên App Store, rồi đặt lại oshi lên Dynamic Island.",
+ "faq.072": "Sau khi đóng ứng dụng, hoạt ảnh chỉ chạy trong khoảng thời gian ngắn mà iOS cho phép, rồi dừng lại ở một ảnh tĩnh. Theo quy định hiện tại của iOS, ứng dụng không thể tiếp tục chạy hoạt ảnh khi đang đóng. Hãy mở ứng dụng rồi đóng lại, hoạt ảnh sẽ chạy thêm một lúc nữa.",
  "faq.073": "Tôi muốn dừng hiển thị, hoặc tạm tắt một lúc",
  "faq.074": "Trên màn hình chính của ứng dụng, chạm vào “Kết thúc” trên thanh “Dynamic Island đang hoạt động” ở trên cùng. Bạn cũng có thể nhấn giữ Dynamic Island để mở rộng rồi chạm vào dấu × ở góc trên bên phải.",
  "faq.075": "Oshi do bạn tự kết thúc sẽ không tự xuất hiện lại khi mở ứng dụng. Muốn hiển thị lại, hãy chạm vào oshi rồi chọn “Đặt làm Dynamic Island”.",
@@ -221,7 +221,7 @@
  "disclaimer.220": "Cài đặt tiết kiệm pin hoặc bản cập nhật iOS có thể làm thay đổi cách hiển thị hoặc chuyển động của hoạt ảnh",
  "disclaimer.221": "Tôi không thể chịu trách nhiệm cho khoảng thời gian oshi không hiển thị vì những lý do như trên.",
  "disclaimer.222": "2. Về hoạt ảnh",
- "disclaimer.223": "Khi Ứng dụng đang đóng, hoạt ảnh chạy trong giới hạn iOS cho phép. Vì iOS giới hạn thời gian Ứng dụng được chạy, các khung hình có thể chuyển chậm hơn hoặc dừng lại.",
+ "disclaimer.223": "Khi Ứng dụng đang đóng, hoạt ảnh chỉ chạy trong khoảng thời gian ngắn mà iOS cho phép, sau đó hiển thị dưới dạng ảnh tĩnh. Theo quy định hiện tại của iOS, Ứng dụng không thể tiếp tục chạy hoạt ảnh khi đang đóng.",
  "disclaimer.224": "3. Về tính năng tạo pixel art từ ảnh",
  "disclaimer.225": "Việc xóa nền được thực hiện tự động bằng một tính năng của iPhone, nên có thể xóa cả phần bạn muốn giữ hoặc để lại phần bạn muốn xóa. Nếu kết quả không như ý, hãy tắt “Tự động xóa nền”.",
  "disclaimer.226": "4. Về quyền đối với oshi bạn tạo",
@@ -236,5 +236,6 @@
  "disclaimer.235": "Ứng dụng do một cá nhân phát triển và không liên quan đến Apple Inc. iPhone, Dynamic Island, App Store và AirDrop là nhãn hiệu của Apple Inc.",
  "disclaimer.236": "9. Về trang web này",
  "disclaimer.237": "Nội dung trang web này dựa trên Ứng dụng tại thời điểm viết. Các bản cập nhật Ứng dụng có thể làm thay đổi màn hình hoặc các bước, khiến chúng không còn khớp với phần mô tả ở đây.",
- "disclaimer.238": "Nếu gặp sự cố, trước tiên hãy xem <a href=\"faq.html\">Câu hỏi thường gặp</a>. Nếu vẫn chưa giải quyết được, hãy dùng <a href=\"https://tsuzukit.com/contact/\">trang liên hệ</a> hoặc gửi email đến ryo.tsuzukihashi@tsuzukit.com."
+ "disclaimer.238": "Nếu gặp sự cố, trước tiên hãy xem <a href=\"faq.html\">Câu hỏi thường gặp</a>. Nếu vẫn chưa giải quyết được, hãy dùng <a href=\"https://tsuzukit.com/contact/\">trang liên hệ</a> hoặc gửi email đến ryo.tsuzukihashi@tsuzukit.com.",
+ "index.239": "Hoạt ảnh chỉ chạy trong thời gian ngắn ngay sau khi đóng ứng dụng. Sau đó, oshi sẽ dừng lại ở một ảnh tĩnh."
 }

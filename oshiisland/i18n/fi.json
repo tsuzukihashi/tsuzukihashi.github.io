@@ -70,7 +70,7 @@
  "faq.069": "Pyyhkäisin oshini pois lukitusnäytöltä, ja nyt se on poissa",
  "faq.070": "Kun pyyhkäiset oshisi pois lukitusnäytöltä, myös Dynamic Islandin näyttö päättyy. Avaa appi, niin sama oshi palaa. Sama pätee iPhonen uudelleenkäynnistyksen jälkeen.",
  "faq.071": "Animaatio pysähtyy ja muuttuu pysäytyskuvaksi",
- "faq.072": "Versioon 1.4.0 asti apissa oli vika, jonka vuoksi animaatio lakkasi toistumasta, kun appiin oli palattu kerran. Se on korjattu versiossa 1.4.1. Päivitä appi App Storesta ja aseta oshisi sitten uudelleen Dynamic Islandiin.",
+ "faq.072": "Kun suljet apin, animaatio liikkuu vain sen lyhyen hetken, jonka iOS sallii, ja jää sen jälkeen pysäytyskuvaksi. iOS:n nykyisten sääntöjen mukaan appi ei voi pitää animaatiota käynnissä, kun se on suljettuna. Kun avaat apin ja suljet sen uudelleen, animaatio liikkuu taas hetken.",
  "faq.073": "Haluan lopettaa näytön tai laittaa sen hetkeksi pois päältä",
  "faq.074": "Napauta apin kotinäkymässä ”Lopeta” yläreunan ”Dynamic Island käynnissä” -palkissa. Voit myös avata Dynamic Islandin painamalla sitä pitkään ja napauttaa oikean yläkulman ×-merkkiä.",
  "faq.075": "Itse lopettamasi oshi ei palaa itsestään, kun avaat apin. Näyttääksesi sen uudelleen napauta oshia ja valitse ”Aseta Dynamic Islandiin”.",
@@ -221,7 +221,7 @@
  "disclaimer.220": "Virransäästöasetukset tai iOS-päivitykset voivat muuttaa näytön tai animaation toimintaa",
  "disclaimer.221": "En voi ottaa vastuuta ajasta, jolloin oshisi ei näy tällaisista syistä.",
  "disclaimer.222": "2. Animaatio",
- "disclaimer.223": "Kun Appi on suljettuna, animaatiot toimivat iOS:n sallimissa rajoissa. Koska iOS rajoittaa, kuinka kauan Appi voi olla käynnissä, ruudut voivat vaihtua hitaammin tai pysähtyä.",
+ "disclaimer.223": "Kun Appi on suljettuna, animaatiot toimivat vain sen lyhyen ajan, jonka iOS sallii, ja näkyvät sen jälkeen pysäytyskuvana. iOS:n nykyisten sääntöjen mukaan Appi ei voi pitää niitä käynnissä, kun se on suljettuna.",
  "disclaimer.224": "3. Pikselitaiteen tekeminen valokuvista",
  "disclaimer.225": "Taustan poistaa automaattisesti iPhonen ominaisuus, joten se voi poistaa osia, jotka halusit säilyttää, tai jättää osia, jotka halusit poistaa. Jos tulos ei ole toivottu, laita ”Poista tausta automaattisesti” pois päältä.",
  "disclaimer.226": "4. Tekemiesi oshien oikeudet",
@@ -236,5 +236,6 @@
  "disclaimer.235": "Apin on kehittänyt yksityishenkilö, eikä se liity Apple Inc:iin. iPhone, Dynamic Island, App Store ja AirDrop ovat Apple Inc:n tavaramerkkejä.",
  "disclaimer.236": "9. Tämä verkkosivusto",
  "disclaimer.237": "Tämän sivuston sisältö vastaa Appia kirjoitushetkellä. Apin päivitykset voivat muuttaa näkymiä tai vaiheita niin, etteivät ne enää vastaa tässä annettuja kuvauksia.",
- "disclaimer.238": "Jos kohtaat ongelmia, katso ensin <a href=\"faq.html\">UKK</a>. Jos siitä ei ole apua, käytä <a href=\"https://tsuzukit.com/contact/\">yhteydenottosivua</a> tai lähetä sähköpostia osoitteeseen ryo.tsuzukihashi@tsuzukit.com."
+ "disclaimer.238": "Jos kohtaat ongelmia, katso ensin <a href=\"faq.html\">UKK</a>. Jos siitä ei ole apua, käytä <a href=\"https://tsuzukit.com/contact/\">yhteydenottosivua</a> tai lähetä sähköpostia osoitteeseen ryo.tsuzukihashi@tsuzukit.com.",
+ "index.239": "Animaatiot liikkuvat vain hetken heti apin sulkemisen jälkeen. Sen jälkeen oshisi jää pysäytyskuvaksi."
 }

@@ -70,7 +70,7 @@
  "faq.069": "I swiped my fave away on the Lock Screen and now it's gone",
  "faq.070": "Swiping your fave away on the Lock Screen also ends the Dynamic Island display. Open the app and the same fave comes back. The same goes for after restarting your iPhone.",
  "faq.071": "The animation stops and turns into a still image",
- "faq.072": "Up to version 1.4.0 there was a bug where, after going back into the app once, the animation would stop playing. It's fixed in 1.4.1. Update the app from the App Store, then set your fave in the Dynamic Island again.",
+ "faq.072": "After you close the app, the animation plays only for the short time iOS allows, then stays on a still frame. Under current iOS rules, an app can't keep an animation running while it's closed. Open the app and close it again, and it plays for a little while again.",
  "faq.073": "I want to stop the display, or turn it off for a while",
  "faq.074": "On the app's home screen, tap End on the Dynamic Island Active bar at the top. You can also long-press the Dynamic Island to expand it and tap the × in the top right.",
  "faq.075": "A fave you ended yourself won't come back on its own when you open the app. To show it again, tap your fave and choose Set as Dynamic Island.",
@@ -221,7 +221,7 @@
  "disclaimer.220": "Power-saving settings or iOS updates may change how the display or animation behaves",
  "disclaimer.221": "I can't take responsibility for the time your fave isn't showing for reasons like these.",
  "disclaimer.222": "2. Animation",
- "disclaimer.223": "While the App is closed, animations run within the limits iOS allows. Because iOS limits how long the App can keep running, frames may advance more slowly or stop.",
+ "disclaimer.223": "While the App is closed, animations play only for the short time iOS allows, then stay on a still frame. Under current iOS rules, the App can't keep them running while it's closed.",
  "disclaimer.224": "3. Making pixel art from photos",
  "disclaimer.225": "Background removal is done automatically by an iPhone feature, so it may remove parts you wanted to keep or leave parts you wanted removed. If the result isn't what you want, switch off Remove Background Automatically.",
  "disclaimer.226": "4. Rights to the faves you make",
@@ -236,5 +236,6 @@
  "disclaimer.235": "The App is developed by an individual and is not affiliated with Apple Inc. iPhone, Dynamic Island, App Store, and AirDrop are trademarks of Apple Inc.",
  "disclaimer.236": "9. This website",
  "disclaimer.237": "The content of this site reflects the App at the time of writing. App updates may change screens or steps so that they no longer match the descriptions here.",
- "disclaimer.238": "If you run into trouble, please check the <a href=\"faq.html\">FAQ</a> first. If that doesn't help, use the <a href=\"https://tsuzukit.com/contact/\">contact page</a> or email ryo.tsuzukihashi@tsuzukit.com."
+ "disclaimer.238": "If you run into trouble, please check the <a href=\"faq.html\">FAQ</a> first. If that doesn't help, use the <a href=\"https://tsuzukit.com/contact/\">contact page</a> or email ryo.tsuzukihashi@tsuzukit.com.",
+ "index.239": "Animations play only for a short time right after you close the app. After that, your fave stays on a still frame."
 }

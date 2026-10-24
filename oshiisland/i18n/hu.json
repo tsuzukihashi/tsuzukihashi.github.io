@@ -70,7 +70,7 @@
  "faq.069": "Elhúztam az osimat a zárolási képernyőn, és most nincs sehol",
  "faq.070": "Ha a zárolási képernyőn elhúzod az osidat, a Dynamic Island-en futó megjelenítés is véget ér. Nyisd meg az appot, és ugyanaz az osi visszatér. Ugyanez a helyzet az iPhone újraindítása után is.",
  "faq.071": "Az animáció megáll, és állóképpé válik",
- "faq.072": "Az 1.4.0-s verzióig volt egy hiba, amely miatt az animáció leállt, miután egyszer visszaléptél az appba. Az 1.4.1-es verzióban ezt kijavítottam. Frissítsd az appot az App Store-ban, majd állítsd be újra az osidat a Dynamic Island-en.",
+ "faq.072": "Az app bezárása után az animáció csak addig a rövid ideig mozog, amíg az iOS engedi, utána állóképen marad. A jelenlegi iOS-szabályok szerint egy app nem tudja tovább futtatni az animációt, amíg be van zárva. Ha megnyitod, majd újra bezárod az appot, ismét mozog egy kis ideig.",
  "faq.073": "Le szeretném állítani a megjelenítést, vagy egy időre kikapcsolni",
  "faq.074": "Az app kezdőképernyőjén koppints a „Befejezés” gombra a felül látható „Dynamic Island aktív” sávon. Úgy is megteheted, hogy hosszan megnyomod a Dynamic Island-et, hogy kinyíljon, majd a jobb felső sarokban a × gombra koppintasz.",
  "faq.075": "Az általad befejezett osi az app megnyitásakor magától nem tér vissza. Ha újra meg szeretnéd jeleníteni, koppints az osira, és válaszd a „Beállítás Dynamic Island-ra” lehetőséget.",
@@ -221,7 +221,7 @@
  "disclaimer.220": "Az energiatakarékossági beállítások vagy az iOS-frissítések megváltoztathatják a megjelenítés vagy az animáció működését",
  "disclaimer.221": "Nem vállalhatok felelősséget azért az időért, amíg az osid ilyen okok miatt nem látható.",
  "disclaimer.222": "2. Animáció",
- "disclaimer.223": "Amíg az App be van zárva, az animációk az iOS által megengedett kereteken belül futnak. Mivel az iOS korlátozza, meddig futhat az App, a kockák lassabban követhetik egymást, vagy meg is állhatnak.",
+ "disclaimer.223": "Amíg az App be van zárva, az animációk csak addig a rövid ideig futnak, amíg az iOS engedi, utána állóképként jelennek meg. A jelenlegi iOS-szabályok szerint az App nem tudja tovább futtatni őket, amíg be van zárva.",
  "disclaimer.224": "3. Pixelgrafika készítése fotókból",
  "disclaimer.225": "A háttér eltávolítását automatikusan egy iPhone-funkció végzi, ezért eltávolíthat olyan részeket, amelyeket meg akartál tartani, vagy meghagyhat olyanokat, amelyeket el akartál távolítani. Ha az eredmény nem olyan, amilyet szeretnél, kapcsold ki a „Háttér automatikus eltávolítása” beállítást.",
  "disclaimer.226": "4. Az általad készített osikhoz fűződő jogok",
@@ -236,5 +236,6 @@
  "disclaimer.235": "Az Appot magánszemély fejlesztette, és nem áll kapcsolatban az Apple Inc.-vel. Az iPhone, a Dynamic Island, az App Store és az AirDrop az Apple Inc. védjegyei.",
  "disclaimer.236": "9. Ez a weboldal",
  "disclaimer.237": "Az oldal tartalma az App írás idején érvényes állapotát tükrözi. Az App frissítései megváltoztathatják a képernyőket vagy a lépéseket, így azok eltérhetnek az itt leírtaktól.",
- "disclaimer.238": "Ha elakadsz, először nézd meg a <a href=\"faq.html\">GYIK</a> oldalt. Ha az nem segít, fordulj hozzám a <a href=\"https://tsuzukit.com/contact/\">kapcsolatfelvételi oldalon</a> vagy a ryo.tsuzukihashi@tsuzukit.com címen."
+ "disclaimer.238": "Ha elakadsz, először nézd meg a <a href=\"faq.html\">GYIK</a> oldalt. Ha az nem segít, fordulj hozzám a <a href=\"https://tsuzukit.com/contact/\">kapcsolatfelvételi oldalon</a> vagy a ryo.tsuzukihashi@tsuzukit.com címen.",
+ "index.239": "Az animációk csak rövid ideig mozognak, közvetlenül az app bezárása után. Utána az osid állóképen marad."
 }

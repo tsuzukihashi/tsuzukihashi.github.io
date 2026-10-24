@@ -70,7 +70,7 @@
  "faq.069": "Miláček zmizel po odsunutí na zamčené obrazovce",
  "faq.070": "Odsunutím miláčka na zamčené obrazovce se ukončí i zobrazení v Dynamic Islandu. Otevřete aplikaci a stejný miláček se vrátí. Totéž platí po restartu iPhonu.",
  "faq.071": "Animace se zastaví a změní se ve statický obrázek",
- "faq.072": "Do verze 1.4.0 byla chyba, kvůli které se po návratu do aplikace přestala animace přehrávat. Ve verzi 1.4.1 je opravena. Aktualizujte aplikaci v App Storu a pak miláčka znovu nastavte do Dynamic Islandu.",
+ "faq.072": "Po zavření aplikace se animace přehrává jen krátkou dobu, kterou iOS dovolí, a pak zůstane stát na jednom snímku. Podle současných pravidel iOS nemůže aplikace nechat animaci běžet, když je zavřená. Když aplikaci otevřete a znovu zavřete, bude se zase chvíli pohybovat.",
  "faq.073": "Chci zobrazení ukončit nebo ho na chvíli vypnout",
  "faq.074": "Na domovské obrazovce aplikace klepněte na „Ukončit“ na liště „Dynamic Island je aktivní“ nahoře. Můžete také Dynamic Island podržet, aby se rozbalil, a klepnout na × vpravo nahoře.",
  "faq.075": "Miláček, jehož zobrazení ukončíte sami, se po otevření aplikace sám nevrátí. Chcete-li ho znovu zobrazit, klepněte na něj a zvolte „Nastavit na Dynamic Island“.",
@@ -221,7 +221,7 @@
  "disclaimer.220": "Nastavení úspory energie nebo aktualizace iOS mohou změnit chování zobrazení nebo animace",
  "disclaimer.221": "Za dobu, kdy se miláček z takových důvodů nezobrazuje, nemohu nést odpovědnost.",
  "disclaimer.222": "2. Animace",
- "disclaimer.223": "Když je Aplikace zavřená, animace běží v mezích, které iOS dovoluje. Protože iOS omezuje, jak dlouho může Aplikace běžet, mohou se snímky střídat pomaleji nebo se zastavit.",
+ "disclaimer.223": "Když je Aplikace zavřená, animace běží jen krátkou dobu, kterou iOS dovolí, a pak se zobrazují jako statický obrázek. Podle současných pravidel iOS nemůže Aplikace nechat animace běžet, když je zavřená.",
  "disclaimer.224": "3. Tvorba pixel artu z fotek",
  "disclaimer.225": "Pozadí odstraňuje automaticky funkce iPhonu, takže se mohou odstranit části, které jste chtěli zachovat, nebo zůstat části, které jste chtěli odstranit. Pokud výsledek není podle vašich představ, vypněte „Automaticky odstranit pozadí“.",
  "disclaimer.226": "4. Práva k vytvořeným miláčkům",
@@ -236,5 +236,6 @@
  "disclaimer.235": "Aplikaci vyvíjí jednotlivec a není spojena se společností Apple Inc. iPhone, Dynamic Island, App Store a AirDrop jsou ochranné známky společnosti Apple Inc.",
  "disclaimer.236": "9. Tento web",
  "disclaimer.237": "Obsah tohoto webu odpovídá stavu Aplikace v době psaní. Aktualizace Aplikace mohou změnit obrazovky nebo postupy tak, že už nebudou odpovídat zdejšímu popisu.",
- "disclaimer.238": "Pokud narazíte na potíže, podívejte se nejdřív do <a href=\"faq.html\">Častých dotazů</a>. Pokud to nepomůže, použijte <a href=\"https://tsuzukit.com/contact/\">kontaktní stránku</a> nebo napište na ryo.tsuzukihashi@tsuzukit.com."
+ "disclaimer.238": "Pokud narazíte na potíže, podívejte se nejdřív do <a href=\"faq.html\">Častých dotazů</a>. Pokud to nepomůže, použijte <a href=\"https://tsuzukit.com/contact/\">kontaktní stránku</a> nebo napište na ryo.tsuzukihashi@tsuzukit.com.",
+ "index.239": "Animace běží jen krátce hned po zavření aplikace. Pak miláček zůstane stát na jednom snímku."
 }

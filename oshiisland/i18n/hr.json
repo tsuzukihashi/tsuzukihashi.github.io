@@ -70,7 +70,7 @@
  "faq.069": "Nakon odgurivanja oshija na zaključanom zaslonu više ga nema",
  "faq.070": "Kad oshija odgurnete na zaključanom zaslonu, završava i prikaz u Dynamic Islandu. Otvorite aplikaciju i isti se oshi vraća. Isto vrijedi i nakon ponovnog pokretanja iPhonea.",
  "faq.071": "Animacija se zaustavi i postane statična slika",
- "faq.072": "Do verzije 1.4.0 postojala je pogreška zbog koje bi se animacija prestala reproducirati nakon što biste se jednom vratili u aplikaciju. Ispravljeno je u verziji 1.4.1. Ažurirajte aplikaciju iz App Storea pa ponovno postavite oshija u Dynamic Island.",
+ "faq.072": "Nakon što zatvorite aplikaciju, animacija se kreće samo onoliko kratko koliko iOS dopušta, a zatim ostaje na statičnoj slici. Prema trenutačnim pravilima iOS-a aplikacija ne može održavati animaciju dok je zatvorena. Ako otvorite aplikaciju i ponovno je zatvorite, animacija će se opet kratko kretati.",
  "faq.073": "Želim zaustaviti prikaz ili ga nakratko isključiti",
  "faq.074": "Na početnom zaslonu aplikacije dodirnite „Završi“ na traci „Dynamic Island aktivan“ na vrhu. Možete i dugo pritisnuti Dynamic Island da biste ga proširili te dodirnuti × u gornjem desnom kutu.",
  "faq.075": "Oshi kojeg ste sami završili neće se sam vratiti kad otvorite aplikaciju. Da biste ga ponovno prikazali, dodirnite oshija i odaberite „Postavi na Dynamic Island“.",
@@ -221,7 +221,7 @@
  "disclaimer.220": "Postavke uštede energije ili ažuriranja iOS-a mogu promijeniti ponašanje prikaza ili animacije",
  "disclaimer.221": "Ne mogu preuzeti odgovornost za vrijeme u kojem se vaš oshi ne prikazuje iz ovakvih razloga.",
  "disclaimer.222": "2. Animacija",
- "disclaimer.223": "Dok je Aplikacija zatvorena, animacije se izvode u granicama koje dopušta iOS. Budući da iOS ograničava koliko dugo Aplikacija može raditi, sličice se mogu izmjenjivati sporije ili se zaustaviti.",
+ "disclaimer.223": "Dok je Aplikacija zatvorena, animacije se izvode samo onoliko kratko koliko iOS dopušta, a zatim se prikazuju kao statična slika. Prema trenutačnim pravilima iOS-a Aplikacija ih ne može održavati dok je zatvorena.",
  "disclaimer.224": "3. Izrada piksel arta iz fotografija",
  "disclaimer.225": "Pozadinu automatski uklanja značajka iPhonea, pa može ukloniti dijelove koje ste htjeli zadržati ili ostaviti dijelove koje ste htjeli ukloniti. Ako rezultat nije onakav kakav želite, isključite „Automatski ukloni pozadinu“.",
  "disclaimer.226": "4. Prava na oshije koje napravite",
@@ -236,5 +236,6 @@
  "disclaimer.235": "Aplikaciju je razvio pojedinac i nije povezana s tvrtkom Apple Inc. iPhone, Dynamic Island, App Store i AirDrop zaštitni su znakovi tvrtke Apple Inc.",
  "disclaimer.236": "9. Ova web-stranica",
  "disclaimer.237": "Sadržaj ove stranice odražava Aplikaciju u trenutku pisanja. Ažuriranja Aplikacije mogu promijeniti zaslone ili korake pa se oni više neće podudarati s ovdje navedenim opisima.",
- "disclaimer.238": "Ako naiđete na problem, najprije pogledajte <a href=\"faq.html\">Česta pitanja</a>. Ako to ne pomogne, upotrijebite <a href=\"https://tsuzukit.com/contact/\">stranicu za kontakt</a> ili pišite na ryo.tsuzukihashi@tsuzukit.com."
+ "disclaimer.238": "Ako naiđete na problem, najprije pogledajte <a href=\"faq.html\">Česta pitanja</a>. Ako to ne pomogne, upotrijebite <a href=\"https://tsuzukit.com/contact/\">stranicu za kontakt</a> ili pišite na ryo.tsuzukihashi@tsuzukit.com.",
+ "index.239": "Animacije se kreću samo kratko odmah nakon zatvaranja aplikacije. Nakon toga vaš oshi ostaje na statičnoj slici."
 }

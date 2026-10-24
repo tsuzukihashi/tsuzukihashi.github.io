@@ -70,7 +70,7 @@
  "faq.069": "He fet lliscar el meu preferit a la pantalla bloquejada i ha desaparegut",
  "faq.070": "Fer lliscar el teu preferit a la pantalla bloquejada també finalitza la visualització a la Dynamic Island. Obre l'app i el mateix preferit torna. El mateix passa després de reiniciar l'iPhone.",
  "faq.071": "L'animació s'atura i es converteix en una imatge fixa",
- "faq.072": "Fins a la versió 1.4.0 hi havia un error pel qual, després de tornar a entrar a l'app, l'animació deixava de reproduir-se. S'ha corregit a la 1.4.1. Actualitza l'app des de l'App Store i torna a posar el teu preferit a la Dynamic Island.",
+ "faq.072": "Després de tancar l'app, l'animació només es mou durant el curt temps que permet l'iOS i després es queda en una imatge fixa. Amb les normes actuals de l'iOS, una app no pot mantenir una animació en marxa mentre està tancada. Si obres l'app i la tornes a tancar, es tornarà a moure una estona.",
  "faq.073": "Vull aturar la visualització o desactivar-la una estona",
  "faq.074": "A la pantalla d'inici de l'app, toca «Finalitza» a la barra «Dynamic Island actiu» de dalt. També pots mantenir premuda la Dynamic Island per ampliar-la i tocar la × de dalt a la dreta.",
  "faq.075": "Un preferit que has aturat tu no torna sol quan obres l'app. Per tornar-lo a mostrar, toca el teu preferit i tria «Estableix a Dynamic Island».",
@@ -221,7 +221,7 @@
  "disclaimer.220": "La configuració d'estalvi d'energia o les actualitzacions de l'iOS poden canviar com es comporta la visualització o l'animació",
  "disclaimer.221": "No em puc fer responsable del temps en què el teu preferit no es mostra per motius com aquests.",
  "disclaimer.222": "2. Animació",
- "disclaimer.223": "Mentre l'App està tancada, les animacions funcionen dins dels límits que permet l'iOS. Com que l'iOS limita quant de temps pot continuar funcionant l'App, els fotogrames poden avançar més a poc a poc o aturar-se.",
+ "disclaimer.223": "Mentre l'App està tancada, les animacions només funcionen durant el curt temps que permet l'iOS i després es mostren com una imatge fixa. Amb les normes actuals de l'iOS, l'App no pot mantenir-les en marxa mentre està tancada.",
  "disclaimer.224": "3. Crear pixel art a partir de fotos",
  "disclaimer.225": "L'eliminació del fons la fa automàticament una funció de l'iPhone, de manera que pot eliminar parts que volies conservar o deixar parts que volies treure. Si el resultat no és el que vols, desactiva «Elimina el fons automàticament».",
  "disclaimer.226": "4. Drets sobre els preferits que crees",
@@ -236,5 +236,6 @@
  "disclaimer.235": "L'App la desenvolupa un particular i no està afiliada a Apple Inc. iPhone, Dynamic Island, App Store i AirDrop són marques comercials d'Apple Inc.",
  "disclaimer.236": "9. Aquest lloc web",
  "disclaimer.237": "El contingut d'aquest lloc web reflecteix l'App en el moment de redactar-lo. Les actualitzacions de l'App poden canviar pantalles o passos, i és possible que deixin de coincidir amb les descripcions d'aquí.",
- "disclaimer.238": "Si tens cap problema, consulta primer les <a href=\"faq.html\">preguntes freqüents</a>. Si no t'ajuden, fes servir la <a href=\"https://tsuzukit.com/contact/\">pàgina de contacte</a> o escriu a ryo.tsuzukihashi@tsuzukit.com."
+ "disclaimer.238": "Si tens cap problema, consulta primer les <a href=\"faq.html\">preguntes freqüents</a>. Si no t'ajuden, fes servir la <a href=\"https://tsuzukit.com/contact/\">pàgina de contacte</a> o escriu a ryo.tsuzukihashi@tsuzukit.com.",
+ "index.239": "Les animacions només es mouen una estona curta just després de tancar l'app. Després, el teu preferit es queda en una imatge fixa."
 }

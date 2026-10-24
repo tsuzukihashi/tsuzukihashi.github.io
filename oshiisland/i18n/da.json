@@ -70,7 +70,7 @@
  "faq.069": "Jeg skubbede min favorit væk på låseskærmen, og nu er den væk",
  "faq.070": "Når du skubber din favorit væk på låseskærmen, slutter visningen i Dynamic Island også. Åbn appen, så kommer den samme favorit tilbage. Det samme gælder efter en genstart af din iPhone.",
  "faq.071": "Animationen stopper og bliver til et stillbillede",
- "faq.072": "Til og med version 1.4.0 var der en fejl, hvor animationen holdt op med at afspille, når man først var gået tilbage til appen. Fejlen er rettet i 1.4.1. Opdater appen i App Store, og sæt derefter din favorit i Dynamic Island igen.",
+ "faq.072": "Når du har lukket appen, kører animationen kun i den korte tid, iOS tillader, og derefter står den stille på ét billede. Med de nuværende regler i iOS kan en app ikke holde en animation kørende, mens den er lukket. Åbn appen og luk den igen, så kører den igen et lille stykke tid.",
  "faq.073": "Jeg vil stoppe visningen eller slå den fra et stykke tid",
  "faq.074": "Tryk på »Afslut« på bjælken »Dynamic Island aktiv« øverst på appens startskærm. Du kan også holde fingeren nede på Dynamic Island for at udvide den og trykke på × øverst til højre.",
  "faq.075": "En favorit, som du selv har afsluttet, kommer ikke tilbage af sig selv, når du åbner appen. Vil du vise den igen, så tryk på din favorit og vælg »Indstil som Dynamic Island«.",
@@ -221,7 +221,7 @@
  "disclaimer.220": "Strømbesparende indstillinger eller iOS-opdateringer kan ændre, hvordan visningen eller animationen opfører sig",
  "disclaimer.221": "Jeg kan ikke påtage mig ansvar for den tid, hvor din favorit ikke vises af grunde som disse.",
  "disclaimer.222": "2. Animation",
- "disclaimer.223": "Mens Appen er lukket, kører animationer inden for de grænser, som iOS tillader. Fordi iOS begrænser, hvor længe Appen kan blive ved med at køre, kan billederne skifte langsommere eller gå i stå.",
+ "disclaimer.223": "Mens Appen er lukket, kører animationer kun i den korte tid, iOS tillader, og derefter vises de som et stillbillede. Med de nuværende regler i iOS kan Appen ikke holde dem kørende, mens den er lukket.",
  "disclaimer.224": "3. Pixelkunst ud fra fotos",
  "disclaimer.225": "Baggrunden fjernes automatisk af en funktion i iPhone, så den kan fjerne dele, du gerne ville beholde, eller efterlade dele, du gerne ville have fjernet. Hvis resultatet ikke er, som du vil have det, så slå »Fjern baggrund automatisk« fra.",
  "disclaimer.226": "4. Rettigheder til de favoritter, du laver",
@@ -236,5 +236,6 @@
  "disclaimer.235": "Appen er udviklet af en privatperson og har ingen tilknytning til Apple Inc. iPhone, Dynamic Island, App Store og AirDrop er varemærker tilhørende Apple Inc.",
  "disclaimer.236": "9. Dette websted",
  "disclaimer.237": "Indholdet på dette websted afspejler Appen på det tidspunkt, det blev skrevet. Opdateringer af Appen kan ændre skærme eller trin, så de ikke længere passer med beskrivelserne her.",
- "disclaimer.238": "Hvis du støder på problemer, så kig først i <a href=\"faq.html\">FAQ</a>. Hjælper det ikke, så brug <a href=\"https://tsuzukit.com/contact/\">kontaktsiden</a> eller skriv til ryo.tsuzukihashi@tsuzukit.com."
+ "disclaimer.238": "Hvis du støder på problemer, så kig først i <a href=\"faq.html\">FAQ</a>. Hjælper det ikke, så brug <a href=\"https://tsuzukit.com/contact/\">kontaktsiden</a> eller skriv til ryo.tsuzukihashi@tsuzukit.com.",
+ "index.239": "Animationer kører kun et kort øjeblik lige efter, at du har lukket appen. Derefter står din favorit stille på ét billede."
 }

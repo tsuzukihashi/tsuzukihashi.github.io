@@ -70,7 +70,7 @@
  "faq.069": "Ich habe meinen Liebling auf dem Sperrbildschirm weggewischt, und jetzt ist er weg",
  "faq.070": "Wenn du deinen Liebling auf dem Sperrbildschirm wegwischst, endet auch die Anzeige in der Dynamic Island. Öffne die App, und derselbe Liebling ist wieder da. Dasselbe gilt nach einem Neustart deines iPhone.",
  "faq.071": "Die Animation stoppt und wird zum Standbild",
- "faq.072": "Bis Version 1.4.0 gab es einen Fehler, durch den die Animation nicht mehr abgespielt wurde, nachdem man einmal in die App zurückgekehrt war. In 1.4.1 ist er behoben. Aktualisiere die App im App Store und setze deinen Liebling dann erneut in die Dynamic Island.",
+ "faq.072": "Nachdem du die App geschlossen hast, läuft die Animation nur die kurze Zeit, die iOS erlaubt, und bleibt danach auf einem Standbild stehen. Nach den aktuellen Regeln von iOS kann eine App eine Animation nicht weiterlaufen lassen, solange sie geschlossen ist. Öffne die App und schließe sie wieder, dann läuft sie erneut eine kurze Weile.",
  "faq.073": "Ich möchte die Anzeige beenden oder eine Weile ausschalten",
  "faq.074": "Tippe auf dem Startbildschirm der App in der Leiste „Dynamic Island aktiv“ ganz oben auf „Beenden“. Du kannst auch lange auf die Dynamic Island drücken, um sie zu erweitern, und oben rechts auf das × tippen.",
  "faq.075": "Ein Liebling, den du selbst beendet hast, kommt beim Öffnen der App nicht von allein zurück. Um ihn wieder anzuzeigen, tippe auf deinen Liebling und wähle „Auf Dynamic Island setzen“.",
@@ -221,7 +221,7 @@
  "disclaimer.220": "Stromspareinstellungen oder iOS-Updates können das Verhalten der Anzeige oder der Animation verändern",
  "disclaimer.221": "Für die Zeit, in der dein Liebling aus solchen Gründen nicht angezeigt wird, kann ich keine Verantwortung übernehmen.",
  "disclaimer.222": "2. Animation",
- "disclaimer.223": "Während die App geschlossen ist, laufen Animationen innerhalb der Grenzen, die iOS erlaubt. Da iOS begrenzt, wie lange die App weiterlaufen kann, können die Frames langsamer wechseln oder stehen bleiben.",
+ "disclaimer.223": "Während die App geschlossen ist, laufen Animationen nur die kurze Zeit, die iOS erlaubt, und werden danach als Standbild angezeigt. Nach den aktuellen Regeln von iOS kann die App sie nicht weiterlaufen lassen, solange sie geschlossen ist.",
  "disclaimer.224": "3. Pixel-Art aus Fotos",
  "disclaimer.225": "Der Hintergrund wird automatisch von einer iPhone-Funktion entfernt. Dabei können Teile verschwinden, die du behalten wolltest, oder Teile stehen bleiben, die weg sollten. Wenn das Ergebnis nicht passt, schalte „Hintergrund automatisch entfernen“ aus.",
  "disclaimer.226": "4. Rechte an deinen erstellten Lieblingen",
@@ -236,5 +236,6 @@
  "disclaimer.235": "Die App wird von einer Einzelperson entwickelt und steht in keiner Verbindung zur Apple Inc. iPhone, Dynamic Island, App Store und AirDrop sind Marken der Apple Inc.",
  "disclaimer.236": "9. Diese Website",
  "disclaimer.237": "Die Inhalte dieser Website geben den Stand der App zum Zeitpunkt der Erstellung wieder. Durch App-Updates können sich Bildschirme oder Schritte so ändern, dass sie nicht mehr mit den Beschreibungen hier übereinstimmen.",
- "disclaimer.238": "Wenn du auf ein Problem stößt, sieh bitte zuerst in die <a href=\"faq.html\">FAQ</a>. Hilft das nicht weiter, nutze die <a href=\"https://tsuzukit.com/contact/\">Kontaktseite</a> oder schreib an ryo.tsuzukihashi@tsuzukit.com."
+ "disclaimer.238": "Wenn du auf ein Problem stößt, sieh bitte zuerst in die <a href=\"faq.html\">FAQ</a>. Hilft das nicht weiter, nutze die <a href=\"https://tsuzukit.com/contact/\">Kontaktseite</a> oder schreib an ryo.tsuzukihashi@tsuzukit.com.",
+ "index.239": "Animationen laufen nur kurz direkt nach dem Schließen der App. Danach bleibt dein Liebling auf einem Standbild stehen."
 }

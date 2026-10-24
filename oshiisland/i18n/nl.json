@@ -70,7 +70,7 @@
  "faq.069": "Ik heb mijn favoriet op het toegangsscherm weggeveegd en nu is hij weg",
  "faq.070": "Als je je favoriet op het toegangsscherm wegveegt, stopt ook de weergave in het Dynamic Island. Open de app en dezelfde favoriet is terug. Hetzelfde geldt na het herstarten van je iPhone.",
  "faq.071": "De animatie stopt en wordt een stilstaand beeld",
- "faq.072": "Tot en met versie 1.4.0 zat er een fout in waardoor de animatie niet meer werd afgespeeld nadat je één keer terug was gegaan naar de app. Dit is opgelost in 1.4.1. Werk de app bij via de App Store en zet je favoriet daarna opnieuw in het Dynamic Island.",
+ "faq.072": "Nadat je de app hebt gesloten, beweegt de animatie alleen gedurende de korte tijd die iOS toestaat en blijft daarna op een stilstaand beeld staan. Volgens de huidige regels van iOS kan een app een animatie niet laten doorlopen terwijl de app gesloten is. Open de app en sluit hem opnieuw, dan beweegt de animatie weer even.",
  "faq.073": "Ik wil de weergave stoppen of een tijdje uitzetten",
  "faq.074": "Tik op het beginscherm van de app op ‘Beëindigen’ in de balk ‘Dynamic Island actief’ bovenaan. Je kunt ook lang op het Dynamic Island drukken om het uit te vouwen en rechtsboven op de × tikken.",
  "faq.075": "Een favoriet die je zelf hebt beëindigd, komt niet vanzelf terug als je de app opent. Wil je hem weer tonen, tik dan op je favoriet en kies ‘Instellen als Dynamic Island’.",
@@ -221,7 +221,7 @@
  "disclaimer.220": "Energiebesparingsinstellingen of iOS-updates kunnen veranderen hoe de weergave of animatie werkt",
  "disclaimer.221": "Ik kan geen verantwoordelijkheid nemen voor de tijd dat je favoriet om redenen als deze niet te zien is.",
  "disclaimer.222": "2. Animatie",
- "disclaimer.223": "Terwijl de App gesloten is, lopen animaties binnen de grenzen die iOS toestaat. Omdat iOS beperkt hoe lang de App kan blijven draaien, kunnen frames langzamer verspringen of stilvallen.",
+ "disclaimer.223": "Terwijl de App gesloten is, lopen animaties alleen gedurende de korte tijd die iOS toestaat en worden ze daarna als stilstaand beeld weergegeven. Volgens de huidige regels van iOS kan de App ze niet laten doorlopen terwijl de App gesloten is.",
  "disclaimer.224": "3. Pixelart maken van foto’s",
  "disclaimer.225": "De achtergrond wordt automatisch verwijderd door een functie van de iPhone, dus er kunnen delen verdwijnen die je wilde houden of delen blijven staan die weg moesten. Is het resultaat niet wat je wilt, zet dan ‘Achtergrond automatisch verwijderen’ uit.",
  "disclaimer.226": "4. Rechten op de favorieten die je maakt",
@@ -236,5 +236,6 @@
  "disclaimer.235": "De App is ontwikkeld door een individu en is niet verbonden aan Apple Inc. iPhone, Dynamic Island, App Store en AirDrop zijn handelsmerken van Apple Inc.",
  "disclaimer.236": "9. Deze website",
  "disclaimer.237": "De inhoud van deze site geeft de App weer zoals die was op het moment van schrijven. Door updates van de App kunnen schermen of stappen veranderen, waardoor ze niet meer overeenkomen met de beschrijvingen hier.",
- "disclaimer.238": "Loop je tegen een probleem aan, kijk dan eerst bij de <a href=\"faq.html\">veelgestelde vragen</a>. Helpt dat niet, gebruik dan de <a href=\"https://tsuzukit.com/contact/\">contactpagina</a> of mail naar ryo.tsuzukihashi@tsuzukit.com."
+ "disclaimer.238": "Loop je tegen een probleem aan, kijk dan eerst bij de <a href=\"faq.html\">veelgestelde vragen</a>. Helpt dat niet, gebruik dan de <a href=\"https://tsuzukit.com/contact/\">contactpagina</a> of mail naar ryo.tsuzukihashi@tsuzukit.com.",
+ "index.239": "Animaties bewegen alleen even, direct nadat je de app hebt gesloten. Daarna blijft je favoriet op een stilstaand beeld staan."
 }

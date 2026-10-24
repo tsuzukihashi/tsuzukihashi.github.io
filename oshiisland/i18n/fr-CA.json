@@ -70,7 +70,7 @@
  "faq.069": "J'ai balayé mon chouchou à l'écran verrouillé et il a disparu",
  "faq.070": "Balayer votre chouchou à l'écran verrouillé met aussi fin à l'affichage dans la Dynamic Island. Ouvrez l'appli et le même chouchou revient. C'est la même chose après le redémarrage de votre iPhone.",
  "faq.071": "L'animation s'arrête et devient une image fixe",
- "faq.072": "Jusqu'à la version 1.4.0, un bogue faisait en sorte que l'animation cessait de jouer après un retour dans l'appli. Il est corrigé dans la version 1.4.1. Mettez l'appli à jour à partir de l'App Store, puis installez de nouveau votre chouchou dans la Dynamic Island.",
+ "faq.072": "Après la fermeture de l'appli, l'animation ne joue que pendant le court moment permis par iOS, puis reste figée sur une image fixe. Selon les règles actuelles d'iOS, une appli ne peut pas faire jouer une animation en continu tant qu'elle est fermée. Si vous rouvrez l'appli puis la refermez, l'animation se remet à jouer pendant un petit moment.",
  "faq.073": "Je veux arrêter l'affichage, ou le désactiver un moment",
  "faq.074": "À l'écran d'accueil de l'appli, touchez « Terminer » sur la barre « Dynamic Island actif » en haut. Vous pouvez aussi appuyer longuement sur la Dynamic Island pour l'agrandir, puis toucher le × en haut à droite.",
  "faq.075": "Un chouchou que vous avez arrêté vous-même ne revient pas tout seul à l'ouverture de l'appli. Pour l'afficher de nouveau, touchez votre chouchou et choisissez « Définir sur Dynamic Island ».",
@@ -221,7 +221,7 @@
  "disclaimer.220": "Les réglages d'économie d'énergie ou les mises à jour d'iOS peuvent changer le comportement de l'affichage ou de l'animation",
  "disclaimer.221": "Je ne peux pas être tenu responsable du temps pendant lequel votre chouchou ne s'affiche pas pour de telles raisons.",
  "disclaimer.222": "2. Animation",
- "disclaimer.223": "Lorsque l'Application est fermée, les animations tournent dans les limites permises par iOS. Comme iOS limite le temps pendant lequel l'Application peut continuer de fonctionner, les images peuvent défiler plus lentement ou s'arrêter.",
+ "disclaimer.223": "Lorsque l'Application est fermée, les animations ne tournent que pendant le court moment permis par iOS, puis s'affichent comme une image fixe. Selon les règles actuelles d'iOS, l'Application ne peut pas les faire tourner en continu tant qu'elle est fermée.",
  "disclaimer.224": "3. Création de pixel art à partir de photos",
  "disclaimer.225": "Le retrait de l'arrière-plan est effectué automatiquement par une fonctionnalité de l'iPhone; il peut donc retirer des parties que vous vouliez garder ou laisser des parties que vous vouliez retirer. Si le résultat ne vous convient pas, désactivez « Supprimer l'arrière-plan automatiquement ».",
  "disclaimer.226": "4. Droits sur les chouchous que vous créez",
@@ -236,5 +236,6 @@
  "disclaimer.235": "L'Application est développée par un particulier et n'est pas affiliée à Apple Inc. iPhone, Dynamic Island, App Store et AirDrop sont des marques de commerce d'Apple Inc.",
  "disclaimer.236": "9. Ce site Web",
  "disclaimer.237": "Le contenu de ce site reflète l'Application au moment de sa rédaction. Les mises à jour de l'Application peuvent modifier les écrans ou les étapes, qui pourraient alors ne plus correspondre aux descriptions données ici.",
- "disclaimer.238": "En cas de problème, consultez d'abord la <a href=\"faq.html\">FAQ</a>. Si cela ne suffit pas, utilisez la <a href=\"https://tsuzukit.com/contact/\">page de contact</a> ou écrivez par courriel à ryo.tsuzukihashi@tsuzukit.com."
+ "disclaimer.238": "En cas de problème, consultez d'abord la <a href=\"faq.html\">FAQ</a>. Si cela ne suffit pas, utilisez la <a href=\"https://tsuzukit.com/contact/\">page de contact</a> ou écrivez par courriel à ryo.tsuzukihashi@tsuzukit.com.",
+ "index.239": "Les animations ne jouent que brièvement, juste après la fermeture de l'appli. Ensuite, votre chouchou reste sur une image fixe."
 }
