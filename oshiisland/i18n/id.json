@@ -100,7 +100,6 @@
  "faq.102": "Aku ingin pengembalian dana",
  "faq.103": "Pengembalian dana untuk pembelian di App Store ditangani oleh Apple, dan aku sebagai pengembang tidak bisa memprosesnya. Kamu bisa mengajukannya di <a href=\"https://reportaproblem.apple.com/\" rel=\"noopener\" target=\"_blank\">reportaproblem.apple.com</a>.",
  "faq.104": "Apakah paket mingguan dan pembelian sekali membuka fitur yang berbeda?",
- "faq.105": "Tidak, keduanya sama. Keduanya memungkinkan kamu membuat animasi sebanyak yang kamu mau, memakai semua ukuran grid dan efek gerak khusus untuk gambar dari foto, serta menghilangkan iklan. Bedanya hanya cara membayar.",
  "faq.106": "Datamu",
  "faq.107": "Di mana idola buatanku disimpan?",
  "faq.108": "Hanya di iPhone-mu. Tidak ada yang dikirim ke server. Kalau kamu menghapus aplikasi, idola yang sudah kamu buat juga ikut terhapus. Selengkapnya lihat <a href=\"privacy.html\">Kebijakan Privasi</a>.",
@@ -235,6 +234,9 @@
  "disclaimer.237": "Isi situs ini mencerminkan Aplikasi pada saat ditulis. Pembaruan Aplikasi dapat mengubah layar atau langkah sehingga tidak lagi sesuai dengan penjelasan di sini.",
  "disclaimer.238": "Jika Anda mengalami masalah, silakan lihat <a href=\"faq.html\">FAQ</a> terlebih dahulu. Jika masih belum teratasi, gunakan <a href=\"https://tsuzukit.com/contact/\">halaman kontak</a> atau kirim email ke ryo.tsuzukihashi@tsuzukit.com.",
  "index.239": "Animasi hanya bergerak sebentar tepat setelah kamu menutup aplikasi. Setelah itu, idolamu tetap menjadi gambar diam.",
+ "faq.116": "Aku ingin menampilkan dua idola berdampingan, di kiri dan kanan",
+ "faq.118": "Pertama, ketuk idola yang ingin kamu tampilkan di kiri dan pilih Atur ke Dynamic Island. Lalu, ketuk idola yang ingin kamu tampilkan di kanan dan pilih Pasang di sisi kanan Dynamic Island, dan keduanya akan tampil berdampingan.",
+ "faq.119": "Untuk menurunkan idola di kanan, ketuk idola itu dan pilih Turunkan dari sisi kanan. Kalau kamu mengganti idola di kiri, idola di kanan tetap di tempatnya. Selama ada idola di kanan, kalimatnya muncul di bagian bawah saat kamu menekan lama Dynamic Island untuk meluaskannya.",
  "index.240": "Satu idola di kiri dan satu di kanan Dynamic Island",
  "index.241": "Simpan beberapa kalimat yang berganti setiap kali kamu membuka app",
  "index.243": "Ganti ikon app di Layar Utama",
@@ -254,5 +256,8 @@
  "index.257": "Kamu bisa mengatur posisi dan ukuran idolamu agar pas dengan ponselmu di Pengaturan aplikasi.",
  "index.258": "File idola yang kamu buat (.oshianim) juga bisa saling dibagikan dengan versi iPhone.",
  "index.259": "Isi Paket Super Oshi di Android sedikit berbeda dari versi iPhone. Untuk detailnya, lihat layar pembelian di aplikasi dan Google Play.",
- "index.260": "Android dan Google Play adalah merek dagang Google LLC."
+ "index.260": "Android dan Google Play adalah merek dagang Google LLC.",
+ "faq.120": "Kamu bisa memasang satu idola di sisi kiri dan satu lagi di sisi kanan Dynamic Island. Mulai versi 1.6.0, fitur ini gratis.",
+ "faq.121": "Mulai versi 1.6.0, sebuah notifikasi muncul sesaat sebelum tampilannya berhenti. Ketuk notifikasinya untuk membuka aplikasi, dan idolamu kembali tampil di atas.",
+ "faq.122": "Tidak, keduanya sama. Keduanya memungkinkan kamu membuat animasi sebanyak yang kamu mau, menggilir beberapa kalimat, memakai tema, mengganti ikon app, mencadangkan ke iCloud secara otomatis, memakai semua ukuran grid dan efek gerak khusus untuk gambar dari foto, serta menghilangkan iklan. Bedanya hanya cara membayar."
 }

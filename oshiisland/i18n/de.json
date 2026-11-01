@@ -100,7 +100,6 @@
  "faq.102": "Ich möchte mein Geld zurück",
  "faq.103": "Rückerstattungen für Käufe im App Store werden von Apple bearbeitet. Als Entwickler kann ich sie nicht vornehmen. Du kannst sie unter <a href=\"https://reportaproblem.apple.com/\" rel=\"noopener\" target=\"_blank\">reportaproblem.apple.com</a> beantragen.",
  "faq.104": "Schalten der Wochenplan und der Einmalkauf unterschiedliche Funktionen frei?",
- "faq.105": "Nein, sie sind gleich. Mit beiden kannst du unbegrenzt viele Animationen erstellen, alle Rastergrößen und die speziellen Bewegungseffekte für Pixel-Art aus Fotos nutzen, und die Werbung verschwindet. Der einzige Unterschied ist die Art der Bezahlung.",
  "faq.106": "Deine Daten",
  "faq.107": "Wo werden meine Lieblinge gespeichert?",
  "faq.108": "Nur auf deinem iPhone. Es wird nichts an einen Server gesendet. Wenn du die App löschst, werden auch deine erstellten Lieblinge gelöscht. Einzelheiten findest du in der <a href=\"privacy.html\">Datenschutzerklärung</a>.",
@@ -235,6 +234,9 @@
  "disclaimer.237": "Die Inhalte dieser Website geben den Stand der App zum Zeitpunkt der Erstellung wieder. Durch App-Updates können sich Bildschirme oder Schritte so ändern, dass sie nicht mehr mit den Beschreibungen hier übereinstimmen.",
  "disclaimer.238": "Wenn du auf ein Problem stößt, sieh bitte zuerst in die <a href=\"faq.html\">FAQ</a>. Hilft das nicht weiter, nutze die <a href=\"https://tsuzukit.com/contact/\">Kontaktseite</a> oder schreib an ryo.tsuzukihashi@tsuzukit.com.",
  "index.239": "Animationen laufen nur kurz direkt nach dem Schließen der App. Danach bleibt dein Liebling auf einem Standbild stehen.",
+ "faq.116": "Ich möchte zwei Lieblinge nebeneinander zeigen, links und rechts",
+ "faq.118": "Tippe zuerst auf den Liebling, den du links haben möchtest, und wähle „Auf Dynamic Island setzen“. Tippe dann auf den Liebling, den du rechts haben möchtest, und wähle „Rechts auf die Dynamic Island setzen“ – schon stehen beide nebeneinander.",
+ "faq.119": "Um den Liebling rechts zu entfernen, tippe auf ihn und wähle „Von rechts entfernen“. Wenn du den Liebling links wechselst, bleibt der rechte, wo er ist. Solange rechts ein Liebling ist, erscheint der Satz unten, wenn du lange auf die Dynamic Island drückst, um sie zu erweitern.",
  "index.240": "Je einen Liebling links und rechts in der Dynamic Island",
  "index.241": "Mehrere Sätze speichern, die bei jedem Öffnen der App wechseln",
  "index.243": "App-Symbol auf dem Home-Bildschirm ändern",
@@ -254,5 +256,8 @@
  "index.257": "Position und Größe deines Lieblings kannst du in den Einstellungen der App an dein Handy anpassen.",
  "index.258": "Lieblingsdateien, die du erstellst (.oshianim), lassen sich auch mit der iPhone-Version austauschen.",
  "index.259": "Der Super Oshi Plan enthält auf Android etwas andere Inhalte als auf dem iPhone. Details findest du im Kaufbildschirm der App und bei Google Play.",
- "index.260": "Android und Google Play sind Marken der Google LLC."
+ "index.260": "Android und Google Play sind Marken der Google LLC.",
+ "faq.120": "Du kannst links und rechts auf der Dynamic Island je einen Liebling anzeigen. Ab Version 1.6.0 ist das kostenlos.",
+ "faq.121": "Ab Version 1.6.0 bekommst du kurz vor dem Ende eine Mitteilung. Tippe darauf, um die App zu öffnen, und dein Liebling ist wieder da.",
+ "faq.122": "Nein, sie sind gleich. Mit beiden kannst du unbegrenzt viele Animationen erstellen, mehrere Sätze im Wechsel anzeigen, Designs nutzen, das App-Symbol ändern, automatisch in iCloud sichern, alle Rastergrößen und die speziellen Bewegungseffekte für Pixel-Art aus Fotos nutzen, und die Werbung verschwindet. Der einzige Unterschied ist die Art der Bezahlung."
 }

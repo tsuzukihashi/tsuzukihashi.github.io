@@ -100,7 +100,6 @@
  "faq.102": "Tôi muốn được hoàn tiền",
  "faq.103": "Việc hoàn tiền cho giao dịch mua trên App Store do Apple tiếp nhận, nhà phát triển như tôi không thể xử lý. Bạn có thể yêu cầu tại <a href=\"https://reportaproblem.apple.com/\" rel=\"noopener\" target=\"_blank\">reportaproblem.apple.com</a>.",
  "faq.104": "Gói tuần và gói mua một lần có mở khóa tính năng khác nhau không?",
- "faq.105": "Không, hoàn toàn giống nhau. Cả hai đều cho tạo bao nhiêu hoạt ảnh tùy thích, dùng mọi kích thước lưới và hiệu ứng chuyển động đặc biệt khi tạo từ ảnh, và không còn quảng cáo. Khác nhau chỉ ở cách thanh toán.",
  "faq.106": "Dữ liệu của bạn",
  "faq.107": "Oshi tôi tạo được lưu ở đâu?",
  "faq.108": "Chỉ trong iPhone của bạn. Không có gì được gửi lên máy chủ. Nếu xóa ứng dụng, các oshi bạn đã tạo cũng bị xóa. Xem chi tiết tại <a href=\"privacy.html\">Chính sách quyền riêng tư</a>.",
@@ -235,6 +234,9 @@
  "disclaimer.237": "Nội dung trang web này dựa trên Ứng dụng tại thời điểm viết. Các bản cập nhật Ứng dụng có thể làm thay đổi màn hình hoặc các bước, khiến chúng không còn khớp với phần mô tả ở đây.",
  "disclaimer.238": "Nếu gặp sự cố, trước tiên hãy xem <a href=\"faq.html\">Câu hỏi thường gặp</a>. Nếu vẫn chưa giải quyết được, hãy dùng <a href=\"https://tsuzukit.com/contact/\">trang liên hệ</a> hoặc gửi email đến ryo.tsuzukihashi@tsuzukit.com.",
  "index.239": "Hoạt ảnh chỉ chạy trong thời gian ngắn ngay sau khi đóng ứng dụng. Sau đó, oshi sẽ dừng lại ở một ảnh tĩnh.",
+ "faq.116": "Tôi muốn hiển thị hai oshi cạnh nhau, bên trái và bên phải",
+ "faq.118": "Trước tiên, chạm vào oshi bạn muốn đặt bên trái rồi chọn “Đặt làm Dynamic Island”. Sau đó, chạm vào oshi bạn muốn đặt bên phải rồi chọn “Đặt ở bên phải Dynamic Island”, hai oshi sẽ hiện cạnh nhau.",
+ "faq.119": "Để gỡ oshi bên phải, hãy chạm vào oshi đó rồi chọn “Gỡ khỏi bên phải”. Dù bạn đổi oshi bên trái, oshi bên phải vẫn giữ nguyên. Trong lúc có oshi ở bên phải, câu thoại sẽ hiện ở phía dưới khi bạn nhấn giữ Dynamic Island để mở rộng.",
  "index.240": "Mỗi bên Dynamic Island một oshi",
  "index.241": "Lưu nhiều câu thoại, đổi sang câu khác mỗi lần mở ứng dụng",
  "index.243": "Đổi biểu tượng ứng dụng trên Màn hình chính",
@@ -254,5 +256,8 @@
  "index.257": "Bạn có thể chỉnh vị trí và kích thước của oshi cho vừa với điện thoại của mình trong phần Cài đặt của ứng dụng.",
  "index.258": "Tệp oshi bạn tạo (.oshianim) cũng có thể trao đổi với bản iPhone.",
  "index.259": "Nội dung của Gói Siêu Oshi hơi khác so với bản iPhone. Xem chi tiết tại màn hình mua hàng trong ứng dụng và trên Google Play.",
- "index.260": "Android và Google Play là nhãn hiệu của Google LLC."
+ "index.260": "Android và Google Play là nhãn hiệu của Google LLC.",
+ "faq.120": "Bạn có thể đặt một oshi ở bên trái và một oshi ở bên phải Dynamic Island. Từ phiên bản 1.6.0, tính năng này được dùng miễn phí.",
+ "faq.121": "Từ phiên bản 1.6.0, ngay trước khi dừng sẽ có thông báo. Chạm vào thông báo để mở ứng dụng là oshi lại xuất hiện.",
+ "faq.122": "Không, hoàn toàn giống nhau. Cả hai đều cho tạo bao nhiêu hoạt ảnh tùy thích, luân phiên nhiều câu thoại, dùng chủ đề, đổi biểu tượng ứng dụng, tự động sao lưu lên iCloud, dùng mọi kích thước lưới và hiệu ứng chuyển động đặc biệt khi tạo từ ảnh, và không còn quảng cáo. Khác nhau chỉ ở cách thanh toán."
 }

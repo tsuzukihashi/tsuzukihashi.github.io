@@ -100,7 +100,6 @@
  "faq.102": "Quiero un reembolso",
  "faq.103": "Los reembolsos de las compras del App Store los gestiona Apple, y yo, como desarrollador, no puedo tramitarlos. Puedes solicitarlo en <a href=\"https://reportaproblem.apple.com/\" rel=\"noopener\" target=\"_blank\">reportaproblem.apple.com</a>.",
  "faq.104": "¿El plan semanal y la compra única desbloquean funciones distintas?",
- "faq.105": "No, son iguales. Con los dos puedes crear todas las animaciones que quieras, usar todos los tamaños de cuadrícula y los efectos de movimiento especiales para las fotos, y quitar los anuncios. La única diferencia es la forma de pago.",
  "faq.106": "Tus datos",
  "faq.107": "¿Dónde se guardan mis oshis?",
  "faq.108": "Solo en tu iPhone. No se envía nada a ningún servidor. Si eliminas la app, los oshis que hayas creado también se eliminan. Consulta la <a href=\"privacy.html\">Política de privacidad</a> para más detalles.",
@@ -235,6 +234,9 @@
  "disclaimer.237": "El contenido de este sitio refleja la App en el momento de escribirlo. Las actualizaciones de la App pueden cambiar pantallas o pasos, de modo que dejen de coincidir con lo que se describe aquí.",
  "disclaimer.238": "Si tienes algún problema, consulta primero las <a href=\"faq.html\">preguntas frecuentes</a>. Si no se soluciona, usa la <a href=\"https://tsuzukit.com/contact/\">página de contacto</a> o escribe a ryo.tsuzukihashi@tsuzukit.com.",
  "index.239": "Las animaciones solo se mueven un rato justo después de cerrar la app. Después, tu oshi se queda en una imagen fija.",
+ "faq.116": "Quiero mostrar dos oshi uno al lado del otro, a la izquierda y a la derecha",
+ "faq.118": "Primero, toca el oshi que quieras a la izquierda y elige Establecer en Dynamic Island. Después, toca el oshi que quieras a la derecha y elige Poner a la derecha de la Dynamic Island, y los dos aparecerán uno al lado del otro.",
+ "faq.119": "Para quitar el oshi de la derecha, tócalo y elige Quitar de la derecha. Si cambias el oshi de la izquierda, el de la derecha se queda donde está. Mientras haya un oshi a la derecha, la frase aparece en la parte inferior cuando mantienes pulsada la Dynamic Island para ampliarla.",
  "index.240": "Un oshi a cada lado de la Dynamic Island",
  "index.241": "Guarda varias frases que cambian cada vez que abres la app",
  "index.243": "Cambia el icono de la app en la pantalla de inicio",
@@ -254,5 +256,8 @@
  "index.257": "Puedes ajustar la posición y el tamaño de tu oshi a tu móvil desde los ajustes de la app.",
  "index.258": "Los archivos de oshi que crees (.oshianim) también se pueden compartir con la versión para iPhone.",
  "index.259": "El contenido del Plan Super Oshi es un poco distinto al de la versión para iPhone. Para más detalles, consulta la pantalla de compra de la app y Google Play.",
- "index.260": "Android y Google Play son marcas comerciales de Google LLC."
+ "index.260": "Android y Google Play son marcas comerciales de Google LLC.",
+ "faq.120": "Puedes poner un oshi a la izquierda y otro a la derecha de la Dynamic Island. A partir de la versión 1.6.0, es gratis.",
+ "faq.121": "A partir de la versión 1.6.0, te llegará una notificación un poco antes de que se detenga. Toca la notificación para abrir la app y tu oshi volverá a estar arriba.",
+ "faq.122": "No, son iguales. Con los dos puedes crear todas las animaciones que quieras, alternar varias frases, usar temas, cambiar el icono de la app, hacer copias de seguridad automáticas en iCloud, usar todos los tamaños de cuadrícula y los efectos de movimiento especiales para las fotos, y quitar los anuncios. La única diferencia es la forma de pago."
 }

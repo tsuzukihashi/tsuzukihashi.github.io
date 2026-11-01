@@ -100,7 +100,6 @@
  "faq.102": "I'd like a refund",
  "faq.103": "Refunds for App Store purchases are handled by Apple, and I can't process them as the developer. You can request one at <a href=\"https://reportaproblem.apple.com/\" rel=\"noopener\" target=\"_blank\">reportaproblem.apple.com</a>.",
  "faq.104": "Do the weekly plan and the one-time purchase unlock different features?",
- "faq.105": "No, they're the same. Both let you make as many animations as you like, use every grid size and the special motion effects for photo art, and remove ads. The only difference is how you pay.",
  "faq.106": "Your data",
  "faq.107": "Where are my faves saved?",
  "faq.108": "Only on your iPhone. Nothing is sent to a server. If you delete the app, the faves you made are deleted too. See the <a href=\"privacy.html\">Privacy Policy</a> for details.",
@@ -235,6 +234,9 @@
  "disclaimer.237": "The content of this site reflects the App at the time of writing. App updates may change screens or steps so that they no longer match the descriptions here.",
  "disclaimer.238": "If you run into trouble, please check the <a href=\"faq.html\">FAQ</a> first. If that doesn't help, use the <a href=\"https://tsuzukit.com/contact/\">contact page</a> or email ryo.tsuzukihashi@tsuzukit.com.",
  "index.239": "Animations play only for a short time right after you close the app. After that, your fave stays on a still frame.",
+ "faq.116": "I want to show two faves side by side, left and right",
+ "faq.118": "First, tap the fave you want on the left and choose Set as Dynamic Island. Then tap the fave you want on the right and choose Place on the right of the Dynamic Island, and the two appear side by side.",
+ "faq.119": "To remove the fave on the right, tap it and choose Remove from the right side. Switching the fave on the left keeps the one on the right. While a fave is on the right, the line appears at the bottom when you long-press the Dynamic Island to expand it.",
  "index.240": "Put one fave on each side of the Dynamic Island",
  "index.241": "Save several lines and switch to the next one each time you open the app",
  "index.243": "Change the app icon on your Home Screen",
@@ -254,5 +256,8 @@
  "index.257": "You can adjust your fave's position and size to fit your phone in the app's Settings.",
  "index.258": "Fave files you make (.oshianim) can be shared with the iPhone version, too.",
  "index.259": "The Super Oshi Plan includes slightly different things on Android. See the purchase screen in the app and Google Play for details.",
- "index.260": "Android and Google Play are trademarks of Google LLC."
+ "index.260": "Android and Google Play are trademarks of Google LLC.",
+ "faq.120": "You can put one fave on the left and one on the right of the Dynamic Island. From version 1.6.0, it's free to use.",
+ "faq.121": "From version 1.6.0, you get a notification a little before it stops. Tap the notification to open the app and your fave is back on top.",
+ "faq.122": "No, they're the same. Both let you make as many animations as you like, rotate through several lines, use themes, change the app icon, back up automatically to iCloud, use every grid size and the special motion effects for photo art, and remove ads. The only difference is how you pay."
 }

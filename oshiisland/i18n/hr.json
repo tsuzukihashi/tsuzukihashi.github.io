@@ -100,7 +100,6 @@
  "faq.102": "Želim povrat novca",
  "faq.103": "Povrat novca za kupnje u App Storeu obrađuje Apple, a ja ga kao razvojni programer ne mogu obraditi. Zahtjev možete podnijeti na <a href=\"https://reportaproblem.apple.com/\" rel=\"noopener\" target=\"_blank\">reportaproblem.apple.com</a>.",
  "faq.104": "Otključavaju li tjedni plan i jednokratna kupnja različite značajke?",
- "faq.105": "Ne, iste su. Oba omogućuju neograničen broj animacija, sve veličine mreže i posebne efekte pokreta za izradu iz fotografija te uklanjaju oglase. Razlika je samo u načinu plaćanja.",
  "faq.106": "Vaši podaci",
  "faq.107": "Gdje se spremaju moji oshiji?",
  "faq.108": "Samo na vašem iPhoneu. Ništa se ne šalje na poslužitelj. Ako izbrišete aplikaciju, brišu se i oshiji koje ste napravili. Pojedinosti potražite u dokumentu <a href=\"privacy.html\">Pravila o privatnosti</a>.",
@@ -235,6 +234,9 @@
  "disclaimer.237": "Sadržaj ove stranice odražava Aplikaciju u trenutku pisanja. Ažuriranja Aplikacije mogu promijeniti zaslone ili korake pa se oni više neće podudarati s ovdje navedenim opisima.",
  "disclaimer.238": "Ako naiđete na problem, najprije pogledajte <a href=\"faq.html\">Česta pitanja</a>. Ako to ne pomogne, upotrijebite <a href=\"https://tsuzukit.com/contact/\">stranicu za kontakt</a> ili pišite na ryo.tsuzukihashi@tsuzukit.com.",
  "index.239": "Animacije se kreću samo kratko odmah nakon zatvaranja aplikacije. Nakon toga vaš oshi ostaje na statičnoj slici.",
+ "faq.116": "Želim prikazati dva oshija jedan pokraj drugoga, lijevo i desno",
+ "faq.118": "Najprije dodirnite oshija kojeg želite lijevo i odaberite „Postavi na Dynamic Island“. Zatim dodirnite oshija kojeg želite desno i odaberite „Postavi desno na Dynamic Island“ i oba će se prikazati jedan pokraj drugoga.",
+ "faq.119": "Da biste uklonili oshija s desne strane, dodirnite ga i odaberite „Ukloni s desne strane“. Ako zamijenite oshija s lijeve strane, onaj s desne ostaje. Dok je oshi s desne strane, rečenica se prikazuje dolje kad dugo pritisnete Dynamic Island da biste ga proširili.",
  "index.240": "Po jedan oshi sa svake strane Dynamic Islanda",
  "index.241": "Spremite više rečenica koje se mijenjaju pri svakom otvaranju aplikacije",
  "index.243": "Promijenite ikonu aplikacije na početnom zaslonu",
@@ -254,5 +256,8 @@
  "index.257": "Položaj i veličinu oshija možete prilagoditi svom telefonu u postavkama aplikacije.",
  "index.258": "Datoteke oshija koje izradite (.oshianim) mogu se razmjenjivati i s verzijom za iPhone.",
  "index.259": "Super Oshi Plan na Androidu uključuje ponešto drukčije stvari nego na iPhoneu. Pojedinosti potražite na zaslonu za kupnju u aplikaciji i na Google Playu.",
- "index.260": "Android i Google Play zaštitni su znakovi tvrtke Google LLC."
+ "index.260": "Android i Google Play zaštitni su znakovi tvrtke Google LLC.",
+ "faq.120": "Na Dynamic Island možete staviti jednog oshija lijevo i jednog desno. Od verzije 1.6.0 to je besplatno.",
+ "faq.121": "Od verzije 1.6.0 malo prije zaustavljanja stiže obavijest. Dodirnite obavijest da otvorite aplikaciju i vaš se oshi vraća na vrh.",
+ "faq.122": "Ne, iste su. Oba omogućuju neograničen broj animacija, izmjenjivanje više rečenica, teme, promjenu ikone aplikacije, automatsku sigurnosnu kopiju na iCloud, sve veličine mreže i posebne efekte pokreta za izradu iz fotografija te uklanjaju oglase. Razlika je samo u načinu plaćanja."
 }

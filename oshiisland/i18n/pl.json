@@ -100,7 +100,6 @@
  "faq.102": "Chcę otrzymać zwrot pieniędzy",
  "faq.103": "Zwroty za zakupy w App Store obsługuje Apple – jako deweloper nie mogę ich realizować. Prośbę o zwrot możesz złożyć na stronie <a href=\"https://reportaproblem.apple.com/\" rel=\"noopener\" target=\"_blank\">reportaproblem.apple.com</a>.",
  "faq.104": "Czy plan tygodniowy i jednorazowy zakup odblokowują różne funkcje?",
- "faq.105": "Nie, są takie same. Oba pozwalają tworzyć dowolną liczbę animacji, używać wszystkich rozmiarów siatki i specjalnych efektów ruchu przy tworzeniu ze zdjęć oraz usuwają reklamy. Różni je tylko sposób płatności.",
  "faq.106": "Twoje dane",
  "faq.107": "Gdzie są zapisywani moi ulubieńcy?",
  "faq.108": "Tylko na Twoim iPhonie. Nic nie jest wysyłane na serwer. Jeśli usuniesz aplikację, stworzeni ulubieńcy również zostaną usunięci. Szczegóły znajdziesz w <a href=\"privacy.html\">Polityce prywatności</a>.",
@@ -235,6 +234,9 @@
  "disclaimer.237": "Treść tej witryny odzwierciedla stan Aplikacji w chwili pisania. Aktualizacje Aplikacji mogą zmienić ekrany lub kroki tak, że przestaną odpowiadać opisom tutaj.",
  "disclaimer.238": "Jeśli napotkasz problem, najpierw zajrzyj do <a href=\"faq.html\">FAQ</a>. Jeśli to nie pomoże, skorzystaj ze <a href=\"https://tsuzukit.com/contact/\">strony kontaktowej</a> lub napisz na adres ryo.tsuzukihashi@tsuzukit.com.",
  "index.239": "Animacje poruszają się tylko przez chwilę zaraz po zamknięciu aplikacji. Potem ulubieniec zostaje na nieruchomym obrazie.",
+ "faq.116": "Chcę wyświetlić dwóch ulubieńców obok siebie, po lewej i po prawej",
+ "faq.118": "Najpierw stuknij ulubieńca, którego chcesz mieć po lewej, i wybierz „Ustaw jako Dynamic Island”. Następnie stuknij ulubieńca, którego chcesz mieć po prawej, i wybierz „Umieść po prawej stronie Dynamic Island” – wtedy obaj pojawią się obok siebie.",
+ "faq.119": "Aby zdjąć ulubieńca z prawej strony, stuknij go i wybierz „Zdejmij z prawej strony”. Jeśli zmienisz ulubieńca po lewej, ten po prawej zostanie na miejscu. Dopóki po prawej jest ulubieniec, kwestia pojawia się na dole, gdy przytrzymasz Dynamic Island, aby ją rozwinąć.",
  "index.240": "Po jednym ulubieńcu z każdej strony Dynamic Island",
  "index.241": "Kilka kwestii, które zmieniają się przy każdym otwarciu aplikacji",
  "index.243": "Zmiana ikony aplikacji na ekranie początkowym",
@@ -254,5 +256,8 @@
  "index.257": "W Ustawieniach aplikacji możesz dopasować położenie i rozmiar ulubieńca do swojego telefonu.",
  "index.258": "Pliki ulubieńców, które tworzysz (.oshianim), można też wymieniać z wersją na iPhone’a.",
  "index.259": "Super Oshi Plan na Androidzie obejmuje nieco inne elementy niż na iPhonie. Szczegóły znajdziesz na ekranie zakupu w aplikacji i w Google Play.",
- "index.260": "Android i Google Play są znakami towarowymi Google LLC."
+ "index.260": "Android i Google Play są znakami towarowymi Google LLC.",
+ "faq.120": "Możesz umieścić jednego ulubieńca po lewej, a drugiego po prawej stronie Dynamic Island. Od wersji 1.6.0 ta funkcja jest bezpłatna.",
+ "faq.121": "Od wersji 1.6.0 chwilę przed zakończeniem wyświetlania przychodzi powiadomienie. Dotknij go, aby otworzyć aplikację, a Twój ulubieniec znów będzie na górze.",
+ "faq.122": "Nie, są takie same. Oba pozwalają tworzyć dowolną liczbę animacji, zmieniać kilka kwestii na zmianę, używać motywów, zmieniać ikonę aplikacji, automatycznie tworzyć kopię zapasową w iCloud, używać wszystkich rozmiarów siatki i specjalnych efektów ruchu przy tworzeniu ze zdjęć oraz usuwają reklamy. Różni je tylko sposób płatności."
 }

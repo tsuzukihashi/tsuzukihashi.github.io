@@ -100,7 +100,6 @@
  "faq.102": "Haluan hyvityksen",
  "faq.103": "App Store -ostosten hyvitykset käsittelee Apple, enkä voi kehittäjänä käsitellä niitä. Voit pyytää hyvitystä osoitteessa <a href=\"https://reportaproblem.apple.com/\" rel=\"noopener\" target=\"_blank\">reportaproblem.apple.com</a>.",
  "faq.104": "Avaavatko viikkotilaus ja kertaosto eri ominaisuuksia?",
- "faq.105": "Eivät, ne ovat samat. Molemmilla voit tehdä rajattomasti animaatioita, käyttää kaikkia ruudukon kokoja ja valokuvista tehtyjen kuvien erityisiä liike-efektejä, ja mainokset poistuvat. Ainoa ero on maksutapa.",
  "faq.106": "Tietosi",
  "faq.107": "Mihin oshini tallennetaan?",
  "faq.108": "Vain iPhoneesi. Mitään ei lähetetä palvelimelle. Jos poistat apin, myös tekemäsi oshit poistuvat. Lisätietoja on <a href=\"privacy.html\">tietosuojakäytännössä</a>.",
@@ -235,6 +234,9 @@
  "disclaimer.237": "Tämän sivuston sisältö vastaa Appia kirjoitushetkellä. Apin päivitykset voivat muuttaa näkymiä tai vaiheita niin, etteivät ne enää vastaa tässä annettuja kuvauksia.",
  "disclaimer.238": "Jos kohtaat ongelmia, katso ensin <a href=\"faq.html\">UKK</a>. Jos siitä ei ole apua, käytä <a href=\"https://tsuzukit.com/contact/\">yhteydenottosivua</a> tai lähetä sähköpostia osoitteeseen ryo.tsuzukihashi@tsuzukit.com.",
  "index.239": "Animaatiot liikkuvat vain hetken heti apin sulkemisen jälkeen. Sen jälkeen oshisi jää pysäytyskuvaksi.",
+ "faq.116": "Haluan näyttää kaksi oshia rinnakkain, vasemmalla ja oikealla",
+ "faq.118": "Napauta ensin oshia, jonka haluat vasemmalle, ja valitse ”Aseta Dynamic Islandiin”. Napauta sitten oshia, jonka haluat oikealle, ja valitse ”Aseta Dynamic Islandin oikealle puolelle”, niin oshit näkyvät rinnakkain.",
+ "faq.119": "Kun haluat poistaa oikeanpuoleisen oshin, napauta sitä ja valitse ”Poista oikealta puolelta”. Vaikka vaihtaisit vasemmanpuoleisen oshin, oikeanpuoleinen pysyy paikallaan. Kun oikealla on oshi, repliikki näkyy alareunassa, kun avaat Dynamic Islandin painamalla sitä pitkään.",
  "index.240": "Yksi oshi Dynamic Islandin kummallekin puolelle",
  "index.241": "Tallenna useita repliikkejä, jotka vaihtuvat aina kun avaat apin",
  "index.243": "Vaihda apin kuvake Koti-valikossa",
@@ -254,5 +256,8 @@
  "index.257": "Voit säätää oshisi sijainnin ja koon puhelimeesi sopivaksi apin asetuksissa.",
  "index.258": "Tekemiäsi oshi-tiedostoja (.oshianim) voi jakaa myös iPhone-version kanssa.",
  "index.259": "Super Oshi -tilauksen sisältö on hieman erilainen kuin iPhone-versiossa. Lisätietoja löydät apin ostonäkymästä ja Google Playsta.",
- "index.260": "Android ja Google Play ovat Google LLC:n tavaramerkkejä."
+ "index.260": "Android ja Google Play ovat Google LLC:n tavaramerkkejä.",
+ "faq.120": "Voit laittaa yhden oshin Dynamic Islandin vasemmalle ja toisen oikealle puolelle. Versiosta 1.6.0 alkaen se on ilmainen.",
+ "faq.121": "Versiosta 1.6.0 alkaen saat ilmoituksen vähän ennen kuin näyttö pysähtyy. Napauta ilmoitusta, niin appi avautuu ja oshisi on taas paikallaan.",
+ "faq.122": "Eivät, ne ovat samat. Molemmilla voit tehdä rajattomasti animaatioita, vaihdella useita repliikkejä, käyttää teemoja, vaihtaa apin kuvakkeen, varmuuskopioida automaattisesti iCloudiin, käyttää kaikkia ruudukon kokoja ja valokuvista tehtyjen kuvien erityisiä liike-efektejä, ja mainokset poistuvat. Ainoa ero on maksutapa."
 }

@@ -100,7 +100,6 @@
  "faq.102": "Quero um reembolso",
  "faq.103": "Os reembolsos de compras na App Store são tratados pela Apple, e eu, enquanto programador, não os posso processar. Pode pedi-lo em <a href=\"https://reportaproblem.apple.com/\" rel=\"noopener\" target=\"_blank\">reportaproblem.apple.com</a>.",
  "faq.104": "O plano semanal e a compra única desbloqueiam funcionalidades diferentes?",
- "faq.105": "Não, são iguais. Ambos permitem criar as animações que quiser, usar todos os tamanhos de grelha e os movimentos especiais na criação a partir de fotografias, e removem os anúncios. A única diferença é a forma de pagamento.",
  "faq.106": "Os seus dados",
  "faq.107": "Onde ficam guardados os meus favoritos?",
  "faq.108": "Apenas no seu iPhone. Nada é enviado para um servidor. Se apagar a app, os favoritos que criou também são apagados. Para mais pormenores, consulte a <a href=\"privacy.html\">Política de privacidade</a>.",
@@ -235,6 +234,9 @@
  "disclaimer.237": "O conteúdo deste site reflete a App no momento em que foi escrito. As atualizações da App podem alterar ecrãs ou passos, que assim podem deixar de corresponder às descrições aqui apresentadas.",
  "disclaimer.238": "Se tiver algum problema, consulte primeiro as <a href=\"faq.html\">Perguntas frequentes</a>. Se não ajudar, use a <a href=\"https://tsuzukit.com/contact/\">página de contacto</a> ou envie um e-mail para ryo.tsuzukihashi@tsuzukit.com.",
  "index.239": "As animações só se mexem durante pouco tempo, logo depois de fechar a app. Depois disso, o seu favorito fica numa imagem fixa.",
+ "faq.116": "Quero mostrar dois favoritos lado a lado, à esquerda e à direita",
+ "faq.118": "Primeiro, toque no favorito que quer à esquerda e escolha Definir no Dynamic Island. Depois, toque no favorito que quer à direita e escolha Colocar no lado direito do Dynamic Island, e os dois aparecem lado a lado.",
+ "faq.119": "Para retirar o favorito da direita, toque nele e escolha Retirar do lado direito. Se trocar o favorito da esquerda, o da direita mantém-se no lugar. Enquanto houver um favorito à direita, a frase aparece em baixo quando mantém premida a Dynamic Island para a expandir.",
  "index.240": "Um favorito de cada lado da Dynamic Island",
  "index.241": "Guarde várias frases que mudam sempre que abre a app",
  "index.243": "Mude o ícone da app no ecrã principal",
@@ -254,5 +256,8 @@
  "index.257": "Nas Definições da app, pode ajustar a posição e o tamanho do seu favorito ao seu telemóvel.",
  "index.258": "Os ficheiros de favoritos que criar (.oshianim) também podem ser trocados com a versão para iPhone.",
  "index.259": "O Plano Super Oshi inclui conteúdos ligeiramente diferentes no Android. Consulte o ecrã de compra na app e o Google Play para mais detalhes.",
- "index.260": "Android e Google Play são marcas comerciais da Google LLC."
+ "index.260": "Android e Google Play são marcas comerciais da Google LLC.",
+ "faq.120": "Pode colocar um favorito à esquerda e outro à direita da Dynamic Island. A partir da versão 1.6.0, é gratuito.",
+ "faq.121": "A partir da versão 1.6.0, recebe uma notificação pouco antes de parar. Toque na notificação para abrir a app e o seu favorito volta a aparecer no topo.",
+ "faq.122": "Não, são iguais. Ambos permitem criar as animações que quiser, alternar várias frases, usar temas, mudar o ícone da app, fazer cópias de segurança automáticas no iCloud, usar todos os tamanhos de grelha e os movimentos especiais na criação a partir de fotografias, e removem os anúncios. A única diferença é a forma de pagamento."
 }

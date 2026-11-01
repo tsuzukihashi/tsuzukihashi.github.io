@@ -100,7 +100,6 @@
  "faq.102": "Je voudrais un remboursement",
  "faq.103": "Les remboursements des achats sur l'App Store sont gérés par Apple, et je ne peux pas les traiter en tant que développeur. Vous pouvez en faire la demande sur <a href=\"https://reportaproblem.apple.com/\" rel=\"noopener\" target=\"_blank\">reportaproblem.apple.com</a>.",
  "faq.104": "Le forfait hebdomadaire et l'achat unique débloquent-ils des fonctionnalités différentes ?",
- "faq.105": "Non, ce sont les mêmes. Les deux vous permettent de créer autant d'animations que vous voulez, d'utiliser toutes les tailles de grille et les effets de mouvement spéciaux pour le pixel art créé à partir de photos, et de supprimer les publicités. Seul le mode de paiement change.",
  "faq.106": "Vos données",
  "faq.107": "Où sont enregistrés mes chouchous ?",
  "faq.108": "Uniquement sur votre iPhone. Rien n'est envoyé à un serveur. Si vous supprimez l'app, les chouchous que vous avez créés sont supprimés aussi. Consultez la <a href=\"privacy.html\">Politique de confidentialité</a> pour en savoir plus.",
@@ -235,6 +234,9 @@
  "disclaimer.237": "Le contenu de ce site reflète l'App au moment de sa rédaction. Les mises à jour de l'App peuvent modifier les écrans ou les étapes, qui peuvent alors ne plus correspondre aux descriptions données ici.",
  "disclaimer.238": "En cas de problème, consultez d'abord la <a href=\"faq.html\">FAQ</a>. Si cela ne suffit pas, utilisez la <a href=\"https://tsuzukit.com/contact/\">page de contact</a> ou écrivez à ryo.tsuzukihashi@tsuzukit.com.",
  "index.239": "Les animations ne tournent que brièvement, juste après la fermeture de l'app. Ensuite, votre chouchou reste sur une image fixe.",
+ "faq.116": "Je veux afficher deux chouchous côte à côte, à gauche et à droite",
+ "faq.118": "Touchez d'abord le chouchou que vous voulez à gauche et choisissez « Définir sur Dynamic Island ». Touchez ensuite le chouchou que vous voulez à droite et choisissez « Placer à droite de la Dynamic Island », et les deux s'affichent côte à côte.",
+ "faq.119": "Pour retirer le chouchou de droite, touchez-le et choisissez « Retirer de la droite ». Si vous changez le chouchou de gauche, celui de droite reste en place. Tant qu'un chouchou est à droite, la réplique s'affiche en bas quand vous maintenez le doigt sur la Dynamic Island pour l'agrandir.",
  "index.240": "Un chouchou de chaque côté de la Dynamic Island",
  "index.241": "Plusieurs répliques qui changent à chaque ouverture de l'app",
  "index.243": "Changez l'icône de l'app sur l'écran d'accueil",
@@ -254,5 +256,8 @@
  "index.257": "Vous pouvez ajuster la position et la taille de votre chouchou à votre téléphone dans les réglages de l'app.",
  "index.258": "Les fichiers de chouchou que vous créez (.oshianim) peuvent aussi être échangés avec la version iPhone.",
  "index.259": "Le contenu du Super Oshi Plan diffère un peu de celui de la version iPhone. Pour en savoir plus, consultez l'écran d'achat de l'app et Google Play.",
- "index.260": "Android et Google Play sont des marques de Google LLC."
+ "index.260": "Android et Google Play sont des marques de Google LLC.",
+ "faq.120": "Vous pouvez placer un chouchou à gauche et un autre à droite de la Dynamic Island. Depuis la version 1.6.0, c'est gratuit.",
+ "faq.121": "Depuis la version 1.6.0, une notification arrive un peu avant l'arrêt. Touchez-la pour ouvrir l'app, et votre chouchou est de retour.",
+ "faq.122": "Non, ce sont les mêmes. Les deux vous permettent de créer autant d'animations que vous voulez, d'alterner plusieurs répliques, d'utiliser les thèmes, de changer l'icône de l'app, de sauvegarder automatiquement sur iCloud, d'utiliser toutes les tailles de grille et les effets de mouvement spéciaux pour le pixel art créé à partir de photos, et de supprimer les publicités. Seul le mode de paiement change."
 }

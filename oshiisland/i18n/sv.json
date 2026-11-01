@@ -100,7 +100,6 @@
  "faq.102": "Jag vill ha pengarna tillbaka",
  "faq.103": "Återbetalningar för köp i App Store hanteras av Apple, och som utvecklare kan jag inte genomföra dem. Du kan begära en återbetalning på <a href=\"https://reportaproblem.apple.com/\" rel=\"noopener\" target=\"_blank\">reportaproblem.apple.com</a>.",
  "faq.104": "Låser veckoplanen och engångsköpet upp olika funktioner?",
- "faq.105": "Nej, de är likadana. Med båda kan du skapa hur många animationer du vill, använda alla rutnätsstorlekar och de speciella rörelseeffekterna för fotokonst, och annonserna försvinner. Den enda skillnaden är hur du betalar.",
  "faq.106": "Dina data",
  "faq.107": "Var sparas mina favoriter?",
  "faq.108": "Bara på din iPhone. Inget skickas till någon server. Om du raderar appen raderas även favoriterna du har skapat. Mer information finns i <a href=\"privacy.html\">integritetspolicyn</a>.",
@@ -235,6 +234,9 @@
  "disclaimer.237": "Innehållet på den här webbplatsen återspeglar Appen vid tidpunkten då det skrevs. Uppdateringar av Appen kan ändra skärmar eller steg så att de inte längre stämmer med beskrivningarna här.",
  "disclaimer.238": "Om du stöter på problem, titta först i <a href=\"faq.html\">Vanliga frågor</a>. Om det inte hjälper kan du använda <a href=\"https://tsuzukit.com/contact/\">kontaktsidan</a> eller mejla ryo.tsuzukihashi@tsuzukit.com.",
  "index.239": "Animationer spelas bara upp en kort stund direkt efter att du har stängt appen. Sedan blir din favorit stående på en stillbild.",
+ "faq.116": "Jag vill visa två favoriter sida vid sida, till vänster och höger",
+ "faq.118": "Tryck först på favoriten du vill ha till vänster och välj ”Ställ in på Dynamic Island”. Tryck sedan på favoriten du vill ha till höger och välj ”Placera på högra sidan av Dynamic Island”, så visas de två sida vid sida.",
+ "faq.119": "Om du vill ta bort favoriten till höger trycker du på den och väljer ”Ta bort från höger sida”. Om du byter favoriten till vänster ligger favoriten till höger kvar. Så länge det finns en favorit till höger visas repliken längst ned när du trycker länge på Dynamic Island för att expandera den.",
  "index.240": "En favorit på var sida av Dynamic Island",
  "index.241": "Spara flera repliker som byts varje gång du öppnar appen",
  "index.243": "Byt appsymbol på hemskärmen",
@@ -254,5 +256,8 @@
  "index.257": "Du kan anpassa favoritens position och storlek efter din telefon i appens Inställningar.",
  "index.258": "Favoritfiler du skapar (.oshianim) kan även delas med iPhone-versionen.",
  "index.259": "Innehållet i Super Oshi Plan skiljer sig något från iPhone-versionen. Mer information finns på köpskärmen i appen och på Google Play.",
- "index.260": "Android och Google Play är varumärken som tillhör Google LLC."
+ "index.260": "Android och Google Play är varumärken som tillhör Google LLC.",
+ "faq.120": "Du kan placera en favorit till vänster och en till höger på Dynamic Island. Från och med version 1.6.0 är det gratis.",
+ "faq.121": "Från och med version 1.6.0 kommer en notis strax innan visningen avslutas. Tryck på notisen för att öppna appen, så är din favorit tillbaka.",
+ "faq.122": "Nej, de är likadana. Med båda kan du skapa hur många animationer du vill, växla mellan flera repliker, använda teman, byta appsymbol, säkerhetskopiera automatiskt till iCloud, använda alla rutnätsstorlekar och de speciella rörelseeffekterna för fotokonst, och annonserna försvinner. Den enda skillnaden är hur du betalar."
 }

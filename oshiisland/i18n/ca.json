@@ -100,7 +100,6 @@
  "faq.102": "Voldria un reemborsament",
  "faq.103": "Els reemborsaments de les compres de l'App Store els gestiona Apple, i jo, com a desenvolupador, no els puc tramitar. En pots sol·licitar un a <a href=\"https://reportaproblem.apple.com/\" rel=\"noopener\" target=\"_blank\">reportaproblem.apple.com</a>.",
  "faq.104": "El pla setmanal i la compra única desbloquegen funcions diferents?",
- "faq.105": "No, són les mateixes. Amb tots dos pots crear totes les animacions que vulguis, fer servir totes les mides de quadrícula i els efectes de moviment especials per a les creacions a partir de fotos, i treure els anuncis. L'única diferència és la manera de pagar.",
  "faq.106": "Les teves dades",
  "faq.107": "On es desen els meus preferits?",
  "faq.108": "Només al teu iPhone. No s'envia res a cap servidor. Si elimines l'app, també s'eliminen els preferits que has creat. Consulta la <a href=\"privacy.html\">Política de privacitat</a> per a més detalls.",
@@ -235,6 +234,9 @@
  "disclaimer.237": "El contingut d'aquest lloc web reflecteix l'App en el moment de redactar-lo. Les actualitzacions de l'App poden canviar pantalles o passos, i és possible que deixin de coincidir amb les descripcions d'aquí.",
  "disclaimer.238": "Si tens cap problema, consulta primer les <a href=\"faq.html\">preguntes freqüents</a>. Si no t'ajuden, fes servir la <a href=\"https://tsuzukit.com/contact/\">pàgina de contacte</a> o escriu a ryo.tsuzukihashi@tsuzukit.com.",
  "index.239": "Les animacions només es mouen una estona curta just després de tancar l'app. Després, el teu preferit es queda en una imatge fixa.",
+ "faq.116": "Vull mostrar dos preferits un al costat de l'altre, a l'esquerra i a la dreta",
+ "faq.118": "Primer, toca el preferit que vols a l'esquerra i tria «Estableix a Dynamic Island». Després, toca el preferit que vols a la dreta i tria «Posa a la dreta de la Dynamic Island», i apareixeran tots dos l'un al costat de l'altre.",
+ "faq.119": "Per treure el preferit de la dreta, toca'l i tria «Treu de la dreta». Si canvies el preferit de l'esquerra, el de la dreta es queda on és. Mentre hi hagi un preferit a la dreta, la frase apareix a la part de baix quan mantens premuda la Dynamic Island per ampliar-la.",
  "index.240": "Un preferit a cada costat de la Dynamic Island",
  "index.241": "Desa diverses frases i canvien cada vegada que obres l'app",
  "index.243": "Canvia la icona de l'app a la pantalla d'inici",
@@ -254,5 +256,8 @@
  "index.257": "Pots ajustar la posició i la mida del teu preferit al teu telèfon des de la configuració de l'app.",
  "index.258": "Els fitxers de preferits que creïs (.oshianim) també es poden compartir amb la versió per a iPhone.",
  "index.259": "El contingut del Pla Super Oshi és una mica diferent del de la versió per a iPhone. Per a més detalls, consulta la pantalla de compra de l'app i Google Play.",
- "index.260": "Android i Google Play són marques comercials de Google LLC."
+ "index.260": "Android i Google Play són marques comercials de Google LLC.",
+ "faq.120": "Pots posar un preferit a l'esquerra i un altre a la dreta de la Dynamic Island. A partir de la versió 1.6.0, és gratuït.",
+ "faq.121": "A partir de la versió 1.6.0, rebràs una notificació una mica abans que s'aturi. Toca la notificació per obrir l'app i el teu preferit hi tornarà a ser.",
+ "faq.122": "No, són les mateixes. Amb tots dos pots crear totes les animacions que vulguis, alternar diverses frases, fer servir temes, canviar la icona de l'app, fer còpies de seguretat automàtiques a iCloud, fer servir totes les mides de quadrícula i els efectes de moviment especials per a les creacions a partir de fotos, i treure els anuncis. L'única diferència és la manera de pagar."
 }

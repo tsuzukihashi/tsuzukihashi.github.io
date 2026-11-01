@@ -100,7 +100,6 @@
  "faq.102": "Chci vrátit peníze",
  "faq.103": "Vrácení peněz za nákupy v App Storu vyřizuje Apple a já jako vývojář je provést nemohu. Požádat o ně můžete na <a href=\"https://reportaproblem.apple.com/\" rel=\"noopener\" target=\"_blank\">reportaproblem.apple.com</a>.",
  "faq.104": "Odemykají týdenní plán a jednorázový nákup různé funkce?",
- "faq.105": "Ne, jsou stejné. Oba umožňují vytvářet neomezený počet animací, používat všechny velikosti mřížky a speciální pohybové efekty při tvorbě z fotek a odstraní reklamy. Liší se jen způsobem placení.",
  "faq.106": "Vaše data",
  "faq.107": "Kde jsou moji miláčci uloženi?",
  "faq.108": "Pouze ve vašem iPhonu. Nic se neodesílá na server. Pokud aplikaci smažete, smažou se i vytvoření miláčci. Podrobnosti najdete v <a href=\"privacy.html\">Zásadách ochrany osobních údajů</a>.",
@@ -235,6 +234,9 @@
  "disclaimer.237": "Obsah tohoto webu odpovídá stavu Aplikace v době psaní. Aktualizace Aplikace mohou změnit obrazovky nebo postupy tak, že už nebudou odpovídat zdejšímu popisu.",
  "disclaimer.238": "Pokud narazíte na potíže, podívejte se nejdřív do <a href=\"faq.html\">Častých dotazů</a>. Pokud to nepomůže, použijte <a href=\"https://tsuzukit.com/contact/\">kontaktní stránku</a> nebo napište na ryo.tsuzukihashi@tsuzukit.com.",
  "index.239": "Animace běží jen krátce hned po zavření aplikace. Pak miláček zůstane stát na jednom snímku.",
+ "faq.116": "Chci zobrazit dva miláčky vedle sebe, vlevo a vpravo",
+ "faq.118": "Nejprve klepněte na miláčka, kterého chcete mít vlevo, a zvolte „Nastavit na Dynamic Island“. Potom klepněte na miláčka, kterého chcete mít vpravo, a zvolte „Umístit vpravo na Dynamic Island“. Oba se pak zobrazí vedle sebe.",
+ "faq.119": "Chcete-li miláčka vpravo odebrat, klepněte na něj a zvolte „Odebrat zprava“. Když vyměníte miláčka vlevo, miláček vpravo zůstane. Dokud je vpravo miláček, replika se zobrazí dole, když Dynamic Island podržíte, aby se rozbalil.",
  "index.240": "Jeden miláček na každé straně Dynamic Islandu",
  "index.241": "Více replik, které se střídají při každém otevření aplikace",
  "index.243": "Změna ikony aplikace na ploše",
@@ -254,5 +256,8 @@
  "index.257": "Polohu a velikost miláčka můžete v nastavení aplikace přizpůsobit svému telefonu.",
  "index.258": "Soubory miláčků, které vytvoříte (.oshianim), můžete sdílet i s verzí pro iPhone.",
  "index.259": "Obsah předplatného Super Oshi Plan se mírně liší od verze pro iPhone. Podrobnosti najdete na nákupní obrazovce v aplikaci a na Google Play.",
- "index.260": "Android a Google Play jsou ochranné známky společnosti Google LLC."
+ "index.260": "Android a Google Play jsou ochranné známky společnosti Google LLC.",
+ "faq.120": "Na Dynamic Island můžete umístit jednoho miláčka vlevo a jednoho vpravo. Od verze 1.6.0 je to zdarma.",
+ "faq.121": "Od verze 1.6.0 vám krátce předtím, než se zobrazení ukončí, přijde oznámení. Klepněte na něj, otevře se aplikace a váš miláček bude zase nahoře.",
+ "faq.122": "Ne, jsou stejné. Oba umožňují vytvářet neomezený počet animací, střídat více replik, používat motivy, měnit ikonu aplikace, automaticky zálohovat na iCloud, používat všechny velikosti mřížky a speciální pohybové efekty při tvorbě z fotek a odstraní reklamy. Liší se jen způsobem placení."
 }

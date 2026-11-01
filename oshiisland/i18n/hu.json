@@ -100,7 +100,6 @@
  "faq.102": "Visszatérítést szeretnék",
  "faq.103": "Az App Store-os vásárlások visszatérítését az Apple intézi, fejlesztőként én nem tudom kezelni. Visszatérítést a <a href=\"https://reportaproblem.apple.com/\" rel=\"noopener\" target=\"_blank\">reportaproblem.apple.com</a> oldalon kérhetsz.",
  "faq.104": "Más funkciókat old fel a heti csomag és az egyszeri vásárlás?",
- "faq.105": "Nem, ugyanazokat. Mindkettővel korlátlan számú animációt készíthetsz, használhatod az összes rácsméretet és a fotós képekhez való különleges mozgáseffektusokat, és eltűnnek a hirdetések. Csak a fizetés módjában különböznek.",
  "faq.106": "Az adataid",
  "faq.107": "Hol tárolódnak az osijaim?",
  "faq.108": "Csak az iPhone-odon. Semmi sem kerül szerverre. Ha törlöd az appot, az elkészített osik is törlődnek. A részleteket az <a href=\"privacy.html\">Adatvédelmi irányelvek</a> oldalon találod.",
@@ -235,6 +234,9 @@
  "disclaimer.237": "Az oldal tartalma az App írás idején érvényes állapotát tükrözi. Az App frissítései megváltoztathatják a képernyőket vagy a lépéseket, így azok eltérhetnek az itt leírtaktól.",
  "disclaimer.238": "Ha elakadsz, először nézd meg a <a href=\"faq.html\">GYIK</a> oldalt. Ha az nem segít, fordulj hozzám a <a href=\"https://tsuzukit.com/contact/\">kapcsolatfelvételi oldalon</a> vagy a ryo.tsuzukihashi@tsuzukit.com címen.",
  "index.239": "Az animációk csak rövid ideig mozognak, közvetlenül az app bezárása után. Utána az osid állóképen marad.",
+ "faq.116": "Két osit szeretnék egymás mellett, balra és jobbra megjeleníteni",
+ "faq.118": "Először koppints arra az osira, amelyiket balra szeretnéd, és válaszd a „Beállítás Dynamic Island-ra” lehetőséget. Ezután koppints arra az osira, amelyiket jobbra szeretnéd, és válaszd az „Elhelyezés a Dynamic Island jobb oldalán” lehetőséget, és a kettő egymás mellett jelenik meg.",
+ "faq.119": "A jobb oldali osi levételéhez koppints rá, és válaszd az „Eltávolítás a jobb oldalról” lehetőséget. Ha a bal oldali osit lecseréled, a jobb oldali a helyén marad. Amíg jobb oldalon van osi, a mondat alul jelenik meg, amikor hosszan megnyomod a Dynamic Island-et, hogy kinyíljon.",
  "index.240": "Egy-egy osi a Dynamic Island két oldalán",
  "index.241": "Több mondat mentése, amelyek az app minden megnyitásakor váltakoznak",
  "index.243": "Az app ikonjának cseréje a kezdőképernyőn",
@@ -254,5 +256,8 @@
  "index.257": "Az app beállításaiban az osid helyét és méretét a saját telefonodhoz igazíthatod.",
  "index.258": "Az általad készített osi-fájlok (.oshianim) az iPhone-os változattal is megoszthatók.",
  "index.259": "A Super Oshi Plan tartalma Androidon kicsit eltér az iPhone-os változatétól. A részleteket az app vásárlási képernyőjén és a Google Playen találod.",
- "index.260": "Az Android és a Google Play a Google LLC védjegyei."
+ "index.260": "Az Android és a Google Play a Google LLC védjegyei.",
+ "faq.120": "A Dynamic Island bal és jobb oldalára is tehetsz egy-egy osit. Az 1.6.0-s verziótól ingyenesen használható.",
+ "faq.121": "Az 1.6.0-s verziótól kicsivel a leállás előtt értesítést kapsz. Koppints az értesítésre, nyisd meg az appot, és az osid újra ott lesz felül.",
+ "faq.122": "Nem, ugyanazokat. Mindkettővel korlátlan számú animációt készíthetsz, több mondatot váltogathatsz, témákat használhatsz, lecserélheted az app ikonját, automatikusan menthetsz az iCloudba, használhatod az összes rácsméretet és a fotós képekhez való különleges mozgáseffektusokat, és eltűnnek a hirdetések. Csak a fizetés módjában különböznek."
 }

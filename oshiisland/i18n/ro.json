@@ -100,7 +100,6 @@
  "faq.102": "Aș vrea o rambursare",
  "faq.103": "Rambursările pentru achizițiile din App Store sunt gestionate de Apple, iar eu, ca dezvoltator, nu le pot procesa. Poți cere una pe <a href=\"https://reportaproblem.apple.com/\" rel=\"noopener\" target=\"_blank\">reportaproblem.apple.com</a>.",
  "faq.104": "Planul săptămânal și achiziția unică deblochează funcții diferite?",
- "faq.105": "Nu, sunt aceleași. Ambele îți permit să creezi oricâte animații vrei, să folosești toate dimensiunile de grilă și efectele speciale de mișcare pentru creațiile din fotografii și să elimini reclamele. Singura diferență este modul de plată.",
  "faq.106": "Datele tale",
  "faq.107": "Unde sunt salvați favoriții mei?",
  "faq.108": "Doar pe iPhone-ul tău. Nimic nu este trimis pe vreun server. Dacă ștergi aplicația, se șterg și favoriții pe care i-ai creat. Pentru detalii, consultă <a href=\"privacy.html\">Politica de confidențialitate</a>.",
@@ -235,6 +234,9 @@
  "disclaimer.237": "Conținutul acestui site reflectă Aplicația la momentul redactării. Actualizările Aplicației pot schimba ecrane sau pași, astfel încât aceștia să nu mai corespundă descrierilor de aici.",
  "disclaimer.238": "Dacă întâmpini probleme, consultă mai întâi <a href=\"faq.html\">Întrebările frecvente</a>. Dacă nu te ajută, folosește <a href=\"https://tsuzukit.com/contact/\">pagina de contact</a> sau scrie la ryo.tsuzukihashi@tsuzukit.com.",
  "index.239": "Animațiile rulează doar pentru scurt timp, imediat după ce închizi aplicația. După aceea, favoritul tău rămâne pe o imagine statică.",
+ "faq.116": "Vreau să afișez doi favoriți unul lângă altul, în stânga și în dreapta",
+ "faq.118": "Mai întâi, atinge favoritul pe care îl vrei în stânga și alege „Setează pe Dynamic Island”. Apoi atinge favoritul pe care îl vrei în dreapta și alege „Pune în partea dreaptă a Dynamic Island”, iar cei doi apar unul lângă altul.",
+ "faq.119": "Ca să scoți favoritul din dreapta, atinge-l și alege „Scoate din partea dreaptă”. Dacă schimbi favoritul din stânga, cel din dreapta rămâne pe loc. Cât timp ai un favorit în dreapta, replica apare jos când ții apăsat pe Dynamic Island ca s-o extinzi.",
  "index.240": "Câte un favorit de fiecare parte a Dynamic Island",
  "index.241": "Salvează mai multe replici, care se schimbă de fiecare dată când deschizi aplicația",
  "index.243": "Schimbă pictograma aplicației pe ecranul principal",
@@ -254,5 +256,8 @@
  "index.257": "Poți ajusta poziția și dimensiunea favoritului ca să se potrivească telefonului tău, din Setările aplicației.",
  "index.258": "Fișierele cu favoriți pe care le creezi (.oshianim) pot fi schimbate și cu versiunea pentru iPhone.",
  "index.259": "Conținutul Super Oshi Plan diferă puțin față de versiunea pentru iPhone. Pentru detalii, vezi ecranul de cumpărare din aplicație și Google Play.",
- "index.260": "Android și Google Play sunt mărci comerciale ale Google LLC."
+ "index.260": "Android și Google Play sunt mărci comerciale ale Google LLC.",
+ "faq.120": "Poți pune câte un favorit în stânga și în dreapta Dynamic Island. Începând cu versiunea 1.6.0, este gratuit.",
+ "faq.121": "Începând cu versiunea 1.6.0, primești o notificare cu puțin înainte să se oprească. Atinge notificarea pentru a deschide aplicația, iar favoritul tău revine.",
+ "faq.122": "Nu, sunt aceleași. Ambele îți permit să creezi oricâte animații vrei, să alternezi mai multe replici, să folosești teme, să schimbi pictograma aplicației, să faci copii de rezervă automate în iCloud, să folosești toate dimensiunile de grilă și efectele speciale de mișcare pentru creațiile din fotografii și să elimini reclamele. Singura diferență este modul de plată."
 }

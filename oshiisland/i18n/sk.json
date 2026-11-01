@@ -100,7 +100,6 @@
  "faq.102": "Chcem vrátiť peniaze",
  "faq.103": "Vrátenie peňazí za nákupy v App Store vybavuje Apple a ja ako vývojár ho vykonať nemôžem. Požiadať oň môžete na <a href=\"https://reportaproblem.apple.com/\" rel=\"noopener\" target=\"_blank\">reportaproblem.apple.com</a>.",
  "faq.104": "Odomykajú týždenný plán a jednorazový nákup rôzne funkcie?",
- "faq.105": "Nie, sú rovnaké. Oba umožňujú vytvárať neobmedzený počet animácií, používať všetky veľkosti mriežky a špeciálne pohybové efekty pri tvorbe z fotiek a odstránia reklamy. Líšia sa len spôsobom platby.",
  "faq.106": "Vaše údaje",
  "faq.107": "Kde sú moji miláčikovia uložení?",
  "faq.108": "Iba vo vašom iPhone. Nič sa neodosiela na server. Ak aplikáciu vymažete, vymažú sa aj vytvorení miláčikovia. Podrobnosti nájdete v <a href=\"privacy.html\">Zásadách ochrany osobných údajov</a>.",
@@ -235,6 +234,9 @@
  "disclaimer.237": "Obsah tohto webu zodpovedá stavu Aplikácie v čase písania. Aktualizácie Aplikácie môžu zmeniť obrazovky alebo postupy tak, že už nebudú zodpovedať tunajšiemu opisu.",
  "disclaimer.238": "Ak narazíte na problémy, pozrite sa najprv do <a href=\"faq.html\">Častých otázok</a>. Ak to nepomôže, použite <a href=\"https://tsuzukit.com/contact/\">kontaktnú stránku</a> alebo napíšte na ryo.tsuzukihashi@tsuzukit.com.",
  "index.239": "Animácie bežia len krátko hneď po zatvorení aplikácie. Potom miláčik zostane stáť na jednom snímku.",
+ "faq.116": "Chcem zobraziť dvoch miláčikov vedľa seba, vľavo a vpravo",
+ "faq.118": "Najprv ťuknite na miláčika, ktorého chcete mať vľavo, a zvoľte „Nastaviť na Dynamic Island“. Potom ťuknite na miláčika, ktorého chcete mať vpravo, a zvoľte „Umiestniť na pravú stranu Dynamic Island“. Obaja sa potom zobrazia vedľa seba.",
+ "faq.119": "Ak chcete miláčika vpravo odstrániť, ťuknite naň a zvoľte „Odstrániť z pravej strany“. Keď vymeníte miláčika vľavo, miláčik vpravo zostane. Kým je vpravo miláčik, replika sa zobrazí dole, keď Dynamic Island podržíte, aby sa rozbalil.",
  "index.240": "Po jednom miláčikovi na každej strane Dynamic Islandu",
  "index.241": "Viac replík, ktoré sa striedajú pri každom otvorení aplikácie",
  "index.243": "Zmena ikony aplikácie na ploche",
@@ -254,5 +256,8 @@
  "index.257": "Polohu a veľkosť miláčika si môžete prispôsobiť svojmu telefónu v Nastaveniach aplikácie.",
  "index.258": "Súbory miláčikov, ktoré vytvoríte (.oshianim), si môžete vymieňať aj s verziou pre iPhone.",
  "index.259": "Obsah Super Oshi Plan sa mierne líši od verzie pre iPhone. Podrobnosti nájdete na obrazovke nákupu v aplikácii a na Google Play.",
- "index.260": "Android a Google Play sú ochranné známky spoločnosti Google LLC."
+ "index.260": "Android a Google Play sú ochranné známky spoločnosti Google LLC.",
+ "faq.120": "Na Dynamic Island môžete umiestniť jedného miláčika vľavo a jedného vpravo. Od verzie 1.6.0 je to zadarmo.",
+ "faq.121": "Od verzie 1.6.0 vám krátko pred ukončením zobrazenia príde upozornenie. Ťuknite naň, otvorí sa aplikácia a váš miláčik je opäť hore.",
+ "faq.122": "Nie, sú rovnaké. Oba umožňujú vytvárať neobmedzený počet animácií, striedať viac replík, používať motívy, meniť ikonu aplikácie, automaticky zálohovať do iCloudu, používať všetky veľkosti mriežky a špeciálne pohybové efekty pri tvorbe z fotiek a odstránia reklamy. Líšia sa len spôsobom platby."
 }
