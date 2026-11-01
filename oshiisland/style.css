@@ -40,6 +40,7 @@ header{position:sticky;top:0;z-index:20;backdrop-filter:blur(10px);
 .btn:hover{color:#2a0f24;filter:brightness(1.06)}
 .btn svg{width:20px;height:20px;flex:none}
 .btn.ghost{background:transparent;color:var(--pink);border:1px solid var(--line);box-shadow:none}
+.btns{display:flex;flex-wrap:wrap;gap:.7rem}
 
 /* 紹介ページ */
 .hero{padding:3.6rem 0 3rem}
@@ -89,7 +90,7 @@ section{padding:3.4rem 0;scroll-margin-top:80px}
 .endcta{text-align:center;background:var(--bg2);border:1px solid var(--line);border-radius:22px;padding:2.6rem 1.4rem}
 .endcta h2{font-size:clamp(1.3rem,4vw,1.8rem);line-height:1.5}
 .endcta p{color:var(--dim);font-size:.94rem;margin:.8rem auto 1.6rem;max-width:32em}
-.endcta .btn.ghost{margin-inline-start:.6rem}
+.endcta .btns{justify-content:center}
 
 /* 文書ページ */
 .doc{padding:2.8rem 0 3.6rem}
@@ -162,5 +163,4 @@ html[lang="zh-Hans"] .dot,html[lang="zh-Hant"] .dot,html[lang="ko"] .dot{font-fa
 @media (max-width:520px){
   .feats{grid-template-columns:1fr}
   .feat img{max-width:200px}
-  .endcta .btn.ghost{margin:.8rem 0 0}
 }
