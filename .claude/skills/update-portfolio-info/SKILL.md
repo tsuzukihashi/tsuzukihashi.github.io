@@ -21,6 +21,11 @@ cd /Users/tsuzuki817/workspace/TsuzuKit/tsuzukit.com/fastlane && bundle exec fas
 ```
 - 全公開アプリの公開情報＋スクショを取得し `assets/data/apps_public.json` に保存。
 - スクショURLは **`626x0w.webp` 形式**で出力される（Fastfile L242 で `w` クロップを生成。`bb` クロップは HTTP 400 になるため使わない。2026-06-19 修正済み）。
+- **iPhone Duo のスクショ（ASC の `APP_IPHONE_DUO` の組）は使わない（2026-11-02 指示）。** 横長でカードに合わない。
+  Fastfile は `APP_IPHONE_65 → 67 → 61 → 58 → 55 …` の順に**中身が1枚以上ある組**を選ぶ。`APP_IPHONE` で始まる組を手当たり次第に拾う予備処理は廃止した
+  （2026-11-02、推しアイランド・旅行思い出マップ・Kimochi・フロイト先生・OshiLog の5本で Duo を掴んでいた。
+  6.5 の組が空のまま残っているアプリ7本は iTunes の 320x480 に落ちていた）。
+- 取り直したら、各アプリの1枚目の縦横比を測って**横長（高さ÷幅が1未満）と低解像度（`320x480bb.jpg`）が無いことを確かめる**。
 - 出力末尾に fastlane の更新バナーが出て結果が隠れることがある。`> /tmp/fl.log 2>&1` でログに落とし、`grep -iE "Saved|Screenshots:|error"` で確認すると良い。
 
 ### 2. apps.json へ同期＋統計数値を更新

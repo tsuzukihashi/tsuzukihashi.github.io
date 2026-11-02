@@ -231,12 +231,24 @@ platform :ios do
 
                 if loc
                   screenshot_sets = loc.get_app_screenshot_sets
-                  # 6.5インチiPhoneのスクリーンショットを優先
-                  iphone_set = screenshot_sets.find { |s| s.screenshot_display_type == 'APP_IPHONE_65' }
-                  iphone_set ||= screenshot_sets.find { |s| s.screenshot_display_type&.start_with?('APP_IPHONE') }
+                  # 6.5インチiPhoneのスクリーンショットを優先。無ければ 6.7/6.9 → 6.1 → 5.8 → 5.5 の順。
+                  # 空の組（6.5の組だけ中身が0で残っていることがある）は飛ばす。
+                  # iPhone Duo（APP_IPHONE_DUO）は横長でサイトのカードに合わないので使わない（2026-11-02 指示）。
+                  iphone_set_priority = %w[APP_IPHONE_65 APP_IPHONE_67 APP_IPHONE_61 APP_IPHONE_58 APP_IPHONE_55 APP_IPHONE_47 APP_IPHONE_40 APP_IPHONE_35]
+                  iphone_set = nil
+                  screenshots = []
+                  iphone_set_priority.each do |display_type|
+                    candidate = screenshot_sets.find { |s| s.screenshot_display_type == display_type }
+                    next unless candidate
+                    candidate_shots = candidate.app_screenshots
+                    next if candidate_shots.empty?
+                    iphone_set = candidate
+                    screenshots = candidate_shots
+                    break
+                  end
 
                   if iphone_set
-                    screenshots = iphone_set.app_screenshots
+                    UI.message("  ASC set: #{iphone_set.screenshot_display_type}")
                     asc_screenshots = screenshots.map do |ss|
                       if ss.image_asset && ss.image_asset['templateUrl']
                         # スクリーンショットはクロップ符号 'w' でないと 400 になる（'bb' はアイコン用でスクショでは無効）。

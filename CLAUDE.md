@@ -308,7 +308,8 @@ bundle exec fastlane fetch_public_info
 
 - 2024年以降にリリースされたアプリでは `screenshotUrls` が空配列になる
 - スクリーンショットは **App Store Connect API**（Spaceship）から取得する必要がある
-- デバイスサイズは **`APP_IPHONE_65`**（6.5インチ）を使用する
+- デバイスサイズは **`APP_IPHONE_65`**（6.5インチ）を使用する。空なら `APP_IPHONE_67` 以下の iPhone の組に落とす
+- **iPhone Duo の組（`APP_IPHONE_DUO`）は使わない（2026-11-02 指示）。** 横長でカードに合わない。`APP_IPHONE` で始まる組を手当たり次第に拾わない
 
 ```ruby
 # App Store Connect APIからスクリーンショットを取得する方法

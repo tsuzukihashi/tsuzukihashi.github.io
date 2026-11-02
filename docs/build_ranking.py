@@ -31,6 +31,7 @@ NAMES_EN = {
     "猫背改善と姿勢リマインダー": "Posture Reminder: Cat Coach",
     "Yattayo やったよボード": "Yattayo: Slider To-Do Board",
     "Monivo 声で起こし合うアラーム": "Monivo: Wake Up by Voice",
+    "パタパタ推し時計": "Oshi Clock: Flip Photo Widget",
 }
 
 
