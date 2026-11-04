@@ -1,5 +1,5 @@
 *{box-sizing:border-box}
-:root{--paper:#fbf6ec;--grid:#e6e0d2;--ink:#2b2622;--sub:#6b625a;--red:#d9443f;--blue:#3a6fd0;--yellow:#f2b632;--green:#4c9a52;--purple:#8a5cc2;--brown:#8a5a3a;--card:#fffdf8}
+:root{--paper:#fbf6ec;--grid:#e6e0d2;--ink:#2b2622;--sub:#6b625a;--red:#d9443f;--blue:#3a6fd0;--yellow:#f2b632;--green:#4c9a52;--purple:#8a5cc2;--brown:#8a5a3a;--pink:#d9709a;--card:#fffdf8}
 html{-webkit-text-size-adjust:100%}
 body{margin:0;color:var(--ink);font-family:"Zen Maru Gothic","Hiragino Maru Gothic ProN","Hiragino Sans","PingFang SC","PingFang TC","Apple SD Gothic Neo","Noto Sans",sans-serif;line-height:1.85;
 background-color:var(--paper);background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:24px 24px}
@@ -32,7 +32,9 @@ h2{font-size:1.45rem;font-weight:900;margin:0 0 .8em;display:inline-block;border
 .feat h3{margin:0 0 .3em;font-size:1.08rem;font-weight:900}
 .feat p{margin:0;color:var(--sub);font-size:.95rem}
 .feat::before{content:"";position:absolute;left:18px;top:-7px;width:44px;height:12px;border-radius:6px}
-.c1::before{background:var(--red)}.c2::before{background:var(--yellow)}.c3::before{background:var(--blue)}.c4::before{background:var(--green)}.c5::before{background:var(--purple)}.c6::before{background:var(--brown)}
+.c1::before{background:var(--red)}.c2::before{background:var(--yellow)}.c3::before{background:var(--blue)}.c4::before{background:var(--green)}.c5::before{background:var(--purple)}.c6::before{background:var(--brown)}.c7::before{background:var(--pink)}
+/* 7枚目（写真は端末の中だけ）は3列の最後にひとつ余るので、横いっぱいにする */
+.feat:nth-child(7){grid-column:1/-1}
 .steps{list-style:none;padding:0;margin:0;display:grid;gap:12px}
 .steps li{display:flex;gap:14px;align-items:flex-start;background:var(--card);border:2px dashed var(--sub);border-radius:14px;padding:14px 16px}
 .num{flex:none;width:34px;height:34px;border-radius:50%;background:var(--red);color:#fff;font-weight:900;display:flex;align-items:center;justify-content:center}
