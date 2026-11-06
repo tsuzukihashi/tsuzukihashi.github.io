@@ -228,4 +228,60 @@ MONTHS_EN = {
         ],
         "closing": "A month where my two pillars grew purchases and lost ad revenue. In October I'm going to open more doors with TikTok.",
     },
+    "2026-10": {
+        "desc": "October 2026 revenue was ¥668,770, my second-highest month. Oshi Island passed ¥300,000 after spreading on Threads, and Mokumoku got over 8,000 downloads in four days after my wife posted about it on Threads. Everything else combined fell 27%.",
+        "highlights": [
+            ("Oshi Island", "¥263,114 in purchases and ¥41,845 from iOS ads. September was ¥25,815. The one-time purchase sold 88 times."),
+            ("Mokumoku", "September was ¥0. The yearly plan made ¥20,400 and the one-time purchase ¥16,660."),
+            ("UNCHIKUN", "¥38,874 in purchases, ¥73,812 from iOS ads, ¥10,337 from Android ads and ¥6,222 from Play. September was ¥215,143."),
+            ("TravelMemoryMap", "¥88,043 in purchases, ¥9,955 from iOS ads, ¥1,745 from Android ads and ¥1,734 from Play. September was ¥121,736."),
+        ],
+        "analysis": """
+<p>¥668,770! My second-highest month ever, after March 🎉</p>
+<p>But only two apps grew, Oshi Island and Mokumoku. Everything else combined fell 27%.</p>
+<h3>A second wave for Oshi Island</h3>
+<p>Oshi Island's new downloads went from 170 in September to 23,452, and 20,594 of those came in the five days from October 23 to 27.</p>
+<p>I didn't make that happen. The people using the app did. Someone would post their screen on Threads with their favorite character in the Dynamic Island, others would copy it, and more people would ask how it was done. Oshi Island also got 5,078 downloads in Taiwan.</p>
+<p>While it was going on, I fixed the bugs reviews mentioned most, added iCloud backup and alternate icons, and even built the Android version 🔥</p>
+<p>Oshi Island's download peak passed after about five days, but so far in November the app is still getting 72 to 228 downloads a day. September was 170 for the whole month, so it's still far above September.</p>
+<h3>Mokumoku went viral on Threads</h3>
+<p>Mokumoku is an app I released in 2019 under the name BookBank. I kept updating this seven-year-old app until it turned into a different app, and I renamed it too.</p>
+<p>Mokumoku took off because my wife posted about it on Threads! In the four days from October 28 it got 8,477 downloads and reached #7 on the Japanese free Books chart. Thank you to my wife 🙏</p>
+<h3>UNCHIKUN keeps falling</h3>
+<p>UNCHIKUN hurts the most. Its revenue went from ¥215,143 to ¥129,245.</p>
+<p>UNCHIKUN's new downloads have dropped every month since July: 32,579, 22,445, 16,410, then 10,039. Ads and purchases fell along with them orz</p>
+<h3>TikTok daily views grew more than sixfold</h3>
+<p>I worked really hard on TikTok in October 🔥 I made 120 photo posts.</p>
+<p>Views on my TikTok account went from an average of 332 a day between September 8 and 30 to 2,137 a day in October! October's total was 66,251 views and 1,007 likes.</p>
+<p>TikTok views stepped up from October 15 and hit 9,273 in one day on the 25th. On November 2 they reached 11,211 in a day.</p>
+<p>I said in the September issue that I'd report how many downloads came from TikTok. I can't yet, because I haven't attached tracking links. That's my homework for the November issue 🙇</p>
+<h3>I worked hard on Threads too</h3>
+<p>I also put a lot into Threads from October 🔥 On my account, I started introducing apps with a TravelMemoryMap post on October 18.</p>
+<p>From August 9 to November 6, my Threads account got 213,763 views from 142,073 people! The graph shows most of that came in a spike around the end of October.</p>
+<p>141,968 of those people weren't followers. I only have 112 followers on Threads, so it's almost all reaching people who don't know me.</p>
+<h3>What I did in October</h3>
+<p>909 commits across 56 repositories. Claude Code's work logs come to 311 hours, leaving out gaps of 30 minutes or more, with 1,847 instructions. That's 10 hours a day (way too hooked on building)</p>
+<table class="platform-table">
+    <thead><tr><th style="white-space: nowrap;">App</th><th style="white-space: nowrap;">Commits</th><th style="text-align: left;">What I did</th></tr></thead>
+    <tbody>
+        <tr><td style="white-space: nowrap;">Mokumoku</td><td>159</td><td style="text-align: left;">Redesigned it as a bank passbook, reading notes, a calendar</td></tr>
+        <tr><td style="white-space: nowrap;">UNCHIKUN</td><td>108</td><td style="text-align: left;">3.0.0 with iPhone Duo support, a poop type quiz</td></tr>
+        <tr><td style="white-space: nowrap;">Oshi Clock</td><td>100</td><td style="text-align: left;">Released October 13</td></tr>
+        <tr><td style="white-space: nowrap;">An unreleased new app</td><td>95</td><td style="text-align: left;">Built iOS and Android and got it as far as TestFlight</td></tr>
+        <tr><td style="white-space: nowrap;">Tap Here</td><td>78</td><td style="text-align: left;">An AI that helps people use their phones, released October 19</td></tr>
+        <tr><td style="white-space: nowrap;">Unglish</td><td>59</td><td style="text-align: left;">A second area with 174 questions and illustrations</td></tr>
+        <tr><td style="white-space: nowrap;">TravelMemoryMap</td><td>56</td><td style="text-align: left;">Fixed about 680 Android translations</td></tr>
+        <tr><td style="white-space: nowrap;">Oshi Island</td><td>52</td><td style="text-align: left;">Bug fixes, iCloud backup, an Android version</td></tr>
+    </tbody>
+</table>
+<p>I also started rebuilding the store pages of my live apps one by one and submitted 35.</p>
+<p>I released four new apps, Oshi Clock, ZennChat, Tap Here and Beetle Wars. Together they got fewer than 30 new App Store downloads and made ¥0 orz</p>
+""",
+        "next_actions": [
+            "Make it easier to post an Oshi Island screen with your favorite character on it",
+            "See whether the 8,000 people who came to Mokumoku stay",
+            "Keep posting on TikTok, add tracking links, and put the download numbers in the November issue",
+        ],
+        "closing": "Both apps that grew this month came from Threads. In November I'll see whether the people who came stay, and try to stop UNCHIKUN's fall 💩",
+    },
 }

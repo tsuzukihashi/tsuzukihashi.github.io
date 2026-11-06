@@ -63,7 +63,8 @@
     "gemini-business-consultation": "キャラがテーブルで、きらきら光る星の形のAIアシスタントと向かい合って話している。テーブルの上には、積み上がるコインと、矢印のような線だけのグラフ（文字なし）。",
     "iosdc2019-first-participation": "大きなカンファレンスの会場。キャラが首から名札（文字なし）をさげて、客席から大きなスクリーンの登壇者を目を輝かせて見ている。",
     "relaychat-development-story": "山の中で電波のアンテナに×のような形（文字ではなく、折れたアンテナ）がついていて、キャラが机でスマホを何台も並べ、光の線でつないで実験している。",
-    "screennative-development-story": "キャラが机で、たくさんのスマホの画面（文字なし、色ちがいのレイアウト）が世界中の国旗の色のように並ぶのを、2体の小さなロボットと一緒に一気に作っている。"
+    "screennative-development-story": "キャラが机で、たくさんのスマホの画面（文字なし、色ちがいのレイアウト）が世界中の国旗の色のように並ぶのを、2体の小さなロボットと一緒に一気に作っている。",
+    "income-report-2026-10": "たくさんのスマホが空にふわふわ浮かび、それぞれの画面の上にある黒い細長い島の上に、ドット絵の小さなハートがひとつずつ乗っている。光がスマホからスマホへ次々と渡って広がっていく。キャラは丘の上で両手を上げ、顔はこちらを正面に向けている。目は参照画像と同じ、白い縦長の楕円そのまま（黒目も影もまぶたも入れない）。胴と足の間に白い線を入れない。足元には開いた本が1冊あり、そこから小さなコインが少し舞い上がっている。"
   },
   "alt": {
     "income-report-prehistory": [
@@ -313,6 +314,10 @@
     "screennative-development-story": [
       "色ちがいのスマホ画面を一気に作り上げるキャラクターとロボットの助手",
       "The character and robot helpers producing many versions of phone screens at once"
+    ],
+    "income-report-2026-10": [
+      "空に浮かぶたくさんのスマホの黒い島にドット絵のハートが乗り、光が次々と広がるのを見上げるキャラクター",
+      "The character looking up at many floating phones, each with a pixel heart on its black island, as light spreads from one to the next"
     ]
   },
   "ogp_pos": {
@@ -328,6 +333,7 @@
     "income-report-2026-07": "tl",
     "income-report-2026-08": "tr",
     "income-report-2026-09": "br",
-    "income-report-prehistory": "tr"
+    "income-report-prehistory": "tr",
+    "income-report-2026-10": "br"
   }
 }

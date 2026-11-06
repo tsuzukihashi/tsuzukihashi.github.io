@@ -6945,5 +6945,1143 @@
         "impressions": 2639
       }
     ]
+  },
+  "2026-10": {
+    "admob_jpy": 150789,
+    "appstore_jpy": 494781,
+    "play_jpy": 23200,
+    "total_jpy": 668770,
+    "appstore_detail": {
+      "proceeds_jpy": 494781,
+      "total_downloads": 50662,
+      "total_redownloads": 41543,
+      "apps": [
+        {
+          "title": "推しアイランド",
+          "downloads": 23452,
+          "redownloads": 1362,
+          "iap_units": 504,
+          "proceeds_jpy": 263114,
+          "top_products": [
+            {
+              "name": "買い切りプラン",
+              "jpy": 228067
+            },
+            {
+              "name": "週間プラン",
+              "jpy": 35047
+            }
+          ]
+        },
+        {
+          "title": "TravelMemoryMap",
+          "downloads": 3486,
+          "redownloads": 3563,
+          "iap_units": 122,
+          "proceeds_jpy": 88043,
+          "top_products": [
+            {
+              "name": "サポータープラン",
+              "jpy": 33201
+            },
+            {
+              "name": "1年間サポータープラン",
+              "jpy": 33031
+            },
+            {
+              "name": "月額プランワンタイムオファー",
+              "jpy": 21811
+            }
+          ]
+        },
+        {
+          "title": "もくもく - 読書銀行・読んだ本が貯まる読書記録",
+          "downloads": 8482,
+          "redownloads": 90,
+          "iap_units": 40,
+          "proceeds_jpy": 43342,
+          "top_products": [
+            {
+              "name": "Backup Yearly",
+              "jpy": 20400
+            },
+            {
+              "name": "Super Mokumoku Plan Lifetime",
+              "jpy": 16660
+            },
+            {
+              "name": "Backup Monthly",
+              "jpy": 5865
+            },
+            {
+              "name": "しっかり応援",
+              "jpy": 315
+            },
+            {
+              "name": "ちょっと応援",
+              "jpy": 102
+            }
+          ]
+        },
+        {
+          "title": "UNCHIKUN: Poop Log & AI Health",
+          "downloads": 10039,
+          "redownloads": 34323,
+          "iap_units": 160,
+          "proceeds_jpy": 38874,
+          "top_products": [
+            {
+              "name": "Premium Monthly",
+              "jpy": 16232
+            },
+            {
+              "name": "月額ワンタイムオファー",
+              "jpy": 13653
+            },
+            {
+              "name": "うんギフト1ヶ月",
+              "jpy": 3844
+            },
+            {
+              "name": "Premium Yearly",
+              "jpy": 2864
+            },
+            {
+              "name": "Yearly One Time Offer",
+              "jpy": 1602
+            }
+          ]
+        },
+        {
+          "title": "YOU Receipt: Receipt Maker",
+          "downloads": 1948,
+          "redownloads": 163,
+          "iap_units": 92,
+          "proceeds_jpy": 31114,
+          "top_products": [
+            {
+              "name": "Premium Lifetime",
+              "jpy": 21069
+            },
+            {
+              "name": "Premium Weekly",
+              "jpy": 10045
+            }
+          ]
+        },
+        {
+          "title": "Floating Notepad　-Overlay-",
+          "downloads": 1017,
+          "redownloads": 1152,
+          "iap_units": 16,
+          "proceeds_jpy": 4210,
+          "top_products": [
+            {
+              "name": "サポータープラン(1ヶ月)",
+              "jpy": 2170
+            },
+            {
+              "name": "かなりお得サポーター1年間プラン",
+              "jpy": 2040
+            }
+          ]
+        },
+        {
+          "title": "ShellLens - Seashell AI Guide",
+          "downloads": 16,
+          "redownloads": 2,
+          "iap_units": 7,
+          "proceeds_jpy": 3198,
+          "top_products": [
+            {
+              "name": "週間プラン",
+              "jpy": 3198
+            }
+          ]
+        },
+        {
+          "title": "猫背改善と姿勢リマインダー：猫背は猫だけで充分にゃ。",
+          "downloads": 21,
+          "redownloads": 30,
+          "iap_units": 18,
+          "proceeds_jpy": 3179,
+          "top_products": [
+            {
+              "name": "週間プラン",
+              "jpy": 3179
+            }
+          ]
+        },
+        {
+          "title": "GeoLens - Rock & Mineral AI",
+          "downloads": 27,
+          "redownloads": 6,
+          "iap_units": 11,
+          "proceeds_jpy": 3060,
+          "top_products": [
+            {
+              "name": "週間プラン",
+              "jpy": 3060
+            }
+          ]
+        },
+        {
+          "title": "Mekulun - Daily Calendar",
+          "downloads": 71,
+          "redownloads": 13,
+          "iap_units": 1,
+          "proceeds_jpy": 2533,
+          "top_products": [
+            {
+              "name": "買い切りプラン",
+              "jpy": 2533
+            }
+          ]
+        },
+        {
+          "title": "Anniversary Reminder - Memoria",
+          "downloads": 24,
+          "redownloads": 4,
+          "iap_units": 1,
+          "proceeds_jpy": 2533,
+          "top_products": [
+            {
+              "name": "買い切りプラン",
+              "jpy": 2533
+            }
+          ]
+        },
+        {
+          "title": "nokki - Music Journal",
+          "downloads": 101,
+          "redownloads": 15,
+          "iap_units": 1,
+          "proceeds_jpy": 2380,
+          "top_products": [
+            {
+              "name": "nokki+ 年額",
+              "jpy": 2380
+            }
+          ]
+        },
+        {
+          "title": "ゼリーセイムパズル",
+          "downloads": 43,
+          "redownloads": 26,
+          "iap_units": 6,
+          "proceeds_jpy": 1786,
+          "top_products": [
+            {
+              "name": "ハンマーチケット10個セット + 2個追加",
+              "jpy": 1700
+            },
+            {
+              "name": "ハンマーチケット",
+              "jpy": 86
+            }
+          ]
+        },
+        {
+          "title": "ずんだもんの部屋 - ずんだもんに話を聴いてもらう",
+          "downloads": 14,
+          "redownloads": 2,
+          "iap_units": 1,
+          "proceeds_jpy": 1258,
+          "top_products": [
+            {
+              "name": "月額ずんトークプレミアムプラン",
+              "jpy": 1258
+            }
+          ]
+        },
+        {
+          "title": "スワイポン - スワイプで写真と動画を簡単整理",
+          "downloads": 5,
+          "redownloads": 5,
+          "iap_units": 19,
+          "proceeds_jpy": 994,
+          "top_products": [
+            {
+              "name": "とりあえずの1週間だけプレミアムプラン",
+              "jpy": 688
+            },
+            {
+              "name": "便利な1ヶ月プレミアムプラン",
+              "jpy": 306
+            }
+          ]
+        },
+        {
+          "title": "フチドリ！ ~背景透過と縁取り~",
+          "downloads": 166,
+          "redownloads": 68,
+          "iap_units": 1,
+          "proceeds_jpy": 833,
+          "top_products": [
+            {
+              "name": "アプリ買い切り！",
+              "jpy": 833
+            }
+          ]
+        },
+        {
+          "title": "バースデームーン",
+          "downloads": 220,
+          "redownloads": 53,
+          "iap_units": 1,
+          "proceeds_jpy": 833,
+          "top_products": [
+            {
+              "name": "買い切りプラン",
+              "jpy": 833
+            }
+          ]
+        },
+        {
+          "title": "FocusDrive - Focus Timer",
+          "downloads": 42,
+          "redownloads": 13,
+          "iap_units": 2,
+          "proceeds_jpy": 799,
+          "top_products": [
+            {
+              "name": "月額プラン",
+              "jpy": 799
+            }
+          ]
+        },
+        {
+          "title": "Himekuri - Day Countdown",
+          "downloads": 56,
+          "redownloads": 5,
+          "iap_units": 4,
+          "proceeds_jpy": 680,
+          "top_products": [
+            {
+              "name": "Himekuri Premium Weekly",
+              "jpy": 680
+            }
+          ]
+        },
+        {
+          "title": "Medicine Reminder & Tracker",
+          "downloads": 27,
+          "redownloads": 10,
+          "iap_units": 4,
+          "proceeds_jpy": 598,
+          "top_products": [
+            {
+              "name": "週間プラン",
+              "jpy": 598
+            }
+          ]
+        },
+        {
+          "title": "Eye Drop Reminder - EyeDrop",
+          "downloads": 76,
+          "redownloads": 9,
+          "iap_units": 7,
+          "proceeds_jpy": 434,
+          "top_products": [
+            {
+              "name": "週間プラン",
+              "jpy": 434
+            }
+          ]
+        },
+        {
+          "title": "RelayChat-オフライン匿名Bluetoothチャット",
+          "downloads": 35,
+          "redownloads": 15,
+          "iap_units": 2,
+          "proceeds_jpy": 425,
+          "top_products": [
+            {
+              "name": "1ヶ月プレミアムプラン",
+              "jpy": 425
+            }
+          ]
+        },
+        {
+          "title": "馬券ジェネレーター",
+          "downloads": 47,
+          "redownloads": 9,
+          "iap_units": 1,
+          "proceeds_jpy": 272,
+          "top_products": [
+            {
+              "name": "プレミアムチケット",
+              "jpy": 272
+            }
+          ]
+        },
+        {
+          "title": "PIPMP",
+          "downloads": 45,
+          "redownloads": 31,
+          "iap_units": 1,
+          "proceeds_jpy": 102,
+          "top_products": [
+            {
+              "name": "自動更新型　サポータープラン(1ヶ月)",
+              "jpy": 102
+            }
+          ]
+        },
+        {
+          "title": "AlwaysOnTimer",
+          "downloads": 33,
+          "redownloads": 28,
+          "iap_units": 1,
+          "proceeds_jpy": 102,
+          "top_products": [
+            {
+              "name": "サポータープラン１ヶ月",
+              "jpy": 102
+            }
+          ]
+        },
+        {
+          "title": "Music Snapshot: Art Wallpapers",
+          "downloads": 1,
+          "redownloads": 1,
+          "iap_units": 0,
+          "proceeds_jpy": 85,
+          "top_products": []
+        },
+        {
+          "title": "BeautyMed - Treatment Reminder",
+          "downloads": 14,
+          "redownloads": 0,
+          "iap_units": 0,
+          "proceeds_jpy": 0,
+          "top_products": []
+        },
+        {
+          "title": "WidgetZenn",
+          "downloads": 4,
+          "redownloads": 5,
+          "iap_units": 0,
+          "proceeds_jpy": 0,
+          "top_products": []
+        },
+        {
+          "title": "Today -今日は令和何年で何の日？-",
+          "downloads": 30,
+          "redownloads": 24,
+          "iap_units": 0,
+          "proceeds_jpy": 0,
+          "top_products": []
+        },
+        {
+          "title": "OshiLog - Fandom Tracker",
+          "downloads": 11,
+          "redownloads": 3,
+          "iap_units": 0,
+          "proceeds_jpy": 0,
+          "top_products": []
+        },
+        {
+          "title": "Tap Here: Phone Help with AI",
+          "downloads": 3,
+          "redownloads": 1,
+          "iap_units": 0,
+          "proceeds_jpy": 0,
+          "top_products": []
+        },
+        {
+          "title": "言の葉箱 〜大切な手紙を簡単に記録〜",
+          "downloads": 5,
+          "redownloads": 0,
+          "iap_units": 0,
+          "proceeds_jpy": 0,
+          "top_products": []
+        },
+        {
+          "title": "パタパタ推し時計 - 推し活の置き時計ウィジェット",
+          "downloads": 13,
+          "redownloads": 0,
+          "iap_units": 0,
+          "proceeds_jpy": 0,
+          "top_products": []
+        },
+        {
+          "title": "DiveKeep: Scuba Gear Care",
+          "downloads": 6,
+          "redownloads": 0,
+          "iap_units": 0,
+          "proceeds_jpy": 0,
+          "top_products": []
+        },
+        {
+          "title": "PictIn",
+          "downloads": 134,
+          "redownloads": 286,
+          "iap_units": 0,
+          "proceeds_jpy": 0,
+          "top_products": []
+        },
+        {
+          "title": "Bytebeat: Make Music with Code",
+          "downloads": 258,
+          "redownloads": 29,
+          "iap_units": 0,
+          "proceeds_jpy": 0,
+          "top_products": []
+        },
+        {
+          "title": "Yattayo: Slider To-Do Board",
+          "downloads": 21,
+          "redownloads": 0,
+          "iap_units": 0,
+          "proceeds_jpy": 0,
+          "top_products": []
+        },
+        {
+          "title": "DailySnap - Photo Calendar",
+          "downloads": 23,
+          "redownloads": 3,
+          "iap_units": 0,
+          "proceeds_jpy": 0,
+          "top_products": []
+        },
+        {
+          "title": "EyeMole - Eye Whack-a-Mole",
+          "downloads": 35,
+          "redownloads": 5,
+          "iap_units": 0,
+          "proceeds_jpy": 0,
+          "top_products": []
+        },
+        {
+          "title": "BirdLens - Bird AI Guide",
+          "downloads": 6,
+          "redownloads": 4,
+          "iap_units": 0,
+          "proceeds_jpy": 0,
+          "top_products": []
+        },
+        {
+          "title": "PhotoGuards",
+          "downloads": 114,
+          "redownloads": 11,
+          "iap_units": 0,
+          "proceeds_jpy": 0,
+          "top_products": []
+        },
+        {
+          "title": "ReelKeep: Fishing Reel Care",
+          "downloads": 9,
+          "redownloads": 0,
+          "iap_units": 0,
+          "proceeds_jpy": 0,
+          "top_products": []
+        },
+        {
+          "title": "BikeKeep: Bike Maintenance",
+          "downloads": 12,
+          "redownloads": 2,
+          "iap_units": 0,
+          "proceeds_jpy": 0,
+          "top_products": []
+        },
+        {
+          "title": "Monivo: Wake Up by Voice",
+          "downloads": 26,
+          "redownloads": 4,
+          "iap_units": 0,
+          "proceeds_jpy": 0,
+          "top_products": []
+        },
+        {
+          "title": "Kimochi かわいい気分日記",
+          "downloads": 14,
+          "redownloads": 0,
+          "iap_units": 0,
+          "proceeds_jpy": 0,
+          "top_products": []
+        },
+        {
+          "title": "WineReady: Drink Window",
+          "downloads": 5,
+          "redownloads": 0,
+          "iap_units": 0,
+          "proceeds_jpy": 0,
+          "top_products": []
+        },
+        {
+          "title": "LensLog: Contact Lens Reminder",
+          "downloads": 15,
+          "redownloads": 2,
+          "iap_units": 0,
+          "proceeds_jpy": 0,
+          "top_products": []
+        },
+        {
+          "title": "旬のお魚カレンダー",
+          "downloads": 10,
+          "redownloads": 9,
+          "iap_units": 0,
+          "proceeds_jpy": 0,
+          "top_products": []
+        },
+        {
+          "title": "PenKeep: Fountain Pen Care",
+          "downloads": 3,
+          "redownloads": 0,
+          "iap_units": 0,
+          "proceeds_jpy": 0,
+          "top_products": []
+        },
+        {
+          "title": "BaseReminder",
+          "downloads": 3,
+          "redownloads": 1,
+          "iap_units": 0,
+          "proceeds_jpy": 0,
+          "top_products": []
+        },
+        {
+          "title": "SkyCode",
+          "downloads": 18,
+          "redownloads": 45,
+          "iap_units": 0,
+          "proceeds_jpy": 0,
+          "top_products": []
+        },
+        {
+          "title": "FreudDream: AI Dream Reading",
+          "downloads": 4,
+          "redownloads": 0,
+          "iap_units": 1,
+          "proceeds_jpy": 0,
+          "top_products": []
+        },
+        {
+          "title": "らくタグ",
+          "downloads": 2,
+          "redownloads": 11,
+          "iap_units": 0,
+          "proceeds_jpy": 0,
+          "top_products": []
+        },
+        {
+          "title": "Simple Touch The Numbers",
+          "downloads": 4,
+          "redownloads": 1,
+          "iap_units": 0,
+          "proceeds_jpy": 0,
+          "top_products": []
+        },
+        {
+          "title": "BookBank(読書銀行) 読書記録・蔵書管理",
+          "downloads": 14,
+          "redownloads": 15,
+          "iap_units": 0,
+          "proceeds_jpy": 0,
+          "top_products": []
+        },
+        {
+          "title": "WatchKeep: Watch Care",
+          "downloads": 5,
+          "redownloads": 0,
+          "iap_units": 0,
+          "proceeds_jpy": 0,
+          "top_products": []
+        },
+        {
+          "title": "FlowerLens - Flower AI Guide",
+          "downloads": 2,
+          "redownloads": 2,
+          "iap_units": 0,
+          "proceeds_jpy": 0,
+          "top_products": []
+        },
+        {
+          "title": "π ~ Pi Fun App.",
+          "downloads": 28,
+          "redownloads": 12,
+          "iap_units": 0,
+          "proceeds_jpy": 0,
+          "top_products": []
+        },
+        {
+          "title": "CheckInSenior - Family Check",
+          "downloads": 2,
+          "redownloads": 0,
+          "iap_units": 0,
+          "proceeds_jpy": 0,
+          "top_products": []
+        },
+        {
+          "title": "ClockWidget ~個性豊かな時計ウィジェットアプリ~",
+          "downloads": 24,
+          "redownloads": 6,
+          "iap_units": 0,
+          "proceeds_jpy": 0,
+          "top_products": []
+        },
+        {
+          "title": "ZennChat: Daily Practice",
+          "downloads": 12,
+          "redownloads": 0,
+          "iap_units": 0,
+          "proceeds_jpy": 0,
+          "top_products": []
+        },
+        {
+          "title": "TicketMania",
+          "downloads": 100,
+          "redownloads": 12,
+          "iap_units": 0,
+          "proceeds_jpy": 0,
+          "top_products": []
+        },
+        {
+          "title": "Daydream Camera: AI Travel",
+          "downloads": 4,
+          "redownloads": 0,
+          "iap_units": 0,
+          "proceeds_jpy": 0,
+          "top_products": []
+        },
+        {
+          "title": "ShoeKeep: Care & Rotation",
+          "downloads": 5,
+          "redownloads": 0,
+          "iap_units": 0,
+          "proceeds_jpy": 0,
+          "top_products": []
+        },
+        {
+          "title": "nokki - 音楽ジャーナル",
+          "downloads": 42,
+          "redownloads": 11,
+          "iap_units": 0,
+          "proceeds_jpy": 0,
+          "top_products": []
+        },
+        {
+          "title": "KnifeKeep: Blade Care",
+          "downloads": 8,
+          "redownloads": 1,
+          "iap_units": 0,
+          "proceeds_jpy": 0,
+          "top_products": []
+        },
+        {
+          "title": "HomeKeep - Filter Reminder",
+          "downloads": 9,
+          "redownloads": 1,
+          "iap_units": 0,
+          "proceeds_jpy": 0,
+          "top_products": []
+        },
+        {
+          "title": "CosmeFresh: Makeup Expiry",
+          "downloads": 21,
+          "redownloads": 0,
+          "iap_units": 0,
+          "proceeds_jpy": 0,
+          "top_products": []
+        },
+        {
+          "title": "WidgetQiita",
+          "downloads": 1,
+          "redownloads": 6,
+          "iap_units": 0,
+          "proceeds_jpy": 0,
+          "top_products": []
+        },
+        {
+          "title": "BeanFresh - Coffee Freshness",
+          "downloads": 2,
+          "redownloads": 0,
+          "iap_units": 0,
+          "proceeds_jpy": 0,
+          "top_products": []
+        },
+        {
+          "title": "Aquarium Care - TankMinder",
+          "downloads": 19,
+          "redownloads": 1,
+          "iap_units": 0,
+          "proceeds_jpy": 0,
+          "top_products": []
+        },
+        {
+          "title": "FightAction",
+          "downloads": 0,
+          "redownloads": 1,
+          "iap_units": 0,
+          "proceeds_jpy": 0,
+          "top_products": []
+        },
+        {
+          "title": "CameraKeep: Camera Gear Care",
+          "downloads": 7,
+          "redownloads": 0,
+          "iap_units": 0,
+          "proceeds_jpy": 0,
+          "top_products": []
+        },
+        {
+          "title": "うんぐりっしゅ",
+          "downloads": 15,
+          "redownloads": 1,
+          "iap_units": 0,
+          "proceeds_jpy": 0,
+          "top_products": []
+        },
+        {
+          "title": "ながらカウンター ~別のアプリを使っていてもカウントできる~",
+          "downloads": 25,
+          "redownloads": 13,
+          "iap_units": 0,
+          "proceeds_jpy": 0,
+          "top_products": []
+        },
+        {
+          "title": "Cook-it -冷蔵庫の中を撮るだけでAIレシピ提案-",
+          "downloads": 3,
+          "redownloads": 2,
+          "iap_units": 0,
+          "proceeds_jpy": 0,
+          "top_products": []
+        },
+        {
+          "title": "PassportAlert: Visa Expiry",
+          "downloads": 3,
+          "redownloads": 0,
+          "iap_units": 0,
+          "proceeds_jpy": 0,
+          "top_products": []
+        },
+        {
+          "title": "CarKeep: Car Maintenance",
+          "downloads": 4,
+          "redownloads": 1,
+          "iap_units": 0,
+          "proceeds_jpy": 0,
+          "top_products": []
+        },
+        {
+          "title": "ikaQR ~QRコードを爆速で読み込もう~",
+          "downloads": 3,
+          "redownloads": 7,
+          "iap_units": 0,
+          "proceeds_jpy": 0,
+          "top_products": []
+        },
+        {
+          "title": "AI Gemini",
+          "downloads": 0,
+          "redownloads": 5,
+          "iap_units": 0,
+          "proceeds_jpy": 0,
+          "top_products": []
+        },
+        {
+          "title": "Matchbox: Focus Timer & Habits",
+          "downloads": 7,
+          "redownloads": 1,
+          "iap_units": 0,
+          "proceeds_jpy": 0,
+          "top_products": []
+        },
+        {
+          "title": "mono ~お迎えした喜びを分かち合うアプリ~",
+          "downloads": 1,
+          "redownloads": 1,
+          "iap_units": 0,
+          "proceeds_jpy": 0,
+          "top_products": []
+        }
+      ]
+    },
+    "play_detail": {
+      "totals": {
+        "gross_jpy": 27382,
+        "fee_jpy": -4107,
+        "tax_jpy": -75,
+        "net_jpy": 23200
+      },
+      "apps": {
+        "com.tsuzukit.anatareceipt": {
+          "title": "Premium (Weekly) (YOU Receipt: Receipt Maker)",
+          "gross_jpy": 18022,
+          "fee_jpy": -2703,
+          "tax_jpy": 0,
+          "net_jpy": 15319,
+          "transactions": 22
+        },
+        "com.tsuzukit.poopcounter": {
+          "title": "うんちくんプレミアム（月額） (UNCHIKUN Poop Tracker)",
+          "gross_jpy": 7320,
+          "fee_jpy": -1098,
+          "tax_jpy": 0,
+          "net_jpy": 6222,
+          "transactions": 17
+        },
+        "com.tsuzuki817.omoidemap": {
+          "title": "  思い出マップサポーター（期間限定月額） (旅行思い出マップ - 旅の記憶を、地図に描く)",
+          "gross_jpy": 2040,
+          "fee_jpy": -306,
+          "tax_jpy": 0,
+          "net_jpy": 1734,
+          "transactions": 3
+        },
+        "": {
+          "title": "",
+          "gross_jpy": 0,
+          "fee_jpy": 0,
+          "tax_jpy": -75,
+          "net_jpy": -75,
+          "transactions": 0
+        }
+      }
+    },
+    "admob_apps": [
+      {
+        "month": "2026-10",
+        "app": "うんちくん AI健康記録&うんトモ",
+        "platform": "iOS",
+        "jpy": 73812,
+        "ecpm": 141,
+        "impressions": 523539
+      },
+      {
+        "month": "2026-10",
+        "app": "推しアイランド",
+        "platform": "iOS",
+        "jpy": 41845,
+        "ecpm": 189,
+        "impressions": 221774
+      },
+      {
+        "month": "2026-10",
+        "app": "うんちくん うんち記録&共有",
+        "platform": "Android",
+        "jpy": 10337,
+        "ecpm": 168,
+        "impressions": 61420
+      },
+      {
+        "month": "2026-10",
+        "app": "旅行思い出マップ - 旅の記憶を、地図に描く",
+        "platform": "iOS",
+        "jpy": 9955,
+        "ecpm": 1238,
+        "impressions": 8042
+      },
+      {
+        "month": "2026-10",
+        "app": "流れるメモ帳",
+        "platform": "iOS",
+        "jpy": 5001,
+        "ecpm": 275,
+        "impressions": 18167
+      },
+      {
+        "month": "2026-10",
+        "app": "ゼリーセイムパズル",
+        "platform": "iOS",
+        "jpy": 3246,
+        "ecpm": 1684,
+        "impressions": 1927
+      },
+      {
+        "month": "2026-10",
+        "app": "旅行思い出マップ - 旅の記憶を、地図に描く",
+        "platform": "Android",
+        "jpy": 1745,
+        "ecpm": 444,
+        "impressions": 3930
+      },
+      {
+        "month": "2026-10",
+        "app": "フチドリ！ ~背景透過と縁取り~",
+        "platform": "iOS",
+        "jpy": 1196,
+        "ecpm": 2105,
+        "impressions": 568
+      },
+      {
+        "month": "2026-10",
+        "app": "PictIn",
+        "platform": "iOS",
+        "jpy": 803,
+        "ecpm": 200,
+        "impressions": 4008
+      },
+      {
+        "month": "2026-10",
+        "app": "めくるん - 日めくりカレンダー",
+        "platform": "iOS",
+        "jpy": 676,
+        "ecpm": 373,
+        "impressions": 1811
+      },
+      {
+        "month": "2026-10",
+        "app": "あなたレシート レシート作成＆記録",
+        "platform": "iOS",
+        "jpy": 555,
+        "ecpm": 182,
+        "impressions": 3051
+      },
+      {
+        "month": "2026-10",
+        "app": "SkyCode",
+        "platform": "iOS",
+        "jpy": 124,
+        "ecpm": 6179,
+        "impressions": 20
+      },
+      {
+        "month": "2026-10",
+        "app": "Himekuri - 記念日カウントダウン",
+        "platform": "iOS",
+        "jpy": 122,
+        "ecpm": 125,
+        "impressions": 972
+      },
+      {
+        "month": "2026-10",
+        "app": "PhotoGuards",
+        "platform": "iOS",
+        "jpy": 111,
+        "ecpm": 709,
+        "impressions": 157
+      },
+      {
+        "month": "2026-10",
+        "app": "π ~ Pi　円周率を楽しむアプリ",
+        "platform": "iOS",
+        "jpy": 108,
+        "ecpm": 2163,
+        "impressions": 50
+      },
+      {
+        "month": "2026-10",
+        "app": "猫背改善と姿勢リマインダー：猫背は猫だけで充分にゃ。",
+        "platform": "iOS",
+        "jpy": 103,
+        "ecpm": 235,
+        "impressions": 437
+      },
+      {
+        "month": "2026-10",
+        "app": "記念日リマインダー - メモリア",
+        "platform": "iOS",
+        "jpy": 89,
+        "ecpm": 445,
+        "impressions": 201
+      },
+      {
+        "month": "2026-10",
+        "app": "マッチボックス 集中タイマー＆習慣",
+        "platform": "iOS",
+        "jpy": 68,
+        "ecpm": 95,
+        "impressions": 715
+      },
+      {
+        "month": "2026-10",
+        "app": "FocusDrive - 集中タイマー",
+        "platform": "iOS",
+        "jpy": 61,
+        "ecpm": 596,
+        "impressions": 102
+      },
+      {
+        "month": "2026-10",
+        "app": "あなたレシート レシート作成＆記録",
+        "platform": "Android",
+        "jpy": 60,
+        "ecpm": 36,
+        "impressions": 1682
+      },
+      {
+        "month": "2026-10",
+        "app": "ながらカウンター ~別のアプリを使っていてもカウントできる~",
+        "platform": "iOS",
+        "jpy": 58,
+        "ecpm": 412,
+        "impressions": 142
+      },
+      {
+        "month": "2026-10",
+        "app": "ClockWidget ~個性豊かな時計ウィジェットアプリ~",
+        "platform": "iOS",
+        "jpy": 55,
+        "ecpm": 689,
+        "impressions": 80
+      },
+      {
+        "month": "2026-10",
+        "app": "馬券ジェネレーター",
+        "platform": "iOS",
+        "jpy": 51,
+        "ecpm": 467,
+        "impressions": 109
+      },
+      {
+        "month": "2026-10",
+        "app": "コスメ期限管理 CosmeFresh",
+        "platform": "iOS",
+        "jpy": 49,
+        "ecpm": 1531,
+        "impressions": 32
+      },
+      {
+        "month": "2026-10",
+        "app": "PIPMP",
+        "platform": "iOS",
+        "jpy": 48,
+        "ecpm": 595,
+        "impressions": 81
+      },
+      {
+        "month": "2026-10",
+        "app": "EyeMole 視線でモグラたたき",
+        "platform": "iOS",
+        "jpy": 46,
+        "ecpm": 432,
+        "impressions": 107
+      },
+      {
+        "month": "2026-10",
+        "app": "バースデームーン",
+        "platform": "iOS",
+        "jpy": 44,
+        "ecpm": 4855,
+        "impressions": 9
+      },
+      {
+        "month": "2026-10",
+        "app": "Kimochi かわいい気分日記",
+        "platform": "iOS",
+        "jpy": 43,
+        "ecpm": 542,
+        "impressions": 80
+      },
+      {
+        "month": "2026-10",
+        "app": "水槽管理・水替え通知 TankMinder",
+        "platform": "iOS",
+        "jpy": 41,
+        "ecpm": 218,
+        "impressions": 186
+      },
+      {
+        "month": "2026-10",
+        "app": "ikaQR ~QRコードを爆速で読み込もう~",
+        "platform": "iOS",
+        "jpy": 37,
+        "ecpm": 259,
+        "impressions": 143
+      }
+    ]
   }
 }
