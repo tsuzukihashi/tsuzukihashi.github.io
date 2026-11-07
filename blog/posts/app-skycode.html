@@ -6,12 +6,12 @@
     <script src="/assets/js/lang.js"></script>
     <title>SkyCode - アプリ紹介 | Ryo Tsuzukihashi</title>
     <meta name="title-en" content="SkyCode - App Spotlight | Ryo Tsuzukihashi">
-    <meta name="description" content="iPhoneの画像の中から画像を選び、選んだ画像の平均色をカラーコードとして画像内に表示できます。 作成した画像は、保存したりSNSなどに共有できます。 このアプリは新しい発見を与えてくれます 既に見た写真もカラーコードがあることで、異なって見えることでしょう 写真だけではなく、ゲーム内のスクリーン">
-    <meta name="description-en" content="Pick an image from your iPhone, and the app shows the average color of that image as a color code inside the image. You can save the images you create or share ">
+    <meta name="description" content="写真の平均色から3つのカラーコードを出して、写真の上に並べるアプリ。2020年に2日で作って、今も更新を続けています。">
+    <meta name="description-en" content="Puts three color codes from a photo's average color right on the photo. I built it in two days in 2020 and I'm still updating it.">
 
     <!-- OGP -->
     <meta property="og:title" content="SkyCode - アプリ紹介">
-    <meta property="og:description" content="iPhoneの画像の中から画像を選び、選んだ画像の平均色をカラーコードとして画像内に表示できます。 作成した画像は、保存したりSNSなどに共有できます。 このアプリは新しい発見を与えてくれます 既に見た写真もカラーコードがあることで、異なって見えることでしょう 写真だけではなく、ゲーム内のスクリーン">
+    <meta property="og:description" content="写真の平均色から3つのカラーコードを出して、写真の上に並べるアプリ。2020年に2日で作って、今も更新を続けています。">
     <meta property="og:image" content="https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/a4/3c/bb/a43cbbb8-dd31-d427-6f7f-5b75b1b0f682/AppIcon-1x_U007emarketing-0-10-0-85-220.png/512x512bb.jpg">
     <meta property="og:url" content="https://tsuzukit.com/blog/posts/app-skycode.html">
     <meta property="og:type" content="article">
@@ -92,20 +92,42 @@
     <!-- Article -->
     <article class="app-article">
         <div class="app-description i18n-ja">
-        <p class="lead">iPhoneの画像の中から画像を選び、選んだ画像の平均色をカラーコードとして画像内に表示できます。</p>
-        <p>作成した画像は、保存したりSNSなどに共有できます。</p>
-        <p>このアプリは新しい発見を与えてくれます</p>
-        <p>既に見た写真もカラーコードがあることで、異なって見えることでしょう</p>
-        <p>写真だけではなく、ゲーム内のスクリーンショット、イラストなどにも使用できます。</p>
-        <p>いろいろな写真で試してみてください。</p>
+        <p class="lead">写真の色を、カラーコードにして写真の上に並べるアプリです。</p>
+        <p>空の写真を選ぶだけで、その写真の平均色から、濃い色、平均の色、淡い色の3つのカラーコードが写真に乗ります。文字を入れる手間がいらないので、そのままSNSに載せられます。</p>
+        <p>レビューで「ただの空の写真が一瞬の加工でオシャレに見えます」と書いていただきました。</p>
+        <h2>できること</h2>
+        <ul>
+        <li>アルバムから選ぶ、カメラで撮る</li>
+        <li>3段の表示と、1行だけの表示を切り替える</li>
+        <li>カラーコードを指で好きな場所に動かす</li>
+        <li>カラーコードを押してコピーする</li>
+        <li>画像を保存する、共有する</li>
+        </ul>
+        <p>空だけでなく、ゲームのスクリーンショットやイラストにも使えます。</p>
+        <h2>レビューから足した機能</h2>
+        <p>「カラーコードの場所を好きな場所に動かせる様にして欲しい」というレビューをいただいて、1.18.0で動かせるようにしました。人が写っている写真でも、人を避けて置けます。</p>
+        <h2>作ったときの話</h2>
+        <p>最初のコミットは2020年5月9日です。翌日に平均色を出せるようになって、5月11日に公開しました。作って2日です。</p>
+        <p>2026年10月に出した1.18.1まで、6年以上更新を続けてます。評価は2026年11月の時点で4.49、234件もいただいてます。感謝🙏</p>
         </div>
         <div class="app-description i18n-en">
-        <p class="lead">Pick an image from your iPhone, and the app shows the average color of that image as a color code inside the image.</p>
-        <p>You can save the images you create or share them on social media.</p>
-        <p>This app gives you new discoveries</p>
-        <p>Even photos you've already seen will probably look different with a color code on them</p>
-        <p>You can use it not only with photos but also with in-game screenshots, illustrations, and more.</p>
-        <p>Try it with all kinds of photos.</p>
+        <p class="lead">Turn a photo's colors into color codes, right on top of the photo.</p>
+        <p>Pick a photo of the sky, and three color codes based on its average color appear on it: dark, average and pale. There's no text to place by hand, so it's ready to post.</p>
+        <p>One review said, "A plain photo of the sky looks stylish after a moment's edit." </p>
+        <h2>What it does</h2>
+        <ul>
+        <li>Choose from your album or take a photo</li>
+        <li>Switch between a three-line display and a single line</li>
+        <li>Drag the color codes wherever you like</li>
+        <li>Tap a color code to copy it</li>
+        <li>Save or share the image</li>
+        </ul>
+        <p>It works on game screenshots and illustrations too, not just the sky.</p>
+        <h2>A feature from a review</h2>
+        <p>A review asked, "I'd like to be able to move the color codes wherever I want," so I made that possible in 1.18.0. Now you can place them away from a person in the photo.</p>
+        <h2>How it was built</h2>
+        <p>The first commit is from May 9, 2020. The average color worked the next day, and I released it on May 11. Two days, start to finish.</p>
+        <p>I've kept updating it for over six years, up to 1.18.1 in October 2026. As of November 2026 it has a 4.49 rating from 234 ratings. Thank you 🙏</p>
         </div>
 
         <!-- App Info -->
@@ -122,7 +144,7 @@
                 </div>
                 <div class="app-info-item">
                     <div class="app-info-label"><span class="i18n-ja">バージョン</span><span class="i18n-en">Version</span></div>
-                    <div class="app-info-value">1.18.0</div>
+                    <div class="app-info-value">1.18.1</div>
                 </div>
                 <div class="app-info-item">
                     <div class="app-info-label"><span class="i18n-ja">リリース日</span><span class="i18n-en">Release Date</span></div>

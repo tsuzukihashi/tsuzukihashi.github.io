@@ -6,12 +6,12 @@
     <script src="/assets/js/lang.js"></script>
     <title>ikaQR ~QRコードを爆速で読み込もう~ - アプリ紹介 | Ryo Tsuzukihashi</title>
     <meta name="title-en" content="ikaQR - Lightning-Fast QR Scanner - App Spotlight | Ryo Tsuzukihashi">
-    <meta name="description" content="ikaQRは、QRコードを開くまでの手間をなくすアプリです。 Widgetから爆速でアプリを起動！ QRコードを読み取るとすぐにアクションを実行します！ また、読み取ったコードは履歴に残すことができます。 QRコードを作りたくなった時も利用できます。">
-    <meta name="description-en" content="ikaQR is an app that takes the hassle out of opening QR codes. Launch the app super fast from a widget! As soon as it reads a QR code, it takes action right awa">
+    <meta name="description" content="開いたらすぐQRコードを読めて、読んだものは全部履歴に残るアプリ。名前を付けたり、Wi-FiのQRをもう一度出したりできます。">
+    <meta name="description-en" content="Open it and scan right away. Everything you scan stays in your history, where you can name it or show a code like your Wi-Fi again.">
 
     <!-- OGP -->
     <meta property="og:title" content="ikaQR ~QRコードを爆速で読み込もう~ - アプリ紹介">
-    <meta property="og:description" content="ikaQRは、QRコードを開くまでの手間をなくすアプリです。 Widgetから爆速でアプリを起動！ QRコードを読み取るとすぐにアクションを実行します！ また、読み取ったコードは履歴に残すことができます。 QRコードを作りたくなった時も利用できます。">
+    <meta property="og:description" content="開いたらすぐQRコードを読めて、読んだものは全部履歴に残るアプリ。名前を付けたり、Wi-FiのQRをもう一度出したりできます。">
     <meta property="og:image" content="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/20/6c/b3/206cb337-5331-1193-1f4a-b265f42bb1dc/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.jpg">
     <meta property="og:url" content="https://tsuzukit.com/blog/posts/app-ikaqr.html">
     <meta property="og:type" content="article">
@@ -66,8 +66,8 @@
                     <span class="app-hero-badge"><span class="i18n-ja">無料</span><span class="i18n-en">Free</span></span>
                     <div class="app-hero-rating">
                         <span class="stars">★★★★★</span>
-                        <span>5</span>
-                        <span class="count">(<span class="i18n-ja">1件</span><span class="i18n-en">1 rating</span>)</span>
+                        <span>5.0</span>
+                        <span class="count">(<span class="i18n-ja">1件</span><span class="i18n-en">1 ratings</span>)</span>
                     </div>
                 </div>
                 <div class="app-hero-download">
@@ -93,18 +93,38 @@
     <!-- Article -->
     <article class="app-article">
         <div class="app-description i18n-ja">
-        <p class="lead">ikaQRは、QRコードを開くまでの手間をなくすアプリです。</p>
-        <p>Widgetから爆速でアプリを起動！</p>
-        <p>QRコードを読み取るとすぐにアクションを実行します！</p>
-        <p>また、読み取ったコードは履歴に残すことができます。</p>
-        <p>QRコードを作りたくなった時も利用できます。</p>
+        <p class="lead">開いたら、すぐQRコードを読み取れるアプリです。</p>
+        <p>起動すると読み取りの画面から始まります。枠に入れれば自動で読み取るので、シャッターを押す必要はありません。ロック画面のウィジェットから開いたときも、読み取りの画面に直行します。</p>
+        <h2>読んだQRは全部履歴に残る</h2>
+        <p>iPhoneのカメラでも読めるんですが、あとから同じQRを探せないんですよね。ikaQRは読んだものが全部残ります。</p>
+        <ul>
+        <li>長押しで名前を付けられる（URLの代わりにタイトルが出ます）</li>
+        <li>お気に入りと、自分で作ったものだけに絞り込める</li>
+        <li>新しい順、古い順、読み取り回数が多い順に並べ替えられる</li>
+        </ul>
+        <h2>もう一度QRコードとして出せる</h2>
+        <p>履歴の詳細を開くと、読んだ内容をQRコードとして出し直せます。家のWi-FiのQRを一度読んでおけば、友だちが来たときに見せるだけで済みます。</p>
+        <h2>文字からQRも作れる</h2>
+        <p>文字を打つとQRコードになります。入力欄の例は「スシコラのギア構成」です。友だちにギアを見せるのにも使えます。</p>
+        <h2>作ったときの話</h2>
+        <p>リポジトリの最初のコミットは2023年5月28日で、公開は6月13日です。公開の4日後に、ロック画面のウィジェットから開いたら必ず読み取りの画面にする修正を入れました。2026年10月の1.1.1では、iPadとiPhone Duoの内側で履歴と詳細を左右に並べられるようにしてます。</p>
         </div>
         <div class="app-description i18n-en">
-        <p class="lead">ikaQR is an app that takes the hassle out of opening QR codes.</p>
-        <p>Launch the app super fast from a widget!</p>
-        <p>As soon as it reads a QR code, it takes action right away!</p>
-        <p>Codes you've scanned can also be kept in your history.</p>
-        <p>You can use it when you want to make a QR code, too.</p>
+        <p class="lead">Open it, and you can scan a QR code right away.</p>
+        <p>The app starts on the scanner. Put the code inside the frame and it reads automatically, with no shutter to press. Opening from the Lock Screen widget also goes straight to the scanner.</p>
+        <h2>Everything you scan stays in your history</h2>
+        <p>The iPhone camera can read QR codes too, but you can't find the same code again later. ikaQR keeps all of them.</p>
+        <ul>
+        <li>Long-press to give one a name (the title shows instead of the URL)</li>
+        <li>Filter down to favorites or codes you made yourself</li>
+        <li>Sort by newest, oldest, or most scanned</li>
+        </ul>
+        <h2>Show it again as a QR code</h2>
+        <p>Open an item in your history and it can be shown as a QR code again. Scan your home Wi-Fi code once, and next time a friend comes over you just show it to them.</p>
+        <h2>Make a QR code from text</h2>
+        <p>Type some text and it becomes a QR code. The example in the input field is a Splatoon gear setup, so you can use it to show friends your gear too.</p>
+        <h2>How it was built</h2>
+        <p>The first commit is from May 28, 2023, and it was released on June 13. Four days after release, I made the Lock Screen widget always open the scanner. Version 1.1.1 in October 2026 shows history and details side by side on iPad and inside iPhone Duo.</p>
         </div>
 
         <!-- App Info -->
@@ -121,7 +141,7 @@
                 </div>
                 <div class="app-info-item">
                     <div class="app-info-label"><span class="i18n-ja">バージョン</span><span class="i18n-en">Version</span></div>
-                    <div class="app-info-value">1.1.0</div>
+                    <div class="app-info-value">1.1.1</div>
                 </div>
                 <div class="app-info-item">
                     <div class="app-info-label"><span class="i18n-ja">リリース日</span><span class="i18n-en">Release Date</span></div>

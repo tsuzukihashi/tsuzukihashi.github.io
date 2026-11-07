@@ -6,12 +6,12 @@
     <script src="/assets/js/lang.js"></script>
     <title>PIPMP - アプリ紹介 | Ryo Tsuzukihashi</title>
     <meta name="title-en" content="PIPMP - App Spotlight | Ryo Tsuzukihashi">
-    <meta name="description" content="PIPMPは、ピクチャー・イン・ピクチャーを使ってどんなアプリからでも使える、いつでもアクセス可能な音楽プレーヤーです！ このアプリを利用するためには、ミュージックライブラリへのアクセスが必要です。 ## その他情報 - 利用規約 https://panoramic-clematis-d8b.notion.site/0">
-    <meta name="description-en" content="PIPMP is an always-accessible music player that can be used from any app using picture-in-picture!&quot; The Access to the music library is required to use this appl">
+    <meta name="description" content="ピクチャ・イン・ピクチャの小窓で音楽を操作できるプレーヤー。作り始めた2022年の話と、2026年に審査で3回却下された話も書きます。">
+    <meta name="description-en" content="A music player you control from a Picture in Picture window, plus how it started in 2022 and how it was rejected three times in 2026.">
 
     <!-- OGP -->
     <meta property="og:title" content="PIPMP - アプリ紹介">
-    <meta property="og:description" content="PIPMPは、ピクチャー・イン・ピクチャーを使ってどんなアプリからでも使える、いつでもアクセス可能な音楽プレーヤーです！ このアプリを利用するためには、ミュージックライブラリへのアクセスが必要です。 ## その他情報 - 利用規約 https://panoramic-clematis-d8b.notion.site/0">
+    <meta property="og:description" content="ピクチャ・イン・ピクチャの小窓で音楽を操作できるプレーヤー。作り始めた2022年の話と、2026年に審査で3回却下された話も書きます。">
     <meta property="og:image" content="https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/d2/9f/47/d29f4743-9e29-91cd-98fe-e651b0e8a903/AppIcon-0-1x_U007emarketing-0-10-0-85-220.png/512x512bb.jpg">
     <meta property="og:url" content="https://tsuzukit.com/blog/posts/app-pipmp.html">
     <meta property="og:type" content="article">
@@ -66,8 +66,8 @@
                     <span class="app-hero-badge"><span class="i18n-ja">無料</span><span class="i18n-en">Free</span></span>
                     <div class="app-hero-rating">
                         <span class="stars">★★★☆☆</span>
-                        <span>3.5</span>
-                        <span class="count">(<span class="i18n-ja">24件</span><span class="i18n-en">24 ratings</span>)</span>
+                        <span>3.4</span>
+                        <span class="count">(<span class="i18n-ja">27件</span><span class="i18n-en">27 ratings</span>)</span>
                     </div>
                 </div>
                 <div class="app-hero-download">
@@ -92,22 +92,38 @@
     <!-- Article -->
     <article class="app-article">
         <div class="app-description i18n-ja">
-        <p class="lead">PIPMPは、ピクチャー・イン・ピクチャーを使ってどんなアプリからでも使える、いつでもアクセス可能な音楽プレーヤーです！</p>
-        <p>このアプリを利用するためには、ミュージックライブラリへのアクセスが必要です。</p>
-        <p>## その他情報</p>
+        <p class="lead">ピクチャ・イン・ピクチャの小窓で動く音楽プレーヤーです。</p>
+        <p>再生中の小窓が別のアプリの上に浮いたままになるので、音楽アプリに戻らなくても操作できます。使うにはミュージックライブラリへのアクセスの許可が必要です。</p>
+        <h2>できること</h2>
         <ul>
-            <li>利用規約</li>
-            <li>プライバシーポリシー</li>
-            <li>特定商取引法に基づく表示</li>
+        <li>プレイリストから聴く</li>
+        <li>曲の一覧から聴く</li>
+        <li>曲を検索する</li>
         </ul>
+        <p>機能はこれくらいです。音楽プレーヤーを小窓に入れる、というのがこのアプリのやりたいことです。</p>
+        <h2>作り始めたころ</h2>
+        <p>リポジトリの名前はemp、everyday music playerの略です。READMEの要件は「音楽を再生することができる」の1行だけでした（雑すぎる）。最初のコミットは2022年2月12日で、2月28日にピクチャ・イン・ピクチャに対応して、3月4日に公開しました。検索はその月の26日に足してます。</p>
+        <h2>審査で3回却下された話</h2>
+        <p>2026年10月、今のXcodeでビルドし直して1.2.1を出したら、審査の端末で起動直後に落ちると3回却下されました orz</p>
+        <p>シミュレータでは再現しなくて、最初の2回のログを読むと、落ちていたのは古い広告SDKの中でした。SDKを新しくして、広告の準備を画面ができたあとに回すようにしました。そのあとサブスクの規約のリンクでも指摘を受けて直して、10月14日に公開できました。</p>
+        <p>2022年のアプリも、ちゃんと手を入れれば今のiOSで動きます。</p>
         </div>
         <div class="app-description i18n-en">
-        <p class="lead">PIPMP is an always-accessible music player that can be used from any app using picture-in-picture!&quot; The</p>
-        <p>Access to the music library is required to use this application.</p>
-        <p># Other Information</p>
+        <p class="lead">A music player that runs in a Picture in Picture window.</p>
+        <p>The small player floats on top of other apps, so you can control it without going back to a music app. It needs access to your music library.</p>
+        <h2>What it does</h2>
         <ul>
-            <li>Indication based on the Act on Specified Commercial Transactions</li>
+        <li>Play from your playlists</li>
+        <li>Play from your song list</li>
+        <li>Search for songs</li>
         </ul>
+        <p>That's about it. Putting a music player in the small window is the whole idea.</p>
+        <h2>How it started</h2>
+        <p>The repository is called emp, short for everyday music player. The only requirement in the README was "can play music" (very thorough of me). The first commit is from February 12, 2022. Picture in Picture came on February 28, the release on March 4, and search on the 26th of that month.</p>
+        <h2>Rejected three times in review</h2>
+        <p>In October 2026 I rebuilt it with the current Xcode and submitted 1.2.1. App Review rejected it three times for crashing at launch on their device orz</p>
+        <p>I couldn't reproduce it in the simulator. The logs from the first two rejections showed the crash inside an old ad SDK. I updated the SDK and moved the ad setup to after the window exists. Then review flagged the subscription terms links too, so I fixed those, and it was released on October 14.</p>
+        <p>Even an app from 2022 runs on today's iOS if you give it some care.</p>
         </div>
 
         <!-- App Info -->
@@ -124,7 +140,7 @@
                 </div>
                 <div class="app-info-item">
                     <div class="app-info-label"><span class="i18n-ja">バージョン</span><span class="i18n-en">Version</span></div>
-                    <div class="app-info-value">1.2.0</div>
+                    <div class="app-info-value">1.2.1</div>
                 </div>
                 <div class="app-info-item">
                     <div class="app-info-label"><span class="i18n-ja">リリース日</span><span class="i18n-en">Release Date</span></div>
