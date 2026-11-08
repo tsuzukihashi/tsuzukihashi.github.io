@@ -7,7 +7,7 @@
 body { margin: 0; background: var(--ground); color: var(--ink);
   font-family: "Zen Maru Gothic", -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif; line-height: 1.8; }
 a { color: var(--coral-deep); }
-img { max-width: 100%; }
+img { max-width: 100%; height: auto; }
 .wrap { max-width: 960px; margin: 0 auto; padding: 0 16px; }
 header { background: var(--card); border-bottom: 1px solid var(--line); }
 .hbar { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; flex-wrap: wrap; }
