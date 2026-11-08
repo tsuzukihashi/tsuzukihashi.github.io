@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="/assets/js/lang.js"></script>
+<title>Himekuri 記念日カウントダウン｜あと何日・付き合って何日目を数えるアプリ</title>
+<meta name="description" content="記念日や推しのライブ、誕生日、受験、旅行まであと何日かを毎日数えるiPhoneアプリ。付き合って何日目のカウントアップにも対応。ホーム画面とロック画面に可愛いウィジェットを置けます。登録不要で無料から使えます。">
+<meta name="title-en" content="Himekuri - Day Countdown | Count the days until and since the days you love">
+<meta name="description-en" content="An iPhone app that counts the days until anniversaries, concerts, birthdays, exams and trips, and the days since you started dating. Cute widgets for your Home Screen and Lock Screen. No sign-up, free to start.">
+<link rel="canonical" href="https://tsuzukit.com/himekuri/">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#FFF5F1">
+<link rel="apple-touch-icon" href="/himekuri/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/himekuri/icon.png">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-QERPQ1EGLH');
+</script>
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8240751277462688" crossorigin="anonymous"></script>
+<meta property="og:title" content="Himekuri 記念日カウントダウン｜あと何日・付き合って何日目を数えるアプリ">
+<meta property="og:description" content="記念日や推しのライブ、誕生日、受験、旅行まであと何日かを毎日数えるiPhoneアプリ。付き合って何日目にも対応。ホーム画面とロック画面に可愛いウィジェットを。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tsuzukit.com/himekuri/">
+<meta property="og:image" content="https://tsuzukit.com/himekuri/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="apple-itunes-app" content="app-id=6787482576">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "Himekuri - 記念日カウントダウン",
+  "alternateName": ["Himekuri", "ひめくり", "Himekuri - Day Countdown"],
+  "operatingSystem": "iOS",
+  "applicationCategory": "LifestyleApplication",
+  "description": "記念日や推しのライブ、誕生日、受験、旅行まであと何日かを数え、付き合って何日目かも数えられるiPhoneアプリ。ホーム画面とロック画面のウィジェットに対応。",
+  "url": "https://tsuzukit.com/himekuri/",
+  "downloadUrl": "https://apps.apple.com/jp/app/id6787482576",
+  "image": "https://tsuzukit.com/himekuri/icon.png",
+  "screenshot": ["https://tsuzukit.com/himekuri/shots/home.jpg", "https://tsuzukit.com/himekuri/shots/countup.jpg"],
+  "inLanguage": ["ja", "en"],
+  "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"},
+  "author": {"@type": "Person", "name": "Ryo Tsuzukihashi", "url": "https://tsuzukit.com/"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "付き合った日は何日目として数えますか？",
+     "acceptedAnswer": {"@type": "Answer", "text": "付き合った日そのものを1日目として数えます。次の日が2日目です。"}},
+    {"@type": "Question", "name": "無料で使えますか？",
+     "acceptedAnswer": {"@type": "Answer", "text": "無料で3件まで登録でき、ウィジェットと当日の朝のお知らせも使えます。無料版には広告が出ます。プレミアムにすると、登録が無制限になり、毎年と毎月のくり返し、7日前と前日のお知らせ、全12色のきせかえが使えるようになり、広告も消えます。"}},
+    {"@type": "Question", "name": "誕生日を毎年数え直してくれますか？",
+     "acceptedAnswer": {"@type": "Answer", "text": "くり返しを毎年にすると、誕生日が過ぎたら次の誕生日まであと何日かを自動で数え直します。毎月の記念日には毎月のくり返しが使えます。くり返しはプレミアムの機能です。"}},
+    {"@type": "Question", "name": "ロック画面に日数を出せますか？",
+     "acceptedAnswer": {"@type": "Answer", "text": "出せます。ロック画面の小さなウィジェット3種類と、ホーム画面の小と中のウィジェットがあります。ウィジェットを長押しすると、どの日を表示するかを選べます。"}},
+    {"@type": "Question", "name": "会員登録は必要ですか？",
+     "acceptedAnswer": {"@type": "Answer", "text": "必要ありません。登録した日はiPhoneの中だけに保存し、開発者のサーバーには送りません。"}}
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=1">
+</head>
+<body>
+<header>
+<div class="wrap hbar">
+<a class="hbrand" href="/himekuri/"><img src="icon.png" alt="" width="32" height="32"><span>Himekuri</span></a>
+<nav class="hnav nav-menu">
+<a href="/himekuri/" aria-current="page"><span class="i18n-ja">アプリ紹介</span><span class="i18n-en">About</span></a>
+<a href="terms.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms</span></a>
+<a href="privacy.html"><span class="i18n-ja">プライバシー</span><span class="i18n-en">Privacy</span></a>
+<a href="https://tsuzukit.com/contact/"><span class="i18n-ja">お問い合わせ</span><span class="i18n-en">Contact</span></a>
+</nav>
+</div>
+</header>
+
+<main class="wrap">
+<div class="hero">
+<div>
+<span class="pill"><span class="i18n-ja">記念日カウントダウン・カウントアップ</span><span class="i18n-en">Countdown and count-up</span></span>
+<h1 class="i18n-ja">たのしみな日まで、<br>毎日かぞえる。</h1>
+<h1 class="i18n-en">Count every day<br>to the days you love.</h1>
+<p class="i18n-ja">推しのライブまであと何日。付き合ってから今日で何日目。誕生日、旅行、結婚式、受験の日も、登録しておけば Himekuri が毎日数えます。日数はホーム画面とロック画面のウィジェットで、アプリを開かなくても目に入ります。</p>
+<p class="i18n-en">How many days until the concert? How many days since you started dating? Add birthdays, trips, weddings and exams too, and Himekuri counts them every day. The number sits in a widget on your Home Screen and Lock Screen, so you see it without opening the app.</p>
+<a class="btn" href="https://apps.apple.com/app/id6787482576"><span class="i18n-ja">App Store で見る</span><span class="i18n-en">View on the App Store</span></a>
+<p class="note i18n-ja">iPhone 向け。会員登録なしで、無料から使えます。</p>
+<p class="note i18n-en">For iPhone. No sign-up, free to start.</p>
+</div>
+<img class="face" src="icon.png" alt="Himekuri のアイコン" data-en-alt="Himekuri app icon" width="300" height="300">
+</div>
+
+<section>
+<h2><span class="i18n-ja">できること</span><span class="i18n-en">What it does</span></h2>
+<div class="cards">
+<div class="card">
+<h3><span class="i18n-ja">あと何日も、何日目も</span><span class="i18n-en">Days until, days since</span></h3>
+<p class="i18n-ja">その日まであと何日かを数えるカウントダウンと、その日から何日目かを数えるカウントアップを、1つずつ選べます。付き合った日は1日目から数えます。</p>
+<p class="i18n-en">Pick a countdown to a date or a count-up from a date, one by one. The day you started dating counts as day 1.</p>
+</div>
+<div class="card">
+<h3><span class="i18n-ja">ロック画面にも日数</span><span class="i18n-en">On your Lock Screen</span></h3>
+<p class="i18n-ja">ホーム画面の小と中、ロック画面の3種類のウィジェットがあります。ウィジェットを長押しすると、表示する日を選べます。</p>
+<p class="i18n-en">Small and medium Home Screen widgets plus three Lock Screen widgets. Long-press a widget to choose which day it shows.</p>
+</div>
+<div class="card">
+<h3><span class="i18n-ja">当日の朝にお知らせ</span><span class="i18n-en">A note on the morning</span></h3>
+<p class="i18n-ja">その日の朝9時に通知が届きます。プレミアムなら7日前と前日にも知らせるので、準備が間に合います。</p>
+<p class="i18n-en">You get a notification at 9 a.m. on the day. With Premium, you also hear about it 7 days before and the day before.</p>
+</div>
+<div class="card">
+<h3><span class="i18n-ja">誕生日は毎年数え直す</span><span class="i18n-en">Birthdays that repeat</span></h3>
+<p class="i18n-ja">くり返しを毎年にすると、誕生日が過ぎても次の誕生日までを自動で数え直します。月ごとの記念日には毎月のくり返しを。くり返しはプレミアムで使えます。</p>
+<p class="i18n-en">Set a birthday to repeat every year and it starts counting to the next one as soon as it passes. Use monthly repeats for monthly anniversaries. Repeats come with Premium.</p>
+</div>
+<div class="card">
+<h3><span class="i18n-ja">12色のきせかえ</span><span class="i18n-en">12 colors</span></h3>
+<p class="i18n-ja">コーラル、さくら、よぞら、まっちゃなど12色。カードとウィジェットの色が一緒に変わります。無料で3色、プレミアムで12色ぜんぶ。</p>
+<p class="i18n-en">Coral, sakura, night sky, matcha and more, 12 in all. The card and the widget change together. 3 are free, all 12 come with Premium.</p>
+</div>
+<div class="card">
+<h3><span class="i18n-ja">登録なしで、すぐ使える</span><span class="i18n-en">No account needed</span></h3>
+<p class="i18n-ja">会員登録もログインもありません。登録した日はiPhoneの中だけに保存します。</p>
+<p class="i18n-en">No sign-up and no login. Your days stay on your iPhone.</p>
+</div>
+</div>
+</section>
+
+<section>
+<h2><span class="i18n-ja">こんな日を数えています</span><span class="i18n-en">Days people count</span></h2>
+<ul class="days i18n-ja">
+<li>💞 付き合った日</li><li>🎤 推しのライブ</li><li>🎂 誕生日</li><li>📝 受験・資格試験</li><li>✈️ 旅行</li><li>💍 結婚式・結婚記念日</li><li>👶 生まれた日</li><li>🎄 クリスマス</li>
+</ul>
+<ul class="days i18n-en">
+<li>💞 The day you started dating</li><li>🎤 Concerts</li><li>🎂 Birthdays</li><li>📝 Exams</li><li>✈️ Trips</li><li>💍 Weddings and wedding anniversaries</li><li>👶 Birthdays of little ones</li><li>🎄 Christmas</li>
+</ul>
+</section>
+
+<section>
+<h2><span class="i18n-ja">画面</span><span class="i18n-en">Screens</span></h2>
+<div class="shots">
+<figure><img src="shots/home.jpg" data-en-src="shots/home_en.jpg" alt="たのしみな日の一覧" data-en-alt="List of days" loading="lazy" width="414" height="900"><figcaption><span class="i18n-ja">あと何日かがひと目でわかる</span><span class="i18n-en">Days left at a glance</span></figcaption></figure>
+<figure><img src="shots/countup.jpg" data-en-src="shots/countup_en.jpg" alt="付き合った日から何日目" data-en-alt="Days since you started dating" loading="lazy" width="414" height="900"><figcaption><span class="i18n-ja">付き合って何日目も数える</span><span class="i18n-en">Count the days together</span></figcaption></figure>
+<figure><img src="shots/themes.jpg" data-en-src="shots/themes_en.jpg" alt="きせかえの色" data-en-alt="Color themes" loading="lazy" width="414" height="900"><figcaption><span class="i18n-ja">12色から選ぶ</span><span class="i18n-en">Pick from 12 colors</span></figcaption></figure>
+<figure><img src="shots/today.jpg" data-en-src="shots/today_en.jpg" alt="当日のカード" data-en-alt="Card on the day" loading="lazy" width="414" height="900"><figcaption><span class="i18n-ja">当日はカードがきょうに変わる</span><span class="i18n-en">The card says Today on the day</span></figcaption></figure>
+<figure><img src="shots/yearly.jpg" data-en-src="shots/yearly_en.jpg" alt="毎年のくり返し" data-en-alt="Yearly repeat" loading="lazy" width="414" height="900"><figcaption><span class="i18n-ja">誕生日は毎年くり返す</span><span class="i18n-en">Birthdays repeat every year</span></figcaption></figure>
+</div>
+</section>
+
+<section>
+<h2><span class="i18n-ja">無料とプレミアム</span><span class="i18n-en">Free and Premium</span></h2>
+<table class="plans i18n-ja">
+<thead><tr><th>機能</th><th>無料</th><th>プレミアム</th></tr></thead>
+<tbody>
+<tr><td>登録できる日</td><td>3件</td><td>無制限</td></tr>
+<tr><td>きせかえの色</td><td>3色</td><td>12色</td></tr>
+<tr><td>当日の朝のお知らせ</td><td>あり</td><td>あり</td></tr>
+<tr><td>7日前と前日のお知らせ</td><td>なし</td><td>あり</td></tr>
+<tr><td>毎年と毎月のくり返し</td><td>なし</td><td>あり</td></tr>
+<tr><td>広告</td><td>あり</td><td>なし</td></tr>
+</tbody>
+</table>
+<table class="plans i18n-en">
+<thead><tr><th>Feature</th><th>Free</th><th>Premium</th></tr></thead>
+<tbody>
+<tr><td>Days you can add</td><td>3</td><td>Unlimited</td></tr>
+<tr><td>Color themes</td><td>3</td><td>12</td></tr>
+<tr><td>Morning-of notification</td><td>Yes</td><td>Yes</td></tr>
+<tr><td>7 days before and the day before</td><td>No</td><td>Yes</td></tr>
+<tr><td>Yearly and monthly repeats</td><td>No</td><td>Yes</td></tr>
+<tr><td>Ads</td><td>Yes</td><td>No</td></tr>
+</tbody>
+</table>
+<p class="note i18n-ja">プレミアムは週ごとの自動更新と買い切りの2つから選べます。価格はアプリの中と App Store に出ているものをご覧ください。</p>
+<p class="note i18n-en">Premium comes as a weekly auto-renewing subscription or a one-time purchase. See the app or the App Store for prices.</p>
+</section>
+
+<section class="faq">
+<h2><span class="i18n-ja">よくある質問</span><span class="i18n-en">FAQ</span></h2>
+<div class="i18n-ja">
+<details><summary>付き合った日は何日目として数えますか？</summary><p>付き合った日そのものを1日目として数えます。次の日が2日目です。</p></details>
+<details><summary>無料で使えますか？</summary><p>無料で3件まで登録でき、ウィジェットと当日の朝のお知らせも使えます。無料版には広告が出ます。プレミアムにすると、登録が無制限になり、毎年と毎月のくり返し、7日前と前日のお知らせ、全12色のきせかえが使えるようになり、広告も消えます。</p></details>
+<details><summary>誕生日を毎年数え直してくれますか？</summary><p>くり返しを毎年にすると、誕生日が過ぎたら次の誕生日まであと何日かを自動で数え直します。毎月の記念日には毎月のくり返しが使えます。くり返しはプレミアムの機能です。</p></details>
+<details><summary>ロック画面に日数を出せますか？</summary><p>出せます。ロック画面の小さなウィジェット3種類と、ホーム画面の小と中のウィジェットがあります。ウィジェットを長押しすると、どの日を表示するかを選べます。</p></details>
+<details><summary>会員登録は必要ですか？</summary><p>必要ありません。登録した日はiPhoneの中だけに保存し、開発者のサーバーには送りません。</p></details>
+</div>
+<div class="i18n-en">
+<details><summary>How is the day you started dating counted?</summary><p>That day itself is day 1. The next day is day 2.</p></details>
+<details><summary>Is it free?</summary><p>You can add up to 3 days for free, with widgets and the morning-of notification. The free version shows ads. Premium gives you unlimited days, yearly and monthly repeats, notifications 7 days before and the day before, all 12 colors, and no ads.</p></details>
+<details><summary>Does it count to the next birthday every year?</summary><p>Set the repeat to every year and, once the birthday passes, it starts counting to the next one. Monthly anniversaries can repeat every month. Repeats are a Premium feature.</p></details>
+<details><summary>Can I show the days on my Lock Screen?</summary><p>Yes. There are three small Lock Screen widgets and small and medium Home Screen widgets. Long-press a widget to choose which day it shows.</p></details>
+<details><summary>Do I need an account?</summary><p>No. Your days are saved only on your iPhone and never sent to the developer's server.</p></details>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="wrap">
+<nav>
+<a href="/himekuri/">Himekuri</a>
+<a href="terms.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
+<a href="privacy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
+<a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法に基づく表記</span><span class="i18n-en">Legal notice (Japan)</span></a>
+<a href="https://tsuzukit.com/contact/"><span class="i18n-ja">お問い合わせ</span><span class="i18n-en">Contact</span></a>
+</nav>
+<p>© 2026 TsuzuKit</p>
+</div>
+</footer>
+</body>
+</html>

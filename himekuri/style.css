@@ -1,0 +1,66 @@
+/* Himekuri のページ。アプリと同じ生成りの地にコーラル1色 */
+:root {
+  --ground: #FFF5F1; --card: #FFFFFF; --ink: #4A3835; --sub: #8A746F; --line: #F2DED8;
+  --coral: #E8907F; --coral-deep: #C9604D; --coral-soft: #FFE6DF;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--ground); color: var(--ink);
+  font-family: "Zen Maru Gothic", -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif; line-height: 1.8; }
+a { color: var(--coral-deep); }
+img { max-width: 100%; }
+.wrap { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+header { background: var(--card); border-bottom: 1px solid var(--line); }
+.hbar { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; flex-wrap: wrap; }
+.hbrand { display: flex; align-items: center; gap: 10px; font-weight: 900; text-decoration: none; font-size: 18px; color: var(--ink); }
+.hbrand img { border-radius: 8px; }
+.hnav { display: flex; gap: 16px; font-size: 14px; flex-wrap: wrap; align-items: center; }
+.hnav a { text-decoration: none; color: var(--sub); }
+.hnav a[aria-current="page"] { color: var(--ink); font-weight: 700; }
+.hero { padding: 56px 0 32px; display: grid; grid-template-columns: 1.1fr 1fr; gap: 32px; align-items: center; }
+.hero h1 { font-size: 40px; line-height: 1.35; margin: 0 0 16px; font-weight: 900; }
+.hero p { color: var(--sub); margin: 0 0 20px; }
+.pill { display: inline-block; background: var(--coral); color: #fff; font-weight: 700; padding: 4px 12px; border-radius: 999px; font-size: 13px; margin-bottom: 12px; }
+.hero img.face { width: 100%; max-width: 300px; justify-self: center; border-radius: 68px; box-shadow: 0 20px 50px rgba(232, 144, 127, .35); }
+.btn { display: inline-block; background: var(--coral-deep); color: #fff; text-decoration: none; font-weight: 700; padding: 14px 24px; border-radius: 16px; }
+.note { font-size: 13px; color: var(--sub); margin-top: 10px; }
+section { padding: 32px 0; }
+section h2 { font-size: 26px; font-weight: 900; margin: 0 0 18px; }
+.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.card { background: var(--card); border-radius: 20px; padding: 18px; border: 1px solid var(--line); }
+.card h3 { margin: 0 0 6px; font-size: 17px; }
+.card p { margin: 0; color: var(--sub); font-size: 14px; }
+.days { display: flex; flex-wrap: wrap; gap: 10px; padding: 0; margin: 0; list-style: none; }
+.days li { background: var(--card); border: 1px solid var(--line); border-radius: 999px; padding: 6px 14px; font-size: 14px; }
+.shots { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; }
+.shots figure { margin: 0; }
+.shots img { width: 100%; border-radius: 22px; border: 1px solid var(--line); background: var(--card); }
+.shots figcaption { font-size: 12px; color: var(--sub); margin-top: 6px; text-align: center; line-height: 1.5; }
+.plans { width: 100%; border-collapse: collapse; background: var(--card); border-radius: 16px; overflow: hidden; font-size: 14px; }
+.plans th, .plans td { padding: 10px 12px; border-bottom: 1px solid var(--line); text-align: left; }
+.plans thead th { background: var(--coral-soft); color: var(--ink); }
+.faq details { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 14px 18px; margin-bottom: 10px; }
+.faq summary { font-weight: 700; cursor: pointer; }
+.faq p { margin: 8px 0 0; color: var(--sub); font-size: 15px; }
+.doc { max-width: 760px; margin: 0 auto; padding: 40px 16px 60px; }
+.doc .en { color: var(--sub); letter-spacing: .12em; font-size: 12px; margin: 0; }
+.doc h1 { margin: 4px 0; font-size: 30px; }
+.doc .meta { color: var(--sub); font-size: 13px; margin: 0 0 20px; }
+.doc h2 { font-size: 20px; margin: 32px 0 10px; padding-top: 12px; border-top: 1px solid var(--line); }
+.lede, .callout { background: var(--card); border-radius: 16px; padding: 16px 18px; border: 1px solid var(--line); }
+.callout { background: var(--coral-soft); border-color: transparent; margin: 14px 0; }
+.doc table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.doc th, .doc td { text-align: left; vertical-align: top; padding: 10px 8px; border-bottom: 1px solid var(--line); }
+.doc th { width: 30%; color: var(--sub); font-weight: 600; }
+footer { border-top: 1px solid var(--line); padding: 28px 0 40px; color: var(--sub); font-size: 13px; }
+footer nav { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 10px; }
+footer a { color: var(--sub); }
+@media (max-width: 860px) { .shots { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 720px) {
+  .hero { grid-template-columns: 1fr; padding-top: 32px; }
+  .hero h1 { font-size: 30px; }
+  .hero img.face { max-width: 180px; order: -1; border-radius: 42px; }
+  .cards { grid-template-columns: 1fr 1fr; }
+  .shots { grid-template-columns: 1fr 1fr; }
+  .doc th { width: 36%; }
+}
+@media (max-width: 420px) { .cards { grid-template-columns: 1fr; } }
