@@ -1,50 +1,70 @@
 {
-  "generated_at": "2026-11-02 22:05:27",
-  "total_apps": 80,
+  "generated_at": "2026-11-09 13:03:49",
+  "total_apps": 81,
   "apps": [
     {
-      "bundle_id": "com.tsuzuki817.BookBank",
-      "name": "もくもく - 読書銀行・読んだ本が貯まる読書記録",
-      "app_store_url": "https://apps.apple.com/jp/app/%E3%82%82%E3%81%8F%E3%82%82%E3%81%8F-%E8%AA%AD%E6%9B%B8%E9%8A%80%E8%A1%8C-%E8%AA%AD%E3%82%93%E3%81%A0%E6%9C%AC%E3%81%8C%E8%B2%AF%E3%81%BE%E3%82%8B%E8%AA%AD%E6%9B%B8%E8%A8%98%E9%8C%B2/id1487377681?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/69/b1/79/69b1797c-5ab4-dc4e-311a-210842dea6b5/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
+      "bundle_id": "com.tsuzukit.PoopCounter",
+      "name": "うんちくん AI健康記録&うんトモ",
+      "app_store_url": "https://apps.apple.com/jp/app/%E3%81%86%E3%82%93%E3%81%A1%E3%81%8F%E3%82%93-ai%E5%81%A5%E5%BA%B7%E8%A8%98%E9%8C%B2-%E3%81%86%E3%82%93%E3%83%88%E3%83%A2/id6758856276?uo=4",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/03/e1/5d/03e15da9-4b6e-1a61-0eb6-1e8bcaeb4657/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
       "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/_AOj4pRmboaF3rYA3s7Tsg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/LMTZb6RwwyAUZbEG3CNsyw/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/LKt0sqy1XM1lKYbQhxO1jQ/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/unnrYR04n2OvabI25PT8qg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/EN1WF-XFrH_xbwsSK2JyyA/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/dlf9Y8jIJYkxlcxLSb5Q1w/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/j2pRn3HJ777PHI1CgErMiA/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/P48g7sr7wahTeJIAF95Gdw/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/hk7nKf3v8m_polrWdFxpHg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/8--lFPtThBVayb_muw8otQ/626x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/6GBJdW0LyKM3GEt6DzY7IA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/qgHwoEH12De8nx-UQQM6AA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/2he6AjxBMe2Ab9eeRc6H6Q/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PW4WYJ-mf1YvK05fHmFQHQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/TZyfkOQrsS9ploX6MPE1PA/626x0w.webp"
       ],
       "ipad_screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/73/1b/1e/731b1ebf-8fae-2952-8a41-86c9c5d0022b/01_iPad-01_passbook.png/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/fe/1f/f9/fe1ff97e-ce0c-944e-65fa-37003c7ea399/02_iPad-02_record.png/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b9/6f/ae/b96fae32-08cb-fee1-0321-e967bd192364/03_iPad-03_statement.png/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f0/88/38/f08838f9-e260-ba7c-43c2-dd7871277077/04_iPad-04_calendar.png/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8e/3c/8e/8e3c8ecb-a33a-2b79-e99c-a76f60b9991d/05_iPad-05_planned.png/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ad/8b/2e/ad8b2ecb-447e-e556-825c-61fd43dceb18/06_iPad-06_library.png/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/dd/71/fa/dd71fa73-6f9d-2dd0-063a-67ae358d7c57/07_iPad-07_notes.png/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/75/3b/d2/753bd2b3-06bc-6690-7f19-c8f830d5f9c3/08_iPad-08_share.png/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/49/e2/9e/49e29ef0-a5ba-a9a1-c284-12f217915a57/09_iPad-09_theme.png/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/dd/f3/bb/ddf3bb08-5f1b-14b4-51a7-c6bde406e69d/10_iPad-10_plan.png/360x480bb.jpg"
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/bc/ea/12/bcea124a-7c65-a397-059d-b7abe2518d2a/APP_IPAD_PRO_3GEN_129_01.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a9/c4/9f/a9c49f06-83dd-f59b-dfc4-a842147fbefb/APP_IPAD_PRO_3GEN_129_02.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3f/03/1c/3f031c93-eeae-797d-6f97-a6da4572e52f/APP_IPAD_PRO_3GEN_129_03.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/37/1e/47/371e478b-5f29-cc51-2cec-f7ab82949862/APP_IPAD_PRO_3GEN_129_04.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2a/cd/c0/2acdc03f-f287-88a9-f586-327976c3d348/APP_IPAD_PRO_3GEN_129_05.png/360x480bb.jpg"
       ],
       "price": "無料",
       "currency": "JPY",
       "genres": [
-        "ブック",
-        "仕事効率化"
+        "ヘルスケア／フィットネス",
+        "エンターテインメント"
       ],
-      "primary_genre": "Book",
-      "rating": 4.14286,
-      "rating_count": 28,
-      "version": "6.5.1",
-      "release_date": "2019-11-15T08:00:00Z",
-      "current_version_release_date": "2026-11-01T19:48:24Z",
-      "description": "読んだ本を、銀行の口座に記帳するように。\nもくもく（読書銀行）は、買った本の値段を記録して「読書にいくら使ったか」をひと目で見えるようにするアプリです。\n\n本は消えものではなく、あなたに積み上がっていく資産。使った金額を眺めていると、それがそのまま「自分に投資した額」に見えてきます。\n本の上でもくもくと読む雲のキャラクター「もくもく」が、記帳のたびにそばにいます。\n\n\n■ バーコードでサッと記帳\n本の裏のバーコード(ISBN)をカメラで読み取るだけ。タイトル・著者・表紙画像・発売日・価格が自動で入ります。\n本棚の本は「まとめて記帳」で、続けて読み取って一気に記帳できます。\nバーコードが読めない本や、手元にない本は「ISBNを入力」「書名・著者名で探す」からも記帳できます。\n見つからない本も、表紙の写真と書誌を入れて手で記帳できます。中古やセールで買った本は、払った金額に変えられます。\n\n\n■ 読みたい本は「蔵書」の読みたい棚に\nまだ買っていない本は、通帳には記帳せず、蔵書の「読みたい」にためておけます。全部買うといくらになるかも、ひと目で分かります。\n買ったら「記帳する」を押すだけ。バーコードを読み直す手間はありません。もくもくが一緒に喜びます。\n\n\n■ ほかの読書アプリから引っ越し\nブクログ・Goodreads などが書き出した CSV から、本と感想をまとめて記帳できます。取り込む前に、記帳する本と金額の一覧で確かめられます。\n読書メーターからは、自分のページのアドレスだけで、本棚と感想を取り込めます（スーパーもくもくプラン）。読みたい本は「読みたい」の棚に入ります。\nもくもくの記録も CSV で書き出せます。\n\n\n■ 蔵書ライブラリで、増えた本もすぐ見つかる\n・タイトルや著者名で検索\n・お気に入りだけを表示\n・今月・今年など期間で絞り込み\n・金額や登録日、発売日で並べ替え\n冊数が増えても、読みたい1冊にすぐたどり着けます。\n\n\n■ 読書額をグラフで振り返る\n「統計」では、週ごとの読書額を棒グラフで表示。今月・先月の合計金額と冊数もひと目でわかります。\n月・年・これまでの切り替えにも対応。ジャンルごとの内訳や、読んだページ数も分かります。\n\n\n■ カレンダーで、読んだ日を振り返る\n記帳した日に表紙が並びます。日を押すと、その日に記帳した本が見られます。\n\n\n■ 読書メモをページごとに何枚でも\nページ・ことば・感想を1枚ずつ残せます。心に残ったことばは、カメラで写して文字を読み取れます。\nマイページの「読書メモ」では、全部の本のメモをことば・感想・書名で探せます。「あのことば、どの本だっけ」がすぐ見つかります。\n\n\n■ 記録はSNSへ共有できる\n月・年・これまでの本棚や、心に残ったことばをカードにして共有できます。カードの文字も書き換えられます。\n本棚は、表紙が増えていく動画にもできます。写真に保存して、リールやストーリーズに投稿できます。\n\n\n■ スーパーもくもくプラン（有料）\n・通帳を預ける（バックアップ）：記帳した本・読書メモ・自分で撮った表紙を預けて、機種変更しても戻せます\n・新刊のお知らせ（自動振替）：続きものの本を登録すると、新しい巻の発売が決まったときと発売日の朝にお知らせします\n・読書メーターから取り込む：自分のページのアドレスだけで、本棚と感想を記帳できます\n・通帳の柄とカードのデザイン：表紙・アプリの色・ホーム画面のアイコンが変わる柄と、振り返りカードのデザインを選べます\n・本棚の動画：1冊ずつ積み上がる・月ごとに過ぎていく動きや、これまでの全部の本の動画を作れます\n月額・年額の自動更新のサブスクリプションです。期間が終わる24時間前までに解約しない限り、自動で更新されます。解約は iPhone の「設定」→ Apple ID →「サブスクリプション」からできます。\n利用規約: https://bookconnection-6dd6c.web.app/terms\nプライバシーポリシー: https://bookconnection-6dd6c.web.app/privacy\n\n\n■ こんな方に\n・読書記録や蔵書管理をシンプルに続けたい方\n・本代を家計簿のように把握したい方\n・積読を見える化して減らしたい方\n・ほかの読書アプリから乗り換えたい方\n・小説、漫画、ビジネス書など、ジャンルを問わず本を買う方\n\n\n■ デザイン\n紺の表紙の、銀行の通帳のようなデザイン。記帳した本が1行ずつ印字され、残高が積み上がっていきます。\n折りたたみの iPhone Duo と iPad にも対応しています。\n\n\n■ 補足\n・書籍情報の取得: openBD / Google Books APIs / 国立国会図書館サーチ\n・使用OSS: Realm, SDWebImage, RevenueCat\n・記録は端末内に保存されます（スーパーもくもくプランでは、預けた通帳をサーバーにも保存します）\n・よくある質問: https://bookconnection-6dd6c.web.app/faq",
-      "release_notes": "v6.5.1\n\n■ 蔵書マネージャー２から移れるようにしました\n蔵書マネージャー２で Dropbox にバックアップするとできる dat_product.csv を、マイページの「ほかのアプリから取り込む（CSV）」で選ぶと記帳できます。購入日が記帳日になり、メモは読書メモに入ります。\n\n■ 移れるアプリの一覧\n取り込む画面から、移れるアプリとそれぞれのやり方の一覧（Web）を開けるようにしました。",
+      "primary_genre": "Health & Fitness",
+      "rating": 4.12629,
+      "rating_count": 578,
+      "version": "3.1.1",
+      "release_date": "2026-02-26T08:00:00Z",
+      "current_version_release_date": "2026-10-15T14:30:54Z",
+      "description": "うんちくんは、毎日のうんちを楽しく記録して友達や家族とシェアできるアプリです。\n\n【ワンタップで記録】\n「でた！」ボタンを押すだけで今日のうんちを記録。回数に応じて37種類以上のうんちキャラクターがリアクションしてくれます。\n\n【うんトモとシェア】\n友達コードやQRコードで「うんトモ」を追加。ストーリー形式でうんトモのうんち状況をチェックできます。まるでInstagramのストーリーのように、楽しくうんち報告！\n\n【ウィジェット対応】\nホーム画面にウィジェットを追加すれば、アプリを開かなくても今日の記録が一目でわかります。回数に応じてテーマカラーが変化！\n\n【うんカレ（カレンダー）】\n週間カレンダーで日ごとの記録を確認。平均回数や最高記録もチェックできます。\n\n【ストリーク機能】\n連続記録日数をカウント。毎日のうんち習慣をゲーム感覚で続けられます。\n\n【プッシュ通知】\nうんトモがうんちした時にお知らせが届きます。友達申請の通知も見逃しません。\n\n【アバターカスタマイズ】\n肌色・髪型・髪色・目の色・服装など自由にカスタマイズ。あなただけのアバターでうんトモと交流しよう。\n\n【無料版】\n・ワンタップ記録\n・うんトモ追加（無制限）\n・ストーリー共有\n・週間カレンダー\n・ウィジェット\n・アバターカスタマイズ\n・プッシュ通知\n\n【プレミアム版】\n・うんトモの記録に、90種類を超える限定リアクションスタンプで気持ちを返せます\n・ホーム画面のアプリアイコンをお気に入りのデザインに変えられます\n・好きな写真をプロフィール画像に設定できます\n・サポーター限定の帽子・オーラ・表情で、うんちくんを自分だけの姿に着せ替えられます\n・月間カレンダー＆サマリー\n・広告なし\n・すべての機能が使い放題\n\n毎日のうんちを、うんちくんと一緒に楽しく記録しよう！\n\n【リンク】\n・サポート: https://tsuzukit.com/contact/\n・利用規約: https://unchikun.app/legal/terms-of-service\n・プライバシーポリシー: https://unchikun.app/legal/privacy-policy\n・特定商取引法に基づく表記: https://unchikun.app/legal/commercial-law",
+      "release_notes": "パートナーにしたのに、次に開くと戻ってた。あれ直したよ。\n招待のリンクも、ちゃんと自分のコードが入るようになった。\nタワーの今週のベストが遊ぶたびに書き換わってたのも直した。安心して積め。",
+      "content_advisory_rating": "4+",
+      "minimum_os_version": "17.0",
+      "developer_name": "Ryo Tsudukihashi",
+      "seller_name": "TsuzuKit"
+    },
+    {
+      "bundle_id": "com.tsuzukit.Himekuri",
+      "name": "Himekuri - 記念日カウントダウン",
+      "app_store_url": "https://apps.apple.com/jp/app/himekuri-%E8%A8%98%E5%BF%B5%E6%97%A5%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%83%80%E3%82%A6%E3%83%B3/id6787482576?uo=4",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/36/57/80/36578084-4b1b-5dab-e44c-8b9086fd9b69/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/cKUvwT-Q5fvwsnsrPDf_Mw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/C3Z7pJQ1PJBRyyHjH_pwyg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/61D95QMXRSnb_aSfZZkb0A/626x0w.webp"
+      ],
+      "ipad_screenshots": [],
+      "price": "無料",
+      "currency": "JPY",
+      "genres": [
+        "ライフスタイル",
+        "ユーティリティ"
+      ],
+      "primary_genre": "Lifestyle",
+      "rating": 0,
+      "rating_count": 0,
+      "version": "1.0.1",
+      "release_date": "2026-07-09T07:00:00Z",
+      "current_version_release_date": "2026-10-24T15:13:46Z",
+      "description": "Himekuri（ひめくり）は、大切な日までの日数を「いちばん可愛く」数えるカウントダウンアプリです。\n\n推しのライブまであと何日？\n付き合ってから今日で何日目？\n旅行、誕生日、結婚式、受験……\n\nたのしみな日を登録するだけで、その日までを毎日数えてくれます。会員登録もログインも不要。開いたその日から使えます。\n\n■ こんな人にぴったり\n・推しのライブや現場までの日数を毎日眺めたい\n・付き合った日から何日目かをふたりで数えたい\n・旅行や結婚式など、たのしみな予定を待つ時間ごと楽しみたい\n・受験や資格試験まで、あと何日かを意識したい\n・ホーム画面を可愛くしたい\n\n■ Himekuriのとくちょう\n\n◎ 「あと何日」も「何日目」も\nカウントダウン（その日まであと何日）とカウントアップ（その日から何日目）の両方に対応。記念日は「毎年」「毎月」の繰り返しにも対応しているので、誕生日や月々の記念日を一度登録すればずっと数え続けてくれます。\n\n◎ いちばん可愛いウィジェット\nホーム画面とロック画面に、日数をひと目で確認できるウィジェットを置けます。ウィジェットを長押しすれば、表示するたのしみを選べます。アプリを開かなくても、毎日目に入るたびに気分が上がります。\n\n◎ きせかえテーマは12種類\nコーラル、さくら、よぞら、まっちゃ……。カードとウィジェットの見た目を、その日の気分やイベントの雰囲気に合わせて着せ替えられます。\n\n◎ その日の朝、そっとお知らせ\n当日の朝9時に通知でお知らせ。プレミアムなら7日前・前日にも事前にお知らせするので、大切な日をうっかり忘れる心配がありません。\n\n◎ 当日はお祝い\nその日を迎えたら、紙吹雪でいっしょにお祝いします。\n\n■ データについて\nデータはすべて端末の中に保存されます。アカウント登録は不要で、入力した内容が外部に送信されることはありません。\n\n■ プレミアム（買い切り or 週額）\n・たのしみの登録が無制限（無料版は3件まで）\n・きせかえテーマ全12種類\n・毎年・毎月の繰り返し\n・7日前・前日の事前お知らせ\n・広告の非表示\n\n買い切りプランなら一度の購入でずっと使えます。\n\n■ リンク\n・サポート: https://tsuzukit.com/contact/\n・利用規約: https://tsuzukit.com/legal/terms-of-service.html\n・プライバシーポリシー: https://tsuzukit.com/legal/privacy-policy.html",
+      "release_notes": "プレミアムの状態が正しく反映されるようにしました。解約や返金のあとも、別の端末で購入したあとも、アプリを開けば今の状態に切り替わります。\nカードに「毎年」が2回出ていたのを直しました。\niPhone Duo のような広い画面では、カードが2列に並びます。\nあわせて内部のライブラリを更新し、動作を安定させました。",
       "content_advisory_rating": "4+",
       "minimum_os_version": "17.0",
       "developer_name": "Ryo Tsudukihashi",
@@ -82,14 +102,168 @@
         "写真／ビデオ"
       ],
       "primary_genre": "Travel",
-      "rating": 4.57697,
-      "rating_count": 773,
+      "rating": 4.56888,
+      "rating_count": 784,
       "version": "2.0.1",
       "release_date": "2024-02-25T08:00:00Z",
       "current_version_release_date": "2026-10-19T14:36:36Z",
       "description": "14万ダウンロード突破！\n写真をパズルのように切り取って、地図に貼るアプリです。\n\n行った場所が少しずつ色づいて、旅の記憶がそのまま一枚の地図になっていきます。\n\n\n■ 47都道府県だけじゃない\n\n全国マップに加えて、42の都道府県マップで市区町村まで細かく記録できます。\n北海道179、長野77、埼玉63、東京62——ぜんぶで1,667エリア。\nあなたの地元も、きっとあります。\n\n\n■ 主な機能\n\n□ 写真が都道府県のかたちに切り取られて、地図にはまる\n□ ひとつの場所に、写真を好きなだけ追加できる\n□ MapLinkで友達・家族・恋人と同じ地図を共同編集\n□ 写真にコメントを添えて、その日の気持ちも残す\n□ ご当地ステッカーで地図を彩る（だるま、シーサー、こいのぼり…）\n□ 1年の思い出を、BGM付きの振り返り動画に\n□ 毎月届く「先月のおもいで」でふりかえり\n□ 完成した地図を高画質で保存・印刷\n□ ホーム画面のウィジェットに、過去の思い出をランダム表示\n□ 写真アプリの共有ボタンから直接投稿\n\n\n■ 日本を埋めたら、海外へ\n\nアジア24ヶ国、台湾22地域、アメリカ50州＋1準州のマップも用意しています。\n\nひとりでも、大切な人とでも。\n\n\n■ 思い出マップサポーター（有料）\n\n広告の非表示、マップ作り放題、高画質での保存・印刷、まとめて投稿などが使えるようになります。\n地図をつくって写真を貼る基本の機能は、ずっと無料のままお使いいただけます。\n\n\n■ その他情報\n・利用規約\nhttps://omoidemap-36d68.web.app/legal/terms.html\n\n・プライバシーポリシー\nhttps://omoidemap-36d68.web.app/legal/privacy.html\n\n・特定商取引法に基づく表示\nhttps://omoidemap-36d68.web.app/legal/commercial.html",
       "release_notes": "【v2.0.1】\n\n右から左に読む言語で、地図が左右反転して表示されていました。\n\n■ 直したところ\nアラビア語とヘブライ語では、地図の中身まで左右が入れ替わっていました。地形は言語で変わらないので、どの言語でも同じ向きで出るようにしました。印刷する地図や共有カードも直しています。\n\nいつもご利用いただきありがとうございます！",
       "content_advisory_rating": "17+",
+      "minimum_os_version": "17.0",
+      "developer_name": "Ryo Tsudukihashi",
+      "seller_name": "TsuzuKit"
+    },
+    {
+      "bundle_id": "com.tsuzukit.asiseeyou",
+      "name": "私から見たあなた",
+      "app_store_url": "https://apps.apple.com/jp/app/%E7%A7%81%E3%81%8B%E3%82%89%E8%A6%8B%E3%81%9F%E3%81%82%E3%81%AA%E3%81%9F/id6830175143?uo=4",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/5e/47/59/5e47598c-6518-a2dd-e4a5-e877ce39dade/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/92NGcbi96akGmsKihjN8Uw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Mw4uUEGneunbByfXSv4RlQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/8idVzL83SWWjz10RodRb3Q/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/cxc4VZjlZ3jEIjUpIznIuQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/ynqf5RiGP_veaUpo_VK9HQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/pPzsp09edY3IX-l2TRaqDw/626x0w.webp"
+      ],
+      "ipad_screenshots": [],
+      "price": "無料",
+      "currency": "JPY",
+      "genres": [
+        "写真／ビデオ",
+        "ライフスタイル"
+      ],
+      "primary_genre": "Photo & Video",
+      "rating": 0,
+      "rating_count": 0,
+      "version": "1.0",
+      "release_date": "2026-11-04T08:00:00Z",
+      "current_version_release_date": "2026-11-04T14:26:35Z",
+      "description": "「私から見た彼女」「私から見た友達」。\n相手を9つのお題にたとえて写真で埋める、SNS で流行りの 3×3 の画像を、スマホひとつで作れます。\n\n■ 9マスを写真で埋める\n動物・場所・植物・キャラクター・季節・趣味・食べ物・色・飲み物。\n「この人を動物にたとえると？」を、カメラロールの写真で1マスずつ埋めていきます。\nPinterest などで見つけた画像も、写真アプリに保存すれば選べます。\n\n■ 色のマスは色で塗る\n写真ではなく、色一色で塗ることもできます。\n\n■ 写真の位置と大きさ\nピンチで拡大・縮小、ドラッグで移動。見せたいところをマスに合わせられます。\n\n■ 背景を消す\n写っている人や物だけを切り抜いて、白地に乗せます。キャラクターのマスにぴったりです。元の写真は残るので、いつでも戻せます。\n\n■ 見出しは真ん中に\n「私から見たパパ」「私から見た推し」など、見出しを選ぶか自分で書けます。\n\n■ お題のセットをつくる\n9つのお題は自分で決められます。推し活のお題、家族のお題など、セットにして何度でも使えます。\n\n■ 2枚セットで書き出す\nできあがりの画像（3:4）と、空のお題の画像を書き出して、写真に保存したり、ストーリーや LINE で送ったりできます。\n空のマスは黒地にお題の文字のまま入るので、作りかけでもそのまま絵になります。\n\n■ 写真は端末の中だけ\n選んだ写真とボードは、この端末の中だけに保存します。サーバーには送りません。\n\n恋人・友達・家族・推し。だれかのことを考える時間を、1枚の画像にして届けてみてください。\n\n■ 利用規約・プライバシーポリシー\n利用規約: https://tsuzukit.com/asiseeyou/terms.html\nプライバシーポリシー: https://tsuzukit.com/asiseeyou/privacy.html",
+      "release_notes": null,
+      "content_advisory_rating": "4+",
+      "minimum_os_version": "18.0",
+      "developer_name": "Ryo Tsudukihashi",
+      "seller_name": "TsuzuKit"
+    },
+    {
+      "bundle_id": "com.tsuzuki817.qiita-widget",
+      "name": "WidgetQiita",
+      "app_store_url": "https://apps.apple.com/jp/app/widgetqiita/id1585253685?uo=4",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/6c/cc/bc/6cccbcb3-5b97-1881-a350-f2744ecde2f3/AppIcon-0-0-1x_U007emarketing-0-11-0-sRGB-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/tALbcSThIHfN2Bfpi5WyoQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/9OB3gzfC9zqf_dIHb2vrtg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/w0rovMgrDQ7jixcE34_GQA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/jIDmC9ev7hUMFB7dchC9Jg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/WON27j7Zac6iQIwz42kGVg/626x0w.webp"
+      ],
+      "ipad_screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple115/v4/43/4a/5b/434a5b4b-ccee-9d69-3501-105ac41ef159/306f1d00-e506-4f2e-b903-1b72b4421067_001.png/576x768bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple125/v4/9d/a1/42/9da14216-fa22-603c-894c-8da1f4b14ea2/5b91e4d4-c979-47e7-b5f0-6a1cc9093fba_002.png/576x768bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple115/v4/b8/a0/c4/b8a0c43a-cd91-45c3-2809-ad3975517279/517987a2-4aee-43c4-a5f4-13273f4aaf95_003.png/576x768bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple125/v4/ef/f8/fc/eff8fc44-9b21-91c9-7a7f-6be1c527f32d/7abe0ce4-1002-4b56-bbb1-b69f28f86f02_004.png/576x768bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple125/v4/5d/71/21/5d712175-cbda-2383-9fd3-5858e9046f66/7cbece54-ac20-4c75-ba99-f18d001fe402_005.png/576x768bb.png"
+      ],
+      "price": "無料",
+      "currency": "JPY",
+      "genres": [
+        "仕事効率化",
+        "ユーティリティ"
+      ],
+      "primary_genre": "Productivity",
+      "rating": 4.52941,
+      "rating_count": 17,
+      "version": "1.6.0",
+      "release_date": "2021-09-18T07:00:00Z",
+      "current_version_release_date": "2026-11-05T08:47:28Z",
+      "description": "WidgetQiitaはQiitaの記事をWidgetとして、ホームに置いてホットな記事をいつでも見ることができるようになるアプリです！\n\n# Qiitaとは？\n - Qiitaは、エンジニアに関する知識を記録・共有するためのサービスです。\n - https://qiita.com\n\n# WidgetQiitaのできること\n  - Qiitaのその日のホットな記事をWidgetとしてホーム画面に置くことができます。\n  - 表示できる期間は当日、一週間、一ヶ月単位で選べます。\n  -  Widgetから見た記事はあとから見返すことができます。\n  - 記事をお気に入りにしておくと、全件削除のときに削除されなくなります。\n  - 閲覧した記事をもとによく見るユーザーやタグのランキングを生成します。\n  - お気に入りのタグをしていしたWidgetを置くこともできるようになりました。\n\n本アプリはQiita API V2を使った非公式アプリです。\n\n## その他情報\n- 利用規約\nhttps://panoramic-clematis-d8b.notion.site/03f270da8559467ab198aeffab14fe6e\n- プライバシーポリシー\nhttps://panoramic-clematis-d8b.notion.site/32affc6108c34ea29882242f406322e7\n- 特定商取引法に基づく表示\nhttps://panoramic-clematis-d8b.notion.site/a6724238cdc3499e92d7eff3a56f6f76",
+      "release_notes": "・iPhone Duo（折りたたみ iPhone）に対応しました。開いたときはメニューと記事を2列で見られます\n・Qiita の新着記事を見られる画面を追加しました\n・広告と課金の仕組みを最新のものに更新しました\n・ウィジェットの表示を見直し、投稿者のアイコンが安定して出るようにしました\n・閲覧履歴や統計がまだ無いときの案内を追加しました\n・iOS 17 以降が必要になりました\n・細かな不具合を修正しました",
+      "content_advisory_rating": "4+",
+      "minimum_os_version": "17.0",
+      "developer_name": "Ryo Tsudukihashi",
+      "seller_name": "TsuzuKit"
+    },
+    {
+      "bundle_id": "com.tsuzuki817.jellysamepuzzle",
+      "name": "ゼリーセイムパズル",
+      "app_store_url": "https://apps.apple.com/jp/app/%E3%82%BC%E3%83%AA%E3%83%BC%E3%82%BB%E3%82%A4%E3%83%A0%E3%83%91%E3%82%BA%E3%83%AB/id6747354292?uo=4",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ee/78/0d/ee780dc7-b600-7bb4-777f-3b34fa4bda1f/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/JA9YOhLNY7g-3vAtEwFVpw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/uoj7xs0cA6rFlWqPtzxKGw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/pEQ4pfH4Q6rFYjz0NDNJxA/626x0w.webp"
+      ],
+      "ipad_screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/34/17/de/3417de3a-a493-1a95-d1ec-eed3062cb911/13inch.002.jpeg/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0b/37/fc/0b37fc94-3a6d-bc17-46d2-cbd71e0523cf/13inch.001.jpeg/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/18/31/75/183175f6-feed-eef5-137c-c2c293fb1f9d/13inch.003.jpeg/360x480bb.jpg"
+      ],
+      "price": "無料",
+      "currency": "JPY",
+      "genres": [
+        "ゲーム",
+        "エンターテインメント",
+        "パズル"
+      ],
+      "primary_genre": "Games",
+      "rating": 4.59999,
+      "rating_count": 10,
+      "version": "1.6.0",
+      "release_date": "2025-07-16T07:00:00Z",
+      "current_version_release_date": "2026-11-06T18:06:45Z",
+      "description": "【ゼリーセイムパズルとは？】\n某ゲームサイトで愛された「セイムパズル」の感動が、最新のiOS/iPadOSアプリで蘇ります！\nぷるぷる揺れるゼリーブロックをタップで消すだけの簡単操作で、いつでもどこでも気軽に楽しめるパズルゲームです。シンプルながら奥深いゲーム性で、あなたの思考力を試しましょう。\n\n【ゲームの特徴】\n◆ 簡単だけど奥深い！シンプル操作のパズルゲーム\n　- 2つ以上繋がった同じ色のゼリーブロックをタップして消すだけ！\n　- ブロックが消えると上から新しいゼリーが降ってきて、連鎖のチャンスも。\n　- どこを消すか戦略を立てて、高得点を狙いましょう！\n　- レインボーブロックやアイテム（Delete, Changeなど）の登場も！？\n　- ランキング機能で世界中のプレイヤーとスコアを競い合おう！\n\n◆ ぷるぷる可愛いゼリーブロック！\n　- 見ているだけでも楽しい、触りたくなるようなゼリーの質感を表現。\n　- 消した時の爽快感あふれるアニメーションとサウンドが病みつきに！\n\n◆ 懐かしさと新しい発見\n　- 「セイムパズル」のファンならきっと懐かしい、あの独特のパズル体験を再現。\n　- もちろん、初めてプレイする方でもすぐにハマれる中毒性があります。\n\n◆ いつでもどこでも気軽にプレイ\n　- 通勤・通学時間、ちょっとした休憩時間など、スキマ時間に最適。\n　- オフラインでもプレイ可能なので、電波の届かない場所でも楽しめます。\n\n◆ 【今後のアップデート予定】\n　- クラシックモード、カウントダウンモードなど、多彩なゲームモードを追加予定！\n\n\n【こんな方におすすめ！】\n\n某ゲームの「セイムパズル」が好きだった方\n\nシンプルだけど奥深いパズルゲームを探している方\n\n脳トレや思考力を鍛えたい方\n\n通勤・通学中に気軽に遊べるゲームが欲しい方\n\nぷるぷる可愛いデザインのゲームが好きな方\n\nさあ、あなたも「Jelly Same Puzzle」で、ゼリーを消す爽快感を体験しよう！\n今すぐダウンロードして、パズルの世界に飛び込もう！\n\n□ その他情報\n・利用規約\nhttps://tsuzukit.com/legal/terms-of-service.html\n\n・プライバシーポリシー\nhttps://tsuzukit.com/legal/privacy-policy.html\n\n・特定商取引法に基づく表示\nhttps://tsuzukit.com/legal/commercial-law.html",
+      "release_notes": "・iPhone Duo に対応しました。開くと盤面が大きくなり、スコアと操作ボタンが左右に並びます。机に立てた姿勢では盤面が手前側に来ます\n・iPad で横向きと Split View が使えるようになりました\n・内部のライブラリを更新し、安定性を改善しました",
+      "content_advisory_rating": "4+",
+      "minimum_os_version": "17.0",
+      "developer_name": "Ryo Tsudukihashi",
+      "seller_name": "TsuzuKit"
+    },
+    {
+      "bundle_id": "com.tsuzuki817.BookBank",
+      "name": "もくもく - 読書銀行・読んだ本が貯まる読書記録",
+      "app_store_url": "https://apps.apple.com/jp/app/%E3%82%82%E3%81%8F%E3%82%82%E3%81%8F-%E8%AA%AD%E6%9B%B8%E9%8A%80%E8%A1%8C-%E8%AA%AD%E3%82%93%E3%81%A0%E6%9C%AC%E3%81%8C%E8%B2%AF%E3%81%BE%E3%82%8B%E8%AA%AD%E6%9B%B8%E8%A8%98%E9%8C%B2/id1487377681?uo=4",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a1/ea/27/a1ea27d2-e034-08fe-f259-398efcdb8643/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/_AOj4pRmboaF3rYA3s7Tsg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/LMTZb6RwwyAUZbEG3CNsyw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/LKt0sqy1XM1lKYbQhxO1jQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/unnrYR04n2OvabI25PT8qg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/EN1WF-XFrH_xbwsSK2JyyA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/dlf9Y8jIJYkxlcxLSb5Q1w/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/j2pRn3HJ777PHI1CgErMiA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/P48g7sr7wahTeJIAF95Gdw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/hk7nKf3v8m_polrWdFxpHg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/8--lFPtThBVayb_muw8otQ/626x0w.webp"
+      ],
+      "ipad_screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/73/1b/1e/731b1ebf-8fae-2952-8a41-86c9c5d0022b/01_iPad-01_passbook.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/fe/1f/f9/fe1ff97e-ce0c-944e-65fa-37003c7ea399/02_iPad-02_record.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b9/6f/ae/b96fae32-08cb-fee1-0321-e967bd192364/03_iPad-03_statement.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f0/88/38/f08838f9-e260-ba7c-43c2-dd7871277077/04_iPad-04_calendar.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8e/3c/8e/8e3c8ecb-a33a-2b79-e99c-a76f60b9991d/05_iPad-05_planned.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ad/8b/2e/ad8b2ecb-447e-e556-825c-61fd43dceb18/06_iPad-06_library.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/dd/71/fa/dd71fa73-6f9d-2dd0-063a-67ae358d7c57/07_iPad-07_notes.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/75/3b/d2/753bd2b3-06bc-6690-7f19-c8f830d5f9c3/08_iPad-08_share.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/49/e2/9e/49e29ef0-a5ba-a9a1-c284-12f217915a57/09_iPad-09_theme.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/dd/f3/bb/ddf3bb08-5f1b-14b4-51a7-c6bde406e69d/10_iPad-10_plan.png/360x480bb.jpg"
+      ],
+      "price": "無料",
+      "currency": "JPY",
+      "genres": [
+        "ブック",
+        "仕事効率化"
+      ],
+      "primary_genre": "Book",
+      "rating": 4.24324,
+      "rating_count": 37,
+      "version": "6.6.0",
+      "release_date": "2019-11-15T08:00:00Z",
+      "current_version_release_date": "2026-11-05T17:24:17Z",
+      "description": "読んだ本を、銀行の口座に記帳するように。\nもくもく（読書銀行）は、買った本の値段を記録して「読書にいくら使ったか」をひと目で見えるようにするアプリです。\n\n本は消えものではなく、あなたに積み上がっていく資産。使った金額を眺めていると、それがそのまま「自分に投資した額」に見えてきます。\n本の上でもくもくと読む雲のキャラクター「もくもく」が、記帳のたびにそばにいます。\n\n\n■ バーコードでサッと記帳\n本の裏のバーコード(ISBN)をカメラで読み取るだけ。タイトル・著者・表紙画像・発売日・価格が自動で入ります。\n本棚の本は「まとめて記帳」で、続けて読み取って一気に記帳できます。\nバーコードが読めない本や、手元にない本は「ISBNを入力」「書名・著者名で探す」からも記帳できます。\n見つからない本も、表紙の写真と書誌を入れて手で記帳できます。中古やセールで買った本は、払った金額に変えられます。\n\n\n■ 読みたい本は「蔵書」の読みたい棚に\nまだ買っていない本は、通帳には記帳せず、蔵書の「読みたい」にためておけます。全部買うといくらになるかも、ひと目で分かります。\n買ったら「記帳する」を押すだけ。バーコードを読み直す手間はありません。もくもくが一緒に喜びます。\n\n\n■ ほかの読書アプリから引っ越し\nブクログ・Goodreads などが書き出した CSV から、本と感想をまとめて記帳できます。取り込む前に、記帳する本と金額の一覧で確かめられます。\n読書メーターからは、自分のページのアドレスだけで、本棚と感想を取り込めます（スーパーもくもくプラン）。読みたい本は「読みたい」の棚に入ります。\nもくもくの記録も CSV で書き出せます。\n\n\n■ 蔵書ライブラリで、増えた本もすぐ見つかる\n・タイトルや著者名で検索\n・お気に入りだけを表示\n・今月・今年など期間で絞り込み\n・金額や登録日、発売日で並べ替え\n冊数が増えても、読みたい1冊にすぐたどり着けます。\n\n\n■ 読書額をグラフで振り返る\n「統計」では、週ごとの読書額を棒グラフで表示。今月・先月の合計金額と冊数もひと目でわかります。\n月・年・これまでの切り替えにも対応。ジャンルごとの内訳や、読んだページ数も分かります。\n\n\n■ カレンダーで、読んだ日を振り返る\n記帳した日に表紙が並びます。日を押すと、その日に記帳した本が見られます。\n\n\n■ 読書メモをページごとに何枚でも\nページ・ことば・感想を1枚ずつ残せます。心に残ったことばは、カメラで写して文字を読み取れます。\nマイページの「読書メモ」では、全部の本のメモをことば・感想・書名で探せます。「あのことば、どの本だっけ」がすぐ見つかります。\n\n\n■ 記録はSNSへ共有できる\n月・年・これまでの本棚や、心に残ったことばをカードにして共有できます。カードの文字も書き換えられます。\n本棚は、表紙が増えていく動画にもできます。写真に保存して、リールやストーリーズに投稿できます。\n\n\n■ スーパーもくもくプラン（有料）\n・通帳を預ける（バックアップ）：記帳した本・読書メモ・自分で撮った表紙を預けて、機種変更しても戻せます\n・新刊のお知らせ（自動振替）：続きものの本を登録すると、新しい巻の発売が決まったときと発売日の朝にお知らせします\n・読書メーターから取り込む：自分のページのアドレスだけで、本棚と感想を記帳できます\n・通帳の柄とカードのデザイン：表紙・アプリの色・ホーム画面のアイコンが変わる柄と、振り返りカードのデザインを選べます\n・本棚の動画：1冊ずつ積み上がる・月ごとに過ぎていく動きや、これまでの全部の本の動画を作れます\n月額・年額の自動更新のサブスクリプションです。期間が終わる24時間前までに解約しない限り、自動で更新されます。解約は iPhone の「設定」→ Apple ID →「サブスクリプション」からできます。\n利用規約: https://mokumoku.tsuzukit.com/terms\nプライバシーポリシー: https://mokumoku.tsuzukit.com/privacy\n\n\n■ こんな方に\n・読書記録や蔵書管理をシンプルに続けたい方\n・本代を家計簿のように把握したい方\n・積読を見える化して減らしたい方\n・ほかの読書アプリから乗り換えたい方\n・小説、漫画、ビジネス書など、ジャンルを問わず本を買う方\n\n\n■ デザイン\n紺の表紙の、銀行の通帳のようなデザイン。記帳した本が1行ずつ印字され、残高が積み上がっていきます。\n折りたたみの iPhone Duo と iPad にも対応しています。\n\n\n■ 補足\n・書籍情報の取得: openBD / Google Books APIs / 国立国会図書館サーチ\n・使用OSS: Realm, SDWebImage, RevenueCat\n・記録は端末内に保存されます（スーパーもくもくプランでは、預けた通帳をサーバーにも保存します）\n・よくある質問: https://mokumoku.tsuzukit.com/faq",
+      "release_notes": "v6.6.0\n\n■ 通帳を何冊も作れます\n図書館で借りた本、子どもが読んだ本、漫画や絵本。分けたい本を、別の通帳に記帳できます。通帳の画面を左右にめくって切り替え、記帳はいま開いている通帳に入ります。最初の通帳ともう1冊まではだれでも、3冊目からはスーパーもくもくプランで作れます。本は、取引明細票の「ほかの通帳へ移す」で別の通帳に移せます。CSV にも「通帳」の列が付きます。\n\n■ 子どもの通帳\n子どもの通帳を開いているあいだは、画面の漢字にひらがなのふりがなが付きます。どうぶつ・うみ・うちゅうなど子どもだけの柄と、あそびかたの案内もあります。子どもの通帳は、だれでも何冊でも作れます。\n\n■ 統計をまとめて・1冊ずつ\n統計と蔵書は、すべての通帳をまとめて見るか、1冊ずつ見るかを切り替えられます。\n\n■ 本棚の並べ替え\n本棚の「並べ替え」で、シリーズ順・ジャンル順・著者順に並べ直せます。表紙を長押しすると、押したまま動かせます。\n\n■ 通帳を直す・消す\n通帳の表紙を押すと、名前と柄を変えられます。マイページの「通帳を消す」から、最初の通帳のほかを消せます。中の本と読書メモも消えます。通帳を預けている人は7日後に消え、それまでは取り消せます。\n\n■ スーパーもくもくプラン\nホーム画面のウィジェットで、すべての通帳か1冊の通帳を選べます。",
+      "content_advisory_rating": "4+",
       "minimum_os_version": "17.0",
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit"
@@ -115,8 +289,8 @@
         "グラフィック／デザイン"
       ],
       "primary_genre": "Entertainment",
-      "rating": 3.38028,
-      "rating_count": 71,
+      "rating": 3.43038,
+      "rating_count": 79,
       "version": "1.6.0",
       "release_date": "2026-01-21T08:00:00Z",
       "current_version_release_date": "2026-10-30T21:01:10Z",
@@ -827,36 +1001,6 @@
       "seller_name": "TsuzuKit"
     },
     {
-      "bundle_id": "com.tsuzukit.Himekuri",
-      "name": "Himekuri - 記念日カウントダウン",
-      "app_store_url": "https://apps.apple.com/jp/app/himekuri-%E8%A8%98%E5%BF%B5%E6%97%A5%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%83%80%E3%82%A6%E3%83%B3/id6787482576?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/36/57/80/36578084-4b1b-5dab-e44c-8b9086fd9b69/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
-      "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/cKUvwT-Q5fvwsnsrPDf_Mw/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/C3Z7pJQ1PJBRyyHjH_pwyg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/61D95QMXRSnb_aSfZZkb0A/626x0w.webp"
-      ],
-      "ipad_screenshots": [],
-      "price": "無料",
-      "currency": "JPY",
-      "genres": [
-        "ライフスタイル",
-        "ユーティリティ"
-      ],
-      "primary_genre": "Lifestyle",
-      "rating": 0,
-      "rating_count": 0,
-      "version": "1.0.1",
-      "release_date": "2026-07-09T07:00:00Z",
-      "current_version_release_date": "2026-10-24T15:13:46Z",
-      "description": "Himekuri（ひめくり）は、大切な日までの日数を「いちばん可愛く」数えるカウントダウンアプリです。\n\n推しのライブまであと何日？\n付き合ってから今日で何日目？\n旅行、誕生日、結婚式、受験……\n\nたのしみな日を登録するだけで、その日までを毎日数えてくれます。会員登録もログインも不要。開いたその日から使えます。\n\n■ こんな人にぴったり\n・推しのライブや現場までの日数を毎日眺めたい\n・付き合った日から何日目かをふたりで数えたい\n・旅行や結婚式など、たのしみな予定を待つ時間ごと楽しみたい\n・受験や資格試験まで、あと何日かを意識したい\n・ホーム画面を可愛くしたい\n\n■ Himekuriのとくちょう\n\n◎ 「あと何日」も「何日目」も\nカウントダウン（その日まであと何日）とカウントアップ（その日から何日目）の両方に対応。記念日は「毎年」「毎月」の繰り返しにも対応しているので、誕生日や月々の記念日を一度登録すればずっと数え続けてくれます。\n\n◎ いちばん可愛いウィジェット\nホーム画面とロック画面に、日数をひと目で確認できるウィジェットを置けます。ウィジェットを長押しすれば、表示するたのしみを選べます。アプリを開かなくても、毎日目に入るたびに気分が上がります。\n\n◎ きせかえテーマは12種類\nコーラル、さくら、よぞら、まっちゃ……。カードとウィジェットの見た目を、その日の気分やイベントの雰囲気に合わせて着せ替えられます。\n\n◎ その日の朝、そっとお知らせ\n当日の朝9時に通知でお知らせ。プレミアムなら7日前・前日にも事前にお知らせするので、大切な日をうっかり忘れる心配がありません。\n\n◎ 当日はお祝い\nその日を迎えたら、紙吹雪でいっしょにお祝いします。\n\n■ データについて\nデータはすべて端末の中に保存されます。アカウント登録は不要で、入力した内容が外部に送信されることはありません。\n\n■ プレミアム（買い切り or 週額）\n・たのしみの登録が無制限（無料版は3件まで）\n・きせかえテーマ全12種類\n・毎年・毎月の繰り返し\n・7日前・前日の事前お知らせ\n・広告の非表示\n\n買い切りプランなら一度の購入でずっと使えます。\n\n■ リンク\n・サポート: https://tsuzukit.com/contact/\n・利用規約: https://tsuzukit.com/legal/terms-of-service.html\n・プライバシーポリシー: https://tsuzukit.com/legal/privacy-policy.html",
-      "release_notes": "プレミアムの状態が正しく反映されるようにしました。解約や返金のあとも、別の端末で購入したあとも、アプリを開けば今の状態に切り替わります。\nカードに「毎年」が2回出ていたのを直しました。\niPhone Duo のような広い画面では、カードが2列に並びます。\nあわせて内部のライブラリを更新し、動作を安定させました。",
-      "content_advisory_rating": "4+",
-      "minimum_os_version": "17.0",
-      "developer_name": "Ryo Tsudukihashi",
-      "seller_name": "TsuzuKit"
-    },
-    {
       "bundle_id": "com.tsuzukit.Mekulun",
       "name": "めくるん - 日めくりカレンダー",
       "app_store_url": "https://apps.apple.com/jp/app/%E3%82%81%E3%81%8F%E3%82%8B%E3%82%93-%E6%97%A5%E3%82%81%E3%81%8F%E3%82%8A%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%80%E3%83%BC/id6761456691?uo=4",
@@ -883,8 +1027,8 @@
         "ユーティリティ"
       ],
       "primary_genre": "Lifestyle",
-      "rating": 4.22222,
-      "rating_count": 9,
+      "rating": 4.5,
+      "rating_count": 8,
       "version": "1.0.2",
       "release_date": "2026-04-11T07:00:00Z",
       "current_version_release_date": "2026-10-24T15:10:49Z",
@@ -1516,44 +1660,6 @@
       "seller_name": "TsuzuKit"
     },
     {
-      "bundle_id": "com.tsuzuki817.qiita-widget",
-      "name": "WidgetQiita",
-      "app_store_url": "https://apps.apple.com/jp/app/widgetqiita/id1585253685?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6b/c4/a3/6bc4a39d-c570-15ac-aaae-cc5f3d4333e6/AppIcon-0-0-1x_U007emarketing-0-11-0-sRGB-85-220.png/512x512bb.jpg",
-      "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/tALbcSThIHfN2Bfpi5WyoQ/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/9OB3gzfC9zqf_dIHb2vrtg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/w0rovMgrDQ7jixcE34_GQA/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/jIDmC9ev7hUMFB7dchC9Jg/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/WON27j7Zac6iQIwz42kGVg/626x0w.webp"
-      ],
-      "ipad_screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple115/v4/43/4a/5b/434a5b4b-ccee-9d69-3501-105ac41ef159/306f1d00-e506-4f2e-b903-1b72b4421067_001.png/576x768bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple125/v4/9d/a1/42/9da14216-fa22-603c-894c-8da1f4b14ea2/5b91e4d4-c979-47e7-b5f0-6a1cc9093fba_002.png/576x768bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple115/v4/b8/a0/c4/b8a0c43a-cd91-45c3-2809-ad3975517279/517987a2-4aee-43c4-a5f4-13273f4aaf95_003.png/576x768bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple125/v4/ef/f8/fc/eff8fc44-9b21-91c9-7a7f-6be1c527f32d/7abe0ce4-1002-4b56-bbb1-b69f28f86f02_004.png/576x768bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple125/v4/5d/71/21/5d712175-cbda-2383-9fd3-5858e9046f66/7cbece54-ac20-4c75-ba99-f18d001fe402_005.png/576x768bb.png"
-      ],
-      "price": "無料",
-      "currency": "JPY",
-      "genres": [
-        "仕事効率化",
-        "ユーティリティ"
-      ],
-      "primary_genre": "Productivity",
-      "rating": 4.52941,
-      "rating_count": 17,
-      "version": "1.5.0",
-      "release_date": "2021-09-18T07:00:00Z",
-      "current_version_release_date": "2026-10-09T14:46:58Z",
-      "description": "WidgetQiitaはQiitaの記事をWidgetとして、ホームに置いてホットな記事をいつでも見ることができるようになるアプリです！\n\n# Qiitaとは？\n - Qiitaは、エンジニアに関する知識を記録・共有するためのサービスです。\n - https://qiita.com\n\n# WidgetQiitaのできること\n  - Qiitaのその日のホットな記事をWidgetとしてホーム画面に置くことができます。\n  - 表示できる期間は当日、一週間、一ヶ月単位で選べます。\n  -  Widgetから見た記事はあとから見返すことができます。\n  - 記事をお気に入りにしておくと、全件削除のときに削除されなくなります。\n  - 閲覧した記事をもとによく見るユーザーやタグのランキングを生成します。\n  - お気に入りのタグをしていしたWidgetを置くこともできるようになりました。\n\n本アプリはQiita API V2を使った非公式アプリです。\n\n## その他情報\n- 利用規約\nhttps://panoramic-clematis-d8b.notion.site/03f270da8559467ab198aeffab14fe6e\n- プライバシーポリシー\nhttps://panoramic-clematis-d8b.notion.site/32affc6108c34ea29882242f406322e7\n- 特定商取引法に基づく表示\nhttps://panoramic-clematis-d8b.notion.site/a6724238cdc3499e92d7eff3a56f6f76",
-      "release_notes": "・利用規約とプライバシーポリシーのリンク先を新しいページに変更しました\n・細かな不具合を修正しました",
-      "content_advisory_rating": "4+",
-      "minimum_os_version": "16.0",
-      "developer_name": "Ryo Tsudukihashi",
-      "seller_name": "TsuzuKit"
-    },
-    {
       "bundle_id": "com.tsuzuki817.SwipeClean",
       "name": "スワイポン - スワイプで写真と動画を簡単整理",
       "app_store_url": "https://apps.apple.com/jp/app/%E3%82%B9%E3%83%AF%E3%82%A4%E3%83%9D%E3%83%B3-%E3%82%B9%E3%83%AF%E3%82%A4%E3%83%97%E3%81%A7%E5%86%99%E7%9C%9F%E3%81%A8%E5%8B%95%E7%94%BB%E3%82%92%E7%B0%A1%E5%8D%98%E6%95%B4%E7%90%86/id6752831862?uo=4",
@@ -1650,41 +1756,6 @@
       "release_date": "2025-07-14T07:00:00Z",
       "current_version_release_date": "2026-10-09T15:22:32Z",
       "description": "いつもの写真に、魔法のフチドリを！（・θ・）\n『フチドリ！』は、写真を一瞬で切り抜き、好きな色や太さの線で彩れる、創造力を刺激するアプリです。\nさあ、あなただけのアートやステッカーを作りましょう！\n\n【フチドリで、写真はもっと楽しくなる！】:\n\n◆ カラーは無限大: シンプルな白黒から、推し色、ブランドカラーまで。あなたのセンスで自由に選べます。\n\n◆ 太さも自由自在: 細い線でスタイリッシュに、太い線でポップに。印象をガラリと変えられます。\n\n◆ 使い方はアイデア次第: 商品写真を目立たせたり、旅行の思い出をステッカー風にしたり、推しの画像をデコったり！\n\n【もちろん、プライバシーは鉄壁です】:\n\n○ 写真は外部に送信しません: 全ての処理はスマホ内で完結。あなたのプライバシーは完全に守られます。\n\n○ いつでもどこでもオフライン: 通信量を気にせず、飛行機の中でもサクサク軽快に動作します。\n\n【3ステップで完成！】:\n\n写真を選ぶと、賢いオンデバイス技術が瞬時に背景を切り抜き！\n\nカラーと太さを選んで、最高のフチドリをデザイン！\n\n保存ボタンをタップ！背景透過PNGですぐに使える（・θ・）",
-      "release_notes": "・利用規約とプライバシーポリシーのリンク先を新しいページに変更しました\n・細かな不具合を修正しました",
-      "content_advisory_rating": "4+",
-      "minimum_os_version": "17.0",
-      "developer_name": "Ryo Tsudukihashi",
-      "seller_name": "TsuzuKit"
-    },
-    {
-      "bundle_id": "com.tsuzuki817.jellysamepuzzle",
-      "name": "ゼリーセイムパズル",
-      "app_store_url": "https://apps.apple.com/jp/app/%E3%82%BC%E3%83%AA%E3%83%BC%E3%82%BB%E3%82%A4%E3%83%A0%E3%83%91%E3%82%BA%E3%83%AB/id6747354292?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/72/89/d0/7289d0bc-59f2-f3aa-61f9-bf2af067c88f/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
-      "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/JA9YOhLNY7g-3vAtEwFVpw/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/uoj7xs0cA6rFlWqPtzxKGw/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/pEQ4pfH4Q6rFYjz0NDNJxA/626x0w.webp"
-      ],
-      "ipad_screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ea/f5/97/eaf59710-b5fd-a5e6-4646-da9066291746/13inch.002.jpeg/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/df/ff/95/dfff95d1-0eb4-ba15-a6c8-5fb02ebfc312/13inch.001.jpeg/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a5/4c/ef/a54cef95-0918-5f61-ee8c-c1c724926e0a/13inch.003.jpeg/360x480bb.jpg"
-      ],
-      "price": "無料",
-      "currency": "JPY",
-      "genres": [
-        "ゲーム",
-        "エンターテインメント",
-        "パズル"
-      ],
-      "primary_genre": "Games",
-      "rating": 4.59999,
-      "rating_count": 10,
-      "version": "1.5.5",
-      "release_date": "2025-07-16T07:00:00Z",
-      "current_version_release_date": "2026-10-09T15:23:32Z",
-      "description": "【ゼリーセイムパズルとは？】\n某ゲームサイトで愛された「セイムパズル」の感動が、最新のiOS/iPadOSアプリで蘇ります！\nぷるぷる揺れるゼリーブロックをタップで消すだけの簡単操作で、いつでもどこでも気軽に楽しめるパズルゲームです。シンプルながら奥深いゲーム性で、あなたの思考力を試しましょう。\n\n【ゲームの特徴】\n◆ 簡単だけど奥深い！シンプル操作のパズルゲーム\n　- 2つ以上繋がった同じ色のゼリーブロックをタップして消すだけ！\n　- ブロックが消えると上から新しいゼリーが降ってきて、連鎖のチャンスも。\n　- どこを消すか戦略を立てて、高得点を狙いましょう！\n　- レインボーブロックやアイテム（Delete, Changeなど）の登場も！？\n　- ランキング機能で世界中のプレイヤーとスコアを競い合おう！\n\n◆ ぷるぷる可愛いゼリーブロック！\n　- 見ているだけでも楽しい、触りたくなるようなゼリーの質感を表現。\n　- 消した時の爽快感あふれるアニメーションとサウンドが病みつきに！\n\n◆ 懐かしさと新しい発見\n　- 「セイムパズル」のファンならきっと懐かしい、あの独特のパズル体験を再現。\n　- もちろん、初めてプレイする方でもすぐにハマれる中毒性があります。\n\n◆ いつでもどこでも気軽にプレイ\n　- 通勤・通学時間、ちょっとした休憩時間など、スキマ時間に最適。\n　- オフラインでもプレイ可能なので、電波の届かない場所でも楽しめます。\n\n◆ 【今後のアップデート予定】\n　- クラシックモード、カウントダウンモードなど、多彩なゲームモードを追加予定！\n\n\n【こんな方におすすめ！】\n\n某ゲームの「セイムパズル」が好きだった方\n\nシンプルだけど奥深いパズルゲームを探している方\n\n脳トレや思考力を鍛えたい方\n\n通勤・通学中に気軽に遊べるゲームが欲しい方\n\nぷるぷる可愛いデザインのゲームが好きな方\n\nさあ、あなたも「Jelly Same Puzzle」で、ゼリーを消す爽快感を体験しよう！\n今すぐダウンロードして、パズルの世界に飛び込もう！\n\n□ その他情報\n・利用規約\nhttps://tsuzukit.com/legal/terms-of-service.html\n\n・プライバシーポリシー\nhttps://tsuzukit.com/legal/privacy-policy.html\n\n・特定商取引法に基づく表示\nhttps://tsuzukit.com/legal/commercial-law.html",
       "release_notes": "・利用規約とプライバシーポリシーのリンク先を新しいページに変更しました\n・細かな不具合を修正しました",
       "content_advisory_rating": "4+",
       "minimum_os_version": "17.0",
@@ -1980,8 +2051,8 @@
         "写真／ビデオ"
       ],
       "primary_genre": "Music",
-      "rating": 3.42308,
-      "rating_count": 26,
+      "rating": 3.44444,
+      "rating_count": 27,
       "version": "1.2.1",
       "release_date": "2022-03-04T08:00:00Z",
       "current_version_release_date": "2026-10-14T23:37:12Z",
@@ -2442,44 +2513,6 @@
       "seller_name": "TsuzuKit"
     },
     {
-      "bundle_id": "com.tsuzukit.PoopCounter",
-      "name": "うんちくん AI健康記録&うんトモ",
-      "app_store_url": "https://apps.apple.com/jp/app/%E3%81%86%E3%82%93%E3%81%A1%E3%81%8F%E3%82%93-ai%E5%81%A5%E5%BA%B7%E8%A8%98%E9%8C%B2-%E3%81%86%E3%82%93%E3%83%88%E3%83%A2/id6758856276?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/03/e1/5d/03e15da9-4b6e-1a61-0eb6-1e8bcaeb4657/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
-      "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/6GBJdW0LyKM3GEt6DzY7IA/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/qgHwoEH12De8nx-UQQM6AA/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/2he6AjxBMe2Ab9eeRc6H6Q/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PW4WYJ-mf1YvK05fHmFQHQ/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/TZyfkOQrsS9ploX6MPE1PA/626x0w.webp"
-      ],
-      "ipad_screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/bc/ea/12/bcea124a-7c65-a397-059d-b7abe2518d2a/APP_IPAD_PRO_3GEN_129_01.png/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a9/c4/9f/a9c49f06-83dd-f59b-dfc4-a842147fbefb/APP_IPAD_PRO_3GEN_129_02.png/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3f/03/1c/3f031c93-eeae-797d-6f97-a6da4572e52f/APP_IPAD_PRO_3GEN_129_03.png/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/37/1e/47/371e478b-5f29-cc51-2cec-f7ab82949862/APP_IPAD_PRO_3GEN_129_04.png/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2a/cd/c0/2acdc03f-f287-88a9-f586-327976c3d348/APP_IPAD_PRO_3GEN_129_05.png/360x480bb.jpg"
-      ],
-      "price": "無料",
-      "currency": "JPY",
-      "genres": [
-        "ヘルスケア／フィットネス",
-        "エンターテインメント"
-      ],
-      "primary_genre": "Health & Fitness",
-      "rating": 4.12478,
-      "rating_count": 577,
-      "version": "3.1.1",
-      "release_date": "2026-02-26T08:00:00Z",
-      "current_version_release_date": "2026-10-15T14:30:54Z",
-      "description": "うんちくんは、毎日のうんちを楽しく記録して友達や家族とシェアできるアプリです。\n\n【ワンタップで記録】\n「でた！」ボタンを押すだけで今日のうんちを記録。回数に応じて37種類以上のうんちキャラクターがリアクションしてくれます。\n\n【うんトモとシェア】\n友達コードやQRコードで「うんトモ」を追加。ストーリー形式でうんトモのうんち状況をチェックできます。まるでInstagramのストーリーのように、楽しくうんち報告！\n\n【ウィジェット対応】\nホーム画面にウィジェットを追加すれば、アプリを開かなくても今日の記録が一目でわかります。回数に応じてテーマカラーが変化！\n\n【うんカレ（カレンダー）】\n週間カレンダーで日ごとの記録を確認。平均回数や最高記録もチェックできます。\n\n【ストリーク機能】\n連続記録日数をカウント。毎日のうんち習慣をゲーム感覚で続けられます。\n\n【プッシュ通知】\nうんトモがうんちした時にお知らせが届きます。友達申請の通知も見逃しません。\n\n【アバターカスタマイズ】\n肌色・髪型・髪色・目の色・服装など自由にカスタマイズ。あなただけのアバターでうんトモと交流しよう。\n\n【無料版】\n・ワンタップ記録\n・うんトモ追加（無制限）\n・ストーリー共有\n・週間カレンダー\n・ウィジェット\n・アバターカスタマイズ\n・プッシュ通知\n\n【プレミアム版】\n・うんトモの記録に、90種類を超える限定リアクションスタンプで気持ちを返せます\n・ホーム画面のアプリアイコンをお気に入りのデザインに変えられます\n・好きな写真をプロフィール画像に設定できます\n・サポーター限定の帽子・オーラ・表情で、うんちくんを自分だけの姿に着せ替えられます\n・月間カレンダー＆サマリー\n・広告なし\n・すべての機能が使い放題\n\n毎日のうんちを、うんちくんと一緒に楽しく記録しよう！\n\n【リンク】\n・サポート: https://tsuzukit.com/contact/\n・利用規約: https://unchikun.app/legal/terms-of-service\n・プライバシーポリシー: https://unchikun.app/legal/privacy-policy\n・特定商取引法に基づく表記: https://unchikun.app/legal/commercial-law",
-      "release_notes": "パートナーにしたのに、次に開くと戻ってた。あれ直したよ。\n招待のリンクも、ちゃんと自分のコードが入るようになった。\nタワーの今週のベストが遊ぶたびに書き換わってたのも直した。安心して積め。",
-      "content_advisory_rating": "4+",
-      "minimum_os_version": "17.0",
-      "developer_name": "Ryo Tsudukihashi",
-      "seller_name": "TsuzuKit"
-    },
-    {
       "bundle_id": "com.tsuzuki817.ZennChat",
       "name": "ZennChat: 禅の日々",
       "app_store_url": "https://apps.apple.com/jp/app/zennchat-%E7%A6%85%E3%81%AE%E6%97%A5%E3%80%85/id6754220363?uo=4",
@@ -2581,8 +2614,8 @@
         "ライフスタイル"
       ],
       "primary_genre": "Photo & Video",
-      "rating": 4.40475,
-      "rating_count": 42,
+      "rating": 4.43182,
+      "rating_count": 44,
       "version": "1.0.3",
       "release_date": "2022-05-23T07:00:00Z",
       "current_version_release_date": "2026-10-09T18:30:39Z",
