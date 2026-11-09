@@ -18,7 +18,7 @@
  */
 (function () {
     var KEY = 'ledbanner-lang';
-    var VERSION = '2';
+    var VERSION = '3';
     var LANGS = {
         'ja': '日本語', 'en': 'English', 'ko': '한국어',
         'zh-Hans': '简体中文', 'zh-Hant': '繁體中文'
