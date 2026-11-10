@@ -73,8 +73,8 @@ def dates(width: int) -> str:
             f'{row("西暦", "2026年11月10日", INK)}{row("和暦", "令和8年11月10日", PURPLE)}</div>')
 
 
-def keys() -> str:
-    """アプリがお題を探すときの数字。西暦なら見つかり、和暦だと見つからない"""
+def keys(fixed: bool) -> str:
+    """アプリがお題を探すときの数字。直す前は和暦だと見つからない。直したあとは和暦でも西暦の数字で探す"""
     def row(label: str, num: str, result: str, ok: bool) -> str:
         color, mark = (GREEN, "✓") if ok else (RED, "✕")
         return (f'<div style="display:flex;align-items:center;gap:22px;padding:16px 4px">'
@@ -87,7 +87,16 @@ def keys() -> str:
             f'box-shadow:10px 10px 0 {PURPLE};padding:10px 30px">'
             f'{row("西暦のiPhone", "20261110", "お題あり", True)}'
             f'<div style="border-top:2px dashed rgba(20,17,12,.18)"></div>'
-            f'{row("和暦のiPhone", "81110", "見つからない", False)}</div>')
+            f'{row("和暦のiPhone", "20261110" if fixed else "81110", "お題あり" if fixed else "見つからない", fixed)}</div>')
+
+
+def settings_path() -> str:
+    """iPhone の設定で暦を見る場所（iOS 27.2 の InternationalSettings の文言）"""
+    steps = ["設定", "一般", "言語と地域", "暦法"]
+    chips = f'<span style="font-family:Anton;font-size:40px;color:{PURPLE}">›</span>'.join(
+        f'<span style="background:#fff;border:3px solid {INK};border-radius:16px;padding:8px 20px;'
+        f'font-weight:900;font-size:34px;white-space:nowrap">{w}</span>' for w in steps)
+    return f'<div style="display:flex;align-items:center;justify-content:center;gap:12px">{chips}</div>'
 
 
 def store_card() -> str:
@@ -108,27 +117,25 @@ write("s14-steplens", [
 <div class="badge">仲間とアプリを作ってます</div>
 <div class="cover" style="margin-top:34px;font-size:84px">iPhoneを<br>{k.mark("和暦")}にしてる人に<br>お題が届かなかった</div>
 <div class="subline" style="margin-top:26px">毎日お題が届く、お散歩アプリの話</div>
-<div style="margin-top:20px">{with_peek(shot("odai-card", 730))}</div>""", ""),
-    tight("僕たちのアプリ", "毎日1つ、散歩のお題が届く", shot("home-top", 720),
+<div style="margin-top:40px">{with_peek(shot("walkers", 740))}</div>""", ""),
+    tight("僕たちのアプリ", "毎日1つ、散歩のお題が届く", shot("neko", 470),
           "#野良猫、#不思議な形の雲。|お題を探しに歩いて、撮って投稿する。",
           "お題は日替わり。|その日になると、ホームに出てくる。"),
     k.item("まず知ってほしいこと", "iPhoneは和暦にもできる", dates(720),
            "設定の 言語と地域 › 暦法 で、|西暦か和暦を選べる。",
            "和暦にすると、iPhoneの日付が|令和で出るようになる。"),
-    k.item("お題の探し方", "今日の日付を、数字にして探す", keys(),
+    k.item("お題の探し方", "今日の日付を、数字にして探す", keys(False),
            "アプリは今日の日付を数字にして、|その日のお題を探していた。",
            "和暦だと令和8年の8から数えて|81110になり、お題が見つからない。"),
-    tight("2026年10月", "どの暦でも、西暦で数える", shot("cloud", 430),
+    k.item("2026年10月", "どの暦でも、西暦で数える", keys(True),
           "和暦のiPhoneでも、|今日のお題が出るように直した。",
           "公開してから1年5か月、|気づけていなかった。"),
-    tight("いまのStepLens", "歩いた日が、写真で並ぶ",
-          f'<div style="display:flex;flex-direction:column;align-items:center;gap:30px">'
-          f'{store_card()}{shot("calendar", 520)}</div>',
-          "お題で撮った写真が、|カレンダーに1日ずつ並んでいく。", ""),
     k.page(f"""
 <div style="height:170px"></div>
 <div class="big">あなたのiPhone、<br>西暦？和暦？</div>
-<div style="margin-top:56px">{dates(720)}</div>
-<div class="subline" style="margin-top:56px">毎日のお題で、いつもの道を歩く</div>
+<div class="subline" style="margin-top:56px">iPhoneの暦は、ここで見られる</div>
+<div style="margin-top:22px">{settings_path()}</div>
+<div style="margin-top:50px"><img src="{chara("think")}" style="width:220px"></div>
+<div class="subline" style="margin-top:30px">いまは西暦でも和暦でも、毎日お題が届く</div>
 <div style="margin-top:22px">{store_card()}</div>""", ""),
 ])

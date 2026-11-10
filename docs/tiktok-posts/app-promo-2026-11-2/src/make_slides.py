@@ -2,6 +2,9 @@
 悩みは App Store の説明文の書き出し「いつものお散歩コース、ちょっとマンネリ化していませんか？」から取った。
 n1: いつも同じ道で飽きる → お題が届くと、同じ道で探しものが始まる
 n2: 先週の散歩で見たものを覚えていない → 撮った写真がカレンダーに残る
+アプリの画面は p1-steplens（紹介）と s14-steplens（和暦の話）で使ったので、この2本では使わない（2026-11-10 本人「同じ画像ばっかり」）。
+お題の名前は実物（App Store の説明文・ストア画像）で、写真は Pexels の実写（assets/photos/*/_manifest.json）。写真には「写真はイメージです」を添える。
+2本のあいだでも、1本の中でも、同じ写真は1回だけ。
 
   python3 src/make_slides.py
   python3 ~/.claude/skills/tiktok-slideshow/scripts/render.py src/html .
@@ -79,24 +82,65 @@ def store_card() -> str:
             f'</span></div>')
 
 
+def photo(tag_dir: str, pid: str) -> str:
+    return f"{A}/photos/{tag_dir}/{pid}.jpg"
+
+
+NOTE = '<div style="font-size:22px;color:#6c6356;margin-top:12px">写真はイメージです</div>'
+
+
+def tag_chip(text: str, size: int) -> str:
+    return (f'<span style="background:rgba(20,17,12,.82);color:#fff;font-weight:900;font-size:{size}px;'
+            f'border-radius:14px;padding:6px 18px;white-space:nowrap">{text}</span>')
+
+
+def framed_photo(src: str, size: int, label: str) -> str:
+    """正方形の写真の右上に、お題の札を重ねる"""
+    return (f'<div style="position:relative;width:{size}px;height:{size}px;margin:0 auto">'
+            f'<img src="{src}" style="width:{size}px;height:{size}px;object-fit:cover;display:block;border-radius:24px;'
+            f'border:3px solid {INK};box-shadow:10px 10px 0 {PURPLE}">'
+            f'<div style="position:absolute;top:18px;right:18px">{tag_chip(label, 30)}</div></div>')
+
+
 def week(cells: list, tint: str) -> str:
     """月〜日の7日を1列に並べる。悩みの1枚で「毎日おなじ」「なにも残っていない」を見せる"""
-    days = "月火水木金土日"
     out = ""
-    for d, c in zip(days, cells):
+    for d, c in zip("月火水木金土日", cells):
         out += (f'<div style="width:96px;height:150px;background:#fff;border:3px solid {INK};border-radius:18px;'
                 f'display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px">'
                 f'<span style="font-weight:900;font-size:26px;color:{PURPLE}">{d}</span>'
                 f'<span style="font-weight:900;font-size:{40 if len(c) == 1 else 22}px;color:{tint};'
                 f'line-height:1.15;text-align:center">{c}</span></div>')
-    return (f'<div style="display:flex;gap:10px;justify-content:center;filter:drop-shadow(8px 8px 0 {PURPLE})">{out}</div>')
+    return f'<div style="display:flex;gap:10px;justify-content:center;filter:drop-shadow(8px 8px 0 {PURPLE})">{out}</div>'
 
 
-def pair(a: str, b: str) -> str:
-    """お題の写真を2枚ならべる"""
-    one = (lambda n: f'<img src="{img(n)}" style="width:370px;height:370px;object-fit:cover;display:block;'
-                     f'border-radius:22px;border:3px solid {INK};box-shadow:8px 8px 0 {PURPLE}">')
-    return f'<div style="display:flex;gap:30px;justify-content:center">{one(a)}{one(b)}</div>'
+def photo_week(photos: list) -> str:
+    """月〜土は撮った写真、日はまだ「？」。1枚目の7日と対にする"""
+    def cell(day: str, inner: str) -> str:
+        return (f'<div style="position:relative;width:168px;height:168px;border:3px solid {INK};border-radius:18px;'
+                f'overflow:hidden;background:#fff">{inner}'
+                f'<span style="position:absolute;top:8px;left:8px;background:#fff;color:{PURPLE};font-weight:900;'
+                f'font-size:24px;border-radius:10px;padding:0 10px;border:2px solid {INK}">{day}</span></div>')
+    cells = [cell(d, f'<img src="{src}" style="width:100%;height:100%;object-fit:cover;display:block">')
+             for d, src in zip("月火水木金土", photos)]
+    cells.append(cell("日", f'<div style="height:100%;display:flex;align-items:center;justify-content:center;'
+                            f'font-weight:900;font-size:64px;color:{PURPLE}">？</div>'))
+    return (f'<div style="width:740px;margin:0 auto;display:flex;flex-wrap:wrap;justify-content:center;gap:14px;'
+            f'filter:drop-shadow(8px 8px 0 {PURPLE})">{"".join(cells)}</div>')
+
+
+def pair(a: str, la: str, b: str, lb: str) -> str:
+    return (f'<div style="display:flex;gap:30px;justify-content:center">'
+            f'{framed_photo(a, 370, la)}{framed_photo(b, 370, lb)}</div>')
+
+
+def ending(question: str, line: str, pose: str) -> str:
+    return k.page(f"""
+<div style="height:200px"></div>
+<div class="big">{question}</div>
+<div style="margin-top:60px"><img src="{chara(pose)}" style="width:260px"></div>
+<div class="subline" style="margin-top:40px">{line}</div>
+<div style="margin-top:22px">{store_card()}</div>""", "")
 
 
 tight = k.phone_item
@@ -111,19 +155,18 @@ write("n1-onaji-michi", [
 <div class="cover" style="margin-top:30px;font-size:84px">散歩、いつも<br>{k.mark("同じ道")}で<br>飽きてない？</div>
 <div style="margin-top:40px">{week(SAME, "#6c6356")}</div>
 <div style="margin-top:34px"><img src="{chara("sleep")}" style="width:230px"></div>""", ""),
-    tight("01", "道はそのまま、探すものを変える", shot("home-top", 760),
-          "毎日1つ、散歩のお題が届く。|#野良猫、#不思議な形の雲。", ""),
-    tight("02", "いつもの道で、探しものが始まる", pair("cat", "cloud"),
-          "お題に合うものを見つけたら、|写真を撮って投稿する。",
+    tight("01", "道はそのまま、探すものを変える",
+          framed_photo(photo("michi", "18766722"), 540, "今日のお題　#赤いドア") + NOTE,
+          "毎日1つ、散歩のお題が届く。|いつもの道で、それを探して歩く。", ""),
+    tight("02", "いつもの道で、探しものが始まる",
+          pair(photo("akai-door", "17398836"), "#赤いドア", photo("noraneko", "39407407"), "#野良猫") + NOTE,
+          "見つけたら、写真を撮って投稿する。|ほかの人が見つけた景色も見られる。",
           "お題を探して歩くと、|見慣れた道が新鮮になる。"),
-    tight("03", "同じ道でも、毎日ちがう1枚", shot("calendar", 650),
-          "お題は日替わりだから、|カレンダーに並ぶ写真も毎日ちがう。", ""),
-    k.page(f"""
-<div style="height:170px"></div>
-<div class="big">いつもの散歩道、<br>何年歩いてますか？</div>
-<div style="margin-top:50px">{tags(["赤いドア", "くじらの形に見える雲", "野良猫", "不思議な形の雲"])}</div>
-<div class="subline" style="margin-top:50px">同じ道に、毎日ちがうお題</div>
-<div style="margin-top:22px">{with_chara("wave", 170, store_card())}</div>""", ""),
+    tight("03", "同じ道でも、毎日ちがう1枚",
+          photo_week([photo("akai-door", "8304865"), photo("kujira-kumo", "7833039"), photo("noraneko", "32590772"),
+                      photo("fushigi-kumo", "10757616"), photo("akai-tatemono", "1292496"), photo("kadan", "7534832")]) + NOTE,
+          "お題は日替わりだから、|撮る写真も毎日ちがう。", ""),
+    ending("いつもの散歩道、<br>何年歩いてますか？", "同じ道に、毎日ちがうお題", "run"),
 ])
 
 # ---------------------------------------------------------------- n2 見たものを覚えていない
@@ -134,17 +177,16 @@ write("n2-oboete-nai", [
 <div class="cover" style="margin-top:30px;font-size:84px">先週の散歩で<br>{k.mark("見たもの")}<br>覚えてる？</div>
 <div style="margin-top:40px">{week(BLANK, PURPLE)}</div>
 <div style="margin-top:34px"><img src="{chara("think")}" style="width:230px"></div>""", ""),
-    tight("01", "毎日1つ、お題が届く", shot("home-top", 760),
-          "#野良猫、#不思議な形の雲。|お題を探して、景色を見ながら歩く。", ""),
-    tight("02", "見つけたら、1枚撮る", shot("cat", 500),
+    tight("01", "毎日1つ、お題が届く",
+          framed_photo(photo("kujira-kumo", "36768656"), 540, "今日のお題　#くじらの形に見える雲") + NOTE,
+          "お題を探して、|景色を見ながら歩く。", ""),
+    tight("02", "見つけたら、1枚撮る",
+          framed_photo(photo("noraneko", "40557739"), 540, "#野良猫") + NOTE,
           "お題に合うものを見つけたら、|写真を撮って投稿する。", ""),
-    tight("03", "歩いた日が、写真で残る", shot("calendar", 540),
+    tight("03", "歩いた日が、写真で残る",
+          photo_week([photo("akai-door", "8646429"), photo("kujira-kumo", "17194999"), photo("noraneko", "33317487"),
+                      photo("fushigi-kumo", "9940016"), photo("akai-tatemono", "31284160"), photo("kadan", "8516871")]) + NOTE,
           "撮った写真が、|カレンダーに1日ずつ並んでいく。",
           "あとから見返すと、|どの日に何を見たか分かる。"),
-    k.page(f"""
-<div style="height:170px"></div>
-<div class="big">先週の散歩で、<br>何を見ましたか？</div>
-<div style="margin-top:44px">{shot("calendar", 560)}</div>
-<div class="subline" style="margin-top:44px">歩いた日が、写真で残る</div>
-<div style="margin-top:22px">{store_card()}</div>""", ""),
+    ending("先週の散歩で、<br>何を見ましたか？", "歩いた日が、写真で残る", "cheer"),
 ])
