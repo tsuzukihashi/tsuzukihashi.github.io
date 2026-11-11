@@ -226,18 +226,24 @@ strong { color: var(--color-primary); font-weight: 700; }
   align-items: center;
 }
 
+/* ロゴは文字ロゴの絵（docs/logo）。HTML の「TsuzuKit」は読み上げ用に残し、画面では隠す */
 .nav-logo {
-  font-family: var(--font-display);
-  font-style: italic;
-  font-weight: 800;
-  font-size: 1.5rem;
-  letter-spacing: 0.02em;
-  color: #ffffff;
+  display: block;
+  flex-shrink: 0;
+  width: 100px;
+  height: 31px;
+  background: url("/assets/images/logo/tsuzukit-wordmark-white.svg") no-repeat left center / contain;
+  overflow: hidden;
+  white-space: nowrap;
+  text-indent: 110%;
+  color: transparent;
   text-decoration: none;
-  text-transform: uppercase;
-  transition: var(--transition-normal);
+  transition: opacity var(--transition-normal);
 }
-.nav-logo:hover { color: var(--neon-pink); }
+.nav-logo:hover { opacity: 0.75; }
+@media (max-width: 768px) {
+  .nav-logo { width: 87px; height: 27px; }
+}
 
 .nav-menu { display: flex; align-items: center; gap: var(--space-md); }
 
@@ -912,13 +918,4 @@ strong { color: var(--color-primary); font-weight: 700; }
   }
 }
 
-/* ========== Brand mark (logo) ========== */
-.nav-logo::before {
-  content: "";
-  display: inline-block;
-  width: 1.05em;
-  height: 1.05em;
-  margin-right: 0.45em;
-  vertical-align: -0.16em;
-  background: url("/assets/images/logo-mark-white.png") no-repeat center / contain;
-}
+

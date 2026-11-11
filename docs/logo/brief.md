@@ -51,3 +51,17 @@
 ## 検品のしかた
 
 `docs/logo/build_sheet.py` で比較シートを作る。1案につき、クリーム地の原寸、暗いヘッダーの帯（実寸）、ファビコン 16 / 32px、OGP カードの左上、丸いアイコン 48px を並べ、いまのロゴも同じ形で並べる。
+
+## 決定（2026-11-11）
+
+- 文字ロゴは D（i の点がキャラの頭）。シンボルは S4（Ki の組み文字）。真円に目2つだけの丸は、ほかのサービスのアイコンと見分けにくいので使わない
+- 原図は `assets/images/logo/` の SVG（ChatGPT の絵を potrace で輪郭にしたもの）
+  - `tsuzukit-wordmark.svg` / `tsuzukit-wordmark-white.svg`: 文字ロゴ。墨と白
+  - `tsuzukit-symbol.svg` / `tsuzukit-symbol-white.svg`: Ki。墨と白
+  - 目は抜き（透明）なので、どの地に置いても地の色が目になる
+- 使っている場所
+  - ヘッダー: `.nav-logo`（tsuzukit.css と style.css）。HTML の「TsuzuKit」は読み上げ用に残し、画面では白の文字ロゴを出す
+  - ファビコン・ホーム画面のアイコン: `python3 docs/logo/build_icons.py` で Ki から作る
+  - OGP: `docs/ogp-site.html` と `docs/income-report/ogp-illust.html` の左上・札の中が文字ロゴ
+- トップの代表作カード（assets/images/works/）は、前の絵の左下のロゴの部分だけを `docs/works-kv.html` で撮り直した絵から貼り替えた（アイコンや文字は前のまま）
+- 古いマーク（`assets/images/logo-mark*.png`、`logo.svg`）はどこからも読まれていない

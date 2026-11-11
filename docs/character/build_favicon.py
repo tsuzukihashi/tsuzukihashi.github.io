@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """走っているキャラからファビコン一式を作る。
 
+2026-11-11 から、ファビコンは docs/logo/build_icons.py（Ki のシンボル）で作る。これは使わない。
+
     python3 docs/character/build_favicon.py
 
 16pxだけは目が1px未満になって顔が消えるので、この大きさ用に目の穴だけ広げる。

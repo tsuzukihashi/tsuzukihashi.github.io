@@ -29,7 +29,7 @@
   .bl { left: 44px; bottom: 50px; } .br { right: 54px; bottom: 50px; }
   .tl { left: 44px; top: 40px; } .tr { right: 54px; top: 40px; }
   .brand { display: flex; align-items: center; gap: 10px; }
-  .brand img { width: 30px; height: 30px; }
+  .brand img { height: 30px; width: auto; display: block; }
   .brand span { font-family: 'Saira Condensed', sans-serif; font-style: italic; font-weight: 800; font-size: 24px; letter-spacing: 0.08em; }
   .label { margin-top: 14px; font-family: 'Saira Condensed', sans-serif; font-style: italic; font-weight: 800; font-size: 26px; letter-spacing: 0.06em; color: var(--purple); text-transform: uppercase; }
   .title { font-family: 'Anton', sans-serif; font-style: italic; font-size: 46px; line-height: 1.05; text-transform: uppercase; }
@@ -39,7 +39,7 @@
 <body>
 <img class="bg" id="bg" alt="">
 <div class="card" id="card">
-  <div class="brand"><img src="/assets/images/logo.svg" alt=""><span>TSUZUKIT</span></div>
+  <div class="brand"><img src="/assets/images/logo/tsuzukit-wordmark.svg" alt="TsuzuKit"></div>
   <div class="label" id="label"></div>
   <div class="title" id="title"></div>
   <div class="amount" id="amount"></div>
