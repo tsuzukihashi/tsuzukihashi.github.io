@@ -38,11 +38,20 @@ cd /Users/tsuzuki817/workspace/TsuzuKit/tsuzukit.com && python3 .claude/skills/u
 - `total_apps` / `categories` / 平均評価 / 総レビュー数 を再計算。
 - 統計数値を各HTMLへ反映：
   - `portfolio/index.html`（title / meta×2 / ヒーロー / Published・Rating・Reviews / 件表示中）
-  - `index.html`（公開中アプリ / 開発アプリ総数）
+  - `index.html`（公開中の本数・評価・「アプリを探す」の一覧）。`scripts/build_top_apps.py` を呼んで作り直す
   - `about/index.html`（◯個以上のiOSアプリ / 現在◯個公開中 / History の◯個）
 - スクショに `0bb.webp`（400になる形式）が混ざっていたら **exit 1 で警告**。
 
 出力の「新規追加」「公開アプリ数（旧→新）」「⚠️要確認」を必ず読むこと。
+
+### 2.5 新しいアプリに LP がある、または LP を作り直したとき
+トップでアイコンを押すと出るシートは、ASC に登録した「マーケティングURL」の最初の画面を見切れさせて出す（LP が無いアプリはストアのスクショ）。
+```bash
+cd fastlane && bundle exec ruby ../scripts/fetch_app_urls.rb && cd ..   # ASC の LP とサポートの URL → assets/data/app_urls.json
+node scripts/capture_lp_shots.mjs            # 全部撮る（1本だけなら App Store の ID を付ける）
+python3 scripts/build_top_apps.py            # トップに反映
+```
+playwright が無い環境では `PLAYWRIGHT_MODULE=<playwright の index.mjs>` を付けて動かす。撮った画像（`assets/images/lp/`）は目で見てから入れる。
 
 ### 3. 確認（新規アプリやスクショ変更があった場合は推奨）
 - ローカルサーバ: `python3 -m http.server 8000`（未起動なら）
@@ -111,6 +120,8 @@ App Store の合計・Google Play の合計・両方の合算（`grand_total`）
 - 例:
 ```bash
 git add assets/data/apps.json assets/data/apps_public.json portfolio/index.html index.html about/index.html
+# LP を撮り直したなら
+git add assets/data/app_urls.json assets/data/lp_shots.json assets/images/lp
 # ランキングも更新したなら
 git add assets/data/app-ranking.json portfolio/ranking/index.html docs/build_ranking.py
 git commit -m "feat(portfolio): アプリ情報を最新化（新規Nアプリ追加・統計更新）"

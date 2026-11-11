@@ -20,6 +20,7 @@ sync_portfolio.py — tsuzukit.com ポートフォリオ同期スクリプト
 import json
 import os
 import re
+import subprocess
 import sys
 import datetime
 
@@ -100,14 +101,12 @@ def update_html(published, developed, reviews, rating, changes):
         open(pf, "w", encoding="utf-8").write(t)
         changes.append("   ✏️  portfolio/index.html")
 
+    # トップの公開中の本数・評価・アプリの一覧は scripts/build_top_apps.py が apps.json から作る
     ix = os.path.join(ROOT, "index.html")
-    t = open(ix, encoding="utf-8").read()
-    before = t
-    # 「開発アプリ総数 100+」は手書きの値（公開＋譲渡＋停止より多い）なので触らない
-    t = sub_count(t, r'(<div class="stat-number">)(\d+)(</div>\s*<div class="stat-label"><span class="i18n-ja">公開中アプリ)', published, changes, "index 公開中アプリ")
-    if t != before:
-        open(ix, "w", encoding="utf-8").write(t)
-        changes.append("   ✏️  index.html")
+    before = open(ix, encoding="utf-8").read()
+    subprocess.run(["python3", os.path.join(ROOT, "scripts", "build_top_apps.py")], check=True)
+    if open(ix, encoding="utf-8").read() != before:
+        changes.append("   ✏️  index.html（scripts/build_top_apps.py）")
 
     ab = os.path.join(ROOT, "about", "index.html")
     t = open(ab, encoding="utf-8").read()
