@@ -1,0 +1,61 @@
+/* うましかてのページ。アプリと同じ、うすいピンクの地に濃いピンク */
+:root {
+  --ground: #FFDBE3; --panel: #FFFFFF; --ink: #2A2226; --sub: #7A6870; --line: #F4C3D0;
+  --pink: #ED5485; --pink-soft: rgba(237, 84, 133, .10);
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--ground); color: var(--ink); line-height: 1.8;
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Maru Gothic ProN", "Hiragino Sans", "Noto Sans JP", sans-serif; }
+html[lang="ko"] body { font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; }
+html[lang="zh-Hans"] body { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Noto Sans SC", sans-serif; }
+html[lang="zh-Hant"] body { font-family: -apple-system, BlinkMacSystemFont, "PingFang TC", "Noto Sans TC", sans-serif; }
+html:not([data-lang]) .not-ja, html[data-lang="ja"] .not-ja { display: none; }
+a { color: var(--pink); }
+img { max-width: 100%; height: auto; }
+.wrap { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+
+header { background: var(--panel); border-bottom: 3px solid var(--pink); }
+.hbar { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; flex-wrap: wrap; }
+.hbrand { display: flex; align-items: center; gap: 10px; font-weight: 800; text-decoration: none; font-size: 18px; color: var(--ink); }
+.hmark { width: 28px; height: 28px; border-radius: 7px; }
+.hnav { display: flex; gap: 16px; font-size: 14px; flex-wrap: wrap; align-items: center; }
+.hnav a { text-decoration: none; color: var(--sub); }
+.hnav a[aria-current="page"] { color: var(--pink); font-weight: 700; }
+
+.hero { display: flex; gap: 28px; align-items: center; padding: 40px 0 24px; flex-wrap: wrap; }
+.hero > div { flex: 1 1 320px; }
+.appicon { width: 160px; height: 160px; border-radius: 36px; box-shadow: 0 14px 30px rgba(237, 84, 133, .3); }
+.hero h1 { font-size: 30px; line-height: 1.4; margin: 12px 0; }
+.pill { display: inline-block; background: var(--pink); color: #fff; font-size: 12px; font-weight: 700; padding: 4px 12px; border-radius: 999px; }
+.soon { color: var(--sub); font-size: 14px; }
+section { padding: 20px 0; }
+section h2 { font-size: 22px; margin: 0 0 14px; }
+.cards { display: grid; gap: 14px; }
+.cards.two { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+.card { background: var(--panel); border-radius: 20px; padding: 18px 20px; border: 1px solid var(--line); }
+.card h3 { margin: 0 0 6px; font-size: 17px; color: var(--pink); }
+.card p { margin: 0; font-size: 15px; }
+
+.doc { max-width: 780px; margin: 0 auto; padding: 32px 16px 48px; }
+.doc .en { color: var(--pink); font-size: 12px; font-weight: 800; letter-spacing: .12em; margin: 0; }
+.doc h1 { font-size: 28px; margin: 4px 0 6px; }
+.doc .meta { color: var(--sub); font-size: 13px; margin: 0 0 16px; }
+.doc h2 { font-size: 19px; margin: 32px 0 10px; padding-left: 10px; border-left: 5px solid var(--pink); }
+.doc table { width: 100%; border-collapse: collapse; background: var(--panel); border-radius: 14px; overflow: hidden; font-size: 15px; }
+.doc th, .doc td { text-align: left; vertical-align: top; padding: 10px 14px; border-bottom: 1px solid var(--line); }
+.doc th { width: 30%; color: var(--sub); font-weight: 700; white-space: nowrap; }
+.doc tr:last-child th, .doc tr:last-child td { border-bottom: 0; }
+.doc ul { padding-left: 1.3em; }
+.doc li { margin: 6px 0; }
+.lede, .callout { background: var(--panel); border-radius: 16px; padding: 16px 18px; border: 1px solid var(--line); }
+.callout { background: var(--pink-soft); border-color: rgba(237, 84, 133, .35); margin: 14px 0; }
+
+footer { background: var(--panel); border-top: 1px solid var(--line); padding: 24px 0; margin-top: 24px; font-size: 13px; color: var(--sub); }
+footer nav { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 12px; }
+footer nav a { color: var(--sub); text-decoration: none; }
+.lang-picker { margin: 0 0 12px; }
+.lang-picker select { font: inherit; font-size: 13px; color: var(--ink); background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 6px 10px; }
+@media (max-width: 560px) {
+  .hero h1 { font-size: 24px; }
+  .doc th { width: 34%; white-space: normal; }
+}
