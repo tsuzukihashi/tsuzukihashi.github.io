@@ -1,0 +1,49 @@
+/* おえかきあてっこ のページ。画用紙とクレヨン */
+:root {
+  --paper: #FFF8EC; --card: #FFFFFF; --ink: #3B2F2A; --sub: #7D6B61; --line: #EADFCC;
+  --tomato: #FF6B4A; --tomato-deep: #DC4A2B; --leaf: #33B36B; --sun: #FFC93C;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); line-height: 1.85;
+  font-family: "Hiragino Maru Gothic ProN", "Hiragino Sans", "Noto Sans JP", sans-serif; }
+a { color: var(--tomato-deep); }
+img { max-width: 100%; height: auto; }
+.wrap { max-width: 920px; margin: 0 auto; padding: 0 16px; }
+header { background: var(--card); border-bottom: 2px solid var(--line); }
+.hbar { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; flex-wrap: wrap; }
+.hbrand { display: flex; align-items: center; gap: 10px; font-weight: 800; text-decoration: none; font-size: 18px; color: var(--ink); }
+.hbrand img { width: 32px; height: 32px; border-radius: 8px; }
+.hnav { display: flex; gap: 16px; font-size: 14px; flex-wrap: wrap; }
+.hnav a { text-decoration: none; color: var(--sub); }
+.hnav a[aria-current="page"] { color: var(--tomato-deep); font-weight: 700; }
+.hero { display: grid; grid-template-columns: 1.2fr 1fr; gap: 28px; align-items: center; padding: 44px 0 24px; }
+@media (max-width: 720px) { .hero { grid-template-columns: 1fr; padding-top: 28px; } }
+.pill { display: inline-block; background: var(--sun); color: var(--ink); font-weight: 700; font-size: 13px; padding: 4px 12px; border-radius: 999px; }
+h1 { font-size: clamp(28px, 6vw, 44px); line-height: 1.35; margin: 14px 0; }
+h2 { font-size: 24px; margin: 44px 0 14px; }
+h3 { font-size: 18px; margin: 6px 0; }
+.lead { font-size: 17px; }
+.price { font-size: 15px; color: var(--sub); }
+.board { background: var(--card); border-radius: 28px; padding: 22px; box-shadow: 0 8px 0 var(--line); text-align: center; font-size: 72px; line-height: 1.3; }
+.board small { display: block; font-size: 16px; color: var(--sub); }
+.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.cards.two { grid-template-columns: repeat(2, 1fr); }
+@media (max-width: 720px) { .cards, .cards.two { grid-template-columns: 1fr; } }
+.card { background: var(--card); border-radius: 20px; padding: 18px; box-shadow: 0 5px 0 var(--line); }
+.card .emoji { font-size: 36px; }
+.card p { margin: 6px 0 0; color: var(--sub); font-size: 15px; }
+.faq details { background: var(--card); border-radius: 16px; padding: 14px 18px; margin: 10px 0; box-shadow: 0 4px 0 var(--line); }
+.faq summary { font-weight: 700; cursor: pointer; }
+.faq p { margin: 8px 0 0; color: var(--sub); }
+.contact { background: var(--card); border-radius: 20px; padding: 18px 20px; box-shadow: 0 5px 0 var(--line); }
+footer { margin-top: 56px; padding: 26px 0 40px; border-top: 2px solid var(--line); font-size: 13px; color: var(--sub); }
+footer nav { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 8px; }
+footer a { color: var(--sub); }
+.doc { max-width: 760px; margin: 0 auto; padding: 32px 16px; }
+.doc h1 { font-size: 30px; }
+.doc h2 { font-size: 20px; margin-top: 32px; }
+.doc .meta { color: var(--sub); font-size: 14px; }
+.doc .lede { background: var(--card); border-radius: 16px; padding: 16px 18px; box-shadow: 0 4px 0 var(--line); }
+.doc table { border-collapse: collapse; width: 100%; background: var(--card); border-radius: 12px; overflow: hidden; }
+.doc th, .doc td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; font-size: 15px; }
+.doc th { width: 30%; color: var(--sub); font-weight: 700; }
