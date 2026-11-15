@@ -1,0 +1,233 @@
+{
+  "slug": "contact-lens-reminder-apps",
+  "date_published": "2026-11-15",
+  "date_updated": "2026-11-15",
+  "search_phrase": {
+    "ja": "コンタクト 交換 アプリ",
+    "en": "contact lens replacement reminder app"
+  },
+  "evidence": "2026-11-15 に Google の検索候補で「コンタクト 交換」を引くと、12件中5件が「アプリ」「お知らせ」「リマインダー」付きだった。同じ日の Google の結果は、上位がほぼ App Store と Google Play のページで、比べた記事は note 1本だけだった。",
+  "title": {
+    "ja": "コンタクトの交換日を忘れないアプリ4選",
+    "en": "4 Apps That Remind You When to Replace Your Contact Lenses"
+  },
+  "description": {
+    "ja": "2weekやマンスリーのコンタクトの交換日を忘れないアプリを4本比べました。通知の回数、期限を過ぎたあと、左右別、買い置きの管理の違いをまとめています。LensLogの作者が書いています。",
+    "en": "I compared four iPhone apps that remind you when to replace two-week and monthly contact lenses: how often they notify you, what happens after the date passes, left and right eyes, and spare stock. Written by the maker of LensLog."
+  },
+  "category": {
+    "ja": "アプリの選び方",
+    "en": "App guides"
+  },
+  "reading_minutes": 4,
+  "author": {
+    "name": {"ja": "續橋 涼", "en": "Ryo Tsuzukihashi"},
+    "handle": "tsuzuki817",
+    "bio": {
+      "ja": "2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。LensLogの作者です。",
+      "en": "I've been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made LensLog."
+    },
+    "url": "https://tsuzukit.com/about/",
+    "same_as": ["https://x.com/tsuzuki817"]
+  },
+  "tldr": {
+    "ja": "手っ取り早いのは、開封日から交換日を数えて通知してくれるアプリを入れることです。いちばん使われているのは評価4,085件のコンタクトレンズ交換リマインダー。左右で開封日が違う人や、期限を過ぎたら交換するまで毎日鳴らしてほしい人は、僕が作ったLensLogも見てみてください。",
+    "en": "The quickest fix is an app that counts from the day you open a lens and notifies you before it's due. The most widely used one is Contact Lens Reminder - Widget, with 4,085 ratings. If your left and right lenses start on different days, or you want a reminder every day until you actually swap them, take a look at LensLog, which I made."
+  },
+  "disclosure": {
+    "ja": "この記事は、LensLogを作った僕が書いています。ほかの3本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。",
+    "en": "I made LensLog, and I wrote this article. The other three apps are by developers I don't know, and I haven't received money or anything else from them. Everything compared here comes from each app's App Store description and rating count as of November 15, 2026."
+  },
+  "own_app": "6779314854",
+  "apps": [
+    {
+      "id": "6779314854",
+      "name": {"ja": "コンタクト交換リマインダー LensLog", "en": "LensLog: Contact Lens Reminder"},
+      "short": {"ja": "LensLog", "en": "LensLog"},
+      "developer": "Ryo Tsudukihashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f9/f1/97/f9f19717-deed-b113-8b9a-8b20192be933/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6779314854",
+      "android_url": null,
+      "rating_count": 1
+    },
+    {
+      "id": "1538614122",
+      "name": {"ja": "コンタクトレンズ交換リマインダー", "en": "Contact Lens Reminder - Widget"},
+      "short": {"ja": "コンタクトレンズ交換リマインダー", "en": "Contact Lens Reminder - Widget"},
+      "developer": "kazuhiro aonuma",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/93/fe/cd/93fecdc3-06a4-86d7-4497-4840a1e2a77c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id1538614122",
+      "android_url": null,
+      "rating_count": 4085
+    },
+    {
+      "id": "6470110511",
+      "name": {"ja": "コンタクト交換リマインダー - Lens Manager", "en": "Lens Manager"},
+      "short": {"ja": "Lens Manager", "en": "Lens Manager"},
+      "developer": "Yuichi Ishibashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/3e/05/51/3e055132-bfd8-242a-d142-97d41105cb39/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6470110511",
+      "android_url": "https://play.google.com/store/apps/details?id=com.issyu39.lens_manager",
+      "rating_count": 44
+    },
+    {
+      "id": "6756917635",
+      "name": {"ja": "コンタクト交換管理", "en": "LensCycle - Contact Reminder"},
+      "short": {"ja": "コンタクト交換管理", "en": "LensCycle"},
+      "developer": "Yuto Matsuzaki",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/17/90/61/1790619f-a79f-a484-d981-a7002d4bca14/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6756917635",
+      "android_url": null,
+      "rating_count": 19
+    }
+  ],
+  "sections": [
+    {
+      "heading": {"ja": "4本をざっくり比べる", "en": "The four apps at a glance"},
+      "blocks": [
+        {"type": "p", "text": {
+          "ja": "違いが出るのは、交換日の前に何回知らせてくれるかと、期限を過ぎたあとの動きです。",
+          "en": "Where they really differ is how many times they warn you before the date, and what they do once it has passed."
+        }},
+        {"type": "table",
+          "head": [
+            {"ja": "アプリ", "en": "App"},
+            {"ja": "評価の件数", "en": "Ratings"},
+            {"ja": "交換日の前の通知", "en": "Before the date"},
+            {"ja": "期限を過ぎたら", "en": "After the date"},
+            {"ja": "左右で別の交換日", "en": "Separate left and right"},
+            {"ja": "買い置きの数", "en": "Spare stock"}
+          ],
+          "rows": [
+            [
+              {"ja": "LensLog（僕のアプリ）", "en": "LensLog (my app)"},
+              {"ja": "1件", "en": "1"},
+              {"ja": "3日前、前日、当日", "en": "3 days before, the day before, and on the day"},
+              {"ja": "交換するまで毎日", "en": "Every day until you swap"},
+              {"ja": "プレミアム", "en": "Premium"},
+              {"ja": "あり", "en": "Yes"}
+            ],
+            [
+              {"ja": "コンタクトレンズ交換リマインダー", "en": "Contact Lens Reminder - Widget"},
+              {"ja": "4,085件", "en": "4,085"},
+              {"ja": "前日か最終日に1回", "en": "Once, the day before or on the last day"},
+              {"ja": "説明文に記載なし", "en": "Not mentioned"},
+              {"ja": "記載なし。度数は左右別に保存", "en": "Not mentioned. Prescription saved per eye"},
+              {"ja": "あり", "en": "Yes"}
+            ],
+            [
+              {"ja": "Lens Manager", "en": "Lens Manager"},
+              {"ja": "44件", "en": "44"},
+              {"ja": "当日。プレミアムで3日前から", "en": "On the day. From 3 days before with Premium"},
+              {"ja": "プレミアムで毎日", "en": "Every day with Premium"},
+              {"ja": "無料であり", "en": "Free"},
+              {"ja": "説明文に記載なし", "en": "Not mentioned"}
+            ],
+            [
+              {"ja": "コンタクト交換管理", "en": "LensCycle"},
+              {"ja": "19件", "en": "19"},
+              {"ja": "あり。時期は説明文に記載なし", "en": "Yes, timing not mentioned"},
+              {"ja": "説明文に記載なし", "en": "Not mentioned"},
+              {"ja": "あり", "en": "Yes"},
+              {"ja": "ワンデーの枚数を管理", "en": "Counts daily lenses"}
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {"ja": "1本ずつ見ていく", "en": "Each app, one by one"},
+      "blocks": [
+        {"type": "app", "id": "6779314854"},
+        {"type": "p", "text": {
+          "ja": "開封日を入れると交換日を数えて、3日前と前日と当日に知らせます。期限を過ぎたら、交換したと記録するまで毎日鳴ります。目のことなので、ちょっとしつこくしてあります。",
+          "en": "Enter the day you opened a lens and it counts to the replacement date, then notifies you 3 days before, the day before, and on the day. Once the date passes, it keeps notifying you every day until you log the swap. It's your eyes, so I made it a little pushy on purpose."
+        }},
+        {"type": "p", "text": {
+          "ja": "買い置きの箱の数を入れておけば、残りが少なくなったときにも知らせます。つけ心地を記録すると、何日目から快適さが落ちるかがグラフで見えます。",
+          "en": "If you enter how many spare boxes you have, it also tells you when you're running low. Log how comfortable each day feels, and a graph shows the day your lenses start to feel worse."
+        }},
+        {"type": "p", "text": {
+          "ja": "無料だとレンズは1種類までで、期限の通知と買い置きは無料で使えます。左右で別の交換日を管理するのはプレミアムです。iPhone専用で、Android版はありません。",
+          "en": "The free version handles one lens type, and the due-date notifications and spare stock are free. Tracking separate dates for each eye is a Premium feature. It's iPhone only, with no Android version."
+        }},
+        {"type": "app", "id": "1538614122"},
+        {"type": "p", "text": {
+          "ja": "評価が4,085件もあって、この中ではいちばん使われています。強いのはウィジェットです。ホーム画面やロック画面に残り日数が出て、レンズを替えたらウィジェットのボタンで開始日を直せます。",
+          "en": "With 4,085 ratings, this is by far the most used of the four. Its strength is widgets. The days left show up on your Home Screen and Lock Screen, and when you swap lenses you can reset the start date with a button right on the widget."
+        }},
+        {"type": "p", "text": {
+          "ja": "通知は前日か最終日に1回です。ワンデー、2week、マンスリーを何本でも登録できて、在庫や度数、処方箋の期限もメモできます。基本の機能は全部無料で、課金すると広告が消えます。",
+          "en": "It notifies you once, either the day before or on the last day. You can register any number of daily, two-week, and monthly lenses, and keep notes on stock, prescription, and when your prescription expires. Every core feature is free, and a purchase removes the ads."
+        }},
+        {"type": "app", "id": "6470110511"},
+        {"type": "p", "text": {
+          "ja": "左右で別の交換日を無料で管理できます。1week、2week、1monthに対応していて、Google PlayにAndroid版もあります。",
+          "en": "You can track separate dates for each eye for free. It supports one-week, two-week, and one-month lenses, and there's also an Android version on Google Play."
+        }},
+        {"type": "p", "text": {
+          "ja": "3日前からの通知と、期限を過ぎてからの毎日の通知は、プレミアムの交換忘れ防止モードに入っています。",
+          "en": "Notifications from 3 days before, and daily notifications after the date has passed, are part of its Premium mode for people who keep forgetting."
+        }},
+        {"type": "app", "id": "6756917635"},
+        {"type": "p", "text": {
+          "ja": "右目と左目を分けて記録できて、2種類のレンズを併用していてもそれぞれの交換日を管理できます。ワンデーは使った枚数から在庫を数えてくれます。",
+          "en": "You can record the right and left eye separately, and keep separate schedules if you use two kinds of lenses. For daily lenses, it counts down your stock from the number you've used."
+        }},
+        {"type": "p", "text": {
+          "ja": "一部の機能は月額か年額のサブスクリプションです。どの機能が有料なのかは、説明文には書かれていませんでした。",
+          "en": "Some features need a monthly or yearly subscription. The description doesn't say which ones."
+        }}
+      ]
+    },
+    {
+      "heading": {"ja": "アプリを入れたくないなら", "en": "If you'd rather not install an app"},
+      "blocks": [
+        {"type": "p", "text": {
+          "ja": "iPhoneに最初から入っているリマインダーでもできます。交換する日にリマインダーを作って、繰り返しをカスタムで2週間ごとにするだけです。",
+          "en": "The Reminders app that comes with your iPhone can do it. Create a reminder on your replacement day and set it to repeat every 2 weeks with a custom repeat."
+        }},
+        {"type": "p", "text": {
+          "ja": "ただ、交換が1日ずれたときは、次の日付を自分で直すことになります。開封日から数え直してくれるのが、専用のアプリのいいところですね。",
+          "en": "The catch is that if you swap a day late, you have to fix the next date yourself. Counting again from the day you actually opened the lens is what the dedicated apps are good at."
+        }}
+      ]
+    },
+    {
+      "heading": {"ja": "どれを選ぶか", "en": "Which one to pick"},
+      "blocks": [
+        {"type": "list", "items": [
+          {"ja": "ホーム画面で残り日数が見えれば十分なら、コンタクトレンズ交換リマインダー", "en": "If seeing the days left on your Home Screen is enough, Contact Lens Reminder - Widget"},
+          {"ja": "左右別を無料で使いたい人や、Androidも使う人は、Lens Manager", "en": "If you want separate left and right dates for free, or you also use Android, Lens Manager"},
+          {"ja": "期限を過ぎたら毎日鳴らしてほしい、買い置きも一緒に見たいなら、LensLog", "en": "If you want a reminder every day after the date until you swap, plus your spare stock in one place, LensLog"}
+        ]}
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": {"ja": "無料で使えますか？", "en": "Are they free?"},
+      "a": {"ja": "4本とも無料で入れられます。広告を消したり、機能を増やしたりするところが有料です。", "en": "All four are free to download. Removing ads or unlocking extra features is what costs money."}
+    },
+    {
+      "q": {"ja": "Androidで使えるのはどれですか？", "en": "Which one works on Android?"},
+      "a": {"ja": "この4本の中では、Lens ManagerがGoogle Playにもあります。LensLogはiPhone専用です。", "en": "Of these four, Lens Manager is also on Google Play. LensLog is iPhone only."}
+    },
+    {
+      "q": {"ja": "ワンデーでも入れる意味はありますか？", "en": "Is there any point if I wear daily lenses?"},
+      "a": {"ja": "交換日は要らないので、買い置きの数を見たい人向けです。LensLog、コンタクトレンズ交換リマインダー、コンタクト交換管理の3本に在庫を数える機能があります。", "en": "You don't need a replacement date, so it's for keeping an eye on your spare stock. LensLog, Contact Lens Reminder - Widget, and LensCycle all track stock."}
+    },
+    {
+      "q": {"ja": "交換日を過ぎたレンズは使ってもいいですか？", "en": "Can I keep wearing lenses past the replacement date?"},
+      "a": {"ja": "どのアプリも出しているのは目安の日付です。使っていいかどうかは、眼科で聞いてください。", "en": "Every one of these apps only shows a guideline date. Whether it's okay to keep wearing them is a question for your eye doctor."}
+    }
+  ],
+  "closing": {
+    "ja": "LensLogの評価はまだ1件なので、使ってみた人の声を待ってます🙏",
+    "en": "LensLog only has one rating so far, so I'd love to hear from anyone who tries it 🙏"
+  },
+  "notes": {
+    "ja": "各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。レンズをつける時間や交換のサイクルは、眼科の指示に従ってください。",
+    "en": "Features and rating counts were checked against each app's App Store description on November 15, 2026, and may change with updates. Follow your eye doctor's instructions for how long to wear your lenses and when to replace them."
+  }
+}

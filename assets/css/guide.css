@@ -1,0 +1,131 @@
+/* 検索される問いに答える記事（scripts/build_guides.py が作る）だけで使う部品 */
+
+.guide img { max-width: 100%; height: auto; }
+/* blog.css の .post-content img は本文の写真用に上下へ大きな余白を付けるので、カードと書いた人の欄では外す */
+.guide .guide-app img, .guide .guide-byline img { margin: 0; }
+.guide .guide-app .guide-app-badge { border-radius: 0; }
+
+.guide-illustration { max-width: 760px; margin: 0 auto 48px; padding: 0 16px; }
+
+/* 先に答え。検索から来た人も、AI の答えの引用元も、まずここを読む */
+.guide-tldr {
+  background: var(--color-surface);
+  border: 2px solid var(--color-ink);
+  box-shadow: 6px 6px 0 var(--color-ink);
+  border-radius: var(--radius-lg);
+  padding: 20px 24px;
+  margin: 0 0 32px;
+}
+.guide-tldr p { margin: 0; }
+.guide .guide-tldr .guide-tldr-label {
+  font-family: var(--font-accent);
+  font-style: italic;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  color: var(--color-secondary);
+  margin-bottom: 6px;
+}
+
+.guide-byline {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 0;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: 24px;
+}
+.guide-byline .guide-byline-face {
+  width: 72px;
+  height: 72px;
+  flex-shrink: 0;
+  object-fit: cover;
+  object-position: 50% 15%;
+  border: 2px solid var(--color-ink);
+  border-radius: 50%;
+  background: var(--color-surface);
+}
+.guide .guide-byline p { margin: 0; line-height: 1.6; }
+.guide-byline-name { font-weight: 700; }
+.guide-byline-bio, .guide-byline-date { font-size: var(--font-size-sm); color: var(--color-secondary); }
+
+.guide .guide-disclosure {
+  background: var(--color-surface-2);
+  border-left: 4px solid var(--color-ink);
+  border-radius: 0 8px 8px 0;
+  padding: 14px 18px;
+  font-size: var(--font-size-sm);
+}
+
+/* 比べる表。スマホでは列が入りきらないので、表だけ横に送れるようにする */
+.guide-table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 0 0 32px;
+  border: 2px solid var(--color-ink);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+}
+.guide-table { width: 100%; min-width: 640px; border-collapse: collapse; font-size: var(--font-size-sm); line-height: 1.5; }
+.guide-table th, .guide-table td { padding: 10px 12px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--color-border); }
+.guide-table thead th { background: var(--color-surface-2); font-weight: 700; border-bottom: 2px solid var(--color-ink); }
+.guide-table tbody th { font-weight: 700; }
+.guide-table tbody tr:last-child th, .guide-table tbody tr:last-child td { border-bottom: none; }
+
+.guide-app {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  background: var(--color-surface);
+  border: 2px solid var(--color-ink);
+  border-radius: var(--radius-lg);
+  padding: 16px;
+  margin: 40px 0 20px;
+}
+.guide-app--own { box-shadow: 6px 6px 0 var(--neon-purple); }
+.guide-app .guide-app-icon { width: 72px; height: 72px; flex-shrink: 0; border-radius: 16px; border: 1px solid var(--color-border); }
+.guide-app-body { min-width: 0; }
+.guide .guide-app h3.guide-app-name { margin: 0 0 4px; font-size: var(--font-size-lg); font-weight: 700; line-height: 1.4; }
+.guide .guide-app p.guide-app-meta { margin: 0 0 10px; font-size: var(--font-size-sm); color: var(--color-secondary); }
+.guide-app-own {
+  display: inline-block;
+  background: var(--neon-purple);
+  color: #fff;
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  padding: 2px 10px;
+  border-radius: 999px;
+  margin-bottom: 6px;
+}
+.guide-app-links { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+.guide-app .guide-app-badge { width: auto; height: 40px; display: block; }
+.guide .guide-app-android { font-size: var(--font-size-sm); }
+.guide a.guide-app-store-text {
+  display: inline-block;
+  background: var(--color-ink);
+  color: #fff;
+  text-decoration: none;
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  line-height: 1;
+  padding: 12px 16px;
+  border-radius: 8px;
+}
+
+.guide-faq { margin: 0 0 32px; }
+.guide-faq dt { font-weight: 700; margin-top: 20px; }
+.guide-faq dd { margin: 6px 0 0; }
+
+.guide-notes {
+  margin-top: 40px;
+  font-size: 13px;
+  line-height: 1.8;
+  color: var(--color-secondary);
+}
+
+@media (max-width: 600px) {
+  .guide-app { gap: 12px; padding: 14px; }
+  .guide-app .guide-app-icon { width: 56px; height: 56px; border-radius: 12px; }
+  .guide-tldr { padding: 16px 18px; box-shadow: 4px 4px 0 var(--color-ink); }
+}
