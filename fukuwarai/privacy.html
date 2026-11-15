@@ -51,11 +51,15 @@
 <table>
 <tr><th>ゲームの設定</th><td>えらんだ顔・おきかた</td></tr>
 <tr><th>遊んでいる途中のゲーム</th><td>できた顔（置いた物の場所と点。アプリを閉じても続きから遊べるように）</td></tr>
+<tr><th>これまでの かお</th><td>できた顔・日づけ・点・AI の感想（あとから見返せるように。アプリの中で1つずつ消せます）</td></tr>
 </table>
-<p>これらは開発者のサーバーへ送られません。ゲームをおわってホームにもどると、途中のゲームは消えます。アプリを削除すると、すべて消えます。</p>
+<p>これらは開発者のサーバーへ送られません。ゲームをおわってホームにもどると、途中のゲームは消えます。「これまでの かお」は、アプリの中で消すまで残ります。アプリを削除すると、すべて消えます。</p>
+
+<h2>AI の採点と感想について</h2>
+<p>Apple Intelligence が使える iPhone では、できた顔の絵と、物を置いた場所の説明を、iPhone の中で動く Apple のモデルに渡して、点と感想を作ります。この処理は iPhone の中だけで行われ、開発者にも、ほかのサーバーにも送られません。</p>
 
 <h2>3. 写真への保存</h2>
-<p>「写真に保存」を押したときだけ、できた顔の絵を写真に追加します。そのときに、写真への追加の許可を尋ねます。写真を読み取ることはありません。</p>
+<p>「保存」「写真に保存」を押したときだけ、できた顔の絵を写真に追加します。「共有」を押したときは、あなたが選んだ相手やアプリに、できた顔の絵を渡します。そのときに、写真への追加の許可を尋ねます。写真を読み取ることはありません。</p>
 
 <h2>4. カメラ（iPhone Duo を開いて遊ぶときだけ）</h2>
 <p>iPhone Duo を開いてゲームをしているあいだ、置いている顔を外がわの画面に表示するために、カメラを使います。外がわの画面に表示するための仕組みが、カメラが動いているあいだだけ使えるものだからです。はじめて使うときに、カメラの許可を尋ねます。遊んでいる画面の「やめる」で止められます。</p>
@@ -91,7 +95,8 @@
 <h2>1. Provider</h2>
 <table><tr><th>Provider</th><td>Ryo Tsuzukihashi (independent developer / TsuzuKit)</td></tr><tr><th>App</th><td>Fukuwarai (ふくわらい)</td></tr><tr><th>Contact</th><td>ryo.tsuzukihashi@tsuzukit.com</td></tr></table>
 <h2>2. Data kept on your device only</h2>
-<p>Game settings and the game in progress (the faces you made and their scores). They are never sent to the developer and are deleted when you finish the game or delete the app.</p>
+<p>Game settings, the game in progress, and the faces you made (with their dates, scores and AI comments). They are never sent to the developer. The game in progress is deleted when you finish it; the faces you made stay on your iPhone until you delete them in the app or delete the app.</p>
+<p>On iPhones with Apple Intelligence, an image of the finished face and a short description of where the pieces were placed are given to Apple's on-device model to create a score and a short comment. This happens entirely on your iPhone; nothing is sent to the developer or to any server.</p>
 <h2>3. Saving to Photos</h2>
 <p>Faces are added to Photos only when you tap Save. The app asks for add-only access and never reads your photos.</p>
 <h2>4. Camera (iPhone Duo, only while playing with it open)</h2>
