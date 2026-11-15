@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/js/lang.js"></script>
+    <!-- このページは scripts/build_guides.py が docs/guides/mood-ups-and-downs-tracker-apps.json から作る。直すのは JSON のほう -->
+    <title>気分の波を記録するアプリ4選。無料でどこまで見られるかで比べる - Blog | Ryo Tsuzukihashi</title>
+    <meta name="description" content="なんとなく元気が出ない日と元気な日の波を記録するアプリを4本比べました。記録のしかた、波の見え方、無料で見られるもの、データの置き場所をまとめています。Kimochiの作者が書いています。">
+    <meta name="title-en" content="4 Apps for Tracking the Ups and Downs of Your Mood, Compared by What&#x27;s Free - Blog | Ryo Tsuzukihashi">
+    <meta name="description-en" content="I compared four iPhone apps for logging the ups and downs of your mood: how you log, how the pattern is shown, what&#x27;s free, and where your data lives. Written by the maker of Kimochi.">
+    <link rel="canonical" href="https://tsuzukit.com/blog/posts/mood-ups-and-downs-tracker-apps.html">
+
+    <!-- OGP -->
+    <meta property="og:title" content="気分の波を記録するアプリ4選。無料でどこまで見られるかで比べる">
+    <meta property="og:description" content="なんとなく元気が出ない日と元気な日の波を記録するアプリを4本比べました。記録のしかた、波の見え方、無料で見られるもの、データの置き場所をまとめています。Kimochiの作者が書いています。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://tsuzukit.com/blog/posts/mood-ups-and-downs-tracker-apps.html">
+    <meta property="og:image" content="https://tsuzukit.com/assets/images/posts/mood-ups-and-downs-tracker-apps.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://tsuzukit.com/assets/images/posts/mood-ups-and-downs-tracker-apps.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-dark-32x32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-dark-16x16.png" media="(prefers-color-scheme: dark)">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERPQ1EGLH');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8240751277462688"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
+    <link rel="stylesheet" href="/assets/css/guide.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "気分の波を記録するアプリ4選。無料でどこまで見られるかで比べる",
+      "description": "なんとなく元気が出ない日と元気な日の波を記録するアプリを4本比べました。記録のしかた、波の見え方、無料で見られるもの、データの置き場所をまとめています。Kimochiの作者が書いています。",
+      "image": "https://tsuzukit.com/assets/images/posts/mood-ups-and-downs-tracker-apps.webp",
+      "datePublished": "2026-11-15",
+      "dateModified": "2026-11-15",
+      "inLanguage": "ja",
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "mainEntityOfPage": "https://tsuzukit.com/blog/posts/mood-ups-and-downs-tracker-apps.html",
+      "about": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "Kimochi かわいい気分日記",
+          "url": "https://apps.apple.com/jp/app/id6762499180",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "デイリオ日記：気分・習慣・毎日を簡単に記録できる日記帳",
+          "url": "https://apps.apple.com/jp/app/id1194023242",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "波きぶん",
+          "url": "https://apps.apple.com/jp/app/id6760540305",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "気分の波 - ウィジェット気分記録グラフ",
+          "url": "https://apps.apple.com/jp/app/id6787498606",
+          "operatingSystem": "iOS"
+        }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Kimochi かわいい気分日記",
+      "operatingSystem": "iOS",
+      "applicationCategory": "HealthApplication",
+      "url": "https://apps.apple.com/jp/app/id6762499180",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "気分の落ち込みが続くときも、アプリで大丈夫ですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "4本とも、記録して振り返るためのアプリで、診断や治療はしません。つらい状態が続くときは、医師や専門家に相談してください。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "無料で使えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "4本とも無料で入れて、無料で記録できます。違うのは見返すところで、波きぶんはカレンダーと基本の統計まで無料、Kimochiはカレンダーと分析がProです。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "記録が人に見られないか心配です",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Kimochi、波きぶん、気分の波は、記録が端末の中だけに保存されると書かれています。ロックをかけたいなら、デイリオ日記と波きぶんにPINやパスコードのロックがあります。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tsuzukit.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://tsuzukit.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "困りごとから選ぶアプリ",
+          "item": "https://tsuzukit.com/blog/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "気分の波を記録するアプリ4選。無料でどこまで見られるかで比べる",
+          "item": "https://tsuzukit.com/blog/posts/mood-ups-and-downs-tracker-apps.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">TsuzuKit</a>
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/portfolio/" class="nav-link">Portfolio</a>
+                <a href="/blog/" class="nav-link active">Blog</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post -->
+    <article class="blog-post">
+        <header class="post-header">
+            <div class="post-meta">
+                <span class="post-date">2026.11.15</span>
+                <span class="post-category"><span class="i18n-ja">アプリの選び方</span><span class="i18n-en">App guides</span></span>
+                <span class="post-reading-time"><span class="i18n-ja">4分で読める</span><span class="i18n-en">4 min read</span></span>
+            </div>
+            <h1 class="post-title"><span class="i18n-ja">気分の波を記録するアプリ4選。無料でどこまで見られるかで比べる</span><span class="i18n-en">4 Apps for Tracking the Ups and Downs of Your Mood, Compared by What&#x27;s Free</span></h1>
+        </header>
+        <figure class="post-illustration guide-illustration"><img src="/assets/images/posts/mood-ups-and-downs-tracker-apps.webp" width="1200" height="800" alt="夜の窓辺で膝を抱え、スマホに浮かぶ波の線を眺めるキャラクター" data-en-alt="The character sitting by a night window, hugging their knees and looking at a gentle wave line on the phone" fetchpriority="high"></figure>
+
+        <div class="post-content guide i18n-ja">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">先に答え</p>
+                <p>無料のまま波をグラフで見たいなら、カレンダーと基本の統計が無料の波きぶん。いちばん使われているのは評価3,045件のデイリオ日記です。記録はかわいいキャラと一緒に気軽に続けて、傾向の分析はあとから足したいなら、僕が作ったKimochiも見てみてください。</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">書いた人 <a href="https://tsuzukit.com/about/">續橋 涼</a>（@tsuzuki817）</p>
+                    <p class="guide-byline-bio">2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。Kimochiの作者です。</p>
+                    <p class="guide-byline-date">公開 <time datetime="2026-11-15">2026.11.15</time> · 更新 <time datetime="2026-11-15">2026.11.15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">この記事は、Kimochiを作った僕が書いています。ほかの3本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。</p>
+            <h2>4本をざっくり比べる</h2>
+            <p>記録はどれも、いくつかの段階から今の気分を選ぶだけです。違いが出るのは、たまった記録を波として見られるのが無料か有料かです。</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">アプリ</th><th scope="col">評価の件数</th><th scope="col">記録のしかた</th><th scope="col">波の見え方</th><th scope="col">無料で見られるもの</th><th scope="col">データの置き場所</th></tr></thead><tbody><tr><th scope="row">Kimochi（僕のアプリ）</th><td>0件</td><td>5段階をタップ。タグとひとことは任意</td><td>時間帯、曜日、タグ別の傾向とカレンダー（Pro）</td><td>最近の7件と連続日数</td><td>端末の中だけ</td></tr><tr><th scope="row">デイリオ日記</th><td>3,045件</td><td>気分を選んで、した活動を足す</td><td>週、月、年のグラフ、1年を色で並べる表示</td><td>説明文に記載なし</td><td>スマホの中。クラウドにバックアップも</td></tr><tr><th scope="row">波きぶん</th><td>8件</td><td>1日に何回でも、5段階</td><td>カレンダーの上の波形グラフ、タグの統計</td><td>記録、カレンダー、基本の統計</td><td>端末の中</td></tr><tr><th scope="row">気分の波</th><td>0件</td><td>ホーム画面のウィジェットから1タップ</td><td>直近7日のグラフ。時間帯や曜日の傾向はPro</td><td>直近7日のグラフ</td><td>完全オフライン</td></tr></tbody></table></div>
+            <h2>1本ずつ見ていく</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/42/ec/8c/42ec8c9a-7584-abc0-9074-6a1a4552b57c/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">僕が作ったアプリ</span>
+                    <h3 class="guide-app-name">Kimochi かわいい気分日記</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · App Storeの評価 0件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6762499180" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>白いおもちの妖精モチと一緒につける気分日記です。5段階の気分をタップすると、モチが同じ表情と色に変わります。仕事、家族、睡眠のようなタグとひとことは、書きたいときだけで大丈夫です。</p>
+            <p>記録は無料で何回でもできて、ホームには最近の7件と、続いた日数が出ます。毎日決めた時刻に通知で声をかけてもらうこともできます。</p>
+            <p>正直に書くと、気分の波を見るカレンダーと、時間帯、曜日、タグ別の分析はProです。モチの着せ替えは無料だとリボンだけで、はっぱ、かんむり、おほしさまとCSVの書き出しもProです。記録は端末の中だけに保存されます。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e4/bf/42/e4bf4274-5517-698d-f973-37da72e78cdf/AppIcon-green-new-0-0-1x_U007epad-0-1-0-0-sRGB-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">デイリオ日記：気分・習慣・毎日を簡単に記録できる日記帳</h3>
+                    <p class="guide-app-meta">Relaxio s.r.o. · App Storeの評価 3,045件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id1194023242" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>評価が3,045件あって、この中ではいちばん使われています。気分を選んで、その日にした活動を足すだけで日記になります。</p>
+            <p>強いのはグラフです。週、月、年のグラフや、1年を色で並べる表示で、どの活動の日に気分が上がるかを見られます。目標や習慣の記録にも使えて、PINや生体認証でロックもできます。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/0d/4d/5f/0d4d5f4b-30f1-9ef8-06b7-34a5f95fc16b/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">波きぶん</h3>
+                    <p class="guide-app-meta">Masahiro Akebi · App Storeの評価 8件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6760540305" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>1日に何回でも記録できるのが特徴です。朝はすっきり、昼はもやもや、のような1日の中の波まで残せます。波のキャラクターのなみちゃんが、気分に合わせて変わります。</p>
+            <p>記録、カレンダー、基本の統計は完全無料と書かれています。無料のまま波をグラフで見たいなら、この4本の中ではいちばん向いています。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a2/2d/93/a22d9380-bc25-8bdd-adfe-c0a56755f628/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">気分の波 - ウィジェット気分記録グラフ</h3>
+                    <p class="guide-app-meta">Shuhei Yamamoto · App Storeの評価 0件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6787498606" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>アプリを開かずに、ホーム画面のウィジェットから1タップで記録します。iOS 18ならコントロールセンターやアクションボタンからも記録できます。</p>
+            <p>無料で見られるのは直近7日のグラフです。行動と気分の関係や、時間帯と曜日の傾向は、買い切りのProです。</p>
+            <h2>アプリを入れたくないなら</h2>
+            <p>手帳にムードトラッカーを書く方法もあります。1日1マス、その日の気分の色で塗るだけです。</p>
+            <p>iPhoneのヘルスケアアプリにも、気分を記録する機能があります。最初から入っているので、まずはこちらで続くか試すのも手ですね。</p>
+            <h2>どれを選ぶか</h2>
+            <ul class="guide-list"><li>無料のまま波をグラフで見たい、1日に何回も記録したいなら、波きぶん</li><li>活動や習慣と一緒に記録して、1年分を見返したいなら、デイリオ日記</li><li>アプリを開くのが面倒で続かなかったなら、気分の波</li><li>かわいいキャラと一緒に、気軽に続けるところから始めたいなら、Kimochi</li></ul>
+            <h2>よくある質問</h2>
+            <dl class="guide-faq">
+                <dt>気分の落ち込みが続くときも、アプリで大丈夫ですか？</dt><dd>4本とも、記録して振り返るためのアプリで、診断や治療はしません。つらい状態が続くときは、医師や専門家に相談してください。</dd>
+                <dt>無料で使えますか？</dt><dd>4本とも無料で入れて、無料で記録できます。違うのは見返すところで、波きぶんはカレンダーと基本の統計まで無料、Kimochiはカレンダーと分析がProです。</dd>
+                <dt>記録が人に見られないか心配です</dt><dd>Kimochi、波きぶん、気分の波は、記録が端末の中だけに保存されると書かれています。ロックをかけたいなら、デイリオ日記と波きぶんにPINやパスコードのロックがあります。</dd>
+            </dl>
+            <p>Kimochiはまだ評価が0件です。モチに着せたい服があったら、レビューで教えてください🙏</p>
+            <div class="guide-notes">各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。Kimochiの機能はアプリのコードで確かめました。アップデートで変わることがあります。どのアプリも医療の代わりにはなりません。つらい状態が続くときは、医師や専門家に相談してください。</div>
+        </div>
+
+        <div class="post-content guide i18n-en">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">Short answer</p>
+                <p>If you want to see the pattern in a graph without paying, Mood Wave&#x27;s calendar and basic stats are free. The most used is Daylio with 3,045 ratings. If you want to keep logging easy with a cute character and add pattern analysis later, take a look at Kimochi, which I made.</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">Written by <a href="https://tsuzukit.com/about/">Ryo Tsuzukihashi</a> (@tsuzuki817)</p>
+                    <p class="guide-byline-bio">I&#x27;ve been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made Kimochi.</p>
+                    <p class="guide-byline-date">Published <time datetime="2026-11-15">2026-11-15</time> · Updated <time datetime="2026-11-15">2026-11-15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">I made Kimochi, and I wrote this article. The other three apps are by developers I don&#x27;t know, and I haven&#x27;t received money or anything else from them. Everything compared here comes from each app&#x27;s App Store description and rating count as of November 15, 2026.</p>
+            <h2>The four apps at a glance</h2>
+            <p>In all four, logging means picking your current mood from a few levels. Where they differ is whether seeing your entries as a pattern is free or paid.</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">App</th><th scope="col">Ratings</th><th scope="col">How you log</th><th scope="col">How the pattern shows</th><th scope="col">Free to view</th><th scope="col">Where data lives</th></tr></thead><tbody><tr><th scope="row">Kimochi (my app)</th><td>0</td><td>Tap one of 5 levels. Tags and a note are optional</td><td>By time of day, weekday, and tag, plus a calendar (Pro)</td><td>Your last 7 entries and your streak</td><td>On your phone only</td></tr><tr><th scope="row">Daylio</th><td>3,045</td><td>Pick a mood and add what you did</td><td>Weekly, monthly, and yearly charts, plus a year shown in colored squares</td><td>Not mentioned</td><td>On your phone, with optional cloud backup</td></tr><tr><th scope="row">Mood Wave</th><td>8</td><td>5 levels, as many times a day as you like</td><td>Wave graph on a calendar, stats by tag</td><td>Logging, calendar, basic stats</td><td>On your phone</td></tr><tr><th scope="row">Mood Waves</th><td>0</td><td>One tap from a Home Screen widget</td><td>A 7-day graph. Time of day and weekday patterns are Pro</td><td>The 7-day graph</td><td>Fully offline</td></tr></tbody></table></div>
+            <h2>Each app, one by one</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/42/ec/8c/42ec8c9a-7584-abc0-9074-6a1a4552b57c/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">I made this</span>
+                    <h3 class="guide-app-name">Kimochi - Cute Mood Diary</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · 0 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6762499180" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>It&#x27;s a mood diary you keep with Mochi, a little white rice-cake fairy. Tap one of 5 moods, and Mochi changes to the same face and color. Tags like work, family, or sleep, and a short note, are only there if you want them.</p>
+            <p>Logging is free with no limit, and the home screen shows your last 7 entries and how many days in a row you&#x27;ve logged. You can also get a reminder at the same time each day.</p>
+            <p>To be upfront, the calendar for seeing your ups and downs, and the breakdown by time of day, weekday, and tag, are Pro. The only free outfit for Mochi is the bow. The leaf, crown, and star, plus CSV export, are Pro too. Everything you log stays on your phone.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e4/bf/42/e4bf4274-5517-698d-f973-37da72e78cdf/AppIcon-green-new-0-0-1x_U007epad-0-1-0-0-sRGB-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Daylio Journal - Mood Tracker</h3>
+                    <p class="guide-app-meta">Relaxio s.r.o. · 3,045 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id1194023242" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>With 3,045 ratings, it&#x27;s the most used of the four. Pick a mood, add what you did that day, and that&#x27;s your entry.</p>
+            <p>Its strength is the charts. Weekly, monthly, and yearly graphs, plus a view of the whole year in colored squares, show which activities go with your better days. It also tracks goals and habits, and locks with a PIN or Face ID.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/0d/4d/5f/0d4d5f4b-30f1-9ef8-06b7-34a5f95fc16b/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Mood Wave - Daily Mood Diary</h3>
+                    <p class="guide-app-meta">Masahiro Akebi · 8 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6760540305" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>You can log as many times a day as you like, so it catches the ups and downs within a single day, like clear-headed in the morning and foggy by noon. A wave character called Nami-chan changes with your mood.</p>
+            <p>The description says logging, the calendar, and basic stats are completely free. If you want to see your pattern as a graph without paying, it&#x27;s the best fit of the four.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a2/2d/93/a22d9380-bc25-8bdd-adfe-c0a56755f628/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Mood Waves: Widget Mood Log and Graph</h3>
+                    <p class="guide-app-meta">Shuhei Yamamoto · 0 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6787498606" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>You log with one tap from a Home Screen widget without opening the app. On iOS 18, you can also log from Control Center or the Action button.</p>
+            <p>For free you get a 7-day graph. How your activities relate to your mood and your time-of-day and weekday patterns are part of a one-time Pro purchase.</p>
+            <h2>If you&#x27;d rather not install an app</h2>
+            <p>You can also keep a mood tracker in a paper planner. One square per day, colored to match how you felt.</p>
+            <p>The Health app on your iPhone also has a feature for logging your state of mind. It&#x27;s already there, so it&#x27;s a fine way to see whether the habit sticks.</p>
+            <h2>Which one to pick</h2>
+            <ul class="guide-list"><li>If you want to see the pattern for free and log several times a day, Mood Wave</li><li>If you want to log activities and habits too and look back over a whole year, Daylio</li><li>If opening an app is what made you quit before, Mood Waves</li><li>If you want to start by keeping it light with a cute character, Kimochi</li></ul>
+            <h2>FAQ</h2>
+            <dl class="guide-faq">
+                <dt>Is an app enough if my low moods keep going?</dt><dd>All four are for logging and looking back. None of them diagnose or treat anything. If you&#x27;ve been feeling low for a while, please talk to a doctor or another professional.</dd>
+                <dt>Are they free?</dt><dd>All four are free to download and to log in. The difference is looking back. Mood Wave includes the calendar and basic stats for free, while Kimochi&#x27;s calendar and analysis are Pro.</dd>
+                <dt>I&#x27;m worried someone might see my entries</dt><dd>Kimochi, Mood Wave, and Mood Waves all say entries stay on your phone. If you want a lock, Daylio and Mood Wave offer a PIN or passcode.</dd>
+            </dl>
+            <p>Kimochi doesn&#x27;t have any ratings yet. If there&#x27;s an outfit you&#x27;d like Mochi to wear, tell me in a review 🙏</p>
+            <div class="guide-notes">Features and rating counts were checked against each app&#x27;s App Store description on November 15, 2026. Kimochi&#x27;s features were checked against its source code. They may change with updates. None of these apps replaces medical care. If you&#x27;ve been feeling low for a while, please talk to a doctor or another professional.</div>
+        </div>
+
+        <nav class="post-navigation">
+            <img class="tk-char tk-char--post" src="/assets/images/character-hang.png" alt="" width="381" height="208">
+            <a href="/blog/guides/" class="nav-link-wrapper"><span>&larr; <span class="i18n-ja">困りごとから選ぶアプリの一覧へ</span><span class="i18n-en">All guides: apps for everyday problems</span></span></a>
+        </nav>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
+                    <p class="footer-description"><span class="i18n-ja">誰も作らないものを、まじめに作る</span><span class="i18n-en">I make things nobody else would, and I make them seriously</span></p>
+                </div>
+                <div class="footer-nav">
+                    <a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
+                    <a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
+                    <a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
+                    <a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ryo Tsuzukihashi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

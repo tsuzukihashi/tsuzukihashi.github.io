@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/js/lang.js"></script>
+    <!-- このページは scripts/build_guides.py が docs/guides/apple-music-picture-in-picture.json から作る。直すのは JSON のほう -->
+    <title>Apple Musicの曲をピクチャインピクチャの小窓で流すには - Blog | Ryo Tsuzukihashi</title>
+    <meta name="description" content="ミュージックAppの曲を、ピクチャインピクチャの小窓で流す方法をまとめました。標準の機能でできることと、PIPMPでできることを書いています。PIPMPの作者が書いています。">
+    <meta name="title-en" content="How to Play Your Apple Music Songs in a Picture in Picture Window - Blog | Ryo Tsuzukihashi">
+    <meta name="description-en" content="How to play songs from the iPhone Music app in a small Picture in Picture window: what the built-in features can do, and what PIPMP adds. Written by the maker of PIPMP.">
+    <link rel="canonical" href="https://tsuzukit.com/blog/posts/apple-music-picture-in-picture.html">
+
+    <!-- OGP -->
+    <meta property="og:title" content="Apple Musicの曲をピクチャインピクチャの小窓で流すには">
+    <meta property="og:description" content="ミュージックAppの曲を、ピクチャインピクチャの小窓で流す方法をまとめました。標準の機能でできることと、PIPMPでできることを書いています。PIPMPの作者が書いています。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://tsuzukit.com/blog/posts/apple-music-picture-in-picture.html">
+    <meta property="og:image" content="https://tsuzukit.com/assets/images/posts/apple-music-picture-in-picture.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://tsuzukit.com/assets/images/posts/apple-music-picture-in-picture.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-dark-32x32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-dark-16x16.png" media="(prefers-color-scheme: dark)">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERPQ1EGLH');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8240751277462688"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
+    <link rel="stylesheet" href="/assets/css/guide.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Apple Musicの曲をピクチャインピクチャの小窓で流すには",
+      "description": "ミュージックAppの曲を、ピクチャインピクチャの小窓で流す方法をまとめました。標準の機能でできることと、PIPMPでできることを書いています。PIPMPの作者が書いています。",
+      "image": "https://tsuzukit.com/assets/images/posts/apple-music-picture-in-picture.webp",
+      "datePublished": "2026-11-15",
+      "dateModified": "2026-11-15",
+      "inLanguage": "ja",
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "mainEntityOfPage": "https://tsuzukit.com/blog/posts/apple-music-picture-in-picture.html",
+      "about": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "PIPMP",
+          "url": "https://apps.apple.com/jp/app/id1612260255",
+          "operatingSystem": "iOS"
+        }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "PIPMP",
+      "operatingSystem": "iOS",
+      "applicationCategory": "MusicApplication",
+      "url": "https://apps.apple.com/jp/app/id1612260255",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "YouTubeの音楽も小窓で流せますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "PIPMPが流すのはミュージックライブラリの曲だけです。YouTubeの動画は流せません。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apple Musicの曲も流せますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ライブラリに追加してある曲なら並びます。Apple Musicの曲を聴けるかどうかは、お使いのApple Musicの契約しだいです。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Androidでも使えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "PIPMPはiPhone向けのアプリで、Android版はありません。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tsuzukit.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://tsuzukit.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "困りごとから選ぶアプリ",
+          "item": "https://tsuzukit.com/blog/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Apple Musicの曲をピクチャインピクチャの小窓で流すには",
+          "item": "https://tsuzukit.com/blog/posts/apple-music-picture-in-picture.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">TsuzuKit</a>
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/portfolio/" class="nav-link">Portfolio</a>
+                <a href="/blog/" class="nav-link active">Blog</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post -->
+    <article class="blog-post">
+        <header class="post-header">
+            <div class="post-meta">
+                <span class="post-date">2026.11.15</span>
+                <span class="post-category"><span class="i18n-ja">アプリの選び方</span><span class="i18n-en">App guides</span></span>
+                <span class="post-reading-time"><span class="i18n-ja">3分で読める</span><span class="i18n-en">3 min read</span></span>
+            </div>
+            <h1 class="post-title"><span class="i18n-ja">Apple Musicの曲をピクチャインピクチャの小窓で流すには</span><span class="i18n-en">How to Play Your Apple Music Songs in a Picture in Picture Window</span></h1>
+        </header>
+        <figure class="post-illustration guide-illustration"><img src="/assets/images/posts/apple-music-picture-in-picture.webp" width="1200" height="800" alt="電車でスマホの地図を見ながら、画面の隅に浮かぶ小さな音楽の窓を操作するキャラクター" data-en-alt="The character on a train looking at a map on their phone while tapping a small music window floating in the corner" fetchpriority="high"></figure>
+
+        <div class="post-content guide i18n-ja">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">先に答え</p>
+                <p>ミュージックAppの再生画面は、ピクチャインピクチャで小さく浮かせられません。操作だけならコントロールセンターやロック画面で足ります。ジャケットと曲名を画面の端に出したまま、ほかのアプリを使いたい人は、僕が作ったPIPMPを見てみてください。</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">書いた人 <a href="https://tsuzukit.com/about/">續橋 涼</a>（@tsuzuki817）</p>
+                    <p class="guide-byline-bio">2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。PIPMPの作者です。</p>
+                    <p class="guide-byline-date">公開 <time datetime="2026-11-15">2026.11.15</time> · 更新 <time datetime="2026-11-15">2026.11.15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">この記事は、PIPMPを作った僕が書いています。ほかのアプリとは比べておらず、だれからもお金はもらっていません。PIPMPの機能はアプリのコードで、評価の件数はApp Storeで確かめました（2026年11月15日時点）。</p>
+            <h2>ミュージックAppだけでできること</h2>
+            <p>ミュージックAppで曲を聴いているときの画面は、動画のようにピクチャインピクチャで小さく浮かせることができません。</p>
+            <p>再生や一時停止、曲送りなら、コントロールセンターやロック画面からできます。Dynamic Islandがある機種なら、そこにも再生中の曲が出ます。操作だけなら、これで足りる人も多いと思います。</p>
+            <p>ほかのアプリを使いながら、ジャケットと曲名をずっと画面の端に出しておきたい。そういうときにアプリの出番です。</p>
+            <h2>PIPMPでできること</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/cf/53/cd/cf53cdb6-bee4-40d9-85bb-a26d43667437/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">僕が作ったアプリ</span>
+                    <h3 class="guide-app-name">PIPMP</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · App Storeの評価 27件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id1612260255" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>PIPMPは、ピクチャインピクチャの小さな窓で曲を流す音楽プレーヤーです。窓は、ほかのアプリを開いても画面の上に残ります。</p>
+            <p>窓には、ジャケット、曲名、アーティスト名、いまの再生位置と曲の長さが出ます。窓の中のボタンで、一時停止と再生、少し先や少し前へ飛ばすことができます。</p>
+            <p>流せるのは、ミュージックライブラリの曲です。ライブラリ、プレイリスト、最近再生した曲から選べて、ライブラリの中を検索することもできます。使うには、ミュージックライブラリへのアクセスを許可します。</p>
+            <p>窓を閉じると、曲も止まります。ずっと流したいときは、窓を画面の端に寄せておくのがいいですね。</p>
+            <p>無料で使えて、アプリの中に広告が出ます。サブスクリプションのサポーターになると、広告が出なくなります。</p>
+            <h2>こんな人に向いています</h2>
+            <ul class="guide-list"><li>ほかのアプリを使いながら、いま流れている曲を目で見ていたい人</li><li>ジャケットを小さく浮かせて、画面の飾りのように楽しみたい人</li><li>操作はコントロールセンターで十分なら、アプリは入れなくても大丈夫です</li></ul>
+            <h2>よくある質問</h2>
+            <dl class="guide-faq">
+                <dt>YouTubeの音楽も小窓で流せますか？</dt><dd>PIPMPが流すのはミュージックライブラリの曲だけです。YouTubeの動画は流せません。</dd>
+                <dt>Apple Musicの曲も流せますか？</dt><dd>ライブラリに追加してある曲なら並びます。Apple Musicの曲を聴けるかどうかは、お使いのApple Musicの契約しだいです。</dd>
+                <dt>Androidでも使えますか？</dt><dd>PIPMPはiPhone向けのアプリで、Android版はありません。</dd>
+            </dl>
+            <p>小窓でどんな曲が流れているのか、PIPMPを使っている人の画面をのぞいてみたいです😊</p>
+            <div class="guide-notes">評価の件数は2026年11月15日にApp Storeで確かめたものです。iPhoneの機能やアプリの中身は、アップデートで変わることがあります。</div>
+        </div>
+
+        <div class="post-content guide i18n-en">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">Short answer</p>
+                <p>The Music app&#x27;s now-playing screen can&#x27;t float in Picture in Picture. If you only need the controls, Control Center and the Lock Screen are enough. If you want the album art and title to stay in the corner while you use other apps, take a look at PIPMP, which I made.</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">Written by <a href="https://tsuzukit.com/about/">Ryo Tsuzukihashi</a> (@tsuzuki817)</p>
+                    <p class="guide-byline-bio">I&#x27;ve been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made PIPMP.</p>
+                    <p class="guide-byline-date">Published <time datetime="2026-11-15">2026-11-15</time> · Updated <time datetime="2026-11-15">2026-11-15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">I made PIPMP, and I wrote this article. It doesn&#x27;t compare other apps, and nobody paid me for it. PIPMP&#x27;s features were checked against its own code, and its rating count against the App Store, as of November 15, 2026.</p>
+            <h2>What the Music app can do on its own</h2>
+            <p>The Music app&#x27;s now-playing screen can&#x27;t float in a small Picture in Picture window the way a video can.</p>
+            <p>Play, pause, and skip are available from Control Center and the Lock Screen. On models with a Dynamic Island, the current song shows up there too. If you only need the controls, that may be enough.</p>
+            <p>An app comes in when you want the album art and song title to stay on the edge of your screen while you use other apps.</p>
+            <h2>What PIPMP does</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/cf/53/cd/cf53cdb6-bee4-40d9-85bb-a26d43667437/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">I made this</span>
+                    <h3 class="guide-app-name">PIPMP</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · 27 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id1612260255" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>PIPMP is a music player that plays songs in a small Picture in Picture window. The window stays on top of your screen when you open other apps.</p>
+            <p>The window shows the album art, song title, artist, and how far into the song you are out of its length. Buttons in the window let you pause and play, and skip a little forward or back.</p>
+            <p>It plays songs from your music library. You can pick from your library, your playlists, or recently played songs, and search within your library. It needs permission to access your music library.</p>
+            <p>Closing the window stops the music too. If you want it to keep playing, slide the window to the edge of the screen instead.</p>
+            <p>It&#x27;s free, with ads in the app. Becoming a Supporter, which is a subscription, turns the ads off.</p>
+            <h2>Who it&#x27;s for</h2>
+            <ul class="guide-list"><li>People who want to keep an eye on what&#x27;s playing while they use other apps</li><li>People who like having the album art floating on screen like a little decoration</li><li>If Control Center is enough for the controls, you don&#x27;t need an app</li></ul>
+            <h2>FAQ</h2>
+            <dl class="guide-faq">
+                <dt>Can it play YouTube music in the small window?</dt><dd>PIPMP only plays songs from your music library. It can&#x27;t play YouTube videos.</dd>
+                <dt>Does it play Apple Music songs?</dt><dd>Songs you&#x27;ve added to your library show up. Whether Apple Music songs play depends on your Apple Music subscription.</dd>
+                <dt>Is it on Android?</dt><dd>PIPMP is an iPhone app, and there is no Android version.</dd>
+            </dl>
+            <p>I&#x27;d love to peek at what&#x27;s playing in people&#x27;s little PIPMP windows 😊</p>
+            <div class="guide-notes">The rating count was checked on the App Store on November 15, 2026. iPhone features and the app itself may change with updates.</div>
+        </div>
+
+        <nav class="post-navigation">
+            <img class="tk-char tk-char--post" src="/assets/images/character-hang.png" alt="" width="381" height="208">
+            <a href="/blog/guides/" class="nav-link-wrapper"><span>&larr; <span class="i18n-ja">困りごとから選ぶアプリの一覧へ</span><span class="i18n-en">All guides: apps for everyday problems</span></span></a>
+        </nav>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
+                    <p class="footer-description"><span class="i18n-ja">誰も作らないものを、まじめに作る</span><span class="i18n-en">I make things nobody else would, and I make them seriously</span></p>
+                </div>
+                <div class="footer-nav">
+                    <a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
+                    <a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
+                    <a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
+                    <a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ryo Tsuzukihashi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

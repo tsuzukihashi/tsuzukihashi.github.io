@@ -1,0 +1,391 @@
+{
+  "slug": "watch-overhaul-reminder-apps",
+  "date_published": "2026-11-15",
+  "date_updated": "2026-11-15",
+  "search_phrase": {
+    "ja": "腕時計 オーバーホール 頻度",
+    "en": "watch service reminder app"
+  },
+  "evidence": "2026-11-15 に Google の検索候補で「腕時計 オーバーホール 頻度」を引くと「機械式」「自動巻き腕時計」付きの3件が出て、「腕時計 オーバーホール 時期」も2件あった。「自動巻き 止まる」は12件で、「止まるまでの時間」「良くない」が入っていた。「腕時計 管理 アプリ」も候補に出た。同じ日に App Store で「時計 オーバーホール」を引くと15本が並び、多くは精度を測るアプリで、オーバーホールの時期を知らせるアプリは評価0〜3件だった。",
+  "title": {
+    "ja": "腕時計のオーバーホール時期を知らせてくれるアプリ3選",
+    "en": "3 Apps That Remind You When Your Watch Is Due for Service"
+  },
+  "description": {
+    "ja": "腕時計のオーバーホールや電池交換の時期を知らせてくれるアプリを3本比べました。周期の決め方、通知の時期、着けていない時計の扱い、無料の範囲の違いをまとめています。WatchKeepの作者が書いています。",
+    "en": "I compared three iPhone apps that remind you when your watch needs an overhaul or a battery change: how they set the interval, when they notify you, watches you haven't worn, and what's free. Written by the maker of WatchKeep."
+  },
+  "excerpt": {
+    "ja": "前にオーバーホールに出したのはいつだったか。周期を数えて知らせてくれる腕時計のアプリを3本比べました。",
+    "en": "When did you last send your watch in for service? Three apps that count the interval and remind you, compared."
+  },
+  "category": {
+    "ja": "アプリの選び方",
+    "en": "App guides"
+  },
+  "reading_minutes": 4,
+  "author": {
+    "name": {
+      "ja": "續橋 涼",
+      "en": "Ryo Tsuzukihashi"
+    },
+    "handle": "tsuzuki817",
+    "bio": {
+      "ja": "2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。WatchKeepの作者です。",
+      "en": "I've been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made WatchKeep."
+    },
+    "url": "https://tsuzukit.com/about/",
+    "same_as": [
+      "https://x.com/tsuzuki817"
+    ]
+  },
+  "tldr": {
+    "ja": "オーバーホールの頻度はムーブメントと時計店の案内で決まるので、決めた周期を覚えておいてもらうのが楽です。精度の変化から時期を判断したいなら時計オーバーホールノート。着けていない時計を呼び戻したいならCALIBRE。止まっているかもしれない1本と、メンテを過ぎた1本を毎日知らせてほしいなら、僕が作ったWatchKeepが合います。",
+    "en": "How often to service a watch depends on the movement and what your watch shop recommends, so it's easiest to let an app remember the interval. If you want to judge timing from changes in accuracy, try Watch Overhaul Note. If you want nudges to wear the watches you've been neglecting, CALIBRE. If you want daily reminders about overdue service and a heads-up when a watch may have stopped, WatchKeep, which I made, fits."
+  },
+  "disclosure": {
+    "ja": "この記事は、WatchKeepを作った僕が書いています。ほかの2本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。",
+    "en": "I made WatchKeep, and I wrote this article. The other two apps are by developers I don't know, and I haven't received money or anything else from them. Everything compared here comes from each app's App Store description and rating count as of November 15, 2026."
+  },
+  "own_app": "6781759617",
+  "app_category": "LifestyleApplication",
+  "apps": [
+    {
+      "id": "6781759617",
+      "name": {
+        "ja": "腕時計コレクション WatchKeep",
+        "en": "WatchKeep: Watch Care"
+      },
+      "short": {
+        "ja": "WatchKeep",
+        "en": "WatchKeep"
+      },
+      "developer": "Ryo Tsudukihashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/07/a8/28/07a82882-098b-c0d5-7065-abb7172970af/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6781759617",
+      "android_url": null,
+      "rating_count": 0
+    },
+    {
+      "id": "6789848324",
+      "name": {
+        "ja": "時計オーバーホールノート - 腕時計の管理に",
+        "en": "Watch Overhaul Note"
+      },
+      "short": {
+        "ja": "時計オーバーホールノート",
+        "en": "Watch Overhaul Note"
+      },
+      "developer": "towa imamoto",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/db/a6/d0/dba6d0a8-01f3-27b5-c00c-d66b71a52455/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6789848324",
+      "android_url": null,
+      "rating_count": 0
+    },
+    {
+      "id": "6771723995",
+      "name": {
+        "ja": "腕時計コレクション管理 CALIBRE",
+        "en": "CALIBRE: Watch Collection Manager"
+      },
+      "short": {
+        "ja": "CALIBRE",
+        "en": "CALIBRE"
+      },
+      "developer": "RYO FUJIMATSU",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b9/c4/db/b9c4db86-b575-5133-0ab5-4c33490bb5cb/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6771723995",
+      "android_url": null,
+      "rating_count": 1
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ja": "3本をざっくり比べる",
+        "en": "The three apps at a glance"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "3本ともオーバーホールの時期を知らせてくれます。違いが出るのは、時期を何から決めるかと、時計の扱いのどこまでを見るかです。",
+            "en": "All three remind you when service is due. The differences are what they base the timing on, and how much of owning a watch they cover."
+          }
+        },
+        {
+          "type": "table",
+          "head": [
+            {
+              "ja": "アプリ",
+              "en": "App"
+            },
+            {
+              "ja": "評価の件数",
+              "en": "Ratings"
+            },
+            {
+              "ja": "周期の決め方",
+              "en": "How the interval is set"
+            },
+            {
+              "ja": "通知の時期",
+              "en": "When it notifies you"
+            },
+            {
+              "ja": "着けていない時計",
+              "en": "Watches you haven't worn"
+            },
+            {
+              "ja": "無料の範囲",
+              "en": "Free version"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ja": "WatchKeep（僕のアプリ）",
+                "en": "WatchKeep (my app)"
+              },
+              {
+                "ja": "0件",
+                "en": "0"
+              },
+              {
+                "ja": "ムーブメントから目安を出す",
+                "en": "Set from the movement type"
+              },
+              {
+                "ja": "2週間前と3日前と当日。過ぎたら毎日",
+                "en": "2 weeks before, 3 days before, and on the day, then daily"
+              },
+              {
+                "ja": "止まってるかもと表示",
+                "en": "Shows a may-have-stopped label"
+              },
+              {
+                "ja": "時計3本まで",
+                "en": "Up to 3 watches"
+              }
+            ],
+            [
+              {
+                "ja": "時計オーバーホールノート",
+                "en": "Watch Overhaul Note"
+              },
+              {
+                "ja": "0件",
+                "en": "0"
+              },
+              {
+                "ja": "2〜10年の周期と、日差の変化",
+                "en": "A 2 to 10 year cycle, plus changes in daily rate"
+              },
+              {
+                "ja": "1か月前と当日",
+                "en": "A month before and on the day"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "時計3本まで",
+                "en": "Up to 3 watches"
+              }
+            ],
+            [
+              {
+                "ja": "CALIBRE",
+                "en": "CALIBRE"
+              },
+              {
+                "ja": "1件",
+                "en": "1"
+              },
+              {
+                "ja": "ムーブメントの種類から目安を出す",
+                "en": "Set from the movement type"
+              },
+              {
+                "ja": "残りの日数で通知。時期は説明文に記載なし",
+                "en": "Notifies with days left, exact timing not mentioned"
+              },
+              {
+                "ja": "着けていない日数を出して、朝に通知",
+                "en": "Shows days unworn and sends a morning nudge"
+              },
+              {
+                "ja": "時計3本まで。通知も無料",
+                "en": "Up to 3 watches, notifications included"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "1本ずつ見ていく",
+        "en": "Each app, one by one"
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "id": "6781759617"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "ムーブメントを選ぶと、メンテの周期が最初に入ります。自動巻きと手巻きは5年ごとのオーバーホール、クォーツは2年ごとの電池交換です。周期は1年から6年の中で直せます。",
+            "en": "Pick the movement and a service interval is filled in for you. Automatic and hand-wound watches start at an overhaul every 5 years, and quartz at a battery change every 2 years. You can change it to anything from 1 to 6 years."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "通知はメンテどきの2週間前と3日前と当日です。過ぎたら、済ませたと記録するまで毎日鳴ります。最後に着けた日から何日たったかも見ていて、自動巻きなら2日、手巻きなら1日を超えると止まってるかもと出ます。",
+            "en": "It notifies you 2 weeks before, 3 days before, and on the day. After that, it reminds you every day until you log the service. It also tracks how long since you last wore each watch, and shows a may-have-stopped label after 2 days for automatics and 1 day for hand-wound watches."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "無料だと時計は3本まで登録できます。ワインダーや金庫、ケースで分けるのと、お手入れの記録はプレミアムです。精度を測る機能はありません。",
+            "en": "The free version holds up to 3 watches. Grouping by winder, safe, or case and keeping a care log are Premium features. It doesn't measure accuracy."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6789848324"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "精度の変化からオーバーホールの時期を考えるアプリです。週に1回、基準の時刻と何秒ずれているかを入れると、日差を計算してグラフにします。ムーブメントごとの目安を超えると、オーバーホールを検討するよう知らせます。",
+            "en": "This app helps you judge service timing from changes in accuracy. Once a week, you enter how many seconds your watch is off from a reference time, and it works out the daily rate and graphs it. If the rate goes past a guideline for the movement, it suggests considering an overhaul."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "前回のオーバーホールの日から、2年から10年の周期で次の目安を出し、1か月前と当日に通知します。オーバーホールや電池交換の履歴を、費用と依頼先つきで残せます。無料だと時計は3本までです。",
+            "en": "It works out the next date from your last overhaul on a 2 to 10 year cycle, and notifies you a month before and on the day. You can keep a history of overhauls and battery changes, with cost and where you sent it. The free version holds up to 3 watches."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6771723995"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "何本も持っている人のための台帳です。何日着けていないかを一覧で出して、朝の通知で呼び戻してくれます。オーバーホールの目安もムーブメントの種類から計算して、残りの日数で知らせます。",
+            "en": "A ledger for people who own several watches. It lists how many days each one has gone unworn and nudges you with a morning notification. It also calculates the service guideline from the movement type and notifies you with the days left."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "保証書やシリアルの記録もまとめられます。無料で時計3本まで登録できて、オーバーホールの通知も無料です。それより多い本数は月額の有料プランです。",
+            "en": "It also keeps warranty cards and serial numbers together. The free version holds 3 watches, and service reminders are free. More watches need the monthly paid plan."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "オーバーホールの頻度はどう決めるか",
+        "en": "How to decide how often to service"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "オーバーホールの頻度は、ムーブメントや使い方、メーカーの案内で変わります。アプリに最初から入っている周期は、どれも一般的な目安です。",
+            "en": "How often a watch needs service depends on the movement, how you use it, and what the maker recommends. The intervals built into these apps are all general guidelines."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "保証書やメーカーのサイトで推奨の周期を確かめるか、時計店で聞いてから、その年数をアプリに入れておくのが確かです。",
+            "en": "Check the recommended interval in your warranty booklet or on the maker's website, or ask a watch shop, and then put that number of years into the app."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "どれを選ぶか",
+        "en": "Which one to pick"
+      },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "ja": "日差を記録して、精度の変化から時期を判断したいなら、時計オーバーホールノート",
+              "en": "If you want to log the daily rate and judge timing from changes in accuracy, Watch Overhaul Note"
+            },
+            {
+              "ja": "着けていない時計を呼び戻して、保証書もまとめたいなら、CALIBRE",
+              "en": "If you want nudges to wear neglected watches and your warranty cards in one place, CALIBRE"
+            },
+            {
+              "ja": "メンテを過ぎたら毎日知らせてほしい、止まっていそうな1本にも気づきたいなら、WatchKeep",
+              "en": "If you want daily reminders once service is overdue and a heads-up when a watch may have stopped, WatchKeep"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "ja": "無料で使えますか？",
+        "en": "Are they free?"
+      },
+      "a": {
+        "ja": "3本とも無料で入れられて、どれも時計3本までは無料で登録できます。それより多いのは有料です。",
+        "en": "All three are free to download, and each lets you add up to 3 watches for free. More than that is paid."
+      }
+    },
+    {
+      "q": {
+        "ja": "クォーツの時計にも使えますか？",
+        "en": "Do they work for quartz watches?"
+      },
+      "a": {
+        "ja": "WatchKeepはクォーツを選ぶと、電池交換の周期として数えます。時計オーバーホールノートとCALIBREも、説明文にクォーツや電池交換の記載があります。",
+        "en": "In WatchKeep, choosing quartz counts the interval as a battery change. Watch Overhaul Note and CALIBRE also mention quartz watches or battery changes in their descriptions."
+      }
+    },
+    {
+      "q": {
+        "ja": "オーバーホールはどこに出せばいいですか？",
+        "en": "Where should I send my watch for service?"
+      },
+      "a": {
+        "ja": "アプリは時期を知らせるだけです。出し先は、メーカーの正規サービスか、買った時計店に相談してください。",
+        "en": "The apps only tell you when. For where to send it, ask the maker's authorized service center or the shop where you bought it."
+      }
+    }
+  ],
+  "closing": {
+    "ja": "WatchKeepはまだ評価が0件なので、引き出しの時計を入れてみた人の声を待ってます⌚",
+    "en": "WatchKeep has no ratings yet, so I'd love to hear from anyone who adds the watches sitting in their drawer ⌚"
+  },
+  "notes": {
+    "ja": "各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。メンテの周期は一般的な目安なので、分解整備は時計店やメーカーの正規サービスに相談してください。",
+    "en": "Features and rating counts were checked against each app's App Store description on November 15, 2026, and may change with updates. Service intervals are general guidelines, so talk to a watch shop or the maker's authorized service about any servicing."
+  },
+  "illustration": {
+    "scene": "書斎の机。キャラが時計箱のふたを開けて、並んだ腕時計の中から1本を手に取り、耳に当てて動いているか確かめている。箱の中の時計のうち1本だけに紫の小さなタグ。机の上のスマホ（文字なし）には歯車のマーク。",
+    "alt": {
+      "ja": "時計箱から腕時計を1本取り出し、耳に当てて動いているか確かめるキャラクター",
+      "en": "The character takes a watch from a watch box and holds it to an ear to check it's still running"
+    }
+  }
+}

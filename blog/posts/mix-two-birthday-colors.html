@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/js/lang.js"></script>
+    <!-- このページは scripts/build_guides.py が docs/guides/mix-two-birthday-colors.json から作る。直すのは JSON のほう -->
+    <title>ふたりの誕生日カラーを混ぜるアプリ2選と、自分で混ぜる方法 - Blog | Ryo Tsuzukihashi</title>
+    <meta name="description" content="ふたりの誕生日カラーを混ぜる方法をまとめました。アプリ2本の違いと、カラーコードから自分で混ぜる計算を書いています。バースデームーンの作者が書いています。">
+    <meta name="title-en" content="Mixing Two Birthday Colors: 2 Apps and How to Do It Yourself - Blog | Ryo Tsuzukihashi">
+    <meta name="description-en" content="How to mix two birthday colors: the difference between two iPhone apps, and the simple math for mixing the color codes yourself. Written by the maker of Birthday Moon.">
+    <link rel="canonical" href="https://tsuzukit.com/blog/posts/mix-two-birthday-colors.html">
+
+    <!-- OGP -->
+    <meta property="og:title" content="ふたりの誕生日カラーを混ぜるアプリ2選と、自分で混ぜる方法">
+    <meta property="og:description" content="ふたりの誕生日カラーを混ぜる方法をまとめました。アプリ2本の違いと、カラーコードから自分で混ぜる計算を書いています。バースデームーンの作者が書いています。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://tsuzukit.com/blog/posts/mix-two-birthday-colors.html">
+    <meta property="og:image" content="https://tsuzukit.com/assets/images/posts/mix-two-birthday-colors.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://tsuzukit.com/assets/images/posts/mix-two-birthday-colors.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-dark-32x32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-dark-16x16.png" media="(prefers-color-scheme: dark)">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERPQ1EGLH');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8240751277462688"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
+    <link rel="stylesheet" href="/assets/css/guide.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "ふたりの誕生日カラーを混ぜるアプリ2選と、自分で混ぜる方法",
+      "description": "ふたりの誕生日カラーを混ぜる方法をまとめました。アプリ2本の違いと、カラーコードから自分で混ぜる計算を書いています。バースデームーンの作者が書いています。",
+      "image": "https://tsuzukit.com/assets/images/posts/mix-two-birthday-colors.webp",
+      "datePublished": "2026-11-15",
+      "dateModified": "2026-11-15",
+      "inLanguage": "ja",
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "mainEntityOfPage": "https://tsuzukit.com/blog/posts/mix-two-birthday-colors.html",
+      "about": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "バースデームーン",
+          "url": "https://apps.apple.com/jp/app/id6737449860",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "あいいろ - ふたりの誕生日ラブカラー",
+          "url": "https://apps.apple.com/jp/app/id6822622713",
+          "operatingSystem": "iOS"
+        }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "バースデームーン",
+      "operatingSystem": "iOS",
+      "applicationCategory": "DesignApplication",
+      "url": "https://apps.apple.com/jp/app/id6737449860",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "誕生日カラーは一覧によってちがうのですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ちがうことがあります。出どころの違う一覧がいくつかあって、あいいろのように誕生石から色を決めているアプリもあります。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "色の名前やカラーコードは出ますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "バースデームーンは、色の名前もカラーコードも画面に出していません。混ぜた色は月の色で見せています。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "推しとの誕生日でも作れますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "どちらのアプリも、日付を選ぶだけなので作れます。バースデームーンの説明文にも、推しとの色を組み合わせる使い方が書いてあります。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tsuzukit.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://tsuzukit.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "困りごとから選ぶアプリ",
+          "item": "https://tsuzukit.com/blog/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "ふたりの誕生日カラーを混ぜるアプリ2選と、自分で混ぜる方法",
+          "item": "https://tsuzukit.com/blog/posts/mix-two-birthday-colors.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">TsuzuKit</a>
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/portfolio/" class="nav-link">Portfolio</a>
+                <a href="/blog/" class="nav-link active">Blog</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post -->
+    <article class="blog-post">
+        <header class="post-header">
+            <div class="post-meta">
+                <span class="post-date">2026.11.15</span>
+                <span class="post-category"><span class="i18n-ja">アプリの選び方</span><span class="i18n-en">App guides</span></span>
+                <span class="post-reading-time"><span class="i18n-ja">3分で読める</span><span class="i18n-en">3 min read</span></span>
+            </div>
+            <h1 class="post-title"><span class="i18n-ja">ふたりの誕生日カラーを混ぜるアプリ2選と、自分で混ぜる方法</span><span class="i18n-en">Mixing Two Birthday Colors: 2 Apps and How to Do It Yourself</span></h1>
+        </header>
+        <figure class="post-illustration guide-illustration"><img src="/assets/images/posts/mix-two-birthday-colors.webp" width="1200" height="800" alt="ピンクと水色の絵の具を混ぜて、薄紫の三日月を塗るキャラクター" data-en-alt="The character mixing pink and light blue paint on a palette and painting a pale purple crescent moon" fetchpriority="high"></figure>
+
+        <div class="post-content guide i18n-ja">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">先に答え</p>
+                <p>カラーコードが分かっていれば、赤、緑、青の数字をそれぞれ足して2で割れば混ぜた色になります。誕生石の色でかわいいデザインにしたいならあいいろ。366日の誕生日カラーを混ぜて月の画像にしたい人は、僕が作ったバースデームーンも見てみてください。</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">書いた人 <a href="https://tsuzukit.com/about/">續橋 涼</a>（@tsuzuki817）</p>
+                    <p class="guide-byline-bio">2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。バースデームーンの作者です。</p>
+                    <p class="guide-byline-date">公開 <time datetime="2026-11-15">2026.11.15</time> · 更新 <time datetime="2026-11-15">2026.11.15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">この記事は、バースデームーンを作った僕が書いています。あいいろは知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。</p>
+            <h2>2本をざっくり比べる</h2>
+            <p>ふたりの誕生日から色を作るアプリは、App Storeで探すと多くありません。見つかった2本は、色のもとにしている一覧がちがいます。</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">アプリ</th><th scope="col">評価の件数</th><th scope="col">色のもと</th><th scope="col">ふたりの色の出し方</th><th scope="col">できあがるもの</th></tr></thead><tbody><tr><th scope="row">バースデームーン（僕のアプリ）</th><td>9件</td><td>366日それぞれの誕生日カラー</td><td>2つの色を混ぜて1色にする</td><td>満月や三日月など6種類の月の画像</td></tr><tr><th scope="row">あいいろ</th><td>0件</td><td>月の誕生石をもとにしたオリジナルの色</td><td>ふたりの色を1枚のデザインに入れる</td><td>ホロ、ハート、プリの3つのデザイン</td></tr></tbody></table></div>
+            <h2>1本ずつ見ていく</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6a/a0/35/6aa035c4-70f6-bd63-9a2d-14a57bc90a09/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">僕が作ったアプリ</span>
+                    <h3 class="guide-app-name">バースデームーン</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · App Storeの評価 9件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6737449860" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>366日それぞれの誕生日カラーで、月を塗るアプリです。誕生日を2つ選ぶと、2つの色を混ぜた1色で月が染まります。</p>
+            <p>月の形は、満月、三日月、土星、木星、雲の5つから選べます。月の上には2人の誕生日のピンが立ちます。できた画像は高画質でカメラロールに保存できて、壁紙やSNSに使えます。</p>
+            <p>自分で選んだ画像を誕生日カラーで染める自由形と、広告を消すのはプレミアムで、買い切りです。何枚か保存すると、短い広告を見るかどうかを聞く画面が出ます。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/53/df/64/53df64bc-8efa-3f38-5484-18b127fd8617/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">あいいろ - ふたりの誕生日ラブカラー</h3>
+                    <p class="guide-app-meta">NexA Limited Liabilitiy · App Storeの評価 0件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6822622713" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>ふたりの誕生日を選ぶと、ふたりだけのラブカラーができるアプリです。色は月の誕生石をもとにして、日付が進むほど次の月の石に寄せていくオリジナルの色だと書かれています。</p>
+            <p>ホロ、ハート、プリの3つのデザインがあって、待ち受け画像やシェアカードとして保存できます。ホーム画面とロック画面のウィジェットにも置けます。買い切りのPlusで、広告が消えて、5秒のループ動画も保存できます。</p>
+            <h2>アプリを入れずに混ぜるなら</h2>
+            <p>誕生日カラーのカラーコードが分かっていれば、自分で混ぜられます。赤、緑、青の数字をそれぞれ足して2で割るだけです。</p>
+            <p>たとえば赤のFF0000と青の0000FFなら、だいたい800080の紫になります。バースデームーンの中でやっている混ぜ方も、これと同じです。</p>
+            <p>反対どうしの色を混ぜると、くすんだ色になりやすいです。赤のFF0000と緑の00FF00なら、だいたい808000のオリーブのような色になります。</p>
+            <h2>どれを選ぶか</h2>
+            <ul class="guide-list"><li>誕生石の色で、ハートやプリ風のかわいいデザインにしたいなら、あいいろ</li><li>366日の誕生日カラーを混ぜた1色を、月の形で残したいなら、バースデームーン</li><li>カラーコードが分かっていて、色だけ知りたいなら、自分で計算するのがいちばん早いです</li></ul>
+            <h2>よくある質問</h2>
+            <dl class="guide-faq">
+                <dt>誕生日カラーは一覧によってちがうのですか？</dt><dd>ちがうことがあります。出どころの違う一覧がいくつかあって、あいいろのように誕生石から色を決めているアプリもあります。</dd>
+                <dt>色の名前やカラーコードは出ますか？</dt><dd>バースデームーンは、色の名前もカラーコードも画面に出していません。混ぜた色は月の色で見せています。</dd>
+                <dt>推しとの誕生日でも作れますか？</dt><dd>どちらのアプリも、日付を選ぶだけなので作れます。バースデームーンの説明文にも、推しとの色を組み合わせる使い方が書いてあります。</dd>
+            </dl>
+            <p>どんな2つの色が混ざった月ができたのか、こっそり教えてもらえたらうれしいです🌙</p>
+            <div class="guide-notes">各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。誕生日カラーは占いではなく、色を楽しむためのものとして書いています。</div>
+        </div>
+
+        <div class="post-content guide i18n-en">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">Short answer</p>
+                <p>If you know the color codes, add the red, green, and blue values and divide each by two. For birthstone-based colors in a cute design, there&#x27;s Aiiro. If you want the 366-day birthday colors mixed and painted on a moon, take a look at Birthday Moon, which I made.</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">Written by <a href="https://tsuzukit.com/about/">Ryo Tsuzukihashi</a> (@tsuzuki817)</p>
+                    <p class="guide-byline-bio">I&#x27;ve been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made Birthday Moon.</p>
+                    <p class="guide-byline-date">Published <time datetime="2026-11-15">2026-11-15</time> · Updated <time datetime="2026-11-15">2026-11-15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">I made Birthday Moon, and I wrote this article. Aiiro is by a developer I don&#x27;t know, and I haven&#x27;t received money or anything else from them. Everything compared here comes from each app&#x27;s App Store description and rating count as of November 15, 2026.</p>
+            <h2>The two apps at a glance</h2>
+            <p>There aren&#x27;t many apps on the App Store that make a color from two birthdays. The two I found start from different color lists.</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">App</th><th scope="col">Ratings</th><th scope="col">Where the colors come from</th><th scope="col">How two colors are combined</th><th scope="col">What you get</th></tr></thead><tbody><tr><th scope="row">Birthday Moon (my app)</th><td>9</td><td>A birthday color for each of the 366 days</td><td>Mixes the two colors into one</td><td>An image of the moon, in six shapes such as full and crescent</td></tr><tr><th scope="row">Aiiro</th><td>0</td><td>Original colors based on the birthstone of each month</td><td>Puts both colors into one design</td><td>Three designs called holo, heart, and purikura</td></tr></tbody></table></div>
+            <h2>Each app, one by one</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6a/a0/35/6aa035c4-70f6-bd63-9a2d-14a57bc90a09/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">I made this</span>
+                    <h3 class="guide-app-name">Birthday Moon</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · 9 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6737449860" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>This app paints a moon in the birthday color for each of the 366 days. Pick two birthdays, and the moon turns the single color you get by mixing the two.</p>
+            <p>You can choose from five shapes, the full moon, crescent, Saturn, Jupiter, and a cloud. Pins for both birthdays sit on the moon. You can save the result in high quality to your camera roll and use it as wallpaper or on social media.</p>
+            <p>The freeform mode, which tints an image you choose in your birthday colors, and removing ads are Premium, a one-time purchase. After you save a few images, the app asks whether you want to watch a short ad.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/53/df/64/53df64bc-8efa-3f38-5484-18b127fd8617/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Aiiro - Our Birthday Love Colors</h3>
+                    <p class="guide-app-meta">NexA Limited Liabilitiy · 0 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6822622713" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>Choose two birthdays and it makes a love color for the pair. The description says the colors are its own, based on each month&#x27;s birthstone and shifting toward the next month&#x27;s stone as the days go on.</p>
+            <p>There are three designs, holo, heart, and purikura, and you can save them as wallpaper or share cards. They also work as Home Screen and Lock Screen widgets. The one-time Plus purchase removes ads and lets you save a five-second looping video.</p>
+            <h2>Mixing the colors without an app</h2>
+            <p>If you know the color codes for both birthday colors, you can mix them yourself. Add the red, green, and blue values for each and divide by two.</p>
+            <p>Red FF0000 and blue 0000FF, for example, come out at about 800080, a purple. Birthday Moon mixes colors the same way.</p>
+            <p>Mixing opposite colors tends to give you something muddy. Red FF0000 and green 00FF00 come out at about 808000, which looks like olive.</p>
+            <h2>Which one to pick</h2>
+            <ul class="guide-list"><li>If you want birthstone-based colors in a cute heart or purikura-style design, Aiiro</li><li>If you want the two birthday colors mixed into one and painted on a moon, Birthday Moon</li><li>If you know the color codes and only need the color, working it out yourself is quickest</li></ul>
+            <h2>FAQ</h2>
+            <dl class="guide-faq">
+                <dt>Do birthday colors differ between lists?</dt><dd>They can. There are several lists from different sources, and some apps, like Aiiro, base their colors on birthstones instead.</dd>
+                <dt>Does it show the color name or code?</dt><dd>Birthday Moon doesn&#x27;t show the color name or code on screen. You see the mixed color on the moon itself.</dd>
+                <dt>Can I use my fave’s birthday?</dt><dd>Yes. Both apps only ask for dates. Birthday Moon&#x27;s description even mentions combining your color with your fave&#x27;s.</dd>
+            </dl>
+            <p>I&#x27;d quietly love to know which two colors ended up in your moon 🌙</p>
+            <div class="guide-notes">Features and rating counts were checked against each app&#x27;s App Store description on November 15, 2026, and may change with updates. Birthday colors here are treated as a fun way to pick colors, not as fortune-telling.</div>
+        </div>
+
+        <nav class="post-navigation">
+            <img class="tk-char tk-char--post" src="/assets/images/character-hang.png" alt="" width="381" height="208">
+            <a href="/blog/guides/" class="nav-link-wrapper"><span>&larr; <span class="i18n-ja">困りごとから選ぶアプリの一覧へ</span><span class="i18n-en">All guides: apps for everyday problems</span></span></a>
+        </nav>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
+                    <p class="footer-description"><span class="i18n-ja">誰も作らないものを、まじめに作る</span><span class="i18n-en">I make things nobody else would, and I make them seriously</span></p>
+                </div>
+                <div class="footer-nav">
+                    <a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
+                    <a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
+                    <a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
+                    <a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ryo Tsuzukihashi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

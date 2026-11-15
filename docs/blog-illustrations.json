@@ -65,7 +65,87 @@
     "relaychat-development-story": "山の中で電波のアンテナに×のような形（文字ではなく、折れたアンテナ）がついていて、キャラが机でスマホを何台も並べ、光の線でつないで実験している。",
     "screennative-development-story": "キャラが机で、たくさんのスマホの画面（文字なし、色ちがいのレイアウト）が世界中の国旗の色のように並ぶのを、2体の小さなロボットと一緒に一気に作っている。",
     "income-report-2026-10": "たくさんのスマホが空にふわふわ浮かび、それぞれの画面の上にある黒い細長い島の上に、ドット絵の小さなハートがひとつずつ乗っている。光がスマホからスマホへ次々と渡って広がっていく。キャラは丘の上で両手を上げ、顔はこちらを正面に向けている。目は参照画像と同じ、白い縦長の楕円そのまま（黒目も影もまぶたも入れない）。胴と足の間に白い線を入れない。足元には開いた本が1冊あり、そこから小さなコインが少し舞い上がっている。",
-    "contact-lens-reminder-apps": "朝の洗面台。キャラが鏡の前で、コンタクトレンズのケース（水色）を両手で持っている。目の前に4台のスマホが宙に並んで浮かび、それぞれから小さなベルの合図が出ていて、キャラはどれにしようか見比べている。4台のうち1台だけ紫に光っている。壁の小さなカレンダー（文字なし）の1マスに水色の丸い印。"
+    "contact-lens-reminder-apps": "朝の洗面台。キャラが鏡の前で、コンタクトレンズのケース（水色）を両手で持っている。目の前に4台のスマホが宙に並んで浮かび、それぞれから小さなベルの合図が出ていて、キャラはどれにしようか見比べている。4台のうち1台だけ紫に光っている。壁の小さなカレンダー（文字なし）の1マスに水色の丸い印。",
+    "aquarium-care-apps": "リビングの棚に置いた水槽の前。キャラがバケツとホースを持って水換えをしていて、水槽の中では小さな魚たちが元気に泳いでいる。足元に置いたスマホの画面（文字なし）には、魚のマークと紫のチェックの印が出ている。",
+    "camera-dry-box-desiccant-reminder": "雨の日の部屋。キャラが透明なドライボックスのふたを開けて、中のカメラの横に新しい乾燥剤の袋をそっと入れている。机の上のスマホ（文字なし）から小さなしずくの形の合図が出ていて、窓の外では雨が降っている。",
+    "coffee-bean-roast-date-apps": "朝の台所のカウンター。キャラがコーヒー豆の袋を3つ並べて見比べ、そのうち1袋を選んでドリッパーに豆を入れようとしている。選ばれた袋だけ紫のリボンがついていて、横のスマホ（文字なし）にはコーヒー豆のマークとメーターの絵。",
+    "cute-countdown-apps": "明るい部屋。キャラがベッドに寝転んで、スマホのロック画面（文字なし）にピンクのカードが光っているのをにこにこ眺めている。壁にはライブのペンライトとチケットの形の紙（文字なし）が飾ってあり、まわりに小さな紙吹雪が舞っている。",
+    "fishing-reel-maintenance-schedule": "釣りから帰った夕方の玄関先。キャラがスピニングリールを手に持ち、ホースのシャワーでやさしく水洗いしている。横にはクーラーボックスと竿が立てかけてあり、足元に置いたスマホ（文字なし）には水しぶきのマークと紫のチェック。",
+    "fountain-pen-cleaning-reminder-apps": "机の上。キャラが水を張ったコップに万年筆のペン先をひたして、インクが水にふわっと広がるのを見ている。横には布とペントレイに並んだ数本の万年筆、そして紫のチェックが出たスマホ（文字なし）。",
+    "fridge-photo-recipe-apps": "キッチンのまな板の前。キャラが、半分残ったにんじん、玉ねぎ1個、卵2つを並べて腕を組んで見つめている。頭の上に湯気の立つ料理の絵の吹き出しが4つ浮かんでいて、そのうち1つだけ紫に光っている。",
+    "knife-sharpening-reminder-apps": "台所の流し台の横。キャラが濡らした砥石の上で包丁をていねいに研いでいて、刃がきらっと光っている。まな板の上には切りかけのトマト、壁の包丁差しには数本の包丁、そのうち1本の柄に紫の小さなリボン。",
+    "makeup-expiry-apps": "ドレッサーの前。キャラが開けたばかりのマスカラを片手に持ち、もう片方の手でスマホに開封日を入れている。机の上にはポーチから出したリップやファンデが並び、そのうちいくつかに紫の小さな丸いシールが貼ってある。スマホの画面は文字なし。",
+    "never-forget-anniversaries-apps": "夜の部屋。キャラが机の上のスマホを見て、はっと気づいた顔をしている。スマホの画面（文字なし）から小さなベルの合図が出ていて、机の横にはリボンをかけたプレゼントの箱がもう用意してある。",
+    "oil-change-tracker-apps": "朝の駐車場。キャラが小さな車のボンネットの横に立ち、オイルの缶を片手に持っている。もう片方の手のスマホ（文字なし）から、道が少しずつ伸びていって旗に届く形の合図が出ていて、キャラはその旗を見上げている。",
+    "one-photo-a-day-diary-apps": "夜のベッドの上。キャラがスマホの画面（文字なし）で今日撮った1枚（夕焼けの空の絵）を選んでいる。スマホの上から、小さな四角い写真が1日ずつつながったリボンのように部屋の中へ伸びていて、いちばん端の1枚だけ枠が空いている。",
+    "parents-living-apart-contact-frequency": "夕方の部屋。キャラがソファに座ってスマホを耳に当て、うれしそうに話している。壁のカレンダー（文字なし）には、同じ間隔で小さなハートの印が並んでいる。窓の外には遠くの山と小さな家の灯り。",
+    "passport-expiry-reminder-apps": "旅行の前の夜の部屋。キャラが開いたスーツケースの横に座って、表紙の色が違うパスポートを3冊（家族の分）並べ、1冊ずつ確かめている。横のスマホ（文字なし）には飛行機のマークと紫のチェック。壁には地球儀。",
+    "qr-code-scan-history-iphone": "キャラがスマホを手に、机の上に広がった小さなカードの列を指でたどっている。カードにはQRコード風の四角い模様（読めない抽象的な模様）が描かれていて、1枚に星の印がついている。キャラは目当ての1枚を見つけてほっとしている。",
+    "regulator-overhaul-reminder-apps": "ダイビングショップの前の水場。ウェットスーツ姿のキャラが、レギュレーターをシャワーの真水で洗っている。横に置いたスマホ（文字なし）から小さな泡の形の合図が出ていて、キャラはそれを見てうなずいている。",
+    "save-hashtags-add-all-at-once": "キャラが写真を投稿しようとしてスマホを持ち、もう片方の手でカードの束（文字なし、色だけ）を1つつまんでいる。束から小さなタグの札がつながったまま画面へ流れ込んでいて、キャラは1回で済んで満足そうな顔をしている。キャラの目は参照画像と同じ白い縦長の楕円2つのままにする（笑った弧の目や閉じた目にしない）。",
+    "show-memo-on-iphone-screen": "電車の座席で、キャラがスマホで動画を見ている。画面の上の隅に小さな窓が浮かんでいて、その中を色のついた細い帯（文字なし）が横に流れている。キャラは帯を見て、はっと何かを思い出した顔をしている。",
+    "stylish-clock-widget-iphone": "キャラが大きなスマホのホーム画面の前に立ち、手に持った時計のパネルを空いたマスにはめ込もうとしている。足もとには、木目、方眼、まだら模様など柄の違う時計のパネル（数字なし、形と模様だけ）が何枚か立てかけてあり、どれにしようか選んでいる。",
+    "watch-overhaul-reminder-apps": "書斎の机。キャラが時計箱のふたを開けて、並んだ腕時計の中から1本を手に取り、耳に当てて動いているか確かめている。箱の中の時計のうち1本だけに紫の小さなタグ。机の上のスマホ（文字なし）には歯車のマーク。",
+    "water-filter-cartridge-reminder-apps": "台所のシンク。キャラが蛇口についた浄水器から古いカートリッジを外し、新しい白いカートリッジを手に持って満足そうにしている。シンクの横に立てかけたスマホの画面（文字なし）に、水のしずくの絵と紫のチェックの印が出ている。",
+    "wine-drinking-window-apps": "夕方の部屋。小さなワインラックから、キャラがリボンのついた赤ワインのボトルを1本引き出して、うれしそうに掲げている。テーブルにはグラスが2つと、ブドウのマークが紫に光るスマホ（文字なし）。窓の外は夕焼け。",
+    "zenn-trend-check-iphone": "朝の机で、キャラがマグカップを片手にスマホのホーム画面を見ている。画面の大きな水色のパネル（文字なし、細い線が何本も並ぶだけ）の上から、小さな線のカードが一枚ずつ順番に浮かび上がっていて、キャラは気になる一枚に指を伸ばしている。",
+    "aesthetic-treatment-log-apps": "クリニックの待合室のような明るい場所。キャラが椅子に座って、膝の上の手帳とスマホを見比べている。スマホの画面（文字なし）には、進み具合を表す横長のバーと小さな写真が2枚並んでいる。",
+    "always-on-screen-timer-apps": "キッチンでキャラがエプロン姿で鍋をかき混ぜながら、もう片方の手でスマホ（文字なし）のレシピを見ている。スマホの画面の隅に、丸い時計の針だけが描かれた小さな窓が浮かんでいて、鍋の湯気がその窓のほうへゆらいでいる。",
+    "apple-music-picture-in-picture": "電車の座席。キャラが片手でスマホの地図（文字なし、道の線だけ）を見ている。画面の右下に、正方形の小さな窓がふわっと浮かんでいて、中に無地の色のジャケットが光っている。キャラはもう片方の手で、その窓の再生ボタンを指でつついている。",
+    "apple-music-play-count-ranking": "小さな表彰台の前にキャラが立っている。1位、2位、3位の台の上に、それぞれレコード盤（ラベルは無地の色だけ）が乗っていて、いちばん高い台のレコードが光っている。キャラはヘッドホンを首にかけ、長いレシートのような紙（文字なし、棒グラフの線だけ）を両手で広げて驚いている。",
+    "apps-that-listen-when-you-vent": "夜の部屋。キャラがベッドの端に座って、両手で持ったスマホに向かって小さな声で話している。スマホの画面（文字なし）からやわらかい緑色の光が広がって、キャラの肩の力が少し抜けている。窓の外に小さな星。",
+    "as-i-see-you-photo-grid": "カフェのテーブル。キャラが、向かいに座った友だち（同じ形の黒いまるいキャラで、頭に小さなリボン）にスマホの画面を見せている。画面には3×3のマスが並び、ねこ、花、海、カップ、まるい色だけのマスなどの小さな絵が入っている（文字なし）。友だちはびっくりして、ほっぺを赤くして照れている。キャラの目は参照画像と同じ白い縦長の楕円2つのままにする（笑った弧の目や閉じた目にしない）。ほかのキャラも同じ形の目にする。",
+    "baken-image-maker": "誕生日パーティーの部屋。キャラが、顔のない丸いシルエットの友だちに、リボンをかけた額縁入りのチケット風のカード（文字なし、緑の模様と線だけ）を手渡している。テーブルには小さな馬のぬいぐるみとケーキがあって、友だちは両手を上げて笑っている。キャラの目は参照画像と同じ白い縦長の楕円2つのままにする（笑った弧の目や閉じた目にしない）。",
+    "beetle-battle-game-apps": "夏の夜の机の上。キャラがしゃがんで、手のひらほどの立体のカブトムシとクワガタが角を押し合う小さな土俵をのぞきこんでいる。キャラの片手はチョキの形で、もう片方の手を握りしめて応援している。",
+    "bike-chain-lube-reminder-apps": "休日の朝の玄関先。キャラがロードバイクの横にしゃがみ、チェーンに小さなオイルのボトルで一滴ずつ油をさしている。地面に置いたスマホ（文字なし）から、道のりが少しずつ減っていく形の合図が出ている。",
+    "bird-name-identifier-apps": "朝の公園のベンチ。キャラが目を閉じて耳に手を当て、木の上から聞こえる鳴き声（小さな音符の形の線）に聞き入っている。膝の上のスマホ（画面は文字なし）から、小鳥のシルエットがふわっと浮かび上がっている。キャラの目は参照画像と同じ白い縦長の楕円2つのままにする（笑った弧の目や閉じた目にしない）。",
+    "bowel-movement-log-apps": "朝の廊下。キャラがトイレのドアの前でスマホを見ていて、画面の小さなカレンダー（文字なし、丸い印だけ）に今日の印がぽんとつく。遠くの家の窓から、色ちがいの小さな丸い影が手を振っている。トイレの人の形のマークや標識は描かない。",
+    "buddhist-teachings-apps": "朝の縁側。キャラが座布団の上で目を閉じて坐り、横に置いたスマホから、湯気のようにやわらかな光の帯が立ちのぼっている。庭には小さな石と苔があり、遠くに山並みが見える。キャラの目は参照画像と同じ白い縦長の楕円2つのままにする（笑った弧の目や閉じた目にしない）。",
+    "bytebeat-player-iphone": "暗い部屋で、キャラがスマホを両手で持っている。画面から緑色の波形の線がにょろにょろと宙に伸び出していて、その線が途中からギザギザの音の波に変わり、キャラのまわりで小さなスピーカーたちが一緒に跳ねている。",
+    "count-while-using-other-apps": "公園のベンチ。キャラがスマホ（文字なし）で野鳥の動画を見ながら、画面の隅に浮かぶ小さな窓のボタンを親指で押している。小さな窓の中では丸い玉がひとつずつ増えていき、ベンチの前の池にはカモが3羽泳いでいる。",
+    "cutout-outline-sticker-apps": "キャラが机の上で、スマホケースの裏に、切り抜いた猫の写真のシール（太い紫の縁取り）を貼っている。机の上には、水色や黄色の縁の付いた切り抜きシールが数枚と、透明なシートの台紙。",
+    "dream-journal-apps": "朝の寝室。目を覚ましたばかりのキャラがベッドに座り、枕元のノートに急いで何かを書きとめている（文字なし、線だけ）。頭の上には消えかけの夢の雲が浮かんでいて、中に小さな海と鍵と鳥の形が見える。",
+    "dynamic-island-character-apps": "夜の机。キャラが大きな方眼のキャンバスに、ペンで1マスずつ色を置いてドット絵の人の顔（文字なし）を描いている。机に立てたスマホの画面のいちばん上の黒い細長い帯に、描いたのと同じ小さなドット絵が乗っていて、ぴょんと跳ねている。",
+    "eye-drop-reminder-apps": "昼下がりのリビング。キャラがソファで水色の目薬のボトルを手に持ち、テーブルの上のスマホの画面（文字なし）にチェックの印がつくのを見て、ほっとした顔をしている。テーブルには目薬のボトルがもう1本並んでいる。",
+    "eye-tracking-games-iphone": "リビングのソファ。キャラが両手をひざの上に置いたまま、テーブルに立てたタブレットをじっと見つめている。キャラの目から画面へ細い光の線がのびて、画面の中の小さなモグラの頭に当たっている（画面に文字なし）。",
+    "flight-focus-timer-apps": "勉強机の上に、手のひらほどの小さな町の地図が広がっている。キャラはノートに向かって集中していて、その横で地図の道の上を小さな車がひとりでに走り、空には紙飛行機が1機だけ飛んでいる。机の端のスマホ（文字なし）は伏せて置かれている。",
+    "flower-name-from-photo": "散歩道の石垣のすきまに、小さな青い花が咲いている。キャラがしゃがんでスマホを向けていて、画面（文字なし）から花びらの形の光が出ている。キャラの頭の上に小さなハートと花が浮かんでいる。",
+    "handwritten-todo-list-apps": "朝のテーブル。キャラが黄色い付箋に指で何かを書き込んでいて（文字なし、ぐるぐるの線だけ）、目の前にはオレンジのスライダーボードが立っている。ボードのつまみのひとつはもう右にスライドされていて、その横に丸いスタンプの跡（文字なし）が押されている。メモや紙には文字に見える線を描かず、チェックの丸と横線だけにする。",
+    "help-parents-smartphone-remotely": "絵が左右2つの部屋に分かれている。左の居間では、少し小柄な色ちがいの丸いキャラがひとりでスマホを持ち、画面（文字なし）の一か所に赤い丸の印が光っていて、そこを指で押そうとしている。右の離れた部屋では、黒いまるいキャラが自分のスマホに届いた赤い丸つきの画像（文字なし）を見て、ほっとした顔をしている。",
+    "himekuri-calendar-app": "朝の窓辺で、キャラがスマホを片手に持ち、画面から出た無地の紙（文字なし）の端をつまんで下へビリッと引いている。足もとには破った紙が何枚か重なっていて、キャラは気持ちよさそうな顔をしている。",
+    "leather-shoe-care-apps": "夜の玄関。キャラが下駄箱の前でしゃがみ、片手に靴ブラシ、もう片方の手に茶色の革靴を持っている。宙に浮かぶスマホ（文字なし）に靴の形のアイコンが3つ並び、そのうち1つだけが小さく光っていて、キャラはそれを見ながら磨く靴を選んでいる。",
+    "letter-organizing-apps": "机の上に、手紙やはがきの小さな山（文字なし、線だけ）。キャラがスマホで1通ずつ撮っていて、撮り終わった手紙はリボンで束ねられ、横の丸い缶にきちんと立ててしまわれている。机の上はさっきより片づいている。",
+    "medal-game-apps-no-ads": "夜の縁側。キャラがスマホを横向きに持っていて、画面からメダルの山があふれ、足元にじゃらじゃらこぼれている。横には小さなクレーンゲームの台と、風船のミニチュアが並んでいる。",
+    "mix-two-birthday-colors": "夜の窓辺の机。キャラがパレットの上で、ピンクと水色の2つの絵の具を筆で混ぜていて、できた薄紫の絵の具で大きな三日月の絵を塗っている。窓の外の空にも、同じ薄紫の三日月が浮かんでいる。",
+    "mood-ups-and-downs-tracker-apps": "夜の窓辺。キャラが膝を抱えて座り、手に持ったスマホの画面（文字なし）にゆるやかな波の線が浮かんでいるのを眺めている。窓の外には月と、やさしく揺れる海の水平線。",
+    "music-diary-apps": "夜の部屋のベッドの上。キャラがヘッドホンをつけて、ひざの上のカレンダー帳を開いている。帳面のマスの1つに、小さなレコードのシールをぺたっと貼っているところで、まわりのマスにも色ちがいのレコードのシール（ラベルは無地）が並んでいる。",
+    "oshi-photo-clock-apps": "朝のベッドサイド。充電スタンドに横向きに置いたスマホが、駅の発着板のような時計になっていて、無地のカード（数字なし）がパタッとめくれる瞬間。めくれたカードの裏に写真の形の四角（中身は色面だけ）が見え、キャラが布団から顔を出してうれしそうに見ている。",
+    "otaku-concert-log-apps": "ライブ帰りの夜の駅のベンチ。キャラが紫のペンライトをひざに置き、開いたノート（文字なし、線だけ）に今日のことを書き込んでいる。ノートのページから缶バッジや小さなアクリルスタンドがふわっと浮かび上がり、横の小さな棚に順番に並んでいく。",
+    "phone-lock-study-apps": "夜の勉強机。キャラがノートを広げたまま、机の端に置いた大きなマッチ箱の中へ、スマホ（文字なし）をそっとしまっている。机の上では1本のマッチが小さく燃えていて、その明かりでノートを照らしている。",
+    "photo-color-code-apps": "キャラが壁に、お気に入りのマグカップや観葉植物や夕暮れの街の写真を並べて貼っていて、それぞれの写真の下に1色ずつの色見本の札（文字なし）を付けて見比べている。手には絵の具の筆。",
+    "photo-watermark-apps": "明るい部屋の壁に、キャラが撮った花や空の写真が何枚も飾ってある。それぞれの写真の右下に、キャラのまるいシルエットの小さな印がうすく入っている（文字なし）。キャラは1枚を額に入れながら満足そうに眺めている。",
+    "pi-memorization-game-apps": "夜の教室。キャラが黒板の前で、宙に浮かぶ大きな円の形のテンキー（数字なし、丸いボタンだけ）を1つずつ押していて、押すたびに光の粒が円の線に沿って1つずつ並んでいく。",
+    "picture-in-picture-photo-apps": "夜の机で、キャラがノートに向かって勉強している。立てかけたスマホでは別の動画が流れていて、その画面の隅の小窓に、色ちがいの単語カードの画像（文字なし、色の札だけ）が次々に切り替わっている。",
+    "purchase-log-apps": "部屋の床で、キャラが届いたばかりの箱から出したスニーカーを両手で持ち上げ、目の前に立てたスマホで撮ろうとしている。後ろの壁には、これまで撮ったもの（ランプ、植物、マグカップ）の小さな写真が3枚貼ってある。",
+    "qiita-reader-app-iphone": "ソファで、キャラがスマホを本のように両手で開いて読んでいる。スマホから緑の細い線（文字なし）が何本も立ちのぼっていて、そのうち1本にだけ黄色いマーカーの帯が引かれている。キャラは読みながら小さくうなずいている。",
+    "reading-passbook-apps": "夜の部屋のソファ。キャラが読み終えた本を閉じて胸に抱え、膝の上に開いた紺色の通帳のような手帳（文字なし、細い線だけ）に新しい1行が増えたのを見てうれしそうにしている。そばに読み終えた本が数冊積んであり、手帳の上に小さなコインが1枚ぽんと浮かんでいる。",
+    "receipt-style-image-apps": "公園のベンチ。キャラが手に持ったスマホの下から、白いレシート（文字なし、細い線とバーコードのような縞だけ）がするすると出てきていて、キャラはそれを見てにこにこしている。ひざの上には、これまでに集めたレシートがクリップで束ねてある。キャラの目は参照画像と同じ白い縦長の楕円2つのままにする（笑った弧の目や閉じた目にしない）。",
+    "rock-identifier-apps": "夜の部屋の机に、散歩で拾った石がいくつも並んでいる。キャラが虫めがねで1つの石をのぞきこんでいて、横に置いたスマホ（画面は文字なし）から結晶の形の光が浮かんでいる。棚には小さな仕切りの付いた標本箱。",
+    "samegame-apps": "窓辺のこたつ。キャラがスマホを両手で持っていて、画面から同じ色の小さな四角いブロックのかたまりがふわっと浮き上がり、残った列が左へすべっていく。最後のひとかたまりが消える瞬間で、キャラは小さくガッツポーズをしている。",
+    "seashell-identifier-apps": "夕方の家のテーブル。キャラが浜から持ち帰った小さな瓶から貝殻を出して並べていて、手元のスマホの画面（文字なし）と巻貝を見比べている。名前がわかった貝殻の横には、小さな紫の旗が立っている。窓の外に夕焼けの海。",
+    "seasonal-fish-calendar": "魚屋の店先。キャラが片手にスマホ（画面には小さな魚の絵が並んでいるだけで文字なし）を持ち、氷の上に並んだ魚と見比べている。並んだ魚のうち1匹の上に小さな星がきらっと光っている。",
+    "simple-medicine-reminder-apps": "朝の台所。キャラが水の入ったコップを片手に、テーブルの上のスマホの画面（文字なし）を見てうなずいている。テーブルには曜日ごとに仕切られたピルケース（文字なし）と、小さな太陽の形の印が光る置き時計。",
+    "simple-reminder-apps": "玄関先。キャラが出かける前に靴をはきながら、手のひらのスマホから鳴る小さなベルの合図に気づいて振り向いている。スマホの画面（文字なし）には大きなボタンが1つだけ。下駄箱の上に忘れかけた封筒が置いてある。",
+    "slouching-posture-apps": "デスクワークの部屋。キャラがパソコンの前で背中を丸めかけていて、机の上のスマホから小さな猫の顔の吹き出し（文字なし）がぴょこっと出ている。キャラははっとして背筋を伸ばしかけている。",
+    "swipe-photo-cleaner-apps": "電車の座席で、キャラがスマホを両手で持ってほっとした顔をしている。スマホの上に、ぎゅうぎゅうだった箱から写真がふわっと抜けて軽くなった箱が風船のように浮かんでいる。膝の上には大事に残した数枚の写真。",
+    "ticket-stub-memory-apps": "テーブルの上に、水族館の半券（文字なし、魚の絵柄だけ）が1枚置いてある。キャラがスマホを構えてそれを撮っていて、スマホの画面から同じ半券が小さなカードになって飛び出していく。カードのまわりには、ほかの人が残した色とりどりの半券のカード（文字なし、模様だけ）がふわふわ集まってくる。",
+    "touch-the-numbers-apps": "陸上のスタートラインのような床。キャラがストップウォッチを首にかけ、目の前の宙に浮かぶ丸いボタンの格子（数字なし、色の濃さが違う丸だけ）に向かって、人さし指を構えてスタートの合図を待っている。",
+    "travel-english-apps": "海外の街角のカフェのカウンター。キャラがイヤホンでスマホの音声を聞きながら、絵だけのメニュー（コーヒーカップとパンの絵、文字なし）を指さして注文している。カウンターには湯気の立つカップ。看板・標識・矢印・飛行機のマークは描かない。キャラの目は参照画像と同じ白い縦長の楕円2つのままにする。",
+    "travel-mood-apps-at-home": "雨の日の部屋。キャラがソファで毛布にくるまってスマホを持っていて、スマホから海辺の町や雪山や夜景の小さな景色がシャボン玉のように浮かんで部屋いっぱいに広がっている。窓の外は雨。",
+    "visited-prefectures-map-apps": "帰りの新幹線の窓際の席。キャラがスマホを見てにっこりしている。スマホの上に小さな日本地図の形（文字なし）が浮かんでいて、色のついた県がいくつかあり、いま行ってきた1県だけが新しく紫に色づいたところ。窓の外は夕焼けの山なみ。キャラの目は参照画像と同じ白い縦長の楕円2つのままにする（笑った弧の目や閉じた目にしない）。",
+    "voice-alarm-apps": "朝の寝室。布団から顔を出したキャラの枕元で、スマホから音符と、波形の線だけが入った小さな吹き出し（文字なし）がふわっと出ている。キャラは目をこすりながら、うれしそうに笑っている。窓から朝日が差しこんでいる。キャラの目は参照画像と同じ白い縦長の楕円2つのままにする（笑った弧の目や閉じた目にしない）。眠そうでも目は開いた白い楕円のまま。",
+    "what-day-is-today-app": "会社の朝礼の場面。キャラが小さな台の上に立ち、手にしたスマホを見ながら話している。スマホの上には、月の形、花、祝日の旗、小さな記念のリボンの絵（どれも文字なし）がふわっと浮かんでいて、前に並んだ色ちがいの丸い仲間たちが「へえ」という顔で聞いている。",
+    "chat-without-signal-app": "キャンプ場の夜。テントの前で、キャラがスマホを持ち、少し離れた木の向こうにいる色ちがいの丸い仲間に向けて、小さな光の粒をぽんと送っている。光の粒は途中で別の仲間のスマホを1つ経由して届いている。空の電波のアンテナの形は灰色に消えている。"
   },
   "alt": {
     "income-report-prehistory": [
@@ -323,6 +403,326 @@
     "contact-lens-reminder-apps": [
       "コンタクトのケースを持って、ベルの鳴る4台のスマホを見比べるキャラクター",
       "The character holding a contact lens case, comparing four floating phones that are each ringing a little bell"
+    ],
+    "aquarium-care-apps": [
+      "バケツとホースで水槽の水換えをするキャラクターと、元気に泳ぐ魚たち",
+      "The character changing the aquarium water with a bucket and hose while small fish swim happily"
+    ],
+    "camera-dry-box-desiccant-reminder": [
+      "雨の日に、ドライボックスへ新しい乾燥剤を入れるキャラクター",
+      "The character placing a fresh desiccant pack into a clear dry box next to a camera on a rainy day"
+    ],
+    "coffee-bean-roast-date-apps": [
+      "コーヒー豆の袋を3つ並べて、いちばん飲み頃の1袋を選ぶキャラクター",
+      "The character comparing three bags of coffee beans and picking the one that's at its best"
+    ],
+    "cute-countdown-apps": [
+      "ベッドでスマホのピンクのカードを眺め、紙吹雪に囲まれてわくわくするキャラクター",
+      "The character lying on the bed smiling at a pink card on the phone, with confetti floating around"
+    ],
+    "fishing-reel-maintenance-schedule": [
+      "釣りから帰って、リールをホースのシャワーで水洗いするキャラクター",
+      "Back from fishing, the character gently rinses a spinning reel with a hose shower"
+    ],
+    "fountain-pen-cleaning-reminder-apps": [
+      "水を張ったコップで万年筆を洗い、インクが広がるのを見ているキャラクター",
+      "The character flushing a fountain pen in a glass of water, watching the ink swirl out"
+    ],
+    "fridge-photo-recipe-apps": [
+      "残った食材を並べて、浮かんだ4つの料理を見比べるキャラクター",
+      "The character looking over a few leftover ingredients, with four steaming dishes floating above"
+    ],
+    "knife-sharpening-reminder-apps": [
+      "濡らした砥石で包丁を研ぎ、刃がきらっと光るのを見ているキャラクター",
+      "The character carefully sharpening a kitchen knife on a wet whetstone as the edge catches the light"
+    ],
+    "makeup-expiry-apps": [
+      "開けたばかりのマスカラを持って、スマホに開封日を記録するキャラクター",
+      "The character holding a freshly opened mascara and logging the opening day on a phone"
+    ],
+    "never-forget-anniversaries-apps": [
+      "ベルの鳴るスマホを見て、用意したプレゼントの横で気づいた顔をするキャラクター",
+      "The character noticing a ringing phone on the desk, a wrapped gift already ready beside it"
+    ],
+    "oil-change-tracker-apps": [
+      "オイルの缶を持って、スマホから伸びる道の先の旗を見上げるキャラクター",
+      "The character holding an oil can next to a small car, looking up at a flag at the end of a road rising from their phone"
+    ],
+    "one-photo-a-day-diary-apps": [
+      "今日の1枚を選ぶキャラクターと、1日ずつつながって伸びる写真のリボン",
+      "The character choosing today's photo on a phone, with a ribbon of daily photos stretching across the room"
+    ],
+    "parents-living-apart-contact-frequency": [
+      "壁のカレンダーに等間隔の印がついた部屋で、スマホで電話をしているキャラクター",
+      "The character on a phone call on the sofa, with evenly spaced little marks on the wall calendar"
+    ],
+    "passport-expiry-reminder-apps": [
+      "旅行の前の夜、スーツケースの横で家族のパスポートを並べて確かめるキャラクター",
+      "The night before a trip, the character checks the family's passports laid out next to an open suitcase"
+    ],
+    "qr-code-scan-history-iphone": [
+      "並んだQRコード風のカードの中から、目当ての1枚を見つけるキャラクター",
+      "The character tracing a row of QR-style cards and finding the one they were looking for"
+    ],
+    "regulator-overhaul-reminder-apps": [
+      "スマホの合図を見ながら、レギュレーターを真水で洗うキャラクター",
+      "The character in a wetsuit rinsing a regulator with fresh water, nodding at a signal from their phone"
+    ],
+    "save-hashtags-add-all-at-once": [
+      "つまんだタグの札の束を、1回でスマホの画面へ流し込むキャラクター",
+      "The character dropping a whole bundle of tag cards into a phone screen in one go"
+    ],
+    "show-memo-on-iphone-screen": [
+      "スマホの動画の上を流れる小さな帯を見て、用事を思い出すキャラクター",
+      "The character on a train watching a video, remembering something as a small band scrolls across a floating window"
+    ],
+    "stylish-clock-widget-iphone": [
+      "ホーム画面の空いたマスに、柄の違う時計のパネルをはめ込もうとするキャラクター",
+      "The character fitting one of several patterned clock panels into an empty slot on a big Home Screen"
+    ],
+    "watch-overhaul-reminder-apps": [
+      "時計箱から腕時計を1本取り出し、耳に当てて動いているか確かめるキャラクター",
+      "The character takes a watch from a watch box and holds it to an ear to check it's still running"
+    ],
+    "water-filter-cartridge-reminder-apps": [
+      "蛇口の浄水器のカートリッジを新しいものに替え、スマホのチェックの印を見て満足するキャラクター",
+      "The character swapping in a new cartridge on a faucet water filter, pleased to see a check mark on the phone beside the sink"
+    ],
+    "wine-drinking-window-apps": [
+      "夕方、ワインラックからリボンのついたボトルを取り出してうれしそうなキャラクター",
+      "In the evening, the character happily pulls a ribboned bottle from a wine rack, with two glasses on the table"
+    ],
+    "zenn-trend-check-iphone": [
+      "朝、ホーム画面のパネルから浮かぶ記事のカードに指を伸ばすキャラクター",
+      "The character with a morning mug, reaching for one of the article cards rising from a Home Screen panel"
+    ],
+    "aesthetic-treatment-log-apps": [
+      "待合室の椅子で、バーと写真が並んだスマホを手帳と見比べるキャラクター",
+      "The character in a waiting room comparing a notebook with a phone showing a progress bar and two small photos"
+    ],
+    "always-on-screen-timer-apps": [
+      "料理をしながら、スマホの隅に浮かぶタイマーの小窓を確かめるキャラクター",
+      "The character stirring a pot while checking a small floating timer window in the corner of their phone"
+    ],
+    "apple-music-picture-in-picture": [
+      "電車でスマホの地図を見ながら、画面の隅に浮かぶ小さな音楽の窓を操作するキャラクター",
+      "The character on a train looking at a map on their phone while tapping a small music window floating in the corner"
+    ],
+    "apple-music-play-count-ranking": [
+      "レコードが乗った表彰台の前で、長い紙のグラフを広げて驚くキャラクター",
+      "The character in front of a podium topped with records, holding up a long strip of paper with a bar chart and looking surprised"
+    ],
+    "apps-that-listen-when-you-vent": [
+      "夜のベッドの端で、緑色に光るスマホに向かって話すキャラクター",
+      "The character sitting on the edge of the bed at night, talking softly to a phone glowing green"
+    ],
+    "as-i-see-you-photo-grid": [
+      "3×3の画像を見せられて照れる友だちと、スマホを見せるキャラクター",
+      "The character showing a friend a 3×3 photo grid on a phone, and the friend blushing"
+    ],
+    "baken-image-maker": [
+      "誕生日パーティーで、額に入ったチケット風のカードを友だちに手渡すキャラクター",
+      "The character handing a friend a framed ticket-style card at a birthday party"
+    ],
+    "beetle-battle-game-apps": [
+      "角を押し合う小さなカブトムシとクワガタを、チョキの手でのぞきこむキャラクター",
+      "The character making a scissors hand while peering at a tiny rhinoceros beetle and stag beetle locking horns"
+    ],
+    "bike-chain-lube-reminder-apps": [
+      "スマホの合図を見ながら、ロードバイクのチェーンに油をさすキャラクター",
+      "The character crouching by a road bike, oiling the chain one drop at a time while their phone gives a signal"
+    ],
+    "bird-name-identifier-apps": [
+      "公園のベンチで鳥の声に耳をすますキャラクター。スマホから小鳥の影が浮かんでいる",
+      "The character on a park bench listening to birdsong, with a small bird silhouette rising from the phone"
+    ],
+    "bowel-movement-log-apps": [
+      "朝の廊下でスマホのカレンダーに今日の印をつけ、遠くの窓から手を振られているキャラクター",
+      "The character in a hallway in the morning, marking today on a phone calendar while someone waves from a faraway window"
+    ],
+    "buddhist-teachings-apps": [
+      "朝の縁側で目を閉じて坐り、横のスマホからやわらかな光が立ちのぼるキャラクター",
+      "The character sitting with eyes closed on a veranda in the morning, soft light rising from a phone beside it"
+    ],
+    "bytebeat-player-iphone": [
+      "スマホから伸びる緑の波形の線に合わせて、小さなスピーカーが跳ねる中に立つキャラクター",
+      "The character holding a phone as a green waveform line stretches out of the screen and little speakers bounce around them"
+    ],
+    "count-while-using-other-apps": [
+      "公園のベンチで鳥の動画を見ながら、画面の隅の小窓で数を数えるキャラクター",
+      "The character on a park bench counting with a small floating window while watching a bird video"
+    ],
+    "cutout-outline-sticker-apps": [
+      "紫の縁取りの付いた猫のシールをスマホケースに貼るキャラクター",
+      "The character sticking a cut-out cat photo with a thick purple outline onto the back of a phone case"
+    ],
+    "dream-journal-apps": [
+      "朝のベッドで、消えかけの夢の雲を見上げながらノートに書きとめるキャラクター",
+      "The character sitting up in bed in the morning, jotting in a notebook under a fading dream cloud"
+    ],
+    "dynamic-island-character-apps": [
+      "方眼のキャンバスにドット絵を描くキャラクター。スマホの上の黒い帯に同じドット絵が乗っている",
+      "The character drawing pixel art on a grid canvas, while the same little figure hops along the black bar at the top of a phone"
+    ],
+    "eye-drop-reminder-apps": [
+      "目薬を手に、スマホにチェックの印がつくのを見てほっとするキャラクター",
+      "The character holding eye drops, relieved to see a check mark appear on the phone"
+    ],
+    "eye-tracking-games-iphone": [
+      "両手をひざに置いたまま、目から出た光の線でタブレットの中のモグラを狙うキャラクター",
+      "The character on a sofa with its hands in its lap, aiming a thin beam of light from its eyes at a mole on a tablet"
+    ],
+    "flight-focus-timer-apps": [
+      "机の上の小さな地図を車が走る横で、ノートに集中するキャラクター",
+      "The character focused on a notebook while a tiny car drives across a little map on the desk"
+    ],
+    "flower-name-from-photo": [
+      "石垣に咲く小さな青い花にスマホを向けるキャラクター",
+      "The character crouching to point a phone at a small blue flower growing in a stone wall"
+    ],
+    "handwritten-todo-list-apps": [
+      "付箋に指で書き込みながら、オレンジのスライダーボードで片付けるキャラクター",
+      "The character writing on a sticky note with a finger beside an orange slider board with one switch already slid over"
+    ],
+    "help-parents-smartphone-remotely": [
+      "離れた部屋で、親のスマホの赤い丸の印を見てほっとするキャラクター",
+      "In separate rooms, a parent taps a glowing red circle while the character, far away, looks relieved at the same marked-up image"
+    ],
+    "himekuri-calendar-app": [
+      "朝、スマホの画面から出た紙をビリッと破るキャラクター",
+      "The character tearing a sheet of paper off a phone screen in the morning"
+    ],
+    "leather-shoe-care-apps": [
+      "スマホの合図を見ながら、下駄箱の前で革靴を磨こうとしているキャラクター",
+      "The character crouching by a shoe cabinet with a brush, picking which leather shoe to polish from a glowing phone"
+    ],
+    "letter-organizing-apps": [
+      "手紙を1通ずつスマホで撮って、撮り終えた手紙を缶にしまうキャラクター",
+      "The character photographing letters one by one and filing the finished ones neatly in a tin"
+    ],
+    "medal-game-apps-no-ads": [
+      "スマホからあふれたメダルが足元にこぼれ、横に小さなクレーンゲームが並ぶ縁側のキャラクター",
+      "The character on a porch at night, medals spilling out of a phone onto the floor, with a tiny crane game beside it"
+    ],
+    "mix-two-birthday-colors": [
+      "ピンクと水色の絵の具を混ぜて、薄紫の三日月を塗るキャラクター",
+      "The character mixing pink and light blue paint on a palette and painting a pale purple crescent moon"
+    ],
+    "mood-ups-and-downs-tracker-apps": [
+      "夜の窓辺で膝を抱え、スマホに浮かぶ波の線を眺めるキャラクター",
+      "The character sitting by a night window, hugging their knees and looking at a gentle wave line on the phone"
+    ],
+    "music-diary-apps": [
+      "ヘッドホンをつけて、カレンダー帳にレコードのシールを貼るキャラクター",
+      "The character wearing headphones, sticking a little record sticker onto a calendar notebook"
+    ],
+    "oshi-photo-clock-apps": [
+      "ベッドの横でカードがめくれるスマホの時計を、布団から見るキャラクター",
+      "The character peeking out from the covers at a bedside phone clock as one of its flip cards turns over"
+    ],
+    "otaku-concert-log-apps": [
+      "ライブ帰りにノートへ記録するキャラクター。ページからグッズが浮かんで棚に並んでいく",
+      "The character writing in a notebook after a concert, as little pieces of merch float up from the page onto a shelf"
+    ],
+    "phone-lock-study-apps": [
+      "燃えるマッチの明かりのそばで、スマホをマッチ箱にしまうキャラクター",
+      "The character tucking a phone into a big matchbox at a study desk, lit by a single burning match"
+    ],
+    "photo-color-code-apps": [
+      "写真の下に色見本の札を付けて見比べるキャラクター",
+      "The character pinning photos to a wall with a color swatch under each one, comparing them"
+    ],
+    "photo-watermark-apps": [
+      "自分の印をうすく入れた写真を壁に飾るキャラクター",
+      "The character hanging photos on a wall, each marked faintly with a small round silhouette in the corner"
+    ],
+    "pi-memorization-game-apps": [
+      "夜の教室で円の形のボタンを押し、光の粒を円に沿って並べていくキャラクター",
+      "The character in a classroom at night, pressing round buttons that line up glowing dots along a big circle"
+    ],
+    "picture-in-picture-photo-apps": [
+      "勉強するキャラクター。スマホの隅の小窓で単語カードが切り替わっている",
+      "The character studying at a desk, with flash card images switching in a small floating window on the phone"
+    ],
+    "purchase-log-apps": [
+      "届いたスニーカーをスマホで撮ろうとするキャラクターと、壁に貼られたこれまでの買い物の写真",
+      "The character holding up a new pair of sneakers to photograph, with photos of earlier finds pinned on the wall"
+    ],
+    "qiita-reader-app-iphone": [
+      "スマホを本のように開いて、黄色いマーカーの一文を読むキャラクター",
+      "The character reading a phone held open like a book, with one line marked in yellow highlighter"
+    ],
+    "reading-passbook-apps": [
+      "読み終えた本を抱えて、通帳のような手帳に1行増えたのを見るキャラクター",
+      "The character hugging a finished book and looking at a new line added to a passbook-style notebook"
+    ],
+    "receipt-style-image-apps": [
+      "スマホから出てくるレシートを見て笑うキャラクターと、集めたレシートの束",
+      "The character smiling at a receipt sliding out of a phone, with a clipped bundle of collected receipts"
+    ],
+    "rock-identifier-apps": [
+      "机に並べた石を虫めがねでのぞきこむキャラクター。スマホから結晶の形の光が浮かんでいる",
+      "The character examining stones on a desk with a magnifying glass, as crystal-shaped light rises from a phone"
+    ],
+    "samegame-apps": [
+      "こたつでスマホを持ち、浮き上がって消えていく色ブロックを見てガッツポーズするキャラクター",
+      "The character at a kotatsu table, making a small fist pump as colored blocks lift off the phone screen and vanish"
+    ],
+    "seashell-identifier-apps": [
+      "持ち帰った貝殻をテーブルに並べて、スマホと見比べるキャラクター",
+      "The character lining up seashells brought home from the beach, comparing one with a phone"
+    ],
+    "seasonal-fish-calendar": [
+      "魚屋の店先で、スマホと氷の上の魚を見比べるキャラクター",
+      "The character at a fish shop, comparing a phone with the fish laid out on ice"
+    ],
+    "simple-medicine-reminder-apps": [
+      "朝の台所で水のコップを持ち、スマホを見てうなずくキャラクター",
+      "The character in a morning kitchen holding a glass of water and nodding at the phone"
+    ],
+    "simple-reminder-apps": [
+      "出かける前の玄関で、ベルの鳴るスマホに気づいて振り向くキャラクター",
+      "The character at the front door, turning around as the phone in their hand rings a little bell"
+    ],
+    "slouching-posture-apps": [
+      "机のスマホから猫の吹き出しが出て、パソコンの前で背筋を伸ばすキャラクター",
+      "The character straightening up at the computer as a little cat bubble pops out of the phone on the desk"
+    ],
+    "swipe-photo-cleaner-apps": [
+      "電車の中でスマホを持ってほっとするキャラクター。写真が減って軽くなった箱が浮かんでいる",
+      "The character relaxing on a train with a phone, as a box that was stuffed with photos floats up, now lighter"
+    ],
+    "ticket-stub-memory-apps": [
+      "水族館の半券をスマホで撮るキャラクター。画面から出たカードのまわりに、色とりどりの半券が集まってくる",
+      "The character photographing an aquarium ticket stub as it flies out of the phone as a card, joined by colorful stubs from other people"
+    ],
+    "touch-the-numbers-apps": [
+      "首にストップウォッチをかけ、宙に浮かぶ丸いボタンの格子に指を構えるキャラクター",
+      "The character with a stopwatch around its neck, finger ready in front of a floating grid of round buttons"
+    ],
+    "travel-english-apps": [
+      "海外のカフェで、イヤホンでスマホの英語を聞きながら絵のメニューを指さして注文するキャラクター",
+      "The character at a cafe abroad, listening to English on a phone through earphones and pointing at a picture menu to order"
+    ],
+    "travel-mood-apps-at-home": [
+      "雨の日にソファでくつろぐキャラクター。スマホから世界の景色がシャボン玉のように浮かんでいる",
+      "The character curled up on a sofa on a rainy day, with scenes from around the world floating out of a phone like bubbles"
+    ],
+    "visited-prefectures-map-apps": [
+      "帰りの新幹線で、行ってきた県が新しく色づいた日本地図を見るキャラクター",
+      "The character on a train home, smiling at a map of Japan where the prefecture they just visited has filled in"
+    ],
+    "voice-alarm-apps": [
+      "枕元のスマホから届いた声で、笑って目を覚ますキャラクター",
+      "The character waking up smiling to a voice coming from the phone by the pillow"
+    ],
+    "what-day-is-today-app": [
+      "朝礼でスマホを見ながら、今日の話題を話すキャラクター",
+      "The character at a morning meeting, sharing today's topic while glancing at a phone"
+    ],
+    "chat-without-signal-app": [
+      "電波の無いキャンプ場で、仲間のスマホを経由して光の粒を届けるキャラクター",
+      "The character at a campsite with no signal, sending a dot of light that hops through a friend's phone to reach another"
     ]
   },
   "ogp_pos": {

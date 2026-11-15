@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/js/lang.js"></script>
+    <!-- このページは scripts/build_guides.py が docs/guides/voice-alarm-apps.json から作る。直すのは JSON のほう -->
+    <title>好きな人の声で起きられるアラームアプリ3選 - Blog | Ryo Tsuzukihashi</title>
+    <meta name="description" content="録音した声をアラームにできるアプリを3本比べました。誰の声で起きるか、録音の長さ、無料の範囲の違いをまとめています。Monivoの作者が書いています。">
+    <meta name="title-en" content="3 Alarm Apps That Wake You Up with Someone’s Voice - Blog | Ryo Tsuzukihashi">
+    <meta name="description-en" content="I compared three iPhone apps that turn a recorded voice into your alarm: whose voice wakes you, how long the recording can be, and what&#x27;s free. Written by the maker of Monivo.">
+    <link rel="canonical" href="https://tsuzukit.com/blog/posts/voice-alarm-apps.html">
+
+    <!-- OGP -->
+    <meta property="og:title" content="好きな人の声で起きられるアラームアプリ3選">
+    <meta property="og:description" content="録音した声をアラームにできるアプリを3本比べました。誰の声で起きるか、録音の長さ、無料の範囲の違いをまとめています。Monivoの作者が書いています。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://tsuzukit.com/blog/posts/voice-alarm-apps.html">
+    <meta property="og:image" content="https://tsuzukit.com/assets/images/posts/voice-alarm-apps.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://tsuzukit.com/assets/images/posts/voice-alarm-apps.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-dark-32x32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-dark-16x16.png" media="(prefers-color-scheme: dark)">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERPQ1EGLH');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8240751277462688"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
+    <link rel="stylesheet" href="/assets/css/guide.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "好きな人の声で起きられるアラームアプリ3選",
+      "description": "録音した声をアラームにできるアプリを3本比べました。誰の声で起きるか、録音の長さ、無料の範囲の違いをまとめています。Monivoの作者が書いています。",
+      "image": "https://tsuzukit.com/assets/images/posts/voice-alarm-apps.webp",
+      "datePublished": "2026-11-15",
+      "dateModified": "2026-11-15",
+      "inLanguage": "ja",
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "mainEntityOfPage": "https://tsuzukit.com/blog/posts/voice-alarm-apps.html",
+      "about": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "Monivo 声で起こし合うアラーム",
+          "url": "https://apps.apple.com/jp/app/id6793626358",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "Oshiton - 推し・子供の声で目覚ましアラーム",
+          "url": "https://apps.apple.com/jp/app/id6763635413",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "こけこ - 友達の声で起きる目覚まし",
+          "url": "https://apps.apple.com/jp/app/id6798810626",
+          "operatingSystem": "iOS"
+        }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Monivo 声で起こし合うアラーム",
+      "operatingSystem": "iOS",
+      "applicationCategory": "UtilitiesApplication",
+      "url": "https://apps.apple.com/jp/app/id6793626358",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "マナーモードでも鳴りますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "3本とも、説明文にマナーモードやサイレントモードでも鳴ると書かれています。どれもiOS 26以降のiPhoneが必要です。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "友だちがいなくても使えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "使えます。3本とも自分の声で起きられて、Monivoは世界のユーザーの声でも起きられます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Androidでも使えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "この3本の中でGoogle Play版があると確かめられたのは、Monivoです。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tsuzukit.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://tsuzukit.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "困りごとから選ぶアプリ",
+          "item": "https://tsuzukit.com/blog/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "好きな人の声で起きられるアラームアプリ3選",
+          "item": "https://tsuzukit.com/blog/posts/voice-alarm-apps.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">TsuzuKit</a>
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/portfolio/" class="nav-link">Portfolio</a>
+                <a href="/blog/" class="nav-link active">Blog</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post -->
+    <article class="blog-post">
+        <header class="post-header">
+            <div class="post-meta">
+                <span class="post-date">2026.11.15</span>
+                <span class="post-category"><span class="i18n-ja">アプリの選び方</span><span class="i18n-en">App guides</span></span>
+                <span class="post-reading-time"><span class="i18n-ja">4分で読める</span><span class="i18n-en">4 min read</span></span>
+            </div>
+            <h1 class="post-title"><span class="i18n-ja">好きな人の声で起きられるアラームアプリ3選</span><span class="i18n-en">3 Alarm Apps That Wake You Up with Someone’s Voice</span></h1>
+        </header>
+        <figure class="post-illustration guide-illustration"><img src="/assets/images/posts/voice-alarm-apps.webp" width="1200" height="800" alt="枕元のスマホから届いた声で、笑って目を覚ますキャラクター" data-en-alt="The character waking up smiling to a voice coming from the phone by the pillow" fetchpriority="high"></figure>
+
+        <div class="post-content guide i18n-ja">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">先に答え</p>
+                <p>自分で録った声や、子どもや推しの声で起きたいならOshiton、友だちに前の晩に吹き込んでもらうならこけこが分かりやすいです。フレンドの声に加えて、世界のだれかの声でも毎朝起きてみたい人や、Androidでも使いたい人は、僕が作ったMonivoも見てみてください。</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">書いた人 <a href="https://tsuzukit.com/about/">續橋 涼</a>（@tsuzuki817）</p>
+                    <p class="guide-byline-bio">2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。Monivoの作者です。</p>
+                    <p class="guide-byline-date">公開 <time datetime="2026-11-15">2026.11.15</time> · 更新 <time datetime="2026-11-15">2026.11.15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">この記事は、Monivoを作った僕が書いています。ほかの2本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。</p>
+            <h2>3本をざっくり比べる</h2>
+            <p>3本とも、iOS 26からのアラームの仕組みを使っていて、アプリを閉じていても鳴ります。違いが出るのは、誰の声を入れるかです。</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">アプリ</th><th scope="col">評価の件数</th><th scope="col">入れる声</th><th scope="col">録音の長さ</th><th scope="col">無料の範囲</th></tr></thead><tbody><tr><th scope="row">Monivo（僕のアプリ）</th><td>1件</td><td>自分、フレンド、世界のユーザー</td><td>15秒。プレミアムで30秒</td><td>声の保存は5件まで</td></tr><tr><th scope="row">Oshiton</th><td>8件</td><td>自分で録る。動画から切り出しも</td><td>30秒まで</td><td>説明文に記載なし</td></tr><tr><th scope="row">こけこ</th><td>0件</td><td>友だち、自分</td><td>30秒</td><td>目覚ましの機能は全部無料</td></tr></tbody></table></div>
+            <h2>1本ずつ見ていく</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5a/d3/12/5ad312e4-b84a-555e-1efa-e9b497c814ce/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">僕が作ったアプリ</span>
+                    <h3 class="guide-app-name">Monivo 声で起こし合うアラーム</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · App Storeの評価 1件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6793626358" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        <a class="guide-app-android" href="https://play.google.com/store/apps/details?id=com.tsuzukit.monivo" target="_blank" rel="noopener noreferrer">Google Play版</a>
+                    </div>
+                </div>
+            </div>
+            <p>恋人や友だちが録った15秒の声が、そのまま目覚ましやリマインダーになります。届いた声のどれで起きるかは、自分で選べます。明日は遅刻できないから激しめに起こして、のように、ほしい声をフレンドにお願いすることもできます。</p>
+            <p>フレンドがいなくても、世界のユーザーが録った声が時間帯やタグに合わせて届くので、毎朝ちがう声で起きられます。自分だけにのこす声として録音して、自分の声で起きることもできます。</p>
+            <p>録音、送受信、フレンドの追加、世界の声のアラームは無料です。プレミアムは月額か年額で、声の保存が300件まで、録音が30秒まで伸びて、広告が消えます。Google PlayにAndroid版もあります。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/97/76/b5/9776b530-c7ae-9763-325a-96d04182dee4/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Oshiton - 推し・子供の声で目覚ましアラーム</h3>
+                    <p class="guide-app-meta">AMAIRU LLC · App Storeの評価 8件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6763635413" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>好きな声を自分で録音して、アラームやタイマーの音にするアプリです。子どもの声やパートナーの応援、推しのイベントで録った声などを想定しています。</p>
+            <p>30秒まで高音質で録れて、スマホに保存した動画から声を切り出すこともできます。平日用と休日用のように、アラームごとに声を変えられて、録った声をiPhoneの着信音として書き出すこともできます。iOS 26.1以降が必要です。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/67/1c/32/671c322d-ec83-5fc9-a8ec-20d22295a41f/AppIcon-1x_U007ephone-0-1-85-220-0.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">こけこ - 友達の声で起きる目覚まし</h3>
+                    <p class="guide-app-meta">Stellaps Inc. · App Storeの評価 0件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6798810626" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>夜9時に友だちへ、明日起こしてと通知が届き、友だちが30秒の声を吹き込むと、それが翌朝のアラームになる作りです。起きたことは友だちに伝わって、声で返事ができます。</p>
+            <p>友だちが録り忘れても、前に届いた声か自分の声、それも無ければ標準の音に切り替わるので、鳴らない朝が無いようにしてあります。目覚ましの機能は全部無料で、声の主を選ぶのと、受け取った声を10本より多く取っておくのは月額か年額のProです。</p>
+            <h2>アプリを入れたくないなら</h2>
+            <p>iPhoneの時計アプリのアラーム音には、着信音を選べます。録音した声をGarageBandで着信音として書き出せば、それをアラーム音にできます。</p>
+            <p>ただ、手順が多くて、声を変えるたびにやり直しになります。相手から声が届くのを待つだけで済むのは、アプリのいいところですね。</p>
+            <h2>どれを選ぶか</h2>
+            <ul class="guide-list"><li>子どもや推しの声を自分で録って、アラームごとに使い分けたいなら、Oshiton</li><li>友だちに前の晩に吹き込んでもらって、起きたら返事をしたいなら、こけこ</li><li>フレンドに加えて世界のだれかの声でも起きたい人や、Androidでも使いたいなら、Monivo</li></ul>
+            <h2>よくある質問</h2>
+            <dl class="guide-faq">
+                <dt>マナーモードでも鳴りますか？</dt><dd>3本とも、説明文にマナーモードやサイレントモードでも鳴ると書かれています。どれもiOS 26以降のiPhoneが必要です。</dd>
+                <dt>友だちがいなくても使えますか？</dt><dd>使えます。3本とも自分の声で起きられて、Monivoは世界のユーザーの声でも起きられます。</dd>
+                <dt>Androidでも使えますか？</dt><dd>この3本の中でGoogle Play版があると確かめられたのは、Monivoです。</dd>
+            </dl>
+            <p>Monivoはまだ評価が1件なので、どんな声で起きたかを聞かせてもらえたらうれしいです⏰</p>
+            <div class="guide-notes">各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。Monivoの機能はアプリのコードとストアの説明文で確かめました。アップデートで変わることがあります。</div>
+        </div>
+
+        <div class="post-content guide i18n-en">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">Short answer</p>
+                <p>If you want to wake up to a voice you recorded yourself, like your kid&#x27;s or your favorite idol&#x27;s, Oshiton is the easy pick. If you want a friend to record one for you the night before, Kokeko is the straightforward choice. If you&#x27;d like to wake up to voices from people around the world as well as your friends, or want it on Android too, take a look at Monivo, which I made.</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">Written by <a href="https://tsuzukit.com/about/">Ryo Tsuzukihashi</a> (@tsuzuki817)</p>
+                    <p class="guide-byline-bio">I&#x27;ve been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made Monivo.</p>
+                    <p class="guide-byline-date">Published <time datetime="2026-11-15">2026-11-15</time> · Updated <time datetime="2026-11-15">2026-11-15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">I made Monivo, and I wrote this article. The other two apps are by developers I don&#x27;t know, and I haven&#x27;t received money or anything else from them. Everything compared here comes from each app&#x27;s App Store description and rating count as of November 15, 2026.</p>
+            <h2>The three apps at a glance</h2>
+            <p>All three use the alarm system Apple added in iOS 26, so they ring even when the app is closed. The real difference is whose voice goes in.</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">App</th><th scope="col">Ratings</th><th scope="col">Whose voice</th><th scope="col">Recording length</th><th scope="col">What&#x27;s free</th></tr></thead><tbody><tr><th scope="row">Monivo (my app)</th><td>1</td><td>You, your friends, or people around the world</td><td>15 seconds. 30 with Premium</td><td>Save up to 5 voices</td></tr><tr><th scope="row">Oshiton</th><td>8</td><td>Recorded by you, or clipped from a video</td><td>Up to 30 seconds</td><td>Not mentioned</td></tr><tr><th scope="row">Kokeko</th><td>0</td><td>Your friends, or you</td><td>30 seconds</td><td>All alarm features are free</td></tr></tbody></table></div>
+            <h2>Each app, one by one</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5a/d3/12/5ad312e4-b84a-555e-1efa-e9b497c814ce/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">I made this</span>
+                    <h3 class="guide-app-name">Monivo: Wake Up by Voice</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · 1 App Store rating</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6793626358" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        <a class="guide-app-android" href="https://play.google.com/store/apps/details?id=com.tsuzukit.monivo" target="_blank" rel="noopener noreferrer">Android version on Google Play</a>
+                    </div>
+                </div>
+            </div>
+            <p>A 15-second voice recorded by your partner or a friend becomes your alarm or reminder. You choose which of the voices you&#x27;ve received will wake you. You can even ask a friend for a specific kind of voice, like asking them to be extra loud because you can&#x27;t be late tomorrow.</p>
+            <p>Even without friends on the app, voices recorded by users around the world arrive matched to the time of day and tags, so you can wake up to a different voice every morning. You can also record a voice just for yourself and wake up to your own.</p>
+            <p>Recording, sending and receiving, adding friends, and alarms with voices from around the world are free. Premium is monthly or yearly, raises saved voices to 300 and recordings to 30 seconds, and removes the ads. There&#x27;s also an Android version on Google Play.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/97/76/b5/9776b530-c7ae-9763-325a-96d04182dee4/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Oshiton - Voice Recorder Alarm</h3>
+                    <p class="guide-app-meta">AMAIRU LLC · 8 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6763635413" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>This app lets you record any voice you love and use it as an alarm or timer sound. It has in mind things like your kid&#x27;s voice, a pep talk from your partner, or a voice you recorded at your favorite idol&#x27;s event.</p>
+            <p>It records up to 30 seconds in high quality, and you can also clip a voice out of a video saved on your phone. You can use a different voice for each alarm, like weekdays and weekends, and export a recording as an iPhone ringtone. It needs iOS 26.1 or later.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/67/1c/32/671c322d-ec83-5fc9-a8ec-20d22295a41f/AppIcon-1x_U007ephone-0-1-85-220-0.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Kokeko - Friend&#x27;s Voice Alarm</h3>
+                    <p class="guide-app-meta">Stellaps Inc. · 0 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6798810626" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>At 9 p.m. your friend gets a notification asking them to wake you tomorrow, and the 30-second voice they record becomes your alarm the next morning. When you get up, your friend is told, and you can reply with a voice message.</p>
+            <p>If your friend forgets to record, it falls back to an earlier voice from them, then to your own voice, then to a standard alarm sound, so there&#x27;s never a morning with no alarm. All the alarm features are free, and choosing whose voice you get and keeping more than 10 received voices come with Pro, monthly or yearly.</p>
+            <h2>If you&#x27;d rather not install an app</h2>
+            <p>In the iPhone Clock app you can pick a ringtone as your alarm sound. If you export a recorded voice as a ringtone with GarageBand, you can use it as your alarm.</p>
+            <p>The catch is that it takes quite a few steps, and you have to redo them every time you want a new voice. With an app, you just wait for the voice to arrive.</p>
+            <h2>Which one to pick</h2>
+            <ul class="guide-list"><li>If you want to record your kid&#x27;s or your favorite idol&#x27;s voice yourself and use different ones for different alarms, Oshiton</li><li>If you want a friend to record a voice the night before and reply once you are up, Kokeko</li><li>If you want voices from people around the world as well as friends, or want it on Android too, Monivo</li></ul>
+            <h2>FAQ</h2>
+            <dl class="guide-faq">
+                <dt>Do they ring in silent mode?</dt><dd>All three say in their descriptions that they ring even in silent mode. All of them need an iPhone on iOS 26 or later.</dd>
+                <dt>Can I use them without friends on the app?</dt><dd>Yes. All three let you wake up to your own voice, and Monivo can also wake you with voices from users around the world.</dd>
+                <dt>Is any of them on Android?</dt><dd>Of these three, Monivo is the one I could confirm is on Google Play.</dd>
+            </dl>
+            <p>Monivo only has one rating so far, so I&#x27;d love to hear whose voice woke you up ⏰</p>
+            <div class="guide-notes">Features and rating counts were checked against each app&#x27;s App Store description on November 15, 2026. Monivo&#x27;s features were checked in the app&#x27;s code and its store description. Things may change with updates.</div>
+        </div>
+
+        <nav class="post-navigation">
+            <img class="tk-char tk-char--post" src="/assets/images/character-hang.png" alt="" width="381" height="208">
+            <a href="/blog/guides/" class="nav-link-wrapper"><span>&larr; <span class="i18n-ja">困りごとから選ぶアプリの一覧へ</span><span class="i18n-en">All guides: apps for everyday problems</span></span></a>
+        </nav>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
+                    <p class="footer-description"><span class="i18n-ja">誰も作らないものを、まじめに作る</span><span class="i18n-en">I make things nobody else would, and I make them seriously</span></p>
+                </div>
+                <div class="footer-nav">
+                    <a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
+                    <a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
+                    <a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
+                    <a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ryo Tsuzukihashi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

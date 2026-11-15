@@ -1,0 +1,391 @@
+{
+  "slug": "fountain-pen-cleaning-reminder-apps",
+  "date_published": "2026-11-15",
+  "date_updated": "2026-11-15",
+  "search_phrase": {
+    "ja": "万年筆 洗浄 頻度",
+    "en": "fountain pen cleaning reminder app"
+  },
+  "evidence": "2026-11-15 に Google の検索候補で「万年筆 洗浄 頻度」を引くと「万年筆 コンバーター 洗浄 頻度」が出て、「万年筆 洗浄」は17件、「万年筆 放置」は「放置 書けない」「インク 放置」を含む4件だった。同じ日に App Store で「万年筆 管理」を引くと11本が並び、評価はどれも3件以下。多くはインクの台帳で、入れっぱなしのペンや洗浄の時期を知らせるのは、インク帳、インクノート、PenKeepの3本だった。",
+  "title": {
+    "ja": "万年筆の洗浄どきを知らせてくれるアプリ3選",
+    "en": "3 Apps That Remind You When to Clean Your Fountain Pens"
+  },
+  "description": {
+    "ja": "万年筆の洗浄の時期や、インクを入れたまま使っていないペンを知らせてくれるアプリを3本比べました。洗浄の目安の出し方、通知、インクの管理、無料の範囲の違いをまとめています。PenKeepの作者が書いています。",
+    "en": "I compared three iPhone apps that remind you when to clean your fountain pens and flag inked pens you haven't used: how they set the cleaning date, notifications, ink tracking, and what's free. Written by the maker of PenKeep."
+  },
+  "excerpt": {
+    "ja": "インクを入れたまま忘れた1本が、書き出しでかすれる。洗浄どきを知らせてくれる万年筆のアプリを3本比べました。",
+    "en": "The inked pen you forgot about skips on the first stroke. Three fountain pen apps that remind you when it's time to flush."
+  },
+  "category": {
+    "ja": "アプリの選び方",
+    "en": "App guides"
+  },
+  "reading_minutes": 4,
+  "author": {
+    "name": {
+      "ja": "續橋 涼",
+      "en": "Ryo Tsuzukihashi"
+    },
+    "handle": "tsuzuki817",
+    "bio": {
+      "ja": "2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。PenKeepの作者です。",
+      "en": "I've been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made PenKeep."
+    },
+    "url": "https://tsuzukit.com/about/",
+    "same_as": [
+      "https://x.com/tsuzuki817"
+    ]
+  },
+  "tldr": {
+    "ja": "洗浄の頻度は吸入方式やインクで変わるので、目安を決めたらアプリに覚えてもらうのが楽です。インクの色や在庫も一緒に管理したいならインク帳かインクノート。ペンごとに洗浄の日を数えて、過ぎたら毎日知らせてほしいなら、僕が作ったPenKeepが合います。",
+    "en": "How often to flush depends on the filling system and the ink, so once you settle on an interval, let an app remember it. If you also want to track your ink colors and stock, Inkcho or Ink Note is the pick. If you want each pen's cleaning date counted and a reminder every day once it passes, PenKeep, which I made, fits."
+  },
+  "disclosure": {
+    "ja": "この記事は、PenKeepを作った僕が書いています。ほかの2本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。",
+    "en": "I made PenKeep, and I wrote this article. The other two apps are by developers I don't know, and I haven't received money or anything else from them. Everything compared here comes from each app's App Store description and rating count as of November 15, 2026."
+  },
+  "own_app": "6782400804",
+  "app_category": "LifestyleApplication",
+  "apps": [
+    {
+      "id": "6782400804",
+      "name": {
+        "ja": "万年筆ケア PenKeep",
+        "en": "PenKeep: Fountain Pen Care"
+      },
+      "short": {
+        "ja": "PenKeep",
+        "en": "PenKeep"
+      },
+      "developer": "Ryo Tsudukihashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5e/ce/de/5ecede23-6105-fdba-44cd-afdb8cc27f37/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6782400804",
+      "android_url": null,
+      "rating_count": 0
+    },
+    {
+      "id": "6763183078",
+      "name": {
+        "ja": "インク帳",
+        "en": "Inkcho"
+      },
+      "short": {
+        "ja": "インク帳",
+        "en": "Inkcho"
+      },
+      "developer": "kazuki korenori",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c3/45/ba/c345ba22-bf3b-393e-0934-03c93356d89c/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6763183078",
+      "android_url": null,
+      "rating_count": 3
+    },
+    {
+      "id": "6789585501",
+      "name": {
+        "ja": "インクノート - 万年筆・インク管理",
+        "en": "Ink Note: Fountain Pen and Ink Log"
+      },
+      "short": {
+        "ja": "インクノート",
+        "en": "Ink Note"
+      },
+      "developer": "towa imamoto",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/43/18/85/431885e2-c085-21ea-8a52-197933f5d36f/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6789585501",
+      "android_url": null,
+      "rating_count": 0
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ja": "3本をざっくり比べる",
+        "en": "The three apps at a glance"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "3本とも、インクを入れたまま放っておいたペンに気づかせてくれます。違いが出るのは、洗浄の日を数えるか、インクの台帳まで持つかです。",
+            "en": "All three help you notice pens left sitting with ink in them. The difference is whether they count down to a cleaning date or also keep a full ink collection."
+          }
+        },
+        {
+          "type": "table",
+          "head": [
+            {
+              "ja": "アプリ",
+              "en": "App"
+            },
+            {
+              "ja": "評価の件数",
+              "en": "Ratings"
+            },
+            {
+              "ja": "洗浄の時期",
+              "en": "Cleaning date"
+            },
+            {
+              "ja": "入れっぱなしのペン",
+              "en": "Inked pens left unused"
+            },
+            {
+              "ja": "インクの台帳",
+              "en": "Ink collection"
+            },
+            {
+              "ja": "無料の範囲",
+              "en": "Free version"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ja": "PenKeep（僕のアプリ）",
+                "en": "PenKeep (my app)"
+              },
+              {
+                "ja": "0件",
+                "en": "0"
+              },
+              {
+                "ja": "吸入方式から目安を出し、2週間前と3日前と当日に通知。過ぎたら毎日",
+                "en": "Set from the filling system. Notifies 2 weeks before, 3 days before, and on the day, then daily"
+              },
+              {
+                "ja": "最後に書いた日から、乾いてるかもと表示",
+                "en": "Shows a may-be-drying warning based on when you last wrote"
+              },
+              {
+                "ja": "なし",
+                "en": "No"
+              },
+              {
+                "ja": "ペン3本まで",
+                "en": "Up to 3 pens"
+              }
+            ],
+            [
+              {
+                "ja": "インク帳",
+                "en": "Inkcho"
+              },
+              {
+                "ja": "3件",
+                "en": "3"
+              },
+              {
+                "ja": "目安を過ぎたペンが一覧の先頭に並ぶ",
+                "en": "Pens past their guideline move to the top of the list"
+              },
+              {
+                "ja": "入れたままの日数を通知",
+                "en": "Notifies you how long ink has been in a pen"
+              },
+              {
+                "ja": "あり",
+                "en": "Yes"
+              },
+              {
+                "ja": "ペン5本、インク10本まで",
+                "en": "Up to 5 pens and 10 inks"
+              }
+            ],
+            [
+              {
+                "ja": "インクノート",
+                "en": "Ink Note"
+              },
+              {
+                "ja": "0件",
+                "en": "0"
+              },
+              {
+                "ja": "洗浄を記録すると履歴に残る",
+                "en": "Cleanings you log are kept in the history"
+              },
+              {
+                "ja": "決めた日数使わないと通知",
+                "en": "Notifies you after a set number of unused days"
+              },
+              {
+                "ja": "あり",
+                "en": "Yes"
+              },
+              {
+                "ja": "ペン3本、インク5本まで",
+                "en": "Up to 3 pens and 5 inks"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "1本ずつ見ていく",
+        "en": "Each app, one by one"
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "id": "6782400804"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "吸入方式を選ぶと、洗浄の目安が最初に入ります。カートリッジとコンバーターは4週間ごと、ピストンなどの吸入式は6週間ごと、アイドロッパーは8週間ごとです。目安は2週間から12週間の中で直せます。",
+            "en": "Pick the filling system and a cleaning interval is filled in for you. Cartridge and converter pens start at every 4 weeks, piston and other built-in fillers at every 6 weeks, and eyedroppers at every 8 weeks. You can change it to anything from 2 to 12 weeks."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "通知は洗浄の2週間前と3日前と当日です。過ぎたら、洗ったと記録するまで毎日鳴ります。最後に書いた日からしばらく経ったペンには、乾いてるかもと出るので、書くか洗うかのきっかけになります。",
+            "en": "It notifies you 2 weeks before, 3 days before, and on the day. After that, it reminds you every day until you log a cleaning. A pen you haven't written with in a while shows a may-be-drying label, which nudges you to either write with it or clean it."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "無料だとペンは3本まで登録できます。ペンケースや箱で分けるのと、お手入れの記録はプレミアムです。インクのコレクションを管理する機能はありません。",
+            "en": "The free version holds up to 3 pens. Grouping by pen case or box and keeping a care log are Premium features. It doesn't manage an ink collection."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6763183078"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "どのペンに何色が入っているかを、写真つきのカードで一覧にできるアプリです。洗浄の目安を過ぎたペンが先頭に並び、インクを入れたままの日数を通知で知らせてくれます。",
+            "en": "This app shows which ink is in which pen on cards with photos. Pens past their cleaning guideline move to the top, and it notifies you how many days ink has been sitting in a pen."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "インクの管理が細かくて、シェーンやシマー、残量まで残せます。無料だとペン5本とインク10本までで、登録の数のほかは全部の機能が無料です。有料版は買い切りです。",
+            "en": "Its ink tracking is detailed, down to shading, shimmer, and how much is left. The free version holds 5 pens and 10 inks, and every feature except the item limit is free. The paid version is a one-time purchase."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6789585501"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "インクを入れる、洗浄するを記録すると、充填の履歴が残ります。インクを入れたまま使わずにいると、決めた日数で通知が来ます。ホーム画面のウィジェットで、充填中のペンと放置している日数も見られます。",
+            "en": "When you log filling or cleaning a pen, it builds a fill history. If a pen sits with ink in it, you get a notification after the number of days you set. A Home Screen widget shows inked pens and how long they've been sitting."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "ペン先の調整や修理の履歴を、依頼先や費用つきで残せるのも特徴です。無料だとペン3本とインク5本までです。",
+            "en": "It also keeps a history of nib adjustments and repairs, with who did them and what they cost. The free version holds 3 pens and 5 inks."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "洗浄の頻度はどう決めるか",
+        "en": "How to decide how often to flush"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "どのくらいで洗うかは、吸入方式やインクの種類、書く頻度で変わります。PenKeepの目安はあくまで出発点です。",
+            "en": "How often to flush depends on the filling system, the type of ink, and how often you write. PenKeep's intervals are only a starting point."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "ペンやインクの説明書、買ったお店の案内に合わせて決めたら、その日数をアプリに入れておけば忘れずに済みます。",
+            "en": "Settle on a number based on your pen's and ink's instructions or what the shop recommends, then put it in the app so you don't have to remember."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "どれを選ぶか",
+        "en": "Which one to pick"
+      },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "ja": "インクの色や残りの量まで細かく残したいなら、インク帳",
+              "en": "If you want detailed records of ink colors and how much is left, Inkcho"
+            },
+            {
+              "ja": "ペン先の調整や修理の履歴も残したいなら、インクノート",
+              "en": "If you also want a history of nib adjustments and repairs, Ink Note"
+            },
+            {
+              "ja": "ペンごとの洗浄の日を数えて、過ぎたら毎日知らせてほしいなら、PenKeep",
+              "en": "If you want each pen's cleaning date counted down, with a reminder every day once it passes, PenKeep"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "ja": "無料で使えますか？",
+        "en": "Are they free?"
+      },
+      "a": {
+        "ja": "3本とも無料で入れられます。ペンの数で言うと、PenKeepとインクノートは3本まで、インク帳は5本まで無料です。",
+        "en": "All three are free to download. By number of pens, PenKeep and Ink Note are free for up to 3, and Inkcho for up to 5."
+      }
+    },
+    {
+      "q": {
+        "ja": "久しぶりに使う万年筆が書けません。",
+        "en": "A pen I haven't used in a while won't write."
+      },
+      "a": {
+        "ja": "どのアプリも直し方を教えるものではありません。固まってしまったペンは、買ったお店かメーカーに相談してください。",
+        "en": "None of these apps fix that for you. For a pen that's dried up, ask the shop where you bought it or the maker."
+      }
+    },
+    {
+      "q": {
+        "ja": "Androidで使えますか？",
+        "en": "Do they work on Android?"
+      },
+      "a": {
+        "ja": "PenKeepはiPhone専用です。ほかの2本は、App Storeの説明文にAndroid版の記載がありませんでした。",
+        "en": "PenKeep is iPhone only. The App Store descriptions of the other two don't mention an Android version."
+      }
+    }
+  ],
+  "closing": {
+    "ja": "PenKeepはまだ評価が0件なので、愛用の1本を入れてみた人の感想を待ってます🖋️",
+    "en": "PenKeep has no ratings yet, so I'd love to hear from anyone who adds a favorite pen 🖋️"
+  },
+  "notes": {
+    "ja": "各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。洗浄の仕方と周期は、ペンとインクの説明書に従ってください。",
+    "en": "Features and rating counts were checked against each app's App Store description on November 15, 2026, and may change with updates. For how and how often to clean, follow the instructions for your pen and ink."
+  },
+  "illustration": {
+    "scene": "机の上。キャラが水を張ったコップに万年筆のペン先をひたして、インクが水にふわっと広がるのを見ている。横には布とペントレイに並んだ数本の万年筆、そして紫のチェックが出たスマホ（文字なし）。",
+    "alt": {
+      "ja": "水を張ったコップで万年筆を洗い、インクが広がるのを見ているキャラクター",
+      "en": "The character flushing a fountain pen in a glass of water, watching the ink swirl out"
+    }
+  }
+}

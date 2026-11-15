@@ -7,6 +7,8 @@
 
   python3 scripts/build_guides.py          # 全部作る
   python3 scripts/build_guides.py --check  # 検査だけ（書き出さない）
+  python3 scripts/build_guides.py --check --draft  # イラストがまだ無い下書きも検査だけ通す
+  python3 scripts/build_guides.py --sync-illustrations --draft  # 場面を docs/blog-illustrations.json に写す
 
 書き方は docs/guides/README.md。
 """
@@ -23,6 +25,21 @@ GUIDES_DIR = os.path.join(BASE_DIR, 'docs', 'guides')
 POSTS_DIR = os.path.join(BASE_DIR, 'blog', 'posts')
 ILLUSTRATIONS = os.path.join(BASE_DIR, 'docs', 'blog-illustrations.json')
 SITEMAP = os.path.join(BASE_DIR, 'sitemap.xml')
+BLOG_INDEX = os.path.join(BASE_DIR, 'blog', 'index.html')
+HUB = os.path.join(BASE_DIR, 'blog', 'guides', 'index.html')
+HUB_URL = '/blog/guides/'
+HUB_TITLE = {'ja': '困りごとから選ぶアプリ', 'en': 'Apps for Everyday Problems'}
+# ブログ一覧の節に出す本数。残りは HUB_URL に全部並べる
+INDEX_CARDS = 6
+# ブログ一覧のこの2行の間は、このスクリプトが毎回作り直す
+CARDS_START = '<!-- guides:start（scripts/build_guides.py が作る。手で直さない） -->'
+CARDS_END = '<!-- guides:end -->'
+# schema.org の SoftwareApplication.applicationCategory に入れてよい値
+APP_CATEGORIES = {'GameApplication', 'SocialNetworkingApplication', 'TravelApplication', 'ShoppingApplication',
+                  'SportsApplication', 'LifestyleApplication', 'BusinessApplication', 'DesignApplication',
+                  'MultimediaApplication', 'EducationalApplication', 'HealthApplication', 'FinanceApplication',
+                  'ReferenceApplication', 'UtilitiesApplication', 'EntertainmentApplication', 'PhotographyApplication',
+                  'ProductivityApplication', 'MusicApplication', 'FoodApplication', 'NewsApplication', 'BookApplication'}
 SITE = 'https://tsuzukit.com'
 
 # 検索結果の説明文は、日本語だと120字あたりで切られる
@@ -69,12 +86,12 @@ def walk_bilingual(node, where, errors):
             walk_bilingual(value, f'{where}[{i}]', errors)
 
 
-def validate(guide, path, illustrations):
+def validate(guide, path, draft):
     errors = []
     name = os.path.basename(path)
     required = ['slug', 'date_published', 'date_updated', 'search_phrase', 'evidence', 'title', 'description',
-                'category', 'reading_minutes', 'author', 'tldr', 'disclosure', 'own_app', 'apps', 'sections',
-                'faq', 'closing', 'notes']
+                'excerpt', 'category', 'reading_minutes', 'author', 'tldr', 'disclosure', 'own_app', 'app_category',
+                'apps', 'sections', 'faq', 'closing', 'notes', 'illustration']
     for key in required:
         if key not in guide:
             errors.append(f'{name}: {key} が無い')
@@ -100,6 +117,9 @@ def validate(guide, path, illustrations):
         if len(guide['tldr'][lang]) > TLDR_MAX[lang]:
             errors.append(f'{name}: tldr.{lang} が{len(guide["tldr"][lang])}字（{TLDR_MAX[lang]}字まで）')
 
+    if guide['app_category'] not in APP_CATEGORIES:
+        errors.append(f'{name}: app_category は {sorted(APP_CATEGORIES)} のどれか')
+
     app_ids = [a['id'] for a in guide['apps']]
     if guide['own_app'] not in app_ids:
         errors.append(f'{name}: own_app が apps に無い')
@@ -107,6 +127,8 @@ def validate(guide, path, illustrations):
         for key in ('id', 'name', 'short', 'developer', 'icon', 'store_url', 'android_url', 'rating_count'):
             if key not in app:
                 errors.append(f'{name}: apps[{app.get("id")}] に {key} が無い（無いなら null と書く）')
+        if isinstance(app.get('developer'), str) and re.search(r'[^\x00-\x7F]', app['developer']):
+            errors.append(f'{name}: apps[{app.get("id")}] の開発者名が英字でない。{{"ja": ..., "en": ...}} で英語の表記も書く')
 
     # 比べたアプリは、全部カードで1回ずつ紹介する（表にだけ出て説明が無いアプリを作らない）
     carded = []
@@ -129,18 +151,41 @@ def validate(guide, path, illustrations):
         if carded.count(app_id) != 1:
             errors.append(f'{name}: アプリ {app_id} のカードが{carded.count(app_id)}枚（1枚にする）')
 
+    illustration = guide['illustration']
+    if not isinstance(illustration.get('scene'), str) or not illustration['scene'].strip():
+        errors.append(f'{name}: illustration.scene（場面の説明。日本語1〜3文）が無い')
     image = os.path.join(BASE_DIR, 'assets', 'images', 'posts', f'{slug}.webp')
-    if not os.path.exists(image):
+    if not draft and not os.path.exists(image):
         errors.append(f'{name}: イラスト assets/images/posts/{slug}.webp が無い（skill blog-illustration）')
-    alt = illustrations.get('alt', {}).get(slug)
-    if not alt or len(alt) != 2 or not all(alt):
-        errors.append(f'{name}: docs/blog-illustrations.json の alt に {slug} の日英が無い')
     return errors
+
+
+def sync_illustrations(guides):
+    """場面と代替テキストは記事の JSON が正。scripts/blog_illustration.py が読む docs/blog-illustrations.json に写す。"""
+    with open(ILLUSTRATIONS, encoding='utf-8') as f:
+        data = json.load(f)
+    changed = False
+    for guide in guides:
+        slug, ill = guide['slug'], guide['illustration']
+        alt = [ill['alt']['ja'], ill['alt']['en']]
+        if data['scenes'].get(slug) != ill['scene'] or data['alt'].get(slug) != alt:
+            data['scenes'][slug] = ill['scene']
+            data['alt'][slug] = alt
+            changed = True
+    if changed:
+        with open(ILLUSTRATIONS, 'w', encoding='utf-8') as f:
+            f.write(json.dumps(data, ensure_ascii=False, indent=2) + '\n')
 
 
 # ============================================================
 # 描画
 # ============================================================
+
+def developer_name(app, lang):
+    """開発者名。英字でない名前は {ja, en} で持たせ、英語表示で日本語や中国語を出さない。"""
+    dev = app['developer']
+    return dev[lang] if isinstance(dev, dict) else dev
+
 
 def render_app_card(app, own, lang):
     badge = ''
@@ -165,7 +210,7 @@ def render_app_card(app, own, lang):
                 <div class="guide-app-body">
                     {badge}
                     <h3 class="guide-app-name">{esc(app['name'][lang])}</h3>
-                    <p class="guide-app-meta">{esc(app['developer'])} · {ratings}</p>
+                    <p class="guide-app-meta">{esc(developer_name(app, lang))} · {ratings}</p>
                     <div class="guide-app-links">
                         {store}
                         {android}
@@ -263,7 +308,7 @@ def json_ld(guide, illustration_url):
             '@type': 'SoftwareApplication',
             'name': own['name']['ja'],
             'operatingSystem': 'iOS',
-            'applicationCategory': 'HealthApplication',
+            'applicationCategory': g['app_category'],
             'url': own['store_url'],
             'offers': {'@type': 'Offer', 'price': '0', 'priceCurrency': 'JPY'},
             'author': person,
@@ -278,7 +323,8 @@ def json_ld(guide, illustration_url):
             'itemListElement': [
                 {'@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': f'{SITE}/'},
                 {'@type': 'ListItem', 'position': 2, 'name': 'Blog', 'item': f'{SITE}/blog/'},
-                {'@type': 'ListItem', 'position': 3, 'name': g['title']['ja'], 'item': url},
+                {'@type': 'ListItem', 'position': 3, 'name': HUB_TITLE['ja'], 'item': f'{SITE}{HUB_URL}'},
+                {'@type': 'ListItem', 'position': 4, 'name': g['title']['ja'], 'item': url},
             ],
         },
     ]
@@ -287,8 +333,9 @@ def json_ld(guide, illustration_url):
     return data.replace('</', '<\\/')
 
 
-def render_page(guide, alt):
+def render_page(guide):
     g = guide
+    alt = [g['illustration']['alt']['ja'], g['illustration']['alt']['en']]
     slug = g['slug']
     url = f'{SITE}/blog/posts/{slug}.html'
     image_path = f'/assets/images/posts/{slug}.webp'
@@ -380,7 +427,7 @@ def render_page(guide, alt):
 
         <nav class="post-navigation">
             <img class="tk-char tk-char--post" src="/assets/images/character-hang.png" alt="" width="381" height="208">
-            <a href="/blog/" class="nav-link-wrapper"><span>&larr; {bi('ブログ一覧へ', 'Back to the blog')}</span></a>
+            <a href="{HUB_URL}" class="nav-link-wrapper"><span>&larr; {bi('困りごとから選ぶアプリの一覧へ', 'All guides: apps for everyday problems')}</span></a>
         </nav>
     </article>
 
@@ -410,11 +457,195 @@ def render_page(guide, alt):
 '''
 
 
-def update_sitemap(slug, lastmod):
-    """記事の <url> が無ければ足し、あれば lastmod だけ揃える。"""
+def render_card(guide):
+    g = guide
+    slug = g['slug']
+    url = f'/blog/posts/{slug}.html'
+    alt = g['illustration']['alt']
+    date = g['date_published'].replace('-', '.')
+    return f'''                <article class="post-card" data-category="tips">
+                    <div class="post-card-image" style="height: auto; aspect-ratio: 3 / 2;">
+                        <img src="/assets/images/posts/{slug}.webp" width="1200" height="800" loading="lazy" alt="{esc(alt['ja'])}" data-en-alt="{esc(alt['en'])}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    </div>
+                    <div class="post-card-content">
+                        <div class="post-meta">
+                            <span class="post-date">{date}</span>
+                            <span class="post-category">{bi(g['category']['ja'], g['category']['en'])}</span>
+                        </div>
+                        <h3 class="post-card-title">
+                            <a href="{url}">{bi(g['title']['ja'], g['title']['en'])}</a>
+                        </h3>
+                        <p class="post-card-excerpt">{bi(g['excerpt']['ja'], g['excerpt']['en'])}</p>
+                        <div class="post-card-footer">
+                            <span class="reading-time">{bi(f"{g['reading_minutes']}分で読む", f"{g['reading_minutes']} min read")}</span>
+                            <a href="{url}" class="read-more">{bi('続きを読む →', 'Read more →')}</a>
+                        </div>
+                    </div>
+                </article>
+'''
+
+
+def ordered(guides):
+    return sorted(guides, key=lambda g: (g['date_published'], g['slug']), reverse=True)
+
+
+def update_blog_index(guides):
+    """ブログ一覧の印の間に「困りごとから選ぶアプリ」の節を作り直す。新しい数本と、全部を並べた一覧ページへのリンク。"""
+    with open(BLOG_INDEX, encoding='utf-8') as f:
+        text = f.read()
+    start, end = text.index(CARDS_START) + len(CARDS_START), text.index(CARDS_END)
+    n = len(guides)
+    cards = '\n'.join(render_card(g) for g in ordered(guides)[:INDEX_CARDS])
+    section = f'''
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Guides</span>
+                <h2 class="section-title">{bi(HUB_TITLE['ja'], HUB_TITLE['en'])}</h2>
+                <p style="color: var(--color-secondary); font-weight: 300; margin-top: 0.5rem;">{bi(f'検索した悩みに、僕のアプリも入れて答える記事。ぜんぶで{n}本', f'Answers to the problems people search for, with my own apps in the mix. {n} guides in all')}</p>
+            </div>
+            <div class="posts-grid">
+{cards}
+            </div>
+            <p style="text-align: center; margin-top: 2rem;"><a href="{HUB_URL}" class="btn btn-primary">{bi(f'{n}本ぜんぶ見る', f'See all {n} guides')}</a></p>
+        </div>
+    </section>
+    '''
+    new = text[:start] + section + text[end:]
+    if new != text:
+        with open(BLOG_INDEX, 'w', encoding='utf-8') as f:
+            f.write(new)
+
+
+def render_hub(guides):
+    """問いの記事を全部並べる一覧ページ。各記事はここに戻り、ここから全部に行ける。"""
+    n = len(guides)
+    cards = '\n'.join(render_card(g) for g in ordered(guides))
+    lead_ja = f'困っていることの言葉から、それに効くアプリを選ぶための記事を{n}本まとめました。どの記事にも僕が作ったアプリが入っているので、冒頭でそう書いています。'
+    lead_en = f'{n} guides that start from a problem and help you pick an app for it. Every one of them includes an app I made, and each says so at the top.'
+    items = [{'@type': 'ListItem', 'position': i + 1, 'url': f'{SITE}/blog/posts/{g["slug"]}.html', 'name': g['title']['ja']}
+             for i, g in enumerate(ordered(guides))]
+    ld = json.dumps({'@context': 'https://schema.org', '@type': 'CollectionPage', 'name': HUB_TITLE['ja'],
+                     'url': f'{SITE}{HUB_URL}', 'description': lead_ja,
+                     'mainEntity': {'@type': 'ItemList', 'itemListElement': items}}, ensure_ascii=False, indent=2).replace('</', '<\\/')
+    return f'''<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/js/lang.js"></script>
+    <!-- このページは scripts/build_guides.py が docs/guides/*.json から作る。手で直さない -->
+    <title>{esc(HUB_TITLE['ja'])} - Blog | Ryo Tsuzukihashi</title>
+    <meta name="description" content="{esc(lead_ja)}">
+    <meta name="title-en" content="{esc(HUB_TITLE['en'])} - Blog | Ryo Tsuzukihashi">
+    <meta name="description-en" content="{esc(lead_en)}">
+    <link rel="canonical" href="{SITE}{HUB_URL}">
+    <meta property="og:title" content="{esc(HUB_TITLE['ja'])}">
+    <meta property="og:description" content="{esc(lead_ja)}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{SITE}{HUB_URL}">
+    <meta property="og:image" content="https://tsuzukit.com/assets/images/ogp/blog.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/tsuzukit.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-dark-32x32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-dark-16x16.png" media="(prefers-color-scheme: dark)">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){{dataLayer.push(arguments);}}
+      gtag('js', new Date());
+      gtag('config', 'G-QERPQ1EGLH');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8240751277462688"
+        crossorigin="anonymous"></script>
+
+    <script type="application/ld+json">
+{ld}
+    </script>
+</head>
+<body class="blog-index">
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">TsuzuKit</a>
+            <div class="nav-menu" id="navMenu">
+                <a href="/portfolio/" class="nav-link">Portfolio</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/blog/" class="nav-link active">Blog</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section" style="padding-top: 140px;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Guides</span>
+                <h1 class="section-title">{bi(HUB_TITLE['ja'], HUB_TITLE['en'])}</h1>
+                <p style="color: var(--color-secondary); margin-top: 0.75rem; max-width: 640px; margin-inline: auto; line-height: 1.8;">{bi(lead_ja, lead_en)}</p>
+            </div>
+            <div class="posts-grid">
+{cards}
+            </div>
+            <p style="text-align: center; margin-top: 3rem;"><a href="/blog/" class="btn btn-primary">{bi('ブログ一覧へ', 'Back to the blog')}</a></p>
+        </div>
+    </section>
+
+    <footer class="footer-peek-host" style="position: relative; background: var(--color-primary); color: var(--color-background); padding: 3rem 0; text-align: center;">
+        <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
+        <div class="container">
+            <p style="color: var(--color-background); opacity: 0.8; margin-bottom: 1rem;">&copy; 2026 Ryo Tsuzukihashi. All rights reserved.</p>
+            <div style="margin-top: 1.5rem;">
+                <a href="/legal/privacy-policy.html" style="color: var(--color-background); opacity: 0.6; margin: 0 1rem; text-decoration: none;">{bi('プライバシーポリシー', 'Privacy Policy')}</a>
+                <a href="/legal/terms-of-service.html" style="color: var(--color-background); opacity: 0.6; margin: 0 1rem; text-decoration: none;">{bi('利用規約', 'Terms of Service')}</a>
+                <a href="/legal/commercial-law.html" style="color: var(--color-background); opacity: 0.6; margin: 0 1rem; text-decoration: none;">{bi('特定商取引法', 'Specified Commercial Transactions Act')}</a>
+                <a href="/legal/disclaimer.html" style="color: var(--color-background); opacity: 0.6; margin: 0 1rem; text-decoration: none;">{bi('免責事項', 'Disclaimer')}</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const navToggle = document.getElementById('navToggle');
+        const navMenu = document.getElementById('navMenu');
+        navToggle.addEventListener('click', function () {{
+            navToggle.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        }});
+        // blog.css はカードを .animated が付くまで隠すので、見えたら付ける
+        const observer = new IntersectionObserver(function (entries) {{
+            entries.forEach(function (entry) {{
+                if (entry.isIntersecting) {{ entry.target.classList.add('animated'); observer.unobserve(entry.target); }}
+            }});
+        }}, {{ threshold: 0.1, rootMargin: '0px 0px -50px 0px' }});
+        document.querySelectorAll('.post-card').forEach(function (card) {{ observer.observe(card); }});
+    </script>
+</body>
+</html>
+'''
+
+
+def update_sitemap(path, lastmod):
+    """ページの <url> が無ければ足し、あれば lastmod だけ揃える。path はサイトのルートからのパス。"""
     with open(SITEMAP, encoding='utf-8') as f:
         text = f.read()
-    loc = f'{SITE}/blog/posts/{slug}.html'
+    loc = f'{SITE}{path}'
     pattern = re.compile(rf'(<loc>{re.escape(loc)}</loc>\s*<lastmod>)[^<]*(</lastmod>)')
     if pattern.search(text):
         new = pattern.sub(rf'\g<1>{lastmod}\g<2>', text)
@@ -429,19 +660,29 @@ def update_sitemap(slug, lastmod):
 
 def main():
     check_only = '--check' in sys.argv
-    with open(ILLUSTRATIONS, encoding='utf-8') as f:
-        illustrations = json.load(f)
+    draft = '--draft' in sys.argv
+    if draft and not (check_only or '--sync-illustrations' in sys.argv):
+        print('--draft は --check か --sync-illustrations と一緒にだけ使える（イラストの無いページは書き出さない）')
+        return 1
     paths = sorted(glob.glob(os.path.join(GUIDES_DIR, '*.json')))
     if not paths:
         print('docs/guides/ に JSON がありません')
         return 1
 
-    guides, errors = [], []
+    guides, errors, passed = [], [], []
     for path in paths:
         with open(path, encoding='utf-8') as f:
             guide = json.load(f)
-        errors += validate(guide, path, illustrations)
+        found = validate(guide, path, draft)
+        errors += found
         guides.append(guide)
+        if not found:
+            passed.append(guide)
+    if '--sync-illustrations' in sys.argv:
+        # イラストを作る前に、場面を docs/blog-illustrations.json へ写すだけ。書きかけの記事があっても、通ったぶんは写す
+        sync_illustrations(passed)
+        print(f'{len(passed)}本の場面を docs/blog-illustrations.json に写しました（検査に通らず写さなかったもの {len(guides) - len(passed)}本）')
+        return 0
     if errors:
         print('止めました。直してからもう一度流してください:')
         for e in errors:
@@ -451,13 +692,19 @@ def main():
         print(f'{len(guides)}本とも検査を通りました')
         return 0
 
+    sync_illustrations(guides)
     for guide in guides:
         slug = guide['slug']
         out = os.path.join(POSTS_DIR, f'{slug}.html')
         with open(out, 'w', encoding='utf-8') as f:
-            f.write(render_page(guide, illustrations['alt'][slug]))
-        update_sitemap(slug, guide['date_updated'])
-        print(f'書き出し: blog/posts/{slug}.html')
+            f.write(render_page(guide))
+        update_sitemap(f'/blog/posts/{slug}.html', guide['date_updated'])
+    os.makedirs(os.path.dirname(HUB), exist_ok=True)
+    with open(HUB, 'w', encoding='utf-8') as f:
+        f.write(render_hub(guides))
+    update_sitemap(HUB_URL, max(g['date_updated'] for g in guides))
+    update_blog_index(guides)
+    print(f'{len(guides)}本を書き出し、ブログ一覧のカードとサイトマップを揃えました')
     return 0
 
 

@@ -1,0 +1,438 @@
+{
+  "slug": "help-parents-smartphone-remotely",
+  "date_published": "2026-11-15",
+  "date_updated": "2026-11-15",
+  "search_phrase": {
+    "ja": "親 の スマホ 遠隔 操作 アプリ",
+    "en": "app to help parents with their phone remotely"
+  },
+  "evidence": "2026-11-15 に Google の検索候補で「親 スマホ 遠隔」を引くと8件出て、全部が親のスマホを遠隔で操作したい形で、そのうち3件が「アプリ」付きだった。「スマホ 遠隔操作 親」でも「アプリ」付きが出た。同じ日に App Store で「遠隔操作」を検索すると、親のスマホ向けに出てくるのは携帯会社のオペレーターが画面を見るアプリで、家族どうしで使う形のアプリはほとんど無かった。",
+  "title": {
+    "ja": "離れて住む親のスマホを手伝う方法とアプリ4選",
+    "en": "4 Ways to Help Your Parents With Their Phone From Far Away"
+  },
+  "description": {
+    "ja": "親から「これどうやるの？」と電話が来たときに使える方法を比べました。携帯会社の遠隔サポート、家族で作る説明書、親がひとりで解けるAIのアプリです。ここ押してねの作者が書いています。",
+    "en": "I compared ways to help when your parents call asking how to do something on their phone: carrier remote support, guides you make yourself, and an AI app they can use on their own. Written by the maker of Tap Here."
+  },
+  "excerpt": {
+    "ja": "電話で「右上の歯車の」と説明するのに疲れた人へ。遠隔サポート、説明書、AIの3つの手を比べました。ここ押してねを作った僕が書いています。",
+    "en": "For anyone tired of explaining the gear icon at the top right over the phone. Remote support, how-to guides, and AI compared. I made Tap Here."
+  },
+  "category": {
+    "ja": "アプリの選び方",
+    "en": "App guides"
+  },
+  "reading_minutes": 5,
+  "author": {
+    "name": {
+      "ja": "續橋 涼",
+      "en": "Ryo Tsuzukihashi"
+    },
+    "handle": "tsuzuki817",
+    "bio": {
+      "ja": "2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。ここ押してねの作者です。",
+      "en": "I've been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made Tap Here."
+    },
+    "url": "https://tsuzukit.com/about/",
+    "same_as": [
+      "https://x.com/tsuzuki817"
+    ]
+  },
+  "tldr": {
+    "ja": "親も自分もiPhoneなら、まずFaceTimeの画面共有を試すのが早いです。ドコモやauの契約なら、オペレーターが画面を見て案内するサービスもあります。親がひとりで解けるようにしたいなら、僕が作ったここ押してねも見てみてください。親がスクショを見せると、押す場所に赤い丸と番号をつけて返します。遠隔操作のアプリではありません。",
+    "en": "If both you and your parents use iPhone, try FaceTime screen sharing first. If they're with docomo or au, there are services where an operator looks at their screen and walks them through it. If you want your parents to sort things out on their own, take a look at Tap Here, which I made. They show it a screenshot, and it marks where to tap with a red circle and a number. It's not a remote control app."
+  },
+  "disclosure": {
+    "ja": "この記事は、ここ押してねを作った僕が書いています。ほかの3本は知らない会社や開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。",
+    "en": "I made Tap Here, and I wrote this article. The other three apps are from companies and developers I don't know, and I haven't received money or anything else from them. Everything compared here comes from each app's App Store description and rating count as of November 15, 2026."
+  },
+  "own_app": "6823032334",
+  "app_category": "UtilitiesApplication",
+  "apps": [
+    {
+      "id": "6823032334",
+      "name": {
+        "ja": "ここ押してね：スマホの使い方サポートAI",
+        "en": "Tap Here: Phone Help with AI"
+      },
+      "short": {
+        "ja": "ここ押してね",
+        "en": "Tap Here"
+      },
+      "developer": "Ryo Tsudukihashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/94/58/53/9458534e-aa0f-63c6-615c-5782a9ceb9a9/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6823032334",
+      "android_url": "https://play.google.com/store/apps/details?id=com.tsuzukit.kokoboshi",
+      "rating_count": 0
+    },
+    {
+      "id": "1252897662",
+      "name": {
+        "ja": "あんしん遠隔サポート",
+        "en": "docomo Anshin Remote Support"
+      },
+      "short": {
+        "ja": "あんしん遠隔サポート",
+        "en": "docomo Remote Support"
+      },
+      "developer": {
+        "ja": "株式会社NTTドコモ",
+        "en": "NTT DOCOMO, INC."
+      },
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/48/39/b0/4839b025-159d-442e-b77c-0f30dd2b77e1/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id1252897662",
+      "android_url": null,
+      "rating_count": 1533
+    },
+    {
+      "id": "1033418238",
+      "name": {
+        "ja": "遠隔操作サポート",
+        "en": "au Remote Operation Support"
+      },
+      "short": {
+        "ja": "遠隔操作サポート",
+        "en": "au Remote Support"
+      },
+      "developer": "OPTiM Corporation",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4e/5d/5c/4e5d5c19-bc4c-5657-bce8-4750ed537bea/AppIcon-0-0-1x_U007emarketing-0-10-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id1033418238",
+      "android_url": null,
+      "rating_count": 148
+    },
+    {
+      "id": "6746074578",
+      "name": {
+        "ja": "スマホの使い方音声ガイド-自由にカスタム可能なマイ動画説明書",
+        "en": "Phone How-To Voice Guide: Make Your Own Step-by-Step Guides"
+      },
+      "short": {
+        "ja": "スマホの使い方音声ガイド",
+        "en": "Phone How-To Voice Guide"
+      },
+      "developer": "Yuto Inagaki",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/99/e3/56/99e35622-6f0f-8ae7-f42f-5a1a0be1a854/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6746074578",
+      "android_url": null,
+      "rating_count": 3
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ja": "まず、iPhoneどうしならFaceTimeで",
+        "en": "If you both have iPhones, start with FaceTime"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "親も自分もiPhoneなら、FaceTimeで通話しながら画面を共有できます。iOS 18からは、共有された画面の上に指で描いて場所を示したり、相手のiPhoneの操作をリクエストしたりもできます。",
+            "en": "If you and your parents both use iPhone, you can share screens during a FaceTime call. Since iOS 18, you can also draw on their shared screen to point at things, or ask to control their iPhone."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "ただ、親がFaceTimeをかけて画面共有を始めるところまでは、自分でやってもらう必要があります。そこでつまずく親には、この先のやり方が合います。",
+            "en": "The catch is that your parents still have to start the FaceTime call and turn on screen sharing themselves. If that's where they get stuck, the options below work better."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "4本をざっくり比べる",
+        "en": "The four apps at a glance"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "誰が助けるかで分かれます。携帯会社の人、家族が前もって作った説明、それともAIかです。",
+            "en": "They differ in who does the helping: someone at the phone company, a guide your family made in advance, or AI."
+          }
+        },
+        {
+          "type": "table",
+          "head": [
+            {
+              "ja": "アプリ",
+              "en": "App"
+            },
+            {
+              "ja": "評価の件数",
+              "en": "Ratings"
+            },
+            {
+              "ja": "誰が助けるか",
+              "en": "Who helps"
+            },
+            {
+              "ja": "親がすること",
+              "en": "What your parent does"
+            },
+            {
+              "ja": "使える人",
+              "en": "Who can use it"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ja": "ここ押してね（僕のアプリ）",
+                "en": "Tap Here (my app)"
+              },
+              {
+                "ja": "0件",
+                "en": "0"
+              },
+              {
+                "ja": "AIが画面を見て押す場所を示す",
+                "en": "AI reads the screen and marks where to tap"
+              },
+              {
+                "ja": "困った画面のスクショを見せる",
+                "en": "Show it a screenshot of the screen they are stuck on"
+              },
+              {
+                "ja": "誰でも。プランの登録が必要",
+                "en": "Anyone. A subscription plan is required"
+              }
+            ],
+            [
+              {
+                "ja": "あんしん遠隔サポート",
+                "en": "docomo Remote Support"
+              },
+              {
+                "ja": "1,533件",
+                "en": "1,533"
+              },
+              {
+                "ja": "ドコモのオペレーター",
+                "en": "A docomo operator"
+              },
+              {
+                "ja": "電話して接続番号を入れる",
+                "en": "Call, then enter a connection number"
+              },
+              {
+                "ja": "ドコモのサービスを使っている人",
+                "en": "People using the docomo service"
+              }
+            ],
+            [
+              {
+                "ja": "遠隔操作サポート",
+                "en": "au Remote Support"
+              },
+              {
+                "ja": "148件",
+                "en": "148"
+              },
+              {
+                "ja": "auお客さまセンターのオペレーター",
+                "en": "An operator at au customer service"
+              },
+              {
+                "ja": "オペレーターと画面を共有する",
+                "en": "Share their screen with the operator"
+              },
+              {
+                "ja": "au利用者。アプリだけでは動かない",
+                "en": "au customers. Does not work on its own"
+              }
+            ],
+            [
+              {
+                "ja": "スマホの使い方音声ガイド",
+                "en": "Phone How-To Voice Guide"
+              },
+              {
+                "ja": "3件",
+                "en": "3"
+              },
+              {
+                "ja": "家族が前もって作った説明",
+                "en": "A guide your family made in advance"
+              },
+              {
+                "ja": "説明を聞きながら操作する",
+                "en": "Follow the guide while using the phone"
+              },
+              {
+                "ja": "誰でも",
+                "en": "Anyone"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "1本ずつ見ていく",
+        "en": "Each app, one by one"
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "id": "6823032334"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "親が困った画面のスクショを撮って、このアプリで選ぶと、押す場所に赤い丸と番号と矢印をつけて返します。やりたいことも書いておくと、もっとくわしく案内します。文字を大きくしたい、のような一言で大丈夫です。",
+            "en": "Your parent takes a screenshot of the screen they're stuck on and picks it in the app, and it comes back with a red circle, a number, and an arrow on the spot to tap. If they also type what they want to do, the guidance gets more specific. A few words like make the text bigger are enough."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "手順は1つずつ出て、声でも読み上げます。お金や暗証番号を求める画面や、ウイルスに感染したという偽の警告には「注意」を出します。丸のついた画像は、メッセージアプリで家族に送れます。",
+            "en": "Steps appear one at a time and are read aloud too. On screens asking for money or a PIN, or fake virus warnings, it shows a caution. The marked-up image can be sent to family through a messaging app."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "使うにはサブスクリプションのプランの登録が必要で、1日に聞けるのは100回までです。案内にはAIを使っているので、まちがえることもあります。おかしいと思ったら押さずに家族に聞くよう、アプリの中でも伝えています。遠隔操作はできません。",
+            "en": "It requires a subscription plan, with up to 100 questions a day. The guidance comes from AI, so it can be wrong, and the app itself tells people to stop and ask family if something seems off. It can't control a phone remotely."
+          }
+        },
+        {
+          "type": "app",
+          "id": "1252897662"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "ドコモのあんしん遠隔サポートのサービスを使うためのアプリです。専用の番号に電話して、オペレーターに言われた6桁の接続番号を入れると、オペレーターが画面を見て案内してくれます。",
+            "en": "This app is for docomo's Anshin Remote Support service. Your parent calls a dedicated number, enters the 6-digit code the operator gives them, and the operator looks at their screen and guides them."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "評価が1,533件あって、4本の中でいちばん使われています。サービスの中身や対応機種は、ドコモのホームページで確かめる形になっています。",
+            "en": "With 1,533 ratings, it's the most used of the four. Details of the service and which devices it supports are listed on docomo's website."
+          }
+        },
+        {
+          "type": "app",
+          "id": "1033418238"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "auお客さまセンターのオペレーターが、iPhoneやiPadの画面を共有しながら設定や操作を案内するためのアプリです。撮ったスクショを使って案内を受けることもできます。",
+            "en": "With this app, an operator at au customer service shares the iPhone or iPad screen and walks your parent through settings and features. They can also get help using a screenshot."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "説明文にあるとおり、アプリだけでは動きません。オペレーターにつながってから使います。",
+            "en": "As the description says, it doesn't work on its own. It's used once your parent is connected with an operator."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6746074578"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "家族が画像と説明文か声で、スマホの使い方の説明を作っておくアプリです。説明は画面のすみの小さな窓に出るので、親はほかのアプリを開いたまま聞けます。",
+            "en": "You make step-by-step guides in advance, with pictures and either text or your voice. The guide appears in a small window in the corner, so your parent can listen while using another app."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "LINEやYouTubeのように、親がよく使う操作を前もって用意しておけるのが強みです。編集の画面にはパスワードがかかるので、親がうっかり消す心配も少なくなっています。",
+            "en": "Its strength is preparing guides ahead of time for things your parent does often, like LINE or YouTube. The editing screen is password protected, so they're less likely to delete anything by accident."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "どれを選ぶか",
+        "en": "Which one to pick"
+      },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "ja": "親も自分もiPhoneで、電話しながら手伝えるなら、FaceTimeの画面共有",
+              "en": "If you both have iPhones and can help over a call, FaceTime screen sharing"
+            },
+            {
+              "ja": "ドコモやauの契約で、人に聞きたいなら、携帯会社の遠隔サポート",
+              "en": "If they are with docomo or au and want a real person, the carrier remote support"
+            },
+            {
+              "ja": "よく使う操作が決まっているなら、スマホの使い方音声ガイドで説明を作っておく",
+              "en": "If they always do the same few things, make guides in advance with Phone How-To Voice Guide"
+            },
+            {
+              "ja": "家族がすぐ電話に出られないときも、親がひとりで進められるようにしたいなら、ここ押してね",
+              "en": "If you want your parents to manage on their own when you can't pick up, Tap Here"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "ja": "ここ押してねで、親のスマホを遠隔で操作できますか？",
+        "en": "Can I control my parent's phone remotely with Tap Here?"
+      },
+      "a": {
+        "ja": "できません。親が見せたスクショに押す場所を描いて返すアプリです。押すのは親自身です。",
+        "en": "No. It marks up the screenshot your parent shows it. Your parent does the tapping."
+      }
+    },
+    {
+      "q": {
+        "ja": "Androidでも使えますか？",
+        "en": "Does it work on Android?"
+      },
+      "a": {
+        "ja": "ここ押してねはGoogle PlayにもAndroid版があります。FaceTimeの画面共有は、Appleの機器どうしで使う機能です。",
+        "en": "Tap Here is also on Google Play for Android. FaceTime screen sharing only works between Apple devices."
+      }
+    },
+    {
+      "q": {
+        "ja": "スクショにパスワードが映っていたら？",
+        "en": "What if a password shows in the screenshot?"
+      },
+      "a": {
+        "ja": "ここ押してねは、スクショを押す場所を考えるためにAIへ送ります。暗証番号やパスワード、カードの番号が映った画面は見せないでください。",
+        "en": "Tap Here sends the screenshot to AI to figure out where to tap. Please don't show it screens with PINs, passwords, or card numbers."
+      }
+    }
+  ],
+  "closing": {
+    "ja": "ここ押してねはまだ評価が1件も無いので、親御さんと使ってみた感想を待ってます🙏",
+    "en": "Tap Here doesn't have a single rating yet, so I'd love to hear how it goes if you try it with your parents 🙏"
+  },
+  "notes": {
+    "ja": "各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。携帯会社のサービスの料金や条件は、各社のホームページで確かめてください。",
+    "en": "Features and rating counts were checked against each app's App Store description on November 15, 2026, and may change with updates. Check each carrier's website for the cost and terms of their services."
+  },
+  "illustration": {
+    "scene": "絵が左右2つの部屋に分かれている。左の居間では、少し小柄な色ちがいの丸いキャラがひとりでスマホを持ち、画面（文字なし）の一か所に赤い丸の印が光っていて、そこを指で押そうとしている。右の離れた部屋では、黒いまるいキャラが自分のスマホに届いた赤い丸つきの画像（文字なし）を見て、ほっとした顔をしている。",
+    "alt": {
+      "ja": "離れた部屋で、親のスマホの赤い丸の印を見てほっとするキャラクター",
+      "en": "In separate rooms, a parent taps a glowing red circle while the character, far away, looks relieved at the same marked-up image"
+    }
+  }
+}

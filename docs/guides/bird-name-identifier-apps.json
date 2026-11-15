@@ -1,0 +1,416 @@
+{
+  "slug": "bird-name-identifier-apps",
+  "date_published": "2026-11-15",
+  "date_updated": "2026-11-15",
+  "search_phrase": {
+    "ja": "鳥の名前を調べるアプリ",
+    "en": "bird identification app"
+  },
+  "evidence": "2026-11-15 に Google の検索候補で「鳥 名前 調べる」を引くと、6件中5件が「鳥の名前を調べる」で始まり、そのうち2件が「アプリ」、1件が「鳴き声」付きだった。「野鳥 名前」の12件には「野鳥 名前 アプリ」と「野鳥 名前がわからない」があり、「鳥の鳴き声 アプリ」は10件すべてがアプリを探す語だった。同じ日の App Store で「鳥 名前 調べる」を引くと、鳥専用のアプリは評価0〜1件の新しいものが多く、名の知れたMerlinは195件、Picture Birdは2,751件だった。",
+  "title": {
+    "ja": "見かけた鳥の名前を、写真と鳴き声で調べるアプリ4選",
+    "en": "4 Apps That Name the Bird You Saw, From a Photo or Its Song"
+  },
+  "description": {
+    "ja": "見かけた鳥や、声だけ聞こえた鳥の名前を調べるアプリを4本比べました。写真と鳴き声のどちらで調べられるか、無料で使える範囲、日本の鳥への対応の違いをまとめています。BirdLensの作者が書いています。",
+    "en": "I compared four iPhone apps that name a bird you saw or only heard: whether they work from a photo, a recording, or both, what is free, and how they handle birds in Japan. Written by the maker of BirdLens."
+  },
+  "excerpt": {
+    "ja": "写真で調べるか、鳴き声で調べるか、無料で使える範囲で4本を比べました。BirdLensを作った僕が、自分のアプリも入れて書いています。",
+    "en": "Four apps compared on photo or song identification and what is free. I made BirdLens, and it is one of the four."
+  },
+  "category": {
+    "ja": "アプリの選び方",
+    "en": "App guides"
+  },
+  "reading_minutes": 4,
+  "author": {
+    "name": {
+      "ja": "續橋 涼",
+      "en": "Ryo Tsuzukihashi"
+    },
+    "handle": "tsuzuki817",
+    "bio": {
+      "ja": "2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。BirdLensの作者です。",
+      "en": "I've been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made BirdLens."
+    },
+    "url": "https://tsuzukit.com/about/",
+    "same_as": [
+      "https://x.com/tsuzuki817"
+    ]
+  },
+  "tldr": {
+    "ja": "鳥の名前は、写真か鳴き声の録音からAIが候補を出してくれるアプリで調べられます。無料でしっかり使いたいなら、コーネル大学鳥類学研究所のMerlinです。声だけを日本の鳥に絞って聞き分けたいならききしる。写真と鳴き声の両方で、似た鳥との見分け方まで知りたい人は、僕が作ったBirdLensも見てみてください。",
+    "en": "You can name a bird with an app that suggests candidates from a photo or a recording of its song. If you want something solid for free, go with Merlin from the Cornell Lab of Ornithology. If you only care about songs and want an app focused on birds in Japan, try Kikishiru. If you want both photo and song, plus tips on telling look-alikes apart, take a look at BirdLens, which I made."
+  },
+  "disclosure": {
+    "ja": "この記事は、BirdLensを作った僕が書いています。ほかの3本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。",
+    "en": "I made BirdLens, and I wrote this article. The other three apps are by developers I don't know, and I haven't received money or anything else from them. Everything compared here comes from each app's App Store description and rating count as of November 15, 2026."
+  },
+  "own_app": "6757175763",
+  "app_category": "ReferenceApplication",
+  "apps": [
+    {
+      "id": "6757175763",
+      "name": {
+        "ja": "BirdLens - 野鳥AI図鑑",
+        "en": "BirdLens - Bird AI Guide"
+      },
+      "short": {
+        "ja": "BirdLens",
+        "en": "BirdLens"
+      },
+      "developer": "Ryo Tsudukihashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/03/1e/63/031e63ef-1ea7-0c5a-ca7c-a501aefc822b/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6757175763",
+      "android_url": null,
+      "rating_count": 0
+    },
+    {
+      "id": "773457673",
+      "name": {
+        "ja": "Merlin Bird ID by Cornell Lab",
+        "en": "Merlin Bird ID by Cornell Lab"
+      },
+      "short": {
+        "ja": "Merlin",
+        "en": "Merlin"
+      },
+      "developer": "Cornell University",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b7/09/73/b7097326-ccf3-567e-7054-636b14a46bde/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id773457673",
+      "android_url": "https://play.google.com/store/apps/details?id=com.labs.merlinbirdid.app",
+      "rating_count": 195
+    },
+    {
+      "id": "1474586978",
+      "name": {
+        "ja": "Picture Bird - 撮ったら、判る--1秒鳥図鑑",
+        "en": "Picture Bird: Bird identifier"
+      },
+      "short": {
+        "ja": "Picture Bird",
+        "en": "Picture Bird"
+      },
+      "developer": "Next Vision Limited",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/39/00/f7/3900f7da-d551-7d06-d7b0-9f01076e0fea/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id1474586978",
+      "android_url": null,
+      "rating_count": 2751
+    },
+    {
+      "id": "6785257128",
+      "name": {
+        "ja": "ききしる",
+        "en": "Kikishiru"
+      },
+      "short": {
+        "ja": "ききしる",
+        "en": "Kikishiru"
+      },
+      "developer": "Shuichi Kodama",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/cf/45/32/cf453227-cef3-5eee-44b9-91d8ed7c8e95/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6785257128",
+      "android_url": null,
+      "rating_count": 2
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ja": "4本をざっくり比べる",
+        "en": "The four apps at a glance"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "分かれ目は、写真で調べるか、声で調べるかです。木の上で鳴いている鳥は、姿が見えないことも多いですよね。",
+            "en": "The big split is whether you identify a bird by photo or by sound. A bird singing up in a tree is often hard to actually see."
+          }
+        },
+        {
+          "type": "table",
+          "head": [
+            {
+              "ja": "アプリ",
+              "en": "App"
+            },
+            {
+              "ja": "評価の件数",
+              "en": "Ratings"
+            },
+            {
+              "ja": "写真で調べる",
+              "en": "By photo"
+            },
+            {
+              "ja": "鳴き声で調べる",
+              "en": "By song"
+            },
+            {
+              "ja": "無料で使える範囲",
+              "en": "What's free"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ja": "BirdLens（僕のアプリ）",
+                "en": "BirdLens (my app)"
+              },
+              {
+                "ja": "0件",
+                "en": "0"
+              },
+              {
+                "ja": "あり",
+                "en": "Yes"
+              },
+              {
+                "ja": "あり",
+                "en": "Yes"
+              },
+              {
+                "ja": "写真と鳴き声を合わせて2回",
+                "en": "2 identifications, photo or song combined"
+              }
+            ],
+            [
+              {
+                "ja": "Merlin",
+                "en": "Merlin"
+              },
+              {
+                "ja": "195件",
+                "en": "195"
+              },
+              {
+                "ja": "あり",
+                "en": "Yes"
+              },
+              {
+                "ja": "あり",
+                "en": "Yes"
+              },
+              {
+                "ja": "無料のアプリ",
+                "en": "Free app"
+              }
+            ],
+            [
+              {
+                "ja": "Picture Bird",
+                "en": "Picture Bird"
+              },
+              {
+                "ja": "2,751件",
+                "en": "2,751"
+              },
+              {
+                "ja": "あり",
+                "en": "Yes"
+              },
+              {
+                "ja": "あり",
+                "en": "Yes"
+              },
+              {
+                "ja": "説明文に記載なし。年間プレミアムあり",
+                "en": "Not mentioned. Yearly Premium available"
+              }
+            ],
+            [
+              {
+                "ja": "ききしる",
+                "en": "Kikishiru"
+              },
+              {
+                "ja": "2件",
+                "en": "2"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "あり。日本の247種",
+                "en": "Yes, 247 species found in Japan"
+              },
+              {
+                "ja": "説明文に記載なし。広告なし",
+                "en": "Not mentioned. No ads"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "1本ずつ見ていく",
+        "en": "Each app, one by one"
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "id": "6757175763"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "鳥を撮るか、鳴き声を録音すると、AIが名前の候補を出します。体長や分類も一緒に出て、似ている候補も並びます。",
+            "en": "Take a photo of a bird or record its song, and the AI suggests what it is. You also get its body length and classification, along with other likely candidates."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "無料で調べられるのは、写真と鳴き声を合わせて2回までです。生態や観察のコツ、似た鳥との見分け方はプレミアムで見られます。調べるときはネットにつながっている必要があります。",
+            "en": "You can identify two birds for free, counting photos and recordings together. Ecology, birding tips, and how to tell similar birds apart come with Premium. You need an internet connection to identify a bird."
+          }
+        },
+        {
+          "type": "app",
+          "id": "773457673"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "コーネル大学鳥類学研究所が作っている無料のアプリです。写真、鳴き声の録音、いくつかの質問に答える方法、地域の鳥を探す方法の4つで鳥を調べられます。",
+            "en": "This is a free app from the Cornell Lab of Ornithology. You can identify a bird four ways, from a photo, from a recording, by answering a few simple questions, or by browsing the birds in your area."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "地域ごとのバードパックを入れて使う仕組みで、日本のパックもあります。Google PlayにAndroid版もあります。",
+            "en": "It works with regional bird packs, and there is one for Japan. There is also an Android version on Google Play."
+          }
+        },
+        {
+          "type": "app",
+          "id": "1474586978"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "評価が2,751件あって、この中ではいちばん使われています。写真と鳴き声の両方に対応していて、説明文では1万種以上を識別できると書かれています。",
+            "en": "With 2,751 ratings, this is the most used of the four. It works with both photos and songs, and the description says it can identify more than 10,000 species."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "鳥に向けてズームすると写真をくっきりさせるカメラや、餌やりのガイドもあります。年間のプレミアムがあって、7日間のお試しが付いています。",
+            "en": "It also has a camera that sharpens the shot as you zoom in on a bird, and a guide to feeding backyard birds. There is a yearly Premium plan with a 7-day trial."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6785257128"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "声を聞き取って名前を出すことに絞ったアプリです。対象は日本にすむ247種で、名前は和名と漢字と学名で出ます。迷うときは、たぶんと断って候補を出してくれます。",
+            "en": "This app does one thing, it listens to a song and tells you the bird. It covers 247 species that live in Japan, and gives the Japanese name with its kanji and the scientific name. When it isn't sure, it says so and offers its best guesses."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "識別は全部端末の中で済んで、アカウントも広告もありません。Apple Watchだけでも聞き取りから名前まで出せます。",
+            "en": "Everything runs on the device, with no account and no ads. It even works on an Apple Watch by itself, from listening to showing the name."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "どれを選ぶか",
+        "en": "Which one to pick"
+      },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "ja": "お金をかけずに写真も声も試したいなら、Merlin",
+              "en": "If you want to try both photos and songs without paying, Merlin"
+            },
+            {
+              "ja": "たくさんの人が使っている定番から選びたいなら、Picture Bird",
+              "en": "If you want the one most people already use, Picture Bird"
+            },
+            {
+              "ja": "散歩中に声だけで、日本の鳥を聞き分けたいなら、ききしる",
+              "en": "If you want to name birds in Japan by their song while you walk, Kikishiru"
+            },
+            {
+              "ja": "写真と声の両方で、似た鳥との見分け方まで知りたいなら、BirdLens",
+              "en": "If you want photo and song, plus how to tell look-alikes apart, BirdLens"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "ja": "無料で使えますか？",
+        "en": "Are they free?"
+      },
+      "a": {
+        "ja": "4本とも無料で入れられます。Merlinは説明文で無料のアプリと書かれています。BirdLensは無料で2回まで調べられて、そのあとはプレミアムです。",
+        "en": "All four are free to download. Merlin describes itself as a free app. BirdLens lets you identify two birds for free, and after that it is Premium."
+      }
+    },
+    {
+      "q": {
+        "ja": "姿が見えなくても調べられますか？",
+        "en": "Can I identify a bird I can't see?"
+      },
+      "a": {
+        "ja": "4本とも鳴き声から調べられます。ききしるは声を聞き分けることに絞ったアプリです。",
+        "en": "All four can identify a bird from its song. Kikishiru is built only for that."
+      }
+    },
+    {
+      "q": {
+        "ja": "電波の届かない山の中でも使えますか？",
+        "en": "Do they work in the mountains with no signal?"
+      },
+      "a": {
+        "ja": "説明文で端末の中だけで識別すると書かれているのは、ききしるです。BirdLensは調べるときにネットが要ります。",
+        "en": "Kikishiru is the one whose description says identification runs entirely on the device. BirdLens needs the internet to identify a bird."
+      }
+    },
+    {
+      "q": {
+        "ja": "Androidで使えるのはどれですか？",
+        "en": "Which one works on Android?"
+      },
+      "a": {
+        "ja": "この4本の中では、MerlinがGoogle Playにもあります。BirdLensはiPhone専用です。",
+        "en": "Of these four, Merlin is also on Google Play. BirdLens is iPhone only."
+      }
+    }
+  ],
+  "closing": {
+    "ja": "BirdLensの評価はまだ0件です。公園で鳴いていた鳥の名前がわかったら、ぜひ教えてください🐦",
+    "en": "BirdLens has no ratings yet. If it tells you the name of a bird singing in your local park, I'd love to hear about it 🐦"
+  },
+  "notes": {
+    "ja": "各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。巣やヒナに近づいての撮影や録音は、鳥の子育ての邪魔になることがあるので控えてください。",
+    "en": "Features and rating counts were checked against each app's App Store description on November 15, 2026, and may change with updates. Please don't get close to nests or chicks to take photos or recordings, as it can disturb the parents."
+  },
+  "illustration": {
+    "scene": "朝の公園のベンチ。キャラが目を閉じて耳に手を当て、木の上から聞こえる鳴き声（小さな音符の形の線）に聞き入っている。膝の上のスマホ（画面は文字なし）から、小鳥のシルエットがふわっと浮かび上がっている。キャラの目は参照画像と同じ白い縦長の楕円2つのままにする（笑った弧の目や閉じた目にしない）。",
+    "alt": {
+      "ja": "公園のベンチで鳥の声に耳をすますキャラクター。スマホから小鳥の影が浮かんでいる",
+      "en": "The character on a park bench listening to birdsong, with a small bird silhouette rising from the phone"
+    }
+  }
+}

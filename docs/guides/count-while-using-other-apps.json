@@ -1,0 +1,391 @@
+{
+  "slug": "count-while-using-other-apps",
+  "date_published": "2026-11-15",
+  "date_updated": "2026-11-15",
+  "search_phrase": {
+    "ja": "カウンター アプリ バックグラウンド",
+    "en": "counter app that works over other apps"
+  },
+  "evidence": "2026-11-15 に Google の検索候補で「カウンター アプリ バックグラウンド」がそのまま候補に出た。「カウンター アプリ iphone」の7件には「小役 カウンター アプリ iphone」「投球数 カウンター アプリ iphone」など、何かを見ながら数える用途が並んだ。同じ日に App Store で「PiP カウンター」を検索すると、ほかのアプリの上で数えられるカウンターはピーカンくんとスロライズの2本で、どちらもスロットの小役を数える専用、評価は7件と4件だった。僕のながらカウンターはこの検索には出てこなかった。",
+  "title": {
+    "ja": "ほかのアプリを使いながら数えられるカウンター3選",
+    "en": "3 Counter Apps You Can Tap While Using Other Apps"
+  },
+  "description": {
+    "ja": "動画やWebサイトを見ながら、画面の小窓で数を数えられるカウンターを3本比べました。数え方、数えられる種類、向いている使い方の違いをまとめています。ながらカウンターの作者が書いています。",
+    "en": "I compared three iPhone counter apps that let you count in a small window while watching a video or browsing: how you tap, what you can count, and what each is best for. Written by the maker of Nagara Counter."
+  },
+  "excerpt": {
+    "ja": "動画やWebを見ながら、小窓で数えられるカウンターを3本比べました。ながらカウンターを作った僕が、自分のアプリも入れて書いています。",
+    "en": "Three counters that let you count in a small window while watching or browsing. I made Nagara Counter, and it's one of the three."
+  },
+  "category": {
+    "ja": "アプリの選び方",
+    "en": "App guides"
+  },
+  "reading_minutes": 3,
+  "author": {
+    "name": {
+      "ja": "續橋 涼",
+      "en": "Ryo Tsuzukihashi"
+    },
+    "handle": "tsuzuki817",
+    "bio": {
+      "ja": "2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。ながらカウンターの作者です。",
+      "en": "I've been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made Nagara Counter."
+    },
+    "url": "https://tsuzukit.com/about/",
+    "same_as": [
+      "https://x.com/tsuzuki817"
+    ]
+  },
+  "tldr": {
+    "ja": "iPhoneのピクチャインピクチャを使うカウンターなら、ほかのアプリを開いたまま数えられます。スロットの小役を数えるなら、専用のピーカンくんかスロライズ。動画の中の何か、野鳥や人数のように、ジャンルを問わず1つの数を足し引きしたい人は、僕が作ったながらカウンターも見てみてください。",
+    "en": "A counter that uses iPhone's Picture in Picture lets you keep counting with another app open. For counting slot machine hits, the dedicated Peekan-kun or SloRise. If you just want to add and subtract a single number for anything at all, like birds in a video or people passing by, take a look at Nagara Counter, which I made."
+  },
+  "disclosure": {
+    "ja": "この記事は、ながらカウンターを作った僕が書いています。ほかの2本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。",
+    "en": "I made Nagara Counter, and I wrote this article. The other two apps are by developers I don't know, and I haven't received money or anything else from them. Everything compared here comes from each app's App Store description and rating count as of November 15, 2026."
+  },
+  "own_app": "1644376109",
+  "app_category": "UtilitiesApplication",
+  "apps": [
+    {
+      "id": "1644376109",
+      "name": {
+        "ja": "ながらカウンター ~別のアプリを使っていてもカウントできる~",
+        "en": "Nagara Counter - Count While Using Other Apps"
+      },
+      "short": {
+        "ja": "ながらカウンター",
+        "en": "Nagara Counter"
+      },
+      "developer": "Ryo Tsudukihashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5d/bc/a8/5dbca80e-f98f-26df-09b2-505b298e1caf/AppIcon-0-0-1x_U007emarketing-0-10-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id1644376109",
+      "android_url": null,
+      "rating_count": 7
+    },
+    {
+      "id": "6475634996",
+      "name": {
+        "ja": "ながらカウンター ピーカンくん",
+        "en": "PiP-Counter"
+      },
+      "short": {
+        "ja": "ピーカンくん",
+        "en": "Peekan-kun"
+      },
+      "developer": "Kaito Yoshimura",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/9f/cf/e9/9fcfe929-bb8e-917d-e212-2c61aeb2737e/AppIcon-0-0-1x_U007ephone-0-1-sRGB-85-220.jpeg/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6475634996",
+      "android_url": null,
+      "rating_count": 7
+    },
+    {
+      "id": "6760995794",
+      "name": {
+        "ja": "スロライズ - スロット小役カウンター＆リアルタイム設定推測",
+        "en": "SloRise: Slot Machine Hit Counter"
+      },
+      "short": {
+        "ja": "スロライズ",
+        "en": "SloRise"
+      },
+      "developer": "Takahiro Ogawa",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a1/98/d8/a198d8f9-a5b9-ebf5-5c6a-0734891a8fbc/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6760995794",
+      "android_url": null,
+      "rating_count": 4
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ja": "3本をざっくり比べる",
+        "en": "The three apps at a glance"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "違いが出るのは、何を数えるためのアプリかです。2本はスロットの小役を数える専用で、ながらカウンターは何でも数える1つのカウンターです。",
+            "en": "The big difference is what each one is made to count. Two are built for counting slot machine hits, while Nagara Counter is a single counter for anything."
+          }
+        },
+        {
+          "type": "table",
+          "head": [
+            {
+              "ja": "アプリ",
+              "en": "App"
+            },
+            {
+              "ja": "評価の件数",
+              "en": "Ratings"
+            },
+            {
+              "ja": "ほかのアプリを使いながら",
+              "en": "Over other apps"
+            },
+            {
+              "ja": "数えられる種類",
+              "en": "What it counts"
+            },
+            {
+              "ja": "ロック画面から",
+              "en": "From the Lock Screen"
+            },
+            {
+              "ja": "向いている使い方",
+              "en": "Best for"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ja": "ながらカウンター（僕のアプリ）",
+                "en": "Nagara Counter (my app)"
+              },
+              {
+                "ja": "7件",
+                "en": "7"
+              },
+              {
+                "ja": "小窓のボタンで足し引き",
+                "en": "Add or subtract with the window's buttons"
+              },
+              {
+                "ja": "1つの数",
+                "en": "One number"
+              },
+              {
+                "ja": "なし",
+                "en": "No"
+              },
+              {
+                "ja": "動画やWebを見ながら、何でも",
+                "en": "Anything, while watching or browsing"
+              }
+            ],
+            [
+              {
+                "ja": "ピーカンくん",
+                "en": "Peekan-kun"
+              },
+              {
+                "ja": "7件",
+                "en": "7"
+              },
+              {
+                "ja": "小窓のカウンター",
+                "en": "Counter in a small window"
+              },
+              {
+                "ja": "スロットの小役",
+                "en": "Slot machine hits"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "ゲームやマンガを見ながら小役を数える",
+                "en": "Counting slot hits while using games or manga apps"
+              }
+            ],
+            [
+              {
+                "ja": "スロライズ",
+                "en": "SloRise"
+              },
+              {
+                "ja": "4件",
+                "en": "4"
+              },
+              {
+                "ja": "動画を小窓で流しながら数える",
+                "en": "Count while a video plays in a small window"
+              },
+              {
+                "ja": "スロットの小役を状態別に",
+                "en": "Slot hits by game state"
+              },
+              {
+                "ja": "ライブアクティビティで",
+                "en": "Via Live Activity"
+              },
+              {
+                "ja": "数えながら設定を推測する",
+                "en": "Counting and estimating the machine's setting"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "1本ずつ見ていく",
+        "en": "Each app, one by one"
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "id": "1644376109"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "カウンターがピクチャインピクチャの小窓になって、ほかのアプリの上に浮いたままになります。小窓の早送りのボタンで1増えて、巻き戻しのボタンで1減ります。",
+            "en": "The counter becomes a Picture in Picture window that floats over your other apps. Tap the window's skip-forward button to add one, and the skip-back button to subtract one."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "動画を見ながら、Webサイトを見ながら、見ている画面から離れずに数えられます。数えるのは1つの数だけなので、何かを1種類だけ数えたい人向けです。",
+            "en": "You can count while watching a video or browsing a website without leaving what you're looking at. It only tracks one number, so it's for when you're counting just one kind of thing."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "無料で使えて、広告を消す課金があります。iPhone専用です。",
+            "en": "It's free, with a purchase to remove ads. It's iPhone only."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6475634996"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "スロットの小役を数えるためのカウンターで、ピクチャインピクチャの小窓に出ます。いままでの小役カウンターのように、アプリの画面を開きっぱなしにしなくていいのが売りです。",
+            "en": "It's a counter for slot machine hits that shows up in a Picture in Picture window. Its selling point is that, unlike older hit counters, you don't have to keep the app open on screen."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "ゲームやマンガ、動画のアプリを使いながら数えられます。応援のためのサブスクリプションがあります。",
+            "en": "You can count while using games, manga, or video apps. There's a subscription for those who want to support the developer."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6760995794"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "小役を数えながら、台の設定の可能性をその場で計算するアプリです。通常時や高確のように、状態ごとに分けて数えられます。",
+            "en": "It counts slot hits and estimates the machine's setting on the spot. You can keep separate counts for each state, like normal play or high-probability mode."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "実践動画をピクチャインピクチャで流しながら数えられて、ロック画面やダイナミックアイランドからもカウントできます。アプリの中のブラウザで攻略サイトも見られます。",
+            "en": "You can count while a gameplay video plays in Picture in Picture, and also count from the Lock Screen or Dynamic Island. It has a built-in browser for strategy sites, too."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "アプリを入れたくないなら",
+        "en": "If you'd rather not install an app"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "手で押す数取器を使えば、スマホの画面と関係なく数えられます。スマホで動画を見ながらでも、もう片方の手で押すだけです。",
+            "en": "A handheld tally counter lets you count without touching your phone screen at all. Watch the video on your phone and click with your other hand."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "紙に正の字を書く手もあります。ただ、どちらも手元に道具が要るので、スマホだけで済ませたいならアプリが楽です。",
+            "en": "Or tally marks on paper. Both need something on hand, though, so if you want to do it all with your phone, an app is easier."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "どれを選ぶか",
+        "en": "Which one to pick"
+      },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "ja": "スロットの小役を、ほかのアプリを使いながら数えたいなら、ピーカンくん",
+              "en": "If you want to count slot hits while using other apps, Peekan-kun"
+            },
+            {
+              "ja": "小役を状態別に数えて、設定の推測までしたいなら、スロライズ",
+              "en": "If you want separate counts by game state and a setting estimate, SloRise"
+            },
+            {
+              "ja": "動画やWebを見ながら、何かを1つだけ数えたいなら、ながらカウンター",
+              "en": "If you want to count one thing while watching or browsing, Nagara Counter"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "ja": "無料で使えますか？",
+        "en": "Are they free?"
+      },
+      "a": {
+        "ja": "3本とも無料で入れられます。ながらカウンターは広告を消すのが有料で、ピーカンくんは応援のサブスクリプションがあります。",
+        "en": "All three are free to download. Nagara Counter charges to remove ads, and Peekan-kun has a subscription to support the developer."
+      }
+    },
+    {
+      "q": {
+        "ja": "動画も小窓で見ながら数えられますか？",
+        "en": "Can I count while also watching a video in a small window?"
+      },
+      "a": {
+        "ja": "ピクチャインピクチャの小窓は同時に1つなので、ながらカウンターを小窓にしているときは、動画は普通の画面で見ることになります。スロライズは、動画を小窓で流しながら数える作りです。",
+        "en": "Picture in Picture only shows one window at a time, so while Nagara Counter is in the small window, you'd watch the video full screen. SloRise is built the other way around, with the video in the small window while you count."
+      }
+    },
+    {
+      "q": {
+        "ja": "スロット以外にも使えますか？",
+        "en": "Can I use them for things other than slots?"
+      },
+      "a": {
+        "ja": "ながらカウンターは数えるものを決めていないので、何にでも使えます。ほかの2本は、スロットの小役を数えるための作りです。",
+        "en": "Nagara Counter isn't tied to anything in particular, so you can count whatever you like. The other two are made for counting slot machine hits."
+      }
+    }
+  ],
+  "closing": {
+    "ja": "ながらカウンターは7件の評価をもらえたので、こんなものを数えてるよという声も待ってます🙌",
+    "en": "Nagara Counter has 7 ratings so far, and I'd love to hear what people are counting with it 🙌"
+  },
+  "notes": {
+    "ja": "各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。ながらカウンターの機能はアプリのコードで確かめました。",
+    "en": "Features and rating counts were checked against each app's App Store description on November 15, 2026, and may change with updates. Nagara Counter's features were checked against the app's own code."
+  },
+  "illustration": {
+    "scene": "公園のベンチ。キャラがスマホ（文字なし）で野鳥の動画を見ながら、画面の隅に浮かぶ小さな窓のボタンを親指で押している。小さな窓の中では丸い玉がひとつずつ増えていき、ベンチの前の池にはカモが3羽泳いでいる。",
+    "alt": {
+      "ja": "公園のベンチで鳥の動画を見ながら、画面の隅の小窓で数を数えるキャラクター",
+      "en": "The character on a park bench counting with a small floating window while watching a bird video"
+    }
+  }
+}

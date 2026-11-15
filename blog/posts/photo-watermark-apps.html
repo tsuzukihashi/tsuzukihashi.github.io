@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/js/lang.js"></script>
+    <!-- このページは scripts/build_guides.py が docs/guides/photo-watermark-apps.json から作る。直すのは JSON のほう -->
+    <title>写真に透かしやコピーライトを入れるアプリ3選 - Blog | Ryo Tsuzukihashi</title>
+    <meta name="description" content="SNSに上げる写真に、透かしやコピーライトの文字を入れるアプリを3本比べました。入れられるもの、画面いっぱいに並べる入れ方、まとめて加工できるかの違いと、iPhoneだけで文字を入れる方法をまとめています。フォトガードの作者が書いています。">
+    <meta name="title-en" content="3 Apps for Adding a Watermark or Copyright to Your Photos - Blog | Ryo Tsuzukihashi">
+    <meta name="description-en" content="Three iPhone apps that add a watermark or copyright notice to photos before you post, compared on what you can add, full-image tiling, and batch editing. Plus the built-in iPhone way. Written by the maker of PhotoGuards.">
+    <link rel="canonical" href="https://tsuzukit.com/blog/posts/photo-watermark-apps.html">
+
+    <!-- OGP -->
+    <meta property="og:title" content="写真に透かしやコピーライトを入れるアプリ3選">
+    <meta property="og:description" content="SNSに上げる写真に、透かしやコピーライトの文字を入れるアプリを3本比べました。入れられるもの、画面いっぱいに並べる入れ方、まとめて加工できるかの違いと、iPhoneだけで文字を入れる方法をまとめています。フォトガードの作者が書いています。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://tsuzukit.com/blog/posts/photo-watermark-apps.html">
+    <meta property="og:image" content="https://tsuzukit.com/assets/images/posts/photo-watermark-apps.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://tsuzukit.com/assets/images/posts/photo-watermark-apps.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-dark-32x32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-dark-16x16.png" media="(prefers-color-scheme: dark)">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERPQ1EGLH');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8240751277462688"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
+    <link rel="stylesheet" href="/assets/css/guide.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "写真に透かしやコピーライトを入れるアプリ3選",
+      "description": "SNSに上げる写真に、透かしやコピーライトの文字を入れるアプリを3本比べました。入れられるもの、画面いっぱいに並べる入れ方、まとめて加工できるかの違いと、iPhoneだけで文字を入れる方法をまとめています。フォトガードの作者が書いています。",
+      "image": "https://tsuzukit.com/assets/images/posts/photo-watermark-apps.webp",
+      "datePublished": "2026-11-15",
+      "dateModified": "2026-11-15",
+      "inLanguage": "ja",
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "mainEntityOfPage": "https://tsuzukit.com/blog/posts/photo-watermark-apps.html",
+      "about": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "フォトガード",
+          "url": "https://apps.apple.com/jp/app/id6452754625",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "ウォーターマーク(透かし文字入れ) - WaterStamp",
+          "url": "https://apps.apple.com/jp/app/id6464230667",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "透かしマスター",
+          "url": "https://apps.apple.com/jp/app/id1581218254",
+          "operatingSystem": "iOS"
+        }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "フォトガード",
+      "operatingSystem": "iOS",
+      "applicationCategory": "PhotographyApplication",
+      "url": "https://apps.apple.com/jp/app/id6452754625",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "無料で使えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "3本とも無料で入れられます。WaterStampは説明文で完全無料と書かれています。透かしマスターは、広告を消して全部の機能を使うのが有料です。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "透かしを入れれば無断転載は防げますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "透かしで伝わるのは、誰の写真かです。それでも無断で使われたときにどうするかは、専門家に相談してください。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "動画にも入れられますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "WaterStampと透かしマスターは、説明文で動画にも対応していると書かれています。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tsuzukit.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://tsuzukit.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "困りごとから選ぶアプリ",
+          "item": "https://tsuzukit.com/blog/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "写真に透かしやコピーライトを入れるアプリ3選",
+          "item": "https://tsuzukit.com/blog/posts/photo-watermark-apps.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">TsuzuKit</a>
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/portfolio/" class="nav-link">Portfolio</a>
+                <a href="/blog/" class="nav-link active">Blog</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post -->
+    <article class="blog-post">
+        <header class="post-header">
+            <div class="post-meta">
+                <span class="post-date">2026.11.15</span>
+                <span class="post-category"><span class="i18n-ja">アプリの選び方</span><span class="i18n-en">App guides</span></span>
+                <span class="post-reading-time"><span class="i18n-ja">3分で読める</span><span class="i18n-en">3 min read</span></span>
+            </div>
+            <h1 class="post-title"><span class="i18n-ja">写真に透かしやコピーライトを入れるアプリ3選</span><span class="i18n-en">3 Apps for Adding a Watermark or Copyright to Your Photos</span></h1>
+        </header>
+        <figure class="post-illustration guide-illustration"><img src="/assets/images/posts/photo-watermark-apps.webp" width="1200" height="800" alt="自分の印をうすく入れた写真を壁に飾るキャラクター" data-en-alt="The character hanging photos on a wall, each marked faintly with a small round silhouette in the corner" fetchpriority="high"></figure>
+
+        <div class="post-content guide i18n-ja">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">先に答え</p>
+                <p>透かしを入れるなら、いちばん使われているのは評価1,523件のWaterStampです。文字もロゴも入れられて、画面いっぱいに並べる入れ方や、何枚もまとめての加工もできます。動画に動く透かしを入れたいなら透かしマスター。写真にコピーライトの文字を1つ入れるだけでいい人は、僕が作ったフォトガードも見てみてください。</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">書いた人 <a href="https://tsuzukit.com/about/">續橋 涼</a>（@tsuzuki817）</p>
+                    <p class="guide-byline-bio">2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。フォトガードの作者です。</p>
+                    <p class="guide-byline-date">公開 <time datetime="2026-11-15">2026.11.15</time> · 更新 <time datetime="2026-11-15">2026.11.15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">この記事は、フォトガードを作った僕が書いています。ほかの2本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。</p>
+            <h2>3本をざっくり比べる</h2>
+            <p>文字を入れるところは3本とも同じです。違いが出るのは、ロゴや動画にも使えるかと、何枚もまとめて加工できるかです。</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">アプリ</th><th scope="col">評価の件数</th><th scope="col">入れられるもの</th><th scope="col">画面いっぱいに並べる</th><th scope="col">まとめて加工</th><th scope="col">動画</th></tr></thead><tbody><tr><th scope="row">フォトガード（僕のアプリ）</th><td>4件</td><td>コピーライトの文字。フォントと配置を選べる</td><td>説明文に記載なし</td><td>説明文に記載なし</td><td>説明文に記載なし</td></tr><tr><th scope="row">WaterStamp</th><td>1,523件</td><td>文字、ロゴ画像</td><td>あり</td><td>あり</td><td>あり</td></tr><tr><th scope="row">透かしマスター</th><td>37件</td><td>文字、ロゴ、手書きの署名、日時、位置</td><td>あり</td><td>あり</td><td>あり。動く透かしも</td></tr></tbody></table></div>
+            <h2>1本ずつ見ていく</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/c7/3e/a3/c73ea30f-2661-1137-80ec-2158dddcaec1/AppIcon-1x_U007epad-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">僕が作ったアプリ</span>
+                    <h3 class="guide-app-name">フォトガード</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · App Storeの評価 4件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6452754625" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>SNSに上げる前の写真に、コピーライトの文字を入れるアプリです。フォントもレイアウトも自分で選べます。</p>
+            <p>説明文に書いてあるのは、この2つだけです。ロゴを入れたい、何枚もまとめて加工したいなら、ほかの2本のほうが向いています。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e2/a6/3a/e2a63a02-ca40-1197-532e-35dc27aedf02/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">ウォーターマーク(透かし文字入れ) - WaterStamp</h3>
+                    <p class="guide-app-meta">Motoki Takahashi · App Storeの評価 1,523件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6464230667" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>評価が1,523件あって、この中ではいちばん使われています。説明文では完全無料で、登録もログインも要らないと書かれています。</p>
+            <p>文字の色、大きさ、間隔、透明度を変えられて、ロゴ画像も透かしにできます。画面いっぱいに並べる入れ方、何枚もまとめての加工、動画にも対応しています。写真の位置情報などのExifを自動で消す機能もあります。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f6/8a/cc/f68acc6a-9a63-fae0-bdeb-478fa02a4d3c/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">透かしマスター</h3>
+                    <p class="guide-app-meta">Silver Tech · App Storeの評価 37件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id1581218254" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>文字やロゴのほかに、手書きの署名、日時、位置情報の打刻まで入れられます。写真に一括で入れることも、画面いっぱいに並べることもできます。</p>
+            <p>動画では、透かしが画面の中を不規則に動く入れ方ができます。写真の不要なものを消す機能や、モザイクもあります。週額か月額のサブスクリプションと、買い切りがあります。</p>
+            <h2>iPhoneだけで文字を入れるなら</h2>
+            <p>写真に文字を1行書き込むだけなら、iPhoneの写真アプリの編集にあるマークアップでもできます。</p>
+            <p>ただ、何枚もの写真に同じ文字を同じ位置へ入れるのは手間です。投稿する写真が多い人は、まとめて加工できるアプリのほうが早いですね。</p>
+            <h2>どれを選ぶか</h2>
+            <ul class="guide-list"><li>無料で、文字もロゴも細かく調整したいなら、WaterStamp</li><li>動画に動く透かしを入れたい、署名や日時も入れたいなら、透かしマスター</li><li>写真にコピーライトの文字を1つ入れるだけでいいなら、フォトガード</li></ul>
+            <h2>よくある質問</h2>
+            <dl class="guide-faq">
+                <dt>無料で使えますか？</dt><dd>3本とも無料で入れられます。WaterStampは説明文で完全無料と書かれています。透かしマスターは、広告を消して全部の機能を使うのが有料です。</dd>
+                <dt>透かしを入れれば無断転載は防げますか？</dt><dd>透かしで伝わるのは、誰の写真かです。それでも無断で使われたときにどうするかは、専門家に相談してください。</dd>
+                <dt>動画にも入れられますか？</dt><dd>WaterStampと透かしマスターは、説明文で動画にも対応していると書かれています。</dd>
+            </dl>
+            <p>フォトガードの評価はまだ4件なので、どんな写真に使ったか教えてもらえたらうれしいです🛡️</p>
+            <div class="guide-notes">各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。</div>
+        </div>
+
+        <div class="post-content guide i18n-en">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">Short answer</p>
+                <p>For watermarks, the most used app is WaterStamp, with 1,523 ratings. It handles text and logos, can tile a watermark across the whole image, and edits many photos at once. If you want a moving watermark on video, try Watermark Master. If all you need is a single copyright line on a photo, take a look at PhotoGuards, which I made.</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">Written by <a href="https://tsuzukit.com/about/">Ryo Tsuzukihashi</a> (@tsuzuki817)</p>
+                    <p class="guide-byline-bio">I&#x27;ve been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made PhotoGuards.</p>
+                    <p class="guide-byline-date">Published <time datetime="2026-11-15">2026-11-15</time> · Updated <time datetime="2026-11-15">2026-11-15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">I made PhotoGuards, and I wrote this article. The other two apps are by developers I don&#x27;t know, and I haven&#x27;t received money or anything else from them. Everything compared here comes from each app&#x27;s App Store description and rating count as of November 15, 2026.</p>
+            <h2>The three apps at a glance</h2>
+            <p>All three can add text. The differences are whether they also handle logos and video, and whether they can process many photos at once.</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">App</th><th scope="col">Ratings</th><th scope="col">What you can add</th><th scope="col">Tile across the image</th><th scope="col">Batch editing</th><th scope="col">Video</th></tr></thead><tbody><tr><th scope="row">PhotoGuards (my app)</th><td>4</td><td>Copyright text, with your choice of font and layout</td><td>Not mentioned</td><td>Not mentioned</td><td>Not mentioned</td></tr><tr><th scope="row">WaterStamp</th><td>1,523</td><td>Text, logo images</td><td>Yes</td><td>Yes</td><td>Yes</td></tr><tr><th scope="row">Watermark Master</th><td>37</td><td>Text, logos, handwritten signatures, date, location</td><td>Yes</td><td>Yes</td><td>Yes, including moving watermarks</td></tr></tbody></table></div>
+            <h2>Each app, one by one</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/c7/3e/a3/c73ea30f-2661-1137-80ec-2158dddcaec1/AppIcon-1x_U007epad-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">I made this</span>
+                    <h3 class="guide-app-name">PhotoGuards</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · 4 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6452754625" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>It adds a copyright line to a photo before you post it. You choose the font and the layout yourself.</p>
+            <p>That&#x27;s all its description covers. If you want to add a logo or process lots of photos at once, the other two are a better fit.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e2/a6/3a/e2a63a02-ca40-1197-532e-35dc27aedf02/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Add Watermark to Photo &amp; Video</h3>
+                    <p class="guide-app-meta">Motoki Takahashi · 1,523 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6464230667" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>With 1,523 ratings, this is the most used of the three. Its description says it is completely free, with no sign-up or login.</p>
+            <p>You can change the text color, size, spacing, and opacity, and use a logo image as a watermark. It can tile the watermark across the whole image, process many photos at once, and handle video. It also strips Exif data, such as location, automatically.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f6/8a/cc/f68acc6a-9a63-fae0-bdeb-478fa02a4d3c/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Watermark Master App</h3>
+                    <p class="guide-app-meta">Silver Tech · 37 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id1581218254" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>Besides text and logos, it can add a handwritten signature or stamp the date and location. It can watermark many photos at once or tile it across the whole image.</p>
+            <p>For video, it can make the watermark wander randomly around the frame. It also removes unwanted objects from photos and adds mosaics. There are weekly and monthly subscriptions, plus a one-time purchase.</p>
+            <h2>Adding text with just your iPhone</h2>
+            <p>If you only need to write a line of text on a photo, the Markup tool in the iPhone Photos app&#x27;s edit screen can do it.</p>
+            <p>Putting the same text in the same spot on lots of photos gets tedious, though. If you post a lot, an app that batch-edits will save you time.</p>
+            <h2>Which one to pick</h2>
+            <ul class="guide-list"><li>If you want detailed control over text and logos for free, WaterStamp</li><li>If you want moving watermarks on video, or signatures and dates, Watermark Master</li><li>If one copyright line on a photo is all you need, PhotoGuards</li></ul>
+            <h2>FAQ</h2>
+            <dl class="guide-faq">
+                <dt>Are they free?</dt><dd>All three are free to download. WaterStamp says in its description that it is completely free. Watermark Master charges to remove ads and unlock every feature.</dd>
+                <dt>Will a watermark stop people from reposting my photos?</dt><dd>A watermark shows whose photo it is. If someone uses your photo without permission anyway, talk to a legal professional about what to do.</dd>
+                <dt>Can I add a watermark to video?</dt><dd>WaterStamp and Watermark Master both say in their descriptions that they work with video.</dd>
+            </dl>
+            <p>PhotoGuards only has four ratings so far, so I&#x27;d love to hear what kind of photos you use it on 🛡️</p>
+            <div class="guide-notes">Features and rating counts were checked against each app&#x27;s App Store description on November 15, 2026, and may change with updates.</div>
+        </div>
+
+        <nav class="post-navigation">
+            <img class="tk-char tk-char--post" src="/assets/images/character-hang.png" alt="" width="381" height="208">
+            <a href="/blog/guides/" class="nav-link-wrapper"><span>&larr; <span class="i18n-ja">困りごとから選ぶアプリの一覧へ</span><span class="i18n-en">All guides: apps for everyday problems</span></span></a>
+        </nav>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
+                    <p class="footer-description"><span class="i18n-ja">誰も作らないものを、まじめに作る</span><span class="i18n-en">I make things nobody else would, and I make them seriously</span></p>
+                </div>
+                <div class="footer-nav">
+                    <a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
+                    <a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
+                    <a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
+                    <a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ryo Tsuzukihashi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

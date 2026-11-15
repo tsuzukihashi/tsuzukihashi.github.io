@@ -1,0 +1,435 @@
+{
+  "slug": "dream-journal-apps",
+  "date_published": "2026-11-15",
+  "date_updated": "2026-11-15",
+  "search_phrase": {
+    "ja": "夢日記 アプリ",
+    "en": "dream journal app"
+  },
+  "evidence": "2026-11-15 に Google の検索候補で「夢日記 アプリ」を引くと、5件中「おすすめ」「無料」「アンドロイド」「iphone」付きの4件が出た。「夢占い ai」「ai 夢占い 無料」も候補に出た。同じ日に App Store で「夢日記」を引くと、夢に絞ったアプリはドリームズ（969件）のほかは評価120件未満で、AIで読み解くものが多く並んでいた。",
+  "title": {
+    "ja": "見た夢を書きとめる夢日記アプリ4選",
+    "en": "4 Dream Journal Apps for Writing Down Your Dreams"
+  },
+  "description": {
+    "ja": "見た夢を書きとめる夢日記アプリを4本比べました。AIの読み解きの有無、無料で使える範囲、記録の振り返り方の違いをまとめています。フロイト先生の夢占いの作者が書いています。",
+    "en": "I compared four dream journal apps for writing down the dreams you remember: whether AI reads them for you, what is free, and how you look back on your records. Written by the maker of FreudDream."
+  },
+  "excerpt": {
+    "ja": "AIの読み解き、無料の範囲、振り返り方で4本を比べました。フロイト先生の夢占いを作った僕が、自分のアプリも入れて書いています。",
+    "en": "Four apps compared on AI readings, what's free, and looking back. I made FreudDream, and it's one of the four."
+  },
+  "category": {
+    "ja": "アプリの選び方",
+    "en": "App guides"
+  },
+  "reading_minutes": 4,
+  "author": {
+    "name": {
+      "ja": "續橋 涼",
+      "en": "Ryo Tsuzukihashi"
+    },
+    "handle": "tsuzuki817",
+    "bio": {
+      "ja": "2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。フロイト先生の夢占いの作者です。",
+      "en": "I've been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made FreudDream."
+    },
+    "url": "https://tsuzukit.com/about/",
+    "same_as": [
+      "https://x.com/tsuzuki817"
+    ]
+  },
+  "tldr": {
+    "ja": "評価がいちばん多いのは969件のドリームズで、AIの読み解きはありませんが、夢に何度も出るものを見つけられます。無料でAIの読み解きを試すなら夢占い・夢日記です。僕が作ったフロイト先生の夢占いは、使うのにサブスクリプションが要るアプリで、読み解きのあとに先生へそのまま相談できます。",
+    "en": "The one with the most ratings is Dreams, with 969. It has no AI readings, but it helps you spot things that keep showing up in your dreams. To try AI readings for free, go with Dream Diary. FreudDream, which I made, needs a subscription to use, and after each reading you can keep talking it through with Dr. Freud."
+  },
+  "disclosure": {
+    "ja": "この記事は、フロイト先生の夢占いを作った僕が書いています。ほかの3本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。",
+    "en": "I made FreudDream, and I wrote this article. The other three apps are by developers I don't know, and I haven't received money or anything else from them. Everything compared here comes from each app's App Store description and rating count as of November 15, 2026."
+  },
+  "own_app": "6777151259",
+  "app_category": "LifestyleApplication",
+  "apps": [
+    {
+      "id": "6777151259",
+      "name": {
+        "ja": "フロイト先生の夢占い｜AI夢診断",
+        "en": "FreudDream: AI Dream Reading"
+      },
+      "short": {
+        "ja": "フロイト先生の夢占い",
+        "en": "FreudDream"
+      },
+      "developer": "Ryo Tsudukihashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ed/dd/9c/eddd9c03-0655-c8dd-78c3-6f6cda15ba7c/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6777151259",
+      "android_url": null,
+      "rating_count": 1
+    },
+    {
+      "id": "1225560667",
+      "name": {
+        "ja": "ドリームズ",
+        "en": "Dreams: Your dream journal"
+      },
+      "short": {
+        "ja": "ドリームズ",
+        "en": "Dreams"
+      },
+      "developer": "The Lost Project",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d3/a4/97/d3a49725-d19d-4bdc-adf9-c8f7b1f46f4c/AppIcon-0-0-1x_U007epad-0-1-0-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id1225560667",
+      "android_url": null,
+      "rating_count": 969
+    },
+    {
+      "id": "1630615789",
+      "name": {
+        "ja": "夢占い・夢日記｜AI夢診断で夢の意味がわかる",
+        "en": "Dream Diary: AI Dream Reading"
+      },
+      "short": {
+        "ja": "夢占い・夢日記",
+        "en": "Dream Diary"
+      },
+      "developer": "Noboru Kato",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/76/57/04/76570417-06b9-130a-0985-852e9fa48736/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id1630615789",
+      "android_url": null,
+      "rating_count": 119
+    },
+    {
+      "id": "1664406019",
+      "name": {
+        "ja": "Dreamly: 夢占い・夢日記・AI夢診断",
+        "en": "Dreamly - Dream Interpretation"
+      },
+      "short": {
+        "ja": "Dreamly",
+        "en": "Dreamly"
+      },
+      "developer": "Martin Berbesson",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a1/9d/50/a19d50ad-415b-3542-020f-8b9035c4adfa/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id1664406019",
+      "android_url": null,
+      "rating_count": 33
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ja": "4本をざっくり比べる",
+        "en": "The four apps at a glance"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "どれも、見た夢を書いて残す日記の部分は同じです。違いが出るのは、AIが読み解くかどうかと、どこまで無料で使えるかです。",
+            "en": "All four give you a journal for writing down your dreams. The differences are whether AI reads them for you, and how much is free."
+          }
+        },
+        {
+          "type": "table",
+          "head": [
+            {
+              "ja": "アプリ",
+              "en": "App"
+            },
+            {
+              "ja": "評価の件数",
+              "en": "Ratings"
+            },
+            {
+              "ja": "AIの読み解き",
+              "en": "AI reading"
+            },
+            {
+              "ja": "無料で使える範囲",
+              "en": "What's free"
+            },
+            {
+              "ja": "振り返り",
+              "en": "Looking back"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ja": "フロイト先生の夢占い（僕のアプリ）",
+                "en": "FreudDream (my app)"
+              },
+              {
+                "ja": "1件",
+                "en": "1"
+              },
+              {
+                "ja": "あり。あとからチャットで相談",
+                "en": "Yes, plus follow-up chat"
+              },
+              {
+                "ja": "使うのにサブスクリプションが必要。年額は無料トライアル付き",
+                "en": "Needs a subscription. The yearly plan has a free trial"
+              },
+              {
+                "ja": "夢日記とシンボル図鑑",
+                "en": "Dream journal and symbol guide"
+              }
+            ],
+            [
+              {
+                "ja": "ドリームズ",
+                "en": "Dreams"
+              },
+              {
+                "ja": "969件",
+                "en": "969"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "くり返すサインと統計。絵も描ける",
+                "en": "Recurring signs and stats. You can draw too"
+              }
+            ],
+            [
+              {
+                "ja": "夢占い・夢日記",
+                "en": "Dream Diary"
+              },
+              {
+                "ja": "119件",
+                "en": "119"
+              },
+              {
+                "ja": "あり",
+                "en": "Yes"
+              },
+              {
+                "ja": "読み解き1日1回。最初の7日は全文",
+                "en": "One reading a day. Full text for the first 7 days"
+              },
+              {
+                "ja": "同じ象徴をつなぐ星図。月報はプレミアム",
+                "en": "A star map linking symbols. Monthly reports are Premium"
+              }
+            ],
+            [
+              {
+                "ja": "Dreamly",
+                "en": "Dreamly"
+              },
+              {
+                "ja": "33件",
+                "en": "33"
+              },
+              {
+                "ja": "あり",
+                "en": "Yes"
+              },
+              {
+                "ja": "無料で入れられる。解釈の無制限は有料",
+                "en": "Free to download. Unlimited readings are paid"
+              },
+              {
+                "ja": "毎週の夢レポート",
+                "en": "Weekly dream reports"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "1本ずつ見ていく",
+        "en": "Each app, one by one"
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "id": "6777151259"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "見た夢を書くと、AIのフロイト先生が夢のテーマや象徴を読み解きます。読み解きのあとは、気になったことをそのままチャットで先生に聞けます。",
+            "en": "Write down a dream, and the AI Dr. Freud reads its themes and symbols. After the reading, you can ask him about anything that stuck with you in a chat."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "書いた夢は夢日記として残り、海、落ちる、追われるといった夢によく出るモチーフの意味を、シンボル図鑑で引けます。読み解きはカードにしてSNSにも出せます。",
+            "en": "Your dreams build up as a journal, and the symbol guide lets you look up common motifs like the sea, falling, or being chased. You can also turn a reading into a card to share on social media."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "このアプリは、使い始めるのにサブスクリプションが必要です。年額と週額があって、年額には無料トライアルが付きます。医療や診断のためのアプリではありません。",
+            "en": "You need a subscription to start using this app. There are yearly and weekly plans, and the yearly plan comes with a free trial. It isn't a medical or diagnostic app."
+          }
+        },
+        {
+          "type": "app",
+          "id": "1225560667"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "評価が969件あって、この中ではいちばん使われています。夢の内容と睡眠のパターンを記録するアプリです。",
+            "en": "With 969 ratings, this is the most used of the four. It's an app for recording what you dream and your sleep patterns."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "夢に何度も出てくる出来事や場所、人を見つけて、自分の夢をつかむ作りになっています。指やApple Pencilで夢の絵を描けて、パスコードやTouch IDで日記を守れます。明晰夢の練習をする人向けの通知もあります。",
+            "en": "It helps you understand your dreams by spotting events, places, and people that keep coming back. You can sketch your dreams with a finger or Apple Pencil, and lock the journal with a passcode or Touch ID. There are also reminders for people practicing lucid dreaming."
+          }
+        },
+        {
+          "type": "app",
+          "id": "1630615789"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "見た夢を書くと、AIが吉夢や注意の夢といった種類から読み解きます。読み解きの続きは、対話で聞けます。",
+            "en": "Write a dream and the AI starts by telling you what kind of dream it is, such as a lucky one or one to be careful about. You can ask follow-up questions in a conversation."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "無料だと読み解きは1日1回で、最初の7日間は全文が読めます。同じ象徴が出るたびに記録がつながっていき、声での入力や、起きる時刻に書く通知もあります。夢日記は端末の中に保存されます。",
+            "en": "For free you get one reading a day, with full text for the first seven days. Each time the same symbol appears, your entries link together, and there is voice input and a reminder at your wake-up time. The journal is stored on your device."
+          }
+        },
+        {
+          "type": "app",
+          "id": "1664406019"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "夢を声で話すか文字で入れると、AIが解釈を返します。個人の開発者さんが作っているアプリです。",
+            "en": "Speak your dream or type it, and the AI sends back an interpretation. It is made by a solo developer."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "毎週の夢レポートで、くり返すシンボルや気持ちの流れを見られます。夢の場面をAIで画像にすることもできます。広告はなく、解釈を無制限にするのは有料のDreamly+です。",
+            "en": "A weekly dream report shows recurring symbols and how your feelings have been moving. You can also turn a dream scene into an AI image. There are no ads, and unlimited readings come with the paid Dreamly+."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "アプリを入れたくないなら",
+        "en": "If you'd rather not install an app"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "iPhoneのメモや紙のノートに、起きてすぐ書くだけでも夢日記になります。",
+            "en": "Writing in the iPhone's Notes app or a paper notebook right after you wake up is a dream journal too."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "AIの読み解きがほしくなったり、同じモチーフがいつ出たかを振り返りたくなったりしたら、アプリを入れてみてください。",
+            "en": "If you start wanting AI readings, or want to look back at when the same motif appeared, try an app then."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "どれを選ぶか",
+        "en": "Which one to pick"
+      },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "ja": "読み解きはいらない、記録を続けて夢のくり返しを見たいなら、ドリームズ",
+              "en": "If you just want to keep a record and spot patterns, without readings, Dreams"
+            },
+            {
+              "ja": "無料でAIの読み解きを試したいなら、夢占い・夢日記",
+              "en": "If you want to try AI readings for free, Dream Diary"
+            },
+            {
+              "ja": "声で話して記録したい人や、週ごとのまとめがほしい人は、Dreamly",
+              "en": "If you want to record by speaking, or want a weekly summary, Dreamly"
+            },
+            {
+              "ja": "読み解きのあとに、夢をきっかけに先生と話してみたいなら、フロイト先生の夢占い",
+              "en": "If you want to talk things over with Dr. Freud after a reading, FreudDream"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "ja": "夢占いは当たりますか？",
+        "en": "Do dream readings come true?"
+      },
+      "a": {
+        "ja": "夢占いは、夢をきっかけに自分をふり返るための読みものです。フロイト先生の夢占いも、未来を当てたり心の状態を診断したりするものではありません。",
+        "en": "Dream readings are something to read as a way of reflecting on yourself. FreudDream doesn't predict the future or diagnose how you are doing."
+      }
+    },
+    {
+      "q": {
+        "ja": "怖い夢やつらい夢が続くときは？",
+        "en": "What if I keep having scary or upsetting dreams?"
+      },
+      "a": {
+        "ja": "アプリで読み解くより、専門の相談窓口や医師に話してください。フロイト先生の夢占いの説明文にも、そう書いてあります。",
+        "en": "Rather than reading them with an app, please talk to a counseling service or a doctor. FreudDream's description says the same."
+      }
+    },
+    {
+      "q": {
+        "ja": "無料で使えますか？",
+        "en": "Are they free?"
+      },
+      "a": {
+        "ja": "ドリームズ、夢占い・夢日記、Dreamlyは無料で入れられます。フロイト先生の夢占いは、入れるのは無料ですが、使うにはサブスクリプションが要ります。",
+        "en": "Dreams, Dream Diary, and Dreamly are free to download. FreudDream is free to download, but you need a subscription to use it."
+      }
+    }
+  ],
+  "closing": {
+    "ja": "フロイト先生の夢占いの評価はまだ1件なので、先生の読み解きを受けた感想を待ってます🙏",
+    "en": "FreudDream only has one rating so far, so I'm waiting to hear what you thought of Dr. Freud's reading 🙏"
+  },
+  "notes": {
+    "ja": "それぞれのアプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。夢占いは占いとして楽しむものです。気持ちのつらさが続くときは、専門の相談窓口や医師に相談してください。",
+    "en": "Features and rating counts were checked against each app's App Store description on November 15, 2026, and may change with updates. Dream reading is meant to be enjoyed as fortune-telling. If you keep feeling low, please reach out to a counseling service or a doctor."
+  },
+  "illustration": {
+    "scene": "朝の寝室。目を覚ましたばかりのキャラがベッドに座り、枕元のノートに急いで何かを書きとめている（文字なし、線だけ）。頭の上には消えかけの夢の雲が浮かんでいて、中に小さな海と鍵と鳥の形が見える。",
+    "alt": {
+      "ja": "朝のベッドで、消えかけの夢の雲を見上げながらノートに書きとめるキャラクター",
+      "en": "The character sitting up in bed in the morning, jotting in a notebook under a fading dream cloud"
+    }
+  }
+}

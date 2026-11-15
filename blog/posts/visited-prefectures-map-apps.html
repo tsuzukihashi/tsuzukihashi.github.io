@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/js/lang.js"></script>
+    <!-- このページは scripts/build_guides.py が docs/guides/visited-prefectures-map-apps.json から作る。直すのは JSON のほう -->
+    <title>行った都道府県を地図で塗りつぶせるアプリ4選 - Blog | Ryo Tsuzukihashi</title>
+    <meta name="description" content="行った都道府県を日本地図に塗っていくアプリを4本比べました。塗り方、市区町村まで塗れるか、海外の地図の違いをまとめています。旅行思い出マップの作者が書いています。">
+    <meta name="title-en" content="4 Apps for Coloring In the Prefectures You’ve Visited - Blog | Ryo Tsuzukihashi">
+    <meta name="description-en" content="I compared four iPhone apps for coloring in the prefectures of Japan you&#x27;ve been to: how you fill them in, whether they go down to cities and towns, and maps beyond Japan. Written by the maker of TravelMemoryMap.">
+    <link rel="canonical" href="https://tsuzukit.com/blog/posts/visited-prefectures-map-apps.html">
+
+    <!-- OGP -->
+    <meta property="og:title" content="行った都道府県を地図で塗りつぶせるアプリ4選">
+    <meta property="og:description" content="行った都道府県を日本地図に塗っていくアプリを4本比べました。塗り方、市区町村まで塗れるか、海外の地図の違いをまとめています。旅行思い出マップの作者が書いています。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://tsuzukit.com/blog/posts/visited-prefectures-map-apps.html">
+    <meta property="og:image" content="https://tsuzukit.com/assets/images/posts/visited-prefectures-map-apps.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://tsuzukit.com/assets/images/posts/visited-prefectures-map-apps.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-dark-32x32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-dark-16x16.png" media="(prefers-color-scheme: dark)">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERPQ1EGLH');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8240751277462688"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
+    <link rel="stylesheet" href="/assets/css/guide.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "行った都道府県を地図で塗りつぶせるアプリ4選",
+      "description": "行った都道府県を日本地図に塗っていくアプリを4本比べました。塗り方、市区町村まで塗れるか、海外の地図の違いをまとめています。旅行思い出マップの作者が書いています。",
+      "image": "https://tsuzukit.com/assets/images/posts/visited-prefectures-map-apps.webp",
+      "datePublished": "2026-11-15",
+      "dateModified": "2026-11-15",
+      "inLanguage": "ja",
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "mainEntityOfPage": "https://tsuzukit.com/blog/posts/visited-prefectures-map-apps.html",
+      "about": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "旅行思い出マップ - 旅の記憶を、地図に描く",
+          "url": "https://apps.apple.com/jp/app/id6478291625",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "経県値 -けいけんち- 日本地図に色をつける旅の記録・旅行記",
+          "url": "https://apps.apple.com/jp/app/id1396539079",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "Journeys-日本・世界地図を塗って旅行の記録を残そう！",
+          "url": "https://apps.apple.com/jp/app/id1502575743",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "都道府県別に写真を集計・閲覧 - 行ったね！都道府県",
+          "url": "https://apps.apple.com/jp/app/id1245910728",
+          "operatingSystem": "iOS"
+        }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "旅行思い出マップ - 旅の記憶を、地図に描く",
+      "operatingSystem": "iOS",
+      "applicationCategory": "TravelApplication",
+      "url": "https://apps.apple.com/jp/app/id6478291625",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "無料で使えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "4本とも無料で入れられます。経県値は記録の機能が全部無料です。旅行思い出マップは無料だと地図2つまでです。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "市区町村まで塗れるのはどれですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "経県値は47都道府県すべて、旅行思い出マップは42の都道府県で、市区町村まで塗れます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Androidで使えるのはどれですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "この4本の中でGoogle Play版があると確かめられたのは、旅行思い出マップです。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tsuzukit.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://tsuzukit.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "困りごとから選ぶアプリ",
+          "item": "https://tsuzukit.com/blog/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "行った都道府県を地図で塗りつぶせるアプリ4選",
+          "item": "https://tsuzukit.com/blog/posts/visited-prefectures-map-apps.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">TsuzuKit</a>
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/portfolio/" class="nav-link">Portfolio</a>
+                <a href="/blog/" class="nav-link active">Blog</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post -->
+    <article class="blog-post">
+        <header class="post-header">
+            <div class="post-meta">
+                <span class="post-date">2026.11.15</span>
+                <span class="post-category"><span class="i18n-ja">アプリの選び方</span><span class="i18n-en">App guides</span></span>
+                <span class="post-reading-time"><span class="i18n-ja">5分で読める</span><span class="i18n-en">5 min read</span></span>
+            </div>
+            <h1 class="post-title"><span class="i18n-ja">行った都道府県を地図で塗りつぶせるアプリ4選</span><span class="i18n-en">4 Apps for Coloring In the Prefectures You’ve Visited</span></h1>
+        </header>
+        <figure class="post-illustration guide-illustration"><img src="/assets/images/posts/visited-prefectures-map-apps.webp" width="1200" height="800" alt="帰りの新幹線で、行ってきた県が新しく色づいた日本地図を見るキャラクター" data-en-alt="The character on a train home, smiling at a map of Japan where the prefecture they just visited has filled in" fetchpriority="high"></figure>
+
+        <div class="post-content guide i18n-ja">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">先に答え</p>
+                <p>いちばん使われているのは評価12,311件の経県値で、住んだ、泊まった、歩いたの段階で都道府県を塗り分けます。手で入れるのが面倒なら、写真の位置から自動で数える行ったね！都道府県。旅の写真を県の形に切って地図に貼りたい人は、僕が作った旅行思い出マップを見てみてください。</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">書いた人 <a href="https://tsuzukit.com/about/">續橋 涼</a>（@tsuzuki817）</p>
+                    <p class="guide-byline-bio">2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。旅行思い出マップの作者です。</p>
+                    <p class="guide-byline-date">公開 <time datetime="2026-11-15">2026.11.15</time> · 更新 <time datetime="2026-11-15">2026.11.15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">この記事は、旅行思い出マップを作った僕が書いています。ほかの3本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。</p>
+            <h2>4本をざっくり比べる</h2>
+            <p>どれも行った県に色がつくところは同じです。違いが出るのは、何を手がかりに塗るかと、どこまで細かく塗れるかですね。</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">アプリ</th><th scope="col">評価の件数</th><th scope="col">塗り方</th><th scope="col">市区町村</th><th scope="col">日本の外</th></tr></thead><tbody><tr><th scope="row">旅行思い出マップ（僕のアプリ）</th><td>794件</td><td>写真を県の形に切って貼る</td><td>42の都道府県で塗れる</td><td>アジア24か国、台湾、アメリカの州</td></tr><tr><th scope="row">経県値</th><td>12,311件</td><td>住んだ、泊まったなどの6段階</td><td>47都道府県すべてで塗れる</td><td>説明文に記載なし</td></tr><tr><th scope="row">Journeys</th><td>2,760件</td><td>リストから足す</td><td>説明文に記載なし</td><td>世界の国</td></tr><tr><th scope="row">行ったね！都道府県</th><td>2,179件</td><td>写真の位置情報から自動</td><td>説明文に記載なし</td><td>説明文に記載なし</td></tr></tbody></table></div>
+            <h2>1本ずつ見ていく</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ab/d5/e4/abd5e45f-5b4a-51a6-1724-a26f1b3d3039/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">僕が作ったアプリ</span>
+                    <h3 class="guide-app-name">旅行思い出マップ - 旅の記憶を、地図に描く</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · App Storeの評価 794件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6478291625" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        <a class="guide-app-android" href="https://play.google.com/store/apps/details?id=com.tsuzuki817.omoidemap" target="_blank" rel="noopener noreferrer">Google Play版</a>
+                    </div>
+                </div>
+            </div>
+            <p>旅先で撮った写真が都道府県の形に切り取られて、地図にはまっていきます。行った場所が写真で埋まっていくので、塗った地図がそのまま旅のアルバムになります。</p>
+            <p>全国の地図に加えて、42の都道府県で市区町村まで細かく貼れます。全部で1,667のエリアです。アジア24か国、台湾22の地域、アメリカ50州と1準州の地図もあります。</p>
+            <p>友達や家族と同じ地図を一緒に編集できて、1年分の写真をBGM付きの振り返り動画にもできます。Google PlayにAndroid版もあります。</p>
+            <p>無料だと地図は2つまで、1つのエリアに追加できる写真は3枚までです。地図を何枚も作るのと、高画質での保存と印刷は、有料の思い出マップサポーターに入っています。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/84/5f/b4/845fb411-df6d-c138-ba4d-e2d1422d55b6/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">経県値 -けいけんち- 日本地図に色をつける旅の記録・旅行記</h3>
+                    <p class="guide-app-meta">Qdan Inc. · App Storeの評価 12,311件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id1396539079" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>評価が12,311件あって、この中ではいちばん使われています。2000年代からあるWebの経県値の公式アプリで、住んだ、泊まった、歩いた、降り立った、通過した、行ってない、の6段階で点数を出します。</p>
+            <p>47都道府県それぞれの地図で、市区町村まで塗り分けられます。温泉や城めぐりのように、自分で決めた点数の地図も作れて、地図は200枚まで保存できます。</p>
+            <p>記録の機能は無料のまま全部使えて、プレミアムは広告を消すのと機種変更のときの引き継ぎです。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/3c/f1/85/3cf185ff-b817-c411-9eee-531b24dcb63b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Journeys-日本・世界地図を塗って旅行の記録を残そう！</h3>
+                    <p class="guide-app-meta">Hideaki Touhara · App Storeの評価 2,760件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id1502575743" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>行った国や都道府県をリストから足すと、世界地図と日本地図が塗られていきます。国旗や都道府県旗のアイコンも出ます。</p>
+            <p>世界の何%、日本の何%に行ったかが数字で出るので、海外もまとめて記録したい人に向いてます。料金については、説明文に書かれていませんでした。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/56/08/c8/5608c814-4fdb-d67a-9d3e-4ede4ac1c40c/AppIcon-1x_U007emarketing-0-5-85-220-0.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">都道府県別に写真を集計・閲覧 - 行ったね！都道府県</h3>
+                    <p class="guide-app-meta">mitsunori oishi · App Storeの評価 2,179件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id1245910728" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>iPhoneで撮った写真の位置情報から、どの都道府県で撮ったかを自動で数えてくれます。自分で入れる手間がいらないのがいちばんの強みです。</p>
+            <p>都道府県ごとに、初めて撮った日や枚数、日数が分かって、そのままアルバムとして見られます。位置情報のない写真は数えられず、県境では外れることがあると説明文に書かれています。広告が出ます。</p>
+            <h2>アプリを入れたくないなら</h2>
+            <p>日本の白地図を印刷して、行った県を色鉛筆で塗るのがいちばん手軽です。冷蔵庫に貼っておけば、家族で見られます。</p>
+            <p>ただ、どの写真をどこで撮ったかまでは残せません。旅の記録として見返したいなら、アプリのほうが向いてますね。</p>
+            <h2>どれを選ぶか</h2>
+            <ul class="guide-list"><li>住んだ、泊まったまで分けて、点数で全国制覇を目指したいなら、経県値</li><li>海外の国も一緒に、何%行ったかを見たいなら、Journeys</li><li>何も入れずに、今までの写真から自動で知りたいなら、行ったね！都道府県</li><li>旅の写真で地図を埋めて、家族や恋人と同じ地図を作りたいなら、旅行思い出マップ</li></ul>
+            <h2>よくある質問</h2>
+            <dl class="guide-faq">
+                <dt>無料で使えますか？</dt><dd>4本とも無料で入れられます。経県値は記録の機能が全部無料です。旅行思い出マップは無料だと地図2つまでです。</dd>
+                <dt>市区町村まで塗れるのはどれですか？</dt><dd>経県値は47都道府県すべて、旅行思い出マップは42の都道府県で、市区町村まで塗れます。</dd>
+                <dt>Androidで使えるのはどれですか？</dt><dd>この4本の中でGoogle Play版があると確かめられたのは、旅行思い出マップです。</dd>
+            </dl>
+            <p>794件も評価をくれたみなさんに感謝しつつ、次に足してほしい地図があればぜひ教えてください🗾</p>
+            <div class="guide-notes">各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。旅行思い出マップの無料の範囲は、アプリのコードで確かめました。アップデートで変わることがあります。</div>
+        </div>
+
+        <div class="post-content guide i18n-en">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">Short answer</p>
+                <p>The most widely used one is Keikenchi, with 12,311 ratings. It colors each prefecture by whether you lived there, stayed overnight, or walked around. If entering it all by hand sounds like a chore, Todoufuken Go counts prefectures automatically from where your photos were taken. If you want to cut your travel photos into the shape of each prefecture and pin them on the map, take a look at TravelMemoryMap, which I made.</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">Written by <a href="https://tsuzukit.com/about/">Ryo Tsuzukihashi</a> (@tsuzuki817)</p>
+                    <p class="guide-byline-bio">I&#x27;ve been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made TravelMemoryMap.</p>
+                    <p class="guide-byline-date">Published <time datetime="2026-11-15">2026-11-15</time> · Updated <time datetime="2026-11-15">2026-11-15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">I made TravelMemoryMap, and I wrote this article. The other three apps are by developers I don&#x27;t know, and I haven&#x27;t received money or anything else from them. Everything compared here comes from each app&#x27;s App Store description and rating count as of November 15, 2026.</p>
+            <h2>The four apps at a glance</h2>
+            <p>All four color in the prefectures you&#x27;ve been to. Where they differ is what you fill them in with, and how fine the detail goes.</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">App</th><th scope="col">Ratings</th><th scope="col">How you fill it in</th><th scope="col">Cities and towns</th><th scope="col">Outside Japan</th></tr></thead><tbody><tr><th scope="row">TravelMemoryMap (my app)</th><td>794</td><td>Cut photos into the shape of each place</td><td>Available for 42 prefectures</td><td>24 Asian countries, Taiwan, and US states</td></tr><tr><th scope="row">Keikenchi</th><td>12,311</td><td>Six levels, from lived there to passed through</td><td>Available for all 47 prefectures</td><td>Not mentioned</td></tr><tr><th scope="row">Journeys</th><td>2,760</td><td>Add from a list</td><td>Not mentioned</td><td>Countries of the world</td></tr><tr><th scope="row">Todoufuken Go</th><td>2,179</td><td>Automatic, from photo locations</td><td>Not mentioned</td><td>Not mentioned</td></tr></tbody></table></div>
+            <h2>Each app, one by one</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ab/d5/e4/abd5e45f-5b4a-51a6-1724-a26f1b3d3039/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">I made this</span>
+                    <h3 class="guide-app-name">TravelMemoryMap</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · 794 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6478291625" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        <a class="guide-app-android" href="https://play.google.com/store/apps/details?id=com.tsuzuki817.omoidemap" target="_blank" rel="noopener noreferrer">Android version on Google Play</a>
+                    </div>
+                </div>
+            </div>
+            <p>Photos from your trips are cut into the shape of each prefecture and fit into the map. The places you&#x27;ve been fill up with your own photos, so the finished map doubles as an album of your travels.</p>
+            <p>Besides the map of all of Japan, 42 prefectures have maps detailed down to cities and towns, 1,667 areas in all. There are also maps for 24 Asian countries, 22 regions of Taiwan, and the 50 US states plus one territory.</p>
+            <p>You can edit the same map together with friends or family, and turn a year of photos into a look-back video with music. There&#x27;s also an Android version on Google Play.</p>
+            <p>On the free plan you can have up to 2 maps and add up to 3 photos to each area. Making more maps, plus saving and printing in high resolution, come with the paid supporter plan.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/84/5f/b4/845fb411-df6d-c138-ba4d-e2d1422d55b6/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Keikenchi: Japan Travel Map</h3>
+                    <p class="guide-app-meta">Qdan Inc. · 12,311 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id1396539079" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>With 12,311 ratings, it&#x27;s by far the most used of the four. It&#x27;s the official app of Keikenchi, a website that has been around since the 2000s, and it scores each prefecture on six levels: lived there, stayed overnight, walked around, stopped there, passed through, or never been.</p>
+            <p>Every one of the 47 prefectures has its own map down to cities and towns. You can make maps with your own scoring, like hot springs or castles, and save up to 200 maps.</p>
+            <p>All the logging features are free, and Premium removes the ads and lets you transfer your data when you change phones.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/3c/f1/85/3cf185ff-b817-c411-9eee-531b24dcb63b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Journeys - Color In Japan and World Maps</h3>
+                    <p class="guide-app-meta">Hideaki Touhara · 2,760 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id1502575743" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>Add the countries and prefectures you&#x27;ve been to from a list, and the world map and Japan map fill in. Flags for each country and prefecture show up too.</p>
+            <p>It shows what percentage of the world and of Japan you&#x27;ve visited, so it suits people who want to track trips abroad too. The description doesn&#x27;t say anything about pricing.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/56/08/c8/5608c814-4fdb-d67a-9d3e-4ede4ac1c40c/AppIcon-1x_U007emarketing-0-5-85-220-0.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Todoufuken Go - for Japan.</h3>
+                    <p class="guide-app-meta">mitsunori oishi · 2,179 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id1245910728" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>It automatically works out which prefecture each of your iPhone photos was taken in, from the photo&#x27;s location data. Not having to enter anything yourself is its biggest strength.</p>
+            <p>For each prefecture you can see when you first took a photo there, how many photos, and on how many days, and browse them as an album. The description notes that photos without location data aren&#x27;t counted, and results near prefecture borders can be off. It shows ads.</p>
+            <h2>If you&#x27;d rather not install an app</h2>
+            <p>The simplest way is to print a blank map of Japan and color in the prefectures you&#x27;ve been to with colored pencils. Stick it on the fridge and the whole family can see it.</p>
+            <p>What it can&#x27;t hold is which photos you took where. If you want to look back on the trips themselves, an app fits better.</p>
+            <h2>Which one to pick</h2>
+            <ul class="guide-list"><li>If you want to score how well you know each prefecture and aim to cover all of Japan, Keikenchi</li><li>If you want to include other countries and see what percentage you have visited, Journeys</li><li>If you want it worked out from your existing photos without entering anything, Todoufuken Go</li><li>If you want to fill the map with your travel photos and share one map with family or a partner, TravelMemoryMap</li></ul>
+            <h2>FAQ</h2>
+            <dl class="guide-faq">
+                <dt>Are they free?</dt><dd>All four are free to download. Keikenchi&#x27;s logging features are all free. TravelMemoryMap&#x27;s free plan allows up to 2 maps.</dd>
+                <dt>Which ones go down to cities and towns?</dt><dd>Keikenchi covers all 47 prefectures, and TravelMemoryMap covers 42, down to cities and towns.</dd>
+                <dt>Which one works on Android?</dt><dd>Of these four, TravelMemoryMap is the one I could confirm is on Google Play.</dd>
+            </dl>
+            <p>Thank you to everyone behind those 794 ratings, and if there&#x27;s a map you&#x27;d like me to add next, please tell me 🗾</p>
+            <div class="guide-notes">Features and rating counts were checked against each app&#x27;s App Store description on November 15, 2026. What&#x27;s free in TravelMemoryMap was checked in the app&#x27;s code. Things may change with updates.</div>
+        </div>
+
+        <nav class="post-navigation">
+            <img class="tk-char tk-char--post" src="/assets/images/character-hang.png" alt="" width="381" height="208">
+            <a href="/blog/guides/" class="nav-link-wrapper"><span>&larr; <span class="i18n-ja">困りごとから選ぶアプリの一覧へ</span><span class="i18n-en">All guides: apps for everyday problems</span></span></a>
+        </nav>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
+                    <p class="footer-description"><span class="i18n-ja">誰も作らないものを、まじめに作る</span><span class="i18n-en">I make things nobody else would, and I make them seriously</span></p>
+                </div>
+                <div class="footer-nav">
+                    <a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
+                    <a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
+                    <a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
+                    <a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ryo Tsuzukihashi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

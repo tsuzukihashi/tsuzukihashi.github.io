@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/js/lang.js"></script>
+    <!-- このページは scripts/build_guides.py が docs/guides/coffee-bean-roast-date-apps.json から作る。直すのは JSON のほう -->
+    <title>焙煎日から何日？コーヒー豆の飲み頃を数えるアプリ2選 - Blog | Ryo Tsuzukihashi</title>
+    <meta name="description" content="コーヒー豆の焙煎日から飲み頃を数えて知らせてくれるアプリを2本比べました。飲み頃の決め方、通知の時期、冷凍した豆の扱い、無料の範囲の違いをまとめています。BeanFreshの作者が書いています。">
+    <meta name="title-en" content="How Many Days Since Roasting? 2 Apps That Track Coffee Bean Freshness - Blog | Ryo Tsuzukihashi">
+    <meta name="description-en" content="I compared two iPhone apps that count from your coffee beans&#x27; roast date and tell you when they&#x27;re at their best: how they set the window, when they notify you, frozen beans, and what&#x27;s free. Written by the maker of BeanFresh.">
+    <link rel="canonical" href="https://tsuzukit.com/blog/posts/coffee-bean-roast-date-apps.html">
+
+    <!-- OGP -->
+    <meta property="og:title" content="焙煎日から何日？コーヒー豆の飲み頃を数えるアプリ2選">
+    <meta property="og:description" content="コーヒー豆の焙煎日から飲み頃を数えて知らせてくれるアプリを2本比べました。飲み頃の決め方、通知の時期、冷凍した豆の扱い、無料の範囲の違いをまとめています。BeanFreshの作者が書いています。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://tsuzukit.com/blog/posts/coffee-bean-roast-date-apps.html">
+    <meta property="og:image" content="https://tsuzukit.com/assets/images/posts/coffee-bean-roast-date-apps.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://tsuzukit.com/assets/images/posts/coffee-bean-roast-date-apps.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-dark-32x32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-dark-16x16.png" media="(prefers-color-scheme: dark)">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERPQ1EGLH');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8240751277462688"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
+    <link rel="stylesheet" href="/assets/css/guide.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "焙煎日から何日？コーヒー豆の飲み頃を数えるアプリ2選",
+      "description": "コーヒー豆の焙煎日から飲み頃を数えて知らせてくれるアプリを2本比べました。飲み頃の決め方、通知の時期、冷凍した豆の扱い、無料の範囲の違いをまとめています。BeanFreshの作者が書いています。",
+      "image": "https://tsuzukit.com/assets/images/posts/coffee-bean-roast-date-apps.webp",
+      "datePublished": "2026-11-15",
+      "dateModified": "2026-11-15",
+      "inLanguage": "ja",
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "mainEntityOfPage": "https://tsuzukit.com/blog/posts/coffee-bean-roast-date-apps.html",
+      "about": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "珈琲鮮度・焙煎日管理 BeanFresh",
+          "url": "https://apps.apple.com/jp/app/id6778683064",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "Mame Log｜コーヒー豆の飲み頃・鮮度管理",
+          "url": "https://apps.apple.com/jp/app/id6753582881",
+          "operatingSystem": "iOS"
+        }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "珈琲鮮度・焙煎日管理 BeanFresh",
+      "operatingSystem": "iOS",
+      "applicationCategory": "FoodApplication",
+      "url": "https://apps.apple.com/jp/app/id6778683064",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "焙煎日から何日が飲み頃ですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "豆や焙煎度、保存の仕方で変わります。買ったお店で聞いた日数をアプリに入れておくのが確かです。BeanFreshは最初に4日目から28日目までが入っています。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "無料で使えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "どちらも無料で入れられます。BeanFreshは無料だと豆3件まで、Mame Logは無料で広告が出ます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "焙煎日が書いていない豆はどうしますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Mame Logは開封日から数えることもできます。BeanFreshは焙煎日から数えるので、分からなければ買った日を入れて目安にしてください。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tsuzukit.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://tsuzukit.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "困りごとから選ぶアプリ",
+          "item": "https://tsuzukit.com/blog/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "焙煎日から何日？コーヒー豆の飲み頃を数えるアプリ2選",
+          "item": "https://tsuzukit.com/blog/posts/coffee-bean-roast-date-apps.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">TsuzuKit</a>
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/portfolio/" class="nav-link">Portfolio</a>
+                <a href="/blog/" class="nav-link active">Blog</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post -->
+    <article class="blog-post">
+        <header class="post-header">
+            <div class="post-meta">
+                <span class="post-date">2026.11.15</span>
+                <span class="post-category"><span class="i18n-ja">アプリの選び方</span><span class="i18n-en">App guides</span></span>
+                <span class="post-reading-time"><span class="i18n-ja">3分で読める</span><span class="i18n-en">3 min read</span></span>
+            </div>
+            <h1 class="post-title"><span class="i18n-ja">焙煎日から何日？コーヒー豆の飲み頃を数えるアプリ2選</span><span class="i18n-en">How Many Days Since Roasting? 2 Apps That Track Coffee Bean Freshness</span></h1>
+        </header>
+        <figure class="post-illustration guide-illustration"><img src="/assets/images/posts/coffee-bean-roast-date-apps.webp" width="1200" height="800" alt="コーヒー豆の袋を3つ並べて、いちばん飲み頃の1袋を選ぶキャラクター" data-en-alt="The character comparing three bags of coffee beans and picking the one that&#x27;s at its best" fetchpriority="high"></figure>
+
+        <div class="post-content guide i18n-ja">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">先に答え</p>
+                <p>何日が飲み頃かは豆と焙煎度で変わるので、まず買ったお店で聞くのが確かです。数えるのはアプリに任せられます。冷凍して保存する人や、焙煎度ごとに自動で決めてほしい人はMame Log。ガス抜きと飲みきりの日数を自分で決めて、淹れ方も記録したい人は、僕が作ったBeanFreshが合います。</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">書いた人 <a href="https://tsuzukit.com/about/">續橋 涼</a>（@tsuzuki817）</p>
+                    <p class="guide-byline-bio">2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。BeanFreshの作者です。</p>
+                    <p class="guide-byline-date">公開 <time datetime="2026-11-15">2026.11.15</time> · 更新 <time datetime="2026-11-15">2026.11.15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">この記事は、BeanFreshを作った僕が書いています。Mame Logは知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。</p>
+            <h2>2本をざっくり比べる</h2>
+            <p>どちらも焙煎日を入れると飲み頃を出してくれます。違うのは、日数を誰が決めるかと、冷凍した豆を扱えるかです。</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">アプリ</th><th scope="col">評価の件数</th><th scope="col">飲み頃の決め方</th><th scope="col">通知</th><th scope="col">冷凍した豆</th><th scope="col">無料の範囲</th></tr></thead><tbody><tr><th scope="row">BeanFresh（僕のアプリ）</th><td>0件</td><td>ガス抜きと飲みきりの日数を自分で選ぶ</td><td>飲み頃の前日と当日、終わりの3日前と当日。過ぎたら毎日</td><td>なし</td><td>豆3件まで</td></tr><tr><th scope="row">Mame Log</th><td>1件</td><td>焙煎度ごとに自動で計算</td><td>飲み頃を毎日の通知で</td><td>常温と分けて管理。冷凍中は進まない</td><td>無料。広告あり</td></tr></tbody></table></div>
+            <h2>1本ずつ見ていく</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ab/71/c6/ab71c692-efa5-d338-cdad-09609e1d3326/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">僕が作ったアプリ</span>
+                    <h3 class="guide-app-name">珈琲鮮度・焙煎日管理 BeanFresh</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · App Storeの評価 0件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6778683064" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>焙煎日を入れると、ガス抜き、飲み頃、飲みきりどきの順に今どこにいるかをメーターで出します。最初に入るのはガス抜き4日、飲み頃は焙煎日から28日までです。ガス抜きは2日から7日、飲み頃の長さは14日から42日の中で、豆に合わせて選び直せます。</p>
+            <p>通知は、飲み頃に入る前日と当日、飲みきりの3日前と当日です。過ぎたら、飲みきったと記録するまで毎日鳴ります。淹れ方や豆と湯の量、挽き目を残す抽出の記録もあります。</p>
+            <p>無料だと豆は3件まで登録できます。プレミアムで無制限になり、広告が消えます。冷凍した豆の扱いはありません。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c3/bc/6b/c3bc6bac-09b8-0441-dca9-f8a06804de0c/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Mame Log｜コーヒー豆の飲み頃・鮮度管理</h3>
+                    <p class="guide-app-meta">Uetake Kouya · App Storeの評価 1件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6753582881" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>焙煎日か開封日を入れると、浅煎り、中煎り、深煎りごとに飲み頃を自動で計算します。日数を自分で考えたくない人には、こちらのほうが楽ですね。</p>
+            <p>BeanFreshに無いのが冷凍の扱いです。常温と冷凍を分けて管理できて、冷凍している間は経過が止まります。豆カレンダーで、いつどの豆を飲んでいたかも振り返れます。無料で、広告が出ます。</p>
+            <h2>アプリを入れなくてもいい人</h2>
+            <p>豆を1袋ずつしか買わないなら、袋に書いてある焙煎日を見て数えれば足ります。アプリが役に立つのは、何袋かを並行して開けていて、どれから飲むか迷う人です。</p>
+            <h2>どちらを選ぶか</h2>
+            <ul class="guide-list"><li>豆を冷凍して保存する人や、焙煎度で自動に決めてほしい人は、Mame Log</li><li>日数を豆ごとに決めて、飲みきるまで知らせてほしい人や、淹れ方も記録したい人は、BeanFresh</li></ul>
+            <h2>よくある質問</h2>
+            <dl class="guide-faq">
+                <dt>焙煎日から何日が飲み頃ですか？</dt><dd>豆や焙煎度、保存の仕方で変わります。買ったお店で聞いた日数をアプリに入れておくのが確かです。BeanFreshは最初に4日目から28日目までが入っています。</dd>
+                <dt>無料で使えますか？</dt><dd>どちらも無料で入れられます。BeanFreshは無料だと豆3件まで、Mame Logは無料で広告が出ます。</dd>
+                <dt>焙煎日が書いていない豆はどうしますか？</dt><dd>Mame Logは開封日から数えることもできます。BeanFreshは焙煎日から数えるので、分からなければ買った日を入れて目安にしてください。</dd>
+            </dl>
+            <p>BeanFreshはまだ評価が0件です。いつもの豆で試してみた人がいたら、感想を聞かせてください☕</p>
+            <div class="guide-notes">各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。豆の保存の仕方は、買ったお店の案内に従ってください。</div>
+        </div>
+
+        <div class="post-content guide i18n-en">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">Short answer</p>
+                <p>The best window depends on the beans and the roast, so the shop where you bought them is the best place to ask. The counting itself you can leave to an app. If you freeze your beans or want the window set by roast level automatically, try Mame Log. If you want to set the resting and drink-by days yourself and also log your brews, BeanFresh, which I made, is a good fit.</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">Written by <a href="https://tsuzukit.com/about/">Ryo Tsuzukihashi</a> (@tsuzuki817)</p>
+                    <p class="guide-byline-bio">I&#x27;ve been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made BeanFresh.</p>
+                    <p class="guide-byline-date">Published <time datetime="2026-11-15">2026-11-15</time> · Updated <time datetime="2026-11-15">2026-11-15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">I made BeanFresh, and I wrote this article. Mame Log is by a developer I don&#x27;t know, and I haven&#x27;t received money or anything else from them. Everything compared here comes from each app&#x27;s App Store description and rating count as of November 15, 2026.</p>
+            <h2>The two apps at a glance</h2>
+            <p>Both work out the drinking window once you enter the roast date. The difference is who decides the number of days, and whether frozen beans are handled.</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">App</th><th scope="col">Ratings</th><th scope="col">How the window is set</th><th scope="col">Notifications</th><th scope="col">Frozen beans</th><th scope="col">Free version</th></tr></thead><tbody><tr><th scope="row">BeanFresh (my app)</th><td>0</td><td>You choose the resting days and drink-by days</td><td>Day before and day of the window, 3 days before and on the drink-by day, then daily</td><td>No</td><td>Up to 3 bags</td></tr><tr><th scope="row">Mame Log</th><td>1</td><td>Calculated automatically by roast level</td><td>Daily notifications during the window</td><td>Tracked separately, with aging paused while frozen</td><td>Free, with ads</td></tr></tbody></table></div>
+            <h2>Each app, one by one</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ab/71/c6/ab71c692-efa5-d338-cdad-09609e1d3326/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">I made this</span>
+                    <h3 class="guide-app-name">BeanFresh - Coffee Freshness</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · 0 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6778683064" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>Enter the roast date and a meter shows where the beans are now, from resting to their best days to time to finish them. It starts with 4 days of resting and a window that lasts until 28 days after roasting. You can change the resting time to anything from 2 to 7 days, and the window from 14 to 42 days, to suit the beans.</p>
+            <p>It notifies you the day before the window opens, the day it opens, 3 days before the drink-by day, and on that day. After that, it reminds you every day until you log that the bag is finished. There&#x27;s also a brew log for your method, the amount of beans and water, and the grind.</p>
+            <p>The free version holds up to 3 bags of beans. Premium makes it unlimited and removes the ads. It doesn&#x27;t handle frozen beans.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c3/bc/6b/c3bc6bac-09b8-0441-dca9-f8a06804de0c/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Mame Log: Coffee Bean Freshness</h3>
+                    <p class="guide-app-meta">Uetake Kouya · 1 App Store rating</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6753582881" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>Enter the roast date or the day you opened the bag, and it calculates the window automatically for light, medium, or dark roasts. If you&#x27;d rather not think about the number of days, this one is easier.</p>
+            <p>What BeanFresh doesn&#x27;t have is freezer support. It tracks room-temperature and frozen beans separately, and pauses the clock while they&#x27;re frozen. A bean calendar also shows which beans you were drinking and when. It&#x27;s free, with ads.</p>
+            <h2>When you don&#x27;t need an app</h2>
+            <p>If you only buy one bag at a time, checking the roast date printed on the bag is enough. An app helps when you have several bags open at once and can&#x27;t decide which to drink first.</p>
+            <h2>Which one to pick</h2>
+            <ul class="guide-list"><li>If you freeze your beans or want the window set automatically by roast level, Mame Log</li><li>If you want to set the days for each bag, get reminders until it&#x27;s finished, and log your brews, BeanFresh</li></ul>
+            <h2>FAQ</h2>
+            <dl class="guide-faq">
+                <dt>How many days after roasting are beans at their best?</dt><dd>It depends on the beans, the roast, and how you store them. The safest bet is to ask the shop and put those days into the app. BeanFresh starts with day 4 through day 28.</dd>
+                <dt>Are they free?</dt><dd>Both are free to download. BeanFresh holds 3 bags for free, and Mame Log is free with ads.</dd>
+                <dt>What if the bag doesn&#x27;t show a roast date?</dt><dd>Mame Log can also count from the day you opened the bag. BeanFresh counts from the roast date, so if you don&#x27;t know it, enter the day you bought the beans as a rough guide.</dd>
+            </dl>
+            <p>BeanFresh has no ratings yet. If you try it with your usual beans, I&#x27;d love to hear how it goes ☕</p>
+            <div class="guide-notes">Features and rating counts were checked against each app&#x27;s App Store description on November 15, 2026, and may change with updates. For how to store your beans, follow the guidance from the shop where you bought them.</div>
+        </div>
+
+        <nav class="post-navigation">
+            <img class="tk-char tk-char--post" src="/assets/images/character-hang.png" alt="" width="381" height="208">
+            <a href="/blog/guides/" class="nav-link-wrapper"><span>&larr; <span class="i18n-ja">困りごとから選ぶアプリの一覧へ</span><span class="i18n-en">All guides: apps for everyday problems</span></span></a>
+        </nav>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
+                    <p class="footer-description"><span class="i18n-ja">誰も作らないものを、まじめに作る</span><span class="i18n-en">I make things nobody else would, and I make them seriously</span></p>
+                </div>
+                <div class="footer-nav">
+                    <a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
+                    <a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
+                    <a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
+                    <a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ryo Tsuzukihashi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,455 @@
+{
+  "slug": "himekuri-calendar-app",
+  "date_published": "2026-11-15",
+  "date_updated": "2026-11-15",
+  "search_phrase": {
+    "ja": "日めくりカレンダー アプリ",
+    "en": "tear-off daily calendar app"
+  },
+  "evidence": "2026-11-15 に Google の検索候補で「日めくりカレンダー アプリ」を引くと10件出て、「無料」「iphone」「ウィジェット」「名言 アプリ」付きの形が並んだ。「日めくり iphone」でも4件中3件が「アプリ」か「カレンダー」付きだった。同じ日に App Store で「日めくりカレンダー」を検索すると、日めくりを名前に入れたアプリはどれも評価15件未満で、大手のアプリが独占している語ではなかった。",
+  "title": {
+    "ja": "iPhoneでめくれる日めくりカレンダーのアプリ4選",
+    "en": "4 Tear-Off Daily Calendar Apps for iPhone"
+  },
+  "description": {
+    "ja": "紙の日めくりカレンダーのようにめくれるiPhoneのアプリを4本比べました。めくり方、毎日出るもの、ほかの日への移り方の違いをまとめています。めくるんの作者が書いています。",
+    "en": "I compared four iPhone apps that you flip like a paper tear-off calendar: how you turn the page, what shows each day, and how you get to other dates. Written by the maker of Mekulun."
+  },
+  "excerpt": {
+    "ja": "紙を破る、ふわりとめくる、ボタンで送る。めくり方と毎日出るもので4本を比べました。めくるんを作った僕が書いています。",
+    "en": "Tear it, flip it, or press a button. Four apps compared on how you turn the page and what each day shows. I made Mekulun, one of the four."
+  },
+  "category": {
+    "ja": "アプリの選び方",
+    "en": "App guides"
+  },
+  "reading_minutes": 4,
+  "author": {
+    "name": {
+      "ja": "續橋 涼",
+      "en": "Ryo Tsuzukihashi"
+    },
+    "handle": "tsuzuki817",
+    "bio": {
+      "ja": "2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。めくるんの作者です。",
+      "en": "I've been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made Mekulun."
+    },
+    "url": "https://tsuzukit.com/about/",
+    "same_as": [
+      "https://x.com/tsuzuki817"
+    ]
+  },
+  "tldr": {
+    "ja": "旧暦、干支、選日、日の出や潮まで、暦をくわしく見たいならゑびす日めくりが合います。紙をビリッと破る手ざわりを毎朝の楽しみにしたいなら、僕が作っためくるんです。六曜と日替わりの名言が出て、破った紙は積み重なって残ります。",
+    "en": "If you want detailed almanac information, like the old lunar date, zodiac signs, lucky days, sunrise, and tides, Ebisu Himekuri is the one. If you want the feel of tearing off a sheet to be your morning ritual, that's Mekulun, which I made. It shows the rokuyo and a daily quote, and the pages you tear off pile up so you can look back."
+  },
+  "disclosure": {
+    "ja": "この記事は、めくるんを作った僕が書いています。ほかの3本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。",
+    "en": "I made Mekulun, and I wrote this article. The other three apps are by developers I don't know, and I haven't received money or anything else from them. Everything compared here comes from each app's App Store description and rating count as of November 15, 2026."
+  },
+  "own_app": "6761456691",
+  "app_category": "LifestyleApplication",
+  "apps": [
+    {
+      "id": "6761456691",
+      "name": {
+        "ja": "めくるん - 日めくりカレンダー",
+        "en": "Mekulun - Daily Calendar"
+      },
+      "short": {
+        "ja": "めくるん",
+        "en": "Mekulun"
+      },
+      "developer": "Ryo Tsudukihashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/af/45/fb/af45fb7a-3c82-0c9b-7459-928b66d32fc1/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6761456691",
+      "android_url": null,
+      "rating_count": 9
+    },
+    {
+      "id": "6811889023",
+      "name": {
+        "ja": "ゑびす日めくり",
+        "en": "Ebisu Himekuri: Japanese Almanac Calendar"
+      },
+      "short": {
+        "ja": "ゑびす日めくり",
+        "en": "Ebisu Himekuri"
+      },
+      "developer": "SUPERSTER FARM K.K.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/87/31/9d/87319db0-c04d-e2bd-d000-a0cfd7432c23/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6811889023",
+      "android_url": null,
+      "rating_count": 11
+    },
+    {
+      "id": "6443797004",
+      "name": {
+        "ja": "日めくり暦",
+        "en": "Himekuri Koyomi: Simple Daily Calendar"
+      },
+      "short": {
+        "ja": "日めくり暦",
+        "en": "Himekuri Koyomi"
+      },
+      "developer": "Toshiyuki Kuwabara",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/f5/cf/d4/f5cfd402-dd3f-d546-a9b9-31bf489a0962/AppIcon-0-0-1x_U007emarketing-0-11-0-sRGB-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6443797004",
+      "android_url": null,
+      "rating_count": 7
+    },
+    {
+      "id": "1605931501",
+      "name": {
+        "ja": "名言日めくりカレンダー",
+        "en": "Quote-a-Day Tear-Off Calendar"
+      },
+      "short": {
+        "ja": "名言日めくりカレンダー",
+        "en": "Quote-a-Day Calendar"
+      },
+      "developer": "Yusuke Masuda",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/ca/14/e8/ca14e82a-47f6-caf4-533d-cd28e9006740/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id1605931501",
+      "android_url": null,
+      "rating_count": 6
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ja": "4本をざっくり比べる",
+        "en": "The four apps at a glance"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "どれも1日1枚の紙を見せるアプリですが、めくるときの動きと、紙に何が書いてあるかがかなり違います。",
+            "en": "All four show one sheet per day, but they differ a lot in how the page turns and what's printed on it."
+          }
+        },
+        {
+          "type": "table",
+          "head": [
+            {
+              "ja": "アプリ",
+              "en": "App"
+            },
+            {
+              "ja": "評価の件数",
+              "en": "Ratings"
+            },
+            {
+              "ja": "めくり方",
+              "en": "How you turn the page"
+            },
+            {
+              "ja": "毎日出るもの",
+              "en": "What each day shows"
+            },
+            {
+              "ja": "ほかの日へ",
+              "en": "Other dates"
+            },
+            {
+              "ja": "有料のところ",
+              "en": "What costs money"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ja": "めくるん（僕のアプリ）",
+                "en": "Mekulun (my app)"
+              },
+              {
+                "ja": "9件",
+                "en": "9"
+              },
+              {
+                "ja": "下に引っぱって紙を破る",
+                "en": "Pull down to tear the sheet off"
+              },
+              {
+                "ja": "六曜、日替わりの名言、iPhoneのカレンダーの予定",
+                "en": "Rokuyo, a daily quote, events from your iPhone calendar"
+              },
+              {
+                "ja": "破った紙を見返す。今日や1月1日に戻せる",
+                "en": "Look back through torn pages. Restore to today or January 1"
+              },
+              {
+                "ja": "テーマ、書体、壁紙、広告を消す",
+                "en": "Themes, fonts, wallpapers, removing ads"
+              }
+            ],
+            [
+              {
+                "ja": "ゑびす日めくり",
+                "en": "Ebisu Himekuri"
+              },
+              {
+                "ja": "11件",
+                "en": "11"
+              },
+              {
+                "ja": "めくると紙がふわりと返る",
+                "en": "The sheet flips softly as you turn it"
+              },
+              {
+                "ja": "六曜、旧暦、干支、選日、日の出、月と潮、ことわざ",
+                "en": "Rokuyo, lunar date, zodiac, lucky days, sunrise, moon and tides, a proverb"
+              },
+              {
+                "ja": "カレンダーから先の日も過ぎた日も",
+                "en": "Jump forward or back from a calendar"
+              },
+              {
+                "ja": "無料。広告あり",
+                "en": "Free, with ads"
+              }
+            ],
+            [
+              {
+                "ja": "日めくり暦",
+                "en": "Himekuri Koyomi"
+              },
+              {
+                "ja": "7件",
+                "en": "7"
+              },
+              {
+                "ja": "めくりボタンで前後の日",
+                "en": "A button to go to the next or previous day"
+              },
+              {
+                "ja": "自分の記念日と予定",
+                "en": "Your own anniversaries and plans"
+              },
+              {
+                "ja": "指定した日に飛べる",
+                "en": "Jump to any date"
+              },
+              {
+                "ja": "広告を消す",
+                "en": "Removing ads"
+              }
+            ],
+            [
+              {
+                "ja": "名言日めくりカレンダー",
+                "en": "Quote-a-Day Calendar"
+              },
+              {
+                "ja": "6件",
+                "en": "6"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "毎日変わる名言",
+                "en": "A new quote every day"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "1本ずつ見ていく",
+        "en": "Each app, one by one"
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "id": "6761456691"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "画面の紙を下に引っぱると、ビリッと破れてめくれます。引っぱり方で破れ方が毎回変わって、破れる音と手に伝わる振動もつけています。",
+            "en": "Pull the sheet down and it tears off with a rip. The tear changes depending on how you pull, with a tearing sound and a little vibration in your hand."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "紙には六曜と日替わりの名言、iPhoneのカレンダーの予定が出ます。破った紙は積み重なっていくので、あとから名言や書いたメモを読み返せます。めくりすぎたときは、今日か1月1日まで紙を戻せます。",
+            "en": "Each sheet shows the rokuyo, a daily quote, and events from your iPhone calendar. Torn pages pile up, so you can go back and reread quotes and notes later. If you tear too far ahead, you can put the pages back to today or to January 1."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "無料ではテーマはシンプルの1つで、紙を戻すときに広告を1本見ます。プレミアムは買い切りか週ごとのサブスクリプションで、和風やレトロなどのテーマ、日本語の書体、和紙やレンガの壁紙が使えて、広告が消えます。",
+            "en": "On the free plan you get the Simple theme, and restoring pages means watching one ad. Premium is a one-time purchase or a weekly subscription, and unlocks themes like Japanese and Retro, Japanese fonts, and wallpapers like washi paper and brick, with no ads."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6811889023"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "昔ながらの日めくりの紙面をそのままアプリにした作りです。六曜に加えて、旧暦、干支、九星、一粒万倍日のような選日、二十四節気まで1枚に載っています。",
+            "en": "It turns the classic Japanese almanac page into an app. Besides the rokuyo, one sheet covers the old lunar date, the zodiac, the nine stars, lucky days, and the 24 solar terms."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "10の都市から地域を選ぶと、日の出と日の入り、月の満ち欠け、満潮と干潮の時刻も出ます。釣りや農作業の予定を立てる人にも向いています。無料で、広告が出ます。",
+            "en": "Pick your region from 10 cities and it also shows sunrise and sunset, the moon phase, and high and low tide times. It's handy for planning fishing or farm work. It's free, with ads."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6443797004"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "めくりボタンで前の日と次の日を行き来する、シンプルな日めくりです。指定した日にも飛べて、自分の記念日や予定を登録すると日付の下に出ます。",
+            "en": "A simple daily calendar where buttons take you to the previous or next day. You can jump to any date, and anniversaries or plans you add show under the date."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "背景を好きな写真にできて、広告を消すのは有料です。説明文によると、いまの版で表示できるのは2026年12月31日までです。",
+            "en": "You can set your own photo as the background, and removing ads costs money. According to its description, the current version only shows dates through December 31, 2026."
+          }
+        },
+        {
+          "type": "app",
+          "id": "1605931501"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "毎日変わる名言と一緒に日付を見せる、日めくりのアプリです。名言を毎日の習慣にしたい人に向けて作られています。",
+            "en": "A daily calendar that shows the date with a new quote each day. It's made for people who want a quote as part of their daily routine."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "めくり方や料金、ウィジェットについては、説明文に書かれていませんでした。",
+            "en": "The description doesn't say how you turn pages, what it costs, or whether it has widgets."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "アプリを入れたくないなら",
+        "en": "If you'd rather not install an app"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "今日の六曜を見るだけなら、六曜が書いてある紙の日めくりやカレンダーで足ります。めくる手ざわりも、紙ならそのまま味わえますね。",
+            "en": "If you only want today's rokuyo, a paper calendar that prints it is enough, and paper gives you the real feel of tearing it off."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "アプリにするよさは、持ち歩けることと、破った紙を何か月ぶんでも見返せることです。",
+            "en": "What an app adds is that it's always in your pocket, and you can look back through months of torn-off pages."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "どれを選ぶか",
+        "en": "Which one to pick"
+      },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "ja": "旧暦や選日、日の出や潮まで、暦をくわしく見たいなら、ゑびす日めくり",
+              "en": "If you want the full almanac, from the lunar date and lucky days to sunrise and tides, Ebisu Himekuri"
+            },
+            {
+              "ja": "自分の記念日を入れて、ボタンで日付を送りたいなら、日めくり暦",
+              "en": "If you want to add your own anniversaries and move between days with buttons, Himekuri Koyomi"
+            },
+            {
+              "ja": "毎日の名言だけを手軽に見たいなら、名言日めくりカレンダー",
+              "en": "If a daily quote is all you want, Quote-a-Day Calendar"
+            },
+            {
+              "ja": "紙を破る手ざわりと、破った紙が積み重なっていくのを楽しみたいなら、めくるん",
+              "en": "If you want the feel of tearing off a sheet and watching the torn pages pile up, Mekulun"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "ja": "先の日までめくってしまったら戻せますか？",
+        "en": "Can I undo it if I tear too far ahead?"
+      },
+      "a": {
+        "ja": "めくるんは、今日か1月1日まで紙を戻せます。無料のときは、戻す前に広告を1本見ます。",
+        "en": "In Mekulun, you can put the pages back to today or to January 1. On the free plan, you watch one ad before restoring."
+      }
+    },
+    {
+      "q": {
+        "ja": "Androidで使えますか？",
+        "en": "Can I use them on Android?"
+      },
+      "a": {
+        "ja": "めくるんはiPhone専用で、Android版はありません。ほかの3本のAndroid版は、説明文には書かれていませんでした。",
+        "en": "Mekulun is iPhone only, with no Android version. The other three descriptions don't mention Android."
+      }
+    },
+    {
+      "q": {
+        "ja": "無料で使えますか？",
+        "en": "Are they free?"
+      },
+      "a": {
+        "ja": "4本とも無料で入れられます。めくるんは、テーマや壁紙を増やしたり広告を消したりするところがプレミアムです。",
+        "en": "All four are free to download. In Mekulun, extra themes and wallpapers and removing ads are part of Premium."
+      }
+    }
+  ],
+  "closing": {
+    "ja": "めくるんの破れ方はまだ調整したいので、もっとこう破れてほしいという声があったら教えてください📅",
+    "en": "I still want to fine-tune how pages tear in Mekulun, so if you'd like them to rip differently, let me know 📅"
+  },
+  "notes": {
+    "ja": "各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。",
+    "en": "Features and rating counts were checked against each app's App Store description on November 15, 2026, and may change with updates."
+  },
+  "illustration": {
+    "scene": "朝の窓辺で、キャラがスマホを片手に持ち、画面から出た無地の紙（文字なし）の端をつまんで下へビリッと引いている。足もとには破った紙が何枚か重なっていて、キャラは気持ちよさそうな顔をしている。",
+    "alt": {
+      "ja": "朝、スマホの画面から出た紙をビリッと破るキャラクター",
+      "en": "The character tearing a sheet of paper off a phone screen in the morning"
+    }
+  }
+}

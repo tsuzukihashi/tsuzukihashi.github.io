@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/js/lang.js"></script>
+    <!-- このページは scripts/build_guides.py が docs/guides/letter-organizing-apps.json から作る。直すのは JSON のほう -->
+    <title>もらった手紙を整理するアプリ2本と、アプリを使わない方法 - Blog | Ryo Tsuzukihashi</title>
+    <meta name="description" content="もらった手紙を整理して残すアプリを2本比べて、アプリを使わない方法もまとめました。写真で残せるか、文字を読み取れるか、無料の範囲の違いを書いています。言の葉箱の作者です。">
+    <meta name="title-en" content="2 Apps for Organizing Letters You’ve Received, Plus Ways Without an App - Blog | Ryo Tsuzukihashi">
+    <meta name="description-en" content="I compared two iPhone apps for keeping letters you&#x27;ve received, plus ways to do it without an app: saving photos, reading the handwriting, and what&#x27;s free. Written by the maker of Kotonohabako.">
+    <link rel="canonical" href="https://tsuzukit.com/blog/posts/letter-organizing-apps.html">
+
+    <!-- OGP -->
+    <meta property="og:title" content="もらった手紙を整理するアプリ2本と、アプリを使わない方法">
+    <meta property="og:description" content="もらった手紙を整理して残すアプリを2本比べて、アプリを使わない方法もまとめました。写真で残せるか、文字を読み取れるか、無料の範囲の違いを書いています。言の葉箱の作者です。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://tsuzukit.com/blog/posts/letter-organizing-apps.html">
+    <meta property="og:image" content="https://tsuzukit.com/assets/images/posts/letter-organizing-apps.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://tsuzukit.com/assets/images/posts/letter-organizing-apps.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-dark-32x32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-dark-16x16.png" media="(prefers-color-scheme: dark)">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERPQ1EGLH');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8240751277462688"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
+    <link rel="stylesheet" href="/assets/css/guide.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "もらった手紙を整理するアプリ2本と、アプリを使わない方法",
+      "description": "もらった手紙を整理して残すアプリを2本比べて、アプリを使わない方法もまとめました。写真で残せるか、文字を読み取れるか、無料の範囲の違いを書いています。言の葉箱の作者です。",
+      "image": "https://tsuzukit.com/assets/images/posts/letter-organizing-apps.webp",
+      "datePublished": "2026-11-15",
+      "dateModified": "2026-11-15",
+      "inLanguage": "ja",
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "mainEntityOfPage": "https://tsuzukit.com/blog/posts/letter-organizing-apps.html",
+      "about": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "言の葉箱 〜大切な手紙を簡単に記録〜",
+          "url": "https://apps.apple.com/jp/app/id6749537777",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "Heirloom: 古い手紙を読む",
+          "url": "https://apps.apple.com/jp/app/id6792422170",
+          "operatingSystem": "iOS"
+        }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "言の葉箱 〜大切な手紙を簡単に記録〜",
+      "operatingSystem": "iOS",
+      "applicationCategory": "UtilitiesApplication",
+      "url": "https://apps.apple.com/jp/app/id6749537777",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "無料で手紙の写真を残せますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "言の葉箱は、写真がプレミアムです。Heirloomは最初の1ページが無料です。無料で写真を残すなら、iPhoneのメモアプリの書類のスキャンが使えます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "手書きの文字は正しく読み取れますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "どちらのアプリも、字のくせや写真の写りで読み違えることがあります。名前や日付は、元の写真と見比べて確かめてください。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "写真に撮ったら、手紙は捨ててもいいですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "そこは人によると思います。捨てる前に、写真で読み返せるかを一度確かめておくと安心です。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tsuzukit.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://tsuzukit.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "困りごとから選ぶアプリ",
+          "item": "https://tsuzukit.com/blog/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "もらった手紙を整理するアプリ2本と、アプリを使わない方法",
+          "item": "https://tsuzukit.com/blog/posts/letter-organizing-apps.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">TsuzuKit</a>
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/portfolio/" class="nav-link">Portfolio</a>
+                <a href="/blog/" class="nav-link active">Blog</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post -->
+    <article class="blog-post">
+        <header class="post-header">
+            <div class="post-meta">
+                <span class="post-date">2026.11.15</span>
+                <span class="post-category"><span class="i18n-ja">アプリの選び方</span><span class="i18n-en">App guides</span></span>
+                <span class="post-reading-time"><span class="i18n-ja">4分で読める</span><span class="i18n-en">4 min read</span></span>
+            </div>
+            <h1 class="post-title"><span class="i18n-ja">もらった手紙を整理するアプリ2本と、アプリを使わない方法</span><span class="i18n-en">2 Apps for Organizing Letters You’ve Received, Plus Ways Without an App</span></h1>
+        </header>
+        <figure class="post-illustration guide-illustration"><img src="/assets/images/posts/letter-organizing-apps.webp" width="1200" height="800" alt="手紙を1通ずつスマホで撮って、撮り終えた手紙を缶にしまうキャラクター" data-en-alt="The character photographing letters one by one and filing the finished ones neatly in a tin" fetchpriority="high"></figure>
+
+        <div class="post-content guide i18n-ja">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">先に答え</p>
+                <p>手紙そのものを残したいなら、箱やファイルにしまうのがいちばん確かです。場所を取らずに読み返したいなら、写真に撮ってアプリに入れる手があります。差出人やもらった日で探したい人は、僕が作った言の葉箱を見てみてください。写真で残すのはプレミアムです。古い手書きの手紙を読みたいならHeirloomです。</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">書いた人 <a href="https://tsuzukit.com/about/">續橋 涼</a>（@tsuzuki817）</p>
+                    <p class="guide-byline-bio">2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。言の葉箱の作者です。</p>
+                    <p class="guide-byline-date">公開 <time datetime="2026-11-15">2026.11.15</time> · 更新 <time datetime="2026-11-15">2026.11.15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">この記事は、言の葉箱を作った僕が書いています。Heirloomは知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。</p>
+            <h2>2本をざっくり比べる</h2>
+            <p>どちらも手紙を写真で残せます。言の葉箱は整理して探すため、Heirloomは読めない字を読むため、と目的が違います。</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">アプリ</th><th scope="col">評価の件数</th><th scope="col">写真で残す</th><th scope="col">手書きの文字</th><th scope="col">無料で使える範囲</th></tr></thead><tbody><tr><th scope="row">言の葉箱（僕のアプリ）</th><td>1件</td><td>プレミアム。1通に5枚まで</td><td>読み取ってテキストにする</td><td>差出人、もらった日、メモの記録と検索</td></tr><tr><th scope="row">Heirloom</th><td>0件</td><td>5ページまで</td><td>AIで文字起こし。英訳と読み上げも</td><td>最初の1ページ</td></tr></tbody></table></div>
+            <h2>1本ずつ見ていく</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/39/9d/15/399d159d-d1b3-7547-f6f6-aa49dd81a7a5/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">僕が作ったアプリ</span>
+                    <h3 class="guide-app-name">言の葉箱 〜大切な手紙を簡単に記録〜</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · App Storeの評価 1件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6749537777" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>もらった手紙を、差出人、受け取った人、もらった日、メモと一緒に記録します。差出人や言葉で探せて、カレンダーでいつ誰からもらったかを見返せます。ここまでは無料です。</p>
+            <p>手紙と封筒の写真を残せるのはプレミアムです。1通に5枚まで撮れて、写真の文字を読み取ってテキストにするので、ありがとう、のような言葉でも探せるようになります。心に残った言葉をお守りとして取っておく機能も、プレミアムに入っています。</p>
+            <p>無料のままだと手紙そのものの写真は残らないので、そこは知ったうえで入れてください。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/30/67/62/306762a3-76dd-ee66-53da-3d77aa47c763/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Heirloom: 古い手紙を読む</h3>
+                    <p class="guide-app-meta">Randy Torres · App Storeの評価 0件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6792422170" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>手書きの手紙や筆記体、古い日記をAIで文字に起こして、読みやすくしてくれるアプリです。日本語以外の文章は英語に訳せて、読み上げもできます。</p>
+            <p>1通につき5ページまで読み込めて、保存した手紙には元の写真が残るので、文字と見比べられます。最初の1ページは無料で、続けて読むには週払いか年払いのサブスクリプションです。読み取りには写真をサービスに送るので、インターネットが要ります。</p>
+            <h2>アプリを入れたくないなら</h2>
+            <p>手紙そのものを残すなら、箱やファイルにしまうのが確かです。差出人ごとや年ごとに分けておくと、あとで探しやすくなります。</p>
+            <p>写真でも残したいなら、iPhoneのメモアプリの書類のスキャンが使えます。1通を1つのメモにして、題名に差出人ともらった日を書いておけば、メモの検索で見つかります。</p>
+            <h2>どれを選ぶか</h2>
+            <ul class="guide-list"><li>手紙そのものを手元に残したいなら、箱やファイル</li><li>古い手書きの手紙や、読めない字を読みたいなら、Heirloom</li><li>差出人やもらった日で手紙を探したいなら、言の葉箱</li></ul>
+            <h2>よくある質問</h2>
+            <dl class="guide-faq">
+                <dt>無料で手紙の写真を残せますか？</dt><dd>言の葉箱は、写真がプレミアムです。Heirloomは最初の1ページが無料です。無料で写真を残すなら、iPhoneのメモアプリの書類のスキャンが使えます。</dd>
+                <dt>手書きの文字は正しく読み取れますか？</dt><dd>どちらのアプリも、字のくせや写真の写りで読み違えることがあります。名前や日付は、元の写真と見比べて確かめてください。</dd>
+                <dt>写真に撮ったら、手紙は捨ててもいいですか？</dt><dd>そこは人によると思います。捨てる前に、写真で読み返せるかを一度確かめておくと安心です。</dd>
+            </dl>
+            <p>言の葉箱にはまだ評価が1件だけなので、使ってくれた人の声を聞けたらうれしいです✉️</p>
+            <div class="guide-notes">各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。言の葉箱の無料とプレミアムの境目は、アプリのコードで確かめました。アップデートで変わることがあります。</div>
+        </div>
+
+        <div class="post-content guide i18n-en">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">Short answer</p>
+                <p>If you want to keep the letters themselves, a box or a file folder is the surest way. If you want to reread them without the clutter, you can photograph them and put them in an app. If you want to find letters by who sent them or when, take a look at Kotonohabako, which I made. Saving photos is Premium. If you want help reading old handwritten letters, try Heirloom.</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">Written by <a href="https://tsuzukit.com/about/">Ryo Tsuzukihashi</a> (@tsuzuki817)</p>
+                    <p class="guide-byline-bio">I&#x27;ve been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made Kotonohabako.</p>
+                    <p class="guide-byline-date">Published <time datetime="2026-11-15">2026-11-15</time> · Updated <time datetime="2026-11-15">2026-11-15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">I made Kotonohabako, and I wrote this article. Heirloom is by a developer I don&#x27;t know, and I haven&#x27;t received money or anything else from them. Everything compared here comes from each app&#x27;s App Store description and rating count as of November 15, 2026.</p>
+            <h2>The two apps at a glance</h2>
+            <p>Both can keep a letter as photos. The difference is the goal. Kotonohabako is for organizing and finding letters, and Heirloom is for reading handwriting you can&#x27;t make out.</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">App</th><th scope="col">Ratings</th><th scope="col">Saving photos</th><th scope="col">Handwriting</th><th scope="col">What&#x27;s free</th></tr></thead><tbody><tr><th scope="row">Kotonohabako (my app)</th><td>1</td><td>Premium. Up to 5 photos per letter</td><td>Turns it into text you can search</td><td>Logging and searching sender, date, and notes</td></tr><tr><th scope="row">Heirloom</th><td>0</td><td>Up to 5 pages</td><td>AI transcription, plus English translation and read-aloud</td><td>The first page</td></tr></tbody></table></div>
+            <h2>Each app, one by one</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/39/9d/15/399d159d-d1b3-7547-f6f6-aa49dd81a7a5/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">I made this</span>
+                    <h3 class="guide-app-name">Kotonohabako - Keep Your Precious Letters</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · 1 App Store rating</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6749537777" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>You log each letter with who sent it, who received it, the date you got it, and a note. You can search by sender or by words, and look back on a calendar to see who wrote to you and when. All of that is free.</p>
+            <p>Saving photos of the letter and envelope is Premium. You can take up to 5 photos per letter, and it reads the text in them, so you can search for a word like thank you. Keeping a line that stayed with you as a little charm is a Premium feature too.</p>
+            <p>On the free version the letter itself isn&#x27;t saved as a photo, so keep that in mind before you install it.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/30/67/62/306762a3-76dd-ee66-53da-3d77aa47c763/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Heirloom: Old Letter Reader</h3>
+                    <p class="guide-app-meta">Randy Torres · 0 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6792422170" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>This app uses AI to transcribe handwritten letters, cursive, and old diaries into text that&#x27;s easier to read. Text that isn&#x27;t in English can be translated into English, and it can read the text aloud.</p>
+            <p>You can scan up to 5 pages per letter, and saved letters keep the original images so you can compare them with the text. The first page is free, and reading more takes a weekly or yearly subscription. Reading requires an internet connection because the photos are sent to its reading service.</p>
+            <h2>If you&#x27;d rather not install an app</h2>
+            <p>To keep the letters themselves, a box or a file folder is the reliable way. Sorting them by sender or by year makes them easier to find later.</p>
+            <p>If you also want photos, the document scanner in the iPhone Notes app works. Put each letter in its own note and title it with the sender and date, and Notes search will find it.</p>
+            <h2>Which one to pick</h2>
+            <ul class="guide-list"><li>If you want to keep the letters themselves, a box or a file folder</li><li>If you want to read old handwritten letters or writing you can’t make out, Heirloom</li><li>If you want to find letters by sender or by the date you got them, Kotonohabako</li></ul>
+            <h2>FAQ</h2>
+            <dl class="guide-faq">
+                <dt>Can I save photos of letters for free?</dt><dd>In Kotonohabako, photos are Premium. Heirloom gives you the first page free. To save photos for free, use the document scanner in the iPhone Notes app.</dd>
+                <dt>Does it read handwriting correctly?</dt><dd>Both apps can misread depending on the handwriting and the photo. Check names and dates against the original photo.</dd>
+                <dt>Can I throw the letters away once I have photos?</dt><dd>That&#x27;s up to you. Before you let any go, it helps to check once that you can actually read them back from the photos.</dd>
+            </dl>
+            <p>Kotonohabako only has one rating so far, so I&#x27;d be glad to hear from anyone who uses it ✉️</p>
+            <div class="guide-notes">Features and rating counts were checked against each app&#x27;s App Store description on November 15, 2026. What&#x27;s free and what&#x27;s Premium in Kotonohabako was checked in the app&#x27;s code. Things may change with updates.</div>
+        </div>
+
+        <nav class="post-navigation">
+            <img class="tk-char tk-char--post" src="/assets/images/character-hang.png" alt="" width="381" height="208">
+            <a href="/blog/guides/" class="nav-link-wrapper"><span>&larr; <span class="i18n-ja">困りごとから選ぶアプリの一覧へ</span><span class="i18n-en">All guides: apps for everyday problems</span></span></a>
+        </nav>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
+                    <p class="footer-description"><span class="i18n-ja">誰も作らないものを、まじめに作る</span><span class="i18n-en">I make things nobody else would, and I make them seriously</span></p>
+                </div>
+                <div class="footer-nav">
+                    <a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
+                    <a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
+                    <a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
+                    <a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ryo Tsuzukihashi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

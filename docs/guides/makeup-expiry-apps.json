@@ -1,0 +1,451 @@
+{
+  "slug": "makeup-expiry-apps",
+  "date_published": "2026-11-15",
+  "date_updated": "2026-11-15",
+  "search_phrase": {
+    "ja": "コスメ 使用期限 アプリ",
+    "en": "makeup expiration date tracker app"
+  },
+  "evidence": "2026-11-15 に Google の検索候補で「化粧品 使用期限」を引くと11件が出て、「化粧品 使用期限 調べる アプリ」「調べる サイト」「調べ方」が入っていた。「コスメ 使用期限 アプリ」と「コスメ 使用 期限 管理」もそれぞれ候補に出た。同じ日に App Store で「コスメ 使用期限」を引くと15本が並び、評価はいちばん多いものでも34件だった。",
+  "title": {
+    "ja": "コスメの使用期限を管理できるアプリ4選",
+    "en": "4 Apps for Keeping Track of When Your Makeup Expires"
+  },
+  "description": {
+    "ja": "コスメの使用期限を知らせてくれるアプリを4本比べました。開封日から数えるか、ロット番号から調べるか、通知の時期、無料で使える範囲の違いをまとめています。CosmeFreshの作者が書いています。",
+    "en": "I compared four iPhone apps that track when your makeup expires: whether they count from the day you open it or look up the batch code, when they notify you, and what's free. Written by the maker of CosmeFresh."
+  },
+  "excerpt": {
+    "ja": "開けた日から数えるアプリと、ロット番号から調べるアプリ。コスメの使用期限を見るアプリを4本比べました。",
+    "en": "Some count from the day you open a product, one reads the batch code. Four makeup expiry apps compared."
+  },
+  "category": {
+    "ja": "アプリの選び方",
+    "en": "App guides"
+  },
+  "reading_minutes": 4,
+  "author": {
+    "name": {
+      "ja": "續橋 涼",
+      "en": "Ryo Tsuzukihashi"
+    },
+    "handle": "tsuzuki817",
+    "bio": {
+      "ja": "2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。CosmeFreshの作者です。",
+      "en": "I've been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made CosmeFresh."
+    },
+    "url": "https://tsuzukit.com/about/",
+    "same_as": [
+      "https://x.com/tsuzuki817"
+    ]
+  },
+  "tldr": {
+    "ja": "開けた日を覚えておけないなら、開封日から期限を数えて通知するアプリが合います。未開封の買い置きも一緒に見たいならあけたよ、裏のラベルを撮って登録したいならMyCos。期限を過ぎたら見直すまで毎日知らせてほしい人は、僕が作ったCosmeFreshも見てみてください。製造日を知りたいならLotDateです。",
+    "en": "If you can't remember when you opened something, you want an app that counts from that day and notifies you. Aketayo also tracks unopened spares, and MyCos lets you register a product by photographing its label. If you want a reminder every day after the date until you deal with it, take a look at CosmeFresh, which I made. To find out when something was manufactured, use LotDate."
+  },
+  "disclosure": {
+    "ja": "この記事は、CosmeFreshを作った僕が書いています。ほかの3本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。",
+    "en": "I made CosmeFresh, and I wrote this article. The other three apps are by developers I don't know, and I haven't received money or anything else from them. Everything compared here comes from each app's App Store description and rating count as of November 15, 2026."
+  },
+  "own_app": "6779972238",
+  "app_category": "LifestyleApplication",
+  "apps": [
+    {
+      "id": "6779972238",
+      "name": {
+        "ja": "コスメ期限管理 CosmeFresh",
+        "en": "CosmeFresh: Makeup Expiry"
+      },
+      "short": {
+        "ja": "CosmeFresh",
+        "en": "CosmeFresh"
+      },
+      "developer": "Ryo Tsudukihashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ee/a6/91/eea691a9-41b2-2e28-f904-15c3b7e4ff51/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6779972238",
+      "android_url": null,
+      "rating_count": 0
+    },
+    {
+      "id": "6790045652",
+      "name": {
+        "ja": "あけたよ コスメ管理・化粧品の使用期限",
+        "en": "Aketayo: Makeup Expiry Tracker"
+      },
+      "short": {
+        "ja": "あけたよ",
+        "en": "Aketayo"
+      },
+      "developer": "Yoshifumi Sato",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a8/ce/62/a8ce621b-bb1f-6a2f-ca3a-e5fd6d0178d2/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6790045652",
+      "android_url": null,
+      "rating_count": 3
+    },
+    {
+      "id": "6768174512",
+      "name": {
+        "ja": "MyCos - コスメ使用期限管理",
+        "en": "MyCos - Beauty Expiry Tracker"
+      },
+      "short": {
+        "ja": "MyCos",
+        "en": "MyCos"
+      },
+      "developer": "Jinseon Yang",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c2/f9/84/c2f984a8-5c22-7603-9692-a78e8348a26f/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6768174512",
+      "android_url": null,
+      "rating_count": 1
+    },
+    {
+      "id": "1158056006",
+      "name": {
+        "ja": "LotDate: コスメロット番号チェッカー",
+        "en": "LotDate: Batch Code Checker"
+      },
+      "short": {
+        "ja": "LotDate",
+        "en": "LotDate"
+      },
+      "developer": {
+        "ja": "占辉 百",
+        "en": "Zhanhui Bai"
+      },
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d3/a0/88/d3a08846-08d3-d89d-1413-0b7824f56a1f/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id1158056006",
+      "android_url": null,
+      "rating_count": 34
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ja": "期限の数え方は2つある",
+        "en": "There are two ways to count"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "コスメの期限には、製造された日から数えるものと、開けた日から数えるものがあります。開けたあとは何か月で使い切るかという目安があって、容器にマークで書かれていることもあります。",
+            "en": "Makeup has two kinds of dates. One counts from when it was made, and the other counts from when you open it. Once it's open, there's a guideline for how many months to use it within, and sometimes that's printed on the container as a symbol."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "開けた日から数えるアプリは、開封日を入れると期限を出して知らせてくれます。製造日を知りたいときは、ロット番号から調べるアプリを使います。今回はその両方を入れて比べました。",
+            "en": "Apps that count from opening work out the date from the day you enter and remind you. When you want to know the manufacturing date, you use an app that reads the batch code. I included both kinds here."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "4本をざっくり比べる",
+        "en": "The four apps at a glance"
+      },
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            {
+              "ja": "アプリ",
+              "en": "App"
+            },
+            {
+              "ja": "評価の件数",
+              "en": "Ratings"
+            },
+            {
+              "ja": "期限の出し方",
+              "en": "How it finds the date"
+            },
+            {
+              "ja": "期限の前の通知",
+              "en": "Before the date"
+            },
+            {
+              "ja": "期限を過ぎたら",
+              "en": "After the date"
+            },
+            {
+              "ja": "無料の範囲",
+              "en": "Free version"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ja": "CosmeFresh（僕のアプリ）",
+                "en": "CosmeFresh (my app)"
+              },
+              {
+                "ja": "0件",
+                "en": "0"
+              },
+              {
+                "ja": "開封日と種類から",
+                "en": "From the opening day and product type"
+              },
+              {
+                "ja": "7日前と前日と当日",
+                "en": "7 days before, the day before, and on the day"
+              },
+              {
+                "ja": "見直すまで毎日",
+                "en": "Every day until you deal with it"
+              },
+              {
+                "ja": "3件まで",
+                "en": "Up to 3 items"
+              }
+            ],
+            [
+              {
+                "ja": "あけたよ",
+                "en": "Aketayo"
+              },
+              {
+                "ja": "3件",
+                "en": "3"
+              },
+              {
+                "ja": "開封日と開封後の月数から。期限日の直接入力も",
+                "en": "From the opening day and months after opening, or enter the date directly"
+              },
+              {
+                "ja": "30日前と7日前と当日",
+                "en": "30 days before, 7 days before, and on the day"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "手持ち3点と買い置き3点まで",
+                "en": "Up to 3 items in use and 3 spares"
+              }
+            ],
+            [
+              {
+                "ja": "MyCos",
+                "en": "MyCos"
+              },
+              {
+                "ja": "1件",
+                "en": "1"
+              },
+              {
+                "ja": "裏のラベルを撮って読み取る",
+                "en": "Reads it from a photo of the back label"
+              },
+              {
+                "ja": "1か月前、1週間前、当日から選べる",
+                "en": "Choose from a month before, a week before, or on the day"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              }
+            ],
+            [
+              {
+                "ja": "LotDate",
+                "en": "LotDate"
+              },
+              {
+                "ja": "34件",
+                "en": "34"
+              },
+              {
+                "ja": "ロット番号から製造日と期限の目安",
+                "en": "Manufacturing date and estimated expiry from the batch code"
+              },
+              {
+                "ja": "リマインダーを設定できる",
+                "en": "You can set a reminder"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "検索の数や対応ブランドに上限あり",
+                "en": "Limits on searches and supported brands"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "1本ずつ見ていく",
+        "en": "Each app, one by one"
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "id": "6779972238"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "マスカラ、ファンデ、化粧水、香水など、種類を選んで開封日を入れると、開封後の期限が出ます。最初に入る目安はマスカラで3か月、リキッドファンデで6か月、香水で24か月です。目安は1か月から36か月の中で直せます。",
+            "en": "Pick a type, such as mascara, foundation, toner, or perfume, enter the day you opened it, and it shows when it expires after opening. The starting guideline is 3 months for mascara, 6 months for liquid foundation, and 24 months for perfume. You can change it to anything from 1 to 36 months."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "通知は7日前と前日と当日です。期限を過ぎたら、処分したと記録するまで毎日鳴ります。期限が近い順に並ぶので、ポーチの中でどれから使い切ればいいかが分かります。",
+            "en": "It notifies you 7 days before, the day before, and on the day. Once the date passes, it keeps notifying you every day until you mark the item as thrown out. Items are sorted by which expires first, so you can see what to finish first."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "無料だとコスメは3件まで登録できます。ポーチや収納場所で分けるのと、使った記録を残すのはプレミアムです。",
+            "en": "The free version holds up to 3 items. Grouping by pouch or storage spot and keeping a usage log are Premium features."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6790045652"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "開封日と開封後の月数を選ぶと、使用期限と残りの日数が出ます。パッケージに書かれた期限日をそのまま入れることもできます。通知は30日前と7日前と当日で、時刻も変えられます。",
+            "en": "Choose the opening day and how many months it lasts after opening, and you get the expiry date and the days left. You can also type in the date printed on the package. It notifies you 30 days before, 7 days before, and on the day, at a time you choose."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "ほかにない機能が、未開封の買い置きの管理です。開けたときにボタンを押せば期限の管理が始まるので、同じものを二度買うのも防げます。有料版は買い切りで、ウィジェットや無制限の登録が入っています。",
+            "en": "What sets it apart is tracking unopened spares. When you open one, you tap a button and the countdown starts, which also helps you avoid buying the same thing twice. The paid version is a one-time purchase that adds widgets and unlimited items."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6768174512"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "写真1枚で登録できるのが特徴です。裏のラベルも撮ると、ブランド名と製品名と使用期限を読み取ってくれます。認識は端末の中で行うと書かれています。",
+            "en": "Its big feature is registering a product with a single photo. If you also photograph the back label, it reads the brand, the product name, and the expiry date. The description says recognition happens on the device."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "通知は当日、1週間前、1か月前から選べます。iPhoneとiPadで同期できて、日本語のほかに韓国語と英語にも対応しています。",
+            "en": "You can choose to be notified on the day, a week before, or a month before. It syncs between iPhone and iPad, and works in Korean and English as well as Japanese."
+          }
+        },
+        {
+          "type": "app",
+          "id": "1158056006"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "ほかの3本とは使いどころが違うアプリです。ブランドを選んで製品に印字されたロット番号を入れると、製造日と期限の目安が出ます。3000以上のブランドに対応していると書かれています。",
+            "en": "This one serves a different purpose from the other three. Choose a brand and enter the batch code printed on the product, and it shows the manufacturing date and an estimated expiry. The description says it supports more than 3,000 brands."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "もらいものや買い置きを開ける前に、古くないかを見るのに向いています。結果は推定なので、製品の表示やブランドの公式の情報も確かめてくださいと説明文にあります。",
+            "en": "It's useful for checking whether a gift or an old spare is too old before you open it. The description notes that results are estimates and that you should also check the product's labeling and the brand's official information."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "どれを選ぶか",
+        "en": "Which one to pick"
+      },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "ja": "未開封の買い置きも一緒に管理したいなら、あけたよ",
+              "en": "If you also want to track unopened spares, Aketayo"
+            },
+            {
+              "ja": "写真を撮るだけで登録したいなら、MyCos",
+              "en": "If you want to register products just by taking a photo, MyCos"
+            },
+            {
+              "ja": "開ける前に製造日を確かめたいなら、LotDate",
+              "en": "If you want to check the manufacturing date before opening, LotDate"
+            },
+            {
+              "ja": "期限を過ぎたら毎日知らせてほしいなら、CosmeFresh",
+              "en": "If you want a reminder every day once something has expired, CosmeFresh"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "ja": "無料で使えますか？",
+        "en": "Are they free?"
+      },
+      "a": {
+        "ja": "4本とも無料で入れられます。CosmeFreshとあけたよは、無料だと3件までです。",
+        "en": "All four are free to download. CosmeFresh and Aketayo each hold up to 3 items for free."
+      }
+    },
+    {
+      "q": {
+        "ja": "アプリの期限を過ぎたコスメは使えませんか？",
+        "en": "Can I still use makeup after the app's date?"
+      },
+      "a": {
+        "ja": "どのアプリが出すのも一般的な目安です。肌に合わないと感じたら使うのをやめて、皮膚科の先生に聞いてください。",
+        "en": "Every one of these apps only shows a general guideline. If something doesn't feel right on your skin, stop using it and ask a dermatologist."
+      }
+    },
+    {
+      "q": {
+        "ja": "開けた日を忘れてしまったコスメはどうしますか？",
+        "en": "What if I've already forgotten when I opened something?"
+      },
+      "a": {
+        "ja": "開封日が分からないものは、アプリでは数えられません。製造日だけでも知りたいなら、LotDateでロット番号から調べられるか試してみてください。",
+        "en": "An app can't count from a day you don't know. If you at least want the manufacturing date, try looking up the batch code in LotDate."
+      }
+    }
+  ],
+  "closing": {
+    "ja": "CosmeFreshの評価はまだ0件なので、ポーチの中身を入れてみた感想を聞けたらうれしいです💄",
+    "en": "CosmeFresh has no ratings yet, so I'd love to hear what you think after adding what's in your makeup pouch 💄"
+  },
+  "notes": {
+    "ja": "各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。使用期限は製品の表示とメーカーの案内に従ってください。肌のことは皮膚科の先生に相談してください。",
+    "en": "Features and rating counts were checked against each app's App Store description on November 15, 2026, and may change with updates. Follow the product's labeling and the maker's guidance for expiry dates, and talk to a dermatologist about anything skin-related."
+  },
+  "illustration": {
+    "scene": "ドレッサーの前。キャラが開けたばかりのマスカラを片手に持ち、もう片方の手でスマホに開封日を入れている。机の上にはポーチから出したリップやファンデが並び、そのうちいくつかに紫の小さな丸いシールが貼ってある。スマホの画面は文字なし。",
+    "alt": {
+      "ja": "開けたばかりのマスカラを持って、スマホに開封日を記録するキャラクター",
+      "en": "The character holding a freshly opened mascara and logging the opening day on a phone"
+    }
+  }
+}

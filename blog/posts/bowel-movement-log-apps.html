@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/js/lang.js"></script>
+    <!-- このページは scripts/build_guides.py が docs/guides/bowel-movement-log-apps.json から作る。直すのは JSON のほう -->
+    <title>排便の記録をつけるアプリ4選 - Blog | Ryo Tsuzukihashi</title>
+    <meta name="description" content="毎日の排便を記録するアプリを4本比べました。記録できる項目、続けるための仕組み、受診のときに見せる形にできるかの違いをまとめています。うんちくんの作者が書いています。">
+    <meta name="title-en" content="4 Apps for Keeping a Bowel Movement Log - Blog | Ryo Tsuzukihashi">
+    <meta name="description-en" content="I compared four apps for logging your bowel movements every day: what you can record, what helps you keep going, and whether you can turn your log into something to show a doctor. Written by the maker of UNCHIKUN.">
+    <link rel="canonical" href="https://tsuzukit.com/blog/posts/bowel-movement-log-apps.html">
+
+    <!-- OGP -->
+    <meta property="og:title" content="排便の記録をつけるアプリ4選">
+    <meta property="og:description" content="毎日の排便を記録するアプリを4本比べました。記録できる項目、続けるための仕組み、受診のときに見せる形にできるかの違いをまとめています。うんちくんの作者が書いています。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://tsuzukit.com/blog/posts/bowel-movement-log-apps.html">
+    <meta property="og:image" content="https://tsuzukit.com/assets/images/posts/bowel-movement-log-apps.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://tsuzukit.com/assets/images/posts/bowel-movement-log-apps.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-dark-32x32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-dark-16x16.png" media="(prefers-color-scheme: dark)">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERPQ1EGLH');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8240751277462688"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
+    <link rel="stylesheet" href="/assets/css/guide.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "排便の記録をつけるアプリ4選",
+      "description": "毎日の排便を記録するアプリを4本比べました。記録できる項目、続けるための仕組み、受診のときに見せる形にできるかの違いをまとめています。うんちくんの作者が書いています。",
+      "image": "https://tsuzukit.com/assets/images/posts/bowel-movement-log-apps.webp",
+      "datePublished": "2026-11-15",
+      "dateModified": "2026-11-15",
+      "inLanguage": "ja",
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "mainEntityOfPage": "https://tsuzukit.com/blog/posts/bowel-movement-log-apps.html",
+      "about": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "うんちくん：友達や家族とうんち記録をシェア",
+          "url": "https://apps.apple.com/jp/app/id6758856276",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "ウンログ-うんち記録と腸活で健康管理と便秘対策",
+          "url": "https://apps.apple.com/jp/app/id539493829",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "便秘対策・お通じチェッカー",
+          "url": "https://apps.apple.com/jp/app/id542571748",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "腸note－排便記録と便秘管理の腸活アプリ",
+          "url": "https://apps.apple.com/jp/app/id1659743337",
+          "operatingSystem": "iOS"
+        }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "うんちくん：友達や家族とうんち記録をシェア",
+      "operatingSystem": "iOS",
+      "applicationCategory": "HealthApplication",
+      "url": "https://apps.apple.com/jp/app/id6758856276",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "記録を病院に持っていけますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "うんちくんはプレミアムで、直近30日の記録をPDFにまとめられます。ほかの3本の説明文には、書き出しのことは書かれていませんでした。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "便の形や色がいつもと違うときは？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "アプリは記録をつけるためのもので、便の状態がどうなのかは判断できません。気になるときは医師に相談してください。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "無料で使えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "4本とも無料で入れられます。うんちくんは、記録とうんトモの機能が無料で使えて、月のカレンダーやPDFなどがプレミアムです。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tsuzukit.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://tsuzukit.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "困りごとから選ぶアプリ",
+          "item": "https://tsuzukit.com/blog/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "排便の記録をつけるアプリ4選",
+          "item": "https://tsuzukit.com/blog/posts/bowel-movement-log-apps.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">TsuzuKit</a>
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/portfolio/" class="nav-link">Portfolio</a>
+                <a href="/blog/" class="nav-link active">Blog</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post -->
+    <article class="blog-post">
+        <header class="post-header">
+            <div class="post-meta">
+                <span class="post-date">2026.11.15</span>
+                <span class="post-category"><span class="i18n-ja">アプリの選び方</span><span class="i18n-en">App guides</span></span>
+                <span class="post-reading-time"><span class="i18n-ja">5分で読める</span><span class="i18n-en">5 min read</span></span>
+            </div>
+            <h1 class="post-title"><span class="i18n-ja">排便の記録をつけるアプリ4選</span><span class="i18n-en">4 Apps for Keeping a Bowel Movement Log</span></h1>
+        </header>
+        <figure class="post-illustration guide-illustration"><img src="/assets/images/posts/bowel-movement-log-apps.webp" width="1200" height="800" alt="朝の廊下でスマホのカレンダーに今日の印をつけ、遠くの窓から手を振られているキャラクター" data-en-alt="The character in a hallway in the morning, marking today on a phone calendar while someone waves from a faraway window" fetchpriority="high"></figure>
+
+        <div class="post-content guide i18n-ja">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">先に答え</p>
+                <p>評価がいちばん多いのは12,890件のウンログで、記録に合わせた医師監修のアドバイスも届きます。友だちや家族と記録を見せ合いながら続けたい人は、僕が作ったうんちくんも見てみてください。お腹の調子や便の状態で気になることがあれば、アプリではなく医師に相談してください。</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">書いた人 <a href="https://tsuzukit.com/about/">續橋 涼</a>（@tsuzuki817）</p>
+                    <p class="guide-byline-bio">2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。うんちくんの作者です。</p>
+                    <p class="guide-byline-date">公開 <time datetime="2026-11-15">2026.11.15</time> · 更新 <time datetime="2026-11-15">2026.11.15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">この記事は、うんちくんを作った僕が書いています。ほかの3本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。</p>
+            <h2>4本をざっくり比べる</h2>
+            <p>4本とも、トイレのあとにさっと記録できるのは同じです。違いが出るのは、記録のほかに何をしてくれるかです。</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">アプリ</th><th scope="col">評価の件数</th><th scope="col">記録できること</th><th scope="col">続ける仕組み</th><th scope="col">受診のとき</th></tr></thead><tbody><tr><th scope="row">うんちくん（僕のアプリ）</th><td>578件</td><td>回数、形7段階、色、量、メモ</td><td>うんトモと記録を見せ合う。連続日数</td><td>プレミアムで直近30日をPDFに</td></tr><tr><th scope="row">ウンログ</th><td>12,890件</td><td>うんちのほか、食事、体重、生理、肌</td><td>ポイント、悩みを話せるSNS</td><td>説明文に記載なし</td></tr><tr><th scope="row">お通じチェッカー</th><td>9,015件</td><td>時間、量、形、色、メモ</td><td>前回からの時間とペース</td><td>説明文に記載なし</td></tr><tr><th scope="row">腸note</th><td>5,009件</td><td>お通じ、腸活、お腹の音</td><td>腸活のレポート</td><td>説明文に記載なし</td></tr></tbody></table></div>
+            <h2>1本ずつ見ていく</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/dc/95/15/dc9515f7-5943-f66b-b6b7-b43476029c55/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">僕が作ったアプリ</span>
+                    <h3 class="guide-app-name">うんちくん：友達や家族とうんち記録をシェア</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · App Storeの評価 578件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6758856276" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        <a class="guide-app-android" href="https://play.google.com/store/apps/details?id=com.tsuzukit.poopcounter" target="_blank" rel="noopener noreferrer">Google Play版</a>
+                    </div>
+                </div>
+            </div>
+            <p>トイレから出たら、でた！のボタンを押すだけで記録できます。あとから形を7段階で選べて、色と量、メモも残せます。</p>
+            <p>友だちコードやQRコードでうんトモをつなぐと、お互いの記録がストーリーのように見られます。うんトモが記録すると通知が届いて、連続で記録した日数も数えます。</p>
+            <p>週のカレンダー、ウィジェット、うんトモの追加は無料です。月のカレンダーと、直近30日の記録を医師に見せるPDFにまとめる機能はプレミアムです。iPhoneのほかにAndroid版もあります。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/85/21/55/85215536-d197-83cd-bacc-686ca635d989/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">ウンログ-うんち記録と腸活で健康管理と便秘対策</h3>
+                    <p class="guide-app-meta">UNLOG K.K · App Storeの評価 12,890件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id539493829" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>評価が12,890件あって、この中ではいちばん使われています。10秒でうんちを記録できて、記録をもとに状態をスコアで見せてくれると説明文にあります。</p>
+            <p>記録に合わせて、医師が監修したアドバイスが届きます。食事やサプリメント、体重や生理、肌もまとめて記録できて、お通じの悩みを話せるSNSや、記録で貯まるポイントもあります。パスコードで記録を守れます。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/43/a2/28/43a22896-5a8c-187b-0413-cef17535ac7c/AppIcon-0-0-1x_U007emarketing-0-7-0-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">便秘対策・お通じチェッカー</h3>
+                    <p class="guide-app-meta">ZAIZEN Co., Ltd. · App Storeの評価 9,015件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id542571748" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>ボタンを1回押すと、トイレに行った時間を記録できます。量や形、色、メモもあとから残せます。</p>
+            <p>前回から何時間たったか、何日に1回のペースかが分かります。赤ちゃんやペットなど自分以外も含めて3人まで分けて記録できて、4桁のパスワードでロックもかけられます。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4f/01/1c/4f011ce6-2bd5-f666-44cd-669f6ecd624f/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">腸note－排便記録と便秘管理の腸活アプリ</h3>
+                    <p class="guide-app-meta">Suntory Holdings Limited · App Storeの評価 5,009件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id1659743337" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>サントリーの腸活アプリです。スマホのマイクをお腹に当てて、お腹の音を録ります。</p>
+            <p>お通じと腸活を毎日記録して、カレンダーとレポートで振り返れます。医療機器ではなく、診断のためのものではないと説明文に書かれています。iPhone専用です。</p>
+            <h2>アプリを入れたくないなら</h2>
+            <p>紙のノートでもつけられます。検索候補にも、排便記録の用紙や表という形が出ていました。日付と時間、形や色を1行ずつ書くだけです。</p>
+            <p>アプリの便利なところは、ボタン1つで時刻が残ることと、あとで日ごとに並べて見返せることですね。</p>
+            <h2>どれを選ぶか</h2>
+            <ul class="guide-list"><li>記録に合わせたアドバイスや、食事や体重もまとめて見たいなら、ウンログ</li><li>前回からの間隔を知りたい人や、家族やペットの分も分けてつけたい人は、お通じチェッカー</li><li>お腹の音から腸活を考えてみたいなら、腸note</li><li>友だちや家族と見せ合いながら続けたい人や、Androidでも使いたい人は、うんちくん</li></ul>
+            <h2>よくある質問</h2>
+            <dl class="guide-faq">
+                <dt>記録を病院に持っていけますか？</dt><dd>うんちくんはプレミアムで、直近30日の記録をPDFにまとめられます。ほかの3本の説明文には、書き出しのことは書かれていませんでした。</dd>
+                <dt>便の形や色がいつもと違うときは？</dt><dd>アプリは記録をつけるためのもので、便の状態がどうなのかは判断できません。気になるときは医師に相談してください。</dd>
+                <dt>無料で使えますか？</dt><dd>4本とも無料で入れられます。うんちくんは、記録とうんトモの機能が無料で使えて、月のカレンダーやPDFなどがプレミアムです。</dd>
+            </dl>
+            <p>うんちくんの評価は578件まで来たので、うんトモと続いている話もいつか聞かせてください🙏</p>
+            <div class="guide-notes">それぞれのアプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。記録は体の調子を見返すためのもので、診断ではありません。お腹の調子や便の状態で気になることは、医師に相談してください。</div>
+        </div>
+
+        <div class="post-content guide i18n-en">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">Short answer</p>
+                <p>The one with the most ratings is Unlog, with 12,890, and it sends advice supervised by doctors based on your log. If you&#x27;d like to keep going by sharing your log with friends and family, take a look at UNCHIKUN, which I made. If anything about your bowel movements worries you, talk to a doctor rather than relying on an app.</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">Written by <a href="https://tsuzukit.com/about/">Ryo Tsuzukihashi</a> (@tsuzuki817)</p>
+                    <p class="guide-byline-bio">I&#x27;ve been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made UNCHIKUN.</p>
+                    <p class="guide-byline-date">Published <time datetime="2026-11-15">2026-11-15</time> · Updated <time datetime="2026-11-15">2026-11-15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">I made UNCHIKUN, and I wrote this article. The other three apps are by developers I don&#x27;t know, and I haven&#x27;t received money or anything else from them. Everything compared here comes from each app&#x27;s App Store description and rating count as of November 15, 2026.</p>
+            <h2>The four apps at a glance</h2>
+            <p>All four let you log quickly after you go. The difference is what else they do besides keeping the log.</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">App</th><th scope="col">Ratings</th><th scope="col">What you can log</th><th scope="col">What keeps you going</th><th scope="col">For a doctor visit</th></tr></thead><tbody><tr><th scope="row">UNCHIKUN (my app)</th><td>578</td><td>Count, 7 shape types, color, amount, notes</td><td>Share with friends. Streak count</td><td>Premium turns the last 30 days into a PDF</td></tr><tr><th scope="row">Unlog</th><td>12,890</td><td>Besides stool, meals, weight, periods, skin</td><td>Points and a community</td><td>Not mentioned</td></tr><tr><th scope="row">Stool Checker</th><td>9,015</td><td>Time, amount, shape, color, notes</td><td>Time since last and your pace</td><td>Not mentioned</td></tr><tr><th scope="row">Cho-note</th><td>5,009</td><td>Bowel movements, gut-care habits, gut sounds</td><td>Gut-care reports</td><td>Not mentioned</td></tr></tbody></table></div>
+            <h2>Each app, one by one</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/dc/95/15/dc9515f7-5943-f66b-b6b7-b43476029c55/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">I made this</span>
+                    <h3 class="guide-app-name">UNCHIKUN: Poop Tracker+Friends</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · 578 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6758856276" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        <a class="guide-app-android" href="https://play.google.com/store/apps/details?id=com.tsuzukit.poopcounter" target="_blank" rel="noopener noreferrer">Android version on Google Play</a>
+                    </div>
+                </div>
+            </div>
+            <p>When you come out of the bathroom, just press the button to log it. Afterward you can pick the shape from 7 types and add color, amount, and a note.</p>
+            <p>Connect with friends using a friend code or QR code, and you can see each other&#x27;s logs like stories. You get a notification when a friend logs, and the app counts your streak of days.</p>
+            <p>The weekly calendar, widgets, and adding friends are free. The monthly calendar and the feature that puts your last 30 days into a PDF you can show a doctor are Premium. There is an Android version as well as iPhone.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/85/21/55/85215536-d197-83cd-bacc-686ca635d989/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Unlog: Poop Log and Gut Health</h3>
+                    <p class="guide-app-meta">UNLOG K.K · 12,890 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id539493829" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>With 12,890 ratings, this is the most used of the four. The description says you can log in 10 seconds and that it shows your condition as a score based on your records.</p>
+            <p>It sends advice supervised by doctors to match your records. You can also log meals, supplements, weight, periods, and skin in one place, and there is a community for talking about bowel troubles and points you earn by logging. A passcode keeps your records private.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/43/a2/28/43a22896-5a8c-187b-0413-cef17535ac7c/AppIcon-0-0-1x_U007emarketing-0-7-0-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Stool Checker</h3>
+                    <p class="guide-app-meta">ZAIZEN Co., Ltd. · 9,015 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id542571748" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>One press of a button logs the time you went. You can add amount, shape, color, and notes afterward.</p>
+            <p>It shows how long it has been since last time and your usual pace in days. You can keep separate logs for up to three, including a baby or a pet, and lock it with a four-digit passcode.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4f/01/1c/4f011ce6-2bd5-f666-44cd-669f6ecd624f/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Cho-note: Gut Health from Gut Sounds</h3>
+                    <p class="guide-app-meta">Suntory Holdings Limited · 5,009 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id1659743337" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>This is Suntory&#x27;s gut-care app. You hold your phone&#x27;s microphone to your belly and record the sounds.</p>
+            <p>You log bowel movements and gut-care habits each day and look back with a calendar and reports. The description says it isn&#x27;t a medical device and isn&#x27;t meant for diagnosis. It&#x27;s iPhone only.</p>
+            <h2>If you&#x27;d rather not install an app</h2>
+            <p>A paper notebook works too, and printable log sheets showed up in the search suggestions. Just write the date, time, shape, and color on one line each time.</p>
+            <p>What an app adds is the time saved with a single tap, and being able to look back day by day later.</p>
+            <h2>Which one to pick</h2>
+            <ul class="guide-list"><li>If you want advice based on your log, plus meals and weight in one place, Unlog</li><li>If you want to know the gap since last time, or keep separate logs for family or pets, Stool Checker</li><li>If you are curious about gut care through the sounds your belly makes, Cho-note</li><li>If you want to keep going by sharing with friends and family, or need Android too, UNCHIKUN</li></ul>
+            <h2>FAQ</h2>
+            <dl class="guide-faq">
+                <dt>Can I bring my log to a doctor?</dt><dd>UNCHIKUN&#x27;s Premium can put your last 30 days into a PDF. The other three descriptions don&#x27;t mention exporting.</dd>
+                <dt>What if the shape or color looks different from usual?</dt><dd>These apps are for keeping a record, and they can&#x27;t tell you what your stool means. If something worries you, ask a doctor.</dd>
+                <dt>Are they free?</dt><dd>All four are free to download. UNCHIKUN lets you log and connect with friends for free, and things like the monthly calendar and the PDF are Premium.</dd>
+            </dl>
+            <p>UNCHIKUN is up to 578 ratings, so someday I&#x27;d love to hear how you and your friends keep it going together 🙏</p>
+            <div class="guide-notes">Features and rating counts were checked against each app&#x27;s App Store description on November 15, 2026, and may change with updates. These logs are for looking back on how you&#x27;ve been, not for diagnosis. If anything about your bowel movements worries you, talk to a doctor.</div>
+        </div>
+
+        <nav class="post-navigation">
+            <img class="tk-char tk-char--post" src="/assets/images/character-hang.png" alt="" width="381" height="208">
+            <a href="/blog/guides/" class="nav-link-wrapper"><span>&larr; <span class="i18n-ja">困りごとから選ぶアプリの一覧へ</span><span class="i18n-en">All guides: apps for everyday problems</span></span></a>
+        </nav>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
+                    <p class="footer-description"><span class="i18n-ja">誰も作らないものを、まじめに作る</span><span class="i18n-en">I make things nobody else would, and I make them seriously</span></p>
+                </div>
+                <div class="footer-nav">
+                    <a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
+                    <a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
+                    <a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
+                    <a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ryo Tsuzukihashi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

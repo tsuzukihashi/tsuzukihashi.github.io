@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/js/lang.js"></script>
+    <!-- このページは scripts/build_guides.py が docs/guides/what-day-is-today-app.json から作る。直すのは JSON のほう -->
+    <title>「今日は何の日」が分かるアプリ4選 - Blog | Ryo Tsuzukihashi</title>
+    <meta name="description" content="今日の記念日や出来事が分かるアプリを4本比べました。朝礼やSNSのネタに使える情報の量、ウィジェット、和暦や六曜も出るかの違いをまとめています。Todayの作者が書いています。">
+    <meta name="title-en" content="4 Apps That Tell You What Today Is Known For - Blog | Ryo Tsuzukihashi">
+    <meta name="description-en" content="I compared four apps that tell you today&#x27;s anniversaries and events: how much you get for a morning talk or a social post, widgets, and whether they also show the Japanese era year and rokuyo. Written by the maker of Today.">
+    <link rel="canonical" href="https://tsuzukit.com/blog/posts/what-day-is-today-app.html">
+
+    <!-- OGP -->
+    <meta property="og:title" content="「今日は何の日」が分かるアプリ4選">
+    <meta property="og:description" content="今日の記念日や出来事が分かるアプリを4本比べました。朝礼やSNSのネタに使える情報の量、ウィジェット、和暦や六曜も出るかの違いをまとめています。Todayの作者が書いています。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://tsuzukit.com/blog/posts/what-day-is-today-app.html">
+    <meta property="og:image" content="https://tsuzukit.com/assets/images/posts/what-day-is-today-app.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://tsuzukit.com/assets/images/posts/what-day-is-today-app.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-dark-32x32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-dark-16x16.png" media="(prefers-color-scheme: dark)">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERPQ1EGLH');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8240751277462688"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
+    <link rel="stylesheet" href="/assets/css/guide.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "「今日は何の日」が分かるアプリ4選",
+      "description": "今日の記念日や出来事が分かるアプリを4本比べました。朝礼やSNSのネタに使える情報の量、ウィジェット、和暦や六曜も出るかの違いをまとめています。Todayの作者が書いています。",
+      "image": "https://tsuzukit.com/assets/images/posts/what-day-is-today-app.webp",
+      "datePublished": "2026-11-15",
+      "dateModified": "2026-11-15",
+      "inLanguage": "ja",
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "mainEntityOfPage": "https://tsuzukit.com/blog/posts/what-day-is-today-app.html",
+      "about": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "Today -今日は令和何年で何の日？-",
+          "url": "https://apps.apple.com/jp/app/id6752814140",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "今日は何の日?",
+          "url": "https://apps.apple.com/jp/app/id847081017",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "今日は何の日ウィジェット",
+          "url": "https://apps.apple.com/jp/app/id6443726825",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "作者が9割知らなかった【今日の雑学366】今日は何の日アプリ",
+          "url": "https://apps.apple.com/jp/app/id6478505043",
+          "operatingSystem": "iOS"
+        }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Today -今日は令和何年で何の日？-",
+      "operatingSystem": "iOS",
+      "applicationCategory": "ReferenceApplication",
+      "url": "https://apps.apple.com/jp/app/id6752814140",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "ロック画面に令和何年かを出せますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Todayの和暦のウィジェットなら、ロック画面に今日の和暦を出せます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "大安や仏滅も分かりますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Todayと今日は何の日?は、六曜も表示します。結婚式などの日取りを決めるときに確かめられます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "無料で使えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "4本とも無料で入れられます。Todayと今日は何の日?は広告が出て、今日は何の日?は買い切りで広告を消せます。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tsuzukit.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://tsuzukit.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "困りごとから選ぶアプリ",
+          "item": "https://tsuzukit.com/blog/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "「今日は何の日」が分かるアプリ4選",
+          "item": "https://tsuzukit.com/blog/posts/what-day-is-today-app.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">TsuzuKit</a>
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/portfolio/" class="nav-link">Portfolio</a>
+                <a href="/blog/" class="nav-link active">Blog</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post -->
+    <article class="blog-post">
+        <header class="post-header">
+            <div class="post-meta">
+                <span class="post-date">2026.11.15</span>
+                <span class="post-category"><span class="i18n-ja">アプリの選び方</span><span class="i18n-en">App guides</span></span>
+                <span class="post-reading-time"><span class="i18n-ja">4分で読める</span><span class="i18n-en">4 min read</span></span>
+            </div>
+            <h1 class="post-title"><span class="i18n-ja">「今日は何の日」が分かるアプリ4選</span><span class="i18n-en">4 Apps That Tell You What Today Is Known For</span></h1>
+        </header>
+        <figure class="post-illustration guide-illustration"><img src="/assets/images/posts/what-day-is-today-app.webp" width="1200" height="800" alt="朝礼でスマホを見ながら、今日の話題を話すキャラクター" data-en-alt="The character at a morning meeting, sharing today&#x27;s topic while glancing at a phone" fetchpriority="high"></figure>
+
+        <div class="post-content guide i18n-ja">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">先に答え</p>
+                <p>記念日、歴史の出来事、誕生日の有名人までまとめて知りたいなら、評価4,107件の今日は何の日?がいちばん詳しいです。ほかの日も調べられて、自分の記念日も登録できます。今日の記念日と一緒に、令和何年か、六曜、祝日、月の満ち欠けまで1画面で見たいなら、僕が作ったTodayも見てみてください。</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">書いた人 <a href="https://tsuzukit.com/about/">續橋 涼</a>（@tsuzuki817）</p>
+                    <p class="guide-byline-bio">2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。Todayの作者です。</p>
+                    <p class="guide-byline-date">公開 <time datetime="2026-11-15">2026.11.15</time> · 更新 <time datetime="2026-11-15">2026.11.15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">この記事は、Todayを作った僕が書いています。ほかの3本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。</p>
+            <h2>4本をざっくり比べる</h2>
+            <p>記念日のほかに何が出るかで分かれます。話のネタを増やしたいのか、今日の暦をまとめて知りたいのかで選ぶと迷いません。</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">アプリ</th><th scope="col">評価の件数</th><th scope="col">記念日のほかに出るもの</th><th scope="col">ほかの日を調べる</th><th scope="col">ウィジェット</th><th scope="col">料金</th></tr></thead><tbody><tr><th scope="row">Today（僕のアプリ）</th><td>3件</td><td>和暦、六曜、祝日、次の祝日まで、月の満ち欠け、誕生花</td><td>なし。今日だけ</td><td>ホーム画面とロック画面。和暦、何の日、祝日、月の4種類</td><td>無料。広告あり</td></tr><tr><th scope="row">今日は何の日?</th><td>4,107件</td><td>歴史の出来事、誕生日の有名人、六曜</td><td>365日どの日でも</td><td>ホーム画面とロック画面</td><td>無料。広告を消すのは買い切り</td></tr><tr><th scope="row">今日は何の日ウィジェット</th><td>3件</td><td>説明文に記載なし</td><td>説明文に記載なし</td><td>ホーム画面とロック画面</td><td>説明文に記載なし</td></tr><tr><th scope="row">今日の雑学366</th><td>3件</td><td>記念日にちなんだ雑学</td><td>説明文に記載なし</td><td>説明文に記載なし</td><td>説明文に記載なし</td></tr></tbody></table></div>
+            <h2>1本ずつ見ていく</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/05/2f/aa/052faaec-dec9-9c8a-504f-cfe4711f9f5c/today-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">僕が作ったアプリ</span>
+                    <h3 class="guide-app-name">Today -今日は令和何年で何の日？-</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · App Storeの評価 3件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6752814140" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>開くと、今日が令和何年か、何曜日か、六曜、祝日かどうかが並び、その下に今日の記念日や年中行事が出ます。次の祝日まであと何日か、今日の月の形、誕生花と花言葉も1画面にまとめています。</p>
+            <p>ウィジェットは、和暦、今日は何の日、祝日のカウントダウン、月の満ち欠けの4種類です。和暦と今日は何の日はロック画面にも置けるので、書類に令和何年と書くときにロック画面を見るだけで済みます。</p>
+            <p>見られるのは今日の情報だけで、ほかの日を調べる機能はありません。全部無料で、アプリの中に広告が出ます。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/de/80/3c/de803ccd-ce52-3b1c-753c-6f9317b4243e/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">今日は何の日?</h3>
+                    <p class="guide-app-meta">kazuhiro aonuma · App Storeの評価 4,107件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id847081017" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>評価が4,107件あって、4本の中でいちばん使われています。開くとすぐ、今日の記念日、歴史の出来事、誕生日の有名人が一覧で出ます。</p>
+            <p>日付を送れば365日どの日でも調べられて、自分の誕生日や記念日も登録できます。決めた時刻に今日の記念日を通知する機能や、Siriへの対応もあります。広告は買い切りで消せます。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/3f/89/64/3f896445-5605-eafe-dff9-52950d66647f/AppIcon-1x_U007epad-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">今日は何の日ウィジェット</h3>
+                    <p class="guide-app-meta">Satoko Kondo · App Storeの評価 3件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6443726825" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>今日は何の日かが分かるアプリで、ホーム画面やロック画面にウィジェットとして置けます。</p>
+            <p>説明文はこの2点だけで、ほかに何が出るのかは書かれていませんでした。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/11/1a/fe/111afee4-4b66-792b-525b-162c4b0e6180/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">作者が9割知らなかった【今日の雑学366】今日は何の日アプリ</h3>
+                    <p class="guide-app-meta">Kazuyuki Suda · App Storeの評価 3件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6478505043" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>1日に1つ、366日分の記念日と、それにちなんだ雑学をイラストと音楽と一緒に見せるアプリです。説明文に、収録している記念日の一覧が全部載っています。</p>
+            <p>記念日の名前だけでなく、話のタネになる雑学まで欲しい人に合います。ウィジェットや料金については、説明文に書かれていませんでした。</p>
+            <h2>アプリを入れたくないなら</h2>
+            <p>今日が令和何年かだけなら、iPhoneの設定で暦法を和暦にする手もあります。ただ、カレンダーなどの年の表示が全部和暦になります。</p>
+            <p>記念日は、検索で「今日は何の日」と打てば出てきます。毎日ウィジェットで目に入れたいなら、アプリのほうが手間がかかりません。</p>
+            <h2>どれを選ぶか</h2>
+            <ul class="guide-list"><li>記念日、出来事、誕生日の有名人をまとめて、ほかの日も調べたいなら、今日は何の日?</li><li>記念日にちなんだ雑学まで読みたいなら、今日の雑学366</li><li>記念日と一緒に、令和何年か、六曜、祝日、月の形をウィジェットで見たいなら、Today</li></ul>
+            <h2>よくある質問</h2>
+            <dl class="guide-faq">
+                <dt>ロック画面に令和何年かを出せますか？</dt><dd>Todayの和暦のウィジェットなら、ロック画面に今日の和暦を出せます。</dd>
+                <dt>大安や仏滅も分かりますか？</dt><dd>Todayと今日は何の日?は、六曜も表示します。結婚式などの日取りを決めるときに確かめられます。</dd>
+                <dt>無料で使えますか？</dt><dd>4本とも無料で入れられます。Todayと今日は何の日?は広告が出て、今日は何の日?は買い切りで広告を消せます。</dd>
+            </dl>
+            <p>Todayの評価はまだ3件なので、朝礼のネタに使ってくれた人がいたらこっそり教えてください😊</p>
+            <div class="guide-notes">各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。</div>
+        </div>
+
+        <div class="post-content guide i18n-en">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">Short answer</p>
+                <p>If you want anniversaries, historical events, and famous birthdays all together, What Day Is It?, with 4,107 ratings, is the most detailed. It can look up other dates and lets you add your own anniversaries. If you want today&#x27;s anniversaries plus the Reiwa year, rokuyo, holidays, and the moon phase on one screen, take a look at Today, which I made.</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">Written by <a href="https://tsuzukit.com/about/">Ryo Tsuzukihashi</a> (@tsuzuki817)</p>
+                    <p class="guide-byline-bio">I&#x27;ve been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made Today.</p>
+                    <p class="guide-byline-date">Published <time datetime="2026-11-15">2026-11-15</time> · Updated <time datetime="2026-11-15">2026-11-15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">I made Today, and I wrote this article. The other three apps are by developers I don&#x27;t know, and I haven&#x27;t received money or anything else from them. Everything compared here comes from each app&#x27;s App Store description and rating count as of November 15, 2026.</p>
+            <h2>The four apps at a glance</h2>
+            <p>The difference is what they show besides anniversaries. Decide whether you want more conversation starters or a full picture of today&#x27;s calendar, and the choice gets easy.</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">App</th><th scope="col">Ratings</th><th scope="col">Besides anniversaries</th><th scope="col">Other dates</th><th scope="col">Widgets</th><th scope="col">Price</th></tr></thead><tbody><tr><th scope="row">Today (my app)</th><td>3</td><td>Era year, rokuyo, holidays, days to the next holiday, moon phase, flower of the day</td><td>No, today only</td><td>Home and Lock Screen. Four kinds: era year, anniversaries, holidays, moon</td><td>Free, with ads</td></tr><tr><th scope="row">What Day Is It?</th><td>4,107</td><td>Historical events, famous birthdays, rokuyo</td><td>Any day of the year</td><td>Home and Lock Screen</td><td>Free. Removing ads is a one-time purchase</td></tr><tr><th scope="row">On This Day Widget</th><td>3</td><td>Not mentioned</td><td>Not mentioned</td><td>Home and Lock Screen</td><td>Not mentioned</td></tr><tr><th scope="row">Daily Trivia 366</th><td>3</td><td>Trivia tied to each anniversary</td><td>Not mentioned</td><td>Not mentioned</td><td>Not mentioned</td></tr></tbody></table></div>
+            <h2>Each app, one by one</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/05/2f/aa/052faaec-dec9-9c8a-504f-cfe4711f9f5c/today-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">I made this</span>
+                    <h3 class="guide-app-name">Today - Japanese Era Year &amp; On This Day</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · 3 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6752814140" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>Open it and you see the Reiwa year, the day of the week, the rokuyo, and whether it&#x27;s a holiday, with today&#x27;s anniversaries and seasonal events below. The days until the next holiday, tonight&#x27;s moon phase, and the flower of the day with its meaning are on the same screen.</p>
+            <p>There are four widgets: the era year, today&#x27;s anniversaries, a holiday countdown, and the moon phase. The era year and anniversaries widgets also go on the Lock Screen, so when you need to write the Reiwa year on a form, a glance at your Lock Screen is enough.</p>
+            <p>It only shows today. There&#x27;s no way to look up other dates. Everything is free, with ads in the app.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/de/80/3c/de803ccd-ce52-3b1c-753c-6f9317b4243e/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">What Day Is It?</h3>
+                    <p class="guide-app-meta">kazuhiro aonuma · 4,107 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id847081017" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>With 4,107 ratings, it&#x27;s the most used of the four. The moment you open it, you get a list of today&#x27;s anniversaries, historical events, and famous people born today.</p>
+            <p>Step through the dates to look up any day of the year, and add your own birthdays and anniversaries. It can also notify you of today&#x27;s anniversary at a time you choose, and it works with Siri. Ads can be removed with a one-time purchase.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/3f/89/64/3f896445-5605-eafe-dff9-52950d66647f/AppIcon-1x_U007epad-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">On This Day Widget</h3>
+                    <p class="guide-app-meta">Satoko Kondo · 3 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6443726825" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>It tells you what today is known for, and you can put it on your Home Screen or Lock Screen as a widget.</p>
+            <p>That&#x27;s all the description says, so it isn&#x27;t clear what else it shows.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/11/1a/fe/111afee4-4b66-792b-525b-162c4b0e6180/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Daily Trivia 366: What Day Is It</h3>
+                    <p class="guide-app-meta">Kazuyuki Suda · 3 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6478505043" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>Once a day, it shows one of 366 anniversaries with a bit of related trivia, along with an illustration and music. The description lists every anniversary it covers.</p>
+            <p>It suits people who want trivia to talk about, not just the name of the day. The description doesn&#x27;t mention widgets or pricing.</p>
+            <h2>If you&#x27;d rather not install an app</h2>
+            <p>If all you need is the Reiwa year, you can switch your iPhone&#x27;s calendar setting to the Japanese calendar. But then years across the system, like in the Calendar app, all show in the Japanese format.</p>
+            <p>For anniversaries, searching for what day it is will turn them up. If you want to see them every day on a widget, an app saves you the effort.</p>
+            <h2>Which one to pick</h2>
+            <ul class="guide-list"><li>If you want anniversaries, events, and famous birthdays together, and to look up other dates, What Day Is It?</li><li>If you want trivia that goes with each anniversary, Daily Trivia 366</li><li>If you want the Reiwa year, rokuyo, holidays, and the moon on widgets along with anniversaries, Today</li></ul>
+            <h2>FAQ</h2>
+            <dl class="guide-faq">
+                <dt>Can I show the Reiwa year on my Lock Screen?</dt><dd>Yes, with Today&#x27;s era year widget you can show today&#x27;s date in the Japanese calendar on your Lock Screen.</dd>
+                <dt>Do they show auspicious days like taian and butsumetsu?</dt><dd>Today and What Day Is It? both show the rokuyo, so you can check it when picking a date for a wedding or similar.</dd>
+                <dt>Are they free?</dt><dd>All four are free to download. Today and What Day Is It? both show ads, and What Day Is It? lets you remove them with a one-time purchase.</dd>
+            </dl>
+            <p>Today only has three ratings so far, so if it&#x27;s helped you with a morning meeting, I&#x27;d love to hear about it 😊</p>
+            <div class="guide-notes">Features and rating counts were checked against each app&#x27;s App Store description on November 15, 2026, and may change with updates.</div>
+        </div>
+
+        <nav class="post-navigation">
+            <img class="tk-char tk-char--post" src="/assets/images/character-hang.png" alt="" width="381" height="208">
+            <a href="/blog/guides/" class="nav-link-wrapper"><span>&larr; <span class="i18n-ja">困りごとから選ぶアプリの一覧へ</span><span class="i18n-en">All guides: apps for everyday problems</span></span></a>
+        </nav>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
+                    <p class="footer-description"><span class="i18n-ja">誰も作らないものを、まじめに作る</span><span class="i18n-en">I make things nobody else would, and I make them seriously</span></p>
+                </div>
+                <div class="footer-nav">
+                    <a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
+                    <a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
+                    <a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
+                    <a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ryo Tsuzukihashi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

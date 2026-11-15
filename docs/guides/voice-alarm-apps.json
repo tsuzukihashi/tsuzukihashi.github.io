@@ -1,0 +1,375 @@
+{
+  "slug": "voice-alarm-apps",
+  "date_published": "2026-11-15",
+  "date_updated": "2026-11-15",
+  "search_phrase": {
+    "ja": "声 アラーム アプリ",
+    "en": "voice alarm app"
+  },
+  "evidence": "2026-11-15 に Google の検索候補で「声 アラーム」を引くと10件出て、「声 アラーム アプリ」「声 アラーム iphone」のほかに、推しの声、自分の声、彼女の声、子供の声で鳴らしたい形が並んだ。「録音 アラーム」も12件すべてが、録音をアラームにする方法を探す形だった。同じ日に App Store で「声 アラーム」を検索すると、声で起こし合うアプリが何本も並んでいたが、どれも評価8件以下だった。",
+  "title": {
+    "ja": "好きな人の声で起きられるアラームアプリ3選",
+    "en": "3 Alarm Apps That Wake You Up with Someone’s Voice"
+  },
+  "description": {
+    "ja": "録音した声をアラームにできるアプリを3本比べました。誰の声で起きるか、録音の長さ、無料の範囲の違いをまとめています。Monivoの作者が書いています。",
+    "en": "I compared three iPhone apps that turn a recorded voice into your alarm: whose voice wakes you, how long the recording can be, and what's free. Written by the maker of Monivo."
+  },
+  "excerpt": {
+    "ja": "誰の声で起きるか、録音の長さ、無料の範囲で3本を比べました。Monivoを作った僕が、自分のアプリも入れて書いています。",
+    "en": "Three apps compared on whose voice wakes you, recording length, and what's free. I made Monivo, and it's one of the three."
+  },
+  "category": {
+    "ja": "アプリの選び方",
+    "en": "App guides"
+  },
+  "reading_minutes": 4,
+  "author": {
+    "name": {
+      "ja": "續橋 涼",
+      "en": "Ryo Tsuzukihashi"
+    },
+    "handle": "tsuzuki817",
+    "bio": {
+      "ja": "2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。Monivoの作者です。",
+      "en": "I've been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made Monivo."
+    },
+    "url": "https://tsuzukit.com/about/",
+    "same_as": [
+      "https://x.com/tsuzuki817"
+    ]
+  },
+  "tldr": {
+    "ja": "自分で録った声や、子どもや推しの声で起きたいならOshiton、友だちに前の晩に吹き込んでもらうならこけこが分かりやすいです。フレンドの声に加えて、世界のだれかの声でも毎朝起きてみたい人や、Androidでも使いたい人は、僕が作ったMonivoも見てみてください。",
+    "en": "If you want to wake up to a voice you recorded yourself, like your kid's or your favorite idol's, Oshiton is the easy pick. If you want a friend to record one for you the night before, Kokeko is the straightforward choice. If you'd like to wake up to voices from people around the world as well as your friends, or want it on Android too, take a look at Monivo, which I made."
+  },
+  "disclosure": {
+    "ja": "この記事は、Monivoを作った僕が書いています。ほかの2本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。",
+    "en": "I made Monivo, and I wrote this article. The other two apps are by developers I don't know, and I haven't received money or anything else from them. Everything compared here comes from each app's App Store description and rating count as of November 15, 2026."
+  },
+  "own_app": "6793626358",
+  "app_category": "UtilitiesApplication",
+  "apps": [
+    {
+      "id": "6793626358",
+      "name": {
+        "ja": "Monivo 声で起こし合うアラーム",
+        "en": "Monivo: Wake Up by Voice"
+      },
+      "short": {
+        "ja": "Monivo",
+        "en": "Monivo"
+      },
+      "developer": "Ryo Tsudukihashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5a/d3/12/5ad312e4-b84a-555e-1efa-e9b497c814ce/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6793626358",
+      "android_url": "https://play.google.com/store/apps/details?id=com.tsuzukit.monivo",
+      "rating_count": 1
+    },
+    {
+      "id": "6763635413",
+      "name": {
+        "ja": "Oshiton - 推し・子供の声で目覚ましアラーム",
+        "en": "Oshiton - Voice Recorder Alarm"
+      },
+      "short": {
+        "ja": "Oshiton",
+        "en": "Oshiton"
+      },
+      "developer": "AMAIRU LLC",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/97/76/b5/9776b530-c7ae-9763-325a-96d04182dee4/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6763635413",
+      "android_url": null,
+      "rating_count": 8
+    },
+    {
+      "id": "6798810626",
+      "name": {
+        "ja": "こけこ - 友達の声で起きる目覚まし",
+        "en": "Kokeko - Friend's Voice Alarm"
+      },
+      "short": {
+        "ja": "こけこ",
+        "en": "Kokeko"
+      },
+      "developer": "Stellaps Inc.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/67/1c/32/671c322d-ec83-5fc9-a8ec-20d22295a41f/AppIcon-1x_U007ephone-0-1-85-220-0.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6798810626",
+      "android_url": null,
+      "rating_count": 0
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ja": "3本をざっくり比べる",
+        "en": "The three apps at a glance"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "3本とも、iOS 26からのアラームの仕組みを使っていて、アプリを閉じていても鳴ります。違いが出るのは、誰の声を入れるかです。",
+            "en": "All three use the alarm system Apple added in iOS 26, so they ring even when the app is closed. The real difference is whose voice goes in."
+          }
+        },
+        {
+          "type": "table",
+          "head": [
+            {
+              "ja": "アプリ",
+              "en": "App"
+            },
+            {
+              "ja": "評価の件数",
+              "en": "Ratings"
+            },
+            {
+              "ja": "入れる声",
+              "en": "Whose voice"
+            },
+            {
+              "ja": "録音の長さ",
+              "en": "Recording length"
+            },
+            {
+              "ja": "無料の範囲",
+              "en": "What's free"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ja": "Monivo（僕のアプリ）",
+                "en": "Monivo (my app)"
+              },
+              {
+                "ja": "1件",
+                "en": "1"
+              },
+              {
+                "ja": "自分、フレンド、世界のユーザー",
+                "en": "You, your friends, or people around the world"
+              },
+              {
+                "ja": "15秒。プレミアムで30秒",
+                "en": "15 seconds. 30 with Premium"
+              },
+              {
+                "ja": "声の保存は5件まで",
+                "en": "Save up to 5 voices"
+              }
+            ],
+            [
+              {
+                "ja": "Oshiton",
+                "en": "Oshiton"
+              },
+              {
+                "ja": "8件",
+                "en": "8"
+              },
+              {
+                "ja": "自分で録る。動画から切り出しも",
+                "en": "Recorded by you, or clipped from a video"
+              },
+              {
+                "ja": "30秒まで",
+                "en": "Up to 30 seconds"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              }
+            ],
+            [
+              {
+                "ja": "こけこ",
+                "en": "Kokeko"
+              },
+              {
+                "ja": "0件",
+                "en": "0"
+              },
+              {
+                "ja": "友だち、自分",
+                "en": "Your friends, or you"
+              },
+              {
+                "ja": "30秒",
+                "en": "30 seconds"
+              },
+              {
+                "ja": "目覚ましの機能は全部無料",
+                "en": "All alarm features are free"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "1本ずつ見ていく",
+        "en": "Each app, one by one"
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "id": "6793626358"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "恋人や友だちが録った15秒の声が、そのまま目覚ましやリマインダーになります。届いた声のどれで起きるかは、自分で選べます。明日は遅刻できないから激しめに起こして、のように、ほしい声をフレンドにお願いすることもできます。",
+            "en": "A 15-second voice recorded by your partner or a friend becomes your alarm or reminder. You choose which of the voices you've received will wake you. You can even ask a friend for a specific kind of voice, like asking them to be extra loud because you can't be late tomorrow."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "フレンドがいなくても、世界のユーザーが録った声が時間帯やタグに合わせて届くので、毎朝ちがう声で起きられます。自分だけにのこす声として録音して、自分の声で起きることもできます。",
+            "en": "Even without friends on the app, voices recorded by users around the world arrive matched to the time of day and tags, so you can wake up to a different voice every morning. You can also record a voice just for yourself and wake up to your own."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "録音、送受信、フレンドの追加、世界の声のアラームは無料です。プレミアムは月額か年額で、声の保存が300件まで、録音が30秒まで伸びて、広告が消えます。Google PlayにAndroid版もあります。",
+            "en": "Recording, sending and receiving, adding friends, and alarms with voices from around the world are free. Premium is monthly or yearly, raises saved voices to 300 and recordings to 30 seconds, and removes the ads. There's also an Android version on Google Play."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6763635413"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "好きな声を自分で録音して、アラームやタイマーの音にするアプリです。子どもの声やパートナーの応援、推しのイベントで録った声などを想定しています。",
+            "en": "This app lets you record any voice you love and use it as an alarm or timer sound. It has in mind things like your kid's voice, a pep talk from your partner, or a voice you recorded at your favorite idol's event."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "30秒まで高音質で録れて、スマホに保存した動画から声を切り出すこともできます。平日用と休日用のように、アラームごとに声を変えられて、録った声をiPhoneの着信音として書き出すこともできます。iOS 26.1以降が必要です。",
+            "en": "It records up to 30 seconds in high quality, and you can also clip a voice out of a video saved on your phone. You can use a different voice for each alarm, like weekdays and weekends, and export a recording as an iPhone ringtone. It needs iOS 26.1 or later."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6798810626"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "夜9時に友だちへ、明日起こしてと通知が届き、友だちが30秒の声を吹き込むと、それが翌朝のアラームになる作りです。起きたことは友だちに伝わって、声で返事ができます。",
+            "en": "At 9 p.m. your friend gets a notification asking them to wake you tomorrow, and the 30-second voice they record becomes your alarm the next morning. When you get up, your friend is told, and you can reply with a voice message."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "友だちが録り忘れても、前に届いた声か自分の声、それも無ければ標準の音に切り替わるので、鳴らない朝が無いようにしてあります。目覚ましの機能は全部無料で、声の主を選ぶのと、受け取った声を10本より多く取っておくのは月額か年額のProです。",
+            "en": "If your friend forgets to record, it falls back to an earlier voice from them, then to your own voice, then to a standard alarm sound, so there's never a morning with no alarm. All the alarm features are free, and choosing whose voice you get and keeping more than 10 received voices come with Pro, monthly or yearly."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "アプリを入れたくないなら",
+        "en": "If you'd rather not install an app"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "iPhoneの時計アプリのアラーム音には、着信音を選べます。録音した声をGarageBandで着信音として書き出せば、それをアラーム音にできます。",
+            "en": "In the iPhone Clock app you can pick a ringtone as your alarm sound. If you export a recorded voice as a ringtone with GarageBand, you can use it as your alarm."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "ただ、手順が多くて、声を変えるたびにやり直しになります。相手から声が届くのを待つだけで済むのは、アプリのいいところですね。",
+            "en": "The catch is that it takes quite a few steps, and you have to redo them every time you want a new voice. With an app, you just wait for the voice to arrive."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "どれを選ぶか",
+        "en": "Which one to pick"
+      },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "ja": "子どもや推しの声を自分で録って、アラームごとに使い分けたいなら、Oshiton",
+              "en": "If you want to record your kid's or your favorite idol's voice yourself and use different ones for different alarms, Oshiton"
+            },
+            {
+              "ja": "友だちに前の晩に吹き込んでもらって、起きたら返事をしたいなら、こけこ",
+              "en": "If you want a friend to record a voice the night before and reply once you are up, Kokeko"
+            },
+            {
+              "ja": "フレンドに加えて世界のだれかの声でも起きたい人や、Androidでも使いたいなら、Monivo",
+              "en": "If you want voices from people around the world as well as friends, or want it on Android too, Monivo"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "ja": "マナーモードでも鳴りますか？",
+        "en": "Do they ring in silent mode?"
+      },
+      "a": {
+        "ja": "3本とも、説明文にマナーモードやサイレントモードでも鳴ると書かれています。どれもiOS 26以降のiPhoneが必要です。",
+        "en": "All three say in their descriptions that they ring even in silent mode. All of them need an iPhone on iOS 26 or later."
+      }
+    },
+    {
+      "q": {
+        "ja": "友だちがいなくても使えますか？",
+        "en": "Can I use them without friends on the app?"
+      },
+      "a": {
+        "ja": "使えます。3本とも自分の声で起きられて、Monivoは世界のユーザーの声でも起きられます。",
+        "en": "Yes. All three let you wake up to your own voice, and Monivo can also wake you with voices from users around the world."
+      }
+    },
+    {
+      "q": {
+        "ja": "Androidでも使えますか？",
+        "en": "Is any of them on Android?"
+      },
+      "a": {
+        "ja": "この3本の中でGoogle Play版があると確かめられたのは、Monivoです。",
+        "en": "Of these three, Monivo is the one I could confirm is on Google Play."
+      }
+    }
+  ],
+  "closing": {
+    "ja": "Monivoはまだ評価が1件なので、どんな声で起きたかを聞かせてもらえたらうれしいです⏰",
+    "en": "Monivo only has one rating so far, so I'd love to hear whose voice woke you up ⏰"
+  },
+  "notes": {
+    "ja": "各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。Monivoの機能はアプリのコードとストアの説明文で確かめました。アップデートで変わることがあります。",
+    "en": "Features and rating counts were checked against each app's App Store description on November 15, 2026. Monivo's features were checked in the app's code and its store description. Things may change with updates."
+  },
+  "illustration": {
+    "scene": "朝の寝室。布団から顔を出したキャラの枕元で、スマホから音符と、波形の線だけが入った小さな吹き出し（文字なし）がふわっと出ている。キャラは目をこすりながら、うれしそうに笑っている。窓から朝日が差しこんでいる。キャラの目は参照画像と同じ白い縦長の楕円2つのままにする（笑った弧の目や閉じた目にしない）。眠そうでも目は開いた白い楕円のまま。",
+    "alt": {
+      "ja": "枕元のスマホから届いた声で、笑って目を覚ますキャラクター",
+      "en": "The character waking up smiling to a voice coming from the phone by the pillow"
+    }
+  }
+}

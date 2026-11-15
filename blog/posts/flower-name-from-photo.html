@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/js/lang.js"></script>
+    <!-- このページは scripts/build_guides.py が docs/guides/flower-name-from-photo.json から作る。直すのは JSON のほう -->
+    <title>花の名前を写真から調べる。iPhoneだけでやる方法とアプリ3選 - Blog | Ryo Tsuzukihashi</title>
+    <meta name="description" content="道ばたや花屋さんで見た花の名前を、写真から調べる方法をまとめました。iPhoneの写真アプリだけでやる方法と、アプリ3本の違いを、花言葉や育て方まで出るかで比べています。FlowerLensの作者が書いています。">
+    <meta name="title-en" content="How to Identify a Flower From a Photo: the iPhone Way and 3 Apps - Blog | Ryo Tsuzukihashi">
+    <meta name="description-en" content="How to find a flower&#x27;s name from a photo: the way to do it with the iPhone Photos app alone, and three apps compared on whether they also show flower meanings and care tips. Written by the maker of FlowerLens.">
+    <link rel="canonical" href="https://tsuzukit.com/blog/posts/flower-name-from-photo.html">
+
+    <!-- OGP -->
+    <meta property="og:title" content="花の名前を写真から調べる。iPhoneだけでやる方法とアプリ3選">
+    <meta property="og:description" content="道ばたや花屋さんで見た花の名前を、写真から調べる方法をまとめました。iPhoneの写真アプリだけでやる方法と、アプリ3本の違いを、花言葉や育て方まで出るかで比べています。FlowerLensの作者が書いています。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://tsuzukit.com/blog/posts/flower-name-from-photo.html">
+    <meta property="og:image" content="https://tsuzukit.com/assets/images/posts/flower-name-from-photo.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://tsuzukit.com/assets/images/posts/flower-name-from-photo.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-dark-32x32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-dark-16x16.png" media="(prefers-color-scheme: dark)">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERPQ1EGLH');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8240751277462688"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
+    <link rel="stylesheet" href="/assets/css/guide.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "花の名前を写真から調べる。iPhoneだけでやる方法とアプリ3選",
+      "description": "道ばたや花屋さんで見た花の名前を、写真から調べる方法をまとめました。iPhoneの写真アプリだけでやる方法と、アプリ3本の違いを、花言葉や育て方まで出るかで比べています。FlowerLensの作者が書いています。",
+      "image": "https://tsuzukit.com/assets/images/posts/flower-name-from-photo.webp",
+      "datePublished": "2026-11-15",
+      "dateModified": "2026-11-15",
+      "inLanguage": "ja",
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "mainEntityOfPage": "https://tsuzukit.com/blog/posts/flower-name-from-photo.html",
+      "about": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "FlowerLens - 花AI図鑑",
+          "url": "https://apps.apple.com/jp/app/id6762043194",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "PictureThis：植物識別・育て方園芸図鑑",
+          "url": "https://apps.apple.com/jp/app/id1252497129",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "GreenSnap - 植物・花の名前が判る写真共有アプリ",
+          "url": "https://apps.apple.com/jp/app/id934293203",
+          "operatingSystem": "iOS"
+        }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "FlowerLens - 花AI図鑑",
+      "operatingSystem": "iOS",
+      "applicationCategory": "EducationalApplication",
+      "url": "https://apps.apple.com/jp/app/id6762043194",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "無料で使えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "3本とも無料で入れられます。FlowerLensは無料で2回まで調べられて、そのあとはプレミアムです。iPhoneの写真アプリで調べるのは無料です。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Androidで使えるのはどれですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "この3本の中では、PictureThisとGreenSnapがGoogle Playにもあります。FlowerLensはiPhone専用です。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "子どもやペットが触っても大丈夫な花かわかりますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "FlowerLensとPictureThisは、毒のある植物を知らせてくれます。ただ、アプリが出すのは目安です。口にしてしまったときは、すぐに医師や獣医さんに相談してください。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tsuzukit.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://tsuzukit.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "困りごとから選ぶアプリ",
+          "item": "https://tsuzukit.com/blog/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "花の名前を写真から調べる。iPhoneだけでやる方法とアプリ3選",
+          "item": "https://tsuzukit.com/blog/posts/flower-name-from-photo.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">TsuzuKit</a>
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/portfolio/" class="nav-link">Portfolio</a>
+                <a href="/blog/" class="nav-link active">Blog</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post -->
+    <article class="blog-post">
+        <header class="post-header">
+            <div class="post-meta">
+                <span class="post-date">2026.11.15</span>
+                <span class="post-category"><span class="i18n-ja">アプリの選び方</span><span class="i18n-en">App guides</span></span>
+                <span class="post-reading-time"><span class="i18n-ja">4分で読める</span><span class="i18n-en">4 min read</span></span>
+            </div>
+            <h1 class="post-title"><span class="i18n-ja">花の名前を写真から調べる。iPhoneだけでやる方法とアプリ3選</span><span class="i18n-en">How to Identify a Flower From a Photo: the iPhone Way and 3 Apps</span></h1>
+        </header>
+        <figure class="post-illustration guide-illustration"><img src="/assets/images/posts/flower-name-from-photo.webp" width="1200" height="800" alt="石垣に咲く小さな青い花にスマホを向けるキャラクター" data-en-alt="The character crouching to point a phone at a small blue flower growing in a stone wall" fetchpriority="high"></figure>
+
+        <div class="post-content guide i18n-ja">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">先に答え</p>
+                <p>名前だけなら、iPhoneの写真アプリで花の写真を開くと調べられることがあります。もっと確かめたいならアプリです。いちばん使われているのは評価100,899件のPictureThisで、育て方や水やりの通知まであります。名前と一緒に花言葉や誕生花を見たい人は、僕が作ったFlowerLensも見てみてください。</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">書いた人 <a href="https://tsuzukit.com/about/">續橋 涼</a>（@tsuzuki817）</p>
+                    <p class="guide-byline-bio">2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。FlowerLensの作者です。</p>
+                    <p class="guide-byline-date">公開 <time datetime="2026-11-15">2026.11.15</time> · 更新 <time datetime="2026-11-15">2026.11.15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">この記事は、FlowerLensを作った僕が書いています。ほかの2本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。</p>
+            <h2>まずはiPhoneの写真アプリで</h2>
+            <p>アプリを入れなくても、iPhoneの写真アプリで調べられることがあります。花の写真を開いたとき、下の情報ボタンに葉っぱのマークが付いていたら、それをタップします。</p>
+            <p>植物の名前の候補と、似た写真が出ます。マークが出ない写真もあるので、そのときはアプリの出番ですね。</p>
+            <h2>3本をざっくり比べる</h2>
+            <p>アプリの違いは、名前のあとに何を教えてくれるかです。育てたい人と、見かけた花を知りたいだけの人で、向くアプリが変わります。</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">アプリ</th><th scope="col">評価の件数</th><th scope="col">対応する数</th><th scope="col">無料で調べられる回数</th><th scope="col">花言葉と誕生花</th><th scope="col">育て方</th></tr></thead><tbody><tr><th scope="row">FlowerLens（僕のアプリ）</th><td>0件</td><td>花 約3,000種</td><td>2回まで</td><td>無料で表示</td><td>プレミアム</td></tr><tr><th scope="row">PictureThis</th><td>100,899件</td><td>植物 40万種以上</td><td>説明文に記載なし</td><td>説明文に記載なし</td><td>あり。水やりの通知も</td></tr><tr><th scope="row">GreenSnap</th><td>20,663件</td><td>説明文に記載なし</td><td>説明文に記載なし</td><td>説明文に記載なし</td><td>植物図鑑で調べられる</td></tr></tbody></table></div>
+            <h2>1本ずつ見ていく</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/27/cb/a2/27cba267-bd61-ef68-376a-503a8159f8d9/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">僕が作ったアプリ</span>
+                    <h3 class="guide-app-name">FlowerLens - 花AI図鑑</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · App Storeの評価 0件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6762043194" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>花を撮るか、写真ライブラリから選ぶと、AIが名前の候補を出します。和名と英名、科、開花時期、花の色、花言葉、誕生花の月までは無料で見られます。</p>
+            <p>毒がある花には、そのことも表示します。季節ごとに咲く花と、月ごとの誕生花を見られるカレンダーもあります。</p>
+            <p>無料で調べられるのは2回までです。何回でも調べたいときや、日当たりや水やりなどの育て方を見たいときはプレミアムです。調べるときはネットにつながっている必要があります。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ea/af/f0/eaaff0c6-768e-9d0c-df44-128ab0c8d258/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">PictureThis：植物識別・育て方園芸図鑑</h3>
+                    <p class="guide-app-meta">Glority Global Group Ltd. · App Storeの評価 100,899件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id1252497129" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        <a class="guide-app-android" href="https://play.google.com/store/apps/details?id=cn.danatech.xingseus" target="_blank" rel="noopener noreferrer">Google Play版</a>
+                    </div>
+                </div>
+            </div>
+            <p>評価が100,899件あって、この中ではいちばん使われています。説明文では40万種以上の植物を識別できると書かれています。</p>
+            <p>名前を調べるだけでなく、病気の診断、育て方、水やりの通知、日当たりの計測まであります。育てる人のための機能が厚いアプリです。Google PlayにAndroid版もあります。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/61/5c/03/615c035a-ebc8-9ee0-69f4-701fc98dfc69/AppIcon-0-0-1x_U007emarketing-0-5-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">GreenSnap - 植物・花の名前が判る写真共有アプリ</h3>
+                    <p class="guide-app-meta">GREENSNAP, INC. · App Storeの評価 20,663件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id934293203" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        <a class="guide-app-android" href="https://play.google.com/store/apps/details?id=jp.co.aainc.greensnap" target="_blank" rel="noopener noreferrer">Google Play版</a>
+                    </div>
+                </div>
+            </div>
+            <p>植物と花が好きな人が写真を投稿し合うSNSで、評価は20,663件です。名前のわからない植物を撮ると、名前を教えてくれるカメラがあります。</p>
+            <p>アプリの中の植物図鑑で、育て方や日当たり、水やりの時期も調べられます。Google PlayにAndroid版もあります。</p>
+            <h2>どれを選ぶか</h2>
+            <ul class="guide-list"><li>名前がわかれば十分なら、まずiPhoneの写真アプリ</li><li>家で育てる植物の世話までしたいなら、PictureThis</li><li>ほかの人の花の写真も見たい、交流したいなら、GreenSnap</li><li>名前と一緒に花言葉や誕生花も知りたいなら、FlowerLens</li></ul>
+            <h2>よくある質問</h2>
+            <dl class="guide-faq">
+                <dt>無料で使えますか？</dt><dd>3本とも無料で入れられます。FlowerLensは無料で2回まで調べられて、そのあとはプレミアムです。iPhoneの写真アプリで調べるのは無料です。</dd>
+                <dt>Androidで使えるのはどれですか？</dt><dd>この3本の中では、PictureThisとGreenSnapがGoogle Playにもあります。FlowerLensはiPhone専用です。</dd>
+                <dt>子どもやペットが触っても大丈夫な花かわかりますか？</dt><dd>FlowerLensとPictureThisは、毒のある植物を知らせてくれます。ただ、アプリが出すのは目安です。口にしてしまったときは、すぐに医師や獣医さんに相談してください。</dd>
+            </dl>
+            <p>FlowerLensはまだ評価が0件です。散歩で見つけた花の名前がわかったら、感想を聞かせてもらえるとうれしいです🌼</p>
+            <div class="guide-notes">各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。</div>
+        </div>
+
+        <div class="post-content guide i18n-en">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">Short answer</p>
+                <p>If you only need the name, the iPhone Photos app can often tell you when you open a flower photo. For more, use an app. The most used is PictureThis, with 100,899 ratings, which also covers care and watering reminders. If you&#x27;d like the flower&#x27;s meaning and birth month along with its name, take a look at FlowerLens, which I made.</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">Written by <a href="https://tsuzukit.com/about/">Ryo Tsuzukihashi</a> (@tsuzuki817)</p>
+                    <p class="guide-byline-bio">I&#x27;ve been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made FlowerLens.</p>
+                    <p class="guide-byline-date">Published <time datetime="2026-11-15">2026-11-15</time> · Updated <time datetime="2026-11-15">2026-11-15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">I made FlowerLens, and I wrote this article. The other two apps are by developers I don&#x27;t know, and I haven&#x27;t received money or anything else from them. Everything compared here comes from each app&#x27;s App Store description and rating count as of November 15, 2026.</p>
+            <h2>Start with the iPhone Photos app</h2>
+            <p>You may not need an app at all. Open a flower photo in the Photos app, and if the info button at the bottom has a small leaf on it, tap it.</p>
+            <p>You&#x27;ll see a suggested plant name along with similar photos. The leaf doesn&#x27;t show up on every photo, and that&#x27;s where an app comes in.</p>
+            <h2>The three apps at a glance</h2>
+            <p>The apps differ in what they tell you after the name. The right one depends on whether you want to grow the plant or just know what you saw.</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">App</th><th scope="col">Ratings</th><th scope="col">Coverage</th><th scope="col">Free identifications</th><th scope="col">Flower meanings and birth months</th><th scope="col">Care tips</th></tr></thead><tbody><tr><th scope="row">FlowerLens (my app)</th><td>0</td><td>About 3,000 flowers</td><td>Up to 2</td><td>Free</td><td>Premium</td></tr><tr><th scope="row">PictureThis</th><td>100,899</td><td>Over 400,000 plants</td><td>Not mentioned</td><td>Not mentioned</td><td>Yes, with watering reminders</td></tr><tr><th scope="row">GreenSnap</th><td>20,663</td><td>Not mentioned</td><td>Not mentioned</td><td>Not mentioned</td><td>In its plant encyclopedia</td></tr></tbody></table></div>
+            <h2>Each app, one by one</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/27/cb/a2/27cba267-bd61-ef68-376a-503a8159f8d9/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">I made this</span>
+                    <h3 class="guide-app-name">FlowerLens - Flower AI Guide</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · 0 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6762043194" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>Take a photo of a flower or pick one from your library, and the AI suggests what it is. The Japanese and English names, plant family, blooming season, colors, flower meanings, and birth month are all free.</p>
+            <p>If a flower is toxic, it tells you. There is also a calendar showing which flowers bloom each season and the birth flowers for each month.</p>
+            <p>You can identify two flowers for free. Unlimited identifications and care tips like sunlight and watering come with Premium. You need an internet connection to identify a flower.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ea/af/f0/eaaff0c6-768e-9d0c-df44-128ab0c8d258/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">PictureThis - Plant Identifier</h3>
+                    <p class="guide-app-meta">Glority Global Group Ltd. · 100,899 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id1252497129" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        <a class="guide-app-android" href="https://play.google.com/store/apps/details?id=cn.danatech.xingseus" target="_blank" rel="noopener noreferrer">Android version on Google Play</a>
+                    </div>
+                </div>
+            </div>
+            <p>With 100,899 ratings, this is by far the most used of the three. Its description says it can identify more than 400,000 plants.</p>
+            <p>Beyond identifying plants, it diagnoses diseases, gives care plans, reminds you to water, and measures light. It&#x27;s built for people who grow plants. There&#x27;s also an Android version on Google Play.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/61/5c/03/615c035a-ebc8-9ee0-69f4-701fc98dfc69/AppIcon-0-0-1x_U007emarketing-0-5-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">GreenSnap - Plant and Flower Photo Community</h3>
+                    <p class="guide-app-meta">GREENSNAP, INC. · 20,663 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id934293203" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        <a class="guide-app-android" href="https://play.google.com/store/apps/details?id=jp.co.aainc.greensnap" target="_blank" rel="noopener noreferrer">Android version on Google Play</a>
+                    </div>
+                </div>
+            </div>
+            <p>It&#x27;s a social app where plant and flower lovers share photos, with 20,663 ratings. It has a camera feature that tells you the name of a plant you don&#x27;t know.</p>
+            <p>Its built-in plant encyclopedia covers care, sunlight, and when to water. There is also an Android version on Google Play.</p>
+            <h2>Which one to pick</h2>
+            <ul class="guide-list"><li>If the name is all you need, try the iPhone Photos app first</li><li>If you want help caring for plants at home, PictureThis</li><li>If you&#x27;d like to see and share flower photos with others, GreenSnap</li><li>If you want the flower&#x27;s meaning and birth month along with its name, FlowerLens</li></ul>
+            <h2>FAQ</h2>
+            <dl class="guide-faq">
+                <dt>Are they free?</dt><dd>All three are free to download. FlowerLens lets you identify two flowers for free, and after that it is Premium. Looking things up in the iPhone Photos app is free.</dd>
+                <dt>Which one works on Android?</dt><dd>Of these three, PictureThis and GreenSnap are also on Google Play. FlowerLens is iPhone only.</dd>
+                <dt>Can they tell me if a flower is safe for kids or pets?</dt><dd>FlowerLens and PictureThis both flag toxic plants, but treat that as a guide only. If a child or pet has eaten something, contact a doctor or vet right away.</dd>
+            </dl>
+            <p>FlowerLens has no ratings yet. If it helps you name a flower on your next walk, I&#x27;d love to hear how it went 🌼</p>
+            <div class="guide-notes">Features and rating counts were checked against each app&#x27;s App Store description on November 15, 2026, and may change with updates.</div>
+        </div>
+
+        <nav class="post-navigation">
+            <img class="tk-char tk-char--post" src="/assets/images/character-hang.png" alt="" width="381" height="208">
+            <a href="/blog/guides/" class="nav-link-wrapper"><span>&larr; <span class="i18n-ja">困りごとから選ぶアプリの一覧へ</span><span class="i18n-en">All guides: apps for everyday problems</span></span></a>
+        </nav>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
+                    <p class="footer-description"><span class="i18n-ja">誰も作らないものを、まじめに作る</span><span class="i18n-en">I make things nobody else would, and I make them seriously</span></p>
+                </div>
+                <div class="footer-nav">
+                    <a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
+                    <a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
+                    <a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
+                    <a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ryo Tsuzukihashi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

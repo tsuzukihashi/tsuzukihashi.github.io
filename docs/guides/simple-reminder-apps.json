@@ -1,0 +1,452 @@
+{
+  "slug": "simple-reminder-apps",
+  "date_published": "2026-11-15",
+  "date_updated": "2026-11-15",
+  "search_phrase": {
+    "ja": "リマインダー アプリ シンプル",
+    "en": "simple reminder app"
+  },
+  "evidence": "2026-11-15 に Google の検索候補で「リマインダー アプリ シンプル」が出た。「リマインダー アプリ」は12件で、おすすめ、無料、いらない、iphone が付いていた。「iphone リマインダー 使いにくい」も2件出た。同じ日の App Store で「リマインダー シンプル」を引くと、上位はToDoアプリやカレンダーアプリで、通知だけのアプリは評価が数件から百数十件だった。",
+  "title": {
+    "ja": "シンプルなリマインダーアプリ4選。iPhoneの標準アプリとも比べる",
+    "en": "4 Simple Reminder Apps, Compared With the One on Your iPhone"
+  },
+  "description": {
+    "ja": "通知だけほしい人のための、シンプルなリマインダーアプリを4本比べました。入れるもの、繰り返し、料金の違いと、iPhoneの標準のリマインダーで足りる場合もまとめています。作者が書いています。",
+    "en": "I compared four simple iPhone reminder apps for people who just want a notification: what you enter, repeats, and pricing, plus when the built-in Reminders app is enough. Written by the maker of BaseReminder."
+  },
+  "excerpt": {
+    "ja": "通知だけほしい人向けに、シンプルなリマインダーを4本比べました。作った僕が、自分のアプリも入れて書いています。",
+    "en": "Four simple reminder apps for people who just want the notification. I made BaseReminder, and it's one of the four."
+  },
+  "category": {
+    "ja": "アプリの選び方",
+    "en": "App guides"
+  },
+  "reading_minutes": 4,
+  "author": {
+    "name": {
+      "ja": "續橋 涼",
+      "en": "Ryo Tsuzukihashi"
+    },
+    "handle": "tsuzuki817",
+    "bio": {
+      "ja": "2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。リマインダー 記憶を呼び起こすの作者です。",
+      "en": "I've been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made BaseReminder."
+    },
+    "url": "https://tsuzukit.com/about/",
+    "same_as": [
+      "https://x.com/tsuzuki817"
+    ]
+  },
+  "tldr": {
+    "ja": "まずはiPhoneに最初から入っているリマインダーで足りるか試すのが手っ取り早いです。毎月第1週だけのような細かい繰り返しがほしいならつげるくん。画面に文字を打って日時を決めるだけ、のいちばん少ない操作で済ませたいなら、僕が作ったリマインダー 記憶を呼び起こすも見てみてください。",
+    "en": "The quickest first step is to see whether the Reminders app already on your iPhone is enough. If you need detailed repeats like the first week of every month only, try TodoNoticer. If you want the fewest possible steps, just type it and pick a time, take a look at BaseReminder, which I made."
+  },
+  "disclosure": {
+    "ja": "この記事は、リマインダー 記憶を呼び起こすを作った僕が書いています。ほかの3本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。",
+    "en": "I made BaseReminder, and I wrote this article. The other three apps are by developers I don't know, and I haven't received money or anything else from them. Everything compared here comes from each app's App Store description and rating count as of November 15, 2026."
+  },
+  "own_app": "6756901694",
+  "app_category": "ProductivityApplication",
+  "apps": [
+    {
+      "id": "6756901694",
+      "name": {
+        "ja": "リマインダー 記憶を呼び起こす",
+        "en": "BaseReminder"
+      },
+      "short": {
+        "ja": "リマインダー 記憶を呼び起こす",
+        "en": "BaseReminder"
+      },
+      "developer": "Ryo Tsudukihashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/9a/63/b2/9a63b27a-16c9-f69e-e393-5e48836c3961/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6756901694",
+      "android_url": null,
+      "rating_count": 0
+    },
+    {
+      "id": "1200227397",
+      "name": {
+        "ja": "Memento: シンプルなリマインダー",
+        "en": "Memento - Better Reminders"
+      },
+      "short": {
+        "ja": "Memento",
+        "en": "Memento"
+      },
+      "developer": "Mark DiFranco",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ce/52/05/ce52054d-9f27-36d7-0d2b-fb013df09cae/AppIcon-0-0-1x_U007epad-0-0-0-1-0-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id1200227397",
+      "android_url": null,
+      "rating_count": 185
+    },
+    {
+      "id": "1375251005",
+      "name": {
+        "ja": "つげるくん - リマインダー付ToDoリスト",
+        "en": "TodoNoticer - Todo, Schedule"
+      },
+      "short": {
+        "ja": "つげるくん",
+        "en": "TodoNoticer"
+      },
+      "developer": "Takayuki Yuda",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple122/v4/40/30/e7/4030e7f5-3ca5-54e5-d554-fa547b492326/AppIcon-1x_U007emarketing-0-7-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id1375251005",
+      "android_url": null,
+      "rating_count": 199
+    },
+    {
+      "id": "662726566",
+      "name": {
+        "ja": "予定通知リスト リマインダー シンプルにやることをお知らせ",
+        "en": "Reminder List Easy Day Planner"
+      },
+      "short": {
+        "ja": "予定通知リスト",
+        "en": "Reminder List Easy Day Planner"
+      },
+      "developer": "NilCraft Inc.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/62/50/85/62508593-2e6c-63c9-9a61-a6c2c5e92bbc/notification-list-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id662726566",
+      "android_url": null,
+      "rating_count": 16
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ja": "まずはiPhoneのリマインダーで足りるか",
+        "en": "First, check whether your iPhone's Reminders is enough"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "iPhoneに最初から入っているリマインダーは無料で、日時の通知、繰り返し、リストを作るところまで全部できます。正直、たいていの人はこれで足ります。",
+            "en": "The Reminders app that comes with your iPhone is free, and handles timed notifications, repeats, and lists. Honestly, it's enough for most people."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "別のアプリを探すのは、標準のアプリの項目が多くて迷う人か、標準にない繰り返し方がほしい人です。",
+            "en": "It's worth looking elsewhere if the built-in app feels like too many options, or if you need a kind of repeat it doesn't offer."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "4本をざっくり比べる",
+        "en": "The four apps at a glance"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "違いが出るのは、どこまで削ってあるかと、繰り返しの細かさです。",
+            "en": "Where they differ is how much has been stripped away, and how detailed the repeats get."
+          }
+        },
+        {
+          "type": "table",
+          "head": [
+            {
+              "ja": "アプリ",
+              "en": "App"
+            },
+            {
+              "ja": "評価の件数",
+              "en": "Ratings"
+            },
+            {
+              "ja": "入れるもの",
+              "en": "What you enter"
+            },
+            {
+              "ja": "繰り返し",
+              "en": "Repeats"
+            },
+            {
+              "ja": "ほかにできること",
+              "en": "Also does"
+            },
+            {
+              "ja": "料金",
+              "en": "Price"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ja": "リマインダー 記憶を呼び起こす（僕のアプリ）",
+                "en": "BaseReminder (my app)"
+              },
+              {
+                "ja": "0件",
+                "en": "0"
+              },
+              {
+                "ja": "タイトルと日時だけ",
+                "en": "Title and time only"
+              },
+              {
+                "ja": "毎日、毎週、毎月（プレミアム）",
+                "en": "Daily, weekly, monthly (Premium)"
+              },
+              {
+                "ja": "特になし",
+                "en": "Nothing else"
+              },
+              {
+                "ja": "無料は3件まで",
+                "en": "Free for up to 3"
+              }
+            ],
+            [
+              {
+                "ja": "Memento",
+                "en": "Memento"
+              },
+              {
+                "ja": "185件",
+                "en": "185"
+              },
+              {
+                "ja": "自然な言葉で入力。時刻と場所",
+                "en": "Natural language input, time and place"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "iPhoneのリマインダーと同期、ウィジェット、Apple Watch",
+                "en": "Syncs with iPhone Reminders, widgets, Apple Watch"
+              },
+              {
+                "ja": "有料のアプリ",
+                "en": "Paid app"
+              }
+            ],
+            [
+              {
+                "ja": "つげるくん",
+                "en": "TodoNoticer"
+              },
+              {
+                "ja": "199件",
+                "en": "199"
+              },
+              {
+                "ja": "やることと日時",
+                "en": "Task and time"
+              },
+              {
+                "ja": "毎週、毎月第1週だけ、6月と12月だけなど",
+                "en": "Weekly, first week of each month only, June and December only, and more"
+              },
+              {
+                "ja": "サウンドで通知",
+                "en": "Sound alerts"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              }
+            ],
+            [
+              {
+                "ja": "予定通知リスト",
+                "en": "Reminder List Easy Day Planner"
+              },
+              {
+                "ja": "16件",
+                "en": "16"
+              },
+              {
+                "ja": "内容と時間",
+                "en": "What and when"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "少し前に知らせる事前通知、カレンダー表示",
+                "en": "Advance alerts, calendar view"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "1本ずつ見ていく",
+        "en": "Each app, one by one"
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "id": "6756901694"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "入れるのはタイトルと日時だけです。決めた時刻に通知が届いて、それ以外の機能はありません。リストもタグもメモ欄もないので、迷うところがないアプリです。",
+            "en": "All you enter is a title and a time. A notification arrives at that time, and that's it. There are no lists, tags, or note fields, so there's nothing to get lost in."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "そのぶん、できることは標準のリマインダーより少ないです。無料で作れるのは3件までで、終わったものも3件に数えるので、済んだものは消して使います。毎日、毎週、毎月の繰り返しはプレミアムです。",
+            "en": "That also means it does less than the built-in Reminders. The free version holds 3 reminders, and finished ones still count toward that, so you delete them as you go. Daily, weekly, and monthly repeats are Premium."
+          }
+        },
+        {
+          "type": "app",
+          "id": "1200227397"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "明日9時に水道屋さんに電話、のように書くだけで、通知の日時やリストが決まります。iPhoneのリマインダーの中身をそのまま使うので、標準のアプリから乗り換えても続きから使えます。",
+            "en": "Just write something like call the plumber tomorrow at 9, and it sets the time and list for you. It works on top of your existing iPhone Reminders, so switching over picks up right where you left off."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "iPhone、iPad、Mac、Apple Watchで同期できて、ウィジェットやSiriにも対応しています。有料のアプリで、2016年から1人の個人開発者さんが作り続けていると書かれていました。",
+            "en": "It syncs across iPhone, iPad, Mac, and Apple Watch, and works with widgets and Siri. It's a paid app, and the description says one independent developer has been making it since 2016."
+          }
+        },
+        {
+          "type": "app",
+          "id": "1375251005"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "強いのは繰り返しの細かさです。毎週同じ曜日のほかに、毎月第1週だけ、6月と12月だけ、のような決め方ができます。",
+            "en": "Its strength is detailed repeats. Besides the same weekday every week, you can set things like only the first week of every month, or only in June and December."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "マンガや雑誌の発売日、決まった時期の作業のように、標準のアプリでは繰り返しにしにくいものに向いています。サウンドで知らせる機能もあります。",
+            "en": "It suits things that are awkward to repeat in the built-in app, like manga or magazine release days or seasonal chores. It can alert you with sound too."
+          }
+        },
+        {
+          "type": "app",
+          "id": "662726566"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "知らせてほしい内容と時間を入れるだけの作りです。予定の少し前に知らせる事前通知があるので、会議の前に支度したいときに使えます。",
+            "en": "You enter what and when, and that's it. It has advance alerts that go off a bit before the time, handy when you need to get ready for a meeting."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "一覧とカレンダーを切り替えて見られて、通知の音も選べます。",
+            "en": "You can switch between a list and a calendar, and pick the notification sound."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "どれを選ぶか",
+        "en": "Which one to pick"
+      },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "ja": "無料で何でもできるほうがいいなら、iPhoneの標準のリマインダー",
+              "en": "If you want everything for free, the built-in iPhone Reminders"
+            },
+            {
+              "ja": "標準のリマインダーを速く使いたい、Macでも使いたいなら、Memento",
+              "en": "If you want a faster way to use your iPhone Reminders, including on a Mac, Memento"
+            },
+            {
+              "ja": "毎月第1週だけのような細かい繰り返しがほしいなら、つげるくん",
+              "en": "If you need detailed repeats like the first week of every month, TodoNoticer"
+            },
+            {
+              "ja": "予定の少し前にも知らせてほしいなら、予定通知リスト",
+              "en": "If you want an alert a little before the time too, Reminder List Easy Day Planner"
+            },
+            {
+              "ja": "タイトルと日時を入れるだけ、のいちばん少ない操作で済ませたいなら、リマインダー 記憶を呼び起こす",
+              "en": "If you want the fewest steps possible, just a title and a time, BaseReminder"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "ja": "iPhoneの標準のリマインダーと何が違いますか？",
+        "en": "How are these different from the built-in Reminders?"
+      },
+      "a": {
+        "ja": "標準のアプリのほうができることは多いです。ここの4本は、機能を絞って操作を少なくしたものか、標準にない繰り返しや入力のしかたを足したものです。",
+        "en": "The built-in app does more. These four either cut features down to fewer steps or add repeats and input methods the built-in app doesn't have."
+      }
+    },
+    {
+      "q": {
+        "ja": "無料で使えますか？",
+        "en": "Are they free?"
+      },
+      "a": {
+        "ja": "Mementoは有料のアプリです。リマインダー 記憶を呼び起こすは3件まで無料で、ほかの2本は料金について説明文に書かれていませんでした。",
+        "en": "Memento is a paid app. BaseReminder is free for up to 3 reminders, and the other two don't mention pricing in their descriptions."
+      }
+    },
+    {
+      "q": {
+        "ja": "場所で知らせてもらえますか？",
+        "en": "Can they remind me based on location?"
+      },
+      "a": {
+        "ja": "この4本の中では、Mementoが場所の通知に対応しています。iPhoneの標準のリマインダーでもできます。",
+        "en": "Of these four, Memento supports location-based reminders. The built-in iPhone Reminders can do it too."
+      }
+    }
+  ],
+  "closing": {
+    "ja": "リマインダー 記憶を呼び起こすの評価はまだ0件です。これだけは足してほしい、という声があれば聞かせてください🙏",
+    "en": "BaseReminder doesn't have any ratings yet. If there's one thing you'd want added, tell me 🙏"
+  },
+  "notes": {
+    "ja": "各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。リマインダー 記憶を呼び起こすの機能はアプリのコードで確かめました。アップデートで変わることがあります。",
+    "en": "Features and rating counts were checked against each app's App Store description on November 15, 2026. BaseReminder's features were checked against its source code. They may change with updates."
+  },
+  "illustration": {
+    "scene": "玄関先。キャラが出かける前に靴をはきながら、手のひらのスマホから鳴る小さなベルの合図に気づいて振り向いている。スマホの画面（文字なし）には大きなボタンが1つだけ。下駄箱の上に忘れかけた封筒が置いてある。",
+    "alt": {
+      "ja": "出かける前の玄関で、ベルの鳴るスマホに気づいて振り向くキャラクター",
+      "en": "The character at the front door, turning around as the phone in their hand rings a little bell"
+    }
+  }
+}

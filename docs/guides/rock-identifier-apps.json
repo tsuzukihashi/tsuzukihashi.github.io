@@ -1,0 +1,391 @@
+{
+  "slug": "rock-identifier-apps",
+  "date_published": "2026-11-15",
+  "date_updated": "2026-11-15",
+  "search_phrase": {
+    "ja": "拾った石 鑑定 アプリ",
+    "en": "rock identifier app"
+  },
+  "evidence": "2026-11-15 に Google の検索候補で「拾った石」を引くと、15件の中に「拾った石 鑑定」「拾った石の鑑定」「拾った石 種類」があった。「石 鑑定 アプリ」は4件で、「無料」「おすすめ」「拾った石 鑑定 アプリ」が付いていた。「石 名前 調べる」は2件とも「石の名前を調べる」で、1件が「アプリ」付き。同じ日の App Store で「石 鑑定」を引くと14本並び、評価1,653件のRock Identifierのほかは0〜6件だった。",
+  "title": {
+    "ja": "拾った石の種類を写真で調べるアプリ3選",
+    "en": "3 Apps That Identify a Rock You Picked Up, From a Photo"
+  },
+  "description": {
+    "ja": "河原や海で拾った石の種類を、写真から調べるアプリを3本比べました。硬さや化学式まで出るか、価値の目安、無料で使える範囲の違いをまとめています。GeoLensの作者が書いています。",
+    "en": "I compared three iPhone apps that identify a rock or mineral from a photo: whether they show hardness and chemical formula, value estimates, and what is free. Written by the maker of GeoLens."
+  },
+  "excerpt": {
+    "ja": "硬さや化学式、価値の目安、無料で使える範囲で3本を比べました。GeoLensを作った僕が、自分のアプリも入れて書いています。",
+    "en": "Three apps compared on hardness, chemical formula, value estimates, and what is free. I made GeoLens, and it is one of the three."
+  },
+  "category": {
+    "ja": "アプリの選び方",
+    "en": "App guides"
+  },
+  "reading_minutes": 4,
+  "author": {
+    "name": {
+      "ja": "續橋 涼",
+      "en": "Ryo Tsuzukihashi"
+    },
+    "handle": "tsuzuki817",
+    "bio": {
+      "ja": "2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。GeoLensの作者です。",
+      "en": "I've been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made GeoLens."
+    },
+    "url": "https://tsuzukit.com/about/",
+    "same_as": [
+      "https://x.com/tsuzuki817"
+    ]
+  },
+  "tldr": {
+    "ja": "拾った石は、写真を撮るとAIが岩石や鉱物の名前の候補を出してくれるアプリで調べられます。いちばん使われているのは評価1,653件のRock Identifier。何枚も撮って確かめたい人や、磁石への反応も見たい人はRockIn。モース硬度や化学式を無料で見たい人は、僕が作ったGeoLensも見てみてください。",
+    "en": "You can identify a rock you picked up with an app that suggests rock and mineral names from a photo. The most used one is Rock Identifier, with 1,653 ratings. If you want to shoot from several angles or check whether a stone reacts to a magnet, try RockIn. If you want to see Mohs hardness and the chemical formula for free, take a look at GeoLens, which I made."
+  },
+  "disclosure": {
+    "ja": "この記事は、GeoLensを作った僕が書いています。ほかの2本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。",
+    "en": "I made GeoLens, and I wrote this article. The other two apps are by developers I don't know, and I haven't received money or anything else from them. Everything compared here comes from each app's App Store description and rating count as of November 15, 2026."
+  },
+  "own_app": "6757151902",
+  "app_category": "ReferenceApplication",
+  "apps": [
+    {
+      "id": "6757151902",
+      "name": {
+        "ja": "GeoLens - 岩石・鉱物AI図鑑",
+        "en": "GeoLens - Rock & Mineral AI"
+      },
+      "short": {
+        "ja": "GeoLens",
+        "en": "GeoLens"
+      },
+      "developer": "Ryo Tsudukihashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a8/4c/88/a84c8832-febd-9049-7c35-128f7d82ec83/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6757151902",
+      "android_url": null,
+      "rating_count": 0
+    },
+    {
+      "id": "1546796934",
+      "name": {
+        "ja": "Rock Identifier: 石の鉱物識別",
+        "en": "Rock Identifier: Stone ID"
+      },
+      "short": {
+        "ja": "Rock Identifier",
+        "en": "Rock Identifier"
+      },
+      "developer": "Next Vision Limited",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/3e/6a/cd/3e6acd4d-c54e-3382-0c18-6941b3da529e/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id1546796934",
+      "android_url": null,
+      "rating_count": 1653
+    },
+    {
+      "id": "6754837588",
+      "name": {
+        "ja": "RockIn: Rock Identifier 岩石鑑定",
+        "en": "RockIn: Gem & Rock Identifier"
+      },
+      "short": {
+        "ja": "RockIn",
+        "en": "RockIn"
+      },
+      "developer": "Vortemol Limited",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d9/6d/d3/d96dd330-4eee-127c-b251-fb1a34cd05eb/AppIcon-prod-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6754837588",
+      "android_url": null,
+      "rating_count": 4
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ja": "3本をざっくり比べる",
+        "en": "The three apps at a glance"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "名前の候補を出すところまではどれも同じです。違いが出るのは、名前のあとに何がわかるかです。",
+            "en": "All three suggest a name from a photo. What sets them apart is what else you learn once you have the name."
+          }
+        },
+        {
+          "type": "table",
+          "head": [
+            {
+              "ja": "アプリ",
+              "en": "App"
+            },
+            {
+              "ja": "評価の件数",
+              "en": "Ratings"
+            },
+            {
+              "ja": "無料で調べられる回数",
+              "en": "Free identifications"
+            },
+            {
+              "ja": "硬さや化学式",
+              "en": "Hardness and formula"
+            },
+            {
+              "ja": "価値の目安",
+              "en": "Value estimate"
+            },
+            {
+              "ja": "ほかにできること",
+              "en": "Other features"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ja": "GeoLens（僕のアプリ）",
+                "en": "GeoLens (my app)"
+              },
+              {
+                "ja": "0件",
+                "en": "0"
+              },
+              {
+                "ja": "2回まで",
+                "en": "Up to 2"
+              },
+              {
+                "ja": "無料で表示",
+                "en": "Free"
+              },
+              {
+                "ja": "プレミアム",
+                "en": "Premium"
+              },
+              {
+                "ja": "石の意味や誕生石もプレミアムで",
+                "en": "Stone meanings and birthstones with Premium"
+              }
+            ],
+            [
+              {
+                "ja": "Rock Identifier",
+                "en": "Rock Identifier"
+              },
+              {
+                "ja": "1,653件",
+                "en": "1,653"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "学べる読み物、コレクション",
+                "en": "Learning content, collection"
+              }
+            ],
+            [
+              {
+                "ja": "RockIn",
+                "en": "RockIn"
+              },
+              {
+                "ja": "4件",
+                "en": "4"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "硬度あり",
+                "en": "Hardness"
+              },
+              {
+                "ja": "あり",
+                "en": "Yes"
+              },
+              {
+                "ja": "磁石への反応、売り買いの場",
+                "en": "Magnet test, marketplace"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "1本ずつ見ていく",
+        "en": "Each app, one by one"
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "id": "6757151902"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "石を撮るか、写真ライブラリから選ぶと、AIが岩石や鉱物の名前の候補を出します。説明文では1,000種類以上に対応しています。",
+            "en": "Take a photo of a stone or pick one from your library, and the AI suggests which rock or mineral it is. The description says it covers more than 1,000 kinds."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "和名と英名、分類、化学式、モース硬度、結晶系、主な産地までは無料で見られます。似ている候補も並ぶので、見比べられます。",
+            "en": "The Japanese and English names, classification, chemical formula, Mohs hardness, crystal system, and main localities are all free. It also lists similar candidates so you can compare."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "無料で調べられるのは2回までです。何回でも調べたいときや、価値とレア度の目安、パワーストーンとしての意味を見たいときはプレミアムです。調べるときはネットにつながっている必要があります。",
+            "en": "You can identify two stones for free. Unlimited identifications, an estimate of value and rarity, and what the stone means as a crystal or birthstone come with Premium. You need an internet connection to identify a stone."
+          }
+        },
+        {
+          "type": "app",
+          "id": "1546796934"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "評価が1,653件あって、この中ではいちばん使われています。撮るか写真を選ぶと、数秒で判定が出ます。地質について学べる読み物と、自分のコレクションづくりもあります。",
+            "en": "With 1,653 ratings, this is the most used of the three. Take or pick a photo and you get a result in seconds. It also has content for learning about geology, and lets you build your own collection."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "年間のプレミアムで、判定が無制限になって広告と透かしロゴが消えます。7日間のお試しが付いています。",
+            "en": "Its yearly Premium gives you unlimited identifications and removes ads and watermark logos. There is a 7-day trial."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6754837588"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "いろいろな角度から何枚か撮ると、より確かな結果になると書かれています。ぼやけた写真や暗すぎる写真も知らせてくれます。",
+            "en": "Its description says shooting from several angles gives a more reliable result, and it warns you when a photo is blurry or too dark."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "種類や硬度、希少度、産地、価値の目安が出ます。スマホの磁気センサーで、石が磁石に反応するかも確かめられます。標本を売り買いできる場もアプリの中にあります。",
+            "en": "It shows the type, hardness, rarity, locality, and an estimated value. It can also use your phone's magnetic sensor to check whether a stone reacts to a magnet. There's a marketplace inside the app for buying and selling specimens."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "アプリの鑑定でわかること",
+        "en": "What an app can and cannot tell you"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "アプリが出すのは、写真から見たAIの見立てです。宝石店で出してもらう鑑別書のようなものではありません。",
+            "en": "What these apps give you is the AI's best guess from a photo. It is not the same as a gem report you'd get from a jeweler or a lab."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "見た目がそっくりな石もあるので、気になる石はいくつかの候補を見比べてみてください。",
+            "en": "Some stones look almost identical, so for one you really care about, compare a few of the candidates."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "どれを選ぶか",
+        "en": "Which one to pick"
+      },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "ja": "たくさんの人が使っている定番から選びたいなら、Rock Identifier",
+              "en": "If you want the one most people already use, Rock Identifier"
+            },
+            {
+              "ja": "何枚も撮って確かめたい、磁石への反応も見たいなら、RockIn",
+              "en": "If you want to shoot from several angles and test for magnetism, RockIn"
+            },
+            {
+              "ja": "硬さや化学式を無料で見てみたいなら、GeoLens",
+              "en": "If you want to see hardness and the chemical formula for free, GeoLens"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "ja": "無料で使えますか？",
+        "en": "Are they free?"
+      },
+      "a": {
+        "ja": "3本とも無料で入れられます。GeoLensは無料で2回まで調べられて、そのあとはプレミアムです。Rock Identifierは年間プレミアムで判定が無制限になります。",
+        "en": "All three are free to download. GeoLens lets you identify two stones for free, and after that it is Premium. Rock Identifier gives unlimited identifications with its yearly Premium."
+      }
+    },
+    {
+      "q": {
+        "ja": "拾った石が本物の宝石かわかりますか？",
+        "en": "Can an app tell me if my stone is a real gem?"
+      },
+      "a": {
+        "ja": "どのアプリも写真からの見立てです。本物かどうか、売れるかどうかは、宝石の鑑別機関や専門のお店に聞いてください。",
+        "en": "Every one of these apps is guessing from a photo. Whether a stone is genuine, or worth selling, is a question for a gem lab or a specialist shop."
+      }
+    },
+    {
+      "q": {
+        "ja": "価値の目安は信じていいですか？",
+        "en": "Can I trust the value estimates?"
+      },
+      "a": {
+        "ja": "GeoLensもRockInも、出しているのは目安です。売り買いを決める前に、専門の人に聞いてください。",
+        "en": "GeoLens and RockIn both show estimates only. Ask a specialist before you decide to buy or sell anything."
+      }
+    }
+  ],
+  "closing": {
+    "ja": "GeoLensはまだ評価が0件なので、散歩で拾った石で試してもらえたらうれしいです🪨",
+    "en": "GeoLens has no ratings yet, so it would make my day if you tried it on a stone from your next walk 🪨"
+  },
+  "notes": {
+    "ja": "各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。",
+    "en": "Features and rating counts were checked against each app's App Store description on November 15, 2026, and may change with updates."
+  },
+  "illustration": {
+    "scene": "夜の部屋の机に、散歩で拾った石がいくつも並んでいる。キャラが虫めがねで1つの石をのぞきこんでいて、横に置いたスマホ（画面は文字なし）から結晶の形の光が浮かんでいる。棚には小さな仕切りの付いた標本箱。",
+    "alt": {
+      "ja": "机に並べた石を虫めがねでのぞきこむキャラクター。スマホから結晶の形の光が浮かんでいる",
+      "en": "The character examining stones on a desk with a magnifying glass, as crystal-shaped light rises from a phone"
+    }
+  }
+}

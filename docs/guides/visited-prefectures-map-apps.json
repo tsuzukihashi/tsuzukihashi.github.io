@@ -1,0 +1,449 @@
+{
+  "slug": "visited-prefectures-map-apps",
+  "date_published": "2026-11-15",
+  "date_updated": "2026-11-15",
+  "search_phrase": {
+    "ja": "行った都道府県 塗りつぶし アプリ",
+    "en": "app to color in the Japanese prefectures you have visited"
+  },
+  "evidence": "2026-11-15 に Google の検索候補で「行った都道府県」を引くと、8件中3件が「アプリ」付きで、「行った都道府県 塗りつぶし」と「行った都道府県を塗りつぶすアプリは」も出た。「都道府県 制覇」も13件中に「制覇マップ」「制覇 アプリ」「制覇 写真」があった。同じ日に App Store で「行った都道府県」を検索すると、経県値（12,311件）を先頭に、評価が千件を超えるアプリが3本並んでいた。",
+  "title": {
+    "ja": "行った都道府県を地図で塗りつぶせるアプリ4選",
+    "en": "4 Apps for Coloring In the Prefectures You’ve Visited"
+  },
+  "description": {
+    "ja": "行った都道府県を日本地図に塗っていくアプリを4本比べました。塗り方、市区町村まで塗れるか、海外の地図の違いをまとめています。旅行思い出マップの作者が書いています。",
+    "en": "I compared four iPhone apps for coloring in the prefectures of Japan you've been to: how you fill them in, whether they go down to cities and towns, and maps beyond Japan. Written by the maker of TravelMemoryMap."
+  },
+  "excerpt": {
+    "ja": "塗り方、市区町村まで塗れるか、海外の地図で4本を比べました。旅行思い出マップを作った僕が、自分のアプリも入れて書いています。",
+    "en": "Four apps compared on how you fill in the map, city-level detail, and maps outside Japan. I made TravelMemoryMap, and it's one of the four."
+  },
+  "category": {
+    "ja": "アプリの選び方",
+    "en": "App guides"
+  },
+  "reading_minutes": 5,
+  "author": {
+    "name": {
+      "ja": "續橋 涼",
+      "en": "Ryo Tsuzukihashi"
+    },
+    "handle": "tsuzuki817",
+    "bio": {
+      "ja": "2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。旅行思い出マップの作者です。",
+      "en": "I've been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made TravelMemoryMap."
+    },
+    "url": "https://tsuzukit.com/about/",
+    "same_as": [
+      "https://x.com/tsuzuki817"
+    ]
+  },
+  "tldr": {
+    "ja": "いちばん使われているのは評価12,311件の経県値で、住んだ、泊まった、歩いたの段階で都道府県を塗り分けます。手で入れるのが面倒なら、写真の位置から自動で数える行ったね！都道府県。旅の写真を県の形に切って地図に貼りたい人は、僕が作った旅行思い出マップを見てみてください。",
+    "en": "The most widely used one is Keikenchi, with 12,311 ratings. It colors each prefecture by whether you lived there, stayed overnight, or walked around. If entering it all by hand sounds like a chore, Todoufuken Go counts prefectures automatically from where your photos were taken. If you want to cut your travel photos into the shape of each prefecture and pin them on the map, take a look at TravelMemoryMap, which I made."
+  },
+  "disclosure": {
+    "ja": "この記事は、旅行思い出マップを作った僕が書いています。ほかの3本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。",
+    "en": "I made TravelMemoryMap, and I wrote this article. The other three apps are by developers I don't know, and I haven't received money or anything else from them. Everything compared here comes from each app's App Store description and rating count as of November 15, 2026."
+  },
+  "own_app": "6478291625",
+  "app_category": "TravelApplication",
+  "apps": [
+    {
+      "id": "6478291625",
+      "name": {
+        "ja": "旅行思い出マップ - 旅の記憶を、地図に描く",
+        "en": "TravelMemoryMap"
+      },
+      "short": {
+        "ja": "旅行思い出マップ",
+        "en": "TravelMemoryMap"
+      },
+      "developer": "Ryo Tsudukihashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ab/d5/e4/abd5e45f-5b4a-51a6-1724-a26f1b3d3039/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6478291625",
+      "android_url": "https://play.google.com/store/apps/details?id=com.tsuzuki817.omoidemap",
+      "rating_count": 794
+    },
+    {
+      "id": "1396539079",
+      "name": {
+        "ja": "経県値 -けいけんち- 日本地図に色をつける旅の記録・旅行記",
+        "en": "Keikenchi: Japan Travel Map"
+      },
+      "short": {
+        "ja": "経県値",
+        "en": "Keikenchi"
+      },
+      "developer": "Qdan Inc.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/84/5f/b4/845fb411-df6d-c138-ba4d-e2d1422d55b6/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id1396539079",
+      "android_url": null,
+      "rating_count": 12311
+    },
+    {
+      "id": "1502575743",
+      "name": {
+        "ja": "Journeys-日本・世界地図を塗って旅行の記録を残そう！",
+        "en": "Journeys - Color In Japan and World Maps"
+      },
+      "short": {
+        "ja": "Journeys",
+        "en": "Journeys"
+      },
+      "developer": "Hideaki Touhara",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/3c/f1/85/3cf185ff-b817-c411-9eee-531b24dcb63b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id1502575743",
+      "android_url": null,
+      "rating_count": 2760
+    },
+    {
+      "id": "1245910728",
+      "name": {
+        "ja": "都道府県別に写真を集計・閲覧 - 行ったね！都道府県",
+        "en": "Todoufuken Go - for Japan."
+      },
+      "short": {
+        "ja": "行ったね！都道府県",
+        "en": "Todoufuken Go"
+      },
+      "developer": "mitsunori oishi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/56/08/c8/5608c814-4fdb-d67a-9d3e-4ede4ac1c40c/AppIcon-1x_U007emarketing-0-5-85-220-0.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id1245910728",
+      "android_url": null,
+      "rating_count": 2179
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ja": "4本をざっくり比べる",
+        "en": "The four apps at a glance"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "どれも行った県に色がつくところは同じです。違いが出るのは、何を手がかりに塗るかと、どこまで細かく塗れるかですね。",
+            "en": "All four color in the prefectures you've been to. Where they differ is what you fill them in with, and how fine the detail goes."
+          }
+        },
+        {
+          "type": "table",
+          "head": [
+            {
+              "ja": "アプリ",
+              "en": "App"
+            },
+            {
+              "ja": "評価の件数",
+              "en": "Ratings"
+            },
+            {
+              "ja": "塗り方",
+              "en": "How you fill it in"
+            },
+            {
+              "ja": "市区町村",
+              "en": "Cities and towns"
+            },
+            {
+              "ja": "日本の外",
+              "en": "Outside Japan"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ja": "旅行思い出マップ（僕のアプリ）",
+                "en": "TravelMemoryMap (my app)"
+              },
+              {
+                "ja": "794件",
+                "en": "794"
+              },
+              {
+                "ja": "写真を県の形に切って貼る",
+                "en": "Cut photos into the shape of each place"
+              },
+              {
+                "ja": "42の都道府県で塗れる",
+                "en": "Available for 42 prefectures"
+              },
+              {
+                "ja": "アジア24か国、台湾、アメリカの州",
+                "en": "24 Asian countries, Taiwan, and US states"
+              }
+            ],
+            [
+              {
+                "ja": "経県値",
+                "en": "Keikenchi"
+              },
+              {
+                "ja": "12,311件",
+                "en": "12,311"
+              },
+              {
+                "ja": "住んだ、泊まったなどの6段階",
+                "en": "Six levels, from lived there to passed through"
+              },
+              {
+                "ja": "47都道府県すべてで塗れる",
+                "en": "Available for all 47 prefectures"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              }
+            ],
+            [
+              {
+                "ja": "Journeys",
+                "en": "Journeys"
+              },
+              {
+                "ja": "2,760件",
+                "en": "2,760"
+              },
+              {
+                "ja": "リストから足す",
+                "en": "Add from a list"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "世界の国",
+                "en": "Countries of the world"
+              }
+            ],
+            [
+              {
+                "ja": "行ったね！都道府県",
+                "en": "Todoufuken Go"
+              },
+              {
+                "ja": "2,179件",
+                "en": "2,179"
+              },
+              {
+                "ja": "写真の位置情報から自動",
+                "en": "Automatic, from photo locations"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "1本ずつ見ていく",
+        "en": "Each app, one by one"
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "id": "6478291625"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "旅先で撮った写真が都道府県の形に切り取られて、地図にはまっていきます。行った場所が写真で埋まっていくので、塗った地図がそのまま旅のアルバムになります。",
+            "en": "Photos from your trips are cut into the shape of each prefecture and fit into the map. The places you've been fill up with your own photos, so the finished map doubles as an album of your travels."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "全国の地図に加えて、42の都道府県で市区町村まで細かく貼れます。全部で1,667のエリアです。アジア24か国、台湾22の地域、アメリカ50州と1準州の地図もあります。",
+            "en": "Besides the map of all of Japan, 42 prefectures have maps detailed down to cities and towns, 1,667 areas in all. There are also maps for 24 Asian countries, 22 regions of Taiwan, and the 50 US states plus one territory."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "友達や家族と同じ地図を一緒に編集できて、1年分の写真をBGM付きの振り返り動画にもできます。Google PlayにAndroid版もあります。",
+            "en": "You can edit the same map together with friends or family, and turn a year of photos into a look-back video with music. There's also an Android version on Google Play."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "無料だと地図は2つまで、1つのエリアに追加できる写真は3枚までです。地図を何枚も作るのと、高画質での保存と印刷は、有料の思い出マップサポーターに入っています。",
+            "en": "On the free plan you can have up to 2 maps and add up to 3 photos to each area. Making more maps, plus saving and printing in high resolution, come with the paid supporter plan."
+          }
+        },
+        {
+          "type": "app",
+          "id": "1396539079"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "評価が12,311件あって、この中ではいちばん使われています。2000年代からあるWebの経県値の公式アプリで、住んだ、泊まった、歩いた、降り立った、通過した、行ってない、の6段階で点数を出します。",
+            "en": "With 12,311 ratings, it's by far the most used of the four. It's the official app of Keikenchi, a website that has been around since the 2000s, and it scores each prefecture on six levels: lived there, stayed overnight, walked around, stopped there, passed through, or never been."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "47都道府県それぞれの地図で、市区町村まで塗り分けられます。温泉や城めぐりのように、自分で決めた点数の地図も作れて、地図は200枚まで保存できます。",
+            "en": "Every one of the 47 prefectures has its own map down to cities and towns. You can make maps with your own scoring, like hot springs or castles, and save up to 200 maps."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "記録の機能は無料のまま全部使えて、プレミアムは広告を消すのと機種変更のときの引き継ぎです。",
+            "en": "All the logging features are free, and Premium removes the ads and lets you transfer your data when you change phones."
+          }
+        },
+        {
+          "type": "app",
+          "id": "1502575743"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "行った国や都道府県をリストから足すと、世界地図と日本地図が塗られていきます。国旗や都道府県旗のアイコンも出ます。",
+            "en": "Add the countries and prefectures you've been to from a list, and the world map and Japan map fill in. Flags for each country and prefecture show up too."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "世界の何%、日本の何%に行ったかが数字で出るので、海外もまとめて記録したい人に向いてます。料金については、説明文に書かれていませんでした。",
+            "en": "It shows what percentage of the world and of Japan you've visited, so it suits people who want to track trips abroad too. The description doesn't say anything about pricing."
+          }
+        },
+        {
+          "type": "app",
+          "id": "1245910728"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "iPhoneで撮った写真の位置情報から、どの都道府県で撮ったかを自動で数えてくれます。自分で入れる手間がいらないのがいちばんの強みです。",
+            "en": "It automatically works out which prefecture each of your iPhone photos was taken in, from the photo's location data. Not having to enter anything yourself is its biggest strength."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "都道府県ごとに、初めて撮った日や枚数、日数が分かって、そのままアルバムとして見られます。位置情報のない写真は数えられず、県境では外れることがあると説明文に書かれています。広告が出ます。",
+            "en": "For each prefecture you can see when you first took a photo there, how many photos, and on how many days, and browse them as an album. The description notes that photos without location data aren't counted, and results near prefecture borders can be off. It shows ads."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "アプリを入れたくないなら",
+        "en": "If you'd rather not install an app"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "日本の白地図を印刷して、行った県を色鉛筆で塗るのがいちばん手軽です。冷蔵庫に貼っておけば、家族で見られます。",
+            "en": "The simplest way is to print a blank map of Japan and color in the prefectures you've been to with colored pencils. Stick it on the fridge and the whole family can see it."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "ただ、どの写真をどこで撮ったかまでは残せません。旅の記録として見返したいなら、アプリのほうが向いてますね。",
+            "en": "What it can't hold is which photos you took where. If you want to look back on the trips themselves, an app fits better."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "どれを選ぶか",
+        "en": "Which one to pick"
+      },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "ja": "住んだ、泊まったまで分けて、点数で全国制覇を目指したいなら、経県値",
+              "en": "If you want to score how well you know each prefecture and aim to cover all of Japan, Keikenchi"
+            },
+            {
+              "ja": "海外の国も一緒に、何%行ったかを見たいなら、Journeys",
+              "en": "If you want to include other countries and see what percentage you have visited, Journeys"
+            },
+            {
+              "ja": "何も入れずに、今までの写真から自動で知りたいなら、行ったね！都道府県",
+              "en": "If you want it worked out from your existing photos without entering anything, Todoufuken Go"
+            },
+            {
+              "ja": "旅の写真で地図を埋めて、家族や恋人と同じ地図を作りたいなら、旅行思い出マップ",
+              "en": "If you want to fill the map with your travel photos and share one map with family or a partner, TravelMemoryMap"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "ja": "無料で使えますか？",
+        "en": "Are they free?"
+      },
+      "a": {
+        "ja": "4本とも無料で入れられます。経県値は記録の機能が全部無料です。旅行思い出マップは無料だと地図2つまでです。",
+        "en": "All four are free to download. Keikenchi's logging features are all free. TravelMemoryMap's free plan allows up to 2 maps."
+      }
+    },
+    {
+      "q": {
+        "ja": "市区町村まで塗れるのはどれですか？",
+        "en": "Which ones go down to cities and towns?"
+      },
+      "a": {
+        "ja": "経県値は47都道府県すべて、旅行思い出マップは42の都道府県で、市区町村まで塗れます。",
+        "en": "Keikenchi covers all 47 prefectures, and TravelMemoryMap covers 42, down to cities and towns."
+      }
+    },
+    {
+      "q": {
+        "ja": "Androidで使えるのはどれですか？",
+        "en": "Which one works on Android?"
+      },
+      "a": {
+        "ja": "この4本の中でGoogle Play版があると確かめられたのは、旅行思い出マップです。",
+        "en": "Of these four, TravelMemoryMap is the one I could confirm is on Google Play."
+      }
+    }
+  ],
+  "closing": {
+    "ja": "794件も評価をくれたみなさんに感謝しつつ、次に足してほしい地図があればぜひ教えてください🗾",
+    "en": "Thank you to everyone behind those 794 ratings, and if there's a map you'd like me to add next, please tell me 🗾"
+  },
+  "notes": {
+    "ja": "各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。旅行思い出マップの無料の範囲は、アプリのコードで確かめました。アップデートで変わることがあります。",
+    "en": "Features and rating counts were checked against each app's App Store description on November 15, 2026. What's free in TravelMemoryMap was checked in the app's code. Things may change with updates."
+  },
+  "illustration": {
+    "scene": "帰りの新幹線の窓際の席。キャラがスマホを見てにっこりしている。スマホの上に小さな日本地図の形（文字なし）が浮かんでいて、色のついた県がいくつかあり、いま行ってきた1県だけが新しく紫に色づいたところ。窓の外は夕焼けの山なみ。キャラの目は参照画像と同じ白い縦長の楕円2つのままにする（笑った弧の目や閉じた目にしない）。",
+    "alt": {
+      "ja": "帰りの新幹線で、行ってきた県が新しく色づいた日本地図を見るキャラクター",
+      "en": "The character on a train home, smiling at a map of Japan where the prefecture they just visited has filled in"
+    }
+  }
+}

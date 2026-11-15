@@ -1,0 +1,435 @@
+{
+  "slug": "samegame-apps",
+  "date_published": "2026-11-15",
+  "date_updated": "2026-11-15",
+  "search_phrase": {
+    "ja": "さめがめ アプリ",
+    "en": "SameGame app for iPhone"
+  },
+  "evidence": "2026-11-15 に Google の検索候補で「さめがめ」を引くと、13件中4件が「アプリ」「iphone」「無料」「無料ゲーム」付きで、「ブラウザ」付きも出た。「セイムパズル」では「セイムパズル に 似たゲーム」が出た。同じ日に App Store で「さめがめ」を引くと13本が並び、評価が100件を超えるのは東方さめがめ（120件）とさめがめパズル（111件）だけで、ほかは数十件以下の個人開発のアプリだった。",
+  "title": {
+    "ja": "さめがめが遊べるiPhoneアプリ4選",
+    "en": "4 iPhone Apps for Playing SameGame"
+  },
+  "description": {
+    "ja": "同じ色のブロックをまとめて消す、さめがめが遊べるiPhoneアプリを4本比べました。全部消したときの扱い、ステージの有無、ランキングの違いをまとめています。ゼリーセイムパズルの作者が書いています。",
+    "en": "I compared four iPhone apps for playing SameGame, the puzzle where you clear groups of same-colored blocks: what happens when you clear the board, whether there are stages, and rankings. Written by the maker of Jelly Same Puzzle."
+  },
+  "excerpt": {
+    "ja": "全部消したときの扱い、ステージの有無、ランキングで4本を比べました。ゼリーセイムパズルを作った僕が、自分のアプリも入れて書いています。",
+    "en": "Four apps compared on clearing the board, stages, and rankings. I made Jelly Same Puzzle, and it's one of the four."
+  },
+  "category": {
+    "ja": "アプリの選び方",
+    "en": "App guides"
+  },
+  "reading_minutes": 4,
+  "author": {
+    "name": {
+      "ja": "續橋 涼",
+      "en": "Ryo Tsuzukihashi"
+    },
+    "handle": "tsuzuki817",
+    "bio": {
+      "ja": "2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。ゼリーセイムパズルの作者です。",
+      "en": "I've been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made Jelly Same Puzzle."
+    },
+    "url": "https://tsuzukit.com/about/",
+    "same_as": [
+      "https://x.com/tsuzuki817"
+    ]
+  },
+  "tldr": {
+    "ja": "比べた4本の中でいちばん使われているのは、評価111件のさめがめパズルです。ルールそのままに遊ぶならこれですね。ステージごとに目標の点数を超えていく遊び方や、ブロックを1つ消せるアイテムがほしい人は、僕が作ったゼリーセイムパズルも見てみてください。",
+    "en": "Of the four apps here, the most used is SameGame Puzzle, with 111 ratings. It's the one to pick if you want the plain rules. If you'd like to clear stages by beating a target score, or use items that remove a single block, take a look at Jelly Same Puzzle, which I made."
+  },
+  "disclosure": {
+    "ja": "この記事は、ゼリーセイムパズルを作った僕が書いています。ほかの3本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。",
+    "en": "I made Jelly Same Puzzle, and I wrote this article. The other three apps are by developers I don't know, and I haven't received money or anything else from them. Everything compared here comes from each app's App Store description and rating count as of November 15, 2026."
+  },
+  "own_app": "6747354292",
+  "app_category": "GameApplication",
+  "apps": [
+    {
+      "id": "6747354292",
+      "name": {
+        "ja": "ゼリーセイムパズル",
+        "en": "Jelly Same Puzzle"
+      },
+      "short": {
+        "ja": "ゼリーセイムパズル",
+        "en": "Jelly Same Puzzle"
+      },
+      "developer": "Ryo Tsudukihashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ee/78/0d/ee780dc7-b600-7bb4-777f-3b34fa4bda1f/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6747354292",
+      "android_url": null,
+      "rating_count": 10
+    },
+    {
+      "id": "583809492",
+      "name": {
+        "ja": "さめがめパズル",
+        "en": "SameGame Puzzle"
+      },
+      "short": {
+        "ja": "さめがめパズル",
+        "en": "SameGame Puzzle"
+      },
+      "developer": "KIMIHIKO SATOU",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/3e/9a/21/3e9a211b-5e52-2d6c-e7ba-0a37c476a5b4/AppIcon-0-0-1x_U007epad-0-1-GLES2_U002c0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id583809492",
+      "android_url": null,
+      "rating_count": 111
+    },
+    {
+      "id": "1455773777",
+      "name": {
+        "ja": "でぶどりのさめがめパズル",
+        "en": "Debudori SameGame Puzzle"
+      },
+      "short": {
+        "ja": "でぶどりのさめがめパズル",
+        "en": "Debudori SameGame"
+      },
+      "developer": "KENTA OKAMURA",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple125/v4/bb/dd/37/bbdd3700-612c-22c6-b4e9-64078c4a0eea/AppIcon-1x_U007emarketing-0-7-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id1455773777",
+      "android_url": null,
+      "rating_count": 14
+    },
+    {
+      "id": "6748279665",
+      "name": {
+        "ja": "LinkOut - さめがめ",
+        "en": "LinkOut - SameGame"
+      },
+      "short": {
+        "ja": "LinkOut",
+        "en": "LinkOut"
+      },
+      "developer": "Shunsuke Fukui",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/02/2d/35/022d3551-3802-0cfb-3b50-3476e4e23c65/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6748279665",
+      "android_url": null,
+      "rating_count": 3
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ja": "4本をざっくり比べる",
+        "en": "The four apps at a glance"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "どれも、同じ色が2つ以上つながったブロックをタップして消すゲームです。違いが出るのは、全部消したときの扱いと、1回で終わるかステージが続くかです。",
+            "en": "All four are the same basic game: tap a group of two or more connected blocks of the same color to clear it. Where they differ is what happens when you clear the whole board, and whether a game ends in one round or keeps going through stages."
+          }
+        },
+        {
+          "type": "table",
+          "head": [
+            {
+              "ja": "アプリ",
+              "en": "App"
+            },
+            {
+              "ja": "評価の件数",
+              "en": "Ratings"
+            },
+            {
+              "ja": "全部消したとき",
+              "en": "Clearing the board"
+            },
+            {
+              "ja": "進み方",
+              "en": "How a game goes"
+            },
+            {
+              "ja": "ランキング",
+              "en": "Rankings"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ja": "ゼリーセイムパズル（僕のアプリ）",
+                "en": "Jelly Same Puzzle (my app)"
+              },
+              {
+                "ja": "10件",
+                "en": "10"
+              },
+              {
+                "ja": "残りが少ないほどボーナス。0個で2万点",
+                "en": "Bonus grows as fewer blocks remain. 20,000 points for zero"
+              },
+              {
+                "ja": "ステージごとに目標の点数。21面から先も続く",
+                "en": "A target score per stage. Keeps going past stage 21"
+              },
+              {
+                "ja": "あり",
+                "en": "Yes"
+              }
+            ],
+            [
+              {
+                "ja": "さめがめパズル",
+                "en": "SameGame Puzzle"
+              },
+              {
+                "ja": "111件",
+                "en": "111"
+              },
+              {
+                "ja": "ゲームクリア",
+                "en": "You win the game"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "あり",
+                "en": "Yes"
+              }
+            ],
+            [
+              {
+                "ja": "でぶどりのさめがめパズル",
+                "en": "Debudori SameGame"
+              },
+              {
+                "ja": "14件",
+                "en": "14"
+              },
+              {
+                "ja": "スコアが2倍",
+                "en": "Your score doubles"
+              },
+              {
+                "ja": "消せなくなったら終わり",
+                "en": "Ends when no moves are left"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              }
+            ],
+            [
+              {
+                "ja": "LinkOut",
+                "en": "LinkOut"
+              },
+              {
+                "ja": "3件",
+                "en": "3"
+              },
+              {
+                "ja": "ボーナス",
+                "en": "A bonus"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "世界ランキング",
+                "en": "Global ranking"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "1本ずつ見ていく",
+        "en": "Each app, one by one"
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "id": "6747354292"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "10×10の盤に5色のゼリーと、タップで色を切り替えられる虹色のブロックが並びます。消すと上のゼリーが落ちて、空いた列は左に詰まります。",
+            "en": "A 10 by 10 board is filled with jellies in five colors, plus rainbow blocks whose color you can switch with a tap. When you clear a group, the jellies above drop down and empty columns slide to the left."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "ステージごとに目標の点数があって、超えると次へ進みます。最後に残ったブロックが少ないほどボーナスが入り、全部消せば2万点です。6面からは、指定の色をちょうど何個で消すというミッションも出ます。",
+            "en": "Each stage has a target score, and beating it takes you to the next one. The fewer blocks left at the end, the bigger the bonus, and clearing everything is worth 20,000 points. From stage 6, missions appear that ask you to clear an exact number of a given color in one go."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "任意の1個を消すDeleteと、5×5の範囲の色を入れ替えるChangeというアイテムがあります。広告を見るか、アプリ内で買うと増やせます。バナー広告も出ます。",
+            "en": "There are two items. Delete removes any single block, and Change reshuffles the colors in a 5 by 5 area. You can get more by watching an ad or buying them in the app. There are also banner ads."
+          }
+        },
+        {
+          "type": "app",
+          "id": "583809492"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "評価が111件あって、比べた4本の中ではいちばん使われています。同じ色が縦か横に2個以上並んでいれば消せて、全部消せばクリアです。ランキングにも対応しています。",
+            "en": "With 111 ratings, this is the most used of the four. You can clear two or more same-colored blocks lined up vertically or horizontally, and you win by clearing them all. It has rankings too."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "説明文はとても短くて、ステージや広告のことは書かれていませんでした。分かるのは、ルールそのままのさめがめだということです。",
+            "en": "The description is very short and doesn't mention stages or ads. What it does tell you is that this is SameGame with the classic rules."
+          }
+        },
+        {
+          "type": "app",
+          "id": "1455773777"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "SNSで人気のキャラクター、でぶどりのさめがめです。消せるブロックがなくなったら終わりで、全部消せるとスコアが2倍になります。",
+            "en": "This is SameGame starring Debudori, a character popular on social media. The game ends when there are no more moves, and clearing every block doubles your score."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "一度にたくさん消すほど点が高くなります。でぶどりが好きなら、これを選ぶ理由は十分ですね。",
+            "en": "The more you clear at once, the more points you get. If you like Debudori, that's reason enough to pick this one."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6748279665"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "消すと上のパズルが落ちて、空いた列は左に寄ります。遊び方の説明が4本の中でいちばん丁寧でした。",
+            "en": "When you clear a group, the pieces above fall and empty columns move to the left. Its how-to-play explanation was the clearest of the four."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "全部消すとボーナスがあって、世界ランキングでスコアを競えます。広告はアプリ内の購入で消せます。",
+            "en": "Clearing the board earns a bonus, and you can compete on a global ranking. You can remove the ads with an in-app purchase."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "アプリを入れたくないなら",
+        "en": "If you'd rather not install an app"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "さめがめは、ブラウザで遊べるサイトもあります。Googleの検索候補にも、さめがめ ブラウザという形が出ていました。",
+            "en": "There are also websites where you can play SameGame in a browser. \"SameGame browser\" even shows up in Google's search suggestions in Japan."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "ただ、途中で閉じても続きから遊びたいなら、アプリのほうが向いています。ゼリーセイムパズルは、次に開いたときに前の盤から始まります。",
+            "en": "If you want to pick up where you left off after closing it, though, an app is the better fit. Jelly Same Puzzle opens to the board you were on last time."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "どれを選ぶか",
+        "en": "Which one to pick"
+      },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "ja": "ルールそのままのさめがめを遊ぶなら、さめがめパズル",
+              "en": "If you want SameGame with the classic rules, SameGame Puzzle"
+            },
+            {
+              "ja": "でぶどりが好きなら、でぶどりのさめがめパズル",
+              "en": "If you like Debudori, Debudori SameGame"
+            },
+            {
+              "ja": "広告をお金で消したい人や、世界ランキングで競いたい人は、LinkOut",
+              "en": "If you want to pay to remove ads, or compete on a global ranking, LinkOut"
+            },
+            {
+              "ja": "ステージを進めながら、ミッションやアイテムで長く遊びたいなら、ゼリーセイムパズル",
+              "en": "If you want to work through stages with missions and items, Jelly Same Puzzle"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "ja": "無料で遊べますか？",
+        "en": "Are they free?"
+      },
+      "a": {
+        "ja": "4本とも無料で入れられます。ゼリーセイムパズルは広告があって、アイテムを買うこともできます。",
+        "en": "All four are free to download. Jelly Same Puzzle has ads, and you can also buy items."
+      }
+    },
+    {
+      "q": {
+        "ja": "セイムゲームとさめがめは同じですか？",
+        "en": "Is \"Same Game\" the same as SameGame?"
+      },
+      "a": {
+        "ja": "同じ遊び方のゲームです。英語ではSameGameと呼ばれていて、セイムパズルという名前で出ているものもあります。",
+        "en": "Yes, it's the same game. In English it's called SameGame, and some versions go by the name Same Puzzle."
+      }
+    },
+    {
+      "q": {
+        "ja": "iPadでも遊べますか？",
+        "en": "Can I play on iPad?"
+      },
+      "a": {
+        "ja": "ゼリーセイムパズル、さめがめパズル、でぶどりのさめがめパズルはiPadにも対応しています。LinkOutはApp StoreではiPhone向けになっていました。",
+        "en": "Jelly Same Puzzle, SameGame Puzzle, and Debudori SameGame all support iPad. LinkOut is listed as an iPhone app on the App Store."
+      }
+    }
+  ],
+  "closing": {
+    "ja": "ゼリーセイムパズルの評価はまだ10件なので、全部消せた人の報告を待ってます🙏",
+    "en": "Jelly Same Puzzle only has 10 ratings so far, so I'd love to hear from anyone who manages to clear the whole board 🙏"
+  },
+  "notes": {
+    "ja": "それぞれのアプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。",
+    "en": "Features and rating counts were checked against each app's App Store description on November 15, 2026, and may change with updates."
+  },
+  "illustration": {
+    "scene": "窓辺のこたつ。キャラがスマホを両手で持っていて、画面から同じ色の小さな四角いブロックのかたまりがふわっと浮き上がり、残った列が左へすべっていく。最後のひとかたまりが消える瞬間で、キャラは小さくガッツポーズをしている。",
+    "alt": {
+      "ja": "こたつでスマホを持ち、浮き上がって消えていく色ブロックを見てガッツポーズするキャラクター",
+      "en": "The character at a kotatsu table, making a small fist pump as colored blocks lift off the phone screen and vanish"
+    }
+  }
+}

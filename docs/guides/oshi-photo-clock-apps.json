@@ -1,0 +1,435 @@
+{
+  "slug": "oshi-photo-clock-apps",
+  "date_published": "2026-11-15",
+  "date_updated": "2026-11-15",
+  "search_phrase": {
+    "ja": "推し 時計 アプリ",
+    "en": "clock app with photos of your fave"
+  },
+  "evidence": "2026-11-15 に Google の検索候補で「推し 時計」を引くと、10件中に「推し 時計 アプリ」「推し 時計 作り方」「推し 時計 壁紙」が並んだ。同じ日の App Store で「推し 時計」を検索すると、推し時計 9件、OshiClock 2件、推しClock 1件など、写真と時計を組み合わせる小さなアプリが並び、評価が数十件を超えるものはなかった。",
+  "title": {
+    "ja": "推しの写真で時計を作るアプリ4選",
+    "en": "4 Apps That Turn Photos of Your Fave into a Clock"
+  },
+  "description": {
+    "ja": "推しの写真で時計を作るアプリを4本比べました。写真が時計のどこに出て、いつ入れ替わるか、ウィジェットと置き時計の違いをまとめています。パタパタ推し時計の作者が書いています。",
+    "en": "I compared four iPhone apps that turn photos of your fave into a clock: where the photo shows up, when it changes, and how they work as widgets or a desk clock. Written by the maker of Oshi Clock."
+  },
+  "excerpt": {
+    "ja": "写真が出る場所、入れ替わるタイミング、ウィジェットと置き時計で4本を比べました。パタパタ推し時計を作った僕が書いています。",
+    "en": "Four apps compared on where the photo shows, when it changes, widgets, and desk-clock use. I made Oshi Clock, and it's one of the four."
+  },
+  "category": {
+    "ja": "アプリの選び方",
+    "en": "App guides"
+  },
+  "reading_minutes": 4,
+  "author": {
+    "name": {
+      "ja": "續橋 涼",
+      "en": "Ryo Tsuzukihashi"
+    },
+    "handle": "tsuzuki817",
+    "bio": {
+      "ja": "2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。パタパタ推し時計の作者です。",
+      "en": "I've been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made Oshi Clock."
+    },
+    "url": "https://tsuzukit.com/about/",
+    "same_as": [
+      "https://x.com/tsuzuki817"
+    ]
+  },
+  "tldr": {
+    "ja": "時間ごとに推しのメッセージがほしいなら推し時計、ホーム画面のウィジェットで時間帯ごとに推しを変えたいならOshiClockです。置き時計にして、数字がめくれるたびに違う推しの写真を見たい人は、僕が作ったパタパタ推し時計も見てみてください。",
+    "en": "For an hourly message from your fave, FanClock. For a Home Screen widget that changes faves through the day, OshiClock. If you want a desk clock that shows a different photo of your fave every time a digit flips, take a look at Oshi Clock, which I made."
+  },
+  "disclosure": {
+    "ja": "この記事は、パタパタ推し時計を作った僕が書いています。ほかの3本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。",
+    "en": "I made Oshi Clock, and I wrote this article. The other three apps are by developers I don't know, and I haven't received money or anything else from them. Everything compared here comes from each app's App Store description and rating count as of November 15, 2026."
+  },
+  "own_app": "6821502120",
+  "app_category": "LifestyleApplication",
+  "apps": [
+    {
+      "id": "6821502120",
+      "name": {
+        "ja": "パタパタ推し時計 - 推し活の置き時計ウィジェット",
+        "en": "Oshi Clock: Flip Photo Widget"
+      },
+      "short": {
+        "ja": "パタパタ推し時計",
+        "en": "Oshi Clock"
+      },
+      "developer": "Ryo Tsudukihashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e0/cc/e3/e0cce3aa-5bc0-0249-f331-24f1b484f21f/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6821502120",
+      "android_url": "https://play.google.com/store/apps/details?id=com.tsuzukit.patapataoshidokei",
+      "rating_count": 0
+    },
+    {
+      "id": "6478070968",
+      "name": {
+        "ja": "推し時計 - 時間と推しを一度に拝めるアプリ",
+        "en": "FanClock: Time with Your Bias"
+      },
+      "short": {
+        "ja": "推し時計",
+        "en": "FanClock"
+      },
+      "developer": "Asobiware",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/09/77/5f/09775f13-5016-b057-0124-61b65a4f2f5b/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6478070968",
+      "android_url": null,
+      "rating_count": 9
+    },
+    {
+      "id": "6822322045",
+      "name": {
+        "ja": "OshiClock - 推し時計とカウントダウン",
+        "en": "OshiClock - Fave Countdown"
+      },
+      "short": {
+        "ja": "OshiClock",
+        "en": "OshiClock"
+      },
+      "developer": "Hiroki Kikuchi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ea/4c/ab/ea4cabfc-c02d-987a-d761-f5a940d85da2/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6822322045",
+      "android_url": null,
+      "rating_count": 2
+    },
+    {
+      "id": "6780210686",
+      "name": {
+        "ja": "推しClock",
+        "en": "OshiClock Workday Countdown"
+      },
+      "short": {
+        "ja": "推しClock",
+        "en": "OshiClock Workday"
+      },
+      "developer": "AKIHIRO FURUSAWA",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/62/5b/da/625bdacb-a1f7-9bcf-89f0-9e78cacfc3a9/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6780210686",
+      "android_url": null,
+      "rating_count": 1
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ja": "4本をざっくり比べる",
+        "en": "The four apps at a glance"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "推しの写真と時計を一緒に出す、というところは4本とも同じです。違うのは、写真が時計のどこに出て、いつ入れ替わるかです。",
+            "en": "All four put a photo of your fave next to the time. The difference is where the photo sits and when it changes."
+          }
+        },
+        {
+          "type": "table",
+          "head": [
+            {
+              "ja": "アプリ",
+              "en": "App"
+            },
+            {
+              "ja": "評価の件数",
+              "en": "Ratings"
+            },
+            {
+              "ja": "写真の出し方",
+              "en": "How photos appear"
+            },
+            {
+              "ja": "ホーム画面のウィジェット",
+              "en": "Home Screen widget"
+            },
+            {
+              "ja": "置き時計として",
+              "en": "As a desk clock"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ja": "パタパタ推し時計（僕のアプリ）",
+                "en": "Oshi Clock (my app)"
+              },
+              {
+                "ja": "0件",
+                "en": "0"
+              },
+              {
+                "ja": "時と分の数字ごとに別の写真。時刻が変わるとめくれる",
+                "en": "A different photo for each hour and minute digit, flipping as the time changes"
+              },
+              {
+                "ja": "小は無料。中、大、特大は買い切り",
+                "en": "Small is free. Medium, large, and extra large with a one-time purchase"
+              },
+              {
+                "ja": "全画面の時計、夜間モード、スタンバイ",
+                "en": "Full-screen clock, night mode, StandBy"
+              }
+            ],
+            [
+              {
+                "ja": "推し時計",
+                "en": "FanClock"
+              },
+              {
+                "ja": "9件",
+                "en": "9"
+              },
+              {
+                "ja": "時計の横の小窓。時間ごとにメッセージ",
+                "en": "In a little window beside the clock, with a message for each hour"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              }
+            ],
+            [
+              {
+                "ja": "OshiClock",
+                "en": "OshiClock"
+              },
+              {
+                "ja": "2件",
+                "en": "2"
+              },
+              {
+                "ja": "朝、昼、夜など時間帯ごとに入れ替わる",
+                "en": "Changes by time of day, such as morning, noon, and night"
+              },
+              {
+                "ja": "小と中は無料。大は買い切りのPro",
+                "en": "Small and medium are free. Large with the one-time Pro"
+              },
+              {
+                "ja": "スタンバイ",
+                "en": "StandBy"
+              }
+            ],
+            [
+              {
+                "ja": "推しClock",
+                "en": "OshiClock Workday"
+              },
+              {
+                "ja": "1件",
+                "en": "1"
+              },
+              {
+                "ja": "背景に1枚。時計は推し色",
+                "en": "One photo in the background, with the clock in your fave’s color"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "1本ずつ見ていく",
+        "en": "Each app, one by one"
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "id": "6821502120"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "駅や空港の発着板のような、パタパタめくれる時計です。分の00から59、時の00から23まで、数字ごとに推しの写真を入れられます。時刻が変わるたびに、写真と数字のカードがパタッとめくれます。",
+            "en": "It's a split-flap clock, like the boards at train stations and airports. You can give every minute digit from 00 to 59 and every hour from 00 to 23 its own photo of your fave. Each time the time changes, a card with the photo and the number flips over."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "時計のほかに、写真のスライドショー、文字がめくれるメッセージ、ライブまでのカウントダウンも並べられます。充電中に横向きに置けば、スタンバイにも出ます。写真は端末の中だけに保存されて、アカウントの登録もありません。",
+            "en": "Next to the clock you can add a photo slideshow, a flipping message, and a countdown to your next show. Set your iPhone sideways while it charges and it shows up in StandBy. Photos stay on your device, and there's no account to sign up for."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "無料だと、ボードは1つ、写真は5枚までです。同じ写真をいくつの数字に入れても1枚と数えます。枚数の制限をなくす、中より大きいウィジェット、めくれ音や質感、時報は、スーパー推し時計プランです。買い切りで、サブスクリプションではありません。Google PlayにAndroid版もあります。",
+            "en": "The free version gives you one board and up to five photos. Using the same photo on any number of digits still counts as one. No limits, widgets larger than small, extra flip sounds and textures, and hourly chimes come with the Super Oshi Clock plan. It is a one-time purchase, not a subscription. There is also an Android version on Google Play."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6478070968"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "時計の横の小窓から推しがのぞく作りです。推しは何人でも登録できて、アニメの推しとアイドルの推しを一緒に入れられます。",
+            "en": "Your fave peeks out from a little window next to the clock. You can add as many faves as you like, so an anime character and an idol can share the space."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "朝はおはよう、夜はおやすみのように、時間ごとに推しに言ってほしいメッセージを決められます。勉強や筋トレのタイマーもついています。",
+            "en": "You can set a message for each hour, like good morning in the morning and good night at night. There is also a timer for studying or working out."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6822322045"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "ホーム画面のウィジェットに力を入れたアプリです。朝、昼、夜など時間帯ごとに推しの写真とひとことを決めておくと、自動で入れ替わります。写真の顔を見つけて、時刻の文字がかからない位置に合わせてくれます。",
+            "en": "This one is built around Home Screen widgets. Set a photo and a short line for each part of the day, and it switches on its own. It finds the face in your photo and keeps the time from covering it."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "ライブや誕生日までのカウントダウンも出せます。時間帯を無制限にする、大きいウィジェット、Dynamic Islandに開演までの残り時間を出すのは、買い切りのProです。",
+            "en": "It can also count down to a show or a birthday. Unlimited time slots, the large widget, and showing the time until the show starts in the Dynamic Island are part of Pro, a one-time purchase."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6780210686"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "推しの写真を背景に、推し色のデジタル時計を出すアプリです。始業、ランチ、終業までの残り時間を出してくれるので、仕事の日に向いています。",
+            "en": "It sets a photo of your fave as the background behind a digital clock in your fave's color. It shows how long until work starts, lunch, and the end of the day, so it suits workdays."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "次のイベントまでのカウントダウンと、記念日からの日数も出ます。画面の下にバナー広告があると書かれていました。",
+            "en": "It also counts down to your next event and counts days since an anniversary. The description says there is a banner ad at the bottom of the screen."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "アプリを入れたくないなら",
+        "en": "If you'd rather not install an app"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "iPhoneのホーム画面に、写真のウィジェットと時計のウィジェットを並べて置く方法があります。どちらも最初から入っています。",
+            "en": "You can put a Photos widget and a Clock widget side by side on your Home Screen. Both come with your iPhone."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "ただ、写真と時刻は別々の枠になります。数字ごとに写真を変えたり、時間帯で推しを入れ替えたりしたいなら、アプリのほうが向いていますね。",
+            "en": "The photo and the time stay in separate boxes, though. If you want a different photo for each number, or a different fave for each part of the day, an app does it better."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "どれを選ぶか",
+        "en": "Which one to pick"
+      },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "ja": "時間ごとに推しからメッセージがほしいなら、推し時計",
+              "en": "If you want a message from your fave every hour, FanClock"
+            },
+            {
+              "ja": "ホーム画面のウィジェットで時間帯ごとに推しを変えたいなら、OshiClock",
+              "en": "If you want your Home Screen widget to change faves through the day, OshiClock"
+            },
+            {
+              "ja": "仕事の日の残り時間を推しと見たいなら、推しClock",
+              "en": "If you want to watch the workday tick down with your fave, OshiClock Workday"
+            },
+            {
+              "ja": "置き時計にして、数字がめくれるたびに違う推しを見たいなら、パタパタ推し時計",
+              "en": "If you want a desk clock that shows a different photo each time a digit flips, Oshi Clock"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "ja": "無料で使えますか？",
+        "en": "Are they free?"
+      },
+      "a": {
+        "ja": "4本とも無料で入れられます。パタパタ推し時計とOshiClockは、写真の数や大きいウィジェットが買い切りで増えます。",
+        "en": "All four are free to download. Oshi Clock and OshiClock unlock more photos or larger widgets with a one-time purchase."
+      }
+    },
+    {
+      "q": {
+        "ja": "推し以外の写真でも作れますか？",
+        "en": "Can I use photos of something other than a fave?"
+      },
+      "a": {
+        "ja": "パタパタ推し時計とOshiClockは、ペットや家族の写真でも使えると説明文に書いてあります。",
+        "en": "Oshi Clock and OshiClock both say in their descriptions that pets and family photos work too."
+      }
+    },
+    {
+      "q": {
+        "ja": "ベッドの横で置き時計にできますか？",
+        "en": "Can I use it as a bedside clock?"
+      },
+      "a": {
+        "ja": "パタパタ推し時計は全画面の時計モードと、夜に暗くする夜間モードがあります。OshiClockもスタンバイで置き時計になります。",
+        "en": "Oshi Clock has a full-screen clock mode and a dim night mode. OshiClock also works as a desk clock in StandBy."
+      }
+    }
+  ],
+  "closing": {
+    "ja": "パタパタ推し時計はまだ評価が0件です。机に置いてくれた人の感想を聞かせてもらえたらうれしいです🙏",
+    "en": "Oshi Clock has no ratings yet. If you put it on your desk, I'd love to hear how it's going 🙏"
+  },
+  "notes": {
+    "ja": "各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。写真は、自分で撮ったものや個人で使ってよいものを使ってください。",
+    "en": "Features and rating counts were checked against each app's App Store description on November 15, 2026, and may change with updates. Use photos you took yourself or that you're allowed to use personally."
+  },
+  "illustration": {
+    "scene": "朝のベッドサイド。充電スタンドに横向きに置いたスマホが、駅の発着板のような時計になっていて、無地のカード（数字なし）がパタッとめくれる瞬間。めくれたカードの裏に写真の形の四角（中身は色面だけ）が見え、キャラが布団から顔を出してうれしそうに見ている。",
+    "alt": {
+      "ja": "ベッドの横でカードがめくれるスマホの時計を、布団から見るキャラクター",
+      "en": "The character peeking out from the covers at a bedside phone clock as one of its flip cards turns over"
+    }
+  }
+}

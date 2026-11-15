@@ -1,0 +1,435 @@
+{
+  "slug": "music-diary-apps",
+  "date_published": "2026-11-15",
+  "date_updated": "2026-11-15",
+  "search_phrase": {
+    "ja": "音楽 日記 アプリ",
+    "en": "music diary app"
+  },
+  "evidence": "2026-11-15 に Google の検索候補で「音楽 記録 アプリ」を引くと、7件中に「聴い た 音楽 記録 アプリ」「音楽 鑑賞 記録 アプリ」「音楽 を 記録 する アプリ」があり、「音楽 日記 アプリ」も候補に出た。同じ日の App Store で「音楽 日記」を検索すると、音綴り 13件、Muse 8件、Liltie 1件など、評価が数件から十数件の音楽日記アプリが並んでいた。",
+  "title": {
+    "ja": "聴いた曲を日記にする音楽日記アプリ4選",
+    "en": "4 Music Diary Apps for Logging the Songs You Listen To"
+  },
+  "description": {
+    "ja": "聴いた曲を日記として残す音楽日記アプリを4本比べました。曲の選び方、気分の残し方、人に見せるかどうかの違いをまとめています。nokkiの作者が書いています。",
+    "en": "I compared four music diary apps for iPhone that save the songs you listen to: how you pick songs, how moods are recorded, and whether anyone else sees them. Written by the maker of nokki."
+  },
+  "excerpt": {
+    "ja": "曲の選び方、気分の残し方、人に見せるかどうかで4本を比べました。nokkiを作った僕が書いています。",
+    "en": "Four apps compared on picking songs, recording moods, and sharing. I made nokki, and it's one of the four."
+  },
+  "category": {
+    "ja": "アプリの選び方",
+    "en": "App guides"
+  },
+  "reading_minutes": 4,
+  "author": {
+    "name": {
+      "ja": "續橋 涼",
+      "en": "Ryo Tsuzukihashi"
+    },
+    "handle": "tsuzuki817",
+    "bio": {
+      "ja": "2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。nokkiの作者です。",
+      "en": "I've been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made nokki."
+    },
+    "url": "https://tsuzukit.com/about/",
+    "same_as": [
+      "https://x.com/tsuzuki817"
+    ]
+  },
+  "tldr": {
+    "ja": "Spotifyなどで聴くことが多いなら共有ボタンから入れられる音綴り、気分を色で眺めたいならMuse、1日1曲と決めたいならLiltieです。仲のいい友達とだけ聴いた曲を見せ合いたい人は、僕が作ったnokkiも見てみてください。",
+    "en": "If you mostly listen on Spotify or other services, Otozuzuri takes songs from the share button. For moods shown as colors, Muse. For strictly one song a day, Liltie. If you want to share what you listened to with a few close friends only, take a look at nokki, which I made."
+  },
+  "disclosure": {
+    "ja": "この記事は、nokkiを作った僕が書いています。ほかの3本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。",
+    "en": "I made nokki, and I wrote this article. The other three apps are by developers I don't know, and I haven't received money or anything else from them. Everything compared here comes from each app's App Store description and rating count as of November 15, 2026."
+  },
+  "own_app": "6790164642",
+  "app_category": "MusicApplication",
+  "apps": [
+    {
+      "id": "6790164642",
+      "name": {
+        "ja": "nokki - 音楽ジャーナル",
+        "en": "nokki - Music Journal"
+      },
+      "short": {
+        "ja": "nokki",
+        "en": "nokki"
+      },
+      "developer": "Ryo Tsudukihashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/51/5b/85/515b8577-143f-0d9c-d8ef-9d6601153064/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6790164642",
+      "android_url": "https://play.google.com/store/apps/details?id=com.tsuzukit.nokki",
+      "rating_count": 2
+    },
+    {
+      "id": "6760426662",
+      "name": {
+        "ja": "音綴り | 音楽日記アプリ",
+        "en": "Otozuzuri - Music Diary"
+      },
+      "short": {
+        "ja": "音綴り",
+        "en": "Otozuzuri"
+      },
+      "developer": "Nanoha Toriguchi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4c/e0/0c/4ce00c09-8e8e-0e4a-37b9-36ceb0e964bd/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6760426662",
+      "android_url": null,
+      "rating_count": 13
+    },
+    {
+      "id": "6746327669",
+      "name": {
+        "ja": "Muse 音楽日記 - 日常を曲で残す音楽記録・日記帳アプリ",
+        "en": "Muse: Music Diary & Mood Log"
+      },
+      "short": {
+        "ja": "Muse",
+        "en": "Muse"
+      },
+      "developer": "Hibiki Tamaki",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e2/6d/84/e26d8438-b68e-d819-59aa-e49bb1340902/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6746327669",
+      "android_url": null,
+      "rating_count": 8
+    },
+    {
+      "id": "6768642302",
+      "name": {
+        "ja": "Liltie — 一日一曲 音楽日記",
+        "en": "Liltie — One Song a Day Diary"
+      },
+      "short": {
+        "ja": "Liltie",
+        "en": "Liltie"
+      },
+      "developer": "Seongsup Lee",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d2/92/1d/d2921d23-83fb-f954-69a0-9a91722cce7d/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6768642302",
+      "android_url": null,
+      "rating_count": 1
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ja": "4本をざっくり比べる",
+        "en": "The four apps at a glance"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "どれも、聴いた曲を日付と一緒に残してカレンダーで見返せます。違うのは、気分の残し方と、だれかに見せるかどうかです。",
+            "en": "All four save the songs you listened to by date and let you look back on a calendar. Where they differ is how you record your mood, and whether anyone else sees it."
+          }
+        },
+        {
+          "type": "table",
+          "head": [
+            {
+              "ja": "アプリ",
+              "en": "App"
+            },
+            {
+              "ja": "評価の件数",
+              "en": "Ratings"
+            },
+            {
+              "ja": "曲の選び方",
+              "en": "Picking a song"
+            },
+            {
+              "ja": "気分の残し方",
+              "en": "Mood"
+            },
+            {
+              "ja": "人に見せるか",
+              "en": "Sharing"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ja": "nokki（僕のアプリ）",
+                "en": "nokki (my app)"
+              },
+              {
+                "ja": "2件",
+                "en": "2"
+              },
+              {
+                "ja": "Apple Musicから検索。最近聴いた曲からも",
+                "en": "Search Apple Music, or pick from recently played"
+              },
+              {
+                "ja": "9種類の気分をタップ",
+                "en": "Tap one of nine moods"
+              },
+              {
+                "ja": "おたがいに承認した友達だけ。じぶんだけも選べる",
+                "en": "Only friends you both approved. Or keep it to yourself"
+              }
+            ],
+            [
+              {
+                "ja": "音綴り",
+                "en": "Otozuzuri"
+              },
+              {
+                "ja": "13件",
+                "en": "13"
+              },
+              {
+                "ja": "Apple MusicやSpotifyの共有ボタンから",
+                "en": "From the share button in Apple Music, Spotify, and others"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "見せない。記録は端末の中だけ",
+                "en": "No. Entries stay on your device"
+              }
+            ],
+            [
+              {
+                "ja": "Muse",
+                "en": "Muse"
+              },
+              {
+                "ja": "8件",
+                "en": "8"
+              },
+              {
+                "ja": "Apple Musicから今日の一曲",
+                "en": "Today's song from Apple Music"
+              },
+              {
+                "ja": "気分をタップすると色になる",
+                "en": "Tap a mood and it becomes a color"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              }
+            ],
+            [
+              {
+                "ja": "Liltie",
+                "en": "Liltie"
+              },
+              {
+                "ja": "1件",
+                "en": "1"
+              },
+              {
+                "ja": "Apple Musicの検索か、最近聴いた曲から",
+                "en": "Apple Music search, or recently played"
+              },
+              {
+                "ja": "5段階のムードの波",
+                "en": "A five-step mood wave"
+              },
+              {
+                "ja": "Instagramのストーリーズに共有",
+                "en": "Share to Instagram Stories"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "1本ずつ見ていく",
+        "en": "Each app, one by one"
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "id": "6790164642"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "きょう聴いた曲とそのときの気分を、30秒で残せる音楽ジャーナルです。曲を選んで、9種類の気分から1つタップして、書きたければひとことを添えます。",
+            "en": "It's a music journal for saving today's song and how you felt, in about 30 seconds. Pick a song, tap one of nine moods, and add a few words if you want."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "記録はカレンダーにたまって、月末にはAIがひと月をふりかえってくれます。つながるのはQRコードで申請して、おたがいに承認した友達だけです。フォロワーも足あともありません。投稿ごとに、友達までか、じぶんだけかを選べます。",
+            "en": "Entries build up on a calendar, and at the end of the month an AI looks back on it with you. You only connect with friends you both approved by QR code. There are no followers and no footprints. You choose friends or just you for each entry."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "無料だと、1日に記録できる数に上限があります。上限をなくす、テーマやヘッダーの着せ替えは、サブスクリプションのnokki+です。Google PlayにAndroid版もあります。",
+            "en": "The free version has a daily limit on entries. Removing the limit and changing themes and headers are part of nokki+, a subscription. There is also an Android version on Google Play."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6760426662"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "Apple MusicやSpotifyなどの共有ボタンから、いま聴いている曲をそのまま日記にセットできます。音楽アプリを選ばないのが強みです。",
+            "en": "You can send the song you're listening to straight into your diary from the share button in Apple Music, Spotify, and other apps. Not being tied to one music service is its strength."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "日記を書くたびにアルバムのジャケットがカレンダーに並び、曲名やキーワードで昔の日記を探せます。記録は端末の中だけに保存されて、広告もアプリ内課金もないと書かれていました。",
+            "en": "Each entry puts the album cover on your calendar, and you can search old entries by song title or keyword. The description says entries stay on your device, with no ads and no in-app purchases."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6746327669"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "Apple Musicから今日の一曲を選んで、気分をタップするだけのムードトラッカーです。3秒で記録できると書かれています。",
+            "en": "It's a mood tracker where you pick today's song from Apple Music and tap a mood. The description says it takes three seconds."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "気分が色になって、カレンダーが色で埋まっていきます。文字の日記が続かない人に向けた作りですね。",
+            "en": "Your moods become colors that fill the calendar. It's made for people who can't keep up a written diary."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6768642302"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "1日に1曲だけ残す音楽ダイアリーです。1日1つと決まっているので、その日の1曲を選ぶことに集中できます。",
+            "en": "It's a music diary for one song a day. Since you only get one, you can focus on choosing that day's song."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "気分は5段階の波で残して、月ごとにムードの流れやよく聴いたジャンルを見られます。iCloudで端末どうしが自動で同期されて、広告もサブスクリプションもありません。",
+            "en": "Your mood is saved as a five-step wave, and each month shows how your moods moved and which genres you played most. It syncs across devices through iCloud, with no ads and no subscription."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "アプリを入れたくないなら",
+        "en": "If you'd rather not install an app"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "ふつうの日記やメモに、曲名を1行書いておくだけでも音楽日記になります。紙でもできます。",
+            "en": "Writing one line with the song title in a regular diary or notes app already makes a music diary. Paper works too."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "ただ、あとから曲を聴き直すのは手間です。記録した曲をその場で試聴できるのは、専用のアプリのいいところですね。",
+            "en": "Playing the song again later takes some effort, though. Being able to preview the song right from your entry is what the dedicated apps do well."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "どれを選ぶか",
+        "en": "Which one to pick"
+      },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "ja": "Spotifyなど、Apple Music以外で聴くことが多いなら、音綴り",
+              "en": "If you mostly listen outside Apple Music, such as on Spotify, Otozuzuri"
+            },
+            {
+              "ja": "気分を色にして、カレンダーで眺めたいなら、Muse",
+              "en": "If you want your moods as colors across a calendar, Muse"
+            },
+            {
+              "ja": "1日1曲と決めて、広告もサブスクもなく続けたいなら、Liltie",
+              "en": "If you want one song a day with no ads or subscription, Liltie"
+            },
+            {
+              "ja": "仲のいい友達とだけ、聴いた曲をゆるく見せ合いたいなら、nokki",
+              "en": "If you want to share what you listened to with a few close friends only, nokki"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "ja": "無料で使えますか？",
+        "en": "Are they free?"
+      },
+      "a": {
+        "ja": "4本とも無料で入れられます。音綴りとLiltieは、課金がないと説明文に書いてあります。nokkiは、記録の上限をなくすところと着せ替えが有料です。",
+        "en": "All four are free to download. Otozuzuri and Liltie say in their descriptions that they have nothing to buy. In nokki, removing the daily limit and changing the look are paid."
+      }
+    },
+    {
+      "q": {
+        "ja": "Apple Musicに入っていなくても使えますか？",
+        "en": "Can I use them without an Apple Music subscription?"
+      },
+      "a": {
+        "ja": "nokkiは、Apple Musicに入っていなくても曲を選んで試聴できます。フル再生はApple Musicに入っている人だけです。Liltieも、つながなくても曲を検索できると書いてあります。",
+        "en": "In nokki, you can pick songs and play previews without Apple Music. Full playback is for subscribers. Liltie also says you can search for songs without linking Apple Music."
+      }
+    },
+    {
+      "q": {
+        "ja": "だれにも見せずに使えますか？",
+        "en": "Can I keep it completely private?"
+      },
+      "a": {
+        "ja": "nokkiは投稿ごとにじぶんだけを選べて、だれにも見せないよるのノートもあります。音綴りは記録が端末の中だけに保存されます。",
+        "en": "In nokki you can mark any entry as just for you, and there's a night notebook nobody else sees. Otozuzuri keeps everything on your device."
+      }
+    }
+  ],
+  "closing": {
+    "ja": "nokkiの評価はまだ2件なので、きょうの1曲を残してみた人の声を待ってます🐈‍⬛",
+    "en": "nokki only has two ratings so far, so I'd love to hear from anyone who saves today's song with it 🐈‍⬛"
+  },
+  "notes": {
+    "ja": "各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。",
+    "en": "Features and rating counts were checked against each app's App Store description on November 15, 2026, and may change with updates."
+  },
+  "illustration": {
+    "scene": "夜の部屋のベッドの上。キャラがヘッドホンをつけて、ひざの上のカレンダー帳を開いている。帳面のマスの1つに、小さなレコードのシールをぺたっと貼っているところで、まわりのマスにも色ちがいのレコードのシール（ラベルは無地）が並んでいる。",
+    "alt": {
+      "ja": "ヘッドホンをつけて、カレンダー帳にレコードのシールを貼るキャラクター",
+      "en": "The character wearing headphones, sticking a little record sticker onto a calendar notebook"
+    }
+  }
+}

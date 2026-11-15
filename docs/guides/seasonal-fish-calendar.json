@@ -1,0 +1,435 @@
+{
+  "slug": "seasonal-fish-calendar",
+  "date_published": "2026-11-15",
+  "date_updated": "2026-11-15",
+  "search_phrase": {
+    "ja": "魚 旬 カレンダー",
+    "en": "seasonal fish calendar"
+  },
+  "evidence": "2026-11-15 に Google の検索候補で「魚 旬」を引くと、12件中2件が「カレンダー」付きで、ほかは「今」「9月」「秋」のように時期を足した形だった。「魚 旬 カレンダー」は7件中5件が北海道、新潟、富山、福井、秋田のような地域名付き。同じ日に App Store で「魚 旬」を検索すると、上位は産直の通販アプリで、旬を調べるアプリはどれも評価2件以下だった。",
+  "title": {
+    "ja": "魚の旬がひと目で分かるカレンダーアプリ4選",
+    "en": "4 Apps That Show When Each Fish Is in Season"
+  },
+  "description": {
+    "ja": "魚の旬を月ごとに見られるアプリを4本比べました。載っている数、魚以外の食材、ほかにできることの違いをまとめています。旬のお魚カレンダーの作者が書いています。",
+    "en": "I compared four iPhone apps that show which fish are in season each month: how many they cover, whether they include other foods, and what else they do. Written by the maker of Seasonal Fish Calendar."
+  },
+  "excerpt": {
+    "ja": "載っている魚の数、魚以外の食材、ほかにできることで4本を比べました。旬のお魚カレンダーを作った僕が書いています。",
+    "en": "Four apps compared on how many fish they cover, other foods, and extras. I made Seasonal Fish Calendar, and it's one of the four."
+  },
+  "category": {
+    "ja": "アプリの選び方",
+    "en": "App guides"
+  },
+  "reading_minutes": 4,
+  "author": {
+    "name": {
+      "ja": "續橋 涼",
+      "en": "Ryo Tsuzukihashi"
+    },
+    "handle": "tsuzuki817",
+    "bio": {
+      "ja": "2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。旬のお魚カレンダーの作者です。",
+      "en": "I've been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made Seasonal Fish Calendar."
+    },
+    "url": "https://tsuzukit.com/about/",
+    "same_as": [
+      "https://x.com/tsuzuki817"
+    ]
+  },
+  "tldr": {
+    "ja": "お寿司屋さんで頼むネタを選びたいなら、寿司ネタ図鑑がいちばん詳しいです。野菜や果物の旬も一緒に見たいなら旬ナビか旬で選ぶ買い物メモ。魚介だけを12か月の表で見比べて、ホーム画面のウィジェットで今月の魚を見たい人は、僕が作った旬のお魚カレンダーを見てみてください。",
+    "en": "If you want help choosing what to order at a sushi counter, Sushi Topping Guide is the most detailed. If you want vegetables and fruit too, try Shun Navi or Seasonal Shopping Memo. If you want to compare just seafood on a 12-month chart and see this month's fish in a Home Screen widget, take a look at Seasonal Fish Calendar, which I made."
+  },
+  "disclosure": {
+    "ja": "この記事は、旬のお魚カレンダーを作った僕が書いています。ほかの3本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。",
+    "en": "I made Seasonal Fish Calendar, and I wrote this article. The other three apps are by developers I don't know, and I haven't received money or anything else from them. Everything compared here comes from each app's App Store description and rating count as of November 15, 2026."
+  },
+  "own_app": "6746123337",
+  "app_category": "FoodApplication",
+  "apps": [
+    {
+      "id": "6746123337",
+      "name": {
+        "ja": "旬のお魚カレンダー",
+        "en": "Seasonal Fish Calendar"
+      },
+      "short": {
+        "ja": "旬のお魚カレンダー",
+        "en": "Seasonal Fish Calendar"
+      },
+      "developer": "Ryo Tsudukihashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/be/ba/0b/beba0bb9-05d2-40e8-df25-b3c80ee14ef0/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6746123337",
+      "android_url": null,
+      "rating_count": 2
+    },
+    {
+      "id": "6802100686",
+      "name": {
+        "ja": "寿司ネタ図鑑 旬と食べ方",
+        "en": "Sushi Topping Guide: Seasons and How to Eat Them"
+      },
+      "short": {
+        "ja": "寿司ネタ図鑑",
+        "en": "Sushi Topping Guide"
+      },
+      "developer": "KAZUHIRO ISHIBASHI",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/84/52/ed/8452edb9-95f4-30a5-d5ff-752bddb8ae88/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6802100686",
+      "android_url": null,
+      "rating_count": 0
+    },
+    {
+      "id": "6748877784",
+      "name": {
+        "ja": "旬ナビ",
+        "en": "Shun Navi"
+      },
+      "short": {
+        "ja": "旬ナビ",
+        "en": "Shun Navi"
+      },
+      "developer": "Sokichi Tobita",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/1a/f6/37/1af63773-21e5-41ab-0382-3e29010ddb81/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6748877784",
+      "android_url": null,
+      "rating_count": 1
+    },
+    {
+      "id": "6757065543",
+      "name": {
+        "ja": "旬で選ぶ買い物メモ - 美味しい食材、旬の食材がすぐにわかる",
+        "en": "Seasonal Shopping Memo - Find Foods at Their Best"
+      },
+      "short": {
+        "ja": "旬で選ぶ買い物メモ",
+        "en": "Seasonal Shopping Memo"
+      },
+      "developer": "Kenta Tanaka",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/04/e0/64/04e0643e-3eaa-96d7-368b-80587a6f1b97/Icon_kago_A-0-0-1x_U007ephone-0-1-sRGB-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6757065543",
+      "android_url": null,
+      "rating_count": 2
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ja": "4本をざっくり比べる",
+        "en": "The four apps at a glance"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "どれも今が旬のものを一覧で出してくれます。違いが出るのは、魚だけを詳しく見るのか、野菜や果物まで広く見るのかです。",
+            "en": "All four list what's in season right now. The difference is whether they go deep on fish only, or cover vegetables and fruit as well."
+          }
+        },
+        {
+          "type": "table",
+          "head": [
+            {
+              "ja": "アプリ",
+              "en": "App"
+            },
+            {
+              "ja": "評価の件数",
+              "en": "Ratings"
+            },
+            {
+              "ja": "載っている数",
+              "en": "Coverage"
+            },
+            {
+              "ja": "魚以外の食材",
+              "en": "Other foods"
+            },
+            {
+              "ja": "ほかにできること",
+              "en": "Also"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ja": "旬のお魚カレンダー（僕のアプリ）",
+                "en": "Seasonal Fish Calendar (my app)"
+              },
+              {
+                "ja": "2件",
+                "en": "2"
+              },
+              {
+                "ja": "魚介54種",
+                "en": "54 kinds of seafood"
+              },
+              {
+                "ja": "なし",
+                "en": "No"
+              },
+              {
+                "ja": "主な産地、ホーム画面のウィジェット",
+                "en": "Main fishing areas, Home Screen widget"
+              }
+            ],
+            [
+              {
+                "ja": "寿司ネタ図鑑",
+                "en": "Sushi Topping Guide"
+              },
+              {
+                "ja": "0件",
+                "en": "0"
+              },
+              {
+                "ja": "寿司ネタ88種、魚図鑑69種",
+                "en": "88 sushi toppings, 69 fish"
+              },
+              {
+                "ja": "寿司ネタだけ",
+                "en": "Sushi toppings only"
+              },
+              {
+                "ja": "食べ方、脂の多さ、寿司の読みもの",
+                "en": "How to eat them, fat level, reading on sushi"
+              }
+            ],
+            [
+              {
+                "ja": "旬ナビ",
+                "en": "Shun Navi"
+              },
+              {
+                "ja": "1件",
+                "en": "1"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "野菜、果物も",
+                "en": "Vegetables and fruit too"
+              },
+              {
+                "ja": "名前で検索",
+                "en": "Search by name"
+              }
+            ],
+            [
+              {
+                "ja": "旬で選ぶ買い物メモ",
+                "en": "Seasonal Shopping Memo"
+              },
+              {
+                "ja": "2件",
+                "en": "2"
+              },
+              {
+                "ja": "食材170種以上",
+                "en": "170+ foods"
+              },
+              {
+                "ja": "野菜、果物、肉、調味料も",
+                "en": "Vegetables, fruit, meat, and seasonings too"
+              },
+              {
+                "ja": "選び方のコツ、買い物リスト",
+                "en": "Tips for picking good ones, shopping list"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "1本ずつ見ていく",
+        "en": "Each app, one by one"
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "id": "6746123337"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "マグロやアジのような魚から、イカ、エビ、貝、ウニ、イクラまで、魚介を54種のせています。魚の名前を縦に、1月から12月を横に並べた表で、旬の月がひと目で分かります。",
+            "en": "It covers 54 kinds of seafood, from fish like tuna and horse mackerel to squid, shrimp, shellfish, sea urchin, and salmon roe. A chart lists the fish down the side and January to December across the top, so you can see each one's season at a glance."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "今の旬の魚だけを並べた画面もあります。魚を押すと、旬の時期と主な産地と豆知識が出ます。ホーム画面のウィジェットに、今月の旬の魚を出しておけます。",
+            "en": "There's also a screen that shows only the fish in season right now. Tap a fish to see its season, main fishing areas, and a bit of trivia. A Home Screen widget can show this month's fish."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "有料の機能はなくて、全部無料で使えます。そのかわり広告が出ます。野菜や果物はのっていません。",
+            "en": "There are no paid features, so everything is free. There are ads instead. It doesn't include vegetables or fruit."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6802100686"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "お寿司屋さんで品書きを見ながら使うために作られたアプリです。開くと今月が旬のネタが上に並び、ネタごとに12か月の旬、脂の多さ、江戸前の仕事、食べ方、産地が出ます。",
+            "en": "This app is made for reading the menu at a sushi restaurant. When you open it, this month's in-season toppings are at the top, and each one shows its 12-month season, fat level, traditional Edo-style preparation, how to eat it, and where it comes from."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "寿司ネタは88種で、魚図鑑が69種、寿司の読みものや用語集、クイズまで入っています。旬は今が旬ともうすぐ旬の2段階で出していて、産地で1か月か2か月ずれると説明文に書かれています。",
+            "en": "It has 88 sushi toppings, a 69-fish guide, reading material on sushi, a glossary, and even a quiz. Seasons are shown in two steps, in season now and coming soon, and the description notes that they can shift by a month or two depending on where the fish is caught."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6748877784"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "野菜、果物、魚介類、その他に分けて、今が旬の食材を一覧にしてくれます。食材を押すと、旬の時期と12か月のカレンダーが出ます。",
+            "en": "It lists foods in season right now, split into vegetables, fruit, seafood, and other. Tap a food to see its season and a 12-month calendar."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "ひらがな、カタカナ、漢字のどれでも名前で探せます。載っている数と料金は、説明文に書かれていませんでした。",
+            "en": "You can search by name in hiragana, katakana, or kanji. The description doesn't say how many foods it covers or anything about pricing."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6757065543"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "スーパーで使う買い物リストに、旬のカレンダーと食材の選び方を足したアプリです。元スーパーの店員さんが、鮮度の見分け方のコツを書いていると説明されています。",
+            "en": "It's a grocery shopping list with a seasonal calendar and tips for picking good produce built in. The description says a former supermarket employee wrote the tips for judging freshness."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "野菜、魚、果物から肉や調味料まで、170種以上の食材がのっています。今が旬の食材をワンタップでリストに足せます。保存のコツと食べ方は、プレミアムの機能です。",
+            "en": "It covers more than 170 foods, from vegetables, fish, and fruit to meat and seasonings. You can add an in-season food to your list with one tap. Storage tips and serving ideas are Premium features."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "アプリを入れたくないなら",
+        "en": "If you'd rather not install an app"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "魚屋さんやスーパーの魚売り場で、今日のおすすめを聞くのがいちばん早いです。旬の時期は産地でずれるので、その日のいいものはお店の人が知っています。",
+            "en": "The quickest way is to ask at a fish shop or the fish counter what's good today. Seasons shift depending on where the fish come from, and the people at the counter know what's best that day."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "アプリは、買いに行く前に今月なにが旬かをつかんでおくのに向いてますね。",
+            "en": "The apps are useful for getting a sense of what's in season this month before you go shopping."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "どれを選ぶか",
+        "en": "Which one to pick"
+      },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "ja": "お寿司屋さんで頼むネタを選びたいなら、寿司ネタ図鑑",
+              "en": "If you want help choosing what to order at a sushi restaurant, Sushi Topping Guide"
+            },
+            {
+              "ja": "野菜や果物の旬も一緒に調べたいなら、旬ナビ",
+              "en": "If you want to look up the seasons for vegetables and fruit too, Shun Navi"
+            },
+            {
+              "ja": "スーパーで買うものを選ぶのに使いたいなら、旬で選ぶ買い物メモ",
+              "en": "If you want to use it for choosing what to buy at the supermarket, Seasonal Shopping Memo"
+            },
+            {
+              "ja": "魚介だけを12か月の表で見比べて、ウィジェットで今月の魚を見たいなら、旬のお魚カレンダー",
+              "en": "If you want to compare seafood on a 12-month chart and see this month's fish in a widget, Seasonal Fish Calendar"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "ja": "無料で使えますか？",
+        "en": "Are they free?"
+      },
+      "a": {
+        "ja": "4本とも無料で入れられます。旬のお魚カレンダーは有料の機能がなく、広告が出ます。旬で選ぶ買い物メモは、保存のコツなどがプレミアムです。",
+        "en": "All four are free to download. Seasonal Fish Calendar has no paid features and shows ads. Seasonal Shopping Memo puts storage tips and similar content behind Premium."
+      }
+    },
+    {
+      "q": {
+        "ja": "住んでいる地域の旬が分かりますか？",
+        "en": "Do they show the season for my region?"
+      },
+      "a": {
+        "ja": "4本とも、説明文では全国の目安としての旬です。旬のお魚カレンダーは主な産地を出しますが、地域ごとのカレンダーはありません。",
+        "en": "Going by their descriptions, all four show general seasons for Japan as a whole. Seasonal Fish Calendar lists the main fishing areas, but it doesn't have a calendar for each region."
+      }
+    },
+    {
+      "q": {
+        "ja": "野菜や果物の旬も見られますか？",
+        "en": "Can I see when vegetables and fruit are in season?"
+      },
+      "a": {
+        "ja": "旬ナビと旬で選ぶ買い物メモが、野菜と果物ものせています。旬のお魚カレンダーと寿司ネタ図鑑は魚介だけです。",
+        "en": "Shun Navi and Seasonal Shopping Memo include vegetables and fruit. Seasonal Fish Calendar and Sushi Topping Guide are seafood only."
+      }
+    }
+  ],
+  "closing": {
+    "ja": "旬のお魚カレンダーの評価はまだ2件なので、のせてほしい魚があったら教えてください🐟",
+    "en": "Seasonal Fish Calendar only has two ratings so far, so if there's a fish you'd like me to add, let me know 🐟"
+  },
+  "notes": {
+    "ja": "各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。旬のお魚カレンダーの中身は、アプリのコードで確かめました。旬の時期は目安で、産地や年によって変わります。",
+    "en": "Features and rating counts were checked against each app's App Store description on November 15, 2026. What's in Seasonal Fish Calendar was checked in the app's code. Seasons are a rough guide and vary by area and year."
+  },
+  "illustration": {
+    "scene": "魚屋の店先。キャラが片手にスマホ（画面には小さな魚の絵が並んでいるだけで文字なし）を持ち、氷の上に並んだ魚と見比べている。並んだ魚のうち1匹の上に小さな星がきらっと光っている。",
+    "alt": {
+      "ja": "魚屋の店先で、スマホと氷の上の魚を見比べるキャラクター",
+      "en": "The character at a fish shop, comparing a phone with the fish laid out on ice"
+    }
+  }
+}

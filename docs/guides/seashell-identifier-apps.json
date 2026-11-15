@@ -1,0 +1,386 @@
+{
+  "slug": "seashell-identifier-apps",
+  "date_published": "2026-11-15",
+  "date_updated": "2026-11-15",
+  "search_phrase": {
+    "ja": "貝殻 名前 調べる アプリ",
+    "en": "seashell identifier app"
+  },
+  "evidence": "2026-11-15 に Google の検索候補で「貝殻 アプリ」を引くと、7件中6件が「調べる」「判別」「検索」「図鑑」付きだった。「貝 名前 調べる」は4件とも「貝の名前を調べる」で、そのうち2件が「アプリ」付き。「貝殻 名前」の10件にも「貝殻 名前 調べる」が入っていた。同じ日の App Store で「貝殻」を引くと貝殻を調べるアプリが9本並び、評価がいちばん多いのは39件で、ほかは0〜1件だった。",
+  "title": {
+    "ja": "浜で拾った貝殻の名前を調べるアプリ3選",
+    "en": "3 Apps That Tell You the Name of a Seashell You Found on the Beach"
+  },
+  "description": {
+    "ja": "浜で拾った貝殻の名前を、写真から調べるアプリを3本比べました。学名や分布まで出るか、集めた貝殻の整理のしかた、無料で使える範囲の違いをまとめています。ShellLensの作者が書いています。",
+    "en": "I compared three iPhone apps that identify a seashell from a photo: whether they show the scientific name and range, how they organize your collection, and what you can do for free. Written by the maker of ShellLens."
+  },
+  "excerpt": {
+    "ja": "学名や分布、集めた貝殻の整理、無料で使える範囲で3本を比べました。ShellLensを作った僕が、自分のアプリも入れて書いています。",
+    "en": "Three apps compared on scientific names, ranges, organizing your finds, and what is free. I made ShellLens, and it is one of the three."
+  },
+  "category": {
+    "ja": "アプリの選び方",
+    "en": "App guides"
+  },
+  "reading_minutes": 4,
+  "author": {
+    "name": {
+      "ja": "續橋 涼",
+      "en": "Ryo Tsuzukihashi"
+    },
+    "handle": "tsuzuki817",
+    "bio": {
+      "ja": "2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。ShellLensの作者です。",
+      "en": "I've been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made ShellLens."
+    },
+    "url": "https://tsuzukit.com/about/",
+    "same_as": [
+      "https://x.com/tsuzuki817"
+    ]
+  },
+  "tldr": {
+    "ja": "浜で拾った貝殻は、写真を撮るとAIが名前の候補を出してくれるアプリで調べられます。評価がいちばん多いのは39件の貝殻識別・図鑑アプリで、似た種類との違いや、海岸ごとのフォルダ分けまでできます。名前と学名と生息地をまず知りたい人は、僕が作ったShellLensも見てみてください。",
+    "en": "You can look up a shell you picked up with an app that suggests names from a photo. The most rated one is Sea Shell Identifier, with 39 ratings, and it also shows how a shell differs from similar ones and lets you sort finds into folders by beach. If you mainly want the name, scientific name, and habitat, take a look at ShellLens, which I made."
+  },
+  "disclosure": {
+    "ja": "この記事は、ShellLensを作った僕が書いています。ほかの2本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。",
+    "en": "I made ShellLens, and I wrote this article. The other two apps are by developers I don't know, and I haven't received money or anything else from them. Everything compared here comes from each app's App Store description and rating count as of November 15, 2026."
+  },
+  "own_app": "6757253733",
+  "app_category": "ReferenceApplication",
+  "apps": [
+    {
+      "id": "6757253733",
+      "name": {
+        "ja": "ShellLens - 貝殻AI図鑑",
+        "en": "ShellLens - Seashell AI Guide"
+      },
+      "short": {
+        "ja": "ShellLens",
+        "en": "ShellLens"
+      },
+      "developer": "Ryo Tsudukihashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/1a/7d/89/1a7d8993-8e43-5d54-f863-c62e881cc826/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6757253733",
+      "android_url": null,
+      "rating_count": 0
+    },
+    {
+      "id": "6748404464",
+      "name": {
+        "ja": "貝殻識別・図鑑アプリ ShellLens",
+        "en": "Sea Shell Identifier - AI ID"
+      },
+      "short": {
+        "ja": "貝殻識別・図鑑アプリ",
+        "en": "Sea Shell Identifier"
+      },
+      "developer": "Bohdan Hordiienko",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4a/8e/ca/4a8ecac1-d16c-0df6-3882-d7617e05e0ed/ShellIDIcon-0-0-1x_U007epad-0-1-sRGB-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6748404464",
+      "android_url": null,
+      "rating_count": 39
+    },
+    {
+      "id": "6758817409",
+      "name": {
+        "ja": "貝殻識別：種類がわかるAI図鑑",
+        "en": "Shell Identifier: Rarity Value"
+      },
+      "short": {
+        "ja": "貝殻識別：種類がわかるAI図鑑",
+        "en": "Shell Identifier: Rarity Value"
+      },
+      "developer": "BASAK GEDIK",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d0/8e/28/d08e2847-632c-78d7-a77e-e613323ebb6e/AppIcon-0-0-1x_U007ephone-0-11-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6758817409",
+      "android_url": null,
+      "rating_count": 1
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ja": "3本をざっくり比べる",
+        "en": "The three apps at a glance"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "どれも写真から名前を調べるところは同じです。違いが出るのは、名前のあとにどこまで教えてくれるかと、集めた貝殻の残し方です。",
+            "en": "All three identify a shell from a photo. Where they differ is how much they tell you after the name, and how you keep track of what you collected."
+          }
+        },
+        {
+          "type": "table",
+          "head": [
+            {
+              "ja": "アプリ",
+              "en": "App"
+            },
+            {
+              "ja": "評価の件数",
+              "en": "Ratings"
+            },
+            {
+              "ja": "無料で調べられる回数",
+              "en": "Free identifications"
+            },
+            {
+              "ja": "学名",
+              "en": "Scientific name"
+            },
+            {
+              "ja": "似た貝との違い",
+              "en": "Similar shells"
+            },
+            {
+              "ja": "集めた貝殻の整理",
+              "en": "Organizing finds"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ja": "ShellLens（僕のアプリ）",
+                "en": "ShellLens (my app)"
+              },
+              {
+                "ja": "0件",
+                "en": "0"
+              },
+              {
+                "ja": "2回まで",
+                "en": "Up to 2"
+              },
+              {
+                "ja": "あり",
+                "en": "Yes"
+              },
+              {
+                "ja": "ほかの候補も表示",
+                "en": "Shows other candidates"
+              },
+              {
+                "ja": "コレクションに保存",
+                "en": "Saved to a collection"
+              }
+            ],
+            [
+              {
+                "ja": "貝殻識別・図鑑アプリ",
+                "en": "Sea Shell Identifier"
+              },
+              {
+                "ja": "39件",
+                "en": "39"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "あり",
+                "en": "Yes"
+              },
+              {
+                "ja": "あり",
+                "en": "Yes"
+              },
+              {
+                "ja": "海岸や旅行ごとのフォルダ",
+                "en": "Folders by beach or trip"
+              }
+            ],
+            [
+              {
+                "ja": "貝殻識別：種類がわかるAI図鑑",
+                "en": "Shell Identifier: Rarity Value"
+              },
+              {
+                "ja": "1件",
+                "en": "1"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "場所と日付つきで保存",
+                "en": "Saved with place and date"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "1本ずつ見ていく",
+        "en": "Each app, one by one"
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "id": "6757253733"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "貝殻を撮るか、写真ライブラリから選ぶと、AIが名前の候補を出します。和名と英名、学名、分類、大きさ、生息地、特徴までは無料で見られます。",
+            "en": "Take a photo of a shell or pick one from your library, and the AI suggests what it is. The Japanese and English names, scientific name, classification, size, habitat, and features are all free to see."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "いちばん近い候補のほかに、似ている候補も並びます。違うと思ったら名前を自分で直せます。調べた貝殻はコレクションにたまっていきます。",
+            "en": "Besides the closest match, it lists other likely candidates. If you think the answer is wrong, you can correct the name yourself. Every shell you look up goes into your collection."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "無料で調べられるのは2回までです。何回でも調べたいときや、食性などの生態、レア度や価値の目安を見たいときはプレミアムです。調べるときはネットにつながっている必要があります。",
+            "en": "You can identify two shells for free. Unlimited identifications, plus ecology details like diet and an estimate of rarity and value, come with Premium. You need an internet connection to identify a shell."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6748404464"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "アプリ名にShellLensと入っていますが、僕のアプリとは別の開発者さんのアプリです。評価は39件で、この中ではいちばん多いです。",
+            "en": "Its Japanese name also includes the word ShellLens, but it's a different developer's app, not mine. With 39 ratings, it has the most of the three."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "名前と学名のほかに、よく似た種類との違いも学べます。情報がある貝ならWikipediaの記事や、海の生き物のデータベースの分類や分布も出ます。",
+            "en": "Along with the name and scientific name, it explains how a shell differs from similar species. When the data exists, it also shows the Wikipedia article and the classification and recorded range from a marine species database."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "結果が違うと思ったら、考えている名前を入れるとAIが同じ写真を見直します。集めた貝殻は海岸や旅行ごとのフォルダに分けて、メモも付けられます。週額か年額のサブスクリプションがあります。",
+            "en": "If you think a result is off, type the name you have in mind and the AI takes another look at the same photo. You can sort your shells into folders by beach or trip and add notes. It offers weekly and yearly subscriptions."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6758817409"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "名前のほかに、その貝殻がどれくらい珍しいかと、価格の目安を出すのが特徴です。説明文では、オンラインの相場をもとにしていると書かれています。",
+            "en": "Besides the name, it shows how rare a shell is and an estimated price. The description says the price is based on online market data."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "見つけた貝殻は写真と一緒に、場所と日付を付けて保存できます。どこまで無料なのかは、説明文には書かれていませんでした。",
+            "en": "You can save each find with its photo, place, and date. The description doesn't say what is free and what isn't."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "どれを選ぶか",
+        "en": "Which one to pick"
+      },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "ja": "似た種類との違いを知りたい、海岸ごとに整理したいなら、貝殻識別・図鑑アプリ",
+              "en": "If you want to learn how a shell differs from look-alikes, or sort finds by beach, Sea Shell Identifier"
+            },
+            {
+              "ja": "拾った貝殻がどれくらい珍しいかが気になるなら、貝殻識別：種類がわかるAI図鑑",
+              "en": "If you mostly wonder how rare your shell is, Shell Identifier: Rarity Value"
+            },
+            {
+              "ja": "まず名前と学名と生息地を無料で見てみたいなら、ShellLens",
+              "en": "If you first want to see the name, scientific name, and habitat for free, ShellLens"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "ja": "無料で使えますか？",
+        "en": "Are they free?"
+      },
+      "a": {
+        "ja": "3本とも無料で入れられます。ShellLensは無料で2回まで調べられて、そのあとはプレミアムです。ほかの2本の無料の範囲は、説明文には書かれていませんでした。",
+        "en": "All three are free to download. ShellLens lets you identify two shells for free, and after that it's Premium. The other two don't say in their descriptions how much is free."
+      }
+    },
+    {
+      "q": {
+        "ja": "AIの答えは合っていますか？",
+        "en": "Can I trust the AI answer?"
+      },
+      "a": {
+        "ja": "どのアプリも出しているのは候補です。貝殻識別・図鑑アプリの説明文にも、誤る場合があると書かれています。気になる貝は、いくつかの候補を見比べてみてください。",
+        "en": "Every one of these apps gives you candidates, not a final answer. Sea Shell Identifier's own description says results can be wrong. For a shell you really care about, compare a few of the candidates."
+      }
+    },
+    {
+      "q": {
+        "ja": "貝殻の値段はわかりますか？",
+        "en": "Can they tell me what a shell is worth?"
+      },
+      "a": {
+        "ja": "ShellLensのプレミアムと、貝殻識別：種類がわかるAI図鑑で、価値の目安が出ます。売り買いを決めるときは、専門のお店や詳しい人に聞いてください。",
+        "en": "ShellLens Premium and Shell Identifier: Rarity Value both show an estimate. If you're actually buying or selling, ask a specialist shop or someone who knows shells."
+      }
+    },
+    {
+      "q": {
+        "ja": "海辺で電波が弱くても使えますか？",
+        "en": "Do they work on a beach with a weak signal?"
+      },
+      "a": {
+        "ja": "ShellLensは調べるときにネットが要ります。貝殻識別・図鑑アプリも、新しく調べるにはネットが要って、保存した結果はオフラインでも見られると書かれています。",
+        "en": "ShellLens needs the internet to identify a shell. Sea Shell Identifier also needs a connection for new identifications, but says saved results can be viewed offline."
+      }
+    }
+  ],
+  "closing": {
+    "ja": "ShellLensはまだ評価が0件なので、拾った貝殻で試してくれた人の声を聞いてみたいです🐚",
+    "en": "ShellLens doesn't have a single rating yet, so I'd love to hear from anyone who tries it on a shell they found 🐚"
+  },
+  "notes": {
+    "ja": "各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。",
+    "en": "Features and rating counts were checked against each app's App Store description on November 15, 2026, and may change with updates."
+  },
+  "illustration": {
+    "scene": "夕方の家のテーブル。キャラが浜から持ち帰った小さな瓶から貝殻を出して並べていて、手元のスマホの画面（文字なし）と巻貝を見比べている。名前がわかった貝殻の横には、小さな紫の旗が立っている。窓の外に夕焼けの海。",
+    "alt": {
+      "ja": "持ち帰った貝殻をテーブルに並べて、スマホと見比べるキャラクター",
+      "en": "The character lining up seashells brought home from the beach, comparing one with a phone"
+    }
+  }
+}

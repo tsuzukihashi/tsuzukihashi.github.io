@@ -1,0 +1,455 @@
+{
+  "slug": "simple-medicine-reminder-apps",
+  "date_published": "2026-11-15",
+  "date_updated": "2026-11-15",
+  "search_phrase": {
+    "ja": "薬 飲み忘れ アプリ シンプル",
+    "en": "simple app to stop forgetting medicine"
+  },
+  "evidence": "2026-11-15 に Google の検索候補で「薬 飲み忘れ アプリ」を引くと11件出て、かわいい、シンプル、無料、共有、おすすめ、iphone が付いていた。「服薬管理 アプリ」も10件で、シンプル、家族、高齢者が付いていた。同じ日の App Store で「薬 飲み忘れ」を引くと、上位は評価6,311件のお薬記録＆アラームや評価1,217件のしつこいお薬アラームで、お薬手帳や薬局のアプリも混ざっていた。",
+  "title": {
+    "ja": "薬の飲み忘れを防ぐ、シンプルなアプリ4選",
+    "en": "4 Simple Apps to Stop Forgetting Your Medicine"
+  },
+  "description": {
+    "ja": "毎日の薬の飲み忘れを防ぐ、操作がシンプルなアプリを4本比べました。通知の決め方、飲んだ記録、残りの数、無料でできることの違いをまとめています。お薬リマインダーの作者が書いています。",
+    "en": "I compared four simple iPhone apps that help you remember your daily medicine: how reminders are set, logging doses, pills left, and what's free. Written by the maker of Medicine Reminder."
+  },
+  "excerpt": {
+    "ja": "通知、飲んだ記録、残りの数で、シンプルな薬のアプリを4本比べました。お薬リマインダーを作った僕が、自分のアプリも入れて書いています。",
+    "en": "Four simple medicine apps compared on reminders, dose logging, and pills left. I made Medicine Reminder, and it's one of the four."
+  },
+  "category": {
+    "ja": "アプリの選び方",
+    "en": "App guides"
+  },
+  "reading_minutes": 4,
+  "author": {
+    "name": {
+      "ja": "續橋 涼",
+      "en": "Ryo Tsuzukihashi"
+    },
+    "handle": "tsuzuki817",
+    "bio": {
+      "ja": "2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。お薬リマインダーの作者です。",
+      "en": "I've been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made Medicine Reminder."
+    },
+    "url": "https://tsuzukit.com/about/",
+    "same_as": [
+      "https://x.com/tsuzuki817"
+    ]
+  },
+  "tldr": {
+    "ja": "いちばん使われているのは評価6,311件のお薬記録＆アラームで、家族の分もまとめられます。飲むまで何度も鳴らしてほしいならしつこいお薬アラーム。朝食後や就寝前のような飲むタイミングで知らせて、残りが減ったら教えてほしいなら、僕が作ったお薬リマインダーも見てみてください。",
+    "en": "The most used is Cute Pill Reminder with 6,311 ratings, and it handles your family's medicine too. If you want it to keep going off until you take your dose, try Insistent Medical Alarm. If you'd like reminders by timing, like after breakfast or before bed, plus a heads-up when you're running low, take a look at Medicine Reminder, which I made."
+  },
+  "disclosure": {
+    "ja": "この記事は、お薬リマインダーを作った僕が書いています。ほかの3本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。",
+    "en": "I made Medicine Reminder, and I wrote this article. The other three apps are by developers I don't know, and I haven't received money or anything else from them. Everything compared here comes from each app's App Store description and rating count as of November 15, 2026."
+  },
+  "own_app": "6756915544",
+  "app_category": "HealthApplication",
+  "apps": [
+    {
+      "id": "6756915544",
+      "name": {
+        "ja": "お薬リマインダー 服用管理",
+        "en": "Medicine Reminder & Tracker"
+      },
+      "short": {
+        "ja": "お薬リマインダー",
+        "en": "Medicine Reminder"
+      },
+      "developer": "Ryo Tsudukihashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/16/b0/fb/16b0fb1c-4843-b5eb-e4f9-b3de1431efe3/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6756915544",
+      "android_url": null,
+      "rating_count": 3
+    },
+    {
+      "id": "1552171774",
+      "name": {
+        "ja": "お薬記録＆アラーム：くすりの飲み忘れ防止と服薬管理",
+        "en": "Cute Pill Reminder"
+      },
+      "short": {
+        "ja": "お薬記録＆アラーム",
+        "en": "Cute Pill Reminder"
+      },
+      "developer": "Futasaji LLC",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/5f/33/d8/5f33d827-3057-1d3d-7b36-a1163d12ff49/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id1552171774",
+      "android_url": null,
+      "rating_count": 6311
+    },
+    {
+      "id": "1326572969",
+      "name": {
+        "ja": "しつこいお薬アラーム - 飲み忘れ防止のお薬リマインダー",
+        "en": "Insistent Medical Alarm"
+      },
+      "short": {
+        "ja": "しつこいお薬アラーム",
+        "en": "Insistent Medical Alarm"
+      },
+      "developer": "flickfrog",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/0e/73/de/0e73de39-4ca2-6823-208f-2d9e7707d7a4/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id1326572969",
+      "android_url": null,
+      "rating_count": 1217
+    },
+    {
+      "id": "6761060764",
+      "name": {
+        "ja": "シンプルお薬リマインダー",
+        "en": "Simple Medicine Reminder"
+      },
+      "short": {
+        "ja": "シンプルお薬リマインダー",
+        "en": "Simple Medicine Reminder"
+      },
+      "developer": "wataru doi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/5c/30/e3/5c30e30e-3cf2-91dd-a778-463dbf51f90f/AppIcon-1x_U007emarketing-0-11-0-85-220-0.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6761060764",
+      "android_url": null,
+      "rating_count": 1
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ja": "4本をざっくり比べる",
+        "en": "The four apps at a glance"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "どれも、時間に知らせて、飲んだら記録する、の2つが中心です。違いが出るのは、通知のしつこさと、残りの数や家族の分まで見るかです。",
+            "en": "All four center on two things, reminding you on time and logging when you've taken it. Where they differ is how persistent the reminders are, and whether they also track pills left or family members."
+          }
+        },
+        {
+          "type": "table",
+          "head": [
+            {
+              "ja": "アプリ",
+              "en": "App"
+            },
+            {
+              "ja": "評価の件数",
+              "en": "Ratings"
+            },
+            {
+              "ja": "通知の決め方",
+              "en": "How reminders are set"
+            },
+            {
+              "ja": "飲んだ記録",
+              "en": "Dose log"
+            },
+            {
+              "ja": "残りの数",
+              "en": "Pills left"
+            },
+            {
+              "ja": "無料でできること",
+              "en": "Free plan"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ja": "お薬リマインダー（僕のアプリ）",
+                "en": "Medicine Reminder (my app)"
+              },
+              {
+                "ja": "3件",
+                "en": "3"
+              },
+              {
+                "ja": "朝食前から就寝前まで、飲むタイミングごとに毎日",
+                "en": "Daily, by timing, from before breakfast to bedtime"
+              },
+              {
+                "ja": "タップで記録、カレンダー",
+                "en": "Tap to log, calendar"
+              },
+              {
+                "ja": "減ったら1回知らせる",
+                "en": "Alerts you once when running low"
+              },
+              {
+                "ja": "薬3種類まで",
+                "en": "Up to 3 medicines"
+              }
+            ],
+            [
+              {
+                "ja": "お薬記録＆アラーム",
+                "en": "Cute Pill Reminder"
+              },
+              {
+                "ja": "6,311件",
+                "en": "6,311"
+              },
+              {
+                "ja": "時間を設定してアラーム。処方の日数で期間も決める",
+                "en": "Alarms at set times, for as many days as prescribed"
+              },
+              {
+                "ja": "記録ボタン、一覧",
+                "en": "Log button, list view"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "説明文に記載なし。会員登録なし",
+                "en": "Not mentioned. No sign-up"
+              }
+            ],
+            [
+              {
+                "ja": "しつこいお薬アラーム",
+                "en": "Insistent Medical Alarm"
+              },
+              {
+                "ja": "1,217件",
+                "en": "1,217"
+              },
+              {
+                "ja": "飲むまで何度も鳴らす",
+                "en": "Keeps alerting until you take it"
+              },
+              {
+                "ja": "ワンタップで記録、メモ",
+                "en": "One-tap log, notes"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "説明文に記載なし。サブスクリプションあり",
+                "en": "Not mentioned. Has a subscription"
+              }
+            ],
+            [
+              {
+                "ja": "シンプルお薬リマインダー",
+                "en": "Simple Medicine Reminder"
+              },
+              {
+                "ja": "1件",
+                "en": "1"
+              },
+              {
+                "ja": "朝昼夕、就寝前。曜日の指定も",
+                "en": "Morning, noon, evening, bedtime, plus specific weekdays"
+              },
+              {
+                "ja": "ワンタップで記録、カレンダー",
+                "en": "One-tap log, calendar"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "すべて無料",
+                "en": "Everything is free"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "1本ずつ見ていく",
+        "en": "Each app, one by one"
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "id": "6756915544"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "薬ごとに、朝食前、朝食後、昼食後、夕食後、就寝前のような飲むタイミングを選ぶと、毎日その時刻に通知が届きます。タイミングごとの時刻は自分の生活に合わせて変えられます。",
+            "en": "For each medicine, choose when you take it, like before or after breakfast, after lunch, after dinner, or at bedtime, and a reminder arrives at that time every day. You can adjust the time for each slot to fit your day."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "飲んだらタップして記録すると、残りの数が減っていきます。決めた数より少なくなったら1回知らせるので、薬をもらいに行く目安になります。薬の写真を登録して見分けやすくもできます。",
+            "en": "Tap to log a dose and the count of pills left goes down. When it drops below the number you set, you get one alert, a handy cue to pick up more. You can also add a photo of each medicine so they're easy to tell apart."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "無料で登録できる薬は3種類までで、服用の通知と記録は無料です。4種類目からと、通院の予定のような別のリマインダーを繰り返す機能はプレミアムです。",
+            "en": "The free version holds 3 medicines, and dose reminders and logging are free. A fourth medicine and up, plus repeating separate reminders like clinic visits, are Premium."
+          }
+        },
+        {
+          "type": "app",
+          "id": "1552171774"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "評価が6,311件あって、この中ではいちばん使われています。会員登録なしで、薬を選んで記録マークを押すだけの作りです。",
+            "en": "With 6,311 ratings, it's by far the most used of the four. No sign-up, and logging is just picking the medicine and tapping the log mark."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "処方箋の何日分かを入れると、その期間だけアラームが鳴ります。自分の分だけでなく、家族の薬もまとめて管理できると書かれています。",
+            "en": "Enter how many days your prescription covers, and the alarms run for exactly that long. The description says you can manage your family's medicine in the same place."
+          }
+        },
+        {
+          "type": "app",
+          "id": "1326572969"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "名前のとおり、飲むまでしつこく鳴らしてくれます。1回の通知では気づかない人に向いています。",
+            "en": "As the name says, it keeps alerting until you take your medicine. Good for people who miss a single notification."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "キャラクターがいろんなセリフで知らせてくれて、テーマの色も変えられます。履歴はiCloudに保存されるので、機種変更のときも引き継げます。",
+            "en": "Characters remind you with different lines, and you can change the theme color. Your history saves to iCloud, so it carries over when you switch phones."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6761060764"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "すべての機能が完全無料と書かれています。薬の名前と時間を入れるだけで、時間ぴったりに通知が届きます。",
+            "en": "The description says every feature is completely free. Enter the medicine's name and time, and you get a notification right on time."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "朝昼夕や就寝前のほかに、特定の曜日だけ飲む薬にも対応しています。サプリメントにも使えます。",
+            "en": "Besides morning, noon, evening, and bedtime, it handles medicine you only take on certain days of the week. It works for supplements too."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "アプリを入れたくないなら",
+        "en": "If you'd rather not install an app"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "iPhoneのヘルスケアアプリに、薬の時間を知らせて飲んだ記録をつける機能があります。iPhoneに最初から入っているので、追加のアプリは要りません。",
+            "en": "The Health app on your iPhone has a medications feature that reminds you and logs doses. It's built in, so there's nothing extra to install."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "曜日ごとの粒の数を数えるだけなら、100円ショップのピルケースも手軽です。",
+            "en": "If all you need is to keep each day's pills sorted, a pill organizer from a dollar store works fine too."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "どれを選ぶか",
+        "en": "Which one to pick"
+      },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "ja": "家族の薬もまとめたい、処方の日数でアラームを止めたいなら、お薬記録＆アラーム",
+              "en": "If you want your family's medicine in one place and alarms that stop when the prescription ends, Cute Pill Reminder"
+            },
+            {
+              "ja": "1回の通知では気づかないなら、しつこいお薬アラーム",
+              "en": "If one notification isn't enough to get your attention, Insistent Medical Alarm"
+            },
+            {
+              "ja": "全部無料で済ませたい、曜日で飲む薬があるなら、シンプルお薬リマインダー",
+              "en": "If you want everything free or take some medicine only on certain days, Simple Medicine Reminder"
+            },
+            {
+              "ja": "食前食後のタイミングで知らせてほしい、残りが減ったら教えてほしいなら、お薬リマインダー",
+              "en": "If you want reminders by meal timing and a heads-up when you're running low, Medicine Reminder"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "ja": "飲み忘れたときはどうすればいいですか？",
+        "en": "What should I do if I miss a dose?"
+      },
+      "a": {
+        "ja": "薬によって違うので、アプリでは決められません。処方した医師か薬剤師に聞いてください。",
+        "en": "It depends on the medicine, so no app can decide that. Please ask the doctor who prescribed it or your pharmacist."
+      }
+    },
+    {
+      "q": {
+        "ja": "サプリメントにも使えますか？",
+        "en": "Can I use them for supplements?"
+      },
+      "a": {
+        "ja": "お薬リマインダーとシンプルお薬リマインダーは、サプリメントにも使えると説明文に書いてあります。ほかの2本も薬の名前は自由に入れられます。",
+        "en": "Medicine Reminder and Simple Medicine Reminder both mention supplements in their descriptions. The other two let you enter any name too."
+      }
+    },
+    {
+      "q": {
+        "ja": "無料で使えますか？",
+        "en": "Are they free?"
+      },
+      "a": {
+        "ja": "4本とも無料で入れられます。シンプルお薬リマインダーは全部無料で、お薬リマインダーは薬3種類まで無料です。",
+        "en": "All four are free to download. Simple Medicine Reminder is entirely free, and Medicine Reminder is free for up to 3 medicines."
+      }
+    }
+  ],
+  "closing": {
+    "ja": "お薬リマインダーの評価はまだ3件なので、ほしい飲むタイミングがあれば教えてください🙏",
+    "en": "Medicine Reminder only has three ratings so far, so if there's a dose timing you wish it had, let me know 🙏"
+  },
+  "notes": {
+    "ja": "各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。お薬リマインダーの機能はアプリのコードで確かめました。アップデートで変わることがあります。どのアプリも医師や薬剤師の代わりにはなりません。飲む量や時間は、処方の指示に従ってください。",
+    "en": "Features and rating counts were checked against each app's App Store description on November 15, 2026. Medicine Reminder's features were checked against its source code. They may change with updates. None of these apps replaces your doctor or pharmacist. Follow your prescription for how much to take and when."
+  },
+  "illustration": {
+    "scene": "朝の台所。キャラが水の入ったコップを片手に、テーブルの上のスマホの画面（文字なし）を見てうなずいている。テーブルには曜日ごとに仕切られたピルケース（文字なし）と、小さな太陽の形の印が光る置き時計。",
+    "alt": {
+      "ja": "朝の台所で水のコップを持ち、スマホを見てうなずくキャラクター",
+      "en": "The character in a morning kitchen holding a glass of water and nodding at the phone"
+    }
+  }
+}

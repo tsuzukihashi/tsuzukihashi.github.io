@@ -1,0 +1,391 @@
+{
+  "slug": "knife-sharpening-reminder-apps",
+  "date_published": "2026-11-15",
+  "date_updated": "2026-11-15",
+  "search_phrase": {
+    "ja": "包丁 研ぐ 頻度",
+    "en": "knife sharpening reminder app"
+  },
+  "evidence": "2026-11-15 に Google の検索候補で「包丁 研ぐ 頻度」を引くと10件が出て、「家庭」「ステンレス」「鋼」「セラミック」「出刃」と、包丁の種類ごとの頻度を聞く形が多かった。「包丁 研ぎ 頻度」も8件、「包丁 錆び」は16件だった。同じ日に App Store で「包丁 研ぎ」を引くと6本が並び、研ぎの記録や時期の管理をするアプリは評価0〜1件のものだけだった。",
+  "title": {
+    "ja": "包丁を研ぐ時期を教えてくれるアプリ3選",
+    "en": "3 Apps That Tell You When to Sharpen Your Kitchen Knives"
+  },
+  "description": {
+    "ja": "包丁を研ぐ時期を知らせてくれるアプリを3本比べました。研ぎどきの決め方、通知、研ぎの記録、無料で使える範囲の違いをまとめています。KnifeKeepの作者が書いています。",
+    "en": "I compared three iPhone apps that tell you when to sharpen your knives: how they set the date, notifications, sharpening logs, and what's free. Written by the maker of KnifeKeep."
+  },
+  "excerpt": {
+    "ja": "前に研いだのはいつだったか。鋼材ごとに研ぎどきを数えるアプリと、研ぎの記録を残すアプリを3本比べました。",
+    "en": "When did you last sharpen that knife? Three apps compared, from counting down by steel type to logging every session."
+  },
+  "category": {
+    "ja": "アプリの選び方",
+    "en": "App guides"
+  },
+  "reading_minutes": 4,
+  "author": {
+    "name": {
+      "ja": "續橋 涼",
+      "en": "Ryo Tsuzukihashi"
+    },
+    "handle": "tsuzuki817",
+    "bio": {
+      "ja": "2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。KnifeKeepの作者です。",
+      "en": "I've been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made KnifeKeep."
+    },
+    "url": "https://tsuzukit.com/about/",
+    "same_as": [
+      "https://x.com/tsuzuki817"
+    ]
+  },
+  "tldr": {
+    "ja": "研ぐ頻度は鋼材と使い方で変わります。砥石の番手や角度まで記録して腕を上げたいなら包丁研ぎ記録とタイマーかEdgeVault。家の包丁を鋼材ごとの目安で数えて、ハガネの錆びにも気づきたいなら、僕が作ったKnifeKeepが合います。",
+    "en": "How often to sharpen depends on the steel and how you use the knife. If you want to log whetstone grits and angles to improve your technique, look at Knife Sharpening Log & Timer or EdgeVault. If you want your kitchen knives counted down by steel type, with a nudge before carbon steel rusts, KnifeKeep, which I made, fits."
+  },
+  "disclosure": {
+    "ja": "この記事は、KnifeKeepを作った僕が書いています。ほかの2本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。",
+    "en": "I made KnifeKeep, and I wrote this article. The other two apps are by developers I don't know, and I haven't received money or anything else from them. Everything compared here comes from each app's App Store description and rating count as of November 15, 2026."
+  },
+  "own_app": "6782555676",
+  "app_category": "LifestyleApplication",
+  "apps": [
+    {
+      "id": "6782555676",
+      "name": {
+        "ja": "包丁ケア KnifeKeep",
+        "en": "KnifeKeep: Blade Care"
+      },
+      "short": {
+        "ja": "KnifeKeep",
+        "en": "KnifeKeep"
+      },
+      "developer": "Ryo Tsudukihashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/07/66/c3/0766c392-682d-43a9-62a4-ea0874a3b17a/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6782555676",
+      "android_url": null,
+      "rating_count": 0
+    },
+    {
+      "id": "6771845696",
+      "name": {
+        "ja": "包丁研ぎ記録とタイマー",
+        "en": "Knife Sharpening Log & Timer"
+      },
+      "short": {
+        "ja": "包丁研ぎ記録とタイマー",
+        "en": "Knife Sharpening Log & Timer"
+      },
+      "developer": "Linh Phan Nhat Khanh",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/0c/76/97/0c76974b-c396-a068-829c-35da1351de53/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6771845696",
+      "android_url": null,
+      "rating_count": 0
+    },
+    {
+      "id": "6781181072",
+      "name": {
+        "ja": "EdgeVault - ナイフと包丁の研ぎ記録",
+        "en": "EdgeVault"
+      },
+      "short": {
+        "ja": "EdgeVault",
+        "en": "EdgeVault"
+      },
+      "developer": "kazuki korenori",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/3e/55/9b/3e559b47-3162-190d-5d14-fef0310ed0ff/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6781181072",
+      "android_url": null,
+      "rating_count": 1
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ja": "3本をざっくり比べる",
+        "en": "The three apps at a glance"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "研ぎどきを知らせるアプリと、研いだ中身を記録するアプリに分かれます。家で使う包丁の時期を忘れたくないのか、研ぎの腕を上げたいのかで選び方が変わります。",
+            "en": "These split into apps that remind you when to sharpen and apps that record how you sharpened. Which one fits depends on whether you just don't want to forget, or want to get better at sharpening."
+          }
+        },
+        {
+          "type": "table",
+          "head": [
+            {
+              "ja": "アプリ",
+              "en": "App"
+            },
+            {
+              "ja": "評価の件数",
+              "en": "Ratings"
+            },
+            {
+              "ja": "研ぎどきの決め方",
+              "en": "How the date is set"
+            },
+            {
+              "ja": "通知",
+              "en": "Notifications"
+            },
+            {
+              "ja": "研ぎの記録",
+              "en": "Sharpening log"
+            },
+            {
+              "ja": "無料の範囲",
+              "en": "Free version"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ja": "KnifeKeep（僕のアプリ）",
+                "en": "KnifeKeep (my app)"
+              },
+              {
+                "ja": "0件",
+                "en": "0"
+              },
+              {
+                "ja": "鋼材から目安を出す",
+                "en": "Set from the type of steel"
+              },
+              {
+                "ja": "2週間前と3日前と当日。過ぎたら毎日",
+                "en": "2 weeks before, 3 days before, and on the day, then daily"
+              },
+              {
+                "ja": "砥石と所感。プレミアム",
+                "en": "Whetstone and notes, with Premium"
+              },
+              {
+                "ja": "包丁3本まで",
+                "en": "Up to 3 knives"
+              }
+            ],
+            [
+              {
+                "ja": "包丁研ぎ記録とタイマー",
+                "en": "Knife Sharpening Log & Timer"
+              },
+              {
+                "ja": "0件",
+                "en": "0"
+              },
+              {
+                "ja": "刃物ごとに間隔を決める",
+                "en": "You set an interval for each knife"
+              },
+              {
+                "ja": "切れ味が落ちる前に通知",
+                "en": "Notifies you before the edge dulls"
+              },
+              {
+                "ja": "砥石ごとの時間、角度、評価",
+                "en": "Time per stone, angle, and rating"
+              },
+              {
+                "ja": "記録と通知はProに入っている",
+                "en": "Logging and reminders are part of Pro"
+              }
+            ],
+            [
+              {
+                "ja": "EdgeVault",
+                "en": "EdgeVault"
+              },
+              {
+                "ja": "1件",
+                "en": "1"
+              },
+              {
+                "ja": "研いだ回数と平均の間隔を表示",
+                "en": "Shows how many times and the average gap"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "砥石の順番、角度、時間、評価、写真",
+                "en": "Stone order, angle, time, rating, and photos"
+              },
+              {
+                "ja": "ナイフ10本、砥石10本まで",
+                "en": "Up to 10 knives and 10 stones"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "1本ずつ見ていく",
+        "en": "Each app, one by one"
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "id": "6782555676"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "鋼材を選ぶと、研ぎどきの目安が最初に入ります。ステンレスは8週間ごと、ハガネは4週間ごと、ダマスカスは6週間ごと、セラミックは24週間ごとです。目安は2週間から24週間の中で直せます。",
+            "en": "Pick the type of steel and a sharpening interval is filled in for you. Stainless starts at every 8 weeks, carbon steel at every 4 weeks, Damascus at every 6 weeks, and ceramic at every 24 weeks. You can change it to anything from 2 to 24 weeks."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "通知は研ぎどきの2週間前と3日前と当日です。過ぎたら、研いだと記録するまで毎日鳴ります。ハガネは最後に使ってから3日、ダマスカスは7日たつと錆びるかもと出るので、拭くか油を塗るかのきっかけになります。",
+            "en": "It notifies you 2 weeks before, 3 days before, and on the day. After that, it reminds you every day until you log a sharpening. A carbon steel knife shows a may-rust label 3 days after you last used it, and Damascus after 7, as a cue to wipe it down or oil it."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "無料だと包丁は3本まで登録できます。置き場所で分けるのと、砥石や所感を残すお手入れの記録はプレミアムです。研ぐときのタイマーはありません。",
+            "en": "The free version holds up to 3 knives. Grouping by storage spot and a care log with the whetstone and your notes are Premium features. There's no sharpening timer."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6771845696"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "研ぐ作業そのものを記録するアプリです。研ぎ始めにタイマーを動かして、番手を変えるたびに使った砥石と分数を足していきます。最後に仕上がりを5段階で評価します。",
+            "en": "This app records the sharpening session itself. You start a timer as you begin, and add each stone and how many minutes you spent as you move through the grits. At the end, you rate the result out of five."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "刃物ごとに手入れの間隔を決めて、通知を受け取れます。研ぎ直しまでの平均日数も出ます。ただ、研ぎの記録も刃物ごとのリマインダーも、Proに入っていると書かれています。",
+            "en": "You can set a care interval for each knife and get notifications, and it shows the average days between sharpenings. However, the description says both session logging and per-knife reminders are part of Pro."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6781181072"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "ナイフの収集と研ぎが好きな人のための台帳です。研いだときの砥石の順番、角度、時間、評価、前後の写真を残せて、ナイフごとに研いだ回数と平均の間隔が出ます。",
+            "en": "A ledger for people who collect knives and enjoy sharpening. You can record the order of stones, angle, time, a rating, and before and after photos, and each knife shows how many times you've sharpened it and the average gap."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "無料でナイフ10本と砥石10本まで登録でき、主な機能はほとんど無料です。研ぎどきの通知については、説明文には書かれていませんでした。",
+            "en": "The free version holds 10 knives and 10 stones, and almost every main feature is free. The description doesn't mention reminders for when to sharpen."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "研ぐ頻度はどう決めるか",
+        "en": "How to decide how often to sharpen"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "研ぐ頻度は、鋼材のほかに、毎日どれだけ使うかやまな板の材質でも変わります。KnifeKeepの目安は出発点なので、切れ味が落ちたと感じた日に合わせて直していくのがいいと思います。",
+            "en": "How often to sharpen depends not only on the steel but also on how much you cook and what your cutting board is made of. KnifeKeep's intervals are a starting point, so adjust them to when you actually notice the edge going dull."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "研ぎ方や砥石の選び方は、包丁を買ったお店や刃物店に聞くのが確かです。",
+            "en": "For how to sharpen and which stones to use, the shop where you bought the knife or a cutlery store is the best place to ask."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "どれを選ぶか",
+        "en": "Which one to pick"
+      },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "ja": "研ぎの時間と砥石の流れを測って、腕を上げたいなら、包丁研ぎ記録とタイマー",
+              "en": "If you want to time your sessions and track your grit progression to get better, Knife Sharpening Log & Timer"
+            },
+            {
+              "ja": "ナイフと砥石のコレクションを無料で多めに管理したいなら、EdgeVault",
+              "en": "If you want to manage a larger collection of knives and stones for free, EdgeVault"
+            },
+            {
+              "ja": "家の包丁の研ぎどきと錆びを、通知で教えてほしいなら、KnifeKeep",
+              "en": "If you want notifications for when your kitchen knives need sharpening and when they might rust, KnifeKeep"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "ja": "無料で使えますか？",
+        "en": "Are they free?"
+      },
+      "a": {
+        "ja": "3本とも無料で入れられます。KnifeKeepは無料だと3本まで。包丁研ぎ記録とタイマーは、研ぎの記録と通知に有料のProが要ります。",
+        "en": "All three are free to download. KnifeKeep holds 3 knives for free. Knife Sharpening Log & Timer needs the paid Pro for logging and reminders."
+      }
+    },
+    {
+      "q": {
+        "ja": "シャープナーで研いでいる場合も使えますか？",
+        "en": "Does it work if I use a pull-through sharpener?"
+      },
+      "a": {
+        "ja": "KnifeKeepは研ぎ方を問わず、研いだ日から次の目安を数えます。シャープナーでも砥石でも、研いだら記録すれば大丈夫です。",
+        "en": "KnifeKeep counts to the next date from the day you sharpened, whatever method you use. Whether it's a pull-through sharpener or a whetstone, just log it when you're done."
+      }
+    },
+    {
+      "q": {
+        "ja": "セラミックの包丁も自分で研げますか？",
+        "en": "Can I sharpen a ceramic knife myself?"
+      },
+      "a": {
+        "ja": "アプリは時期を知らせるだけです。セラミックの研ぎ方は、包丁のメーカーか刃物店に聞いてください。",
+        "en": "The apps only tell you when. For how to sharpen ceramic, ask the knife's maker or a cutlery store."
+      }
+    }
+  ],
+  "closing": {
+    "ja": "KnifeKeepはまだ評価が0件です。台所の1本を入れてみた人がいたら、ぜひ聞かせてください🔪",
+    "en": "KnifeKeep has no ratings yet. If you try it with a knife from your kitchen, please let me know how it goes 🔪"
+  },
+  "notes": {
+    "ja": "各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。研ぎの周期は一般的な目安なので、使い方に合わせて直してください。",
+    "en": "Features and rating counts were checked against each app's App Store description on November 15, 2026, and may change with updates. Sharpening intervals are general guidelines, so adjust them to how you use your knives."
+  },
+  "illustration": {
+    "scene": "台所の流し台の横。キャラが濡らした砥石の上で包丁をていねいに研いでいて、刃がきらっと光っている。まな板の上には切りかけのトマト、壁の包丁差しには数本の包丁、そのうち1本の柄に紫の小さなリボン。",
+    "alt": {
+      "ja": "濡らした砥石で包丁を研ぎ、刃がきらっと光るのを見ているキャラクター",
+      "en": "The character carefully sharpening a kitchen knife on a wet whetstone as the edge catches the light"
+    }
+  }
+}

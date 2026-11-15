@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/js/lang.js"></script>
+    <!-- このページは scripts/build_guides.py が docs/guides/picture-in-picture-photo-apps.json から作る。直すのは JSON のほう -->
+    <title>写真を小窓で画面に出しっぱなしにするアプリ3選 - Blog | Ryo Tsuzukihashi</title>
+    <meta name="description" content="ピクチャーインピクチャーで、写真を小窓にして画面に出し続けるアプリを3本比べました。何枚出せるか、自動で切り替わるか、動画も出せるかの違いをまとめています。PictInの作者が書いています。">
+    <meta name="title-en" content="3 Apps That Keep a Photo Floating on Your Screen in Picture in Picture - Blog | Ryo Tsuzukihashi">
+    <meta name="description-en" content="I compared three iPhone apps that keep a photo floating on screen in Picture in Picture while you use other apps: how many photos, whether they rotate automatically, and whether video works. Written by the maker of PictIn.">
+    <link rel="canonical" href="https://tsuzukit.com/blog/posts/picture-in-picture-photo-apps.html">
+
+    <!-- OGP -->
+    <meta property="og:title" content="写真を小窓で画面に出しっぱなしにするアプリ3選">
+    <meta property="og:description" content="ピクチャーインピクチャーで、写真を小窓にして画面に出し続けるアプリを3本比べました。何枚出せるか、自動で切り替わるか、動画も出せるかの違いをまとめています。PictInの作者が書いています。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://tsuzukit.com/blog/posts/picture-in-picture-photo-apps.html">
+    <meta property="og:image" content="https://tsuzukit.com/assets/images/posts/picture-in-picture-photo-apps.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://tsuzukit.com/assets/images/posts/picture-in-picture-photo-apps.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-dark-32x32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-dark-16x16.png" media="(prefers-color-scheme: dark)">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERPQ1EGLH');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8240751277462688"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
+    <link rel="stylesheet" href="/assets/css/guide.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "写真を小窓で画面に出しっぱなしにするアプリ3選",
+      "description": "ピクチャーインピクチャーで、写真を小窓にして画面に出し続けるアプリを3本比べました。何枚出せるか、自動で切り替わるか、動画も出せるかの違いをまとめています。PictInの作者が書いています。",
+      "image": "https://tsuzukit.com/assets/images/posts/picture-in-picture-photo-apps.webp",
+      "datePublished": "2026-11-15",
+      "dateModified": "2026-11-15",
+      "inLanguage": "ja",
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "mainEntityOfPage": "https://tsuzukit.com/blog/posts/picture-in-picture-photo-apps.html",
+      "about": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "PictIn",
+          "url": "https://apps.apple.com/jp/app/id1625004229",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "PiP Now",
+          "url": "https://apps.apple.com/jp/app/id6755436529",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "うきまど - 写真・動画を小窓で表示",
+          "url": "https://apps.apple.com/jp/app/id6828886921",
+          "operatingSystem": "iOS"
+        }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "PictIn",
+      "operatingSystem": "iOS",
+      "applicationCategory": "PhotographyApplication",
+      "url": "https://apps.apple.com/jp/app/id1625004229",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "無料で使えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "3本とも無料で入れられます。PictInとPiP Nowは広告が出て、課金すると消えます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ゲームや動画を見ながらでも出せますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ピクチャーインピクチャーの小窓は、ほかのアプリを使っている間も画面の上に残ります。小窓の位置と大きさは、指で動かせます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "動画も小窓で出せますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "この3本の中で、説明文で動画に対応していると書かれているのは、うきまどです。PictInとPiP Nowは写真用です。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tsuzukit.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://tsuzukit.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "困りごとから選ぶアプリ",
+          "item": "https://tsuzukit.com/blog/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "写真を小窓で画面に出しっぱなしにするアプリ3選",
+          "item": "https://tsuzukit.com/blog/posts/picture-in-picture-photo-apps.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">TsuzuKit</a>
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/portfolio/" class="nav-link">Portfolio</a>
+                <a href="/blog/" class="nav-link active">Blog</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post -->
+    <article class="blog-post">
+        <header class="post-header">
+            <div class="post-meta">
+                <span class="post-date">2026.11.15</span>
+                <span class="post-category"><span class="i18n-ja">アプリの選び方</span><span class="i18n-en">App guides</span></span>
+                <span class="post-reading-time"><span class="i18n-ja">3分で読める</span><span class="i18n-en">3 min read</span></span>
+            </div>
+            <h1 class="post-title"><span class="i18n-ja">写真を小窓で画面に出しっぱなしにするアプリ3選</span><span class="i18n-en">3 Apps That Keep a Photo Floating on Your Screen in Picture in Picture</span></h1>
+        </header>
+        <figure class="post-illustration guide-illustration"><img src="/assets/images/posts/picture-in-picture-photo-apps.webp" width="1200" height="800" alt="勉強するキャラクター。スマホの隅の小窓で単語カードが切り替わっている" data-en-alt="The character studying at a desk, with flash card images switching in a small floating window on the phone" fetchpriority="high"></figure>
+
+        <div class="post-content guide i18n-ja">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">先に答え</p>
+                <p>iPhoneには写真を小窓で出し続ける機能が最初からないので、ピクチャーインピクチャーを使うアプリを入れます。2枚を横に並べて見比べたいならPiP Now。写真と動画を混ぜて出したいならうきまど。何枚もの写真を決めた秒数ごとに切り替えて出したい人は、僕が作ったPictInも見てみてください。</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">書いた人 <a href="https://tsuzukit.com/about/">續橋 涼</a>（@tsuzuki817）</p>
+                    <p class="guide-byline-bio">2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。PictInの作者です。</p>
+                    <p class="guide-byline-date">公開 <time datetime="2026-11-15">2026.11.15</time> · 更新 <time datetime="2026-11-15">2026.11.15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">この記事は、PictInを作った僕が書いています。ほかの2本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。</p>
+            <h2>3本をざっくり比べる</h2>
+            <p>どれもiPhoneのピクチャーインピクチャーの機能を使って、ほかのアプリの上に写真を浮かべます。違いが出るのは、何枚をどう出すかです。</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">アプリ</th><th scope="col">評価の件数</th><th scope="col">出せる写真</th><th scope="col">自動の切り替え</th><th scope="col">動画</th><th scope="col">料金</th></tr></thead><tbody><tr><th scope="row">PictIn（僕のアプリ）</th><td>46件</td><td>フォトブックにまとめた写真を順に</td><td>秒数を自分で決める</td><td>なし</td><td>無料、広告あり。サブスクリプションで広告なし</td></tr><tr><th scope="row">PiP Now</th><td>20件</td><td>1枚か、2枚を横に並べて</td><td>説明文に記載なし</td><td>なし。静止画だけ</td><td>広告あり。月額か買い切りで広告なし</td></tr><tr><th scope="row">うきまど</th><td>0件</td><td>写真と動画を続けて</td><td>3秒から60秒</td><td>あり</td><td>説明文に記載なし</td></tr></tbody></table></div>
+            <h2>1本ずつ見ていく</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/75/f9/b3/75f9b387-8ee8-8a09-18e9-ee955becbf5e/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">僕が作ったアプリ</span>
+                    <h3 class="guide-app-name">PictIn</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · App Storeの評価 46件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id1625004229" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>流れるメモ帳を作ったあとに、画像も小窓で流したくなって作ったアプリです。写真をフォトブックにまとめておくと、小窓の中で順番に切り替わります。</p>
+            <p>切り替える秒数は自分で決められて、最初は5秒です。小窓の背景を黒か白にしたり、余白なしで表示したり、小窓の高さを変えて縦長や横長にしたりもできます。</p>
+            <p>勉強の教材、推しの写真、レシートなどを出しておくのに使えます。無料で使えて広告が出ます。月額のサポーターに入ると広告が消えます。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/79/7c/75/797c75bf-f4ee-4ede-9cb2-85006aa9cf3e/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">PiP Now</h3>
+                    <p class="guide-app-meta">Shun Kurauchi · App Storeの評価 20件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6755436529" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>写真ライブラリから1枚か2枚を選んで、小窓に出すアプリです。2枚選ぶと自動で横に並べてくれるので、見比べたいときに便利です。</p>
+            <p>ほかのアプリの共有ボタンから、そのまま小窓に出すこともできます。説明文では静止画に絞ったアプリと書かれています。月額か買い切りのプレミアムで広告が消えます。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/71/25/a0/7125a0af-426e-63ed-6f46-eacc4b5015c7/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">うきまど - 写真・動画を小窓で表示</h3>
+                    <p class="guide-app-meta">Yuta Watanabe · App Storeの評価 0件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6828886921" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>写真と動画を混ぜて、小窓のまま続けて出せます。小窓のボタンで前後に送れて、3秒から60秒の自動スライドもあります。</p>
+            <p>よく使う並びをセットにして、前回の続きから再開できます。写真ごとに小窓に映す範囲を調整でき、見られたくないセットはFace IDで守れます。</p>
+            <h2>どれを選ぶか</h2>
+            <ul class="guide-list"><li>2枚の写真を横に並べて見比べたいなら、PiP Now</li><li>写真と動画を混ぜて出したい、写真ごとに映す範囲を決めたいなら、うきまど</li><li>何枚もの写真を決めた秒数で切り替えて、勉強や推し活に使いたいなら、PictIn</li></ul>
+            <h2>よくある質問</h2>
+            <dl class="guide-faq">
+                <dt>無料で使えますか？</dt><dd>3本とも無料で入れられます。PictInとPiP Nowは広告が出て、課金すると消えます。</dd>
+                <dt>ゲームや動画を見ながらでも出せますか？</dt><dd>ピクチャーインピクチャーの小窓は、ほかのアプリを使っている間も画面の上に残ります。小窓の位置と大きさは、指で動かせます。</dd>
+                <dt>動画も小窓で出せますか？</dt><dd>この3本の中で、説明文で動画に対応していると書かれているのは、うきまどです。PictInとPiP Nowは写真用です。</dd>
+            </dl>
+            <p>PictInの評価は46件です。小窓にどんな画像を出しているか、こっそり教えてもらえたらうれしいです🖼️</p>
+            <div class="guide-notes">各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。</div>
+        </div>
+
+        <div class="post-content guide i18n-en">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">Short answer</p>
+                <p>The iPhone has no built-in way to keep a photo floating on screen, so you need an app that uses Picture in Picture. If you want two photos side by side, try PiP Now. If you want photos and videos mixed together, try Ukimado. If you want a set of photos to switch every few seconds, take a look at PictIn, which I made.</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">Written by <a href="https://tsuzukit.com/about/">Ryo Tsuzukihashi</a> (@tsuzuki817)</p>
+                    <p class="guide-byline-bio">I&#x27;ve been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made PictIn.</p>
+                    <p class="guide-byline-date">Published <time datetime="2026-11-15">2026-11-15</time> · Updated <time datetime="2026-11-15">2026-11-15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">I made PictIn, and I wrote this article. The other two apps are by developers I don&#x27;t know, and I haven&#x27;t received money or anything else from them. Everything compared here comes from each app&#x27;s App Store description and rating count as of November 15, 2026.</p>
+            <h2>The three apps at a glance</h2>
+            <p>All three use the iPhone&#x27;s Picture in Picture feature to float a photo over other apps. Where they differ is how many photos they show, and how.</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">App</th><th scope="col">Ratings</th><th scope="col">Photos shown</th><th scope="col">Auto-rotate</th><th scope="col">Video</th><th scope="col">Pricing</th></tr></thead><tbody><tr><th scope="row">PictIn (my app)</th><td>46</td><td>A photo book, one after another</td><td>Every few seconds, you choose</td><td>No</td><td>Free with ads, subscription removes them</td></tr><tr><th scope="row">PiP Now</th><td>20</td><td>One, or two side by side</td><td>Not mentioned</td><td>No, still images only</td><td>Ads, monthly or one-time purchase removes them</td></tr><tr><th scope="row">Ukimado</th><td>0</td><td>Photos and videos in sequence</td><td>3 to 60 seconds</td><td>Yes</td><td>Not mentioned</td></tr></tbody></table></div>
+            <h2>Each app, one by one</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/75/f9/b3/75f9b387-8ee8-8a09-18e9-ee955becbf5e/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">I made this</span>
+                    <h3 class="guide-app-name">PictIn</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · 46 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id1625004229" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>I made this after building a floating memo app, because I wanted to float images too. Put photos together in a photo book, and they switch one after another inside the floating window.</p>
+            <p>You set how many seconds each photo stays up, starting at 5. You can make the window background black or white, show photos with no margins, and change the window&#x27;s height to make it taller or wider.</p>
+            <p>Use it to keep study material, a photo of someone you are a fan of, or a receipt on screen. It is free with ads, and a monthly supporter subscription removes them.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/79/7c/75/797c75bf-f4ee-4ede-9cb2-85006aa9cf3e/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">PiP Now</h3>
+                    <p class="guide-app-meta">Shun Kurauchi · 20 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6755436529" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>Pick one or two photos from your library and it floats them in a small window. If you pick two, it lines them up side by side automatically, which is handy for comparing.</p>
+            <p>You can also send a photo straight to the floating window from another app&#x27;s share button. Its description says it focuses on still images. A monthly or one-time Premium removes ads.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/71/25/a0/7125a0af-426e-63ed-6f46-eacc4b5015c7/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Ukimado - Photos and Videos in a Floating Window</h3>
+                    <p class="guide-app-meta">Yuta Watanabe · 0 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6828886921" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>You can mix photos and videos and play them one after another in the floating window. Buttons on the window move back and forth, and there is an auto slideshow from 3 to 60 seconds.</p>
+            <p>You can save a lineup you use often as a set and pick up where you left off. You can adjust what part of each photo shows in the window, and protect private sets with Face ID.</p>
+            <h2>Which one to pick</h2>
+            <ul class="guide-list"><li>If you want to compare two photos side by side, PiP Now</li><li>If you want photos and videos together, or to frame each photo, Ukimado</li><li>If you want a set of photos switching on a timer, for studying or for someone you are a fan of, PictIn</li></ul>
+            <h2>FAQ</h2>
+            <dl class="guide-faq">
+                <dt>Are they free?</dt><dd>All three are free to download. PictIn and PiP Now show ads, and paying removes them.</dd>
+                <dt>Can I keep it up while playing a game or watching video?</dt><dd>A Picture in Picture window stays on top while you use other apps. You can drag it around and resize it with your fingers.</dd>
+                <dt>Can I float videos too?</dt><dd>Of these three, Ukimado is the one whose description says it handles video. PictIn and PiP Now are for photos.</dd>
+            </dl>
+            <p>PictIn has 46 ratings. I&#x27;d love to hear what kind of images you keep floating on your screen 🖼️</p>
+            <div class="guide-notes">Features and rating counts were checked against each app&#x27;s App Store description on November 15, 2026, and may change with updates.</div>
+        </div>
+
+        <nav class="post-navigation">
+            <img class="tk-char tk-char--post" src="/assets/images/character-hang.png" alt="" width="381" height="208">
+            <a href="/blog/guides/" class="nav-link-wrapper"><span>&larr; <span class="i18n-ja">困りごとから選ぶアプリの一覧へ</span><span class="i18n-en">All guides: apps for everyday problems</span></span></a>
+        </nav>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
+                    <p class="footer-description"><span class="i18n-ja">誰も作らないものを、まじめに作る</span><span class="i18n-en">I make things nobody else would, and I make them seriously</span></p>
+                </div>
+                <div class="footer-nav">
+                    <a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
+                    <a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
+                    <a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
+                    <a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ryo Tsuzukihashi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

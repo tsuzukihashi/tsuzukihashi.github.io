@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/js/lang.js"></script>
+    <!-- このページは scripts/build_guides.py が docs/guides/zenn-trend-check-iphone.json から作る。直すのは JSON のほう -->
+    <title>Zennのトレンドを毎日チェックする方法とアプリ3選 - Blog | Ryo Tsuzukihashi</title>
+    <meta name="description" content="Zennのトレンドを毎日追う方法を、ホーム画面のウィジェットとRSSリーダーで比べました。アプリを入れずに見る方法も書いています。WidgetZennの作者が書いています。">
+    <meta name="title-en" content="How to Check Zenn Trending Articles Every Day, Plus 3 Apps - Blog | Ryo Tsuzukihashi">
+    <meta name="description-en" content="I compared ways to keep up with Zenn&#x27;s trending articles every day, using Home Screen widgets and an RSS reader, plus how to do it without an app. Written by the maker of WidgetZenn.">
+    <link rel="canonical" href="https://tsuzukit.com/blog/posts/zenn-trend-check-iphone.html">
+
+    <!-- OGP -->
+    <meta property="og:title" content="Zennのトレンドを毎日チェックする方法とアプリ3選">
+    <meta property="og:description" content="Zennのトレンドを毎日追う方法を、ホーム画面のウィジェットとRSSリーダーで比べました。アプリを入れずに見る方法も書いています。WidgetZennの作者が書いています。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://tsuzukit.com/blog/posts/zenn-trend-check-iphone.html">
+    <meta property="og:image" content="https://tsuzukit.com/assets/images/posts/zenn-trend-check-iphone.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://tsuzukit.com/assets/images/posts/zenn-trend-check-iphone.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-dark-32x32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-dark-16x16.png" media="(prefers-color-scheme: dark)">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERPQ1EGLH');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8240751277462688"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
+    <link rel="stylesheet" href="/assets/css/guide.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Zennのトレンドを毎日チェックする方法とアプリ3選",
+      "description": "Zennのトレンドを毎日追う方法を、ホーム画面のウィジェットとRSSリーダーで比べました。アプリを入れずに見る方法も書いています。WidgetZennの作者が書いています。",
+      "image": "https://tsuzukit.com/assets/images/posts/zenn-trend-check-iphone.webp",
+      "datePublished": "2026-11-15",
+      "dateModified": "2026-11-15",
+      "inLanguage": "ja",
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "mainEntityOfPage": "https://tsuzukit.com/blog/posts/zenn-trend-check-iphone.html",
+      "about": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "WidgetZenn",
+          "url": "https://apps.apple.com/jp/app/id1597103122",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "ZennWidget",
+          "url": "https://apps.apple.com/jp/app/id6448756495",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "Feedly - Smart News Reader",
+          "url": "https://apps.apple.com/jp/app/id396069556",
+          "operatingSystem": "iOS"
+        }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "WidgetZenn",
+      "operatingSystem": "iOS",
+      "applicationCategory": "NewsApplication",
+      "url": "https://apps.apple.com/jp/app/id1597103122",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Zenn公式のiPhoneアプリはありますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "2026年11月15日にApp Storeで「Zenn」を検索した結果には、Zenn公式のアプリは出てきませんでした。この記事のウィジェットのアプリは、どちらも個人が作った非公式のアプリです。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "特定のトピックだけ追えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ZennはトピックごとにもRSSを出しているので、RSSリーダーに登録すれば追えます。WidgetZennが出すのはトレンドだけです。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "無料で使えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "3本とも無料で入れられます。WidgetZennは全部無料で、広告が出ます。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tsuzukit.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://tsuzukit.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "困りごとから選ぶアプリ",
+          "item": "https://tsuzukit.com/blog/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Zennのトレンドを毎日チェックする方法とアプリ3選",
+          "item": "https://tsuzukit.com/blog/posts/zenn-trend-check-iphone.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">TsuzuKit</a>
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/portfolio/" class="nav-link">Portfolio</a>
+                <a href="/blog/" class="nav-link active">Blog</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post -->
+    <article class="blog-post">
+        <header class="post-header">
+            <div class="post-meta">
+                <span class="post-date">2026.11.15</span>
+                <span class="post-category"><span class="i18n-ja">アプリの選び方</span><span class="i18n-en">App guides</span></span>
+                <span class="post-reading-time"><span class="i18n-ja">4分で読める</span><span class="i18n-en">4 min read</span></span>
+            </div>
+            <h1 class="post-title"><span class="i18n-ja">Zennのトレンドを毎日チェックする方法とアプリ3選</span><span class="i18n-en">How to Check Zenn Trending Articles Every Day, Plus 3 Apps</span></h1>
+        </header>
+        <figure class="post-illustration guide-illustration"><img src="/assets/images/posts/zenn-trend-check-iphone.webp" width="1200" height="800" alt="朝、ホーム画面のパネルから浮かぶ記事のカードに指を伸ばすキャラクター" data-en-alt="The character with a morning mug, reaching for one of the article cards rising from a Home Screen panel" fetchpriority="high"></figure>
+
+        <div class="post-content guide i18n-ja">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">先に答え</p>
+                <p>ZennのトレンドにはRSSがあるので、ほかの技術ブログとまとめて読みたいなら、評価9,023件のFeedlyのようなRSSリーダーに登録するのが早いです。アプリを開かずにホーム画面で見出しだけ眺めたいなら、ウィジェットのアプリです。僕が作ったWidgetZennは、TechとIdeasのトレンドを選んでウィジェットに出せます。</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">書いた人 <a href="https://tsuzukit.com/about/">續橋 涼</a>（@tsuzuki817）</p>
+                    <p class="guide-byline-bio">2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。WidgetZennの作者です。</p>
+                    <p class="guide-byline-date">公開 <time datetime="2026-11-15">2026.11.15</time> · 更新 <time datetime="2026-11-15">2026.11.15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">この記事は、WidgetZennを作った僕が書いています。ほかの2本は知らない開発者さんのアプリで、お金も何ももらっていません。WidgetZennもZenn公式のアプリではありません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。</p>
+            <h2>アプリを入れなくても見られる</h2>
+            <p>Zennのトップページを開けば、いまのトレンドが並んでいます。ブラウザでブックマークしておけば、それだけでも毎日見られます。</p>
+            <p>トレンドにはRSSもあって、アドレスはzenn.dev/feedです。RSSリーダーに登録すると、ほかのサイトの新着と一緒に読めます。</p>
+            <p>毎回開くのが面倒になってきたら、ホーム画面に出しておくウィジェットのアプリが役に立ちます。</p>
+            <h2>3本をざっくり比べる</h2>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">アプリ</th><th scope="col">評価の件数</th><th scope="col">どこで見るか</th><th scope="col">Zennの何を出すか</th><th scope="col">アカウント</th></tr></thead><tbody><tr><th scope="row">WidgetZenn（僕のアプリ）</th><td>2件</td><td>ホーム画面のウィジェット</td><td>トレンドのTechかIdeasを選ぶ</td><td>要らない</td></tr><tr><th scope="row">ZennWidget</th><td>4件</td><td>ウィジェット</td><td>記事の一覧。種類は説明文に記載なし</td><td>説明文に記載なし</td></tr><tr><th scope="row">Feedly</th><td>9,023件</td><td>アプリの中</td><td>登録したRSS。トレンドもトピックも</td><td>Feedlyのアカウントが要る</td></tr></tbody></table></div>
+            <h2>1本ずつ見ていく</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/9f/bb/8e/9fbb8e03-2106-0221-e017-5eef7173c2e7/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">僕が作ったアプリ</span>
+                    <h3 class="guide-app-name">WidgetZenn</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · App Storeの評価 2件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id1597103122" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>Zennのトレンドを、ホーム画面のウィジェットに並べるアプリです。ウィジェットごとに、技術の記事のTechか、キャリアや開発の進め方のような技術以外の記事のIdeasかを選べます。</p>
+            <p>ウィジェットは小から大まで、iPadなら特大も置けて、タップするとZennの元の記事が開きます。アプリには読んだ記事の履歴が残り、よく見るタグとユーザーの上位5つも出ます。</p>
+            <p>全部無料で、アプリの中に広告が出ます。Zenn公式のアプリではありません。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/f2/28/9f/f2289f95-33a5-8e16-d645-98794b29c727/AppIcon-0-0-1x_U007emarketing-0-5-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">ZennWidget</h3>
+                    <p class="guide-app-meta">taishin miyamoto · App Storeの評価 4件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6448756495" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>Zennの記事の一覧をウィジェットに出すアプリです。Webサイトを開かずに記事を見られるようにすることを目的にしている、と説明文にあります。</p>
+            <p>どの一覧を出すのか、ウィジェットの大きさ、料金については、説明文に書かれていませんでした。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/05/8b/a7/058ba714-0832-732a-1c9f-30d76a63d23f/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Feedly - Smart News Reader</h3>
+                    <p class="guide-app-meta">Feedly Inc. · App Storeの評価 9,023件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id396069556" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>評価が9,023件あるRSSリーダーです。新聞やブログ、YouTubeのチャンネルなど、追いたい情報源を1か所にまとめられます。</p>
+            <p>ZennのトレンドのRSSを登録すれば、ほかの技術ブログと同じ一覧で読めます。使うにはFeedlyのアカウントが要ります。キーワードの追跡などはFeedly Proの機能です。</p>
+            <h2>どれを選ぶか</h2>
+            <ul class="guide-list"><li>Zennのほかにも追っているサイトがあるなら、FeedlyにRSSを登録する</li><li>Zennのトレンドの見出しを、ホーム画面で眺めたいなら、ウィジェットのアプリ</li><li>TechとIdeasを分けて置きたい、読んだ記事の傾向も見たいなら、WidgetZenn</li></ul>
+            <h2>よくある質問</h2>
+            <dl class="guide-faq">
+                <dt>Zenn公式のiPhoneアプリはありますか？</dt><dd>2026年11月15日にApp Storeで「Zenn」を検索した結果には、Zenn公式のアプリは出てきませんでした。この記事のウィジェットのアプリは、どちらも個人が作った非公式のアプリです。</dd>
+                <dt>特定のトピックだけ追えますか？</dt><dd>ZennはトピックごとにもRSSを出しているので、RSSリーダーに登録すれば追えます。WidgetZennが出すのはトレンドだけです。</dd>
+                <dt>無料で使えますか？</dt><dd>3本とも無料で入れられます。WidgetZennは全部無料で、広告が出ます。</dd>
+            </dl>
+            <p>WidgetZennの評価はまだ2件なので、毎朝ウィジェットで見ている人がいたら声を聞かせてください☕</p>
+            <div class="guide-notes">各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。ZennのRSSのアドレスも同じ日に確かめました。アップデートで変わることがあります。</div>
+        </div>
+
+        <div class="post-content guide i18n-en">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">Short answer</p>
+                <p>Zenn&#x27;s trending list has an RSS feed, so if you want it alongside other tech blogs, the fastest route is adding it to an RSS reader like Feedly, which has 9,023 ratings. If you just want to glance at headlines on your Home Screen without opening an app, use a widget app. WidgetZenn, which I made, lets you choose the Tech or Ideas trend for each widget.</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">Written by <a href="https://tsuzukit.com/about/">Ryo Tsuzukihashi</a> (@tsuzuki817)</p>
+                    <p class="guide-byline-bio">I&#x27;ve been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made WidgetZenn.</p>
+                    <p class="guide-byline-date">Published <time datetime="2026-11-15">2026-11-15</time> · Updated <time datetime="2026-11-15">2026-11-15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">I made WidgetZenn, and I wrote this article. The other two apps are by developers I don&#x27;t know, and I haven&#x27;t received money or anything else from them. WidgetZenn is not an official Zenn app either. Everything compared here comes from each app&#x27;s App Store description and rating count as of November 15, 2026.</p>
+            <h2>You can check it without an app</h2>
+            <p>Open Zenn&#x27;s top page and the current trending articles are right there. Bookmark it in your browser and that alone is enough to check daily.</p>
+            <p>The trending list also has an RSS feed at zenn.dev/feed. Add it to an RSS reader and you can read it alongside new posts from other sites.</p>
+            <p>If opening it every time starts to feel like a chore, a widget app that keeps the list on your Home Screen helps.</p>
+            <h2>The three apps at a glance</h2>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">App</th><th scope="col">Ratings</th><th scope="col">Where you read</th><th scope="col">What it shows from Zenn</th><th scope="col">Account</th></tr></thead><tbody><tr><th scope="row">WidgetZenn (my app)</th><td>2</td><td>Home Screen widget</td><td>Tech or Ideas trend, your choice</td><td>Not needed</td></tr><tr><th scope="row">ZennWidget</th><td>4</td><td>Widget</td><td>A list of articles. Which list is not mentioned</td><td>Not mentioned</td></tr><tr><th scope="row">Feedly</th><td>9,023</td><td>In the app</td><td>Any RSS you add, trends or topics</td><td>Feedly account required</td></tr></tbody></table></div>
+            <h2>Each app, one by one</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/9f/bb/8e/9fbb8e03-2106-0221-e017-5eef7173c2e7/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">I made this</span>
+                    <h3 class="guide-app-name">WidgetZenn</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · 2 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id1597103122" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>It lists Zenn&#x27;s trending articles in a Home Screen widget. For each widget, you choose Tech for technical posts or Ideas for posts beyond code, like careers and how teams build things.</p>
+            <p>You can place it in small, medium, or large, plus extra large on iPad, and tapping an article opens the original on Zenn. The app keeps a history of what you&#x27;ve read and shows your top 5 most-read tags and authors.</p>
+            <p>Everything is free, with ads in the app. It&#x27;s not an official Zenn app.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/f2/28/9f/f2289f95-33a5-8e16-d645-98794b29c727/AppIcon-0-0-1x_U007emarketing-0-5-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">ZennWidget</h3>
+                    <p class="guide-app-meta">taishin miyamoto · 4 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6448756495" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>It shows a list of Zenn articles in a widget. According to its description, the goal is to let you see articles without visiting the website.</p>
+            <p>The description doesn&#x27;t say which list it shows, what widget sizes it supports, or anything about pricing.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/05/8b/a7/058ba714-0832-732a-1c9f-30d76a63d23f/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Feedly - Smart News Reader</h3>
+                    <p class="guide-app-meta">Feedly Inc. · 9,023 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id396069556" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>It&#x27;s an RSS reader with 9,023 ratings. You can gather the sources you follow, like news sites, blogs, and YouTube channels, in one place.</p>
+            <p>Add Zenn&#x27;s trending RSS feed and you can read it in the same list as your other tech blogs. You need a Feedly account to use it, and features like tracking keywords are part of Feedly Pro.</p>
+            <h2>Which one to pick</h2>
+            <ul class="guide-list"><li>If you follow other sites besides Zenn, add the RSS feed to Feedly</li><li>If you want Zenn&#x27;s trending headlines on your Home Screen, a widget app</li><li>If you want Tech and Ideas in separate widgets and to see what you tend to read, WidgetZenn</li></ul>
+            <h2>FAQ</h2>
+            <dl class="guide-faq">
+                <dt>Is there an official Zenn app for iPhone?</dt><dd>When I searched the App Store for Zenn on November 15, 2026, no official Zenn app came up. Both widget apps in this article are unofficial apps made by individual developers.</dd>
+                <dt>Can I follow just one topic?</dt><dd>Zenn publishes RSS feeds for each topic too, so you can follow one with an RSS reader. WidgetZenn only shows the trending lists.</dd>
+                <dt>Are they free?</dt><dd>All three are free to download. WidgetZenn is completely free and shows ads.</dd>
+            </dl>
+            <p>WidgetZenn only has two ratings so far, so if you check it on your widget every morning, I&#x27;d love to hear from you ☕</p>
+            <div class="guide-notes">Features and rating counts were checked against each app&#x27;s App Store description on November 15, 2026, and the Zenn RSS address was checked the same day. Things may change with updates.</div>
+        </div>
+
+        <nav class="post-navigation">
+            <img class="tk-char tk-char--post" src="/assets/images/character-hang.png" alt="" width="381" height="208">
+            <a href="/blog/guides/" class="nav-link-wrapper"><span>&larr; <span class="i18n-ja">困りごとから選ぶアプリの一覧へ</span><span class="i18n-en">All guides: apps for everyday problems</span></span></a>
+        </nav>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
+                    <p class="footer-description"><span class="i18n-ja">誰も作らないものを、まじめに作る</span><span class="i18n-en">I make things nobody else would, and I make them seriously</span></p>
+                </div>
+                <div class="footer-nav">
+                    <a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
+                    <a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
+                    <a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
+                    <a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ryo Tsuzukihashi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

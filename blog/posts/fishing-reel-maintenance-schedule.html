@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/js/lang.js"></script>
+    <!-- このページは scripts/build_guides.py が docs/guides/fishing-reel-maintenance-schedule.json から作る。直すのは JSON のほう -->
+    <title>リールのメンテナンス頻度を釣行の回数で数えるアプリ - Blog | Ryo Tsuzukihashi</title>
+    <meta name="description" content="リールの水洗い、注油、オーバーホール、ライン交換の頻度を、釣行の回数と日数の両方で数えて知らせるアプリReelKeepを紹介します。最初に入っている目安と、無料で使える範囲も書いています。作者が書いています。">
+    <meta name="title-en" content="An App That Counts Your Fishing Trips to Time Reel Maintenance - Blog | Ryo Tsuzukihashi">
+    <meta name="description-en" content="How ReelKeep, an app I made, counts both fishing trips and days to remind you about rinsing, oiling, overhauls, and line changes for your reels. Includes the default intervals and what&#x27;s free. Written by the maker.">
+    <link rel="canonical" href="https://tsuzukit.com/blog/posts/fishing-reel-maintenance-schedule.html">
+
+    <!-- OGP -->
+    <meta property="og:title" content="リールのメンテナンス頻度を釣行の回数で数えるアプリ">
+    <meta property="og:description" content="リールの水洗い、注油、オーバーホール、ライン交換の頻度を、釣行の回数と日数の両方で数えて知らせるアプリReelKeepを紹介します。最初に入っている目安と、無料で使える範囲も書いています。作者が書いています。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://tsuzukit.com/blog/posts/fishing-reel-maintenance-schedule.html">
+    <meta property="og:image" content="https://tsuzukit.com/assets/images/posts/fishing-reel-maintenance-schedule.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://tsuzukit.com/assets/images/posts/fishing-reel-maintenance-schedule.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-dark-32x32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-dark-16x16.png" media="(prefers-color-scheme: dark)">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERPQ1EGLH');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8240751277462688"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
+    <link rel="stylesheet" href="/assets/css/guide.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "リールのメンテナンス頻度を釣行の回数で数えるアプリ",
+      "description": "リールの水洗い、注油、オーバーホール、ライン交換の頻度を、釣行の回数と日数の両方で数えて知らせるアプリReelKeepを紹介します。最初に入っている目安と、無料で使える範囲も書いています。作者が書いています。",
+      "image": "https://tsuzukit.com/assets/images/posts/fishing-reel-maintenance-schedule.webp",
+      "datePublished": "2026-11-15",
+      "dateModified": "2026-11-15",
+      "inLanguage": "ja",
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "mainEntityOfPage": "https://tsuzukit.com/blog/posts/fishing-reel-maintenance-schedule.html",
+      "about": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "ReelKeep 釣具ケア管理",
+          "url": "https://apps.apple.com/jp/app/id6784576527",
+          "operatingSystem": "iOS"
+        }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "ReelKeep 釣具ケア管理",
+      "operatingSystem": "iOS",
+      "applicationCategory": "UtilitiesApplication",
+      "url": "https://apps.apple.com/jp/app/id6784576527",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "無料で使えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "無料で入れられて、リール1台とケア項目3つまで使えます。2台以上なら有料のプレミアムです。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "淡水でしか釣りをしません。",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "釣具を登録すると、海水後の水洗い、ライン交換、オーバーホールの3つが最初に入ります。淡水だけなら、水洗いの項目を消すか周期を延ばしてください。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "オーバーホールは自分でやるものですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "アプリは時期を知らせるだけです。分解や整備は、リールのメーカーか釣具店に相談してください。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tsuzukit.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://tsuzukit.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "困りごとから選ぶアプリ",
+          "item": "https://tsuzukit.com/blog/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "リールのメンテナンス頻度を釣行の回数で数えるアプリ",
+          "item": "https://tsuzukit.com/blog/posts/fishing-reel-maintenance-schedule.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">TsuzuKit</a>
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/portfolio/" class="nav-link">Portfolio</a>
+                <a href="/blog/" class="nav-link active">Blog</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post -->
+    <article class="blog-post">
+        <header class="post-header">
+            <div class="post-meta">
+                <span class="post-date">2026.11.15</span>
+                <span class="post-category"><span class="i18n-ja">アプリの選び方</span><span class="i18n-en">App guides</span></span>
+                <span class="post-reading-time"><span class="i18n-ja">3分で読める</span><span class="i18n-en">3 min read</span></span>
+            </div>
+            <h1 class="post-title"><span class="i18n-ja">リールのメンテナンス頻度を釣行の回数で数えるアプリ</span><span class="i18n-en">An App That Counts Your Fishing Trips to Time Reel Maintenance</span></h1>
+        </header>
+        <figure class="post-illustration guide-illustration"><img src="/assets/images/posts/fishing-reel-maintenance-schedule.webp" width="1200" height="800" alt="釣りから帰って、リールをホースのシャワーで水洗いするキャラクター" data-en-alt="Back from fishing, the character gently rinses a spinning reel with a hose shower" fetchpriority="high"></figure>
+
+        <div class="post-content guide i18n-ja">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">先に答え</p>
+                <p>リールの手入れには、釣りに行った回数で近づくものと、日数で近づくものがあります。正しい頻度はリールの説明書と釣具店に聞くのが確かです。決めた頻度を覚えておくのが面倒なら、僕が作ったReelKeepが回数と日数を別々に数えて、時期が来たら知らせます。</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">書いた人 <a href="https://tsuzukit.com/about/">續橋 涼</a>（@tsuzuki817）</p>
+                    <p class="guide-byline-bio">2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。ReelKeepの作者です。</p>
+                    <p class="guide-byline-date">公開 <time datetime="2026-11-15">2026.11.15</time> · 更新 <time datetime="2026-11-15">2026.11.15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">この記事は、ReelKeepを作った僕が書いています。App Storeで比べられるアプリが見つからなかったので、自分のアプリ1本の紹介です。機能はアプリのコードとApp Storeの説明文で確かめました（2026年11月15日時点）。</p>
+            <h2>回数で近づく手入れと、日数で近づく手入れ</h2>
+            <p>リールの手入れの時期は、1つの数え方では決まりません。オーバーホールや注油は、釣りに行った回数で近づきます。ラインの交換やドラグの点検は、使わなくても日数で近づきます。</p>
+            <p>どのくらいの頻度がいいかは、リールの種類や海か川か、行く回数で変わります。リールの説明書を見るか、買った釣具店で聞くのが確かです。</p>
+            <h2>ReelKeepでできること</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/67/83/30/6783306e-8127-8fe6-4669-23711751d540/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">僕が作ったアプリ</span>
+                    <h3 class="guide-app-name">ReelKeep 釣具ケア管理</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · App Storeの評価 0件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6784576527" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>リールやロッドを登録して、釣りに行ったら釣行を記録します。手入れの項目ごとに、回数で数えるか日数で数えるかが決まっていて、あと何釣行、あと何日という形で残りが出ます。</p>
+            <p>最初から入っている目安はこうです。どれも周期と名前を自分で直せます。</p>
+            <ul class="guide-list"><li>海で使ったあとの水洗いは毎回</li><li>ベアリングの注油は20釣行ごと</li><li>オーバーホールは50釣行ごと</li><li>ライン交換とドラグの点検は90日ごと</li><li>ギアのグリスアップとハンドルのガタ点検は180日ごと</li><li>サビの点検と全体の清掃は30日ごと</li></ul>
+            <p>日数で数える項目は、3日前と前日と当日に知らせます。回数で数える項目は、近づいたら次の朝に1回知らせて、目安を超えたら済ませるまで毎朝知らせます。水洗いは1釣行ごとなので、釣行を記録すると時期を過ぎた扱いになり、洗うまで毎朝声をかけます。</p>
+            <p>手入れのたびに履歴が残って、費用も一緒に記録できます。ホーム画面のウィジェットで、次に手入れが要る釣具と残りの回数や日数も見られます。</p>
+            <p>無料だと釣具1台とケア項目3つまで登録できます。プレミアムで釣具も項目も無制限になり、全期間の履歴と釣行のログ、保管場所ごとの分け方が使えて、広告が消えます。iPhone専用です。</p>
+            <h2>ほかのアプリと比べなかった理由</h2>
+            <p>App Storeで釣具の管理アプリを探すと、持っているルアーやロッドの一覧、釣果の記録をするアプリは見つかりました。手入れの時期を数えて知らせるアプリは、2026年11月15日の時点では見つけられませんでした。</p>
+            <h2>アプリを入れたくないなら</h2>
+            <p>ラインの交換のように日数で決まるものは、iPhoneのリマインダーで繰り返しを設定すれば済みます。回数で決まるものは、釣行のたびに手帳やメモに正の字をつけて数える方法もあります。</p>
+            <h2>よくある質問</h2>
+            <dl class="guide-faq">
+                <dt>無料で使えますか？</dt><dd>無料で入れられて、リール1台とケア項目3つまで使えます。2台以上なら有料のプレミアムです。</dd>
+                <dt>淡水でしか釣りをしません。</dt><dd>釣具を登録すると、海水後の水洗い、ライン交換、オーバーホールの3つが最初に入ります。淡水だけなら、水洗いの項目を消すか周期を延ばしてください。</dd>
+                <dt>オーバーホールは自分でやるものですか？</dt><dd>アプリは時期を知らせるだけです。分解や整備は、リールのメーカーか釣具店に相談してください。</dd>
+            </dl>
+            <p>ReelKeepはまだ評価が0件なので、釣り好きの人からの声が届いたらうれしいです🎣</p>
+            <div class="guide-notes">機能は2026年11月15日にアプリのコードとApp Storeの説明文で確かめたものです。アップデートで変わることがあります。手入れの間隔は一般的な目安なので、リールの説明書や釣具店の案内に合わせて直してください。</div>
+        </div>
+
+        <div class="post-content guide i18n-en">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">Short answer</p>
+                <p>Some reel care comes due by how many times you go fishing, and some by how many days pass. For the right intervals, check your reel&#x27;s manual or ask a tackle shop. If keeping track is the hard part, ReelKeep, which I made, counts trips and days separately and notifies you when something is due.</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">Written by <a href="https://tsuzukit.com/about/">Ryo Tsuzukihashi</a> (@tsuzuki817)</p>
+                    <p class="guide-byline-bio">I&#x27;ve been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made ReelKeep.</p>
+                    <p class="guide-byline-date">Published <time datetime="2026-11-15">2026-11-15</time> · Updated <time datetime="2026-11-15">2026-11-15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">I made ReelKeep, and I wrote this article. I couldn&#x27;t find a comparable app on the App Store, so this covers my app only. Features were checked against the app&#x27;s code and its App Store description as of November 15, 2026.</p>
+            <h2>Care that comes due by trips, and care that comes due by days</h2>
+            <p>There isn&#x27;t one way to count when your reel needs care. Overhauls and oiling come due by how many times you go fishing. Line changes and drag checks come due with time, even if the reel sits unused.</p>
+            <p>How often depends on the type of reel, whether you fish salt or fresh water, and how often you go. Check your reel&#x27;s manual or ask the tackle shop where you bought it.</p>
+            <h2>What ReelKeep does</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/67/83/30/6783306e-8127-8fe6-4669-23711751d540/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">I made this</span>
+                    <h3 class="guide-app-name">ReelKeep: Fishing Reel Care</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · 0 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6784576527" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>Register your reels and rods, and log each fishing trip. Each care item is counted either by trips or by days, and the app shows what&#x27;s left as so many trips or so many days.</p>
+            <p>These are the default intervals. You can change the interval and the name of every one.</p>
+            <ul class="guide-list"><li>Rinsing after saltwater use, every trip</li><li>Oiling the bearings, every 20 trips</li><li>Overhaul, every 50 trips</li><li>Line change and drag check, every 90 days</li><li>Greasing the gears and checking the handle for play, every 180 days</li><li>Checking for rust and cleaning the whole reel, every 30 days</li></ul>
+            <p>For items counted by days, it notifies you 3 days before, the day before, and on the day. For items counted by trips, it sends one notification the next morning when one is getting close, and every morning once it&#x27;s past due until you do it. Rinsing is set to every trip, so logging a trip makes it overdue, and it keeps reminding you every morning until you rinse.</p>
+            <p>Every time you do some care, it&#x27;s added to the history, along with what it cost. A Home Screen widget shows which gear needs care next and how many trips or days are left.</p>
+            <p>The free version holds 1 piece of gear and 3 care items. Premium makes both unlimited, adds the full history, a trip log, and grouping by storage spot, and removes the ads. It&#x27;s iPhone only.</p>
+            <h2>Why there&#x27;s no comparison</h2>
+            <p>Searching the App Store, I found apps for listing your lures and rods and for logging catches. As of November 15, 2026, I couldn&#x27;t find one that counts and reminds you when gear needs care.</p>
+            <h2>If you&#x27;d rather not install an app</h2>
+            <p>For things that go by days, like line changes, a repeating reminder in the iPhone Reminders app is enough. For things that go by trips, you can keep a tally in a notebook or a note every time you go fishing.</p>
+            <h2>FAQ</h2>
+            <dl class="guide-faq">
+                <dt>Is it free?</dt><dd>It&#x27;s free to download and covers 1 reel and 3 care items. For two or more, you need the paid Premium.</dd>
+                <dt>I only fish in fresh water.</dt><dd>When you register gear, three items are added to start with: rinsing after salt water, line change, and overhaul. If you only fish fresh water, delete the rinse item or lengthen its interval.</dd>
+                <dt>Should I do the overhaul myself?</dt><dd>The app only tells you when. For taking the reel apart and servicing it, talk to the manufacturer or a tackle shop.</dd>
+            </dl>
+            <p>ReelKeep has no ratings yet, so I&#x27;d be happy to hear from anyone who loves fishing 🎣</p>
+            <div class="guide-notes">Features were checked against the app&#x27;s code and App Store description on November 15, 2026, and may change with updates. The care intervals are general guidelines, so adjust them to your reel&#x27;s manual and your tackle shop&#x27;s advice.</div>
+        </div>
+
+        <nav class="post-navigation">
+            <img class="tk-char tk-char--post" src="/assets/images/character-hang.png" alt="" width="381" height="208">
+            <a href="/blog/guides/" class="nav-link-wrapper"><span>&larr; <span class="i18n-ja">困りごとから選ぶアプリの一覧へ</span><span class="i18n-en">All guides: apps for everyday problems</span></span></a>
+        </nav>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
+                    <p class="footer-description"><span class="i18n-ja">誰も作らないものを、まじめに作る</span><span class="i18n-en">I make things nobody else would, and I make them seriously</span></p>
+                </div>
+                <div class="footer-nav">
+                    <a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
+                    <a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
+                    <a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
+                    <a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ryo Tsuzukihashi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

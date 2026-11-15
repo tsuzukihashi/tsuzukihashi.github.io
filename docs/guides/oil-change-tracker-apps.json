@@ -1,0 +1,455 @@
+{
+  "slug": "oil-change-tracker-apps",
+  "date_published": "2026-11-15",
+  "date_updated": "2026-11-15",
+  "search_phrase": {
+    "ja": "オイル交換 管理 アプリ",
+    "en": "oil change tracker app"
+  },
+  "evidence": "2026-11-15 に Google の検索候補で「オイル交換 管理」を引くと、13件中4件が「アプリ」付き（オイル交換 管理アプリ、車 オイル交換 管理アプリ など）だった。「オイル交換 記録」でも11件中2件が「記録アプリ」、「オイル交換 お知らせ」には「オイル交換 お知らせ アプリ」が出た。「オイル交換 アプリ」の候補はオートバックスやイエローハットなどお店の予約アプリが中心なので、自分で時期を管理する語に絞った。同じ日に App Store で「オイル交換 管理」を検索すると15本が並び、評価は0〜710件。",
+  "title": {
+    "ja": "オイル交換の時期を忘れないアプリ4選",
+    "en": "4 Apps That Remind You When Your Oil Change Is Due"
+  },
+  "description": {
+    "ja": "オイル交換の時期を管理するアプリを4本比べました。走行距離と期間のどちらで知らせるか、車検の通知、無料で登録できる台数の違いをまとめています。CarKeepの作者が書いています。",
+    "en": "I compared four iPhone apps for keeping track of oil changes: whether they remind you by mileage or by time, car inspection reminders, and how many cars you can add for free. Written by the maker of CarKeep."
+  },
+  "excerpt": {
+    "ja": "走行距離か期間か、車検の通知、無料の台数で4本を比べました。CarKeepを作った僕が、自分のアプリも入れて書いています。",
+    "en": "Four apps compared on mileage versus time, inspection reminders, and how many cars are free. I made CarKeep, and it's one of the four."
+  },
+  "category": {
+    "ja": "アプリの選び方",
+    "en": "App guides"
+  },
+  "reading_minutes": 4,
+  "author": {
+    "name": {
+      "ja": "續橋 涼",
+      "en": "Ryo Tsuzukihashi"
+    },
+    "handle": "tsuzuki817",
+    "bio": {
+      "ja": "2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。CarKeepの作者です。",
+      "en": "I've been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made CarKeep."
+    },
+    "url": "https://tsuzukit.com/about/",
+    "same_as": [
+      "https://x.com/tsuzuki817"
+    ]
+  },
+  "tldr": {
+    "ja": "前回の交換から決めた月数で知らせてほしいなら、オイル交換管理か整備記録簿で足ります。記録をためて費用を集計したいなら、評価710件のクルマ メンテナンス・日記。あと何kmで交換かを距離で知りたい人は、僕が作ったCarKeepも見てみてください。",
+    "en": "If a reminder a set number of months after your last oil change is enough, Oil Change Tracker or My Garage Logbook will do. If you mostly want to build up a log and total your costs, the widely used Car Maintenance Diary has 710 ratings. If you'd rather know how many kilometers are left until your next change, take a look at CarKeep, which I made."
+  },
+  "disclosure": {
+    "ja": "この記事は、CarKeepを作った僕が書いています。ほかの3本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。",
+    "en": "I made CarKeep, and I wrote this article. The other three apps are by developers I don't know, and I haven't received money or anything else from them. Everything compared here comes from each app's App Store description and rating count as of November 15, 2026."
+  },
+  "own_app": "6785027821",
+  "app_category": "UtilitiesApplication",
+  "apps": [
+    {
+      "id": "6785027821",
+      "name": {
+        "ja": "CarKeep 愛車メンテ管理",
+        "en": "CarKeep: Car Maintenance"
+      },
+      "short": {
+        "ja": "CarKeep",
+        "en": "CarKeep"
+      },
+      "developer": "Ryo Tsudukihashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/17/64/a5/1764a5d0-5b28-9208-e0d7-1348e2ae50b1/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6785027821",
+      "android_url": null,
+      "rating_count": 0
+    },
+    {
+      "id": "6747307434",
+      "name": {
+        "ja": "オイル交換管理",
+        "en": "Oil Change Tracker: Car Log"
+      },
+      "short": {
+        "ja": "オイル交換管理",
+        "en": "Oil Change Tracker"
+      },
+      "developer": "Horikiri Seiu",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/03/d5/49/03d5493b-23ed-e843-0940-96aed3c387a8/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6747307434",
+      "android_url": null,
+      "rating_count": 7
+    },
+    {
+      "id": "6755451991",
+      "name": {
+        "ja": "整備記録簿 – 車検・オイル交換を忘れない",
+        "en": "My Garage Logbook"
+      },
+      "short": {
+        "ja": "整備記録簿",
+        "en": "My Garage Logbook"
+      },
+      "developer": "Hiroaki Hirayama",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/29/b9/8f/29b98f04-a124-0649-7a87-810d3fd7c275/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6755451991",
+      "android_url": null,
+      "rating_count": 9
+    },
+    {
+      "id": "1407151450",
+      "name": {
+        "ja": "クルマ メンテナンス・日記",
+        "en": "Car Maintenance Diary"
+      },
+      "short": {
+        "ja": "クルマ メンテナンス・日記",
+        "en": "Car Maintenance Diary"
+      },
+      "developer": "Green Speed Inc.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ac/7b/1a/ac7b1ade-5017-5003-d97b-10d009db801b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id1407151450",
+      "android_url": null,
+      "rating_count": 710
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ja": "4本をざっくり比べる",
+        "en": "The four apps at a glance"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "違いが出るのは、オイル交換を月数で知らせるか、走った距離で知らせるかです。記録を残すのが中心のアプリもあります。",
+            "en": "The main difference is whether an app reminds you by months or by the distance you've driven. One of them is mainly for keeping records."
+          }
+        },
+        {
+          "type": "table",
+          "head": [
+            {
+              "ja": "アプリ",
+              "en": "App"
+            },
+            {
+              "ja": "評価の件数",
+              "en": "Ratings"
+            },
+            {
+              "ja": "オイル交換の通知",
+              "en": "Oil change reminder"
+            },
+            {
+              "ja": "車検の通知",
+              "en": "Inspection reminder"
+            },
+            {
+              "ja": "無料で登録できる台数",
+              "en": "Free vehicles"
+            },
+            {
+              "ja": "バイク",
+              "en": "Motorcycles"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ja": "CarKeep（僕のアプリ）",
+                "en": "CarKeep (my app)"
+              },
+              {
+                "ja": "0件",
+                "en": "0"
+              },
+              {
+                "ja": "走行距離で。過ぎたら交換するまで毎日",
+                "en": "By mileage, then daily until you change it"
+              },
+              {
+                "ja": "3日前、前日、当日。過ぎたら毎日",
+                "en": "3 days before, the day before, on the day, then daily"
+              },
+              {
+                "ja": "1台。ケア項目は3つまで",
+                "en": "1, with up to 3 items"
+              },
+              {
+                "ja": "車向け",
+                "en": "Made for cars"
+              }
+            ],
+            [
+              {
+                "ja": "オイル交換管理",
+                "en": "Oil Change Tracker"
+              },
+              {
+                "ja": "7件",
+                "en": "7"
+              },
+              {
+                "ja": "前回から決めた月数で",
+                "en": "A set number of months after the last change"
+              },
+              {
+                "ja": "3か月前から前日の間で選べる",
+                "en": "Your choice, from 3 months to 1 day before"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "対応",
+                "en": "Yes"
+              }
+            ],
+            [
+              {
+                "ja": "整備記録簿",
+                "en": "My Garage Logbook"
+              },
+              {
+                "ja": "9件",
+                "en": "9"
+              },
+              {
+                "ja": "あり。基準は説明文に記載なし",
+                "en": "Yes, basis not mentioned"
+              },
+              {
+                "ja": "あり",
+                "en": "Yes"
+              },
+              {
+                "ja": "1台。リマインダーは3件まで",
+                "en": "1, with up to 3 reminders"
+              },
+              {
+                "ja": "対応",
+                "en": "Yes"
+              }
+            ],
+            [
+              {
+                "ja": "クルマ メンテナンス・日記",
+                "en": "Car Maintenance Diary"
+              },
+              {
+                "ja": "710件",
+                "en": "710"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "説明文に記載なし。複数台に対応",
+                "en": "Not mentioned. Supports multiple cars"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "1本ずつ見ていく",
+        "en": "Each app, one by one"
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "id": "6785027821"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "オイル交換やタイヤローテーションは走行距離で、車検やバッテリーは期間で数えます。車を登録すると、オイル交換、タイヤローテーション、車検の3つが最初から入ります。",
+            "en": "Oil changes and tire rotations are counted by distance, and the car inspection and battery by time. When you add a car, oil change, tire rotation, and inspection are set up from the start."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "メーターの距離を入れると、あと約何kmで交換かを出します。目安の距離を超えたら、交換したと記録するまで毎朝知らせます。そのぶん、ときどきメーターの数字を入れる手間はあります。",
+            "en": "Enter the number on your odometer and it shows roughly how many kilometers are left until the next change. Once you pass that distance, it reminds you every morning until you log the change. The trade-off is that you need to type in your odometer reading now and then."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "無料だと車1台、ケア項目3つまでです。2台目や項目を増やすのはプレミアムです。iPhone専用です。",
+            "en": "The free version covers one car and up to 3 items. A second car or more items needs Premium. It's iPhone only."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6747307434"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "前回のオイル交換から決めた月数がたつと知らせてくれます。交換した日と距離、オイルフィルターも一緒に替えたかを記録できます。",
+            "en": "It reminds you once a set number of months has passed since your last oil change. You can log the date, the mileage, and whether you also replaced the oil filter."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "車検は3か月前から前日まで、好きなタイミングで知らせます。車とバイクのどちらにも使えて、記録はCSVで書き出せます。アカウントの登録は要りません。",
+            "en": "For the car inspection, you choose when to be reminded, anywhere from 3 months to the day before. It works for both cars and motorcycles, exports your records as CSV, and doesn't need an account."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6755451991"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "オイル交換、車検、12か月点検をまとめて知らせます。バイクにも対応していて、250cc以下なら車検のかわりに自賠責の期限を登録できます。",
+            "en": "It reminds you about oil changes, inspections, and 12-month checks in one place. It also handles motorcycles, and for bikes up to 250cc you can track the liability insurance expiry instead of an inspection."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "整備の記録はPDFで書き出せるので、車を売るときに持っていけます。無料は1台、リマインダー3件までで、それより多いと月額か年額のProプランです。",
+            "en": "You can export your records as a PDF to take along when you sell the car. The free plan covers one vehicle and 3 reminders, and more than that needs the monthly or yearly Pro plan."
+          }
+        },
+        {
+          "type": "app",
+          "id": "1407151450"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "評価が710件あって、この中ではいちばん使われています。整備とドライブの日記を記録して、金額を入れれば年ごとに集計できます。車は何台でも登録できます。",
+            "en": "With 710 ratings, it's the most used of the four. You keep a diary of maintenance and drives, and if you enter amounts it totals them by year. You can add several cars."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "交換の時期を通知する機能は、説明文には書かれていませんでした。忘れないためというより、記録をためていく人向けですね。",
+            "en": "The description doesn't mention any reminder for when maintenance is due. It's more for people who want to build up a record than for people who keep forgetting."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "アプリを入れたくないなら",
+        "en": "If you'd rather not install an app"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "交換したお店でもらうシールを、運転席から見える場所に貼っておくのがいちばん手軽です。次の交換の目安が書いてあります。",
+            "en": "The easiest way is the sticker you get from the shop after an oil change, stuck where you can see it from the driver's seat. It shows when the next change is due."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "車種によっては、メーターにオイル交換の時期を出すものもあります。自分の車にあるかは、取扱説明書で確かめてみてください。",
+            "en": "Some cars also show an oil change reminder on the dashboard. Check your owner's manual to see if yours does."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "どれを選ぶか",
+        "en": "Which one to pick"
+      },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "ja": "前回から何か月で知らせてくれれば十分なら、オイル交換管理",
+              "en": "If a reminder a set number of months after the last change is enough, Oil Change Tracker"
+            },
+            {
+              "ja": "バイクも一緒に管理したい、記録をPDFで持ち出したいなら、整備記録簿",
+              "en": "If you also have a motorcycle, or want to export your records as a PDF, My Garage Logbook"
+            },
+            {
+              "ja": "通知より、整備とドライブの記録と費用をためたいなら、クルマ メンテナンス・日記",
+              "en": "If you care more about logging maintenance, drives, and costs than about reminders, Car Maintenance Diary"
+            },
+            {
+              "ja": "あと何kmで交換かを見たい、過ぎたら毎日言ってほしいなら、CarKeep",
+              "en": "If you want to see how many kilometers are left, and a daily nudge once you pass it, CarKeep"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "ja": "無料で使えますか？",
+        "en": "Are they free?"
+      },
+      "a": {
+        "ja": "4本とも無料で入れられます。CarKeepと整備記録簿は無料だと1台までで、台数を増やすのは有料です。",
+        "en": "All four are free to download. CarKeep and My Garage Logbook cover one vehicle for free, and more vehicles cost money."
+      }
+    },
+    {
+      "q": {
+        "ja": "バイクのオイル交換にも使えますか？",
+        "en": "Can I use them for a motorcycle?"
+      },
+      "a": {
+        "ja": "オイル交換管理と整備記録簿は、説明文にバイク対応と書いてあります。CarKeepは車向けに作っています。",
+        "en": "Oil Change Tracker and My Garage Logbook both say in their descriptions that they support motorcycles. CarKeep is made for cars."
+      }
+    },
+    {
+      "q": {
+        "ja": "オイル交換は何kmごとにすればいいですか？",
+        "en": "How many kilometers should I go between oil changes?"
+      },
+      "a": {
+        "ja": "車やオイルによって違います。取扱説明書を見るか、整備をお願いしているお店で聞いてください。どのアプリも、距離や期間は自分で変えられます。",
+        "en": "It depends on the car and the oil. Check your owner's manual or ask the shop that services your car. Every app here lets you change the distance or time yourself."
+      }
+    }
+  ],
+  "closing": {
+    "ja": "CarKeepはまだ評価が0件なので、最初の1件をもらえたらうれしいです🚗",
+    "en": "CarKeep doesn't have any ratings yet, so I'd be really happy to get the first one 🚗"
+  },
+  "notes": {
+    "ja": "各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。CarKeepの機能はアプリのコードで確かめました。整備の時期は、車の取扱説明書と整備工場の案内に従ってください。",
+    "en": "Features and rating counts were checked against each app's App Store description on November 15, 2026, and may change with updates. CarKeep's features were checked against the app's own code. Follow your owner's manual and your mechanic's advice on when to service your car."
+  },
+  "illustration": {
+    "scene": "朝の駐車場。キャラが小さな車のボンネットの横に立ち、オイルの缶を片手に持っている。もう片方の手のスマホ（文字なし）から、道が少しずつ伸びていって旗に届く形の合図が出ていて、キャラはその旗を見上げている。",
+    "alt": {
+      "ja": "オイルの缶を持って、スマホから伸びる道の先の旗を見上げるキャラクター",
+      "en": "The character holding an oil can next to a small car, looking up at a flag at the end of a road rising from their phone"
+    }
+  }
+}

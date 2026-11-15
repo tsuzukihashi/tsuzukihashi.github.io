@@ -1,0 +1,455 @@
+{
+  "slug": "otaku-concert-log-apps",
+  "date_published": "2026-11-15",
+  "date_updated": "2026-11-15",
+  "search_phrase": {
+    "ja": "現場 記録 アプリ",
+    "en": "concert log app for fans"
+  },
+  "evidence": "2026-11-15 に Google の検索候補で「現場 記録」を引くと、10件中の上位2件が「現場 記録 アプリ オタク」と「現場 記録 アプリ」だった。「セトリ 記録」でも4件中2件が「アプリ」付き。同じ日の App Store で「推し活 記録」「現場 記録」を検索すると、relight 353件、推しライフ 60件、TicketList 26件などの記録アプリが並んでいた。",
+  "title": {
+    "ja": "推しの現場を記録するアプリ4選",
+    "en": "4 Apps for Logging the Shows You Go To"
+  },
+  "description": {
+    "ja": "ライブやイベントの現場を記録するアプリを4本比べました。セトリの入れ方、グッズや使ったお金、現場の前の通知の違いをまとめています。OshiLogの作者が書いています。",
+    "en": "I compared four iPhone apps for logging concerts and fan events: how you enter setlists, whether merch and spending are tracked, and reminders before a show. Written by the maker of OshiLog."
+  },
+  "excerpt": {
+    "ja": "セトリの入れ方、グッズ、使ったお金、現場の前の通知で4本を比べました。OshiLogを作った僕が書いています。",
+    "en": "Four apps compared on setlists, merch, spending, and reminders before a show. I made OshiLog, and it's one of the four."
+  },
+  "category": {
+    "ja": "アプリの選び方",
+    "en": "App guides"
+  },
+  "reading_minutes": 4,
+  "author": {
+    "name": {
+      "ja": "續橋 涼",
+      "en": "Ryo Tsuzukihashi"
+    },
+    "handle": "tsuzuki817",
+    "bio": {
+      "ja": "2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。OshiLogの作者です。",
+      "en": "I've been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made OshiLog."
+    },
+    "url": "https://tsuzukit.com/about/",
+    "same_as": [
+      "https://x.com/tsuzuki817"
+    ]
+  },
+  "tldr": {
+    "ja": "いちばん使われているのは評価353件のrelightで、チケットやセトリを写真から読み取れます。座席や撮影OKの曲を見たいなら推しライフ、セトリと感想だけならTicketList。グッズと推し活費も一緒に残したい人は、僕が作ったOshiLogも見てみてください。",
+    "en": "The most widely used is relight, with 353 ratings, which can read tickets and setlists from photos. For seat info and which songs you can film, there's Oshi Life. For just setlists and notes, TicketList. If you want your merch and spending in the same place, take a look at OshiLog, which I made."
+  },
+  "disclosure": {
+    "ja": "この記事は、OshiLogを作った僕が書いています。ほかの3本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。",
+    "en": "I made OshiLog, and I wrote this article. The other three apps are by developers I don't know, and I haven't received money or anything else from them. Everything compared here comes from each app's App Store description and rating count as of November 15, 2026."
+  },
+  "own_app": "6788375876",
+  "app_category": "LifestyleApplication",
+  "apps": [
+    {
+      "id": "6788375876",
+      "name": {
+        "ja": "OshiLog - 推し活ノート",
+        "en": "OshiLog - Fandom Tracker"
+      },
+      "short": {
+        "ja": "OshiLog",
+        "en": "OshiLog"
+      },
+      "developer": "Ryo Tsudukihashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a9/3b/ab/a93bab2e-7fe0-79c9-580e-900271a2cac4/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6788375876",
+      "android_url": null,
+      "rating_count": 0
+    },
+    {
+      "id": "6759641030",
+      "name": {
+        "ja": "relight｜ライブ・フェスの予定と記録",
+        "en": "relight | concert plan & log"
+      },
+      "short": {
+        "ja": "relight",
+        "en": "relight"
+      },
+      "developer": "Momoka Shiramizu",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/de/2a/eb/de2aeb80-8763-af8b-fbc7-1d6bfd166162/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6759641030",
+      "android_url": null,
+      "rating_count": 353
+    },
+    {
+      "id": "6781992151",
+      "name": {
+        "ja": "推しライフ - 推し活アプリ",
+        "en": "Oshi Life - Fan Activity App"
+      },
+      "short": {
+        "ja": "推しライフ",
+        "en": "Oshi Life"
+      },
+      "developer": "Tadashi Kitsukawa",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ff/d1/0b/ffd10b19-80cd-790d-7ff9-5030c20318cc/AppIcon-0-0-1x_U007epad-0-1-sRGB-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6781992151",
+      "android_url": null,
+      "rating_count": 60
+    },
+    {
+      "id": "6470704235",
+      "name": {
+        "ja": "TicketList チケットリスト -ライブ参戦記録-",
+        "en": "TicketList - Concert Log"
+      },
+      "short": {
+        "ja": "TicketList",
+        "en": "TicketList"
+      },
+      "developer": "Chiho Inayama",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/0a/51/19/0a511955-9dcc-5c15-a80e-4627cb00d632/AppIcon-production-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6470704235",
+      "android_url": null,
+      "rating_count": 26
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ja": "4本をざっくり比べる",
+        "en": "The four apps at a glance"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "どれも現場の日付と会場は残せます。違うのは、セトリの入れ方と、グッズや使ったお金まで一緒に見られるかです。",
+            "en": "All four keep the date and venue of each show. Where they differ is how you enter the setlist, and whether your merch and spending live in the same place."
+          }
+        },
+        {
+          "type": "table",
+          "head": [
+            {
+              "ja": "アプリ",
+              "en": "App"
+            },
+            {
+              "ja": "評価の件数",
+              "en": "Ratings"
+            },
+            {
+              "ja": "セトリ",
+              "en": "Setlist"
+            },
+            {
+              "ja": "グッズ",
+              "en": "Merch"
+            },
+            {
+              "ja": "使ったお金",
+              "en": "Spending"
+            },
+            {
+              "ja": "現場の前の通知",
+              "en": "Reminders before a show"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ja": "OshiLog（僕のアプリ）",
+                "en": "OshiLog (my app)"
+              },
+              {
+                "ja": "0件",
+                "en": "0"
+              },
+              {
+                "ja": "手で入れる",
+                "en": "Typed in"
+              },
+              {
+                "ja": "写真から切り抜いて並べる",
+                "en": "Cut out from photos and displayed"
+              },
+              {
+                "ja": "今月の合計",
+                "en": "This month's total"
+              },
+              {
+                "ja": "7日前、前日、当日の朝",
+                "en": "7 days before, the day before, and that morning"
+              }
+            ],
+            [
+              {
+                "ja": "relight",
+                "en": "relight"
+              },
+              {
+                "ja": "353件",
+                "en": "353"
+              },
+              {
+                "ja": "写真から自動で読み取る",
+                "en": "Read automatically from a photo"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "チケット代の統計",
+                "en": "Ticket cost stats"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              }
+            ],
+            [
+              {
+                "ja": "推しライフ",
+                "en": "Oshi Life"
+              },
+              {
+                "ja": "60件",
+                "en": "60"
+              },
+              {
+                "ja": "説明文に記載なし。撮影OKの曲は見られる",
+                "en": "Not mentioned. Shows which songs you can film"
+              },
+              {
+                "ja": "交換リストと持ち物チェック",
+                "en": "Trade list and packing checklist"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "誕生日と記念日の通知",
+                "en": "Birthday and anniversary alerts"
+              }
+            ],
+            [
+              {
+                "ja": "TicketList",
+                "en": "TicketList"
+              },
+              {
+                "ja": "26件",
+                "en": "26"
+              },
+              {
+                "ja": "コピペでまとめて入れる",
+                "en": "Paste in all at once"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "1本ずつ見ていく",
+        "en": "Each app, one by one"
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "id": "6788375876"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "現場の日付、会場、セトリ、感想、写真、かかったお金を1ページに残せます。アプリを開くと、次の現場まであと何日かがいちばん上に出ます。",
+            "en": "Each show gets one page with the date, venue, setlist, your thoughts, a photo, and what it cost. When you open the app, the days left until your next show sit right at the top."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "現場の7日前、前日、当日の朝に通知します。グッズは写真から自動で切り抜いて、祭壇のように並べられます。今月いくら使ったかも、ひと目で見えます。",
+            "en": "It notifies you 7 days before, the day before, and on the morning of the show. Merch photos are cut out automatically and lined up like a shrine. You can also see at a glance how much you spent this month."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "無料だと推しは1人、祭壇のグッズは10個までです。現場の記録に数の上限はありません。推しを何人でも登録する、グッズを無制限にする、全期間や推し別の支出を見る、広告を消すのはプレミアムで、買い切りと週額があります。",
+            "en": "The free version covers one fave and up to 10 items of merch. There's no limit on how many shows you log. Unlimited faves and merch, spending summaries for all time or per fave, and removing ads are Premium, which comes as a one-time purchase or weekly."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6759641030"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "評価が353件あって、この中ではいちばん使われています。強いのは入力の手間の少なさです。チケットの写真やスクショ、e+などのイベントのURLから、タイトルや日付、会場を読み取ります。セトリも写真から自動で認識します。",
+            "en": "With 353 ratings, it's the most used of the four. Its strength is how little you have to type. It reads the title, date, and venue from a ticket photo, a screenshot, or an event URL from sites like e+, and it can pick up the setlist from a photo too."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "月別や年別のライブ回数、チケット代、曲のランキングも見られます。フェスや対バンはアーティストごとに分けて記録できます。写真を10枚まで保存したり、年間の統計を見たりするのは、買い切りのrelight proです。",
+            "en": "It also shows how many shows you went to by month and year, what you spent on tickets, and your most-heard songs. Festivals and multi-act shows are split by artist. Saving up to 10 photos and yearly stats are part of relight pro, a one-time purchase."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6781992151"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "現場の前に要るものがそろっているアプリです。会場、座席番号、座席表、チケット、タイムテーブル、天気にすぐたどり着けて、ライブ当日は撮影OKの曲を出演順に確認できます。",
+            "en": "This one has what you need before a show. Venue, seat number, seating chart, ticket, timetable, and weather are all close at hand, and on the day you can check which songs you can film, in running order."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "同じライブに行く人とのチャットや、QRコードでの名刺交換など、人とつながる機能が多いのも特徴です。プレミアムで変わるのは推しの登録人数の上限で、ほかの機能は無料で使えると書かれていました。",
+            "en": "It also has a lot for meeting people, like chat with others going to the same show and swapping fan cards by QR code. According to the description, Premium only lifts the limit on how many faves you can add, and everything else is free."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6470704235"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "ライブの公演名、アーティスト名、会場、座席番号、日付、セトリ、感想を残すアプリです。1枚のチケットに複数のアーティストとセトリを紐づけられます。",
+            "en": "It logs the show name, artist, venue, seat, date, setlist, and your notes. One ticket can hold several artists and their setlists."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "セトリはコピペでまとめて入れられて、月別やアーティスト別の回数も出ます。記録だけに絞った作りです。",
+            "en": "You can paste a whole setlist at once, and it counts shows by month and by artist. It's built to do the logging and not much else."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "アプリを入れたくないなら",
+        "en": "If you'd rather not install an app"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "iPhoneのカレンダーに現場を入れて、メモ欄にセトリや感想を書いておく方法もあります。予定の通知もカレンダーが出してくれます。",
+            "en": "You can put each show in your iPhone's Calendar and write the setlist and your thoughts in the notes. Calendar will remind you of it too."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "ただ、グッズや使ったお金はカレンダーには入れにくいです。あとから現場ごとに見返したいなら、専用のアプリのほうが探しやすいですね。",
+            "en": "Merch and spending don't really fit in a calendar, though. If you want to look back show by show later, a dedicated app is easier to search."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "どれを選ぶか",
+        "en": "Which one to pick"
+      },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "ja": "チケットやセトリをなるべく打ち込まずに残したいなら、relight",
+              "en": "If you want to log tickets and setlists with as little typing as possible, relight"
+            },
+            {
+              "ja": "座席や撮影OKの曲を見たい、現場で人とつながりたいなら、推しライフ",
+              "en": "If you want seat info, filming rules, and ways to meet other fans, Oshi Life"
+            },
+            {
+              "ja": "セトリと感想だけをすっきり残したいなら、TicketList",
+              "en": "If you just want setlists and notes, kept simple, TicketList"
+            },
+            {
+              "ja": "グッズと推し活費も同じアプリで見たいなら、OshiLog",
+              "en": "If you want your merch and spending in the same app, OshiLog"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "ja": "無料で使えますか？",
+        "en": "Are they free?"
+      },
+      "a": {
+        "ja": "4本とも無料で入れられます。OshiLog、relight、推しライフは、推しの人数や写真の枚数を増やすところが有料です。TicketListの課金は、説明文に書かれていませんでした。",
+        "en": "All four are free to download. OshiLog, relight, and Oshi Life charge for more, like more faves or more photos. TicketList's description doesn't mention any paid features."
+      }
+    },
+    {
+      "q": {
+        "ja": "フェスや対バンでも記録できますか？",
+        "en": "Can I log festivals and multi-act shows?"
+      },
+      "a": {
+        "ja": "relightとTicketListは、1つの現場に複数のアーティストを入れられると説明文に書いてあります。",
+        "en": "relight and TicketList both say in their descriptions that one show can hold several artists."
+      }
+    },
+    {
+      "q": {
+        "ja": "ウィジェットで次の現場までの日数を出せますか？",
+        "en": "Can a widget show the days until my next show?"
+      },
+      "a": {
+        "ja": "OshiLog、relight、推しライフの3本がホーム画面のウィジェットに出せます。",
+        "en": "OshiLog, relight, and Oshi Life can all show it in a Home Screen widget."
+      }
+    }
+  ],
+  "closing": {
+    "ja": "OshiLogはまだ評価が0件なので、最初の1件を書いてくれる人を待ってます🙏",
+    "en": "OshiLog doesn't have a single rating yet, so I'm waiting for someone to leave the first one 🙏"
+  },
+  "notes": {
+    "ja": "各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。",
+    "en": "Features and rating counts were checked against each app's App Store description on November 15, 2026, and may change with updates."
+  },
+  "illustration": {
+    "scene": "ライブ帰りの夜の駅のベンチ。キャラが紫のペンライトをひざに置き、開いたノート（文字なし、線だけ）に今日のことを書き込んでいる。ノートのページから缶バッジや小さなアクリルスタンドがふわっと浮かび上がり、横の小さな棚に順番に並んでいく。",
+    "alt": {
+      "ja": "ライブ帰りにノートへ記録するキャラクター。ページからグッズが浮かんで棚に並んでいく",
+      "en": "The character writing in a notebook after a concert, as little pieces of merch float up from the page onto a shelf"
+    }
+  }
+}

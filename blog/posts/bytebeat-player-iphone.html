@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/js/lang.js"></script>
+    <!-- このページは scripts/build_guides.py が docs/guides/bytebeat-player-iphone.json から作る。直すのは JSON のほう -->
+    <title>iPhoneでbytebeatを鳴らすアプリ3選 - Blog | Ryo Tsuzukihashi</title>
+    <meta name="description" content="1行の式を音にするbytebeatを、iPhoneで鳴らすアプリを3本比べました。式の入れ方、波形、書き出しの違いと、ブラウザで鳴らす方法をまとめています。Bytebeatの作者が書いています。">
+    <meta name="title-en" content="3 Bytebeat Player Apps for iPhone - Blog | Ryo Tsuzukihashi">
+    <meta name="description-en" content="I compared three iPhone apps that play bytebeat, the one-line formulas that turn into sound: how you write formulas, visuals, and export, plus browser players. Written by the maker of Bytebeat.">
+    <link rel="canonical" href="https://tsuzukit.com/blog/posts/bytebeat-player-iphone.html">
+
+    <!-- OGP -->
+    <meta property="og:title" content="iPhoneでbytebeatを鳴らすアプリ3選">
+    <meta property="og:description" content="1行の式を音にするbytebeatを、iPhoneで鳴らすアプリを3本比べました。式の入れ方、波形、書き出しの違いと、ブラウザで鳴らす方法をまとめています。Bytebeatの作者が書いています。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://tsuzukit.com/blog/posts/bytebeat-player-iphone.html">
+    <meta property="og:image" content="https://tsuzukit.com/assets/images/posts/bytebeat-player-iphone.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://tsuzukit.com/assets/images/posts/bytebeat-player-iphone.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-dark-32x32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-dark-16x16.png" media="(prefers-color-scheme: dark)">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERPQ1EGLH');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8240751277462688"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
+    <link rel="stylesheet" href="/assets/css/guide.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "iPhoneでbytebeatを鳴らすアプリ3選",
+      "description": "1行の式を音にするbytebeatを、iPhoneで鳴らすアプリを3本比べました。式の入れ方、波形、書き出しの違いと、ブラウザで鳴らす方法をまとめています。Bytebeatの作者が書いています。",
+      "image": "https://tsuzukit.com/assets/images/posts/bytebeat-player-iphone.webp",
+      "datePublished": "2026-11-15",
+      "dateModified": "2026-11-15",
+      "inLanguage": "ja",
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "mainEntityOfPage": "https://tsuzukit.com/blog/posts/bytebeat-player-iphone.html",
+      "about": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "Bytebeat 1行の数式が音になる",
+          "url": "https://apps.apple.com/jp/app/id6811730170",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "ByteBeat",
+          "url": "https://apps.apple.com/jp/app/id6760623496",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "Raw Byte Audio Machine",
+          "url": "https://apps.apple.com/jp/app/id6766166760",
+          "operatingSystem": "iOS"
+        }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Bytebeat 1行の数式が音になる",
+      "operatingSystem": "iOS",
+      "applicationCategory": "MusicApplication",
+      "url": "https://apps.apple.com/jp/app/id6811730170",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Webで見つけた式はそのまま鳴りますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bytebeatは、ビット演算をJavaScriptと同じ丸め方にしてあるので、多くの式はそのまま鳴ります。使える関数はアプリの説明文に並べてあります。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "無料で使えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "BytebeatとByteBeatは無料で入れられます。Raw Byte Audio Machineは有料のアプリです。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "作った音をファイルにできますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "BytebeatとByteBeatはWAVに書き出せます。ByteBeatは動画にもできます。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tsuzukit.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://tsuzukit.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "困りごとから選ぶアプリ",
+          "item": "https://tsuzukit.com/blog/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "iPhoneでbytebeatを鳴らすアプリ3選",
+          "item": "https://tsuzukit.com/blog/posts/bytebeat-player-iphone.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">TsuzuKit</a>
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/portfolio/" class="nav-link">Portfolio</a>
+                <a href="/blog/" class="nav-link active">Blog</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post -->
+    <article class="blog-post">
+        <header class="post-header">
+            <div class="post-meta">
+                <span class="post-date">2026.11.15</span>
+                <span class="post-category"><span class="i18n-ja">アプリの選び方</span><span class="i18n-en">App guides</span></span>
+                <span class="post-reading-time"><span class="i18n-ja">4分で読める</span><span class="i18n-en">4 min read</span></span>
+            </div>
+            <h1 class="post-title"><span class="i18n-ja">iPhoneでbytebeatを鳴らすアプリ3選</span><span class="i18n-en">3 Bytebeat Player Apps for iPhone</span></h1>
+        </header>
+        <figure class="post-illustration guide-illustration"><img src="/assets/images/posts/bytebeat-player-iphone.webp" width="1200" height="800" alt="スマホから伸びる緑の波形の線に合わせて、小さなスピーカーが跳ねる中に立つキャラクター" data-en-alt="The character holding a phone as a green waveform line stretches out of the screen and little speakers bounce around them" fetchpriority="high"></figure>
+
+        <div class="post-content guide i18n-ja">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">先に答え</p>
+                <p>パソコンならブラウザのbytebeat playerで足ります。iPhoneなら、絵やAIから始めたい人はByteBeat、ほかの音楽アプリにプラグインで入れたい人はRaw Byte Audio Machineです。式と波形だけに向き合って、オフラインで鳴らしたい人は、僕が作ったBytebeatも見てみてください。</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">書いた人 <a href="https://tsuzukit.com/about/">續橋 涼</a>（@tsuzuki817）</p>
+                    <p class="guide-byline-bio">2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。Bytebeatの作者です。</p>
+                    <p class="guide-byline-date">公開 <time datetime="2026-11-15">2026.11.15</time> · 更新 <time datetime="2026-11-15">2026.11.15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">この記事は、Bytebeatを作った僕が書いています。ほかの2本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。</p>
+            <h2>3本をざっくり比べる</h2>
+            <p>3本とも、tを1ずつ増やしながら式を計算して、その値を音にします。違うのは、式のほかに何がついているかです。</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">アプリ</th><th scope="col">評価の件数</th><th scope="col">式の入れ方</th><th scope="col">波形や画面</th><th scope="col">書き出し</th><th scope="col">ほかに</th></tr></thead><tbody><tr><th scope="row">Bytebeat（僕のアプリ）</th><td>1件</td><td>1行の式。鳴らしたまま書き換え</td><td>オシロスコープの波形</td><td>WAV。10秒から3分</td><td>通信なし。アカウントなし</td></tr><tr><th scope="row">ByteBeat</th><td>1件</td><td>式のほか、線を描いて音にする。AIの手伝い</td><td>音に反応する映像</td><td>WAVと動画。15秒を超えるWAVはサインインが要る</td><td>式のリンクで共有</td></tr><tr><th scope="row">Raw Byte Audio Machine</th><td>0件</td><td>式</td><td>説明文に記載なし</td><td>説明文に記載なし</td><td>AUv3のプラグインとしても動く。有料</td></tr></tbody></table></div>
+            <h2>1本ずつ見ていく</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/2a/40/b2/2a40b256-955b-f718-4e4f-b958016997ec/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">僕が作ったアプリ</span>
+                    <h3 class="guide-app-name">Bytebeat 1行の数式が音になる</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · App Storeの評価 1件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6811730170" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>書いた式を、そのまま音として鳴らすアプリです。再生を止めずに式を書き換えられて、1文字変えると曲がまるごと変わるのをその場で聴けます。</p>
+            <p>いま鳴っている波形をオシロスコープで出します。有名な式を29個入れてあって、多くは2011年にviznutさんが公開した実験に由来するものです。</p>
+            <p>鳴らし方はBytebeat、Signed、Floatbeatの3つで、tの速さは500から48000Hzまで変えられます。計算はJavaScriptのToInt32と同じ丸め方にしてあるので、Webで見つけた式を貼ってもそのまま鳴ります。8bit 8000HzのWAVにも書き出せます。</p>
+            <p>アカウントも広告もなくて、インターネットにつながずに動きます。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/55/37/ce/5537ce86-c2b2-d392-d976-fbfcec086c3f/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">ByteBeat</h3>
+                    <p class="guide-app-meta">Ali Ebrahimi · App Storeの評価 1件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6760623496" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>式を書くだけでなく、線を描くとそれがループの音になります。左から右が時間で、上ほど高い音です。</p>
+            <p>AIのアシスタントに頼んで式を作ってもらったり、直してもらったりもできます。WAVのほかに、TikTokやInstagram向けの大きさの動画も書き出せます。AIとクラウドの同期、15秒を超えるWAVの書き出しにはサインインが要ると書かれていました。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b4/f4/67/b4f4676e-abc0-18a8-945c-bd746542fd79/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Raw Byte Audio Machine</h3>
+                    <p class="guide-app-meta">Callback Audio, LLC · App Storeの評価 0件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6766166760" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>サンプルレートとビット深度を決めて、式から音を作るアプリです。説明文は短く、四則演算や剰余、ビット演算、シフトが使えると書かれています。</p>
+            <p>単体のアプリのほか、AUv3の楽器プラグインとしても使えます。ほかの音楽アプリの中で鳴らしたい人に向いています。有料のアプリです。</p>
+            <h2>アプリを入れたくないなら</h2>
+            <p>ブラウザで動くbytebeat playerもあります。Googleの検索候補にも、onlineや、dollchan bytebeat playerが出てきます。</p>
+            <p>パソコンで式を試すならブラウザで十分です。iPhoneで、ネットにつながずに鳴らしながら書き換えたいときに、アプリが役に立ちます。</p>
+            <h2>どれを選ぶか</h2>
+            <ul class="guide-list"><li>式を書く前に、絵やAIから音を作ってみたいなら、ByteBeat</li><li>ほかの音楽アプリの中でプラグインとして鳴らしたいなら、Raw Byte Audio Machine</li><li>式と波形だけに向き合って、オフラインで鳴らしたいなら、Bytebeat</li></ul>
+            <h2>よくある質問</h2>
+            <dl class="guide-faq">
+                <dt>Webで見つけた式はそのまま鳴りますか？</dt><dd>Bytebeatは、ビット演算をJavaScriptと同じ丸め方にしてあるので、多くの式はそのまま鳴ります。使える関数はアプリの説明文に並べてあります。</dd>
+                <dt>無料で使えますか？</dt><dd>BytebeatとByteBeatは無料で入れられます。Raw Byte Audio Machineは有料のアプリです。</dd>
+                <dt>作った音をファイルにできますか？</dt><dd>BytebeatとByteBeatはWAVに書き出せます。ByteBeatは動画にもできます。</dd>
+            </dl>
+            <p>いい式ができたら、どんな1行だったのか教えてほしいです🎛️</p>
+            <div class="guide-notes">各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。</div>
+        </div>
+
+        <div class="post-content guide i18n-en">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">Short answer</p>
+                <p>On a computer, a browser bytebeat player is enough. On iPhone, ByteBeat suits people who want to start from a drawing or an AI, and Raw Byte Audio Machine suits people who want it as a plugin in other music apps. If you want just the formula and the waveform, offline, take a look at Bytebeat, which I made.</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">Written by <a href="https://tsuzukit.com/about/">Ryo Tsuzukihashi</a> (@tsuzuki817)</p>
+                    <p class="guide-byline-bio">I&#x27;ve been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made Bytebeat.</p>
+                    <p class="guide-byline-date">Published <time datetime="2026-11-15">2026-11-15</time> · Updated <time datetime="2026-11-15">2026-11-15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">I made Bytebeat, and I wrote this article. The other two apps are by developers I don&#x27;t know, and I haven&#x27;t received money or anything else from them. Everything compared here comes from each app&#x27;s App Store description and rating count as of November 15, 2026.</p>
+            <h2>The three apps at a glance</h2>
+            <p>All three evaluate your expression as t counts up by one and turn the result into sound. What differs is everything around the formula.</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">App</th><th scope="col">Ratings</th><th scope="col">Writing formulas</th><th scope="col">Visuals</th><th scope="col">Export</th><th scope="col">Also</th></tr></thead><tbody><tr><th scope="row">Bytebeat (my app)</th><td>1</td><td>One-line formula, edited while it plays</td><td>Oscilloscope waveform</td><td>WAV, 10 seconds to 3 minutes</td><td>No network, no account</td></tr><tr><th scope="row">ByteBeat</th><td>1</td><td>Formulas, drawing lines that become sound, and an AI helper</td><td>Audio-reactive visuals</td><td>WAV and video. WAV over 15 seconds needs sign-in</td><td>Share formulas as a link</td></tr><tr><th scope="row">Raw Byte Audio Machine</th><td>0</td><td>Formulas</td><td>Not mentioned</td><td>Not mentioned</td><td>Also runs as an AUv3 plugin. Paid</td></tr></tbody></table></div>
+            <h2>Each app, one by one</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/2a/40/b2/2a40b256-955b-f718-4e4f-b958016997ec/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">I made this</span>
+                    <h3 class="guide-app-name">Bytebeat: Make Music with Code</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · 1 App Store rating</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6811730170" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>It plays whatever formula you write as sound. You can edit the formula without stopping playback, and hear the whole piece change when you swap a single character.</p>
+            <p>An oscilloscope shows the waveform that&#x27;s playing right now. It comes with 29 well-known formulas, many of them from the experiments viznut shared in 2011.</p>
+            <p>There are three modes, Bytebeat, Signed, and Floatbeat, and you can set the rate of t anywhere from 500 to 48000 Hz. Bit operations round the same way as JavaScript&#x27;s ToInt32, so formulas you find on the web play as they are. You can also export 8-bit 8000 Hz WAV files.</p>
+            <p>There is no account and no ads, and it works without an internet connection.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/55/37/ce/5537ce86-c2b2-d392-d976-fbfcec086c3f/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">ByteBeat</h3>
+                    <p class="guide-app-meta">Ali Ebrahimi · 1 App Store rating</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6760623496" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>Besides writing formulas, you can draw a line and it becomes a loop. Left to right is time, and higher means a higher pitch.</p>
+            <p>You can ask an AI assistant to write a formula or change the one you have. Besides WAV, it exports video sized for TikTok or Instagram. The description says the AI, cloud sync, and WAV exports longer than 15 seconds need sign-in.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b4/f4/67/b4f4676e-abc0-18a8-945c-bd746542fd79/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Raw Byte Audio Machine</h3>
+                    <p class="guide-app-meta">Callback Audio, LLC · 0 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6766166760" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>You set the sample rate and bit depth, then build sound from an expression. The description is short and lists arithmetic, modulo, bitwise operations, and shifts.</p>
+            <p>It runs on its own or as an AUv3 instrument plugin, which suits people who want to play it inside other music apps. It&#x27;s a paid app.</p>
+            <h2>If you&#x27;d rather not install an app</h2>
+            <p>There are bytebeat players that run in a browser. Google&#x27;s suggestions include terms like online and dollchan bytebeat player.</p>
+            <p>For trying formulas on a computer, a browser is plenty. An app helps when you want to edit and play on your iPhone, offline.</p>
+            <h2>Which one to pick</h2>
+            <ul class="guide-list"><li>If you want to start from a drawing or an AI before writing formulas, ByteBeat</li><li>If you want to use it as a plugin inside other music apps, Raw Byte Audio Machine</li><li>If you want just the formula and the waveform, offline, Bytebeat</li></ul>
+            <h2>FAQ</h2>
+            <dl class="guide-faq">
+                <dt>Will formulas I find on the web just work?</dt><dd>Bytebeat rounds bit operations the same way JavaScript does, so most formulas play as they are. The functions you can use are listed in the app&#x27;s description.</dd>
+                <dt>Are they free?</dt><dd>Bytebeat and ByteBeat are free to download. Raw Byte Audio Machine is a paid app.</dd>
+                <dt>Can I save what I make as a file?</dt><dd>Bytebeat and ByteBeat both export WAV files. ByteBeat can also make videos.</dd>
+            </dl>
+            <p>If you come up with a good formula, I want to hear that one line 🎛️</p>
+            <div class="guide-notes">Features and rating counts were checked against each app&#x27;s App Store description on November 15, 2026, and may change with updates.</div>
+        </div>
+
+        <nav class="post-navigation">
+            <img class="tk-char tk-char--post" src="/assets/images/character-hang.png" alt="" width="381" height="208">
+            <a href="/blog/guides/" class="nav-link-wrapper"><span>&larr; <span class="i18n-ja">困りごとから選ぶアプリの一覧へ</span><span class="i18n-en">All guides: apps for everyday problems</span></span></a>
+        </nav>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
+                    <p class="footer-description"><span class="i18n-ja">誰も作らないものを、まじめに作る</span><span class="i18n-en">I make things nobody else would, and I make them seriously</span></p>
+                </div>
+                <div class="footer-nav">
+                    <a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
+                    <a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
+                    <a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
+                    <a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ryo Tsuzukihashi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

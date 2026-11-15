@@ -1,0 +1,206 @@
+{
+  "slug": "baken-image-maker",
+  "date_published": "2026-11-15",
+  "date_updated": "2026-11-15",
+  "search_phrase": {
+    "ja": "馬券 画像 作成",
+    "en": "make a horse racing ticket image"
+  },
+  "evidence": "2026-11-15 に Google の検索候補で「馬券 作成」を引くと、11件中に「馬券 作成アプリ」「馬券 画像 作成」「馬券 イメージ 作成」「オリジナル 馬券 作成」が並び、「馬券 画像」の10件にも「馬券 画像 作成」「馬券 画像 ジェネレーター」「馬券 画像 ジェネレーター 印刷 方法」があった。同じ日の App Store で「馬券 画像」「馬券 作成」を検索すると、出てくるのは馬券を買うアプリや収支を管理するアプリで、馬券の画像を作るアプリは馬券ジェネレーターだけだったので、比べる相手なしの1本にした。",
+  "title": {
+    "ja": "推しの名前で馬券風の画像を作るには",
+    "en": "How to Make a Horse Racing Ticket Image with Your Fave's Name"
+  },
+  "description": {
+    "ja": "推しの名前や好きな言葉で、JRA風の馬券の画像を作る方法をまとめました。作れる券種と、本物の馬券ではないことを書いています。馬券ジェネレーターの作者が書いています。",
+    "en": "How to make a JRA-style horse racing ticket image with your fave's name or any words you like: which ticket types you can make, and why it isn't a real ticket. Written by the maker of Betting Ticket Generator."
+  },
+  "excerpt": {
+    "ja": "推しの名前で馬券風の画像を作る方法。作れる券種と、本物ではないことを、馬券ジェネレーターを作った僕が書いています。",
+    "en": "How to make a betting-ticket-style image with your fave's name, what you can make, and why it isn't real, from the person who made the app."
+  },
+  "category": {
+    "ja": "アプリの選び方",
+    "en": "App guides"
+  },
+  "reading_minutes": 3,
+  "author": {
+    "name": {
+      "ja": "續橋 涼",
+      "en": "Ryo Tsuzukihashi"
+    },
+    "handle": "tsuzuki817",
+    "bio": {
+      "ja": "2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。馬券ジェネレーターの作者です。",
+      "en": "I've been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made Betting Ticket Generator."
+    },
+    "url": "https://tsuzukit.com/about/",
+    "same_as": [
+      "https://x.com/tsuzuki817"
+    ]
+  },
+  "tldr": {
+    "ja": "馬券風の画像は、僕が作った馬券ジェネレーターで作れます。馬名と金額を自由に入れて、単勝から3連単まで選べて、写真アプリに保存できます。作るのは画像だけなので、お金は動かず、本物の馬券として使うことはできません。",
+    "en": "You can make betting-ticket-style images with Betting Ticket Generator, which I made. Type in any horse name and amount, pick anything from a win bet to a trifecta, and save it to Photos. It only makes images, so no money is involved and it can't be used as a real ticket."
+  },
+  "disclosure": {
+    "ja": "この記事は、馬券ジェネレーターを作った僕が書いています。ほかのアプリとは比べておらず、だれからもお金はもらっていません。機能はアプリのコードとApp Storeの説明文で、評価の件数はApp Storeで確かめました（2026年11月15日時点）。",
+    "en": "I made Betting Ticket Generator, and I wrote this article. It doesn't compare other apps, and nobody paid me for it. Features were checked against the app's code and App Store description, and the rating count against the App Store, as of November 15, 2026."
+  },
+  "own_app": "6757259211",
+  "app_category": "EntertainmentApplication",
+  "apps": [
+    {
+      "id": "6757259211",
+      "name": {
+        "ja": "馬券ジェネレーター",
+        "en": "Betting Ticket Generator"
+      },
+      "short": {
+        "ja": "馬券ジェネレーター",
+        "en": "Betting Ticket Generator"
+      },
+      "developer": "Ryo Tsudukihashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ce/90/71/ce90711a-ec88-3aa2-25b8-68c2481d2cce/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6757259211",
+      "android_url": null,
+      "rating_count": 0
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ja": "馬券ジェネレーターで作れるもの",
+        "en": "What Betting Ticket Generator makes"
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "id": "6757259211"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "JRA風の馬券の画像を作るアプリです。馬名と金額は自由に入れられるので、推しの名前の馬券や、友だちへのネタのプレゼントが作れます。",
+            "en": "It's an app that makes images styled like JRA horse racing tickets. You can type in any horse name and any amount, so you can make a ticket with your fave's name on it or a joke gift for a friend."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "券種は、単勝、複勝、枠連、馬連、ワイド、馬単、3連複、3連単から選べます。買い方も、通常、ながし、ボックス、フォーメーションの4つから選べます。競馬場やレース名、日付も入れられます。",
+            "en": "You can choose from win, place, bracket quinella, quinella, quinella place, exacta, trio, and trifecta. The bet style can be standard, wheel, box, or formation. You can also set the racecourse, race name, and date."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "できた画像は写真アプリに保存できて、作った馬券は履歴に残ります。そのまま共有もできます。",
+            "en": "You can save the finished image to your Photos app, and every ticket you make stays in your history. You can share it straight from the app too."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "無料で作れます。何枚か保存すると、短い広告を見るかどうかを聞く画面が出ます。広告を消すのは買い切りのプレミアムです。",
+            "en": "Making tickets is free. After you save a few, the app asks whether you want to watch a short ad. Removing ads is a one-time Premium purchase."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "本物の馬券ではありません",
+        "en": "These aren't real betting tickets"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "このアプリで作るのは、馬券の形をした画像です。お金は動きませんし、競馬場で使うこともできません。",
+            "en": "What this app makes is an image shaped like a betting ticket. No money changes hands, and you can't use it at a racecourse."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "ジョークやエンターテイメントとして楽しんでください。本物と見分けがつかない形で人に渡したり、本物のように使ったりはしないでくださいね。",
+            "en": "Please enjoy it as a joke or for fun. Don't hand it to anyone in a way that passes it off as real, or try to use it like a real ticket."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "こんなときに",
+        "en": "When it comes in handy"
+      },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "ja": "推しの名前を馬名にした、記念の1枚を作りたいとき",
+              "en": "When you want a keepsake with your fave's name as the horse"
+            },
+            {
+              "ja": "友だちの誕生日に、ネタのプレゼントを添えたいとき",
+              "en": "When you want a joke gift for a friend's birthday"
+            },
+            {
+              "ja": "SNSに載せる、ちょっと笑える画像がほしいとき",
+              "en": "When you want a funny image to post on social media"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "ja": "作った画像を印刷できますか？",
+        "en": "Can I print the images?"
+      },
+      "a": {
+        "ja": "写真アプリに保存されるので、そこから印刷できます。本物の馬券と見分けがつかない使い方はしないでください。",
+        "en": "They're saved to your Photos app, so you can print from there. Please don't use them in a way that could be mistaken for a real ticket."
+      }
+    },
+    {
+      "q": {
+        "ja": "このアプリで馬券を買えますか？",
+        "en": "Can I buy betting tickets in this app?"
+      },
+      "a": {
+        "ja": "買えません。画像を作るだけのアプリで、お金のやりとりは何もありません。",
+        "en": "No. It only makes images, and no money is involved at all."
+      }
+    },
+    {
+      "q": {
+        "ja": "Androidでも使えますか？",
+        "en": "Is it on Android?"
+      },
+      "a": {
+        "ja": "馬券ジェネレーターはiPhone向けのアプリで、Android版はありません。",
+        "en": "Betting Ticket Generator is an iPhone app, and there is no Android version."
+      }
+    }
+  ],
+  "closing": {
+    "ja": "どんな馬名の馬券ができたのか、ちょっと見てみたいです🐎",
+    "en": "I'm curious what horse names people come up with 🐎"
+  },
+  "notes": {
+    "ja": "評価の件数は2026年11月15日にApp Storeで確かめたものです。アプリの中身はアップデートで変わることがあります。このアプリで作る画像は本物の馬券ではなく、ジョークとエンターテイメントのためのものです。",
+    "en": "The rating count was checked on the App Store on November 15, 2026, and the app may change with updates. Images made with this app are not real betting tickets and are meant only as jokes and entertainment."
+  },
+  "illustration": {
+    "scene": "誕生日パーティーの部屋。キャラが、顔のない丸いシルエットの友だちに、リボンをかけた額縁入りのチケット風のカード（文字なし、緑の模様と線だけ）を手渡している。テーブルには小さな馬のぬいぐるみとケーキがあって、友だちは両手を上げて笑っている。キャラの目は参照画像と同じ白い縦長の楕円2つのままにする（笑った弧の目や閉じた目にしない）。",
+    "alt": {
+      "ja": "誕生日パーティーで、額に入ったチケット風のカードを友だちに手渡すキャラクター",
+      "en": "The character handing a friend a framed ticket-style card at a birthday party"
+    }
+  }
+}

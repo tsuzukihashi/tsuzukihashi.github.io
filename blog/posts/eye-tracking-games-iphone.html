@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/js/lang.js"></script>
+    <!-- このページは scripts/build_guides.py が docs/guides/eye-tracking-games-iphone.json から作る。直すのは JSON のほう -->
+    <title>目だけで遊べるiPhoneの視線入力ゲーム - Blog | Ryo Tsuzukihashi</title>
+    <meta name="description" content="iPhoneの前面カメラで目の動きを読み取り、手を使わずに遊べるゲームを探しました。必要な機種や、iPhoneに入っている視線トラッキングとの違いもまとめています。EyeMoleの作者が書いています。">
+    <meta name="title-en" content="Games You Can Play With Just Your Eyes on iPhone - Blog | Ryo Tsuzukihashi">
+    <meta name="description-en" content="I looked for games that use the iPhone&#x27;s front camera to read your eyes so you can play without your hands. I also cover which devices you need and how this differs from the iPhone&#x27;s built-in Eye Tracking. Written by the maker of EyeMole.">
+    <link rel="canonical" href="https://tsuzukit.com/blog/posts/eye-tracking-games-iphone.html">
+
+    <!-- OGP -->
+    <meta property="og:title" content="目だけで遊べるiPhoneの視線入力ゲーム">
+    <meta property="og:description" content="iPhoneの前面カメラで目の動きを読み取り、手を使わずに遊べるゲームを探しました。必要な機種や、iPhoneに入っている視線トラッキングとの違いもまとめています。EyeMoleの作者が書いています。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://tsuzukit.com/blog/posts/eye-tracking-games-iphone.html">
+    <meta property="og:image" content="https://tsuzukit.com/assets/images/posts/eye-tracking-games-iphone.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://tsuzukit.com/assets/images/posts/eye-tracking-games-iphone.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-dark-32x32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-dark-16x16.png" media="(prefers-color-scheme: dark)">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERPQ1EGLH');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8240751277462688"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
+    <link rel="stylesheet" href="/assets/css/guide.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "目だけで遊べるiPhoneの視線入力ゲーム",
+      "description": "iPhoneの前面カメラで目の動きを読み取り、手を使わずに遊べるゲームを探しました。必要な機種や、iPhoneに入っている視線トラッキングとの違いもまとめています。EyeMoleの作者が書いています。",
+      "image": "https://tsuzukit.com/assets/images/posts/eye-tracking-games-iphone.webp",
+      "datePublished": "2026-11-15",
+      "dateModified": "2026-11-15",
+      "inLanguage": "ja",
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "mainEntityOfPage": "https://tsuzukit.com/blog/posts/eye-tracking-games-iphone.html",
+      "about": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "EyeMole 視線でモグラたたき",
+          "url": "https://apps.apple.com/jp/app/id6797057271",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "Beam: 頭とアイトラッキング",
+          "url": "https://apps.apple.com/jp/app/id1538790472",
+          "operatingSystem": "iOS"
+        }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "EyeMole 視線でモグラたたき",
+      "operatingSystem": "iOS",
+      "applicationCategory": "GameApplication",
+      "url": "https://apps.apple.com/jp/app/id6797057271",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "どのiPhoneで遊べますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "EyeMoleは、Face IDのあるiPhoneか、A12以降のiPadが必要です。指では遊べません。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "カメラの映像はどこかに送られますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "EyeMoleは顔の情報を端末の中だけで処理していて、録画も保存も送信もしません。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "無料で遊べますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "EyeMoleは無料で、広告で運営しています。ハートは時間で回復するので、お金を払わなくても遊び続けられます。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tsuzukit.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://tsuzukit.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "困りごとから選ぶアプリ",
+          "item": "https://tsuzukit.com/blog/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "目だけで遊べるiPhoneの視線入力ゲーム",
+          "item": "https://tsuzukit.com/blog/posts/eye-tracking-games-iphone.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">TsuzuKit</a>
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/portfolio/" class="nav-link">Portfolio</a>
+                <a href="/blog/" class="nav-link active">Blog</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post -->
+    <article class="blog-post">
+        <header class="post-header">
+            <div class="post-meta">
+                <span class="post-date">2026.11.15</span>
+                <span class="post-category"><span class="i18n-ja">アプリの選び方</span><span class="i18n-en">App guides</span></span>
+                <span class="post-reading-time"><span class="i18n-ja">4分で読める</span><span class="i18n-en">4 min read</span></span>
+            </div>
+            <h1 class="post-title"><span class="i18n-ja">目だけで遊べるiPhoneの視線入力ゲーム</span><span class="i18n-en">Games You Can Play With Just Your Eyes on iPhone</span></h1>
+        </header>
+        <figure class="post-illustration guide-illustration"><img src="/assets/images/posts/eye-tracking-games-iphone.webp" width="1200" height="800" alt="両手をひざに置いたまま、目から出た光の線でタブレットの中のモグラを狙うキャラクター" data-en-alt="The character on a sofa with its hands in its lap, aiming a thin beam of light from its eyes at a mole on a tablet" fetchpriority="high"></figure>
+
+        <div class="post-content guide i18n-ja">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">先に答え</p>
+                <p>App Storeで視線と引いても、カメラで目を読んで遊ぶゲームはあまり並びません。僕が作ったEyeMoleは、見つめたモグラを叩く60秒のゲームです。パソコンのゲームを頭と目で動かしたいならBeam、どのアプリも目で操作したいならiPhoneの視線トラッキングが向いています。</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">書いた人 <a href="https://tsuzukit.com/about/">續橋 涼</a>（@tsuzuki817）</p>
+                    <p class="guide-byline-bio">2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。EyeMoleの作者です。</p>
+                    <p class="guide-byline-date">公開 <time datetime="2026-11-15">2026.11.15</time> · 更新 <time datetime="2026-11-15">2026.11.15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">この記事は、EyeMoleを作った僕が書いています。ほかの1本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。</p>
+            <h2>2本をざっくり比べる</h2>
+            <p>どちらもFace IDのカメラで目の動きを読みますが、使う場所が違います。EyeMoleはiPhoneの中で遊ぶゲームで、Beamはパソコンのゲームを動かす道具です。</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">アプリ</th><th scope="col">評価の件数</th><th scope="col">何をするか</th><th scope="col">必要なもの</th><th scope="col">料金</th></tr></thead><tbody><tr><th scope="row">EyeMole（僕のアプリ）</th><td>1件</td><td>見つめたモグラを叩く60秒のスコアアタック</td><td>Face IDのiPhoneか、A12以降のiPad</td><td>無料で広告あり。買い切りで広告なし</td></tr><tr><th scope="row">Beam</th><td>8件</td><td>パソコンのゲームの視点を頭と目で動かす</td><td>Face IDのiPhoneかiPadと、Windowsのパソコン</td><td>説明文に記載なし</td></tr></tbody></table></div>
+            <h2>1本ずつ見ていく</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/35/aa/61/35aa615c-81af-c245-0234-851d99f9ff8c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">僕が作ったアプリ</span>
+                    <h3 class="guide-app-name">EyeMole 視線でモグラたたき</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · App Storeの評価 1件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6797057271" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>前面のカメラが目を追いかけて、見つめたモグラにハンマーが落ちます。タップもスワイプも使いません。</p>
+            <p>モグラに混ざってヒヨコが出てきて、見つめすぎると叩いてしまい時間が減ります。ちらっと見て見分けて、すぐ目をそらす。ここがこのゲームの難しいところです。</p>
+            <p>最初に画面の5か所を見て、狙いを合わせます。明るい部屋で、画面から30から40センチ離すと合いやすいです。顔の情報は端末の中だけで処理して、録画も保存も送信もしません。</p>
+            <p>ハートは最大3つで、10分に1つ回復します。動画の広告を見るとすぐ1つ戻ります。買い切りのEyeMole Proにすると、広告が消えてハートも減らなくなります。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/27/7a/8d/277a8dd8-75d5-7ece-43c0-3e2216da7179/AppIcon-1x_U007emarketing-0-10-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Beam: 頭とアイトラッキング</h3>
+                    <p class="guide-app-meta">Eyeware Tech SA · App Storeの評価 8件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id1538790472" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>iPhoneやiPadを、パソコン用の頭と目のトラッカーにするアプリです。iPhoneだけで遊ぶゲームではありません。</p>
+            <p>フライトシミュレーターやレースゲームで、頭の向きに合わせてゲームの中の視点が動きます。配信の画面に、どこを見ているかを丸で重ねることもできます。Windowsのパソコンに専用のソフトを入れて、USBかWi-Fiでつなぎます。</p>
+            <h2>アプリを入れなくても目で操作できる</h2>
+            <p>iOS 18からは、iPhoneの設定のアクセシビリティに視線トラッキングが入っています。目の動きでポインタを動かして、しばらく見つめるとタップになります。</p>
+            <p>ゲーム専用ではなく、iPhone全体を目で操作するための機能です。文字を打ったり、ほかのアプリを手を使わずに動かしたりしたい人は、まずこちらを試してみてください。</p>
+            <p>検索で出てくる、名前に視線や目がつくゲームの中には、カメラを使わずに自分の目で玉を追うだけのものもあります。カメラで目を読むかどうかは、説明文で確かめてから入れてください。</p>
+            <h2>どれを選ぶか</h2>
+            <ul class="guide-list"><li>パソコンのゲームを頭と目で動かしたいなら、Beam</li><li>iPhone全体を手を使わずに操作したいなら、iPhoneの視線トラッキング</li><li>目だけで遊ぶゲームを試してみたいなら、EyeMole</li></ul>
+            <h2>よくある質問</h2>
+            <dl class="guide-faq">
+                <dt>どのiPhoneで遊べますか？</dt><dd>EyeMoleは、Face IDのあるiPhoneか、A12以降のiPadが必要です。指では遊べません。</dd>
+                <dt>カメラの映像はどこかに送られますか？</dt><dd>EyeMoleは顔の情報を端末の中だけで処理していて、録画も保存も送信もしません。</dd>
+                <dt>無料で遊べますか？</dt><dd>EyeMoleは無料で、広告で運営しています。ハートは時間で回復するので、お金を払わなくても遊び続けられます。</dd>
+            </dl>
+            <p>EyeMoleの評価はまだ1件なので、目だけで何点とれたか教えてもらえたらうれしいです🙏</p>
+            <div class="guide-notes">それぞれのアプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。視線トラッキングの設定のしかたや対応する機種は、Appleのサポートページで確かめてください。</div>
+        </div>
+
+        <div class="post-content guide i18n-en">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">Short answer</p>
+                <p>Search the App Store for eye-controlled games and you won&#x27;t find many that read your eyes with the camera. EyeMole, which I made, is a 60-second game where you whack the moles you stare at. For moving PC games with your head and eyes, try Beam. To control every app with your eyes, use the iPhone&#x27;s Eye Tracking.</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">Written by <a href="https://tsuzukit.com/about/">Ryo Tsuzukihashi</a> (@tsuzuki817)</p>
+                    <p class="guide-byline-bio">I&#x27;ve been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made EyeMole.</p>
+                    <p class="guide-byline-date">Published <time datetime="2026-11-15">2026-11-15</time> · Updated <time datetime="2026-11-15">2026-11-15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">I made EyeMole, and I wrote this article. The other app is by a developer I don&#x27;t know, and I haven&#x27;t received money or anything else from them. Everything compared here comes from each app&#x27;s App Store description and rating count as of November 15, 2026.</p>
+            <h2>The two apps at a glance</h2>
+            <p>Both read your eyes with the Face ID camera, but they work in different places. EyeMole is a game you play on the iPhone itself, and Beam is a tool for controlling games on a PC.</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">App</th><th scope="col">Ratings</th><th scope="col">What it does</th><th scope="col">What you need</th><th scope="col">Price</th></tr></thead><tbody><tr><th scope="row">EyeMole (my app)</th><td>1</td><td>A 60-second score attack where you whack moles by staring at them</td><td>An iPhone with Face ID, or an iPad with A12 or later</td><td>Free with ads. A one-time purchase removes them</td></tr><tr><th scope="row">Beam</th><td>8</td><td>Moves the view in PC games with your head and eyes</td><td>An iPhone or iPad with Face ID, plus a Windows PC</td><td>Not mentioned</td></tr></tbody></table></div>
+            <h2>Each app, one by one</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/35/aa/61/35aa615c-81af-c245-0234-851d99f9ff8c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">I made this</span>
+                    <h3 class="guide-app-name">EyeMole - Eye Whack-a-Mole</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · 1 App Store rating</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6797057271" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>The front camera follows your eyes, and a hammer drops on whichever mole you&#x27;re looking at. No taps, no swipes.</p>
+            <p>Chicks pop up among the moles, and if you stare too long you hit them and lose time. Glance, tell them apart, and look away fast. That is the hard part of this game.</p>
+            <p>First you look at five spots on the screen to calibrate your aim. It works best in a bright room, 30 to 40 cm from the screen. Your face data is processed only on the device, and nothing is recorded, saved, or sent.</p>
+            <p>You get up to three hearts, and one refills every 10 minutes. Watching a video ad gives one back right away. The one-time EyeMole Pro purchase removes the ads and stops hearts from running out.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/27/7a/8d/277a8dd8-75d5-7ece-43c0-3e2216da7179/AppIcon-1x_U007emarketing-0-10-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Beam Gaming Head &amp; Eye Tracker</h3>
+                    <p class="guide-app-meta">Eyeware Tech SA · 8 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id1538790472" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>This app turns an iPhone or iPad into a head and eye tracker for your PC. It isn&#x27;t a game you play on the phone itself.</p>
+            <p>In flight sims and racing games, the in-game camera follows the way your head turns. You can also overlay a bubble on your stream showing where you&#x27;re looking. You install a companion app on a Windows PC and connect over USB or Wi-Fi.</p>
+            <h2>You can control your iPhone with your eyes without an app</h2>
+            <p>Since iOS 18, the iPhone has Eye Tracking in the Accessibility settings. Your eyes move a pointer, and looking at something for a moment taps it.</p>
+            <p>It isn&#x27;t made for games. It&#x27;s for controlling the whole iPhone with your eyes. If you want to type or use other apps hands-free, try this first.</p>
+            <p>Some games that turn up in search with eyes or gaze in the name don&#x27;t use the camera at all. You just follow things with your eyes. Check the description to see whether it actually reads your eyes before you install.</p>
+            <h2>Which one to pick</h2>
+            <ul class="guide-list"><li>If you want to control PC games with your head and eyes, Beam</li><li>If you want to use your whole iPhone hands-free, the iPhone&#x27;s Eye Tracking</li><li>If you want to try a game you play with just your eyes, EyeMole</li></ul>
+            <h2>FAQ</h2>
+            <dl class="guide-faq">
+                <dt>Which iPhones can play EyeMole?</dt><dd>EyeMole needs an iPhone with Face ID, or an iPad with an A12 chip or later. You can&#x27;t play it with your fingers.</dd>
+                <dt>Is the camera video sent anywhere?</dt><dd>EyeMole processes your face data only on the device, and never records, saves, or sends it.</dd>
+                <dt>Is it free?</dt><dd>EyeMole is free and supported by ads. Hearts refill over time, so you can keep playing without paying.</dd>
+            </dl>
+            <p>EyeMole only has one rating so far, so I&#x27;d love to hear how many points you scored with just your eyes 🙏</p>
+            <div class="guide-notes">Features and rating counts were checked against each app&#x27;s App Store description on November 15, 2026, and may change with updates. Check Apple&#x27;s support pages for how to set up Eye Tracking and which devices support it.</div>
+        </div>
+
+        <nav class="post-navigation">
+            <img class="tk-char tk-char--post" src="/assets/images/character-hang.png" alt="" width="381" height="208">
+            <a href="/blog/guides/" class="nav-link-wrapper"><span>&larr; <span class="i18n-ja">困りごとから選ぶアプリの一覧へ</span><span class="i18n-en">All guides: apps for everyday problems</span></span></a>
+        </nav>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
+                    <p class="footer-description"><span class="i18n-ja">誰も作らないものを、まじめに作る</span><span class="i18n-en">I make things nobody else would, and I make them seriously</span></p>
+                </div>
+                <div class="footer-nav">
+                    <a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
+                    <a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
+                    <a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
+                    <a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ryo Tsuzukihashi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

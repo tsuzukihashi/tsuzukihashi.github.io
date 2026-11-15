@@ -1,0 +1,247 @@
+{
+  "slug": "fishing-reel-maintenance-schedule",
+  "date_published": "2026-11-15",
+  "date_updated": "2026-11-15",
+  "search_phrase": {
+    "ja": "リール メンテナンス 頻度",
+    "en": "fishing reel maintenance schedule app"
+  },
+  "evidence": "2026-11-15 に Google の検索候補で「リール メンテナンス 頻度」を引くと、「オイル」「ベイト」「スピニング」「ダイワ」「シマノ」付きの6件が出た。「リール 水洗い」は11件で「頻度」「ドラグ 締め 忘れ」も入っていた。同じ日に App Store で「リール メンテナンス」を引いても釣具の手入れのアプリは出ず、「釣具 管理」で並ぶ13本は持ち物や釣果の記録が中心で、手入れの時期を数えるのはReelKeepだけだった。",
+  "title": {
+    "ja": "リールのメンテナンス頻度を釣行の回数で数えるアプリ",
+    "en": "An App That Counts Your Fishing Trips to Time Reel Maintenance"
+  },
+  "description": {
+    "ja": "リールの水洗い、注油、オーバーホール、ライン交換の頻度を、釣行の回数と日数の両方で数えて知らせるアプリReelKeepを紹介します。最初に入っている目安と、無料で使える範囲も書いています。作者が書いています。",
+    "en": "How ReelKeep, an app I made, counts both fishing trips and days to remind you about rinsing, oiling, overhauls, and line changes for your reels. Includes the default intervals and what's free. Written by the maker."
+  },
+  "excerpt": {
+    "ja": "オーバーホールは釣行の回数で、ラインの交換は日数で近づきます。両方を別に数えて知らせるアプリを作った僕が書きました。",
+    "en": "Overhauls come due by the number of trips, line changes by the number of days. I made an app that counts both."
+  },
+  "category": {
+    "ja": "アプリの選び方",
+    "en": "App guides"
+  },
+  "reading_minutes": 3,
+  "author": {
+    "name": {
+      "ja": "續橋 涼",
+      "en": "Ryo Tsuzukihashi"
+    },
+    "handle": "tsuzuki817",
+    "bio": {
+      "ja": "2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。ReelKeepの作者です。",
+      "en": "I've been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made ReelKeep."
+    },
+    "url": "https://tsuzukit.com/about/",
+    "same_as": [
+      "https://x.com/tsuzuki817"
+    ]
+  },
+  "tldr": {
+    "ja": "リールの手入れには、釣りに行った回数で近づくものと、日数で近づくものがあります。正しい頻度はリールの説明書と釣具店に聞くのが確かです。決めた頻度を覚えておくのが面倒なら、僕が作ったReelKeepが回数と日数を別々に数えて、時期が来たら知らせます。",
+    "en": "Some reel care comes due by how many times you go fishing, and some by how many days pass. For the right intervals, check your reel's manual or ask a tackle shop. If keeping track is the hard part, ReelKeep, which I made, counts trips and days separately and notifies you when something is due."
+  },
+  "disclosure": {
+    "ja": "この記事は、ReelKeepを作った僕が書いています。App Storeで比べられるアプリが見つからなかったので、自分のアプリ1本の紹介です。機能はアプリのコードとApp Storeの説明文で確かめました（2026年11月15日時点）。",
+    "en": "I made ReelKeep, and I wrote this article. I couldn't find a comparable app on the App Store, so this covers my app only. Features were checked against the app's code and its App Store description as of November 15, 2026."
+  },
+  "own_app": "6784576527",
+  "app_category": "UtilitiesApplication",
+  "apps": [
+    {
+      "id": "6784576527",
+      "name": {
+        "ja": "ReelKeep 釣具ケア管理",
+        "en": "ReelKeep: Fishing Reel Care"
+      },
+      "short": {
+        "ja": "ReelKeep",
+        "en": "ReelKeep"
+      },
+      "developer": "Ryo Tsudukihashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/67/83/30/6783306e-8127-8fe6-4669-23711751d540/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6784576527",
+      "android_url": null,
+      "rating_count": 0
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ja": "回数で近づく手入れと、日数で近づく手入れ",
+        "en": "Care that comes due by trips, and care that comes due by days"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "リールの手入れの時期は、1つの数え方では決まりません。オーバーホールや注油は、釣りに行った回数で近づきます。ラインの交換やドラグの点検は、使わなくても日数で近づきます。",
+            "en": "There isn't one way to count when your reel needs care. Overhauls and oiling come due by how many times you go fishing. Line changes and drag checks come due with time, even if the reel sits unused."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "どのくらいの頻度がいいかは、リールの種類や海か川か、行く回数で変わります。リールの説明書を見るか、買った釣具店で聞くのが確かです。",
+            "en": "How often depends on the type of reel, whether you fish salt or fresh water, and how often you go. Check your reel's manual or ask the tackle shop where you bought it."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "ReelKeepでできること",
+        "en": "What ReelKeep does"
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "id": "6784576527"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "リールやロッドを登録して、釣りに行ったら釣行を記録します。手入れの項目ごとに、回数で数えるか日数で数えるかが決まっていて、あと何釣行、あと何日という形で残りが出ます。",
+            "en": "Register your reels and rods, and log each fishing trip. Each care item is counted either by trips or by days, and the app shows what's left as so many trips or so many days."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "最初から入っている目安はこうです。どれも周期と名前を自分で直せます。",
+            "en": "These are the default intervals. You can change the interval and the name of every one."
+          }
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "ja": "海で使ったあとの水洗いは毎回",
+              "en": "Rinsing after saltwater use, every trip"
+            },
+            {
+              "ja": "ベアリングの注油は20釣行ごと",
+              "en": "Oiling the bearings, every 20 trips"
+            },
+            {
+              "ja": "オーバーホールは50釣行ごと",
+              "en": "Overhaul, every 50 trips"
+            },
+            {
+              "ja": "ライン交換とドラグの点検は90日ごと",
+              "en": "Line change and drag check, every 90 days"
+            },
+            {
+              "ja": "ギアのグリスアップとハンドルのガタ点検は180日ごと",
+              "en": "Greasing the gears and checking the handle for play, every 180 days"
+            },
+            {
+              "ja": "サビの点検と全体の清掃は30日ごと",
+              "en": "Checking for rust and cleaning the whole reel, every 30 days"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "日数で数える項目は、3日前と前日と当日に知らせます。回数で数える項目は、近づいたら次の朝に1回知らせて、目安を超えたら済ませるまで毎朝知らせます。水洗いは1釣行ごとなので、釣行を記録すると時期を過ぎた扱いになり、洗うまで毎朝声をかけます。",
+            "en": "For items counted by days, it notifies you 3 days before, the day before, and on the day. For items counted by trips, it sends one notification the next morning when one is getting close, and every morning once it's past due until you do it. Rinsing is set to every trip, so logging a trip makes it overdue, and it keeps reminding you every morning until you rinse."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "手入れのたびに履歴が残って、費用も一緒に記録できます。ホーム画面のウィジェットで、次に手入れが要る釣具と残りの回数や日数も見られます。",
+            "en": "Every time you do some care, it's added to the history, along with what it cost. A Home Screen widget shows which gear needs care next and how many trips or days are left."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "無料だと釣具1台とケア項目3つまで登録できます。プレミアムで釣具も項目も無制限になり、全期間の履歴と釣行のログ、保管場所ごとの分け方が使えて、広告が消えます。iPhone専用です。",
+            "en": "The free version holds 1 piece of gear and 3 care items. Premium makes both unlimited, adds the full history, a trip log, and grouping by storage spot, and removes the ads. It's iPhone only."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "ほかのアプリと比べなかった理由",
+        "en": "Why there's no comparison"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "App Storeで釣具の管理アプリを探すと、持っているルアーやロッドの一覧、釣果の記録をするアプリは見つかりました。手入れの時期を数えて知らせるアプリは、2026年11月15日の時点では見つけられませんでした。",
+            "en": "Searching the App Store, I found apps for listing your lures and rods and for logging catches. As of November 15, 2026, I couldn't find one that counts and reminds you when gear needs care."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "アプリを入れたくないなら",
+        "en": "If you'd rather not install an app"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "ラインの交換のように日数で決まるものは、iPhoneのリマインダーで繰り返しを設定すれば済みます。回数で決まるものは、釣行のたびに手帳やメモに正の字をつけて数える方法もあります。",
+            "en": "For things that go by days, like line changes, a repeating reminder in the iPhone Reminders app is enough. For things that go by trips, you can keep a tally in a notebook or a note every time you go fishing."
+          }
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "ja": "無料で使えますか？",
+        "en": "Is it free?"
+      },
+      "a": {
+        "ja": "無料で入れられて、リール1台とケア項目3つまで使えます。2台以上なら有料のプレミアムです。",
+        "en": "It's free to download and covers 1 reel and 3 care items. For two or more, you need the paid Premium."
+      }
+    },
+    {
+      "q": {
+        "ja": "淡水でしか釣りをしません。",
+        "en": "I only fish in fresh water."
+      },
+      "a": {
+        "ja": "釣具を登録すると、海水後の水洗い、ライン交換、オーバーホールの3つが最初に入ります。淡水だけなら、水洗いの項目を消すか周期を延ばしてください。",
+        "en": "When you register gear, three items are added to start with: rinsing after salt water, line change, and overhaul. If you only fish fresh water, delete the rinse item or lengthen its interval."
+      }
+    },
+    {
+      "q": {
+        "ja": "オーバーホールは自分でやるものですか？",
+        "en": "Should I do the overhaul myself?"
+      },
+      "a": {
+        "ja": "アプリは時期を知らせるだけです。分解や整備は、リールのメーカーか釣具店に相談してください。",
+        "en": "The app only tells you when. For taking the reel apart and servicing it, talk to the manufacturer or a tackle shop."
+      }
+    }
+  ],
+  "closing": {
+    "ja": "ReelKeepはまだ評価が0件なので、釣り好きの人からの声が届いたらうれしいです🎣",
+    "en": "ReelKeep has no ratings yet, so I'd be happy to hear from anyone who loves fishing 🎣"
+  },
+  "notes": {
+    "ja": "機能は2026年11月15日にアプリのコードとApp Storeの説明文で確かめたものです。アップデートで変わることがあります。手入れの間隔は一般的な目安なので、リールの説明書や釣具店の案内に合わせて直してください。",
+    "en": "Features were checked against the app's code and App Store description on November 15, 2026, and may change with updates. The care intervals are general guidelines, so adjust them to your reel's manual and your tackle shop's advice."
+  },
+  "illustration": {
+    "scene": "釣りから帰った夕方の玄関先。キャラがスピニングリールを手に持ち、ホースのシャワーでやさしく水洗いしている。横にはクーラーボックスと竿が立てかけてあり、足元に置いたスマホ（文字なし）には水しぶきのマークと紫のチェック。",
+    "alt": {
+      "ja": "釣りから帰って、リールをホースのシャワーで水洗いするキャラクター",
+      "en": "Back from fishing, the character gently rinses a spinning reel with a hose shower"
+    }
+  }
+}

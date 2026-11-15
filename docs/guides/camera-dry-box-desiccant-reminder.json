@@ -1,0 +1,324 @@
+{
+  "slug": "camera-dry-box-desiccant-reminder",
+  "date_published": "2026-11-15",
+  "date_updated": "2026-11-15",
+  "search_phrase": {
+    "ja": "ドライボックス 乾燥剤 交換",
+    "en": "camera dry box desiccant replacement reminder"
+  },
+  "evidence": "2026-11-15 に Google の検索候補で「ドライボックス 乾燥剤」を引くと、8件中2件が「交換目安」「交換」だった。「カメラ 乾燥剤」でも11件中に「交換時期」が出た。同じ日に App Store で「ドライボックス 乾燥剤」を検索すると、カメラ用のアプリは1本も出なかった。「防湿庫」で出たのは3本で、乾燥剤の交換を知らせるのは僕のCameraKeepと、レンズカビ ガードのPro機能だけ。どちらも評価は0件だった。",
+  "title": {
+    "ja": "カメラのドライボックスの乾燥剤、交換を忘れない方法",
+    "en": "How to Stop Forgetting to Replace the Desiccant in Your Camera Dry Box"
+  },
+  "description": {
+    "ja": "カメラのドライボックスの乾燥剤を替え忘れないために、知らせてくれるアプリを2本比べました。アプリを使わない方法も書いています。CameraKeepの作者が書いています。",
+    "en": "Two iPhone apps that remind you to replace the desiccant in your camera dry box, compared side by side, plus ways to do it without an app. Written by the maker of CameraKeep."
+  },
+  "excerpt": {
+    "ja": "乾燥剤の交換を知らせるアプリ2本と、アプリなしの方法をまとめました。CameraKeepを作った僕が、自分のアプリも入れて書いています。",
+    "en": "Two apps that remind you to swap out desiccant, plus ways to do it without an app. I made CameraKeep, and it's one of the two."
+  },
+  "category": {
+    "ja": "アプリの選び方",
+    "en": "App guides"
+  },
+  "reading_minutes": 3,
+  "author": {
+    "name": {
+      "ja": "續橋 涼",
+      "en": "Ryo Tsuzukihashi"
+    },
+    "handle": "tsuzuki817",
+    "bio": {
+      "ja": "2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。CameraKeepの作者です。",
+      "en": "I've been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made CameraKeep."
+    },
+    "url": "https://tsuzukit.com/about/",
+    "same_as": [
+      "https://x.com/tsuzuki817"
+    ]
+  },
+  "tldr": {
+    "ja": "ドライボックスに湿度計を入れて、乾燥剤を替える日をどこかに知らせてもらうのが確実です。外の湿度からカビの危なさを毎日見たいならレンズカビ ガード。乾燥剤の交換をレンズ清掃やセンサー清掃と一緒に周期で管理したい人は、僕が作ったCameraKeepも見てみてください。",
+    "en": "The reliable way is a hygrometer inside the dry box plus something that tells you when to swap the desiccant. If you want a daily read on mold risk from the local humidity, Lens Fungus Guard. If you'd rather keep desiccant swaps on a schedule alongside lens and sensor cleaning, take a look at CameraKeep, which I made."
+  },
+  "disclosure": {
+    "ja": "この記事は、CameraKeepを作った僕が書いています。もう1本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。",
+    "en": "I made CameraKeep, and I wrote this article. The other app is by a developer I don't know, and I haven't received money or anything else from them. Everything compared here comes from each app's App Store description and rating count as of November 15, 2026."
+  },
+  "own_app": "6784186281",
+  "app_category": "PhotographyApplication",
+  "apps": [
+    {
+      "id": "6784186281",
+      "name": {
+        "ja": "CameraKeep カメラ機材管理",
+        "en": "CameraKeep: Camera Gear Care"
+      },
+      "short": {
+        "ja": "CameraKeep",
+        "en": "CameraKeep"
+      },
+      "developer": "Ryo Tsudukihashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/27/8c/06/278c0652-d947-ac5c-c430-424eeb3b97b9/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6784186281",
+      "android_url": null,
+      "rating_count": 0
+    },
+    {
+      "id": "6787859470",
+      "name": {
+        "ja": "レンズカビ ガード：カメラ管理",
+        "en": "Lens Fungus Guard: Camera Care"
+      },
+      "short": {
+        "ja": "レンズカビ ガード",
+        "en": "Lens Fungus Guard"
+      },
+      "developer": "JUHWAN PARK",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/f6/7a/eb/f67aeb89-6a2a-3e2e-aa7f-2dd7ee52a0e2/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6787859470",
+      "android_url": null,
+      "rating_count": 0
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ja": "2本をざっくり比べる",
+        "en": "The two apps at a glance"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "CameraKeepは決めた周期で知らせて、レンズカビ ガードはその日の湿度から危なさを判定します。考え方がそもそも違います。",
+            "en": "CameraKeep reminds you on a schedule you set, while Lens Fungus Guard judges the risk from the day's humidity. They start from different ideas."
+          }
+        },
+        {
+          "type": "table",
+          "head": [
+            {
+              "ja": "アプリ",
+              "en": "App"
+            },
+            {
+              "ja": "評価の件数",
+              "en": "Ratings"
+            },
+            {
+              "ja": "乾燥剤の交換",
+              "en": "Desiccant swaps"
+            },
+            {
+              "ja": "湿度",
+              "en": "Humidity"
+            },
+            {
+              "ja": "ほかの手入れ",
+              "en": "Other care"
+            },
+            {
+              "ja": "無料の範囲",
+              "en": "Free version"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ja": "CameraKeep（僕のアプリ）",
+                "en": "CameraKeep (my app)"
+              },
+              {
+                "ja": "0件",
+                "en": "0"
+              },
+              {
+                "ja": "30日ごとに通知。周期は変えられる",
+                "en": "Every 30 days by default, adjustable"
+              },
+              {
+                "ja": "防湿庫の湿度チェックを7日ごとに通知",
+                "en": "Reminds you to check the dry box every 7 days"
+              },
+              {
+                "ja": "レンズ清掃、センサー清掃など10項目",
+                "en": "10 items, including lens and sensor cleaning"
+              },
+              {
+                "ja": "機材1つ、項目3つまで",
+                "en": "1 piece of gear, 3 items"
+              }
+            ],
+            [
+              {
+                "ja": "レンズカビ ガード",
+                "en": "Lens Fungus Guard"
+              },
+              {
+                "ja": "0件",
+                "en": "0"
+              },
+              {
+                "ja": "交換までのカウントダウン（Pro）",
+                "en": "Countdown to the next swap (Pro)"
+              },
+              {
+                "ja": "現地の湿度と気温から毎日判定",
+                "en": "Daily verdict from local humidity and temperature"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "今日のカビの危なさの判定",
+                "en": "Today's mold risk verdict"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "1本ずつ見ていく",
+        "en": "Each app, one by one"
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "id": "6784186281"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "乾燥剤の交換は30日ごと、防湿庫の湿度チェックは7日ごとに知らせる項目が用意してあります。3日前、前日、当日に通知が来て、過ぎたら済ませたと記録するまで毎日来ます。",
+            "en": "It has ready-made items for swapping desiccant every 30 days and checking the dry box humidity every 7 days. You get a notification 3 days before, the day before, and on the day, then every day until you log it as done."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "無料だと機材1つに項目3つまでで、最初はレンズ清掃、防湿庫の湿度チェック、センサー清掃が入っています。無料のまま乾燥剤の交換を足すなら、どれか1つと入れ替えることになります。項目を増やすのはプレミアムで、iPhone専用です。",
+            "en": "The free version allows one piece of gear with up to 3 items, starting with lens cleaning, dry box humidity check, and sensor cleaning. To add desiccant swaps without paying, you'd swap it in for one of those. More items need Premium. It's iPhone only."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6787859470"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "今いる場所の湿度と気温を取ってきて、今日のカビの危なさを安全、注意、対処の3段階で出します。バッグに入れているか、防湿庫か、密閉しているかも考えてくれます。",
+            "en": "It pulls the humidity and temperature where you are and rates today's mold risk as safe, caution, or take action. It also accounts for whether your gear is in a bag, a dry cabinet, or a sealed container."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "乾燥剤の交換までのカウントダウンと、湿度が高い日の通知はProの機能です。外の天気から見ているので、箱の中を測るものではないと説明文にも書いてあります。",
+            "en": "The countdown to your next desiccant swap and alerts on humid days are Pro features. Since it works from the outside weather, its description notes that it doesn't measure inside the box."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "アプリを入れたくないなら",
+        "en": "If you'd rather not install an app"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "ドライボックスに小さな湿度計を入れておくと、乾燥剤が効いているかが目で分かります。湿度が上がってきたら替えどきです。",
+            "en": "Put a small hygrometer inside the dry box and you can see at a glance whether the desiccant is still working. When the humidity starts creeping up, it's time to swap."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "色が変わって替えどきを知らせる乾燥剤もあります。替えた日をiPhoneのリマインダーに入れて、1か月ごとに繰り返す手もありますね。",
+            "en": "Some desiccants also change color when they need replacing. Or you can put the swap date in the iPhone Reminders app and set it to repeat every month."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "どれを選ぶか",
+        "en": "Which one to pick"
+      },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "ja": "外の湿度から、今日カビに気をつけるべきかを毎日知りたいなら、レンズカビ ガード",
+              "en": "If you want to know every day whether mold is a concern based on the local humidity, Lens Fungus Guard"
+            },
+            {
+              "ja": "乾燥剤の交換をレンズやセンサーの清掃と一緒に周期で回したいなら、CameraKeep",
+              "en": "If you want desiccant swaps on a schedule alongside lens and sensor cleaning, CameraKeep"
+            },
+            {
+              "ja": "ボックスが1つだけなら、湿度計とリマインダーでも十分",
+              "en": "If you only have one box, a hygrometer and a reminder are plenty"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "ja": "乾燥剤はどれくらいで替えればいいですか？",
+        "en": "How often should I replace the desiccant?"
+      },
+      "a": {
+        "ja": "乾燥剤の量や箱の大きさ、部屋の湿度で変わります。乾燥剤の袋に書いてある目安を見て、湿度計の数字で合わせていくのが確実です。CameraKeepの30日は最初の設定で、変えられます。",
+        "en": "It depends on how much desiccant you use, the size of the box, and the humidity in your room. Start from the guideline on the desiccant package and adjust based on your hygrometer. CameraKeep's 30 days is just the starting setting and can be changed."
+      }
+    },
+    {
+      "q": {
+        "ja": "無料で使えますか？",
+        "en": "Are they free?"
+      },
+      "a": {
+        "ja": "2本とも無料で入れられます。レンズカビ ガードは乾燥剤のカウントダウンがPro、CameraKeepは項目を4つ以上にするとプレミアムです。",
+        "en": "Both are free to download. Lens Fungus Guard puts the desiccant countdown in Pro, and CameraKeep needs Premium for more than 3 items."
+      }
+    },
+    {
+      "q": {
+        "ja": "電気の防湿庫でもアプリは要りますか？",
+        "en": "Do I need an app if I have an electric dry cabinet?"
+      },
+      "a": {
+        "ja": "電気の防湿庫なら乾燥剤の交換は要りません。湿度の表示をときどき見る習慣があれば、それで足ります。",
+        "en": "An electric dry cabinet doesn't use desiccant, so there's nothing to swap. Glancing at its humidity display now and then is enough."
+      }
+    }
+  ],
+  "closing": {
+    "ja": "CameraKeepはまだ評価が0件なので、撮りに行く前にでも感想をもらえたらうれしいです📷",
+    "en": "CameraKeep doesn't have any ratings yet, so if you have a moment before your next shoot, I'd love to hear what you think 📷"
+  },
+  "notes": {
+    "ja": "各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。CameraKeepの機能はアプリのコードで確かめました。機材の保管は、カメラやレンズのメーカーの案内に従ってください。",
+    "en": "Features and rating counts were checked against each app's App Store description on November 15, 2026, and may change with updates. CameraKeep's features were checked against the app's own code. Follow your camera and lens maker's guidance on storing your gear."
+  },
+  "illustration": {
+    "scene": "雨の日の部屋。キャラが透明なドライボックスのふたを開けて、中のカメラの横に新しい乾燥剤の袋をそっと入れている。机の上のスマホ（文字なし）から小さなしずくの形の合図が出ていて、窓の外では雨が降っている。",
+    "alt": {
+      "ja": "雨の日に、ドライボックスへ新しい乾燥剤を入れるキャラクター",
+      "en": "The character placing a fresh desiccant pack into a clear dry box next to a camera on a rainy day"
+    }
+  }
+}

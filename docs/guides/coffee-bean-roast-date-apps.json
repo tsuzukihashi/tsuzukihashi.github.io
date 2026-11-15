@@ -1,0 +1,320 @@
+{
+  "slug": "coffee-bean-roast-date-apps",
+  "date_published": "2026-11-15",
+  "date_updated": "2026-11-15",
+  "search_phrase": {
+    "ja": "コーヒー豆 焙煎日から何日",
+    "en": "coffee bean days since roast tracker app"
+  },
+  "evidence": "2026-11-15 に Google の検索候補で「コーヒー豆 焙煎日」を引くと11件が出て、「焙煎日から何日持つ」「焙煎日から何日」「焙煎日 賞味期限」が上のほうに並んだ。「コーヒー豆 飲み頃」は5件中4件が焙煎後や焙煎からの飲み頃を聞く形だった。同じ日に App Store で「コーヒー豆 焙煎日」を引くと、ほとんどがお店の公式アプリと記録アプリで、焙煎日から飲み頃を数えるのは Mame Log と BeanFresh の2本だった。",
+  "title": {
+    "ja": "焙煎日から何日？コーヒー豆の飲み頃を数えるアプリ2選",
+    "en": "How Many Days Since Roasting? 2 Apps That Track Coffee Bean Freshness"
+  },
+  "description": {
+    "ja": "コーヒー豆の焙煎日から飲み頃を数えて知らせてくれるアプリを2本比べました。飲み頃の決め方、通知の時期、冷凍した豆の扱い、無料の範囲の違いをまとめています。BeanFreshの作者が書いています。",
+    "en": "I compared two iPhone apps that count from your coffee beans' roast date and tell you when they're at their best: how they set the window, when they notify you, frozen beans, and what's free. Written by the maker of BeanFresh."
+  },
+  "excerpt": {
+    "ja": "袋の焙煎日、ちゃんと数えていますか。焙煎日から飲み頃を出して知らせてくれるアプリを2本比べました。",
+    "en": "Are you keeping count of the roast date on the bag? Two apps that work out the best days to drink your beans and remind you."
+  },
+  "category": {
+    "ja": "アプリの選び方",
+    "en": "App guides"
+  },
+  "reading_minutes": 3,
+  "author": {
+    "name": {
+      "ja": "續橋 涼",
+      "en": "Ryo Tsuzukihashi"
+    },
+    "handle": "tsuzuki817",
+    "bio": {
+      "ja": "2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。BeanFreshの作者です。",
+      "en": "I've been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made BeanFresh."
+    },
+    "url": "https://tsuzukit.com/about/",
+    "same_as": [
+      "https://x.com/tsuzuki817"
+    ]
+  },
+  "tldr": {
+    "ja": "何日が飲み頃かは豆と焙煎度で変わるので、まず買ったお店で聞くのが確かです。数えるのはアプリに任せられます。冷凍して保存する人や、焙煎度ごとに自動で決めてほしい人はMame Log。ガス抜きと飲みきりの日数を自分で決めて、淹れ方も記録したい人は、僕が作ったBeanFreshが合います。",
+    "en": "The best window depends on the beans and the roast, so the shop where you bought them is the best place to ask. The counting itself you can leave to an app. If you freeze your beans or want the window set by roast level automatically, try Mame Log. If you want to set the resting and drink-by days yourself and also log your brews, BeanFresh, which I made, is a good fit."
+  },
+  "disclosure": {
+    "ja": "この記事は、BeanFreshを作った僕が書いています。Mame Logは知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。",
+    "en": "I made BeanFresh, and I wrote this article. Mame Log is by a developer I don't know, and I haven't received money or anything else from them. Everything compared here comes from each app's App Store description and rating count as of November 15, 2026."
+  },
+  "own_app": "6778683064",
+  "app_category": "FoodApplication",
+  "apps": [
+    {
+      "id": "6778683064",
+      "name": {
+        "ja": "珈琲鮮度・焙煎日管理 BeanFresh",
+        "en": "BeanFresh - Coffee Freshness"
+      },
+      "short": {
+        "ja": "BeanFresh",
+        "en": "BeanFresh"
+      },
+      "developer": "Ryo Tsudukihashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ab/71/c6/ab71c692-efa5-d338-cdad-09609e1d3326/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6778683064",
+      "android_url": null,
+      "rating_count": 0
+    },
+    {
+      "id": "6753582881",
+      "name": {
+        "ja": "Mame Log｜コーヒー豆の飲み頃・鮮度管理",
+        "en": "Mame Log: Coffee Bean Freshness"
+      },
+      "short": {
+        "ja": "Mame Log",
+        "en": "Mame Log"
+      },
+      "developer": "Uetake Kouya",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c3/bc/6b/c3bc6bac-09b8-0441-dca9-f8a06804de0c/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6753582881",
+      "android_url": null,
+      "rating_count": 1
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ja": "2本をざっくり比べる",
+        "en": "The two apps at a glance"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "どちらも焙煎日を入れると飲み頃を出してくれます。違うのは、日数を誰が決めるかと、冷凍した豆を扱えるかです。",
+            "en": "Both work out the drinking window once you enter the roast date. The difference is who decides the number of days, and whether frozen beans are handled."
+          }
+        },
+        {
+          "type": "table",
+          "head": [
+            {
+              "ja": "アプリ",
+              "en": "App"
+            },
+            {
+              "ja": "評価の件数",
+              "en": "Ratings"
+            },
+            {
+              "ja": "飲み頃の決め方",
+              "en": "How the window is set"
+            },
+            {
+              "ja": "通知",
+              "en": "Notifications"
+            },
+            {
+              "ja": "冷凍した豆",
+              "en": "Frozen beans"
+            },
+            {
+              "ja": "無料の範囲",
+              "en": "Free version"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ja": "BeanFresh（僕のアプリ）",
+                "en": "BeanFresh (my app)"
+              },
+              {
+                "ja": "0件",
+                "en": "0"
+              },
+              {
+                "ja": "ガス抜きと飲みきりの日数を自分で選ぶ",
+                "en": "You choose the resting days and drink-by days"
+              },
+              {
+                "ja": "飲み頃の前日と当日、終わりの3日前と当日。過ぎたら毎日",
+                "en": "Day before and day of the window, 3 days before and on the drink-by day, then daily"
+              },
+              {
+                "ja": "なし",
+                "en": "No"
+              },
+              {
+                "ja": "豆3件まで",
+                "en": "Up to 3 bags"
+              }
+            ],
+            [
+              {
+                "ja": "Mame Log",
+                "en": "Mame Log"
+              },
+              {
+                "ja": "1件",
+                "en": "1"
+              },
+              {
+                "ja": "焙煎度ごとに自動で計算",
+                "en": "Calculated automatically by roast level"
+              },
+              {
+                "ja": "飲み頃を毎日の通知で",
+                "en": "Daily notifications during the window"
+              },
+              {
+                "ja": "常温と分けて管理。冷凍中は進まない",
+                "en": "Tracked separately, with aging paused while frozen"
+              },
+              {
+                "ja": "無料。広告あり",
+                "en": "Free, with ads"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "1本ずつ見ていく",
+        "en": "Each app, one by one"
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "id": "6778683064"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "焙煎日を入れると、ガス抜き、飲み頃、飲みきりどきの順に今どこにいるかをメーターで出します。最初に入るのはガス抜き4日、飲み頃は焙煎日から28日までです。ガス抜きは2日から7日、飲み頃の長さは14日から42日の中で、豆に合わせて選び直せます。",
+            "en": "Enter the roast date and a meter shows where the beans are now, from resting to their best days to time to finish them. It starts with 4 days of resting and a window that lasts until 28 days after roasting. You can change the resting time to anything from 2 to 7 days, and the window from 14 to 42 days, to suit the beans."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "通知は、飲み頃に入る前日と当日、飲みきりの3日前と当日です。過ぎたら、飲みきったと記録するまで毎日鳴ります。淹れ方や豆と湯の量、挽き目を残す抽出の記録もあります。",
+            "en": "It notifies you the day before the window opens, the day it opens, 3 days before the drink-by day, and on that day. After that, it reminds you every day until you log that the bag is finished. There's also a brew log for your method, the amount of beans and water, and the grind."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "無料だと豆は3件まで登録できます。プレミアムで無制限になり、広告が消えます。冷凍した豆の扱いはありません。",
+            "en": "The free version holds up to 3 bags of beans. Premium makes it unlimited and removes the ads. It doesn't handle frozen beans."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6753582881"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "焙煎日か開封日を入れると、浅煎り、中煎り、深煎りごとに飲み頃を自動で計算します。日数を自分で考えたくない人には、こちらのほうが楽ですね。",
+            "en": "Enter the roast date or the day you opened the bag, and it calculates the window automatically for light, medium, or dark roasts. If you'd rather not think about the number of days, this one is easier."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "BeanFreshに無いのが冷凍の扱いです。常温と冷凍を分けて管理できて、冷凍している間は経過が止まります。豆カレンダーで、いつどの豆を飲んでいたかも振り返れます。無料で、広告が出ます。",
+            "en": "What BeanFresh doesn't have is freezer support. It tracks room-temperature and frozen beans separately, and pauses the clock while they're frozen. A bean calendar also shows which beans you were drinking and when. It's free, with ads."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "アプリを入れなくてもいい人",
+        "en": "When you don't need an app"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "豆を1袋ずつしか買わないなら、袋に書いてある焙煎日を見て数えれば足ります。アプリが役に立つのは、何袋かを並行して開けていて、どれから飲むか迷う人です。",
+            "en": "If you only buy one bag at a time, checking the roast date printed on the bag is enough. An app helps when you have several bags open at once and can't decide which to drink first."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "どちらを選ぶか",
+        "en": "Which one to pick"
+      },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "ja": "豆を冷凍して保存する人や、焙煎度で自動に決めてほしい人は、Mame Log",
+              "en": "If you freeze your beans or want the window set automatically by roast level, Mame Log"
+            },
+            {
+              "ja": "日数を豆ごとに決めて、飲みきるまで知らせてほしい人や、淹れ方も記録したい人は、BeanFresh",
+              "en": "If you want to set the days for each bag, get reminders until it's finished, and log your brews, BeanFresh"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "ja": "焙煎日から何日が飲み頃ですか？",
+        "en": "How many days after roasting are beans at their best?"
+      },
+      "a": {
+        "ja": "豆や焙煎度、保存の仕方で変わります。買ったお店で聞いた日数をアプリに入れておくのが確かです。BeanFreshは最初に4日目から28日目までが入っています。",
+        "en": "It depends on the beans, the roast, and how you store them. The safest bet is to ask the shop and put those days into the app. BeanFresh starts with day 4 through day 28."
+      }
+    },
+    {
+      "q": {
+        "ja": "無料で使えますか？",
+        "en": "Are they free?"
+      },
+      "a": {
+        "ja": "どちらも無料で入れられます。BeanFreshは無料だと豆3件まで、Mame Logは無料で広告が出ます。",
+        "en": "Both are free to download. BeanFresh holds 3 bags for free, and Mame Log is free with ads."
+      }
+    },
+    {
+      "q": {
+        "ja": "焙煎日が書いていない豆はどうしますか？",
+        "en": "What if the bag doesn't show a roast date?"
+      },
+      "a": {
+        "ja": "Mame Logは開封日から数えることもできます。BeanFreshは焙煎日から数えるので、分からなければ買った日を入れて目安にしてください。",
+        "en": "Mame Log can also count from the day you opened the bag. BeanFresh counts from the roast date, so if you don't know it, enter the day you bought the beans as a rough guide."
+      }
+    }
+  ],
+  "closing": {
+    "ja": "BeanFreshはまだ評価が0件です。いつもの豆で試してみた人がいたら、感想を聞かせてください☕",
+    "en": "BeanFresh has no ratings yet. If you try it with your usual beans, I'd love to hear how it goes ☕"
+  },
+  "notes": {
+    "ja": "各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。豆の保存の仕方は、買ったお店の案内に従ってください。",
+    "en": "Features and rating counts were checked against each app's App Store description on November 15, 2026, and may change with updates. For how to store your beans, follow the guidance from the shop where you bought them."
+  },
+  "illustration": {
+    "scene": "朝の台所のカウンター。キャラがコーヒー豆の袋を3つ並べて見比べ、そのうち1袋を選んでドリッパーに豆を入れようとしている。選ばれた袋だけ紫のリボンがついていて、横のスマホ（文字なし）にはコーヒー豆のマークとメーターの絵。",
+    "alt": {
+      "ja": "コーヒー豆の袋を3つ並べて、いちばん飲み頃の1袋を選ぶキャラクター",
+      "en": "The character comparing three bags of coffee beans and picking the one that's at its best"
+    }
+  }
+}

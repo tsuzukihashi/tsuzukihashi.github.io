@@ -1,0 +1,455 @@
+{
+  "slug": "handwritten-todo-list-apps",
+  "date_published": "2026-11-15",
+  "date_updated": "2026-11-15",
+  "search_phrase": {
+    "ja": "todo リスト 手書き アプリ",
+    "en": "handwritten to-do list app"
+  },
+  "evidence": "2026-11-15 に Google の検索候補で「todo アプリ 手書き」を引くと、3件の中に「todo リスト 手書き アプリ」「ipad todo アプリ 手書き」が出た。「やることリスト アプリ」は12件の候補があるが、大手のアプリが並ぶ大きい語なので、手で書きたい人に絞った。同じ日に App Store で「todo 手書き」を検索すると14本が並び、手帳やノートのアプリが多く、ToDoを手書きで書くアプリは数本だった。",
+  "title": {
+    "ja": "やることを手書きで書けるToDoアプリ4選",
+    "en": "4 To-Do List Apps You Can Write in by Hand"
+  },
+  "description": {
+    "ja": "やることを手書きで書けるToDoアプリを4本比べました。本当に手で書けるか、終わったときの消し方、通知、無料の範囲の違いをまとめています。Yattayoの作者が書いています。",
+    "en": "I compared four to-do apps that let you write your tasks by hand: whether you can really handwrite, how you mark things done, reminders, and what's free. Written by the maker of Yattayo."
+  },
+  "excerpt": {
+    "ja": "手で書けるか、終わったときの消し方、通知、無料の範囲で4本を比べました。Yattayoを作った僕が、自分のアプリも入れて書いています。",
+    "en": "Four apps compared on real handwriting, how you check things off, reminders, and what's free. I made Yattayo, and it's one of the four."
+  },
+  "category": {
+    "ja": "アプリの選び方",
+    "en": "App guides"
+  },
+  "reading_minutes": 4,
+  "author": {
+    "name": {
+      "ja": "續橋 涼",
+      "en": "Ryo Tsuzukihashi"
+    },
+    "handle": "tsuzuki817",
+    "bio": {
+      "ja": "2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。Yattayoの作者です。",
+      "en": "I've been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made Yattayo."
+    },
+    "url": "https://tsuzukit.com/about/",
+    "same_as": [
+      "https://x.com/tsuzuki817"
+    ]
+  },
+  "tldr": {
+    "ja": "紙に書く感覚でリストを作りたいなら、評価1,636件のT-ToDoがいちばん使われています。手書きのメモとタスクを一緒に扱いたいならタスク管制塔。付箋に手で書いて、終わったらつまみをスライドして片付ける手ごたえが欲しい人は、僕が作ったYattayoも見てみてください。",
+    "en": "If you want to make lists like you would on paper, T-ToDo, with 1,636 ratings, is the most used. If you want handwritten notes and tasks together, Task Control Tower. If you'd like to write on a sticky note and slide a switch when you're done, take a look at Yattayo, which I made."
+  },
+  "disclosure": {
+    "ja": "この記事は、Yattayoを作った僕が書いています。ほかの3本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。",
+    "en": "I made Yattayo, and I wrote this article. The other three apps are by developers I don't know, and I haven't received money or anything else from them. Everything compared here comes from each app's App Store description and rating count as of November 15, 2026."
+  },
+  "own_app": "6791000395",
+  "app_category": "ProductivityApplication",
+  "apps": [
+    {
+      "id": "6791000395",
+      "name": {
+        "ja": "Yattayo やったよボード：ToDoリスト",
+        "en": "Yattayo: Slider To-Do Board"
+      },
+      "short": {
+        "ja": "Yattayo",
+        "en": "Yattayo"
+      },
+      "developer": "Ryo Tsudukihashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e8/ca/3f/e8ca3fdf-b576-e377-18f5-71c007c54fa3/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6791000395",
+      "android_url": "https://play.google.com/store/apps/details?id=com.tsuzukit.yattayo",
+      "rating_count": 2
+    },
+    {
+      "id": "694543348",
+      "name": {
+        "ja": "買い物リスト, タスク管理アプリ - T-ToDo",
+        "en": "T-ToDo: Handwritten Lists"
+      },
+      "short": {
+        "ja": "T-ToDo",
+        "en": "T-ToDo"
+      },
+      "developer": "urecy",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple124/v4/46/10/fd/4610fd07-b954-50db-d353-c38138af36e0/AppIcon-0-0-1x_U007emarketing-0-0-0-3-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id694543348",
+      "android_url": null,
+      "rating_count": 1636
+    },
+    {
+      "id": "6819606478",
+      "name": {
+        "ja": "タスク管制塔 — ToDoと手書きメモ",
+        "en": "Task Control Tower"
+      },
+      "short": {
+        "ja": "タスク管制塔",
+        "en": "Task Control Tower"
+      },
+      "developer": "Yuichi Ono",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e2/1d/61/e21d61b3-5f23-ed4e-1690-7a613ad6d221/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6819606478",
+      "android_url": null,
+      "rating_count": 0
+    },
+    {
+      "id": "480677477",
+      "name": {
+        "ja": "My CheckBox - 手書き風カレンダーTODO",
+        "en": "My CheckBox - Todo Calendar"
+      },
+      "short": {
+        "ja": "My CheckBox",
+        "en": "My CheckBox"
+      },
+      "developer": "jang sehoon",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/69/d5/07/69d507f5-4772-981a-8dd0-817b07c5c1bb/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id480677477",
+      "android_url": null,
+      "rating_count": 30
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ja": "4本をざっくり比べる",
+        "en": "The four apps at a glance"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "まず分かれるのは、指やペンで本当に手書きできるか、手書き風の文字で表示するかです。終わったときにどう片付けるかも、アプリごとに違います。",
+            "en": "The first split is whether you can actually write with a finger or pen, or whether it just shows your typing in a handwriting-style font. How you clear finished tasks also varies."
+          }
+        },
+        {
+          "type": "table",
+          "head": [
+            {
+              "ja": "アプリ",
+              "en": "App"
+            },
+            {
+              "ja": "評価の件数",
+              "en": "Ratings"
+            },
+            {
+              "ja": "手書き",
+              "en": "Handwriting"
+            },
+            {
+              "ja": "終わったら",
+              "en": "When it's done"
+            },
+            {
+              "ja": "締切の通知",
+              "en": "Due date reminders"
+            },
+            {
+              "ja": "無料の範囲",
+              "en": "Free version"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ja": "Yattayo（僕のアプリ）",
+                "en": "Yattayo (my app)"
+              },
+              {
+                "ja": "2件",
+                "en": "2"
+              },
+              {
+                "ja": "付箋に手書きかキーボード",
+                "en": "Handwrite or type on a sticky note"
+              },
+              {
+                "ja": "つまみをスライドしてOKのスタンプ",
+                "en": "Slide a switch for an OK stamp"
+              },
+              {
+                "ja": "2日前、前日、当日。過ぎたら毎日",
+                "en": "2 days before, the day before, on the day, then daily"
+              },
+              {
+                "ja": "タスク3件まで",
+                "en": "Up to 3 tasks"
+              }
+            ],
+            [
+              {
+                "ja": "T-ToDo",
+                "en": "T-ToDo"
+              },
+              {
+                "ja": "1,636件",
+                "en": "1,636"
+              },
+              {
+                "ja": "紙に書く感覚で手書き",
+                "en": "Handwrite like on paper"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "広告あり。行の挿入は有料",
+                "en": "With ads. Inserting rows is paid"
+              }
+            ],
+            [
+              {
+                "ja": "タスク管制塔",
+                "en": "Task Control Tower"
+              },
+              {
+                "ja": "0件",
+                "en": "0"
+              },
+              {
+                "ja": "メモのブックに手書き",
+                "en": "Handwrite in memo notebooks"
+              },
+              {
+                "ja": "右へスライドしてトレーへ",
+                "en": "Swipe right into the tray"
+              },
+              {
+                "ja": "説明文に記載なし。期限は付けられる",
+                "en": "Not mentioned. You can set deadlines"
+              },
+              {
+                "ja": "処理待ち10件、ブック5冊まで",
+                "en": "10 queued tasks, 5 notebooks"
+              }
+            ],
+            [
+              {
+                "ja": "My CheckBox",
+                "en": "My CheckBox"
+              },
+              {
+                "ja": "30件",
+                "en": "30"
+              },
+              {
+                "ja": "手書き風のフォント10種類",
+                "en": "10 handwriting-style fonts"
+              },
+              {
+                "ja": "チェック。終わらなければ先送り",
+                "en": "Check it off, or push it to later"
+              },
+              {
+                "ja": "当日から2日前まで選べる",
+                "en": "Your choice, from the day of to 2 days before"
+              },
+              {
+                "ja": "説明文に記載なし。パスコードは有料",
+                "en": "Not mentioned. Passcode lock is paid"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "1本ずつ見ていく",
+        "en": "Each app, one by one"
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "id": "6791000395"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "やることは1枚の付箋になっていて、開いて指で手書きするか、キーボードで打ちます。付箋はオレンジのスライダーボードに並んで、終わったらつまみをスライドするとOKのスタンプが出ます。",
+            "en": "Each task is a sticky note you open and write on by hand or type into. The notes line up on an orange slider board, and when you finish one, you slide its switch and an OK stamp appears."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "締切の2日前、前日、当日に知らせて、過ぎたら終わらせるまで毎日知らせます。iCloudでiPhone、Apple Watch、Macがつながっていて、ウィジェットのスイッチからも完了にできます。",
+            "en": "It reminds you 2 days before a deadline, the day before, and on the day, then every day until you finish. It syncs across iPhone, Apple Watch, and Mac through iCloud, and you can complete tasks from a switch on the widget."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "無料だとタスクは3件までで、たくさん書きたい人には正直少ないです。無制限と繰り返しのタスクはプレミアムです。Google PlayにAndroid版もあります。",
+            "en": "The free version holds just 3 tasks, which honestly isn't many if you have a long list. Unlimited tasks and repeating tasks are Premium. There's also an Android version on Google Play."
+          }
+        },
+        {
+          "type": "app",
+          "id": "694543348"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "評価が1,636件あって、この中ではいちばん使われています。紙に書くような感覚で、さっと手書きのToDoリストを作れます。",
+            "en": "With 1,636 ratings, it's the most used of the four. You can jot down a handwritten to-do list as quickly as you would on paper."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "チェックリストや買い物メモのような、ちょっとしたリストに向いてますね。無料版は広告が出て、タスクの行を間に足す機能は有料版です。",
+            "en": "It suits quick lists like checklists and shopping notes. The free version has ads, and inserting a row between tasks is part of the paid version."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6819606478"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "今日やることを細長いプレートに並べて、いま取り組む1枚だけに集中します。終わったら右へスライドすると、プレートがトレーに落ちて完了です。",
+            "en": "You line up today's tasks as long strips and focus on just the one you're working on. When it's done, swipe it right and it drops into a tray."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "A4の用紙を束ねたブックに、Apple Pencilや指で手書きのメモを書けて、タスクとつなげられます。無料版は広告が出て、処理待ちは10件、ブックは5冊までです。",
+            "en": "You can handwrite notes with Apple Pencil or your finger in notebooks of A4 pages and link them to tasks. The free version has ads and allows 10 queued tasks and 5 notebooks."
+          }
+        },
+        {
+          "type": "app",
+          "id": "480677477"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "カレンダーの日付にやることを書いて、終わったらチェックするアプリです。手で書くのではなく、打った文字を10種類の手書き風フォントで出します。",
+            "en": "You write tasks on calendar dates and check them off when they're done. Instead of real handwriting, it shows what you type in one of 10 handwriting-style fonts."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "終わらなかったことは、ワンタップで今日や明日へ先送りできます。誕生日のような毎年の予定も繰り返せて、アイコンに今日の残りの数が出ます。",
+            "en": "Anything you didn't finish can be pushed to today or tomorrow with one tap. Yearly events like birthdays can repeat, and the app icon shows how many tasks are left today."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "アプリを入れたくないなら",
+        "en": "If you'd rather not install an app"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "iPhoneのメモアプリでも、チェックリストを作って、そのまま指で手書きを書き込めます。書いて消すだけなら、これで足ります。",
+            "en": "The iPhone Notes app can make a checklist, and you can draw on the same note with your finger. If you just want to write and cross off, that's enough."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "締切に知らせてほしいなら、iPhoneのリマインダーのほうが向いています。ただ、リマインダーには手書きで書く場所がありません。",
+            "en": "If you want deadline reminders, the iPhone Reminders app is a better fit. It just doesn't give you anywhere to write by hand."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "どれを選ぶか",
+        "en": "Which one to pick"
+      },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "ja": "紙のメモのように、さっと手書きのリストを作りたいなら、T-ToDo",
+              "en": "If you want to dash off handwritten lists like on a notepad, T-ToDo"
+            },
+            {
+              "ja": "手書きのメモとタスクをつなげて、1つずつ片付けたいなら、タスク管制塔",
+              "en": "If you want handwritten notes tied to tasks, tackled one at a time, Task Control Tower"
+            },
+            {
+              "ja": "カレンダーに書いて、手帳のような見た目で使いたいなら、My CheckBox",
+              "en": "If you want to write on a calendar with a paper-planner look, My CheckBox"
+            },
+            {
+              "ja": "数は少なくていいから、手で書いてスライドで消す手ごたえが欲しいなら、Yattayo",
+              "en": "If a short list is fine and you want the feel of writing by hand and sliding things off, Yattayo"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "ja": "Apple Pencilがなくても手書きできますか？",
+        "en": "Can I handwrite without an Apple Pencil?"
+      },
+      "a": {
+        "ja": "Yattayoとタスク管制塔は、指でも書けます。T-ToDoは説明文に書き方の道具の記載がありませんでした。",
+        "en": "Yattayo and Task Control Tower both work with your finger. T-ToDo's description doesn't say what you write with."
+      }
+    },
+    {
+      "q": {
+        "ja": "無料で使えますか？",
+        "en": "Are they free?"
+      },
+      "a": {
+        "ja": "4本とも無料で入れられます。Yattayoは無料だとタスク3件まで、タスク管制塔は処理待ち10件までです。",
+        "en": "All four are free to download. Yattayo's free version holds 3 tasks, and Task Control Tower's holds 10 queued tasks."
+      }
+    },
+    {
+      "q": {
+        "ja": "Androidでも使えますか？",
+        "en": "Do they work on Android?"
+      },
+      "a": {
+        "ja": "YattayoはGoogle PlayにもAndroid版があります。ほかの3本は、この記事ではAndroid版を確かめていません。",
+        "en": "Yattayo also has an Android version on Google Play. I didn't check Android versions of the other three for this article."
+      }
+    }
+  ],
+  "closing": {
+    "ja": "Yattayoの評価はまだ2件なので、つまみをスライドした感想を聞かせてもらえたらうれしいです✅",
+    "en": "Yattayo only has two ratings so far, so I'd love to hear how sliding that switch feels to you ✅"
+  },
+  "notes": {
+    "ja": "各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。Yattayoの機能はアプリのコードで確かめました。",
+    "en": "Features and rating counts were checked against each app's App Store description on November 15, 2026, and may change with updates. Yattayo's features were checked against the app's own code."
+  },
+  "illustration": {
+    "scene": "朝のテーブル。キャラが黄色い付箋に指で何かを書き込んでいて（文字なし、ぐるぐるの線だけ）、目の前にはオレンジのスライダーボードが立っている。ボードのつまみのひとつはもう右にスライドされていて、その横に丸いスタンプの跡（文字なし）が押されている。メモや紙には文字に見える線を描かず、チェックの丸と横線だけにする。",
+    "alt": {
+      "ja": "付箋に指で書き込みながら、オレンジのスライダーボードで片付けるキャラクター",
+      "en": "The character writing on a sticky note with a finger beside an orange slider board with one switch already slid over"
+    }
+  }
+}

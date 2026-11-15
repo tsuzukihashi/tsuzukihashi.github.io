@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/js/lang.js"></script>
+    <!-- このページは scripts/build_guides.py が docs/guides/as-i-see-you-photo-grid.json から作る。直すのは JSON のほう -->
+    <title>私から見た友達の3×3画像をスマホで作る方法 - Blog | Ryo Tsuzukihashi</title>
+    <meta name="description" content="私から見た友達や彼氏の、相手を9つのお題にたとえる3×3の画像をスマホで作る方法をまとめました。アプリを使う方法と使わない方法を書いています。私から見たあなたの作者です。">
+    <meta name="title-en" content="How to Make an “As I See You” 3×3 Photo Grid on Your Phone - Blog | Ryo Tsuzukihashi">
+    <meta name="description-en" content="How to make the 3×3 image that describes a friend or partner through nine prompts, right on your phone, with and without an app. Written by the maker of As I See You.">
+    <link rel="canonical" href="https://tsuzukit.com/blog/posts/as-i-see-you-photo-grid.html">
+
+    <!-- OGP -->
+    <meta property="og:title" content="私から見た友達の3×3画像をスマホで作る方法">
+    <meta property="og:description" content="私から見た友達や彼氏の、相手を9つのお題にたとえる3×3の画像をスマホで作る方法をまとめました。アプリを使う方法と使わない方法を書いています。私から見たあなたの作者です。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://tsuzukit.com/blog/posts/as-i-see-you-photo-grid.html">
+    <meta property="og:image" content="https://tsuzukit.com/assets/images/posts/as-i-see-you-photo-grid.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://tsuzukit.com/assets/images/posts/as-i-see-you-photo-grid.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-dark-32x32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-dark-16x16.png" media="(prefers-color-scheme: dark)">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERPQ1EGLH');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8240751277462688"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
+    <link rel="stylesheet" href="/assets/css/guide.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "私から見た友達の3×3画像をスマホで作る方法",
+      "description": "私から見た友達や彼氏の、相手を9つのお題にたとえる3×3の画像をスマホで作る方法をまとめました。アプリを使う方法と使わない方法を書いています。私から見たあなたの作者です。",
+      "image": "https://tsuzukit.com/assets/images/posts/as-i-see-you-photo-grid.webp",
+      "datePublished": "2026-11-15",
+      "dateModified": "2026-11-15",
+      "inLanguage": "ja",
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "mainEntityOfPage": "https://tsuzukit.com/blog/posts/as-i-see-you-photo-grid.html",
+      "about": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "私から見たあなた",
+          "url": "https://apps.apple.com/jp/app/id6830175143",
+          "operatingSystem": "iOS"
+        }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "私から見たあなた",
+      "operatingSystem": "iOS",
+      "applicationCategory": "PhotographyApplication",
+      "url": "https://apps.apple.com/jp/app/id6830175143",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "無料で使えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "無料で使えます。そのかわり広告が出ます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "選んだ写真はどこかに送られますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "写真とボードは端末の中だけに保存されて、開発者のサーバーには送られません。お題をQRコードで渡すときも、写真は入りません。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "お題は変えられますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "9つのお題は自分で決められて、推し活のお題や家族のお題のようにセットにして何度でも使えます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Androidでも作れますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Google PlayにAndroid版があって、Android 10以降で使えます。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tsuzukit.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://tsuzukit.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "困りごとから選ぶアプリ",
+          "item": "https://tsuzukit.com/blog/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "私から見た友達の3×3画像をスマホで作る方法",
+          "item": "https://tsuzukit.com/blog/posts/as-i-see-you-photo-grid.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">TsuzuKit</a>
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/portfolio/" class="nav-link">Portfolio</a>
+                <a href="/blog/" class="nav-link active">Blog</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post -->
+    <article class="blog-post">
+        <header class="post-header">
+            <div class="post-meta">
+                <span class="post-date">2026.11.15</span>
+                <span class="post-category"><span class="i18n-ja">アプリの選び方</span><span class="i18n-en">App guides</span></span>
+                <span class="post-reading-time"><span class="i18n-ja">3分で読める</span><span class="i18n-en">3 min read</span></span>
+            </div>
+            <h1 class="post-title"><span class="i18n-ja">私から見た友達の3×3画像をスマホで作る方法</span><span class="i18n-en">How to Make an “As I See You” 3×3 Photo Grid on Your Phone</span></h1>
+        </header>
+        <figure class="post-illustration guide-illustration"><img src="/assets/images/posts/as-i-see-you-photo-grid.webp" width="1200" height="800" alt="3×3の画像を見せられて照れる友だちと、スマホを見せるキャラクター" data-en-alt="The character showing a friend a 3×3 photo grid on a phone, and the friend blushing" fetchpriority="high"></figure>
+
+        <div class="post-content guide i18n-ja">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">先に答え</p>
+                <p>私から見た友達は、相手を動物、場所、食べ物などの9つのお題にたとえて、3×3のマスを写真で埋める画像です。テンプレートの画像に写真を重ねても作れますが、9枚の位置を合わせるのは手間がかかります。お題を選んで写真を入れるだけで作りたい人は、僕が作った私から見たあなたを見てみてください。無料です。</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">書いた人 <a href="https://tsuzukit.com/about/">續橋 涼</a>（@tsuzuki817）</p>
+                    <p class="guide-byline-bio">2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。私から見たあなたの作者です。</p>
+                    <p class="guide-byline-date">公開 <time datetime="2026-11-15">2026.11.15</time> · 更新 <time datetime="2026-11-15">2026.11.15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">この記事は、私から見たあなたを作った僕が書いています。App Storeで探した範囲では、同じ作りのアプリが見つからなかったので、ほかのアプリとは比べていません。アプリの中身は、App Storeの説明文と公式ページで確かめたものです（2026年11月15日時点）。</p>
+            <h2>どんな画像なのか</h2>
+            <p>私から見た友達や私から見た彼氏は、SNSで流行っている3×3の画像です。この人を動物にたとえると、場所にたとえると、のように9つのお題を並べて、それぞれのマスを写真で埋めます。</p>
+            <p>できた画像をストーリーやLINEで本人に見せるところまでが、だいたいの流れですね。</p>
+            <h2>アプリで作る</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/5e/47/59/5e47598c-6518-a2dd-e4a5-e877ce39dade/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">僕が作ったアプリ</span>
+                    <h3 class="guide-app-name">私から見たあなた</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · App Storeの評価 0件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6830175143" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        <a class="guide-app-android" href="https://play.google.com/store/apps/details?id=com.tsuzukit.asiseeyou" target="_blank" rel="noopener noreferrer">Google Play版</a>
+                    </div>
+                </div>
+            </div>
+            <p>動物、場所、植物、キャラクター、季節、趣味、食べ物、色、飲み物の9つのお題が最初から入っています。マスを押して、カメラロールの写真を選んでいくだけです。Pinterestなどで見つけた画像も、写真アプリに保存すれば選べます。</p>
+            <p>写真はピンチで大きさを、ドラッグで位置を合わせられます。色のマスは写真ではなく一色で塗れて、写っている人や物だけを切り抜いて白地に乗せることもできます。切り抜いても元の写真は残るので、いつでも戻せます。</p>
+            <p>真ん中の見出しは、私から見たパパや私から見た推しのように選ぶか、自分で書けます。お題も自分で決めてセットにしておけて、そのセットをQRコードで友だちに渡すこともできます。渡るのはお題と色だけで、写真は入りません。</p>
+            <p>書き出すと、できあがりの画像と、空のお題だけの画像の2枚が出ます。空のマスは黒地にお題の文字が入るので、作りかけのままでも1枚の絵になります。</p>
+            <p>会員登録はなく、写真とボードは端末の中だけに保存されます。無料で、広告が出ます。iPhoneはiOS 18以降、Google PlayのAndroid版はAndroid 10以降で使えます。</p>
+            <h2>アプリを使わずに作るなら</h2>
+            <p>お題の文字が入った3×3のテンプレートの画像を用意して、写真を1枚ずつ重ねていけば作れます。SNSのストーリーの編集画面や、写真を重ねられる編集アプリが使えます。</p>
+            <p>ただ、9枚の写真をマスにぴったり合わせるのは、思ったより手間がかかります。マスごとに写真を入れるだけで済むのが、専用のアプリのいいところですね。</p>
+            <h2>よくある質問</h2>
+            <dl class="guide-faq">
+                <dt>無料で使えますか？</dt><dd>無料で使えます。そのかわり広告が出ます。</dd>
+                <dt>選んだ写真はどこかに送られますか？</dt><dd>写真とボードは端末の中だけに保存されて、開発者のサーバーには送られません。お題をQRコードで渡すときも、写真は入りません。</dd>
+                <dt>お題は変えられますか？</dt><dd>9つのお題は自分で決められて、推し活のお題や家族のお題のようにセットにして何度でも使えます。</dd>
+                <dt>Androidでも作れますか？</dt><dd>Google PlayにAndroid版があって、Android 10以降で使えます。</dd>
+            </dl>
+            <p>私から見たあなたはまだ評価が0件なので、作った1枚を本人に見せたときの反応をこっそり教えてほしいです🫶</p>
+            <div class="guide-notes">アプリの中身と評価の件数は、2026年11月15日にApp Storeの説明文と公式ページで確かめたものです。アップデートで変わることがあります。</div>
+        </div>
+
+        <div class="post-content guide i18n-en">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">Short answer</p>
+                <p>An as-I-see-you image describes someone through nine prompts, like an animal, a place, or a food, and fills a 3×3 grid with photos. You can make one by layering photos onto a template, but lining up nine of them takes effort. If you just want to pick prompts and drop in photos, take a look at As I See You, which I made. It&#x27;s free.</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">Written by <a href="https://tsuzukit.com/about/">Ryo Tsuzukihashi</a> (@tsuzuki817)</p>
+                    <p class="guide-byline-bio">I&#x27;ve been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made As I See You.</p>
+                    <p class="guide-byline-date">Published <time datetime="2026-11-15">2026-11-15</time> · Updated <time datetime="2026-11-15">2026-11-15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">I made As I See You, and I wrote this article. I couldn&#x27;t find another app on the App Store that works the same way, so this article doesn&#x27;t compare it with others. Details about the app come from its App Store description and official page as of November 15, 2026.</p>
+            <h2>What the image is</h2>
+            <p>As-I-see-you images, like ones for a friend or a boyfriend, are 3×3 grids that have been going around on social media. You set out nine prompts, like what animal or what place this person would be, and fill each square with a photo.</p>
+            <p>Usually the last step is showing the finished image to the person, in a story or on LINE.</p>
+            <h2>Making it with the app</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/5e/47/59/5e47598c-6518-a2dd-e4a5-e877ce39dade/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">I made this</span>
+                    <h3 class="guide-app-name">As I See You</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · 0 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6830175143" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        <a class="guide-app-android" href="https://play.google.com/store/apps/details?id=com.tsuzukit.asiseeyou" target="_blank" rel="noopener noreferrer">Android version on Google Play</a>
+                    </div>
+                </div>
+            </div>
+            <p>It comes with nine prompts built in: animal, place, plant, character, season, hobby, food, color, and drink. Just tap a square and pick a photo from your camera roll. Images you found on Pinterest or elsewhere work too, once you&#x27;ve saved them to Photos.</p>
+            <p>Pinch to resize a photo and drag to move it. The color square can be filled with a single color instead of a photo, and you can cut out just the person or thing in a picture and place it on white. The original stays, so you can always switch back.</p>
+            <p>You can pick the heading in the middle, like Dad as I see him or my favorite idol as I see them, or write your own. You can also set your own prompts and save them as a set, then pass that set to a friend with a QR code. Only the prompts and colors go across, never your photos.</p>
+            <p>When you export, you get two images, the finished grid and a blank one with only the prompts. Empty squares show the prompt on black, so even an unfinished grid looks complete.</p>
+            <p>There&#x27;s no sign-up, and your photos and boards stay on your device. It&#x27;s free with ads. It runs on iPhone with iOS 18 or later, and the Android version on Google Play runs on Android 10 or later.</p>
+            <h2>Making it without the app</h2>
+            <p>You can also start with a 3×3 template image that already has the prompts on it, and layer your photos onto it one by one. A story editor on social media or any photo editor that can stack images will do.</p>
+            <p>The catch is that fitting nine photos neatly into the squares takes more work than you&#x27;d expect. Being able to just drop a photo into each square is what a dedicated app is good for.</p>
+            <h2>FAQ</h2>
+            <dl class="guide-faq">
+                <dt>Is it free?</dt><dd>Yes, it&#x27;s free. It shows ads instead.</dd>
+                <dt>Are my photos sent anywhere?</dt><dd>Your photos and boards are saved only on your device and never sent to the developer&#x27;s servers. When you share prompts with a QR code, no photos are included.</dd>
+                <dt>Can I change the prompts?</dt><dd>Yes. You can choose all nine prompts yourself and save them as sets, like ones for your favorite idol or for family, to use again and again.</dd>
+                <dt>Can I make one on Android?</dt><dd>Yes. There&#x27;s an Android version on Google Play that runs on Android 10 or later.</dd>
+            </dl>
+            <p>As I See You has no ratings yet, so I&#x27;d secretly love to hear how the person reacted when you showed them your grid 🫶</p>
+            <div class="guide-notes">The app&#x27;s features and rating count were checked against its App Store description and official page on November 15, 2026. Things may change with updates.</div>
+        </div>
+
+        <nav class="post-navigation">
+            <img class="tk-char tk-char--post" src="/assets/images/character-hang.png" alt="" width="381" height="208">
+            <a href="/blog/guides/" class="nav-link-wrapper"><span>&larr; <span class="i18n-ja">困りごとから選ぶアプリの一覧へ</span><span class="i18n-en">All guides: apps for everyday problems</span></span></a>
+        </nav>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
+                    <p class="footer-description"><span class="i18n-ja">誰も作らないものを、まじめに作る</span><span class="i18n-en">I make things nobody else would, and I make them seriously</span></p>
+                </div>
+                <div class="footer-nav">
+                    <a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
+                    <a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
+                    <a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
+                    <a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ryo Tsuzukihashi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

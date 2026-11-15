@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/js/lang.js"></script>
+    <!-- このページは scripts/build_guides.py が docs/guides/beetle-battle-game-apps.json から作る。直すのは JSON のほう -->
+    <title>カブトムシとクワガタを戦わせるゲームアプリ4選 - Blog | Ryo Tsuzukihashi</title>
+    <meta name="description" content="カブトムシやクワガタを集めて戦わせるゲームアプリを4本比べました。戦い方、出てくる虫、料金の仕組みの違いをまとめています。昆虫大戦の作者が書いています。">
+    <meta name="title-en" content="4 Game Apps Where Beetles Battle It Out - Blog | Ryo Tsuzukihashi">
+    <meta name="description-en" content="I compared four game apps where you collect rhinoceros and stag beetles and make them fight: how battles work, which bugs appear, and how each one charges. Written by the maker of Beetle Wars.">
+    <link rel="canonical" href="https://tsuzukit.com/blog/posts/beetle-battle-game-apps.html">
+
+    <!-- OGP -->
+    <meta property="og:title" content="カブトムシとクワガタを戦わせるゲームアプリ4選">
+    <meta property="og:description" content="カブトムシやクワガタを集めて戦わせるゲームアプリを4本比べました。戦い方、出てくる虫、料金の仕組みの違いをまとめています。昆虫大戦の作者が書いています。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://tsuzukit.com/blog/posts/beetle-battle-game-apps.html">
+    <meta property="og:image" content="https://tsuzukit.com/assets/images/posts/beetle-battle-game-apps.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://tsuzukit.com/assets/images/posts/beetle-battle-game-apps.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-dark-32x32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-dark-16x16.png" media="(prefers-color-scheme: dark)">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERPQ1EGLH');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8240751277462688"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
+    <link rel="stylesheet" href="/assets/css/guide.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "カブトムシとクワガタを戦わせるゲームアプリ4選",
+      "description": "カブトムシやクワガタを集めて戦わせるゲームアプリを4本比べました。戦い方、出てくる虫、料金の仕組みの違いをまとめています。昆虫大戦の作者が書いています。",
+      "image": "https://tsuzukit.com/assets/images/posts/beetle-battle-game-apps.webp",
+      "datePublished": "2026-11-15",
+      "dateModified": "2026-11-15",
+      "inLanguage": "ja",
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "mainEntityOfPage": "https://tsuzukit.com/blog/posts/beetle-battle-game-apps.html",
+      "about": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "昆虫大戦",
+          "url": "https://apps.apple.com/jp/app/id6799612767",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "虫＆バトル",
+          "url": "https://apps.apple.com/jp/app/id1626782273",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "超虫相撲",
+          "url": "https://apps.apple.com/jp/app/id6758908404",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "カブトムシ観察&バトル日記",
+          "url": "https://apps.apple.com/jp/app/id6749722933",
+          "operatingSystem": "iOS"
+        }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "昆虫大戦",
+      "operatingSystem": "iOS",
+      "applicationCategory": "GameApplication",
+      "url": "https://apps.apple.com/jp/app/id6799612767",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "無料で遊べますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "虫＆バトル、超虫相撲、カブトムシ観察&バトル日記は無料で入れられます。昆虫大戦は最初に買う買い切りで、そのあとの課金はありません。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "子どもでもルールが分かりますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "昆虫大戦の基本はじゃんけんです。勝った手に置いた技が出るだけなので、ルールはすぐ覚えられます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "iPadでも遊べますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "4本ともiPadに対応しています。昆虫大戦は、近くの人との対戦もiPhoneとiPadでできます。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tsuzukit.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://tsuzukit.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "困りごとから選ぶアプリ",
+          "item": "https://tsuzukit.com/blog/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "カブトムシとクワガタを戦わせるゲームアプリ4選",
+          "item": "https://tsuzukit.com/blog/posts/beetle-battle-game-apps.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">TsuzuKit</a>
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/portfolio/" class="nav-link">Portfolio</a>
+                <a href="/blog/" class="nav-link active">Blog</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post -->
+    <article class="blog-post">
+        <header class="post-header">
+            <div class="post-meta">
+                <span class="post-date">2026.11.15</span>
+                <span class="post-category"><span class="i18n-ja">アプリの選び方</span><span class="i18n-en">App guides</span></span>
+                <span class="post-reading-time"><span class="i18n-ja">4分で読める</span><span class="i18n-en">4 min read</span></span>
+            </div>
+            <h1 class="post-title"><span class="i18n-ja">カブトムシとクワガタを戦わせるゲームアプリ4選</span><span class="i18n-en">4 Game Apps Where Beetles Battle It Out</span></h1>
+        </header>
+        <figure class="post-illustration guide-illustration"><img src="/assets/images/posts/beetle-battle-game-apps.webp" width="1200" height="800" alt="角を押し合う小さなカブトムシとクワガタを、チョキの手でのぞきこむキャラクター" data-en-alt="The character making a scissors hand while peering at a tiny rhinoceros beetle and stag beetle locking horns" fetchpriority="high"></figure>
+
+        <div class="post-content guide i18n-ja">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">先に答え</p>
+                <p>いちばん遊ばれているのは評価897件の虫＆バトルで、ほかのプレイヤーとの対戦もあります。広告も課金もない買い切りで、実在する甲虫を3Dで眺めながら、じゃんけんの読み合いで戦いたい人は、僕が作った昆虫大戦も見てみてください。</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">書いた人 <a href="https://tsuzukit.com/about/">續橋 涼</a>（@tsuzuki817）</p>
+                    <p class="guide-byline-bio">2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。昆虫大戦の作者です。</p>
+                    <p class="guide-byline-date">公開 <time datetime="2026-11-15">2026.11.15</time> · 更新 <time datetime="2026-11-15">2026.11.15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">この記事は、昆虫大戦を作った僕が書いています。ほかの3本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。</p>
+            <h2>4本をざっくり比べる</h2>
+            <p>同じ虫のゲームでも、戦い方がまったく違います。チームで戦うもの、相撲で押し出すもの、育てて眺めるものがあります。</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">アプリ</th><th scope="col">評価の件数</th><th scope="col">戦い方</th><th scope="col">出てくる虫</th><th scope="col">料金の仕組み</th></tr></thead><tbody><tr><th scope="row">昆虫大戦（僕のアプリ）</th><td>0件</td><td>じゃんけんで勝った手の技カードが出る3Dバトル</td><td>実在する甲虫20種</td><td>買い切り。広告と課金なし</td></tr><tr><th scope="row">虫＆バトル</th><td>897件</td><td>チームで戦うターン制</td><td>カブトムシ、クワガタ、チョウ、アリ、ハチなど</td><td>無料。課金は説明文に記載なし</td></tr><tr><th scope="row">超虫相撲</th><td>47件</td><td>2Dの虫相撲。押し出しや投げ</td><td>説明文に数の記載なし</td><td>無料。課金は説明文に記載なし</td></tr><tr><th scope="row">カブトムシ観察&amp;バトル日記</th><td>151件</td><td>説明文に記載なし</td><td>カブトムシ</td><td>全部無料。バナー広告あり</td></tr></tbody></table></div>
+            <h2>1本ずつ見ていく</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/be/9c/1b/be9c1b9f-0260-1f5e-b7e8-1b79e252748a/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">僕が作ったアプリ</span>
+                    <h3 class="guide-app-name">昆虫大戦</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · App Storeの評価 0件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6799612767" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>グー、チョキ、パーのそれぞれに技カードを置いておき、じゃんけんで勝った手の技が出ます。どの手にどの技を置くかが、そのまま作戦になります。</p>
+            <p>あいこが続くと、お互いに角を押し合ってダメージが大きくなります。手を選ぶ10秒のあいだも、2匹は3Dで押し合っています。</p>
+            <p>ヘラクレスオオカブトやギラファノコギリクワガタなど、実在する20種が入っています。図鑑で学名や体長、分布も読めて、同じ種でも1匹ずつ体長が違います。</p>
+            <p>買い切りで、広告もアプリ内課金もアカウント登録もありません。近くの人と、その場で対戦もできます。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/9e/5d/58/9e5d582c-bd72-4094-d184-3f1bbeadc4f4/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">虫＆バトル</h3>
+                    <p class="guide-app-meta">Morimirai Inc. · App Storeの評価 897件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id1626782273" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>評価が897件あって、この中ではいちばん遊ばれています。虫をデフォルメせず、実際の姿で描いているのが特徴です。</p>
+            <p>カブトムシやクワガタだけでなく、チョウやアリ、ハチも出てきます。チームを組むターン制のバトルで、ほかのプレイヤーが育てたチームとも戦えます。カブトムシは、ストーリーの3章まで進めると仲間になります。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5f/a4/d2/5fa4d2d9-56e9-7124-6114-73b766eb5030/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">超虫相撲</h3>
+                    <p class="guide-app-meta">RYOU TANAKA · App Storeの評価 47件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6758908404" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>木をよく観察して虫を捕まえ、特訓とバトルで育てるゲームです。同じ種類でも、力やすばやさが1匹ずつ違います。</p>
+            <p>バトルは2Dの虫相撲で、相手を倒すか土俵の外に押し出せば勝ちです。ビームを放つ虫や巨大化する虫など、派手な必殺技があります。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2f/13/14/2f13144b-a4db-9f48-b11b-62277f0cb3b5/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">カブトムシ観察&amp;バトル日記</h3>
+                    <p class="guide-app-meta">Sumie Watanabe · App Storeの評価 151件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6749722933" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>御神木の樹液に集まるカブトムシを観察するゲームです。ゼリーを置いたり幼虫を育てたりして、大きなカブトムシを目指します。</p>
+            <p>全部の機能が無料で、バナー広告が出ると説明文に書いてあります。戦わせるより、育てて眺めたい人向けですね。</p>
+            <h2>どれを選ぶか</h2>
+            <ul class="guide-list"><li>いろいろな虫でチームを組んで、ほかのプレイヤーと戦いたいなら、虫＆バトル</li><li>派手な必殺技で相撲をとりたいなら、超虫相撲</li><li>戦わせるより、育てて眺めたいなら、カブトムシ観察&amp;バトル日記</li><li>広告も課金もなしで、実在の甲虫を3Dで戦わせたいなら、昆虫大戦</li></ul>
+            <h2>よくある質問</h2>
+            <dl class="guide-faq">
+                <dt>無料で遊べますか？</dt><dd>虫＆バトル、超虫相撲、カブトムシ観察&amp;バトル日記は無料で入れられます。昆虫大戦は最初に買う買い切りで、そのあとの課金はありません。</dd>
+                <dt>子どもでもルールが分かりますか？</dt><dd>昆虫大戦の基本はじゃんけんです。勝った手に置いた技が出るだけなので、ルールはすぐ覚えられます。</dd>
+                <dt>iPadでも遊べますか？</dt><dd>4本ともiPadに対応しています。昆虫大戦は、近くの人との対戦もiPhoneとiPadでできます。</dd>
+            </dl>
+            <p>昆虫大戦はまだ評価が0件なので、どの甲虫で勝ったか聞かせてもらえたらうれしいです🙏</p>
+            <div class="guide-notes">それぞれのアプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。</div>
+        </div>
+
+        <div class="post-content guide i18n-en">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">Short answer</p>
+                <p>The most played is Bugs &amp; Battle, with 897 ratings, and you can fight other players. If you&#x27;d like a pay-once game with no ads or purchases, where real beetles fight in 3D through rock-paper-scissors mind games, take a look at Beetle Wars, which I made.</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">Written by <a href="https://tsuzukit.com/about/">Ryo Tsuzukihashi</a> (@tsuzuki817)</p>
+                    <p class="guide-byline-bio">I&#x27;ve been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made Beetle Wars.</p>
+                    <p class="guide-byline-date">Published <time datetime="2026-11-15">2026-11-15</time> · Updated <time datetime="2026-11-15">2026-11-15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">I made Beetle Wars, and I wrote this article. The other three apps are by developers I don&#x27;t know, and I haven&#x27;t received money or anything else from them. Everything compared here comes from each app&#x27;s App Store description and rating count as of November 15, 2026.</p>
+            <h2>The four apps at a glance</h2>
+            <p>Even among bug games, the way they fight is completely different. Some use teams, some are sumo matches, and some are more about raising and watching.</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">App</th><th scope="col">Ratings</th><th scope="col">How battles work</th><th scope="col">Bugs</th><th scope="col">Pricing</th></tr></thead><tbody><tr><th scope="row">Beetle Wars (my app)</th><td>0</td><td>A 3D battle where the winning rock-paper-scissors hand fires its skill card</td><td>20 real beetle species</td><td>Pay once. No ads or purchases</td></tr><tr><th scope="row">Bugs &amp; Battle</th><td>897</td><td>Turn-based team battles</td><td>Beetles, stag beetles, butterflies, ants, bees, and more</td><td>Free. Purchases not mentioned</td></tr><tr><th scope="row">Super Bug Sumo</th><td>47</td><td>2D bug sumo with pushes and throws</td><td>Number not mentioned</td><td>Free. Purchases not mentioned</td></tr><tr><th scope="row">KABUTO Beetle Diary</th><td>151</td><td>Not mentioned</td><td>Rhinoceros beetles</td><td>Everything free. Banner ads</td></tr></tbody></table></div>
+            <h2>Each app, one by one</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/be/9c/1b/be9c1b9f-0260-1f5e-b7e8-1b79e252748a/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">I made this</span>
+                    <h3 class="guide-app-name">Beetle Wars</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · 0 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6799612767" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>You set a skill card on each of rock, paper, and scissors, and the winning hand fires its skill. Which card goes on which hand is your whole strategy.</p>
+            <p>If you keep tying, the two beetles shove horns and the damage climbs. Even during the 10 seconds you take to choose a hand, they keep pushing against each other in 3D.</p>
+            <p>There are 20 real species, including the Hercules beetle and the giraffe stag beetle. The field guide lists scientific names, body lengths, and where they live, and every individual has its own body length.</p>
+            <p>It&#x27;s pay-once, with no ads, no in-app purchases, and no account. You can also battle someone nearby, right there.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/9e/5d/58/9e5d582c-bd72-4094-d184-3f1bbeadc4f4/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Bugs &amp; Battle</h3>
+                    <p class="guide-app-meta">Morimirai Inc. · 897 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id1626782273" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>With 897 ratings, this is the most played of the four. The bugs are drawn as they really look, not as cute characters.</p>
+            <p>Besides beetles, butterflies, ants, and bees show up too. Battles are turn-based with teams, and you can face teams other players have raised. You get the rhinoceros beetle when you reach chapter 3 of the story.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5f/a4/d2/5fa4d2d9-56e9-7124-6114-73b766eb5030/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Super Bug Sumo</h3>
+                    <p class="guide-app-meta">RYOU TANAKA · 47 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6758908404" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>You catch bugs by watching trees closely, then raise them through training and battles. Even within one species, each bug has its own strength and speed.</p>
+            <p>Battles are 2D bug sumo. You win by knocking your opponent down or pushing it out of the ring. There are flashy special moves, like bugs that fire beams or grow huge.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2f/13/14/2f13144b-a4db-9f48-b11b-62277f0cb3b5/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">KABUTO Beetle Diary &amp; Battle</h3>
+                    <p class="guide-app-meta">Sumie Watanabe · 151 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6749722933" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>This is a game about watching rhinoceros beetles gather at the sap of a sacred tree. You put out jelly and raise larvae, aiming for a big beetle.</p>
+            <p>The description says every feature is free and banner ads are shown. It suits people who would rather raise and watch beetles than fight with them.</p>
+            <h2>Which one to pick</h2>
+            <ul class="guide-list"><li>If you want to build teams of many kinds of bugs and fight other players, Bugs &amp; Battle</li><li>If you want sumo with flashy special moves, Super Bug Sumo</li><li>If you would rather raise and watch than fight, KABUTO Beetle Diary</li><li>If you want real beetles fighting in 3D with no ads or purchases, Beetle Wars</li></ul>
+            <h2>FAQ</h2>
+            <dl class="guide-faq">
+                <dt>Are they free?</dt><dd>Bugs &amp; Battle, Super Bug Sumo, and KABUTO Beetle Diary are free to download. Beetle Wars is a one-time purchase with nothing more to pay after that.</dd>
+                <dt>Can kids understand the rules?</dt><dd>Beetle Wars is built on rock-paper-scissors. The winning hand just fires the skill you put on it, so the rules are quick to learn.</dd>
+                <dt>Can I play on iPad?</dt><dd>All four support iPad. In Beetle Wars, you can also battle someone nearby on iPhone or iPad.</dd>
+            </dl>
+            <p>Beetle Wars doesn&#x27;t have any ratings yet, so I&#x27;d love to hear which beetle won it for you 🙏</p>
+            <div class="guide-notes">Features and rating counts were checked against each app&#x27;s App Store description on November 15, 2026, and may change with updates.</div>
+        </div>
+
+        <nav class="post-navigation">
+            <img class="tk-char tk-char--post" src="/assets/images/character-hang.png" alt="" width="381" height="208">
+            <a href="/blog/guides/" class="nav-link-wrapper"><span>&larr; <span class="i18n-ja">困りごとから選ぶアプリの一覧へ</span><span class="i18n-en">All guides: apps for everyday problems</span></span></a>
+        </nav>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
+                    <p class="footer-description"><span class="i18n-ja">誰も作らないものを、まじめに作る</span><span class="i18n-en">I make things nobody else would, and I make them seriously</span></p>
+                </div>
+                <div class="footer-nav">
+                    <a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
+                    <a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
+                    <a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
+                    <a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ryo Tsuzukihashi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,369 @@
+{
+  "slug": "picture-in-picture-photo-apps",
+  "date_published": "2026-11-15",
+  "date_updated": "2026-11-15",
+  "search_phrase": {
+    "ja": "ピクチャーインピクチャー 写真 アプリ",
+    "en": "picture in picture photo app"
+  },
+  "evidence": "2026-11-15 に Google の検索候補で「ピクチャーインピクチャー 写真」を引くと、5件の中に「ピクチャーインピクチャー 写真アプリ」と「iphone ピクチャーインピクチャー 写真アプリ」があった。「ピクチャインピクチャ 画像」の3件にも「iphone」「ipad」が付いていた。同じ日の App Store で「PiP 写真 表示」を引くと、写真を小窓に出すアプリはPictInが評価46件、PiP Nowが20件で、ほかは0〜2件だった。",
+  "title": {
+    "ja": "写真を小窓で画面に出しっぱなしにするアプリ3選",
+    "en": "3 Apps That Keep a Photo Floating on Your Screen in Picture in Picture"
+  },
+  "description": {
+    "ja": "ピクチャーインピクチャーで、写真を小窓にして画面に出し続けるアプリを3本比べました。何枚出せるか、自動で切り替わるか、動画も出せるかの違いをまとめています。PictInの作者が書いています。",
+    "en": "I compared three iPhone apps that keep a photo floating on screen in Picture in Picture while you use other apps: how many photos, whether they rotate automatically, and whether video works. Written by the maker of PictIn."
+  },
+  "excerpt": {
+    "ja": "何枚出せるか、自動で切り替わるか、動画も出せるかで3本を比べました。PictInを作った僕が、自分のアプリも入れて書いています。",
+    "en": "Three apps compared on how many photos they show, auto-rotation, and video. I made PictIn, and it is one of the three."
+  },
+  "category": {
+    "ja": "アプリの選び方",
+    "en": "App guides"
+  },
+  "reading_minutes": 3,
+  "author": {
+    "name": {
+      "ja": "續橋 涼",
+      "en": "Ryo Tsuzukihashi"
+    },
+    "handle": "tsuzuki817",
+    "bio": {
+      "ja": "2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。PictInの作者です。",
+      "en": "I've been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made PictIn."
+    },
+    "url": "https://tsuzukit.com/about/",
+    "same_as": [
+      "https://x.com/tsuzuki817"
+    ]
+  },
+  "tldr": {
+    "ja": "iPhoneには写真を小窓で出し続ける機能が最初からないので、ピクチャーインピクチャーを使うアプリを入れます。2枚を横に並べて見比べたいならPiP Now。写真と動画を混ぜて出したいならうきまど。何枚もの写真を決めた秒数ごとに切り替えて出したい人は、僕が作ったPictInも見てみてください。",
+    "en": "The iPhone has no built-in way to keep a photo floating on screen, so you need an app that uses Picture in Picture. If you want two photos side by side, try PiP Now. If you want photos and videos mixed together, try Ukimado. If you want a set of photos to switch every few seconds, take a look at PictIn, which I made."
+  },
+  "disclosure": {
+    "ja": "この記事は、PictInを作った僕が書いています。ほかの2本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。",
+    "en": "I made PictIn, and I wrote this article. The other two apps are by developers I don't know, and I haven't received money or anything else from them. Everything compared here comes from each app's App Store description and rating count as of November 15, 2026."
+  },
+  "own_app": "1625004229",
+  "app_category": "PhotographyApplication",
+  "apps": [
+    {
+      "id": "1625004229",
+      "name": {
+        "ja": "PictIn",
+        "en": "PictIn"
+      },
+      "short": {
+        "ja": "PictIn",
+        "en": "PictIn"
+      },
+      "developer": "Ryo Tsudukihashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/75/f9/b3/75f9b387-8ee8-8a09-18e9-ee955becbf5e/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id1625004229",
+      "android_url": null,
+      "rating_count": 46
+    },
+    {
+      "id": "6755436529",
+      "name": {
+        "ja": "PiP Now",
+        "en": "PiP Now"
+      },
+      "short": {
+        "ja": "PiP Now",
+        "en": "PiP Now"
+      },
+      "developer": "Shun Kurauchi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/79/7c/75/797c75bf-f4ee-4ede-9cb2-85006aa9cf3e/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6755436529",
+      "android_url": null,
+      "rating_count": 20
+    },
+    {
+      "id": "6828886921",
+      "name": {
+        "ja": "うきまど - 写真・動画を小窓で表示",
+        "en": "Ukimado - Photos and Videos in a Floating Window"
+      },
+      "short": {
+        "ja": "うきまど",
+        "en": "Ukimado"
+      },
+      "developer": "Yuta Watanabe",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/71/25/a0/7125a0af-426e-63ed-6f46-eacc4b5015c7/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6828886921",
+      "android_url": null,
+      "rating_count": 0
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ja": "3本をざっくり比べる",
+        "en": "The three apps at a glance"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "どれもiPhoneのピクチャーインピクチャーの機能を使って、ほかのアプリの上に写真を浮かべます。違いが出るのは、何枚をどう出すかです。",
+            "en": "All three use the iPhone's Picture in Picture feature to float a photo over other apps. Where they differ is how many photos they show, and how."
+          }
+        },
+        {
+          "type": "table",
+          "head": [
+            {
+              "ja": "アプリ",
+              "en": "App"
+            },
+            {
+              "ja": "評価の件数",
+              "en": "Ratings"
+            },
+            {
+              "ja": "出せる写真",
+              "en": "Photos shown"
+            },
+            {
+              "ja": "自動の切り替え",
+              "en": "Auto-rotate"
+            },
+            {
+              "ja": "動画",
+              "en": "Video"
+            },
+            {
+              "ja": "料金",
+              "en": "Pricing"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ja": "PictIn（僕のアプリ）",
+                "en": "PictIn (my app)"
+              },
+              {
+                "ja": "46件",
+                "en": "46"
+              },
+              {
+                "ja": "フォトブックにまとめた写真を順に",
+                "en": "A photo book, one after another"
+              },
+              {
+                "ja": "秒数を自分で決める",
+                "en": "Every few seconds, you choose"
+              },
+              {
+                "ja": "なし",
+                "en": "No"
+              },
+              {
+                "ja": "無料、広告あり。サブスクリプションで広告なし",
+                "en": "Free with ads, subscription removes them"
+              }
+            ],
+            [
+              {
+                "ja": "PiP Now",
+                "en": "PiP Now"
+              },
+              {
+                "ja": "20件",
+                "en": "20"
+              },
+              {
+                "ja": "1枚か、2枚を横に並べて",
+                "en": "One, or two side by side"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "なし。静止画だけ",
+                "en": "No, still images only"
+              },
+              {
+                "ja": "広告あり。月額か買い切りで広告なし",
+                "en": "Ads, monthly or one-time purchase removes them"
+              }
+            ],
+            [
+              {
+                "ja": "うきまど",
+                "en": "Ukimado"
+              },
+              {
+                "ja": "0件",
+                "en": "0"
+              },
+              {
+                "ja": "写真と動画を続けて",
+                "en": "Photos and videos in sequence"
+              },
+              {
+                "ja": "3秒から60秒",
+                "en": "3 to 60 seconds"
+              },
+              {
+                "ja": "あり",
+                "en": "Yes"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "1本ずつ見ていく",
+        "en": "Each app, one by one"
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "id": "1625004229"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "流れるメモ帳を作ったあとに、画像も小窓で流したくなって作ったアプリです。写真をフォトブックにまとめておくと、小窓の中で順番に切り替わります。",
+            "en": "I made this after building a floating memo app, because I wanted to float images too. Put photos together in a photo book, and they switch one after another inside the floating window."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "切り替える秒数は自分で決められて、最初は5秒です。小窓の背景を黒か白にしたり、余白なしで表示したり、小窓の高さを変えて縦長や横長にしたりもできます。",
+            "en": "You set how many seconds each photo stays up, starting at 5. You can make the window background black or white, show photos with no margins, and change the window's height to make it taller or wider."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "勉強の教材、推しの写真、レシートなどを出しておくのに使えます。無料で使えて広告が出ます。月額のサポーターに入ると広告が消えます。",
+            "en": "Use it to keep study material, a photo of someone you are a fan of, or a receipt on screen. It is free with ads, and a monthly supporter subscription removes them."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6755436529"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "写真ライブラリから1枚か2枚を選んで、小窓に出すアプリです。2枚選ぶと自動で横に並べてくれるので、見比べたいときに便利です。",
+            "en": "Pick one or two photos from your library and it floats them in a small window. If you pick two, it lines them up side by side automatically, which is handy for comparing."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "ほかのアプリの共有ボタンから、そのまま小窓に出すこともできます。説明文では静止画に絞ったアプリと書かれています。月額か買い切りのプレミアムで広告が消えます。",
+            "en": "You can also send a photo straight to the floating window from another app's share button. Its description says it focuses on still images. A monthly or one-time Premium removes ads."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6828886921"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "写真と動画を混ぜて、小窓のまま続けて出せます。小窓のボタンで前後に送れて、3秒から60秒の自動スライドもあります。",
+            "en": "You can mix photos and videos and play them one after another in the floating window. Buttons on the window move back and forth, and there is an auto slideshow from 3 to 60 seconds."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "よく使う並びをセットにして、前回の続きから再開できます。写真ごとに小窓に映す範囲を調整でき、見られたくないセットはFace IDで守れます。",
+            "en": "You can save a lineup you use often as a set and pick up where you left off. You can adjust what part of each photo shows in the window, and protect private sets with Face ID."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "どれを選ぶか",
+        "en": "Which one to pick"
+      },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "ja": "2枚の写真を横に並べて見比べたいなら、PiP Now",
+              "en": "If you want to compare two photos side by side, PiP Now"
+            },
+            {
+              "ja": "写真と動画を混ぜて出したい、写真ごとに映す範囲を決めたいなら、うきまど",
+              "en": "If you want photos and videos together, or to frame each photo, Ukimado"
+            },
+            {
+              "ja": "何枚もの写真を決めた秒数で切り替えて、勉強や推し活に使いたいなら、PictIn",
+              "en": "If you want a set of photos switching on a timer, for studying or for someone you are a fan of, PictIn"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "ja": "無料で使えますか？",
+        "en": "Are they free?"
+      },
+      "a": {
+        "ja": "3本とも無料で入れられます。PictInとPiP Nowは広告が出て、課金すると消えます。",
+        "en": "All three are free to download. PictIn and PiP Now show ads, and paying removes them."
+      }
+    },
+    {
+      "q": {
+        "ja": "ゲームや動画を見ながらでも出せますか？",
+        "en": "Can I keep it up while playing a game or watching video?"
+      },
+      "a": {
+        "ja": "ピクチャーインピクチャーの小窓は、ほかのアプリを使っている間も画面の上に残ります。小窓の位置と大きさは、指で動かせます。",
+        "en": "A Picture in Picture window stays on top while you use other apps. You can drag it around and resize it with your fingers."
+      }
+    },
+    {
+      "q": {
+        "ja": "動画も小窓で出せますか？",
+        "en": "Can I float videos too?"
+      },
+      "a": {
+        "ja": "この3本の中で、説明文で動画に対応していると書かれているのは、うきまどです。PictInとPiP Nowは写真用です。",
+        "en": "Of these three, Ukimado is the one whose description says it handles video. PictIn and PiP Now are for photos."
+      }
+    }
+  ],
+  "closing": {
+    "ja": "PictInの評価は46件です。小窓にどんな画像を出しているか、こっそり教えてもらえたらうれしいです🖼️",
+    "en": "PictIn has 46 ratings. I'd love to hear what kind of images you keep floating on your screen 🖼️"
+  },
+  "notes": {
+    "ja": "各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。",
+    "en": "Features and rating counts were checked against each app's App Store description on November 15, 2026, and may change with updates."
+  },
+  "illustration": {
+    "scene": "夜の机で、キャラがノートに向かって勉強している。立てかけたスマホでは別の動画が流れていて、その画面の隅の小窓に、色ちがいの単語カードの画像（文字なし、色の札だけ）が次々に切り替わっている。",
+    "alt": {
+      "ja": "勉強するキャラクター。スマホの隅の小窓で単語カードが切り替わっている",
+      "en": "The character studying at a desk, with flash card images switching in a small floating window on the phone"
+    }
+  }
+}

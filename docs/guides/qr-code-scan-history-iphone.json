@@ -1,0 +1,442 @@
+{
+  "slug": "qr-code-scan-history-iphone",
+  "date_published": "2026-11-15",
+  "date_updated": "2026-11-15",
+  "search_phrase": {
+    "ja": "iphone qrコード 履歴",
+    "en": "QR code scan history on iPhone"
+  },
+  "evidence": "2026-11-15 に Google の検索候補で「iphone qrコード 履歴」を引くと12件出て、「残らない」「消えた」「どこ」「見方」「確認」「履歴を見る方法 知恵袋」と、履歴が見つからなくて困っている形が並んだ。「qrコード 読み取り 履歴」でも10件中2件が「iphone」付きだった。同じ日に App Store で「QRコード 履歴」を検索すると、上位は評価が数万から40万件台のQRコードリーダーで、履歴を残すことはどれも当たり前の機能として説明文に書かれていた。",
+  "title": {
+    "ja": "iPhoneで読み取ったQRコードの履歴を残すアプリ4選",
+    "en": "4 Apps That Keep a History of the QR Codes You Scan on iPhone"
+  },
+  "description": {
+    "ja": "iPhoneのカメラで読み取ったQRコードは履歴に残りません。履歴を残せるQRコードリーダーを4本比べ、履歴の整理のしかたの違いをまとめました。ikaQRの作者が書いています。",
+    "en": "The iPhone Camera doesn't keep a history of QR codes you scan. I compared four QR readers that do, and how each one helps you sort that history. Written by the maker of ikaQR."
+  },
+  "excerpt": {
+    "ja": "前に読んだQRコードをもう一度開きたい人へ。履歴の残し方と整理のしかたで4本を比べました。ikaQRを作った僕が書いています。",
+    "en": "For anyone who wants to reopen a QR code they scanned before. Four apps compared on how they keep and sort your history. I made ikaQR, one of the four."
+  },
+  "category": {
+    "ja": "アプリの選び方",
+    "en": "App guides"
+  },
+  "reading_minutes": 4,
+  "author": {
+    "name": {
+      "ja": "續橋 涼",
+      "en": "Ryo Tsuzukihashi"
+    },
+    "handle": "tsuzuki817",
+    "bio": {
+      "ja": "2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。ikaQRの作者です。",
+      "en": "I've been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made ikaQR."
+    },
+    "url": "https://tsuzukit.com/about/",
+    "same_as": [
+      "https://x.com/tsuzuki817"
+    ]
+  },
+  "tldr": {
+    "ja": "iPhoneのカメラで読んだQRコードは履歴に残らないので、これから読むぶんは履歴を残すアプリで読みます。履歴をメモやCSVで整理したいならアイコニット、とにかく簡単なのがいいならQRコードリーダー : シンプルなQRコードリーダーアプリです。読んだものに名前をつけて並べたい人は、僕が作ったikaQRも見てみてください。",
+    "en": "QR codes you scan with the iPhone Camera don't stay in any history, so from now on, scan them with an app that keeps one. ICONIT lets you organize your history with notes and CSV export, and QR Code Reader: Quick Scan is the easiest of the bunch. If you want to give each scan a name and keep them tidy, take a look at ikaQR, which I made."
+  },
+  "disclosure": {
+    "ja": "この記事は、ikaQRを作った僕が書いています。ほかの3本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。",
+    "en": "I made ikaQR, and I wrote this article. The other three apps are by developers I don't know, and I haven't received money or anything else from them. Everything compared here comes from each app's App Store description and rating count as of November 15, 2026."
+  },
+  "own_app": "6450046891",
+  "app_category": "UtilitiesApplication",
+  "apps": [
+    {
+      "id": "6450046891",
+      "name": {
+        "ja": "ikaQR ~QRコードを爆速で読み込もう~",
+        "en": "ikaQR - Lightning-Fast QR Scanner"
+      },
+      "short": {
+        "ja": "ikaQR",
+        "en": "ikaQR"
+      },
+      "developer": "Ryo Tsudukihashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/27/89/fe/2789fe27-5f68-ee38-3e39-a257b31049c2/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6450046891",
+      "android_url": null,
+      "rating_count": 1
+    },
+    {
+      "id": "480090210",
+      "name": {
+        "ja": "QRコード読み取り・バーコードリーダー アイコニット",
+        "en": "ICONIT QRcode Reader"
+      },
+      "short": {
+        "ja": "アイコニット",
+        "en": "ICONIT"
+      },
+      "developer": "MEDIASEEK Inc.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/de/37/e0/de37e0ac-eb87-09c3-7185-ce50903984e2/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id480090210",
+      "android_url": null,
+      "rating_count": 471311
+    },
+    {
+      "id": "585561686",
+      "name": {
+        "ja": "QRコードリーダー - QRコード読み取り",
+        "en": "QR Code Scanner - Fast & Easy"
+      },
+      "short": {
+        "ja": "QRコードリーダー - QRコード読み取り",
+        "en": "QR Code Scanner - Fast & Easy"
+      },
+      "developer": "Takashi Wada",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/98/8b/ca/988bca64-e2df-d8eb-b5c6-dece1c05c7cc/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id585561686",
+      "android_url": null,
+      "rating_count": 299243
+    },
+    {
+      "id": "1080558159",
+      "name": {
+        "ja": "QRコードリーダー : シンプルなQRコードリーダーアプリ",
+        "en": "QR Code Reader: Quick Scan"
+      },
+      "short": {
+        "ja": "シンプルなQRコードリーダーアプリ",
+        "en": "QR Code Reader: Quick Scan"
+      },
+      "developer": "Komorebi Inc.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/db/68/49/db68496e-0652-b42e-fb87-00d7723992cd/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id1080558159",
+      "android_url": null,
+      "rating_count": 230162
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ja": "まず、iPhoneのカメラには履歴が無い",
+        "en": "First, the iPhone Camera has no history"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "iPhoneのカメラでQRコードを読むと、出てきたリンクを開くだけで、読み取ったこと自体はどこにも残りません。履歴を探しても見つからないのはそのためです。",
+            "en": "When you scan a QR code with the iPhone Camera, it just offers the link to open. The scan itself isn't saved anywhere, which is why you can't find a history."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "開いたページなら、Safariの履歴に残っています。Wi-Fiやテキストのように、ページを開かないQRコードは後から追えません。",
+            "en": "If you opened a web page, it's in your Safari history. QR codes that don't open a page, like Wi-Fi details or plain text, can't be traced afterward."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "これから読むQRコードを残したいなら、履歴を残すQRコードリーダーで読むのがいちばん早いです。",
+            "en": "If you want to keep the codes you scan from now on, the quickest fix is to scan them with a QR reader that keeps a history."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "4本をざっくり比べる",
+        "en": "The four apps at a glance"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "どれも履歴は自動で残ります。違いが出るのは、たまった履歴をどう整理できるかです。",
+            "en": "All four save your history automatically. Where they differ is how you can organize it once it piles up."
+          }
+        },
+        {
+          "type": "table",
+          "head": [
+            {
+              "ja": "アプリ",
+              "en": "App"
+            },
+            {
+              "ja": "評価の件数",
+              "en": "Ratings"
+            },
+            {
+              "ja": "履歴の整理",
+              "en": "Organizing history"
+            },
+            {
+              "ja": "Wi-FiのQRコード",
+              "en": "Wi-Fi QR codes"
+            },
+            {
+              "ja": "QRコードを作る",
+              "en": "Make QR codes"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ja": "ikaQR（僕のアプリ）",
+                "en": "ikaQR (my app)"
+              },
+              {
+                "ja": "1件",
+                "en": "1"
+              },
+              {
+                "ja": "名前、お気に入り、種類で絞る、回数の多い順",
+                "en": "Names, favorites, filter by type, sort by most used"
+              },
+              {
+                "ja": "読むとそのまま接続",
+                "en": "Connects when scanned"
+              },
+              {
+                "ja": "あり",
+                "en": "Yes"
+              }
+            ],
+            [
+              {
+                "ja": "アイコニット",
+                "en": "ICONIT"
+              },
+              {
+                "ja": "471,311件",
+                "en": "471,311"
+              },
+              {
+                "ja": "お気に入り、メモ、CSVで書き出し",
+                "en": "Favorites, notes, CSV export"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "あり",
+                "en": "Yes"
+              }
+            ],
+            [
+              {
+                "ja": "QRコードリーダー - QRコード読み取り",
+                "en": "QR Code Scanner - Fast & Easy"
+              },
+              {
+                "ja": "299,243件",
+                "en": "299,243"
+              },
+              {
+                "ja": "自動で保存して見返せる",
+                "en": "Saved automatically to look back on"
+              },
+              {
+                "ja": "読むとそのまま接続",
+                "en": "Connects when scanned"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              }
+            ],
+            [
+              {
+                "ja": "シンプルなQRコードリーダーアプリ",
+                "en": "QR Code Reader: Quick Scan"
+              },
+              {
+                "ja": "230,162件",
+                "en": "230,162"
+              },
+              {
+                "ja": "自動で保存して、リストごと共有",
+                "en": "Saved automatically, share the whole list"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "なし",
+                "en": "No"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "1本ずつ見ていく",
+        "en": "Each app, one by one"
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "id": "6450046891"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "読み取ったQRコードを全部履歴に残して、URL、Wi-Fi、自分で作ったもの、お気に入りで絞り込めます。URLの代わりに名前をつけられるので、あとで見たときに何のQRコードだったか分かります。",
+            "en": "It saves every code you scan and lets you filter by URLs, Wi-Fi, codes you made, and favorites. You can give an entry a name instead of the raw URL, so you can tell later what each code was for."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "並べ方は、新しい順や古い順のほかに、読み取った回数や使った回数の多い順も選べます。よく使うQRコードが上に来るようにできます。",
+            "en": "Besides newest or oldest first, you can sort by how many times you've scanned or used each code, so the ones you use most stay at the top."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "URLのQRコードは読むとすぐに開いて、Wi-FiのQRコードは読むとそのまま接続します。ロック画面のウィジェットから読み取りの画面を開けます。全部無料で、広告が出ます。",
+            "en": "URL codes open the moment you scan them, and Wi-Fi codes connect you right away. A Lock Screen widget takes you straight to the scanner. Everything is free, and the app shows ads."
+          }
+        },
+        {
+          "type": "app",
+          "id": "480090210"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "評価が471,311件あって、この中でいちばん使われています。履歴はお気に入りに入れたり、メモを書いたり、CSVで書き出したりできます。",
+            "en": "With 471,311 ratings, it's the most used of the four. You can favorite history entries, add notes, and export them as CSV."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "バーコードで商品を調べたり、画像やクリップボードから読み取ったりと、機能がとても多いです。読み取りでポイントがたまる仕組みもあります。",
+            "en": "It does a lot more, too, like looking up products from barcodes and reading codes from images or the clipboard. It also has a system where scanning earns you points."
+          }
+        },
+        {
+          "type": "app",
+          "id": "585561686"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "起動するとすぐにカメラが立ち上がる、シンプルなQRコードリーダーです。読み取った結果は自動で履歴に保存されて、いつでも見返せます。",
+            "en": "A simple QR reader where the camera starts the moment you open it. Your results are saved to history automatically so you can look back anytime."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "Wi-FiのQRコードは読むだけで接続できて、パスキーのQRコードにも対応しています。リンクをSafariで開くか、アプリの中のブラウザで開くかも選べます。",
+            "en": "Wi-Fi codes connect you just by scanning, and it supports passkey QR codes too. You can choose whether links open in Safari or in the app's built-in browser."
+          }
+        },
+        {
+          "type": "app",
+          "id": "1080558159"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "履歴は自動で保存されて、リストにまとめて共有できます。たくさんのQRコードを続けて読んで、あとでまとめて送るような使い方ができます。",
+            "en": "History is saved automatically and can be shared as a list, so you can scan a bunch of codes in a row and send them all at once later."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "説明文によると、履歴は端末の中だけに保存されます。全部の機能が無料で、広告は出ますが課金はありません。QRコードを作る機能はありません。",
+            "en": "According to the description, the history stays on your device only. Every feature is free, with ads and no purchases. It can't create QR codes."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "どれを選ぶか",
+        "en": "Which one to pick"
+      },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "ja": "履歴にメモを書きたい、CSVで書き出したいなら、アイコニット",
+              "en": "If you want notes on your history or CSV export, ICONIT"
+            },
+            {
+              "ja": "読んだものをまとめて人に送りたいなら、シンプルなQRコードリーダーアプリ",
+              "en": "If you want to send a batch of scans to someone, QR Code Reader: Quick Scan"
+            },
+            {
+              "ja": "Wi-Fiやパスキーもこれ1本で読みたいなら、QRコードリーダー - QRコード読み取り",
+              "en": "If you want one reader for Wi-Fi and passkeys too, QR Code Scanner - Fast & Easy"
+            },
+            {
+              "ja": "読んだQRコードに名前をつけて、よく使う順に並べたいなら、ikaQR",
+              "en": "If you want to name your scans and sort them by how often you use them, ikaQR"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "ja": "前にカメラで読んだQRコードを、あとから探せますか？",
+        "en": "Can I find a QR code I scanned with the Camera before?"
+      },
+      "a": {
+        "ja": "カメラには履歴が無いので、QRコードそのものは探せません。開いたページなら、Safariの履歴から見つけられます。",
+        "en": "The Camera has no history, so the code itself can't be found. If you opened a page, you can find it in your Safari history."
+      }
+    },
+    {
+      "q": {
+        "ja": "アプリを入れたら、前に読んだぶんも出てきますか？",
+        "en": "If I install one of these apps, will my older scans show up?"
+      },
+      "a": {
+        "ja": "出てきません。履歴に残るのは、そのアプリで読み取ったQRコードだけです。",
+        "en": "No. The history only includes codes you scan with that app."
+      }
+    },
+    {
+      "q": {
+        "ja": "無料で使えますか？",
+        "en": "Are they free?"
+      },
+      "a": {
+        "ja": "4本とも無料で入れられます。ikaQRとシンプルなQRコードリーダーアプリは、広告が出るかわりに課金はありません。",
+        "en": "All four are free to download. ikaQR and QR Code Reader: Quick Scan show ads, and have nothing to buy."
+      }
+    }
+  ],
+  "closing": {
+    "ja": "ikaQRの評価はまだ1件なので、使ってみたら感想を聞かせてもらえるとうれしいです🦑",
+    "en": "ikaQR only has one rating so far, so I'd be happy to hear what you think if you try it 🦑"
+  },
+  "notes": {
+    "ja": "各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。",
+    "en": "Features and rating counts were checked against each app's App Store description on November 15, 2026, and may change with updates."
+  },
+  "illustration": {
+    "scene": "キャラがスマホを手に、机の上に広がった小さなカードの列を指でたどっている。カードにはQRコード風の四角い模様（読めない抽象的な模様）が描かれていて、1枚に星の印がついている。キャラは目当ての1枚を見つけてほっとしている。",
+    "alt": {
+      "ja": "並んだQRコード風のカードの中から、目当ての1枚を見つけるキャラクター",
+      "en": "The character tracing a row of QR-style cards and finding the one they were looking for"
+    }
+  }
+}

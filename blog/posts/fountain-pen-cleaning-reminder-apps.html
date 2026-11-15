@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/js/lang.js"></script>
+    <!-- このページは scripts/build_guides.py が docs/guides/fountain-pen-cleaning-reminder-apps.json から作る。直すのは JSON のほう -->
+    <title>万年筆の洗浄どきを知らせてくれるアプリ3選 - Blog | Ryo Tsuzukihashi</title>
+    <meta name="description" content="万年筆の洗浄の時期や、インクを入れたまま使っていないペンを知らせてくれるアプリを3本比べました。洗浄の目安の出し方、通知、インクの管理、無料の範囲の違いをまとめています。PenKeepの作者が書いています。">
+    <meta name="title-en" content="3 Apps That Remind You When to Clean Your Fountain Pens - Blog | Ryo Tsuzukihashi">
+    <meta name="description-en" content="I compared three iPhone apps that remind you when to clean your fountain pens and flag inked pens you haven&#x27;t used: how they set the cleaning date, notifications, ink tracking, and what&#x27;s free. Written by the maker of PenKeep.">
+    <link rel="canonical" href="https://tsuzukit.com/blog/posts/fountain-pen-cleaning-reminder-apps.html">
+
+    <!-- OGP -->
+    <meta property="og:title" content="万年筆の洗浄どきを知らせてくれるアプリ3選">
+    <meta property="og:description" content="万年筆の洗浄の時期や、インクを入れたまま使っていないペンを知らせてくれるアプリを3本比べました。洗浄の目安の出し方、通知、インクの管理、無料の範囲の違いをまとめています。PenKeepの作者が書いています。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://tsuzukit.com/blog/posts/fountain-pen-cleaning-reminder-apps.html">
+    <meta property="og:image" content="https://tsuzukit.com/assets/images/posts/fountain-pen-cleaning-reminder-apps.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://tsuzukit.com/assets/images/posts/fountain-pen-cleaning-reminder-apps.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-dark-32x32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-dark-16x16.png" media="(prefers-color-scheme: dark)">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERPQ1EGLH');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8240751277462688"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
+    <link rel="stylesheet" href="/assets/css/guide.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "万年筆の洗浄どきを知らせてくれるアプリ3選",
+      "description": "万年筆の洗浄の時期や、インクを入れたまま使っていないペンを知らせてくれるアプリを3本比べました。洗浄の目安の出し方、通知、インクの管理、無料の範囲の違いをまとめています。PenKeepの作者が書いています。",
+      "image": "https://tsuzukit.com/assets/images/posts/fountain-pen-cleaning-reminder-apps.webp",
+      "datePublished": "2026-11-15",
+      "dateModified": "2026-11-15",
+      "inLanguage": "ja",
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "mainEntityOfPage": "https://tsuzukit.com/blog/posts/fountain-pen-cleaning-reminder-apps.html",
+      "about": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "万年筆ケア PenKeep",
+          "url": "https://apps.apple.com/jp/app/id6782400804",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "インク帳",
+          "url": "https://apps.apple.com/jp/app/id6763183078",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "インクノート - 万年筆・インク管理",
+          "url": "https://apps.apple.com/jp/app/id6789585501",
+          "operatingSystem": "iOS"
+        }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "万年筆ケア PenKeep",
+      "operatingSystem": "iOS",
+      "applicationCategory": "LifestyleApplication",
+      "url": "https://apps.apple.com/jp/app/id6782400804",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "無料で使えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "3本とも無料で入れられます。ペンの数で言うと、PenKeepとインクノートは3本まで、インク帳は5本まで無料です。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "久しぶりに使う万年筆が書けません。",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "どのアプリも直し方を教えるものではありません。固まってしまったペンは、買ったお店かメーカーに相談してください。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Androidで使えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "PenKeepはiPhone専用です。ほかの2本は、App Storeの説明文にAndroid版の記載がありませんでした。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tsuzukit.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://tsuzukit.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "困りごとから選ぶアプリ",
+          "item": "https://tsuzukit.com/blog/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "万年筆の洗浄どきを知らせてくれるアプリ3選",
+          "item": "https://tsuzukit.com/blog/posts/fountain-pen-cleaning-reminder-apps.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">TsuzuKit</a>
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/portfolio/" class="nav-link">Portfolio</a>
+                <a href="/blog/" class="nav-link active">Blog</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post -->
+    <article class="blog-post">
+        <header class="post-header">
+            <div class="post-meta">
+                <span class="post-date">2026.11.15</span>
+                <span class="post-category"><span class="i18n-ja">アプリの選び方</span><span class="i18n-en">App guides</span></span>
+                <span class="post-reading-time"><span class="i18n-ja">4分で読める</span><span class="i18n-en">4 min read</span></span>
+            </div>
+            <h1 class="post-title"><span class="i18n-ja">万年筆の洗浄どきを知らせてくれるアプリ3選</span><span class="i18n-en">3 Apps That Remind You When to Clean Your Fountain Pens</span></h1>
+        </header>
+        <figure class="post-illustration guide-illustration"><img src="/assets/images/posts/fountain-pen-cleaning-reminder-apps.webp" width="1200" height="800" alt="水を張ったコップで万年筆を洗い、インクが広がるのを見ているキャラクター" data-en-alt="The character flushing a fountain pen in a glass of water, watching the ink swirl out" fetchpriority="high"></figure>
+
+        <div class="post-content guide i18n-ja">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">先に答え</p>
+                <p>洗浄の頻度は吸入方式やインクで変わるので、目安を決めたらアプリに覚えてもらうのが楽です。インクの色や在庫も一緒に管理したいならインク帳かインクノート。ペンごとに洗浄の日を数えて、過ぎたら毎日知らせてほしいなら、僕が作ったPenKeepが合います。</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">書いた人 <a href="https://tsuzukit.com/about/">續橋 涼</a>（@tsuzuki817）</p>
+                    <p class="guide-byline-bio">2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。PenKeepの作者です。</p>
+                    <p class="guide-byline-date">公開 <time datetime="2026-11-15">2026.11.15</time> · 更新 <time datetime="2026-11-15">2026.11.15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">この記事は、PenKeepを作った僕が書いています。ほかの2本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。</p>
+            <h2>3本をざっくり比べる</h2>
+            <p>3本とも、インクを入れたまま放っておいたペンに気づかせてくれます。違いが出るのは、洗浄の日を数えるか、インクの台帳まで持つかです。</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">アプリ</th><th scope="col">評価の件数</th><th scope="col">洗浄の時期</th><th scope="col">入れっぱなしのペン</th><th scope="col">インクの台帳</th><th scope="col">無料の範囲</th></tr></thead><tbody><tr><th scope="row">PenKeep（僕のアプリ）</th><td>0件</td><td>吸入方式から目安を出し、2週間前と3日前と当日に通知。過ぎたら毎日</td><td>最後に書いた日から、乾いてるかもと表示</td><td>なし</td><td>ペン3本まで</td></tr><tr><th scope="row">インク帳</th><td>3件</td><td>目安を過ぎたペンが一覧の先頭に並ぶ</td><td>入れたままの日数を通知</td><td>あり</td><td>ペン5本、インク10本まで</td></tr><tr><th scope="row">インクノート</th><td>0件</td><td>洗浄を記録すると履歴に残る</td><td>決めた日数使わないと通知</td><td>あり</td><td>ペン3本、インク5本まで</td></tr></tbody></table></div>
+            <h2>1本ずつ見ていく</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5e/ce/de/5ecede23-6105-fdba-44cd-afdb8cc27f37/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">僕が作ったアプリ</span>
+                    <h3 class="guide-app-name">万年筆ケア PenKeep</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · App Storeの評価 0件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6782400804" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>吸入方式を選ぶと、洗浄の目安が最初に入ります。カートリッジとコンバーターは4週間ごと、ピストンなどの吸入式は6週間ごと、アイドロッパーは8週間ごとです。目安は2週間から12週間の中で直せます。</p>
+            <p>通知は洗浄の2週間前と3日前と当日です。過ぎたら、洗ったと記録するまで毎日鳴ります。最後に書いた日からしばらく経ったペンには、乾いてるかもと出るので、書くか洗うかのきっかけになります。</p>
+            <p>無料だとペンは3本まで登録できます。ペンケースや箱で分けるのと、お手入れの記録はプレミアムです。インクのコレクションを管理する機能はありません。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c3/45/ba/c345ba22-bf3b-393e-0934-03c93356d89c/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">インク帳</h3>
+                    <p class="guide-app-meta">kazuki korenori · App Storeの評価 3件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6763183078" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>どのペンに何色が入っているかを、写真つきのカードで一覧にできるアプリです。洗浄の目安を過ぎたペンが先頭に並び、インクを入れたままの日数を通知で知らせてくれます。</p>
+            <p>インクの管理が細かくて、シェーンやシマー、残量まで残せます。無料だとペン5本とインク10本までで、登録の数のほかは全部の機能が無料です。有料版は買い切りです。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/43/18/85/431885e2-c085-21ea-8a52-197933f5d36f/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">インクノート - 万年筆・インク管理</h3>
+                    <p class="guide-app-meta">towa imamoto · App Storeの評価 0件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6789585501" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>インクを入れる、洗浄するを記録すると、充填の履歴が残ります。インクを入れたまま使わずにいると、決めた日数で通知が来ます。ホーム画面のウィジェットで、充填中のペンと放置している日数も見られます。</p>
+            <p>ペン先の調整や修理の履歴を、依頼先や費用つきで残せるのも特徴です。無料だとペン3本とインク5本までです。</p>
+            <h2>洗浄の頻度はどう決めるか</h2>
+            <p>どのくらいで洗うかは、吸入方式やインクの種類、書く頻度で変わります。PenKeepの目安はあくまで出発点です。</p>
+            <p>ペンやインクの説明書、買ったお店の案内に合わせて決めたら、その日数をアプリに入れておけば忘れずに済みます。</p>
+            <h2>どれを選ぶか</h2>
+            <ul class="guide-list"><li>インクの色や残りの量まで細かく残したいなら、インク帳</li><li>ペン先の調整や修理の履歴も残したいなら、インクノート</li><li>ペンごとの洗浄の日を数えて、過ぎたら毎日知らせてほしいなら、PenKeep</li></ul>
+            <h2>よくある質問</h2>
+            <dl class="guide-faq">
+                <dt>無料で使えますか？</dt><dd>3本とも無料で入れられます。ペンの数で言うと、PenKeepとインクノートは3本まで、インク帳は5本まで無料です。</dd>
+                <dt>久しぶりに使う万年筆が書けません。</dt><dd>どのアプリも直し方を教えるものではありません。固まってしまったペンは、買ったお店かメーカーに相談してください。</dd>
+                <dt>Androidで使えますか？</dt><dd>PenKeepはiPhone専用です。ほかの2本は、App Storeの説明文にAndroid版の記載がありませんでした。</dd>
+            </dl>
+            <p>PenKeepはまだ評価が0件なので、愛用の1本を入れてみた人の感想を待ってます🖋️</p>
+            <div class="guide-notes">各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。洗浄の仕方と周期は、ペンとインクの説明書に従ってください。</div>
+        </div>
+
+        <div class="post-content guide i18n-en">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">Short answer</p>
+                <p>How often to flush depends on the filling system and the ink, so once you settle on an interval, let an app remember it. If you also want to track your ink colors and stock, Inkcho or Ink Note is the pick. If you want each pen&#x27;s cleaning date counted and a reminder every day once it passes, PenKeep, which I made, fits.</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">Written by <a href="https://tsuzukit.com/about/">Ryo Tsuzukihashi</a> (@tsuzuki817)</p>
+                    <p class="guide-byline-bio">I&#x27;ve been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made PenKeep.</p>
+                    <p class="guide-byline-date">Published <time datetime="2026-11-15">2026-11-15</time> · Updated <time datetime="2026-11-15">2026-11-15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">I made PenKeep, and I wrote this article. The other two apps are by developers I don&#x27;t know, and I haven&#x27;t received money or anything else from them. Everything compared here comes from each app&#x27;s App Store description and rating count as of November 15, 2026.</p>
+            <h2>The three apps at a glance</h2>
+            <p>All three help you notice pens left sitting with ink in them. The difference is whether they count down to a cleaning date or also keep a full ink collection.</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">App</th><th scope="col">Ratings</th><th scope="col">Cleaning date</th><th scope="col">Inked pens left unused</th><th scope="col">Ink collection</th><th scope="col">Free version</th></tr></thead><tbody><tr><th scope="row">PenKeep (my app)</th><td>0</td><td>Set from the filling system. Notifies 2 weeks before, 3 days before, and on the day, then daily</td><td>Shows a may-be-drying warning based on when you last wrote</td><td>No</td><td>Up to 3 pens</td></tr><tr><th scope="row">Inkcho</th><td>3</td><td>Pens past their guideline move to the top of the list</td><td>Notifies you how long ink has been in a pen</td><td>Yes</td><td>Up to 5 pens and 10 inks</td></tr><tr><th scope="row">Ink Note</th><td>0</td><td>Cleanings you log are kept in the history</td><td>Notifies you after a set number of unused days</td><td>Yes</td><td>Up to 3 pens and 5 inks</td></tr></tbody></table></div>
+            <h2>Each app, one by one</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5e/ce/de/5ecede23-6105-fdba-44cd-afdb8cc27f37/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">I made this</span>
+                    <h3 class="guide-app-name">PenKeep: Fountain Pen Care</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · 0 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6782400804" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>Pick the filling system and a cleaning interval is filled in for you. Cartridge and converter pens start at every 4 weeks, piston and other built-in fillers at every 6 weeks, and eyedroppers at every 8 weeks. You can change it to anything from 2 to 12 weeks.</p>
+            <p>It notifies you 2 weeks before, 3 days before, and on the day. After that, it reminds you every day until you log a cleaning. A pen you haven&#x27;t written with in a while shows a may-be-drying label, which nudges you to either write with it or clean it.</p>
+            <p>The free version holds up to 3 pens. Grouping by pen case or box and keeping a care log are Premium features. It doesn&#x27;t manage an ink collection.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c3/45/ba/c345ba22-bf3b-393e-0934-03c93356d89c/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Inkcho</h3>
+                    <p class="guide-app-meta">kazuki korenori · 3 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6763183078" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>This app shows which ink is in which pen on cards with photos. Pens past their cleaning guideline move to the top, and it notifies you how many days ink has been sitting in a pen.</p>
+            <p>Its ink tracking is detailed, down to shading, shimmer, and how much is left. The free version holds 5 pens and 10 inks, and every feature except the item limit is free. The paid version is a one-time purchase.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/43/18/85/431885e2-c085-21ea-8a52-197933f5d36f/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Ink Note: Fountain Pen and Ink Log</h3>
+                    <p class="guide-app-meta">towa imamoto · 0 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6789585501" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>When you log filling or cleaning a pen, it builds a fill history. If a pen sits with ink in it, you get a notification after the number of days you set. A Home Screen widget shows inked pens and how long they&#x27;ve been sitting.</p>
+            <p>It also keeps a history of nib adjustments and repairs, with who did them and what they cost. The free version holds 3 pens and 5 inks.</p>
+            <h2>How to decide how often to flush</h2>
+            <p>How often to flush depends on the filling system, the type of ink, and how often you write. PenKeep&#x27;s intervals are only a starting point.</p>
+            <p>Settle on a number based on your pen&#x27;s and ink&#x27;s instructions or what the shop recommends, then put it in the app so you don&#x27;t have to remember.</p>
+            <h2>Which one to pick</h2>
+            <ul class="guide-list"><li>If you want detailed records of ink colors and how much is left, Inkcho</li><li>If you also want a history of nib adjustments and repairs, Ink Note</li><li>If you want each pen&#x27;s cleaning date counted down, with a reminder every day once it passes, PenKeep</li></ul>
+            <h2>FAQ</h2>
+            <dl class="guide-faq">
+                <dt>Are they free?</dt><dd>All three are free to download. By number of pens, PenKeep and Ink Note are free for up to 3, and Inkcho for up to 5.</dd>
+                <dt>A pen I haven&#x27;t used in a while won&#x27;t write.</dt><dd>None of these apps fix that for you. For a pen that&#x27;s dried up, ask the shop where you bought it or the maker.</dd>
+                <dt>Do they work on Android?</dt><dd>PenKeep is iPhone only. The App Store descriptions of the other two don&#x27;t mention an Android version.</dd>
+            </dl>
+            <p>PenKeep has no ratings yet, so I&#x27;d love to hear from anyone who adds a favorite pen 🖋️</p>
+            <div class="guide-notes">Features and rating counts were checked against each app&#x27;s App Store description on November 15, 2026, and may change with updates. For how and how often to clean, follow the instructions for your pen and ink.</div>
+        </div>
+
+        <nav class="post-navigation">
+            <img class="tk-char tk-char--post" src="/assets/images/character-hang.png" alt="" width="381" height="208">
+            <a href="/blog/guides/" class="nav-link-wrapper"><span>&larr; <span class="i18n-ja">困りごとから選ぶアプリの一覧へ</span><span class="i18n-en">All guides: apps for everyday problems</span></span></a>
+        </nav>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
+                    <p class="footer-description"><span class="i18n-ja">誰も作らないものを、まじめに作る</span><span class="i18n-en">I make things nobody else would, and I make them seriously</span></p>
+                </div>
+                <div class="footer-nav">
+                    <a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
+                    <a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
+                    <a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
+                    <a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ryo Tsuzukihashi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

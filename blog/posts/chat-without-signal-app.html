@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/js/lang.js"></script>
+    <!-- このページは scripts/build_guides.py が docs/guides/chat-without-signal-app.json から作る。直すのは JSON のほう -->
+    <title>圏外でも近くの人と連絡できるアプリ4選 - Blog | Ryo Tsuzukihashi</title>
+    <meta name="description" content="電波もネットも無い場所で、Bluetoothで近くの人とメッセージをやり取りするアプリを4本比べました。中継、登録、最初の起動の条件の違いをまとめています。RelayChatの作者が書いています。">
+    <meta name="title-en" content="4 Apps for Messaging People Nearby With No Signal - Blog | Ryo Tsuzukihashi">
+    <meta name="description-en" content="I compared four apps that let you message people nearby over Bluetooth when there&#x27;s no signal or internet: relaying, sign-up, and what the first launch needs. Written by the maker of RelayChat.">
+    <link rel="canonical" href="https://tsuzukit.com/blog/posts/chat-without-signal-app.html">
+
+    <!-- OGP -->
+    <meta property="og:title" content="圏外でも近くの人と連絡できるアプリ4選">
+    <meta property="og:description" content="電波もネットも無い場所で、Bluetoothで近くの人とメッセージをやり取りするアプリを4本比べました。中継、登録、最初の起動の条件の違いをまとめています。RelayChatの作者が書いています。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://tsuzukit.com/blog/posts/chat-without-signal-app.html">
+    <meta property="og:image" content="https://tsuzukit.com/assets/images/posts/chat-without-signal-app.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://tsuzukit.com/assets/images/posts/chat-without-signal-app.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-dark-32x32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-dark-16x16.png" media="(prefers-color-scheme: dark)">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERPQ1EGLH');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8240751277462688"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
+    <link rel="stylesheet" href="/assets/css/guide.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "圏外でも近くの人と連絡できるアプリ4選",
+      "description": "電波もネットも無い場所で、Bluetoothで近くの人とメッセージをやり取りするアプリを4本比べました。中継、登録、最初の起動の条件の違いをまとめています。RelayChatの作者が書いています。",
+      "image": "https://tsuzukit.com/assets/images/posts/chat-without-signal-app.webp",
+      "datePublished": "2026-11-15",
+      "dateModified": "2026-11-15",
+      "inLanguage": "ja",
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "mainEntityOfPage": "https://tsuzukit.com/blog/posts/chat-without-signal-app.html",
+      "about": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "RelayChat-オフライン匿名Bluetoothチャット",
+          "url": "https://apps.apple.com/jp/app/id6749299283",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "Berkanan Messenger",
+          "url": "https://apps.apple.com/jp/app/id1289061820",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "bitchat mesh",
+          "url": "https://apps.apple.com/jp/app/id6748219622",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "Bridgefy - オフラインメッセージ",
+          "url": "https://apps.apple.com/jp/app/id975776347",
+          "operatingSystem": "iOS"
+        }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "RelayChat-オフライン匿名Bluetoothチャット",
+      "operatingSystem": "iOS",
+      "applicationCategory": "SocialNetworkingApplication",
+      "url": "https://apps.apple.com/jp/app/id6749299283",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "相手もアプリを入れている必要がありますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "はい。4本とも、同じアプリを入れている人どうしでしかつながりません。圏外になる前に一緒に入れておいてください。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "どのくらい離れていても届きますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bluetoothなので近くの人までです。RelayChatは間にいる人のスマホを経由すると少し遠くまで届きますが、届く距離は障害物や環境で変わります。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Androidの人とも話せますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "RelayChatはiPhone専用で、Android版はありません。ほかの3本のAndroid版は、説明文には書かれていませんでした。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tsuzukit.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://tsuzukit.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "困りごとから選ぶアプリ",
+          "item": "https://tsuzukit.com/blog/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "圏外でも近くの人と連絡できるアプリ4選",
+          "item": "https://tsuzukit.com/blog/posts/chat-without-signal-app.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">TsuzuKit</a>
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/portfolio/" class="nav-link">Portfolio</a>
+                <a href="/blog/" class="nav-link active">Blog</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post -->
+    <article class="blog-post">
+        <header class="post-header">
+            <div class="post-meta">
+                <span class="post-date">2026.11.15</span>
+                <span class="post-category"><span class="i18n-ja">アプリの選び方</span><span class="i18n-en">App guides</span></span>
+                <span class="post-reading-time"><span class="i18n-ja">5分で読める</span><span class="i18n-en">5 min read</span></span>
+            </div>
+            <h1 class="post-title"><span class="i18n-ja">圏外でも近くの人と連絡できるアプリ4選</span><span class="i18n-en">4 Apps for Messaging People Nearby With No Signal</span></h1>
+        </header>
+        <figure class="post-illustration guide-illustration"><img src="/assets/images/posts/chat-without-signal-app.webp" width="1200" height="800" alt="電波の無いキャンプ場で、仲間のスマホを経由して光の粒を届けるキャラクター" data-en-alt="The character at a campsite with no signal, sending a dot of light that hops through a friend&#x27;s phone to reach another" fetchpriority="high"></figure>
+
+        <div class="post-content guide i18n-ja">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">先に答え</p>
+                <p>圏外で使えるのは、Bluetoothでスマホどうしが直接つながるアプリです。相手も同じアプリを入れている必要があるので、電波があるうちに一緒に入れておきます。評価がいちばん多いのは25件のBerkanan Messengerです。登録なしで、ほかの人のスマホを経由して少し遠くまで届けたいなら、僕が作ったRelayChatも見てみてください。</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">書いた人 <a href="https://tsuzukit.com/about/">續橋 涼</a>（@tsuzuki817）</p>
+                    <p class="guide-byline-bio">2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。RelayChatの作者です。</p>
+                    <p class="guide-byline-date">公開 <time datetime="2026-11-15">2026.11.15</time> · 更新 <time datetime="2026-11-15">2026.11.15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">この記事は、RelayChatを作った僕が書いています。ほかの3本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。</p>
+            <h2>先に知っておくこと</h2>
+            <p>どのアプリも、相手が同じアプリを入れていないとつながりません。圏外になってからは入れられないので、山に行く前や、家族の防災の準備のときに一緒に入れておきます。</p>
+            <p>届く距離は、Bluetoothなので近くの人までです。壁や人ごみで短くなります。</p>
+            <h2>4本をざっくり比べる</h2>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">アプリ</th><th scope="col">評価の件数</th><th scope="col">ほかのスマホで中継</th><th scope="col">アカウント</th><th scope="col">1対1のメッセージ</th><th scope="col">有料のところ</th></tr></thead><tbody><tr><th scope="row">RelayChat（僕のアプリ）</th><td>2件</td><td>あり。最大3回まで</td><td>要らない</td><td>あり。本文は中継の端末から読めない</td><td>広告を消す、アイコンを選ぶ</td></tr><tr><th scope="row">Berkanan Messenger</th><td>25件</td><td>端末から端末へ転送</td><td>要らない</td><td>非公開メッセージあり</td><td>プロフィールの編集、広告を消す</td></tr><tr><th scope="row">bitchat mesh</th><td>21件</td><td>あり</td><td>電話番号もメールも要らない</td><td>暗号化した個別のメッセージ</td><td>説明文に記載なし</td></tr><tr><th scope="row">Bridgefy</th><td>1件</td><td>説明文に記載なし</td><td>初回だけネットにつないでログイン</td><td>あり</td><td>サブスクリプションあり</td></tr></tbody></table></div>
+            <h2>1本ずつ見ていく</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/eb/bc/17/ebbc17e6-d513-a7d3-2dc5-595febaa0beb/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">僕が作ったアプリ</span>
+                    <h3 class="guide-app-name">RelayChat-オフライン匿名Bluetoothチャット</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · App Storeの評価 2件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6749299283" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>Bluetoothでスマホどうしが直接つながって、近くにいる全員とメッセージをやり取りできます。名前やメールアドレスの登録は要りません。</p>
+            <p>直接届かない相手にも、間にいる人のスマホを最大3回まで経由して届けます。1対1のメッセージは本文を暗号化していて、中継したスマホからは読めません。全員に向けたメッセージは、その場にいる全員が読めるものとして送ります。</p>
+            <p>チャットは無料で使えて、Proにすると広告が消え、アイコンを自由に選べます。Proはサブスクリプションか買い切りです。iPhone専用です。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/83/f6/4a/83f64ae5-3054-e1ef-f78e-d2e4dea23b5a/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Berkanan Messenger</h3>
+                    <p class="guide-app-meta">IZE, Ltd. · App Storeの評価 25件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id1289061820" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>評価が25件あって、4本の中でいちばん多いです。Bluetoothだけを使ったグループメッセージのアプリで、近くの人と公開と非公開のメッセージを送り合えます。</p>
+            <p>アカウントの登録は要りません。バックグラウンドでも動いて、近くの人やメッセージを通知で知らせます。プレミアムではプロフィールを編集でき、広告が消えます。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b6/fa/f3/b6faf3c8-dfa4-eb54-3ebe-bf775dadb04c/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">bitchat mesh</h3>
+                    <p class="guide-app-meta">permissionless tech, llc · App Storeの評価 21件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6748219622" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>Bluetoothのメッシュでつながる、英語のチャットアプリです。電話番号もメールアドレスも要らず、メッセージを中継して遠くまで届けると説明文にあります。</p>
+            <p>個別のメッセージは暗号化されます。説明文はとても短く、料金については書かれていませんでした。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/30/56/d5/3056d599-c416-31d0-daaa-56cc6f09673f/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Bridgefy - オフラインメッセージ</h3>
+                    <p class="guide-app-meta">Bridgefy, Inc. · App Storeの評価 1件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id975776347" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>世界中で使われている、インターネット不要のメッセージアプリです。Bluetoothで近くの人に送れて、届く距離は最長100メートルと説明文にあります。</p>
+            <p>気をつけたいのは、最初に開くときだけインターネットにつないでログインが要るところです。圏外になる前に、1回開いておく必要があります。</p>
+            <h2>アプリが無くてもできること</h2>
+            <p>大きな災害のときは、災害用伝言ダイヤルの171や、ネットで使えるweb171で安否を残せます。携帯会社が無料のWi-Fiの00000JAPANを開けることもあります。</p>
+            <p>ただ、どれも電話かネットのどこかがつながっている必要があります。全部が止まった場所で近くの人とやり取りできるのが、Bluetoothのアプリのいいところです。</p>
+            <h2>どれを選ぶか</h2>
+            <ul class="guide-list"><li>評価の多いアプリから試したい、通知で近くの人を知りたいなら、Berkanan Messenger</li><li>英語でもよくて、中継と暗号化があればいいなら、bitchat mesh</li><li>登録なしで日本語で使えて、1対1の本文を中継の人に読ませたくないなら、RelayChat</li></ul>
+            <h2>よくある質問</h2>
+            <dl class="guide-faq">
+                <dt>相手もアプリを入れている必要がありますか？</dt><dd>はい。4本とも、同じアプリを入れている人どうしでしかつながりません。圏外になる前に一緒に入れておいてください。</dd>
+                <dt>どのくらい離れていても届きますか？</dt><dd>Bluetoothなので近くの人までです。RelayChatは間にいる人のスマホを経由すると少し遠くまで届きますが、届く距離は障害物や環境で変わります。</dd>
+                <dt>Androidの人とも話せますか？</dt><dd>RelayChatはiPhone専用で、Android版はありません。ほかの3本のAndroid版は、説明文には書かれていませんでした。</dd>
+            </dl>
+            <p>RelayChatは近くに使う人が増えるほど遠くまで届くので、家族や仲間と一緒に入れてもらえるとうれしいです📡</p>
+            <div class="guide-notes">各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。災害のときの連絡の方法は、自治体や携帯会社の案内も確かめてください。</div>
+        </div>
+
+        <div class="post-content guide i18n-en">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">Short answer</p>
+                <p>What works with no signal is an app where phones connect directly over Bluetooth. The other person needs the same app, so install it together while you still have a connection. The most rated is Berkanan Messenger, with 25. If you want no sign-up and messages that hop through other people&#x27;s phones to reach a little farther, take a look at RelayChat, which I made.</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">Written by <a href="https://tsuzukit.com/about/">Ryo Tsuzukihashi</a> (@tsuzuki817)</p>
+                    <p class="guide-byline-bio">I&#x27;ve been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made RelayChat.</p>
+                    <p class="guide-byline-date">Published <time datetime="2026-11-15">2026-11-15</time> · Updated <time datetime="2026-11-15">2026-11-15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">I made RelayChat, and I wrote this article. The other three apps are by developers I don&#x27;t know, and I haven&#x27;t received money or anything else from them. Everything compared here comes from each app&#x27;s App Store description and rating count as of November 15, 2026.</p>
+            <h2>What to know first</h2>
+            <p>None of these apps work unless the other person has the same one installed. You can&#x27;t download it once you&#x27;ve lost signal, so install it together before a hike or as part of your family&#x27;s disaster prep.</p>
+            <p>Because it&#x27;s Bluetooth, it only reaches people nearby, and walls or crowds shorten the range.</p>
+            <h2>The four apps at a glance</h2>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">App</th><th scope="col">Ratings</th><th scope="col">Relays through other phones</th><th scope="col">Account</th><th scope="col">Private messages</th><th scope="col">What costs money</th></tr></thead><tbody><tr><th scope="row">RelayChat (my app)</th><td>2</td><td>Yes, up to 3 hops</td><td>Not needed</td><td>Yes. Relaying phones cannot read the text</td><td>Removing ads, choosing your icon</td></tr><tr><th scope="row">Berkanan Messenger</th><td>25</td><td>Passed from device to device</td><td>Not needed</td><td>Private messages available</td><td>Editing your profile, removing ads</td></tr><tr><th scope="row">bitchat mesh</th><td>21</td><td>Yes</td><td>No phone number or email</td><td>Encrypted private messages</td><td>Not mentioned</td></tr><tr><th scope="row">Bridgefy</th><td>1</td><td>Not mentioned</td><td>Log in online on first launch</td><td>Yes</td><td>Has a subscription</td></tr></tbody></table></div>
+            <h2>Each app, one by one</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/eb/bc/17/ebbc17e6-d513-a7d3-2dc5-595febaa0beb/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">I made this</span>
+                    <h3 class="guide-app-name">RelayChat-Bluetooth Mesh Chat</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · 2 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6749299283" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>Phones connect directly over Bluetooth so you can message everyone nearby. There&#x27;s no need to register a name or email address.</p>
+            <p>If someone is out of direct range, your message can hop through up to three other people&#x27;s phones to reach them. Private messages are encrypted so the phones relaying them can&#x27;t read the text. Messages to everyone are meant to be read by everyone there.</p>
+            <p>Chatting is free, and Pro removes ads and lets you pick any icon. Pro is a subscription or a one-time purchase. It&#x27;s iPhone only.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/83/f6/4a/83f64ae5-3054-e1ef-f78e-d2e4dea23b5a/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Berkanan Messenger</h3>
+                    <p class="guide-app-meta">IZE, Ltd. · 25 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id1289061820" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>With 25 ratings, it has the most of the four. It&#x27;s a group messaging app that runs on Bluetooth alone, letting you send public and private messages to people nearby.</p>
+            <p>No account is needed. It runs in the background and notifies you about people and messages nearby. Premium lets you edit your profile and removes ads.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b6/fa/f3/b6faf3c8-dfa4-eb54-3ebe-bf775dadb04c/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">bitchat mesh</h3>
+                    <p class="guide-app-meta">permissionless tech, llc · 21 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6748219622" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>An English-language chat app that connects over a Bluetooth mesh. It needs no phone number or email, and its description says it relays messages to go the distance.</p>
+            <p>Private messages are encrypted. The description is very short and says nothing about pricing.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/30/56/d5/3056d599-c416-31d0-daaa-56cc6f09673f/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Bridgefy - Offline Messages</h3>
+                    <p class="guide-app-meta">Bridgefy, Inc. · 1 App Store rating</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id975776347" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>An internet-free messaging app used around the world. It sends messages to people nearby over Bluetooth, and the description gives a maximum range of 100 meters.</p>
+            <p>One thing to watch for is that the first launch needs an internet connection to log in, so you have to open it once before you lose signal.</p>
+            <h2>What you can do without these apps</h2>
+            <p>In a major disaster, you can leave a message about your safety with the 171 disaster message dial or web171 online. Carriers may also open a free Wi-Fi network called 00000JAPAN.</p>
+            <p>All of these still need a phone line or internet connection somewhere. What the Bluetooth apps are good at is reaching people nearby when everything else is down.</p>
+            <h2>Which one to pick</h2>
+            <ul class="guide-list"><li>If you want to start with the most rated app and get notified about people nearby, Berkanan Messenger</li><li>If English is fine and you just want relaying and encryption, bitchat mesh</li><li>If you want no sign-up, a Japanese interface, and private messages that relaying phones can&#x27;t read, RelayChat</li></ul>
+            <h2>FAQ</h2>
+            <dl class="guide-faq">
+                <dt>Does the other person need the app too?</dt><dd>Yes. All four only connect people who have the same app, so install it together before you lose signal.</dd>
+                <dt>How far can messages reach?</dt><dd>It&#x27;s Bluetooth, so only people nearby. RelayChat can reach a bit farther by hopping through other phones in between, but the range changes with obstacles and surroundings.</dd>
+                <dt>Can I chat with Android users?</dt><dd>RelayChat is iPhone only, with no Android version. The other three descriptions don&#x27;t mention Android.</dd>
+            </dl>
+            <p>RelayChat reaches farther the more people nearby are using it, so I&#x27;d be happy if you set it up with your family or friends 📡</p>
+            <div class="guide-notes">Features and rating counts were checked against each app&#x27;s App Store description on November 15, 2026, and may change with updates. For contacting people in a disaster, also check guidance from your local government and carrier.</div>
+        </div>
+
+        <nav class="post-navigation">
+            <img class="tk-char tk-char--post" src="/assets/images/character-hang.png" alt="" width="381" height="208">
+            <a href="/blog/guides/" class="nav-link-wrapper"><span>&larr; <span class="i18n-ja">困りごとから選ぶアプリの一覧へ</span><span class="i18n-en">All guides: apps for everyday problems</span></span></a>
+        </nav>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
+                    <p class="footer-description"><span class="i18n-ja">誰も作らないものを、まじめに作る</span><span class="i18n-en">I make things nobody else would, and I make them seriously</span></p>
+                </div>
+                <div class="footer-nav">
+                    <a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
+                    <a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
+                    <a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
+                    <a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ryo Tsuzukihashi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

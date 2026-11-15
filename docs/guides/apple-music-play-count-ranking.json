@@ -1,0 +1,435 @@
+{
+  "slug": "apple-music-play-count-ranking",
+  "date_published": "2026-11-15",
+  "date_updated": "2026-11-15",
+  "search_phrase": {
+    "ja": "Apple Music 再生回数 ランキング 自分",
+    "en": "Apple Music my most played songs ranking"
+  },
+  "evidence": "2026-11-15 に Google の検索候補で「apple music 再生回数」を引くと、13件中に「再生回数 自分」「再生回数ランキング 自分」「再生回数 確認」「再生回数 アプリ」「再生回数 表示」が並んだ。同じ日の App Store で「apple music 再生回数」を検索すると、Music Dig 524件、MuzGo 74件、Song Infos 32件などの統計アプリが並んでいた。",
+  "title": {
+    "ja": "Apple Musicで自分の再生回数ランキングを見るアプリ4選",
+    "en": "4 Apps to See Your Most-Played Songs on Apple Music"
+  },
+  "description": {
+    "ja": "Apple Musicで自分がよく聴いている曲を再生回数の順に見るアプリを4本比べました。回数の見せ方と、画像にして共有できるかの違いをまとめています。Music Snapshotの作者が書いています。",
+    "en": "I compared four iPhone apps that rank your Apple Music songs by play count: how they show the numbers and whether you can share the results as an image. Written by the maker of Music Snapshot."
+  },
+  "excerpt": {
+    "ja": "再生回数の見せ方と、画像で共有できるかで4本を比べました。Music Snapshotを作った僕が書いています。",
+    "en": "Four apps compared on how they show play counts and whether you can share them as an image. I made Music Snapshot, one of the four."
+  },
+  "category": {
+    "ja": "アプリの選び方",
+    "en": "App guides"
+  },
+  "reading_minutes": 4,
+  "author": {
+    "name": {
+      "ja": "續橋 涼",
+      "en": "Ryo Tsuzukihashi"
+    },
+    "handle": "tsuzuki817",
+    "bio": {
+      "ja": "2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。Music Snapshotの作者です。",
+      "en": "I've been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made Music Snapshot."
+    },
+    "url": "https://tsuzukit.com/about/",
+    "same_as": [
+      "https://x.com/tsuzuki817"
+    ]
+  },
+  "tldr": {
+    "ja": "年ごとのランキングならApple MusicのReplayで足ります。曲ごとの回数をiPhoneで見るなら、いちばん使われているのは評価524件のMusic Dig、細かい統計ならSong Infosです。よく聴く60曲をジャケットの壁紙にしたい人は、僕が作ったMusic Snapshotも見てみてください。",
+    "en": "For a yearly ranking, Apple Music's Replay is enough. For per-song counts on your iPhone, the most widely used app is Music Dig with 524 ratings, and Song Infos goes deepest on stats. If you want your 60 most-played songs as an album-cover wallpaper, take a look at Music Snapshot, which I made."
+  },
+  "disclosure": {
+    "ja": "この記事は、Music Snapshotを作った僕が書いています。ほかの3本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。",
+    "en": "I made Music Snapshot, and I wrote this article. The other three apps are by developers I don't know, and I haven't received money or anything else from them. Everything compared here comes from each app's App Store description and rating count as of November 15, 2026."
+  },
+  "own_app": "6605937062",
+  "app_category": "MusicApplication",
+  "apps": [
+    {
+      "id": "6605937062",
+      "name": {
+        "ja": "Music Snapshot 〜あなたの音楽を一枚に〜",
+        "en": "Music Snapshot: Art Wallpapers"
+      },
+      "short": {
+        "ja": "Music Snapshot",
+        "en": "Music Snapshot"
+      },
+      "developer": "Ryo Tsudukihashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/98/d0/78/98d07863-83f6-500c-daa1-3b3b5aa439ba/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6605937062",
+      "android_url": null,
+      "rating_count": 1
+    },
+    {
+      "id": "1434640007",
+      "name": {
+        "ja": "Music Dig - 再生回数で聴く音楽プレイヤーアプリ",
+        "en": "Music Dig: Music by Play Count"
+      },
+      "short": {
+        "ja": "Music Dig",
+        "en": "Music Dig"
+      },
+      "developer": "Yuya Isago",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/59/89/41/59894151-a69e-5d3f-df98-c275d9d25fc2/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id1434640007",
+      "android_url": null,
+      "rating_count": 524
+    },
+    {
+      "id": "1544835091",
+      "name": {
+        "ja": "Song Infos - 音楽統計",
+        "en": "Song Infos - your music stats"
+      },
+      "short": {
+        "ja": "Song Infos",
+        "en": "Song Infos"
+      },
+      "developer": "Firat Sueluenkue",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4f/64/d3/4f64d33a-da96-2c4b-22ff-ddf291f02d3e/AppIcon-0-0-1x_U007ephone-0-0-0-1-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id1544835091",
+      "android_url": null,
+      "rating_count": 32
+    },
+    {
+      "id": "6760685959",
+      "name": {
+        "ja": "音楽分析: MuzGo",
+        "en": "Music Stats: MuzGo"
+      },
+      "short": {
+        "ja": "音楽分析: MuzGo",
+        "en": "MuzGo"
+      },
+      "developer": "Shenzhen Tapyin Technology Co., Ltd",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/da/87/10/da871052-78dc-b804-6985-90214750f3ca/AppIcon-1x_U007epad-0-1-0-85-220-0.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6760685959",
+      "android_url": null,
+      "rating_count": 74
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ja": "4本をざっくり比べる",
+        "en": "The four apps at a glance"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "どれもApple Musicのライブラリから再生回数を読んで並べます。違うのは、並べたあとに何をするかです。",
+            "en": "All four read play counts from your Apple Music library and rank your songs. Where they differ is what you do with that list."
+          }
+        },
+        {
+          "type": "table",
+          "head": [
+            {
+              "ja": "アプリ",
+              "en": "App"
+            },
+            {
+              "ja": "評価の件数",
+              "en": "Ratings"
+            },
+            {
+              "ja": "並べられるもの",
+              "en": "What it ranks"
+            },
+            {
+              "ja": "回数の見せ方",
+              "en": "How counts are shown"
+            },
+            {
+              "ja": "画像にして共有",
+              "en": "Share as an image"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ja": "Music Snapshot（僕のアプリ）",
+                "en": "Music Snapshot (my app)"
+              },
+              {
+                "ja": "1件",
+                "en": "1"
+              },
+              {
+                "ja": "再生回数の多い曲を60曲",
+                "en": "Your 60 most-played songs"
+              },
+              {
+                "ja": "曲ごとの回数と、聴いた時間の合計",
+                "en": "Plays per song and total listening time"
+              },
+              {
+                "ja": "ジャケットを並べた壁紙",
+                "en": "A wallpaper of album covers"
+              }
+            ],
+            [
+              {
+                "ja": "Music Dig",
+                "en": "Music Dig"
+              },
+              {
+                "ja": "524件",
+                "en": "524"
+              },
+              {
+                "ja": "曲を再生回数で並べ替え",
+                "en": "Sorts songs by play count"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              }
+            ],
+            [
+              {
+                "ja": "Song Infos",
+                "en": "Song Infos"
+              },
+              {
+                "ja": "32件",
+                "en": "32"
+              },
+              {
+                "ja": "曲、アルバム、アーティスト、プレイリスト",
+                "en": "Songs, albums, artists, and playlists"
+              },
+              {
+                "ja": "再生回数、スキップ回数、聴いた時間",
+                "en": "Plays, skips, and listening time"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              }
+            ],
+            [
+              {
+                "ja": "MuzGo",
+                "en": "MuzGo"
+              },
+              {
+                "ja": "74件",
+                "en": "74"
+              },
+              {
+                "ja": "曲、アーティスト、アルバム、ジャンル",
+                "en": "Songs, artists, albums, and genres"
+              },
+              {
+                "ja": "総再生回数など",
+                "en": "Total plays and more"
+              },
+              {
+                "ja": "テンプレートで共有",
+                "en": "Share with templates"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "1本ずつ見ていく",
+        "en": "Each app, one by one"
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "id": "6605937062"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "Apple Musicのライブラリから、再生回数の多い順に60曲を並べます。曲ごとに何回再生したかと、回数に曲の長さを掛けた、その曲を聴いた時間の合計も出ます。",
+            "en": "It lists the 60 songs you have played most from your Apple Music library. Each song shows how many times you played it, and the total time you spent on it, which is the play count times the song length."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "並べたジャケットは、そのまま壁紙の画像になって、保存したり共有したりできます。ほかにも、最近聴いた曲、半年以上聴いていない曲、最近追加した曲の4つの切り口があります。",
+            "en": "The album covers turn into a wallpaper image you can save or share. Besides your most-played songs, there are three more views, recently played, songs you haven't played in over six months, and recently added."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "この4本の中で、Music Snapshotだけが有料のアプリです。買い切りで、入れたあとにかかるお金はありません。",
+            "en": "Music Snapshot is the only paid app of the four. You pay once, and nothing else costs extra after that."
+          }
+        },
+        {
+          "type": "app",
+          "id": "1434640007"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "評価が524件あって、この中ではいちばん使われています。再生回数で曲を並べ替えて、そのまま聴ける音楽プレイヤーです。",
+            "en": "With 524 ratings, it's the most used of the four. It's a music player that sorts your songs by play count and plays them from there."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "よく聴く曲中心、あまり聴いていない曲中心、その両方、と1タップで自動選曲できるのが強みです。ランキングを見るより、そこから聴きたい人向けですね。",
+            "en": "Its strength is one-tap auto picks, focused on songs you play a lot, songs you rarely play, or a mix of both. It's for people who want to listen from the ranking, not just look at it."
+          }
+        },
+        {
+          "type": "app",
+          "id": "1544835091"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "再生回数のほかに、スキップした回数や聴いた時間まで見られる統計のアプリです。トップ10の曲、アルバム、アーティスト、プレイリストがすぐ出ます。",
+            "en": "This is a stats app that shows skips and listening time on top of play counts. Your top 10 songs, albums, artists, and playlists come up right away."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "日ごとのグラフや、過去の同じ日に聴いていた曲を探す機能もあります。数字を細かく見たい人にはいちばん向いています。",
+            "en": "It also has daily charts and a way to find what you were listening to on the same day in past years. It suits people who want to dig into the numbers the most."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6760685959"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "トップソング、トップアーティスト、トップアルバム、トップジャンルをランキングで見られます。総再生回数や再生時間も出ます。",
+            "en": "It ranks your top songs, artists, albums, and genres, and also shows total plays and listening time."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "統計をテンプレートの画像にして、Instagramのストーリーなどに共有できます。説明文には、Apple Musicがすべての再生履歴を出しているわけではない、という注意も書かれていました。",
+            "en": "You can turn your stats into template images for places like Instagram Stories. The description also notes that Apple Music doesn't provide your complete listening history."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "アプリを入れずに見るなら",
+        "en": "Checking without an app"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "Apple Musicには、1年でよく聴いた曲をまとめるReplayがあります。年ごとのランキングならこれで足ります。",
+            "en": "Apple Music has Replay, which rounds up the songs you played most in a year. If a yearly ranking is all you want, that's enough."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "MacのミュージックAppなら、曲の一覧に再生回数の列を出して、多い順に並べ替えられます。iPhoneだけで曲ごとの回数を見たいときに、アプリの出番ですね。",
+            "en": "On a Mac, the Music app can show a Plays column in the song list and sort by it. Apps come in when you want per-song counts on your iPhone alone."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "どれを選ぶか",
+        "en": "Which one to pick"
+      },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "ja": "よく聴く曲や忘れていた曲を、そのまま流したいなら、Music Dig",
+              "en": "If you want to play your top songs or forgotten ones straight from the list, Music Dig"
+            },
+            {
+              "ja": "スキップや日ごとのグラフまで細かく見たいなら、Song Infos",
+              "en": "If you want skips and daily charts too, Song Infos"
+            },
+            {
+              "ja": "ジャンルまで含めたランキングを画像で共有したいなら、MuzGo",
+              "en": "If you want rankings including genres, shared as an image, MuzGo"
+            },
+            {
+              "ja": "よく聴く60曲をジャケットの壁紙にしたいなら、Music Snapshot",
+              "en": "If you want your 60 most-played songs as an album-cover wallpaper, Music Snapshot"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "ja": "無料で使えますか？",
+        "en": "Are they free?"
+      },
+      "a": {
+        "ja": "Music Dig、Song Infos、MuzGoは無料で入れられます。Music Snapshotは有料のアプリです。",
+        "en": "Music Dig, Song Infos, and MuzGo are free to download. Music Snapshot is a paid app."
+      }
+    },
+    {
+      "q": {
+        "ja": "ライブラリに入れていない曲も数えますか？",
+        "en": "Do songs that aren't in my library count?"
+      },
+      "a": {
+        "ja": "Music Snapshotが読むのは、ライブラリに入っている曲だけです。MuzGoは、ライブラリに入れていない最近の曲も追えると説明文に書いてあります。",
+        "en": "Music Snapshot only reads songs in your library. MuzGo says in its description that it can also track recent songs not in your library."
+      }
+    },
+    {
+      "q": {
+        "ja": "Spotifyの再生回数も見られますか？",
+        "en": "Can I see my Spotify play counts?"
+      },
+      "a": {
+        "ja": "この4本は、どれもApple Musicのライブラリを読むアプリです。Spotifyの回数は出ません。",
+        "en": "All four read your Apple Music library. They don't show Spotify play counts."
+      }
+    }
+  ],
+  "closing": {
+    "ja": "自分の1位が何回だったか、Music Snapshotで見た人の数字をちょっと聞いてみたいです🎧",
+    "en": "I'm a little curious how many plays your number one song has, if you check it with Music Snapshot 🎧"
+  },
+  "notes": {
+    "ja": "各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。再生回数は、Apple Musicのライブラリが持っている数字をもとにしています。",
+    "en": "Features and rating counts were checked against each app's App Store description on November 15, 2026, and may change with updates. Play counts come from the numbers stored in your Apple Music library."
+  },
+  "illustration": {
+    "scene": "小さな表彰台の前にキャラが立っている。1位、2位、3位の台の上に、それぞれレコード盤（ラベルは無地の色だけ）が乗っていて、いちばん高い台のレコードが光っている。キャラはヘッドホンを首にかけ、長いレシートのような紙（文字なし、棒グラフの線だけ）を両手で広げて驚いている。",
+    "alt": {
+      "ja": "レコードが乗った表彰台の前で、長い紙のグラフを広げて驚くキャラクター",
+      "en": "The character in front of a podium topped with records, holding up a long strip of paper with a bar chart and looking surprised"
+    }
+  }
+}

@@ -1,0 +1,455 @@
+{
+  "slug": "phone-lock-study-apps",
+  "date_published": "2026-11-15",
+  "date_updated": "2026-11-15",
+  "search_phrase": {
+    "ja": "スマホ 封印 アプリ",
+    "en": "app to lock away your phone while studying"
+  },
+  "evidence": "2026-11-15 に Google の検索候補で「スマホ 封印 アプリ」を引くと、4件すべてが「アプリ」付き（スマホ を 封印 する アプリ、受験生 スマホ 封印 アプリ、勉強 スマホ 封印 アプリ など）だった。「スマホ 封印」の14件は封印ボックスが中心で、アプリで済ませたい人と箱を買う人に分かれている。「アプリ ロック 勉強」でも7件すべてが勉強中にアプリを止める語だった。同じ日に App Store で「スマホ 封印」を検索すると、評価が1万件を超えるスマホ制限のアプリが3本並び、スタロックも8,949件あった。",
+  "title": {
+    "ja": "勉強中にスマホを封印するアプリ4選",
+    "en": "4 Apps That Lock Away Your Phone While You Study"
+  },
+  "description": {
+    "ja": "勉強や作業の間だけスマホのアプリを封印するアプリを4本比べました。途中でやめられるか、時間の決め方、無料の範囲の違いをまとめています。マッチボックスの作者が書いています。",
+    "en": "I compared four iPhone apps that block distracting apps while you study or work: whether you can quit early, how you set the time, and what's free. Written by the maker of Matchbox."
+  },
+  "excerpt": {
+    "ja": "途中でやめられるか、時間の決め方、無料の範囲で4本を比べました。マッチボックスを作った僕が、自分のアプリも入れて書いています。",
+    "en": "Four apps compared on whether you can quit early, how you set the time, and what's free. I made Matchbox, and it's one of the four."
+  },
+  "category": {
+    "ja": "アプリの選び方",
+    "en": "App guides"
+  },
+  "reading_minutes": 4,
+  "author": {
+    "name": {
+      "ja": "續橋 涼",
+      "en": "Ryo Tsuzukihashi"
+    },
+    "handle": "tsuzuki817",
+    "bio": {
+      "ja": "2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。マッチボックスの作者です。",
+      "en": "I've been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made Matchbox."
+    },
+    "url": "https://tsuzukit.com/about/",
+    "same_as": [
+      "https://x.com/tsuzuki817"
+    ]
+  },
+  "tldr": {
+    "ja": "自分で外してしまう人には、途中でやめられないモードがあるスタロックかブンチンが向いてます。毎日の決まった時間に自動で止めたいならBlockin。決めた時間だけマッチを灯して、その間だけアプリを止めるくらいの軽さでいい人は、僕が作ったマッチボックスも見てみてください。",
+    "en": "If you tend to undo your own limits, DetoxLock or Bunchin, which have modes you can't quit early, are the better fit. If you want apps blocked automatically at set times every day, Blockin. If something lighter is enough, where you light a match and apps stay blocked only while it burns, take a look at Matchbox, which I made."
+  },
+  "disclosure": {
+    "ja": "この記事は、マッチボックスを作った僕が書いています。ほかの3本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。",
+    "en": "I made Matchbox, and I wrote this article. The other three apps are by developers I don't know, and I haven't received money or anything else from them. Everything compared here comes from each app's App Store description and rating count as of November 15, 2026."
+  },
+  "own_app": "6786488863",
+  "app_category": "ProductivityApplication",
+  "apps": [
+    {
+      "id": "6786488863",
+      "name": {
+        "ja": "マッチボックス 集中タイマー＆習慣",
+        "en": "Matchbox: Focus Timer & Habits"
+      },
+      "short": {
+        "ja": "マッチボックス",
+        "en": "Matchbox"
+      },
+      "developer": "Ryo Tsudukihashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c6/27/f5/c627f52e-a27b-0b3f-2009-91d6e943bc8d/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6786488863",
+      "android_url": "https://play.google.com/store/apps/details?id=com.tsuzukit.matchbox",
+      "rating_count": 0
+    },
+    {
+      "id": "6504188981",
+      "name": {
+        "ja": "スマホ制限・スタロック｜アプリ制限・アプリロック・勉強集中",
+        "en": "DetoxLock: Extreme App Blocker"
+      },
+      "short": {
+        "ja": "スタロック",
+        "en": "DetoxLock"
+      },
+      "developer": "OnOff Labs",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c4/da/49/c4da498c-98be-3e38-fab1-acbdf1780469/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6504188981",
+      "android_url": null,
+      "rating_count": 8949
+    },
+    {
+      "id": "1659162950",
+      "name": {
+        "ja": "スマホ依存対策Blockinスクリーンタイム制限・勉強・集中",
+        "en": "Blockin -Screen Time for Focus"
+      },
+      "short": {
+        "ja": "Blockin",
+        "en": "Blockin"
+      },
+      "developer": "Noova Inc.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d8/c5/48/d8c54871-e947-0cad-cb80-564778999f53/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id1659162950",
+      "android_url": null,
+      "rating_count": 19832
+    },
+    {
+      "id": "6795582519",
+      "name": {
+        "ja": "ブンチン：強制スマホ封印・アプリ制限",
+        "en": "Bunchin: Paperweight Phone Lock"
+      },
+      "short": {
+        "ja": "ブンチン",
+        "en": "Bunchin"
+      },
+      "developer": "MGORU",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2d/b3/a0/2db3a007-0dfb-e410-3881-1b0cf5e72af3/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6795582519",
+      "android_url": null,
+      "rating_count": 19
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ja": "4本をざっくり比べる",
+        "en": "The four apps at a glance"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "4本ともiPhoneのスクリーンタイムの仕組みで、選んだアプリを開けなくします。違いが出るのは、途中で自分で外せるかどうかです。",
+            "en": "All four use iPhone's Screen Time system to stop you from opening the apps you pick. The real difference is whether you can undo it yourself partway through."
+          }
+        },
+        {
+          "type": "table",
+          "head": [
+            {
+              "ja": "アプリ",
+              "en": "App"
+            },
+            {
+              "ja": "評価の件数",
+              "en": "Ratings"
+            },
+            {
+              "ja": "途中でやめられない設定",
+              "en": "Can't-quit mode"
+            },
+            {
+              "ja": "時間を決めて今すぐ",
+              "en": "Lock now for a set time"
+            },
+            {
+              "ja": "毎日決まった時間",
+              "en": "Daily schedule"
+            },
+            {
+              "ja": "無料の範囲",
+              "en": "Free version"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ja": "マッチボックス（僕のアプリ）",
+                "en": "Matchbox (my app)"
+              },
+              {
+                "ja": "0件",
+                "en": "0"
+              },
+              {
+                "ja": "なし。息で炎を吹き消すと終わる",
+                "en": "No. Blow out the flame to stop"
+              },
+              {
+                "ja": "5分、10分、25分か好きな分数",
+                "en": "5, 10, 25 minutes, or any length"
+              },
+              {
+                "ja": "なし",
+                "en": "No"
+              },
+              {
+                "ja": "タイマーとアプリの封印。習慣は2つまで",
+                "en": "Timer and app blocking. Up to 2 habits"
+              }
+            ],
+            [
+              {
+                "ja": "スタロック",
+                "en": "DetoxLock"
+              },
+              {
+                "ja": "8,949件",
+                "en": "8,949"
+              },
+              {
+                "ja": "自分では解除できないと説明文にある",
+                "en": "Described as impossible to unlock yourself"
+              },
+              {
+                "ja": "あり",
+                "en": "Yes"
+              },
+              {
+                "ja": "あり",
+                "en": "Yes"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              }
+            ],
+            [
+              {
+                "ja": "Blockin",
+                "en": "Blockin"
+              },
+              {
+                "ja": "19,832件",
+                "en": "19,832"
+              },
+              {
+                "ja": "有料のBlockin MAXで",
+                "en": "With paid Blockin MAX"
+              },
+              {
+                "ja": "あり",
+                "en": "Yes"
+              },
+              {
+                "ja": "時間帯と1日の利用時間で",
+                "en": "By time of day and daily usage"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              }
+            ],
+            [
+              {
+                "ja": "ブンチン",
+                "en": "Bunchin"
+              },
+              {
+                "ja": "19件",
+                "en": "19"
+              },
+              {
+                "ja": "強制文鎮モード。累計5回まで無料",
+                "en": "Paperweight mode, free for 5 uses"
+              },
+              {
+                "ja": "タイマーとストップウォッチ",
+                "en": "Timer or stopwatch"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "通常モードと記録",
+                "en": "Normal mode and history"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "1本ずつ見ていく",
+        "en": "Each app, one by one"
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "id": "6786488863"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "画面のマッチを擦って火をつけると、燃え尽きるまでの間だけ、選んだアプリを開けなくします。時間は5分、10分、25分か、好きな分数を選べます。",
+            "en": "Strike the match on screen to light it, and the apps you picked stay blocked only until it burns out. You can choose 5, 10, or 25 minutes, or any length you like."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "やめたくなったら、マイクに強く息を吹きかけると炎が消えて、アプリも戻ります。自分で消せるので、強制力はこの4本の中でいちばん弱いです。そのぶん、気軽に灯せる作りにしてあります。",
+            "en": "If you want to stop, blow hard into the mic and the flame goes out, and your apps come back. Since you can put it out yourself, it's the least strict of the four. In exchange, it's made to be something you don't mind lighting."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "アプリの封印は無料で使えます。習慣の記録は無料だと2つまでで、マッチ箱のデザインや背景を増やすのはプレミアムです。",
+            "en": "App blocking is free. Habit tracking covers 2 habits for free, and more matchbox designs and backgrounds are Premium."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6504188981"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "決めた時間だけスマホをロックして、自分では解除できない作りです。スクリーンタイムを自分で外してしまう人向けと、説明文にもはっきり書いてあります。",
+            "en": "It locks your phone for the time you set, and you can't unlock it yourself. The description says plainly that it's made for people who end up turning off their own Screen Time limits."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "今すぐのロックと、毎日の予約ロックの両方があります。辞書や音楽など、ロック中も使いたいアプリは残せます。サブスクリプションがありますが、無料でどこまで使えるかは説明文に書かれていませんでした。",
+            "en": "It has both instant locks and daily scheduled locks. You can leave apps like a dictionary or music available during a lock. There's a subscription, but the description doesn't say how much you can use for free."
+          }
+        },
+        {
+          "type": "app",
+          "id": "1659162950"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "評価が19,832件あって、この中ではいちばん使われています。21時から24時のような時間帯や、1日2時間のような利用時間で、毎日自動で止められます。今すぐのブロックは、ポモドーロのようにも使えます。",
+            "en": "With 19,832 ratings, it's the most used of the four. It can block apps automatically every day by time of day, like 9 p.m. to midnight, or by daily usage, like 2 hours. The instant block also works like a Pomodoro timer."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "解除できなくするロックアウトモードと、解除するたびに待ち時間が延びるタイムアウトモードは、有料のBlockin MAXです。",
+            "en": "Lockout mode, which makes unlocking impossible, and Timeout mode, where the wait gets longer each time you try, are part of the paid Blockin MAX."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6795582519"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "強制文鎮モードには解除ボタンがなく、アプリを終了しても再起動しても封印が続きます。iPhoneの設定のスクリーンタイムからは外せる、と正直に書いてあるのがいいですね。",
+            "en": "Its Paperweight mode has no unlock button, and the block stays on even if you close the app or restart your phone. I like that it honestly notes you can still remove it from Screen Time in the iPhone Settings."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "いつでも戻れる通常モードと記録は無料で、強制文鎮モードは累計5回まで無料、その先は買い切りです。広告は出ません。",
+            "en": "Normal mode, which you can end anytime, and your history are free. Paperweight mode is free for 5 uses, then a one-time purchase. There are no ads."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "アプリを入れたくないなら",
+        "en": "If you'd rather not install an app"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "iPhoneの設定にあるスクリーンタイムだけでも、アプリごとの時間制限と休止時間をかけられます。ただ、自分で設定したものは自分で外せます。",
+            "en": "Screen Time in the iPhone Settings can already set time limits per app and downtime on its own. The catch is that anything you set up, you can also turn off."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "物で封じたいなら、時間が来るまで開かないスマホ用の封印ボックスも売られています。手の届かない別の部屋に置くだけでも、同じことはできます。",
+            "en": "If you'd rather lock it away physically, there are phone lock boxes that won't open until a timer runs out. Just leaving the phone in another room does the same thing."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "どれを選ぶか",
+        "en": "Which one to pick"
+      },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "ja": "スクリーンタイムを自分で外してしまう人は、スタロック",
+              "en": "If you keep turning off your own Screen Time limits, DetoxLock"
+            },
+            {
+              "ja": "毎晩や毎日の利用時間で、自動で止めたいなら、Blockin",
+              "en": "If you want apps blocked automatically every night or after a daily limit, Blockin"
+            },
+            {
+              "ja": "広告なしで、ここぞというときだけ強制で封じたいなら、ブンチン",
+              "en": "If you want no ads and a hard lock only when it really counts, Bunchin"
+            },
+            {
+              "ja": "マッチ1本ぶんだけ封じて、習慣も一緒に数えたいなら、マッチボックス",
+              "en": "If you want a block that lasts one match, plus a simple habit count, Matchbox"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "ja": "無料で使えますか？",
+        "en": "Are they free?"
+      },
+      "a": {
+        "ja": "4本とも無料で入れられます。マッチボックスはアプリの封印まで無料で、ブンチンは通常モードが無料です。スタロックとBlockinの無料の範囲は、説明文には書かれていませんでした。",
+        "en": "All four are free to download. Matchbox's app blocking is free, and Bunchin's normal mode is free. The descriptions for DetoxLock and Blockin don't say what the free version includes."
+      }
+    },
+    {
+      "q": {
+        "ja": "封印中に電話やLINEは使えますか？",
+        "en": "Can I still take calls or use messaging apps during a block?"
+      },
+      "a": {
+        "ja": "どのアプリも、封じるアプリを自分で選びます。スタロックは使いたいアプリを残せると書いてあって、ブンチンは電話やメッセージなど開いたままのアプリもあると書いてあります。",
+        "en": "In every app, you choose which apps to block. DetoxLock says you can keep certain apps available, and Bunchin says some apps, like phone and messages, stay open."
+      }
+    },
+    {
+      "q": {
+        "ja": "Androidでも使えますか？",
+        "en": "Do they work on Android?"
+      },
+      "a": {
+        "ja": "マッチボックスはGoogle PlayにもAndroid版があります。ほかの3本は、この記事ではAndroid版を確かめていません。",
+        "en": "Matchbox also has an Android version on Google Play. I didn't check Android versions of the other three for this article."
+      }
+    }
+  ],
+  "closing": {
+    "ja": "マッチボックスはまだ評価が0件なので、1本燃やしたあとにでも感想をもらえたらうれしいです🔥",
+    "en": "Matchbox doesn't have any ratings yet, so after you've burned your first match, I'd love to hear what you think 🔥"
+  },
+  "notes": {
+    "ja": "各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。マッチボックスの機能はアプリのコードで確かめました。",
+    "en": "Features and rating counts were checked against each app's App Store description on November 15, 2026, and may change with updates. Matchbox's features were checked against the app's own code."
+  },
+  "illustration": {
+    "scene": "夜の勉強机。キャラがノートを広げたまま、机の端に置いた大きなマッチ箱の中へ、スマホ（文字なし）をそっとしまっている。机の上では1本のマッチが小さく燃えていて、その明かりでノートを照らしている。",
+    "alt": {
+      "ja": "燃えるマッチの明かりのそばで、スマホをマッチ箱にしまうキャラクター",
+      "en": "The character tucking a phone into a big matchbox at a study desk, lit by a single burning match"
+    }
+  }
+}

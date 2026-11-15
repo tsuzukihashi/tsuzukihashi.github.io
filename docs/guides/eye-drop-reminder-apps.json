@@ -1,0 +1,455 @@
+{
+  "slug": "eye-drop-reminder-apps",
+  "date_published": "2026-11-15",
+  "date_updated": "2026-11-15",
+  "search_phrase": {
+    "ja": "目薬 差し忘れ 防止 アプリ",
+    "en": "app to stop forgetting eye drops"
+  },
+  "evidence": "2026-11-15 に Google の検索候補で「目薬 アプリ」を引くと8件出て、差し忘れ 防止、管理、記録、タイマー、カウントが付いていた。「点眼 アプリ」は4件（記録、管理、緑内障）、「目薬 リマインダー」も出た。同じ日の App Store で「目薬 アプリ」と「点眼 管理」を引くと、目薬専用のアプリは評価197件の点眼アラームのほかは、ほとんどが一桁だった。",
+  "title": {
+    "ja": "目薬の差し忘れを防ぐアプリ4選。1日に何度もさす人向け",
+    "en": "4 Apps That Stop You Forgetting Your Eye Drops"
+  },
+  "description": {
+    "ja": "眼科で出た目薬を1日に何度もさすときに、差し忘れを防ぐアプリを4本比べました。通知の決め方、通知からの記録、目薬の使用期限の違いをまとめています。EyeDropの作者が書いています。",
+    "en": "I compared four iPhone apps that help you remember eye drops you use several times a day: how reminders are scheduled, logging from the notification, and bottle expiry. Written by the maker of EyeDrop."
+  },
+  "excerpt": {
+    "ja": "通知の決め方と使用期限の管理で、目薬のアプリを4本比べました。EyeDropを作った僕が、自分のアプリも入れて書いています。",
+    "en": "Four eye drop apps compared on scheduling and bottle expiry. I made EyeDrop, and it's one of the four."
+  },
+  "category": {
+    "ja": "アプリの選び方",
+    "en": "App guides"
+  },
+  "reading_minutes": 4,
+  "author": {
+    "name": {
+      "ja": "續橋 涼",
+      "en": "Ryo Tsuzukihashi"
+    },
+    "handle": "tsuzuki817",
+    "bio": {
+      "ja": "2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。EyeDropの作者です。",
+      "en": "I've been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made EyeDrop."
+    },
+    "url": "https://tsuzukit.com/about/",
+    "same_as": [
+      "https://x.com/tsuzuki817"
+    ]
+  },
+  "tldr": {
+    "ja": "眼科で言われた時刻を入れて、通知で知らせてくれるアプリを入れるのが手っ取り早いです。眼圧も記録して受診のときに見せたいなら、かんたん点眼手帳かEyeday。開封した目薬の使用期限も一緒に知らせてほしいなら、僕が作ったEyeDropも見てみてください。",
+    "en": "The quickest fix is an app where you enter the times your eye doctor gave you and get a notification for each. If you also want to log eye pressure and show it at appointments, look at Dropbook or Eyeday. If you'd like a heads-up when an opened bottle is due to be replaced too, take a look at EyeDrop, which I made."
+  },
+  "disclosure": {
+    "ja": "この記事は、EyeDropを作った僕が書いています。ほかの3本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。",
+    "en": "I made EyeDrop, and I wrote this article. The other three apps are by developers I don't know, and I haven't received money or anything else from them. Everything compared here comes from each app's App Store description and rating count as of November 15, 2026."
+  },
+  "own_app": "6757758987",
+  "app_category": "HealthApplication",
+  "apps": [
+    {
+      "id": "6757758987",
+      "name": {
+        "ja": "目薬リマインダー ~ EyeDrop 点眼管理 ~",
+        "en": "Eye Drop Reminder - EyeDrop"
+      },
+      "short": {
+        "ja": "EyeDrop",
+        "en": "EyeDrop"
+      },
+      "developer": "Ryo Tsudukihashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/06/83/33/068333f8-63b6-ac89-3dd1-dbd22fedcb6f/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6757758987",
+      "android_url": null,
+      "rating_count": 1
+    },
+    {
+      "id": "1330520663",
+      "name": {
+        "ja": "点眼アラーム",
+        "en": "Eye-Drops Reminder"
+      },
+      "short": {
+        "ja": "点眼アラーム",
+        "en": "Eye-Drops Reminder"
+      },
+      "developer": "MONOPOLEAPPS K.K.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/fe/41/c9/fe41c976-d928-beeb-02bf-10c26c4103f0/AppIcon-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-6.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id1330520663",
+      "android_url": null,
+      "rating_count": 197
+    },
+    {
+      "id": "6794020500",
+      "name": {
+        "ja": "かんたん点眼手帳 目薬アラーム・緑内障の眼圧記録と通院管理",
+        "en": "Dropbook: Eye Drop Reminder"
+      },
+      "short": {
+        "ja": "かんたん点眼手帳",
+        "en": "Dropbook"
+      },
+      "developer": "RAINBOW TREE LLC",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5c/9a/5a/5c9a5ab1-65e8-7810-84d2-114ec5ece499/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6794020500",
+      "android_url": null,
+      "rating_count": 8
+    },
+    {
+      "id": "6759497954",
+      "name": {
+        "ja": "Eyeday - 目薬アラーム & 点眼記録",
+        "en": "Eyeday: Eye Drop Reminder"
+      },
+      "short": {
+        "ja": "Eyeday",
+        "en": "Eyeday"
+      },
+      "developer": "Posiki",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f5/98/25/f59825f0-bc42-e47d-5939-5bf6bed53660/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6759497954",
+      "android_url": null,
+      "rating_count": 6
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ja": "4本をざっくり比べる",
+        "en": "The four apps at a glance"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "違いが出るのは、1日に何度もさす通知をどう決めるかと、目薬そのものの使用期限まで見てくれるかです。",
+            "en": "Where they differ is how they schedule several doses a day, and whether they also keep track of when a bottle should be replaced."
+          }
+        },
+        {
+          "type": "table",
+          "head": [
+            {
+              "ja": "アプリ",
+              "en": "App"
+            },
+            {
+              "ja": "評価の件数",
+              "en": "Ratings"
+            },
+            {
+              "ja": "1日に何度もさす通知",
+              "en": "Several doses a day"
+            },
+            {
+              "ja": "通知からの記録",
+              "en": "Log from the notification"
+            },
+            {
+              "ja": "目薬の使用期限",
+              "en": "Bottle expiry"
+            },
+            {
+              "ja": "無料で登録できる数",
+              "en": "Free plan limit"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ja": "EyeDrop（僕のアプリ）",
+                "en": "EyeDrop (my app)"
+              },
+              {
+                "ja": "1件",
+                "en": "1"
+              },
+              {
+                "ja": "最初の時刻と間隔と回数から自動で並べる",
+                "en": "Lays them out from a start time, interval, and count"
+              },
+              {
+                "ja": "点眼完了のボタン、10分後にもう一度",
+                "en": "Done button, or remind again in 10 minutes"
+              },
+              {
+                "ja": "開封日から数えて7日前、3日前、当日",
+                "en": "7 days, 3 days before, and on the day, counted from opening"
+              },
+              {
+                "ja": "3本",
+                "en": "3"
+              }
+            ],
+            [
+              {
+                "ja": "点眼アラーム",
+                "en": "Eye-Drops Reminder"
+              },
+              {
+                "ja": "197件",
+                "en": "197"
+              },
+              {
+                "ja": "目薬の時間にアラーム。細かい決め方は説明文に記載なし",
+                "en": "An alarm at drop time. Details not mentioned"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              }
+            ],
+            [
+              {
+                "ja": "かんたん点眼手帳",
+                "en": "Dropbook"
+              },
+              {
+                "ja": "8件",
+                "en": "8"
+              },
+              {
+                "ja": "朝、昼、夕方、寝る前。2本目は自動で5分後",
+                "en": "Morning, noon, evening, bedtime. A second bottle 5 minutes later"
+              },
+              {
+                "ja": "ボタンひとつで記録",
+                "en": "One-button logging"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "2本",
+                "en": "2"
+              }
+            ],
+            [
+              {
+                "ja": "Eyeday",
+                "en": "Eyeday"
+              },
+              {
+                "ja": "6件",
+                "en": "6"
+              },
+              {
+                "ja": "4時間おき、1時間ごと、朝昼夜。種類の違う目薬の間は5分",
+                "en": "Every 4 hours, hourly, or morning, noon, night, with 5 minutes between different drops"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "1本ずつ見ていく",
+        "en": "Each app, one by one"
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "id": "6757758987"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "目薬ごとに、最初にさす時刻、間隔、1日の回数を入れると、その日の通知を並べてくれます。右目か左目か両目か、何滴さすかも登録できます。",
+            "en": "For each bottle, enter the first time, the interval, and how many times a day, and it lays out the day's reminders. You can also note which eye and how many drops."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "通知の点眼完了を押すと記録になって、すぐさせないときは10分後にもう一度知らせます。手術のあとのように期間が決まっている処方なら、終了日を入れると通知が自動で止まります。",
+            "en": "Tap done on the notification to log it, or have it remind you again in 10 minutes if you can't do it right then. For prescriptions with a set period, like after surgery, enter the end date and the reminders stop on their own."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "開封日を入れておくと、使用期限の7日前、3日前、当日にも知らせます。無料で登録できる目薬は3本までで、通知とウィジェットは無料です。毎週や毎月の繰り返しと詳しい統計はプレミアムです。",
+            "en": "Enter the day you opened a bottle, and it also warns you 7 days and 3 days before it's due to be replaced, and on the day. The free version holds 3 bottles, with notifications and widgets included. Weekly and monthly repeats and detailed stats are Premium."
+          }
+        },
+        {
+          "type": "app",
+          "id": "1330520663"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "評価が197件あって、この中ではいちばん使われています。説明文は短くて、目薬の時間になったらアラームが鳴るシンプルなアプリだと書かれています。",
+            "en": "With 197 ratings, it's the most used of the four. The description is short. It says it's a simple app that sounds an alarm when it's time for your drops."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "記録や使用期限については書かれていませんでした。アラームだけあれば十分な人向けです。",
+            "en": "The description doesn't mention logging or bottle expiry. It suits people who only need the alarm."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6794020500"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "朝、昼、夕方、寝る前に通知が届いて、ボタンひとつで記録できます。同じ時間に2本あるときは、2本目を5分後に知らせてくれます。",
+            "en": "Reminders come morning, noon, evening, and at bedtime, and you log with one button. When two bottles are due at once, it reminds you about the second one 5 minutes later."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "強いのは通院の準備です。眼圧を左右別にグラフにできて、点眼の記録と眼圧を受診用のPDFにまとめられます。無料は目薬2本までで、3本目からとPDFは買い切りのProです。",
+            "en": "Its strength is preparing for appointments. It graphs eye pressure for each eye and puts your drop log and pressure readings into a PDF for your doctor. The free version holds 2 bottles, and a third bottle and the PDF are part of a one-time Pro purchase."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6759497954"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "白内障やレーシック、ICLの手術のあとのように、何種類もの目薬を決まった時間にさすときに向いています。4時間おき、1時間ごと、朝昼夜から選べて、種類の違う目薬の間に5分あけて並べてくれます。",
+            "en": "It's aimed at times when you're juggling several drops on a schedule, like after cataract, LASIK, or ICL surgery. Choose every 4 hours, hourly, or morning, noon, and night, and it spaces different drops 5 minutes apart."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "マナーモードでも届く通知と、ロック画面で次の点眼まで数えるLive Activitiesがあります。眼圧の記録もできます。",
+            "en": "It has alerts that come through even on silent mode, and a Live Activity that counts down to your next drop on the Lock Screen. You can log eye pressure too."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "アプリを入れたくないなら",
+        "en": "If you'd rather not install an app"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "iPhoneの時計アプリでアラームを何本か作っておく方法もあります。1日2回くらいなら、これで足ります。",
+            "en": "You can also set several alarms in the iPhone Clock app. If it's only twice a day, that's enough."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "ただ、さしたかどうかは残りません。回数が多い日や、目薬が何本もある日に、さしたっけと迷わないのが専用のアプリのいいところですね。",
+            "en": "What you lose is any record of whether you actually did it. On days with lots of doses or several bottles, not having to wonder did I already do that one is where the dedicated apps help."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "どれを選ぶか",
+        "en": "Which one to pick"
+      },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "ja": "アラームが鳴れば十分なら、点眼アラーム",
+              "en": "If an alarm is all you need, Eye-Drops Reminder"
+            },
+            {
+              "ja": "眼圧も記録して、受診のときに見せたいなら、かんたん点眼手帳",
+              "en": "If you want to log eye pressure and show it at appointments, Dropbook"
+            },
+            {
+              "ja": "手術のあとで何種類もの目薬を細かい時間でさすなら、Eyeday",
+              "en": "If you're juggling several drops on a tight schedule after surgery, Eyeday"
+            },
+            {
+              "ja": "通知から記録したい、開封した目薬の使用期限も知らせてほしいなら、EyeDrop",
+              "en": "If you want to log from the notification and get a heads-up when an opened bottle is due, EyeDrop"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "ja": "さし忘れたときはどうすればいいですか？",
+        "en": "What should I do if I miss a dose?"
+      },
+      "a": {
+        "ja": "どのアプリも、そこは決めてくれません。目薬によって違うので、処方した眼科の医師か薬剤師に聞いてください。",
+        "en": "None of these apps can tell you that. It depends on the drops, so please ask the eye doctor who prescribed them or your pharmacist."
+      }
+    },
+    {
+      "q": {
+        "ja": "開封した目薬は何日使えますか？",
+        "en": "How long can I use an opened bottle?"
+      },
+      "a": {
+        "ja": "目薬によって違います。EyeDropは種類を選ぶと日数が入りますが、薬局で言われた日数や説明書の日数に直して使ってください。",
+        "en": "It depends on the drops. EyeDrop fills in a number of days when you pick a type, but please change it to what your pharmacy or the package insert says."
+      }
+    },
+    {
+      "q": {
+        "ja": "無料で使えますか？",
+        "en": "Are they free?"
+      },
+      "a": {
+        "ja": "4本とも無料で入れられます。EyeDropは3本まで、かんたん点眼手帳は2本まで無料です。",
+        "en": "All four are free to download. EyeDrop is free for up to 3 bottles, and Dropbook for up to 2."
+      }
+    }
+  ],
+  "closing": {
+    "ja": "EyeDropの評価はまだ1件なので、目薬が何本もある人の使い方を聞かせてもらえたらうれしいです🙏",
+    "en": "EyeDrop only has one rating so far, so I'd love to hear how people juggling several bottles use it 🙏"
+  },
+  "notes": {
+    "ja": "各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。EyeDropの機能はアプリのコードで確かめました。アップデートで変わることがあります。どのアプリも医師の代わりにはなりません。目薬のさし方や回数は、眼科の指示に従ってください。",
+    "en": "Features and rating counts were checked against each app's App Store description on November 15, 2026. EyeDrop's features were checked against its source code. They may change with updates. None of these apps replaces your doctor. Follow your eye doctor's instructions on how and how often to use your drops."
+  },
+  "illustration": {
+    "scene": "昼下がりのリビング。キャラがソファで水色の目薬のボトルを手に持ち、テーブルの上のスマホの画面（文字なし）にチェックの印がつくのを見て、ほっとした顔をしている。テーブルには目薬のボトルがもう1本並んでいる。",
+    "alt": {
+      "ja": "目薬を手に、スマホにチェックの印がつくのを見てほっとするキャラクター",
+      "en": "The character holding eye drops, relieved to see a check mark appear on the phone"
+    }
+  }
+}

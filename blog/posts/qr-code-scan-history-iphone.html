@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/js/lang.js"></script>
+    <!-- このページは scripts/build_guides.py が docs/guides/qr-code-scan-history-iphone.json から作る。直すのは JSON のほう -->
+    <title>iPhoneで読み取ったQRコードの履歴を残すアプリ4選 - Blog | Ryo Tsuzukihashi</title>
+    <meta name="description" content="iPhoneのカメラで読み取ったQRコードは履歴に残りません。履歴を残せるQRコードリーダーを4本比べ、履歴の整理のしかたの違いをまとめました。ikaQRの作者が書いています。">
+    <meta name="title-en" content="4 Apps That Keep a History of the QR Codes You Scan on iPhone - Blog | Ryo Tsuzukihashi">
+    <meta name="description-en" content="The iPhone Camera doesn&#x27;t keep a history of QR codes you scan. I compared four QR readers that do, and how each one helps you sort that history. Written by the maker of ikaQR.">
+    <link rel="canonical" href="https://tsuzukit.com/blog/posts/qr-code-scan-history-iphone.html">
+
+    <!-- OGP -->
+    <meta property="og:title" content="iPhoneで読み取ったQRコードの履歴を残すアプリ4選">
+    <meta property="og:description" content="iPhoneのカメラで読み取ったQRコードは履歴に残りません。履歴を残せるQRコードリーダーを4本比べ、履歴の整理のしかたの違いをまとめました。ikaQRの作者が書いています。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://tsuzukit.com/blog/posts/qr-code-scan-history-iphone.html">
+    <meta property="og:image" content="https://tsuzukit.com/assets/images/posts/qr-code-scan-history-iphone.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://tsuzukit.com/assets/images/posts/qr-code-scan-history-iphone.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-dark-32x32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-dark-16x16.png" media="(prefers-color-scheme: dark)">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERPQ1EGLH');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8240751277462688"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
+    <link rel="stylesheet" href="/assets/css/guide.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "iPhoneで読み取ったQRコードの履歴を残すアプリ4選",
+      "description": "iPhoneのカメラで読み取ったQRコードは履歴に残りません。履歴を残せるQRコードリーダーを4本比べ、履歴の整理のしかたの違いをまとめました。ikaQRの作者が書いています。",
+      "image": "https://tsuzukit.com/assets/images/posts/qr-code-scan-history-iphone.webp",
+      "datePublished": "2026-11-15",
+      "dateModified": "2026-11-15",
+      "inLanguage": "ja",
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "mainEntityOfPage": "https://tsuzukit.com/blog/posts/qr-code-scan-history-iphone.html",
+      "about": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "ikaQR ~QRコードを爆速で読み込もう~",
+          "url": "https://apps.apple.com/jp/app/id6450046891",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "QRコード読み取り・バーコードリーダー アイコニット",
+          "url": "https://apps.apple.com/jp/app/id480090210",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "QRコードリーダー - QRコード読み取り",
+          "url": "https://apps.apple.com/jp/app/id585561686",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "QRコードリーダー : シンプルなQRコードリーダーアプリ",
+          "url": "https://apps.apple.com/jp/app/id1080558159",
+          "operatingSystem": "iOS"
+        }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "ikaQR ~QRコードを爆速で読み込もう~",
+      "operatingSystem": "iOS",
+      "applicationCategory": "UtilitiesApplication",
+      "url": "https://apps.apple.com/jp/app/id6450046891",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "前にカメラで読んだQRコードを、あとから探せますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "カメラには履歴が無いので、QRコードそのものは探せません。開いたページなら、Safariの履歴から見つけられます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "アプリを入れたら、前に読んだぶんも出てきますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "出てきません。履歴に残るのは、そのアプリで読み取ったQRコードだけです。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "無料で使えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "4本とも無料で入れられます。ikaQRとシンプルなQRコードリーダーアプリは、広告が出るかわりに課金はありません。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tsuzukit.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://tsuzukit.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "困りごとから選ぶアプリ",
+          "item": "https://tsuzukit.com/blog/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "iPhoneで読み取ったQRコードの履歴を残すアプリ4選",
+          "item": "https://tsuzukit.com/blog/posts/qr-code-scan-history-iphone.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">TsuzuKit</a>
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/portfolio/" class="nav-link">Portfolio</a>
+                <a href="/blog/" class="nav-link active">Blog</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post -->
+    <article class="blog-post">
+        <header class="post-header">
+            <div class="post-meta">
+                <span class="post-date">2026.11.15</span>
+                <span class="post-category"><span class="i18n-ja">アプリの選び方</span><span class="i18n-en">App guides</span></span>
+                <span class="post-reading-time"><span class="i18n-ja">4分で読める</span><span class="i18n-en">4 min read</span></span>
+            </div>
+            <h1 class="post-title"><span class="i18n-ja">iPhoneで読み取ったQRコードの履歴を残すアプリ4選</span><span class="i18n-en">4 Apps That Keep a History of the QR Codes You Scan on iPhone</span></h1>
+        </header>
+        <figure class="post-illustration guide-illustration"><img src="/assets/images/posts/qr-code-scan-history-iphone.webp" width="1200" height="800" alt="並んだQRコード風のカードの中から、目当ての1枚を見つけるキャラクター" data-en-alt="The character tracing a row of QR-style cards and finding the one they were looking for" fetchpriority="high"></figure>
+
+        <div class="post-content guide i18n-ja">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">先に答え</p>
+                <p>iPhoneのカメラで読んだQRコードは履歴に残らないので、これから読むぶんは履歴を残すアプリで読みます。履歴をメモやCSVで整理したいならアイコニット、とにかく簡単なのがいいならQRコードリーダー : シンプルなQRコードリーダーアプリです。読んだものに名前をつけて並べたい人は、僕が作ったikaQRも見てみてください。</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">書いた人 <a href="https://tsuzukit.com/about/">續橋 涼</a>（@tsuzuki817）</p>
+                    <p class="guide-byline-bio">2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。ikaQRの作者です。</p>
+                    <p class="guide-byline-date">公開 <time datetime="2026-11-15">2026.11.15</time> · 更新 <time datetime="2026-11-15">2026.11.15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">この記事は、ikaQRを作った僕が書いています。ほかの3本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。</p>
+            <h2>まず、iPhoneのカメラには履歴が無い</h2>
+            <p>iPhoneのカメラでQRコードを読むと、出てきたリンクを開くだけで、読み取ったこと自体はどこにも残りません。履歴を探しても見つからないのはそのためです。</p>
+            <p>開いたページなら、Safariの履歴に残っています。Wi-Fiやテキストのように、ページを開かないQRコードは後から追えません。</p>
+            <p>これから読むQRコードを残したいなら、履歴を残すQRコードリーダーで読むのがいちばん早いです。</p>
+            <h2>4本をざっくり比べる</h2>
+            <p>どれも履歴は自動で残ります。違いが出るのは、たまった履歴をどう整理できるかです。</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">アプリ</th><th scope="col">評価の件数</th><th scope="col">履歴の整理</th><th scope="col">Wi-FiのQRコード</th><th scope="col">QRコードを作る</th></tr></thead><tbody><tr><th scope="row">ikaQR（僕のアプリ）</th><td>1件</td><td>名前、お気に入り、種類で絞る、回数の多い順</td><td>読むとそのまま接続</td><td>あり</td></tr><tr><th scope="row">アイコニット</th><td>471,311件</td><td>お気に入り、メモ、CSVで書き出し</td><td>説明文に記載なし</td><td>あり</td></tr><tr><th scope="row">QRコードリーダー - QRコード読み取り</th><td>299,243件</td><td>自動で保存して見返せる</td><td>読むとそのまま接続</td><td>説明文に記載なし</td></tr><tr><th scope="row">シンプルなQRコードリーダーアプリ</th><td>230,162件</td><td>自動で保存して、リストごと共有</td><td>説明文に記載なし</td><td>なし</td></tr></tbody></table></div>
+            <h2>1本ずつ見ていく</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/27/89/fe/2789fe27-5f68-ee38-3e39-a257b31049c2/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">僕が作ったアプリ</span>
+                    <h3 class="guide-app-name">ikaQR ~QRコードを爆速で読み込もう~</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · App Storeの評価 1件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6450046891" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>読み取ったQRコードを全部履歴に残して、URL、Wi-Fi、自分で作ったもの、お気に入りで絞り込めます。URLの代わりに名前をつけられるので、あとで見たときに何のQRコードだったか分かります。</p>
+            <p>並べ方は、新しい順や古い順のほかに、読み取った回数や使った回数の多い順も選べます。よく使うQRコードが上に来るようにできます。</p>
+            <p>URLのQRコードは読むとすぐに開いて、Wi-FiのQRコードは読むとそのまま接続します。ロック画面のウィジェットから読み取りの画面を開けます。全部無料で、広告が出ます。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/de/37/e0/de37e0ac-eb87-09c3-7185-ce50903984e2/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">QRコード読み取り・バーコードリーダー アイコニット</h3>
+                    <p class="guide-app-meta">MEDIASEEK Inc. · App Storeの評価 471,311件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id480090210" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>評価が471,311件あって、この中でいちばん使われています。履歴はお気に入りに入れたり、メモを書いたり、CSVで書き出したりできます。</p>
+            <p>バーコードで商品を調べたり、画像やクリップボードから読み取ったりと、機能がとても多いです。読み取りでポイントがたまる仕組みもあります。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/98/8b/ca/988bca64-e2df-d8eb-b5c6-dece1c05c7cc/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">QRコードリーダー - QRコード読み取り</h3>
+                    <p class="guide-app-meta">Takashi Wada · App Storeの評価 299,243件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id585561686" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>起動するとすぐにカメラが立ち上がる、シンプルなQRコードリーダーです。読み取った結果は自動で履歴に保存されて、いつでも見返せます。</p>
+            <p>Wi-FiのQRコードは読むだけで接続できて、パスキーのQRコードにも対応しています。リンクをSafariで開くか、アプリの中のブラウザで開くかも選べます。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/db/68/49/db68496e-0652-b42e-fb87-00d7723992cd/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">QRコードリーダー : シンプルなQRコードリーダーアプリ</h3>
+                    <p class="guide-app-meta">Komorebi Inc. · App Storeの評価 230,162件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id1080558159" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>履歴は自動で保存されて、リストにまとめて共有できます。たくさんのQRコードを続けて読んで、あとでまとめて送るような使い方ができます。</p>
+            <p>説明文によると、履歴は端末の中だけに保存されます。全部の機能が無料で、広告は出ますが課金はありません。QRコードを作る機能はありません。</p>
+            <h2>どれを選ぶか</h2>
+            <ul class="guide-list"><li>履歴にメモを書きたい、CSVで書き出したいなら、アイコニット</li><li>読んだものをまとめて人に送りたいなら、シンプルなQRコードリーダーアプリ</li><li>Wi-Fiやパスキーもこれ1本で読みたいなら、QRコードリーダー - QRコード読み取り</li><li>読んだQRコードに名前をつけて、よく使う順に並べたいなら、ikaQR</li></ul>
+            <h2>よくある質問</h2>
+            <dl class="guide-faq">
+                <dt>前にカメラで読んだQRコードを、あとから探せますか？</dt><dd>カメラには履歴が無いので、QRコードそのものは探せません。開いたページなら、Safariの履歴から見つけられます。</dd>
+                <dt>アプリを入れたら、前に読んだぶんも出てきますか？</dt><dd>出てきません。履歴に残るのは、そのアプリで読み取ったQRコードだけです。</dd>
+                <dt>無料で使えますか？</dt><dd>4本とも無料で入れられます。ikaQRとシンプルなQRコードリーダーアプリは、広告が出るかわりに課金はありません。</dd>
+            </dl>
+            <p>ikaQRの評価はまだ1件なので、使ってみたら感想を聞かせてもらえるとうれしいです🦑</p>
+            <div class="guide-notes">各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。</div>
+        </div>
+
+        <div class="post-content guide i18n-en">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">Short answer</p>
+                <p>QR codes you scan with the iPhone Camera don&#x27;t stay in any history, so from now on, scan them with an app that keeps one. ICONIT lets you organize your history with notes and CSV export, and QR Code Reader: Quick Scan is the easiest of the bunch. If you want to give each scan a name and keep them tidy, take a look at ikaQR, which I made.</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">Written by <a href="https://tsuzukit.com/about/">Ryo Tsuzukihashi</a> (@tsuzuki817)</p>
+                    <p class="guide-byline-bio">I&#x27;ve been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made ikaQR.</p>
+                    <p class="guide-byline-date">Published <time datetime="2026-11-15">2026-11-15</time> · Updated <time datetime="2026-11-15">2026-11-15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">I made ikaQR, and I wrote this article. The other three apps are by developers I don&#x27;t know, and I haven&#x27;t received money or anything else from them. Everything compared here comes from each app&#x27;s App Store description and rating count as of November 15, 2026.</p>
+            <h2>First, the iPhone Camera has no history</h2>
+            <p>When you scan a QR code with the iPhone Camera, it just offers the link to open. The scan itself isn&#x27;t saved anywhere, which is why you can&#x27;t find a history.</p>
+            <p>If you opened a web page, it&#x27;s in your Safari history. QR codes that don&#x27;t open a page, like Wi-Fi details or plain text, can&#x27;t be traced afterward.</p>
+            <p>If you want to keep the codes you scan from now on, the quickest fix is to scan them with a QR reader that keeps a history.</p>
+            <h2>The four apps at a glance</h2>
+            <p>All four save your history automatically. Where they differ is how you can organize it once it piles up.</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">App</th><th scope="col">Ratings</th><th scope="col">Organizing history</th><th scope="col">Wi-Fi QR codes</th><th scope="col">Make QR codes</th></tr></thead><tbody><tr><th scope="row">ikaQR (my app)</th><td>1</td><td>Names, favorites, filter by type, sort by most used</td><td>Connects when scanned</td><td>Yes</td></tr><tr><th scope="row">ICONIT</th><td>471,311</td><td>Favorites, notes, CSV export</td><td>Not mentioned</td><td>Yes</td></tr><tr><th scope="row">QR Code Scanner - Fast &amp; Easy</th><td>299,243</td><td>Saved automatically to look back on</td><td>Connects when scanned</td><td>Not mentioned</td></tr><tr><th scope="row">QR Code Reader: Quick Scan</th><td>230,162</td><td>Saved automatically, share the whole list</td><td>Not mentioned</td><td>No</td></tr></tbody></table></div>
+            <h2>Each app, one by one</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/27/89/fe/2789fe27-5f68-ee38-3e39-a257b31049c2/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">I made this</span>
+                    <h3 class="guide-app-name">ikaQR - Lightning-Fast QR Scanner</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · 1 App Store rating</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6450046891" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>It saves every code you scan and lets you filter by URLs, Wi-Fi, codes you made, and favorites. You can give an entry a name instead of the raw URL, so you can tell later what each code was for.</p>
+            <p>Besides newest or oldest first, you can sort by how many times you&#x27;ve scanned or used each code, so the ones you use most stay at the top.</p>
+            <p>URL codes open the moment you scan them, and Wi-Fi codes connect you right away. A Lock Screen widget takes you straight to the scanner. Everything is free, and the app shows ads.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/de/37/e0/de37e0ac-eb87-09c3-7185-ce50903984e2/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">ICONIT QRcode Reader</h3>
+                    <p class="guide-app-meta">MEDIASEEK Inc. · 471,311 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id480090210" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>With 471,311 ratings, it&#x27;s the most used of the four. You can favorite history entries, add notes, and export them as CSV.</p>
+            <p>It does a lot more, too, like looking up products from barcodes and reading codes from images or the clipboard. It also has a system where scanning earns you points.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/98/8b/ca/988bca64-e2df-d8eb-b5c6-dece1c05c7cc/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">QR Code Scanner - Fast &amp; Easy</h3>
+                    <p class="guide-app-meta">Takashi Wada · 299,243 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id585561686" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>A simple QR reader where the camera starts the moment you open it. Your results are saved to history automatically so you can look back anytime.</p>
+            <p>Wi-Fi codes connect you just by scanning, and it supports passkey QR codes too. You can choose whether links open in Safari or in the app&#x27;s built-in browser.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/db/68/49/db68496e-0652-b42e-fb87-00d7723992cd/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">QR Code Reader: Quick Scan</h3>
+                    <p class="guide-app-meta">Komorebi Inc. · 230,162 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id1080558159" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>History is saved automatically and can be shared as a list, so you can scan a bunch of codes in a row and send them all at once later.</p>
+            <p>According to the description, the history stays on your device only. Every feature is free, with ads and no purchases. It can&#x27;t create QR codes.</p>
+            <h2>Which one to pick</h2>
+            <ul class="guide-list"><li>If you want notes on your history or CSV export, ICONIT</li><li>If you want to send a batch of scans to someone, QR Code Reader: Quick Scan</li><li>If you want one reader for Wi-Fi and passkeys too, QR Code Scanner - Fast &amp; Easy</li><li>If you want to name your scans and sort them by how often you use them, ikaQR</li></ul>
+            <h2>FAQ</h2>
+            <dl class="guide-faq">
+                <dt>Can I find a QR code I scanned with the Camera before?</dt><dd>The Camera has no history, so the code itself can&#x27;t be found. If you opened a page, you can find it in your Safari history.</dd>
+                <dt>If I install one of these apps, will my older scans show up?</dt><dd>No. The history only includes codes you scan with that app.</dd>
+                <dt>Are they free?</dt><dd>All four are free to download. ikaQR and QR Code Reader: Quick Scan show ads, and have nothing to buy.</dd>
+            </dl>
+            <p>ikaQR only has one rating so far, so I&#x27;d be happy to hear what you think if you try it 🦑</p>
+            <div class="guide-notes">Features and rating counts were checked against each app&#x27;s App Store description on November 15, 2026, and may change with updates.</div>
+        </div>
+
+        <nav class="post-navigation">
+            <img class="tk-char tk-char--post" src="/assets/images/character-hang.png" alt="" width="381" height="208">
+            <a href="/blog/guides/" class="nav-link-wrapper"><span>&larr; <span class="i18n-ja">困りごとから選ぶアプリの一覧へ</span><span class="i18n-en">All guides: apps for everyday problems</span></span></a>
+        </nav>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
+                    <p class="footer-description"><span class="i18n-ja">誰も作らないものを、まじめに作る</span><span class="i18n-en">I make things nobody else would, and I make them seriously</span></p>
+                </div>
+                <div class="footer-nav">
+                    <a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
+                    <a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
+                    <a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
+                    <a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ryo Tsuzukihashi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

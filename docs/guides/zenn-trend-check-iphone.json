@@ -1,0 +1,375 @@
+{
+  "slug": "zenn-trend-check-iphone",
+  "date_published": "2026-11-15",
+  "date_updated": "2026-11-15",
+  "search_phrase": {
+    "ja": "zenn トレンド",
+    "en": "Zenn trending articles"
+  },
+  "evidence": "2026-11-15 に Google の検索候補で「zenn トレンド」を引くと5件出て、「zenn トレンド rss」が入っていた。「zenn アプリ」の候補11件は「zen」「禅」のアプリが多く、Zennの記事を読むアプリを探す形は出なかった。同じ日に App Store で「Zenn」を検索すると、Zennを扱うアプリはZennWidgetとWidgetZennの2本だけで、どちらも評価は5件未満だった。Zennのトレンドには公式のRSS（zenn.dev/feed）があることを同じ日に確かめた。",
+  "title": {
+    "ja": "Zennのトレンドを毎日チェックする方法とアプリ3選",
+    "en": "How to Check Zenn Trending Articles Every Day, Plus 3 Apps"
+  },
+  "description": {
+    "ja": "Zennのトレンドを毎日追う方法を、ホーム画面のウィジェットとRSSリーダーで比べました。アプリを入れずに見る方法も書いています。WidgetZennの作者が書いています。",
+    "en": "I compared ways to keep up with Zenn's trending articles every day, using Home Screen widgets and an RSS reader, plus how to do it without an app. Written by the maker of WidgetZenn."
+  },
+  "excerpt": {
+    "ja": "ホーム画面に置くか、RSSでほかのサイトとまとめて読むか。Zennのトレンドの追い方を比べました。WidgetZennを作った僕が書いています。",
+    "en": "Put it on your Home Screen, or read it with your other sites in an RSS reader. A comparison of ways to follow Zenn trends. I made WidgetZenn."
+  },
+  "category": {
+    "ja": "アプリの選び方",
+    "en": "App guides"
+  },
+  "reading_minutes": 4,
+  "author": {
+    "name": {
+      "ja": "續橋 涼",
+      "en": "Ryo Tsuzukihashi"
+    },
+    "handle": "tsuzuki817",
+    "bio": {
+      "ja": "2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。WidgetZennの作者です。",
+      "en": "I've been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made WidgetZenn."
+    },
+    "url": "https://tsuzukit.com/about/",
+    "same_as": [
+      "https://x.com/tsuzuki817"
+    ]
+  },
+  "tldr": {
+    "ja": "ZennのトレンドにはRSSがあるので、ほかの技術ブログとまとめて読みたいなら、評価9,023件のFeedlyのようなRSSリーダーに登録するのが早いです。アプリを開かずにホーム画面で見出しだけ眺めたいなら、ウィジェットのアプリです。僕が作ったWidgetZennは、TechとIdeasのトレンドを選んでウィジェットに出せます。",
+    "en": "Zenn's trending list has an RSS feed, so if you want it alongside other tech blogs, the fastest route is adding it to an RSS reader like Feedly, which has 9,023 ratings. If you just want to glance at headlines on your Home Screen without opening an app, use a widget app. WidgetZenn, which I made, lets you choose the Tech or Ideas trend for each widget."
+  },
+  "disclosure": {
+    "ja": "この記事は、WidgetZennを作った僕が書いています。ほかの2本は知らない開発者さんのアプリで、お金も何ももらっていません。WidgetZennもZenn公式のアプリではありません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。",
+    "en": "I made WidgetZenn, and I wrote this article. The other two apps are by developers I don't know, and I haven't received money or anything else from them. WidgetZenn is not an official Zenn app either. Everything compared here comes from each app's App Store description and rating count as of November 15, 2026."
+  },
+  "own_app": "1597103122",
+  "app_category": "NewsApplication",
+  "apps": [
+    {
+      "id": "1597103122",
+      "name": {
+        "ja": "WidgetZenn",
+        "en": "WidgetZenn"
+      },
+      "short": {
+        "ja": "WidgetZenn",
+        "en": "WidgetZenn"
+      },
+      "developer": "Ryo Tsudukihashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/9f/bb/8e/9fbb8e03-2106-0221-e017-5eef7173c2e7/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id1597103122",
+      "android_url": null,
+      "rating_count": 2
+    },
+    {
+      "id": "6448756495",
+      "name": {
+        "ja": "ZennWidget",
+        "en": "ZennWidget"
+      },
+      "short": {
+        "ja": "ZennWidget",
+        "en": "ZennWidget"
+      },
+      "developer": "taishin miyamoto",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/f2/28/9f/f2289f95-33a5-8e16-d645-98794b29c727/AppIcon-0-0-1x_U007emarketing-0-5-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6448756495",
+      "android_url": null,
+      "rating_count": 4
+    },
+    {
+      "id": "396069556",
+      "name": {
+        "ja": "Feedly - Smart News Reader",
+        "en": "Feedly - Smart News Reader"
+      },
+      "short": {
+        "ja": "Feedly",
+        "en": "Feedly"
+      },
+      "developer": "Feedly Inc.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/05/8b/a7/058ba714-0832-732a-1c9f-30d76a63d23f/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id396069556",
+      "android_url": null,
+      "rating_count": 9023
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ja": "アプリを入れなくても見られる",
+        "en": "You can check it without an app"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "Zennのトップページを開けば、いまのトレンドが並んでいます。ブラウザでブックマークしておけば、それだけでも毎日見られます。",
+            "en": "Open Zenn's top page and the current trending articles are right there. Bookmark it in your browser and that alone is enough to check daily."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "トレンドにはRSSもあって、アドレスはzenn.dev/feedです。RSSリーダーに登録すると、ほかのサイトの新着と一緒に読めます。",
+            "en": "The trending list also has an RSS feed at zenn.dev/feed. Add it to an RSS reader and you can read it alongside new posts from other sites."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "毎回開くのが面倒になってきたら、ホーム画面に出しておくウィジェットのアプリが役に立ちます。",
+            "en": "If opening it every time starts to feel like a chore, a widget app that keeps the list on your Home Screen helps."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "3本をざっくり比べる",
+        "en": "The three apps at a glance"
+      },
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            {
+              "ja": "アプリ",
+              "en": "App"
+            },
+            {
+              "ja": "評価の件数",
+              "en": "Ratings"
+            },
+            {
+              "ja": "どこで見るか",
+              "en": "Where you read"
+            },
+            {
+              "ja": "Zennの何を出すか",
+              "en": "What it shows from Zenn"
+            },
+            {
+              "ja": "アカウント",
+              "en": "Account"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ja": "WidgetZenn（僕のアプリ）",
+                "en": "WidgetZenn (my app)"
+              },
+              {
+                "ja": "2件",
+                "en": "2"
+              },
+              {
+                "ja": "ホーム画面のウィジェット",
+                "en": "Home Screen widget"
+              },
+              {
+                "ja": "トレンドのTechかIdeasを選ぶ",
+                "en": "Tech or Ideas trend, your choice"
+              },
+              {
+                "ja": "要らない",
+                "en": "Not needed"
+              }
+            ],
+            [
+              {
+                "ja": "ZennWidget",
+                "en": "ZennWidget"
+              },
+              {
+                "ja": "4件",
+                "en": "4"
+              },
+              {
+                "ja": "ウィジェット",
+                "en": "Widget"
+              },
+              {
+                "ja": "記事の一覧。種類は説明文に記載なし",
+                "en": "A list of articles. Which list is not mentioned"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              }
+            ],
+            [
+              {
+                "ja": "Feedly",
+                "en": "Feedly"
+              },
+              {
+                "ja": "9,023件",
+                "en": "9,023"
+              },
+              {
+                "ja": "アプリの中",
+                "en": "In the app"
+              },
+              {
+                "ja": "登録したRSS。トレンドもトピックも",
+                "en": "Any RSS you add, trends or topics"
+              },
+              {
+                "ja": "Feedlyのアカウントが要る",
+                "en": "Feedly account required"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "1本ずつ見ていく",
+        "en": "Each app, one by one"
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "id": "1597103122"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "Zennのトレンドを、ホーム画面のウィジェットに並べるアプリです。ウィジェットごとに、技術の記事のTechか、キャリアや開発の進め方のような技術以外の記事のIdeasかを選べます。",
+            "en": "It lists Zenn's trending articles in a Home Screen widget. For each widget, you choose Tech for technical posts or Ideas for posts beyond code, like careers and how teams build things."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "ウィジェットは小から大まで、iPadなら特大も置けて、タップするとZennの元の記事が開きます。アプリには読んだ記事の履歴が残り、よく見るタグとユーザーの上位5つも出ます。",
+            "en": "You can place it in small, medium, or large, plus extra large on iPad, and tapping an article opens the original on Zenn. The app keeps a history of what you've read and shows your top 5 most-read tags and authors."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "全部無料で、アプリの中に広告が出ます。Zenn公式のアプリではありません。",
+            "en": "Everything is free, with ads in the app. It's not an official Zenn app."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6448756495"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "Zennの記事の一覧をウィジェットに出すアプリです。Webサイトを開かずに記事を見られるようにすることを目的にしている、と説明文にあります。",
+            "en": "It shows a list of Zenn articles in a widget. According to its description, the goal is to let you see articles without visiting the website."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "どの一覧を出すのか、ウィジェットの大きさ、料金については、説明文に書かれていませんでした。",
+            "en": "The description doesn't say which list it shows, what widget sizes it supports, or anything about pricing."
+          }
+        },
+        {
+          "type": "app",
+          "id": "396069556"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "評価が9,023件あるRSSリーダーです。新聞やブログ、YouTubeのチャンネルなど、追いたい情報源を1か所にまとめられます。",
+            "en": "It's an RSS reader with 9,023 ratings. You can gather the sources you follow, like news sites, blogs, and YouTube channels, in one place."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "ZennのトレンドのRSSを登録すれば、ほかの技術ブログと同じ一覧で読めます。使うにはFeedlyのアカウントが要ります。キーワードの追跡などはFeedly Proの機能です。",
+            "en": "Add Zenn's trending RSS feed and you can read it in the same list as your other tech blogs. You need a Feedly account to use it, and features like tracking keywords are part of Feedly Pro."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "どれを選ぶか",
+        "en": "Which one to pick"
+      },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "ja": "Zennのほかにも追っているサイトがあるなら、FeedlyにRSSを登録する",
+              "en": "If you follow other sites besides Zenn, add the RSS feed to Feedly"
+            },
+            {
+              "ja": "Zennのトレンドの見出しを、ホーム画面で眺めたいなら、ウィジェットのアプリ",
+              "en": "If you want Zenn's trending headlines on your Home Screen, a widget app"
+            },
+            {
+              "ja": "TechとIdeasを分けて置きたい、読んだ記事の傾向も見たいなら、WidgetZenn",
+              "en": "If you want Tech and Ideas in separate widgets and to see what you tend to read, WidgetZenn"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "ja": "Zenn公式のiPhoneアプリはありますか？",
+        "en": "Is there an official Zenn app for iPhone?"
+      },
+      "a": {
+        "ja": "2026年11月15日にApp Storeで「Zenn」を検索した結果には、Zenn公式のアプリは出てきませんでした。この記事のウィジェットのアプリは、どちらも個人が作った非公式のアプリです。",
+        "en": "When I searched the App Store for Zenn on November 15, 2026, no official Zenn app came up. Both widget apps in this article are unofficial apps made by individual developers."
+      }
+    },
+    {
+      "q": {
+        "ja": "特定のトピックだけ追えますか？",
+        "en": "Can I follow just one topic?"
+      },
+      "a": {
+        "ja": "ZennはトピックごとにもRSSを出しているので、RSSリーダーに登録すれば追えます。WidgetZennが出すのはトレンドだけです。",
+        "en": "Zenn publishes RSS feeds for each topic too, so you can follow one with an RSS reader. WidgetZenn only shows the trending lists."
+      }
+    },
+    {
+      "q": {
+        "ja": "無料で使えますか？",
+        "en": "Are they free?"
+      },
+      "a": {
+        "ja": "3本とも無料で入れられます。WidgetZennは全部無料で、広告が出ます。",
+        "en": "All three are free to download. WidgetZenn is completely free and shows ads."
+      }
+    }
+  ],
+  "closing": {
+    "ja": "WidgetZennの評価はまだ2件なので、毎朝ウィジェットで見ている人がいたら声を聞かせてください☕",
+    "en": "WidgetZenn only has two ratings so far, so if you check it on your widget every morning, I'd love to hear from you ☕"
+  },
+  "notes": {
+    "ja": "各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。ZennのRSSのアドレスも同じ日に確かめました。アップデートで変わることがあります。",
+    "en": "Features and rating counts were checked against each app's App Store description on November 15, 2026, and the Zenn RSS address was checked the same day. Things may change with updates."
+  },
+  "illustration": {
+    "scene": "朝の机で、キャラがマグカップを片手にスマホのホーム画面を見ている。画面の大きな水色のパネル（文字なし、細い線が何本も並ぶだけ）の上から、小さな線のカードが一枚ずつ順番に浮かび上がっていて、キャラは気になる一枚に指を伸ばしている。",
+    "alt": {
+      "ja": "朝、ホーム画面のパネルから浮かぶ記事のカードに指を伸ばすキャラクター",
+      "en": "The character with a morning mug, reaching for one of the article cards rising from a Home Screen panel"
+    }
+  }
+}

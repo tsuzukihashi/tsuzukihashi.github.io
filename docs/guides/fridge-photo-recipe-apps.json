@@ -1,0 +1,438 @@
+{
+  "slug": "fridge-photo-recipe-apps",
+  "date_published": "2026-11-15",
+  "date_updated": "2026-11-15",
+  "search_phrase": {
+    "ja": "冷蔵庫の中身 レシピ アプリ",
+    "en": "app that suggests recipes from what is in your fridge"
+  },
+  "evidence": "2026-11-15 に Google の検索候補で「冷蔵庫の中身 レシピ」を引くと、3件中2件が「アプリ」と「ai」の付いた形だった。「冷蔵庫 余り物 レシピ」も3件中2件が「アプリ」付き。同じ日に App Store で「冷蔵庫の中身 レシピ」を検索すると、評価が千件を超える専用のアプリはpecco（2,206件）だけで、ほかは評価2件以下のAIのアプリが並んでいた。",
+  "title": {
+    "ja": "冷蔵庫の中身からレシピを出してくれるアプリ4選",
+    "en": "4 Apps That Turn What’s in Your Fridge into Recipes"
+  },
+  "description": {
+    "ja": "冷蔵庫の中身からレシピを提案するアプリを4本比べました。食材の入れ方、無料でどこまで使えるか、ほかにできることの違いをまとめています。Cook-itの作者が書いています。",
+    "en": "I compared four iPhone apps that suggest recipes from what's in your fridge: how you enter ingredients, what you get for free, and what else they do. Written by the maker of Cook-it."
+  },
+  "excerpt": {
+    "ja": "食材の入れ方と、無料でどこまで使えるかで4本を比べました。Cook-itを作った僕が、自分のアプリも入れて書いています。",
+    "en": "Four apps compared on how you enter ingredients and what you get for free. I made Cook-it, and it's one of the four."
+  },
+  "category": {
+    "ja": "アプリの選び方",
+    "en": "App guides"
+  },
+  "reading_minutes": 4,
+  "author": {
+    "name": {
+      "ja": "續橋 涼",
+      "en": "Ryo Tsuzukihashi"
+    },
+    "handle": "tsuzuki817",
+    "bio": {
+      "ja": "2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。Cook-itの作者です。",
+      "en": "I've been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made Cook-it."
+    },
+    "url": "https://tsuzukit.com/about/",
+    "same_as": [
+      "https://x.com/tsuzuki817"
+    ]
+  },
+  "tldr": {
+    "ja": "いちばん使われているのは評価2,206件のpeccoで、冷蔵庫の食材を登録しておくと、それだけで作れるレシピを出してくれます。無料で写真から提案してほしいなら冷蔵庫シェフ。提案のあと、工程ごとのタイマーまで1つのアプリで済ませたい人は、僕が作ったCook-itも見てみてください。写真の提案はプレミアムです。",
+    "en": "The most widely used one is pecco, with 2,206 ratings. Register what's in your fridge and it suggests recipes you can make with just that. If you want suggestions from a photo for free, try Fridge Chef. If you want the suggestion and a timer for every step in one app, take a look at Cook-it, which I made. Suggestions from a photo are Premium."
+  },
+  "disclosure": {
+    "ja": "この記事は、Cook-itを作った僕が書いています。ほかの3本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。",
+    "en": "I made Cook-it, and I wrote this article. The other three apps are by developers I don't know, and I haven't received money or anything else from them. Everything compared here comes from each app's App Store description and rating count as of November 15, 2026."
+  },
+  "own_app": "6751343632",
+  "app_category": "FoodApplication",
+  "apps": [
+    {
+      "id": "6751343632",
+      "name": {
+        "ja": "Cook-it -冷蔵庫の中を撮るだけでAIレシピ提案-",
+        "en": "Cook-it - AI Recipes from Your Fridge"
+      },
+      "short": {
+        "ja": "Cook-it",
+        "en": "Cook-it"
+      },
+      "developer": "Ryo Tsudukihashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4d/89/0c/4d890c69-8fb6-4945-1fd5-823e7e97fc5e/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6751343632",
+      "android_url": null,
+      "rating_count": 0
+    },
+    {
+      "id": "1482088545",
+      "name": {
+        "ja": "pecco(ぺっこ) - 冷蔵庫レシピ献立料理アプリ",
+        "en": "pecco - Fridge Recipes and Meal Planner"
+      },
+      "short": {
+        "ja": "pecco",
+        "en": "pecco"
+      },
+      "developer": {
+        "ja": "株式会社GEEK WORKS",
+        "en": "GEEK WORKS Inc."
+      },
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/b5/df/92/b5df92ea-655d-e48b-0998-d93734ecd461/AppIcon-0-0-1x_U007emarketing-0-0-0-8-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id1482088545",
+      "android_url": null,
+      "rating_count": 2206
+    },
+    {
+      "id": "6758548360",
+      "name": {
+        "ja": "冷蔵庫シェフ - 余り物で絶品AIレシピ",
+        "en": "Fridge Chef - AI Recipes from Leftovers"
+      },
+      "short": {
+        "ja": "冷蔵庫シェフ",
+        "en": "Fridge Chef"
+      },
+      "developer": "YOSHITA KANETA",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/0a/90/34/0a903473-75e0-4c11-5996-85d2f5a9a8ab/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6758548360",
+      "android_url": null,
+      "rating_count": 2
+    },
+    {
+      "id": "6762107808",
+      "name": {
+        "ja": "FridgeCook - 冷蔵庫レシピAI",
+        "en": "FridgeCook - AI Recipe Finder"
+      },
+      "short": {
+        "ja": "FridgeCook",
+        "en": "FridgeCook"
+      },
+      "developer": "BYNET",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/04/4a/5f/044a5fcf-5290-22ae-6dcf-0ca2aeb67371/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6762107808",
+      "android_url": null,
+      "rating_count": 1
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ja": "4本をざっくり比べる",
+        "en": "The four apps at a glance"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "違いが出るのは、食材をどうやってアプリに伝えるかと、無料でどこまで提案してもらえるかです。",
+            "en": "Where they really differ is how you tell the app what you have, and how much it will suggest for free."
+          }
+        },
+        {
+          "type": "table",
+          "head": [
+            {
+              "ja": "アプリ",
+              "en": "App"
+            },
+            {
+              "ja": "評価の件数",
+              "en": "Ratings"
+            },
+            {
+              "ja": "食材の入れ方",
+              "en": "How you enter ingredients"
+            },
+            {
+              "ja": "無料で使える範囲",
+              "en": "What's free"
+            },
+            {
+              "ja": "ほかにできること",
+              "en": "Also"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ja": "Cook-it（僕のアプリ）",
+                "en": "Cook-it (my app)"
+              },
+              {
+                "ja": "0件",
+                "en": "0"
+              },
+              {
+                "ja": "写真、言葉で相談",
+                "en": "A photo, or asking in your own words"
+              },
+              {
+                "ja": "写真の提案とAIの相談はプレミアム",
+                "en": "Photo suggestions and AI chat are Premium"
+              },
+              {
+                "ja": "工程ごとのタイマー",
+                "en": "A timer for every step"
+              }
+            ],
+            [
+              {
+                "ja": "pecco",
+                "en": "pecco"
+              },
+              {
+                "ja": "2,206件",
+                "en": "2,206"
+              },
+              {
+                "ja": "冷蔵庫の食材を登録",
+                "en": "Register what's in your fridge"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "賞味期限のお知らせ、栄養のアドバイス",
+                "en": "Best-before alerts, nutrition advice"
+              }
+            ],
+            [
+              {
+                "ja": "冷蔵庫シェフ",
+                "en": "Fridge Chef"
+              },
+              {
+                "ja": "2件",
+                "en": "2"
+              },
+              {
+                "ja": "文字、音声、写真",
+                "en": "Text, voice, or a photo"
+              },
+              {
+                "ja": "基本の機能は広告付きで無料",
+                "en": "Core features are free with ads"
+              },
+              {
+                "ja": "人数に合わせた分量、買い物リスト",
+                "en": "Amounts for your headcount, shopping list"
+              }
+            ],
+            [
+              {
+                "ja": "FridgeCook",
+                "en": "FridgeCook"
+              },
+              {
+                "ja": "1件",
+                "en": "1"
+              },
+              {
+                "ja": "写真",
+                "en": "A photo"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "5日分の作り置きプラン、栄養の表示",
+                "en": "A 5-day meal-prep plan, nutrition info"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "1本ずつ見ていく",
+        "en": "Each app, one by one"
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "id": "6751343632"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "冷蔵庫の中を撮ると、AIが食材を見分けて、それで作れるレシピを出します。豚肉と玉ねぎで何か作りたい、のように言葉で相談することもできます。",
+            "en": "Take a photo of the inside of your fridge and the AI picks out the ingredients and suggests recipes you can make with them. You can also just ask in your own words, like wanting to make something with pork and onions."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "レシピの工程をまとめてタイマーに入れられるので、火にかけている間に次の作業へ移れます。ほかの人が投稿したレシピを見たり、10件まで保存したりするのは無料です。",
+            "en": "You can load every step of a recipe into timers at once, so you can move on to the next task while something is on the stove. Browsing recipes other people posted and saving up to 10 of them are free."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "写真からの提案と言葉での相談は、どちらもプレミアムです。作った料理をカレンダーに残す機能と、保存の数を無制限にするのもプレミアムに入っています。無料でまず写真の提案を試したい人には向いていないので、そこは正直に書いておきます。",
+            "en": "Suggestions from a photo and asking in your own words are both Premium. Logging the dishes you made on a calendar and unlimited saves are Premium too. If you want to try photo suggestions for free first, this isn't the one, and I'd rather say that plainly."
+          }
+        },
+        {
+          "type": "app",
+          "id": "1482088545"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "評価が2,206件あって、この中ではいちばん使われています。冷蔵庫の食材を登録しておくと、家にある食材だけで作れるレシピを出してくれます。アレルギーや賞味期限、優先して使いたい食材も選べます。",
+            "en": "With 2,206 ratings, it's by far the most used of the four. Register the food in your fridge and it suggests recipes that use only what you have at home. You can also set allergies, best-before dates, and ingredients you want to use first."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "作ったレシピに合わせて冷蔵庫の残りの量を減らしてくれるので、買い物中に家に何があるかも分かります。賞味期限が近い食材をキャラクターが知らせてくれて、食べたものの栄養バランスに管理栄養士がアドバイスする機能もあります。写真で食材を読み取る機能は、説明文には書かれていませんでした。",
+            "en": "It updates what's left in your fridge based on the recipes you cook, so you can check what you have while you're out shopping. A character warns you when something is close to its best-before date, and a registered dietitian gives advice on the nutritional balance of what you ate. The description doesn't mention reading ingredients from a photo."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6758548360"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "残った食材を文字、音声、写真のどれかで入れると、作る料理を提案してくれます。材料と手順を人数に合わせて見られて、気に入ったレシピは端末に保存できます。",
+            "en": "Enter your leftover ingredients by typing, speaking, or taking a photo, and it suggests what to cook. You can see the ingredients and steps scaled to your headcount, and save recipes you like on your phone."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "基本の機能は無料で、広告付きで使い続けられると書かれています。有料のプレミアムは広告を消すための月額のサブスクリプションです。食材や写真は、GoogleのGeminiに送って提案を作る作りです。",
+            "en": "The description says the core features are free and you can keep using them with ads. Premium is a monthly subscription that removes the ads. Your ingredients and photos are sent to Google's Gemini to make the suggestions."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6762107808"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "冷蔵庫を撮ると食材を見分けて、今日の1品を1つだけ出してくれます。迷わずすぐ決めたい人向けの作りで、別の料理にしたいときは2回まで出し直せます。",
+            "en": "Take a photo of your fridge and it identifies the ingredients, then shows you just one dish for today. It's built for people who want to decide fast, and you can ask for a different dish up to two times."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "同じ写真から、5日分の作り置きのプランと買い物リストも作れます。カロリーとたんぱく質、脂質、炭水化物も出ます。料金については、説明文に書かれていませんでした。",
+            "en": "From the same photo it can also make a 5-day meal-prep plan with a shopping list, and it shows calories along with protein, fat, and carbs. The description doesn't say anything about pricing."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "アプリを入れたくないなら",
+        "en": "If you'd rather not install an app"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "レシピサイトの検索窓に、冷蔵庫にある食材の名前を2つか3つ入れて探すだけでも見つかります。",
+            "en": "You can also just type the names of two or three ingredients from your fridge into a recipe site's search box."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "ただ、何があるかを自分で見て、名前を打つ手間はかかります。写真1枚で済むのがアプリのいいところですね。",
+            "en": "The catch is that you have to check what you have and type it all in yourself. Getting there from a single photo is where the apps help."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "どれを選ぶか",
+        "en": "Which one to pick"
+      },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "ja": "冷蔵庫の在庫や賞味期限も一緒に管理したいなら、pecco",
+              "en": "If you also want to track your fridge stock and best-before dates, pecco"
+            },
+            {
+              "ja": "無料のまま、写真から提案してほしいなら、冷蔵庫シェフ",
+              "en": "If you want suggestions from a photo without paying, Fridge Chef"
+            },
+            {
+              "ja": "作り置きを5日分まとめて決めたいなら、FridgeCook",
+              "en": "If you want to plan five days of meal prep at once, FridgeCook"
+            },
+            {
+              "ja": "提案から工程ごとのタイマーまで1つのアプリで済ませたいなら、Cook-it",
+              "en": "If you want everything from the suggestion to a timer for each step in one app, Cook-it"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "ja": "無料で写真から提案してもらえますか？",
+        "en": "Can I get suggestions from a photo for free?"
+      },
+      "a": {
+        "ja": "冷蔵庫シェフは、基本の機能が広告付きで無料です。Cook-itは写真の提案がプレミアムです。peccoとFridgeCookは、料金が説明文に書かれていませんでした。",
+        "en": "Fridge Chef's core features are free with ads. Cook-it's photo suggestions are Premium. pecco and FridgeCook don't mention pricing in their descriptions."
+      }
+    },
+    {
+      "q": {
+        "ja": "撮った写真はどこに送られますか？",
+        "en": "Where do my photos go?"
+      },
+      "a": {
+        "ja": "Cook-itと冷蔵庫シェフは、説明文にGoogleのGeminiを使うと書いています。気になる人は、各アプリのプライバシーポリシーを読んでから使ってください。",
+        "en": "Cook-it and Fridge Chef both say in their descriptions that they use Google's Gemini. If that matters to you, read each app's privacy policy before using it."
+      }
+    },
+    {
+      "q": {
+        "ja": "アレルギーがある食材を外せますか？",
+        "en": "Can I leave out ingredients I am allergic to?"
+      },
+      "a": {
+        "ja": "説明文でアレルギーの設定に触れているのはpeccoです。AIの提案は材料を見落とすこともあるので、作る前に材料の欄を自分で確かめてください。",
+        "en": "pecco is the one whose description mentions allergy settings. AI suggestions can miss an ingredient, so check the ingredient list yourself before you cook."
+      }
+    }
+  ],
+  "closing": {
+    "ja": "Cook-itはまだ評価が0件なので、使ってみた感想を聞かせてもらえたらうれしいです🍳",
+    "en": "Cook-it doesn't have any ratings yet, so I'd love to hear what you think if you try it 🍳"
+  },
+  "notes": {
+    "ja": "各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。Cook-itの無料とプレミアムの境目は、アプリのコードで確かめました。アップデートで変わることがあります。",
+    "en": "Features and rating counts were checked against each app's App Store description on November 15, 2026. What's free and what's Premium in Cook-it was checked in the app's code. Things may change with updates."
+  },
+  "illustration": {
+    "scene": "キッチンのまな板の前。キャラが、半分残ったにんじん、玉ねぎ1個、卵2つを並べて腕を組んで見つめている。頭の上に湯気の立つ料理の絵の吹き出しが4つ浮かんでいて、そのうち1つだけ紫に光っている。",
+    "alt": {
+      "ja": "残った食材を並べて、浮かんだ4つの料理を見比べるキャラクター",
+      "en": "The character looking over a few leftover ingredients, with four steaming dishes floating above"
+    }
+  }
+}

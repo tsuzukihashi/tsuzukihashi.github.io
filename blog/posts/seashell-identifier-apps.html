@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/js/lang.js"></script>
+    <!-- このページは scripts/build_guides.py が docs/guides/seashell-identifier-apps.json から作る。直すのは JSON のほう -->
+    <title>浜で拾った貝殻の名前を調べるアプリ3選 - Blog | Ryo Tsuzukihashi</title>
+    <meta name="description" content="浜で拾った貝殻の名前を、写真から調べるアプリを3本比べました。学名や分布まで出るか、集めた貝殻の整理のしかた、無料で使える範囲の違いをまとめています。ShellLensの作者が書いています。">
+    <meta name="title-en" content="3 Apps That Tell You the Name of a Seashell You Found on the Beach - Blog | Ryo Tsuzukihashi">
+    <meta name="description-en" content="I compared three iPhone apps that identify a seashell from a photo: whether they show the scientific name and range, how they organize your collection, and what you can do for free. Written by the maker of ShellLens.">
+    <link rel="canonical" href="https://tsuzukit.com/blog/posts/seashell-identifier-apps.html">
+
+    <!-- OGP -->
+    <meta property="og:title" content="浜で拾った貝殻の名前を調べるアプリ3選">
+    <meta property="og:description" content="浜で拾った貝殻の名前を、写真から調べるアプリを3本比べました。学名や分布まで出るか、集めた貝殻の整理のしかた、無料で使える範囲の違いをまとめています。ShellLensの作者が書いています。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://tsuzukit.com/blog/posts/seashell-identifier-apps.html">
+    <meta property="og:image" content="https://tsuzukit.com/assets/images/posts/seashell-identifier-apps.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://tsuzukit.com/assets/images/posts/seashell-identifier-apps.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-dark-32x32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-dark-16x16.png" media="(prefers-color-scheme: dark)">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERPQ1EGLH');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8240751277462688"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
+    <link rel="stylesheet" href="/assets/css/guide.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "浜で拾った貝殻の名前を調べるアプリ3選",
+      "description": "浜で拾った貝殻の名前を、写真から調べるアプリを3本比べました。学名や分布まで出るか、集めた貝殻の整理のしかた、無料で使える範囲の違いをまとめています。ShellLensの作者が書いています。",
+      "image": "https://tsuzukit.com/assets/images/posts/seashell-identifier-apps.webp",
+      "datePublished": "2026-11-15",
+      "dateModified": "2026-11-15",
+      "inLanguage": "ja",
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "mainEntityOfPage": "https://tsuzukit.com/blog/posts/seashell-identifier-apps.html",
+      "about": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "ShellLens - 貝殻AI図鑑",
+          "url": "https://apps.apple.com/jp/app/id6757253733",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "貝殻識別・図鑑アプリ ShellLens",
+          "url": "https://apps.apple.com/jp/app/id6748404464",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "貝殻識別：種類がわかるAI図鑑",
+          "url": "https://apps.apple.com/jp/app/id6758817409",
+          "operatingSystem": "iOS"
+        }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "ShellLens - 貝殻AI図鑑",
+      "operatingSystem": "iOS",
+      "applicationCategory": "ReferenceApplication",
+      "url": "https://apps.apple.com/jp/app/id6757253733",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "無料で使えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "3本とも無料で入れられます。ShellLensは無料で2回まで調べられて、そのあとはプレミアムです。ほかの2本の無料の範囲は、説明文には書かれていませんでした。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "AIの答えは合っていますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "どのアプリも出しているのは候補です。貝殻識別・図鑑アプリの説明文にも、誤る場合があると書かれています。気になる貝は、いくつかの候補を見比べてみてください。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "貝殻の値段はわかりますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ShellLensのプレミアムと、貝殻識別：種類がわかるAI図鑑で、価値の目安が出ます。売り買いを決めるときは、専門のお店や詳しい人に聞いてください。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "海辺で電波が弱くても使えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ShellLensは調べるときにネットが要ります。貝殻識別・図鑑アプリも、新しく調べるにはネットが要って、保存した結果はオフラインでも見られると書かれています。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tsuzukit.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://tsuzukit.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "困りごとから選ぶアプリ",
+          "item": "https://tsuzukit.com/blog/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "浜で拾った貝殻の名前を調べるアプリ3選",
+          "item": "https://tsuzukit.com/blog/posts/seashell-identifier-apps.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">TsuzuKit</a>
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/portfolio/" class="nav-link">Portfolio</a>
+                <a href="/blog/" class="nav-link active">Blog</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post -->
+    <article class="blog-post">
+        <header class="post-header">
+            <div class="post-meta">
+                <span class="post-date">2026.11.15</span>
+                <span class="post-category"><span class="i18n-ja">アプリの選び方</span><span class="i18n-en">App guides</span></span>
+                <span class="post-reading-time"><span class="i18n-ja">4分で読める</span><span class="i18n-en">4 min read</span></span>
+            </div>
+            <h1 class="post-title"><span class="i18n-ja">浜で拾った貝殻の名前を調べるアプリ3選</span><span class="i18n-en">3 Apps That Tell You the Name of a Seashell You Found on the Beach</span></h1>
+        </header>
+        <figure class="post-illustration guide-illustration"><img src="/assets/images/posts/seashell-identifier-apps.webp" width="1200" height="800" alt="持ち帰った貝殻をテーブルに並べて、スマホと見比べるキャラクター" data-en-alt="The character lining up seashells brought home from the beach, comparing one with a phone" fetchpriority="high"></figure>
+
+        <div class="post-content guide i18n-ja">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">先に答え</p>
+                <p>浜で拾った貝殻は、写真を撮るとAIが名前の候補を出してくれるアプリで調べられます。評価がいちばん多いのは39件の貝殻識別・図鑑アプリで、似た種類との違いや、海岸ごとのフォルダ分けまでできます。名前と学名と生息地をまず知りたい人は、僕が作ったShellLensも見てみてください。</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">書いた人 <a href="https://tsuzukit.com/about/">續橋 涼</a>（@tsuzuki817）</p>
+                    <p class="guide-byline-bio">2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。ShellLensの作者です。</p>
+                    <p class="guide-byline-date">公開 <time datetime="2026-11-15">2026.11.15</time> · 更新 <time datetime="2026-11-15">2026.11.15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">この記事は、ShellLensを作った僕が書いています。ほかの2本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。</p>
+            <h2>3本をざっくり比べる</h2>
+            <p>どれも写真から名前を調べるところは同じです。違いが出るのは、名前のあとにどこまで教えてくれるかと、集めた貝殻の残し方です。</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">アプリ</th><th scope="col">評価の件数</th><th scope="col">無料で調べられる回数</th><th scope="col">学名</th><th scope="col">似た貝との違い</th><th scope="col">集めた貝殻の整理</th></tr></thead><tbody><tr><th scope="row">ShellLens（僕のアプリ）</th><td>0件</td><td>2回まで</td><td>あり</td><td>ほかの候補も表示</td><td>コレクションに保存</td></tr><tr><th scope="row">貝殻識別・図鑑アプリ</th><td>39件</td><td>説明文に記載なし</td><td>あり</td><td>あり</td><td>海岸や旅行ごとのフォルダ</td></tr><tr><th scope="row">貝殻識別：種類がわかるAI図鑑</th><td>1件</td><td>説明文に記載なし</td><td>説明文に記載なし</td><td>説明文に記載なし</td><td>場所と日付つきで保存</td></tr></tbody></table></div>
+            <h2>1本ずつ見ていく</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/1a/7d/89/1a7d8993-8e43-5d54-f863-c62e881cc826/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">僕が作ったアプリ</span>
+                    <h3 class="guide-app-name">ShellLens - 貝殻AI図鑑</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · App Storeの評価 0件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6757253733" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>貝殻を撮るか、写真ライブラリから選ぶと、AIが名前の候補を出します。和名と英名、学名、分類、大きさ、生息地、特徴までは無料で見られます。</p>
+            <p>いちばん近い候補のほかに、似ている候補も並びます。違うと思ったら名前を自分で直せます。調べた貝殻はコレクションにたまっていきます。</p>
+            <p>無料で調べられるのは2回までです。何回でも調べたいときや、食性などの生態、レア度や価値の目安を見たいときはプレミアムです。調べるときはネットにつながっている必要があります。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4a/8e/ca/4a8ecac1-d16c-0df6-3882-d7617e05e0ed/ShellIDIcon-0-0-1x_U007epad-0-1-sRGB-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">貝殻識別・図鑑アプリ ShellLens</h3>
+                    <p class="guide-app-meta">Bohdan Hordiienko · App Storeの評価 39件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6748404464" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>アプリ名にShellLensと入っていますが、僕のアプリとは別の開発者さんのアプリです。評価は39件で、この中ではいちばん多いです。</p>
+            <p>名前と学名のほかに、よく似た種類との違いも学べます。情報がある貝ならWikipediaの記事や、海の生き物のデータベースの分類や分布も出ます。</p>
+            <p>結果が違うと思ったら、考えている名前を入れるとAIが同じ写真を見直します。集めた貝殻は海岸や旅行ごとのフォルダに分けて、メモも付けられます。週額か年額のサブスクリプションがあります。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d0/8e/28/d08e2847-632c-78d7-a77e-e613323ebb6e/AppIcon-0-0-1x_U007ephone-0-11-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">貝殻識別：種類がわかるAI図鑑</h3>
+                    <p class="guide-app-meta">BASAK GEDIK · App Storeの評価 1件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6758817409" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>名前のほかに、その貝殻がどれくらい珍しいかと、価格の目安を出すのが特徴です。説明文では、オンラインの相場をもとにしていると書かれています。</p>
+            <p>見つけた貝殻は写真と一緒に、場所と日付を付けて保存できます。どこまで無料なのかは、説明文には書かれていませんでした。</p>
+            <h2>どれを選ぶか</h2>
+            <ul class="guide-list"><li>似た種類との違いを知りたい、海岸ごとに整理したいなら、貝殻識別・図鑑アプリ</li><li>拾った貝殻がどれくらい珍しいかが気になるなら、貝殻識別：種類がわかるAI図鑑</li><li>まず名前と学名と生息地を無料で見てみたいなら、ShellLens</li></ul>
+            <h2>よくある質問</h2>
+            <dl class="guide-faq">
+                <dt>無料で使えますか？</dt><dd>3本とも無料で入れられます。ShellLensは無料で2回まで調べられて、そのあとはプレミアムです。ほかの2本の無料の範囲は、説明文には書かれていませんでした。</dd>
+                <dt>AIの答えは合っていますか？</dt><dd>どのアプリも出しているのは候補です。貝殻識別・図鑑アプリの説明文にも、誤る場合があると書かれています。気になる貝は、いくつかの候補を見比べてみてください。</dd>
+                <dt>貝殻の値段はわかりますか？</dt><dd>ShellLensのプレミアムと、貝殻識別：種類がわかるAI図鑑で、価値の目安が出ます。売り買いを決めるときは、専門のお店や詳しい人に聞いてください。</dd>
+                <dt>海辺で電波が弱くても使えますか？</dt><dd>ShellLensは調べるときにネットが要ります。貝殻識別・図鑑アプリも、新しく調べるにはネットが要って、保存した結果はオフラインでも見られると書かれています。</dd>
+            </dl>
+            <p>ShellLensはまだ評価が0件なので、拾った貝殻で試してくれた人の声を聞いてみたいです🐚</p>
+            <div class="guide-notes">各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。</div>
+        </div>
+
+        <div class="post-content guide i18n-en">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">Short answer</p>
+                <p>You can look up a shell you picked up with an app that suggests names from a photo. The most rated one is Sea Shell Identifier, with 39 ratings, and it also shows how a shell differs from similar ones and lets you sort finds into folders by beach. If you mainly want the name, scientific name, and habitat, take a look at ShellLens, which I made.</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">Written by <a href="https://tsuzukit.com/about/">Ryo Tsuzukihashi</a> (@tsuzuki817)</p>
+                    <p class="guide-byline-bio">I&#x27;ve been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made ShellLens.</p>
+                    <p class="guide-byline-date">Published <time datetime="2026-11-15">2026-11-15</time> · Updated <time datetime="2026-11-15">2026-11-15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">I made ShellLens, and I wrote this article. The other two apps are by developers I don&#x27;t know, and I haven&#x27;t received money or anything else from them. Everything compared here comes from each app&#x27;s App Store description and rating count as of November 15, 2026.</p>
+            <h2>The three apps at a glance</h2>
+            <p>All three identify a shell from a photo. Where they differ is how much they tell you after the name, and how you keep track of what you collected.</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">App</th><th scope="col">Ratings</th><th scope="col">Free identifications</th><th scope="col">Scientific name</th><th scope="col">Similar shells</th><th scope="col">Organizing finds</th></tr></thead><tbody><tr><th scope="row">ShellLens (my app)</th><td>0</td><td>Up to 2</td><td>Yes</td><td>Shows other candidates</td><td>Saved to a collection</td></tr><tr><th scope="row">Sea Shell Identifier</th><td>39</td><td>Not mentioned</td><td>Yes</td><td>Yes</td><td>Folders by beach or trip</td></tr><tr><th scope="row">Shell Identifier: Rarity Value</th><td>1</td><td>Not mentioned</td><td>Not mentioned</td><td>Not mentioned</td><td>Saved with place and date</td></tr></tbody></table></div>
+            <h2>Each app, one by one</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/1a/7d/89/1a7d8993-8e43-5d54-f863-c62e881cc826/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">I made this</span>
+                    <h3 class="guide-app-name">ShellLens - Seashell AI Guide</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · 0 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6757253733" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>Take a photo of a shell or pick one from your library, and the AI suggests what it is. The Japanese and English names, scientific name, classification, size, habitat, and features are all free to see.</p>
+            <p>Besides the closest match, it lists other likely candidates. If you think the answer is wrong, you can correct the name yourself. Every shell you look up goes into your collection.</p>
+            <p>You can identify two shells for free. Unlimited identifications, plus ecology details like diet and an estimate of rarity and value, come with Premium. You need an internet connection to identify a shell.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4a/8e/ca/4a8ecac1-d16c-0df6-3882-d7617e05e0ed/ShellIDIcon-0-0-1x_U007epad-0-1-sRGB-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Sea Shell Identifier - AI ID</h3>
+                    <p class="guide-app-meta">Bohdan Hordiienko · 39 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6748404464" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>Its Japanese name also includes the word ShellLens, but it&#x27;s a different developer&#x27;s app, not mine. With 39 ratings, it has the most of the three.</p>
+            <p>Along with the name and scientific name, it explains how a shell differs from similar species. When the data exists, it also shows the Wikipedia article and the classification and recorded range from a marine species database.</p>
+            <p>If you think a result is off, type the name you have in mind and the AI takes another look at the same photo. You can sort your shells into folders by beach or trip and add notes. It offers weekly and yearly subscriptions.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d0/8e/28/d08e2847-632c-78d7-a77e-e613323ebb6e/AppIcon-0-0-1x_U007ephone-0-11-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Shell Identifier: Rarity Value</h3>
+                    <p class="guide-app-meta">BASAK GEDIK · 1 App Store rating</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6758817409" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>Besides the name, it shows how rare a shell is and an estimated price. The description says the price is based on online market data.</p>
+            <p>You can save each find with its photo, place, and date. The description doesn&#x27;t say what is free and what isn&#x27;t.</p>
+            <h2>Which one to pick</h2>
+            <ul class="guide-list"><li>If you want to learn how a shell differs from look-alikes, or sort finds by beach, Sea Shell Identifier</li><li>If you mostly wonder how rare your shell is, Shell Identifier: Rarity Value</li><li>If you first want to see the name, scientific name, and habitat for free, ShellLens</li></ul>
+            <h2>FAQ</h2>
+            <dl class="guide-faq">
+                <dt>Are they free?</dt><dd>All three are free to download. ShellLens lets you identify two shells for free, and after that it&#x27;s Premium. The other two don&#x27;t say in their descriptions how much is free.</dd>
+                <dt>Can I trust the AI answer?</dt><dd>Every one of these apps gives you candidates, not a final answer. Sea Shell Identifier&#x27;s own description says results can be wrong. For a shell you really care about, compare a few of the candidates.</dd>
+                <dt>Can they tell me what a shell is worth?</dt><dd>ShellLens Premium and Shell Identifier: Rarity Value both show an estimate. If you&#x27;re actually buying or selling, ask a specialist shop or someone who knows shells.</dd>
+                <dt>Do they work on a beach with a weak signal?</dt><dd>ShellLens needs the internet to identify a shell. Sea Shell Identifier also needs a connection for new identifications, but says saved results can be viewed offline.</dd>
+            </dl>
+            <p>ShellLens doesn&#x27;t have a single rating yet, so I&#x27;d love to hear from anyone who tries it on a shell they found 🐚</p>
+            <div class="guide-notes">Features and rating counts were checked against each app&#x27;s App Store description on November 15, 2026, and may change with updates.</div>
+        </div>
+
+        <nav class="post-navigation">
+            <img class="tk-char tk-char--post" src="/assets/images/character-hang.png" alt="" width="381" height="208">
+            <a href="/blog/guides/" class="nav-link-wrapper"><span>&larr; <span class="i18n-ja">困りごとから選ぶアプリの一覧へ</span><span class="i18n-en">All guides: apps for everyday problems</span></span></a>
+        </nav>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
+                    <p class="footer-description"><span class="i18n-ja">誰も作らないものを、まじめに作る</span><span class="i18n-en">I make things nobody else would, and I make them seriously</span></p>
+                </div>
+                <div class="footer-nav">
+                    <a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
+                    <a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
+                    <a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
+                    <a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ryo Tsuzukihashi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

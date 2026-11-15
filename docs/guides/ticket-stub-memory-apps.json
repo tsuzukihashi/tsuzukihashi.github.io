@@ -1,0 +1,442 @@
+{
+  "slug": "ticket-stub-memory-apps",
+  "date_published": "2026-11-15",
+  "date_updated": "2026-11-15",
+  "search_phrase": {
+    "ja": "チケット 思い出 アプリ",
+    "en": "ticket stub keepsake app"
+  },
+  "evidence": "2026-11-15 に Google の検索候補で「チケット 思い出」を引くと、11件中に「チケット 思い出 アプリ」「チケット 思い出 アルバム」「チケット 思い出 ノート」「チケット 思い出 保管」などが並んだ。「チケット 記録」でも10件中2件が「アプリ」付き。同じ日の App Store で「チケット 思い出」「半券」を検索すると、Ripmunk 0件、STUB 2件、きれはし 1件など、半券を残すアプリが並んでいた。",
+  "title": {
+    "ja": "チケットの半券を思い出に残すアプリ4選",
+    "en": "4 Apps for Keeping Ticket Stubs as Memories"
+  },
+  "description": {
+    "ja": "美術館やライブのチケットの半券を、写真で思い出に残すアプリを4本比べました。残し方、人に見せるか、無料の範囲の違いをまとめています。TicketManiaの作者が書いています。",
+    "en": "I compared four iPhone apps for keeping ticket stubs from museums and concerts as photos: how they store them, whether others can see them, and what is free. Written by the maker of TicketMania."
+  },
+  "excerpt": {
+    "ja": "半券の残し方、人に見せるか、無料の範囲で4本を比べました。TicketManiaを作った僕が書いています。",
+    "en": "Four apps compared on how they keep stubs, sharing, and what's free. I made TicketMania, and it's one of the four."
+  },
+  "category": {
+    "ja": "アプリの選び方",
+    "en": "App guides"
+  },
+  "reading_minutes": 4,
+  "author": {
+    "name": {
+      "ja": "續橋 涼",
+      "en": "Ryo Tsuzukihashi"
+    },
+    "handle": "tsuzuki817",
+    "bio": {
+      "ja": "2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。TicketManiaの作者です。",
+      "en": "I've been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made TicketMania."
+    },
+    "url": "https://tsuzukit.com/about/",
+    "same_as": [
+      "https://x.com/tsuzuki817"
+    ]
+  },
+  "tldr": {
+    "ja": "美術館や水族館の半券を登録なしで集めるならRipmunk、ライブや試合の半券に座席まで残すならSTUB、紙ものをスクラップにするならきれはしです。ほかの人が残したチケットも見てみたい人は、僕が作ったTicketManiaも見てみてください。",
+    "en": "For museum and aquarium stubs with no account, Ripmunk. For concert and game stubs with seat details, STUB. For scrapbook pages of paper keepsakes, Kirehashi. If you'd like to see the tickets other people keep too, take a look at TicketMania, which I made."
+  },
+  "disclosure": {
+    "ja": "この記事は、TicketManiaを作った僕が書いています。ほかの3本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。",
+    "en": "I made TicketMania, and I wrote this article. The other three apps are by developers I don't know, and I haven't received money or anything else from them. Everything compared here comes from each app's App Store description and rating count as of November 15, 2026."
+  },
+  "own_app": "6444087177",
+  "app_category": "LifestyleApplication",
+  "apps": [
+    {
+      "id": "6444087177",
+      "name": {
+        "ja": "TicketMania",
+        "en": "TicketMania"
+      },
+      "short": {
+        "ja": "TicketMania",
+        "en": "TicketMania"
+      },
+      "developer": "Ryo Tsudukihashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/fd/82/d3/fd82d384-ba76-dbac-1cf1-27b02f3c983e/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6444087177",
+      "android_url": null,
+      "rating_count": 6
+    },
+    {
+      "id": "6819102448",
+      "name": {
+        "ja": "Ripmunk - チケット半券コレクション",
+        "en": "Ripmunk - Ticket Stub Collection"
+      },
+      "short": {
+        "ja": "Ripmunk",
+        "en": "Ripmunk"
+      },
+      "developer": "Kosuke Murano",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/72/ed/e1/72ede195-cf97-4aff-33e4-5d2c7edc8cd5/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6819102448",
+      "android_url": null,
+      "rating_count": 0
+    },
+    {
+      "id": "6784144760",
+      "name": {
+        "ja": "STUB｜半券コレクション・推し活チケット記録",
+        "en": "STUB — Ticket Stub Collection"
+      },
+      "short": {
+        "ja": "STUB",
+        "en": "STUB"
+      },
+      "developer": "COLET LAB CO., LTD.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/7d/0f/83/7d0f8342-dea1-136f-059f-29ca9d89c3c1/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6784144760",
+      "android_url": null,
+      "rating_count": 2
+    },
+    {
+      "id": "6803922209",
+      "name": {
+        "ja": "きれはし - 半券・紙ものの思い出スクラップ",
+        "en": "Kirehashi - Paper Keepsake Scrapbook"
+      },
+      "short": {
+        "ja": "きれはし",
+        "en": "Kirehashi"
+      },
+      "developer": "HATTOU LLC",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/06/3d/8e/063d8e64-8317-ce3a-551b-5c6a25823d93/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6803922209",
+      "android_url": null,
+      "rating_count": 1
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ja": "4本をざっくり比べる",
+        "en": "The four apps at a glance"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "どれもチケットを写真で残して、あとから見返せます。違うのは、1枚ずつ並べるのか、1ページの作品にするのか、人に見せるのかです。",
+            "en": "All four let you keep tickets as photos and look back at them later. The difference is whether they line them up one by one, turn them into a page, or let other people see them."
+          }
+        },
+        {
+          "type": "table",
+          "head": [
+            {
+              "ja": "アプリ",
+              "en": "App"
+            },
+            {
+              "ja": "評価の件数",
+              "en": "Ratings"
+            },
+            {
+              "ja": "残し方",
+              "en": "How tickets are kept"
+            },
+            {
+              "ja": "人に見せる",
+              "en": "Sharing"
+            },
+            {
+              "ja": "無料の範囲",
+              "en": "Free"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ja": "TicketMania（僕のアプリ）",
+                "en": "TicketMania (my app)"
+              },
+              {
+                "ja": "6件",
+                "en": "6"
+              },
+              {
+                "ja": "写真にコメントとハッシュタグ",
+                "en": "A photo with a comment and hashtags"
+              },
+              {
+                "ja": "公開するとほかの人のチケットも見られる。非公開もできる",
+                "en": "Post publicly and see other people's tickets, or keep posts private"
+              },
+              {
+                "ja": "投稿できる数に限りあり。広告を見ると回復",
+                "en": "Limited posts, restored by watching an ad"
+              }
+            ],
+            [
+              {
+                "ja": "Ripmunk",
+                "en": "Ripmunk"
+              },
+              {
+                "ja": "0件",
+                "en": "0"
+              },
+              {
+                "ja": "撮ると背景を切り抜き、施設名と日付が自動で入る",
+                "en": "Cuts out the background and fills in the venue and date"
+              },
+              {
+                "ja": "説明文に記載なし。画像は端末の外に送らない",
+                "en": "Not mentioned. Images stay on your device"
+              },
+              {
+                "ja": "課金なし",
+                "en": "Nothing to buy"
+              }
+            ],
+            [
+              {
+                "ja": "STUB",
+                "en": "STUB"
+              },
+              {
+                "ja": "2件",
+                "en": "2"
+              },
+              {
+                "ja": "半券のカードに、会場や座席、一緒に行った人も",
+                "en": "A stub card with the venue, seat, and who you went with"
+              },
+              {
+                "ja": "半券の画像を作ってSNSに共有",
+                "en": "Make a stub image to share on social media"
+              },
+              {
+                "ja": "半券10枚まで。その先は買い切り",
+                "en": "Up to 10 stubs, then a one-time purchase"
+              }
+            ],
+            [
+              {
+                "ja": "きれはし",
+                "en": "Kirehashi"
+              },
+              {
+                "ja": "1件",
+                "en": "1"
+              },
+              {
+                "ja": "半券や紙もの、写真を1ページに並べる",
+                "en": "Arranges stubs, paper scraps, and photos on a page"
+              },
+              {
+                "ja": "説明文に記載なし。外のサーバーに送らない",
+                "en": "Not mentioned. Nothing is sent to outside servers"
+              },
+              {
+                "ja": "10ページまで。その先は買い切り",
+                "en": "Up to 10 pages, then a one-time purchase"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "1本ずつ見ていく",
+        "en": "Each app, one by one"
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "id": "6444087177"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "美術館や博物館、乗り物、イベントなど、いろんなところで使ったチケットを、思い出として投稿するアプリです。紙のチケットだけでなく、電子チケットのスクショでも使えます。",
+            "en": "It's an app for posting tickets from art museums, museums, rides, events, and anywhere else, as keepsakes. It works with paper tickets and with screenshots of e-tickets."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "チケットの写真に、タイトル、行った日、コメント、ハッシュタグをつけて残します。ハッシュタグで分けておけば、あとから探しやすいです。",
+            "en": "Each ticket photo gets a title, the date you went, a comment, and hashtags. Sorting by hashtag makes them easier to find later."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "公開した投稿は、ほかの人も見られます。ほかの人がどんなチケットを残しているかを見られるのが、この中ではTicketManiaだけの特徴です。自分だけに残したい投稿は、非公開にできます。",
+            "en": "Public posts can be seen by others, and seeing what tickets other people keep is something only TicketMania does among these four. Posts you want to keep to yourself can be private."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "使うにはメールアドレスで登録します。無料だと続けて投稿できる数に限りがあって、広告を最後まで見るとまた投稿できます。サブスクリプションのサポーターになると、その限りがなくなります。",
+            "en": "You sign up with an email address. The free version limits how many posts you can make in a row, and watching an ad to the end lets you post again. Becoming a Supporter, a subscription, removes that limit."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6819102448"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "美術館や水族館、テーマパークのチケットの半券を、撮って集めるアプリです。撮ると背景を自動で切り抜いて、施設名と日付も自動で入ります。表と裏の両方を残せます。",
+            "en": "It collects ticket stubs from art museums, aquariums, and theme parks. Take a photo, and it cuts out the background and fills in the venue and date for you. You can keep both the front and the back."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "行った順にタイムラインに並び、ジャンルや施設名で探せます。アカウント登録も広告も課金もないと書かれていました。",
+            "en": "Stubs line up on a timeline in the order you went, and you can filter by genre or search by venue. The description says there is no account, no ads, and nothing to buy."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6784144760"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "ライブや舞台、スポーツの試合に何度も通う人に向けた、半券のコレクションです。チケットの写真をもとに半券のカードを作り、公演名、会場、日付、座席、天気、一緒に行った人を残せます。",
+            "en": "A stub collection for people who keep going to concerts, plays, and games. It turns your ticket photo into a stub card with the show, venue, date, seat, weather, and who you went with."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "当日の写真を1件に何枚もつけられて、推し色でカードを色分けできます。無料は半券10枚までで、買い切りのSTUB＋で無制限になります。",
+            "en": "You can attach several photos from the day to each entry and color-code the cards by artist or team. The free version holds 10 stubs, and the one-time STUB+ purchase makes it unlimited."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6803922209"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "旅の半券やレシート、包装紙などの紙ものと写真を選ぶと、1枚の紙面に自動で並べてくれるスクラップのアプリです。撮った紙片は、ちぎれた縁のまま貼られます。",
+            "en": "A scrapbook app that lays out paper keepsakes like travel stubs, receipts, and wrapping paper, along with photos, on one page automatically. Paper scraps keep their torn edges."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "半券の文字を端末の中で読み取って、日付や店名、公演名の候補を出してくれます。無料で10ページまで作れて、買い切りの製本版で制限がなくなり、PDFにも書き出せます。",
+            "en": "It reads the text on stubs on your device and suggests the date, shop, or show name. You can make 10 pages for free, and the one-time bound edition removes the limit and adds PDF export."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "アプリを入れたくないなら",
+        "en": "If you'd rather not install an app"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "紙の半券そのものを残したいなら、チケットファイルや箱にしまう方法があります。Googleの検索候補にも、チケットの思い出のアルバム、ボックス、ケースが並んでいました。",
+            "en": "If you want to keep the paper stubs themselves, a ticket file or a box works. Google's suggestions for ticket keepsakes include albums, boxes, and cases."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "ただ、電子チケットは紙が残りません。スクショを写真アプリに置いておくだけだと、ほかの写真に埋もれてしまいますね。",
+            "en": "E-tickets don't leave any paper, though. Screenshots kept in your Photos app tend to get buried under everything else."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "どれを選ぶか",
+        "en": "Which one to pick"
+      },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "ja": "美術館や水族館の半券を、登録なしでサッと集めたいなら、Ripmunk",
+              "en": "If you want to collect museum and aquarium stubs quickly with no account, Ripmunk"
+            },
+            {
+              "ja": "ライブや試合の半券に、座席や一緒に行った人まで残したいなら、STUB",
+              "en": "If you want seats and who you went with on your concert or game stubs, STUB"
+            },
+            {
+              "ja": "紙ものをスクラップ帳のようにまとめたいなら、きれはし",
+              "en": "If you want your paper keepsakes made into scrapbook pages, Kirehashi"
+            },
+            {
+              "ja": "ほかの人が残したチケットも見てみたいなら、TicketMania",
+              "en": "If you'd like to see the tickets other people keep, TicketMania"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "ja": "無料で使えますか？",
+        "en": "Are they free?"
+      },
+      "a": {
+        "ja": "4本とも無料で入れられます。STUBときれはしは、枚数やページ数が買い切りで増えます。Ripmunkは課金がないと書かれています。",
+        "en": "All four are free to download. STUB and Kirehashi unlock more stubs or pages with a one-time purchase. Ripmunk says it has nothing to buy."
+      }
+    },
+    {
+      "q": {
+        "ja": "電子チケットでも残せますか？",
+        "en": "Can I keep e-tickets?"
+      },
+      "a": {
+        "ja": "TicketManiaとSTUBは、電子チケットのスクショでも使えると説明文に書いてあります。",
+        "en": "TicketMania and STUB both say in their descriptions that screenshots of e-tickets work."
+      }
+    },
+    {
+      "q": {
+        "ja": "アカウントの登録は要りますか？",
+        "en": "Do I need an account?"
+      },
+      "a": {
+        "ja": "TicketManiaはメールアドレスでの登録が要ります。Ripmunk、STUB、きれはしは、登録が要らないと書かれています。",
+        "en": "TicketMania needs an email sign-up. Ripmunk, STUB, and Kirehashi say they need no account."
+      }
+    }
+  ],
+  "closing": {
+    "ja": "どこのチケットを残しているのか、TicketManiaでこっそり見せてもらえたらうれしいです🎫",
+    "en": "I'd be happy to get a peek at the tickets you keep, over on TicketMania 🎫"
+  },
+  "notes": {
+    "ja": "各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。",
+    "en": "Features and rating counts were checked against each app's App Store description on November 15, 2026, and may change with updates."
+  },
+  "illustration": {
+    "scene": "テーブルの上に、水族館の半券（文字なし、魚の絵柄だけ）が1枚置いてある。キャラがスマホを構えてそれを撮っていて、スマホの画面から同じ半券が小さなカードになって飛び出していく。カードのまわりには、ほかの人が残した色とりどりの半券のカード（文字なし、模様だけ）がふわふわ集まってくる。",
+    "alt": {
+      "ja": "水族館の半券をスマホで撮るキャラクター。画面から出たカードのまわりに、色とりどりの半券が集まってくる",
+      "en": "The character photographing an aquarium ticket stub as it flies out of the phone as a card, joined by colorful stubs from other people"
+    }
+  }
+}

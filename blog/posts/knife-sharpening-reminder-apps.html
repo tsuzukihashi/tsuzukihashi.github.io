@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/js/lang.js"></script>
+    <!-- このページは scripts/build_guides.py が docs/guides/knife-sharpening-reminder-apps.json から作る。直すのは JSON のほう -->
+    <title>包丁を研ぐ時期を教えてくれるアプリ3選 - Blog | Ryo Tsuzukihashi</title>
+    <meta name="description" content="包丁を研ぐ時期を知らせてくれるアプリを3本比べました。研ぎどきの決め方、通知、研ぎの記録、無料で使える範囲の違いをまとめています。KnifeKeepの作者が書いています。">
+    <meta name="title-en" content="3 Apps That Tell You When to Sharpen Your Kitchen Knives - Blog | Ryo Tsuzukihashi">
+    <meta name="description-en" content="I compared three iPhone apps that tell you when to sharpen your knives: how they set the date, notifications, sharpening logs, and what&#x27;s free. Written by the maker of KnifeKeep.">
+    <link rel="canonical" href="https://tsuzukit.com/blog/posts/knife-sharpening-reminder-apps.html">
+
+    <!-- OGP -->
+    <meta property="og:title" content="包丁を研ぐ時期を教えてくれるアプリ3選">
+    <meta property="og:description" content="包丁を研ぐ時期を知らせてくれるアプリを3本比べました。研ぎどきの決め方、通知、研ぎの記録、無料で使える範囲の違いをまとめています。KnifeKeepの作者が書いています。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://tsuzukit.com/blog/posts/knife-sharpening-reminder-apps.html">
+    <meta property="og:image" content="https://tsuzukit.com/assets/images/posts/knife-sharpening-reminder-apps.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://tsuzukit.com/assets/images/posts/knife-sharpening-reminder-apps.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-dark-32x32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-dark-16x16.png" media="(prefers-color-scheme: dark)">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERPQ1EGLH');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8240751277462688"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
+    <link rel="stylesheet" href="/assets/css/guide.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "包丁を研ぐ時期を教えてくれるアプリ3選",
+      "description": "包丁を研ぐ時期を知らせてくれるアプリを3本比べました。研ぎどきの決め方、通知、研ぎの記録、無料で使える範囲の違いをまとめています。KnifeKeepの作者が書いています。",
+      "image": "https://tsuzukit.com/assets/images/posts/knife-sharpening-reminder-apps.webp",
+      "datePublished": "2026-11-15",
+      "dateModified": "2026-11-15",
+      "inLanguage": "ja",
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "mainEntityOfPage": "https://tsuzukit.com/blog/posts/knife-sharpening-reminder-apps.html",
+      "about": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "包丁ケア KnifeKeep",
+          "url": "https://apps.apple.com/jp/app/id6782555676",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "包丁研ぎ記録とタイマー",
+          "url": "https://apps.apple.com/jp/app/id6771845696",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "EdgeVault - ナイフと包丁の研ぎ記録",
+          "url": "https://apps.apple.com/jp/app/id6781181072",
+          "operatingSystem": "iOS"
+        }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "包丁ケア KnifeKeep",
+      "operatingSystem": "iOS",
+      "applicationCategory": "LifestyleApplication",
+      "url": "https://apps.apple.com/jp/app/id6782555676",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "無料で使えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "3本とも無料で入れられます。KnifeKeepは無料だと3本まで。包丁研ぎ記録とタイマーは、研ぎの記録と通知に有料のProが要ります。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "シャープナーで研いでいる場合も使えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "KnifeKeepは研ぎ方を問わず、研いだ日から次の目安を数えます。シャープナーでも砥石でも、研いだら記録すれば大丈夫です。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "セラミックの包丁も自分で研げますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "アプリは時期を知らせるだけです。セラミックの研ぎ方は、包丁のメーカーか刃物店に聞いてください。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tsuzukit.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://tsuzukit.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "困りごとから選ぶアプリ",
+          "item": "https://tsuzukit.com/blog/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "包丁を研ぐ時期を教えてくれるアプリ3選",
+          "item": "https://tsuzukit.com/blog/posts/knife-sharpening-reminder-apps.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">TsuzuKit</a>
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/portfolio/" class="nav-link">Portfolio</a>
+                <a href="/blog/" class="nav-link active">Blog</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post -->
+    <article class="blog-post">
+        <header class="post-header">
+            <div class="post-meta">
+                <span class="post-date">2026.11.15</span>
+                <span class="post-category"><span class="i18n-ja">アプリの選び方</span><span class="i18n-en">App guides</span></span>
+                <span class="post-reading-time"><span class="i18n-ja">4分で読める</span><span class="i18n-en">4 min read</span></span>
+            </div>
+            <h1 class="post-title"><span class="i18n-ja">包丁を研ぐ時期を教えてくれるアプリ3選</span><span class="i18n-en">3 Apps That Tell You When to Sharpen Your Kitchen Knives</span></h1>
+        </header>
+        <figure class="post-illustration guide-illustration"><img src="/assets/images/posts/knife-sharpening-reminder-apps.webp" width="1200" height="800" alt="濡らした砥石で包丁を研ぎ、刃がきらっと光るのを見ているキャラクター" data-en-alt="The character carefully sharpening a kitchen knife on a wet whetstone as the edge catches the light" fetchpriority="high"></figure>
+
+        <div class="post-content guide i18n-ja">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">先に答え</p>
+                <p>研ぐ頻度は鋼材と使い方で変わります。砥石の番手や角度まで記録して腕を上げたいなら包丁研ぎ記録とタイマーかEdgeVault。家の包丁を鋼材ごとの目安で数えて、ハガネの錆びにも気づきたいなら、僕が作ったKnifeKeepが合います。</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">書いた人 <a href="https://tsuzukit.com/about/">續橋 涼</a>（@tsuzuki817）</p>
+                    <p class="guide-byline-bio">2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。KnifeKeepの作者です。</p>
+                    <p class="guide-byline-date">公開 <time datetime="2026-11-15">2026.11.15</time> · 更新 <time datetime="2026-11-15">2026.11.15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">この記事は、KnifeKeepを作った僕が書いています。ほかの2本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。</p>
+            <h2>3本をざっくり比べる</h2>
+            <p>研ぎどきを知らせるアプリと、研いだ中身を記録するアプリに分かれます。家で使う包丁の時期を忘れたくないのか、研ぎの腕を上げたいのかで選び方が変わります。</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">アプリ</th><th scope="col">評価の件数</th><th scope="col">研ぎどきの決め方</th><th scope="col">通知</th><th scope="col">研ぎの記録</th><th scope="col">無料の範囲</th></tr></thead><tbody><tr><th scope="row">KnifeKeep（僕のアプリ）</th><td>0件</td><td>鋼材から目安を出す</td><td>2週間前と3日前と当日。過ぎたら毎日</td><td>砥石と所感。プレミアム</td><td>包丁3本まで</td></tr><tr><th scope="row">包丁研ぎ記録とタイマー</th><td>0件</td><td>刃物ごとに間隔を決める</td><td>切れ味が落ちる前に通知</td><td>砥石ごとの時間、角度、評価</td><td>記録と通知はProに入っている</td></tr><tr><th scope="row">EdgeVault</th><td>1件</td><td>研いだ回数と平均の間隔を表示</td><td>説明文に記載なし</td><td>砥石の順番、角度、時間、評価、写真</td><td>ナイフ10本、砥石10本まで</td></tr></tbody></table></div>
+            <h2>1本ずつ見ていく</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/07/66/c3/0766c392-682d-43a9-62a4-ea0874a3b17a/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">僕が作ったアプリ</span>
+                    <h3 class="guide-app-name">包丁ケア KnifeKeep</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · App Storeの評価 0件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6782555676" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>鋼材を選ぶと、研ぎどきの目安が最初に入ります。ステンレスは8週間ごと、ハガネは4週間ごと、ダマスカスは6週間ごと、セラミックは24週間ごとです。目安は2週間から24週間の中で直せます。</p>
+            <p>通知は研ぎどきの2週間前と3日前と当日です。過ぎたら、研いだと記録するまで毎日鳴ります。ハガネは最後に使ってから3日、ダマスカスは7日たつと錆びるかもと出るので、拭くか油を塗るかのきっかけになります。</p>
+            <p>無料だと包丁は3本まで登録できます。置き場所で分けるのと、砥石や所感を残すお手入れの記録はプレミアムです。研ぐときのタイマーはありません。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/0c/76/97/0c76974b-c396-a068-829c-35da1351de53/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">包丁研ぎ記録とタイマー</h3>
+                    <p class="guide-app-meta">Linh Phan Nhat Khanh · App Storeの評価 0件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6771845696" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>研ぐ作業そのものを記録するアプリです。研ぎ始めにタイマーを動かして、番手を変えるたびに使った砥石と分数を足していきます。最後に仕上がりを5段階で評価します。</p>
+            <p>刃物ごとに手入れの間隔を決めて、通知を受け取れます。研ぎ直しまでの平均日数も出ます。ただ、研ぎの記録も刃物ごとのリマインダーも、Proに入っていると書かれています。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/3e/55/9b/3e559b47-3162-190d-5d14-fef0310ed0ff/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">EdgeVault - ナイフと包丁の研ぎ記録</h3>
+                    <p class="guide-app-meta">kazuki korenori · App Storeの評価 1件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6781181072" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>ナイフの収集と研ぎが好きな人のための台帳です。研いだときの砥石の順番、角度、時間、評価、前後の写真を残せて、ナイフごとに研いだ回数と平均の間隔が出ます。</p>
+            <p>無料でナイフ10本と砥石10本まで登録でき、主な機能はほとんど無料です。研ぎどきの通知については、説明文には書かれていませんでした。</p>
+            <h2>研ぐ頻度はどう決めるか</h2>
+            <p>研ぐ頻度は、鋼材のほかに、毎日どれだけ使うかやまな板の材質でも変わります。KnifeKeepの目安は出発点なので、切れ味が落ちたと感じた日に合わせて直していくのがいいと思います。</p>
+            <p>研ぎ方や砥石の選び方は、包丁を買ったお店や刃物店に聞くのが確かです。</p>
+            <h2>どれを選ぶか</h2>
+            <ul class="guide-list"><li>研ぎの時間と砥石の流れを測って、腕を上げたいなら、包丁研ぎ記録とタイマー</li><li>ナイフと砥石のコレクションを無料で多めに管理したいなら、EdgeVault</li><li>家の包丁の研ぎどきと錆びを、通知で教えてほしいなら、KnifeKeep</li></ul>
+            <h2>よくある質問</h2>
+            <dl class="guide-faq">
+                <dt>無料で使えますか？</dt><dd>3本とも無料で入れられます。KnifeKeepは無料だと3本まで。包丁研ぎ記録とタイマーは、研ぎの記録と通知に有料のProが要ります。</dd>
+                <dt>シャープナーで研いでいる場合も使えますか？</dt><dd>KnifeKeepは研ぎ方を問わず、研いだ日から次の目安を数えます。シャープナーでも砥石でも、研いだら記録すれば大丈夫です。</dd>
+                <dt>セラミックの包丁も自分で研げますか？</dt><dd>アプリは時期を知らせるだけです。セラミックの研ぎ方は、包丁のメーカーか刃物店に聞いてください。</dd>
+            </dl>
+            <p>KnifeKeepはまだ評価が0件です。台所の1本を入れてみた人がいたら、ぜひ聞かせてください🔪</p>
+            <div class="guide-notes">各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。研ぎの周期は一般的な目安なので、使い方に合わせて直してください。</div>
+        </div>
+
+        <div class="post-content guide i18n-en">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">Short answer</p>
+                <p>How often to sharpen depends on the steel and how you use the knife. If you want to log whetstone grits and angles to improve your technique, look at Knife Sharpening Log &amp; Timer or EdgeVault. If you want your kitchen knives counted down by steel type, with a nudge before carbon steel rusts, KnifeKeep, which I made, fits.</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">Written by <a href="https://tsuzukit.com/about/">Ryo Tsuzukihashi</a> (@tsuzuki817)</p>
+                    <p class="guide-byline-bio">I&#x27;ve been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made KnifeKeep.</p>
+                    <p class="guide-byline-date">Published <time datetime="2026-11-15">2026-11-15</time> · Updated <time datetime="2026-11-15">2026-11-15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">I made KnifeKeep, and I wrote this article. The other two apps are by developers I don&#x27;t know, and I haven&#x27;t received money or anything else from them. Everything compared here comes from each app&#x27;s App Store description and rating count as of November 15, 2026.</p>
+            <h2>The three apps at a glance</h2>
+            <p>These split into apps that remind you when to sharpen and apps that record how you sharpened. Which one fits depends on whether you just don&#x27;t want to forget, or want to get better at sharpening.</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">App</th><th scope="col">Ratings</th><th scope="col">How the date is set</th><th scope="col">Notifications</th><th scope="col">Sharpening log</th><th scope="col">Free version</th></tr></thead><tbody><tr><th scope="row">KnifeKeep (my app)</th><td>0</td><td>Set from the type of steel</td><td>2 weeks before, 3 days before, and on the day, then daily</td><td>Whetstone and notes, with Premium</td><td>Up to 3 knives</td></tr><tr><th scope="row">Knife Sharpening Log &amp; Timer</th><td>0</td><td>You set an interval for each knife</td><td>Notifies you before the edge dulls</td><td>Time per stone, angle, and rating</td><td>Logging and reminders are part of Pro</td></tr><tr><th scope="row">EdgeVault</th><td>1</td><td>Shows how many times and the average gap</td><td>Not mentioned</td><td>Stone order, angle, time, rating, and photos</td><td>Up to 10 knives and 10 stones</td></tr></tbody></table></div>
+            <h2>Each app, one by one</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/07/66/c3/0766c392-682d-43a9-62a4-ea0874a3b17a/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">I made this</span>
+                    <h3 class="guide-app-name">KnifeKeep: Blade Care</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · 0 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6782555676" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>Pick the type of steel and a sharpening interval is filled in for you. Stainless starts at every 8 weeks, carbon steel at every 4 weeks, Damascus at every 6 weeks, and ceramic at every 24 weeks. You can change it to anything from 2 to 24 weeks.</p>
+            <p>It notifies you 2 weeks before, 3 days before, and on the day. After that, it reminds you every day until you log a sharpening. A carbon steel knife shows a may-rust label 3 days after you last used it, and Damascus after 7, as a cue to wipe it down or oil it.</p>
+            <p>The free version holds up to 3 knives. Grouping by storage spot and a care log with the whetstone and your notes are Premium features. There&#x27;s no sharpening timer.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/0c/76/97/0c76974b-c396-a068-829c-35da1351de53/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Knife Sharpening Log &amp; Timer</h3>
+                    <p class="guide-app-meta">Linh Phan Nhat Khanh · 0 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6771845696" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>This app records the sharpening session itself. You start a timer as you begin, and add each stone and how many minutes you spent as you move through the grits. At the end, you rate the result out of five.</p>
+            <p>You can set a care interval for each knife and get notifications, and it shows the average days between sharpenings. However, the description says both session logging and per-knife reminders are part of Pro.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/3e/55/9b/3e559b47-3162-190d-5d14-fef0310ed0ff/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">EdgeVault</h3>
+                    <p class="guide-app-meta">kazuki korenori · 1 App Store rating</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6781181072" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>A ledger for people who collect knives and enjoy sharpening. You can record the order of stones, angle, time, a rating, and before and after photos, and each knife shows how many times you&#x27;ve sharpened it and the average gap.</p>
+            <p>The free version holds 10 knives and 10 stones, and almost every main feature is free. The description doesn&#x27;t mention reminders for when to sharpen.</p>
+            <h2>How to decide how often to sharpen</h2>
+            <p>How often to sharpen depends not only on the steel but also on how much you cook and what your cutting board is made of. KnifeKeep&#x27;s intervals are a starting point, so adjust them to when you actually notice the edge going dull.</p>
+            <p>For how to sharpen and which stones to use, the shop where you bought the knife or a cutlery store is the best place to ask.</p>
+            <h2>Which one to pick</h2>
+            <ul class="guide-list"><li>If you want to time your sessions and track your grit progression to get better, Knife Sharpening Log &amp; Timer</li><li>If you want to manage a larger collection of knives and stones for free, EdgeVault</li><li>If you want notifications for when your kitchen knives need sharpening and when they might rust, KnifeKeep</li></ul>
+            <h2>FAQ</h2>
+            <dl class="guide-faq">
+                <dt>Are they free?</dt><dd>All three are free to download. KnifeKeep holds 3 knives for free. Knife Sharpening Log &amp; Timer needs the paid Pro for logging and reminders.</dd>
+                <dt>Does it work if I use a pull-through sharpener?</dt><dd>KnifeKeep counts to the next date from the day you sharpened, whatever method you use. Whether it&#x27;s a pull-through sharpener or a whetstone, just log it when you&#x27;re done.</dd>
+                <dt>Can I sharpen a ceramic knife myself?</dt><dd>The apps only tell you when. For how to sharpen ceramic, ask the knife&#x27;s maker or a cutlery store.</dd>
+            </dl>
+            <p>KnifeKeep has no ratings yet. If you try it with a knife from your kitchen, please let me know how it goes 🔪</p>
+            <div class="guide-notes">Features and rating counts were checked against each app&#x27;s App Store description on November 15, 2026, and may change with updates. Sharpening intervals are general guidelines, so adjust them to how you use your knives.</div>
+        </div>
+
+        <nav class="post-navigation">
+            <img class="tk-char tk-char--post" src="/assets/images/character-hang.png" alt="" width="381" height="208">
+            <a href="/blog/guides/" class="nav-link-wrapper"><span>&larr; <span class="i18n-ja">困りごとから選ぶアプリの一覧へ</span><span class="i18n-en">All guides: apps for everyday problems</span></span></a>
+        </nav>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
+                    <p class="footer-description"><span class="i18n-ja">誰も作らないものを、まじめに作る</span><span class="i18n-en">I make things nobody else would, and I make them seriously</span></p>
+                </div>
+                <div class="footer-nav">
+                    <a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
+                    <a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
+                    <a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
+                    <a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ryo Tsuzukihashi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

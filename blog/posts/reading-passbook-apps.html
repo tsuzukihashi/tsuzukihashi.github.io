@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/js/lang.js"></script>
+    <!-- このページは scripts/build_guides.py が docs/guides/reading-passbook-apps.json から作る。直すのは JSON のほう -->
+    <title>読んだ本の金額が貯まる読書通帳アプリ3選 - Blog | Ryo Tsuzukihashi</title>
+    <meta name="description" content="読んだ本の金額を通帳のように記帳していくアプリを3本比べました。貯まる金額の意味、本の入れ方、ほかにできることの違いをまとめています。もくもくの作者が書いています。">
+    <meta name="title-en" content="3 Reading Passbook Apps That Add Up What Your Books Are Worth - Blog | Ryo Tsuzukihashi">
+    <meta name="description-en" content="I compared three iPhone apps that log the books you read like entries in a bank passbook: what the total means, how you add books, and what else they do. Written by the maker of Mokumoku.">
+    <link rel="canonical" href="https://tsuzukit.com/blog/posts/reading-passbook-apps.html">
+
+    <!-- OGP -->
+    <meta property="og:title" content="読んだ本の金額が貯まる読書通帳アプリ3選">
+    <meta property="og:description" content="読んだ本の金額を通帳のように記帳していくアプリを3本比べました。貯まる金額の意味、本の入れ方、ほかにできることの違いをまとめています。もくもくの作者が書いています。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://tsuzukit.com/blog/posts/reading-passbook-apps.html">
+    <meta property="og:image" content="https://tsuzukit.com/assets/images/posts/reading-passbook-apps.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://tsuzukit.com/assets/images/posts/reading-passbook-apps.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-dark-32x32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-dark-16x16.png" media="(prefers-color-scheme: dark)">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERPQ1EGLH');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8240751277462688"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
+    <link rel="stylesheet" href="/assets/css/guide.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "読んだ本の金額が貯まる読書通帳アプリ3選",
+      "description": "読んだ本の金額を通帳のように記帳していくアプリを3本比べました。貯まる金額の意味、本の入れ方、ほかにできることの違いをまとめています。もくもくの作者が書いています。",
+      "image": "https://tsuzukit.com/assets/images/posts/reading-passbook-apps.webp",
+      "datePublished": "2026-11-15",
+      "dateModified": "2026-11-15",
+      "inLanguage": "ja",
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "mainEntityOfPage": "https://tsuzukit.com/blog/posts/reading-passbook-apps.html",
+      "about": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "もくもく - 読書銀行・読んだ本が貯まる読書記録",
+          "url": "https://apps.apple.com/jp/app/id1487377681",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "読書貯金｜読んだ本が資産になる読書記録",
+          "url": "https://apps.apple.com/jp/app/id6756208773",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "通帳型読書記録と本のメモをまとめて読み返し「レコドク」",
+          "url": "https://apps.apple.com/jp/app/id1468035816",
+          "operatingSystem": "iOS"
+        }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "もくもく - 読書銀行・読んだ本が貯まる読書記録",
+      "operatingSystem": "iOS",
+      "applicationCategory": "BookApplication",
+      "url": "https://apps.apple.com/jp/app/id1487377681",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "無料で使えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "3本とも無料で入れられます。もくもくは記帳と統計が無料で、バックアップなどがスーパーもくもくプランです。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "図書館で借りた本も記録できますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "そのために作られているのは読書貯金です。もくもくは、買った本に払った金額を記帳する作りです。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ほかの読書アプリから引っ越せますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "もくもくは、ブクログなどが書き出したCSVから取り込めます。読書メーターからの取り込みはスーパーもくもくプランです。読書貯金も、説明文に取り込みの機能があると書かれています。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tsuzukit.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://tsuzukit.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "困りごとから選ぶアプリ",
+          "item": "https://tsuzukit.com/blog/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "読んだ本の金額が貯まる読書通帳アプリ3選",
+          "item": "https://tsuzukit.com/blog/posts/reading-passbook-apps.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">TsuzuKit</a>
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/portfolio/" class="nav-link">Portfolio</a>
+                <a href="/blog/" class="nav-link active">Blog</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post -->
+    <article class="blog-post">
+        <header class="post-header">
+            <div class="post-meta">
+                <span class="post-date">2026.11.15</span>
+                <span class="post-category"><span class="i18n-ja">アプリの選び方</span><span class="i18n-en">App guides</span></span>
+                <span class="post-reading-time"><span class="i18n-ja">4分で読める</span><span class="i18n-en">4 min read</span></span>
+            </div>
+            <h1 class="post-title"><span class="i18n-ja">読んだ本の金額が貯まる読書通帳アプリ3選</span><span class="i18n-en">3 Reading Passbook Apps That Add Up What Your Books Are Worth</span></h1>
+        </header>
+        <figure class="post-illustration guide-illustration"><img src="/assets/images/posts/reading-passbook-apps.webp" width="1200" height="800" alt="読み終えた本を抱えて、通帳のような手帳に1行増えたのを見るキャラクター" data-en-alt="The character hugging a finished book and looking at a new line added to a passbook-style notebook" fetchpriority="high"></figure>
+
+        <div class="post-content guide i18n-ja">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">先に答え</p>
+                <p>図書館で借りた本や読み放題で読んだ本を、浮いたお金として貯めたいなら読書貯金です。本のメモを要約と画像でまとめて読み返したいならレコドク。買った本に払った金額を記帳して、本代をひと目で見たい人は、僕が作ったもくもくを見てみてください。</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">書いた人 <a href="https://tsuzukit.com/about/">續橋 涼</a>（@tsuzuki817）</p>
+                    <p class="guide-byline-bio">2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。もくもくの作者です。</p>
+                    <p class="guide-byline-date">公開 <time datetime="2026-11-15">2026.11.15</time> · 更新 <time datetime="2026-11-15">2026.11.15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">この記事は、もくもくを作った僕が書いています。ほかの2本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。</p>
+            <h2>3本をざっくり比べる</h2>
+            <p>3本とも、読んだ本を通帳の1行のように残していきます。違いが出るのは、貯まっていく金額が何のお金なのかです。</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">アプリ</th><th scope="col">評価の件数</th><th scope="col">貯まる金額</th><th scope="col">本の入れ方</th><th scope="col">ほかにできること</th></tr></thead><tbody><tr><th scope="row">もくもく（僕のアプリ）</th><td>46件</td><td>買った本に払った金額</td><td>バーコード、まとめて記帳、ほかのアプリから取り込み</td><td>ページごとの読書メモ</td></tr><tr><th scope="row">読書貯金</th><td>49件</td><td>借りた本や読み放題の本の定価</td><td>バーコード、タイトル検索</td><td>家族ごとの本棚</td></tr><tr><th scope="row">レコドク</th><td>38件</td><td>本の価格の合計</td><td>説明文に記載なし</td><td>要約と画像のメモ、返却日のお知らせ</td></tr></tbody></table></div>
+            <h2>1本ずつ見ていく</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7f/1b/be/7f1bbe1d-b2f2-0e3a-32c1-c40953bfef72/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">僕が作ったアプリ</span>
+                    <h3 class="guide-app-name">もくもく - 読書銀行・読んだ本が貯まる読書記録</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · App Storeの評価 46件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id1487377681" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        <a class="guide-app-android" href="https://play.google.com/store/apps/details?id=com.tsuzuki817.bookbank" target="_blank" rel="noopener noreferrer">Google Play版</a>
+                    </div>
+                </div>
+            </div>
+            <p>本の裏のバーコードを読み取ると、書名、著者、表紙、価格が入って、通帳に1行記帳されます。本棚の本は続けて読み取って、まとめて記帳できます。中古やセールで買った本は、払った金額に直せます。</p>
+            <p>統計の画面で、週ごとの本代と、今月や先月の合計金額と冊数が見られます。ブクログなどが書き出したCSVから、本と感想をまとめて取り込むこともできます。</p>
+            <p>記帳と統計は無料です。バックアップ、続きものの新刊のお知らせ、読書メーターからの取り込みは、スーパーもくもくプランという月額か年額のサブスクリプションに入っています。Google PlayにAndroid版もあります。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/2c/a8/30/2ca8308d-bbb9-208f-9b98-1147a1227dce/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">読書貯金｜読んだ本が資産になる読書記録</h3>
+                    <p class="guide-app-meta">Miyuki Fujirai · App Storeの評価 49件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6756208773" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>図書館で借りた本や、読み放題で読んだ本を記録すると、その本の定価の分が貯金として貯まっていきます。本を買う代わりにいくら浮いたかが見える作りです。</p>
+            <p>家族それぞれの本棚を分けられるので、子どもの読書の記録にも向いてます。同じ本を何回借りたかも分かって、毎月のレポートを画像にして共有できます。料金については、説明文に書かれていませんでした。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/29/c9/2b/29c92be6-fa57-9c03-3982-2f1f95d2f851/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">通帳型読書記録と本のメモをまとめて読み返し「レコドク」</h3>
+                    <p class="guide-app-meta">mitsuhiro nara · App Storeの評価 38件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id1468035816" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>読んだ本の履歴を、銀行の預金通帳のように並べるアプリです。書名と日付に加えて、価格、評価、読み終えたか読んでいる途中かが一覧で見られます。</p>
+            <p>本ごとに要約を書いたり、本の図やメモを写真で残したりして、カテゴリごとにまとめて読み返せます。借りた本の返却を知らせる通知と、合計の冊数、価格、ページ数の統計もあります。</p>
+            <h2>アプリを入れたくないなら</h2>
+            <p>図書館によっては、借りた本を印字できる読書通帳を用意しているところがあります。住んでいる地域の図書館に聞いてみてください。</p>
+            <p>紙のノートに、日付と書名と値段を1行ずつ書いていくのでも十分です。合計を出す計算を自分でやることになるので、そこを任せたいならアプリですね。</p>
+            <h2>どれを選ぶか</h2>
+            <ul class="guide-list"><li>図書館や読み放題で読む人、子どもの読書を記録したい人は、読書貯金</li><li>本のメモや要約をまとめて読み返したいなら、レコドク</li><li>買った本の本代を記帳して、Androidでも使いたいなら、もくもく</li></ul>
+            <h2>よくある質問</h2>
+            <dl class="guide-faq">
+                <dt>無料で使えますか？</dt><dd>3本とも無料で入れられます。もくもくは記帳と統計が無料で、バックアップなどがスーパーもくもくプランです。</dd>
+                <dt>図書館で借りた本も記録できますか？</dt><dd>そのために作られているのは読書貯金です。もくもくは、買った本に払った金額を記帳する作りです。</dd>
+                <dt>ほかの読書アプリから引っ越せますか？</dt><dd>もくもくは、ブクログなどが書き出したCSVから取り込めます。読書メーターからの取り込みはスーパーもくもくプランです。読書貯金も、説明文に取り込みの機能があると書かれています。</dd>
+            </dl>
+            <p>もくもくの評価はいま46件なので、47件目をもらえたらうれしいです📚</p>
+            <div class="guide-notes">各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。もくもくの機能はアプリのコードとストアの説明文で確かめました。アップデートで変わることがあります。</div>
+        </div>
+
+        <div class="post-content guide i18n-en">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">Short answer</p>
+                <p>If you want library books and books from a reading subscription to add up as money you saved, Reading Savings is the one. If you want to reread summaries and photo notes from your books in one place, try RecoDoku. If you want to log what you actually paid for each book and see your book spending at a glance, take a look at Mokumoku, which I made.</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">Written by <a href="https://tsuzukit.com/about/">Ryo Tsuzukihashi</a> (@tsuzuki817)</p>
+                    <p class="guide-byline-bio">I&#x27;ve been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made Mokumoku.</p>
+                    <p class="guide-byline-date">Published <time datetime="2026-11-15">2026-11-15</time> · Updated <time datetime="2026-11-15">2026-11-15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">I made Mokumoku, and I wrote this article. The other two apps are by developers I don&#x27;t know, and I haven&#x27;t received money or anything else from them. Everything compared here comes from each app&#x27;s App Store description and rating count as of November 15, 2026.</p>
+            <h2>The three apps at a glance</h2>
+            <p>All three log each book like a line in a bank passbook. The real difference is what the growing total actually stands for.</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">App</th><th scope="col">Ratings</th><th scope="col">What adds up</th><th scope="col">Adding books</th><th scope="col">Also</th></tr></thead><tbody><tr><th scope="row">Mokumoku (my app)</th><td>46</td><td>What you paid for books you bought</td><td>Barcode, batch logging, import from other apps</td><td>Reading notes for each page</td></tr><tr><th scope="row">Reading Savings</th><td>49</td><td>List price of books you borrowed or read on a subscription</td><td>Barcode, title search</td><td>A shelf for each family member</td></tr><tr><th scope="row">RecoDoku</th><td>38</td><td>Total price of your books</td><td>Not mentioned</td><td>Summaries and photo notes, return-date reminders</td></tr></tbody></table></div>
+            <h2>Each app, one by one</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7f/1b/be/7f1bbe1d-b2f2-0e3a-32c1-c40953bfef72/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">I made this</span>
+                    <h3 class="guide-app-name">Mokumoku - Reading Bank, a Book Log That Adds Up</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · 46 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id1487377681" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        <a class="guide-app-android" href="https://play.google.com/store/apps/details?id=com.tsuzuki817.bookbank" target="_blank" rel="noopener noreferrer">Android version on Google Play</a>
+                    </div>
+                </div>
+            </div>
+            <p>Scan the barcode on the back of a book and the title, author, cover, and price fill in, adding one line to your passbook. You can scan the books on your shelf one after another to log them all at once. For used or discounted books, you can change the amount to what you actually paid.</p>
+            <p>The stats screen shows what you spent on books each week, plus totals and book counts for this month and last month. You can also bring in your books and reviews from a CSV exported by apps like Booklog.</p>
+            <p>Logging and stats are free. Backups, alerts for new volumes in a series, and importing from Bookmeter come with the Super Mokumoku plan, a monthly or yearly subscription. There&#x27;s also an Android version on Google Play.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/2c/a8/30/2ca8308d-bbb9-208f-9b98-1147a1227dce/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Reading Savings: Book Tracker</h3>
+                    <p class="guide-app-meta">Miyuki Fujirai · 49 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6756208773" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>Log books you borrowed from the library or read on a subscription service, and their list price adds up as savings. It shows how much you saved by not buying them.</p>
+            <p>You can keep a separate shelf for each family member, so it works well for tracking kids&#x27; reading. It also shows how many times you&#x27;ve borrowed the same book, and you can share a monthly report as an image. The description doesn&#x27;t say anything about pricing.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/29/c9/2b/29c92be6-fa57-9c03-3982-2f1f95d2f851/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">RecoDoku - Passbook-Style Reading Log and Notes</h3>
+                    <p class="guide-app-meta">mitsuhiro nara · 38 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id1468035816" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>This app lays out your reading history like a bank savings passbook. Along with the title and date, you can see the price, your rating, and whether you&#x27;ve finished it or are still reading, all in one list.</p>
+            <p>You can write a summary for each book or save diagrams and notes as photos, then reread them grouped by category. There are also reminders to return borrowed books, and stats for your total book count, price, and pages.</p>
+            <h2>If you&#x27;d rather not install an app</h2>
+            <p>Some public libraries offer a reading passbook that prints the books you borrow. Ask at your local library.</p>
+            <p>Writing the date, title, and price on one line each in a paper notebook works fine too. You&#x27;d be adding up the totals yourself, so if you&#x27;d rather hand that off, that&#x27;s where an app helps.</p>
+            <h2>Which one to pick</h2>
+            <ul class="guide-list"><li>If you read library books or use a reading subscription, or want to track your kids’ reading, Reading Savings</li><li>If you want to reread your notes and summaries in one place, RecoDoku</li><li>If you want to log what you spend on books you buy, or you also use Android, Mokumoku</li></ul>
+            <h2>FAQ</h2>
+            <dl class="guide-faq">
+                <dt>Are they free?</dt><dd>All three are free to download. Mokumoku&#x27;s logging and stats are free, and backups and a few other features are part of the Super Mokumoku plan.</dd>
+                <dt>Can I log library books?</dt><dd>Reading Savings is built for exactly that. Mokumoku is built around logging what you paid for books you bought.</dd>
+                <dt>Can I move over from another reading app?</dt><dd>Mokumoku can import a CSV exported from apps like Booklog, and importing from Bookmeter is part of the Super Mokumoku plan. Reading Savings also says in its description that it can import records.</dd>
+            </dl>
+            <p>Mokumoku has 46 ratings right now, so I&#x27;d be happy to get number 47 📚</p>
+            <div class="guide-notes">Features and rating counts were checked against each app&#x27;s App Store description on November 15, 2026. Mokumoku&#x27;s features were checked in the app&#x27;s code and its store description. Things may change with updates.</div>
+        </div>
+
+        <nav class="post-navigation">
+            <img class="tk-char tk-char--post" src="/assets/images/character-hang.png" alt="" width="381" height="208">
+            <a href="/blog/guides/" class="nav-link-wrapper"><span>&larr; <span class="i18n-ja">困りごとから選ぶアプリの一覧へ</span><span class="i18n-en">All guides: apps for everyday problems</span></span></a>
+        </nav>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
+                    <p class="footer-description"><span class="i18n-ja">誰も作らないものを、まじめに作る</span><span class="i18n-en">I make things nobody else would, and I make them seriously</span></p>
+                </div>
+                <div class="footer-nav">
+                    <a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
+                    <a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
+                    <a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
+                    <a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ryo Tsuzukihashi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

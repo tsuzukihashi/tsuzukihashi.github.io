@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/js/lang.js"></script>
+    <!-- このページは scripts/build_guides.py が docs/guides/watch-overhaul-reminder-apps.json から作る。直すのは JSON のほう -->
+    <title>腕時計のオーバーホール時期を知らせてくれるアプリ3選 - Blog | Ryo Tsuzukihashi</title>
+    <meta name="description" content="腕時計のオーバーホールや電池交換の時期を知らせてくれるアプリを3本比べました。周期の決め方、通知の時期、着けていない時計の扱い、無料の範囲の違いをまとめています。WatchKeepの作者が書いています。">
+    <meta name="title-en" content="3 Apps That Remind You When Your Watch Is Due for Service - Blog | Ryo Tsuzukihashi">
+    <meta name="description-en" content="I compared three iPhone apps that remind you when your watch needs an overhaul or a battery change: how they set the interval, when they notify you, watches you haven&#x27;t worn, and what&#x27;s free. Written by the maker of WatchKeep.">
+    <link rel="canonical" href="https://tsuzukit.com/blog/posts/watch-overhaul-reminder-apps.html">
+
+    <!-- OGP -->
+    <meta property="og:title" content="腕時計のオーバーホール時期を知らせてくれるアプリ3選">
+    <meta property="og:description" content="腕時計のオーバーホールや電池交換の時期を知らせてくれるアプリを3本比べました。周期の決め方、通知の時期、着けていない時計の扱い、無料の範囲の違いをまとめています。WatchKeepの作者が書いています。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://tsuzukit.com/blog/posts/watch-overhaul-reminder-apps.html">
+    <meta property="og:image" content="https://tsuzukit.com/assets/images/posts/watch-overhaul-reminder-apps.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://tsuzukit.com/assets/images/posts/watch-overhaul-reminder-apps.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-dark-32x32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-dark-16x16.png" media="(prefers-color-scheme: dark)">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERPQ1EGLH');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8240751277462688"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
+    <link rel="stylesheet" href="/assets/css/guide.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "腕時計のオーバーホール時期を知らせてくれるアプリ3選",
+      "description": "腕時計のオーバーホールや電池交換の時期を知らせてくれるアプリを3本比べました。周期の決め方、通知の時期、着けていない時計の扱い、無料の範囲の違いをまとめています。WatchKeepの作者が書いています。",
+      "image": "https://tsuzukit.com/assets/images/posts/watch-overhaul-reminder-apps.webp",
+      "datePublished": "2026-11-15",
+      "dateModified": "2026-11-15",
+      "inLanguage": "ja",
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "mainEntityOfPage": "https://tsuzukit.com/blog/posts/watch-overhaul-reminder-apps.html",
+      "about": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "腕時計コレクション WatchKeep",
+          "url": "https://apps.apple.com/jp/app/id6781759617",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "時計オーバーホールノート - 腕時計の管理に",
+          "url": "https://apps.apple.com/jp/app/id6789848324",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "腕時計コレクション管理 CALIBRE",
+          "url": "https://apps.apple.com/jp/app/id6771723995",
+          "operatingSystem": "iOS"
+        }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "腕時計コレクション WatchKeep",
+      "operatingSystem": "iOS",
+      "applicationCategory": "LifestyleApplication",
+      "url": "https://apps.apple.com/jp/app/id6781759617",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "無料で使えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "3本とも無料で入れられて、どれも時計3本までは無料で登録できます。それより多いのは有料です。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "クォーツの時計にも使えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "WatchKeepはクォーツを選ぶと、電池交換の周期として数えます。時計オーバーホールノートとCALIBREも、説明文にクォーツや電池交換の記載があります。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "オーバーホールはどこに出せばいいですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "アプリは時期を知らせるだけです。出し先は、メーカーの正規サービスか、買った時計店に相談してください。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tsuzukit.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://tsuzukit.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "困りごとから選ぶアプリ",
+          "item": "https://tsuzukit.com/blog/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "腕時計のオーバーホール時期を知らせてくれるアプリ3選",
+          "item": "https://tsuzukit.com/blog/posts/watch-overhaul-reminder-apps.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">TsuzuKit</a>
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/portfolio/" class="nav-link">Portfolio</a>
+                <a href="/blog/" class="nav-link active">Blog</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post -->
+    <article class="blog-post">
+        <header class="post-header">
+            <div class="post-meta">
+                <span class="post-date">2026.11.15</span>
+                <span class="post-category"><span class="i18n-ja">アプリの選び方</span><span class="i18n-en">App guides</span></span>
+                <span class="post-reading-time"><span class="i18n-ja">4分で読める</span><span class="i18n-en">4 min read</span></span>
+            </div>
+            <h1 class="post-title"><span class="i18n-ja">腕時計のオーバーホール時期を知らせてくれるアプリ3選</span><span class="i18n-en">3 Apps That Remind You When Your Watch Is Due for Service</span></h1>
+        </header>
+        <figure class="post-illustration guide-illustration"><img src="/assets/images/posts/watch-overhaul-reminder-apps.webp" width="1200" height="800" alt="時計箱から腕時計を1本取り出し、耳に当てて動いているか確かめるキャラクター" data-en-alt="The character takes a watch from a watch box and holds it to an ear to check it&#x27;s still running" fetchpriority="high"></figure>
+
+        <div class="post-content guide i18n-ja">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">先に答え</p>
+                <p>オーバーホールの頻度はムーブメントと時計店の案内で決まるので、決めた周期を覚えておいてもらうのが楽です。精度の変化から時期を判断したいなら時計オーバーホールノート。着けていない時計を呼び戻したいならCALIBRE。止まっているかもしれない1本と、メンテを過ぎた1本を毎日知らせてほしいなら、僕が作ったWatchKeepが合います。</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">書いた人 <a href="https://tsuzukit.com/about/">續橋 涼</a>（@tsuzuki817）</p>
+                    <p class="guide-byline-bio">2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。WatchKeepの作者です。</p>
+                    <p class="guide-byline-date">公開 <time datetime="2026-11-15">2026.11.15</time> · 更新 <time datetime="2026-11-15">2026.11.15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">この記事は、WatchKeepを作った僕が書いています。ほかの2本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。</p>
+            <h2>3本をざっくり比べる</h2>
+            <p>3本ともオーバーホールの時期を知らせてくれます。違いが出るのは、時期を何から決めるかと、時計の扱いのどこまでを見るかです。</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">アプリ</th><th scope="col">評価の件数</th><th scope="col">周期の決め方</th><th scope="col">通知の時期</th><th scope="col">着けていない時計</th><th scope="col">無料の範囲</th></tr></thead><tbody><tr><th scope="row">WatchKeep（僕のアプリ）</th><td>0件</td><td>ムーブメントから目安を出す</td><td>2週間前と3日前と当日。過ぎたら毎日</td><td>止まってるかもと表示</td><td>時計3本まで</td></tr><tr><th scope="row">時計オーバーホールノート</th><td>0件</td><td>2〜10年の周期と、日差の変化</td><td>1か月前と当日</td><td>説明文に記載なし</td><td>時計3本まで</td></tr><tr><th scope="row">CALIBRE</th><td>1件</td><td>ムーブメントの種類から目安を出す</td><td>残りの日数で通知。時期は説明文に記載なし</td><td>着けていない日数を出して、朝に通知</td><td>時計3本まで。通知も無料</td></tr></tbody></table></div>
+            <h2>1本ずつ見ていく</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/07/a8/28/07a82882-098b-c0d5-7065-abb7172970af/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">僕が作ったアプリ</span>
+                    <h3 class="guide-app-name">腕時計コレクション WatchKeep</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · App Storeの評価 0件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6781759617" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>ムーブメントを選ぶと、メンテの周期が最初に入ります。自動巻きと手巻きは5年ごとのオーバーホール、クォーツは2年ごとの電池交換です。周期は1年から6年の中で直せます。</p>
+            <p>通知はメンテどきの2週間前と3日前と当日です。過ぎたら、済ませたと記録するまで毎日鳴ります。最後に着けた日から何日たったかも見ていて、自動巻きなら2日、手巻きなら1日を超えると止まってるかもと出ます。</p>
+            <p>無料だと時計は3本まで登録できます。ワインダーや金庫、ケースで分けるのと、お手入れの記録はプレミアムです。精度を測る機能はありません。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/db/a6/d0/dba6d0a8-01f3-27b5-c00c-d66b71a52455/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">時計オーバーホールノート - 腕時計の管理に</h3>
+                    <p class="guide-app-meta">towa imamoto · App Storeの評価 0件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6789848324" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>精度の変化からオーバーホールの時期を考えるアプリです。週に1回、基準の時刻と何秒ずれているかを入れると、日差を計算してグラフにします。ムーブメントごとの目安を超えると、オーバーホールを検討するよう知らせます。</p>
+            <p>前回のオーバーホールの日から、2年から10年の周期で次の目安を出し、1か月前と当日に通知します。オーバーホールや電池交換の履歴を、費用と依頼先つきで残せます。無料だと時計は3本までです。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b9/c4/db/b9c4db86-b575-5133-0ab5-4c33490bb5cb/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">腕時計コレクション管理 CALIBRE</h3>
+                    <p class="guide-app-meta">RYO FUJIMATSU · App Storeの評価 1件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6771723995" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>何本も持っている人のための台帳です。何日着けていないかを一覧で出して、朝の通知で呼び戻してくれます。オーバーホールの目安もムーブメントの種類から計算して、残りの日数で知らせます。</p>
+            <p>保証書やシリアルの記録もまとめられます。無料で時計3本まで登録できて、オーバーホールの通知も無料です。それより多い本数は月額の有料プランです。</p>
+            <h2>オーバーホールの頻度はどう決めるか</h2>
+            <p>オーバーホールの頻度は、ムーブメントや使い方、メーカーの案内で変わります。アプリに最初から入っている周期は、どれも一般的な目安です。</p>
+            <p>保証書やメーカーのサイトで推奨の周期を確かめるか、時計店で聞いてから、その年数をアプリに入れておくのが確かです。</p>
+            <h2>どれを選ぶか</h2>
+            <ul class="guide-list"><li>日差を記録して、精度の変化から時期を判断したいなら、時計オーバーホールノート</li><li>着けていない時計を呼び戻して、保証書もまとめたいなら、CALIBRE</li><li>メンテを過ぎたら毎日知らせてほしい、止まっていそうな1本にも気づきたいなら、WatchKeep</li></ul>
+            <h2>よくある質問</h2>
+            <dl class="guide-faq">
+                <dt>無料で使えますか？</dt><dd>3本とも無料で入れられて、どれも時計3本までは無料で登録できます。それより多いのは有料です。</dd>
+                <dt>クォーツの時計にも使えますか？</dt><dd>WatchKeepはクォーツを選ぶと、電池交換の周期として数えます。時計オーバーホールノートとCALIBREも、説明文にクォーツや電池交換の記載があります。</dd>
+                <dt>オーバーホールはどこに出せばいいですか？</dt><dd>アプリは時期を知らせるだけです。出し先は、メーカーの正規サービスか、買った時計店に相談してください。</dd>
+            </dl>
+            <p>WatchKeepはまだ評価が0件なので、引き出しの時計を入れてみた人の声を待ってます⌚</p>
+            <div class="guide-notes">各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。メンテの周期は一般的な目安なので、分解整備は時計店やメーカーの正規サービスに相談してください。</div>
+        </div>
+
+        <div class="post-content guide i18n-en">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">Short answer</p>
+                <p>How often to service a watch depends on the movement and what your watch shop recommends, so it&#x27;s easiest to let an app remember the interval. If you want to judge timing from changes in accuracy, try Watch Overhaul Note. If you want nudges to wear the watches you&#x27;ve been neglecting, CALIBRE. If you want daily reminders about overdue service and a heads-up when a watch may have stopped, WatchKeep, which I made, fits.</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">Written by <a href="https://tsuzukit.com/about/">Ryo Tsuzukihashi</a> (@tsuzuki817)</p>
+                    <p class="guide-byline-bio">I&#x27;ve been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made WatchKeep.</p>
+                    <p class="guide-byline-date">Published <time datetime="2026-11-15">2026-11-15</time> · Updated <time datetime="2026-11-15">2026-11-15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">I made WatchKeep, and I wrote this article. The other two apps are by developers I don&#x27;t know, and I haven&#x27;t received money or anything else from them. Everything compared here comes from each app&#x27;s App Store description and rating count as of November 15, 2026.</p>
+            <h2>The three apps at a glance</h2>
+            <p>All three remind you when service is due. The differences are what they base the timing on, and how much of owning a watch they cover.</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">App</th><th scope="col">Ratings</th><th scope="col">How the interval is set</th><th scope="col">When it notifies you</th><th scope="col">Watches you haven&#x27;t worn</th><th scope="col">Free version</th></tr></thead><tbody><tr><th scope="row">WatchKeep (my app)</th><td>0</td><td>Set from the movement type</td><td>2 weeks before, 3 days before, and on the day, then daily</td><td>Shows a may-have-stopped label</td><td>Up to 3 watches</td></tr><tr><th scope="row">Watch Overhaul Note</th><td>0</td><td>A 2 to 10 year cycle, plus changes in daily rate</td><td>A month before and on the day</td><td>Not mentioned</td><td>Up to 3 watches</td></tr><tr><th scope="row">CALIBRE</th><td>1</td><td>Set from the movement type</td><td>Notifies with days left, exact timing not mentioned</td><td>Shows days unworn and sends a morning nudge</td><td>Up to 3 watches, notifications included</td></tr></tbody></table></div>
+            <h2>Each app, one by one</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/07/a8/28/07a82882-098b-c0d5-7065-abb7172970af/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">I made this</span>
+                    <h3 class="guide-app-name">WatchKeep: Watch Care</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · 0 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6781759617" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>Pick the movement and a service interval is filled in for you. Automatic and hand-wound watches start at an overhaul every 5 years, and quartz at a battery change every 2 years. You can change it to anything from 1 to 6 years.</p>
+            <p>It notifies you 2 weeks before, 3 days before, and on the day. After that, it reminds you every day until you log the service. It also tracks how long since you last wore each watch, and shows a may-have-stopped label after 2 days for automatics and 1 day for hand-wound watches.</p>
+            <p>The free version holds up to 3 watches. Grouping by winder, safe, or case and keeping a care log are Premium features. It doesn&#x27;t measure accuracy.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/db/a6/d0/dba6d0a8-01f3-27b5-c00c-d66b71a52455/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Watch Overhaul Note</h3>
+                    <p class="guide-app-meta">towa imamoto · 0 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6789848324" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>This app helps you judge service timing from changes in accuracy. Once a week, you enter how many seconds your watch is off from a reference time, and it works out the daily rate and graphs it. If the rate goes past a guideline for the movement, it suggests considering an overhaul.</p>
+            <p>It works out the next date from your last overhaul on a 2 to 10 year cycle, and notifies you a month before and on the day. You can keep a history of overhauls and battery changes, with cost and where you sent it. The free version holds up to 3 watches.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b9/c4/db/b9c4db86-b575-5133-0ab5-4c33490bb5cb/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">CALIBRE: Watch Collection Manager</h3>
+                    <p class="guide-app-meta">RYO FUJIMATSU · 1 App Store rating</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6771723995" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>A ledger for people who own several watches. It lists how many days each one has gone unworn and nudges you with a morning notification. It also calculates the service guideline from the movement type and notifies you with the days left.</p>
+            <p>It also keeps warranty cards and serial numbers together. The free version holds 3 watches, and service reminders are free. More watches need the monthly paid plan.</p>
+            <h2>How to decide how often to service</h2>
+            <p>How often a watch needs service depends on the movement, how you use it, and what the maker recommends. The intervals built into these apps are all general guidelines.</p>
+            <p>Check the recommended interval in your warranty booklet or on the maker&#x27;s website, or ask a watch shop, and then put that number of years into the app.</p>
+            <h2>Which one to pick</h2>
+            <ul class="guide-list"><li>If you want to log the daily rate and judge timing from changes in accuracy, Watch Overhaul Note</li><li>If you want nudges to wear neglected watches and your warranty cards in one place, CALIBRE</li><li>If you want daily reminders once service is overdue and a heads-up when a watch may have stopped, WatchKeep</li></ul>
+            <h2>FAQ</h2>
+            <dl class="guide-faq">
+                <dt>Are they free?</dt><dd>All three are free to download, and each lets you add up to 3 watches for free. More than that is paid.</dd>
+                <dt>Do they work for quartz watches?</dt><dd>In WatchKeep, choosing quartz counts the interval as a battery change. Watch Overhaul Note and CALIBRE also mention quartz watches or battery changes in their descriptions.</dd>
+                <dt>Where should I send my watch for service?</dt><dd>The apps only tell you when. For where to send it, ask the maker&#x27;s authorized service center or the shop where you bought it.</dd>
+            </dl>
+            <p>WatchKeep has no ratings yet, so I&#x27;d love to hear from anyone who adds the watches sitting in their drawer ⌚</p>
+            <div class="guide-notes">Features and rating counts were checked against each app&#x27;s App Store description on November 15, 2026, and may change with updates. Service intervals are general guidelines, so talk to a watch shop or the maker&#x27;s authorized service about any servicing.</div>
+        </div>
+
+        <nav class="post-navigation">
+            <img class="tk-char tk-char--post" src="/assets/images/character-hang.png" alt="" width="381" height="208">
+            <a href="/blog/guides/" class="nav-link-wrapper"><span>&larr; <span class="i18n-ja">困りごとから選ぶアプリの一覧へ</span><span class="i18n-en">All guides: apps for everyday problems</span></span></a>
+        </nav>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
+                    <p class="footer-description"><span class="i18n-ja">誰も作らないものを、まじめに作る</span><span class="i18n-en">I make things nobody else would, and I make them seriously</span></p>
+                </div>
+                <div class="footer-nav">
+                    <a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
+                    <a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
+                    <a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
+                    <a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ryo Tsuzukihashi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

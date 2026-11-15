@@ -1,0 +1,455 @@
+{
+  "slug": "flight-focus-timer-apps",
+  "date_published": "2026-11-15",
+  "date_updated": "2026-11-15",
+  "search_phrase": {
+    "ja": "集中 アプリ 飛行機",
+    "en": "flight focus timer app"
+  },
+  "evidence": "2026-11-15 に Google の検索候補で「集中 アプリ 飛行機」を引くと、5件すべてが飛行機の集中アプリを探す語（勉強 集中 アプリ 飛行機、飛行機 集中 アプリ 無料 など）だった。「勉強 アプリ 飛行機」でも10件中8件が勉強や集中の語付き。「フォーカスフライト」は13件の候補に「無料 有料 違い」「無料 何 回 まで」「アプリ制限」が出て、無料でどこまで使えるかを気にする人が多い。同じ日に App Store で「集中 飛行機」を検索すると、FocusFlightが評価28,784件で先頭、ほかの飛行機の集中アプリは評価0〜133件だった。",
+  "title": {
+    "ja": "飛行機みたいに集中できるアプリ4選",
+    "en": "4 Focus Timer Apps That Turn Your Session Into a Trip"
+  },
+  "description": {
+    "ja": "飛行機の旅に見立てた集中タイマーアプリと、車で走る版を合わせて4本比べました。時間の決め方、アプリのブロック、有料になる機能の違いをまとめています。FocusDriveの作者が書いています。",
+    "en": "I compared four focus timer apps that turn a session into a journey, three by plane and one by car: how you set the time, app blocking, and what's paid. Written by the maker of FocusDrive."
+  },
+  "excerpt": {
+    "ja": "時間の決め方、アプリのブロック、有料の機能で、飛行機の3本と車の1本を比べました。FocusDriveを作った僕が書いています。",
+    "en": "Three plane apps and one car app compared on setting the time, app blocking, and paid features. I made FocusDrive, the car one."
+  },
+  "category": {
+    "ja": "アプリの選び方",
+    "en": "App guides"
+  },
+  "reading_minutes": 4,
+  "author": {
+    "name": {
+      "ja": "續橋 涼",
+      "en": "Ryo Tsuzukihashi"
+    },
+    "handle": "tsuzuki817",
+    "bio": {
+      "ja": "2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。FocusDriveの作者です。",
+      "en": "I've been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made FocusDrive."
+    },
+    "url": "https://tsuzukit.com/about/",
+    "same_as": [
+      "https://x.com/tsuzuki817"
+    ]
+  },
+  "tldr": {
+    "ja": "飛行機の集中アプリで探しているなら、まずは評価28,784件のFocusFlightです。窓からの景色を眺めたいならAirFlowかAirFocus。飛行機ではなく、地図の上を車で目的地まで走る形がいい人は、FocusFlightに影響を受けて僕が作ったFocusDriveも見てみてください。",
+    "en": "If you're looking for the plane-style focus app, start with FocusFlight, which has 28,784 ratings. If you want a view out the window, AirFlow or AirFocus. If you'd rather drive a car across a map to your destination than fly, take a look at FocusDrive, which I made after being inspired by FocusFlight."
+  },
+  "disclosure": {
+    "ja": "この記事は、FocusDriveを作った僕が書いています。ほかの3本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。",
+    "en": "I made FocusDrive, and I wrote this article. The other three apps are by developers I don't know, and I haven't received money or anything else from them. Everything compared here comes from each app's App Store description and rating count as of November 15, 2026."
+  },
+  "own_app": "6756264384",
+  "app_category": "ProductivityApplication",
+  "apps": [
+    {
+      "id": "6756264384",
+      "name": {
+        "ja": "FocusDrive - 集中タイマー",
+        "en": "FocusDrive - Focus Timer"
+      },
+      "short": {
+        "ja": "FocusDrive",
+        "en": "FocusDrive"
+      },
+      "developer": "Ryo Tsudukihashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e6/e6/09/e6e6093d-07ed-708a-1baa-15fbcb8358e8/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6756264384",
+      "android_url": null,
+      "rating_count": 1
+    },
+    {
+      "id": "6648771147",
+      "name": {
+        "ja": "FocusFlight - 集中を取り戻したいあなたへ",
+        "en": "FocusFlight - Deepfocus Timer"
+      },
+      "short": {
+        "ja": "FocusFlight",
+        "en": "FocusFlight"
+      },
+      "developer": "Cement Planet LTD",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/88/cf/61/88cf61d8-e9a3-af5e-612a-da03d648825e/AppIcon-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6648771147",
+      "android_url": null,
+      "rating_count": 28784
+    },
+    {
+      "id": "6760402981",
+      "name": {
+        "ja": "AirFlow: Focus Flight 集中タイマー",
+        "en": "AirFlow: Focus Flight Pomodoro"
+      },
+      "short": {
+        "ja": "AirFlow",
+        "en": "AirFlow"
+      },
+      "developer": "TapVolt Limited",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/40/8c/5c/408c5ca4-c0e5-097a-6882-ef2aa6726adc/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6760402981",
+      "android_url": null,
+      "rating_count": 133
+    },
+    {
+      "id": "6752571938",
+      "name": {
+        "ja": "AirFocus - フライト集中タイマー",
+        "en": "AirFocus - Flight Focus Timer"
+      },
+      "short": {
+        "ja": "AirFocus",
+        "en": "AirFocus"
+      },
+      "developer": "Sultan Javed",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/81/46/a0/8146a042-8582-eae7-c461-2d7e00047acc/AppIcon-0-0-1x_U007epad-0-1-sRGB-85-220.jpeg/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6752571938",
+      "android_url": null,
+      "rating_count": 71
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ja": "4本をざっくり比べる",
+        "en": "The four apps at a glance"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "どれも、集中する時間を旅に見立てて、着いたら終わりにするタイマーです。違いが出るのは、時間の決め方と、気が散るアプリを止められるかです。",
+            "en": "Each one treats your focus time as a trip that ends when you arrive. Where they differ is how the time gets set and whether they can block distracting apps."
+          }
+        },
+        {
+          "type": "table",
+          "head": [
+            {
+              "ja": "アプリ",
+              "en": "App"
+            },
+            {
+              "ja": "評価の件数",
+              "en": "Ratings"
+            },
+            {
+              "ja": "乗り物",
+              "en": "Vehicle"
+            },
+            {
+              "ja": "時間の決め方",
+              "en": "Setting the time"
+            },
+            {
+              "ja": "アプリのブロック",
+              "en": "App blocking"
+            },
+            {
+              "ja": "有料になるもの",
+              "en": "Paid features"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ja": "FocusDrive（僕のアプリ）",
+                "en": "FocusDrive (my app)"
+              },
+              {
+                "ja": "1件",
+                "en": "1"
+              },
+              {
+                "ja": "車",
+                "en": "Car"
+              },
+              {
+                "ja": "現在地から目的地まで車で走る時間",
+                "en": "Real driving time from where you are to the destination"
+              },
+              {
+                "ja": "無料であり",
+                "en": "Yes, free"
+              },
+              {
+                "ja": "ライブアクティビティ、一部の車と走行音",
+                "en": "Live Activity, some cars and driving sounds"
+              }
+            ],
+            [
+              {
+                "ja": "FocusFlight",
+                "en": "FocusFlight"
+              },
+              {
+                "ja": "28,784件",
+                "en": "28,784"
+              },
+              {
+                "ja": "飛行機",
+                "en": "Plane"
+              },
+              {
+                "ja": "タスクと集中時間を選ぶ",
+                "en": "Pick a task and a focus time"
+              },
+              {
+                "ja": "あり",
+                "en": "Yes"
+              },
+              {
+                "ja": "月額か年額のプラン。区分は説明文に記載なし",
+                "en": "Monthly or yearly plan. Split not mentioned"
+              }
+            ],
+            [
+              {
+                "ja": "AirFlow",
+                "en": "AirFlow"
+              },
+              {
+                "ja": "133件",
+                "en": "133"
+              },
+              {
+                "ja": "飛行機",
+                "en": "Plane"
+              },
+              {
+                "ja": "目標と集中時間を設定",
+                "en": "Set a goal and a focus time"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              }
+            ],
+            [
+              {
+                "ja": "AirFocus",
+                "en": "AirFocus"
+              },
+              {
+                "ja": "71件",
+                "en": "71"
+              },
+              {
+                "ja": "飛行機",
+                "en": "Plane"
+              },
+              {
+                "ja": "目的地を設定",
+                "en": "Set a destination"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "窓の景色、地図の変更、無制限のフライトなど",
+                "en": "Window view, map styles, unlimited flights, and more"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "1本ずつ見ていく",
+        "en": "Each app, one by one"
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "id": "6756264384"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "飛行機ではなく、車で地図の上を走ります。現在地から目的地を選ぶと、Appleのマップで出した車の所要時間が、そのまま集中する時間になります。近い場所なら短く、遠い場所なら長く集中する形です。",
+            "en": "Instead of flying, you drive a car across a map. Pick a destination from where you are, and the driving time Apple Maps calculates becomes your focus time. A nearby place means a short session, and a faraway one means a long one."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "走っている間は、選んだアプリをスクリーンタイムの仕組みで止めます。これは無料で使えます。晴れと雨で走る音が変わって、着いた場所や走った距離、続けた日数が残ります。",
+            "en": "While you drive, it blocks the apps you choose through Screen Time, and that part is free. The driving sound changes with sunny or rainy weather, and it keeps track of places you've reached, distance driven, and your streak."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "ダイナミックアイランドとロック画面に残り時間を出すライブアクティビティ、一部の車と走行音は、有料のProです。無料版には広告が出ます。",
+            "en": "The Live Activity that shows time left on the Dynamic Island and Lock Screen, plus some cars and driving sounds, are part of the paid Pro. The free version shows ads."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6648771147"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "評価が28,784件あって、飛行機の集中アプリといえばこれです。搭乗券を作って離陸し、着陸までを集中する時間にします。App Storeの今日のAppにも選ばれたと説明文にあります。",
+            "en": "With 28,784 ratings, this is the app people mean by a flight focus app. You make a boarding pass, take off, and focus until you land. Its description says it was picked as App of the Day on the App Store."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "飛行機モードをオンにすると、気が散るアプリやWebサイトを止められます。3Dの地図、行き先を決めないランダムルート、ホワイトノイズもあります。月額か年額のプランがありますが、無料でどこまで使えるかは説明文に書かれていませんでした。",
+            "en": "Turn on airplane mode and it blocks distracting apps and websites. It also has 3D maps, a random route mode for when you don't want to pick a destination, and white noise. There's a monthly or yearly plan, but the description doesn't say what's included for free."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6760402981"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "機内の窓から景色を眺めるような画面で、集中する時間を過ごします。機内の音や雨、自然のホワイトノイズを流せて、ウィジェットからフライトを始められます。",
+            "en": "You spend your focus time looking at a view like the one from a plane window. It can play cabin sounds, rain, or nature as white noise, and you can start a flight from a widget."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "毎日のフライトのリマインダーも設定できます。アプリを止める機能と、何が有料かは、説明文には書かれていませんでした。",
+            "en": "You can also set a daily flight reminder. The description doesn't mention app blocking or which features are paid."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6752571938"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "目的地を決めて離陸し、着陸まで集中します。地図は標準、衛星、地形、モノクロから選べて、訪れた空港や集中した時間の統計が見られます。",
+            "en": "Pick a destination, take off, and stay focused until you land. The map comes in standard, satellite, terrain, or monochrome, and you can see stats like airports visited and total focus time."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "窓からの景色、地図の変更、無制限のフライト、ライブアクティビティは、月額か年額のFullAccessです。記録を同期するためにアカウントが要ります。",
+            "en": "The window view, changing maps, unlimited flights, and Live Activity are part of the monthly or yearly FullAccess. It needs an account to sync your records."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "アプリを入れたくないなら",
+        "en": "If you'd rather not install an app"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "iPhoneの集中モードを作って、時計アプリのタイマーと一緒に使う手があります。集中モードで、通知を出すアプリを絞れます。",
+            "en": "You can set up a Focus mode on your iPhone and use it with the timer in the Clock app. A Focus mode lets you limit which apps can send notifications."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "ただ、通知が止まるだけで、アプリ自体は開けてしまいます。旅に見立てて最後まで続けたくなる仕掛けは、こうしたアプリならではですね。",
+            "en": "The catch is that it only silences notifications, so you can still open the apps. Making a session feel like a trip you want to finish is what these apps add."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "どれを選ぶか",
+        "en": "Which one to pick"
+      },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "ja": "いちばん使われている飛行機の集中アプリを使いたいなら、FocusFlight",
+              "en": "If you want the most widely used flight focus app, FocusFlight"
+            },
+            {
+              "ja": "機内の窓からの眺めと音で過ごしたいなら、AirFlow",
+              "en": "If you want to spend your session with a view and sounds from the cabin, AirFlow"
+            },
+            {
+              "ja": "訪れた空港の統計を集めたい、アカウントで同期したいなら、AirFocus",
+              "en": "If you want stats on airports you've visited and syncing through an account, AirFocus"
+            },
+            {
+              "ja": "飛行機より車がいい、本物の道のりの時間で集中したいなら、FocusDrive",
+              "en": "If you'd rather drive than fly, with focus time based on a real road trip, FocusDrive"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "ja": "無料で使えますか？",
+        "en": "Are they free?"
+      },
+      "a": {
+        "ja": "4本とも無料で入れられます。FocusDriveはアプリのブロックまで無料で、ライブアクティビティなどが有料です。FocusFlightとAirFlowは、無料の範囲が説明文に書かれていませんでした。",
+        "en": "All four are free to download. FocusDrive's app blocking is free, and things like Live Activity are paid. The descriptions for FocusFlight and AirFlow don't say what the free version includes."
+      }
+    },
+    {
+      "q": {
+        "ja": "FocusDriveは長い時間しか選べませんか？",
+        "en": "Does FocusDrive only work for long sessions?"
+      },
+      "a": {
+        "ja": "目的地は今いる場所から近い順に並ぶので、近くを選べば短く集中できます。時間は道のりで決まるので、ぴったり25分のように分単位で決めたい人には、ほかの3本のほうが合っています。",
+        "en": "Destinations are listed from nearest to farthest, so picking a nearby one gives you a short session. Since the time comes from the route, if you want an exact length like 25 minutes, the other three will suit you better."
+      }
+    },
+    {
+      "q": {
+        "ja": "ほかのアプリを止めるのに、何か設定は要りますか？",
+        "en": "Do I need to set anything up to block other apps?"
+      },
+      "a": {
+        "ja": "FocusDriveとFocusFlightは、iPhoneのスクリーンタイムの許可が要ります。最初に一度許可すれば、あとは止めたいアプリを選ぶだけです。",
+        "en": "FocusDrive and FocusFlight both need Screen Time permission on your iPhone. Allow it once, and after that you just pick the apps to block."
+      }
+    }
+  ],
+  "closing": {
+    "ja": "FocusDriveの評価はまだ1件なので、1回走りきったら感想を聞かせてください🚗",
+    "en": "FocusDrive only has one rating so far, so once you've finished a drive, I'd love to hear how it went 🚗"
+  },
+  "notes": {
+    "ja": "各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。FocusDriveの機能はアプリのコードで確かめました。",
+    "en": "Features and rating counts were checked against each app's App Store description on November 15, 2026, and may change with updates. FocusDrive's features were checked against the app's own code."
+  },
+  "illustration": {
+    "scene": "勉強机の上に、手のひらほどの小さな町の地図が広がっている。キャラはノートに向かって集中していて、その横で地図の道の上を小さな車がひとりでに走り、空には紙飛行機が1機だけ飛んでいる。机の端のスマホ（文字なし）は伏せて置かれている。",
+    "alt": {
+      "ja": "机の上の小さな地図を車が走る横で、ノートに集中するキャラクター",
+      "en": "The character focused on a notebook while a tiny car drives across a little map on the desk"
+    }
+  }
+}

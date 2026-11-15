@@ -1,0 +1,435 @@
+{
+  "slug": "pi-memorization-game-apps",
+  "date_published": "2026-11-15",
+  "date_updated": "2026-11-15",
+  "search_phrase": {
+    "ja": "円周率 暗記 ゲーム",
+    "en": "game app for memorizing pi"
+  },
+  "evidence": "2026-11-15 に Google の検索候補で「円周率 暗記」を引くと、11件中「ゲーム」「サイト」「プリント」「中学受験」「世界記録」などが付いた形が出た。「円周率 ゲーム」では8件中「暗記 ゲーム」「覚える ゲーム」「記憶 ゲーム」が出た。同じ日に App Store で「円周率」を引くと、円周率のアプリは14本とも評価50件未満で、大手のアプリは無かった。",
+  "title": {
+    "ja": "円周率を暗記するゲームアプリ4選",
+    "en": "4 Game Apps for Memorizing the Digits of Pi"
+  },
+  "description": {
+    "ja": "円周率を覚えたい人向けに、数字を打ち込んで覚えるゲームアプリを4本比べました。収録している桁数、練習のしかた、挑戦のしかたの違いをまとめています。π ~ Piの作者が書いています。",
+    "en": "For anyone who wants to memorize pi, I compared four game apps where you learn the digits by typing them: how many digits they include, how you practice, and how you take on challenges. Written by the maker of π ~ Pi."
+  },
+  "excerpt": {
+    "ja": "収録の桁数、練習のしかた、挑戦のしかたで4本を比べました。π ~ Piを作った僕が、自分のアプリも入れて書いています。",
+    "en": "Four apps compared on digits included, practice, and challenges. I made π ~ Pi, and it's one of the four."
+  },
+  "category": {
+    "ja": "アプリの選び方",
+    "en": "App guides"
+  },
+  "reading_minutes": 4,
+  "author": {
+    "name": {
+      "ja": "續橋 涼",
+      "en": "Ryo Tsuzukihashi"
+    },
+    "handle": "tsuzuki817",
+    "bio": {
+      "ja": "2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。π ~ Piの作者です。",
+      "en": "I've been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made π ~ Pi."
+    },
+    "url": "https://tsuzukit.com/about/",
+    "same_as": [
+      "https://x.com/tsuzuki817"
+    ]
+  },
+  "tldr": {
+    "ja": "評価がいちばん多いのは46件の円周率数字記憶ゲームです。ミスした桁を見直して練習したいなら、PI DIVERが細かく作られています。止まると次の数字を見せてくれる練習や、100万桁まで選べるタイムの挑戦がほしい人は、僕が作ったπ ~ Piも見てみてください。",
+    "en": "The one with the most ratings is Pi Digits Memory Game, with 46. If you want to review the digits you missed and practice them, PI DIVER is built with a lot of care. If you'd like practice that shows you the next digit when you pause, or timed challenges you can set as long as a million digits, take a look at π ~ Pi, which I made."
+  },
+  "disclosure": {
+    "ja": "この記事は、π ~ Piを作った僕が書いています。ほかの3本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。",
+    "en": "I made π ~ Pi, and I wrote this article. The other three apps are by developers I don't know, and I haven't received money or anything else from them. Everything compared here comes from each app's App Store description and rating count as of November 15, 2026."
+  },
+  "own_app": "6566185298",
+  "app_category": "EducationalApplication",
+  "apps": [
+    {
+      "id": "6566185298",
+      "name": {
+        "ja": "π ~ Pi 円周率を楽しむアプリ",
+        "en": "π ~ Pi Fun App."
+      },
+      "short": {
+        "ja": "π ~ Pi",
+        "en": "π ~ Pi"
+      },
+      "developer": "Ryo Tsudukihashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5e/d8/16/5ed81629-0818-edc7-e812-32bd2d4cbca7/AppIcon-0-0-1x_U007epad-0-1-P3-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6566185298",
+      "android_url": null,
+      "rating_count": 1
+    },
+    {
+      "id": "730651005",
+      "name": {
+        "ja": "円周率数字記憶ゲーム",
+        "en": "Pi Digits Memory Game"
+      },
+      "short": {
+        "ja": "円周率数字記憶ゲーム",
+        "en": "Pi Digits Memory Game"
+      },
+      "developer": "Peter Li",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple124/v4/d8/38/02/d8380210-8b20-04eb-ca2a-a52e75a7d18e/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id730651005",
+      "android_url": null,
+      "rating_count": 46
+    },
+    {
+      "id": "1665926116",
+      "name": {
+        "ja": "Pi Answer Game - 円周率回答ゲーム",
+        "en": "Pi Answer Game - π Digits Game"
+      },
+      "short": {
+        "ja": "Pi Answer Game",
+        "en": "Pi Answer Game"
+      },
+      "developer": "Hokushi Hara",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d1/a9/4e/d1a94e36-113a-671a-b74b-dcba49295d95/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id1665926116",
+      "android_url": null,
+      "rating_count": 19
+    },
+    {
+      "id": "6761619446",
+      "name": {
+        "ja": "円周率 暗記・脳トレゲーム - PI DIVER",
+        "en": "Pi Memory Game - PI DIVER"
+      },
+      "short": {
+        "ja": "PI DIVER",
+        "en": "PI DIVER"
+      },
+      "developer": "KAZUKI KONDO",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/57/ef/e8/57efe839-acaf-e66b-dfe5-cdac26dbd3ca/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6761619446",
+      "android_url": null,
+      "rating_count": 3
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ja": "4本をざっくり比べる",
+        "en": "The four apps at a glance"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "どれも、3.14の続きを自分で打ち込んで覚えていくアプリです。違いが出るのは、つまずいたときの助け方と、何で競うかです。",
+            "en": "All four have you type the digits after 3.14 yourself to learn them. Where they differ is how they help when you get stuck, and what you compete on."
+          }
+        },
+        {
+          "type": "table",
+          "head": [
+            {
+              "ja": "アプリ",
+              "en": "App"
+            },
+            {
+              "ja": "評価の件数",
+              "en": "Ratings"
+            },
+            {
+              "ja": "練習のしかた",
+              "en": "Practice"
+            },
+            {
+              "ja": "挑戦のしかた",
+              "en": "Challenges"
+            },
+            {
+              "ja": "収録の桁数",
+              "en": "Digits included"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ja": "π ~ Pi（僕のアプリ）",
+                "en": "π ~ Pi (my app)"
+              },
+              {
+                "ja": "1件",
+                "en": "1"
+              },
+              {
+                "ja": "1秒止まると次の数字が出る",
+                "en": "Pause for a second and the next digit appears"
+              },
+              {
+                "ja": "10桁から100万桁までのタイムとランキング",
+                "en": "Timed runs from 10 to 1,000,000 digits, with rankings"
+              },
+              {
+                "ja": "100万桁",
+                "en": "1,000,000"
+              }
+            ],
+            [
+              {
+                "ja": "円周率数字記憶ゲーム",
+                "en": "Pi Digits Memory Game"
+              },
+              {
+                "ja": "46件",
+                "en": "46"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "Game Centerのリーダーボード",
+                "en": "Game Center leaderboards"
+              },
+              {
+                "ja": "1000桁",
+                "en": "1,000"
+              }
+            ],
+            [
+              {
+                "ja": "Pi Answer Game",
+                "en": "Pi Answer Game"
+              },
+              {
+                "ja": "19件",
+                "en": "19"
+              },
+              {
+                "ja": "指定の桁に飛んで覚える",
+                "en": "Jump to any digit and learn from there"
+              },
+              {
+                "ja": "時間制限なしと30秒の2つ",
+                "en": "No time limit, or 30 seconds"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              }
+            ],
+            [
+              {
+                "ja": "PI DIVER",
+                "en": "PI DIVER"
+              },
+              {
+                "ja": "3件",
+                "en": "3"
+              },
+              {
+                "ja": "ミスした桁の手前から練習。語呂合わせを保存",
+                "en": "Practice from just before a miss. Save your own mnemonics"
+              },
+              {
+                "ja": "3つのモードと毎日のチャレンジ",
+                "en": "Three modes and a daily challenge"
+              },
+              {
+                "ja": "10万桁",
+                "en": "100,000"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "1本ずつ見ていく",
+        "en": "Each app, one by one"
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "id": "6566185298"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "トレーニングでは、3.の続きを1桁ずつ打ち込みます。1秒手が止まると、次の数字がそっと出ます。まちがえると画面が揺れて、正しい数字を押すまで進みません。",
+            "en": "In Training, you type the digits after 3. one at a time. If your finger stops for a second, the next digit quietly appears. Press a wrong digit and the screen shakes, and you can't move on until you press the right one."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "チャレンジでは、10桁、100桁、1000桁から100万桁までを選んで、打ち終わるまでのタイムを競います。ミスの数も記録されて、桁数ごとのランキングで世界中の人と比べられます。",
+            "en": "In Challenge, you pick a length from 10, 100, or 1,000 digits up to a million and race to finish. Your misses are counted too, and you can compare with players around the world on a ranking for each length."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "ほかに、100万桁がゆっくり流れていくのを眺める画面と、2万桁を並べて読み上げる画面があります。画面を切り替えるときに、全画面の広告が出ることがあります。",
+            "en": "There is also a screen where a million digits drift slowly by, and one that lays out 20,000 digits and reads them aloud. A full-screen ad may show when you switch between screens."
+          }
+        },
+        {
+          "type": "app",
+          "id": "730651005"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "評価が46件あって、比べた4本の中ではいちばん多いです。説明文はとても短く、1000桁を10分で、と書かれています。",
+            "en": "With 46 ratings, this has the most of the four. Its description is very short and mentions 1,000 digits in 10 minutes."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "色と音が付いていて、Game Centerのリーダーボードと実績に対応しています。",
+            "en": "It adds colors and musical sounds, and supports Game Center leaderboards and achievements."
+          }
+        },
+        {
+          "type": "app",
+          "id": "1665926116"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "時間制限なしのモードと、30秒のタイムリミットのモードがあります。練習モードでは指定した桁へ飛んで、そこから覚えられます。",
+            "en": "There is a mode with no time limit and a 30-second mode. In practice mode you can jump to any digit and learn from there."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "世界中のプレイヤーと競えて、ダークモードにも対応しています。",
+            "en": "You can compete with players worldwide, and it supports dark mode."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6761619446"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "流れてくる円周率をタップしていくゲームです。結果の画面で、ミスした桁と正解、自分が押した数字が分かります。",
+            "en": "You tap the digits of pi as they come. The results screen shows where you slipped, the right digit, and what you pressed."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "ボタン1つでミスの少し手前から練習を始められて、好きな桁から自分の語呂合わせを作って保存もできます。小数点以下10万桁まで入っていて、毎日のチャレンジと世界ランキングがあります。",
+            "en": "One button starts practice from just before your mistake, and you can write and save your own memory phrases from any digit. It includes 100,000 decimal places, with a daily challenge and global rankings."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "アプリを入れたくないなら",
+        "en": "If you'd rather not install an app"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "検索候補には、円周率の暗記プリントや、覚えるための歌も出ていました。紙に書いて覚えるのも、語呂合わせの歌を聞くのも、ちゃんとした覚え方です。",
+            "en": "The search suggestions also showed printable pi sheets and songs for memorizing it. Writing digits on paper and listening to mnemonic songs both work."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "アプリのいいところは、打った瞬間に合っているかが分かることと、何桁まで言えたかが記録に残ることですね。",
+            "en": "What an app adds is knowing right away whether each digit is correct, and keeping a record of how far you got."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "どれを選ぶか",
+        "en": "Which one to pick"
+      },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "ja": "まず1000桁を目標にしたいなら、円周率数字記憶ゲーム",
+              "en": "If your first goal is 1,000 digits, Pi Digits Memory Game"
+            },
+            {
+              "ja": "好きな桁から覚え直したいなら、Pi Answer Game",
+              "en": "If you want to relearn from any digit you choose, Pi Answer Game"
+            },
+            {
+              "ja": "ミスした所を集中して直したい人や、語呂合わせで覚えたい人は、PI DIVER",
+              "en": "If you want to drill the spots you missed, or learn with mnemonics, PI DIVER"
+            },
+            {
+              "ja": "つまずいたら次の数字を見せてほしい人や、100万桁まで挑戦したい人は、π ~ Pi",
+              "en": "If you want a hint when you get stuck, or want to go as far as a million digits, π ~ Pi"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "ja": "無料で使えますか？",
+        "en": "Are they free?"
+      },
+      "a": {
+        "ja": "4本とも無料で入れられます。π ~ Piは広告で運営しています。",
+        "en": "All four are free to download. π ~ Pi is supported by ads."
+      }
+    },
+    {
+      "q": {
+        "ja": "iPadでも使えますか？",
+        "en": "Do they work on iPad?"
+      },
+      "a": {
+        "ja": "π ~ Pi、円周率数字記憶ゲーム、Pi Answer GameはiPadにも対応しています。PI DIVERはApp StoreではiPhone向けになっていました。",
+        "en": "π ~ Pi, Pi Digits Memory Game, and Pi Answer Game all support iPad. PI DIVER is listed as an iPhone app on the App Store."
+      }
+    },
+    {
+      "q": {
+        "ja": "まちがえたら最初からやり直しですか？",
+        "en": "Do I have to start over when I make a mistake?"
+      },
+      "a": {
+        "ja": "π ~ Piのトレーニングとチャレンジは、まちがえても最初には戻りません。正しい数字を押すまでその桁で止まり、チャレンジではミスの数が記録されます。",
+        "en": "In π ~ Pi, neither Training nor Challenge sends you back to the start. You stay on that digit until you press the right one, and Challenge counts your misses."
+      }
+    }
+  ],
+  "closing": {
+    "ja": "π ~ Piの評価はまだ1件なので、チャレンジで何桁まで打てたか聞かせてください🙏",
+    "en": "π ~ Pi only has one rating so far, so tell me how many digits you made it through in Challenge 🙏"
+  },
+  "notes": {
+    "ja": "それぞれのアプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。",
+    "en": "Features and rating counts were checked against each app's App Store description on November 15, 2026, and may change with updates."
+  },
+  "illustration": {
+    "scene": "夜の教室。キャラが黒板の前で、宙に浮かぶ大きな円の形のテンキー（数字なし、丸いボタンだけ）を1つずつ押していて、押すたびに光の粒が円の線に沿って1つずつ並んでいく。",
+    "alt": {
+      "ja": "夜の教室で円の形のボタンを押し、光の粒を円に沿って並べていくキャラクター",
+      "en": "The character in a classroom at night, pressing round buttons that line up glowing dots along a big circle"
+    }
+  }
+}

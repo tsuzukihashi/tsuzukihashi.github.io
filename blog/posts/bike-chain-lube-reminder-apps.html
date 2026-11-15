@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/js/lang.js"></script>
+    <!-- このページは scripts/build_guides.py が docs/guides/bike-chain-lube-reminder-apps.json から作る。直すのは JSON のほう -->
+    <title>自転車のチェーン注油を忘れないアプリ4選 - Blog | Ryo Tsuzukihashi</title>
+    <meta name="description" content="自転車のチェーン注油やタイヤの空気圧を忘れないアプリを4本比べました。距離で知らせるか日数で知らせるか、走った記録の入れ方、無料の範囲の違いをまとめています。BikeKeepの作者が書いています。">
+    <meta name="title-en" content="4 Apps That Remind You to Lube Your Bike Chain - Blog | Ryo Tsuzukihashi">
+    <meta name="description-en" content="I compared four iPhone apps that remind you to lube your chain and check your tires: whether they go by distance or days, how you log rides, and what&#x27;s free. Written by the maker of BikeKeep.">
+    <link rel="canonical" href="https://tsuzukit.com/blog/posts/bike-chain-lube-reminder-apps.html">
+
+    <!-- OGP -->
+    <meta property="og:title" content="自転車のチェーン注油を忘れないアプリ4選">
+    <meta property="og:description" content="自転車のチェーン注油やタイヤの空気圧を忘れないアプリを4本比べました。距離で知らせるか日数で知らせるか、走った記録の入れ方、無料の範囲の違いをまとめています。BikeKeepの作者が書いています。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://tsuzukit.com/blog/posts/bike-chain-lube-reminder-apps.html">
+    <meta property="og:image" content="https://tsuzukit.com/assets/images/posts/bike-chain-lube-reminder-apps.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://tsuzukit.com/assets/images/posts/bike-chain-lube-reminder-apps.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-dark-32x32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-dark-16x16.png" media="(prefers-color-scheme: dark)">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERPQ1EGLH');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8240751277462688"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
+    <link rel="stylesheet" href="/assets/css/guide.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "自転車のチェーン注油を忘れないアプリ4選",
+      "description": "自転車のチェーン注油やタイヤの空気圧を忘れないアプリを4本比べました。距離で知らせるか日数で知らせるか、走った記録の入れ方、無料の範囲の違いをまとめています。BikeKeepの作者が書いています。",
+      "image": "https://tsuzukit.com/assets/images/posts/bike-chain-lube-reminder-apps.webp",
+      "datePublished": "2026-11-15",
+      "dateModified": "2026-11-15",
+      "inLanguage": "ja",
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "mainEntityOfPage": "https://tsuzukit.com/blog/posts/bike-chain-lube-reminder-apps.html",
+      "about": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "BikeKeep 自転車メンテ管理",
+          "url": "https://apps.apple.com/jp/app/id6782966275",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "Bicura - 自転車メンテナンス",
+          "url": "https://apps.apple.com/jp/app/id6796735795",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "自転車メンテノート - 自転車のメンテ記録を一元管理",
+          "url": "https://apps.apple.com/jp/app/id6789385226",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "じてんしゃノート 自転車のメンテナンス記録",
+          "url": "https://apps.apple.com/jp/app/id6790032613",
+          "operatingSystem": "iOS"
+        }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "BikeKeep 自転車メンテ管理",
+      "operatingSystem": "iOS",
+      "applicationCategory": "UtilitiesApplication",
+      "url": "https://apps.apple.com/jp/app/id6782966275",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "チェーンの注油は何kmごとですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "オイルの種類や、雨の日に乗るかどうかで変わります。使っているオイルの説明か、自転車店で聞いてみてください。4本とも周期は自分で変えられます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ママチャリでも使えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "自転車メンテノートとBicuraは、説明文でシティサイクルやママチャリに触れています。BikeKeepはロードバイクの言葉で項目を並べていますが、どの自転車でも使えます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "無料で使えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "4本とも無料で入れられます。BikeKeepと自転車メンテノートは、2台目や項目を増やすと有料です。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tsuzukit.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://tsuzukit.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "困りごとから選ぶアプリ",
+          "item": "https://tsuzukit.com/blog/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "自転車のチェーン注油を忘れないアプリ4選",
+          "item": "https://tsuzukit.com/blog/posts/bike-chain-lube-reminder-apps.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">TsuzuKit</a>
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/portfolio/" class="nav-link">Portfolio</a>
+                <a href="/blog/" class="nav-link active">Blog</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post -->
+    <article class="blog-post">
+        <header class="post-header">
+            <div class="post-meta">
+                <span class="post-date">2026.11.15</span>
+                <span class="post-category"><span class="i18n-ja">アプリの選び方</span><span class="i18n-en">App guides</span></span>
+                <span class="post-reading-time"><span class="i18n-ja">4分で読める</span><span class="i18n-en">4 min read</span></span>
+            </div>
+            <h1 class="post-title"><span class="i18n-ja">自転車のチェーン注油を忘れないアプリ4選</span><span class="i18n-en">4 Apps That Remind You to Lube Your Bike Chain</span></h1>
+        </header>
+        <figure class="post-illustration guide-illustration"><img src="/assets/images/posts/bike-chain-lube-reminder-apps.webp" width="1200" height="800" alt="スマホの合図を見ながら、ロードバイクのチェーンに油をさすキャラクター" data-en-alt="The character crouching by a road bike, oiling the chain one drop at a time while their phone gives a signal" fetchpriority="high"></figure>
+
+        <div class="post-content guide i18n-ja">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">先に答え</p>
+                <p>注油の時期は、走った距離か日数で数えてくれるアプリに任せると忘れません。Apple Watchのライドを自動で取り込みたいならBicura、日数で十分ならじてんしゃノートか自転車メンテノート。あと何kmで注油かを距離で見たい人は、僕が作ったBikeKeepも見てみてください。</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">書いた人 <a href="https://tsuzukit.com/about/">續橋 涼</a>（@tsuzuki817）</p>
+                    <p class="guide-byline-bio">2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。BikeKeepの作者です。</p>
+                    <p class="guide-byline-date">公開 <time datetime="2026-11-15">2026.11.15</time> · 更新 <time datetime="2026-11-15">2026.11.15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">この記事は、BikeKeepを作った僕が書いています。ほかの3本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。</p>
+            <h2>4本をざっくり比べる</h2>
+            <p>違いが出るのは、注油の時期を走った距離で数えるか、日数で数えるかです。距離で数えるなら、走った記録をどう入れるかも分かれます。</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">アプリ</th><th scope="col">評価の件数</th><th scope="col">注油の時期</th><th scope="col">走った記録</th><th scope="col">通知</th><th scope="col">無料の範囲</th></tr></thead><tbody><tr><th scope="row">BikeKeep（僕のアプリ）</th><td>0件</td><td>走った距離。最初は300kmごと</td><td>距離を手で入れる</td><td>近づいたら1回。過ぎたら注油するまで毎朝</td><td>1台、項目3つまで</td></tr><tr><th scope="row">Bicura</th><td>0件</td><td>走った記録と天気や路面から計算</td><td>Apple WatchとFITファイルを取り込み</td><td>雨の日に走ったあと</td><td>説明文に記載なし。予測はサブスクリプション</td></tr><tr><th scope="row">自転車メンテノート</th><td>0件</td><td>日数</td><td>距離の記録は説明文に記載なし</td><td>予定日</td><td>1台、項目3つまで</td></tr><tr><th scope="row">じてんしゃノート</th><td>0件</td><td>登録した周期</td><td>距離の記録は説明文に記載なし</td><td>目安の頃</td><td>1台なら全部の機能</td></tr></tbody></table></div>
+            <h2>1本ずつ見ていく</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a9/2e/20/a92e2007-e4fa-3de8-885e-8763c9147dc2/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">僕が作ったアプリ</span>
+                    <h3 class="guide-app-name">BikeKeep 自転車メンテ管理</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · App Storeの評価 0件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6782966275" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>ライドの距離を入れると総走行距離に足されて、チェーン注油まであと何kmかが出ます。注油の目安は最初は300kmにしてあって、自分の乗り方に合わせて変えられます。</p>
+            <p>残りが少なくなったら1回知らせて、目安を超えたら注油したと記録するまで毎朝知らせます。ブレーキまわりは放っておくと危ないので、しつこめにしてあります。</p>
+            <p>無料だと1台、項目3つまでで、最初にチェーン注油、空気圧チェック、ブレーキパッドが入ります。サイクルコンピュータやApple Watchからの取り込みはなく、距離は手で入れます。iPhone専用です。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/50/2d/a2/502da2aa-6610-ca9a-8fcc-52a77618f554/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Bicura - 自転車メンテナンス</h3>
+                    <p class="guide-app-meta">Masaya Araki · App Storeの評価 0件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6796735795" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>Apple Watchで記録したサイクリングを自動で取り込めて、サイクルコンピュータのFITファイルにも対応しています。距離を手で入れたくない人には、ここがいちばん大きいですね。</p>
+            <p>雨の日や路面の種類も入れて、16のパーツの減り具合を計算します。雨の日に走ったあとは注油を知らせます。交換時期の予測やライド前の診断は、月額か年額のサブスクリプションです。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ec/5e/57/ec5e5748-0979-46e9-2c4c-cb493d48fc0d/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">自転車メンテノート - 自転車のメンテ記録を一元管理</h3>
+                    <p class="guide-app-meta">towa imamoto · App Storeの評価 0件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6789385226" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>空気入れ、チェーン注油、洗浄など12種類の項目に、日数で周期を決めて、予定日に通知します。通知のボタンから、アプリを開かずにやったと記録できます。</p>
+            <p>無料は1台、項目3つまでで、それより多いと月額か買い切りのプレミアムです。月ごとにかかった費用も見られます。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/9a/32/21/9a322187-92f6-940a-a770-ab921f813349/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">じてんしゃノート 自転車のメンテナンス記録</h3>
+                    <p class="guide-app-meta">AKIHIRO MATSUYAMA · App Storeの評価 0件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6790032613" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>チェーン注油、タイヤ、ブレーキ、掃除を記録すると、次の目安が自動で入って、その頃に知らせます。目安には出典が付いていて、自分でも直せます。</p>
+            <p>広告がなくて、1台なら全部の機能を無料で使えます。複数台とCSVの書き出しは買い切りです。</p>
+            <h2>アプリを入れたくないなら</h2>
+            <p>サイクルコンピュータの積算距離を、注油した日にメモしておく方法があります。次に見たとき、その差で走った距離が分かります。</p>
+            <p>週に1回と決めて、iPhoneのリマインダーで繰り返す手もあります。乗る距離が週ごとにばらつく人は、距離で数えるアプリのほうがずれません。</p>
+            <h2>どれを選ぶか</h2>
+            <ul class="guide-list"><li>Apple Watchやサイクルコンピュータの記録をそのまま使いたいなら、Bicura</li><li>日数で十分で、通知から記録まで済ませたいなら、自転車メンテノート</li><li>1台だけを、広告なしで全部無料で使いたいなら、じてんしゃノート</li><li>あと何kmで注油かを見て、過ぎたら毎朝言ってほしいなら、BikeKeep</li></ul>
+            <h2>よくある質問</h2>
+            <dl class="guide-faq">
+                <dt>チェーンの注油は何kmごとですか？</dt><dd>オイルの種類や、雨の日に乗るかどうかで変わります。使っているオイルの説明か、自転車店で聞いてみてください。4本とも周期は自分で変えられます。</dd>
+                <dt>ママチャリでも使えますか？</dt><dd>自転車メンテノートとBicuraは、説明文でシティサイクルやママチャリに触れています。BikeKeepはロードバイクの言葉で項目を並べていますが、どの自転車でも使えます。</dd>
+                <dt>無料で使えますか？</dt><dd>4本とも無料で入れられます。BikeKeepと自転車メンテノートは、2台目や項目を増やすと有料です。</dd>
+            </dl>
+            <p>BikeKeepはまだ評価が0件なので、ライドの帰りにでも感想をもらえたらうれしいです🚲</p>
+            <div class="guide-notes">各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。BikeKeepの機能はアプリのコードで確かめました。ブレーキなど安全に関わる部分は、自転車店で点検してもらってください。</div>
+        </div>
+
+        <div class="post-content guide i18n-en">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">Short answer</p>
+                <p>The easiest way not to forget is an app that counts distance or days for you. If you want rides from your Apple Watch pulled in automatically, Bicura. If going by days is enough, Jitensha or Bike Maintenance Note. If you&#x27;d like to see how many kilometers are left until your next lube, take a look at BikeKeep, which I made.</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">Written by <a href="https://tsuzukit.com/about/">Ryo Tsuzukihashi</a> (@tsuzuki817)</p>
+                    <p class="guide-byline-bio">I&#x27;ve been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made BikeKeep.</p>
+                    <p class="guide-byline-date">Published <time datetime="2026-11-15">2026-11-15</time> · Updated <time datetime="2026-11-15">2026-11-15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">I made BikeKeep, and I wrote this article. The other three apps are by developers I don&#x27;t know, and I haven&#x27;t received money or anything else from them. Everything compared here comes from each app&#x27;s App Store description and rating count as of November 15, 2026.</p>
+            <h2>The four apps at a glance</h2>
+            <p>The main difference is whether an app counts toward your next lube by distance or by days. For the distance-based ones, how you get your rides in also differs.</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">App</th><th scope="col">Ratings</th><th scope="col">Lube timing</th><th scope="col">Logging rides</th><th scope="col">Notifications</th><th scope="col">Free version</th></tr></thead><tbody><tr><th scope="row">BikeKeep (my app)</th><td>0</td><td>By distance, 300 km to start</td><td>Enter the distance by hand</td><td>Once when it&#x27;s close, then every morning until you lube</td><td>1 bike, 3 items</td></tr><tr><th scope="row">Bicura</th><td>0</td><td>Calculated from rides, weather, and road surface</td><td>Imports Apple Watch rides and FIT files</td><td>After riding in the rain</td><td>Not mentioned. Forecasts are a subscription</td></tr><tr><th scope="row">Bike Maintenance Note</th><td>0</td><td>By days</td><td>Distance logging not mentioned</td><td>On the due date</td><td>1 bike, 3 items</td></tr><tr><th scope="row">Jitensha</th><td>0</td><td>A cycle you register</td><td>Distance logging not mentioned</td><td>Around the due date</td><td>Every feature for one bike</td></tr></tbody></table></div>
+            <h2>Each app, one by one</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a9/2e/20/a92e2007-e4fa-3de8-885e-8763c9147dc2/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">I made this</span>
+                    <h3 class="guide-app-name">BikeKeep: Bike Maintenance</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · 0 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6782966275" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>Enter the distance of each ride and it adds to your total, then shows how many kilometers are left until your next chain lube. The lube interval starts at 300 km, and you can change it to fit how you ride.</p>
+            <p>It notifies you once when you&#x27;re getting close, and every morning after you pass the mark until you log the lube. Brakes are dangerous to neglect, so I made it a bit pushy on purpose.</p>
+            <p>The free version covers one bike with up to 3 items, starting with chain lube, tire pressure, and brake pads. It doesn&#x27;t import from a bike computer or Apple Watch, so you type in the distance yourself. It&#x27;s iPhone only.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/50/2d/a2/502da2aa-6610-ca9a-8fcc-52a77618f554/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Bicura - Bike Maintenance</h3>
+                    <p class="guide-app-meta">Masaya Araki · 0 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6796735795" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>It automatically imports cycling workouts recorded on your Apple Watch and also reads FIT files from bike computers. If you don&#x27;t want to type in distances, that&#x27;s the biggest plus here.</p>
+            <p>It factors in rain and road surface to estimate wear on 16 parts, and reminds you to lube after a wet ride. Replacement forecasts and pre-ride checks are part of a monthly or yearly subscription.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ec/5e/57/ec5e5748-0979-46e9-2c4c-cb493d48fc0d/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Bike Maintenance Note</h3>
+                    <p class="guide-app-meta">towa imamoto · 0 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6789385226" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>It has 12 kinds of tasks, like pumping tires, chain lube, and cleaning, each on a cycle you set in days, and notifies you on the due date. You can log it as done straight from the notification without opening the app.</p>
+            <p>The free version covers one bike and 3 tasks, and more needs the monthly or one-time Premium. You can also see what you spent each month.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/9a/32/21/9a322187-92f6-940a-a770-ab921f813349/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Jitensha: Bike Maintenance Log</h3>
+                    <p class="guide-app-meta">AKIHIRO MATSUYAMA · 0 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6790032613" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>Log chain lube, tires, brakes, or cleaning, and it sets the next due date for you and notifies you around then. The suggested intervals come with sources, and you can edit them.</p>
+            <p>There are no ads, and every feature is free for one bike. Multiple bikes and CSV export are a one-time purchase.</p>
+            <h2>If you&#x27;d rather not install an app</h2>
+            <p>You can jot down the odometer reading on your bike computer whenever you lube the chain. Next time you look, the difference tells you how far you&#x27;ve ridden.</p>
+            <p>Or pick a day of the week and set a repeating reminder on your iPhone. If the distance you ride changes a lot from week to week, an app that counts distance stays more accurate.</p>
+            <h2>Which one to pick</h2>
+            <ul class="guide-list"><li>If you want to use your Apple Watch or bike computer rides as they are, Bicura</li><li>If days are enough and you want to log things right from the notification, Bike Maintenance Note</li><li>If you have one bike and want everything free with no ads, Jitensha</li><li>If you want to see the kilometers left until your next lube, with a nudge every morning once you pass it, BikeKeep</li></ul>
+            <h2>FAQ</h2>
+            <dl class="guide-faq">
+                <dt>How many kilometers between chain lubes?</dt><dd>It depends on the lube you use and whether you ride in the rain. Check the instructions for your lube or ask a bike shop. All four apps let you change the interval.</dd>
+                <dt>Do they work for an everyday city bike?</dt><dd>Bike Maintenance Note and Bicura both mention city bikes in their descriptions. BikeKeep names its items the way road cyclists do, but it works for any bike.</dd>
+                <dt>Are they free?</dt><dd>All four are free to download. BikeKeep and Bike Maintenance Note charge for a second bike or more items.</dd>
+            </dl>
+            <p>BikeKeep doesn&#x27;t have any ratings yet, so if you have a minute after a ride, I&#x27;d love to hear what you think 🚲</p>
+            <div class="guide-notes">Features and rating counts were checked against each app&#x27;s App Store description on November 15, 2026, and may change with updates. BikeKeep&#x27;s features were checked against the app&#x27;s own code. Have a bike shop check anything that affects safety, like your brakes.</div>
+        </div>
+
+        <nav class="post-navigation">
+            <img class="tk-char tk-char--post" src="/assets/images/character-hang.png" alt="" width="381" height="208">
+            <a href="/blog/guides/" class="nav-link-wrapper"><span>&larr; <span class="i18n-ja">困りごとから選ぶアプリの一覧へ</span><span class="i18n-en">All guides: apps for everyday problems</span></span></a>
+        </nav>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
+                    <p class="footer-description"><span class="i18n-ja">誰も作らないものを、まじめに作る</span><span class="i18n-en">I make things nobody else would, and I make them seriously</span></p>
+                </div>
+                <div class="footer-nav">
+                    <a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
+                    <a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
+                    <a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
+                    <a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ryo Tsuzukihashi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

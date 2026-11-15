@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/js/lang.js"></script>
+    <!-- このページは scripts/build_guides.py が docs/guides/aquarium-care-apps.json から作る。直すのは JSON のほう -->
+    <title>水槽の水換えを忘れない管理アプリ3選 - Blog | Ryo Tsuzukihashi</title>
+    <meta name="description" content="水槽の水換えやフィルター掃除を知らせてくれる管理アプリを3本比べました。通知の時期、遅れたときの動き、水質の記録、無料で使える範囲の違いをまとめています。TankMinderの作者が書いています。">
+    <meta name="title-en" content="3 Aquarium Apps That Keep You on Top of Water Changes - Blog | Ryo Tsuzukihashi">
+    <meta name="description-en" content="I compared three iPhone aquarium apps that remind you about water changes and filter cleaning: when they notify you, what happens if you fall behind, water test logs, and what&#x27;s free. Written by the maker of TankMinder.">
+    <link rel="canonical" href="https://tsuzukit.com/blog/posts/aquarium-care-apps.html">
+
+    <!-- OGP -->
+    <meta property="og:title" content="水槽の水換えを忘れない管理アプリ3選">
+    <meta property="og:description" content="水槽の水換えやフィルター掃除を知らせてくれる管理アプリを3本比べました。通知の時期、遅れたときの動き、水質の記録、無料で使える範囲の違いをまとめています。TankMinderの作者が書いています。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://tsuzukit.com/blog/posts/aquarium-care-apps.html">
+    <meta property="og:image" content="https://tsuzukit.com/assets/images/posts/aquarium-care-apps.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://tsuzukit.com/assets/images/posts/aquarium-care-apps.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-dark-32x32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-dark-16x16.png" media="(prefers-color-scheme: dark)">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERPQ1EGLH');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8240751277462688"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
+    <link rel="stylesheet" href="/assets/css/guide.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "水槽の水換えを忘れない管理アプリ3選",
+      "description": "水槽の水換えやフィルター掃除を知らせてくれる管理アプリを3本比べました。通知の時期、遅れたときの動き、水質の記録、無料で使える範囲の違いをまとめています。TankMinderの作者が書いています。",
+      "image": "https://tsuzukit.com/assets/images/posts/aquarium-care-apps.webp",
+      "datePublished": "2026-11-15",
+      "dateModified": "2026-11-15",
+      "inLanguage": "ja",
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "mainEntityOfPage": "https://tsuzukit.com/blog/posts/aquarium-care-apps.html",
+      "about": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "水槽管理・水替え通知 TankMinder",
+          "url": "https://apps.apple.com/jp/app/id6778477412",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "水族館ログ - 水槽管理",
+          "url": "https://apps.apple.com/jp/app/id1621042664",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "アクアリウムノート - 水槽・水質記録",
+          "url": "https://apps.apple.com/jp/app/id6758006953",
+          "operatingSystem": "iOS"
+        }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "水槽管理・水替え通知 TankMinder",
+      "operatingSystem": "iOS",
+      "applicationCategory": "LifestyleApplication",
+      "url": "https://apps.apple.com/jp/app/id6778477412",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "無料で使えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "3本とも無料で入れられます。TankMinderは無料だとお世話3件まで、アクアリウムノートは水槽2つまでです。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "海水の水槽でも使えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "TankMinderはお世話の種類と周期を自分で決めるので、淡水でも海水でも使えます。アクアリウムノートは水槽ごとに淡水か海水かを登録できます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "水槽が2つ以上あります。",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "水族館ログは水槽をいくつでも追加できると書かれています。TankMinderは水槽の数ではなくお世話の件数で数えるので、2つ以上ならプレミアムが要ることが多いです。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tsuzukit.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://tsuzukit.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "困りごとから選ぶアプリ",
+          "item": "https://tsuzukit.com/blog/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "水槽の水換えを忘れない管理アプリ3選",
+          "item": "https://tsuzukit.com/blog/posts/aquarium-care-apps.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">TsuzuKit</a>
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/portfolio/" class="nav-link">Portfolio</a>
+                <a href="/blog/" class="nav-link active">Blog</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post -->
+    <article class="blog-post">
+        <header class="post-header">
+            <div class="post-meta">
+                <span class="post-date">2026.11.15</span>
+                <span class="post-category"><span class="i18n-ja">アプリの選び方</span><span class="i18n-en">App guides</span></span>
+                <span class="post-reading-time"><span class="i18n-ja">4分で読める</span><span class="i18n-en">4 min read</span></span>
+            </div>
+            <h1 class="post-title"><span class="i18n-ja">水槽の水換えを忘れない管理アプリ3選</span><span class="i18n-en">3 Aquarium Apps That Keep You on Top of Water Changes</span></h1>
+        </header>
+        <figure class="post-illustration guide-illustration"><img src="/assets/images/posts/aquarium-care-apps.webp" width="1200" height="800" alt="バケツとホースで水槽の水換えをするキャラクターと、元気に泳ぐ魚たち" data-en-alt="The character changing the aquarium water with a bucket and hose while small fish swim happily" fetchpriority="high"></figure>
+
+        <div class="post-content guide i18n-ja">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">先に答え</p>
+                <p>水換えを忘れないことが目当てなら、お世話の周期を決めて通知してくれるアプリが合います。この中でいちばん評価が多いのは水族館ログ。水質を14項目まで細かく残したいならアクアリウムノート、遅れたら毎日しつこく知らせてほしいなら、僕が作ったTankMinderを見てみてください。</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">書いた人 <a href="https://tsuzukit.com/about/">續橋 涼</a>（@tsuzuki817）</p>
+                    <p class="guide-byline-bio">2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。TankMinderの作者です。</p>
+                    <p class="guide-byline-date">公開 <time datetime="2026-11-15">2026.11.15</time> · 更新 <time datetime="2026-11-15">2026.11.15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">この記事は、TankMinderを作った僕が書いています。ほかの2本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。</p>
+            <h2>3本をざっくり比べる</h2>
+            <p>3本とも水質を記録してグラフで見られます。違いが出るのは、お世話の通知の細かさと、無料で使える範囲です。</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">アプリ</th><th scope="col">評価の件数</th><th scope="col">お世話の通知</th><th scope="col">遅れたら</th><th scope="col">水質の記録</th><th scope="col">無料の範囲</th></tr></thead><tbody><tr><th scope="row">TankMinder（僕のアプリ）</th><td>0件</td><td>3日前と前日と当日</td><td>記録するまで毎日</td><td>7項目をグラフで</td><td>お世話3件まで</td></tr><tr><th scope="row">水族館ログ</th><td>22件</td><td>カレンダーでタスクを管理。通知は説明文に記載なし</td><td>説明文に記載なし</td><td>pHや水温などをグラフで</td><td>説明文に記載なし</td></tr><tr><th scope="row">アクアリウムノート</th><td>12件</td><td>繰り返しのタスクを通知</td><td>説明文に記載なし</td><td>14項目をグラフで</td><td>水槽2つ、生体10匹まで</td></tr></tbody></table></div>
+            <h2>1本ずつ見ていく</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a1/89/a1/a189a163-5aae-767f-1eef-aeee4ea8c4c8/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">僕が作ったアプリ</span>
+                    <h3 class="guide-app-name">水槽管理・水替え通知 TankMinder</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · App Storeの評価 0件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6778477412" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>水替え、フィルター掃除、水質チェック、水草のトリミングなど、お世話の種類を選ぶと周期が最初から入ります。水替えなら7日ごと、フィルター掃除なら30日ごとです。周期は1日から90日までの中で選び直せます。</p>
+            <p>通知は3日前と前日と当日です。過ぎたら、やったと記録するまで毎日鳴ります。水質はpH、水温、アンモニア、亜硝酸、硝酸、GH、KHの7項目を、測ったものだけ入れればグラフになります。</p>
+            <p>無料だとお世話は3件まで登録できます。水槽1つで水替えとフィルター掃除と水質チェックを入れると、ちょうど3件です。プレミアムで無制限になり、広告が消えます。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/67/a7/ca/67a7ca00-3dc0-eced-967a-9db247c372ce/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">水族館ログ - 水槽管理</h3>
+                    <p class="guide-app-meta">Ko Hyunshik · App Storeの評価 22件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id1621042664" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>この中ではいちばん評価が多いアプリです。紙の飼育日誌をアプリにしたような作りで、水換えや餌やりのタスクとメモをカレンダーで残します。</p>
+            <p>水質はpHや水温などをグラフで見られて、水槽はいくつでも追加できます。クラウドへのバックアップもあります。お世話の通知があるかどうかは、説明文には書かれていませんでした。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2d/c9/e1/2dc9e11b-4cb7-5aca-3e60-ec3d88f06f81/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">アクアリウムノート - 水槽・水質記録</h3>
+                    <p class="guide-app-meta">towa imamoto · App Storeの評価 12件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6758006953" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>水質の記録がいちばん細かいアプリです。水温やpHのほかに硝酸塩や塩素まで14項目あって、使う項目だけを表示できます。生体を写真つきで登録したり、日記を残したりもできます。</p>
+            <p>水換えなどのタスクは繰り返し登録して通知でき、iPhoneのカレンダーにも追加できます。無料だと水槽2つまでで、水質グラフは基本の5項目と直近30日です。全部の項目や好きな間隔の繰り返しは、プレミアムに入っています。</p>
+            <h2>水換えの頻度はどう決めるか</h2>
+            <p>水換えの頻度は、水槽の大きさや魚の数、ろ過の強さで変わります。TankMinderで最初に入る7日ごとは、あくまで出発点です。</p>
+            <p>迷ったら、魚を買ったお店で自分の水槽の場合を聞くのが確かです。決めた間隔をアプリに入れておけば、あとは覚えておかなくて済みます。</p>
+            <h2>どれを選ぶか</h2>
+            <ul class="guide-list"><li>日誌として水槽の様子をカレンダーに残したいなら、水族館ログ</li><li>水質を14項目まで細かく追いたいなら、アクアリウムノート</li><li>お世話を忘れたら毎日知らせてほしいなら、TankMinder</li></ul>
+            <h2>よくある質問</h2>
+            <dl class="guide-faq">
+                <dt>無料で使えますか？</dt><dd>3本とも無料で入れられます。TankMinderは無料だとお世話3件まで、アクアリウムノートは水槽2つまでです。</dd>
+                <dt>海水の水槽でも使えますか？</dt><dd>TankMinderはお世話の種類と周期を自分で決めるので、淡水でも海水でも使えます。アクアリウムノートは水槽ごとに淡水か海水かを登録できます。</dd>
+                <dt>水槽が2つ以上あります。</dt><dd>水族館ログは水槽をいくつでも追加できると書かれています。TankMinderは水槽の数ではなくお世話の件数で数えるので、2つ以上ならプレミアムが要ることが多いです。</dd>
+            </dl>
+            <p>TankMinderはまだ評価が0件です。水槽を持っている人の使い心地を聞かせてもらえたらうれしいです🐟</p>
+            <div class="guide-notes">各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。水換えの量や頻度は、飼っている魚や水槽に合わせて決めてください。</div>
+        </div>
+
+        <div class="post-content guide i18n-en">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">Short answer</p>
+                <p>If your goal is not forgetting water changes, you want an app that lets you set a care cycle and notifies you. Of these three, Aquarium Log has the most ratings. Aquarium Note logs up to 14 water parameters, and if you want a reminder every day once you fall behind, take a look at TankMinder, which I made.</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">Written by <a href="https://tsuzukit.com/about/">Ryo Tsuzukihashi</a> (@tsuzuki817)</p>
+                    <p class="guide-byline-bio">I&#x27;ve been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made TankMinder.</p>
+                    <p class="guide-byline-date">Published <time datetime="2026-11-15">2026-11-15</time> · Updated <time datetime="2026-11-15">2026-11-15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">I made TankMinder, and I wrote this article. The other two apps are by developers I don&#x27;t know, and I haven&#x27;t received money or anything else from them. Everything compared here comes from each app&#x27;s App Store description and rating count as of November 15, 2026.</p>
+            <h2>The three apps at a glance</h2>
+            <p>All three let you log water tests and see them on a graph. Where they differ is how detailed the care reminders are and how much you get for free.</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">App</th><th scope="col">Ratings</th><th scope="col">Care reminders</th><th scope="col">If you fall behind</th><th scope="col">Water test log</th><th scope="col">Free version</th></tr></thead><tbody><tr><th scope="row">TankMinder (my app)</th><td>0</td><td>3 days before, the day before, and on the day</td><td>Every day until you log it</td><td>7 parameters on a graph</td><td>Up to 3 care tasks</td></tr><tr><th scope="row">Aquarium Log</th><td>22</td><td>Tasks on a calendar. Notifications not mentioned</td><td>Not mentioned</td><td>pH, temperature, and more on a graph</td><td>Not mentioned</td></tr><tr><th scope="row">Aquarium Note</th><td>12</td><td>Notifies you about repeating tasks</td><td>Not mentioned</td><td>14 parameters on a graph</td><td>Up to 2 tanks and 10 animals</td></tr></tbody></table></div>
+            <h2>Each app, one by one</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a1/89/a1/a189a163-5aae-767f-1eef-aeee4ea8c4c8/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">I made this</span>
+                    <h3 class="guide-app-name">Aquarium Care - TankMinder</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · 0 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6778477412" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>Pick a type of care, such as a water change, filter cleaning, a water test, or trimming plants, and a cycle is filled in for you. Water changes start at every 7 days and filter cleaning at every 30 days. You can change the cycle to anything from 1 to 90 days.</p>
+            <p>It notifies you 3 days before, the day before, and on the day. If the day passes, it keeps notifying you every day until you log it. For water tests, you enter only what you measured out of 7 parameters, pH, temperature, ammonia, nitrite, nitrate, GH, and KH, and they show up on a graph.</p>
+            <p>The free version holds up to 3 care tasks. One tank with water changes, filter cleaning, and water tests is exactly three. Premium makes it unlimited and removes the ads.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/67/a7/ca/67a7ca00-3dc0-eced-967a-9db247c372ce/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Aquarium Log - Tank Manager</h3>
+                    <p class="guide-app-meta">Ko Hyunshik · 22 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id1621042664" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>This one has the most ratings of the three. It works like a paper aquarium journal turned into an app, keeping water changes, feedings, and notes on a calendar.</p>
+            <p>You can see pH, temperature, and other readings on a graph, and add as many tanks as you like. It also backs up to the cloud. The description doesn&#x27;t say whether it sends care reminders.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2d/c9/e1/2dc9e11b-4cb7-5aca-3e60-ec3d88f06f81/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Aquarium Note: Tank and Water Log</h3>
+                    <p class="guide-app-meta">towa imamoto · 12 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6758006953" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>This one has the most detailed water log. Besides temperature and pH, it covers 14 parameters including nitrate and chlorine, and you can show only the ones you use. You can also register your fish with photos and keep a diary.</p>
+            <p>You can set repeating tasks like water changes with notifications, and add them to your iPhone calendar. The free version allows 2 tanks, with graphs for 5 basic parameters over the last 30 days. All parameters and custom repeat intervals come with Premium.</p>
+            <h2>How often to change the water</h2>
+            <p>How often you should change the water depends on the size of the tank, how many fish you keep, and how strong your filtration is. The 7 days that TankMinder starts with is only a starting point.</p>
+            <p>If you&#x27;re not sure, the shop where you bought your fish can tell you what suits your tank. Once you decide on an interval and put it in an app, you don&#x27;t have to keep it in your head.</p>
+            <h2>Which one to pick</h2>
+            <ul class="guide-list"><li>If you want a journal of your tanks on a calendar, Aquarium Log</li><li>If you want to track up to 14 water parameters in detail, Aquarium Note</li><li>If you want a reminder every day until you do the care you missed, TankMinder</li></ul>
+            <h2>FAQ</h2>
+            <dl class="guide-faq">
+                <dt>Are they free?</dt><dd>All three are free to download. TankMinder&#x27;s free version holds 3 care tasks, and Aquarium Note&#x27;s holds 2 tanks.</dd>
+                <dt>Do they work for saltwater tanks?</dt><dd>TankMinder lets you set the type of care and the cycle yourself, so it works for either. Aquarium Note lets you set each tank as freshwater or saltwater.</dd>
+                <dt>I have more than one tank.</dt><dd>Aquarium Log says you can add as many tanks as you want. TankMinder counts care tasks rather than tanks, so with two or more tanks you&#x27;ll usually need Premium.</dd>
+            </dl>
+            <p>TankMinder has no ratings yet. I&#x27;d love to hear how it works for people who actually keep tanks 🐟</p>
+            <div class="guide-notes">Features and rating counts were checked against each app&#x27;s App Store description on November 15, 2026, and may change with updates. Decide how much and how often to change the water based on your fish and your tank.</div>
+        </div>
+
+        <nav class="post-navigation">
+            <img class="tk-char tk-char--post" src="/assets/images/character-hang.png" alt="" width="381" height="208">
+            <a href="/blog/guides/" class="nav-link-wrapper"><span>&larr; <span class="i18n-ja">困りごとから選ぶアプリの一覧へ</span><span class="i18n-en">All guides: apps for everyday problems</span></span></a>
+        </nav>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
+                    <p class="footer-description"><span class="i18n-ja">誰も作らないものを、まじめに作る</span><span class="i18n-en">I make things nobody else would, and I make them seriously</span></p>
+                </div>
+                <div class="footer-nav">
+                    <a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
+                    <a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
+                    <a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
+                    <a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ryo Tsuzukihashi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

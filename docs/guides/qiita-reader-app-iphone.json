@@ -1,0 +1,448 @@
+{
+  "slug": "qiita-reader-app-iphone",
+  "date_published": "2026-11-15",
+  "date_updated": "2026-11-15",
+  "search_phrase": {
+    "ja": "qiita ios アプリ",
+    "en": "Qiita app for iPhone"
+  },
+  "evidence": "2026-11-15 に Google の検索候補で「qiita アプリ」を引くと10件出て、「qiita アプリ 公式」「qiita ios アプリ」「qiita androidアプリ」と、Qiitaを読むアプリを探す形が3件あった。同じ日に App Store で「Qiita」を検索すると、Qiitaを読むアプリは5本出たが、どれも個人の開発者のアプリで、Qiita株式会社のアプリは無かった。評価がいちばん多いQiitaReaderでも176件だった。",
+  "title": {
+    "ja": "QiitaをiPhoneで読むアプリ4選",
+    "en": "4 Apps for Reading Qiita on iPhone"
+  },
+  "description": {
+    "ja": "QiitaをiPhoneで読むアプリを4本比べました。トレンドの見方、あとで読む、ログインしてできること、記事を書けるかの違いをまとめています。Qiita Bookの作者が書いています。",
+    "en": "I compared four apps for reading Qiita on iPhone: how they show trends, saving for later, what you can do once logged in, and whether you can write posts. Written by the maker of Qiita Book."
+  },
+  "excerpt": {
+    "ja": "Qiitaの公式アプリが見つからなかった人へ。読む、残す、書くで4本を比べました。Qiita Bookを作った僕が書いています。",
+    "en": "For anyone who couldn't find an official Qiita app. Four apps compared on reading, saving, and writing. I made Qiita Book, one of the four."
+  },
+  "category": {
+    "ja": "アプリの選び方",
+    "en": "App guides"
+  },
+  "reading_minutes": 4,
+  "author": {
+    "name": {
+      "ja": "續橋 涼",
+      "en": "Ryo Tsuzukihashi"
+    },
+    "handle": "tsuzuki817",
+    "bio": {
+      "ja": "2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。Qiita Bookの作者です。",
+      "en": "I've been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made Qiita Book."
+    },
+    "url": "https://tsuzukit.com/about/",
+    "same_as": [
+      "https://x.com/tsuzuki817"
+    ]
+  },
+  "tldr": {
+    "ja": "App Storeで探しても、Qiita株式会社のアプリは見つかりませんでした。読むだけなら、評価176件のQiitaReaderのあとで読む機能や、Qiita Pocketのランキングで足ります。ストックやコメント、記事を書くところまでiPhoneでやりたいなら、僕が作ったQiita Bookも見てみてください。",
+    "en": "I couldn't find an app from Qiita's own company on the App Store. If you only want to read, the read-later list in QiitaReader, which has 176 ratings, or the rankings in Qiita Pocket will do. If you also want to stock articles, comment, and write posts on your iPhone, take a look at Qiita Book, which I made."
+  },
+  "disclosure": {
+    "ja": "この記事は、Qiita Bookを作った僕が書いています。ほかの3本は知らない開発者さんのアプリで、お金も何ももらっていません。Qiita BookもQiita株式会社のアプリではありません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。",
+    "en": "I made Qiita Book, and I wrote this article. The other three apps are by developers I don't know, and I haven't received money or anything else from them. Qiita Book isn't made by Qiita's company either. Everything compared here comes from each app's App Store description and rating count as of November 15, 2026."
+  },
+  "own_app": "1585253685",
+  "app_category": "NewsApplication",
+  "apps": [
+    {
+      "id": "1585253685",
+      "name": {
+        "ja": "Qiita Book",
+        "en": "Qiita Book"
+      },
+      "short": {
+        "ja": "Qiita Book",
+        "en": "Qiita Book"
+      },
+      "developer": "Ryo Tsudukihashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/11/ff/fb/11fffb88-9c9b-6fb4-a2e6-b96c794806cc/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id1585253685",
+      "android_url": null,
+      "rating_count": 17
+    },
+    {
+      "id": "6470926641",
+      "name": {
+        "ja": "QiitaReader",
+        "en": "QiitaReader"
+      },
+      "short": {
+        "ja": "QiitaReader",
+        "en": "QiitaReader"
+      },
+      "developer": "HIDEYA HOSHINO",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d0/99/40/d0994075-4ec4-7d49-4f22-b4d4cad6eb22/AppIcon-0-0-1x_U007ephone-0-0-0-1-0-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6470926641",
+      "android_url": null,
+      "rating_count": 176
+    },
+    {
+      "id": "1590830106",
+      "name": {
+        "ja": "Open Qiita",
+        "en": "Open Qiita"
+      },
+      "short": {
+        "ja": "Open Qiita",
+        "en": "Open Qiita"
+      },
+      "developer": "YIMING TONG",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/7a/78/0f/7a780fc1-d804-aae4-9a08-291fd8a681d3/AppIcon-1x_U007emarketing-0-10-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id1590830106",
+      "android_url": null,
+      "rating_count": 29
+    },
+    {
+      "id": "1219758424",
+      "name": {
+        "ja": "Qiita Pocket - あとで読むQiitaリーダー",
+        "en": "Qiita Pocket - Read-Later Qiita Reader"
+      },
+      "short": {
+        "ja": "Qiita Pocket",
+        "en": "Qiita Pocket"
+      },
+      "developer": "hiroshi sakamoto",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/fe/2f/f5/fe2ff530-5663-5698-b6a5-652074d42680/mzl.yvmzagsr.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id1219758424",
+      "android_url": null,
+      "rating_count": 8
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ja": "4本をざっくり比べる",
+        "en": "The four apps at a glance"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "読むだけのアプリと、Qiitaにログインしてストックやコメントまでできるアプリに分かれます。",
+            "en": "They split into apps that are just for reading and apps where you log in to Qiita to stock articles and comment."
+          }
+        },
+        {
+          "type": "table",
+          "head": [
+            {
+              "ja": "アプリ",
+              "en": "App"
+            },
+            {
+              "ja": "評価の件数",
+              "en": "Ratings"
+            },
+            {
+              "ja": "記事の探し方",
+              "en": "Finding articles"
+            },
+            {
+              "ja": "あとで読む",
+              "en": "Saving for later"
+            },
+            {
+              "ja": "ログインしてできること",
+              "en": "With a Qiita login"
+            },
+            {
+              "ja": "記事を書く",
+              "en": "Writing posts"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ja": "Qiita Book（僕のアプリ）",
+                "en": "Qiita Book (my app)"
+              },
+              {
+                "ja": "17件",
+                "en": "17"
+              },
+              {
+                "ja": "今日、今週、今月のトレンド、新着、フォロー中タグ、検索",
+                "en": "Today's, this week's, and this month's trends, new posts, followed tags, search"
+              },
+              {
+                "ja": "一文にマーカー、閲覧履歴",
+                "en": "Highlight a sentence, reading history"
+              },
+              {
+                "ja": "ストック、コメント、自分の記事",
+                "en": "Stock, comment, your own posts"
+              },
+              {
+                "ja": "あり",
+                "en": "Yes"
+              }
+            ],
+            [
+              {
+                "ja": "QiitaReader",
+                "en": "QiitaReader"
+              },
+              {
+                "ja": "176件",
+                "en": "176"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "あとで読む、オフラインで読む、閲覧履歴",
+                "en": "Read later, offline reading, history"
+              },
+              {
+                "ja": "まだ本家と連携していない",
+                "en": "Not connected to Qiita yet"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              }
+            ],
+            [
+              {
+                "ja": "Open Qiita",
+                "en": "Open Qiita"
+              },
+              {
+                "ja": "29件",
+                "en": "29"
+              },
+              {
+                "ja": "人気記事、週間の人気タグ、検索",
+                "en": "Popular posts, weekly popular tags, search"
+              },
+              {
+                "ja": "「好き」に保存してオフライン、閲覧履歴",
+                "en": "Save to Likes for offline, history"
+              },
+              {
+                "ja": "コメント、自分の記事とストック",
+                "en": "Comment, your posts and stocks"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              }
+            ],
+            [
+              {
+                "ja": "Qiita Pocket",
+                "en": "Qiita Pocket"
+              },
+              {
+                "ja": "8件",
+                "en": "8"
+              },
+              {
+                "ja": "月間と週間のランキング20位まで、検索",
+                "en": "Monthly and weekly top 20, search"
+              },
+              {
+                "ja": "あとで読む、アーカイブ",
+                "en": "Read later, archive"
+              },
+              {
+                "ja": "Qiitaでできることはやらない方針",
+                "en": "Leaves that to Qiita on purpose"
+              },
+              {
+                "ja": "なし",
+                "en": "No"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "1本ずつ見ていく",
+        "en": "Each app, one by one"
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "id": "1585253685"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "もとはWidgetQiitaという名前の、Qiitaの記事をウィジェットに出すアプリでした。2026年11月のアップデートで、Qiitaを読む、残す、書くをまとめたアプリになりました。",
+            "en": "It started out as WidgetQiita, an app that put Qiita articles in a widget. With the November 2026 update, it became an app for reading, saving, and writing on Qiita."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "今日、今週、今月のトレンドと新着、フォローしているタグの新着を、アプリの中でそのまま読めます。気になった一文にはマーカーを引けて、一覧から押すと記事のその場所が開きます。",
+            "en": "You can read today's, this week's, and this month's trends, new posts, and new posts in tags you follow, all inside the app. Highlight a sentence that catches your eye, and tapping it in your list takes you right back to that spot."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "Qiitaでログインすると、ストックとコメントができて、Markdownで記事を書いて投稿もできます。ホーム画面には今日のQiitaとお気に入りタグのウィジェットを置けます。広告が出て、広告を消すのは買い切りです。",
+            "en": "Log in with Qiita to stock articles, comment, and write and publish posts in Markdown. You can also put widgets for today's Qiita and your favorite tags on your Home Screen. The app shows ads, and removing them is a one-time purchase."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6470926641"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "評価が176件あって、4本の中でいちばん使われています。気になった記事をワンタップであとで読むリストに入れて、オフラインで読むこともできます。",
+            "en": "With 176 ratings, it's the most used of the four. One tap adds an article to your read-later list, and you can also read offline."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "文字の大きさを変えられて、ダークモードにも対応しています。説明文には、タグからタグの記事一覧に飛べないことや、本家との連携がまだなことも正直に書かれていました。",
+            "en": "You can change the text size, and it supports dark mode. The description is upfront that you can't yet jump from a tag to its article list and that it doesn't connect to your Qiita account yet."
+          }
+        },
+        {
+          "type": "app",
+          "id": "1590830106"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "最近の人気記事と、週間の人気タグのランキングが見られます。検索は関連順、新着順、LGTMの多い順で並べ替えられます。",
+            "en": "It shows recent popular posts and a weekly ranking of popular tags. Search results can be sorted by relevance, newest, or most LGTMs."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "気に入った記事を「好き」に保存してオフラインで読めます。Qiitaのアカウントでつなぐと、コメントの投稿や、自分の記事とストックの確認もできます。",
+            "en": "Save articles you like to Likes and read them offline. Connect your Qiita account to post comments and check your own posts and stocks."
+          }
+        },
+        {
+          "type": "app",
+          "id": "1219758424"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "ストックとは別に、とりあえずあとで読むリストに入れておくためのアプリです。スワイプで保存して、読み終わったらスワイプでアーカイブします。",
+            "en": "It's for saving articles to read later, separate from your Qiita stocks. Swipe to save, then swipe again to archive once you've read it."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "月間と週間のランキングを20位まで見られます。Qiitaでできることは極力やらない、と説明文にあるとおり、機能をしぼった作りです。",
+            "en": "You can see the monthly and weekly rankings down to number 20. As its description says, it avoids doing what Qiita already does, and keeps things minimal."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "アプリを入れたくないなら",
+        "en": "If you'd rather not install an app"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "SafariでQiitaを開いて、共有のメニューからホーム画面に追加すれば、アイコンからすぐ開けます。ストックやコメントも、ブラウザでログインすればそのままできます。",
+            "en": "Open Qiita in Safari and use Add to Home Screen from the share menu, and you can open it straight from an icon. Stocking and commenting work in the browser too once you log in."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "どれを選ぶか",
+        "en": "Which one to pick"
+      },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "ja": "あとで読むとオフラインがあれば十分なら、QiitaReader",
+              "en": "If read-later and offline reading are enough, QiitaReader"
+            },
+            {
+              "ja": "人気のタグから記事を探したい、検索を並べ替えたいなら、Open Qiita",
+              "en": "If you want to browse by popular tags and sort your searches, Open Qiita"
+            },
+            {
+              "ja": "ストックとは別の「あとで読む」だけが欲しいなら、Qiita Pocket",
+              "en": "If all you want is a read-later list separate from your stocks, Qiita Pocket"
+            },
+            {
+              "ja": "読むだけでなく、マーカーを引いたり、iPhoneで記事を書いたりしたいなら、Qiita Book",
+              "en": "If you want to highlight passages and write posts on your iPhone too, Qiita Book"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "ja": "Qiitaの公式アプリはありますか？",
+        "en": "Is there an official Qiita app?"
+      },
+      "a": {
+        "ja": "2026年11月15日にApp StoreでQiitaと検索した結果には、Qiita株式会社のアプリは出てきませんでした。この記事の4本は、どれも個人が作った非公式のアプリです。",
+        "en": "When I searched the App Store for Qiita on November 15, 2026, no app from Qiita's own company came up. All four apps here are unofficial apps made by individual developers."
+      }
+    },
+    {
+      "q": {
+        "ja": "Qiitaのパスワードをアプリに渡して大丈夫ですか？",
+        "en": "Is it safe to give an app my Qiita password?"
+      },
+      "a": {
+        "ja": "Qiita Bookのログインは、Qiitaのページで行います。アプリがパスワードを受け取ることはありません。ほかのアプリのログインのしかたは、それぞれの説明で確かめてください。",
+        "en": "Qiita Book's login happens on Qiita's own page, and the app never receives your password. For the other apps, check how each one handles login."
+      }
+    },
+    {
+      "q": {
+        "ja": "無料で使えますか？",
+        "en": "Are they free?"
+      },
+      "a": {
+        "ja": "4本とも無料で入れられます。Qiita Bookは広告が出て、広告を消すところだけが買い切りです。",
+        "en": "All four are free to download. Qiita Book shows ads, and only removing them is a one-time purchase."
+      }
+    }
+  ],
+  "closing": {
+    "ja": "Qiita Bookは生まれ変わったばかりなので、iPhoneで記事を書いてみた人の声をとくに聞いてみたいです✍️",
+    "en": "Qiita Book was just rebuilt, so I'd especially love to hear from anyone who's tried writing a post on their iPhone ✍️"
+  },
+  "notes": {
+    "ja": "各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。",
+    "en": "Features and rating counts were checked against each app's App Store description on November 15, 2026, and may change with updates."
+  },
+  "illustration": {
+    "scene": "ソファで、キャラがスマホを本のように両手で開いて読んでいる。スマホから緑の細い線（文字なし）が何本も立ちのぼっていて、そのうち1本にだけ黄色いマーカーの帯が引かれている。キャラは読みながら小さくうなずいている。",
+    "alt": {
+      "ja": "スマホを本のように開いて、黄色いマーカーの一文を読むキャラクター",
+      "en": "The character reading a phone held open like a book, with one line marked in yellow highlighter"
+    }
+  }
+}

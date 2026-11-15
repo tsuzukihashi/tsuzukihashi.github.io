@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/js/lang.js"></script>
+    <!-- このページは scripts/build_guides.py が docs/guides/cutout-outline-sticker-apps.json から作る。直すのは JSON のほう -->
+    <title>写真を切り抜いて縁取りするアプリ3選と、iPhoneだけでやる方法 - Blog | Ryo Tsuzukihashi</title>
+    <meta name="description" content="写真の人や物を切り抜いて、ステッカーのような縁を付けるアプリを3本比べました。縁の色と太さ、無料で保存できる範囲の違いと、iPhoneの写真アプリだけでやる方法をまとめています。フチドリ！の作者が書いています。">
+    <meta name="title-en" content="Cut Out a Photo and Add an Outline: 3 Apps, Plus the iPhone Way - Blog | Ryo Tsuzukihashi">
+    <meta name="description-en" content="Three iPhone apps that cut out a person or object and add a sticker-style outline, compared on outline color, width, and free saves. Plus the built-in iPhone way. Written by the maker of Fuchidori!">
+    <link rel="canonical" href="https://tsuzukit.com/blog/posts/cutout-outline-sticker-apps.html">
+
+    <!-- OGP -->
+    <meta property="og:title" content="写真を切り抜いて縁取りするアプリ3選と、iPhoneだけでやる方法">
+    <meta property="og:description" content="写真の人や物を切り抜いて、ステッカーのような縁を付けるアプリを3本比べました。縁の色と太さ、無料で保存できる範囲の違いと、iPhoneの写真アプリだけでやる方法をまとめています。フチドリ！の作者が書いています。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://tsuzukit.com/blog/posts/cutout-outline-sticker-apps.html">
+    <meta property="og:image" content="https://tsuzukit.com/assets/images/posts/cutout-outline-sticker-apps.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://tsuzukit.com/assets/images/posts/cutout-outline-sticker-apps.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-dark-32x32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-dark-16x16.png" media="(prefers-color-scheme: dark)">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERPQ1EGLH');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8240751277462688"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
+    <link rel="stylesheet" href="/assets/css/guide.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "写真を切り抜いて縁取りするアプリ3選と、iPhoneだけでやる方法",
+      "description": "写真の人や物を切り抜いて、ステッカーのような縁を付けるアプリを3本比べました。縁の色と太さ、無料で保存できる範囲の違いと、iPhoneの写真アプリだけでやる方法をまとめています。フチドリ！の作者が書いています。",
+      "image": "https://tsuzukit.com/assets/images/posts/cutout-outline-sticker-apps.webp",
+      "datePublished": "2026-11-15",
+      "dateModified": "2026-11-15",
+      "inLanguage": "ja",
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "mainEntityOfPage": "https://tsuzukit.com/blog/posts/cutout-outline-sticker-apps.html",
+      "about": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "フチドリ！ ~背景透過と縁取り~",
+          "url": "https://apps.apple.com/jp/app/id6748528617",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "背景革命 - 写真・動画の背景透過・モザイク・ぼかし加工",
+          "url": "https://apps.apple.com/jp/app/id1615647373",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "Photo Outline Maker: Editor",
+          "url": "https://apps.apple.com/jp/app/id6819720348",
+          "operatingSystem": "iOS"
+        }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "フチドリ！ ~背景透過と縁取り~",
+      "operatingSystem": "iOS",
+      "applicationCategory": "DesignApplication",
+      "url": "https://apps.apple.com/jp/app/id6748528617",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "無料で使えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "3本とも無料で入れられます。フチドリ！は無料で3回保存できて、そのあとは広告を見れば保存できます。背景革命も無料版で写真の加工ができます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "写真がネットに送られることはありますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "3本とも、説明文で切り抜きはスマホの中で処理すると書かれています。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "背景を透明にして保存できますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "3本ともできます。フチドリ！は保存すると、そのまま背景が透明なPNGになります。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tsuzukit.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://tsuzukit.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "困りごとから選ぶアプリ",
+          "item": "https://tsuzukit.com/blog/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "写真を切り抜いて縁取りするアプリ3選と、iPhoneだけでやる方法",
+          "item": "https://tsuzukit.com/blog/posts/cutout-outline-sticker-apps.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">TsuzuKit</a>
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/portfolio/" class="nav-link">Portfolio</a>
+                <a href="/blog/" class="nav-link active">Blog</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post -->
+    <article class="blog-post">
+        <header class="post-header">
+            <div class="post-meta">
+                <span class="post-date">2026.11.15</span>
+                <span class="post-category"><span class="i18n-ja">アプリの選び方</span><span class="i18n-en">App guides</span></span>
+                <span class="post-reading-time"><span class="i18n-ja">4分で読める</span><span class="i18n-en">4 min read</span></span>
+            </div>
+            <h1 class="post-title"><span class="i18n-ja">写真を切り抜いて縁取りするアプリ3選と、iPhoneだけでやる方法</span><span class="i18n-en">Cut Out a Photo and Add an Outline: 3 Apps, Plus the iPhone Way</span></h1>
+        </header>
+        <figure class="post-illustration guide-illustration"><img src="/assets/images/posts/cutout-outline-sticker-apps.webp" width="1200" height="800" alt="紫の縁取りの付いた猫のシールをスマホケースに貼るキャラクター" data-en-alt="The character sticking a cut-out cat photo with a thick purple outline onto the back of a phone case" fetchpriority="high"></figure>
+
+        <div class="post-content guide i18n-ja">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">先に答え</p>
+                <p>白いふちで十分なら、iPhoneの写真アプリでステッカーを作るだけでできます。縁の色や太さを変えたいならアプリです。背景を消すのも得意なのは評価128件の背景革命、縁の柄まで選びたいならPhoto Outline Maker。好きな色と太さの縁で透過PNGにしたい人は、僕が作ったフチドリ！も見てみてください。</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">書いた人 <a href="https://tsuzukit.com/about/">續橋 涼</a>（@tsuzuki817）</p>
+                    <p class="guide-byline-bio">2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。フチドリ！の作者です。</p>
+                    <p class="guide-byline-date">公開 <time datetime="2026-11-15">2026.11.15</time> · 更新 <time datetime="2026-11-15">2026.11.15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">この記事は、フチドリ！を作った僕が書いています。ほかの2本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。</p>
+            <h2>白いふちならiPhoneだけでできる</h2>
+            <p>iPhoneの写真アプリで、人や物を長押しするとその部分だけを切り抜けます。そこからステッカーを追加して、効果を選ぶと白いふちが付きます。</p>
+            <p>ただ、ふちの色や太さは自分で決められません。推しの色で縁取りたい、太くしたいとなったら、アプリの出番です。</p>
+            <h2>3本をざっくり比べる</h2>
+            <p>3本とも、切り抜きはスマホの中で済んで、写真を外に送りません。違うのは、縁でどこまで遊べるかと、ほかに何ができるかです。</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">アプリ</th><th scope="col">評価の件数</th><th scope="col">縁の色と太さ</th><th scope="col">縁のほかにできること</th><th scope="col">料金</th></tr></thead><tbody><tr><th scope="row">フチドリ！（僕のアプリ）</th><td>16件</td><td>好きな色、0から50ptまで</td><td>写真から色を拾うスポイト</td><td>無料で3回保存、そのあとは広告を見て保存。買い切りで広告なし</td></tr><tr><th scope="row">背景革命</th><td>128件</td><td>白縁、幅を調整</td><td>背景のぼかしや差し替え、動画</td><td>無料版あり。Pro版は買い切り</td></tr><tr><th scope="row">Photo Outline Maker</th><td>0件</td><td>132種類の縁、色と幅を調整</td><td>背景、文字、デコ</td><td>サブスクリプションあり</td></tr></tbody></table></div>
+            <h2>1本ずつ見ていく</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e9/c8/e9/e9c8e9e7-4318-1e0d-d221-582004a023a2/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">僕が作ったアプリ</span>
+                    <h3 class="guide-app-name">フチドリ！ ~背景透過と縁取り~</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · App Storeの評価 16件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6748528617" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>写真を選ぶと、スマホの中で背景を自動で切り抜きます。縁の色は用意した色から選ぶほかに、好きな色を作ったり、写真の中からスポイトで拾ったりできます。</p>
+            <p>太さは0から50ptまで、1pt刻みで変えられます。保存すると背景が透明なPNGになるので、ステッカーや別の画像にそのまま使えます。通信しないので、オフラインでも動きます。</p>
+            <p>無料だと最初に3回保存できて、そのあとは広告を見ると保存できます。買い切りの購入で広告が出なくなります。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d8/c3/48/d8c3488d-3e11-10d5-4bd6-eb0e7f6bda90/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">背景革命 - 写真・動画の背景透過・モザイク・ぼかし加工</h3>
+                    <p class="guide-app-meta">Osawa Shunsuke · App Storeの評価 128件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id1615647373" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>背景の編集が中心のアプリで、評価は128件です。白い縁を付けてステッカー風にでき、縁の幅や影の向きも細かく決められます。</p>
+            <p>写真に何人も写っていても、残したい人をタップで選べます。背景をぼかす、差し替える、何枚もまとめて加工する、動画の背景を変えることもできます。Pro版は一度買えばずっと使える買い切りです。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ec/6b/30/ec6b3054-02f8-c32d-75bb-6213841b5c73/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Photo Outline Maker: Editor</h3>
+                    <p class="guide-app-meta">Jabed Hasan · App Storeの評価 0件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6819720348" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>縁の種類が132もあるのが特徴です。白い線のほかに、点線、光る縁、星やハートの縁があって、幅と色も変えられます。</p>
+            <p>切り抜いたあとに、背景の色や写真、文字、デコを足して仕上げられます。処理は全部iPhoneの中です。月額と年額のサブスクリプションがあります。説明文は英語だけでした。</p>
+            <h2>どれを選ぶか</h2>
+            <ul class="guide-list"><li>白いふちで十分なら、まずiPhoneの写真アプリ</li><li>背景のぼかしや差し替え、動画もやりたいなら、背景革命</li><li>星やハートなど、縁の柄で遊びたいなら、Photo Outline Maker</li><li>好きな色と太さの縁を付けて、透過PNGで保存したいなら、フチドリ！</li></ul>
+            <h2>よくある質問</h2>
+            <dl class="guide-faq">
+                <dt>無料で使えますか？</dt><dd>3本とも無料で入れられます。フチドリ！は無料で3回保存できて、そのあとは広告を見れば保存できます。背景革命も無料版で写真の加工ができます。</dd>
+                <dt>写真がネットに送られることはありますか？</dt><dd>3本とも、説明文で切り抜きはスマホの中で処理すると書かれています。</dd>
+                <dt>背景を透明にして保存できますか？</dt><dd>3本ともできます。フチドリ！は保存すると、そのまま背景が透明なPNGになります。</dd>
+            </dl>
+            <p>フチドリ！の評価は16件です。推しの色で縁取った作品ができたら、ぜひ見せてください🎨</p>
+            <div class="guide-notes">各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。iPhoneの写真アプリでステッカーを作るには、iOS 17以降が要ります。</div>
+        </div>
+
+        <div class="post-content guide i18n-en">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">Short answer</p>
+                <p>If a white edge is enough, you can make a sticker right in the iPhone Photos app. To change the outline color or width, use an app. Background Remover, with 128 ratings, is also strong at background editing, and Photo Outline Maker has outline patterns to choose from. If you want any color and width and a transparent PNG, take a look at Fuchidori!, which I made.</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">Written by <a href="https://tsuzukit.com/about/">Ryo Tsuzukihashi</a> (@tsuzuki817)</p>
+                    <p class="guide-byline-bio">I&#x27;ve been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made Fuchidori!.</p>
+                    <p class="guide-byline-date">Published <time datetime="2026-11-15">2026-11-15</time> · Updated <time datetime="2026-11-15">2026-11-15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">I made Fuchidori!, and I wrote this article. The other two apps are by developers I don&#x27;t know, and I haven&#x27;t received money or anything else from them. Everything compared here comes from each app&#x27;s App Store description and rating count as of November 15, 2026.</p>
+            <h2>A white edge needs nothing but your iPhone</h2>
+            <p>In the iPhone Photos app, press and hold on a person or object to lift it out of the photo. Add it as a sticker, then pick an effect to give it a white edge.</p>
+            <p>What you can&#x27;t do is choose the outline color or width. If you want it in a favorite color, or thicker, that&#x27;s where an app helps.</p>
+            <h2>The three apps at a glance</h2>
+            <p>All three cut out the subject on your phone without uploading your photo. The differences are how far you can play with the outline, and what else they do.</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">App</th><th scope="col">Ratings</th><th scope="col">Outline color and width</th><th scope="col">Beyond outlines</th><th scope="col">Pricing</th></tr></thead><tbody><tr><th scope="row">Fuchidori! (my app)</th><td>16</td><td>Any color, 0 to 50 pt</td><td>Eyedropper to pick colors from a photo</td><td>3 free saves, then watch an ad to save. One-time purchase removes ads</td></tr><tr><th scope="row">Background Remover</th><td>128</td><td>White edge, adjustable width</td><td>Blurring or swapping backgrounds, video</td><td>Free tier, Pro is a one-time purchase</td></tr><tr><th scope="row">Photo Outline Maker</th><td>0</td><td>132 outline styles, any color and width</td><td>Backgrounds, text, decals</td><td>Subscription available</td></tr></tbody></table></div>
+            <h2>Each app, one by one</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e9/c8/e9/e9c8e9e7-4318-1e0d-d221-582004a023a2/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">I made this</span>
+                    <h3 class="guide-app-name">Fuchidori! - Outline Stickers</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · 16 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6748528617" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>Pick a photo and it automatically removes the background on your phone. For the outline color, choose from presets, make any color you like, or pick one straight from the photo with an eyedropper.</p>
+            <p>Width goes from 0 to 50 pt in 1 pt steps. It saves as a PNG with a transparent background, ready to use as a sticker or drop into another image. It doesn&#x27;t need the internet, so it works offline too.</p>
+            <p>The free version gives you three saves to start, and after that you can save by watching an ad. A one-time purchase removes the ads.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d8/c3/48/d8c3488d-3e11-10d5-4bd6-eb0e7f6bda90/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Photo/Video Background Remover</h3>
+                    <p class="guide-app-meta">Osawa Shunsuke · 128 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id1615647373" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>This app is mainly about editing backgrounds, and it has 128 ratings. It can add a white edge for a sticker look, and you can fine-tune the edge width and shadow direction.</p>
+            <p>If several people are in a photo, you can tap the one you want to keep. It can also blur or replace backgrounds, process several photos at once, and edit video backgrounds. The Pro version is a one-time purchase.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ec/6b/30/ec6b3054-02f8-c32d-75bb-6213841b5c73/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Photo Outline Maker: Editor</h3>
+                    <p class="guide-app-meta">Jabed Hasan · 0 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6819720348" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>Its standout is 132 outline styles. Besides a plain white line there are dashed lines, glows, stars, and hearts, all with adjustable width and color.</p>
+            <p>After the cutout, you can add backgrounds, text, and decals to finish it. Everything is processed on the iPhone. It offers monthly and yearly subscriptions. The description is in English only.</p>
+            <h2>Which one to pick</h2>
+            <ul class="guide-list"><li>If a white edge is enough, start with the iPhone Photos app</li><li>If you also want to blur or replace backgrounds, or edit video, Background Remover</li><li>If you want fun outline styles like stars and hearts, Photo Outline Maker</li><li>If you want an outline in any color and width, saved as a transparent PNG, Fuchidori!</li></ul>
+            <h2>FAQ</h2>
+            <dl class="guide-faq">
+                <dt>Are they free?</dt><dd>All three are free to download. Fuchidori! gives you three free saves, and after that you can save by watching an ad. Background Remover also lets you edit photos in its free version.</dd>
+                <dt>Do my photos get uploaded anywhere?</dt><dd>All three say in their descriptions that the cutout is processed on your phone.</dd>
+                <dt>Can I save with a transparent background?</dt><dd>All three can. Fuchidori! saves straight to a PNG with a transparent background.</dd>
+            </dl>
+            <p>Fuchidori! has 16 ratings so far. If you make something outlined in your favorite color, I&#x27;d love to see it 🎨</p>
+            <div class="guide-notes">Features and rating counts were checked against each app&#x27;s App Store description on November 15, 2026, and may change with updates. Making stickers in the iPhone Photos app requires iOS 17 or later.</div>
+        </div>
+
+        <nav class="post-navigation">
+            <img class="tk-char tk-char--post" src="/assets/images/character-hang.png" alt="" width="381" height="208">
+            <a href="/blog/guides/" class="nav-link-wrapper"><span>&larr; <span class="i18n-ja">困りごとから選ぶアプリの一覧へ</span><span class="i18n-en">All guides: apps for everyday problems</span></span></a>
+        </nav>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
+                    <p class="footer-description"><span class="i18n-ja">誰も作らないものを、まじめに作る</span><span class="i18n-en">I make things nobody else would, and I make them seriously</span></p>
+                </div>
+                <div class="footer-nav">
+                    <a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
+                    <a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
+                    <a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
+                    <a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ryo Tsuzukihashi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

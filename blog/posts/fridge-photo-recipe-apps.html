@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/js/lang.js"></script>
+    <!-- このページは scripts/build_guides.py が docs/guides/fridge-photo-recipe-apps.json から作る。直すのは JSON のほう -->
+    <title>冷蔵庫の中身からレシピを出してくれるアプリ4選 - Blog | Ryo Tsuzukihashi</title>
+    <meta name="description" content="冷蔵庫の中身からレシピを提案するアプリを4本比べました。食材の入れ方、無料でどこまで使えるか、ほかにできることの違いをまとめています。Cook-itの作者が書いています。">
+    <meta name="title-en" content="4 Apps That Turn What’s in Your Fridge into Recipes - Blog | Ryo Tsuzukihashi">
+    <meta name="description-en" content="I compared four iPhone apps that suggest recipes from what&#x27;s in your fridge: how you enter ingredients, what you get for free, and what else they do. Written by the maker of Cook-it.">
+    <link rel="canonical" href="https://tsuzukit.com/blog/posts/fridge-photo-recipe-apps.html">
+
+    <!-- OGP -->
+    <meta property="og:title" content="冷蔵庫の中身からレシピを出してくれるアプリ4選">
+    <meta property="og:description" content="冷蔵庫の中身からレシピを提案するアプリを4本比べました。食材の入れ方、無料でどこまで使えるか、ほかにできることの違いをまとめています。Cook-itの作者が書いています。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://tsuzukit.com/blog/posts/fridge-photo-recipe-apps.html">
+    <meta property="og:image" content="https://tsuzukit.com/assets/images/posts/fridge-photo-recipe-apps.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://tsuzukit.com/assets/images/posts/fridge-photo-recipe-apps.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-dark-32x32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-dark-16x16.png" media="(prefers-color-scheme: dark)">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERPQ1EGLH');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8240751277462688"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
+    <link rel="stylesheet" href="/assets/css/guide.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "冷蔵庫の中身からレシピを出してくれるアプリ4選",
+      "description": "冷蔵庫の中身からレシピを提案するアプリを4本比べました。食材の入れ方、無料でどこまで使えるか、ほかにできることの違いをまとめています。Cook-itの作者が書いています。",
+      "image": "https://tsuzukit.com/assets/images/posts/fridge-photo-recipe-apps.webp",
+      "datePublished": "2026-11-15",
+      "dateModified": "2026-11-15",
+      "inLanguage": "ja",
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "mainEntityOfPage": "https://tsuzukit.com/blog/posts/fridge-photo-recipe-apps.html",
+      "about": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "Cook-it -冷蔵庫の中を撮るだけでAIレシピ提案-",
+          "url": "https://apps.apple.com/jp/app/id6751343632",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "pecco(ぺっこ) - 冷蔵庫レシピ献立料理アプリ",
+          "url": "https://apps.apple.com/jp/app/id1482088545",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "冷蔵庫シェフ - 余り物で絶品AIレシピ",
+          "url": "https://apps.apple.com/jp/app/id6758548360",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "FridgeCook - 冷蔵庫レシピAI",
+          "url": "https://apps.apple.com/jp/app/id6762107808",
+          "operatingSystem": "iOS"
+        }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Cook-it -冷蔵庫の中を撮るだけでAIレシピ提案-",
+      "operatingSystem": "iOS",
+      "applicationCategory": "FoodApplication",
+      "url": "https://apps.apple.com/jp/app/id6751343632",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "無料で写真から提案してもらえますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "冷蔵庫シェフは、基本の機能が広告付きで無料です。Cook-itは写真の提案がプレミアムです。peccoとFridgeCookは、料金が説明文に書かれていませんでした。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "撮った写真はどこに送られますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cook-itと冷蔵庫シェフは、説明文にGoogleのGeminiを使うと書いています。気になる人は、各アプリのプライバシーポリシーを読んでから使ってください。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "アレルギーがある食材を外せますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "説明文でアレルギーの設定に触れているのはpeccoです。AIの提案は材料を見落とすこともあるので、作る前に材料の欄を自分で確かめてください。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tsuzukit.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://tsuzukit.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "困りごとから選ぶアプリ",
+          "item": "https://tsuzukit.com/blog/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "冷蔵庫の中身からレシピを出してくれるアプリ4選",
+          "item": "https://tsuzukit.com/blog/posts/fridge-photo-recipe-apps.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">TsuzuKit</a>
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/portfolio/" class="nav-link">Portfolio</a>
+                <a href="/blog/" class="nav-link active">Blog</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post -->
+    <article class="blog-post">
+        <header class="post-header">
+            <div class="post-meta">
+                <span class="post-date">2026.11.15</span>
+                <span class="post-category"><span class="i18n-ja">アプリの選び方</span><span class="i18n-en">App guides</span></span>
+                <span class="post-reading-time"><span class="i18n-ja">4分で読める</span><span class="i18n-en">4 min read</span></span>
+            </div>
+            <h1 class="post-title"><span class="i18n-ja">冷蔵庫の中身からレシピを出してくれるアプリ4選</span><span class="i18n-en">4 Apps That Turn What’s in Your Fridge into Recipes</span></h1>
+        </header>
+        <figure class="post-illustration guide-illustration"><img src="/assets/images/posts/fridge-photo-recipe-apps.webp" width="1200" height="800" alt="残った食材を並べて、浮かんだ4つの料理を見比べるキャラクター" data-en-alt="The character looking over a few leftover ingredients, with four steaming dishes floating above" fetchpriority="high"></figure>
+
+        <div class="post-content guide i18n-ja">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">先に答え</p>
+                <p>いちばん使われているのは評価2,206件のpeccoで、冷蔵庫の食材を登録しておくと、それだけで作れるレシピを出してくれます。無料で写真から提案してほしいなら冷蔵庫シェフ。提案のあと、工程ごとのタイマーまで1つのアプリで済ませたい人は、僕が作ったCook-itも見てみてください。写真の提案はプレミアムです。</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">書いた人 <a href="https://tsuzukit.com/about/">續橋 涼</a>（@tsuzuki817）</p>
+                    <p class="guide-byline-bio">2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。Cook-itの作者です。</p>
+                    <p class="guide-byline-date">公開 <time datetime="2026-11-15">2026.11.15</time> · 更新 <time datetime="2026-11-15">2026.11.15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">この記事は、Cook-itを作った僕が書いています。ほかの3本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。</p>
+            <h2>4本をざっくり比べる</h2>
+            <p>違いが出るのは、食材をどうやってアプリに伝えるかと、無料でどこまで提案してもらえるかです。</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">アプリ</th><th scope="col">評価の件数</th><th scope="col">食材の入れ方</th><th scope="col">無料で使える範囲</th><th scope="col">ほかにできること</th></tr></thead><tbody><tr><th scope="row">Cook-it（僕のアプリ）</th><td>0件</td><td>写真、言葉で相談</td><td>写真の提案とAIの相談はプレミアム</td><td>工程ごとのタイマー</td></tr><tr><th scope="row">pecco</th><td>2,206件</td><td>冷蔵庫の食材を登録</td><td>説明文に記載なし</td><td>賞味期限のお知らせ、栄養のアドバイス</td></tr><tr><th scope="row">冷蔵庫シェフ</th><td>2件</td><td>文字、音声、写真</td><td>基本の機能は広告付きで無料</td><td>人数に合わせた分量、買い物リスト</td></tr><tr><th scope="row">FridgeCook</th><td>1件</td><td>写真</td><td>説明文に記載なし</td><td>5日分の作り置きプラン、栄養の表示</td></tr></tbody></table></div>
+            <h2>1本ずつ見ていく</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4d/89/0c/4d890c69-8fb6-4945-1fd5-823e7e97fc5e/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">僕が作ったアプリ</span>
+                    <h3 class="guide-app-name">Cook-it -冷蔵庫の中を撮るだけでAIレシピ提案-</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · App Storeの評価 0件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6751343632" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>冷蔵庫の中を撮ると、AIが食材を見分けて、それで作れるレシピを出します。豚肉と玉ねぎで何か作りたい、のように言葉で相談することもできます。</p>
+            <p>レシピの工程をまとめてタイマーに入れられるので、火にかけている間に次の作業へ移れます。ほかの人が投稿したレシピを見たり、10件まで保存したりするのは無料です。</p>
+            <p>写真からの提案と言葉での相談は、どちらもプレミアムです。作った料理をカレンダーに残す機能と、保存の数を無制限にするのもプレミアムに入っています。無料でまず写真の提案を試したい人には向いていないので、そこは正直に書いておきます。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/b5/df/92/b5df92ea-655d-e48b-0998-d93734ecd461/AppIcon-0-0-1x_U007emarketing-0-0-0-8-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">pecco(ぺっこ) - 冷蔵庫レシピ献立料理アプリ</h3>
+                    <p class="guide-app-meta">株式会社GEEK WORKS · App Storeの評価 2,206件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id1482088545" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>評価が2,206件あって、この中ではいちばん使われています。冷蔵庫の食材を登録しておくと、家にある食材だけで作れるレシピを出してくれます。アレルギーや賞味期限、優先して使いたい食材も選べます。</p>
+            <p>作ったレシピに合わせて冷蔵庫の残りの量を減らしてくれるので、買い物中に家に何があるかも分かります。賞味期限が近い食材をキャラクターが知らせてくれて、食べたものの栄養バランスに管理栄養士がアドバイスする機能もあります。写真で食材を読み取る機能は、説明文には書かれていませんでした。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/0a/90/34/0a903473-75e0-4c11-5996-85d2f5a9a8ab/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">冷蔵庫シェフ - 余り物で絶品AIレシピ</h3>
+                    <p class="guide-app-meta">YOSHITA KANETA · App Storeの評価 2件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6758548360" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>残った食材を文字、音声、写真のどれかで入れると、作る料理を提案してくれます。材料と手順を人数に合わせて見られて、気に入ったレシピは端末に保存できます。</p>
+            <p>基本の機能は無料で、広告付きで使い続けられると書かれています。有料のプレミアムは広告を消すための月額のサブスクリプションです。食材や写真は、GoogleのGeminiに送って提案を作る作りです。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/04/4a/5f/044a5fcf-5290-22ae-6dcf-0ca2aeb67371/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">FridgeCook - 冷蔵庫レシピAI</h3>
+                    <p class="guide-app-meta">BYNET · App Storeの評価 1件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6762107808" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>冷蔵庫を撮ると食材を見分けて、今日の1品を1つだけ出してくれます。迷わずすぐ決めたい人向けの作りで、別の料理にしたいときは2回まで出し直せます。</p>
+            <p>同じ写真から、5日分の作り置きのプランと買い物リストも作れます。カロリーとたんぱく質、脂質、炭水化物も出ます。料金については、説明文に書かれていませんでした。</p>
+            <h2>アプリを入れたくないなら</h2>
+            <p>レシピサイトの検索窓に、冷蔵庫にある食材の名前を2つか3つ入れて探すだけでも見つかります。</p>
+            <p>ただ、何があるかを自分で見て、名前を打つ手間はかかります。写真1枚で済むのがアプリのいいところですね。</p>
+            <h2>どれを選ぶか</h2>
+            <ul class="guide-list"><li>冷蔵庫の在庫や賞味期限も一緒に管理したいなら、pecco</li><li>無料のまま、写真から提案してほしいなら、冷蔵庫シェフ</li><li>作り置きを5日分まとめて決めたいなら、FridgeCook</li><li>提案から工程ごとのタイマーまで1つのアプリで済ませたいなら、Cook-it</li></ul>
+            <h2>よくある質問</h2>
+            <dl class="guide-faq">
+                <dt>無料で写真から提案してもらえますか？</dt><dd>冷蔵庫シェフは、基本の機能が広告付きで無料です。Cook-itは写真の提案がプレミアムです。peccoとFridgeCookは、料金が説明文に書かれていませんでした。</dd>
+                <dt>撮った写真はどこに送られますか？</dt><dd>Cook-itと冷蔵庫シェフは、説明文にGoogleのGeminiを使うと書いています。気になる人は、各アプリのプライバシーポリシーを読んでから使ってください。</dd>
+                <dt>アレルギーがある食材を外せますか？</dt><dd>説明文でアレルギーの設定に触れているのはpeccoです。AIの提案は材料を見落とすこともあるので、作る前に材料の欄を自分で確かめてください。</dd>
+            </dl>
+            <p>Cook-itはまだ評価が0件なので、使ってみた感想を聞かせてもらえたらうれしいです🍳</p>
+            <div class="guide-notes">各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。Cook-itの無料とプレミアムの境目は、アプリのコードで確かめました。アップデートで変わることがあります。</div>
+        </div>
+
+        <div class="post-content guide i18n-en">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">Short answer</p>
+                <p>The most widely used one is pecco, with 2,206 ratings. Register what&#x27;s in your fridge and it suggests recipes you can make with just that. If you want suggestions from a photo for free, try Fridge Chef. If you want the suggestion and a timer for every step in one app, take a look at Cook-it, which I made. Suggestions from a photo are Premium.</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">Written by <a href="https://tsuzukit.com/about/">Ryo Tsuzukihashi</a> (@tsuzuki817)</p>
+                    <p class="guide-byline-bio">I&#x27;ve been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made Cook-it.</p>
+                    <p class="guide-byline-date">Published <time datetime="2026-11-15">2026-11-15</time> · Updated <time datetime="2026-11-15">2026-11-15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">I made Cook-it, and I wrote this article. The other three apps are by developers I don&#x27;t know, and I haven&#x27;t received money or anything else from them. Everything compared here comes from each app&#x27;s App Store description and rating count as of November 15, 2026.</p>
+            <h2>The four apps at a glance</h2>
+            <p>Where they really differ is how you tell the app what you have, and how much it will suggest for free.</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">App</th><th scope="col">Ratings</th><th scope="col">How you enter ingredients</th><th scope="col">What&#x27;s free</th><th scope="col">Also</th></tr></thead><tbody><tr><th scope="row">Cook-it (my app)</th><td>0</td><td>A photo, or asking in your own words</td><td>Photo suggestions and AI chat are Premium</td><td>A timer for every step</td></tr><tr><th scope="row">pecco</th><td>2,206</td><td>Register what&#x27;s in your fridge</td><td>Not mentioned</td><td>Best-before alerts, nutrition advice</td></tr><tr><th scope="row">Fridge Chef</th><td>2</td><td>Text, voice, or a photo</td><td>Core features are free with ads</td><td>Amounts for your headcount, shopping list</td></tr><tr><th scope="row">FridgeCook</th><td>1</td><td>A photo</td><td>Not mentioned</td><td>A 5-day meal-prep plan, nutrition info</td></tr></tbody></table></div>
+            <h2>Each app, one by one</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4d/89/0c/4d890c69-8fb6-4945-1fd5-823e7e97fc5e/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">I made this</span>
+                    <h3 class="guide-app-name">Cook-it - AI Recipes from Your Fridge</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · 0 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6751343632" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>Take a photo of the inside of your fridge and the AI picks out the ingredients and suggests recipes you can make with them. You can also just ask in your own words, like wanting to make something with pork and onions.</p>
+            <p>You can load every step of a recipe into timers at once, so you can move on to the next task while something is on the stove. Browsing recipes other people posted and saving up to 10 of them are free.</p>
+            <p>Suggestions from a photo and asking in your own words are both Premium. Logging the dishes you made on a calendar and unlimited saves are Premium too. If you want to try photo suggestions for free first, this isn&#x27;t the one, and I&#x27;d rather say that plainly.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/b5/df/92/b5df92ea-655d-e48b-0998-d93734ecd461/AppIcon-0-0-1x_U007emarketing-0-0-0-8-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">pecco - Fridge Recipes and Meal Planner</h3>
+                    <p class="guide-app-meta">GEEK WORKS Inc. · 2,206 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id1482088545" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>With 2,206 ratings, it&#x27;s by far the most used of the four. Register the food in your fridge and it suggests recipes that use only what you have at home. You can also set allergies, best-before dates, and ingredients you want to use first.</p>
+            <p>It updates what&#x27;s left in your fridge based on the recipes you cook, so you can check what you have while you&#x27;re out shopping. A character warns you when something is close to its best-before date, and a registered dietitian gives advice on the nutritional balance of what you ate. The description doesn&#x27;t mention reading ingredients from a photo.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/0a/90/34/0a903473-75e0-4c11-5996-85d2f5a9a8ab/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Fridge Chef - AI Recipes from Leftovers</h3>
+                    <p class="guide-app-meta">YOSHITA KANETA · 2 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6758548360" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>Enter your leftover ingredients by typing, speaking, or taking a photo, and it suggests what to cook. You can see the ingredients and steps scaled to your headcount, and save recipes you like on your phone.</p>
+            <p>The description says the core features are free and you can keep using them with ads. Premium is a monthly subscription that removes the ads. Your ingredients and photos are sent to Google&#x27;s Gemini to make the suggestions.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/04/4a/5f/044a5fcf-5290-22ae-6dcf-0ca2aeb67371/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">FridgeCook - AI Recipe Finder</h3>
+                    <p class="guide-app-meta">BYNET · 1 App Store rating</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6762107808" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>Take a photo of your fridge and it identifies the ingredients, then shows you just one dish for today. It&#x27;s built for people who want to decide fast, and you can ask for a different dish up to two times.</p>
+            <p>From the same photo it can also make a 5-day meal-prep plan with a shopping list, and it shows calories along with protein, fat, and carbs. The description doesn&#x27;t say anything about pricing.</p>
+            <h2>If you&#x27;d rather not install an app</h2>
+            <p>You can also just type the names of two or three ingredients from your fridge into a recipe site&#x27;s search box.</p>
+            <p>The catch is that you have to check what you have and type it all in yourself. Getting there from a single photo is where the apps help.</p>
+            <h2>Which one to pick</h2>
+            <ul class="guide-list"><li>If you also want to track your fridge stock and best-before dates, pecco</li><li>If you want suggestions from a photo without paying, Fridge Chef</li><li>If you want to plan five days of meal prep at once, FridgeCook</li><li>If you want everything from the suggestion to a timer for each step in one app, Cook-it</li></ul>
+            <h2>FAQ</h2>
+            <dl class="guide-faq">
+                <dt>Can I get suggestions from a photo for free?</dt><dd>Fridge Chef&#x27;s core features are free with ads. Cook-it&#x27;s photo suggestions are Premium. pecco and FridgeCook don&#x27;t mention pricing in their descriptions.</dd>
+                <dt>Where do my photos go?</dt><dd>Cook-it and Fridge Chef both say in their descriptions that they use Google&#x27;s Gemini. If that matters to you, read each app&#x27;s privacy policy before using it.</dd>
+                <dt>Can I leave out ingredients I am allergic to?</dt><dd>pecco is the one whose description mentions allergy settings. AI suggestions can miss an ingredient, so check the ingredient list yourself before you cook.</dd>
+            </dl>
+            <p>Cook-it doesn&#x27;t have any ratings yet, so I&#x27;d love to hear what you think if you try it 🍳</p>
+            <div class="guide-notes">Features and rating counts were checked against each app&#x27;s App Store description on November 15, 2026. What&#x27;s free and what&#x27;s Premium in Cook-it was checked in the app&#x27;s code. Things may change with updates.</div>
+        </div>
+
+        <nav class="post-navigation">
+            <img class="tk-char tk-char--post" src="/assets/images/character-hang.png" alt="" width="381" height="208">
+            <a href="/blog/guides/" class="nav-link-wrapper"><span>&larr; <span class="i18n-ja">困りごとから選ぶアプリの一覧へ</span><span class="i18n-en">All guides: apps for everyday problems</span></span></a>
+        </nav>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
+                    <p class="footer-description"><span class="i18n-ja">誰も作らないものを、まじめに作る</span><span class="i18n-en">I make things nobody else would, and I make them seriously</span></p>
+                </div>
+                <div class="footer-nav">
+                    <a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
+                    <a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
+                    <a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
+                    <a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ryo Tsuzukihashi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

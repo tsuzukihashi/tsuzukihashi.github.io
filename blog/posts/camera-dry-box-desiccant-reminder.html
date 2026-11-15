@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/js/lang.js"></script>
+    <!-- このページは scripts/build_guides.py が docs/guides/camera-dry-box-desiccant-reminder.json から作る。直すのは JSON のほう -->
+    <title>カメラのドライボックスの乾燥剤、交換を忘れない方法 - Blog | Ryo Tsuzukihashi</title>
+    <meta name="description" content="カメラのドライボックスの乾燥剤を替え忘れないために、知らせてくれるアプリを2本比べました。アプリを使わない方法も書いています。CameraKeepの作者が書いています。">
+    <meta name="title-en" content="How to Stop Forgetting to Replace the Desiccant in Your Camera Dry Box - Blog | Ryo Tsuzukihashi">
+    <meta name="description-en" content="Two iPhone apps that remind you to replace the desiccant in your camera dry box, compared side by side, plus ways to do it without an app. Written by the maker of CameraKeep.">
+    <link rel="canonical" href="https://tsuzukit.com/blog/posts/camera-dry-box-desiccant-reminder.html">
+
+    <!-- OGP -->
+    <meta property="og:title" content="カメラのドライボックスの乾燥剤、交換を忘れない方法">
+    <meta property="og:description" content="カメラのドライボックスの乾燥剤を替え忘れないために、知らせてくれるアプリを2本比べました。アプリを使わない方法も書いています。CameraKeepの作者が書いています。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://tsuzukit.com/blog/posts/camera-dry-box-desiccant-reminder.html">
+    <meta property="og:image" content="https://tsuzukit.com/assets/images/posts/camera-dry-box-desiccant-reminder.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://tsuzukit.com/assets/images/posts/camera-dry-box-desiccant-reminder.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-dark-32x32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-dark-16x16.png" media="(prefers-color-scheme: dark)">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERPQ1EGLH');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8240751277462688"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
+    <link rel="stylesheet" href="/assets/css/guide.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "カメラのドライボックスの乾燥剤、交換を忘れない方法",
+      "description": "カメラのドライボックスの乾燥剤を替え忘れないために、知らせてくれるアプリを2本比べました。アプリを使わない方法も書いています。CameraKeepの作者が書いています。",
+      "image": "https://tsuzukit.com/assets/images/posts/camera-dry-box-desiccant-reminder.webp",
+      "datePublished": "2026-11-15",
+      "dateModified": "2026-11-15",
+      "inLanguage": "ja",
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "mainEntityOfPage": "https://tsuzukit.com/blog/posts/camera-dry-box-desiccant-reminder.html",
+      "about": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "CameraKeep カメラ機材管理",
+          "url": "https://apps.apple.com/jp/app/id6784186281",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "レンズカビ ガード：カメラ管理",
+          "url": "https://apps.apple.com/jp/app/id6787859470",
+          "operatingSystem": "iOS"
+        }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "CameraKeep カメラ機材管理",
+      "operatingSystem": "iOS",
+      "applicationCategory": "PhotographyApplication",
+      "url": "https://apps.apple.com/jp/app/id6784186281",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "乾燥剤はどれくらいで替えればいいですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "乾燥剤の量や箱の大きさ、部屋の湿度で変わります。乾燥剤の袋に書いてある目安を見て、湿度計の数字で合わせていくのが確実です。CameraKeepの30日は最初の設定で、変えられます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "無料で使えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "2本とも無料で入れられます。レンズカビ ガードは乾燥剤のカウントダウンがPro、CameraKeepは項目を4つ以上にするとプレミアムです。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "電気の防湿庫でもアプリは要りますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "電気の防湿庫なら乾燥剤の交換は要りません。湿度の表示をときどき見る習慣があれば、それで足ります。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tsuzukit.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://tsuzukit.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "困りごとから選ぶアプリ",
+          "item": "https://tsuzukit.com/blog/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "カメラのドライボックスの乾燥剤、交換を忘れない方法",
+          "item": "https://tsuzukit.com/blog/posts/camera-dry-box-desiccant-reminder.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">TsuzuKit</a>
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/portfolio/" class="nav-link">Portfolio</a>
+                <a href="/blog/" class="nav-link active">Blog</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post -->
+    <article class="blog-post">
+        <header class="post-header">
+            <div class="post-meta">
+                <span class="post-date">2026.11.15</span>
+                <span class="post-category"><span class="i18n-ja">アプリの選び方</span><span class="i18n-en">App guides</span></span>
+                <span class="post-reading-time"><span class="i18n-ja">3分で読める</span><span class="i18n-en">3 min read</span></span>
+            </div>
+            <h1 class="post-title"><span class="i18n-ja">カメラのドライボックスの乾燥剤、交換を忘れない方法</span><span class="i18n-en">How to Stop Forgetting to Replace the Desiccant in Your Camera Dry Box</span></h1>
+        </header>
+        <figure class="post-illustration guide-illustration"><img src="/assets/images/posts/camera-dry-box-desiccant-reminder.webp" width="1200" height="800" alt="雨の日に、ドライボックスへ新しい乾燥剤を入れるキャラクター" data-en-alt="The character placing a fresh desiccant pack into a clear dry box next to a camera on a rainy day" fetchpriority="high"></figure>
+
+        <div class="post-content guide i18n-ja">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">先に答え</p>
+                <p>ドライボックスに湿度計を入れて、乾燥剤を替える日をどこかに知らせてもらうのが確実です。外の湿度からカビの危なさを毎日見たいならレンズカビ ガード。乾燥剤の交換をレンズ清掃やセンサー清掃と一緒に周期で管理したい人は、僕が作ったCameraKeepも見てみてください。</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">書いた人 <a href="https://tsuzukit.com/about/">續橋 涼</a>（@tsuzuki817）</p>
+                    <p class="guide-byline-bio">2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。CameraKeepの作者です。</p>
+                    <p class="guide-byline-date">公開 <time datetime="2026-11-15">2026.11.15</time> · 更新 <time datetime="2026-11-15">2026.11.15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">この記事は、CameraKeepを作った僕が書いています。もう1本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。</p>
+            <h2>2本をざっくり比べる</h2>
+            <p>CameraKeepは決めた周期で知らせて、レンズカビ ガードはその日の湿度から危なさを判定します。考え方がそもそも違います。</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">アプリ</th><th scope="col">評価の件数</th><th scope="col">乾燥剤の交換</th><th scope="col">湿度</th><th scope="col">ほかの手入れ</th><th scope="col">無料の範囲</th></tr></thead><tbody><tr><th scope="row">CameraKeep（僕のアプリ）</th><td>0件</td><td>30日ごとに通知。周期は変えられる</td><td>防湿庫の湿度チェックを7日ごとに通知</td><td>レンズ清掃、センサー清掃など10項目</td><td>機材1つ、項目3つまで</td></tr><tr><th scope="row">レンズカビ ガード</th><td>0件</td><td>交換までのカウントダウン（Pro）</td><td>現地の湿度と気温から毎日判定</td><td>説明文に記載なし</td><td>今日のカビの危なさの判定</td></tr></tbody></table></div>
+            <h2>1本ずつ見ていく</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/27/8c/06/278c0652-d947-ac5c-c430-424eeb3b97b9/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">僕が作ったアプリ</span>
+                    <h3 class="guide-app-name">CameraKeep カメラ機材管理</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · App Storeの評価 0件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6784186281" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>乾燥剤の交換は30日ごと、防湿庫の湿度チェックは7日ごとに知らせる項目が用意してあります。3日前、前日、当日に通知が来て、過ぎたら済ませたと記録するまで毎日来ます。</p>
+            <p>無料だと機材1つに項目3つまでで、最初はレンズ清掃、防湿庫の湿度チェック、センサー清掃が入っています。無料のまま乾燥剤の交換を足すなら、どれか1つと入れ替えることになります。項目を増やすのはプレミアムで、iPhone専用です。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/f6/7a/eb/f67aeb89-6a2a-3e2e-aa7f-2dd7ee52a0e2/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">レンズカビ ガード：カメラ管理</h3>
+                    <p class="guide-app-meta">JUHWAN PARK · App Storeの評価 0件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6787859470" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>今いる場所の湿度と気温を取ってきて、今日のカビの危なさを安全、注意、対処の3段階で出します。バッグに入れているか、防湿庫か、密閉しているかも考えてくれます。</p>
+            <p>乾燥剤の交換までのカウントダウンと、湿度が高い日の通知はProの機能です。外の天気から見ているので、箱の中を測るものではないと説明文にも書いてあります。</p>
+            <h2>アプリを入れたくないなら</h2>
+            <p>ドライボックスに小さな湿度計を入れておくと、乾燥剤が効いているかが目で分かります。湿度が上がってきたら替えどきです。</p>
+            <p>色が変わって替えどきを知らせる乾燥剤もあります。替えた日をiPhoneのリマインダーに入れて、1か月ごとに繰り返す手もありますね。</p>
+            <h2>どれを選ぶか</h2>
+            <ul class="guide-list"><li>外の湿度から、今日カビに気をつけるべきかを毎日知りたいなら、レンズカビ ガード</li><li>乾燥剤の交換をレンズやセンサーの清掃と一緒に周期で回したいなら、CameraKeep</li><li>ボックスが1つだけなら、湿度計とリマインダーでも十分</li></ul>
+            <h2>よくある質問</h2>
+            <dl class="guide-faq">
+                <dt>乾燥剤はどれくらいで替えればいいですか？</dt><dd>乾燥剤の量や箱の大きさ、部屋の湿度で変わります。乾燥剤の袋に書いてある目安を見て、湿度計の数字で合わせていくのが確実です。CameraKeepの30日は最初の設定で、変えられます。</dd>
+                <dt>無料で使えますか？</dt><dd>2本とも無料で入れられます。レンズカビ ガードは乾燥剤のカウントダウンがPro、CameraKeepは項目を4つ以上にするとプレミアムです。</dd>
+                <dt>電気の防湿庫でもアプリは要りますか？</dt><dd>電気の防湿庫なら乾燥剤の交換は要りません。湿度の表示をときどき見る習慣があれば、それで足ります。</dd>
+            </dl>
+            <p>CameraKeepはまだ評価が0件なので、撮りに行く前にでも感想をもらえたらうれしいです📷</p>
+            <div class="guide-notes">各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。CameraKeepの機能はアプリのコードで確かめました。機材の保管は、カメラやレンズのメーカーの案内に従ってください。</div>
+        </div>
+
+        <div class="post-content guide i18n-en">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">Short answer</p>
+                <p>The reliable way is a hygrometer inside the dry box plus something that tells you when to swap the desiccant. If you want a daily read on mold risk from the local humidity, Lens Fungus Guard. If you&#x27;d rather keep desiccant swaps on a schedule alongside lens and sensor cleaning, take a look at CameraKeep, which I made.</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">Written by <a href="https://tsuzukit.com/about/">Ryo Tsuzukihashi</a> (@tsuzuki817)</p>
+                    <p class="guide-byline-bio">I&#x27;ve been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made CameraKeep.</p>
+                    <p class="guide-byline-date">Published <time datetime="2026-11-15">2026-11-15</time> · Updated <time datetime="2026-11-15">2026-11-15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">I made CameraKeep, and I wrote this article. The other app is by a developer I don&#x27;t know, and I haven&#x27;t received money or anything else from them. Everything compared here comes from each app&#x27;s App Store description and rating count as of November 15, 2026.</p>
+            <h2>The two apps at a glance</h2>
+            <p>CameraKeep reminds you on a schedule you set, while Lens Fungus Guard judges the risk from the day&#x27;s humidity. They start from different ideas.</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">App</th><th scope="col">Ratings</th><th scope="col">Desiccant swaps</th><th scope="col">Humidity</th><th scope="col">Other care</th><th scope="col">Free version</th></tr></thead><tbody><tr><th scope="row">CameraKeep (my app)</th><td>0</td><td>Every 30 days by default, adjustable</td><td>Reminds you to check the dry box every 7 days</td><td>10 items, including lens and sensor cleaning</td><td>1 piece of gear, 3 items</td></tr><tr><th scope="row">Lens Fungus Guard</th><td>0</td><td>Countdown to the next swap (Pro)</td><td>Daily verdict from local humidity and temperature</td><td>Not mentioned</td><td>Today&#x27;s mold risk verdict</td></tr></tbody></table></div>
+            <h2>Each app, one by one</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/27/8c/06/278c0652-d947-ac5c-c430-424eeb3b97b9/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">I made this</span>
+                    <h3 class="guide-app-name">CameraKeep: Camera Gear Care</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · 0 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6784186281" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>It has ready-made items for swapping desiccant every 30 days and checking the dry box humidity every 7 days. You get a notification 3 days before, the day before, and on the day, then every day until you log it as done.</p>
+            <p>The free version allows one piece of gear with up to 3 items, starting with lens cleaning, dry box humidity check, and sensor cleaning. To add desiccant swaps without paying, you&#x27;d swap it in for one of those. More items need Premium. It&#x27;s iPhone only.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/f6/7a/eb/f67aeb89-6a2a-3e2e-aa7f-2dd7ee52a0e2/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Lens Fungus Guard: Camera Care</h3>
+                    <p class="guide-app-meta">JUHWAN PARK · 0 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6787859470" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>It pulls the humidity and temperature where you are and rates today&#x27;s mold risk as safe, caution, or take action. It also accounts for whether your gear is in a bag, a dry cabinet, or a sealed container.</p>
+            <p>The countdown to your next desiccant swap and alerts on humid days are Pro features. Since it works from the outside weather, its description notes that it doesn&#x27;t measure inside the box.</p>
+            <h2>If you&#x27;d rather not install an app</h2>
+            <p>Put a small hygrometer inside the dry box and you can see at a glance whether the desiccant is still working. When the humidity starts creeping up, it&#x27;s time to swap.</p>
+            <p>Some desiccants also change color when they need replacing. Or you can put the swap date in the iPhone Reminders app and set it to repeat every month.</p>
+            <h2>Which one to pick</h2>
+            <ul class="guide-list"><li>If you want to know every day whether mold is a concern based on the local humidity, Lens Fungus Guard</li><li>If you want desiccant swaps on a schedule alongside lens and sensor cleaning, CameraKeep</li><li>If you only have one box, a hygrometer and a reminder are plenty</li></ul>
+            <h2>FAQ</h2>
+            <dl class="guide-faq">
+                <dt>How often should I replace the desiccant?</dt><dd>It depends on how much desiccant you use, the size of the box, and the humidity in your room. Start from the guideline on the desiccant package and adjust based on your hygrometer. CameraKeep&#x27;s 30 days is just the starting setting and can be changed.</dd>
+                <dt>Are they free?</dt><dd>Both are free to download. Lens Fungus Guard puts the desiccant countdown in Pro, and CameraKeep needs Premium for more than 3 items.</dd>
+                <dt>Do I need an app if I have an electric dry cabinet?</dt><dd>An electric dry cabinet doesn&#x27;t use desiccant, so there&#x27;s nothing to swap. Glancing at its humidity display now and then is enough.</dd>
+            </dl>
+            <p>CameraKeep doesn&#x27;t have any ratings yet, so if you have a moment before your next shoot, I&#x27;d love to hear what you think 📷</p>
+            <div class="guide-notes">Features and rating counts were checked against each app&#x27;s App Store description on November 15, 2026, and may change with updates. CameraKeep&#x27;s features were checked against the app&#x27;s own code. Follow your camera and lens maker&#x27;s guidance on storing your gear.</div>
+        </div>
+
+        <nav class="post-navigation">
+            <img class="tk-char tk-char--post" src="/assets/images/character-hang.png" alt="" width="381" height="208">
+            <a href="/blog/guides/" class="nav-link-wrapper"><span>&larr; <span class="i18n-ja">困りごとから選ぶアプリの一覧へ</span><span class="i18n-en">All guides: apps for everyday problems</span></span></a>
+        </nav>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
+                    <p class="footer-description"><span class="i18n-ja">誰も作らないものを、まじめに作る</span><span class="i18n-en">I make things nobody else would, and I make them seriously</span></p>
+                </div>
+                <div class="footer-nav">
+                    <a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
+                    <a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
+                    <a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
+                    <a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ryo Tsuzukihashi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/js/lang.js"></script>
+    <!-- このページは scripts/build_guides.py が docs/guides/leather-shoe-care-apps.json から作る。直すのは JSON のほう -->
+    <title>革靴の磨きどきとローテーションを管理するアプリ4選 - Blog | Ryo Tsuzukihashi</title>
+    <meta name="description" content="革靴の磨きどきを通知してくれるアプリを4本比べました。何で磨きどきを決めるか、通知の回数、休ませる日の管理、無料で登録できる足数の違いをまとめています。ShoeKeepの作者が書いています。">
+    <meta name="title-en" content="4 Apps That Tell You When to Polish Your Leather Shoes - Blog | Ryo Tsuzukihashi">
+    <meta name="description-en" content="I compared four iPhone apps that remind you when to polish your leather shoes: how each decides it&#x27;s time, how it notifies you, rest days between wears, and how many pairs are free. Written by the maker of ShoeKeep.">
+    <link rel="canonical" href="https://tsuzukit.com/blog/posts/leather-shoe-care-apps.html">
+
+    <!-- OGP -->
+    <meta property="og:title" content="革靴の磨きどきとローテーションを管理するアプリ4選">
+    <meta property="og:description" content="革靴の磨きどきを通知してくれるアプリを4本比べました。何で磨きどきを決めるか、通知の回数、休ませる日の管理、無料で登録できる足数の違いをまとめています。ShoeKeepの作者が書いています。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://tsuzukit.com/blog/posts/leather-shoe-care-apps.html">
+    <meta property="og:image" content="https://tsuzukit.com/assets/images/posts/leather-shoe-care-apps.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://tsuzukit.com/assets/images/posts/leather-shoe-care-apps.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-dark-32x32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-dark-16x16.png" media="(prefers-color-scheme: dark)">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERPQ1EGLH');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8240751277462688"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
+    <link rel="stylesheet" href="/assets/css/guide.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "革靴の磨きどきとローテーションを管理するアプリ4選",
+      "description": "革靴の磨きどきを通知してくれるアプリを4本比べました。何で磨きどきを決めるか、通知の回数、休ませる日の管理、無料で登録できる足数の違いをまとめています。ShoeKeepの作者が書いています。",
+      "image": "https://tsuzukit.com/assets/images/posts/leather-shoe-care-apps.webp",
+      "datePublished": "2026-11-15",
+      "dateModified": "2026-11-15",
+      "inLanguage": "ja",
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "mainEntityOfPage": "https://tsuzukit.com/blog/posts/leather-shoe-care-apps.html",
+      "about": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "革靴ケア手帳 ShoeKeep",
+          "url": "https://apps.apple.com/jp/app/id6781119303",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "革靴・靴磨き好きのアプリ KutsuReco(クツレコ)",
+          "url": "https://apps.apple.com/jp/app/id1579249791",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "ShoeTree - 革靴の手入れ記録",
+          "url": "https://apps.apple.com/jp/app/id6793043430",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "Patinist -経年変化・革靴好きのための記録アプリ-",
+          "url": "https://apps.apple.com/jp/app/id6762127971",
+          "operatingSystem": "iOS"
+        }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "革靴ケア手帳 ShoeKeep",
+      "operatingSystem": "iOS",
+      "applicationCategory": "LifestyleApplication",
+      "url": "https://apps.apple.com/jp/app/id6781119303",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "無料で使えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "4本とも無料で入れられます。ShoeKeepとShoeTreeは無料だと3足までで、それより多いと有料です。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "スエードの靴でも使えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ShoeKeepにはスエードとヌバックの目安が入っています。ほかの3本は、素材ごとの目安があるかどうか説明文に書かれていませんでした。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "アプリの出す磨きどきの通りに手入れすれば大丈夫ですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "どのアプリも出しているのは目安です。革の乾き具合を見て、迷ったら買ったお店や靴の修理店に聞いてみてください。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tsuzukit.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://tsuzukit.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "困りごとから選ぶアプリ",
+          "item": "https://tsuzukit.com/blog/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "革靴の磨きどきとローテーションを管理するアプリ4選",
+          "item": "https://tsuzukit.com/blog/posts/leather-shoe-care-apps.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">TsuzuKit</a>
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/portfolio/" class="nav-link">Portfolio</a>
+                <a href="/blog/" class="nav-link active">Blog</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post -->
+    <article class="blog-post">
+        <header class="post-header">
+            <div class="post-meta">
+                <span class="post-date">2026.11.15</span>
+                <span class="post-category"><span class="i18n-ja">アプリの選び方</span><span class="i18n-en">App guides</span></span>
+                <span class="post-reading-time"><span class="i18n-ja">4分で読める</span><span class="i18n-en">4 min read</span></span>
+            </div>
+            <h1 class="post-title"><span class="i18n-ja">革靴の磨きどきとローテーションを管理するアプリ4選</span><span class="i18n-en">4 Apps That Tell You When to Polish Your Leather Shoes</span></h1>
+        </header>
+        <figure class="post-illustration guide-illustration"><img src="/assets/images/posts/leather-shoe-care-apps.webp" width="1200" height="800" alt="スマホの合図を見ながら、下駄箱の前で革靴を磨こうとしているキャラクター" data-en-alt="The character crouching by a shoe cabinet with a brush, picking which leather shoe to polish from a glowing phone" fetchpriority="high"></figure>
+
+        <div class="post-content guide i18n-ja">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">先に答え</p>
+                <p>手っ取り早いのは、靴を登録して磨きどきを通知してくれるアプリを入れることです。いちばん使われているのは評価110件のKutsuReco。履いた回数でも磨きどきを数えたい人や、同じ靴を続けて履かないように休ませる日も見たい人は、僕が作ったShoeKeepも見てみてください。</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">書いた人 <a href="https://tsuzukit.com/about/">續橋 涼</a>（@tsuzuki817）</p>
+                    <p class="guide-byline-bio">2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。ShoeKeepの作者です。</p>
+                    <p class="guide-byline-date">公開 <time datetime="2026-11-15">2026.11.15</time> · 更新 <time datetime="2026-11-15">2026.11.15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">この記事は、ShoeKeepを作った僕が書いています。ほかの3本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。</p>
+            <h2>4本をざっくり比べる</h2>
+            <p>違いが出るのは、磨きどきを日数で決めるか、履いた回数でも決めるかです。休ませる日まで見てくれるかも分かれます。</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">アプリ</th><th scope="col">評価の件数</th><th scope="col">磨きどきの決め方</th><th scope="col">通知</th><th scope="col">休ませる日</th><th scope="col">無料で登録できる数</th></tr></thead><tbody><tr><th scope="row">ShoeKeep（僕のアプリ）</th><td>1件</td><td>履いた回数と日数。素材ごとの目安入り</td><td>7日前、前日、当日。過ぎたら磨くまで毎日</td><td>今日履ける靴と休息中の靴を表示</td><td>3足</td></tr><tr><th scope="row">KutsuReco</th><td>110件</td><td>決めておいた日数</td><td>あり</td><td>説明文に記載なし。履いた靴をカレンダーに記録</td><td>説明文に記載なし</td></tr><tr><th scope="row">ShoeTree</th><td>0件</td><td>日数や回数のルールを靴ごとに設定</td><td>あり</td><td>説明文に記載なし</td><td>3足</td></tr><tr><th scope="row">Patinist</th><td>3件</td><td>最後のケアから1か月</td><td>あり</td><td>説明文に記載なし。雨の日はラバーソールを提案</td><td>説明文に記載なし</td></tr></tbody></table></div>
+            <h2>1本ずつ見ていく</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f8/12/c3/f812c390-a5a7-501f-8d7c-b7eb3b8801a4/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">僕が作ったアプリ</span>
+                    <h3 class="guide-app-name">革靴ケア手帳 ShoeKeep</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · App Storeの評価 1件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6781119303" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>靴を登録すると、履いた回数と前回の手入れからの日数のうち、先に来たほうで磨きどきを出します。スムースレザー、コードバン、スエードなど、素材ごとの目安が最初から入っています。雨に濡れたと記録した靴は、その日が磨きどきになります。</p>
+            <p>通知は7日前と前日と当日の夜に来て、過ぎたら磨いたと記録するまで毎日来ます。履いた日を記録すると、まだ休ませたほうがいい靴は休息中として出ます。コードバンは2日、ほかの素材は1日休ませる設定です。</p>
+            <p>無料で3足まで登録できます。下駄箱ごとのグループ分けと手入れの記録の一覧は、プレミアムです。iPhone専用です。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/f9/2c/fd/f92cfdc0-5259-1364-9fd6-22341227cdeb/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">革靴・靴磨き好きのアプリ KutsuReco(クツレコ)</h3>
+                    <p class="guide-app-meta">Keima Kondo · App Storeの評価 110件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id1579249791" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>評価が110件あって、この中ではいちばん使われています。その日の天気と履いた靴を選ぶだけで、革靴専用のカレンダーに記録できます。どんな天気で何回履いたかも見られます。</p>
+            <p>靴磨きの時期は、決めておいた日数で通知します。靴ごとのアルバムに写真を残せるので、エイジングを見返したい人に向いてますね。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/f6/72/f5/f672f556-e0fd-60be-cd19-ff06aef0570b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">ShoeTree - 革靴の手入れ記録</h3>
+                    <p class="guide-app-meta">Ippei Ishida · App Storeの評価 0件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6793043430" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>履いてから60日、クリームを塗ってから10回のように、靴ごとにアラートのルールを決められます。日数でも回数でも決められるのは、ShoeKeepと同じ考え方です。</p>
+            <p>修理の記録とかかった費用も残せます。無料で3足まで登録できて、それより多いと月額か年額のProプランです。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/f8/af/6d/f8af6d1d-f682-e906-10cb-6e211c85a22c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Patinist -経年変化・革靴好きのための記録アプリ-</h3>
+                    <p class="guide-app-meta">Takahiro Yamada · App Storeの評価 3件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6762127971" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>最後の手入れから1か月たった靴を通知で知らせます。現在地の天気を取ってきて、雨の日はラバーソールの靴を先に勧めてくれます。</p>
+            <p>登録できる数を無制限にするのと、履いた日の歩数の記録は、月額のプレミアムです。無料で何足まで登録できるかは、説明文には書かれていませんでした。</p>
+            <h2>アプリを入れたくないなら</h2>
+            <p>iPhoneのリマインダーで、靴ごとに繰り返しの予定を作っておく手もあります。1足なら、これで十分ですね。</p>
+            <p>ただ、リマインダーは日付でしか鳴りません。よく履く靴ほど早く磨きたい、という履いた回数での管理は、専用のアプリのほうが楽です。</p>
+            <h2>どれを選ぶか</h2>
+            <ul class="guide-list"><li>履いた日を天気と一緒に残して、エイジングの写真も見返したいなら、KutsuReco</li><li>修理の記録や費用まで、靴ごとに細かく残したいなら、ShoeTree</li><li>雨の日にどの靴を履くか迷うなら、Patinist</li><li>素材ごとの目安で磨きどきを出して、休ませる日も見たいなら、ShoeKeep</li></ul>
+            <h2>よくある質問</h2>
+            <dl class="guide-faq">
+                <dt>無料で使えますか？</dt><dd>4本とも無料で入れられます。ShoeKeepとShoeTreeは無料だと3足までで、それより多いと有料です。</dd>
+                <dt>スエードの靴でも使えますか？</dt><dd>ShoeKeepにはスエードとヌバックの目安が入っています。ほかの3本は、素材ごとの目安があるかどうか説明文に書かれていませんでした。</dd>
+                <dt>アプリの出す磨きどきの通りに手入れすれば大丈夫ですか？</dt><dd>どのアプリも出しているのは目安です。革の乾き具合を見て、迷ったら買ったお店や靴の修理店に聞いてみてください。</dd>
+            </dl>
+            <p>ShoeKeepの評価はまだ1件なので、磨いた靴の自慢も込みで感想を待ってます🙏</p>
+            <div class="guide-notes">各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。ShoeKeepの機能はアプリのコードで確かめました。</div>
+        </div>
+
+        <div class="post-content guide i18n-en">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">Short answer</p>
+                <p>The quickest fix is an app where you register your shoes and it notifies you when they&#x27;re due for a polish. The most widely used one is KutsuReco, with 110 ratings. If you also want it to count how many times you&#x27;ve worn a pair, or to show which shoes still need a day of rest, take a look at ShoeKeep, which I made.</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">Written by <a href="https://tsuzukit.com/about/">Ryo Tsuzukihashi</a> (@tsuzuki817)</p>
+                    <p class="guide-byline-bio">I&#x27;ve been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made ShoeKeep.</p>
+                    <p class="guide-byline-date">Published <time datetime="2026-11-15">2026-11-15</time> · Updated <time datetime="2026-11-15">2026-11-15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">I made ShoeKeep, and I wrote this article. The other three apps are by developers I don&#x27;t know, and I haven&#x27;t received money or anything else from them. Everything compared here comes from each app&#x27;s App Store description and rating count as of November 15, 2026.</p>
+            <h2>The four apps at a glance</h2>
+            <p>The big difference is whether an app decides it&#x27;s time to polish by days alone or also by how many times you&#x27;ve worn the pair. They also differ on whether they keep track of rest days.</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">App</th><th scope="col">Ratings</th><th scope="col">How it decides</th><th scope="col">Notifications</th><th scope="col">Rest days</th><th scope="col">Free pairs</th></tr></thead><tbody><tr><th scope="row">ShoeKeep (my app)</th><td>1</td><td>Wears and days, with defaults per leather type</td><td>7 days before, the day before, on the day, then daily until you polish</td><td>Shows which pairs are ready and which are resting</td><td>3</td></tr><tr><th scope="row">KutsuReco</th><td>110</td><td>A number of days you set</td><td>Yes</td><td>Not mentioned. Logs which pair you wore on a calendar</td><td>Not mentioned</td></tr><tr><th scope="row">Shoetree</th><td>0</td><td>Rules by days or wears, set per pair</td><td>Yes</td><td>Not mentioned</td><td>3</td></tr><tr><th scope="row">Patinist</th><td>3</td><td>One month after the last care</td><td>Yes</td><td>Not mentioned. Suggests rubber soles on rainy days</td><td>Not mentioned</td></tr></tbody></table></div>
+            <h2>Each app, one by one</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f8/12/c3/f812c390-a5a7-501f-8d7c-b7eb3b8801a4/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">I made this</span>
+                    <h3 class="guide-app-name">ShoeKeep: Care &amp; Rotation</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · 1 App Store rating</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6781119303" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>Register a pair and it works out the polishing date from whichever comes first, the number of wears or the days since you last cared for it. It comes with defaults for smooth leather, cordovan, suede, and other leathers. If you log that a pair got wet in the rain, it&#x27;s due that same day.</p>
+            <p>It notifies you in the evening 7 days before, the day before, and on the day, then every day until you log a polish. When you log a wear, pairs that should still rest show up as resting. Cordovan rests for 2 days and other leathers for 1.</p>
+            <p>You can register up to 3 pairs for free. Grouping by shoe cabinet and the full care history are Premium. It&#x27;s iPhone only.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/f9/2c/fd/f92cfdc0-5259-1364-9fd6-22341227cdeb/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">KutsuReco: Leather Shoe and Shoeshine Log</h3>
+                    <p class="guide-app-meta">Keima Kondo · 110 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id1579249791" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>With 110 ratings, it&#x27;s the most used of the four. Pick the day&#x27;s weather and the pair you wore, and it goes on a calendar just for your leather shoes. You can also see how many times you wore each pair and in what weather.</p>
+            <p>It notifies you when it&#x27;s time to polish, based on a number of days you choose. Each pair gets its own photo album, which suits people who like to look back at how the leather has aged.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/f6/72/f5/f672f556-e0fd-60be-cd19-ff06aef0570b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Shoetree</h3>
+                    <p class="guide-app-meta">Ippei Ishida · 0 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6793043430" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>You can set alert rules per pair, like 60 days after wearing or 10 wears after applying cream. Being able to use either days or wears is the same idea as ShoeKeep.</p>
+            <p>It also keeps repair records and what they cost. Up to 3 pairs are free, and more than that needs the monthly or yearly Pro plan.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/f8/af/6d/f8af6d1d-f682-e906-10cb-6e211c85a22c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Patinist: Leather Shoe Wear and Care Log</h3>
+                    <p class="guide-app-meta">Takahiro Yamada · 3 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6762127971" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>It notifies you about any pair that hasn&#x27;t been cared for in a month. It also checks the weather where you are and suggests rubber-soled pairs first on rainy days.</p>
+            <p>Unlimited pairs and step counts for the days you wear them are part of the monthly Premium plan. The description doesn&#x27;t say how many pairs you can register for free.</p>
+            <h2>If you&#x27;d rather not install an app</h2>
+            <p>You can also make a repeating reminder for each pair in the iPhone Reminders app. If you only have one pair, that&#x27;s plenty.</p>
+            <p>The catch is that Reminders only works by date. If you want the pairs you wear most to come up sooner, counting wears is easier in a dedicated app.</p>
+            <h2>Which one to pick</h2>
+            <ul class="guide-list"><li>If you want to log wears with the weather and look back at photos of your shoes aging, KutsuReco</li><li>If you want detailed records per pair, including repairs and costs, Shoetree</li><li>If you often wonder which pair to wear when it rains, Patinist</li><li>If you want polishing dates based on the leather type, plus rest days between wears, ShoeKeep</li></ul>
+            <h2>FAQ</h2>
+            <dl class="guide-faq">
+                <dt>Are they free?</dt><dd>All four are free to download. ShoeKeep and Shoetree let you register up to 3 pairs for free, and more than that costs money.</dd>
+                <dt>Do they work for suede?</dt><dd>ShoeKeep has built-in defaults for suede and nubuck. The other three don&#x27;t say in their descriptions whether they have defaults by leather type.</dd>
+                <dt>Can I just polish whenever the app says?</dt><dd>Every app here only gives a guideline. Look at how dry the leather is, and if you&#x27;re unsure, ask the shop where you bought them or a shoe repair shop.</dd>
+            </dl>
+            <p>ShoeKeep only has one rating so far, so I&#x27;d love to hear what you think, and feel free to show off your freshly polished shoes 🙏</p>
+            <div class="guide-notes">Features and rating counts were checked against each app&#x27;s App Store description on November 15, 2026, and may change with updates. ShoeKeep&#x27;s features were checked against the app&#x27;s own code.</div>
+        </div>
+
+        <nav class="post-navigation">
+            <img class="tk-char tk-char--post" src="/assets/images/character-hang.png" alt="" width="381" height="208">
+            <a href="/blog/guides/" class="nav-link-wrapper"><span>&larr; <span class="i18n-ja">困りごとから選ぶアプリの一覧へ</span><span class="i18n-en">All guides: apps for everyday problems</span></span></a>
+        </nav>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
+                    <p class="footer-description"><span class="i18n-ja">誰も作らないものを、まじめに作る</span><span class="i18n-en">I make things nobody else would, and I make them seriously</span></p>
+                </div>
+                <div class="footer-nav">
+                    <a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
+                    <a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
+                    <a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
+                    <a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ryo Tsuzukihashi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

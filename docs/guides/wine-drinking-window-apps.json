@@ -1,0 +1,391 @@
+{
+  "slug": "wine-drinking-window-apps",
+  "date_published": "2026-11-15",
+  "date_updated": "2026-11-15",
+  "search_phrase": {
+    "ja": "ワイン 管理 アプリ",
+    "en": "wine cellar app with drinking window"
+  },
+  "evidence": "2026-11-15 に Google の検索候補で「ワイン 管理 アプリ」を引くと、「無料」「ワイン セラー 管理 アプリ」「ワイン 在庫 管理 アプリ」が出た。「ワイン 飲み頃」は10件の候補があり、「年数」「調べ方」「判断」「過ぎた」と、開けどきで迷う形が多かった。同じ日に App Store で「ワイン 管理」を引くと15本が並び、評価はVivinoの13,597件が飛び抜けていて、ほかは3,450件以下だった。",
+  "title": {
+    "ja": "ワインの飲み頃まで分かる管理アプリ3選",
+    "en": "3 Wine Cellar Apps That Tell You When to Open a Bottle"
+  },
+  "description": {
+    "ja": "家にあるワインを管理できるアプリを3本比べました。飲み頃の出し方、開けどきの通知、得意なこと、無料で使える範囲の違いをまとめています。WineReadyの作者が書いています。",
+    "en": "I compared three iPhone apps for keeping track of the wine you have at home: how they work out the drinking window, whether they remind you to open a bottle, what each does best, and what's free. Written by the maker of WineReady."
+  },
+  "excerpt": {
+    "ja": "もらったワイン、いつ開ければいいか分からないまま寝かせていませんか。飲み頃まで見られる管理アプリを3本比べました。",
+    "en": "Got a bottle you've been saving without knowing when to open it? Three wine apps compared on how they handle the drinking window."
+  },
+  "category": {
+    "ja": "アプリの選び方",
+    "en": "App guides"
+  },
+  "reading_minutes": 4,
+  "author": {
+    "name": {
+      "ja": "續橋 涼",
+      "en": "Ryo Tsuzukihashi"
+    },
+    "handle": "tsuzuki817",
+    "bio": {
+      "ja": "2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。WineReadyの作者です。",
+      "en": "I've been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made WineReady."
+    },
+    "url": "https://tsuzukit.com/about/",
+    "same_as": [
+      "https://x.com/tsuzuki817"
+    ]
+  },
+  "tldr": {
+    "ja": "ラベルを撮って評価や価格を見たいならVivinoがいちばん使われています。セラーの在庫や値段の動きまで見たいならOeni。数本のワインの開けどきだけを、通知で教えてほしいなら、僕が作ったWineReadyが合います。",
+    "en": "If you want to snap a label and see ratings and prices, Vivino is by far the most used. If you want to track your cellar's stock and how its value changes, Oeni fits. If you only want a few bottles to remind you when it's time to open them, WineReady, which I made, is the one."
+  },
+  "disclosure": {
+    "ja": "この記事は、WineReadyを作った僕が書いています。ほかの2本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。",
+    "en": "I made WineReady, and I wrote this article. The other two apps are by developers I don't know, and I haven't received money or anything else from them. Everything compared here comes from each app's App Store description and rating count as of November 15, 2026."
+  },
+  "own_app": "6780249664",
+  "app_category": "FoodApplication",
+  "apps": [
+    {
+      "id": "6780249664",
+      "name": {
+        "ja": "ワイン飲み頃管理 WineReady",
+        "en": "WineReady: Drink Window"
+      },
+      "short": {
+        "ja": "WineReady",
+        "en": "WineReady"
+      },
+      "developer": "Ryo Tsudukihashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/36/dd/ff/36ddff16-438b-a1a5-9893-7cf69a8263bb/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6780249664",
+      "android_url": null,
+      "rating_count": 0
+    },
+    {
+      "id": "414461255",
+      "name": {
+        "ja": "Vivino: 自分に合うワインを楽しもう",
+        "en": "Vivino: Drink The Right Wine"
+      },
+      "short": {
+        "ja": "Vivino",
+        "en": "Vivino"
+      },
+      "developer": "Vivino ApS",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ff/d7/1b/ffd71b8f-8f0a-23f6-b8ee-7b2e6fafcc57/AppIcon-0-0-1x_U007ephone-0-1-0-sRGB-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id414461255",
+      "android_url": null,
+      "rating_count": 13597
+    },
+    {
+      "id": "6445827140",
+      "name": {
+        "ja": "Oeni：No.1ワインセラー管理",
+        "en": "Oeni: #1 Wine Cellar Manager"
+      },
+      "short": {
+        "ja": "Oeni",
+        "en": "Oeni"
+      },
+      "developer": "Oeni",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/3b/8a/07/3b8a07d9-8519-08af-5ed3-19bd3d573aff/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6445827140",
+      "android_url": null,
+      "rating_count": 20
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ja": "3本をざっくり比べる",
+        "en": "The three apps at a glance"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "同じワインのアプリでも、得意なことがはっきり分かれます。飲み頃が分かるかどうかと、開けどきを知らせてくれるかどうかで並べました。",
+            "en": "They're all wine apps, but each is good at something quite different. I lined them up by whether they show a drinking window and whether they remind you when to open a bottle."
+          }
+        },
+        {
+          "type": "table",
+          "head": [
+            {
+              "ja": "アプリ",
+              "en": "App"
+            },
+            {
+              "ja": "評価の件数",
+              "en": "Ratings"
+            },
+            {
+              "ja": "得意なこと",
+              "en": "Best at"
+            },
+            {
+              "ja": "飲み頃",
+              "en": "Drinking window"
+            },
+            {
+              "ja": "開けどきの通知",
+              "en": "Reminders to open"
+            },
+            {
+              "ja": "無料の範囲",
+              "en": "Free version"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ja": "WineReady（僕のアプリ）",
+                "en": "WineReady (my app)"
+              },
+              {
+                "ja": "0件",
+                "en": "0"
+              },
+              {
+                "ja": "飲み頃の管理",
+                "en": "Tracking drinking windows"
+              },
+              {
+                "ja": "品種と収穫年から計算",
+                "en": "Worked out from grape and vintage"
+              },
+              {
+                "ja": "あり。過ぎそうなら開けるまで毎日",
+                "en": "Yes, and every day near the end until you open it"
+              },
+              {
+                "ja": "3本まで",
+                "en": "Up to 3 bottles"
+              }
+            ],
+            [
+              {
+                "ja": "Vivino",
+                "en": "Vivino"
+              },
+              {
+                "ja": "13,597件",
+                "en": "13,597"
+              },
+              {
+                "ja": "ラベルを撮って評価や価格を見る",
+                "en": "Scanning labels for ratings and prices"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "無料で使える。プレミアムあり",
+                "en": "Free to use, with a Premium tier"
+              }
+            ],
+            [
+              {
+                "ja": "Oeni",
+                "en": "Oeni"
+              },
+              {
+                "ja": "20件",
+                "en": "20"
+              },
+              {
+                "ja": "セラーの在庫と値段の動き",
+                "en": "Cellar stock and market value"
+              },
+              {
+                "ja": "収穫年から開封時期を推奨",
+                "en": "Suggests when to open from the vintage"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "1本ずつ見ていく",
+        "en": "Each app, one by one"
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "id": "6780249664"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "品種と収穫年を入れると、飲み頃の始まりとピークと終わりを計算します。カベルネなら収穫年から5年目に飲み頃が始まって10年続く、プロセッコならすぐ飲み頃で1年、という目安を20品種ぶん入れてあります。年数は自分で直せます。",
+            "en": "Enter the grape and the vintage, and it works out when the drinking window opens, peaks, and closes. It has guidelines for 20 grapes built in. Cabernet starts 5 years after the vintage and lasts 10 years, while Prosecco is ready right away and lasts about a year. You can change the numbers yourself."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "通知は夕方6時です。飲み頃に入る1週間前と前日、入った日、ピークの日に知らせます。終わりが来たら、開けたと記録するまで毎日鳴ります。",
+            "en": "Notifications arrive at 6 in the evening. It tells you a week before the window opens, the day before, the day it opens, and the day it peaks. Once the window ends, it reminds you every day until you log that you opened the bottle."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "無料だとワインは3本まで登録できます。セラーごとに分けるのと、テイスティングの記録はプレミアムです。ラベルを読み取る機能や、ワインの評価を調べる機能はありません。",
+            "en": "The free version holds up to 3 bottles. Grouping by cellar and tasting notes are Premium features. It doesn't scan labels or look up ratings."
+          }
+        },
+        {
+          "type": "app",
+          "id": "414461255"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "評価が13,597件あって、ワインのアプリではいちばん使われています。ラベルやレストランのワインリストを撮ると、評価、レビュー、価格、合う料理がすぐ出ます。",
+            "en": "With 13,597 ratings, it's the most widely used wine app here. Take a photo of a label or a restaurant wine list, and it shows ratings, reviews, prices, and food pairings right away."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "買ったワインをセラーに保存して、持っている本数を把握することもできます。飲み頃や開けどきの通知については、説明文には書かれていませんでした。",
+            "en": "You can also save bottles you bought to your cellar to keep track of what you have. The description doesn't mention drinking windows or reminders to open a bottle."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6445827140"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "本格的にセラーを持っている人向けのアプリです。40万本以上のカタログからボトルを追加でき、収穫年を入れると、開けるのにいい時期をすすめてくれます。",
+            "en": "This one is for people with a serious cellar. You can add bottles from a catalog of over 400,000 wines, and when you enter the vintage, it suggests the best time to open it."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "強いのは値段のほうで、毎月ボトルの市場価格を取ってきて、セラー全体の価値を出します。料理との組み合わせも提案してくれます。開けどきを通知するかどうかは、説明文には書かれていませんでした。",
+            "en": "Its real strength is value. It pulls each bottle's market price every month and shows what your whole cellar is worth. It also suggests food pairings. The description doesn't say whether it reminds you when to open a bottle."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "飲み頃はあくまで目安",
+        "en": "A drinking window is only a guideline"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "飲み頃は、同じ品種でも造り手や保管の仕方で変わります。アプリが出すのは品種からの一般的な目安です。",
+            "en": "The drinking window changes with the producer and how the bottle is stored, even for the same grape. What these apps show is a general guideline based on the grape."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "大事な1本なら、買ったお店の人に開けどきを聞いて、その年数をアプリに入れておくのが確かです。",
+            "en": "For a special bottle, ask the shop where you bought it when to open it, and put those years into the app."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "どれを選ぶか",
+        "en": "Which one to pick"
+      },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "ja": "店やレストランでワインを選ぶときに評価を見たいなら、Vivino",
+              "en": "If you want to check ratings when choosing wine at a shop or restaurant, Vivino"
+            },
+            {
+              "ja": "セラーの在庫と値段の動きまで追いたいなら、Oeni",
+              "en": "If you want to follow your cellar's stock and market value, Oeni"
+            },
+            {
+              "ja": "家にある数本の開けどきを通知で知りたいなら、WineReady",
+              "en": "If you want reminders for when to open the few bottles you have at home, WineReady"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "ja": "無料で使えますか？",
+        "en": "Are they free?"
+      },
+      "a": {
+        "ja": "3本とも無料で入れられます。WineReadyは無料だと3本まで登録できて、それより多いのは有料です。",
+        "en": "All three are free to download. WineReady's free version holds up to 3 bottles, and more than that is paid."
+      }
+    },
+    {
+      "q": {
+        "ja": "収穫年が分からないワインはどうなりますか？",
+        "en": "What if I don't know the vintage?"
+      },
+      "a": {
+        "ja": "WineReadyでは、収穫年を入れないと買った日から数えます。もらいものなら、もらった日を入れておけば目安になります。",
+        "en": "In WineReady, if you leave the vintage out, it counts from the day you got the bottle. For a gift, enter the day you received it as a rough guide."
+      }
+    },
+    {
+      "q": {
+        "ja": "飲み頃を過ぎたワインは飲めませんか？",
+        "en": "Can I still drink wine past its window?"
+      },
+      "a": {
+        "ja": "アプリが出すのは一般的な目安なので、過ぎたら飲めないという意味ではありません。気になるときは、買ったお店で聞いてみてください。",
+        "en": "The apps only show a general guideline, so passing it doesn't mean the wine can't be drunk. If you're unsure, ask the shop where you bought it."
+      }
+    }
+  ],
+  "closing": {
+    "ja": "WineReadyの評価はまだ0件なので、寝かせているワインを入れてみた人の声を待ってます🍷",
+    "en": "WineReady has no ratings yet, so I'd love to hear from anyone who adds the bottles they've been saving 🍷"
+  },
+  "notes": {
+    "ja": "各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。お酒は20歳になってから。飲んだら運転はしないでください。",
+    "en": "Features and rating counts were checked against each app's App Store description on November 15, 2026, and may change with updates. In Japan, you must be 20 or older to drink alcohol. Never drink and drive."
+  },
+  "illustration": {
+    "scene": "夕方の部屋。小さなワインラックから、キャラがリボンのついた赤ワインのボトルを1本引き出して、うれしそうに掲げている。テーブルにはグラスが2つと、ブドウのマークが紫に光るスマホ（文字なし）。窓の外は夕焼け。",
+    "alt": {
+      "ja": "夕方、ワインラックからリボンのついたボトルを取り出してうれしそうなキャラクター",
+      "en": "In the evening, the character happily pulls a ribboned bottle from a wine rack, with two glasses on the table"
+    }
+  }
+}

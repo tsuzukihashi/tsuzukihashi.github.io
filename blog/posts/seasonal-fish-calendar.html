@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/js/lang.js"></script>
+    <!-- このページは scripts/build_guides.py が docs/guides/seasonal-fish-calendar.json から作る。直すのは JSON のほう -->
+    <title>魚の旬がひと目で分かるカレンダーアプリ4選 - Blog | Ryo Tsuzukihashi</title>
+    <meta name="description" content="魚の旬を月ごとに見られるアプリを4本比べました。載っている数、魚以外の食材、ほかにできることの違いをまとめています。旬のお魚カレンダーの作者が書いています。">
+    <meta name="title-en" content="4 Apps That Show When Each Fish Is in Season - Blog | Ryo Tsuzukihashi">
+    <meta name="description-en" content="I compared four iPhone apps that show which fish are in season each month: how many they cover, whether they include other foods, and what else they do. Written by the maker of Seasonal Fish Calendar.">
+    <link rel="canonical" href="https://tsuzukit.com/blog/posts/seasonal-fish-calendar.html">
+
+    <!-- OGP -->
+    <meta property="og:title" content="魚の旬がひと目で分かるカレンダーアプリ4選">
+    <meta property="og:description" content="魚の旬を月ごとに見られるアプリを4本比べました。載っている数、魚以外の食材、ほかにできることの違いをまとめています。旬のお魚カレンダーの作者が書いています。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://tsuzukit.com/blog/posts/seasonal-fish-calendar.html">
+    <meta property="og:image" content="https://tsuzukit.com/assets/images/posts/seasonal-fish-calendar.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://tsuzukit.com/assets/images/posts/seasonal-fish-calendar.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-dark-32x32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-dark-16x16.png" media="(prefers-color-scheme: dark)">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERPQ1EGLH');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8240751277462688"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
+    <link rel="stylesheet" href="/assets/css/guide.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "魚の旬がひと目で分かるカレンダーアプリ4選",
+      "description": "魚の旬を月ごとに見られるアプリを4本比べました。載っている数、魚以外の食材、ほかにできることの違いをまとめています。旬のお魚カレンダーの作者が書いています。",
+      "image": "https://tsuzukit.com/assets/images/posts/seasonal-fish-calendar.webp",
+      "datePublished": "2026-11-15",
+      "dateModified": "2026-11-15",
+      "inLanguage": "ja",
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "mainEntityOfPage": "https://tsuzukit.com/blog/posts/seasonal-fish-calendar.html",
+      "about": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "旬のお魚カレンダー",
+          "url": "https://apps.apple.com/jp/app/id6746123337",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "寿司ネタ図鑑 旬と食べ方",
+          "url": "https://apps.apple.com/jp/app/id6802100686",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "旬ナビ",
+          "url": "https://apps.apple.com/jp/app/id6748877784",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "旬で選ぶ買い物メモ - 美味しい食材、旬の食材がすぐにわかる",
+          "url": "https://apps.apple.com/jp/app/id6757065543",
+          "operatingSystem": "iOS"
+        }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "旬のお魚カレンダー",
+      "operatingSystem": "iOS",
+      "applicationCategory": "FoodApplication",
+      "url": "https://apps.apple.com/jp/app/id6746123337",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "無料で使えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "4本とも無料で入れられます。旬のお魚カレンダーは有料の機能がなく、広告が出ます。旬で選ぶ買い物メモは、保存のコツなどがプレミアムです。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "住んでいる地域の旬が分かりますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "4本とも、説明文では全国の目安としての旬です。旬のお魚カレンダーは主な産地を出しますが、地域ごとのカレンダーはありません。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "野菜や果物の旬も見られますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "旬ナビと旬で選ぶ買い物メモが、野菜と果物ものせています。旬のお魚カレンダーと寿司ネタ図鑑は魚介だけです。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tsuzukit.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://tsuzukit.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "困りごとから選ぶアプリ",
+          "item": "https://tsuzukit.com/blog/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "魚の旬がひと目で分かるカレンダーアプリ4選",
+          "item": "https://tsuzukit.com/blog/posts/seasonal-fish-calendar.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">TsuzuKit</a>
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/portfolio/" class="nav-link">Portfolio</a>
+                <a href="/blog/" class="nav-link active">Blog</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post -->
+    <article class="blog-post">
+        <header class="post-header">
+            <div class="post-meta">
+                <span class="post-date">2026.11.15</span>
+                <span class="post-category"><span class="i18n-ja">アプリの選び方</span><span class="i18n-en">App guides</span></span>
+                <span class="post-reading-time"><span class="i18n-ja">4分で読める</span><span class="i18n-en">4 min read</span></span>
+            </div>
+            <h1 class="post-title"><span class="i18n-ja">魚の旬がひと目で分かるカレンダーアプリ4選</span><span class="i18n-en">4 Apps That Show When Each Fish Is in Season</span></h1>
+        </header>
+        <figure class="post-illustration guide-illustration"><img src="/assets/images/posts/seasonal-fish-calendar.webp" width="1200" height="800" alt="魚屋の店先で、スマホと氷の上の魚を見比べるキャラクター" data-en-alt="The character at a fish shop, comparing a phone with the fish laid out on ice" fetchpriority="high"></figure>
+
+        <div class="post-content guide i18n-ja">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">先に答え</p>
+                <p>お寿司屋さんで頼むネタを選びたいなら、寿司ネタ図鑑がいちばん詳しいです。野菜や果物の旬も一緒に見たいなら旬ナビか旬で選ぶ買い物メモ。魚介だけを12か月の表で見比べて、ホーム画面のウィジェットで今月の魚を見たい人は、僕が作った旬のお魚カレンダーを見てみてください。</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">書いた人 <a href="https://tsuzukit.com/about/">續橋 涼</a>（@tsuzuki817）</p>
+                    <p class="guide-byline-bio">2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。旬のお魚カレンダーの作者です。</p>
+                    <p class="guide-byline-date">公開 <time datetime="2026-11-15">2026.11.15</time> · 更新 <time datetime="2026-11-15">2026.11.15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">この記事は、旬のお魚カレンダーを作った僕が書いています。ほかの3本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。</p>
+            <h2>4本をざっくり比べる</h2>
+            <p>どれも今が旬のものを一覧で出してくれます。違いが出るのは、魚だけを詳しく見るのか、野菜や果物まで広く見るのかです。</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">アプリ</th><th scope="col">評価の件数</th><th scope="col">載っている数</th><th scope="col">魚以外の食材</th><th scope="col">ほかにできること</th></tr></thead><tbody><tr><th scope="row">旬のお魚カレンダー（僕のアプリ）</th><td>2件</td><td>魚介54種</td><td>なし</td><td>主な産地、ホーム画面のウィジェット</td></tr><tr><th scope="row">寿司ネタ図鑑</th><td>0件</td><td>寿司ネタ88種、魚図鑑69種</td><td>寿司ネタだけ</td><td>食べ方、脂の多さ、寿司の読みもの</td></tr><tr><th scope="row">旬ナビ</th><td>1件</td><td>説明文に記載なし</td><td>野菜、果物も</td><td>名前で検索</td></tr><tr><th scope="row">旬で選ぶ買い物メモ</th><td>2件</td><td>食材170種以上</td><td>野菜、果物、肉、調味料も</td><td>選び方のコツ、買い物リスト</td></tr></tbody></table></div>
+            <h2>1本ずつ見ていく</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/be/ba/0b/beba0bb9-05d2-40e8-df25-b3c80ee14ef0/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">僕が作ったアプリ</span>
+                    <h3 class="guide-app-name">旬のお魚カレンダー</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · App Storeの評価 2件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6746123337" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>マグロやアジのような魚から、イカ、エビ、貝、ウニ、イクラまで、魚介を54種のせています。魚の名前を縦に、1月から12月を横に並べた表で、旬の月がひと目で分かります。</p>
+            <p>今の旬の魚だけを並べた画面もあります。魚を押すと、旬の時期と主な産地と豆知識が出ます。ホーム画面のウィジェットに、今月の旬の魚を出しておけます。</p>
+            <p>有料の機能はなくて、全部無料で使えます。そのかわり広告が出ます。野菜や果物はのっていません。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/84/52/ed/8452edb9-95f4-30a5-d5ff-752bddb8ae88/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">寿司ネタ図鑑 旬と食べ方</h3>
+                    <p class="guide-app-meta">KAZUHIRO ISHIBASHI · App Storeの評価 0件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6802100686" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>お寿司屋さんで品書きを見ながら使うために作られたアプリです。開くと今月が旬のネタが上に並び、ネタごとに12か月の旬、脂の多さ、江戸前の仕事、食べ方、産地が出ます。</p>
+            <p>寿司ネタは88種で、魚図鑑が69種、寿司の読みものや用語集、クイズまで入っています。旬は今が旬ともうすぐ旬の2段階で出していて、産地で1か月か2か月ずれると説明文に書かれています。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/1a/f6/37/1af63773-21e5-41ab-0382-3e29010ddb81/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">旬ナビ</h3>
+                    <p class="guide-app-meta">Sokichi Tobita · App Storeの評価 1件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6748877784" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>野菜、果物、魚介類、その他に分けて、今が旬の食材を一覧にしてくれます。食材を押すと、旬の時期と12か月のカレンダーが出ます。</p>
+            <p>ひらがな、カタカナ、漢字のどれでも名前で探せます。載っている数と料金は、説明文に書かれていませんでした。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/04/e0/64/04e0643e-3eaa-96d7-368b-80587a6f1b97/Icon_kago_A-0-0-1x_U007ephone-0-1-sRGB-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">旬で選ぶ買い物メモ - 美味しい食材、旬の食材がすぐにわかる</h3>
+                    <p class="guide-app-meta">Kenta Tanaka · App Storeの評価 2件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6757065543" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>スーパーで使う買い物リストに、旬のカレンダーと食材の選び方を足したアプリです。元スーパーの店員さんが、鮮度の見分け方のコツを書いていると説明されています。</p>
+            <p>野菜、魚、果物から肉や調味料まで、170種以上の食材がのっています。今が旬の食材をワンタップでリストに足せます。保存のコツと食べ方は、プレミアムの機能です。</p>
+            <h2>アプリを入れたくないなら</h2>
+            <p>魚屋さんやスーパーの魚売り場で、今日のおすすめを聞くのがいちばん早いです。旬の時期は産地でずれるので、その日のいいものはお店の人が知っています。</p>
+            <p>アプリは、買いに行く前に今月なにが旬かをつかんでおくのに向いてますね。</p>
+            <h2>どれを選ぶか</h2>
+            <ul class="guide-list"><li>お寿司屋さんで頼むネタを選びたいなら、寿司ネタ図鑑</li><li>野菜や果物の旬も一緒に調べたいなら、旬ナビ</li><li>スーパーで買うものを選ぶのに使いたいなら、旬で選ぶ買い物メモ</li><li>魚介だけを12か月の表で見比べて、ウィジェットで今月の魚を見たいなら、旬のお魚カレンダー</li></ul>
+            <h2>よくある質問</h2>
+            <dl class="guide-faq">
+                <dt>無料で使えますか？</dt><dd>4本とも無料で入れられます。旬のお魚カレンダーは有料の機能がなく、広告が出ます。旬で選ぶ買い物メモは、保存のコツなどがプレミアムです。</dd>
+                <dt>住んでいる地域の旬が分かりますか？</dt><dd>4本とも、説明文では全国の目安としての旬です。旬のお魚カレンダーは主な産地を出しますが、地域ごとのカレンダーはありません。</dd>
+                <dt>野菜や果物の旬も見られますか？</dt><dd>旬ナビと旬で選ぶ買い物メモが、野菜と果物ものせています。旬のお魚カレンダーと寿司ネタ図鑑は魚介だけです。</dd>
+            </dl>
+            <p>旬のお魚カレンダーの評価はまだ2件なので、のせてほしい魚があったら教えてください🐟</p>
+            <div class="guide-notes">各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。旬のお魚カレンダーの中身は、アプリのコードで確かめました。旬の時期は目安で、産地や年によって変わります。</div>
+        </div>
+
+        <div class="post-content guide i18n-en">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">Short answer</p>
+                <p>If you want help choosing what to order at a sushi counter, Sushi Topping Guide is the most detailed. If you want vegetables and fruit too, try Shun Navi or Seasonal Shopping Memo. If you want to compare just seafood on a 12-month chart and see this month&#x27;s fish in a Home Screen widget, take a look at Seasonal Fish Calendar, which I made.</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">Written by <a href="https://tsuzukit.com/about/">Ryo Tsuzukihashi</a> (@tsuzuki817)</p>
+                    <p class="guide-byline-bio">I&#x27;ve been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made Seasonal Fish Calendar.</p>
+                    <p class="guide-byline-date">Published <time datetime="2026-11-15">2026-11-15</time> · Updated <time datetime="2026-11-15">2026-11-15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">I made Seasonal Fish Calendar, and I wrote this article. The other three apps are by developers I don&#x27;t know, and I haven&#x27;t received money or anything else from them. Everything compared here comes from each app&#x27;s App Store description and rating count as of November 15, 2026.</p>
+            <h2>The four apps at a glance</h2>
+            <p>All four list what&#x27;s in season right now. The difference is whether they go deep on fish only, or cover vegetables and fruit as well.</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">App</th><th scope="col">Ratings</th><th scope="col">Coverage</th><th scope="col">Other foods</th><th scope="col">Also</th></tr></thead><tbody><tr><th scope="row">Seasonal Fish Calendar (my app)</th><td>2</td><td>54 kinds of seafood</td><td>No</td><td>Main fishing areas, Home Screen widget</td></tr><tr><th scope="row">Sushi Topping Guide</th><td>0</td><td>88 sushi toppings, 69 fish</td><td>Sushi toppings only</td><td>How to eat them, fat level, reading on sushi</td></tr><tr><th scope="row">Shun Navi</th><td>1</td><td>Not mentioned</td><td>Vegetables and fruit too</td><td>Search by name</td></tr><tr><th scope="row">Seasonal Shopping Memo</th><td>2</td><td>170+ foods</td><td>Vegetables, fruit, meat, and seasonings too</td><td>Tips for picking good ones, shopping list</td></tr></tbody></table></div>
+            <h2>Each app, one by one</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/be/ba/0b/beba0bb9-05d2-40e8-df25-b3c80ee14ef0/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">I made this</span>
+                    <h3 class="guide-app-name">Seasonal Fish Calendar</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · 2 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6746123337" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>It covers 54 kinds of seafood, from fish like tuna and horse mackerel to squid, shrimp, shellfish, sea urchin, and salmon roe. A chart lists the fish down the side and January to December across the top, so you can see each one&#x27;s season at a glance.</p>
+            <p>There&#x27;s also a screen that shows only the fish in season right now. Tap a fish to see its season, main fishing areas, and a bit of trivia. A Home Screen widget can show this month&#x27;s fish.</p>
+            <p>There are no paid features, so everything is free. There are ads instead. It doesn&#x27;t include vegetables or fruit.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/84/52/ed/8452edb9-95f4-30a5-d5ff-752bddb8ae88/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Sushi Topping Guide: Seasons and How to Eat Them</h3>
+                    <p class="guide-app-meta">KAZUHIRO ISHIBASHI · 0 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6802100686" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>This app is made for reading the menu at a sushi restaurant. When you open it, this month&#x27;s in-season toppings are at the top, and each one shows its 12-month season, fat level, traditional Edo-style preparation, how to eat it, and where it comes from.</p>
+            <p>It has 88 sushi toppings, a 69-fish guide, reading material on sushi, a glossary, and even a quiz. Seasons are shown in two steps, in season now and coming soon, and the description notes that they can shift by a month or two depending on where the fish is caught.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/1a/f6/37/1af63773-21e5-41ab-0382-3e29010ddb81/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Shun Navi</h3>
+                    <p class="guide-app-meta">Sokichi Tobita · 1 App Store rating</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6748877784" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>It lists foods in season right now, split into vegetables, fruit, seafood, and other. Tap a food to see its season and a 12-month calendar.</p>
+            <p>You can search by name in hiragana, katakana, or kanji. The description doesn&#x27;t say how many foods it covers or anything about pricing.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/04/e0/64/04e0643e-3eaa-96d7-368b-80587a6f1b97/Icon_kago_A-0-0-1x_U007ephone-0-1-sRGB-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Seasonal Shopping Memo - Find Foods at Their Best</h3>
+                    <p class="guide-app-meta">Kenta Tanaka · 2 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6757065543" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>It&#x27;s a grocery shopping list with a seasonal calendar and tips for picking good produce built in. The description says a former supermarket employee wrote the tips for judging freshness.</p>
+            <p>It covers more than 170 foods, from vegetables, fish, and fruit to meat and seasonings. You can add an in-season food to your list with one tap. Storage tips and serving ideas are Premium features.</p>
+            <h2>If you&#x27;d rather not install an app</h2>
+            <p>The quickest way is to ask at a fish shop or the fish counter what&#x27;s good today. Seasons shift depending on where the fish come from, and the people at the counter know what&#x27;s best that day.</p>
+            <p>The apps are useful for getting a sense of what&#x27;s in season this month before you go shopping.</p>
+            <h2>Which one to pick</h2>
+            <ul class="guide-list"><li>If you want help choosing what to order at a sushi restaurant, Sushi Topping Guide</li><li>If you want to look up the seasons for vegetables and fruit too, Shun Navi</li><li>If you want to use it for choosing what to buy at the supermarket, Seasonal Shopping Memo</li><li>If you want to compare seafood on a 12-month chart and see this month&#x27;s fish in a widget, Seasonal Fish Calendar</li></ul>
+            <h2>FAQ</h2>
+            <dl class="guide-faq">
+                <dt>Are they free?</dt><dd>All four are free to download. Seasonal Fish Calendar has no paid features and shows ads. Seasonal Shopping Memo puts storage tips and similar content behind Premium.</dd>
+                <dt>Do they show the season for my region?</dt><dd>Going by their descriptions, all four show general seasons for Japan as a whole. Seasonal Fish Calendar lists the main fishing areas, but it doesn&#x27;t have a calendar for each region.</dd>
+                <dt>Can I see when vegetables and fruit are in season?</dt><dd>Shun Navi and Seasonal Shopping Memo include vegetables and fruit. Seasonal Fish Calendar and Sushi Topping Guide are seafood only.</dd>
+            </dl>
+            <p>Seasonal Fish Calendar only has two ratings so far, so if there&#x27;s a fish you&#x27;d like me to add, let me know 🐟</p>
+            <div class="guide-notes">Features and rating counts were checked against each app&#x27;s App Store description on November 15, 2026. What&#x27;s in Seasonal Fish Calendar was checked in the app&#x27;s code. Seasons are a rough guide and vary by area and year.</div>
+        </div>
+
+        <nav class="post-navigation">
+            <img class="tk-char tk-char--post" src="/assets/images/character-hang.png" alt="" width="381" height="208">
+            <a href="/blog/guides/" class="nav-link-wrapper"><span>&larr; <span class="i18n-ja">困りごとから選ぶアプリの一覧へ</span><span class="i18n-en">All guides: apps for everyday problems</span></span></a>
+        </nav>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
+                    <p class="footer-description"><span class="i18n-ja">誰も作らないものを、まじめに作る</span><span class="i18n-en">I make things nobody else would, and I make them seriously</span></p>
+                </div>
+                <div class="footer-nav">
+                    <a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
+                    <a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
+                    <a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
+                    <a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ryo Tsuzukihashi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

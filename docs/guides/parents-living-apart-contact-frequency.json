@@ -1,0 +1,423 @@
+{
+  "slug": "parents-living-apart-contact-frequency",
+  "date_published": "2026-11-15",
+  "date_updated": "2026-11-15",
+  "search_phrase": {
+    "ja": "離れて暮らす親 連絡頻度",
+    "en": "how often to call parents who live far away"
+  },
+  "evidence": "2026-11-15 に Google の検索候補で「離れて暮らす親 連絡」を引くと、4件中1件が「連絡頻度」だった。「実家 連絡 頻度」は5件（義実家、結婚後など）、「親に電話 頻度」は2件（一人暮らし 親に電話 頻度）が出た。同じ日の App Store で「親 電話 リマインダー」を引くと、家族への連絡を知らせるアプリは Warmthly と KinCue と僕のみまもりで、3本とも評価は0件だった。",
+  "title": {
+    "ja": "離れて暮らす親への連絡、頻度を決めて続けるアプリ3選",
+    "en": "Calling Parents Who Live Far Away: 3 Apps That Help You Keep a Rhythm"
+  },
+  "description": {
+    "ja": "離れて暮らす親にどのくらいの頻度で連絡するか決めて、それを続けるためのアプリを3本比べました。連絡の間隔、通知、記録の違いをまとめています。みまもりの作者が書いています。",
+    "en": "I compared three iPhone apps that help you decide how often to call your parents and then actually keep it up: contact intervals, notifications, and logging. Written by the maker of CheckInSenior."
+  },
+  "excerpt": {
+    "ja": "親への連絡の間隔を決めて、続けるためのアプリを3本比べました。みまもりを作った僕が、自分のアプリも入れて書いています。",
+    "en": "Three apps for setting how often you call your parents and sticking to it. I made CheckInSenior, and it's one of the three."
+  },
+  "category": {
+    "ja": "アプリの選び方",
+    "en": "App guides"
+  },
+  "reading_minutes": 4,
+  "author": {
+    "name": {
+      "ja": "續橋 涼",
+      "en": "Ryo Tsuzukihashi"
+    },
+    "handle": "tsuzuki817",
+    "bio": {
+      "ja": "2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。みまもりの作者です。",
+      "en": "I've been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made CheckInSenior."
+    },
+    "url": "https://tsuzukit.com/about/",
+    "same_as": [
+      "https://x.com/tsuzuki817"
+    ]
+  },
+  "tldr": {
+    "ja": "何日おきに連絡するのが正しい、という決まりはありません。親と自分で決めた間隔を守れるように、間隔を過ぎたら知らせてくれるアプリを入れるのが手っ取り早いです。電話をかけたら自動で記録してほしいならWarmthly、毎日決まった時刻に声をかけてほしいなら僕が作ったみまもりを見てみてください。",
+    "en": "There's no correct number of days between calls. The quickest fix is an app that keeps track of the rhythm you and your parents agree on and nudges you when it slips. If you want calls logged automatically, try Warmthly. If you'd rather get a nudge at the same time every day, take a look at CheckInSenior, which I made."
+  },
+  "disclosure": {
+    "ja": "この記事は、みまもりを作った僕が書いています。ほかの2本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。",
+    "en": "I made CheckInSenior, and I wrote this article. The other two apps are by developers I don't know, and I haven't received money or anything else from them. Everything compared here comes from each app's App Store description and rating count as of November 15, 2026."
+  },
+  "own_app": "6758816691",
+  "app_category": "LifestyleApplication",
+  "apps": [
+    {
+      "id": "6758816691",
+      "name": {
+        "ja": "見守りリマインダー - みまもり",
+        "en": "CheckInSenior - Family Check"
+      },
+      "short": {
+        "ja": "みまもり",
+        "en": "CheckInSenior"
+      },
+      "developer": "Ryo Tsudukihashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/40/5f/fc/405ffca1-8c72-9c23-2a6a-0369bd981589/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6758816691",
+      "android_url": null,
+      "rating_count": 0
+    },
+    {
+      "id": "6789600652",
+      "name": {
+        "ja": "Warmthly：そろそろ連絡",
+        "en": "Warmthly: Keep in Touch"
+      },
+      "short": {
+        "ja": "Warmthly",
+        "en": "Warmthly"
+      },
+      "developer": "KYUNGHWAN KIM",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/27/76/09/277609b4-f8a5-9889-e8ac-42fcfa9aceee/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6789600652",
+      "android_url": null,
+      "rating_count": 0
+    },
+    {
+      "id": "6795072619",
+      "name": {
+        "ja": "KinCue：家族への連絡リマインダー",
+        "en": "KinCue: Family Call Reminders"
+      },
+      "short": {
+        "ja": "KinCue",
+        "en": "KinCue"
+      },
+      "developer": "Yu-Chuan Tai",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/2c/7b/35/2c7b3527-1c57-f89f-da4b-bbba6cda2233/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6795072619",
+      "android_url": null,
+      "rating_count": 0
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ja": "連絡の頻度は、親と決めていい",
+        "en": "The rhythm is yours to set"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "毎日の人もいれば、週に1回の人も、月に1回の人もいます。何日おきが正しいという数字はありません。",
+            "en": "Some people call every day, some once a week, some once a month. There's no number of days that's right for everyone."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "困るのは、決めた間隔がいつの間にか空いてしまうことです。前に電話したのがいつだったか分からなくなる。ここをアプリに任せると楽になります。",
+            "en": "The real problem is when the gap quietly stretches and you can't remember when you last called. That part is easy to hand off to an app."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "3本をざっくり比べる",
+        "en": "The three apps at a glance"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "違いが出るのは、通知がいつ来るかと、連絡したことをどう記録するかです。",
+            "en": "Where they differ is when the reminders arrive and how you log that you got in touch."
+          }
+        },
+        {
+          "type": "table",
+          "head": [
+            {
+              "ja": "アプリ",
+              "en": "App"
+            },
+            {
+              "ja": "評価の件数",
+              "en": "Ratings"
+            },
+            {
+              "ja": "連絡の間隔",
+              "en": "Contact interval"
+            },
+            {
+              "ja": "通知",
+              "en": "Reminders"
+            },
+            {
+              "ja": "連絡の記録",
+              "en": "Logging"
+            },
+            {
+              "ja": "無料で登録できる人数",
+              "en": "People on the free plan"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ja": "みまもり（僕のアプリ）",
+                "en": "CheckInSenior (my app)"
+              },
+              {
+                "ja": "0件",
+                "en": "0"
+              },
+              {
+                "ja": "毎日、3日ごと、週1回、2週間に1回、月1回",
+                "en": "Daily, every 3 days, weekly, every 2 weeks, monthly"
+              },
+              {
+                "ja": "人ごとに決めた時刻に毎日",
+                "en": "Every day at the time you set for each person"
+              },
+              {
+                "ja": "電話、ビデオ通話、訪問、メッセージを手で記録",
+                "en": "Log calls, video calls, visits, or messages yourself"
+              },
+              {
+                "ja": "2人",
+                "en": "2"
+              }
+            ],
+            [
+              {
+                "ja": "Warmthly",
+                "en": "Warmthly"
+              },
+              {
+                "ja": "0件",
+                "en": "0"
+              },
+              {
+                "ja": "毎週、毎月、四半期、自分で決める",
+                "en": "Weekly, monthly, quarterly, or your own"
+              },
+              {
+                "ja": "その時期が来たら夜に1回",
+                "en": "Once, in the evening, when it's time"
+              },
+              {
+                "ja": "アプリから電話やメッセージをすると自動で記録",
+                "en": "Logged automatically when you call or message from the app"
+              },
+              {
+                "ja": "説明文に記載なし。完全無料",
+                "en": "Not mentioned. Completely free"
+              }
+            ],
+            [
+              {
+                "ja": "KinCue",
+                "en": "KinCue"
+              },
+              {
+                "ja": "0件",
+                "en": "0"
+              },
+              {
+                "ja": "一人ひとりに合わせて設定",
+                "en": "Set per person"
+              },
+              {
+                "ja": "連絡するタイミングで。時刻は説明文に記載なし",
+                "en": "When it's time to reach out. Timing not mentioned"
+              },
+              {
+                "ja": "連絡後に連絡しましたを押す。メモや写真も",
+                "en": "Tap that you got in touch afterward. Notes and photos too"
+              },
+              {
+                "ja": "制限あり。人数は説明文に記載なし",
+                "en": "Limited. Number not mentioned"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "1本ずつ見ていく",
+        "en": "Each app, one by one"
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "id": "6758816691"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "父、母、祖父母のように相手を登録して、それぞれに連絡の間隔を決めます。ホーム画面には、前に連絡してから何日たったかが出ます。間隔を過ぎた人はオレンジ色になります。",
+            "en": "Add each person, like your dad, mom, or grandparents, and pick a contact interval for each. The home screen shows how many days it's been since you last got in touch, and anyone past their interval turns orange."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "通知は、人ごとに決めた時刻に毎日届きます。間隔に合わせて止まるわけではないので、週1回の相手でも毎日声をかけてくるのは知っておいてください。",
+            "en": "Reminders arrive every day at the time you set for each person. They don't pause to match the interval, so even someone you call weekly will get a daily nudge. Worth knowing before you set it up."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "無料で登録できるのは2人までです。3人目からと、季節や思い出の話題を出してくれる機能はプレミアムです。iPhone専用で、Android版はありません。",
+            "en": "The free version handles up to 2 people. A third person and up, plus conversation topic ideas about the season or old memories, are Premium. It's iPhone only, with no Android version."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6789600652"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "お母さんは毎週、旧友は毎月のように、人ごとにペースを決めます。時期が来ると夜に1回だけ知らせてくれて、アプリからワンタップで電話やメッセージができます。かけたらタイマーが自動でリセットされます。",
+            "en": "Set a pace per person, like weekly for your mom and monthly for an old friend. When it's time, it sends one quiet notification in the evening, and you can call or message with one tap from the app. The timer resets on its own."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "海外にいる相手の時間帯も表示してくれます。説明文には完全無料で広告なし、アカウントなしと書かれていました。",
+            "en": "It also shows the local time for people abroad. The description says it's completely free, with no ads and no account."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6795072619"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "今日誰に連絡するとよいかを一覧で出してくれます。電話やメッセージのあとにアプリへ戻って連絡したと押すと、次のリマインダーが自動で決まります。",
+            "en": "It lists who you should reach out to today. After a call or message, go back to the app and tap that you got in touch, and the next reminder is set automatically."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "ウィジェットとSiriにも対応しています。登録人数の制限解除や詳しい分析、Apple Watchの機能は有料のKinCue+に入っています。",
+            "en": "It works with widgets and Siri. Removing the limit on people, deeper stats, and Apple Watch features are part of the paid KinCue+."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "アプリを入れたくないなら",
+        "en": "If you'd rather not install an app"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "iPhoneに最初から入っているリマインダーでもできます。母に電話と書いて、繰り返しを毎週にするだけです。",
+            "en": "The Reminders app that comes with your iPhone can do this. Write call Mom and set it to repeat weekly."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "ただ、前に電話してから何日たったかは分かりません。予定より早く話した週も、同じ日に鳴ります。",
+            "en": "What it can't tell you is how long it's been since you actually called. If you talked earlier than planned, it still goes off on the same day."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "どれを選ぶか",
+        "en": "Which one to pick"
+      },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "ja": "電話をかけたら勝手に記録してほしい、無料で済ませたいなら、Warmthly",
+              "en": "If you want calls logged automatically and want it free, Warmthly"
+            },
+            {
+              "ja": "今日誰に連絡するかを一覧で見たい、Apple Watchでも使いたいなら、KinCue",
+              "en": "If you want a list of who to reach out to today, or want it on Apple Watch, KinCue"
+            },
+            {
+              "ja": "毎日決まった時刻に声をかけてほしい、何日空いたかをひと目で見たいなら、みまもり",
+              "en": "If you want a nudge at the same time every day and to see at a glance how many days it's been, CheckInSenior"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "ja": "何日おきに連絡するのがいいですか？",
+        "en": "How many days should I leave between calls?"
+      },
+      "a": {
+        "ja": "決まった正解はありません。親の暮らし方や体のこともあるので、親と話して決めるのが確かです。3本とも、その間隔を人ごとに決められます。",
+        "en": "There's no set answer. Your parents' routines and health matter, so it's best to decide together. All three apps let you set the interval per person."
+      }
+    },
+    {
+      "q": {
+        "ja": "親のスマホにも入れる必要がありますか？",
+        "en": "Do my parents need to install it too?"
+      },
+      "a": {
+        "ja": "要りません。3本とも、連絡する側が自分のiPhoneに入れて使うアプリです。",
+        "en": "No. All three are apps you install on your own iPhone, as the one doing the calling."
+      }
+    },
+    {
+      "q": {
+        "ja": "親の安否確認にも使えますか？",
+        "en": "Can I use them to check that my parents are safe?"
+      },
+      "a": {
+        "ja": "この3本は、自分が連絡を忘れないためのアプリです。親が無事かどうかを知らせてくれる仕組みはありません。安否確認が目的なら、そのためのサービスを探してください。",
+        "en": "These three are for remembering to get in touch yourself. None of them can tell you whether your parents are okay. If that's what you need, look for a service made for safety checks."
+      }
+    },
+    {
+      "q": {
+        "ja": "無料で使えますか？",
+        "en": "Are they free?"
+      },
+      "a": {
+        "ja": "3本とも無料で入れられます。Warmthlyは完全無料と書かれています。みまもりは2人まで無料で、KinCueは人数の制限を外すところが有料です。",
+        "en": "All three are free to download. Warmthly says it's completely free. CheckInSenior is free for up to 2 people, and KinCue charges to remove its limit on people."
+      }
+    }
+  ],
+  "closing": {
+    "ja": "みまもりはまだ評価が0件なので、最初の1件をもらえたらうれしいです🙏",
+    "en": "CheckInSenior doesn't have a single rating yet, so the first one would make my day 🙏"
+  },
+  "notes": {
+    "ja": "各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。みまもりの機能はアプリのコードで確かめました。アップデートで変わることがあります。",
+    "en": "Features and rating counts were checked against each app's App Store description on November 15, 2026. CheckInSenior's features were checked against its source code. They may change with updates."
+  },
+  "illustration": {
+    "scene": "夕方の部屋。キャラがソファに座ってスマホを耳に当て、うれしそうに話している。壁のカレンダー（文字なし）には、同じ間隔で小さなハートの印が並んでいる。窓の外には遠くの山と小さな家の灯り。",
+    "alt": {
+      "ja": "壁のカレンダーに等間隔の印がついた部屋で、スマホで電話をしているキャラクター",
+      "en": "The character on a phone call on the sofa, with evenly spaced little marks on the wall calendar"
+    }
+  }
+}

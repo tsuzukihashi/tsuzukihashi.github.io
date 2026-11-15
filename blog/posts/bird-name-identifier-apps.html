@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/js/lang.js"></script>
+    <!-- このページは scripts/build_guides.py が docs/guides/bird-name-identifier-apps.json から作る。直すのは JSON のほう -->
+    <title>見かけた鳥の名前を、写真と鳴き声で調べるアプリ4選 - Blog | Ryo Tsuzukihashi</title>
+    <meta name="description" content="見かけた鳥や、声だけ聞こえた鳥の名前を調べるアプリを4本比べました。写真と鳴き声のどちらで調べられるか、無料で使える範囲、日本の鳥への対応の違いをまとめています。BirdLensの作者が書いています。">
+    <meta name="title-en" content="4 Apps That Name the Bird You Saw, From a Photo or Its Song - Blog | Ryo Tsuzukihashi">
+    <meta name="description-en" content="I compared four iPhone apps that name a bird you saw or only heard: whether they work from a photo, a recording, or both, what is free, and how they handle birds in Japan. Written by the maker of BirdLens.">
+    <link rel="canonical" href="https://tsuzukit.com/blog/posts/bird-name-identifier-apps.html">
+
+    <!-- OGP -->
+    <meta property="og:title" content="見かけた鳥の名前を、写真と鳴き声で調べるアプリ4選">
+    <meta property="og:description" content="見かけた鳥や、声だけ聞こえた鳥の名前を調べるアプリを4本比べました。写真と鳴き声のどちらで調べられるか、無料で使える範囲、日本の鳥への対応の違いをまとめています。BirdLensの作者が書いています。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://tsuzukit.com/blog/posts/bird-name-identifier-apps.html">
+    <meta property="og:image" content="https://tsuzukit.com/assets/images/posts/bird-name-identifier-apps.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://tsuzukit.com/assets/images/posts/bird-name-identifier-apps.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-dark-32x32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-dark-16x16.png" media="(prefers-color-scheme: dark)">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERPQ1EGLH');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8240751277462688"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
+    <link rel="stylesheet" href="/assets/css/guide.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "見かけた鳥の名前を、写真と鳴き声で調べるアプリ4選",
+      "description": "見かけた鳥や、声だけ聞こえた鳥の名前を調べるアプリを4本比べました。写真と鳴き声のどちらで調べられるか、無料で使える範囲、日本の鳥への対応の違いをまとめています。BirdLensの作者が書いています。",
+      "image": "https://tsuzukit.com/assets/images/posts/bird-name-identifier-apps.webp",
+      "datePublished": "2026-11-15",
+      "dateModified": "2026-11-15",
+      "inLanguage": "ja",
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "mainEntityOfPage": "https://tsuzukit.com/blog/posts/bird-name-identifier-apps.html",
+      "about": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "BirdLens - 野鳥AI図鑑",
+          "url": "https://apps.apple.com/jp/app/id6757175763",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "Merlin Bird ID by Cornell Lab",
+          "url": "https://apps.apple.com/jp/app/id773457673",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "Picture Bird - 撮ったら、判る--1秒鳥図鑑",
+          "url": "https://apps.apple.com/jp/app/id1474586978",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "ききしる",
+          "url": "https://apps.apple.com/jp/app/id6785257128",
+          "operatingSystem": "iOS"
+        }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "BirdLens - 野鳥AI図鑑",
+      "operatingSystem": "iOS",
+      "applicationCategory": "ReferenceApplication",
+      "url": "https://apps.apple.com/jp/app/id6757175763",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "無料で使えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "4本とも無料で入れられます。Merlinは説明文で無料のアプリと書かれています。BirdLensは無料で2回まで調べられて、そのあとはプレミアムです。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "姿が見えなくても調べられますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "4本とも鳴き声から調べられます。ききしるは声を聞き分けることに絞ったアプリです。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "電波の届かない山の中でも使えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "説明文で端末の中だけで識別すると書かれているのは、ききしるです。BirdLensは調べるときにネットが要ります。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Androidで使えるのはどれですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "この4本の中では、MerlinがGoogle Playにもあります。BirdLensはiPhone専用です。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tsuzukit.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://tsuzukit.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "困りごとから選ぶアプリ",
+          "item": "https://tsuzukit.com/blog/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "見かけた鳥の名前を、写真と鳴き声で調べるアプリ4選",
+          "item": "https://tsuzukit.com/blog/posts/bird-name-identifier-apps.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">TsuzuKit</a>
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/portfolio/" class="nav-link">Portfolio</a>
+                <a href="/blog/" class="nav-link active">Blog</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post -->
+    <article class="blog-post">
+        <header class="post-header">
+            <div class="post-meta">
+                <span class="post-date">2026.11.15</span>
+                <span class="post-category"><span class="i18n-ja">アプリの選び方</span><span class="i18n-en">App guides</span></span>
+                <span class="post-reading-time"><span class="i18n-ja">4分で読める</span><span class="i18n-en">4 min read</span></span>
+            </div>
+            <h1 class="post-title"><span class="i18n-ja">見かけた鳥の名前を、写真と鳴き声で調べるアプリ4選</span><span class="i18n-en">4 Apps That Name the Bird You Saw, From a Photo or Its Song</span></h1>
+        </header>
+        <figure class="post-illustration guide-illustration"><img src="/assets/images/posts/bird-name-identifier-apps.webp" width="1200" height="800" alt="公園のベンチで鳥の声に耳をすますキャラクター。スマホから小鳥の影が浮かんでいる" data-en-alt="The character on a park bench listening to birdsong, with a small bird silhouette rising from the phone" fetchpriority="high"></figure>
+
+        <div class="post-content guide i18n-ja">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">先に答え</p>
+                <p>鳥の名前は、写真か鳴き声の録音からAIが候補を出してくれるアプリで調べられます。無料でしっかり使いたいなら、コーネル大学鳥類学研究所のMerlinです。声だけを日本の鳥に絞って聞き分けたいならききしる。写真と鳴き声の両方で、似た鳥との見分け方まで知りたい人は、僕が作ったBirdLensも見てみてください。</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">書いた人 <a href="https://tsuzukit.com/about/">續橋 涼</a>（@tsuzuki817）</p>
+                    <p class="guide-byline-bio">2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。BirdLensの作者です。</p>
+                    <p class="guide-byline-date">公開 <time datetime="2026-11-15">2026.11.15</time> · 更新 <time datetime="2026-11-15">2026.11.15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">この記事は、BirdLensを作った僕が書いています。ほかの3本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。</p>
+            <h2>4本をざっくり比べる</h2>
+            <p>分かれ目は、写真で調べるか、声で調べるかです。木の上で鳴いている鳥は、姿が見えないことも多いですよね。</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">アプリ</th><th scope="col">評価の件数</th><th scope="col">写真で調べる</th><th scope="col">鳴き声で調べる</th><th scope="col">無料で使える範囲</th></tr></thead><tbody><tr><th scope="row">BirdLens（僕のアプリ）</th><td>0件</td><td>あり</td><td>あり</td><td>写真と鳴き声を合わせて2回</td></tr><tr><th scope="row">Merlin</th><td>195件</td><td>あり</td><td>あり</td><td>無料のアプリ</td></tr><tr><th scope="row">Picture Bird</th><td>2,751件</td><td>あり</td><td>あり</td><td>説明文に記載なし。年間プレミアムあり</td></tr><tr><th scope="row">ききしる</th><td>2件</td><td>説明文に記載なし</td><td>あり。日本の247種</td><td>説明文に記載なし。広告なし</td></tr></tbody></table></div>
+            <h2>1本ずつ見ていく</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/03/1e/63/031e63ef-1ea7-0c5a-ca7c-a501aefc822b/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">僕が作ったアプリ</span>
+                    <h3 class="guide-app-name">BirdLens - 野鳥AI図鑑</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · App Storeの評価 0件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6757175763" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>鳥を撮るか、鳴き声を録音すると、AIが名前の候補を出します。体長や分類も一緒に出て、似ている候補も並びます。</p>
+            <p>無料で調べられるのは、写真と鳴き声を合わせて2回までです。生態や観察のコツ、似た鳥との見分け方はプレミアムで見られます。調べるときはネットにつながっている必要があります。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b7/09/73/b7097326-ccf3-567e-7054-636b14a46bde/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Merlin Bird ID by Cornell Lab</h3>
+                    <p class="guide-app-meta">Cornell University · App Storeの評価 195件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id773457673" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        <a class="guide-app-android" href="https://play.google.com/store/apps/details?id=com.labs.merlinbirdid.app" target="_blank" rel="noopener noreferrer">Google Play版</a>
+                    </div>
+                </div>
+            </div>
+            <p>コーネル大学鳥類学研究所が作っている無料のアプリです。写真、鳴き声の録音、いくつかの質問に答える方法、地域の鳥を探す方法の4つで鳥を調べられます。</p>
+            <p>地域ごとのバードパックを入れて使う仕組みで、日本のパックもあります。Google PlayにAndroid版もあります。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/39/00/f7/3900f7da-d551-7d06-d7b0-9f01076e0fea/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Picture Bird - 撮ったら、判る--1秒鳥図鑑</h3>
+                    <p class="guide-app-meta">Next Vision Limited · App Storeの評価 2,751件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id1474586978" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>評価が2,751件あって、この中ではいちばん使われています。写真と鳴き声の両方に対応していて、説明文では1万種以上を識別できると書かれています。</p>
+            <p>鳥に向けてズームすると写真をくっきりさせるカメラや、餌やりのガイドもあります。年間のプレミアムがあって、7日間のお試しが付いています。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/cf/45/32/cf453227-cef3-5eee-44b9-91d8ed7c8e95/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">ききしる</h3>
+                    <p class="guide-app-meta">Shuichi Kodama · App Storeの評価 2件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6785257128" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>声を聞き取って名前を出すことに絞ったアプリです。対象は日本にすむ247種で、名前は和名と漢字と学名で出ます。迷うときは、たぶんと断って候補を出してくれます。</p>
+            <p>識別は全部端末の中で済んで、アカウントも広告もありません。Apple Watchだけでも聞き取りから名前まで出せます。</p>
+            <h2>どれを選ぶか</h2>
+            <ul class="guide-list"><li>お金をかけずに写真も声も試したいなら、Merlin</li><li>たくさんの人が使っている定番から選びたいなら、Picture Bird</li><li>散歩中に声だけで、日本の鳥を聞き分けたいなら、ききしる</li><li>写真と声の両方で、似た鳥との見分け方まで知りたいなら、BirdLens</li></ul>
+            <h2>よくある質問</h2>
+            <dl class="guide-faq">
+                <dt>無料で使えますか？</dt><dd>4本とも無料で入れられます。Merlinは説明文で無料のアプリと書かれています。BirdLensは無料で2回まで調べられて、そのあとはプレミアムです。</dd>
+                <dt>姿が見えなくても調べられますか？</dt><dd>4本とも鳴き声から調べられます。ききしるは声を聞き分けることに絞ったアプリです。</dd>
+                <dt>電波の届かない山の中でも使えますか？</dt><dd>説明文で端末の中だけで識別すると書かれているのは、ききしるです。BirdLensは調べるときにネットが要ります。</dd>
+                <dt>Androidで使えるのはどれですか？</dt><dd>この4本の中では、MerlinがGoogle Playにもあります。BirdLensはiPhone専用です。</dd>
+            </dl>
+            <p>BirdLensの評価はまだ0件です。公園で鳴いていた鳥の名前がわかったら、ぜひ教えてください🐦</p>
+            <div class="guide-notes">各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。巣やヒナに近づいての撮影や録音は、鳥の子育ての邪魔になることがあるので控えてください。</div>
+        </div>
+
+        <div class="post-content guide i18n-en">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">Short answer</p>
+                <p>You can name a bird with an app that suggests candidates from a photo or a recording of its song. If you want something solid for free, go with Merlin from the Cornell Lab of Ornithology. If you only care about songs and want an app focused on birds in Japan, try Kikishiru. If you want both photo and song, plus tips on telling look-alikes apart, take a look at BirdLens, which I made.</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">Written by <a href="https://tsuzukit.com/about/">Ryo Tsuzukihashi</a> (@tsuzuki817)</p>
+                    <p class="guide-byline-bio">I&#x27;ve been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made BirdLens.</p>
+                    <p class="guide-byline-date">Published <time datetime="2026-11-15">2026-11-15</time> · Updated <time datetime="2026-11-15">2026-11-15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">I made BirdLens, and I wrote this article. The other three apps are by developers I don&#x27;t know, and I haven&#x27;t received money or anything else from them. Everything compared here comes from each app&#x27;s App Store description and rating count as of November 15, 2026.</p>
+            <h2>The four apps at a glance</h2>
+            <p>The big split is whether you identify a bird by photo or by sound. A bird singing up in a tree is often hard to actually see.</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">App</th><th scope="col">Ratings</th><th scope="col">By photo</th><th scope="col">By song</th><th scope="col">What&#x27;s free</th></tr></thead><tbody><tr><th scope="row">BirdLens (my app)</th><td>0</td><td>Yes</td><td>Yes</td><td>2 identifications, photo or song combined</td></tr><tr><th scope="row">Merlin</th><td>195</td><td>Yes</td><td>Yes</td><td>Free app</td></tr><tr><th scope="row">Picture Bird</th><td>2,751</td><td>Yes</td><td>Yes</td><td>Not mentioned. Yearly Premium available</td></tr><tr><th scope="row">Kikishiru</th><td>2</td><td>Not mentioned</td><td>Yes, 247 species found in Japan</td><td>Not mentioned. No ads</td></tr></tbody></table></div>
+            <h2>Each app, one by one</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/03/1e/63/031e63ef-1ea7-0c5a-ca7c-a501aefc822b/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">I made this</span>
+                    <h3 class="guide-app-name">BirdLens - Bird AI Guide</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · 0 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6757175763" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>Take a photo of a bird or record its song, and the AI suggests what it is. You also get its body length and classification, along with other likely candidates.</p>
+            <p>You can identify two birds for free, counting photos and recordings together. Ecology, birding tips, and how to tell similar birds apart come with Premium. You need an internet connection to identify a bird.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b7/09/73/b7097326-ccf3-567e-7054-636b14a46bde/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Merlin Bird ID by Cornell Lab</h3>
+                    <p class="guide-app-meta">Cornell University · 195 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id773457673" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        <a class="guide-app-android" href="https://play.google.com/store/apps/details?id=com.labs.merlinbirdid.app" target="_blank" rel="noopener noreferrer">Android version on Google Play</a>
+                    </div>
+                </div>
+            </div>
+            <p>This is a free app from the Cornell Lab of Ornithology. You can identify a bird four ways, from a photo, from a recording, by answering a few simple questions, or by browsing the birds in your area.</p>
+            <p>It works with regional bird packs, and there is one for Japan. There is also an Android version on Google Play.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/39/00/f7/3900f7da-d551-7d06-d7b0-9f01076e0fea/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Picture Bird: Bird identifier</h3>
+                    <p class="guide-app-meta">Next Vision Limited · 2,751 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id1474586978" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>With 2,751 ratings, this is the most used of the four. It works with both photos and songs, and the description says it can identify more than 10,000 species.</p>
+            <p>It also has a camera that sharpens the shot as you zoom in on a bird, and a guide to feeding backyard birds. There is a yearly Premium plan with a 7-day trial.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/cf/45/32/cf453227-cef3-5eee-44b9-91d8ed7c8e95/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Kikishiru</h3>
+                    <p class="guide-app-meta">Shuichi Kodama · 2 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6785257128" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>This app does one thing, it listens to a song and tells you the bird. It covers 247 species that live in Japan, and gives the Japanese name with its kanji and the scientific name. When it isn&#x27;t sure, it says so and offers its best guesses.</p>
+            <p>Everything runs on the device, with no account and no ads. It even works on an Apple Watch by itself, from listening to showing the name.</p>
+            <h2>Which one to pick</h2>
+            <ul class="guide-list"><li>If you want to try both photos and songs without paying, Merlin</li><li>If you want the one most people already use, Picture Bird</li><li>If you want to name birds in Japan by their song while you walk, Kikishiru</li><li>If you want photo and song, plus how to tell look-alikes apart, BirdLens</li></ul>
+            <h2>FAQ</h2>
+            <dl class="guide-faq">
+                <dt>Are they free?</dt><dd>All four are free to download. Merlin describes itself as a free app. BirdLens lets you identify two birds for free, and after that it is Premium.</dd>
+                <dt>Can I identify a bird I can&#x27;t see?</dt><dd>All four can identify a bird from its song. Kikishiru is built only for that.</dd>
+                <dt>Do they work in the mountains with no signal?</dt><dd>Kikishiru is the one whose description says identification runs entirely on the device. BirdLens needs the internet to identify a bird.</dd>
+                <dt>Which one works on Android?</dt><dd>Of these four, Merlin is also on Google Play. BirdLens is iPhone only.</dd>
+            </dl>
+            <p>BirdLens has no ratings yet. If it tells you the name of a bird singing in your local park, I&#x27;d love to hear about it 🐦</p>
+            <div class="guide-notes">Features and rating counts were checked against each app&#x27;s App Store description on November 15, 2026, and may change with updates. Please don&#x27;t get close to nests or chicks to take photos or recordings, as it can disturb the parents.</div>
+        </div>
+
+        <nav class="post-navigation">
+            <img class="tk-char tk-char--post" src="/assets/images/character-hang.png" alt="" width="381" height="208">
+            <a href="/blog/guides/" class="nav-link-wrapper"><span>&larr; <span class="i18n-ja">困りごとから選ぶアプリの一覧へ</span><span class="i18n-en">All guides: apps for everyday problems</span></span></a>
+        </nav>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
+                    <p class="footer-description"><span class="i18n-ja">誰も作らないものを、まじめに作る</span><span class="i18n-en">I make things nobody else would, and I make them seriously</span></p>
+                </div>
+                <div class="footer-nav">
+                    <a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
+                    <a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
+                    <a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
+                    <a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ryo Tsuzukihashi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

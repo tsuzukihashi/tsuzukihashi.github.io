@@ -1,0 +1,375 @@
+{
+  "slug": "reading-passbook-apps",
+  "date_published": "2026-11-15",
+  "date_updated": "2026-11-15",
+  "search_phrase": {
+    "ja": "読書通帳 アプリ",
+    "en": "reading passbook app"
+  },
+  "evidence": "2026-11-15 に Google の検索候補で「読書通帳」を引くと13件出て、「図書館」「自治体」「100均」「テンプレート無料」に混じって「読書通帳アプリ」「読書通帳 アプリ」の2件があった。「読書 金額」も5件すべてが「通帳」「記録」「アプリ」の付いた形だった。同じ日に App Store で「読書通帳」を検索すると、通帳の形で読んだ本の金額を残すアプリが4本並び、評価はどれも50件以下だった。",
+  "title": {
+    "ja": "読んだ本の金額が貯まる読書通帳アプリ3選",
+    "en": "3 Reading Passbook Apps That Add Up What Your Books Are Worth"
+  },
+  "description": {
+    "ja": "読んだ本の金額を通帳のように記帳していくアプリを3本比べました。貯まる金額の意味、本の入れ方、ほかにできることの違いをまとめています。もくもくの作者が書いています。",
+    "en": "I compared three iPhone apps that log the books you read like entries in a bank passbook: what the total means, how you add books, and what else they do. Written by the maker of Mokumoku."
+  },
+  "excerpt": {
+    "ja": "貯まる金額の意味と、本の入れ方で3本を比べました。もくもくを作った僕が、自分のアプリも入れて書いています。",
+    "en": "Three apps compared on what the running total means and how you add books. I made Mokumoku, and it's one of the three."
+  },
+  "category": {
+    "ja": "アプリの選び方",
+    "en": "App guides"
+  },
+  "reading_minutes": 4,
+  "author": {
+    "name": {
+      "ja": "續橋 涼",
+      "en": "Ryo Tsuzukihashi"
+    },
+    "handle": "tsuzuki817",
+    "bio": {
+      "ja": "2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。もくもくの作者です。",
+      "en": "I've been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made Mokumoku."
+    },
+    "url": "https://tsuzukit.com/about/",
+    "same_as": [
+      "https://x.com/tsuzuki817"
+    ]
+  },
+  "tldr": {
+    "ja": "図書館で借りた本や読み放題で読んだ本を、浮いたお金として貯めたいなら読書貯金です。本のメモを要約と画像でまとめて読み返したいならレコドク。買った本に払った金額を記帳して、本代をひと目で見たい人は、僕が作ったもくもくを見てみてください。",
+    "en": "If you want library books and books from a reading subscription to add up as money you saved, Reading Savings is the one. If you want to reread summaries and photo notes from your books in one place, try RecoDoku. If you want to log what you actually paid for each book and see your book spending at a glance, take a look at Mokumoku, which I made."
+  },
+  "disclosure": {
+    "ja": "この記事は、もくもくを作った僕が書いています。ほかの2本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。",
+    "en": "I made Mokumoku, and I wrote this article. The other two apps are by developers I don't know, and I haven't received money or anything else from them. Everything compared here comes from each app's App Store description and rating count as of November 15, 2026."
+  },
+  "own_app": "1487377681",
+  "app_category": "BookApplication",
+  "apps": [
+    {
+      "id": "1487377681",
+      "name": {
+        "ja": "もくもく - 読書銀行・読んだ本が貯まる読書記録",
+        "en": "Mokumoku - Reading Bank, a Book Log That Adds Up"
+      },
+      "short": {
+        "ja": "もくもく",
+        "en": "Mokumoku"
+      },
+      "developer": "Ryo Tsudukihashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7f/1b/be/7f1bbe1d-b2f2-0e3a-32c1-c40953bfef72/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id1487377681",
+      "android_url": "https://play.google.com/store/apps/details?id=com.tsuzuki817.bookbank",
+      "rating_count": 46
+    },
+    {
+      "id": "6756208773",
+      "name": {
+        "ja": "読書貯金｜読んだ本が資産になる読書記録",
+        "en": "Reading Savings: Book Tracker"
+      },
+      "short": {
+        "ja": "読書貯金",
+        "en": "Reading Savings"
+      },
+      "developer": "Miyuki Fujirai",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/2c/a8/30/2ca8308d-bbb9-208f-9b98-1147a1227dce/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6756208773",
+      "android_url": null,
+      "rating_count": 49
+    },
+    {
+      "id": "1468035816",
+      "name": {
+        "ja": "通帳型読書記録と本のメモをまとめて読み返し「レコドク」",
+        "en": "RecoDoku - Passbook-Style Reading Log and Notes"
+      },
+      "short": {
+        "ja": "レコドク",
+        "en": "RecoDoku"
+      },
+      "developer": "mitsuhiro nara",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/29/c9/2b/29c92be6-fa57-9c03-3982-2f1f95d2f851/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id1468035816",
+      "android_url": null,
+      "rating_count": 38
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ja": "3本をざっくり比べる",
+        "en": "The three apps at a glance"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "3本とも、読んだ本を通帳の1行のように残していきます。違いが出るのは、貯まっていく金額が何のお金なのかです。",
+            "en": "All three log each book like a line in a bank passbook. The real difference is what the growing total actually stands for."
+          }
+        },
+        {
+          "type": "table",
+          "head": [
+            {
+              "ja": "アプリ",
+              "en": "App"
+            },
+            {
+              "ja": "評価の件数",
+              "en": "Ratings"
+            },
+            {
+              "ja": "貯まる金額",
+              "en": "What adds up"
+            },
+            {
+              "ja": "本の入れ方",
+              "en": "Adding books"
+            },
+            {
+              "ja": "ほかにできること",
+              "en": "Also"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ja": "もくもく（僕のアプリ）",
+                "en": "Mokumoku (my app)"
+              },
+              {
+                "ja": "46件",
+                "en": "46"
+              },
+              {
+                "ja": "買った本に払った金額",
+                "en": "What you paid for books you bought"
+              },
+              {
+                "ja": "バーコード、まとめて記帳、ほかのアプリから取り込み",
+                "en": "Barcode, batch logging, import from other apps"
+              },
+              {
+                "ja": "ページごとの読書メモ",
+                "en": "Reading notes for each page"
+              }
+            ],
+            [
+              {
+                "ja": "読書貯金",
+                "en": "Reading Savings"
+              },
+              {
+                "ja": "49件",
+                "en": "49"
+              },
+              {
+                "ja": "借りた本や読み放題の本の定価",
+                "en": "List price of books you borrowed or read on a subscription"
+              },
+              {
+                "ja": "バーコード、タイトル検索",
+                "en": "Barcode, title search"
+              },
+              {
+                "ja": "家族ごとの本棚",
+                "en": "A shelf for each family member"
+              }
+            ],
+            [
+              {
+                "ja": "レコドク",
+                "en": "RecoDoku"
+              },
+              {
+                "ja": "38件",
+                "en": "38"
+              },
+              {
+                "ja": "本の価格の合計",
+                "en": "Total price of your books"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "要約と画像のメモ、返却日のお知らせ",
+                "en": "Summaries and photo notes, return-date reminders"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "1本ずつ見ていく",
+        "en": "Each app, one by one"
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "id": "1487377681"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "本の裏のバーコードを読み取ると、書名、著者、表紙、価格が入って、通帳に1行記帳されます。本棚の本は続けて読み取って、まとめて記帳できます。中古やセールで買った本は、払った金額に直せます。",
+            "en": "Scan the barcode on the back of a book and the title, author, cover, and price fill in, adding one line to your passbook. You can scan the books on your shelf one after another to log them all at once. For used or discounted books, you can change the amount to what you actually paid."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "統計の画面で、週ごとの本代と、今月や先月の合計金額と冊数が見られます。ブクログなどが書き出したCSVから、本と感想をまとめて取り込むこともできます。",
+            "en": "The stats screen shows what you spent on books each week, plus totals and book counts for this month and last month. You can also bring in your books and reviews from a CSV exported by apps like Booklog."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "記帳と統計は無料です。バックアップ、続きものの新刊のお知らせ、読書メーターからの取り込みは、スーパーもくもくプランという月額か年額のサブスクリプションに入っています。Google PlayにAndroid版もあります。",
+            "en": "Logging and stats are free. Backups, alerts for new volumes in a series, and importing from Bookmeter come with the Super Mokumoku plan, a monthly or yearly subscription. There's also an Android version on Google Play."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6756208773"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "図書館で借りた本や、読み放題で読んだ本を記録すると、その本の定価の分が貯金として貯まっていきます。本を買う代わりにいくら浮いたかが見える作りです。",
+            "en": "Log books you borrowed from the library or read on a subscription service, and their list price adds up as savings. It shows how much you saved by not buying them."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "家族それぞれの本棚を分けられるので、子どもの読書の記録にも向いてます。同じ本を何回借りたかも分かって、毎月のレポートを画像にして共有できます。料金については、説明文に書かれていませんでした。",
+            "en": "You can keep a separate shelf for each family member, so it works well for tracking kids' reading. It also shows how many times you've borrowed the same book, and you can share a monthly report as an image. The description doesn't say anything about pricing."
+          }
+        },
+        {
+          "type": "app",
+          "id": "1468035816"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "読んだ本の履歴を、銀行の預金通帳のように並べるアプリです。書名と日付に加えて、価格、評価、読み終えたか読んでいる途中かが一覧で見られます。",
+            "en": "This app lays out your reading history like a bank savings passbook. Along with the title and date, you can see the price, your rating, and whether you've finished it or are still reading, all in one list."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "本ごとに要約を書いたり、本の図やメモを写真で残したりして、カテゴリごとにまとめて読み返せます。借りた本の返却を知らせる通知と、合計の冊数、価格、ページ数の統計もあります。",
+            "en": "You can write a summary for each book or save diagrams and notes as photos, then reread them grouped by category. There are also reminders to return borrowed books, and stats for your total book count, price, and pages."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "アプリを入れたくないなら",
+        "en": "If you'd rather not install an app"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "図書館によっては、借りた本を印字できる読書通帳を用意しているところがあります。住んでいる地域の図書館に聞いてみてください。",
+            "en": "Some public libraries offer a reading passbook that prints the books you borrow. Ask at your local library."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "紙のノートに、日付と書名と値段を1行ずつ書いていくのでも十分です。合計を出す計算を自分でやることになるので、そこを任せたいならアプリですね。",
+            "en": "Writing the date, title, and price on one line each in a paper notebook works fine too. You'd be adding up the totals yourself, so if you'd rather hand that off, that's where an app helps."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "どれを選ぶか",
+        "en": "Which one to pick"
+      },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "ja": "図書館や読み放題で読む人、子どもの読書を記録したい人は、読書貯金",
+              "en": "If you read library books or use a reading subscription, or want to track your kids’ reading, Reading Savings"
+            },
+            {
+              "ja": "本のメモや要約をまとめて読み返したいなら、レコドク",
+              "en": "If you want to reread your notes and summaries in one place, RecoDoku"
+            },
+            {
+              "ja": "買った本の本代を記帳して、Androidでも使いたいなら、もくもく",
+              "en": "If you want to log what you spend on books you buy, or you also use Android, Mokumoku"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "ja": "無料で使えますか？",
+        "en": "Are they free?"
+      },
+      "a": {
+        "ja": "3本とも無料で入れられます。もくもくは記帳と統計が無料で、バックアップなどがスーパーもくもくプランです。",
+        "en": "All three are free to download. Mokumoku's logging and stats are free, and backups and a few other features are part of the Super Mokumoku plan."
+      }
+    },
+    {
+      "q": {
+        "ja": "図書館で借りた本も記録できますか？",
+        "en": "Can I log library books?"
+      },
+      "a": {
+        "ja": "そのために作られているのは読書貯金です。もくもくは、買った本に払った金額を記帳する作りです。",
+        "en": "Reading Savings is built for exactly that. Mokumoku is built around logging what you paid for books you bought."
+      }
+    },
+    {
+      "q": {
+        "ja": "ほかの読書アプリから引っ越せますか？",
+        "en": "Can I move over from another reading app?"
+      },
+      "a": {
+        "ja": "もくもくは、ブクログなどが書き出したCSVから取り込めます。読書メーターからの取り込みはスーパーもくもくプランです。読書貯金も、説明文に取り込みの機能があると書かれています。",
+        "en": "Mokumoku can import a CSV exported from apps like Booklog, and importing from Bookmeter is part of the Super Mokumoku plan. Reading Savings also says in its description that it can import records."
+      }
+    }
+  ],
+  "closing": {
+    "ja": "もくもくの評価はいま46件なので、47件目をもらえたらうれしいです📚",
+    "en": "Mokumoku has 46 ratings right now, so I'd be happy to get number 47 📚"
+  },
+  "notes": {
+    "ja": "各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。もくもくの機能はアプリのコードとストアの説明文で確かめました。アップデートで変わることがあります。",
+    "en": "Features and rating counts were checked against each app's App Store description on November 15, 2026. Mokumoku's features were checked in the app's code and its store description. Things may change with updates."
+  },
+  "illustration": {
+    "scene": "夜の部屋のソファ。キャラが読み終えた本を閉じて胸に抱え、膝の上に開いた紺色の通帳のような手帳（文字なし、細い線だけ）に新しい1行が増えたのを見てうれしそうにしている。そばに読み終えた本が数冊積んであり、手帳の上に小さなコインが1枚ぽんと浮かんでいる。",
+    "alt": {
+      "ja": "読み終えた本を抱えて、通帳のような手帳に1行増えたのを見るキャラクター",
+      "en": "The character hugging a finished book and looking at a new line added to a passbook-style notebook"
+    }
+  }
+}

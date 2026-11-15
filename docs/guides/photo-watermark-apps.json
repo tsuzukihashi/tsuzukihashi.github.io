@@ -1,0 +1,384 @@
+{
+  "slug": "photo-watermark-apps",
+  "date_published": "2026-11-15",
+  "date_updated": "2026-11-15",
+  "search_phrase": {
+    "ja": "写真に透かしを入れるアプリ",
+    "en": "app to add a watermark to photos"
+  },
+  "evidence": "2026-11-15 に Google の検索候補で「写真 透かし 入れる」を引くと、3件の中に「写真に透かしを入れる方法」と「写真に透かしを入れるアプリ」があった。「透かし アプリ」の10件には「転載防止 透かし アプリ」「透かし アプリ 文字」があり、「写真 クレジット 入れる」の5件にも「写真にクレジットを入れるアプリ」が出た。同じ日の App Store で「写真 透かし」を引くと大手の写真加工アプリが上に並び、透かし専用のアプリではWaterStampが評価1,523件と抜けていた。",
+  "title": {
+    "ja": "写真に透かしやコピーライトを入れるアプリ3選",
+    "en": "3 Apps for Adding a Watermark or Copyright to Your Photos"
+  },
+  "description": {
+    "ja": "SNSに上げる写真に、透かしやコピーライトの文字を入れるアプリを3本比べました。入れられるもの、画面いっぱいに並べる入れ方、まとめて加工できるかの違いと、iPhoneだけで文字を入れる方法をまとめています。フォトガードの作者が書いています。",
+    "en": "Three iPhone apps that add a watermark or copyright notice to photos before you post, compared on what you can add, full-image tiling, and batch editing. Plus the built-in iPhone way. Written by the maker of PhotoGuards."
+  },
+  "excerpt": {
+    "ja": "入れられるもの、画面いっぱいの透かし、まとめて加工できるかで3本を比べました。フォトガードを作った僕が書いています。",
+    "en": "Three apps compared on what you can add, full-image watermarks, and batch editing. I made PhotoGuards, and it is one of the three."
+  },
+  "category": {
+    "ja": "アプリの選び方",
+    "en": "App guides"
+  },
+  "reading_minutes": 3,
+  "author": {
+    "name": {
+      "ja": "續橋 涼",
+      "en": "Ryo Tsuzukihashi"
+    },
+    "handle": "tsuzuki817",
+    "bio": {
+      "ja": "2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。フォトガードの作者です。",
+      "en": "I've been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made PhotoGuards."
+    },
+    "url": "https://tsuzukit.com/about/",
+    "same_as": [
+      "https://x.com/tsuzuki817"
+    ]
+  },
+  "tldr": {
+    "ja": "透かしを入れるなら、いちばん使われているのは評価1,523件のWaterStampです。文字もロゴも入れられて、画面いっぱいに並べる入れ方や、何枚もまとめての加工もできます。動画に動く透かしを入れたいなら透かしマスター。写真にコピーライトの文字を1つ入れるだけでいい人は、僕が作ったフォトガードも見てみてください。",
+    "en": "For watermarks, the most used app is WaterStamp, with 1,523 ratings. It handles text and logos, can tile a watermark across the whole image, and edits many photos at once. If you want a moving watermark on video, try Watermark Master. If all you need is a single copyright line on a photo, take a look at PhotoGuards, which I made."
+  },
+  "disclosure": {
+    "ja": "この記事は、フォトガードを作った僕が書いています。ほかの2本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。",
+    "en": "I made PhotoGuards, and I wrote this article. The other two apps are by developers I don't know, and I haven't received money or anything else from them. Everything compared here comes from each app's App Store description and rating count as of November 15, 2026."
+  },
+  "own_app": "6452754625",
+  "app_category": "PhotographyApplication",
+  "apps": [
+    {
+      "id": "6452754625",
+      "name": {
+        "ja": "フォトガード",
+        "en": "PhotoGuards"
+      },
+      "short": {
+        "ja": "フォトガード",
+        "en": "PhotoGuards"
+      },
+      "developer": "Ryo Tsudukihashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/c7/3e/a3/c73ea30f-2661-1137-80ec-2158dddcaec1/AppIcon-1x_U007epad-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6452754625",
+      "android_url": null,
+      "rating_count": 4
+    },
+    {
+      "id": "6464230667",
+      "name": {
+        "ja": "ウォーターマーク(透かし文字入れ) - WaterStamp",
+        "en": "Add Watermark to Photo & Video"
+      },
+      "short": {
+        "ja": "WaterStamp",
+        "en": "WaterStamp"
+      },
+      "developer": "Motoki Takahashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e2/a6/3a/e2a63a02-ca40-1197-532e-35dc27aedf02/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6464230667",
+      "android_url": null,
+      "rating_count": 1523
+    },
+    {
+      "id": "1581218254",
+      "name": {
+        "ja": "透かしマスター",
+        "en": "Watermark Master App"
+      },
+      "short": {
+        "ja": "透かしマスター",
+        "en": "Watermark Master"
+      },
+      "developer": "Silver Tech",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f6/8a/cc/f68acc6a-9a63-fae0-bdeb-478fa02a4d3c/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id1581218254",
+      "android_url": null,
+      "rating_count": 37
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ja": "3本をざっくり比べる",
+        "en": "The three apps at a glance"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "文字を入れるところは3本とも同じです。違いが出るのは、ロゴや動画にも使えるかと、何枚もまとめて加工できるかです。",
+            "en": "All three can add text. The differences are whether they also handle logos and video, and whether they can process many photos at once."
+          }
+        },
+        {
+          "type": "table",
+          "head": [
+            {
+              "ja": "アプリ",
+              "en": "App"
+            },
+            {
+              "ja": "評価の件数",
+              "en": "Ratings"
+            },
+            {
+              "ja": "入れられるもの",
+              "en": "What you can add"
+            },
+            {
+              "ja": "画面いっぱいに並べる",
+              "en": "Tile across the image"
+            },
+            {
+              "ja": "まとめて加工",
+              "en": "Batch editing"
+            },
+            {
+              "ja": "動画",
+              "en": "Video"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ja": "フォトガード（僕のアプリ）",
+                "en": "PhotoGuards (my app)"
+              },
+              {
+                "ja": "4件",
+                "en": "4"
+              },
+              {
+                "ja": "コピーライトの文字。フォントと配置を選べる",
+                "en": "Copyright text, with your choice of font and layout"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              }
+            ],
+            [
+              {
+                "ja": "WaterStamp",
+                "en": "WaterStamp"
+              },
+              {
+                "ja": "1,523件",
+                "en": "1,523"
+              },
+              {
+                "ja": "文字、ロゴ画像",
+                "en": "Text, logo images"
+              },
+              {
+                "ja": "あり",
+                "en": "Yes"
+              },
+              {
+                "ja": "あり",
+                "en": "Yes"
+              },
+              {
+                "ja": "あり",
+                "en": "Yes"
+              }
+            ],
+            [
+              {
+                "ja": "透かしマスター",
+                "en": "Watermark Master"
+              },
+              {
+                "ja": "37件",
+                "en": "37"
+              },
+              {
+                "ja": "文字、ロゴ、手書きの署名、日時、位置",
+                "en": "Text, logos, handwritten signatures, date, location"
+              },
+              {
+                "ja": "あり",
+                "en": "Yes"
+              },
+              {
+                "ja": "あり",
+                "en": "Yes"
+              },
+              {
+                "ja": "あり。動く透かしも",
+                "en": "Yes, including moving watermarks"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "1本ずつ見ていく",
+        "en": "Each app, one by one"
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "id": "6452754625"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "SNSに上げる前の写真に、コピーライトの文字を入れるアプリです。フォントもレイアウトも自分で選べます。",
+            "en": "It adds a copyright line to a photo before you post it. You choose the font and the layout yourself."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "説明文に書いてあるのは、この2つだけです。ロゴを入れたい、何枚もまとめて加工したいなら、ほかの2本のほうが向いています。",
+            "en": "That's all its description covers. If you want to add a logo or process lots of photos at once, the other two are a better fit."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6464230667"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "評価が1,523件あって、この中ではいちばん使われています。説明文では完全無料で、登録もログインも要らないと書かれています。",
+            "en": "With 1,523 ratings, this is the most used of the three. Its description says it is completely free, with no sign-up or login."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "文字の色、大きさ、間隔、透明度を変えられて、ロゴ画像も透かしにできます。画面いっぱいに並べる入れ方、何枚もまとめての加工、動画にも対応しています。写真の位置情報などのExifを自動で消す機能もあります。",
+            "en": "You can change the text color, size, spacing, and opacity, and use a logo image as a watermark. It can tile the watermark across the whole image, process many photos at once, and handle video. It also strips Exif data, such as location, automatically."
+          }
+        },
+        {
+          "type": "app",
+          "id": "1581218254"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "文字やロゴのほかに、手書きの署名、日時、位置情報の打刻まで入れられます。写真に一括で入れることも、画面いっぱいに並べることもできます。",
+            "en": "Besides text and logos, it can add a handwritten signature or stamp the date and location. It can watermark many photos at once or tile it across the whole image."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "動画では、透かしが画面の中を不規則に動く入れ方ができます。写真の不要なものを消す機能や、モザイクもあります。週額か月額のサブスクリプションと、買い切りがあります。",
+            "en": "For video, it can make the watermark wander randomly around the frame. It also removes unwanted objects from photos and adds mosaics. There are weekly and monthly subscriptions, plus a one-time purchase."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "iPhoneだけで文字を入れるなら",
+        "en": "Adding text with just your iPhone"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "写真に文字を1行書き込むだけなら、iPhoneの写真アプリの編集にあるマークアップでもできます。",
+            "en": "If you only need to write a line of text on a photo, the Markup tool in the iPhone Photos app's edit screen can do it."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "ただ、何枚もの写真に同じ文字を同じ位置へ入れるのは手間です。投稿する写真が多い人は、まとめて加工できるアプリのほうが早いですね。",
+            "en": "Putting the same text in the same spot on lots of photos gets tedious, though. If you post a lot, an app that batch-edits will save you time."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "どれを選ぶか",
+        "en": "Which one to pick"
+      },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "ja": "無料で、文字もロゴも細かく調整したいなら、WaterStamp",
+              "en": "If you want detailed control over text and logos for free, WaterStamp"
+            },
+            {
+              "ja": "動画に動く透かしを入れたい、署名や日時も入れたいなら、透かしマスター",
+              "en": "If you want moving watermarks on video, or signatures and dates, Watermark Master"
+            },
+            {
+              "ja": "写真にコピーライトの文字を1つ入れるだけでいいなら、フォトガード",
+              "en": "If one copyright line on a photo is all you need, PhotoGuards"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "ja": "無料で使えますか？",
+        "en": "Are they free?"
+      },
+      "a": {
+        "ja": "3本とも無料で入れられます。WaterStampは説明文で完全無料と書かれています。透かしマスターは、広告を消して全部の機能を使うのが有料です。",
+        "en": "All three are free to download. WaterStamp says in its description that it is completely free. Watermark Master charges to remove ads and unlock every feature."
+      }
+    },
+    {
+      "q": {
+        "ja": "透かしを入れれば無断転載は防げますか？",
+        "en": "Will a watermark stop people from reposting my photos?"
+      },
+      "a": {
+        "ja": "透かしで伝わるのは、誰の写真かです。それでも無断で使われたときにどうするかは、専門家に相談してください。",
+        "en": "A watermark shows whose photo it is. If someone uses your photo without permission anyway, talk to a legal professional about what to do."
+      }
+    },
+    {
+      "q": {
+        "ja": "動画にも入れられますか？",
+        "en": "Can I add a watermark to video?"
+      },
+      "a": {
+        "ja": "WaterStampと透かしマスターは、説明文で動画にも対応していると書かれています。",
+        "en": "WaterStamp and Watermark Master both say in their descriptions that they work with video."
+      }
+    }
+  ],
+  "closing": {
+    "ja": "フォトガードの評価はまだ4件なので、どんな写真に使ったか教えてもらえたらうれしいです🛡️",
+    "en": "PhotoGuards only has four ratings so far, so I'd love to hear what kind of photos you use it on 🛡️"
+  },
+  "notes": {
+    "ja": "各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。",
+    "en": "Features and rating counts were checked against each app's App Store description on November 15, 2026, and may change with updates."
+  },
+  "illustration": {
+    "scene": "明るい部屋の壁に、キャラが撮った花や空の写真が何枚も飾ってある。それぞれの写真の右下に、キャラのまるいシルエットの小さな印がうすく入っている（文字なし）。キャラは1枚を額に入れながら満足そうに眺めている。",
+    "alt": {
+      "ja": "自分の印をうすく入れた写真を壁に飾るキャラクター",
+      "en": "The character hanging photos on a wall, each marked faintly with a small round silhouette in the corner"
+    }
+  }
+}

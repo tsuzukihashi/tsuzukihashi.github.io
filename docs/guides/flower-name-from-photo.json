@@ -1,0 +1,395 @@
+{
+  "slug": "flower-name-from-photo",
+  "date_published": "2026-11-15",
+  "date_updated": "2026-11-15",
+  "search_phrase": {
+    "ja": "花の名前 写真から調べる",
+    "en": "identify a flower from a photo"
+  },
+  "evidence": "2026-11-15 に Google の検索候補で「花の名前 写真」を引くと、14件すべてが写真から調べる形で、「花の名前 写真から 調べる」「花の名前 写真 アプリ 無料」「iphone 花の名前 写真」が並んだ。「花 名前 調べる」は10件中3件が「アプリ」、1件が「iphone」付きだった。同じ日の App Store で「花の名前 写真」を引くと、評価100,899件のPictureThisと20,663件のGreenSnapが上にいて、新しいアプリは評価0〜2件が多かった。",
+  "title": {
+    "ja": "花の名前を写真から調べる。iPhoneだけでやる方法とアプリ3選",
+    "en": "How to Identify a Flower From a Photo: the iPhone Way and 3 Apps"
+  },
+  "description": {
+    "ja": "道ばたや花屋さんで見た花の名前を、写真から調べる方法をまとめました。iPhoneの写真アプリだけでやる方法と、アプリ3本の違いを、花言葉や育て方まで出るかで比べています。FlowerLensの作者が書いています。",
+    "en": "How to find a flower's name from a photo: the way to do it with the iPhone Photos app alone, and three apps compared on whether they also show flower meanings and care tips. Written by the maker of FlowerLens."
+  },
+  "excerpt": {
+    "ja": "iPhoneの写真アプリだけで調べる方法と、花言葉や育て方まで出るかで3本を比べました。FlowerLensを作った僕が書いています。",
+    "en": "The built-in iPhone way, plus three apps compared on flower meanings and care tips. I made FlowerLens, and it is one of the three."
+  },
+  "category": {
+    "ja": "アプリの選び方",
+    "en": "App guides"
+  },
+  "reading_minutes": 4,
+  "author": {
+    "name": {
+      "ja": "續橋 涼",
+      "en": "Ryo Tsuzukihashi"
+    },
+    "handle": "tsuzuki817",
+    "bio": {
+      "ja": "2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。FlowerLensの作者です。",
+      "en": "I've been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made FlowerLens."
+    },
+    "url": "https://tsuzukit.com/about/",
+    "same_as": [
+      "https://x.com/tsuzuki817"
+    ]
+  },
+  "tldr": {
+    "ja": "名前だけなら、iPhoneの写真アプリで花の写真を開くと調べられることがあります。もっと確かめたいならアプリです。いちばん使われているのは評価100,899件のPictureThisで、育て方や水やりの通知まであります。名前と一緒に花言葉や誕生花を見たい人は、僕が作ったFlowerLensも見てみてください。",
+    "en": "If you only need the name, the iPhone Photos app can often tell you when you open a flower photo. For more, use an app. The most used is PictureThis, with 100,899 ratings, which also covers care and watering reminders. If you'd like the flower's meaning and birth month along with its name, take a look at FlowerLens, which I made."
+  },
+  "disclosure": {
+    "ja": "この記事は、FlowerLensを作った僕が書いています。ほかの2本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。",
+    "en": "I made FlowerLens, and I wrote this article. The other two apps are by developers I don't know, and I haven't received money or anything else from them. Everything compared here comes from each app's App Store description and rating count as of November 15, 2026."
+  },
+  "own_app": "6762043194",
+  "app_category": "EducationalApplication",
+  "apps": [
+    {
+      "id": "6762043194",
+      "name": {
+        "ja": "FlowerLens - 花AI図鑑",
+        "en": "FlowerLens - Flower AI Guide"
+      },
+      "short": {
+        "ja": "FlowerLens",
+        "en": "FlowerLens"
+      },
+      "developer": "Ryo Tsudukihashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/27/cb/a2/27cba267-bd61-ef68-376a-503a8159f8d9/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6762043194",
+      "android_url": null,
+      "rating_count": 0
+    },
+    {
+      "id": "1252497129",
+      "name": {
+        "ja": "PictureThis：植物識別・育て方園芸図鑑",
+        "en": "PictureThis - Plant Identifier"
+      },
+      "short": {
+        "ja": "PictureThis",
+        "en": "PictureThis"
+      },
+      "developer": "Glority Global Group Ltd.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ea/af/f0/eaaff0c6-768e-9d0c-df44-128ab0c8d258/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id1252497129",
+      "android_url": "https://play.google.com/store/apps/details?id=cn.danatech.xingseus",
+      "rating_count": 100899
+    },
+    {
+      "id": "934293203",
+      "name": {
+        "ja": "GreenSnap - 植物・花の名前が判る写真共有アプリ",
+        "en": "GreenSnap - Plant and Flower Photo Community"
+      },
+      "short": {
+        "ja": "GreenSnap",
+        "en": "GreenSnap"
+      },
+      "developer": "GREENSNAP, INC.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/61/5c/03/615c035a-ebc8-9ee0-69f4-701fc98dfc69/AppIcon-0-0-1x_U007emarketing-0-5-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id934293203",
+      "android_url": "https://play.google.com/store/apps/details?id=jp.co.aainc.greensnap",
+      "rating_count": 20663
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ja": "まずはiPhoneの写真アプリで",
+        "en": "Start with the iPhone Photos app"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "アプリを入れなくても、iPhoneの写真アプリで調べられることがあります。花の写真を開いたとき、下の情報ボタンに葉っぱのマークが付いていたら、それをタップします。",
+            "en": "You may not need an app at all. Open a flower photo in the Photos app, and if the info button at the bottom has a small leaf on it, tap it."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "植物の名前の候補と、似た写真が出ます。マークが出ない写真もあるので、そのときはアプリの出番ですね。",
+            "en": "You'll see a suggested plant name along with similar photos. The leaf doesn't show up on every photo, and that's where an app comes in."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "3本をざっくり比べる",
+        "en": "The three apps at a glance"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "アプリの違いは、名前のあとに何を教えてくれるかです。育てたい人と、見かけた花を知りたいだけの人で、向くアプリが変わります。",
+            "en": "The apps differ in what they tell you after the name. The right one depends on whether you want to grow the plant or just know what you saw."
+          }
+        },
+        {
+          "type": "table",
+          "head": [
+            {
+              "ja": "アプリ",
+              "en": "App"
+            },
+            {
+              "ja": "評価の件数",
+              "en": "Ratings"
+            },
+            {
+              "ja": "対応する数",
+              "en": "Coverage"
+            },
+            {
+              "ja": "無料で調べられる回数",
+              "en": "Free identifications"
+            },
+            {
+              "ja": "花言葉と誕生花",
+              "en": "Flower meanings and birth months"
+            },
+            {
+              "ja": "育て方",
+              "en": "Care tips"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ja": "FlowerLens（僕のアプリ）",
+                "en": "FlowerLens (my app)"
+              },
+              {
+                "ja": "0件",
+                "en": "0"
+              },
+              {
+                "ja": "花 約3,000種",
+                "en": "About 3,000 flowers"
+              },
+              {
+                "ja": "2回まで",
+                "en": "Up to 2"
+              },
+              {
+                "ja": "無料で表示",
+                "en": "Free"
+              },
+              {
+                "ja": "プレミアム",
+                "en": "Premium"
+              }
+            ],
+            [
+              {
+                "ja": "PictureThis",
+                "en": "PictureThis"
+              },
+              {
+                "ja": "100,899件",
+                "en": "100,899"
+              },
+              {
+                "ja": "植物 40万種以上",
+                "en": "Over 400,000 plants"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "あり。水やりの通知も",
+                "en": "Yes, with watering reminders"
+              }
+            ],
+            [
+              {
+                "ja": "GreenSnap",
+                "en": "GreenSnap"
+              },
+              {
+                "ja": "20,663件",
+                "en": "20,663"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "植物図鑑で調べられる",
+                "en": "In its plant encyclopedia"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "1本ずつ見ていく",
+        "en": "Each app, one by one"
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "id": "6762043194"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "花を撮るか、写真ライブラリから選ぶと、AIが名前の候補を出します。和名と英名、科、開花時期、花の色、花言葉、誕生花の月までは無料で見られます。",
+            "en": "Take a photo of a flower or pick one from your library, and the AI suggests what it is. The Japanese and English names, plant family, blooming season, colors, flower meanings, and birth month are all free."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "毒がある花には、そのことも表示します。季節ごとに咲く花と、月ごとの誕生花を見られるカレンダーもあります。",
+            "en": "If a flower is toxic, it tells you. There is also a calendar showing which flowers bloom each season and the birth flowers for each month."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "無料で調べられるのは2回までです。何回でも調べたいときや、日当たりや水やりなどの育て方を見たいときはプレミアムです。調べるときはネットにつながっている必要があります。",
+            "en": "You can identify two flowers for free. Unlimited identifications and care tips like sunlight and watering come with Premium. You need an internet connection to identify a flower."
+          }
+        },
+        {
+          "type": "app",
+          "id": "1252497129"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "評価が100,899件あって、この中ではいちばん使われています。説明文では40万種以上の植物を識別できると書かれています。",
+            "en": "With 100,899 ratings, this is by far the most used of the three. Its description says it can identify more than 400,000 plants."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "名前を調べるだけでなく、病気の診断、育て方、水やりの通知、日当たりの計測まであります。育てる人のための機能が厚いアプリです。Google PlayにAndroid版もあります。",
+            "en": "Beyond identifying plants, it diagnoses diseases, gives care plans, reminds you to water, and measures light. It's built for people who grow plants. There's also an Android version on Google Play."
+          }
+        },
+        {
+          "type": "app",
+          "id": "934293203"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "植物と花が好きな人が写真を投稿し合うSNSで、評価は20,663件です。名前のわからない植物を撮ると、名前を教えてくれるカメラがあります。",
+            "en": "It's a social app where plant and flower lovers share photos, with 20,663 ratings. It has a camera feature that tells you the name of a plant you don't know."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "アプリの中の植物図鑑で、育て方や日当たり、水やりの時期も調べられます。Google PlayにAndroid版もあります。",
+            "en": "Its built-in plant encyclopedia covers care, sunlight, and when to water. There is also an Android version on Google Play."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "どれを選ぶか",
+        "en": "Which one to pick"
+      },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "ja": "名前がわかれば十分なら、まずiPhoneの写真アプリ",
+              "en": "If the name is all you need, try the iPhone Photos app first"
+            },
+            {
+              "ja": "家で育てる植物の世話までしたいなら、PictureThis",
+              "en": "If you want help caring for plants at home, PictureThis"
+            },
+            {
+              "ja": "ほかの人の花の写真も見たい、交流したいなら、GreenSnap",
+              "en": "If you'd like to see and share flower photos with others, GreenSnap"
+            },
+            {
+              "ja": "名前と一緒に花言葉や誕生花も知りたいなら、FlowerLens",
+              "en": "If you want the flower's meaning and birth month along with its name, FlowerLens"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "ja": "無料で使えますか？",
+        "en": "Are they free?"
+      },
+      "a": {
+        "ja": "3本とも無料で入れられます。FlowerLensは無料で2回まで調べられて、そのあとはプレミアムです。iPhoneの写真アプリで調べるのは無料です。",
+        "en": "All three are free to download. FlowerLens lets you identify two flowers for free, and after that it is Premium. Looking things up in the iPhone Photos app is free."
+      }
+    },
+    {
+      "q": {
+        "ja": "Androidで使えるのはどれですか？",
+        "en": "Which one works on Android?"
+      },
+      "a": {
+        "ja": "この3本の中では、PictureThisとGreenSnapがGoogle Playにもあります。FlowerLensはiPhone専用です。",
+        "en": "Of these three, PictureThis and GreenSnap are also on Google Play. FlowerLens is iPhone only."
+      }
+    },
+    {
+      "q": {
+        "ja": "子どもやペットが触っても大丈夫な花かわかりますか？",
+        "en": "Can they tell me if a flower is safe for kids or pets?"
+      },
+      "a": {
+        "ja": "FlowerLensとPictureThisは、毒のある植物を知らせてくれます。ただ、アプリが出すのは目安です。口にしてしまったときは、すぐに医師や獣医さんに相談してください。",
+        "en": "FlowerLens and PictureThis both flag toxic plants, but treat that as a guide only. If a child or pet has eaten something, contact a doctor or vet right away."
+      }
+    }
+  ],
+  "closing": {
+    "ja": "FlowerLensはまだ評価が0件です。散歩で見つけた花の名前がわかったら、感想を聞かせてもらえるとうれしいです🌼",
+    "en": "FlowerLens has no ratings yet. If it helps you name a flower on your next walk, I'd love to hear how it went 🌼"
+  },
+  "notes": {
+    "ja": "各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。",
+    "en": "Features and rating counts were checked against each app's App Store description on November 15, 2026, and may change with updates."
+  },
+  "illustration": {
+    "scene": "散歩道の石垣のすきまに、小さな青い花が咲いている。キャラがしゃがんでスマホを向けていて、画面（文字なし）から花びらの形の光が出ている。キャラの頭の上に小さなハートと花が浮かんでいる。",
+    "alt": {
+      "ja": "石垣に咲く小さな青い花にスマホを向けるキャラクター",
+      "en": "The character crouching to point a phone at a small blue flower growing in a stone wall"
+    }
+  }
+}

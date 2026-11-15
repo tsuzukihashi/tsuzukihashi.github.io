@@ -1,0 +1,458 @@
+{
+  "slug": "always-on-screen-timer-apps",
+  "date_published": "2026-11-15",
+  "date_updated": "2026-11-15",
+  "search_phrase": {
+    "ja": "iphone タイマー 常に表示",
+    "en": "iPhone timer that stays on screen"
+  },
+  "evidence": "2026-11-15 に Google の検索候補で「タイマー 常に表示 iphone」を引くと、3件の中に「iphone タイマー 常に表示 アプリ」が出た。「タイマー 小窓」でも3件中に「iphone タイマー 小窓」、ほかに「iphone タイマー 画面に表示」「iphone タイマー 他のアプリ」「タイマー ピクチャインピクチャ」が候補に出る。同じ日に App Store で「タイマー 常に表示」を検索すると4本、「タイマー ピクチャインピクチャ」では8本が並び、評価はいちばん多くて154件だった。",
+  "title": {
+    "ja": "iPhoneでタイマーを画面に出しっぱなしにできるアプリ4選",
+    "en": "4 iPhone Apps That Keep a Timer on Screen While You Use Other Apps"
+  },
+  "description": {
+    "ja": "ほかのアプリを使っている間も、iPhoneの画面にタイマーの小窓を出しておけるアプリを4本比べました。カウントダウン以外の機能、記録、終わったときの動きの違いをまとめています。いつでもタイマーの作者が書いています。",
+    "en": "I compared four iPhone apps that keep a small timer window on screen while you use other apps: features beyond a countdown, history, and what happens when time's up. Written by the maker of AlwaysOnTimer."
+  },
+  "excerpt": {
+    "ja": "ほかのアプリの上にタイマーの小窓を出せるアプリを4本比べました。いつでもタイマーを作った僕が、自分のアプリも入れて書いています。",
+    "en": "Four apps that float a timer over your other apps, compared. I made AlwaysOnTimer, and it's one of the four."
+  },
+  "category": {
+    "ja": "アプリの選び方",
+    "en": "App guides"
+  },
+  "reading_minutes": 4,
+  "author": {
+    "name": {
+      "ja": "續橋 涼",
+      "en": "Ryo Tsuzukihashi"
+    },
+    "handle": "tsuzuki817",
+    "bio": {
+      "ja": "2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。いつでもタイマーの作者です。",
+      "en": "I've been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made AlwaysOnTimer."
+    },
+    "url": "https://tsuzukit.com/about/",
+    "same_as": [
+      "https://x.com/tsuzuki817"
+    ]
+  },
+  "tldr": {
+    "ja": "iPhoneのピクチャインピクチャを使うアプリなら、ほかのアプリの上にタイマーを浮かせておけます。ストップウォッチや時計も欲しいならフローティングウィンドウタイマー、見た目を変えたいなら見える化タイマー。仕事や勉強の時間をカテゴリ別に記録したい人は、僕が作ったいつでもタイマーも見てみてください。",
+    "en": "Apps that use iPhone's Picture in Picture can float a timer over everything else. If you also want a stopwatch and clock, Floating Window Timer. If you want to change how it looks, Visible Timer. If you'd like to log your work or study time by category, take a look at AlwaysOnTimer, which I made."
+  },
+  "disclosure": {
+    "ja": "この記事は、いつでもタイマーを作った僕が書いています。ほかの3本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。",
+    "en": "I made AlwaysOnTimer, and I wrote this article. The other three apps are by developers I don't know, and I haven't received money or anything else from them. Everything compared here comes from each app's App Store description and rating count as of November 15, 2026."
+  },
+  "own_app": "6443471257",
+  "app_category": "ProductivityApplication",
+  "apps": [
+    {
+      "id": "6443471257",
+      "name": {
+        "ja": "AlwaysOnTimer - いつでもタイマー",
+        "en": "AlwaysOnTimer"
+      },
+      "short": {
+        "ja": "いつでもタイマー",
+        "en": "AlwaysOnTimer"
+      },
+      "developer": "Ryo Tsudukihashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/35/7e/4e/357e4ef2-fa68-a0aa-56a4-88535d6900fc/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6443471257",
+      "android_url": null,
+      "rating_count": 15
+    },
+    {
+      "id": "1632166596",
+      "name": {
+        "ja": "フローティングウィンドウタイマー - ストップウォッチ",
+        "en": "LCT Floating Timer - Stopwatch"
+      },
+      "short": {
+        "ja": "フローティングウィンドウタイマー",
+        "en": "Floating Window Timer"
+      },
+      "developer": {
+        "ja": "云云 唐",
+        "en": "Yunyun Tang"
+      },
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/15/59/d0/1559d05c-7ebc-aab5-d04d-a01ffea7523d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id1632166596",
+      "android_url": null,
+      "rating_count": 154
+    },
+    {
+      "id": "6756334890",
+      "name": {
+        "ja": "見える化タイマー - 他のアプリを開いても残り時間を表示",
+        "en": "Visible Timer: Time Left Over Any App"
+      },
+      "short": {
+        "ja": "見える化タイマー",
+        "en": "Visible Timer"
+      },
+      "developer": "Kiyoshi Murayama",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/90/34/63/90346331-7e17-dd51-013f-a28b9b27af01/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6756334890",
+      "android_url": null,
+      "rating_count": 15
+    },
+    {
+      "id": "6708240984",
+      "name": {
+        "ja": "PIPタイマー",
+        "en": "PiP Timer"
+      },
+      "short": {
+        "ja": "PIPタイマー",
+        "en": "PiP Timer"
+      },
+      "developer": "Daiki Uemhara",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e7/38/13/e738138d-e36c-25e4-9789-f8d4ab462baf/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6708240984",
+      "android_url": null,
+      "rating_count": 1
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ja": "4本をざっくり比べる",
+        "en": "The four apps at a glance"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "4本とも、動画を小窓で流すピクチャインピクチャの仕組みで、タイマーをほかのアプリの上に出します。違いが出るのは、タイマー以外に何ができるかです。",
+            "en": "All four use Picture in Picture, the feature that plays video in a small window, to put a timer on top of other apps. The difference is what else they can do besides count down."
+          }
+        },
+        {
+          "type": "table",
+          "head": [
+            {
+              "ja": "アプリ",
+              "en": "App"
+            },
+            {
+              "ja": "評価の件数",
+              "en": "Ratings"
+            },
+            {
+              "ja": "計れるもの",
+              "en": "What it times"
+            },
+            {
+              "ja": "記録",
+              "en": "History"
+            },
+            {
+              "ja": "見た目",
+              "en": "Look"
+            },
+            {
+              "ja": "ロック画面",
+              "en": "Lock Screen"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ja": "いつでもタイマー（僕のアプリ）",
+                "en": "AlwaysOnTimer (my app)"
+              },
+              {
+                "ja": "15件",
+                "en": "15"
+              },
+              {
+                "ja": "カウントダウン",
+                "en": "Countdown"
+              },
+              {
+                "ja": "カテゴリ別に日、週、月、年で集計",
+                "en": "By category, per day, week, month, or year"
+              },
+              {
+                "ja": "文字の大きさを3段階",
+                "en": "3 text sizes"
+              },
+              {
+                "ja": "ライブアクティビティあり",
+                "en": "Live Activity"
+              }
+            ],
+            [
+              {
+                "ja": "フローティングウィンドウタイマー",
+                "en": "Floating Window Timer"
+              },
+              {
+                "ja": "154件",
+                "en": "154"
+              },
+              {
+                "ja": "カウントダウン、ストップウォッチ、時計",
+                "en": "Countdown, stopwatch, clock"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "ミリ秒まで出る時計",
+                "en": "Clock down to milliseconds"
+              },
+              {
+                "ja": "ダイナミックアイランドにも表示",
+                "en": "Also on the Dynamic Island"
+              }
+            ],
+            [
+              {
+                "ja": "見える化タイマー",
+                "en": "Visible Timer"
+              },
+              {
+                "ja": "15件",
+                "en": "15"
+              },
+              {
+                "ja": "カウントダウン",
+                "en": "Countdown"
+              },
+              {
+                "ja": "最近使った時間をワンタップで再設定",
+                "en": "One-tap reuse of recent times"
+              },
+              {
+                "ja": "四角、横バー、縦バーと色",
+                "en": "Square, horizontal bar, vertical bar, and colors"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              }
+            ],
+            [
+              {
+                "ja": "PIPタイマー",
+                "en": "PiP Timer"
+              },
+              {
+                "ja": "1件",
+                "en": "1"
+              },
+              {
+                "ja": "カウントダウンとインターバル",
+                "en": "Countdown and intervals"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "1本ずつ見ていく",
+        "en": "Each app, one by one"
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "id": "6443471257"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "時間、分、秒でタイマーを作って始め、ピクチャインピクチャのボタンを押すと、残り時間が小窓になって、ほかのアプリの上に出たままになります。ロック画面にもライブアクティビティで出て、終わったら通知で知らせます。",
+            "en": "Set a timer in hours, minutes, and seconds, start it, tap the Picture in Picture button, and the time left becomes a small window that stays on top of your other apps. It also shows on the Lock Screen as a Live Activity, and a notification tells you when time's up."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "タイマーに仕事、運動、学習のようなカテゴリを付けられて、終わった時間を日、週、月、半年、年でまとめて見られます。カテゴリは自分で足せます。小窓の文字は大、中、小から選べます。",
+            "en": "You can tag a timer with a category like work, exercise, or study, and see the finished time totaled by day, week, month, six months, or year. You can add your own categories. The window's text comes in large, medium, or small."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "全部の機能を無料で使えて、広告を消すのが月額のサポーターです。カウントダウンだけで、ストップウォッチはありません。",
+            "en": "Every feature is free, and the monthly Supporter plan removes the ads. It only counts down, with no stopwatch."
+          }
+        },
+        {
+          "type": "app",
+          "id": "1632166596"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "評価が154件あって、この中ではいちばん使われています。カウントダウンのほかに、ストップウォッチ、カウントアップ、ミリ秒まで出る時計を、ほかのアプリの上に出せます。",
+            "en": "With 154 ratings, it's the most used of the four. Besides a countdown, it can float a stopwatch, a count-up timer, or a clock accurate to milliseconds over your other apps."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "ロック画面とダイナミックアイランドにもタイマーを出せます。イベントまでのカウントダウンにも使えると説明文にあります。",
+            "en": "It can also show the timer on the Lock Screen and Dynamic Island. The description says you can use it to count down to an event, too."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6756334890"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "ピクチャインピクチャで残り時間を出すことに絞ったタイマーです。四角、横バー、縦バーから見た目を選べて、色も変えられます。",
+            "en": "It's a timer built just for showing time left in Picture in Picture. You can pick a square, horizontal bar, or vertical bar style and change the color."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "最近使った時間をワンタップで設定し直せて、終わったときの音はオンとオフを切り替えられます。小窓を閉じるとタイマーも止まります。",
+            "en": "You can reset to a recently used time with one tap, and turn the end-of-timer sound on or off. Closing the window also stops the timer."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6708240984"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "トレーニングやマッサージのような、毎日のルーティン向けのタイマーです。インターバルを決めておけるので、何セットも繰り返すときにアプリを開き直さずに済みます。",
+            "en": "It's a timer for daily routines like workouts or massages. You can set intervals, so you don't have to reopen the app between sets."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "動画を見ながらでも時間を計れて、iPadにも対応しています。",
+            "en": "You can time things while watching a video, and it also works on iPad."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "アプリを入れたくないなら",
+        "en": "If you'd rather not install an app"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "iPhoneの時計アプリでタイマーを始めると、ロック画面とダイナミックアイランドに残り時間が出ます。ダイナミックアイランドのある機種なら、ほかのアプリを使いながらでも目に入ります。",
+            "en": "Start a timer in the iPhone Clock app and the time left shows on the Lock Screen and Dynamic Island. On models with a Dynamic Island, you can see it while using other apps."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "ただ、表示は小さめで、数字を大きく出しておくことはできません。画面の好きな場所に大きく浮かせたいなら、こうしたアプリが要ります。",
+            "en": "The catch is that it's small, and you can't make the numbers bigger. If you want it floating large wherever you like on screen, you'll need one of these apps."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "どれを選ぶか",
+        "en": "Which one to pick"
+      },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "ja": "ストップウォッチや時計も浮かせたいなら、フローティングウィンドウタイマー",
+              "en": "If you also want a floating stopwatch or clock, Floating Window Timer"
+            },
+            {
+              "ja": "バーの形や色など、見た目を選びたいなら、見える化タイマー",
+              "en": "If you want to choose the shape and color, Visible Timer"
+            },
+            {
+              "ja": "トレーニングのインターバルを回したいなら、PIPタイマー",
+              "en": "If you want to run workout intervals, PiP Timer"
+            },
+            {
+              "ja": "仕事や勉強の時間をカテゴリ別に残したいなら、いつでもタイマー",
+              "en": "If you want to log work or study time by category, AlwaysOnTimer"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "ja": "小窓を大きくできますか？",
+        "en": "Can I make the window bigger?"
+      },
+      "a": {
+        "ja": "ピクチャインピクチャの小窓は、2本の指で広げると大きくなります。いつでもタイマーは、アプリの中で文字の大きさを変えると、小窓の大きさも変わります。",
+        "en": "You can pinch outward with two fingers to enlarge any Picture in Picture window. In AlwaysOnTimer, changing the text size in the app also changes the window size."
+      }
+    },
+    {
+      "q": {
+        "ja": "無料で使えますか？",
+        "en": "Are they free?"
+      },
+      "a": {
+        "ja": "4本とも無料で入れられます。いつでもタイマーは全部の機能が無料で、月額のサポーターで広告が消えます。",
+        "en": "All four are free to download. Every feature in AlwaysOnTimer is free, and the monthly Supporter plan removes ads."
+      }
+    },
+    {
+      "q": {
+        "ja": "動画を見ている間も使えますか？",
+        "en": "Can I use it while watching a video?"
+      },
+      "a": {
+        "ja": "使えます。ただ、ピクチャインピクチャの小窓は同時に1つしか出せないので、動画も小窓で見ているときは、どちらか一方になります。",
+        "en": "Yes. Picture in Picture only shows one window at a time, though, so if you're also watching a video in a small window, you'll have to pick one."
+      }
+    }
+  ],
+  "closing": {
+    "ja": "いつでもタイマーの評価は15件まで来たので、次は20件を目指してます⏱",
+    "en": "AlwaysOnTimer is up to 15 ratings, and I'm hoping to reach 20 next ⏱"
+  },
+  "notes": {
+    "ja": "各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。いつでもタイマーの機能はアプリのコードで確かめました。",
+    "en": "Features and rating counts were checked against each app's App Store description on November 15, 2026, and may change with updates. AlwaysOnTimer's features were checked against the app's own code."
+  },
+  "illustration": {
+    "scene": "キッチンでキャラがエプロン姿で鍋をかき混ぜながら、もう片方の手でスマホ（文字なし）のレシピを見ている。スマホの画面の隅に、丸い時計の針だけが描かれた小さな窓が浮かんでいて、鍋の湯気がその窓のほうへゆらいでいる。",
+    "alt": {
+      "ja": "料理をしながら、スマホの隅に浮かぶタイマーの小窓を確かめるキャラクター",
+      "en": "The character stirring a pot while checking a small floating timer window in the corner of their phone"
+    }
+  }
+}

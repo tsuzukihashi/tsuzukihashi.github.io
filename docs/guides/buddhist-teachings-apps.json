@@ -1,0 +1,455 @@
+{
+  "slug": "buddhist-teachings-apps",
+  "date_published": "2026-11-15",
+  "date_updated": "2026-11-15",
+  "search_phrase": {
+    "ja": "仏教 教え アプリ",
+    "en": "Buddhist teachings app"
+  },
+  "evidence": "2026-11-15 に Google の検索候補で「仏教 アプリ」を引くと、9件中「無料」「辞典」「用語 辞典」「ai」「教え」「ゲーム」などが付いた形が出た。「坐禅 アプリ」でも「無料」「おすすめ」付きが出た。同じ日に App Store で「仏教」を引くと、評価1,000件を超えるのは般若心経365（2,689件）と、御朱印の記録アプリのホトカミの2本で、教えを読むアプリは評価の少ないものが多かった。",
+  "title": {
+    "ja": "仏教の教えに毎日ふれるアプリ4選",
+    "en": "4 Apps for a Daily Dose of Buddhist Teaching"
+  },
+  "description": {
+    "ja": "仏教の教えに毎日少しずつふれるアプリを4本比べました。何を読めるか、相談の機能、坐禅や読経、無料の範囲の違いをまとめています。ZennChatの作者が書いています。",
+    "en": "I compared four apps for spending a little time with Buddhist teachings each day: what you can read, whether you can ask questions, meditation and chanting, and what is free. Written by the maker of ZennChat."
+  },
+  "excerpt": {
+    "ja": "何を読めるか、相談の機能、坐禅や読経、無料の範囲で4本を比べました。ZennChatを作った僕が、自分のアプリも入れて書いています。",
+    "en": "Four apps compared on reading, asking questions, meditation, and what's free. I made ZennChat, and it's one of the four."
+  },
+  "category": {
+    "ja": "アプリの選び方",
+    "en": "App guides"
+  },
+  "reading_minutes": 5,
+  "author": {
+    "name": {
+      "ja": "續橋 涼",
+      "en": "Ryo Tsuzukihashi"
+    },
+    "handle": "tsuzuki817",
+    "bio": {
+      "ja": "2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。ZennChatの作者です。",
+      "en": "I've been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made ZennChat."
+    },
+    "url": "https://tsuzukit.com/about/",
+    "same_as": [
+      "https://x.com/tsuzuki817"
+    ]
+  },
+  "tldr": {
+    "ja": "いちばん使われているのは評価2,689件の般若心経365で、般若心経を唱えて覚えるアプリです。毎日の一節を読んで、坐禅タイマーや日記まで1本でたどりたい人は、僕が作ったZennChatも見てみてください。",
+    "en": "The most used is HeartSutra 365, with 2,689 ratings, an app for learning the Heart Sutra by chanting it. If you'd like to read a daily passage and then move through a meditation timer and a journal all in one app, take a look at ZennChat, which I made."
+  },
+  "disclosure": {
+    "ja": "この記事は、ZennChatを作った僕が書いています。ほかの3本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。",
+    "en": "I made ZennChat, and I wrote this article. The other three apps are by developers I don't know, and I haven't received money or anything else from them. Everything compared here comes from each app's App Store description and rating count as of November 15, 2026."
+  },
+  "own_app": "6754220363",
+  "app_category": "LifestyleApplication",
+  "apps": [
+    {
+      "id": "6754220363",
+      "name": {
+        "ja": "ZennChat: 禅の日々",
+        "en": "ZennChat: Daily Practice"
+      },
+      "short": {
+        "ja": "ZennChat",
+        "en": "ZennChat"
+      },
+      "developer": "Ryo Tsudukihashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/85/af/47/85af47a1-6807-6b9e-7ca8-139c8a9f95da/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6754220363",
+      "android_url": "https://play.google.com/store/apps/details?id=com.tsuzuki817.zennchat",
+      "rating_count": 0
+    },
+    {
+      "id": "1273920832",
+      "name": {
+        "ja": "般若心経365〜お経入門",
+        "en": "HeartSutra 365: Buddhism chant"
+      },
+      "short": {
+        "ja": "般若心経365",
+        "en": "HeartSutra 365"
+      },
+      "developer": "ZEN APP",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/8d/03/11/8d0311c5-ba7c-20d9-ff02-2084373db7a3/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id1273920832",
+      "android_url": null,
+      "rating_count": 2689
+    },
+    {
+      "id": "6447466250",
+      "name": {
+        "ja": "AI Hotoke: AI 仏陀, ブッダ",
+        "en": "AI Buddha: AI Hotoke"
+      },
+      "short": {
+        "ja": "AI Hotoke",
+        "en": "AI Hotoke"
+      },
+      "developer": "BINIX LTD",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/2e/cb/cc/2ecbcc2b-15e2-cdbe-ed9a-80cd4df08e19/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6447466250",
+      "android_url": null,
+      "rating_count": 261
+    },
+    {
+      "id": "6759330136",
+      "name": {
+        "ja": "ぶっかつ - 仏教で心を整える仏活アプリ",
+        "en": "Zen Chat: Buddhist Meditation"
+      },
+      "short": {
+        "ja": "ぶっかつ",
+        "en": "Bukkatsu"
+      },
+      "developer": "Hirade Keishi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5b/87/de/5b87dee4-0164-1385-ea22-20ab81c2aaff/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6759330136",
+      "android_url": null,
+      "rating_count": 7
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ja": "4本をざっくり比べる",
+        "en": "The four apps at a glance"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "お経を唱えるもの、AIに相談するもの、毎日の言葉と実践をたどるものと、ふれ方がそれぞれ違います。",
+            "en": "Each one takes a different approach: chanting a sutra, asking an AI, or following a daily passage and practice."
+          }
+        },
+        {
+          "type": "table",
+          "head": [
+            {
+              "ja": "アプリ",
+              "en": "App"
+            },
+            {
+              "ja": "評価の件数",
+              "en": "Ratings"
+            },
+            {
+              "ja": "毎日読めるもの",
+              "en": "Daily reading"
+            },
+            {
+              "ja": "相談の機能",
+              "en": "Asking questions"
+            },
+            {
+              "ja": "坐禅や読経",
+              "en": "Meditation and chanting"
+            },
+            {
+              "ja": "無料の範囲",
+              "en": "What's free"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ja": "ZennChat（僕のアプリ）",
+                "en": "ZennChat (my app)"
+              },
+              {
+                "ja": "0件",
+                "en": "0"
+              },
+              {
+                "ja": "仏教聖典の一節と解説、今日の実践",
+                "en": "A passage from The Teaching of Buddha, with notes and a practice"
+              },
+              {
+                "ja": "AIに相談。無料は通算3回",
+                "en": "Ask an AI. 3 times in total for free"
+              },
+              {
+                "ja": "坐禅タイマー5分から30分",
+                "en": "Meditation timer, 5 to 30 minutes"
+              },
+              {
+                "ja": "相談の回数、一部の修行プラン、配色のテーマ以外",
+                "en": "Everything except extra AI questions, some programs, and color themes"
+              }
+            ],
+            [
+              {
+                "ja": "般若心経365",
+                "en": "HeartSutra 365"
+              },
+              {
+                "ja": "2,689件",
+                "en": "2,689"
+              },
+              {
+                "ja": "般若心経",
+                "en": "The Heart Sutra"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "音に合わせて般若心経を唱える",
+                "en": "Chant the Heart Sutra along with sounds"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              }
+            ],
+            [
+              {
+                "ja": "AI Hotoke",
+                "en": "AI Hotoke"
+              },
+              {
+                "ja": "261件",
+                "en": "261"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "AIに相談。サブスクリプションで回数制限なし",
+                "en": "Ask an AI. Unlimited with a subscription"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              }
+            ],
+            [
+              {
+                "ja": "ぶっかつ",
+                "en": "Bukkatsu"
+              },
+              {
+                "ja": "7件",
+                "en": "7"
+              },
+              {
+                "ja": "今日の言葉",
+                "en": "Words for today"
+              },
+              {
+                "ja": "相談のチャット。4日目から無料は1日2回",
+                "en": "Chat. From day 4, twice a day for free"
+              },
+              {
+                "ja": "3分の呼吸と瞑想、お経を読む",
+                "en": "3-minute breathing and meditation, sutra reading"
+              },
+              {
+                "ja": "今日の言葉、瞑想、読経、当日の記録",
+                "en": "Daily words, meditation, chanting, today's log"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "1本ずつ見ていく",
+        "en": "Each app, one by one"
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "id": "6754220363"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "仏教伝道協会の仏教聖典をもとに、毎日1つの一節と、その日にできる小さな実践を届けます。ホームの今日の道のりで、読む、行う、坐る、書く、学ぶを順にたどれます。",
+            "en": "Based on The Teaching of Buddha from the Society for the Promotion of Buddhism, it brings you one passage a day plus a small practice for that day. The home screen's path for today takes you through reading, doing, sitting, writing, and learning in order."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "坐禅タイマーは5分から30分で、音声の案内は付けても付けなくても選べます。教え365件と、禅語や作法などの用語370件を引けて、別れがつらいときのように、心の状態から言葉を探すこともできます。",
+            "en": "The meditation timer runs from 5 to 30 minutes, with optional voice guidance. You can look up 365 teachings and 370 terms like Zen phrases and etiquette, and also find words by how you feel, such as when a parting is hard."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "仏教の教えに根ざしたAIに悩みを相談できて、無料では通算3回までです。プレミアムにすると相談が無制限になり、修行プランが9本と配色のテーマが増えます。日本語と英語に対応していて、Android版もあります。",
+            "en": "You can talk through what is on your mind with an AI grounded in Buddhist teaching, up to three times in total for free. Premium makes it unlimited and adds nine practice programs and color themes. It works in Japanese and English, and there is an Android version."
+          }
+        },
+        {
+          "type": "app",
+          "id": "1273920832"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "評価が2,689件あって、この中ではいちばん使われています。仏教を誰にでもわかりやすく、をテーマにしたアプリで、ゴーン、ポクポクという音に合わせて般若心経を自分で唱えて覚えます。",
+            "en": "With 2,689 ratings, this is the most used of the four. Its theme is making Buddhism easy for anyone, and you learn the Heart Sutra by chanting it yourself along with the bell and wooden drum sounds."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "大きな文字で読めて、作法はなるべく宗派によらない形にしてあります。伝統仏教の僧侶が監修していて、集められる般若カードもあります。",
+            "en": "The text is large and easy to read, and the etiquette is kept as non-sectarian as possible. It is supervised by a priest of traditional Buddhism, and there are Heart Sutra cards to collect."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6447466250"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "仏教の教えや東洋の智慧を取り入れたAIに、いまの悩みを入力して問いかけるアプリです。",
+            "en": "This app lets you type in what is troubling you and put the question to an AI that draws on Buddhist teaching and Eastern wisdom."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "年額と週額のサブスクリプションがあって、期間中は相談を回数の制限なく使えます。無料でどこまで使えるかは、説明文に書かれていませんでした。",
+            "en": "There are yearly and weekly subscriptions, and while subscribed you can ask as much as you like. The description doesn't say how much you can do for free."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6759330136"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "仏教をもとにした心の実践アプリで、3分から始められます。今日の言葉、呼吸と瞑想、お経を読む機能が無料です。",
+            "en": "A Buddhist practice app you can start in three minutes. Words for today, breathing and meditation, and sutra reading are free."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "相談のチャットは、最初の3日間は回数の制限がなく、4日目からは無料だと1日2回までです。サブスクリプションで回数の制限と広告がなくなります。",
+            "en": "For the first three days, the chat has no limit, and from day four the free plan allows two a day. A subscription removes the limit and the ads."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "アプリを入れたくないなら",
+        "en": "If you'd rather not install an app"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "仏教聖典は本でも読めます。ZennChatの一節も、この本の文章を許可をもらって使っています。",
+            "en": "The Teaching of Buddha is also available as a book. ZennChat's daily passages come from it, used with permission."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "坐禅の作法を直接教わりたいなら、お寺の坐禅会に行くのがいちばん確かです。アプリは、家で毎日少しずつ続けるためのものですね。",
+            "en": "If you want to learn meditation etiquette in person, going to a sitting at a temple is the surest way. Apps are for keeping it up a little each day at home."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "どれを選ぶか",
+        "en": "Which one to pick"
+      },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "ja": "般若心経を唱えられるようになりたいなら、般若心経365",
+              "en": "If you want to learn to chant the Heart Sutra, HeartSutra 365"
+            },
+            {
+              "ja": "AIとの対話を中心に、何度も相談したいなら、AI Hotoke",
+              "en": "If talking with an AI is the main thing and you want to ask often, AI Hotoke"
+            },
+            {
+              "ja": "3分の瞑想と今日の言葉を無料で続けたいなら、ぶっかつ",
+              "en": "If you want three-minute meditation and daily words for free, Bukkatsu"
+            },
+            {
+              "ja": "毎日の一節から坐禅と日記までを1本でたどりたい人や、Androidでも使いたい人は、ZennChat",
+              "en": "If you want a daily passage, meditation, and a journal in one app, or need Android, ZennChat"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "ja": "宗派は関係ありますか？",
+        "en": "Does it matter which school of Buddhism I follow?"
+      },
+      "a": {
+        "ja": "般若心経365は、作法をなるべく宗派によらない形にしていると説明文にあります。ZennChatの一節は、仏教伝道協会の仏教聖典からとっています。",
+        "en": "HeartSutra 365 says its etiquette is kept as non-sectarian as possible. ZennChat's passages come from The Teaching of Buddha by the Society for the Promotion of Buddhism."
+      }
+    },
+    {
+      "q": {
+        "ja": "AIの相談に、つらい気持ちを話してもいいですか？",
+        "en": "Is it okay to tell the AI about painful feelings?"
+      },
+      "a": {
+        "ja": "AIの相談は、教えをもとにした話し相手です。つらい気持ちが続くときは、身近な人や専門の相談窓口に話してください。",
+        "en": "The AI is a conversation partner grounded in the teachings. If painful feelings keep going, please talk to someone close to you or a counseling service."
+      }
+    },
+    {
+      "q": {
+        "ja": "英語でも使えますか？",
+        "en": "Can I use them in English?"
+      },
+      "a": {
+        "ja": "ZennChatは日本語と英語に対応しています。ほかの3本は、この記事では英語対応を確かめていません。",
+        "en": "ZennChat supports Japanese and English. I didn't check English support for the other three for this article."
+      }
+    }
+  ],
+  "closing": {
+    "ja": "ZennChatはまだ評価が0件なので、今日の一節の感想を1件目に書いてもらえたらうれしいです🙏",
+    "en": "ZennChat doesn't have any ratings yet, so I'd be happy if your thoughts on today's passage were the first one 🙏"
+  },
+  "notes": {
+    "ja": "それぞれのアプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。悩みが深いときやつらい気持ちが続くときは、アプリだけに頼らず、身近な人や専門の相談窓口に相談してください。",
+    "en": "Features and rating counts were checked against each app's App Store description on November 15, 2026, and may change with updates. When things feel heavy or painful feelings keep going, don't rely on an app alone. Talk to someone close to you or a counseling service."
+  },
+  "illustration": {
+    "scene": "朝の縁側。キャラが座布団の上で目を閉じて坐り、横に置いたスマホから、湯気のようにやわらかな光の帯が立ちのぼっている。庭には小さな石と苔があり、遠くに山並みが見える。キャラの目は参照画像と同じ白い縦長の楕円2つのままにする（笑った弧の目や閉じた目にしない）。",
+    "alt": {
+      "ja": "朝の縁側で目を閉じて坐り、横のスマホからやわらかな光が立ちのぼるキャラクター",
+      "en": "The character sitting with eyes closed on a veranda in the morning, soft light rising from a phone beside it"
+    }
+  }
+}

@@ -1,0 +1,435 @@
+{
+  "slug": "save-hashtags-add-all-at-once",
+  "date_published": "2026-11-15",
+  "date_updated": "2026-11-15",
+  "search_phrase": {
+    "ja": "インスタ ハッシュタグ まとめてつける",
+    "en": "add a saved set of hashtags on Instagram at once"
+  },
+  "evidence": "2026-11-15 に Google の検索候補で「ハッシュタグ 保存」を引くと15件出て、インスタ、X、TikTok、noteと投稿先を足した形と「保存方法」「保存できない」が並んだ。「ハッシュタグ まとめて」では「まとめてコピー」「インスタ ハッシュタグ まとめてつける」が出た。同じ日に App Store で「ハッシュタグ」を検索すると、ハッシュタグを登録してコピーするアプリが多く、キーボードから直接入れるアプリは「ハッシュタグ キーボード」で引いたときにらくタグと定型文キーボードが出るくらいだった。",
+  "title": {
+    "ja": "よく使うハッシュタグを保存して、まとめてつけるアプリ4選",
+    "en": "4 Apps for Saving Your Go-To Hashtags and Adding Them All at Once"
+  },
+  "description": {
+    "ja": "インスタやXで毎回同じハッシュタグを打つ手間を減らすアプリを4本比べました。コピーして貼るか、キーボードから入れるかの違いをまとめています。らくタグの作者が書いています。",
+    "en": "I compared four apps that save you from typing the same hashtags on Instagram or X every time. The big split is copy and paste versus inserting from a keyboard. Written by the maker of RakuTag."
+  },
+  "excerpt": {
+    "ja": "毎回同じハッシュタグを打っている人へ。コピーして貼るか、キーボードから入れるかで4本を比べました。らくタグを作った僕が書いています。",
+    "en": "For anyone typing the same hashtags every post. Four apps compared on copy and paste versus inserting from a keyboard. I made RakuTag, one of the four."
+  },
+  "category": {
+    "ja": "アプリの選び方",
+    "en": "App guides"
+  },
+  "reading_minutes": 4,
+  "author": {
+    "name": {
+      "ja": "續橋 涼",
+      "en": "Ryo Tsuzukihashi"
+    },
+    "handle": "tsuzuki817",
+    "bio": {
+      "ja": "2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。らくタグの作者です。",
+      "en": "I've been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made RakuTag."
+    },
+    "url": "https://tsuzukit.com/about/",
+    "same_as": [
+      "https://x.com/tsuzuki817"
+    ]
+  },
+  "tldr": {
+    "ja": "よく使うハッシュタグは、アプリに組ごとに保存しておけば、次から1回で入れられます。いちばん使われているのは評価2,092件のハッシュタグ手帳で、新しいタグ探しもできます。アプリを行き来せずに入力中の画面で入れたいなら、キーボードで入れるアプリです。僕が作ったらくタグは、ハッシュタグ専用のキーボードです。",
+    "en": "Save your usual hashtags in groups in an app, and from then on you can add them in one go. The most used is HashtagBook, with 2,092 ratings, which also helps you find new tags. If you'd rather not switch apps while writing a post, use one that inserts them from a keyboard. RakuTag, which I made, is a keyboard just for hashtags."
+  },
+  "disclosure": {
+    "ja": "この記事は、らくタグを作った僕が書いています。ほかの3本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。",
+    "en": "I made RakuTag, and I wrote this article. The other three apps are by developers I don't know, and I haven't received money or anything else from them. Everything compared here comes from each app's App Store description and rating count as of November 15, 2026."
+  },
+  "own_app": "1670158327",
+  "app_category": "UtilitiesApplication",
+  "apps": [
+    {
+      "id": "1670158327",
+      "name": {
+        "ja": "らくタグ",
+        "en": "RakuTag - Quick Hashtags"
+      },
+      "short": {
+        "ja": "らくタグ",
+        "en": "RakuTag"
+      },
+      "developer": "Ryo Tsudukihashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e8/97/f8/e897f8f6-0545-6ffe-64ab-265df101da4c/AppIcon-0-0-1x_U007epad-0-1-P3-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id1670158327",
+      "android_url": null,
+      "rating_count": 4
+    },
+    {
+      "id": "994044459",
+      "name": {
+        "ja": "ハッシュタグ手帳 SNSタグ付けに便利なテキスト管理メモ帳",
+        "en": "HashtagBook: Copy & Paste Tags"
+      },
+      "short": {
+        "ja": "ハッシュタグ手帳",
+        "en": "HashtagBook"
+      },
+      "developer": "Codepaint Inc.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b7/7e/5b/b77e5b35-8c20-9728-21fe-03d4377d5e64/AppIcon-0-0-1x_U007epad-0-1-0-0-sRGB-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id994044459",
+      "android_url": null,
+      "rating_count": 2092
+    },
+    {
+      "id": "6756287687",
+      "name": {
+        "ja": "コピペキーボード - クリップボード履歴＆定型文入力",
+        "en": "Clipboard Keyboard -Copy Paste"
+      },
+      "short": {
+        "ja": "コピペキーボード",
+        "en": "Clipboard Keyboard"
+      },
+      "developer": "ASAYA, LLC",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c3/bf/40/c3bf40f5-29a3-ca51-fd3b-b5ba06970eec/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6756287687",
+      "android_url": null,
+      "rating_count": 30
+    },
+    {
+      "id": "1671393007",
+      "name": {
+        "ja": "タグメモ - ハッシュタグをグループごとにまとめて管理",
+        "en": "Simple Hashtag Manager"
+      },
+      "short": {
+        "ja": "タグメモ",
+        "en": "Simple Hashtag Manager"
+      },
+      "developer": "NAOYA ONO",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/b2/0c/8f/b20c8f07-cb53-6715-f8dd-0f028dcf510b/AppIcon-0-0-1x_U007emarketing-0-7-0-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id1671393007",
+      "android_url": null,
+      "rating_count": 0
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ja": "4本をざっくり比べる",
+        "en": "The four apps at a glance"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "入れ方は2通りです。アプリでコピーしてSNSに戻って貼るか、SNSの入力中にキーボードを切り替えて入れるかです。",
+            "en": "There are two ways to add them. Either you copy them in the app and paste them back in your social app, or you switch keyboards while you're writing the post and insert them there."
+          }
+        },
+        {
+          "type": "table",
+          "head": [
+            {
+              "ja": "アプリ",
+              "en": "App"
+            },
+            {
+              "ja": "評価の件数",
+              "en": "Ratings"
+            },
+            {
+              "ja": "入れ方",
+              "en": "How you add them"
+            },
+            {
+              "ja": "組に分けて保存",
+              "en": "Save in groups"
+            },
+            {
+              "ja": "有料のところ",
+              "en": "What costs money"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ja": "らくタグ（僕のアプリ）",
+                "en": "RakuTag (my app)"
+              },
+              {
+                "ja": "4件",
+                "en": "4"
+              },
+              {
+                "ja": "キーボードから1タップ",
+                "en": "One tap from a keyboard"
+              },
+              {
+                "ja": "あり。無料は10組まで",
+                "en": "Yes. Up to 10 groups free"
+              },
+              {
+                "ja": "買い切りのプレミアム",
+                "en": "One-time Premium purchase"
+              }
+            ],
+            [
+              {
+                "ja": "ハッシュタグ手帳",
+                "en": "HashtagBook"
+              },
+              {
+                "ja": "2,092件",
+                "en": "2,092"
+              },
+              {
+                "ja": "コピーして貼る",
+                "en": "Copy and paste"
+              },
+              {
+                "ja": "マイハッシュタグに登録",
+                "en": "Save to My Hashtags"
+              },
+              {
+                "ja": "並べ替え、AIの提案、広告を消す",
+                "en": "Reordering, AI suggestions, removing ads"
+              }
+            ],
+            [
+              {
+                "ja": "コピペキーボード",
+                "en": "Clipboard Keyboard"
+              },
+              {
+                "ja": "30件",
+                "en": "30"
+              },
+              {
+                "ja": "キーボードから1タップ",
+                "en": "One tap from a keyboard"
+              },
+              {
+                "ja": "フォルダに分けて保存",
+                "en": "Saved in folders"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              }
+            ],
+            [
+              {
+                "ja": "タグメモ",
+                "en": "Simple Hashtag Manager"
+              },
+              {
+                "ja": "0件",
+                "en": "0"
+              },
+              {
+                "ja": "コピーして貼る",
+                "en": "Copy and paste"
+              },
+              {
+                "ja": "グループごとに保存",
+                "en": "Saved in groups"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "1本ずつ見ていく",
+        "en": "Each app, one by one"
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "id": "1670158327"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "ハッシュタグを組ごとに保存しておいて、SNSの入力中にらくタグのキーボードへ切り替えます。組をタップすると、中のハッシュタグが全部いっぺんに入ります。",
+            "en": "You save hashtags in groups, then switch to the RakuTag keyboard while writing a post. Tap a group and every hashtag in it goes in at once."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "キーボードには組の名前とタグの数が並ぶので、どの組を入れるか見て選べます。#は自動でつくので、保存するときはタグの言葉だけを書けば大丈夫です。",
+            "en": "The keyboard lists each group's name and how many tags it holds, so you can see which one you're adding. The # is added for you, so you only need to save the words."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "無料で保存できるのは10組までです。買い切りのプレミアムにすると100組まで増えて、広告が消え、タグを1行ずつ改行して入れる機能と、改行キーで決めた回数ぶん改行する機能が使えます。",
+            "en": "You can save up to 10 groups for free. A one-time Premium purchase raises that to 100, removes ads, and unlocks inserting tags one per line and a return key that adds as many line breaks as you set."
+          }
+        },
+        {
+          "type": "app",
+          "id": "994044459"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "評価が2,092件あって、4本の中でいちばん使われています。いつも使うハッシュタグや文章を登録して、コピーしてほかのアプリに貼る作りです。",
+            "en": "With 2,092 ratings, it's the most used of the four. You save your usual hashtags and text, then copy them and paste into other apps."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "知らないハッシュタグを探す機能や、Instagramで改行を残す工夫も入っています。有料版では登録したタグの並べ替え、AIによる関連タグの提案、広告の除去が使えます。QRコードで別の端末に移すこともできます。",
+            "en": "It also helps you find hashtags you haven't used and keeps your line breaks on Instagram. The paid version lets you reorder saved tags, get AI-suggested related tags, and remove ads. You can also move your tags to another device with a QR code."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6756287687"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "ハッシュタグ専用ではなく、定型文とコピーの履歴をキーボードから入れるアプリです。フォルダに分けた定型文を、キーボードのタブで切り替えてタップで入れます。",
+            "en": "It's not just for hashtags. It's a keyboard for canned text and your copy history. You keep text in folders, switch folders with tabs on the keyboard, and tap to insert."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "説明文の使い道にも、インスタやXのハッシュタグが挙がっています。ハッシュタグと一緒に、よく使うあいさつ文なども入れたい人に合います。",
+            "en": "Hashtags for Instagram and X are one of the uses listed in its description. It suits people who also want quick access to other text they use a lot, like greetings."
+          }
+        },
+        {
+          "type": "app",
+          "id": "1671393007"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "ペット、旅行、写真のように、ハッシュタグをグループに分けて保存するアプリです。コピーのボタンを押すと、グループの中のハッシュタグが全部コピーされます。",
+            "en": "You save hashtags in groups like pets, travel, or photography. Press the copy button and every hashtag in that group is copied."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "使い方が3つの手順だけで、機能をしぼった作りです。評価はまだ付いていませんでした。",
+            "en": "There are only three steps to using it, and it keeps things minimal. It didn't have any ratings yet."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "アプリを入れたくないなら",
+        "en": "If you'd rather not install an app"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "iPhoneのユーザ辞書に登録する手もあります。設定の一般のキーボードにあるユーザ辞書で、ハッシュタグの並びを単語に、短い読みをよみに入れておけば、変換で出せます。",
+            "en": "You can also use text replacement. In Settings, under General then Keyboard, add your string of hashtags as the phrase and a short code as the shortcut, and it'll come up as you type."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "ただ、組が増えると読みを覚えておくのが大変になります。たくさんの組を使い分けるなら、一覧から選べるアプリのほうが楽ですね。",
+            "en": "Once you have lots of groups, though, remembering every shortcut gets hard. If you switch between many sets, an app where you pick from a list is easier."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "どれを選ぶか",
+        "en": "Which one to pick"
+      },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "ja": "新しいハッシュタグも探したい、AIの提案も使いたいなら、ハッシュタグ手帳",
+              "en": "If you also want to find new hashtags or get AI suggestions, HashtagBook"
+            },
+            {
+              "ja": "ハッシュタグのほかに定型文もキーボードから入れたいなら、コピペキーボード",
+              "en": "If you want canned text on your keyboard as well as hashtags, Clipboard Keyboard"
+            },
+            {
+              "ja": "グループごとにコピーするだけで十分なら、タグメモ",
+              "en": "If copying one group at a time is all you need, Simple Hashtag Manager"
+            },
+            {
+              "ja": "アプリを行き来せず、入力中のキーボードから組ごと入れたいなら、らくタグ",
+              "en": "If you want to add a whole group from the keyboard without leaving your post, RakuTag"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "ja": "キーボードのアプリは、入力した文字を読まれませんか？",
+        "en": "Can a keyboard app read what I type?"
+      },
+      "a": {
+        "ja": "iPhoneでは、キーボードにフルアクセスを許可するかどうかを自分で決められます。許可する前に、各アプリのプライバシーポリシーを読んでおくと安心です。",
+        "en": "On iPhone, you decide whether to allow Full Access for a keyboard. It's worth reading each app's privacy policy before you allow it."
+      }
+    },
+    {
+      "q": {
+        "ja": "インスタ以外でも使えますか？",
+        "en": "Do they work outside Instagram?"
+      },
+      "a": {
+        "ja": "4本とも、文字を入れられるアプリならどこでも使えます。X、TikTok、noteなどにも入れられます。",
+        "en": "All four work anywhere you can type, including X, TikTok, and note."
+      }
+    },
+    {
+      "q": {
+        "ja": "無料で使えますか？",
+        "en": "Are they free?"
+      },
+      "a": {
+        "ja": "4本とも無料で入れられます。らくタグは10組までなら無料で、それより多く保存したいときは買い切りのプレミアムです。",
+        "en": "All four are free to download. RakuTag is free for up to 10 groups, and saving more takes a one-time Premium purchase."
+      }
+    }
+  ],
+  "closing": {
+    "ja": "らくタグの評価はまだ4件なので、使ってみた感想をレビューで聞かせてもらえるとうれしいです🙏",
+    "en": "RakuTag only has four ratings so far, so I'd love to hear what you think in a review 🙏"
+  },
+  "notes": {
+    "ja": "各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。",
+    "en": "Features and rating counts were checked against each app's App Store description on November 15, 2026, and may change with updates."
+  },
+  "illustration": {
+    "scene": "キャラが写真を投稿しようとしてスマホを持ち、もう片方の手でカードの束（文字なし、色だけ）を1つつまんでいる。束から小さなタグの札がつながったまま画面へ流れ込んでいて、キャラは1回で済んで満足そうな顔をしている。キャラの目は参照画像と同じ白い縦長の楕円2つのままにする（笑った弧の目や閉じた目にしない）。",
+    "alt": {
+      "ja": "つまんだタグの札の束を、1回でスマホの画面へ流し込むキャラクター",
+      "en": "The character dropping a whole bundle of tag cards into a phone screen in one go"
+    }
+  }
+}

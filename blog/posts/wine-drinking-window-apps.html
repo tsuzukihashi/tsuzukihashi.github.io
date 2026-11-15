@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/js/lang.js"></script>
+    <!-- このページは scripts/build_guides.py が docs/guides/wine-drinking-window-apps.json から作る。直すのは JSON のほう -->
+    <title>ワインの飲み頃まで分かる管理アプリ3選 - Blog | Ryo Tsuzukihashi</title>
+    <meta name="description" content="家にあるワインを管理できるアプリを3本比べました。飲み頃の出し方、開けどきの通知、得意なこと、無料で使える範囲の違いをまとめています。WineReadyの作者が書いています。">
+    <meta name="title-en" content="3 Wine Cellar Apps That Tell You When to Open a Bottle - Blog | Ryo Tsuzukihashi">
+    <meta name="description-en" content="I compared three iPhone apps for keeping track of the wine you have at home: how they work out the drinking window, whether they remind you to open a bottle, what each does best, and what&#x27;s free. Written by the maker of WineReady.">
+    <link rel="canonical" href="https://tsuzukit.com/blog/posts/wine-drinking-window-apps.html">
+
+    <!-- OGP -->
+    <meta property="og:title" content="ワインの飲み頃まで分かる管理アプリ3選">
+    <meta property="og:description" content="家にあるワインを管理できるアプリを3本比べました。飲み頃の出し方、開けどきの通知、得意なこと、無料で使える範囲の違いをまとめています。WineReadyの作者が書いています。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://tsuzukit.com/blog/posts/wine-drinking-window-apps.html">
+    <meta property="og:image" content="https://tsuzukit.com/assets/images/posts/wine-drinking-window-apps.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://tsuzukit.com/assets/images/posts/wine-drinking-window-apps.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-dark-32x32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-dark-16x16.png" media="(prefers-color-scheme: dark)">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERPQ1EGLH');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8240751277462688"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
+    <link rel="stylesheet" href="/assets/css/guide.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "ワインの飲み頃まで分かる管理アプリ3選",
+      "description": "家にあるワインを管理できるアプリを3本比べました。飲み頃の出し方、開けどきの通知、得意なこと、無料で使える範囲の違いをまとめています。WineReadyの作者が書いています。",
+      "image": "https://tsuzukit.com/assets/images/posts/wine-drinking-window-apps.webp",
+      "datePublished": "2026-11-15",
+      "dateModified": "2026-11-15",
+      "inLanguage": "ja",
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "mainEntityOfPage": "https://tsuzukit.com/blog/posts/wine-drinking-window-apps.html",
+      "about": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "ワイン飲み頃管理 WineReady",
+          "url": "https://apps.apple.com/jp/app/id6780249664",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "Vivino: 自分に合うワインを楽しもう",
+          "url": "https://apps.apple.com/jp/app/id414461255",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "Oeni：No.1ワインセラー管理",
+          "url": "https://apps.apple.com/jp/app/id6445827140",
+          "operatingSystem": "iOS"
+        }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "ワイン飲み頃管理 WineReady",
+      "operatingSystem": "iOS",
+      "applicationCategory": "FoodApplication",
+      "url": "https://apps.apple.com/jp/app/id6780249664",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "無料で使えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "3本とも無料で入れられます。WineReadyは無料だと3本まで登録できて、それより多いのは有料です。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "収穫年が分からないワインはどうなりますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "WineReadyでは、収穫年を入れないと買った日から数えます。もらいものなら、もらった日を入れておけば目安になります。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "飲み頃を過ぎたワインは飲めませんか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "アプリが出すのは一般的な目安なので、過ぎたら飲めないという意味ではありません。気になるときは、買ったお店で聞いてみてください。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tsuzukit.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://tsuzukit.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "困りごとから選ぶアプリ",
+          "item": "https://tsuzukit.com/blog/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "ワインの飲み頃まで分かる管理アプリ3選",
+          "item": "https://tsuzukit.com/blog/posts/wine-drinking-window-apps.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">TsuzuKit</a>
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/portfolio/" class="nav-link">Portfolio</a>
+                <a href="/blog/" class="nav-link active">Blog</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post -->
+    <article class="blog-post">
+        <header class="post-header">
+            <div class="post-meta">
+                <span class="post-date">2026.11.15</span>
+                <span class="post-category"><span class="i18n-ja">アプリの選び方</span><span class="i18n-en">App guides</span></span>
+                <span class="post-reading-time"><span class="i18n-ja">4分で読める</span><span class="i18n-en">4 min read</span></span>
+            </div>
+            <h1 class="post-title"><span class="i18n-ja">ワインの飲み頃まで分かる管理アプリ3選</span><span class="i18n-en">3 Wine Cellar Apps That Tell You When to Open a Bottle</span></h1>
+        </header>
+        <figure class="post-illustration guide-illustration"><img src="/assets/images/posts/wine-drinking-window-apps.webp" width="1200" height="800" alt="夕方、ワインラックからリボンのついたボトルを取り出してうれしそうなキャラクター" data-en-alt="In the evening, the character happily pulls a ribboned bottle from a wine rack, with two glasses on the table" fetchpriority="high"></figure>
+
+        <div class="post-content guide i18n-ja">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">先に答え</p>
+                <p>ラベルを撮って評価や価格を見たいならVivinoがいちばん使われています。セラーの在庫や値段の動きまで見たいならOeni。数本のワインの開けどきだけを、通知で教えてほしいなら、僕が作ったWineReadyが合います。</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">書いた人 <a href="https://tsuzukit.com/about/">續橋 涼</a>（@tsuzuki817）</p>
+                    <p class="guide-byline-bio">2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。WineReadyの作者です。</p>
+                    <p class="guide-byline-date">公開 <time datetime="2026-11-15">2026.11.15</time> · 更新 <time datetime="2026-11-15">2026.11.15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">この記事は、WineReadyを作った僕が書いています。ほかの2本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。</p>
+            <h2>3本をざっくり比べる</h2>
+            <p>同じワインのアプリでも、得意なことがはっきり分かれます。飲み頃が分かるかどうかと、開けどきを知らせてくれるかどうかで並べました。</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">アプリ</th><th scope="col">評価の件数</th><th scope="col">得意なこと</th><th scope="col">飲み頃</th><th scope="col">開けどきの通知</th><th scope="col">無料の範囲</th></tr></thead><tbody><tr><th scope="row">WineReady（僕のアプリ）</th><td>0件</td><td>飲み頃の管理</td><td>品種と収穫年から計算</td><td>あり。過ぎそうなら開けるまで毎日</td><td>3本まで</td></tr><tr><th scope="row">Vivino</th><td>13,597件</td><td>ラベルを撮って評価や価格を見る</td><td>説明文に記載なし</td><td>説明文に記載なし</td><td>無料で使える。プレミアムあり</td></tr><tr><th scope="row">Oeni</th><td>20件</td><td>セラーの在庫と値段の動き</td><td>収穫年から開封時期を推奨</td><td>説明文に記載なし</td><td>説明文に記載なし</td></tr></tbody></table></div>
+            <h2>1本ずつ見ていく</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/36/dd/ff/36ddff16-438b-a1a5-9893-7cf69a8263bb/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">僕が作ったアプリ</span>
+                    <h3 class="guide-app-name">ワイン飲み頃管理 WineReady</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · App Storeの評価 0件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6780249664" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>品種と収穫年を入れると、飲み頃の始まりとピークと終わりを計算します。カベルネなら収穫年から5年目に飲み頃が始まって10年続く、プロセッコならすぐ飲み頃で1年、という目安を20品種ぶん入れてあります。年数は自分で直せます。</p>
+            <p>通知は夕方6時です。飲み頃に入る1週間前と前日、入った日、ピークの日に知らせます。終わりが来たら、開けたと記録するまで毎日鳴ります。</p>
+            <p>無料だとワインは3本まで登録できます。セラーごとに分けるのと、テイスティングの記録はプレミアムです。ラベルを読み取る機能や、ワインの評価を調べる機能はありません。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ff/d7/1b/ffd71b8f-8f0a-23f6-b8ee-7b2e6fafcc57/AppIcon-0-0-1x_U007ephone-0-1-0-sRGB-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Vivino: 自分に合うワインを楽しもう</h3>
+                    <p class="guide-app-meta">Vivino ApS · App Storeの評価 13,597件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id414461255" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>評価が13,597件あって、ワインのアプリではいちばん使われています。ラベルやレストランのワインリストを撮ると、評価、レビュー、価格、合う料理がすぐ出ます。</p>
+            <p>買ったワインをセラーに保存して、持っている本数を把握することもできます。飲み頃や開けどきの通知については、説明文には書かれていませんでした。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/3b/8a/07/3b8a07d9-8519-08af-5ed3-19bd3d573aff/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Oeni：No.1ワインセラー管理</h3>
+                    <p class="guide-app-meta">Oeni · App Storeの評価 20件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6445827140" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>本格的にセラーを持っている人向けのアプリです。40万本以上のカタログからボトルを追加でき、収穫年を入れると、開けるのにいい時期をすすめてくれます。</p>
+            <p>強いのは値段のほうで、毎月ボトルの市場価格を取ってきて、セラー全体の価値を出します。料理との組み合わせも提案してくれます。開けどきを通知するかどうかは、説明文には書かれていませんでした。</p>
+            <h2>飲み頃はあくまで目安</h2>
+            <p>飲み頃は、同じ品種でも造り手や保管の仕方で変わります。アプリが出すのは品種からの一般的な目安です。</p>
+            <p>大事な1本なら、買ったお店の人に開けどきを聞いて、その年数をアプリに入れておくのが確かです。</p>
+            <h2>どれを選ぶか</h2>
+            <ul class="guide-list"><li>店やレストランでワインを選ぶときに評価を見たいなら、Vivino</li><li>セラーの在庫と値段の動きまで追いたいなら、Oeni</li><li>家にある数本の開けどきを通知で知りたいなら、WineReady</li></ul>
+            <h2>よくある質問</h2>
+            <dl class="guide-faq">
+                <dt>無料で使えますか？</dt><dd>3本とも無料で入れられます。WineReadyは無料だと3本まで登録できて、それより多いのは有料です。</dd>
+                <dt>収穫年が分からないワインはどうなりますか？</dt><dd>WineReadyでは、収穫年を入れないと買った日から数えます。もらいものなら、もらった日を入れておけば目安になります。</dd>
+                <dt>飲み頃を過ぎたワインは飲めませんか？</dt><dd>アプリが出すのは一般的な目安なので、過ぎたら飲めないという意味ではありません。気になるときは、買ったお店で聞いてみてください。</dd>
+            </dl>
+            <p>WineReadyの評価はまだ0件なので、寝かせているワインを入れてみた人の声を待ってます🍷</p>
+            <div class="guide-notes">各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。お酒は20歳になってから。飲んだら運転はしないでください。</div>
+        </div>
+
+        <div class="post-content guide i18n-en">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">Short answer</p>
+                <p>If you want to snap a label and see ratings and prices, Vivino is by far the most used. If you want to track your cellar&#x27;s stock and how its value changes, Oeni fits. If you only want a few bottles to remind you when it&#x27;s time to open them, WineReady, which I made, is the one.</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">Written by <a href="https://tsuzukit.com/about/">Ryo Tsuzukihashi</a> (@tsuzuki817)</p>
+                    <p class="guide-byline-bio">I&#x27;ve been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made WineReady.</p>
+                    <p class="guide-byline-date">Published <time datetime="2026-11-15">2026-11-15</time> · Updated <time datetime="2026-11-15">2026-11-15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">I made WineReady, and I wrote this article. The other two apps are by developers I don&#x27;t know, and I haven&#x27;t received money or anything else from them. Everything compared here comes from each app&#x27;s App Store description and rating count as of November 15, 2026.</p>
+            <h2>The three apps at a glance</h2>
+            <p>They&#x27;re all wine apps, but each is good at something quite different. I lined them up by whether they show a drinking window and whether they remind you when to open a bottle.</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">App</th><th scope="col">Ratings</th><th scope="col">Best at</th><th scope="col">Drinking window</th><th scope="col">Reminders to open</th><th scope="col">Free version</th></tr></thead><tbody><tr><th scope="row">WineReady (my app)</th><td>0</td><td>Tracking drinking windows</td><td>Worked out from grape and vintage</td><td>Yes, and every day near the end until you open it</td><td>Up to 3 bottles</td></tr><tr><th scope="row">Vivino</th><td>13,597</td><td>Scanning labels for ratings and prices</td><td>Not mentioned</td><td>Not mentioned</td><td>Free to use, with a Premium tier</td></tr><tr><th scope="row">Oeni</th><td>20</td><td>Cellar stock and market value</td><td>Suggests when to open from the vintage</td><td>Not mentioned</td><td>Not mentioned</td></tr></tbody></table></div>
+            <h2>Each app, one by one</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/36/dd/ff/36ddff16-438b-a1a5-9893-7cf69a8263bb/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">I made this</span>
+                    <h3 class="guide-app-name">WineReady: Drink Window</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · 0 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6780249664" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>Enter the grape and the vintage, and it works out when the drinking window opens, peaks, and closes. It has guidelines for 20 grapes built in. Cabernet starts 5 years after the vintage and lasts 10 years, while Prosecco is ready right away and lasts about a year. You can change the numbers yourself.</p>
+            <p>Notifications arrive at 6 in the evening. It tells you a week before the window opens, the day before, the day it opens, and the day it peaks. Once the window ends, it reminds you every day until you log that you opened the bottle.</p>
+            <p>The free version holds up to 3 bottles. Grouping by cellar and tasting notes are Premium features. It doesn&#x27;t scan labels or look up ratings.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ff/d7/1b/ffd71b8f-8f0a-23f6-b8ee-7b2e6fafcc57/AppIcon-0-0-1x_U007ephone-0-1-0-sRGB-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Vivino: Drink The Right Wine</h3>
+                    <p class="guide-app-meta">Vivino ApS · 13,597 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id414461255" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>With 13,597 ratings, it&#x27;s the most widely used wine app here. Take a photo of a label or a restaurant wine list, and it shows ratings, reviews, prices, and food pairings right away.</p>
+            <p>You can also save bottles you bought to your cellar to keep track of what you have. The description doesn&#x27;t mention drinking windows or reminders to open a bottle.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/3b/8a/07/3b8a07d9-8519-08af-5ed3-19bd3d573aff/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Oeni: #1 Wine Cellar Manager</h3>
+                    <p class="guide-app-meta">Oeni · 20 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6445827140" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>This one is for people with a serious cellar. You can add bottles from a catalog of over 400,000 wines, and when you enter the vintage, it suggests the best time to open it.</p>
+            <p>Its real strength is value. It pulls each bottle&#x27;s market price every month and shows what your whole cellar is worth. It also suggests food pairings. The description doesn&#x27;t say whether it reminds you when to open a bottle.</p>
+            <h2>A drinking window is only a guideline</h2>
+            <p>The drinking window changes with the producer and how the bottle is stored, even for the same grape. What these apps show is a general guideline based on the grape.</p>
+            <p>For a special bottle, ask the shop where you bought it when to open it, and put those years into the app.</p>
+            <h2>Which one to pick</h2>
+            <ul class="guide-list"><li>If you want to check ratings when choosing wine at a shop or restaurant, Vivino</li><li>If you want to follow your cellar&#x27;s stock and market value, Oeni</li><li>If you want reminders for when to open the few bottles you have at home, WineReady</li></ul>
+            <h2>FAQ</h2>
+            <dl class="guide-faq">
+                <dt>Are they free?</dt><dd>All three are free to download. WineReady&#x27;s free version holds up to 3 bottles, and more than that is paid.</dd>
+                <dt>What if I don&#x27;t know the vintage?</dt><dd>In WineReady, if you leave the vintage out, it counts from the day you got the bottle. For a gift, enter the day you received it as a rough guide.</dd>
+                <dt>Can I still drink wine past its window?</dt><dd>The apps only show a general guideline, so passing it doesn&#x27;t mean the wine can&#x27;t be drunk. If you&#x27;re unsure, ask the shop where you bought it.</dd>
+            </dl>
+            <p>WineReady has no ratings yet, so I&#x27;d love to hear from anyone who adds the bottles they&#x27;ve been saving 🍷</p>
+            <div class="guide-notes">Features and rating counts were checked against each app&#x27;s App Store description on November 15, 2026, and may change with updates. In Japan, you must be 20 or older to drink alcohol. Never drink and drive.</div>
+        </div>
+
+        <nav class="post-navigation">
+            <img class="tk-char tk-char--post" src="/assets/images/character-hang.png" alt="" width="381" height="208">
+            <a href="/blog/guides/" class="nav-link-wrapper"><span>&larr; <span class="i18n-ja">困りごとから選ぶアプリの一覧へ</span><span class="i18n-en">All guides: apps for everyday problems</span></span></a>
+        </nav>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
+                    <p class="footer-description"><span class="i18n-ja">誰も作らないものを、まじめに作る</span><span class="i18n-en">I make things nobody else would, and I make them seriously</span></p>
+                </div>
+                <div class="footer-nav">
+                    <a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
+                    <a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
+                    <a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
+                    <a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ryo Tsuzukihashi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

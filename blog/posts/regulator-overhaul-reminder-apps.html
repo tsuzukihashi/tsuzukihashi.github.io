@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/js/lang.js"></script>
+    <!-- このページは scripts/build_guides.py が docs/guides/regulator-overhaul-reminder-apps.json から作る。直すのは JSON のほう -->
+    <title>レギュレーターのオーバーホール時期を忘れないアプリ3選 - Blog | Ryo Tsuzukihashi</title>
+    <meta name="description" content="ダイビング器材のオーバーホールや点検の時期を知らせるアプリを3本比べました。本数と日数の数え方、通知、タンク検査、無料の範囲の違いをまとめています。DiveKeepの作者が書いています。">
+    <meta name="title-en" content="3 Apps That Remind You When Your Regulator Needs a Service - Blog | Ryo Tsuzukihashi">
+    <meta name="description-en" content="I compared three iPhone apps that remind you when your dive gear is due for a service: how they count dives and days, notifications, tank inspections, and what&#x27;s free. Written by the maker of DiveKeep.">
+    <link rel="canonical" href="https://tsuzukit.com/blog/posts/regulator-overhaul-reminder-apps.html">
+
+    <!-- OGP -->
+    <meta property="og:title" content="レギュレーターのオーバーホール時期を忘れないアプリ3選">
+    <meta property="og:description" content="ダイビング器材のオーバーホールや点検の時期を知らせるアプリを3本比べました。本数と日数の数え方、通知、タンク検査、無料の範囲の違いをまとめています。DiveKeepの作者が書いています。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://tsuzukit.com/blog/posts/regulator-overhaul-reminder-apps.html">
+    <meta property="og:image" content="https://tsuzukit.com/assets/images/posts/regulator-overhaul-reminder-apps.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://tsuzukit.com/assets/images/posts/regulator-overhaul-reminder-apps.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-dark-32x32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-dark-16x16.png" media="(prefers-color-scheme: dark)">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERPQ1EGLH');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8240751277462688"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
+    <link rel="stylesheet" href="/assets/css/guide.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "レギュレーターのオーバーホール時期を忘れないアプリ3選",
+      "description": "ダイビング器材のオーバーホールや点検の時期を知らせるアプリを3本比べました。本数と日数の数え方、通知、タンク検査、無料の範囲の違いをまとめています。DiveKeepの作者が書いています。",
+      "image": "https://tsuzukit.com/assets/images/posts/regulator-overhaul-reminder-apps.webp",
+      "datePublished": "2026-11-15",
+      "dateModified": "2026-11-15",
+      "inLanguage": "ja",
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "mainEntityOfPage": "https://tsuzukit.com/blog/posts/regulator-overhaul-reminder-apps.html",
+      "about": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "DiveKeep 器材ケア管理",
+          "url": "https://apps.apple.com/jp/app/id6784748590",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "ダイビング器材ノート",
+          "url": "https://apps.apple.com/jp/app/id6791955576",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "ServiceDeco: Dive Gear Service",
+          "url": "https://apps.apple.com/jp/app/id6777115227",
+          "operatingSystem": "iOS"
+        }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "DiveKeep 器材ケア管理",
+      "operatingSystem": "iOS",
+      "applicationCategory": "UtilitiesApplication",
+      "url": "https://apps.apple.com/jp/app/id6784748590",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "レギュレーターのオーバーホールは何本ごとですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "メーカーや器材によって違います。取扱説明書を見るか、整備をお願いしているダイビングショップで聞いてください。3本とも周期は自分で変えられます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "無料で使えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "3本とも無料で入れられます。DiveKeepとダイビング器材ノートは、登録できる器材の数を増やすと有料です。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ダイブログのアプリと何が違いますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ログのアプリは潜った記録が中心です。この3本は、器材の整備の時期を知らせるのが中心です。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tsuzukit.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://tsuzukit.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "困りごとから選ぶアプリ",
+          "item": "https://tsuzukit.com/blog/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "レギュレーターのオーバーホール時期を忘れないアプリ3選",
+          "item": "https://tsuzukit.com/blog/posts/regulator-overhaul-reminder-apps.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">TsuzuKit</a>
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/portfolio/" class="nav-link">Portfolio</a>
+                <a href="/blog/" class="nav-link active">Blog</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post -->
+    <article class="blog-post">
+        <header class="post-header">
+            <div class="post-meta">
+                <span class="post-date">2026.11.15</span>
+                <span class="post-category"><span class="i18n-ja">アプリの選び方</span><span class="i18n-en">App guides</span></span>
+                <span class="post-reading-time"><span class="i18n-ja">4分で読める</span><span class="i18n-en">4 min read</span></span>
+            </div>
+            <h1 class="post-title"><span class="i18n-ja">レギュレーターのオーバーホール時期を忘れないアプリ3選</span><span class="i18n-en">3 Apps That Remind You When Your Regulator Needs a Service</span></h1>
+        </header>
+        <figure class="post-illustration guide-illustration"><img src="/assets/images/posts/regulator-overhaul-reminder-apps.webp" width="1200" height="800" alt="スマホの合図を見ながら、レギュレーターを真水で洗うキャラクター" data-en-alt="The character in a wetsuit rinsing a regulator with fresh water, nodding at a signal from their phone" fetchpriority="high"></figure>
+
+        <div class="post-content guide i18n-ja">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">先に答え</p>
+                <p>オーバーホールの時期は、前回からのダイブ本数と日数を数えてくれるアプリに任せると忘れません。お金をかけずに使いたいならServiceDeco、器材の台帳も作りたいならダイビング器材ノート。潜ったあとの真水洗いまで知らせてほしい人は、僕が作ったDiveKeepも見てみてください。</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">書いた人 <a href="https://tsuzukit.com/about/">續橋 涼</a>（@tsuzuki817）</p>
+                    <p class="guide-byline-bio">2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。DiveKeepの作者です。</p>
+                    <p class="guide-byline-date">公開 <time datetime="2026-11-15">2026.11.15</time> · 更新 <time datetime="2026-11-15">2026.11.15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">この記事は、DiveKeepを作った僕が書いています。ほかの2本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。</p>
+            <h2>3本をざっくり比べる</h2>
+            <p>3本とも、ダイブの本数と日数の両方で時期を数えます。違いが出るのは、通知のタイミングと、無料でどこまで使えるかです。</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">アプリ</th><th scope="col">評価の件数</th><th scope="col">本数と日数</th><th scope="col">通知</th><th scope="col">タンクの検査</th><th scope="col">無料の範囲</th></tr></thead><tbody><tr><th scope="row">DiveKeep（僕のアプリ）</th><td>0件</td><td>項目ごとに本数か日数</td><td>3日前、前日、当日。過ぎたら済ませるまで毎日</td><td>目視点検と耐圧検査</td><td>器材1つ、項目3つまで</td></tr><tr><th scope="row">ダイビング器材ノート</th><td>0件</td><td>前回から何年と何本の両方</td><td>1か月前と当日。本数に届いたときも</td><td>耐圧検査</td><td>器材3点まで</td></tr><tr><th scope="row">ServiceDeco</th><td>0件</td><td>日数、本数、早いほうから選べる</td><td>期限が近づいたら。時期は説明文に記載なし</td><td>目視点検と耐圧検査</td><td>永久無料と説明文にある</td></tr></tbody></table></div>
+            <h2>1本ずつ見ていく</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/34/e0/1e/34e01ed4-ced4-2213-0766-61b2e83ab038/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">僕が作ったアプリ</span>
+                    <h3 class="guide-app-name">DiveKeep 器材ケア管理</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · App Storeの評価 0件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6784748590" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>レギュレーターのオーバーホールやOリングの点検は潜った本数で、BCDの点検やダイコンの電池は日数で数えます。ダイブを記録すると本数が足されて、あと何ダイブ、あと何日と出ます。</p>
+            <p>真水洗いは1ダイブごとの項目なので、ダイブを記録すると、洗ったと記録するまで毎朝知らせます。オーバーホールの目安は最初は100本にしてありますが、メーカーやショップの指定に合わせて変えられます。</p>
+            <p>無料だと器材1つ、項目3つまでです。最初に真水洗い、レギュレーターのオーバーホール、ダイコンの電池交換の3つが入ります。器材を増やすのはプレミアムで、iPhone専用です。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/25/5f/67/255f6710-af8e-119c-0be2-0c0845ac833e/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">ダイビング器材ノート</h3>
+                    <p class="guide-app-meta">towa imamoto · App Storeの評価 0件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6791955576" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>前回のオーバーホールから何年と何本の両方で目安を見て、1か月前と当日に知らせます。本数に届いたときも通知が来ます。レギュレーターは1年か100本のように、種類ごとの周期を最初に出してくれます。</p>
+            <p>製造番号や購入日も残せて、器材の台帳としても使えます。無料で器材3点まで、それより多いと月額か買い切りのプレミアムです。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/74/da/dc/74dadcb0-ade6-7eea-24d4-886c2f11c6f1/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">ServiceDeco: Dive Gear Service</h3>
+                    <p class="guide-app-meta">Perpetio OU · App Storeの評価 0件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6777115227" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>日数、ダイブ数、どちらか早いほうの3つから選べます。両方に周期を入れておくと、先に届いたほうで知らせます。O2セルやリブリーザーにも対応していて、テクニカルダイビングをする人向けの作りですね。</p>
+            <p>タンクの目視点検と耐圧検査は、日本、アメリカ、ヨーロッパの決まりに合わせたプリセットがあります。説明文には永久無料と書いてあって、記録はCSVで書き出せます。</p>
+            <h2>アプリを入れたくないなら</h2>
+            <p>オーバーホールに出したお店で、次の時期を控えてもらうのが確実です。ログブックの最後のページに、前回の日付とそのときの本数を書いておく手もあります。</p>
+            <p>日数だけならiPhoneのリマインダーでも足ります。本数で決まる整備は、潜るたびに数え直すことになるので、アプリのほうが楽です。</p>
+            <h2>どれを選ぶか</h2>
+            <ul class="guide-list"><li>お金をかけずに、早いほうで知らせてほしいなら、ServiceDeco</li><li>製造番号や購入日も含めて器材の台帳を作りたいなら、ダイビング器材ノート</li><li>潜ったあとの真水洗いまで、済ませるまで毎朝言ってほしいなら、DiveKeep</li></ul>
+            <h2>よくある質問</h2>
+            <dl class="guide-faq">
+                <dt>レギュレーターのオーバーホールは何本ごとですか？</dt><dd>メーカーや器材によって違います。取扱説明書を見るか、整備をお願いしているダイビングショップで聞いてください。3本とも周期は自分で変えられます。</dd>
+                <dt>無料で使えますか？</dt><dd>3本とも無料で入れられます。DiveKeepとダイビング器材ノートは、登録できる器材の数を増やすと有料です。</dd>
+                <dt>ダイブログのアプリと何が違いますか？</dt><dd>ログのアプリは潜った記録が中心です。この3本は、器材の整備の時期を知らせるのが中心です。</dd>
+            </dl>
+            <p>DiveKeepはまだ評価が0件なので、潜ったついでに感想を聞かせてもらえたらうれしいです🐢</p>
+            <div class="guide-notes">各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。DiveKeepの機能はアプリのコードで確かめました。器材の点検と整備は、メーカーの指定と認定されたサービス、指導団体の指針に従ってください。</div>
+        </div>
+
+        <div class="post-content guide i18n-en">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">Short answer</p>
+                <p>The easiest way not to forget a service is an app that counts dives and days since the last one. If you don&#x27;t want to pay anything, ServiceDeco. If you also want a full inventory of your gear, Dive Gear Note. If you&#x27;d like a reminder to rinse your gear in fresh water after every dive too, take a look at DiveKeep, which I made.</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">Written by <a href="https://tsuzukit.com/about/">Ryo Tsuzukihashi</a> (@tsuzuki817)</p>
+                    <p class="guide-byline-bio">I&#x27;ve been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made DiveKeep.</p>
+                    <p class="guide-byline-date">Published <time datetime="2026-11-15">2026-11-15</time> · Updated <time datetime="2026-11-15">2026-11-15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">I made DiveKeep, and I wrote this article. The other two apps are by developers I don&#x27;t know, and I haven&#x27;t received money or anything else from them. Everything compared here comes from each app&#x27;s App Store description and rating count as of November 15, 2026.</p>
+            <h2>The three apps at a glance</h2>
+            <p>All three count both dives and days. Where they differ is when they notify you and how much you can do for free.</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">App</th><th scope="col">Ratings</th><th scope="col">Dives and days</th><th scope="col">Notifications</th><th scope="col">Tank inspections</th><th scope="col">Free version</th></tr></thead><tbody><tr><th scope="row">DiveKeep (my app)</th><td>0</td><td>Dives or days, per item</td><td>3 days before, the day before, on the day, then daily until done</td><td>Visual and hydrostatic</td><td>1 piece of gear, 3 items</td></tr><tr><th scope="row">Dive Gear Note</th><td>0</td><td>Both years and dives since the last service</td><td>1 month before and on the day, plus when you hit the dive count</td><td>Hydrostatic</td><td>Up to 3 pieces of gear</td></tr><tr><th scope="row">ServiceDeco</th><td>0</td><td>Days, dives, or whichever comes first</td><td>When it&#x27;s getting close. Timing not mentioned</td><td>Visual and hydrostatic</td><td>Described as free forever</td></tr></tbody></table></div>
+            <h2>Each app, one by one</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/34/e0/1e/34e01ed4-ced4-2213-0766-61b2e83ab038/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">I made this</span>
+                    <h3 class="guide-app-name">DiveKeep: Scuba Gear Care</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · 0 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6784748590" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>Regulator services and O-ring checks are counted by dives, while BCD checks and dive computer batteries are counted by days. Log a dive and it adds to the count, so you see how many dives or days are left.</p>
+            <p>The fresh-water rinse is set to every single dive, so once you log a dive it reminds you every morning until you log the rinse. The regulator service starts at 100 dives, but you can change it to match your manufacturer or dive shop.</p>
+            <p>The free version covers one piece of gear and up to 3 items. It starts with fresh-water rinse, regulator service, and dive computer battery. More gear needs Premium. It&#x27;s iPhone only.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/25/5f/67/255f6710-af8e-119c-0be2-0c0845ac833e/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Dive Gear Note</h3>
+                    <p class="guide-app-meta">towa imamoto · 0 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6791955576" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>It tracks both years and dives since the last service, and notifies you a month before and on the day. It also lets you know when you reach the dive count. It suggests a standard interval for each type of gear, like 1 year or 100 dives for a regulator.</p>
+            <p>You can also store serial numbers and purchase dates, so it works as an inventory of your gear. Up to 3 pieces of gear are free, and more needs the monthly or one-time Premium.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/74/da/dc/74dadcb0-ade6-7eea-24d4-886c2f11c6f1/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">ServiceDeco: Dive Gear Service</h3>
+                    <p class="guide-app-meta">Perpetio OU · 0 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6777115227" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>You can choose days, dives, or whichever comes first. Set both, and it notifies you when either one is reached. It also handles O2 cells and rebreathers, so it&#x27;s built with technical divers in mind.</p>
+            <p>For tank visual and hydrostatic inspections, it has presets that follow the rules in Japan, the US, and Europe. The description says it&#x27;s free forever, and you can export your log as CSV.</p>
+            <h2>If you&#x27;d rather not install an app</h2>
+            <p>The surest way is to ask the shop that services your gear to note when the next one is due. You can also write the last service date and your dive count on the back page of your logbook.</p>
+            <p>For anything based on time, the iPhone Reminders app is enough. Anything based on dives means recounting every time you go diving, which an app does for you.</p>
+            <h2>Which one to pick</h2>
+            <ul class="guide-list"><li>If you don&#x27;t want to pay and want a reminder at whichever comes first, ServiceDeco</li><li>If you want an inventory with serial numbers and purchase dates, Dive Gear Note</li><li>If you want reminders down to rinsing after each dive, repeated every morning until you do it, DiveKeep</li></ul>
+            <h2>FAQ</h2>
+            <dl class="guide-faq">
+                <dt>How many dives between regulator services?</dt><dd>It depends on the manufacturer and the gear. Check the manual or ask the dive shop that services it. All three apps let you change the interval yourself.</dd>
+                <dt>Are they free?</dt><dd>All three are free to download. DiveKeep and Dive Gear Note charge for registering more gear.</dd>
+                <dt>How is this different from a dive log app?</dt><dd>Dive log apps are about recording your dives. These three are about reminding you when your gear needs servicing.</dd>
+            </dl>
+            <p>DiveKeep doesn&#x27;t have any ratings yet, so I&#x27;d love to hear from you after your next dive 🐢</p>
+            <div class="guide-notes">Features and rating counts were checked against each app&#x27;s App Store description on November 15, 2026, and may change with updates. DiveKeep&#x27;s features were checked against the app&#x27;s own code. Follow your manufacturer&#x27;s instructions, an authorized service center, and your training agency&#x27;s guidelines for inspecting and servicing your gear.</div>
+        </div>
+
+        <nav class="post-navigation">
+            <img class="tk-char tk-char--post" src="/assets/images/character-hang.png" alt="" width="381" height="208">
+            <a href="/blog/guides/" class="nav-link-wrapper"><span>&larr; <span class="i18n-ja">困りごとから選ぶアプリの一覧へ</span><span class="i18n-en">All guides: apps for everyday problems</span></span></a>
+        </nav>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
+                    <p class="footer-description"><span class="i18n-ja">誰も作らないものを、まじめに作る</span><span class="i18n-en">I make things nobody else would, and I make them seriously</span></p>
+                </div>
+                <div class="footer-nav">
+                    <a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
+                    <a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
+                    <a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
+                    <a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ryo Tsuzukihashi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

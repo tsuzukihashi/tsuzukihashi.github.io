@@ -1,0 +1,455 @@
+{
+  "slug": "mood-ups-and-downs-tracker-apps",
+  "date_published": "2026-11-15",
+  "date_updated": "2026-11-15",
+  "search_phrase": {
+    "ja": "気分の波 記録 アプリ",
+    "en": "app to track mood ups and downs"
+  },
+  "evidence": "2026-11-15 に Google の検索候補で「気分 記録 アプリ」を引くと6件出て、その中に「気分 の 波 記録 アプリ」と「気分 の 浮き沈み 記録 アプリ」があった。「気分の波 記録」も2件中1件が「アプリ」付きだった。同じ日の App Store で「気分の波 記録」を引くと、評価が一桁の新しいアプリが多く、病気の記録に絞ったアプリも混ざっていた。",
+  "title": {
+    "ja": "気分の波を記録するアプリ4選。無料でどこまで見られるかで比べる",
+    "en": "4 Apps for Tracking the Ups and Downs of Your Mood, Compared by What's Free"
+  },
+  "description": {
+    "ja": "なんとなく元気が出ない日と元気な日の波を記録するアプリを4本比べました。記録のしかた、波の見え方、無料で見られるもの、データの置き場所をまとめています。Kimochiの作者が書いています。",
+    "en": "I compared four iPhone apps for logging the ups and downs of your mood: how you log, how the pattern is shown, what's free, and where your data lives. Written by the maker of Kimochi."
+  },
+  "excerpt": {
+    "ja": "無料でどこまで見られるかで、気分を記録するアプリを4本比べました。Kimochiを作った僕が、自分のアプリも入れて書いています。",
+    "en": "Four mood tracking apps compared on what you get for free. I made Kimochi, and it's one of the four."
+  },
+  "category": {
+    "ja": "アプリの選び方",
+    "en": "App guides"
+  },
+  "reading_minutes": 4,
+  "author": {
+    "name": {
+      "ja": "續橋 涼",
+      "en": "Ryo Tsuzukihashi"
+    },
+    "handle": "tsuzuki817",
+    "bio": {
+      "ja": "2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。Kimochiの作者です。",
+      "en": "I've been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made Kimochi."
+    },
+    "url": "https://tsuzukit.com/about/",
+    "same_as": [
+      "https://x.com/tsuzuki817"
+    ]
+  },
+  "tldr": {
+    "ja": "無料のまま波をグラフで見たいなら、カレンダーと基本の統計が無料の波きぶん。いちばん使われているのは評価3,045件のデイリオ日記です。記録はかわいいキャラと一緒に気軽に続けて、傾向の分析はあとから足したいなら、僕が作ったKimochiも見てみてください。",
+    "en": "If you want to see the pattern in a graph without paying, Mood Wave's calendar and basic stats are free. The most used is Daylio with 3,045 ratings. If you want to keep logging easy with a cute character and add pattern analysis later, take a look at Kimochi, which I made."
+  },
+  "disclosure": {
+    "ja": "この記事は、Kimochiを作った僕が書いています。ほかの3本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。",
+    "en": "I made Kimochi, and I wrote this article. The other three apps are by developers I don't know, and I haven't received money or anything else from them. Everything compared here comes from each app's App Store description and rating count as of November 15, 2026."
+  },
+  "own_app": "6762499180",
+  "app_category": "HealthApplication",
+  "apps": [
+    {
+      "id": "6762499180",
+      "name": {
+        "ja": "Kimochi かわいい気分日記",
+        "en": "Kimochi - Cute Mood Diary"
+      },
+      "short": {
+        "ja": "Kimochi",
+        "en": "Kimochi"
+      },
+      "developer": "Ryo Tsudukihashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/42/ec/8c/42ec8c9a-7584-abc0-9074-6a1a4552b57c/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6762499180",
+      "android_url": null,
+      "rating_count": 0
+    },
+    {
+      "id": "1194023242",
+      "name": {
+        "ja": "デイリオ日記：気分・習慣・毎日を簡単に記録できる日記帳",
+        "en": "Daylio Journal - Mood Tracker"
+      },
+      "short": {
+        "ja": "デイリオ日記",
+        "en": "Daylio"
+      },
+      "developer": "Relaxio s.r.o.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e4/bf/42/e4bf4274-5517-698d-f973-37da72e78cdf/AppIcon-green-new-0-0-1x_U007epad-0-1-0-0-sRGB-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id1194023242",
+      "android_url": null,
+      "rating_count": 3045
+    },
+    {
+      "id": "6760540305",
+      "name": {
+        "ja": "波きぶん",
+        "en": "Mood Wave - Daily Mood Diary"
+      },
+      "short": {
+        "ja": "波きぶん",
+        "en": "Mood Wave"
+      },
+      "developer": "Masahiro Akebi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/0d/4d/5f/0d4d5f4b-30f1-9ef8-06b7-34a5f95fc16b/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6760540305",
+      "android_url": null,
+      "rating_count": 8
+    },
+    {
+      "id": "6787498606",
+      "name": {
+        "ja": "気分の波 - ウィジェット気分記録グラフ",
+        "en": "Mood Waves: Widget Mood Log and Graph"
+      },
+      "short": {
+        "ja": "気分の波",
+        "en": "Mood Waves"
+      },
+      "developer": "Shuhei Yamamoto",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a2/2d/93/a22d9380-bc25-8bdd-adfe-c0a56755f628/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6787498606",
+      "android_url": null,
+      "rating_count": 0
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ja": "4本をざっくり比べる",
+        "en": "The four apps at a glance"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "記録はどれも、いくつかの段階から今の気分を選ぶだけです。違いが出るのは、たまった記録を波として見られるのが無料か有料かです。",
+            "en": "In all four, logging means picking your current mood from a few levels. Where they differ is whether seeing your entries as a pattern is free or paid."
+          }
+        },
+        {
+          "type": "table",
+          "head": [
+            {
+              "ja": "アプリ",
+              "en": "App"
+            },
+            {
+              "ja": "評価の件数",
+              "en": "Ratings"
+            },
+            {
+              "ja": "記録のしかた",
+              "en": "How you log"
+            },
+            {
+              "ja": "波の見え方",
+              "en": "How the pattern shows"
+            },
+            {
+              "ja": "無料で見られるもの",
+              "en": "Free to view"
+            },
+            {
+              "ja": "データの置き場所",
+              "en": "Where data lives"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ja": "Kimochi（僕のアプリ）",
+                "en": "Kimochi (my app)"
+              },
+              {
+                "ja": "0件",
+                "en": "0"
+              },
+              {
+                "ja": "5段階をタップ。タグとひとことは任意",
+                "en": "Tap one of 5 levels. Tags and a note are optional"
+              },
+              {
+                "ja": "時間帯、曜日、タグ別の傾向とカレンダー（Pro）",
+                "en": "By time of day, weekday, and tag, plus a calendar (Pro)"
+              },
+              {
+                "ja": "最近の7件と連続日数",
+                "en": "Your last 7 entries and your streak"
+              },
+              {
+                "ja": "端末の中だけ",
+                "en": "On your phone only"
+              }
+            ],
+            [
+              {
+                "ja": "デイリオ日記",
+                "en": "Daylio"
+              },
+              {
+                "ja": "3,045件",
+                "en": "3,045"
+              },
+              {
+                "ja": "気分を選んで、した活動を足す",
+                "en": "Pick a mood and add what you did"
+              },
+              {
+                "ja": "週、月、年のグラフ、1年を色で並べる表示",
+                "en": "Weekly, monthly, and yearly charts, plus a year shown in colored squares"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "スマホの中。クラウドにバックアップも",
+                "en": "On your phone, with optional cloud backup"
+              }
+            ],
+            [
+              {
+                "ja": "波きぶん",
+                "en": "Mood Wave"
+              },
+              {
+                "ja": "8件",
+                "en": "8"
+              },
+              {
+                "ja": "1日に何回でも、5段階",
+                "en": "5 levels, as many times a day as you like"
+              },
+              {
+                "ja": "カレンダーの上の波形グラフ、タグの統計",
+                "en": "Wave graph on a calendar, stats by tag"
+              },
+              {
+                "ja": "記録、カレンダー、基本の統計",
+                "en": "Logging, calendar, basic stats"
+              },
+              {
+                "ja": "端末の中",
+                "en": "On your phone"
+              }
+            ],
+            [
+              {
+                "ja": "気分の波",
+                "en": "Mood Waves"
+              },
+              {
+                "ja": "0件",
+                "en": "0"
+              },
+              {
+                "ja": "ホーム画面のウィジェットから1タップ",
+                "en": "One tap from a Home Screen widget"
+              },
+              {
+                "ja": "直近7日のグラフ。時間帯や曜日の傾向はPro",
+                "en": "A 7-day graph. Time of day and weekday patterns are Pro"
+              },
+              {
+                "ja": "直近7日のグラフ",
+                "en": "The 7-day graph"
+              },
+              {
+                "ja": "完全オフライン",
+                "en": "Fully offline"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "1本ずつ見ていく",
+        "en": "Each app, one by one"
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "id": "6762499180"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "白いおもちの妖精モチと一緒につける気分日記です。5段階の気分をタップすると、モチが同じ表情と色に変わります。仕事、家族、睡眠のようなタグとひとことは、書きたいときだけで大丈夫です。",
+            "en": "It's a mood diary you keep with Mochi, a little white rice-cake fairy. Tap one of 5 moods, and Mochi changes to the same face and color. Tags like work, family, or sleep, and a short note, are only there if you want them."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "記録は無料で何回でもできて、ホームには最近の7件と、続いた日数が出ます。毎日決めた時刻に通知で声をかけてもらうこともできます。",
+            "en": "Logging is free with no limit, and the home screen shows your last 7 entries and how many days in a row you've logged. You can also get a reminder at the same time each day."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "正直に書くと、気分の波を見るカレンダーと、時間帯、曜日、タグ別の分析はProです。モチの着せ替えは無料だとリボンだけで、はっぱ、かんむり、おほしさまとCSVの書き出しもProです。記録は端末の中だけに保存されます。",
+            "en": "To be upfront, the calendar for seeing your ups and downs, and the breakdown by time of day, weekday, and tag, are Pro. The only free outfit for Mochi is the bow. The leaf, crown, and star, plus CSV export, are Pro too. Everything you log stays on your phone."
+          }
+        },
+        {
+          "type": "app",
+          "id": "1194023242"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "評価が3,045件あって、この中ではいちばん使われています。気分を選んで、その日にした活動を足すだけで日記になります。",
+            "en": "With 3,045 ratings, it's the most used of the four. Pick a mood, add what you did that day, and that's your entry."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "強いのはグラフです。週、月、年のグラフや、1年を色で並べる表示で、どの活動の日に気分が上がるかを見られます。目標や習慣の記録にも使えて、PINや生体認証でロックもできます。",
+            "en": "Its strength is the charts. Weekly, monthly, and yearly graphs, plus a view of the whole year in colored squares, show which activities go with your better days. It also tracks goals and habits, and locks with a PIN or Face ID."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6760540305"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "1日に何回でも記録できるのが特徴です。朝はすっきり、昼はもやもや、のような1日の中の波まで残せます。波のキャラクターのなみちゃんが、気分に合わせて変わります。",
+            "en": "You can log as many times a day as you like, so it catches the ups and downs within a single day, like clear-headed in the morning and foggy by noon. A wave character called Nami-chan changes with your mood."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "記録、カレンダー、基本の統計は完全無料と書かれています。無料のまま波をグラフで見たいなら、この4本の中ではいちばん向いています。",
+            "en": "The description says logging, the calendar, and basic stats are completely free. If you want to see your pattern as a graph without paying, it's the best fit of the four."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6787498606"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "アプリを開かずに、ホーム画面のウィジェットから1タップで記録します。iOS 18ならコントロールセンターやアクションボタンからも記録できます。",
+            "en": "You log with one tap from a Home Screen widget without opening the app. On iOS 18, you can also log from Control Center or the Action button."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "無料で見られるのは直近7日のグラフです。行動と気分の関係や、時間帯と曜日の傾向は、買い切りのProです。",
+            "en": "For free you get a 7-day graph. How your activities relate to your mood and your time-of-day and weekday patterns are part of a one-time Pro purchase."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "アプリを入れたくないなら",
+        "en": "If you'd rather not install an app"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "手帳にムードトラッカーを書く方法もあります。1日1マス、その日の気分の色で塗るだけです。",
+            "en": "You can also keep a mood tracker in a paper planner. One square per day, colored to match how you felt."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "iPhoneのヘルスケアアプリにも、気分を記録する機能があります。最初から入っているので、まずはこちらで続くか試すのも手ですね。",
+            "en": "The Health app on your iPhone also has a feature for logging your state of mind. It's already there, so it's a fine way to see whether the habit sticks."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "どれを選ぶか",
+        "en": "Which one to pick"
+      },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "ja": "無料のまま波をグラフで見たい、1日に何回も記録したいなら、波きぶん",
+              "en": "If you want to see the pattern for free and log several times a day, Mood Wave"
+            },
+            {
+              "ja": "活動や習慣と一緒に記録して、1年分を見返したいなら、デイリオ日記",
+              "en": "If you want to log activities and habits too and look back over a whole year, Daylio"
+            },
+            {
+              "ja": "アプリを開くのが面倒で続かなかったなら、気分の波",
+              "en": "If opening an app is what made you quit before, Mood Waves"
+            },
+            {
+              "ja": "かわいいキャラと一緒に、気軽に続けるところから始めたいなら、Kimochi",
+              "en": "If you want to start by keeping it light with a cute character, Kimochi"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "ja": "気分の落ち込みが続くときも、アプリで大丈夫ですか？",
+        "en": "Is an app enough if my low moods keep going?"
+      },
+      "a": {
+        "ja": "4本とも、記録して振り返るためのアプリで、診断や治療はしません。つらい状態が続くときは、医師や専門家に相談してください。",
+        "en": "All four are for logging and looking back. None of them diagnose or treat anything. If you've been feeling low for a while, please talk to a doctor or another professional."
+      }
+    },
+    {
+      "q": {
+        "ja": "無料で使えますか？",
+        "en": "Are they free?"
+      },
+      "a": {
+        "ja": "4本とも無料で入れて、無料で記録できます。違うのは見返すところで、波きぶんはカレンダーと基本の統計まで無料、Kimochiはカレンダーと分析がProです。",
+        "en": "All four are free to download and to log in. The difference is looking back. Mood Wave includes the calendar and basic stats for free, while Kimochi's calendar and analysis are Pro."
+      }
+    },
+    {
+      "q": {
+        "ja": "記録が人に見られないか心配です",
+        "en": "I'm worried someone might see my entries"
+      },
+      "a": {
+        "ja": "Kimochi、波きぶん、気分の波は、記録が端末の中だけに保存されると書かれています。ロックをかけたいなら、デイリオ日記と波きぶんにPINやパスコードのロックがあります。",
+        "en": "Kimochi, Mood Wave, and Mood Waves all say entries stay on your phone. If you want a lock, Daylio and Mood Wave offer a PIN or passcode."
+      }
+    }
+  ],
+  "closing": {
+    "ja": "Kimochiはまだ評価が0件です。モチに着せたい服があったら、レビューで教えてください🙏",
+    "en": "Kimochi doesn't have any ratings yet. If there's an outfit you'd like Mochi to wear, tell me in a review 🙏"
+  },
+  "notes": {
+    "ja": "各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。Kimochiの機能はアプリのコードで確かめました。アップデートで変わることがあります。どのアプリも医療の代わりにはなりません。つらい状態が続くときは、医師や専門家に相談してください。",
+    "en": "Features and rating counts were checked against each app's App Store description on November 15, 2026. Kimochi's features were checked against its source code. They may change with updates. None of these apps replaces medical care. If you've been feeling low for a while, please talk to a doctor or another professional."
+  },
+  "illustration": {
+    "scene": "夜の窓辺。キャラが膝を抱えて座り、手に持ったスマホの画面（文字なし）にゆるやかな波の線が浮かんでいるのを眺めている。窓の外には月と、やさしく揺れる海の水平線。",
+    "alt": {
+      "ja": "夜の窓辺で膝を抱え、スマホに浮かぶ波の線を眺めるキャラクター",
+      "en": "The character sitting by a night window, hugging their knees and looking at a gentle wave line on the phone"
+    }
+  }
+}

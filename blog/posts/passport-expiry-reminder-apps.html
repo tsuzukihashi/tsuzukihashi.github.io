@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/js/lang.js"></script>
+    <!-- このページは scripts/build_guides.py が docs/guides/passport-expiry-reminder-apps.json から作る。直すのは JSON のほう -->
+    <title>パスポートの有効期限を通知してくれるアプリ4選 - Blog | Ryo Tsuzukihashi</title>
+    <meta name="description" content="パスポートの有効期限を通知してくれるアプリを4本比べました。残り6か月の扱い、通知の時期、家族の書類、無料で使える範囲の違いをまとめています。PassportAlertの作者が書いています。">
+    <meta name="title-en" content="4 Apps That Remind You Before Your Passport Expires - Blog | Ryo Tsuzukihashi">
+    <meta name="description-en" content="I compared four iPhone apps that remind you before your passport expires: how they handle the six-month rule, when they notify you, family documents, and what&#x27;s free. Written by the maker of PassportAlert.">
+    <link rel="canonical" href="https://tsuzukit.com/blog/posts/passport-expiry-reminder-apps.html">
+
+    <!-- OGP -->
+    <meta property="og:title" content="パスポートの有効期限を通知してくれるアプリ4選">
+    <meta property="og:description" content="パスポートの有効期限を通知してくれるアプリを4本比べました。残り6か月の扱い、通知の時期、家族の書類、無料で使える範囲の違いをまとめています。PassportAlertの作者が書いています。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://tsuzukit.com/blog/posts/passport-expiry-reminder-apps.html">
+    <meta property="og:image" content="https://tsuzukit.com/assets/images/posts/passport-expiry-reminder-apps.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://tsuzukit.com/assets/images/posts/passport-expiry-reminder-apps.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-dark-32x32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-dark-16x16.png" media="(prefers-color-scheme: dark)">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERPQ1EGLH');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8240751277462688"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
+    <link rel="stylesheet" href="/assets/css/guide.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "パスポートの有効期限を通知してくれるアプリ4選",
+      "description": "パスポートの有効期限を通知してくれるアプリを4本比べました。残り6か月の扱い、通知の時期、家族の書類、無料で使える範囲の違いをまとめています。PassportAlertの作者が書いています。",
+      "image": "https://tsuzukit.com/assets/images/posts/passport-expiry-reminder-apps.webp",
+      "datePublished": "2026-11-15",
+      "dateModified": "2026-11-15",
+      "inLanguage": "ja",
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "mainEntityOfPage": "https://tsuzukit.com/blog/posts/passport-expiry-reminder-apps.html",
+      "about": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "パスポート期限管理 PassportAlert",
+          "url": "https://apps.apple.com/jp/app/id6782294746",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "Koshinbi パスポート、在留カード期限管理",
+          "url": "https://apps.apple.com/jp/app/id6815148748",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "ID期限リマインダー",
+          "url": "https://apps.apple.com/jp/app/id6754081427",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "OCRで期限通知: RenewalKit",
+          "url": "https://apps.apple.com/jp/app/id6758590671",
+          "operatingSystem": "iOS"
+        }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "パスポート期限管理 PassportAlert",
+      "operatingSystem": "iOS",
+      "applicationCategory": "TravelApplication",
+      "url": "https://apps.apple.com/jp/app/id6782294746",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "無料で使えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "4本とも無料で入れられます。PassportAlertとKoshinbiは書類3件まで、RenewalKitは1件まで無料です。ID期限リマインダーは全部の機能が無料です。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "残りが何か月あれば渡航できますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "国によって違います。アプリが出すのは一般的な目安なので、行き先の大使館で最新の条件を確かめてください。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "パスポートの番号を入れる必要はありますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "PassportAlertには番号の欄がありますが、入れなくても使えます。ID期限リマインダーは番号の入力をわざと止める作りです。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tsuzukit.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://tsuzukit.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "困りごとから選ぶアプリ",
+          "item": "https://tsuzukit.com/blog/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "パスポートの有効期限を通知してくれるアプリ4選",
+          "item": "https://tsuzukit.com/blog/posts/passport-expiry-reminder-apps.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">TsuzuKit</a>
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/portfolio/" class="nav-link">Portfolio</a>
+                <a href="/blog/" class="nav-link active">Blog</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post -->
+    <article class="blog-post">
+        <header class="post-header">
+            <div class="post-meta">
+                <span class="post-date">2026.11.15</span>
+                <span class="post-category"><span class="i18n-ja">アプリの選び方</span><span class="i18n-en">App guides</span></span>
+                <span class="post-reading-time"><span class="i18n-ja">4分で読める</span><span class="i18n-en">4 min read</span></span>
+            </div>
+            <h1 class="post-title"><span class="i18n-ja">パスポートの有効期限を通知してくれるアプリ4選</span><span class="i18n-en">4 Apps That Remind You Before Your Passport Expires</span></h1>
+        </header>
+        <figure class="post-illustration guide-illustration"><img src="/assets/images/posts/passport-expiry-reminder-apps.webp" width="1200" height="800" alt="旅行の前の夜、スーツケースの横で家族のパスポートを並べて確かめるキャラクター" data-en-alt="The night before a trip, the character checks the family&#x27;s passports laid out next to an open suitcase" fetchpriority="high"></figure>
+
+        <div class="post-content guide i18n-ja">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">先に答え</p>
+                <p>パスポートは有効期限の日だけでなく、残りが6か月を切る日も気にしておくと安心です。在留カードも一緒に見たり、手続きを始められる日まで知りたいならKoshinbi。免許証などと並べて全部無料で使いたいならID期限リマインダー。残り6か月の日を期限として数えてほしいなら、僕が作ったPassportAlertが合います。</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">書いた人 <a href="https://tsuzukit.com/about/">續橋 涼</a>（@tsuzuki817）</p>
+                    <p class="guide-byline-bio">2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。PassportAlertの作者です。</p>
+                    <p class="guide-byline-date">公開 <time datetime="2026-11-15">2026.11.15</time> · 更新 <time datetime="2026-11-15">2026.11.15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">この記事は、PassportAlertを作った僕が書いています。ほかの3本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。</p>
+            <h2>期限の日より先に来る、残り6か月の日</h2>
+            <p>多くの国は、入国するときにパスポートの残りの有効期間が一定以上あることを求めています。期限が切れていなくても、残りが足りなければ渡航できないことがあります。</p>
+            <p>何か月必要かは国ごとに違うので、行き先の大使館で確かめてください。この記事では、その日まで気にしてくれるかどうかもアプリを比べるところに入れました。</p>
+            <h2>4本をざっくり比べる</h2>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">アプリ</th><th scope="col">評価の件数</th><th scope="col">残り6か月の扱い</th><th scope="col">通知の時期</th><th scope="col">家族の書類</th><th scope="col">無料の範囲</th></tr></thead><tbody><tr><th scope="row">PassportAlert（僕のアプリ）</th><td>0件</td><td>残り6か月になる日を期限として数える</td><td>その日の90日前、30日前、7日前、当日</td><td>名義で分けられる</td><td>書類3件まで</td></tr><tr><th scope="row">Koshinbi</th><td>0件</td><td>残りが6か月を切る日を案内</td><td>パスポートは180日前から複数回</td><td>有料版で家族を無制限に</td><td>書類3件まで</td></tr><tr><th scope="row">ID期限リマインダー</th><td>0件</td><td>説明文に記載なし</td><td>90日前、60日前、30日前、7日前、当日</td><td>説明文に記載なし</td><td>全機能が無料。広告あり</td></tr><tr><th scope="row">RenewalKit</th><td>1件</td><td>説明文に記載なし</td><td>時期を自分で選ぶ</td><td>人ごとに整理。追加の購入</td><td>1件まで</td></tr></tbody></table></div>
+            <h2>1本ずつ見ていく</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/dc/b1/69/dcb169ad-25fe-705e-9a47-f47985380cf3/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">僕が作ったアプリ</span>
+                    <h3 class="guide-app-name">パスポート期限管理 PassportAlert</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · App Storeの評価 0件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6782294746" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>パスポートを登録すると、有効期限の6か月前の日を期限として数えます。渡航OK、残存不足、期限切れのどれにあたるかが、ひと目で分かります。必要な月数は書類ごとに直せます。</p>
+            <p>通知は、残り6か月になる日の90日前、30日前、7日前と当日です。本当の有効期限の日にももう一度知らせて、切れたら更新するまで毎日鳴ります。ビザや在留カード、ワーキングホリデーも入れられます。</p>
+            <p>名義を入れておけば家族の書類も分けて見られます。無料だと書類は3件までで、それより多いのと、更新の履歴を残すのはプレミアムです。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/94/b5/d0/94b5d0ee-5140-c4f4-b017-e2a37d7b6157/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Koshinbi パスポート、在留カード期限管理</h3>
+                    <p class="guide-app-meta">XIAOYU YANG · App Storeの評価 0件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6815148748" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>期限の日だけでなく、手続きを始められる日まで知らせてくれるのが強いところです。パスポートの残りが6か月を切る日も案内してくれて、公式サイトへのリンクもついています。</p>
+            <p>パスポートと在留カードは180日前から、ほかの書類は90日前から、何回かに分けて知らせます。在留カードや再入国許可も登録できるので、日本に住む外国の人にも合います。無料でも書類3件までは、通知も案内も全部使えます。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/fc/16/78/fc1678a8-c9c2-61cd-f072-701d2b4a2a99/AppIcon-0-0-1x_U007epad-0-6-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">ID期限リマインダー</h3>
+                    <p class="guide-app-meta">Yasuhiro Hamada · App Storeの評価 0件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6754081427" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>パスポート、運転免許証、マイナンバーカード、資格の証明書などの期限をまとめて見るアプリです。名前と期限日だけを入れる作りで、番号を入れようとすると止めてくれます。</p>
+            <p>通知は90日前、60日前、30日前、7日前、当日の5回です。ロック画面のウィジェットもあります。全部の機能が無料で、広告は買い切りで消せます。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/6e/a6/31/6ea631b0-bf21-5c72-c09a-c8284b722580/RenewalKit-0-0-1x_U007epad-0-1-sRGB-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">OCRで期限通知: RenewalKit</h3>
+                    <p class="guide-app-meta">emonster Inc. · App Storeの評価 1件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6758590671" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>書類を撮ると、端末の中の文字認識で期限を読み取って候補を出してくれます。パスポートやビザのほかに、保険や会員証、保証書まで入れられます。</p>
+            <p>無料は1件までで、機能は全部使えます。それより多いのは、10件までの買い切りか無制限の買い切り、月額か年額から選べます。</p>
+            <h2>アプリを入れたくないなら</h2>
+            <p>iPhoneのカレンダーに、有効期限の6か月前の日を予定として入れて、通知を何日か前に設定しておく方法もあります。家族が多いと書類の数だけ予定が増えるので、そこからはアプリのほうが楽ですね。</p>
+            <h2>どれを選ぶか</h2>
+            <ul class="guide-list"><li>在留カードもあって、手続きを始められる日まで知りたいなら、Koshinbi</li><li>免許証やマイナンバーカードと並べて、無料で見たいなら、ID期限リマインダー</li><li>書類を撮って登録したいなら、RenewalKit</li><li>残り6か月の日を期限として、切れたら毎日知らせてほしいなら、PassportAlert</li></ul>
+            <h2>よくある質問</h2>
+            <dl class="guide-faq">
+                <dt>無料で使えますか？</dt><dd>4本とも無料で入れられます。PassportAlertとKoshinbiは書類3件まで、RenewalKitは1件まで無料です。ID期限リマインダーは全部の機能が無料です。</dd>
+                <dt>残りが何か月あれば渡航できますか？</dt><dd>国によって違います。アプリが出すのは一般的な目安なので、行き先の大使館で最新の条件を確かめてください。</dd>
+                <dt>パスポートの番号を入れる必要はありますか？</dt><dd>PassportAlertには番号の欄がありますが、入れなくても使えます。ID期限リマインダーは番号の入力をわざと止める作りです。</dd>
+            </dl>
+            <p>PassportAlertはまだ評価が0件です。次の旅行の前に入れてみた人の声を待ってます✈️</p>
+            <div class="guide-notes">各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。入国の条件や更新の手続きは、外務省や各国の大使館の最新の案内に従ってください。</div>
+        </div>
+
+        <div class="post-content guide i18n-en">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">Short answer</p>
+                <p>With a passport, it helps to watch not just the expiry date but also the day it drops under six months. If you also have a residence card or want to know when you can start renewing, Koshinbi fits. If you want everything free alongside your driver&#x27;s license, ID Expiry Reminder. If you want the six-month day treated as the deadline, PassportAlert, which I made, is the one.</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">Written by <a href="https://tsuzukit.com/about/">Ryo Tsuzukihashi</a> (@tsuzuki817)</p>
+                    <p class="guide-byline-bio">I&#x27;ve been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made PassportAlert.</p>
+                    <p class="guide-byline-date">Published <time datetime="2026-11-15">2026-11-15</time> · Updated <time datetime="2026-11-15">2026-11-15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">I made PassportAlert, and I wrote this article. The other three apps are by developers I don&#x27;t know, and I haven&#x27;t received money or anything else from them. Everything compared here comes from each app&#x27;s App Store description and rating count as of November 15, 2026.</p>
+            <h2>The six-month day comes before the expiry date</h2>
+            <p>Many countries require your passport to have a certain amount of validity left when you enter. Even if it hasn&#x27;t expired, you may not be able to travel if there isn&#x27;t enough time left.</p>
+            <p>How many months you need varies by country, so check with the embassy of where you&#x27;re going. In this article, I also compared whether each app keeps an eye on that day.</p>
+            <h2>The four apps at a glance</h2>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">App</th><th scope="col">Ratings</th><th scope="col">Six-month rule</th><th scope="col">When it notifies you</th><th scope="col">Family documents</th><th scope="col">Free version</th></tr></thead><tbody><tr><th scope="row">PassportAlert (my app)</th><td>0</td><td>Treats the six-month day as the deadline</td><td>90, 30, and 7 days before that day, and on it</td><td>Separate by name</td><td>Up to 3 documents</td></tr><tr><th scope="row">Koshinbi</th><td>0</td><td>Tells you the day it drops under six months</td><td>Several times, starting 180 days ahead for passports</td><td>Unlimited family profiles in the paid version</td><td>Up to 3 documents</td></tr><tr><th scope="row">ID Expiry Reminder</th><td>0</td><td>Not mentioned</td><td>90, 60, 30, and 7 days before, and on the day</td><td>Not mentioned</td><td>Every feature free, with ads</td></tr><tr><th scope="row">RenewalKit</th><td>1</td><td>Not mentioned</td><td>You choose the timing</td><td>Organize by person, as an extra purchase</td><td>1 item</td></tr></tbody></table></div>
+            <h2>Each app, one by one</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/dc/b1/69/dcb169ad-25fe-705e-9a47-f47985380cf3/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">I made this</span>
+                    <h3 class="guide-app-name">PassportAlert: Visa Expiry</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · 0 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6782294746" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>When you add a passport, it counts down to the day six months before it expires. You can see at a glance whether it&#x27;s fine for travel, short on validity, or expired. You can change the number of months for each document.</p>
+            <p>It notifies you 90, 30, and 7 days before the six-month day, and on that day. It also tells you again on the actual expiry date, and once it has expired, it reminds you every day until you renew. Visas, residence cards, and working holiday visas can go in too.</p>
+            <p>Add a name to each document and you can keep your family&#x27;s papers apart. The free version holds up to 3 documents. More than that, plus a renewal history, comes with Premium.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/94/b5/d0/94b5d0ee-5140-c4f4-b017-e2a37d7b6157/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Koshinbi: Passport and Residence Card Expiry</h3>
+                    <p class="guide-app-meta">XIAOYU YANG · 0 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6815148748" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>Its strength is that it tells you not just the deadline but also when you can start the paperwork. It also shows the day your passport drops under six months, with links to the official websites.</p>
+            <p>Passports and residence cards get several notifications starting 180 days ahead, and other documents starting 90 days ahead. Because you can add residence cards and re-entry permits, it also suits foreign residents in Japan. Even for free, you get every notification and guide for up to 3 documents.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/fc/16/78/fc1678a8-c9c2-61cd-f072-701d2b4a2a99/AppIcon-0-0-1x_U007epad-0-6-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">ID Expiry Reminder</h3>
+                    <p class="guide-app-meta">Yasuhiro Hamada · 0 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6754081427" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>This app keeps the expiry dates of your passport, driver&#x27;s license, My Number card, and certificates in one place. You only enter a label and a date, and it blocks you if you try to type in a document number.</p>
+            <p>It notifies you five times, at 90, 60, 30, and 7 days before and on the day. There are Lock Screen widgets too. Every feature is free, and you can remove ads with a one-time purchase.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/6e/a6/31/6ea631b0-bf21-5c72-c09a-c8284b722580/RenewalKit-0-0-1x_U007epad-0-1-sRGB-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Remind Me with OCR: RenewalKit</h3>
+                    <p class="guide-app-meta">emonster Inc. · 1 App Store rating</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6758590671" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>Photograph a document and on-device text recognition reads the date and suggests it. Besides passports and visas, you can add insurance, membership cards, and warranties.</p>
+            <p>The free version covers one item with every feature. For more, you can choose a one-time purchase for up to 10, an unlimited one-time purchase, or a monthly or yearly plan.</p>
+            <h2>If you&#x27;d rather not install an app</h2>
+            <p>You can also add the day six months before expiry to your iPhone calendar as an event, with an alert a few days ahead. With a big family, though, that&#x27;s one event per document, and an app becomes easier.</p>
+            <h2>Which one to pick</h2>
+            <ul class="guide-list"><li>If you also have a residence card and want to know when you can start renewing, Koshinbi</li><li>If you want it free, alongside your driver&#x27;s license and My Number card, ID Expiry Reminder</li><li>If you want to add documents by taking a photo, RenewalKit</li><li>If you want the six-month day as your deadline and daily reminders once it expires, PassportAlert</li></ul>
+            <h2>FAQ</h2>
+            <dl class="guide-faq">
+                <dt>Are they free?</dt><dd>All four are free to download. PassportAlert and Koshinbi are free for up to 3 documents, and RenewalKit for 1. ID Expiry Reminder has every feature free.</dd>
+                <dt>How many months do I need left to travel?</dt><dd>It depends on the country. The apps only show a general guideline, so check the latest requirements with the embassy of your destination.</dd>
+                <dt>Do I have to enter my passport number?</dt><dd>PassportAlert has a field for the number, but you can leave it empty. ID Expiry Reminder deliberately blocks you from entering a number.</dd>
+            </dl>
+            <p>PassportAlert has no ratings yet. I&#x27;d love to hear from anyone who sets it up before their next trip ✈️</p>
+            <div class="guide-notes">Features and rating counts were checked against each app&#x27;s App Store description on November 15, 2026, and may change with updates. For entry requirements and renewal procedures, follow the latest guidance from Japan&#x27;s Ministry of Foreign Affairs and each country&#x27;s embassy.</div>
+        </div>
+
+        <nav class="post-navigation">
+            <img class="tk-char tk-char--post" src="/assets/images/character-hang.png" alt="" width="381" height="208">
+            <a href="/blog/guides/" class="nav-link-wrapper"><span>&larr; <span class="i18n-ja">困りごとから選ぶアプリの一覧へ</span><span class="i18n-en">All guides: apps for everyday problems</span></span></a>
+        </nav>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
+                    <p class="footer-description"><span class="i18n-ja">誰も作らないものを、まじめに作る</span><span class="i18n-en">I make things nobody else would, and I make them seriously</span></p>
+                </div>
+                <div class="footer-nav">
+                    <a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
+                    <a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
+                    <a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
+                    <a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ryo Tsuzukihashi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

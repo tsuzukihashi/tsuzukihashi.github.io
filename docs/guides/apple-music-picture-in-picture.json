@@ -1,0 +1,220 @@
+{
+  "slug": "apple-music-picture-in-picture",
+  "date_published": "2026-11-15",
+  "date_updated": "2026-11-15",
+  "search_phrase": {
+    "ja": "Apple Music ピクチャインピクチャ",
+    "en": "Apple Music Picture in Picture"
+  },
+  "evidence": "2026-11-15 に Google の検索候補で「apple music ピクチャインピクチャ」がそのまま候補に出て、「ミュージック ピクチャ イン ピクチャ」の3件中にも「ピクチャ イン ピクチャ アップル ミュージック」があった。同じ日の App Store で「PiP 音楽」「ピクチャインピクチャ 音楽」を検索すると、並ぶのはYouTubeなどの動画を流すアプリばかりで、ミュージックライブラリの曲をピクチャインピクチャで流すアプリはPIPMPのほかに見つからなかったので、比べる相手なしの1本にした。",
+  "title": {
+    "ja": "Apple Musicの曲をピクチャインピクチャの小窓で流すには",
+    "en": "How to Play Your Apple Music Songs in a Picture in Picture Window"
+  },
+  "description": {
+    "ja": "ミュージックAppの曲を、ピクチャインピクチャの小窓で流す方法をまとめました。標準の機能でできることと、PIPMPでできることを書いています。PIPMPの作者が書いています。",
+    "en": "How to play songs from the iPhone Music app in a small Picture in Picture window: what the built-in features can do, and what PIPMP adds. Written by the maker of PIPMP."
+  },
+  "excerpt": {
+    "ja": "ミュージックAppの曲を小窓で流したい人へ。標準の機能でできることと、PIPMPでできることを、作った僕が書いています。",
+    "en": "Want your Music app songs in a small floating window? What iPhone can do on its own, and what PIPMP adds, from the person who made it."
+  },
+  "category": {
+    "ja": "アプリの選び方",
+    "en": "App guides"
+  },
+  "reading_minutes": 3,
+  "author": {
+    "name": {
+      "ja": "續橋 涼",
+      "en": "Ryo Tsuzukihashi"
+    },
+    "handle": "tsuzuki817",
+    "bio": {
+      "ja": "2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。PIPMPの作者です。",
+      "en": "I've been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made PIPMP."
+    },
+    "url": "https://tsuzukit.com/about/",
+    "same_as": [
+      "https://x.com/tsuzuki817"
+    ]
+  },
+  "tldr": {
+    "ja": "ミュージックAppの再生画面は、ピクチャインピクチャで小さく浮かせられません。操作だけならコントロールセンターやロック画面で足ります。ジャケットと曲名を画面の端に出したまま、ほかのアプリを使いたい人は、僕が作ったPIPMPを見てみてください。",
+    "en": "The Music app's now-playing screen can't float in Picture in Picture. If you only need the controls, Control Center and the Lock Screen are enough. If you want the album art and title to stay in the corner while you use other apps, take a look at PIPMP, which I made."
+  },
+  "disclosure": {
+    "ja": "この記事は、PIPMPを作った僕が書いています。ほかのアプリとは比べておらず、だれからもお金はもらっていません。PIPMPの機能はアプリのコードで、評価の件数はApp Storeで確かめました（2026年11月15日時点）。",
+    "en": "I made PIPMP, and I wrote this article. It doesn't compare other apps, and nobody paid me for it. PIPMP's features were checked against its own code, and its rating count against the App Store, as of November 15, 2026."
+  },
+  "own_app": "1612260255",
+  "app_category": "MusicApplication",
+  "apps": [
+    {
+      "id": "1612260255",
+      "name": {
+        "ja": "PIPMP",
+        "en": "PIPMP"
+      },
+      "short": {
+        "ja": "PIPMP",
+        "en": "PIPMP"
+      },
+      "developer": "Ryo Tsudukihashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/cf/53/cd/cf53cdb6-bee4-40d9-85bb-a26d43667437/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id1612260255",
+      "android_url": null,
+      "rating_count": 27
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ja": "ミュージックAppだけでできること",
+        "en": "What the Music app can do on its own"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "ミュージックAppで曲を聴いているときの画面は、動画のようにピクチャインピクチャで小さく浮かせることができません。",
+            "en": "The Music app's now-playing screen can't float in a small Picture in Picture window the way a video can."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "再生や一時停止、曲送りなら、コントロールセンターやロック画面からできます。Dynamic Islandがある機種なら、そこにも再生中の曲が出ます。操作だけなら、これで足りる人も多いと思います。",
+            "en": "Play, pause, and skip are available from Control Center and the Lock Screen. On models with a Dynamic Island, the current song shows up there too. If you only need the controls, that may be enough."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "ほかのアプリを使いながら、ジャケットと曲名をずっと画面の端に出しておきたい。そういうときにアプリの出番です。",
+            "en": "An app comes in when you want the album art and song title to stay on the edge of your screen while you use other apps."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "PIPMPでできること",
+        "en": "What PIPMP does"
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "id": "1612260255"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "PIPMPは、ピクチャインピクチャの小さな窓で曲を流す音楽プレーヤーです。窓は、ほかのアプリを開いても画面の上に残ります。",
+            "en": "PIPMP is a music player that plays songs in a small Picture in Picture window. The window stays on top of your screen when you open other apps."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "窓には、ジャケット、曲名、アーティスト名、いまの再生位置と曲の長さが出ます。窓の中のボタンで、一時停止と再生、少し先や少し前へ飛ばすことができます。",
+            "en": "The window shows the album art, song title, artist, and how far into the song you are out of its length. Buttons in the window let you pause and play, and skip a little forward or back."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "流せるのは、ミュージックライブラリの曲です。ライブラリ、プレイリスト、最近再生した曲から選べて、ライブラリの中を検索することもできます。使うには、ミュージックライブラリへのアクセスを許可します。",
+            "en": "It plays songs from your music library. You can pick from your library, your playlists, or recently played songs, and search within your library. It needs permission to access your music library."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "窓を閉じると、曲も止まります。ずっと流したいときは、窓を画面の端に寄せておくのがいいですね。",
+            "en": "Closing the window stops the music too. If you want it to keep playing, slide the window to the edge of the screen instead."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "無料で使えて、アプリの中に広告が出ます。サブスクリプションのサポーターになると、広告が出なくなります。",
+            "en": "It's free, with ads in the app. Becoming a Supporter, which is a subscription, turns the ads off."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "こんな人に向いています",
+        "en": "Who it's for"
+      },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "ja": "ほかのアプリを使いながら、いま流れている曲を目で見ていたい人",
+              "en": "People who want to keep an eye on what's playing while they use other apps"
+            },
+            {
+              "ja": "ジャケットを小さく浮かせて、画面の飾りのように楽しみたい人",
+              "en": "People who like having the album art floating on screen like a little decoration"
+            },
+            {
+              "ja": "操作はコントロールセンターで十分なら、アプリは入れなくても大丈夫です",
+              "en": "If Control Center is enough for the controls, you don't need an app"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "ja": "YouTubeの音楽も小窓で流せますか？",
+        "en": "Can it play YouTube music in the small window?"
+      },
+      "a": {
+        "ja": "PIPMPが流すのはミュージックライブラリの曲だけです。YouTubeの動画は流せません。",
+        "en": "PIPMP only plays songs from your music library. It can't play YouTube videos."
+      }
+    },
+    {
+      "q": {
+        "ja": "Apple Musicの曲も流せますか？",
+        "en": "Does it play Apple Music songs?"
+      },
+      "a": {
+        "ja": "ライブラリに追加してある曲なら並びます。Apple Musicの曲を聴けるかどうかは、お使いのApple Musicの契約しだいです。",
+        "en": "Songs you've added to your library show up. Whether Apple Music songs play depends on your Apple Music subscription."
+      }
+    },
+    {
+      "q": {
+        "ja": "Androidでも使えますか？",
+        "en": "Is it on Android?"
+      },
+      "a": {
+        "ja": "PIPMPはiPhone向けのアプリで、Android版はありません。",
+        "en": "PIPMP is an iPhone app, and there is no Android version."
+      }
+    }
+  ],
+  "closing": {
+    "ja": "小窓でどんな曲が流れているのか、PIPMPを使っている人の画面をのぞいてみたいです😊",
+    "en": "I'd love to peek at what's playing in people's little PIPMP windows 😊"
+  },
+  "notes": {
+    "ja": "評価の件数は2026年11月15日にApp Storeで確かめたものです。iPhoneの機能やアプリの中身は、アップデートで変わることがあります。",
+    "en": "The rating count was checked on the App Store on November 15, 2026. iPhone features and the app itself may change with updates."
+  },
+  "illustration": {
+    "scene": "電車の座席。キャラが片手でスマホの地図（文字なし、道の線だけ）を見ている。画面の右下に、正方形の小さな窓がふわっと浮かんでいて、中に無地の色のジャケットが光っている。キャラはもう片方の手で、その窓の再生ボタンを指でつついている。",
+    "alt": {
+      "ja": "電車でスマホの地図を見ながら、画面の隅に浮かぶ小さな音楽の窓を操作するキャラクター",
+      "en": "The character on a train looking at a map on their phone while tapping a small music window floating in the corner"
+    }
+  }
+}

@@ -1,0 +1,455 @@
+{
+  "slug": "purchase-log-apps",
+  "date_published": "2026-11-15",
+  "date_updated": "2026-11-15",
+  "search_phrase": {
+    "ja": "買ったもの 記録 アプリ",
+    "en": "app to log the things you buy"
+  },
+  "evidence": "2026-11-15 に Google の検索候補で「買ったもの 記録」を引くと、6件中3件が「アプリ」付きで、うち1件は「買ったもの 記録 アプリ 写真」だった。「購入品 記録」も3件中1件が「アプリ」付き。同じ日に App Store で「買ったもの 記録」を検索すると、上位は家計簿のアプリが占めていて、物を写真と一緒に残すアプリは評価65件以下のものが数本だった。",
+  "title": {
+    "ja": "買ったものを写真で記録するアプリ4選",
+    "en": "4 Apps for Logging the Things You Buy, with Photos"
+  },
+  "description": {
+    "ja": "買ったものを写真と一緒に記録するアプリを4本比べました。金額を残せるか、人に見せるか、無料の範囲の違いをまとめています。monoの作者が書いています。",
+    "en": "I compared four iPhone apps for logging the things you buy along with photos: whether they keep the price, whether others can see it, and what's free. Written by the maker of mono."
+  },
+  "excerpt": {
+    "ja": "写真、金額、人に見せるか、無料の範囲で4本を比べました。monoを作った僕が、自分のアプリも入れて書いています。",
+    "en": "Four apps compared on photos, prices, sharing, and what's free. I made mono, and it's one of the four."
+  },
+  "category": {
+    "ja": "アプリの選び方",
+    "en": "App guides"
+  },
+  "reading_minutes": 4,
+  "author": {
+    "name": {
+      "ja": "續橋 涼",
+      "en": "Ryo Tsuzukihashi"
+    },
+    "handle": "tsuzuki817",
+    "bio": {
+      "ja": "2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。monoの作者です。",
+      "en": "I've been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made mono."
+    },
+    "url": "https://tsuzukit.com/about/",
+    "same_as": [
+      "https://x.com/tsuzuki817"
+    ]
+  },
+  "tldr": {
+    "ja": "自分だけの記録にしたいなら、端末の中だけで完結する購入リストやモノミチが向いてます。家電や家具を何年使っているかを見たいならながもち。買ったものを写真とエピソードで残して、同じ趣味の人に見てもらいたいなら、僕が作ったmonoも見てみてください。",
+    "en": "If you want a log that's just for you, Purchase List or Monomichi keep everything on your phone. If you want to see how many years you've used your appliances and furniture, try Nagamochi. If you want to keep what you bought with photos and the story behind it, and let people with the same interests see it, take a look at mono, which I made."
+  },
+  "disclosure": {
+    "ja": "この記事は、monoを作った僕が書いています。ほかの3本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。",
+    "en": "I made mono, and I wrote this article. The other three apps are by developers I don't know, and I haven't received money or anything else from them. Everything compared here comes from each app's App Store description and rating count as of November 15, 2026."
+  },
+  "own_app": "6743043894",
+  "app_category": "SocialNetworkingApplication",
+  "apps": [
+    {
+      "id": "6743043894",
+      "name": {
+        "ja": "mono ~お迎えした喜びを分かち合うアプリ~",
+        "en": "mono - Share the Joy of New Finds"
+      },
+      "short": {
+        "ja": "mono",
+        "en": "mono"
+      },
+      "developer": "Ryo Tsudukihashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/45/04/f7/4504f78c-6887-250e-6069-44754bec38f2/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6743043894",
+      "android_url": null,
+      "rating_count": 1
+    },
+    {
+      "id": "6466980685",
+      "name": {
+        "ja": "購入リスト - 買ったものを記録する為のアプリ",
+        "en": "Purchase List | Shopping list"
+      },
+      "short": {
+        "ja": "購入リスト",
+        "en": "Purchase List"
+      },
+      "developer": "naoki otsu",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/bb/e6/9c/bbe69c35-bc9b-fcb2-5a9e-b23605017371/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6466980685",
+      "android_url": null,
+      "rating_count": 65
+    },
+    {
+      "id": "6769751136",
+      "name": {
+        "ja": "ながもち｜持ち物と使用年数の記録",
+        "en": "Nagamochi - Your Belongings and How Long You’ve Used Them"
+      },
+      "short": {
+        "ja": "ながもち",
+        "en": "Nagamochi"
+      },
+      "developer": "NAGAMOCHI LAB",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/32/52/63/32526304-3980-580e-490b-8a4a8b8f64d9/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6769751136",
+      "android_url": null,
+      "rating_count": 6
+    },
+    {
+      "id": "6808812618",
+      "name": {
+        "ja": "モノミチ｜買ったモノの道のりを動画に",
+        "en": "Monomichi - The Life of Things You Bought, as a Video"
+      },
+      "short": {
+        "ja": "モノミチ",
+        "en": "Monomichi"
+      },
+      "developer": "syoutarou ookura",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/45/1a/3b/451a3bbb-f4fc-0c1c-8d8e-b270f292ad73/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6808812618",
+      "android_url": null,
+      "rating_count": 0
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ja": "4本をざっくり比べる",
+        "en": "The four apps at a glance"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "違いが出るのは、金額まで残せるかと、記録をほかの人に見せる作りかどうかです。",
+            "en": "Where they really differ is whether they keep the price, and whether the log is something other people can see."
+          }
+        },
+        {
+          "type": "table",
+          "head": [
+            {
+              "ja": "アプリ",
+              "en": "App"
+            },
+            {
+              "ja": "評価の件数",
+              "en": "Ratings"
+            },
+            {
+              "ja": "写真",
+              "en": "Photos"
+            },
+            {
+              "ja": "金額",
+              "en": "Price"
+            },
+            {
+              "ja": "ほかの人に見せる",
+              "en": "Visible to others"
+            },
+            {
+              "ja": "無料の範囲",
+              "en": "What's free"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ja": "mono（僕のアプリ）",
+                "en": "mono (my app)"
+              },
+              {
+                "ja": "1件",
+                "en": "1"
+              },
+              {
+                "ja": "あり",
+                "en": "Yes"
+              },
+              {
+                "ja": "買った金額",
+                "en": "What you paid"
+              },
+              {
+                "ja": "公開が基本。1件ずつ非公開にできる",
+                "en": "Public by default. Each post can be made private"
+              },
+              {
+                "ja": "1日3件まで投稿",
+                "en": "Up to 3 posts a day"
+              }
+            ],
+            [
+              {
+                "ja": "購入リスト",
+                "en": "Purchase List"
+              },
+              {
+                "ja": "65件",
+                "en": "65"
+              },
+              {
+                "ja": "あり",
+                "en": "Yes"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "なし。端末の中だけ",
+                "en": "No. Stays on your phone"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              }
+            ],
+            [
+              {
+                "ja": "ながもち",
+                "en": "Nagamochi"
+              },
+              {
+                "ja": "6件",
+                "en": "6"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "年ごとの出費を見る機能あり",
+                "en": "Has a yearly spending view"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "登録する数に制限なし",
+                "en": "No limit on items"
+              }
+            ],
+            [
+              {
+                "ja": "モノミチ",
+                "en": "Monomichi"
+              },
+              {
+                "ja": "0件",
+                "en": "0"
+              },
+              {
+                "ja": "あり",
+                "en": "Yes"
+              },
+              {
+                "ja": "買値、送料、修理代、売れた金額",
+                "en": "Price paid, shipping, repairs, and what it sold for"
+              },
+              {
+                "ja": "なし。端末の中だけ",
+                "en": "No. Stays on your phone"
+              },
+              {
+                "ja": "モノ15点、写真40枚まで",
+                "en": "Up to 15 items and 40 photos"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "1本ずつ見ていく",
+        "en": "Each app, one by one"
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "id": "6743043894"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "買ったものを写真と一緒に投稿して、名前、買った日、買った場所、買った金額、ブランドを残せます。買ったときのいきさつは300文字まで書けて、コレクションにまとめておけます。",
+            "en": "You post what you bought with a photo, along with its name, the date and place you bought it, what you paid, and the brand. You can write up to 300 characters about how it came home with you, and group items into collections."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "ほかの人をフォローしたり、投稿にコメントしたりできるSNSの作りです。投稿は公開が基本で、あとから1件ずつ非公開に切り替えられます。自分だけの記録にしたい人には、ほかの3本のほうが合うと思います。",
+            "en": "It's built like a social network, where you can follow people and comment on posts. Posts are public by default, and you can switch each one to private afterward. If you want a log that's only for you, the other three will probably suit you better."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "使うにはAppleかGoogleのアカウントでログインします。無料だと投稿は1日3件まで、コレクションは4つまでで、プレミアムにすると1日10件まで投稿できて広告が消えます。",
+            "en": "You sign in with your Apple or Google account. On the free plan you can post up to 3 times a day and make up to 4 collections. Premium raises that to 10 posts a day and removes the ads."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6466980685"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "評価が65件あって、この中ではいちばん使われています。カメラで撮るか写真を選んでアイテムを作り、タブで分けて並べ替えたり検索したりできます。",
+            "en": "With 65 ratings, it's the most used of the four. You create items by taking a photo or picking one, then sort them into tabs, reorder them, and search."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "ログインは要らず、データは端末の外に送られないと書かれています。CSVで書き出せて、生体認証でロックもかけられます。説明文の中身は買い物リストに近いので、買う前のメモにも使えそうです。",
+            "en": "The description says there's no login and your data never leaves your phone. You can export to CSV and lock the app with Face ID or Touch ID. The description reads a lot like a shopping list, so it could work for notes before you buy, too."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6769751136"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "家電、家具、服、ガジェットのような大きな買い物を、いつ買ったかで記録するアプリです。横に伸びるタイムラインで、それぞれ何年使っているかが見えます。",
+            "en": "This one logs bigger purchases like appliances, furniture, clothes, and gadgets by when you bought them. A sideways timeline shows how many years you've been using each one."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "前に使っていたものとつないで、何代目かを残せます。登録を続けると、年ごとの出費のような機能が少しずつ開く作りです。CSVの書き出しとバックアップにも対応しています。",
+            "en": "You can link an item to the one it replaced to keep track of generations. As you keep logging, features like yearly spending unlock little by little. It also supports CSV export and backups."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6808812618"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "買ったあとの道のりを残す台帳です。運んだ、使った、壊れた、直した、手放した、を日付と一緒に書けて、買値や修理代も残せます。",
+            "en": "It's a ledger for what happens after you buy something. You can log when it was moved, used, broken, repaired, or let go, along with the price you paid and repair costs."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "記録がたまると、年表のスライドショーや1日あたりの負担額のグラフなどの動画にできます。アカウントも広告もなく、全部端末の中に保存されます。無料はモノ15点と写真40枚までで、上限と残りの動画の形は買い切りで外せます。",
+            "en": "Once you've logged enough, it turns the history into videos like a timeline slideshow or a graph of cost per day. There's no account and no ads, and everything stays on your phone. The free version covers 15 items and 40 photos, and a one-time purchase removes the limits and unlocks the other video styles."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "アプリを入れたくないなら",
+        "en": "If you'd rather not install an app"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "iPhoneの写真アプリに、買ったもの用のアルバムを1つ作るだけでも残せます。写真のキャプションに、買った日と金額を書いておけば検索でも見つかります。",
+            "en": "You can also just make one album in the iPhone Photos app for things you bought. Write the date and price in each photo's caption and you can find them with search."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "ただ、合計の金額やコレクションごとのまとまりは自分で数えることになります。そこを任せられるのが専用のアプリですね。",
+            "en": "What you lose is totals and grouping by collection, which you'd have to work out yourself. That's what the dedicated apps take off your hands."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "どれを選ぶか",
+        "en": "Which one to pick"
+      },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "ja": "ログインなしで、写真付きのリストをすぐ作りたいなら、購入リスト",
+              "en": "If you want a photo list right away with no login, Purchase List"
+            },
+            {
+              "ja": "家電や家具を何年使っているかを見たいなら、ながもち",
+              "en": "If you want to see how many years you have used your appliances and furniture, Nagamochi"
+            },
+            {
+              "ja": "買ったあとの修理や手放すまでを残したいなら、モノミチ",
+              "en": "If you want to record repairs and everything up to letting something go, Monomichi"
+            },
+            {
+              "ja": "買ったものの写真とエピソードを、同じ趣味の人と見せ合いたいなら、mono",
+              "en": "If you want to share photos and stories of your finds with people who like the same things, mono"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "ja": "自分だけの記録にできますか？",
+        "en": "Can I keep the log private?"
+      },
+      "a": {
+        "ja": "購入リストとモノミチは、説明文に端末の外へ送らないと書かれています。monoは投稿が公開の状態で始まるので、1件ずつ非公開に切り替えて使う形になります。",
+        "en": "Purchase List and Monomichi both say in their descriptions that nothing leaves your phone. mono posts start out public, so you'd switch each one to private."
+      }
+    },
+    {
+      "q": {
+        "ja": "無料で使えますか？",
+        "en": "Are they free?"
+      },
+      "a": {
+        "ja": "4本とも無料で入れられます。monoは無料だと1日3件まで、モノミチは無料だとモノ15点までです。",
+        "en": "All four are free to download. mono's free plan allows 3 posts a day, and Monomichi's free version covers 15 items."
+      }
+    },
+    {
+      "q": {
+        "ja": "家計簿の代わりになりますか？",
+        "en": "Can it replace a budgeting app?"
+      },
+      "a": {
+        "ja": "どれも、1つ1つの物を残すためのアプリです。毎月の支出をまとめて管理したいなら、家計簿のアプリと分けて使うほうが向いてます。",
+        "en": "All four are for keeping track of individual things. If you want to manage your monthly spending as a whole, a budgeting app alongside one of these will fit better."
+      }
+    }
+  ],
+  "closing": {
+    "ja": "monoの評価はまだ1件なので、お迎えしたものを見せてもらえたらうれしいです📦",
+    "en": "mono only has one rating so far, so I'd love to see what you've brought home 📦"
+  },
+  "notes": {
+    "ja": "各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。monoの無料とプレミアムの境目と公開の設定は、アプリのコードで確かめました。アップデートで変わることがあります。",
+    "en": "Features and rating counts were checked against each app's App Store description on November 15, 2026. What's free and what's Premium in mono, and how its privacy setting works, were checked in the app's code. Things may change with updates."
+  },
+  "illustration": {
+    "scene": "部屋の床で、キャラが届いたばかりの箱から出したスニーカーを両手で持ち上げ、目の前に立てたスマホで撮ろうとしている。後ろの壁には、これまで撮ったもの（ランプ、植物、マグカップ）の小さな写真が3枚貼ってある。",
+    "alt": {
+      "ja": "届いたスニーカーをスマホで撮ろうとするキャラクターと、壁に貼られたこれまでの買い物の写真",
+      "en": "The character holding up a new pair of sneakers to photograph, with photos of earlier finds pinned on the wall"
+    }
+  }
+}

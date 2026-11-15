@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/js/lang.js"></script>
+    <!-- このページは scripts/build_guides.py が docs/guides/baken-image-maker.json から作る。直すのは JSON のほう -->
+    <title>推しの名前で馬券風の画像を作るには - Blog | Ryo Tsuzukihashi</title>
+    <meta name="description" content="推しの名前や好きな言葉で、JRA風の馬券の画像を作る方法をまとめました。作れる券種と、本物の馬券ではないことを書いています。馬券ジェネレーターの作者が書いています。">
+    <meta name="title-en" content="How to Make a Horse Racing Ticket Image with Your Fave&#x27;s Name - Blog | Ryo Tsuzukihashi">
+    <meta name="description-en" content="How to make a JRA-style horse racing ticket image with your fave&#x27;s name or any words you like: which ticket types you can make, and why it isn&#x27;t a real ticket. Written by the maker of Betting Ticket Generator.">
+    <link rel="canonical" href="https://tsuzukit.com/blog/posts/baken-image-maker.html">
+
+    <!-- OGP -->
+    <meta property="og:title" content="推しの名前で馬券風の画像を作るには">
+    <meta property="og:description" content="推しの名前や好きな言葉で、JRA風の馬券の画像を作る方法をまとめました。作れる券種と、本物の馬券ではないことを書いています。馬券ジェネレーターの作者が書いています。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://tsuzukit.com/blog/posts/baken-image-maker.html">
+    <meta property="og:image" content="https://tsuzukit.com/assets/images/posts/baken-image-maker.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://tsuzukit.com/assets/images/posts/baken-image-maker.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-dark-32x32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-dark-16x16.png" media="(prefers-color-scheme: dark)">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERPQ1EGLH');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8240751277462688"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
+    <link rel="stylesheet" href="/assets/css/guide.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "推しの名前で馬券風の画像を作るには",
+      "description": "推しの名前や好きな言葉で、JRA風の馬券の画像を作る方法をまとめました。作れる券種と、本物の馬券ではないことを書いています。馬券ジェネレーターの作者が書いています。",
+      "image": "https://tsuzukit.com/assets/images/posts/baken-image-maker.webp",
+      "datePublished": "2026-11-15",
+      "dateModified": "2026-11-15",
+      "inLanguage": "ja",
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "mainEntityOfPage": "https://tsuzukit.com/blog/posts/baken-image-maker.html",
+      "about": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "馬券ジェネレーター",
+          "url": "https://apps.apple.com/jp/app/id6757259211",
+          "operatingSystem": "iOS"
+        }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "馬券ジェネレーター",
+      "operatingSystem": "iOS",
+      "applicationCategory": "EntertainmentApplication",
+      "url": "https://apps.apple.com/jp/app/id6757259211",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "作った画像を印刷できますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "写真アプリに保存されるので、そこから印刷できます。本物の馬券と見分けがつかない使い方はしないでください。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "このアプリで馬券を買えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "買えません。画像を作るだけのアプリで、お金のやりとりは何もありません。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Androidでも使えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "馬券ジェネレーターはiPhone向けのアプリで、Android版はありません。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tsuzukit.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://tsuzukit.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "困りごとから選ぶアプリ",
+          "item": "https://tsuzukit.com/blog/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "推しの名前で馬券風の画像を作るには",
+          "item": "https://tsuzukit.com/blog/posts/baken-image-maker.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">TsuzuKit</a>
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/portfolio/" class="nav-link">Portfolio</a>
+                <a href="/blog/" class="nav-link active">Blog</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post -->
+    <article class="blog-post">
+        <header class="post-header">
+            <div class="post-meta">
+                <span class="post-date">2026.11.15</span>
+                <span class="post-category"><span class="i18n-ja">アプリの選び方</span><span class="i18n-en">App guides</span></span>
+                <span class="post-reading-time"><span class="i18n-ja">3分で読める</span><span class="i18n-en">3 min read</span></span>
+            </div>
+            <h1 class="post-title"><span class="i18n-ja">推しの名前で馬券風の画像を作るには</span><span class="i18n-en">How to Make a Horse Racing Ticket Image with Your Fave&#x27;s Name</span></h1>
+        </header>
+        <figure class="post-illustration guide-illustration"><img src="/assets/images/posts/baken-image-maker.webp" width="1200" height="800" alt="誕生日パーティーで、額に入ったチケット風のカードを友だちに手渡すキャラクター" data-en-alt="The character handing a friend a framed ticket-style card at a birthday party" fetchpriority="high"></figure>
+
+        <div class="post-content guide i18n-ja">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">先に答え</p>
+                <p>馬券風の画像は、僕が作った馬券ジェネレーターで作れます。馬名と金額を自由に入れて、単勝から3連単まで選べて、写真アプリに保存できます。作るのは画像だけなので、お金は動かず、本物の馬券として使うことはできません。</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">書いた人 <a href="https://tsuzukit.com/about/">續橋 涼</a>（@tsuzuki817）</p>
+                    <p class="guide-byline-bio">2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。馬券ジェネレーターの作者です。</p>
+                    <p class="guide-byline-date">公開 <time datetime="2026-11-15">2026.11.15</time> · 更新 <time datetime="2026-11-15">2026.11.15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">この記事は、馬券ジェネレーターを作った僕が書いています。ほかのアプリとは比べておらず、だれからもお金はもらっていません。機能はアプリのコードとApp Storeの説明文で、評価の件数はApp Storeで確かめました（2026年11月15日時点）。</p>
+            <h2>馬券ジェネレーターで作れるもの</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ce/90/71/ce90711a-ec88-3aa2-25b8-68c2481d2cce/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">僕が作ったアプリ</span>
+                    <h3 class="guide-app-name">馬券ジェネレーター</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · App Storeの評価 0件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6757259211" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>JRA風の馬券の画像を作るアプリです。馬名と金額は自由に入れられるので、推しの名前の馬券や、友だちへのネタのプレゼントが作れます。</p>
+            <p>券種は、単勝、複勝、枠連、馬連、ワイド、馬単、3連複、3連単から選べます。買い方も、通常、ながし、ボックス、フォーメーションの4つから選べます。競馬場やレース名、日付も入れられます。</p>
+            <p>できた画像は写真アプリに保存できて、作った馬券は履歴に残ります。そのまま共有もできます。</p>
+            <p>無料で作れます。何枚か保存すると、短い広告を見るかどうかを聞く画面が出ます。広告を消すのは買い切りのプレミアムです。</p>
+            <h2>本物の馬券ではありません</h2>
+            <p>このアプリで作るのは、馬券の形をした画像です。お金は動きませんし、競馬場で使うこともできません。</p>
+            <p>ジョークやエンターテイメントとして楽しんでください。本物と見分けがつかない形で人に渡したり、本物のように使ったりはしないでくださいね。</p>
+            <h2>こんなときに</h2>
+            <ul class="guide-list"><li>推しの名前を馬名にした、記念の1枚を作りたいとき</li><li>友だちの誕生日に、ネタのプレゼントを添えたいとき</li><li>SNSに載せる、ちょっと笑える画像がほしいとき</li></ul>
+            <h2>よくある質問</h2>
+            <dl class="guide-faq">
+                <dt>作った画像を印刷できますか？</dt><dd>写真アプリに保存されるので、そこから印刷できます。本物の馬券と見分けがつかない使い方はしないでください。</dd>
+                <dt>このアプリで馬券を買えますか？</dt><dd>買えません。画像を作るだけのアプリで、お金のやりとりは何もありません。</dd>
+                <dt>Androidでも使えますか？</dt><dd>馬券ジェネレーターはiPhone向けのアプリで、Android版はありません。</dd>
+            </dl>
+            <p>どんな馬名の馬券ができたのか、ちょっと見てみたいです🐎</p>
+            <div class="guide-notes">評価の件数は2026年11月15日にApp Storeで確かめたものです。アプリの中身はアップデートで変わることがあります。このアプリで作る画像は本物の馬券ではなく、ジョークとエンターテイメントのためのものです。</div>
+        </div>
+
+        <div class="post-content guide i18n-en">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">Short answer</p>
+                <p>You can make betting-ticket-style images with Betting Ticket Generator, which I made. Type in any horse name and amount, pick anything from a win bet to a trifecta, and save it to Photos. It only makes images, so no money is involved and it can&#x27;t be used as a real ticket.</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">Written by <a href="https://tsuzukit.com/about/">Ryo Tsuzukihashi</a> (@tsuzuki817)</p>
+                    <p class="guide-byline-bio">I&#x27;ve been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made Betting Ticket Generator.</p>
+                    <p class="guide-byline-date">Published <time datetime="2026-11-15">2026-11-15</time> · Updated <time datetime="2026-11-15">2026-11-15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">I made Betting Ticket Generator, and I wrote this article. It doesn&#x27;t compare other apps, and nobody paid me for it. Features were checked against the app&#x27;s code and App Store description, and the rating count against the App Store, as of November 15, 2026.</p>
+            <h2>What Betting Ticket Generator makes</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ce/90/71/ce90711a-ec88-3aa2-25b8-68c2481d2cce/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">I made this</span>
+                    <h3 class="guide-app-name">Betting Ticket Generator</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · 0 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6757259211" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>It&#x27;s an app that makes images styled like JRA horse racing tickets. You can type in any horse name and any amount, so you can make a ticket with your fave&#x27;s name on it or a joke gift for a friend.</p>
+            <p>You can choose from win, place, bracket quinella, quinella, quinella place, exacta, trio, and trifecta. The bet style can be standard, wheel, box, or formation. You can also set the racecourse, race name, and date.</p>
+            <p>You can save the finished image to your Photos app, and every ticket you make stays in your history. You can share it straight from the app too.</p>
+            <p>Making tickets is free. After you save a few, the app asks whether you want to watch a short ad. Removing ads is a one-time Premium purchase.</p>
+            <h2>These aren&#x27;t real betting tickets</h2>
+            <p>What this app makes is an image shaped like a betting ticket. No money changes hands, and you can&#x27;t use it at a racecourse.</p>
+            <p>Please enjoy it as a joke or for fun. Don&#x27;t hand it to anyone in a way that passes it off as real, or try to use it like a real ticket.</p>
+            <h2>When it comes in handy</h2>
+            <ul class="guide-list"><li>When you want a keepsake with your fave&#x27;s name as the horse</li><li>When you want a joke gift for a friend&#x27;s birthday</li><li>When you want a funny image to post on social media</li></ul>
+            <h2>FAQ</h2>
+            <dl class="guide-faq">
+                <dt>Can I print the images?</dt><dd>They&#x27;re saved to your Photos app, so you can print from there. Please don&#x27;t use them in a way that could be mistaken for a real ticket.</dd>
+                <dt>Can I buy betting tickets in this app?</dt><dd>No. It only makes images, and no money is involved at all.</dd>
+                <dt>Is it on Android?</dt><dd>Betting Ticket Generator is an iPhone app, and there is no Android version.</dd>
+            </dl>
+            <p>I&#x27;m curious what horse names people come up with 🐎</p>
+            <div class="guide-notes">The rating count was checked on the App Store on November 15, 2026, and the app may change with updates. Images made with this app are not real betting tickets and are meant only as jokes and entertainment.</div>
+        </div>
+
+        <nav class="post-navigation">
+            <img class="tk-char tk-char--post" src="/assets/images/character-hang.png" alt="" width="381" height="208">
+            <a href="/blog/guides/" class="nav-link-wrapper"><span>&larr; <span class="i18n-ja">困りごとから選ぶアプリの一覧へ</span><span class="i18n-en">All guides: apps for everyday problems</span></span></a>
+        </nav>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
+                    <p class="footer-description"><span class="i18n-ja">誰も作らないものを、まじめに作る</span><span class="i18n-en">I make things nobody else would, and I make them seriously</span></p>
+                </div>
+                <div class="footer-nav">
+                    <a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
+                    <a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
+                    <a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
+                    <a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ryo Tsuzukihashi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

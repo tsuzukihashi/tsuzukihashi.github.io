@@ -1,0 +1,319 @@
+{
+  "slug": "letter-organizing-apps",
+  "date_published": "2026-11-15",
+  "date_updated": "2026-11-15",
+  "search_phrase": {
+    "ja": "手紙 整理 アプリ",
+    "en": "app to organize letters you have received"
+  },
+  "evidence": "2026-11-15 に Google の検索候補で「手紙 整理」を引くと12件出て、「100均」「ファイル」「収納」「ボックス」に混じって「手紙 整理 アプリ」があった。「手紙 スキャン」は3件中2件が「アプリ」付き。「もらった手紙」は12件すべてが保管、収納、捨てる、どうする、のような扱いに困っている形だった。同じ日に App Store で「手紙 整理」を検索すると、上位は学校のおたよりの整理やノートのアプリで、個人がもらった手紙を残すためのアプリは少なかった。",
+  "title": {
+    "ja": "もらった手紙を整理するアプリ2本と、アプリを使わない方法",
+    "en": "2 Apps for Organizing Letters You’ve Received, Plus Ways Without an App"
+  },
+  "description": {
+    "ja": "もらった手紙を整理して残すアプリを2本比べて、アプリを使わない方法もまとめました。写真で残せるか、文字を読み取れるか、無料の範囲の違いを書いています。言の葉箱の作者です。",
+    "en": "I compared two iPhone apps for keeping letters you've received, plus ways to do it without an app: saving photos, reading the handwriting, and what's free. Written by the maker of Kotonohabako."
+  },
+  "excerpt": {
+    "ja": "写真で残せるか、手書きの文字を読み取れるか、無料の範囲で2本を比べました。言の葉箱を作った僕が書いています。",
+    "en": "Two apps compared on saving photos, reading handwriting, and what's free. I made Kotonohabako, and it's one of the two."
+  },
+  "category": {
+    "ja": "アプリの選び方",
+    "en": "App guides"
+  },
+  "reading_minutes": 4,
+  "author": {
+    "name": {
+      "ja": "續橋 涼",
+      "en": "Ryo Tsuzukihashi"
+    },
+    "handle": "tsuzuki817",
+    "bio": {
+      "ja": "2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。言の葉箱の作者です。",
+      "en": "I've been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made Kotonohabako."
+    },
+    "url": "https://tsuzukit.com/about/",
+    "same_as": [
+      "https://x.com/tsuzuki817"
+    ]
+  },
+  "tldr": {
+    "ja": "手紙そのものを残したいなら、箱やファイルにしまうのがいちばん確かです。場所を取らずに読み返したいなら、写真に撮ってアプリに入れる手があります。差出人やもらった日で探したい人は、僕が作った言の葉箱を見てみてください。写真で残すのはプレミアムです。古い手書きの手紙を読みたいならHeirloomです。",
+    "en": "If you want to keep the letters themselves, a box or a file folder is the surest way. If you want to reread them without the clutter, you can photograph them and put them in an app. If you want to find letters by who sent them or when, take a look at Kotonohabako, which I made. Saving photos is Premium. If you want help reading old handwritten letters, try Heirloom."
+  },
+  "disclosure": {
+    "ja": "この記事は、言の葉箱を作った僕が書いています。Heirloomは知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。",
+    "en": "I made Kotonohabako, and I wrote this article. Heirloom is by a developer I don't know, and I haven't received money or anything else from them. Everything compared here comes from each app's App Store description and rating count as of November 15, 2026."
+  },
+  "own_app": "6749537777",
+  "app_category": "UtilitiesApplication",
+  "apps": [
+    {
+      "id": "6749537777",
+      "name": {
+        "ja": "言の葉箱 〜大切な手紙を簡単に記録〜",
+        "en": "Kotonohabako - Keep Your Precious Letters"
+      },
+      "short": {
+        "ja": "言の葉箱",
+        "en": "Kotonohabako"
+      },
+      "developer": "Ryo Tsudukihashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/39/9d/15/399d159d-d1b3-7547-f6f6-aa49dd81a7a5/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6749537777",
+      "android_url": null,
+      "rating_count": 1
+    },
+    {
+      "id": "6792422170",
+      "name": {
+        "ja": "Heirloom: 古い手紙を読む",
+        "en": "Heirloom: Old Letter Reader"
+      },
+      "short": {
+        "ja": "Heirloom",
+        "en": "Heirloom"
+      },
+      "developer": "Randy Torres",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/30/67/62/306762a3-76dd-ee66-53da-3d77aa47c763/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6792422170",
+      "android_url": null,
+      "rating_count": 0
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ja": "2本をざっくり比べる",
+        "en": "The two apps at a glance"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "どちらも手紙を写真で残せます。言の葉箱は整理して探すため、Heirloomは読めない字を読むため、と目的が違います。",
+            "en": "Both can keep a letter as photos. The difference is the goal. Kotonohabako is for organizing and finding letters, and Heirloom is for reading handwriting you can't make out."
+          }
+        },
+        {
+          "type": "table",
+          "head": [
+            {
+              "ja": "アプリ",
+              "en": "App"
+            },
+            {
+              "ja": "評価の件数",
+              "en": "Ratings"
+            },
+            {
+              "ja": "写真で残す",
+              "en": "Saving photos"
+            },
+            {
+              "ja": "手書きの文字",
+              "en": "Handwriting"
+            },
+            {
+              "ja": "無料で使える範囲",
+              "en": "What's free"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ja": "言の葉箱（僕のアプリ）",
+                "en": "Kotonohabako (my app)"
+              },
+              {
+                "ja": "1件",
+                "en": "1"
+              },
+              {
+                "ja": "プレミアム。1通に5枚まで",
+                "en": "Premium. Up to 5 photos per letter"
+              },
+              {
+                "ja": "読み取ってテキストにする",
+                "en": "Turns it into text you can search"
+              },
+              {
+                "ja": "差出人、もらった日、メモの記録と検索",
+                "en": "Logging and searching sender, date, and notes"
+              }
+            ],
+            [
+              {
+                "ja": "Heirloom",
+                "en": "Heirloom"
+              },
+              {
+                "ja": "0件",
+                "en": "0"
+              },
+              {
+                "ja": "5ページまで",
+                "en": "Up to 5 pages"
+              },
+              {
+                "ja": "AIで文字起こし。英訳と読み上げも",
+                "en": "AI transcription, plus English translation and read-aloud"
+              },
+              {
+                "ja": "最初の1ページ",
+                "en": "The first page"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "1本ずつ見ていく",
+        "en": "Each app, one by one"
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "id": "6749537777"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "もらった手紙を、差出人、受け取った人、もらった日、メモと一緒に記録します。差出人や言葉で探せて、カレンダーでいつ誰からもらったかを見返せます。ここまでは無料です。",
+            "en": "You log each letter with who sent it, who received it, the date you got it, and a note. You can search by sender or by words, and look back on a calendar to see who wrote to you and when. All of that is free."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "手紙と封筒の写真を残せるのはプレミアムです。1通に5枚まで撮れて、写真の文字を読み取ってテキストにするので、ありがとう、のような言葉でも探せるようになります。心に残った言葉をお守りとして取っておく機能も、プレミアムに入っています。",
+            "en": "Saving photos of the letter and envelope is Premium. You can take up to 5 photos per letter, and it reads the text in them, so you can search for a word like thank you. Keeping a line that stayed with you as a little charm is a Premium feature too."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "無料のままだと手紙そのものの写真は残らないので、そこは知ったうえで入れてください。",
+            "en": "On the free version the letter itself isn't saved as a photo, so keep that in mind before you install it."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6792422170"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "手書きの手紙や筆記体、古い日記をAIで文字に起こして、読みやすくしてくれるアプリです。日本語以外の文章は英語に訳せて、読み上げもできます。",
+            "en": "This app uses AI to transcribe handwritten letters, cursive, and old diaries into text that's easier to read. Text that isn't in English can be translated into English, and it can read the text aloud."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "1通につき5ページまで読み込めて、保存した手紙には元の写真が残るので、文字と見比べられます。最初の1ページは無料で、続けて読むには週払いか年払いのサブスクリプションです。読み取りには写真をサービスに送るので、インターネットが要ります。",
+            "en": "You can scan up to 5 pages per letter, and saved letters keep the original images so you can compare them with the text. The first page is free, and reading more takes a weekly or yearly subscription. Reading requires an internet connection because the photos are sent to its reading service."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "アプリを入れたくないなら",
+        "en": "If you'd rather not install an app"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "手紙そのものを残すなら、箱やファイルにしまうのが確かです。差出人ごとや年ごとに分けておくと、あとで探しやすくなります。",
+            "en": "To keep the letters themselves, a box or a file folder is the reliable way. Sorting them by sender or by year makes them easier to find later."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "写真でも残したいなら、iPhoneのメモアプリの書類のスキャンが使えます。1通を1つのメモにして、題名に差出人ともらった日を書いておけば、メモの検索で見つかります。",
+            "en": "If you also want photos, the document scanner in the iPhone Notes app works. Put each letter in its own note and title it with the sender and date, and Notes search will find it."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "どれを選ぶか",
+        "en": "Which one to pick"
+      },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "ja": "手紙そのものを手元に残したいなら、箱やファイル",
+              "en": "If you want to keep the letters themselves, a box or a file folder"
+            },
+            {
+              "ja": "古い手書きの手紙や、読めない字を読みたいなら、Heirloom",
+              "en": "If you want to read old handwritten letters or writing you can’t make out, Heirloom"
+            },
+            {
+              "ja": "差出人やもらった日で手紙を探したいなら、言の葉箱",
+              "en": "If you want to find letters by sender or by the date you got them, Kotonohabako"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "ja": "無料で手紙の写真を残せますか？",
+        "en": "Can I save photos of letters for free?"
+      },
+      "a": {
+        "ja": "言の葉箱は、写真がプレミアムです。Heirloomは最初の1ページが無料です。無料で写真を残すなら、iPhoneのメモアプリの書類のスキャンが使えます。",
+        "en": "In Kotonohabako, photos are Premium. Heirloom gives you the first page free. To save photos for free, use the document scanner in the iPhone Notes app."
+      }
+    },
+    {
+      "q": {
+        "ja": "手書きの文字は正しく読み取れますか？",
+        "en": "Does it read handwriting correctly?"
+      },
+      "a": {
+        "ja": "どちらのアプリも、字のくせや写真の写りで読み違えることがあります。名前や日付は、元の写真と見比べて確かめてください。",
+        "en": "Both apps can misread depending on the handwriting and the photo. Check names and dates against the original photo."
+      }
+    },
+    {
+      "q": {
+        "ja": "写真に撮ったら、手紙は捨ててもいいですか？",
+        "en": "Can I throw the letters away once I have photos?"
+      },
+      "a": {
+        "ja": "そこは人によると思います。捨てる前に、写真で読み返せるかを一度確かめておくと安心です。",
+        "en": "That's up to you. Before you let any go, it helps to check once that you can actually read them back from the photos."
+      }
+    }
+  ],
+  "closing": {
+    "ja": "言の葉箱にはまだ評価が1件だけなので、使ってくれた人の声を聞けたらうれしいです✉️",
+    "en": "Kotonohabako only has one rating so far, so I'd be glad to hear from anyone who uses it ✉️"
+  },
+  "notes": {
+    "ja": "各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。言の葉箱の無料とプレミアムの境目は、アプリのコードで確かめました。アップデートで変わることがあります。",
+    "en": "Features and rating counts were checked against each app's App Store description on November 15, 2026. What's free and what's Premium in Kotonohabako was checked in the app's code. Things may change with updates."
+  },
+  "illustration": {
+    "scene": "机の上に、手紙やはがきの小さな山（文字なし、線だけ）。キャラがスマホで1通ずつ撮っていて、撮り終わった手紙はリボンで束ねられ、横の丸い缶にきちんと立ててしまわれている。机の上はさっきより片づいている。",
+    "alt": {
+      "ja": "手紙を1通ずつスマホで撮って、撮り終えた手紙を缶にしまうキャラクター",
+      "en": "The character photographing letters one by one and filing the finished ones neatly in a tin"
+    }
+  }
+}

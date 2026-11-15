@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/js/lang.js"></script>
+    <!-- このページは scripts/build_guides.py が docs/guides/flight-focus-timer-apps.json から作る。直すのは JSON のほう -->
+    <title>飛行機みたいに集中できるアプリ4選 - Blog | Ryo Tsuzukihashi</title>
+    <meta name="description" content="飛行機の旅に見立てた集中タイマーアプリと、車で走る版を合わせて4本比べました。時間の決め方、アプリのブロック、有料になる機能の違いをまとめています。FocusDriveの作者が書いています。">
+    <meta name="title-en" content="4 Focus Timer Apps That Turn Your Session Into a Trip - Blog | Ryo Tsuzukihashi">
+    <meta name="description-en" content="I compared four focus timer apps that turn a session into a journey, three by plane and one by car: how you set the time, app blocking, and what&#x27;s paid. Written by the maker of FocusDrive.">
+    <link rel="canonical" href="https://tsuzukit.com/blog/posts/flight-focus-timer-apps.html">
+
+    <!-- OGP -->
+    <meta property="og:title" content="飛行機みたいに集中できるアプリ4選">
+    <meta property="og:description" content="飛行機の旅に見立てた集中タイマーアプリと、車で走る版を合わせて4本比べました。時間の決め方、アプリのブロック、有料になる機能の違いをまとめています。FocusDriveの作者が書いています。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://tsuzukit.com/blog/posts/flight-focus-timer-apps.html">
+    <meta property="og:image" content="https://tsuzukit.com/assets/images/posts/flight-focus-timer-apps.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://tsuzukit.com/assets/images/posts/flight-focus-timer-apps.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-dark-32x32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-dark-16x16.png" media="(prefers-color-scheme: dark)">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERPQ1EGLH');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8240751277462688"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
+    <link rel="stylesheet" href="/assets/css/guide.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "飛行機みたいに集中できるアプリ4選",
+      "description": "飛行機の旅に見立てた集中タイマーアプリと、車で走る版を合わせて4本比べました。時間の決め方、アプリのブロック、有料になる機能の違いをまとめています。FocusDriveの作者が書いています。",
+      "image": "https://tsuzukit.com/assets/images/posts/flight-focus-timer-apps.webp",
+      "datePublished": "2026-11-15",
+      "dateModified": "2026-11-15",
+      "inLanguage": "ja",
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "mainEntityOfPage": "https://tsuzukit.com/blog/posts/flight-focus-timer-apps.html",
+      "about": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "FocusDrive - 集中タイマー",
+          "url": "https://apps.apple.com/jp/app/id6756264384",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "FocusFlight - 集中を取り戻したいあなたへ",
+          "url": "https://apps.apple.com/jp/app/id6648771147",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "AirFlow: Focus Flight 集中タイマー",
+          "url": "https://apps.apple.com/jp/app/id6760402981",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "AirFocus - フライト集中タイマー",
+          "url": "https://apps.apple.com/jp/app/id6752571938",
+          "operatingSystem": "iOS"
+        }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "FocusDrive - 集中タイマー",
+      "operatingSystem": "iOS",
+      "applicationCategory": "ProductivityApplication",
+      "url": "https://apps.apple.com/jp/app/id6756264384",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "無料で使えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "4本とも無料で入れられます。FocusDriveはアプリのブロックまで無料で、ライブアクティビティなどが有料です。FocusFlightとAirFlowは、無料の範囲が説明文に書かれていませんでした。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "FocusDriveは長い時間しか選べませんか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "目的地は今いる場所から近い順に並ぶので、近くを選べば短く集中できます。時間は道のりで決まるので、ぴったり25分のように分単位で決めたい人には、ほかの3本のほうが合っています。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ほかのアプリを止めるのに、何か設定は要りますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "FocusDriveとFocusFlightは、iPhoneのスクリーンタイムの許可が要ります。最初に一度許可すれば、あとは止めたいアプリを選ぶだけです。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tsuzukit.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://tsuzukit.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "困りごとから選ぶアプリ",
+          "item": "https://tsuzukit.com/blog/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "飛行機みたいに集中できるアプリ4選",
+          "item": "https://tsuzukit.com/blog/posts/flight-focus-timer-apps.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">TsuzuKit</a>
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/portfolio/" class="nav-link">Portfolio</a>
+                <a href="/blog/" class="nav-link active">Blog</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post -->
+    <article class="blog-post">
+        <header class="post-header">
+            <div class="post-meta">
+                <span class="post-date">2026.11.15</span>
+                <span class="post-category"><span class="i18n-ja">アプリの選び方</span><span class="i18n-en">App guides</span></span>
+                <span class="post-reading-time"><span class="i18n-ja">4分で読める</span><span class="i18n-en">4 min read</span></span>
+            </div>
+            <h1 class="post-title"><span class="i18n-ja">飛行機みたいに集中できるアプリ4選</span><span class="i18n-en">4 Focus Timer Apps That Turn Your Session Into a Trip</span></h1>
+        </header>
+        <figure class="post-illustration guide-illustration"><img src="/assets/images/posts/flight-focus-timer-apps.webp" width="1200" height="800" alt="机の上の小さな地図を車が走る横で、ノートに集中するキャラクター" data-en-alt="The character focused on a notebook while a tiny car drives across a little map on the desk" fetchpriority="high"></figure>
+
+        <div class="post-content guide i18n-ja">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">先に答え</p>
+                <p>飛行機の集中アプリで探しているなら、まずは評価28,784件のFocusFlightです。窓からの景色を眺めたいならAirFlowかAirFocus。飛行機ではなく、地図の上を車で目的地まで走る形がいい人は、FocusFlightに影響を受けて僕が作ったFocusDriveも見てみてください。</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">書いた人 <a href="https://tsuzukit.com/about/">續橋 涼</a>（@tsuzuki817）</p>
+                    <p class="guide-byline-bio">2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。FocusDriveの作者です。</p>
+                    <p class="guide-byline-date">公開 <time datetime="2026-11-15">2026.11.15</time> · 更新 <time datetime="2026-11-15">2026.11.15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">この記事は、FocusDriveを作った僕が書いています。ほかの3本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。</p>
+            <h2>4本をざっくり比べる</h2>
+            <p>どれも、集中する時間を旅に見立てて、着いたら終わりにするタイマーです。違いが出るのは、時間の決め方と、気が散るアプリを止められるかです。</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">アプリ</th><th scope="col">評価の件数</th><th scope="col">乗り物</th><th scope="col">時間の決め方</th><th scope="col">アプリのブロック</th><th scope="col">有料になるもの</th></tr></thead><tbody><tr><th scope="row">FocusDrive（僕のアプリ）</th><td>1件</td><td>車</td><td>現在地から目的地まで車で走る時間</td><td>無料であり</td><td>ライブアクティビティ、一部の車と走行音</td></tr><tr><th scope="row">FocusFlight</th><td>28,784件</td><td>飛行機</td><td>タスクと集中時間を選ぶ</td><td>あり</td><td>月額か年額のプラン。区分は説明文に記載なし</td></tr><tr><th scope="row">AirFlow</th><td>133件</td><td>飛行機</td><td>目標と集中時間を設定</td><td>説明文に記載なし</td><td>説明文に記載なし</td></tr><tr><th scope="row">AirFocus</th><td>71件</td><td>飛行機</td><td>目的地を設定</td><td>説明文に記載なし</td><td>窓の景色、地図の変更、無制限のフライトなど</td></tr></tbody></table></div>
+            <h2>1本ずつ見ていく</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e6/e6/09/e6e6093d-07ed-708a-1baa-15fbcb8358e8/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">僕が作ったアプリ</span>
+                    <h3 class="guide-app-name">FocusDrive - 集中タイマー</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · App Storeの評価 1件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6756264384" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>飛行機ではなく、車で地図の上を走ります。現在地から目的地を選ぶと、Appleのマップで出した車の所要時間が、そのまま集中する時間になります。近い場所なら短く、遠い場所なら長く集中する形です。</p>
+            <p>走っている間は、選んだアプリをスクリーンタイムの仕組みで止めます。これは無料で使えます。晴れと雨で走る音が変わって、着いた場所や走った距離、続けた日数が残ります。</p>
+            <p>ダイナミックアイランドとロック画面に残り時間を出すライブアクティビティ、一部の車と走行音は、有料のProです。無料版には広告が出ます。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/88/cf/61/88cf61d8-e9a3-af5e-612a-da03d648825e/AppIcon-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">FocusFlight - 集中を取り戻したいあなたへ</h3>
+                    <p class="guide-app-meta">Cement Planet LTD · App Storeの評価 28,784件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6648771147" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>評価が28,784件あって、飛行機の集中アプリといえばこれです。搭乗券を作って離陸し、着陸までを集中する時間にします。App Storeの今日のAppにも選ばれたと説明文にあります。</p>
+            <p>飛行機モードをオンにすると、気が散るアプリやWebサイトを止められます。3Dの地図、行き先を決めないランダムルート、ホワイトノイズもあります。月額か年額のプランがありますが、無料でどこまで使えるかは説明文に書かれていませんでした。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/40/8c/5c/408c5ca4-c0e5-097a-6882-ef2aa6726adc/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">AirFlow: Focus Flight 集中タイマー</h3>
+                    <p class="guide-app-meta">TapVolt Limited · App Storeの評価 133件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6760402981" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>機内の窓から景色を眺めるような画面で、集中する時間を過ごします。機内の音や雨、自然のホワイトノイズを流せて、ウィジェットからフライトを始められます。</p>
+            <p>毎日のフライトのリマインダーも設定できます。アプリを止める機能と、何が有料かは、説明文には書かれていませんでした。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/81/46/a0/8146a042-8582-eae7-c461-2d7e00047acc/AppIcon-0-0-1x_U007epad-0-1-sRGB-85-220.jpeg/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">AirFocus - フライト集中タイマー</h3>
+                    <p class="guide-app-meta">Sultan Javed · App Storeの評価 71件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6752571938" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>目的地を決めて離陸し、着陸まで集中します。地図は標準、衛星、地形、モノクロから選べて、訪れた空港や集中した時間の統計が見られます。</p>
+            <p>窓からの景色、地図の変更、無制限のフライト、ライブアクティビティは、月額か年額のFullAccessです。記録を同期するためにアカウントが要ります。</p>
+            <h2>アプリを入れたくないなら</h2>
+            <p>iPhoneの集中モードを作って、時計アプリのタイマーと一緒に使う手があります。集中モードで、通知を出すアプリを絞れます。</p>
+            <p>ただ、通知が止まるだけで、アプリ自体は開けてしまいます。旅に見立てて最後まで続けたくなる仕掛けは、こうしたアプリならではですね。</p>
+            <h2>どれを選ぶか</h2>
+            <ul class="guide-list"><li>いちばん使われている飛行機の集中アプリを使いたいなら、FocusFlight</li><li>機内の窓からの眺めと音で過ごしたいなら、AirFlow</li><li>訪れた空港の統計を集めたい、アカウントで同期したいなら、AirFocus</li><li>飛行機より車がいい、本物の道のりの時間で集中したいなら、FocusDrive</li></ul>
+            <h2>よくある質問</h2>
+            <dl class="guide-faq">
+                <dt>無料で使えますか？</dt><dd>4本とも無料で入れられます。FocusDriveはアプリのブロックまで無料で、ライブアクティビティなどが有料です。FocusFlightとAirFlowは、無料の範囲が説明文に書かれていませんでした。</dd>
+                <dt>FocusDriveは長い時間しか選べませんか？</dt><dd>目的地は今いる場所から近い順に並ぶので、近くを選べば短く集中できます。時間は道のりで決まるので、ぴったり25分のように分単位で決めたい人には、ほかの3本のほうが合っています。</dd>
+                <dt>ほかのアプリを止めるのに、何か設定は要りますか？</dt><dd>FocusDriveとFocusFlightは、iPhoneのスクリーンタイムの許可が要ります。最初に一度許可すれば、あとは止めたいアプリを選ぶだけです。</dd>
+            </dl>
+            <p>FocusDriveの評価はまだ1件なので、1回走りきったら感想を聞かせてください🚗</p>
+            <div class="guide-notes">各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。FocusDriveの機能はアプリのコードで確かめました。</div>
+        </div>
+
+        <div class="post-content guide i18n-en">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">Short answer</p>
+                <p>If you&#x27;re looking for the plane-style focus app, start with FocusFlight, which has 28,784 ratings. If you want a view out the window, AirFlow or AirFocus. If you&#x27;d rather drive a car across a map to your destination than fly, take a look at FocusDrive, which I made after being inspired by FocusFlight.</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">Written by <a href="https://tsuzukit.com/about/">Ryo Tsuzukihashi</a> (@tsuzuki817)</p>
+                    <p class="guide-byline-bio">I&#x27;ve been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made FocusDrive.</p>
+                    <p class="guide-byline-date">Published <time datetime="2026-11-15">2026-11-15</time> · Updated <time datetime="2026-11-15">2026-11-15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">I made FocusDrive, and I wrote this article. The other three apps are by developers I don&#x27;t know, and I haven&#x27;t received money or anything else from them. Everything compared here comes from each app&#x27;s App Store description and rating count as of November 15, 2026.</p>
+            <h2>The four apps at a glance</h2>
+            <p>Each one treats your focus time as a trip that ends when you arrive. Where they differ is how the time gets set and whether they can block distracting apps.</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">App</th><th scope="col">Ratings</th><th scope="col">Vehicle</th><th scope="col">Setting the time</th><th scope="col">App blocking</th><th scope="col">Paid features</th></tr></thead><tbody><tr><th scope="row">FocusDrive (my app)</th><td>1</td><td>Car</td><td>Real driving time from where you are to the destination</td><td>Yes, free</td><td>Live Activity, some cars and driving sounds</td></tr><tr><th scope="row">FocusFlight</th><td>28,784</td><td>Plane</td><td>Pick a task and a focus time</td><td>Yes</td><td>Monthly or yearly plan. Split not mentioned</td></tr><tr><th scope="row">AirFlow</th><td>133</td><td>Plane</td><td>Set a goal and a focus time</td><td>Not mentioned</td><td>Not mentioned</td></tr><tr><th scope="row">AirFocus</th><td>71</td><td>Plane</td><td>Set a destination</td><td>Not mentioned</td><td>Window view, map styles, unlimited flights, and more</td></tr></tbody></table></div>
+            <h2>Each app, one by one</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e6/e6/09/e6e6093d-07ed-708a-1baa-15fbcb8358e8/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">I made this</span>
+                    <h3 class="guide-app-name">FocusDrive - Focus Timer</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · 1 App Store rating</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6756264384" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>Instead of flying, you drive a car across a map. Pick a destination from where you are, and the driving time Apple Maps calculates becomes your focus time. A nearby place means a short session, and a faraway one means a long one.</p>
+            <p>While you drive, it blocks the apps you choose through Screen Time, and that part is free. The driving sound changes with sunny or rainy weather, and it keeps track of places you&#x27;ve reached, distance driven, and your streak.</p>
+            <p>The Live Activity that shows time left on the Dynamic Island and Lock Screen, plus some cars and driving sounds, are part of the paid Pro. The free version shows ads.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/88/cf/61/88cf61d8-e9a3-af5e-612a-da03d648825e/AppIcon-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">FocusFlight - Deepfocus Timer</h3>
+                    <p class="guide-app-meta">Cement Planet LTD · 28,784 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6648771147" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>With 28,784 ratings, this is the app people mean by a flight focus app. You make a boarding pass, take off, and focus until you land. Its description says it was picked as App of the Day on the App Store.</p>
+            <p>Turn on airplane mode and it blocks distracting apps and websites. It also has 3D maps, a random route mode for when you don&#x27;t want to pick a destination, and white noise. There&#x27;s a monthly or yearly plan, but the description doesn&#x27;t say what&#x27;s included for free.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/40/8c/5c/408c5ca4-c0e5-097a-6882-ef2aa6726adc/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">AirFlow: Focus Flight Pomodoro</h3>
+                    <p class="guide-app-meta">TapVolt Limited · 133 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6760402981" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>You spend your focus time looking at a view like the one from a plane window. It can play cabin sounds, rain, or nature as white noise, and you can start a flight from a widget.</p>
+            <p>You can also set a daily flight reminder. The description doesn&#x27;t mention app blocking or which features are paid.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/81/46/a0/8146a042-8582-eae7-c461-2d7e00047acc/AppIcon-0-0-1x_U007epad-0-1-sRGB-85-220.jpeg/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">AirFocus - Flight Focus Timer</h3>
+                    <p class="guide-app-meta">Sultan Javed · 71 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6752571938" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>Pick a destination, take off, and stay focused until you land. The map comes in standard, satellite, terrain, or monochrome, and you can see stats like airports visited and total focus time.</p>
+            <p>The window view, changing maps, unlimited flights, and Live Activity are part of the monthly or yearly FullAccess. It needs an account to sync your records.</p>
+            <h2>If you&#x27;d rather not install an app</h2>
+            <p>You can set up a Focus mode on your iPhone and use it with the timer in the Clock app. A Focus mode lets you limit which apps can send notifications.</p>
+            <p>The catch is that it only silences notifications, so you can still open the apps. Making a session feel like a trip you want to finish is what these apps add.</p>
+            <h2>Which one to pick</h2>
+            <ul class="guide-list"><li>If you want the most widely used flight focus app, FocusFlight</li><li>If you want to spend your session with a view and sounds from the cabin, AirFlow</li><li>If you want stats on airports you&#x27;ve visited and syncing through an account, AirFocus</li><li>If you&#x27;d rather drive than fly, with focus time based on a real road trip, FocusDrive</li></ul>
+            <h2>FAQ</h2>
+            <dl class="guide-faq">
+                <dt>Are they free?</dt><dd>All four are free to download. FocusDrive&#x27;s app blocking is free, and things like Live Activity are paid. The descriptions for FocusFlight and AirFlow don&#x27;t say what the free version includes.</dd>
+                <dt>Does FocusDrive only work for long sessions?</dt><dd>Destinations are listed from nearest to farthest, so picking a nearby one gives you a short session. Since the time comes from the route, if you want an exact length like 25 minutes, the other three will suit you better.</dd>
+                <dt>Do I need to set anything up to block other apps?</dt><dd>FocusDrive and FocusFlight both need Screen Time permission on your iPhone. Allow it once, and after that you just pick the apps to block.</dd>
+            </dl>
+            <p>FocusDrive only has one rating so far, so once you&#x27;ve finished a drive, I&#x27;d love to hear how it went 🚗</p>
+            <div class="guide-notes">Features and rating counts were checked against each app&#x27;s App Store description on November 15, 2026, and may change with updates. FocusDrive&#x27;s features were checked against the app&#x27;s own code.</div>
+        </div>
+
+        <nav class="post-navigation">
+            <img class="tk-char tk-char--post" src="/assets/images/character-hang.png" alt="" width="381" height="208">
+            <a href="/blog/guides/" class="nav-link-wrapper"><span>&larr; <span class="i18n-ja">困りごとから選ぶアプリの一覧へ</span><span class="i18n-en">All guides: apps for everyday problems</span></span></a>
+        </nav>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
+                    <p class="footer-description"><span class="i18n-ja">誰も作らないものを、まじめに作る</span><span class="i18n-en">I make things nobody else would, and I make them seriously</span></p>
+                </div>
+                <div class="footer-nav">
+                    <a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
+                    <a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
+                    <a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
+                    <a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ryo Tsuzukihashi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

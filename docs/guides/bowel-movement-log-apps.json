@@ -1,0 +1,435 @@
+{
+  "slug": "bowel-movement-log-apps",
+  "date_published": "2026-11-15",
+  "date_updated": "2026-11-15",
+  "search_phrase": {
+    "ja": "排便 記録 アプリ",
+    "en": "bowel movement tracker app"
+  },
+  "evidence": "2026-11-15 に Google の検索候補で「排便 記録 アプリ」を引くと、9件中「無料」「おすすめ」「回数」「食事」「子供」などが付いた形が出た。「排便 記録」では8件中「ノート」「用紙」「表」「iphone」付きが出た。同じ日に App Store で「排便 記録」を引くと、ウンログ（12,891件）、便秘対策・お通じチェッカー（9,015件）、腸note（5,014件）が上位に並んでいた。",
+  "title": {
+    "ja": "排便の記録をつけるアプリ4選",
+    "en": "4 Apps for Keeping a Bowel Movement Log"
+  },
+  "description": {
+    "ja": "毎日の排便を記録するアプリを4本比べました。記録できる項目、続けるための仕組み、受診のときに見せる形にできるかの違いをまとめています。うんちくんの作者が書いています。",
+    "en": "I compared four apps for logging your bowel movements every day: what you can record, what helps you keep going, and whether you can turn your log into something to show a doctor. Written by the maker of UNCHIKUN."
+  },
+  "excerpt": {
+    "ja": "記録できる項目、続ける仕組み、受診のときに見せる形で4本を比べました。うんちくんを作った僕が、自分のアプリも入れて書いています。",
+    "en": "Four apps compared on what you can log, what keeps you going, and sharing with a doctor. I made UNCHIKUN, and it's one of the four."
+  },
+  "category": {
+    "ja": "アプリの選び方",
+    "en": "App guides"
+  },
+  "reading_minutes": 5,
+  "author": {
+    "name": {
+      "ja": "續橋 涼",
+      "en": "Ryo Tsuzukihashi"
+    },
+    "handle": "tsuzuki817",
+    "bio": {
+      "ja": "2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。うんちくんの作者です。",
+      "en": "I've been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made UNCHIKUN."
+    },
+    "url": "https://tsuzukit.com/about/",
+    "same_as": [
+      "https://x.com/tsuzuki817"
+    ]
+  },
+  "tldr": {
+    "ja": "評価がいちばん多いのは12,890件のウンログで、記録に合わせた医師監修のアドバイスも届きます。友だちや家族と記録を見せ合いながら続けたい人は、僕が作ったうんちくんも見てみてください。お腹の調子や便の状態で気になることがあれば、アプリではなく医師に相談してください。",
+    "en": "The one with the most ratings is Unlog, with 12,890, and it sends advice supervised by doctors based on your log. If you'd like to keep going by sharing your log with friends and family, take a look at UNCHIKUN, which I made. If anything about your bowel movements worries you, talk to a doctor rather than relying on an app."
+  },
+  "disclosure": {
+    "ja": "この記事は、うんちくんを作った僕が書いています。ほかの3本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。",
+    "en": "I made UNCHIKUN, and I wrote this article. The other three apps are by developers I don't know, and I haven't received money or anything else from them. Everything compared here comes from each app's App Store description and rating count as of November 15, 2026."
+  },
+  "own_app": "6758856276",
+  "app_category": "HealthApplication",
+  "apps": [
+    {
+      "id": "6758856276",
+      "name": {
+        "ja": "うんちくん：友達や家族とうんち記録をシェア",
+        "en": "UNCHIKUN: Poop Tracker+Friends"
+      },
+      "short": {
+        "ja": "うんちくん",
+        "en": "UNCHIKUN"
+      },
+      "developer": "Ryo Tsudukihashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/dc/95/15/dc9515f7-5943-f66b-b6b7-b43476029c55/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6758856276",
+      "android_url": "https://play.google.com/store/apps/details?id=com.tsuzukit.poopcounter",
+      "rating_count": 578
+    },
+    {
+      "id": "539493829",
+      "name": {
+        "ja": "ウンログ-うんち記録と腸活で健康管理と便秘対策",
+        "en": "Unlog: Poop Log and Gut Health"
+      },
+      "short": {
+        "ja": "ウンログ",
+        "en": "Unlog"
+      },
+      "developer": "UNLOG K.K",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/85/21/55/85215536-d197-83cd-bacc-686ca635d989/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id539493829",
+      "android_url": null,
+      "rating_count": 12890
+    },
+    {
+      "id": "542571748",
+      "name": {
+        "ja": "便秘対策・お通じチェッカー",
+        "en": "Stool Checker"
+      },
+      "short": {
+        "ja": "お通じチェッカー",
+        "en": "Stool Checker"
+      },
+      "developer": "ZAIZEN Co., Ltd.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/43/a2/28/43a22896-5a8c-187b-0413-cef17535ac7c/AppIcon-0-0-1x_U007emarketing-0-7-0-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id542571748",
+      "android_url": null,
+      "rating_count": 9015
+    },
+    {
+      "id": "1659743337",
+      "name": {
+        "ja": "腸note－排便記録と便秘管理の腸活アプリ",
+        "en": "Cho-note: Gut Health from Gut Sounds"
+      },
+      "short": {
+        "ja": "腸note",
+        "en": "Cho-note"
+      },
+      "developer": "Suntory Holdings Limited",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4f/01/1c/4f011ce6-2bd5-f666-44cd-669f6ecd624f/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id1659743337",
+      "android_url": null,
+      "rating_count": 5009
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ja": "4本をざっくり比べる",
+        "en": "The four apps at a glance"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "4本とも、トイレのあとにさっと記録できるのは同じです。違いが出るのは、記録のほかに何をしてくれるかです。",
+            "en": "All four let you log quickly after you go. The difference is what else they do besides keeping the log."
+          }
+        },
+        {
+          "type": "table",
+          "head": [
+            {
+              "ja": "アプリ",
+              "en": "App"
+            },
+            {
+              "ja": "評価の件数",
+              "en": "Ratings"
+            },
+            {
+              "ja": "記録できること",
+              "en": "What you can log"
+            },
+            {
+              "ja": "続ける仕組み",
+              "en": "What keeps you going"
+            },
+            {
+              "ja": "受診のとき",
+              "en": "For a doctor visit"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ja": "うんちくん（僕のアプリ）",
+                "en": "UNCHIKUN (my app)"
+              },
+              {
+                "ja": "578件",
+                "en": "578"
+              },
+              {
+                "ja": "回数、形7段階、色、量、メモ",
+                "en": "Count, 7 shape types, color, amount, notes"
+              },
+              {
+                "ja": "うんトモと記録を見せ合う。連続日数",
+                "en": "Share with friends. Streak count"
+              },
+              {
+                "ja": "プレミアムで直近30日をPDFに",
+                "en": "Premium turns the last 30 days into a PDF"
+              }
+            ],
+            [
+              {
+                "ja": "ウンログ",
+                "en": "Unlog"
+              },
+              {
+                "ja": "12,890件",
+                "en": "12,890"
+              },
+              {
+                "ja": "うんちのほか、食事、体重、生理、肌",
+                "en": "Besides stool, meals, weight, periods, skin"
+              },
+              {
+                "ja": "ポイント、悩みを話せるSNS",
+                "en": "Points and a community"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              }
+            ],
+            [
+              {
+                "ja": "お通じチェッカー",
+                "en": "Stool Checker"
+              },
+              {
+                "ja": "9,015件",
+                "en": "9,015"
+              },
+              {
+                "ja": "時間、量、形、色、メモ",
+                "en": "Time, amount, shape, color, notes"
+              },
+              {
+                "ja": "前回からの時間とペース",
+                "en": "Time since last and your pace"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              }
+            ],
+            [
+              {
+                "ja": "腸note",
+                "en": "Cho-note"
+              },
+              {
+                "ja": "5,009件",
+                "en": "5,009"
+              },
+              {
+                "ja": "お通じ、腸活、お腹の音",
+                "en": "Bowel movements, gut-care habits, gut sounds"
+              },
+              {
+                "ja": "腸活のレポート",
+                "en": "Gut-care reports"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "1本ずつ見ていく",
+        "en": "Each app, one by one"
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "id": "6758856276"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "トイレから出たら、でた！のボタンを押すだけで記録できます。あとから形を7段階で選べて、色と量、メモも残せます。",
+            "en": "When you come out of the bathroom, just press the button to log it. Afterward you can pick the shape from 7 types and add color, amount, and a note."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "友だちコードやQRコードでうんトモをつなぐと、お互いの記録がストーリーのように見られます。うんトモが記録すると通知が届いて、連続で記録した日数も数えます。",
+            "en": "Connect with friends using a friend code or QR code, and you can see each other's logs like stories. You get a notification when a friend logs, and the app counts your streak of days."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "週のカレンダー、ウィジェット、うんトモの追加は無料です。月のカレンダーと、直近30日の記録を医師に見せるPDFにまとめる機能はプレミアムです。iPhoneのほかにAndroid版もあります。",
+            "en": "The weekly calendar, widgets, and adding friends are free. The monthly calendar and the feature that puts your last 30 days into a PDF you can show a doctor are Premium. There is an Android version as well as iPhone."
+          }
+        },
+        {
+          "type": "app",
+          "id": "539493829"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "評価が12,890件あって、この中ではいちばん使われています。10秒でうんちを記録できて、記録をもとに状態をスコアで見せてくれると説明文にあります。",
+            "en": "With 12,890 ratings, this is the most used of the four. The description says you can log in 10 seconds and that it shows your condition as a score based on your records."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "記録に合わせて、医師が監修したアドバイスが届きます。食事やサプリメント、体重や生理、肌もまとめて記録できて、お通じの悩みを話せるSNSや、記録で貯まるポイントもあります。パスコードで記録を守れます。",
+            "en": "It sends advice supervised by doctors to match your records. You can also log meals, supplements, weight, periods, and skin in one place, and there is a community for talking about bowel troubles and points you earn by logging. A passcode keeps your records private."
+          }
+        },
+        {
+          "type": "app",
+          "id": "542571748"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "ボタンを1回押すと、トイレに行った時間を記録できます。量や形、色、メモもあとから残せます。",
+            "en": "One press of a button logs the time you went. You can add amount, shape, color, and notes afterward."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "前回から何時間たったか、何日に1回のペースかが分かります。赤ちゃんやペットなど自分以外も含めて3人まで分けて記録できて、4桁のパスワードでロックもかけられます。",
+            "en": "It shows how long it has been since last time and your usual pace in days. You can keep separate logs for up to three, including a baby or a pet, and lock it with a four-digit passcode."
+          }
+        },
+        {
+          "type": "app",
+          "id": "1659743337"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "サントリーの腸活アプリです。スマホのマイクをお腹に当てて、お腹の音を録ります。",
+            "en": "This is Suntory's gut-care app. You hold your phone's microphone to your belly and record the sounds."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "お通じと腸活を毎日記録して、カレンダーとレポートで振り返れます。医療機器ではなく、診断のためのものではないと説明文に書かれています。iPhone専用です。",
+            "en": "You log bowel movements and gut-care habits each day and look back with a calendar and reports. The description says it isn't a medical device and isn't meant for diagnosis. It's iPhone only."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "アプリを入れたくないなら",
+        "en": "If you'd rather not install an app"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "紙のノートでもつけられます。検索候補にも、排便記録の用紙や表という形が出ていました。日付と時間、形や色を1行ずつ書くだけです。",
+            "en": "A paper notebook works too, and printable log sheets showed up in the search suggestions. Just write the date, time, shape, and color on one line each time."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "アプリの便利なところは、ボタン1つで時刻が残ることと、あとで日ごとに並べて見返せることですね。",
+            "en": "What an app adds is the time saved with a single tap, and being able to look back day by day later."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "どれを選ぶか",
+        "en": "Which one to pick"
+      },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "ja": "記録に合わせたアドバイスや、食事や体重もまとめて見たいなら、ウンログ",
+              "en": "If you want advice based on your log, plus meals and weight in one place, Unlog"
+            },
+            {
+              "ja": "前回からの間隔を知りたい人や、家族やペットの分も分けてつけたい人は、お通じチェッカー",
+              "en": "If you want to know the gap since last time, or keep separate logs for family or pets, Stool Checker"
+            },
+            {
+              "ja": "お腹の音から腸活を考えてみたいなら、腸note",
+              "en": "If you are curious about gut care through the sounds your belly makes, Cho-note"
+            },
+            {
+              "ja": "友だちや家族と見せ合いながら続けたい人や、Androidでも使いたい人は、うんちくん",
+              "en": "If you want to keep going by sharing with friends and family, or need Android too, UNCHIKUN"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "ja": "記録を病院に持っていけますか？",
+        "en": "Can I bring my log to a doctor?"
+      },
+      "a": {
+        "ja": "うんちくんはプレミアムで、直近30日の記録をPDFにまとめられます。ほかの3本の説明文には、書き出しのことは書かれていませんでした。",
+        "en": "UNCHIKUN's Premium can put your last 30 days into a PDF. The other three descriptions don't mention exporting."
+      }
+    },
+    {
+      "q": {
+        "ja": "便の形や色がいつもと違うときは？",
+        "en": "What if the shape or color looks different from usual?"
+      },
+      "a": {
+        "ja": "アプリは記録をつけるためのもので、便の状態がどうなのかは判断できません。気になるときは医師に相談してください。",
+        "en": "These apps are for keeping a record, and they can't tell you what your stool means. If something worries you, ask a doctor."
+      }
+    },
+    {
+      "q": {
+        "ja": "無料で使えますか？",
+        "en": "Are they free?"
+      },
+      "a": {
+        "ja": "4本とも無料で入れられます。うんちくんは、記録とうんトモの機能が無料で使えて、月のカレンダーやPDFなどがプレミアムです。",
+        "en": "All four are free to download. UNCHIKUN lets you log and connect with friends for free, and things like the monthly calendar and the PDF are Premium."
+      }
+    }
+  ],
+  "closing": {
+    "ja": "うんちくんの評価は578件まで来たので、うんトモと続いている話もいつか聞かせてください🙏",
+    "en": "UNCHIKUN is up to 578 ratings, so someday I'd love to hear how you and your friends keep it going together 🙏"
+  },
+  "notes": {
+    "ja": "それぞれのアプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。記録は体の調子を見返すためのもので、診断ではありません。お腹の調子や便の状態で気になることは、医師に相談してください。",
+    "en": "Features and rating counts were checked against each app's App Store description on November 15, 2026, and may change with updates. These logs are for looking back on how you've been, not for diagnosis. If anything about your bowel movements worries you, talk to a doctor."
+  },
+  "illustration": {
+    "scene": "朝の廊下。キャラがトイレのドアの前でスマホを見ていて、画面の小さなカレンダー（文字なし、丸い印だけ）に今日の印がぽんとつく。遠くの家の窓から、色ちがいの小さな丸い影が手を振っている。トイレの人の形のマークや標識は描かない。",
+    "alt": {
+      "ja": "朝の廊下でスマホのカレンダーに今日の印をつけ、遠くの窓から手を振られているキャラクター",
+      "en": "The character in a hallway in the morning, marking today on a phone calendar while someone waves from a faraway window"
+    }
+  }
+}

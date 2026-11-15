@@ -1,0 +1,406 @@
+{
+  "slug": "photo-color-code-apps",
+  "date_published": "2026-11-15",
+  "date_updated": "2026-11-15",
+  "search_phrase": {
+    "ja": "写真 カラーコード アプリ",
+    "en": "app to get color codes from a photo"
+  },
+  "evidence": "2026-11-15 に Google の検索候補で「写真 カラーコード」を引くと、9件の中に「写真 カラーコード アプリ」「iphone 写真 カラーコード」「写真 カラーコード抽出」があった。「空の色 カラーコード」も2件出た。同じ日の App Store で「写真 カラーコード」を引くと、SkyCodeが評価234件で、ほかの色のアプリは0〜8件だった。「画像 色 抽出」では色しらべが74件で並んだ。",
+  "title": {
+    "ja": "写真の色をカラーコードで知るアプリ4選",
+    "en": "4 Apps That Turn the Colors in Your Photos Into Color Codes"
+  },
+  "description": {
+    "ja": "写真の色をカラーコードで知るアプリを4本比べました。写真全体の平均の色を出すか、触った場所の色を出すか、どんな形式で出るか、画像に入れて保存できるかの違いをまとめています。SkyCodeの作者が書いています。",
+    "en": "I compared four iPhone apps that give you color codes from a photo: whether they average the whole photo or pick the spot you touch, which formats they show, and whether they save the code onto the image. Written by the maker of SkyCode."
+  },
+  "excerpt": {
+    "ja": "写真全体の平均か、触った場所か。色の取り方と出る形式で4本を比べました。SkyCodeを作った僕が書いています。",
+    "en": "Whole-photo average or the spot you tap. Four apps compared on how they pick colors and which formats they show. I made SkyCode, and it's one of the four."
+  },
+  "category": {
+    "ja": "アプリの選び方",
+    "en": "App guides"
+  },
+  "reading_minutes": 3,
+  "author": {
+    "name": {
+      "ja": "續橋 涼",
+      "en": "Ryo Tsuzukihashi"
+    },
+    "handle": "tsuzuki817",
+    "bio": {
+      "ja": "2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。SkyCodeの作者です。",
+      "en": "I've been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made SkyCode."
+    },
+    "url": "https://tsuzukit.com/about/",
+    "same_as": [
+      "https://x.com/tsuzuki817"
+    ]
+  },
+  "tldr": {
+    "ja": "写真の中の1点の色を知りたいなら、触った場所の色を出すカラコルや、12種類の形式で出せる色しらべが向いています。写真全体の雰囲気を1色のカラーコードにして、その写真に入れて保存したい人は、僕が作ったSkyCodeも見てみてください。",
+    "en": "If you want the color of one spot in a photo, ColorColl picks the spot you touch, and Color Analyzer shows it in 12 formats. If you want the overall mood of a photo as one color code, stamped onto the photo itself, take a look at SkyCode, which I made."
+  },
+  "disclosure": {
+    "ja": "この記事は、SkyCodeを作った僕が書いています。ほかの3本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。",
+    "en": "I made SkyCode, and I wrote this article. The other three apps are by developers I don't know, and I haven't received money or anything else from them. Everything compared here comes from each app's App Store description and rating count as of November 15, 2026."
+  },
+  "own_app": "1512663141",
+  "app_category": "PhotographyApplication",
+  "apps": [
+    {
+      "id": "1512663141",
+      "name": {
+        "ja": "SkyCode",
+        "en": "SkyCode"
+      },
+      "short": {
+        "ja": "SkyCode",
+        "en": "SkyCode"
+      },
+      "developer": "Ryo Tsudukihashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/58/e4/96/58e496f4-57e6-40ff-69cf-c82287ef78c6/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id1512663141",
+      "android_url": null,
+      "rating_count": 234
+    },
+    {
+      "id": "1160206848",
+      "name": {
+        "ja": "色しらべ - カメラや画像で色の抽出と配色解析ができる",
+        "en": "Color Analyzer - Color Lookup"
+      },
+      "short": {
+        "ja": "色しらべ",
+        "en": "Color Analyzer"
+      },
+      "developer": "kamusoft",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/cc/24/f4/cc24f409-7a43-89e6-f2da-df432c446c38/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id1160206848",
+      "android_url": null,
+      "rating_count": 74
+    },
+    {
+      "id": "874174022",
+      "name": {
+        "ja": "カラコル - 色を集めるアプリ",
+        "en": "ColorColl - Color Picker Apps"
+      },
+      "short": {
+        "ja": "カラコル",
+        "en": "ColorColl"
+      },
+      "developer": "TAIKI HIRATA",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/cb/d0/f5/cbd0f538-de10-c970-9536-50b9b0d4d5bc/AppIcon-0-1x_U007emarketing-0-7-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id874174022",
+      "android_url": null,
+      "rating_count": 8
+    },
+    {
+      "id": "6739463617",
+      "name": {
+        "ja": "ColorCheck! - 平均色を抽出",
+        "en": "ColorCheck! - Average Color"
+      },
+      "short": {
+        "ja": "ColorCheck!",
+        "en": "ColorCheck!"
+      },
+      "developer": "Seonggon Sim",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6b/d4/fd/6bd4fdba-fa0c-0abd-4c00-3976dcf03d62/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6739463617",
+      "android_url": null,
+      "rating_count": 0
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ja": "4本をざっくり比べる",
+        "en": "The four apps at a glance"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "いちばんの違いは、写真のどこの色を取るかです。1点の色がほしいのか、写真全体をならした色がほしいのかで、選ぶアプリが変わります。",
+            "en": "The biggest difference is which part of the photo they take the color from. It depends on whether you want one exact spot, or the photo averaged into a single color."
+          }
+        },
+        {
+          "type": "table",
+          "head": [
+            {
+              "ja": "アプリ",
+              "en": "App"
+            },
+            {
+              "ja": "評価の件数",
+              "en": "Ratings"
+            },
+            {
+              "ja": "どこの色を取るか",
+              "en": "Where the color comes from"
+            },
+            {
+              "ja": "出る形式",
+              "en": "Formats"
+            },
+            {
+              "ja": "画像に残す",
+              "en": "Saving as an image"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ja": "SkyCode（僕のアプリ）",
+                "en": "SkyCode (my app)"
+              },
+              {
+                "ja": "234件",
+                "en": "234"
+              },
+              {
+                "ja": "写真全体の平均",
+                "en": "Average of the whole photo"
+              },
+              {
+                "ja": "HEX。少し濃い色と薄い色も",
+                "en": "HEX, plus a slightly darker and lighter shade"
+              },
+              {
+                "ja": "写真にコードを入れて保存",
+                "en": "Saves the photo with the code on it"
+              }
+            ],
+            [
+              {
+                "ja": "色しらべ",
+                "en": "Color Analyzer"
+              },
+              {
+                "ja": "74件",
+                "en": "74"
+              },
+              {
+                "ja": "カメラの照準、画像の配色",
+                "en": "Camera crosshair, palette of an image"
+              },
+              {
+                "ja": "HEXなど12種類",
+                "en": "12 formats, including HEX"
+              },
+              {
+                "ja": "解析結果を共有できる",
+                "en": "Share analysis results"
+              }
+            ],
+            [
+              {
+                "ja": "カラコル",
+                "en": "ColorColl"
+              },
+              {
+                "ja": "8件",
+                "en": "8"
+              },
+              {
+                "ja": "触った場所",
+                "en": "The spot you touch"
+              },
+              {
+                "ja": "RGB、HSV、HTML",
+                "en": "RGB, HSV, HTML"
+              },
+              {
+                "ja": "カラーカード画像を作れる",
+                "en": "Makes a color card image"
+              }
+            ],
+            [
+              {
+                "ja": "ColorCheck!",
+                "en": "ColorCheck!"
+              },
+              {
+                "ja": "0件",
+                "en": "0"
+              },
+              {
+                "ja": "平均の色",
+                "en": "Average color"
+              },
+              {
+                "ja": "RGBと16進コード",
+                "en": "RGB and hex"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "1本ずつ見ていく",
+        "en": "Each app, one by one"
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "id": "1512663141"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "写真を選ぶか撮ると、写真全体の平均の色をカラーコードにして、写真の上に出します。空でも、ゲームのスクリーンショットでも、イラストでも使えます。",
+            "en": "Pick or take a photo, and it turns the average color of the whole photo into a color code shown on the photo. It works with skies, game screenshots, and illustrations alike."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "ふつうの表示では、平均の色と、それより少し濃い色と薄い色の3つが並びます。1色だけの表示にも切り替えられます。コードはタップするとコピーできて、文字の大きさは3段階から選べます。",
+            "en": "In the default view, you get three colors, the average plus a slightly darker and a slightly lighter shade. You can switch to show just one. Tap a code to copy it, and choose from three text sizes."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "コードの入った画像は保存したり、SNSに共有したりできます。無料で使えて広告が出ます。購入すると広告が消えます。",
+            "en": "You can save the image with the code on it or share it on social media. It is free with ads, and a purchase removes them."
+          }
+        },
+        {
+          "type": "app",
+          "id": "1160206848"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "カメラをかざすか画像を選ぶと、色の値を出すアプリです。HEXやRGBのほかに、CMYKやマンセルなど12種類の形式に対応しています。",
+            "en": "Point the camera or pick an image, and it shows the color values. Besides HEX and RGB, it supports 12 formats including CMYK and Munsell."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "画像の配色を、ベースの色、組み合わせる色、強調の色に分けて解析してくれます。近い日本の伝統色の名前も出るので、デザインの仕事にも向いています。",
+            "en": "It also breaks an image's palette into a base color, an assort color, and an accent color, and tells you the nearest traditional color name. That makes it a good fit for design work."
+          }
+        },
+        {
+          "type": "app",
+          "id": "874174022"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "写真をタッチすると、その場所の色を取り出すアプリです。取り出した色に名前を付けて、元の写真と一緒に保存できます。",
+            "en": "Touch a photo and it picks the color at that spot. You can name the color and save it together with the original photo."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "コードはRGB、HSV、HTMLで出ます。カラーカードの画像を作って、メールやSNSで送ることもできます。広告はアドオンの購入で消せます。",
+            "en": "Codes are shown as RGB, HSV, and HTML. You can make a color card image and send it by email or social media. An add-on purchase removes the ads."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6739463617"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "カメラかアルバムの写真から平均の色を出して、RGBの値と16進コードをコピーできるアプリです。説明文は短くて、ほかの機能は書かれていませんでした。",
+            "en": "It finds the average color of a photo from the camera or your album, and lets you copy the RGB values and hex code. The description is short and doesn't mention anything else."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "どれを選ぶか",
+        "en": "Which one to pick"
+      },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "ja": "写真の中の1点の色を、名前を付けてためていきたいなら、カラコル",
+              "en": "If you want to pick exact spots and collect them with names, ColorColl"
+            },
+            {
+              "ja": "いろいろな形式の値や、配色の分析がほしいなら、色しらべ",
+              "en": "If you need many formats or palette analysis, Color Analyzer"
+            },
+            {
+              "ja": "平均の色のコードだけをさっと知りたいなら、ColorCheck!",
+              "en": "If you just want the average color code, quickly, ColorCheck!"
+            },
+            {
+              "ja": "写真全体の色をコードにして、その写真に入れて残したいなら、SkyCode",
+              "en": "If you want the whole photo as a color code, stamped onto the photo, SkyCode"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "ja": "無料で使えますか？",
+        "en": "Are they free?"
+      },
+      "a": {
+        "ja": "4本とも無料で入れられます。SkyCodeとカラコルは広告が出て、購入すると消えます。",
+        "en": "All four are free to download. SkyCode and ColorColl show ads, and a purchase removes them."
+      }
+    },
+    {
+      "q": {
+        "ja": "写真の中の特定の場所の色を知りたいときは？",
+        "en": "What if I want the color of one specific spot?"
+      },
+      "a": {
+        "ja": "SkyCodeは写真全体の平均を出すので、1点の色には向きません。触った場所の色を出すカラコルか、カメラの照準で色を測る色しらべを使ってください。",
+        "en": "SkyCode averages the whole photo, so it isn't the right tool for one spot. Use ColorColl, which picks the spot you touch, or Color Analyzer, which reads the color under its camera crosshair."
+      }
+    },
+    {
+      "q": {
+        "ja": "出たカラーコードはどこで使えますか？",
+        "en": "Where can I use the color codes?"
+      },
+      "a": {
+        "ja": "HEXのコードは、デザインのアプリやウェブサイトの色の指定、イラストのアプリの色選びにそのまま入れられます。",
+        "en": "HEX codes can go straight into design apps, website color settings, or the color picker in drawing apps."
+      }
+    }
+  ],
+  "closing": {
+    "ja": "SkyCodeの評価は234件になりました。空以外にどんな写真の色を調べたか、聞いてみたいです🎨",
+    "en": "SkyCode has reached 234 ratings. I'm curious what you've checked besides the sky 🎨"
+  },
+  "notes": {
+    "ja": "各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。撮ったときの光や写真の加工によって、同じものでも出る色は変わります。",
+    "en": "Features and rating counts were checked against each app's App Store description on November 15, 2026, and may change with updates. The color you get can vary with the lighting when you took the photo and any editing, even for the same subject."
+  },
+  "illustration": {
+    "scene": "キャラが壁に、お気に入りのマグカップや観葉植物や夕暮れの街の写真を並べて貼っていて、それぞれの写真の下に1色ずつの色見本の札（文字なし）を付けて見比べている。手には絵の具の筆。",
+    "alt": {
+      "ja": "写真の下に色見本の札を付けて見比べるキャラクター",
+      "en": "The character pinning photos to a wall with a color swatch under each one, comparing them"
+    }
+  }
+}

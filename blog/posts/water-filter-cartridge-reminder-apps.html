@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/js/lang.js"></script>
+    <!-- このページは scripts/build_guides.py が docs/guides/water-filter-cartridge-reminder-apps.json から作る。直すのは JSON のほう -->
+    <title>浄水器のカートリッジの交換時期を忘れないアプリ3選 - Blog | Ryo Tsuzukihashi</title>
+    <meta name="description" content="浄水器のカートリッジの交換時期を知らせてくれるアプリを3本比べました。通知の時期、期限を過ぎたあと、浄水器以外のフィルターも入れられるかの違いをまとめています。HomeKeepの作者が書いています。">
+    <meta name="title-en" content="3 Apps That Remind You When to Replace Your Water Filter Cartridge - Blog | Ryo Tsuzukihashi">
+    <meta name="description-en" content="I compared three iPhone apps that remind you when to replace your water filter cartridge: when they notify you, what happens after the date, and whether they handle other filters at home too. Written by the maker of HomeKeep.">
+    <link rel="canonical" href="https://tsuzukit.com/blog/posts/water-filter-cartridge-reminder-apps.html">
+
+    <!-- OGP -->
+    <meta property="og:title" content="浄水器のカートリッジの交換時期を忘れないアプリ3選">
+    <meta property="og:description" content="浄水器のカートリッジの交換時期を知らせてくれるアプリを3本比べました。通知の時期、期限を過ぎたあと、浄水器以外のフィルターも入れられるかの違いをまとめています。HomeKeepの作者が書いています。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://tsuzukit.com/blog/posts/water-filter-cartridge-reminder-apps.html">
+    <meta property="og:image" content="https://tsuzukit.com/assets/images/posts/water-filter-cartridge-reminder-apps.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://tsuzukit.com/assets/images/posts/water-filter-cartridge-reminder-apps.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-dark-32x32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-dark-16x16.png" media="(prefers-color-scheme: dark)">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERPQ1EGLH');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8240751277462688"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
+    <link rel="stylesheet" href="/assets/css/guide.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "浄水器のカートリッジの交換時期を忘れないアプリ3選",
+      "description": "浄水器のカートリッジの交換時期を知らせてくれるアプリを3本比べました。通知の時期、期限を過ぎたあと、浄水器以外のフィルターも入れられるかの違いをまとめています。HomeKeepの作者が書いています。",
+      "image": "https://tsuzukit.com/assets/images/posts/water-filter-cartridge-reminder-apps.webp",
+      "datePublished": "2026-11-15",
+      "dateModified": "2026-11-15",
+      "inLanguage": "ja",
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "mainEntityOfPage": "https://tsuzukit.com/blog/posts/water-filter-cartridge-reminder-apps.html",
+      "about": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "フィルター交換 HomeKeep",
+          "url": "https://apps.apple.com/jp/app/id6778079517",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "浄水器日記：浄水器管理・フィルター交換通知",
+          "url": "https://apps.apple.com/jp/app/id6761051602",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "かえどき - 交換時期・掃除リマインダー",
+          "url": "https://apps.apple.com/jp/app/id6822734350",
+          "operatingSystem": "iOS"
+        }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "フィルター交換 HomeKeep",
+      "operatingSystem": "iOS",
+      "applicationCategory": "LifestyleApplication",
+      "url": "https://apps.apple.com/jp/app/id6778079517",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "交換時期はどこで分かりますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "カートリッジの説明書か箱に書いてあります。見つからなければ、浄水器のメーカーのサイトで型番から探せます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "無料で使えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "3本とも無料で入れられます。HomeKeepは無料だとフィルター3件までで、それより多く入れるのは有料です。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "エアコンのフィルターも一緒に管理できますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "HomeKeepとかえどきはできます。浄水器日記は浄水器のためのアプリです。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tsuzukit.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://tsuzukit.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "困りごとから選ぶアプリ",
+          "item": "https://tsuzukit.com/blog/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "浄水器のカートリッジの交換時期を忘れないアプリ3選",
+          "item": "https://tsuzukit.com/blog/posts/water-filter-cartridge-reminder-apps.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">TsuzuKit</a>
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/portfolio/" class="nav-link">Portfolio</a>
+                <a href="/blog/" class="nav-link active">Blog</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post -->
+    <article class="blog-post">
+        <header class="post-header">
+            <div class="post-meta">
+                <span class="post-date">2026.11.15</span>
+                <span class="post-category"><span class="i18n-ja">アプリの選び方</span><span class="i18n-en">App guides</span></span>
+                <span class="post-reading-time"><span class="i18n-ja">4分で読める</span><span class="i18n-en">4 min read</span></span>
+            </div>
+            <h1 class="post-title"><span class="i18n-ja">浄水器のカートリッジの交換時期を忘れないアプリ3選</span><span class="i18n-en">3 Apps That Remind You When to Replace Your Water Filter Cartridge</span></h1>
+        </header>
+        <figure class="post-illustration guide-illustration"><img src="/assets/images/posts/water-filter-cartridge-reminder-apps.webp" width="1200" height="800" alt="蛇口の浄水器のカートリッジを新しいものに替え、スマホのチェックの印を見て満足するキャラクター" data-en-alt="The character swapping in a new cartridge on a faucet water filter, pleased to see a check mark on the phone beside the sink" fetchpriority="high"></figure>
+
+        <div class="post-content guide i18n-ja">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">先に答え</p>
+                <p>交換時期はカートリッジごとに違うので、まず説明書か箱で日数を確かめます。あとは交換日を数えて知らせてくれるアプリに任せるのが楽です。浄水器だけを細かく見たいなら浄水器日記、エアコンや空気清浄機のフィルターもまとめたいなら、僕が作ったHomeKeepかかえどきが合います。</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">書いた人 <a href="https://tsuzukit.com/about/">續橋 涼</a>（@tsuzuki817）</p>
+                    <p class="guide-byline-bio">2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。HomeKeepの作者です。</p>
+                    <p class="guide-byline-date">公開 <time datetime="2026-11-15">2026.11.15</time> · 更新 <time datetime="2026-11-15">2026.11.15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">この記事は、HomeKeepを作った僕が書いています。ほかの2本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。</p>
+            <h2>交換時期はカートリッジの説明書で決まる</h2>
+            <p>浄水器のカートリッジは、製品ごとに交換の目安が違います。何か月ごとか、何リットルごとかは、説明書かカートリッジの箱に書いてあります。</p>
+            <p>困るのは、その日付を覚えておくことのほうですね。ここから先は、交換した日から数えて知らせてくれるアプリを3本比べます。</p>
+            <h2>3本をざっくり比べる</h2>
+            <p>違いが出るのは、浄水器だけを見るアプリか、家のフィルターをまとめて見るアプリかです。</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">アプリ</th><th scope="col">評価の件数</th><th scope="col">入れられるもの</th><th scope="col">交換日の前の通知</th><th scope="col">期限を過ぎたら</th><th scope="col">無料の範囲</th></tr></thead><tbody><tr><th scope="row">HomeKeep（僕のアプリ）</th><td>0件</td><td>浄水器、エアコン、空気清浄機、加湿器など家電のフィルター</td><td>7日前と前日と当日</td><td>交換するまで毎日</td><td>3件まで</td></tr><tr><th scope="row">浄水器日記</th><td>0件</td><td>浄水器だけ。フィルターの段階ごとに周期を設定</td><td>あり。時期は説明文に記載なし</td><td>期限超過の通知あり</td><td>無料プランあり。中身は説明文に記載なし</td></tr><tr><th scope="row">かえどき</th><td>2件</td><td>フィルター、浄水器、歯ブラシ、保証書など</td><td>期限の日の好きな時刻</td><td>説明文に記載なし</td><td>説明文に記載なし</td></tr></tbody></table></div>
+            <h2>1本ずつ見ていく</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/39/ba/df/39badfca-30bb-eff0-0a52-bf1701e2e152/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">僕が作ったアプリ</span>
+                    <h3 class="guide-app-name">フィルター交換 HomeKeep</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · App Storeの評価 0件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6778079517" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>浄水器やエアコンなど、家電の種類を選ぶと交換の周期が最初から入ります。浄水器なら3か月ごとです。周期は1か月から2年までの中で選び直せるので、説明書の日数に合わせて直してください。</p>
+            <p>通知は7日前と前日と当日です。期限を過ぎたら、交換したと記録するまで毎日鳴ります。交換が近い順に並ぶので、家じゅうのフィルターのうち次にどれを替えるかが一覧で分かります。</p>
+            <p>無料だとフィルターは3件まで登録できて、通知とウィジェットも使えます。型番や買い直しのリンクを残すのはプレミアムです。iPhone専用です。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4b/6d/17/4b6d1730-faa6-774c-aa5b-0622a7e75d31/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">浄水器日記：浄水器管理・フィルター交換通知</h3>
+                    <p class="guide-app-meta">HAO CHANG KUO · App Storeの評価 0件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6761051602" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>名前のとおり浄水器のためのアプリです。フィルターが何段もある浄水器でも、段階ごとに交換の周期を分けて設定できます。据え置き型やアンダーシンク型、ポット型にも使えると書かれています。</p>
+            <p>プッシュ通知のほかにメールでも知らせてくれて、家族と共有もできます。浄水器を家族で使っていて、誰が替えたか分からなくなる家に向いていますね。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/be/77/a3/be77a3ee-75f2-a948-30c7-e12ed2d8f6de/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">かえどき - 交換時期・掃除リマインダー</h3>
+                    <p class="guide-app-meta">Hiroyuki Kawada · App Storeの評価 2件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6822734350" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>エアコンのフィルター、浄水器のカートリッジ、換気扇のフィルターなど、よくあるものは交換の目安が最初から入っています。期限の日の好きな時刻に通知が来て、やったと押せば次の日付が決まります。</p>
+            <p>型番を登録しておくと、Amazonや楽天でそのまま探せます。保証書を写真で残せるのも、ほかの2本には無いところです。</p>
+            <h2>アプリを入れたくないなら</h2>
+            <p>iPhoneに最初から入っているリマインダーでもできます。交換した日から数えた日付でリマインダーを作って、繰り返しをカスタムで3か月ごとのように設定します。</p>
+            <p>ただ、交換が遅れた月は次の日付を自分で直すことになります。交換した日から数え直してくれるのが、専用のアプリのいいところです。</p>
+            <h2>どれを選ぶか</h2>
+            <ul class="guide-list"><li>浄水器だけを、フィルターの段階ごとに家族で見たいなら、浄水器日記</li><li>フィルターのほかに歯ブラシや保証書もまとめたいなら、かえどき</li><li>家電のフィルターを交換が近い順に並べて、過ぎたら毎日知らせてほしいなら、HomeKeep</li></ul>
+            <h2>よくある質問</h2>
+            <dl class="guide-faq">
+                <dt>交換時期はどこで分かりますか？</dt><dd>カートリッジの説明書か箱に書いてあります。見つからなければ、浄水器のメーカーのサイトで型番から探せます。</dd>
+                <dt>無料で使えますか？</dt><dd>3本とも無料で入れられます。HomeKeepは無料だとフィルター3件までで、それより多く入れるのは有料です。</dd>
+                <dt>エアコンのフィルターも一緒に管理できますか？</dt><dd>HomeKeepとかえどきはできます。浄水器日記は浄水器のためのアプリです。</dd>
+            </dl>
+            <p>HomeKeepはまだ評価が0件なので、最初のひと声をもらえたらうれしいです。</p>
+            <div class="guide-notes">各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。カートリッジの交換時期は、お使いの浄水器の説明書に従ってください。</div>
+        </div>
+
+        <div class="post-content guide i18n-en">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">Short answer</p>
+                <p>Every cartridge has its own lifespan, so first check the manual or the box. After that, the easy part is letting an app count the days and remind you. If you only care about your water purifier, look at Water Purifier Diary. If you want your air conditioner and air purifier filters in the same list, HomeKeep, which I made, or Kaedoki is a better fit.</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">Written by <a href="https://tsuzukit.com/about/">Ryo Tsuzukihashi</a> (@tsuzuki817)</p>
+                    <p class="guide-byline-bio">I&#x27;ve been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made HomeKeep.</p>
+                    <p class="guide-byline-date">Published <time datetime="2026-11-15">2026-11-15</time> · Updated <time datetime="2026-11-15">2026-11-15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">I made HomeKeep, and I wrote this article. The other two apps are by developers I don&#x27;t know, and I haven&#x27;t received money or anything else from them. Everything compared here comes from each app&#x27;s App Store description and rating count as of November 15, 2026.</p>
+            <h2>Your cartridge&#x27;s manual sets the date</h2>
+            <p>Every water filter cartridge has its own replacement guideline. Whether it&#x27;s every few months or every so many liters, it&#x27;s printed in the manual or on the cartridge box.</p>
+            <p>The hard part is remembering the date. From here on, I compare three apps that count from the day you swapped the cartridge and remind you.</p>
+            <h2>The three apps at a glance</h2>
+            <p>The main difference is whether an app focuses on water purifiers or keeps all the filters in your home in one list.</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">App</th><th scope="col">Ratings</th><th scope="col">What you can track</th><th scope="col">Before the date</th><th scope="col">After the date</th><th scope="col">Free version</th></tr></thead><tbody><tr><th scope="row">HomeKeep (my app)</th><td>0</td><td>Filters in home appliances, including water purifiers, air conditioners, air purifiers, and humidifiers</td><td>7 days before, the day before, and on the day</td><td>Every day until you replace it</td><td>Up to 3 filters</td></tr><tr><th scope="row">Water Purifier Diary</th><td>0</td><td>Water purifiers only, with a cycle for each filter stage</td><td>Yes, timing not mentioned</td><td>Sends an overdue notification</td><td>Has a free plan, details not mentioned</td></tr><tr><th scope="row">Kaedoki</th><td>2</td><td>Filters, water purifiers, toothbrushes, warranties, and more</td><td>At a time you choose on the due date</td><td>Not mentioned</td><td>Not mentioned</td></tr></tbody></table></div>
+            <h2>Each app, one by one</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/39/ba/df/39badfca-30bb-eff0-0a52-bf1701e2e152/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">I made this</span>
+                    <h3 class="guide-app-name">HomeKeep - Filter Reminder</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · 0 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6778079517" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>Pick the type of appliance, such as a water purifier or an air conditioner, and a replacement cycle is filled in for you. For a water purifier, it starts at every 3 months. You can change it to anything from 1 month to 2 years, so set it to match your manual.</p>
+            <p>It notifies you 7 days before, the day before, and on the day. Once the date passes, it keeps notifying you every day until you log the swap. Filters are listed by which one is due next, so you can see at a glance what to replace first.</p>
+            <p>The free version holds up to 3 filters, with notifications and widgets included. Saving model numbers and links to buy the same cartridge again is a Premium feature. It&#x27;s iPhone only.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4b/6d/17/4b6d1730-faa6-774c-aa5b-0622a7e75d31/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Water Purifier Diary</h3>
+                    <p class="guide-app-meta">HAO CHANG KUO · 0 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6761051602" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>As the name says, it&#x27;s built for water purifiers. Even if yours has several filter stages, you can set a separate cycle for each one. The description says it works for countertop, under-sink, and pitcher types.</p>
+            <p>Besides push notifications, it can also email you, and you can share it with your family. It suits a household where everyone uses the purifier and nobody remembers who changed it last.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/be/77/a3/be77a3ee-75f2-a948-30c7-e12ed2d8f6de/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Kaedoki: Replacement and Cleaning Reminder</h3>
+                    <p class="guide-app-meta">Hiroyuki Kawada · 2 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6822734350" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>Common items like air conditioner filters, water filter cartridges, and range hood filters come with a replacement guideline already set. You get a notification on the due date at a time you pick, and tapping done sets the next date.</p>
+            <p>If you save the model number, you can search for it on Amazon or Rakuten straight away. Keeping photos of warranty cards is something the other two don&#x27;t offer.</p>
+            <h2>If you&#x27;d rather not install an app</h2>
+            <p>You can use the Reminders app that comes with your iPhone. Create a reminder on the next replacement date, then set a custom repeat, for example every 3 months.</p>
+            <p>The catch is that if you replace it late, you have to fix the next date yourself. Counting again from the day you actually swapped it is what the dedicated apps do for you.</p>
+            <h2>Which one to pick</h2>
+            <ul class="guide-list"><li>If you want to track only your water purifier, stage by stage, and share it with family, Water Purifier Diary</li><li>If you want toothbrushes and warranties in the same place as your filters, Kaedoki</li><li>If you want your appliance filters sorted by what&#x27;s due next, with a reminder every day once one is overdue, HomeKeep</li></ul>
+            <h2>FAQ</h2>
+            <dl class="guide-faq">
+                <dt>Where do I find the replacement timing?</dt><dd>It&#x27;s in the cartridge&#x27;s manual or on the box. If you can&#x27;t find it, look up the model number on the purifier maker&#x27;s website.</dd>
+                <dt>Are they free?</dt><dd>All three are free to download. HomeKeep&#x27;s free version holds up to 3 filters, and adding more is a paid feature.</dd>
+                <dt>Can I track my air conditioner filter too?</dt><dd>HomeKeep and Kaedoki can. Water Purifier Diary is made for water purifiers.</dd>
+            </dl>
+            <p>HomeKeep doesn&#x27;t have a single rating yet, so I&#x27;d be glad to hear from the first person who tries it.</p>
+            <div class="guide-notes">Features and rating counts were checked against each app&#x27;s App Store description on November 15, 2026, and may change with updates. For when to replace your cartridge, follow the manual for your water purifier.</div>
+        </div>
+
+        <nav class="post-navigation">
+            <img class="tk-char tk-char--post" src="/assets/images/character-hang.png" alt="" width="381" height="208">
+            <a href="/blog/guides/" class="nav-link-wrapper"><span>&larr; <span class="i18n-ja">困りごとから選ぶアプリの一覧へ</span><span class="i18n-en">All guides: apps for everyday problems</span></span></a>
+        </nav>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
+                    <p class="footer-description"><span class="i18n-ja">誰も作らないものを、まじめに作る</span><span class="i18n-en">I make things nobody else would, and I make them seriously</span></p>
+                </div>
+                <div class="footer-nav">
+                    <a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
+                    <a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
+                    <a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
+                    <a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ryo Tsuzukihashi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,326 @@
+{
+  "slug": "mix-two-birthday-colors",
+  "date_published": "2026-11-15",
+  "date_updated": "2026-11-15",
+  "search_phrase": {
+    "ja": "誕生日カラー 混ぜる",
+    "en": "mix two birthday colors"
+  },
+  "evidence": "2026-11-15 に Google の検索候補で「誕生日カラー」を引くと、16件中3件が混ぜる話（誕生日カラー混ぜる、誕生日カラーコード 混ぜる、誕生日カラー 混ぜる）で、「誕生色」の13件にも「誕生色 混ぜる」があった。同じ日の App Store で「誕生日カラー」を検索すると、ふたりの誕生日から色を作るアプリはバースデームーン 9件とあいいろ 0件の2本だけだった。",
+  "title": {
+    "ja": "ふたりの誕生日カラーを混ぜるアプリ2選と、自分で混ぜる方法",
+    "en": "Mixing Two Birthday Colors: 2 Apps and How to Do It Yourself"
+  },
+  "description": {
+    "ja": "ふたりの誕生日カラーを混ぜる方法をまとめました。アプリ2本の違いと、カラーコードから自分で混ぜる計算を書いています。バースデームーンの作者が書いています。",
+    "en": "How to mix two birthday colors: the difference between two iPhone apps, and the simple math for mixing the color codes yourself. Written by the maker of Birthday Moon."
+  },
+  "excerpt": {
+    "ja": "ふたりの誕生日カラーを混ぜるアプリ2本と、カラーコードで自分で混ぜる方法。バースデームーンを作った僕が書いています。",
+    "en": "Two apps that mix two birthday colors, plus how to do it with the color codes yourself. I made Birthday Moon, one of the two."
+  },
+  "category": {
+    "ja": "アプリの選び方",
+    "en": "App guides"
+  },
+  "reading_minutes": 3,
+  "author": {
+    "name": {
+      "ja": "續橋 涼",
+      "en": "Ryo Tsuzukihashi"
+    },
+    "handle": "tsuzuki817",
+    "bio": {
+      "ja": "2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。バースデームーンの作者です。",
+      "en": "I've been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made Birthday Moon."
+    },
+    "url": "https://tsuzukit.com/about/",
+    "same_as": [
+      "https://x.com/tsuzuki817"
+    ]
+  },
+  "tldr": {
+    "ja": "カラーコードが分かっていれば、赤、緑、青の数字をそれぞれ足して2で割れば混ぜた色になります。誕生石の色でかわいいデザインにしたいならあいいろ。366日の誕生日カラーを混ぜて月の画像にしたい人は、僕が作ったバースデームーンも見てみてください。",
+    "en": "If you know the color codes, add the red, green, and blue values and divide each by two. For birthstone-based colors in a cute design, there's Aiiro. If you want the 366-day birthday colors mixed and painted on a moon, take a look at Birthday Moon, which I made."
+  },
+  "disclosure": {
+    "ja": "この記事は、バースデームーンを作った僕が書いています。あいいろは知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。",
+    "en": "I made Birthday Moon, and I wrote this article. Aiiro is by a developer I don't know, and I haven't received money or anything else from them. Everything compared here comes from each app's App Store description and rating count as of November 15, 2026."
+  },
+  "own_app": "6737449860",
+  "app_category": "DesignApplication",
+  "apps": [
+    {
+      "id": "6737449860",
+      "name": {
+        "ja": "バースデームーン",
+        "en": "Birthday Moon"
+      },
+      "short": {
+        "ja": "バースデームーン",
+        "en": "Birthday Moon"
+      },
+      "developer": "Ryo Tsudukihashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6a/a0/35/6aa035c4-70f6-bd63-9a2d-14a57bc90a09/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6737449860",
+      "android_url": null,
+      "rating_count": 9
+    },
+    {
+      "id": "6822622713",
+      "name": {
+        "ja": "あいいろ - ふたりの誕生日ラブカラー",
+        "en": "Aiiro - Our Birthday Love Colors"
+      },
+      "short": {
+        "ja": "あいいろ",
+        "en": "Aiiro"
+      },
+      "developer": "NexA Limited Liabilitiy",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/53/df/64/53df64bc-8efa-3f38-5484-18b127fd8617/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6822622713",
+      "android_url": null,
+      "rating_count": 0
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ja": "2本をざっくり比べる",
+        "en": "The two apps at a glance"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "ふたりの誕生日から色を作るアプリは、App Storeで探すと多くありません。見つかった2本は、色のもとにしている一覧がちがいます。",
+            "en": "There aren't many apps on the App Store that make a color from two birthdays. The two I found start from different color lists."
+          }
+        },
+        {
+          "type": "table",
+          "head": [
+            {
+              "ja": "アプリ",
+              "en": "App"
+            },
+            {
+              "ja": "評価の件数",
+              "en": "Ratings"
+            },
+            {
+              "ja": "色のもと",
+              "en": "Where the colors come from"
+            },
+            {
+              "ja": "ふたりの色の出し方",
+              "en": "How two colors are combined"
+            },
+            {
+              "ja": "できあがるもの",
+              "en": "What you get"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ja": "バースデームーン（僕のアプリ）",
+                "en": "Birthday Moon (my app)"
+              },
+              {
+                "ja": "9件",
+                "en": "9"
+              },
+              {
+                "ja": "366日それぞれの誕生日カラー",
+                "en": "A birthday color for each of the 366 days"
+              },
+              {
+                "ja": "2つの色を混ぜて1色にする",
+                "en": "Mixes the two colors into one"
+              },
+              {
+                "ja": "満月や三日月など6種類の月の画像",
+                "en": "An image of the moon, in six shapes such as full and crescent"
+              }
+            ],
+            [
+              {
+                "ja": "あいいろ",
+                "en": "Aiiro"
+              },
+              {
+                "ja": "0件",
+                "en": "0"
+              },
+              {
+                "ja": "月の誕生石をもとにしたオリジナルの色",
+                "en": "Original colors based on the birthstone of each month"
+              },
+              {
+                "ja": "ふたりの色を1枚のデザインに入れる",
+                "en": "Puts both colors into one design"
+              },
+              {
+                "ja": "ホロ、ハート、プリの3つのデザイン",
+                "en": "Three designs called holo, heart, and purikura"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "1本ずつ見ていく",
+        "en": "Each app, one by one"
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "id": "6737449860"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "366日それぞれの誕生日カラーで、月を塗るアプリです。誕生日を2つ選ぶと、2つの色を混ぜた1色で月が染まります。",
+            "en": "This app paints a moon in the birthday color for each of the 366 days. Pick two birthdays, and the moon turns the single color you get by mixing the two."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "月の形は、満月、三日月、土星、木星、雲の5つから選べます。月の上には2人の誕生日のピンが立ちます。できた画像は高画質でカメラロールに保存できて、壁紙やSNSに使えます。",
+            "en": "You can choose from five shapes, the full moon, crescent, Saturn, Jupiter, and a cloud. Pins for both birthdays sit on the moon. You can save the result in high quality to your camera roll and use it as wallpaper or on social media."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "自分で選んだ画像を誕生日カラーで染める自由形と、広告を消すのはプレミアムで、買い切りです。何枚か保存すると、短い広告を見るかどうかを聞く画面が出ます。",
+            "en": "The freeform mode, which tints an image you choose in your birthday colors, and removing ads are Premium, a one-time purchase. After you save a few images, the app asks whether you want to watch a short ad."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6822622713"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "ふたりの誕生日を選ぶと、ふたりだけのラブカラーができるアプリです。色は月の誕生石をもとにして、日付が進むほど次の月の石に寄せていくオリジナルの色だと書かれています。",
+            "en": "Choose two birthdays and it makes a love color for the pair. The description says the colors are its own, based on each month's birthstone and shifting toward the next month's stone as the days go on."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "ホロ、ハート、プリの3つのデザインがあって、待ち受け画像やシェアカードとして保存できます。ホーム画面とロック画面のウィジェットにも置けます。買い切りのPlusで、広告が消えて、5秒のループ動画も保存できます。",
+            "en": "There are three designs, holo, heart, and purikura, and you can save them as wallpaper or share cards. They also work as Home Screen and Lock Screen widgets. The one-time Plus purchase removes ads and lets you save a five-second looping video."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "アプリを入れずに混ぜるなら",
+        "en": "Mixing the colors without an app"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "誕生日カラーのカラーコードが分かっていれば、自分で混ぜられます。赤、緑、青の数字をそれぞれ足して2で割るだけです。",
+            "en": "If you know the color codes for both birthday colors, you can mix them yourself. Add the red, green, and blue values for each and divide by two."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "たとえば赤のFF0000と青の0000FFなら、だいたい800080の紫になります。バースデームーンの中でやっている混ぜ方も、これと同じです。",
+            "en": "Red FF0000 and blue 0000FF, for example, come out at about 800080, a purple. Birthday Moon mixes colors the same way."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "反対どうしの色を混ぜると、くすんだ色になりやすいです。赤のFF0000と緑の00FF00なら、だいたい808000のオリーブのような色になります。",
+            "en": "Mixing opposite colors tends to give you something muddy. Red FF0000 and green 00FF00 come out at about 808000, which looks like olive."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "どれを選ぶか",
+        "en": "Which one to pick"
+      },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "ja": "誕生石の色で、ハートやプリ風のかわいいデザインにしたいなら、あいいろ",
+              "en": "If you want birthstone-based colors in a cute heart or purikura-style design, Aiiro"
+            },
+            {
+              "ja": "366日の誕生日カラーを混ぜた1色を、月の形で残したいなら、バースデームーン",
+              "en": "If you want the two birthday colors mixed into one and painted on a moon, Birthday Moon"
+            },
+            {
+              "ja": "カラーコードが分かっていて、色だけ知りたいなら、自分で計算するのがいちばん早いです",
+              "en": "If you know the color codes and only need the color, working it out yourself is quickest"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "ja": "誕生日カラーは一覧によってちがうのですか？",
+        "en": "Do birthday colors differ between lists?"
+      },
+      "a": {
+        "ja": "ちがうことがあります。出どころの違う一覧がいくつかあって、あいいろのように誕生石から色を決めているアプリもあります。",
+        "en": "They can. There are several lists from different sources, and some apps, like Aiiro, base their colors on birthstones instead."
+      }
+    },
+    {
+      "q": {
+        "ja": "色の名前やカラーコードは出ますか？",
+        "en": "Does it show the color name or code?"
+      },
+      "a": {
+        "ja": "バースデームーンは、色の名前もカラーコードも画面に出していません。混ぜた色は月の色で見せています。",
+        "en": "Birthday Moon doesn't show the color name or code on screen. You see the mixed color on the moon itself."
+      }
+    },
+    {
+      "q": {
+        "ja": "推しとの誕生日でも作れますか？",
+        "en": "Can I use my fave’s birthday?"
+      },
+      "a": {
+        "ja": "どちらのアプリも、日付を選ぶだけなので作れます。バースデームーンの説明文にも、推しとの色を組み合わせる使い方が書いてあります。",
+        "en": "Yes. Both apps only ask for dates. Birthday Moon's description even mentions combining your color with your fave's."
+      }
+    }
+  ],
+  "closing": {
+    "ja": "どんな2つの色が混ざった月ができたのか、こっそり教えてもらえたらうれしいです🌙",
+    "en": "I'd quietly love to know which two colors ended up in your moon 🌙"
+  },
+  "notes": {
+    "ja": "各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。誕生日カラーは占いではなく、色を楽しむためのものとして書いています。",
+    "en": "Features and rating counts were checked against each app's App Store description on November 15, 2026, and may change with updates. Birthday colors here are treated as a fun way to pick colors, not as fortune-telling."
+  },
+  "illustration": {
+    "scene": "夜の窓辺の机。キャラがパレットの上で、ピンクと水色の2つの絵の具を筆で混ぜていて、できた薄紫の絵の具で大きな三日月の絵を塗っている。窓の外の空にも、同じ薄紫の三日月が浮かんでいる。",
+    "alt": {
+      "ja": "ピンクと水色の絵の具を混ぜて、薄紫の三日月を塗るキャラクター",
+      "en": "The character mixing pink and light blue paint on a palette and painting a pale purple crescent moon"
+    }
+  }
+}

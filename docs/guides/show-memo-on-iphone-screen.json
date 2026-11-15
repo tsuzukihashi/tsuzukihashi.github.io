@@ -1,0 +1,431 @@
+{
+  "slug": "show-memo-on-iphone-screen",
+  "date_published": "2026-11-15",
+  "date_updated": "2026-11-15",
+  "search_phrase": {
+    "ja": "iphone 画面 に メモ 表示",
+    "en": "show a note on the iPhone screen"
+  },
+  "evidence": "2026-11-15 に Google の検索候補で「iphone 画面 に メモ 表示」を引くと9件出て、7件がロック画面・ホーム画面・待ち受けのどこに出すかを足した形、3件が「アプリ」「方法」「するには」付きだった。同じ日に App Store で「画面 メモ 表示」を検索すると、15本中10本がロック画面かホーム画面にメモを出すアプリで、ほかのアプリの上に出すタイプは流れるメモ帳を入れて2本だけだった。",
+  "title": {
+    "ja": "iPhoneの画面にメモを出しっぱなしにするアプリ4選",
+    "en": "4 Apps That Keep a Note on Your iPhone Screen"
+  },
+  "description": {
+    "ja": "iPhoneの画面にメモを出しておくアプリを4本比べました。ホーム画面、ロック画面、ほかのアプリの上のどこに出せるかでまとめています。流れるメモ帳の作者が書いています。",
+    "en": "I compared four iPhone apps that keep a note on your screen, sorted by where the note can live: the Home Screen, the Lock Screen, or on top of other apps. Written by the maker of Floating Notepad."
+  },
+  "excerpt": {
+    "ja": "ホーム画面、ロック画面、ほかのアプリの上。メモを出せる場所で4本を比べました。流れるメモ帳を作った僕が書いています。",
+    "en": "Four apps compared by where your note shows up: Home Screen, Lock Screen, or on top of other apps. I made Floating Notepad, one of the four."
+  },
+  "category": {
+    "ja": "アプリの選び方",
+    "en": "App guides"
+  },
+  "reading_minutes": 4,
+  "author": {
+    "name": {
+      "ja": "續橋 涼",
+      "en": "Ryo Tsuzukihashi"
+    },
+    "handle": "tsuzuki817",
+    "bio": {
+      "ja": "2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。流れるメモ帳の作者です。",
+      "en": "I've been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made Floating Notepad."
+    },
+    "url": "https://tsuzukit.com/about/",
+    "same_as": [
+      "https://x.com/tsuzuki817"
+    ]
+  },
+  "tldr": {
+    "ja": "ホーム画面に1つ置ければいいなら、評価2,283件のWidget Memoがいちばん使われています。SNSや動画を見ている間もメモを目に入れたいなら、ほかのアプリの上に小さな窓で出せるアプリを選びます。僕が作った流れるメモ帳は、その窓の中でメモが文字の帯になって流れます。",
+    "en": "If one note on your Home Screen is enough, Widget Memo is the most used, with 2,283 ratings. If you want the note in front of you while you scroll social media or watch videos, pick an app that floats a small window over other apps. In Floating Notepad, which I made, the note scrolls across that window like a news ticker."
+  },
+  "disclosure": {
+    "ja": "この記事は、流れるメモ帳を作った僕が書いています。ほかの3本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。",
+    "en": "I made Floating Notepad, and I wrote this article. The other three apps are by developers I don't know, and I haven't received money or anything else from them. Everything compared here comes from each app's App Store description and rating count as of November 15, 2026."
+  },
+  "own_app": "1598380826",
+  "app_category": "ProductivityApplication",
+  "apps": [
+    {
+      "id": "1598380826",
+      "name": {
+        "ja": "流れるメモ帳",
+        "en": "Floating Notepad -Overlay-"
+      },
+      "short": {
+        "ja": "流れるメモ帳",
+        "en": "Floating Notepad"
+      },
+      "developer": "Ryo Tsudukihashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/11/be/c0/11bec0a0-27b4-31d9-f5bc-38161887744d/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id1598380826",
+      "android_url": null,
+      "rating_count": 473
+    },
+    {
+      "id": "1532911226",
+      "name": {
+        "ja": "Widget Memo - ウィジェットにメモを設置 -",
+        "en": "Widget Memo - Simple Note -"
+      },
+      "short": {
+        "ja": "Widget Memo",
+        "en": "Widget Memo"
+      },
+      "developer": "Ryosuke Tamura",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/05/10/0e/05100e38-bf06-52f5-eb77-564bfd890894/AppIcon-1x_U007emarketing-0-8-0-sRGB-85-220-0.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id1532911226",
+      "android_url": null,
+      "rating_count": 2283
+    },
+    {
+      "id": "1618652473",
+      "name": {
+        "ja": "ピクチャーインピクチャー メモ帳 - ピクチャインピクチャ",
+        "en": "Picture in Picture Notes - PiP"
+      },
+      "short": {
+        "ja": "ピクチャーインピクチャー メモ帳",
+        "en": "Picture in Picture Notes"
+      },
+      "developer": "FugaPiyo Inc.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ec/58/63/ec586336-582e-9446-79b7-727fc5346ca4/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id1618652473",
+      "android_url": null,
+      "rating_count": 16
+    },
+    {
+      "id": "6744823335",
+      "name": {
+        "ja": "メモといっしょ - 他のアプリ上でもメモ表示する付箋アプリ",
+        "en": "with notes_view notes wherever"
+      },
+      "short": {
+        "ja": "メモといっしょ",
+        "en": "with notes"
+      },
+      "developer": "Koji Watanabe",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e4/df/c0/e4dfc0a4-3f29-0dbc-f24a-592c3d455c62/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6744823335",
+      "android_url": null,
+      "rating_count": 2
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ja": "4本をざっくり比べる",
+        "en": "The four apps at a glance"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "いちばんの違いは、メモがどこに出るかです。ホーム画面は開いたときにだけ目に入り、ほかのアプリの上の窓はSNSや動画を見ている間もずっと出ています。",
+            "en": "The biggest difference is where the note appears. A Home Screen widget only catches your eye when you go back to the Home Screen, while a floating window stays on top while you're on social media or watching videos."
+          }
+        },
+        {
+          "type": "table",
+          "head": [
+            {
+              "ja": "アプリ",
+              "en": "App"
+            },
+            {
+              "ja": "評価の件数",
+              "en": "Ratings"
+            },
+            {
+              "ja": "メモが出る場所",
+              "en": "Where the note shows"
+            },
+            {
+              "ja": "メモの数",
+              "en": "Number of notes"
+            },
+            {
+              "ja": "料金",
+              "en": "Price"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ja": "流れるメモ帳（僕のアプリ）",
+                "en": "Floating Notepad (my app)"
+              },
+              {
+                "ja": "473件",
+                "en": "473"
+              },
+              {
+                "ja": "ほかのアプリの上の窓、ホーム画面とロック画面のウィジェット",
+                "en": "A floating window over other apps, plus Home Screen and Lock Screen widgets"
+              },
+              {
+                "ja": "いくつでも保存して切り替え",
+                "en": "Save as many as you like and switch"
+              },
+              {
+                "ja": "無料。広告を消すのはサブスクリプション",
+                "en": "Free. A subscription removes ads"
+              }
+            ],
+            [
+              {
+                "ja": "Widget Memo",
+                "en": "Widget Memo"
+              },
+              {
+                "ja": "2,283件",
+                "en": "2,283"
+              },
+              {
+                "ja": "ホーム画面のウィジェット",
+                "en": "Home Screen widget"
+              },
+              {
+                "ja": "ウィジェットに置けるのは1つ",
+                "en": "One note on the widget"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              }
+            ],
+            [
+              {
+                "ja": "ピクチャーインピクチャー メモ帳",
+                "en": "Picture in Picture Notes"
+              },
+              {
+                "ja": "16件",
+                "en": "16"
+              },
+              {
+                "ja": "ほかのアプリの上の窓",
+                "en": "A floating window over other apps"
+              },
+              {
+                "ja": "いくつでも。フォルダと色で分けられる",
+                "en": "Unlimited, sorted by folder and color"
+              },
+              {
+                "ja": "全部無料",
+                "en": "Completely free"
+              }
+            ],
+            [
+              {
+                "ja": "メモといっしょ",
+                "en": "with notes"
+              },
+              {
+                "ja": "2件",
+                "en": "2"
+              },
+              {
+                "ja": "ほかのアプリの上",
+                "en": "Over other apps"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "1本ずつ見ていく",
+        "en": "Each app, one by one"
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "id": "1598380826"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "メモをピクチャ・イン・ピクチャの小さな窓に出して、ほかのアプリの上に置いておけます。窓の中では、メモが1行の文字の帯になって右から左へ流れていきます。",
+            "en": "It puts your note in a small Picture in Picture window that stays on top of other apps. Inside the window, the note runs as a single line of text, scrolling from right to left."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "文字の色、背景、文字の大きさ、流れる速さは自分で変えられます。メモはいくつでも保存できて、出すメモはタップで切り替えます。決めた時間がたったら窓を自動で閉じる設定もあります。",
+            "en": "You can change the text color, background, font size, and scrolling speed. Save as many notes as you want and tap to switch which one is showing. There's also a setting that closes the window automatically after a set time."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "選んだメモは、ホーム画面とロック画面のウィジェットにも出せます。機能は全部無料で、サブスクリプションのサポーターになると広告が消えます。",
+            "en": "The note you pick can also go on a Home Screen or Lock Screen widget. Every feature is free, and becoming a supporter with a subscription removes the ads."
+          }
+        },
+        {
+          "type": "app",
+          "id": "1532911226"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "評価が2,283件あって、4本の中でいちばん使われています。ホーム画面のウィジェットにメモを出すことに絞ったアプリです。",
+            "en": "With 2,283 ratings, it's the most used of the four. It does one thing, which is putting a note on a Home Screen widget."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "説明文によると、ウィジェットに置けるメモは1つだけです。iPhoneのメモアプリのウィジェットより素早く書けて見やすいことを目指して作られています。",
+            "en": "According to its description, the widget holds just one note. It's made to be quicker to write in and easier to read than the widget from Apple's Notes app."
+          }
+        },
+        {
+          "type": "app",
+          "id": "1618652473"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "メモをタップすると、すぐにピクチャ・イン・ピクチャで表示されます。流れるメモ帳と同じく、ほかのアプリに移っても窓は出たままです。",
+            "en": "Tap a note and it opens right away in Picture in Picture. Like Floating Notepad, the window stays on screen when you switch to other apps."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "メモはいくつでも作れて、フォルダや色で分けられます。背景色、文字色、フォント、大きさも変えられて、説明文には全部の機能が無料と書いてあります。",
+            "en": "You can make any number of notes and sort them by folder or color. Background, text color, font, and size are all adjustable, and the description says every feature is free."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6744823335"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "ほかのアプリを開いても、メモを出し続けられる付箋のアプリです。文字の大きさ、フォント、色のテーマを変えられます。",
+            "en": "It's a sticky note app that keeps your note on screen even when you open other apps. You can change the text size, font, and color theme."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "説明文には、提出の締め切りや薬を飲む時間のような使い道がたくさん並んでいます。料金やメモの数については書かれていませんでした。",
+            "en": "The description lists lots of uses, like assignment deadlines or when to take medicine. It doesn't say anything about pricing or how many notes you can keep."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "アプリを入れたくないなら",
+        "en": "If you'd rather not install an app"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "ホーム画面なら、iPhoneに最初から入っているメモアプリのウィジェットでできます。ウィジェットを置いて編集から1つのメモを選べば、その中身がホーム画面に出ます。",
+            "en": "For the Home Screen, the widget from the Notes app that comes with your iPhone can do it. Add the widget, edit it, and choose a single note, and its contents show on your Home Screen."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "ロック画面なら、メモを書いた画像を壁紙にする手もあります。ただ、ほかのアプリを使っている間に出しておくことは、標準の機能だけではできません。",
+            "en": "For the Lock Screen, you can also set an image with your note written on it as your wallpaper. What the built-in features can't do is keep a note showing while you use other apps."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "どれを選ぶか",
+        "en": "Which one to pick"
+      },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "ja": "ホーム画面に1つ出せれば十分なら、Widget Memo",
+              "en": "If one note on your Home Screen is enough, Widget Memo"
+            },
+            {
+              "ja": "ほかのアプリの上に出したくて、広告なしで全部無料がいいなら、ピクチャーインピクチャー メモ帳",
+              "en": "If you want a note over other apps, completely free and ad free, Picture in Picture Notes"
+            },
+            {
+              "ja": "ほかのアプリの上で文字を流したい、ロック画面にも同じメモを置きたいなら、流れるメモ帳",
+              "en": "If you want the note scrolling over other apps and the same note on your Lock Screen, Floating Notepad"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "ja": "ゲームや動画の上にも出せますか？",
+        "en": "Can the note show over games and videos?"
+      },
+      "a": {
+        "ja": "流れるメモ帳とピクチャーインピクチャー メモ帳は、ピクチャ・イン・ピクチャの窓なので、ほかのアプリの上に出ます。窓は指で画面の端に寄せて小さくできます。",
+        "en": "Floating Notepad and Picture in Picture Notes use a Picture in Picture window, so it sits on top of other apps. You can swipe the window to the edge of the screen to tuck it away."
+      }
+    },
+    {
+      "q": {
+        "ja": "動画のピクチャ・イン・ピクチャと一緒に使えますか？",
+        "en": "Can I use it alongside a video in Picture in Picture?"
+      },
+      "a": {
+        "ja": "iPhoneのピクチャ・イン・ピクチャの窓は1つだけです。動画を窓で見始めると、メモの窓は閉じます。",
+        "en": "iPhone only shows one Picture in Picture window at a time. If you start a video in Picture in Picture, the note window closes."
+      }
+    },
+    {
+      "q": {
+        "ja": "無料で使えますか？",
+        "en": "Are they free?"
+      },
+      "a": {
+        "ja": "4本とも無料で入れられます。流れるメモ帳は全部の機能が無料で、広告を消すところだけがサブスクリプションです。",
+        "en": "All four are free to download. Every feature in Floating Notepad is free, and only removing the ads is a subscription."
+      }
+    }
+  ],
+  "closing": {
+    "ja": "流れるメモ帳で英単語を流して覚えている人がいたら、どんな単語を流しているか聞いてみたいです😊",
+    "en": "If you're using Floating Notepad to scroll vocabulary words while you study, I'd love to know which words you're running 😊"
+  },
+  "notes": {
+    "ja": "各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。",
+    "en": "Features and rating counts were checked against each app's App Store description on November 15, 2026, and may change with updates."
+  },
+  "illustration": {
+    "scene": "電車の座席で、キャラがスマホで動画を見ている。画面の上の隅に小さな窓が浮かんでいて、その中を色のついた細い帯（文字なし）が横に流れている。キャラは帯を見て、はっと何かを思い出した顔をしている。",
+    "alt": {
+      "ja": "スマホの動画の上を流れる小さな帯を見て、用事を思い出すキャラクター",
+      "en": "The character on a train watching a video, remembering something as a small band scrolls across a floating window"
+    }
+  }
+}

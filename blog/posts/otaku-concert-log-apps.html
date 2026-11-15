@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/js/lang.js"></script>
+    <!-- このページは scripts/build_guides.py が docs/guides/otaku-concert-log-apps.json から作る。直すのは JSON のほう -->
+    <title>推しの現場を記録するアプリ4選 - Blog | Ryo Tsuzukihashi</title>
+    <meta name="description" content="ライブやイベントの現場を記録するアプリを4本比べました。セトリの入れ方、グッズや使ったお金、現場の前の通知の違いをまとめています。OshiLogの作者が書いています。">
+    <meta name="title-en" content="4 Apps for Logging the Shows You Go To - Blog | Ryo Tsuzukihashi">
+    <meta name="description-en" content="I compared four iPhone apps for logging concerts and fan events: how you enter setlists, whether merch and spending are tracked, and reminders before a show. Written by the maker of OshiLog.">
+    <link rel="canonical" href="https://tsuzukit.com/blog/posts/otaku-concert-log-apps.html">
+
+    <!-- OGP -->
+    <meta property="og:title" content="推しの現場を記録するアプリ4選">
+    <meta property="og:description" content="ライブやイベントの現場を記録するアプリを4本比べました。セトリの入れ方、グッズや使ったお金、現場の前の通知の違いをまとめています。OshiLogの作者が書いています。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://tsuzukit.com/blog/posts/otaku-concert-log-apps.html">
+    <meta property="og:image" content="https://tsuzukit.com/assets/images/posts/otaku-concert-log-apps.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://tsuzukit.com/assets/images/posts/otaku-concert-log-apps.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-dark-32x32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-dark-16x16.png" media="(prefers-color-scheme: dark)">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERPQ1EGLH');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8240751277462688"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
+    <link rel="stylesheet" href="/assets/css/guide.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "推しの現場を記録するアプリ4選",
+      "description": "ライブやイベントの現場を記録するアプリを4本比べました。セトリの入れ方、グッズや使ったお金、現場の前の通知の違いをまとめています。OshiLogの作者が書いています。",
+      "image": "https://tsuzukit.com/assets/images/posts/otaku-concert-log-apps.webp",
+      "datePublished": "2026-11-15",
+      "dateModified": "2026-11-15",
+      "inLanguage": "ja",
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "mainEntityOfPage": "https://tsuzukit.com/blog/posts/otaku-concert-log-apps.html",
+      "about": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "OshiLog - 推し活ノート",
+          "url": "https://apps.apple.com/jp/app/id6788375876",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "relight｜ライブ・フェスの予定と記録",
+          "url": "https://apps.apple.com/jp/app/id6759641030",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "推しライフ - 推し活アプリ",
+          "url": "https://apps.apple.com/jp/app/id6781992151",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "TicketList チケットリスト -ライブ参戦記録-",
+          "url": "https://apps.apple.com/jp/app/id6470704235",
+          "operatingSystem": "iOS"
+        }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "OshiLog - 推し活ノート",
+      "operatingSystem": "iOS",
+      "applicationCategory": "LifestyleApplication",
+      "url": "https://apps.apple.com/jp/app/id6788375876",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "無料で使えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "4本とも無料で入れられます。OshiLog、relight、推しライフは、推しの人数や写真の枚数を増やすところが有料です。TicketListの課金は、説明文に書かれていませんでした。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "フェスや対バンでも記録できますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "relightとTicketListは、1つの現場に複数のアーティストを入れられると説明文に書いてあります。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ウィジェットで次の現場までの日数を出せますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "OshiLog、relight、推しライフの3本がホーム画面のウィジェットに出せます。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tsuzukit.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://tsuzukit.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "困りごとから選ぶアプリ",
+          "item": "https://tsuzukit.com/blog/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "推しの現場を記録するアプリ4選",
+          "item": "https://tsuzukit.com/blog/posts/otaku-concert-log-apps.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">TsuzuKit</a>
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/portfolio/" class="nav-link">Portfolio</a>
+                <a href="/blog/" class="nav-link active">Blog</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post -->
+    <article class="blog-post">
+        <header class="post-header">
+            <div class="post-meta">
+                <span class="post-date">2026.11.15</span>
+                <span class="post-category"><span class="i18n-ja">アプリの選び方</span><span class="i18n-en">App guides</span></span>
+                <span class="post-reading-time"><span class="i18n-ja">4分で読める</span><span class="i18n-en">4 min read</span></span>
+            </div>
+            <h1 class="post-title"><span class="i18n-ja">推しの現場を記録するアプリ4選</span><span class="i18n-en">4 Apps for Logging the Shows You Go To</span></h1>
+        </header>
+        <figure class="post-illustration guide-illustration"><img src="/assets/images/posts/otaku-concert-log-apps.webp" width="1200" height="800" alt="ライブ帰りにノートへ記録するキャラクター。ページからグッズが浮かんで棚に並んでいく" data-en-alt="The character writing in a notebook after a concert, as little pieces of merch float up from the page onto a shelf" fetchpriority="high"></figure>
+
+        <div class="post-content guide i18n-ja">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">先に答え</p>
+                <p>いちばん使われているのは評価353件のrelightで、チケットやセトリを写真から読み取れます。座席や撮影OKの曲を見たいなら推しライフ、セトリと感想だけならTicketList。グッズと推し活費も一緒に残したい人は、僕が作ったOshiLogも見てみてください。</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">書いた人 <a href="https://tsuzukit.com/about/">續橋 涼</a>（@tsuzuki817）</p>
+                    <p class="guide-byline-bio">2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。OshiLogの作者です。</p>
+                    <p class="guide-byline-date">公開 <time datetime="2026-11-15">2026.11.15</time> · 更新 <time datetime="2026-11-15">2026.11.15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">この記事は、OshiLogを作った僕が書いています。ほかの3本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。</p>
+            <h2>4本をざっくり比べる</h2>
+            <p>どれも現場の日付と会場は残せます。違うのは、セトリの入れ方と、グッズや使ったお金まで一緒に見られるかです。</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">アプリ</th><th scope="col">評価の件数</th><th scope="col">セトリ</th><th scope="col">グッズ</th><th scope="col">使ったお金</th><th scope="col">現場の前の通知</th></tr></thead><tbody><tr><th scope="row">OshiLog（僕のアプリ）</th><td>0件</td><td>手で入れる</td><td>写真から切り抜いて並べる</td><td>今月の合計</td><td>7日前、前日、当日の朝</td></tr><tr><th scope="row">relight</th><td>353件</td><td>写真から自動で読み取る</td><td>説明文に記載なし</td><td>チケット代の統計</td><td>説明文に記載なし</td></tr><tr><th scope="row">推しライフ</th><td>60件</td><td>説明文に記載なし。撮影OKの曲は見られる</td><td>交換リストと持ち物チェック</td><td>説明文に記載なし</td><td>誕生日と記念日の通知</td></tr><tr><th scope="row">TicketList</th><td>26件</td><td>コピペでまとめて入れる</td><td>説明文に記載なし</td><td>説明文に記載なし</td><td>説明文に記載なし</td></tr></tbody></table></div>
+            <h2>1本ずつ見ていく</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a9/3b/ab/a93bab2e-7fe0-79c9-580e-900271a2cac4/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">僕が作ったアプリ</span>
+                    <h3 class="guide-app-name">OshiLog - 推し活ノート</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · App Storeの評価 0件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6788375876" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>現場の日付、会場、セトリ、感想、写真、かかったお金を1ページに残せます。アプリを開くと、次の現場まであと何日かがいちばん上に出ます。</p>
+            <p>現場の7日前、前日、当日の朝に通知します。グッズは写真から自動で切り抜いて、祭壇のように並べられます。今月いくら使ったかも、ひと目で見えます。</p>
+            <p>無料だと推しは1人、祭壇のグッズは10個までです。現場の記録に数の上限はありません。推しを何人でも登録する、グッズを無制限にする、全期間や推し別の支出を見る、広告を消すのはプレミアムで、買い切りと週額があります。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/de/2a/eb/de2aeb80-8763-af8b-fbc7-1d6bfd166162/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">relight｜ライブ・フェスの予定と記録</h3>
+                    <p class="guide-app-meta">Momoka Shiramizu · App Storeの評価 353件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6759641030" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>評価が353件あって、この中ではいちばん使われています。強いのは入力の手間の少なさです。チケットの写真やスクショ、e+などのイベントのURLから、タイトルや日付、会場を読み取ります。セトリも写真から自動で認識します。</p>
+            <p>月別や年別のライブ回数、チケット代、曲のランキングも見られます。フェスや対バンはアーティストごとに分けて記録できます。写真を10枚まで保存したり、年間の統計を見たりするのは、買い切りのrelight proです。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ff/d1/0b/ffd10b19-80cd-790d-7ff9-5030c20318cc/AppIcon-0-0-1x_U007epad-0-1-sRGB-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">推しライフ - 推し活アプリ</h3>
+                    <p class="guide-app-meta">Tadashi Kitsukawa · App Storeの評価 60件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6781992151" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>現場の前に要るものがそろっているアプリです。会場、座席番号、座席表、チケット、タイムテーブル、天気にすぐたどり着けて、ライブ当日は撮影OKの曲を出演順に確認できます。</p>
+            <p>同じライブに行く人とのチャットや、QRコードでの名刺交換など、人とつながる機能が多いのも特徴です。プレミアムで変わるのは推しの登録人数の上限で、ほかの機能は無料で使えると書かれていました。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/0a/51/19/0a511955-9dcc-5c15-a80e-4627cb00d632/AppIcon-production-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">TicketList チケットリスト -ライブ参戦記録-</h3>
+                    <p class="guide-app-meta">Chiho Inayama · App Storeの評価 26件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6470704235" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>ライブの公演名、アーティスト名、会場、座席番号、日付、セトリ、感想を残すアプリです。1枚のチケットに複数のアーティストとセトリを紐づけられます。</p>
+            <p>セトリはコピペでまとめて入れられて、月別やアーティスト別の回数も出ます。記録だけに絞った作りです。</p>
+            <h2>アプリを入れたくないなら</h2>
+            <p>iPhoneのカレンダーに現場を入れて、メモ欄にセトリや感想を書いておく方法もあります。予定の通知もカレンダーが出してくれます。</p>
+            <p>ただ、グッズや使ったお金はカレンダーには入れにくいです。あとから現場ごとに見返したいなら、専用のアプリのほうが探しやすいですね。</p>
+            <h2>どれを選ぶか</h2>
+            <ul class="guide-list"><li>チケットやセトリをなるべく打ち込まずに残したいなら、relight</li><li>座席や撮影OKの曲を見たい、現場で人とつながりたいなら、推しライフ</li><li>セトリと感想だけをすっきり残したいなら、TicketList</li><li>グッズと推し活費も同じアプリで見たいなら、OshiLog</li></ul>
+            <h2>よくある質問</h2>
+            <dl class="guide-faq">
+                <dt>無料で使えますか？</dt><dd>4本とも無料で入れられます。OshiLog、relight、推しライフは、推しの人数や写真の枚数を増やすところが有料です。TicketListの課金は、説明文に書かれていませんでした。</dd>
+                <dt>フェスや対バンでも記録できますか？</dt><dd>relightとTicketListは、1つの現場に複数のアーティストを入れられると説明文に書いてあります。</dd>
+                <dt>ウィジェットで次の現場までの日数を出せますか？</dt><dd>OshiLog、relight、推しライフの3本がホーム画面のウィジェットに出せます。</dd>
+            </dl>
+            <p>OshiLogはまだ評価が0件なので、最初の1件を書いてくれる人を待ってます🙏</p>
+            <div class="guide-notes">各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。</div>
+        </div>
+
+        <div class="post-content guide i18n-en">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">Short answer</p>
+                <p>The most widely used is relight, with 353 ratings, which can read tickets and setlists from photos. For seat info and which songs you can film, there&#x27;s Oshi Life. For just setlists and notes, TicketList. If you want your merch and spending in the same place, take a look at OshiLog, which I made.</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">Written by <a href="https://tsuzukit.com/about/">Ryo Tsuzukihashi</a> (@tsuzuki817)</p>
+                    <p class="guide-byline-bio">I&#x27;ve been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made OshiLog.</p>
+                    <p class="guide-byline-date">Published <time datetime="2026-11-15">2026-11-15</time> · Updated <time datetime="2026-11-15">2026-11-15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">I made OshiLog, and I wrote this article. The other three apps are by developers I don&#x27;t know, and I haven&#x27;t received money or anything else from them. Everything compared here comes from each app&#x27;s App Store description and rating count as of November 15, 2026.</p>
+            <h2>The four apps at a glance</h2>
+            <p>All four keep the date and venue of each show. Where they differ is how you enter the setlist, and whether your merch and spending live in the same place.</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">App</th><th scope="col">Ratings</th><th scope="col">Setlist</th><th scope="col">Merch</th><th scope="col">Spending</th><th scope="col">Reminders before a show</th></tr></thead><tbody><tr><th scope="row">OshiLog (my app)</th><td>0</td><td>Typed in</td><td>Cut out from photos and displayed</td><td>This month&#x27;s total</td><td>7 days before, the day before, and that morning</td></tr><tr><th scope="row">relight</th><td>353</td><td>Read automatically from a photo</td><td>Not mentioned</td><td>Ticket cost stats</td><td>Not mentioned</td></tr><tr><th scope="row">Oshi Life</th><td>60</td><td>Not mentioned. Shows which songs you can film</td><td>Trade list and packing checklist</td><td>Not mentioned</td><td>Birthday and anniversary alerts</td></tr><tr><th scope="row">TicketList</th><td>26</td><td>Paste in all at once</td><td>Not mentioned</td><td>Not mentioned</td><td>Not mentioned</td></tr></tbody></table></div>
+            <h2>Each app, one by one</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a9/3b/ab/a93bab2e-7fe0-79c9-580e-900271a2cac4/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">I made this</span>
+                    <h3 class="guide-app-name">OshiLog - Fandom Tracker</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · 0 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6788375876" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>Each show gets one page with the date, venue, setlist, your thoughts, a photo, and what it cost. When you open the app, the days left until your next show sit right at the top.</p>
+            <p>It notifies you 7 days before, the day before, and on the morning of the show. Merch photos are cut out automatically and lined up like a shrine. You can also see at a glance how much you spent this month.</p>
+            <p>The free version covers one fave and up to 10 items of merch. There&#x27;s no limit on how many shows you log. Unlimited faves and merch, spending summaries for all time or per fave, and removing ads are Premium, which comes as a one-time purchase or weekly.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/de/2a/eb/de2aeb80-8763-af8b-fbc7-1d6bfd166162/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">relight | concert plan &amp; log</h3>
+                    <p class="guide-app-meta">Momoka Shiramizu · 353 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6759641030" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>With 353 ratings, it&#x27;s the most used of the four. Its strength is how little you have to type. It reads the title, date, and venue from a ticket photo, a screenshot, or an event URL from sites like e+, and it can pick up the setlist from a photo too.</p>
+            <p>It also shows how many shows you went to by month and year, what you spent on tickets, and your most-heard songs. Festivals and multi-act shows are split by artist. Saving up to 10 photos and yearly stats are part of relight pro, a one-time purchase.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ff/d1/0b/ffd10b19-80cd-790d-7ff9-5030c20318cc/AppIcon-0-0-1x_U007epad-0-1-sRGB-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Oshi Life - Fan Activity App</h3>
+                    <p class="guide-app-meta">Tadashi Kitsukawa · 60 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6781992151" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>This one has what you need before a show. Venue, seat number, seating chart, ticket, timetable, and weather are all close at hand, and on the day you can check which songs you can film, in running order.</p>
+            <p>It also has a lot for meeting people, like chat with others going to the same show and swapping fan cards by QR code. According to the description, Premium only lifts the limit on how many faves you can add, and everything else is free.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/0a/51/19/0a511955-9dcc-5c15-a80e-4627cb00d632/AppIcon-production-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">TicketList - Concert Log</h3>
+                    <p class="guide-app-meta">Chiho Inayama · 26 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6470704235" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>It logs the show name, artist, venue, seat, date, setlist, and your notes. One ticket can hold several artists and their setlists.</p>
+            <p>You can paste a whole setlist at once, and it counts shows by month and by artist. It&#x27;s built to do the logging and not much else.</p>
+            <h2>If you&#x27;d rather not install an app</h2>
+            <p>You can put each show in your iPhone&#x27;s Calendar and write the setlist and your thoughts in the notes. Calendar will remind you of it too.</p>
+            <p>Merch and spending don&#x27;t really fit in a calendar, though. If you want to look back show by show later, a dedicated app is easier to search.</p>
+            <h2>Which one to pick</h2>
+            <ul class="guide-list"><li>If you want to log tickets and setlists with as little typing as possible, relight</li><li>If you want seat info, filming rules, and ways to meet other fans, Oshi Life</li><li>If you just want setlists and notes, kept simple, TicketList</li><li>If you want your merch and spending in the same app, OshiLog</li></ul>
+            <h2>FAQ</h2>
+            <dl class="guide-faq">
+                <dt>Are they free?</dt><dd>All four are free to download. OshiLog, relight, and Oshi Life charge for more, like more faves or more photos. TicketList&#x27;s description doesn&#x27;t mention any paid features.</dd>
+                <dt>Can I log festivals and multi-act shows?</dt><dd>relight and TicketList both say in their descriptions that one show can hold several artists.</dd>
+                <dt>Can a widget show the days until my next show?</dt><dd>OshiLog, relight, and Oshi Life can all show it in a Home Screen widget.</dd>
+            </dl>
+            <p>OshiLog doesn&#x27;t have a single rating yet, so I&#x27;m waiting for someone to leave the first one 🙏</p>
+            <div class="guide-notes">Features and rating counts were checked against each app&#x27;s App Store description on November 15, 2026, and may change with updates.</div>
+        </div>
+
+        <nav class="post-navigation">
+            <img class="tk-char tk-char--post" src="/assets/images/character-hang.png" alt="" width="381" height="208">
+            <a href="/blog/guides/" class="nav-link-wrapper"><span>&larr; <span class="i18n-ja">困りごとから選ぶアプリの一覧へ</span><span class="i18n-en">All guides: apps for everyday problems</span></span></a>
+        </nav>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
+                    <p class="footer-description"><span class="i18n-ja">誰も作らないものを、まじめに作る</span><span class="i18n-en">I make things nobody else would, and I make them seriously</span></p>
+                </div>
+                <div class="footer-nav">
+                    <a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
+                    <a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
+                    <a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
+                    <a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ryo Tsuzukihashi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

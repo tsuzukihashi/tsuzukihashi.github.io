@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/js/lang.js"></script>
+    <!-- このページは scripts/build_guides.py が docs/guides/simple-medicine-reminder-apps.json から作る。直すのは JSON のほう -->
+    <title>薬の飲み忘れを防ぐ、シンプルなアプリ4選 - Blog | Ryo Tsuzukihashi</title>
+    <meta name="description" content="毎日の薬の飲み忘れを防ぐ、操作がシンプルなアプリを4本比べました。通知の決め方、飲んだ記録、残りの数、無料でできることの違いをまとめています。お薬リマインダーの作者が書いています。">
+    <meta name="title-en" content="4 Simple Apps to Stop Forgetting Your Medicine - Blog | Ryo Tsuzukihashi">
+    <meta name="description-en" content="I compared four simple iPhone apps that help you remember your daily medicine: how reminders are set, logging doses, pills left, and what&#x27;s free. Written by the maker of Medicine Reminder.">
+    <link rel="canonical" href="https://tsuzukit.com/blog/posts/simple-medicine-reminder-apps.html">
+
+    <!-- OGP -->
+    <meta property="og:title" content="薬の飲み忘れを防ぐ、シンプルなアプリ4選">
+    <meta property="og:description" content="毎日の薬の飲み忘れを防ぐ、操作がシンプルなアプリを4本比べました。通知の決め方、飲んだ記録、残りの数、無料でできることの違いをまとめています。お薬リマインダーの作者が書いています。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://tsuzukit.com/blog/posts/simple-medicine-reminder-apps.html">
+    <meta property="og:image" content="https://tsuzukit.com/assets/images/posts/simple-medicine-reminder-apps.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://tsuzukit.com/assets/images/posts/simple-medicine-reminder-apps.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-dark-32x32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-dark-16x16.png" media="(prefers-color-scheme: dark)">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERPQ1EGLH');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8240751277462688"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
+    <link rel="stylesheet" href="/assets/css/guide.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "薬の飲み忘れを防ぐ、シンプルなアプリ4選",
+      "description": "毎日の薬の飲み忘れを防ぐ、操作がシンプルなアプリを4本比べました。通知の決め方、飲んだ記録、残りの数、無料でできることの違いをまとめています。お薬リマインダーの作者が書いています。",
+      "image": "https://tsuzukit.com/assets/images/posts/simple-medicine-reminder-apps.webp",
+      "datePublished": "2026-11-15",
+      "dateModified": "2026-11-15",
+      "inLanguage": "ja",
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "mainEntityOfPage": "https://tsuzukit.com/blog/posts/simple-medicine-reminder-apps.html",
+      "about": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "お薬リマインダー 服用管理",
+          "url": "https://apps.apple.com/jp/app/id6756915544",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "お薬記録＆アラーム：くすりの飲み忘れ防止と服薬管理",
+          "url": "https://apps.apple.com/jp/app/id1552171774",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "しつこいお薬アラーム - 飲み忘れ防止のお薬リマインダー",
+          "url": "https://apps.apple.com/jp/app/id1326572969",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "シンプルお薬リマインダー",
+          "url": "https://apps.apple.com/jp/app/id6761060764",
+          "operatingSystem": "iOS"
+        }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "お薬リマインダー 服用管理",
+      "operatingSystem": "iOS",
+      "applicationCategory": "HealthApplication",
+      "url": "https://apps.apple.com/jp/app/id6756915544",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "飲み忘れたときはどうすればいいですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "薬によって違うので、アプリでは決められません。処方した医師か薬剤師に聞いてください。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "サプリメントにも使えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "お薬リマインダーとシンプルお薬リマインダーは、サプリメントにも使えると説明文に書いてあります。ほかの2本も薬の名前は自由に入れられます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "無料で使えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "4本とも無料で入れられます。シンプルお薬リマインダーは全部無料で、お薬リマインダーは薬3種類まで無料です。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tsuzukit.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://tsuzukit.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "困りごとから選ぶアプリ",
+          "item": "https://tsuzukit.com/blog/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "薬の飲み忘れを防ぐ、シンプルなアプリ4選",
+          "item": "https://tsuzukit.com/blog/posts/simple-medicine-reminder-apps.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">TsuzuKit</a>
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/portfolio/" class="nav-link">Portfolio</a>
+                <a href="/blog/" class="nav-link active">Blog</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post -->
+    <article class="blog-post">
+        <header class="post-header">
+            <div class="post-meta">
+                <span class="post-date">2026.11.15</span>
+                <span class="post-category"><span class="i18n-ja">アプリの選び方</span><span class="i18n-en">App guides</span></span>
+                <span class="post-reading-time"><span class="i18n-ja">4分で読める</span><span class="i18n-en">4 min read</span></span>
+            </div>
+            <h1 class="post-title"><span class="i18n-ja">薬の飲み忘れを防ぐ、シンプルなアプリ4選</span><span class="i18n-en">4 Simple Apps to Stop Forgetting Your Medicine</span></h1>
+        </header>
+        <figure class="post-illustration guide-illustration"><img src="/assets/images/posts/simple-medicine-reminder-apps.webp" width="1200" height="800" alt="朝の台所で水のコップを持ち、スマホを見てうなずくキャラクター" data-en-alt="The character in a morning kitchen holding a glass of water and nodding at the phone" fetchpriority="high"></figure>
+
+        <div class="post-content guide i18n-ja">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">先に答え</p>
+                <p>いちばん使われているのは評価6,311件のお薬記録＆アラームで、家族の分もまとめられます。飲むまで何度も鳴らしてほしいならしつこいお薬アラーム。朝食後や就寝前のような飲むタイミングで知らせて、残りが減ったら教えてほしいなら、僕が作ったお薬リマインダーも見てみてください。</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">書いた人 <a href="https://tsuzukit.com/about/">續橋 涼</a>（@tsuzuki817）</p>
+                    <p class="guide-byline-bio">2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。お薬リマインダーの作者です。</p>
+                    <p class="guide-byline-date">公開 <time datetime="2026-11-15">2026.11.15</time> · 更新 <time datetime="2026-11-15">2026.11.15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">この記事は、お薬リマインダーを作った僕が書いています。ほかの3本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。</p>
+            <h2>4本をざっくり比べる</h2>
+            <p>どれも、時間に知らせて、飲んだら記録する、の2つが中心です。違いが出るのは、通知のしつこさと、残りの数や家族の分まで見るかです。</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">アプリ</th><th scope="col">評価の件数</th><th scope="col">通知の決め方</th><th scope="col">飲んだ記録</th><th scope="col">残りの数</th><th scope="col">無料でできること</th></tr></thead><tbody><tr><th scope="row">お薬リマインダー（僕のアプリ）</th><td>3件</td><td>朝食前から就寝前まで、飲むタイミングごとに毎日</td><td>タップで記録、カレンダー</td><td>減ったら1回知らせる</td><td>薬3種類まで</td></tr><tr><th scope="row">お薬記録＆アラーム</th><td>6,311件</td><td>時間を設定してアラーム。処方の日数で期間も決める</td><td>記録ボタン、一覧</td><td>説明文に記載なし</td><td>説明文に記載なし。会員登録なし</td></tr><tr><th scope="row">しつこいお薬アラーム</th><td>1,217件</td><td>飲むまで何度も鳴らす</td><td>ワンタップで記録、メモ</td><td>説明文に記載なし</td><td>説明文に記載なし。サブスクリプションあり</td></tr><tr><th scope="row">シンプルお薬リマインダー</th><td>1件</td><td>朝昼夕、就寝前。曜日の指定も</td><td>ワンタップで記録、カレンダー</td><td>説明文に記載なし</td><td>すべて無料</td></tr></tbody></table></div>
+            <h2>1本ずつ見ていく</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/16/b0/fb/16b0fb1c-4843-b5eb-e4f9-b3de1431efe3/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">僕が作ったアプリ</span>
+                    <h3 class="guide-app-name">お薬リマインダー 服用管理</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · App Storeの評価 3件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6756915544" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>薬ごとに、朝食前、朝食後、昼食後、夕食後、就寝前のような飲むタイミングを選ぶと、毎日その時刻に通知が届きます。タイミングごとの時刻は自分の生活に合わせて変えられます。</p>
+            <p>飲んだらタップして記録すると、残りの数が減っていきます。決めた数より少なくなったら1回知らせるので、薬をもらいに行く目安になります。薬の写真を登録して見分けやすくもできます。</p>
+            <p>無料で登録できる薬は3種類までで、服用の通知と記録は無料です。4種類目からと、通院の予定のような別のリマインダーを繰り返す機能はプレミアムです。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/5f/33/d8/5f33d827-3057-1d3d-7b36-a1163d12ff49/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">お薬記録＆アラーム：くすりの飲み忘れ防止と服薬管理</h3>
+                    <p class="guide-app-meta">Futasaji LLC · App Storeの評価 6,311件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id1552171774" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>評価が6,311件あって、この中ではいちばん使われています。会員登録なしで、薬を選んで記録マークを押すだけの作りです。</p>
+            <p>処方箋の何日分かを入れると、その期間だけアラームが鳴ります。自分の分だけでなく、家族の薬もまとめて管理できると書かれています。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/0e/73/de/0e73de39-4ca2-6823-208f-2d9e7707d7a4/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">しつこいお薬アラーム - 飲み忘れ防止のお薬リマインダー</h3>
+                    <p class="guide-app-meta">flickfrog · App Storeの評価 1,217件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id1326572969" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>名前のとおり、飲むまでしつこく鳴らしてくれます。1回の通知では気づかない人に向いています。</p>
+            <p>キャラクターがいろんなセリフで知らせてくれて、テーマの色も変えられます。履歴はiCloudに保存されるので、機種変更のときも引き継げます。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/5c/30/e3/5c30e30e-3cf2-91dd-a778-463dbf51f90f/AppIcon-1x_U007emarketing-0-11-0-85-220-0.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">シンプルお薬リマインダー</h3>
+                    <p class="guide-app-meta">wataru doi · App Storeの評価 1件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6761060764" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>すべての機能が完全無料と書かれています。薬の名前と時間を入れるだけで、時間ぴったりに通知が届きます。</p>
+            <p>朝昼夕や就寝前のほかに、特定の曜日だけ飲む薬にも対応しています。サプリメントにも使えます。</p>
+            <h2>アプリを入れたくないなら</h2>
+            <p>iPhoneのヘルスケアアプリに、薬の時間を知らせて飲んだ記録をつける機能があります。iPhoneに最初から入っているので、追加のアプリは要りません。</p>
+            <p>曜日ごとの粒の数を数えるだけなら、100円ショップのピルケースも手軽です。</p>
+            <h2>どれを選ぶか</h2>
+            <ul class="guide-list"><li>家族の薬もまとめたい、処方の日数でアラームを止めたいなら、お薬記録＆アラーム</li><li>1回の通知では気づかないなら、しつこいお薬アラーム</li><li>全部無料で済ませたい、曜日で飲む薬があるなら、シンプルお薬リマインダー</li><li>食前食後のタイミングで知らせてほしい、残りが減ったら教えてほしいなら、お薬リマインダー</li></ul>
+            <h2>よくある質問</h2>
+            <dl class="guide-faq">
+                <dt>飲み忘れたときはどうすればいいですか？</dt><dd>薬によって違うので、アプリでは決められません。処方した医師か薬剤師に聞いてください。</dd>
+                <dt>サプリメントにも使えますか？</dt><dd>お薬リマインダーとシンプルお薬リマインダーは、サプリメントにも使えると説明文に書いてあります。ほかの2本も薬の名前は自由に入れられます。</dd>
+                <dt>無料で使えますか？</dt><dd>4本とも無料で入れられます。シンプルお薬リマインダーは全部無料で、お薬リマインダーは薬3種類まで無料です。</dd>
+            </dl>
+            <p>お薬リマインダーの評価はまだ3件なので、ほしい飲むタイミングがあれば教えてください🙏</p>
+            <div class="guide-notes">各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。お薬リマインダーの機能はアプリのコードで確かめました。アップデートで変わることがあります。どのアプリも医師や薬剤師の代わりにはなりません。飲む量や時間は、処方の指示に従ってください。</div>
+        </div>
+
+        <div class="post-content guide i18n-en">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">Short answer</p>
+                <p>The most used is Cute Pill Reminder with 6,311 ratings, and it handles your family&#x27;s medicine too. If you want it to keep going off until you take your dose, try Insistent Medical Alarm. If you&#x27;d like reminders by timing, like after breakfast or before bed, plus a heads-up when you&#x27;re running low, take a look at Medicine Reminder, which I made.</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">Written by <a href="https://tsuzukit.com/about/">Ryo Tsuzukihashi</a> (@tsuzuki817)</p>
+                    <p class="guide-byline-bio">I&#x27;ve been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made Medicine Reminder.</p>
+                    <p class="guide-byline-date">Published <time datetime="2026-11-15">2026-11-15</time> · Updated <time datetime="2026-11-15">2026-11-15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">I made Medicine Reminder, and I wrote this article. The other three apps are by developers I don&#x27;t know, and I haven&#x27;t received money or anything else from them. Everything compared here comes from each app&#x27;s App Store description and rating count as of November 15, 2026.</p>
+            <h2>The four apps at a glance</h2>
+            <p>All four center on two things, reminding you on time and logging when you&#x27;ve taken it. Where they differ is how persistent the reminders are, and whether they also track pills left or family members.</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">App</th><th scope="col">Ratings</th><th scope="col">How reminders are set</th><th scope="col">Dose log</th><th scope="col">Pills left</th><th scope="col">Free plan</th></tr></thead><tbody><tr><th scope="row">Medicine Reminder (my app)</th><td>3</td><td>Daily, by timing, from before breakfast to bedtime</td><td>Tap to log, calendar</td><td>Alerts you once when running low</td><td>Up to 3 medicines</td></tr><tr><th scope="row">Cute Pill Reminder</th><td>6,311</td><td>Alarms at set times, for as many days as prescribed</td><td>Log button, list view</td><td>Not mentioned</td><td>Not mentioned. No sign-up</td></tr><tr><th scope="row">Insistent Medical Alarm</th><td>1,217</td><td>Keeps alerting until you take it</td><td>One-tap log, notes</td><td>Not mentioned</td><td>Not mentioned. Has a subscription</td></tr><tr><th scope="row">Simple Medicine Reminder</th><td>1</td><td>Morning, noon, evening, bedtime, plus specific weekdays</td><td>One-tap log, calendar</td><td>Not mentioned</td><td>Everything is free</td></tr></tbody></table></div>
+            <h2>Each app, one by one</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/16/b0/fb/16b0fb1c-4843-b5eb-e4f9-b3de1431efe3/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">I made this</span>
+                    <h3 class="guide-app-name">Medicine Reminder &amp; Tracker</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · 3 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6756915544" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>For each medicine, choose when you take it, like before or after breakfast, after lunch, after dinner, or at bedtime, and a reminder arrives at that time every day. You can adjust the time for each slot to fit your day.</p>
+            <p>Tap to log a dose and the count of pills left goes down. When it drops below the number you set, you get one alert, a handy cue to pick up more. You can also add a photo of each medicine so they&#x27;re easy to tell apart.</p>
+            <p>The free version holds 3 medicines, and dose reminders and logging are free. A fourth medicine and up, plus repeating separate reminders like clinic visits, are Premium.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/5f/33/d8/5f33d827-3057-1d3d-7b36-a1163d12ff49/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Cute Pill Reminder</h3>
+                    <p class="guide-app-meta">Futasaji LLC · 6,311 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id1552171774" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>With 6,311 ratings, it&#x27;s by far the most used of the four. No sign-up, and logging is just picking the medicine and tapping the log mark.</p>
+            <p>Enter how many days your prescription covers, and the alarms run for exactly that long. The description says you can manage your family&#x27;s medicine in the same place.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/0e/73/de/0e73de39-4ca2-6823-208f-2d9e7707d7a4/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Insistent Medical Alarm</h3>
+                    <p class="guide-app-meta">flickfrog · 1,217 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id1326572969" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>As the name says, it keeps alerting until you take your medicine. Good for people who miss a single notification.</p>
+            <p>Characters remind you with different lines, and you can change the theme color. Your history saves to iCloud, so it carries over when you switch phones.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/5c/30/e3/5c30e30e-3cf2-91dd-a778-463dbf51f90f/AppIcon-1x_U007emarketing-0-11-0-85-220-0.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Simple Medicine Reminder</h3>
+                    <p class="guide-app-meta">wataru doi · 1 App Store rating</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6761060764" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>The description says every feature is completely free. Enter the medicine&#x27;s name and time, and you get a notification right on time.</p>
+            <p>Besides morning, noon, evening, and bedtime, it handles medicine you only take on certain days of the week. It works for supplements too.</p>
+            <h2>If you&#x27;d rather not install an app</h2>
+            <p>The Health app on your iPhone has a medications feature that reminds you and logs doses. It&#x27;s built in, so there&#x27;s nothing extra to install.</p>
+            <p>If all you need is to keep each day&#x27;s pills sorted, a pill organizer from a dollar store works fine too.</p>
+            <h2>Which one to pick</h2>
+            <ul class="guide-list"><li>If you want your family&#x27;s medicine in one place and alarms that stop when the prescription ends, Cute Pill Reminder</li><li>If one notification isn&#x27;t enough to get your attention, Insistent Medical Alarm</li><li>If you want everything free or take some medicine only on certain days, Simple Medicine Reminder</li><li>If you want reminders by meal timing and a heads-up when you&#x27;re running low, Medicine Reminder</li></ul>
+            <h2>FAQ</h2>
+            <dl class="guide-faq">
+                <dt>What should I do if I miss a dose?</dt><dd>It depends on the medicine, so no app can decide that. Please ask the doctor who prescribed it or your pharmacist.</dd>
+                <dt>Can I use them for supplements?</dt><dd>Medicine Reminder and Simple Medicine Reminder both mention supplements in their descriptions. The other two let you enter any name too.</dd>
+                <dt>Are they free?</dt><dd>All four are free to download. Simple Medicine Reminder is entirely free, and Medicine Reminder is free for up to 3 medicines.</dd>
+            </dl>
+            <p>Medicine Reminder only has three ratings so far, so if there&#x27;s a dose timing you wish it had, let me know 🙏</p>
+            <div class="guide-notes">Features and rating counts were checked against each app&#x27;s App Store description on November 15, 2026. Medicine Reminder&#x27;s features were checked against its source code. They may change with updates. None of these apps replaces your doctor or pharmacist. Follow your prescription for how much to take and when.</div>
+        </div>
+
+        <nav class="post-navigation">
+            <img class="tk-char tk-char--post" src="/assets/images/character-hang.png" alt="" width="381" height="208">
+            <a href="/blog/guides/" class="nav-link-wrapper"><span>&larr; <span class="i18n-ja">困りごとから選ぶアプリの一覧へ</span><span class="i18n-en">All guides: apps for everyday problems</span></span></a>
+        </nav>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
+                    <p class="footer-description"><span class="i18n-ja">誰も作らないものを、まじめに作る</span><span class="i18n-en">I make things nobody else would, and I make them seriously</span></p>
+                </div>
+                <div class="footer-nav">
+                    <a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
+                    <a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
+                    <a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
+                    <a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ryo Tsuzukihashi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

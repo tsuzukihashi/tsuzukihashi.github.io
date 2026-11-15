@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/js/lang.js"></script>
+    <!-- このページは scripts/build_guides.py が docs/guides/count-while-using-other-apps.json から作る。直すのは JSON のほう -->
+    <title>ほかのアプリを使いながら数えられるカウンター3選 - Blog | Ryo Tsuzukihashi</title>
+    <meta name="description" content="動画やWebサイトを見ながら、画面の小窓で数を数えられるカウンターを3本比べました。数え方、数えられる種類、向いている使い方の違いをまとめています。ながらカウンターの作者が書いています。">
+    <meta name="title-en" content="3 Counter Apps You Can Tap While Using Other Apps - Blog | Ryo Tsuzukihashi">
+    <meta name="description-en" content="I compared three iPhone counter apps that let you count in a small window while watching a video or browsing: how you tap, what you can count, and what each is best for. Written by the maker of Nagara Counter.">
+    <link rel="canonical" href="https://tsuzukit.com/blog/posts/count-while-using-other-apps.html">
+
+    <!-- OGP -->
+    <meta property="og:title" content="ほかのアプリを使いながら数えられるカウンター3選">
+    <meta property="og:description" content="動画やWebサイトを見ながら、画面の小窓で数を数えられるカウンターを3本比べました。数え方、数えられる種類、向いている使い方の違いをまとめています。ながらカウンターの作者が書いています。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://tsuzukit.com/blog/posts/count-while-using-other-apps.html">
+    <meta property="og:image" content="https://tsuzukit.com/assets/images/posts/count-while-using-other-apps.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://tsuzukit.com/assets/images/posts/count-while-using-other-apps.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-dark-32x32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-dark-16x16.png" media="(prefers-color-scheme: dark)">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERPQ1EGLH');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8240751277462688"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
+    <link rel="stylesheet" href="/assets/css/guide.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "ほかのアプリを使いながら数えられるカウンター3選",
+      "description": "動画やWebサイトを見ながら、画面の小窓で数を数えられるカウンターを3本比べました。数え方、数えられる種類、向いている使い方の違いをまとめています。ながらカウンターの作者が書いています。",
+      "image": "https://tsuzukit.com/assets/images/posts/count-while-using-other-apps.webp",
+      "datePublished": "2026-11-15",
+      "dateModified": "2026-11-15",
+      "inLanguage": "ja",
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "mainEntityOfPage": "https://tsuzukit.com/blog/posts/count-while-using-other-apps.html",
+      "about": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "ながらカウンター ~別のアプリを使っていてもカウントできる~",
+          "url": "https://apps.apple.com/jp/app/id1644376109",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "ながらカウンター ピーカンくん",
+          "url": "https://apps.apple.com/jp/app/id6475634996",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "スロライズ - スロット小役カウンター＆リアルタイム設定推測",
+          "url": "https://apps.apple.com/jp/app/id6760995794",
+          "operatingSystem": "iOS"
+        }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "ながらカウンター ~別のアプリを使っていてもカウントできる~",
+      "operatingSystem": "iOS",
+      "applicationCategory": "UtilitiesApplication",
+      "url": "https://apps.apple.com/jp/app/id1644376109",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "無料で使えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "3本とも無料で入れられます。ながらカウンターは広告を消すのが有料で、ピーカンくんは応援のサブスクリプションがあります。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "動画も小窓で見ながら数えられますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ピクチャインピクチャの小窓は同時に1つなので、ながらカウンターを小窓にしているときは、動画は普通の画面で見ることになります。スロライズは、動画を小窓で流しながら数える作りです。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "スロット以外にも使えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ながらカウンターは数えるものを決めていないので、何にでも使えます。ほかの2本は、スロットの小役を数えるための作りです。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tsuzukit.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://tsuzukit.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "困りごとから選ぶアプリ",
+          "item": "https://tsuzukit.com/blog/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "ほかのアプリを使いながら数えられるカウンター3選",
+          "item": "https://tsuzukit.com/blog/posts/count-while-using-other-apps.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">TsuzuKit</a>
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/portfolio/" class="nav-link">Portfolio</a>
+                <a href="/blog/" class="nav-link active">Blog</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post -->
+    <article class="blog-post">
+        <header class="post-header">
+            <div class="post-meta">
+                <span class="post-date">2026.11.15</span>
+                <span class="post-category"><span class="i18n-ja">アプリの選び方</span><span class="i18n-en">App guides</span></span>
+                <span class="post-reading-time"><span class="i18n-ja">3分で読める</span><span class="i18n-en">3 min read</span></span>
+            </div>
+            <h1 class="post-title"><span class="i18n-ja">ほかのアプリを使いながら数えられるカウンター3選</span><span class="i18n-en">3 Counter Apps You Can Tap While Using Other Apps</span></h1>
+        </header>
+        <figure class="post-illustration guide-illustration"><img src="/assets/images/posts/count-while-using-other-apps.webp" width="1200" height="800" alt="公園のベンチで鳥の動画を見ながら、画面の隅の小窓で数を数えるキャラクター" data-en-alt="The character on a park bench counting with a small floating window while watching a bird video" fetchpriority="high"></figure>
+
+        <div class="post-content guide i18n-ja">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">先に答え</p>
+                <p>iPhoneのピクチャインピクチャを使うカウンターなら、ほかのアプリを開いたまま数えられます。スロットの小役を数えるなら、専用のピーカンくんかスロライズ。動画の中の何か、野鳥や人数のように、ジャンルを問わず1つの数を足し引きしたい人は、僕が作ったながらカウンターも見てみてください。</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">書いた人 <a href="https://tsuzukit.com/about/">續橋 涼</a>（@tsuzuki817）</p>
+                    <p class="guide-byline-bio">2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。ながらカウンターの作者です。</p>
+                    <p class="guide-byline-date">公開 <time datetime="2026-11-15">2026.11.15</time> · 更新 <time datetime="2026-11-15">2026.11.15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">この記事は、ながらカウンターを作った僕が書いています。ほかの2本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。</p>
+            <h2>3本をざっくり比べる</h2>
+            <p>違いが出るのは、何を数えるためのアプリかです。2本はスロットの小役を数える専用で、ながらカウンターは何でも数える1つのカウンターです。</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">アプリ</th><th scope="col">評価の件数</th><th scope="col">ほかのアプリを使いながら</th><th scope="col">数えられる種類</th><th scope="col">ロック画面から</th><th scope="col">向いている使い方</th></tr></thead><tbody><tr><th scope="row">ながらカウンター（僕のアプリ）</th><td>7件</td><td>小窓のボタンで足し引き</td><td>1つの数</td><td>なし</td><td>動画やWebを見ながら、何でも</td></tr><tr><th scope="row">ピーカンくん</th><td>7件</td><td>小窓のカウンター</td><td>スロットの小役</td><td>説明文に記載なし</td><td>ゲームやマンガを見ながら小役を数える</td></tr><tr><th scope="row">スロライズ</th><td>4件</td><td>動画を小窓で流しながら数える</td><td>スロットの小役を状態別に</td><td>ライブアクティビティで</td><td>数えながら設定を推測する</td></tr></tbody></table></div>
+            <h2>1本ずつ見ていく</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5d/bc/a8/5dbca80e-f98f-26df-09b2-505b298e1caf/AppIcon-0-0-1x_U007emarketing-0-10-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">僕が作ったアプリ</span>
+                    <h3 class="guide-app-name">ながらカウンター ~別のアプリを使っていてもカウントできる~</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · App Storeの評価 7件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id1644376109" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>カウンターがピクチャインピクチャの小窓になって、ほかのアプリの上に浮いたままになります。小窓の早送りのボタンで1増えて、巻き戻しのボタンで1減ります。</p>
+            <p>動画を見ながら、Webサイトを見ながら、見ている画面から離れずに数えられます。数えるのは1つの数だけなので、何かを1種類だけ数えたい人向けです。</p>
+            <p>無料で使えて、広告を消す課金があります。iPhone専用です。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/9f/cf/e9/9fcfe929-bb8e-917d-e212-2c61aeb2737e/AppIcon-0-0-1x_U007ephone-0-1-sRGB-85-220.jpeg/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">ながらカウンター ピーカンくん</h3>
+                    <p class="guide-app-meta">Kaito Yoshimura · App Storeの評価 7件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6475634996" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>スロットの小役を数えるためのカウンターで、ピクチャインピクチャの小窓に出ます。いままでの小役カウンターのように、アプリの画面を開きっぱなしにしなくていいのが売りです。</p>
+            <p>ゲームやマンガ、動画のアプリを使いながら数えられます。応援のためのサブスクリプションがあります。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a1/98/d8/a198d8f9-a5b9-ebf5-5c6a-0734891a8fbc/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">スロライズ - スロット小役カウンター＆リアルタイム設定推測</h3>
+                    <p class="guide-app-meta">Takahiro Ogawa · App Storeの評価 4件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6760995794" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>小役を数えながら、台の設定の可能性をその場で計算するアプリです。通常時や高確のように、状態ごとに分けて数えられます。</p>
+            <p>実践動画をピクチャインピクチャで流しながら数えられて、ロック画面やダイナミックアイランドからもカウントできます。アプリの中のブラウザで攻略サイトも見られます。</p>
+            <h2>アプリを入れたくないなら</h2>
+            <p>手で押す数取器を使えば、スマホの画面と関係なく数えられます。スマホで動画を見ながらでも、もう片方の手で押すだけです。</p>
+            <p>紙に正の字を書く手もあります。ただ、どちらも手元に道具が要るので、スマホだけで済ませたいならアプリが楽です。</p>
+            <h2>どれを選ぶか</h2>
+            <ul class="guide-list"><li>スロットの小役を、ほかのアプリを使いながら数えたいなら、ピーカンくん</li><li>小役を状態別に数えて、設定の推測までしたいなら、スロライズ</li><li>動画やWebを見ながら、何かを1つだけ数えたいなら、ながらカウンター</li></ul>
+            <h2>よくある質問</h2>
+            <dl class="guide-faq">
+                <dt>無料で使えますか？</dt><dd>3本とも無料で入れられます。ながらカウンターは広告を消すのが有料で、ピーカンくんは応援のサブスクリプションがあります。</dd>
+                <dt>動画も小窓で見ながら数えられますか？</dt><dd>ピクチャインピクチャの小窓は同時に1つなので、ながらカウンターを小窓にしているときは、動画は普通の画面で見ることになります。スロライズは、動画を小窓で流しながら数える作りです。</dd>
+                <dt>スロット以外にも使えますか？</dt><dd>ながらカウンターは数えるものを決めていないので、何にでも使えます。ほかの2本は、スロットの小役を数えるための作りです。</dd>
+            </dl>
+            <p>ながらカウンターは7件の評価をもらえたので、こんなものを数えてるよという声も待ってます🙌</p>
+            <div class="guide-notes">各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。ながらカウンターの機能はアプリのコードで確かめました。</div>
+        </div>
+
+        <div class="post-content guide i18n-en">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">Short answer</p>
+                <p>A counter that uses iPhone&#x27;s Picture in Picture lets you keep counting with another app open. For counting slot machine hits, the dedicated Peekan-kun or SloRise. If you just want to add and subtract a single number for anything at all, like birds in a video or people passing by, take a look at Nagara Counter, which I made.</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">Written by <a href="https://tsuzukit.com/about/">Ryo Tsuzukihashi</a> (@tsuzuki817)</p>
+                    <p class="guide-byline-bio">I&#x27;ve been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made Nagara Counter.</p>
+                    <p class="guide-byline-date">Published <time datetime="2026-11-15">2026-11-15</time> · Updated <time datetime="2026-11-15">2026-11-15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">I made Nagara Counter, and I wrote this article. The other two apps are by developers I don&#x27;t know, and I haven&#x27;t received money or anything else from them. Everything compared here comes from each app&#x27;s App Store description and rating count as of November 15, 2026.</p>
+            <h2>The three apps at a glance</h2>
+            <p>The big difference is what each one is made to count. Two are built for counting slot machine hits, while Nagara Counter is a single counter for anything.</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">App</th><th scope="col">Ratings</th><th scope="col">Over other apps</th><th scope="col">What it counts</th><th scope="col">From the Lock Screen</th><th scope="col">Best for</th></tr></thead><tbody><tr><th scope="row">Nagara Counter (my app)</th><td>7</td><td>Add or subtract with the window&#x27;s buttons</td><td>One number</td><td>No</td><td>Anything, while watching or browsing</td></tr><tr><th scope="row">Peekan-kun</th><td>7</td><td>Counter in a small window</td><td>Slot machine hits</td><td>Not mentioned</td><td>Counting slot hits while using games or manga apps</td></tr><tr><th scope="row">SloRise</th><td>4</td><td>Count while a video plays in a small window</td><td>Slot hits by game state</td><td>Via Live Activity</td><td>Counting and estimating the machine&#x27;s setting</td></tr></tbody></table></div>
+            <h2>Each app, one by one</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5d/bc/a8/5dbca80e-f98f-26df-09b2-505b298e1caf/AppIcon-0-0-1x_U007emarketing-0-10-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">I made this</span>
+                    <h3 class="guide-app-name">Nagara Counter - Count While Using Other Apps</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · 7 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id1644376109" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>The counter becomes a Picture in Picture window that floats over your other apps. Tap the window&#x27;s skip-forward button to add one, and the skip-back button to subtract one.</p>
+            <p>You can count while watching a video or browsing a website without leaving what you&#x27;re looking at. It only tracks one number, so it&#x27;s for when you&#x27;re counting just one kind of thing.</p>
+            <p>It&#x27;s free, with a purchase to remove ads. It&#x27;s iPhone only.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/9f/cf/e9/9fcfe929-bb8e-917d-e212-2c61aeb2737e/AppIcon-0-0-1x_U007ephone-0-1-sRGB-85-220.jpeg/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">PiP-Counter</h3>
+                    <p class="guide-app-meta">Kaito Yoshimura · 7 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6475634996" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>It&#x27;s a counter for slot machine hits that shows up in a Picture in Picture window. Its selling point is that, unlike older hit counters, you don&#x27;t have to keep the app open on screen.</p>
+            <p>You can count while using games, manga, or video apps. There&#x27;s a subscription for those who want to support the developer.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a1/98/d8/a198d8f9-a5b9-ebf5-5c6a-0734891a8fbc/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">SloRise: Slot Machine Hit Counter</h3>
+                    <p class="guide-app-meta">Takahiro Ogawa · 4 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6760995794" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>It counts slot hits and estimates the machine&#x27;s setting on the spot. You can keep separate counts for each state, like normal play or high-probability mode.</p>
+            <p>You can count while a gameplay video plays in Picture in Picture, and also count from the Lock Screen or Dynamic Island. It has a built-in browser for strategy sites, too.</p>
+            <h2>If you&#x27;d rather not install an app</h2>
+            <p>A handheld tally counter lets you count without touching your phone screen at all. Watch the video on your phone and click with your other hand.</p>
+            <p>Or tally marks on paper. Both need something on hand, though, so if you want to do it all with your phone, an app is easier.</p>
+            <h2>Which one to pick</h2>
+            <ul class="guide-list"><li>If you want to count slot hits while using other apps, Peekan-kun</li><li>If you want separate counts by game state and a setting estimate, SloRise</li><li>If you want to count one thing while watching or browsing, Nagara Counter</li></ul>
+            <h2>FAQ</h2>
+            <dl class="guide-faq">
+                <dt>Are they free?</dt><dd>All three are free to download. Nagara Counter charges to remove ads, and Peekan-kun has a subscription to support the developer.</dd>
+                <dt>Can I count while also watching a video in a small window?</dt><dd>Picture in Picture only shows one window at a time, so while Nagara Counter is in the small window, you&#x27;d watch the video full screen. SloRise is built the other way around, with the video in the small window while you count.</dd>
+                <dt>Can I use them for things other than slots?</dt><dd>Nagara Counter isn&#x27;t tied to anything in particular, so you can count whatever you like. The other two are made for counting slot machine hits.</dd>
+            </dl>
+            <p>Nagara Counter has 7 ratings so far, and I&#x27;d love to hear what people are counting with it 🙌</p>
+            <div class="guide-notes">Features and rating counts were checked against each app&#x27;s App Store description on November 15, 2026, and may change with updates. Nagara Counter&#x27;s features were checked against the app&#x27;s own code.</div>
+        </div>
+
+        <nav class="post-navigation">
+            <img class="tk-char tk-char--post" src="/assets/images/character-hang.png" alt="" width="381" height="208">
+            <a href="/blog/guides/" class="nav-link-wrapper"><span>&larr; <span class="i18n-ja">困りごとから選ぶアプリの一覧へ</span><span class="i18n-en">All guides: apps for everyday problems</span></span></a>
+        </nav>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
+                    <p class="footer-description"><span class="i18n-ja">誰も作らないものを、まじめに作る</span><span class="i18n-en">I make things nobody else would, and I make them seriously</span></p>
+                </div>
+                <div class="footer-nav">
+                    <a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
+                    <a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
+                    <a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
+                    <a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ryo Tsuzukihashi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

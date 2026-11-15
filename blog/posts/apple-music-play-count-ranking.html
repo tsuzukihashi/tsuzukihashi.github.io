@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/js/lang.js"></script>
+    <!-- このページは scripts/build_guides.py が docs/guides/apple-music-play-count-ranking.json から作る。直すのは JSON のほう -->
+    <title>Apple Musicで自分の再生回数ランキングを見るアプリ4選 - Blog | Ryo Tsuzukihashi</title>
+    <meta name="description" content="Apple Musicで自分がよく聴いている曲を再生回数の順に見るアプリを4本比べました。回数の見せ方と、画像にして共有できるかの違いをまとめています。Music Snapshotの作者が書いています。">
+    <meta name="title-en" content="4 Apps to See Your Most-Played Songs on Apple Music - Blog | Ryo Tsuzukihashi">
+    <meta name="description-en" content="I compared four iPhone apps that rank your Apple Music songs by play count: how they show the numbers and whether you can share the results as an image. Written by the maker of Music Snapshot.">
+    <link rel="canonical" href="https://tsuzukit.com/blog/posts/apple-music-play-count-ranking.html">
+
+    <!-- OGP -->
+    <meta property="og:title" content="Apple Musicで自分の再生回数ランキングを見るアプリ4選">
+    <meta property="og:description" content="Apple Musicで自分がよく聴いている曲を再生回数の順に見るアプリを4本比べました。回数の見せ方と、画像にして共有できるかの違いをまとめています。Music Snapshotの作者が書いています。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://tsuzukit.com/blog/posts/apple-music-play-count-ranking.html">
+    <meta property="og:image" content="https://tsuzukit.com/assets/images/posts/apple-music-play-count-ranking.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://tsuzukit.com/assets/images/posts/apple-music-play-count-ranking.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-dark-32x32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-dark-16x16.png" media="(prefers-color-scheme: dark)">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERPQ1EGLH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERPQ1EGLH');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8240751277462688"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
+    <link rel="stylesheet" href="/assets/css/guide.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Apple Musicで自分の再生回数ランキングを見るアプリ4選",
+      "description": "Apple Musicで自分がよく聴いている曲を再生回数の順に見るアプリを4本比べました。回数の見せ方と、画像にして共有できるかの違いをまとめています。Music Snapshotの作者が書いています。",
+      "image": "https://tsuzukit.com/assets/images/posts/apple-music-play-count-ranking.webp",
+      "datePublished": "2026-11-15",
+      "dateModified": "2026-11-15",
+      "inLanguage": "ja",
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      },
+      "mainEntityOfPage": "https://tsuzukit.com/blog/posts/apple-music-play-count-ranking.html",
+      "about": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "Music Snapshot 〜あなたの音楽を一枚に〜",
+          "url": "https://apps.apple.com/jp/app/id6605937062",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "Music Dig - 再生回数で聴く音楽プレイヤーアプリ",
+          "url": "https://apps.apple.com/jp/app/id1434640007",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "Song Infos - 音楽統計",
+          "url": "https://apps.apple.com/jp/app/id1544835091",
+          "operatingSystem": "iOS"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "音楽分析: MuzGo",
+          "url": "https://apps.apple.com/jp/app/id6760685959",
+          "operatingSystem": "iOS"
+        }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Music Snapshot 〜あなたの音楽を一枚に〜",
+      "operatingSystem": "iOS",
+      "applicationCategory": "MusicApplication",
+      "url": "https://apps.apple.com/jp/app/id6605937062",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "續橋 涼",
+        "alternateName": [
+          "Ryo Tsuzukihashi",
+          "tsuzuki817"
+        ],
+        "url": "https://tsuzukit.com/about/",
+        "sameAs": [
+          "https://x.com/tsuzuki817"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "無料で使えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Music Dig、Song Infos、MuzGoは無料で入れられます。Music Snapshotは有料のアプリです。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ライブラリに入れていない曲も数えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Music Snapshotが読むのは、ライブラリに入っている曲だけです。MuzGoは、ライブラリに入れていない最近の曲も追えると説明文に書いてあります。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Spotifyの再生回数も見られますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "この4本は、どれもApple Musicのライブラリを読むアプリです。Spotifyの回数は出ません。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tsuzukit.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://tsuzukit.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "困りごとから選ぶアプリ",
+          "item": "https://tsuzukit.com/blog/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Apple Musicで自分の再生回数ランキングを見るアプリ4選",
+          "item": "https://tsuzukit.com/blog/posts/apple-music-play-count-ranking.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">TsuzuKit</a>
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/portfolio/" class="nav-link">Portfolio</a>
+                <a href="/blog/" class="nav-link active">Blog</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post -->
+    <article class="blog-post">
+        <header class="post-header">
+            <div class="post-meta">
+                <span class="post-date">2026.11.15</span>
+                <span class="post-category"><span class="i18n-ja">アプリの選び方</span><span class="i18n-en">App guides</span></span>
+                <span class="post-reading-time"><span class="i18n-ja">4分で読める</span><span class="i18n-en">4 min read</span></span>
+            </div>
+            <h1 class="post-title"><span class="i18n-ja">Apple Musicで自分の再生回数ランキングを見るアプリ4選</span><span class="i18n-en">4 Apps to See Your Most-Played Songs on Apple Music</span></h1>
+        </header>
+        <figure class="post-illustration guide-illustration"><img src="/assets/images/posts/apple-music-play-count-ranking.webp" width="1200" height="800" alt="レコードが乗った表彰台の前で、長い紙のグラフを広げて驚くキャラクター" data-en-alt="The character in front of a podium topped with records, holding up a long strip of paper with a bar chart and looking surprised" fetchpriority="high"></figure>
+
+        <div class="post-content guide i18n-ja">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">先に答え</p>
+                <p>年ごとのランキングならApple MusicのReplayで足ります。曲ごとの回数をiPhoneで見るなら、いちばん使われているのは評価524件のMusic Dig、細かい統計ならSong Infosです。よく聴く60曲をジャケットの壁紙にしたい人は、僕が作ったMusic Snapshotも見てみてください。</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">書いた人 <a href="https://tsuzukit.com/about/">續橋 涼</a>（@tsuzuki817）</p>
+                    <p class="guide-byline-bio">2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。Music Snapshotの作者です。</p>
+                    <p class="guide-byline-date">公開 <time datetime="2026-11-15">2026.11.15</time> · 更新 <time datetime="2026-11-15">2026.11.15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">この記事は、Music Snapshotを作った僕が書いています。ほかの3本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。</p>
+            <h2>4本をざっくり比べる</h2>
+            <p>どれもApple Musicのライブラリから再生回数を読んで並べます。違うのは、並べたあとに何をするかです。</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">アプリ</th><th scope="col">評価の件数</th><th scope="col">並べられるもの</th><th scope="col">回数の見せ方</th><th scope="col">画像にして共有</th></tr></thead><tbody><tr><th scope="row">Music Snapshot（僕のアプリ）</th><td>1件</td><td>再生回数の多い曲を60曲</td><td>曲ごとの回数と、聴いた時間の合計</td><td>ジャケットを並べた壁紙</td></tr><tr><th scope="row">Music Dig</th><td>524件</td><td>曲を再生回数で並べ替え</td><td>説明文に記載なし</td><td>説明文に記載なし</td></tr><tr><th scope="row">Song Infos</th><td>32件</td><td>曲、アルバム、アーティスト、プレイリスト</td><td>再生回数、スキップ回数、聴いた時間</td><td>説明文に記載なし</td></tr><tr><th scope="row">MuzGo</th><td>74件</td><td>曲、アーティスト、アルバム、ジャンル</td><td>総再生回数など</td><td>テンプレートで共有</td></tr></tbody></table></div>
+            <h2>1本ずつ見ていく</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/98/d0/78/98d07863-83f6-500c-daa1-3b3b5aa439ba/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">僕が作ったアプリ</span>
+                    <h3 class="guide-app-name">Music Snapshot 〜あなたの音楽を一枚に〜</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · App Storeの評価 1件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6605937062" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>Apple Musicのライブラリから、再生回数の多い順に60曲を並べます。曲ごとに何回再生したかと、回数に曲の長さを掛けた、その曲を聴いた時間の合計も出ます。</p>
+            <p>並べたジャケットは、そのまま壁紙の画像になって、保存したり共有したりできます。ほかにも、最近聴いた曲、半年以上聴いていない曲、最近追加した曲の4つの切り口があります。</p>
+            <p>この4本の中で、Music Snapshotだけが有料のアプリです。買い切りで、入れたあとにかかるお金はありません。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/59/89/41/59894151-a69e-5d3f-df98-c275d9d25fc2/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Music Dig - 再生回数で聴く音楽プレイヤーアプリ</h3>
+                    <p class="guide-app-meta">Yuya Isago · App Storeの評価 524件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id1434640007" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>評価が524件あって、この中ではいちばん使われています。再生回数で曲を並べ替えて、そのまま聴ける音楽プレイヤーです。</p>
+            <p>よく聴く曲中心、あまり聴いていない曲中心、その両方、と1タップで自動選曲できるのが強みです。ランキングを見るより、そこから聴きたい人向けですね。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4f/64/d3/4f64d33a-da96-2c4b-22ff-ddf291f02d3e/AppIcon-0-0-1x_U007ephone-0-0-0-1-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Song Infos - 音楽統計</h3>
+                    <p class="guide-app-meta">Firat Sueluenkue · App Storeの評価 32件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id1544835091" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>再生回数のほかに、スキップした回数や聴いた時間まで見られる統計のアプリです。トップ10の曲、アルバム、アーティスト、プレイリストがすぐ出ます。</p>
+            <p>日ごとのグラフや、過去の同じ日に聴いていた曲を探す機能もあります。数字を細かく見たい人にはいちばん向いています。</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/da/87/10/da871052-78dc-b804-6985-90214750f3ca/AppIcon-1x_U007epad-0-1-0-85-220-0.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">音楽分析: MuzGo</h3>
+                    <p class="guide-app-meta">Shenzhen Tapyin Technology Co., Ltd · App Storeの評価 74件</p>
+                    <div class="guide-app-links">
+                        <a href="https://apps.apple.com/jp/app/id6760685959" target="_blank" rel="noopener noreferrer"><img class="guide-app-badge" src="/assets/images/download-on-the-appstore.svg" alt="App Storeからダウンロード" width="110" height="40"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>トップソング、トップアーティスト、トップアルバム、トップジャンルをランキングで見られます。総再生回数や再生時間も出ます。</p>
+            <p>統計をテンプレートの画像にして、Instagramのストーリーなどに共有できます。説明文には、Apple Musicがすべての再生履歴を出しているわけではない、という注意も書かれていました。</p>
+            <h2>アプリを入れずに見るなら</h2>
+            <p>Apple Musicには、1年でよく聴いた曲をまとめるReplayがあります。年ごとのランキングならこれで足ります。</p>
+            <p>MacのミュージックAppなら、曲の一覧に再生回数の列を出して、多い順に並べ替えられます。iPhoneだけで曲ごとの回数を見たいときに、アプリの出番ですね。</p>
+            <h2>どれを選ぶか</h2>
+            <ul class="guide-list"><li>よく聴く曲や忘れていた曲を、そのまま流したいなら、Music Dig</li><li>スキップや日ごとのグラフまで細かく見たいなら、Song Infos</li><li>ジャンルまで含めたランキングを画像で共有したいなら、MuzGo</li><li>よく聴く60曲をジャケットの壁紙にしたいなら、Music Snapshot</li></ul>
+            <h2>よくある質問</h2>
+            <dl class="guide-faq">
+                <dt>無料で使えますか？</dt><dd>Music Dig、Song Infos、MuzGoは無料で入れられます。Music Snapshotは有料のアプリです。</dd>
+                <dt>ライブラリに入れていない曲も数えますか？</dt><dd>Music Snapshotが読むのは、ライブラリに入っている曲だけです。MuzGoは、ライブラリに入れていない最近の曲も追えると説明文に書いてあります。</dd>
+                <dt>Spotifyの再生回数も見られますか？</dt><dd>この4本は、どれもApple Musicのライブラリを読むアプリです。Spotifyの回数は出ません。</dd>
+            </dl>
+            <p>自分の1位が何回だったか、Music Snapshotで見た人の数字をちょっと聞いてみたいです🎧</p>
+            <div class="guide-notes">各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。再生回数は、Apple Musicのライブラリが持っている数字をもとにしています。</div>
+        </div>
+
+        <div class="post-content guide i18n-en">
+            <aside class="guide-tldr">
+                <p class="guide-tldr-label">Short answer</p>
+                <p>For a yearly ranking, Apple Music&#x27;s Replay is enough. For per-song counts on your iPhone, the most widely used app is Music Dig with 524 ratings, and Song Infos goes deepest on stats. If you want your 60 most-played songs as an album-cover wallpaper, take a look at Music Snapshot, which I made.</p>
+            </aside>
+            <div class="guide-byline">
+                <img class="guide-byline-face" src="/assets/images/user_profile.webp" alt="" width="512" height="512">
+                <div>
+                    <p class="guide-byline-name">Written by <a href="https://tsuzukit.com/about/">Ryo Tsuzukihashi</a> (@tsuzuki817)</p>
+                    <p class="guide-byline-bio">I&#x27;ve been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made Music Snapshot.</p>
+                    <p class="guide-byline-date">Published <time datetime="2026-11-15">2026-11-15</time> · Updated <time datetime="2026-11-15">2026-11-15</time></p>
+                </div>
+            </div>
+            <p class="guide-disclosure">I made Music Snapshot, and I wrote this article. The other three apps are by developers I don&#x27;t know, and I haven&#x27;t received money or anything else from them. Everything compared here comes from each app&#x27;s App Store description and rating count as of November 15, 2026.</p>
+            <h2>The four apps at a glance</h2>
+            <p>All four read play counts from your Apple Music library and rank your songs. Where they differ is what you do with that list.</p>
+            <div class="guide-table-wrap"><table class="guide-table"><thead><tr><th scope="col">App</th><th scope="col">Ratings</th><th scope="col">What it ranks</th><th scope="col">How counts are shown</th><th scope="col">Share as an image</th></tr></thead><tbody><tr><th scope="row">Music Snapshot (my app)</th><td>1</td><td>Your 60 most-played songs</td><td>Plays per song and total listening time</td><td>A wallpaper of album covers</td></tr><tr><th scope="row">Music Dig</th><td>524</td><td>Sorts songs by play count</td><td>Not mentioned</td><td>Not mentioned</td></tr><tr><th scope="row">Song Infos</th><td>32</td><td>Songs, albums, artists, and playlists</td><td>Plays, skips, and listening time</td><td>Not mentioned</td></tr><tr><th scope="row">MuzGo</th><td>74</td><td>Songs, artists, albums, and genres</td><td>Total plays and more</td><td>Share with templates</td></tr></tbody></table></div>
+            <h2>Each app, one by one</h2>
+
+            <div class="guide-app guide-app--own">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/98/d0/78/98d07863-83f6-500c-daa1-3b3b5aa439ba/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    <span class="guide-app-own">I made this</span>
+                    <h3 class="guide-app-name">Music Snapshot: Art Wallpapers</h3>
+                    <p class="guide-app-meta">Ryo Tsudukihashi · 1 App Store rating</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6605937062" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>It lists the 60 songs you have played most from your Apple Music library. Each song shows how many times you played it, and the total time you spent on it, which is the play count times the song length.</p>
+            <p>The album covers turn into a wallpaper image you can save or share. Besides your most-played songs, there are three more views, recently played, songs you haven&#x27;t played in over six months, and recently added.</p>
+            <p>Music Snapshot is the only paid app of the four. You pay once, and nothing else costs extra after that.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/59/89/41/59894151-a69e-5d3f-df98-c275d9d25fc2/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Music Dig: Music by Play Count</h3>
+                    <p class="guide-app-meta">Yuya Isago · 524 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id1434640007" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>With 524 ratings, it&#x27;s the most used of the four. It&#x27;s a music player that sorts your songs by play count and plays them from there.</p>
+            <p>Its strength is one-tap auto picks, focused on songs you play a lot, songs you rarely play, or a mix of both. It&#x27;s for people who want to listen from the ranking, not just look at it.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4f/64/d3/4f64d33a-da96-2c4b-22ff-ddf291f02d3e/AppIcon-0-0-1x_U007ephone-0-0-0-1-0-85-220.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Song Infos - your music stats</h3>
+                    <p class="guide-app-meta">Firat Sueluenkue · 32 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id1544835091" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>This is a stats app that shows skips and listening time on top of play counts. Your top 10 songs, albums, artists, and playlists come up right away.</p>
+            <p>It also has daily charts and a way to find what you were listening to on the same day in past years. It suits people who want to dig into the numbers the most.</p>
+
+            <div class="guide-app">
+                <img class="guide-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/da/87/10/da871052-78dc-b804-6985-90214750f3ca/AppIcon-1x_U007epad-0-1-0-85-220-0.png/512x512bb.jpg" width="96" height="96" alt="" loading="lazy">
+                <div class="guide-app-body">
+                    
+                    <h3 class="guide-app-name">Music Stats: MuzGo</h3>
+                    <p class="guide-app-meta">Shenzhen Tapyin Technology Co., Ltd · 74 App Store ratings</p>
+                    <div class="guide-app-links">
+                        <a class="guide-app-store-text" href="https://apps.apple.com/jp/app/id6760685959" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p>It ranks your top songs, artists, albums, and genres, and also shows total plays and listening time.</p>
+            <p>You can turn your stats into template images for places like Instagram Stories. The description also notes that Apple Music doesn&#x27;t provide your complete listening history.</p>
+            <h2>Checking without an app</h2>
+            <p>Apple Music has Replay, which rounds up the songs you played most in a year. If a yearly ranking is all you want, that&#x27;s enough.</p>
+            <p>On a Mac, the Music app can show a Plays column in the song list and sort by it. Apps come in when you want per-song counts on your iPhone alone.</p>
+            <h2>Which one to pick</h2>
+            <ul class="guide-list"><li>If you want to play your top songs or forgotten ones straight from the list, Music Dig</li><li>If you want skips and daily charts too, Song Infos</li><li>If you want rankings including genres, shared as an image, MuzGo</li><li>If you want your 60 most-played songs as an album-cover wallpaper, Music Snapshot</li></ul>
+            <h2>FAQ</h2>
+            <dl class="guide-faq">
+                <dt>Are they free?</dt><dd>Music Dig, Song Infos, and MuzGo are free to download. Music Snapshot is a paid app.</dd>
+                <dt>Do songs that aren&#x27;t in my library count?</dt><dd>Music Snapshot only reads songs in your library. MuzGo says in its description that it can also track recent songs not in your library.</dd>
+                <dt>Can I see my Spotify play counts?</dt><dd>All four read your Apple Music library. They don&#x27;t show Spotify play counts.</dd>
+            </dl>
+            <p>I&#x27;m a little curious how many plays your number one song has, if you check it with Music Snapshot 🎧</p>
+            <div class="guide-notes">Features and rating counts were checked against each app&#x27;s App Store description on November 15, 2026, and may change with updates. Play counts come from the numbers stored in your Apple Music library.</div>
+        </div>
+
+        <nav class="post-navigation">
+            <img class="tk-char tk-char--post" src="/assets/images/character-hang.png" alt="" width="381" height="208">
+            <a href="/blog/guides/" class="nav-link-wrapper"><span>&larr; <span class="i18n-ja">困りごとから選ぶアプリの一覧へ</span><span class="i18n-en">All guides: apps for everyday problems</span></span></a>
+        </nav>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
+                    <p class="footer-description"><span class="i18n-ja">誰も作らないものを、まじめに作る</span><span class="i18n-en">I make things nobody else would, and I make them seriously</span></p>
+                </div>
+                <div class="footer-nav">
+                    <a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
+                    <a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
+                    <a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
+                    <a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ryo Tsuzukihashi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

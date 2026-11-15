@@ -1,0 +1,455 @@
+{
+  "slug": "leather-shoe-care-apps",
+  "date_published": "2026-11-15",
+  "date_updated": "2026-11-15",
+  "search_phrase": {
+    "ja": "革靴 管理 アプリ",
+    "en": "leather shoe care tracker app"
+  },
+  "evidence": "2026-11-15 に Google の検索候補で「革靴 アプリ」を引くと、2件のうち1件が「革靴 管理 アプリ」だった。「靴 管理」でも11件中1件が「靴 管理 アプリ」。悩みの言葉では「革靴 手入れ 頻度」「靴磨き 頻度」「革靴 ローテーション 何足」「革靴 休ませる 何日」が候補に出た。同じ日に App Store で「革靴 管理」を検索すると6本が並び、評価が100件を超えるのは KutsuReco の110件だけで、ほかは0〜3件だった。",
+  "title": {
+    "ja": "革靴の磨きどきとローテーションを管理するアプリ4選",
+    "en": "4 Apps That Tell You When to Polish Your Leather Shoes"
+  },
+  "description": {
+    "ja": "革靴の磨きどきを通知してくれるアプリを4本比べました。何で磨きどきを決めるか、通知の回数、休ませる日の管理、無料で登録できる足数の違いをまとめています。ShoeKeepの作者が書いています。",
+    "en": "I compared four iPhone apps that remind you when to polish your leather shoes: how each decides it's time, how it notifies you, rest days between wears, and how many pairs are free. Written by the maker of ShoeKeep."
+  },
+  "excerpt": {
+    "ja": "磨きどきの決め方、通知、休ませる日、無料の足数で4本を比べました。ShoeKeepを作った僕が、自分のアプリも入れて書いています。",
+    "en": "Four apps compared on how they decide it's time to polish, notifications, rest days, and free pairs. I made ShoeKeep, and it's one of the four."
+  },
+  "category": {
+    "ja": "アプリの選び方",
+    "en": "App guides"
+  },
+  "reading_minutes": 4,
+  "author": {
+    "name": {
+      "ja": "續橋 涼",
+      "en": "Ryo Tsuzukihashi"
+    },
+    "handle": "tsuzuki817",
+    "bio": {
+      "ja": "2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。ShoeKeepの作者です。",
+      "en": "I've been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made ShoeKeep."
+    },
+    "url": "https://tsuzukit.com/about/",
+    "same_as": [
+      "https://x.com/tsuzuki817"
+    ]
+  },
+  "tldr": {
+    "ja": "手っ取り早いのは、靴を登録して磨きどきを通知してくれるアプリを入れることです。いちばん使われているのは評価110件のKutsuReco。履いた回数でも磨きどきを数えたい人や、同じ靴を続けて履かないように休ませる日も見たい人は、僕が作ったShoeKeepも見てみてください。",
+    "en": "The quickest fix is an app where you register your shoes and it notifies you when they're due for a polish. The most widely used one is KutsuReco, with 110 ratings. If you also want it to count how many times you've worn a pair, or to show which shoes still need a day of rest, take a look at ShoeKeep, which I made."
+  },
+  "disclosure": {
+    "ja": "この記事は、ShoeKeepを作った僕が書いています。ほかの3本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。",
+    "en": "I made ShoeKeep, and I wrote this article. The other three apps are by developers I don't know, and I haven't received money or anything else from them. Everything compared here comes from each app's App Store description and rating count as of November 15, 2026."
+  },
+  "own_app": "6781119303",
+  "app_category": "LifestyleApplication",
+  "apps": [
+    {
+      "id": "6781119303",
+      "name": {
+        "ja": "革靴ケア手帳 ShoeKeep",
+        "en": "ShoeKeep: Care & Rotation"
+      },
+      "short": {
+        "ja": "ShoeKeep",
+        "en": "ShoeKeep"
+      },
+      "developer": "Ryo Tsudukihashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f8/12/c3/f812c390-a5a7-501f-8d7c-b7eb3b8801a4/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6781119303",
+      "android_url": null,
+      "rating_count": 1
+    },
+    {
+      "id": "1579249791",
+      "name": {
+        "ja": "革靴・靴磨き好きのアプリ KutsuReco(クツレコ)",
+        "en": "KutsuReco: Leather Shoe and Shoeshine Log"
+      },
+      "short": {
+        "ja": "KutsuReco",
+        "en": "KutsuReco"
+      },
+      "developer": "Keima Kondo",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/f9/2c/fd/f92cfdc0-5259-1364-9fd6-22341227cdeb/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id1579249791",
+      "android_url": null,
+      "rating_count": 110
+    },
+    {
+      "id": "6793043430",
+      "name": {
+        "ja": "ShoeTree - 革靴の手入れ記録",
+        "en": "Shoetree"
+      },
+      "short": {
+        "ja": "ShoeTree",
+        "en": "Shoetree"
+      },
+      "developer": "Ippei Ishida",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/f6/72/f5/f672f556-e0fd-60be-cd19-ff06aef0570b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6793043430",
+      "android_url": null,
+      "rating_count": 0
+    },
+    {
+      "id": "6762127971",
+      "name": {
+        "ja": "Patinist -経年変化・革靴好きのための記録アプリ-",
+        "en": "Patinist: Leather Shoe Wear and Care Log"
+      },
+      "short": {
+        "ja": "Patinist",
+        "en": "Patinist"
+      },
+      "developer": "Takahiro Yamada",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/f8/af/6d/f8af6d1d-f682-e906-10cb-6e211c85a22c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6762127971",
+      "android_url": null,
+      "rating_count": 3
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ja": "4本をざっくり比べる",
+        "en": "The four apps at a glance"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "違いが出るのは、磨きどきを日数で決めるか、履いた回数でも決めるかです。休ませる日まで見てくれるかも分かれます。",
+            "en": "The big difference is whether an app decides it's time to polish by days alone or also by how many times you've worn the pair. They also differ on whether they keep track of rest days."
+          }
+        },
+        {
+          "type": "table",
+          "head": [
+            {
+              "ja": "アプリ",
+              "en": "App"
+            },
+            {
+              "ja": "評価の件数",
+              "en": "Ratings"
+            },
+            {
+              "ja": "磨きどきの決め方",
+              "en": "How it decides"
+            },
+            {
+              "ja": "通知",
+              "en": "Notifications"
+            },
+            {
+              "ja": "休ませる日",
+              "en": "Rest days"
+            },
+            {
+              "ja": "無料で登録できる数",
+              "en": "Free pairs"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ja": "ShoeKeep（僕のアプリ）",
+                "en": "ShoeKeep (my app)"
+              },
+              {
+                "ja": "1件",
+                "en": "1"
+              },
+              {
+                "ja": "履いた回数と日数。素材ごとの目安入り",
+                "en": "Wears and days, with defaults per leather type"
+              },
+              {
+                "ja": "7日前、前日、当日。過ぎたら磨くまで毎日",
+                "en": "7 days before, the day before, on the day, then daily until you polish"
+              },
+              {
+                "ja": "今日履ける靴と休息中の靴を表示",
+                "en": "Shows which pairs are ready and which are resting"
+              },
+              {
+                "ja": "3足",
+                "en": "3"
+              }
+            ],
+            [
+              {
+                "ja": "KutsuReco",
+                "en": "KutsuReco"
+              },
+              {
+                "ja": "110件",
+                "en": "110"
+              },
+              {
+                "ja": "決めておいた日数",
+                "en": "A number of days you set"
+              },
+              {
+                "ja": "あり",
+                "en": "Yes"
+              },
+              {
+                "ja": "説明文に記載なし。履いた靴をカレンダーに記録",
+                "en": "Not mentioned. Logs which pair you wore on a calendar"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              }
+            ],
+            [
+              {
+                "ja": "ShoeTree",
+                "en": "Shoetree"
+              },
+              {
+                "ja": "0件",
+                "en": "0"
+              },
+              {
+                "ja": "日数や回数のルールを靴ごとに設定",
+                "en": "Rules by days or wears, set per pair"
+              },
+              {
+                "ja": "あり",
+                "en": "Yes"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "3足",
+                "en": "3"
+              }
+            ],
+            [
+              {
+                "ja": "Patinist",
+                "en": "Patinist"
+              },
+              {
+                "ja": "3件",
+                "en": "3"
+              },
+              {
+                "ja": "最後のケアから1か月",
+                "en": "One month after the last care"
+              },
+              {
+                "ja": "あり",
+                "en": "Yes"
+              },
+              {
+                "ja": "説明文に記載なし。雨の日はラバーソールを提案",
+                "en": "Not mentioned. Suggests rubber soles on rainy days"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "1本ずつ見ていく",
+        "en": "Each app, one by one"
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "id": "6781119303"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "靴を登録すると、履いた回数と前回の手入れからの日数のうち、先に来たほうで磨きどきを出します。スムースレザー、コードバン、スエードなど、素材ごとの目安が最初から入っています。雨に濡れたと記録した靴は、その日が磨きどきになります。",
+            "en": "Register a pair and it works out the polishing date from whichever comes first, the number of wears or the days since you last cared for it. It comes with defaults for smooth leather, cordovan, suede, and other leathers. If you log that a pair got wet in the rain, it's due that same day."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "通知は7日前と前日と当日の夜に来て、過ぎたら磨いたと記録するまで毎日来ます。履いた日を記録すると、まだ休ませたほうがいい靴は休息中として出ます。コードバンは2日、ほかの素材は1日休ませる設定です。",
+            "en": "It notifies you in the evening 7 days before, the day before, and on the day, then every day until you log a polish. When you log a wear, pairs that should still rest show up as resting. Cordovan rests for 2 days and other leathers for 1."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "無料で3足まで登録できます。下駄箱ごとのグループ分けと手入れの記録の一覧は、プレミアムです。iPhone専用です。",
+            "en": "You can register up to 3 pairs for free. Grouping by shoe cabinet and the full care history are Premium. It's iPhone only."
+          }
+        },
+        {
+          "type": "app",
+          "id": "1579249791"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "評価が110件あって、この中ではいちばん使われています。その日の天気と履いた靴を選ぶだけで、革靴専用のカレンダーに記録できます。どんな天気で何回履いたかも見られます。",
+            "en": "With 110 ratings, it's the most used of the four. Pick the day's weather and the pair you wore, and it goes on a calendar just for your leather shoes. You can also see how many times you wore each pair and in what weather."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "靴磨きの時期は、決めておいた日数で通知します。靴ごとのアルバムに写真を残せるので、エイジングを見返したい人に向いてますね。",
+            "en": "It notifies you when it's time to polish, based on a number of days you choose. Each pair gets its own photo album, which suits people who like to look back at how the leather has aged."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6793043430"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "履いてから60日、クリームを塗ってから10回のように、靴ごとにアラートのルールを決められます。日数でも回数でも決められるのは、ShoeKeepと同じ考え方です。",
+            "en": "You can set alert rules per pair, like 60 days after wearing or 10 wears after applying cream. Being able to use either days or wears is the same idea as ShoeKeep."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "修理の記録とかかった費用も残せます。無料で3足まで登録できて、それより多いと月額か年額のProプランです。",
+            "en": "It also keeps repair records and what they cost. Up to 3 pairs are free, and more than that needs the monthly or yearly Pro plan."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6762127971"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "最後の手入れから1か月たった靴を通知で知らせます。現在地の天気を取ってきて、雨の日はラバーソールの靴を先に勧めてくれます。",
+            "en": "It notifies you about any pair that hasn't been cared for in a month. It also checks the weather where you are and suggests rubber-soled pairs first on rainy days."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "登録できる数を無制限にするのと、履いた日の歩数の記録は、月額のプレミアムです。無料で何足まで登録できるかは、説明文には書かれていませんでした。",
+            "en": "Unlimited pairs and step counts for the days you wear them are part of the monthly Premium plan. The description doesn't say how many pairs you can register for free."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "アプリを入れたくないなら",
+        "en": "If you'd rather not install an app"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "iPhoneのリマインダーで、靴ごとに繰り返しの予定を作っておく手もあります。1足なら、これで十分ですね。",
+            "en": "You can also make a repeating reminder for each pair in the iPhone Reminders app. If you only have one pair, that's plenty."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "ただ、リマインダーは日付でしか鳴りません。よく履く靴ほど早く磨きたい、という履いた回数での管理は、専用のアプリのほうが楽です。",
+            "en": "The catch is that Reminders only works by date. If you want the pairs you wear most to come up sooner, counting wears is easier in a dedicated app."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "どれを選ぶか",
+        "en": "Which one to pick"
+      },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "ja": "履いた日を天気と一緒に残して、エイジングの写真も見返したいなら、KutsuReco",
+              "en": "If you want to log wears with the weather and look back at photos of your shoes aging, KutsuReco"
+            },
+            {
+              "ja": "修理の記録や費用まで、靴ごとに細かく残したいなら、ShoeTree",
+              "en": "If you want detailed records per pair, including repairs and costs, Shoetree"
+            },
+            {
+              "ja": "雨の日にどの靴を履くか迷うなら、Patinist",
+              "en": "If you often wonder which pair to wear when it rains, Patinist"
+            },
+            {
+              "ja": "素材ごとの目安で磨きどきを出して、休ませる日も見たいなら、ShoeKeep",
+              "en": "If you want polishing dates based on the leather type, plus rest days between wears, ShoeKeep"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "ja": "無料で使えますか？",
+        "en": "Are they free?"
+      },
+      "a": {
+        "ja": "4本とも無料で入れられます。ShoeKeepとShoeTreeは無料だと3足までで、それより多いと有料です。",
+        "en": "All four are free to download. ShoeKeep and Shoetree let you register up to 3 pairs for free, and more than that costs money."
+      }
+    },
+    {
+      "q": {
+        "ja": "スエードの靴でも使えますか？",
+        "en": "Do they work for suede?"
+      },
+      "a": {
+        "ja": "ShoeKeepにはスエードとヌバックの目安が入っています。ほかの3本は、素材ごとの目安があるかどうか説明文に書かれていませんでした。",
+        "en": "ShoeKeep has built-in defaults for suede and nubuck. The other three don't say in their descriptions whether they have defaults by leather type."
+      }
+    },
+    {
+      "q": {
+        "ja": "アプリの出す磨きどきの通りに手入れすれば大丈夫ですか？",
+        "en": "Can I just polish whenever the app says?"
+      },
+      "a": {
+        "ja": "どのアプリも出しているのは目安です。革の乾き具合を見て、迷ったら買ったお店や靴の修理店に聞いてみてください。",
+        "en": "Every app here only gives a guideline. Look at how dry the leather is, and if you're unsure, ask the shop where you bought them or a shoe repair shop."
+      }
+    }
+  ],
+  "closing": {
+    "ja": "ShoeKeepの評価はまだ1件なので、磨いた靴の自慢も込みで感想を待ってます🙏",
+    "en": "ShoeKeep only has one rating so far, so I'd love to hear what you think, and feel free to show off your freshly polished shoes 🙏"
+  },
+  "notes": {
+    "ja": "各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。ShoeKeepの機能はアプリのコードで確かめました。",
+    "en": "Features and rating counts were checked against each app's App Store description on November 15, 2026, and may change with updates. ShoeKeep's features were checked against the app's own code."
+  },
+  "illustration": {
+    "scene": "夜の玄関。キャラが下駄箱の前でしゃがみ、片手に靴ブラシ、もう片方の手に茶色の革靴を持っている。宙に浮かぶスマホ（文字なし）に靴の形のアイコンが3つ並び、そのうち1つだけが小さく光っていて、キャラはそれを見ながら磨く靴を選んでいる。",
+    "alt": {
+      "ja": "スマホの合図を見ながら、下駄箱の前で革靴を磨こうとしているキャラクター",
+      "en": "The character crouching by a shoe cabinet with a brush, picking which leather shoe to polish from a glowing phone"
+    }
+  }
+}

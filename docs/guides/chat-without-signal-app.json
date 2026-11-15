@@ -1,0 +1,466 @@
+{
+  "slug": "chat-without-signal-app",
+  "date_published": "2026-11-15",
+  "date_updated": "2026-11-15",
+  "search_phrase": {
+    "ja": "圏外 でも 連絡 できる アプリ",
+    "en": "app to message people with no signal"
+  },
+  "evidence": "2026-11-15 に Google の検索候補で「圏外 連絡 アプリ」を引くと「圏外 でも 連絡 できる アプリ」が出た。「圏外 メッセージ」では10件中「圏外 メッセージ アプリ」「圏外 でも メッセージ」が、「オフライン チャット アプリ」では「オフライン で チャット できる アプリ」が出た。同じ日に App Store で「圏外 チャット」を検索すると、Bluetoothで近くの人とつながるアプリが10本以上並んだが、どれも評価は30件未満だった。",
+  "title": {
+    "ja": "圏外でも近くの人と連絡できるアプリ4選",
+    "en": "4 Apps for Messaging People Nearby With No Signal"
+  },
+  "description": {
+    "ja": "電波もネットも無い場所で、Bluetoothで近くの人とメッセージをやり取りするアプリを4本比べました。中継、登録、最初の起動の条件の違いをまとめています。RelayChatの作者が書いています。",
+    "en": "I compared four apps that let you message people nearby over Bluetooth when there's no signal or internet: relaying, sign-up, and what the first launch needs. Written by the maker of RelayChat."
+  },
+  "excerpt": {
+    "ja": "山、フェス、災害で電波が無いときに。Bluetoothで近くの人とつながるアプリを4本比べました。RelayChatを作った僕が書いています。",
+    "en": "For the mountains, festivals, or disasters when there's no signal. Four Bluetooth apps for reaching people nearby compared. I made RelayChat."
+  },
+  "category": {
+    "ja": "アプリの選び方",
+    "en": "App guides"
+  },
+  "reading_minutes": 5,
+  "author": {
+    "name": {
+      "ja": "續橋 涼",
+      "en": "Ryo Tsuzukihashi"
+    },
+    "handle": "tsuzuki817",
+    "bio": {
+      "ja": "2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。RelayChatの作者です。",
+      "en": "I've been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made RelayChat."
+    },
+    "url": "https://tsuzukit.com/about/",
+    "same_as": [
+      "https://x.com/tsuzuki817"
+    ]
+  },
+  "tldr": {
+    "ja": "圏外で使えるのは、Bluetoothでスマホどうしが直接つながるアプリです。相手も同じアプリを入れている必要があるので、電波があるうちに一緒に入れておきます。評価がいちばん多いのは25件のBerkanan Messengerです。登録なしで、ほかの人のスマホを経由して少し遠くまで届けたいなら、僕が作ったRelayChatも見てみてください。",
+    "en": "What works with no signal is an app where phones connect directly over Bluetooth. The other person needs the same app, so install it together while you still have a connection. The most rated is Berkanan Messenger, with 25. If you want no sign-up and messages that hop through other people's phones to reach a little farther, take a look at RelayChat, which I made."
+  },
+  "disclosure": {
+    "ja": "この記事は、RelayChatを作った僕が書いています。ほかの3本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。",
+    "en": "I made RelayChat, and I wrote this article. The other three apps are by developers I don't know, and I haven't received money or anything else from them. Everything compared here comes from each app's App Store description and rating count as of November 15, 2026."
+  },
+  "own_app": "6749299283",
+  "app_category": "SocialNetworkingApplication",
+  "apps": [
+    {
+      "id": "6749299283",
+      "name": {
+        "ja": "RelayChat-オフライン匿名Bluetoothチャット",
+        "en": "RelayChat-Bluetooth Mesh Chat"
+      },
+      "short": {
+        "ja": "RelayChat",
+        "en": "RelayChat"
+      },
+      "developer": "Ryo Tsudukihashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/eb/bc/17/ebbc17e6-d513-a7d3-2dc5-595febaa0beb/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6749299283",
+      "android_url": null,
+      "rating_count": 2
+    },
+    {
+      "id": "1289061820",
+      "name": {
+        "ja": "Berkanan Messenger",
+        "en": "Berkanan Messenger"
+      },
+      "short": {
+        "ja": "Berkanan Messenger",
+        "en": "Berkanan Messenger"
+      },
+      "developer": "IZE, Ltd.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/83/f6/4a/83f64ae5-3054-e1ef-f78e-d2e4dea23b5a/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id1289061820",
+      "android_url": null,
+      "rating_count": 25
+    },
+    {
+      "id": "6748219622",
+      "name": {
+        "ja": "bitchat mesh",
+        "en": "bitchat mesh"
+      },
+      "short": {
+        "ja": "bitchat mesh",
+        "en": "bitchat mesh"
+      },
+      "developer": "permissionless tech, llc",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b6/fa/f3/b6faf3c8-dfa4-eb54-3ebe-bf775dadb04c/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6748219622",
+      "android_url": null,
+      "rating_count": 21
+    },
+    {
+      "id": "975776347",
+      "name": {
+        "ja": "Bridgefy - オフラインメッセージ",
+        "en": "Bridgefy - Offline Messages"
+      },
+      "short": {
+        "ja": "Bridgefy",
+        "en": "Bridgefy"
+      },
+      "developer": "Bridgefy, Inc.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/30/56/d5/3056d599-c416-31d0-daaa-56cc6f09673f/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id975776347",
+      "android_url": null,
+      "rating_count": 1
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ja": "先に知っておくこと",
+        "en": "What to know first"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "どのアプリも、相手が同じアプリを入れていないとつながりません。圏外になってからは入れられないので、山に行く前や、家族の防災の準備のときに一緒に入れておきます。",
+            "en": "None of these apps work unless the other person has the same one installed. You can't download it once you've lost signal, so install it together before a hike or as part of your family's disaster prep."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "届く距離は、Bluetoothなので近くの人までです。壁や人ごみで短くなります。",
+            "en": "Because it's Bluetooth, it only reaches people nearby, and walls or crowds shorten the range."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "4本をざっくり比べる",
+        "en": "The four apps at a glance"
+      },
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            {
+              "ja": "アプリ",
+              "en": "App"
+            },
+            {
+              "ja": "評価の件数",
+              "en": "Ratings"
+            },
+            {
+              "ja": "ほかのスマホで中継",
+              "en": "Relays through other phones"
+            },
+            {
+              "ja": "アカウント",
+              "en": "Account"
+            },
+            {
+              "ja": "1対1のメッセージ",
+              "en": "Private messages"
+            },
+            {
+              "ja": "有料のところ",
+              "en": "What costs money"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ja": "RelayChat（僕のアプリ）",
+                "en": "RelayChat (my app)"
+              },
+              {
+                "ja": "2件",
+                "en": "2"
+              },
+              {
+                "ja": "あり。最大3回まで",
+                "en": "Yes, up to 3 hops"
+              },
+              {
+                "ja": "要らない",
+                "en": "Not needed"
+              },
+              {
+                "ja": "あり。本文は中継の端末から読めない",
+                "en": "Yes. Relaying phones cannot read the text"
+              },
+              {
+                "ja": "広告を消す、アイコンを選ぶ",
+                "en": "Removing ads, choosing your icon"
+              }
+            ],
+            [
+              {
+                "ja": "Berkanan Messenger",
+                "en": "Berkanan Messenger"
+              },
+              {
+                "ja": "25件",
+                "en": "25"
+              },
+              {
+                "ja": "端末から端末へ転送",
+                "en": "Passed from device to device"
+              },
+              {
+                "ja": "要らない",
+                "en": "Not needed"
+              },
+              {
+                "ja": "非公開メッセージあり",
+                "en": "Private messages available"
+              },
+              {
+                "ja": "プロフィールの編集、広告を消す",
+                "en": "Editing your profile, removing ads"
+              }
+            ],
+            [
+              {
+                "ja": "bitchat mesh",
+                "en": "bitchat mesh"
+              },
+              {
+                "ja": "21件",
+                "en": "21"
+              },
+              {
+                "ja": "あり",
+                "en": "Yes"
+              },
+              {
+                "ja": "電話番号もメールも要らない",
+                "en": "No phone number or email"
+              },
+              {
+                "ja": "暗号化した個別のメッセージ",
+                "en": "Encrypted private messages"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              }
+            ],
+            [
+              {
+                "ja": "Bridgefy",
+                "en": "Bridgefy"
+              },
+              {
+                "ja": "1件",
+                "en": "1"
+              },
+              {
+                "ja": "説明文に記載なし",
+                "en": "Not mentioned"
+              },
+              {
+                "ja": "初回だけネットにつないでログイン",
+                "en": "Log in online on first launch"
+              },
+              {
+                "ja": "あり",
+                "en": "Yes"
+              },
+              {
+                "ja": "サブスクリプションあり",
+                "en": "Has a subscription"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "1本ずつ見ていく",
+        "en": "Each app, one by one"
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "id": "6749299283"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "Bluetoothでスマホどうしが直接つながって、近くにいる全員とメッセージをやり取りできます。名前やメールアドレスの登録は要りません。",
+            "en": "Phones connect directly over Bluetooth so you can message everyone nearby. There's no need to register a name or email address."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "直接届かない相手にも、間にいる人のスマホを最大3回まで経由して届けます。1対1のメッセージは本文を暗号化していて、中継したスマホからは読めません。全員に向けたメッセージは、その場にいる全員が読めるものとして送ります。",
+            "en": "If someone is out of direct range, your message can hop through up to three other people's phones to reach them. Private messages are encrypted so the phones relaying them can't read the text. Messages to everyone are meant to be read by everyone there."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "チャットは無料で使えて、Proにすると広告が消え、アイコンを自由に選べます。Proはサブスクリプションか買い切りです。iPhone専用です。",
+            "en": "Chatting is free, and Pro removes ads and lets you pick any icon. Pro is a subscription or a one-time purchase. It's iPhone only."
+          }
+        },
+        {
+          "type": "app",
+          "id": "1289061820"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "評価が25件あって、4本の中でいちばん多いです。Bluetoothだけを使ったグループメッセージのアプリで、近くの人と公開と非公開のメッセージを送り合えます。",
+            "en": "With 25 ratings, it has the most of the four. It's a group messaging app that runs on Bluetooth alone, letting you send public and private messages to people nearby."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "アカウントの登録は要りません。バックグラウンドでも動いて、近くの人やメッセージを通知で知らせます。プレミアムではプロフィールを編集でき、広告が消えます。",
+            "en": "No account is needed. It runs in the background and notifies you about people and messages nearby. Premium lets you edit your profile and removes ads."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6748219622"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "Bluetoothのメッシュでつながる、英語のチャットアプリです。電話番号もメールアドレスも要らず、メッセージを中継して遠くまで届けると説明文にあります。",
+            "en": "An English-language chat app that connects over a Bluetooth mesh. It needs no phone number or email, and its description says it relays messages to go the distance."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "個別のメッセージは暗号化されます。説明文はとても短く、料金については書かれていませんでした。",
+            "en": "Private messages are encrypted. The description is very short and says nothing about pricing."
+          }
+        },
+        {
+          "type": "app",
+          "id": "975776347"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "世界中で使われている、インターネット不要のメッセージアプリです。Bluetoothで近くの人に送れて、届く距離は最長100メートルと説明文にあります。",
+            "en": "An internet-free messaging app used around the world. It sends messages to people nearby over Bluetooth, and the description gives a maximum range of 100 meters."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "気をつけたいのは、最初に開くときだけインターネットにつないでログインが要るところです。圏外になる前に、1回開いておく必要があります。",
+            "en": "One thing to watch for is that the first launch needs an internet connection to log in, so you have to open it once before you lose signal."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "アプリが無くてもできること",
+        "en": "What you can do without these apps"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "大きな災害のときは、災害用伝言ダイヤルの171や、ネットで使えるweb171で安否を残せます。携帯会社が無料のWi-Fiの00000JAPANを開けることもあります。",
+            "en": "In a major disaster, you can leave a message about your safety with the 171 disaster message dial or web171 online. Carriers may also open a free Wi-Fi network called 00000JAPAN."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "ただ、どれも電話かネットのどこかがつながっている必要があります。全部が止まった場所で近くの人とやり取りできるのが、Bluetoothのアプリのいいところです。",
+            "en": "All of these still need a phone line or internet connection somewhere. What the Bluetooth apps are good at is reaching people nearby when everything else is down."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "どれを選ぶか",
+        "en": "Which one to pick"
+      },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "ja": "評価の多いアプリから試したい、通知で近くの人を知りたいなら、Berkanan Messenger",
+              "en": "If you want to start with the most rated app and get notified about people nearby, Berkanan Messenger"
+            },
+            {
+              "ja": "英語でもよくて、中継と暗号化があればいいなら、bitchat mesh",
+              "en": "If English is fine and you just want relaying and encryption, bitchat mesh"
+            },
+            {
+              "ja": "登録なしで日本語で使えて、1対1の本文を中継の人に読ませたくないなら、RelayChat",
+              "en": "If you want no sign-up, a Japanese interface, and private messages that relaying phones can't read, RelayChat"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "ja": "相手もアプリを入れている必要がありますか？",
+        "en": "Does the other person need the app too?"
+      },
+      "a": {
+        "ja": "はい。4本とも、同じアプリを入れている人どうしでしかつながりません。圏外になる前に一緒に入れておいてください。",
+        "en": "Yes. All four only connect people who have the same app, so install it together before you lose signal."
+      }
+    },
+    {
+      "q": {
+        "ja": "どのくらい離れていても届きますか？",
+        "en": "How far can messages reach?"
+      },
+      "a": {
+        "ja": "Bluetoothなので近くの人までです。RelayChatは間にいる人のスマホを経由すると少し遠くまで届きますが、届く距離は障害物や環境で変わります。",
+        "en": "It's Bluetooth, so only people nearby. RelayChat can reach a bit farther by hopping through other phones in between, but the range changes with obstacles and surroundings."
+      }
+    },
+    {
+      "q": {
+        "ja": "Androidの人とも話せますか？",
+        "en": "Can I chat with Android users?"
+      },
+      "a": {
+        "ja": "RelayChatはiPhone専用で、Android版はありません。ほかの3本のAndroid版は、説明文には書かれていませんでした。",
+        "en": "RelayChat is iPhone only, with no Android version. The other three descriptions don't mention Android."
+      }
+    }
+  ],
+  "closing": {
+    "ja": "RelayChatは近くに使う人が増えるほど遠くまで届くので、家族や仲間と一緒に入れてもらえるとうれしいです📡",
+    "en": "RelayChat reaches farther the more people nearby are using it, so I'd be happy if you set it up with your family or friends 📡"
+  },
+  "notes": {
+    "ja": "各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。災害のときの連絡の方法は、自治体や携帯会社の案内も確かめてください。",
+    "en": "Features and rating counts were checked against each app's App Store description on November 15, 2026, and may change with updates. For contacting people in a disaster, also check guidance from your local government and carrier."
+  },
+  "illustration": {
+    "scene": "キャンプ場の夜。テントの前で、キャラがスマホを持ち、少し離れた木の向こうにいる色ちがいの丸い仲間に向けて、小さな光の粒をぽんと送っている。光の粒は途中で別の仲間のスマホを1つ経由して届いている。空の電波のアンテナの形は灰色に消えている。",
+    "alt": {
+      "ja": "電波の無いキャンプ場で、仲間のスマホを経由して光の粒を届けるキャラクター",
+      "en": "The character at a campsite with no signal, sending a dot of light that hops through a friend's phone to reach another"
+    }
+  }
+}

@@ -1,0 +1,391 @@
+{
+  "slug": "regulator-overhaul-reminder-apps",
+  "date_published": "2026-11-15",
+  "date_updated": "2026-11-15",
+  "search_phrase": {
+    "ja": "レギュレーター オーバーホール 頻度",
+    "en": "regulator service reminder app"
+  },
+  "evidence": "2026-11-15 に Google の検索候補で「レギュレーター オーバーホール」を引くと、10件の中に「頻度」「期間」「料金」が並んだ。「bcd オーバーホール」でも6件中に「頻度」が出た。「ダイビング 器材 管理」は候補0件で、悩みは器材の管理ではなく整備の時期として打たれている。同じ日に App Store で「レギュレーター オーバーホール」を検索すると2本だけで、そのうち1本が僕のDiveKeep。「ダイビング 器材」でも整備の時期を管理するアプリは3本で、どれも評価は0件だった。",
+  "title": {
+    "ja": "レギュレーターのオーバーホール時期を忘れないアプリ3選",
+    "en": "3 Apps That Remind You When Your Regulator Needs a Service"
+  },
+  "description": {
+    "ja": "ダイビング器材のオーバーホールや点検の時期を知らせるアプリを3本比べました。本数と日数の数え方、通知、タンク検査、無料の範囲の違いをまとめています。DiveKeepの作者が書いています。",
+    "en": "I compared three iPhone apps that remind you when your dive gear is due for a service: how they count dives and days, notifications, tank inspections, and what's free. Written by the maker of DiveKeep."
+  },
+  "excerpt": {
+    "ja": "本数と日数の数え方、通知、タンク検査、無料の範囲で3本を比べました。DiveKeepを作った僕が、自分のアプリも入れて書いています。",
+    "en": "Three apps compared on counting dives and days, notifications, tank inspections, and what's free. I made DiveKeep, and it's one of the three."
+  },
+  "category": {
+    "ja": "アプリの選び方",
+    "en": "App guides"
+  },
+  "reading_minutes": 4,
+  "author": {
+    "name": {
+      "ja": "續橋 涼",
+      "en": "Ryo Tsuzukihashi"
+    },
+    "handle": "tsuzuki817",
+    "bio": {
+      "ja": "2016年から個人でiPhoneアプリを作っていて、いま81本がApp Storeにあります。DiveKeepの作者です。",
+      "en": "I've been making iPhone apps on my own since 2016, and 81 of them are on the App Store right now. I made DiveKeep."
+    },
+    "url": "https://tsuzukit.com/about/",
+    "same_as": [
+      "https://x.com/tsuzuki817"
+    ]
+  },
+  "tldr": {
+    "ja": "オーバーホールの時期は、前回からのダイブ本数と日数を数えてくれるアプリに任せると忘れません。お金をかけずに使いたいならServiceDeco、器材の台帳も作りたいならダイビング器材ノート。潜ったあとの真水洗いまで知らせてほしい人は、僕が作ったDiveKeepも見てみてください。",
+    "en": "The easiest way not to forget a service is an app that counts dives and days since the last one. If you don't want to pay anything, ServiceDeco. If you also want a full inventory of your gear, Dive Gear Note. If you'd like a reminder to rinse your gear in fresh water after every dive too, take a look at DiveKeep, which I made."
+  },
+  "disclosure": {
+    "ja": "この記事は、DiveKeepを作った僕が書いています。ほかの2本は知らない開発者さんのアプリで、お金も何ももらっていません。比べた中身は、各アプリのApp Storeの説明文と評価の件数です（2026年11月15日時点）。",
+    "en": "I made DiveKeep, and I wrote this article. The other two apps are by developers I don't know, and I haven't received money or anything else from them. Everything compared here comes from each app's App Store description and rating count as of November 15, 2026."
+  },
+  "own_app": "6784748590",
+  "app_category": "UtilitiesApplication",
+  "apps": [
+    {
+      "id": "6784748590",
+      "name": {
+        "ja": "DiveKeep 器材ケア管理",
+        "en": "DiveKeep: Scuba Gear Care"
+      },
+      "short": {
+        "ja": "DiveKeep",
+        "en": "DiveKeep"
+      },
+      "developer": "Ryo Tsudukihashi",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/34/e0/1e/34e01ed4-ced4-2213-0766-61b2e83ab038/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6784748590",
+      "android_url": null,
+      "rating_count": 0
+    },
+    {
+      "id": "6791955576",
+      "name": {
+        "ja": "ダイビング器材ノート",
+        "en": "Dive Gear Note"
+      },
+      "short": {
+        "ja": "ダイビング器材ノート",
+        "en": "Dive Gear Note"
+      },
+      "developer": "towa imamoto",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/25/5f/67/255f6710-af8e-119c-0be2-0c0845ac833e/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6791955576",
+      "android_url": null,
+      "rating_count": 0
+    },
+    {
+      "id": "6777115227",
+      "name": {
+        "ja": "ServiceDeco: Dive Gear Service",
+        "en": "ServiceDeco: Dive Gear Service"
+      },
+      "short": {
+        "ja": "ServiceDeco",
+        "en": "ServiceDeco"
+      },
+      "developer": "Perpetio OU",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/74/da/dc/74dadcb0-ade6-7eea-24d4-886c2f11c6f1/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "store_url": "https://apps.apple.com/jp/app/id6777115227",
+      "android_url": null,
+      "rating_count": 0
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ja": "3本をざっくり比べる",
+        "en": "The three apps at a glance"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "3本とも、ダイブの本数と日数の両方で時期を数えます。違いが出るのは、通知のタイミングと、無料でどこまで使えるかです。",
+            "en": "All three count both dives and days. Where they differ is when they notify you and how much you can do for free."
+          }
+        },
+        {
+          "type": "table",
+          "head": [
+            {
+              "ja": "アプリ",
+              "en": "App"
+            },
+            {
+              "ja": "評価の件数",
+              "en": "Ratings"
+            },
+            {
+              "ja": "本数と日数",
+              "en": "Dives and days"
+            },
+            {
+              "ja": "通知",
+              "en": "Notifications"
+            },
+            {
+              "ja": "タンクの検査",
+              "en": "Tank inspections"
+            },
+            {
+              "ja": "無料の範囲",
+              "en": "Free version"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ja": "DiveKeep（僕のアプリ）",
+                "en": "DiveKeep (my app)"
+              },
+              {
+                "ja": "0件",
+                "en": "0"
+              },
+              {
+                "ja": "項目ごとに本数か日数",
+                "en": "Dives or days, per item"
+              },
+              {
+                "ja": "3日前、前日、当日。過ぎたら済ませるまで毎日",
+                "en": "3 days before, the day before, on the day, then daily until done"
+              },
+              {
+                "ja": "目視点検と耐圧検査",
+                "en": "Visual and hydrostatic"
+              },
+              {
+                "ja": "器材1つ、項目3つまで",
+                "en": "1 piece of gear, 3 items"
+              }
+            ],
+            [
+              {
+                "ja": "ダイビング器材ノート",
+                "en": "Dive Gear Note"
+              },
+              {
+                "ja": "0件",
+                "en": "0"
+              },
+              {
+                "ja": "前回から何年と何本の両方",
+                "en": "Both years and dives since the last service"
+              },
+              {
+                "ja": "1か月前と当日。本数に届いたときも",
+                "en": "1 month before and on the day, plus when you hit the dive count"
+              },
+              {
+                "ja": "耐圧検査",
+                "en": "Hydrostatic"
+              },
+              {
+                "ja": "器材3点まで",
+                "en": "Up to 3 pieces of gear"
+              }
+            ],
+            [
+              {
+                "ja": "ServiceDeco",
+                "en": "ServiceDeco"
+              },
+              {
+                "ja": "0件",
+                "en": "0"
+              },
+              {
+                "ja": "日数、本数、早いほうから選べる",
+                "en": "Days, dives, or whichever comes first"
+              },
+              {
+                "ja": "期限が近づいたら。時期は説明文に記載なし",
+                "en": "When it's getting close. Timing not mentioned"
+              },
+              {
+                "ja": "目視点検と耐圧検査",
+                "en": "Visual and hydrostatic"
+              },
+              {
+                "ja": "永久無料と説明文にある",
+                "en": "Described as free forever"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "1本ずつ見ていく",
+        "en": "Each app, one by one"
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "id": "6784748590"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "レギュレーターのオーバーホールやOリングの点検は潜った本数で、BCDの点検やダイコンの電池は日数で数えます。ダイブを記録すると本数が足されて、あと何ダイブ、あと何日と出ます。",
+            "en": "Regulator services and O-ring checks are counted by dives, while BCD checks and dive computer batteries are counted by days. Log a dive and it adds to the count, so you see how many dives or days are left."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "真水洗いは1ダイブごとの項目なので、ダイブを記録すると、洗ったと記録するまで毎朝知らせます。オーバーホールの目安は最初は100本にしてありますが、メーカーやショップの指定に合わせて変えられます。",
+            "en": "The fresh-water rinse is set to every single dive, so once you log a dive it reminds you every morning until you log the rinse. The regulator service starts at 100 dives, but you can change it to match your manufacturer or dive shop."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "無料だと器材1つ、項目3つまでです。最初に真水洗い、レギュレーターのオーバーホール、ダイコンの電池交換の3つが入ります。器材を増やすのはプレミアムで、iPhone専用です。",
+            "en": "The free version covers one piece of gear and up to 3 items. It starts with fresh-water rinse, regulator service, and dive computer battery. More gear needs Premium. It's iPhone only."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6791955576"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "前回のオーバーホールから何年と何本の両方で目安を見て、1か月前と当日に知らせます。本数に届いたときも通知が来ます。レギュレーターは1年か100本のように、種類ごとの周期を最初に出してくれます。",
+            "en": "It tracks both years and dives since the last service, and notifies you a month before and on the day. It also lets you know when you reach the dive count. It suggests a standard interval for each type of gear, like 1 year or 100 dives for a regulator."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "製造番号や購入日も残せて、器材の台帳としても使えます。無料で器材3点まで、それより多いと月額か買い切りのプレミアムです。",
+            "en": "You can also store serial numbers and purchase dates, so it works as an inventory of your gear. Up to 3 pieces of gear are free, and more needs the monthly or one-time Premium."
+          }
+        },
+        {
+          "type": "app",
+          "id": "6777115227"
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "日数、ダイブ数、どちらか早いほうの3つから選べます。両方に周期を入れておくと、先に届いたほうで知らせます。O2セルやリブリーザーにも対応していて、テクニカルダイビングをする人向けの作りですね。",
+            "en": "You can choose days, dives, or whichever comes first. Set both, and it notifies you when either one is reached. It also handles O2 cells and rebreathers, so it's built with technical divers in mind."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "タンクの目視点検と耐圧検査は、日本、アメリカ、ヨーロッパの決まりに合わせたプリセットがあります。説明文には永久無料と書いてあって、記録はCSVで書き出せます。",
+            "en": "For tank visual and hydrostatic inspections, it has presets that follow the rules in Japan, the US, and Europe. The description says it's free forever, and you can export your log as CSV."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "アプリを入れたくないなら",
+        "en": "If you'd rather not install an app"
+      },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "ja": "オーバーホールに出したお店で、次の時期を控えてもらうのが確実です。ログブックの最後のページに、前回の日付とそのときの本数を書いておく手もあります。",
+            "en": "The surest way is to ask the shop that services your gear to note when the next one is due. You can also write the last service date and your dive count on the back page of your logbook."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "ja": "日数だけならiPhoneのリマインダーでも足ります。本数で決まる整備は、潜るたびに数え直すことになるので、アプリのほうが楽です。",
+            "en": "For anything based on time, the iPhone Reminders app is enough. Anything based on dives means recounting every time you go diving, which an app does for you."
+          }
+        }
+      ]
+    },
+    {
+      "heading": {
+        "ja": "どれを選ぶか",
+        "en": "Which one to pick"
+      },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            {
+              "ja": "お金をかけずに、早いほうで知らせてほしいなら、ServiceDeco",
+              "en": "If you don't want to pay and want a reminder at whichever comes first, ServiceDeco"
+            },
+            {
+              "ja": "製造番号や購入日も含めて器材の台帳を作りたいなら、ダイビング器材ノート",
+              "en": "If you want an inventory with serial numbers and purchase dates, Dive Gear Note"
+            },
+            {
+              "ja": "潜ったあとの真水洗いまで、済ませるまで毎朝言ってほしいなら、DiveKeep",
+              "en": "If you want reminders down to rinsing after each dive, repeated every morning until you do it, DiveKeep"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "ja": "レギュレーターのオーバーホールは何本ごとですか？",
+        "en": "How many dives between regulator services?"
+      },
+      "a": {
+        "ja": "メーカーや器材によって違います。取扱説明書を見るか、整備をお願いしているダイビングショップで聞いてください。3本とも周期は自分で変えられます。",
+        "en": "It depends on the manufacturer and the gear. Check the manual or ask the dive shop that services it. All three apps let you change the interval yourself."
+      }
+    },
+    {
+      "q": {
+        "ja": "無料で使えますか？",
+        "en": "Are they free?"
+      },
+      "a": {
+        "ja": "3本とも無料で入れられます。DiveKeepとダイビング器材ノートは、登録できる器材の数を増やすと有料です。",
+        "en": "All three are free to download. DiveKeep and Dive Gear Note charge for registering more gear."
+      }
+    },
+    {
+      "q": {
+        "ja": "ダイブログのアプリと何が違いますか？",
+        "en": "How is this different from a dive log app?"
+      },
+      "a": {
+        "ja": "ログのアプリは潜った記録が中心です。この3本は、器材の整備の時期を知らせるのが中心です。",
+        "en": "Dive log apps are about recording your dives. These three are about reminding you when your gear needs servicing."
+      }
+    }
+  ],
+  "closing": {
+    "ja": "DiveKeepはまだ評価が0件なので、潜ったついでに感想を聞かせてもらえたらうれしいです🐢",
+    "en": "DiveKeep doesn't have any ratings yet, so I'd love to hear from you after your next dive 🐢"
+  },
+  "notes": {
+    "ja": "各アプリの機能と評価の件数は、2026年11月15日にApp Storeの説明文から確かめたものです。アップデートで変わることがあります。DiveKeepの機能はアプリのコードで確かめました。器材の点検と整備は、メーカーの指定と認定されたサービス、指導団体の指針に従ってください。",
+    "en": "Features and rating counts were checked against each app's App Store description on November 15, 2026, and may change with updates. DiveKeep's features were checked against the app's own code. Follow your manufacturer's instructions, an authorized service center, and your training agency's guidelines for inspecting and servicing your gear."
+  },
+  "illustration": {
+    "scene": "ダイビングショップの前の水場。ウェットスーツ姿のキャラが、レギュレーターをシャワーの真水で洗っている。横に置いたスマホ（文字なし）から小さな泡の形の合図が出ていて、キャラはそれを見てうなずいている。",
+    "alt": {
+      "ja": "スマホの合図を見ながら、レギュレーターを真水で洗うキャラクター",
+      "en": "The character in a wetsuit rinsing a regulator with fresh water, nodding at a signal from their phone"
+    }
+  }
+}
