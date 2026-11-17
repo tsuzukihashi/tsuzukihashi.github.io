@@ -571,9 +571,9 @@ HEAD_TEMPLATE = """<!DOCTYPE html>
       gtag('config', 'G-QERPQ1EGLH');
     </script>
 
-    <!-- Google AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8240751277462688"
-        crossorigin="anonymous"></script>
+    <!-- Google AdSense（広告は本文の .ad-slot にだけ出す。docs/ads.md） -->
+    <meta name="google-adsense-account" content="ca-pub-8240751277462688">
+    <script src="/assets/js/ads.js" defer></script>
 
     <!-- CSS -->
     <link rel="stylesheet" href="/assets/css/style.css">
@@ -822,6 +822,8 @@ def build_article(i, m):
             <h1>{_t("今月のアプリ別ハイライト", "This month's highlights by app")}</h1>
 {highlights_html}
 
+            <div class="ad-slot" data-ad="mid"></div>
+
             <h1>{_t("分析", "Analysis")}</h1>
             <div class="i18n-ja">
 {m['analysis']}
@@ -838,6 +840,8 @@ def build_article(i, m):
 
             <p>{_t(m['closing'], en_usd(en['closing'], ym))}</p>
             <p>{_t("それでは、また来月の報告で。", "See you in next month's report.")}</p>
+
+            <div class="ad-slot" data-ad="end"></div>
 
 {details_html}
 

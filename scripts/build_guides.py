@@ -271,6 +271,9 @@ def render_body(guide, lang):
         parts.append(f'            <h2>{esc(section["heading"][lang])}</h2>')
         for block in section['blocks']:
             parts.append(render_block(block, g['apps'], g['own_app'], lang))
+    # 広告は1本に1つだけ。比べ終えて「どれを選ぶか」まで読んだあと、よくある質問の手前に置く。
+    # アプリのカードの並びの中には置かない（広告をおすすめのアプリと取り違えないように）。docs/ads.md
+    parts.append('            <div class="ad-slot" data-ad="end"></div>')
     parts.append(f'            <h2>{labels["faq"]}</h2>')
     parts.append('            <dl class="guide-faq">')
     for item in g['faq']:
@@ -381,9 +384,9 @@ def render_page(guide):
       gtag('config', 'G-QERPQ1EGLH');
     </script>
 
-    <!-- Google AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8240751277462688"
-        crossorigin="anonymous"></script>
+    <!-- Google AdSense（広告は本文の .ad-slot にだけ出す。docs/ads.md） -->
+    <meta name="google-adsense-account" content="ca-pub-8240751277462688">
+    <script src="/assets/js/ads.js" defer></script>
 
     <!-- CSS -->
     <link rel="stylesheet" href="/assets/css/style.css">
@@ -568,9 +571,8 @@ def render_hub(guides):
       gtag('config', 'G-QERPQ1EGLH');
     </script>
 
-    <!-- Google AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8240751277462688"
-        crossorigin="anonymous"></script>
+    <!-- Google AdSense（持ち主の確認だけ。このページに広告は出さない。docs/ads.md） -->
+    <meta name="google-adsense-account" content="ca-pub-8240751277462688">
 
     <script type="application/ld+json">
 {ld}

@@ -224,29 +224,29 @@ tsuzuki817.github.io/
 
 ## Google AdSense
 
-以下のGoogle AdSenseコードをすべてのページの`<head>`セクションに含めてください。
+**2026-11-17 に承認。広告はブログの読み物にだけ、本文の区切りに自分で置く。自動広告は使わない（管理画面でオフ）。**
+出すページ・出さないページ・置き方の決まりは **`docs/ads.md`** にある。広告の入るページを作る・直す前に読む。
+
+### 新規ページの `<head>`（Google Analyticsタグの直後）
+
+広告を出さないページ（トップ・ポートフォリオ・規約・アプリのページ・アプリ紹介の記事・一覧など、ほとんど全部）:
 
 ```html
-<!-- Google AdSense -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8240751277462688"
-    crossorigin="anonymous"></script>
+<!-- Google AdSense（持ち主の確認だけ。このページに広告は出さない。docs/ads.md） -->
+<meta name="google-adsense-account" content="ca-pub-8240751277462688">
 ```
 
-### 重要：新規ページ作成時の必須要件
+広告を出す読み物（ガイド・収益公開・開発記など）は、上の meta に加えて `ads.js` を読み、本文の見出しの手前に目印を置く:
 
-**すべての新規HTMLページには、Google Analyticsタグの直後にGoogle AdSenseコードを追加してください：**
+```html
+<script src="/assets/js/ads.js" defer></script>
+...
+<div class="ad-slot" data-ad="mid"></div>  <!-- 記事の途中 -->
+<div class="ad-slot" data-ad="end"></div>  <!-- 本文の終わり -->
+```
 
-1. **配置場所：**
-   - `<head>`セクション内
-   - Google Analyticsタグの直後
-   - `</head>`タグの前
-
-2. **対象となるページ：**
-   - 新規ブログ記事（blog/posts/）
-   - 新規アプリ詳細ページ（portfolio/apps/）
-   - その他すべての新規HTMLページ
-
-**このタグの追加を忘れると、広告が表示されなくなるため、新規ページ作成時は必ず確認してください。**
+- **`adsbygoogle.js` を `<head>` に直接書かない。** 書いたページは自動広告の対象になり、規約やトップにも広告が出るようになる
+- 1記事に2つまで。アプリのカードの並び・App Store へのボタンの隣・最初の画面には置かない
 
 ## ブログ記事のイラスト
 

@@ -999,3 +999,46 @@
   font-size: 0.9375rem;
   margin-top: 6px;
 }
+
+/* ========== 記事の広告枠 ========== */
+/* 中身は /assets/js/ads.js が入れる。置き場所の決まりは docs/ads.md。
+   本文のカード（墨色の枠とずらした影）と取り違えないよう、枠も影も付けない。
+   生成りの地に「広告」の札だけを置いて、本文とは別のものだと分かるようにする。 */
+.ad-slot[hidden] {
+  display: none !important;
+}
+
+.ad-slot-box {
+  margin: var(--spacing-lg, 3rem) 0;
+  padding: 10px 12px 14px;
+  background: var(--color-surface-2, #efe9dd);
+  border-radius: var(--radius-lg, 14px);
+}
+
+.ad-slot-label {
+  margin: 0 0 10px;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.08em;
+  color: var(--color-secondary, #6c6356);
+}
+
+/* 読み込み中に本文が跳ねないよう、いちばん小さい長方形の高さだけ先に取っておく */
+.ad-slot-box ins.adsbygoogle {
+  display: block;
+  min-height: 250px;
+}
+
+/* localhost で出す大きさの見本 */
+.ad-slot-sample {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 336px;
+  max-width: 100%;
+  height: 280px;
+  margin: 0 auto;
+  background: repeating-linear-gradient(45deg, #e4ddcf 0 10px, #ebe5d8 10px 20px);
+  color: var(--color-text-light, #9a8f7e);
+  font-size: 12px;
+}
