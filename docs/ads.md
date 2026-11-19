@@ -105,6 +105,7 @@ git ls-files '*.html' | grep -v '^docs/' | xargs grep -l 'adsbygoogle.js'
 | URL | ブロックした日 | 理由 |
 |---|---|---|
 | kinzui.site | 2026-11-18 | 「次へ」と矢印のボタンだけの広告。記事の次のページへ進むボタンに見える |
+| searchseekly.com | 2026-11-20 | Seekly Private Search の「ダウンロード」ボタン型の広告（Mac用拡張機能）。App Store のバッジの近くで本物のボタンと見分けにくい |
 
 広告主の URL は、本番の記事で広告の枠（iframe）のリンクにある `adurl=` から読む。広告を押して確かめるのは AdSense のポリシー違反なので押さない。
 
@@ -123,3 +124,5 @@ git ls-files '*.html' | grep -v '^docs/' | xargs grep -l 'adsbygoogle.js'
 
 - 2026-11-18 18:47 と 22:04 に広告レビュー センターを見たが、どちらも0件（ステータスは審査前・許可済み・ブロック済みの3つから1つを選ぶ形で、外せない。「Seekly」の検索も0件）
 - 2026-11-20 7:36 に収益公開（2026年8月）の記事を開くと、途中と終わりの2つの枠がどちらも同じ Seekly の広告だった（広告の ID・広告主名・`cdn.bidbrain.app` は 11-18 と同じ）。枠の中にあるリンクは広告の読み込み先と `adclick.g.doubleclick.net` だけで、行き先のドメインは今回も書かれていない
+- 2026-11-20、りょうくんから行き先の URL（`https://hi.searchseekly.com/start?...&utm_source=adx_ext_download_jp_seekly__wide1...`）をもらった。`utm_source` の ID が枠の中の広告の ID と同じなので、この広告の行き先と分かる。広告主の URL に `searchseekly.com` を足し、読み直して「ブロック済み」を確かめた
+- 外部の買い手から入る広告に、広告主の URL のブロックが効くかはまだ確かめていない。次にこの広告が出たら、本番の記事の枠の中を読んで（押さずに）、Seekly が消えたかを見る
