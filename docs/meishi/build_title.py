@@ -10,13 +10,13 @@ import os
 from build_kids import FRONT as _F, KCSS, TITLE
 
 # 表は A に決めたので、見比べは「代表」を外した形から作る
-FRONT = _F.replace(TITLE, '').replace('left:0; top:11mm;', 'left:0; top:12mm;')
+FRONT = _F.replace(TITLE, '')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 
 NAME = """<div style="font-family:'RocknRoll One'; font-weight:400; font-size:6mm; letter-spacing:.1em; color:var(--ink);">續橋 涼</div>"""
 ROLE = """<div class="en" style="margin-top:.5mm; font-weight:700; font-style:italic; font-size:2.2mm; letter-spacing:.08em; color:var(--purple);">iOS DEVELOPER &amp; CREATOR</div>"""
-BLOCK_TOP = '<div style="position:absolute; left:0; top:12mm;">'
+BLOCK_TOP = '<div style="position:absolute; left:0; top:8.8mm;">'
 LOGO_IMG = '<img src="../../assets/images/logo/tsuzukit-wordmark.svg" style="height:5mm">'
 for s in (NAME, ROLE, BLOCK_TOP, LOGO_IMG):
     assert s in FRONT, s
@@ -26,7 +26,6 @@ SMALL = "font-family:'Noto Sans JP'; font-weight:700; letter-spacing:.2em; color
 VARIANTS = [
     ("今", "肩書きは iOS DEVELOPER &amp; CREATOR だけ", FRONT),
     ("A", "名前の上に小さく「代表」", FRONT
-        .replace(BLOCK_TOP, '<div style="position:absolute; left:0; top:10.4mm;">')
         .replace(NAME, f'<div style="{SMALL} font-size:2.2mm; margin-bottom:.6mm;">代表</div>' + NAME)),
     ("B", "名前の左に小さく「代表」", FRONT
         .replace(NAME, f'<div style="display:flex; align-items:baseline; gap:2mm;"><span style="{SMALL} font-size:2.3mm;">代表</span>{NAME}</div>')),
