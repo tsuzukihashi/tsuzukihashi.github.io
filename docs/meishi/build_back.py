@@ -82,8 +82,8 @@ list6 = "".join(f"""
       <div style="display:flex; align-items:center; gap:1.8mm;">
         {icon(b, 6.4)}
         <div>
-          <div class="jp" style="font-weight:700; font-size:1.95mm; line-height:1.3; color:var(--ink); white-space:nowrap;">{n}</div>
-          <div class="jp" style="font-weight:500; font-size:1.7mm; line-height:1.35; color:var(--muted); white-space:nowrap;">{d}</div>
+          <div class="jp" style="font-weight:700; font-size:1.95mm; line-height:1.2; color:var(--ink); white-space:nowrap;">{n}</div>
+          <div class="jp" style="margin-top:.7mm; font-weight:500; font-size:1.7mm; line-height:1.2; color:var(--muted); white-space:nowrap;">{d}</div>
         </div>
       </div>""" for b, n, d in PICKS)
 G2_BACK = g_card(
