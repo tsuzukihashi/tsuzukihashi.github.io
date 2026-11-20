@@ -1,0 +1,488 @@
+[
+ {
+  "name": "旅行思い出マップ - 旅の記憶を、地図に描く",
+  "bundle": "com.tsuzuki817.OmoideMap",
+  "rc": 784,
+  "file": "parts/icons/OmoideMap.png"
+ },
+ {
+  "name": "うんちくん AI健康記録&うんトモ",
+  "bundle": "com.tsuzukit.PoopCounter",
+  "rc": 578,
+  "file": "parts/icons/PoopCounter.png"
+ },
+ {
+  "name": "流れるメモ帳",
+  "bundle": "com.tsuzuki817.pip",
+  "rc": 473,
+  "file": "parts/icons/pip.png"
+ },
+ {
+  "name": "SkyCode",
+  "bundle": "com.tsuzuki817.ColorCodeSky",
+  "rc": 234,
+  "file": "parts/icons/ColorCodeSky.png"
+ },
+ {
+  "name": "推しアイランド",
+  "bundle": "com.tsuzukit.OshiIsland",
+  "rc": 79,
+  "file": "parts/icons/OshiIsland.png"
+ },
+ {
+  "name": "PictIn",
+  "bundle": "com.tsuzuki817.pipImage",
+  "rc": 44,
+  "file": "parts/icons/pipImage.png"
+ },
+ {
+  "name": "もくもく - 読書銀行・読んだ本が貯まる読書記録",
+  "bundle": "com.tsuzuki817.BookBank",
+  "rc": 37,
+  "file": "parts/icons/BookBank.png"
+ },
+ {
+  "name": "PIPMP",
+  "bundle": "com.tsuzuki817.emp",
+  "rc": 27,
+  "file": "parts/icons/emp.png"
+ },
+ {
+  "name": "WidgetQiita",
+  "bundle": "com.tsuzuki817.qiita-widget",
+  "rc": 17,
+  "file": "parts/icons/qiita-widget.png"
+ },
+ {
+  "name": "フチドリ！ ~背景透過と縁取り~",
+  "bundle": "com.tsuzuki817.fuchidori",
+  "rc": 16,
+  "file": "parts/icons/fuchidori.png"
+ },
+ {
+  "name": "AlwaysOnTimer　- いつでもタイマー",
+  "bundle": "com.tsuzuki817.timerpip",
+  "rc": 15,
+  "file": "parts/icons/timerpip.png"
+ },
+ {
+  "name": "ゼリーセイムパズル",
+  "bundle": "com.tsuzuki817.jellysamepuzzle",
+  "rc": 10,
+  "file": "parts/icons/jellysamepuzzle.png"
+ },
+ {
+  "name": "猫背改善と姿勢リマインダー：猫背は猫だけで充分にゃ。",
+  "bundle": "com.tsuzukit.SeboneReminder",
+  "rc": 9,
+  "file": "parts/icons/SeboneReminder.png"
+ },
+ {
+  "name": "バースデームーン",
+  "bundle": "com.tsuzuki817.birthdaymoon",
+  "rc": 9,
+  "file": "parts/icons/birthdaymoon.png"
+ },
+ {
+  "name": "めくるん - 日めくりカレンダー",
+  "bundle": "com.tsuzukit.Mekulun",
+  "rc": 8,
+  "file": "parts/icons/Mekulun.png"
+ },
+ {
+  "name": "ながらカウンター ~別のアプリを使っていてもカウントできる~",
+  "bundle": "com.tsuzuki817.pipcounter",
+  "rc": 7,
+  "file": "parts/icons/pipcounter.png"
+ },
+ {
+  "name": "TicketMania",
+  "bundle": "com.tsuzuki817.TicketMania",
+  "rc": 6,
+  "file": "parts/icons/TicketMania.png"
+ },
+ {
+  "name": "スワイポン - スワイプで写真と動画を簡単整理",
+  "bundle": "com.tsuzuki817.SwipeClean",
+  "rc": 4,
+  "file": "parts/icons/SwipeClean.png"
+ },
+ {
+  "name": "フォトガード",
+  "bundle": "com.tsuzuki817.PhotoGuard",
+  "rc": 4,
+  "file": "parts/icons/PhotoGuard.png"
+ },
+ {
+  "name": "ClockWidget ~個性豊かな時計ウィジェットアプリ~",
+  "bundle": "com.tsuzuki817.NixieTubeClockWidget",
+  "rc": 4,
+  "file": "parts/icons/NixieTubeClockWidget.png"
+ },
+ {
+  "name": "らくタグ",
+  "bundle": "com.tsuzuki817.RakuTag",
+  "rc": 4,
+  "file": "parts/icons/RakuTag.png"
+ },
+ {
+  "name": "お薬リマインダー 服用管理",
+  "bundle": "com.tsuzukit.MedicineReminder",
+  "rc": 3,
+  "file": "parts/icons/MedicineReminder.png"
+ },
+ {
+  "name": "Today -今日は令和何年で何の日？-",
+  "bundle": "com.tsuzuki817.today",
+  "rc": 3,
+  "file": "parts/icons/today.png"
+ },
+ {
+  "name": "ずんだもんの部屋 - ずんだもんに話を聴いてもらう",
+  "bundle": "com.tsuzukit.ZundamonTalk",
+  "rc": 3,
+  "file": "parts/icons/ZundamonTalk.png"
+ },
+ {
+  "name": "RelayChat-オフライン匿名Bluetoothチャット",
+  "bundle": "com.tsuzuki817.RelayChat",
+  "rc": 2,
+  "file": "parts/icons/RelayChat.png"
+ },
+ {
+  "name": "旬のお魚カレンダー",
+  "bundle": "com.tsuzuki817.SakanaCalendar",
+  "rc": 2,
+  "file": "parts/icons/SakanaCalendar.png"
+ },
+ {
+  "name": "Simple Touch The Numbers",
+  "bundle": "com.tsuzuki817.TouchTheNumbers",
+  "rc": 2,
+  "file": "parts/icons/TouchTheNumbers.png"
+ },
+ {
+  "name": "WidgetZenn",
+  "bundle": "com.tsuzuki817.zenn-widget",
+  "rc": 2,
+  "file": "parts/icons/zenn-widget.png"
+ },
+ {
+  "name": "あなたレシート レシート作成＆記録",
+  "bundle": "com.tsuzukit.AnataReceipt",
+  "rc": 2,
+  "file": "parts/icons/AnataReceipt.png"
+ },
+ {
+  "name": "Yattayo やったよボード：ToDoリスト",
+  "bundle": "com.tsuzukit.Yattayo",
+  "rc": 2,
+  "file": "parts/icons/Yattayo.png"
+ },
+ {
+  "name": "目薬リマインダー ~ EyeDrop 点眼管理 ~",
+  "bundle": "com.tsuzukit.EyeDrop",
+  "rc": 1,
+  "file": "parts/icons/EyeDrop.png"
+ },
+ {
+  "name": "FocusDrive - 集中タイマー",
+  "bundle": "com.tsuzukit.FocusDrive",
+  "rc": 1,
+  "file": "parts/icons/FocusDrive.png"
+ },
+ {
+  "name": "言の葉箱 〜大切な手紙を簡単に記録〜",
+  "bundle": "com.tsuzuki817.LetterBox",
+  "rc": 1,
+  "file": "parts/icons/LetterBox.png"
+ },
+ {
+  "name": "mono ~お迎えした喜びを分かち合うアプリ~",
+  "bundle": "com.tsuzuki817.omukae",
+  "rc": 1,
+  "file": "parts/icons/omukae.png"
+ },
+ {
+  "name": "Music Snapshot 〜あなたの音楽を一枚に〜",
+  "bundle": "com.tsuzuki817.MusicSnapshot",
+  "rc": 1,
+  "file": "parts/icons/MusicSnapshot.png"
+ },
+ {
+  "name": "π ~ Pi　円周率を楽しむアプリ",
+  "bundle": "com.tsuzuki817.pi",
+  "rc": 1,
+  "file": "parts/icons/pi.png"
+ },
+ {
+  "name": "ikaQR ~QRコードを爆速で読み込もう~",
+  "bundle": "com.tsuzuki817.ZeusBarcodeReader",
+  "rc": 1,
+  "file": "parts/icons/ZeusBarcodeReader.png"
+ },
+ {
+  "name": "コンタクト交換リマインダー LensLog",
+  "bundle": "com.tsuzukit.LensLog",
+  "rc": 1,
+  "file": "parts/icons/LensLog.png"
+ },
+ {
+  "name": "フロイト先生の夢占い｜AI夢診断",
+  "bundle": "com.tsuzukit.FreudDream",
+  "rc": 1,
+  "file": "parts/icons/FreudDream.png"
+ },
+ {
+  "name": "革靴ケア手帳 ShoeKeep",
+  "bundle": "com.tsuzukit.ShoeKeep",
+  "rc": 1,
+  "file": "parts/icons/ShoeKeep.png"
+ },
+ {
+  "name": "nokki - 音楽ジャーナル",
+  "bundle": "com.tsuzukit.nokki",
+  "rc": 1,
+  "file": "parts/icons/nokki.png"
+ },
+ {
+  "name": "Monivo 声で起こし合うアラーム",
+  "bundle": "com.tsuzukit.Monivo",
+  "rc": 1,
+  "file": "parts/icons/Monivo.png"
+ },
+ {
+  "name": "EyeMole 視線でモグラたたき",
+  "bundle": "com.tsuzukit.eyemole",
+  "rc": 1,
+  "file": "parts/icons/eyemole.png"
+ },
+ {
+  "name": "Bytebeat 1行の数式が音になる",
+  "bundle": "com.tsuzukit.Bytebeat",
+  "rc": 1,
+  "file": "parts/icons/Bytebeat.png"
+ },
+ {
+  "name": "見守りリマインダー - みまもり",
+  "bundle": "com.tsuzukit.CheckInSenior",
+  "rc": 0,
+  "file": "parts/icons/CheckInSenior.png"
+ },
+ {
+  "name": "記念日リマインダー - メモリア",
+  "bundle": "com.tsuzukit.AnniversaryQuest",
+  "rc": 0,
+  "file": "parts/icons/AnniversaryQuest.png"
+ },
+ {
+  "name": "思い出カレンダー - 1日1枚フォト日記",
+  "bundle": "com.tsuzukit.DailySnap",
+  "rc": 0,
+  "file": "parts/icons/DailySnap.png"
+ },
+ {
+  "name": "ShellLens - 貝殻AI図鑑",
+  "bundle": "com.tsuzukit.shelllens",
+  "rc": 0,
+  "file": "parts/icons/shelllens.png"
+ },
+ {
+  "name": "BeautyMed - 美容医療リマインダー",
+  "bundle": "com.tsuzukit.BeautyMed",
+  "rc": 0,
+  "file": "parts/icons/BeautyMed.png"
+ },
+ {
+  "name": "BirdLens - 野鳥AI図鑑",
+  "bundle": "com.tsuzukit.birdlens",
+  "rc": 0,
+  "file": "parts/icons/birdlens.png"
+ },
+ {
+  "name": "GeoLens - 岩石・鉱物AI図鑑",
+  "bundle": "com.tsuzukit.RockIdentifier",
+  "rc": 0,
+  "file": "parts/icons/RockIdentifier.png"
+ },
+ {
+  "name": "馬券ジェネレーター",
+  "bundle": "com.tsuzukit.HorseTicketGenerator",
+  "rc": 0,
+  "file": "parts/icons/HorseTicketGenerator.png"
+ },
+ {
+  "name": "リマインダー 記憶を呼び起こす",
+  "bundle": "com.tsuzukit.BaseReminder",
+  "rc": 0,
+  "file": "parts/icons/BaseReminder.png"
+ },
+ {
+  "name": "空想旅行カメラ - AIで世界をスナップ",
+  "bundle": "com.tsuzukit.DaydreamCamera",
+  "rc": 0,
+  "file": "parts/icons/DaydreamCamera.png"
+ },
+ {
+  "name": "Cook-it -冷蔵庫の中を撮るだけでAIレシピ提案-",
+  "bundle": "com.tsuzuki817.cook-it",
+  "rc": 0,
+  "file": "parts/icons/cook-it.png"
+ },
+ {
+  "name": "Kimochi かわいい気分日記",
+  "bundle": "com.tsuzukit.KimochiApp",
+  "rc": 0,
+  "file": "parts/icons/KimochiApp.png"
+ },
+ {
+  "name": "FlowerLens - 花AI図鑑",
+  "bundle": "com.tsuzukit.flowerlens",
+  "rc": 0,
+  "file": "parts/icons/flowerlens.png"
+ },
+ {
+  "name": "フィルター交換 HomeKeep",
+  "bundle": "com.tsuzukit.HomeKeep",
+  "rc": 0,
+  "file": "parts/icons/HomeKeep.png"
+ },
+ {
+  "name": "水槽管理・水替え通知 TankMinder",
+  "bundle": "com.tsuzukit.TankMinderApp",
+  "rc": 0,
+  "file": "parts/icons/TankMinderApp.png"
+ },
+ {
+  "name": "ワイン飲み頃管理 WineReady",
+  "bundle": "com.tsuzukit.WineReadyApp",
+  "rc": 0,
+  "file": "parts/icons/WineReadyApp.png"
+ },
+ {
+  "name": "コスメ期限管理 CosmeFresh",
+  "bundle": "com.tsuzukit.CosmeFresh",
+  "rc": 0,
+  "file": "parts/icons/CosmeFresh.png"
+ },
+ {
+  "name": "珈琲鮮度・焙煎日管理 BeanFresh",
+  "bundle": "com.tsuzukit.BeanFreshApp",
+  "rc": 0,
+  "file": "parts/icons/BeanFreshApp.png"
+ },
+ {
+  "name": "ReelKeep 釣具ケア管理",
+  "bundle": "com.tsuzukit.ReelKeep",
+  "rc": 0,
+  "file": "parts/icons/ReelKeep.png"
+ },
+ {
+  "name": "万年筆ケア PenKeep",
+  "bundle": "com.tsuzukit.PenKeep",
+  "rc": 0,
+  "file": "parts/icons/PenKeep.png"
+ },
+ {
+  "name": "包丁ケア KnifeKeep",
+  "bundle": "com.tsuzukit.KnifeKeep",
+  "rc": 0,
+  "file": "parts/icons/KnifeKeep.png"
+ },
+ {
+  "name": "パスポート期限管理 PassportAlert",
+  "bundle": "com.tsuzukit.PassportAlertApp",
+  "rc": 0,
+  "file": "parts/icons/PassportAlertApp.png"
+ },
+ {
+  "name": "腕時計コレクション WatchKeep",
+  "bundle": "com.tsuzukit.WatchKeep",
+  "rc": 0,
+  "file": "parts/icons/WatchKeep.png"
+ },
+ {
+  "name": "CarKeep 愛車メンテ管理",
+  "bundle": "com.tsuzukit.CarKeep",
+  "rc": 0,
+  "file": "parts/icons/CarKeep.png"
+ },
+ {
+  "name": "マッチボックス 集中タイマー＆習慣",
+  "bundle": "com.tsuzukit.Matchbox",
+  "rc": 0,
+  "file": "parts/icons/Matchbox.png"
+ },
+ {
+  "name": "OshiLog - 推し活ノート",
+  "bundle": "com.tsuzukit.OshiLog",
+  "rc": 0,
+  "file": "parts/icons/OshiLog.png"
+ },
+ {
+  "name": "Himekuri - 記念日カウントダウン",
+  "bundle": "com.tsuzukit.Himekuri",
+  "rc": 0,
+  "file": "parts/icons/Himekuri.png"
+ },
+ {
+  "name": "コインゲームコレクション：レトロゲーセン",
+  "bundle": "com.tsuzukit.CoinGame",
+  "rc": 0,
+  "file": "parts/icons/CoinGame.png"
+ },
+ {
+  "name": "DiveKeep 器材ケア管理",
+  "bundle": "com.tsuzukit.DiveKeep",
+  "rc": 0,
+  "file": "parts/icons/DiveKeep.png"
+ },
+ {
+  "name": "CameraKeep カメラ機材管理",
+  "bundle": "com.tsuzukit.CameraKeep",
+  "rc": 0,
+  "file": "parts/icons/CameraKeep.png"
+ },
+ {
+  "name": "BikeKeep 自転車メンテ管理",
+  "bundle": "com.tsuzukit.BikeKeep",
+  "rc": 0,
+  "file": "parts/icons/BikeKeep.png"
+ },
+ {
+  "name": "うんぐりっしゅ",
+  "bundle": "com.tsuzukit.Unglish",
+  "rc": 0,
+  "file": "parts/icons/Unglish.png"
+ },
+ {
+  "name": "パタパタ推し時計 - 推し活の置き時計ウィジェット",
+  "bundle": "com.tsuzukit.PataPataOshiDokei",
+  "rc": 0,
+  "file": "parts/icons/PataPataOshiDokei.png"
+ },
+ {
+  "name": "ZennChat: 禅の日々",
+  "bundle": "com.tsuzuki817.ZennChat",
+  "rc": 0,
+  "file": "parts/icons/ZennChat.png"
+ },
+ {
+  "name": "昆虫大戦",
+  "bundle": "com.tsuzukit.beetlewars",
+  "rc": 0,
+  "file": "parts/icons/beetlewars.png"
+ },
+ {
+  "name": "ここ押してね：スマホの使い方サポートAI",
+  "bundle": "com.tsuzukit.kokoboshi",
+  "rc": 0,
+  "file": "parts/icons/kokoboshi.png"
+ },
+ {
+  "name": "私から見たあなた",
+  "bundle": "com.tsuzukit.asiseeyou",
+  "rc": 0,
+  "file": "parts/icons/asiseeyou.png"
+ }
+]

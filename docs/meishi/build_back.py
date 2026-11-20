@@ -1,0 +1,134 @@
+#!/usr/bin/env python3
+"""裏面の作り直しの案（2026-11-20）。ぬりえの裏では「何をしている人か」が分からない、と言われたため。
+
+    python3 docs/meishi/build_back.py
+
+裏の役目: 表で名前と3人の絵を見た人が、ひっくり返して「この人はアプリを作っている人だ」と分かること。
+もらうのは仕事の相手（会社の人・開発者）。表の3人がどのアプリの子かもつながると、子どもにも話せる。
+
+- docs/meishi/sheet-back.html  表と3つの裏を並べた見比べシート
+アイコンは App Store の 512px（docs/meishi/parts/icons/。レビュー数の多い順の一覧は index.json）
+"""
+import json
+import os
+
+from build_kids import FRONT, KCSS
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+ICONS = json.load(open(os.path.join(HERE, "parts", "icons", "index.json")))
+
+CSS = KCSS + """
+.ic { display:block; border-radius:22.5%; box-shadow:0 0 0 .12mm rgba(20,17,8,.18); }
+.jp { font-family:'Noto Sans JP',sans-serif; }
+"""
+
+
+def icon(bundle_tail, size):
+    return f'<img class="ic" src="parts/icons/{bundle_tail}.png" style="width:{size}mm; height:{size}mm;">'
+
+
+# ---------- G 代表作6本 ----------
+PICKS = [
+    ("PoopCounter", "うんちくん", "うんちを記録"),
+    ("OmoideMap", "旅行思い出マップ", "行った所を塗る"),
+    ("BookBank", "もくもく", "読んだ本を貯める"),
+    ("pip", "流れるメモ帳", "画面にメモを流す"),
+    ("OshiIsland", "推しアイランド", "推しを画面に置く"),
+    ("ColorCodeSky", "SkyCode", "写真の色を数字に"),
+]
+cells = "".join(f"""
+    <div style="width:13mm; text-align:center;">
+      <div style="display:flex; justify-content:center;">{icon(b, 11.5)}</div>
+      <div class="jp" style="margin-top:1.2mm; font-weight:700; font-size:1.75mm; line-height:1.25; color:var(--ink); white-space:nowrap;">{n}</div>
+      <div class="jp" style="margin-top:.4mm; font-weight:500; font-size:1.45mm; line-height:1.3; color:var(--muted);">{d}</div>
+    </div>""" for b, n, d in PICKS)
+G_BACK = f"""
+<div class="card">
+  <div class="safe">
+    <div class="en" style="font-weight:700; font-style:italic; font-size:2.2mm; letter-spacing:.12em; color:var(--purple);">INDIE APP DEVELOPER</div>
+    <div class="jp" style="margin-top:1mm; font-weight:900; font-size:3.9mm; line-height:1.35; letter-spacing:.02em; color:var(--ink);">10年で100本以上、<br>iPhoneのアプリを作っています。</div>
+    <div style="position:absolute; left:0; right:0; top:20.5mm; display:flex; justify-content:space-between;">{cells}
+    </div>
+    <div style="position:absolute; left:0; right:0; bottom:0; display:flex; justify-content:space-between; align-items:flex-end; border-top:.2mm solid var(--line); padding-top:1.6mm;">
+      <div class="jp" style="font-weight:700; font-size:2.2mm; letter-spacing:.06em; color:var(--ink);">誰も作らないものを、まじめに作る。</div>
+      <div class="jp" style="font-weight:500; font-size:1.8mm; color:var(--muted);">ぜんぶは <span class="en" style="font-weight:700; font-size:2.1mm; letter-spacing:.04em; color:var(--ink);">tsuzukit.com</span></div>
+    </div>
+  </div>
+</div>"""
+
+# ---------- H アイコンの壁 ----------
+COLS, ROWS, SIZE, PITCH = 8, 7, 6.3, 7.45
+wall = "".join(
+    f'<div style="position:absolute; left:{4.2 + (i % COLS) * PITCH:.2f}mm; top:{4.6 + (i // COLS) * PITCH:.2f}mm;">'
+    f'{icon(ICONS[i]["file"].split("/")[-1][:-4], SIZE)}</div>'
+    for i in range(COLS * ROWS))
+H_BACK = f"""
+<div class="card">
+  {wall}
+  <div style="position:absolute; left:65.5mm; top:6mm; right:6mm; bottom:6mm;">
+    <div class="impact" style="font-size:12.5mm; line-height:.95; color:var(--ink);">100+</div>
+    <div class="impact" style="font-size:5.2mm; line-height:1; letter-spacing:.04em; color:var(--ink);">APPS</div>
+    <div class="jp" style="margin-top:2.6mm; font-weight:700; font-size:2.25mm; line-height:1.55; color:var(--ink);">10年で100本以上の<br>iPhoneアプリを、<br>ひとりで作っています。</div>
+        <div class="en" style="position:absolute; left:0; bottom:0; font-weight:700; font-size:2.1mm; letter-spacing:.04em; color:var(--ink);">tsuzukit.com</div>
+  </div>
+</div>"""
+
+# ---------- I 表の3人のアプリ ----------
+def col(chara, chara_h, ic, name, line):
+    return f"""
+    <div style="flex:1; display:flex; flex-direction:column; align-items:center; text-align:center;">
+      <div style="height:15mm; display:flex; align-items:flex-end;">{chara}</div>
+      <div style="margin-top:1.6mm;">{ic}</div>
+      <div class="jp" style="margin-top:1.2mm; font-weight:900; font-size:2.2mm; color:var(--ink);">{name}</div>
+      <div class="jp" style="margin-top:.5mm; font-weight:500; font-size:1.7mm; line-height:1.35; color:var(--muted);">{line}</div>
+    </div>"""
+
+
+mini = "".join(f'<div>{icon(x["file"].split("/")[-1][:-4], 2.9)}</div>'
+               for x in [i for i in ICONS if i["bundle"].split(".")[-1] not in ("PoopCounter", "BookBank")][:8])
+I_BACK = f"""
+<div class="card">
+  <div class="safe">
+    <div class="jp" style="font-weight:900; font-size:3.3mm; letter-spacing:.02em; color:var(--ink);">うんちくんも、もくもくも、僕のアプリの子です。</div>
+    <div class="en" style="margin-top:.6mm; font-weight:700; font-style:italic; font-size:2mm; letter-spacing:.1em; color:var(--purple);">INDIE APP DEVELOPER · 100+ APPS SINCE 2016</div>
+    <div style="position:absolute; left:0; right:0; top:10.5mm; display:flex; gap:2mm;">
+      {col('<img src="parts/unchikun-hi.png" style="height:13mm;">', 13, icon("PoopCounter", 7.5), "うんちくん", "うんちを記録するアプリ")}
+      {col('<img src="parts/mokumoku-welcome.png" style="height:14mm;">', 14, icon("BookBank", 7.5), "もくもく", "読んだ本が貯まる<br>読書の通帳")}
+      {col('<img src="parts/character-wave.svg" style="height:14.5mm;">', 14.5,
+           f'<div style="display:grid; grid-template-columns:repeat(4, 2.9mm); gap:.6mm; padding:.2mm 0;">{mini}</div>',
+           "TsuzuKit（僕）", "ほかにも100本以上。<br>ぜんぶ tsuzukit.com に")}
+    </div>
+  </div>
+</div>"""
+
+PATTERNS = [
+    ("G", "代表作の6本", "見出しで「10年で100本以上のアプリを作っている人」と言い切り、レビューの多い代表作を6本、アイコンと一言で並べる。会社の人が「何の人か」を読んで分かる", G_BACK),
+    ("H", "アイコンの壁", "公開中の81本から、レビューの多い順に56本のアイコンを並べる。読まなくても「この人はアプリをたくさん作っている」が一目で分かる。子どもも知っているアイコンを探せる", H_BACK),
+    ("I", "表の3人のアプリ", "表の3人が、それぞれどのアプリの子かを並べる。表の絵と裏がつながり、親が子どもに「うんちくんを作った人だよ」と話せる", I_BACK),
+]
+
+
+def sheet():
+    rows = [f"""
+<section class="row"><h2>表（07 自撮り・変えない）</h2>
+  <div class="pair"><figure><div class="trim">{FRONT}</div></figure></div></section>"""]
+    for key, name, why, back in PATTERNS:
+        rows.append(f"""
+<section class="row"><h2>{key}　{name}</h2><p>{why}</p>
+  <div class="pair"><figure><div class="trim">{back}</div></figure></div></section>""")
+    html = f"""<!DOCTYPE html>
+<html lang="ja"><head><meta charset="UTF-8"><title>TsuzuKit 名刺 裏面の案</title>
+<style>{CSS}
+body {{ background:#cfc9bc; padding:8mm; }}
+.wrap {{ display:grid; grid-template-columns:repeat(2, 100mm); gap:4mm 8mm; }}
+.row h2 {{ font-family:'Noto Sans JP'; font-size:4.2mm; font-weight:900; color:var(--ink); }}
+.row p {{ font-family:'Noto Sans JP'; font-size:2.5mm; line-height:1.5; color:var(--text); margin:1mm 0 2.5mm; width:96mm; }}
+.trim {{ width:91mm; height:55mm; overflow:hidden; position:relative; box-shadow:0 .6mm 2mm rgba(0,0,0,.18); margin-top:2mm; }}
+.trim > .card {{ position:absolute; left:-3mm; top:-3mm; }}
+</style></head><body><div class="wrap">{''.join(rows)}</div></body></html>"""
+    open(os.path.join(HERE, "sheet-back.html"), "w").write(html)
+
+
+if __name__ == "__main__":
+    sheet()
+    print("ok")
