@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja"><head><meta charset="UTF-8"><title>TsuzuKit 名刺 代表を足した見本</title>
+<style>@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&family=Zen+Maru+Gothic:wght@500;700;900&display=block');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Saira+Condensed:ital,wght@0,600;0,700;0,800;1,700;1,800&family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700;900&display=block');
+:root { --cream:#f6f2ea; --ink:#14110c; --text:#2a2620; --muted:#6c6356; --purple:#8b3df5; --line:rgba(20,17,8,.18); }
+* { box-sizing:border-box; margin:0; padding:0; }
+body { font-family:'Inter','Noto Sans JP',sans-serif; color:var(--text); -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+img { display:block; max-width:none; }
+/* 塗り足し込みの紙。中身は .safe（仕上がりから 3mm 内側）に置く */
+.card { position:relative; width:97mm; height:61mm; overflow:hidden; background:var(--cream); }
+.card.tate { width:61mm; height:97mm; }
+.card.ink { background:var(--ink); color:#fff; }
+.safe { position:absolute; left:6mm; top:6mm; right:6mm; bottom:6mm; }
+.en { font-family:'Saira Condensed','Inter',sans-serif; }
+.impact { font-family:'Anton','Saira Condensed',sans-serif; }
+.contact { font-size:2.3mm; line-height:1.55; letter-spacing:.01em; color:var(--text); }
+.contact b { display:inline-block; width:9mm; font-family:'Saira Condensed',sans-serif; font-weight:700; font-style:italic; font-size:2.1mm; letter-spacing:.06em; color:var(--muted); }
+.ink .contact, .ink .contact b { color:#fff; }
+.qr { width:15mm; height:15mm; }
+
+.maru { font-family:'Zen Maru Gothic','Noto Sans JP',sans-serif; }
+.chara { position:absolute; display:block; }
+/* 地を少し濃いベージュにする。もくもく（#fef7ea）がクリーム地に溶けて見えなかったため。
+   もくもくとの差 1.05 → 1.43。灰の文字はこの地で読めるよう少し濃くする */
+.card { background:#ded0b6; }
+:root { --muted:#574f43; }
+
+body { background:#cfc9bc; padding:8mm; }
+.wrap { display:grid; grid-template-columns:repeat(2, 95mm); gap:6mm 6mm; }
+figcaption { font-family:'Noto Sans JP'; font-size:2.6mm; color:var(--ink); margin-bottom:1.6mm; }
+figcaption b { font-size:3.4mm; }
+.trim { width:91mm; height:55mm; overflow:hidden; position:relative; box-shadow:0 .6mm 2mm rgba(0,0,0,.18); }
+.trim > .card { position:absolute; left:-3mm; top:-3mm; }
+</style></head><body><div class="wrap"><figure><figcaption><b>今</b>　肩書きは iOS DEVELOPER &amp; CREATOR だけ</figcaption><div class="trim">
+<div class="card">
+  <div style="position:absolute; left:45mm; top:5mm; width:44mm; height:33mm; display:flex; align-items:center; justify-content:center;"><img src="parts/collab/07-selfie.png" style="max-width:100%; max-height:100%;"></div>
+  <div class="safe">
+    <img src="../../assets/images/logo/tsuzukit-wordmark.svg" style="height:5mm">
+    <div style="position:absolute; left:0; top:12mm;">
+      <div style="font-family:'RocknRoll One'; font-weight:400; font-size:6mm; letter-spacing:.1em; color:var(--ink);">續橋 涼</div>
+      <div class="en" style="margin-top:1mm; font-weight:700; font-size:2.9mm; letter-spacing:.06em; color:var(--ink);">Ryo Tsuzukihashi</div>
+      <div class="en" style="margin-top:.5mm; font-weight:700; font-style:italic; font-size:2.2mm; letter-spacing:.08em; color:var(--purple);">iOS DEVELOPER &amp; CREATOR</div>
+    </div>
+    <div class="contact" style="position:absolute; left:0; bottom:0;">
+      <div><b>MAIL</b>ryo.tsuzukihashi@tsuzukit.com</div>
+      <div><b>WEB</b>tsuzukit.com</div>
+      <div><b>X</b>@tsuzuki817</div>
+      <div><b>GITHUB</b>tsuzukihashi</div>
+    </div>
+    <div style="position:absolute; right:0; bottom:0; text-align:center;">
+      <img class="qr" src="parts/qrfun/05-center.svg" style="width:13mm; height:13mm;">  <!-- 真ん中に TsuzuKit の顔（2026-11-20。build_qr_fun.py） -->
+      <div class="en" style="margin-top:.8mm; font-weight:700; font-size:1.8mm; letter-spacing:.06em; color:var(--muted);">tsuzukit.com</div>
+    </div>
+  </div>
+</div></div></figure><figure><figcaption><b>A</b>　名前の上に小さく「代表」</figcaption><div class="trim">
+<div class="card">
+  <div style="position:absolute; left:45mm; top:5mm; width:44mm; height:33mm; display:flex; align-items:center; justify-content:center;"><img src="parts/collab/07-selfie.png" style="max-width:100%; max-height:100%;"></div>
+  <div class="safe">
+    <img src="../../assets/images/logo/tsuzukit-wordmark.svg" style="height:5mm">
+    <div style="position:absolute; left:0; top:10.4mm;">
+      <div style="font-family:'Noto Sans JP'; font-weight:700; letter-spacing:.2em; color:var(--muted); font-size:2.2mm; margin-bottom:.6mm;">代表</div><div style="font-family:'RocknRoll One'; font-weight:400; font-size:6mm; letter-spacing:.1em; color:var(--ink);">續橋 涼</div>
+      <div class="en" style="margin-top:1mm; font-weight:700; font-size:2.9mm; letter-spacing:.06em; color:var(--ink);">Ryo Tsuzukihashi</div>
+      <div class="en" style="margin-top:.5mm; font-weight:700; font-style:italic; font-size:2.2mm; letter-spacing:.08em; color:var(--purple);">iOS DEVELOPER &amp; CREATOR</div>
+    </div>
+    <div class="contact" style="position:absolute; left:0; bottom:0;">
+      <div><b>MAIL</b>ryo.tsuzukihashi@tsuzukit.com</div>
+      <div><b>WEB</b>tsuzukit.com</div>
+      <div><b>X</b>@tsuzuki817</div>
+      <div><b>GITHUB</b>tsuzukihashi</div>
+    </div>
+    <div style="position:absolute; right:0; bottom:0; text-align:center;">
+      <img class="qr" src="parts/qrfun/05-center.svg" style="width:13mm; height:13mm;">  <!-- 真ん中に TsuzuKit の顔（2026-11-20。build_qr_fun.py） -->
+      <div class="en" style="margin-top:.8mm; font-weight:700; font-size:1.8mm; letter-spacing:.06em; color:var(--muted);">tsuzukit.com</div>
+    </div>
+  </div>
+</div></div></figure><figure><figcaption><b>B</b>　名前の左に小さく「代表」</figcaption><div class="trim">
+<div class="card">
+  <div style="position:absolute; left:45mm; top:5mm; width:44mm; height:33mm; display:flex; align-items:center; justify-content:center;"><img src="parts/collab/07-selfie.png" style="max-width:100%; max-height:100%;"></div>
+  <div class="safe">
+    <img src="../../assets/images/logo/tsuzukit-wordmark.svg" style="height:5mm">
+    <div style="position:absolute; left:0; top:12mm;">
+      <div style="display:flex; align-items:baseline; gap:2mm;"><span style="font-family:'Noto Sans JP'; font-weight:700; letter-spacing:.2em; color:var(--muted); font-size:2.3mm;">代表</span><div style="font-family:'RocknRoll One'; font-weight:400; font-size:6mm; letter-spacing:.1em; color:var(--ink);">續橋 涼</div></div>
+      <div class="en" style="margin-top:1mm; font-weight:700; font-size:2.9mm; letter-spacing:.06em; color:var(--ink);">Ryo Tsuzukihashi</div>
+      <div class="en" style="margin-top:.5mm; font-weight:700; font-style:italic; font-size:2.2mm; letter-spacing:.08em; color:var(--purple);">iOS DEVELOPER &amp; CREATOR</div>
+    </div>
+    <div class="contact" style="position:absolute; left:0; bottom:0;">
+      <div><b>MAIL</b>ryo.tsuzukihashi@tsuzukit.com</div>
+      <div><b>WEB</b>tsuzukit.com</div>
+      <div><b>X</b>@tsuzuki817</div>
+      <div><b>GITHUB</b>tsuzukihashi</div>
+    </div>
+    <div style="position:absolute; right:0; bottom:0; text-align:center;">
+      <img class="qr" src="parts/qrfun/05-center.svg" style="width:13mm; height:13mm;">  <!-- 真ん中に TsuzuKit の顔（2026-11-20。build_qr_fun.py） -->
+      <div class="en" style="margin-top:.8mm; font-weight:700; font-size:1.8mm; letter-spacing:.06em; color:var(--muted);">tsuzukit.com</div>
+    </div>
+  </div>
+</div></div></figure><figure><figcaption><b>C</b>　英語の肩書きの頭に FOUNDER</figcaption><div class="trim">
+<div class="card">
+  <div style="position:absolute; left:45mm; top:5mm; width:44mm; height:33mm; display:flex; align-items:center; justify-content:center;"><img src="parts/collab/07-selfie.png" style="max-width:100%; max-height:100%;"></div>
+  <div class="safe">
+    <img src="../../assets/images/logo/tsuzukit-wordmark.svg" style="height:5mm">
+    <div style="position:absolute; left:0; top:12mm;">
+      <div style="font-family:'RocknRoll One'; font-weight:400; font-size:6mm; letter-spacing:.1em; color:var(--ink);">續橋 涼</div>
+      <div class="en" style="margin-top:1mm; font-weight:700; font-size:2.9mm; letter-spacing:.06em; color:var(--ink);">Ryo Tsuzukihashi</div>
+      <div class="en" style="margin-top:.5mm; font-weight:700; font-style:italic; font-size:2.2mm; letter-spacing:.08em; color:var(--purple);">FOUNDER / iOS DEVELOPER &amp; CREATOR</div>
+    </div>
+    <div class="contact" style="position:absolute; left:0; bottom:0;">
+      <div><b>MAIL</b>ryo.tsuzukihashi@tsuzukit.com</div>
+      <div><b>WEB</b>tsuzukit.com</div>
+      <div><b>X</b>@tsuzuki817</div>
+      <div><b>GITHUB</b>tsuzukihashi</div>
+    </div>
+    <div style="position:absolute; right:0; bottom:0; text-align:center;">
+      <img class="qr" src="parts/qrfun/05-center.svg" style="width:13mm; height:13mm;">  <!-- 真ん中に TsuzuKit の顔（2026-11-20。build_qr_fun.py） -->
+      <div class="en" style="margin-top:.8mm; font-weight:700; font-size:1.8mm; letter-spacing:.06em; color:var(--muted);">tsuzukit.com</div>
+    </div>
+  </div>
+</div></div></figure><figure><figcaption><b>D</b>　ロゴの右に「代表」（TsuzuKit 代表と読める）</figcaption><div class="trim">
+<div class="card">
+  <div style="position:absolute; left:45mm; top:5mm; width:44mm; height:33mm; display:flex; align-items:center; justify-content:center;"><img src="parts/collab/07-selfie.png" style="max-width:100%; max-height:100%;"></div>
+  <div class="safe">
+    <div style="display:flex; align-items:flex-end; gap:2mm;"><img src="../../assets/images/logo/tsuzukit-wordmark.svg" style="height:5mm"><span style="font-family:'Noto Sans JP'; font-weight:700; letter-spacing:.2em; color:var(--muted); font-size:2.4mm; line-height:1; margin-bottom:.2mm; color:var(--ink);">代表</span></div>
+    <div style="position:absolute; left:0; top:12mm;">
+      <div style="font-family:'RocknRoll One'; font-weight:400; font-size:6mm; letter-spacing:.1em; color:var(--ink);">續橋 涼</div>
+      <div class="en" style="margin-top:1mm; font-weight:700; font-size:2.9mm; letter-spacing:.06em; color:var(--ink);">Ryo Tsuzukihashi</div>
+      <div class="en" style="margin-top:.5mm; font-weight:700; font-style:italic; font-size:2.2mm; letter-spacing:.08em; color:var(--purple);">iOS DEVELOPER &amp; CREATOR</div>
+    </div>
+    <div class="contact" style="position:absolute; left:0; bottom:0;">
+      <div><b>MAIL</b>ryo.tsuzukihashi@tsuzukit.com</div>
+      <div><b>WEB</b>tsuzukit.com</div>
+      <div><b>X</b>@tsuzuki817</div>
+      <div><b>GITHUB</b>tsuzukihashi</div>
+    </div>
+    <div style="position:absolute; right:0; bottom:0; text-align:center;">
+      <img class="qr" src="parts/qrfun/05-center.svg" style="width:13mm; height:13mm;">  <!-- 真ん中に TsuzuKit の顔（2026-11-20。build_qr_fun.py） -->
+      <div class="en" style="margin-top:.8mm; font-weight:700; font-size:1.8mm; letter-spacing:.06em; color:var(--muted);">tsuzukit.com</div>
+    </div>
+  </div>
+</div></div></figure></div></body></html>
