@@ -22,11 +22,12 @@ KCSS = CSS + """
 .chara { position:absolute; display:block; }
 """
 
-# ---------- 共通の表（大人が見る面。右半分に作った人とキャラが並ぶ） ----------
-FRONT = f"""
+# ---------- 共通の表（大人が見る面。右半分に作った人とキャラの絵） ----------
+def front(art):
+    """art: 右上の枠（左 45mm・上 5mm・幅 44mm・高さ 33mm。塗り足し込みの座標）に入れる中身"""
+    return f"""
 <div class="card">
-  <!-- 3人の絵は ChatGPT の Image で作った1枚（docs/meishi/prompt-trio.md） -->
-  <img class="chara" src="parts/trio.png" style="left:45mm; top:5mm; width:44mm;">
+  <div style="position:absolute; left:45mm; top:5mm; width:44mm; height:33mm; display:flex; align-items:center; justify-content:center;">{art}</div>
   <div class="safe">
     <img src="{LOGO}/tsuzukit-wordmark.svg" style="height:5mm">
     <div style="position:absolute; left:0; top:12mm;">
@@ -46,6 +47,10 @@ FRONT = f"""
     </div>
   </div>
 </div>"""
+
+
+# 3人の絵は ChatGPT の Image で作った1枚（docs/meishi/prompt-trio.md）
+FRONT = front('<img src="parts/trio.png" style="width:44mm;">')
 
 # ---------- D ぬりえ地図 ----------
 D_BACK = """
