@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja"><head><meta charset="UTF-8"><title>TsuzuKit 名刺 D-03-hightouch</title>
-<style>
+<style>@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&display=block');
+
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Saira+Condensed:ital,wght@0,600;0,700;0,800;1,700;1,800&family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700;900&display=block');
 :root { --cream:#f6f2ea; --ink:#14110c; --text:#2a2620; --muted:#6c6356; --purple:#8b3df5; --line:rgba(20,17,8,.18); }
 * { box-sizing:border-box; margin:0; padding:0; }
@@ -18,9 +19,12 @@ img { display:block; max-width:none; }
 .ink .contact, .ink .contact b { color:#fff; }
 .qr { width:15mm; height:15mm; }
 
-@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&display=block');
 .maru { font-family:'Zen Maru Gothic','Noto Sans JP',sans-serif; }
 .chara { position:absolute; display:block; }
+/* 地を少し濃いベージュにする。もくもく（#fef7ea）がクリーム地に溶けて見えなかったため。
+   もくもくとの差 1.05 → 1.43。灰の文字はこの地で読めるよう少し濃くする */
+.card { background:#ded0b6; }
+:root { --muted:#574f43; }
 
 @page { size:97mm 61mm; margin:0; }
 .card { page-break-after:always; }

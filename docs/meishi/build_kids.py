@@ -16,10 +16,14 @@ from build_cards import CSS, LOGO, MAIL
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 
-KCSS = CSS + """
-@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&display=block');
+# @import は CSS の先頭にしか書けない（後ろに書くと読まれない）ので、丸ゴシックは前に足す
+KCSS = "@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&display=block');\n" + CSS + """
 .maru { font-family:'Zen Maru Gothic','Noto Sans JP',sans-serif; }
 .chara { position:absolute; display:block; }
+/* 地を少し濃いベージュにする。もくもく（#fef7ea）がクリーム地に溶けて見えなかったため。
+   もくもくとの差 1.05 → 1.43。灰の文字はこの地で読めるよう少し濃くする */
+.card { background:#ded0b6; }
+:root { --muted:#574f43; }
 """
 
 # ---------- 共通の表（大人が見る面。右半分に作った人とキャラの絵） ----------
