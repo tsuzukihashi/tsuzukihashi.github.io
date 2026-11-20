@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
-"""刷る名刺（D 案・表は 07 自撮り）の入稿用 PDF を作る。文字はアウトライン（図形）にする。
+"""刷る名刺（表は 07 自撮り・裏は G 代表作の6本＋お仕事の相談）の入稿用 PDF を作る。文字はアウトライン（図形）にする。
 
-    python3 docs/meishi/build_kids.py
-    python3 docs/meishi/build_final.py
+    python3 docs/meishi/build_final.py   # 表は build_kids.py、裏は build_back.py の G_BACK を使う
 
 1. 透明のある PNG を、名刺の地の色（#ded0b6）の上に先に重ねて、透明の無い画像にする
    （透明のまま次の手順に通すと、PDF の中に 72dpi の粗い透明の型が入った）
@@ -15,12 +14,14 @@ import shutil
 import subprocess
 import tempfile
 
+from build_back import CSS, FRONT, G_BACK
+
 from PIL import Image
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 BG = (0xDE, 0xD0, 0xB6)
 CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
-FLAT = ["parts/collab/07-selfie.png", "parts/unchikun-balloons.png", "parts/mokumoku-welcome.png"]
+FLAT = ["parts/collab/07-selfie.png"]
 
 
 def flatten():
@@ -38,7 +39,12 @@ def flatten():
 
 def main():
     mapping = flatten()
-    html = open(os.path.join(HERE, "print-D.html")).read()
+    html = f"""<!DOCTYPE html>
+<html lang="ja"><head><meta charset="UTF-8"><title>TsuzuKit 名刺 入稿用</title>
+<style>{CSS}
+@page {{ size:97mm 61mm; margin:0; }}
+.card {{ page-break-after:always; }}
+</style></head><body>{FRONT}{G_BACK}</body></html>"""
     for src, dst in mapping.items():
         assert f'src="{src}"' in html, src
         html = html.replace(f'src="{src}"', f'src="{dst}"')
