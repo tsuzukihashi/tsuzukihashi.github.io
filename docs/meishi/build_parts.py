@@ -51,4 +51,5 @@ if __name__ == "__main__":
     for p in POSES:
         trace(p)
     qr("https://tsuzukit.com/", "qr-site.svg")
+    qr("https://tsuzukit.com/contact/", "qr-contact.svg")  # 裏のお仕事の相談の欄
     print("ok", sorted(os.listdir(OUT)))

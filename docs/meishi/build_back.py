@@ -47,10 +47,7 @@ WORK = """<div style="position:absolute; left:0; right:0; bottom:0; height:14.5m
         <div class="jp" style="font-weight:900; font-size:2.5mm; letter-spacing:.03em; color:var(--ink);">お仕事のご相談も、お気軽にどうぞ。</div>
         <div style="margin-top:1.2mm; display:grid; grid-template-columns:auto auto; gap:1mm 4mm; justify-content:start;">""" + asks + """</div>
       </div>
-      <div style="border-left:.2mm solid var(--line); padding-left:3mm; text-align:left;">
-        <div class="jp" style="font-weight:500; font-size:1.65mm; line-height:1.5; color:var(--muted);">表のメールか、<br>こちらから</div>
-        <div class="en" style="margin-top:.6mm; font-weight:700; font-size:2.2mm; letter-spacing:.03em; color:var(--ink);">tsuzukit.com/contact</div>
-      </div>
+      <img src="parts/qr-contact.svg" style="width:11mm; height:11mm;">  <!-- https://tsuzukit.com/contact/ -->
     </div>"""
 
 
@@ -90,7 +87,7 @@ G2_BACK = g_card(
     '<div class="jp" style="margin-top:.9mm; font-weight:900; font-size:3.15mm; letter-spacing:.01em; color:var(--ink); white-space:nowrap;">10年で100本以上、iPhoneのアプリを作っています。</div>',
     f'<div style="position:absolute; left:0; right:0; top:11.3mm; display:grid; grid-template-columns:1fr 1fr; gap:.9mm 3mm;">{list6}</div>')
 
-G_BACK = G1_BACK
+G_BACK = G2_BACK  # 2026-11-20 に G2 に決めた
 
 # ---------- H アイコンの壁 ----------
 COLS, ROWS, SIZE, PITCH = 8, 7, 6.3, 7.45
