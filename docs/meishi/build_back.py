@@ -47,7 +47,10 @@ WORK = """<div style="position:absolute; left:0; right:0; bottom:0; height:14.5m
         <div class="jp" style="font-weight:900; font-size:2.5mm; letter-spacing:.03em; color:var(--ink);">お仕事のご相談も、お気軽にどうぞ。</div>
         <div style="margin-top:1.2mm; display:grid; grid-template-columns:auto auto; gap:1mm 4mm; justify-content:start;">""" + asks + """</div>
       </div>
-      <img src="parts/qr-contact.svg" style="width:11mm; height:11mm;">  <!-- https://tsuzukit.com/contact/ -->
+      <div style="text-align:center;">  <!-- https://tsuzukit.com/contact/ -->
+        <img src="parts/qr-contact.svg" style="width:10mm; height:10mm;">
+        <div class="en" style="margin-top:.6mm; font-weight:700; font-size:1.8mm; line-height:1; letter-spacing:.06em; color:var(--muted);">contact</div>
+      </div>
     </div>"""
 
 
