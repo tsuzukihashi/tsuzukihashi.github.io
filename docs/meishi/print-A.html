@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja"><head><meta charset="UTF-8"><title>TsuzuKit 名刺 A</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Saira+Condensed:ital,wght@0,600;0,700;0,800;1,700;1,800&family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700;900&display=block');
+:root { --cream:#f6f2ea; --ink:#14110c; --text:#2a2620; --muted:#6c6356; --purple:#8b3df5; --line:rgba(20,17,8,.18); }
+* { box-sizing:border-box; margin:0; padding:0; }
+body { font-family:'Inter','Noto Sans JP',sans-serif; color:var(--text); -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+img { display:block; max-width:none; }
+/* 塗り足し込みの紙。中身は .safe（仕上がりから 3mm 内側）に置く */
+.card { position:relative; width:97mm; height:61mm; overflow:hidden; background:var(--cream); }
+.card.tate { width:61mm; height:97mm; }
+.card.ink { background:var(--ink); color:#fff; }
+.safe { position:absolute; left:6mm; top:6mm; right:6mm; bottom:6mm; }
+.en { font-family:'Saira Condensed','Inter',sans-serif; }
+.impact { font-family:'Anton','Saira Condensed',sans-serif; }
+.contact { font-size:2.3mm; line-height:1.55; letter-spacing:.01em; color:var(--text); }
+.contact b { display:inline-block; width:9mm; font-family:'Saira Condensed',sans-serif; font-weight:700; font-style:italic; font-size:2.1mm; letter-spacing:.06em; color:var(--muted); }
+.ink .contact, .ink .contact b { color:#fff; }
+.qr { width:15mm; height:15mm; }
+
+@page { size:97mm 61mm; margin:0; }
+.card { page-break-after:always; }
+</style></head><body>
+<div class="card">
+  <div class="safe">
+    <img src="../../assets/images/logo/tsuzukit-wordmark.svg" style="height:5.2mm">
+    <div style="position:absolute; left:0; top:13mm;">
+      <div style="font-family:'Noto Sans JP'; font-weight:900; font-size:6.4mm; letter-spacing:.12em; color:var(--ink);">續橋 涼</div>
+      <div class="en" style="margin-top:1.2mm; font-weight:700; font-size:3mm; letter-spacing:.06em; color:var(--ink);">Ryo Tsuzukihashi</div>
+      <div class="en" style="margin-top:.6mm; font-weight:700; font-style:italic; font-size:2.3mm; letter-spacing:.08em; color:var(--purple);">iOS DEVELOPER &amp; CREATOR</div>
+    </div>
+    <div class="contact" style="position:absolute; left:0; bottom:0;">
+      <div><b>MAIL</b>ryo.tsuzukihashi@tsuzukit.com</div>
+      <div><b>WEB</b>tsuzukit.com</div>
+      <div><b>X</b>@tsuzuki817</div>
+      <div><b>GITHUB</b>tsuzukihashi</div>
+    </div>
+    <div style="position:absolute; right:0; bottom:0; text-align:center;">
+      <img class="qr" src="parts/qr-site.svg">
+      <div class="en" style="margin-top:1mm; font-weight:700; font-size:1.9mm; letter-spacing:.06em; color:var(--muted);">tsuzukit.com</div>
+    </div>
+  </div>
+</div>
+<div class="card ink">
+  <div class="safe" style="display:flex; flex-direction:column; align-items:center; justify-content:center;">
+    <img src="../../assets/images/logo/tsuzukit-wordmark-white.svg" style="height:13mm">
+    <div style="margin-top:4.5mm; font-family:'Noto Sans JP'; font-weight:700; font-size:2.9mm; letter-spacing:.14em;">誰も作らないものを、まじめに作る。</div>
+    <div class="en" style="margin-top:1.4mm; font-weight:700; font-style:italic; font-size:2.2mm; letter-spacing:.2em; opacity:.7;">NOBODY ELSE WILL. — 100+ APPS SINCE 2016</div>
+  </div>
+</div></body></html>
