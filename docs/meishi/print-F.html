@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja"><head><meta charset="UTF-8"><title>TsuzuKit 名刺 F</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Saira+Condensed:ital,wght@0,600;0,700;0,800;1,700;1,800&family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700;900&display=block');
+:root { --cream:#f6f2ea; --ink:#14110c; --text:#2a2620; --muted:#6c6356; --purple:#8b3df5; --line:rgba(20,17,8,.18); }
+* { box-sizing:border-box; margin:0; padding:0; }
+body { font-family:'Inter','Noto Sans JP',sans-serif; color:var(--text); -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+img { display:block; max-width:none; }
+/* 塗り足し込みの紙。中身は .safe（仕上がりから 3mm 内側）に置く */
+.card { position:relative; width:97mm; height:61mm; overflow:hidden; background:var(--cream); }
+.card.tate { width:61mm; height:97mm; }
+.card.ink { background:var(--ink); color:#fff; }
+.safe { position:absolute; left:6mm; top:6mm; right:6mm; bottom:6mm; }
+.en { font-family:'Saira Condensed','Inter',sans-serif; }
+.impact { font-family:'Anton','Saira Condensed',sans-serif; }
+.contact { font-size:2.3mm; line-height:1.55; letter-spacing:.01em; color:var(--text); }
+.contact b { display:inline-block; width:9mm; font-family:'Saira Condensed',sans-serif; font-weight:700; font-style:italic; font-size:2.1mm; letter-spacing:.06em; color:var(--muted); }
+.ink .contact, .ink .contact b { color:#fff; }
+.qr { width:15mm; height:15mm; }
+
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&display=block');
+.maru { font-family:'Zen Maru Gothic','Noto Sans JP',sans-serif; }
+.chara { position:absolute; display:block; }
+
+@page { size:97mm 61mm; margin:0; }
+.card { page-break-after:always; }
+</style></head><body>
+<div class="card">
+  <img class="chara" src="parts/mokumoku-welcome.png" style="right:5mm; top:4.5mm; width:15mm;">
+  <img class="chara" src="parts/unchikun-hi.png" style="left:52mm; bottom:-1mm; width:15mm;">
+  <div class="safe">
+    <img src="../../assets/images/logo/tsuzukit-wordmark.svg" style="height:5mm">
+    <div style="position:absolute; left:0; top:12mm;">
+      <div style="font-family:'Noto Sans JP'; font-weight:900; font-size:6mm; letter-spacing:.12em; color:var(--ink);">續橋 涼</div>
+      <div class="en" style="margin-top:1mm; font-weight:700; font-size:2.9mm; letter-spacing:.06em; color:var(--ink);">Ryo Tsuzukihashi</div>
+      <div class="en" style="margin-top:.5mm; font-weight:700; font-style:italic; font-size:2.2mm; letter-spacing:.08em; color:var(--purple);">iOS DEVELOPER &amp; CREATOR</div>
+    </div>
+    <div class="contact" style="position:absolute; left:0; bottom:0;">
+      <div><b>MAIL</b>ryo.tsuzukihashi@tsuzukit.com</div>
+      <div><b>WEB</b>tsuzukit.com</div>
+      <div><b>X</b>@tsuzuki817</div>
+      <div><b>GITHUB</b>tsuzukihashi</div>
+    </div>
+    <div style="position:absolute; right:0; bottom:0; text-align:center;">
+      <img class="qr" src="parts/qr-site.svg" style="width:13mm; height:13mm;">
+      <div class="en" style="margin-top:.8mm; font-weight:700; font-size:1.8mm; letter-spacing:.06em; color:var(--muted);">tsuzukit.com</div>
+    </div>
+  </div>
+</div>
+<div class="card" style="background:#fffdf8;">
+  <div class="safe" style="display:flex; flex-direction:column;">
+    <div class="maru" style="font-weight:900; font-size:3.2mm; color:var(--ink); margin-bottom:1.6mm;">この ひとが つくったよ</div>
+    <div style="flex:1; display:flex; gap:1.6mm;">
+      
+<div style="position:relative; flex:1; border:.4mm solid var(--ink); border-radius:2mm; background:#fde3ea; overflow:hidden;">
+  <img src="parts/unchikun-hi.png" style="position:absolute; left:50%; top:11mm; width:17mm; transform:translateX(-50%);">
+  <div class="maru" style="position:absolute; left:0; right:0; bottom:1.4mm; text-align:center; font-weight:900; font-size:2.3mm; color:var(--ink);">うんちくん</div>
+  <div class="maru" style="position:absolute; left:1mm; right:1mm; top:1.3mm; text-align:center; font-weight:700; font-size:1.75mm; line-height:1.35; color:var(--text);">うんちを<br>きろくするよ</div>
+</div>
+      
+<div style="position:relative; flex:1; border:.4mm solid var(--ink); border-radius:2mm; background:#e3edf7; overflow:hidden;">
+  <img src="parts/mokumoku-deposit.png" style="position:absolute; left:50%; top:12mm; width:19mm; transform:translateX(-50%);">
+  <div class="maru" style="position:absolute; left:0; right:0; bottom:1.4mm; text-align:center; font-weight:900; font-size:2.3mm; color:var(--ink);">もくもく</div>
+  <div class="maru" style="position:absolute; left:1mm; right:1mm; top:1.3mm; text-align:center; font-weight:700; font-size:1.75mm; line-height:1.35; color:var(--text);">よんだ ほんが<br>たまるよ</div>
+</div>
+      
+<div style="position:relative; flex:1; border:.4mm solid var(--ink); border-radius:2mm; background:#e6f3e7; overflow:hidden;">
+  <img src="parts/japan-color.svg" style="position:absolute; left:50%; top:10mm; width:17mm; transform:translateX(-50%);">
+  <div class="maru" style="position:absolute; left:0; right:0; bottom:1.4mm; text-align:center; font-weight:900; font-size:2.3mm; color:var(--ink);">おもいでちず</div>
+  <div class="maru" style="position:absolute; left:1mm; right:1mm; top:1.3mm; text-align:center; font-weight:700; font-size:1.75mm; line-height:1.35; color:var(--text);">いった ところが<br>ちずに のこる</div>
+</div>
+      
+<div style="position:relative; flex:1; border:.4mm solid var(--ink); border-radius:2mm; background:#efe9dd; overflow:hidden;">
+  <img src="parts/character-think.svg" style="position:absolute; left:50%; top:11.5mm; height:17mm; transform:translateX(-50%);">
+  <div class="maru" style="position:absolute; left:0; right:0; bottom:1.4mm; text-align:center; font-weight:900; font-size:2.3mm; color:var(--ink);">つぎは…？</div>
+  <div class="maru" style="position:absolute; left:1mm; right:1mm; top:1.3mm; text-align:center; font-weight:700; font-size:1.75mm; line-height:1.35; color:var(--text);">つぎは なにを<br>つくろうかな</div>
+</div>
+    </div>
+  </div>
+</div></body></html>

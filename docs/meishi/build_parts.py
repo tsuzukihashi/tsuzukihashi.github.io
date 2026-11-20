@@ -18,7 +18,7 @@ from PIL import Image
 REPO = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 OUT = os.path.join(REPO, "docs", "meishi", "parts")
 INK = "#14110c"
-POSES = ["peek", "wave", "cheer", "wink"]
+POSES = ["peek", "wave", "cheer", "wink", "think"]
 
 
 def trace(pose):

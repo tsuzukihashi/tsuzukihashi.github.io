@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja"><head><meta charset="UTF-8"><title>TsuzuKit 名刺 E</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Saira+Condensed:ital,wght@0,600;0,700;0,800;1,700;1,800&family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700;900&display=block');
+:root { --cream:#f6f2ea; --ink:#14110c; --text:#2a2620; --muted:#6c6356; --purple:#8b3df5; --line:rgba(20,17,8,.18); }
+* { box-sizing:border-box; margin:0; padding:0; }
+body { font-family:'Inter','Noto Sans JP',sans-serif; color:var(--text); -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+img { display:block; max-width:none; }
+/* 塗り足し込みの紙。中身は .safe（仕上がりから 3mm 内側）に置く */
+.card { position:relative; width:97mm; height:61mm; overflow:hidden; background:var(--cream); }
+.card.tate { width:61mm; height:97mm; }
+.card.ink { background:var(--ink); color:#fff; }
+.safe { position:absolute; left:6mm; top:6mm; right:6mm; bottom:6mm; }
+.en { font-family:'Saira Condensed','Inter',sans-serif; }
+.impact { font-family:'Anton','Saira Condensed',sans-serif; }
+.contact { font-size:2.3mm; line-height:1.55; letter-spacing:.01em; color:var(--text); }
+.contact b { display:inline-block; width:9mm; font-family:'Saira Condensed',sans-serif; font-weight:700; font-style:italic; font-size:2.1mm; letter-spacing:.06em; color:var(--muted); }
+.ink .contact, .ink .contact b { color:#fff; }
+.qr { width:15mm; height:15mm; }
+
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&display=block');
+.maru { font-family:'Zen Maru Gothic','Noto Sans JP',sans-serif; }
+.chara { position:absolute; display:block; }
+
+@page { size:97mm 61mm; margin:0; }
+.card { page-break-after:always; }
+</style></head><body>
+<div class="card">
+  <img class="chara" src="parts/mokumoku-welcome.png" style="right:5mm; top:4.5mm; width:15mm;">
+  <img class="chara" src="parts/unchikun-hi.png" style="left:52mm; bottom:-1mm; width:15mm;">
+  <div class="safe">
+    <img src="../../assets/images/logo/tsuzukit-wordmark.svg" style="height:5mm">
+    <div style="position:absolute; left:0; top:12mm;">
+      <div style="font-family:'Noto Sans JP'; font-weight:900; font-size:6mm; letter-spacing:.12em; color:var(--ink);">續橋 涼</div>
+      <div class="en" style="margin-top:1mm; font-weight:700; font-size:2.9mm; letter-spacing:.06em; color:var(--ink);">Ryo Tsuzukihashi</div>
+      <div class="en" style="margin-top:.5mm; font-weight:700; font-style:italic; font-size:2.2mm; letter-spacing:.08em; color:var(--purple);">iOS DEVELOPER &amp; CREATOR</div>
+    </div>
+    <div class="contact" style="position:absolute; left:0; bottom:0;">
+      <div><b>MAIL</b>ryo.tsuzukihashi@tsuzukit.com</div>
+      <div><b>WEB</b>tsuzukit.com</div>
+      <div><b>X</b>@tsuzuki817</div>
+      <div><b>GITHUB</b>tsuzukihashi</div>
+    </div>
+    <div style="position:absolute; right:0; bottom:0; text-align:center;">
+      <img class="qr" src="parts/qr-site.svg" style="width:13mm; height:13mm;">
+      <div class="en" style="margin-top:.8mm; font-weight:700; font-size:1.8mm; letter-spacing:.06em; color:var(--muted);">tsuzukit.com</div>
+    </div>
+  </div>
+</div>
+<div class="card" style="background:#f9d3dc;">
+  <div style="position:absolute; left:5mm; top:5mm; right:5mm; bottom:5mm; border:.5mm solid var(--ink); border-radius:3mm; background:#fffdf8;"></div>
+  <div style="position:absolute; left:5mm; top:5mm; width:42mm; bottom:5mm; border-radius:3mm 0 0 3mm; background:#f7b9c8;"></div>
+  <img class="chara" src="parts/unchikun-celebration.png" style="left:11mm; top:9mm; width:31mm;">
+  <div class="safe">
+    <div class="en" style="position:absolute; left:44mm; top:1.5mm; font-weight:800; font-style:italic; font-size:2.3mm; letter-spacing:.12em; color:var(--muted);">No.1 / 3</div>
+    <div class="maru" style="position:absolute; left:44mm; top:6mm; font-weight:900; font-size:6mm; line-height:1.1; color:var(--ink);">うんちくん</div>
+    <div class="maru" style="position:absolute; left:44mm; top:15.5mm; right:0; font-weight:700; font-size:2.5mm; line-height:1.5; color:var(--text);">まいにちの うんちを<br>きろくする なかま。<br>げんきの もとだよ。</div>
+    <div class="maru" style="position:absolute; left:44mm; bottom:0; font-weight:700; font-size:1.9mm; line-height:1.4; color:var(--muted);">アプリ<br>うんちくん</div>
+    <img class="qr" src="parts/qr-unchikun.svg" style="position:absolute; right:1mm; bottom:1mm; width:10mm; height:10mm;">
+  </div>
+  <div class="maru" style="position:absolute; left:7mm; bottom:7mm; font-weight:900; font-size:2mm; color:var(--ink); background:#fffdf8; border:.3mm solid var(--ink); border-radius:2mm; padding:.4mm 1.6mm;">ぜんぶ あつめてね</div>
+</div>
+<div class="card" style="background:#c9dbec;">
+  <div style="position:absolute; left:5mm; top:5mm; right:5mm; bottom:5mm; border:.5mm solid var(--ink); border-radius:3mm; background:#fffdf8;"></div>
+  <div style="position:absolute; left:5mm; top:5mm; width:42mm; bottom:5mm; border-radius:3mm 0 0 3mm; background:#9dbedd;"></div>
+  <img class="chara" src="parts/mokumoku-deposit.png" style="left:8.5mm; top:12mm; width:36mm;">
+  <div class="safe">
+    <div class="en" style="position:absolute; left:44mm; top:1.5mm; font-weight:800; font-style:italic; font-size:2.3mm; letter-spacing:.12em; color:var(--muted);">No.2 / 3</div>
+    <div class="maru" style="position:absolute; left:44mm; top:6mm; font-weight:900; font-size:6mm; line-height:1.1; color:var(--ink);">もくもく</div>
+    <div class="maru" style="position:absolute; left:44mm; top:15.5mm; right:0; font-weight:700; font-size:2.5mm; line-height:1.5; color:var(--text);">よんだ ほんを<br>つみあげていく くも。<br>ほんが だいすき。</div>
+    <div class="maru" style="position:absolute; left:44mm; bottom:0; font-weight:700; font-size:1.9mm; line-height:1.4; color:var(--muted);">アプリ<br>もくもく</div>
+    <img class="qr" src="parts/qr-mokumoku.svg" style="position:absolute; right:1mm; bottom:1mm; width:10mm; height:10mm;">
+  </div>
+  <div class="maru" style="position:absolute; left:7mm; bottom:7mm; font-weight:900; font-size:2mm; color:var(--ink); background:#fffdf8; border:.3mm solid var(--ink); border-radius:2mm; padding:.4mm 1.6mm;">ぜんぶ あつめてね</div>
+</div>
+<div class="card" style="background:#d8ecd9;">
+  <div style="position:absolute; left:5mm; top:5mm; right:5mm; bottom:5mm; border:.5mm solid var(--ink); border-radius:3mm; background:#fffdf8;"></div>
+  <div style="position:absolute; left:5mm; top:5mm; width:42mm; bottom:5mm; border-radius:3mm 0 0 3mm; background:#b5dbb9;"></div>
+  <img class="chara" src="parts/japan-color.svg" style="left:8mm; top:8.5mm; height:38mm;">
+  <div class="safe">
+    <div class="en" style="position:absolute; left:44mm; top:1.5mm; font-weight:800; font-style:italic; font-size:2.3mm; letter-spacing:.12em; color:var(--muted);">No.3 / 3</div>
+    <div class="maru" style="position:absolute; left:44mm; top:6mm; font-weight:900; font-size:6mm; line-height:1.1; color:var(--ink);">おもいで<br>ちず</div>
+    <div class="maru" style="position:absolute; left:44mm; top:20mm; right:0; font-weight:700; font-size:2.5mm; line-height:1.5; color:var(--text);">いった ところが<br>ちずに のこるよ。</div>
+    <div class="maru" style="position:absolute; left:44mm; bottom:0; font-weight:700; font-size:1.9mm; line-height:1.4; color:var(--muted);">アプリ<br>旅行思い出マップ</div>
+    <img class="qr" src="parts/qr-omoidemap.svg" style="position:absolute; right:1mm; bottom:1mm; width:10mm; height:10mm;">
+  </div>
+  <div class="maru" style="position:absolute; left:7mm; bottom:7mm; font-weight:900; font-size:2mm; color:var(--ink); background:#fffdf8; border:.3mm solid var(--ink); border-radius:2mm; padding:.4mm 1.6mm;">ぜんぶ あつめてね</div>
+</div></body></html>
