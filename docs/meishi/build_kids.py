@@ -26,7 +26,8 @@ KCSS = CSS + """
 FRONT = f"""
 <div class="card">
   <img class="chara" src="parts/mokumoku-welcome.png" style="right:5mm; top:4.5mm; width:15mm;">
-  <img class="chara" src="parts/unchikun-hi.png" style="left:52mm; bottom:-1mm; width:15mm;">
+  <img class="chara" src="parts/character-peek.svg" style="left:52.5mm; bottom:5mm; height:13.5mm;">
+  <img class="chara" src="parts/unchikun-hi.png" style="left:64.5mm; bottom:5mm; width:12.5mm;">
   <div class="safe">
     <img src="{LOGO}/tsuzukit-wordmark.svg" style="height:5mm">
     <div style="position:absolute; left:0; top:12mm;">
@@ -50,7 +51,7 @@ FRONT = f"""
 # ---------- D ぬりえ地図 ----------
 D_BACK = """
 <div class="card" style="background:#fffdf8;">
-  <img class="chara" src="parts/japan-nurie.svg" style="left:38mm; top:3.5mm; height:56mm;">
+  <img class="chara" src="parts/japan-nurie.svg" style="left:40mm; top:5.5mm; height:51mm;">
   <img class="chara" src="parts/unchikun-balloons.png" style="left:52mm; top:6mm; width:10mm;">
   <img class="chara" src="parts/mokumoku-welcome.png" style="left:76mm; top:44.5mm; width:13mm;">
   <img class="chara" src="parts/character-wave.svg" style="left:24mm; bottom:-1.5mm; height:13mm;">
@@ -124,7 +125,7 @@ def sheet():
     rows = [f"""
 <section class="row">
   <h2>共通の表</h2>
-  <p>名前と連絡先は大人のための面なので、前の A 案のまま。もくもくが右上に浮かび、うんちくんが下から顔を出す</p>
+  <p>名前と連絡先は大人のための面なので、前の A 案のまま。作った人（TsuzuKit のキャラ）とうんちくんが並んで立ち、もくもくが右上に浮かぶ</p>
   <div class="pair"><figure><div class="trim">{FRONT}</div><figcaption>表</figcaption></figure></div>
 </section>"""]
     for key, name, why, backs in PATTERNS:
