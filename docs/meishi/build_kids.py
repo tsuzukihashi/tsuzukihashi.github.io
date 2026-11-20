@@ -22,12 +22,12 @@ KCSS = CSS + """
 .chara { position:absolute; display:block; }
 """
 
-# ---------- 共通の表（大人が見る面。キャラは端から少しだけ） ----------
+# ---------- 共通の表（大人が見る面。右半分に作った人とキャラが並ぶ） ----------
 FRONT = f"""
 <div class="card">
-  <img class="chara" src="parts/mokumoku-welcome.png" style="right:5mm; top:4.5mm; width:15mm;">
-  <img class="chara" src="parts/character-peek.svg" style="left:52.5mm; bottom:5mm; height:13.5mm;">
-  <img class="chara" src="parts/unchikun-hi.png" style="left:64.5mm; bottom:5mm; width:12.5mm;">
+  <img class="chara" src="parts/mokumoku-welcome.png" style="left:69mm; top:5mm; width:18mm;">
+  <img class="chara" src="parts/character-peek.svg" style="left:51mm; bottom:22mm; height:21mm;">
+  <img class="chara" src="parts/unchikun-hi.png" style="left:66mm; bottom:22mm; width:14.5mm;">
   <div class="safe">
     <img src="{LOGO}/tsuzukit-wordmark.svg" style="height:5mm">
     <div style="position:absolute; left:0; top:12mm;">
