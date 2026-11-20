@@ -17,7 +17,8 @@ from build_cards import CSS, LOGO, MAIL
 HERE = os.path.dirname(os.path.abspath(__file__))
 
 # @import は CSS の先頭にしか書けない（後ろに書くと読まれない）ので、丸ゴシックは前に足す
-KCSS = "@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&display=block');\n" + CSS + """
+# 表の名前は RocknRoll One（2026-11-20 に10書体から選んだ。docs/meishi/sheet-namefont.png）
+KCSS = "@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&family=Zen+Maru+Gothic:wght@500;700;900&display=block');\n" + CSS + """
 .maru { font-family:'Zen Maru Gothic','Noto Sans JP',sans-serif; }
 .chara { position:absolute; display:block; }
 /* 地を少し濃いベージュにする。もくもく（#fef7ea）がクリーム地に溶けて見えなかったため。
@@ -35,7 +36,7 @@ def front(art):
   <div class="safe">
     <img src="{LOGO}/tsuzukit-wordmark.svg" style="height:5mm">
     <div style="position:absolute; left:0; top:12mm;">
-      <div style="font-family:'Noto Sans JP'; font-weight:900; font-size:6mm; letter-spacing:.12em; color:var(--ink);">續橋 涼</div>
+      <div style="font-family:'RocknRoll One'; font-weight:400; font-size:6mm; letter-spacing:.1em; color:var(--ink);">續橋 涼</div>
       <div class="en" style="margin-top:1mm; font-weight:700; font-size:2.9mm; letter-spacing:.06em; color:var(--ink);">Ryo Tsuzukihashi</div>
       <div class="en" style="margin-top:.5mm; font-weight:700; font-style:italic; font-size:2.2mm; letter-spacing:.08em; color:var(--purple);">iOS DEVELOPER &amp; CREATOR</div>
     </div>

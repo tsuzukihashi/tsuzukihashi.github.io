@@ -14,11 +14,11 @@ from build_back import CSS
 from build_kids import FRONT
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-NAME_STYLE = "font-family:'Noto Sans JP'; font-weight:900; font-size:6mm; letter-spacing:.12em;"
+NAME_STYLE = "font-family:'RocknRoll One'; font-weight:400; font-size:6mm; letter-spacing:.1em;"  # いまの表の名前
 
 # (番号, 書体, 太さ, 一言, 字間)
 FONTS = [
-    ("今", "Noto Sans JP", 900, "いまの書体。太いゴシック", ".12em"),
+    ("前", "Noto Sans JP", 900, "前の書体。太いゴシック", ".12em"),
     ("01", "Dela Gothic One", 400, "極太のゴシック。ロゴの TsuzuKit の太さに近い", ".08em"),
     ("02", "Mochiy Pop One", 400, "丸くて太いポップ体。3人の絵と同じやわらかさ", ".08em"),
     ("03", "Zen Maru Gothic", 900, "丸ゴシックの太字。やわらかいが崩しすぎない", ".12em"),
