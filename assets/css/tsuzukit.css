@@ -107,6 +107,9 @@ h1, h2, h3, h4 {
   letter-spacing: 0.01em;
   color: var(--color-primary);
   text-transform: uppercase;
+  /* 1〜2文字だけ次の行に落ちないよう、行の長さを揃え、日本語は文節で折る */
+  text-wrap: balance;
+  word-break: auto-phrase;
 }
 
 h1 { font-size: clamp(3rem, 8vw, 7rem); }
@@ -120,6 +123,7 @@ p {
   color: var(--color-secondary);
   font-weight: 400;
   line-height: 1.9;
+  text-wrap: pretty;
 }
 
 a { color: inherit; }
@@ -294,9 +298,9 @@ strong { color: var(--color-primary); font-weight: 700; }
   content: '';
   position: absolute;
   inset: 0;
+  /* 文字の下だけ濃く覆って、右に行くほどアイコンを見せる */
   background:
-    radial-gradient(78% 60% at 50% 40%, transparent, rgba(246, 242, 234, 0.82)),
-    linear-gradient(120deg, #14110c 0%, #14110c 100%), rgba(246, 242, 234, 0.92));
+    linear-gradient(90deg, rgba(246, 242, 234, 0.94) 0%, rgba(246, 242, 234, 0.88) 42%, rgba(246, 242, 234, 0.5) 72%, rgba(246, 242, 234, 0.3) 100%);
   z-index: 2;
 }
 
@@ -454,6 +458,8 @@ strong { color: var(--color-primary); font-weight: 700; }
 
 .section-title { margin-bottom: var(--space-md); color: var(--color-primary); }
 
+/* 中央寄せの短い説明は、日本語を文節で折る（行頭に「も、」などが来ないように） */
+.section-description, [class*="card"] p { word-break: auto-phrase; }
 .section-description {
   max-width: 800px;
   margin: 0 auto;
@@ -695,7 +701,7 @@ strong { color: var(--color-primary); font-weight: 700; }
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 320px;
+  min-height: 220px;
   padding: var(--space-xl);
   text-align: center;
   text-decoration: none;
@@ -878,6 +884,9 @@ strong { color: var(--color-primary); font-weight: 700; }
   .btn { justify-content: center; }
 
   .section { padding: var(--space-xl) 0; }
+  .br-pc { display: none; } /* 文の途中の改行は、狭い画面では外す */
+  .hero-media::after { background: rgba(246, 242, 234, 0.9); } /* 狭い画面は文字が全幅なので、全体を覆う */
+  .cta-block { min-height: 150px; padding: var(--space-lg) var(--space-md); }
   .icon-row img { width: 60px; height: 60px; }
   .footer-peek { width: 62px; right: 20px; }
 }

@@ -101,6 +101,9 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.2;
     letter-spacing: -0.02em;
     margin-bottom: var(--spacing-md);
+    /* 1〜2文字だけ次の行に落ちないよう、行の長さを揃え、日本語は文節で折る */
+    text-wrap: balance;
+    word-break: auto-phrase;
 }
 
 .container {
