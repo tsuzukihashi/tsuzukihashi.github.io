@@ -25,9 +25,8 @@ KCSS = CSS + """
 # ---------- 共通の表（大人が見る面。右半分に作った人とキャラが並ぶ） ----------
 FRONT = f"""
 <div class="card">
-  <img class="chara" src="parts/mokumoku-welcome.png" style="left:69mm; top:5mm; width:18mm;">
-  <img class="chara" src="parts/character-peek.svg" style="left:51mm; bottom:22mm; height:21mm;">
-  <img class="chara" src="parts/unchikun-hi.png" style="left:66mm; bottom:22mm; width:14.5mm;">
+  <!-- 3人の絵は ChatGPT の Image で作った1枚（docs/meishi/prompt-trio.md） -->
+  <img class="chara" src="parts/trio.png" style="left:45mm; top:5mm; width:44mm;">
   <div class="safe">
     <img src="{LOGO}/tsuzukit-wordmark.svg" style="height:5mm">
     <div style="position:absolute; left:0; top:12mm;">
@@ -125,7 +124,7 @@ def sheet():
     rows = [f"""
 <section class="row">
   <h2>共通の表</h2>
-  <p>名前と連絡先は大人のための面なので、前の A 案のまま。作った人（TsuzuKit のキャラ）とうんちくんが並んで立ち、もくもくが右上に浮かぶ</p>
+  <p>名前と連絡先は大人のための面なので、前の A 案のまま。作った人（TsuzuKit のキャラ）・うんちくん・もくもくを、ChatGPT で1枚のまとまった絵にして右半分に置く</p>
   <div class="pair"><figure><div class="trim">{FRONT}</div><figcaption>表</figcaption></figure></div>
 </section>"""]
     for key, name, why, backs in PATTERNS:
