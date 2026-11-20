@@ -29,18 +29,18 @@ def icon(bundle_tail, size):
 
 # ---------- G 代表作6本 ----------
 PICKS = [
-    ("PoopCounter", "うんちくん", "うんちを記録"),
-    ("OmoideMap", "旅行思い出マップ", "行った所を塗る"),
-    ("BookBank", "もくもく", "読んだ本を貯める"),
-    ("pip", "流れるメモ帳", "画面にメモを流す"),
-    ("OshiIsland", "推しアイランド", "推しを画面に置く"),
+    ("PoopCounter", "うんちくん", "うんちの記録と共有"),
+    ("OmoideMap", "旅行思い出マップ", "思い出の写真で<br>地図を作る"),
+    ("BookBank", "もくもく", "読んだ本が<br>通帳の残高になる"),
+    ("pip", "流れるメモ帳", "絶対に忘れないメモ"),
+    ("OshiIsland", "推しアイランド", "いつも推しと一緒"),
     ("ColorCodeSky", "SkyCode", "写真の色を数字に"),
 ]
 cells = "".join(f"""
-    <div style="width:13mm; text-align:center;">
+    <div style="width:14mm; text-align:center;">
       <div style="display:flex; justify-content:center;">{icon(b, 9)}</div>
       <div class="jp" style="margin-top:1.2mm; font-weight:700; font-size:1.75mm; line-height:1.25; color:var(--ink); white-space:nowrap;">{n}</div>
-      <div class="jp" style="margin-top:.4mm; font-weight:500; font-size:1.45mm; line-height:1.3; color:var(--muted);">{d}</div>
+      <div class="jp" style="margin-top:.4mm; font-weight:500; font-size:1.45mm; line-height:1.3; color:var(--muted); white-space:nowrap;">{d}</div>
     </div>""" for b, n, d in PICKS)
 ASKS = ["こんなアプリが欲しい", "このアプリを作ってほしい", "開発を手伝ってほしい", "相談に乗ってほしい"]
 asks = "".join(f'''<div class="jp" style="font-weight:700; font-size:1.95mm; color:var(--ink); white-space:nowrap;"><span style="display:inline-block; width:1.3mm; height:1.3mm; border-radius:50%; background:var(--purple); margin-right:1mm; vertical-align:.25mm;"></span>{t}</div>''' for t in ASKS)
@@ -52,7 +52,7 @@ G_BACK = f"""
       <div class="jp" style="font-weight:700; font-size:1.8mm; letter-spacing:.06em; color:var(--muted);">誰も作らないものを、まじめに作る。</div>
     </div>
     <div class="jp" style="margin-top:.9mm; font-weight:900; font-size:3.5mm; line-height:1.35; letter-spacing:.02em; color:var(--ink);">10年で100本以上、<br>iPhoneのアプリを作っています。</div>
-    <div style="position:absolute; left:0; right:0; top:17mm; display:flex; justify-content:space-between;">{cells}
+    <div style="position:absolute; left:0; right:0; top:16.3mm; display:flex; justify-content:space-between;">{cells}
     </div>
     <div style="position:absolute; left:0; right:0; bottom:0; height:14.5mm; border-radius:1.6mm; background:#efe6d4; display:flex; align-items:center; padding:0 3mm;">
       <div style="flex:1;">
