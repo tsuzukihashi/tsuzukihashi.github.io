@@ -42,13 +42,13 @@ LABEL = """<div style="display:flex; justify-content:space-between; align-items:
       <div class="en" style="font-weight:700; font-style:italic; font-size:2.1mm; letter-spacing:.12em; color:var(--purple);">INDIE APP DEVELOPER</div>
       <div class="jp" style="font-weight:700; font-size:1.8mm; letter-spacing:.06em; color:var(--muted);">誰も作らないものを、まじめに作る。</div>
     </div>"""
-WORK = """<div style="position:absolute; left:0; right:0; bottom:0; height:14.5mm; border-radius:1.6mm; background:#efe6d4; display:flex; align-items:center; padding:0 3mm;">
+WORK = """<div style="position:absolute; left:0; right:0; bottom:0; height:13.6mm; border-radius:1.6mm; background:#efe6d4; display:flex; align-items:center; padding:0 3mm;">
       <div style="flex:1;">
         <div class="jp" style="font-weight:900; font-size:2.5mm; letter-spacing:.03em; color:var(--ink);">お仕事のご相談も、お気軽にどうぞ。</div>
         <div style="margin-top:1.2mm; display:grid; grid-template-columns:auto auto; gap:1mm 4mm; justify-content:start;">""" + asks + """</div>
       </div>
-      <div style="text-align:center; position:relative; top:.5mm;">  <!-- https://tsuzukit.com/contact/ 。上が 1.0mm・下が 1.5mm 空いて上に寄って見えたので 0.5mm 下げる -->
-        <img src="parts/qrfun/contact-01-dots.svg" style="width:10mm; height:10mm;">
+      <div style="text-align:center; position:relative; top:.3mm;">  <!-- https://tsuzukit.com/contact/ 。上が 1.0mm・下が 1.5mm 空いて上に寄って見えたので 0.5mm 下げる -->
+        <img src="parts/qrfun/contact-01-dots.svg" style="width:9.4mm; height:9.4mm;">
         <div class="en" style="margin-top:.6mm; font-weight:700; font-size:1.8mm; line-height:1; letter-spacing:.06em; color:var(--muted);">contact</div>
       </div>
     </div>"""
@@ -80,15 +80,15 @@ G1_BACK = g_card(
 # G2: 6本のまま、2列×3段のリストにする（アイコンの右に名前と一言。見出しは1行）
 list6 = "".join(f"""
       <div style="display:flex; align-items:center; gap:1.8mm;">
-        {icon(b, 6.4)}
+        {icon(b, 5.6)}
         <div>
           <div class="jp" style="font-weight:700; font-size:1.95mm; line-height:1.2; color:var(--ink); white-space:nowrap;">{n}</div>
           <div class="jp" style="margin-top:.7mm; font-weight:500; font-size:1.7mm; line-height:1.2; color:var(--muted); white-space:nowrap;">{d}</div>
         </div>
       </div>""" for b, n, d in PICKS)
 G2_BACK = g_card(
-    '<div class="jp" style="margin-top:.9mm; font-weight:900; font-size:3.15mm; letter-spacing:.01em; color:var(--ink); white-space:nowrap;">10年で100本以上、iPhoneのアプリを作っています。</div>',
-    f'<div style="position:absolute; left:0; right:0; top:11.3mm; display:grid; grid-template-columns:1fr 1fr; gap:.9mm 3mm;">{list6}</div>')
+    '<div class="jp" style="margin-top:.9mm; font-weight:900; font-size:2.95mm; letter-spacing:.01em; color:var(--ink); white-space:nowrap;">10年で100本以上、iPhoneのアプリを作っています。</div>',
+    f'<div style="position:absolute; left:0; right:0; top:10.2mm; display:grid; grid-template-columns:1fr 1fr; gap:.7mm 3mm;">{list6}</div>')
 
 G_BACK = G2_BACK  # 2026-11-20 に G2 に決めた
 
