@@ -7,7 +7,10 @@
 """
 import os
 
-from build_kids import FRONT, KCSS
+from build_kids import FRONT as _F, KCSS, TITLE
+
+# 表は A に決めたので、見比べは「代表」を外した形から作る
+FRONT = _F.replace(TITLE, '').replace('left:0; top:11mm;', 'left:0; top:12mm;')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 

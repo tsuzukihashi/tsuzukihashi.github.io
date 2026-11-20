@@ -27,6 +27,10 @@ KCSS = "@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&fami
 :root { --muted:#574f43; }
 """
 
+# 名前の上の「代表」（2026-11-20。TsuzuKit は屋号なので、役職は「代表」。docs/meishi/sheet-title.png の A）
+TITLE = ('<div style="font-family:\'Noto Sans JP\'; font-weight:700; letter-spacing:.2em; color:var(--muted); '
+         'font-size:2.2mm; line-height:1; margin-bottom:-.2mm;">代表</div>')
+
 # ---------- 共通の表（大人が見る面。右半分に作った人とキャラの絵） ----------
 def front(art):
     """art: 右上の枠（左 45mm・上 5mm・幅 44mm・高さ 33mm。塗り足し込みの座標）に入れる中身"""
@@ -35,8 +39,8 @@ def front(art):
   <div style="position:absolute; left:45mm; top:5mm; width:44mm; height:33mm; display:flex; align-items:center; justify-content:center;">{art}</div>
   <div class="safe">
     <img src="{LOGO}/tsuzukit-wordmark.svg" style="height:5mm">
-    <div style="position:absolute; left:0; top:12mm;">
-      <div style="font-family:'RocknRoll One'; font-weight:400; font-size:6mm; letter-spacing:.1em; color:var(--ink);">續橋 涼</div>
+    <div style="position:absolute; left:0; top:11mm;">
+      {TITLE}<div style="font-family:'RocknRoll One'; font-weight:400; font-size:6mm; letter-spacing:.1em; color:var(--ink);">續橋 涼</div>
       <div class="en" style="margin-top:1mm; font-weight:700; font-size:2.9mm; letter-spacing:.06em; color:var(--ink);">Ryo Tsuzukihashi</div>
       <div class="en" style="margin-top:.5mm; font-weight:700; font-style:italic; font-size:2.2mm; letter-spacing:.08em; color:var(--purple);">iOS DEVELOPER &amp; CREATOR</div>
     </div>
