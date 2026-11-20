@@ -53,8 +53,8 @@ def front(art):
 </div>"""
 
 
-# 3人の絵は ChatGPT の Image で作った1枚（docs/meishi/prompt-trio.md）
-FRONT = front('<img src="parts/trio.png" style="width:44mm;">')
+# 3人の絵は ChatGPT の Image で作った「07 自撮り」（2026-11-20 に10場面から選んだ。docs/meishi/prompt-trio.md）
+FRONT = front('<img src="parts/collab/07-selfie.png" style="max-width:100%; max-height:100%;">')
 
 # ---------- D ぬりえ地図 ----------
 D_BACK = """
@@ -133,7 +133,7 @@ def sheet():
     rows = [f"""
 <section class="row">
   <h2>共通の表</h2>
-  <p>名前と連絡先は大人のための面なので、前の A 案のまま。作った人（TsuzuKit のキャラ）・うんちくん・もくもくを、ChatGPT で1枚のまとまった絵にして右半分に置く</p>
+  <p>名前と連絡先は大人のための面なので、前の A 案のまま。作った人（TsuzuKit のキャラ）・うんちくん・もくもくが一緒に自撮りしている絵（ChatGPT で作った10場面から 07 を採用）を右半分に置く</p>
   <div class="pair"><figure><div class="trim">{FRONT}</div><figcaption>表</figcaption></figure></div>
 </section>"""]
     for key, name, why, backs in PATTERNS:
