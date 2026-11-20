@@ -127,6 +127,8 @@ CAPTIONS = {
 
 def sheet(names):
     base = front('<img src="parts/collab/07-selfie.png" style="max-width:100%; max-height:100%;">')
+    # 表は 05 に決めたので、見比べの「今」は前の四角い QR に戻して並べる
+    base = base.replace('src="parts/qrfun/05-center.svg"', 'src="parts/qr-site.svg"')
     old = '<img class="qr" src="parts/qr-site.svg" style="width:13mm; height:13mm;">'
     assert old in base
     cells = [f'<figure><figcaption><b>今</b>　四角いまま</figcaption><div class="zoom"><img src="parts/qr-site.svg"></div><div class="trim">{base}</div></figure>']
