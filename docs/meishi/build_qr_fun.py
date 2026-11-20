@@ -21,9 +21,9 @@ PURPLE = "#8b3df5"
 BG = "#ded0b6"
 
 
-def matrix(level):
+def matrix(level, url=URL):
     q = qrcode.QRCode(error_correction=level, border=0)
-    q.add_data(URL)
+    q.add_data(url)
     q.make(fit=True)
     return [[bool(v) for v in row] for row in q.get_matrix()]
 
@@ -110,6 +110,10 @@ def build():
         "05-center": svg(nh, dots(H, INK, in_center) + "".join(finder_round(r, c) for r, c in finders(nh)) + center_face(nh, k)),
         "06-center-faces": svg(nh, dots(H, PURPLE, in_center) + "".join(finder_face(r, c) for r, c in finders(nh)) + center_face(nh, k)),
     }
+    # 裏の問い合わせの QR（https://tsuzukit.com/contact/）は 01 のまるドット（2026-11-20）
+    C = matrix(qrcode.constants.ERROR_CORRECT_M, "https://tsuzukit.com/contact/")
+    nc = len(C)
+    open(os.path.join(OUT, "contact-01-dots.svg"), "w").write(svg(nc, dots(C) + "".join(finder_round(r, c) for r, c in finders(nc))))
     for name, s in v.items():
         open(os.path.join(OUT, name + ".svg"), "w").write(s)
     return list(v)
