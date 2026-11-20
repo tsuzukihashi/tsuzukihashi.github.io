@@ -36,7 +36,7 @@ PICKS = [
     ("OshiIsland", "推しアイランド", "いつも推しと一緒"),
     ("AnataReceipt", "あなたレシート", "今日の自分がレシートになる"),
 ]
-ASKS = ["こんなアプリが欲しい", "このアプリを作ってほしい", "開発を手伝ってほしい", "相談に乗ってほしい"]
+ASKS = ["こんなアプリが欲しい", "アプリ開発を依頼したい", "開発を手伝ってほしい", "相談に乗ってほしい"]  # 2つ目は「作ってほしい」だと1つ目と重なったので、もとの言葉の「依頼したい」に戻した
 asks = "".join(f'''<div class="jp" style="font-weight:700; font-size:1.95mm; color:var(--ink); white-space:nowrap;"><span style="display:inline-block; width:1.3mm; height:1.3mm; border-radius:50%; background:var(--purple); margin-right:1mm; vertical-align:.25mm;"></span>{t}</div>''' for t in ASKS)
 LABEL = """<div style="display:flex; justify-content:space-between; align-items:baseline;">
       <div class="en" style="font-weight:700; font-style:italic; font-size:2.1mm; letter-spacing:.12em; color:var(--purple);">INDIE APP DEVELOPER</div>
