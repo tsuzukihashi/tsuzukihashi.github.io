@@ -27,45 +27,70 @@ def icon(bundle_tail, size):
     return f'<img class="ic" src="parts/icons/{bundle_tail}.png" style="width:{size}mm; height:{size}mm;">'
 
 
-# ---------- G 代表作6本 ----------
+# ---------- G 代表作（一言は2026-11-20 に本人が決めたテーマ。1行に収める） ----------
 PICKS = [
     ("PoopCounter", "うんちくん", "うんちの記録と共有"),
-    ("OmoideMap", "旅行思い出マップ", "思い出の写真で<br>地図を作る"),
-    ("BookBank", "もくもく", "読んだ本が<br>通帳の残高になる"),
+    ("OmoideMap", "旅行思い出マップ", "思い出の写真で地図を作る"),
+    ("BookBank", "もくもく", "読んだ本が通帳の残高になる"),
     ("pip", "流れるメモ帳", "絶対に忘れないメモ"),
     ("OshiIsland", "推しアイランド", "いつも推しと一緒"),
     ("ColorCodeSky", "SkyCode", "写真の色を数字に"),
 ]
-cells = "".join(f"""
-    <div style="width:14mm; text-align:center;">
-      <div style="display:flex; justify-content:center;">{icon(b, 9)}</div>
-      <div class="jp" style="margin-top:1.2mm; font-weight:700; font-size:1.75mm; line-height:1.25; color:var(--ink); white-space:nowrap;">{n}</div>
-      <div class="jp" style="margin-top:.4mm; font-weight:500; font-size:1.45mm; line-height:1.3; color:var(--muted); white-space:nowrap;">{d}</div>
-    </div>""" for b, n, d in PICKS)
 ASKS = ["こんなアプリが欲しい", "このアプリを作ってほしい", "開発を手伝ってほしい", "相談に乗ってほしい"]
 asks = "".join(f'''<div class="jp" style="font-weight:700; font-size:1.95mm; color:var(--ink); white-space:nowrap;"><span style="display:inline-block; width:1.3mm; height:1.3mm; border-radius:50%; background:var(--purple); margin-right:1mm; vertical-align:.25mm;"></span>{t}</div>''' for t in ASKS)
-G_BACK = f"""
-<div class="card">
-  <div class="safe">
-    <div style="display:flex; justify-content:space-between; align-items:baseline;">
+LABEL = """<div style="display:flex; justify-content:space-between; align-items:baseline;">
       <div class="en" style="font-weight:700; font-style:italic; font-size:2.1mm; letter-spacing:.12em; color:var(--purple);">INDIE APP DEVELOPER</div>
       <div class="jp" style="font-weight:700; font-size:1.8mm; letter-spacing:.06em; color:var(--muted);">誰も作らないものを、まじめに作る。</div>
-    </div>
-    <div class="jp" style="margin-top:.9mm; font-weight:900; font-size:3.5mm; line-height:1.35; letter-spacing:.02em; color:var(--ink);">10年で100本以上、<br>iPhoneのアプリを作っています。</div>
-    <div style="position:absolute; left:0; right:0; top:16.3mm; display:flex; justify-content:space-between;">{cells}
-    </div>
-    <div style="position:absolute; left:0; right:0; bottom:0; height:14.5mm; border-radius:1.6mm; background:#efe6d4; display:flex; align-items:center; padding:0 3mm;">
+    </div>"""
+WORK = """<div style="position:absolute; left:0; right:0; bottom:0; height:14.5mm; border-radius:1.6mm; background:#efe6d4; display:flex; align-items:center; padding:0 3mm;">
       <div style="flex:1;">
         <div class="jp" style="font-weight:900; font-size:2.5mm; letter-spacing:.03em; color:var(--ink);">お仕事のご相談も、お気軽にどうぞ。</div>
-        <div style="margin-top:1.2mm; display:grid; grid-template-columns:auto auto; gap:1mm 4mm; justify-content:start;">{asks}</div>
+        <div style="margin-top:1.2mm; display:grid; grid-template-columns:auto auto; gap:1mm 4mm; justify-content:start;">""" + asks + """</div>
       </div>
       <div style="border-left:.2mm solid var(--line); padding-left:3mm; text-align:left;">
         <div class="jp" style="font-weight:500; font-size:1.65mm; line-height:1.5; color:var(--muted);">表のメールか、<br>こちらから</div>
         <div class="en" style="margin-top:.6mm; font-weight:700; font-size:2.2mm; letter-spacing:.03em; color:var(--ink);">tsuzukit.com/contact</div>
       </div>
-    </div>
+    </div>"""
+
+
+def g_card(head, apps):
+    return f"""
+<div class="card">
+  <div class="safe">
+    {LABEL}
+    {head}
+    {apps}
+    {WORK}
   </div>
 </div>"""
+
+
+# G1: 横一列のまま、一言が入るように SkyCode を外して5本にする（一言の幅に合わせて列の幅を変える）
+row5 = "".join(f"""
+      <div style="text-align:center;">
+        <div style="display:flex; justify-content:center;">{icon(b, 9)}</div>
+        <div class="jp" style="margin-top:1.2mm; font-weight:700; font-size:1.75mm; color:var(--ink); white-space:nowrap;">{n}</div>
+        <div class="jp" style="margin-top:.4mm; font-weight:500; font-size:1.45mm; color:var(--muted); white-space:nowrap;">{d}</div>
+      </div>""" for b, n, d in PICKS[:5])
+G1_BACK = g_card(
+    '<div class="jp" style="margin-top:.9mm; font-weight:900; font-size:3.5mm; line-height:1.35; letter-spacing:.02em; color:var(--ink);">10年で100本以上、<br>iPhoneのアプリを作っています。</div>',
+    f'<div style="position:absolute; left:0; right:0; top:17mm; display:flex; justify-content:space-between;">{row5}</div>')
+
+# G2: 6本のまま、2列×3段のリストにする（アイコンの右に名前と一言。見出しは1行）
+list6 = "".join(f"""
+      <div style="display:flex; align-items:center; gap:1.8mm;">
+        {icon(b, 6.4)}
+        <div>
+          <div class="jp" style="font-weight:700; font-size:1.95mm; line-height:1.3; color:var(--ink); white-space:nowrap;">{n}</div>
+          <div class="jp" style="font-weight:500; font-size:1.7mm; line-height:1.35; color:var(--muted); white-space:nowrap;">{d}</div>
+        </div>
+      </div>""" for b, n, d in PICKS)
+G2_BACK = g_card(
+    '<div class="jp" style="margin-top:.9mm; font-weight:900; font-size:3.15mm; letter-spacing:.01em; color:var(--ink); white-space:nowrap;">10年で100本以上、iPhoneのアプリを作っています。</div>',
+    f'<div style="position:absolute; left:0; right:0; top:11.3mm; display:grid; grid-template-columns:1fr 1fr; gap:.9mm 3mm;">{list6}</div>')
+
+G_BACK = G1_BACK
 
 # ---------- H アイコンの壁 ----------
 COLS, ROWS, SIZE, PITCH = 8, 7, 6.3, 7.45
@@ -113,9 +138,8 @@ I_BACK = f"""
 </div>"""
 
 PATTERNS = [
-    ("G", "代表作の6本", "見出しで「10年で100本以上のアプリを作っている人」と言い切り、レビューの多い代表作を6本、アイコンと一言で並べる。会社の人が「何の人か」を読んで分かる", G_BACK),
-    ("H", "アイコンの壁", "公開中の81本から、レビューの多い順に56本のアイコンを並べる。読まなくても「この人はアプリをたくさん作っている」が一目で分かる。子どもも知っているアイコンを探せる", H_BACK),
-    ("I", "表の3人のアプリ", "表の3人が、それぞれどのアプリの子かを並べる。表の絵と裏がつながり、親が子どもに「うんちくんを作った人だよ」と話せる", I_BACK),
+    ("G1", "横一列・5本", "いまの G の並びのまま、一言が1行に入るように SkyCode を外して5本にする", G1_BACK),
+    ("G2", "2列×3段・6本", "6本のまま、アイコンの右に名前と一言を置くリストにする。一言の字が少し大きくなる。見出しは1行", G2_BACK),
 ]
 
 
