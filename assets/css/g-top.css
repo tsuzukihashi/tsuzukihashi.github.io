@@ -174,7 +174,7 @@ html.sheet-open { overflow: hidden; }
   transform-origin: 0 100%; transform: var(--lid-open); --lid-open: translate(-4%, -6%) rotate(-42deg);
 }
 .t-pop-burst .bowl { border-width: 5px; }
-.t-pop-burst .icon { z-index: 1; border-width: 5px; box-shadow: 7px 7px 0 var(--g-k); }
+.t-pop-burst .icon { z-index: 1; border-width: 5px; box-shadow: none; }
 .t-pop-name { font: 400 24px/1.35 var(--g-head); margin: 10px 0 4px; overflow-wrap: anywhere; }
 .t-pop-line { font: 700 13.5px/1.7 var(--g-body); color: #5a4650; margin: 0 0 18px; }
 .t-pop-actions { display: grid; gap: 10px; }
