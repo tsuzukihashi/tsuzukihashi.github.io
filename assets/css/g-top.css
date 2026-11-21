@@ -16,7 +16,20 @@
 /* 出た！ */
 
 /* 機械 */
-.t-mach { position: relative; width: 100%; }
+.t-mach { position: relative; width: 100%; container-type: inline-size; }
+/*
+ * レバー。絵（machine-dial.webp）は白い丸だけにして、棒と真ん中の丸をここで重ねて回す。
+ * 位置と大きさは元の絵（machine.webp・940x1410）のレバーを画素で測った値: 丸の中心 (468.5, 990)・棒 330x81・真ん中の丸 140
+ */
+.t-lever { position: absolute; left: 49.84%; top: 70.4%; width: 0; height: 0; }
+.t-lever-arm { position: absolute; left: 0; top: 0; width: 35.1cqw; height: 35.1cqw; transform: translate(-50%, -50%); }
+.t-lever .bar, .t-lever .hub { position: absolute; background: #fefefe; border: 1.3cqw solid var(--g-k); box-sizing: border-box; }
+.t-lever .bar { left: 0; right: 0; top: 50%; height: 8.7cqw; transform: translateY(-50%); border-radius: 999px; box-shadow: inset 0 -1.1cqw 0 #dcdcdc; }
+.t-lever .hub { left: 50%; top: 50%; width: 14.9cqw; height: 14.9cqw; transform: translate(-50%, -50%); border-radius: 50%; box-shadow: inset -1cqw -1.2cqw 0 #e4e4e4; }
+@media (prefers-reduced-motion: no-preference) {
+  .t-mach.is-rolling .t-lever-arm { animation: t-lever-turn .65s cubic-bezier(.45, 0, .2, 1.15); }
+}
+@keyframes t-lever-turn { from { transform: translate(-50%, -50%) rotate(0deg); } to { transform: translate(-50%, -50%) rotate(360deg); } }
 .t-mach-body { width: 100%; display: block; filter: drop-shadow(12px 12px 0 rgba(42, 16, 32, .9)); }
 .t-globe { position: absolute; left: 8.4%; top: 6.1%; width: 83.2%; aspect-ratio: 1; border-radius: 50%; overflow: hidden; }
 .t-glass { position: absolute; inset: 0; background: radial-gradient(circle at 35% 30%, #fff 0, #eef9ff 45%, #d7eefc 100%); }
