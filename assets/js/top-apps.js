@@ -187,7 +187,37 @@
         current = a.id;
     }
     // 閉じたカプセルが出てきて、揺れて、開く（CSS の .is-pop）
+    function rnd(a, b) { return a + Math.random() * (b - a); }
+    function any(list) { return list[Math.floor(Math.random() * list.length)]; }
+    // 揺れ方と開け方を、回すたびに選ぶ（CSS の --shake-* / --lid-* に渡す）
+    function shuffleMotion() {
+        var s = burst.style;
+        var shake = any(['t-cap-shake', 't-cap-hop', 't-cap-twist']);
+        var t = shake === 't-cap-hop' ? rnd(.26, .36) : rnd(.12, .22);
+        var n = shake === 't-cap-hop' ? any([1, 2, 2, 3]) : any([2, 3, 4, 5]);
+        s.setProperty('--shake-name', shake);
+        s.setProperty('--shake-a', rnd(5, 14).toFixed(1) + 'deg');
+        s.setProperty('--shake-h', rnd(8, 18).toFixed(1) + '%');
+        s.setProperty('--shake-t', t.toFixed(2) + 's');
+        s.setProperty('--shake-n', n);
+        s.setProperty('--open-at', (.45 + t * n + rnd(.02, .18)).toFixed(2) + 's');
+
+        var side = Math.random() < .5 ? -1 : 1;
+        var open = any(['hinge', 'hinge', 'wide', 'pop', 'slide']);
+        var deg = rnd(32, 50);
+        var origin = side < 0 ? '0 100%' : '100% 100%';
+        var lid;
+        if (open === 'hinge') lid = 'translate(' + (side * 4) + '%, -6%) rotate(' + (side * deg) + 'deg)';
+        else if (open === 'wide') lid = 'translate(' + (side * 2) + '%, -2%) rotate(' + (side * rnd(68, 82)) + 'deg)';
+        else if (open === 'pop') { origin = '50% 100%'; lid = 'translate(' + rnd(-22, 22).toFixed(0) + '%, ' + rnd(-80, -62).toFixed(0) + '%) rotate(' + rnd(-30, 30).toFixed(0) + 'deg)'; }
+        else { origin = '50% 100%'; lid = 'translate(' + (side * rnd(48, 62)).toFixed(0) + '%, -22%) rotate(' + (side * rnd(18, 32)).toFixed(0) + 'deg)'; }
+        s.setProperty('--lid-origin', origin);
+        s.setProperty('--lid-open', lid);
+        s.setProperty('--lid-t', (open === 'pop' ? rnd(.36, .46) : rnd(.24, .36)).toFixed(2) + 's');
+        s.setProperty('--icon-rot', rnd(-12, 12).toFixed(0) + 'deg');
+    }
     function reveal() {
+        shuffleMotion();
         pop.classList.remove('is-rolling', 'is-pop');
         void pop.offsetWidth;
         pop.classList.add('is-pop');
