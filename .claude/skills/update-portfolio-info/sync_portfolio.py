@@ -97,9 +97,21 @@ def update_html(published, developed, reviews, rating, changes):
     t = sub_count(t, r"(across )([\d,]+)( reviews)", rev, changes, "portfolio meta(en レビュー)")
     t = sub_count(t, r'(id="filterResults"><span class="i18n-ja">)(\d+)(件表示中)', published, changes, "portfolio filterResults")
     t = sub_count(t, r"(Showing )(\d+)( apps)", published, changes, "portfolio filterResults(en)")
+    # ガチャの見た目（2026-11-21〜）の「すべてのアプリ」の見出しの数
+    t = sub_count(t, r'(<span class="i18n-ja">全)(\d+)(種</span><span class="i18n-en">)', published, changes, "portfolio 全◯種")
+    t = sub_count(t, r'(<span class="i18n-en">)(\d+)( apps</span></small>)', published, changes, "portfolio ◯ apps")
     if t != before:
         open(pf, "w", encoding="utf-8").write(t)
         changes.append("   ✏️  portfolio/index.html")
+
+    # アプリのページ（portfolio/apps/*.html）の「No.◯ ／ 全部の数」
+    import glob
+    for ap in sorted(glob.glob(os.path.join(ROOT, "portfolio", "apps", "*.html"))):
+        t = open(ap, encoding="utf-8").read()
+        nt = re.sub(r'(<span class="ga-no">No\.\d+ ／ )(\d+)(</span>)', lambda m: m.group(1) + str(published) + m.group(3), t)
+        if nt != t:
+            open(ap, "w", encoding="utf-8").write(nt)
+            changes.append(f"   ✏️  portfolio/apps/{os.path.basename(ap)}")
 
     # トップの公開中の本数・評価・アプリの一覧は scripts/build_top_apps.py が apps.json から作る
     ix = os.path.join(ROOT, "index.html")
@@ -114,7 +126,8 @@ def update_html(published, developed, reviews, rating, changes):
     # 「100本以上作った」は手書きの値（公開＋譲渡＋停止より多い）なので触らない
     t = sub_count(t, r"(いま)(\d+)(本がApp Store)", published, changes, "about 公開中本数")
     t = sub_count(t, r"(and )(\d+)( of them are on the App Store)", published, changes, "about 公開中本数(en)")
-    t = sub_count(t, r'(<div class="intro-stat-number">)(\d+)(</div>\s*<div class="intro-stat-label"><span class="i18n-ja">公開アプリ)', published, changes, "about 公開アプリ")
+    # ガチャの見た目（2026-11-21〜）では、数字はカプセルのシール ab-sticker の <b> に入っている
+    t = sub_count(t, r'(<b>)(\d+)(</b>\s*<span><span class="i18n-ja">公開アプリ)', published, changes, "about 公開アプリ")
     if t != before:
         open(ab, "w", encoding="utf-8").write(t)
         changes.append("   ✏️  about/index.html")
