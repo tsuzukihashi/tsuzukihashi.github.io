@@ -183,31 +183,77 @@
         el('wonStore').href = storeUrl(a);
         el('wonMore').setAttribute('data-app', a.id);
         current = a.id;
+        fillPop(a);
     }
+
+    // ---------- 結果のポップアップ ----------
+    var pop = el('gachaPop');
+    var burst = el('popBurst');
+    function fillPop(a) {
+        if (!pop) return;
+        el('popIcon').src = a.i;
+        burst.style.setProperty('--c', 'var(--g-c' + a.c + ')');
+        burst.setAttribute('data-rare', a.k);
+        var rare = el('popRare');
+        rare.className = 'g-rare g-rare--' + a.k;
+        rare.textContent = a.k;
+        el('popName').textContent = isEn ? a.ne : a.n;
+        el('popLine').textContent = line(a);
+        el('popStore').href = storeUrl(a);
+        el('popMore').setAttribute('data-app', a.id);
+    }
+    function openPop() {
+        if (!pop) return;
+        document.documentElement.classList.add('sheet-open');
+        if (!pop.open) {
+            if (typeof pop.showModal === 'function') pop.showModal();
+            else pop.setAttribute('open', '');
+        }
+        pop.classList.remove('is-pop');
+        void pop.offsetWidth;
+        pop.classList.add('is-pop');
+    }
+    function closePop() {
+        if (typeof pop.close === 'function') pop.close();
+        else pop.removeAttribute('open');
+    }
+    if (pop) {
+        pop.addEventListener('close', function () {
+            if (!sheet.open) document.documentElement.classList.remove('sheet-open');
+        });
+        el('popClose').addEventListener('click', closePop);
+        pop.addEventListener('click', function (e) { if (e.target === pop) closePop(); });
+    }
+    // シートを閉じたとき、結果のポップアップがまだ開いていればスクロールを止めたままにする
+    sheet.addEventListener('close', function () {
+        if (pop && pop.open) document.documentElement.classList.add('sheet-open');
+    });
+
     function spin() {
         if (busy || !won) return;
         busy = true;
         var next;
         do { next = apps[Math.floor(Math.random() * apps.length)]; } while (apps.length > 1 && next.id === current);
-        if (reduce) { show(next); busy = false; return; }
+        if (reduce) { show(next); openPop(); busy = false; return; }
+        var again = pop && pop.open;
         won.classList.remove('is-pop');
         won.classList.add('is-rolling');
         if (mach) mach.classList.add('is-rolling');
+        // ポップアップの中で回し直したときは、ポップアップの中のカプセルを揺らす
+        if (again) { pop.classList.remove('is-pop'); pop.classList.add('is-rolling'); }
         setTimeout(function () {
             if (mach) mach.classList.remove('is-rolling');
             won.classList.remove('is-rolling');
+            if (pop) pop.classList.remove('is-rolling');
             show(next);
             void won.offsetWidth;
             won.classList.add('is-pop');
+            openPop();
             busy = false;
         }, 650);
     }
-    ['gachaKnob', 'gachaAgain'].forEach(function (id) {
+    ['gachaKnob', 'gachaAgain', 'popAgain'].forEach(function (id) {
         var b = el(id);
-        if (b) b.addEventListener('click', function () {
-            spin();
-            // スマホでは機械が札より下にあるので、回したら札が見えるところへ
-            if (id === 'gachaKnob' && won.getBoundingClientRect().top < 0) won.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'center' });
-        });
+        if (b) b.addEventListener('click', spin);
     });
 })();

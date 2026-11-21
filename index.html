@@ -281,6 +281,23 @@
             </div>
         </footer>
 
+        <!-- 回した結果（top-apps.js が中身を入れて開く） -->
+        <dialog class="t-pop" id="gachaPop" aria-labelledby="popName">
+            <div class="t-pop-inner" tabindex="-1" autofocus>
+                <button type="button" class="app-sheet-close" id="popClose" aria-label="閉じる" data-en-aria-label="Close">×</button>
+                <span class="t-pop-tag"><span class="i18n-ja">出た！</span><span class="i18n-en">You got</span></span>
+                <div class="g-burst t-pop-burst" id="popBurst"><span class="rays"></span><span class="lid"></span><span class="bowl"></span><span class="icon"><img id="popIcon" src="" alt="" width="256" height="256"></span></div>
+                <span class="g-rare" id="popRare"></span>
+                <h2 class="t-pop-name" id="popName"></h2>
+                <p class="t-pop-line" id="popLine"></p>
+                <div class="t-pop-actions">
+                    <a class="g-btn g-btn--k" id="popStore" href="#" target="_blank" rel="noopener"><span class="i18n-ja">App Store で入れる</span><span class="i18n-en">Get it on the App Store</span></a>
+                    <button type="button" class="g-btn" id="popMore" data-app=""><span class="i18n-ja">くわしく</span><span class="i18n-en">Details</span></button>
+                    <button type="button" class="g-btn g-btn--y" id="popAgain"><span class="i18n-ja">もう1回まわす</span><span class="i18n-en">Spin again</span></button>
+                </div>
+            </div>
+        </dialog>
+
         <!-- アプリのシート -->
         <dialog class="app-sheet" id="appSheet" aria-labelledby="sheetName">
             <div class="app-sheet-inner" tabindex="-1" autofocus>
