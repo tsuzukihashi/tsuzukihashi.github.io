@@ -33,6 +33,8 @@ NAMES_EN = {
     "Yattayo やったよボード": "Yattayo: Slider To-Do Board",
     "Monivo 声で起こし合うアラーム": "Monivo: Wake Up by Voice",
     "パタパタ推し時計": "Oshi Clock: Flip Photo Widget",
+    "集中電鉄": "Focus Railway - Study Timer",
+    "足利工業大学スクールバス": "Ashikaga Tech School Bus",
 }
 
 
