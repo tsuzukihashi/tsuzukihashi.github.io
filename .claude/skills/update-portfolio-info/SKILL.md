@@ -112,6 +112,7 @@ python3 docs/build_ranking.py
 ```
 
 App Store の合計・Google Play の合計・両方の合算（`grand_total`）がページに出る。
+続けて `scripts/apply_ranking_downloads.py` が apps.json の `download_count`（ガチャのレア度と並び順の元）をランキングの数字（App Store＋Play）に入れ直し、`scripts/build_top_apps.py` でトップを作り直す。
 `index.html` の「総ダウンロード」と代表作のDL数も、この数字に合わせて直すこと。
 
 ### 5. 報告 → コミット＆プッシュ

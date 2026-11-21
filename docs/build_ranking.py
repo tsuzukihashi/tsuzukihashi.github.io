@@ -274,3 +274,8 @@ with open(OUT, "w", encoding="utf-8") as f:
     f.write(HTML)
 print(f"wrote {OUT}")
 print(f"  {DATA['app_count']}本 / 合計 {DATA['total_units']:,}")
+
+# ガチャのレア度（apps.json の download_count）とトップを、このランキングの数字にそろえる
+import subprocess
+subprocess.run([sys.executable, os.path.join(REPO, "scripts", "apply_ranking_downloads.py")], check=True)
+subprocess.run([sys.executable, os.path.join(REPO, "scripts", "build_top_apps.py")], check=True)

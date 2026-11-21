@@ -1,7 +1,7 @@
 # ガチャの見た目（2026-11-21〜）
 
 サイトそのものがカプセルトイの機械。81本のアプリがカプセルに入っていて、トップで回すと1本出る。
-レア度はダウンロード数（`assets/data/apps.json` の `download_count`）。
+レア度はダウンロード数（`assets/data/apps.json` の `download_count`）。中身はランキング（`assets/data/app-ranking.json`）の App Store のユニット数と Google Play の累計インストールの合計で、`python3 docs/build_ranking.py` を流すと `scripts/apply_ranking_downloads.py` が入れ直す。
 
 - SSR … 10万DL以上（色 #ff3d7f）
 - SR … 1万DL以上（#8a3ffc）
