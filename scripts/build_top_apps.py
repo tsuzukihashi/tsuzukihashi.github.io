@@ -11,7 +11,6 @@
 
 index.html の次の印のあいだを書きかえる
 - TOP-TRUST  … 公開中の本数と評価
-- TOP-WON    … 「出た！」の札に最初に出すアプリ（いちばんダウンロードの多いもの。押すと回せる）
 - TOP-GLOBE  … 機械の玉の中のカプセル
 - TOP-ODDS   … 排出のめやす（レア度ごとの本数）
 - TOP-APPS   … ラインナップ（レア度ごとの段。押すとシートが出る）
@@ -158,24 +157,6 @@ trust = f'''
                         '''
 
 # ---------------------------------------------------------------- 出た！
-w = data[0]
-wl_ja, wl_en = line(w)
-won = f'''
-                        <span class="t-won-tag">{bi('出た！', 'You got')}</span>
-                        <div class="t-won-open" id="wonOpen" style="--c:var(--g-c{w["c"]})"><span class="b"></span><span class="app"><img id="wonIcon" src="{e(w["i"])}" alt="" width="96" height="96"></span><span class="t"></span></div>
-                        <div class="t-won-body">
-                            <span class="g-rare g-rare--{w["k"]}" id="wonRare">{w["k"]}</span>
-                            <h2 class="t-won-name" id="wonName">{label(w)}</h2>
-                            <p class="t-won-line" id="wonLine">{bi(e(wl_ja), e(wl_en))}</p>
-                            <div class="g-btns">
-                                <a class="g-btn g-btn--k" id="wonStore" href="{e(w["s"])}" target="_blank" rel="noopener">{bi('App Store で入れる', 'Get it on the App Store')}</a>
-                                <button type="button" class="g-btn" id="wonMore" data-app="{w["id"]}">{bi('くわしく', 'Details')}</button>
-                                <button type="button" class="g-btn g-btn--y" id="gachaAgain">{bi('もう1回まわす', 'Spin again')}</button>
-                            </div>
-                        </div>
-                        '''
-
-
 # ---------------------------------------------------------------- 機械の玉
 def pile(n, d):
     """半径 50 の円の中に、直径 d のカプセルを下から積む（0〜100 の座標）。"""
@@ -273,7 +254,6 @@ def put(src, name, body):
 
 
 src = put(src, 'TOP-TRUST', trust)
-src = put(src, 'TOP-WON', won)
 src = put(src, 'TOP-GLOBE', globe)
 src = put(src, 'TOP-ODDS', odds)
 src = put(src, 'TOP-APPS', tiers)

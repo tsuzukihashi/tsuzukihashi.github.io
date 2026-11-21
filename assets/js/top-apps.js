@@ -153,10 +153,11 @@
         open(t.getAttribute('data-app'));
     });
 
-    // ---------- 回す ----------
-    var won = el('gachaWon');
+    // ---------- 回す（結果はポップアップだけで見せる） ----------
     var mach = el('gachaMachine');
-    var current = (el('wonMore') || {}).getAttribute ? el('wonMore').getAttribute('data-app') : null;
+    var pop = el('gachaPop');
+    var burst = el('popBurst');
+    var current = null;
     var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     var busy = false;
 
@@ -172,25 +173,7 @@
         if (a.d > 0) parts.push(isEn ? dlText(a.d) + ' downloads' : dlText(a.d) + 'ダウンロード');
         return parts.join(isEn ? ' · ' : '・');
     }
-    function show(a) {
-        el('wonIcon').src = a.i;
-        el('wonOpen').style.setProperty('--c', 'var(--g-c' + a.c + ')');
-        var rare = el('wonRare');
-        rare.className = 'g-rare g-rare--' + a.k;
-        rare.textContent = a.k;
-        el('wonName').textContent = isEn ? a.sne : a.sn;
-        el('wonLine').textContent = line(a);
-        el('wonStore').href = storeUrl(a);
-        el('wonMore').setAttribute('data-app', a.id);
-        current = a.id;
-        fillPop(a);
-    }
-
-    // ---------- 結果のポップアップ ----------
-    var pop = el('gachaPop');
-    var burst = el('popBurst');
     function fillPop(a) {
-        if (!pop) return;
         el('popIcon').src = a.i;
         burst.style.setProperty('--c', 'var(--g-c' + a.c + ')');
         burst.setAttribute('data-rare', a.k);
@@ -201,59 +184,69 @@
         el('popLine').textContent = line(a);
         el('popStore').href = storeUrl(a);
         el('popMore').setAttribute('data-app', a.id);
+        current = a.id;
     }
-    function openPop() {
-        if (!pop) return;
-        document.documentElement.classList.add('sheet-open');
-        if (!pop.open) {
-            if (typeof pop.showModal === 'function') pop.showModal();
-            else pop.setAttribute('open', '');
-        }
-        pop.classList.remove('is-pop');
+    // 閉じたカプセルが出てきて、揺れて、開く（CSS の .is-pop）
+    function reveal() {
+        pop.classList.remove('is-rolling', 'is-pop');
         void pop.offsetWidth;
         pop.classList.add('is-pop');
+    }
+    function openPop() {
+        document.documentElement.classList.add('sheet-open');
+        pop.classList.add('is-first');
+        if (typeof pop.showModal === 'function') pop.showModal();
+        else pop.setAttribute('open', '');
     }
     function closePop() {
         if (typeof pop.close === 'function') pop.close();
         else pop.removeAttribute('open');
     }
-    if (pop) {
-        pop.addEventListener('close', function () {
-            if (!sheet.open) document.documentElement.classList.remove('sheet-open');
-        });
-        el('popClose').addEventListener('click', closePop);
-        pop.addEventListener('click', function (e) { if (e.target === pop) closePop(); });
-    }
+    pop.addEventListener('close', function () {
+        pop.classList.remove('is-first', 'is-pop', 'is-rolling');
+        if (!sheet.open) document.documentElement.classList.remove('sheet-open');
+    });
+    el('popClose').addEventListener('click', closePop);
+    pop.addEventListener('click', function (e) { if (e.target === pop) closePop(); });
     // シートを閉じたとき、結果のポップアップがまだ開いていればスクロールを止めたままにする
     sheet.addEventListener('close', function () {
-        if (pop && pop.open) document.documentElement.classList.add('sheet-open');
+        if (pop.open) document.documentElement.classList.add('sheet-open');
     });
 
-    function spin() {
-        if (busy || !won) return;
-        busy = true;
+    function pick() {
         var next;
         do { next = apps[Math.floor(Math.random() * apps.length)]; } while (apps.length > 1 && next.id === current);
-        if (reduce) { show(next); openPop(); busy = false; return; }
-        var again = pop && pop.open;
-        won.classList.remove('is-pop');
-        won.classList.add('is-rolling');
+        return next;
+    }
+    // 機械の「まわす！」: 機械を揺らしてから、ポップアップを開く
+    function spin() {
+        if (busy) return;
+        busy = true;
+        var next = pick();
+        if (reduce) { fillPop(next); openPop(); busy = false; return; }
         if (mach) mach.classList.add('is-rolling');
-        // ポップアップの中で回し直したときは、ポップアップの中のカプセルを揺らす
-        if (again) { pop.classList.remove('is-pop'); pop.classList.add('is-rolling'); }
         setTimeout(function () {
             if (mach) mach.classList.remove('is-rolling');
-            won.classList.remove('is-rolling');
-            if (pop) pop.classList.remove('is-rolling');
-            show(next);
-            void won.offsetWidth;
-            won.classList.add('is-pop');
+            fillPop(next);
             openPop();
+            reveal();
             busy = false;
         }, 650);
     }
-    ['gachaKnob', 'gachaAgain', 'popAgain'].forEach(function (id) {
-        var b = el(id);
-        if (b) b.addEventListener('click', spin);
-    });
+    // ポップアップの「もう1回まわす」: 蓋を閉じて揺らしてから、次のアプリで開く
+    function spinAgain() {
+        if (busy) return;
+        busy = true;
+        var next = pick();
+        if (reduce) { fillPop(next); busy = false; return; }
+        pop.classList.remove('is-pop', 'is-first');
+        pop.classList.add('is-rolling');
+        setTimeout(function () {
+            fillPop(next);
+            reveal();
+            busy = false;
+        }, 450);
+    }
+    el('gachaKnob').addEventListener('click', spin);
+    el('popAgain').addEventListener('click', spinAgain);
 })();

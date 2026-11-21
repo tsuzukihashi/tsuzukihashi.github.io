@@ -14,19 +14,6 @@
 .t-stats li > span { font: 800 12px/1.4 var(--g-body); color: var(--g-mute); }
 
 /* 出た！ */
-.t-won { margin-top: 30px; padding: 24px 24px 22px; display: grid; grid-template-columns: 170px 1fr; gap: 20px; align-items: center; position: relative; }
-.t-won-tag { position: absolute; left: 22px; top: -19px; background: var(--g-k); color: var(--g-y); font: 400 18px/1.4 var(--g-head); padding: 4px 16px; border-radius: 999px; }
-.t-won-open { --c: var(--g-c2); position: relative; height: 170px; }
-.t-won-open .t, .t-won-open .b { position: absolute; left: 10px; width: 150px; height: 75px; border: 4px solid var(--g-k); background: #fff; }
-.t-won-open .t { top: 4px; border-radius: 75px 75px 0 0; background: var(--c); transform: rotate(-24deg) translate(-12px, -8px); transform-origin: left bottom; }
-.t-won-open .b { bottom: 6px; border-radius: 0 0 75px 75px; }
-.t-won-open .app { position: absolute; left: 36px; top: 38px; width: 96px; border: 4px solid var(--g-k); border-radius: 24%; overflow: hidden; box-shadow: 4px 4px 0 var(--g-k); transform: rotate(-6deg); background: #fff; line-height: 0; }
-.t-won-open .app img { width: 100%; height: auto; }
-.t-won-name { font: 400 32px/1.3 var(--g-head); margin: 8px 0 4px; }
-.t-won-line { font: 700 14px/1.7 var(--g-body); margin-bottom: 14px; }
-.t-won.is-rolling .t-won-open { animation: g-wobble .25s linear infinite; }
-.t-won.is-rolling .t-won-body { opacity: .35; transition: opacity .15s; }
-.t-won.is-pop .t-won-open .app { animation: g-pop .45s cubic-bezier(.2, .9, .3, 1.3); }
 
 /* 機械 */
 .t-mach { position: relative; width: 100%; }
@@ -181,26 +168,45 @@ html.sheet-open { overflow: hidden; }
   display: inline-block; background: var(--g-k); color: var(--g-y); font: 400 20px/1.4 var(--g-head); padding: 4px 20px; border-radius: 999px;
 }
 .t-pop-burst { width: 230px; margin: 4px auto 6px; }
-.t-pop-burst .lid { border-width: 5px; border-bottom-width: 8px; }
+/* 蓋は器と同じ幅にして、左下を軸に開く（閉じた形＝transform なし） */
+.t-pop-burst .lid {
+  left: 14%; top: 20%; width: 72%; height: 36%; border-width: 5px; border-bottom-width: 0; border-radius: 999px 999px 0 0;
+  transform-origin: 0 100%; transform: var(--lid-open); --lid-open: translate(-4%, -6%) rotate(-42deg);
+}
 .t-pop-burst .bowl { border-width: 5px; }
-.t-pop-burst .icon { border-width: 5px; box-shadow: 7px 7px 0 var(--g-k); }
+.t-pop-burst .icon { z-index: 1; border-width: 5px; box-shadow: 7px 7px 0 var(--g-k); }
 .t-pop-name { font: 400 24px/1.35 var(--g-head); margin: 10px 0 4px; overflow-wrap: anywhere; }
 .t-pop-line { font: 700 13.5px/1.7 var(--g-body); color: #5a4650; margin: 0 0 18px; }
 .t-pop-actions { display: grid; gap: 10px; }
 .t-pop-actions .g-btn { width: 100%; }
+/*
+ * 出かた（is-pop）: 閉じたカプセルが落ちてくる → ガタガタ揺れる → 蓋が開く → アプリが飛び出す → 名前が出る
+ * 回し直し（is-rolling）: 蓋を閉じて揺れつづける
+ */
 @media (prefers-reduced-motion: no-preference) {
-  .t-pop.is-pop .t-pop-inner { animation: g-pop .35s cubic-bezier(.2, .9, .3, 1.2); }
-  .t-pop.is-pop .t-pop-burst .icon { animation: t-pop-out .55s .1s cubic-bezier(.2, .9, .3, 1.3) both; }
-  .t-pop.is-pop .t-pop-burst .lid { animation: t-pop-lid .4s cubic-bezier(.2, .9, .3, 1.2) both; }
-  .t-pop-burst[data-rare="SSR"] .rays, .t-pop-burst[data-rare="SR"] .rays { animation: t-pop-spin 9s linear infinite; }
-  .t-pop.is-rolling .t-pop-burst { animation: g-wobble .25s linear infinite; }
-  .t-pop.is-rolling .t-pop-burst .icon { opacity: 0; transition: opacity .1s; }
-  .t-pop.is-rolling .t-pop-name, .t-pop.is-rolling .t-pop-line, .t-pop.is-rolling .t-pop-inner > .g-rare { opacity: .3; }
+  .t-pop.is-first .t-pop-inner { animation: g-pop .3s cubic-bezier(.2, .9, .3, 1.2); }
+  .t-pop.is-pop .t-pop-burst { animation: t-cap-in .4s cubic-bezier(.3, 1.4, .5, 1) both, t-cap-shake .16s .45s 3 linear; }
+  .t-pop.is-pop .t-pop-burst .lid { animation: t-lid-open .32s .95s cubic-bezier(.2, 1.3, .4, 1) both; }
+  .t-pop.is-pop .t-pop-burst .rays { animation: t-fade-in .3s 1s both; }
+  .t-pop.is-pop .t-pop-burst .icon { animation: t-icon-out .5s 1.05s cubic-bezier(.2, 1.4, .4, 1) both; }
+  .t-pop.is-pop .t-pop-inner > .g-rare,
+  .t-pop.is-pop .t-pop-name,
+  .t-pop.is-pop .t-pop-line { animation: t-text-in .35s 1.4s both; }
+  .t-pop-burst[data-rare="SSR"] .rays, .t-pop-burst[data-rare="SR"] .rays { animation: t-fade-in .3s 1s both, t-pop-spin 9s 1s linear infinite; }
+  .t-pop.is-rolling .t-pop-burst { animation: t-cap-shake .16s linear infinite; }
+  .t-pop.is-rolling .t-pop-burst .lid { transform: none; transition: transform .15s; }
+  .t-pop.is-rolling .t-pop-burst .icon,
+  .t-pop.is-rolling .t-pop-burst .rays { opacity: 0; }
+  .t-pop.is-rolling .t-pop-name, .t-pop.is-rolling .t-pop-line, .t-pop.is-rolling .t-pop-inner > .g-rare { opacity: 0; }
 }
 /* SSR は光の筋を濃く */
 .t-pop-burst[data-rare="SSR"] .rays { background: repeating-conic-gradient(from 0deg, rgba(255, 255, 255, .95) 0 8deg, transparent 8deg 20deg); }
-@keyframes t-pop-out { 0% { transform: translate(-50%, 10%) rotate(0) scale(.4); opacity: 0; } 100% { transform: translate(-50%, -50%) rotate(-6deg); opacity: 1; } }
-@keyframes t-pop-lid { 0% { transform: rotate(0) translate(18%, 70%); } 100% { transform: rotate(-38deg); } }
+@keyframes t-cap-in { 0% { transform: translateY(-60%) scale(.6); opacity: 0; } 70% { transform: translateY(4%) scale(1.04); opacity: 1; } 100% { transform: none; } }
+@keyframes t-cap-shake { 0%, 100% { rotate: 0deg; } 25% { rotate: -9deg; } 75% { rotate: 9deg; } }
+@keyframes t-lid-open { 0% { transform: none; } 100% { transform: var(--lid-open); } }
+@keyframes t-icon-out { 0% { transform: translate(-50%, 30%) scale(.3); opacity: 0; } 100% { transform: translate(-50%, -50%) rotate(-6deg); opacity: 1; } }
+@keyframes t-fade-in { from { opacity: 0; } to { opacity: 1; } }
+@keyframes t-text-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
 @keyframes t-pop-spin { to { transform: rotate(360deg); } }
 
 /* ---------------------------------------------------------------- 幅ごと */
@@ -224,16 +230,6 @@ html.sheet-open { overflow: hidden; }
   .t-stats li { min-width: 0; flex: 1 1 0; padding: 5px 9px 6px; border-radius: 14px; }
   .t-stats b { font-size: 19px; }
   .t-stats li > span { font-size: 10.5px; white-space: nowrap; }
-  .t-won { grid-template-columns: 104px 1fr; padding: 18px 16px 16px; gap: 12px; margin-top: 26px; }
-  .t-won-open { height: 112px; transform: scale(.66); transform-origin: left top; width: 160px; }
-  .t-won-name { font-size: 22px; }
-  .t-won-line { font-size: 12.5px; }
-  .t-won .g-btns { grid-column: 1 / -1; }
-  .t-won-body { display: contents; }
-  .t-won-body > .g-rare, .t-won-body > .t-won-name, .t-won-body > .t-won-line { grid-column: 2; }
-  .t-won-body > .g-rare { justify-self: start; align-self: end; }
-  .t-won-open { grid-row: 1 / 4; }
-  .t-won .g-btn { padding: 9px 14px; font-size: 13.5px; }
   .t-hero-side { max-width: 340px; }
   .t-knob { font-size: 15px; padding: 7px 16px; }
   .t-lineup { padding: 16px 14px; }
