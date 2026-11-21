@@ -200,7 +200,8 @@
         s.setProperty('--shake-h', rnd(8, 18).toFixed(1) + '%');
         s.setProperty('--shake-t', t.toFixed(2) + 's');
         s.setProperty('--shake-n', n);
-        s.setProperty('--open-at', (.45 + t * n + rnd(.02, .18)).toFixed(2) + 's');
+        var openAt = .45 + t * n + rnd(.02, .18);
+        s.setProperty('--open-at', openAt.toFixed(2) + 's');
 
         var side = Math.random() < .5 ? -1 : 1;
         var open = any(['hinge', 'hinge', 'wide', 'pop', 'slide']);
@@ -215,9 +216,54 @@
         s.setProperty('--lid-open', lid);
         s.setProperty('--lid-t', (open === 'pop' ? rnd(.36, .46) : rnd(.24, .36)).toFixed(2) + 's');
         s.setProperty('--icon-rot', rnd(-12, 12).toFixed(0) + 'deg');
+        return { shake: shake, t: t, n: n, openAt: openAt };
     }
-    function reveal() {
-        shuffleMotion();
+
+    // ---------- 振動（Android は navigator.vibrate、iPhone は押した瞬間の「コッ」だけ） ----------
+    // iPhone の Safari は navigator.vibrate が無い。iOS 17.4 からのスイッチ型のチェックボックスは、
+    // 本物の指のタップで切り替わったときだけ「コッ」と鳴る（iOS 26.5 から、プログラムで押しても鳴らない）。
+    // そこでボタンの中に透明なラベルを敷き、指がラベルを直接押すようにする。鳴るのは押した瞬間の1回だけ。
+    var canVibrate = typeof navigator.vibrate === 'function';
+    function buzz(pattern) {
+        if (!canVibrate) return;
+        try { navigator.vibrate(pattern); } catch (e) { /* 鳴らせない端末は黙って何もしない */ }
+    }
+    function tapTick(btn) {
+        if (canVibrate || !btn) return;
+        var label = document.createElement('label');
+        label.className = 't-haptic';
+        label.setAttribute('aria-hidden', 'true');
+        var input = document.createElement('input');
+        input.type = 'checkbox';
+        input.setAttribute('switch', '');
+        input.tabIndex = -1;
+        label.appendChild(input);
+        btn.appendChild(label);
+    }
+    // カプセルの動きに合わせた振動のパターン（[鳴らす, 休む, 鳴らす, …] のミリ秒）
+    var OPEN_BUZZ = { N: [35], R: [45], SR: [40, 60, 50], SSR: [60, 50, 60, 50, 140] };
+    function revealBuzz(m, rare) {
+        var hits = [[280, 18]];  // 落ちてきて着地
+        for (var i = 0; i < m.n; i++) {
+            var at = 450 + (i + (m.shake === 't-cap-hop' ? .85 : .25)) * m.t * 1000;
+            hits.push([at, 12]);
+        }
+        var openMs = m.openAt * 1000;
+        var open = OPEN_BUZZ[rare] || OPEN_BUZZ.N;
+        var pattern = [0];
+        var cursor = 0;
+        hits.forEach(function (h) {
+            pattern.push(Math.max(0, Math.round(h[0] - cursor)), h[1]);
+            cursor = h[0] + h[1];
+        });
+        pattern.push(Math.max(0, Math.round(openMs - cursor)));
+        pattern = pattern.concat(open);
+        buzz(pattern);
+    }
+
+    function reveal(a) {
+        var m = shuffleMotion();
+        revealBuzz(m, a.k);
         pop.classList.remove('is-leaving', 'is-pop');
         void pop.offsetWidth;
         pop.classList.add('is-pop');
@@ -255,11 +301,12 @@
         var next = pick();
         if (reduce) { fillPop(next); openPop(); busy = false; return; }
         if (mach) mach.classList.add('is-rolling');
+        buzz([14, 90, 14, 90, 14, 90, 14]);  // 機械のガラガラ
         setTimeout(function () {
             if (mach) mach.classList.remove('is-rolling');
             fillPop(next);
             openPop();
-            reveal();
+            reveal(next);
             busy = false;
         }, 650);
     }
@@ -271,12 +318,19 @@
         if (reduce) { fillPop(next); busy = false; return; }
         pop.classList.remove('is-pop', 'is-first');
         pop.classList.add('is-leaving');
+        buzz([10, 300, 16]);  // 閉まる・落ちる
         setTimeout(function () {
             fillPop(next);
-            reveal();
+            reveal(next);
             busy = false;
         }, 540);
     }
-    el('gachaKnob').addEventListener('click', spin);
-    el('popAgain').addEventListener('click', spinAgain);
+    // ラベルを押すと、スイッチへの click も泡立ってくるので、スイッチ由来の click は数えない
+    function onTap(fn) {
+        return function (e) { if (e.target && e.target.tagName === 'INPUT') return; fn(); };
+    }
+    tapTick(el('gachaKnob'));
+    tapTick(el('popAgain'));
+    el('gachaKnob').addEventListener('click', onTap(spin));
+    el('popAgain').addEventListener('click', onTap(spinAgain));
 })();
