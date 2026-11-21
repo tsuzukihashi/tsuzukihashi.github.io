@@ -38,462 +38,82 @@
     <!-- Google AdSense（持ち主の確認だけ。このページに広告は出さない。docs/ads.md） -->
     <meta name="google-adsense-account" content="ca-pub-8240751277462688">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- ガチャの見た目（assets/css/gacha.css・docs/gacha-design.md） -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700;800&family=RocknRoll+One&display=swap">
+    <link rel="stylesheet" href="/assets/css/gacha.css">
+    <link rel="stylesheet" href="/assets/css/g-apps.css">
+    <script src="/assets/js/gacha.js" defer></script>
+    <!-- /ガチャの見た目 -->
 </head>
-<body>
-    <!-- Navigation -->
-    <nav class="nav">
-        <div class="nav-container">
-            <a href="/" class="nav-logo">TsuzuKit</a>
-            <div class="nav-menu">
-                <a href="/" class="nav-link">Home</a>
-                <a href="/portfolio/" class="nav-link">Portfolio</a>
-                <a href="/blog/" class="nav-link">Blog</a>
-                <a href="/about/" class="nav-link">About</a>
-                <a href="/contact/" class="nav-link">Contact</a>
+<body class="g">
+    <header class="g-head" id="nav">
+            <div class="g-wrap">
+                <a href="/" class="g-logo"><img src="/assets/images/logo/tsuzukit-wordmark.svg" alt="TsuzuKit" width="116" height="36"></a>
+                <nav class="nav-menu" id="navMenu" aria-label="メニュー"><a href="/portfolio/" class="nav-link" aria-current="page"><span class="i18n-ja">アプリ</span><span class="i18n-en">Apps</span></a><a href="/blog/" class="nav-link"><span class="i18n-ja">読みもの</span><span class="i18n-en">Reading</span></a><a href="/about/" class="nav-link"><span class="i18n-ja">私について</span><span class="i18n-en">About</span></a><a href="/contact/" class="nav-link"><span class="i18n-ja">お問い合わせ</span><span class="i18n-en">Contact</span></a></nav>
+                <button type="button" class="g-menu" id="navToggle" aria-controls="navMenu" aria-expanded="false">MENU</button>
             </div>
+        </header>
+
+    <main class="g-main">
+        <div class="g-wrap">
+                <nav class="g-crumb" aria-label="パンくず" data-en-aria-label="Breadcrumb"><a href="/"><span class="i18n-ja">トップ</span><span class="i18n-en">Home</span></a><span>＞</span><a href="/portfolio/"><span class="i18n-ja">ラインナップ</span><span class="i18n-en">Lineup</span></a><span>＞</span><span>N</span><span>＞</span><b><span class="i18n-ja">RelayChat (リレーチャット)</span><span class="i18n-en">RelayChat</span></b></nav>
+
+                <section class="ga-ah">
+                    <div class="g-burst" style="--c:var(--g-c3)">
+                        <div class="rays"></div><div class="lid"></div><div class="bowl"></div>
+                        <div class="icon"><img src="/assets/images/icon/relaychat.webp" alt="RelayChat (リレーチャット)" data-en-alt="RelayChat" width="460" height="460"></div>
+                        <span class="st" style="right:6%;top:8%">★</span><span class="st" style="left:10%;top:62%;font-size:24px">✦</span><span class="st" style="right:12%;top:52%;font-size:26px">✦</span>
+                    </div>
+                    <div class="g-ypanel ga-info">
+                        <span class="ga-no">No.24 ／ 81</span>
+                        <span class="g-rare g-rare--N">N</span>
+                        <h1><span class="i18n-ja">RelayChat (リレーチャット)</span><span class="i18n-en">RelayChat</span></h1>
+                        <p class="ga-one"><span class="i18n-ja">オフライン会話 〜 圏外を、安心に 〜</span><span class="i18n-en">Offline chat, with peace of mind even when there's no signal</span></p>
+                        <div class="ga-chips"><span><span class="i18n-ja">ソーシャル</span><span class="i18n-en">Social</span></span><span><span class="i18n-ja">公開中</span><span class="i18n-en">Available</span></span></div>
+                        <div class="ga-spec"><div><b><span class="i18n-ja">327</span><span class="i18n-en">327</span></b><span><span class="i18n-ja">ダウンロード</span><span class="i18n-en">downloads</span></span></div><div><b>2025</b><span><span class="i18n-ja">年に登場</span><span class="i18n-en">released</span></span></div><div><b><span class="i18n-ja">無料</span><span class="i18n-en">Free</span></b><span><span class="i18n-ja">iOS 17.0 以上</span><span class="i18n-en">iOS 17.0+</span></span></div></div>
+                        <div class="g-btns"><a class="g-btn g-btn--k" href="https://apps.apple.com/jp/app/relaychat-%E3%83%AA%E3%83%AC%E3%83%BC%E3%83%81%E3%83%A3%E3%83%83%E3%83%88-%E3%82%AA%E3%83%95%E3%83%A9%E3%82%A4%E3%83%B3%E4%BC%9A%E8%A9%B1/id6749299283" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg><span class="i18n-ja">App Storeで見る</span><span class="i18n-en">View on the App Store</span></a></div>
+                    </div>
+                </section>
+
+                <div class="g-sh"><h2><span class="i18n-ja">カプセルの中身</span><span class="i18n-en">What's inside</span></h2><small><span class="i18n-ja">アプリの画面</span><span class="i18n-en">Screens from the app</span></small></div>
+                <div class="g-panel ga-tray i18n-ja"><img src="https://is1-ssl.mzstatic.com/image/thumb/DlZNZ3egDKhOpozuYeJpWQ/626x0w.webp" alt="" width="626" height="1357" loading="lazy"><img src="https://is1-ssl.mzstatic.com/image/thumb/VXNfjo2dWA8ArV6B8oteLQ/626x0w.webp" alt="" width="626" height="1357" loading="lazy"><img src="https://is1-ssl.mzstatic.com/image/thumb/gNSx-aps1_725QWe6chBjw/626x0w.webp" alt="" width="626" height="1357" loading="lazy"></div>
+                <div class="g-panel ga-tray i18n-en"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/84/e7/45/84e74543-e855-43c2-afcb-a92e36969b15/01_01.png/626x0w.webp" alt="" width="626" height="1357" loading="lazy"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b5/16/27/b51627bb-177b-7f0c-c6c9-2f63201e4d31/02_02.png/626x0w.webp" alt="" width="626" height="1357" loading="lazy"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d0/c2/29/d0c2290e-5f57-8f98-38c7-2146ed2d71c2/03_03.png/626x0w.webp" alt="" width="626" height="1357" loading="lazy"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0b/3b/7b/0b3b7b39-3c38-3187-681e-21b96858ca65/04_04.png/626x0w.webp" alt="" width="626" height="1357" loading="lazy"></div>
+
+                <div class="g-sh"><h2><span class="i18n-ja">説明書き</span><span class="i18n-en">How it works</span></h2><small><span class="i18n-ja">RelayChatでできること</span><span class="i18n-en">What RelayChat does</span></small></div>
+                <div class="ga-slip">
+                    <div class="g-paper ga-paper"><span class="ga-paper-tag"><span class="i18n-ja">説明書き</span><span class="i18n-en">About this app</span></span><h3><span class="i18n-ja">圏外で、ひとりぼっちだと思ったことはありませんか？</span><span class="i18n-en">Ever felt completely alone with no signal?</span></h3><p><span class="i18n-ja">RelayChatは、インターネットも携帯電波も届かない場所で、あなたの声を大切な人へ届ける新しいコミュニケーションツールです。</span><span class="i18n-en">RelayChat is a new way to reach the people who matter, even in places where neither the internet nor a cell signal can get through.</span></p><p><span class="i18n-ja">独自のメッシュネットワーク技術により、スマホ同士が直接つながり、メッセージをバケツリレーのように運びます。</span><span class="i18n-en">With its own mesh networking, phones connect directly to each other and pass messages along hand to hand, like a bucket brigade.</span></p><p><span class="i18n-ja">災害などの非常時には、家族や友人との命綱として。<br>イベントやアウトドアでは、仲間と楽しむためのツールとして。</span><span class="i18n-en">In a disaster or emergency, it's a lifeline to family and friends.<br>At events and outdoors, it's how you keep in touch with your group.</span></p><p><span class="ga-em"><span class="i18n-ja">いつもの会話が、もしもの備えに変わる。</span><span class="i18n-en">Everyday chats become your backup plan for when things go wrong.</span></span><br><span class="i18n-ja">さあ、RelayChatで「圏外を、安心に」変えましょう。</span><span class="i18n-en">Let RelayChat turn &quot;no signal&quot; into peace of mind.</span></p><h3><span class="i18n-ja">RelayChatが選ばれる理由</span><span class="i18n-en">Why people choose RelayChat</span></h3><ul class="ga-feats"><li><b><span class="i18n-ja">電波ゼロでも繋がれる</span><span class="i18n-en">Stay connected with zero signal</span></b><span class="i18n-ja">Bluetoothを使って、スマホ同士が直接通信</span><span class="i18n-en">Phones talk to each other directly over Bluetooth</span></li><li><b><span class="i18n-ja">広がる通信網「メッシュネットワーク」</span><span class="i18n-en">A network that grows: mesh networking</span></b><span class="i18n-ja">ユーザーが増えるほど通信範囲が拡大</span><span class="i18n-en">The more people use it, the farther it reaches</span></li><li><b><span class="i18n-ja">プライバシー第一の匿名設計</span><span class="i18n-en">Anonymous, privacy-first design</span></b><span class="i18n-ja">エンドツーエンド暗号化で安全な通信</span><span class="i18n-en">End-to-end encryption keeps your messages safe</span></li></ul><h3><span class="i18n-ja">こんな時に大活躍！</span><span class="i18n-en">Where it really helps</span></h3><ul class="ga-feats"><li><b><span class="i18n-ja">災害・緊急時に</span><span class="i18n-en">In disasters and emergencies</span></b><span class="i18n-ja">地震や台風による通信障害時でも安否確認が可能</span><span class="i18n-en">Check that everyone is safe even when an earthquake or typhoon knocks out the network</span></li><li><b><span class="i18n-ja">イベント・フェスで</span><span class="i18n-en">At events and festivals</span></b><span class="i18n-ja">電波が繋がりにくい会場でも仲間とはぐれない</span><span class="i18n-en">Don't lose your friends at venues where the signal is weak</span></li><li><b><span class="i18n-ja">アウトドア・旅行で</span><span class="i18n-en">Outdoors and on trips</span></b><span class="i18n-ja">山登りやキャンプ、海外旅行先でも通信可能</span><span class="i18n-en">Works while hiking, camping, or traveling abroad</span></li><li><b><span class="i18n-ja">日常の圏外エリアで</span><span class="i18n-en">In everyday dead zones</span></b><span class="i18n-ja">地下鉄やトンネル、飛行機の機内モード中でも会話</span><span class="i18n-en">Keep talking on the subway, in tunnels, or in airplane mode</span></li></ul><p><span class="i18n-ja">「災害時でも大切な人と繋がれるように」という思いから生まれたRelayChat。最新のメッシュネットワーク技術と暗号化技術を組み合わせ、誰もが安心して使えるオフライン通信アプリを実現しました。</span><span class="i18n-en">RelayChat started from one wish: to stay connected with the people you care about, even in a disaster. By combining the latest mesh networking with encryption, I built an offline messaging app that anyone can rely on.</span></p>
+                    </div>
+                    <div class="ga-side"><div class="g-panel ga-facts"><h3><span class="i18n-ja">アプリ情報</span><span class="i18n-en">App Info</span></h3><dl><dt><span class="i18n-ja">カテゴリ</span><span class="i18n-en">Category</span></dt><dd><span class="i18n-ja">ソーシャルネットワーキング</span><span class="i18n-en">Social Networking</span></dd><dt><span class="i18n-ja">価格</span><span class="i18n-en">Price</span></dt><dd><span class="i18n-ja">無料</span><span class="i18n-en">Free</span></dd><dt><span class="i18n-ja">言語</span><span class="i18n-en">Languages</span></dt><dd><span class="i18n-ja">日本語・英語</span><span class="i18n-en">Japanese, English</span></dd><dt><span class="i18n-ja">対応OS</span><span class="i18n-en">Requires</span></dt><dd><span class="i18n-ja">iOS 17.0以降</span><span class="i18n-en">iOS 17.0 or later</span></dd><dt><span class="i18n-ja">ファイルサイズ</span><span class="i18n-en">Size</span></dt><dd><span class="i18n-ja">約5MB</span><span class="i18n-en">About 5 MB</span></dd></dl></div><div class="g-panel ga-help"><h3><span class="i18n-ja">このカプセルで困ったら</span><span class="i18n-en">Need help with this app?</span></h3><a href="/contact/"><span class="g-capdot"></span><span class="i18n-ja">お問い合わせ</span><span class="i18n-en">Contact</span></a><a href="/legal/privacy-policy.html"><span class="g-capdot"></span><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a><a href="/legal/terms-of-service.html"><span class="g-capdot"></span><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a><a href="/legal/commercial-law.html"><span class="g-capdot"></span><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a></div><div class="g-panel ga-news"><h3><span class="i18n-ja">更新のおしらせ</span><span class="i18n-en">Latest update</span></h3><span class="ga-v">ver 1.4.1 ／ 2026.10.25</span><div class="i18n-ja"><p>・近くにいる人の一覧に、相手の名前とアイコンが出るようになりました</p><p>・iPad など広い画面では、みんなのチャットの横に、近くにいる人や1対1のチャットを並べて表示します</p><p>・iPad で近くにいる人の一覧が片側に寄って表示される問題を修正しました</p><p>・内部のライブラリを更新し、動作を安定させました</p></div><p class="i18n-en">Version 1.4.1, released 2026.10.25. The release notes are in Japanese on the App Store.</p></div></div>
+                </div>
+
+                <div class="g-sh"><h2><span class="i18n-ja">主な特徴</span><span class="i18n-en">Highlights</span></h2></div>
+                <div class="ga-cells ga-cells--4"><div class="g-panel ga-cell"><span class="ga-emo" aria-hidden="true">📡</span><h3><span class="i18n-ja">オフライン通信</span><span class="i18n-en">Offline messaging</span></h3></div><div class="g-panel ga-cell"><span class="ga-emo" aria-hidden="true">🔐</span><h3><span class="i18n-ja">暗号化通信</span><span class="i18n-en">Encrypted messaging</span></h3></div><div class="g-panel ga-cell"><span class="ga-emo" aria-hidden="true">🌐</span><h3><span class="i18n-ja">メッシュネットワーク</span><span class="i18n-en">Mesh network</span></h3></div><div class="g-panel ga-cell"><span class="ga-emo" aria-hidden="true">🆓</span><h3><span class="i18n-ja">完全無料</span><span class="i18n-en">Completely free</span></h3></div></div>
+                <div class="g-sh"><h2><span class="i18n-ja">技術仕様</span><span class="i18n-en">Technical Specs</span></h2></div>
+                <div class="ga-cells"><div class="g-panel ga-cell"><h3><span class="i18n-ja">通信技術</span><span class="i18n-en">Connectivity</span></h3><div class="ga-tags"><span>Bluetooth Low Energy</span><span><span class="i18n-ja">メッシュネットワーク</span><span class="i18n-en">Mesh networking</span></span><span><span class="i18n-ja">P2P通信</span><span class="i18n-en">P2P communication</span></span></div></div><div class="g-panel ga-cell"><h3><span class="i18n-ja">セキュリティ</span><span class="i18n-en">Security</span></h3><div class="ga-tags"><span><span class="i18n-ja">エンドツーエンド暗号化</span><span class="i18n-en">End-to-end encryption</span></span><span><span class="i18n-ja">匿名通信</span><span class="i18n-en">Anonymous messaging</span></span><span><span class="i18n-ja">プライバシー保護</span><span class="i18n-en">Privacy protection</span></span></div></div><div class="g-panel ga-cell"><h3><span class="i18n-ja">動作要件</span><span class="i18n-en">Requirements</span></h3><ul class="ga-req"><li><span class="i18n-ja">iOS 17.0以降</span><span class="i18n-en">iOS 17.0 or later</span></li><li><span class="i18n-ja">iPhone SE3以降推奨</span><span class="i18n-en">iPhone SE (3rd generation) or later recommended</span></li><li><span class="i18n-ja">Bluetooth 5.0対応機種推奨</span><span class="i18n-en">Bluetooth 5.0 device recommended</span></li><li><span class="i18n-ja">通信可能距離: 約10-30m（環境による）</span><span class="i18n-en">Range: about 10-30 m (depends on surroundings)</span></li></ul></div></div>
+
+
+                <div class="g-sh"><h2><span class="i18n-ja">同じ棚のカプセル</span><span class="i18n-en">More from the same shelf</span></h2><small><span class="i18n-ja">ソーシャルネットワーキング・1種</span><span class="i18n-en">Social Networking · 1 app</span></small></div>
+                <div class="g-panel ga-shelf"><a class="g-mini" href="https://apps.apple.com/jp/app/mono-%E3%81%8A%E8%BF%8E%E3%81%88%E3%81%97%E3%81%9F%E5%96%9C%E3%81%B3%E3%82%92%E5%88%86%E3%81%8B%E3%81%A1%E5%90%88%E3%81%86%E3%82%A2%E3%83%97%E3%83%AA/id6743043894?uo=4" target="_blank" rel="noopener"><span class="g-cap g-cap--1" style="--rot:11deg"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/45/04/f7/4504f78c-6887-250e-6069-44754bec38f2/AppIcon-0-0-1x_U007epad-0-1-85-220.png/256x256bb.jpg" alt="" width="256" height="256" loading="lazy"></span><span><span class="i18n-ja">mono</span><span class="i18n-en">mono</span></span><b class="g-rare g-rare--N">N</b></a></div>
+
+                <div class="g-sh"><h2><span class="i18n-ja">その他のアプリ</span><span class="i18n-en">More Apps</span></h2><small><span class="i18n-ja">他の作品もご覧ください</span><span class="i18n-en">Take a look at my other work too</span></small></div>
+                <div class="g-panel ga-shelf"><a class="g-mini" href="/portfolio/apps/travel-memory-map.html"><span class="g-cap g-cap--4" style="--rot:-12deg"><img src="/assets/images/icon/travel_memory_map.webp" alt="" width="292" height="292" loading="lazy"></span><span><span class="i18n-ja">旅行思い出マップ</span><span class="i18n-en">TravelMemoryMap</span></span><small><span class="i18n-ja">写真をパズルのように切り取って地図に記録</span><span class="i18n-en">Cut your photos into puzzle pieces and pin them to a map</span></small></a><a class="g-mini" href="/portfolio/apps/kotonohabako.html"><span class="g-cap g-cap--6" style="--rot:10deg"><img src="/assets/images/icon/kotonohabako.png" alt="" width="1024" height="1024" loading="lazy"></span><span><span class="i18n-ja">言の葉箱</span><span class="i18n-en">Kotonohabako</span></span><small><span class="i18n-ja">手紙をAIで検索できるデジタル宝物に</span><span class="i18n-en">Turn your letters into digital keepsakes you can search with AI</span></small></a><a class="g-mini ga-more" href="/portfolio/"><span class="g-cap">→</span><span><span class="i18n-ja">すべてのアプリ</span><span class="i18n-en">All Apps</span></span><small><span class="i18n-ja">ポートフォリオを見る</span><span class="i18n-en">See the portfolio</span></small></a></div>
+
+                <div class="g-sh"><h2><span class="i18n-ja">このカプセルの冊子</span><span class="i18n-en">Reading about this app</span></h2></div>
+                <div class="ga-rel"><a class="g-panel" href="/blog/posts/app-relaychat.html"><img src="/assets/images/posts/app-relaychat.webp" alt="" width="1200" height="800" loading="lazy"><div><small><span class="i18n-ja">アプリ紹介</span><span class="i18n-en">App Spotlight</span></small><h3><span class="i18n-ja">RelayChat (リレーチャット) ~オフライン会話~</span><span class="i18n-en">RelayChat-Bluetooth Mesh Chat</span></h3></div></a><a class="g-panel" href="/blog/posts/relaychat-development-story.html"><img src="/assets/images/posts/relaychat-development-story.webp" alt="" width="1200" height="800" loading="lazy"><div><small><span class="i18n-ja">開発秘話</span><span class="i18n-en">Behind the Scenes</span></small><h3><span class="i18n-ja">【開発秘話】圏外を、安心に。僕がオフラインSNS「RelayChat」をたった一人で作り上げた物語</span><span class="i18n-en">[Behind the Scenes] Turning &quot;No Signal&quot; into Peace of Mind: How I Built the Offline Social App RelayChat All by Myself</span></h3></div></a></div>
         </div>
-    </nav>
+    </main>
 
-    <div class="i18n-ja">
-    <!-- App Detail Hero -->
-    <section class="app-detail-hero">
-        <div class="container">
-            <div class="app-detail-header">
-                <div class="app-detail-icon">
-                    <img src="/assets/images/icon/relaychat.webp" alt="RelayChat" class="app-icon-image">
-                </div>
-                <div class="app-detail-info">
-                    <h1 class="app-detail-title">RelayChat (リレーチャット)</h1>
-                    <p class="app-detail-subtitle">オフライン会話 〜 圏外を、安心に 〜</p>
-                    <div class="app-detail-meta">
-                        <span class="app-detail-category">ソーシャル</span>
-                        <span class="app-detail-status active">公開中</span>
-                    </div>
-                    <div class="app-detail-actions">
-                        <a href="https://apps.apple.com/jp/app/relaychat-%E3%83%AA%E3%83%AC%E3%83%BC%E3%83%81%E3%83%A3%E3%83%83%E3%83%88-%E3%82%AA%E3%83%95%E3%83%A9%E3%82%A4%E3%83%B3%E4%BC%9A%E8%A9%B1/id6749299283" target="_blank" class="btn btn-primary">
-                            App Storeで見る
-                        </a>
-                        <div class="app-detail-stats">
-                            <div class="stat-item">
-                                <strong>NEW</strong>
-                                <span>2025年リリース</span>
-                            </div>
-                            <div class="stat-item">
-                                <strong>18+</strong>
-                                <span>年齢制限</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <footer class="g-foot">
+            <img class="g-foot-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364" loading="lazy">
+            <div class="g-wrap">
+                <div><a href="/" class="g-foot-logo"><img src="/assets/images/logo/tsuzukit-wordmark-white.svg" alt="TsuzuKit" width="110" height="34"></a>
+                <p class="g-foot-tag"><span class="i18n-ja">誰も作らないものを、まじめに作る。</span><span class="i18n-en">Making what nobody else will, seriously.</span><br>Seriously Silly since 2016.</p></div>
+                <div class="g-foot-sns"><a href="https://x.com/tsuzuki817" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><img src="/assets/images/sns/x.png" alt="" width="22" height="22"></a><a href="https://www.instagram.com/tsuzuki817/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="/assets/images/sns/instagram.png" alt="" width="22" height="22"></a><a href="https://www.tiktok.com/@tsuzuki817" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><img src="/assets/images/sns/tiktok.png" alt="" width="22" height="22"></a><a href="https://www.youtube.com/@tsuzuki817" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><img src="/assets/images/sns/youtube.png" alt="" width="22" height="22"></a><a href="https://github.com/tsuzukihashi" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><img src="/assets/images/sns/github.png" alt="" width="22" height="22"></a></div>
+                <div class="g-foot-links"><a href="/contact/"><span class="i18n-ja">お問い合わせ</span><span class="i18n-en">Contact</span></a><a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a><a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a><a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a><a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a></div>
+                <p class="g-foot-copy">© 2026 Ryo Tsuzukihashi / TsuzuKit</p>
             </div>
-        </div>
-    </section>
-
-    <!-- App Overview -->
-    <section class="app-overview">
-        <div class="container">
-            <div class="app-overview-content">
-                <div class="app-overview-main">
-                    <h2>圏外で、ひとりぼっちだと思ったことはありませんか？</h2>
-                    <p class="app-overview-description">
-                        RelayChatは、インターネットも携帯電波も届かない場所で、あなたの声を大切な人へ届ける新しいコミュニケーションツールです。
-                    </p>
-                    
-                    <p class="app-overview-description">
-                        独自のメッシュネットワーク技術により、スマホ同士が直接つながり、メッセージをバケツリレーのように運びます。
-                    </p>
-                    
-                    <p class="app-overview-description">
-                        災害などの非常時には、家族や友人との命綱として。<br>
-                        イベントやアウトドアでは、仲間と楽しむためのツールとして。
-                    </p>
-                    
-                    <p class="app-overview-description">
-                        <strong>いつもの会話が、もしもの備えに変わる。</strong><br>
-                        さあ、RelayChatで「圏外を、安心に」変えましょう。
-                    </p>
-                    
-                    <h3 class="feature-title">RelayChatが選ばれる理由</h3>
-                    <ul class="feature-list">
-                        <li><strong>電波ゼロでも繋がれる</strong> - Bluetoothを使って、スマホ同士が直接通信</li>
-                        <li><strong>広がる通信網「メッシュネットワーク」</strong> - ユーザーが増えるほど通信範囲が拡大</li>
-                        <li><strong>プライバシー第一の匿名設計</strong> - エンドツーエンド暗号化で安全な通信</li>
-                    </ul>
-                    
-                    <h3 class="feature-title">こんな時に大活躍！</h3>
-                    <ul class="feature-list">
-                        <li><strong>災害・緊急時に</strong> - 地震や台風による通信障害時でも安否確認が可能</li>
-                        <li><strong>イベント・フェスで</strong> - 電波が繋がりにくい会場でも仲間とはぐれない</li>
-                        <li><strong>アウトドア・旅行で</strong> - 山登りやキャンプ、海外旅行先でも通信可能</li>
-                        <li><strong>日常の圏外エリアで</strong> - 地下鉄やトンネル、飛行機の機内モード中でも会話</li>
-                    </ul>
-                    
-                    <div class="development-story">
-                        <p>
-                            「災害時でも大切な人と繋がれるように」という思いから生まれたRelayChat。
-                            最新のメッシュネットワーク技術と暗号化技術を組み合わせ、
-                            誰もが安心して使えるオフライン通信アプリを実現しました。
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="app-overview-details">
-                    <div class="detail-card">
-                        <h3 class="detail-title">アプリ情報</h3>
-                        <div class="detail-list">
-                            <div class="detail-item">
-                                <span class="detail-label">カテゴリ</span>
-                                <span class="detail-value">ソーシャルネットワーキング</span>
-                            </div>
-                            <div class="detail-item">
-                                <span class="detail-label">価格</span>
-                                <span class="detail-value">無料</span>
-                            </div>
-                            <div class="detail-item">
-                                <span class="detail-label">言語</span>
-                                <span class="detail-value">日本語・英語</span>
-                            </div>
-                            <div class="detail-item">
-                                <span class="detail-label">対応OS</span>
-                                <span class="detail-value">iOS 17.0以降</span>
-                            </div>
-                            <div class="detail-item">
-                                <span class="detail-label">ファイルサイズ</span>
-                                <span class="detail-value">約5MB</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="detail-card">
-                        <h3 class="detail-title">主な特徴</h3>
-                        <div class="achievement-list">
-                            <div class="achievement-item">
-                                <span class="achievement-icon">📡</span>
-                                <span class="achievement-label">オフライン通信</span>
-                            </div>
-                            <div class="achievement-item">
-                                <span class="achievement-icon">🔐</span>
-                                <span class="achievement-label">暗号化通信</span>
-                            </div>
-                            <div class="achievement-item">
-                                <span class="achievement-icon">🌐</span>
-                                <span class="achievement-label">メッシュネットワーク</span>
-                            </div>
-                            <div class="achievement-item">
-                                <span class="achievement-icon">🆓</span>
-                                <span class="achievement-label">完全無料</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Technical Details -->
-    <section class="technical-details">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">技術仕様</h2>
-            </div>
-            
-            <div class="tech-grid">
-                <div class="tech-item">
-                    <h3 class="tech-title">通信技術</h3>
-                    <div class="tech-tags">
-                        <span class="tech-tag">Bluetooth Low Energy</span>
-                        <span class="tech-tag">メッシュネットワーク</span>
-                        <span class="tech-tag">P2P通信</span>
-                    </div>
-                </div>
-                
-                <div class="tech-item">
-                    <h3 class="tech-title">セキュリティ</h3>
-                    <div class="tech-tags">
-                        <span class="tech-tag">エンドツーエンド暗号化</span>
-                        <span class="tech-tag">匿名通信</span>
-                        <span class="tech-tag">プライバシー保護</span>
-                    </div>
-                </div>
-                
-                <div class="tech-item">
-                    <h3 class="tech-title">動作要件</h3>
-                    <ul class="tech-requirements">
-                        <li>iOS 17.0以降</li>
-                        <li>iPhone SE3以降推奨</li>
-                        <li>Bluetooth 5.0対応機種推奨</li>
-                        <li>通信可能距離: 約10-30m（環境による）</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Related Apps -->
-    <section class="related-apps">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">その他のアプリ</h2>
-            </div>
-            
-            <div class="related-apps-grid">
-                <article class="related-app-item">
-                    <div class="related-app-placeholder">
-                        <img src="/assets/images/icon/travel_memory_map.webp" alt="旅行思い出マップ">
-                    </div>
-                    <div class="related-app-info">
-                        <h3 class="related-app-title"><span class="i18n-ja">旅行思い出マップ</span><span class="i18n-en">TravelMemoryMap</span></h3>
-                        <p class="related-app-description">写真をパズルのように切り取って地図に記録</p>
-                        <a href="/portfolio/apps/travel-memory-map.html" class="related-app-link">詳細を見る →</a>
-                    </div>
-                </article>
-                
-                <article class="related-app-item">
-                    <div class="related-app-placeholder">
-                        <img src="/assets/images/icon/kotonohabako.png" alt="言の葉箱">
-                    </div>
-                    <div class="related-app-info">
-                        <h3 class="related-app-title"><span class="i18n-ja">言の葉箱</span><span class="i18n-en">Kotonohabako</span></h3>
-                        <p class="related-app-description">手紙をAIで検索できるデジタル宝物に</p>
-                        <a href="/portfolio/apps/kotonohabako.html" class="related-app-link">詳細を見る →</a>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-    </div>
-
-    <div class="i18n-en">
-    <!-- App Detail Hero -->
-    <section class="app-detail-hero">
-        <div class="container">
-            <div class="app-detail-header">
-                <div class="app-detail-icon">
-                    <img src="/assets/images/icon/relaychat.webp" alt="RelayChat" class="app-icon-image">
-                </div>
-                <div class="app-detail-info">
-                    <h1 class="app-detail-title">RelayChat</h1>
-                    <p class="app-detail-subtitle">Offline chat, with peace of mind even when there's no signal</p>
-                    <div class="app-detail-meta">
-                        <span class="app-detail-category">Social</span>
-                        <span class="app-detail-status active">Available</span>
-                    </div>
-                    <div class="app-detail-actions">
-                        <a href="https://apps.apple.com/jp/app/relaychat-%E3%83%AA%E3%83%AC%E3%83%BC%E3%83%81%E3%83%A3%E3%83%83%E3%83%88-%E3%82%AA%E3%83%95%E3%83%A9%E3%82%A4%E3%83%B3%E4%BC%9A%E8%A9%B1/id6749299283" target="_blank" class="btn btn-primary">
-                            View on the App Store
-                        </a>
-                        <div class="app-detail-stats">
-                            <div class="stat-item">
-                                <strong>NEW</strong>
-                                <span>Released in 2025</span>
-                            </div>
-                            <div class="stat-item">
-                                <strong>18+</strong>
-                                <span>Age rating</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- App Overview -->
-    <section class="app-overview">
-        <div class="container">
-            <div class="app-overview-content">
-                <div class="app-overview-main">
-                    <h2>Ever felt completely alone with no signal?</h2>
-                    <p class="app-overview-description">
-                        RelayChat is a new way to reach the people who matter, even in places where neither the internet nor a cell signal can get through.
-                    </p>
-
-                    <p class="app-overview-description">
-                        With its own mesh networking, phones connect directly to each other and pass messages along hand to hand, like a bucket brigade.
-                    </p>
-
-                    <p class="app-overview-description">
-                        In a disaster or emergency, it's a lifeline to family and friends.<br>
-                        At events and outdoors, it's how you keep in touch with your group.
-                    </p>
-
-                    <p class="app-overview-description">
-                        <strong>Everyday chats become your backup plan for when things go wrong.</strong><br>
-                        Let RelayChat turn "no signal" into peace of mind.
-                    </p>
-
-                    <h3 class="feature-title">Why people choose RelayChat</h3>
-                    <ul class="feature-list">
-                        <li><strong>Stay connected with zero signal</strong> - Phones talk to each other directly over Bluetooth</li>
-                        <li><strong>A network that grows: mesh networking</strong> - The more people use it, the farther it reaches</li>
-                        <li><strong>Anonymous, privacy-first design</strong> - End-to-end encryption keeps your messages safe</li>
-                    </ul>
-
-                    <h3 class="feature-title">Where it really helps</h3>
-                    <ul class="feature-list">
-                        <li><strong>In disasters and emergencies</strong> - Check that everyone is safe even when an earthquake or typhoon knocks out the network</li>
-                        <li><strong>At events and festivals</strong> - Don't lose your friends at venues where the signal is weak</li>
-                        <li><strong>Outdoors and on trips</strong> - Works while hiking, camping, or traveling abroad</li>
-                        <li><strong>In everyday dead zones</strong> - Keep talking on the subway, in tunnels, or in airplane mode</li>
-                    </ul>
-
-                    <div class="development-story">
-                        <p>
-                            RelayChat started from one wish: to stay connected with the people you care about, even in a disaster.
-                            By combining the latest mesh networking with encryption,
-                            I built an offline messaging app that anyone can rely on.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="app-overview-details">
-                    <div class="detail-card">
-                        <h3 class="detail-title">App Info</h3>
-                        <div class="detail-list">
-                            <div class="detail-item">
-                                <span class="detail-label">Category</span>
-                                <span class="detail-value">Social Networking</span>
-                            </div>
-                            <div class="detail-item">
-                                <span class="detail-label">Price</span>
-                                <span class="detail-value">Free</span>
-                            </div>
-                            <div class="detail-item">
-                                <span class="detail-label">Languages</span>
-                                <span class="detail-value">Japanese, English</span>
-                            </div>
-                            <div class="detail-item">
-                                <span class="detail-label">Requires</span>
-                                <span class="detail-value">iOS 17.0 or later</span>
-                            </div>
-                            <div class="detail-item">
-                                <span class="detail-label">Size</span>
-                                <span class="detail-value">About 5 MB</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="detail-card">
-                        <h3 class="detail-title">Highlights</h3>
-                        <div class="achievement-list">
-                            <div class="achievement-item">
-                                <span class="achievement-icon">📡</span>
-                                <span class="achievement-label">Offline messaging</span>
-                            </div>
-                            <div class="achievement-item">
-                                <span class="achievement-icon">🔐</span>
-                                <span class="achievement-label">Encrypted messaging</span>
-                            </div>
-                            <div class="achievement-item">
-                                <span class="achievement-icon">🌐</span>
-                                <span class="achievement-label">Mesh network</span>
-                            </div>
-                            <div class="achievement-item">
-                                <span class="achievement-icon">🆓</span>
-                                <span class="achievement-label">Completely free</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Technical Details -->
-    <section class="technical-details">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Technical Specs</h2>
-            </div>
-
-            <div class="tech-grid">
-                <div class="tech-item">
-                    <h3 class="tech-title">Connectivity</h3>
-                    <div class="tech-tags">
-                        <span class="tech-tag">Bluetooth Low Energy</span>
-                        <span class="tech-tag">Mesh networking</span>
-                        <span class="tech-tag">P2P communication</span>
-                    </div>
-                </div>
-
-                <div class="tech-item">
-                    <h3 class="tech-title">Security</h3>
-                    <div class="tech-tags">
-                        <span class="tech-tag">End-to-end encryption</span>
-                        <span class="tech-tag">Anonymous messaging</span>
-                        <span class="tech-tag">Privacy protection</span>
-                    </div>
-                </div>
-
-                <div class="tech-item">
-                    <h3 class="tech-title">Requirements</h3>
-                    <ul class="tech-requirements">
-                        <li>iOS 17.0 or later</li>
-                        <li>iPhone SE (3rd generation) or later recommended</li>
-                        <li>Bluetooth 5.0 device recommended</li>
-                        <li>Range: about 10-30 m (depends on surroundings)</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Related Apps -->
-    <section class="related-apps">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">More Apps</h2>
-            </div>
-
-            <div class="related-apps-grid">
-                <article class="related-app-item">
-                    <div class="related-app-placeholder">
-                        <img src="/assets/images/icon/travel_memory_map.webp" alt="TravelMemoryMap">
-                    </div>
-                    <div class="related-app-info">
-                        <h3 class="related-app-title">TravelMemoryMap</h3>
-                        <p class="related-app-description">Cut your photos into puzzle pieces and pin them to a map</p>
-                        <a href="/portfolio/apps/travel-memory-map.html" class="related-app-link">View details →</a>
-                    </div>
-                </article>
-
-                <article class="related-app-item">
-                    <div class="related-app-placeholder">
-                        <img src="/assets/images/icon/kotonohabako.png" alt="Kotonohabako">
-                    </div>
-                    <div class="related-app-info">
-                        <h3 class="related-app-title">Kotonohabako</h3>
-                        <p class="related-app-description">Turn your letters into digital keepsakes you can search with AI</p>
-                        <a href="/portfolio/apps/kotonohabako.html" class="related-app-link">View details →</a>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-    </div>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
-                    <p class="footer-description"><span class="i18n-ja">誰も作らないものを、まじめに作る</span><span class="i18n-en">Making the things nobody else makes, in earnest</span></p>
-                </div>
-                <div class="footer-nav">
-                    <a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
-                    <a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
-                    <a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
-                    <a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Ryo Tsuzukihashi. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+        </footer>
 </body>
 </html>

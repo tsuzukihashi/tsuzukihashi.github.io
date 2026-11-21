@@ -264,6 +264,12 @@ URLは1つのまま。仕組みと書き方は **`docs/i18n.md`** にある（`a
 - 旧方式（translations.js / language-manager.js / data-i18n / `/en/` `/ko/` フォルダ）は廃止済み。使わない
 - **例外: `/oshiisland/` の5ページだけは37言語。** `lang.js` ではなく `/oshiisland/i18n.js` を使う。書き方は `docs/i18n.md` の「例外」の節
 
+## 見た目（ガチャ・2026-11-21〜）
+
+サイト全体はカプセルトイのガチャの見た目。新しいページを作る・直す前に **`docs/gacha-design.md`** を読む。
+共通の部品は `assets/css/gacha.css`、ヘッダーとフッターは `scripts/gacha_shell.py` が作る（手で書かない）。
+アプリやブログ記事を足したら `python3 scripts/build_top_apps.py` でトップを作り直す。
+
 ダークモード・ライトモードの区別はつけない。
 常に統一されたデザインが誰にでも提供される。
 

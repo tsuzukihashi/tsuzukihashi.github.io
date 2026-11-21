@@ -12,7 +12,11 @@ US ストアに英語の説明文が無いアプリだけ、日本語を英訳�
 import json
 import os
 import re
+import sys
 from datetime import datetime
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import gacha_shell  # noqa: E402  ガチャの見た目のヘッダー・フッター（docs/gacha-design.md）
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -529,6 +533,9 @@ def generate_page(app, slug):
     </script>
 </body>
 </html>'''
+
+    # 殻（ヘッダー・フッター・字とCSS）はガチャの見た目に入れ替える
+    html = gacha_shell.reskin(html, '/blog/', ('/assets/css/g-post.css',))
 
     filepath = os.path.join(BASE_DIR, f'blog/posts/app-{slug}.html')
     with open(filepath, 'w', encoding='utf-8') as f:

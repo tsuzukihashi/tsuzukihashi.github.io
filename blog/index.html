@@ -18,16 +18,17 @@
     <meta property="og:image:height" content="630">
     <meta property="og:url" content="https://tsuzukit.com/blog/">
     <meta property="og:type" content="blog">
-    
-    <!-- Fonts -->
+    <link rel="canonical" href="https://tsuzukit.com/blog/">
+
+    <!-- ガチャの見た目（assets/css/gacha.css・docs/gacha-design.md） -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="../assets/css/tsuzukit.css">
-    <link rel="stylesheet" href="../assets/css/blog.css">
-    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700;800&family=RocknRoll+One&display=swap">
+    <link rel="stylesheet" href="/assets/css/gacha.css">
+    <link rel="stylesheet" href="/assets/css/g-blog.css">
+    <script src="/assets/js/gacha.js" defer></script>
+    <!-- /ガチャの見た目 -->
+
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -49,79 +50,40 @@
     <!-- Google AdSense（持ち主の確認だけ。このページに広告は出さない。docs/ads.md） -->
     <meta name="google-adsense-account" content="ca-pub-8240751277462688">
 </head>
-<body class="blog-index">
-    <!-- Navigation -->
-    <nav class="nav" id="nav">
-        <div class="nav-container">
-            <a href="/" class="nav-logo">TsuzuKit</a>
-            <div class="nav-menu" id="navMenu">
-                <a href="/portfolio/" class="nav-link">Portfolio</a>
-                <a href="/about/" class="nav-link">About</a>
-                <a href="/blog/" class="nav-link active">Blog</a>
-                <a href="/contact/" class="nav-link">Contact</a>
+<body class="g">
+    <header class="g-head" id="nav">
+            <div class="g-wrap">
+                <a href="/" class="g-logo"><img src="/assets/images/logo/tsuzukit-wordmark.svg" alt="TsuzuKit" width="116" height="36"></a>
+                <nav class="nav-menu" id="navMenu" aria-label="メニュー"><a href="/portfolio/" class="nav-link"><span class="i18n-ja">アプリ</span><span class="i18n-en">Apps</span></a><a href="/blog/" class="nav-link" aria-current="page"><span class="i18n-ja">読みもの</span><span class="i18n-en">Reading</span></a><a href="/about/" class="nav-link"><span class="i18n-ja">私について</span><span class="i18n-en">About</span></a><a href="/contact/" class="nav-link"><span class="i18n-ja">お問い合わせ</span><span class="i18n-en">Contact</span></a></nav>
+                <button type="button" class="g-menu" id="navToggle" aria-controls="navMenu" aria-expanded="false">MENU</button>
             </div>
-            <div class="nav-toggle" id="navToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
+        </header>
 
-    <!-- Blog Hero -->
-    <section class="blog-hero">
-        <div class="glow-shapes">
-            <div class="glow-shape"></div>
-            <div class="glow-shape"></div>
-            <div class="glow-shape"></div>
-        </div>
-        
-        <div class="container">
-            <div class="blog-hero-content">
-                <h1 class="blog-title">
-                    <span class="i18n-ja">開発の<span class="text-gradient">裏側</span>と<br>
-                    数字の<span class="text-gradient">ぜんぶ</span></span><span class="i18n-en">The <span class="text-gradient">backstory</span><br>
-                    and <span class="text-gradient">every number</span></span>
-                </h1>
-                <p class="blog-subtitle">
-                    <span class="i18n-ja">10年間の個人開発で分かったこと、うまくいかなかったこと、<br>
-                    毎月いくら稼いだかまで書いています</span><span class="i18n-en">What 10 years of indie development taught me, what didn't work,<br>
-                    and exactly how much I make every month</span>
-                </p>
-                
-                <!-- Blog Categories -->
-                <div class="blog-categories">
-                    <button class="category-btn active" data-category="all"><span class="i18n-ja">すべて</span><span class="i18n-en">All</span></button>
-                    <button class="category-btn" data-category="income-report"><span class="i18n-ja">月収1000万円計画</span><span class="i18n-en">Road to ¥10M/month</span></button>
-                    <button class="category-btn" data-category="development"><span class="i18n-ja">アプリ開発</span><span class="i18n-en">App Development</span></button>
-                    <button class="category-btn" data-category="technical"><span class="i18n-ja">技術記事</span><span class="i18n-en">Tech</span></button>
-                    <button class="category-btn" data-category="story"><span class="i18n-ja">開発秘話</span><span class="i18n-en">Behind the Scenes</span></button>
-                    <button class="category-btn" data-category="tips">Tips</button>
-                    <button class="category-btn" data-category="app-intro"><span class="i18n-ja">アプリ紹介</span><span class="i18n-en">App Spotlight</span></button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Income Report Series -->
-    <section class="section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Series</span>
-                <h2 class="section-title"><span class="i18n-ja">限界個人開発者の月収１０００万円計画</span><span class="i18n-en">A Struggling Indie Dev's Road to ¥10M a Month</span></h2>
-                <p style="color: var(--color-secondary); font-weight: 300; margin-top: 0.5rem;"><span class="i18n-ja">収益を毎月すべて公開して、次の一手を決める連載</span><span class="i18n-en">A series where I publish all of my revenue every month and use it to decide my next move</span></p>
-            </div>
-
-            <a href="/blog/income-report/" style="text-decoration: none; background: var(--color-ink); color: #fff; border: 2px solid var(--color-ink); box-shadow: 6px 6px 0 var(--pop-yellow); border-radius: 16px; padding: 1.5rem 2rem; margin-bottom: 2rem; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;">
+    <main class="g-main gb" id="blogMain" data-filter="all">
+        <div class="g-wrap">
+            <section class="gb-hero">
                 <div>
-                    <div style="font-weight: 800; font-size: 1.2rem;"><span class="i18n-ja">📈 シリーズ特設ページ</span><span class="i18n-en">📈 Series page</span></div>
-                    <div style="opacity: 0.85; font-size: 0.9rem; margin-top: 4px; font-weight: 600;"><span class="i18n-ja">月次推移グラフと全レポートの一覧。最新の2026年10月は¥668,770で達成率6.69%</span><span class="i18n-en">A monthly trend chart and every report in one place. The latest, October 2026, was $4,253, which is 6.69% of the goal</span></div>
+                    <h1 class="g-title"><span class="i18n-ja">おまけの冊子</span><span class="i18n-en">Bonus Booklets</span></h1>
+                    <p class="g-bubble"><span class="i18n-ja">ガチャについてくる、読みもの。毎月の収益公開と、アプリの選び方と、作った話。</span><span class="i18n-en">Reading that comes with the gacha: monthly revenue reports, guides to picking apps, and stories of making them.</span></p>
                 </div>
-                <span style="font-weight: 800; white-space: nowrap;"><span class="i18n-ja">特設ページへ</span><span class="i18n-en">Open the series page</span></span>
-            </a>
+                <img class="gb-hero-char" src="/assets/images/character-think.png" alt="" width="342" height="333">
+            </section>
 
-            <div class="posts-grid">
+            <!-- 絞り込み。数はカードを数えて入れる（0件の札は隠す） -->
+            <div class="gb-chips" role="group" aria-label="カテゴリ" data-en-aria-label="Categories">
+                <button type="button" class="g-chip category-btn is-on" data-category="all" aria-pressed="true"><span class="i18n-ja">ぜんぶ</span><span class="i18n-en">All</span><i></i></button>
+                <button type="button" class="g-chip category-btn" data-category="income-report" aria-pressed="false"><span class="i18n-ja">月収1000万円計画</span><span class="i18n-en">Road to ¥10M/month</span><i></i></button>
+                <button type="button" class="g-chip category-btn" data-category="development" aria-pressed="false"><span class="i18n-ja">アプリ開発</span><span class="i18n-en">App Development</span><i></i></button>
+                <button type="button" class="g-chip category-btn" data-category="technical" aria-pressed="false"><span class="i18n-ja">技術記事</span><span class="i18n-en">Tech</span><i></i></button>
+                <button type="button" class="g-chip category-btn" data-category="story" aria-pressed="false"><span class="i18n-ja">開発秘話</span><span class="i18n-en">Behind the Scenes</span><i></i></button>
+                <button type="button" class="g-chip category-btn" data-category="event" aria-pressed="false"><span class="i18n-ja">イベント</span><span class="i18n-en">Event</span><i></i></button>
+                <button type="button" class="g-chip category-btn" data-category="tips" aria-pressed="false"><span class="i18n-ja">困りごとから選ぶ</span><span class="i18n-en">Apps for Everyday Problems</span><i></i></button>
+                <button type="button" class="g-chip category-btn" data-category="app-intro" aria-pressed="false"><span class="i18n-ja">アプリ紹介</span><span class="i18n-en">App Spotlight</span><i></i></button>
+            </div>
+
+            <!-- Income Report Series（新しい号は posts-grid の先頭に足す。先頭のカードが「最新号」として大きく出る） -->
+            <section class="gb-shelf" data-shelf="income-report" aria-label="月収1000万円計画" data-en-aria-label="Road to ¥10M/month">
+                <div class="posts-grid gb-issues">
 
                 <article class="post-card" data-category="income-report">
                     <div class="post-card-image" style="height: auto; aspect-ratio: 3 / 2;">
@@ -267,6 +229,20 @@
                     <div class="post-card-image" style="height: auto; aspect-ratio: 3 / 2;">
                         <img src="/assets/images/posts/income-report-2026-03.webp" width="1200" height="800" loading="lazy" alt="ドット絵のハートの花火とコインの雨の下で喜ぶキャラクター" data-en-alt="The character cheering under pixel-heart fireworks and a rain of coins" style="width: 100%; height: 100%; object-fit: cover; display: block;">
                     </div>
+                    <div class="post-card-content">
+                        <div class="post-meta">
+                            <span class="post-date">2026.03.31</span>
+                            <span class="post-category"><span class="i18n-ja">月収1000万円計画</span><span class="i18n-en">Road to ¥10M/month</span></span>
+                        </div>
+                        <h3 class="post-card-title">
+                            <a href="/blog/posts/income-report-2026-03.html"><span class="i18n-ja">2026年3月 収益公開</span><span class="i18n-en">March 2026 Revenue Report</span></a>
+                        </h3>
+                        <p class="post-card-excerpt"><span class="i18n-ja">2026年3月、月収100万円を突破した。1,050,092円の内訳と、推しアイランドの買い切りプランが217本売れた顛末。</span><span class="i18n-en">In March 2026 my monthly revenue passed ¥1 million (about $6,270). The breakdown of $6,584, and how Oshi Island's one-time purchase plan sold 217 copies.</span></p>
+                        <div class="post-card-footer">
+                            <span class="reading-time"><span class="i18n-ja">5分で読む</span><span class="i18n-en">5 min read</span></span>
+                            <a href="/blog/posts/income-report-2026-03.html" class="read-more"><span class="i18n-ja">続きを読む →</span><span class="i18n-en">Read more →</span></a>
+                        </div>
+                    </div>
                 </article>
 
                 <article class="post-card" data-category="income-report">
@@ -368,154 +344,22 @@
                         </div>
                     </div>
                 </article>
-            </div>
-        </div>
-    </section>
+                </div>
 
-    <!-- guides:start（scripts/build_guides.py が作る。手で直さない） -->
-    <section class="section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Guides</span>
-                <h2 class="section-title"><span class="i18n-ja">困りごとから選ぶアプリ</span><span class="i18n-en">Apps for Everyday Problems</span></h2>
-                <p style="color: var(--color-secondary); font-weight: 300; margin-top: 0.5rem;"><span class="i18n-ja">検索した悩みに、僕のアプリも入れて答える記事。ぜんぶで81本</span><span class="i18n-en">Answers to the problems people search for, with my own apps in the mix. 81 guides in all</span></p>
-            </div>
-            <div class="posts-grid">
-                <article class="post-card" data-category="tips">
-                    <div class="post-card-image" style="height: auto; aspect-ratio: 3 / 2;">
-                        <img src="/assets/images/posts/zenn-trend-check-iphone.webp" width="1200" height="800" loading="lazy" alt="朝、ホーム画面のパネルから浮かぶ記事のカードに指を伸ばすキャラクター" data-en-alt="The character with a morning mug, reaching for one of the article cards rising from a Home Screen panel" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-                    </div>
-                    <div class="post-card-content">
-                        <div class="post-meta">
-                            <span class="post-date">2026.11.15</span>
-                            <span class="post-category"><span class="i18n-ja">アプリの選び方</span><span class="i18n-en">App guides</span></span>
-                        </div>
-                        <h3 class="post-card-title">
-                            <a href="/blog/posts/zenn-trend-check-iphone.html"><span class="i18n-ja">Zennのトレンドを毎日チェックする方法とアプリ3選</span><span class="i18n-en">How to Check Zenn Trending Articles Every Day, Plus 3 Apps</span></a>
-                        </h3>
-                        <p class="post-card-excerpt"><span class="i18n-ja">ホーム画面に置くか、RSSでほかのサイトとまとめて読むか。Zennのトレンドの追い方を比べました。WidgetZennを作った僕が書いています。</span><span class="i18n-en">Put it on your Home Screen, or read it with your other sites in an RSS reader. A comparison of ways to follow Zenn trends. I made WidgetZenn.</span></p>
-                        <div class="post-card-footer">
-                            <span class="reading-time"><span class="i18n-ja">4分で読む</span><span class="i18n-en">4 min read</span></span>
-                            <a href="/blog/posts/zenn-trend-check-iphone.html" class="read-more"><span class="i18n-ja">続きを読む →</span><span class="i18n-en">Read more →</span></a>
-                        </div>
-                    </div>
-                </article>
+                <a class="gb-series g-ypanel" href="/blog/income-report/">
+                    <span class="g-cap g-cap--3 gb-series-cap" aria-hidden="true"></span>
+                    <span>
+                        <b><span class="i18n-ja">限界個人開発者の月収１０００万円計画</span><span class="i18n-en">A Struggling Indie Dev's Road to ¥10M a Month</span></b>
+                        <p><span class="i18n-ja">月次推移グラフと全レポートの一覧。最新の2026年10月は¥668,770で達成率6.69%</span><span class="i18n-en">A monthly trend chart and every report in one place. The latest, October 2026, was $4,253, which is 6.69% of the goal</span></p>
+                    </span>
+                    <span class="g-btn g-btn--k"><span class="i18n-ja">特設ページへ</span><span class="i18n-en">Open the series page</span></span>
+                </a>
+            </section>
 
-                <article class="post-card" data-category="tips">
-                    <div class="post-card-image" style="height: auto; aspect-ratio: 3 / 2;">
-                        <img src="/assets/images/posts/wine-drinking-window-apps.webp" width="1200" height="800" loading="lazy" alt="夕方、ワインラックからリボンのついたボトルを取り出してうれしそうなキャラクター" data-en-alt="In the evening, the character happily pulls a ribboned bottle from a wine rack, with two glasses on the table" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-                    </div>
-                    <div class="post-card-content">
-                        <div class="post-meta">
-                            <span class="post-date">2026.11.15</span>
-                            <span class="post-category"><span class="i18n-ja">アプリの選び方</span><span class="i18n-en">App guides</span></span>
-                        </div>
-                        <h3 class="post-card-title">
-                            <a href="/blog/posts/wine-drinking-window-apps.html"><span class="i18n-ja">ワインの飲み頃まで分かる管理アプリ3選</span><span class="i18n-en">3 Wine Cellar Apps That Tell You When to Open a Bottle</span></a>
-                        </h3>
-                        <p class="post-card-excerpt"><span class="i18n-ja">もらったワイン、いつ開ければいいか分からないまま寝かせていませんか。飲み頃まで見られる管理アプリを3本比べました。</span><span class="i18n-en">Got a bottle you&#x27;ve been saving without knowing when to open it? Three wine apps compared on how they handle the drinking window.</span></p>
-                        <div class="post-card-footer">
-                            <span class="reading-time"><span class="i18n-ja">4分で読む</span><span class="i18n-en">4 min read</span></span>
-                            <a href="/blog/posts/wine-drinking-window-apps.html" class="read-more"><span class="i18n-ja">続きを読む →</span><span class="i18n-en">Read more →</span></a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="post-card" data-category="tips">
-                    <div class="post-card-image" style="height: auto; aspect-ratio: 3 / 2;">
-                        <img src="/assets/images/posts/what-day-is-today-app.webp" width="1200" height="800" loading="lazy" alt="朝礼でスマホを見ながら、今日の話題を話すキャラクター" data-en-alt="The character at a morning meeting, sharing today&#x27;s topic while glancing at a phone" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-                    </div>
-                    <div class="post-card-content">
-                        <div class="post-meta">
-                            <span class="post-date">2026.11.15</span>
-                            <span class="post-category"><span class="i18n-ja">アプリの選び方</span><span class="i18n-en">App guides</span></span>
-                        </div>
-                        <h3 class="post-card-title">
-                            <a href="/blog/posts/what-day-is-today-app.html"><span class="i18n-ja">「今日は何の日」が分かるアプリ4選</span><span class="i18n-en">4 Apps That Tell You What Today Is Known For</span></a>
-                        </h3>
-                        <p class="post-card-excerpt"><span class="i18n-ja">朝礼のひと言や投稿のネタを探している人へ。記念日の量、ウィジェット、和暦や六曜で4本を比べました。Todayを作った僕が書いています。</span><span class="i18n-en">For anyone looking for a line for a morning meeting or a post. Four apps compared on anniversaries, widgets, and the Japanese era year. I made Today, one of the four.</span></p>
-                        <div class="post-card-footer">
-                            <span class="reading-time"><span class="i18n-ja">4分で読む</span><span class="i18n-en">4 min read</span></span>
-                            <a href="/blog/posts/what-day-is-today-app.html" class="read-more"><span class="i18n-ja">続きを読む →</span><span class="i18n-en">Read more →</span></a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="post-card" data-category="tips">
-                    <div class="post-card-image" style="height: auto; aspect-ratio: 3 / 2;">
-                        <img src="/assets/images/posts/water-filter-cartridge-reminder-apps.webp" width="1200" height="800" loading="lazy" alt="蛇口の浄水器のカートリッジを新しいものに替え、スマホのチェックの印を見て満足するキャラクター" data-en-alt="The character swapping in a new cartridge on a faucet water filter, pleased to see a check mark on the phone beside the sink" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-                    </div>
-                    <div class="post-card-content">
-                        <div class="post-meta">
-                            <span class="post-date">2026.11.15</span>
-                            <span class="post-category"><span class="i18n-ja">アプリの選び方</span><span class="i18n-en">App guides</span></span>
-                        </div>
-                        <h3 class="post-card-title">
-                            <a href="/blog/posts/water-filter-cartridge-reminder-apps.html"><span class="i18n-ja">浄水器やエアコンのフィルター交換を通知してくれるアプリ3選</span><span class="i18n-en">3 Apps That Remind You to Replace Water and Air Filters</span></a>
-                        </h3>
-                        <p class="post-card-excerpt"><span class="i18n-ja">浄水器のカートリッジ、前に替えたのはいつでしたっけ。交換時期を知らせるアプリを3本、通知の時期と対象の広さで比べました。</span><span class="i18n-en">When did you last change your water filter cartridge? Three reminder apps compared on when they notify you and what else they can track.</span></p>
-                        <div class="post-card-footer">
-                            <span class="reading-time"><span class="i18n-ja">4分で読む</span><span class="i18n-en">4 min read</span></span>
-                            <a href="/blog/posts/water-filter-cartridge-reminder-apps.html" class="read-more"><span class="i18n-ja">続きを読む →</span><span class="i18n-en">Read more →</span></a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="post-card" data-category="tips">
-                    <div class="post-card-image" style="height: auto; aspect-ratio: 3 / 2;">
-                        <img src="/assets/images/posts/watch-overhaul-reminder-apps.webp" width="1200" height="800" loading="lazy" alt="時計箱から腕時計を1本取り出し、耳に当てて動いているか確かめるキャラクター" data-en-alt="The character takes a watch from a watch box and holds it to an ear to check it&#x27;s still running" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-                    </div>
-                    <div class="post-card-content">
-                        <div class="post-meta">
-                            <span class="post-date">2026.11.15</span>
-                            <span class="post-category"><span class="i18n-ja">アプリの選び方</span><span class="i18n-en">App guides</span></span>
-                        </div>
-                        <h3 class="post-card-title">
-                            <a href="/blog/posts/watch-overhaul-reminder-apps.html"><span class="i18n-ja">オーバーホールの時期を知らせてくれる腕時計の管理アプリ3選</span><span class="i18n-en">3 Watch Care Apps That Remind You When Service Is Due</span></a>
-                        </h3>
-                        <p class="post-card-excerpt"><span class="i18n-ja">前にオーバーホールに出したのはいつだったか。周期を数えて知らせてくれる腕時計のアプリを3本比べました。</span><span class="i18n-en">When did you last send your watch in for service? Three apps that count the interval and remind you, compared.</span></p>
-                        <div class="post-card-footer">
-                            <span class="reading-time"><span class="i18n-ja">4分で読む</span><span class="i18n-en">4 min read</span></span>
-                            <a href="/blog/posts/watch-overhaul-reminder-apps.html" class="read-more"><span class="i18n-ja">続きを読む →</span><span class="i18n-en">Read more →</span></a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="post-card" data-category="tips">
-                    <div class="post-card-image" style="height: auto; aspect-ratio: 3 / 2;">
-                        <img src="/assets/images/posts/voice-alarm-apps.webp" width="1200" height="800" loading="lazy" alt="枕元のスマホから届いた声で、笑って目を覚ますキャラクター" data-en-alt="The character waking up smiling to a voice coming from the phone by the pillow" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-                    </div>
-                    <div class="post-card-content">
-                        <div class="post-meta">
-                            <span class="post-date">2026.11.15</span>
-                            <span class="post-category"><span class="i18n-ja">アプリの選び方</span><span class="i18n-en">App guides</span></span>
-                        </div>
-                        <h3 class="post-card-title">
-                            <a href="/blog/posts/voice-alarm-apps.html"><span class="i18n-ja">好きな人の声で起きられるアラームアプリ3選</span><span class="i18n-en">3 Alarm Apps That Wake You Up with Someone’s Voice</span></a>
-                        </h3>
-                        <p class="post-card-excerpt"><span class="i18n-ja">誰の声で起きるか、録音の長さ、無料の範囲で3本を比べました。Monivoを作った僕が、自分のアプリも入れて書いています。</span><span class="i18n-en">Three apps compared on whose voice wakes you, recording length, and what&#x27;s free. I made Monivo, and it&#x27;s one of the three.</span></p>
-                        <div class="post-card-footer">
-                            <span class="reading-time"><span class="i18n-ja">4分で読む</span><span class="i18n-en">4 min read</span></span>
-                            <a href="/blog/posts/voice-alarm-apps.html" class="read-more"><span class="i18n-ja">続きを読む →</span><span class="i18n-en">Read more →</span></a>
-                        </div>
-                    </div>
-                </article>
-
-            </div>
-            <p style="text-align: center; margin-top: 2rem;"><a href="/blog/guides/" class="btn btn-primary"><span class="i18n-ja">81本ぜんぶ見る</span><span class="i18n-en">See all 81 guides</span></a></p>
-        </div>
-    </section>
-    <!-- guides:end -->
-
-    <!-- Recent Posts -->
-    <section class="section section-alt">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Recent</span>
-                <h2 class="section-title"><span class="i18n-ja">最新記事</span><span class="i18n-en">Latest Posts</span></h2>
-            </div>
-            
-            <div class="posts-grid">
+            <!-- Recent Posts -->
+            <section class="gb-shelf" data-shelf="recent">
+                <div class="g-sh"><h2><span class="i18n-ja">作った話</span><span class="i18n-en">Making Apps</span></h2><small><span class="i18n-ja">開発記・振り返り・イベント</span><span class="i18n-en">Dev logs, look-backs and events</span></small></div>
+                <div class="posts-grid gb-recent">
                 <!-- Post: 2025年の振り返り -->
                 <article class="post-card" data-category="development">
                     <div class="post-card-image" style="height: auto; aspect-ratio: 3 / 2;">
@@ -652,23 +496,142 @@
                         </div>
                     </div>
                 </article>
-                
-            </div>
-            
-        </div>
-    </section>
+                </div>
+            </section>
 
+    <!-- guides:start（scripts/build_guides.py が作る。手で直さない） -->
+            <section class="gb-shelf" data-shelf="tips" data-total="81">
+                <div class="g-sh"><h2><span class="i18n-ja">困りごとから選ぶ</span><span class="i18n-en">Pick by Problem</span></h2><small><span class="i18n-ja">ぜんぶで81本</span><span class="i18n-en">81 guides</span></small><a href="/blog/guides/" class="g-btn g-btn--y"><span class="i18n-ja">81本ぜんぶ見る</span><span class="i18n-en">See all 81 guides</span></a></div>
+                <p class="g-bubble gb-shelf-lead"><span class="i18n-ja">検索した悩みに、僕のアプリも入れて答える記事。</span><span class="i18n-en">Answers to the problems people search for, with my own apps in the mix.</span></p>
+                <div class="posts-grid gb-guides">
+                <article class="post-card" data-category="tips">
+                    <div class="post-card-image" style="height: auto; aspect-ratio: 3 / 2;">
+                        <img src="/assets/images/posts/zenn-trend-check-iphone.webp" width="1200" height="800" loading="lazy" alt="朝、ホーム画面のパネルから浮かぶ記事のカードに指を伸ばすキャラクター" data-en-alt="The character with a morning mug, reaching for one of the article cards rising from a Home Screen panel" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    </div>
+                    <div class="post-card-content">
+                        <div class="post-meta">
+                            <span class="post-date">2026.11.15</span>
+                            <span class="post-category"><span class="i18n-ja">アプリの選び方</span><span class="i18n-en">App guides</span></span>
+                        </div>
+                        <h3 class="post-card-title">
+                            <a href="/blog/posts/zenn-trend-check-iphone.html"><span class="i18n-ja">Zennのトレンドを毎日チェックする方法とアプリ3選</span><span class="i18n-en">How to Check Zenn Trending Articles Every Day, Plus 3 Apps</span></a>
+                        </h3>
+                        <p class="post-card-excerpt"><span class="i18n-ja">ホーム画面に置くか、RSSでほかのサイトとまとめて読むか。Zennのトレンドの追い方を比べました。WidgetZennを作った僕が書いています。</span><span class="i18n-en">Put it on your Home Screen, or read it with your other sites in an RSS reader. A comparison of ways to follow Zenn trends. I made WidgetZenn.</span></p>
+                        <div class="post-card-footer">
+                            <span class="reading-time"><span class="i18n-ja">4分で読む</span><span class="i18n-en">4 min read</span></span>
+                            <a href="/blog/posts/zenn-trend-check-iphone.html" class="read-more"><span class="i18n-ja">続きを読む →</span><span class="i18n-en">Read more →</span></a>
+                        </div>
+                    </div>
+                </article>
 
-    <!-- App Introduction Posts -->
-    <section class="section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Apps</span>
-                <h2 class="section-title"><span class="i18n-ja">アプリ紹介</span><span class="i18n-en">App Spotlight</span></h2>
-                <p style="color: var(--color-secondary); font-weight: 300; margin-top: 0.5rem;"><span class="i18n-ja">これまでに出した44個のアプリ</span><span class="i18n-en">The 44 apps I've released so far</span></p>
-            </div>
-            
-            <div class="posts-grid">
+                <article class="post-card" data-category="tips">
+                    <div class="post-card-image" style="height: auto; aspect-ratio: 3 / 2;">
+                        <img src="/assets/images/posts/wine-drinking-window-apps.webp" width="1200" height="800" loading="lazy" alt="夕方、ワインラックからリボンのついたボトルを取り出してうれしそうなキャラクター" data-en-alt="In the evening, the character happily pulls a ribboned bottle from a wine rack, with two glasses on the table" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    </div>
+                    <div class="post-card-content">
+                        <div class="post-meta">
+                            <span class="post-date">2026.11.15</span>
+                            <span class="post-category"><span class="i18n-ja">アプリの選び方</span><span class="i18n-en">App guides</span></span>
+                        </div>
+                        <h3 class="post-card-title">
+                            <a href="/blog/posts/wine-drinking-window-apps.html"><span class="i18n-ja">ワインの飲み頃まで分かる管理アプリ3選</span><span class="i18n-en">3 Wine Cellar Apps That Tell You When to Open a Bottle</span></a>
+                        </h3>
+                        <p class="post-card-excerpt"><span class="i18n-ja">もらったワイン、いつ開ければいいか分からないまま寝かせていませんか。飲み頃まで見られる管理アプリを3本比べました。</span><span class="i18n-en">Got a bottle you&#x27;ve been saving without knowing when to open it? Three wine apps compared on how they handle the drinking window.</span></p>
+                        <div class="post-card-footer">
+                            <span class="reading-time"><span class="i18n-ja">4分で読む</span><span class="i18n-en">4 min read</span></span>
+                            <a href="/blog/posts/wine-drinking-window-apps.html" class="read-more"><span class="i18n-ja">続きを読む →</span><span class="i18n-en">Read more →</span></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="post-card" data-category="tips">
+                    <div class="post-card-image" style="height: auto; aspect-ratio: 3 / 2;">
+                        <img src="/assets/images/posts/what-day-is-today-app.webp" width="1200" height="800" loading="lazy" alt="朝礼でスマホを見ながら、今日の話題を話すキャラクター" data-en-alt="The character at a morning meeting, sharing today&#x27;s topic while glancing at a phone" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    </div>
+                    <div class="post-card-content">
+                        <div class="post-meta">
+                            <span class="post-date">2026.11.15</span>
+                            <span class="post-category"><span class="i18n-ja">アプリの選び方</span><span class="i18n-en">App guides</span></span>
+                        </div>
+                        <h3 class="post-card-title">
+                            <a href="/blog/posts/what-day-is-today-app.html"><span class="i18n-ja">「今日は何の日」が分かるアプリ4選</span><span class="i18n-en">4 Apps That Tell You What Today Is Known For</span></a>
+                        </h3>
+                        <p class="post-card-excerpt"><span class="i18n-ja">朝礼のひと言や投稿のネタを探している人へ。記念日の量、ウィジェット、和暦や六曜で4本を比べました。Todayを作った僕が書いています。</span><span class="i18n-en">For anyone looking for a line for a morning meeting or a post. Four apps compared on anniversaries, widgets, and the Japanese era year. I made Today, one of the four.</span></p>
+                        <div class="post-card-footer">
+                            <span class="reading-time"><span class="i18n-ja">4分で読む</span><span class="i18n-en">4 min read</span></span>
+                            <a href="/blog/posts/what-day-is-today-app.html" class="read-more"><span class="i18n-ja">続きを読む →</span><span class="i18n-en">Read more →</span></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="post-card" data-category="tips">
+                    <div class="post-card-image" style="height: auto; aspect-ratio: 3 / 2;">
+                        <img src="/assets/images/posts/water-filter-cartridge-reminder-apps.webp" width="1200" height="800" loading="lazy" alt="蛇口の浄水器のカートリッジを新しいものに替え、スマホのチェックの印を見て満足するキャラクター" data-en-alt="The character swapping in a new cartridge on a faucet water filter, pleased to see a check mark on the phone beside the sink" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    </div>
+                    <div class="post-card-content">
+                        <div class="post-meta">
+                            <span class="post-date">2026.11.15</span>
+                            <span class="post-category"><span class="i18n-ja">アプリの選び方</span><span class="i18n-en">App guides</span></span>
+                        </div>
+                        <h3 class="post-card-title">
+                            <a href="/blog/posts/water-filter-cartridge-reminder-apps.html"><span class="i18n-ja">浄水器やエアコンのフィルター交換を通知してくれるアプリ3選</span><span class="i18n-en">3 Apps That Remind You to Replace Water and Air Filters</span></a>
+                        </h3>
+                        <p class="post-card-excerpt"><span class="i18n-ja">浄水器のカートリッジ、前に替えたのはいつでしたっけ。交換時期を知らせるアプリを3本、通知の時期と対象の広さで比べました。</span><span class="i18n-en">When did you last change your water filter cartridge? Three reminder apps compared on when they notify you and what else they can track.</span></p>
+                        <div class="post-card-footer">
+                            <span class="reading-time"><span class="i18n-ja">4分で読む</span><span class="i18n-en">4 min read</span></span>
+                            <a href="/blog/posts/water-filter-cartridge-reminder-apps.html" class="read-more"><span class="i18n-ja">続きを読む →</span><span class="i18n-en">Read more →</span></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="post-card" data-category="tips">
+                    <div class="post-card-image" style="height: auto; aspect-ratio: 3 / 2;">
+                        <img src="/assets/images/posts/watch-overhaul-reminder-apps.webp" width="1200" height="800" loading="lazy" alt="時計箱から腕時計を1本取り出し、耳に当てて動いているか確かめるキャラクター" data-en-alt="The character takes a watch from a watch box and holds it to an ear to check it&#x27;s still running" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    </div>
+                    <div class="post-card-content">
+                        <div class="post-meta">
+                            <span class="post-date">2026.11.15</span>
+                            <span class="post-category"><span class="i18n-ja">アプリの選び方</span><span class="i18n-en">App guides</span></span>
+                        </div>
+                        <h3 class="post-card-title">
+                            <a href="/blog/posts/watch-overhaul-reminder-apps.html"><span class="i18n-ja">オーバーホールの時期を知らせてくれる腕時計の管理アプリ3選</span><span class="i18n-en">3 Watch Care Apps That Remind You When Service Is Due</span></a>
+                        </h3>
+                        <p class="post-card-excerpt"><span class="i18n-ja">前にオーバーホールに出したのはいつだったか。周期を数えて知らせてくれる腕時計のアプリを3本比べました。</span><span class="i18n-en">When did you last send your watch in for service? Three apps that count the interval and remind you, compared.</span></p>
+                        <div class="post-card-footer">
+                            <span class="reading-time"><span class="i18n-ja">4分で読む</span><span class="i18n-en">4 min read</span></span>
+                            <a href="/blog/posts/watch-overhaul-reminder-apps.html" class="read-more"><span class="i18n-ja">続きを読む →</span><span class="i18n-en">Read more →</span></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="post-card" data-category="tips">
+                    <div class="post-card-image" style="height: auto; aspect-ratio: 3 / 2;">
+                        <img src="/assets/images/posts/voice-alarm-apps.webp" width="1200" height="800" loading="lazy" alt="枕元のスマホから届いた声で、笑って目を覚ますキャラクター" data-en-alt="The character waking up smiling to a voice coming from the phone by the pillow" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    </div>
+                    <div class="post-card-content">
+                        <div class="post-meta">
+                            <span class="post-date">2026.11.15</span>
+                            <span class="post-category"><span class="i18n-ja">アプリの選び方</span><span class="i18n-en">App guides</span></span>
+                        </div>
+                        <h3 class="post-card-title">
+                            <a href="/blog/posts/voice-alarm-apps.html"><span class="i18n-ja">好きな人の声で起きられるアラームアプリ3選</span><span class="i18n-en">3 Alarm Apps That Wake You Up with Someone’s Voice</span></a>
+                        </h3>
+                        <p class="post-card-excerpt"><span class="i18n-ja">誰の声で起きるか、録音の長さ、無料の範囲で3本を比べました。Monivoを作った僕が、自分のアプリも入れて書いています。</span><span class="i18n-en">Three apps compared on whose voice wakes you, recording length, and what&#x27;s free. I made Monivo, and it&#x27;s one of the three.</span></p>
+                        <div class="post-card-footer">
+                            <span class="reading-time"><span class="i18n-ja">4分で読む</span><span class="i18n-en">4 min read</span></span>
+                            <a href="/blog/posts/voice-alarm-apps.html" class="read-more"><span class="i18n-ja">続きを読む →</span><span class="i18n-en">Read more →</span></a>
+                        </div>
+                    </div>
+                </article>
+
+                </div>
+            </section>
+    <!-- guides:end -->
+
+            <!-- App Introduction Posts -->
+            <section class="gb-shelf" data-shelf="app-intro" id="appIntro">
+                <div class="g-sh"><h2><span class="i18n-ja">アプリ紹介</span><span class="i18n-en">App Spotlight</span></h2><small><span class="i18n-ja">これまでに出した44個のアプリ</span><span class="i18n-en">The 44 apps I've released so far</span></small></div>
+                <div class="posts-grid gb-apps" data-page-size="12">
                 <article class="post-card app-intro-post-card" data-category="app-intro">
                     <div class="post-card-image" style="height: auto; aspect-ratio: 3 / 2;">
                         <img src="/assets/images/posts/app-unchikun.webp" width="1200" height="800" loading="lazy" alt="トイレから出てきて喜び、スマホのボタンを押すキャラクター" data-en-alt="The character coming out of the bathroom, happily tapping a button on the phone" style="width: 100%; height: 100%; object-fit: cover; display: block;">
@@ -1504,151 +1467,116 @@
                         </div>
                     </div>
                 </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- Newsletter Section -->
-    <section class="section">
-        <div class="container">
-            <div class="newsletter-box">
-                <div class="newsletter-content">
-                    <h2 class="newsletter-title">
-                        <span class="i18n-ja"><span class="text-gradient">最新情報</span>をお届け</span><span class="i18n-en">Get the <span class="text-gradient">latest</span></span>
-                    </h2>
-                    <p class="newsletter-description">
-                        <span class="i18n-ja">新しい記事の公開やアプリのアップデート情報を<br>
-                        いち早くお知らせします</span><span class="i18n-en">Be the first to hear about new posts<br>
-                        and app updates</span>
-                    </p>
-                    <div class="newsletter-form">
-                        <p class="newsletter-note">
-                            <span class="i18n-ja">最新情報はTwitterでも発信しています</span><span class="i18n-en">I also post updates on Twitter</span>
-                        </p>
-                        <a href="https://twitter.com/tsuzuki817" target="_blank" class="btn btn-primary">
-                            <span class="i18n-ja">Twitterをフォロー</span><span class="i18n-en">Follow on Twitter</span>
-                        </a>
-                    </div>
                 </div>
-                <div class="newsletter-decoration">
-                    <div class="decoration-circle"></div>
-                    <div class="decoration-circle"></div>
-                    <div class="decoration-circle"></div>
+                <nav class="gb-pager" aria-label="アプリ紹介のページ" data-en-aria-label="App Spotlight pages"></nav>
+            </section>
+
+            <div class="g-panel g-empty gb-empty" id="blogEmpty" hidden>
+                <img src="/assets/images/character-sleep.png" alt="" width="254" height="288">
+                <h3><span class="i18n-ja">この札の冊子は、まだありません</span><span class="i18n-en">No booklets in this category yet</span></h3>
+                <p><span class="i18n-ja">書いたら、ここに並びます。ほかの札を選ぶか、ぜんぶを見てください。</span><span class="i18n-en">When I write one, it will show up here. Pick another category or see everything.</span></p>
+                <div class="g-btns"><button type="button" class="g-btn g-btn--y" data-category-reset><span class="i18n-ja">ぜんぶを見る</span><span class="i18n-en">See everything</span></button></div>
+            </div>
+
+            <!-- Newsletter Section -->
+            <section class="gb-follow g-panel">
+                <img src="/assets/images/character-wave.png" alt="" width="419" height="382" loading="lazy">
+                <div>
+                    <h2><span class="i18n-ja">最新情報をお届け</span><span class="i18n-en">Get the latest</span></h2>
+                    <p><span class="i18n-ja">新しい記事の公開やアプリのアップデート情報は、Xでいち早くお知らせしています。</span><span class="i18n-en">I post new articles and app updates on X first.</span></p>
                 </div>
-            </div>
+                <a href="https://x.com/tsuzuki817" target="_blank" rel="noopener noreferrer" class="g-btn g-btn--k"><span class="i18n-ja">Xをフォロー</span><span class="i18n-en">Follow on X</span></a>
+            </section>
         </div>
-    </section>
+    </main>
 
-
-    <!-- Footer -->
-    <footer class="footer-peek-host" style="position: relative; background: var(--color-primary); color: var(--color-background); padding: 3rem 0; text-align: center;">
-        <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
-        <div class="container">
-            <!-- SNS Links -->
-            <div class="footer-sns">
-                <a href="https://x.com/tsuzuki817" target="_blank" rel="noopener noreferrer" class="sns-link" aria-label="X (Twitter)">
-                    <img src="/assets/images/sns/x.png" alt="X" class="sns-icon">
-                </a>
-                <a href="https://www.instagram.com/tsuzuki817/" target="_blank" rel="noopener noreferrer" class="sns-link" aria-label="Instagram">
-                    <img src="/assets/images/sns/instagram.png" alt="Instagram" class="sns-icon">
-                </a>
-                <a href="https://www.tiktok.com/@tsuzuki817" target="_blank" rel="noopener noreferrer" class="sns-link" aria-label="TikTok">
-                    <img src="/assets/images/sns/tiktok.png" alt="TikTok" class="sns-icon">
-                </a>
-                <a href="https://www.youtube.com/@tsuzuki817" target="_blank" rel="noopener noreferrer" class="sns-link" aria-label="YouTube">
-                    <img src="/assets/images/sns/youtube.png" alt="YouTube" class="sns-icon">
-                </a>
-                <a href="https://github.com/tsuzukihashi" target="_blank" rel="noopener noreferrer" class="sns-link" aria-label="GitHub">
-                    <img src="/assets/images/sns/github.png" alt="GitHub" class="sns-icon">
-                </a>
+    <footer class="g-foot">
+            <img class="g-foot-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364" loading="lazy">
+            <div class="g-wrap">
+                <div><a href="/" class="g-foot-logo"><img src="/assets/images/logo/tsuzukit-wordmark-white.svg" alt="TsuzuKit" width="110" height="34"></a>
+                <p class="g-foot-tag"><span class="i18n-ja">誰も作らないものを、まじめに作る。</span><span class="i18n-en">Making what nobody else will, seriously.</span><br>Seriously Silly since 2016.</p></div>
+                <div class="g-foot-sns"><a href="https://x.com/tsuzuki817" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><img src="/assets/images/sns/x.png" alt="" width="22" height="22"></a><a href="https://www.instagram.com/tsuzuki817/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="/assets/images/sns/instagram.png" alt="" width="22" height="22"></a><a href="https://www.tiktok.com/@tsuzuki817" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><img src="/assets/images/sns/tiktok.png" alt="" width="22" height="22"></a><a href="https://www.youtube.com/@tsuzuki817" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><img src="/assets/images/sns/youtube.png" alt="" width="22" height="22"></a><a href="https://github.com/tsuzukihashi" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><img src="/assets/images/sns/github.png" alt="" width="22" height="22"></a></div>
+                <div class="g-foot-links"><a href="/contact/"><span class="i18n-ja">お問い合わせ</span><span class="i18n-en">Contact</span></a><a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a><a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a><a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a><a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a></div>
+                <p class="g-foot-copy">© 2026 Ryo Tsuzukihashi / TsuzuKit</p>
             </div>
+        </footer>
 
-            <p style="color: var(--color-background); opacity: 0.8; margin-bottom: 1rem; margin-top: 2rem;">
-                © 2026 Ryo Tsuzukihashi. All rights reserved.
-            </p>
-            <p style="color: var(--color-background); opacity: 0.6; font-size: 0.875rem;">
-                Seriously Silly since 2016.
-            </p>
-            <div style="margin-top: 2rem;">
-                <a href="/legal/privacy-policy.html" style="color: var(--color-background); opacity: 0.6; margin: 0 1rem; text-decoration: none;"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
-                <a href="/legal/terms-of-service.html" style="color: var(--color-background); opacity: 0.6; margin: 0 1rem; text-decoration: none;"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
-                <a href="/legal/commercial-law.html" style="color: var(--color-background); opacity: 0.6; margin: 0 1rem; text-decoration: none;"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
-                <a href="/legal/disclaimer.html" style="color: var(--color-background); opacity: 0.6; margin: 0 1rem; text-decoration: none;"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a>
-            </div>
-        </div>
-    </footer>
-
-    <!-- JavaScript -->
     <script>
-        // Navigation scroll effect
-        window.addEventListener('scroll', function() {
-            const nav = document.getElementById('nav');
-            if (window.scrollY > 50) {
-                nav.classList.add('scrolled');
-            } else {
-                nav.classList.remove('scrolled');
+    // カテゴリの絞り込みと、アプリ紹介のページ送り
+    (function () {
+        var main = document.getElementById('blogMain');
+        var chips = Array.prototype.slice.call(main.querySelectorAll('.category-btn'));
+        var cards = Array.prototype.slice.call(main.querySelectorAll('.post-card'));
+        var shelves = Array.prototype.slice.call(main.querySelectorAll('[data-shelf]'));
+        var empty = document.getElementById('blogEmpty');
+
+        // 札の数。困りごとの節は一覧ページの全本数（data-total）を出す
+        var sum = 0;
+        chips.forEach(function (chip) {
+            var cat = chip.dataset.category;
+            if (cat === 'all') return;
+            var n = cards.filter(function (c) { return c.dataset.category === cat; }).length;
+            var total = main.querySelector('[data-shelf="' + cat + '"][data-total]');
+            if (total && n) n = Number(total.dataset.total);
+            chip.querySelector('i').textContent = n;
+            if (!n) chip.hidden = true;
+            sum += n;
+        });
+        main.querySelector('.category-btn[data-category="all"] i').textContent = sum;
+
+        // アプリ紹介のページ送り
+        var grid = main.querySelector('.gb-apps');
+        var pager = main.querySelector('.gb-pager');
+        var size = Number(grid.dataset.pageSize);
+        var page = 1;
+        function paginate() {
+            var items = Array.prototype.slice.call(grid.querySelectorAll('.post-card:not([hidden])'));
+            var pages = Math.max(1, Math.ceil(items.length / size));
+            if (page > pages) page = 1;
+            items.forEach(function (c, i) { c.classList.toggle('is-off', Math.floor(i / size) + 1 !== page); });
+            pager.innerHTML = '';
+            pager.hidden = pages < 2;
+            for (var p = 1; p <= pages; p++) {
+                var b = document.createElement('button');
+                b.type = 'button';
+                b.style.setProperty('--c', 'var(--g-c' + (((p - 1) % 6) + 1) + ')');
+                b.innerHTML = '<span>' + p + '</span>';
+                b.setAttribute('aria-label', (window.tsuzukitLang === 'en' ? 'Page ' : 'ページ ') + p);
+                if (p === page) b.setAttribute('aria-current', 'page');
+                b.dataset.page = p;
+                pager.appendChild(b);
             }
+        }
+        pager.addEventListener('click', function (e) {
+            var b = e.target.closest('button');
+            if (!b) return;
+            page = Number(b.dataset.page);
+            paginate();
+            document.getElementById('appIntro').scrollIntoView({ behavior: 'smooth', block: 'start' });
         });
 
-        // Mobile menu toggle
-        const navToggle = document.getElementById('navToggle');
-        const navMenu = document.getElementById('navMenu');
-        
-        navToggle.addEventListener('click', function() {
-            navToggle.classList.toggle('active');
-            navMenu.classList.toggle('active');
-        });
-
-        // Category filter
-        const categoryBtns = document.querySelectorAll('.category-btn');
-        const postCards = document.querySelectorAll('.post-card');
-
-        categoryBtns.forEach(btn => {
-            btn.addEventListener('click', function() {
-                // Update active button
-                categoryBtns.forEach(b => b.classList.remove('active'));
-                this.classList.add('active');
-
-                // Filter posts
-                const category = this.dataset.category;
-
-                postCards.forEach(card => {
-                    if (category === 'all' || card.dataset.category === category) {
-                        card.style.display = 'block';
-                        setTimeout(() => {
-                            card.style.opacity = '1';
-                            card.style.transform = 'translateY(0)';
-                        }, 10);
-                    } else {
-                        card.style.opacity = '0';
-                        card.style.transform = 'translateY(20px)';
-                        setTimeout(() => {
-                            card.style.display = 'none';
-                        }, 300);
-                    }
-                });
+        function apply(cat) {
+            main.dataset.filter = cat;
+            chips.forEach(function (c) {
+                var on = c.dataset.category === cat;
+                c.classList.toggle('is-on', on);
+                c.setAttribute('aria-pressed', on ? 'true' : 'false');
             });
-        });
-
-        // Animate on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver(function(entries) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('animated');
-                    observer.unobserve(entry.target);
-                }
+            cards.forEach(function (c) { c.hidden = !(cat === 'all' || c.dataset.category === cat); });
+            var any = false;
+            shelves.forEach(function (s) {
+                var has = !!s.querySelector('.post-card:not([hidden])');
+                s.hidden = !has;
+                any = any || has;
             });
-        }, observerOptions);
-
-        // Observe post cards
-        document.querySelectorAll('.post-card').forEach(card => {
-            observer.observe(card);
-        });
+            empty.hidden = any;
+            page = 1;
+            paginate();
+        }
+        chips.forEach(function (c) { c.addEventListener('click', function () { apply(c.dataset.category); }); });
+        main.querySelector('[data-category-reset]').addEventListener('click', function () { apply('all'); });
+        apply('all');
+    })();
     </script>
 </body>
 </html>

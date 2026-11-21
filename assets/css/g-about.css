@@ -1,0 +1,298 @@
+/*
+ * 私について（/about/）のガチャの見た目。共通の部品は gacha.css、ここはこのページの組み方だけ。
+ * 作った人＝このガチャの持ち主。持ち主の札（黄色い板と写真）・数字のカプセルのシール・
+ * 10年をカプセルが転がる列で・経歴は点線の説明書き・技術は札・最後は手紙。
+ * 部品名は ab- から始め、全部 main.ab の下に書く（gacha.css の body.g p / ul / a の打ち消しに負けないように）。
+ */
+
+.ab { padding-top: 8px; }
+
+/* ---------------------------------------------------------------- 持ち主の紹介 */
+.ab .ab-hero { display: grid; grid-template-columns: 1.1fr .9fr; gap: 40px; align-items: center; padding-top: 6px; }
+.ab .ab-title { font-size: 76px; line-height: 1.12; }
+.ab .ab-tagline { font-size: 18px; }
+
+.ab .ab-stickers { display: flex; gap: 18px; margin: 38px 0 34px; flex-wrap: wrap; }
+.ab .ab-sticker {
+  --c: var(--g-c1);
+  width: 150px; aspect-ratio: 1; border-radius: 50%; border: 4px solid var(--g-k);
+  background: linear-gradient(var(--c) 0 50%, var(--g-k) 50% 54%, #fff 54%);
+  box-shadow: 6px 6px 0 var(--g-k), inset -8px -10px 0 rgba(0, 0, 0, .07);
+  display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;
+  transform: rotate(var(--rot, -5deg)); position: relative; padding-top: 4px;
+}
+.ab .ab-sticker::before { content: ''; position: absolute; left: 20%; top: 11%; width: 24%; height: 12%; border-radius: 50%; background: rgba(255, 255, 255, .75); }
+.ab .ab-sticker b { font: 400 32px/1.1 var(--g-head); position: relative; margin-bottom: 14px; }
+.ab .ab-sticker > span { font: 800 13px/1.35 var(--g-body); padding: 0 12px; }
+
+.ab .ab-hero-btns { margin-top: 4px; }
+
+/* 持ち主の札 */
+.ab .ab-owner { position: relative; padding: 46px 30px 30px; text-align: center; margin-top: 18px; }
+.ab .ab-owner-tab {
+  position: absolute; left: 24px; top: -18px; background: var(--g-k); color: #fff;
+  font: 400 15px/1.4 var(--g-head); padding: 5px 16px; border-radius: 999px;
+}
+.ab .ab-photo {
+  position: relative; width: 236px; aspect-ratio: 1; margin: 0 auto; border-radius: 50%; border: 4px solid var(--g-k);
+  background: linear-gradient(var(--g-c2) 0 50%, var(--g-k) 50% 53%, #fff 53%);
+  box-shadow: 7px 7px 0 var(--g-k); display: grid; place-items: center;
+}
+.ab .ab-photo img { width: 76%; border-radius: 50%; border: 4px solid var(--g-k); display: block; background: #fff; }
+.ab .ab-photo-status {
+  position: absolute; right: -26px; bottom: 6px; transform: rotate(-8deg);
+  background: var(--g-r); color: #fff; border: 3px solid var(--g-k); border-radius: 999px;
+  padding: 4px 13px; font: 800 13px/1.5 var(--g-body); box-shadow: 3px 3px 0 var(--g-k); white-space: nowrap;
+}
+.ab .ab-name { font: 400 38px/1.3 var(--g-head); margin-top: 20px; }
+.ab .ab-handle { font: 800 14px/1.6 var(--g-body); color: var(--g-mute); }
+.ab .ab-badges { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 16px; }
+.ab .ab-badges li {
+  background: #fff; border: 3px solid var(--g-k); border-radius: 999px; padding: 5px 14px;
+  font: 800 13.5px/1.4 var(--g-body); box-shadow: 3px 3px 0 var(--g-k);
+}
+.ab .ab-owner-char { position: absolute; right: -24px; bottom: -86px; width: 112px; transform: rotate(-8deg); pointer-events: none; }
+
+/* 肩書きのテープ（流れない。折り返す） */
+.ab .ab-tape {
+  margin: 64px auto 0; background: var(--g-k); color: #fff; border-radius: 14px; transform: rotate(-1.2deg);
+  display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 6px 18px;
+  padding: 14px 20px; font: 400 26px/1.2 var(--g-head); box-shadow: 6px 6px 0 rgba(42, 16, 32, .35);
+}
+.ab .ab-tape i { font-style: normal; color: var(--g-y); font-size: 16px; }
+.ab .ab-tape .o { color: var(--g-y); }
+
+/* 節の頭の吹き出し */
+.ab .ab-lead { margin: 0 0 26px; word-break: auto-phrase; text-wrap: pretty; }
+
+/* ---------------------------------------------------------------- はじめまして */
+.ab .ab-intro { display: grid; grid-template-columns: 1fr 260px; gap: 30px; padding: 34px 36px; align-items: center; }
+.ab .ab-intro-text p { font: 700 16.5px/2 var(--g-body); }
+.ab .ab-intro-text p + p { margin-top: 1em; }
+.ab .ab-intro strong, .ab .ab-mission strong, .ab .ab-letter strong { font-weight: 800; background: linear-gradient(transparent 60%, rgba(255, 210, 63, .85) 60%); }
+.ab .ab-intro-side { position: relative; text-align: center; }
+.ab .ab-intro-cap { display: flex; flex-direction: column; align-items: center; gap: 8px; font: 800 14px/1.4 var(--g-body); }
+.ab .ab-intro-cap .g-cap { width: 150px; transform: rotate(-10deg); }
+.ab .ab-intro-char { width: 96px; position: absolute; right: -30px; top: -64px; transform: rotate(10deg); }
+
+/* ---------------------------------------------------------------- 10年（カプセルが転がる列） */
+.ab .ab-chute { display: grid; grid-template-columns: repeat(5, 1fr); gap: 18px; position: relative; counter-reset: none; }
+.ab .ab-chute::before {
+  content: ''; position: absolute; left: 6%; right: 6%; top: 54px; border-top: 5px dashed #fff; z-index: 0;
+}
+.ab .ab-step { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; }
+.ab .ab-step:nth-child(even) .ab-step-cap { transform: rotate(14deg); }
+.ab .ab-step-cap { width: 108px; flex: none; transform: rotate(-12deg); margin-bottom: -16px; z-index: 2; box-shadow: 4px 4px 0 var(--g-k), inset -6px -8px 0 rgba(0, 0, 0, .08); }
+.ab .ab-step-cap em {
+  position: absolute; left: 0; right: 0; top: 0; height: 48%; display: grid; place-items: end center; padding-bottom: 6%;
+  font: 400 24px/1 var(--g-head); font-style: normal;
+}
+.ab .ab-step-card { padding: 28px 16px 18px; width: 100%; flex: 1; box-shadow: 6px 6px 0 var(--g-k); border-radius: 22px; }
+.ab .ab-year {
+  display: inline-block; background: var(--g-y); border: 2.5px solid var(--g-k); border-radius: 999px;
+  padding: 1px 12px; font: 400 15px/1.5 var(--g-head);
+}
+.ab .ab-step-card h3 { font: 800 16px/1.5 var(--g-body); margin: 8px 0 6px; }
+.ab .ab-step-card p { font: 700 13.5px/1.8 var(--g-body); color: #4a3540; }
+
+/* ---------------------------------------------------------------- 経歴（説明書き） */
+.ab .ab-paper-label {
+  position: absolute; left: 26px; top: -17px; background: var(--g-k); color: #fff;
+  font: 400 14px/1.5 var(--g-head); padding: 3px 14px; border-radius: 999px;
+}
+.ab .ab-career { padding: 34px 34px 30px; }
+.ab .ab-job { display: grid; grid-template-columns: 150px 1fr; gap: 22px; padding: 22px 0; border-bottom: 3px dashed #e6d6c6; }
+.ab .ab-job:first-of-type { padding-top: 8px; }
+.ab .ab-job-year {
+  align-self: start; justify-self: start; background: #fff; border: 3px solid var(--g-k); border-radius: 999px;
+  padding: 4px 14px; font: 400 16px/1.4 var(--g-head); box-shadow: 3px 3px 0 var(--g-k); white-space: nowrap;
+}
+.ab .ab-job.is-now .ab-job-year { background: var(--g-y); }
+.ab .ab-job-body h3 { font: 400 24px/1.35 var(--g-head); display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.ab .ab-now {
+  background: var(--g-r); color: #fff; border: 2.5px solid var(--g-k); border-radius: 999px;
+  font: 800 12px/1.5 var(--g-body); padding: 1px 10px;
+}
+.ab .ab-job-role { display: inline-block; margin: 6px 0 8px; font: 800 13px/1.5 var(--g-body); background: #fff; border: 2px solid var(--g-k); border-radius: 999px; padding: 1px 11px; }
+.ab .ab-job-body p:not(.ab-job-role) { font: 700 15px/1.95 var(--g-body); color: #3a2630; }
+.ab .ab-career-more { text-align: center; margin-top: 26px; }
+
+/* ---------------------------------------------------------------- 技術スタック */
+.ab .ab-skills { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.ab .ab-skill { padding: 22px 20px 24px; box-shadow: 7px 7px 0 var(--g-k); }
+.ab .ab-skill h3 { font: 400 18px/1.4 var(--g-head); display: flex; align-items: center; gap: 8px; margin-bottom: 14px; }
+.ab .ab-skill .g-capdot { width: 22px; height: 22px; border-width: 2.5px; }
+.ab .ab-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.ab .ab-tags li {
+  background: #fff; border: 2.5px solid var(--g-k); border-radius: 999px; padding: 4px 12px;
+  font: 800 13px/1.4 var(--g-body); box-shadow: 2px 2px 0 var(--g-k);
+}
+.ab .ab-skill:nth-child(odd) .ab-tags li:nth-child(3n+1) { background: var(--g-y); }
+.ab .ab-skill:nth-child(even) .ab-tags li:nth-child(3n+2) { background: var(--g-y); }
+
+/* ---------------------------------------------------------------- 誰も作らないものを、まじめに */
+.ab .ab-mission { display: grid; grid-template-columns: 1fr 380px; gap: 30px; padding: 34px 36px; align-items: center; }
+.ab .ab-mission-text p { font: 700 16px/2 var(--g-body); }
+.ab .ab-mission-text p + p { margin-top: 1.1em; }
+.ab .ab-users { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; text-align: center; }
+.ab .ab-users li { display: flex; flex-direction: column; align-items: center; }
+.ab .ab-users .g-cap { width: 100%; max-width: 110px; transform: rotate(var(--rot, 0deg)); background-color: transparent; }
+.ab .ab-users b {
+  margin-top: 10px; background: #fff; border: 3px solid var(--g-k); border-radius: 999px; padding: 2px 12px;
+  font: 400 17px/1.4 var(--g-head); box-shadow: 3px 3px 0 var(--g-k); white-space: nowrap;
+}
+.ab .ab-users li > span:last-child { font: 800 12.5px/1.4 var(--g-body); margin-top: 8px; }
+
+.ab .ab-values { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 30px; }
+.ab .ab-value { padding: 26px 24px 26px; position: relative; }
+.ab .ab-num {
+  --c: var(--g-c1);
+  display: grid; place-items: center; width: 56px; height: 56px; border-radius: 50%; border: 3.5px solid var(--g-k);
+  background: linear-gradient(var(--c) 0 50%, var(--g-k) 50% 55%, #fff 55%);
+  font: 400 20px/1 var(--g-head); box-shadow: 3px 3px 0 var(--g-k); margin-bottom: 14px;
+  align-content: start; padding-top: 5px;
+}
+.ab .ab-value h3 { font: 400 20px/1.45 var(--g-head); margin-bottom: 10px; }
+.ab .ab-value p { font: 700 14.5px/1.9 var(--g-body); color: #3a2630; }
+
+/* ---------------------------------------------------------------- 実績・受賞歴 */
+.ab .ab-awards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.ab .ab-award { display: flex; gap: 18px; align-items: flex-start; padding: 22px 24px; box-shadow: 7px 7px 0 var(--g-k); }
+.ab .ab-award:first-child { grid-column: 1 / -1; }
+.ab .ab-medal {
+  --c: var(--g-c3);
+  flex: none; width: 72px; height: 72px; border-radius: 50%; border: 3.5px solid var(--g-k); background: var(--c);
+  display: grid; place-items: center; box-shadow: 3px 3px 0 var(--g-k); position: relative;
+}
+.ab .ab-medal::after {
+  content: ''; position: absolute; left: 50%; top: calc(100% + 1px); width: 24px; height: 13px; transform: translateX(-50%);
+  background: var(--g-r); border: 2.5px solid var(--g-k); border-radius: 0 0 6px 6px;
+}
+.ab .ab-medal img { width: 46px; border-radius: 24%; border: 2.5px solid var(--g-k); display: block; }
+.ab .ab-medal-txt { font: 400 28px/1 var(--g-head); }
+.ab .ab-award h3 { font: 400 19px/1.45 var(--g-head); margin-bottom: 4px; }
+.ab .ab-award p { font: 700 14.5px/1.85 var(--g-body); color: #3a2630; }
+.ab .ab-award a { color: #d42c55; text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 2px; font-weight: 800; }
+
+/* ---------------------------------------------------------------- 開発の軌跡 */
+.ab .ab-history { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+.ab .ab-hist { padding: 26px 26px 28px; }
+.ab .ab-hist-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 10px; }
+.ab .ab-hist-head h3 { font: 400 22px/1.4 var(--g-head); }
+.ab .ab-hist-count {
+  background: var(--g-y); border: 3px solid var(--g-k); border-radius: 14px; padding: 2px 14px;
+  font: 400 24px/1.3 var(--g-head); box-shadow: 3px 3px 0 var(--g-k); white-space: nowrap;
+}
+.ab .ab-hist-count.is-gray { background: #e9e3e6; }
+.ab .ab-hist > p { font: 700 14.5px/1.85 var(--g-body); color: #3a2630; }
+.ab .ab-handed { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+.ab .ab-handed .g-cap { width: 50px; border-width: 3px; }
+.ab .ab-handed .g-cap:nth-child(odd) { transform: rotate(-14deg); }
+.ab .ab-handed .g-cap:nth-child(even) { transform: rotate(12deg); }
+.ab .ab-gone { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px 10px; margin-top: 18px; }
+.ab .ab-gone li { text-align: center; font: 800 12px/1.4 var(--g-body); color: var(--g-mute); overflow-wrap: anywhere; }
+.ab .ab-gone i {
+  display: block; width: 46px; aspect-ratio: 1; margin: 0 auto 6px; border-radius: 50%;
+  border: 3px dashed #9a8a92; background: linear-gradient(#f1ecee 0 48%, #9a8a92 48% 52%, #fff 52%);
+}
+
+/* ---------------------------------------------------------------- メッセージ（手紙） */
+.ab .ab-letter { max-width: 860px; margin: 14px auto 0; padding: 40px 48px 34px; }
+.ab .ab-letter > p { font: 700 16.5px/2.05 var(--g-body); }
+.ab .ab-letter > p + p { margin-top: 1.1em; }
+.ab .ab-letter-em { font: 400 22px/1.7 var(--g-head) !important; }
+.ab .ab-sign { display: flex; align-items: center; justify-content: flex-end; gap: 14px; margin-top: 22px; text-align: right; }
+.ab .ab-sign img { width: 96px; }
+.ab .ab-sign-date { font: 800 13px/1.5 var(--g-body); color: var(--g-mute); }
+.ab .ab-sign-name { font: 400 24px/1.4 var(--g-head); }
+
+/* ---------------------------------------------------------------- つながる */
+.ab .ab-connect { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.ab .ab-link { display: flex; align-items: center; gap: 14px; padding: 18px 18px; box-shadow: 7px 7px 0 var(--g-k); }
+.ab .ab-round {
+  flex: none; width: 56px; height: 56px; border-radius: 50%; background: #fff; border: 3px solid var(--g-k);
+  display: grid; place-items: center; box-shadow: 3px 3px 0 var(--g-k); transition: transform .15s;
+}
+.ab .ab-link:hover .ab-round { transform: rotate(-10deg); }
+.ab .ab-round img { width: 26px; height: 26px; object-fit: contain; }
+.ab .ab-round--q { background: #55c500; color: #fff; font: 400 26px/1 var(--g-head); }
+.ab .ab-round--mail { background: var(--g-r); color: #fff; font: 400 26px/1 var(--g-body); }
+.ab .ab-link-text b { display: block; font: 400 18px/1.4 var(--g-head); }
+.ab .ab-link-text small { display: block; word-break: auto-phrase; font: 800 12.5px/1.5 var(--g-body); color: #4a3540; }
+
+/* ---------------------------------------------------------------- 幅が狭いとき */
+@media (max-width: 1080px) {
+  .ab .ab-chute { grid-template-columns: repeat(3, 1fr); row-gap: 30px; }
+  .ab .ab-chute::before { display: none; }
+  .ab .ab-skills { grid-template-columns: repeat(2, 1fr); }
+  .ab .ab-connect { grid-template-columns: repeat(2, 1fr); }
+  .ab .ab-mission { grid-template-columns: 1fr; }
+  .ab .ab-users { max-width: 460px; margin: 0 auto; }
+}
+@media (max-width: 900px) {
+  .ab .ab-hero { grid-template-columns: 1fr; gap: 50px; }
+  .ab .ab-owner { max-width: 520px; width: 100%; margin: 10px auto 0; }
+  .ab .ab-values { grid-template-columns: 1fr; }
+  .ab .ab-intro { grid-template-columns: 1fr; }
+  .ab .ab-intro-side { display: flex; align-items: center; justify-content: center; gap: 20px; }
+  .ab .ab-intro-char { position: static; }
+}
+@media (max-width: 720px) {
+  .ab .ab-title { font-size: 46px; -webkit-text-stroke-width: 3px; }
+  .ab .ab-tagline { font-size: 15px; }
+  .ab .ab-stickers { gap: 10px; margin: 26px 0 24px; justify-content: space-between; flex-wrap: nowrap; }
+  .ab .ab-sticker { width: calc((100% - 20px) / 3); max-width: 116px; border-width: 3px; box-shadow: 4px 4px 0 var(--g-k); }
+  .ab .ab-sticker b { font-size: 20px; margin-bottom: 10px; }
+  .ab .ab-sticker > span { font-size: 10.5px; padding: 0 6px; }
+  .ab .ab-hero-btns .g-btn--big { font-size: 15.5px; padding: 12px 20px; }
+  .ab .ab-owner { padding: 40px 18px 24px; }
+  .ab .ab-owner-char { width: 92px; right: -6px; top: -64px; }
+  .ab .ab-photo { width: 190px; }
+  .ab .ab-photo-status { right: -14px; font-size: 12px; }
+  .ab .ab-name { font-size: 30px; }
+  .ab .ab-tape { font-size: 18px; gap: 4px 12px; padding: 12px 14px; margin-top: 50px; }
+  .ab .ab-tape { display: grid; grid-template-columns: auto auto; justify-content: center; gap: 2px 18px; }
+  .ab .ab-tape i { display: none; }
+
+  .ab .ab-intro { padding: 22px 20px; gap: 22px; }
+  .ab .ab-intro-text p { font-size: 15px; }
+  .ab .ab-intro-cap .g-cap { width: 110px; }
+  .ab .ab-intro-char { width: 86px; }
+
+  .ab .ab-chute { grid-template-columns: 1fr; row-gap: 18px; }
+  .ab .ab-chute::before { display: block; left: 40px; right: auto; top: 20px; bottom: 20px; border-top: 0; border-left: 5px dashed #fff; }
+  .ab .ab-step { flex-direction: row; align-items: flex-start; }
+  .ab .ab-step-cap { width: 78px; margin: 4px -14px 0 0; }
+  .ab .ab-step-cap em { font-size: 18px; }
+  .ab .ab-step-card { padding: 16px 16px 16px 26px; }
+
+  .ab .ab-career { padding: 30px 18px 24px; }
+  .ab .ab-job { grid-template-columns: 1fr; gap: 8px; padding: 18px 0; }
+  .ab .ab-job-body h3 { font-size: 21px; }
+  .ab .ab-job-body p:not(.ab-job-role) { font-size: 14.5px; }
+
+  .ab .ab-skills { grid-template-columns: 1fr; gap: 16px; }
+  .ab .ab-mission { padding: 24px 20px; gap: 24px; }
+  .ab .ab-mission-text p { font-size: 15px; }
+  .ab .ab-users b { font-size: 14px; padding: 2px 9px; }
+  .ab .ab-users li > span:last-child { font-size: 11px; }
+
+  .ab .ab-awards { grid-template-columns: 1fr; gap: 16px; }
+  .ab .ab-award { padding: 18px 16px; gap: 14px; }
+  .ab .ab-medal { width: 58px; height: 58px; }
+  .ab .ab-medal img { width: 36px; }
+  .ab .ab-medal-txt { font-size: 22px; }
+  .ab .ab-award h3 { font-size: 17px; }
+  .ab .ab-award p { font-size: 14px; }
+
+  .ab .ab-history { grid-template-columns: 1fr; gap: 16px; }
+  .ab .ab-hist { padding: 22px 18px; }
+  .ab .ab-hist-head h3 { font-size: 20px; }
+  .ab .ab-gone { grid-template-columns: repeat(2, 1fr); }
+
+  .ab .ab-letter { padding: 32px 20px 26px; }
+  .ab .ab-letter > p { font-size: 15px; }
+  .ab .ab-letter-em { font-size: 19px !important; }
+
+  .ab .ab-connect { grid-template-columns: 1fr; gap: 14px; }
+}

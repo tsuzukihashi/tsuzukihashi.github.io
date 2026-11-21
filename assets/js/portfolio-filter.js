@@ -1,278 +1,202 @@
 /**
- * Portfolio Filter & Sort Functionality
- * Provides search, category filter, and sort functionality for the portfolio page
+ * Portfolio Filter（ガチャのラインナップの絞り込み）
+ * 名前で探す・レア度・カテゴリ・並び順。カードは portfolio-renderer.js が作り、'portfolio-rendered' で始まる。
+ * 並び順が「レア度ごと」のときだけ、段の見出し（.ga-tier）を出す。0件のときは #filterEmpty を出す。
+ * スクショを押すと拡大（#lightbox）。
  */
-
-(function() {
+(function () {
   'use strict';
 
-  let appsData = [];
-  let appCards = [];
-  let originalOrder = [];
+  var IS_EN = window.tsuzukitLang === 'en';
 
-  const searchInput = document.getElementById('searchInput');
-  const categoryFilter = document.getElementById('categoryFilter');
-  const sortFilter = document.getElementById('sortFilter');
-  const filterResults = document.getElementById('filterResults');
-  const filterClear = document.getElementById('filterClear');
-  const appGrid = document.getElementById('appGrid');
+  var searchInput = document.getElementById('searchInput');
+  var sortFilter = document.getElementById('sortFilter');
+  var filterResults = document.getElementById('filterResults');
+  var filterClear = document.getElementById('filterClear');
+  var filterEmpty = document.getElementById('filterEmpty');
+  var emptyClear = document.getElementById('emptyClear');
+  var appGrid = document.getElementById('appGrid');
+  var rareChips = Array.prototype.slice.call(document.querySelectorAll('[data-filter-rarity]'));
+  var catChips = Array.prototype.slice.call(document.querySelectorAll('[data-filter-category]'));
 
-  // 言語（lang.js が決める。読み込まれていなければ日本語）
-  const IS_EN = window.tsuzukitLang === 'en';
+  var state = { q: '', rarity: '', category: '', sort: 'default' };
+  var cards = [];
+  var tiers = [];
 
   // <option> は中に span を置けないので、英語表示のときは data-en の文言に差し替える
-  if (IS_EN) {
-    document.querySelectorAll('#categoryFilter option[data-en], #sortFilter option[data-en]').forEach(option => {
-      option.textContent = option.dataset.en;
+  if (IS_EN && sortFilter) {
+    Array.prototype.forEach.call(sortFilter.querySelectorAll('option[data-en]'), function (o) {
+      o.textContent = o.dataset.en;
     });
   }
 
-  /**
-   * Initialize the filter functionality
-   */
-  function init(apps) {
+  function init() {
     if (!appGrid) return;
+    cards = Array.prototype.slice.call(appGrid.querySelectorAll('.ga-card'));
+    tiers = Array.prototype.slice.call(appGrid.querySelectorAll('.ga-tier'));
 
-    appsData = apps || [];
-
-    appCards = Array.from(document.querySelectorAll('#appGrid .app-card-store:not(.app-card-archived)'));
-    originalOrder = appCards.map(card => card);
-
-    addDataAttributesToCards();
-
-    if (searchInput) {
-      searchInput.addEventListener('input', debounce(applyFilters, 200));
-    }
-    if (categoryFilter) {
-      categoryFilter.addEventListener('change', applyFilters);
-    }
-    if (sortFilter) {
-      sortFilter.addEventListener('change', applyFilters);
-    }
-    if (filterClear) {
-      filterClear.addEventListener('click', clearFilters);
-    }
-
-    updateResultsCount();
-  }
-
-  /**
-   * Add data attributes to app cards for filtering/sorting
-   */
-  function addDataAttributesToCards() {
-    appCards.forEach((card, index) => {
-      card.dataset.originalIndex = index;
-
-      let appUrl = card.getAttribute('href') || '';
-      if (!appUrl) {
-        const iosLink = card.querySelector('.store-btn-ios');
-        if (iosLink) appUrl = iosLink.getAttribute('href') || '';
-      }
-      const appIdMatch = appUrl.match(/\/id(\d+)/);
-      const appId = appIdMatch ? parseInt(appIdMatch[1]) : null;
-
-      const appData = appsData.find(app => app.id === appId);
-
-      if (appData) {
-        card.dataset.appId = appData.id;
-        card.dataset.name = appData.name || '';
-        // 検索は日本語名でも英語名でも当たるようにする
-        card.dataset.searchName = [appData.name, appData.name_en].filter(Boolean).join(' ');
-        card.dataset.category = appData.primary_genre || '';
-        card.dataset.releaseDate = appData.release_date || '';
-        card.dataset.updateDate = appData.current_version_release_date || '';
-        card.dataset.ratingCount = appData.rating_count || 0;
-        card.dataset.rating = appData.rating || 0;
-        card.dataset.downloadCount = appData.download_count || 0;
-
-        injectReleaseDate(card, appData.release_date);
-      } else {
-        const nameEl = card.querySelector('.app-name');
-        const categoryEl = card.querySelector('.app-subtitle');
-
-        card.dataset.name = nameEl ? nameEl.textContent.trim() : '';
-        card.dataset.category = categoryEl ? categoryEl.textContent.trim() : '';
-        card.dataset.releaseDate = '';
-        card.dataset.updateDate = '';
-        card.dataset.ratingCount = 0;
-        card.dataset.rating = 0;
-        card.dataset.downloadCount = 0;
-      }
+    // カテゴリの札に数を入れる。1本も無いカテゴリの札は出さない
+    var catCount = {};
+    cards.forEach(function (c) { catCount[c.dataset.category] = (catCount[c.dataset.category] || 0) + 1; });
+    catChips.forEach(function (chip) {
+      var key = chip.dataset.filterCategory;
+      var n = key ? (catCount[key] || 0) : cards.length;
+      var i = chip.querySelector('i');
+      if (i) i.textContent = n;
+      if (key && !n) chip.hidden = true;
     });
-  }
-
-  function injectReleaseDate(card, releaseDate) {
-    if (!releaseDate) return;
-
-    const metaEl = card.querySelector('.app-meta');
-    if (!metaEl) return;
-
-    const date = new Date(releaseDate);
-    if (isNaN(date.getTime())) return;
-
-    const year = date.getFullYear();
-    const month = date.getMonth() + 1;
-    const day = date.getDate();
-    const formatted = `${year}.${month}.${day}`;
-
-    metaEl.textContent = `${metaEl.textContent} · ${formatted}`;
-  }
-
-  function applyFilters() {
-    const searchTerm = searchInput ? searchInput.value.toLowerCase().trim() : '';
-    const category = categoryFilter ? categoryFilter.value : '';
-    const sortOption = sortFilter ? sortFilter.value : 'default';
-
-    let visibleCards = [];
-
-    appCards.forEach(card => {
-      const name = (card.dataset.searchName || card.dataset.name || '').toLowerCase();
-      const cardCategory = card.dataset.category || '';
-
-      const matchesSearch = !searchTerm || name.includes(searchTerm);
-      const matchesCategory = !category || cardCategory === category;
-
-      if (matchesSearch && matchesCategory) {
-        card.classList.remove('hidden');
-        visibleCards.push(card);
-      } else {
-        card.classList.add('hidden');
+    rareChips.forEach(function (chip) {
+      if (!chip.dataset.filterRarity) {
+        var i = chip.querySelector('i');
+        if (i) i.textContent = cards.length;
       }
     });
 
-    sortCards(visibleCards, sortOption);
-    updateResultsCount(visibleCards.length);
+    if (searchInput) searchInput.addEventListener('input', debounce(function () { state.q = searchInput.value; apply(); }, 200));
+    if (sortFilter) sortFilter.addEventListener('change', function () { state.sort = sortFilter.value; apply(); });
+    rareChips.forEach(function (chip) {
+      chip.addEventListener('click', function () { state.rarity = chip.dataset.filterRarity; apply(); });
+    });
+    catChips.forEach(function (chip) {
+      chip.addEventListener('click', function () { state.category = chip.dataset.filterCategory; apply(); });
+    });
+    if (filterClear) filterClear.addEventListener('click', clear);
+    if (emptyClear) emptyClear.addEventListener('click', function () { clear(); if (searchInput) searchInput.focus(); });
+
+    apply();
   }
 
-  function sortCards(cards, sortOption) {
-    if (!appGrid) return;
-
-    let sortedCards;
-
-    switch (sortOption) {
-      case 'release-desc':
-        sortedCards = cards.sort((a, b) => {
-          return new Date(b.dataset.releaseDate || '1970-01-01') - new Date(a.dataset.releaseDate || '1970-01-01');
-        });
-        break;
-      case 'release-asc':
-        sortedCards = cards.sort((a, b) => {
-          return new Date(a.dataset.releaseDate || '1970-01-01') - new Date(b.dataset.releaseDate || '1970-01-01');
-        });
-        break;
-      case 'update-desc':
-        sortedCards = cards.sort((a, b) => {
-          return new Date(b.dataset.updateDate || b.dataset.releaseDate || '1970-01-01') - new Date(a.dataset.updateDate || a.dataset.releaseDate || '1970-01-01');
-        });
-        break;
-      case 'update-asc':
-        sortedCards = cards.sort((a, b) => {
-          return new Date(a.dataset.updateDate || a.dataset.releaseDate || '1970-01-01') - new Date(b.dataset.updateDate || b.dataset.releaseDate || '1970-01-01');
-        });
-        break;
-      case 'popular':
-        sortedCards = cards.sort((a, b) => {
-          return (parseInt(b.dataset.ratingCount) || 0) - (parseInt(a.dataset.ratingCount) || 0);
-        });
-        break;
-      case 'name-asc':
-        sortedCards = cards.sort((a, b) => {
-          return (a.dataset.name || '').toLowerCase().localeCompare((b.dataset.name || '').toLowerCase(), 'ja');
-        });
-        break;
-      case 'name-desc':
-        sortedCards = cards.sort((a, b) => {
-          return (b.dataset.name || '').toLowerCase().localeCompare((a.dataset.name || '').toLowerCase(), 'ja');
-        });
-        break;
-      case 'default':
-      default:
-        sortedCards = cards.sort((a, b) => {
-          return parseInt(a.dataset.originalIndex) - parseInt(b.dataset.originalIndex);
-        });
-        break;
-    }
-
-    sortedCards.forEach(card => {
-      appGrid.appendChild(card);
-    });
-
-    appCards.forEach(card => {
-      if (card.classList.contains('hidden')) {
-        appGrid.appendChild(card);
-      }
+  function setPressed(list, attr, value) {
+    list.forEach(function (chip) {
+      var on = chip.dataset[attr] === value;
+      chip.setAttribute('aria-pressed', on ? 'true' : 'false');
+      chip.classList.toggle('is-on', on);
     });
   }
 
-  function clearFilters() {
-    if (searchInput) searchInput.value = '';
-    if (categoryFilter) categoryFilter.value = '';
-    if (sortFilter) sortFilter.value = 'default';
-
-    appCards.forEach(card => {
-      card.classList.remove('hidden');
+  function apply() {
+    var q = state.q.toLowerCase().trim();
+    var visible = [];
+    cards.forEach(function (card) {
+      var name = (card.dataset.searchName || card.dataset.name || '').toLowerCase();
+      var ok = (!q || name.indexOf(q) !== -1) &&
+        (!state.rarity || card.dataset.rarity === state.rarity) &&
+        (!state.category || card.dataset.category === state.category);
+      card.classList.toggle('hidden', !ok);
+      if (ok) visible.push(card);
     });
 
-    originalOrder.forEach(card => {
-      appGrid.appendChild(card);
-    });
-
-    updateResultsCount();
+    setPressed(rareChips, 'filterRarity', state.rarity);
+    setPressed(catChips, 'filterCategory', state.category);
+    order(visible);
+    count(visible.length);
   }
 
-  function updateResultsCount(count) {
-    if (!filterResults) return;
-
-    const total = appCards.length;
-    const visible = count !== undefined ? count : total;
-
-    if (IS_EN) {
-      filterResults.textContent = visible === total
-        ? `Showing ${total} apps`
-        : `Showing ${visible} of ${total} apps`;
-    } else if (visible === total) {
-      filterResults.textContent = `${total}件表示中`;
-    } else {
-      filterResults.textContent = `${visible}/${total}件表示中`;
-    }
-
-    showNoResultsMessage(visible === 0);
+  function date(el, key) {
+    return new Date(el.dataset[key] || el.dataset.releaseDate || '1970-01-01').getTime();
   }
 
-  function showNoResultsMessage(show) {
-    let noResultsEl = document.querySelector('.no-results');
-
-    if (show) {
-      if (!noResultsEl) {
-        noResultsEl = document.createElement('div');
-        noResultsEl.className = 'no-results';
-        noResultsEl.innerHTML = `
-          <img class="no-results-char" src="/assets/images/character-surprised.png" alt="" width="293" height="340">
-          <h3>${IS_EN ? 'No apps found' : '見つかりませんでした'}</h3>
-          <p>${IS_EN ? 'Try a different word or another category' : '別のことばか、ほかのカテゴリで探してみてください'}</p>
-        `;
-        appGrid.parentNode.insertBefore(noResultsEl, appGrid.nextSibling);
-      }
-      noResultsEl.style.display = 'block';
-    } else if (noResultsEl) {
-      noResultsEl.style.display = 'none';
-    }
-  }
-
-  function debounce(func, wait) {
-    let timeout;
-    return function executedFunction(...args) {
-      const later = () => {
-        clearTimeout(timeout);
-        func(...args);
-      };
-      clearTimeout(timeout);
-      timeout = setTimeout(later, wait);
+  function order(visible) {
+    var sorted;
+    var byName = function (a, b) {
+      return (a.dataset.name || '').toLowerCase().localeCompare((b.dataset.name || '').toLowerCase(), 'ja');
     };
+    switch (state.sort) {
+      case 'release-desc': sorted = visible.sort(function (a, b) { return date(b, 'releaseDate') - date(a, 'releaseDate'); }); break;
+      case 'release-asc': sorted = visible.sort(function (a, b) { return date(a, 'releaseDate') - date(b, 'releaseDate'); }); break;
+      case 'update-desc': sorted = visible.sort(function (a, b) { return date(b, 'updateDate') - date(a, 'updateDate'); }); break;
+      case 'update-asc': sorted = visible.sort(function (a, b) { return date(a, 'updateDate') - date(b, 'updateDate'); }); break;
+      case 'popular': sorted = visible.sort(function (a, b) { return (+b.dataset.ratingCount || 0) - (+a.dataset.ratingCount || 0); }); break;
+      case 'name-asc': sorted = visible.sort(byName); break;
+      case 'name-desc': sorted = visible.sort(function (a, b) { return byName(b, a); }); break;
+      default: sorted = null;
+    }
+
+    if (!sorted) {
+      // レア度ごと: 段の見出しとカードを、作ったときの順に戻す。カードが1枚も残らない段は見出しも隠す
+      var seen = {};
+      visible.forEach(function (c) { seen[c.dataset.rarity] = (seen[c.dataset.rarity] || 0) + 1; });
+      var all = Array.prototype.slice.call(appGrid.children);
+      all.sort(function (a, b) { return pos(a) - pos(b); });
+      all.forEach(function (el) { appGrid.appendChild(el); });
+      tiers.forEach(function (t) {
+        var n = seen[t.dataset.tier] || 0;
+        t.classList.toggle('hidden', !n);
+        var num = t.querySelector('.ga-tier-n');
+        if (num) num.textContent = n;
+        var u = t.querySelector('.ga-tier-u');
+        if (u) u.textContent = IS_EN ? (n === 1 ? ' app' : ' apps') : '種';
+      });
+      return;
+    }
+    tiers.forEach(function (t) { t.classList.add('hidden'); });
+    sorted.forEach(function (c) { appGrid.appendChild(c); });
   }
 
-  // portfolio-renderer.js のレンダリング完了イベントを待つ
-  document.addEventListener('portfolio-rendered', function(e) {
-    init(e.detail.apps);
+  // 作ったときの順番（段の見出しは、その段の最初のカードのすぐ前）
+  function pos(el) {
+    if (el.classList.contains('ga-tier')) {
+      var first = cards.filter(function (c) { return c.dataset.rarity === el.dataset.tier; })[0];
+      return first ? +first.dataset.originalIndex - 0.5 : -1;
+    }
+    return +el.dataset.originalIndex;
+  }
+
+  function count(visible) {
+    var total = cards.length;
+    var filtered = !!(state.q.trim() || state.rarity || state.category || state.sort !== 'default');
+    if (filterResults) {
+      if (IS_EN) {
+        filterResults.textContent = visible === total ? 'Showing ' + total + ' apps' : 'Showing ' + visible + ' of ' + total + ' apps';
+      } else {
+        filterResults.textContent = visible === total ? total + '件表示中' : visible + '/' + total + '件表示中';
+      }
+    }
+    if (filterClear) filterClear.hidden = !filtered || visible === 0;
+    if (filterEmpty) filterEmpty.hidden = visible !== 0;
+    var q = document.getElementById('emptyQuery');
+    if (q) q.textContent = state.q.trim();
+    var qWrap = document.querySelectorAll('[data-empty-q]');
+    Array.prototype.forEach.call(qWrap, function (el) { el.hidden = !state.q.trim(); });
+  }
+
+  function clear() {
+    state = { q: '', rarity: '', category: '', sort: 'default' };
+    if (searchInput) searchInput.value = '';
+    if (sortFilter) sortFilter.value = 'default';
+    apply();
+  }
+
+  function debounce(fn, wait) {
+    var t;
+    return function () { clearTimeout(t); t = setTimeout(fn, wait); };
+  }
+
+  // スクショの拡大（アーカイブのカードも同じ）
+  var lightbox = document.getElementById('lightbox');
+  var lightboxImg = document.getElementById('lightbox-img');
+  var lastFocus = null;
+  function openLightbox(src) {
+    if (!lightbox || !lightboxImg) return;
+    lastFocus = document.activeElement;
+    lightboxImg.src = src;
+    requestAnimationFrame(function () { lightbox.classList.add('active'); });
+    document.body.style.overflow = 'hidden';
+    var btn = lightbox.querySelector('.lightbox-close');
+    if (btn) btn.focus();
+  }
+  function closeLightbox() {
+    if (!lightbox || !lightbox.classList.contains('active')) return;
+    lightbox.classList.remove('active');
+    document.body.style.overflow = '';
+    if (lastFocus) lastFocus.focus();
+  }
+  document.addEventListener('click', function (e) {
+    var shot = e.target.closest && e.target.closest('.ga-shot');
+    if (shot) { openLightbox(shot.dataset.full || shot.querySelector('img').src); return; }
+    if (lightbox && lightbox.contains(e.target)) closeLightbox();
   });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeLightbox(); });
+
+  document.addEventListener('portfolio-rendered', init);
 })();

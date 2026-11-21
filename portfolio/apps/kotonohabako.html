@@ -16,17 +16,7 @@
     <meta property="og:image" content="/assets/images/icon/kotonohabako.png">
     <meta property="og:url" content="https://tsuzukit.com/portfolio/apps/kotonohabako.html">
     <meta property="og:type" content="article">
-    
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="../../assets/css/tsuzukit.css">
-    <link rel="stylesheet" href="../../assets/css/app-detail.css">
-    
-    <!-- Favicon -->
+<!-- Favicon -->
     <link rel="icon" href="../../favicon.ico">
     
     <!-- Google Analytics -->
@@ -40,764 +30,100 @@
 
     <!-- Google AdSense（持ち主の確認だけ。このページに広告は出さない。docs/ads.md） -->
     <meta name="google-adsense-account" content="ca-pub-8240751277462688">
+
+    <!-- ガチャの見た目（assets/css/gacha.css・docs/gacha-design.md） -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700;800&family=RocknRoll+One&display=swap">
+    <link rel="stylesheet" href="/assets/css/gacha.css">
+    <link rel="stylesheet" href="/assets/css/g-apps.css">
+    <script src="/assets/js/gacha.js" defer></script>
+    <!-- /ガチャの見た目 -->
 </head>
-<body>
-    <!-- Navigation -->
-    <nav class="nav" id="nav">
-        <div class="nav-container">
-            <a href="/" class="nav-logo">TsuzuKit</a>
-            <div class="nav-menu" id="navMenu">
-                <a href="/portfolio/" class="nav-link active">Portfolio</a>
-                <a href="/about/" class="nav-link">About</a>
-                <a href="/blog/" class="nav-link">Blog</a>
-                <a href="/contact/" class="nav-link">Contact</a>
+<body class="g">
+    <header class="g-head" id="nav">
+            <div class="g-wrap">
+                <a href="/" class="g-logo"><img src="/assets/images/logo/tsuzukit-wordmark.svg" alt="TsuzuKit" width="116" height="36"></a>
+                <nav class="nav-menu" id="navMenu" aria-label="メニュー"><a href="/portfolio/" class="nav-link" aria-current="page"><span class="i18n-ja">アプリ</span><span class="i18n-en">Apps</span></a><a href="/blog/" class="nav-link"><span class="i18n-ja">読みもの</span><span class="i18n-en">Reading</span></a><a href="/about/" class="nav-link"><span class="i18n-ja">私について</span><span class="i18n-en">About</span></a><a href="/contact/" class="nav-link"><span class="i18n-ja">お問い合わせ</span><span class="i18n-en">Contact</span></a></nav>
+                <button type="button" class="g-menu" id="navToggle" aria-controls="navMenu" aria-expanded="false">MENU</button>
             </div>
-            <div class="nav-toggle" id="navToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
+        </header>
 
-    <div class="i18n-ja">
-    <!-- App Hero Section -->
-    <section class="app-hero">
-        <div class="glow-shapes">
-            <div class="glow-shape"></div>
-            <div class="glow-shape"></div>
-            <div class="glow-shape"></div>
-        </div>
-        
-        <div class="container">
-            <div class="app-hero-content">
-                <div class="app-icon-wrapper">
-                    <img src="../../assets/images/icon/kotonohabako.png" alt="言の葉箱" class="app-icon">
-                    <div class="app-icon-badge">新作</div>
-                </div>
-                
-                <h1 class="app-title"><span class="i18n-ja">言の葉箱</span><span class="i18n-en">Kotonohabako</span></h1>
-                <p class="app-tagline">手紙やハガキを、AIの力で検索可能なデジタル宝物に</p>
-                
-                <div class="app-badges">
-                    <span class="badge badge-new">NEW Release</span>
-                    <span class="badge badge-ai">AI Powered</span>
-                    <span class="badge badge-category">Memory & Archive</span>
-                </div>
-                
-                <div class="app-cta">
-                    <a href="https://apple.co/45R5Drb" target="_blank" class="btn btn-primary">
-                        <svg class="apple-icon" viewBox="0 0 24 24" width="20" height="20">
-                            <path fill="currentColor" d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.09997 22C7.78997 22.05 6.79997 20.68 5.95997 19.47C4.24997 17 2.93997 12.45 4.69997 9.39C5.56997 7.87 7.12997 6.91 8.81997 6.88C10.1 6.86 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/>
-                        </svg>
-                        App Storeで見る
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+    <main class="g-main">
+        <div class="g-wrap">
+                <nav class="g-crumb" aria-label="パンくず" data-en-aria-label="Breadcrumb"><a href="/"><span class="i18n-ja">トップ</span><span class="i18n-en">Home</span></a><span>＞</span><a href="/portfolio/"><span class="i18n-ja">ラインナップ</span><span class="i18n-en">Lineup</span></a><span>＞</span><span>N</span><span>＞</span><b><span class="i18n-ja">言の葉箱</span><span class="i18n-en">Kotonohabako</span></b></nav>
 
-    <!-- Concept Section -->
-    <section class="section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Concept</span>
-                <h2 class="section-title">捨てられない手紙を、永遠の宝物に</h2>
-            </div>
-            
-            <div class="story-content">
-                <div class="story-quote">
-                    <blockquote>
-                        "引き出しの奥に眠る、捨てられない手紙やハガキ。<br>
-                        物理的な「かさばり」や「劣化」から思い出を解放し、<br>
-                        いつでも手元で読み返せる、あなただけの静かな書斎を。"
-                    </blockquote>
-                </div>
-                
-                <p class="story-text">
-                    言の葉箱は、大切な手紙やハガキを写真に撮るだけで、最先端のAI技術「Gemini」が手書きの文字を読み取って、あとから検索できる形で残すアプリです。
-                </p>
-                
-                <p class="story-text emphasis">
-                    手書きの温もりはそのままに、テクノロジーで思い出を永遠に。
-                </p>
-                
-                <p class="story-text">
-                    「ありがとう」「頑張って」といった心に響く言葉や、特定のエピソードから、眠っていた思い出をすぐに見つけ出すことができます。もう二度と、大切な言葉を探し回る必要はありません。
-                </p>
-            </div>
-        </div>
-    </section>
+                <section class="ga-ah">
+                    <div class="g-burst" style="--c:var(--g-c1)">
+                        <div class="rays"></div><div class="lid"></div><div class="bowl"></div>
+                        <div class="icon"><img src="/assets/images/icon/kotonohabako.png" alt="言の葉箱" data-en-alt="Kotonohabako" width="1024" height="1024"></div>
+                        <span class="st" style="right:6%;top:8%">★</span><span class="st" style="left:10%;top:62%;font-size:24px">✦</span><span class="st" style="right:12%;top:52%;font-size:26px">✦</span>
+                    </div>
+                    <div class="g-ypanel ga-info">
+                        <span class="ga-no">No.37 ／ 81</span>
+                        <span class="g-rare g-rare--N">N</span>
+                        <h1><span class="i18n-ja">言の葉箱</span><span class="i18n-en">Kotonohabako</span></h1>
+                        <p class="ga-one"><span class="i18n-ja">手紙やハガキを、AIの力で検索可能なデジタル宝物に</span><span class="i18n-en">Turn your letters and postcards into digital keepsakes you can search with AI</span></p>
+                        <div class="ga-chips"><span><span class="i18n-ja">新作</span><span class="i18n-en">New</span></span><span>NEW Release</span><span>AI Powered</span><span>Memory &amp; Archive</span></div>
+                        <div class="ga-spec"><div><b><span class="i18n-ja">63</span><span class="i18n-en">63</span></b><span><span class="i18n-ja">ダウンロード</span><span class="i18n-en">downloads</span></span></div><div><b>2025</b><span><span class="i18n-ja">年に登場</span><span class="i18n-en">released</span></span></div><div><b><span class="i18n-ja">無料</span><span class="i18n-en">Free</span></b><span><span class="i18n-ja">iOS 17.0 以上</span><span class="i18n-en">iOS 17.0+</span></span></div></div>
+                        <div class="g-btns"><a class="g-btn g-btn--k" href="https://apple.co/45R5Drb" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg><span class="i18n-ja">App Storeで見る</span><span class="i18n-en">View on the App Store</span></a></div>
+                    </div>
+                </section>
 
-    <!-- Features Section -->
-    <section class="section section-alt">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Features</span>
-                <h2 class="section-title">主な機能</h2>
-                <p class="section-description">
-                    思い出を守り、心に寄り添う機能の数々
-                </p>
-            </div>
-            
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">📸</div>
-                    <h3 class="feature-title">AI文字認識</h3>
-                    <p class="feature-description">
-                        Google Geminiの最先端AI技術により、手書き文字を高精度で認識。写真を撮るだけで、自動的にテキストデータに変換されます。
-                    </p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">🔍</div>
-                    <h3 class="feature-title">全文検索</h3>
-                    <p class="feature-description">
-                        テキスト化された内容を、キーワードで瞬時に検索。「ありがとう」などの言葉から、大切な思い出をすぐに見つけ出せます。
-                    </p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">🌟</div>
-                    <h3 class="feature-title">言葉のお守り</h3>
-                    <p class="feature-description">
-                        心に響いた一文を長押ししてハイライト。特別な言葉を「お守り」として保存でき、あなただけの名言集が心の支えに。
-                    </p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">📚</div>
-                    <h3 class="feature-title">デジタルアーカイブ</h3>
-                    <p class="feature-description">
-                        物理的な劣化から大切な手紙を守り、永遠に保存。場所を取らずに、すべての思い出を手元に。
-                    </p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">🔒</div>
-                    <h3 class="feature-title">安全なクラウド保存</h3>
-                    <p class="feature-description">
-                        Cloud Firestoreによる堅牢なデータ保管。大切な思い出を安全に、確実に守ります。
-                    </p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">✨</div>
-                    <h3 class="feature-title">美しいインターフェース</h3>
-                    <p class="feature-description">
-                        SwiftUIで構築された、洗練されたデザイン。広告なしの静かな空間で、思い出と向き合えます。
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+                <div class="g-sh"><h2><span class="i18n-ja">カプセルの中身</span><span class="i18n-en">What's inside</span></h2><small><span class="i18n-ja">アプリの画面</span><span class="i18n-en">Screens from the app</span></small></div>
+                <div class="g-panel ga-tray"><img src="https://is1-ssl.mzstatic.com/image/thumb/0yBgDs-Axu64grXrs17Chw/626x0w.webp" alt="" width="626" height="1357" loading="lazy"><img src="https://is1-ssl.mzstatic.com/image/thumb/5uKLkJ5eZrdLxwvlgPVOCw/626x0w.webp" alt="" width="626" height="1357" loading="lazy"><img src="https://is1-ssl.mzstatic.com/image/thumb/M8Ghd8Kcr6AQvDL7P8bfoA/626x0w.webp" alt="" width="626" height="1357" loading="lazy"><img src="https://is1-ssl.mzstatic.com/image/thumb/oXhMKZngjUsYFJWCAcIJHA/626x0w.webp" alt="" width="626" height="1357" loading="lazy"></div>
 
-    <!-- Premium Features Section -->
-    <section class="section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Premium</span>
-                <h2 class="section-title">無料プランとプレミアムプラン</h2>
-            </div>
-            
-            <div class="tech-content">
-                <div class="tech-card">
-                    <h3 class="tech-title">
-                        <span class="tech-icon">🆓</span>
-                        無料プラン
-                    </h3>
-                    <p class="tech-description">
-                        手紙の内容を手動でテキスト入力して保存。差出人や日付、メモなどの基本情報を管理できます。まずは無料でアプリの価値を体験してください。
-                    </p>
+                <div class="g-sh"><h2><span class="i18n-ja">説明書き</span><span class="i18n-en">How it works</span></h2><small><span class="i18n-ja">コンセプトと主な機能</span><span class="i18n-en">The idea, and what it does</span></small></div>
+                <div class="ga-slip">
+                    <div class="g-paper ga-paper"><span class="ga-paper-tag"><span class="i18n-ja">説明書き</span><span class="i18n-en">About this app</span></span><h3><span class="i18n-ja">捨てられない手紙を、永遠の宝物に</span><span class="i18n-en">The letters you can't throw away, kept for good</span></h3><blockquote><span class="i18n-ja">"引き出しの奥に眠る、捨てられない手紙やハガキ。<br>物理的な「かさばり」や「劣化」から思い出を解放し、<br>いつでも手元で読み返せる、あなただけの静かな書斎を。"</span><span class="i18n-en">"The letters and postcards you can't bring yourself to throw away, sleeping at the back of a drawer.<br>Free those memories from the clutter and the slow fading of paper,<br>and give yourself a quiet study where you can reread them any time."</span></blockquote><p><span class="i18n-ja">言の葉箱は、大切な手紙やハガキを写真に撮るだけで、最先端のAI技術「Gemini」が手書きの文字を読み取って、あとから検索できる形で残すアプリです。</span><span class="i18n-en">Kotonohabako lets you photograph your treasured letters and postcards. Gemini, a cutting-edge AI, reads the handwriting and saves it in a form you can search later.</span></p><p><span class="ga-em"><span class="i18n-ja">手書きの温もりはそのままに、テクノロジーで思い出を永遠に。</span><span class="i18n-en">Keep the warmth of the handwriting, and let technology keep the memories.</span></span></p><p><span class="i18n-ja">「ありがとう」「頑張って」といった心に響く言葉や、特定のエピソードから、眠っていた思い出をすぐに見つけ出すことができます。もう二度と、大切な言葉を探し回る必要はありません。</span><span class="i18n-en">Search for words that moved you, like "thank you" or "you can do it," or for a particular story, and the memory you'd forgotten turns up right away. No more digging around for the words that mattered.</span></p><h3><span class="i18n-ja">主な機能</span><span class="i18n-en">Features</span></h3><p><span class="i18n-ja">思い出を守り、心に寄り添う機能の数々</span><span class="i18n-en">Features that protect your memories and stay close to your heart</span></p><ul class="ga-feats"><li><b><span class="i18n-ja">AI文字認識</span><span class="i18n-en">AI handwriting recognition</span></b><span class="i18n-ja">Google Geminiの最先端AI技術により、手書き文字を高精度で認識。写真を撮るだけで、自動的にテキストデータに変換されます。</span><span class="i18n-en">Google Gemini's cutting-edge AI recognizes handwriting with high accuracy. Just take a photo and it's converted to text automatically.</span></li><li><b><span class="i18n-ja">全文検索</span><span class="i18n-en">Full-text search</span></b><span class="i18n-ja">テキスト化された内容を、キーワードで瞬時に検索。「ありがとう」などの言葉から、大切な思い出をすぐに見つけ出せます。</span><span class="i18n-en">Search the transcribed text by keyword in an instant. A word like "thank you" is all it takes to find the memory you're looking for.</span></li><li><b><span class="i18n-ja">言葉のお守り</span><span class="i18n-en">Word charms</span></b><span class="i18n-ja">心に響いた一文を長押ししてハイライト。特別な言葉を「お守り」として保存でき、あなただけの名言集が心の支えに。</span><span class="i18n-en">Long-press a line that moved you to highlight it. Save special words as "charms" and build your own collection of quotes to lean on.</span></li><li><b><span class="i18n-ja">デジタルアーカイブ</span><span class="i18n-en">Digital archive</span></b><span class="i18n-ja">物理的な劣化から大切な手紙を守り、永遠に保存。場所を取らずに、すべての思い出を手元に。</span><span class="i18n-en">Protect your letters from wear and tear and keep them forever. All your memories at hand, without taking up any space.</span></li><li><b><span class="i18n-ja">安全なクラウド保存</span><span class="i18n-en">Secure cloud storage</span></b><span class="i18n-ja">Cloud Firestoreによる堅牢なデータ保管。大切な思い出を安全に、確実に守ります。</span><span class="i18n-en">Robust data storage with Cloud Firestore keeps your precious memories safe and sound.</span></li><li><b><span class="i18n-ja">美しいインターフェース</span><span class="i18n-en">A beautiful interface</span></b><span class="i18n-ja">SwiftUIで構築された、洗練されたデザイン。広告なしの静かな空間で、思い出と向き合えます。</span><span class="i18n-en">A refined design built with SwiftUI. A quiet, ad-free space where you can spend time with your memories.</span></li></ul>
+                    </div>
+                    <div class="ga-side"><div class="g-panel ga-help"><h3><span class="i18n-ja">このカプセルで困ったら</span><span class="i18n-en">Need help with this app?</span></h3><a href="/contact/"><span class="g-capdot"></span><span class="i18n-ja">お問い合わせ</span><span class="i18n-en">Contact</span></a><a href="/legal/privacy-policy.html"><span class="g-capdot"></span><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a><a href="/legal/terms-of-service.html"><span class="g-capdot"></span><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a><a href="/legal/commercial-law.html"><span class="g-capdot"></span><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a></div><div class="g-panel ga-news"><h3><span class="i18n-ja">更新のおしらせ</span><span class="i18n-en">Latest update</span></h3><span class="ga-v">ver 1.0.1 ／ 2026.10.09</span><div class="i18n-ja"><p>・利用規約とプライバシーポリシーのリンク先を新しいページに変更しました</p><p>・細かな不具合を修正しました</p></div><p class="i18n-en">Version 1.0.1, released 2026.10.09. The release notes are in Japanese on the App Store.</p></div></div>
                 </div>
-                
-                <div class="tech-card">
-                    <h3 class="tech-title">
-                        <span class="tech-icon">👑</span>
-                        プレミアムプラン
-                    </h3>
-                    <p class="tech-description">
-                        写真スキャン＆AI文字認識機能が解放。全文検索、言葉のお守り機能、広告非表示など、すべての機能をご利用いただけます。サブスクリプションで常に最新のAI技術をお届けします。
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Technology Section -->
-    <section class="section section-alt">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Technology</span>
-                <h2 class="section-title">技術的な特徴</h2>
-            </div>
-            
-            <div class="tech-content">
-                <div class="tech-card">
-                    <h3 class="tech-title">
-                        <span class="tech-icon">🤖</span>
-                        Google Gemini AI
-                    </h3>
-                    <p class="tech-description">
-                        Googleの最先端AIモデル「Gemini」を採用。手書き文字という非構造化データを、高精度で検索可能な情報に変換します。
-                    </p>
-                </div>
-                
-                <div class="tech-card">
-                    <h3 class="tech-title">
-                        <span class="tech-icon">🎨</span>
-                        SwiftUI
-                    </h3>
-                    <p class="tech-description">
-                        モダンなSwiftUIフレームワークで構築。美しいアニメーションと直感的な操作性を実現しました。
-                    </p>
-                </div>
-                
-                <div class="tech-card">
-                    <h3 class="tech-title">
-                        <span class="tech-icon">☁️</span>
-                        Cloud Firestore
-                    </h3>
-                    <p class="tech-description">
-                        Googleのスケーラブルなクラウドデータベース。大切なデータを安全に保管し、どのデバイスからでもアクセス可能です。
-                    </p>
-                </div>
-                
-                <div class="tech-card">
-                    <h3 class="tech-title">
-                        <span class="tech-icon">💳</span>
-                        RevenueCat
-                    </h3>
-                    <p class="tech-description">
-                        サブスクリプション管理にRevenueCatを採用。課金まわりで詰まらないようにしています。
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Special Section -->
-    <section class="section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Why Special</span>
-                <h2 class="section-title">このアプリが特別な理由</h2>
-            </div>
-            
-            <div class="story-content">
-                <h3 style="margin-bottom: 1.5rem; color: var(--color-primary);">1. 高精度なAI技術の活用</h3>
-                <p class="story-text">
-                    ただ写真を保存するだけでなく、Geminiという強力なAIを用いることで、手書きの文字という非構造化データを「検索可能な情報」に変える点に、他のアプリにはない大きな価値があります。
-                </p>
-
-                <h3 style="margin: 2rem 0 1.5rem; color: var(--color-primary);">2. ユーザーの感情に寄り添う設計</h3>
-                <p class="story-text">
-                    「言葉のお守り」機能のように、単なる便利ツールに留まらず、ユーザーの心に寄り添い、ポジティブな感情を育む体験を設計しています。
-                </p>
-
-                <h3 style="margin: 2rem 0 1.5rem; color: var(--color-primary);">3. ミニマリズムと思い出の両立</h3>
-                <p class="story-text">
-                    物理的なモノは減らしたいが、思い出は絶対に捨てたくない。そんな現代のニーズに応える、新しい形の思い出保存方法を提供します。
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Developer Message Section -->
-    <section class="section section-alt">
-        <div class="container">
-            <div class="developer-message">
-                <h2 class="section-title">開発者より</h2>
-                
-                <div class="message-content">
-                    <p>
-                        言の葉箱は、手紙を残しておきたいという小さな願いに、AIを足した挑戦です。
-                    </p>
-                    
-                    <p>
-                        手紙やハガキには、メールやLINEとは違う特別な重みがあります。手書きの温もりを残したまま、あとから探せるようにしたい。そこから作りました。
-                    </p>
-                    
-                    <p class="emphasis">
-                        あなたの大切な言葉が、いつまでも心の支えとなりますように。
-                    </p>
-                    
-                    <p>
-                        言の葉箱が、大切な人からの手紙を、読める形のまま残しておけますように。
-                    </p>
-                    
-                    <div class="signature">
-                        <p>2025年1月</p>
-                        <p class="signature-name">續橋 涼</p>
+                <div class="g-sh"><h2><span class="i18n-ja">無料プランとプレミアムプラン</span><span class="i18n-en">Free Plan and Premium Plan</span></h2></div>
+                <div class="ga-cells ga-cells--2"><div class="g-panel ga-cell"><span class="ga-emo" aria-hidden="true">🆓</span><h3><span class="i18n-ja">無料プラン</span><span class="i18n-en">Free Plan</span></h3><p><span class="i18n-ja">手紙の内容を手動でテキスト入力して保存。差出人や日付、メモなどの基本情報を管理できます。まずは無料でアプリの価値を体験してください。</span><span class="i18n-en">Type in a letter's contents by hand and save it, along with basic details like the sender, the date, and notes. Try the app for free first and see what it can do.</span></p></div><div class="g-panel ga-cell"><span class="ga-emo" aria-hidden="true">👑</span><h3><span class="i18n-ja">プレミアムプラン</span><span class="i18n-en">Premium Plan</span></h3><p><span class="i18n-ja">写真スキャン＆AI文字認識機能が解放。全文検索、言葉のお守り機能、広告非表示など、すべての機能をご利用いただけます。サブスクリプションで常に最新のAI技術をお届けします。</span><span class="i18n-en">Unlocks photo scanning with AI handwriting recognition. You get every feature, including full-text search, word charms, and no ads. As a subscription, it always brings you the latest AI technology.</span></p></div></div>
+                <div class="g-sh"><h2><span class="i18n-ja">技術的な特徴</span><span class="i18n-en">Under the Hood</span></h2></div>
+                <div class="ga-cells ga-cells--2"><div class="g-panel ga-cell"><span class="ga-emo" aria-hidden="true">🤖</span><h3><span class="i18n-ja">Google Gemini AI</span><span class="i18n-en">Google Gemini AI</span></h3><p><span class="i18n-ja">Googleの最先端AIモデル「Gemini」を採用。手書き文字という非構造化データを、高精度で検索可能な情報に変換します。</span><span class="i18n-en">Built on Gemini, Google's cutting-edge AI model. It turns handwriting, which is unstructured data, into searchable information with high accuracy.</span></p></div><div class="g-panel ga-cell"><span class="ga-emo" aria-hidden="true">🎨</span><h3><span class="i18n-ja">SwiftUI</span><span class="i18n-en">SwiftUI</span></h3><p><span class="i18n-ja">モダンなSwiftUIフレームワークで構築。美しいアニメーションと直感的な操作性を実現しました。</span><span class="i18n-en">Built with the modern SwiftUI framework, for smooth animations and intuitive controls.</span></p></div><div class="g-panel ga-cell"><span class="ga-emo" aria-hidden="true">☁️</span><h3><span class="i18n-ja">Cloud Firestore</span><span class="i18n-en">Cloud Firestore</span></h3><p><span class="i18n-ja">Googleのスケーラブルなクラウドデータベース。大切なデータを安全に保管し、どのデバイスからでもアクセス可能です。</span><span class="i18n-en">Google's scalable cloud database stores your data safely, and you can access it from any device.</span></p></div><div class="g-panel ga-cell"><span class="ga-emo" aria-hidden="true">💳</span><h3><span class="i18n-ja">RevenueCat</span><span class="i18n-en">RevenueCat</span></h3><p><span class="i18n-ja">サブスクリプション管理にRevenueCatを採用。課金まわりで詰まらないようにしています。</span><span class="i18n-en">RevenueCat handles subscriptions, so billing doesn't get in the way.</span></p></div></div>
+                <div class="g-sh"><h2><span class="i18n-ja">このアプリが特別な理由</span><span class="i18n-en">What Makes This App Special</span></h2></div>
+                <div class="ga-cells"><div class="g-panel ga-cell"><h3><span class="i18n-ja">1. 高精度なAI技術の活用</span><span class="i18n-en">1. Highly accurate AI</span></h3><p><span class="i18n-ja">ただ写真を保存するだけでなく、Geminiという強力なAIを用いることで、手書きの文字という非構造化データを「検索可能な情報」に変える点に、他のアプリにはない大きな価値があります。</span><span class="i18n-en">It doesn't just store photos. By using a powerful AI called Gemini, it turns handwriting, which is unstructured data, into searchable information. That's something other apps don't offer.</span></p></div><div class="g-panel ga-cell"><h3><span class="i18n-ja">2. ユーザーの感情に寄り添う設計</span><span class="i18n-en">2. Designed around how you feel</span></h3><p><span class="i18n-ja">「言葉のお守り」機能のように、単なる便利ツールに留まらず、ユーザーの心に寄り添い、ポジティブな感情を育む体験を設計しています。</span><span class="i18n-en">Features like word charms go beyond a handy tool. The experience is designed to stay close to you and nurture positive feelings.</span></p></div><div class="g-panel ga-cell"><h3><span class="i18n-ja">3. ミニマリズムと思い出の両立</span><span class="i18n-en">3. Minimalism without losing memories</span></h3><p><span class="i18n-ja">物理的なモノは減らしたいが、思い出は絶対に捨てたくない。そんな現代のニーズに応える、新しい形の思い出保存方法を提供します。</span><span class="i18n-en">You want fewer physical things, but you'd never throw away your memories. It offers a new way to keep them that fits that modern need.</span></p></div></div>
+                <div class="g-sh"><h2><span class="i18n-ja">開発者より</span><span class="i18n-en">From the Developer</span></h2></div>
+                <div class="g-paper ga-letter">
+                    <img src="/assets/images/character-wave.png" alt="" width="419" height="382" loading="lazy">
+                    <div class="ga-letter-body"><p><span class="i18n-ja">言の葉箱は、手紙を残しておきたいという小さな願いに、AIを足した挑戦です。</span><span class="i18n-en">Kotonohabako is an experiment that adds AI to a small wish: to hold on to letters.</span></p><p><span class="i18n-ja">手紙やハガキには、メールやLINEとは違う特別な重みがあります。手書きの温もりを残したまま、あとから探せるようにしたい。そこから作りました。</span><span class="i18n-en">Letters and postcards carry a weight that email and LINE messages don't. I wanted to keep the warmth of the handwriting and still be able to find things later. That's where this app came from.</span></p><p class="ga-em"><span class="i18n-ja">あなたの大切な言葉が、いつまでも心の支えとなりますように。</span><span class="i18n-en">I hope your treasured words keep supporting you for years to come.</span></p><p><span class="i18n-ja">言の葉箱が、大切な人からの手紙を、読める形のまま残しておけますように。</span><span class="i18n-en">I hope Kotonohabako helps you keep the letters from the people you love, still readable, just as they are.</span></p>
+                        <p class="ga-sign"><span class="i18n-ja">2025年1月</span><span class="i18n-en">January 2025</span><b><span class="i18n-ja">續橋 涼</span><span class="i18n-en">Ryo Tsuzukihashi</span></b></p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Download CTA Section -->
-    <section class="section">
-        <div class="container">
-            <div class="download-cta">
-                <h2 class="section-title">今すぐダウンロード</h2>
-                <p class="section-description">
-                    大切な手紙を、永遠のデジタル宝物に変えてみませんか？
-                </p>
-                
-                <div class="app-store-button">
-                    <a href="https://apple.co/45R5Drb" target="_blank" class="btn btn-primary btn-large">
-                        <svg class="apple-icon" viewBox="0 0 24 24" width="24" height="24">
-                            <path fill="currentColor" d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.09997 22C7.78997 22.05 6.79997 20.68 5.95997 19.47C4.24997 17 2.93997 12.45 4.69997 9.39C5.56997 7.87 7.12997 6.91 8.81997 6.88C10.1 6.86 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/>
-                        </svg>
-                        App Storeで無料ダウンロード
-                    </a>
-                </div>
-                
-                <p class="download-note">
-                    iOS 17.0以降対応 | 日本語対応 | 基本無料（アプリ内課金あり）
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Related Apps Section -->
-    <section class="section section-alt">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">その他のアプリ</h2>
-                <p class="section-description">
-                    他の作品もご覧ください
-                </p>
-            </div>
-            
-            <div class="related-apps">
-                <a href="/portfolio/apps/travel-memory-map.html" class="related-app-card">
-                    <img src="../../assets/images/icon/travel_memory_map.webp" alt="旅行思い出マップ" class="related-app-icon">
-                    <div class="related-app-info">
-                        <h3><span class="i18n-ja">旅行思い出マップ</span><span class="i18n-en">TravelMemoryMap</span></h3>
-                        <p>写真を地図に記録する旅行アプリ</p>
-                    </div>
-                </a>
-                
-                <a href="/portfolio/" class="related-app-card">
-                    <div class="related-app-icon more-apps">
-                        <span>+36</span>
-                    </div>
-                    <div class="related-app-info">
-                        <h3>すべてのアプリ</h3>
-                        <p>ポートフォリオを見る</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-    </div>
-
-    <div class="i18n-en">
-    <!-- App Hero Section -->
-    <section class="app-hero">
-        <div class="glow-shapes">
-            <div class="glow-shape"></div>
-            <div class="glow-shape"></div>
-            <div class="glow-shape"></div>
-        </div>
-
-        <div class="container">
-            <div class="app-hero-content">
-                <div class="app-icon-wrapper">
-                    <img src="../../assets/images/icon/kotonohabako.png" alt="Kotonohabako" class="app-icon">
-                    <div class="app-icon-badge">New</div>
-                </div>
-
-                <h1 class="app-title">Kotonohabako</h1>
-                <p class="app-tagline">Turn your letters and postcards into digital keepsakes you can search with AI</p>
-
-                <div class="app-badges">
-                    <span class="badge badge-new">NEW Release</span>
-                    <span class="badge badge-ai">AI Powered</span>
-                    <span class="badge badge-category">Memory & Archive</span>
-                </div>
-
-                <div class="app-cta">
-                    <a href="https://apple.co/45R5Drb" target="_blank" class="btn btn-primary">
-                        <svg class="apple-icon" viewBox="0 0 24 24" width="20" height="20">
-                            <path fill="currentColor" d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.09997 22C7.78997 22.05 6.79997 20.68 5.95997 19.47C4.24997 17 2.93997 12.45 4.69997 9.39C5.56997 7.87 7.12997 6.91 8.81997 6.88C10.1 6.86 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/>
-                        </svg>
-                        View on the App Store
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Concept Section -->
-    <section class="section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Concept</span>
-                <h2 class="section-title">The letters you can't throw away, kept for good</h2>
-            </div>
-
-            <div class="story-content">
-                <div class="story-quote">
-                    <blockquote>
-                        "The letters and postcards you can't bring yourself to throw away, sleeping at the back of a drawer.<br>
-                        Free those memories from the clutter and the slow fading of paper,<br>
-                        and give yourself a quiet study where you can reread them any time."
-                    </blockquote>
-                </div>
-
-                <p class="story-text">
-                    Kotonohabako lets you photograph your treasured letters and postcards. Gemini, a cutting-edge AI, reads the handwriting and saves it in a form you can search later.
-                </p>
-
-                <p class="story-text emphasis">
-                    Keep the warmth of the handwriting, and let technology keep the memories.
-                </p>
-
-                <p class="story-text">
-                    Search for words that moved you, like "thank you" or "you can do it," or for a particular story, and the memory you'd forgotten turns up right away. No more digging around for the words that mattered.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="section section-alt">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Features</span>
-                <h2 class="section-title">Features</h2>
-                <p class="section-description">
-                    Features that protect your memories and stay close to your heart
-                </p>
-            </div>
-
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">📸</div>
-                    <h3 class="feature-title">AI handwriting recognition</h3>
-                    <p class="feature-description">
-                        Google Gemini's cutting-edge AI recognizes handwriting with high accuracy. Just take a photo and it's converted to text automatically.
-                    </p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">🔍</div>
-                    <h3 class="feature-title">Full-text search</h3>
-                    <p class="feature-description">
-                        Search the transcribed text by keyword in an instant. A word like "thank you" is all it takes to find the memory you're looking for.
-                    </p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">🌟</div>
-                    <h3 class="feature-title">Word charms</h3>
-                    <p class="feature-description">
-                        Long-press a line that moved you to highlight it. Save special words as "charms" and build your own collection of quotes to lean on.
-                    </p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">📚</div>
-                    <h3 class="feature-title">Digital archive</h3>
-                    <p class="feature-description">
-                        Protect your letters from wear and tear and keep them forever. All your memories at hand, without taking up any space.
-                    </p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">🔒</div>
-                    <h3 class="feature-title">Secure cloud storage</h3>
-                    <p class="feature-description">
-                        Robust data storage with Cloud Firestore keeps your precious memories safe and sound.
-                    </p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">✨</div>
-                    <h3 class="feature-title">A beautiful interface</h3>
-                    <p class="feature-description">
-                        A refined design built with SwiftUI. A quiet, ad-free space where you can spend time with your memories.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Premium Features Section -->
-    <section class="section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Premium</span>
-                <h2 class="section-title">Free Plan and Premium Plan</h2>
-            </div>
-
-            <div class="tech-content">
-                <div class="tech-card">
-                    <h3 class="tech-title">
-                        <span class="tech-icon">🆓</span>
-                        Free Plan
-                    </h3>
-                    <p class="tech-description">
-                        Type in a letter's contents by hand and save it, along with basic details like the sender, the date, and notes. Try the app for free first and see what it can do.
-                    </p>
-                </div>
-
-                <div class="tech-card">
-                    <h3 class="tech-title">
-                        <span class="tech-icon">👑</span>
-                        Premium Plan
-                    </h3>
-                    <p class="tech-description">
-                        Unlocks photo scanning with AI handwriting recognition. You get every feature, including full-text search, word charms, and no ads. As a subscription, it always brings you the latest AI technology.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Technology Section -->
-    <section class="section section-alt">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Technology</span>
-                <h2 class="section-title">Under the Hood</h2>
-            </div>
-
-            <div class="tech-content">
-                <div class="tech-card">
-                    <h3 class="tech-title">
-                        <span class="tech-icon">🤖</span>
-                        Google Gemini AI
-                    </h3>
-                    <p class="tech-description">
-                        Built on Gemini, Google's cutting-edge AI model. It turns handwriting, which is unstructured data, into searchable information with high accuracy.
-                    </p>
-                </div>
-
-                <div class="tech-card">
-                    <h3 class="tech-title">
-                        <span class="tech-icon">🎨</span>
-                        SwiftUI
-                    </h3>
-                    <p class="tech-description">
-                        Built with the modern SwiftUI framework, for smooth animations and intuitive controls.
-                    </p>
-                </div>
-
-                <div class="tech-card">
-                    <h3 class="tech-title">
-                        <span class="tech-icon">☁️</span>
-                        Cloud Firestore
-                    </h3>
-                    <p class="tech-description">
-                        Google's scalable cloud database stores your data safely, and you can access it from any device.
-                    </p>
-                </div>
-
-                <div class="tech-card">
-                    <h3 class="tech-title">
-                        <span class="tech-icon">💳</span>
-                        RevenueCat
-                    </h3>
-                    <p class="tech-description">
-                        RevenueCat handles subscriptions, so billing doesn't get in the way.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Special Section -->
-    <section class="section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Why Special</span>
-                <h2 class="section-title">What Makes This App Special</h2>
-            </div>
-
-            <div class="story-content">
-                <h3 style="margin-bottom: 1.5rem; color: var(--color-primary);">1. Highly accurate AI</h3>
-                <p class="story-text">
-                    It doesn't just store photos. By using a powerful AI called Gemini, it turns handwriting, which is unstructured data, into searchable information. That's something other apps don't offer.
-                </p>
-
-                <h3 style="margin: 2rem 0 1.5rem; color: var(--color-primary);">2. Designed around how you feel</h3>
-                <p class="story-text">
-                    Features like word charms go beyond a handy tool. The experience is designed to stay close to you and nurture positive feelings.
-                </p>
-
-                <h3 style="margin: 2rem 0 1.5rem; color: var(--color-primary);">3. Minimalism without losing memories</h3>
-                <p class="story-text">
-                    You want fewer physical things, but you'd never throw away your memories. It offers a new way to keep them that fits that modern need.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Developer Message Section -->
-    <section class="section section-alt">
-        <div class="container">
-            <div class="developer-message">
-                <h2 class="section-title">From the Developer</h2>
-
-                <div class="message-content">
-                    <p>
-                        Kotonohabako is an experiment that adds AI to a small wish: to hold on to letters.
-                    </p>
-
-                    <p>
-                        Letters and postcards carry a weight that email and LINE messages don't. I wanted to keep the warmth of the handwriting and still be able to find things later. That's where this app came from.
-                    </p>
-
-                    <p class="emphasis">
-                        I hope your treasured words keep supporting you for years to come.
-                    </p>
-
-                    <p>
-                        I hope Kotonohabako helps you keep the letters from the people you love, still readable, just as they are.
-                    </p>
-
-                    <div class="signature">
-                        <p>January 2025</p>
-                        <p class="signature-name">Ryo Tsuzukihashi</p>
+                <div class="g-ypanel ga-get" style="margin-top:70px">
+                    <span class="g-cap g-cap--1"><img src="/assets/images/icon/kotonohabako.png" alt="" width="1024" height="1024" loading="lazy"></span>
+                    <div>
+                        <h2><span class="i18n-ja">今すぐダウンロード</span><span class="i18n-en">Download Now</span></h2>
+                        <p><span class="i18n-ja">大切な手紙を、永遠のデジタル宝物に変えてみませんか？</span><span class="i18n-en">Why not turn your treasured letters into digital keepsakes that last?</span></p>
+                        <a class="g-btn g-btn--k g-btn--big" href="https://apple.co/45R5Drb" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg><span class="i18n-ja">App Storeで無料ダウンロード</span><span class="i18n-en">Download Free on the App Store</span></a>
+                        <small><span class="i18n-ja">iOS 17.0以降対応 | 日本語対応 | 基本無料（アプリ内課金あり）</span><span class="i18n-en">iOS 17.0 or later | Japanese | Free to start (in-app purchases)</span></small>
                     </div>
                 </div>
-            </div>
+
+                <div class="g-sh"><h2><span class="i18n-ja">同じ棚のカプセル</span><span class="i18n-en">More from the same shelf</span></h2><small><span class="i18n-ja">ユーティリティ・12種</span><span class="i18n-en">Utilities · 12 apps</span></small></div>
+                <div class="g-panel ga-shelf"><a class="g-mini" href="https://apps.apple.com/jp/app/%E3%81%AA%E3%81%8C%E3%82%89%E3%82%AB%E3%82%A6%E3%83%B3%E3%82%BF%E3%83%BC-%E5%88%A5%E3%81%AE%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%84%E3%81%A6%E3%82%82%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%81%A7%E3%81%8D%E3%82%8B/id1644376109?uo=4" target="_blank" rel="noopener"><span class="g-cap g-cap--1" style="--rot:-4deg"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5d/bc/a8/5dbca80e-f98f-26df-09b2-505b298e1caf/AppIcon-0-0-1x_U007emarketing-0-10-0-85-220.png/256x256bb.jpg" alt="" width="256" height="256" loading="lazy"></span><span><span class="i18n-ja">ながらカウンター</span><span class="i18n-en">Nagara</span></span><b class="g-rare g-rare--R">R</b></a><a class="g-mini" href="https://apps.apple.com/jp/app/%E3%82%89%E3%81%8F%E3%82%BF%E3%82%B0/id1670158327?uo=4" target="_blank" rel="noopener"><span class="g-cap g-cap--5" style="--rot:11deg"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e8/97/f8/e897f8f6-0545-6ffe-64ab-265df101da4c/AppIcon-0-0-1x_U007epad-0-1-P3-85-220.png/256x256bb.jpg" alt="" width="256" height="256" loading="lazy"></span><span><span class="i18n-ja">らくタグ</span><span class="i18n-en">RakuTag</span></span><b class="g-rare g-rare--N">N</b></a><a class="g-mini" href="https://apps.apple.com/jp/app/clockwidget-%E5%80%8B%E6%80%A7%E8%B1%8A%E3%81%8B%E3%81%AA%E6%99%82%E8%A8%88%E3%82%A6%E3%82%A3%E3%82%B8%E3%82%A7%E3%83%83%E3%83%88%E3%82%A2%E3%83%97%E3%83%AA/id6451070718?uo=4" target="_blank" rel="noopener"><span class="g-cap g-cap--2" style="--rot:-18deg"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/68/6e/6e/686e6e40-174b-0ff6-e82e-6089fcc7e61f/AppIcon-0-0-1x_U007epad-0-1-P3-85-220.png/256x256bb.jpg" alt="" width="256" height="256" loading="lazy"></span><span><span class="i18n-ja">ClockWidget</span><span class="i18n-en">ClockWidget</span></span><b class="g-rare g-rare--N">N</b></a><a class="g-mini" href="https://apps.apple.com/jp/app/ikaqr-qr%E3%82%B3%E3%83%BC%E3%83%89%E3%82%92%E7%88%86%E9%80%9F%E3%81%A7%E8%AA%AD%E3%81%BF%E8%BE%BC%E3%82%82%E3%81%86/id6450046891?uo=4" target="_blank" rel="noopener"><span class="g-cap g-cap--1" style="--rot:5deg"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/27/89/fe/2789fe27-5f68-ee38-3e39-a257b31049c2/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/256x256bb.jpg" alt="" width="256" height="256" loading="lazy"></span><span><span class="i18n-ja">ikaQR</span><span class="i18n-en">ikaQR</span></span><b class="g-rare g-rare--N">N</b></a><a class="g-mini" href="https://apps.apple.com/jp/app/%E3%82%B9%E3%83%AF%E3%82%A4%E3%83%9D%E3%83%B3-%E3%82%B9%E3%83%AF%E3%82%A4%E3%83%97%E3%81%A7%E5%86%99%E7%9C%9F%E3%81%A8%E5%8B%95%E7%94%BB%E3%82%92%E7%B0%A1%E5%8D%98%E6%95%B4%E7%90%86/id6752831862?uo=4" target="_blank" rel="noopener"><span class="g-cap g-cap--5" style="--rot:-14deg"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/79/d0/f5/79d0f513-4e1d-6b13-8054-fb8513924d7b/swipeclean-0-0-1x_U007epad-0-1-85-220.png/256x256bb.jpg" alt="" width="256" height="256" loading="lazy"></span><span><span class="i18n-ja">スワイポン</span><span class="i18n-en">Swipon</span></span><b class="g-rare g-rare--N">N</b></a><a class="g-mini" href="https://apps.apple.com/jp/app/reelkeep-%E9%87%A3%E5%85%B7%E3%82%B1%E3%82%A2%E7%AE%A1%E7%90%86/id6784576527?uo=4" target="_blank" rel="noopener"><span class="g-cap g-cap--6" style="--rot:-15deg"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/67/83/30/6783306e-8127-8fe6-4669-23711751d540/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/256x256bb.jpg" alt="" width="256" height="256" loading="lazy"></span><span><span class="i18n-ja">ReelKeep 釣具ケア管理</span><span class="i18n-en">ReelKeep</span></span><b class="g-rare g-rare--N">N</b></a><a class="g-mini" href="https://apps.apple.com/jp/app/carkeep-%E6%84%9B%E8%BB%8A%E3%83%A1%E3%83%B3%E3%83%86%E7%AE%A1%E7%90%86/id6785027821?uo=4" target="_blank" rel="noopener"><span class="g-cap g-cap--2" style="--rot:13deg"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/17/64/a5/1764a5d0-5b28-9208-e0d7-1348e2ae50b1/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/256x256bb.jpg" alt="" width="256" height="256" loading="lazy"></span><span><span class="i18n-ja">CarKeep 愛車メンテ管理</span><span class="i18n-en">CarKeep</span></span><b class="g-rare g-rare--N">N</b></a><a class="g-mini" href="https://apps.apple.com/jp/app/camerakeep-%E3%82%AB%E3%83%A1%E3%83%A9%E6%A9%9F%E6%9D%90%E7%AE%A1%E7%90%86/id6784186281?uo=4" target="_blank" rel="noopener"><span class="g-cap g-cap--3" style="--rot:0deg"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/27/8c/06/278c0652-d947-ac5c-c430-424eeb3b97b9/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/256x256bb.jpg" alt="" width="256" height="256" loading="lazy"></span><span><span class="i18n-ja">CameraKeep カメラ機材管理</span><span class="i18n-en">CameraKeep</span></span><b class="g-rare g-rare--N">N</b></a><a class="g-mini" href="https://apps.apple.com/jp/app/bikekeep-%E8%87%AA%E8%BB%A2%E8%BB%8A%E3%83%A1%E3%83%B3%E3%83%86%E7%AE%A1%E7%90%86/id6782966275?uo=4" target="_blank" rel="noopener"><span class="g-cap g-cap--3" style="--rot:-10deg"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a9/2e/20/a92e2007-e4fa-3de8-885e-8763c9147dc2/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/256x256bb.jpg" alt="" width="256" height="256" loading="lazy"></span><span><span class="i18n-ja">BikeKeep 自転車メンテ管理</span><span class="i18n-en">BikeKeep</span></span><b class="g-rare g-rare--N">N</b></a><a class="g-mini" href="https://apps.apple.com/jp/app/divekeep-%E5%99%A8%E6%9D%90%E3%82%B1%E3%82%A2%E7%AE%A1%E7%90%86/id6784748590?uo=4" target="_blank" rel="noopener"><span class="g-cap g-cap--4" style="--rot:13deg"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/34/e0/1e/34e01ed4-ced4-2213-0766-61b2e83ab038/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/256x256bb.jpg" alt="" width="256" height="256" loading="lazy"></span><span><span class="i18n-ja">DiveKeep 器材ケア管理</span><span class="i18n-en">DiveKeep</span></span><b class="g-rare g-rare--N">N</b></a><a class="g-mini" href="https://apps.apple.com/jp/app/monivo-%E5%A3%B0%E3%81%A7%E8%B5%B7%E3%81%93%E3%81%97%E5%90%88%E3%81%86%E3%82%A2%E3%83%A9%E3%83%BC%E3%83%A0/id6793626358?uo=4" target="_blank" rel="noopener"><span class="g-cap g-cap--2" style="--rot:-9deg"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5a/d3/12/5ad312e4-b84a-555e-1efa-e9b497c814ce/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/256x256bb.jpg" alt="" width="256" height="256" loading="lazy"></span><span><span class="i18n-ja">Monivo 声で起こし合うアラーム</span><span class="i18n-en">Monivo</span></span><b class="g-rare g-rare--N">N</b></a><a class="g-mini" href="https://apps.apple.com/jp/app/%E3%81%93%E3%81%93%E6%8A%BC%E3%81%97%E3%81%A6%E3%81%AD-%E3%82%B9%E3%83%9E%E3%83%9B%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88ai/id6823032334?uo=4" target="_blank" rel="noopener"><span class="g-cap g-cap--2" style="--rot:-16deg"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/94/58/53/9458534e-aa0f-63c6-615c-5782a9ceb9a9/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/256x256bb.jpg" alt="" width="256" height="256" loading="lazy"></span><span><span class="i18n-ja">ここ押してね</span><span class="i18n-en">Tap</span></span><b class="g-rare g-rare--N">N</b></a></div>
+
+                <div class="g-sh"><h2><span class="i18n-ja">その他のアプリ</span><span class="i18n-en">More Apps</span></h2><small><span class="i18n-ja">他の作品もご覧ください</span><span class="i18n-en">Take a look at my other work too</span></small></div>
+                <div class="g-panel ga-shelf"><a class="g-mini" href="/portfolio/apps/travel-memory-map.html"><span class="g-cap g-cap--4" style="--rot:-12deg"><img src="/assets/images/icon/travel_memory_map.webp" alt="" width="292" height="292" loading="lazy"></span><span><span class="i18n-ja">旅行思い出マップ</span><span class="i18n-en">TravelMemoryMap</span></span><small><span class="i18n-ja">写真を地図に記録する旅行アプリ</span><span class="i18n-en">A travel app that pins your photos to a map</span></small></a><a class="g-mini ga-more" href="/portfolio/"><span class="g-cap">→</span><span><span class="i18n-ja">すべてのアプリ</span><span class="i18n-en">All Apps</span></span><small><span class="i18n-ja">ポートフォリオを見る</span><span class="i18n-en">See the portfolio</span></small></a></div>
+
+                <div class="g-sh"><h2><span class="i18n-ja">このカプセルの冊子</span><span class="i18n-en">Reading about this app</span></h2></div>
+                <div class="ga-rel"><a class="g-panel" href="/blog/posts/app-kotonohabako.html"><img src="/assets/images/posts/app-kotonohabako.webp" alt="" width="1200" height="800" loading="lazy"><div><small><span class="i18n-ja">アプリ紹介</span><span class="i18n-en">App Spotlight</span></small><h3><span class="i18n-ja">言の葉箱 〜大切な手紙を簡単に記録〜</span><span class="i18n-en">Kotonohabako - Keep Your Precious Letters</span></h3></div></a></div>
         </div>
-    </section>
+    </main>
 
-    <!-- Download CTA Section -->
-    <section class="section">
-        <div class="container">
-            <div class="download-cta">
-                <h2 class="section-title">Download Now</h2>
-                <p class="section-description">
-                    Why not turn your treasured letters into digital keepsakes that last?
-                </p>
-
-                <div class="app-store-button">
-                    <a href="https://apple.co/45R5Drb" target="_blank" class="btn btn-primary btn-large">
-                        <svg class="apple-icon" viewBox="0 0 24 24" width="24" height="24">
-                            <path fill="currentColor" d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.09997 22C7.78997 22.05 6.79997 20.68 5.95997 19.47C4.24997 17 2.93997 12.45 4.69997 9.39C5.56997 7.87 7.12997 6.91 8.81997 6.88C10.1 6.86 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/>
-                        </svg>
-                        Download Free on the App Store
-                    </a>
-                </div>
-
-                <p class="download-note">
-                    iOS 17.0 or later | Japanese | Free to start (in-app purchases)
-                </p>
+    <footer class="g-foot">
+            <img class="g-foot-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364" loading="lazy">
+            <div class="g-wrap">
+                <div><a href="/" class="g-foot-logo"><img src="/assets/images/logo/tsuzukit-wordmark-white.svg" alt="TsuzuKit" width="110" height="34"></a>
+                <p class="g-foot-tag"><span class="i18n-ja">誰も作らないものを、まじめに作る。</span><span class="i18n-en">Making what nobody else will, seriously.</span><br>Seriously Silly since 2016.</p></div>
+                <div class="g-foot-sns"><a href="https://x.com/tsuzuki817" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><img src="/assets/images/sns/x.png" alt="" width="22" height="22"></a><a href="https://www.instagram.com/tsuzuki817/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="/assets/images/sns/instagram.png" alt="" width="22" height="22"></a><a href="https://www.tiktok.com/@tsuzuki817" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><img src="/assets/images/sns/tiktok.png" alt="" width="22" height="22"></a><a href="https://www.youtube.com/@tsuzuki817" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><img src="/assets/images/sns/youtube.png" alt="" width="22" height="22"></a><a href="https://github.com/tsuzukihashi" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><img src="/assets/images/sns/github.png" alt="" width="22" height="22"></a></div>
+                <div class="g-foot-links"><a href="/contact/"><span class="i18n-ja">お問い合わせ</span><span class="i18n-en">Contact</span></a><a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a><a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a><a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a><a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a></div>
+                <p class="g-foot-copy">© 2026 Ryo Tsuzukihashi / TsuzuKit</p>
             </div>
-        </div>
-    </section>
-
-    <!-- Related Apps Section -->
-    <section class="section section-alt">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">More Apps</h2>
-                <p class="section-description">
-                    Take a look at my other work too
-                </p>
-            </div>
-
-            <div class="related-apps">
-                <a href="/portfolio/apps/travel-memory-map.html" class="related-app-card">
-                    <img src="../../assets/images/icon/travel_memory_map.webp" alt="TravelMemoryMap" class="related-app-icon">
-                    <div class="related-app-info">
-                        <h3>TravelMemoryMap</h3>
-                        <p>A travel app that pins your photos to a map</p>
-                    </div>
-                </a>
-
-                <a href="/portfolio/" class="related-app-card">
-                    <div class="related-app-icon more-apps">
-                        <span>+36</span>
-                    </div>
-                    <div class="related-app-info">
-                        <h3>All Apps</h3>
-                        <p>See the portfolio</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-    </div>
-
-    <!-- Footer -->
-    <footer style="background: var(--color-primary); color: var(--color-background); padding: 3rem 0; text-align: center;">
-        <div class="container">
-            <p style="color: var(--color-background); opacity: 0.8; margin-bottom: 1rem;">
-                © 2026 Ryo Tsuzukihashi. All rights reserved.
-            </p>
-            <p style="color: var(--color-background); opacity: 0.6; font-size: 0.875rem;">
-                Seriously Silly since 2016.
-            </p>
-            <div style="margin-top: 2rem;">
-                <a href="/legal/privacy-policy.html" style="color: var(--color-background); opacity: 0.6; margin: 0 1rem; text-decoration: none;"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
-                <a href="/legal/terms-of-service.html" style="color: var(--color-background); opacity: 0.6; margin: 0 1rem; text-decoration: none;"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
-                <a href="/legal/commercial-law.html" style="color: var(--color-background); opacity: 0.6; margin: 0 1rem; text-decoration: none;"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
-                <a href="/legal/disclaimer.html" style="color: var(--color-background); opacity: 0.6; margin: 0 1rem; text-decoration: none;"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a>
-            </div>
-        </div>
-    </footer>
-
-    <!-- JavaScript -->
-    <script>
-        // Navigation scroll effect
-        window.addEventListener('scroll', function() {
-            const nav = document.getElementById('nav');
-            if (window.scrollY > 50) {
-                nav.classList.add('scrolled');
-            } else {
-                nav.classList.remove('scrolled');
-            }
-        });
-
-        // Mobile menu toggle
-        const navToggle = document.getElementById('navToggle');
-        const navMenu = document.getElementById('navMenu');
-        
-        navToggle.addEventListener('click', function() {
-            navToggle.classList.toggle('active');
-            navMenu.classList.toggle('active');
-        });
-
-        // Smooth scroll for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Animate elements on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver(function(entries) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('animated');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, observerOptions);
-
-        // Observe elements
-        document.querySelectorAll('.feature-card, .tech-card, .achievement-card, .review-card').forEach(el => {
-            observer.observe(el);
-        });
-    </script>
+        </footer>
 </body>
 </html>

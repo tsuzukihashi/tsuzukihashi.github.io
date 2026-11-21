@@ -22,27 +22,6 @@
         <meta property="og:url" content="https://tsuzukit.com/about/">
         <meta property="og:type" content="profile">
 
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap"
-            rel="stylesheet">
-
-        <!-- CSS -->
-        <link rel="stylesheet" href="../assets/css/tsuzukit.css">
-        <link rel="stylesheet" href="../assets/css/about.css">
-
-        <style>
-            .about-career-link {
-                display: inline-block; padding: 13px 26px; background: #fff;
-                border: 2px solid #14110c; border-radius: 999px; box-shadow: 5px 5px 0 #14110c;
-                color: #14110c; text-decoration: none; font-weight: 700; font-size: 0.95rem;
-                transition: transform 0.2s ease;
-            }
-            .about-career-link:hover { transform: translateY(-3px); box-shadow: 7px 7px 0 #14110c; }
-        </style>
-
         <!-- Favicon -->
         <link rel="icon" type="image/x-icon" href="/favicon.ico">
         <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -87,230 +66,186 @@
           ]
         }
         </script>
-    </head>
-    <body>
-        <!-- Navigation -->
-        <nav class="nav" id="nav">
-            <div class="nav-container">
-                <a href="/" class="nav-logo">TsuzuKit</a>
-                <div class="nav-menu" id="navMenu">
-                    <a href="/portfolio/" class="nav-link">Portfolio</a>
-                    <a href="/about/" class="nav-link active">About</a>
-                    <a href="/blog/" class="nav-link">Blog</a>
-                    <a href="/contact/" class="nav-link">Contact</a>
-                </div>
-                <div class="nav-toggle" id="navToggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+        <!-- ガチャの見た目（assets/css/gacha.css・docs/gacha-design.md） -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700;800&family=RocknRoll+One&display=swap">
+    <link rel="stylesheet" href="/assets/css/gacha.css">
+    <link rel="stylesheet" href="/assets/css/g-about.css">
+    <script src="/assets/js/gacha.js" defer></script>
+    <!-- /ガチャの見た目 -->
+</head>
+    <body class="g">
+        <header class="g-head" id="nav">
+            <div class="g-wrap">
+                <a href="/" class="g-logo"><img src="/assets/images/logo/tsuzukit-wordmark.svg" alt="TsuzuKit" width="116" height="36"></a>
+                <nav class="nav-menu" id="navMenu" aria-label="メニュー"><a href="/portfolio/" class="nav-link"><span class="i18n-ja">アプリ</span><span class="i18n-en">Apps</span></a><a href="/blog/" class="nav-link"><span class="i18n-ja">読みもの</span><span class="i18n-en">Reading</span></a><a href="/about/" class="nav-link" aria-current="page"><span class="i18n-ja">私について</span><span class="i18n-en">About</span></a><a href="/contact/" class="nav-link"><span class="i18n-ja">お問い合わせ</span><span class="i18n-en">Contact</span></a></nav>
+                <button type="button" class="g-menu" id="navToggle" aria-controls="navMenu" aria-expanded="false">MENU</button>
             </div>
-        </nav>
+        </header>
 
-        <!-- About Hero -->
-        <section class="about-hero">
-            <div class="glow-shapes">
-                <div class="glow-shape"></div>
-                <div class="glow-shape"></div>
-                <div class="glow-shape"></div>
-            </div>
+        <main class="g-main ab">
+            <!-- 持ち主の紹介 -->
+            <section class="g-wrap ab-hero">
+                <div class="ab-hero-text">
+                    <div class="g-crumb"><a href="/"><span class="i18n-ja">トップ</span><span class="i18n-en">Home</span></a> ＞ <b><span class="i18n-ja">私について</span><span class="i18n-en">About</span></b></div>
+                    <h1 class="g-title ab-title">NOBODY<br>ELSE WILL.</h1>
+                    <div class="g-bubble ab-tagline"><span class="i18n-ja">誰も作らないものを、まじめに作る。</span><span class="i18n-en">I build what nobody else will, and I build it properly.</span></div>
 
-            <div class="about-hero-content">
-                <div class="profile-image-wrapper">
-                    <div class="profile-image">
-                        <img src="/assets/images/user_profile.webp" alt="續橋涼" data-en-alt="Ryo Tsuzukihashi"
-                            style="width: 100%; height: 100%; object-fit: cover;">
+                    <ul class="ab-stickers">
+                        <li class="ab-sticker" style="--c: var(--g-c1)">
+                            <b><span class="i18n-ja">10年</span><span class="i18n-en">10 yrs</span></b>
+                            <span><span class="i18n-ja">個人開発歴</span><span class="i18n-en">Indie dev</span></span>
+                        </li>
+                        <li class="ab-sticker" style="--c: var(--g-c3); --rot: 4deg">
+                            <b>81</b>
+                            <span><span class="i18n-ja">公開アプリ</span><span class="i18n-en">Live apps</span></span>
+                        </li>
+                        <li class="ab-sticker" style="--c: var(--g-c6); --rot: -3deg">
+                            <b><span class="i18n-ja">79万+</span><span class="i18n-en">790K+</span></b>
+                            <span><span class="i18n-ja">総ダウンロード</span><span class="i18n-en">Total downloads</span></span>
+                        </li>
+                    </ul>
+
+                    <div class="g-btns ab-hero-btns">
+                        <a href="/portfolio/" class="g-btn g-btn--k g-btn--big"><span class="i18n-ja">作ったアプリを見る</span><span class="i18n-en">See all my apps</span></a>
+                        <a href="/contact/" class="g-btn g-btn--big"><span class="i18n-ja">お仕事のご相談</span><span class="i18n-en">Work inquiries</span></a>
                     </div>
-                    <div class="profile-status"><span class="i18n-ja">個人開発10年目</span><span class="i18n-en">10th year of indie dev</span></div>
                 </div>
 
-                <h1 class="about-title">
-                    NOBODY ELSE WILL.
-                    <span class="about-subtitle"><span class="i18n-ja">續橋 涼 — tsuzuki817 / Ryo Tsuzukihashi</span><span class="i18n-en">Ryo Tsuzukihashi — tsuzuki817</span></span>
-                </h1>
-
-                <p class="about-tagline">
-                    <span class="i18n-ja">誰も作らないものを、まじめに作る。</span><span class="i18n-en">I build what nobody else will, and I build it properly.</span>
-                </p>
-
-                <div class="about-badges">
-                    <span class="badge">iOS Developer</span>
-                    <span class="badge">UI/UX Designer</span>
-                    <span class="badge"><span class="i18n-ja">個人開発者</span><span class="i18n-en">Indie Developer</span></span>
+                <div class="g-ypanel ab-owner">
+                    <span class="ab-owner-tab"><span class="i18n-ja">このガチャの持ち主</span><span class="i18n-en">The owner of this machine</span></span>
+                    <div class="ab-photo">
+                        <img src="/assets/images/user_profile.webp" alt="續橋涼" data-en-alt="Ryo Tsuzukihashi" width="512" height="512">
+                        <span class="ab-photo-status"><span class="i18n-ja">個人開発10年目</span><span class="i18n-en">10th year of indie dev</span></span>
+                    </div>
+                    <p class="ab-name"><span class="i18n-ja">續橋 涼</span><span class="i18n-en">Ryo Tsuzukihashi</span></p>
+                    <p class="ab-handle"><span class="i18n-ja">tsuzuki817 / Ryo Tsuzukihashi</span><span class="i18n-en">tsuzuki817</span></p>
+                    <ul class="ab-badges">
+                        <li>iOS Developer</li>
+                        <li>UI/UX Designer</li>
+                        <li><span class="i18n-ja">個人開発者</span><span class="i18n-en">Indie Developer</span></li>
+                    </ul>
+                    <img class="ab-owner-char" src="/assets/images/character-wave.png" alt="" width="419" height="382">
                 </div>
+            </section>
 
-                <a href="/portfolio/" class="spin-badge" aria-label="アプリ一覧へ" data-en-aria-label="See all apps">
-                    <svg class="spin-badge__ring" viewBox="0 0 130 130">
-                        <defs>
-                            <path id="spinPath"
-                                d="M65,65 m-48,0 a48,48 0 1,1 96,0 a48,48 0 1,1 -96,0" />
-                        </defs>
-                        <text>
-                            <textPath href="#spinPath">DOWNLOAD APPS · CHECK MY WORKS · </textPath>
-                        </text>
-                    </svg>
-                    <span class="spin-badge__center"><i class="mark" aria-hidden="true"></i></span>
-                </a>
+            <div class="g-wrap">
+                <div class="ab-tape" aria-hidden="true">
+                    <span>iOS DEVELOPER</span><i>▶</i><span class="o">CREATOR</span><i>▶</i><span>INDIE HACKER</span><i>▶</i><span class="o">DESIGNER</span>
+                </div>
             </div>
-        </section>
 
-        <!-- Marquee -->
-        <div class="about-marquee-wrap">
-        <div class="about-marquee">
-            <div class="marquee-track">
-                <span class="marquee-item">iOS DEVELOPER</span>
-                <span class="marquee-sep">▶</span>
-                <span class="marquee-item outline">CREATOR</span>
-                <span class="marquee-sep">▶</span>
-                <span class="marquee-item">INDIE HACKER</span>
-                <span class="marquee-sep">▶</span>
-                <span class="marquee-item outline">DESIGNER</span>
-                <span class="marquee-sep">▶</span>
-                <span class="marquee-item">iOS DEVELOPER</span>
-                <span class="marquee-sep">▶</span>
-                <span class="marquee-item outline">CREATOR</span>
-                <span class="marquee-sep">▶</span>
-                <span class="marquee-item">INDIE HACKER</span>
-                <span class="marquee-sep">▶</span>
-                <span class="marquee-item outline">DESIGNER</span>
-                <span class="marquee-sep">▶</span>
-            </div>
-        </div>
-        </div>
-
-        <!-- Introduction Section -->
-        <section class="section">
-            <div class="container">
-                <div class="intro-content">
-                    <div class="intro-text">
-                        <span class="section-label">Who I Am</span>
-                        <h2 class="section-title"><span class="i18n-ja">はじめまして</span><span class="i18n-en">Nice to meet you</span></h2>
-                        <p class="intro-paragraph">
+            <!-- はじめまして -->
+            <section class="g-wrap">
+                <div class="g-sh"><h2><span class="i18n-ja">はじめまして</span><span class="i18n-en">Nice to meet you</span></h2><small>Who I Am</small></div>
+                <div class="g-panel ab-intro">
+                    <div class="ab-intro-text">
+                        <p>
                             <span class="i18n-ja">續橋涼（つづきはし りょう）と申します。<br>
                             2016年、大学生のときに個人開発を始めました。これまでに100本以上を作って、
                             いま81本がApp Storeにあります。9本は企業に譲り、6本は配信を終えました。</span><span class="i18n-en">I'm Ryo Tsuzukihashi.<br>
                             I started making my own apps in 2016, while I was at university. I've built over 100 so far,
                             and 81 of them are on the App Store right now. I sold 9 to companies, and 6 are no longer available.</span>
                         </p>
-                        <p class="intro-paragraph">
+                        <p>
                             <span class="i18n-ja">作るのは<strong>誰も作らないもの</strong>ばかりです。
                             ニッチすぎて、市場としては数えられないような領域ばかり触っています。</span><span class="i18n-en">Almost everything I make is <strong>something nobody else would make</strong>.
                             I keep working in niches so small they don't even count as a market.</span>
                         </p>
-                        <p class="intro-paragraph">
+                        <p>
                             <span class="i18n-ja">流れるメモ帳が16万、全部合わせて79万ダウンロードになりました。</span><span class="i18n-en">Floating Notepad has reached 160,000 downloads, and all my apps together have reached 790,000.</span>
                         </p>
                     </div>
-
-                    <div class="intro-stats">
-                        <div class="intro-stat">
-                            <div class="intro-stat-icon">🎯</div>
-                            <div class="intro-stat-number"><span class="i18n-ja">10年</span><span class="i18n-en">10 yrs</span></div>
-                            <div class="intro-stat-label"><span class="i18n-ja">個人開発歴</span><span class="i18n-en">Indie dev</span></div>
+                    <div class="ab-intro-side">
+                        <div class="ab-intro-cap">
+                            <span class="g-cap g-cap--1"><img src="/assets/images/icon/floating_notepad.webp" alt="" width="292" height="292"></span>
+                            <b><span class="i18n-ja">流れるメモ帳</span><span class="i18n-en">Floating Notepad</span></b>
+                            <span class="g-rare g-rare--SSR">SSR</span>
                         </div>
-                        <div class="intro-stat">
-                            <div class="intro-stat-icon">📱</div>
-                            <div class="intro-stat-number">81</div>
-                            <div class="intro-stat-label"><span class="i18n-ja">公開アプリ</span><span class="i18n-en">Live apps</span></div>
-                        </div>
-                        <div class="intro-stat">
-                            <div class="intro-stat-icon">🌟</div>
-                            <div class="intro-stat-number"><span class="i18n-ja">79万+</span><span class="i18n-en">790K+</span></div>
-                            <div class="intro-stat-label"><span class="i18n-ja">総ダウンロード</span><span class="i18n-en">Total downloads</span></div>
-                        </div>
+                        <img class="ab-intro-char" src="/assets/images/character-cheer.png" alt="" width="318" height="315" loading="lazy">
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Journey Section -->
-        <section class="section">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-badge">My Journey</span>
-                    <h2 class="section-title"><span class="i18n-ja">10年間、諦めなかった理由</span><span class="i18n-en">Why I kept going for 10 years</span></h2>
-                    <p class="section-description">
-                        <span class="i18n-ja">会社で働きながら、個人開発をやめずにきた。<br>
-                        作ったものが知らない誰かの毎日に入っていくのが、面白いからです。</span><span class="i18n-en">I've kept making my own apps the whole time I've had a day job.<br>
-                        Watching something I made find its way into a stranger's everyday life never gets old.</span>
-                    </p>
+            <!-- 10年間、諦めなかった理由 -->
+            <section class="g-wrap">
+                <div class="g-sh"><h2><span class="i18n-ja">10年間、諦めなかった理由</span><span class="i18n-en">Why I kept going for 10 years</span></h2><small>My Journey</small></div>
+                <div class="g-bubble ab-lead">
+                    <span class="i18n-ja">会社で働きながら、個人開発をやめずにきた。<br>
+                    作ったものが知らない誰かの毎日に入っていくのが、面白いからです。</span><span class="i18n-en">I've kept making my own apps the whole time I've had a day job.<br>
+                    Watching something I made find its way into a stranger's everyday life never gets old.</span>
                 </div>
 
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-content">
+                <ol class="ab-chute">
+                    <li class="ab-step">
+                        <span class="g-cap g-cap--5 ab-step-cap"><em>1st</em></span>
+                        <div class="g-panel ab-step-card">
+                            <span class="ab-year">2016</span>
                             <h3><span class="i18n-ja">個人開発をスタート</span><span class="i18n-en">Started indie development</span></h3>
                             <p><span class="i18n-ja">「自分のアイデアを形にしたい」その一心で、大学生時代に最初のアプリを開発。</span><span class="i18n-en">I just wanted to turn my own ideas into something real. That alone got me to build my first app while I was at university.</span></p>
                         </div>
-                        <div class="timeline-year">2016</div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-content">
+                    </li>
+                    <li class="ab-step">
+                        <span class="g-cap g-cap--3 ab-step-cap"><em>¥21</em></span>
+                        <div class="g-panel ab-step-card">
+                            <span class="ab-year">2019</span>
                             <h3><span class="i18n-ja">初めての収益は21円</span><span class="i18n-en">My first earnings: ¥21</span></h3>
                             <p><span class="i18n-ja">広告の収益が21円だけ入った。誰も使わないと思っていたものを、知らない誰かが触っていた。</span><span class="i18n-en">Ads brought in exactly ¥21. Something I assumed nobody would use was being used by someone I'd never met.</span></p>
                         </div>
-                        <div class="timeline-year">2019</div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-content">
+                    </li>
+                    <li class="ab-step">
+                        <span class="g-cap g-cap--1 ab-step-cap"><img src="/assets/images/icon/travel_memory_map.webp" alt="" width="292" height="292" loading="lazy"></span>
+                        <div class="g-panel ab-step-card">
+                            <span class="ab-year">2024</span>
                             <h3><span class="i18n-ja">旅行思い出マップをリリース</span><span class="i18n-en">Released TravelMemoryMap</span></h3>
                             <p><span class="i18n-ja">旅の記憶を地図に描くアプリ。のちに15万ダウンロードを超える代表作になる。</span><span class="i18n-en">An app for drawing your travel memories on a map. It went on to pass 150,000 downloads and became one of my signature apps.</span></p>
                         </div>
-                        <div class="timeline-year">2024</div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-content">
+                    </li>
+                    <li class="ab-step">
+                        <span class="g-cap g-cap--2 ab-step-cap"><img src="/assets/images/icon/always_on_timer.webp" alt="" width="292" height="292" loading="lazy"></span>
+                        <div class="g-panel ab-step-card">
+                            <span class="ab-year">2025</span>
                             <h3><span class="i18n-ja">40個以上のアプリを開発</span><span class="i18n-en">Built over 40 apps</span></h3>
                             <p><span class="i18n-ja">累計36万ダウンロード達成。神アプリグランプリ受賞。これからも挑戦は続く。</span><span class="i18n-en">Reached 360,000 total downloads and won the Kami App Grand Prix. And I'm not done yet.</span></p>
                         </div>
-                        <div class="timeline-year">2025</div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-content">
+                    </li>
+                    <li class="ab-step">
+                        <span class="g-cap g-cap--6 ab-step-cap"><img src="/assets/images/icon/unchikun.webp" alt="" width="512" height="512" loading="lazy"></span>
+                        <div class="g-panel ab-step-card">
+                            <span class="ab-year">2026</span>
                             <h3><span class="i18n-ja">うんちくんが大ヒット</span><span class="i18n-en">UNCHIKUN becomes a big hit</span></h3>
                             <p><span class="i18n-ja">リリース直後から急上昇し、累計20万ダウンロードを突破。代表作に。</span><span class="i18n-en">It shot up right after launch and passed 200,000 total downloads, becoming my signature app.</span></p>
                         </div>
-                        <div class="timeline-year">2026</div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                    </li>
+                </ol>
+            </section>
 
-        <!-- Career Timeline -->
-        <section class="section section-alt">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-label">Career</span>
-                    <h2 class="section-title"><span class="i18n-ja">経歴</span><span class="i18n-en">Career</span></h2>
-                    <p class="section-description">
-                        <span class="i18n-ja">大企業での経験を経て、個人開発者として独自の道を歩む</span><span class="i18n-en">Learning at big companies while going my own way as an indie developer</span>
-                    </p>
-                </div>
+            <!-- 経歴 -->
+            <section class="g-wrap">
+                <div class="g-sh"><h2><span class="i18n-ja">経歴</span><span class="i18n-en">Career</span></h2><small>Career</small></div>
+                <div class="g-bubble ab-lead"><span class="i18n-ja">大企業での経験を経て、個人開発者として独自の道を歩む</span><span class="i18n-en">Learning at big companies while going my own way as an indie developer</span></div>
 
-                <div class="career-timeline">
-                    <div class="career-item">
-                        <div class="career-year">2016</div>
-                        <div class="career-content">
+                <div class="g-paper ab-career">
+                    <span class="ab-paper-label"><span class="i18n-ja">職務経歴</span><span class="i18n-en">Work history</span></span>
+                    <div class="ab-job">
+                        <span class="ab-job-year">2016</span>
+                        <div class="ab-job-body">
                             <h3><span class="i18n-ja">個人開発スタート</span><span class="i18n-en">Started indie development</span></h3>
-                            <p class="career-company"><span class="i18n-ja">大学生・Independent Developer</span><span class="i18n-en">University student / Independent Developer</span></p>
-                            <p class="career-description">
+                            <span class="ab-job-role"><span class="i18n-ja">大学生・Independent Developer</span><span class="i18n-en">University student / Independent Developer</span></span>
+                            <p>
                                 <span class="i18n-ja">大学生として勉強しながら、初めてのiOSアプリを開発・リリース。
                                 アプリ開発の楽しさに目覚める。</span><span class="i18n-en">Built and released my first iOS app while studying at university,
                                 and found out how much fun making apps is.</span>
                             </p>
                         </div>
                     </div>
-
-                    <div class="career-item">
-                        <div class="career-year">2019</div>
-                        <div class="career-content">
+                    <div class="ab-job">
+                        <span class="ab-job-year">2019</span>
+                        <div class="ab-job-body">
                             <h3>Yahoo Japan</h3>
-                            <p class="career-company"><span class="i18n-ja">iOSエンジニア</span><span class="i18n-en">iOS Engineer</span></p>
-                            <p class="career-description">
+                            <span class="ab-job-role"><span class="i18n-ja">iOSエンジニア</span><span class="i18n-en">iOS Engineer</span></span>
+                            <p>
                                 <span class="i18n-ja">PayPayフリマアプリの開発に従事。フリマアプリの立ち上げをLeanXPというアジャイル開発手法で経験。
                                 ペアプログラミングを通じて、チーム開発の重要性を学ぶ。
                                 またテスト駆動開発（TDD）を実践し、品質の高いコードを書くことの大切さを実感。
@@ -321,13 +256,12 @@
                             </p>
                         </div>
                     </div>
-
-                    <div class="career-item">
-                        <div class="career-year">2023</div>
-                        <div class="career-content">
+                    <div class="ab-job">
+                        <span class="ab-job-year">2023</span>
+                        <div class="ab-job-body">
                             <h3>DeNA</h3>
-                            <p class="career-company"><span class="i18n-ja">iOSエンジニア</span><span class="i18n-en">iOS Engineer</span></p>
-                            <p class="career-description">
+                            <span class="ab-job-role"><span class="i18n-ja">iOSエンジニア</span><span class="i18n-en">iOS Engineer</span></span>
+                            <p>
                                 <span class="i18n-ja">ライブ配信アプリPocochaの開発に携わる。
                                 初心者の体験周りの改善や、ペアプログラミングやテスト駆動開発（TDD）を通じて、より良いコード品質を追求。
                                 ショート動画機能の開発を担当し、技術検証から再生基盤まで手がける。</span><span class="i18n-en">Worked on Pococha, a live streaming app.
@@ -336,13 +270,12 @@
                             </p>
                         </div>
                     </div>
-
-                    <div class="career-item current">
-                        <div class="career-year"><span class="i18n-ja">2024-現在</span><span class="i18n-en">2024–Present</span></div>
-                        <div class="career-content">
-                            <h3>ZOZO</h3>
-                            <p class="career-company"><span class="i18n-ja">iOSエンジニア</span><span class="i18n-en">iOS Engineer</span></p>
-                            <p class="career-description">
+                    <div class="ab-job is-now">
+                        <span class="ab-job-year"><span class="i18n-ja">2024-現在</span><span class="i18n-en">2024–Present</span></span>
+                        <div class="ab-job-body">
+                            <h3>ZOZO <span class="ab-now"><span class="i18n-ja">いま</span><span class="i18n-en">Now</span></span></h3>
+                            <span class="ab-job-role"><span class="i18n-ja">iOSエンジニア</span><span class="i18n-en">iOS Engineer</span></span>
+                            <p>
                                 <span class="i18n-ja">ZOZOTOWNアプリの開発に携わり、大規模サービスの開発経験を積む。
                                 ユーザーのショッピング体験を向上させるための機能開発や、パフォーマンス最適化に取り組む。
                                 歴史のあるアプリの中で、最新技術を活用しながら、ユーザーに愛されるアプリ作りを目指す。</span><span class="i18n-en">Working on the ZOZOTOWN app and building experience on a large-scale service.
@@ -351,412 +284,275 @@
                             </p>
                         </div>
                     </div>
-                </div>
-
-                <div style="text-align: center; margin-top: 44px;">
-                    <a href="/career/" class="about-career-link"><span class="i18n-ja">職務経歴をくわしく見る</span><span class="i18n-en">See my full career history</span></a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section class="section">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-label">Skills</span>
-                    <h2 class="section-title"><span class="i18n-ja">技術スタック</span><span class="i18n-en">Tech stack</span></h2>
-                    <p class="section-description">
-                        <span class="i18n-ja">10年間の開発で培った技術とツール</span><span class="i18n-en">The technologies and tools I picked up over 10 years of building apps</span>
-                    </p>
-                </div>
-
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3 class="skill-category-title">
-                            <span class="skill-icon">📱</span>
-                            iOS Development
-                        </h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Swift</span>
-                            <span class="skill-tag">SwiftUI</span>
-                            <span class="skill-tag">UIKit</span>
-                            <span class="skill-tag">Combine</span>
-                            <span class="skill-tag">Core Data</span>
-                            <span class="skill-tag">Core Location</span>
-                            <span class="skill-tag">MapKit</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <h3 class="skill-category-title">
-                            <span class="skill-icon">🎨</span>
-                            Design & UI/UX
-                        </h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Human Interface Guidelines</span>
-                            <span class="skill-tag"><span class="i18n-ja">紙と鉛筆</span><span class="i18n-en">Pencil and paper</span></span>
-                        </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <h3 class="skill-category-title">
-                            <span class="skill-icon">☁️</span>
-                            Backend & Cloud
-                        </h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Firebase</span>
-                            <span class="skill-tag">Firestore</span>
-                            <span class="skill-tag">Cloud Functions</span>
-                            <span class="skill-tag">Google Cloud</span>
-                            <span class="skill-tag">App Store Connect API</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <h3 class="skill-category-title">
-                            <span class="skill-icon">🔧</span>
-                            Tools & Others
-                        </h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Xcode Cloud</span>
-                            <span class="skill-tag">GitHub</span>
-                            <span class="skill-tag">Fastlane</span>
-                            <span class="skill-tag">TestFlight</span>
-                            <span class="skill-tag">Analytics</span>
-                        </div>
+                    <div class="ab-career-more">
+                        <a href="/career/" class="g-btn g-btn--y"><span class="i18n-ja">職務経歴をくわしく見る</span><span class="i18n-en">See my full career history</span> →</a>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Values Section -->
-        <section class="section section-alt">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-label">Mission &amp; Vision</span>
-                    <h2 class="section-title"><span class="i18n-ja">誰も作らないものを、まじめに</span><span class="i18n-en">Making what nobody else will, seriously</span></h2>
-                    <p class="section-description">
-                        <span class="i18n-ja">うんちを記録するアプリも、目薬をさす時間を知らせるアプリも、貝殻を判定する図鑑も、<br class="br-pc">どこかの誰かが「市場がない」と切り捨てたものです。<br>
-                        その切り捨てられた側を拾って、手を抜かずに作る。それが10年やってきたことでした。</span><span class="i18n-en">An app for logging your poop, an app that tells you when to use your eye drops, a field guide that identifies seashells.<br>
-                        Each of them is something someone, somewhere wrote off with "there's no market for that."<br>
-                        Picking up what got written off and building it without cutting corners. That's what I've been doing for 10 years.</span>
-                    </p>
-                    <p class="section-description" style="margin-top: 1.4rem;">
-                        <span class="i18n-ja">目指しているのは、<strong>「こんなの誰が使うの」が毎日使われている</strong>状態です。<br>
-                        うんちくんは21万人、猫背リマインダーに3,640人、目薬リマインダーに623人。<br>
-                        数の大小ではなく、誰かの一日に居座れたかどうかで見ています。</span><span class="i18n-en">What I'm aiming for is <strong>the "who would ever use this?" app that people use every day</strong>.<br>
-                        210,000 people for UNCHIKUN, 3,640 for Posture Reminder, 623 for Eye Drop Reminder.<br>
-                        I don't judge an app by how big the number is. I judge it by whether it earned a spot in someone's day.</span>
-                    </p>
+            <!-- 技術スタック -->
+            <section class="g-wrap">
+                <div class="g-sh"><h2><span class="i18n-ja">技術スタック</span><span class="i18n-en">Tech stack</span></h2><small>Skills</small></div>
+                <div class="g-bubble ab-lead"><span class="i18n-ja">10年間の開発で培った技術とツール</span><span class="i18n-en">The technologies and tools I picked up over 10 years of building apps</span></div>
+
+                <div class="ab-skills">
+                    <div class="g-panel ab-skill" style="--c: var(--g-c1)">
+                        <h3><i class="g-capdot"></i>iOS Development</h3>
+                        <ul class="ab-tags">
+                            <li>Swift</li><li>SwiftUI</li><li>UIKit</li><li>Combine</li><li>Core Data</li><li>Core Location</li><li>MapKit</li>
+                        </ul>
+                    </div>
+                    <div class="g-panel ab-skill" style="--c: var(--g-c6)">
+                        <h3><i class="g-capdot"></i>Design &amp; UI/UX</h3>
+                        <ul class="ab-tags">
+                            <li>Human Interface Guidelines</li>
+                            <li><span class="i18n-ja">紙と鉛筆</span><span class="i18n-en">Pencil and paper</span></li>
+                        </ul>
+                    </div>
+                    <div class="g-panel ab-skill" style="--c: var(--g-c4)">
+                        <h3><i class="g-capdot"></i>Backend &amp; Cloud</h3>
+                        <ul class="ab-tags">
+                            <li>Firebase</li><li>Firestore</li><li>Cloud Functions</li><li>Google Cloud</li><li>App Store Connect API</li>
+                        </ul>
+                    </div>
+                    <div class="g-panel ab-skill" style="--c: var(--g-c5)">
+                        <h3><i class="g-capdot"></i>Tools &amp; Others</h3>
+                        <ul class="ab-tags">
+                            <li>Xcode Cloud</li><li>GitHub</li><li>Fastlane</li><li>TestFlight</li><li>Analytics</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 誰も作らないものを、まじめに -->
+            <section class="g-wrap">
+                <div class="g-sh"><h2><span class="i18n-ja">誰も作らないものを、まじめに</span><span class="i18n-en">Making what nobody else will, seriously</span></h2><small>Mission &amp; Vision</small></div>
+
+                <div class="g-ypanel ab-mission">
+                    <div class="ab-mission-text">
+                        <p>
+                            <span class="i18n-ja">うんちを記録するアプリも、目薬をさす時間を知らせるアプリも、貝殻を判定する図鑑も、どこかの誰かが「市場がない」と切り捨てたものです。<br>
+                            その切り捨てられた側を拾って、手を抜かずに作る。それが10年やってきたことでした。</span><span class="i18n-en">An app for logging your poop, an app that tells you when to use your eye drops, a field guide that identifies seashells.<br>
+                            Each of them is something someone, somewhere wrote off with "there's no market for that."<br>
+                            Picking up what got written off and building it without cutting corners. That's what I've been doing for 10 years.</span>
+                        </p>
+                        <p>
+                            <span class="i18n-ja">目指しているのは、<strong>「こんなの誰が使うの」が毎日使われている</strong>状態です。<br>
+                            うんちくんは21万人、猫背リマインダーに3,640人、目薬リマインダーに623人。<br>
+                            数の大小ではなく、誰かの一日に居座れたかどうかで見ています。</span><span class="i18n-en">What I'm aiming for is <strong>the "who would ever use this?" app that people use every day</strong>.<br>
+                            210,000 people for UNCHIKUN, 3,640 for Posture Reminder, 623 for Eye Drop Reminder.<br>
+                            I don't judge an app by how big the number is. I judge it by whether it earned a spot in someone's day.</span>
+                        </p>
+                    </div>
+                    <ul class="ab-users">
+                        <li style="--rot: -8deg">
+                            <span class="g-cap g-cap--6"><img src="/assets/images/icon/unchikun.webp" alt="" width="512" height="512" loading="lazy"></span>
+                            <b><span class="i18n-ja">21万人</span><span class="i18n-en">210,000</span></b>
+                            <span><span class="i18n-ja">うんちくん</span><span class="i18n-en">UNCHIKUN</span></span>
+                        </li>
+                        <li style="--rot: 6deg">
+                            <span class="g-cap g-cap--5"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/3b/55/b3/3b55b3d0-92fd-af94-162d-5f821ed59088/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/256x256bb.jpg" alt="" width="256" height="256" loading="lazy"></span>
+                            <b><span class="i18n-ja">3,640人</span><span class="i18n-en">3,640</span></b>
+                            <span><span class="i18n-ja">猫背リマインダー</span><span class="i18n-en">Posture Reminder</span></span>
+                        </li>
+                        <li style="--rot: -4deg">
+                            <span class="g-cap g-cap--1"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/06/83/33/068333f8-63b6-ac89-3dd1-dbd22fedcb6f/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/256x256bb.jpg" alt="" width="256" height="256" loading="lazy"></span>
+                            <b><span class="i18n-ja">623人</span><span class="i18n-en">623</span></b>
+                            <span><span class="i18n-ja">目薬リマインダー</span><span class="i18n-en">Eye Drop Reminder</span></span>
+                        </li>
+                    </ul>
                 </div>
 
-                <div class="values-grid">
-                    <div class="value-card">
-                        <div class="value-icon">🫣</div>
-                        <h3 class="value-title"><span class="i18n-ja">言いにくいことほど、ちゃんと作る</span><span class="i18n-en">The more awkward the topic, the more care it gets</span></h3>
-                        <p class="value-description">
+                <div class="ab-values">
+                    <div class="g-panel ab-value">
+                        <span class="ab-num" style="--c: var(--g-c6)">1</span>
+                        <h3><span class="i18n-ja">言いにくいことほど、ちゃんと作る</span><span class="i18n-en">The more awkward the topic, the more care it gets</span></h3>
+                        <p>
                             <span class="i18n-ja">うんちの記録も、推しへの気持ちも、真顔で設計する。
                             照れた瞬間に雑になる。人に言いにくい領域ほど、まだ誰も丁寧に作っていない。</span><span class="i18n-en">Logging your poop, your feelings for the idol you follow: I design them with a straight face.
                             The moment you get embarrassed, the work gets sloppy. The harder something is to talk about, the less likely anyone has built it with care yet.</span>
                         </p>
                     </div>
-
-                    <div class="value-card">
-                        <div class="value-icon">🚀</div>
-                        <h3 class="value-title"><span class="i18n-ja">考えるより先に出す</span><span class="i18n-en">Ship first, think later</span></h3>
-                        <p class="value-description">
+                    <div class="g-panel ab-value">
+                        <span class="ab-num" style="--c: var(--g-c1)">2</span>
+                        <h3><span class="i18n-ja">考えるより先に出す</span><span class="i18n-en">Ship first, think later</span></h3>
+                        <p>
                             <span class="i18n-ja">出した月の数字では、当たりかどうか分からない。
                             8月は7本出して売上が合わせて557円だった。その前の月に1円も売れなかったアプリが、翌月に9万円を持ってきた。</span><span class="i18n-en">The numbers in the month I ship an app don't tell me whether it's a hit.
                             In August I shipped 7 apps and together they made ¥557. An app that didn't earn a single yen one month brought in ¥90,000 the next.</span>
                         </p>
                     </div>
-
-                    <div class="value-card">
-                        <div class="value-icon">📊</div>
-                        <h3 class="value-title"><span class="i18n-ja">数字を隠さない</span><span class="i18n-en">Don't hide the numbers</span></h3>
-                        <p class="value-description">
+                    <div class="g-panel ab-value">
+                        <span class="ab-num" style="--c: var(--g-c3)">3</span>
+                        <h3><span class="i18n-ja">数字を隠さない</span><span class="i18n-en">Don't hide the numbers</span></h3>
+                        <p>
                             <span class="i18n-ja">毎月の収益を全部公開している。伸びた月も、前提が崩れて書き直した月も、同じ場所に置く。
                             都合のいいところだけ見せない。</span><span class="i18n-en">I publish all my revenue every month. The months that grew and the months I had to rewrite because my assumptions fell apart sit in the same place.
                             I don't show only the parts that make me look good.</span>
                         </p>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Achievements Section -->
-        <section class="section">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-label">Achievements</span>
-                    <h2 class="section-title"><span class="i18n-ja">実績・受賞歴</span><span class="i18n-en">Achievements and awards</span></h2>
-                </div>
+            <!-- 実績・受賞歴 -->
+            <section class="g-wrap">
+                <div class="g-sh"><h2><span class="i18n-ja">実績・受賞歴</span><span class="i18n-en">Achievements and awards</span></h2><small>Achievements</small></div>
 
-                <div class="achievements-list">
-                    <div class="achievement-item">
-                        <div class="achievement-icon">🎤</div>
-                        <div class="achievement-content">
+                <ul class="ab-awards">
+                    <li class="g-panel ab-award">
+                        <span class="ab-medal" style="--c: var(--g-c2)"><span class="ab-medal-txt">🎤</span></span>
+                        <div>
                             <h3><span class="i18n-ja">iOSDC Japan 2022 登壇</span><span class="i18n-en">Spoke at iOSDC Japan 2022</span></h3>
-                            <p><span class="i18n-ja">「動画だけじゃない！iOS
-                                15のピクチャ・イン・ピクチャを使って好きなUIを表示させよう！」プロポーザル採択・登壇<br>
-                                <a
-                                    href="https://fortee.jp/iosdc-japan-2022/proposal/7646ca37-310b-42d1-8764-d80dd12714fd"
-                                    target="_blank" rel="noopener noreferrer">発表詳細 →</a></span><span class="i18n-en">My proposal "Not just for video! Show any UI you like with Picture in Picture on iOS 15!" was accepted, and I gave the talk.<br>
-                                <a
-                                    href="https://fortee.jp/iosdc-japan-2022/proposal/7646ca37-310b-42d1-8764-d80dd12714fd"
-                                    target="_blank" rel="noopener noreferrer">Talk details →</a></span></p>
+                            <p><span class="i18n-ja">「動画だけじゃない！iOS 15のピクチャ・イン・ピクチャを使って好きなUIを表示させよう！」プロポーザル採択・登壇<br>
+                                <a href="https://fortee.jp/iosdc-japan-2022/proposal/7646ca37-310b-42d1-8764-d80dd12714fd" target="_blank" rel="noopener noreferrer">発表詳細 →</a></span><span class="i18n-en">My proposal "Not just for video! Show any UI you like with Picture in Picture on iOS 15!" was accepted, and I gave the talk.<br>
+                                <a href="https://fortee.jp/iosdc-japan-2022/proposal/7646ca37-310b-42d1-8764-d80dd12714fd" target="_blank" rel="noopener noreferrer">Talk details →</a></span></p>
                         </div>
-                    </div>
-
-                    <div class="achievement-item">
-                        <div class="achievement-icon">🏆</div>
-                        <div class="achievement-content">
+                    </li>
+                    <li class="g-panel ab-award">
+                        <span class="ab-medal" style="--c: var(--g-c3)"><img src="/assets/images/icon/always_on_timer.webp" alt="" width="292" height="292" loading="lazy"></span>
+                        <div>
                             <h3><span class="i18n-ja">神アプリグランプリ 受賞</span><span class="i18n-en">Won the Kami App Grand Prix</span></h3>
                             <p><span class="i18n-ja">「いつでもタイマー」がYouTuberマメさん主催の神アプリグランプリでグランプリ受賞</span><span class="i18n-en">AlwaysOnTimer won the grand prize at the Kami App Grand Prix, hosted by the YouTuber Mame</span></p>
                         </div>
-                    </div>
-
-                    <div class="achievement-item">
-                        <div class="achievement-icon">📱</div>
-                        <div class="achievement-content">
+                    </li>
+                    <li class="g-panel ab-award">
+                        <span class="ab-medal" style="--c: var(--g-c1)"><img src="/assets/images/icon/floating_notepad.webp" alt="" width="292" height="292" loading="lazy"></span>
+                        <div>
                             <h3><span class="i18n-ja">流れるメモ帳 16万DL突破</span><span class="i18n-en">Floating Notepad passed 160K downloads</span></h3>
                             <p><span class="i18n-ja">YouTuberマメさんに紹介され、ダウンロード数が急増</span><span class="i18n-en">Downloads surged after the YouTuber Mame featured it</span></p>
                         </div>
-                    </div>
-
-                    <div class="achievement-item">
-                        <div class="achievement-icon">💰</div>
-                        <div class="achievement-content">
+                    </li>
+                    <li class="g-panel ab-award">
+                        <span class="ab-medal" style="--c: var(--g-c5)"><span class="ab-medal-txt">¥</span></span>
+                        <div>
                             <h3><span class="i18n-ja">広告収益100万円達成</span><span class="i18n-en">Reached ¥1,000,000 in ad revenue</span></h3>
                             <p><span class="i18n-ja">2022年の個人開発アプリの広告収益が年間100万円を突破</span><span class="i18n-en">Ad revenue from my indie apps passed ¥1,000,000 for the year in 2022</span></p>
                         </div>
-                    </div>
-
-                    <div class="achievement-item">
-                        <div class="achievement-icon">🌟</div>
-                        <div class="achievement-content">
+                    </li>
+                    <li class="g-panel ab-award">
+                        <span class="ab-medal" style="--c: var(--g-c4)"><span class="ab-medal-txt">★</span></span>
+                        <div>
                             <h3><span class="i18n-ja">ユーザー評価 ★4.2</span><span class="i18n-en">User rating ★4.2</span></h3>
                             <p><span class="i18n-ja">全アプリ平均で高評価を維持</span><span class="i18n-en">A high rating kept up as the average across all my apps</span></p>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                    </li>
+                </ul>
+            </section>
 
-        <!-- Retired Apps Section -->
-        <section class="section section-alt">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-label">History</span>
-                    <h2 class="section-title"><span class="i18n-ja">開発の軌跡</span><span class="i18n-en">Development history</span></h2>
-                    <p class="section-description">
-                        <span class="i18n-ja">100個以上のアプリを開発し、多くの挑戦と学びがありました</span><span class="i18n-en">I've built over 100 apps, with plenty of challenges and lessons along the way</span>
-                    </p>
-                </div>
+            <!-- 開発の軌跡 -->
+            <section class="g-wrap">
+                <div class="g-sh"><h2><span class="i18n-ja">開発の軌跡</span><span class="i18n-en">Development history</span></h2><small>History</small></div>
+                <div class="g-bubble ab-lead"><span class="i18n-ja">100個以上のアプリを開発し、多くの挑戦と学びがありました</span><span class="i18n-en">I've built over 100 apps, with plenty of challenges and lessons along the way</span></div>
 
-                <div class="app-history-grid">
-                    <div class="history-card">
-                        <div class="history-card-icon">🤝</div>
-                        <h3 class="history-card-title"><span class="i18n-ja">企業への譲渡</span><span class="i18n-en">Sold to companies</span></h3>
-                        <p class="history-card-description">
+                <div class="ab-history">
+                    <div class="g-panel ab-hist">
+                        <div class="ab-hist-head">
+                            <h3><span class="i18n-ja">企業への譲渡</span><span class="i18n-en">Sold to companies</span></h3>
+                            <span class="ab-hist-count"><span class="i18n-ja">9個</span><span class="i18n-en">9 apps</span></span>
+                        </div>
+                        <p>
                             <span class="i18n-ja">9個のアプリを企業に事業譲渡。<br>
                             新しい環境で成長し続けています。</span><span class="i18n-en">I transferred 9 apps to companies.<br>
                             They keep growing in their new homes.</span>
                         </p>
-                        <div class="history-card-count"><span class="i18n-ja">9個</span><span class="i18n-en">9 apps</span></div>
+                        <div class="ab-handed" aria-hidden="true">
+                            <i class="g-cap g-cap--1"></i><i class="g-cap g-cap--2"></i><i class="g-cap g-cap--3"></i><i class="g-cap g-cap--4"></i><i class="g-cap g-cap--5"></i><i class="g-cap g-cap--6"></i><i class="g-cap g-cap--1"></i><i class="g-cap g-cap--2"></i><i class="g-cap g-cap--3"></i>
+                        </div>
                     </div>
-
-                    <div class="history-card">
-                        <div class="history-card-icon">📦</div>
-                        <h3 class="history-card-title"><span class="i18n-ja">サービス終了</span><span class="i18n-en">Discontinued</span></h3>
-                        <p class="history-card-description">
+                    <div class="g-panel ab-hist">
+                        <div class="ab-hist-head">
+                            <h3><span class="i18n-ja">サービス終了</span><span class="i18n-en">Discontinued</span></h3>
+                            <span class="ab-hist-count is-gray"><span class="i18n-ja">6個</span><span class="i18n-en">6 apps</span></span>
+                        </div>
+                        <p>
                             <span class="i18n-ja">6個のアプリがストアから削除。<br>
                             貴重な経験と学びを残してくれました。</span><span class="i18n-en">6 apps were removed from the store.<br>
                             They left me with valuable experience and lessons.</span>
                         </p>
-                        <div class="history-card-apps">
-                            <span class="history-app-tag"><span class="i18n-ja">星防衛</span><span class="i18n-en">Star Defense</span></span>
-                            <span class="history-app-tag">Fight Action</span>
-                            <span class="history-app-tag">SameColor</span>
-                            <span class="history-app-tag">MacAddressQuiz</span>
-                            <span class="history-app-tag"><span class="i18n-ja">パンケーキ屋さん</span><span class="i18n-en">Pancake Shop</span></span>
-                            <span class="history-app-tag"><span class="i18n-ja">足利工業大学スクールバス</span><span class="i18n-en">Ashikaga Institute of Technology School Bus</span></span>
-                        </div>
+                        <ul class="ab-gone">
+                            <li><i></i><span class="i18n-ja">星防衛</span><span class="i18n-en">Star Defense</span></li>
+                            <li><i></i>Fight Action</li>
+                            <li><i></i>SameColor</li>
+                            <li><i></i>MacAddressQuiz</li>
+                            <li><i></i><span class="i18n-ja">パンケーキ屋さん</span><span class="i18n-en">Pancake Shop</span></li>
+                            <li><i></i><span class="i18n-ja">足利工業大学スクールバス</span><span class="i18n-en">Ashikaga Institute of Technology School Bus</span></li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Message Section -->
-        <section class="section">
-            <div class="container">
-                <div class="message-section">
-                    <span class="section-label">Message</span>
-                    <h2 class="section-title"><span class="i18n-ja">メッセージ</span><span class="i18n-en">Message</span></h2>
+            <!-- メッセージ -->
+            <section class="g-wrap">
+                <div class="g-sh"><h2><span class="i18n-ja">メッセージ</span><span class="i18n-en">Message</span></h2><small>Message</small></div>
 
-                    <div class="message-content">
-                        <p class="message-text">
-                            <span class="i18n-ja">アプリを作り始めて10年になりました。<br>
-                            最初は自分のアイデアを形にしたかっただけです。</span><span class="i18n-en">It's been 10 years since I started making apps.<br>
-                            At first, I just wanted to turn my own ideas into something real.</span>
-                        </p>
-
-                        <p class="message-text">
-                            <span class="i18n-ja">そのうち、作るものがどんどん変な方向へ寄っていきました。
-                            人に説明すると、たいてい笑われます。</span><span class="i18n-en">Over time, what I made kept drifting in stranger directions.
-                            When I explain my apps to people, they usually laugh.</span>
-                        </p>
-
-                        <p class="message-text emphasis">
-                            <span class="i18n-ja">それでも、いちばん使われているのは<strong>うんちくん</strong>でした。</span><span class="i18n-en">And yet the one people use the most turned out to be <strong>UNCHIKUN</strong>.</span>
-                        </p>
-
-                        <p class="message-text">
-                            <span class="i18n-ja">21万人が入れて、いまも1万8千台で動いています。<br>
-                            真顔で作れば、くだらないものでも誰かの毎日に居座れる。10年でそれが分かりました。</span><span class="i18n-en">210,000 people installed it, and it's still running on 18,000 devices.<br>
-                            Build something silly with a straight face, and it can still earn a place in someone's everyday life. That's what 10 years taught me.</span>
-                        </p>
-
-                        <p class="message-text">
-                            <span class="i18n-ja">これからも、誰も作らないものを作ります。</span><span class="i18n-en">I'll keep making what nobody else will.</span>
-                        </p>
-
-                        <div class="message-signature">
-                            <img class="tk-char--sign" src="/assets/images/character-think.png" alt="" width="342" height="333">
-                            <p><span class="i18n-ja">2025年1月</span><span class="i18n-en">January 2025</span></p>
-                            <p class="signature-name"><span class="i18n-ja">續橋 涼</span><span class="i18n-en">Ryo Tsuzukihashi</span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Connect Section -->
-        <section class="section section-alt">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-label">Connect</span>
-                    <h2 class="section-title"><span class="i18n-ja">つながる</span><span class="i18n-en">Connect</span></h2>
-                    <p class="section-description">
-                        <span class="i18n-ja">開発の裏話やアップデート情報をシェアしています</span><span class="i18n-en">I share behind-the-scenes stories and updates from my work</span>
+                <div class="g-paper ab-letter">
+                    <span class="ab-paper-label"><span class="i18n-ja">持ち主より</span><span class="i18n-en">From the owner</span></span>
+                    <p>
+                        <span class="i18n-ja">アプリを作り始めて10年になりました。<br>
+                        最初は自分のアイデアを形にしたかっただけです。</span><span class="i18n-en">It's been 10 years since I started making apps.<br>
+                        At first, I just wanted to turn my own ideas into something real.</span>
                     </p>
+                    <p>
+                        <span class="i18n-ja">そのうち、作るものがどんどん変な方向へ寄っていきました。
+                        人に説明すると、たいてい笑われます。</span><span class="i18n-en">Over time, what I made kept drifting in stranger directions.
+                        When I explain my apps to people, they usually laugh.</span>
+                    </p>
+                    <p class="ab-letter-em">
+                        <span class="i18n-ja">それでも、いちばん使われているのは<strong>うんちくん</strong>でした。</span><span class="i18n-en">And yet the one people use the most turned out to be <strong>UNCHIKUN</strong>.</span>
+                    </p>
+                    <p>
+                        <span class="i18n-ja">21万人が入れて、いまも1万8千台で動いています。<br>
+                        真顔で作れば、くだらないものでも誰かの毎日に居座れる。10年でそれが分かりました。</span><span class="i18n-en">210,000 people installed it, and it's still running on 18,000 devices.<br>
+                        Build something silly with a straight face, and it can still earn a place in someone's everyday life. That's what 10 years taught me.</span>
+                    </p>
+                    <p>
+                        <span class="i18n-ja">これからも、誰も作らないものを作ります。</span><span class="i18n-en">I'll keep making what nobody else will.</span>
+                    </p>
+                    <div class="ab-sign">
+                        <img src="/assets/images/character-think.png" alt="" width="342" height="333" loading="lazy">
+                        <div>
+                            <p class="ab-sign-date"><span class="i18n-ja">2025年1月</span><span class="i18n-en">January 2025</span></p>
+                            <p class="ab-sign-name"><span class="i18n-ja">續橋 涼</span><span class="i18n-en">Ryo Tsuzukihashi</span></p>
+                        </div>
+                    </div>
                 </div>
+            </section>
 
-                <div class="connect-links">
-                    <a href="https://github.com/tsuzukihashi" target="_blank"
-                        rel="noopener noreferrer" class="connect-link">
-                        <div class="connect-icon">🐙</div>
-                        <div class="connect-info">
-                            <h3>GitHub</h3>
-                            <p><span class="i18n-ja">オープンソースプロジェクト</span><span class="i18n-en">Open source projects</span></p>
-                        </div>
-                    </a>
+            <!-- つながる -->
+            <section class="g-wrap">
+                <div class="g-sh"><h2><span class="i18n-ja">つながる</span><span class="i18n-en">Connect</span></h2><small>Connect</small></div>
+                <div class="g-bubble ab-lead"><span class="i18n-ja">開発の裏話やアップデート情報をシェアしています</span><span class="i18n-en">I share behind-the-scenes stories and updates from my work</span></div>
 
-                    <a href="https://twitter.com/tsuzuki817" target="_blank"
-                        rel="noopener noreferrer" class="connect-link">
-                        <div class="connect-icon">🐦</div>
-                        <div class="connect-info">
-                            <h3>Twitter</h3>
-                            <p><span class="i18n-ja">開発の日常をつぶやき</span><span class="i18n-en">Everyday dev life</span></p>
-                        </div>
+                <div class="ab-connect">
+                    <a href="https://github.com/tsuzukihashi" target="_blank" rel="noopener noreferrer" class="g-panel ab-link">
+                        <span class="ab-round"><img src="/assets/images/sns/github.png" alt="" width="22" height="22"></span>
+                        <span class="ab-link-text"><b>GitHub</b><small><span class="i18n-ja">オープンソースプロジェクト</span><span class="i18n-en">Open source projects</span></small></span>
                     </a>
-
-                    <a href="https://qiita.com/tsuzuki817" target="_blank"
-                        rel="noopener noreferrer" class="connect-link">
-                        <div class="connect-icon">📚</div>
-                        <div class="connect-info">
-                            <h3>Qiita</h3>
-                            <p><span class="i18n-ja">技術記事を投稿</span><span class="i18n-en">Technical articles</span></p>
-                        </div>
+                    <a href="https://twitter.com/tsuzuki817" target="_blank" rel="noopener noreferrer" class="g-panel ab-link">
+                        <span class="ab-round"><img src="/assets/images/sns/x.png" alt="" width="22" height="22"></span>
+                        <span class="ab-link-text"><b>X (Twitter)</b><small><span class="i18n-ja">開発の日常をつぶやき</span><span class="i18n-en">Everyday dev life</span></small></span>
                     </a>
-
-                    <a href="/contact/" class="connect-link">
-                        <div class="connect-icon">✉️</div>
-                        <div class="connect-info">
-                            <h3>Contact</h3>
-                            <p><span class="i18n-ja">お仕事のご相談はこちら</span><span class="i18n-en">Work inquiries go here</span></p>
-                        </div>
+                    <a href="https://qiita.com/tsuzuki817" target="_blank" rel="noopener noreferrer" class="g-panel ab-link">
+                        <span class="ab-round ab-round--q" aria-hidden="true">Q</span>
+                        <span class="ab-link-text"><b>Qiita</b><small><span class="i18n-ja">技術記事を投稿</span><span class="i18n-en">Technical articles</span></small></span>
                     </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer class="footer">
-            <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
-            <div class="footer-content">
-                <div class="footer-sns">
-                    <a href="https://x.com/tsuzuki817" target="_blank"
-                        rel="noopener noreferrer" class="sns-link"
-                        aria-label="X (Twitter)">
-                        <img src="/assets/images/sns/x.png" alt="X" class="sns-icon">
-                    </a>
-                    <a href="https://www.instagram.com/tsuzuki817/"
-                        target="_blank" rel="noopener noreferrer" class="sns-link"
-                        aria-label="Instagram">
-                        <img src="/assets/images/sns/instagram.png" alt="Instagram"
-                            class="sns-icon">
-                    </a>
-                    <a href="https://www.tiktok.com/@tsuzuki817" target="_blank"
-                        rel="noopener noreferrer" class="sns-link"
-                        aria-label="TikTok">
-                        <img src="/assets/images/sns/tiktok.png" alt="TikTok"
-                            class="sns-icon">
-                    </a>
-                    <a href="https://www.youtube.com/@tsuzuki817"
-                        target="_blank" rel="noopener noreferrer" class="sns-link"
-                        aria-label="YouTube">
-                        <img src="/assets/images/sns/youtube.png" alt="YouTube"
-                            class="sns-icon">
-                    </a>
-                    <a href="https://github.com/tsuzukihashi" target="_blank"
-                        rel="noopener noreferrer" class="sns-link"
-                        aria-label="GitHub">
-                        <img src="/assets/images/sns/github.png" alt="GitHub"
-                            class="sns-icon">
+                    <a href="/contact/" class="g-ypanel ab-link">
+                        <span class="ab-round ab-round--mail" aria-hidden="true">✉</span>
+                        <span class="ab-link-text"><b>Contact</b><small><span class="i18n-ja">お仕事のご相談はこちら</span><span class="i18n-en">Work inquiries go here</span></small></span>
                     </a>
                 </div>
+            </section>
+        </main>
 
-                <p class="footer-copyright">
-                    © 2026 Ryo Tsuzukihashi. All rights reserved.
-                </p>
-                <p class="footer-tagline">
-                    Seriously Silly since 2016.
-                </p>
-                <div class="footer-links">
-                    <a href="/legal/privacy-policy.html" class="footer-link"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
-                    <a href="/legal/terms-of-service.html" class="footer-link"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
-                    <a href="/legal/commercial-law.html" class="footer-link"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
-                    <a href="/legal/disclaimer.html" class="footer-link"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a>
-                </div>
+        <footer class="g-foot">
+            <img class="g-foot-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364" loading="lazy">
+            <div class="g-wrap">
+                <div><a href="/" class="g-foot-logo"><img src="/assets/images/logo/tsuzukit-wordmark-white.svg" alt="TsuzuKit" width="110" height="34"></a>
+                <p class="g-foot-tag"><span class="i18n-ja">誰も作らないものを、まじめに作る。</span><span class="i18n-en">Making what nobody else will, seriously.</span><br>Seriously Silly since 2016.</p></div>
+                <div class="g-foot-sns"><a href="https://x.com/tsuzuki817" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><img src="/assets/images/sns/x.png" alt="" width="22" height="22"></a><a href="https://www.instagram.com/tsuzuki817/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="/assets/images/sns/instagram.png" alt="" width="22" height="22"></a><a href="https://www.tiktok.com/@tsuzuki817" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><img src="/assets/images/sns/tiktok.png" alt="" width="22" height="22"></a><a href="https://www.youtube.com/@tsuzuki817" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><img src="/assets/images/sns/youtube.png" alt="" width="22" height="22"></a><a href="https://github.com/tsuzukihashi" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><img src="/assets/images/sns/github.png" alt="" width="22" height="22"></a></div>
+                <div class="g-foot-links"><a href="/contact/"><span class="i18n-ja">お問い合わせ</span><span class="i18n-en">Contact</span></a><a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a><a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a><a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a><a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a></div>
+                <p class="g-foot-copy">© 2026 Ryo Tsuzukihashi / TsuzuKit</p>
             </div>
         </footer>
-
-        <!-- JavaScript -->
-        <script>
-        // Navigation scroll effect
-        window.addEventListener('scroll', function() {
-            const nav = document.getElementById('nav');
-            if (window.scrollY > 50) {
-                nav.classList.add('scrolled');
-            } else {
-                nav.classList.remove('scrolled');
-            }
-        });
-
-        // Mobile menu toggle
-        const navToggle = document.getElementById('navToggle');
-        const navMenu = document.getElementById('navMenu');
-        navToggle.addEventListener('click', function() {
-            navToggle.classList.toggle('active');
-            navMenu.classList.toggle('active');
-        });
-        navMenu.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', () => {
-                navToggle.classList.remove('active');
-                navMenu.classList.remove('active');
-            });
-        });
-        </script>
     </body>
 </html>

@@ -103,21 +103,24 @@
             .platform-table th, .platform-table td { padding: 10px 8px; font-size: 13px; }
         }
     </style>
+    <!-- ガチャの見た目（assets/css/gacha.css・docs/gacha-design.md） -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700;800&family=RocknRoll+One&display=swap">
+    <link rel="stylesheet" href="/assets/css/gacha.css">
+    <link rel="stylesheet" href="/assets/css/g-post.css">
+    <script src="/assets/js/gacha.js" defer></script>
+    <!-- /ガチャの見た目 -->
 </head>
-<body>
+<body class="g">
     <!-- Navigation -->
-    <nav class="nav">
-        <div class="nav-container">
-            <a href="/" class="nav-logo">TsuzuKit</a>
-            <div class="nav-menu">
-                <a href="/" class="nav-link">Home</a>
-                <a href="/portfolio/" class="nav-link">Portfolio</a>
-                <a href="/blog/" class="nav-link">Blog</a>
-                <a href="/about/" class="nav-link">About</a>
-                <a href="/contact/" class="nav-link">Contact</a>
+    <header class="g-head" id="nav">
+            <div class="g-wrap">
+                <a href="/" class="g-logo"><img src="/assets/images/logo/tsuzukit-wordmark.svg" alt="TsuzuKit" width="116" height="36"></a>
+                <nav class="nav-menu" id="navMenu" aria-label="メニュー"><a href="/portfolio/" class="nav-link"><span class="i18n-ja">アプリ</span><span class="i18n-en">Apps</span></a><a href="/blog/" class="nav-link" aria-current="page"><span class="i18n-ja">読みもの</span><span class="i18n-en">Reading</span></a><a href="/about/" class="nav-link"><span class="i18n-ja">私について</span><span class="i18n-en">About</span></a><a href="/contact/" class="nav-link"><span class="i18n-ja">お問い合わせ</span><span class="i18n-en">Contact</span></a></nav>
+                <button type="button" class="g-menu" id="navToggle" aria-controls="navMenu" aria-expanded="false">MENU</button>
             </div>
-        </div>
-    </nav>
+        </header>
 
     <!-- Blog Post -->
     <article class="blog-post">
@@ -269,25 +272,15 @@
     </article>
 
     <!-- Footer -->
-    <footer class="footer">
-        <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
-                    <p class="footer-description"><span class="i18n-ja">誰も作らないものを、まじめに作る</span><span class="i18n-en">I make things nobody else would, and I make them seriously</span></p>
-                </div>
-                <div class="footer-nav">
-                    <a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
-                    <a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
-                    <a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
-                    <a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a>
-                </div>
+    <footer class="g-foot">
+            <img class="g-foot-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364" loading="lazy">
+            <div class="g-wrap">
+                <div><a href="/" class="g-foot-logo"><img src="/assets/images/logo/tsuzukit-wordmark-white.svg" alt="TsuzuKit" width="110" height="34"></a>
+                <p class="g-foot-tag"><span class="i18n-ja">誰も作らないものを、まじめに作る。</span><span class="i18n-en">Making what nobody else will, seriously.</span><br>Seriously Silly since 2016.</p></div>
+                <div class="g-foot-sns"><a href="https://x.com/tsuzuki817" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><img src="/assets/images/sns/x.png" alt="" width="22" height="22"></a><a href="https://www.instagram.com/tsuzuki817/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="/assets/images/sns/instagram.png" alt="" width="22" height="22"></a><a href="https://www.tiktok.com/@tsuzuki817" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><img src="/assets/images/sns/tiktok.png" alt="" width="22" height="22"></a><a href="https://www.youtube.com/@tsuzuki817" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><img src="/assets/images/sns/youtube.png" alt="" width="22" height="22"></a><a href="https://github.com/tsuzukihashi" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><img src="/assets/images/sns/github.png" alt="" width="22" height="22"></a></div>
+                <div class="g-foot-links"><a href="/contact/"><span class="i18n-ja">お問い合わせ</span><span class="i18n-en">Contact</span></a><a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a><a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a><a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a><a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a></div>
+                <p class="g-foot-copy">© 2026 Ryo Tsuzukihashi / TsuzuKit</p>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Ryo Tsuzukihashi. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+        </footer>
 </body>
 </html>

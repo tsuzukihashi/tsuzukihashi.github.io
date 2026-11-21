@@ -145,12 +145,13 @@ http://localhost:8899/docs/income-report/ogp-illust.html?bg=/assets/images/posts
 | `blog/index.html` | ①バナーの「最新の◯月は¥Xで達成率Y%」 ②シリーズセクションの posts-grid 先頭に新カード追加 |
 | `sitemap.xml` | 新記事URL追加＋ `/blog/` と `/blog/income-report/` の lastmod 更新 |
 
-### 7. デザイン規約（About準拠・絶対）
+### 7. デザイン規約（ガチャの見た目・2026-11-21〜）
 
-- 特設ページは about.css の既存クラス（about-hero / marquee / intro-stat / career-timeline）を使う
-- 白カード＋インク2px枠＋色違いベタ影（purple/cyan/pink/yellow）。金額は `--font-impact` イタリックのインク色
-- **虹グラデ（--grad-neon / --ab-grad）は使わない**。バーは紫単色、ピークだけ黄色
-- 旧紫 #667eea 系と旧記事（2025-app-releases等）はコピー元にしない
+- サイト全体はガチャの見た目（`docs/gacha-design.md`）。特設ページの見た目は `assets/css/g-blog.css`（`.gir`）、記事は `assets/css/g-post.css` が包む
+- 月ごとに直す所のクラス名（profile-status / goal-progress / marquee の MONTHLY / intro-stat / chart-bar と peak / career-timeline）は前のまま。中身だけ直す
+- 記事は `generate_articles.py` が `scripts/gacha_shell.py` のヘッダー・フッターを出す。手でヘッダーやフッターを書かない
+- 新しい号を出したら `python3 scripts/build_top_apps.py` を流す（トップの「おまけの冊子」に最新号が出る）
+- **虹グラデは使わない**。旧紫 #667eea 系と旧記事（2025-app-releases等）はコピー元にしない
 
 ### 8. 確認 → 報告
 
@@ -163,7 +164,7 @@ cd /Users/tsuzuki817/workspace/TsuzuKit/tsuzukit.com && python3 -m http.server 8
 - **コミット＆プッシュはユーザーの指示があってから**:
 
 ```bash
-git add blog/posts/income-report-*.html blog/income-report/index.html blog/index.html sitemap.xml \
+git add blog/posts/income-report-*.html blog/income-report/index.html blog/index.html index.html sitemap.xml \
   docs/income-report/*.json docs/income-report/fetch_asc_detail.rb docs/income-report/generate_articles.py \
   docs/income-report/ogp.html assets/images/ogp/income-report-*.png
 git commit -m "feat(blog): 月収1000万円計画 YYYY年M月号を追加"

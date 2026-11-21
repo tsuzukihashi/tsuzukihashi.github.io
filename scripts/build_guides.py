@@ -21,6 +21,8 @@ import re
 import sys
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.join(BASE_DIR, 'scripts'))
+import gacha_shell  # noqa: E402  ガチャの見た目のヘッダー・フッター・<head> の行（docs/gacha-design.md）
 GUIDES_DIR = os.path.join(BASE_DIR, 'docs', 'guides')
 POSTS_DIR = os.path.join(BASE_DIR, 'blog', 'posts')
 ILLUSTRATIONS = os.path.join(BASE_DIR, 'docs', 'blog-illustrations.json')
@@ -396,21 +398,11 @@ def render_page(guide):
     <script type="application/ld+json">
 {json_ld(g, image_url)}
     </script>
+    {gacha_shell.head_links(('/assets/css/g-post.css',))}
 </head>
-<body>
+<body class="g">
     <!-- Navigation -->
-    <nav class="nav">
-        <div class="nav-container">
-            <a href="/" class="nav-logo">TsuzuKit</a>
-            <div class="nav-menu">
-                <a href="/" class="nav-link">Home</a>
-                <a href="/portfolio/" class="nav-link">Portfolio</a>
-                <a href="/blog/" class="nav-link active">Blog</a>
-                <a href="/about/" class="nav-link">About</a>
-                <a href="/contact/" class="nav-link">Contact</a>
-            </div>
-        </div>
-    </nav>
+    {gacha_shell.header('/blog/')}
 
     <!-- Blog Post -->
     <article class="blog-post">
@@ -435,26 +427,7 @@ def render_page(guide):
     </article>
 
     <!-- Footer -->
-    <footer class="footer">
-        <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
-                    <p class="footer-description">{bi('誰も作らないものを、まじめに作る', 'I make things nobody else would, and I make them seriously')}</p>
-                </div>
-                <div class="footer-nav">
-                    <a href="/legal/privacy-policy.html">{bi('プライバシーポリシー', 'Privacy Policy')}</a>
-                    <a href="/legal/terms-of-service.html">{bi('利用規約', 'Terms of Service')}</a>
-                    <a href="/legal/commercial-law.html">{bi('特定商取引法', 'Specified Commercial Transactions Act')}</a>
-                    <a href="/legal/disclaimer.html">{bi('免責事項', 'Disclaimer')}</a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Ryo Tsuzukihashi. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+    {gacha_shell.footer()}
 </body>
 </html>
 '''
@@ -499,20 +472,15 @@ def update_blog_index(guides):
     start, end = text.index(CARDS_START) + len(CARDS_START), text.index(CARDS_END)
     n = len(guides)
     cards = '\n'.join(render_card(g) for g in ordered(guides)[:INDEX_CARDS])
+    # 見た目は assets/css/g-blog.css（.gb-guides）。data-shelf と data-total はブログ一覧の絞り込みが読む
     section = f'''
-    <section class="section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Guides</span>
-                <h2 class="section-title">{bi(HUB_TITLE['ja'], HUB_TITLE['en'])}</h2>
-                <p style="color: var(--color-secondary); font-weight: 300; margin-top: 0.5rem;">{bi(f'検索した悩みに、僕のアプリも入れて答える記事。ぜんぶで{n}本', f'Answers to the problems people search for, with my own apps in the mix. {n} guides in all')}</p>
-            </div>
-            <div class="posts-grid">
+            <section class="gb-shelf" data-shelf="tips" data-total="{n}">
+                <div class="g-sh"><h2>{bi('困りごとから選ぶ', 'Pick by Problem')}</h2><small>{bi(f'ぜんぶで{n}本', f'{n} guides')}</small><a href="{HUB_URL}" class="g-btn g-btn--y">{bi(f'{n}本ぜんぶ見る', f'See all {n} guides')}</a></div>
+                <p class="g-bubble gb-shelf-lead">{bi('検索した悩みに、僕のアプリも入れて答える記事。', 'Answers to the problems people search for, with my own apps in the mix.')}</p>
+                <div class="posts-grid gb-guides">
 {cards}
-            </div>
-            <p style="text-align: center; margin-top: 2rem;"><a href="{HUB_URL}" class="btn btn-primary">{bi(f'{n}本ぜんぶ見る', f'See all {n} guides')}</a></p>
-        </div>
-    </section>
+                </div>
+            </section>
     '''
     new = text[:start] + section + text[end:]
     if new != text:
@@ -549,11 +517,7 @@ def render_hub(guides):
     <meta property="og:url" content="{SITE}{HUB_URL}">
     <meta property="og:image" content="https://tsuzukit.com/assets/images/ogp/blog.png">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/tsuzukit.css">
-    <link rel="stylesheet" href="/assets/css/blog.css">
+    {gacha_shell.head_links(('/assets/css/g-blog.css',))}
 
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -578,66 +542,27 @@ def render_hub(guides):
 {ld}
     </script>
 </head>
-<body class="blog-index">
-    <nav class="nav" id="nav">
-        <div class="nav-container">
-            <a href="/" class="nav-logo">TsuzuKit</a>
-            <div class="nav-menu" id="navMenu">
-                <a href="/portfolio/" class="nav-link">Portfolio</a>
-                <a href="/about/" class="nav-link">About</a>
-                <a href="/blog/" class="nav-link active">Blog</a>
-                <a href="/contact/" class="nav-link">Contact</a>
-            </div>
-            <div class="nav-toggle" id="navToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
+<body class="g">
+    {gacha_shell.header('/blog/')}
 
-    <section class="section" style="padding-top: 140px;">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Guides</span>
-                <h1 class="section-title">{bi(HUB_TITLE['ja'], HUB_TITLE['en'])}</h1>
-                <p style="color: var(--color-secondary); margin-top: 0.75rem; max-width: 640px; margin-inline: auto; line-height: 1.8;">{bi(lead_ja, lead_en)}</p>
-            </div>
-            <div class="posts-grid">
+    <main class="g-main gb">
+        <div class="g-wrap">
+            <nav class="g-crumb" aria-label="パンくず" data-en-aria-label="Breadcrumb"><a href="/">{bi('トップ', 'Home')}</a><span>›</span><a href="/blog/">{bi('読みもの', 'Reading')}</a><span>›</span><b>{bi(HUB_TITLE['ja'], HUB_TITLE['en'])}</b></nav>
+            <section class="gb-hero">
+                <div>
+                    <h1 class="g-title g-title--m">{bi(HUB_TITLE['ja'], HUB_TITLE['en'])}</h1>
+                    <p class="g-bubble">{bi(lead_ja, lead_en)}</p>
+                </div>
+                <img class="gb-hero-char" src="/assets/images/character-think.png" alt="" width="342" height="333">
+            </section>
+            <div class="posts-grid gb-hub">
 {cards}
             </div>
-            <p style="text-align: center; margin-top: 3rem;"><a href="/blog/" class="btn btn-primary">{bi('ブログ一覧へ', 'Back to the blog')}</a></p>
+            <div class="gb-more"><a href="/blog/" class="g-btn g-btn--k g-btn--big">{bi('読みもの一覧へ', 'Back to the blog')}</a></div>
         </div>
-    </section>
+    </main>
 
-    <footer class="footer-peek-host" style="position: relative; background: var(--color-primary); color: var(--color-background); padding: 3rem 0; text-align: center;">
-        <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
-        <div class="container">
-            <p style="color: var(--color-background); opacity: 0.8; margin-bottom: 1rem;">&copy; 2026 Ryo Tsuzukihashi. All rights reserved.</p>
-            <div style="margin-top: 1.5rem;">
-                <a href="/legal/privacy-policy.html" style="color: var(--color-background); opacity: 0.6; margin: 0 1rem; text-decoration: none;">{bi('プライバシーポリシー', 'Privacy Policy')}</a>
-                <a href="/legal/terms-of-service.html" style="color: var(--color-background); opacity: 0.6; margin: 0 1rem; text-decoration: none;">{bi('利用規約', 'Terms of Service')}</a>
-                <a href="/legal/commercial-law.html" style="color: var(--color-background); opacity: 0.6; margin: 0 1rem; text-decoration: none;">{bi('特定商取引法', 'Specified Commercial Transactions Act')}</a>
-                <a href="/legal/disclaimer.html" style="color: var(--color-background); opacity: 0.6; margin: 0 1rem; text-decoration: none;">{bi('免責事項', 'Disclaimer')}</a>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        const navToggle = document.getElementById('navToggle');
-        const navMenu = document.getElementById('navMenu');
-        navToggle.addEventListener('click', function () {{
-            navToggle.classList.toggle('active');
-            navMenu.classList.toggle('active');
-        }});
-        // blog.css はカードを .animated が付くまで隠すので、見えたら付ける
-        const observer = new IntersectionObserver(function (entries) {{
-            entries.forEach(function (entry) {{
-                if (entry.isIntersecting) {{ entry.target.classList.add('animated'); observer.unobserve(entry.target); }}
-            }});
-        }}, {{ threshold: 0.1, rootMargin: '0px 0px -50px 0px' }});
-        document.querySelectorAll('.post-card').forEach(function (card) {{ observer.observe(card); }});
-    </script>
+    {gacha_shell.footer()}
 </body>
 </html>
 '''

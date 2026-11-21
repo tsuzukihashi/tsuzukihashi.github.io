@@ -74,7 +74,7 @@ python3 scripts/blog_illustration.py webp <key>
         <figure class="post-illustration"><img src="/assets/images/posts/<key>.webp" width="1200" height="800" alt="日本語" data-en-alt="English" fetchpriority="high"></figure>
 ```
 
-  スタイルは `assets/css/style.css` の `.post-illustration`。
+  スタイルは `assets/css/style.css` の `.post-illustration`。ガチャの見た目では `assets/css/g-post.css` が枠と影を付ける。
 
 - **ブログ一覧（`blog/index.html`）のカード**: `post-card-image` をこの形にする
 

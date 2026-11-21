@@ -9,6 +9,7 @@
 import html
 import json
 import os
+import sys
 
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(REPO, "portfolio", "ranking", "index.html")
@@ -74,38 +75,50 @@ def units(n):
 apps = DATA["apps"]
 top = apps[0]["units"]
 
-medal_shadow = ["var(--rk-purple)", "var(--rk-cyan)", "var(--rk-pink)"]
+# 見た目はガチャ（assets/css/gacha.css・g-apps.css、docs/gacha-design.md）。ヘッダーとフッターは scripts/gacha_shell.py
+sys.path.insert(0, os.path.join(REPO, "scripts"))
+import gacha_shell as gs  # noqa: E402
 
-podium = []
-for i, a in enumerate(apps[:3]):
-    icon = (f'<img src="{esc(a["icon_url"])}" alt="" loading="lazy">'
-            if a["icon_url"] else '<span class="rk-noicon">—</span>')
-    link_open = f'<a class="rk-podium" href="{esc(a["app_store_url"])}" target="_blank" rel="noopener">' if a["app_store_url"] else '<div class="rk-podium">'
-    link_close = "</a>" if a["app_store_url"] else "</div>"
-    podium.append(f'''                {link_open}
-                    <div class="rk-podium-rank">{a["rank"]}</div>
-                    <div class="rk-podium-icon">{icon}</div>
-                    <h3 class="rk-podium-name">{app_name(a)}</h3>
-                    <div class="rk-podium-units">{units(a["units"])}</div>
-                    <div class="rk-podium-label"><span class="i18n-ja">ダウンロード</span><span class="i18n-en">Downloads</span></div>
-                {link_close}''')
+CAPS = ["var(--g-c3)", "var(--g-c1)", "var(--g-c6)"]
+
+
+def bi(ja, en):
+    return gs.bi(ja, en)
+
+
+def podium_card(i, a):
+    icon = (f'<img src="{esc(a["icon_url"])}" alt="" width="512" height="512" loading="lazy">'
+            if a["icon_url"] else '<span class="ga-rk-noicon">—</span>')
+    tag, close = ((f'<a class="g-panel ga-podium ga-podium--{a["rank"]}" href="{esc(a["app_store_url"])}" target="_blank" rel="noopener">', "</a>")
+                  if a["app_store_url"] else (f'<div class="g-panel ga-podium ga-podium--{a["rank"]}">', "</div>"))
+    return f'''                {tag}
+                    <span class="ga-podium-rank" style="--c:{CAPS[i]}"><span>{a["rank"]}</span></span>
+                    <div class="ga-podium-icon">{icon}</div>
+                    <h3>{app_name(a)}</h3>
+                    <div class="ga-podium-units">{units(a["units"])}</div>
+                    <div class="ga-podium-label">{bi("ダウンロード", "Downloads")}</div>
+                {close}'''
+
+
+top3 = apps[:3]
+# PC では 2位・1位・3位の順に並べて、1位を真ん中に置く（スマホでは1位が先頭。g-apps.css）
+podium = [podium_card(i, a) for i, a in [(1, top3[1]), (0, top3[0]), (2, top3[2])]]
 
 rows = []
 for a in apps[3:]:
     pct = max(a["units"] / top * 100, 0.6)
-    icon = (f'<img src="{esc(a["icon_url"])}" alt="" loading="lazy">'
-            if a["icon_url"] else '<span class="rk-noicon"><span class="i18n-ja">終</span><span class="i18n-en">—</span></span>')
-    ended = "" if a["icon_url"] else '<span class="rk-ended"><span class="i18n-ja">配信終了</span><span class="i18n-en">Discontinued</span></span>'
-    name = app_name(a)
-    inner = f'''<span class="rk-rank">{a["rank"]}</span>
-                    <span class="rk-icon">{icon}</span>
-                    <span class="rk-name">{name}{ended}</span>
-                    <span class="rk-bar"><i style="width: {pct:.1f}%;"></i></span>
-                    <span class="rk-units">{units(a["units"])}</span>'''
+    icon = (f'<img src="{esc(a["icon_url"])}" alt="" width="512" height="512" loading="lazy">'
+            if a["icon_url"] else f'<span class="ga-rk-noicon">{bi("終", "—")}</span>')
+    ended = "" if a["icon_url"] else f'<span class="ga-rk-ended">{bi("配信終了", "Discontinued")}</span>'
+    inner = f'''<span class="ga-rk-rank">{a["rank"]}</span>
+                    <span class="ga-rk-icon">{icon}</span>
+                    <span class="ga-rk-name">{app_name(a)}{ended}</span>
+                    <span class="ga-rk-bar"><i style="width: {pct:.1f}%;"></i></span>
+                    <span class="ga-rk-units">{units(a["units"])}</span>'''
     if a["app_store_url"]:
-        rows.append(f'                <a class="rk-row" href="{esc(a["app_store_url"])}" target="_blank" rel="noopener">\n                    {inner}\n                </a>')
+        rows.append(f'                <a class="ga-rk-row" href="{esc(a["app_store_url"])}" target="_blank" rel="noopener">\n                    {inner}\n                </a>')
     else:
-        rows.append(f'                <div class="rk-row rk-row--ended">\n                    {inner}\n                </div>')
+        rows.append(f'                <div class="ga-rk-row ga-rk-row--ended">\n                    {inner}\n                </div>')
 
 AND = DATA.get("android") or {}
 android_rows = []
@@ -113,29 +126,32 @@ if AND:
     a_top = max(r["installs"] for r in AND["apps"])
     for a in AND["apps"]:
         pct = max(a["installs"] / a_top * 100, 0.6)
-        icon = (f'<img src="{esc(a["icon_url"])}" alt="" loading="lazy">'
-                if a["icon_url"] else '<span class="rk-noicon">—</span>')
-        android_rows.append(f'''                <a class="rk-row" href="{esc(a["play_url"])}" target="_blank" rel="noopener">
-                    <span class="rk-rank">{a["rank"]}</span>
-                    <span class="rk-icon">{icon}</span>
-                    <span class="rk-name">{app_name(a)}<span class="rk-sub"><span class="i18n-ja">いま{a["active_devices"]:,}台</span><span class="i18n-en">{a["active_devices"]:,} active devices</span></span></span>
-                    <span class="rk-bar"><i class="rk-bar--and" style="width: {pct:.1f}%;"></i></span>
-                    <span class="rk-units">{units(a["installs"])}</span>
+        icon = (f'<img src="{esc(a["icon_url"])}" alt="" width="512" height="512" loading="lazy">'
+                if a["icon_url"] else '<span class="ga-rk-noicon">—</span>')
+        android_rows.append(f'''                <a class="ga-rk-row" href="{esc(a["play_url"])}" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">{a["rank"]}</span>
+                    <span class="ga-rk-icon">{icon}</span>
+                    <span class="ga-rk-name">{app_name(a)}<span class="ga-rk-sub">{bi(f"いま{a['active_devices']:,}台", f"{a['active_devices']:,} active devices")}</span></span>
+                    <span class="ga-rk-bar ga-rk-bar--and"><i style="width: {pct:.1f}%;"></i></span>
+                    <span class="ga-rk-units">{units(a["installs"])}</span>
                 </a>''')
 
 ANDROID_SECTION = ""
 if AND:
     ANDROID_SECTION = f'''
-                <h2 class="rk-subtitle">Google Play</h2>
-                <p class="rk-subnote i18n-ja">
+                <div class="g-sh">
+                    <h2>Google Play</h2>
+                    <small>{bi(f"Android {AND['app_count']}本", f"{AND['app_count']} Android apps")}</small>
+                </div>
+                <p class="ga-rk-sublead i18n-ja">
                     Androidにも{AND["app_count"]}本出しています。こちらも配信開始からの<strong>累計インストール数</strong>で、
                     合計{AND["total_installs"]:,}。いま動いている端末は{AND["total_active"]:,}台です。
                 </p>
-                <p class="rk-subnote i18n-en">
+                <p class="ga-rk-sublead i18n-en">
                     I've also released {AND["app_count"]} apps on Android. These are <strong>total installs</strong> since launch as well,
                     {AND["total_installs"]:,} in all. {AND["total_active"]:,} devices are running them right now.
                 </p>
-                <div class="rk-list rk-list--android">
+                <div class="g-panel ga-rk-list">
 {chr(10).join(android_rows)}
                 </div>
 '''
@@ -169,16 +185,6 @@ HTML = f'''<!DOCTYPE html>
         <meta name="twitter:description" content="{DATA['app_count']}本のアプリを累計ダウンロード数の多い順に。">
         <meta name="twitter:image" content="https://tsuzukit.com/assets/images/ogp/portfolio.png">
 
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Anton&family=Saira+Condensed:wght@600;700;800&family=Noto+Sans+JP:wght@400;500;700;900&display=swap"
-            rel="stylesheet">
-
-        <!-- CSS -->
-        <link rel="stylesheet" href="../../assets/css/tsuzukit.css">
-
         <!-- Favicon -->
         <link rel="icon" type="image/x-icon" href="/favicon.ico">
         <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -200,218 +206,63 @@ HTML = f'''<!DOCTYPE html>
         <!-- Google AdSense（持ち主の確認だけ。このページに広告は出さない。docs/ads.md） -->
         <meta name="google-adsense-account" content="ca-pub-8240751277462688">
 
-        <style>
-            :root {{
-                --rk-bg: #f6f2ea;
-                --rk-ink: #14110c;
-                --rk-muted: #57514a;
-                --rk-purple: #8b3df5;
-                --rk-cyan: #0bb4c4;
-                --rk-pink: #ff3d7f;
-                --rk-yellow: #ffc107;
-            }}
-            .rk-page {{ background: var(--rk-bg); color: var(--rk-ink); }}
-            .rk-wrap {{ max-width: 960px; margin: 0 auto; padding: 0 20px; }}
-
-            .rk-hero {{ padding: 120px 0 56px; text-align: center; }}
-            .rk-badge {{
-                display: inline-block; font-family: 'Saira Condensed', sans-serif; font-style: italic;
-                font-weight: 800; letter-spacing: 0.16em; font-size: 0.85rem; color: var(--rk-purple);
-                margin-bottom: 14px;
-            }}
-            .rk-title {{
-                font-family: 'Anton', 'Noto Sans JP', sans-serif; font-style: italic;
-                font-size: clamp(2.4rem, 6vw, 4rem); line-height: 1.05; margin-bottom: 18px;
-            }}
-            .rk-lead {{ color: var(--rk-muted); font-size: 1rem; line-height: 1.8; }}
-            .rk-total {{
-                display: inline-block; margin-top: 26px; background: #fff;
-                border: 2px solid var(--rk-ink); border-radius: 18px; box-shadow: 8px 8px 0 var(--rk-ink);
-                padding: 18px 30px;
-            }}
-            .rk-total b {{
-                display: block; font-family: 'Anton', sans-serif; font-style: italic;
-                font-size: 2.6rem; line-height: 1;
-            }}
-            .rk-total span {{
-                font-family: 'Saira Condensed', sans-serif; font-style: italic; font-weight: 700;
-                letter-spacing: 0.1em; font-size: 0.8rem; color: var(--rk-muted); text-transform: uppercase;
-            }}
-
-            .rk-total em {{ display: block; margin-top: 8px; font-style: normal; font-size: 0.78rem; color: var(--rk-muted); }}
-            .rk-sub {{ display: block; font-size: 0.72rem; color: var(--rk-muted); margin-top: 2px; }}
-            .rk-podiums {{ display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin: 10px 0 50px; position: relative; }}
-            /* 1位の表彰台の裏から覗いているやつ */
-            .rk-podium-char {{
-                position: absolute; left: 6px; bottom: 100%; width: 94px; height: auto;
-                display: block; pointer-events: none;
-            }}
-            .rk-podium {{
-                background: #fff; border: 2px solid var(--rk-ink); border-radius: 20px;
-                padding: 26px 18px 22px; text-align: center; text-decoration: none; color: inherit;
-                position: relative; display: block; transition: transform 0.2s ease;
-            }}
-            .rk-podium:nth-child(1) {{ box-shadow: 9px 9px 0 var(--rk-ink); }}
-            .rk-podium:nth-child(2) {{ box-shadow: 9px 9px 0 var(--rk-ink); }}
-            .rk-podium:nth-child(3) {{ box-shadow: 9px 9px 0 var(--rk-ink); }}
-            .rk-podium:hover {{ transform: translateY(-4px); }}
-            .rk-podium-rank {{
-                font-family: 'Anton', sans-serif; font-style: italic; font-size: 2.2rem;
-                line-height: 1; color: var(--rk-ink); margin-bottom: 12px;
-            }}
-            .rk-podium-icon img {{ width: 84px; height: 84px; border-radius: 20px; border: 2px solid var(--rk-ink); display: block; margin: 0 auto 14px; }}
-            .rk-podium-name {{ font-size: 0.95rem; font-weight: 700; line-height: 1.5; margin-bottom: 10px; min-height: 2.9em; }}
-            .rk-podium-units {{ font-family: 'Anton', sans-serif; font-style: italic; font-size: 1.9rem; line-height: 1; }}
-            .rk-podium-label {{
-                font-family: 'Saira Condensed', sans-serif; font-style: italic; font-weight: 700;
-                font-size: 0.72rem; letter-spacing: 0.1em; color: var(--rk-muted);
-                text-transform: uppercase; margin-top: 6px;
-            }}
-
-            .rk-list {{
-                background: #fff; border: 2px solid var(--rk-ink); border-radius: 20px;
-                box-shadow: 8px 8px 0 var(--rk-ink); overflow: hidden;
-            }}
-            .rk-row {{
-                display: grid; grid-template-columns: 44px 44px minmax(0, 1fr) 150px 84px;
-                align-items: center; gap: 14px; padding: 12px 20px;
-                border-bottom: 1px solid rgba(20, 17, 12, 0.1);
-                text-decoration: none; color: inherit;
-            }}
-            .rk-row:last-child {{ border-bottom: none; }}
-            .rk-row:hover {{ background: #faf7f1; }}
-            .rk-row--ended {{ color: var(--rk-muted); }}
-            .rk-rank {{ font-family: 'Anton', sans-serif; font-style: italic; font-size: 1.15rem; text-align: right; }}
-            .rk-icon img {{ width: 40px; height: 40px; border-radius: 10px; border: 1px solid rgba(20,17,12,0.16); display: block; }}
-            .rk-noicon {{
-                display: flex; align-items: center; justify-content: center; width: 40px; height: 40px;
-                border-radius: 10px; border: 1px dashed rgba(20,17,12,0.3); font-size: 0.75rem; color: var(--rk-muted);
-            }}
-            .rk-name {{ font-size: 0.92rem; font-weight: 500; line-height: 1.45; overflow-wrap: anywhere; }}
-            .rk-ended {{
-                display: inline-block; margin-left: 8px; font-size: 0.68rem; padding: 1px 7px;
-                border: 1px solid rgba(20,17,12,0.25); border-radius: 999px; color: var(--rk-muted); white-space: nowrap;
-            }}
-            .rk-bar {{ display: block; height: 10px; background: rgba(20,17,12,0.08); border-radius: 999px; overflow: hidden; }}
-            .rk-bar i {{ display: block; height: 100%; background: var(--rk-ink); border-radius: 999px; }}
-            .rk-units {{ font-family: 'Saira Condensed', sans-serif; font-style: italic; font-weight: 800; font-size: 1rem; text-align: right; white-space: nowrap; }}
-
-            .rk-subtitle {{
-                font-family: 'Anton', 'Noto Sans JP', sans-serif; font-style: italic;
-                font-size: clamp(1.6rem, 4vw, 2.2rem); margin: 56px 0 10px;
-            }}
-            .rk-subnote {{ color: var(--rk-muted); font-size: 0.9rem; line-height: 1.8; margin-bottom: 20px; }}
-            .rk-subnote strong {{ color: var(--rk-ink); }}
-            .rk-list--android {{ box-shadow: 8px 8px 0 var(--rk-ink); }}
-            .rk-bar--and {{ background: var(--rk-cyan) !important; }}
-            .rk-note {{ margin: 28px 0 90px; font-size: 0.8rem; line-height: 1.9; color: var(--rk-muted); }}
-            .rk-back {{ display: inline-block; margin-top: 18px; font-weight: 700; color: var(--rk-purple); text-decoration: none; }}
-            .rk-back:hover {{ text-decoration: underline; }}
-
-            @media (max-width: 720px) {{
-                .rk-hero {{ padding: 100px 0 40px; }}
-                .rk-podiums {{ grid-template-columns: 1fr; gap: 16px; margin-bottom: 36px; }}
-                .rk-podium-name {{ min-height: 0; }}
-                .rk-row {{ grid-template-columns: 34px 36px minmax(0, 1fr) 68px; gap: 10px; padding: 11px 14px; }}
-                .rk-bar {{ display: none; }}
-                .rk-icon img, .rk-noicon {{ width: 36px; height: 36px; }}
-                .rk-name {{ font-size: 0.86rem; }}
-                .rk-units {{ font-size: 0.9rem; }}
-            }}
-        </style>
+        {gs.head_links(("/assets/css/g-apps.css",)).replace(chr(10) + "    ", chr(10) + "        ")}
     </head>
-    <body class="rk-page">
-        <!-- Navigation -->
-        <nav class="nav" id="nav">
-            <div class="nav-container">
-                <a href="/" class="nav-logo">TsuzuKit</a>
-                <div class="nav-menu" id="navMenu">
-                    <a href="/portfolio/" class="nav-link active">Portfolio</a>
-                    <a href="/about/" class="nav-link">About</a>
-                    <a href="/blog/" class="nav-link">Blog</a>
-                    <a href="/contact/" class="nav-link">Contact</a>
-                </div>
-                <div class="nav-toggle" id="navToggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-        </nav>
+    <body class="g">
+        {gs.header("/portfolio/")}
 
-        <main>
-            <section class="rk-hero">
-                <div class="rk-wrap">
-                    <span class="rk-badge">Download Ranking</span>
-                    <h1 class="rk-title i18n-ja">どれが一番<br>使われているか</h1>
-                    <h1 class="rk-title i18n-en">Which ones<br>get used the most</h1>
-                    <p class="rk-lead i18n-ja">
-                        App Storeに出した{DATA['app_count']}本を、配信開始から今日までの累計ダウンロード数で並べました。<br>
-                        Google Playの分も下にまとめています。
-                    </p>
-                    <p class="rk-lead i18n-en">
-                        Here are the {DATA['app_count']} apps I've released on the App Store, ranked by total downloads from launch to today.<br>
-                        The Google Play numbers are further down.
-                    </p>
-                    <div class="rk-total">
-                        <b>{DATA['grand_total']:,}</b>
+        <main class="g-main">
+            <div class="g-wrap">
+                <nav class="g-crumb" aria-label="パンくず" data-en-aria-label="Breadcrumb"><a href="/">{bi("トップ", "Home")}</a><span>＞</span><a href="/portfolio/">{bi("ラインナップ", "Lineup")}</a><span>＞</span><b>{bi("ダウンロードランキング", "Download Ranking")}</b></nav>
+
+                <section class="ga-rk-hero">
+                    <div>
+                        <h1 class="g-title i18n-ja">どれが一番<br>使われているか</h1>
+                        <h1 class="g-title i18n-en">Which ones<br>get used the most</h1>
+                        <p class="g-bubble i18n-ja">
+                            App Storeに出した{DATA['app_count']}本を、配信開始から今日までの累計ダウンロード数で並べました。<br>
+                            Google Playの分も下にまとめています。
+                        </p>
+                        <p class="g-bubble i18n-en">
+                            Here are the {DATA['app_count']} apps I've released on the App Store, ranked by total downloads from launch to today.<br>
+                            The Google Play numbers are further down.
+                        </p>
+                    </div>
+                    <div class="g-ypanel ga-rk-total">
                         <span>Total Downloads</span>
+                        <b>{DATA['grand_total']:,}</b>
                         <em>App Store {DATA['total_units']:,} ＋ Google Play {DATA['android']['total_installs']:,}</em>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <div class="rk-wrap">
-                <div class="rk-podiums">
-                <img class="rk-podium-char" src="/assets/images/character-cheer.png" alt="" width="318" height="315">
+                <div class="ga-podiums">
+                    <img class="ga-podium-char" src="/assets/images/character-cheer.png" alt="" width="318" height="315">
 {chr(10).join(podium)}
                 </div>
 
-                <div class="rk-list">
+                <div class="g-panel ga-rk-list">
 {chr(10).join(rows)}
                 </div>
 {ANDROID_SECTION}
-
-                <p class="rk-note i18n-ja">
-                    App Store Connectのトレンド（ユニット数・全期間）から取っています。Appleの表示が3桁に丸められているため、
-                    1万を超えるものは概数です。アプリ内課金の販売数と、他の開発者名義で預かっているアプリは含めていません。
-                    アイコンのない行は配信を終了したアプリです。Google Playの数字はPlay Consoleのインストールレポートを全期間ぶん合算したものです。
-                    最終更新は{DATA['generated_at']}。
-                    <br>
-                    <a class="rk-back" href="/portfolio/">&larr; ポートフォリオに戻る</a>
-                </p>
-                <p class="rk-note i18n-en">
-                    These figures come from App Store Connect Trends (units, all time). Apple rounds what it shows to three digits,
-                    so anything over 10,000 is approximate. In-app purchase sales and apps I look after under other developers' names are not included.
-                    Rows without an icon are apps that are no longer available. The Google Play figures are the Play Console install reports added up over all time.
-                    Last updated {DATA['generated_at']}.
-                    <br>
-                    <a class="rk-back" href="/portfolio/">&larr; Back to the portfolio</a>
-                </p>
+                <div class="g-paper ga-rk-note">
+                    <p class="i18n-ja">
+                        App Store Connectのトレンド（ユニット数・全期間）から取っています。Appleの表示が3桁に丸められているため、
+                        1万を超えるものは概数です。アプリ内課金の販売数と、他の開発者名義で預かっているアプリは含めていません。
+                        アイコンのない行は配信を終了したアプリです。Google Playの数字はPlay Consoleのインストールレポートを全期間ぶん合算したものです。
+                        最終更新は{DATA['generated_at']}。
+                    </p>
+                    <p class="i18n-en">
+                        These figures come from App Store Connect Trends (units, all time). Apple rounds what it shows to three digits,
+                        so anything over 10,000 is approximate. In-app purchase sales and apps I look after under other developers' names are not included.
+                        Rows without an icon are apps that are no longer available. The Google Play figures are the Play Console install reports added up over all time.
+                        Last updated {DATA['generated_at']}.
+                    </p>
+                    <a class="g-btn" href="/portfolio/">&larr; {bi("ポートフォリオに戻る", "Back to the portfolio")}</a>
+                </div>
             </div>
         </main>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
-            <div class="footer-container">
-                <div class="footer-content">
-                    <div class="footer-brand">
-                        <a href="/" class="footer-logo">TsuzuKit</a>
-                        <p class="footer-tagline">Seriously Silly</p>
-                    </div>
-                    <div class="footer-links">
-                        <a href="/portfolio/">Portfolio</a>
-                        <a href="/about/">About</a>
-                        <a href="/blog/">Blog</a>
-                        <a href="/contact/">Contact</a>
-                    </div>
-                </div>
-                <div class="footer-bottom">
-                    <p>&copy; 2026 Ryo Tsuzukihashi. All rights reserved.</p>
-                </div>
-            </div>
-        </footer>
+        {gs.footer()}
     </body>
 </html>
 '''

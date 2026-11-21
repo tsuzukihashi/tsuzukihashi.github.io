@@ -10,9 +10,13 @@ import json
 import os
 import re
 
+import sys
+
 from months_en import MONTHS_EN
 
 REPO = "/Users/tsuzuki817/workspace/TsuzuKit/tsuzukit.com"
+sys.path.insert(0, os.path.join(REPO, "scripts"))
+import gacha_shell  # noqa: E402  ガチャの見た目のヘッダー・フッター・<head> の行（docs/gacha-design.md）
 DATA_DIR = os.path.dirname(os.path.abspath(__file__))
 GOAL = 10_000_000
 
@@ -632,6 +636,7 @@ HEAD_TEMPLATE = """<!DOCTYPE html>
             .platform-table th, .platform-table td {{ padding: 10px 8px; font-size: 13px; }}
         }}
     </style>
+    {shell_head}
 </head>
 """
 
@@ -764,21 +769,11 @@ def build_article(i, m):
     else:
         ogp = "/assets/images/ogp/blog.png"
     html = HEAD_TEMPLATE.format(title=title, desc=m["desc"], url=url, ogp=ogp,
-                                title_en=html_lib.escape(title_en), desc_en=html_lib.escape(en_usd(en["desc"], ym)))
-    html += f"""<body>
+                                title_en=html_lib.escape(title_en), desc_en=html_lib.escape(en_usd(en["desc"], ym)),
+                                shell_head=gacha_shell.head_links(("/assets/css/g-post.css",)))
+    html += f"""<body class="g">
     <!-- Navigation -->
-    <nav class="nav">
-        <div class="nav-container">
-            <a href="/" class="nav-logo">TsuzuKit</a>
-            <div class="nav-menu">
-                <a href="/" class="nav-link">Home</a>
-                <a href="/portfolio/" class="nav-link">Portfolio</a>
-                <a href="/blog/" class="nav-link">Blog</a>
-                <a href="/about/" class="nav-link">About</a>
-                <a href="/contact/" class="nav-link">Contact</a>
-            </div>
-        </div>
-    </nav>
+    {gacha_shell.header("/blog/")}
 
     <!-- Blog Post -->
     <article class="blog-post">
@@ -862,26 +857,7 @@ def build_article(i, m):
     </article>
 
     <!-- Footer -->
-    <footer class="footer">
-        <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3 class="footer-logo">Ryo Tsuzukihashi</h3>
-                    <p class="footer-description">{_t("誰も作らないものを、まじめに作る", "I make things nobody else would, and I make them seriously")}</p>
-                </div>
-                <div class="footer-nav">
-                    <a href="/legal/privacy-policy.html">{_t("プライバシーポリシー", "Privacy Policy")}</a>
-                    <a href="/legal/terms-of-service.html">{_t("利用規約", "Terms of Service")}</a>
-                    <a href="/legal/commercial-law.html">{_t("特定商取引法", "Specified Commercial Transactions Act")}</a>
-                    <a href="/legal/disclaimer.html">{_t("免責事項", "Disclaimer")}</a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Ryo Tsuzukihashi. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+    {gacha_shell.footer()}
 </body>
 </html>
 """

@@ -1,25 +1,39 @@
-"""トップページの「アプリを探す」と信頼の数字を、アプリのデータから作り直す。
+"""トップページ（ガチャ）の、アプリのデータから作る部分を作り直す。
 
     python3 scripts/build_top_apps.py
 
 読むもの
-- assets/data/apps.json      … 名前・アイコン・評価・スクショ・ストアのURL（ポートフォリオ更新で作る）
+- assets/data/apps.json      … 名前・アイコン・評価・ダウンロード数・スクショ・ストアのURL（ポートフォリオ更新で作る）
 - assets/data/apps_en.json   … 英語の名前・ジャンル・英語のスクショ
 - assets/data/app_urls.json  … ASC のサポートURLとLP（scripts/fetch_app_urls.rb）
 - assets/data/lp_shots.json  … LP の最初の画面を撮った画像（scripts/capture_lp_shots.mjs）
+- blog/index.html            … 「おまけの冊子」に出す新しい読みもの（上から順に）
 
 index.html の次の印のあいだを書きかえる
-- <!-- TOP-TRUST:START --> … <!-- TOP-TRUST:END -->   公開中の本数と評価
-- <!-- TOP-APPS:START --> … <!-- TOP-APPS:END -->     アイコンの一覧とシート用のデータ
+- TOP-TRUST  … 公開中の本数と評価
+- TOP-WON    … 「出た！」の札に最初に出すアプリ（いちばんダウンロードの多いもの。押すと回せる）
+- TOP-GLOBE  … 機械の玉の中のカプセル
+- TOP-ODDS   … 排出のめやす（レア度ごとの本数）
+- TOP-APPS   … ラインナップ（レア度ごとの段。押すとシートが出る）
+- TOP-FRESH  … 新しく入ったカプセル
+- TOP-BOOKS  … おまけの冊子
+- TOP-APPS-DATA … シートと回す処理が読むデータ
+
+レア度はダウンロード数（SSR 10万以上・SR 1万以上・R 1000以上・N それ以外）。docs/gacha-design.md
 """
 import html
 import json
+import math
 import pathlib
 import re
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 INDEX = ROOT / 'index.html'
-FIRST_SHOWN = 12  # 検索していないときに見せる本数（ダウンロードの多い順）
+BLOG = ROOT / 'blog' / 'index.html'
+GLOBE_N = 22      # 機械の玉に入れる数
+TIER_SHOWN = 8    # スマホで、検索していないときに段ごとに見せる数
+FRESH_N = 6
+e = html.escape
 
 
 def load(name, default):
@@ -49,9 +63,33 @@ def clean_url(u):
     return u or None
 
 
-apps = sorted(apps, key=lambda x: -(x.get('download_count') or 0))
+def rarity(dl):
+    if dl >= 100000:
+        return 'SSR'
+    if dl >= 10000:
+        return 'SR'
+    if dl >= 1000:
+        return 'R'
+    return 'N'
+
+
+def dl_text(dl):
+    """16.9万 / 169K のような、ざっくりした数。"""
+    if dl >= 10000:
+        ja = f'{dl / 10000:.1f}'.rstrip('0').rstrip('.') + '万'
+    else:
+        ja = f'{dl:,}'
+    en = f'{dl / 1000:.1f}'.rstrip('0').rstrip('.') + 'K' if dl >= 1000 else f'{dl:,}'
+    return ja, en
+
+
+def bi(ja, en):
+    return f'<span class="i18n-ja">{ja}</span><span class="i18n-en">{en}</span>' if ja != en else ja
+
+
+apps = sorted(apps, key=lambda x: (-(x.get('download_count') or 0), x['release_date']))
 data = []
-for x in apps:
+for k, x in enumerate(apps):
     sid = str(x['id'])
     en = apps_en.get(sid, {})
     u = urls.get(sid, {})
@@ -59,15 +97,22 @@ for x in apps:
     ss_en = en.get('screenshots') or []
     if isinstance(ss_en, str):
         ss_en = []
+    dl = x.get('download_count') or 0
     data.append({
         'id': sid,
         'n': x['name'],
         'ne': en.get('name') or x['name'],
+        'sn': short_name(x['name']),
+        'sne': short_name(en.get('name') or x['name']),
         'i': icon(x['icon_url'], 256),
         'r': round(x['rating'] or 0, 1),
         'rc': x['rating_count'],
+        'd': dl,
+        'k': rarity(dl),
+        'c': k % 6 + 1,
         'g': (x.get('genres') or [''])[0],
         'ge': en.get('genre') or x.get('primary_genre') or '',
+        'rd': x['release_date'][:10],
         's': x['app_store_url'],
         'p': clean_url(x.get('google_play_url')),
         'su': {'ja': clean_url((u.get('support_url') or {}).get('ja')),
@@ -77,33 +122,145 @@ for x in apps:
         'sse': ss_en[:3],
     })
 
+
+def rot(d):
+    return int(d['id']) % 50 - 25
+
+
+def cap(d, size_cls=''):
+    return (f'<span class="g-cap g-cap--{d["c"]}{size_cls}" style="--rot:{rot(d)}deg">'
+            f'<img src="{e(d["i"])}" alt="" width="64" height="64" loading="lazy"></span>')
+
+
+def label(d):
+    return bi(e(d['sn']), e(d['sne']))
+
+
+def line(d):
+    """「出た！」の札の説明。ジャンル・評価・ダウンロード数（どれも apps.json の値）。"""
+    ja, en = dl_text(d['d'])
+    parts_ja, parts_en = [d['g']] if d['g'] else [], [d['ge']] if d['ge'] else []
+    if d['rc'] > 0:
+        parts_ja.append(f'★{d["r"]:.1f}（{d["rc"]:,}件）')
+        parts_en.append(f'★{d["r"]:.1f} ({d["rc"]:,} ratings)')
+    if d['d'] > 0:
+        parts_ja.append(f'{ja}ダウンロード')
+        parts_en.append(f'{en} downloads')
+    return '・'.join(parts_ja), ' · '.join(parts_en)
+
+
+# ---------------------------------------------------------------- 信頼の数字
 rc = sum(x['rating_count'] for x in apps)
 avg = sum((x['rating'] or 0) * x['rating_count'] for x in apps) / rc
-e = html.escape
-
 trust = f'''
-                    <div class="trust-item">
-                        <span class="trust-number"><span class="i18n-ja">{len(apps)}本</span><span class="i18n-en">{len(apps)}</span></span>
-                        <span class="trust-label"><span class="i18n-ja">公開中のアプリ</span><span class="i18n-en">live apps</span></span>
-                    </div>
-                    <div class="trust-item">
-                        <span class="trust-number">★{avg:.1f}</span>
-                        <span class="trust-label"><span class="i18n-ja">{rc:,}件の評価</span><span class="i18n-en">{rc:,} ratings</span></span>
-                    </div>
-                    '''
+                        <li><b>{len(apps)}<small>{bi('本', '')}</small></b><span>{bi('公開中のアプリ', 'live apps')}</span></li>
+                        <li><b>★{avg:.1f}</b><span>{bi(f'{rc:,}件の評価', f'{rc:,} ratings')}</span></li>
+                        '''
 
-items = []
-for n, d in enumerate(data):
-    extra = ' is-extra' if n >= FIRST_SHOWN else ''
-    ja, en_ = short_name(d['n']), short_name(d['ne'])
-    label = f'<span class="i18n-ja">{e(ja)}</span><span class="i18n-en">{e(en_)}</span>' if ja != en_ else e(ja)
-    items.append(
-        f'''                    <li class="app-tile{extra}"><button type="button" class="app-tile-btn" data-app="{d['id']}">'''
-        f'''<img src="{e(d['i'])}" alt="" width="64" height="64" loading="lazy">'''
-        f'''<span class="app-tile-name">{label}</span></button></li>''')
+# ---------------------------------------------------------------- 出た！
+w = data[0]
+wl_ja, wl_en = line(w)
+won = f'''
+                        <span class="t-won-tag">{bi('出た！', 'You got')}</span>
+                        <div class="t-won-open" id="wonOpen" style="--c:var(--g-c{w["c"]})"><span class="b"></span><span class="app"><img id="wonIcon" src="{e(w["i"])}" alt="" width="96" height="96"></span><span class="t"></span></div>
+                        <div class="t-won-body">
+                            <span class="g-rare g-rare--{w["k"]}" id="wonRare">{w["k"]}</span>
+                            <h2 class="t-won-name" id="wonName">{label(w)}</h2>
+                            <p class="t-won-line" id="wonLine">{bi(e(wl_ja), e(wl_en))}</p>
+                            <div class="g-btns">
+                                <a class="g-btn g-btn--k" id="wonStore" href="{e(w["s"])}" target="_blank" rel="noopener">{bi('App Store で入れる', 'Get it on the App Store')}</a>
+                                <button type="button" class="g-btn" id="wonMore" data-app="{w["id"]}">{bi('くわしく', 'Details')}</button>
+                                <button type="button" class="g-btn g-btn--y" id="gachaAgain">{bi('もう1回まわす', 'Spin again')}</button>
+                            </div>
+                        </div>
+                        '''
+
+
+# ---------------------------------------------------------------- 機械の玉
+def pile(n, d):
+    """半径 50 の円の中に、直径 d のカプセルを下から積む（0〜100 の座標）。"""
+    pts, row, y = [], 0, 100 - d / 2 - 1.5
+    while len(pts) < n and y > 20:
+        half = math.sqrt(max(0, 50 ** 2 - (y - 50) ** 2)) - d / 2 - 1
+        x = 50 - half + ((d / 2) if row % 2 else 0)
+        while x <= 50 + half + 0.01 and len(pts) < n:
+            pts.append((x, y))
+            x += d * 0.98
+        y -= d * 0.84
+        row += 1
+    return pts
+
+
+globe = ''.join(
+    f'<span class="g-cap g-cap--{d["c"]}" style="left:{x:.1f}%;top:{y:.1f}%;width:19%;--rot:{rot(d)}deg">'
+    f'<img src="{e(d["i"])}" alt="" width="64" height="64" loading="lazy"></span>'
+    for (x, y), d in zip(pile(GLOBE_N, 19), data))
+
+# ---------------------------------------------------------------- 段
+TIERS = [
+    ('SSR', '10万DL以上', '100K+ downloads'),
+    ('SR', '1万DL以上', '10K+ downloads'),
+    ('R', '1000DL以上', '1K+ downloads'),
+    ('N', 'これから育つ', 'Still growing'),
+]
+by_tier = {t: [d for d in data if d['k'] == t] for t, _, _ in TIERS}
+odds = ''.join(
+    f'<li><span class="g-rare g-rare--{t}">{t}</span>{bi(ja, en)}<b>{bi(f"{len(by_tier[t])}種", str(len(by_tier[t])))}</b></li>'
+    for t, ja, en in TIERS)
+
+tiers = ''
+for t, ja, en in TIERS:
+    lst = by_tier[t]
+    if not lst:
+        continue
+    tiles = ''.join(
+        f'<li class="app-tile{" is-extra" if n >= TIER_SHOWN else ""}"><button type="button" class="g-mini app-tile-btn" data-app="{d["id"]}">'
+        f'{cap(d)}<span>{label(d)}</span></button></li>'
+        for n, d in enumerate(lst))
+    tiers += f'''
+                    <div class="t-tier" data-tier="{t}">
+                        <div class="t-tier-lb"><b class="g-rare--{t}">{t}</b><small>{bi(f'{ja}<br> {len(lst)}種', f'{en}<br> · {len(lst)}')}</small></div>
+                        <ul class="t-tier-caps">{tiles}</ul>
+                    </div>'''
+tiers += '\n                    '
+
+# ---------------------------------------------------------------- 新しく入った
+fresh = ''.join(
+    f'''
+                    <li><button type="button" class="t-fresh-card g-panel" data-app="{d["id"]}"><span class="t-new">NEW</span>'''
+    f'''<img src="{e(d["i"])}" alt="" width="72" height="72" loading="lazy"><span class="t-fresh-name">{label(d)}</span>'''
+    f'''<time datetime="{d["rd"]}">{d["rd"].replace("-", ".")}</time></button></li>'''
+    for d in sorted(data, key=lambda d: d['rd'], reverse=True)[:FRESH_N]) + '\n                '
+
+
+# ---------------------------------------------------------------- おまけの冊子
+def books_from_blog():
+    src = BLOG.read_text()
+    cards = re.findall(r'<article class="post-card"[^>]*>(.*?)</article>', src, re.S)
+    out = []
+    for c in cards:
+        href = re.search(r'<a href="(/blog/posts/[^"]+)"', c)
+        img = re.search(r'<img src="([^"]+)"', c)
+        date = re.search(r'class="post-date">([^<]+)<', c)
+        cat = re.search(r'class="post-category">(.*?)</span>\s*</div>', c, re.S)
+        title = re.search(r'class="post-card-title">\s*<a [^>]*>(.*?)</a>', c, re.S)
+        if not (href and img and title):
+            continue
+        out.append(dict(href=href.group(1), img=img.group(1), date=(date.group(1).strip() if date else ''),
+                        cat=(cat.group(1).strip() if cat else ''), title=title.group(1).strip()))
+    return out
+
+
+posts = books_from_blog()
+income = [p for p in posts if '/income-report-' in p['href']][:1]
+others = sorted([p for p in posts if '/income-report-' not in p['href']], key=lambda p: p['date'], reverse=True)[:3]
+books = ''.join(
+    f'''
+                    <a class="g-book g-panel" href="{p["href"]}"><img src="{e(p["img"])}" alt="" width="1200" height="800" loading="lazy">'''
+    f'''<div><small>{p["cat"]}</small><h3>{p["title"]}</h3><time>{e(p["date"])}</time></div></a>'''
+    for p in income + others) + '\n                '
 
 blob = json.dumps(data, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
-apps_block = '\n' + '\n'.join(items) + '\n                '
 
 src = INDEX.read_text()
 
@@ -116,7 +273,13 @@ def put(src, name, body):
 
 
 src = put(src, 'TOP-TRUST', trust)
-src = put(src, 'TOP-APPS', apps_block)
+src = put(src, 'TOP-WON', won)
+src = put(src, 'TOP-GLOBE', globe)
+src = put(src, 'TOP-ODDS', odds)
+src = put(src, 'TOP-APPS', tiers)
+src = put(src, 'TOP-FRESH', fresh)
+src = put(src, 'TOP-BOOKS', books)
 src = put(src, 'TOP-APPS-DATA', f'<script type="application/json" id="appsData">{blob}</script>')
 INDEX.write_text(src)
-print(f'apps={len(data)} lp={sum(1 for d in data if d["lp"])} support={sum(1 for d in data if d["su"]["ja"])} rating={avg:.2f} ({rc})')
+print(f'apps={len(data)} ' + ' '.join(f'{t}={len(by_tier[t])}' for t, _, _ in TIERS)
+      + f' lp={sum(1 for d in data if d["lp"])} support={sum(1 for d in data if d["su"]["ja"])} rating={avg:.2f} ({rc}) books={len(income + others)}')

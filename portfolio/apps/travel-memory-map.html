@@ -16,17 +16,7 @@
     <meta property="og:image" content="/assets/images/icon/travel_memory_map.webp">
     <meta property="og:url" content="https://tsuzukit.com/portfolio/apps/travel-memory-map.html">
     <meta property="og:type" content="article">
-    
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="../../assets/css/tsuzukit.css">
-    <link rel="stylesheet" href="../../assets/css/app-detail.css">
-    
-    <!-- Favicon -->
+<!-- Favicon -->
     <link rel="icon" href="../../favicon.ico">
     
     <!-- Google Analytics -->
@@ -40,834 +30,101 @@
 
     <!-- Google AdSense（持ち主の確認だけ。このページに広告は出さない。docs/ads.md） -->
     <meta name="google-adsense-account" content="ca-pub-8240751277462688">
+
+    <!-- ガチャの見た目（assets/css/gacha.css・docs/gacha-design.md） -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700;800&family=RocknRoll+One&display=swap">
+    <link rel="stylesheet" href="/assets/css/gacha.css">
+    <link rel="stylesheet" href="/assets/css/g-apps.css">
+    <script src="/assets/js/gacha.js" defer></script>
+    <!-- /ガチャの見た目 -->
 </head>
-<body>
-    <!-- Navigation -->
-    <nav class="nav" id="nav">
-        <div class="nav-container">
-            <a href="/" class="nav-logo">TsuzuKit</a>
-            <div class="nav-menu" id="navMenu">
-                <a href="/portfolio/" class="nav-link active">Portfolio</a>
-                <a href="/about/" class="nav-link">About</a>
-                <a href="/blog/" class="nav-link">Blog</a>
-                <a href="/contact/" class="nav-link">Contact</a>
+<body class="g">
+    <header class="g-head" id="nav">
+            <div class="g-wrap">
+                <a href="/" class="g-logo"><img src="/assets/images/logo/tsuzukit-wordmark.svg" alt="TsuzuKit" width="116" height="36"></a>
+                <nav class="nav-menu" id="navMenu" aria-label="メニュー"><a href="/portfolio/" class="nav-link" aria-current="page"><span class="i18n-ja">アプリ</span><span class="i18n-en">Apps</span></a><a href="/blog/" class="nav-link"><span class="i18n-ja">読みもの</span><span class="i18n-en">Reading</span></a><a href="/about/" class="nav-link"><span class="i18n-ja">私について</span><span class="i18n-en">About</span></a><a href="/contact/" class="nav-link"><span class="i18n-ja">お問い合わせ</span><span class="i18n-en">Contact</span></a></nav>
+                <button type="button" class="g-menu" id="navToggle" aria-controls="navMenu" aria-expanded="false">MENU</button>
             </div>
-            <div class="nav-toggle" id="navToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
+        </header>
 
-    <div class="i18n-ja">
-    <!-- App Hero Section -->
-    <section class="app-hero">
-        <div class="glow-shapes">
-            <div class="glow-shape"></div>
-            <div class="glow-shape"></div>
-            <div class="glow-shape"></div>
-        </div>
-        
-        <div class="container">
-            <div class="app-hero-content">
-                <div class="app-icon-wrapper">
-                    <img src="../../assets/images/icon/travel_memory_map.webp" alt="旅行思い出マップ" class="app-icon">
-                    <div class="app-icon-badge">代表作</div>
-                </div>
-                
-                <h1 class="app-title"><span class="i18n-ja">旅行思い出マップ</span><span class="i18n-en">TravelMemoryMap</span></h1>
-                <p class="app-tagline">写真をパズルのように切り取って、日本地図に思い出を記録</p>
-                
-                <div class="app-badges">
-                    <span class="badge badge-downloads">141,000+ Downloads</span>
-                    <span class="badge badge-rating">★4.7 Rating</span>
-                    <span class="badge badge-category">Travel & Memory</span>
-                </div>
-                
-                <div class="app-cta">
-                    <a href="https://apps.apple.com/jp/app/%E6%97%85%E8%A1%8C%E6%80%9D%E3%81%84%E5%87%BA%E3%83%9E%E3%83%83%E3%83%97-%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AE%E5%86%99%E7%9C%9F%E3%81%8C%E5%9C%B0%E5%9B%B3%E3%81%AB%E3%81%AA%E3%82%8B/id6478291625" target="_blank" class="btn btn-primary">
-                        <svg class="apple-icon" viewBox="0 0 24 24" width="20" height="20">
-                            <path fill="currentColor" d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.09997 22C7.78997 22.05 6.79997 20.68 5.95997 19.47C4.24997 17 2.93997 12.45 4.69997 9.39C5.56997 7.87 7.12997 6.91 8.81997 6.88C10.1 6.86 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/>
-                        </svg>
-                        App Storeで見る
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+    <main class="g-main">
+        <div class="g-wrap">
+                <nav class="g-crumb" aria-label="パンくず" data-en-aria-label="Breadcrumb"><a href="/"><span class="i18n-ja">トップ</span><span class="i18n-en">Home</span></a><span>＞</span><a href="/portfolio/"><span class="i18n-ja">ラインナップ</span><span class="i18n-en">Lineup</span></a><span>＞</span><span>SSR</span><span>＞</span><b><span class="i18n-ja">旅行思い出マップ</span><span class="i18n-en">TravelMemoryMap</span></b></nav>
 
-    <!-- Inspiration Story Section -->
-    <section class="section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Story</span>
-                <h2 class="section-title">開発のきっかけ</h2>
-            </div>
-            
-            <div class="story-content">
-                <div class="story-quote">
-                    <blockquote>
-                        "印刷した写真を都道府県の形に切り取って、日本地図に貼り付けた旅の思い出ポスター。<br>
-                        SNSで見かけたこの素晴らしいアイデアに感動しました。"
-                    </blockquote>
-                </div>
-                
-                <p class="story-text">
-                    2021年2月、私はSNSである投稿を目にしました。それは、旅行で撮った写真を印刷し、訪れた都道府県の形に切り取って日本地図に貼り付けた、まるでパズルのような思い出ポスターでした。
-                </p>
-                
-                <p class="story-text emphasis">
-                    「これをアプリでできたら、もっと気軽に多くの人が楽しめるのではないか」
-                </p>
-                
-                <p class="story-text">
-                    その瞬間、私の中で新しいアプリのアイデアが生まれました。写真を印刷したり、はさみで切ったりする手間なく、スマートフォンで簡単に旅の思い出を地図上に記録できるアプリ。それが「旅行思い出マップ」の始まりでした。
-                </p>
-                
-                <p class="story-text">
-                    10年間の個人開発経験を活かし、このアイデアを形にすることを決意。日本中を旅する人々が、自分だけの思い出の地図を作れるようなアプリを目指しました。
-                </p>
-            </div>
-        </div>
-    </section>
+                <section class="ga-ah">
+                    <div class="g-burst" style="--c:var(--g-c4)">
+                        <div class="rays"></div><div class="lid"></div><div class="bowl"></div>
+                        <div class="icon"><img src="/assets/images/icon/travel_memory_map.webp" alt="旅行思い出マップ" data-en-alt="TravelMemoryMap" width="292" height="292"></div>
+                        <span class="st" style="right:6%;top:8%">★</span><span class="st" style="left:10%;top:62%;font-size:24px">✦</span><span class="st" style="right:12%;top:52%;font-size:26px">✦</span>
+                    </div>
+                    <div class="g-ypanel ga-info">
+                        <span class="ga-no">No.02 ／ 81</span>
+                        <span class="g-rare g-rare--SSR">SSR ★★★</span>
+                        <h1><span class="i18n-ja">旅行思い出マップ</span><span class="i18n-en">TravelMemoryMap</span></h1>
+                        <p class="ga-one"><span class="i18n-ja">写真をパズルのように切り取って、日本地図に思い出を記録</span><span class="i18n-en">Cut your photos into puzzle pieces and fill a map of Japan with your memories</span></p>
+                        <div class="ga-chips"><span><span class="i18n-ja">代表作</span><span class="i18n-en">Flagship</span></span><span>Travel &amp; Memory</span></div>
+                        <div class="ga-spec"><div><b>4.6</b><span><span class="i18n-ja">★ 784件</span><span class="i18n-en">★ 784 ratings</span></span></div><div><b><span class="i18n-ja">13.9万</span><span class="i18n-en">139K</span></b><span><span class="i18n-ja">ダウンロード</span><span class="i18n-en">downloads</span></span></div><div><b>2024</b><span><span class="i18n-ja">年に登場</span><span class="i18n-en">released</span></span></div><div><b><span class="i18n-ja">無料</span><span class="i18n-en">Free</span></b><span><span class="i18n-ja">iOS 17.0 以上</span><span class="i18n-en">iOS 17.0+</span></span></div></div>
+                        <div class="g-btns"><a class="g-btn g-btn--k" href="https://apps.apple.com/jp/app/%E6%97%85%E8%A1%8C%E6%80%9D%E3%81%84%E5%87%BA%E3%83%9E%E3%83%83%E3%83%97-%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AE%E5%86%99%E7%9C%9F%E3%81%8C%E5%9C%B0%E5%9B%B3%E3%81%AB%E3%81%AA%E3%82%8B/id6478291625" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg><span class="i18n-ja">App Storeで見る</span><span class="i18n-en">View on the App Store</span></a><a class="g-btn" href="https://play.google.com/store/apps/details?id=com.tsuzuki817.omoidemap&amp;pcampaignid=web_share" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/></svg>Google Play</a><a class="g-btn g-btn--y" href="https://omoidemap-36d68.web.app/" target="_blank" rel="noopener"><span class="i18n-ja">公式サイト</span><span class="i18n-en">Official site</span> →</a></div>
+                    </div>
+                </section>
 
-    <!-- Features Section -->
-    <section class="section section-alt">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Features</span>
-                <h2 class="section-title">主な機能</h2>
-                <p class="section-description">
-                    旅の思い出を、今までにない方法で記録・共有
-                </p>
-            </div>
-            
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">📍</div>
-                    <h3 class="feature-title">都道府県に写真を配置</h3>
-                    <p class="feature-description">
-                        訪れた都道府県の形に写真を自動でトリミング。まるでパズルのピースのように、日本地図を思い出で埋めていきます。
-                    </p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">🗾</div>
-                    <h3 class="feature-title">制覇率の可視化</h3>
-                    <p class="feature-description">
-                        47都道府県のうち、何県訪れたかを一目で確認。制覇率がパーセンテージで表示され、旅のモチベーションにつながります。
-                    </p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">📸</div>
-                    <h3 class="feature-title">複数写真の管理</h3>
-                    <p class="feature-description">
-                        一つの都道府県に複数の写真を保存可能。季節ごとの風景や、訪れるたびの思い出を重ねて記録できます。
-                    </p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">📝</div>
-                    <h3 class="feature-title">思い出メモ</h3>
-                    <p class="feature-description">
-                        写真と一緒にメモを残せる機能。訪れた日付、一緒に行った人、感想など、大切な記憶を文字でも保存。
-                    </p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">🎨</div>
-                    <h3 class="feature-title">カスタマイズ可能な地図</h3>
-                    <p class="feature-description">
-                        地図の色やスタイルをカスタマイズ。自分好みの思い出マップを作成できます。
-                    </p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">📤</div>
-                    <h3 class="feature-title">SNS共有機能</h3>
-                    <p class="feature-description">
-                        完成した思い出マップを画像として保存・共有。InstagramやTwitterで旅の記録をシェアできます。
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+                <div class="g-sh"><h2><span class="i18n-ja">カプセルの中身</span><span class="i18n-en">What's inside</span></h2><small><span class="i18n-ja">アプリの画面</span><span class="i18n-en">Screens from the app</span></small></div>
+                <div class="g-panel ga-tray i18n-ja"><img src="https://is1-ssl.mzstatic.com/image/thumb/QhfGME-Zp0VPTHhwCId3aQ/626x0w.webp" alt="" width="626" height="1357" loading="lazy"><img src="https://is1-ssl.mzstatic.com/image/thumb/zjPGLG24mLZ-A4Wx6O2q6g/626x0w.webp" alt="" width="626" height="1357" loading="lazy"><img src="https://is1-ssl.mzstatic.com/image/thumb/Yt4OnoIOyU3dmgAOf9fE0w/626x0w.webp" alt="" width="626" height="1357" loading="lazy"><img src="https://is1-ssl.mzstatic.com/image/thumb/DFUyGflSmD7ginatlGQ5CQ/626x0w.webp" alt="" width="626" height="1357" loading="lazy"></div>
+                <div class="g-panel ga-tray i18n-en"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a6/1b/de/a61bde81-efcd-c002-b411-b1dcc0dd3239/01_map.png/626x0w.webp" alt="" width="626" height="1357" loading="lazy"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a7/65/1d/a7651d34-69b3-44c5-f319-d073934b190c/02_fill.png/626x0w.webp" alt="" width="626" height="1357" loading="lazy"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/18/74/b0/1874b031-d0ec-88fd-f128-c64e7d27cf2e/03_oneday.png/626x0w.webp" alt="" width="626" height="1357" loading="lazy"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/77/e4/5f/77e45f32-c01f-e85f-379e-1bcb44b60b90/04_world.png/626x0w.webp" alt="" width="626" height="1357" loading="lazy"></div>
 
-    <!-- Technology Section -->
-    <section class="section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Technology</span>
-                <h2 class="section-title">技術的な挑戦</h2>
-            </div>
-            
-            <div class="tech-content">
-                <div class="tech-card">
-                    <h3 class="tech-title">
-                        <span class="tech-icon">🗺️</span>
-                        高精度な地図描画
-                    </h3>
-                    <p class="tech-description">
-                        都道府県の複雑な形状を正確に再現するため、ベクターデータを活用した独自の描画エンジンを開発。滑らかで美しい地図表現を実現しました。
-                    </p>
+                <div class="g-sh"><h2><span class="i18n-ja">説明書き</span><span class="i18n-en">How it works</span></h2><small><span class="i18n-ja">開発のきっかけと主な機能</span><span class="i18n-en">How it started, and what it does</span></small></div>
+                <div class="ga-slip">
+                    <div class="g-paper ga-paper"><span class="ga-paper-tag"><span class="i18n-ja">説明書き</span><span class="i18n-en">About this app</span></span><h3><span class="i18n-ja">開発のきっかけ</span><span class="i18n-en">How It Started</span></h3><blockquote><span class="i18n-ja">"印刷した写真を都道府県の形に切り取って、日本地図に貼り付けた旅の思い出ポスター。<br>SNSで見かけたこの素晴らしいアイデアに感動しました。"</span><span class="i18n-en">"A travel poster made of printed photos, each cut into the shape of a prefecture and pasted onto a map of Japan.<br>I was moved by this wonderful idea when I came across it on social media."</span></blockquote><p><span class="i18n-ja">2021年2月、私はSNSである投稿を目にしました。それは、旅行で撮った写真を印刷し、訪れた都道府県の形に切り取って日本地図に貼り付けた、まるでパズルのような思い出ポスターでした。</span><span class="i18n-en">In February 2021, I saw a post on social media. Someone had printed their travel photos, cut each one into the shape of the prefecture they'd visited, and pasted them onto a map of Japan. It was a memory poster that looked like a jigsaw puzzle.</span></p><p><span class="ga-em"><span class="i18n-ja">「これをアプリでできたら、もっと気軽に多くの人が楽しめるのではないか」</span><span class="i18n-en">&quot;If this were an app, a lot more people could enjoy it, and much more easily.&quot;</span></span></p><p><span class="i18n-ja">その瞬間、私の中で新しいアプリのアイデアが生まれました。写真を印刷したり、はさみで切ったりする手間なく、スマートフォンで簡単に旅の思い出を地図上に記録できるアプリ。それが「旅行思い出マップ」の始まりでした。</span><span class="i18n-en">That was the moment the idea for a new app was born. An app that lets you record your travel memories on a map with just your phone, with no printing and no scissors. That was the start of TravelMemoryMap (Travel Memory Map).</span></p><p><span class="i18n-ja">10年間の個人開発経験を活かし、このアイデアを形にすることを決意。日本中を旅する人々が、自分だけの思い出の地図を作れるようなアプリを目指しました。</span><span class="i18n-en">Drawing on ten years of indie development experience, I decided to bring the idea to life. My goal was an app that lets people who travel all over Japan build a memory map that's all their own.</span></p><h3><span class="i18n-ja">主な機能</span><span class="i18n-en">Features</span></h3><p><span class="i18n-ja">旅の思い出を、今までにない方法で記録・共有</span><span class="i18n-en">A new way to record and share your travel memories</span></p><ul class="ga-feats"><li><b><span class="i18n-ja">都道府県に写真を配置</span><span class="i18n-en">Photos placed on prefectures</span></b><span class="i18n-ja">訪れた都道府県の形に写真を自動でトリミング。まるでパズルのピースのように、日本地図を思い出で埋めていきます。</span><span class="i18n-en">Your photos are cropped automatically into the shape of each prefecture you've visited. Piece by piece, like a puzzle, you fill the map of Japan with memories.</span></li><li><b><span class="i18n-ja">制覇率の可視化</span><span class="i18n-en">See your progress</span></b><span class="i18n-ja">47都道府県のうち、何県訪れたかを一目で確認。制覇率がパーセンテージで表示され、旅のモチベーションにつながります。</span><span class="i18n-en">See at a glance how many of the 47 prefectures you've visited. Your completion rate is shown as a percentage, which gives you a reason to keep traveling.</span></li><li><b><span class="i18n-ja">複数写真の管理</span><span class="i18n-en">Multiple photos per place</span></b><span class="i18n-ja">一つの都道府県に複数の写真を保存可能。季節ごとの風景や、訪れるたびの思い出を重ねて記録できます。</span><span class="i18n-en">Save several photos for a single prefecture. Layer up the scenery from different seasons and the memories from every visit.</span></li><li><b><span class="i18n-ja">思い出メモ</span><span class="i18n-en">Memory notes</span></b><span class="i18n-ja">写真と一緒にメモを残せる機能。訪れた日付、一緒に行った人、感想など、大切な記憶を文字でも保存。</span><span class="i18n-en">Leave a note alongside your photos. Keep the date you visited, who you went with, and how it felt, in words as well.</span></li><li><b><span class="i18n-ja">カスタマイズ可能な地図</span><span class="i18n-en">Customizable map</span></b><span class="i18n-ja">地図の色やスタイルをカスタマイズ。自分好みの思い出マップを作成できます。</span><span class="i18n-en">Customize the map's colors and style to make a memory map that suits you.</span></li><li><b><span class="i18n-ja">SNS共有機能</span><span class="i18n-en">Share on social media</span></b><span class="i18n-ja">完成した思い出マップを画像として保存・共有。InstagramやTwitterで旅の記録をシェアできます。</span><span class="i18n-en">Save your finished memory map as an image and share it. Show off your travels on Instagram or Twitter.</span></li></ul>
+                    </div>
+                    <div class="ga-side"><div class="g-panel ga-help"><h3><span class="i18n-ja">このカプセルで困ったら</span><span class="i18n-en">Need help with this app?</span></h3><a href="https://omoidemap-36d68.web.app/" target="_blank" rel="noopener"><span class="g-capdot"></span><span class="i18n-ja">公式サイト</span><span class="i18n-en">Official site</span></a><a href="https://omoidemap-36d68.web.app/contact.html" target="_blank" rel="noopener"><span class="g-capdot"></span><span class="i18n-ja">アプリのサポート</span><span class="i18n-en">App support</span></a><a href="/contact/"><span class="g-capdot"></span><span class="i18n-ja">お問い合わせ</span><span class="i18n-en">Contact</span></a><a href="/legal/privacy-policy.html"><span class="g-capdot"></span><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a><a href="/legal/terms-of-service.html"><span class="g-capdot"></span><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a><a href="/legal/commercial-law.html"><span class="g-capdot"></span><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a></div><div class="g-panel ga-news"><h3><span class="i18n-ja">更新のおしらせ</span><span class="i18n-en">Latest update</span></h3><span class="ga-v">ver 2.0.1 ／ 2026.10.19</span><div class="i18n-ja"><p>【v2.0.1】</p><p>右から左に読む言語で、地図が左右反転して表示されていました。</p><p>アラビア語とヘブライ語では、地図の中身まで左右が入れ替わっていました。地形は言語で変わらないので、どの言語でも同じ向きで出るようにしました。印刷する地図や共有カードも直しています。</p><p>いつもご利用いただきありがとうございます！</p></div><p class="i18n-en">Version 2.0.1, released 2026.10.19. The release notes are in Japanese on the App Store.</p></div></div>
                 </div>
-                
-                <div class="tech-card">
-                    <h3 class="tech-title">
-                        <span class="tech-icon">✂️</span>
-                        リアルタイム画像トリミング
-                    </h3>
-                    <p class="tech-description">
-                        写真を都道府県の形に自動でトリミングする機能は、Core Graphicsを駆使して実装。どんな写真でも美しくフィットさせる調整アルゴリズムを開発しました。
-                    </p>
-                </div>
-                
-                <div class="tech-card">
-                    <h3 class="tech-title">
-                        <span class="tech-icon">💾</span>
-                        効率的なデータ管理
-                    </h3>
-                    <p class="tech-description">
-                        Core Dataを使用して、大量の写真とメタデータを効率的に管理。オフラインでも快適に使用できる設計を実現しました。
-                    </p>
-                </div>
-                
-                <div class="tech-card">
-                    <h3 class="tech-title">
-                        <span class="tech-icon">🎯</span>
-                        直感的なUI/UX
-                    </h3>
-                    <p class="tech-description">
-                        SwiftUIを活用し、スムーズなアニメーションと直感的な操作性を実現。初めての方でも迷わず使えるインターフェースを追求しました。
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Achievements Section -->
-    <section class="section section-alt">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Achievements</span>
-                <h2 class="section-title">実績と評価</h2>
-            </div>
-            
-            <div class="achievements-grid">
-                <div class="achievement-card">
-                    <div class="achievement-number">141,000+</div>
-                    <div class="achievement-label">累計ダウンロード</div>
-                    <p class="achievement-description">
-                        リリースから3年で14万人以上のユーザーに愛用されています
-                    </p>
-                </div>
-                
-                <div class="achievement-card">
-                    <div class="achievement-number">★4.7</div>
-                    <div class="achievement-label">App Store評価</div>
-                    <p class="achievement-description">
-                        280件以上のレビューで高評価を維持
-                    </p>
-                </div>
-                
-                <div class="achievement-card">
-                    <div class="achievement-number">47都道府県</div>
-                    <div class="achievement-label">完全制覇ユーザー</div>
-                    <p class="achievement-description">
-                        100人以上のユーザーが全都道府県を制覇
-                    </p>
-                </div>
-                
-                <div class="achievement-card">
-                    <div class="achievement-number">#40</div>
-                    <div class="achievement-label">旅行カテゴリ</div>
-                    <p class="achievement-description">
-                        App Store旅行カテゴリで何度かランキング入賞
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- User Reviews Section -->
-    <section class="section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Reviews</span>
-                <h2 class="section-title">ユーザーの声</h2>
-            </div>
-            
-            <div class="reviews-grid">
-                <div class="review-card">
-                    <div class="review-rating">★★★★★</div>
-                    <h3 class="review-title">旅行が楽しくなった！</h3>
-                    <p class="review-text">
-                        「このアプリのおかげで、旅行の楽しみが倍増しました。地図が埋まっていくのを見るのが楽しくて、まだ行ったことのない県に行きたくなります。」
-                    </p>
-                    <p class="review-author">- 旅行好きさん</p>
-                </div>
-                
-                <div class="review-card">
-                    <div class="review-rating">★★★★★</div>
-                    <h3 class="review-title">思い出の整理に最適</h3>
-                    <p class="review-text">
-                        「今まで撮りっぱなしだった旅行写真が、このアプリで素敵な思い出マップになりました。家族との旅行の記録として大切に使っています。」
-                    </p>
-                    <p class="review-author">- ファミリー旅行者</p>
-                </div>
-                
-                <div class="review-card">
-                    <div class="review-rating">★★★★★</div>
-                    <h3 class="review-title">デザインが素晴らしい</h3>
-                    <p class="review-text">
-                        「シンプルで美しいデザインが気に入っています。操作も直感的で、誰でも簡単に使えるのが良いですね。」
-                    </p>
-                    <p class="review-author">- デザイン好きさん</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Developer Message Section -->
-    <section class="section section-alt">
-        <div class="container">
-            <div class="developer-message">
-                <h2 class="section-title">開発者より</h2>
-                
-                <div class="message-content">
-                    <p>
-                        旅行思い出マップは、旅の記録を地図に描くという一点だけを、丁寧に作ったアプリです。
-                    </p>
-                    
-                    <p>
-                        SNSで見かけた一枚の投稿から始まったこのプロジェクトは、今では14万人以上の方々の旅の思い出を記録する大切なツールとなりました。
-                    </p>
-                    
-                    <p class="emphasis">
-                        これからも、皆様の大切な思い出を美しく残すお手伝いができるよう、アップデートを続けていきます。
-                    </p>
-                    
-                    <p>
-                        日本中を旅して、あなただけの思い出マップを完成させてください。その旅路を、このアプリが彩り豊かに記録します。
-                    </p>
-                    
-                    <div class="signature">
-                        <p>2025年1月</p>
-                        <p class="signature-name">續橋 涼</p>
+                <div class="g-sh"><h2><span class="i18n-ja">技術的な挑戦</span><span class="i18n-en">Technical Challenges</span></h2></div>
+                <div class="ga-cells ga-cells--2"><div class="g-panel ga-cell"><span class="ga-emo" aria-hidden="true">🗺️</span><h3><span class="i18n-ja">高精度な地図描画</span><span class="i18n-en">High-precision map rendering</span></h3><p><span class="i18n-ja">都道府県の複雑な形状を正確に再現するため、ベクターデータを活用した独自の描画エンジンを開発。滑らかで美しい地図表現を実現しました。</span><span class="i18n-en">To reproduce the intricate shapes of the prefectures accurately, I built my own rendering engine on vector data. The result is a smooth, beautiful map.</span></p></div><div class="g-panel ga-cell"><span class="ga-emo" aria-hidden="true">✂️</span><h3><span class="i18n-ja">リアルタイム画像トリミング</span><span class="i18n-en">Real-time image cropping</span></h3><p><span class="i18n-ja">写真を都道府県の形に自動でトリミングする機能は、Core Graphicsを駆使して実装。どんな写真でも美しくフィットさせる調整アルゴリズムを開発しました。</span><span class="i18n-en">Cropping photos into prefecture shapes automatically is done with Core Graphics. I developed an adjustment algorithm that makes any photo fit nicely.</span></p></div><div class="g-panel ga-cell"><span class="ga-emo" aria-hidden="true">💾</span><h3><span class="i18n-ja">効率的なデータ管理</span><span class="i18n-en">Efficient data management</span></h3><p><span class="i18n-ja">Core Dataを使用して、大量の写真とメタデータを効率的に管理。オフラインでも快適に使用できる設計を実現しました。</span><span class="i18n-en">Core Data manages large numbers of photos and their metadata efficiently. The app is designed to run smoothly even offline.</span></p></div><div class="g-panel ga-cell"><span class="ga-emo" aria-hidden="true">🎯</span><h3><span class="i18n-ja">直感的なUI/UX</span><span class="i18n-en">Intuitive UI/UX</span></h3><p><span class="i18n-ja">SwiftUIを活用し、スムーズなアニメーションと直感的な操作性を実現。初めての方でも迷わず使えるインターフェースを追求しました。</span><span class="i18n-en">SwiftUI brings smooth animations and intuitive controls. I aimed for an interface that first-time users can pick up without getting lost.</span></p></div></div>
+                <div class="g-sh"><h2><span class="i18n-ja">実績と評価</span><span class="i18n-en">Milestones and Ratings</span></h2></div>
+                <div class="ga-nums"><div class="g-ypanel ga-num"><b>141,000+</b><span><span class="i18n-ja">累計ダウンロード</span><span class="i18n-en">Total downloads</span></span><p><span class="i18n-ja">リリースから3年で14万人以上のユーザーに愛用されています</span><span class="i18n-en">Used by more than 140,000 people within three years of release</span></p></div><div class="g-ypanel ga-num"><b>★4.7</b><span><span class="i18n-ja">App Store評価</span><span class="i18n-en">App Store rating</span></span><p><span class="i18n-ja">280件以上のレビューで高評価を維持</span><span class="i18n-en">Highly rated across more than 280 reviews</span></p></div><div class="g-ypanel ga-num"><b><span class="i18n-ja">47都道府県</span><span class="i18n-en">47 prefectures</span></b><span><span class="i18n-ja">完全制覇ユーザー</span><span class="i18n-en">Users who completed the map</span></span><p><span class="i18n-ja">100人以上のユーザーが全都道府県を制覇</span><span class="i18n-en">More than 100 users have filled in every prefecture</span></p></div><div class="g-ypanel ga-num"><b>#40</b><span><span class="i18n-ja">旅行カテゴリ</span><span class="i18n-en">Travel category</span></span><p><span class="i18n-ja">App Store旅行カテゴリで何度かランキング入賞</span><span class="i18n-en">Has ranked in the App Store Travel category several times</span></p></div></div>
+                <div class="g-sh"><h2><span class="i18n-ja">ユーザーの声</span><span class="i18n-en">What Users Say</span></h2></div>
+                <div class="ga-voices"><div class="g-panel ga-voice"><span class="ga-stars" aria-label="5つ星">★★★★★</span><h3><span class="i18n-ja">旅行が楽しくなった！</span><span class="i18n-en">Travel got more fun!</span></h3><p><span class="i18n-ja">「このアプリのおかげで、旅行の楽しみが倍増しました。地図が埋まっていくのを見るのが楽しくて、まだ行ったことのない県に行きたくなります。」</span><span class="i18n-en">&quot;Thanks to this app, I enjoy traveling twice as much. Watching the map fill up is so much fun that it makes me want to visit the prefectures I haven&#x27;t been to yet.&quot;</span></p><small><span class="i18n-ja">- 旅行好きさん</span><span class="i18n-en">- A travel lover</span></small></div><div class="g-panel ga-voice"><span class="ga-stars" aria-label="5つ星">★★★★★</span><h3><span class="i18n-ja">思い出の整理に最適</span><span class="i18n-en">Perfect for organizing memories</span></h3><p><span class="i18n-ja">「今まで撮りっぱなしだった旅行写真が、このアプリで素敵な思い出マップになりました。家族との旅行の記録として大切に使っています。」</span><span class="i18n-en">&quot;The travel photos I&#x27;d taken and never looked at again became a lovely memory map with this app. I treasure it as a record of our family trips.&quot;</span></p><small><span class="i18n-ja">- ファミリー旅行者</span><span class="i18n-en">- A family traveler</span></small></div><div class="g-panel ga-voice"><span class="ga-stars" aria-label="5つ星">★★★★★</span><h3><span class="i18n-ja">デザインが素晴らしい</span><span class="i18n-en">Wonderful design</span></h3><p><span class="i18n-ja">「シンプルで美しいデザインが気に入っています。操作も直感的で、誰でも簡単に使えるのが良いですね。」</span><span class="i18n-en">&quot;I love the simple, beautiful design. It&#x27;s intuitive, and anyone can pick it up easily.&quot;</span></p><small><span class="i18n-ja">- デザイン好きさん</span><span class="i18n-en">- A design fan</span></small></div></div>
+                <div class="g-sh"><h2><span class="i18n-ja">開発者より</span><span class="i18n-en">From the Developer</span></h2></div>
+                <div class="g-paper ga-letter">
+                    <img src="/assets/images/character-wave.png" alt="" width="419" height="382" loading="lazy">
+                    <div class="ga-letter-body"><p><span class="i18n-ja">旅行思い出マップは、旅の記録を地図に描くという一点だけを、丁寧に作ったアプリです。</span><span class="i18n-en">TravelMemoryMap is an app I made carefully around a single idea: drawing your travels onto a map.</span></p><p><span class="i18n-ja">SNSで見かけた一枚の投稿から始まったこのプロジェクトは、今では14万人以上の方々の旅の思い出を記録する大切なツールとなりました。</span><span class="i18n-en">The project began with one post I saw on social media. Today it has become a tool that more than 140,000 people use to keep their travel memories.</span></p><p class="ga-em"><span class="i18n-ja">これからも、皆様の大切な思い出を美しく残すお手伝いができるよう、アップデートを続けていきます。</span><span class="i18n-en">I'll keep updating it so it can go on helping you keep your precious memories beautifully.</span></p><p><span class="i18n-ja">日本中を旅して、あなただけの思い出マップを完成させてください。その旅路を、このアプリが彩り豊かに記録します。</span><span class="i18n-en">Travel all over Japan and complete a memory map that's yours alone. This app will record every step of the journey in full color.</span></p>
+                        <p class="ga-sign"><span class="i18n-ja">2025年1月</span><span class="i18n-en">January 2025</span><b><span class="i18n-ja">續橋 涼</span><span class="i18n-en">Ryo Tsuzukihashi</span></b></p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Download CTA Section -->
-    <section class="section">
-        <div class="container">
-            <div class="download-cta">
-                <h2 class="section-title">今すぐダウンロード</h2>
-                <p class="section-description">
-                    あなたの旅の思い出を、美しい地図に変えてみませんか？
-                </p>
-                
-                <div class="app-store-button">
-                    <a href="https://apps.apple.com/jp/app/%E6%97%85%E8%A1%8C%E6%80%9D%E3%81%84%E5%87%BA%E3%83%9E%E3%83%83%E3%83%97-%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AE%E5%86%99%E7%9C%9F%E3%81%8C%E5%9C%B0%E5%9B%B3%E3%81%AB%E3%81%AA%E3%82%8B/id6478291625" target="_blank" class="btn btn-primary btn-large">
-                        <svg class="apple-icon" viewBox="0 0 24 24" width="24" height="24">
-                            <path fill="currentColor" d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.09997 22C7.78997 22.05 6.79997 20.68 5.95997 19.47C4.24997 17 2.93997 12.45 4.69997 9.39C5.56997 7.87 7.12997 6.91 8.81997 6.88C10.1 6.86 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/>
-                        </svg>
-                        App Storeで無料ダウンロード
-                    </a>
-                </div>
-                
-                <p class="download-note">
-                    iOS 17.0以降対応 | 日本語対応
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Related Apps Section -->
-    <section class="section section-alt">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">その他のアプリ</h2>
-                <p class="section-description">
-                    他の作品もご覧ください
-                </p>
-            </div>
-            
-            <div class="related-apps">
-                <a href="/portfolio/apps/relaychat.html" class="related-app-card">
-                    <img src="../../assets/images/icon/relaychat.webp" alt="RelayChat" class="related-app-icon">
-                    <div class="related-app-info">
-                        <h3>RelayChat</h3>
-                        <p>圏外でも使えるオフライン会話アプリ</p>
-                    </div>
-                </a>
-
-                <a href="/portfolio/apps/kotonohabako.html" class="related-app-card">
-                    <img src="../../assets/images/icon/kotonohabako.png" alt="言の葉箱" class="related-app-icon">
-                    <div class="related-app-info">
-                        <h3><span class="i18n-ja">言の葉箱</span><span class="i18n-en">Kotonohabako</span></h3>
-                        <p>手紙をAIで検索できるデジタル宝物に</p>
-                    </div>
-                </a>
-                
-                <a href="/portfolio/" class="related-app-card">
-                    <div class="related-app-icon more-apps">
-                        <span>+24</span>
-                    </div>
-                    <div class="related-app-info">
-                        <h3>すべてのアプリ</h3>
-                        <p>ポートフォリオを見る</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-    </div>
-
-    <div class="i18n-en">
-    <!-- App Hero Section -->
-    <section class="app-hero">
-        <div class="glow-shapes">
-            <div class="glow-shape"></div>
-            <div class="glow-shape"></div>
-            <div class="glow-shape"></div>
-        </div>
-
-        <div class="container">
-            <div class="app-hero-content">
-                <div class="app-icon-wrapper">
-                    <img src="../../assets/images/icon/travel_memory_map.webp" alt="TravelMemoryMap" class="app-icon">
-                    <div class="app-icon-badge">Flagship</div>
-                </div>
-
-                <h1 class="app-title">TravelMemoryMap</h1>
-                <p class="app-tagline">Cut your photos into puzzle pieces and fill a map of Japan with your memories</p>
-
-                <div class="app-badges">
-                    <span class="badge badge-downloads">141,000+ Downloads</span>
-                    <span class="badge badge-rating">★4.7 Rating</span>
-                    <span class="badge badge-category">Travel & Memory</span>
-                </div>
-
-                <div class="app-cta">
-                    <a href="https://apps.apple.com/jp/app/%E6%97%85%E8%A1%8C%E6%80%9D%E3%81%84%E5%87%BA%E3%83%9E%E3%83%83%E3%83%97-%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AE%E5%86%99%E7%9C%9F%E3%81%8C%E5%9C%B0%E5%9B%B3%E3%81%AB%E3%81%AA%E3%82%8B/id6478291625" target="_blank" class="btn btn-primary">
-                        <svg class="apple-icon" viewBox="0 0 24 24" width="20" height="20">
-                            <path fill="currentColor" d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.09997 22C7.78997 22.05 6.79997 20.68 5.95997 19.47C4.24997 17 2.93997 12.45 4.69997 9.39C5.56997 7.87 7.12997 6.91 8.81997 6.88C10.1 6.86 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/>
-                        </svg>
-                        View on the App Store
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Inspiration Story Section -->
-    <section class="section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Story</span>
-                <h2 class="section-title">How It Started</h2>
-            </div>
-
-            <div class="story-content">
-                <div class="story-quote">
-                    <blockquote>
-                        "A travel poster made of printed photos, each cut into the shape of a prefecture and pasted onto a map of Japan.<br>
-                        I was moved by this wonderful idea when I came across it on social media."
-                    </blockquote>
-                </div>
-
-                <p class="story-text">
-                    In February 2021, I saw a post on social media. Someone had printed their travel photos, cut each one into the shape of the prefecture they'd visited, and pasted them onto a map of Japan. It was a memory poster that looked like a jigsaw puzzle.
-                </p>
-
-                <p class="story-text emphasis">
-                    "If this were an app, a lot more people could enjoy it, and much more easily."
-                </p>
-
-                <p class="story-text">
-                    That was the moment the idea for a new app was born. An app that lets you record your travel memories on a map with just your phone, with no printing and no scissors. That was the start of TravelMemoryMap (Travel Memory Map).
-                </p>
-
-                <p class="story-text">
-                    Drawing on ten years of indie development experience, I decided to bring the idea to life. My goal was an app that lets people who travel all over Japan build a memory map that's all their own.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="section section-alt">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Features</span>
-                <h2 class="section-title">Features</h2>
-                <p class="section-description">
-                    A new way to record and share your travel memories
-                </p>
-            </div>
-
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">📍</div>
-                    <h3 class="feature-title">Photos placed on prefectures</h3>
-                    <p class="feature-description">
-                        Your photos are cropped automatically into the shape of each prefecture you've visited. Piece by piece, like a puzzle, you fill the map of Japan with memories.
-                    </p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">🗾</div>
-                    <h3 class="feature-title">See your progress</h3>
-                    <p class="feature-description">
-                        See at a glance how many of the 47 prefectures you've visited. Your completion rate is shown as a percentage, which gives you a reason to keep traveling.
-                    </p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">📸</div>
-                    <h3 class="feature-title">Multiple photos per place</h3>
-                    <p class="feature-description">
-                        Save several photos for a single prefecture. Layer up the scenery from different seasons and the memories from every visit.
-                    </p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">📝</div>
-                    <h3 class="feature-title">Memory notes</h3>
-                    <p class="feature-description">
-                        Leave a note alongside your photos. Keep the date you visited, who you went with, and how it felt, in words as well.
-                    </p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">🎨</div>
-                    <h3 class="feature-title">Customizable map</h3>
-                    <p class="feature-description">
-                        Customize the map's colors and style to make a memory map that suits you.
-                    </p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">📤</div>
-                    <h3 class="feature-title">Share on social media</h3>
-                    <p class="feature-description">
-                        Save your finished memory map as an image and share it. Show off your travels on Instagram or Twitter.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Technology Section -->
-    <section class="section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Technology</span>
-                <h2 class="section-title">Technical Challenges</h2>
-            </div>
-
-            <div class="tech-content">
-                <div class="tech-card">
-                    <h3 class="tech-title">
-                        <span class="tech-icon">🗺️</span>
-                        High-precision map rendering
-                    </h3>
-                    <p class="tech-description">
-                        To reproduce the intricate shapes of the prefectures accurately, I built my own rendering engine on vector data. The result is a smooth, beautiful map.
-                    </p>
-                </div>
-
-                <div class="tech-card">
-                    <h3 class="tech-title">
-                        <span class="tech-icon">✂️</span>
-                        Real-time image cropping
-                    </h3>
-                    <p class="tech-description">
-                        Cropping photos into prefecture shapes automatically is done with Core Graphics. I developed an adjustment algorithm that makes any photo fit nicely.
-                    </p>
-                </div>
-
-                <div class="tech-card">
-                    <h3 class="tech-title">
-                        <span class="tech-icon">💾</span>
-                        Efficient data management
-                    </h3>
-                    <p class="tech-description">
-                        Core Data manages large numbers of photos and their metadata efficiently. The app is designed to run smoothly even offline.
-                    </p>
-                </div>
-
-                <div class="tech-card">
-                    <h3 class="tech-title">
-                        <span class="tech-icon">🎯</span>
-                        Intuitive UI/UX
-                    </h3>
-                    <p class="tech-description">
-                        SwiftUI brings smooth animations and intuitive controls. I aimed for an interface that first-time users can pick up without getting lost.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Achievements Section -->
-    <section class="section section-alt">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Achievements</span>
-                <h2 class="section-title">Milestones and Ratings</h2>
-            </div>
-
-            <div class="achievements-grid">
-                <div class="achievement-card">
-                    <div class="achievement-number">141,000+</div>
-                    <div class="achievement-label">Total downloads</div>
-                    <p class="achievement-description">
-                        Used by more than 140,000 people within three years of release
-                    </p>
-                </div>
-
-                <div class="achievement-card">
-                    <div class="achievement-number">★4.7</div>
-                    <div class="achievement-label">App Store rating</div>
-                    <p class="achievement-description">
-                        Highly rated across more than 280 reviews
-                    </p>
-                </div>
-
-                <div class="achievement-card">
-                    <div class="achievement-number">47 prefectures</div>
-                    <div class="achievement-label">Users who completed the map</div>
-                    <p class="achievement-description">
-                        More than 100 users have filled in every prefecture
-                    </p>
-                </div>
-
-                <div class="achievement-card">
-                    <div class="achievement-number">#40</div>
-                    <div class="achievement-label">Travel category</div>
-                    <p class="achievement-description">
-                        Has ranked in the App Store Travel category several times
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- User Reviews Section -->
-    <section class="section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Reviews</span>
-                <h2 class="section-title">What Users Say</h2>
-            </div>
-
-            <div class="reviews-grid">
-                <div class="review-card">
-                    <div class="review-rating">★★★★★</div>
-                    <h3 class="review-title">Travel got more fun!</h3>
-                    <p class="review-text">
-                        "Thanks to this app, I enjoy traveling twice as much. Watching the map fill up is so much fun that it makes me want to visit the prefectures I haven't been to yet."
-                    </p>
-                    <p class="review-author">- A travel lover</p>
-                </div>
-
-                <div class="review-card">
-                    <div class="review-rating">★★★★★</div>
-                    <h3 class="review-title">Perfect for organizing memories</h3>
-                    <p class="review-text">
-                        "The travel photos I'd taken and never looked at again became a lovely memory map with this app. I treasure it as a record of our family trips."
-                    </p>
-                    <p class="review-author">- A family traveler</p>
-                </div>
-
-                <div class="review-card">
-                    <div class="review-rating">★★★★★</div>
-                    <h3 class="review-title">Wonderful design</h3>
-                    <p class="review-text">
-                        "I love the simple, beautiful design. It's intuitive, and anyone can pick it up easily."
-                    </p>
-                    <p class="review-author">- A design fan</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Developer Message Section -->
-    <section class="section section-alt">
-        <div class="container">
-            <div class="developer-message">
-                <h2 class="section-title">From the Developer</h2>
-
-                <div class="message-content">
-                    <p>
-                        TravelMemoryMap is an app I made carefully around a single idea: drawing your travels onto a map.
-                    </p>
-
-                    <p>
-                        The project began with one post I saw on social media. Today it has become a tool that more than 140,000 people use to keep their travel memories.
-                    </p>
-
-                    <p class="emphasis">
-                        I'll keep updating it so it can go on helping you keep your precious memories beautifully.
-                    </p>
-
-                    <p>
-                        Travel all over Japan and complete a memory map that's yours alone. This app will record every step of the journey in full color.
-                    </p>
-
-                    <div class="signature">
-                        <p>January 2025</p>
-                        <p class="signature-name">Ryo Tsuzukihashi</p>
+                <div class="g-ypanel ga-get" style="margin-top:70px">
+                    <span class="g-cap g-cap--4"><img src="/assets/images/icon/travel_memory_map.webp" alt="" width="292" height="292" loading="lazy"></span>
+                    <div>
+                        <h2><span class="i18n-ja">今すぐダウンロード</span><span class="i18n-en">Download Now</span></h2>
+                        <p><span class="i18n-ja">あなたの旅の思い出を、美しい地図に変えてみませんか？</span><span class="i18n-en">Why not turn your travel memories into a beautiful map?</span></p>
+                        <a class="g-btn g-btn--k g-btn--big" href="https://apps.apple.com/jp/app/%E6%97%85%E8%A1%8C%E6%80%9D%E3%81%84%E5%87%BA%E3%83%9E%E3%83%83%E3%83%97-%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AE%E5%86%99%E7%9C%9F%E3%81%8C%E5%9C%B0%E5%9B%B3%E3%81%AB%E3%81%AA%E3%82%8B/id6478291625" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg><span class="i18n-ja">App Storeで無料ダウンロード</span><span class="i18n-en">Download Free on the App Store</span></a>
+                        <small><span class="i18n-ja">iOS 17.0以降対応 | 日本語対応</span><span class="i18n-en">iOS 17.0 or later | Japanese</span></small>
                     </div>
                 </div>
-            </div>
+
+                <div class="g-sh"><h2><span class="i18n-ja">同じ棚のカプセル</span><span class="i18n-en">More from the same shelf</span></h2><small><span class="i18n-ja">旅行・1種</span><span class="i18n-en">Travel · 1 app</span></small></div>
+                <div class="g-panel ga-shelf"><a class="g-mini" href="https://apps.apple.com/jp/app/%E3%83%91%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%88%E6%9C%9F%E9%99%90%E7%AE%A1%E7%90%86-passportalert/id6782294746?uo=4" target="_blank" rel="noopener"><span class="g-cap g-cap--4" style="--rot:0deg"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/dc/b1/69/dcb169ad-25fe-705e-9a47-f47985380cf3/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/256x256bb.jpg" alt="" width="256" height="256" loading="lazy"></span><span><span class="i18n-ja">パスポート期限管理</span><span class="i18n-en">PassportAlert</span></span><b class="g-rare g-rare--N">N</b></a></div>
+
+                <div class="g-sh"><h2><span class="i18n-ja">その他のアプリ</span><span class="i18n-en">More Apps</span></h2><small><span class="i18n-ja">他の作品もご覧ください</span><span class="i18n-en">Take a look at my other work too</span></small></div>
+                <div class="g-panel ga-shelf"><a class="g-mini" href="/portfolio/apps/relaychat.html"><span class="g-cap g-cap--4" style="--rot:-12deg"><img src="/assets/images/icon/relaychat.webp" alt="" width="460" height="460" loading="lazy"></span><span><span class="i18n-ja">RelayChat</span><span class="i18n-en">RelayChat</span></span><small><span class="i18n-ja">圏外でも使えるオフライン会話アプリ</span><span class="i18n-en">An offline chat app that works without signal</span></small></a><a class="g-mini" href="/portfolio/apps/kotonohabako.html"><span class="g-cap g-cap--6" style="--rot:10deg"><img src="/assets/images/icon/kotonohabako.png" alt="" width="1024" height="1024" loading="lazy"></span><span><span class="i18n-ja">言の葉箱</span><span class="i18n-en">Kotonohabako</span></span><small><span class="i18n-ja">手紙をAIで検索できるデジタル宝物に</span><span class="i18n-en">Turn your letters into digital keepsakes you can search with AI</span></small></a><a class="g-mini ga-more" href="/portfolio/"><span class="g-cap">→</span><span><span class="i18n-ja">すべてのアプリ</span><span class="i18n-en">All Apps</span></span><small><span class="i18n-ja">ポートフォリオを見る</span><span class="i18n-en">See the portfolio</span></small></a></div>
+
+                <div class="g-sh"><h2><span class="i18n-ja">このカプセルの冊子</span><span class="i18n-en">Reading about this app</span></h2></div>
+                <div class="ga-rel"><a class="g-panel" href="/blog/posts/app-travel-memory-map.html"><img src="/assets/images/posts/app-travel-memory-map.webp" alt="" width="1200" height="800" loading="lazy"><div><small><span class="i18n-ja">アプリ紹介</span><span class="i18n-en">App Spotlight</span></small><h3><span class="i18n-ja">旅行思い出マップ - 旅の記憶を、地図に描く</span><span class="i18n-en">TravelMemoryMap</span></h3></div></a></div>
         </div>
-    </section>
+    </main>
 
-    <!-- Download CTA Section -->
-    <section class="section">
-        <div class="container">
-            <div class="download-cta">
-                <h2 class="section-title">Download Now</h2>
-                <p class="section-description">
-                    Why not turn your travel memories into a beautiful map?
-                </p>
-
-                <div class="app-store-button">
-                    <a href="https://apps.apple.com/jp/app/%E6%97%85%E8%A1%8C%E6%80%9D%E3%81%84%E5%87%BA%E3%83%9E%E3%83%83%E3%83%97-%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AE%E5%86%99%E7%9C%9F%E3%81%8C%E5%9C%B0%E5%9B%B3%E3%81%AB%E3%81%AA%E3%82%8B/id6478291625" target="_blank" class="btn btn-primary btn-large">
-                        <svg class="apple-icon" viewBox="0 0 24 24" width="24" height="24">
-                            <path fill="currentColor" d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.09997 22C7.78997 22.05 6.79997 20.68 5.95997 19.47C4.24997 17 2.93997 12.45 4.69997 9.39C5.56997 7.87 7.12997 6.91 8.81997 6.88C10.1 6.86 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/>
-                        </svg>
-                        Download Free on the App Store
-                    </a>
-                </div>
-
-                <p class="download-note">
-                    iOS 17.0 or later | Japanese
-                </p>
+    <footer class="g-foot">
+            <img class="g-foot-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364" loading="lazy">
+            <div class="g-wrap">
+                <div><a href="/" class="g-foot-logo"><img src="/assets/images/logo/tsuzukit-wordmark-white.svg" alt="TsuzuKit" width="110" height="34"></a>
+                <p class="g-foot-tag"><span class="i18n-ja">誰も作らないものを、まじめに作る。</span><span class="i18n-en">Making what nobody else will, seriously.</span><br>Seriously Silly since 2016.</p></div>
+                <div class="g-foot-sns"><a href="https://x.com/tsuzuki817" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><img src="/assets/images/sns/x.png" alt="" width="22" height="22"></a><a href="https://www.instagram.com/tsuzuki817/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="/assets/images/sns/instagram.png" alt="" width="22" height="22"></a><a href="https://www.tiktok.com/@tsuzuki817" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><img src="/assets/images/sns/tiktok.png" alt="" width="22" height="22"></a><a href="https://www.youtube.com/@tsuzuki817" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><img src="/assets/images/sns/youtube.png" alt="" width="22" height="22"></a><a href="https://github.com/tsuzukihashi" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><img src="/assets/images/sns/github.png" alt="" width="22" height="22"></a></div>
+                <div class="g-foot-links"><a href="/contact/"><span class="i18n-ja">お問い合わせ</span><span class="i18n-en">Contact</span></a><a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a><a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a><a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a><a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a></div>
+                <p class="g-foot-copy">© 2026 Ryo Tsuzukihashi / TsuzuKit</p>
             </div>
-        </div>
-    </section>
-
-    <!-- Related Apps Section -->
-    <section class="section section-alt">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">More Apps</h2>
-                <p class="section-description">
-                    Take a look at my other work too
-                </p>
-            </div>
-
-            <div class="related-apps">
-                <a href="/portfolio/apps/relaychat.html" class="related-app-card">
-                    <img src="../../assets/images/icon/relaychat.webp" alt="RelayChat" class="related-app-icon">
-                    <div class="related-app-info">
-                        <h3>RelayChat</h3>
-                        <p>An offline chat app that works without signal</p>
-                    </div>
-                </a>
-
-                <a href="/portfolio/apps/kotonohabako.html" class="related-app-card">
-                    <img src="../../assets/images/icon/kotonohabako.png" alt="Kotonohabako" class="related-app-icon">
-                    <div class="related-app-info">
-                        <h3>Kotonohabako</h3>
-                        <p>Turn your letters into digital keepsakes you can search with AI</p>
-                    </div>
-                </a>
-
-                <a href="/portfolio/" class="related-app-card">
-                    <div class="related-app-icon more-apps">
-                        <span>+24</span>
-                    </div>
-                    <div class="related-app-info">
-                        <h3>All Apps</h3>
-                        <p>See the portfolio</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-    </div>
-
-    <!-- Footer -->
-    <footer style="background: var(--color-primary); color: var(--color-background); padding: 3rem 0; text-align: center;">
-        <div class="container">
-            <p style="color: var(--color-background); opacity: 0.8; margin-bottom: 1rem;">
-                © 2026 Ryo Tsuzukihashi. All rights reserved.
-            </p>
-            <p style="color: var(--color-background); opacity: 0.6; font-size: 0.875rem;">
-                Seriously Silly since 2016.
-            </p>
-            <div style="margin-top: 2rem;">
-                <a href="/legal/privacy-policy.html" style="color: var(--color-background); opacity: 0.6; margin: 0 1rem; text-decoration: none;"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
-                <a href="/legal/terms-of-service.html" style="color: var(--color-background); opacity: 0.6; margin: 0 1rem; text-decoration: none;"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
-                <a href="/legal/commercial-law.html" style="color: var(--color-background); opacity: 0.6; margin: 0 1rem; text-decoration: none;"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
-                <a href="/legal/disclaimer.html" style="color: var(--color-background); opacity: 0.6; margin: 0 1rem; text-decoration: none;"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a>
-            </div>
-        </div>
-    </footer>
-
-    <!-- JavaScript -->
-    <script>
-        // Navigation scroll effect
-        window.addEventListener('scroll', function() {
-            const nav = document.getElementById('nav');
-            if (window.scrollY > 50) {
-                nav.classList.add('scrolled');
-            } else {
-                nav.classList.remove('scrolled');
-            }
-        });
-
-        // Mobile menu toggle
-        const navToggle = document.getElementById('navToggle');
-        const navMenu = document.getElementById('navMenu');
-        
-        navToggle.addEventListener('click', function() {
-            navToggle.classList.toggle('active');
-            navMenu.classList.toggle('active');
-        });
-
-        // Smooth scroll for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Animate elements on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver(function(entries) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('animated');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, observerOptions);
-
-        // Observe elements
-        document.querySelectorAll('.feature-card, .tech-card, .achievement-card, .review-card').forEach(el => {
-            observer.observe(el);
-        });
-    </script>
+        </footer>
 </body>
 </html>

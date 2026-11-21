@@ -1,98 +1,79 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="/assets/js/lang.js"></script>
-        <meta name="title-en" content="Page not found - Ryo Tsuzukihashi">
-        <meta name="description-en" content="This page doesn't exist.">
-        <title>ページが見つかりません - Ryo Tsuzukihashi</title>
-        <meta name="robots" content="noindex">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/js/lang.js"></script>
+    <meta name="title-en" content="Page not found - Ryo Tsuzukihashi">
+    <meta name="description-en" content="This page doesn't exist.">
+    <title>ページが見つかりません - Ryo Tsuzukihashi</title>
+    <meta name="robots" content="noindex">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Anton&family=Saira+Condensed:wght@600;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap"
-            rel="stylesheet">
-        <link rel="stylesheet" href="/assets/css/tsuzukit.css">
-        <link rel="icon" type="image/x-icon" href="/favicon.ico">
-        <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
-        <!-- 背景を抜いているので、暗いタブバーでは黒が溶ける。そこだけ白抜きに差し替える -->
-        <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-dark-32x32.png" media="(prefers-color-scheme: dark)">
-        <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-dark-16x16.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <!-- 背景を抜いているので、暗いタブバーでは黒が溶ける。そこだけ白抜きに差し替える -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-dark-32x32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-dark-16x16.png" media="(prefers-color-scheme: dark)">
 
-        <style>
-            .nf-page { background: #f6f2ea; color: #14110c; min-height: 100vh; }
-            .nf-wrap {
-                max-width: 560px; margin: 0 auto; padding: 160px 20px 120px; text-align: center;
-            }
-            .nf-char { width: 170px; height: auto; display: block; margin: 0 auto 28px; }
-            .nf-code {
-                font-family: 'Anton', sans-serif; font-style: italic;
-                font-size: clamp(3.4rem, 12vw, 5.6rem); line-height: 1; margin-bottom: 14px;
-            }
-            .nf-title { font-size: 1.15rem; font-weight: 700; margin-bottom: 12px; }
-            .nf-text { color: #57514a; line-height: 2; font-size: 0.93rem; margin-bottom: 34px; }
-            .nf-links { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
-            .nf-links a {
-                display: inline-block; padding: 12px 24px; background: #fff;
-                border: 2px solid #14110c; border-radius: 999px; box-shadow: 5px 5px 0 #14110c;
-                color: #14110c; text-decoration: none; font-weight: 700; font-size: 0.9rem;
-                transition: transform 0.2s ease;
-            }
-            .nf-links a:hover { transform: translateY(-3px); }
-        </style>
-    </head>
-    <body class="nf-page">
-        <nav class="nav" id="nav">
-            <div class="nav-container">
-                <a href="/" class="nav-logo">TsuzuKit</a>
-                <div class="nav-menu" id="navMenu">
-                    <a href="/portfolio/" class="nav-link">Portfolio</a>
-                    <a href="/about/" class="nav-link">About</a>
-                    <a href="/blog/" class="nav-link">Blog</a>
-                    <a href="/contact/" class="nav-link">Contact</a>
-                </div>
-                <div class="nav-toggle" id="navToggle"><span></span><span></span><span></span></div>
+    <!-- ガチャの見た目（assets/css/gacha.css・docs/gacha-design.md） -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700;800&family=RocknRoll+One&display=swap">
+    <link rel="stylesheet" href="/assets/css/gacha.css">
+    <link rel="stylesheet" href="/assets/css/g-legal.css">
+    <script src="/assets/js/gacha.js" defer></script>
+    <!-- /ガチャの見た目 -->
+</head>
+<body class="g">
+    <header class="g-head" id="nav">
+            <div class="g-wrap">
+                <a href="/" class="g-logo"><img src="/assets/images/logo/tsuzukit-wordmark.svg" alt="TsuzuKit" width="116" height="36"></a>
+                <nav class="nav-menu" id="navMenu" aria-label="メニュー"><a href="/portfolio/" class="nav-link"><span class="i18n-ja">アプリ</span><span class="i18n-en">Apps</span></a><a href="/blog/" class="nav-link"><span class="i18n-ja">読みもの</span><span class="i18n-en">Reading</span></a><a href="/about/" class="nav-link"><span class="i18n-ja">私について</span><span class="i18n-en">About</span></a><a href="/contact/" class="nav-link"><span class="i18n-ja">お問い合わせ</span><span class="i18n-en">Contact</span></a></nav>
+                <button type="button" class="g-menu" id="navToggle" aria-controls="navMenu" aria-expanded="false">MENU</button>
             </div>
-        </nav>
+        </header>
 
-        <main class="nf-wrap">
-            <img class="nf-char" src="/assets/images/character-surprised.png" alt="" width="293" height="340">
-            <div class="nf-code">404</div>
-            <p class="nf-title"><span class="i18n-ja">このページはありません</span><span class="i18n-en">This page doesn't exist</span></p>
-            <p class="nf-text">
-                <span class="i18n-ja">消したか、名前を変えたか、そもそも作っていないかのどれかです。<br>
-                下から探し直してください。</span><span class="i18n-en">Either I deleted it, I renamed it, or I never made it in the first place.<br>
-                Try looking again from one of the links below.</span>
-            </p>
-            <div class="nf-links">
-                <a href="/"><span class="i18n-ja">トップへ</span><span class="i18n-en">Home</span></a>
-                <a href="/portfolio/"><span class="i18n-ja">アプリを見る</span><span class="i18n-en">See my apps</span></a>
-                <a href="/blog/"><span class="i18n-ja">ブログを読む</span><span class="i18n-en">Read the blog</span></a>
+    <main class="g-main g-wrap">
+        <div class="g-nf">
+            <div class="g-nf-art" aria-hidden="true">
+                <div class="g-burst"><div class="rays"></div><div class="bowl"></div><div class="lid"></div></div>
+                <img class="zz" src="/assets/images/character-sleep.png" alt="" width="254" height="288">
+                <span class="z z--1">z</span><span class="z z--2">z</span>
             </div>
-        </main>
+            <div>
+                <span class="g-nf-code">404</span>
+                <h1 class="g-title"><span class="i18n-ja">カプセルは<br>からっぽでした。</span><span class="i18n-en">This capsule<br>was empty.</span></h1>
+                <p class="g-nf-text"><span class="i18n-ja">さがしているページは、見つかりませんでした。URL が変わったか、なくなったのかもしれません。</span><span class="i18n-en">The page you were looking for wasn't found. The URL may have changed, or the page may be gone.</span></p>
+                <div class="g-btns">
+                    <a class="g-btn g-btn--k" href="/"><span class="i18n-ja">もう1回まわす</span><span class="i18n-en">Spin again</span></a>
+                    <a class="g-btn" href="/portfolio/"><span class="i18n-ja">ラインナップを見る</span><span class="i18n-en">See the lineup</span></a>
+                    <a class="g-btn" href="/contact/"><span class="i18n-ja">お客様窓口</span><span class="i18n-en">Help desk</span></a>
+                </div>
+            </div>
+        </div>
 
-        <footer class="footer">
-            <div class="footer-container">
-                <div class="footer-content">
-                    <div class="footer-brand">
-                        <a href="/" class="footer-logo">TsuzuKit</a>
-                        <p class="footer-tagline">Seriously Silly</p>
-                    </div>
-                    <div class="footer-links">
-                        <a href="/portfolio/">Portfolio</a>
-                        <a href="/about/">About</a>
-                        <a href="/blog/">Blog</a>
-                        <a href="/contact/">Contact</a>
-                    </div>
-                </div>
-                <div class="footer-bottom">
-                    <p>&copy; 2026 Ryo Tsuzukihashi. All rights reserved.</p>
-                </div>
+        <div class="g-sh"><h2><span class="i18n-ja">かわりに、これはどう？</span><span class="i18n-en">How about one of these?</span></h2></div>
+        <div class="g-panel g-nf-try">
+                <a class="g-mini" href="https://apps.apple.com/jp/app/ticketmania/id6444087177?uo=4" target="_blank" rel="noopener" style="--rot:-14deg"><span class="g-cap g-cap--1"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/fd/82/d3/fd82d384-ba76-dbac-1cf1-27b02f3c983e/AppIcon-0-0-1x_U007epad-0-1-85-220.png/60x60bb.jpg" alt="" width="60" height="60" loading="lazy"></span><span class="i18n-ja">TicketMania</span><span class="i18n-en">TicketMania</span></a>
+                <a class="g-mini" href="https://apps.apple.com/jp/app/relaychat-%E3%82%AA%E3%83%95%E3%83%A9%E3%82%A4%E3%83%B3%E5%8C%BF%E5%90%8Dbluetooth%E3%83%81%E3%83%A3%E3%83%83%E3%83%88/id6749299283?uo=4" target="_blank" rel="noopener" style="--rot:10deg"><span class="g-cap g-cap--2"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/eb/bc/17/ebbc17e6-d513-a7d3-2dc5-595febaa0beb/AppIcon-0-0-1x_U007epad-0-1-85-220.png/60x60bb.jpg" alt="" width="60" height="60" loading="lazy"></span><span class="i18n-ja">RelayChat</span><span class="i18n-en">RelayChat</span></a>
+                <a class="g-mini" href="https://apps.apple.com/jp/app/%E8%A8%80%E3%81%AE%E8%91%89%E7%AE%B1-%E5%A4%A7%E5%88%87%E3%81%AA%E6%89%8B%E7%B4%99%E3%82%92%E7%B0%A1%E5%8D%98%E3%81%AB%E8%A8%98%E9%8C%B2/id6749537777?uo=4" target="_blank" rel="noopener" style="--rot:-6deg"><span class="g-cap g-cap--3"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/39/9d/15/399d159d-d1b3-7547-f6f6-aa49dd81a7a5/AppIcon-0-0-1x_U007epad-0-1-85-220.png/60x60bb.jpg" alt="" width="60" height="60" loading="lazy"></span><span class="i18n-ja">言の葉箱</span><span class="i18n-en">Kotonohabako</span></a>
+                <a class="g-mini" href="https://apps.apple.com/jp/app/%E3%82%B3%E3%82%B9%E3%83%A1%E6%9C%9F%E9%99%90%E7%AE%A1%E7%90%86-cosmefresh/id6779972238?uo=4" target="_blank" rel="noopener" style="--rot:16deg"><span class="g-cap g-cap--4"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ee/a6/91/eea691a9-41b2-2e28-f904-15c3b7e4ff51/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/60x60bb.jpg" alt="" width="60" height="60" loading="lazy"></span><span class="i18n-ja">コスメ期限管理</span><span class="i18n-en">CosmeFresh</span></a>
+                <a class="g-mini" href="https://apps.apple.com/jp/app/%E3%82%B3%E3%82%A4%E3%83%B3%E3%82%B2%E3%83%BC%E3%83%A0%E3%82%B3%E3%83%AC%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3-%E3%83%AC%E3%83%88%E3%83%AD%E3%82%B2%E3%83%BC%E3%82%BB%E3%83%B3/id6788194878?uo=4" target="_blank" rel="noopener" style="--rot:-10deg"><span class="g-cap g-cap--5"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/35/a1/b9/35a1b995-28ab-2b25-309c-4d705e8947c1/AppIcon-0-0-1x_U007epad-0-1-85-220.png/60x60bb.jpg" alt="" width="60" height="60" loading="lazy"></span><span class="i18n-ja">コインゲームコレクション</span><span class="i18n-en">Coin Game Collection</span></a>
+                <a class="g-mini" href="https://apps.apple.com/jp/app/%E3%83%91%E3%82%BF%E3%83%91%E3%82%BF%E6%8E%A8%E3%81%97%E6%99%82%E8%A8%88-%E6%8E%A8%E3%81%97%E6%B4%BB%E3%81%AE%E7%BD%AE%E3%81%8D%E6%99%82%E8%A8%88%E3%82%A6%E3%82%A3%E3%82%B8%E3%82%A7%E3%83%83%E3%83%88/id6821502120?uo=4" target="_blank" rel="noopener" style="--rot:8deg"><span class="g-cap g-cap--6"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e0/cc/e3/e0cce3aa-5bc0-0249-f331-24f1b484f21f/AppIcon-0-0-1x_U007epad-0-1-85-220.png/60x60bb.jpg" alt="" width="60" height="60" loading="lazy"></span><span class="i18n-ja">パタパタ推し時計</span><span class="i18n-en">Oshi Clock</span></a>
+        </div>
+    </main>
+
+    <footer class="g-foot">
+            <img class="g-foot-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364" loading="lazy">
+            <div class="g-wrap">
+                <div><a href="/" class="g-foot-logo"><img src="/assets/images/logo/tsuzukit-wordmark-white.svg" alt="TsuzuKit" width="110" height="34"></a>
+                <p class="g-foot-tag"><span class="i18n-ja">誰も作らないものを、まじめに作る。</span><span class="i18n-en">Making what nobody else will, seriously.</span><br>Seriously Silly since 2016.</p></div>
+                <div class="g-foot-sns"><a href="https://x.com/tsuzuki817" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><img src="/assets/images/sns/x.png" alt="" width="22" height="22"></a><a href="https://www.instagram.com/tsuzuki817/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="/assets/images/sns/instagram.png" alt="" width="22" height="22"></a><a href="https://www.tiktok.com/@tsuzuki817" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><img src="/assets/images/sns/tiktok.png" alt="" width="22" height="22"></a><a href="https://www.youtube.com/@tsuzuki817" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><img src="/assets/images/sns/youtube.png" alt="" width="22" height="22"></a><a href="https://github.com/tsuzukihashi" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><img src="/assets/images/sns/github.png" alt="" width="22" height="22"></a></div>
+                <div class="g-foot-links"><a href="/contact/"><span class="i18n-ja">お問い合わせ</span><span class="i18n-en">Contact</span></a><a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a><a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a><a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a><a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a></div>
+                <p class="g-foot-copy">© 2026 Ryo Tsuzukihashi / TsuzuKit</p>
             </div>
         </footer>
-    </body>
+</body>
 </html>

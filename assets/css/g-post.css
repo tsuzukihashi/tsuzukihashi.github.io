@@ -1,0 +1,115 @@
+/*
+ * 読みもの（blog/posts/*.html）をガチャの見た目にする。
+ * 記事の中身は style.css / blog.css / guide.css / app-intro.css の部品のまま。ここでは
+ * 「水玉の地の上に置いた、白い冊子の板」に包み直し、見出しと字をガチャのものにそろえる。
+ * 記事の HTML には触らない（手で直した文が多いので）。docs/gacha-design.md
+ */
+
+body.g { color: var(--g-k); }
+
+/* ---------------------------------------------------------------- 冊子の板 */
+body.g .blog-post {
+  max-width: 880px; margin: 18px auto 0; padding: 44px 52px 40px; background: #fff;
+  border: var(--g-line) solid var(--g-k); border-radius: 30px; box-shadow: 10px 10px 0 var(--g-k); position: relative;
+}
+body.g .blog-post::before {
+  content: ''; position: absolute; right: -4px; top: -4px; border: 22px solid transparent;
+  border-right-color: var(--g-r); border-top-color: var(--g-r); border-top-right-radius: 28px;
+}
+body.g .post-header { max-width: none; margin: 0 0 28px; padding: 0; text-align: left; }
+body.g .blog-post .post-meta { justify-content: flex-start; flex-wrap: wrap; gap: 8px; margin: 0 0 14px; color: var(--g-k); font-size: 13px; }
+body.g .blog-post .post-meta > span {
+  display: inline-flex; align-items: center; background: var(--g-paper); border: 2.5px solid var(--g-k); border-radius: 999px;
+  padding: 2px 12px; font: 800 12.5px/1.6 var(--g-body);
+}
+body.g .blog-post .post-meta .post-category { background: var(--g-y); }
+body.g .post-title {
+  font: 400 38px/1.4 var(--g-head); font-style: normal; letter-spacing: 0; color: var(--g-k); margin: 0;
+  text-transform: none; word-break: auto-phrase; text-wrap: balance;
+}
+body.g .post-illustration { max-width: none; margin: 0 0 32px; padding: 0; }
+body.g .post-illustration img { width: 100%; height: auto; border: 3px solid var(--g-k); border-radius: 20px; display: block; margin: 0; }
+
+/* ---------------------------------------------------------------- 本文 */
+body.g .post-content { max-width: none; padding: 0; font: 500 16.5px/2 var(--g-body); color: #2f1c26; }
+body.g .post-content p { margin: 0 0 1.3em; }
+body.g .post-content h1,
+body.g .post-content h2 {
+  font: 400 25px/1.45 var(--g-head); color: var(--g-k); margin: 2.2em 0 .8em; padding: 0 0 0 46px; border: 0; position: relative;
+}
+body.g .post-content h1::before,
+body.g .post-content h2::before {
+  content: ''; position: absolute; left: 0; top: .1em; width: 34px; height: 34px; border-radius: 50%; border: 3px solid var(--g-k);
+  background: linear-gradient(var(--g-r) 0 48%, var(--g-k) 48% 54%, #fff 54%);
+}
+body.g .post-content h3 { font: 800 19px/1.6 var(--g-body); color: var(--g-k); margin: 1.8em 0 .6em; padding-bottom: 4px; border-bottom: 3px dashed rgba(42, 16, 32, .25); }
+body.g .post-content a { color: #d42c55; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 3px; }
+body.g .post-content a:hover { color: var(--g-k); background: rgba(255, 210, 63, .5); }
+body.g .post-content strong { font-weight: 800; background: linear-gradient(transparent 62%, rgba(255, 210, 63, .75) 62%); }
+body.g .post-content blockquote {
+  border: 3px solid var(--g-k); border-radius: 18px; background: var(--g-paper); font-style: normal; padding: 14px 20px;
+  box-shadow: 4px 4px 0 var(--g-k); margin: 1.5em 0;
+}
+body.g .post-content img { border-radius: 16px; }
+body.g .post-content table { border-collapse: collapse; }
+body.g .post-content code { background: var(--g-paper); border: 1.5px solid rgba(42, 16, 32, .25); border-radius: 6px; padding: 0 5px; font-size: .9em; }
+body.g .post-content pre code { border: 0; padding: 0; }
+
+/* ---------------------------------------------------------------- 前後の記事 */
+body.g .post-navigation { max-width: none; margin: 40px 0 0; padding: 22px 0 0; border-top: 3px dashed rgba(42, 16, 32, .3); gap: 12px; flex-wrap: wrap; }
+body.g .nav-link-wrapper {
+  background: #fff; border: 3px solid var(--g-k); border-radius: 999px; padding: 8px 18px; box-shadow: 4px 4px 0 var(--g-k);
+  font: 800 14px/1.4 var(--g-body); color: var(--g-k); text-decoration: none; transition: transform .12s, box-shadow .12s;
+}
+body.g .nav-link-wrapper:hover { color: var(--g-k); transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--g-k); background: var(--g-y); }
+
+/* ---------------------------------------------------------------- 広告の枠（docs/ads.md） */
+body.g .ad-slot-box { border-radius: 18px; }
+
+/* ---------------------------------------------------------------- アプリ紹介（app-*.html） */
+body.g .app-hero-section { padding: 18px 0 0; background: none; border: 0; }
+body.g .app-hero-inner {
+  max-width: 880px; padding: 30px 34px; background: var(--g-y); border: var(--g-line) solid var(--g-k); border-radius: 30px;
+  box-shadow: 10px 10px 0 var(--g-k); gap: 28px;
+}
+body.g .app-hero-icon { border: 4px solid var(--g-k); border-radius: 26%; box-shadow: 7px 7px 0 var(--g-k); transform: rotate(-5deg); background: #fff; }
+body.g .app-hero-title { font: 400 34px/1.35 var(--g-head); color: var(--g-k); font-style: normal; letter-spacing: 0; text-transform: none; }
+body.g .app-hero-badge { background: #fff; border: 2.5px solid var(--g-k); border-radius: 999px; font: 800 12.5px/1.6 var(--g-body); color: var(--g-k); }
+body.g .app-screenshots-section { background: none; border: 0; padding: 34px 0 26px; }
+body.g .app-screenshots-track img { border: 4px solid var(--g-k); border-radius: 22px; box-shadow: 7px 7px 0 var(--g-k); }
+body.g .app-article {
+  max-width: 880px; margin: 10px auto 0; padding: 40px 48px; background: #fff; border: var(--g-line) solid var(--g-k);
+  border-radius: 30px; box-shadow: 10px 10px 0 var(--g-k);
+}
+body.g .app-article h2 { font: 400 24px/1.45 var(--g-head); color: var(--g-k); letter-spacing: 0; font-style: normal; text-transform: none; }
+body.g .app-article p, body.g .app-article li { font-family: var(--g-body); color: #2f1c26; }
+body.g .app-info-section { background: var(--g-paper); border: 3px dashed var(--g-k); border-radius: 22px; }
+body.g .app-cta-section { background: var(--g-y); border: 3px solid var(--g-k); border-radius: 22px; box-shadow: 5px 5px 0 var(--g-k); color: var(--g-k); }
+body.g .app-cta-section h2, body.g .app-cta-section p { color: var(--g-k); }
+body.g .app-cta-btn {
+  background: var(--g-k); color: #fff; border: 3px solid var(--g-k); border-radius: 999px; box-shadow: 4px 4px 0 rgba(0, 0, 0, .25);
+  font: 800 15px/1.4 var(--g-body);
+}
+body.g .app-post-footer { background: none; border: 0; }
+body.g .app-post-footer a {
+  display: inline-block; background: #fff; border: 3px solid var(--g-k); border-radius: 999px; padding: 8px 18px;
+  box-shadow: 4px 4px 0 var(--g-k); font: 800 14px/1.4 var(--g-body); color: var(--g-k);
+}
+
+/* アプリ紹介の記事は、絵が板の外（body の直下）にある。板と同じ幅にそろえる */
+body.g > .post-illustration { max-width: 880px; margin: 28px auto 0; padding: 0; }
+body.g > .post-illustration img { box-shadow: 8px 8px 0 var(--g-k); border-width: 4px; border-radius: 26px; }
+
+/* ---------------------------------------------------------------- スマホ */
+@media (max-width: 720px) {
+  body.g .blog-post { margin: 8px 12px 0; padding: 26px 18px 26px; border-radius: 22px; box-shadow: 6px 6px 0 var(--g-k); }
+  body.g .post-title { font-size: 26px; }
+  body.g .post-content { font-size: 15.5px; }
+  body.g .post-content h1, body.g .post-content h2 { font-size: 20px; padding-left: 38px; }
+  body.g .post-content h1::before, body.g .post-content h2::before { width: 28px; height: 28px; }
+  body.g .app-hero-inner { margin: 0 12px; padding: 22px 18px; border-radius: 22px; box-shadow: 6px 6px 0 var(--g-k); gap: 16px; }
+  body.g .app-hero-title { font-size: 24px; }
+  body.g .app-article { margin: 6px 12px 0; padding: 26px 18px; border-radius: 22px; box-shadow: 6px 6px 0 var(--g-k); }
+  body.g .app-screenshots-track img { height: 380px; }
+  body.g > .post-illustration { margin: 20px 12px 0; }
+}

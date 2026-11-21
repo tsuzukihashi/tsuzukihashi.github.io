@@ -1,0 +1,179 @@
+/*
+ * 規約（legal/*.html）と 404 の組み方。土台と部品は gacha.css（docs/gacha-design.md）。
+ *
+ * 規約は「機械の横の注意書き」。左に黄色い札（目次）、右に節ごとの白い板。
+ * 規約の文は全部出しておく（たたまない・隠さない）。
+ * 404 は「からっぽのカプセル」。ふたの開いたカプセルでキャラが寝ている。
+ */
+
+/* ================================================================ 規約 */
+.g-legal .g-lg {
+  display: grid; grid-template-columns: 290px minmax(0, 1fr); grid-template-areas: "note head" "note body";
+  grid-template-rows: auto 1fr; gap: 0 32px; align-items: start; margin-top: 18px;
+}
+.g-legal .g-lnote { grid-area: note; }
+.g-legal .g-lhead { grid-area: head; min-width: 0; }
+.g-legal .g-lbody { grid-area: body; min-width: 0; }
+
+/* 左の黄色い札（目次） */
+.g-legal .g-lnote {
+  position: sticky; top: 20px; padding: 20px 18px 16px;
+  max-height: calc(100vh - 40px); overflow-y: auto; overscroll-behavior: contain;
+}
+.g-legal .g-lnote-warn { display: flex; gap: 10px; align-items: center; font: 400 21px/1.3 var(--g-head); }
+.g-legal .g-lnote-warn i {
+  font-style: normal; flex: none; width: 36px; height: 36px; display: grid; place-items: center;
+  background: var(--g-k); color: var(--g-y); border-radius: 9px; font: 400 21px/1 var(--g-head);
+}
+.g-legal .g-lnote-sub { font: 800 12.5px/1.6 var(--g-body); margin: 8px 0 12px; text-wrap: balance; }
+.g-legal .g-ltoc li { border-top: 2px dashed rgba(42, 16, 32, .25); }
+.g-legal .g-ltoc a { display: flex; gap: 8px; align-items: flex-start; padding: 8px 2px; font: 800 13.5px/1.5 var(--g-body); }
+.g-legal .g-ltoc a:hover span { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 3px; }
+.g-legal .g-ltoc b {
+  flex: none; min-width: 32px; text-align: center; font: 400 12px/18px var(--g-head);
+  background: #fff; border: 2px solid var(--g-k); border-radius: 999px; padding: 0 5px; margin-top: 1px;
+}
+.g-legal .g-ltoc b.is-blank {
+  color: transparent; min-width: 0; width: 22px; height: 22px; padding: 0; margin: 0 5px; border-radius: 50%;
+  background: linear-gradient(var(--g-r) 0 46%, var(--g-k) 46% 56%, #fff 56%);
+}
+
+/* 見出し */
+.g-legal .g-lsub {
+  display: inline-block; background: var(--g-k); color: #fff; border-radius: 999px;
+  padding: 3px 12px; font: 800 12.5px/1.5 var(--g-body); margin-bottom: 8px;
+}
+.g-legal .g-lhead .g-title { overflow-wrap: anywhere; }
+.g-legal .g-lupd {
+  display: inline-block; background: #fff; border: 3px solid var(--g-k); border-radius: 999px;
+  padding: 5px 15px; font: 800 13.5px/1.5 var(--g-body); margin: 16px 0 4px; box-shadow: 3px 3px 0 var(--g-k);
+}
+
+/* 英語版の「訳です」のお知らせ */
+.g-legal .g-ldoc .notice-box {
+  margin-top: 22px; background: var(--g-paper); border: var(--g-line) dashed var(--g-k); border-radius: 22px;
+  padding: 14px 20px; font: 700 15px/1.8 var(--g-body); color: #2f1c26;
+}
+
+/* 節（白い板） */
+.g-legal .g-lsec { padding: 26px 30px 24px; margin-top: 24px; scroll-margin-top: 20px; color: #2f1c26; }
+.g-legal .g-lsec h2 {
+  display: flex; gap: 12px; align-items: center; font: 400 22px/1.45 var(--g-head); color: var(--g-k);
+  margin-bottom: 12px; overflow-wrap: anywhere;
+}
+.g-legal .g-lnum {
+  --c: var(--g-c1);
+  flex: none; width: 42px; height: 42px; border-radius: 50%; border: 3px solid var(--g-k);
+  display: grid; place-items: center; font: 400 14px/1 var(--g-head); color: var(--g-k);
+  background: linear-gradient(var(--c) 0 47%, var(--g-k) 47% 53%, #fff 53%);
+}
+.g-legal .g-lnum i { font-style: normal; background: #fff; border: 2px solid var(--g-k); border-radius: 999px; padding: 2px 4px 1px; line-height: 1; }
+.g-legal .g-lsec p { font: 500 16px/2 var(--g-body); margin: 10px 0; }
+.g-legal .g-lsec p:first-child { margin-top: 0; }
+.g-legal .g-lsec em { font-style: normal; display: block; color: #4a3640; font-size: 15px; line-height: 1.95; }
+.g-legal .g-lsec strong { font-weight: 800; }
+.g-legal .g-lsec a { color: #d42c55; text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 2px; overflow-wrap: anywhere; }
+
+/* 箇条書き（ul は小さなカプセル、ol は番号の玉。番号も規約の一部なので必ず出す） */
+.g-legal .g-lsec ul, .g-legal .g-lsec ol { margin: 8px 0 12px; }
+.g-legal .g-lsec li { position: relative; font: 500 15.5px/1.95 var(--g-body); margin: 5px 0; }
+.g-legal .g-lsec ul > li { padding-left: 24px; }
+.g-legal .g-lsec ul > li::before {
+  content: ''; position: absolute; left: 4px; top: .72em; width: 11px; height: 11px; border-radius: 50%;
+  background: linear-gradient(var(--g-r) 0 46%, var(--g-k) 46% 56%, #fff 56%); border: 2px solid var(--g-k);
+}
+.g-legal .g-lsec ol { counter-reset: gl; }
+.g-legal .g-lsec ol > li { counter-increment: gl; padding-left: 34px; }
+.g-legal .g-lsec ol > li::before {
+  content: counter(gl); position: absolute; left: 0; top: .3em; width: 24px; height: 24px; border-radius: 50%;
+  background: var(--g-y); border: 2px solid var(--g-k); font: 400 12.5px/20px var(--g-head); text-align: center;
+}
+.g-legal .g-lsec li > ul, .g-legal .g-lsec li > ol { margin: 6px 0 4px; }
+
+/* 問い合わせ先 */
+.g-legal .g-lsec .contact-info {
+  background: var(--g-paper); border: 3px dashed var(--g-k); border-radius: 18px; padding: 12px 18px; margin-top: 12px;
+}
+.g-legal .g-lsec .contact-info p { margin: 2px 0; font-weight: 800; overflow-wrap: anywhere; }
+
+/* 特商法の表 */
+.g-legal .g-lsec .legal-table { width: 100%; border-collapse: separate; border-spacing: 0; border: 3px solid var(--g-k); border-radius: 18px; overflow: hidden; }
+.g-legal .g-lsec .legal-table th, .g-legal .g-lsec .legal-table td {
+  padding: 12px 16px; text-align: left; vertical-align: top; font: 500 15.5px/1.85 var(--g-body);
+  border-bottom: 2px solid var(--g-k);
+}
+.g-legal .g-lsec .legal-table tr:last-child th, .g-legal .g-lsec .legal-table tr:last-child td { border-bottom: 0; }
+.g-legal .g-lsec .legal-table th { width: 30%; background: var(--g-y); font-weight: 800; border-right: 2px solid var(--g-k); }
+
+/* 前後の書類へ */
+.g-legal .g-ldoc .legal-nav { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+.g-legal .g-ldoc .legal-nav-link {
+  display: inline-flex; align-items: center; background: #fff; border: 3px solid var(--g-k); border-radius: 999px;
+  padding: 10px 20px; font: 800 14.5px/1.5 var(--g-body); box-shadow: 4px 4px 0 var(--g-k);
+  transition: transform .12s, box-shadow .12s;
+}
+.g-legal .g-ldoc .legal-nav-link:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--g-k); background: var(--g-y); }
+
+@media (max-width: 900px) {
+  /* 狭い画面は 見出し → 目次 → 本文 の順に縦に積む */
+  .g-legal .g-lg { grid-template-columns: minmax(0, 1fr); grid-template-areas: "head" "note" "body"; grid-template-rows: auto; }
+  .g-legal .g-lnote { position: static; max-height: none; overflow: visible; margin-top: 22px; }
+}
+@media (max-width: 720px) {
+  .g-legal .g-lg { margin-top: 8px; }
+  .g-legal .g-lnote { padding: 16px 14px 12px; }
+  .g-legal .g-ltoc a { font-size: 13.5px; }
+  .g-legal .g-lsec { padding: 20px 18px 18px; margin-top: 18px; }
+  .g-legal .g-lsec h2 { font-size: 19px; gap: 10px; }
+  .g-legal .g-lnum { width: 36px; height: 36px; font-size: 12.5px; }
+  .g-legal .g-lsec p { font-size: 15.5px; line-height: 1.95; }
+  .g-legal .g-lsec li { font-size: 15px; }
+  .g-legal .g-lsec .legal-table, .g-legal .g-lsec .legal-table tbody, .g-legal .g-lsec .legal-table tr, .g-legal .g-lsec .legal-table th, .g-legal .g-lsec .legal-table td { display: block; width: 100%; }
+  .g-legal .g-lsec .legal-table th { border-right: 0; border-bottom: 2px solid var(--g-k); padding: 8px 14px; }
+  .g-legal .g-lsec .legal-table td { padding: 10px 14px 12px; font-size: 15px; }
+  .g-legal .g-lsec .legal-table tr:last-child th { border-bottom: 2px solid var(--g-k); }
+  .g-legal .g-ldoc .legal-nav-link { font-size: 13.5px; padding: 9px 16px; }
+}
+
+/* ================================================================ 404 */
+.g-nf { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 36px; align-items: center; min-height: 560px; padding-top: 10px; }
+.g-nf-art { position: relative; }
+.g-nf-art .g-burst { --c: var(--g-c2); }
+.g-nf-art .rays { opacity: .45; }
+.g-nf-art .zz { position: absolute; left: 29%; bottom: 21%; width: 42%; z-index: 2; height: auto; }
+.g-nf-art .z {
+  position: absolute; color: #fff; font: 400 34px/1 var(--g-head);
+  -webkit-text-stroke: 3px var(--g-k); paint-order: stroke fill; z-index: 3;
+  animation: g-nf-z 2.6s ease-in-out infinite;
+}
+.g-nf-art .z--1 { left: 64%; top: 38%; }
+.g-nf-art .z--2 { left: 73%; top: 28%; font-size: 26px; animation-delay: .6s; }
+@keyframes g-nf-z { 0%, 100% { transform: translateY(0); opacity: .9; } 50% { transform: translateY(-10px); opacity: 1; } }
+.g-nf-code {
+  display: inline-block; background: var(--g-y); border: 3px solid var(--g-k); border-radius: 999px;
+  padding: 4px 18px; font: 400 22px/1.4 var(--g-head); margin-bottom: 14px; box-shadow: 3px 3px 0 var(--g-k);
+}
+.g-nf h1 { font-size: 62px; line-height: 1.25; }
+.g-nf .g-nf-text {
+  font: 800 16.5px/1.85 var(--g-body); background: #fff; border: 3px solid var(--g-k); border-radius: 18px;
+  padding: 13px 18px; margin: 20px 0 18px; box-shadow: 5px 5px 0 var(--g-k); max-width: 520px;
+}
+.g-nf .g-btn--k { color: #fff; }  /* body.g a の color:inherit に負けるので、ここで白に戻す */
+.g-nf-try { display: flex; flex-wrap: wrap; justify-content: space-around; gap: 18px 12px; padding: 24px 22px 20px; }
+.g-nf-try .g-mini { width: 120px; font-size: 12.5px; }
+.g-nf-try .g-mini .g-cap { width: 92px; }
+
+@media (max-width: 860px) {
+  .g-nf { grid-template-columns: 1fr; min-height: 0; gap: 4px; }
+  .g-nf-art .g-burst { max-width: 340px; }
+}
+@media (max-width: 720px) {
+  .g-nf h1 { font-size: 38px; }
+  .g-nf-art .g-burst { max-width: 290px; }
+  .g-nf-art .z { font-size: 26px; -webkit-text-stroke-width: 2.5px; }
+  .g-nf-art .z--2 { font-size: 21px; }
+  .g-nf .g-nf-text { font-size: 15px; }
+  .g-nf-try { padding: 18px 12px 14px; gap: 14px 6px; }
+  .g-nf-try .g-mini { width: 96px; font-size: 12px; }
+  .g-nf-try .g-mini .g-cap { width: 72px; }
+}

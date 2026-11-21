@@ -27,16 +27,6 @@
         <meta name="twitter:description" content="87本のアプリを累計ダウンロード数の多い順に。">
         <meta name="twitter:image" content="https://tsuzukit.com/assets/images/ogp/portfolio.png">
 
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Anton&family=Saira+Condensed:wght@600;700;800&family=Noto+Sans+JP:wght@400;500;700;900&display=swap"
-            rel="stylesheet">
-
-        <!-- CSS -->
-        <link rel="stylesheet" href="../../assets/css/tsuzukit.css">
-
         <!-- Favicon -->
         <link rel="icon" type="image/x-icon" href="/favicon.ico">
         <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -58,898 +48,768 @@
         <!-- Google AdSense（持ち主の確認だけ。このページに広告は出さない。docs/ads.md） -->
         <meta name="google-adsense-account" content="ca-pub-8240751277462688">
 
-        <style>
-            :root {
-                --rk-bg: #f6f2ea;
-                --rk-ink: #14110c;
-                --rk-muted: #57514a;
-                --rk-purple: #8b3df5;
-                --rk-cyan: #0bb4c4;
-                --rk-pink: #ff3d7f;
-                --rk-yellow: #ffc107;
-            }
-            .rk-page { background: var(--rk-bg); color: var(--rk-ink); }
-            .rk-wrap { max-width: 960px; margin: 0 auto; padding: 0 20px; }
-
-            .rk-hero { padding: 120px 0 56px; text-align: center; }
-            .rk-badge {
-                display: inline-block; font-family: 'Saira Condensed', sans-serif; font-style: italic;
-                font-weight: 800; letter-spacing: 0.16em; font-size: 0.85rem; color: var(--rk-purple);
-                margin-bottom: 14px;
-            }
-            .rk-title {
-                font-family: 'Anton', 'Noto Sans JP', sans-serif; font-style: italic;
-                font-size: clamp(2.4rem, 6vw, 4rem); line-height: 1.05; margin-bottom: 18px;
-            }
-            .rk-lead { color: var(--rk-muted); font-size: 1rem; line-height: 1.8; }
-            .rk-total {
-                display: inline-block; margin-top: 26px; background: #fff;
-                border: 2px solid var(--rk-ink); border-radius: 18px; box-shadow: 8px 8px 0 var(--rk-ink);
-                padding: 18px 30px;
-            }
-            .rk-total b {
-                display: block; font-family: 'Anton', sans-serif; font-style: italic;
-                font-size: 2.6rem; line-height: 1;
-            }
-            .rk-total span {
-                font-family: 'Saira Condensed', sans-serif; font-style: italic; font-weight: 700;
-                letter-spacing: 0.1em; font-size: 0.8rem; color: var(--rk-muted); text-transform: uppercase;
-            }
-
-            .rk-total em { display: block; margin-top: 8px; font-style: normal; font-size: 0.78rem; color: var(--rk-muted); }
-            .rk-sub { display: block; font-size: 0.72rem; color: var(--rk-muted); margin-top: 2px; }
-            .rk-podiums { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin: 10px 0 50px; position: relative; }
-            /* 1位の表彰台の裏から覗いているやつ */
-            .rk-podium-char {
-                position: absolute; left: 6px; bottom: 100%; width: 94px; height: auto;
-                display: block; pointer-events: none;
-            }
-            .rk-podium {
-                background: #fff; border: 2px solid var(--rk-ink); border-radius: 20px;
-                padding: 26px 18px 22px; text-align: center; text-decoration: none; color: inherit;
-                position: relative; display: block; transition: transform 0.2s ease;
-            }
-            .rk-podium:nth-child(1) { box-shadow: 9px 9px 0 var(--rk-ink); }
-            .rk-podium:nth-child(2) { box-shadow: 9px 9px 0 var(--rk-ink); }
-            .rk-podium:nth-child(3) { box-shadow: 9px 9px 0 var(--rk-ink); }
-            .rk-podium:hover { transform: translateY(-4px); }
-            .rk-podium-rank {
-                font-family: 'Anton', sans-serif; font-style: italic; font-size: 2.2rem;
-                line-height: 1; color: var(--rk-ink); margin-bottom: 12px;
-            }
-            .rk-podium-icon img { width: 84px; height: 84px; border-radius: 20px; border: 2px solid var(--rk-ink); display: block; margin: 0 auto 14px; }
-            .rk-podium-name { font-size: 0.95rem; font-weight: 700; line-height: 1.5; margin-bottom: 10px; min-height: 2.9em; }
-            .rk-podium-units { font-family: 'Anton', sans-serif; font-style: italic; font-size: 1.9rem; line-height: 1; }
-            .rk-podium-label {
-                font-family: 'Saira Condensed', sans-serif; font-style: italic; font-weight: 700;
-                font-size: 0.72rem; letter-spacing: 0.1em; color: var(--rk-muted);
-                text-transform: uppercase; margin-top: 6px;
-            }
-
-            .rk-list {
-                background: #fff; border: 2px solid var(--rk-ink); border-radius: 20px;
-                box-shadow: 8px 8px 0 var(--rk-ink); overflow: hidden;
-            }
-            .rk-row {
-                display: grid; grid-template-columns: 44px 44px minmax(0, 1fr) 150px 84px;
-                align-items: center; gap: 14px; padding: 12px 20px;
-                border-bottom: 1px solid rgba(20, 17, 12, 0.1);
-                text-decoration: none; color: inherit;
-            }
-            .rk-row:last-child { border-bottom: none; }
-            .rk-row:hover { background: #faf7f1; }
-            .rk-row--ended { color: var(--rk-muted); }
-            .rk-rank { font-family: 'Anton', sans-serif; font-style: italic; font-size: 1.15rem; text-align: right; }
-            .rk-icon img { width: 40px; height: 40px; border-radius: 10px; border: 1px solid rgba(20,17,12,0.16); display: block; }
-            .rk-noicon {
-                display: flex; align-items: center; justify-content: center; width: 40px; height: 40px;
-                border-radius: 10px; border: 1px dashed rgba(20,17,12,0.3); font-size: 0.75rem; color: var(--rk-muted);
-            }
-            .rk-name { font-size: 0.92rem; font-weight: 500; line-height: 1.45; overflow-wrap: anywhere; }
-            .rk-ended {
-                display: inline-block; margin-left: 8px; font-size: 0.68rem; padding: 1px 7px;
-                border: 1px solid rgba(20,17,12,0.25); border-radius: 999px; color: var(--rk-muted); white-space: nowrap;
-            }
-            .rk-bar { display: block; height: 10px; background: rgba(20,17,12,0.08); border-radius: 999px; overflow: hidden; }
-            .rk-bar i { display: block; height: 100%; background: var(--rk-ink); border-radius: 999px; }
-            .rk-units { font-family: 'Saira Condensed', sans-serif; font-style: italic; font-weight: 800; font-size: 1rem; text-align: right; white-space: nowrap; }
-
-            .rk-subtitle {
-                font-family: 'Anton', 'Noto Sans JP', sans-serif; font-style: italic;
-                font-size: clamp(1.6rem, 4vw, 2.2rem); margin: 56px 0 10px;
-            }
-            .rk-subnote { color: var(--rk-muted); font-size: 0.9rem; line-height: 1.8; margin-bottom: 20px; }
-            .rk-subnote strong { color: var(--rk-ink); }
-            .rk-list--android { box-shadow: 8px 8px 0 var(--rk-ink); }
-            .rk-bar--and { background: var(--rk-cyan) !important; }
-            .rk-note { margin: 28px 0 90px; font-size: 0.8rem; line-height: 1.9; color: var(--rk-muted); }
-            .rk-back { display: inline-block; margin-top: 18px; font-weight: 700; color: var(--rk-purple); text-decoration: none; }
-            .rk-back:hover { text-decoration: underline; }
-
-            @media (max-width: 720px) {
-                .rk-hero { padding: 100px 0 40px; }
-                .rk-podiums { grid-template-columns: 1fr; gap: 16px; margin-bottom: 36px; }
-                .rk-podium-name { min-height: 0; }
-                .rk-row { grid-template-columns: 34px 36px minmax(0, 1fr) 68px; gap: 10px; padding: 11px 14px; }
-                .rk-bar { display: none; }
-                .rk-icon img, .rk-noicon { width: 36px; height: 36px; }
-                .rk-name { font-size: 0.86rem; }
-                .rk-units { font-size: 0.9rem; }
-            }
-        </style>
+        <!-- ガチャの見た目（assets/css/gacha.css・docs/gacha-design.md） -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700;800&family=RocknRoll+One&display=swap">
+        <link rel="stylesheet" href="/assets/css/gacha.css">
+        <link rel="stylesheet" href="/assets/css/g-apps.css">
+        <script src="/assets/js/gacha.js" defer></script>
+        <!-- /ガチャの見た目 -->
     </head>
-    <body class="rk-page">
-        <!-- Navigation -->
-        <nav class="nav" id="nav">
-            <div class="nav-container">
-                <a href="/" class="nav-logo">TsuzuKit</a>
-                <div class="nav-menu" id="navMenu">
-                    <a href="/portfolio/" class="nav-link active">Portfolio</a>
-                    <a href="/about/" class="nav-link">About</a>
-                    <a href="/blog/" class="nav-link">Blog</a>
-                    <a href="/contact/" class="nav-link">Contact</a>
-                </div>
-                <div class="nav-toggle" id="navToggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+    <body class="g">
+        <header class="g-head" id="nav">
+            <div class="g-wrap">
+                <a href="/" class="g-logo"><img src="/assets/images/logo/tsuzukit-wordmark.svg" alt="TsuzuKit" width="116" height="36"></a>
+                <nav class="nav-menu" id="navMenu" aria-label="メニュー"><a href="/portfolio/" class="nav-link" aria-current="page"><span class="i18n-ja">アプリ</span><span class="i18n-en">Apps</span></a><a href="/blog/" class="nav-link"><span class="i18n-ja">読みもの</span><span class="i18n-en">Reading</span></a><a href="/about/" class="nav-link"><span class="i18n-ja">私について</span><span class="i18n-en">About</span></a><a href="/contact/" class="nav-link"><span class="i18n-ja">お問い合わせ</span><span class="i18n-en">Contact</span></a></nav>
+                <button type="button" class="g-menu" id="navToggle" aria-controls="navMenu" aria-expanded="false">MENU</button>
             </div>
-        </nav>
+        </header>
 
-        <main>
-            <section class="rk-hero">
-                <div class="rk-wrap">
-                    <span class="rk-badge">Download Ranking</span>
-                    <h1 class="rk-title i18n-ja">どれが一番<br>使われているか</h1>
-                    <h1 class="rk-title i18n-en">Which ones<br>get used the most</h1>
-                    <p class="rk-lead i18n-ja">
-                        App Storeに出した87本を、配信開始から今日までの累計ダウンロード数で並べました。<br>
-                        Google Playの分も下にまとめています。
-                    </p>
-                    <p class="rk-lead i18n-en">
-                        Here are the 87 apps I've released on the App Store, ranked by total downloads from launch to today.<br>
-                        The Google Play numbers are further down.
-                    </p>
-                    <div class="rk-total">
-                        <b>799,240</b>
+        <main class="g-main">
+            <div class="g-wrap">
+                <nav class="g-crumb" aria-label="パンくず" data-en-aria-label="Breadcrumb"><a href="/"><span class="i18n-ja">トップ</span><span class="i18n-en">Home</span></a><span>＞</span><a href="/portfolio/"><span class="i18n-ja">ラインナップ</span><span class="i18n-en">Lineup</span></a><span>＞</span><b><span class="i18n-ja">ダウンロードランキング</span><span class="i18n-en">Download Ranking</span></b></nav>
+
+                <section class="ga-rk-hero">
+                    <div>
+                        <h1 class="g-title i18n-ja">どれが一番<br>使われているか</h1>
+                        <h1 class="g-title i18n-en">Which ones<br>get used the most</h1>
+                        <p class="g-bubble i18n-ja">
+                            App Storeに出した87本を、配信開始から今日までの累計ダウンロード数で並べました。<br>
+                            Google Playの分も下にまとめています。
+                        </p>
+                        <p class="g-bubble i18n-en">
+                            Here are the 87 apps I've released on the App Store, ranked by total downloads from launch to today.<br>
+                            The Google Play numbers are further down.
+                        </p>
+                    </div>
+                    <div class="g-ypanel ga-rk-total">
                         <span>Total Downloads</span>
+                        <b>799,240</b>
                         <em>App Store 733,155 ＋ Google Play 66,085</em>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <div class="rk-wrap">
-                <div class="rk-podiums">
-                <img class="rk-podium-char" src="/assets/images/character-cheer.png" alt="" width="318" height="315">
-                <a class="rk-podium" href="https://apps.apple.com/jp/app/%E3%81%86%E3%82%93%E3%81%A1%E3%81%8F%E3%82%93-ai%E5%81%A5%E5%BA%B7%E8%A8%98%E9%8C%B2-%E3%81%86%E3%82%93%E3%83%88%E3%83%A2/id6758856276?uo=4" target="_blank" rel="noopener">
-                    <div class="rk-podium-rank">1</div>
-                    <div class="rk-podium-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/03/e1/5d/03e15da9-4b6e-1a61-0eb6-1e8bcaeb4657/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg" alt="" loading="lazy"></div>
-                    <h3 class="rk-podium-name"><span class="i18n-ja">うんちくん AI健康記録&amp;うんトモ</span><span class="i18n-en">UNCHIKUN: Poop Log &amp; AI Health</span></h3>
-                    <div class="rk-podium-units"><span class="i18n-ja">23万</span><span class="i18n-en">230K</span></div>
-                    <div class="rk-podium-label"><span class="i18n-ja">ダウンロード</span><span class="i18n-en">Downloads</span></div>
+                <div class="ga-podiums">
+                    <img class="ga-podium-char" src="/assets/images/character-cheer.png" alt="" width="318" height="315">
+                <a class="g-panel ga-podium ga-podium--2" href="https://apps.apple.com/jp/app/%E6%B5%81%E3%82%8C%E3%82%8B%E3%83%A1%E3%83%A2%E5%B8%B3/id1598380826?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-podium-rank" style="--c:var(--g-c1)"><span>2</span></span>
+                    <div class="ga-podium-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/11/be/c0/11bec0a0-27b4-31d9-f5bc-38161887744d/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></div>
+                    <h3><span class="i18n-ja">流れるメモ帳</span><span class="i18n-en">Floating Notepad　-Overlay-</span></h3>
+                    <div class="ga-podium-units"><span class="i18n-ja">16.9万</span><span class="i18n-en">169K</span></div>
+                    <div class="ga-podium-label"><span class="i18n-ja">ダウンロード</span><span class="i18n-en">Downloads</span></div>
                 </a>
-                <a class="rk-podium" href="https://apps.apple.com/jp/app/%E6%B5%81%E3%82%8C%E3%82%8B%E3%83%A1%E3%83%A2%E5%B8%B3/id1598380826?uo=4" target="_blank" rel="noopener">
-                    <div class="rk-podium-rank">2</div>
-                    <div class="rk-podium-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/11/be/c0/11bec0a0-27b4-31d9-f5bc-38161887744d/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg" alt="" loading="lazy"></div>
-                    <h3 class="rk-podium-name"><span class="i18n-ja">流れるメモ帳</span><span class="i18n-en">Floating Notepad　-Overlay-</span></h3>
-                    <div class="rk-podium-units"><span class="i18n-ja">16.9万</span><span class="i18n-en">169K</span></div>
-                    <div class="rk-podium-label"><span class="i18n-ja">ダウンロード</span><span class="i18n-en">Downloads</span></div>
+                <a class="g-panel ga-podium ga-podium--1" href="https://apps.apple.com/jp/app/%E3%81%86%E3%82%93%E3%81%A1%E3%81%8F%E3%82%93-ai%E5%81%A5%E5%BA%B7%E8%A8%98%E9%8C%B2-%E3%81%86%E3%82%93%E3%83%88%E3%83%A2/id6758856276?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-podium-rank" style="--c:var(--g-c3)"><span>1</span></span>
+                    <div class="ga-podium-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/03/e1/5d/03e15da9-4b6e-1a61-0eb6-1e8bcaeb4657/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></div>
+                    <h3><span class="i18n-ja">うんちくん AI健康記録&amp;うんトモ</span><span class="i18n-en">UNCHIKUN: Poop Log &amp; AI Health</span></h3>
+                    <div class="ga-podium-units"><span class="i18n-ja">23万</span><span class="i18n-en">230K</span></div>
+                    <div class="ga-podium-label"><span class="i18n-ja">ダウンロード</span><span class="i18n-en">Downloads</span></div>
                 </a>
-                <a class="rk-podium" href="https://apps.apple.com/jp/app/%E6%97%85%E8%A1%8C%E6%80%9D%E3%81%84%E5%87%BA%E3%83%9E%E3%83%83%E3%83%97-%E6%97%85%E3%81%AE%E8%A8%98%E6%86%B6%E3%82%92-%E5%9C%B0%E5%9B%B3%E3%81%AB%E6%8F%8F%E3%81%8F/id6478291625?uo=4" target="_blank" rel="noopener">
-                    <div class="rk-podium-rank">3</div>
-                    <div class="rk-podium-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d3/45/ca/d345cad1-8af5-51f6-06eb-b415ad321d17/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg" alt="" loading="lazy"></div>
-                    <h3 class="rk-podium-name"><span class="i18n-ja">旅行思い出マップ - 旅の記憶を、地図に描く</span><span class="i18n-en">TravelMemoryMap</span></h3>
-                    <div class="rk-podium-units"><span class="i18n-ja">15.8万</span><span class="i18n-en">158K</span></div>
-                    <div class="rk-podium-label"><span class="i18n-ja">ダウンロード</span><span class="i18n-en">Downloads</span></div>
+                <a class="g-panel ga-podium ga-podium--3" href="https://apps.apple.com/jp/app/%E6%97%85%E8%A1%8C%E6%80%9D%E3%81%84%E5%87%BA%E3%83%9E%E3%83%83%E3%83%97-%E6%97%85%E3%81%AE%E8%A8%98%E6%86%B6%E3%82%92-%E5%9C%B0%E5%9B%B3%E3%81%AB%E6%8F%8F%E3%81%8F/id6478291625?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-podium-rank" style="--c:var(--g-c6)"><span>3</span></span>
+                    <div class="ga-podium-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d3/45/ca/d345cad1-8af5-51f6-06eb-b415ad321d17/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></div>
+                    <h3><span class="i18n-ja">旅行思い出マップ - 旅の記憶を、地図に描く</span><span class="i18n-en">TravelMemoryMap</span></h3>
+                    <div class="ga-podium-units"><span class="i18n-ja">15.8万</span><span class="i18n-en">158K</span></div>
+                    <div class="ga-podium-label"><span class="i18n-ja">ダウンロード</span><span class="i18n-en">Downloads</span></div>
                 </a>
                 </div>
 
-                <div class="rk-list">
-                <a class="rk-row" href="https://apps.apple.com/jp/app/%E6%8E%A8%E3%81%97%E3%82%A2%E3%82%A4%E3%83%A9%E3%83%B3%E3%83%89/id6751716346?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">4</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/af/d5/94/afd59419-8cf8-ecff-754d-ba77e548d756/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">推しアイランド</span><span class="i18n-en">Oshi Island - Pixel Art Widget</span></span>
-                    <span class="rk-bar"><i style="width: 26.9%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">6.2万</span><span class="i18n-en">62K</span></span>
+                <div class="g-panel ga-rk-list">
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/%E6%8E%A8%E3%81%97%E3%82%A2%E3%82%A4%E3%83%A9%E3%83%B3%E3%83%89/id6751716346?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">4</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/af/d5/94/afd59419-8cf8-ecff-754d-ba77e548d756/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">推しアイランド</span><span class="i18n-en">Oshi Island - Pixel Art Widget</span></span>
+                    <span class="ga-rk-bar"><i style="width: 26.9%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">6.2万</span><span class="i18n-en">62K</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/skycode/id1512663141?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">5</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/58/e4/96/58e496f4-57e6-40ff-69cf-c82287ef78c6/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name">SkyCode</span>
-                    <span class="rk-bar"><i style="width: 9.8%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">2.3万</span><span class="i18n-en">23K</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/skycode/id1512663141?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">5</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/58/e4/96/58e496f4-57e6-40ff-69cf-c82287ef78c6/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name">SkyCode</span>
+                    <span class="ga-rk-bar"><i style="width: 9.8%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">2.3万</span><span class="i18n-en">23K</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/pictin/id1625004229?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">6</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/75/f9/b3/75f9b387-8ee8-8a09-18e9-ee955becbf5e/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name">PictIn</span>
-                    <span class="rk-bar"><i style="width: 7.9%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">1.8万</span><span class="i18n-en">18K</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/pictin/id1625004229?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">6</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/75/f9/b3/75f9b387-8ee8-8a09-18e9-ee955becbf5e/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name">PictIn</span>
+                    <span class="ga-rk-bar"><i style="width: 7.9%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">1.8万</span><span class="i18n-en">18K</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/pipmp/id1612260255?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">7</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/cf/53/cd/cf53cdb6-bee4-40d9-85bb-a26d43667437/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name">PIPMP</span>
-                    <span class="rk-bar"><i style="width: 7.4%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">1.7万</span><span class="i18n-en">17K</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/pipmp/id1612260255?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">7</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/cf/53/cd/cf53cdb6-bee4-40d9-85bb-a26d43667437/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name">PIPMP</span>
+                    <span class="ga-rk-bar"><i style="width: 7.4%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">1.7万</span><span class="i18n-en">17K</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/%E3%82%82%E3%81%8F%E3%82%82%E3%81%8F-%E8%AA%AD%E6%9B%B8%E9%8A%80%E8%A1%8C-%E8%AA%AD%E3%82%93%E3%81%A0%E6%9C%AC%E3%81%8C%E8%B2%AF%E3%81%BE%E3%82%8B%E8%AA%AD%E6%9B%B8%E8%A8%98%E9%8C%B2/id1487377681?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">8</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/69/b1/79/69b1797c-5ab4-dc4e-311a-210842dea6b5/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">もくもく - 読書銀行・読んだ本が貯まる読書記録</span><span class="i18n-en">BookBank - Reading Log &amp; Library</span></span>
-                    <span class="rk-bar"><i style="width: 4.3%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">9,990</span><span class="i18n-en">9,990</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/%E3%82%82%E3%81%8F%E3%82%82%E3%81%8F-%E8%AA%AD%E6%9B%B8%E9%8A%80%E8%A1%8C-%E8%AA%AD%E3%82%93%E3%81%A0%E6%9C%AC%E3%81%8C%E8%B2%AF%E3%81%BE%E3%82%8B%E8%AA%AD%E6%9B%B8%E8%A8%98%E9%8C%B2/id1487377681?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">8</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/69/b1/79/69b1797c-5ab4-dc4e-311a-210842dea6b5/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">もくもく - 読書銀行・読んだ本が貯まる読書記録</span><span class="i18n-en">BookBank - Reading Log &amp; Library</span></span>
+                    <span class="ga-rk-bar"><i style="width: 4.3%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">9,990</span><span class="i18n-en">9,990</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/%E3%83%90%E3%83%BC%E3%82%B9%E3%83%87%E3%83%BC%E3%83%A0%E3%83%BC%E3%83%B3/id6737449860?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">9</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6a/a0/35/6aa035c4-70f6-bd63-9a2d-14a57bc90a09/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">バースデームーン</span><span class="i18n-en">Birthday Moon</span></span>
-                    <span class="rk-bar"><i style="width: 3.3%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">7,660</span><span class="i18n-en">7,660</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/%E3%83%90%E3%83%BC%E3%82%B9%E3%83%87%E3%83%BC%E3%83%A0%E3%83%BC%E3%83%B3/id6737449860?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">9</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6a/a0/35/6aa035c4-70f6-bd63-9a2d-14a57bc90a09/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">バースデームーン</span><span class="i18n-en">Birthday Moon</span></span>
+                    <span class="ga-rk-bar"><i style="width: 3.3%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">7,660</span><span class="i18n-en">7,660</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/%E3%81%82%E3%81%AA%E3%81%9F%E3%83%AC%E3%82%B7%E3%83%BC%E3%83%88-%E3%83%AC%E3%82%B7%E3%83%BC%E3%83%88%E4%BD%9C%E6%88%90-%E8%A8%98%E9%8C%B2/id6784235708?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">10</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c7/73/6e/c7736e9f-ebd3-3d0f-eef4-61cab212ea91/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">あなたレシート レシート作成＆記録</span><span class="i18n-en">YOU Receipt: Receipt Maker</span></span>
-                    <span class="rk-bar"><i style="width: 3.1%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">7,090</span><span class="i18n-en">7,090</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/%E3%81%82%E3%81%AA%E3%81%9F%E3%83%AC%E3%82%B7%E3%83%BC%E3%83%88-%E3%83%AC%E3%82%B7%E3%83%BC%E3%83%88%E4%BD%9C%E6%88%90-%E8%A8%98%E9%8C%B2/id6784235708?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">10</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c7/73/6e/c7736e9f-ebd3-3d0f-eef4-61cab212ea91/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">あなたレシート レシート作成＆記録</span><span class="i18n-en">YOU Receipt: Receipt Maker</span></span>
+                    <span class="ga-rk-bar"><i style="width: 3.1%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">7,090</span><span class="i18n-en">7,090</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/alwaysontimer-%E3%81%84%E3%81%A4%E3%81%A7%E3%82%82%E3%82%BF%E3%82%A4%E3%83%9E%E3%83%BC/id6443471257?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">11</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/35/7e/4e/357e4ef2-fa68-a0aa-56a4-88535d6900fc/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">AlwaysOnTimer　- いつでもタイマー</span><span class="i18n-en">AlwaysOnTimer</span></span>
-                    <span class="rk-bar"><i style="width: 2.2%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">5,120</span><span class="i18n-en">5,120</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/alwaysontimer-%E3%81%84%E3%81%A4%E3%81%A7%E3%82%82%E3%82%BF%E3%82%A4%E3%83%9E%E3%83%BC/id6443471257?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">11</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/35/7e/4e/357e4ef2-fa68-a0aa-56a4-88535d6900fc/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">AlwaysOnTimer　- いつでもタイマー</span><span class="i18n-en">AlwaysOnTimer</span></span>
+                    <span class="ga-rk-bar"><i style="width: 2.2%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">5,120</span><span class="i18n-en">5,120</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/%E7%8C%AB%E8%83%8C%E6%94%B9%E5%96%84%E3%81%A8%E5%A7%BF%E5%8B%A2%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%80%E3%83%BC-%E7%8C%AB%E8%83%8C%E3%81%AF%E7%8C%AB%E3%81%A0%E3%81%91%E3%81%A7%E5%85%85%E5%88%86%E3%81%AB%E3%82%83/id6758261496?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">12</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/3b/55/b3/3b55b3d0-92fd-af94-162d-5f821ed59088/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">猫背改善と姿勢リマインダー：猫背は猫だけで充分にゃ。</span><span class="i18n-en">Posture Reminder: Cat Coach</span></span>
-                    <span class="rk-bar"><i style="width: 1.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">3,680</span><span class="i18n-en">3,680</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/%E7%8C%AB%E8%83%8C%E6%94%B9%E5%96%84%E3%81%A8%E5%A7%BF%E5%8B%A2%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%80%E3%83%BC-%E7%8C%AB%E8%83%8C%E3%81%AF%E7%8C%AB%E3%81%A0%E3%81%91%E3%81%A7%E5%85%85%E5%88%86%E3%81%AB%E3%82%83/id6758261496?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">12</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/3b/55/b3/3b55b3d0-92fd-af94-162d-5f821ed59088/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">猫背改善と姿勢リマインダー：猫背は猫だけで充分にゃ。</span><span class="i18n-en">Posture Reminder: Cat Coach</span></span>
+                    <span class="ga-rk-bar"><i style="width: 1.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">3,680</span><span class="i18n-en">3,680</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/%E3%83%95%E3%83%81%E3%83%89%E3%83%AA-%E8%83%8C%E6%99%AF%E9%80%8F%E9%81%8E%E3%81%A8%E7%B8%81%E5%8F%96%E3%82%8A/id6748528617?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">13</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e9/c8/e9/e9c8e9e7-4318-1e0d-d221-582004a023a2/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">フチドリ！ ~背景透過と縁取り~</span><span class="i18n-en">Fuchidori! - Outline Stickers</span></span>
-                    <span class="rk-bar"><i style="width: 1.2%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">2,760</span><span class="i18n-en">2,760</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/%E3%83%95%E3%83%81%E3%83%89%E3%83%AA-%E8%83%8C%E6%99%AF%E9%80%8F%E9%81%8E%E3%81%A8%E7%B8%81%E5%8F%96%E3%82%8A/id6748528617?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">13</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e9/c8/e9/e9c8e9e7-4318-1e0d-d221-582004a023a2/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">フチドリ！ ~背景透過と縁取り~</span><span class="i18n-en">Fuchidori! - Outline Stickers</span></span>
+                    <span class="ga-rk-bar"><i style="width: 1.2%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">2,760</span><span class="i18n-en">2,760</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/ticketmania/id6444087177?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">14</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/fd/82/d3/fd82d384-ba76-dbac-1cf1-27b02f3c983e/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name">TicketMania</span>
-                    <span class="rk-bar"><i style="width: 0.9%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">1,970</span><span class="i18n-en">1,970</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/ticketmania/id6444087177?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">14</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/fd/82/d3/fd82d384-ba76-dbac-1cf1-27b02f3c983e/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name">TicketMania</span>
+                    <span class="ga-rk-bar"><i style="width: 0.9%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">1,970</span><span class="i18n-en">1,970</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/%E3%81%AA%E3%81%8C%E3%82%89%E3%82%AB%E3%82%A6%E3%83%B3%E3%82%BF%E3%83%BC-%E5%88%A5%E3%81%AE%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%84%E3%81%A6%E3%82%82%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%81%A7%E3%81%8D%E3%82%8B/id1644376109?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">15</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5d/bc/a8/5dbca80e-f98f-26df-09b2-505b298e1caf/AppIcon-0-0-1x_U007emarketing-0-10-0-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">ながらカウンター ~別のアプリを使っていてもカウントできる~</span><span class="i18n-en">Nagara Counter - Count While Using Other Apps</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">1,170</span><span class="i18n-en">1,170</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/%E3%81%AA%E3%81%8C%E3%82%89%E3%82%AB%E3%82%A6%E3%83%B3%E3%82%BF%E3%83%BC-%E5%88%A5%E3%81%AE%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%84%E3%81%A6%E3%82%82%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%81%A7%E3%81%8D%E3%82%8B/id1644376109?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">15</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5d/bc/a8/5dbca80e-f98f-26df-09b2-505b298e1caf/AppIcon-0-0-1x_U007emarketing-0-10-0-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">ながらカウンター ~別のアプリを使っていてもカウントできる~</span><span class="i18n-en">Nagara Counter - Count While Using Other Apps</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">1,170</span><span class="i18n-en">1,170</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/focusdrive-%E9%9B%86%E4%B8%AD%E3%82%BF%E3%82%A4%E3%83%9E%E3%83%BC/id6756264384?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">16</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e6/e6/09/e6e6093d-07ed-708a-1baa-15fbcb8358e8/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">FocusDrive - 集中タイマー</span><span class="i18n-en">FocusDrive - Focus Timer</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">917</span><span class="i18n-en">917</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/focusdrive-%E9%9B%86%E4%B8%AD%E3%82%BF%E3%82%A4%E3%83%9E%E3%83%BC/id6756264384?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">16</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e6/e6/09/e6e6093d-07ed-708a-1baa-15fbcb8358e8/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">FocusDrive - 集中タイマー</span><span class="i18n-en">FocusDrive - Focus Timer</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">917</span><span class="i18n-en">917</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/%E3%81%8A%E8%96%AC%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%80%E3%83%BC-%E6%9C%8D%E7%94%A8%E7%AE%A1%E7%90%86/id6756915544?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">17</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/16/b0/fb/16b0fb1c-4843-b5eb-e4f9-b3de1431efe3/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">お薬リマインダー 服用管理</span><span class="i18n-en">Medicine Reminder &amp; Tracker</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">850</span><span class="i18n-en">850</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/%E3%81%8A%E8%96%AC%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%80%E3%83%BC-%E6%9C%8D%E7%94%A8%E7%AE%A1%E7%90%86/id6756915544?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">17</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/16/b0/fb/16b0fb1c-4843-b5eb-e4f9-b3de1431efe3/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">お薬リマインダー 服用管理</span><span class="i18n-en">Medicine Reminder &amp; Tracker</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">850</span><span class="i18n-en">850</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/%E3%82%89%E3%81%8F%E3%82%BF%E3%82%B0/id1670158327?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">18</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e8/97/f8/e897f8f6-0545-6ffe-64ab-265df101da4c/AppIcon-0-0-1x_U007epad-0-1-P3-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">らくタグ</span><span class="i18n-en">RakuTag - Quick Hashtags</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">811</span><span class="i18n-en">811</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/%E3%82%89%E3%81%8F%E3%82%BF%E3%82%B0/id1670158327?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">18</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e8/97/f8/e897f8f6-0545-6ffe-64ab-265df101da4c/AppIcon-0-0-1x_U007epad-0-1-P3-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">らくタグ</span><span class="i18n-en">RakuTag - Quick Hashtags</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">811</span><span class="i18n-en">811</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/%E3%82%81%E3%81%8F%E3%82%8B%E3%82%93-%E6%97%A5%E3%82%81%E3%81%8F%E3%82%8A%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%80%E3%83%BC/id6761456691?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">19</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/af/45/fb/af45fb7a-3c82-0c9b-7459-928b66d32fc1/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">めくるん - 日めくりカレンダー</span><span class="i18n-en">Mekulun - Daily Calendar</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">774</span><span class="i18n-en">774</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/%E3%82%81%E3%81%8F%E3%82%8B%E3%82%93-%E6%97%A5%E3%82%81%E3%81%8F%E3%82%8A%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%80%E3%83%BC/id6761456691?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">19</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/af/45/fb/af45fb7a-3c82-0c9b-7459-928b66d32fc1/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">めくるん - 日めくりカレンダー</span><span class="i18n-en">Mekulun - Daily Calendar</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">774</span><span class="i18n-en">774</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/nokki-%E9%9F%B3%E6%A5%BD%E3%82%B8%E3%83%A3%E3%83%BC%E3%83%8A%E3%83%AB/id6790164642?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">20</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ee/4f/da/ee4fda7e-bd99-5fcc-0888-946a8bb46333/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">nokki - 音楽ジャーナル</span><span class="i18n-en">nokki - Music Journal</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">754</span><span class="i18n-en">754</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/nokki-%E9%9F%B3%E6%A5%BD%E3%82%B8%E3%83%A3%E3%83%BC%E3%83%8A%E3%83%AB/id6790164642?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">20</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ee/4f/da/ee4fda7e-bd99-5fcc-0888-946a8bb46333/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">nokki - 音楽ジャーナル</span><span class="i18n-en">nokki - Music Journal</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">754</span><span class="i18n-en">754</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/widgetqiita/id1585253685?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">21</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6b/c4/a3/6bc4a39d-c570-15ac-aaae-cc5f3d4333e6/AppIcon-0-0-1x_U007emarketing-0-11-0-sRGB-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name">WidgetQiita</span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">745</span><span class="i18n-en">745</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/widgetqiita/id1585253685?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">21</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6b/c4/a3/6bc4a39d-c570-15ac-aaae-cc5f3d4333e6/AppIcon-0-0-1x_U007emarketing-0-11-0-sRGB-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name">WidgetQiita</span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">745</span><span class="i18n-en">745</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/%E3%83%95%E3%82%A9%E3%83%88%E3%82%AC%E3%83%BC%E3%83%89/id6452754625?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">22</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/c7/3e/a3/c73ea30f-2661-1137-80ec-2158dddcaec1/AppIcon-1x_U007epad-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">フォトガード</span><span class="i18n-en">PhotoGuards</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">742</span><span class="i18n-en">742</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/%E3%83%95%E3%82%A9%E3%83%88%E3%82%AC%E3%83%BC%E3%83%89/id6452754625?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">22</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/c7/3e/a3/c73ea30f-2661-1137-80ec-2158dddcaec1/AppIcon-1x_U007epad-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">フォトガード</span><span class="i18n-en">PhotoGuards</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">742</span><span class="i18n-en">742</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/%E7%9B%AE%E8%96%AC%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%80%E3%83%BC-eyedrop-%E7%82%B9%E7%9C%BC%E7%AE%A1%E7%90%86/id6757758987?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">23</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/06/83/33/068333f8-63b6-ac89-3dd1-dbd22fedcb6f/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">目薬リマインダー ~ EyeDrop 点眼管理 ~</span><span class="i18n-en">Eye Drop Reminder - EyeDrop</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">736</span><span class="i18n-en">736</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/%E7%9B%AE%E8%96%AC%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%80%E3%83%BC-eyedrop-%E7%82%B9%E7%9C%BC%E7%AE%A1%E7%90%86/id6757758987?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">23</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/06/83/33/068333f8-63b6-ac89-3dd1-dbd22fedcb6f/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">目薬リマインダー ~ EyeDrop 点眼管理 ~</span><span class="i18n-en">Eye Drop Reminder - EyeDrop</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">736</span><span class="i18n-en">736</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/clockwidget-%E5%80%8B%E6%80%A7%E8%B1%8A%E3%81%8B%E3%81%AA%E6%99%82%E8%A8%88%E3%82%A6%E3%82%A3%E3%82%B8%E3%82%A7%E3%83%83%E3%83%88%E3%82%A2%E3%83%97%E3%83%AA/id6451070718?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">24</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/68/6e/6e/686e6e40-174b-0ff6-e82e-6089fcc7e61f/AppIcon-0-0-1x_U007epad-0-1-P3-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">ClockWidget ~個性豊かな時計ウィジェットアプリ~</span><span class="i18n-en">ClockWidget - Quirky Clock Widgets</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">685</span><span class="i18n-en">685</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/clockwidget-%E5%80%8B%E6%80%A7%E8%B1%8A%E3%81%8B%E3%81%AA%E6%99%82%E8%A8%88%E3%82%A6%E3%82%A3%E3%82%B8%E3%82%A7%E3%83%83%E3%83%88%E3%82%A2%E3%83%97%E3%83%AA/id6451070718?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">24</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/68/6e/6e/686e6e40-174b-0ff6-e82e-6089fcc7e61f/AppIcon-0-0-1x_U007epad-0-1-P3-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">ClockWidget ~個性豊かな時計ウィジェットアプリ~</span><span class="i18n-en">ClockWidget - Quirky Clock Widgets</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">685</span><span class="i18n-en">685</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/%CF%80-pi-%E5%86%86%E5%91%A8%E7%8E%87%E3%82%92%E6%A5%BD%E3%81%97%E3%82%80%E3%82%A2%E3%83%97%E3%83%AA/id6566185298?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">25</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5e/d8/16/5ed81629-0818-edc7-e812-32bd2d4cbca7/AppIcon-0-0-1x_U007epad-0-1-P3-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">π ~ Pi　円周率を楽しむアプリ</span><span class="i18n-en">π ~ Pi Fun App.</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">684</span><span class="i18n-en">684</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/%CF%80-pi-%E5%86%86%E5%91%A8%E7%8E%87%E3%82%92%E6%A5%BD%E3%81%97%E3%82%80%E3%82%A2%E3%83%97%E3%83%AA/id6566185298?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">25</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5e/d8/16/5ed81629-0818-edc7-e812-32bd2d4cbca7/AppIcon-0-0-1x_U007epad-0-1-P3-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">π ~ Pi　円周率を楽しむアプリ</span><span class="i18n-en">π ~ Pi Fun App.</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">684</span><span class="i18n-en">684</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/%E3%82%BC%E3%83%AA%E3%83%BC%E3%82%BB%E3%82%A4%E3%83%A0%E3%83%91%E3%82%BA%E3%83%AB/id6747354292?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">26</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/72/89/d0/7289d0bc-59f2-f3aa-61f9-bf2af067c88f/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">ゼリーセイムパズル</span><span class="i18n-en">Jelly Same Puzzle</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">643</span><span class="i18n-en">643</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/%E3%82%BC%E3%83%AA%E3%83%BC%E3%82%BB%E3%82%A4%E3%83%A0%E3%83%91%E3%82%BA%E3%83%AB/id6747354292?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">26</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/72/89/d0/7289d0bc-59f2-f3aa-61f9-bf2af067c88f/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">ゼリーセイムパズル</span><span class="i18n-en">Jelly Same Puzzle</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">643</span><span class="i18n-en">643</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/relaychat-%E3%82%AA%E3%83%95%E3%83%A9%E3%82%A4%E3%83%B3%E5%8C%BF%E5%90%8Dbluetooth%E3%83%81%E3%83%A3%E3%83%83%E3%83%88/id6749299283?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">27</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/eb/bc/17/ebbc17e6-d513-a7d3-2dc5-595febaa0beb/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">RelayChat-オフライン匿名Bluetoothチャット</span><span class="i18n-en">RelayChat-Bluetooth Mesh Chat</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">559</span><span class="i18n-en">559</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/relaychat-%E3%82%AA%E3%83%95%E3%83%A9%E3%82%A4%E3%83%B3%E5%8C%BF%E5%90%8Dbluetooth%E3%83%81%E3%83%A3%E3%83%83%E3%83%88/id6749299283?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">27</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/eb/bc/17/ebbc17e6-d513-a7d3-2dc5-595febaa0beb/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">RelayChat-オフライン匿名Bluetoothチャット</span><span class="i18n-en">RelayChat-Bluetooth Mesh Chat</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">559</span><span class="i18n-en">559</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/today-%E4%BB%8A%E6%97%A5%E3%81%AF%E4%BB%A4%E5%92%8C%E4%BD%95%E5%B9%B4%E3%81%A7%E4%BD%95%E3%81%AE%E6%97%A5/id6752814140?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">28</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/05/2f/aa/052faaec-dec9-9c8a-504f-cfe4711f9f5c/today-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">Today -今日は令和何年で何の日？-</span><span class="i18n-en">Today - Japanese Era Year &amp; On This Day</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">490</span><span class="i18n-en">490</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/today-%E4%BB%8A%E6%97%A5%E3%81%AF%E4%BB%A4%E5%92%8C%E4%BD%95%E5%B9%B4%E3%81%A7%E4%BD%95%E3%81%AE%E6%97%A5/id6752814140?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">28</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/05/2f/aa/052faaec-dec9-9c8a-504f-cfe4711f9f5c/today-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">Today -今日は令和何年で何の日？-</span><span class="i18n-en">Today - Japanese Era Year &amp; On This Day</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">490</span><span class="i18n-en">490</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/widgetzenn/id1597103122?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">29</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/9f/bb/8e/9fbb8e03-2106-0221-e017-5eef7173c2e7/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name">WidgetZenn</span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">484</span><span class="i18n-en">484</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/widgetzenn/id1597103122?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">29</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/9f/bb/8e/9fbb8e03-2106-0221-e017-5eef7173c2e7/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name">WidgetZenn</span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">484</span><span class="i18n-en">484</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/geolens-%E5%B2%A9%E7%9F%B3-%E9%89%B1%E7%89%A9ai%E5%9B%B3%E9%91%91/id6757151902?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">30</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a8/4c/88/a84c8832-febd-9049-7c35-128f7d82ec83/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">GeoLens - 岩石・鉱物AI図鑑</span><span class="i18n-en">GeoLens - Rock &amp; Mineral AI</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">437</span><span class="i18n-en">437</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/geolens-%E5%B2%A9%E7%9F%B3-%E9%89%B1%E7%89%A9ai%E5%9B%B3%E9%91%91/id6757151902?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">30</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a8/4c/88/a84c8832-febd-9049-7c35-128f7d82ec83/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">GeoLens - 岩石・鉱物AI図鑑</span><span class="i18n-en">GeoLens - Rock &amp; Mineral AI</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">437</span><span class="i18n-en">437</span></span>
                 </a>
-                <div class="rk-row rk-row--ended">
-                    <span class="rk-rank">31</span>
-                    <span class="rk-icon"><span class="rk-noicon"><span class="i18n-ja">終</span><span class="i18n-en">—</span></span></span>
-                    <span class="rk-name">AI Gemini<span class="rk-ended"><span class="i18n-ja">配信終了</span><span class="i18n-en">Discontinued</span></span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">397</span><span class="i18n-en">397</span></span>
+                <div class="ga-rk-row ga-rk-row--ended">
+                    <span class="ga-rk-rank">31</span>
+                    <span class="ga-rk-icon"><span class="ga-rk-noicon"><span class="i18n-ja">終</span><span class="i18n-en">—</span></span></span>
+                    <span class="ga-rk-name">AI Gemini<span class="ga-rk-ended"><span class="i18n-ja">配信終了</span><span class="i18n-en">Discontinued</span></span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">397</span><span class="i18n-en">397</span></span>
                 </div>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/%E9%A6%AC%E5%88%B8%E3%82%B8%E3%82%A7%E3%83%8D%E3%83%AC%E3%83%BC%E3%82%BF%E3%83%BC/id6757259211?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">32</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ce/90/71/ce90711a-ec88-3aa2-25b8-68c2481d2cce/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">馬券ジェネレーター</span><span class="i18n-en">Betting Ticket Generator</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">397</span><span class="i18n-en">397</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/%E9%A6%AC%E5%88%B8%E3%82%B8%E3%82%A7%E3%83%8D%E3%83%AC%E3%83%BC%E3%82%BF%E3%83%BC/id6757259211?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">32</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ce/90/71/ce90711a-ec88-3aa2-25b8-68c2481d2cce/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">馬券ジェネレーター</span><span class="i18n-en">Betting Ticket Generator</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">397</span><span class="i18n-en">397</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/%E6%80%9D%E3%81%84%E5%87%BA%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%80%E3%83%BC-1%E6%97%A51%E6%9E%9A%E3%83%95%E3%82%A9%E3%83%88%E6%97%A5%E8%A8%98/id6757349187?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">33</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5a/22/88/5a228886-cf17-06a7-b78b-a0b46e0259a4/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">思い出カレンダー - 1日1枚フォト日記</span><span class="i18n-en">DailySnap - Photo Calendar</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">384</span><span class="i18n-en">384</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/%E6%80%9D%E3%81%84%E5%87%BA%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%80%E3%83%BC-1%E6%97%A51%E6%9E%9A%E3%83%95%E3%82%A9%E3%83%88%E6%97%A5%E8%A8%98/id6757349187?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">33</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5a/22/88/5a228886-cf17-06a7-b78b-a0b46e0259a4/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">思い出カレンダー - 1日1枚フォト日記</span><span class="i18n-en">DailySnap - Photo Calendar</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">384</span><span class="i18n-en">384</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/ikaqr-qr%E3%82%B3%E3%83%BC%E3%83%89%E3%82%92%E7%88%86%E9%80%9F%E3%81%A7%E8%AA%AD%E3%81%BF%E8%BE%BC%E3%82%82%E3%81%86/id6450046891?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">34</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/27/89/fe/2789fe27-5f68-ee38-3e39-a257b31049c2/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">ikaQR ~QRコードを爆速で読み込もう~</span><span class="i18n-en">ikaQR - Lightning-Fast QR Scanner</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">383</span><span class="i18n-en">383</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/ikaqr-qr%E3%82%B3%E3%83%BC%E3%83%89%E3%82%92%E7%88%86%E9%80%9F%E3%81%A7%E8%AA%AD%E3%81%BF%E8%BE%BC%E3%82%82%E3%81%86/id6450046891?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">34</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/27/89/fe/2789fe27-5f68-ee38-3e39-a257b31049c2/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">ikaQR ~QRコードを爆速で読み込もう~</span><span class="i18n-en">ikaQR - Lightning-Fast QR Scanner</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">383</span><span class="i18n-en">383</span></span>
                 </a>
-                <div class="rk-row rk-row--ended">
-                    <span class="rk-rank">35</span>
-                    <span class="rk-icon"><span class="rk-noicon"><span class="i18n-ja">終</span><span class="i18n-en">—</span></span></span>
-                    <span class="rk-name">MacAddressQuiz<span class="rk-ended"><span class="i18n-ja">配信終了</span><span class="i18n-en">Discontinued</span></span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">356</span><span class="i18n-en">356</span></span>
+                <div class="ga-rk-row ga-rk-row--ended">
+                    <span class="ga-rk-rank">35</span>
+                    <span class="ga-rk-icon"><span class="ga-rk-noicon"><span class="i18n-ja">終</span><span class="i18n-en">—</span></span></span>
+                    <span class="ga-rk-name">MacAddressQuiz<span class="ga-rk-ended"><span class="i18n-ja">配信終了</span><span class="i18n-en">Discontinued</span></span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">356</span><span class="i18n-en">356</span></span>
                 </div>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/%E3%82%B9%E3%83%AF%E3%82%A4%E3%83%9D%E3%83%B3-%E3%82%B9%E3%83%AF%E3%82%A4%E3%83%97%E3%81%A7%E5%86%99%E7%9C%9F%E3%81%A8%E5%8B%95%E7%94%BB%E3%82%92%E7%B0%A1%E5%8D%98%E6%95%B4%E7%90%86/id6752831862?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">36</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/79/d0/f5/79d0f513-4e1d-6b13-8054-fb8513924d7b/swipeclean-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">スワイポン - スワイプで写真と動画を簡単整理</span><span class="i18n-en">Swipon - Photo &amp; Video Cleaner</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">334</span><span class="i18n-en">334</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/%E3%82%B9%E3%83%AF%E3%82%A4%E3%83%9D%E3%83%B3-%E3%82%B9%E3%83%AF%E3%82%A4%E3%83%97%E3%81%A7%E5%86%99%E7%9C%9F%E3%81%A8%E5%8B%95%E7%94%BB%E3%82%92%E7%B0%A1%E5%8D%98%E6%95%B4%E7%90%86/id6752831862?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">36</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/79/d0/f5/79d0f513-4e1d-6b13-8054-fb8513924d7b/swipeclean-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">スワイポン - スワイプで写真と動画を簡単整理</span><span class="i18n-en">Swipon - Photo &amp; Video Cleaner</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">334</span><span class="i18n-en">334</span></span>
                 </a>
-                <div class="rk-row rk-row--ended">
-                    <span class="rk-rank">37</span>
-                    <span class="rk-icon"><span class="rk-noicon"><span class="i18n-ja">終</span><span class="i18n-en">—</span></span></span>
-                    <span class="rk-name"><span class="i18n-ja">パンケーキ屋さん</span><span class="i18n-en">Pancake Shop</span><span class="rk-ended"><span class="i18n-ja">配信終了</span><span class="i18n-en">Discontinued</span></span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">329</span><span class="i18n-en">329</span></span>
+                <div class="ga-rk-row ga-rk-row--ended">
+                    <span class="ga-rk-rank">37</span>
+                    <span class="ga-rk-icon"><span class="ga-rk-noicon"><span class="i18n-ja">終</span><span class="i18n-en">—</span></span></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">パンケーキ屋さん</span><span class="i18n-en">Pancake Shop</span><span class="ga-rk-ended"><span class="i18n-ja">配信終了</span><span class="i18n-en">Discontinued</span></span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">329</span><span class="i18n-en">329</span></span>
                 </div>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/%E6%97%AC%E3%81%AE%E3%81%8A%E9%AD%9A%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%80%E3%83%BC/id6746123337?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">38</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/be/ba/0b/beba0bb9-05d2-40e8-df25-b3c80ee14ef0/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">旬のお魚カレンダー</span><span class="i18n-en">Seasonal Fish Calendar</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">292</span><span class="i18n-en">292</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/%E6%97%AC%E3%81%AE%E3%81%8A%E9%AD%9A%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%80%E3%83%BC/id6746123337?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">38</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/be/ba/0b/beba0bb9-05d2-40e8-df25-b3c80ee14ef0/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">旬のお魚カレンダー</span><span class="i18n-en">Seasonal Fish Calendar</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">292</span><span class="i18n-en">292</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/bytebeat-1%E8%A1%8C%E3%81%AE%E6%95%B0%E5%BC%8F%E3%81%8C%E9%9F%B3%E3%81%AB%E3%81%AA%E3%82%8B/id6811730170?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">39</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/2a/40/b2/2a40b256-955b-f718-4e4f-b958016997ec/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">Bytebeat 1行の数式が音になる</span><span class="i18n-en">Bytebeat: Make Music with Code</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">261</span><span class="i18n-en">261</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/bytebeat-1%E8%A1%8C%E3%81%AE%E6%95%B0%E5%BC%8F%E3%81%8C%E9%9F%B3%E3%81%AB%E3%81%AA%E3%82%8B/id6811730170?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">39</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/2a/40/b2/2a40b256-955b-f718-4e4f-b958016997ec/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">Bytebeat 1行の数式が音になる</span><span class="i18n-en">Bytebeat: Make Music with Code</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">261</span><span class="i18n-en">261</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/%E8%A8%98%E5%BF%B5%E6%97%A5%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%80%E3%83%BC-%E3%83%A1%E3%83%A2%E3%83%AA%E3%82%A2/id6758575269?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">40</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7a/0c/8b/7a0c8bfa-7691-4559-7dc0-2234c2069018/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">記念日リマインダー - メモリア</span><span class="i18n-en">Anniversary Reminder - Memoria</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">248</span><span class="i18n-en">248</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/%E8%A8%98%E5%BF%B5%E6%97%A5%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%80%E3%83%BC-%E3%83%A1%E3%83%A2%E3%83%AA%E3%82%A2/id6758575269?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">40</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7a/0c/8b/7a0c8bfa-7691-4559-7dc0-2234c2069018/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">記念日リマインダー - メモリア</span><span class="i18n-en">Anniversary Reminder - Memoria</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">248</span><span class="i18n-en">248</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/shelllens-%E8%B2%9D%E6%AE%BBai%E5%9B%B3%E9%91%91/id6757253733?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">41</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/1a/7d/89/1a7d8993-8e43-5d54-f863-c62e881cc826/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">ShellLens - 貝殻AI図鑑</span><span class="i18n-en">ShellLens - Seashell AI Guide</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">228</span><span class="i18n-en">228</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/shelllens-%E8%B2%9D%E6%AE%BBai%E5%9B%B3%E9%91%91/id6757253733?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">41</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/1a/7d/89/1a7d8993-8e43-5d54-f863-c62e881cc826/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">ShellLens - 貝殻AI図鑑</span><span class="i18n-en">ShellLens - Seashell AI Guide</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">228</span><span class="i18n-en">228</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/birdlens-%E9%87%8E%E9%B3%A5ai%E5%9B%B3%E9%91%91/id6757175763?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">42</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/03/1e/63/031e63ef-1ea7-0c5a-ca7c-a501aefc822b/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">BirdLens - 野鳥AI図鑑</span><span class="i18n-en">BirdLens - Bird AI Guide</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">219</span><span class="i18n-en">219</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/birdlens-%E9%87%8E%E9%B3%A5ai%E5%9B%B3%E9%91%91/id6757175763?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">42</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/03/1e/63/031e63ef-1ea7-0c5a-ca7c-a501aefc822b/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">BirdLens - 野鳥AI図鑑</span><span class="i18n-en">BirdLens - Bird AI Guide</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">219</span><span class="i18n-en">219</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/himekuri-%E8%A8%98%E5%BF%B5%E6%97%A5%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%83%80%E3%82%A6%E3%83%B3/id6787482576?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">43</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/36/57/80/36578084-4b1b-5dab-e44c-8b9086fd9b69/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">Himekuri - 記念日カウントダウン</span><span class="i18n-en">Himekuri - Day Countdown</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">216</span><span class="i18n-en">216</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/himekuri-%E8%A8%98%E5%BF%B5%E6%97%A5%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%83%80%E3%82%A6%E3%83%B3/id6787482576?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">43</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/36/57/80/36578084-4b1b-5dab-e44c-8b9086fd9b69/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">Himekuri - 記念日カウントダウン</span><span class="i18n-en">Himekuri - Day Countdown</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">216</span><span class="i18n-en">216</span></span>
                 </a>
-                <div class="rk-row rk-row--ended">
-                    <span class="rk-rank">44</span>
-                    <span class="rk-icon"><span class="rk-noicon"><span class="i18n-ja">終</span><span class="i18n-en">—</span></span></span>
-                    <span class="rk-name">SameColor<span class="rk-ended"><span class="i18n-ja">配信終了</span><span class="i18n-en">Discontinued</span></span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">203</span><span class="i18n-en">203</span></span>
+                <div class="ga-rk-row ga-rk-row--ended">
+                    <span class="ga-rk-rank">44</span>
+                    <span class="ga-rk-icon"><span class="ga-rk-noicon"><span class="i18n-ja">終</span><span class="i18n-en">—</span></span></span>
+                    <span class="ga-rk-name">SameColor<span class="ga-rk-ended"><span class="i18n-ja">配信終了</span><span class="i18n-en">Discontinued</span></span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">203</span><span class="i18n-en">203</span></span>
                 </div>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/simple-touch-the-numbers/id6450852611?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">45</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4c/12/eb/4c12ebba-1e2f-3068-696e-5d3b9520a414/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name">Simple Touch The Numbers</span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">197</span><span class="i18n-en">197</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/simple-touch-the-numbers/id6450852611?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">45</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4c/12/eb/4c12ebba-1e2f-3068-696e-5d3b9520a414/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name">Simple Touch The Numbers</span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">197</span><span class="i18n-en">197</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/cook-it-%E5%86%B7%E8%94%B5%E5%BA%AB%E3%81%AE%E4%B8%AD%E3%82%92%E6%92%AE%E3%82%8B%E3%81%A0%E3%81%91%E3%81%A7ai%E3%83%AC%E3%82%B7%E3%83%94%E6%8F%90%E6%A1%88/id6751343632?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">46</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4d/89/0c/4d890c69-8fb6-4945-1fd5-823e7e97fc5e/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">Cook-it -冷蔵庫の中を撮るだけでAIレシピ提案-</span><span class="i18n-en">Cook-it - AI Recipes from Your Fridge</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">145</span><span class="i18n-en">145</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/cook-it-%E5%86%B7%E8%94%B5%E5%BA%AB%E3%81%AE%E4%B8%AD%E3%82%92%E6%92%AE%E3%82%8B%E3%81%A0%E3%81%91%E3%81%A7ai%E3%83%AC%E3%82%B7%E3%83%94%E6%8F%90%E6%A1%88/id6751343632?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">46</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4d/89/0c/4d890c69-8fb6-4945-1fd5-823e7e97fc5e/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">Cook-it -冷蔵庫の中を撮るだけでAIレシピ提案-</span><span class="i18n-en">Cook-it - AI Recipes from Your Fridge</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">145</span><span class="i18n-en">145</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/beautymed-%E7%BE%8E%E5%AE%B9%E5%8C%BB%E7%99%82%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%80%E3%83%BC/id6757325065?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">47</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/92/f1/ce/92f1ce64-7934-10a5-4aa1-b18e809c1668/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">BeautyMed - 美容医療リマインダー</span><span class="i18n-en">BeautyMed - Treatment Reminder</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">140</span><span class="i18n-en">140</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/beautymed-%E7%BE%8E%E5%AE%B9%E5%8C%BB%E7%99%82%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%80%E3%83%BC/id6757325065?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">47</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/92/f1/ce/92f1ce64-7934-10a5-4aa1-b18e809c1668/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">BeautyMed - 美容医療リマインダー</span><span class="i18n-en">BeautyMed - Treatment Reminder</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">140</span><span class="i18n-en">140</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/monivo-%E5%A3%B0%E3%81%A7%E8%B5%B7%E3%81%93%E3%81%97%E5%90%88%E3%81%86%E3%82%A2%E3%83%A9%E3%83%BC%E3%83%A0/id6793626358?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">48</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5a/d3/12/5ad312e4-b84a-555e-1efa-e9b497c814ce/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">Monivo 声で起こし合うアラーム</span><span class="i18n-en">Monivo: Wake Up by Voice</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">135</span><span class="i18n-en">135</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/monivo-%E5%A3%B0%E3%81%A7%E8%B5%B7%E3%81%93%E3%81%97%E5%90%88%E3%81%86%E3%82%A2%E3%83%A9%E3%83%BC%E3%83%A0/id6793626358?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">48</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5a/d3/12/5ad312e4-b84a-555e-1efa-e9b497c814ce/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">Monivo 声で起こし合うアラーム</span><span class="i18n-en">Monivo: Wake Up by Voice</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">135</span><span class="i18n-en">135</span></span>
                 </a>
-                <div class="rk-row rk-row--ended">
-                    <span class="rk-rank">49</span>
-                    <span class="rk-icon"><span class="rk-noicon"><span class="i18n-ja">終</span><span class="i18n-en">—</span></span></span>
-                    <span class="rk-name">FightAction<span class="rk-ended"><span class="i18n-ja">配信終了</span><span class="i18n-en">Discontinued</span></span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">130</span><span class="i18n-en">130</span></span>
+                <div class="ga-rk-row ga-rk-row--ended">
+                    <span class="ga-rk-rank">49</span>
+                    <span class="ga-rk-icon"><span class="ga-rk-noicon"><span class="i18n-ja">終</span><span class="i18n-en">—</span></span></span>
+                    <span class="ga-rk-name">FightAction<span class="ga-rk-ended"><span class="i18n-ja">配信終了</span><span class="i18n-en">Discontinued</span></span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">130</span><span class="i18n-en">130</span></span>
                 </div>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/%E3%81%9A%E3%82%93%E3%81%A0%E3%82%82%E3%82%93%E3%81%AE%E9%83%A8%E5%B1%8B-%E3%81%9A%E3%82%93%E3%81%A0%E3%82%82%E3%82%93%E3%81%AB%E8%A9%B1%E3%82%92%E8%81%B4%E3%81%84%E3%81%A6%E3%82%82%E3%82%89%E3%81%86/id6759167301?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">50</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ce/81/02/ce8102be-cff9-ebc9-23db-f919e95bb546/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">ずんだもんの部屋 - ずんだもんに話を聴いてもらう</span><span class="i18n-en">Zundamon&#x27;s Room - Talk to Zundamon</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">128</span><span class="i18n-en">128</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/%E3%81%9A%E3%82%93%E3%81%A0%E3%82%82%E3%82%93%E3%81%AE%E9%83%A8%E5%B1%8B-%E3%81%9A%E3%82%93%E3%81%A0%E3%82%82%E3%82%93%E3%81%AB%E8%A9%B1%E3%82%92%E8%81%B4%E3%81%84%E3%81%A6%E3%82%82%E3%82%89%E3%81%86/id6759167301?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">50</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ce/81/02/ce8102be-cff9-ebc9-23db-f919e95bb546/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">ずんだもんの部屋 - ずんだもんに話を聴いてもらう</span><span class="i18n-en">Zundamon&#x27;s Room - Talk to Zundamon</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">128</span><span class="i18n-en">128</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/%E6%B0%B4%E6%A7%BD%E7%AE%A1%E7%90%86-%E6%B0%B4%E6%9B%BF%E3%81%88%E9%80%9A%E7%9F%A5-tankminder/id6778477412?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">51</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a1/89/a1/a189a163-5aae-767f-1eef-aeee4ea8c4c8/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">水槽管理・水替え通知 TankMinder</span><span class="i18n-en">Aquarium Care - TankMinder</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">114</span><span class="i18n-en">114</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/%E6%B0%B4%E6%A7%BD%E7%AE%A1%E7%90%86-%E6%B0%B4%E6%9B%BF%E3%81%88%E9%80%9A%E7%9F%A5-tankminder/id6778477412?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">51</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a1/89/a1/a189a163-5aae-767f-1eef-aeee4ea8c4c8/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">水槽管理・水替え通知 TankMinder</span><span class="i18n-en">Aquarium Care - TankMinder</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">114</span><span class="i18n-en">114</span></span>
                 </a>
-                <div class="rk-row rk-row--ended">
-                    <span class="rk-rank">52</span>
-                    <span class="rk-icon"><span class="rk-noicon"><span class="i18n-ja">終</span><span class="i18n-en">—</span></span></span>
-                    <span class="rk-name">Puzzle and Battle<span class="rk-ended"><span class="i18n-ja">配信終了</span><span class="i18n-en">Discontinued</span></span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">106</span><span class="i18n-en">106</span></span>
+                <div class="ga-rk-row ga-rk-row--ended">
+                    <span class="ga-rk-rank">52</span>
+                    <span class="ga-rk-icon"><span class="ga-rk-noicon"><span class="i18n-ja">終</span><span class="i18n-en">—</span></span></span>
+                    <span class="ga-rk-name">Puzzle and Battle<span class="ga-rk-ended"><span class="i18n-ja">配信終了</span><span class="i18n-en">Discontinued</span></span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">106</span><span class="i18n-en">106</span></span>
                 </div>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/eyemole-%E8%A6%96%E7%B7%9A%E3%81%A7%E3%83%A2%E3%82%B0%E3%83%A9%E3%81%9F%E3%81%9F%E3%81%8D/id6797057271?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">53</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/35/aa/61/35aa615c-81af-c245-0234-851d99f9ff8c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">EyeMole 視線でモグラたたき</span><span class="i18n-en">EyeMole - Eye Whack-a-Mole</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">98</span><span class="i18n-en">98</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/eyemole-%E8%A6%96%E7%B7%9A%E3%81%A7%E3%83%A2%E3%82%B0%E3%83%A9%E3%81%9F%E3%81%9F%E3%81%8D/id6797057271?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">53</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/35/aa/61/35aa615c-81af-c245-0234-851d99f9ff8c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">EyeMole 視線でモグラたたき</span><span class="i18n-en">EyeMole - Eye Whack-a-Mole</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">98</span><span class="i18n-en">98</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/%E7%A9%BA%E6%83%B3%E6%97%85%E8%A1%8C%E3%82%AB%E3%83%A1%E3%83%A9-ai%E3%81%A7%E4%B8%96%E7%95%8C%E3%82%92%E3%82%B9%E3%83%8A%E3%83%83%E3%83%97/id6755984490?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">54</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6e/4f/2d/6e4f2d14-a8e2-5edb-1c18-ed1978d30253/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">空想旅行カメラ - AIで世界をスナップ</span><span class="i18n-en">Daydream Camera: AI Travel</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">89</span><span class="i18n-en">89</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/%E7%A9%BA%E6%83%B3%E6%97%85%E8%A1%8C%E3%82%AB%E3%83%A1%E3%83%A9-ai%E3%81%A7%E4%B8%96%E7%95%8C%E3%82%92%E3%82%B9%E3%83%8A%E3%83%83%E3%83%97/id6755984490?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">54</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6e/4f/2d/6e4f2d14-a8e2-5edb-1c18-ed1978d30253/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">空想旅行カメラ - AIで世界をスナップ</span><span class="i18n-en">Daydream Camera: AI Travel</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">89</span><span class="i18n-en">89</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/%E3%82%B3%E3%82%B9%E3%83%A1%E6%9C%9F%E9%99%90%E7%AE%A1%E7%90%86-cosmefresh/id6779972238?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">55</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ee/a6/91/eea691a9-41b2-2e28-f904-15c3b7e4ff51/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">コスメ期限管理 CosmeFresh</span><span class="i18n-en">CosmeFresh: Makeup Expiry</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">86</span><span class="i18n-en">86</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/%E3%82%B3%E3%82%B9%E3%83%A1%E6%9C%9F%E9%99%90%E7%AE%A1%E7%90%86-cosmefresh/id6779972238?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">55</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ee/a6/91/eea691a9-41b2-2e28-f904-15c3b7e4ff51/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">コスメ期限管理 CosmeFresh</span><span class="i18n-en">CosmeFresh: Makeup Expiry</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">86</span><span class="i18n-en">86</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/%E3%82%B3%E3%83%B3%E3%82%BF%E3%82%AF%E3%83%88%E4%BA%A4%E6%8F%9B%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%80%E3%83%BC-lenslog/id6779314854?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">56</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f9/f1/97/f9f19717-deed-b113-8b9a-8b20192be933/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">コンタクト交換リマインダー LensLog</span><span class="i18n-en">LensLog: Contact Lens Reminder</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">86</span><span class="i18n-en">86</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/%E3%82%B3%E3%83%B3%E3%82%BF%E3%82%AF%E3%83%88%E4%BA%A4%E6%8F%9B%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%80%E3%83%BC-lenslog/id6779314854?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">56</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f9/f1/97/f9f19717-deed-b113-8b9a-8b20192be933/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">コンタクト交換リマインダー LensLog</span><span class="i18n-en">LensLog: Contact Lens Reminder</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">86</span><span class="i18n-en">86</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/%E8%A8%80%E3%81%AE%E8%91%89%E7%AE%B1-%E5%A4%A7%E5%88%87%E3%81%AA%E6%89%8B%E7%B4%99%E3%82%92%E7%B0%A1%E5%8D%98%E3%81%AB%E8%A8%98%E9%8C%B2/id6749537777?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">57</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/39/9d/15/399d159d-d1b3-7547-f6f6-aa49dd81a7a5/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">言の葉箱 〜大切な手紙を簡単に記録〜</span><span class="i18n-en">Kotonohabako - Keep Your Precious Letters</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">83</span><span class="i18n-en">83</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/%E8%A8%80%E3%81%AE%E8%91%89%E7%AE%B1-%E5%A4%A7%E5%88%87%E3%81%AA%E6%89%8B%E7%B4%99%E3%82%92%E7%B0%A1%E5%8D%98%E3%81%AB%E8%A8%98%E9%8C%B2/id6749537777?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">57</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/39/9d/15/399d159d-d1b3-7547-f6f6-aa49dd81a7a5/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">言の葉箱 〜大切な手紙を簡単に記録〜</span><span class="i18n-en">Kotonohabako - Keep Your Precious Letters</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">83</span><span class="i18n-en">83</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/yattayo-%E3%82%84%E3%81%A3%E3%81%9F%E3%82%88%E3%83%9C%E3%83%BC%E3%83%89-todo%E3%83%AA%E3%82%B9%E3%83%88/id6791000395?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">58</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e8/ca/3f/e8ca3fdf-b576-e377-18f5-71c007c54fa3/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">Yattayo やったよボード：ToDoリスト</span><span class="i18n-en">Yattayo: Slider To-Do Board</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">80</span><span class="i18n-en">80</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/yattayo-%E3%82%84%E3%81%A3%E3%81%9F%E3%82%88%E3%83%9C%E3%83%BC%E3%83%89-todo%E3%83%AA%E3%82%B9%E3%83%88/id6791000395?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">58</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e8/ca/3f/e8ca3fdf-b576-e377-18f5-71c007c54fa3/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">Yattayo やったよボード：ToDoリスト</span><span class="i18n-en">Yattayo: Slider To-Do Board</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">80</span><span class="i18n-en">80</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%80%E3%83%BC-%E8%A8%98%E6%86%B6%E3%82%92%E5%91%BC%E3%81%B3%E8%B5%B7%E3%81%93%E3%81%99/id6756901694?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">59</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/9a/63/b2/9a63b27a-16c9-f69e-e393-5e48836c3961/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">リマインダー 記憶を呼び起こす</span><span class="i18n-en">BaseReminder</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">74</span><span class="i18n-en">74</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%80%E3%83%BC-%E8%A8%98%E6%86%B6%E3%82%92%E5%91%BC%E3%81%B3%E8%B5%B7%E3%81%93%E3%81%99/id6756901694?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">59</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/9a/63/b2/9a63b27a-16c9-f69e-e393-5e48836c3961/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">リマインダー 記憶を呼び起こす</span><span class="i18n-en">BaseReminder</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">74</span><span class="i18n-en">74</span></span>
                 </a>
-                <div class="rk-row rk-row--ended">
-                    <span class="rk-rank">60</span>
-                    <span class="rk-icon"><span class="rk-noicon"><span class="i18n-ja">終</span><span class="i18n-en">—</span></span></span>
-                    <span class="rk-name"><span class="i18n-ja">星防衛</span><span class="i18n-en">Star Defense</span><span class="rk-ended"><span class="i18n-ja">配信終了</span><span class="i18n-en">Discontinued</span></span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">74</span><span class="i18n-en">74</span></span>
+                <div class="ga-rk-row ga-rk-row--ended">
+                    <span class="ga-rk-rank">60</span>
+                    <span class="ga-rk-icon"><span class="ga-rk-noicon"><span class="i18n-ja">終</span><span class="i18n-en">—</span></span></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">星防衛</span><span class="i18n-en">Star Defense</span><span class="ga-rk-ended"><span class="i18n-ja">配信終了</span><span class="i18n-en">Discontinued</span></span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">74</span><span class="i18n-en">74</span></span>
                 </div>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/mono-%E3%81%8A%E8%BF%8E%E3%81%88%E3%81%97%E3%81%9F%E5%96%9C%E3%81%B3%E3%82%92%E5%88%86%E3%81%8B%E3%81%A1%E5%90%88%E3%81%86%E3%82%A2%E3%83%97%E3%83%AA/id6743043894?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">61</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/45/04/f7/4504f78c-6887-250e-6069-44754bec38f2/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">mono ~お迎えした喜びを分かち合うアプリ~</span><span class="i18n-en">mono - Share the Joy of New Finds</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">73</span><span class="i18n-en">73</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/mono-%E3%81%8A%E8%BF%8E%E3%81%88%E3%81%97%E3%81%9F%E5%96%9C%E3%81%B3%E3%82%92%E5%88%86%E3%81%8B%E3%81%A1%E5%90%88%E3%81%86%E3%82%A2%E3%83%97%E3%83%AA/id6743043894?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">61</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/45/04/f7/4504f78c-6887-250e-6069-44754bec38f2/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">mono ~お迎えした喜びを分かち合うアプリ~</span><span class="i18n-en">mono - Share the Joy of New Finds</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">73</span><span class="i18n-en">73</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/kimochi-%E3%81%8B%E3%82%8F%E3%81%84%E3%81%84%E6%B0%97%E5%88%86%E6%97%A5%E8%A8%98/id6762499180?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">62</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/42/ec/8c/42ec8c9a-7584-abc0-9074-6a1a4552b57c/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">Kimochi かわいい気分日記</span><span class="i18n-en">Kimochi - Cute Mood Diary</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">70</span><span class="i18n-en">70</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/kimochi-%E3%81%8B%E3%82%8F%E3%81%84%E3%81%84%E6%B0%97%E5%88%86%E6%97%A5%E8%A8%98/id6762499180?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">62</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/42/ec/8c/42ec8c9a-7584-abc0-9074-6a1a4552b57c/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">Kimochi かわいい気分日記</span><span class="i18n-en">Kimochi - Cute Mood Diary</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">70</span><span class="i18n-en">70</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/oshilog-%E6%8E%A8%E3%81%97%E6%B4%BB%E3%83%8E%E3%83%BC%E3%83%88/id6788375876?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">63</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a9/3b/ab/a93bab2e-7fe0-79c9-580e-900271a2cac4/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">OshiLog - 推し活ノート</span><span class="i18n-en">OshiLog - Fandom Tracker</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">69</span><span class="i18n-en">69</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/oshilog-%E6%8E%A8%E3%81%97%E6%B4%BB%E3%83%8E%E3%83%BC%E3%83%88/id6788375876?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">63</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a9/3b/ab/a93bab2e-7fe0-79c9-580e-900271a2cac4/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">OshiLog - 推し活ノート</span><span class="i18n-en">OshiLog - Fandom Tracker</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">69</span><span class="i18n-en">69</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/flowerlens-%E8%8A%B1ai%E5%9B%B3%E9%91%91/id6762043194?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">64</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/27/cb/a2/27cba267-bd61-ef68-376a-503a8159f8d9/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">FlowerLens - 花AI図鑑</span><span class="i18n-en">FlowerLens - Flower AI Guide</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">58</span><span class="i18n-en">58</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/flowerlens-%E8%8A%B1ai%E5%9B%B3%E9%91%91/id6762043194?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">64</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/27/cb/a2/27cba267-bd61-ef68-376a-503a8159f8d9/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">FlowerLens - 花AI図鑑</span><span class="i18n-en">FlowerLens - Flower AI Guide</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">58</span><span class="i18n-en">58</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/camerakeep-%E3%82%AB%E3%83%A1%E3%83%A9%E6%A9%9F%E6%9D%90%E7%AE%A1%E7%90%86/id6784186281?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">65</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/27/8c/06/278c0652-d947-ac5c-c430-424eeb3b97b9/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">CameraKeep カメラ機材管理</span><span class="i18n-en">CameraKeep: Camera Gear Care</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">49</span><span class="i18n-en">49</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/camerakeep-%E3%82%AB%E3%83%A1%E3%83%A9%E6%A9%9F%E6%9D%90%E7%AE%A1%E7%90%86/id6784186281?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">65</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/27/8c/06/278c0652-d947-ac5c-c430-424eeb3b97b9/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">CameraKeep カメラ機材管理</span><span class="i18n-en">CameraKeep: Camera Gear Care</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">49</span><span class="i18n-en">49</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF%E3%83%BC%E4%BA%A4%E6%8F%9B-homekeep/id6778079517?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">66</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/39/ba/df/39badfca-30bb-eff0-0a52-bf1701e2e152/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">フィルター交換 HomeKeep</span><span class="i18n-en">HomeKeep - Filter Reminder</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">44</span><span class="i18n-en">44</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF%E3%83%BC%E4%BA%A4%E6%8F%9B-homekeep/id6778079517?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">66</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/39/ba/df/39badfca-30bb-eff0-0a52-bf1701e2e152/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">フィルター交換 HomeKeep</span><span class="i18n-en">HomeKeep - Filter Reminder</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">44</span><span class="i18n-en">44</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/bikekeep-%E8%87%AA%E8%BB%A2%E8%BB%8A%E3%83%A1%E3%83%B3%E3%83%86%E7%AE%A1%E7%90%86/id6782966275?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">67</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a9/2e/20/a92e2007-e4fa-3de8-885e-8763c9147dc2/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">BikeKeep 自転車メンテ管理</span><span class="i18n-en">BikeKeep: Bike Maintenance</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">39</span><span class="i18n-en">39</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/bikekeep-%E8%87%AA%E8%BB%A2%E8%BB%8A%E3%83%A1%E3%83%B3%E3%83%86%E7%AE%A1%E7%90%86/id6782966275?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">67</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a9/2e/20/a92e2007-e4fa-3de8-885e-8763c9147dc2/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">BikeKeep 自転車メンテ管理</span><span class="i18n-en">BikeKeep: Bike Maintenance</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">39</span><span class="i18n-en">39</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/%E3%83%9E%E3%83%83%E3%83%81%E3%83%9C%E3%83%83%E3%82%AF%E3%82%B9-%E9%9B%86%E4%B8%AD%E3%82%BF%E3%82%A4%E3%83%9E%E3%83%BC-%E7%BF%92%E6%85%A3/id6786488863?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">68</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c6/27/f5/c627f52e-a27b-0b3f-2009-91d6e943bc8d/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">マッチボックス 集中タイマー＆習慣</span><span class="i18n-en">Matchbox: Focus Timer &amp; Habits</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">39</span><span class="i18n-en">39</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/%E3%83%9E%E3%83%83%E3%83%81%E3%83%9C%E3%83%83%E3%82%AF%E3%82%B9-%E9%9B%86%E4%B8%AD%E3%82%BF%E3%82%A4%E3%83%9E%E3%83%BC-%E7%BF%92%E6%85%A3/id6786488863?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">68</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c6/27/f5/c627f52e-a27b-0b3f-2009-91d6e943bc8d/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">マッチボックス 集中タイマー＆習慣</span><span class="i18n-en">Matchbox: Focus Timer &amp; Habits</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">39</span><span class="i18n-en">39</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/carkeep-%E6%84%9B%E8%BB%8A%E3%83%A1%E3%83%B3%E3%83%86%E7%AE%A1%E7%90%86/id6785027821?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">69</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/17/64/a5/1764a5d0-5b28-9208-e0d7-1348e2ae50b1/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">CarKeep 愛車メンテ管理</span><span class="i18n-en">CarKeep: Car Maintenance</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">36</span><span class="i18n-en">36</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/carkeep-%E6%84%9B%E8%BB%8A%E3%83%A1%E3%83%B3%E3%83%86%E7%AE%A1%E7%90%86/id6785027821?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">69</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/17/64/a5/1764a5d0-5b28-9208-e0d7-1348e2ae50b1/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">CarKeep 愛車メンテ管理</span><span class="i18n-en">CarKeep: Car Maintenance</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">36</span><span class="i18n-en">36</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/%E8%A6%8B%E5%AE%88%E3%82%8A%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%80%E3%83%BC-%E3%81%BF%E3%81%BE%E3%82%82%E3%82%8A/id6758816691?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">70</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/40/5f/fc/405ffca1-8c72-9c23-2a6a-0369bd981589/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">見守りリマインダー - みまもり</span><span class="i18n-en">CheckInSenior - Family Check</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">30</span><span class="i18n-en">30</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/%E8%A6%8B%E5%AE%88%E3%82%8A%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%80%E3%83%BC-%E3%81%BF%E3%81%BE%E3%82%82%E3%82%8A/id6758816691?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">70</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/40/5f/fc/405ffca1-8c72-9c23-2a6a-0369bd981589/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">見守りリマインダー - みまもり</span><span class="i18n-en">CheckInSenior - Family Check</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">30</span><span class="i18n-en">30</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/%E3%83%95%E3%83%AD%E3%82%A4%E3%83%88%E5%85%88%E7%94%9F%E3%81%AE%E5%A4%A2%E5%8D%A0%E3%81%84-ai%E5%A4%A2%E8%A8%BA%E6%96%AD/id6777151259?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">71</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ed/dd/9c/eddd9c03-0655-c8dd-78c3-6f6cda15ba7c/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">フロイト先生の夢占い｜AI夢診断</span><span class="i18n-en">FreudDream: AI Dream Reading</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">26</span><span class="i18n-en">26</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/%E3%83%95%E3%83%AD%E3%82%A4%E3%83%88%E5%85%88%E7%94%9F%E3%81%AE%E5%A4%A2%E5%8D%A0%E3%81%84-ai%E5%A4%A2%E8%A8%BA%E6%96%AD/id6777151259?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">71</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ed/dd/9c/eddd9c03-0655-c8dd-78c3-6f6cda15ba7c/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">フロイト先生の夢占い｜AI夢診断</span><span class="i18n-en">FreudDream: AI Dream Reading</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">26</span><span class="i18n-en">26</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/%E5%8C%85%E4%B8%81%E3%82%B1%E3%82%A2-knifekeep/id6782555676?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">72</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/07/66/c3/0766c392-682d-43a9-62a4-ea0874a3b17a/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">包丁ケア KnifeKeep</span><span class="i18n-en">KnifeKeep: Blade Care</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">26</span><span class="i18n-en">26</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/%E5%8C%85%E4%B8%81%E3%82%B1%E3%82%A2-knifekeep/id6782555676?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">72</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/07/66/c3/0766c392-682d-43a9-62a4-ea0874a3b17a/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">包丁ケア KnifeKeep</span><span class="i18n-en">KnifeKeep: Blade Care</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">26</span><span class="i18n-en">26</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/divekeep-%E5%99%A8%E6%9D%90%E3%82%B1%E3%82%A2%E7%AE%A1%E7%90%86/id6784748590?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">73</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/34/e0/1e/34e01ed4-ced4-2213-0766-61b2e83ab038/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">DiveKeep 器材ケア管理</span><span class="i18n-en">DiveKeep: Scuba Gear Care</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">25</span><span class="i18n-en">25</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/divekeep-%E5%99%A8%E6%9D%90%E3%82%B1%E3%82%A2%E7%AE%A1%E7%90%86/id6784748590?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">73</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/34/e0/1e/34e01ed4-ced4-2213-0766-61b2e83ab038/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">DiveKeep 器材ケア管理</span><span class="i18n-en">DiveKeep: Scuba Gear Care</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">25</span><span class="i18n-en">25</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/music-snapshot-%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AE%E9%9F%B3%E6%A5%BD%E3%82%92%E4%B8%80%E6%9E%9A%E3%81%AB/id6605937062?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">74</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/98/d0/78/98d07863-83f6-500c-daa1-3b3b5aa439ba/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">Music Snapshot 〜あなたの音楽を一枚に〜</span><span class="i18n-en">Music Snapshot: Art Wallpapers</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">25</span><span class="i18n-en">25</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/music-snapshot-%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AE%E9%9F%B3%E6%A5%BD%E3%82%92%E4%B8%80%E6%9E%9A%E3%81%AB/id6605937062?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">74</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/98/d0/78/98d07863-83f6-500c-daa1-3b3b5aa439ba/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">Music Snapshot 〜あなたの音楽を一枚に〜</span><span class="i18n-en">Music Snapshot: Art Wallpapers</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">25</span><span class="i18n-en">25</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/%E3%83%AF%E3%82%A4%E3%83%B3%E9%A3%B2%E3%81%BF%E9%A0%83%E7%AE%A1%E7%90%86-wineready/id6780249664?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">75</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/36/dd/ff/36ddff16-438b-a1a5-9893-7cf69a8263bb/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">ワイン飲み頃管理 WineReady</span><span class="i18n-en">WineReady: Drink Window</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">23</span><span class="i18n-en">23</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/%E3%83%AF%E3%82%A4%E3%83%B3%E9%A3%B2%E3%81%BF%E9%A0%83%E7%AE%A1%E7%90%86-wineready/id6780249664?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">75</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/36/dd/ff/36ddff16-438b-a1a5-9893-7cf69a8263bb/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">ワイン飲み頃管理 WineReady</span><span class="i18n-en">WineReady: Drink Window</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">23</span><span class="i18n-en">23</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/reelkeep-%E9%87%A3%E5%85%B7%E3%82%B1%E3%82%A2%E7%AE%A1%E7%90%86/id6784576527?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">76</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/67/83/30/6783306e-8127-8fe6-4669-23711751d540/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">ReelKeep 釣具ケア管理</span><span class="i18n-en">ReelKeep: Fishing Reel Care</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">22</span><span class="i18n-en">22</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/reelkeep-%E9%87%A3%E5%85%B7%E3%82%B1%E3%82%A2%E7%AE%A1%E7%90%86/id6784576527?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">76</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/67/83/30/6783306e-8127-8fe6-4669-23711751d540/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">ReelKeep 釣具ケア管理</span><span class="i18n-en">ReelKeep: Fishing Reel Care</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">22</span><span class="i18n-en">22</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/%E3%83%91%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%88%E6%9C%9F%E9%99%90%E7%AE%A1%E7%90%86-passportalert/id6782294746?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">77</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/dc/b1/69/dcb169ad-25fe-705e-9a47-f47985380cf3/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">パスポート期限管理 PassportAlert</span><span class="i18n-en">PassportAlert: Visa Expiry</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">21</span><span class="i18n-en">21</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/%E3%83%91%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%88%E6%9C%9F%E9%99%90%E7%AE%A1%E7%90%86-passportalert/id6782294746?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">77</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/dc/b1/69/dcb169ad-25fe-705e-9a47-f47985380cf3/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">パスポート期限管理 PassportAlert</span><span class="i18n-en">PassportAlert: Visa Expiry</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">21</span><span class="i18n-en">21</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/%E8%85%95%E6%99%82%E8%A8%88%E3%82%B3%E3%83%AC%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3-watchkeep/id6781759617?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">78</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/07/a8/28/07a82882-098b-c0d5-7065-abb7172970af/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">腕時計コレクション WatchKeep</span><span class="i18n-en">WatchKeep: Watch Care</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">20</span><span class="i18n-en">20</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/%E8%85%95%E6%99%82%E8%A8%88%E3%82%B3%E3%83%AC%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3-watchkeep/id6781759617?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">78</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/07/a8/28/07a82882-098b-c0d5-7065-abb7172970af/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">腕時計コレクション WatchKeep</span><span class="i18n-en">WatchKeep: Watch Care</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">20</span><span class="i18n-en">20</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/%E3%81%86%E3%82%93%E3%81%90%E3%82%8A%E3%81%A3%E3%81%97%E3%82%85/id6812746989?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">79</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/aa/03/9c/aa039c57-63b6-120f-0f5d-7a4c57497748/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">うんぐりっしゅ</span><span class="i18n-en">Unglish: Travel English Phrases</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">17</span><span class="i18n-en">17</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/%E3%81%86%E3%82%93%E3%81%90%E3%82%8A%E3%81%A3%E3%81%97%E3%82%85/id6812746989?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">79</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/aa/03/9c/aa039c57-63b6-120f-0f5d-7a4c57497748/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">うんぐりっしゅ</span><span class="i18n-en">Unglish: Travel English Phrases</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">17</span><span class="i18n-en">17</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/%E7%8F%88%E7%90%B2%E9%AE%AE%E5%BA%A6-%E7%84%99%E7%85%8E%E6%97%A5%E7%AE%A1%E7%90%86-beanfresh/id6778683064?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">80</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ab/71/c6/ab71c692-efa5-d338-cdad-09609e1d3326/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">珈琲鮮度・焙煎日管理 BeanFresh</span><span class="i18n-en">BeanFresh - Coffee Freshness</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">16</span><span class="i18n-en">16</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/%E7%8F%88%E7%90%B2%E9%AE%AE%E5%BA%A6-%E7%84%99%E7%85%8E%E6%97%A5%E7%AE%A1%E7%90%86-beanfresh/id6778683064?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">80</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ab/71/c6/ab71c692-efa5-d338-cdad-09609e1d3326/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">珈琲鮮度・焙煎日管理 BeanFresh</span><span class="i18n-en">BeanFresh - Coffee Freshness</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">16</span><span class="i18n-en">16</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/%E9%9D%A9%E9%9D%B4%E3%82%B1%E3%82%A2%E6%89%8B%E5%B8%B3-shoekeep/id6781119303?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">81</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f8/12/c3/f812c390-a5a7-501f-8d7c-b7eb3b8801a4/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">革靴ケア手帳 ShoeKeep</span><span class="i18n-en">ShoeKeep: Care &amp; Rotation</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">16</span><span class="i18n-en">16</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/%E9%9D%A9%E9%9D%B4%E3%82%B1%E3%82%A2%E6%89%8B%E5%B8%B3-shoekeep/id6781119303?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">81</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f8/12/c3/f812c390-a5a7-501f-8d7c-b7eb3b8801a4/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">革靴ケア手帳 ShoeKeep</span><span class="i18n-en">ShoeKeep: Care &amp; Rotation</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">16</span><span class="i18n-en">16</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/%E4%B8%87%E5%B9%B4%E7%AD%86%E3%82%B1%E3%82%A2-penkeep/id6782400804?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">82</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5e/ce/de/5ecede23-6105-fdba-44cd-afdb8cc27f37/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">万年筆ケア PenKeep</span><span class="i18n-en">PenKeep: Fountain Pen Care</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">14</span><span class="i18n-en">14</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/%E4%B8%87%E5%B9%B4%E7%AD%86%E3%82%B1%E3%82%A2-penkeep/id6782400804?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">82</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5e/ce/de/5ecede23-6105-fdba-44cd-afdb8cc27f37/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">万年筆ケア PenKeep</span><span class="i18n-en">PenKeep: Fountain Pen Care</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">14</span><span class="i18n-en">14</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/%E3%83%91%E3%82%BF%E3%83%91%E3%82%BF%E6%8E%A8%E3%81%97%E6%99%82%E8%A8%88-%E6%8E%A8%E3%81%97%E6%B4%BB%E3%81%AE%E7%BD%AE%E3%81%8D%E6%99%82%E8%A8%88%E3%82%A6%E3%82%A3%E3%82%B8%E3%82%A7%E3%83%83%E3%83%88/id6821502120?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">83</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e0/cc/e3/e0cce3aa-5bc0-0249-f331-24f1b484f21f/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">パタパタ推し時計 - 推し活の置き時計ウィジェット</span><span class="i18n-en">Oshi Clock: Flip Photo Widget</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">13</span><span class="i18n-en">13</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/%E3%83%91%E3%82%BF%E3%83%91%E3%82%BF%E6%8E%A8%E3%81%97%E6%99%82%E8%A8%88-%E6%8E%A8%E3%81%97%E6%B4%BB%E3%81%AE%E7%BD%AE%E3%81%8D%E6%99%82%E8%A8%88%E3%82%A6%E3%82%A3%E3%82%B8%E3%82%A7%E3%83%83%E3%83%88/id6821502120?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">83</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e0/cc/e3/e0cce3aa-5bc0-0249-f331-24f1b484f21f/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">パタパタ推し時計 - 推し活の置き時計ウィジェット</span><span class="i18n-en">Oshi Clock: Flip Photo Widget</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">13</span><span class="i18n-en">13</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/zennchat-%E7%A6%85%E3%81%AE%E6%97%A5%E3%80%85/id6754220363?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">84</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/41/f4/59/41f4599f-9fb4-6ca8-c9e6-98b319e4b7a6/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">ZennChat: 禅の日々</span><span class="i18n-en">ZennChat: Daily Practice</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">12</span><span class="i18n-en">12</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/zennchat-%E7%A6%85%E3%81%AE%E6%97%A5%E3%80%85/id6754220363?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">84</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/41/f4/59/41f4599f-9fb4-6ca8-c9e6-98b319e4b7a6/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">ZennChat: 禅の日々</span><span class="i18n-en">ZennChat: Daily Practice</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">12</span><span class="i18n-en">12</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/%E3%82%B3%E3%82%A4%E3%83%B3%E3%82%B2%E3%83%BC%E3%83%A0%E3%82%B3%E3%83%AC%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3-%E3%83%AC%E3%83%88%E3%83%AD%E3%82%B2%E3%83%BC%E3%82%BB%E3%83%B3/id6788194878?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">85</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/35/a1/b9/35a1b995-28ab-2b25-309c-4d705e8947c1/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">コインゲームコレクション：レトロゲーセン</span><span class="i18n-en">Coin Game Collection: Arcade</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">6</span><span class="i18n-en">6</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/%E3%82%B3%E3%82%A4%E3%83%B3%E3%82%B2%E3%83%BC%E3%83%A0%E3%82%B3%E3%83%AC%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3-%E3%83%AC%E3%83%88%E3%83%AD%E3%82%B2%E3%83%BC%E3%82%BB%E3%83%B3/id6788194878?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">85</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/35/a1/b9/35a1b995-28ab-2b25-309c-4d705e8947c1/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">コインゲームコレクション：レトロゲーセン</span><span class="i18n-en">Coin Game Collection: Arcade</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">6</span><span class="i18n-en">6</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/%E3%81%93%E3%81%93%E6%8A%BC%E3%81%97%E3%81%A6%E3%81%AD-%E3%82%B9%E3%83%9E%E3%83%9B%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88ai/id6823032334?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">86</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/94/58/53/9458534e-aa0f-63c6-615c-5782a9ceb9a9/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">ここ押してね：スマホの使い方サポートAI</span><span class="i18n-en">Tap Here: Phone Help with AI</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">3</span><span class="i18n-en">3</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/%E3%81%93%E3%81%93%E6%8A%BC%E3%81%97%E3%81%A6%E3%81%AD-%E3%82%B9%E3%83%9E%E3%83%9B%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88ai/id6823032334?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">86</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/94/58/53/9458534e-aa0f-63c6-615c-5782a9ceb9a9/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">ここ押してね：スマホの使い方サポートAI</span><span class="i18n-en">Tap Here: Phone Help with AI</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">3</span><span class="i18n-en">3</span></span>
                 </a>
-                <a class="rk-row" href="https://apps.apple.com/jp/app/%E6%98%86%E8%99%AB%E5%A4%A7%E6%88%A6/id6799612767?uo=4" target="_blank" rel="noopener">
-                    <span class="rk-rank">87</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/be/9c/1b/be9c1b9f-0260-1f5e-b7e8-1b79e252748a/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">昆虫大戦</span><span class="i18n-en">Beetle Wars</span></span>
-                    <span class="rk-bar"><i style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">0</span><span class="i18n-en">0</span></span>
+                <a class="ga-rk-row" href="https://apps.apple.com/jp/app/%E6%98%86%E8%99%AB%E5%A4%A7%E6%88%A6/id6799612767?uo=4" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">87</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/be/9c/1b/be9c1b9f-0260-1f5e-b7e8-1b79e252748a/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">昆虫大戦</span><span class="i18n-en">Beetle Wars</span></span>
+                    <span class="ga-rk-bar"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">0</span><span class="i18n-en">0</span></span>
                 </a>
                 </div>
 
-                <h2 class="rk-subtitle">Google Play</h2>
-                <p class="rk-subnote i18n-ja">
+                <div class="g-sh">
+                    <h2>Google Play</h2>
+                    <small><span class="i18n-ja">Android 9本</span><span class="i18n-en">9 Android apps</span></small>
+                </div>
+                <p class="ga-rk-sublead i18n-ja">
                     Androidにも9本出しています。こちらも配信開始からの<strong>累計インストール数</strong>で、
                     合計66,085。いま動いている端末は19,975台です。
                 </p>
-                <p class="rk-subnote i18n-en">
+                <p class="ga-rk-sublead i18n-en">
                     I've also released 9 apps on Android. These are <strong>total installs</strong> since launch as well,
                     66,085 in all. 19,975 devices are running them right now.
                 </p>
-                <div class="rk-list rk-list--android">
-                <a class="rk-row" href="https://play.google.com/store/apps/details?id=com.tsuzukit.poopcounter" target="_blank" rel="noopener">
-                    <span class="rk-rank">1</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/70/51/ba/7051bad5-148b-ce08-0aeb-66f24097d0e3/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">うんちくん</span><span class="i18n-en">UNCHIKUN</span><span class="rk-sub"><span class="i18n-ja">いま17,380台</span><span class="i18n-en">17,380 active devices</span></span></span>
-                    <span class="rk-bar"><i class="rk-bar--and" style="width: 100.0%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">5.9万</span><span class="i18n-en">59K</span></span>
+                <div class="g-panel ga-rk-list">
+                <a class="ga-rk-row" href="https://play.google.com/store/apps/details?id=com.tsuzukit.poopcounter" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">1</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/70/51/ba/7051bad5-148b-ce08-0aeb-66f24097d0e3/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">うんちくん</span><span class="i18n-en">UNCHIKUN</span><span class="ga-rk-sub"><span class="i18n-ja">いま17,380台</span><span class="i18n-en">17,380 active devices</span></span></span>
+                    <span class="ga-rk-bar ga-rk-bar--and"><i style="width: 100.0%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">5.9万</span><span class="i18n-en">59K</span></span>
                 </a>
-                <a class="rk-row" href="https://play.google.com/store/apps/details?id=com.tsuzukit.anatareceipt" target="_blank" rel="noopener">
-                    <span class="rk-rank">2</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/85/2c/9d/852c9d7e-9a34-3893-e6ad-64124d6567dc/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">あなたレシート</span><span class="i18n-en">YOU Receipt</span><span class="rk-sub"><span class="i18n-ja">いま1,630台</span><span class="i18n-en">1,630 active devices</span></span></span>
-                    <span class="rk-bar"><i class="rk-bar--and" style="width: 7.0%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">4,142</span><span class="i18n-en">4,142</span></span>
+                <a class="ga-rk-row" href="https://play.google.com/store/apps/details?id=com.tsuzukit.anatareceipt" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">2</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/85/2c/9d/852c9d7e-9a34-3893-e6ad-64124d6567dc/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">あなたレシート</span><span class="i18n-en">YOU Receipt</span><span class="ga-rk-sub"><span class="i18n-ja">いま1,630台</span><span class="i18n-en">1,630 active devices</span></span></span>
+                    <span class="ga-rk-bar ga-rk-bar--and"><i style="width: 7.0%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">4,142</span><span class="i18n-en">4,142</span></span>
                 </a>
-                <a class="rk-row" href="https://play.google.com/store/apps/details?id=com.tsuzuki817.omoidemap" target="_blank" rel="noopener">
-                    <span class="rk-rank">3</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e8/5c/85/e85c8537-ded0-ef69-2f60-f2ff85a7538a/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">旅行思い出マップ</span><span class="i18n-en">TravelMemoryMap</span><span class="rk-sub"><span class="i18n-ja">いま697台</span><span class="i18n-en">697 active devices</span></span></span>
-                    <span class="rk-bar"><i class="rk-bar--and" style="width: 3.2%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">1,910</span><span class="i18n-en">1,910</span></span>
+                <a class="ga-rk-row" href="https://play.google.com/store/apps/details?id=com.tsuzuki817.omoidemap" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">3</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e8/5c/85/e85c8537-ded0-ef69-2f60-f2ff85a7538a/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">旅行思い出マップ</span><span class="i18n-en">TravelMemoryMap</span><span class="ga-rk-sub"><span class="i18n-ja">いま697台</span><span class="i18n-en">697 active devices</span></span></span>
+                    <span class="ga-rk-bar ga-rk-bar--and"><i style="width: 3.2%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">1,910</span><span class="i18n-en">1,910</span></span>
                 </a>
-                <a class="rk-row" href="https://play.google.com/store/apps/details?id=com.tsuzukit.nokki" target="_blank" rel="noopener">
-                    <span class="rk-rank">4</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/91/21/35/91213567-b4b3-a301-bef8-a55986691765/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">nokki - 音楽ジャーナル</span><span class="i18n-en">nokki - Music Journal</span><span class="rk-sub"><span class="i18n-ja">いま145台</span><span class="i18n-en">145 active devices</span></span></span>
-                    <span class="rk-bar"><i class="rk-bar--and" style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">311</span><span class="i18n-en">311</span></span>
+                <a class="ga-rk-row" href="https://play.google.com/store/apps/details?id=com.tsuzukit.nokki" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">4</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/91/21/35/91213567-b4b3-a301-bef8-a55986691765/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">nokki - 音楽ジャーナル</span><span class="i18n-en">nokki - Music Journal</span><span class="ga-rk-sub"><span class="i18n-ja">いま145台</span><span class="i18n-en">145 active devices</span></span></span>
+                    <span class="ga-rk-bar ga-rk-bar--and"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">311</span><span class="i18n-en">311</span></span>
                 </a>
-                <a class="rk-row" href="https://play.google.com/store/apps/details?id=com.tsuzukit.yattayo" target="_blank" rel="noopener">
-                    <span class="rk-rank">5</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5f/4b/37/5f4b379e-eb4e-1f05-628c-b657f729d71a/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">Yattayo やったよボード</span><span class="i18n-en">Yattayo: Slider To-Do Board</span><span class="rk-sub"><span class="i18n-ja">いま47台</span><span class="i18n-en">47 active devices</span></span></span>
-                    <span class="rk-bar"><i class="rk-bar--and" style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">203</span><span class="i18n-en">203</span></span>
+                <a class="ga-rk-row" href="https://play.google.com/store/apps/details?id=com.tsuzukit.yattayo" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">5</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5f/4b/37/5f4b379e-eb4e-1f05-628c-b657f729d71a/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">Yattayo やったよボード</span><span class="i18n-en">Yattayo: Slider To-Do Board</span><span class="ga-rk-sub"><span class="i18n-ja">いま47台</span><span class="i18n-en">47 active devices</span></span></span>
+                    <span class="ga-rk-bar ga-rk-bar--and"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">203</span><span class="i18n-en">203</span></span>
                 </a>
-                <a class="rk-row" href="https://play.google.com/store/apps/details?id=com.tsuzukit.sebonereminder" target="_blank" rel="noopener">
-                    <span class="rk-rank">6</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f3/b7/77/f3b7773a-bd81-95e7-2fde-ff931ed92d45/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">猫背改善と姿勢リマインダー</span><span class="i18n-en">Posture Reminder: Cat Coach</span><span class="rk-sub"><span class="i18n-ja">いま38台</span><span class="i18n-en">38 active devices</span></span></span>
-                    <span class="rk-bar"><i class="rk-bar--and" style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">129</span><span class="i18n-en">129</span></span>
+                <a class="ga-rk-row" href="https://play.google.com/store/apps/details?id=com.tsuzukit.sebonereminder" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">6</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f3/b7/77/f3b7773a-bd81-95e7-2fde-ff931ed92d45/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">猫背改善と姿勢リマインダー</span><span class="i18n-en">Posture Reminder: Cat Coach</span><span class="ga-rk-sub"><span class="i18n-ja">いま38台</span><span class="i18n-en">38 active devices</span></span></span>
+                    <span class="ga-rk-bar ga-rk-bar--and"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">129</span><span class="i18n-en">129</span></span>
                 </a>
-                <a class="rk-row" href="https://play.google.com/store/apps/details?id=com.tsuzukit.matchbox" target="_blank" rel="noopener">
-                    <span class="rk-rank">7</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c6/27/f5/c627f52e-a27b-0b3f-2009-91d6e943bc8d/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name">Matchbox: Focus Timer &amp; Habits<span class="rk-sub"><span class="i18n-ja">いま28台</span><span class="i18n-en">28 active devices</span></span></span>
-                    <span class="rk-bar"><i class="rk-bar--and" style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">66</span><span class="i18n-en">66</span></span>
+                <a class="ga-rk-row" href="https://play.google.com/store/apps/details?id=com.tsuzukit.matchbox" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">7</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c6/27/f5/c627f52e-a27b-0b3f-2009-91d6e943bc8d/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name">Matchbox: Focus Timer &amp; Habits<span class="ga-rk-sub"><span class="i18n-ja">いま28台</span><span class="i18n-en">28 active devices</span></span></span>
+                    <span class="ga-rk-bar ga-rk-bar--and"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">66</span><span class="i18n-en">66</span></span>
                 </a>
-                <a class="rk-row" href="https://play.google.com/store/apps/details?id=com.tsuzukit.monivo" target="_blank" rel="noopener">
-                    <span class="rk-rank">8</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4a/9e/b5/4a9eb5b2-7e9d-2268-3df5-dccd511322de/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">Monivo 声で起こし合うアラーム</span><span class="i18n-en">Monivo: Wake Up by Voice</span><span class="rk-sub"><span class="i18n-ja">いま9台</span><span class="i18n-en">9 active devices</span></span></span>
-                    <span class="rk-bar"><i class="rk-bar--and" style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">47</span><span class="i18n-en">47</span></span>
+                <a class="ga-rk-row" href="https://play.google.com/store/apps/details?id=com.tsuzukit.monivo" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">8</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4a/9e/b5/4a9eb5b2-7e9d-2268-3df5-dccd511322de/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">Monivo 声で起こし合うアラーム</span><span class="i18n-en">Monivo: Wake Up by Voice</span><span class="ga-rk-sub"><span class="i18n-ja">いま9台</span><span class="i18n-en">9 active devices</span></span></span>
+                    <span class="ga-rk-bar ga-rk-bar--and"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">47</span><span class="i18n-en">47</span></span>
                 </a>
-                <a class="rk-row" href="https://play.google.com/store/apps/details?id=com.tsuzukit.patapataoshidokei" target="_blank" rel="noopener">
-                    <span class="rk-rank">9</span>
-                    <span class="rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e0/cc/e3/e0cce3aa-5bc0-0249-f331-24f1b484f21f/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" loading="lazy"></span>
-                    <span class="rk-name"><span class="i18n-ja">パタパタ推し時計</span><span class="i18n-en">Oshi Clock: Flip Photo Widget</span><span class="rk-sub"><span class="i18n-ja">いま1台</span><span class="i18n-en">1 active devices</span></span></span>
-                    <span class="rk-bar"><i class="rk-bar--and" style="width: 0.6%;"></i></span>
-                    <span class="rk-units"><span class="i18n-ja">3</span><span class="i18n-en">3</span></span>
+                <a class="ga-rk-row" href="https://play.google.com/store/apps/details?id=com.tsuzukit.patapataoshidokei" target="_blank" rel="noopener">
+                    <span class="ga-rk-rank">9</span>
+                    <span class="ga-rk-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e0/cc/e3/e0cce3aa-5bc0-0249-f331-24f1b484f21f/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="512" height="512" loading="lazy"></span>
+                    <span class="ga-rk-name"><span class="i18n-ja">パタパタ推し時計</span><span class="i18n-en">Oshi Clock: Flip Photo Widget</span><span class="ga-rk-sub"><span class="i18n-ja">いま1台</span><span class="i18n-en">1 active devices</span></span></span>
+                    <span class="ga-rk-bar ga-rk-bar--and"><i style="width: 0.6%;"></i></span>
+                    <span class="ga-rk-units"><span class="i18n-ja">3</span><span class="i18n-en">3</span></span>
                 </a>
                 </div>
 
-
-                <p class="rk-note i18n-ja">
-                    App Store Connectのトレンド（ユニット数・全期間）から取っています。Appleの表示が3桁に丸められているため、
-                    1万を超えるものは概数です。アプリ内課金の販売数と、他の開発者名義で預かっているアプリは含めていません。
-                    アイコンのない行は配信を終了したアプリです。Google Playの数字はPlay Consoleのインストールレポートを全期間ぶん合算したものです。
-                    最終更新は2026-11-02。
-                    <br>
-                    <a class="rk-back" href="/portfolio/">&larr; ポートフォリオに戻る</a>
-                </p>
-                <p class="rk-note i18n-en">
-                    These figures come from App Store Connect Trends (units, all time). Apple rounds what it shows to three digits,
-                    so anything over 10,000 is approximate. In-app purchase sales and apps I look after under other developers' names are not included.
-                    Rows without an icon are apps that are no longer available. The Google Play figures are the Play Console install reports added up over all time.
-                    Last updated 2026-11-02.
-                    <br>
-                    <a class="rk-back" href="/portfolio/">&larr; Back to the portfolio</a>
-                </p>
+                <div class="g-paper ga-rk-note">
+                    <p class="i18n-ja">
+                        App Store Connectのトレンド（ユニット数・全期間）から取っています。Appleの表示が3桁に丸められているため、
+                        1万を超えるものは概数です。アプリ内課金の販売数と、他の開発者名義で預かっているアプリは含めていません。
+                        アイコンのない行は配信を終了したアプリです。Google Playの数字はPlay Consoleのインストールレポートを全期間ぶん合算したものです。
+                        最終更新は2026-11-02。
+                    </p>
+                    <p class="i18n-en">
+                        These figures come from App Store Connect Trends (units, all time). Apple rounds what it shows to three digits,
+                        so anything over 10,000 is approximate. In-app purchase sales and apps I look after under other developers' names are not included.
+                        Rows without an icon are apps that are no longer available. The Google Play figures are the Play Console install reports added up over all time.
+                        Last updated 2026-11-02.
+                    </p>
+                    <a class="g-btn" href="/portfolio/">&larr; <span class="i18n-ja">ポートフォリオに戻る</span><span class="i18n-en">Back to the portfolio</span></a>
+                </div>
             </div>
         </main>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
-            <div class="footer-container">
-                <div class="footer-content">
-                    <div class="footer-brand">
-                        <a href="/" class="footer-logo">TsuzuKit</a>
-                        <p class="footer-tagline">Seriously Silly</p>
-                    </div>
-                    <div class="footer-links">
-                        <a href="/portfolio/">Portfolio</a>
-                        <a href="/about/">About</a>
-                        <a href="/blog/">Blog</a>
-                        <a href="/contact/">Contact</a>
-                    </div>
-                </div>
-                <div class="footer-bottom">
-                    <p>&copy; 2026 Ryo Tsuzukihashi. All rights reserved.</p>
-                </div>
+        <footer class="g-foot">
+            <img class="g-foot-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364" loading="lazy">
+            <div class="g-wrap">
+                <div><a href="/" class="g-foot-logo"><img src="/assets/images/logo/tsuzukit-wordmark-white.svg" alt="TsuzuKit" width="110" height="34"></a>
+                <p class="g-foot-tag"><span class="i18n-ja">誰も作らないものを、まじめに作る。</span><span class="i18n-en">Making what nobody else will, seriously.</span><br>Seriously Silly since 2016.</p></div>
+                <div class="g-foot-sns"><a href="https://x.com/tsuzuki817" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><img src="/assets/images/sns/x.png" alt="" width="22" height="22"></a><a href="https://www.instagram.com/tsuzuki817/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="/assets/images/sns/instagram.png" alt="" width="22" height="22"></a><a href="https://www.tiktok.com/@tsuzuki817" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><img src="/assets/images/sns/tiktok.png" alt="" width="22" height="22"></a><a href="https://www.youtube.com/@tsuzuki817" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><img src="/assets/images/sns/youtube.png" alt="" width="22" height="22"></a><a href="https://github.com/tsuzukihashi" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><img src="/assets/images/sns/github.png" alt="" width="22" height="22"></a></div>
+                <div class="g-foot-links"><a href="/contact/"><span class="i18n-ja">お問い合わせ</span><span class="i18n-en">Contact</span></a><a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a><a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a><a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a><a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a></div>
+                <p class="g-foot-copy">© 2026 Ryo Tsuzukihashi / TsuzuKit</p>
             </div>
         </footer>
     </body>

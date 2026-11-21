@@ -1,0 +1,207 @@
+/*
+ * お客様窓口（/contact/）と経歴（/career/）の組み方。部品は gacha.css（docs/gacha-design.md）。
+ * h- … お客様窓口　cr- … 経歴
+ */
+
+/* ================================================================ お客様窓口 */
+body.g .h-hero { display: grid; grid-template-columns: 190px 1fr; gap: 24px; align-items: center; margin-top: 14px; }
+body.g .h-hero .g-title { margin-bottom: 4px; }
+body.g .h-hero-char { width: 190px; display: block; }
+
+body.g .h-steps { display: grid; gap: 34px; margin-top: 46px; }
+body.g .h-step { position: relative; padding: 24px 28px 28px; min-width: 0; }
+body.g .h-n {
+  position: absolute; left: -16px; top: -18px; width: 56px; height: 56px; border-radius: 50%;
+  border: 4px solid var(--g-k); display: grid; place-items: center; font: 400 23px/1 var(--g-head);
+  background: linear-gradient(var(--c) 0 48%, var(--g-k) 48% 54%, #fff 54%);
+}
+body.g .h-step-title { font: 400 25px/1.4 var(--g-head); margin: 0 0 16px 38px; }
+
+/* 1 どのアプリ？ */
+body.g .h-search {
+  display: flex; align-items: center; gap: 10px; background: #fff; border: 3px solid var(--g-k);
+  border-radius: 999px; padding: 4px 8px 4px 18px; margin-bottom: 18px; max-width: 560px;
+}
+body.g .h-search:focus-within { box-shadow: 0 0 0 3px var(--g-y); }
+body.g .h-search-mark { font: 800 20px/1 var(--g-body); color: var(--g-mute); }
+body.g .h-search input {
+  flex: 1; min-width: 0; border: 0; background: none; outline: none; color: var(--g-k);
+  font: 800 16px/1.5 var(--g-body); padding: 9px 4px;
+}
+body.g .h-search input::placeholder { color: #9b8a92; }
+body.g .h-pick { display: flex; gap: 12px 10px; flex-wrap: wrap; }
+body.g .h-pick[hidden] { display: none; }
+body.g .h-loading { font: 800 14px/1.7 var(--g-body); color: var(--g-mute); padding: 10px 0; }
+body.g .h-app {
+  width: 100px; text-align: center; font: 800 12px/1.35 var(--g-body); color: var(--g-k);
+  padding: 8px 4px 9px; border-radius: 18px; border: 3px solid transparent; background: none;
+  transition: background .12s, border-color .12s, transform .12s;
+}
+body.g .h-app .g-cap { width: 72px; margin: 0 auto 6px; transform: rotate(var(--rot, 0deg)); transition: transform .2s; }
+body.g .h-app:hover .g-cap { transform: rotate(calc(var(--rot, 0deg) + 18deg)) scale(1.06); }
+body.g .h-app-name {
+  display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden;
+  word-break: auto-phrase; overflow-wrap: anywhere;
+}
+body.g .h-app[aria-pressed="true"] { border-color: var(--g-k); background: var(--g-y); box-shadow: 4px 4px 0 var(--g-k); }
+body.g .h-app-q {
+  position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 50%; height: 50%;
+  border-radius: 24%; border: 2.5px solid var(--g-k); background: #fff; display: grid; place-items: center;
+  font: 400 20px/1 var(--g-head);
+}
+body.g .h-more { margin-top: 18px; }
+body.g .h-more[hidden], body.g .h-none[hidden] { display: none; }
+body.g .h-none { padding: 8px 0 4px; }
+
+/* 2 なにに困った？ */
+body.g .h-kinds { display: flex; gap: 10px; flex-wrap: wrap; }
+
+/* 3 くわしく教えて */
+body.g .h-picked {
+  display: inline-block; background: #fff; border: 3px dashed var(--g-k); border-radius: 16px;
+  padding: 8px 14px; font: 800 14px/1.7 var(--g-body); color: var(--g-mute);
+}
+body.g .h-picked.is-set { border-style: solid; color: var(--g-k); }
+body.g .h-note { font: 700 14.5px/1.85 var(--g-body); margin: 12px 0 16px; max-width: 760px; }
+body.g .h-form {
+  background: #fff; border: var(--g-line) solid var(--g-k); border-radius: 22px; overflow: hidden;
+  line-height: 0;
+}
+body.g .h-form iframe { display: block; width: 100%; border: 0; }
+body.g .h-reply { font: 800 13.5px/1.8 var(--g-body); margin-top: 16px; }
+
+/* お仕事のご相談 */
+body.g .h-work { display: grid; grid-template-columns: 170px 1fr; gap: 26px; align-items: center; padding: 26px 30px; }
+body.g .h-work-char { width: 160px; display: block; justify-self: center; }
+body.g .h-work h3 { font: 400 24px/1.45 var(--g-head); }
+body.g .h-work-text > p { font: 700 15px/1.85 var(--g-body); margin: 6px 0 14px; }
+body.g .h-work-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-bottom: 18px; }
+body.g .h-work-list li {
+  display: grid; grid-template-columns: auto 1fr; gap: 0 10px; align-items: center; background: #fff;
+  border: 3px solid var(--g-k); border-radius: 16px; padding: 10px 14px;
+}
+body.g .h-work-list .g-capdot { width: 22px; height: 22px; grid-row: span 2; }
+body.g .h-work-list b { font: 800 15px/1.5 var(--g-body); }
+body.g .h-work-list small { font: 700 12.5px/1.6 var(--g-body); color: var(--g-mute); }
+
+body.g .h-faq { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; margin-top: 28px; }
+body.g .h-qa { padding: 18px 22px 20px; }
+body.g .h-qa h3 { display: flex; gap: 10px; align-items: flex-start; font: 800 16px/1.6 var(--g-body); }
+body.g .h-qa h3::before {
+  content: 'Q'; width: 30px; height: 30px; border-radius: 50%; background: var(--g-r); color: #fff; flex: none;
+  display: grid; place-items: center; font: 400 15px/1 var(--g-head); border: 2.5px solid var(--g-k); margin-top: -1px;
+}
+body.g .h-qa p { font: 700 14.5px/1.85 var(--g-body); margin: 8px 0 0 40px; color: #3a2630; }
+
+/* ほかの窓口 */
+body.g .h-routes { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
+body.g .h-route { display: flex; gap: 12px; align-items: flex-start; padding: 18px; min-width: 0; }
+body.g .h-route-icon {
+  flex: none; width: 42px; height: 42px; border-radius: 50%; border: 3px solid var(--g-k); background: var(--g-y);
+  display: grid; place-items: center; font: 800 19px/1 var(--g-body);
+}
+body.g .h-route-icon img { width: 20px; height: 20px; object-fit: contain; }
+body.g .h-route b { display: block; font: 800 15px/1.5 var(--g-body); }
+body.g .h-route small { display: block; font: 700 12.5px/1.6 var(--g-body); color: var(--g-mute); margin-top: 2px; overflow-wrap: anywhere; }
+body.g .h-route > span:last-child { min-width: 0; }
+body.g .h-route-links a { display: block; text-decoration: underline; text-underline-offset: 3px; }
+body.g .h-route-links a:hover { color: var(--g-k); }
+
+/* ================================================================ 経歴 */
+body.g .cr-hero { display: grid; grid-template-columns: 1fr 210px; gap: 24px; align-items: end; margin-top: 14px; }
+body.g .cr-hero-char { width: 200px; display: block; }
+body.g .cr-summary { padding: 26px 30px; margin-top: 24px; }
+body.g .cr-summary p { font: 700 15.5px/2 var(--g-body); }
+body.g .cr-summary p + p { margin-top: 12px; }
+
+body.g .cr-facts { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; margin-top: 28px; }
+body.g .cr-fact { text-align: center; padding: 18px 10px 16px; }
+body.g .cr-fact .g-capdot { width: 26px; height: 26px; display: block; margin: 0 auto 6px; }
+body.g .cr-fact b { display: block; font: 400 34px/1.15 var(--g-head); }
+body.g .cr-fact span { display: block; font: 800 13px/1.5 var(--g-body); color: var(--g-mute); margin-top: 4px; }
+
+body.g .cr-note { font: 800 14px/1.7 var(--g-body); color: #fff; margin: -10px 0 20px; }
+
+body.g .cr-jobs { display: grid; gap: 26px; }
+body.g .cr-job { padding: 24px 28px 22px; position: relative; }
+body.g .cr-job-head { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: center; }
+body.g .cr-job-company { font: 400 26px/1.3 var(--g-head); }
+body.g .cr-job-period { margin-left: auto; }
+body.g .cr-job-role { font: 800 14.5px/1.6 var(--g-body); color: #c8264e; margin: 8px 0 12px; }
+body.g .cr-job-body > p { font: 600 15px/1.95 var(--g-body); color: #2f1c26; }
+body.g .cr-job-list { margin-top: 12px; display: grid; gap: 6px; }
+body.g .cr-job-list li { position: relative; padding-left: 24px; font: 600 14.5px/1.8 var(--g-body); color: #2f1c26; }
+body.g .cr-job-list li::before {
+  content: ''; position: absolute; left: 3px; top: .62em; width: 12px; height: 12px; border-radius: 50%;
+  border: 2px solid var(--g-k); background: linear-gradient(var(--g-r) 0 48%, var(--g-k) 48% 54%, #fff 54%);
+}
+body.g .cr-tech {
+  margin-top: 16px; padding-top: 12px; border-top: 2.5px dashed rgba(42, 16, 32, .25);
+  font: 700 12.5px/1.9 var(--g-body); color: var(--g-mute);
+}
+
+body.g .cr-skills { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
+body.g .cr-skill { padding: 18px 20px; }
+body.g .cr-skill h3 { display: flex; gap: 8px; align-items: center; font: 400 18px/1.4 var(--g-head); margin-bottom: 8px; }
+body.g .cr-skill p { font: 700 13.5px/1.85 var(--g-body); color: #3a2630; }
+
+body.g .cr-talks { padding: 10px 28px; }
+body.g .cr-talk { padding: 14px 0; border-bottom: 2.5px dashed rgba(42, 16, 32, .2); }
+body.g .cr-talk:last-child { border-bottom: 0; }
+body.g .cr-talk .g-tag { font-size: 12px; padding: 2px 10px; background: var(--g-y); }
+body.g .cr-talk p { font: 800 15px/1.7 var(--g-body); margin-top: 6px; }
+body.g .cr-talk a { text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 2px; text-decoration-color: rgba(42, 16, 32, .3); }
+body.g .cr-talk a:hover { color: #c8264e; text-decoration-color: currentColor; }
+
+body.g .cr-certs { display: flex; flex-wrap: wrap; gap: 10px; }
+body.g .cr-cert { cursor: default; }
+body.g .cr-cert:hover { transform: none; }
+
+body.g .cr-cta { margin-top: 40px; }
+
+/* ================================================================ スマホ */
+@media (max-width: 960px) {
+  body.g .h-routes { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  body.g .cr-skills { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 720px) {
+  body.g .h-hero { grid-template-columns: 1fr; gap: 6px; }
+  body.g .h-hero-char { width: 110px; }
+  body.g .h-steps { gap: 30px; margin-top: 40px; }
+  body.g .h-step { padding: 20px 16px 20px; }
+  body.g .h-n { left: -8px; top: -16px; width: 46px; height: 46px; font-size: 19px; border-width: 3.5px; }
+  body.g .h-step-title { font-size: 20px; margin-left: 34px; margin-bottom: 14px; }
+  body.g .h-hero .g-bubble { margin-right: 6px; }
+  body.g .h-pick { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px 4px; }
+  body.g .h-app { width: auto; padding: 6px 0 7px; font-size: 11px; border-radius: 14px; border-width: 2.5px; letter-spacing: -.02em; }
+  body.g .h-app .g-cap { width: 54px; border-width: 3px; }
+  body.g .h-app[aria-pressed="true"] { box-shadow: 3px 3px 0 var(--g-k); }
+  body.g .h-picked { font-size: 13px; }
+  body.g .h-work { grid-template-columns: 1fr; padding: 20px 18px; gap: 6px; }
+  body.g .h-work-char { width: 100px; justify-self: start; }
+  body.g .h-work h3 { font-size: 20px; }
+  body.g .h-work-list { grid-template-columns: 1fr; }
+  body.g .h-faq { grid-template-columns: 1fr; gap: 16px; margin-top: 22px; }
+  body.g .h-qa { padding: 16px 16px 18px; }
+  body.g .h-qa p { margin-left: 0; }
+  body.g .h-routes { grid-template-columns: 1fr; gap: 14px; }
+
+  body.g .cr-hero { grid-template-columns: 1fr; gap: 0; }
+  body.g .cr-hero-char { width: 110px; order: -1; }
+  body.g .cr-summary { padding: 20px 18px; }
+  body.g .cr-summary p { font-size: 15px; }
+  body.g .cr-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+  body.g .cr-fact b { font-size: 28px; }
+  body.g .cr-job { padding: 20px 18px; }
+  body.g .cr-job-company { font-size: 22px; }
+  body.g .cr-job-period { margin-left: 0; }
+  body.g .cr-skills { grid-template-columns: 1fr; }
+  body.g .cr-talks { padding: 6px 18px; }
+  body.g .cr-cta .g-btn { width: 100%; }
+}
+
+/* gacha.css の `body.g a { color: inherit }` が .g-btn--k の白い字に勝ってしまうので、このページのリンクのボタンだけ戻す */
+body.g a.g-btn--k { color: #fff; }
+
+/* 見つからないときの .g-empty の中の文の余白（gacha.css の body.g p の打ち消しに負けないように） */
+body.g .h-none p { margin: 6px auto 14px; }

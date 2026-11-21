@@ -27,16 +27,6 @@
         <meta name="twitter:description" content="iOSエンジニア7年目、個人開発10年目。本業と副業でやってきたこと。">
         <meta name="twitter:image" content="https://tsuzukit.com/assets/images/ogp/about.png">
 
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Anton&family=Saira+Condensed:wght@600;700;800&family=Noto+Sans+JP:wght@400;500;700;900&display=swap"
-            rel="stylesheet">
-
-        <!-- CSS -->
-        <link rel="stylesheet" href="../assets/css/tsuzukit.css">
-
         <!-- Favicon -->
         <link rel="icon" type="image/x-icon" href="/favicon.ico">
         <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -57,164 +47,33 @@
 
         <!-- Google AdSense（持ち主の確認だけ。このページに広告は出さない。docs/ads.md） -->
         <meta name="google-adsense-account" content="ca-pub-8240751277462688">
-
-        <style>
-            :root {
-                --cr-bg: #f6f2ea;
-                --cr-ink: #14110c;
-                --cr-muted: #57514a;
-                --cr-purple: #8b3df5;
-                --cr-cyan: #14110c;
-                --cr-pink: #14110c;
-                --cr-yellow: #14110c;
-            }
-            .cr-page { background: var(--cr-bg); color: var(--cr-ink); }
-            .cr-wrap { max-width: 900px; margin: 0 auto; padding: 0 20px; }
-
-            .cr-hero { padding: 120px 0 44px; }
-            .cr-badge {
-                display: inline-block; font-family: 'Saira Condensed', sans-serif; font-style: italic;
-                font-weight: 800; letter-spacing: 0.16em; font-size: 0.85rem; color: var(--cr-purple);
-                margin-bottom: 14px;
-            }
-            .cr-title {
-                font-family: 'Anton', 'Noto Sans JP', sans-serif; font-style: italic;
-                font-size: clamp(2.2rem, 5.6vw, 3.6rem); line-height: 1.1; margin-bottom: 22px;
-            }
-            .cr-summary {
-                background: #fff; border: 2px solid var(--cr-ink); border-radius: 20px;
-                box-shadow: 8px 8px 0 var(--cr-yellow); padding: 26px 28px; line-height: 2;
-                font-size: 0.97rem;
-            }
-            .cr-summary p + p { margin-top: 14px; }
-
-            .cr-facts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin: 58px 0 0; position: relative; }
-            /* 数字のカードの裏から覗いているやつ */
-            .cr-facts-char { position: absolute; right: 18px; bottom: 100%; width: 72px; height: auto; display: block; pointer-events: none; }
-            .cr-fact {
-                background: #fff; border: 2px solid var(--cr-ink); border-radius: 16px;
-                padding: 16px 12px; text-align: center;
-            }
-            .cr-fact:nth-child(1) { box-shadow: 5px 5px 0 var(--cr-ink); }
-            .cr-fact:nth-child(2) { box-shadow: 5px 5px 0 var(--cr-ink); }
-            .cr-fact:nth-child(3) { box-shadow: 5px 5px 0 var(--cr-pink); }
-            .cr-fact:nth-child(4) { box-shadow: 5px 5px 0 var(--cr-yellow); }
-            .cr-fact b { display: block; font-family: 'Anton', sans-serif; font-style: italic; font-size: 1.8rem; line-height: 1.1; }
-            .cr-fact span { font-size: 0.74rem; color: var(--cr-muted); display: block; margin-top: 6px; }
-
-            .cr-section-title {
-                font-family: 'Anton', 'Noto Sans JP', sans-serif; font-style: italic;
-                font-size: clamp(1.6rem, 4vw, 2.2rem); margin: 64px 0 8px;
-            }
-            .cr-section-note { color: var(--cr-muted); font-size: 0.88rem; margin-bottom: 24px; line-height: 1.8; }
-
-            .cr-job {
-                background: #fff; border: 2px solid var(--cr-ink); border-radius: 20px;
-                padding: 26px 28px; margin-bottom: 22px;
-            }
-            .cr-job:nth-of-type(odd) { box-shadow: 8px 8px 0 var(--cr-ink); }
-            .cr-job:nth-of-type(even) { box-shadow: 8px 8px 0 var(--cr-ink); }
-            .cr-job-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px; margin-bottom: 4px; }
-            .cr-job-company { font-family: 'Anton', 'Noto Sans JP', sans-serif; font-style: italic; font-size: 1.45rem; }
-            .cr-job-type {
-                font-size: 0.7rem; padding: 2px 10px; border: 1px solid rgba(20,17,12,0.3);
-                border-radius: 999px; color: var(--cr-muted); white-space: nowrap;
-            }
-            .cr-job-period {
-                font-family: 'Saira Condensed', sans-serif; font-style: italic; font-weight: 700;
-                letter-spacing: 0.06em; color: var(--cr-muted); font-size: 0.86rem; margin-left: auto;
-            }
-            .cr-job-role { color: var(--cr-purple); font-weight: 700; font-size: 0.88rem; margin-bottom: 14px; }
-            .cr-job-body { line-height: 1.95; font-size: 0.93rem; }
-            .cr-job-list { margin: 14px 0 0; padding-left: 0; list-style: none; }
-            .cr-job-list li {
-                position: relative; padding-left: 20px; margin-bottom: 8px;
-                line-height: 1.8; font-size: 0.9rem;
-            }
-            .cr-job-list li::before {
-                content: ''; position: absolute; left: 4px; top: 11px;
-                width: 7px; height: 7px; background: var(--cr-ink); border-radius: 50%;
-            }
-            .cr-tech {
-                margin-top: 16px; padding-top: 14px; border-top: 1px dashed rgba(20,17,12,0.2);
-                font-size: 0.78rem; color: var(--cr-muted); line-height: 1.9;
-            }
-
-            .cr-skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; }
-            .cr-skill {
-                background: #fff; border: 2px solid var(--cr-ink); border-radius: 16px;
-                box-shadow: 5px 5px 0 var(--cr-ink); padding: 18px 20px;
-            }
-            .cr-skill h3 {
-                font-family: 'Saira Condensed', sans-serif; font-style: italic; font-weight: 800;
-                letter-spacing: 0.08em; font-size: 0.82rem; color: var(--cr-purple);
-                text-transform: uppercase; margin-bottom: 8px;
-            }
-            .cr-skill p { font-size: 0.86rem; line-height: 1.9; }
-
-            .cr-talks { background: #fff; border: 2px solid var(--cr-ink); border-radius: 20px; box-shadow: 8px 8px 0 var(--cr-pink); padding: 24px 28px; }
-            .cr-talk { padding: 12px 0; border-bottom: 1px solid rgba(20,17,12,0.1); }
-            .cr-talk:last-child { border-bottom: none; }
-            .cr-talk-year {
-                font-family: 'Saira Condensed', sans-serif; font-style: italic; font-weight: 800;
-                color: var(--cr-muted); font-size: 0.78rem; letter-spacing: 0.08em;
-            }
-            .cr-talk a { color: var(--cr-ink); text-decoration: none; border-bottom: 1px solid rgba(20,17,12,0.25); }
-            .cr-talk a:hover { color: var(--cr-purple); border-color: var(--cr-purple); }
-            .cr-talk p { font-size: 0.92rem; line-height: 1.7; margin-top: 3px; }
-
-            .cr-certs { display: flex; flex-wrap: wrap; gap: 10px; }
-            .cr-cert {
-                background: #fff; border: 2px solid var(--cr-ink); border-radius: 999px;
-                padding: 8px 18px; font-size: 0.85rem; box-shadow: 4px 4px 0 var(--cr-yellow);
-            }
-
-            .cr-cta {
-                display: flex; flex-wrap: wrap; gap: 12px; margin: 30px 0 100px;
-            }
-            .cr-cta a {
-                display: inline-block; padding: 13px 24px; background: #fff;
-                border: 2px solid var(--cr-ink); border-radius: 999px; box-shadow: 5px 5px 0 var(--cr-ink);
-                color: var(--cr-ink); text-decoration: none; font-weight: 700; font-size: 0.92rem;
-                transition: transform 0.2s ease;
-            }
-            .cr-cta a:hover { transform: translateY(-3px); }
-
-            @media (max-width: 720px) {
-                .cr-hero { padding: 100px 0 32px; }
-                .cr-facts { grid-template-columns: repeat(2, 1fr); }
-                .cr-summary, .cr-job, .cr-talks { padding: 20px 18px; }
-                .cr-job-period { margin-left: 0; width: 100%; }
-                .cr-cta a { width: 100%; text-align: center; }
-            }
-        </style>
+        <!-- ガチャの見た目（assets/css/gacha.css・docs/gacha-design.md） -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700;800&family=RocknRoll+One&display=swap">
+        <link rel="stylesheet" href="/assets/css/gacha.css">
+        <link rel="stylesheet" href="/assets/css/g-help.css">
+        <script src="/assets/js/gacha.js" defer></script>
+        <!-- /ガチャの見た目 -->
     </head>
-    <body class="cr-page">
-        <!-- Navigation -->
-        <nav class="nav" id="nav">
-            <div class="nav-container">
-                <a href="/" class="nav-logo">TsuzuKit</a>
-                <div class="nav-menu" id="navMenu">
-                    <a href="/portfolio/" class="nav-link">Portfolio</a>
-                    <a href="/about/" class="nav-link active">About</a>
-                    <a href="/blog/" class="nav-link">Blog</a>
-                    <a href="/contact/" class="nav-link">Contact</a>
-                </div>
-                <div class="nav-toggle" id="navToggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+    <body class="g">
+        <header class="g-head" id="nav">
+            <div class="g-wrap">
+                <a href="/" class="g-logo"><img src="/assets/images/logo/tsuzukit-wordmark.svg" alt="TsuzuKit" width="116" height="36"></a>
+                <nav class="nav-menu" id="navMenu" aria-label="メニュー"><a href="/portfolio/" class="nav-link"><span class="i18n-ja">アプリ</span><span class="i18n-en">Apps</span></a><a href="/blog/" class="nav-link"><span class="i18n-ja">読みもの</span><span class="i18n-en">Reading</span></a><a href="/about/" class="nav-link"><span class="i18n-ja">私について</span><span class="i18n-en">About</span></a><a href="/contact/" class="nav-link"><span class="i18n-ja">お問い合わせ</span><span class="i18n-en">Contact</span></a></nav>
+                <button type="button" class="g-menu" id="navToggle" aria-controls="navMenu" aria-expanded="false">MENU</button>
             </div>
-        </nav>
+        </header>
 
-        <main>
-            <section class="cr-hero">
-                <div class="cr-wrap">
-                    <span class="cr-badge">Career</span>
-                    <h1 class="cr-title"><span class="i18n-ja">会社でつくり、<br>ひとりでもつくる</span><span class="i18n-en">Building at work,<br>building on my own</span></h1>
+        <main class="g-main">
+            <div class="g-wrap">
+                <nav class="g-crumb" aria-label="パンくず" data-en-aria-label="Breadcrumb"><a href="/about/"><span class="i18n-ja">私について</span><span class="i18n-en">About</span></a><span aria-hidden="true">＞</span><b><span class="i18n-ja">経歴</span><span class="i18n-en">Career</span></b></nav>
+                <div class="cr-hero">
+                    <h1 class="g-title"><span class="i18n-ja">会社でつくり、<br>ひとりでもつくる</span><span class="i18n-en">Building at work,<br>building on my own</span></h1>
+                    <img class="cr-hero-char" src="/assets/images/character-wave.png" alt="" width="419" height="382">
+                </div>
 
-                    <div class="cr-summary">
+                <div class="cr-summary g-panel">
                         <p>
                             <span class="i18n-ja">iOSエンジニア7年目です。ヤフーでPayPayフリマの立ち上げからグロースまで、DeNAでPococha、
                             いまはZOZOでZOZOTOWNと、大規模なtoCアプリをつくってきました。
@@ -230,27 +89,23 @@
                         <p>
                             <span class="i18n-ja">副業ではiOSだけでなくCloud FunctionsやFlutterも書いていて、AIを足がかりにiOSの外へ越境しているところです。</span><span class="i18n-en">In my side work I write Cloud Functions and Flutter as well as iOS, and I'm using AI as a foothold to move beyond iOS.</span>
                         </p>
-                    </div>
-
-                    <div class="cr-facts">
-                    <img class="cr-facts-char" src="/assets/images/character-wave.png" alt="" width="419" height="382">
-                        <div class="cr-fact"><b class="i18n-ja">7年</b><b class="i18n-en">7 yrs</b><span class="i18n-ja">iOSエンジニア</span><span class="i18n-en">iOS engineer</span></div>
-                        <div class="cr-fact"><b class="i18n-ja">10年</b><b class="i18n-en">10 yrs</b><span class="i18n-ja">個人開発</span><span class="i18n-en">Indie dev</span></div>
-                        <div class="cr-fact"><b>100+</b><span class="i18n-ja">リリースしたアプリ</span><span class="i18n-en">Apps released</span></div>
-                        <div class="cr-fact"><b class="i18n-ja">72万</b><b class="i18n-en">720K</b><span class="i18n-ja">累計ダウンロード</span><span class="i18n-en">Total downloads</span></div>
-                    </div>
                 </div>
-            </section>
 
-            <div class="cr-wrap">
-                <h2 class="cr-section-title"><span class="i18n-ja">本業</span><span class="i18n-en">Full-time roles</span></h2>
-                <p class="cr-section-note"><span class="i18n-ja">新しいものから順に並べています。</span><span class="i18n-en">Listed newest first.</span></p>
+                <div class="cr-facts">
+                    <div class="cr-fact g-panel"><span class="g-capdot" style="--c: var(--g-c1)"></span><b class="i18n-ja">7年</b><b class="i18n-en">7 yrs</b><span class="i18n-ja">iOSエンジニア</span><span class="i18n-en">iOS engineer</span></div>
+                    <div class="cr-fact g-panel"><span class="g-capdot" style="--c: var(--g-c2)"></span><b class="i18n-ja">10年</b><b class="i18n-en">10 yrs</b><span class="i18n-ja">個人開発</span><span class="i18n-en">Indie dev</span></div>
+                    <div class="cr-fact g-panel"><span class="g-capdot" style="--c: var(--g-c4)"></span><b>100+</b><span class="i18n-ja">リリースしたアプリ</span><span class="i18n-en">Apps released</span></div>
+                    <div class="cr-fact g-panel"><span class="g-capdot" style="--c: var(--g-c5)"></span><b class="i18n-ja">72万</b><b class="i18n-en">720K</b><span class="i18n-ja">累計ダウンロード</span><span class="i18n-en">Total downloads</span></div>
+                </div>
 
-                <article class="cr-job">
+                <div class="g-sh"><h2><span class="i18n-ja">本業</span><span class="i18n-en">Full-time roles</span></h2><small><span class="i18n-ja">新しいものから順に並べています。</span><span class="i18n-en">Listed newest first.</span></small></div>
+
+                <div class="cr-jobs">
+                <article class="cr-job g-panel">
                     <div class="cr-job-head">
                         <span class="cr-job-company">ZOZO</span>
-                        <span class="cr-job-type"><span class="i18n-ja">正社員</span><span class="i18n-en">Full-time</span></span>
-                        <span class="cr-job-period"><span class="i18n-ja">2024.08 — 現在</span><span class="i18n-en">2024.08 — Present</span></span>
+                        <span class="cr-job-type g-tag"><span class="i18n-ja">正社員</span><span class="i18n-en">Full-time</span></span>
+                        <span class="cr-job-period g-tag"><span class="i18n-ja">2024.08 — 現在</span><span class="i18n-en">2024.08 — Present</span></span>
                     </div>
                     <p class="cr-job-role"><span class="i18n-ja">ZOZOTOWN / iOSエンジニア</span><span class="i18n-en">ZOZOTOWN / iOS Engineer</span></p>
                     <div class="cr-job-body">
@@ -272,11 +127,11 @@
                     </div>
                 </article>
 
-                <article class="cr-job">
+                <article class="cr-job g-panel">
                     <div class="cr-job-head">
                         <span class="cr-job-company">DeNA</span>
-                        <span class="cr-job-type"><span class="i18n-ja">正社員</span><span class="i18n-en">Full-time</span></span>
-                        <span class="cr-job-period">2023.02 — 2024.07</span>
+                        <span class="cr-job-type g-tag"><span class="i18n-ja">正社員</span><span class="i18n-en">Full-time</span></span>
+                        <span class="cr-job-period g-tag">2023.02 — 2024.07</span>
                     </div>
                     <p class="cr-job-role"><span class="i18n-ja">Pococha / iOSエンジニア</span><span class="i18n-en">Pococha / iOS Engineer</span></p>
                     <div class="cr-job-body">
@@ -298,11 +153,11 @@
                     </div>
                 </article>
 
-                <article class="cr-job">
+                <article class="cr-job g-panel">
                     <div class="cr-job-head">
                         <span class="cr-job-company"><span class="i18n-ja">ヤフー</span><span class="i18n-en">Yahoo Japan</span></span>
-                        <span class="cr-job-type"><span class="i18n-ja">正社員</span><span class="i18n-en">Full-time</span></span>
-                        <span class="cr-job-period">2019.07 — 2023.02</span>
+                        <span class="cr-job-type g-tag"><span class="i18n-ja">正社員</span><span class="i18n-en">Full-time</span></span>
+                        <span class="cr-job-period g-tag">2019.07 — 2023.02</span>
                     </div>
                     <p class="cr-job-role"><span class="i18n-ja">PayPayフリマ / iOSエンジニア・テックリード</span><span class="i18n-en">PayPay Flea Market / iOS Engineer, Tech Lead</span></p>
                     <div class="cr-job-body">
@@ -323,15 +178,16 @@
                         <p class="cr-tech">Swift / Clean Architecture + Coordinator / Sound Analysis / SwiftPM / fastlane / Firebase</p>
                     </div>
                 </article>
+                </div>
 
-                <h2 class="cr-section-title"><span class="i18n-ja">副業・業務委託</span><span class="i18n-en">Side work and contracts</span></h2>
-                <p class="cr-section-note"><span class="i18n-ja">本業と並行して、小さなチームで企画から運用まで受け持っています。</span><span class="i18n-en">Alongside my full-time job, I take on everything from planning to operations with small teams.</span></p>
+                <div class="g-sh"><h2><span class="i18n-ja">副業・業務委託</span><span class="i18n-en">Side work and contracts</span></h2><small><span class="i18n-ja">本業と並行して、小さなチームで企画から運用まで受け持っています。</span><span class="i18n-en">Alongside my full-time job, I take on everything from planning to operations with small teams.</span></small></div>
 
-                <article class="cr-job">
+                <div class="cr-jobs">
+                <article class="cr-job g-panel">
                     <div class="cr-job-head">
                         <span class="cr-job-company">Bitta</span>
-                        <span class="cr-job-type"><span class="i18n-ja">業務委託</span><span class="i18n-en">Contract</span></span>
-                        <span class="cr-job-period"><span class="i18n-ja">2023.04 — 現在</span><span class="i18n-en">2023.04 — Present</span></span>
+                        <span class="cr-job-type g-tag"><span class="i18n-ja">業務委託</span><span class="i18n-en">Contract</span></span>
+                        <span class="cr-job-period g-tag"><span class="i18n-ja">2023.04 — 現在</span><span class="i18n-en">2023.04 — Present</span></span>
                     </div>
                     <p class="cr-job-role"><span class="i18n-ja">7プロダクトのiOSとサーバーを一人で開発 / フルスタックエンジニア</span><span class="i18n-en">Building iOS and server for 7 products single-handedly / Full-stack Engineer</span></p>
                     <div class="cr-job-body">
@@ -353,11 +209,11 @@
                     </div>
                 </article>
 
-                <article class="cr-job">
+                <article class="cr-job g-panel">
                     <div class="cr-job-head">
                         <span class="cr-job-company"><span class="i18n-ja">結.JAPAN</span><span class="i18n-en">Yui.JAPAN</span></span>
-                        <span class="cr-job-type"><span class="i18n-ja">業務委託</span><span class="i18n-en">Contract</span></span>
-                        <span class="cr-job-period">2020.12 — 2026.05</span>
+                        <span class="cr-job-type g-tag"><span class="i18n-ja">業務委託</span><span class="i18n-en">Contract</span></span>
+                        <span class="cr-job-period g-tag">2020.12 — 2026.05</span>
                     </div>
                     <p class="cr-job-role"><span class="i18n-ja">旅行アプリ「nicody」のiOSとサーバーサイド / iOSエンジニア</span><span class="i18n-en">iOS and server side for the travel app nicody / iOS Engineer</span></p>
                     <div class="cr-job-body">
@@ -375,93 +231,80 @@
                         <p class="cr-tech">Swift / SwiftUI / UIKit / Combine / Firebase / Firestore / Cloud Functions / HealthKit</p>
                     </div>
                 </article>
+                </div>
 
-                <h2 class="cr-section-title"><span class="i18n-ja">できること</span><span class="i18n-en">What I can do</span></h2>
-                <p class="cr-section-note"><span class="i18n-ja">仕事で実際に手を動かしてきた範囲です。</span><span class="i18n-en">The areas I've actually worked in hands-on at my jobs.</span></p>
+                <div class="g-sh"><h2><span class="i18n-ja">できること</span><span class="i18n-en">What I can do</span></h2><small><span class="i18n-ja">仕事で実際に手を動かしてきた範囲です。</span><span class="i18n-en">The areas I've actually worked in hands-on at my jobs.</span></small></div>
 
                 <div class="cr-skills">
-                    <div class="cr-skill">
-                        <h3>iOS</h3>
+                    <div class="cr-skill g-panel">
+                        <h3><span class="g-capdot" style="--c: var(--g-c1)" aria-hidden="true"></span>iOS</h3>
                         <p><span class="i18n-ja">Swift、SwiftUI、UIKit、WidgetKit、App Intents、AlarmKit、Live Activity、Swift Concurrency、AVFoundation、HealthKit、StoreKit</span><span class="i18n-en">Swift, SwiftUI, UIKit, WidgetKit, App Intents, AlarmKit, Live Activity, Swift Concurrency, AVFoundation, HealthKit, StoreKit</span></p>
                     </div>
-                    <div class="cr-skill">
-                        <h3><span class="i18n-ja">設計・テスト</span><span class="i18n-en">Architecture and testing</span></h3>
+                    <div class="cr-skill g-panel">
+                        <h3><span class="g-capdot" style="--c: var(--g-c2)" aria-hidden="true"></span><span class="i18n-ja">設計・テスト</span><span class="i18n-en">Architecture and testing</span></h3>
                         <p><span class="i18n-ja">MVVMとRepository、Translator層によるAPI依存の分離、Clean Architecture、XCTest、Swift Testing、テスト駆動開発、Flakyテストの解消</span><span class="i18n-en">MVVM and Repository, isolating API dependencies with a Translator layer, Clean Architecture, XCTest, Swift Testing, test-driven development, fixing flaky tests</span></p>
                     </div>
-                    <div class="cr-skill">
-                        <h3><span class="i18n-ja">サーバー・基盤</span><span class="i18n-en">Server and infrastructure</span></h3>
+                    <div class="cr-skill g-panel">
+                        <h3><span class="g-capdot" style="--c: var(--g-c4)" aria-hidden="true"></span><span class="i18n-ja">サーバー・基盤</span><span class="i18n-en">Server and infrastructure</span></h3>
                         <p><span class="i18n-ja">Firebase、Firestore、Cloud Functions（TypeScript）、セキュリティルール、Flutter</span><span class="i18n-en">Firebase, Firestore, Cloud Functions (TypeScript), security rules, Flutter</span></p>
                     </div>
-                    <div class="cr-skill">
-                        <h3><span class="i18n-ja">CI・リリース</span><span class="i18n-en">CI and release</span></h3>
+                    <div class="cr-skill g-panel">
+                        <h3><span class="g-capdot" style="--c: var(--g-c5)" aria-hidden="true"></span><span class="i18n-ja">CI・リリース</span><span class="i18n-en">CI and release</span></h3>
                         <p><span class="i18n-ja">Bitrise、GitHub Actions、fastlane、Danger、SwiftLint、DeployGate、TestFlight、リリースマネジメント</span><span class="i18n-en">Bitrise, GitHub Actions, fastlane, Danger, SwiftLint, DeployGate, TestFlight, release management</span></p>
                     </div>
                 </div>
 
-                <h2 class="cr-section-title"><span class="i18n-ja">話したこと</span><span class="i18n-en">Talks</span></h2>
-                <p class="cr-section-note"><span class="i18n-ja">アウトプットが好きで、iOSDCやLT会で話しています。</span><span class="i18n-en">I like sharing what I learn, so I give talks at iOSDC and lightning talk events.</span></p>
+                <div class="g-sh"><h2><span class="i18n-ja">話したこと</span><span class="i18n-en">Talks</span></h2><small><span class="i18n-ja">アウトプットが好きで、iOSDCやLT会で話しています。</span><span class="i18n-en">I like sharing what I learn, so I give talks at iOSDC and lightning talk events.</span></small></div>
 
-                <div class="cr-talks">
+                <div class="cr-talks g-panel">
                     <div class="cr-talk">
-                        <div class="cr-talk-year">iOSDC Japan 2026</div>
+                        <span class="g-tag">iOSDC Japan 2026</span>
                         <p><a href="https://fortee.jp/iosdc-japan-2026/proposal/2cc0b816-66cc-46a3-bbba-9bd361aa0cc8" target="_blank" rel="noopener"><span class="i18n-ja">インターネットなしで、その場のみんなとつながる。CoreBluetoothで作るメッシュ型チャット</span><span class="i18n-en">Connecting with everyone around you, without the internet: a mesh chat built with CoreBluetooth</span></a></p>
                     </div>
                     <div class="cr-talk">
-                        <div class="cr-talk-year">iOSDC Japan 2026</div>
+                        <span class="g-tag">iOSDC Japan 2026</span>
                         <p><a href="https://fortee.jp/iosdc-japan-2026/proposal/2a8bc58c-2e31-4acd-b734-318d6c22da02" target="_blank" rel="noopener"><span class="i18n-ja">インターネットなしで隣のiPhoneと話す。CoreBluetoothで作る双方向・バックグラウンド対応のP2Pチャット</span><span class="i18n-en">Talking to the iPhone next to you without the internet: a two-way P2P chat with background support, built with CoreBluetooth</span></a></p>
                     </div>
                     <div class="cr-talk">
-                        <div class="cr-talk-year">iOSDC Japan 2025</div>
+                        <span class="g-tag">iOSDC Japan 2025</span>
                         <p><a href="https://fortee.jp/iosdc-japan-2025/proposal/439dad47-8495-4f7e-8ee0-e244bb1e7667" target="_blank" rel="noopener"><span class="i18n-ja">AlarmKitで実現する新時代のシステム通知</span><span class="i18n-en">A new era of system notifications with AlarmKit</span></a></p>
                     </div>
                     <div class="cr-talk">
-                        <div class="cr-talk-year">iOSDC Japan 2022</div>
+                        <span class="g-tag">iOSDC Japan 2022</span>
                         <p><a href="https://fortee.jp/iosdc-japan-2022/proposal/7646ca37-310b-42d1-8764-d80dd12714fd" target="_blank" rel="noopener"><span class="i18n-ja">動画だけじゃない。iOS 15のピクチャ・イン・ピクチャを使って好きなUIを表示させよう</span><span class="i18n-en">Not just for video: show any UI you like with Picture in Picture on iOS 15</span></a></p>
                     </div>
                     <div class="cr-talk">
-                        <div class="cr-talk-year">LT</div>
+                        <span class="g-tag">LT</span>
                         <p><a href="https://connpass.com/user/tsuzuki817/presentation/" target="_blank" rel="noopener"><span class="i18n-ja">connpassの発表一覧</span><span class="i18n-en">My talks on connpass</span></a></p>
                     </div>
                 </div>
 
-                <h2 class="cr-section-title"><span class="i18n-ja">資格</span><span class="i18n-en">Certifications</span></h2>
-                <p class="cr-section-note">&nbsp;</p>
+                <div class="g-sh"><h2><span class="i18n-ja">資格</span><span class="i18n-en">Certifications</span></h2></div>
                 <div class="cr-certs">
-                    <span class="cr-cert"><span class="i18n-ja">応用情報技術者（2018）</span><span class="i18n-en">Applied Information Technology Engineer (2018)</span></span>
-                    <span class="cr-cert"><span class="i18n-ja">基本情報技術者（2016）</span><span class="i18n-en">Fundamental Information Technology Engineer (2016)</span></span>
-                    <span class="cr-cert"><span class="i18n-ja">ITパスポート</span><span class="i18n-en">IT Passport</span></span>
-                    <span class="cr-cert">MOS 2013 Master</span>
-                    <span class="cr-cert"><span class="i18n-ja">普通自動車免許</span><span class="i18n-en">Driver's license</span></span>
+                    <span class="cr-cert g-chip"><span class="i18n-ja">応用情報技術者（2018）</span><span class="i18n-en">Applied Information Technology Engineer (2018)</span></span>
+                    <span class="cr-cert g-chip"><span class="i18n-ja">基本情報技術者（2016）</span><span class="i18n-en">Fundamental Information Technology Engineer (2016)</span></span>
+                    <span class="cr-cert g-chip"><span class="i18n-ja">ITパスポート</span><span class="i18n-en">IT Passport</span></span>
+                    <span class="cr-cert g-chip">MOS 2013 Master</span>
+                    <span class="cr-cert g-chip"><span class="i18n-ja">普通自動車免許</span><span class="i18n-en">Driver's license</span></span>
                 </div>
 
-                <div class="cr-cta">
-                    <a href="/portfolio/"><span class="i18n-ja">つくったアプリを見る</span><span class="i18n-en">See the apps I've made</span></a>
-                    <a href="/portfolio/ranking/"><span class="i18n-ja">ダウンロードランキング</span><span class="i18n-en">Download ranking</span></a>
-                    <a href="/blog/income-report/"><span class="i18n-ja">収益をぜんぶ公開している連載</span><span class="i18n-en">The series where I publish all my revenue</span></a>
-                    <a href="/contact/"><span class="i18n-ja">仕事の相談はこちら</span><span class="i18n-en">Talk to me about work</span></a>
+                <div class="cr-cta g-btns">
+                    <a class="g-btn" href="/portfolio/"><span class="i18n-ja">つくったアプリを見る</span><span class="i18n-en">See the apps I've made</span></a>
+                    <a class="g-btn" href="/portfolio/ranking/"><span class="i18n-ja">ダウンロードランキング</span><span class="i18n-en">Download ranking</span></a>
+                    <a class="g-btn" href="/blog/income-report/"><span class="i18n-ja">収益をぜんぶ公開している連載</span><span class="i18n-en">The series where I publish all my revenue</span></a>
+                    <a class="g-btn g-btn--k" href="/contact/"><span class="i18n-ja">仕事の相談はこちら</span><span class="i18n-en">Talk to me about work</span></a>
                 </div>
             </div>
         </main>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
-            <div class="footer-container">
-                <div class="footer-content">
-                    <div class="footer-brand">
-                        <a href="/" class="footer-logo">TsuzuKit</a>
-                        <p class="footer-tagline">Seriously Silly</p>
-                    </div>
-                    <div class="footer-links">
-                        <a href="/portfolio/">Portfolio</a>
-                        <a href="/about/">About</a>
-                        <a href="/blog/">Blog</a>
-                        <a href="/contact/">Contact</a>
-                    </div>
-                </div>
-                <div class="footer-bottom">
-                    <p>&copy; 2026 Ryo Tsuzukihashi. All rights reserved.</p>
-                </div>
+        <footer class="g-foot">
+            <img class="g-foot-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364" loading="lazy">
+            <div class="g-wrap">
+                <div><a href="/" class="g-foot-logo"><img src="/assets/images/logo/tsuzukit-wordmark-white.svg" alt="TsuzuKit" width="110" height="34"></a>
+                <p class="g-foot-tag"><span class="i18n-ja">誰も作らないものを、まじめに作る。</span><span class="i18n-en">Making what nobody else will, seriously.</span><br>Seriously Silly since 2016.</p></div>
+                <div class="g-foot-sns"><a href="https://x.com/tsuzuki817" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><img src="/assets/images/sns/x.png" alt="" width="22" height="22"></a><a href="https://www.instagram.com/tsuzuki817/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="/assets/images/sns/instagram.png" alt="" width="22" height="22"></a><a href="https://www.tiktok.com/@tsuzuki817" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><img src="/assets/images/sns/tiktok.png" alt="" width="22" height="22"></a><a href="https://www.youtube.com/@tsuzuki817" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><img src="/assets/images/sns/youtube.png" alt="" width="22" height="22"></a><a href="https://github.com/tsuzukihashi" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><img src="/assets/images/sns/github.png" alt="" width="22" height="22"></a></div>
+                <div class="g-foot-links"><a href="/contact/"><span class="i18n-ja">お問い合わせ</span><span class="i18n-en">Contact</span></a><a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a><a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a><a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a><a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a></div>
+                <p class="g-foot-copy">© 2026 Ryo Tsuzukihashi / TsuzuKit</p>
             </div>
         </footer>
     </body>

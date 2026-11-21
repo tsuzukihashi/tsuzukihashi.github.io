@@ -10,15 +10,6 @@
     <meta name="description" content="續橋涼が提供するアプリケーション及びサービスの利用規約">
     <meta name="robots" content="noindex, follow">
     
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="../assets/css/tsuzukit.css">
-    <link rel="stylesheet" href="../assets/css/legal.css">
-    
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -39,50 +30,51 @@
 
     <!-- Google AdSense（持ち主の確認だけ。このページに広告は出さない。docs/ads.md） -->
     <meta name="google-adsense-account" content="ca-pub-8240751277462688">
+
+    <!-- ガチャの見た目（assets/css/gacha.css・docs/gacha-design.md） -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700;800&family=RocknRoll+One&display=swap">
+    <link rel="stylesheet" href="/assets/css/gacha.css">
+    <link rel="stylesheet" href="/assets/css/g-legal.css">
+    <script src="/assets/js/gacha.js" defer></script>
+    <!-- /ガチャの見た目 -->
 </head>
-<body>
-    <!-- Navigation -->
-    <nav class="nav" id="nav">
-        <div class="nav-container">
-            <a href="/" class="nav-logo">TsuzuKit</a>
-            <div class="nav-menu" id="navMenu">
-                <a href="/portfolio/" class="nav-link">Portfolio</a>
-                <a href="/about/" class="nav-link">About</a>
-                <a href="/blog/" class="nav-link">Blog</a>
-                <a href="/contact/" class="nav-link">Contact</a>
+<body class="g">
+    <header class="g-head" id="nav">
+            <div class="g-wrap">
+                <a href="/" class="g-logo"><img src="/assets/images/logo/tsuzukit-wordmark.svg" alt="TsuzuKit" width="116" height="36"></a>
+                <nav class="nav-menu" id="navMenu" aria-label="メニュー"><a href="/portfolio/" class="nav-link"><span class="i18n-ja">アプリ</span><span class="i18n-en">Apps</span></a><a href="/blog/" class="nav-link"><span class="i18n-ja">読みもの</span><span class="i18n-en">Reading</span></a><a href="/about/" class="nav-link"><span class="i18n-ja">私について</span><span class="i18n-en">About</span></a><a href="/contact/" class="nav-link"><span class="i18n-ja">お問い合わせ</span><span class="i18n-en">Contact</span></a></nav>
+                <button type="button" class="g-menu" id="navToggle" aria-controls="navMenu" aria-expanded="false">MENU</button>
             </div>
-            <div class="nav-toggle" id="navToggle">
-                <span></span>
-                <span></span>
-                <span></span>
+        </header>
+
+    <main class="g-main g-wrap g-legal">
+        <div class="g-lg">
+            <div class="g-lhead">
+                <p class="g-lsub i18n-ja">Terms of Service</p>
+                <h1 class="g-title g-title--m"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></h1>
+                <p class="g-lupd"><span class="i18n-ja">最終更新日: 2025年1月14日</span><span class="i18n-en">Last updated: January 14, 2025</span></p>
             </div>
-        </div>
-    </nav>
-
-    <!-- Legal Content -->
-    <section class="legal-hero">
-        <div class="container">
-            <h1 class="legal-title"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></h1>
-            <p class="legal-subtitle i18n-ja">Terms of Service</p>
-            <p class="legal-update"><span class="i18n-ja">最終更新日: 2025年1月14日</span><span class="i18n-en">Last updated: January 14, 2025</span></p>
-        </div>
-    </section>
-
-    <section class="legal-content">
-        <div class="container">
-            <div class="legal-wrapper i18n-ja">
+            <aside class="g-lnote g-ypanel">
+                <p class="g-lnote-warn"><i aria-hidden="true">!</i><span class="i18n-ja">注意書き</span><span class="i18n-en">Read me</span></p>
+                <p class="g-lnote-sub"><span class="i18n-ja">ガチャをまわす前に、読んでおいてほしいこと</span><span class="i18n-en">Things to know before you turn the handle</span></p>
+                <nav class="g-lnote-nav" aria-label="目次" data-en-aria-label="Contents"><ol class="g-ltoc i18n-ja"><li><a href="#ja-s1"><b>01</b><span>第1条（適用）</span></a></li><li><a href="#ja-s2"><b>02</b><span>第2条（利用登録）</span></a></li><li><a href="#ja-s3"><b>03</b><span>第3条（禁止事項）</span></a></li><li><a href="#ja-s4"><b>04</b><span>第4条（本サービスの提供の停止等）</span></a></li><li><a href="#ja-s5"><b>05</b><span>第5条（著作権）</span></a></li><li><a href="#ja-s6"><b>06</b><span>第6条（保証の否認および免責事項）</span></a></li><li><a href="#ja-s7"><b>07</b><span>第7条（サービス内容の変更等）</span></a></li><li><a href="#ja-s8"><b>08</b><span>第8条（利用規約の変更）</span></a></li><li><a href="#ja-s9"><b>09</b><span>第9条（個人情報の取扱い）</span></a></li><li><a href="#ja-s10"><b>10</b><span>第10条（通知または連絡）</span></a></li><li><a href="#ja-s11"><b>11</b><span>第11条（権利義務の譲渡の禁止）</span></a></li><li><a href="#ja-s12"><b>12</b><span>第12条（準拠法・裁判管轄）</span></a></li><li><a href="#ja-s13"><b>13</b><span>お問い合わせ</span></a></li></ol><ol class="g-ltoc i18n-en"><li><a href="#en-s1"><b>01</b><span>Article 1 (Application)</span></a></li><li><a href="#en-s2"><b>02</b><span>Article 2 (User Registration)</span></a></li><li><a href="#en-s3"><b>03</b><span>Article 3 (Prohibited Acts)</span></a></li><li><a href="#en-s4"><b>04</b><span>Article 4 (Suspension of Provision of the Service, etc.)</span></a></li><li><a href="#en-s5"><b>05</b><span>Article 5 (Copyright)</span></a></li><li><a href="#en-s6"><b>06</b><span>Article 6 (Disclaimer of Warranties and Exemption from Liability)</span></a></li><li><a href="#en-s7"><b>07</b><span>Article 7 (Changes to the Content of the Service, etc.)</span></a></li><li><a href="#en-s8"><b>08</b><span>Article 8 (Changes to these Terms)</span></a></li><li><a href="#en-s9"><b>09</b><span>Article 9 (Handling of Personal Information)</span></a></li><li><a href="#en-s10"><b>10</b><span>Article 10 (Notices or Communications)</span></a></li><li><a href="#en-s11"><b>11</b><span>Article 11 (Prohibition of Assignment of Rights and Obligations)</span></a></li><li><a href="#en-s12"><b>12</b><span>Article 12 (Governing Law and Jurisdiction)</span></a></li><li><a href="#en-s13"><b>13</b><span>Contact</span></a></li></ol></nav>
+            </aside>
+            <div class="g-lbody">
+                <div class="g-ldoc i18n-ja">
                 <!-- 第1条 適用 -->
-                <article class="legal-section">
-                    <h2>第1条（適用）</h2>
+                <section class="g-lsec g-panel" id="ja-s1">
+                    <h2><span class="g-lnum" style="--c:var(--g-c1)" aria-hidden="true"><i>01</i></span><span class="g-lh">第1条（適用）</span></h2>
                     <p>
                         本規約は、續橋涼（以下「当方」といいます。）が提供するアプリケーション及びサービス（以下「本サービス」といいます。）の利用条件を定めるものです。
                         ユーザーの皆様（以下「ユーザー」といいます。）には、本規約に従って本サービスをご利用いただきます。
                     </p>
-                </article>
+                </section>
 
                 <!-- 第2条 利用登録 -->
-                <article class="legal-section">
-                    <h2>第2条（利用登録）</h2>
+                <section class="g-lsec g-panel" id="ja-s2">
+                    <h2><span class="g-lnum" style="--c:var(--g-c2)" aria-hidden="true"><i>02</i></span><span class="g-lh">第2条（利用登録）</span></h2>
                     <ol>
                         <li>本サービスにおいて登録を希望する者は、当方の定める方法によって利用登録を申請し、当方がこれを承認することによって、利用登録が完了するものとします。</li>
                         <li>当方は、以下の場合には、利用登録の申請を承認しないことがあり、その理由については一切の開示義務を負わないものとします。
@@ -93,11 +85,11 @@
                             </ul>
                         </li>
                     </ol>
-                </article>
+                </section>
 
                 <!-- 第3条 禁止事項 -->
-                <article class="legal-section">
-                    <h2>第3条（禁止事項）</h2>
+                <section class="g-lsec g-panel" id="ja-s3">
+                    <h2><span class="g-lnum" style="--c:var(--g-c3)" aria-hidden="true"><i>03</i></span><span class="g-lh">第3条（禁止事項）</span></h2>
                     <p>ユーザーは、本サービスの利用にあたり、以下の行為をしてはなりません。</p>
                     <ol>
                         <li>法令または公序良俗に違反する行為</li>
@@ -111,11 +103,11 @@
                         <li>当方、本サービスの他のユーザーまたはその他の第三者の知的財産権、肖像権、プライバシー、名誉その他の権利または利益を侵害する行為</li>
                         <li>その他、当方が不適切と判断する行為</li>
                     </ol>
-                </article>
+                </section>
 
                 <!-- 第4条 本サービスの提供の停止等 -->
-                <article class="legal-section">
-                    <h2>第4条（本サービスの提供の停止等）</h2>
+                <section class="g-lsec g-panel" id="ja-s4">
+                    <h2><span class="g-lnum" style="--c:var(--g-c4)" aria-hidden="true"><i>04</i></span><span class="g-lh">第4条（本サービスの提供の停止等）</span></h2>
                     <ol>
                         <li>当方は、以下のいずれかの事由があると判断した場合、ユーザーに事前に通知することなく本サービスの全部または一部の提供を停止または中断することができるものとします。
                             <ul>
@@ -127,40 +119,40 @@
                         </li>
                         <li>当方は、本サービスの提供の停止または中断により、ユーザーまたは第三者が被ったいかなる不利益または損害についても、一切の責任を負わないものとします。</li>
                     </ol>
-                </article>
+                </section>
 
                 <!-- 第5条 著作権 -->
-                <article class="legal-section">
-                    <h2>第5条（著作権）</h2>
+                <section class="g-lsec g-panel" id="ja-s5">
+                    <h2><span class="g-lnum" style="--c:var(--g-c5)" aria-hidden="true"><i>05</i></span><span class="g-lh">第5条（著作権）</span></h2>
                     <ol>
                         <li>ユーザーは、自ら著作権等の必要な知的財産権を有するか、または必要な権利者の許諾を得た文章、画像や映像等の情報に関してのみ、本サービスを利用し、投稿ないしアップロードすることができるものとします。</li>
                         <li>ユーザーが本サービスを利用して投稿ないしアップロードした文章、画像、映像等の著作権については、当該ユーザーその他既存の権利者に留保されるものとします。</li>
                         <li>前項本文の定めにかかわらず、当方は、本サービスを利用して投稿ないしアップロードされた文章、画像、映像等について、本サービスの改良、品質の向上、または不備の是正等ならびに本サービスの周知宣伝等に必要な範囲で利用できるものとし、ユーザーは、この利用に関して、著作者人格権を行使しないものとします。</li>
                     </ol>
-                </article>
+                </section>
 
                 <!-- 第6条 保証の否認および免責事項 -->
-                <article class="legal-section">
-                    <h2>第6条（保証の否認および免責事項）</h2>
+                <section class="g-lsec g-panel" id="ja-s6">
+                    <h2><span class="g-lnum" style="--c:var(--g-c6)" aria-hidden="true"><i>06</i></span><span class="g-lh">第6条（保証の否認および免責事項）</span></h2>
                     <ol>
                         <li>当方は、本サービスに事実上または法律上の瑕疵（安全性、信頼性、正確性、完全性、有効性、特定の目的への適合性、セキュリティなどに関する欠陥、エラーやバグ、権利侵害などを含みます。）がないことを明示的にも黙示的にも保証しておりません。</li>
                         <li>当方は、本サービスに起因してユーザーに生じたあらゆる損害について、当方の故意又は重過失による場合を除き、一切の責任を負いません。</li>
                         <li>前項ただし書に定める場合であっても、当方は、当方の過失（重過失を除きます。）による債務不履行または不法行為によりユーザーに生じた損害のうち特別な事情から生じた損害（当方またはユーザーが損害発生につき予見し、または予見し得た場合を含みます。）について一切の責任を負いません。</li>
                         <li>当方は、本サービスに関して、ユーザーと他のユーザーまたは第三者との間において生じた取引、連絡または紛争等について一切責任を負いません。</li>
                     </ol>
-                </article>
+                </section>
 
                 <!-- 第7条 サービス内容の変更等 -->
-                <article class="legal-section">
-                    <h2>第7条（サービス内容の変更等）</h2>
+                <section class="g-lsec g-panel" id="ja-s7">
+                    <h2><span class="g-lnum" style="--c:var(--g-c1)" aria-hidden="true"><i>07</i></span><span class="g-lh">第7条（サービス内容の変更等）</span></h2>
                     <p>
                         当方は、ユーザーへの事前の告知をもって、本サービスの内容を変更、追加または廃止することがあり、ユーザーはこれを承諾するものとします。
                     </p>
-                </article>
+                </section>
 
                 <!-- 第8条 利用規約の変更 -->
-                <article class="legal-section">
-                    <h2>第8条（利用規約の変更）</h2>
+                <section class="g-lsec g-panel" id="ja-s8">
+                    <h2><span class="g-lnum" style="--c:var(--g-c2)" aria-hidden="true"><i>08</i></span><span class="g-lh">第8条（利用規約の変更）</span></h2>
                     <ol>
                         <li>当方は以下の場合には、ユーザーの個別の同意を要せず、本規約を変更することができるものとします。
                             <ul>
@@ -170,73 +162,74 @@
                         </li>
                         <li>当方はユーザーに対し、前項による本規約の変更にあたり、事前に、本規約を変更する旨及び変更後の本規約の内容並びにその効力発生時期を通知します。</li>
                     </ol>
-                </article>
+                </section>
 
                 <!-- 第9条 個人情報の取扱い -->
-                <article class="legal-section">
-                    <h2>第9条（個人情報の取扱い）</h2>
+                <section class="g-lsec g-panel" id="ja-s9">
+                    <h2><span class="g-lnum" style="--c:var(--g-c3)" aria-hidden="true"><i>09</i></span><span class="g-lh">第9条（個人情報の取扱い）</span></h2>
                     <p>
                         当方は、本サービスの利用によって取得する個人情報については、当方「プライバシーポリシー」に従い適切に取り扱うものとします。
                     </p>
-                </article>
+                </section>
 
                 <!-- 第10条 通知または連絡 -->
-                <article class="legal-section">
-                    <h2>第10条（通知または連絡）</h2>
+                <section class="g-lsec g-panel" id="ja-s10">
+                    <h2><span class="g-lnum" style="--c:var(--g-c4)" aria-hidden="true"><i>10</i></span><span class="g-lh">第10条（通知または連絡）</span></h2>
                     <p>
                         ユーザーと当方との間の通知または連絡は、当方の定める方法によって行うものとします。
                         当方は、ユーザーから、当方が別途定める方式に従った変更届け出がない限り、現在登録されている連絡先が有効なものとみなして当該連絡先へ通知または連絡を行い、これらは、発信時にユーザーへ到達したものとみなします。
                     </p>
-                </article>
+                </section>
 
                 <!-- 第11条 権利義務の譲渡の禁止 -->
-                <article class="legal-section">
-                    <h2>第11条（権利義務の譲渡の禁止）</h2>
+                <section class="g-lsec g-panel" id="ja-s11">
+                    <h2><span class="g-lnum" style="--c:var(--g-c5)" aria-hidden="true"><i>11</i></span><span class="g-lh">第11条（権利義務の譲渡の禁止）</span></h2>
                     <p>
                         ユーザーは、当方の書面による事前の承諾なく、利用契約上の地位または本規約に基づく権利もしくは義務を第三者に譲渡し、または担保に供することはできません。
                     </p>
-                </article>
+                </section>
 
                 <!-- 第12条 準拠法・裁判管轄 -->
-                <article class="legal-section">
-                    <h2>第12条（準拠法・裁判管轄）</h2>
+                <section class="g-lsec g-panel" id="ja-s12">
+                    <h2><span class="g-lnum" style="--c:var(--g-c6)" aria-hidden="true"><i>12</i></span><span class="g-lh">第12条（準拠法・裁判管轄）</span></h2>
                     <ol>
                         <li>本規約の解釈にあたっては、日本法を準拠法とします。</li>
                         <li>本サービスに関して紛争が生じた場合には、当方の所在地を管轄する裁判所を専属的合意管轄とします。</li>
                     </ol>
-                </article>
+                </section>
 
                 <!-- お問い合わせ -->
-                <article class="legal-section">
-                    <h2>お問い合わせ</h2>
+                <section class="g-lsec g-panel" id="ja-s13">
+                    <h2><span class="g-lnum" style="--c:var(--g-c1)" aria-hidden="true"><i>13</i></span><span class="g-lh">お問い合わせ</span></h2>
                     <p>本規約に関するお問い合わせは、下記の窓口までお願いいたします。</p>
                     <div class="contact-info">
                         <p>續橋涼</p>
                         <p>メールアドレス: ryo.tsuzukihashi@tsuzukit.com</p>
                     </div>
-                </article>
+                </section>
 
                 <!-- Navigation -->
                 <div class="legal-nav">
                     <a href="/legal/privacy-policy.html" class="legal-nav-link">プライバシーポリシー →</a>
                     <a href="/legal/commercial-law.html" class="legal-nav-link">特定商取引法に基づく表記 →</a>
                 </div>
-            </div>
-            <div class="legal-wrapper i18n-en">
+            
+                </div>
+                <div class="g-ldoc i18n-en">
                 <div class="notice-box">
                     <p>This is an English translation for convenience. If there is any discrepancy, the Japanese version prevails.</p>
                 </div>
 
-                <article class="legal-section">
-                    <h2>Article 1 (Application)</h2>
+                <section class="g-lsec g-panel" id="en-s1">
+                    <h2><span class="g-lnum" style="--c:var(--g-c1)" aria-hidden="true"><i>01</i></span><span class="g-lh">Article 1 (Application)</span></h2>
                     <p>
                         These Terms set forth the conditions for using the applications and services (hereinafter the &ldquo;Service&rdquo;) provided by Ryo Tsuzukihashi (hereinafter &ldquo;we&rdquo; or &ldquo;us&rdquo;).
                         All users (hereinafter &ldquo;Users&rdquo;) shall use the Service in accordance with these Terms.
                     </p>
-                </article>
+                </section>
 
-                <article class="legal-section">
-                    <h2>Article 2 (User Registration)</h2>
+                <section class="g-lsec g-panel" id="en-s2">
+                    <h2><span class="g-lnum" style="--c:var(--g-c2)" aria-hidden="true"><i>02</i></span><span class="g-lh">Article 2 (User Registration)</span></h2>
                     <ol>
                         <li>A person wishing to register for the Service shall apply for user registration by the method prescribed by us, and user registration shall be completed when we approve the application.</li>
                         <li>We may decline to approve an application for user registration in the following cases, and shall have no obligation whatsoever to disclose the reasons.
@@ -247,10 +240,10 @@
                             </ul>
                         </li>
                     </ol>
-                </article>
+                </section>
 
-                <article class="legal-section">
-                    <h2>Article 3 (Prohibited Acts)</h2>
+                <section class="g-lsec g-panel" id="en-s3">
+                    <h2><span class="g-lnum" style="--c:var(--g-c3)" aria-hidden="true"><i>03</i></span><span class="g-lh">Article 3 (Prohibited Acts)</span></h2>
                     <p>In using the Service, Users must not engage in the following acts.</p>
                     <ol>
                         <li>Acts that violate laws and regulations or public order and morals</li>
@@ -264,10 +257,10 @@
                         <li>Acts that infringe the intellectual property rights, portrait rights, privacy, honor, or other rights or interests of us, other users of the Service, or other third parties</li>
                         <li>Any other acts that we deem inappropriate</li>
                     </ol>
-                </article>
+                </section>
 
-                <article class="legal-section">
-                    <h2>Article 4 (Suspension of Provision of the Service, etc.)</h2>
+                <section class="g-lsec g-panel" id="en-s4">
+                    <h2><span class="g-lnum" style="--c:var(--g-c4)" aria-hidden="true"><i>04</i></span><span class="g-lh">Article 4 (Suspension of Provision of the Service, etc.)</span></h2>
                     <ol>
                         <li>We may suspend or interrupt the provision of all or part of the Service without prior notice to Users if we determine that any of the following applies.
                             <ul>
@@ -279,36 +272,36 @@
                         </li>
                         <li>We shall bear no responsibility whatsoever for any disadvantage or damage suffered by Users or third parties due to the suspension or interruption of the provision of the Service.</li>
                     </ol>
-                </article>
+                </section>
 
-                <article class="legal-section">
-                    <h2>Article 5 (Copyright)</h2>
+                <section class="g-lsec g-panel" id="en-s5">
+                    <h2><span class="g-lnum" style="--c:var(--g-c5)" aria-hidden="true"><i>05</i></span><span class="g-lh">Article 5 (Copyright)</span></h2>
                     <ol>
                         <li>Users may use the Service to post or upload information such as text, images, and videos only if they themselves hold the necessary intellectual property rights such as copyright, or have obtained permission from the necessary rights holders.</li>
                         <li>The copyright in text, images, videos, etc. posted or uploaded by Users using the Service shall be reserved to the User concerned or other existing rights holders.</li>
                         <li>Notwithstanding the main text of the preceding paragraph, we may use text, images, videos, etc. posted or uploaded using the Service to the extent necessary for improving the Service, improving its quality, correcting defects, etc., and for publicizing and promoting the Service, and Users shall not exercise moral rights of authors with respect to such use.</li>
                     </ol>
-                </article>
+                </section>
 
-                <article class="legal-section">
-                    <h2>Article 6 (Disclaimer of Warranties and Exemption from Liability)</h2>
+                <section class="g-lsec g-panel" id="en-s6">
+                    <h2><span class="g-lnum" style="--c:var(--g-c6)" aria-hidden="true"><i>06</i></span><span class="g-lh">Article 6 (Disclaimer of Warranties and Exemption from Liability)</span></h2>
                     <ol>
                         <li>We do not warrant, either expressly or impliedly, that the Service is free from defects in fact or in law (including defects relating to safety, reliability, accuracy, completeness, effectiveness, fitness for a particular purpose, security, etc., errors and bugs, and infringement of rights).</li>
                         <li>We shall bear no responsibility whatsoever for any damage incurred by Users arising from the Service, except in cases of our intentional misconduct or gross negligence.</li>
                         <li>Even in the cases set forth in the proviso of the preceding paragraph, we shall bear no responsibility whatsoever for damages arising from special circumstances (including cases where we or the User foresaw or could have foreseen the occurrence of the damage) among the damages incurred by Users due to non-performance of obligations or tort caused by our negligence (excluding gross negligence).</li>
                         <li>We shall bear no responsibility whatsoever for any transactions, communications, disputes, etc. arising between Users and other users or third parties in connection with the Service.</li>
                     </ol>
-                </article>
+                </section>
 
-                <article class="legal-section">
-                    <h2>Article 7 (Changes to the Content of the Service, etc.)</h2>
+                <section class="g-lsec g-panel" id="en-s7">
+                    <h2><span class="g-lnum" style="--c:var(--g-c1)" aria-hidden="true"><i>07</i></span><span class="g-lh">Article 7 (Changes to the Content of the Service, etc.)</span></h2>
                     <p>
                         We may change, add to, or discontinue the content of the Service with prior notice to Users, and Users shall consent to this.
                     </p>
-                </article>
+                </section>
 
-                <article class="legal-section">
-                    <h2>Article 8 (Changes to these Terms)</h2>
+                <section class="g-lsec g-panel" id="en-s8">
+                    <h2><span class="g-lnum" style="--c:var(--g-c2)" aria-hidden="true"><i>08</i></span><span class="g-lh">Article 8 (Changes to these Terms)</span></h2>
                     <ol>
                         <li>We may change these Terms without the individual consent of Users in the following cases.
                             <ul>
@@ -318,91 +311,66 @@
                         </li>
                         <li>When changing these Terms under the preceding paragraph, we will notify Users in advance that these Terms will be changed, of the content of the changed Terms, and of the time when the change takes effect.</li>
                     </ol>
-                </article>
+                </section>
 
-                <article class="legal-section">
-                    <h2>Article 9 (Handling of Personal Information)</h2>
+                <section class="g-lsec g-panel" id="en-s9">
+                    <h2><span class="g-lnum" style="--c:var(--g-c3)" aria-hidden="true"><i>09</i></span><span class="g-lh">Article 9 (Handling of Personal Information)</span></h2>
                     <p>
                         We shall appropriately handle personal information obtained through the use of the Service in accordance with our &ldquo;Privacy Policy&rdquo;.
                     </p>
-                </article>
+                </section>
 
-                <article class="legal-section">
-                    <h2>Article 10 (Notices or Communications)</h2>
+                <section class="g-lsec g-panel" id="en-s10">
+                    <h2><span class="g-lnum" style="--c:var(--g-c4)" aria-hidden="true"><i>10</i></span><span class="g-lh">Article 10 (Notices or Communications)</span></h2>
                     <p>
                         Notices or communications between Users and us shall be made by the method prescribed by us.
                         Unless a User submits a notification of change in accordance with the method separately prescribed by us, we will deem the currently registered contact information to be valid and send notices or communications to that contact information, and these shall be deemed to have reached the User at the time of sending.
                     </p>
-                </article>
+                </section>
 
-                <article class="legal-section">
-                    <h2>Article 11 (Prohibition of Assignment of Rights and Obligations)</h2>
+                <section class="g-lsec g-panel" id="en-s11">
+                    <h2><span class="g-lnum" style="--c:var(--g-c5)" aria-hidden="true"><i>11</i></span><span class="g-lh">Article 11 (Prohibition of Assignment of Rights and Obligations)</span></h2>
                     <p>
                         Users may not assign to a third party, or provide as security, their status under the usage agreement or their rights or obligations under these Terms without our prior written consent.
                     </p>
-                </article>
+                </section>
 
-                <article class="legal-section">
-                    <h2>Article 12 (Governing Law and Jurisdiction)</h2>
+                <section class="g-lsec g-panel" id="en-s12">
+                    <h2><span class="g-lnum" style="--c:var(--g-c6)" aria-hidden="true"><i>12</i></span><span class="g-lh">Article 12 (Governing Law and Jurisdiction)</span></h2>
                     <ol>
                         <li>These Terms shall be interpreted in accordance with the laws of Japan as the governing law.</li>
                         <li>If a dispute arises in connection with the Service, the court having jurisdiction over our location shall have exclusive agreed jurisdiction.</li>
                     </ol>
-                </article>
+                </section>
 
-                <article class="legal-section">
-                    <h2>Contact</h2>
+                <section class="g-lsec g-panel" id="en-s13">
+                    <h2><span class="g-lnum" style="--c:var(--g-c1)" aria-hidden="true"><i>13</i></span><span class="g-lh">Contact</span></h2>
                     <p>For inquiries regarding these Terms, please contact us at the following.</p>
                     <div class="contact-info">
                         <p>Ryo Tsuzukihashi</p>
                         <p>Email: ryo.tsuzukihashi@tsuzukit.com</p>
                     </div>
-                </article>
+                </section>
 
                 <div class="legal-nav">
                     <a href="/legal/privacy-policy.html" class="legal-nav-link">Privacy Policy &rarr;</a>
                     <a href="/legal/commercial-law.html" class="legal-nav-link">Notation based on the Specified Commercial Transactions Act &rarr;</a>
                 </div>
+            
+                </div>
             </div>
         </div>
-    </section>
+    </main>
 
-    <!-- Footer -->
-    <footer class="footer-peek-host" style="position: relative; background: var(--color-primary); color: var(--color-background); padding: 3rem 0; text-align: center;">
-        <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
-        <div class="container">
-            <p style="color: var(--color-background); opacity: 0.8; margin-bottom: 1rem;">
-                © 2026 Ryo Tsuzukihashi. All rights reserved.
-            </p>
-            <div style="margin-top: 2rem;">
-                <a href="/legal/privacy-policy.html" style="color: var(--color-background); opacity: 0.6; margin: 0 1rem; text-decoration: none;"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
-                <a href="/legal/terms-of-service.html" style="color: var(--color-background); opacity: 0.6; margin: 0 1rem; text-decoration: none; font-weight: 400;"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
-                <a href="/legal/commercial-law.html" style="color: var(--color-background); opacity: 0.6; margin: 0 1rem; text-decoration: none;"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
-                <a href="/legal/disclaimer.html" style="color: var(--color-background); opacity: 0.6; margin: 0 1rem; text-decoration: none;"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a>
+    <footer class="g-foot">
+            <img class="g-foot-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364" loading="lazy">
+            <div class="g-wrap">
+                <div><a href="/" class="g-foot-logo"><img src="/assets/images/logo/tsuzukit-wordmark-white.svg" alt="TsuzuKit" width="110" height="34"></a>
+                <p class="g-foot-tag"><span class="i18n-ja">誰も作らないものを、まじめに作る。</span><span class="i18n-en">Making what nobody else will, seriously.</span><br>Seriously Silly since 2016.</p></div>
+                <div class="g-foot-sns"><a href="https://x.com/tsuzuki817" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><img src="/assets/images/sns/x.png" alt="" width="22" height="22"></a><a href="https://www.instagram.com/tsuzuki817/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="/assets/images/sns/instagram.png" alt="" width="22" height="22"></a><a href="https://www.tiktok.com/@tsuzuki817" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><img src="/assets/images/sns/tiktok.png" alt="" width="22" height="22"></a><a href="https://www.youtube.com/@tsuzuki817" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><img src="/assets/images/sns/youtube.png" alt="" width="22" height="22"></a><a href="https://github.com/tsuzukihashi" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><img src="/assets/images/sns/github.png" alt="" width="22" height="22"></a></div>
+                <div class="g-foot-links"><a href="/contact/"><span class="i18n-ja">お問い合わせ</span><span class="i18n-en">Contact</span></a><a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a><a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a><a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a><a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a></div>
+                <p class="g-foot-copy">© 2026 Ryo Tsuzukihashi / TsuzuKit</p>
             </div>
-        </div>
-    </footer>
-
-    <!-- JavaScript -->
-    <script>
-        // Navigation scroll effect
-        window.addEventListener('scroll', function() {
-            const nav = document.getElementById('nav');
-            if (window.scrollY > 50) {
-                nav.classList.add('scrolled');
-            } else {
-                nav.classList.remove('scrolled');
-            }
-        });
-
-        // Mobile menu toggle
-        const navToggle = document.getElementById('navToggle');
-        const navMenu = document.getElementById('navMenu');
-        
-        navToggle.addEventListener('click', function() {
-            navToggle.classList.toggle('active');
-            navMenu.classList.toggle('active');
-        });
-    </script>
+        </footer>
 </body>
 </html>

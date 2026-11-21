@@ -22,27 +22,6 @@
         <meta property="og:url" content="https://tsuzukit.com/portfolio/">
         <meta property="og:type" content="website">
 
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap"
-            rel="stylesheet">
-
-        <!-- CSS -->
-        <link rel="stylesheet" href="../assets/css/tsuzukit.css">
-        <link rel="stylesheet" href="../assets/css/portfolio.css?v=20260124f">
-
-        <style>
-            .portfolio-ranking-link {
-                display: inline-block; margin-top: 28px; padding: 13px 26px;
-                background: #fff; border: 2px solid #14110c; border-radius: 999px;
-                box-shadow: 5px 5px 0 #14110c; color: #14110c; text-decoration: none;
-                font-weight: 700; font-size: 0.95rem; transition: transform 0.2s ease;
-            }
-            .portfolio-ranking-link:hover { transform: translateY(-3px); box-shadow: 7px 7px 0 #14110c; }
-        </style>
-
         <!-- Favicon -->
         <link rel="icon" type="image/x-icon" href="/favicon.ico">
         <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -64,97 +43,89 @@
 
         <!-- Google AdSense（持ち主の確認だけ。このページに広告は出さない。docs/ads.md） -->
         <meta name="google-adsense-account" content="ca-pub-8240751277462688">
+        <!-- ガチャの見た目（assets/css/gacha.css・docs/gacha-design.md） -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700;800&family=RocknRoll+One&display=swap">
+        <link rel="stylesheet" href="/assets/css/gacha.css">
+        <link rel="stylesheet" href="/assets/css/g-apps.css">
+        <script src="/assets/js/gacha.js" defer></script>
+        <!-- /ガチャの見た目 -->
     </head>
-    <body class="portfolio-page">
-        <!-- Navigation -->
-        <nav class="nav" id="nav">
-            <div class="nav-container">
-                <a href="/" class="nav-logo">TsuzuKit</a>
-                <div class="nav-menu" id="navMenu">
-                    <a href="/portfolio/" class="nav-link active">Portfolio</a>
-                    <a href="/about/" class="nav-link">About</a>
-                    <a href="/blog/" class="nav-link">Blog</a>
-                    <a href="/contact/" class="nav-link">Contact</a>
-                </div>
-                <div class="nav-toggle" id="navToggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+    <body class="g">
+        <header class="g-head" id="nav">
+            <div class="g-wrap">
+                <a href="/" class="g-logo"><img src="/assets/images/logo/tsuzukit-wordmark.svg" alt="TsuzuKit" width="116" height="36"></a>
+                <nav class="nav-menu" id="navMenu" aria-label="メニュー"><a href="/portfolio/" class="nav-link" aria-current="page"><span class="i18n-ja">アプリ</span><span class="i18n-en">Apps</span></a><a href="/blog/" class="nav-link"><span class="i18n-ja">読みもの</span><span class="i18n-en">Reading</span></a><a href="/about/" class="nav-link"><span class="i18n-ja">私について</span><span class="i18n-en">About</span></a><a href="/contact/" class="nav-link"><span class="i18n-ja">お問い合わせ</span><span class="i18n-en">Contact</span></a></nav>
+                <button type="button" class="g-menu" id="navToggle" aria-controls="navMenu" aria-expanded="false">MENU</button>
             </div>
-        </nav>
+        </header>
 
-        <!-- Portfolio Hero -->
-        <section class="portfolio-hero">
-            <div class="container">
-                <h1 class="portfolio-title">
-                    <span class="text-gradient">81</span> Apps<br>
-                    on the App Store
-                </h1>
-                <p class="portfolio-subtitle">
-                    <span class="i18n-ja">10年間、誰も作らないものを、まじめに作ってきた結果です</span><span class="i18n-en">What came of ten years spent seriously making the things nobody else makes</span>
-                </p>
+        <main class="g-main">
+            <div class="g-wrap">
+                <nav class="g-crumb" aria-label="パンくず" data-en-aria-label="Breadcrumb"><a href="/"><span class="i18n-ja">トップ</span><span class="i18n-en">Home</span></a><span>＞</span><b><span class="i18n-ja">ラインナップ</span><span class="i18n-en">Lineup</span></b></nav>
 
-                <!-- Stats Bar -->
-                <div class="portfolio-stats">
-                    <div class="portfolio-stat">
-                        <div class="portfolio-stat-number">81</div>
-                        <div class="portfolio-stat-label">Published</div>
+                <section class="ga-hero">
+                    <div>
+                        <h1 class="g-title"><span class="i18n-ja">ラインナップ</span><span class="i18n-en">The Lineup</span></h1>
+                        <p class="g-bubble"><span class="i18n-ja">10年間、誰も作らないものを、まじめに作ってきた結果です</span><span class="i18n-en">What came of ten years spent seriously making the things nobody else makes</span></p>
+                        <p class="ga-count"><span class="text-gradient">81</span> Apps on the App Store</p>
+
+                        <div class="portfolio-stats">
+                            <div class="portfolio-stat">
+                                <div class="portfolio-stat-number">81</div>
+                                <div class="portfolio-stat-label">Published</div>
+                                <small class="i18n-ja">公開中</small>
+                            </div>
+                            <div class="portfolio-stat">
+                                <div class="portfolio-stat-number">4.3</div>
+                                <div class="portfolio-stat-label">Rating</div>
+                                <small class="i18n-ja">平均の評価</small>
+                            </div>
+                            <div class="portfolio-stat">
+                                <div class="portfolio-stat-number">2,404</div>
+                                <div class="portfolio-stat-label">Reviews</div>
+                                <small class="i18n-ja">レビュー</small>
+                            </div>
+                            <div class="portfolio-stat">
+                                <div class="portfolio-stat-number">10</div>
+                                <div class="portfolio-stat-label">Years</div>
+                                <small class="i18n-ja">年</small>
+                            </div>
+                        </div>
+
+                        <div class="g-btns">
+                            <a href="/portfolio/ranking/" class="g-btn g-btn--k"><span class="g-capdot" style="--c:var(--g-y)"></span><span class="i18n-ja">ダウンロード数ランキングを見る</span><span class="i18n-en">See the download ranking</span></a>
+                            <a href="#apps" class="g-btn"><span class="i18n-ja">名前で探す</span><span class="i18n-en">Search by name</span> ↓</a>
+                        </div>
                     </div>
-                    <div class="portfolio-stat">
-                        <div class="portfolio-stat-number">4.3</div>
-                        <div class="portfolio-stat-label">Rating</div>
-                    </div>
-                    <div class="portfolio-stat">
-                        <div class="portfolio-stat-number">2,404</div>
-                        <div class="portfolio-stat-label">Reviews</div>
-                    </div>
-                    <div class="portfolio-stat">
-                        <div class="portfolio-stat-number">10</div>
-                        <div class="portfolio-stat-label">Years</div>
-                    </div>
+
+                    <aside class="g-ypanel ga-odds">
+                        <img class="ga-odds-char" src="/assets/images/character-think.png" alt="" width="342" height="333">
+                        <h2><span class="i18n-ja">排出のめやす（ダウンロード数）</span><span class="i18n-en">Rarity (by downloads)</span></h2>
+                        <ul>
+                        <li><span class="g-rare g-rare--SSR">SSR</span><span class="i18n-ja">10万DL以上</span><span class="i18n-en">100K+ downloads</span><span><b data-tier-count="SSR">2</b><span class="i18n-ja">種</span><span class="i18n-en"></span></span></li>
+                        <li><span class="g-rare g-rare--SR">SR</span><span class="i18n-ja">1万DL以上</span><span class="i18n-en">10K+ downloads</span><span><b data-tier-count="SR">5</b><span class="i18n-ja">種</span><span class="i18n-en"></span></span></li>
+                        <li><span class="g-rare g-rare--R">R</span><span class="i18n-ja">1000DL以上</span><span class="i18n-en">1,000+ downloads</span><span><b data-tier-count="R">6</b><span class="i18n-ja">種</span><span class="i18n-en"></span></span></li>
+                        <li><span class="g-rare g-rare--N">N</span><span class="i18n-ja">これから育つ</span><span class="i18n-en">Still growing</span><span><b data-tier-count="N">68</b><span class="i18n-ja">種</span><span class="i18n-en"></span></span></li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <div class="g-sh" id="apps">
+                    <h2><span class="i18n-ja">すべてのアプリ</span><span class="i18n-en">All Apps</span></h2>
+                    <small><span class="i18n-ja">全81種</span><span class="i18n-en">81 apps</span></small>
                 </div>
 
-                <a href="/portfolio/ranking/" class="portfolio-ranking-link">
-                    📊 <span class="i18n-ja">ダウンロード数ランキングを見る</span><span class="i18n-en">See the download ranking</span>
-                </a>
-            </div>
-        </section>
-
-        <!-- Apps Section -->
-        <section class="apps-section">
-            <div class="container">
-                <h2 class="section-title-appstore"><span class="i18n-ja">すべてのアプリ</span><span class="i18n-en">All Apps</span></h2>
-
-                <!-- Filter Bar -->
-                <div class="filter-bar">
-                    <img class="tk-char--filter" src="/assets/images/character-tiny.png" alt="" width="292" height="144">
-                    <div class="filter-search">
-                        <input type="text" id="searchInput" placeholder="アプリを検索..." data-en-placeholder="Search apps...">
-                    </div>
-                    <div class="filter-select-group">
-                        <select id="categoryFilter" class="filter-select">
-                            <option value="" data-en="All categories">すべてのカテゴリ</option>
-                            <option value="Utilities" data-en="Utilities">ユーティリティ</option>
-                            <option value="Productivity" data-en="Productivity">仕事効率化</option>
-                            <option value="Reference" data-en="Reference">辞書/辞典/その他</option>
-                            <option value="Photo & Video" data-en="Photo &amp; Video">写真/ビデオ</option>
-                            <option value="Lifestyle" data-en="Lifestyle">ライフスタイル</option>
-                            <option value="Graphics & Design" data-en="Graphics &amp; Design">グラフィック/デザイン</option>
-                            <option value="Food & Drink" data-en="Food &amp; Drink">フード/ドリンク</option>
-                            <option value="Social Networking" data-en="Social Networking">ソーシャルネットワーキング</option>
-                            <option value="Games" data-en="Games">ゲーム</option>
-                            <option value="Music" data-en="Music">ミュージック</option>
-                            <option value="Book" data-en="Books">ブック</option>
-                            <option value="News" data-en="News">ニュース</option>
-                            <option value="Travel" data-en="Travel">旅行</option>
-                            <option value="Education" data-en="Education">教育</option>
-                            <option value="Medical" data-en="Medical">メディカル</option>
-                            <option value="Health & Fitness" data-en="Health &amp; Fitness">ヘルスケア/フィットネス</option>
-                            <option value="Entertainment" data-en="Entertainment">エンターテインメント</option>
-                        </select>
-                        <select id="sortFilter" class="filter-select">
-                            <option value="default" data-en="Sort: Default">並び順：デフォルト</option>
+                <div class="g-panel ga-filter">
+                    <div class="ga-filter-top">
+                        <label class="ga-search">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L21 21"/></svg>
+                            <span class="g-sr"><span class="i18n-ja">アプリを検索</span><span class="i18n-en">Search apps</span></span>
+                            <input type="search" id="searchInput" placeholder="アプリを検索..." data-en-placeholder="Search apps..." autocomplete="off">
+                        </label>
+                        <select id="sortFilter" class="ga-select" aria-label="並び順" data-en-aria-label="Sort">
+                            <option value="default" data-en="Sort: By rarity">並び順：レア度ごと</option>
                             <option value="release-desc" data-en="Release date: newest first">リリース日：新しい順</option>
                             <option value="release-asc" data-en="Release date: oldest first">リリース日：古い順</option>
                             <option value="update-desc" data-en="Last updated: newest first">更新日：新しい順</option>
@@ -164,222 +135,135 @@
                             <option value="name-desc" data-en="Name: Z-A">名前：Z-A</option>
                         </select>
                     </div>
-                    <span class="filter-results" id="filterResults"><span class="i18n-ja">81件表示中</span><span class="i18n-en">Showing 81 apps</span></span>
-                    <button class="filter-clear" id="filterClear"><span class="i18n-ja">クリア</span><span class="i18n-en">Clear</span></button>
+                    <div class="ga-chiprow" role="group" aria-label="レア度" data-en-aria-label="Rarity">
+                        <span><span class="i18n-ja">レア度</span><span class="i18n-en">Rarity</span></span>
+                        <button type="button" class="g-chip is-on" data-filter-rarity="" aria-pressed="true"><span class="i18n-ja">ぜんぶ</span><span class="i18n-en">All</span><i>81</i></button>
+                        <button type="button" class="g-chip ga-chip-rare" data-filter-rarity="SSR" aria-pressed="false"><b style="background:var(--g-ssr)"></b>SSR<i data-tier-count="SSR">2</i></button>
+                        <button type="button" class="g-chip ga-chip-rare" data-filter-rarity="SR" aria-pressed="false"><b style="background:var(--g-sr)"></b>SR<i data-tier-count="SR">5</i></button>
+                        <button type="button" class="g-chip ga-chip-rare" data-filter-rarity="R" aria-pressed="false"><b style="background:var(--g-rr)"></b>R<i data-tier-count="R">6</i></button>
+                        <button type="button" class="g-chip ga-chip-rare" data-filter-rarity="N" aria-pressed="false"><b style="background:var(--g-n)"></b>N<i data-tier-count="N">68</i></button>
+                    </div>
+                    <div class="ga-chiprow" role="group" aria-label="カテゴリ" data-en-aria-label="Category">
+                        <span><span class="i18n-ja">カテゴリ</span><span class="i18n-en">Category</span></span>
+                        <button type="button" class="g-chip is-on" data-filter-category="" aria-pressed="true"><span class="i18n-ja">ぜんぶ</span><span class="i18n-en">All</span><i>81</i></button>
+                        <button type="button" class="g-chip" data-filter-category="Utilities" aria-pressed="false"><span class="i18n-ja">ユーティリティ</span><span class="i18n-en">Utilities</span><i></i></button>
+                        <button type="button" class="g-chip" data-filter-category="Productivity" aria-pressed="false"><span class="i18n-ja">仕事効率化</span><span class="i18n-en">Productivity</span><i></i></button>
+                        <button type="button" class="g-chip" data-filter-category="Reference" aria-pressed="false"><span class="i18n-ja">辞書/辞典/その他</span><span class="i18n-en">Reference</span><i></i></button>
+                        <button type="button" class="g-chip" data-filter-category="Photo & Video" aria-pressed="false"><span class="i18n-ja">写真/ビデオ</span><span class="i18n-en">Photo &amp; Video</span><i></i></button>
+                        <button type="button" class="g-chip" data-filter-category="Lifestyle" aria-pressed="false"><span class="i18n-ja">ライフスタイル</span><span class="i18n-en">Lifestyle</span><i></i></button>
+                        <button type="button" class="g-chip" data-filter-category="Graphics & Design" aria-pressed="false"><span class="i18n-ja">グラフィック/デザイン</span><span class="i18n-en">Graphics &amp; Design</span><i></i></button>
+                        <button type="button" class="g-chip" data-filter-category="Food & Drink" aria-pressed="false"><span class="i18n-ja">フード/ドリンク</span><span class="i18n-en">Food &amp; Drink</span><i></i></button>
+                        <button type="button" class="g-chip" data-filter-category="Social Networking" aria-pressed="false"><span class="i18n-ja">ソーシャルネットワーキング</span><span class="i18n-en">Social Networking</span><i></i></button>
+                        <button type="button" class="g-chip" data-filter-category="Games" aria-pressed="false"><span class="i18n-ja">ゲーム</span><span class="i18n-en">Games</span><i></i></button>
+                        <button type="button" class="g-chip" data-filter-category="Music" aria-pressed="false"><span class="i18n-ja">ミュージック</span><span class="i18n-en">Music</span><i></i></button>
+                        <button type="button" class="g-chip" data-filter-category="Book" aria-pressed="false"><span class="i18n-ja">ブック</span><span class="i18n-en">Books</span><i></i></button>
+                        <button type="button" class="g-chip" data-filter-category="News" aria-pressed="false"><span class="i18n-ja">ニュース</span><span class="i18n-en">News</span><i></i></button>
+                        <button type="button" class="g-chip" data-filter-category="Travel" aria-pressed="false"><span class="i18n-ja">旅行</span><span class="i18n-en">Travel</span><i></i></button>
+                        <button type="button" class="g-chip" data-filter-category="Education" aria-pressed="false"><span class="i18n-ja">教育</span><span class="i18n-en">Education</span><i></i></button>
+                        <button type="button" class="g-chip" data-filter-category="Medical" aria-pressed="false"><span class="i18n-ja">メディカル</span><span class="i18n-en">Medical</span><i></i></button>
+                        <button type="button" class="g-chip" data-filter-category="Health & Fitness" aria-pressed="false"><span class="i18n-ja">ヘルスケア/フィットネス</span><span class="i18n-en">Health &amp; Fitness</span><i></i></button>
+                        <button type="button" class="g-chip" data-filter-category="Entertainment" aria-pressed="false"><span class="i18n-ja">エンターテインメント</span><span class="i18n-en">Entertainment</span><i></i></button>
+                    </div>
+                    <div class="ga-filter-foot">
+                        <span class="filter-results" aria-live="polite" id="filterResults"><span class="i18n-ja">81件表示中</span><span class="i18n-en">Showing 81 apps</span></span>
+                        <button type="button" class="g-btn filter-clear" id="filterClear" hidden><span class="i18n-ja">絞り込みをはずす</span><span class="i18n-en">Clear filters</span></button>
+                    </div>
                 </div>
 
-                <div class="app-grid-store" id="appGrid">
-                <!-- カードは portfolio-renderer.js で動的に生成 -->
+                <div class="ga-grid" id="appGrid">
+                    <!-- カードは portfolio-renderer.js で apps.json から作る -->
                 </div>
-            </div>
-        </section>
 
-        <!-- Archived Apps Section -->
-        <section class="apps-section archived-section">
-            <div class="container">
-                <h2 class="section-title-appstore"><span class="i18n-ja">アーカイブしたアプリ</span><span class="i18n-en">Archived Apps</span></h2>
-                <p class="archived-description"><span class="i18n-ja">過去にリリースしたアプリ（現在は公開停止）</span><span class="i18n-en">Apps I released in the past (no longer available)</span></p>
+                <div class="g-panel g-empty ga-empty" id="filterEmpty" hidden>
+                    <img src="/assets/images/character-surprised.png" alt="" width="293" height="340">
+                    <h3><span class="i18n-ja">そのカプセルは見つかりませんでした</span><span class="i18n-en">No capsule matches that</span></h3>
+                    <p data-empty-q hidden><span class="i18n-ja">「<span id="emptyQuery"></span>」に当たるアプリがありません。</span><span class="i18n-en">No app matches your search.</span></p>
+                    <p><span class="i18n-ja">アプリの名前は日本語でも英語でも探せます。別のことばか、ほかのレア度・カテゴリで探してみてください。</span><span class="i18n-en">You can search by the Japanese or English name. Try a different word, or another rarity or category.</span></p>
+                    <div class="g-btns"><button type="button" class="g-btn g-btn--k" id="emptyClear"><span class="i18n-ja">絞り込みをはずして全部見る</span><span class="i18n-en">Clear filters and show all</span></button></div>
+                </div>
 
-                <div class="app-grid-store">
-                    <!-- パンケーキ屋さん -->
-                    <div class="app-card-store app-card-archived">
-                        <div class="app-header">
-                            <div class="app-icon-store app-icon-archived">
-                                <div class="icon-placeholder">🥞</div>
-                            </div>
-                            <div class="app-info">
-                                <h3 class="app-name"><span class="i18n-ja">パンケーキ屋さん</span><span class="i18n-en">Pancake Shop</span></h3>
-                                <p class="app-subtitle">Games</p>
-                                <p class="app-meta archived-badge"><span class="i18n-ja">公開停止</span><span class="i18n-en">Discontinued</span></p>
-                            </div>
+                <div class="g-sh">
+                    <h2><span class="i18n-ja">アーカイブしたアプリ</span><span class="i18n-en">Archived Apps</span></h2>
+                    <small><span class="i18n-ja">過去にリリースしたアプリ（現在は公開停止）</span><span class="i18n-en">Apps I released in the past (no longer available)</span></small>
+                </div>
+                <div class="ga-grid ga-grid--archived">
+                    <article class="g-panel ga-card">
+                        <div class="ga-card-head">
+                            <span class="g-cap g-cap--off"><span class="ga-cap-emoji" aria-hidden="true">🥞</span></span>
+                            <span class="ga-card-txt">
+                                <span class="ga-off"><span class="i18n-ja">公開停止</span><span class="i18n-en">Discontinued</span></span>
+                                <h3 class="ga-card-name"><span class="i18n-ja">パンケーキ屋さん</span><span class="i18n-en">Pancake Shop</span></h3>
+                                <span class="ga-card-meta"><span class="i18n-ja">ゲーム</span><span class="i18n-en">Games</span></span>
+                            </span>
                         </div>
-                        <div class="app-screenshots">
-                            <div class="app-screenshot">
-                                <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/73/9c/75/739c75b0-cf89-6f66-0000-56020fba438f/pr_source.png/1242x0w.webp" alt="" loading="lazy">
-                            </div>
-                            <div class="app-screenshot">
-                                <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/7f/19/c6/7f19c69f-bfd9-1c4d-a41f-e6766d2104fe/pr_source.png/1242x0w.webp" alt="" loading="lazy">
-                            </div>
-                            <div class="app-screenshot">
-                                <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/4d/fa/43/4dfa4362-4bf2-52e6-27dc-30650a5cf309/pr_source.png/1242x0w.webp" alt="" loading="lazy">
-                            </div>
+                        <div class="ga-shots"><button type="button" class="ga-shot" data-full="https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/73/9c/75/739c75b0-cf89-6f66-0000-56020fba438f/pr_source.png/1242x0w.webp" aria-label="スクリーンショットを拡大" data-en-aria-label="Enlarge screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/73/9c/75/739c75b0-cf89-6f66-0000-56020fba438f/pr_source.png/1242x0w.webp" alt="" width="1242" height="2688" loading="lazy"></button><button type="button" class="ga-shot" data-full="https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/7f/19/c6/7f19c69f-bfd9-1c4d-a41f-e6766d2104fe/pr_source.png/1242x0w.webp" aria-label="スクリーンショットを拡大" data-en-aria-label="Enlarge screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/7f/19/c6/7f19c69f-bfd9-1c4d-a41f-e6766d2104fe/pr_source.png/1242x0w.webp" alt="" width="1242" height="2688" loading="lazy"></button><button type="button" class="ga-shot" data-full="https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/4d/fa/43/4dfa4362-4bf2-52e6-27dc-30650a5cf309/pr_source.png/1242x0w.webp" aria-label="スクリーンショットを拡大" data-en-aria-label="Enlarge screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/4d/fa/43/4dfa4362-4bf2-52e6-27dc-30650a5cf309/pr_source.png/1242x0w.webp" alt="" width="1242" height="2688" loading="lazy"></button></div>
+                    </article>
+                    <article class="g-panel ga-card">
+                        <div class="ga-card-head">
+                            <span class="g-cap g-cap--off"><span class="ga-cap-emoji" aria-hidden="true">⚔️</span></span>
+                            <span class="ga-card-txt">
+                                <span class="ga-off"><span class="i18n-ja">公開停止</span><span class="i18n-en">Discontinued</span></span>
+                                <h3 class="ga-card-name">FightAction</h3>
+                                <span class="ga-card-meta"><span class="i18n-ja">ゲーム</span><span class="i18n-en">Games</span></span>
+                            </span>
                         </div>
-                    </div>
-
-                    <!-- FightAction -->
-                    <div class="app-card-store app-card-archived">
-                        <div class="app-header">
-                            <div class="app-icon-store app-icon-archived">
-                                <div class="icon-placeholder">⚔️</div>
-                            </div>
-                            <div class="app-info">
-                                <h3 class="app-name">FightAction</h3>
-                                <p class="app-subtitle">Games</p>
-                                <p class="app-meta archived-badge"><span class="i18n-ja">公開停止</span><span class="i18n-en">Discontinued</span></p>
-                            </div>
+                        <div class="ga-shots"><button type="button" class="ga-shot" data-full="https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/2b/ec/d2/2becd23c-d766-808f-3cf2-51415b8b82c7/pr_source.png/1242x0w.webp" aria-label="スクリーンショットを拡大" data-en-aria-label="Enlarge screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/2b/ec/d2/2becd23c-d766-808f-3cf2-51415b8b82c7/pr_source.png/1242x0w.webp" alt="" width="1242" height="2688" loading="lazy"></button><button type="button" class="ga-shot" data-full="https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/02/37/70/023770dd-517b-2dff-92e9-0274632a65d0/pr_source.png/1242x0w.webp" aria-label="スクリーンショットを拡大" data-en-aria-label="Enlarge screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/02/37/70/023770dd-517b-2dff-92e9-0274632a65d0/pr_source.png/1242x0w.webp" alt="" width="1242" height="2688" loading="lazy"></button><button type="button" class="ga-shot" data-full="https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/cd/d5/29/cdd529f7-957e-8b2d-b8ec-c9674cb5f7b8/pr_source.png/1242x0w.webp" aria-label="スクリーンショットを拡大" data-en-aria-label="Enlarge screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/cd/d5/29/cdd529f7-957e-8b2d-b8ec-c9674cb5f7b8/pr_source.png/1242x0w.webp" alt="" width="1242" height="2688" loading="lazy"></button></div>
+                    </article>
+                    <article class="g-panel ga-card">
+                        <div class="ga-card-head">
+                            <span class="g-cap g-cap--off"><span class="ga-cap-emoji" aria-hidden="true">⭐</span></span>
+                            <span class="ga-card-txt">
+                                <span class="ga-off"><span class="i18n-ja">公開停止</span><span class="i18n-en">Discontinued</span></span>
+                                <h3 class="ga-card-name"><span class="i18n-ja">星防衛</span><span class="i18n-en">Star Defense</span></h3>
+                                <span class="ga-card-meta"><span class="i18n-ja">ゲーム</span><span class="i18n-en">Games</span></span>
+                            </span>
                         </div>
-                        <div class="app-screenshots">
-                            <div class="app-screenshot">
-                                <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/2b/ec/d2/2becd23c-d766-808f-3cf2-51415b8b82c7/pr_source.png/1242x0w.webp" alt="" loading="lazy">
-                            </div>
-                            <div class="app-screenshot">
-                                <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/02/37/70/023770dd-517b-2dff-92e9-0274632a65d0/pr_source.png/1242x0w.webp" alt="" loading="lazy">
-                            </div>
-                            <div class="app-screenshot">
-                                <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/cd/d5/29/cdd529f7-957e-8b2d-b8ec-c9674cb5f7b8/pr_source.png/1242x0w.webp" alt="" loading="lazy">
-                            </div>
+                        <div class="ga-shots"><button type="button" class="ga-shot" data-full="https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/45/8b/3c/458b3c91-4dcb-43bb-7681-7ab45c2fab99/pr_source.png/1242x0w.webp" aria-label="スクリーンショットを拡大" data-en-aria-label="Enlarge screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/45/8b/3c/458b3c91-4dcb-43bb-7681-7ab45c2fab99/pr_source.png/1242x0w.webp" alt="" width="1242" height="2688" loading="lazy"></button><button type="button" class="ga-shot" data-full="https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/16/b0/a1/16b0a1e5-bd85-21c5-0db2-0538a9820ad1/pr_source.png/1242x0w.webp" aria-label="スクリーンショットを拡大" data-en-aria-label="Enlarge screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/16/b0/a1/16b0a1e5-bd85-21c5-0db2-0538a9820ad1/pr_source.png/1242x0w.webp" alt="" width="1242" height="2688" loading="lazy"></button><button type="button" class="ga-shot" data-full="https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/fd/86/b9/fd86b98e-2587-f52e-93c1-b6e221444b4d/pr_source.png/1242x0w.webp" aria-label="スクリーンショットを拡大" data-en-aria-label="Enlarge screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/fd/86/b9/fd86b98e-2587-f52e-93c1-b6e221444b4d/pr_source.png/1242x0w.webp" alt="" width="1242" height="2688" loading="lazy"></button></div>
+                    </article>
+                    <article class="g-panel ga-card">
+                        <div class="ga-card-head">
+                            <span class="g-cap g-cap--off"><span class="ga-cap-emoji" aria-hidden="true">🎨</span></span>
+                            <span class="ga-card-txt">
+                                <span class="ga-off"><span class="i18n-ja">公開停止</span><span class="i18n-en">Discontinued</span></span>
+                                <h3 class="ga-card-name">SameColor</h3>
+                                <span class="ga-card-meta"><span class="i18n-ja">ゲーム</span><span class="i18n-en">Games</span></span>
+                            </span>
                         </div>
-                    </div>
-
-                    <!-- 星防衛 -->
-                    <div class="app-card-store app-card-archived">
-                        <div class="app-header">
-                            <div class="app-icon-store app-icon-archived">
-                                <div class="icon-placeholder">⭐</div>
-                            </div>
-                            <div class="app-info">
-                                <h3 class="app-name"><span class="i18n-ja">星防衛</span><span class="i18n-en">Star Defense</span></h3>
-                                <p class="app-subtitle">Games</p>
-                                <p class="app-meta archived-badge"><span class="i18n-ja">公開停止</span><span class="i18n-en">Discontinued</span></p>
-                            </div>
+                        <div class="ga-shots"><button type="button" class="ga-shot" data-full="https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/cc/df/24/ccdf24d2-fb1a-eef3-6fff-96721a05c021/pr_source.jpg/1242x0w.webp" aria-label="スクリーンショットを拡大" data-en-aria-label="Enlarge screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/cc/df/24/ccdf24d2-fb1a-eef3-6fff-96721a05c021/pr_source.jpg/1242x0w.webp" alt="" width="1242" height="2688" loading="lazy"></button><button type="button" class="ga-shot" data-full="https://is1-ssl.mzstatic.com/image/thumb/Purple124/v4/23/07/0a/23070aaf-4f5e-87f3-25de-3cc8896b8b7c/pr_source.jpg/1242x0w.webp" aria-label="スクリーンショットを拡大" data-en-aria-label="Enlarge screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple124/v4/23/07/0a/23070aaf-4f5e-87f3-25de-3cc8896b8b7c/pr_source.jpg/1242x0w.webp" alt="" width="1242" height="2688" loading="lazy"></button><button type="button" class="ga-shot" data-full="https://is1-ssl.mzstatic.com/image/thumb/Purple124/v4/f5/ac/eb/f5aceb59-f454-6231-79f2-5e074990fbf7/pr_source.jpg/1242x0w.webp" aria-label="スクリーンショットを拡大" data-en-aria-label="Enlarge screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple124/v4/f5/ac/eb/f5aceb59-f454-6231-79f2-5e074990fbf7/pr_source.jpg/1242x0w.webp" alt="" width="1242" height="2688" loading="lazy"></button></div>
+                    </article>
+                    <article class="g-panel ga-card">
+                        <div class="ga-card-head">
+                            <span class="g-cap g-cap--off"><span class="ga-cap-emoji" aria-hidden="true">🎯</span></span>
+                            <span class="ga-card-txt">
+                                <span class="ga-off"><span class="i18n-ja">公開停止</span><span class="i18n-en">Discontinued</span></span>
+                                <h3 class="ga-card-name">MacAddressQuiz</h3>
+                                <span class="ga-card-meta"><span class="i18n-ja">教育</span><span class="i18n-en">Education</span></span>
+                            </span>
                         </div>
-                        <div class="app-screenshots">
-                            <div class="app-screenshot">
-                                <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/45/8b/3c/458b3c91-4dcb-43bb-7681-7ab45c2fab99/pr_source.png/1242x0w.webp" alt="" loading="lazy">
-                            </div>
-                            <div class="app-screenshot">
-                                <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/16/b0/a1/16b0a1e5-bd85-21c5-0db2-0538a9820ad1/pr_source.png/1242x0w.webp" alt="" loading="lazy">
-                            </div>
-                            <div class="app-screenshot">
-                                <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/fd/86/b9/fd86b98e-2587-f52e-93c1-b6e221444b4d/pr_source.png/1242x0w.webp" alt="" loading="lazy">
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- SameColor -->
-                    <div class="app-card-store app-card-archived">
-                        <div class="app-header">
-                            <div class="app-icon-store app-icon-archived">
-                                <div class="icon-placeholder">🎨</div>
-                            </div>
-                            <div class="app-info">
-                                <h3 class="app-name">SameColor</h3>
-                                <p class="app-subtitle">Games</p>
-                                <p class="app-meta archived-badge"><span class="i18n-ja">公開停止</span><span class="i18n-en">Discontinued</span></p>
-                            </div>
-                        </div>
-                        <div class="app-screenshots">
-                            <div class="app-screenshot">
-                                <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/cc/df/24/ccdf24d2-fb1a-eef3-6fff-96721a05c021/pr_source.jpg/1242x0w.webp" alt="" loading="lazy">
-                            </div>
-                            <div class="app-screenshot">
-                                <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple124/v4/23/07/0a/23070aaf-4f5e-87f3-25de-3cc8896b8b7c/pr_source.jpg/1242x0w.webp" alt="" loading="lazy">
-                            </div>
-                            <div class="app-screenshot">
-                                <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple124/v4/f5/ac/eb/f5aceb59-f454-6231-79f2-5e074990fbf7/pr_source.jpg/1242x0w.webp" alt="" loading="lazy">
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- MacAddressQuiz -->
-                    <div class="app-card-store app-card-archived">
-                        <div class="app-header">
-                            <div class="app-icon-store app-icon-archived">
-                                <div class="icon-placeholder">🎯</div>
-                            </div>
-                            <div class="app-info">
-                                <h3 class="app-name">MacAddressQuiz</h3>
-                                <p class="app-subtitle">Education</p>
-                                <p class="app-meta archived-badge"><span class="i18n-ja">公開停止</span><span class="i18n-en">Discontinued</span></p>
-                            </div>
-                        </div>
-                        <div class="app-screenshots">
-                            <div class="app-screenshot">
-                                <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/ad/f2/1b/adf21bf6-bfa1-c987-eb36-5d39c75a9f6f/pr_source.png/1242x0w.webp" alt="" loading="lazy">
-                            </div>
-                            <div class="app-screenshot">
-                                <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/07/20/d0/0720d00e-2b33-d8eb-4b02-1ed7dbf83757/pr_source.png/1242x0w.webp" alt="" loading="lazy">
-                            </div>
-                            <div class="app-screenshot">
-                                <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/d4/00/7d/d4007d48-5061-e43c-8429-2cd2bdcda74d/pr_source.png/1242x0w.webp" alt="" loading="lazy">
-                            </div>
-                        </div>
-                    </div>
+                        <div class="ga-shots"><button type="button" class="ga-shot" data-full="https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/ad/f2/1b/adf21bf6-bfa1-c987-eb36-5d39c75a9f6f/pr_source.png/1242x0w.webp" aria-label="スクリーンショットを拡大" data-en-aria-label="Enlarge screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/ad/f2/1b/adf21bf6-bfa1-c987-eb36-5d39c75a9f6f/pr_source.png/1242x0w.webp" alt="" width="1242" height="2688" loading="lazy"></button><button type="button" class="ga-shot" data-full="https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/07/20/d0/0720d00e-2b33-d8eb-4b02-1ed7dbf83757/pr_source.png/1242x0w.webp" aria-label="スクリーンショットを拡大" data-en-aria-label="Enlarge screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/07/20/d0/0720d00e-2b33-d8eb-4b02-1ed7dbf83757/pr_source.png/1242x0w.webp" alt="" width="1242" height="2688" loading="lazy"></button><button type="button" class="ga-shot" data-full="https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/d4/00/7d/d4007d48-5061-e43c-8429-2cd2bdcda74d/pr_source.png/1242x0w.webp" aria-label="スクリーンショットを拡大" data-en-aria-label="Enlarge screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/d4/00/7d/d4007d48-5061-e43c-8429-2cd2bdcda74d/pr_source.png/1242x0w.webp" alt="" width="1242" height="2688" loading="lazy"></button></div>
+                    </article>
                 </div>
             </div>
-        </section>
+        </main>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
-            <div class="footer-container">
-                <div class="footer-content">
-                    <div class="footer-brand">
-                        <a href="/" class="footer-logo">TsuzuKit</a>
-                        <p class="footer-tagline">Seriously Silly</p>
-                    </div>
-                    <div class="footer-links">
-                        <a href="/portfolio/">Portfolio</a>
-                        <a href="/about/">About</a>
-                        <a href="/blog/">Blog</a>
-                        <a href="/contact/">Contact</a>
-                    </div>
-                </div>
-                <div class="footer-bottom">
-                    <p>&copy; 2024 Ryo Tsuzukihashi. All rights reserved.</p>
-                </div>
+        <footer class="g-foot">
+            <img class="g-foot-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364" loading="lazy">
+            <div class="g-wrap">
+                <div><a href="/" class="g-foot-logo"><img src="/assets/images/logo/tsuzukit-wordmark-white.svg" alt="TsuzuKit" width="110" height="34"></a>
+                <p class="g-foot-tag"><span class="i18n-ja">誰も作らないものを、まじめに作る。</span><span class="i18n-en">Making what nobody else will, seriously.</span><br>Seriously Silly since 2016.</p></div>
+                <div class="g-foot-sns"><a href="https://x.com/tsuzuki817" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><img src="/assets/images/sns/x.png" alt="" width="22" height="22"></a><a href="https://www.instagram.com/tsuzuki817/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="/assets/images/sns/instagram.png" alt="" width="22" height="22"></a><a href="https://www.tiktok.com/@tsuzuki817" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><img src="/assets/images/sns/tiktok.png" alt="" width="22" height="22"></a><a href="https://www.youtube.com/@tsuzuki817" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><img src="/assets/images/sns/youtube.png" alt="" width="22" height="22"></a><a href="https://github.com/tsuzukihashi" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><img src="/assets/images/sns/github.png" alt="" width="22" height="22"></a></div>
+                <div class="g-foot-links"><a href="/contact/"><span class="i18n-ja">お問い合わせ</span><span class="i18n-en">Contact</span></a><a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a><a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a><a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a><a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a></div>
+                <p class="g-foot-copy">© 2026 Ryo Tsuzukihashi / TsuzuKit</p>
             </div>
         </footer>
 
-        <!-- Lightbox -->
-        <div class="lightbox" id="lightbox" onclick="closeLightbox()">
-            <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+        <!-- スクショの拡大 -->
+        <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="スクリーンショット" data-en-aria-label="Screenshot">
+            <button type="button" class="lightbox-close" aria-label="閉じる" data-en-aria-label="Close">&times;</button>
             <img src="" alt="" id="lightbox-img">
         </div>
 
-        <!-- Scripts -->
-        <script>
-        // Lightbox
-        function openLightbox(imgSrc) {
-            event.preventDefault();
-            event.stopPropagation();
-            var lightbox = document.getElementById('lightbox');
-            document.getElementById('lightbox-img').src = imgSrc;
-            // 次フレームでactiveを付けてアニメーション発火
-            requestAnimationFrame(function() {
-                lightbox.classList.add('active');
-            });
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closeLightbox() {
-            document.getElementById('lightbox').classList.remove('active');
-            document.body.style.overflow = '';
-        }
-
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') closeLightbox();
-        });
-
-        // イベント委任でスクリーンショットのlightboxを処理（動的カード対応）
-        document.addEventListener('click', function(e) {
-            if (e.target.tagName === 'IMG' && e.target.closest('.app-screenshot, .app-screenshot-landscape')) {
-                openLightbox(e.target.src);
-            }
-        });
-
-        // Mobile menu toggle
-        var navToggle = document.getElementById('navToggle');
-        var navMenu = document.getElementById('navMenu');
-
-        navToggle.addEventListener('click', function() {
-            navToggle.classList.toggle('active');
-            navMenu.classList.toggle('active');
-        });
-        </script>
-
-        <!-- Portfolio Renderer & Filter -->
-        <script src="../assets/js/portfolio-filter.js"></script>
-        <script src="../assets/js/portfolio-renderer.js"></script>
+        <script src="/assets/js/portfolio-filter.js"></script>
+        <script src="/assets/js/portfolio-renderer.js"></script>
     </body>
 </html>

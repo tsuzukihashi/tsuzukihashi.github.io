@@ -16,11 +16,14 @@
     <meta property="og:url" content="https://tsuzukit.com/blog/guides/">
     <meta property="og:image" content="https://tsuzukit.com/assets/images/ogp/blog.png">
 
+    <!-- ガチャの見た目（assets/css/gacha.css・docs/gacha-design.md） -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/tsuzukit.css">
-    <link rel="stylesheet" href="/assets/css/blog.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700;800&family=RocknRoll+One&display=swap">
+    <link rel="stylesheet" href="/assets/css/gacha.css">
+    <link rel="stylesheet" href="/assets/css/g-blog.css">
+    <script src="/assets/js/gacha.js" defer></script>
+    <!-- /ガチャの見た目 -->
 
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -542,32 +545,26 @@
 }
     </script>
 </head>
-<body class="blog-index">
-    <nav class="nav" id="nav">
-        <div class="nav-container">
-            <a href="/" class="nav-logo">TsuzuKit</a>
-            <div class="nav-menu" id="navMenu">
-                <a href="/portfolio/" class="nav-link">Portfolio</a>
-                <a href="/about/" class="nav-link">About</a>
-                <a href="/blog/" class="nav-link active">Blog</a>
-                <a href="/contact/" class="nav-link">Contact</a>
+<body class="g">
+    <header class="g-head" id="nav">
+            <div class="g-wrap">
+                <a href="/" class="g-logo"><img src="/assets/images/logo/tsuzukit-wordmark.svg" alt="TsuzuKit" width="116" height="36"></a>
+                <nav class="nav-menu" id="navMenu" aria-label="メニュー"><a href="/portfolio/" class="nav-link"><span class="i18n-ja">アプリ</span><span class="i18n-en">Apps</span></a><a href="/blog/" class="nav-link" aria-current="page"><span class="i18n-ja">読みもの</span><span class="i18n-en">Reading</span></a><a href="/about/" class="nav-link"><span class="i18n-ja">私について</span><span class="i18n-en">About</span></a><a href="/contact/" class="nav-link"><span class="i18n-ja">お問い合わせ</span><span class="i18n-en">Contact</span></a></nav>
+                <button type="button" class="g-menu" id="navToggle" aria-controls="navMenu" aria-expanded="false">MENU</button>
             </div>
-            <div class="nav-toggle" id="navToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
+        </header>
 
-    <section class="section" style="padding-top: 140px;">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Guides</span>
-                <h1 class="section-title"><span class="i18n-ja">困りごとから選ぶアプリ</span><span class="i18n-en">Apps for Everyday Problems</span></h1>
-                <p style="color: var(--color-secondary); margin-top: 0.75rem; max-width: 640px; margin-inline: auto; line-height: 1.8;"><span class="i18n-ja">困っていることの言葉から、それに効くアプリを選ぶための記事を81本まとめました。どの記事にも僕が作ったアプリが入っているので、冒頭でそう書いています。</span><span class="i18n-en">81 guides that start from a problem and help you pick an app for it. Every one of them includes an app I made, and each says so at the top.</span></p>
-            </div>
-            <div class="posts-grid">
+    <main class="g-main gb">
+        <div class="g-wrap">
+            <nav class="g-crumb" aria-label="パンくず" data-en-aria-label="Breadcrumb"><a href="/"><span class="i18n-ja">トップ</span><span class="i18n-en">Home</span></a><span>›</span><a href="/blog/"><span class="i18n-ja">読みもの</span><span class="i18n-en">Reading</span></a><span>›</span><b><span class="i18n-ja">困りごとから選ぶアプリ</span><span class="i18n-en">Apps for Everyday Problems</span></b></nav>
+            <section class="gb-hero">
+                <div>
+                    <h1 class="g-title g-title--m"><span class="i18n-ja">困りごとから選ぶアプリ</span><span class="i18n-en">Apps for Everyday Problems</span></h1>
+                    <p class="g-bubble"><span class="i18n-ja">困っていることの言葉から、それに効くアプリを選ぶための記事を81本まとめました。どの記事にも僕が作ったアプリが入っているので、冒頭でそう書いています。</span><span class="i18n-en">81 guides that start from a problem and help you pick an app for it. Every one of them includes an app I made, and each says so at the top.</span></p>
+                </div>
+                <img class="gb-hero-char" src="/assets/images/character-think.png" alt="" width="342" height="333">
+            </section>
+            <div class="posts-grid gb-hub">
                 <article class="post-card" data-category="tips">
                     <div class="post-card-image" style="height: auto; aspect-ratio: 3 / 2;">
                         <img src="/assets/images/posts/zenn-trend-check-iphone.webp" width="1200" height="800" loading="lazy" alt="朝、ホーム画面のパネルから浮かぶ記事のカードに指を伸ばすキャラクター" data-en-alt="The character with a morning mug, reaching for one of the article cards rising from a Home Screen panel" style="width: 100%; height: 100%; object-fit: cover; display: block;">
@@ -2189,37 +2186,19 @@
                 </article>
 
             </div>
-            <p style="text-align: center; margin-top: 3rem;"><a href="/blog/" class="btn btn-primary"><span class="i18n-ja">ブログ一覧へ</span><span class="i18n-en">Back to the blog</span></a></p>
+            <div class="gb-more"><a href="/blog/" class="g-btn g-btn--k g-btn--big"><span class="i18n-ja">読みもの一覧へ</span><span class="i18n-en">Back to the blog</span></a></div>
         </div>
-    </section>
+    </main>
 
-    <footer class="footer-peek-host" style="position: relative; background: var(--color-primary); color: var(--color-background); padding: 3rem 0; text-align: center;">
-        <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
-        <div class="container">
-            <p style="color: var(--color-background); opacity: 0.8; margin-bottom: 1rem;">&copy; 2026 Ryo Tsuzukihashi. All rights reserved.</p>
-            <div style="margin-top: 1.5rem;">
-                <a href="/legal/privacy-policy.html" style="color: var(--color-background); opacity: 0.6; margin: 0 1rem; text-decoration: none;"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
-                <a href="/legal/terms-of-service.html" style="color: var(--color-background); opacity: 0.6; margin: 0 1rem; text-decoration: none;"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
-                <a href="/legal/commercial-law.html" style="color: var(--color-background); opacity: 0.6; margin: 0 1rem; text-decoration: none;"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
-                <a href="/legal/disclaimer.html" style="color: var(--color-background); opacity: 0.6; margin: 0 1rem; text-decoration: none;"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a>
+    <footer class="g-foot">
+            <img class="g-foot-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364" loading="lazy">
+            <div class="g-wrap">
+                <div><a href="/" class="g-foot-logo"><img src="/assets/images/logo/tsuzukit-wordmark-white.svg" alt="TsuzuKit" width="110" height="34"></a>
+                <p class="g-foot-tag"><span class="i18n-ja">誰も作らないものを、まじめに作る。</span><span class="i18n-en">Making what nobody else will, seriously.</span><br>Seriously Silly since 2016.</p></div>
+                <div class="g-foot-sns"><a href="https://x.com/tsuzuki817" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><img src="/assets/images/sns/x.png" alt="" width="22" height="22"></a><a href="https://www.instagram.com/tsuzuki817/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="/assets/images/sns/instagram.png" alt="" width="22" height="22"></a><a href="https://www.tiktok.com/@tsuzuki817" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><img src="/assets/images/sns/tiktok.png" alt="" width="22" height="22"></a><a href="https://www.youtube.com/@tsuzuki817" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><img src="/assets/images/sns/youtube.png" alt="" width="22" height="22"></a><a href="https://github.com/tsuzukihashi" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><img src="/assets/images/sns/github.png" alt="" width="22" height="22"></a></div>
+                <div class="g-foot-links"><a href="/contact/"><span class="i18n-ja">お問い合わせ</span><span class="i18n-en">Contact</span></a><a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a><a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a><a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a><a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a></div>
+                <p class="g-foot-copy">© 2026 Ryo Tsuzukihashi / TsuzuKit</p>
             </div>
-        </div>
-    </footer>
-
-    <script>
-        const navToggle = document.getElementById('navToggle');
-        const navMenu = document.getElementById('navMenu');
-        navToggle.addEventListener('click', function () {
-            navToggle.classList.toggle('active');
-            navMenu.classList.toggle('active');
-        });
-        // blog.css はカードを .animated が付くまで隠すので、見えたら付ける
-        const observer = new IntersectionObserver(function (entries) {
-            entries.forEach(function (entry) {
-                if (entry.isIntersecting) { entry.target.classList.add('animated'); observer.unobserve(entry.target); }
-            });
-        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
-        document.querySelectorAll('.post-card').forEach(function (card) { observer.observe(card); });
-    </script>
+        </footer>
 </body>
 </html>

@@ -19,15 +19,6 @@
     <meta property="og:url" content="https://tsuzukit.com/contact/">
     <meta property="og:type" content="website">
     
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="../assets/css/tsuzukit.css">
-    <link rel="stylesheet" href="../assets/css/contact.css">
-    
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -48,339 +39,344 @@
 
     <!-- Google AdSense（持ち主の確認だけ。このページに広告は出さない。docs/ads.md） -->
     <meta name="google-adsense-account" content="ca-pub-8240751277462688">
+
+    <!-- ガチャの見た目（assets/css/gacha.css・docs/gacha-design.md） -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700;800&family=RocknRoll+One&display=swap">
+    <link rel="stylesheet" href="/assets/css/gacha.css">
+    <link rel="stylesheet" href="/assets/css/g-help.css">
+    <script src="/assets/js/gacha.js" defer></script>
+    <!-- /ガチャの見た目 -->
 </head>
-<body>
-    <!-- Navigation -->
-    <nav class="nav" id="nav">
-        <div class="nav-container">
-            <a href="/" class="nav-logo">TsuzuKit</a>
-            <div class="nav-menu" id="navMenu">
-                <a href="/portfolio/" class="nav-link">Portfolio</a>
-                <a href="/about/" class="nav-link">About</a>
-                <a href="/blog/" class="nav-link">Blog</a>
-                <a href="/contact/" class="nav-link active">Contact</a>
+<body class="g">
+    <header class="g-head" id="nav">
+            <div class="g-wrap">
+                <a href="/" class="g-logo"><img src="/assets/images/logo/tsuzukit-wordmark.svg" alt="TsuzuKit" width="116" height="36"></a>
+                <nav class="nav-menu" id="navMenu" aria-label="メニュー"><a href="/portfolio/" class="nav-link"><span class="i18n-ja">アプリ</span><span class="i18n-en">Apps</span></a><a href="/blog/" class="nav-link"><span class="i18n-ja">読みもの</span><span class="i18n-en">Reading</span></a><a href="/about/" class="nav-link"><span class="i18n-ja">私について</span><span class="i18n-en">About</span></a><a href="/contact/" class="nav-link" aria-current="page"><span class="i18n-ja">お問い合わせ</span><span class="i18n-en">Contact</span></a></nav>
+                <button type="button" class="g-menu" id="navToggle" aria-controls="navMenu" aria-expanded="false">MENU</button>
             </div>
-            <div class="nav-toggle" id="navToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
+        </header>
 
-    <!-- Contact Hero -->
-    <section class="contact-hero">
-        <div class="glow-shapes">
-            <div class="glow-shape"></div>
-            <div class="glow-shape"></div>
-            <div class="glow-shape"></div>
-        </div>
-        
-        <div class="container">
-            <div class="contact-hero-content">
-                <span class="section-badge">Contact</span>
-                <h1 class="contact-title">
-                    <span class="i18n-ja"><span class="text-gradient">つながる</span>ことから<br>
-                    新しい<span class="text-gradient">物語</span>が始まる</span><span class="i18n-en">Every <span class="text-gradient">connection</span><br>
-                    starts a new <span class="text-gradient">story</span></span>
-                </h1>
-                <p class="contact-subtitle">
-                    <span class="i18n-ja">アプリ開発のご相談、コラボレーションのご提案、<br>
-                    その他どんなことでも、お気軽にご連絡ください</span><span class="i18n-en">Questions about app development, ideas for a collaboration,<br>
-                    or anything else at all. Feel free to get in touch.</span>
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Connect: methods + form -->
-    <section class="section section-alt">
-        <div class="container">
-            <div class="contact-connect">
-                <div class="connect-info">
-                    <span class="section-badge">Get in Touch</span>
-                    <h2 class="section-title"><span class="i18n-ja">お問い合わせ</span><span class="i18n-en">Get in touch</span></h2>
-                    <p class="connect-lead">
-                        <span class="i18n-ja">用件に合う方法を選んでください。右のフォームからもお気軽にどうぞ。</span><span class="i18n-en">Pick whichever way suits what you need. The form on the right works too.</span>
-                    </p>
-                    <div class="method-list">
-                        <a href="mailto:ryo.tsuzukihashi@tsuzukit.com" class="method method--primary">
-                            <span class="method-icon">✉️</span>
-                            <span class="method-body">
-                                <span class="method-label"><span class="i18n-ja">メール</span><span class="i18n-en">Email</span></span>
-                                <span class="method-value">ryo.tsuzukihashi@tsuzukit.com</span>
-                            </span>
-                        </a>
-                        <a href="https://twitter.com/tsuzuki817" target="_blank" rel="noopener noreferrer" class="method">
-                            <span class="method-icon">🐦</span>
-                            <span class="method-body">
-                                <span class="method-label">X (Twitter)</span>
-                                <span class="method-value">@tsuzuki817</span>
-                            </span>
-                        </a>
-                        <a href="https://github.com/tsuzukihashi" target="_blank" rel="noopener noreferrer" class="method">
-                            <span class="method-icon">🐙</span>
-                            <span class="method-body">
-                                <span class="method-label">GitHub</span>
-                                <span class="method-value">github.com/tsuzukihashi</span>
-                            </span>
-                        </a>
-                    </div>
-                    <p class="connect-note"><span class="i18n-ja">⏰ 通常2〜3営業日以内にご返信します。お急ぎの場合は直接メールがおすすめです。</span><span class="i18n-en">⏰ I usually reply within 2–3 business days. If it's urgent, emailing me directly is your best bet.</span></p>
+    <main class="g-main">
+        <div class="g-wrap">
+            <div class="h-hero">
+                <img class="h-hero-char" src="/assets/images/character-think.png" alt="" width="342" height="333">
+                <div>
+                    <h1 class="g-title"><span class="i18n-ja">お客様窓口</span><span class="i18n-en">Help desk</span></h1>
+                    <div class="g-bubble"><span class="i18n-ja">アプリのことで困ったら、下の3つに答えて送ってください。お仕事のご相談もここからどうぞ。</span><span class="i18n-en">Stuck with one of my apps? Answer the three steps below and send it. Work inquiries are welcome here too.</span></div>
                 </div>
+            </div>
 
-                <div class="connect-form">
-                    <div class="google-form-container">
-                        <iframe
+            <ol class="h-steps">
+                <!-- 1 どのアプリ？ -->
+                <li class="h-step g-panel" id="step-app">
+                    <span class="h-n" style="--c: var(--g-c1)" aria-hidden="true">1</span>
+                    <h2 class="h-step-title" id="appHeading"><span class="i18n-ja">どのアプリ？</span><span class="i18n-en">Which app?</span></h2>
+                    <div class="h-search">
+                        <span class="h-search-mark" aria-hidden="true">⌕</span>
+                        <label class="g-sr" for="appSearch"><span class="i18n-ja">アプリの名前で探す</span><span class="i18n-en">Search apps by name</span></label>
+                        <input type="search" id="appSearch" autocomplete="off" placeholder="アプリの名前で探す" data-en-placeholder="Search apps by name">
+                    </div>
+                    <div class="h-pick" id="appPick" role="group" aria-labelledby="appHeading">
+                        <p class="h-loading"><span class="i18n-ja">アプリを読み込んでいます…</span><span class="i18n-en">Loading apps…</span></p>
+                    </div>
+                    <div class="h-none g-empty" id="appNone" hidden>
+                        <img src="/assets/images/character-surprised.png" alt="" width="120" height="120" loading="lazy">
+                        <h3><span class="i18n-ja">そのアプリは見つかりませんでした</span><span class="i18n-en">No app matched that</span></h3>
+                        <p><span class="i18n-ja">名前の一部だけでも探せます。ひらがな、カタカナ、英語の名前も試してみてください。ここに無いアプリのことなら、下の［ほかのアプリとして書く］を押して、フォームにアプリの名前を書いてください。</span><span class="i18n-en">Part of the name is enough. Try the Japanese or English name too. If the app isn't listed here, press "Write it as another app" below and write its name in the form.</span></p>
+                        <div class="g-btns"><button type="button" class="g-btn" id="appClear"><span class="i18n-ja">探すのをやめる</span><span class="i18n-en">Clear search</span></button><button type="button" class="g-btn g-btn--y" id="appOtherFromEmpty"><span class="i18n-ja">ほかのアプリとして書く</span><span class="i18n-en">Write it as another app</span></button></div>
+                    </div>
+                    <div class="h-more" id="appMoreWrap" hidden>
+                        <button type="button" class="g-btn" id="appMore" aria-expanded="false"></button>
+                    </div>
+                </li>
+
+                <!-- 2 なにに困った？（フォームの「フィードバックの種類」と同じ4つ） -->
+                <li class="h-step g-panel" id="step-kind">
+                    <span class="h-n" style="--c: var(--g-c3)" aria-hidden="true">2</span>
+                    <h2 class="h-step-title" id="kindHeading"><span class="i18n-ja">なにに困った？</span><span class="i18n-en">What's it about?</span></h2>
+                    <div class="h-kinds" role="group" aria-labelledby="kindHeading">
+                        <button type="button" class="g-chip" aria-pressed="false" data-kind="バグの報告"><span class="i18n-ja">バグの報告</span><span class="i18n-en">Bug report</span></button>
+                        <button type="button" class="g-chip" aria-pressed="false" data-kind="質問"><span class="i18n-ja">質問</span><span class="i18n-en">Question</span></button>
+                        <button type="button" class="g-chip" aria-pressed="false" data-kind="機能のリクエスト"><span class="i18n-ja">機能のリクエスト</span><span class="i18n-en">Feature request</span></button>
+                        <button type="button" class="g-chip" aria-pressed="false" data-kind="コメント"><span class="i18n-ja">コメント</span><span class="i18n-en">Comment</span></button>
+                    </div>
+                </li>
+
+                <!-- 3 くわしく教えて（Google フォームをそのまま埋め込む。1と2はフォームの欄にあらかじめ入れる） -->
+                <li class="h-step g-ypanel" id="step-form">
+                    <span class="h-n" style="--c: var(--g-c6)" aria-hidden="true">3</span>
+                    <h2 class="h-step-title"><span class="i18n-ja">くわしく教えてください</span><span class="i18n-en">Tell me the details</span></h2>
+                    <p class="h-picked" id="picked" aria-live="polite"></p>
+                    <p class="h-note"><span class="i18n-ja">フォームは2ページです。はじめにメールアドレスを入れて［次へ］を押し、次のページでお名前、返信先のメールアドレス、起きたことを書いて［送信］を押してください。いつ、どの画面で、何をしたらどうなったかが分かると助かります。</span><span class="i18n-en">The form has two pages. Enter your email address and press 次へ (Next). On the next page, fill in your name, the email address I should reply to, and what happened, then press 送信 (Send). It helps a lot to know when it happened, on which screen, and what you did. The form is in Japanese, but feel free to write in English.</span></p>
+                    <div class="h-form">
+                        <iframe id="contactForm"
                             src="https://docs.google.com/forms/d/e/1FAIpQLScEd6on0V2qh6fx_o1cZVNUhalks7r0pppXNob8XRYQanZvfA/viewform?embedded=true"
-                            width="100%"
-                            height="700"
-                            frameborder="0"
-                            marginheight="0"
-                            marginwidth="0"
-                            title="お問い合わせフォーム" data-en-title="Contact form"
-                            style="border: none;">
-                            読み込んでいます…
-                        </iframe>
+                            width="100%" height="1350" frameborder="0" marginheight="0" marginwidth="0"
+                            title="お問い合わせフォーム" data-en-title="Contact form">読み込んでいます…</iframe>
                     </div>
+                    <p class="h-reply"><span class="i18n-ja">ふだんは2〜3営業日以内にご返信します。土日祝日を挟むと、少しお時間をいただくことがあります。お急ぎのときは、その旨を書くか、直接メールをください。</span><span class="i18n-en">I usually reply within 2–3 business days. Over weekends and Japanese public holidays it may take a little longer. If it's urgent, say so in the form, or email me directly.</span></p>
+                </li>
+            </ol>
+
+            <div class="g-sh"><h2><span class="i18n-ja">お仕事のご相談</span><span class="i18n-en">Work inquiries</span></h2><small><span class="i18n-ja">よくある質問</span><span class="i18n-en">FAQ</span></small></div>
+
+            <div class="h-work g-ypanel">
+                <img class="h-work-char" src="/assets/images/character-run.png" alt="" width="279" height="300" loading="lazy">
+                <div class="h-work-text">
+                    <h3><span class="i18n-ja">一緒に、素晴らしいものを創りましょう</span><span class="i18n-en">Let's make something great together</span></h3>
+                    <p><span class="i18n-ja">あなたのアイデアを、動くアプリにします。誰も作らないものを、一緒に作ります。</span><span class="i18n-en">I'll turn your idea into an app that actually works. Let's build what nobody else will, together.</span></p>
+                    <ul class="h-work-list">
+                        <li><span class="g-capdot" style="--c: var(--g-c1)"></span><b><span class="i18n-ja">アイデア相談</span><span class="i18n-en">Idea consultation</span></b><small><span class="i18n-ja">構想段階からご相談ください</span><span class="i18n-en">Talk to me from the very first concept</span></small></li>
+                        <li><span class="g-capdot" style="--c: var(--g-c2)"></span><b><span class="i18n-ja">UI/UXデザイン</span><span class="i18n-en">UI/UX design</span></b><small><span class="i18n-ja">使いやすく美しいデザイン</span><span class="i18n-en">Design that is easy to use and beautiful</span></small></li>
+                        <li><span class="g-capdot" style="--c: var(--g-c5)"></span><b><span class="i18n-ja">開発・実装</span><span class="i18n-en">Development</span></b><small><span class="i18n-ja">高品質なコードで実現</span><span class="i18n-en">Built with high-quality code</span></small></li>
+                        <li><span class="g-capdot" style="--c: var(--g-c4)"></span><b><span class="i18n-ja">リリース支援</span><span class="i18n-en">Release support</span></b><small><span class="i18n-ja">App Storeへの公開まで</span><span class="i18n-en">All the way to the App Store</span></small></li>
+                    </ul>
+                    <div class="g-btns">
+                        <a class="g-btn g-btn--k" href="mailto:ryo.tsuzukihashi@tsuzukit.com"><span class="i18n-ja">メールで相談する</span><span class="i18n-en">Email me about work</span></a>
+                        <a class="g-btn" href="/career/"><span class="i18n-ja">経歴を見る</span><span class="i18n-en">See my career</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="h-faq">
+                <div class="h-qa g-panel">
+                    <h3><span class="i18n-ja">アプリ開発の依頼は受けていますか？</span><span class="i18n-en">Do you take on app development work?</span></h3>
+                    <p><span class="i18n-ja">はい、受け付けています。個人開発で培った経験を活かし、アイデアの段階からリリースまでサポートいたします。まずはお気軽にご相談ください。</span><span class="i18n-en">Yes, I do. Drawing on what I've learned from building my own apps, I can help you from the idea stage all the way to release. Feel free to reach out and tell me about it.</span></p>
+                </div>
+                <div class="h-qa g-panel">
+                    <h3><span class="i18n-ja">既存アプリの改修や機能追加は可能ですか？</span><span class="i18n-en">Can you modify an existing app or add features to it?</span></h3>
+                    <p><span class="i18n-ja">技術スタックや規模によりますが、基本的に対応可能です。SwiftUIやUIKitを使用したiOSアプリであれば、効率的に改修・機能追加を行えます。</span><span class="i18n-en">It depends on the tech stack and the size of the app, but generally yes. If it's an iOS app built with SwiftUI or UIKit, I can make changes and add features efficiently.</span></p>
+                </div>
+                <div class="h-qa g-panel">
+                    <h3><span class="i18n-ja">コンサルティングやアドバイザリーは可能ですか？</span><span class="i18n-en">Do you do consulting or advisory work?</span></h3>
+                    <p><span class="i18n-ja">アプリの企画、UI/UXデザイン、技術選定、App Storeでの見せ方まで相談に乗っています。オンラインでの打ち合わせでも構いません。</span><span class="i18n-en">I give advice on app planning, UI/UX design, choosing technologies, and how to present an app on the App Store. Online meetings are fine too.</span></p>
+                </div>
+                <div class="h-qa g-panel">
+                    <h3><span class="i18n-ja">講演や執筆の依頼は受けていますか？</span><span class="i18n-en">Do you accept speaking or writing requests?</span></h3>
+                    <p><span class="i18n-ja">はい、受け付けています。個人開発、iOS開発、個人開発の続け方や、誰も作らないものの作り方で講演・執筆が可能です。過去にiOSDCでの登壇経験もあります。</span><span class="i18n-en">Yes, I do. I can speak or write about indie development, iOS development, how to keep indie development going, and how to make the things nobody else makes. I've spoken at iOSDC before.</span></p>
+                </div>
+            </div>
+
+            <div class="g-sh"><h2><span class="i18n-ja">ほかの窓口</span><span class="i18n-en">Other ways to reach me</span></h2></div>
+
+            <div class="h-routes">
+                <a class="h-route g-panel" href="mailto:ryo.tsuzukihashi@tsuzukit.com">
+                    <span class="h-route-icon" aria-hidden="true">✉</span>
+                    <span><b><span class="i18n-ja">メール</span><span class="i18n-en">Email</span></b><small>ryo.tsuzukihashi@tsuzukit.com</small></span>
+                </a>
+                <a class="h-route g-panel" href="https://x.com/tsuzuki817" target="_blank" rel="noopener noreferrer">
+                    <span class="h-route-icon" aria-hidden="true"><img src="/assets/images/sns/x.png" alt="" width="22" height="22"></span>
+                    <span><b>X (Twitter)</b><small>@tsuzuki817</small></span>
+                </a>
+                <a class="h-route g-panel" href="https://github.com/tsuzukihashi" target="_blank" rel="noopener noreferrer">
+                    <span class="h-route-icon" aria-hidden="true"><img src="/assets/images/sns/github.png" alt="" width="22" height="22"></span>
+                    <span><b>GitHub</b><small>github.com/tsuzukihashi</small></span>
+                </a>
+                <div class="h-route g-panel">
+                    <span class="h-route-icon" aria-hidden="true">§</span>
+                    <span><b><span class="i18n-ja">規約と方針</span><span class="i18n-en">Policies</span></b>
+                    <small class="h-route-links"><a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a><a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a><a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Commercial Transactions Act</span></a></small></span>
                 </div>
             </div>
         </div>
-    </section>
+    </main>
 
-    <!-- FAQ Section -->
-    <section class="section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">FAQ</span>
-                <h2 class="section-title"><span class="i18n-ja">よくあるご質問</span><span class="i18n-en">Frequently asked questions</span></h2>
+    <footer class="g-foot">
+            <img class="g-foot-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364" loading="lazy">
+            <div class="g-wrap">
+                <div><a href="/" class="g-foot-logo"><img src="/assets/images/logo/tsuzukit-wordmark-white.svg" alt="TsuzuKit" width="110" height="34"></a>
+                <p class="g-foot-tag"><span class="i18n-ja">誰も作らないものを、まじめに作る。</span><span class="i18n-en">Making what nobody else will, seriously.</span><br>Seriously Silly since 2016.</p></div>
+                <div class="g-foot-sns"><a href="https://x.com/tsuzuki817" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><img src="/assets/images/sns/x.png" alt="" width="22" height="22"></a><a href="https://www.instagram.com/tsuzuki817/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="/assets/images/sns/instagram.png" alt="" width="22" height="22"></a><a href="https://www.tiktok.com/@tsuzuki817" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><img src="/assets/images/sns/tiktok.png" alt="" width="22" height="22"></a><a href="https://www.youtube.com/@tsuzuki817" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><img src="/assets/images/sns/youtube.png" alt="" width="22" height="22"></a><a href="https://github.com/tsuzukihashi" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><img src="/assets/images/sns/github.png" alt="" width="22" height="22"></a></div>
+                <div class="g-foot-links"><a href="/contact/"><span class="i18n-ja">お問い合わせ</span><span class="i18n-en">Contact</span></a><a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a><a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a><a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a><a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a></div>
+                <p class="g-foot-copy">© 2026 Ryo Tsuzukihashi / TsuzuKit</p>
             </div>
-            
-            <div class="faq-list">
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span><span class="i18n-ja">アプリ開発の依頼は受けていますか？</span><span class="i18n-en">Do you take on app development work?</span></span>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>
-                            <span class="i18n-ja">はい、受け付けています。個人開発で培った経験を活かし、
-                            アイデアの段階からリリースまでサポートいたします。
-                            まずはお気軽にご相談ください。</span><span class="i18n-en">Yes, I do. Drawing on what I've learned from building my own apps,
-                            I can help you from the idea stage all the way to release.
-                            Feel free to reach out and tell me about it.</span>
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span><span class="i18n-ja">既存アプリの改修や機能追加は可能ですか？</span><span class="i18n-en">Can you modify an existing app or add features to it?</span></span>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>
-                            <span class="i18n-ja">技術スタックや規模によりますが、基本的に対応可能です。
-                            SwiftUIやUIKitを使用したiOSアプリであれば、
-                            効率的に改修・機能追加を行えます。</span><span class="i18n-en">It depends on the tech stack and the size of the app, but generally yes.
-                            If it's an iOS app built with SwiftUI or UIKit,
-                            I can make changes and add features efficiently.</span>
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span><span class="i18n-ja">コンサルティングやアドバイザリーは可能ですか？</span><span class="i18n-en">Do you do consulting or advisory work?</span></span>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>
-                            <span class="i18n-ja">アプリの企画、UI/UXデザイン、技術選定、App Storeでの見せ方まで相談に乗っています。
-                            オンラインでの打ち合わせでも構いません。</span><span class="i18n-en">I give advice on app planning, UI/UX design, choosing technologies, and how to present an app on the App Store.
-                            Online meetings are fine too.</span>
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span><span class="i18n-ja">講演や執筆の依頼は受けていますか？</span><span class="i18n-en">Do you accept speaking or writing requests?</span></span>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>
-                            <span class="i18n-ja">はい、受け付けています。個人開発、iOS開発、
-                            個人開発の続け方や、誰も作らないものの作り方で講演・執筆が可能です。
-                            過去にiOSDCでの登壇経験もあります。</span><span class="i18n-en">Yes, I do. I can speak or write about indie development, iOS development,
-                            how to keep indie development going, and how to make the things nobody else makes.
-                            I've spoken at iOSDC before.</span>
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span><span class="i18n-ja">返信までどのくらいかかりますか？</span><span class="i18n-en">How long does it take to get a reply?</span></span>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>
-                            <span class="i18n-ja">通常2-3営業日以内にご返信いたします。
-                            土日祝日を挟む場合は、少しお時間をいただくことがあります。
-                            お急ぎの場合は、その旨をお知らせください。</span><span class="i18n-en">I usually reply within 2–3 business days.
-                            Over weekends and Japanese public holidays it may take a little longer.
-                            If it's urgent, just let me know.</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </footer>
 
-    <!-- Work With Me -->
-    <section class="section section-alt">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Work With Me</span>
-                <h2 class="section-title"><span class="i18n-ja">一緒に、素晴らしいものを創りましょう</span><span class="i18n-en">Let's make something great together</span></h2>
-                <p class="section-description">
-                    <span class="i18n-ja">あなたのアイデアを、動くアプリにします。<br>
-                    誰も作らないものを、一緒に作ります。</span><span class="i18n-en">I'll turn your idea into an app that actually works.<br>
-                    Let's build what nobody else will, together.</span>
-                </p>
-            </div>
-            <div class="work-together-items">
-                <img class="tk-char--work" src="/assets/images/character-run.png" alt="" width="279" height="300">
-                <div class="work-item">
-                    <div class="work-item-icon">💡</div>
-                    <h3><span class="i18n-ja">アイデア相談</span><span class="i18n-en">Idea consultation</span></h3>
-                    <p><span class="i18n-ja">構想段階からご相談ください</span><span class="i18n-en">Talk to me from the very first concept</span></p>
-                </div>
-                <div class="work-item">
-                    <div class="work-item-icon">🎨</div>
-                    <h3><span class="i18n-ja">UI/UXデザイン</span><span class="i18n-en">UI/UX design</span></h3>
-                    <p><span class="i18n-ja">使いやすく美しいデザイン</span><span class="i18n-en">Design that is easy to use and beautiful</span></p>
-                </div>
-                <div class="work-item">
-                    <div class="work-item-icon"><i class="mark" aria-hidden="true"></i></div>
-                    <h3><span class="i18n-ja">開発・実装</span><span class="i18n-en">Development</span></h3>
-                    <p><span class="i18n-ja">高品質なコードで実現</span><span class="i18n-en">Built with high-quality code</span></p>
-                </div>
-                <div class="work-item">
-                    <div class="work-item-icon">🚀</div>
-                    <h3><span class="i18n-ja">リリース支援</span><span class="i18n-en">Release support</span></h3>
-                    <p><span class="i18n-ja">App Storeへの公開まで</span><span class="i18n-en">All the way to the App Store</span></p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer-peek-host" style="position: relative; background: var(--color-primary); color: var(--color-background); padding: var(--space-2xl) 0; text-align: center; border-top: 1px solid var(--color-primary);">
-        <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
-        <div class="container">
-            <!-- SNS Links -->
-            <div class="footer-sns">
-                <a href="https://x.com/tsuzuki817" target="_blank" rel="noopener noreferrer" class="sns-link" aria-label="X (Twitter)">
-                    <img src="/assets/images/sns/x.png" alt="X" class="sns-icon">
-                </a>
-                <a href="https://www.instagram.com/tsuzuki817/" target="_blank" rel="noopener noreferrer" class="sns-link" aria-label="Instagram">
-                    <img src="/assets/images/sns/instagram.png" alt="Instagram" class="sns-icon">
-                </a>
-                <a href="https://www.tiktok.com/@tsuzuki817" target="_blank" rel="noopener noreferrer" class="sns-link" aria-label="TikTok">
-                    <img src="/assets/images/sns/tiktok.png" alt="TikTok" class="sns-icon">
-                </a>
-                <a href="https://www.youtube.com/@tsuzuki817" target="_blank" rel="noopener noreferrer" class="sns-link" aria-label="YouTube">
-                    <img src="/assets/images/sns/youtube.png" alt="YouTube" class="sns-icon">
-                </a>
-                <a href="https://github.com/tsuzukihashi" target="_blank" rel="noopener noreferrer" class="sns-link" aria-label="GitHub">
-                    <img src="/assets/images/sns/github.png" alt="GitHub" class="sns-icon">
-                </a>
-            </div>
-
-            <p style="color: var(--color-background); opacity: 0.7; margin-bottom: var(--space-sm); margin-top: var(--space-xl); font-weight: 300; font-size: 0.875rem; letter-spacing: 0.02em;">
-                © 2026 Ryo Tsuzukihashi. All rights reserved.
-            </p>
-            <p style="color: var(--color-background); opacity: 0.5; font-size: 0.75rem; font-weight: 300; letter-spacing: 0.05em; text-transform: uppercase;">
-                Seriously Silly since 2016.
-            </p>
-            <div style="margin-top: var(--space-xl);">
-                <a href="/legal/privacy-policy.html" style="color: var(--color-background); opacity: 0.6; margin: 0 var(--space-md); text-decoration: none; font-size: 0.75rem; font-weight: 300; letter-spacing: 0.05em; text-transform: uppercase; transition: var(--transition-normal);"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
-                <a href="/legal/terms-of-service.html" style="color: var(--color-background); opacity: 0.6; margin: 0 var(--space-md); text-decoration: none; font-size: 0.75rem; font-weight: 300; letter-spacing: 0.05em; text-transform: uppercase; transition: var(--transition-normal);"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
-                <a href="/legal/commercial-law.html" style="color: var(--color-background); opacity: 0.6; margin: 0 var(--space-md); text-decoration: none; font-size: 0.75rem; font-weight: 300; letter-spacing: 0.05em; text-transform: uppercase; transition: var(--transition-normal);"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
-                <a href="/legal/disclaimer.html" style="color: var(--color-background); opacity: 0.6; margin: 0 var(--space-md); text-decoration: none; font-size: 0.75rem; font-weight: 300; letter-spacing: 0.05em; text-transform: uppercase; transition: var(--transition-normal);"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a>
-            </div>
-        </div>
-    </footer>
-
-    <!-- JavaScript -->
     <script>
-        // Navigation scroll effect
-        window.addEventListener('scroll', function() {
-            const nav = document.getElementById('nav');
-            if (window.scrollY > 50) {
-                nav.classList.add('scrolled');
-            } else {
-                nav.classList.remove('scrolled');
+    /*
+     * お客様窓口のアプリ選び・種類選び。
+     * 送信は Google フォーム（iframe）のまま。ここで選んだものは、フォームの「事前入力」の URL
+     * （entry.<番号>=値）で、フォームの欄にあらかじめ入れるだけ。
+     *   entry.2015836600 … どのアプリに対するお問い合わせか（記述）
+     *   entry.1591633300 … フィードバックの種類（コメント / 質問 / バグの報告 / 機能のリクエスト）
+     */
+    (function () {
+        var FORM = 'https://docs.google.com/forms/d/e/1FAIpQLScEd6on0V2qh6fx_o1cZVNUhalks7r0pppXNob8XRYQanZvfA/viewform?embedded=true';
+        var E_APP = 'entry.2015836600';
+        var E_KIND = 'entry.1591633300';
+        var narrowList = window.matchMedia('(max-width: 720px)');
+        function first() { return narrowList.matches ? 7 : 12; }
+        var en = window.tsuzukitLang === 'en' || document.documentElement.getAttribute('data-lang') === 'en';
+        var KIND_EN = { 'バグの報告': 'Bug report', '質問': 'Question', '機能のリクエスト': 'Feature request', 'コメント': 'Comment' };
+
+        var pick = document.getElementById('appPick');
+        var search = document.getElementById('appSearch');
+        var none = document.getElementById('appNone');
+        var moreWrap = document.getElementById('appMoreWrap');
+        var more = document.getElementById('appMore');
+        var iframe = document.getElementById('contactForm');
+        var picked = document.getElementById('picked');
+        var kinds = document.querySelectorAll('[data-kind]');
+
+        var apps = [];
+        var showAll = false;
+        var state = { app: null, other: false, kind: null };
+
+        function t(ja, e) { return en ? e : ja; }
+        function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+        function norm(s) { return String(s || '').normalize('NFKC').toLowerCase().replace(/\s+/g, ''); }
+        function shortJa(name) {
+            [' - ', '　', ' -', '｜', '|', ' ~', '〜', ' :', '：', ':'].forEach(function (sep) {
+                if (name.indexOf(sep) >= 0) name = name.split(sep)[0];
+            });
+            name = name.trim();
+            if (name.indexOf(' ') >= 0) { var head = name.split(' ')[0]; if (head.length >= 3) name = head; }
+            return name;
+        }
+        function shortEn(name) {
+            [' - ', ' – ', ': ', ' | '].forEach(function (sep) {
+                if (name.indexOf(sep) >= 0) name = name.split(sep)[0];
+            });
+            return name.trim();
+        }
+        function icon(url) { return String(url || '').replace(/\/\d+x\d+bb\.(jpg|png|webp)$/, '/128x128bb.$1'); }
+
+        // フォームの URL（事前入力）。変わったときだけ読み直す
+        function formUrl() {
+            var u = FORM;
+            if (state.app) u += '&usp=pp_url&' + E_APP + '=' + encodeURIComponent(state.app.formName);
+            if (state.kind) u += (state.app ? '' : '&usp=pp_url') + '&' + E_KIND + '=' + encodeURIComponent(state.kind);
+            return u;
+        }
+        // iframe の中の高さは外から測れないので、1ページ目（メールアドレスだけ）と2ページ目以降で切り替える。
+        // Google フォームの［次へ］［戻る］［送信］はどれも iframe の中の読み込み直しになるので、load の回数で見分ける
+        var loads = 0;
+        var narrow = window.matchMedia('(max-width: 720px)');
+        function fit() {
+            var first = loads <= 1;
+            iframe.style.height = (first ? (narrow.matches ? 680 : 540) : (narrow.matches ? 1750 : 1350)) + 'px';
+        }
+        iframe.addEventListener('load', function () {
+            loads++;
+            fit();
+            if (loads > 1 && iframe.getBoundingClientRect().top < 0) iframe.scrollIntoView({ block: 'start' });
+        });
+        narrow.addEventListener && narrow.addEventListener('change', fit);
+        fit();
+
+        function sync() {
+            var u = formUrl();
+            if (iframe.getAttribute('src') !== u) { loads = 0; iframe.setAttribute('src', u); fit(); }
+            var parts = [];
+            if (state.app) parts.push(t('アプリ「' + state.app.label + '」', 'app "' + state.app.label + '"'));
+            if (state.kind) parts.push(t('種類「' + state.kind + '」', 'type "' + KIND_EN[state.kind] + '"'));
+            var msg = parts.length ? t('フォームの次のページの欄に入れておきました：', "I've filled these in on the form's second page: ") + parts.join(t('、', ', ')) + t('。', '.') : '';
+            if (state.other) msg += (msg ? ' ' : '') + t('アプリの名前は、フォームの次のページの最初の欄に書いてください。', "Write the app's name in the first field on the form's second page.");
+            if (!msg) {
+                picked.textContent = t('1と2はまだ選んでいません。フォームの中でも選べます。', "You haven't picked in steps 1 and 2 yet. You can also fill them in inside the form.");
+                picked.classList.remove('is-set');
+                return;
             }
-        });
+            picked.classList.add('is-set');
+            picked.textContent = msg;
+        }
 
-        // Mobile menu toggle
-        const navToggle = document.getElementById('navToggle');
-        const navMenu = document.getElementById('navMenu');
-        
-        navToggle.addEventListener('click', function() {
-            navToggle.classList.toggle('active');
-            navMenu.classList.toggle('active');
-        });
+        function button(a, i) {
+            var on = state.app && state.app.id === a.id;
+            return '<button type="button" class="h-app" aria-pressed="' + on + '" data-id="' + a.id + '" title="' + esc(a.label) + '">' +
+                '<span class="g-cap g-cap--' + (i % 6 + 1) + '" style="--rot:' + a.rot + 'deg"><img src="' + esc(a.icon) + '" alt="" width="64" height="64" loading="lazy"></span>' +
+                '<span class="h-app-name">' + esc(a.short) + '</span></button>';
+        }
+        function otherButton() {
+            return '<button type="button" class="h-app h-app--other" aria-pressed="' + state.other + '" data-id="other">' +
+                '<span class="g-cap g-cap--3"><span class="h-app-q" aria-hidden="true">?</span></span>' +
+                '<span class="h-app-name">' + t('ほかのアプリ', 'Another app') + '</span></button>';
+        }
 
-        // FAQ Accordion
-        const faqItems = document.querySelectorAll('.faq-item');
-        
-        faqItems.forEach(item => {
-            const question = item.querySelector('.faq-question');
-            const answer = item.querySelector('.faq-answer');
-            const icon = item.querySelector('.faq-icon');
-            
-            question.addEventListener('click', () => {
-                const isOpen = item.classList.contains('active');
-                
-                // Close all items
-                faqItems.forEach(otherItem => {
-                    otherItem.classList.remove('active');
-                    otherItem.querySelector('.faq-answer').style.maxHeight = null;
-                    otherItem.querySelector('.faq-icon').textContent = '+';
-                });
-                
-                // Open clicked item if it was closed
-                if (!isOpen) {
-                    item.classList.add('active');
-                    answer.style.maxHeight = answer.scrollHeight + 'px';
-                    icon.textContent = '−';
-                }
+        function render() {
+            var q = norm(search.value);
+            var list;
+            if (q) {
+                list = apps.filter(function (a) { return a.key.indexOf(q) >= 0; });
+            } else if (showAll) {
+                list = apps;
+            } else {
+                list = apps.slice(0, first());
+                if (state.app && list.indexOf(state.app) < 0) list = list.concat([state.app]);
+            }
+            none.hidden = !(q && list.length === 0);
+            pick.hidden = q && list.length === 0;
+            pick.innerHTML = list.map(function (a) { return button(a, a.idx); }).join('') + otherButton();
+            moreWrap.hidden = !!q || apps.length <= first();
+            more.setAttribute('aria-expanded', showAll ? 'true' : 'false');
+            more.textContent = showAll ? t('少なく表示する', 'Show fewer') : t('全部見る（' + apps.length + '本）', 'Show all ' + apps.length + ' apps');
+        }
+
+        function choose(id) {
+            if (id === 'other') {
+                state.other = !state.other;
+                state.app = null;
+            } else {
+                var a = apps.filter(function (x) { return String(x.id) === id; })[0];
+                state.app = (state.app && state.app === a) ? null : a;
+                state.other = false;
+            }
+            render();
+            sync();
+            var btn = pick.querySelector('[data-id="' + id + '"]');
+            if (btn) btn.focus();
+        }
+
+        pick.addEventListener('click', function (e) {
+            var b = e.target.closest('.h-app');
+            if (b) choose(b.getAttribute('data-id'));
+        });
+        search.addEventListener('input', render);
+        more.addEventListener('click', function () { showAll = !showAll; render(); });
+        document.getElementById('appClear').addEventListener('click', function () { search.value = ''; render(); search.focus(); });
+        document.getElementById('appOtherFromEmpty').addEventListener('click', function () {
+            search.value = '';
+            state.app = null; state.other = true;
+            render(); sync();
+            document.getElementById('step-form').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+        Array.prototype.forEach.call(kinds, function (b) {
+            b.addEventListener('click', function () {
+                var k = b.getAttribute('data-kind');
+                state.kind = state.kind === k ? null : k;
+                Array.prototype.forEach.call(kinds, function (x) { x.setAttribute('aria-pressed', x.getAttribute('data-kind') === state.kind ? 'true' : 'false'); });
+                sync();
             });
         });
 
-        // Animate elements on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver(function(entries) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('animated');
-                    observer.unobserve(entry.target);
-                }
+        function load(url) { return fetch(url).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }); }
+        Promise.all([load('/assets/data/apps.json'), load('/assets/data/apps_en.json').catch(function () { return { apps: {} }; })])
+            .then(function (res) {
+                var enMap = (res[1] && res[1].apps) || {};
+                apps = res[0].apps.slice().sort(function (a, b) { return (b.download_count || 0) - (a.download_count || 0); })
+                    .map(function (a, i) {
+                        var enName = enMap[String(a.id)] && enMap[String(a.id)].name;
+                        var name = (en && enName) ? enName : a.name;
+                        return {
+                            id: a.id, idx: i,
+                            label: name,
+                            short: (en && enName) ? shortEn(enName) : shortJa(a.name),
+                            formName: name,
+                            icon: icon(a.icon_url),
+                            rot: (a.id % 41) - 20,
+                            key: norm(a.name + ' ' + (enName || ''))
+                        };
+                    });
+                search.setAttribute('placeholder', t('アプリの名前で探す（' + apps.length + '本）', 'Search ' + apps.length + ' apps by name'));
+                render();
+            })
+            .catch(function () {
+                pick.innerHTML = '<p class="h-loading">' + t('アプリの一覧を読み込めませんでした。フォームの中にアプリの名前を書いてください。', "Couldn't load the app list. Please write the app's name in the form.") + '</p>';
             });
-        }, observerOptions);
-
-        // Observe elements
-        document.querySelectorAll('.contact-card, .work-item, .faq-item').forEach(el => {
-            observer.observe(el);
-        });
+        sync();
+    })();
     </script>
 </body>
 </html>

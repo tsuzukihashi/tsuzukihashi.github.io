@@ -10,15 +10,6 @@
     <meta name="description" content="續橋涼が提供するアプリケーション及びサービスの特定商取引法に基づく表記">
     <meta name="robots" content="noindex, follow">
     
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="../assets/css/tsuzukit.css">
-    <link rel="stylesheet" href="../assets/css/legal.css">
-    
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -39,40 +30,41 @@
 
     <!-- Google AdSense（持ち主の確認だけ。このページに広告は出さない。docs/ads.md） -->
     <meta name="google-adsense-account" content="ca-pub-8240751277462688">
+
+    <!-- ガチャの見た目（assets/css/gacha.css・docs/gacha-design.md） -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700;800&family=RocknRoll+One&display=swap">
+    <link rel="stylesheet" href="/assets/css/gacha.css">
+    <link rel="stylesheet" href="/assets/css/g-legal.css">
+    <script src="/assets/js/gacha.js" defer></script>
+    <!-- /ガチャの見た目 -->
 </head>
-<body>
-    <!-- Navigation -->
-    <nav class="nav" id="nav">
-        <div class="nav-container">
-            <a href="/" class="nav-logo">TsuzuKit</a>
-            <div class="nav-menu" id="navMenu">
-                <a href="/portfolio/" class="nav-link">Portfolio</a>
-                <a href="/about/" class="nav-link">About</a>
-                <a href="/blog/" class="nav-link">Blog</a>
-                <a href="/contact/" class="nav-link">Contact</a>
+<body class="g">
+    <header class="g-head" id="nav">
+            <div class="g-wrap">
+                <a href="/" class="g-logo"><img src="/assets/images/logo/tsuzukit-wordmark.svg" alt="TsuzuKit" width="116" height="36"></a>
+                <nav class="nav-menu" id="navMenu" aria-label="メニュー"><a href="/portfolio/" class="nav-link"><span class="i18n-ja">アプリ</span><span class="i18n-en">Apps</span></a><a href="/blog/" class="nav-link"><span class="i18n-ja">読みもの</span><span class="i18n-en">Reading</span></a><a href="/about/" class="nav-link"><span class="i18n-ja">私について</span><span class="i18n-en">About</span></a><a href="/contact/" class="nav-link"><span class="i18n-ja">お問い合わせ</span><span class="i18n-en">Contact</span></a></nav>
+                <button type="button" class="g-menu" id="navToggle" aria-controls="navMenu" aria-expanded="false">MENU</button>
             </div>
-            <div class="nav-toggle" id="navToggle">
-                <span></span>
-                <span></span>
-                <span></span>
+        </header>
+
+    <main class="g-main g-wrap g-legal">
+        <div class="g-lg">
+            <div class="g-lhead">
+                <p class="g-lsub i18n-ja">Specified Commercial Transaction Act</p>
+                <h1 class="g-title g-title--m"><span class="i18n-ja">特定商取引法に基づく表記</span><span class="i18n-en">Notation based on the Specified Commercial Transactions Act</span></h1>
+                <p class="g-lupd"><span class="i18n-ja">最終更新日: 2025年1月14日</span><span class="i18n-en">Last updated: January 14, 2025</span></p>
             </div>
-        </div>
-    </nav>
-
-    <!-- Legal Content -->
-    <section class="legal-hero">
-        <div class="container">
-            <h1 class="legal-title"><span class="i18n-ja">特定商取引法に基づく表記</span><span class="i18n-en">Notation based on the Specified Commercial Transactions Act</span></h1>
-            <p class="legal-subtitle i18n-ja">Specified Commercial Transaction Act</p>
-            <p class="legal-update"><span class="i18n-ja">最終更新日: 2025年1月14日</span><span class="i18n-en">Last updated: January 14, 2025</span></p>
-        </div>
-    </section>
-
-    <section class="legal-content">
-        <div class="container">
-            <div class="legal-wrapper i18n-ja">
+            <aside class="g-lnote g-ypanel">
+                <p class="g-lnote-warn"><i aria-hidden="true">!</i><span class="i18n-ja">注意書き</span><span class="i18n-en">Read me</span></p>
+                <p class="g-lnote-sub"><span class="i18n-ja">ガチャをまわす前に、読んでおいてほしいこと</span><span class="i18n-en">Things to know before you turn the handle</span></p>
+                <nav class="g-lnote-nav" aria-label="目次" data-en-aria-label="Contents"><ol class="g-ltoc i18n-ja"><li><a href="#ja-s1"><b class="is-blank">・</b><span>取引の表記</span></a></li><li><a href="#ja-s2"><b>01</b><span>注意事項</span></a></li><li><a href="#ja-s3"><b>02</b><span>お問い合わせ</span></a></li></ol><ol class="g-ltoc i18n-en"><li><a href="#en-s1"><b class="is-blank">・</b><span>Transaction details</span></a></li><li><a href="#en-s2"><b>01</b><span>Notes</span></a></li><li><a href="#en-s3"><b>02</b><span>Contact</span></a></li></ol></nav>
+            </aside>
+            <div class="g-lbody">
+                <div class="g-ldoc i18n-ja">
                 <!-- 販売事業者 -->
-                <article class="legal-section">
+                <section class="g-lsec g-panel" id="ja-s1">
                     <table class="legal-table">
                         <tr>
                             <th>販売事業者</th>
@@ -148,41 +140,42 @@
                             </td>
                         </tr>
                     </table>
-                </article>
+                </section>
 
                 <!-- 注意事項 -->
-                <article class="legal-section">
-                    <h2>注意事項</h2>
+                <section class="g-lsec g-panel" id="ja-s2">
+                    <h2><span class="g-lnum" style="--c:var(--g-c1)" aria-hidden="true"><i>01</i></span><span class="g-lh">注意事項</span></h2>
                     <ul>
                         <li>本表記は、App Store経由で提供されるアプリケーション内課金に関するものです。</li>
                         <li>決済はすべてApple社のシステムを通じて行われます。</li>
                         <li>価格はApp Store上で表示される価格が正式な販売価格となります。</li>
                         <li>為替レートの変動等により、価格が変更される場合があります。</li>
                     </ul>
-                </article>
+                </section>
 
                 <!-- お問い合わせ -->
-                <article class="legal-section">
-                    <h2>お問い合わせ</h2>
+                <section class="g-lsec g-panel" id="ja-s3">
+                    <h2><span class="g-lnum" style="--c:var(--g-c2)" aria-hidden="true"><i>02</i></span><span class="g-lh">お問い合わせ</span></h2>
                     <p>商品・サービスに関するお問い合わせは、下記までお願いいたします。</p>
                     <div class="contact-info">
                         <p>メールアドレス: ryo.tsuzukihashi@tsuzukit.com</p>
                         <p>※返信には数日お時間をいただく場合がございます</p>
                     </div>
-                </article>
+                </section>
 
                 <!-- Navigation -->
                 <div class="legal-nav">
                     <a href="/legal/privacy-policy.html" class="legal-nav-link">← プライバシーポリシー</a>
                     <a href="/legal/terms-of-service.html" class="legal-nav-link">利用規約 →</a>
                 </div>
-            </div>
-            <div class="legal-wrapper i18n-en">
+            
+                </div>
+                <div class="g-ldoc i18n-en">
                 <div class="notice-box">
                     <p>This is an English translation for convenience. If there is any discrepancy, the Japanese version prevails.</p>
                 </div>
 
-                <article class="legal-section">
+                <section class="g-lsec g-panel" id="en-s1">
                     <table class="legal-table">
                         <tr>
                             <th>Seller</th>
@@ -264,71 +257,46 @@
                             </td>
                         </tr>
                     </table>
-                </article>
+                </section>
 
-                <article class="legal-section">
-                    <h2>Notes</h2>
+                <section class="g-lsec g-panel" id="en-s2">
+                    <h2><span class="g-lnum" style="--c:var(--g-c1)" aria-hidden="true"><i>01</i></span><span class="g-lh">Notes</span></h2>
                     <ul>
                         <li>This notation concerns in-app purchases in applications provided via the App Store.</li>
                         <li>All payments are made through Apple&#39;s systems.</li>
                         <li>The price displayed on the App Store is the official selling price.</li>
                         <li>Prices may change due to exchange rate fluctuations, etc.</li>
                     </ul>
-                </article>
+                </section>
 
-                <article class="legal-section">
-                    <h2>Contact</h2>
+                <section class="g-lsec g-panel" id="en-s3">
+                    <h2><span class="g-lnum" style="--c:var(--g-c2)" aria-hidden="true"><i>02</i></span><span class="g-lh">Contact</span></h2>
                     <p>For inquiries regarding products and services, please contact us at the following.</p>
                     <div class="contact-info">
                         <p>Email: ryo.tsuzukihashi@tsuzukit.com</p>
                         <p>* It may take a few days for us to reply</p>
                     </div>
-                </article>
+                </section>
 
                 <div class="legal-nav">
                     <a href="/legal/privacy-policy.html" class="legal-nav-link">&larr; Privacy Policy</a>
                     <a href="/legal/terms-of-service.html" class="legal-nav-link">Terms of Service &rarr;</a>
                 </div>
+            
+                </div>
             </div>
         </div>
-    </section>
+    </main>
 
-    <!-- Footer -->
-    <footer class="footer-peek-host" style="position: relative; background: var(--color-primary); color: var(--color-background); padding: 3rem 0; text-align: center;">
-        <img class="footer-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364">
-        <div class="container">
-            <p style="color: var(--color-background); opacity: 0.8; margin-bottom: 1rem;">
-                © 2026 Ryo Tsuzukihashi. All rights reserved.
-            </p>
-            <div style="margin-top: 2rem;">
-                <a href="/legal/privacy-policy.html" style="color: var(--color-background); opacity: 0.6; margin: 0 1rem; text-decoration: none;"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a>
-                <a href="/legal/terms-of-service.html" style="color: var(--color-background); opacity: 0.6; margin: 0 1rem; text-decoration: none;"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a>
-                <a href="/legal/commercial-law.html" style="color: var(--color-background); opacity: 0.6; margin: 0 1rem; text-decoration: none; font-weight: 400;"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a>
-                <a href="/legal/disclaimer.html" style="color: var(--color-background); opacity: 0.6; margin: 0 1rem; text-decoration: none;"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a>
+    <footer class="g-foot">
+            <img class="g-foot-peek" src="/assets/images/character-peek.png" alt="" width="320" height="364" loading="lazy">
+            <div class="g-wrap">
+                <div><a href="/" class="g-foot-logo"><img src="/assets/images/logo/tsuzukit-wordmark-white.svg" alt="TsuzuKit" width="110" height="34"></a>
+                <p class="g-foot-tag"><span class="i18n-ja">誰も作らないものを、まじめに作る。</span><span class="i18n-en">Making what nobody else will, seriously.</span><br>Seriously Silly since 2016.</p></div>
+                <div class="g-foot-sns"><a href="https://x.com/tsuzuki817" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><img src="/assets/images/sns/x.png" alt="" width="22" height="22"></a><a href="https://www.instagram.com/tsuzuki817/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="/assets/images/sns/instagram.png" alt="" width="22" height="22"></a><a href="https://www.tiktok.com/@tsuzuki817" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><img src="/assets/images/sns/tiktok.png" alt="" width="22" height="22"></a><a href="https://www.youtube.com/@tsuzuki817" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><img src="/assets/images/sns/youtube.png" alt="" width="22" height="22"></a><a href="https://github.com/tsuzukihashi" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><img src="/assets/images/sns/github.png" alt="" width="22" height="22"></a></div>
+                <div class="g-foot-links"><a href="/contact/"><span class="i18n-ja">お問い合わせ</span><span class="i18n-en">Contact</span></a><a href="/legal/privacy-policy.html"><span class="i18n-ja">プライバシーポリシー</span><span class="i18n-en">Privacy Policy</span></a><a href="/legal/terms-of-service.html"><span class="i18n-ja">利用規約</span><span class="i18n-en">Terms of Service</span></a><a href="/legal/commercial-law.html"><span class="i18n-ja">特定商取引法</span><span class="i18n-en">Specified Commercial Transactions Act</span></a><a href="/legal/disclaimer.html"><span class="i18n-ja">免責事項</span><span class="i18n-en">Disclaimer</span></a></div>
+                <p class="g-foot-copy">© 2026 Ryo Tsuzukihashi / TsuzuKit</p>
             </div>
-        </div>
-    </footer>
-
-    <!-- JavaScript -->
-    <script>
-        // Navigation scroll effect
-        window.addEventListener('scroll', function() {
-            const nav = document.getElementById('nav');
-            if (window.scrollY > 50) {
-                nav.classList.add('scrolled');
-            } else {
-                nav.classList.remove('scrolled');
-            }
-        });
-
-        // Mobile menu toggle
-        const navToggle = document.getElementById('navToggle');
-        const navMenu = document.getElementById('navMenu');
-        
-        navToggle.addEventListener('click', function() {
-            navToggle.classList.toggle('active');
-            navMenu.classList.toggle('active');
-        });
-    </script>
+        </footer>
 </body>
 </html>

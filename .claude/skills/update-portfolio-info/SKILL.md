@@ -38,7 +38,7 @@ cd /Users/tsuzuki817/workspace/TsuzuKit/tsuzukit.com && python3 .claude/skills/u
 - `total_apps` / `categories` / 平均評価 / 総レビュー数 を再計算。
 - 統計数値を各HTMLへ反映：
   - `portfolio/index.html`（title / meta×2 / ヒーロー / Published・Rating・Reviews / 件表示中）
-  - `index.html`（公開中の本数・評価・「アプリを探す」の一覧）。`scripts/build_top_apps.py` を呼んで作り直す
+  - `index.html`（公開中の本数・評価・ラインナップ・新しく入ったカプセル・回すデータ）。`scripts/build_top_apps.py` を呼んで作り直す（ガチャの見た目。`docs/gacha-design.md`）
   - `about/index.html`（◯個以上のiOSアプリ / 現在◯個公開中 / History の◯個）
 - スクショに `0bb.webp`（400になる形式）が混ざっていたら **exit 1 で警告**。
 

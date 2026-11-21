@@ -1,8 +1,9 @@
 /*
- * トップの「アプリを探す」と、アイコンを押したときのシート
+ * トップ（ガチャ）の動き: ラインナップの検索、カプセルを押したときのシート、機械を回す
  *
  * データは index.html の <script id="appsData">（scripts/build_top_apps.py が書く）
- * - 検索していないときは、ダウンロードの多い12本だけ見せる
+ * - ラインナップはレア度の段に分かれている。スマホで検索していないときは段ごとに8本まで（CSS）
+ * - 「まわす！」「もう1回まわす」で、81本からランダムに1本を「出た！」の札に出す
  * - 検索は日本語・英語の名前の部分一致。ひらがなとカタカナ、全角と半角、大文字と小文字は区別しない
  * - シートは、LP を撮った画像があれば上の方を見切れさせて出し、無ければストアのスクショを横に並べる
  */
@@ -25,6 +26,7 @@
     var empty = document.getElementById('appEmpty');
     var all = document.getElementById('appAll');
     var tiles = Array.prototype.slice.call(grid.querySelectorAll('.app-tile'));
+    var tiers = Array.prototype.slice.call(grid.querySelectorAll('.t-tier'));
 
     function norm(s) {
         return String(s || '')
@@ -41,6 +43,7 @@
         if (!q) {
             grid.classList.remove('is-searching');
             tiles.forEach(function (li) { li.hidden = false; });
+            tiers.forEach(function (t) { t.hidden = false; });
             empty.hidden = true;
             all.hidden = false;
             count.textContent = '';
@@ -54,6 +57,7 @@
             li.hidden = !ok;
             if (ok) hits++;
         });
+        tiers.forEach(function (t) { t.hidden = !t.querySelector('.app-tile:not([hidden])'); });
         empty.hidden = hits !== 0;
         all.hidden = hits === 0;
         empty.querySelectorAll('.js-q').forEach(function (el) { el.textContent = input.value.trim(); });
@@ -88,6 +92,10 @@
         var a = byId[id];
         if (!a) return;
         el('sheetIcon').src = a.i;
+        el('sheetCap').className = 'g-cap app-sheet-cap g-cap--' + a.c;
+        var rare = el('sheetRare');
+        rare.className = 'g-rare g-rare--' + a.k;
+        rare.textContent = a.k;
         el('sheetName').textContent = isEn ? a.ne : a.n;
         var meta = [];
         if (a.rc > 0) meta.push(isEn ? '★' + a.r.toFixed(1) + ' (' + a.rc.toLocaleString('en') + ' ratings)' : '★' + a.r.toFixed(1) + '（' + a.rc.toLocaleString('ja') + '件）');
@@ -143,5 +151,63 @@
         e.preventDefault();
         if (document.activeElement === input) input.blur();
         open(t.getAttribute('data-app'));
+    });
+
+    // ---------- 回す ----------
+    var won = el('gachaWon');
+    var mach = el('gachaMachine');
+    var current = (el('wonMore') || {}).getAttribute ? el('wonMore').getAttribute('data-app') : null;
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var busy = false;
+
+    function dlText(d) {
+        if (isEn) return d >= 1000 ? (Math.round(d / 100) / 10) + 'K' : d.toLocaleString('en');
+        return d >= 10000 ? (Math.round(d / 1000) / 10) + '万' : d.toLocaleString('ja');
+    }
+    function line(a) {
+        var parts = [];
+        var g = isEn ? a.ge : a.g;
+        if (g) parts.push(g);
+        if (a.rc > 0) parts.push(isEn ? '★' + a.r.toFixed(1) + ' (' + a.rc.toLocaleString('en') + ' ratings)' : '★' + a.r.toFixed(1) + '（' + a.rc.toLocaleString('ja') + '件）');
+        if (a.d > 0) parts.push(isEn ? dlText(a.d) + ' downloads' : dlText(a.d) + 'ダウンロード');
+        return parts.join(isEn ? ' · ' : '・');
+    }
+    function show(a) {
+        el('wonIcon').src = a.i;
+        el('wonOpen').style.setProperty('--c', 'var(--g-c' + a.c + ')');
+        var rare = el('wonRare');
+        rare.className = 'g-rare g-rare--' + a.k;
+        rare.textContent = a.k;
+        el('wonName').textContent = isEn ? a.sne : a.sn;
+        el('wonLine').textContent = line(a);
+        el('wonStore').href = storeUrl(a);
+        el('wonMore').setAttribute('data-app', a.id);
+        current = a.id;
+    }
+    function spin() {
+        if (busy || !won) return;
+        busy = true;
+        var next;
+        do { next = apps[Math.floor(Math.random() * apps.length)]; } while (apps.length > 1 && next.id === current);
+        if (reduce) { show(next); busy = false; return; }
+        won.classList.remove('is-pop');
+        won.classList.add('is-rolling');
+        if (mach) mach.classList.add('is-rolling');
+        setTimeout(function () {
+            if (mach) mach.classList.remove('is-rolling');
+            won.classList.remove('is-rolling');
+            show(next);
+            void won.offsetWidth;
+            won.classList.add('is-pop');
+            busy = false;
+        }, 650);
+    }
+    ['gachaKnob', 'gachaAgain'].forEach(function (id) {
+        var b = el(id);
+        if (b) b.addEventListener('click', function () {
+            spin();
+            // スマホでは機械が札より下にあるので、回したら札が見えるところへ
+            if (id === 'gachaKnob' && won.getBoundingClientRect().top < 0) won.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'center' });
+        });
     });
 })();
