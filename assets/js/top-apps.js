@@ -189,9 +189,9 @@
     // 閉じたカプセルが出てきて、揺れて、開く（CSS の .is-pop）
     function rnd(a, b) { return a + Math.random() * (b - a); }
     function any(list) { return list[Math.floor(Math.random() * list.length)]; }
-    // 揺れ方と開け方を、回すたびに選ぶ（CSS の --shake-* / --lid-* に渡す）
+    // 揺れ方と開け方を、回すたびに選ぶ（CSS の --shake-* / --lid-* / --open-at に渡す）
     function shuffleMotion() {
-        var s = burst.style;
+        var s = pop.style;  // 文字の出る時間にも使うので、カプセルではなくポップアップ全体に置く
         var shake = any(['t-cap-shake', 't-cap-hop', 't-cap-twist']);
         var t = shake === 't-cap-hop' ? rnd(.26, .36) : rnd(.12, .22);
         var n = shake === 't-cap-hop' ? any([1, 2, 2, 3]) : any([2, 3, 4, 5]);
@@ -218,7 +218,7 @@
     }
     function reveal() {
         shuffleMotion();
-        pop.classList.remove('is-rolling', 'is-pop');
+        pop.classList.remove('is-leaving', 'is-pop');
         void pop.offsetWidth;
         pop.classList.add('is-pop');
     }
@@ -233,7 +233,7 @@
         else pop.removeAttribute('open');
     }
     pop.addEventListener('close', function () {
-        pop.classList.remove('is-first', 'is-pop', 'is-rolling');
+        pop.classList.remove('is-first', 'is-pop', 'is-leaving');
         if (!sheet.open) document.documentElement.classList.remove('sheet-open');
     });
     el('popClose').addEventListener('click', closePop);
@@ -263,19 +263,19 @@
             busy = false;
         }, 650);
     }
-    // ポップアップの「もう1回まわす」: 蓋を閉じて揺らしてから、次のアプリで開く
+    // ポップアップの「もう1回まわす」: 今のカプセルを閉じて下へ落とし、次のカプセルを上から出す
     function spinAgain() {
         if (busy) return;
         busy = true;
         var next = pick();
         if (reduce) { fillPop(next); busy = false; return; }
         pop.classList.remove('is-pop', 'is-first');
-        pop.classList.add('is-rolling');
+        pop.classList.add('is-leaving');
         setTimeout(function () {
             fillPop(next);
             reveal();
             busy = false;
-        }, 450);
+        }, 540);
     }
     el('gachaKnob').addEventListener('click', spin);
     el('popAgain').addEventListener('click', spinAgain);

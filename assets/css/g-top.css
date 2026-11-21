@@ -172,7 +172,7 @@ html.sheet-open { overflow: hidden; }
  * 蓋は器と同じ幅（閉じた形＝transform なし）。開け方・揺れ方は top-apps.js が回すたびに選んで変数で渡す。
  * 下の値は変数が来なかったときの形（左下を軸に開く・3回揺れる）
  */
-.t-pop-burst {
+.t-pop {
   --shake-name: t-cap-shake; --shake-a: 9deg; --shake-h: 10%; --shake-t: .16s; --shake-n: 3;
   --open-at: .95s; --lid-t: .32s; --lid-origin: 0 100%; --lid-open: translate(-4%, -6%) rotate(-42deg); --icon-rot: -6deg;
 }
@@ -188,7 +188,7 @@ html.sheet-open { overflow: hidden; }
 .t-pop-actions .g-btn { width: 100%; }
 /*
  * 出かた（is-pop）: 閉じたカプセルが落ちてくる → ガタガタ揺れる → 蓋が開く → アプリが飛び出す → 名前が出る
- * 回し直し（is-rolling）: 蓋を閉じて揺れつづける
+ * 回し直し（is-leaving）: 閉じて下へ落ちていく
  */
 @media (prefers-reduced-motion: no-preference) {
   .t-pop.is-first .t-pop-inner { animation: g-pop .3s cubic-bezier(.2, .9, .3, 1.2); }
@@ -200,11 +200,12 @@ html.sheet-open { overflow: hidden; }
   .t-pop.is-pop .t-pop-name,
   .t-pop.is-pop .t-pop-line { animation: t-text-in .35s calc(var(--open-at) + .45s) both; }
   .t-pop.is-pop .t-pop-burst[data-rare="SSR"] .rays, .t-pop.is-pop .t-pop-burst[data-rare="SR"] .rays { animation: t-fade-in .3s calc(var(--open-at) + .05s) both, t-pop-spin 9s var(--open-at) linear infinite; }
-  .t-pop.is-rolling .t-pop-burst { animation: var(--shake-name) var(--shake-t) ease-in-out infinite; }
-  .t-pop.is-rolling .t-pop-burst .lid { transform: none; transition: transform .15s; }
-  .t-pop.is-rolling .t-pop-burst .icon,
-  .t-pop.is-rolling .t-pop-burst .rays { opacity: 0; }
-  .t-pop.is-rolling .t-pop-name, .t-pop.is-rolling .t-pop-line, .t-pop.is-rolling .t-pop-inner > .g-rare { opacity: 0; }
+  /* もう1回まわす: アイコンが器に戻り、蓋が閉まり、カプセルが下へ落ちていく。そのあと次のカプセルが is-pop で上から来る */
+  .t-pop.is-leaving .t-pop-burst { animation: t-cap-out .3s .22s ease-in both; }
+  .t-pop.is-leaving .t-pop-burst .icon { animation: t-icon-in .22s ease-in both; }
+  .t-pop.is-leaving .t-pop-burst .lid { transform: none; transition: transform .2s ease-in; }
+  .t-pop.is-leaving .t-pop-burst .rays { opacity: 0; transition: opacity .15s; }
+  .t-pop.is-leaving .t-pop-name, .t-pop.is-leaving .t-pop-line, .t-pop.is-leaving .t-pop-inner > .g-rare { opacity: 0; transition: opacity .15s; }
 }
 /* SSR は光の筋を濃く */
 .t-pop-burst[data-rare="SSR"] .rays { background: repeating-conic-gradient(from 0deg, rgba(255, 255, 255, .95) 0 8deg, transparent 8deg 20deg); }
@@ -214,6 +215,8 @@ html.sheet-open { overflow: hidden; }
 @keyframes t-cap-twist { 0%, 100% { rotate: 0deg; scale: 1; } 30% { rotate: var(--shake-a); scale: 1.05; } 60% { rotate: calc(var(--shake-a) * -.6); scale: .97; } }
 @keyframes t-lid-open { 0% { transform: none; } 100% { transform: var(--lid-open); } }
 @keyframes t-icon-out { 0% { transform: translate(-50%, 30%) scale(.3); opacity: 0; } 100% { transform: translate(-50%, -50%) rotate(var(--icon-rot)); opacity: 1; } }
+@keyframes t-cap-out { from { transform: none; opacity: 1; } to { transform: translateY(55%) scale(.85); opacity: 0; } }
+@keyframes t-icon-in { from { transform: translate(-50%, -50%) rotate(var(--icon-rot)); opacity: 1; } to { transform: translate(-50%, 30%) scale(.3); opacity: 0; } }
 @keyframes t-fade-in { from { opacity: 0; } to { opacity: 1; } }
 @keyframes t-text-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
 @keyframes t-pop-spin { to { transform: rotate(360deg); } }
