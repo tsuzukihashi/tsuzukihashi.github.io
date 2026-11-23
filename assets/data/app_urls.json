@@ -1,4 +1,147 @@
 {
+  "6478291625": {
+    "bundle_id": "com.tsuzuki817.OmoideMap",
+    "marketing_url": {
+      "ja": "https://omoidemap-36d68.web.app/",
+      "en": "https://omoidemap-36d68.web.app/"
+    },
+    "support_url": {
+      "ja": "https://omoidemap-36d68.web.app/contact.html",
+      "en": "https://omoidemap-36d68.web.app/contact.html"
+    }
+  },
+  "6835220137": {
+    "bundle_id": "com.tsuzukit.tacticsboard",
+    "marketing_url": {
+      "ja": "https://jindori.tsuzukit.com/",
+      "en": "https://jindori.tsuzukit.com/"
+    },
+    "support_url": {
+      "ja": "https://jindori.tsuzukit.com/support.html",
+      "en": "https://jindori.tsuzukit.com/support.html"
+    }
+  },
+  "6835219852": {
+    "bundle_id": "com.tsuzukit.classicreader",
+    "marketing_url": {
+      "ja": "https://yomikake.tsuzukit.com/",
+      "en": "https://yomikake.tsuzukit.com/"
+    },
+    "support_url": {
+      "ja": "https://yomikake.tsuzukit.com/support.html",
+      "en": "https://yomikake.tsuzukit.com/support.html"
+    }
+  },
+  "6835219920": {
+    "bundle_id": "com.tsuzukit.comicviewer",
+    "marketing_url": {
+      "ja": "https://tojishiro.tsuzukit.com/",
+      "en": "https://tojishiro.tsuzukit.com/"
+    },
+    "support_url": {
+      "ja": "https://tojishiro.tsuzukit.com/support.html",
+      "en": "https://tojishiro.tsuzukit.com/support.html"
+    }
+  },
+  "6835220028": {
+    "bundle_id": "com.tsuzukit.roomlayout",
+    "marketing_url": {
+      "ja": "https://okidokoro.tsuzukit.com/",
+      "en": "https://okidokoro.tsuzukit.com/"
+    },
+    "support_url": {
+      "ja": "https://okidokoro.tsuzukit.com/support.html",
+      "en": "https://okidokoro.tsuzukit.com/support.html"
+    }
+  },
+  "6835220140": {
+    "bundle_id": "com.tsuzukit.flipbook",
+    "marketing_url": {
+      "ja": "https://parapara.tsuzukit.com/",
+      "en": "https://parapara.tsuzukit.com/"
+    },
+    "support_url": {
+      "ja": "https://parapara.tsuzukit.com/support.html",
+      "en": "https://parapara.tsuzukit.com/support.html"
+    }
+  },
+  "6835220175": {
+    "bundle_id": "com.tsuzukit.cutlist",
+    "marketing_url": {
+      "ja": "https://itakiri.tsuzukit.com/",
+      "en": "https://itakiri.tsuzukit.com/"
+    },
+    "support_url": {
+      "ja": "https://itakiri.tsuzukit.com/support.html",
+      "en": "https://itakiri.tsuzukit.com/support.html"
+    }
+  },
+  "6835219885": {
+    "bundle_id": "com.tsuzukit.longscreenshot",
+    "marketing_url": {
+      "ja": "https://tsugime.tsuzukit.com/",
+      "en": "https://tsugime.tsuzukit.com/"
+    },
+    "support_url": {
+      "ja": "https://tsugime.tsuzukit.com/support.html",
+      "en": "https://tsugime.tsuzukit.com/support.html"
+    }
+  },
+  "6835220286": {
+    "bundle_id": "com.tsuzukit.filmcamera",
+    "marketing_url": {
+      "ja": "https://torikiri.tsuzukit.com/",
+      "en": "https://torikiri.tsuzukit.com/"
+    },
+    "support_url": {
+      "ja": "https://torikiri.tsuzukit.com/support.html",
+      "en": "https://torikiri.tsuzukit.com/support.html"
+    }
+  },
+  "6835219913": {
+    "bundle_id": "com.tsuzukit.manuscripteditor",
+    "marketing_url": {
+      "ja": "https://shitatame.tsuzukit.com/",
+      "en": "https://shitatame.tsuzukit.com/"
+    },
+    "support_url": {
+      "ja": "https://shitatame.tsuzukit.com/support.html",
+      "en": "https://shitatame.tsuzukit.com/support.html"
+    }
+  },
+  "6835219958": {
+    "bundle_id": "com.tsuzukit.dicebox",
+    "marketing_url": {
+      "ja": "https://sainome.tsuzukit.com/",
+      "en": "https://sainome.tsuzukit.com/"
+    },
+    "support_url": {
+      "ja": "https://sainome.tsuzukit.com/support.html",
+      "en": "https://sainome.tsuzukit.com/support.html"
+    }
+  },
+  "6758856276": {
+    "bundle_id": "com.tsuzukit.PoopCounter",
+    "marketing_url": {
+      "ja": "https://unchikun.app/",
+      "en": "https://unchikun.app/"
+    },
+    "support_url": {
+      "ja": "https://unchikun.app/support",
+      "en": "https://unchikun.app/en/support"
+    }
+  },
+  "6811730170": {
+    "bundle_id": "com.tsuzukit.Bytebeat",
+    "marketing_url": {
+      "ja": "https://tsuzukit.com/",
+      "en": "https://tsuzukit.com/"
+    },
+    "support_url": {
+      "ja": "https://tsuzukit.com/contact/",
+      "en": "https://tsuzukit.com/contact/"
+    }
+  },
   "6835219829": {
     "bundle_id": "com.tsuzukit.invoicemaker",
     "marketing_url": {
@@ -19,17 +162,6 @@
     "support_url": {
       "ja": "https://fumibako.tsuzukit.com/support.html",
       "en": "https://fumibako.tsuzukit.com/support.html"
-    }
-  },
-  "6478291625": {
-    "bundle_id": "com.tsuzuki817.OmoideMap",
-    "marketing_url": {
-      "ja": "https://omoidemap-36d68.web.app/",
-      "en": "https://omoidemap-36d68.web.app/"
-    },
-    "support_url": {
-      "ja": "https://omoidemap-36d68.web.app/contact.html",
-      "en": "https://omoidemap-36d68.web.app/contact.html"
     }
   },
   "6835219847": {
@@ -217,17 +349,6 @@
     "support_url": {
       "ja": "https://tsuzukit.com/contact/",
       "en": "https://tsuzukit.com/contact/"
-    }
-  },
-  "6758856276": {
-    "bundle_id": "com.tsuzukit.PoopCounter",
-    "marketing_url": {
-      "ja": "https://unchikun.app/",
-      "en": "https://unchikun.app/"
-    },
-    "support_url": {
-      "ja": "https://unchikun.app/support",
-      "en": "https://unchikun.app/en/support"
     }
   },
   "6835219661": {
@@ -738,17 +859,6 @@
   },
   "6782555676": {
     "bundle_id": "com.tsuzukit.KnifeKeep",
-    "marketing_url": {
-      "ja": "https://tsuzukit.com/",
-      "en": "https://tsuzukit.com/"
-    },
-    "support_url": {
-      "ja": "https://tsuzukit.com/contact/",
-      "en": "https://tsuzukit.com/contact/"
-    }
-  },
-  "6811730170": {
-    "bundle_id": "com.tsuzukit.Bytebeat",
     "marketing_url": {
       "ja": "https://tsuzukit.com/",
       "en": "https://tsuzukit.com/"

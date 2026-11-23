@@ -8,6 +8,7 @@ description: tsuzukit.com のアプリの情報と数字を全部最新にする
 **呼ばれたら、1章から7章まで毎回全部やる。** ランキングとDL数の更新を「必要なら」で飛ばさない。
 ユーザーに頼むのはログインだけ（ASC の Playwright のログインと `! gcloud auth login`）。
 ログインを待つあいだに、ログインの要らない章（1・2・3）を先に終わらせる。
+**ログインのコマンドはこちらで起動しておく（2026-11-23「ログインして欲しいならコマンド用意しろ」）。** gcloud は `run_in_terminal` で `gcloud auth login` を Terminal パネルに出して起動し、本人はブラウザで承認するだけにする。`! ` を貼らせない。頼んだあとも返答を終えずに他の章を進める。
 
 | 章 | やること | 自分で直す数字・ファイル |
 |---|---|---|
@@ -88,7 +89,7 @@ playwright が無い環境では `PLAYWRIGHT_MODULE=<playwright の index.mjs>` 
 python3 scripts/fetch_play_installs.py
 ```
 - Play Console のインストール レポート（GCS の `stats/installs/*_overview.csv`）を全部読み、`Daily User Installs` の全期間の合計を累計インストール、最新日の `Active Device Installs` を稼働台数にして、`app-ranking.json` の android を作り直す
-- 「gcloud のトークンが取れない」で止まったら、ユーザーに `! gcloud auth login` を打ってもらう（対話が要るので、こちらからは実行できない）。
+- 「gcloud のトークンが取れない」で止まったら、`run_in_terminal` で `gcloud auth login` を Terminal パネルに起動し、ブラウザで承認だけしてもらう。
   ⚠️ このマシンでは `gcloud storage` も `gsutil` も動かない（Python 3.9 で落ちる）ので、スクリプトはトークンだけ借りて GCS の JSON API を読んでいる
 - Play だけのアプリ（iOS 版なし）の名前とアイコンは Play のページから取る。⚠️ が出たら `NAMES_EN` に英語名を足す
 - `Active Device Installs` は Play Console の一覧に出る「インストール済みユーザー数」で、累計ではない。累計 < 稼働台数のアプリもある（1人が複数端末に入れた）。矛盾ではない

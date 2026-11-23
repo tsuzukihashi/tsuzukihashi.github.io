@@ -1,7 +1,543 @@
 {
-  "generated_at": "2026-11-21 11:10:07",
-  "total_apps": 95,
+  "generated_at": "2026-11-23 09:58:55",
+  "total_apps": 105,
   "apps": [
+    {
+      "bundle_id": "com.tsuzuki817.OmoideMap",
+      "name": "旅行思い出マップ - 旅の記憶を、地図に描く",
+      "app_store_url": "https://apps.apple.com/jp/app/%E6%97%85%E8%A1%8C%E6%80%9D%E3%81%84%E5%87%BA%E3%83%9E%E3%83%83%E3%83%97-%E6%97%85%E3%81%AE%E8%A8%98%E6%86%B6%E3%82%92-%E5%9C%B0%E5%9B%B3%E3%81%AB%E6%8F%8F%E3%81%8F/id6478291625?uo=4",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/00/58/7f/00587f55-9232-862f-9b22-02690332969b/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/QhfGME-Zp0VPTHhwCId3aQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/zjPGLG24mLZ-A4Wx6O2q6g/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Yt4OnoIOyU3dmgAOf9fE0w/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/DFUyGflSmD7ginatlGQ5CQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/IghBHBQWOheDDfR_KntZ6A/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/BPfgRQe4_1On402YKBOQjA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Kqygran1MPO8TY01vVlFUw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/DY5wBkSMcrQ2mS5x5G0JIg/626x0w.webp"
+      ],
+      "ipad_screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9d/c6/c3/9dc6c3ff-ebad-6824-b94a-de72e93659c7/01_map.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/5e/09/8e/5e098e9d-0a16-1f03-628c-f93d6fbb7279/02_fill.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4a/5a/0c/4a5a0ceb-0314-d8f1-f58c-81f1d6d5cd5a/03_oneday.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/57/f2/e1/57f2e1bc-0df7-786b-1772-80a8e58a080a/04_world.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/21/3b/79/213b79b4-d401-4f68-b84f-2af531366090/05_list.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/27/37/94/27379494-8e2c-cc18-79c4-0b812cea9965/06_many.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/19/81/bc/1981bc90-8576-71aa-1329-6450e48ffea8/07_sticker.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e0/a5/e4/e0a5e497-6535-6f65-4f59-18249be3a9ee/08_home.png/360x480bb.jpg"
+      ],
+      "price": "無料",
+      "currency": "JPY",
+      "genres": [
+        "旅行",
+        "写真／ビデオ"
+      ],
+      "primary_genre": "Travel",
+      "rating": 4.555,
+      "rating_count": 800,
+      "version": "2.1.1",
+      "release_date": "2024-02-25T08:00:00Z",
+      "current_version_release_date": "2026-11-19T19:42:40Z",
+      "description": "14万ダウンロード突破！\n写真をパズルのように切り取って、地図に貼るアプリです。\n\n行った場所が少しずつ色づいて、旅の記憶がそのまま一枚の地図になっていきます。\n\n\n■ 47都道府県だけじゃない\n\n全国マップに加えて、42の都道府県マップで市区町村まで細かく記録できます。\n北海道179、長野77、埼玉63、東京62——ぜんぶで1,667エリア。\nあなたの地元も、きっとあります。\n\n\n■ 主な機能\n\n□ 写真が都道府県のかたちに切り取られて、地図にはまる\n□ ひとつの場所に、写真を好きなだけ追加できる\n□ MapLinkで友達・家族・恋人と同じ地図を共同編集\n□ 写真にコメントを添えて、その日の気持ちも残す\n□ ご当地ステッカーで地図を彩る（だるま、シーサー、こいのぼり…）\n□ 1年の思い出を、BGM付きの振り返り動画に\n□ 毎月届く「先月のおもいで」でふりかえり\n□ 完成した地図を高画質で保存・印刷\n□ ホーム画面のウィジェットに、過去の思い出をランダム表示\n□ 写真アプリの共有ボタンから直接投稿\n\n\n■ 日本を埋めたら、海外へ\n\nアジア24ヶ国、台湾22地域、アメリカ50州＋1準州のマップも用意しています。\n\nひとりでも、大切な人とでも。\n\n\n■ 思い出マップサポーター（有料）\n\n広告の非表示、マップ作り放題、高画質での保存・印刷、まとめて投稿などが使えるようになります。\n地図をつくって写真を貼る基本の機能は、ずっと無料のままお使いいただけます。\n\n\n■ その他情報\n・利用規約\nhttps://omoidemap-36d68.web.app/legal/terms.html\n\n・プライバシーポリシー\nhttps://omoidemap-36d68.web.app/legal/privacy.html\n\n・特定商取引法に基づく表示\nhttps://omoidemap-36d68.web.app/legal/commercial.html",
+      "release_notes": "【v2.1.1】\n\nアプリを開いたときに出ていた画面を減らしました。\n\n■ 変わったところ\n初回限定の割引を案内する画面と、ホームに出ていたバナーをなくしました。\n「このアプリは気に入っていますか？」とおたずねする画面をなくしました。ご意見は、これまでどおり設定から送れます。\n\nいつもご利用いただきありがとうございます！",
+      "content_advisory_rating": "17+",
+      "minimum_os_version": "17.0",
+      "developer_name": "Ryo Tsudukihashi",
+      "seller_name": "TsuzuKit"
+    },
+    {
+      "bundle_id": "com.tsuzukit.tacticsboard",
+      "name": "じんどり - 作戦ボード（サッカー・バスケ・バレー）",
+      "app_store_url": "https://apps.apple.com/jp/app/%E3%81%98%E3%82%93%E3%81%A9%E3%82%8A-%E4%BD%9C%E6%88%A6%E3%83%9C%E3%83%BC%E3%83%89-%E3%82%B5%E3%83%83%E3%82%AB%E3%83%BC-%E3%83%90%E3%82%B9%E3%82%B1-%E3%83%90%E3%83%AC%E3%83%BC/id6835220137?uo=4",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4a/eb/a6/4aeba654-1743-5e4c-a195-00b3423d2e19/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/RT3i08-KMYT9xUuaSq_XYg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/t-T2aqI3DGElsSCSuxUFkg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/XoC9_rZ4zpHmUT2J0DADaQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/7PH0Fv5a_nnRbiqOYnBsLw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Tee-eb_QOdcKMB7TylbtHA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/k44vN0hVR7PzOJeA80XFQw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Q4pm7uEPGU--4UTXUfXU6g/626x0w.webp"
+      ],
+      "ipad_screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f1/98/9d/f1989db0-090c-9b99-bf0b-148c7ff08504/01.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/11/f3/23/11f32303-0f1c-320d-4a56-a87ef10c20ed/02.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/7a/23/e1/7a23e156-d77f-2b34-0d61-685678b46cc7/03.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/89/33/6f/89336fc7-c939-c9f2-38ca-9efd0ba1bdbb/04.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/cd/8a/fe/cd8afe6e-25f1-9ff1-909d-da3342c0fd6f/05.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/79/aa/cb/79aacb05-450f-1101-0cad-1583384fc36c/06.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0a/6a/ee/0a6aee2b-55b6-58b7-8247-6019c1dda3ff/07.png/360x480bb.jpg"
+      ],
+      "price": "¥700",
+      "currency": "JPY",
+      "genres": [
+        "スポーツ",
+        "仕事効率化"
+      ],
+      "primary_genre": "Sports",
+      "rating": 0,
+      "rating_count": 0,
+      "version": "1.0.0",
+      "release_date": "2026-11-22T08:00:00Z",
+      "current_version_release_date": "2026-11-22T19:19:53Z",
+      "description": "コートの上に選手とボールを置き、矢印で動きを描いて、場面をつないで見せる作戦ボードです。1本の中で競技を選べます。広告・アカウント・追加の課金はありません。\n\n■ 競技と形（10の競技・15のコート）\n・サッカー（11人制・8人制）・フットサル\n・バスケットボール（全面・半面）\n・バレーボール（6人制・9人制の一般男子／一般女子・家庭婦人）\n・ハンドボール・ラグビー（15人制・7人制）・ホッケー・水球\n・野球・ソフトボール\nコートの線は、各競技の規則の寸法で描いています。\n\n■ 人数も背番号も自由\n・選手は競技の人数ぶん、よくある並びで置かれた状態から始まります\n・あとから自由に足したり減らしたりできます（10人しかいないチームでも）\n・背番号は数字を打って入れます。重なっても入れられます\n・味方と相手の2チーム。チームに名前と色、選手の名前を登録できます\n\n■ 動きを描く\n・選手を指で引っぱって動かします\n・線は「走る」「パス」「ドリブル」「ただの線」「囲み」の5種類。太さと色も選べます\n・引いた線は始めと終わりを結ぶ1本の直線。途中を曲げたいときは中の点をつまみます\n・元に戻す・やり直す\n\n■ 場面をつないで見せる\n・場面を足すと、前の場面の並びから始まります\n・再生すると、選手とボールが場面から場面へ動きます（速さは変えられます）\n・動画（mp4）・画像・PDF にして、チームのメンバーに送れます\n・横向きと iPad では、コートを大きく。外のディスプレイ（AirPlay・ケーブル）にはコートだけを映せます\n\n■ データ\n・iPhone と iPad の作戦とチームは iCloud でそろいます\n・毎日の控えとゴミ箱（30日）で、消えても戻せます\n・通信は iCloud だけ。開発者のサーバーも解析もありません\n\nサポート: https://jindori.tsuzukit.com/support.html",
+      "release_notes": null,
+      "content_advisory_rating": "4+",
+      "minimum_os_version": "26.0",
+      "developer_name": "Ryo Tsudukihashi",
+      "seller_name": "TsuzuKit"
+    },
+    {
+      "bundle_id": "com.tsuzukit.classicreader",
+      "name": "よみかけ - 名作小説を縦書きで読む",
+      "app_store_url": "https://apps.apple.com/jp/app/%E3%82%88%E3%81%BF%E3%81%8B%E3%81%91-%E5%90%8D%E4%BD%9C%E5%B0%8F%E8%AA%AC%E3%82%92%E7%B8%A6%E6%9B%B8%E3%81%8D%E3%81%A7%E8%AA%AD%E3%82%80/id6835219852?uo=4",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/33/65/7d/33657d05-0716-75b4-7706-2aa19d768b17/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/e5Qskt2C5Z59kJLL1P98sA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/GN3I2igVpAfdW-ZdwzwYzQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/m1qFxEMV4vZ8BeZ8La2ndw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Xt2O9b7CANOs2-ppJpF-tA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/IHZWZw3q6X82eovPHUQyVg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/v2hj85mBHAW_c2z4UP9juA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/FreqSH8cGkmy7CjoyZiveA/626x0w.webp"
+      ],
+      "ipad_screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/62/ce/98/62ce98f3-c332-566e-d2a9-f2c824e9e703/01.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ce/2f/ce/ce2fcea8-6893-924c-e8ef-79eb3667e63c/02.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/80/46/77/80467714-6e16-577c-e5a5-d02edfb4cb44/03.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/9f/08/40/9f0840be-10f2-9d49-a129-57e460a2e369/04.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/51/25/2b/51252be5-04d9-3a0e-215c-da7856be5154/05.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/07/49/2b/07492bcb-3908-b190-c3cb-6cae0dfe4522/06.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/32/4e/d7/324ed7fb-a02f-2476-5069-1cfe8b01abce/07.png/360x480bb.jpg"
+      ],
+      "price": "¥300",
+      "currency": "JPY",
+      "genres": [
+        "ブック",
+        "教育"
+      ],
+      "primary_genre": "Book",
+      "rating": 0,
+      "rating_count": 0,
+      "version": "1.0.0",
+      "release_date": "2026-11-22T08:00:00Z",
+      "current_version_release_date": "2026-11-22T19:19:45Z",
+      "description": "青空文庫の著作権の切れた名作を、縦書きの本のように読むアプリです。ルビ（ふりがな）・傍点・縦中横まで組み、開くといつも読みかけのページから。広告・アカウント・課金の追加はありません。\n\n■ はじめから579作品\n・よく読まれている579作品（吾輩は猫である・走れメロス・こころ・銀河鉄道の夜・羅生門など）はアプリに入っていて、通信なしで読めます\n・ほかの約17,000作品も、題・作家・読みで探して、読むときに青空文庫から取ってきます。取ってきた作品は端末に残り、次からは通信なしで読めます\n\n■ 縦書きの組版\n・ルビは字の右に小さく、傍点・縦中横・字下げ・見出しも組みます\n・旧字の外字は字に直して出します（字が無いものは「※」を押すと説明が出ます）\n・字の大きさ・書体（明朝・ゴシック）・行間・余白・地の色（白・生成り・暗い）を選べます\n・縦書きは右綴じ（右から左へ読み進める）。横書きにも切りかえられます\n\n■ 続きから・しおり\n・閉じても、次に開くと読みかけのページから\n・しおりは何枚でも、一言をつけて挟めます\n・iCloud で、読みかけ・しおり・気に入った作品を iPhone と iPad で同じにします（本文は送りません）\n\n■ 読み上げ\n・端末の声で読み上げます。ルビのある語はルビの読みで読み、読んでいる行が分かります\n・画面を消しても続きます\n\n■ iPad・iPhone Duo\n・広い画面では見開き2ページで読めます\n\n■ データと通信\n・通信は、青空文庫から作品のテキストを取ってくるときだけです。開発者のサーバー・解析・広告はありません\n\n■ 青空文庫について\n・作品は青空文庫（https://www.aozora.gr.jp/）のファイルです。著作権の切れた作品だけを入れています。底本・入力・校正の情報は、本の最後のページにそのまま載せています\n・このアプリは青空文庫の公式のアプリではありません\n\nお問い合わせ: https://yomikake.tsuzukit.com/support.html",
+      "release_notes": null,
+      "content_advisory_rating": "12+",
+      "minimum_os_version": "26.0",
+      "developer_name": "Ryo Tsudukihashi",
+      "seller_name": "TsuzuKit"
+    },
+    {
+      "bundle_id": "com.tsuzukit.comicviewer",
+      "name": "とじしろ - 自炊の漫画ビューア（zip・pdf）",
+      "app_store_url": "https://apps.apple.com/jp/app/%E3%81%A8%E3%81%98%E3%81%97%E3%82%8D-%E8%87%AA%E7%82%8A%E3%81%AE%E6%BC%AB%E7%94%BB%E3%83%93%E3%83%A5%E3%83%BC%E3%82%A2-zip-pdf/id6835219920?uo=4",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/21/cc/02/21cc02ba-3303-5b94-5b78-a00d937d78fc/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/b4Pkl-Ice-COP-YkwGaWVA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/92FZIaSNRQJrCqPrf1Al_A/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/SdQ8npdedmGMr5t2vhPNVQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/km1adNjuSFi281jTC4smFQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/6_k_0qMi_OXYw5QGSoIR4g/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/RbdyZBdv8a295VNiZvv5og/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/SRoQs6FKJt_lo5xHH-OQEw/626x0w.webp"
+      ],
+      "ipad_screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/45/0d/24/450d24fc-f60f-23cc-545a-34da3c9d93ed/01.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/aa/df/20/aadf20d3-64e4-34bb-b711-fa5531aa3bed/02.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/93/e5/a1/93e5a15a-f9c2-9095-acc8-0ad657f7873d/03.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/5f/17/af/5f17af8a-9ec8-8be4-44f9-8ed38371c47d/04.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/30/04/4b/30044b68-25b5-1b88-a1cd-66d42e3ca426/05.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/48/ac/27/48ac2797-403b-d962-dd70-edfc31aa81b4/06.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d2/d9/d4/d2d9d491-b44e-1d0a-1a67-69a922490375/07.png/360x480bb.jpg"
+      ],
+      "price": "¥500",
+      "currency": "JPY",
+      "genres": [
+        "ブック",
+        "エンターテインメント"
+      ],
+      "primary_genre": "Book",
+      "rating": 0,
+      "rating_count": 0,
+      "version": "1.0.0",
+      "release_date": "2026-11-22T08:00:00Z",
+      "current_version_release_date": "2026-11-22T19:19:45Z",
+      "description": "自炊した漫画（zip・cbz・rar・cbr・7z・cb7・pdf・画像のフォルダ）を読むビューアです。フォルダを1つ選ぶだけで本棚になり、作品と巻を自動でまとめます。広告・アカウント・課金の追加はありません。\n\n■ フォルダを選ぶだけ\n・「ファイル」アプリでつないだ NAS（SMB の共有）・iCloud Drive・クラウドのフォルダを、そのまま本棚にできます\n・開くときだけ読むので、全部を端末に写しません\n・転送ソフトは要りません\n\n■ 作品と巻を自動でまとめる\n・「作品名 01.zip」「作品名 第2巻.cbz」「[作者] 作品名 v03」のようなファイル名から、作品ごとに巻の順に並べます\n・まとめが合わないときは、名前を直したり、巻をほかの作品へ移したりできます\n\n■ 右綴じの見開き\n・日本の漫画は右綴じが既定。作品ごとに左綴じにもできます\n・横向き・iPad・iPhone Duo を開いた横では見開き。表紙は単独、元から見開きの画像は1枚で出します\n・ページがずれたら［1ページずらす］\n\n■ 落ちにくく、軽く\n・見るページの前後だけを読み、縮めた絵を覚えます。大きな zip でも全部を広げません\n\n■ 続きから\n・閉じても、次に開くと読みかけのページから。巻の最後で次の巻へ\n・iCloud で、読んだページと綴じを iPhone と iPad でそろえます\n\n■ データと通信\n・通信はしません（iCloud を除く）。開発者のサーバー・解析・広告はありません\n\nお問い合わせ: https://tojishiro.tsuzukit.com/support.html",
+      "release_notes": null,
+      "content_advisory_rating": "4+",
+      "minimum_os_version": "26.0",
+      "developer_name": "Ryo Tsudukihashi",
+      "seller_name": "TsuzuKit"
+    },
+    {
+      "bundle_id": "com.tsuzukit.roomlayout",
+      "name": "おきどころ - 家具配置・間取り・模様替え（実寸）",
+      "app_store_url": "https://apps.apple.com/jp/app/%E3%81%8A%E3%81%8D%E3%81%A9%E3%81%93%E3%82%8D-%E5%AE%B6%E5%85%B7%E9%85%8D%E7%BD%AE-%E9%96%93%E5%8F%96%E3%82%8A-%E6%A8%A1%E6%A7%98%E6%9B%BF%E3%81%88-%E5%AE%9F%E5%AF%B8/id6835220028?uo=4",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2e/a3/a8/2ea3a8f3-fccc-a89b-b37b-bd61194d7545/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/aoPmCh2L3vUZu74TyXAfOw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/MXohKACDrP1XDAa-oiXZ8g/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/hck3xN_XXIkZ3lIP5RCDrg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/RG3rUU9zg_SjaWHVDlIzUw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/KTHXs0SfhA4dB3wwma9DHA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/d5aTTDy-0_eWiEEl7CeCuw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Xa_Eo65y_A1Mg049Thdsug/626x0w.webp"
+      ],
+      "ipad_screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0d/7d/5b/0d7d5b21-f130-87e5-3e02-ddc1d61d3378/01.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/aa/b4/8e/aab48eb8-35a3-a961-7452-93613ef50d25/02.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e4/32/b4/e432b4a8-3f84-8604-016c-c8a3776544c4/03.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/74/f3/e0/74f3e0f2-f1ca-e86a-17f0-a01b7ab018e7/04.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/23/96/b7/2396b720-8b4f-e198-943c-c2b7b0d3b0a6/05.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b3/a5/cf/b3a5cf5f-4369-49d9-e29c-2fd1dca0fe4c/06.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/58/b4/ca/58b4ca2e-6e27-502c-7d80-5a81499b596c/07.png/360x480bb.jpg"
+      ],
+      "price": "¥400",
+      "currency": "JPY",
+      "genres": [
+        "ライフスタイル",
+        "仕事効率化"
+      ],
+      "primary_genre": "Lifestyle",
+      "rating": 0,
+      "rating_count": 0,
+      "version": "1.0.0",
+      "release_date": "2026-11-22T08:00:00Z",
+      "current_version_release_date": "2026-11-22T19:19:43Z",
+      "description": "部屋の図面に家具を実寸（mm）で置いて、「置けるか」を確かめる道具です。保存も、家具や部屋の数も、制限はありません。広告・アカウント・追加の課金もありません。\n\n■ 図面を取りこむ\n・間取り図の写真や PDF を取りこみ、2点を選んで実際の長さを入れると縮尺が合います\n・ななめに撮った写真は、4隅を合わせてまっすぐに直します\n・図面が無くても、部屋の縦横を mm で入れて描けます\n\n■ 置けるかが一目で分かる\n・家具どうし・壁とのすき間を数字で出します\n・重なり・はみ出しは赤、通り道が 60cm より狭い所は黄色（幅は設定で変えられます）\n・ドアの開く範囲を描き、家具がかかると知らせます\n・2点を押して長さを測れます\n\n■ 思いどおりに動かせる\n・壁や家具の辺にくっつく（切りかえで外せます）\n・矢印で 1cm ずつ（長押しで 1mm）\n・90°ずつと、自由な角度で回す\n・幅・奥行き・位置・向きを数字で入れて直す\n\n■ 家具\n・ベッド・ソファ・テーブル・本棚など、よくある家具の寸法の目安から選べます（どれも寸法を直せます）\n・自分の家具は、幅・奥行き・高さを入れて作ります。形は四角・円・L 字\n\n■ 模様替えの案を比べる\n・1つの間取りに、置き方の案をいくつでも作れます\n・2つの案を並べて比べられます\n\n■ 消えない\n・1つ動かすごとに保存します\n・毎日の控えとゴミ箱（30日）\n・iPhone と iPad の間取りは iCloud でそろいます\n・画像・PDF（縮尺つき）・印刷\n\n通信は iCloud だけ。オフラインでそのまま使えます。\n\nサポート: https://okidokoro.tsuzukit.com/support.html",
+      "release_notes": null,
+      "content_advisory_rating": "4+",
+      "minimum_os_version": "26.0",
+      "developer_name": "Ryo Tsudukihashi",
+      "seller_name": "TsuzuKit"
+    },
+    {
+      "bundle_id": "com.tsuzukit.flipbook",
+      "name": "ぱらぱらちょう - パラパラ漫画とアニメ作成",
+      "app_store_url": "https://apps.apple.com/jp/app/%E3%81%B1%E3%82%89%E3%81%B1%E3%82%89%E3%81%A1%E3%82%87%E3%81%86-%E3%83%91%E3%83%A9%E3%83%91%E3%83%A9%E6%BC%AB%E7%94%BB%E3%81%A8%E3%82%A2%E3%83%8B%E3%83%A1%E4%BD%9C%E6%88%90/id6835220140?uo=4",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7e/67/58/7e67589c-1960-43a2-e2a7-fb84c9053ca8/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/AKf3iKp8mYSBXVW26IqgdA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/bhF43l54cfpv4etlMkZDEQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/fOAnZnUzT8pOgZGUPXiO-Q/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Z6nFmp9FF6laeBWieyPjaw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/tLsPEoYtc1440TjVQFk_nQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/DtnBlaqusCSMHT3DM2UFhQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/7pD_dUKGdwKBDNjUpll1ig/626x0w.webp"
+      ],
+      "ipad_screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b5/37/b7/b537b77b-43fd-e89a-15ac-f6404c1bb4aa/01.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/61/55/e9/6155e93b-8ea0-45f2-4a36-7d97f131255e/02.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/41/53/9e/41539e3d-09a4-8a3b-0444-7afec22bea2c/03.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/bb/dc/60/bbdc60a2-753b-873a-cd69-496b3cfa596f/04.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/3a/c6/dc/3ac6dc19-c520-fb44-1d61-1ce453d89363/05.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/94/81/51/9481510a-ba30-defe-8f25-6dac98ca72a5/06.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/83/1b/d2/831bd2bd-02f6-82ac-8512-00987e603609/07.png/360x480bb.jpg"
+      ],
+      "price": "¥400",
+      "currency": "JPY",
+      "genres": [
+        "グラフィック／デザイン",
+        "エンターテインメント"
+      ],
+      "primary_genre": "Graphics & Design",
+      "rating": 0,
+      "rating_count": 0,
+      "version": "1.0.0",
+      "release_date": "2026-11-22T08:00:00Z",
+      "current_version_release_date": "2026-11-22T19:19:35Z",
+      "description": "1コマずつ絵を描いて、すぐ再生できるパラパラ漫画の帳面です。コマの数に制限はありません。広告・アカウント・追加の課金・投稿の場はありません。描いたアニメは自由に使えます。\n\n■ 描く\n・えんぴつ・ペン・マーカー・消しゴム・塗りつぶし。太さと色はアプリを閉じても覚えます\n・Apple Pencil の筆圧\n・1コマに3枚のレイヤー（下書き・線・塗り）。下書きは書き出しに入りません\n・2本指でつまんで拡大、2本指で押すと元に戻す、3本指でやり直し\n\n■ 前のコマが透ける\n・前のコマ（赤み）と次のコマ（青み）を薄く重ねて、少しずつ動かして描けます\n・何コマ分重ねるかを選べます\n\n■ 塗りつぶしがはみ出さない\n・見えている全部のレイヤーの線を境に塗ります\n・線に小さなすき間があっても、外へはみ出しません（すき間の幅は設定で変えられます）\n\n■ 再生と書き出し\n・1〜30 コマ／秒。1コマを何コマ分見せるかも決められます（止めの絵）\n・くり返し・往復\n・GIF・動画（mp4）・連番の画像（PNG）で書き出して、好きなところへ送れます\n\n■ データ\n・コマの数・作品の数に制限なし\n・1筆ごとに保存。ゴミ箱（30日）\n・iPhone と iPad の作品は iCloud でそろいます\n・通信は iCloud だけです\n\nサポート: https://parapara.tsuzukit.com/support.html",
+      "release_notes": null,
+      "content_advisory_rating": "4+",
+      "minimum_os_version": "26.0",
+      "developer_name": "Ryo Tsudukihashi",
+      "seller_name": "TsuzuKit"
+    },
+    {
+      "bundle_id": "com.tsuzukit.cutlist",
+      "name": "いたきり - 板取り・木取り図とカットリスト",
+      "app_store_url": "https://apps.apple.com/jp/app/%E3%81%84%E3%81%9F%E3%81%8D%E3%82%8A-%E6%9D%BF%E5%8F%96%E3%82%8A-%E6%9C%A8%E5%8F%96%E3%82%8A%E5%9B%B3%E3%81%A8%E3%82%AB%E3%83%83%E3%83%88%E3%83%AA%E3%82%B9%E3%83%88/id6835220175?uo=4",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/48/e5/92/48e592c2-d248-d424-2201-e93dbc608e18/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/_YhRrKI5ciKvVG0DWOMHiA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Vad5u3Ks4qoJlhU_7Dfn5Q/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/6MMLyNsyntS2GkNNWZOiAQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/eJMbDZiHv1-B8QC12fbXrw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/loVQfCVFGFSbFBQKoP0zyQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/BQW179I1oVvR0AVc_yP9Rw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Nwjz1-To05ca7zJqnLfs0Q/626x0w.webp"
+      ],
+      "ipad_screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e7/69/5f/e7695f9a-d71c-45de-80ec-1d3ca80ef6d4/01.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d1/b9/59/d1b95946-3c12-77b2-0143-086bd466523e/02.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e3/81/43/e381434c-80aa-8b75-1ff1-3c98d6dbcba3/03.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/14/42/cd/1442cd3e-5176-983f-6a89-e5e519bb0bb7/04.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/fd/9b/09/fd9b091c-15ed-ad7f-69b2-6132a671c26e/05.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/5a/b2/db/5ab2dbcb-c7d6-ff31-d3bb-5a2af1c8f309/06.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9f/99/fb/9f99fb2e-e68d-d65b-a9bd-c428cb1d4865/07.png/360x480bb.jpg"
+      ],
+      "price": "¥500",
+      "currency": "JPY",
+      "genres": [
+        "ユーティリティ",
+        "ライフスタイル"
+      ],
+      "primary_genre": "Utilities",
+      "rating": 0,
+      "rating_count": 0,
+      "version": "1.0.0",
+      "release_date": "2026-11-22T08:00:00Z",
+      "current_version_release_date": "2026-11-22T19:19:30Z",
+      "description": "DIY でつくる物の部材を入れると、定尺の板（合板・MDF）や長物（2×4・角材・パイプ）から、少ない材料で切り出す並べ方を計算します。切る順の番号と寸法のついた板取り図は、ホームセンターのカット受付にそのまま見せられます。広告・アカウント・追加の課金はありません。\n\n■ 板（合板・MDF）\n・パネルソーで切れる、端から端までの通しの線だけで並べます\n・部材ごとに木目の向きを固定できます（回してよい部材は 90° 回して入れます）\n・刃の厚みと耳落としを数に入れます\n\n■ 長物（2×4・角材・パイプ）\n・定尺の長物から、長い部材の順に切り出します\n・ちょうどの長さは、切らずにそのまま使います\n\n■ 手元の端材を先に使う\n・端材の大きさと数を入れると、先に端材から切り出します\n\n■ 店に見せる板取り図\n・板ごとに、部材の名前と寸法・切る順の番号・余り\n・白地に大きな字の図を、PDF・画像・印刷で\n・入らない部材は「板より大きい」「木目の向きで入らない」と理由を出します\n\n■ 材料費とカット代\n・定尺の値段と1カットの値段を入れると、使う数とカットの数から合計を出します（値段はご自身で入れてください）\n\n■ データ\n・iPhone と iPad の作品は iCloud でそろいます\n・通信は iCloud だけです\n\nサポート: https://itakiri.tsuzukit.com/support.html",
+      "release_notes": null,
+      "content_advisory_rating": "4+",
+      "minimum_os_version": "26.0",
+      "developer_name": "Ryo Tsudukihashi",
+      "seller_name": "TsuzuKit"
+    },
+    {
+      "bundle_id": "com.tsuzukit.longscreenshot",
+      "name": "つぎめなし - 長いスクショを繋げる",
+      "app_store_url": "https://apps.apple.com/jp/app/%E3%81%A4%E3%81%8E%E3%82%81%E3%81%AA%E3%81%97-%E9%95%B7%E3%81%84%E3%82%B9%E3%82%AF%E3%82%B7%E3%83%A7%E3%82%92%E7%B9%8B%E3%81%92%E3%82%8B/id6835219885?uo=4",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/32/87/a2/3287a26b-ae3c-2401-f84a-4809e7e02a6f/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/Mm3B_LHOl8GGemKQ-nFWzg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/bmdAm4AqyHND1oKskrK1dA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/v_gF0aASwVuScbKvcfzmrw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/gwkhphwhhcIfGrXI6LYaOw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/N5BSwDDMc_czGMwqAf9S1A/626x0w.webp"
+      ],
+      "ipad_screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/85/fd/ab/85fdabc4-69b1-250f-5467-e3bbe97fdd25/01.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/05/f2/6b/05f26bae-c58f-1e1a-c6b1-f880f9f58a5a/02.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3b/fd/c2/3bfdc278-2016-c682-2004-8b767b36cc89/03.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f1/52/19/f1521947-ba41-7666-4d6c-10c702eaf9c6/04.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/eb/30/d0/eb30d06f-50fa-d355-1627-7ab4a3fb77a3/05.png/360x480bb.jpg"
+      ],
+      "price": "¥300",
+      "currency": "JPY",
+      "genres": [
+        "ユーティリティ",
+        "写真／ビデオ"
+      ],
+      "primary_genre": "Utilities",
+      "rating": 0,
+      "rating_count": 0,
+      "version": "1.0.0",
+      "release_date": "2026-11-22T08:00:00Z",
+      "current_version_release_date": "2026-11-22T19:19:24Z",
+      "description": "スクロールしながら撮った何枚かのスクショを、重なりを見つけて、つなぎ目のない1枚にします。縮めずに原寸のまま保存するので、文字が読めます。広告・アカウント・追加の課金はありません。\n\n■ 選ぶだけで、つながる\n・［スクショを選ぶ］で、上から順に選びます。選んだ順に並びます\n・隣どうしの重なりを自動で見つけて、1枚の下見を出します。つなぎ目には印が付きます\n・重なりが見つからないときは、そのまま下に足します\n\n■ 上下の帯は1回だけ\n・ナビゲーションバー・タブバーのように、どのスクショにも同じ位置にある上下の帯を見つけて、2枚目からは外します\n・切りかえると、帯も全部残してつなぎます\n\n■ ずれたら1pxずつ直す\n・つなぎ目ごとに、重なりを−1／＋1で直せます。［自動］で元に戻ります\n・上へ・下へ・外す・あとから足す、で並びを直せます\n\n■ 原寸で保存\n・縮めずに組みます。PNG なら文字がくっきり残ります（JPEG も選べます）\n・長すぎる画像は、8,192／16,384／32,768 px ごとに分けて保存します\n・写真のアプリに保存・共有。保存できなかったときは理由をお知らせし、もう一度保存できます\n\n■ 安心して使える\n・通信をしません。スクショも作品も、端末の中だけに置きます\n・写真はシステムの選び画面から選ぶので、写真全体への読み取りの許可は使いません。保存のときだけ追加の許可を聞きます\n・作った作品は一覧に残り、あとから開き直して直せます\n\n■ こんなときに\n・長い記事・レシピ・チャットのやりとり・設定の画面を1枚にまとめて送る、残す\n\niPhone・iPad・iPhone Duo（開くと、下見と操作を左右に並べます）に対応。日本語と英語。\n\n利用規約: https://tsugime.tsuzukit.com/terms.html",
+      "release_notes": null,
+      "content_advisory_rating": "4+",
+      "minimum_os_version": "26.0",
+      "developer_name": "Ryo Tsudukihashi",
+      "seller_name": "TsuzuKit"
+    },
+    {
+      "bundle_id": "com.tsuzukit.filmcamera",
+      "name": "とりきり - フィルムカメラ・撮りきり現像",
+      "app_store_url": "https://apps.apple.com/jp/app/%E3%81%A8%E3%82%8A%E3%81%8D%E3%82%8A-%E3%83%95%E3%82%A3%E3%83%AB%E3%83%A0%E3%82%AB%E3%83%A1%E3%83%A9-%E6%92%AE%E3%82%8A%E3%81%8D%E3%82%8A%E7%8F%BE%E5%83%8F/id6835220286?uo=4",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/57/ee/2d/57ee2d9b-1439-9fee-11ab-e92dabc9b7fa/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/Zhqgoz1IUEcIc8PGeRoksQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/nnDJBGyDZhRUoAw_weZcfg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/A538nDwJiVQORwa2RsKeDg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/XhlcNfHKpTZZUe_vLDAyxw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/klgJH78FMy6OlsO72vfF0Q/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/OG4gxsOOkCC9Q2SUxo_9zg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/6Y2V2-wPT0Kzp2-CGjwP1Q/626x0w.webp"
+      ],
+      "ipad_screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ee/99/59/ee9959fa-b677-c5ff-d768-c041bad981f6/01.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/57/d1/7a/57d17a06-b090-55de-7e51-c6792198f4d4/02.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/6e/5d/aa/6e5daa34-0d6e-a2f9-e445-5e52a9ce8b1c/03.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/72/3a/cd/723acd3d-ae5b-4803-2431-de3e516fbb41/04.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ff/ee/ce/ffeece70-e6d0-7bb1-aa5d-9b83fddaf675/05.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/7b/fc/7d/7bfc7dfe-919d-4a2b-a329-263d06f0db26/06.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/7c/f6/d1/7cf6d1e8-645c-4aec-00ec-e2588704eebf/07.png/360x480bb.jpg"
+      ],
+      "price": "¥300",
+      "currency": "JPY",
+      "genres": [
+        "写真／ビデオ",
+        "ライフスタイル"
+      ],
+      "primary_genre": "Photo & Video",
+      "rating": 0,
+      "rating_count": 0,
+      "version": "1.0.0",
+      "release_date": "2026-11-22T08:00:00Z",
+      "current_version_release_date": "2026-11-22T19:19:22Z",
+      "description": "フィルムを1本選んで、12・24・36枚を撮りきると現像されるカメラです。色はこのアプリのために作った8本のフィルム。広告・アカウント・追加の課金はありません。\n\n■ 撮りきって、待つ\n・フィルムと枚数を選ぶと、すぐ撮れます。残りの枚数がいつも見えます\n・撮りきるか［ここで現像］を押すと現像。すぐ・1時間後・翌朝から選べます\n・できたら写真のアプリに保存します。保存できなかったときは理由をお知らせします\n\n■ 8本のフィルム\n・海辺・夕暮れ・放課後・雨上がり・喫茶店・夏休み・冬の朝・墨（白黒）\n・粒子・周辺の暗さ・光漏れ・日付の写し込み（オン・オフ）\n\n■ 熱くなりにくい\n・ファインダーは軽い色の変換だけにして、粒子などの加工は撮った1枚にだけかけます\n・アプリを閉じるとカメラを止めます\n\n■ 手持ちの写真にも\n・写真のアプリの写真を選んで、フィルムの色と粒子をかけられます\n\n■ そのほか\n・0.5倍・1倍・2倍（お使いの端末にあるレンズ）・フラッシュ・セルフタイマー\n・位置情報は残すか選べます（既定は残しません）\n・現像し終えたフィルムは1本ずつアルバムに。iPhone と iPad は iCloud でそろいます\n・通信は iCloud だけです\n\n※ 日本の端末では、撮影の音は消せません。\n\nサポート: https://torikiri.tsuzukit.com/support.html",
+      "release_notes": null,
+      "content_advisory_rating": "4+",
+      "minimum_os_version": "26.0",
+      "developer_name": "Ryo Tsudukihashi",
+      "seller_name": "TsuzuKit"
+    },
+    {
+      "bundle_id": "com.tsuzukit.manuscripteditor",
+      "name": "したため - 縦書き小説エディタ・原稿用紙",
+      "app_store_url": "https://apps.apple.com/jp/app/%E3%81%97%E3%81%9F%E3%81%9F%E3%82%81-%E7%B8%A6%E6%9B%B8%E3%81%8D%E5%B0%8F%E8%AA%AC%E3%82%A8%E3%83%87%E3%82%A3%E3%82%BF-%E5%8E%9F%E7%A8%BF%E7%94%A8%E7%B4%99/id6835219913?uo=4",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/3b/26/70/3b2670ff-78a7-a10c-9e91-2107fe605e12/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/in6QzzsM41LY8qjetTaYkA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/G8LZBtk6mDyinjMViqn1ew/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/zU7lvARMiBIXgyyMxMkaNQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/QvYkOMDYbbXxdloXhBjd3w/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/RojbkeFYL6D7HCm-Apmq1w/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/XZ2gnPOykuSeL67flZEhnw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/jfxnutPkybjT-NG89Zno3g/626x0w.webp"
+      ],
+      "ipad_screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/cb/87/1a/cb871a94-52f8-970c-986a-4dfb365c7b52/01.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/41/16/c1/4116c1ba-7e12-2cd0-abed-3e8f292b8a4d/02.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b6/e3/9a/b6e39ae4-2f9e-1102-df0a-7d085477dc62/03.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d4/5c/b3/d45cb364-37c2-c2da-2e45-176d5b52e927/04.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ab/dd/6c/abdd6cb0-402e-6992-a2e7-7d9580be374c/05.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/01/68/11/016811b5-d3a2-3055-3c01-3d50e65947a5/06.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b6/3d/17/b63d17ec-23bf-baf4-8c2e-5b4ebbe4b72d/07.png/360x480bb.jpg"
+      ],
+      "price": "¥400",
+      "currency": "JPY",
+      "genres": [
+        "仕事効率化",
+        "ブック"
+      ],
+      "primary_genre": "Productivity",
+      "rating": 0,
+      "rating_count": 0,
+      "version": "1.0.0",
+      "release_date": "2026-11-22T08:00:00Z",
+      "current_version_release_date": "2026-11-22T19:15:38Z",
+      "description": "縦書きで小説・原稿を書くエディタです。打つそばから縦に組み、ルビ・傍点も投稿サイトと同じ書き方のまま、その場で字の横に乗ります。いつでも400字詰めの原稿用紙で何枚かが分かり、公募用の原稿用紙のPDFと、投稿サイトにそのまま貼れるテキストで書き出せます。広告・アカウント・追加の課金はありません。\n\n■ 縦書きで書く\n・縦書きのまま打てます。変換中の字も縦に並びます\n・横書きにも切りかえられます\n・2けたの数字（12・!?）は自動で縦中横にします\n・外付けキーボードの矢印でも動けます（上下で字の前後・左右で行の前後）\n\n■ ルビ・傍点\n・ルビは「｜親字《るび》」、漢字だけなら「漢字《かんじ》」。傍点は「《《傍点》》」。投稿サイトと同じ書き方なので、貼っても崩れません\n・キーボードの上の［ルビ］［傍点］で、選んだ字に入れられます\n・ダッシュ「――」と三点リーダ「……」が1つだけのときは知らせます\n\n■ 字数と原稿用紙の枚数\n・本文の字数（ルビの読みや記号は数えません）と、400字詰め（20字×20行）で何枚かを、いつも下に出します\n・改行・行頭の句読点や閉じ括弧の追い込み・段落の字下げまで数えます\n・目標の字数を決めると、残りが分かります\n\n■ 作品と章\n・作品ごとに章を分けて書き、ドラッグで並べかえられます\n・登場人物・設定・プロットのメモを、書く画面から開けます\n\n■ 消えない\n・1字ごとに保存します。保存のボタンはありません\n・章ごとに版を残せます（手で残す＋1日1回自動・30日）。前の版に戻すときも、いまの本文を版に残してから戻します\n・毎日の控えを30日ぶん残し、控えのファイルで書き出し・読みこみもできます。消した作品はゴミ箱に30日\n\n■ iCloud で同期\n・iCloud に入っていれば、作品・章・版を iPhone と iPad で同じにします。同期でぶつかったら、両方の本文を版に残します\n・iCloud に入っていなくても、端末の中だけで使えます\n\n■ 書き出し\n・テキスト（.txt）・投稿サイト用にコピー（記号はそのまま）\n・原稿用紙の PDF（A4 横・20字×20行・縦書き・ルビつき・作品名と通し番号）\n・文庫のような縦組みの PDF\n\n■ 読みやすく\n・書体（明朝・ゴシック）・字の大きさ・行間・地の色（白・生成り・暗い）を選べます\n\n■ iPad・iPhone Duo\n・広い画面では、左に章の一覧・右に本文の2列で書けます\n\n■ データと通信\n・通信は iCloud の同期だけです。開発者のサーバー・解析・広告はありません\n\nお問い合わせ: https://shitatame.tsuzukit.com/support.html",
+      "release_notes": null,
+      "content_advisory_rating": "4+",
+      "minimum_os_version": "26.0",
+      "developer_name": "Ryo Tsudukihashi",
+      "seller_name": "TsuzuKit"
+    },
+    {
+      "bundle_id": "com.tsuzukit.dicebox",
+      "name": "さいのめ - サイコロ・TRPGダイス・多面ダイス",
+      "app_store_url": "https://apps.apple.com/jp/app/%E3%81%95%E3%81%84%E3%81%AE%E3%82%81-%E3%82%B5%E3%82%A4%E3%82%B3%E3%83%AD-trpg%E3%83%80%E3%82%A4%E3%82%B9-%E5%A4%9A%E9%9D%A2%E3%83%80%E3%82%A4%E3%82%B9/id6835219958?uo=4",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e5/55/0c/e5550c22-5578-1d28-d4e4-784ee915827a/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/VzBFjGj2U-UXPRSMe-kz8Q/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/8Hr9GHYteY69rmuqdTQoEA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/xvBcjHXrmsZbg2a8kCWFSw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/27bhz_c230TA561oAYucGg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/5Zx4w0LF1WiAgaTEZ8rsDw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/T80BX0-ne-TSsIDGBkEZFg/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/dN5NxIFwKzdOYg3Y9hUCbQ/626x0w.webp"
+      ],
+      "ipad_screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/21/2d/5a/212d5a0d-45eb-4289-d1f3-5b91b27d23f3/01.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0e/7d/23/0e7d23bb-e431-6642-d661-5f7d5a15203f/02.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2f/44/2f/2f442f75-0118-40d8-cf35-deb0cfcd77a0/03.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e1/f7/ad/e1f7ad88-a6ae-2de8-0df4-665a84bd9d4e/04.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ba/39/23/ba3923eb-1c52-cffb-4123-c2a0a756aa3a/05.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/4f/94/d4/4f94d437-291e-bc3b-bccf-fb4deca3d637/06.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/18/d4/c1/18d4c158-edd5-be4e-1cf5-21fc318a522a/07.png/360x480bb.jpg"
+      ],
+      "price": "¥400",
+      "currency": "JPY",
+      "genres": [
+        "エンターテインメント",
+        "ユーティリティ"
+      ],
+      "primary_genre": "Entertainment",
+      "rating": 0,
+      "rating_count": 0,
+      "version": "1.0.0",
+      "release_date": "2026-11-22T08:00:00Z",
+      "current_version_release_date": "2026-11-22T19:15:37Z",
+      "description": "机の上で本物のように転がる3Dのサイコロ。すごろくやボードゲームから、TRPG の判定まで、これひとつで振れます。\n\n■ 本物のように転がる\n・フェルトや木の机の上で、サイコロが跳ねて、転がって、止まります\n・出た目は、止まった向きから読みます\n・［振る］を押すか、机を2回たたくか、スマホを振るだけ\n・転がる長さ・音（木の机・フェルト・カップ）・音なし・振動を選べます\n\n■ 止めて、残りだけ振り直す\n・サイコロを押すと鍵がかかり、次は残りだけ振れます。そろえたい目を止めておけます\n\n■ どんなサイコロでも\n・2面（コイン）・3面・4面・6面・8面・10面・12面・20面・100面\n・8つの色と肌（白・黒・木・赤・青・緑・半透明・金）\n\n■ セットで1回\n・すごろく・2つ振り・3つ振り・5つ振り・1d100 判定・1d3・1d10・1d20 判定・有利／不利・ダメージ・全部の種類・コイン\n・自分のセットも作れます（数・色・足す数）\n\n■ TRPG に\n・式で振る: 「3d6+2」「1d100」「2d20」を打つだけ\n・1d100 判定: 目標値を入れると「成功／クリティカル／ファンブル」を出します\n・履歴: 時刻・内訳・合計を300回ぶん。今日何回振ったかも\n\n■ 自分で作るサイコロ\n・面の数（2〜12）を決めて、文字・色・絵文字を入れられます\n・はい／いいえ・色のサイコロ・今日のごはん・話題のサイコロの例も入っています\n\n■ 安心して使える\n・買い切りで全部の機能が使えます。アプリ内課金・サブスクリプション・広告はありません\n・登録もログインもなし。通信もしません。履歴とセットは端末の中だけに保存します\n・iPad と iPhone Duo では、机と合計を左右に並べて大きく使えます。日本語と英語\n\n使い方: https://sainome.tsuzukit.com/support.html",
+      "release_notes": null,
+      "content_advisory_rating": "4+",
+      "minimum_os_version": "26.0",
+      "developer_name": "Ryo Tsudukihashi",
+      "seller_name": "TsuzuKit"
+    },
+    {
+      "bundle_id": "com.tsuzukit.PoopCounter",
+      "name": "うんちくん：友達や家族とうんち記録をシェア",
+      "app_store_url": "https://apps.apple.com/jp/app/%E3%81%86%E3%82%93%E3%81%A1%E3%81%8F%E3%82%93-%E5%8F%8B%E9%81%94%E3%82%84%E5%AE%B6%E6%97%8F%E3%81%A8%E3%81%86%E3%82%93%E3%81%A1%E8%A8%98%E9%8C%B2%E3%82%92%E3%82%B7%E3%82%A7%E3%82%A2/id6758856276?uo=4",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b3/ae/60/b3ae6024-a006-8512-09be-08129506cbba/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/6GBJdW0LyKM3GEt6DzY7IA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/qgHwoEH12De8nx-UQQM6AA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/2he6AjxBMe2Ab9eeRc6H6Q/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PW4WYJ-mf1YvK05fHmFQHQ/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/TZyfkOQrsS9ploX6MPE1PA/626x0w.webp"
+      ],
+      "ipad_screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/bc/ea/12/bcea124a-7c65-a397-059d-b7abe2518d2a/APP_IPAD_PRO_3GEN_129_01.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a9/c4/9f/a9c49f06-83dd-f59b-dfc4-a842147fbefb/APP_IPAD_PRO_3GEN_129_02.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3f/03/1c/3f031c93-eeae-797d-6f97-a6da4572e52f/APP_IPAD_PRO_3GEN_129_03.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/37/1e/47/371e478b-5f29-cc51-2cec-f7ab82949862/APP_IPAD_PRO_3GEN_129_04.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2a/cd/c0/2acdc03f-f287-88a9-f586-327976c3d348/APP_IPAD_PRO_3GEN_129_05.png/360x480bb.jpg"
+      ],
+      "price": "無料",
+      "currency": "JPY",
+      "genres": [
+        "ヘルスケア／フィットネス",
+        "エンターテインメント"
+      ],
+      "primary_genre": "Health & Fitness",
+      "rating": 4.12629,
+      "rating_count": 578,
+      "version": "3.5.0",
+      "release_date": "2026-02-26T08:00:00Z",
+      "current_version_release_date": "2026-11-17T16:35:11Z",
+      "description": "うんちくんは、毎日のうんちを楽しく記録して友達や家族とシェアできるアプリです。\n\n【ワンタップで記録】\n「でた！」ボタンを押すだけで今日のうんちを記録。回数に応じて37種類以上のうんちキャラクターがリアクションしてくれます。\n\n【うんトモとシェア】\n友達コードやQRコードで「うんトモ」を追加。ストーリー形式でうんトモのうんち状況をチェックできます。まるでInstagramのストーリーのように、楽しくうんち報告！\n\n【ウィジェット対応】\nホーム画面にウィジェットを追加すれば、アプリを開かなくても今日の記録が一目でわかります。回数に応じてテーマカラーが変化！\n\n【うんカレ（カレンダー）】\n週間カレンダーで日ごとの記録を確認。平均回数や最高記録もチェックできます。\n\n【ストリーク機能】\n連続記録日数をカウント。毎日のうんち習慣をゲーム感覚で続けられます。\n\n【プッシュ通知】\nうんトモがうんちした時にお知らせが届きます。友達申請の通知も見逃しません。\n\n【アバターカスタマイズ】\n肌色・髪型・髪色・目の色・服装など自由にカスタマイズ。あなただけのアバターでうんトモと交流しよう。\n\n【無料版】\n・ワンタップ記録\n・うんトモ追加（無制限）\n・ストーリー共有\n・週間カレンダー\n・ウィジェット\n・アバターカスタマイズ\n・プッシュ通知\n\n【プレミアム版】\n・うんトモの記録に、90種類を超える限定リアクションスタンプで気持ちを返せます\n・ホーム画面のアプリアイコンをお気に入りのデザインに変えられます\n・好きな写真をプロフィール画像に設定できます\n・サポーター限定の帽子・オーラ・表情で、うんちくんを自分だけの姿に着せ替えられます\n・月間カレンダー＆サマリー\n・広告なし\n・すべての機能が使い放題\n\n毎日のうんちを、うんちくんと一緒に楽しく記録しよう！\n\n【リンク】\n・サポート: https://tsuzukit.com/contact/\n・利用規約: https://unchikun.app/legal/terms-of-service\n・プライバシーポリシー: https://unchikun.app/legal/privacy-policy\n・特定商取引法に基づく表記: https://unchikun.app/legal/commercial-law",
+      "release_notes": "うんトモに、ずっと使えるサポーターを贈れるようになったよ。\n一回贈れば、期限を気にしなくていいんだ。\nギフトのプランに、うんちくんの絵もついたよ。\nとっておきの贈りもの、届けてみてね。\n\niPhone Duo をとじても、画面が左右にならんだままになることがあったのを直したよ。\nトークの手描きの線が重なっても、しま模様にならないようにしたよ。",
+      "content_advisory_rating": "4+",
+      "minimum_os_version": "17.0",
+      "developer_name": "Ryo Tsudukihashi",
+      "seller_name": "TsuzuKit"
+    },
+    {
+      "bundle_id": "com.tsuzukit.Bytebeat",
+      "name": "Bytebeat 1行の数式が音になる",
+      "app_store_url": "https://apps.apple.com/jp/app/bytebeat-1%E8%A1%8C%E3%81%AE%E6%95%B0%E5%BC%8F%E3%81%8C%E9%9F%B3%E3%81%AB%E3%81%AA%E3%82%8B/id6811730170?uo=4",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/2a/40/b2/2a40b256-955b-f718-4e4f-b958016997ec/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/EpP_M2iRV4A_Ejn9_VEwsw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Xpxr-PI3AST45CzgPURmAw/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/C2PIWYZxnR99xPq2j_Pe-g/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/0nseboWq7LYaMHxBPDYjQA/626x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/1AJdV83NGb5YJ-H37ahW_Q/626x0w.webp"
+      ],
+      "ipad_screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c7/e7/d8/c7e7d8d8-fd22-1a13-1606-f3bd47e254fe/01_studio.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/06/6c/d1/066cd162-0c51-21a6-1462-65aa1f7868b1/02_keypad.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d3/55/b4/d355b401-00e7-afb6-a607-cd55d6822e55/03_library.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/49/fd/ac/49fdacc2-d855-8ef8-0e8b-403398b920e6/04_controls.png/360x480bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b7/9b/43/b79b43b0-e626-d013-4d49-f59b167d7cd0/05_export.png/360x480bb.jpg"
+      ],
+      "price": "¥500",
+      "currency": "JPY",
+      "genres": [
+        "ミュージック",
+        "開発ツール"
+      ],
+      "primary_genre": "Music",
+      "rating": 5,
+      "rating_count": 1,
+      "version": "1.0",
+      "release_date": "2026-09-29T07:00:00Z",
+      "current_version_release_date": "2026-09-29T11:14:28Z",
+      "description": "t*(42&t>>10)\n\nこの1行が、そのまま曲になります。\n\nBytebeat は、書いた数式をそのまま音として鳴らすアプリです。t を 0 から 1 ずつ増やしながら式を評価して、返ってきた値を波形にします。シンセサイザーも、音源ファイルも、サンプリングも使いません。式が、音そのものです。\n\n■ 鳴らしたまま書き換えられる\n・再生を止めずに式を編集できます。t は止まりません\n・1文字変えるだけで、曲がまったく別のものに変わります\n・Bytebeat の式に出てくる文字だけを並べた専用キーパッド。1タップで1文字打てます\n\n■ 波形が見える\n・オシロスコープで、いま鳴っている波形をそのまま表示します\n・立ち上がりに合わせて描くので、波形が横に流れません\n・命令数とスタックの深さも出ます\n\n■ 有名な式が29個\n・2011年に viznut が公開した実験に由来する式をはじめ、29個を収録\n・気に入った式は名前をつけてお気に入りに保存できます\n\n■ 3つのモード\n・Bytebeat：結果 & 255 を 0…255 のサンプルに。元祖と同じ鳴り方です\n・Signed：符号つき8bitとして扱います\n・Floatbeat：結果をそのまま -1…1 の波形に。sin や cos が活きます\n\n■ t のはやさを変えられる\n・500〜48000Hz。元祖の Bytebeat は 8000Hz で鳴っていました\n・遅くすると低く、速くすると高くなります\n\n■ WAV に書き出せる\n・8bit 8000Hz モノラル。Bytebeat そのものの形式です\n・10秒・30秒・1分・3分から選べます\n\n■ 書ける式\n・変数は t、定数は PI と E\n・算術、ビット演算、シフト、比較、論理、三項演算子\n・sin cos tan asin acos atan abs floor ceil round sqrt exp log sign int pow min max atan2 mod\n・計算はすべて Double、ビット演算とシフトのときだけ 32bit 整数に丸めます。JavaScript の ToInt32 と同じ挙動なので、web で見つけた式をそのまま貼っても鳴ります\n\n■ 通信しません\n・アカウント登録はありません\n・広告もトラッキングもありません\n・インターネットに接続しません。飛行機の中でも動きます\n\nプリセットの多くは viznut（Ville-Matias Heikkilä）が2011年に公開した実験に由来します。",
+      "release_notes": null,
+      "content_advisory_rating": "4+",
+      "minimum_os_version": "17.0",
+      "developer_name": "Ryo Tsudukihashi",
+      "seller_name": "TsuzuKit"
+    },
     {
       "bundle_id": "com.tsuzukit.invoicemaker",
       "name": "かきつけ - 請求書・見積書・納品書・領収書作成",
@@ -83,50 +619,6 @@
       "release_notes": null,
       "content_advisory_rating": "4+",
       "minimum_os_version": "26.0",
-      "developer_name": "Ryo Tsudukihashi",
-      "seller_name": "TsuzuKit"
-    },
-    {
-      "bundle_id": "com.tsuzuki817.OmoideMap",
-      "name": "旅行思い出マップ - 旅の記憶を、地図に描く",
-      "app_store_url": "https://apps.apple.com/jp/app/%E6%97%85%E8%A1%8C%E6%80%9D%E3%81%84%E5%87%BA%E3%83%9E%E3%83%83%E3%83%97-%E6%97%85%E3%81%AE%E8%A8%98%E6%86%B6%E3%82%92-%E5%9C%B0%E5%9B%B3%E3%81%AB%E6%8F%8F%E3%81%8F/id6478291625?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/00/58/7f/00587f55-9232-862f-9b22-02690332969b/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
-      "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/QhfGME-Zp0VPTHhwCId3aQ/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/zjPGLG24mLZ-A4Wx6O2q6g/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/Yt4OnoIOyU3dmgAOf9fE0w/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/DFUyGflSmD7ginatlGQ5CQ/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/IghBHBQWOheDDfR_KntZ6A/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/BPfgRQe4_1On402YKBOQjA/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/Kqygran1MPO8TY01vVlFUw/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/DY5wBkSMcrQ2mS5x5G0JIg/626x0w.webp"
-      ],
-      "ipad_screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9d/c6/c3/9dc6c3ff-ebad-6824-b94a-de72e93659c7/01_map.png/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/5e/09/8e/5e098e9d-0a16-1f03-628c-f93d6fbb7279/02_fill.png/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4a/5a/0c/4a5a0ceb-0314-d8f1-f58c-81f1d6d5cd5a/03_oneday.png/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/57/f2/e1/57f2e1bc-0df7-786b-1772-80a8e58a080a/04_world.png/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/21/3b/79/213b79b4-d401-4f68-b84f-2af531366090/05_list.png/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/27/37/94/27379494-8e2c-cc18-79c4-0b812cea9965/06_many.png/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/19/81/bc/1981bc90-8576-71aa-1329-6450e48ffea8/07_sticker.png/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e0/a5/e4/e0a5e497-6535-6f65-4f59-18249be3a9ee/08_home.png/360x480bb.jpg"
-      ],
-      "price": "無料",
-      "currency": "JPY",
-      "genres": [
-        "旅行",
-        "写真／ビデオ"
-      ],
-      "primary_genre": "Travel",
-      "rating": 4.555,
-      "rating_count": 800,
-      "version": "2.1.1",
-      "release_date": "2024-02-25T08:00:00Z",
-      "current_version_release_date": "2026-11-19T19:42:40Z",
-      "description": "14万ダウンロード突破！\n写真をパズルのように切り取って、地図に貼るアプリです。\n\n行った場所が少しずつ色づいて、旅の記憶がそのまま一枚の地図になっていきます。\n\n\n■ 47都道府県だけじゃない\n\n全国マップに加えて、42の都道府県マップで市区町村まで細かく記録できます。\n北海道179、長野77、埼玉63、東京62——ぜんぶで1,667エリア。\nあなたの地元も、きっとあります。\n\n\n■ 主な機能\n\n□ 写真が都道府県のかたちに切り取られて、地図にはまる\n□ ひとつの場所に、写真を好きなだけ追加できる\n□ MapLinkで友達・家族・恋人と同じ地図を共同編集\n□ 写真にコメントを添えて、その日の気持ちも残す\n□ ご当地ステッカーで地図を彩る（だるま、シーサー、こいのぼり…）\n□ 1年の思い出を、BGM付きの振り返り動画に\n□ 毎月届く「先月のおもいで」でふりかえり\n□ 完成した地図を高画質で保存・印刷\n□ ホーム画面のウィジェットに、過去の思い出をランダム表示\n□ 写真アプリの共有ボタンから直接投稿\n\n\n■ 日本を埋めたら、海外へ\n\nアジア24ヶ国、台湾22地域、アメリカ50州＋1準州のマップも用意しています。\n\nひとりでも、大切な人とでも。\n\n\n■ 思い出マップサポーター（有料）\n\n広告の非表示、マップ作り放題、高画質での保存・印刷、まとめて投稿などが使えるようになります。\n地図をつくって写真を貼る基本の機能は、ずっと無料のままお使いいただけます。\n\n\n■ その他情報\n・利用規約\nhttps://omoidemap-36d68.web.app/legal/terms.html\n\n・プライバシーポリシー\nhttps://omoidemap-36d68.web.app/legal/privacy.html\n\n・特定商取引法に基づく表示\nhttps://omoidemap-36d68.web.app/legal/commercial.html",
-      "release_notes": "【v2.1.1】\n\nアプリを開いたときに出ていた画面を減らしました。\n\n■ 変わったところ\n初回限定の割引を案内する画面と、ホームに出ていたバナーをなくしました。\n「このアプリは気に入っていますか？」とおたずねする画面をなくしました。ご意見は、これまでどおり設定から送れます。\n\nいつもご利用いただきありがとうございます！",
-      "content_advisory_rating": "17+",
-      "minimum_os_version": "17.0",
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit"
     },
@@ -357,8 +849,8 @@
         "辞書／辞典／その他"
       ],
       "primary_genre": "Education",
-      "rating": 0,
-      "rating_count": 0,
+      "rating": 5,
+      "rating_count": 1,
       "version": "1.0.0",
       "release_date": "2026-11-18T14:37:30Z",
       "current_version_release_date": "2026-11-18T14:37:30Z",
@@ -743,44 +1235,6 @@
       "description": "ZennChatは、仏教の教えと瞑想を日常に取り入れるためのアプリです。\n\n「The Teaching of Buddha（仏教聖典）」を基に、毎日ひとつの一節と、その日にできる小さな実践をお届けします。読んで、坐って、書きとめる。ホームの「今日の道のり」をたどるだけで、10分ほどの習慣になります。\n\n▸ 今日の教え\n日替わりの一節に、解説と今日の実践を添えてお届けします。読み上げとホーム画面ウィジェットに対応。ウィジェットは通信がなくても毎日切り替わります。\n\n▸ 今日の道のり\n読む・行う・坐る・書く・学ぶを一本の流れにまとめ、今日やることが一目で分かります。連続日数と週の記録も残ります。\n\n▸ 禅の師に相談する\n仏教の教えに根ざしたAIに、いまの悩みを相談できます。読んでいる一節から、そのまま質問を続けることもできます。\n\n▸ 坐禅タイマー\n5分から30分まで。音声ガイドは任意で、既定は静けさのまま。坐った記録は自動で残ります。\n\n▸ 修行プラン\n慈悲・智慧・マインドフルネスなど、テーマ別の複数日プログラム。日ごとに読誦・瞑想・実践・振り返りが用意され、書いたものは後から読み返せます。\n\n▸ 善念ジャーナル\n朝の意図、日中の善い行い、夜の振り返りを記録。週次レポートで徳の傾向を振り返れます。\n\n▸ 調べる\n教え365件と、禅語・用語・作法・経典・宗派370件から引けます。「別れがつらいとき」「眠れない夜に」など、心の状態から引ける言葉集も24種類。\n\n▸ ひと呼吸おく\n気持ちが乱れたときに、ひとつの言葉と呼吸のための静かな画面を開きます。\n\n▸ 仏教クイズ\n教え・歴史・用語を160問のクイズで学べます。\n\n▸ 祖師・高僧図鑑\n40人の祖師と高僧の生涯と教えを収録。\n\n▸ 言葉を贈る\n心に残った一節を、一枚のカードにして贈れます。\n\n日本語・英語に対応しています。\n\n□ Premium\n自動更新サブスクリプション（週額／月額／年額）で、次がご利用いただけます。\n- 禅の師への相談が無制限に（無料では通算3回まで）\n- Premium限定の修行プラン9本（全30本のうち）\n- 配色テーマ4種（墨・藍・苔・暁）。無料は「和紙」\n\n課金について\n\n- 購入確定時にApple IDアカウントに課金されます\n- 期間終了の24時間以上前に解約しない限り、自動更新されます\n- iOSの設定からいつでも管理・解約できます\n- 利用規約（EULA）: https://zennchat-da0ab.web.app/legal/terms.html\n- プライバシーポリシー: https://zennchat-da0ab.web.app/legal/privacy.html\n- 特定商取引法に基づく表記: https://zennchat-da0ab.web.app/legal/tokusho.html\n\n□ 経典の引用について\n経典の本文は公益財団法人 仏教伝道協会（BDK）発行『仏教聖典』および同協会の公式英訳を、クレジット表示を条件とする許諾に基づき使用しています。解説と実践は本アプリのオリジナルです。",
       "release_notes": "通信の安全性を高めるため、内部のライブラリを更新しました。",
       "content_advisory_rating": "17+",
-      "minimum_os_version": "17.0",
-      "developer_name": "Ryo Tsudukihashi",
-      "seller_name": "TsuzuKit"
-    },
-    {
-      "bundle_id": "com.tsuzukit.PoopCounter",
-      "name": "うんちくん：友達や家族とうんち記録をシェア",
-      "app_store_url": "https://apps.apple.com/jp/app/%E3%81%86%E3%82%93%E3%81%A1%E3%81%8F%E3%82%93-%E5%8F%8B%E9%81%94%E3%82%84%E5%AE%B6%E6%97%8F%E3%81%A8%E3%81%86%E3%82%93%E3%81%A1%E8%A8%98%E9%8C%B2%E3%82%92%E3%82%B7%E3%82%A7%E3%82%A2/id6758856276?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b3/ae/60/b3ae6024-a006-8512-09be-08129506cbba/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
-      "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/6GBJdW0LyKM3GEt6DzY7IA/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/qgHwoEH12De8nx-UQQM6AA/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/2he6AjxBMe2Ab9eeRc6H6Q/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PW4WYJ-mf1YvK05fHmFQHQ/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/TZyfkOQrsS9ploX6MPE1PA/626x0w.webp"
-      ],
-      "ipad_screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/bc/ea/12/bcea124a-7c65-a397-059d-b7abe2518d2a/APP_IPAD_PRO_3GEN_129_01.png/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a9/c4/9f/a9c49f06-83dd-f59b-dfc4-a842147fbefb/APP_IPAD_PRO_3GEN_129_02.png/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3f/03/1c/3f031c93-eeae-797d-6f97-a6da4572e52f/APP_IPAD_PRO_3GEN_129_03.png/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/37/1e/47/371e478b-5f29-cc51-2cec-f7ab82949862/APP_IPAD_PRO_3GEN_129_04.png/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2a/cd/c0/2acdc03f-f287-88a9-f586-327976c3d348/APP_IPAD_PRO_3GEN_129_05.png/360x480bb.jpg"
-      ],
-      "price": "無料",
-      "currency": "JPY",
-      "genres": [
-        "ヘルスケア／フィットネス",
-        "エンターテインメント"
-      ],
-      "primary_genre": "Health & Fitness",
-      "rating": 4.12629,
-      "rating_count": 578,
-      "version": "3.5.0",
-      "release_date": "2026-02-26T08:00:00Z",
-      "current_version_release_date": "2026-11-17T16:35:11Z",
-      "description": "うんちくんは、毎日のうんちを楽しく記録して友達や家族とシェアできるアプリです。\n\n【ワンタップで記録】\n「でた！」ボタンを押すだけで今日のうんちを記録。回数に応じて37種類以上のうんちキャラクターがリアクションしてくれます。\n\n【うんトモとシェア】\n友達コードやQRコードで「うんトモ」を追加。ストーリー形式でうんトモのうんち状況をチェックできます。まるでInstagramのストーリーのように、楽しくうんち報告！\n\n【ウィジェット対応】\nホーム画面にウィジェットを追加すれば、アプリを開かなくても今日の記録が一目でわかります。回数に応じてテーマカラーが変化！\n\n【うんカレ（カレンダー）】\n週間カレンダーで日ごとの記録を確認。平均回数や最高記録もチェックできます。\n\n【ストリーク機能】\n連続記録日数をカウント。毎日のうんち習慣をゲーム感覚で続けられます。\n\n【プッシュ通知】\nうんトモがうんちした時にお知らせが届きます。友達申請の通知も見逃しません。\n\n【アバターカスタマイズ】\n肌色・髪型・髪色・目の色・服装など自由にカスタマイズ。あなただけのアバターでうんトモと交流しよう。\n\n【無料版】\n・ワンタップ記録\n・うんトモ追加（無制限）\n・ストーリー共有\n・週間カレンダー\n・ウィジェット\n・アバターカスタマイズ\n・プッシュ通知\n\n【プレミアム版】\n・うんトモの記録に、90種類を超える限定リアクションスタンプで気持ちを返せます\n・ホーム画面のアプリアイコンをお気に入りのデザインに変えられます\n・好きな写真をプロフィール画像に設定できます\n・サポーター限定の帽子・オーラ・表情で、うんちくんを自分だけの姿に着せ替えられます\n・月間カレンダー＆サマリー\n・広告なし\n・すべての機能が使い放題\n\n毎日のうんちを、うんちくんと一緒に楽しく記録しよう！\n\n【リンク】\n・サポート: https://tsuzukit.com/contact/\n・利用規約: https://unchikun.app/legal/terms-of-service\n・プライバシーポリシー: https://unchikun.app/legal/privacy-policy\n・特定商取引法に基づく表記: https://unchikun.app/legal/commercial-law",
-      "release_notes": "うんトモに、ずっと使えるサポーターを贈れるようになったよ。\n一回贈れば、期限を気にしなくていいんだ。\nギフトのプランに、うんちくんの絵もついたよ。\nとっておきの贈りもの、届けてみてね。\n\niPhone Duo をとじても、画面が左右にならんだままになることがあったのを直したよ。\nトークの手描きの線が重なっても、しま模様にならないようにしたよ。",
-      "content_advisory_rating": "4+",
       "minimum_os_version": "17.0",
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit"
@@ -2334,44 +2788,6 @@
       "description": "切れない包丁のほうが、指を切ります。\n\n力を入れないと食材に入らないので、刃が滑ったときに勢いがついてしまう。研ぎを先延ばしにすることは、台所では安全の問題です。KnifeKeepは、研ぎどきと錆び対策を鋼材ごとに管理するアプリです。\n\n● 鋼材から研ぎどきを割り出す\n\nステンレス、炭素鋼、ダマスカス、セラミック。鋼材が違えば切れ味の持ちも違います。登録した鋼材から研ぎの目安を計算し、近づいたら知らせます。\n\n● 錆びる前に気づく\n\nハガネやダマスカスは、濡れたまま置くだけで錆びます。最後に使った日からの日数で「手入れOK」か「錆びるかも」かを表示するので、拭くか油を塗るかの判断ができます。\n\n● 一本ずつ写真で\n\n包丁を撮れば背景を自動で切り抜いて登録します。和包丁も洋包丁も、刃文や柄の質感がそのまま並びます。\n\n● 知らせは三段階\n\n研ぎどきの二週間前、数日前、当日。過ぎてからは研ぐまで毎日。切れ味が落ちたまま使い続けることを避けるための設計です。\n\n● 料理好きの豆知識\n\n研ぎの角度、砥石の番手、食洗機に入れてはいけない理由、まな板の選び方。24本のTipsを、包丁くんが日替わりで持ってきます。\n\n● ウィジェット\n\n研ぎどきが近い包丁と、その状態をホーム画面で確認できます。\n\n▽ 料金\n\n無料版では、包丁を3本まで登録して研ぎどきの通知を受け取れます。\n\nプレミアムでは、登録が無制限になり、置き場所でのグループ分け、お手入れの記録（種類・砥石・所感）、広告の非表示が使えます。\n\n¥3,000 を一度お支払いいただくか、週額 ¥200 でお使いいただけます。無料トライアルはありません。週額をお使いの場合は、期間終了の24時間以上前に解約しない限り自動更新され、Apple ID に請求されます。設定からいつでも解約できます。\n\n▽ ご注意\n\n研ぎの周期は鋼材からの一般的な目安です。使用頻度や切れ味の好みに合わせて調整してください。\n\nサポート https://tsuzukit.com/contact/\n利用規約 https://tsuzukit.com/legal/terms-of-service.html\nプライバシーポリシー https://tsuzukit.com/legal/privacy-policy.html",
       "release_notes": "はじめての方に向けた案内を、砥石の番手を上げていく形に作り直しました。粗砥から仕上げへ進みます。プレミアムの画面も刃の断面で表すようにしています。",
       "content_advisory_rating": "17+",
-      "minimum_os_version": "17.0",
-      "developer_name": "Ryo Tsudukihashi",
-      "seller_name": "TsuzuKit"
-    },
-    {
-      "bundle_id": "com.tsuzukit.Bytebeat",
-      "name": "Bytebeat 1行の数式が音になる",
-      "app_store_url": "https://apps.apple.com/jp/app/bytebeat-1%E8%A1%8C%E3%81%AE%E6%95%B0%E5%BC%8F%E3%81%8C%E9%9F%B3%E3%81%AB%E3%81%AA%E3%82%8B/id6811730170?uo=4",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/2a/40/b2/2a40b256-955b-f718-4e4f-b958016997ec/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
-      "screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/EpP_M2iRV4A_Ejn9_VEwsw/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/Xpxr-PI3AST45CzgPURmAw/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/C2PIWYZxnR99xPq2j_Pe-g/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/0nseboWq7LYaMHxBPDYjQA/626x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/1AJdV83NGb5YJ-H37ahW_Q/626x0w.webp"
-      ],
-      "ipad_screenshots": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c7/e7/d8/c7e7d8d8-fd22-1a13-1606-f3bd47e254fe/01_studio.png/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/06/6c/d1/066cd162-0c51-21a6-1462-65aa1f7868b1/02_keypad.png/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d3/55/b4/d355b401-00e7-afb6-a607-cd55d6822e55/03_library.png/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/49/fd/ac/49fdacc2-d855-8ef8-0e8b-403398b920e6/04_controls.png/360x480bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b7/9b/43/b79b43b0-e626-d013-4d49-f59b167d7cd0/05_export.png/360x480bb.jpg"
-      ],
-      "price": "無料",
-      "currency": "JPY",
-      "genres": [
-        "ミュージック",
-        "開発ツール"
-      ],
-      "primary_genre": "Music",
-      "rating": 5,
-      "rating_count": 1,
-      "version": "1.0",
-      "release_date": "2026-09-29T07:00:00Z",
-      "current_version_release_date": "2026-09-29T11:14:28Z",
-      "description": "t*(42&t>>10)\n\nこの1行が、そのまま曲になります。\n\nBytebeat は、書いた数式をそのまま音として鳴らすアプリです。t を 0 から 1 ずつ増やしながら式を評価して、返ってきた値を波形にします。シンセサイザーも、音源ファイルも、サンプリングも使いません。式が、音そのものです。\n\n■ 鳴らしたまま書き換えられる\n・再生を止めずに式を編集できます。t は止まりません\n・1文字変えるだけで、曲がまったく別のものに変わります\n・Bytebeat の式に出てくる文字だけを並べた専用キーパッド。1タップで1文字打てます\n\n■ 波形が見える\n・オシロスコープで、いま鳴っている波形をそのまま表示します\n・立ち上がりに合わせて描くので、波形が横に流れません\n・命令数とスタックの深さも出ます\n\n■ 有名な式が29個\n・2011年に viznut が公開した実験に由来する式をはじめ、29個を収録\n・気に入った式は名前をつけてお気に入りに保存できます\n\n■ 3つのモード\n・Bytebeat：結果 & 255 を 0…255 のサンプルに。元祖と同じ鳴り方です\n・Signed：符号つき8bitとして扱います\n・Floatbeat：結果をそのまま -1…1 の波形に。sin や cos が活きます\n\n■ t のはやさを変えられる\n・500〜48000Hz。元祖の Bytebeat は 8000Hz で鳴っていました\n・遅くすると低く、速くすると高くなります\n\n■ WAV に書き出せる\n・8bit 8000Hz モノラル。Bytebeat そのものの形式です\n・10秒・30秒・1分・3分から選べます\n\n■ 書ける式\n・変数は t、定数は PI と E\n・算術、ビット演算、シフト、比較、論理、三項演算子\n・sin cos tan asin acos atan abs floor ceil round sqrt exp log sign int pow min max atan2 mod\n・計算はすべて Double、ビット演算とシフトのときだけ 32bit 整数に丸めます。JavaScript の ToInt32 と同じ挙動なので、web で見つけた式をそのまま貼っても鳴ります\n\n■ 通信しません\n・アカウント登録はありません\n・広告もトラッキングもありません\n・インターネットに接続しません。飛行機の中でも動きます\n\nプリセットの多くは viznut（Ville-Matias Heikkilä）が2011年に公開した実験に由来します。",
-      "release_notes": null,
-      "content_advisory_rating": "4+",
       "minimum_os_version": "17.0",
       "developer_name": "Ryo Tsudukihashi",
       "seller_name": "TsuzuKit"
