@@ -1,11 +1,11 @@
 ---
 name: update-portfolio-info
-description: tsuzukit.com のアプリの情報と数字を全部最新にする。App Store Connect から全公開アプリの情報を取って新規アプリの追加・スクショ・アプリ数/評価/レビュー数を直し、ダウンロードランキング（App Store のユニット数と Google Play の累計インストール）を取り直して、ガチャのレア度・トップと私についての総ダウンロード・代表作のDL数までそろえ、確かめて push する。「ポートフォリオを最新に」「新しいアプリを追加」「アプリ情報を更新」「ランキングを更新」や /update-portfolio-info のときに使う。
+description: tsuzukit.com のアプリの情報と数字を全部最新にする。App Store Connect から全公開アプリの情報を取って新規アプリの追加・スクショ・アプリ数/評価/レビュー数を直し、ダウンロードランキング（App Store のユニット数と Google Play の累計インストール）を取り直して、ガチャのレア度・トップと私についての総ダウンロード・代表作のDL数までそろえ、確かめて push する。最後に GitHub のプロフィール（tsuzukihashi/tsuzukihashi の README と画像）も同じ数字で作り直して push する。「ポートフォリオを最新に」「新しいアプリを追加」「アプリ情報を更新」「ランキングを更新」や /update-portfolio-info のときに使う。
 ---
 
 # ポートフォリオ最新化スキル
 
-**呼ばれたら、1章から7章まで毎回全部やる。** ランキングとDL数の更新を「必要なら」で飛ばさない。
+**呼ばれたら、1章から8章まで毎回全部やる。** ランキングとDL数の更新を「必要なら」で飛ばさない。
 ユーザーに頼むのはログインだけ（ASC の Playwright のログインと `! gcloud auth login`）。
 ログインを待つあいだに、ログインの要らない章（1・2・3）を先に終わらせる。
 **ログインのコマンドはこちらで起動しておく（2026-11-23「ログインして欲しいならコマンド用意しろ」）。** gcloud は `run_in_terminal` で `gcloud auth login` を Terminal パネルに出して起動し、本人はブラウザで承認するだけにする。`! ` を貼らせない。頼んだあとも返答を終えずに他の章を進める。
@@ -19,6 +19,7 @@ description: tsuzukit.com のアプリの情報と数字を全部最新にする
 | 5 | Google Play の累計インストールを取る | `app-ranking.json` の android |
 | 6 | ランキングを作り、数字を全部そろえる | ランキングのページ・レア度・総ダウンロード・代表作のDL数 |
 | 7 | 画面で確かめて、コミットして push | |
+| 8 | GitHub のプロフィールを同じ数字で作り直して push | `tsuzukihashi/tsuzukihashi` の README・画像 |
 
 ## 前提・場所
 - リポジトリルート: `/Users/tsuzuki817/workspace/TsuzuKit/tsuzukit.com`
@@ -125,6 +126,37 @@ git push origin master
 ```
 - コミットメッセージ末尾に `Co-Authored-By: 実行したモデル名 <noreply@anthropic.com>` を付ける。
 - 報告には、新規アプリ・公開数・App Store と Play と合計の変化・レア度が変わったアプリを書く。
+
+## 8. GitHub のプロフィールを作り直す（tsuzukihashi/tsuzukihashi）
+https://github.com/tsuzukihashi の README。サイトと同じガチャの見た目で、数字は 6章までで出来たサイトのデータ（`apps.json`・`app-ranking.json`）から作る。
+置き場所はサイトのリポジトリの隣の `tsuzukihashi`。無ければ clone する。
+```bash
+SITE="$(git rev-parse --show-toplevel)"; PROFILE="$(dirname "$SITE")/tsuzukihashi"
+[ -d "$PROFILE" ] || gh repo clone tsuzukihashi/tsuzukihashi "$PROFILE"
+cd "$PROFILE" && git pull --ff-only origin master
+python3 design/sync.py --site "$SITE"
+git diff --quiet -- README.md design/data.js && echo "プロフィールの数字は変わらない"
+```
+- 「変わらない」と出たら、画像は作り直さずに終わる（コミットしない）
+- 変わったら画像を作り直す:
+```bash
+bash design/render.sh
+```
+- `sync.py` が直すもの … 公開アプリ数、総ダウンロード、個人開発の年数、レア度ごとの種類数とカプセルのアイコン、大当たり4本（うんちくん・流れるメモ帳・旅行思い出マップ・推しアイランド）のレア度・DL数・評価
+- README は `design/README.template.md` の `{{key}}` を埋めて作る。**README.md を直接直さない。** 文を変えたいときはテンプレートを直す
+- 数はサイトと同じく切り捨てて「+」を付ける。評価は 4.0 未満なら出さない
+- `render.sh` は Chrome（`/Applications/Google Chrome.app`）で `design/cards.html` を2倍の透過 PNG にする。フォントは Google Fonts から読むのでネットが要る
+- 書き出した `assets/hero.png`・`assets/lineup.png`・`assets/pick-*.png` を Read で見て、数字がサイトと合っていること、文字が枠からはみ出していないことを確かめる。絵は SendUserFile で会話に出す
+- 大当たりの4本を入れ替えるときは、`design/sync.py` の `PICKS`、`design/cards.html` の `PICKS`（名前・一言・アイコン）、`README.template.md` のリンクと alt を一緒に直す。「⚠️ apps.json に無い」が出たらそのアプリが外れたということなので、本人に聞く
+- 10年のあゆみの中身（各年の出来事）と実績の文は手書き。このスキルでは触らない
+- 7章と同じく、聞かずにコミットして push する:
+```bash
+git add README.md assets design/data.js
+git diff --cached --stat
+git commit -m "docs: プロフィールの数字を tsuzukit.com にそろえる（◯本・◯万DL）"   # 末尾に Co-Authored-By
+git push origin master
+```
+- 報告に、プロフィールで変わった数字を書く
 
 ## 注意点（重要）
 - **DL数を推定で増やさない。** 2026-09-15、全期間の累計値に直近10ヶ月ぶんを足して水増しした
