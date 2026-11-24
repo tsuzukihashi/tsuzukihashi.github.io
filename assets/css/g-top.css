@@ -18,10 +18,10 @@
 /* 機械 */
 .t-mach { position: relative; width: 100%; container-type: inline-size; }
 /*
- * レバー。絵（machine-dial.webp）は白い丸だけにして、棒と真ん中の丸をここで重ねて回す。
- * 位置と大きさは元の絵（machine.webp・940x1410）のレバーを画素で測った値: 丸の中心 (468.5, 990)・棒 330x81・真ん中の丸 140
+ * レバー。絵（machine-body.svg）は白い丸だけにして、棒と真ん中の丸をここで重ねて回す。
+ * 位置と大きさは絵の座標（940x1410）で: 丸の中心 (470, 990)・棒 330x81・真ん中の丸 140
  */
-.t-lever { position: absolute; left: 49.84%; top: 70.4%; width: 0; height: 0; }
+.t-lever { position: absolute; left: 50%; top: 70.21%; width: 0; height: 0; }
 .t-lever-arm { position: absolute; left: 0; top: 0; width: 35.1cqw; height: 35.1cqw; transform: translate(-50%, -50%); }
 .t-lever .bar, .t-lever .hub { position: absolute; background: #fefefe; border: 1.3cqw solid var(--g-k); box-sizing: border-box; }
 .t-lever .bar { left: 0; right: 0; top: 50%; height: 8.7cqw; transform: translateY(-50%); border-radius: 999px; box-shadow: inset 0 -1.1cqw 0 #dcdcdc; }
@@ -30,7 +30,12 @@
   .t-mach.is-rolling .t-lever-arm { animation: t-lever-turn .65s cubic-bezier(.45, 0, .2, 1.15); }
 }
 @keyframes t-lever-turn { from { transform: translate(-50%, -50%) rotate(0deg); } to { transform: translate(-50%, -50%) rotate(360deg); } }
-.t-mach-body { width: 100%; display: block; filter: drop-shadow(12px 12px 0 rgba(42, 16, 32, .9)); }
+/*
+ * 機械の絵は2枚の SVG。machine-body.svg（うしろ・影つき）の上に .t-globe のカプセル、その上に machine-front.svg（ガラスの縁・ふた・肩）。
+ * .t-globe の位置は絵のガラス（中心 470,477・半径 391）に合わせてある。絵を直すときは両方の SVG とこの値をそろえる。
+ */
+.t-mach-body { width: 100%; height: auto; display: block; filter: drop-shadow(12px 12px 0 rgba(42, 16, 32, .9)); }
+.t-mach-front { position: absolute; inset: 0; width: 100%; height: auto; pointer-events: none; }
 .t-globe { position: absolute; left: 8.4%; top: 6.1%; width: 83.2%; aspect-ratio: 1; border-radius: 50%; overflow: hidden; }
 .t-glass { position: absolute; inset: 0; background: radial-gradient(circle at 35% 30%, #fff 0, #eef9ff 45%, #d7eefc 100%); }
 .t-shine { position: absolute; left: 12%; top: 8%; width: 30%; height: 18%; border-radius: 50%; background: rgba(255, 255, 255, .75); transform: rotate(-30deg); filter: blur(1px); pointer-events: none; }

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 1410" width="940" height="1410">
+  <!--
+    トップのガチャの機械（まえの層）。g-top.css の .t-mach-front。
+    .t-globe のカプセルの上に、ガラスの縁・てかり・ふた・肩を重ねる。
+    縁の線をガラスの切り口（半径 391）の上に乗せて、はしのカプセルの切れ目を隠す。
+  -->
+  <!-- ガラスのてかり -->
+  <g stroke="#fff" stroke-linecap="round" fill="none" opacity=".8">
+    <path d="M803 360 A355 355 0 0 1 818 560" stroke-width="18"/>
+    <path d="M790 640 A355 355 0 0 1 770 690" stroke-width="18"/>
+  </g>
+  <g stroke="#2a1020" stroke-width="14" stroke-linejoin="round" stroke-linecap="round">
+    <!-- ガラスの縁 -->
+    <circle cx="470" cy="477" r="391" fill="none"/>
+    <!-- つまみとふた -->
+    <rect x="404" y="18" width="132" height="70" rx="30" fill="#ff2b2b"/>
+    <path d="M258 152 C258 92 340 58 470 58 C600 58 682 92 682 152 Q470 178 258 152 Z" fill="#ff2b2b"/>
+    <!-- 肩 -->
+    <rect x="172" y="798" width="596" height="72" rx="28" fill="#ff2b2b"/>
+  </g>
+  <!-- ふたと肩のてかり -->
+  <g stroke="#ff9a9a" stroke-width="14" stroke-linecap="round" fill="none">
+    <path d="M430 40 L480 36"/>
+    <path d="M306 128 C318 104 352 88 398 82"/>
+    <path d="M206 822 L262 822"/>
+  </g>
+  <!-- ふたの右側の陰 -->
+  <path d="M640 102 C664 118 674 134 675 148 L652 152 C652 136 648 120 640 102 Z" fill="#d1101a"/>
+</svg>

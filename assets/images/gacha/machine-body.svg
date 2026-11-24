@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 1410" width="940" height="1410">
+  <!--
+    トップのガチャの機械（うしろの層）。g-top.css の .t-mach-body。
+    ガラスの中は .t-globe（中心 470,477・半径 391）がカプセルを描くので、ここは無地の丸だけ置く。
+    影（drop-shadow）は CSS で付ける。形の輪郭を全部持たせるため、ふたと肩もここに描く。
+    ガラスの縁・ふた・肩は machine-front.svg がカプセルの上に重ねる。
+  -->
+  <g stroke="#2a1020" stroke-width="14" stroke-linejoin="round" stroke-linecap="round">
+    <!-- つまみとふた -->
+    <rect x="404" y="18" width="132" height="70" rx="30" fill="#ff2b2b"/>
+    <path d="M258 152 C258 92 340 58 470 58 C600 58 682 92 682 152 Q470 178 258 152 Z" fill="#ff2b2b"/>
+    <!-- ガラス（中身は .t-globe） -->
+    <circle cx="470" cy="477" r="391" fill="#e6f5fd"/>
+    <!-- 台 -->
+    <path d="M196 850 L744 850 L812 1336 L128 1336 Z" fill="#ff2b2b"/>
+    <rect x="96" y="1318" width="748" height="74" rx="26" fill="#ff2b2b"/>
+    <rect x="172" y="798" width="596" height="72" rx="28" fill="#ff2b2b"/>
+    <!-- レバーの丸（棒と真ん中の丸は .t-lever） -->
+    <circle cx="470" cy="990" r="142" fill="#fff"/>
+    <!-- 取り出し口 -->
+    <rect x="304" y="1138" width="332" height="230" rx="24" fill="#ff2b2b"/>
+    <rect x="336" y="1166" width="268" height="176" rx="10" fill="#5c0a18"/>
+  </g>
+  <!-- 取り出し口のふた -->
+  <path d="M366 1336 L388 1270 L552 1270 L574 1336 Z" fill="#b3142f"/>
+  <!-- 台の右側の陰 -->
+  <path d="M744 857 L760 857 L826 1312 L806 1312 Z" fill="#d1101a"/>
+  <!-- 台のてかり -->
+  <g stroke="#ff9a9a" stroke-width="16" stroke-linecap="round" fill="none">
+    <path d="M232 902 L210 1060"/>
+    <path d="M190 1200 L180 1268"/>
+    <path d="M132 1355 L180 1355"/>
+  </g>
+</svg>
