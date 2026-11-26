@@ -1,4 +1,268 @@
 {
+  "6762043194": {
+    "bundle_id": "com.tsuzukit.flowerlens",
+    "marketing_url": {
+      "ja": "https://tsuzukit.com/",
+      "en": "https://tsuzukit.com/"
+    },
+    "support_url": {
+      "ja": "https://tsuzukit.com/contact/",
+      "en": "https://tsuzukit.com/contact/"
+    }
+  },
+  "6757253733": {
+    "bundle_id": "com.tsuzukit.shelllens",
+    "marketing_url": {
+      "ja": "https://tsuzukit.com/",
+      "en": "https://tsuzukit.com/"
+    },
+    "support_url": {
+      "ja": "https://tsuzukit.com/contact/",
+      "en": "https://tsuzukit.com/contact/"
+    }
+  },
+  "6757151902": {
+    "bundle_id": "com.tsuzukit.RockIdentifier",
+    "marketing_url": {
+      "ja": "https://tsuzukit.com/",
+      "en": "https://tsuzukit.com/"
+    },
+    "support_url": {
+      "ja": "https://tsuzukit.com/contact/",
+      "en": "https://tsuzukit.com/contact/"
+    }
+  },
+  "6757175763": {
+    "bundle_id": "com.tsuzukit.birdlens",
+    "marketing_url": {
+      "ja": "https://tsuzukit.com/",
+      "en": "https://tsuzukit.com/"
+    },
+    "support_url": {
+      "ja": "https://tsuzukit.com/contact/",
+      "en": "https://tsuzukit.com/contact/"
+    }
+  },
+  "6762191456": {
+    "bundle_id": "com.tsuzukit.skinlens",
+    "marketing_url": {
+      "ja": "https://tsuzukit.com/",
+      "en": "https://tsuzukit.com/"
+    },
+    "support_url": {
+      "ja": "https://tsuzukit.com/contact/",
+      "en": "https://tsuzukit.com/contact/"
+    }
+  },
+  "6762191608": {
+    "bundle_id": "com.tsuzukit.cloudlens",
+    "marketing_url": {
+      "ja": "https://tsuzukit.com/",
+      "en": "https://tsuzukit.com/"
+    },
+    "support_url": {
+      "ja": "https://tsuzukit.com/contact/",
+      "en": "https://tsuzukit.com/contact/"
+    }
+  },
+  "6762191447": {
+    "bundle_id": "com.tsuzukit.fishlens",
+    "marketing_url": {
+      "ja": "https://tsuzukit.com/",
+      "en": "https://tsuzukit.com/"
+    },
+    "support_url": {
+      "ja": "https://tsuzukit.com/contact/",
+      "en": "https://tsuzukit.com/contact/"
+    }
+  },
+  "6762191014": {
+    "bundle_id": "com.tsuzukit.mushroomlens",
+    "marketing_url": {
+      "ja": "https://tsuzukit.com/",
+      "en": "https://tsuzukit.com/"
+    },
+    "support_url": {
+      "ja": "https://tsuzukit.com/contact/",
+      "en": "https://tsuzukit.com/contact/"
+    }
+  },
+  "6762190919": {
+    "bundle_id": "com.tsuzukit.insectlens",
+    "marketing_url": {
+      "ja": "https://tsuzukit.com/",
+      "en": "https://tsuzukit.com/"
+    },
+    "support_url": {
+      "ja": "https://tsuzukit.com/contact/",
+      "en": "https://tsuzukit.com/contact/"
+    }
+  },
+  "1487377681": {
+    "bundle_id": "com.tsuzuki817.BookBank",
+    "marketing_url": {
+      "ja": "https://mokumoku.tsuzukit.com/ja",
+      "en": "https://mokumoku.tsuzukit.com/ja"
+    },
+    "support_url": {
+      "ja": "https://mokumoku.tsuzukit.com/ja/faq",
+      "en": "https://mokumoku.tsuzukit.com/ja/faq"
+    }
+  },
+  "6835220439": {
+    "bundle_id": "com.tsuzukit.affirmationvoice",
+    "marketing_url": {
+      "ja": "https://jibundayori.tsuzukit.com/",
+      "en": "https://jibundayori.tsuzukit.com/"
+    },
+    "support_url": {
+      "ja": "https://jibundayori.tsuzukit.com/support.html",
+      "en": "https://jibundayori.tsuzukit.com/support.html"
+    }
+  },
+  "6835220311": {
+    "bundle_id": "com.tsuzukit.cassetteplayer",
+    "marketing_url": {
+      "ja": "https://otomaki.tsuzukit.com/",
+      "en": "https://otomaki.tsuzukit.com/"
+    },
+    "support_url": {
+      "ja": "https://otomaki.tsuzukit.com/support.html",
+      "en": "https://otomaki.tsuzukit.com/support.html"
+    }
+  },
+  "6835220093": {
+    "bundle_id": "com.tsuzukit.bloodpressure",
+    "marketing_url": {
+      "ja": "https://hakaridoki.tsuzukit.com/",
+      "en": "https://hakaridoki.tsuzukit.com/"
+    },
+    "support_url": {
+      "ja": "https://hakaridoki.tsuzukit.com/support.html",
+      "en": "https://hakaridoki.tsuzukit.com/support.html"
+    }
+  },
+  "6835220471": {
+    "bundle_id": "com.tsuzukit.texttoaudio",
+    "marketing_url": {
+      "ja": "https://yomigoe.tsuzukit.com/",
+      "en": "https://yomigoe.tsuzukit.com/"
+    },
+    "support_url": {
+      "ja": "https://yomigoe.tsuzukit.com/support.html",
+      "en": "https://yomigoe.tsuzukit.com/support.html"
+    }
+  },
+  "6835220305": {
+    "bundle_id": "com.tsuzukit.pitchmonitor",
+    "marketing_url": {
+      "ja": "https://utakagami.tsuzukit.com/",
+      "en": "https://utakagami.tsuzukit.com/"
+    },
+    "support_url": {
+      "ja": "https://utakagami.tsuzukit.com/support.html",
+      "en": "https://utakagami.tsuzukit.com/support.html"
+    }
+  },
+  "6835219952": {
+    "bundle_id": "com.tsuzukit.drawinggrid",
+    "marketing_url": {
+      "ja": "https://masuutsushi.tsuzukit.com/",
+      "en": "https://masuutsushi.tsuzukit.com/"
+    },
+    "support_url": {
+      "ja": "https://masuutsushi.tsuzukit.com/support.html",
+      "en": "https://masuutsushi.tsuzukit.com/support.html"
+    }
+  },
+  "6835219737": {
+    "bundle_id": "com.tsuzukit.queuepanel",
+    "marketing_url": {
+      "ja": "https://yobidashi.tsuzukit.com/",
+      "en": "https://yobidashi.tsuzukit.com/"
+    },
+    "support_url": {
+      "ja": "https://yobidashi.tsuzukit.com/support.html",
+      "en": "https://yobidashi.tsuzukit.com/support.html"
+    }
+  },
+  "6835219467": {
+    "bundle_id": "com.tsuzukit.quickenglish",
+    "marketing_url": {
+      "ja": "https://tossa.tsuzukit.com/",
+      "en": "https://tossa.tsuzukit.com/"
+    },
+    "support_url": {
+      "ja": "https://tossa.tsuzukit.com/support.html",
+      "en": "https://tossa.tsuzukit.com/support.html"
+    }
+  },
+  "6835220345": {
+    "bundle_id": "com.tsuzukit.siteboardcamera",
+    "marketing_url": {
+      "ja": "https://kokubandori.tsuzukit.com/",
+      "en": "https://kokubandori.tsuzukit.com/"
+    },
+    "support_url": {
+      "ja": "https://kokubandori.tsuzukit.com/support.html",
+      "en": "https://kokubandori.tsuzukit.com/support.html"
+    }
+  },
+  "6835219794": {
+    "bundle_id": "com.tsuzukit.bingodraw",
+    "marketing_url": {
+      "ja": "https://bingodrum.tsuzukit.com/",
+      "en": "https://bingodrum.tsuzukit.com/"
+    },
+    "support_url": {
+      "ja": "https://bingodrum.tsuzukit.com/support.html",
+      "en": "https://bingodrum.tsuzukit.com/support.html"
+    }
+  },
+  "6835220135": {
+    "bundle_id": "com.tsuzukit.feedreader",
+    "marketing_url": {
+      "ja": "https://todokimono.tsuzukit.com/",
+      "en": "https://todokimono.tsuzukit.com/"
+    },
+    "support_url": {
+      "ja": "https://todokimono.tsuzukit.com/support.html",
+      "en": "https://todokimono.tsuzukit.com/support.html"
+    }
+  },
+  "6835220300": {
+    "bundle_id": "com.tsuzukit.transcribeplayer",
+    "marketing_url": {
+      "ja": "https://kikiutsushi.tsuzukit.com/",
+      "en": "https://kikiutsushi.tsuzukit.com/"
+    },
+    "support_url": {
+      "ja": "https://kikiutsushi.tsuzukit.com/support.html",
+      "en": "https://kikiutsushi.tsuzukit.com/support.html"
+    }
+  },
+  "6835220242": {
+    "bundle_id": "com.tsuzukit.lightmeter",
+    "marketing_url": {
+      "ja": "https://akarime.tsuzukit.com/",
+      "en": "https://akarime.tsuzukit.com/"
+    },
+    "support_url": {
+      "ja": "https://akarime.tsuzukit.com/support.html",
+      "en": "https://akarime.tsuzukit.com/support.html"
+    }
+  },
+  "6758856276": {
+    "bundle_id": "com.tsuzukit.PoopCounter",
+    "marketing_url": {
+      "ja": "https://unchikun.app/",
+      "en": "https://unchikun.app/"
+    },
+    "support_url": {
+      "ja": "https://unchikun.app/support",
+      "en": "https://unchikun.app/en/support"
+    }
+  },
   "6478291625": {
     "bundle_id": "com.tsuzuki817.OmoideMap",
     "marketing_url": {
@@ -8,6 +272,127 @@
     "support_url": {
       "ja": "https://omoidemap-36d68.web.app/contact.html",
       "en": "https://omoidemap-36d68.web.app/contact.html"
+    }
+  },
+  "6756264637": {
+    "bundle_id": "com.tsuzukit.FocusTrain",
+    "marketing_url": {
+      "ja": "https://focusrailway.tsuzukit.com/",
+      "en": "https://focusrailway.tsuzukit.com/"
+    },
+    "support_url": {
+      "ja": "https://focusrailway.tsuzukit.com/",
+      "en": "https://focusrailway.tsuzukit.com/"
+    }
+  },
+  "6752831862": {
+    "bundle_id": "com.tsuzuki817.SwipeClean",
+    "marketing_url": {
+      "ja": "https://tsuzukit.com/",
+      "en": "https://tsuzukit.com/"
+    },
+    "support_url": {
+      "ja": "https://tsuzukit.com/contact/",
+      "en": "https://tsuzukit.com/contact/"
+    }
+  },
+  "6784235708": {
+    "bundle_id": "com.tsuzukit.AnataReceipt",
+    "marketing_url": {
+      "ja": "https://tsuzukit.com/",
+      "en": "https://tsuzukit.com/"
+    },
+    "support_url": {
+      "ja": "https://tsuzukit.com/contact/",
+      "en": "https://tsuzukit.com/contact/"
+    }
+  },
+  "6782966275": {
+    "bundle_id": "com.tsuzukit.BikeKeep",
+    "marketing_url": {
+      "ja": "https://tsuzukit.com/",
+      "en": "https://tsuzukit.com/"
+    },
+    "support_url": {
+      "ja": "https://tsuzukit.com/contact/",
+      "en": "https://tsuzukit.com/contact/"
+    }
+  },
+  "6782400804": {
+    "bundle_id": "com.tsuzukit.PenKeep",
+    "marketing_url": {
+      "ja": "https://tsuzukit.com/",
+      "en": "https://tsuzukit.com/"
+    },
+    "support_url": {
+      "ja": "https://tsuzukit.com/contact/",
+      "en": "https://tsuzukit.com/contact/"
+    }
+  },
+  "6781759617": {
+    "bundle_id": "com.tsuzukit.WatchKeep",
+    "marketing_url": {
+      "ja": "https://tsuzukit.com/",
+      "en": "https://tsuzukit.com/"
+    },
+    "support_url": {
+      "ja": "https://tsuzukit.com/contact/",
+      "en": "https://tsuzukit.com/contact/"
+    }
+  },
+  "6785027821": {
+    "bundle_id": "com.tsuzukit.CarKeep",
+    "marketing_url": {
+      "ja": "https://tsuzukit.com/",
+      "en": "https://tsuzukit.com/"
+    },
+    "support_url": {
+      "ja": "https://tsuzukit.com/contact/",
+      "en": "https://tsuzukit.com/contact/"
+    }
+  },
+  "6759167301": {
+    "bundle_id": "com.tsuzukit.ZundamonTalk",
+    "marketing_url": {
+      "ja": "https://zundamontalk.web.app",
+      "en": "https://zundamontalk.web.app"
+    },
+    "support_url": {
+      "ja": "https://tsuzukit.com/contact/",
+      "en": "https://tsuzukit.com/contact/"
+    }
+  },
+  "6835220168": {
+    "bundle_id": "com.tsuzukit.danceformation",
+    "marketing_url": {
+      "ja": "https://bamiri.tsuzukit.com/",
+      "en": "https://bamiri.tsuzukit.com/"
+    },
+    "support_url": {
+      "ja": "https://bamiri.tsuzukit.com/support.html",
+      "en": "https://bamiri.tsuzukit.com/support.html"
+    }
+  },
+  "6835219909": {
+    "bundle_id": "com.tsuzukit.talkboard",
+    "marketing_url": {
+      "ja": "https://yubigoe.tsuzukit.com/",
+      "en": "https://yubigoe.tsuzukit.com/"
+    },
+    "support_url": {
+      "ja": "https://yubigoe.tsuzukit.com/support.html",
+      "en": "https://yubigoe.tsuzukit.com/support.html"
+    }
+  },
+  "6835219962": {
+    "bundle_id": "com.tsuzukit.einkan",
+    "marketing_url": {
+      "ja": "https://shuniku.tsuzukit.com/",
+      "en": "https://shuniku.tsuzukit.com/"
+    },
+    "support_url": {
+      "ja": "https://shuniku.tsuzukit.com/support.html",
+      "en": "https://shuniku.tsuzukit.com/support.html"
     }
   },
   "6835220137": {
@@ -120,17 +505,6 @@
       "en": "https://sainome.tsuzukit.com/support.html"
     }
   },
-  "6758856276": {
-    "bundle_id": "com.tsuzukit.PoopCounter",
-    "marketing_url": {
-      "ja": "https://unchikun.app/",
-      "en": "https://unchikun.app/"
-    },
-    "support_url": {
-      "ja": "https://unchikun.app/support",
-      "en": "https://unchikun.app/en/support"
-    }
-  },
   "6811730170": {
     "bundle_id": "com.tsuzukit.Bytebeat",
     "marketing_url": {
@@ -173,17 +547,6 @@
     "support_url": {
       "ja": "https://minoue.tsuzukit.com/support.html",
       "en": "https://minoue.tsuzukit.com/support.html"
-    }
-  },
-  "1487377681": {
-    "bundle_id": "com.tsuzuki817.BookBank",
-    "marketing_url": {
-      "ja": "https://mokumoku.tsuzukit.com/ja",
-      "en": "https://mokumoku.tsuzukit.com/ja"
-    },
-    "support_url": {
-      "ja": "https://mokumoku.tsuzukit.com/ja/faq",
-      "en": "https://mokumoku.tsuzukit.com/ja/faq"
     }
   },
   "6833698631": {
@@ -246,61 +609,6 @@
     "marketing_url": {
       "ja": "https://tsuzukit.com/",
       "en": "https://tsuzukit.com/"
-    },
-    "support_url": {
-      "ja": "https://tsuzukit.com/contact/",
-      "en": "https://tsuzukit.com/contact/"
-    }
-  },
-  "6757253733": {
-    "bundle_id": "com.tsuzukit.shelllens",
-    "marketing_url": {
-      "ja": "https://tsuzukit.com/",
-      "en": "https://tsuzukit.com/"
-    },
-    "support_url": {
-      "ja": "https://tsuzukit.com/contact/",
-      "en": "https://tsuzukit.com/contact/"
-    }
-  },
-  "6762043194": {
-    "bundle_id": "com.tsuzukit.flowerlens",
-    "marketing_url": {
-      "ja": "https://tsuzukit.com/",
-      "en": "https://tsuzukit.com/"
-    },
-    "support_url": {
-      "ja": "https://tsuzukit.com/contact/",
-      "en": "https://tsuzukit.com/contact/"
-    }
-  },
-  "6757175763": {
-    "bundle_id": "com.tsuzukit.birdlens",
-    "marketing_url": {
-      "ja": "https://tsuzukit.com/",
-      "en": "https://tsuzukit.com/"
-    },
-    "support_url": {
-      "ja": "https://tsuzukit.com/contact/",
-      "en": "https://tsuzukit.com/contact/"
-    }
-  },
-  "6757151902": {
-    "bundle_id": "com.tsuzukit.RockIdentifier",
-    "marketing_url": {
-      "ja": "https://tsuzukit.com/",
-      "en": "https://tsuzukit.com/"
-    },
-    "support_url": {
-      "ja": "https://tsuzukit.com/contact/",
-      "en": "https://tsuzukit.com/contact/"
-    }
-  },
-  "6759167301": {
-    "bundle_id": "com.tsuzukit.ZundamonTalk",
-    "marketing_url": {
-      "ja": "https://zundamontalk.web.app",
-      "en": "https://zundamontalk.web.app"
     },
     "support_url": {
       "ja": "https://tsuzukit.com/contact/",
@@ -488,17 +796,6 @@
     "marketing_url": {
       "ja": "https://tsuzukit.com/oshiisland/",
       "en": "https://tsuzukit.com/oshiisland/"
-    },
-    "support_url": {
-      "ja": "https://tsuzukit.com/contact/",
-      "en": "https://tsuzukit.com/contact/"
-    }
-  },
-  "6784235708": {
-    "bundle_id": "com.tsuzukit.AnataReceipt",
-    "marketing_url": {
-      "ja": "https://tsuzukit.com/",
-      "en": "https://tsuzukit.com/"
     },
     "support_url": {
       "ja": "https://tsuzukit.com/contact/",
@@ -791,52 +1088,8 @@
       "en": "https://monivo-pj.web.app/contact"
     }
   },
-  "6782966275": {
-    "bundle_id": "com.tsuzukit.BikeKeep",
-    "marketing_url": {
-      "ja": "https://tsuzukit.com/",
-      "en": "https://tsuzukit.com/"
-    },
-    "support_url": {
-      "ja": "https://tsuzukit.com/contact/",
-      "en": "https://tsuzukit.com/contact/"
-    }
-  },
-  "6785027821": {
-    "bundle_id": "com.tsuzukit.CarKeep",
-    "marketing_url": {
-      "ja": "https://tsuzukit.com/",
-      "en": "https://tsuzukit.com/"
-    },
-    "support_url": {
-      "ja": "https://tsuzukit.com/contact/",
-      "en": "https://tsuzukit.com/contact/"
-    }
-  },
   "6786488863": {
     "bundle_id": "com.tsuzukit.Matchbox",
-    "marketing_url": {
-      "ja": "https://tsuzukit.com/",
-      "en": "https://tsuzukit.com/"
-    },
-    "support_url": {
-      "ja": "https://tsuzukit.com/contact/",
-      "en": "https://tsuzukit.com/contact/"
-    }
-  },
-  "6781759617": {
-    "bundle_id": "com.tsuzukit.WatchKeep",
-    "marketing_url": {
-      "ja": "https://tsuzukit.com/",
-      "en": "https://tsuzukit.com/"
-    },
-    "support_url": {
-      "ja": "https://tsuzukit.com/contact/",
-      "en": "https://tsuzukit.com/contact/"
-    }
-  },
-  "6782400804": {
-    "bundle_id": "com.tsuzukit.PenKeep",
     "marketing_url": {
       "ja": "https://tsuzukit.com/",
       "en": "https://tsuzukit.com/"
@@ -859,17 +1112,6 @@
   },
   "6782555676": {
     "bundle_id": "com.tsuzukit.KnifeKeep",
-    "marketing_url": {
-      "ja": "https://tsuzukit.com/",
-      "en": "https://tsuzukit.com/"
-    },
-    "support_url": {
-      "ja": "https://tsuzukit.com/contact/",
-      "en": "https://tsuzukit.com/contact/"
-    }
-  },
-  "6752831862": {
-    "bundle_id": "com.tsuzuki817.SwipeClean",
     "marketing_url": {
       "ja": "https://tsuzukit.com/",
       "en": "https://tsuzukit.com/"
