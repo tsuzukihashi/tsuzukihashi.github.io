@@ -81,8 +81,7 @@ html[data-lang="en"] .gb-issues .post-card:first-child .post-card-content::befor
 .gb-issues .post-card:first-child .read-more {
   background: var(--g-y); border: 3px solid var(--g-k); border-radius: 999px; padding: 6px 16px; box-shadow: 3px 3px 0 var(--g-k);
 }
-/* ぜんぶを見ているときは、最新号と直近の号だけ。「月収1000万円計画」を押すと全号が出る */
-.gb[data-filter="all"] .gb-issues .post-card:nth-child(n+7) { display: none; }
+/* 収益公開の号は、ぜんぶを見ているときも全号を並べる（切り捨てない） */
 
 /* 特設ページへの札 */
 .gb-series {
@@ -211,7 +210,6 @@ html[data-lang="en"] .gb-issues .post-card:first-child .post-card-content::befor
 /* ================================================================ 幅ごと */
 @media (max-width: 960px) {
   .gb-issues { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-  .gb[data-filter="all"] .gb-issues .post-card:nth-child(n+6) { display: none; }
   .gb-recent { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .gb-apps, .gb-hub { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .gb-issues .post-card:first-child .post-card-title { font-size: 28px; }
