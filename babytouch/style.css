@@ -71,6 +71,8 @@ section h2 { font-size: 26px; font-weight: 900; margin: 0 0 18px; }
 .g4 .gmark { background: var(--green); border-radius: 12px 12px 20px 20px; }
 .g5 .gmark { background: var(--orange); clip-path: polygon(50% 0, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
 .g6 .gmark { background: var(--purple); }
+.g7 .gmark { background: var(--blue); border-radius: 0; clip-path: polygon(0 50%, 12% 30%, 34% 16%, 56% 18%, 74% 36%, 100% 12%, 100% 88%, 74% 64%, 56% 82%, 34% 84%, 12% 70%); }
+.g8 .gmark { background: var(--yellow); width: 32px; border-radius: 50% 50% 50% 50% / 62% 62% 38% 38%; }
 
 .panel { background: var(--panel); border-radius: 24px; padding: 18px 22px; border: 2px solid var(--line); }
 .panel p { margin: 0 0 8px; }
